@@ -5,8 +5,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const protection: Domain = {
 	id: 'domain-protection',
-	name: 'Protection',
-	description: 'The Protection domain.',
+	name: 'Захист',
+	description: 'Сфера Захисту.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -16,12 +16,12 @@ export const protection: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-protection-1-1',
-							name: 'Protective Circle',
-							description: 'You can spend 10 uninterrupted minutes to create a protective circle on the ground large enough to hold one size 1 creature. The circle lasts for 24 hours, until you create another, or until you dismiss it (no action required). Only creatures you designate at the time of drawing the circle can enter and exit the area. While in the protective circle, a creature can’t be targeted by strikes.'
+							name: 'Захисне коло',
+							description: 'Ви можете витратити 10 хвилин без перерви, щоб створити захисне коло на землі, достатньо велике для однієї істоти розміру 1. Коло триває 24 години, поки ви не створите інше або не розвієте його (без дії). Лише істоти, яких ви визначили під час малювання кола, можуть входити й виходити з цієї області. Поки істота перебуває в захисному колі, її не можна обрати ціллю удару.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-protection-1-2',
-							listOptions: [ SkillList.Exploration ]
+							listOptions: [SkillList.Exploration]
 						})
 					]
 				})
@@ -33,18 +33,18 @@ export const protection: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-protection-2',
-						name: 'Sacred Bond',
-						description: 'You forge a divine connection between two creatures.',
+						name: 'Священний звʼязок',
+						description: 'Ви створюєте божественний звʼязок між двома істотами.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self and one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Ви та один союзник',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-Until the end of the encounter, whenever one target takes damage, the other target can use a free triggered action to take the damage instead. The original target suffers any effects associated with the damage.
+	До кінця сутички, коли одна ціль отримує шкоду, інша ціль може безкоштовною тригерною дією прийняти цю шкоду на себе. Оригінальна ціль усе одно зазнає всіх ефектів, повʼязаних із цією шкодою.
 
-Additionally, whenever one target spends a Recovery, the other target can use a free triggered action to spend a Recovery.`)
+	Крім того, коли одна ціль витрачає Відновлення, інша ціль може безкоштовною тригерною дією витратити Відновлення.`)
 						]
 					})
 				})
@@ -59,11 +59,11 @@ Additionally, whenever one target spends a Recovery, the other target can use a 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-protection-4',
-					name: 'Impervious Touch',
+					name: 'Дотик непроникності',
 					description: `
-As a maneuver, you can touch an object with a size equal to your Intuition score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your Intuition score, and you can end the spell on any object at any time (no action required).
+Маневром ви можете торкнутися обʼєкта розміром, що дорівнює вашій Інтуїції або менше, і накласти на нього захисне закляття. Обʼєкт отримує імунітет до всієї немаркованої шкоди. Ви можете підтримувати це закляття на кількості обʼєктів, що дорівнює вашій Інтуїції, і можете розвіяти його на будь-якому обʼєкті будь-коли (без дії).
 
-Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director’s approval) that is of a size larger than your Intuition score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your Intuition score simultaneously.`
+Крім того, ви можете накласти це закляття на будівлю чи транспорт (або подібну структуру з дозволу Директора), що перевищує ваш розмір Інтуїції. Ви можете підтримувати це закляття лише на одній такій цілі одночасно, а також на кількості менших обʼєктів, що дорівнює вашій Інтуїції.`
 				})
 			]
 		},
@@ -77,15 +77,15 @@ Additionally, you can place this spell on a building or vehicle (or a similar st
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-protection-6',
-						name: 'Cuirass of the Gods',
-						description: 'Your allies are covered in spiritual armor.',
+						name: 'Кіраса богів',
+						description: 'Ваші союзники вкриті духовною бронею.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Three creatures',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Три істоти',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can target yourself instead of one creature with this ability. Each target has damage immunity 5 until the start of your next turn.')
+							FactoryLogic.createAbilitySectionText('Ви можете обрати себе замість однієї істоти як ціль цієї здібності. Кожна ціль отримує імунітет до 5 шкоди до початку вашого наступного ходу.')
 						]
 					})
 				})
@@ -96,8 +96,8 @@ Additionally, you can place this spell on a building or vehicle (or a similar st
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-protection-7',
-					name: 'Blessing of Iron',
-					description: 'The gods send divine favor to you and your allies. While you are not dying, enemies take a bane on strikes against you or any ally within 3 squares of you.'
+					name: 'Благословення заліза',
+					description: 'Боги посилають божественну прихильність вам і вашим союзникам. Поки ви не перебуваєте у стані "Вмираючий", вороги отримують шкоду на удари проти вас або союзника в межах 3 клітинок.'
 				})
 			]
 		},
@@ -111,15 +111,15 @@ Additionally, you can place this spell on a building or vehicle (or a similar st
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-protection-9',
-						name: 'Blessing of the Fortress',
-						description: 'A magic circle extends out from you, barring foes from getting close.',
+						name: 'Благословення фортеці',
+						description: 'Магічне коло розширюється від вас, не дозволяючи ворогам наближатися.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
-						target: 'Self',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
+						target: 'Ви',
 						cost: 11,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, no enemy can approach within 5 squares of you by moving or by being force moved by any enemy. Targets can be force moved closer to you by you or your allies, or can move closer because of your movement.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не перебуваєте у стані "Вмираючий", жоден ворог не може наблизитися до вас ближче ніж на 5 клітинок шляхом руху або примусового переміщення ворогом. Цілі можуть бути примусово переміщені ближче до вас вами чи союзниками, або можуть наблизитися через ваше переміщення.')
 						]
 					})
 				})
@@ -132,17 +132,17 @@ Additionally, you can place this spell on a building or vehicle (or a similar st
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that you or any ally within 10 squares gains temporary Stamina, or uses a triggered action to reduce incoming damage or impose a bane or double bane on an enemy’s power roll.',
+			trigger: 'Вперше під час сутички, коли ви або союзник у межах 10 клітинок отримує тимчасову Витривалість, або використовує тригерну дію для зменшення вхідної шкоди чи накладає шкоду або подвійну шкоду на кидок сили ворога.',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'protection-default-1',
-			name: 'Protection Prayer Effect',
-			description: 'One ally within 10 squares gains temporary Stamina equal to four times your Intuition score.',
+			name: 'Ефект молитви Захисту',
+			description: 'Один союзник у межах 10 клітинок отримує тимчасову Витривалість, що дорівнює чотирикратному значенню вашої Інтуїції.',
 			tag: 'conduit-prayer'
 		})
 	]

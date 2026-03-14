@@ -5,8 +5,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const love: Domain = {
 	id: 'domain-love',
-	name: 'Love',
-	description: 'The Love domain.',
+	name: 'Кохання',
+	description: 'Сфера Кохання.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -16,15 +16,15 @@ export const love: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-love-1-1',
-							name: 'Blessing of Compassion',
+							name: 'Благословення співчуття',
 							description: `
-You exude a magic aura that can soothe those willing to socially engage with you. You gain an edge on any test made to assist another creature with a test.
+	Від вас виходить магічна аура, що заспокоює тих, хто готовий до соціальної взаємодії. Ви отримуєте перевагу на всі випробування для допомоги іншій істоті у випробуванні.
 
-Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first test made to influence them gains an edge.`
+	Крім того, якщо ви присутні на початку перемовин, один НІП на ваш вибір отримує +1 до терпіння (максимум 5), а перше випробування для впливу на нього проходить із перевагою.`
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-love-1-2',
-							listOptions: [ SkillList.Interpersonal ]
+							listOptions: [SkillList.Interpersonal]
 						})
 					]
 				})
@@ -36,15 +36,15 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-love-2',
-						name: 'Our Hearts Your Strength',
-						description: 'An ally gains strength from their friends.',
+						name: 'Наші серця — твоя сила',
+						description: 'Союзник черпає силу у друзів.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self and one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Ви та один союзник',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until the target is dying, at the start of each of the target’s turns, they gain a bonus to speed and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ціль не перебуває у стані "Вмираючий", на початку кожного свого ходу ціль отримує бонус до швидкості та бонус до кидка шкоди, що дорівнює кількості союзників у межах 10 клітинок. Бонус триває до початку наступного ходу цілі.')
 						]
 					})
 				})
@@ -59,8 +59,8 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-love-4',
-					name: 'Invocation of the Heart',
-					description: 'As a main action, you forge a bond of love and friendship with a willing creature you touch. While this bond is active, you can telepathically speak with the creature over any distance, including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any test they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).'
+					name: 'Поклик серця',
+					description: 'Основною дією ви створюєте звʼязок кохання та дружби з істотою, яку торкаєтеся. Поки цей звʼязок активний, ви можете телепатично спілкуватися з істотою на будь-якій відстані, навіть між світами. Також ви можете допомагати цій істоті у будь-яких випробуваннях незалежно від відстані. Ви можете підтримувати лише один звʼязок одночасно, і можете розірвати його будь-коли (без дії).'
 				})
 			]
 		},
@@ -74,15 +74,15 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-love-6',
-						name: 'Lauded by God',
-						description: 'You beseech the gods to give your allies what they need to win the day, and the gods answer.',
+						name: 'Звеличений богом',
+						description: 'Ви благаєте богів дати союзникам усе необхідне для перемоги — і боги відповідають.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Two allies',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Два союзники',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target gains 3 of their Heroic Resource.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль отримує 3 одиниці свого героїчного ресурсу.')
 						]
 					})
 				})
@@ -93,20 +93,20 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-love-7-1',
-					name: 'Covenant of the Heart',
-					description: 'You can maintain bonds with up to three willing creatures using your Invocation of the Heart feature.'
+					name: 'Завіт серця',
+					description: 'Ви можете підтримувати звʼязки з трьома істотами одночасно, використовуючи властивість "Поклик серця".'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-love-7-2',
-						name: 'Guided to Your Side',
-						description: 'You concentrate on a friend and teleport to them.',
+						name: 'Проведений до тебе',
+						description: 'Ви концентруєтеся на другові й телепортуєтеся до нього.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self and each ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Ви та кожен союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target is teleported to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your Invocation of the Heart feature. You don’t need line of effect to the bonded creature but you must be on the same world.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль телепортується на вільні клітинки в межах 5 клітинок від істоти, з якою ви маєте звʼязок через "Поклик серця". Вам не потрібна пряма лінія ефекту, але ви маєте бути в одному світі.')
 						]
 					})
 				})
@@ -122,15 +122,15 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-love-9',
-						name: 'Alacrity of the Heart',
-						description: 'You speak inspiring words to a friend and spur them to incredible feats.',
+						name: 'Жвавість серця',
+						description: 'Ви надихаєте друга словами, спонукаючи його до неймовірних вчинків.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'one allies',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'один союзник',
 						cost: 11,
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target has an additional main action they can use on their next turn, and gains 3 of their Heroic Resource.')
+							FactoryLogic.createAbilitySectionText('Ціль отримує додаткову основну дію на наступному ході та 3 одиниці свого героїчного ресурсу.')
 						]
 					})
 				})
@@ -143,17 +143,17 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that you or any ally within 10 squares uses the Aid Attack maneuver or an ability that targets an ally',
+			trigger: 'Вперше під час сутички, коли ви або союзник у межах 10 клітинок використовує маневр "Допомога в атаці" або здібність, що націлена на союзника',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'love-default-1',
-			name: 'Love Prayer Effect',
-			description: 'Each ally within 10 squares of you gains temporary Stamina equal to 2 times your Intuition score.',
+			name: 'Ефект молитви Кохання',
+			description: 'Кожен союзник у межах 10 клітинок отримує тимчасову Витривалість, що дорівнює подвоєному значенню вашої Інтуїції.',
 			tag: 'conduit-prayer'
 		})
 	]

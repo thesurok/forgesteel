@@ -6,16 +6,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const criminal: Career = {
 	id: 'career-criminal',
-	name: 'Criminal',
-	description: 'You once worked as a bandit, insurgent, smuggler, outlaw, or even as an assassin.',
+	name: 'Злочинець',
+	description: 'Колись ви були бандитом, повстанцем, контрабандистом, злочинцем або навіть убивцею.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-criminal-feature-1',
-			selected: [ 'Criminal Underworld' ]
+			selected: ['Criminal Underworld']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-criminal-feature-2',
-			listOptions: [ SkillList.Intrigue ],
+			listOptions: [SkillList.Intrigue],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -28,40 +28,40 @@ export const criminal: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-criminal-feature-5',
-			lists: [ PerkList.Intrigue ]
+			lists: [PerkList.Intrigue]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-criminal-ii-1',
-				name: 'Antiquity Procurement',
-				description: 'You stole, smuggled, and sold antiquities. In your haste to make a quick sale, you didn’t fully vet a client and they subsequently robbed your warehouse. When the items you had stolen were taken from you, you realized the harm you had caused. Now you adventure to find those items you lost and return them where they belong.'
+				name: 'Торгівля антикваріатом',
+				description: 'Ви крали, перевозили контрабандою й продавали антикваріат. Прагнучи швидко заробити, ви не перевірили клієнта, і він обікрав ваш склад. Коли вкрадені речі забрали у вас, ви усвідомили шкоду, якої завдали. Тепер ви шукаєте ці речі, щоб повернути їх власникам.'
 			},
 			{
 				id: 'career-criminal-ii-2',
-				name: 'Atonement',
-				description: 'The last criminal job you pulled led to the death of someone or the destruction of something you love. To make up for the loss you caused, you left your criminal ways behind and became a hero.'
+				name: 'Спокута',
+				description: 'Остання злочинна справа призвела до смерті когось або втрати чогось дорогого вам. Щоб спокутувати провину, ви покинули злочинний шлях і стали героєм.'
 			},
 			{
 				id: 'career-criminal-ii-3',
-				name: 'Friendly Priest',
-				description: 'You went to prison for your crimes and eventually escaped. An elderly priest took you in and shielded you from the law, convinced that your soul wasn’t corrupt. They never judged you for your past, speaking only of the future. Eventually, the priest died, imparting final words that inspired you to become a hero.'
+				name: 'Добрий священник',
+				description: 'Вас посадили до вʼязниці за злочини, але ви втекли. Літній священник прихистив вас і захистив від закону, вірячи, що ваша душа не зіпсована. Він не судив за минуле, говорив лише про майбутнє. Зрештою священник помер, залишивши слова, які надихнули вас стати героєм.'
 			},
 			{
 				id: 'career-criminal-ii-4',
-				name: 'Shadowed Influence',
-				description: 'You spent years blackmailing and manipulating nobles for influence and wealth until a scheme went wrong. You were publicly exposed, and after a narrow escape, you reevaluated your life. Under a new identity, you work as a hero and hope no one looks at your past too closely.'
+				name: 'Тіньовий вплив',
+				description: 'Ви роками шантажували й маніпулювали знаттю заради впливу й багатства, поки одна афера не провалилася. Вас викрили публічно, і після втечі ви переосмислили життя. Під новим імʼям ви стали героєм і сподіваєтеся, що ніхто не дізнається про минуле.'
 			},
 			{
 				id: 'career-criminal-ii-5',
-				name: 'Simply Survival',
-				description: 'Stealing was a matter of survival for you and not what defined you - at least in your mind. But when your thieving actions lead to innocent folk being harmed, you knew you could be better. You turned your back on your old life, though your old skills come in handy.'
+				name: 'Заради виживання',
+				description: 'Крадіжка для вас була питанням виживання, а не сутністю — принаймні у вашій уяві. Але коли ваші дії призвели до страждань невинних, ви зрозуміли, що можете бути кращим. Ви відмовилися від минулого, хоча старі навички досі стають у пригоді.'
 			},
 			{
 				id: 'career-criminal-ii-6',
-				name: 'Stand Against Tyranny',
-				description: 'When a tyrant rose to power in your homeland, they began cracking down on all criminals with deadly raids and public executions. The nature of the crime didn’t matter - pickpockets and beggars were made to kneel before the axe alongside murderers. After losing enough friends, you stood up and joined the resistance - not just against this tyrant, but against authoritarians anywhere.'
+				name: 'Спротив тиранії',
+				description: 'Коли у вашій країні до влади прийшов тиран, він почав жорстоко розправлятися з усіма злочинцями — рейдами й публічними стратами. Суть злочину не мала значення: кишенькові злодії та жебраки ставали на коліна перед сокирою разом із убивцями. Втративши багатьох друзів, ви приєдналися до спротиву — не лише проти цього тирана, а й проти будь-яких авторитарних режимів.'
 			}
 		],
 		selected: null,

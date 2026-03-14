@@ -28,8 +28,8 @@ interface Props {
 }
 
 export const PowerRollPanel = (props: Props) => {
-	const [ distance, setDistance ] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
-	const [ showOdds, setShowOdds ] = useState<boolean>(false);
+	const [distance, setDistance] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
+	const [showOdds, setShowOdds] = useState<boolean>(false);
 
 	const getHeader = () => {
 		if (props.test) {
@@ -147,8 +147,8 @@ export const PowerRollPanel = (props: Props) => {
 					sections.push(
 						<Field
 							key='potency'
-							label='Potency'
-							value={`weak ${weak}, average ${avg}, strong ${strong}`}
+							label='Потужність'
+							value={`слабка ${weak}, середня ${avg}, сильна ${strong}`}
 						/>
 					);
 				}

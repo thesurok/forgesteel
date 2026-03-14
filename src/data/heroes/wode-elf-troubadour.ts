@@ -184,7 +184,7 @@ export const wodeElfTroubadour = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Yllyric' ]
+				selected: ['Yllyric']
 			}
 		},
 		languages: [],

@@ -5,20 +5,20 @@ import { SkillList } from '@/enums/skill-list';
 
 export const agent: Career = {
 	id: 'career-agent',
-	name: 'Agent',
-	description: 'You worked as a spy for a government or organization.',
+	name: 'Агент',
+	description: 'Ви працювали шпигуном на уряд або організацію.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-1',
-			selected: [ 'Sneak' ]
+			selected: ['Sneak']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-2',
-			listOptions: [ SkillList.Interpersonal ]
+			listOptions: [SkillList.Interpersonal]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-3',
-			listOptions: [ SkillList.Intrigue ]
+			listOptions: [SkillList.Intrigue]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-agent-feature-4',
@@ -26,40 +26,40 @@ export const agent: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-agent-feature-5',
-			lists: [ PerkList.Intrigue ]
+			lists: [PerkList.Intrigue]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-agent-ii-1',
-				name: 'Disavowed',
-				description: 'While on a dangerous espionage assignment, things went sideways. Although you escaped with your life, the mission was a public failure thanks to bad information your agency gave you. They denied you work for them, and you went on the run. Hero work will let you survive and clear your name.'
+				name: 'Відкинутий',
+				description: 'Під час небезпечного шпигунського завдання все пішло не так. Хоча ви врятувалися, місія завершилася публічним провалом через хибну інформацію від вашої агенції. Вони відмовилися визнавати вас своїм агентом, і вам довелося тікати. Героїчна діяльність допоможе вам вижити й відновити своє імʼя.'
 			},
 			{
 				id: 'career-agent-ii-2',
-				name: 'Faceless',
-				description: 'Your identity was always hidden. It was your way of protecting those around you because the work you did spying on powerful entities came with dangers. Then your world came crashing down when an enemy agent unmasked you, causing you to lose everything - your privacy, livelihood, loved ones, all gone in the blink of an eye. Instead of going into hiding, you became a public hero to protect the innocent in the name of those you lost.'
+				name: 'Без обличчя',
+				description: 'Ваша особистість завжди залишалася прихованою — це був спосіб захистити близьких, адже шпигунство за могутніми особами було небезпечним. Але одного дня ворожий агент розкрив вас, і ви втратили все: приватність, роботу, коханих — усе зникло в одну мить. Замість того, щоб сховатися, ви стали публічним героєм, щоб захищати невинних на честь тих, кого втратили.'
 			},
 			{
 				id: 'career-agent-ii-3',
-				name: 'Free Agent',
-				description: 'There was a time in your life when you used to sell information to the highest bidder. Your acts were unsanctioned by any one organization, but you were well-connected enough to trade in secrets. Politics never mattered much to you until the information you sold wound up causing a ripple effect of harm that eventually destroyed the place you once called home. You became a hero to make up for your past.'
+				name: 'Вільний агент',
+				description: 'У певний період життя ви продавали інформацію тому, хто більше заплатить. Ваші дії не були санкціоновані жодною організацією, але ви мали достатньо звʼязків для торгівлі секретами. Політика вас не цікавила, поки продана інформація не спричинила ланцюгову реакцію, яка зруйнувала ваш дім. Ви стали героєм, щоб спокутувати минуле.'
 			},
 			{
 				id: 'career-agent-ii-4',
-				name: 'Informed',
-				description: 'After years of cultivating a rich list of informants, one of those informants risked everything to expose the heinous plans of powerful individuals. You promised to protect your informant, but your agency left them hanging - literally. You cut ties with your employer and swore to always make good on your word as a hero.'
+				name: 'Поінформований',
+				description: 'Після років роботи з інформаторами один із них ризикнув усім, щоб викрити жахливі плани впливових осіб. Ви пообіцяли захистити інформатора, але агенція залишила його напризволяще — буквально. Ви розірвали звʼязки з роботодавцем і поклялися завжди дотримуватися слова як герой.'
 			},
 			{
 				id: 'career-agent-ii-5',
-				name: 'Spies and Lovers',
-				description: 'While embedded in an undercover assignment, you fell for someone on the other side. They discovered you were a double-agent and though you insisted your feelings were real, the deceit cut too deep for your love interest to ignore. They exposed you, spurned you, or died because of their closeness to you. You left the espionage business to become a hero with nothing to hide.'
+				name: 'Шпигуни й кохання',
+				description: 'Працюючи під прикриттям, ви закохалися в когось із протилежного боку. Вони дізналися, що ви подвійний агент, і хоча ви запевняли у щирості почуттів, зрада була надто болючою. Вас викрили, відкинули або ж ця людина загинула через близькість до вас. Ви залишили шпигунську справу, щоб стати героєм без таємниць.'
 			},
 			{
 				id: 'career-agent-ii-6',
-				name: 'Turncoat',
-				description: 'You spent your life in service of your country or an organization that upheld your values. During your undercover operations, you discovered everything you were told was a lie. Whether you confronted your superiors or were exposed, you were stripped of your service medals before you left to become a true hero.'
+				name: 'Перебіжчик',
+				description: 'Ви присвятили життя службі країні чи організації, що поділяла ваші цінності. Під час роботи під прикриттям ви дізналися, що все, у що вірили, — брехня. Чи ви самі викрили керівників, чи вас викрили, вас позбавили всіх відзнак, і ви пішли, щоб стати справжнім героєм.'
 			}
 		],
 		selected: null,

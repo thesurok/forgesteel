@@ -12,18 +12,18 @@ import { virtuoso } from '@/data/classes/troubadour/virtuoso';
 
 export const troubadour: HeroClass = {
 	id: '9y3Jx3koKZipiPh1',
-	name: 'Troubadour',
-	description: `The whole world’s a stage, and everyone on it, an actor. No one knows this better than the troubadour. You find energy in the drama of everyday life and know how to draw spectacle forth from even the most mundane of situations. You accent highs and deepen lows in service to whoever might witness your performance.
+	name: 'Трубадур',
+	description: `Весь світ театр, і кожен на ньому актор. Ніхто не знає цього краще, ніж трубадур. Ви знаходите енергію в драмі повсякденного життя і знаєте, як витягти спектакль навіть з найпобутовіших ситуацій. Ви підкреслюєте висоти і поглиблюєте низини на користь тих, хто може стати свідком вашого виступу.
 
-As a troubadour, you chase drama. The insurmountable dangers of the world might cause many a hero to cower. But you take to that world stage not intending to die, but to find out if you are truly alive.
+Як трубадур, ви переслідуєте драму. Непереборні небезпеки світу можуть змусити багатьох героїв тремтіти. Але ви виходите на світову сцену не з наміром померти, а щоб дізнатися, чи справді ви живі.
 
-“History is a tale. Each of us is just a story we tell ourselves. Change the story, and you change the world.”
+“Історія — це казка. Кожен з нас — це просто історія, яку ми розповідаємо собі. Змініть історію, і ви зміните світ.”
 Jackson Bootblack`,
 	type: 'standard',
-	subclassName: 'Class Act',
+	subclassName: 'Класний актор',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Agility, Characteristic.Presence ]
+		[Characteristic.Agility, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -43,89 +43,89 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'UH5m1URtvSjZqfQb',
-					selected: [ 'Read Person' ]
+					selected: ['Read Person']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'GjD2ZwdbvEIZOKQV',
-					listOptions: [ SkillList.Interpersonal ],
+					listOptions: [SkillList.Interpersonal],
 					count: 2
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'WpHiobCwPhxC5q2g',
-					listOptions: [ SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'tS1DEkc8ZWqFRIxE',
-					name: 'Drama',
+					name: 'Драма',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'На початку вашого ходу',
 							value: '1d3'
 						},
 						{
 							tag: '',
-							trigger: 'The first time three or more heroes use an ability on the same turn',
+							trigger: 'Вперше, коли три або більше героїв використовують здатність у той самий хід',
 							value: '2'
 						},
 						{
 							tag: '',
-							trigger: 'The first time any hero is made winded during the encounter',
+							trigger: 'Вперше, коли будь-який герой стає захеканим під час зустрічі',
 							value: '2'
 						},
 						{
 							tag: '',
-							trigger: 'Whenever a creature within your line of effect rolls a natural 19 or 20',
+							trigger: 'Вперше, коли істота у вашій зоні впливу кидає натуральну 19 або 20',
 							value: '3'
 						},
 						{
 							tag: '',
-							trigger: 'When you or another hero dies',
+							trigger: 'Коли ви або інший герой помирає',
 							value: '10'
 						}
 					],
-					details: 'When you are dead, you continue to gain drama during combat as long as your body is intact. If you have 30 drama during the encounter in which you died, you can come back to life with 1 Stamina and 0 drama (no action required). If you are still dead after the encounter in which you died, you can’t gain drama during future encounters.'
+					details: 'Коли ви мертвий, ви продовжуєте отримувати драму під час бою, поки ваше тіло ціле. Якщо у вас є 30 драми під час зустрічі, в якій ви померли, ви можете повернутися до життя з 1 Витривалістю та 0 драми (дія не потрібна). Якщо ви все ще мертві після зустрічі, в якій ви померли, ви не можете отримувати драму під час майбутніх зустрічей.'
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: '3rwc3gnUTZ6Ta7a0'
 				}),
 				FactoryLogic.feature.create({
 					id: 'q9DC0wXzaL4f1EeU',
-					name: 'Scene Partner',
-					description: `Whenever you obtain a success on a test to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC’s interest by 1, you instead increase their interest by 2 (to a maximum of 5).
+					name: 'Партнер по сцені',
+					description: `Коли ви отримуєте успіх у тесті на взаємодію з NPC, використовуючи навичку з групи міжособистісних навичок, ви можете встановити зв'язок з цим NPC. Коли ви вступаєте в переговори з NPC, з яким у вас є зв'язок, їхнє терпіння збільшується на 1 (до максимуму 5). Крім того, вперше під час переговорів, коли ви особисто робите аргумент, який збільшує інтерес NPC на 1, ви замість цього збільшуєте їхній інтерес на 2 (до максимуму 5).
 
-You can have a number of bonds active equal to your level. When you form a bond with a new NPC that would exceed the limit, you must choose which of your active bonds to lose.`
+Ви можете мати активну кількість зв'язків, рівну вашому рівню. Коли ви встановлюєте зв'язок з новим NPC, що перевищує ліміт, ви повинні вибрати, який із ваших активних зв'язків втратити.`
 				}),
 				FactoryLogic.feature.create({
 					id: 'MTcRnLoVfzQkQw7T',
-					name: 'Routines',
-					description: 'You enter every battle with a set of performance abilities at the ready. Performances are magical presentations (such as songs, dances, poems, or gymnastic feats) that your allies can participate in. These abilities have the Performance keyword. At the start of each combat round, as long as you are not dazed, dead, or surprised, you can either choose a new performance or maintain your current performance (no action required). Your performance lasts until you are unable to maintain it or until the end of the encounter.'
+					name: 'Рутини',
+					description: 'Ви входите в кожну битву з набором готових здібностей виступу. Виступи - це магічні презентації (такі як пісні, танці, поеми або гімнастичні трюки), в яких можуть брати участь ваші союзники. Ці здібності мають ключове слово "Виступ". На початку кожного раунду бою, поки ви не приголомшені, не мертві або не здивовані, ви можете або вибрати новий виступ, або підтримувати свій поточний виступ (дія не потрібна). Ваш виступ триває до тих пір, поки ви не зможете його підтримувати або до кінця зустрічі.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'DY5KgVsjM9G2b1eP',
-						name: 'Choreography',
-						description: 'Taps, kicks, steps. It’s all “choreography.”',
+						name: 'Хореографія',
+						description: 'Топи, удари, кроки. Все це "хореографія".',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('While this performance is active, each target who starts their turn in the area gains a +2 bonus to speed until the end of their turn. ')
+							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожен цільовий об’єкт, який починає свій хід у зоні впливу, отримує бонус +2 до швидкості до кінця свого ходу.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'uqp9td9gJ5c4tKKQ',
-						name: 'Revitalizing Limerick',
-						description: 'There once was a man from Capital …',
+						name: 'Оживляючий лимерик',
+						description: 'Жив-був чоловік із столиці…',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score. Each chosen target can spend a Recovery.')
+							FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності. Кожна обрана ціль може витратити Відновлення.')
 						]
 					})
 				}),
@@ -148,30 +148,30 @@ You can have a number of bonds active equal to your level. When you form a bond 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'TzNcWWXAnI5bvPk9',
-					name: 'Appeal to the Muses',
-					description: `You can give a rousing speech, invoke your inspirations, or lift your fellows’ spirits, appealing to the muses to heighten a battle’s drama. However, irony is eager to hand your fortune to the villain to achieve the same end.
+					name: 'Звернення до муз',
+					description: `Ви можете виголосити надихаючу промову, звернутися до своїх натхнень або підняти бойовий дух товаришів, звертаючись до муз, щоб підсилити драму битви. Однак іронія може передати вашу удачу лиходієві заради тієї ж драми.
 
-Before you roll to gain drama at the start of your turn, you can make your appeal (no action required). If you do, your roll gains the following additional effects:
-* If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice.
-* If the roll is a 2, you gain 1 Heroic Resource, which you can keep or give to an ally within the distance of your active performance. The Director gains 1 Malice.
-* If the roll is a 3, you gain 2 of a Heroic Resource, which you can distribute among yourself and any allies within the distance of your active performance.`
+Перед тим як кинути на отримання драми на початку свого ходу, ви можете звернутися до муз (дія не потрібна). Якщо ви це робите, ваш кидок отримує такі додаткові ефекти:
+* Якщо випадає 1, ви отримуєте 1 додаткову драму. Директор отримує 1d3 Злоби.
+* Якщо випадає 2, ви отримуєте 1 героїчний ресурс, який можете залишити собі або віддати союзнику в межах дистанції вашого виступу. Директор отримує 1 Злобу.
+* Якщо випадає 3, ви отримуєте 2 героїчних ресурси, які можете розподілити між собою та будь-якими союзниками в межах дистанції вашого виступу.`
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'WagqmAOErEbwOMUA',
-					name: 'Invocation',
-					description: 'You have a specific manner that helps define your presence on the battlefield. Choose one of the following features.',
+					name: 'Інвокація',
+					description: 'У вас є особливий стиль, що визначає вашу присутність на полі бою. Оберіть одну з наступних особливостей.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'Ojd2syAahwIuMZ7E',
-									name: 'Allow Me to Introduce Tonight’s Players',
+									name: 'Дозвольте представити сьогоднішніх гравців',
 									description: '',
 									type: FactoryLogic.type.createMain(),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									sections: [
-										FactoryLogic.createAbilitySectionText('Whenever you take the first turn in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can shift up to their speed, and ability rolls made against them have a double bane until the end of the combat round. Additionally, any surprised enemy is no longer surprised.')
+										FactoryLogic.createAbilitySectionText('Щоразу, коли ви ходите першим у бойовій зустрічі, ви можете основною дією представити себе та своїх союзників супротивникам. Кожен союзник може зміститися на свою швидкість, а кидки здібностей проти них отримують подвійну перешкоду до кінця раунду. Крім того, будь-який застигнутий зненацька ворог більше не вважається застигнутим.')
 									]
 								})
 							}),
@@ -180,20 +180,20 @@ Before you roll to gain drama at the start of your turn, you can make your appea
 						{
 							feature: FactoryLogic.feature.create({
 								id: '3TpougOk43FTEYlT',
-								name: 'Formal Introductions',
-								description: `As a respite activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.
+								name: 'Формальні представлення',
+								description: `Під час відпочинку ви можете написати повідомлення про свій прихід (наприклад, візитівку або офіційного листа), адресоване ворогу. Ви можете вручити його особисто, якщо перебуваєте поруч, надіслати кур'єром або залишити у таємному місці для знаходження. Можна мати лише одне активне повідомлення.
 
-The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional hero tokens. These hero tokens disappear at the end of the encounter.`
+Директор визначає, коли ціль отримає повідомлення. Коли це стається, ворог насторожується й вживає відчайдушних заходів, щоб вас зупинити. Директор отримує 1 додаткову Злобу за кожен раунд бою з цією ціллю. Герої починають таку зустріч із 2 додатковими героїчними жетонами, які зникають після завершення зустрічі.`
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'vAsAdX1lzAwxKC0z',
-								name: 'My Reputation Precedes Me',
-								description: `You can invoke your reputation at the start of a social interaction with one or more NPCs who haven’t met you before, automatically creating a bond with one of those NPCs from that group as if using your Scene Partner feature. This bond counts against the limit on active bonds from your Scene Partner feature. While the bond is active, all heroes present treat their Renown as 2 higher than usual for the purpose of entering into a negotiation with the bonded NPC.
+								name: 'Моя репутація випереджає мене',
+								description: `На початку соціальної взаємодії з одним або кількома NPC, які вас не знають, ви можете використати свою репутацію, автоматично створивши зв'язок з одним із цих NPC, як за допомогою особливості "Партнер по сцені". Цей зв'язок враховується у ліміті активних зв'язків. Поки зв'язок активний, усі герої вважають свою Відомість на 2 вищою для переговорів із цим NPC.
 
-The Director can award the heroes 1 hero token to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a bane on tests made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your Scene Partner feature to find allies within the group.`
+Директор може дати героям 1 жетон, щоб зробити вас сумнозвісним серед цієї групи істот і не дозволити створити зв'язок. Поки ви не покращите репутацію, усі герої отримують шкоду на випробуваннях взаємодії з цією групою навичками міжособистісної групи. Ви все ще можете шукати союзників через "Партнер по сцені".`
 							}),
 							value: 1
 						}
@@ -201,7 +201,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tknnoxNMdhRdiF1e',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -229,12 +229,12 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'eMWbssNB1OSeIFmj',
-					name: 'Melodrama',
+					name: 'Мелодрама',
 					options: [
 						{
 							feature: FactoryLogic.feature.createHeroicResourceGain({
 								id: 'bPZ0jgAHVi08ZX2X',
-								name: 'Melodrama #1',
+								name: 'Мелодрама №1',
 								tag: '',
 								trigger: 'Whenever a creature rolls a natural 2 on a power roll.',
 								value: '2'
@@ -244,7 +244,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 						{
 							feature: FactoryLogic.feature.createHeroicResourceGain({
 								id: 'Jlp0a0yANrSIoeXp',
-								name: 'Melodrama #2',
+								name: 'Мелодрама №2',
 								tag: '',
 								trigger: 'The first time the Director deals damage to a hero using a Villain action or an ability that costs Malice.',
 								value: '2'
@@ -254,7 +254,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 						{
 							feature: FactoryLogic.feature.createHeroicResourceGain({
 								id: '05FGfz1LetwQOlGm',
-								name: 'Melodrama #3',
+								name: 'Мелодрама №3',
 								tag: '',
 								trigger: 'The first time a hero unwillingly falls 5 or more squares.',
 								value: '2'
@@ -264,7 +264,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 						{
 							feature: FactoryLogic.feature.createHeroicResourceGain({
 								id: 'bnEzQSbTNyay2M51',
-								name: 'Melodrama #4',
+								name: 'Мелодрама №4',
 								tag: '',
 								trigger: 'The first time a hero deals damage with 3 surges.',
 								value: '2'
@@ -274,7 +274,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 						{
 							feature: FactoryLogic.feature.createHeroicResourceGain({
 								id: 'lbGOgNoNt9SsiBDB',
-								name: 'Melodrama #5',
+								name: 'Мелодрама №5',
 								tag: '',
 								trigger: 'Whenever a hero spends their last Recovery.',
 								value: '2'
@@ -284,8 +284,8 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'AOgAXA0Z2YZWf0Be',
-								name: 'Melodrama Alternative',
-								description: 'You can forgo choosing a new event to choose one event you already have (including an event gained with this feature). Whenever the chosen event grants you drama, you gain 1 additional drama.'
+								name: 'Альтернатива мелодрами',
+								description: 'Ви можете не обирати нову подію, а вибрати вже наявну (включно з отриманою через цю особливість). Коли обрана подія дає вам драму, ви отримуєте 1 додаткову драму.'
 							}),
 							value: 1
 						}
@@ -297,29 +297,29 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'pBD0Fhn5vO1A26aB',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'faVh7riGGaN0uOHR',
-					name: 'Zeitgeist',
-					description: `You always have your ear to the ground, your finger on the pulse. When you start or finish a respite, choose one of the following effects.
-### Foreshadowing
+					name: 'Дух часу',
+					description: `Ви завжди в курсі подій, відчуваєте пульс життя. Коли починаєте або завершуєте відпочинок, оберіть один із наступних ефектів.
+### Передчуття
 
-You can ask the Director for two clues regarding an upcoming encounter or negotiation. One of the clues can be false.
+Ви можете попросити Директора надати дві підказки щодо майбутньої зустрічі чи переговорів. Одна з підказок може бути хибною.
 
-### Hear Ye, Hear Ye!
+### Оголошення
 
-By bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a Presence test:
+Хвалячись, залякуючи, керуючи чи брешучи, ви намагаєтеся поширити інформацію в місцевості. Зробіть перевірку Присутності:
 
-| Roll    | Effect                                                                                                                                                                                                                                        |
+| Кидок    | Ефект                                                                                                                                                                                                                                        |
 |:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ≤ 11    | Your information reaches no one.                                                                                                                                                                                                              |
-| 12 - 16 | Your information reaches the nearest populated area of town size or larger. You and each ally present when you make the test gain an edge on Presence tests in that area until one of you spends a Recovery.                                  |
-| ≥ 17    | Your information reaches the nearest populated area of town size or larger, plus the next closest such population. You and allies present for your test gain an edge on Presence tests made in those areas until you start your next respite. |
+| ≤ 11    | Вашу інформацію ніхто не чує.                                                                                                                                                                                                              |
+| 12 - 16 | Інформація доходить до найближчого населеного пункту містечкового розміру чи більшого. Ви та кожен союзник, присутній під час перевірки, отримуєте перевагу на перевірки Присутності в цій місцевості, поки хтось із вас не витратить Відновлення.                                  |
+| ≥ 17    | Інформація доходить до найближчого та наступного за відстанню населеного пункту містечкового розміру чи більшого. Ви та союзники отримуєте перевагу на перевірки Присутності в цих місцевостях до початку вашого наступного відпочинку. |
 
-### Latest Goss
+### Останні чутки
 
-You can ask the Director for three rumors regarding the area you’re in or an area you plan on entering before your next respite. One of the rumors can be false.`
+Ви можете попросити Директора надати три чутки про місцевість, у якій перебуваєте, або про ту, куди плануєте вирушити до наступного відпочинку. Одна з чуток може бути хибною.`
 				})
 			]
 		},
@@ -337,19 +337,19 @@ You can ask the Director for three rumors regarding the area you’re in or an a
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'ywf7fUdThUpCdF6J',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'KFi7rVE3i9lrpXic',
-						name: 'Spotlight',
-						description: 'The audience is watching, so you’d better give them a show.',
+						name: 'Прожектор',
+						description: 'Глядачі стежать, тож краще дайте їм шоу.',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('While this performance is active, each target who starts their turn in the area gains 1 of their Heroic Resource. This Heroic Resource disappears at the end of the target’s turn if they don’t spend it.')
+							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожен цільовий об’єкт, який починає свій хід у зоні, отримує 1 героїчний ресурс. Цей ресурс зникає наприкінці ходу цілі, якщо його не витрачено.')
 						]
 					})
 				})
@@ -386,9 +386,9 @@ You can ask the Director for three rumors regarding the area you’re in or an a
 				FactoryLogic.feature.create({
 					id: 'HRzXpQyzYdOU4f3r',
 					name: 'Equal Billing',
-					description: `You can use your Scene Partner feature to form a bond with one willing hero instead of an NPC you interact with using a test. If you bond with another hero, you lose your existing bond with a hero.
+					description: `Ви можете використати особливість "Партнер по сцені", щоб створити зв'язок із героєм-однодумцем замість NPC, з яким взаємодієте через випробування. Якщо ви створюєте зв'язок із новим героєм, попередній зв'язок із героєм втрачається.
 
-Additionally, you and creatures you are bonded with gain a +1 bonus to saving throws. Whenever you or a bonded creature succeeds on a saving throw, you and each creature you are bonded with gains temporary Stamina equal to your level.`
+Крім того, ви та істоти, з якими у вас є зв'язок, отримуєте +1 до рят. кидків. Коли ви або пов'язана істота успішно проходите рят. кидок, ви та всі пов'язані з вами істоти отримуєте тимчасову Витривалість, рівну вашому рівню.`
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'JRIAGwr5xwIXZdG5',
@@ -396,11 +396,11 @@ Additionally, you and creatures you are bonded with gain a +1 bonus to saving th
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 + 1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'A7CsaTimMURrXg0M',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -422,9 +422,9 @@ Additionally, you and creatures you are bonded with gain a +1 bonus to saving th
 				FactoryLogic.feature.create({
 					id: 'b4oYpDkEydG3CTOD',
 					name: 'Roar of the Crowd',
-					description: `You are empowered by your audience, near and far. You can’t be made frightened, and if you are prone, you can stand up as a free maneuver.
+					description: `Ви отримуєте силу від своєї аудиторії, як близької, так і далекої. Вас не можна налякати, а якщо ви розпластані, можете встати безкоштовним маневром.
 
-Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains temporary Stamina equal to 10 + the number of active bonds from your Scene Partner feature + either your Victories or the number of players in your game (whichever is higher).`
+Крім того, коли ви витрачаєте Відновлення, ви можете не відновлювати Витривалість, а викликати рев невидимої аплодуючої публіки. Ви та кожен союзник у межах 3 клітинок отримуєте тимчасову Витривалість, рівну 10 + кількість активних зв'язків із "Партнер по сцені" + або ваші Перемоги, або кількість гравців у грі (що більше).`
 				})
 			]
 		},
@@ -455,20 +455,20 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 				FactoryLogic.feature.create({
 					id: 'SvXvD5JZWWIMcMGv',
 					name: 'Dramaturgy',
-					description: 'You gain 1 additional drama or other Heroic Resource whenever you use your Appeal to the Muses feature. Additionally, your performances no longer have a distance, but can affect any target on the encounter map within your line of effect.'
+					description: 'Ви отримуєте 1 додаткову драму або інший героїчний ресурс щоразу, коли використовуєте "Звернення до муз". Крім того, ваші виступи більше не мають обмеження по дистанції й можуть впливати на будь-яку ціль на карті зустрічі в межах вашої лінії ефекту.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'kN2tUhuHAbfRxOM3',
 					name: 'Greatest of All Time',
-					description: 'Whenever you obtain a success on a test, each NPC within your line of effect has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an edge on their next test. These effects last until you start your next respite.'
+					description: 'Щоразу, коли ви досягаєте успіху у випробуванні, кожен NPC у межах вашої лінії ефекту знижує свій показник Враження на 4 під час переговорів (але не нижче 1), а кожен союзник у межах 3 клітинок отримує перевагу на наступному випробуванні. Ці ефекти тривають до початку вашого наступного відпочинку.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'MJlch8xy0BmtjEAz',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'gIVmDrETVg4F0eTC',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		}
@@ -476,23 +476,23 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'gEzZJ1hBo5YTQZVL',
-			name: 'Artful Flourish',
-			description: 'And they said practicing fencing was a waste!',
+			name: 'Мистецький фінт',
+			description: 'А вони казали, що фехтування — марна справа!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Two creatures or objects',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
-						tier1: '2 damage',
-						tier2: '5 damage',
-						tier3: '7 damage'
+						characteristic: [Characteristic.Agility],
+						tier1: '2 шкоди',
+						tier2: '5 шкоди',
+						tier3: '7 шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift up to 3 squares.'),
+				FactoryLogic.createAbilitySectionText('Ви можете зміститися до 3 клітинок.'),
 				FactoryLogic.createAbilitySectionSpend({
 					value: 2,
 					repeatable: true,
@@ -502,51 +502,51 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 		}),
 		FactoryLogic.createAbility({
 			id: 'aiH7V95hu1z7bvnJ',
-			name: 'Cutting Sarcasm',
-			description: 'There you are, radiating your usual charisma.',
+			name: 'Різкий сарказм',
+			description: 'Ось ви, випромінюєте свою звичну харизму.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '2 + P psychic damage; P < [weak] , bleeding (save ends)',
-						tier2: '5 + P psychic damage; P < [average] , bleeding (save ends)',
-						tier3: '7 + P psychic damage; P < [strong] , bleeding (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '2 + П психічної шкоди; П < [weak], кровотеча (рят. кидок закінчує)',
+						tier2: '5 + П психічної шкоди; П < [average], кровотеча (рят. кидок закінчує)',
+						tier3: '7 + П психічної шкоди; П < [strong], кровотеча (рят. кидок закінчує)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'Dq8W50f8RkS1gCZR',
-			name: 'Instigator',
-			description: 'I didn’t do it! What?',
+			name: 'Провокатор',
+			description: 'Це не я! Що?',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '3 + P damage',
-						tier2: '6 + P damage',
-						tier3: '9 + P damage'
+						characteristic: [Characteristic.Presence],
+						tier1: '3 + П шкоди',
+						tier2: '6 + П шкоди',
+						tier3: '9 + П шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target is taunted by you or a willing ally adjacent to you until the end of the target’s next turn.')
+				FactoryLogic.createAbilitySectionText('Ціль провокується вами або союзником поруч із вами до кінця наступного ходу цієї цілі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'oklqgAHvGNBYvZ6Y',
-			name: 'Witty Banter',
-			description: 'A lyrical (and physical) jab insults an enemy and inspires an ally.',
+			name: 'Дотепна перепалка',
+			description: 'Ліричний (і фізичний) випад ображає ворога й надихає союзника.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -556,13 +556,13 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '4 + P psychic damage',
-						tier2: '5 + P psychic damage',
-						tier3: '7 + P psychic damage'
+						characteristic: [Characteristic.Presence],
+						tier1: '4 + П психічної шкоди',
+						tier2: '5 + П психічної шкоди',
+						tier3: '7 + П психічної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('One ally within 10 squares of you can end one effect on them that is ended by a saving throw or that ends at the end of their turn.'),
+				FactoryLogic.createAbilitySectionText('Один союзник у межах 10 клітинок може скинути один ефект, який завершується рятувальним кидком або наприкінці його ходу.'),
 				FactoryLogic.createAbilitySectionSpend({
 					effect: 'The chosen ally can spend a Recovery.'
 				})
@@ -570,10 +570,10 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 		}),
 		FactoryLogic.createAbility({
 			id: 'wuGWNezovUaXNrhz',
-			name: 'Harsh Critic',
-			description: 'Just one bad review will ruin their day.',
+			name: 'Суворий критик',
+			description: 'Один поганий відгук — і день зіпсовано.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
@@ -583,31 +583,31 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '7 + P sonic damage',
-						tier2: '10 + P sonic damage',
-						tier3: '13 + P sonic damage'
+						characteristic: [Characteristic.Presence],
+						tier1: '7 + П звукової шкоди',
+						tier2: '10 + П звукової шкоди',
+						tier3: '13 + П звукової шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The first time the target uses an ability before the start of your next turn, any effects from the ability’s tier outcomes other than damage are negated for all targets. Ability effects that always happen regardless of the power roll work as usual. ')
+				FactoryLogic.createAbilitySectionText('Вперше, коли ціль використовує здатність до початку вашого наступного ходу, усі ефекти від результатів рівнів цієї здатності, окрім шкоди, ігноруються для всіх цілей. Ефекти, які завжди відбуваються незалежно від кидка сили, діють як зазвичай.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '48Ek5173XbbcaIuv',
-			name: 'Hypnotic Overtones',
-			description: 'You produce an entrancing note that twists the senses in a spectacular fashion.',
+			name: 'Гіпнотичні відтінки',
+			description: 'Ви створюєте зачаровуючу ноту, що вражаюче спотворює відчуття.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: 'Slide 1; I < [weak], dazed (save ends)',
-						tier2: 'Slide 1; I < [average], dazed (save ends)',
-						tier3: 'Slide 2; I < [strong], dazed (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: 'зсунути на 1; І < [weak], приголомшений (рят. кидок закінчує)',
+						tier2: 'зсунути на 1; І < [average], приголомшений (рят. кидок закінчує)',
+						tier3: 'зсунути на 2; І < [strong], приголомшений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -619,161 +619,161 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 		}),
 		FactoryLogic.createAbility({
 			id: 'D27ycyqsuILS0KXt',
-			name: 'Quick Rewrite',
-			description: 'You write something unexpected into the scene that hinders your enemy.',
+			name: 'Швидке переписування',
+			description: 'Ви вписуєте у сцену щось неочікуване, що заважає ворогу.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '4 damage; P < [weak], slowed (save ends)',
-						tier2: '5 damage; P < [average], slowed (save ends)',
-						tier3: '6 damage; P < [strong], restrained (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '4 шкоди; П < [weak], сповільнений (рят. кидок закінчує)',
+						tier2: '5 шкоди; П < [average], сповільнений (рят. кидок закінчує)',
+						tier3: '6 шкоди; П < [strong], скутий (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies.')
+				FactoryLogic.createAbilitySectionText('Ця зона є важкопрохідною для ворогів.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'amyFFfmA2oAoiO8P',
-			name: 'Upstage',
-			description: 'As you bob and weave through the crowd, you can’t help but leave the audience wanting more.',
+			name: 'Затьмарити',
+			description: 'Маневруючи серед натовпу, ви неминуче залишаєте глядачів у передчутті більшого.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You shift up to your speed. You make one power roll that targets each enemy you move adjacent to during this shift.'),
+				FactoryLogic.createAbilitySectionText('Ви зміщуєтеся на свою швидкість. Ви робите один кидок сили, який цілить у кожного ворога, до якого ви наблизилися під час цього зміщення.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility, Characteristic.Presence ],
-						tier1: 'Taunted (EoT); A < [weak], prone',
-						tier2: 'Taunted (EoT); A < [average], prone',
-						tier3: 'Taunted (EoT); A < [strong], prone and can’t stand (EoT)'
+						characteristic: [Characteristic.Agility, Characteristic.Presence],
+						tier1: 'спровокований (до кінця ходу); Л < [weak], розпластаний',
+						tier2: 'спровокований (до кінця ходу); Л < [average], розпластаний',
+						tier3: 'спровокований (до кінця ходу); Л < [strong], розпластаний і не може встати (до кінця ходу)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'MKhak5HyGbRZdhWy',
-			name: 'Dramatic Reversal',
-			description: 'Give the audience a surprise.',
+			name: 'Драматичний поворот',
+			description: 'Подаруйте глядачам несподіванку.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: 'The target can shift 1 square and make a free strike.',
-						tier2: 'The target can shift up to 2 squares and make a free strike that gains an edge.',
-						tier3: 'The target can shift up to 3 squares and make a free strike that gains an edge, then can spend a Recovery.'
+						characteristic: [Characteristic.Presence],
+						tier1: 'Ціль може зміститися на 1 клітинку і зробити безкоштовний удар.',
+						tier2: 'Ціль може зміститися до 2 клітинок і зробити безкоштовний удар з перевагою.',
+						tier3: 'Ціль може зміститися до 3 клітинок і зробити безкоштовний удар з перевагою, а потім може витратити Відновлення.'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'y4twMNJioffMnTAp',
-			name: 'Fake Your Death',
-			description: 'O happy dagger, this is thy sheath!',
+			name: 'Імітація смерті',
+			description: 'О, щасливий кинджал, ось твій піхви!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText(' You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to speed and you ignore difficult terrain. The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.')
+				FactoryLogic.createAbilitySectionText('Ви стаєте невидимим і створюєте магічну ілюзію свого тіла, що падає у вашому місці. Поки ви невидимі, ви отримуєте +3 до швидкості та ігноруєте важкопрохідну місцевість. Ілюзія та невидимість тривають до кінця вашого наступного ходу або поки ілюзію не взаємодіють, ви не отримаєте шкоду чи не використаєте основну дію або маневр.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'wkTaIiJ4JOVGjFkE',
-			name: 'Flip the Script',
-			description: 'You try a different take on events, justifying the new locations everyone ended up in.',
+			name: 'Перевернути сценарій',
+			description: 'Ви переписуєте події, пояснюючи нові місця, де всі опинилися.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target can teleport up to 5 squares. Any teleported target who was slowed is no longer slowed.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль може телепортуватися на відстань до 5 клітинок. Будь-яка телепортована ціль, яка була сповільнена, більше не є сповільненою.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'lHLPt6cUuyXcCdb0',
-			name: 'Method Acting',
-			description: 'They’re so hurt by your performance, you start to believe it yourself. ',
+			name: 'Метод акторства',
+			description: 'Ваша гра так вражає, що ви самі починаєте вірити у неї.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
-						tier1: '6 + A damage; P < [weak], weakened (save ends)',
-						tier2: '10 + A damage; P < [average], weakened (save ends)',
-						tier3: '14 + A damage; P < [strong], weakened (save ends)'
+						characteristic: [Characteristic.Agility],
+						tier1: '6 + Л шкоди; П < [weak], ослаблений (рят. кидок закінчує)',
+						tier2: '10 + Л шкоди; П < [average], ослаблений (рят. кидок закінчує)',
+						tier3: '14 + Л шкоди; П < [strong], ослаблений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can become bleeding (save ends) to deal an extra 5 corruption damage to the target.')
+				FactoryLogic.createAbilitySectionText('Ви можете отримати стан Кровотечі (рят. кидок закінчує), щоб завдати цілі додаткових 5 шкоди Скверною.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'BlO52My4D7X4wdVh',
-			name: 'Extensive Rewrites',
-			description: 'No, this isn’t right. That foe was over there!',
+			name: 'Розширені переробки',
+			description: 'Ні, це не так. Той ворог був он там!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: 'Slide 3; P < [weak], this slide ignores the target’s stability',
-						tier2: 'Slide 5; P < [average], this slide ignores the target’s stability',
-						tier3: 'Slide 7; P < [strong], this slide ignores the target’s stability'
+						characteristic: [Characteristic.Presence],
+						tier1: 'зсунути на 3; П < [weak], цей зсув ігнорує стійкість цілі',
+						tier2: 'зсунути на 5; П < [average], цей зсув ігнорує стійкість цілі',
+						tier3: 'зсунути на 7; П < [strong], цей зсув ігнорує стійкість цілі'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Instead of sliding a target, you can swap their location with another target as long as each can fit into the other’s space. You can’t slide targets into other creatures or objects using this ability.')
+				FactoryLogic.createAbilitySectionText('Замість того, щоб зсунути ціль, ви можете поміняти їхні місця з іншою ціллю, якщо кожна з них може вміститися у просторі іншої. За допомогою цієї здібності ви не можете зсувати цілі у простір, зайнятий іншими істотами чи об’єктами.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '7vm0VdMiqgrZtpcu',
-			name: 'Infernal Gavotte',
-			description: 'A spicy performance lights a fire under your allies’ feet',
+			name: 'Пекельна гавота',
+			description: 'Палкий виступ запалює вогонь під ногами ваших союзників.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '5 fire damage; A < [weak], weakened (save ends)',
-						tier2: '7 fire damage; A < [average], weakened (save ends)',
-						tier3: '10 fire damage; A < [strong], weakened (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '5 вогняної шкоди; Л < [weak], ослаблений (рят. кидок закінчує)',
+						tier2: '7 вогняної шкоди; Л < [average], ослаблений (рят. кидок закінчує)',
+						tier3: '10 вогняної шкоди; Л < [strong], ослаблений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each ally in the area can shift up to 2 squares.')
+				FactoryLogic.createAbilitySectionText('Кожен союзник у цій зоні може зміститися до 2 клітинок.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '7vm0VdMiqgrZtpcu2',
-			name: 'Star Solo',
-			description: 'Your performance travels and doesn’t stop moving until your audience is completely rocked.',
+			name: 'Зіркове соло',
+			description: 'Ваша вистава мандрує і не зупиняється, доки ваша аудиторія не буде повністю вражена.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
@@ -783,160 +783,160 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '5 + P damage',
-						tier2: '8 + P damage; push 3',
-						tier3: '11 + P damage; push 5'
+						characteristic: [Characteristic.Presence],
+						tier1: '5 + П шкоди',
+						tier2: '8 + П шкоди; штовхнути на 3',
+						tier3: '11 + П шкоди; штовхнути на 5'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can choose to have this ability deal sonic damage. Additionally, you can use this ability against the same target for the next 2 combat rounds without spending drama.')
+				FactoryLogic.createAbilitySectionText('Ви можете обрати, щоб ця здібність завдавала звукової шкоди. Крім того, ви можете використовувати цю здібність проти тієї ж цілі протягом наступних 2 раундів бою без витрати Драми.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '7vm0VdMiqgrZtpcu3',
-			name: 'We Meet at Last',
-			description: 'You magically intertwine your fate with another creature—for better or worse.',
+			name: 'Нарешті зустрілися',
+			description: 'Ви магічно переплітаєте свою долю з іншою істотою — на краще чи на гірше.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-Until the end of the encounter, both you and the target can target each other with abilities even if you are beyond distance, with the distance of this ability replacing those abilities’ distances. The target can’t be force moved by an ability used beyond distance this way.
+До кінця зустрічі ви та ціль можете націлювати одне одного здібностями, навіть якщо перебуваєте поза дистанцією, причому дистанція цієї здібності замінює дистанцію інших здібностей. Ціль не може бути примусово переміщена здібністю, використаною поза дистанцією таким чином.
 
-Additionally, once on each of your turns, you can use a free maneuver to communicate a motivating or dispiriting message to the target, either granting them 2 surges or forcing them to take a bane on the next ability roll they make before the start of your next turn.`)
+Крім того, раз на свій хід ви можете безкоштовно виконати маневр, щоб передати цілі надихаюче або пригнічуюче послання: або надати їй 2 імпульси, або змусити її отримати перешкоду на наступний кидок здібності, який вона зробить до початку вашого наступного ходу.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fyx732V0Vlq49a1N',
-			name: 'Action Hero',
-			description: 'You wield your weapon at blistering speed, leaving everyone around you fighting for their lives.',
+			name: 'Екшн-герой',
+			description: 'Ви володієте зброєю з шаленою швидкістю, змушуючи всіх навколо боротися за своє життя.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
-						tier1: '10 damage',
-						tier2: '14 damage',
-						tier3: '20 damage'
+						characteristic: [Characteristic.Agility],
+						tier1: '10 шкоди',
+						tier2: '14 шкоди',
+						tier3: '20 шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Unless you score a critical hit, this ability can’t reduce a non-minion target below 1 Stamina.')
+				FactoryLogic.createAbilitySectionText('Якщо ви не завдаєте критичного удару, ця здібність не може знизити Витривалість цілі, яка не є міньйоном, нижче 1.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'HeBr76EpA6RIMDSX',
-			name: 'Continuity Error',
-			description: 'Your subject is written into two places at once.',
+			name: 'Помилка неперервності',
+			description: 'Ваша ціль одночасно опиняється у двох місцях.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One enemy or object',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target is split into two separate entities, one of which remains in the target’s space while the other appears in an unoccupied space of your choice within distance. If the target is a creature, this creates a new creature under the Director’s control. Each entity has half the original target’s Stamina, is weakened, and takes 1d6 corruption damage at the start of each of their turns. If either entity is reduced to 0 Stamina, the other entity persists as the original entity and this effect ends. The effect also ends if both entities occupy the same space, causing them to automatically merge and combine their current Stamina.')
+				FactoryLogic.createAbilitySectionText('Ціль розділяється на дві окремі сутності: одна залишається в початковому просторі цілі, інша зʼявляється в незайнятому просторі на ваш вибір у межах дистанції. Якщо ціль — істота, це створює нову істоту під контролем Директора. Кожна сутність має половину початкової Витривалості цілі, є ослабленою і отримує 1d6 шкоди Скверною на початку кожного свого ходу. Якщо будь-яка сутність знижується до 0 Витривалості, інша повертається до вигляду оригінальної сутності й ефект припиняється. Ефект також припиняється, якщо обидві сутності опиняються в одному просторі, спричиняючи їхнє автоматичне злиття та обʼєднання поточної Витривалості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'Q5GrFFZc8YjRIJjL',
-			name: 'Love Song',
-			description: 'You play a small ditty that plants you inside your target’s heart.',
+			name: 'Любовна пісня',
+			description: 'Ви граєте коротку мелодію, що оселяє вас у серці цілі.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target gains 20 temporary Stamina. Until the end of the encounter, whenever the target takes damage while you’re within distance, you can choose to take the damage instead of the target.')
+				FactoryLogic.createAbilitySectionText('Ціль отримує 20 тимчасової Витривалості. До кінця зустрічі, коли ціль отримує шкоду, перебуваючи в межах вашої дистанції, ви можете обрати взяти цю шкоду на себе замість цілі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'ZrTkbAu3EcZ0C6Di',
-			name: 'Patter Song',
-			description: 'Dazzle them with your fancy patter and they forget where they were.',
+			name: 'Жвава пісня',
+			description: 'Засліпіть їх своїм дотепним паттером, і вони забудуть, де знаходяться.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: 'One ally within distance can take their turn immediately after yours.',
-						tier2: 'Two allies within distance can take their turns immediately after yours in any order.',
-						tier3: 'Three allies within distance can take their turns immediately after yours in any order. One of those allies can have already taken a turn this combat round.'
+						characteristic: [Characteristic.Presence],
+						tier1: 'Один союзник у межах дистанції може зробити свій хід одразу після вашого.',
+						tier2: 'Два союзники у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку.',
+						tier3: 'Три союзники у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку. Один із цих союзників уже міг зробити хід у цьому раунді бою.'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'SRHmnFY5rDCiCRuR',
-			name: 'Dramatic Reveal',
-			description: 'A little stage trickery, and where once stood a foe, now stands a friend!',
+			name: 'Драматичне відкриття',
+			description: 'Трохи сценічної хитрості — і там, де стояв ворог, тепер стоїть друг!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever you reduce a creature to 0 Stamina using an ability, you can use a free triggered action to teleport an ally within distance of that ability into the creature’s space in a plume of rose petals. You or the teleported ally can then make a melee free strike.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли ви знижуєте істоту до 0 Витривалості за допомогою здібності, ви можете використати безкоштовну тригерну дію, щоб телепортувати союзника в межах дистанції цієї здібності у простір цієї істоти в потоці пелюсток троянд. Ви або телепортований союзник можуть потім зробити ближній безкоштовний удар.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '0rmeKAGMyn9Q6YMf',
-			name: 'Power Ballad',
-			description: 'A song for the brokenhearted wraps itself around the target and blossoms into a ward of thorns.',
+			name: 'Потужна балада',
+			description: 'Пісня для розбитих сердець огортає ціль і розквітає захисним вінцем із шипів.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Self or one ally',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever the target takes damage while winded, they can use a free triggered action to deal half the damage they took to the source of the damage.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли ціль отримує шкоду, будучи захеканою, вона може використати безкоштовну тригерну дію, щоб завдати джерелу цієї шкоди половину отриманої шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: '2XIhjJCLHQuNte5I',
-			name: 'Saved in the Edit',
-			description: 'You shout a word of power that allows you to rewrite reality to your whims.',
+			name: 'Врятовано в монтажі',
+			description: 'Ви вигукуєте слово сили, що дозволяє переписати реальність на свій розсуд.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText(`**Effect** Until the end of the encounter, whenever you deal rolled damage to a creature or object, or enable a creature to spend a Recovery, you can use a free triggered action to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending Recoveries simultaneously, each target receives the same effect:
-* The target has damage weakness equal to your Presence score against any magic, psionic, or weapon ability.
-* The target has damage immunity equal to your Presence score.
-* The target has a bonus to stability and a penalty to speed equal to your Presence score.
-* The target has a bonus to speed and a penalty to stability equal to your Presence score.`)
+				FactoryLogic.createAbilitySectionText(`**Ефект** До кінця зустрічі, щоразу, коли ви завдаєте кидкову шкоду істоті чи об'єкту або дозволяєте істоті витратити Відновлення, ви можете безкоштовною тригерною дією надати цій істоті чи об'єкту один із наступних ефектів до початку вашого наступного ходу. Якщо ця здібність спрацьовує через те, що кілька цілей одночасно отримують шкоду або кілька істот одночасно витрачають Відновлення, кожна ціль отримує той самий ефект:
+* Ціль має вразливість до шкоди, що дорівнює вашому показнику Присутності, проти будь-якої магічної, псіонічної чи збройної здібності.
+* Ціль має імунітет до шкоди, що дорівнює вашому показнику Присутності.
+* Ціль отримує бонус до стійкості та штраф до швидкості, що дорівнюють вашому показнику Присутності.
+* Ціль отримує бонус до швидкості та штраф до стійкості, що дорівнюють вашому показнику Присутності.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'zrzbOjJnBZb8eWUQ',
-			name: 'The Show Must Go On',
-			description: 'You shine a bright light on the players on the stage and compel them to finish the performance.',
+			name: 'Шоу має продовжуватися',
+			description: 'Ви спрямовуєте яскраве світло на гравців на сцені й змушуєте їх завершити виставу.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '6 damage; P < [weak], the target can’t willingly leave the area (EoT)',
-						tier2: '8 damage; P < [average], the target can’t willingly leave the area (save ends)',
-						tier3: '12 damage; the target can’t willingly leave the area (EoT); if P < [strong], they can’t willingly leave the area (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '6 шкоди; П < [weak], ціль не може добровільно залишити зону (до кінця ходу)',
+						tier2: '8 шкоди; П < [average], ціль не може добровільно залишити зону (рят. кидок закінчує)',
+						tier3: '12 шкоди; ціль не може добровільно залишити зону (до кінця ходу); якщо П < [strong], вона не може добровільно залишити зону (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each ally within distance can’t obtain lower than a tier 2 outcome on the next test they make before the start of your next turn.')
+				FactoryLogic.createAbilitySectionText('Кожен союзник у межах дистанції не може отримати нижче 2-го рівня результату на наступному випробуванні, яке зробить до початку вашого наступного ходу.')
 			]
 		})
 	],

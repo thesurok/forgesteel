@@ -17,7 +17,7 @@ interface Props {
 export const ModifiersCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[ props.character ]
+		[props.character]
 	);
 
 	const getModifierNameLabel = () => {
@@ -97,7 +97,7 @@ export const ModifiersCard = (props: Props) => {
 	return (
 		<div className='modifiers card'>
 			<h2>
-				<div className='title'>Equipment and Modifiers</div>
+				<div className='title'>Спорядження та модифікатори</div>
 				<LabeledBooleanField
 					label='Kit'
 					value={character.modifierTypes?.includes('Kit')}
@@ -106,7 +106,7 @@ export const ModifiersCard = (props: Props) => {
 			<LabeledTextField
 				label={getModifierNameLabel()}
 				content={character.modifierName}
-				additionalClasses={[ 'name', 'label-overlay' ]}
+				additionalClasses={['name', 'label-overlay']}
 			/>
 
 			<div className='modifier-augmentations'>
@@ -114,18 +114,18 @@ export const ModifiersCard = (props: Props) => {
 					{
 						bothWeaponArmor || onlyWeaponImplement ?
 							<LabeledTextField
-								label='Weapon / Implement'
+								label='Зброя / Інструмент'
 								content={character.modifierWeaponImplement}
-								additionalClasses={[ 'label-overlay' ]}
+								additionalClasses={['label-overlay']}
 							/>
 							: null
 					}
 					{
 						bothWeaponArmor || onlyArmorWard ?
 							<LabeledTextField
-								label='Armor / Ward'
+								label='Броня / Щит'
 								content={character.modifierArmorWard}
-								additionalClasses={[ 'label-overlay' ]}
+								additionalClasses={['label-overlay']}
 							/>
 							: null
 					}
@@ -133,27 +133,27 @@ export const ModifiersCard = (props: Props) => {
 
 				<div className='stats'>
 					<LabeledTextField
-						label='Speed'
+						label='Швидк.'
 						content={SheetFormatter.addSign(character.modifierSpeed)}
 					/>
 					<LabeledTextField
-						label='Disengage'
+						label='Відступ'
 						content={SheetFormatter.addSign(character.modifierDisengage)}
 					/>
 					<LabeledTextField
-						label='Stamina'
+						label='Витрив.'
 						content={SheetFormatter.addSign(character.modifierStamina)}
 					/>
 					<LabeledTextField
-						label='Stability'
+						label='Стійк.'
 						content={SheetFormatter.addSign(character.modifierStability)}
 					/>
 					<LabeledTextField
-						label='Melee Dist.'
+						label='Дальн. б. бою'
 						content={SheetFormatter.addSign(character.modifierMeleeDistance)}
 					/>
 					<LabeledTextField
-						label='Ranged Dist.'
+						label='Дальн. д. бою'
 						content={SheetFormatter.addSign(character.modifierRangedDistance)}
 					/>
 				</div>
@@ -165,7 +165,7 @@ export const ModifiersCard = (props: Props) => {
 				</div>
 
 				<div className='benefits'>
-					<h3>Effects</h3>
+					<h3>Ефекти</h3>
 					<div className='features'>
 						{character.modifierBenefits?.map(f =>
 							<FeatureComponent

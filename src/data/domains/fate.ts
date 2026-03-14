@@ -17,12 +17,12 @@ export const fate: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-fate-1-1',
-							name: 'Oracular Visions',
-							description: 'Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more Victories, you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a test, you can spend 1 fate point to tap into a vision of the outcome, granting that creature an edge on the test. You lose any remaining fate points when you finish a respite.'
+							name: 'Оракульні Видіння',
+							description: 'Ваше божество винагороджує вас туманними баченнями майбутнього. Щоразу, коли ви здобуваєте 1 або більше перемог, ви отримуєте таку саму кількість очок долі. Щоразу, коли ви або істота в радіусі 10 клітинок виконує перевірку, ви можете витратити 1 очко долі, щоб зазирнути у бачення результату, надаючи цій істоті перевагу під час перевірки. Ви втрачаєте всі залишки очок долі після завершення перепочинку.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-fate-1-2',
-							listOptions: [ SkillList.Lore ]
+							listOptions: [SkillList.Lore]
 						})
 					]
 				})
@@ -34,19 +34,19 @@ export const fate: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-fate-2',
-						name: 'Blessing of Fate and Destiny',
-						description: 'Your enemies suffer their fate; your allies embrace their destiny!',
+						name: 'Благословення Долі й Призначення',
+						description: 'Ваші вороги страждають від своєї долі; ваші союзники приймають своє призначення!',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Three creatures',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Три істоти',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-You can target yourself instead of one creature with this ability. Choose one of the following effects, which lasts until the end of the encounter or until you are dying:
+Ви можете обрати себе замість однієї істоти для цієї здібності. Оберіть один із наступних ефектів, який триває до кінця сутички або поки ви не вмираєте:
 
-* Whenever a target makes a power roll, they can roll three dice and choose which two rolls to use.
-* Whenever a target makes a power roll, they must roll three dice and use the lowest two rolls.`)
+* Коли ціль робить кидок сили, вона може кинути три кубики й обрати два результати.
+* Коли ціль робить кидок сили, вона повинна кинути три кубики й використати два найнижчі результати.`)
 						]
 					})
 				})
@@ -61,8 +61,8 @@ You can target yourself instead of one creature with this ability. Choose one of
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-fate-4',
-					name: 'Oracular Warning',
-					description: 'Each time you finish a respite, you can share the vague dreams of the future granted to you by the gods with allies who finished the respite with you. These premonitions help you and your allies stay alive, granting each of you temporary Stamina equal to 10 + your level that lasts until you finish a respite.'
+					name: 'Оракульне попередження',
+					description: 'Кожного разу після відпочинку ви можете поділитися туманними снами про майбутнє, дарованими богами, із союзниками, які також відпочивали. Ці передчуття допомагають вам і союзникам вижити, надаючи кожному тимчасову Витривалість, що дорівнює 10 + ваш рівень, до наступного відпочинку.'
 				})
 			]
 		},
@@ -76,23 +76,23 @@ You can target yourself instead of one creature with this ability. Choose one of
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-fate-6',
-						name: 'Your Story Ends Here',
-						description: 'You bend the fate of a foe, willing them to die.',
+						name: 'Твоя історія закінчується тут',
+						description: 'Ви згинаєте долю ворога, бажаючи йому смерті.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '9 + I corruption damage; R < [weak], weakened (save ends)',
-									tier2: '14 + I corruption damage; R < [average], weakened (save ends)',
-									tier3: '19 + I corruption damage; R < [strong], weakened (save ends)'
+									characteristic: [Characteristic.Intuition],
+									tier1: '9 + І шкоди скверною; Р < [слабкий], ослаблення (рят. кидок завершує)',
+									tier2: '14 + І шкоди скверною; Р < [середній], ослаблення (рят. кидок завершує)',
+									tier3: '19 + І шкоди скверною; Р < [сильний], ослаблення (рят. кидок завершує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If this damage kills the target, you and each ally within distance can spend a Recovery.')
+							FactoryLogic.createAbilitySectionText('Якщо ця шкода вбиває ціль, ви та кожен союзник у межах дистанції можете витратити Відновлення.')
 						]
 					})
 				})
@@ -103,8 +103,8 @@ You can target yourself instead of one creature with this ability. Choose one of
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-fate-7',
-					name: 'Word of Fate Denied',
-					description: 'When an ally within 10 squares takes damage that would leave them dying, you can use a free triggered action to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can’t be reduced in any way.'
+					name: 'Слово Відкинутої Долі',
+					description: 'Коли союзник у межах 10 клітинок отримує шкоду, яка зробить його вмираючим, ви можете безкоштовною тригерною дією зробити себе або іншу бажаючу істоту в межах 10 клітинок ціллю цієї шкоди замість нього. Обрана істота отримує цю шкоду та всі повʼязані ефекти, і ця шкода не може бути зменшена.'
 				})
 			]
 		},
@@ -118,11 +118,11 @@ You can target yourself instead of one creature with this ability. Choose one of
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-fate-9',
-						name: 'Bend Fate',
-						description: 'The gods know you must prevail, and they bless your fate.',
+						name: 'Зігни Долю',
+						description: 'Боги знають, що ви повинні перемогти, і благословляють вашу долю.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self or one ally',
 						cost: 11,
 						sections: [
@@ -139,17 +139,17 @@ You can target yourself instead of one creature with this ability. Choose one of
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that an ally within 10 squares of you obtains a tier 3 outcome on a power roll or an enemy within 10 squares of you obtains a tier 1 outcome on a power roll',
+			trigger: 'Вперше за сутичку, коли союзник у межах 10 клітинок отримує результат 3 рівня на кидку сили або ворог у межах 10 клітинок отримує результат 1 рівня на кидку сили',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'fate-default-1',
-			name: 'Fate Prayer Effect',
-			description: 'You call on the forces of fate to create a reliable future. Choose a creature within 10 squares. That creature automatically gets a tier 1 or tier 3 outcome (your choice) on their next power roll made before the end of the encounter.',
+			name: 'Ефект Молитви Долі',
+			description: 'Ви закликаєте сили долі, щоб створити надійне майбутнє. Оберіть істоту в межах 10 клітинок. Ця істота автоматично отримує результат 1 або 3 рівня (на ваш вибір) на своєму наступному кидку сили, зробленому до кінця сутички.',
 			tag: 'conduit-prayer'
 		})
 	]

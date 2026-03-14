@@ -10,42 +10,42 @@ import { FeatureField } from '@/enums/feature-field';
 
 export const polder: Ancestry = {
 	id: 'ancestry-polder',
-	name: 'Polder',
-	description: 'After humans, polders are the most numerous and diverse ancestry in Orden. They are not humans, but they live in and among humans and share their gods and culture. Almost every human culture in Orden has a polder saint or a human saint venerated by polder.',
+	name: 'Полдер',
+	description: 'Після людей полдери є найчисленнішою та найрізноманітнішою народністю в Ордені. Вони не є людьми, але живуть серед людей і поділяють їхніх богів і культуру. Майже кожна людська культура в Ордені має святого полдера або людського святого, якого шанують полдери.',
 	features: [
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'polder-feature-1',
-				name: 'Shadowmeld',
-				description: 'You become an actual shadow.',
+				name: 'Злиття з тінню',
+				description: 'Ви стаєте справжньою тінню.',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.createSelf() ],
-				target: 'Self',
+				keywords: [AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.createSelf()],
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
-You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn’t observing you. While in shadow form, you have full awareness of your surroundings, and strikes against you and tests made to search for you take a bane. You can’t move or be force moved, and you can’t take main actions or maneuvers except to exit this form or to direct creates under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+Ви сплющуєтеся в тінь на стіні або підлозі, до якої торкаєтеся, і стаєте прихованими від будь-якої істоти, від якої у вас є укриття або прихованість, або яка вас не спостерігає. У тіньовій формі ви маєте повну обізнаність про своє оточення, а удари по вас і випробування, зроблені для пошуку вас, отримують шкоду. Ви не можете рухатися або бути примусово переміщеними, і ви не можете виконувати основні дії або маневри, крім виходу з цієї форми або керування створіннями під вашим контролем, наприклад, тими, яких ви викликаєте за допомогою здібності. Будь-яка здібність або ефект, який впливає на більше ніж 1 клітинку, впливає на вас у цій формі лише в тому випадку, якщо він явно впливає на поверхню, до якої ви сплющені. Ви можете вийти з цієї форми як маневр.
 
-If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can’t be reduced in any way.`)
+Якщо поверхня, до якої ви сплющені, знищується, ця здібність закінчується, і ви отримуєте 1d6 шкоди, яку неможливо зменшити жодним чином.`)
 				]
 			})
 		}),
 		FactoryLogic.feature.createSize({
 			id: 'polder-feature-2',
-			name: 'Small!',
-			description: 'Your diminutive stature lets you easily get out of — or into — trouble.',
+			name: 'Маленький!',
+			description: 'Ваш невеликий зріст дозволяє вам легко уникати — або потрапляти в — неприємності.',
 			sizeValue: 1,
-			sizeMod: 'S'
+			sizeMod: 'M'
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'polder-feature-3',
-			name: 'Polder Traits',
+			name: 'Риси полдера',
 			options: [
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'polder-feature-3-1',
-						name: 'Corruption Immunity',
-						description: 'Your innate shadow magic grants you resilience against the unnatural. You have corruption immunity equal to your level + 2.',
+						name: 'Імунітет до скверни',
+						description: 'Ваша вроджена тіньова магія надає вам стійкість до неприродного. Ви маєте імунітет до скверни, рівний вашому рівню + 2.',
 						modifiers: [
 							FactoryLogic.damageModifier.createValuePlusPerLevel({ damageType: DamageType.Corruption, modifierType: DamageModifierType.Immunity, value: 2, perLevel: 1 })
 						]
@@ -55,8 +55,8 @@ If the surface you are flattened against is destroyed, this ability ends and you
 				{
 					feature: FactoryLogic.feature.createBonus({
 						id: 'polder-feature-3-2',
-						name: 'Graceful Retreat',
-						description: 'Your small size makes it easier for you to slip away from the fray.',
+						name: 'Граціозний відступ',
+						description: 'Ваш невеликий розмір полегшує вам вислизання з сутички.',
 						field: FeatureField.Disengage,
 						value: 1
 					}),
@@ -65,8 +65,8 @@ If the surface you are flattened against is destroyed, this ability ends and you
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'polder-feature-3-3',
-						name: 'Polder Geist',
-						description: 'Evading others’ notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have concealment from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.'
+						name: 'Полдерський дух',
+						description: 'Уникнення уваги інших дає вам свободу руху. На початку кожного вашого ходу під час бою, якщо жоден ворог не має лінії впливу на вас або якщо ви приховані від будь-якого ворога з лінією впливу на вас, ви отримуєте бонус +3 до швидкості до кінця вашого ходу.'
 					}),
 					value: 1
 				},
@@ -74,11 +74,11 @@ If the surface you are flattened against is destroyed, this ability ends and you
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'polder-feature-3-4',
-							name: 'Reactive Tumble',
-							description: 'Staying light on your feet lets you quickly get back into position.',
-							type: FactoryLogic.type.createTrigger('Whenever you are force moved', { free: true }),
+							name: 'Реактивне перекочування',
+							description: 'Залишаючись легким на ногах, ви швидко повертаєтеся на позицію.',
+							type: FactoryLogic.type.createTrigger('Коли вас примусово переміщують', { free: true }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You shift 1 square after the forced movement is resolved.')
+								FactoryLogic.createAbilitySectionText('Ви зміщуєтеся на 1 клітинку після завершення примусового переміщення.')
 							]
 						})
 					}),
@@ -87,17 +87,17 @@ If the surface you are flattened against is destroyed, this ability ends and you
 				{
 					feature: FactoryLogic.feature.createConditionImmunity({
 						id: 'polder-feature-3-5',
-						name: 'Fearless',
-						description: 'Courage is all you know.',
-						conditions: [ ConditionType.Frightened ]
+						name: 'Безстрашний',
+						description: 'Ви знаєте лише сміливість.',
+						conditions: [ConditionType.Frightened]
 					}),
 					value: 2
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'polder-feature-3-6',
-						name: 'Nimblestep',
-						description: 'A light step serves you well when speed is of the essence. You ignore the effects of difficult terrain and can move at full speed while sneaking.'
+						name: 'Гнучкий крок',
+						description: 'Легкий крок добре служить вам, коли швидкість має вирішальне значення. Ви ігноруєте ефекти складної місцевості та можете рухатися на повній швидкості, перебуваючи в прихованості.'
 					}),
 					value: 2
 				}
@@ -106,5 +106,5 @@ If the surface you are flattened against is destroyed, this ability ends and you
 		})
 	],
 	ancestryPoints: 4,
-	culture: FactoryLogic.createCulture('Polder', 'Urban, communal, creative.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.creative, 'Khoursirian')
+	culture: FactoryLogic.createCulture('Полдер', 'Міський, комунальний, творчий.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.creative, 'Хурсиріанський')
 };

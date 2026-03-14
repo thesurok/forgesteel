@@ -42,6 +42,10 @@
 }
 
 #classic-sheet .hero-sheet {
+    label {
+        font-size: round(0.8rem, 1px);
+    }
+
     .page-1,
     .page-2,
     .page-titles-inventory-projects {
@@ -57,29 +61,29 @@
         .stats-resources.card {
             grid-column-end: span 3;
         }
-    
+
         .modifiers {
             grid-row-end: span 3;
         }
-    
+
         .potencies {
             grid-column-start: 3;
         }
-    
+
         .conditions {
             grid-column-start: 2;
             grid-row-start: 3;
             grid-row-end: span 2;
         }
-    
+
         .primary-reference {
             grid-row-end: span 3;
         }
-    
+
         .immunities-weaknesses.card {
             grid-column-start: 2;
         }
-    
+
         .class-features.card {
             grid-column-end: span 2;
         }
@@ -125,12 +129,12 @@
             grid-row-start: 4;
             grid-row-end: span 2;
         }
-    
+
         .class-features.card {
             grid-row-start: 4;
             grid-row-end: span 2;
         }
-    
+
     }
 
     .page-2.portrait {
@@ -158,7 +162,7 @@
     .page-2.landscape {
         grid-template-columns: 375px 1fr 365px;
         grid-template-rows: min-content 1fr;
-        
+
         .culture {
             grid-row-start: 1;
             grid-column-start: 2;
@@ -173,6 +177,7 @@
             place-items: stretch;
             grid-template-rows: 1fr 1fr;
         }
+
         .skills {
             grid-column-start: 3;
             grid-row-start: 1;

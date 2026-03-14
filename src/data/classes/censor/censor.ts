@@ -14,14 +14,14 @@ export const censor: HeroClass = {
 	id: 'class-censor',
 	name: 'Censor',
 	description: `
-Demons and deathless fear you. Criminals run from the sight of your shadow. Agents of chaos, blasphemers, and heretics tremble at the sound of your voice. You carry the power of the gods, armed with wrath and sent out into the world first to seek, then censor those whose actions—or even existence—are anathema to your church.
+Демони й безсмертні бояться вас. Злочинці тікають, щойно бачать вашу тінь. Агенти хаосу, богохульники та єретики тремтять від звуку вашого голосу. Ви несете силу богів, озброєні гнівом і послані у світ, щоб спершу розшукати, а тоді засудити тих, чиї вчинки або навіть саме існування є анафемою для вашої церкви.
 
-As a censor, you’re at your best against the strongest foes. Your judgment terrifies heretics, stops enemies in their tracks, and even hurls them across the battlefield.`,
+Як цензор, ви найкраще проявляєте себе проти найсильніших ворогів. Ваш суд жахає єретиків, зупиняє ворогів на місці й навіть відкидає їх через усе поле бою.`,
 	type: 'standard',
 	subclassName: 'Order',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Presence ]
+		[Characteristic.Might, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -62,13 +62,13 @@ As a censor, you’re at your best against the strongest foes. Your judgment ter
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-1-1',
-					listOptions: [ SkillList.Interpersonal, SkillList.Lore ],
+					listOptions: [SkillList.Interpersonal, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createDomainChoice({
 					id: 'censor-1-2',
 					characteristic: Characteristic.Presence,
-					levels: [ 1, 4, 7 ]
+					levels: [1, 4, 7]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -76,8 +76,8 @@ As a censor, you’re at your best against the strongest foes. Your judgment ter
 						name: 'Judgment',
 						description: 'You utter a prayer that outlines your foe in holy energy.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another censor judges the target.
@@ -107,8 +107,8 @@ You can choose only one free triggered action option at a time, even if multiple
 						name: 'My Life for Yours',
 						description: 'You channel some of your vitality into more resilience for you or an ally.',
 						type: FactoryLogic.type.createTrigger('The target starts their turn or takes damage.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self or one ally',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You spend a Recovery and the target regains Stamina equal to your Recovery value.'),
@@ -142,7 +142,7 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'censor-2-1',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -175,11 +175,11 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-4-2',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-4-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'censor-4-4',
@@ -187,7 +187,7 @@ You can choose only one free triggered action option at a time, even if multiple
 					tag: 'deal-damage 2',
 					trigger: 'The first time each round that you deal damage to a creature judged by you',
 					value: '2',
-					replacesTags: [ 'deal-damage' ]
+					replacesTags: ['deal-damage']
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'censor-4-5',
@@ -220,7 +220,7 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-6-2',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -263,11 +263,11 @@ You can choose only one free triggered action option at a time, even if multiple
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-7-4',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				})
 			]
 		},
@@ -276,7 +276,7 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'censor-8-1',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'censor-8-2',
@@ -313,11 +313,11 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-10-2',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-10-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				}),
 				FactoryLogic.feature.create({
 					id: 'censor-10-4',
@@ -352,7 +352,7 @@ Virtue remains until you spend it.`
 					tag: 'start 3',
 					trigger: 'Start of your turn',
 					value: '4',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				})
 			]
 		}
@@ -364,13 +364,13 @@ Virtue remains until you spend it.`
 			description: 'You channel power through your weapon to repel foes.',
 			type: FactoryLogic.type.createMain(),
 			cost: 'signature',
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 })],
 			target: 'Each enemy in the area',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '2 holy damage; push 1',
 						tier2: '4 holy damage; push 2',
 						tier3: '6 holy damage; push 3'
@@ -383,14 +383,14 @@ Virtue remains until you spend it.`
 			name: 'Every Step ... Death!',
 			description: 'You show your foe a glimpse of their fate after death.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '5 + P psychic damage',
 						tier2: '7 + P psychic damage',
 						tier3: '10 + P psychic damage'
@@ -404,14 +404,14 @@ Virtue remains until you spend it.`
 			name: 'Halt, Miscreant!',
 			description: 'You infuse your weapon with holy magic that makes it difficult for your foe to get away.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '2 + M holy damage; P < [weak], slowed (save ends)',
 						tier2: '5 + M holy damage; P < [average], slowed (save ends)',
 						tier3: '7 + M holy damage; P < [strong], slowed (save ends)'
@@ -424,14 +424,14 @@ Virtue remains until you spend it.`
 			name: 'Your Allies Cannot Save You!',
 			description: 'Your magic strike turns your foe’s guilt into a burst of holy power',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M holy damage',
 						tier2: '5 + M holy damage',
 						tier3: '8 + M holy damage'
@@ -445,14 +445,14 @@ Virtue remains until you spend it.`
 			name: 'Behold, a Shield of Faith!',
 			description: 'A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M holy damage',
 						tier2: '6 + M holy damage',
 						tier3: '9 + M holy damage'
@@ -466,14 +466,14 @@ Virtue remains until you spend it.`
 			name: 'Driving Assault',
 			description: 'As you force your enemy back with your weapon, you use your faith to stay close.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; push 1',
 						tier2: '6 + M damage; push 3',
 						tier3: '9 + M damage; push 5'
@@ -487,14 +487,14 @@ Virtue remains until you spend it.`
 			name: 'The Gods Punish and Defend',
 			description: 'You channel holy energy to smite a foe and heal an ally.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '5 + M holy damage',
 						tier2: '8 + M holy damage',
 						tier3: '11 + M holy damage'
@@ -508,14 +508,14 @@ Virtue remains until you spend it.`
 			name: 'Repent!',
 			description: 'You conjure memories of their sins to harry your foes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '5 + P holy damage; I < [weak], dazed (save ends)',
 						tier2: '8 + P holy damage; I < [average], dazed (save ends)',
 						tier3: '11 + P holy damage; I < [strong], dazed (save ends)'
@@ -528,14 +528,14 @@ Virtue remains until you spend it.`
 			name: 'Arrest',
 			description: '“I got you, you son of a bitch.”',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '6 + M holy damage; grabbed',
 						tier2: '9 + M holy damage; grabbed',
 						tier3: '13 + M holy damage; grabbed'
@@ -549,7 +549,7 @@ Virtue remains until you spend it.`
 			name: 'Behold the Face of Justice!',
 			description: 'You attack a foe and your enemies behold a vision of the true nature of your resolve.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -559,7 +559,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M holy damage; if the target has P < [weak], each enemy within 2 squares of them is frightened of you (save ends)',
 						tier2: '5 + M holy damage; if the target has P < [average], each enemy within 2 squares of them is frightened of you (save ends)',
 						tier3: '8 + M holy damage; if the target has P < [strong], each enemy within 2 squares of them is frightened of you (save ends)'
@@ -573,14 +573,14 @@ Virtue remains until you spend it.`
 			name: 'Censored',
 			description: 'Judged and sentenced.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '2 + M holy damage',
 						tier2: '3 + M holy damage',
 						tier3: '5 + M holy damage'
@@ -594,7 +594,7 @@ Virtue remains until you spend it.`
 			name: 'Purifying Fire',
 			description: 'The gods judge, fire cleanses.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -604,7 +604,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '5 + M holy damage; M < [weak], the target has fire weakness 3 (save ends)',
 						tier2: '9 + M holy damage; M < [average], the target has fire weakness 5 (save ends)',
 						tier3: '12 + M holy damage; M < [strong], the target has fire weakness 7 (save ends)'
@@ -618,8 +618,8 @@ Virtue remains until you spend it.`
 			name: 'Edict of Disruptive Isolation',
 			description: 'The evil within your foes detonates with holy fire that burns only the guilty.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
@@ -631,8 +631,8 @@ Virtue remains until you spend it.`
 			name: 'Edict of Perfect Order',
 			description: 'Within the area of your divine presence, your enemies will regret using their fell abilities.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
@@ -644,8 +644,8 @@ Virtue remains until you spend it.`
 			name: 'Edict of Purifying Pacifism',
 			description: 'You shed a righteous energy that punishes enemies who would harm you or your allies.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
@@ -657,8 +657,8 @@ Virtue remains until you spend it.`
 			name: 'Edict of Stillness',
 			description: 'The holy aura you project makes it painful for evil-doers to leave your reach.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
@@ -670,8 +670,8 @@ Virtue remains until you spend it.`
 			name: 'Gods Grant Thee Strength',
 			description: 'You channel divine force for movement that cannot be stopped.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Self or one ally',
 			cost: 9,
 			sections: [
@@ -683,7 +683,7 @@ Virtue remains until you spend it.`
 			name: 'Orison of Victory',
 			description: 'You channel your god’s will to overcome hardship and inflict pain.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area ],
+			keywords: [AbilityKeyword.Area],
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })
 			],
@@ -692,7 +692,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'Each target gains 1 surge.',
 						tier2: 'Each target gains 2 surges.',
 						tier3: 'Each target gains 3 surges.'
@@ -706,7 +706,7 @@ Virtue remains until you spend it.`
 			name: 'Righteous Judgment',
 			description: 'You amplify the power of your judgment.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
@@ -715,7 +715,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '10 + M damage',
 						tier2: '14 + M damage',
 						tier3: '20 + M damage'
@@ -729,7 +729,7 @@ Virtue remains until you spend it.`
 			name: 'Shield of the Righteous',
 			description: 'You strike a foe and create a fleet of divine shields that protect your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
@@ -738,7 +738,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina',
 						tier2: '14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina',
 						tier3: '20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina'
@@ -751,7 +751,7 @@ Virtue remains until you spend it.`
 			name: 'Excommunication',
 			description: 'You curse your foe to become a bane to their allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
@@ -760,7 +760,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '9 + M damage; I < [weak], weakened (save ends)',
 						tier2: '13 + M damage; I < [average], weakened (save ends)',
 						tier3: '18 + M damage; I < [strong], weakened (save ends)'
@@ -774,7 +774,7 @@ Virtue remains until you spend it.`
 			name: 'Hand of the Gods',
 			description: 'You use your foe as a tool against your enemies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createRanged(10)
 			],
@@ -783,7 +783,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '10 + M damage',
 						tier2: '15 + M damage',
 						tier3: '21 + M damage'
@@ -797,7 +797,7 @@ Virtue remains until you spend it.`
 			name: 'Pillar of Holy Fire',
 			description: 'Your enemy’s guilt fuels a holy flame that burns your foes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
@@ -806,7 +806,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '9 + M damage; I < [weak], dazed (save ends)',
 						tier2: '13 + M damage; I < [average], dazed (save ends)',
 						tier3: '18 + M damage; I < [strong], dazed (save ends)'
@@ -820,7 +820,7 @@ Virtue remains until you spend it.`
 			name: 'Your Allies Turn on You!',
 			description: 'You turn your enemies’ ire to the target.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createRanged(10)
 			],
@@ -829,7 +829,7 @@ Virtue remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '5 + P damage; I < [weak], slowed (save ends)',
 						tier2: '9 + P damage; I < [average], slowed (save ends)',
 						tier3: '12 + P damage; I < [strong], slowed (save ends)'

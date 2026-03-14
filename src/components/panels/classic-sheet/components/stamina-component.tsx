@@ -15,44 +15,44 @@ export const StaminaComponent = (props: Props) => {
 
 	return (
 		<div className='stamina'>
-			<h4>Stamina</h4>
+			<h4>Витривалість</h4>
 			<div className='wrapper'>
 				<div className='current-stamina'>
 					<LabeledTextField
-						label='Current'
+						label='Поточна'
 						content={(showState && stamina.current?.toString()) || ''}
-						additionalClasses={[ 'no-box' ]}
+						additionalClasses={['no-box']}
 					/>
 				</div>
 			</div>
 			<div className='current-state'>
 				<div className='winded'>
 					<LabeledBooleanField
-						label='Winded'
+						label='Захеканий'
 						value={showState && (stamina.current || 1) <= (stamina.windedAt || 0)}
-						additionalClasses={[ 'label-below' ]}
+						additionalClasses={['label-below']}
 					/>
 					<div className='ref'>≤ <span className='data'>{stamina.windedAt}</span></div>
 				</div>
 				<div className='dying'>
 					<LabeledBooleanField
-						label='Dying'
+						label='При смерті'
 						value={showState && (stamina.current || 1) <= 0}
-						additionalClasses={[ 'label-below' ]}
+						additionalClasses={['label-below']}
 					/>
-					<div className='ref'>0 to <span className='data'>{stamina.deadAt}</span></div>
+					<div className='ref'>0 до <span className='data'>{stamina.deadAt}</span></div>
 				</div>
 			</div>
 			<div className='reference'>
 				<LabeledTextField
-					label='Temporary'
+					label='Тимчасова'
 					content={(showState && stamina.temp?.toString()) || ''}
-					additionalClasses={[ 'no-box' ]}
+					additionalClasses={['no-box']}
 				/>
 				<LabeledTextField
-					label='Max'
+					label='Максимальна'
 					content={stamina.max}
-					additionalClasses={[ 'no-box' ]}
+					additionalClasses={['no-box']}
 				/>
 			</div>
 		</div>

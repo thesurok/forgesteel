@@ -15,7 +15,9 @@
             @include common.font-slab;
             font-weight: inherit;
             transform: translateX(round(2rem, 1px));
+            font-size: round(1.2rem, 1px);
         }
+
         .labeled-boolean {
             text-transform: none;
             float: right;
@@ -79,7 +81,7 @@
                 }
             }
         }
-    
+
         .stats {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -100,7 +102,8 @@
         display: grid;
         grid-template-rows: min-content 1fr;
 
-        h3, h4 {
+        h3,
+        h4 {
             margin: 0;
         }
     }
@@ -160,8 +163,9 @@
 
         }
 
-        .labeled-field{
+        .labeled-field {
             margin: 5px 0 0;
+
             &:not(:last-child) {
                 border-right: 2px solid common.$color-light;
             }

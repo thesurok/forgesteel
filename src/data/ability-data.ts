@@ -7,19 +7,19 @@ export class AbilityData {
 
 	static freeStrikeMelee = FactoryLogic.createAbility({
 		id: 'free-melee',
-		name: 'Free Strike (melee)',
+		name: 'Вільний удар (ближній)',
 		description: '',
 		type: FactoryLogic.type.createFreeStrike(),
-		keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-		distance: [ FactoryLogic.distance.createMelee() ],
-		target: 'One creature or object',
+		keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+		distance: [FactoryLogic.distance.createMelee()],
+		target: 'Одна істота або предмет',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Might, Characteristic.Agility ],
-					tier1: '2 + M or A damage',
-					tier2: '5 + M or A damage',
-					tier3: '7 + M or A damage'
+					characteristic: [Characteristic.Might, Characteristic.Agility],
+					tier1: '2 + С або Л шкоди',
+					tier2: '5 + С або Л шкоди',
+					tier3: '7 + С або Л шкоди'
 				})
 			)
 		]
@@ -27,19 +27,19 @@ export class AbilityData {
 
 	static freeStrikeRanged = FactoryLogic.createAbility({
 		id: 'free-ranged',
-		name: 'Free Strike (ranged)',
+		name: 'Вільний удар (дальний)',
 		description: '',
 		type: FactoryLogic.type.createFreeStrike(),
-		keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-		distance: [ FactoryLogic.distance.createRanged(5) ],
-		target: 'One creature or object',
+		keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+		distance: [FactoryLogic.distance.createRanged(5)],
+		target: 'Одна істота або предмет',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Might, Characteristic.Agility ],
-					tier1: '2 + M or A damage',
-					tier2: '4 + M or A damage',
-					tier3: '6 + M or A damage'
+					characteristic: [Characteristic.Might, Characteristic.Agility],
+					tier1: '2 + С або Л шкоди',
+					tier2: '4 + С або Л шкоди',
+					tier3: '6 + С або Л шкоди'
 				})
 			)
 		]
@@ -51,31 +51,31 @@ export class AbilityData {
 
 	static advance = FactoryLogic.createAbility({
 		id: 'advance',
-		name: 'Advance',
+		name: 'Рух уперед',
 		description: '',
 		type: FactoryLogic.type.createMove(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('When a creature takes the Advance move action, they move a number of squares up to their speed. They can break up this movement with their maneuver and main action however they wish.')
+			FactoryLogic.createAbilitySectionText('Коли істота виконує дію руху «Рух уперед», вона переміщується на кількість клітинок, що не перевищує її швидкості. Вона може розбити цей рух між своїм маневром і основною дією як забажає.')
 		]
 	});
 
 	static disengage = FactoryLogic.createAbility({
 		id: 'disengage',
-		name: 'Disengage',
+		name: 'Відступ',
 		description: '',
 		type: FactoryLogic.type.createMove(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('When a creature takes the Disengage move action, they can shift 1 square. Certain class features, kits, and other rules allow a creature to shift more than 1 square when they disengage. A creature who does so can break up their shift with their maneuver and main action however they wish.')
+			FactoryLogic.createAbilitySectionText('Коли істота виконує дію руху «Відступ», вона може зміститися на 1 клітинку. Деякі особливості класів, комплекти та інші правила дозволяють істоті зміститися більше ніж на 1 клітинку під час відступу. Істота, яка це робить, може розбити своє зміщення між маневром і основною дією як забажає.')
 		]
 	});
 
 	static ride = FactoryLogic.createAbility({
 		id: 'ride',
-		name: 'Ride',
+		name: 'Їзда',
 		description: '',
 		type: FactoryLogic.type.createMove(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature can take the Ride move action only while mounted on another creature. When a creature takes the Ride move action, they cause their mount to move up to the mount’s speed, taking the rider with them. Alternatively, a creature can use the Ride move action to have their mount use the Disengage move action as a free triggered action. A creature can use the Ride move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken with the rider’s maneuver and main action however they wish.')
+			FactoryLogic.createAbilitySectionText('Істота може виконати дію руху «Їзда» лише сидячи верхи на іншій істоті. Коли істота виконaє дію руху «Їзда», вона змушує свою їздову істоту переміститися на відстань до її швидкості, беручи верхи з собою. Альтернативно, істота може використати дію руху «Їзда», щоб змусити свою їздову істоту виконати дію руху «Відступ» як безкоштовну тригерну дію. Істота може використати дію руху «Їзда» лише один раз за раунд. На одну нагору та одну їздову істоту ця дія руху може бути застосована тільки раз за раунд. Це переміщення можна розбити між маневром і основною дією вершника як забажає.')
 		]
 	});
 
@@ -85,41 +85,41 @@ export class AbilityData {
 
 	static aidAttack = FactoryLogic.createAbility({
 		id: 'aid-attack',
-		name: 'Aid Attack',
+		name: 'Допомога атаці',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature who uses the Aid Attack maneuver chooses an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature’s next turn gains an edge.')
+			FactoryLogic.createAbilitySectionText('Істота, яка використовує маневр «Допомога атаці», вибирає ворога поруч із собою. Наступний кидок здібності союзника проти цього ворога до початку наступного ходу допомагаючої істоти отримує перевагу.')
 		]
 	});
 
 	static catchBreath = FactoryLogic.createAbility({
 		id: 'catch-breath',
-		name: 'Catch Breath',
+		name: 'Перехопити подих',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
 			FactoryLogic.createAbilitySectionText(`
-A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value.
+Істота, яка використовує маневр «Перехопити подих», витрачає Відновлення та відновлює Витривалість, рівну своєму значенню відновлення.
 
-A creature who is dying can’t use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.`)
+Істота, яка вмирає, не може використати маневр «Перехопити подих», але інші істоти можуть допомогти їй витратити Відновлення іншими способами.`)
 		]
 	});
 
 	static clawDirt = FactoryLogic.createAbility({
 		id: 'claw-dirt',
-		name: 'Claw Dirt',
+		name: 'Копнути ґрунт',
 		description: '',
-		type: FactoryLogic.type.createManeuver({ qualifiers: [ 'usable if your speed is at least 2' ] }),
-		distance: [ FactoryLogic.distance.createSelf() ],
-		target: 'Self',
+		type: FactoryLogic.type.createManeuver({ qualifiers: ['можна використовувати, якщо ваша швидкість щонайменше 2'] }),
+		distance: [FactoryLogic.distance.createSelf()],
+		target: 'Сам',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: 'You can move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are slowed and weakened (EoT).',
-					tier2: 'You can use your main action this turn to move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are slowed (EoT).',
-					tier3: 'You can move 1 square into, out of, or through ground you are touching that can be burrowed through.'
+					tier1: 'Ви можете переміститися на 1 клітинку в ґрунт, з нього або крізь нього (якщо ви торкаєтесь ґрунту, через який можна рити), і ви отримуєте стан Повільн., Ослабл. до кінця ходу.',
+					tier2: 'Ви можете використати свою основну дію цього ходу, щоб переміститися на 1 клітинку в ґрунт, з нього або крізь нього (якщо ви торкаєтесь ґрунту, через який можна рити), і ви отримуєте стан Повільн. до кінця ходу.',
+					tier3: 'Ви можете переміститися на 1 клітинку в ґрунт, з нього або крізь нього (якщо ви торкаєтесь ґрунту, через який можна рити).'
 				})
 			)
 		]
@@ -127,132 +127,132 @@ A creature who is dying can’t use the Catch Breath maneuver, but other creatur
 
 	static escapeGrab = FactoryLogic.createAbility({
 		id: 'escape-grab',
-		name: 'Escape Grab',
+		name: 'Втекти з захвату',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		distance: [ FactoryLogic.distance.createSelf() ],
-		target: 'Self',
+		distance: [FactoryLogic.distance.createSelf()],
+		target: 'Сам',
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature who is grabbed by another creature, an object, or an effect can attempt to escape by using this ability.'),
+			FactoryLogic.createAbilitySectionText('Істота, яку захопила інша істота, предмет або ефект, може спробувати вирватися, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Might, Characteristic.Agility ],
-					tier1: 'No effect.',
-					tier2: 'You can escape the grab, but if you do, a creature who has you grabbed can make a melee free strike against you before you are no longer grabbed.',
-					tier3: 'You are no longer grabbed.'
+					characteristic: [Characteristic.Might, Characteristic.Agility],
+					tier1: 'Без ефекту.',
+					tier2: 'Ви можете вирватися з захвату, але якщо це станеться, істота, яка вас тримає, може зробити ближній вільний удар проти вас, перш ніж ви перестанете бути захопленими.',
+					tier3: 'Ви більше не захоплені.'
 				})
 			),
-			FactoryLogic.createAbilitySectionText('You take a bane on this maneuver if your size is smaller than the size of the creature, object, or effect that has you grabbed.')
+			FactoryLogic.createAbilitySectionText('Ви отримуєте шкідливий модифікатор (bane) до цього маневру, якщо ваш розмір менший за розмір істоти, предмета або ефекту, що тримає вас.')
 		]
 	});
 
 	static goProne = FactoryLogic.createAbility({
 		id: 'go-prone',
-		name: 'Go Prone',
+		name: 'Лягти',
 		description: '',
 		type: FactoryLogic.type.createManeuver({ free: true }),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature can become prone as a free maneuver.')
+			FactoryLogic.createAbilitySectionText('Істота може стати лежачою як безкоштовний маневр.')
 		]
 	});
 
 	static grab = FactoryLogic.createAbility({
 		id: 'grab',
-		name: 'Grab',
+		name: 'Схопити',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-		distance: [ FactoryLogic.distance.createMelee() ],
-		target: 'One creature',
+		keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+		distance: [FactoryLogic.distance.createMelee()],
+		target: 'Одна істота',
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature seeking to keep a foe close and locked down can attempt to grab a creature using this ability.'),
+			FactoryLogic.createAbilitySectionText('Істота, яка хоче тримати ворога поруч і обеззброїти його, може спробувати схопити цю істоту, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Might ],
-					tier1: 'No effect',
-					tier2: 'You can grab the target, but if you do, the target can make a melee free strike against you before they are grabbed.',
-					tier3: 'The target is grabbed by you.'
+					characteristic: [Characteristic.Might],
+					tier1: 'Без ефекту',
+					tier2: 'Ви можете схопити ціль, але якщо ви це зробите, ціль може зробити проти вас ближній вільний удар, перш ніж її буде схоплено.',
+					tier3: 'Ціль схоплена вами.'
 				})
 			),
-			FactoryLogic.createAbilitySectionText('You can usually target only creatures of your size or smaller. If your Might score is 2 or higher, you can target any creature with a size equal to or less than your Might score.'),
-			FactoryLogic.createAbilitySectionText('Unless otherwise indicated, a creature can grab only one creature at a time.'),
+			FactoryLogic.createAbilitySectionText('Зазвичай ви можете націлюватися лише на істот свого розміру або менших. Якщо ваш показник Сили 2 або більше, ви можете націльуватися на будь-яку істоту розміру, рівного або меншого за ваш показник Сили.'),
+			FactoryLogic.createAbilitySectionText('Якщо не вказано інше, істота може схопити лише одну істоту за раз.'),
 			FactoryLogic.createAbilitySectionPackage('null-psionic-martial-arts-grab')
 		]
 	});
 
 	static hide = FactoryLogic.createAbility({
 		id: 'hide',
-		name: 'Hide',
+		name: 'Сховатися',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('Using the Hide maneuver, a creature attempts to hide from other creatures who aren’t observing them while they have cover or concealment.')
+			FactoryLogic.createAbilitySectionText('Використовуючи маневр «Сховатися», істота намагається сховатися від інших істот, які її не бачать, поки вона має укриття або завісу.')
 		]
 	});
 
 	static knockback = FactoryLogic.createAbility({
 		id: 'knockback',
-		name: 'Knockback',
+		name: 'Відштовхнути',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-		distance: [ FactoryLogic.distance.createMelee() ],
-		target: 'One creature',
+		keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+		distance: [FactoryLogic.distance.createMelee()],
+		target: 'Одна істота',
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature wanting to push an adjacent creature away from them can attempt to shove that creature using this ability.'),
+			FactoryLogic.createAbilitySectionText('Істота, яка хоче відштовхнути сусідню істоту від себе, може спробувати штовхнути цю істоту, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Might ],
-					tier1: 'Push 1',
-					tier2: 'Push 2',
-					tier3: 'Push 3'
+					characteristic: [Characteristic.Might],
+					tier1: 'Відштовхнути на 1',
+					tier2: 'Відштовхнути на 2',
+					tier3: 'Відштовхнути на 3'
 				})
 			),
-			FactoryLogic.createAbilitySectionText('You can usually target only creatures of your size or smaller. If your Might score is 2 or higher, you can target any creature with a size equal to or less than your Might score.'),
+			FactoryLogic.createAbilitySectionText('Зазвичай ви можете націлюватися лише на істот свого розміру або менших. Якщо ваш показник Сили 2 або більше, ви можете націлюватися на будь-яку істоту розміру, рівного або меншого за ваш показник Сили.'),
 			FactoryLogic.createAbilitySectionPackage('null-psionic-martial-arts-knockback')
 		]
 	});
 
 	static makeAssistTest = FactoryLogic.createAbility({
 		id: 'make-assist-test',
-		name: 'Make Or Assist A Test',
+		name: 'Виконати або допомогти в тесті',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
 			FactoryLogic.createAbilitySectionText(`
-Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door’s lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat.
+Багато тестів є маневрами, якщо вони виконуються в бою. Пошук скрині тестом на Розум, відмикання замка тестом на Ловкість або підйом ґрат тестом на Силу — усі ці дії є маневрами. Допомога в тесті також є маневром у бою.
 
-Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can’t be made during combat at all. Other tests that take no time at all, such as a Reason test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.`)
+Складні або тривалі тести можуть вимагати основної дії, якщо вони виконуються в бою, або можуть займати стільки часу, що їх узагалі не можна виконати під час бою. Інші тести, що не займають часу взагалі, як-от тест на Розум для пригадування знань про мумій, зазвичай є безкоштовними маневрами в бою. Майстер має останнє слово щодо того, які тести можна виконувати як маневри.`)
 		]
 	});
 
 	static search = FactoryLogic.createAbility({
 		id: 'search',
-		name: 'Search for Hidden Creatures',
+		name: 'Пошук прихованих істот',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('The Search for Hidden Creatures maneuver allows a creature to attempt to locate creatures hidden from them.')
+			FactoryLogic.createAbilitySectionText('Маневр «Пошук прихованих істот» дозволяє істоті спробувати знайти істот, що ховаються від неї.')
 		]
 	});
 
 	static standUp = FactoryLogic.createAbility({
 		id: 'stand-up',
-		name: 'Stand Up',
+		name: 'Піднятися',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature can use the Stand Up maneuver to stand up if they are prone, ending that condition. Alternatively, they can use this maneuver to make a willing adjacent prone creature stand up.')
+			FactoryLogic.createAbilitySectionText('Істота може використати маневр «Піднятися», щоб встати, якщо вона лежить, закінчивши цей стан. Крім того, вона може використати цей маневр, щоб змусити охоче сусідню лежачу істоту встати.')
 		]
 	});
 
 	static useConsumable = FactoryLogic.createAbility({
 		id: 'use-consumable',
-		name: 'Use Consumable',
+		name: 'Використати витратний предмет',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature.')
+			FactoryLogic.createAbilitySectionText('Якщо в описі не вказано інше, істота може активувати витратний скарб (наприклад, зілля) маневром «Використати витратний предмет». Істота може використати цей маневр, щоб застосувати витратний предмет, який приносить користь, або собі, або охочій сусідній істоті.')
 		]
 	});
 
@@ -262,54 +262,54 @@ Complex or time-consuming tests might require a main action if made in combat—
 
 	static charge = FactoryLogic.createAbility({
 		id: 'charge',
-		name: 'Charge',
+		name: 'Атака з розгону',
 		description: '',
 		type: FactoryLogic.type.createMain(),
 		sections: [
 			FactoryLogic.createAbilitySectionText(`
-When a creature takes the Charge main action, they move up to their speed in a straight line, then make a melee free strike against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a free strike.
+Коли істота виконує основну дію «Атака з розгону», вона рухається в прямій лінії на відстань до своєї швидкості, а потім робить ближній вільний удар проти цілі, коли закінчує свій рух. Якщо в істоти є здатність із ключовим словом Charge, вона може використати цю здатність проти цілі замість вільного удару.
 
-A creature can’t move through difficult terrain or shift when they charge. They can fly or burrow as part of the Charge main action if they have that movement available to them, but they can’t climb or swim while charging unless they can automatically use that movement at full speed.`)
+Істота не може рухатися через важку місцевість або зміщуватися під час розгону. Вона може літати або ритися у землі як частину дії «Атака з розгону», якщо має таку можливість, але не може лазити або плавати під час розгону, якщо тільки не може автоматично використовувати ці способи руху на повній швидкості.`)
 		]
 	});
 
 	static defend = FactoryLogic.createAbility({
 		id: 'defend',
-		name: 'Defend',
+		name: 'Оборона',
 		description: '',
 		type: FactoryLogic.type.createMain(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature’s traits or abilities. A creature gains no benefit from this action while another creature is taunted by them.')
+			FactoryLogic.createAbilitySectionText('Коли істота виконує основну дію «Оборона», кидки здібностей, спрямовані проти неї, мають подвійну шкоду (double bane) до початку її наступного ходу. Крім того, вона має подвійну перевагу (double edge) на тести, коли потрібно протистояти ефектам навколишнього світу або рисам/здатностям істот. Істота не отримує переваг від цієї дії, якщо інша істота дражнить її.')
 		]
 	});
 
 	static freeStrike = FactoryLogic.createAbility({
 		id: 'free-strike',
-		name: 'Free Strike',
+		name: 'Вільний удар',
 		description: '',
 		type: FactoryLogic.type.createMain(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature can use this main action to make a free strike.')
+			FactoryLogic.createAbilitySectionText('Істота може використати цю основну дію, щоб зробити вільний удар.')
 		]
 	});
 
 	static heal = FactoryLogic.createAbility({
 		id: 'heal',
-		name: 'Heal',
+		name: 'Лікування',
 		description: '',
 		type: FactoryLogic.type.createMain(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('A creature who uses the Heal main action employs medicine or inspiring words to make an adjacent creature feel better and stay in the fight. The target creature can spend a Recovery to regain Stamina, or can make a saving throw against one effect they are suffering that is ended by a saving throw.')
+			FactoryLogic.createAbilitySectionText('Істота, яка використовує основну дію «Лікування», застосовує медицину або надихаючі слова, щоб допомогти суміжній істоті почуватися краще і залишитися в бою. Цільова істота може витратити Відновлення, щоб відновити Витривалість, або може зробити кидок порятунку проти одного ефекту, від якого звільняє кидок порятунку.')
 		]
 	});
 
 	static swap = FactoryLogic.createAbility({
 		id: 'swap',
-		name: 'Swap',
+		name: 'Обмін дій',
 		description: '',
 		type: FactoryLogic.type.createMain(),
 		sections: [
-			FactoryLogic.createAbilitySectionText('You can convert your main action into a maneuver or a move action, allowing you to take two maneuvers or move actions on your turn.')
+			FactoryLogic.createAbilitySectionText('Ви можете перетворити свою основну дію на маневр або дію руху, що дозволяє вам виконати дві маневри або дії руху у свій хід.')
 		]
 	});
 
@@ -319,14 +319,14 @@ A creature can’t move through difficult terrain or shift when they charge. The
 
 	static opportunityAttack = FactoryLogic.createAbility({
 		id: 'opportunity-attack',
-		name: 'Opportunity Attack',
+		name: 'Атака можливості',
 		description: '',
-		type: FactoryLogic.type.createTrigger('An enemy adjacent to you willingly moves to a space that isn’t adjacent to you without shifting.', { free: true }),
+		type: FactoryLogic.type.createTrigger('Ворог поруч із вами добровільно переміщається в клітинку, що не є поруч з вами, без зміщення.', { free: true }),
 		sections: [
 			FactoryLogic.createAbilitySectionText(`
-Whenever a creature has an enemy adjacent to them and the enemy willingly moves to a space that isn’t adjacent to the creature without shifting, the creature can make a melee free strike against the target.
+Коли у істоти є ворог поруч, і ворог добровільно переміщується в клітинку, яка не є поруч з істотою, не зміщуючись, істота може зробити ближній вільний удар по цілі.
 
-If you have a bane or double bane on the power roll against the target, you can’t make an opportunity attack.`)
+Якщо у вас є шкода (bane) або подвійнa шкода (double bane) на кидок сили проти цілі, ви не можете здійснити атаку можливості.`)
 		]
 	});
 

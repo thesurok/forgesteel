@@ -5,8 +5,8 @@ import { SkillList } from '@/enums/skill-list';
 export class EnvironmentData {
 	static nomadic = FactoryLogic.feature.createSkillChoice({
 		id: 'env-nomadic',
-		name: 'Nomadic',
-		description: 'A nomadic culture travels from place to place to survive. Members of a nomadic culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in nomadic cultures learn to navigate the wilderness and work closely with others to survive.',
+		name: 'Кочовий',
+		description: 'Кочова культура пересувається з місця на місце, щоб вижити. Її представники можуть слідувати за міграціями тварин чи погодою, подорожувати для продажу товарів або послуг, або ж просто насолоджуватися неспокійним способом життя, сповненим нових вражень і знайомств. Ті, хто виріс у кочових культурах, вчаться орієнтуватися в дикій природі та тісно співпрацювати з іншими заради виживання.',
 		listOptions: [
 			SkillList.Exploration,
 			SkillList.Interpersonal
@@ -15,8 +15,8 @@ export class EnvironmentData {
 
 	static rural = FactoryLogic.feature.createSkillChoice({
 		id: 'env-rural',
-		name: 'Rural',
-		description: 'A rural culture is one located in a town, village, or smaller settled enclave. People dwelling in such places often cultivate the land, trade goods or services with travelers passing through, harvest fish from the sea, or mine metals and gems from the earth. Living among a small population, most folks in a rural community learn a trade and are handed down bits of essential knowledge to help their community survive. For example, when a rural culture has only one blacksmith, it’s important to have an apprentice already learning at the anvil well before that smith starts to get old. If the only priest in town gets the sniffles, folks want an acolyte ready to wear the fancy robes should the worst occur.',
+		name: 'Сільський',
+		description: 'Сільська культура розташована в містечку, селі або невеликому поселенні. Люди тут часто обробляють землю, торгують товарами чи послугами з мандрівниками, ловлять рибу або видобувають метали й дорогоцінне каміння. Живучи серед невеликої спільноти, більшість мешканців села опановують ремесло й отримують важливі знання, необхідні для виживання громади. Наприклад, якщо у селі лише один коваль, важливо, щоб учень почав навчатися задовго до того, як коваль постаріє. Якщо єдиний священник захворіє, громада хоче мати аколіта, готового виконати обов’язки у разі потреби.',
 		listOptions: [
 			SkillList.Crafting,
 			SkillList.Lore
@@ -25,8 +25,8 @@ export class EnvironmentData {
 
 	static secluded = FactoryLogic.feature.createSkillChoice({
 		id: 'env-secluded',
-		name: 'Secluded',
-		description: 'A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave. When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.',
+		name: 'Відокремлений',
+		description: 'Відокремлена культура базується в одній споруді або комплексі — будівлі, печері тощо — і рідко взаємодіє з іншими культурами. Це можуть бути монастирі, замки чи в’язниці. Люди у відокремленій культурі майже не мають причин залишати дім чи спілкуватися з іншими, але можуть знати про зовнішній світ. Життя в тісному колі вчить ладнати з іншими, а також сприяє навчанню й саморефлексії, адже в ізоляції не так багато інших занять.',
 		listOptions: [
 			SkillList.Interpersonal,
 			SkillList.Lore
@@ -35,8 +35,8 @@ export class EnvironmentData {
 
 	static urban = FactoryLogic.feature.createSkillChoice({
 		id: 'env-urban',
-		name: 'Urban',
-		description: 'An urban culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of urban cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.',
+		name: 'Міський',
+		description: 'Міська культура завжди зосереджена в місті. Вона може виникнути у стінах великого мегаполіса, у мережі печер підземного міста чи будь-де, де велика кількість людей живе поруч. Люди міських культур часто вчаться майстерно обходити інших, щоб орієнтуватися у натовпі та політичних інтригах, які супроводжують міське життя.',
 		listOptions: [
 			SkillList.Interpersonal,
 			SkillList.Intrigue
@@ -45,8 +45,8 @@ export class EnvironmentData {
 
 	static wilderness = FactoryLogic.feature.createSkillChoice({
 		id: 'env-wilderness',
-		name: 'Wilderness',
-		description: 'A wilderness culture doesn’t try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of orc mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.',
+		name: 'Дика місцевість',
+		description: 'Культура дикої місцевості не намагається підкорити природу, в якій живе — це може бути пустеля, ліс, болото, тундра, океан чи інші екзотичні місця. Люди такої культури процвітають серед природи, отримуючи їжу й притулок від землі. Це може бути коло друїдів, що охороняють віддалений гай, банда розбійників у печерах пустелі чи табір орків-найманців у горах. Люди дикої культури вчаться використовувати землю для всього необхідного, зазвичай виготовляючи власні інструменти, одяг тощо.',
 		listOptions: [
 			SkillList.Crafting,
 			SkillList.Exploration
@@ -67,8 +67,8 @@ export class EnvironmentData {
 export class OrganizationData {
 	static bureaucratic = FactoryLogic.feature.createSkillChoice({
 		id: 'org-bureaucratic',
-		name: 'Bureaucratic',
-		description: 'Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures. Those who thrive in bureaucratic cultures don’t simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.',
+		name: 'Бюрократична',
+		description: 'Бюрократичні культури пронизані офіційним керівництвом і формально записаними законами. Члени такої культури часто мають ранг згідно з цими законами, а влада належить невеликій групі людей за правом народження, голосуванням чи іншим офіційним критерієм. У багатьох бюрократичних спільнотах є одна особа на вершині, хоча інші можуть керуватися радою. Торгова гільдія з гільдмайстром, скарбником, секретарем і статутом; феодал, що керує лицарями, які, у свою чергу, керують селянами; і мілітаристське суспільство з чіткими рангами та правилами — усе це приклади бюрократичних культур. Ті, хто процвітає в бюрократичних культурах, не просто дотримуються правил, а вміють використовувати їх на свою користь, змінюючи чи тлумачачи політику для власної вигоди. Вміння спілкуватися з тими, хто створює закони, часто є ключем до успіху. Інші ж спеціалізуються на тому, щоб діяти поза суворими правилами, не потрапляючи під покарання.',
 		listOptions: [
 			SkillList.Interpersonal,
 			SkillList.Intrigue
@@ -77,8 +77,8 @@ export class OrganizationData {
 
 	static communal = FactoryLogic.feature.createSkillChoice({
 		id: 'org-communal',
-		name: 'Communal',
-		description: 'A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures. Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.',
+		name: 'Комунальна',
+		description: 'Комунальна культура — це місце, де всі члени спільноти вважаються рівними. Громада разом приймає важливі рішення, що впливають на більшість, і обирає лідерів для організації спільних зусиль. Кожен має відносно рівне право голосу, і всі допомагають громаді виживати й процвітати. Люди часто ділять між собою тягарі управління, фізичної праці, догляду за дітьми та інші обов’язки. Колектив фермерів, що разом обробляють землю без пана, місто піратів, де кожен робить, що хоче, або мандрівна театральна трупа, де всі голосують щодо рішень — це приклади комунальних культур. Багато таких культур існують поза межами поселень: у дикій природі, окремих районах міст, каналізаціях, руїнах чи інших ізольованих місцях. Навіть якщо ці культури безпечні, їхні члени знають, що чужинці можуть спробувати нав’язати їм свої правила, тому вони прагнуть захищати себе й уникати небезпеки від інших груп.',
 		listOptions: [
 			SkillList.Crafting,
 			SkillList.Exploration
@@ -96,8 +96,8 @@ export class OrganizationData {
 export class UpbringingData {
 	static academic = FactoryLogic.feature.createSkillChoice({
 		id: 'up-academic',
-		name: 'Academic',
-		description: 'Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an academic culture learn how to wield the power that is knowledge.',
+		name: 'Академічне',
+		description: 'Ваш герой виріс серед людей, які збирають, вивчають і поширюють книги та інші записи. Деякі академіки зосереджуються на одній галузі, наприклад, коледж для магів чи церква, що навчає слову певного божества. Люди в академічній культурі вчаться користуватися силою знань.',
 		listOptions: [
 			SkillList.Lore
 		]
@@ -105,8 +105,8 @@ export class UpbringingData {
 
 	static creative = FactoryLogic.feature.createSkillChoice({
 		id: 'up-creative',
-		name: 'Creative',
-		description: 'A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.',
+		name: 'Творче',
+		description: 'Герой із творчим вихованням виріс серед людей, які створюють мистецтво чи інші цінні для обміну речі. Творча культура може виробляти витончене мистецтво — танець, музику, скульптуру — або практичні речі: вози, зброю, інструменти, будівлі. Люди в таких культурах цінують якісну майстерність і увагу до деталей.',
 		options: [
 			'Music',
 			'Perform'
@@ -118,8 +118,8 @@ export class UpbringingData {
 
 	static lawless = FactoryLogic.feature.createSkillChoice({
 		id: 'up-lawless',
-		name: 'Lawless',
-		description: 'Your hero grew up among folk who performed activities that other people—whether within or outside their culture—considered unlawful. A band of pirates, a guild of assassins, or an organization of spies all commit unlawful acts for money. And under tyranny, people engaged in rebellion are often considered lawless in their actions and activities. People brought up in a lawless culture typically don’t mind breaking the rules when it suits them—and are good at making sure no one finds out they did.',
+		name: 'Беззаконне',
+		description: 'Ваш герой виріс серед людей, які займалися тим, що інші — як у межах, так і поза межами їхньої культури — вважали незаконним. Банда піратів, гільдія вбивць чи організація шпигунів — усі вони порушують закон заради грошей. А за тиранії навіть повстанці вважаються беззаконними. Люди, виховані в такій культурі, зазвичай не бояться порушувати правила, якщо це їм вигідно, і добре приховують свої дії.',
 		listOptions: [
 			SkillList.Intrigue
 		]
@@ -127,8 +127,8 @@ export class UpbringingData {
 
 	static labor = FactoryLogic.feature.createSkillChoice({
 		id: 'up-labor',
-		name: 'Labor',
-		description: 'Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual labor tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a labor upbringing know the value of hard work.',
+		name: 'Праця',
+		description: 'Ваш герой виріс у культурі, де люди заробляють на життя працею. Це могли бути землероби, що вирощують врожай чи худобу, або ті, хто добуває природні ресурси — полюванням, риболовлею, лісозаготівлею чи шахтарством. Або ж це могли бути майстри ручної праці, пов’язаної з будівництвом, перевезенням, навантаженням тощо. Люди з таким вихованням цінують важку працю.',
 		options: [
 			'Blacksmithing',
 			'Handle Animals'
@@ -140,8 +140,8 @@ export class UpbringingData {
 
 	static martial = FactoryLogic.feature.createSkillChoice({
 		id: 'up-martial',
-		name: 'Martial',
-		description: 'A hero with a martial upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a martial upbringing are always ready for a fight—and they know how to finish that fight.',
+		name: 'Військове',
+		description: 'Герой із військовим вихованням виріс серед воїнів. Це могли бути солдати регулярної армії, загін найманців, гільдія мисливців на чудовиськ чи будь-хто, чиє життя пов’язане з боєм. Такі герої завжди готові до сутички — і знають, як її завершити.',
 		options: [
 			'Blacksmithing',
 			'Fletching',
@@ -158,8 +158,8 @@ export class UpbringingData {
 
 	static noble = FactoryLogic.feature.createSkillChoice({
 		id: 'up-noble',
-		name: 'Noble',
-		description: 'Your hero grew up among leaders who rule over others and play the games of politics to maintain power. Many families are nobles by birthright, but some cultures have noble titles earned through deeds or popularity. Whatever the case, heroes with this background understand why the whispered words in the right ear can sometimes be more powerful than any army.',
+		name: 'Шляхетне',
+		description: 'Ваш герой виріс серед лідерів, які керують іншими й ведуть політичні ігри для збереження влади. Багато родин є шляхетними за народженням, але в деяких культурах титули здобувають за заслуги чи популярність. Як би там не було, герої з таким минулим розуміють, чому шепіт у потрібне вухо іноді сильніший за будь-яку армію.',
 		listOptions: [
 			SkillList.Interpersonal
 		]

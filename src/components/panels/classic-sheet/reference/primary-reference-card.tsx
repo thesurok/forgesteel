@@ -14,7 +14,7 @@ interface Props {
 export const PrimaryReferenceCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[ props.character ]
+		[props.character]
 	);
 
 	const showTriggerHelp = props.options.classicSheetPageSize === SheetPageSize.A4 &&
@@ -27,10 +27,12 @@ export const PrimaryReferenceCard = (props: Props) => {
 		if (character.heroicResourceGains) {
 			return (
 				<div className='heroic-resource'>
-					<h3>Gaining {character.heroicResourceName}</h3>
+					<h3>
+						<>Отримання ресурсу:<br />{character.heroicResourceName}</>
+					</h3>
 					<div className='heroic-resource-gain'>
-						<div className='header value'>Gain</div>
-						<div className='header trigger'>When</div>
+						<div className='header value'>Отримай</div>
+						<div className='header trigger'>Коли</div>
 						{character.heroicResourceGains.map((g, n) =>
 							<Fragment key={n}>
 								<div className='value'>{g.value}</div>
@@ -47,62 +49,62 @@ export const PrimaryReferenceCard = (props: Props) => {
 		<div className='primary-reference card'>
 			{getResourceSection()}
 			<div className='hero-tokens'>
-				<h3>Spending Hero Tokens</h3>
-				<p><strong>1 Token:</strong> Gain 2 Surges.</p>
-				<p><strong>1 Token:</strong> Succeed on a saving throw instead of failing.</p>
-				<p><strong>1 Token:</strong> Reroll a test and use the new result.</p>
-				<p><strong>2 Tokens:</strong> On your turn or when you take damage, regain Stamina equal to your recovery value without spending a Recovery before taking the damage.</p>
+				<h3>Витрачання<br></br>героїчних жетонів</h3>
+				<p><strong>1 Жетон:</strong> Отримати 2 Сплески.</p>
+				<p><strong>1 Жетон:</strong> Успішно пройти рятівний кидок замість провалу.</p>
+				<p><strong>1 Жетон:</strong> Перебросити тест і використати новий результат.</p>
+				<p><strong>2 Жетони:</strong> У свій хід або коли отримуєте шкоду, відновити Витривалість рівну вашому значенню відновлення без витрачання Відновлення перед отриманням шкоди.</p>
 			</div>
 			<div className='turn-reference'>
-				<h3>Your Turn</h3>
-				<p>Each creature can take a move action, a maneuver, and a main action on their turn — in any order</p>
+				<h3>Ваш хід</h3>
+				<p>Кожна істота може виконати дію руху, маневр та основну дію у свій хід — у будь-якому порядку</p>
 				{
 					showTriggerHelp || !showActionsManeuversReference ?
-						<p>You can also take <strong>one triggered action per round</strong> when the trigger happens. There is no limit to the number of free triggered actions you can take.</p>
+						<p>Ви також можете виконати <strong>одну тригерну дію за раунд</strong>, коли відбувається тригер. Немає обмежень на кількість безкоштовних тригерних дій, які ви можете виконати.</p>
 						: null
 				}
 				{
 					showActionsManeuversReference ?
 						<div className='actions-maneuvers'>
 							<div className='move-actions'>
-								<h5>Move Actions</h5>
+								<h5>Дії руху</h5>
 								<ul>
-									<li>Advance</li>
-									<li>Disengage</li>
-									<li>Ride</li>
+									<li>Рух вперед</li>
+									<li>Відступ</li>
+									<li>Їзда</li>
 								</ul>
 							</div>
 							<div className='main-actions'>
-								<h5>Main Actions</h5>
+								<h5>Основні дії</h5>
 								<ul>
-									<li>Charge</li>
-									<li>Defend</li>
-									<li>Heal</li>
-									<li>Free Strike</li>
+									<li>Розгін</li>
+									<li>Захист</li>
+									<li>Лікування</li>
+									<li>Вільний удар</li>
 									{
 										showTriggerHelp ?
 											<>
-												<li>Trade for Maneuver</li>
-												<li>Trade for Move</li>
+												<li>Обмін на маневр</li>
+												<li>Обмін на рух</li>
 											</>
 											: null
 									}
 								</ul>
 							</div>
 							<div className='maneuvers'>
-								<h5>Maneuvers</h5>
+								<h5>Маневри</h5>
 								<ul>
-									<li>Aid Attack</li>
-									<li>Catch Breath</li>
-									<li>Claw Dirt</li>
-									<li>Escape Grab</li>
-									<li>Grab</li>
-									<li>Hide</li>
-									<li>Knockback</li>
-									<li>Make or Assist Test</li>
-									<li>Search for Hidden Creature</li>
-									<li>Stand Up</li>
-									<li>Use Consumable</li>
+									<li>Допомога в атаці</li>
+									<li>Перевести подих</li>
+									<li>Рити землю</li>
+									<li>Втеча з захоплення</li>
+									<li>Захоплення</li>
+									<li>Сховатися</li>
+									<li>Відштовхування</li>
+									<li>Зробити або допомогти в тесті</li>
+									<li>Пошук схованої істоти</li>
+									<li>Встати</li>
+									<li>Використати розхідник</li>
 								</ul>
 							</div>
 						</div>

@@ -20,63 +20,63 @@ export const HeroHeaderCard = (props: Props) => {
 			<HeaderImage />
 			<section className='hero-overview container'>
 				<LabeledTextField
-					label='Character Name'
+					label='Імʼя персонажа'
 					content={character.name}
-					additionalClasses={[ 'name', 'no-box', 'text-left' ]}
+					additionalClasses={['name', 'no-box', 'text-left']}
 				/>
 				<LabeledTextField
-					label='Ancestry'
+					label='Походження'
 					content={character.ancestryName}
-					additionalClasses={[ 'no-box', 'text-left' ]}
+					additionalClasses={['no-box', 'text-left']}
 				/>
 				<LabeledTextField
-					label='Class'
+					label='Клас'
 					content={character.className}
-					additionalClasses={[ 'no-box', 'text-left' ]}
+					additionalClasses={['no-box', 'text-left']}
 				/>
 				<LabeledTextField
-					label='Career'
+					label='Карʼєра'
 					content={character.career?.name || ''}
-					additionalClasses={[ 'no-box', 'text-left' ]}
+					additionalClasses={['no-box', 'text-left']}
 				/>
 				<LabeledTextField
-					label={character.subclassTypeName ? `Subclass (${character.subclassTypeName})` : 'Subclass'}
+					label={character.subclassTypeName ? `Підклас (${character.subclassTypeName})` : 'Підклас'}
 					content={character.subclassName}
-					additionalClasses={[ 'no-box', 'text-left' ]}
+					additionalClasses={['no-box', 'text-left']}
 				/>
 			</section>
 			<section className='hero-advancement container'>
 				<div className='victories-level'>
 					<div className='victories'>
-						<h3>Victories:</h3>
+						<h3>Перемоги:</h3>
 						<div className='victories-boxes'>
 							<ol>
-								{[ ...Array(15) ].map((_o, i) => {
+								{[...Array(15)].map((_o, i) => {
 									return <li key={`victories-marker-box-${i}`}>{currentVictories >= i + 1 ? '◼' : <>&nbsp;</>}</li>;
 								})}
 							</ol>
 						</div>
 					</div>
 					<LabeledTextField
-						label='Level'
+						label='Рівень'
 						content={character.level}
-						additionalClasses={[ 'level', 'label-above', 'no-box' ]}
+						additionalClasses={['level', 'label-above', 'no-box']}
 					/>
 				</div>
 				<LabeledTextField
-					label='Wealth'
+					label='Багатство'
 					content={character.wealth}
-					additionalClasses={[ 'label-above', 'box-both' ]}
+					additionalClasses={['label-above', 'box-both']}
 				/>
 				<LabeledTextField
-					label='Renown'
+					label='Слава'
 					content={character.renown}
-					additionalClasses={[ 'label-above', 'box-both' ]}
+					additionalClasses={['label-above', 'box-both']}
 				/>
 				<LabeledTextField
-					label={character.level === 10 ? 'Epic' : 'XP'}
+					label={character.level === 10 ? 'Епік' : 'Досвід'}
 					content={character.xp}
-					additionalClasses={[ 'xp', 'label-above', 'box-both' ]}
+					additionalClasses={['xp', 'label-above', 'box-both']}
 				/>
 			</section>
 		</div>

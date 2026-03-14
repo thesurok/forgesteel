@@ -6,8 +6,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const trickery: Domain = {
 	id: 'domain-trickery',
-	name: 'Trickery',
-	description: 'The Trickery domain.',
+	name: 'Підступність',
+	description: 'Домена Підступності.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -17,12 +17,12 @@ export const trickery: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-trickery-1-1',
-							name: 'Inspired Deception',
-							description: 'The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Intuition on the test instead of another characteristic.'
+							name: 'Натхненний обман',
+							description: 'Боги прихильно ставляться до твоєї хитрості за допомогою магії. Коли ти проходиш випробування з навичкою з групи інтриги, ти можеш використовувати Інтуїцію для цього випробування замість іншої характеристики.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-trickery-1-2',
-							listOptions: [ SkillList.Intrigue ]
+							listOptions: [SkillList.Intrigue]
 						})
 					]
 				})
@@ -34,15 +34,15 @@ export const trickery: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-trickery-2',
-						name: 'Divine Comedy',
-						description: 'You and your allies swap places to confound your foes.',
+						name: 'Божественна комедія',
+						description: 'Ти та твої союзники міняєтеся місцями, щоб збити ворогів з пантелику.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Ти та кожен союзник у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target can choose another creature in the area, then swap places with that creature. The creature they choose must be able to fit into the space they leave and vice versa.')
+							FactoryLogic.createAbilitySectionText('Кожен цільовий може обрати іншу істоту в зоні, а потім помінятися з нею місцями. Обрана істота повинна поміщатися на місці, яке залишає ціль, і навпаки.')
 						]
 					})
 				})
@@ -58,14 +58,14 @@ export const trickery: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-trickery-4',
-						name: 'Blessing of Secrets',
-						description: 'You project an illusory aura that makes you and allies harder to notice.',
+						name: 'Благословення таємниць',
+						description: 'Ти створюєш ілюзорну ауру, яка ускладнює помічення тебе та союзників.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						target: 'Ти та кожен союзник у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each creature in the area has a double edge on tests made to hide or sneak. The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.')
+							FactoryLogic.createAbilitySectionText('Кожна істота в зоні отримує подвійну перевагу на випробуваннях на приховування або підкрадання. Аура триває, доки ти не припиниш її (без дії) або доки ціль не завдасть шкоди істоті чи обʼєкту.')
 						]
 					})
 				})
@@ -81,15 +81,15 @@ export const trickery: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-trickery-6',
-						name: 'Invocation of Mystery',
-						description: '“Now you see us …”',
+						name: 'Заклик таємниці',
+						description: '"Тепер ти нас бачиш…"',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						target: 'Ти та кожен союзник у зоні',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target is invisible until the start of your next turn.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль стає невидимою до початку твого наступного ходу.')
 						]
 					})
 				})
@@ -101,14 +101,14 @@ export const trickery: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-trickery-7',
-						name: 'Trinity of Trickery',
-						description: 'Hey! I’m over here. No, here, numbskull.',
+						name: 'Трійця підступності',
+						description: 'Гей! Я тут. Ні, тут, дурнику.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Ти або один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You create two illusory duplicates of the target, which appear anywhere within distance. These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free triggered action to switch places with a duplicate within their line of effect, making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.')
+							FactoryLogic.createAbilitySectionText('Ти створюєш дві ілюзорні копії цілі, які зʼявляються будь-де в межах дистанції. Ці копії існують до кінця сутички. На кожному зі своїх ходів ціль може перемістити кожну копію на відстань до своєї швидкості. Якщо ціль стає мішенню здібності, вона може безкоштовно переміститися з копією в межах лінії ефекту, зробивши копію мішенню замість себе. Коли копія отримує шкоду, вона знищується.')
 						]
 					})
 				})
@@ -124,15 +124,15 @@ export const trickery: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-trickery-9',
-						name: 'Night Falls',
-						description: 'You summon darkness that thwarts only your foes.',
+						name: 'Ніч опускається',
+						description: 'Ти насилаєш темряву, яка заважає лише ворогам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
-						target: 'Special',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
+						target: 'Особлива',
 						cost: 11,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, the area is filled with magic darkness that your enemies can’t see through, but you and your allies can.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ти не вмираєш, зона наповнюється магічною темрявою, крізь яку вороги не можуть бачити, але ти та твої союзники бачите.')
 						]
 					})
 				})
@@ -145,17 +145,17 @@ export const trickery: Domain = {
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that you or a creature within 10 squares takes the Aid Attack or Hide maneuver',
+			trigger: 'Вперше за сутичку, коли ти або істота в межах 10 клітинок використовує маневр Допомога Атаці або Ховатися',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'trickery-default-1',
-			name: 'Trickery Prayer Effect',
-			description: 'You slide one creature within 10 squares of you up to a number of squares equal to 5 + your conduit level.',
+			name: 'Ефект молитви Підступності',
+			description: 'Ти пересуваєш одну істоту в межах 10 клітинок від себе на кількість клітинок, що дорівнює 5 + твій рівень провідника.',
 			tag: 'conduit-prayer'
 		})
 	]

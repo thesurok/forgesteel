@@ -6,62 +6,62 @@ import { FactoryLogic } from '@/logic/factory-logic';
 
 export const hakaan: Ancestry = {
 	id: 'ancestry-hakaan',
-	name: 'Hakaan',
-	description: 'In spite of their friendly, outgoing nature, the rare presence of a hakaan in human society is considered a harbinger - an omen of dark times. Descended from a tribe of giants in upper Vanigar, the original Haka’an tribe made a bargain with Holkatja the Vanigar trickster god. They traded some of their gigantic size and strength for the ability to see the future.',
+	name: 'Хакаан',
+	description: 'Попри їхню дружню, відкриту натуру, рідкісна присутність хакаана в людському суспільстві вважається провісником — ознакою темних часів. Походячи від племені велетнів у верхньому Ванігарі, оригінальне плем’я Хака’ан уклало угоду з Холкатжею, ванігарським богом-шахраєм. Вони обміняли частину свого гігантського розміру та сили на здатність бачити майбутнє.',
 	features: [
 		FactoryLogic.feature.createSize({
 			id: 'hakaan-feature-1',
-			name: 'Big!',
+			name: 'Великий!',
 			sizeValue: 1,
 			sizeMod: 'L'
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'hakaan-feature-2',
-			name: 'Hakaan Traits',
+			name: 'Риси Хакаана',
 			options: [
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'hakaan-feature-2-1',
-						name: 'All Is A Feather',
-						description: 'You are exceptionally strong. You gain an edge on tests made to lift and haul heavy objects.'
+						name: 'Все — пір’їнка',
+						description: 'Ви надзвичайно сильні. Ви отримуєте перевагу на випробуваннях, зроблених для підняття та перенесення важких предметів.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'hakaan-feature-2-2',
-						name: 'Forceful',
-						description: 'Whenever you force move a creature or object, the forced movement distance gains a +1 bonus.'
+						name: 'Сильний',
+						description: 'Коли ви змушуєте рухатися істоту або об’єкт, відстань примусового переміщення отримує бонус +1.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'hakaan-feature-2-3',
-						name: 'Stand Tough',
-						description: 'Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature’s traits or abilities.'
+						name: 'Стояти міцно',
+						description: 'Ваше тіло створене для витримування ударів ворогів. Ваш показник Сили вважається на 1 вищим для опору потужностям, і ви отримуєте перевагу на випробуваннях Сили, коли це потрібно для опору впливу навколишнього середовища або рис чи здібностей істоти.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.createConditionImmunity({
 						id: 'hakaan-feature-2-4',
-						name: 'Great Fortitude',
-						description: 'Your hearty constitution prevents you from losing strength.',
-						conditions: [ ConditionType.Weakened ]
+						name: 'Велика витривалість',
+						description: 'Ваш міцний організм запобігає втраті сили.',
+						conditions: [ConditionType.Weakened]
 					}),
 					value: 2
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'hakaan-feature-2-5',
-						name: 'Doomsight',
+						name: 'Погляд приреченості',
 						description: `
-Working with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on tests and ability rolls, and you don’t die no matter how low your Stamina falls. You then die immediately at the end of the encounter, and can’t be returned to life by any means.
+Працюючи з вашим Директором, ви можете заздалегідь визначити зустріч, у якій ви загинете. Коли ця зустріч починається, ви стаєте приреченим. Поки ви приречені, ви автоматично отримуєте результат рівня 3 на випробуваннях і кидках здібностей, і ви не помираєте, незалежно від того, наскільки низько падає ваша Витривалість. Ви потім негайно помираєте наприкінці зустрічі й не можете бути повернуті до життя жодним чином.
 
-If you don’t predetermine your death encounter, you can choose to become doomed while you are dying with the Director’s approval (no action required). Doing so should be reserved for encounters in which you are dying as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you — not because you’re playing a one-shot and have nothing to lose, Hacaarl.
+Якщо ви не визначаєте заздалегідь свою зустріч смерті, ви можете вибрати стати приреченим, поки ви вмираєте, за згодою Директора (жодна дія не потрібна). Це слід залишити для зустрічей, у яких ви вмираєте внаслідок відповідного героїзму, наприклад, роблячи останній опір проти боса або рятуючи цивільних, або коли наслідки ваших дій нарешті наздогнали вас — не тому, що ви граєте одноразову гру й вам нічого втрачати, Хакарле.
 
-Additionally, when your Stamina reaches the negative of your winded value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can’t regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your Recovery value.`
+Крім того, коли ваша Витривалість досягає негативного значення вашого захеканого значення, і ви не приречені, ви перетворюєтеся на уламки замість того, щоб переживати смерть. У цьому стані ви не усвідомлюєте свого оточення, і ви не можете відновити Витривалість або скасувати цей ефект будь-яким чином. Через 12 годин ви відновлюєте Витривалість, рівну вашому значенню Відновлення.`
 					}),
 					value: 2
 				}
@@ -70,5 +70,5 @@ Additionally, when your Stamina reaches the negative of your winded value and yo
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Hakaan', 'Rural, communal, labor.', CultureType.Ancestral, EnvironmentData.rural, OrganizationData.communal, UpbringingData.labor, 'Vhoric')
+	culture: FactoryLogic.createCulture('Хакаан', 'Сільський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.rural, OrganizationData.communal, UpbringingData.labor, 'Ворик')
 };

@@ -7,8 +7,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const sun: Domain = {
 	id: 'domain-sun',
-	name: 'Sun',
-	description: 'The Sun domain.',
+	name: 'Сонце',
+	description: 'Сфера Сонця.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,12 +18,12 @@ export const sun: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-sun-1-1',
-							name: 'Inner Light',
-							description: 'Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. You place a ray of morning light into the chosen character’s soul, granting them a +1 bonus to saving throws that lasts until you finish another respite.'
+							name: 'Внутрішнє світло',
+							description: 'Кожного разу, коли ви завершуєте відпочинок, ви можете обрати себе або одного союзника, який також завершує відпочинок, щоб надати йому користь божественного ритуалу. Ви вкладаєте промінь ранкового світла в душу обраного персонажа, надаючи йому +1 до рят. кидків до наступного відпочинку.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-sun-1-2',
-							listOptions: [ SkillList.Lore ]
+							listOptions: [SkillList.Lore]
 						})
 					]
 				})
@@ -35,23 +35,23 @@ export const sun: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-sun-2',
-						name: 'Morning Light',
-						description: 'Light shines at your command, burning your foes and blessing your allies.',
+						name: 'Ранкове світло',
+						description: 'Світло за вашим наказом палає, обпалюючи ворогів і благословляючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '4 fire damage',
-									tier2: '6 fire damage',
-									tier3: '10 fire damage'
+									characteristic: [Characteristic.Intuition],
+									tier1: '4 вогняної шкоди',
+									tier2: '6 вогняної шкоди',
+									tier3: '10 вогняної шкоди'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Each ally in the area deals fire damage equal to your Intuition score with their next strike made before the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Кожен союзник у зоні завдає вогняної шкоди, що дорівнює вашій Інтуїції, своїм наступним ударом до кінця наступного ходу.')
 						]
 					})
 				})
@@ -66,8 +66,8 @@ export const sun: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-sun-4',
-					name: 'Light of Revelation',
-					description: 'As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares. This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can’t hide. While this feature is active, you gain an edge on tests made to notice hidden objects and entrances and to detect supernatural illusions.'
+					name: 'Світло одкровення',
+					description: 'Маневром ви змушуєте своє тіло яскраво світитися, освітлюючи свою клітинку та всі клітинки в межах 5. Це світло проникає крізь будь-яку темряву. Приховані істоти в області автоматично виявляються, а істоти у світлі, включно з вами, не можуть ховатися. Поки ця властивість активна, ви отримуєте перевагу на випробування для виявлення прихованих обʼєктів, входів і надприродних ілюзій.'
 				})
 			]
 		},
@@ -81,15 +81,15 @@ export const sun: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-sun-6',
-						name: 'Blessing of the Midday Sun',
-						description: 'Your body emits a heat that bakes your enemies and inspires your allies.',
+						name: 'Благословення полуденного сонця',
+						description: 'Ваше тіло випромінює жар, що випікає ворогів і надихає союзників.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 }) ],
-						target: 'Self and each creature in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 })],
+						target: 'Ви та кожна істота в зоні',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy in the area takes a bane on power rolls, and you and each ally in the area gain 1 surge at the end of each of your turns.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не перебуваєте у стані "Вмираючий", кожен ворог у зоні отримує шкоду на кидки сили, а ви та кожен союзник у зоні отримуєте 1 Сплеск наприкінці кожного вашого ходу.')
 						]
 					})
 				})
@@ -100,8 +100,8 @@ export const sun: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-sun-7',
-					name: 'Light of the Burning Sun',
-					description: 'Sun infuses your body. Whenever you use an ability to deal rolled damage to another creature, that ability deals an extra 5 fire damage, or an extra 15 fire damage if the creature is undead. Additionally, you have fire immunity equal to your level, which is added to any other fire immunity you have.'
+					name: 'Світло палаючого сонця',
+					description: 'Сонце наповнює ваше тіло. Коли ви використовуєте здібність для завдання кидкової шкоди іншій істоті, ця здібність завдає додатково 5 вогняної шкоди, або 15 вогняної шкоди, якщо істота — нежить. Крім того, ви маєте імунітет до вогню, що дорівнює вашому рівню, і додається до іншого імунітету до вогню.'
 				})
 			]
 		},
@@ -115,20 +115,20 @@ export const sun: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-sun-9',
-						name: 'Solar Flare',
-						description: 'You call down a sphere of fire that burns your foes to ash.',
+						name: 'Сонячний спалах',
+						description: 'Ви закликаєте сферу вогню, яка спалює ворогів до попелу.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '9 fire damage',
-									tier2: '14 fire damage',
-									tier3: '19 fire damage'
+									characteristic: [Characteristic.Intuition],
+									tier1: '9 вогняної шкоди',
+									tier2: '14 вогняної шкоди',
+									tier3: '19 вогняної шкоди'
 								})
 							)
 						]
@@ -143,17 +143,17 @@ export const sun: Domain = {
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that an enemy within 10 squares takes fire or holy damage',
+			trigger: 'Вперше під час сутички, коли ворог у межах 10 клітинок отримує вогняну або святу шкоду',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'sun-default-1',
-			name: 'Sun Prayer Effect',
-			description: 'One enemy within 10 squares takes fire damage equal to three times your Intuition score.',
+			name: 'Ефект молитви Сонця',
+			description: 'Один ворог у межах 10 клітинок отримує вогняну шкоду, що дорівнює потрійному значенню вашої Інтуїції.',
 			tag: 'conduit-prayer'
 		})
 	]

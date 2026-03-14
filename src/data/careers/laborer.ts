@@ -6,16 +6,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const laborer: Career = {
 	id: 'career-laborer',
-	name: 'Laborer',
-	description: 'You worked as a farmer, builder, clothes washer, forester, miner, or some other profession engaged in hard manual labor.',
+	name: 'Робітник',
+	description: 'Ви працювали фермером, будівельником, прачем, лісником, шахтарем чи в іншій важкій фізичній праці.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'laborer-feature-1',
-			selected: [ 'Endurance' ]
+			selected: ['Endurance']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'laborer-feature-2',
-			listOptions: [ SkillList.Crafting, SkillList.Exploration ],
+			listOptions: [SkillList.Crafting, SkillList.Exploration],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -28,40 +28,40 @@ export const laborer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'laborer-feature-5',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-laborer-ii-1',
-				name: 'Deep Sentinel',
-				description: 'Spending your days cleaning and maintaining the sewers doesn’t make you many friends. But you found friendship among the rats. You fought the monsters that hunted your friends, and which everyone else ignored. After making the sewers safe for the rats, you decided to take your talents to the surface and serve other humanoids who might appreciate your efforts in the same way.'
+				name: 'Сторож глибин',
+				description: 'Дні, проведені за прибиранням і доглядом за каналізацією, не приносять багато друзів. Але ви знайшли їх серед щурів. Ви боролися з монстрами, які полювали на ваших друзів, і яких усі ігнорували. Зробивши каналізацію безпечною для щурів, ви вирішили допомагати й іншим, хто оцінить ваші зусилля.'
 			},
 			{
 				id: 'career-laborer-ii-2',
-				name: 'Disaster',
-				description: 'A disaster, such as a cave-in, wildfire, or tidal wave, hit your crew while you were working. You saved as many as you could, but the ones you couldn’t save weigh heavily on your mind. You took up the life of a hero to save as many people as possible, vowing that what happened to you won’t happen again.'
+				name: 'Лихо',
+				description: 'Під час роботи на вашу бригаду обрушилося лихо: обвал, пожежа чи цунамі. Ви врятували стільки людей, скільки змогли, але ті, кого не вдалося врятувати, досі тяжіють на душі. Ви стали героєм, щоб рятувати якомога більше людей, пообіцявши, що таке більше не повториться.'
 			},
 			{
 				id: 'career-laborer-ii-3',
-				name: 'Embarrassment',
-				description: 'A noble you worked for admonished you publicly for work done poorly - and more than once. Finally, you’d had enough. You vowed to take up a new path and show this noble you’re far more than what they make you out to be.'
+				name: 'Ганьба',
+				description: 'Пан, на якого ви працювали, не раз прилюдно дорікав вам за погану роботу. Зрештою ви втомилися й вирішили змінити життя, довести, що ви значно більше, ніж здаєтеся.'
 			},
 			{
 				id: 'career-laborer-ii-4',
-				name: 'Live the Dream',
-				description: 'You worked with a good friend, and on the job, you would always fantasize about what it would be like to hit the road as adventuring heroes … someday. You didn’t count on your friend falling ill and passing away. Now it’s time to live out that dream for both of you.'
+				name: 'Жити мрією',
+				description: 'Ви працювали з добрим другом і завжди мріяли разом вирушити в пригоди... колись. Ви не очікували, що друг захворіє й помре. Тепер настав час здійснити цю мрію за вас обох.'
 			},
 			{
 				id: 'career-laborer-ii-5',
-				name: 'Shining Light',
-				description: 'You kept a lighthouse along the constantly stormy cliffs of your village with your mentor. On a clear and sunny day, your mentor vanished. Finding only a cryptic notebook filled with his musings on the supernatural, you left to find what really what happened. The trail has gone cold for now, and you’re helping others find their loved ones in the meantime.'
+				name: 'Світло маяка',
+				description: 'Ви доглядали маяк на буремних скелях села разом із наставником. У ясний сонячний день наставник зник. Залишився лише загадковий зошит із його роздумами про надприродне. Ви вирушили дізнатися правду. Слід охолов, і тепер ви допомагаєте іншим шукати зниклих.'
 			},
 			{
 				id: 'career-laborer-ii-6',
-				name: 'Slow and Steady',
-				description: 'You labored silently as an uncaring boss drove those around you into the ground, pushing you to work harder to lessen the burden on your companions. But when the boss pushed too far and killed a friend of yours, you led an uprising against them. That was the start of your adventuring life.'
+				name: 'Повільно й впевнено',
+				description: 'Ви мовчки працювали, поки байдужий начальник знущався з усіх, змушуючи вас працювати ще більше, щоб полегшити тягар товаришів. Але коли він зайшов надто далеко й убив вашого друга, ви підняли повстання. Так почалося ваше пригодницьке життя.'
 			}
 		],
 		selected: null,

@@ -6,16 +6,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const aristocrat: Career = {
 	id: 'career-aristocrat',
-	name: 'Aristocrat',
-	description: 'Career? Who needs a career when you’re born into money! Or marry into it! Or con your way into it! Whatever the case, you didn’t need to work thanks to (someone’s) generational wealth.',
+	name: 'Аристократ',
+	description: 'Карʼєра? Кому потрібна карʼєра, якщо ти народився в багатстві! Або одружився з багатієм! Або хитрістю здобув статки! Як би там не було, працювати не довелося завдяки чиємусь спадковому багатству.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-aristocrat-feature-1',
-			listOptions: [ SkillList.Interpersonal ]
+			listOptions: [SkillList.Interpersonal]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-aristocrat-feature-2',
-			listOptions: [ SkillList.Lore ]
+			listOptions: [SkillList.Lore]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-aristocrat-feature-3'
@@ -32,40 +32,40 @@ export const aristocrat: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-aristocrat-feature-6',
-			lists: [ PerkList.Lore ]
+			lists: [PerkList.Lore]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-aristocrat-ii-1',
-				name: 'Blood Money',
-				description: 'When you entered adulthood, you heard unsavory whispers about your family’s fortune before learning that their wealth came at the cost of others’ suffering. Whether you shed light on the secret or not, you left to become a hero stripped of noble title.'
+				name: 'Криваві гроші',
+				description: 'Досягнувши повноліття, ви почули недобрі чутки про статки своєї родини й дізналися, що багатство дісталося ціною чужих страждань. Незалежно від того, чи розкрили ви цю таємницю, ви залишили все, щоб стати героєм без дворянського титулу.'
 			},
 			{
 				id: 'career-aristocrat-ii-2',
-				name: 'Charmed Life',
-				description: 'Through some treasure or innate ability, you were able to defraud other aristocrats. You did it for fun. When you were found out, you lost your status. Whether you served time or escaped from punishment, you decided to rehabilitate yourself and became a hero.'
+				name: 'Чарівне життя',
+				description: 'Завдяки скарбу чи природному таланту ви обдурювали інших аристократів — просто заради розваги. Коли вас викрили, ви втратили статус. Чи відбували ви покарання, чи втекли, ви вирішили виправитися й стали героєм.'
 			},
 			{
 				id: 'career-aristocrat-ii-3',
-				name: 'Inheritance',
-				description: 'The guardians who instilled in you the virtues of doing the right thing were murdered in a senseless petty robbery. Though their wealth was bequeathed to you, it did little to assuage the guilt you felt for being unable to stop the deadly crime. You decided to use your riches to fund your life as a hero, whether publicly or using an alter ego.'
+				name: 'Спадщина',
+				description: 'Опікуни, які прищепили вам чесноти, були вбиті під час безглуздого пограбування. Хоча їхній спадок дістався вам, це не полегшило провини за те, що не змогли зупинити злочин. Ви вирішили використати багатство, щоб фінансувати героїчне життя — відкрито чи під вигаданим імʼям.'
 			},
 			{
 				id: 'career-aristocrat-ii-4',
-				name: 'Privileged Position',
-				description: 'Life outside the manor never piqued your interest. You had everything you wanted. It came as a surprise when the peasants came to overthrow your family. You narrowly escaped, and for the first time witnessed the world. It caused you to become a hero for the people, fighting against inequities.'
+				name: 'Привілейоване становище',
+				description: 'Життя поза маєтком вас ніколи не цікавило — у вас було все, чого бажали. Та коли селяни прийшли скидати вашу родину, ви ледь утекли й уперше побачили справжній світ. Це надихнуло вас стати героєм для народу, борцем із несправедливістю.'
 			},
 			{
 				id: 'career-aristocrat-ii-5',
-				name: 'Royal Pauper',
-				description: 'Seeking a break from noble duties, you sought a lookalike to switch identities with. It went so well that you made a habit of switching whenever bored. Unfortunately, your counterpart became so good at imitating you that they convinced everyone you were an impostor. You lost contact with your family, but pursue a heroic path free of the pomp of your old life.'
+				name: 'Королівський злидар',
+				description: 'Щоб відпочити від дворянських обовʼязків, ви знайшли двійника для обміну особистостями. Це так сподобалося, що ви робили це щоразу, коли нудьгували. На жаль, двійник так добре навчився вас наслідувати, що переконав усіх, ніби ви — самозванець. Ви втратили звʼязок із родиною, але обрали героїчний шлях без пишноти минулого.'
 			},
 			{
 				id: 'career-aristocrat-ii-6',
-				name: 'Wicked Secret',
-				description: 'One parent passed away when you were a baby and the other remarried years later. Then that parent died under suspicious circumstances. Their spouse ousted you, and you were banished (and possibly hunted). Rising from tragedy, you now seek to right the wrongs of the world.'
+				name: 'Темна таємниця',
+				description: 'Один із батьків помер, коли ви були немовлям, а інший одружився вдруге. Згодом і цей батько помер за підозрілих обставин. Їхній новий чоловік або дружина вигнали вас, і ви були вигнані (а можливо, і переслідувані). Переживши трагедію, ви прагнете виправити несправедливість у світі.'
 			}
 		],
 		selected: null,

@@ -31,7 +31,7 @@ interface Props {
 
 export const WelcomePage = (props: Props) => {
 	const isSmall = useMediaQuery('(max-width: 1000px)');
-	const [ showBanner, setShowBanner ] = useState<boolean>(true);
+	const [showBanner, setShowBanner] = useState<boolean>(true);
 
 	if (isSmall) {
 		return (
@@ -107,7 +107,7 @@ interface WelcomeProps {
 
 const Welcome = (props: WelcomeProps) => {
 	const navigation = useNavigation();
-	const [ page, setPage ] = useState<WelcomeType>('player');
+	const [page, setPage] = useState<WelcomeType>('player');
 
 	const getContent = () => {
 		switch (page) {
@@ -119,30 +119,30 @@ const Welcome = (props: WelcomeProps) => {
 								For Players
 							</HeaderText>
 							<div className='ds-text'>
-								If you're a <b>DRAW STEEL</b> player, you've come to the right place.
+								Якщо ви гравець <b>DRAW STEEL</b>, ви у правильному місці.
 							</div>
 							<div className='ds-text'>
-								In the <b>HEROES</b> screen you can easily create your characters; the hero builder leads you through the process step-by-step.
+								На екрані <b>HEROES</b> ви можете легко створювати своїх персонажів; майстер створення героя проведе вас крок за кроком.
 							</div>
 							<ul>
 								<li>
-									All the official content is included, and you can also use any homebrew content your director has created.
+									Увесь офіційний контент включено, а також ви можете використовувати будь-який домашній контент, створений вашим директором.
 								</li>
 								<li>
-									You can use the app to track your hero's stamina, conditions, surges, and so on.
+									Ви можете використовувати додаток для відстеження витривалості, станів, сплесків та іншого вашого героя.
 								</li>
 								<li>
-									If you're playing offline, you can export your heroes in PNG or PDF formats (either portrait or landscape).
+									Якщо ви граєте офлайн, ви можете експортувати своїх героїв у форматах PNG або PDF (портрет або ландшафт).
 								</li>
 								<li>
-									Want something a little different? You can customize any of your abilities to make them more unique to your hero.
+									Хочете щось трохи інше? Ви можете налаштувати будь-яку здатність, щоб зробити її більш унікальною для вашого героя.
 								</li>
 								<li>
-									Need to tweak your hero in a way that's not strictly by the book? No problem! You can customize your hero in any number of ways - an extra ability, bonuses to your characteristics, extra skills, retainers, etc.
+									Потрібно відредагувати героя не зовсім по книзі? Немає проблем! Ви можете налаштувати героя будь-яким способом — додатковою здатністю, бонусами до характеристик, додатковими навичками, підлеглими тощо.
 								</li>
 							</ul>
 							<div className='ds-text'>
-								In addition, you can quickly look up rules at any time using the Reference button at the bottom right of the screen.
+								Крім того, ви можете швидко знаходити правила в будь-який час за допомогою кнопки Reference у правому нижньому куті екрану.
 							</div>
 						</div>
 						<div className='welcome-buttons'>
@@ -347,11 +347,11 @@ const Welcome = (props: WelcomeProps) => {
 };
 
 const Tips = () => {
-	const [ tips ] = useState<Tip[]>([
+	const [tips] = useState<Tip[]>([
 		...Collections.shuffle(TipData.getTips().filter(t => t.isNew)),
 		...Collections.shuffle(TipData.getTips().filter(t => !t.isNew))
 	]);
-	const [ tipIndex, setTipIndex ] = useState<number>(0);
+	const [tipIndex, setTipIndex] = useState<number>(0);
 
 	const prevTip = () => {
 		const index = tipIndex - 1;
@@ -379,16 +379,5 @@ interface BannerProps {
 }
 
 const Banner = (props: BannerProps) => {
-	return (
-		<div className='banner-container' onClick={e => e.stopPropagation()}>
-			<div className='banner'>
-				<HeaderText extra={<Button type='text' icon={<CloseOutlined />} onClick={props.onClose} />}>
-					FORGE STEEL has a new home!
-				</HeaderText>
-				<div>
-					Export your heroes and homebrew sourcebooks <a href='https://andyaiken.github.io/forgesteel/#/backup'>here</a>, then join us at <a href='https://forgesteel.net'>https://forgesteel.net</a>.
-				</div>
-			</div>
-		</div>
-	);
+	return null;
 };

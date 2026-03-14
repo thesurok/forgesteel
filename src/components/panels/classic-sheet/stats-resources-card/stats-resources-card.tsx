@@ -21,41 +21,41 @@ export const StatsResourcesCard = (props: Props) => {
 			<div className='characteristics-measurements'>
 				<div className='characteristics'>
 					<div className='labeled-field label-above fancy'>
-						<label><span className='symbol'>M</span>ight</label>
+						<label><span className='symbol'>С</span>ила</label>
 						<div className='labeled-field-content'><span>{Utils.isNullOrEmpty(character.might?.toString()) ? <>&nbsp;</> : character.might}</span></div>
 					</div>
 					<div className='labeled-field label-above fancy'>
-						<label><span className='symbol'>A</span>gility</label>
+						<label><span className='symbol'>Л</span>овкість</label>
 						<div className='labeled-field-content'><span>{Utils.isNullOrEmpty(character.agility?.toString()) ? <>&nbsp;</> : character.agility}</span></div>
 					</div>
 					<div className='labeled-field label-above fancy'>
-						<label><span className='symbol'>R</span>eason</label>
+						<label><span className='symbol'>Р</span>озум</label>
 						<div className='labeled-field-content'><span>{Utils.isNullOrEmpty(character.reason?.toString()) ? <>&nbsp;</> : character.reason}</span></div>
 					</div>
 					<div className='labeled-field label-above fancy'>
-						<label><span className='symbol'>I</span>ntuition</label>
+						<label><span className='symbol'>І</span>нтуїція</label>
 						<div className='labeled-field-content'><span>{Utils.isNullOrEmpty(character.intuition?.toString()) ? <>&nbsp;</> : character.intuition}</span></div>
 					</div>
 					<div className='labeled-field label-above fancy'>
-						<label><span className='symbol'>P</span>resence</label>
+						<label><span className='symbol'>П</span>рисутність</label>
 						<div className='labeled-field-content'><span>{Utils.isNullOrEmpty(character.presence?.toString()) ? <>&nbsp;</> : character.presence}</span></div>
 					</div>
 				</div>
 				<div className='measurements'>
 					<LabeledTextField
-						label='Size'
+						label='Розмір'
 						content={character.size}
 					/>
 					<LabeledTextField
-						label='Speed'
+						label='Швидкість'
 						content={character.speed}
 					/>
 					<LabeledTextField
-						label='Disengage'
+						label='Відступ'
 						content={character.disengage}
 					/>
 					<LabeledTextField
-						label='Stability'
+						label='Стійкість'
 						content={character.stability}
 					/>
 				</div>
@@ -70,25 +70,25 @@ export const StatsResourcesCard = (props: Props) => {
 			/>
 			<div className='heroic-resource'>
 				<LabeledTextField
-					label='Heroic Resource'
+					label='Героїчний ресурс'
 					content={(showState && character.heroicResourceCurrent?.toString()) || ''}
-					additionalClasses={[ 'label-above', 'fancy' ]}
+					additionalClasses={['label-above', 'fancy']}
 				/>
 				<LabeledTextField
-					label='Name'
+					label='Назва'
 					content={character.heroicResourceName}
-					additionalClasses={[ 'no-box' ]}
+					additionalClasses={['no-box']}
 				/>
 			</div>
 			<div className='surges'>
 				<LabeledTextField
-					label='Surges'
+					label='Сплески'
 					content={(showState && character.surgesCurrent?.toString()) || ''}
-					additionalClasses={[ 'label-above', 'fancy' ]}
+					additionalClasses={['label-above', 'fancy']}
 				/>
 				<div className='reference'>
-					<div>1 Surge = Damage <span className='data'>{character.surgeDamageAmount}</span></div>
-					<div>2 Surges = Potency + 1</div>
+					<div>1 Сплеск = Урон <span className='data'>{character.surgeDamageAmount}</span></div>
+					<div>2 Сплески = Потужність + 1</div>
 				</div>
 			</div>
 		</div>

@@ -29,17 +29,19 @@
         list-style: none;
         column-count: 2;
         column-fill: balance;
-        margin:0;
+        margin: 0;
         padding: 0;
 
-       .labeled-boolean,
-       .spacer {
+        .labeled-boolean,
+        .spacer {
             padding: 3px 0;
 
-            label{
+            label {
+                font-size: round(0.9rem, 1px);
                 font-weight: 400;
             }
         }
+
         .spacer {
             height: round(2rem, 1px);
         }

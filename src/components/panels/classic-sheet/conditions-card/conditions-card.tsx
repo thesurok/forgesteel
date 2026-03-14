@@ -44,16 +44,16 @@ export const ConditionsCard = (props: Props) => {
 
 	return (
 		<div className='conditions card'>
-			<h2>Conditions</h2>
+			<h2>Стани</h2>
 			<div className='conditions-table'>
 				<div className='header'>
-					<div>Condition</div>
-					<div>End of Turn</div>
-					<div>Save Ends*</div>
+					<div>Стан</div>
+					<div>Кінець ходу</div>
+					<div>Рят. кидок закінчує*</div>
 				</div>
 
 				{conditionTypes.map(ct => {
-					const classes = [ 'condition' ];
+					const classes = ['condition'];
 					if (character.conditionImmunities?.includes(ct)) {
 						classes.push('immune');
 					}
@@ -63,12 +63,12 @@ export const ConditionsCard = (props: Props) => {
 							<LabeledBooleanField
 								value={showState && character.conditions?.find(c => c.type === ct)?.ends === ConditionEndType.EndOfTurn}
 								label=''
-								additionalClasses={[ 'center', 'no-label' ]}
+								additionalClasses={['center', 'no-label']}
 							/>
 							<LabeledBooleanField
 								value={showState && character.conditions?.find(c => c.type === ct)?.ends === ConditionEndType.SaveEnds}
 								label=''
-								additionalClasses={[ 'center', 'no-label' ]}
+								additionalClasses={['center', 'no-label']}
 							/>
 						</div>
 					);
@@ -79,12 +79,12 @@ export const ConditionsCard = (props: Props) => {
 						<LabeledBooleanField
 							value={showState && c.ends === ConditionEndType.EndOfTurn}
 							label=''
-							additionalClasses={[ 'center', 'no-label' ]}
+							additionalClasses={['center', 'no-label']}
 						/>
 						<LabeledBooleanField
 							value={showState && c.ends === ConditionEndType.SaveEnds}
 							label=''
-							additionalClasses={[ 'center', 'no-label' ]}
+							additionalClasses={['center', 'no-label']}
 						/>
 					</div>
 				)}
@@ -94,16 +94,16 @@ export const ConditionsCard = (props: Props) => {
 					<LabeledBooleanField
 						value={false}
 						label=''
-						additionalClasses={[ 'center', 'no-label' ]}
+						additionalClasses={['center', 'no-label']}
 					/>
 					<LabeledBooleanField
 						value={false}
 						label=''
-						additionalClasses={[ 'center', 'no-label' ]}
+						additionalClasses={['center', 'no-label']}
 					/>
 				</div>
 			</div>
-			<div className='save-ends-description'>* Save Ends = <span className='save-target'>{character.saveTarget}</span> or higher on 1d10{getSaveBonus()} at the end of your turn removes the effect.</div>
+			<div className='save-ends-description'>* Рят. кидок закінчує = <span className='save-target'>{character.saveTarget}</span> або більше на 1d10{getSaveBonus()} в кінці вашого ходу знімає ефект.</div>
 		</div>
 	);
 };

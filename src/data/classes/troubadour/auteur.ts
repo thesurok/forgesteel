@@ -14,7 +14,7 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '63GSnAtLidKQThSw',
-					selected: [ 'Brag' ]
+					selected: ['Brag']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,11 +22,11 @@ export const auteur: SubClass = {
 						name: 'Blocking',
 						description: 'No, no, no, you lose the audience that way. Try it like this …',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 						target: 'Each creature in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score and teleport those targets to unoccupied spaces in the area. A target can’t be teleported in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect. ')
+							FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності, і телепортувати їх у вільні клітинки в зоні. Ціль не можна телепортувати так, щоб це їй зашкодило (наприклад, над прірвою), залишило її вмираючою або спричинило стан чи інший негативний ефект.')
 						]
 					})
 				}),
@@ -36,14 +36,14 @@ export const auteur: SubClass = {
 						name: 'Dramatic Monologue',
 						description: 'It doesn’t need to make sense. Just say it with emotion.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText(` Choose one of the following effects:
-* You orate a rousing tale of victory. One ally within distance gains an edge on the next power roll they make before the start of your next turn.
-* You weave a tale of high-stakes heroics. One ally within distance gains 1 surge.
-* You insult a foe where they’re most vulnerable. One enemy within distance takes a bane on the next power roll they make before the end of their next turn.`),
+ * Ви виголошуєте надихаючу історію перемоги. Один союзник у межах дистанції отримує перевагу на наступний кидок сили до початку вашого наступного ходу.
+ * Ви переповідаєте історію героїзму. Один союзник у межах дистанції отримує 1 імпульс.
+ * Ви ображаєте ворога у найвразливішому місці. Один ворог у межах дистанції отримує перешкоду на наступний кидок сили до кінця свого наступного ходу.`),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'You can choose two targets for the chosen effect.'
 							})
@@ -56,11 +56,11 @@ export const auteur: SubClass = {
 						name: 'Turnabout Is Fair Play',
 						description: 'All’s fair in love and whatever.',
 						type: FactoryLogic.type.createTrigger('The target makes an ability roll that has an edge, a double edge, a bane, or a double bane.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('An edge on the triggering roll becomes a bane, or a double edge becomes an edge. A bane becomes an edge, or a double bane becomes a bane.'),
+							FactoryLogic.createAbilitySectionText('Перевага на тригерному кидку стає перешкодою, або подвійна перевага стає перевагою. Перешкода стає перевагою, або подвійна перешкода стає перешкодою.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
 								effect: 'An edge on the triggering roll becomes a double bane, or a double edge is negated. A bane becomes a double edge, or a double bane is negated.'
@@ -84,12 +84,12 @@ export const auteur: SubClass = {
 									name: 'Guest Star',
 									description: 'We offered them a percentage of the gross. So they’re working for free!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Special',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('A guest star appears to help you during the encounter: either a bystander within distance uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within distance. This guest star is controlled by you, has their own turn, and shares your characteristics. Their Stamina maximum is half yours. They have no abilities other than your melee and ranged free strikes. At the end of the encounter, or when the guest star is reduced to 0 Stamina, they retreat or revert to a bystander. The same bystander can’t be uplifted this way more than once during an encounter. ')
+										FactoryLogic.createAbilitySectionText('Запрошена зірка з’являється, щоб допомогти вам під час зустрічі: або сторонній у межах дистанції, піднесений вашою магією, або таємничий новий герой, який з’являється у вільній клітинці в межах дистанції. Ця зірка під вашим контролем, має власний хід і ваші характеристики. Її максимум Витривалості — половина вашого. Вона не має здібностей, окрім ваших ближніх і далеких безкоштовних ударів. Наприкінці зустрічі або коли зірка знижується до 0 Витривалості, вона відступає або повертається до стороннього. Того ж стороннього не можна піднести цим способом більше одного разу за зустріч.')
 									]
 								})
 							}),
@@ -102,12 +102,12 @@ export const auteur: SubClass = {
 									name: 'Twist at the End',
 									description: 'You didn’t see that coming, did you?!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'One dead enemy',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('A target who is not a leader or solo creature comes back to life with half their Stamina and becomes an ally under the Director’s control. The players can work with the Director to determine when the target takes their turn each combat round. At the end of the encounter, the target turns to dust and is blown away.')
+										FactoryLogic.createAbilitySectionText('Ціль, яка не є лідером або одинаком, повертається до життя з половиною своєї Витривалості і стає союзником під контролем Директора. Гравці можуть разом із Директором визначити, коли ціль ходить кожен раунд бою. Наприкінці зустрічі ціль перетворюється на порох і розвіюється.')
 									]
 								})
 							}),
@@ -153,8 +153,8 @@ export const auteur: SubClass = {
 									name: 'Take Two!',
 									description: 'One more, and this time make it interesting.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 									target: 'Self and each ally in the area',
 									sections: [
 										FactoryLogic.createAbilitySectionText('While this performance is active, each target who starts their turn in the area can reroll the first power roll that turn that obtains a tier 2 outcome. They must use the new roll.')
@@ -181,14 +181,14 @@ export const auteur: SubClass = {
 									name: 'Here’s How Your Story Ends',
 									description: 'You give away the ending of this battle, and it’s not great for them.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Each enemy in the area',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: '2 psychic damage; P < [weak], frightened (save ends)',
 												tier2: '5 psychic damage; P < [average], frightened (save ends)',
 												tier3: '7 psychic damage; P < [strong], frightened (save ends)'
@@ -206,8 +206,8 @@ export const auteur: SubClass = {
 									name: 'You’re All My Understudies',
 									description: 'It’s important for everyone to know each other’s lines, just in case …',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Each ally in the area',
 									cost: 9,
 									sections: [
@@ -249,7 +249,7 @@ export const auteur: SubClass = {
 									name: 'Epic',
 									description: 'Your story tells a tale of the villain’s waning power and how the heroes rose to the occasion to stop them.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(10)
@@ -259,7 +259,7 @@ export const auteur: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: 'The target takes a bane on ability rolls (save ends).',
 												tier2: 'The target has a double bane on ability rolls (save ends).',
 												tier3: 'The target has a double bane on power rolls (save ends).'
@@ -278,8 +278,8 @@ export const auteur: SubClass = {
 									name: 'Rising Tension',
 									description: 'You narrate the tension of the scene and put all hope into your protagonist to turn things around.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'One ally',
 									cost: 11,
 									sections: [

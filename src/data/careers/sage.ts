@@ -6,12 +6,12 @@ import { SkillList } from '@/enums/skill-list';
 
 export const sage: Career = {
 	id: 'career-sage',
-	name: 'Sage',
-	description: 'From an early age, you dedicated yourself to learning, whether you shared the knowledge of the world with others or sought out secret lore only for yourself.',
+	name: 'Мудрець',
+	description: 'З раннього віку ви присвятили себе навчанню — чи то ділилися знаннями зі світом, чи шукали таємні знання лише для себе.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-sage-feature-1',
-			listOptions: [ SkillList.Lore ],
+			listOptions: [SkillList.Lore],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -24,40 +24,40 @@ export const sage: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-sage-feature-4',
-			lists: [ PerkList.Lore ]
+			lists: [PerkList.Lore]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-sage-ii-1',
-				name: 'Bookish Ideas',
-				description: 'You were always content to live a peaceful life in your library, until you found that one book - the one that told the tale of heroes who had saved the timescape. They didn’t spend their days behind a desk. They made a real difference. It was time for you to do the same.'
+				name: 'Книжкові ідеї',
+				description: 'Ви завжди були задоволені спокійним життям у бібліотеці, поки не знайшли ту саму книгу — ту, що розповідала про героїв, які врятували часовий простір. Вони не сиділи за столом — вони змінювали світ. Настав час і вам зробити те саме.'
 			},
 			{
 				id: 'career-sage-ii-2',
-				name: 'Cure the Curse',
-				description: 'You used to think knowledge could fix everything. You were wrong. When someone you loved fell under a curse, the means to cure them couldn’t be found in any of the books you owned. But that wasn’t going to stop you. The answers are out there, and you’ll find them even if you have to face down death to do so.'
+				name: 'Зцілити прокляття',
+				description: 'Ви думали, що знання можуть усе виправити. Ви помилялися. Коли близька людина потрапила під прокляття, засобу зцілення не знайшлося в жодній з ваших книг. Але це вас не зупинило. Відповіді десь там, і ви їх знайдете, навіть якщо доведеться кинути виклик смерті.'
 			},
 			{
 				id: 'career-sage-ii-3',
-				name: 'Lost Library',
-				description: 'An evil mage took all your books for themself, cackling at your impotence as they raided your shelves. Now, you’re off to search through ancient ruins and secret libraries to rebuild your collection of rare tomes - and to find the mage who stole from you.'
+				name: 'Втрачена бібліотека',
+				description: 'Злий маг забрав усі ваші книги, насміхаючись із вашої безпорадності, коли грабував полиці. Тепер ви вирушаєте шукати стародавні руїни й таємні бібліотеки, щоб відновити свою колекцію рідкісних томів — і знайти мага, який вас обікрав.'
 			},
 			{
 				id: 'career-sage-ii-4',
-				name: 'Paper Guilt',
-				description: 'While transcribing ancient texts, you and another scribe discovered a shelf of long-forgotten books. At your suggestion, your companion started work on one and vanished along with the tome. Your guilt drove you to seek out your friend and prevent others from falling to similar dangers.'
+				name: 'Паперова провина',
+				description: 'Під час переписування стародавніх текстів ви з іншим писарем знайшли полицю давно забутих книг. За вашою порадою товариш узявся за одну з них і зник разом із томом. Почуття провини змусило вас шукати друга й не дати іншим потрапити в подібну небезпеку.'
 			},
 			{
 				id: 'career-sage-ii-5',
-				name: 'Unforeseen Futures',
-				description: 'In your pursuit of ancient knowledge, you discovered a prophecy that has yet to come to pass. And that prophecy involves someone who might be … you. Since your discovery, strange dreams have plagued you, driving you to seek out your destiny.'
+				name: 'Непередбачені майбуття',
+				description: 'У пошуках стародавніх знань ви відкрили пророцтво, яке ще не здійснилося. І це пророцтво стосується когось, хто може бути… вами. Відтоді вас переслідують дивні сни, що спонукають шукати свою долю.'
 			},
 			{
 				id: 'career-sage-ii-6',
-				name: 'Vanishing',
-				description: 'At first you thought it was your imagination, and you brushed off the disappearance of random sentences in historical books. Then as the books changed to entirely blank pages, the disappearances became difficult to ignore, particularly those involving ancient or critical text. Driven by the desire to preserve knowledge, you have made it your purpose to restore and reverse those vanishing texts before they forever disappear.'
+				name: 'Зникнення',
+				description: 'Спочатку ви думали, що це уява, й не звертали уваги на зникнення випадкових речень у хроніках. Але коли книги перетворилися на порожні сторінки, і особливо коли зникали давні чи важливі тексти, це стало важко ігнорувати. Бажання зберегти знання стало вашою метою — відновити й повернути зникаючі тексти, поки вони не зникли назавжди.'
 			}
 		],
 		selected: null,

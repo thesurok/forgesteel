@@ -7,38 +7,38 @@ import { FactoryLogic } from '@/logic/factory-logic';
 
 export const wodeElf: Ancestry = {
 	id: 'ancestry-wode-elf',
-	name: 'Elf (wode)',
-	description: 'Children of the sylvan celestials and masters of the elf-haunted forests called wodes, wode elves see all forests as their domain by birthright. They know and enjoy their reputation among humans for snatching children who wander too far into the woods. Humans should fear the trees.',
+	name: 'Ельф (вуд)',
+	description: 'Діти лісових небожителів і господарі лісів, які називаються вудами, вудські ельфи вважають усі ліси своєю спадщиною. Вони знають і насолоджуються своєю репутацією серед людей за викрадення дітей, які заходять занадто далеко в ліс. Люди повинні боятися дерев.',
 	features: [
 		FactoryLogic.feature.create({
 			id: 'wode-elf-feature-1',
-			name: 'Wode Elf Glamor',
-			description: 'You can magically alter your appearance to better blend in with your surroundings. You gain an edge on tests made to hide and sneak, and tests made to search for you while you are hidden take a bane.'
+			name: 'Вудська ельфійська чарівність',
+			description: 'Ви можете магічно змінювати свою зовнішність, щоб краще зливатися з оточенням. Ви отримуєте перевагу на випробуваннях, зроблених для приховування та крадіжки, а випробування, зроблені для пошуку вас, поки ви приховані, отримують шкоду.'
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'wode-elf-feature-2',
-			name: 'Wode Elf Traits',
+			name: 'Риси вудського ельфа',
 			options: [
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'wode-elf-feature-2-1',
-						name: 'Forest Walk',
-						description: 'You can shift into and while within difficult terrain.'
+						name: 'Лісова хода',
+						description: 'Ви можете зміщуватися в і під час перебування в складній місцевості.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'wode-elf-feature-2-2',
-						name: 'Revisit Memory',
-						description: 'Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.'
+						name: 'Повернення до спогадів',
+						description: 'Доступ до спогадів для вас такий же легкий, як і життя в теперішньому. Ви отримуєте перевагу на випробуваннях, зроблених для згадування знань.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.createSpeed({
 						id: 'wode-elf-feature-2-3',
-						name: 'Swift',
+						name: 'Швидкий',
 						speed: 6
 					}),
 					value: 1
@@ -46,8 +46,8 @@ export const wodeElf: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createSaveThreshold({
 						id: 'wode-elf-feature-2-4',
-						name: 'Otherworldly Grace',
-						description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+						name: 'Інша світова грація',
+						description: 'Ваше ельфійське тіло та розум не можуть бути стримані надовго. Коли ви робите рятувальний кидок, ви успішно проходите на результаті 5 або вище.',
 						value: 5
 					}),
 					value: 2
@@ -56,20 +56,20 @@ export const wodeElf: Ancestry = {
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'wode-elf-feature-2-5',
-							name: 'The Wode Defends',
-							description: 'Thorny vines erupt into existence and attempt to bind your foe.',
+							name: 'Вуд захищається',
+							description: 'Колючі лози з’являються і намагаються зв’язати вашого ворога.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
-							target: 'One creature',
+							keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+							distance: [FactoryLogic.distance.createRanged(10)],
+							target: 'Одна істота',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [ Characteristic.Might, Characteristic.Agility ],
-										tier1: '2 + M or A damage; A < [weak] slowed (save ends)',
-										tier2: '3 + M or A damage; A < [average] slowed (save ends)',
-										tier3: '5 + M or A damage; A < [strong] restrained (save ends)'
+										characteristic: [Characteristic.Might, Characteristic.Agility],
+										tier1: '2 + С або Л шкоди; Л < [слабкий] уповільнений (рят. кидок закінчує)',
+										tier2: '3 + С або Л шкоди; Л < [середній] уповільнений (рят. кидок закінчує)',
+										tier3: '5 + С або Л шкоди; Л < [сильний] сковування (рят. кидок закінчує)'
 									})
 								)
 							]
@@ -80,8 +80,8 @@ export const wodeElf: Ancestry = {
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'wode-elf-feature-2-6',
-						name: 'Quick and Brutal',
-						description: 'Whenever you score a critical hit, you can take an additional main action and an additional move action instead of just a main action.'
+						name: 'Швидкий і жорстокий',
+						description: 'Коли ви завдаєте критичного удару, ви можете виконати додаткову основну дію та додаткову дію переміщення замість лише основної дії.'
 					}),
 					value: 1
 				}
@@ -90,5 +90,5 @@ export const wodeElf: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Wode Elf', 'Wilderness, bureaucratic, martial.', CultureType.Ancestral, EnvironmentData.wilderness, OrganizationData.bureaucratic, UpbringingData.martial, 'Yllyric')
+	culture: FactoryLogic.createCulture('Вудський ельф', 'Дика природа, бюрократичний, військовий.', CultureType.Ancestral, EnvironmentData.wilderness, OrganizationData.bureaucratic, UpbringingData.martial, 'Іллірик')
 };

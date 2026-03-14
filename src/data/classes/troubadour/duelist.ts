@@ -14,7 +14,7 @@ export const duelist: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '1NhlI9WCQUCKkX0u',
-					selected: [ 'Gymnastics' ]
+					selected: ['Gymnastics']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,11 +22,11 @@ export const duelist: SubClass = {
 						name: 'Acrobatics',
 						description: 'Folks love a good tumble.',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 						target: 'Self and each ally in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one test made to jump, tumble, or climb as part of their movement before the end of their turn.')
+							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, може автоматично отримати результат 3-го рівня в одному випробуванні на стрибок, перекид або лазіння як частину свого переміщення до кінця свого ходу.')
 						]
 					})
 				}),
@@ -36,11 +36,11 @@ export const duelist: SubClass = {
 						name: 'Star Power',
 						description: 'Your years of practicing fencing and dancing pay off on the battlefield.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Self',
 						cost: 1,
 						sections: [
-							FactoryLogic.createAbilitySectionText('You gain a +2 bonus to speed until the end of your turn. Additionally, the next power roll you make this turn can’t have an outcome lower than tier 2.'),
+							FactoryLogic.createAbilitySectionText('Ви отримуєте +2 до швидкості до кінця свого ходу. Крім того, наступний кидок сили, який ви зробите цього ходу, не може мати результат нижче 2-го рівня.'),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'You gain a +4 bonus to speed instead.'
 							})
@@ -53,11 +53,11 @@ export const duelist: SubClass = {
 						name: 'Riposte',
 						description: '“I’d have brought treats had I known I’d be fighting a dog.”',
 						type: FactoryLogic.type.createTrigger('The target takes damage from a melee strike.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Self or one ally',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target makes a free strike against the creature who made the triggering strike.')
+							FactoryLogic.createAbilitySectionText('Ціль робить безкоштовний удар по істоті, яка завдала тригерного удару.')
 						]
 					})
 				})
@@ -77,12 +77,12 @@ export const duelist: SubClass = {
 									name: 'Classic Chandelier Stunt',
 									description: 'Audiences love this bit.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Self and one willing ally',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Each target can shift up to 5 squares, including vertically, but must end this movement adjacent to the other target and on solid ground. Each target can then make a melee free strike that deals extra damage equal to twice their highest characteristic score.')
+										FactoryLogic.createAbilitySectionText('Кожна ціль може зміститися до 5 клітинок, включно по вертикалі, але має завершити це переміщення поруч з іншою ціллю і на твердій поверхні. Потім кожна ціль може зробити ближній безкоштовний удар, який завдає додаткової шкоди, що дорівнює подвійному значенню їхньої найвищої характеристики.')
 									]
 								})
 							}),
@@ -95,20 +95,20 @@ export const duelist: SubClass = {
 									name: 'En Garde!',
 									description: 'Wait, it’s … Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '7 + A damage',
 												tier2: '11 + A damage',
 												tier3: '16 + A damage'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('The target can make a melee free strike against you. If they do, you can make a melee free strike against the target.')
+										FactoryLogic.createAbilitySectionText('Ціль може зробити ближній безкоштовний удар по вам. Якщо вона це робить, ви можете зробити ближній безкоштовний удар по цілі.')
 									]
 								})
 							}),
@@ -155,11 +155,11 @@ competition with that creature. The chosen creature also has a double edge on po
 									name: 'We Can’t Be Upstaged!',
 									description: 'Swordplay so graceful it looks like you all practiced this.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 									target: 'Self and each ally in the area',
 									sections: [
-										FactoryLogic.createAbilitySectionText('While this performance is active, a target who starts their turn in the area gains a bonus to the distance they can shift equal to your Presence score until the end of their turn.')
+										FactoryLogic.createAbilitySectionText('Поки цей виступ активний, ціль, яка починає свій хід у зоні, отримує бонус до дистанції зміщення, що дорівнює вашому показнику Присутності, до кінця свого ходу.')
 									]
 								})
 							}),
@@ -183,14 +183,14 @@ competition with that creature. The chosen creature also has a double edge on po
 									name: 'Blood on the Stage',
 									description: 'It’s love and blood or drama and blood. Either way, there’s always blood.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature or object',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '12 + A damage; M < [weak], bleeding (save ends)',
 												tier2: '18 + A damage; M < [average], bleeding (save ends)',
 												tier3: '24 + A damage; bleeding (EoT), or if M < [strong], bleeding (save ends)'
@@ -208,12 +208,12 @@ competition with that creature. The chosen creature also has a double edge on po
 									name: 'Fight Choreography',
 									description: 'You and your partner make a flashy show of derring-do, then get back to your corners.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You and the target each make a melee free strike that targets each enemy within 3 squares of either of you, dividing the enemies between each of you. You choose which enemies your free strike targets and which enemies the target creature’s free strike targets. You then slide the target 5 squares, ignoring stability.')
+										FactoryLogic.createAbilitySectionText('Ви і ціль кожен робите ближній безкоштовний удар, який цілить у кожного ворога в межах 3 клітинок від кожного з вас, розподіляючи ворогів між собою. Ви обираєте, яких ворогів цілить ваш удар, а яких — удар цільової істоти. Потім ви зсуваєте ціль на 5 клітинок, ігноруючи стійкість.')
 									]
 								})
 							}),
@@ -253,14 +253,14 @@ Additionally, when your named signature ability is the last ability you use in a
 									name: 'Expert Fencer',
 									description: 'If you can land the strike, the crowd goes wild.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(3) ],
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(3)],
 									target: 'One creature or object',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '15 + A damage',
 												tier2: '21 + A damage',
 												tier3: '28 + A damage; M < [strong], bleeding (save ends)'
@@ -278,15 +278,15 @@ Additionally, when your named signature ability is the last ability you use in a
 									name: 'Renegotiated Contract',
 									description: 'No, no. You don’t die until the sequel.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Add your current Stamina to your target’s current Stamina, then you have half that total Stamina and the target has the remainder. If either of you would gain more Stamina this way than their Stamina maximum, the difference in Stamina between what that creature would gain and their maximum is gained by the other creature. Neither of you can gain more Stamina than your maximum this way. You then make a power roll.'),
+										FactoryLogic.createAbilitySectionText('Додайте вашу поточну Витривалість до поточної Витривалості цілі, потім ви маєте половину цієї суми, а ціль — залишок. Якщо хтось із вас отримує більше Витривалості, ніж його максимум, різницю отримує інша істота. Жоден із вас не може отримати більше Витривалості, ніж його максимум, цим способом. Потім ви робите кидок сили.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: 'You and the target can each end one effect on yourselves that is ended by a saving throw or that ends at the end of your turns.',
 												tier2: 'You and the target can end any effects on yourselves that are ended by a saving throw or that end at the end of your turns.',
 												tier3: 'You can choose any of the current effects on you and the target that are ended by a saving throw or that end at the end of your turns, apply the chosen effects to the target, and end the rest.'

@@ -12,23 +12,23 @@ export const CharacteristicsComponent = (props: Props) => {
 	return (
 		<div className='characteristics'>
 			<div className='characteristic'>
-				<label><span className='symbol'>M</span>ight</label>
+				<label><span className='symbol'>С</span>ила</label>
 				<div className='value'><span>{SheetFormatter.addSign(sheet.might)}</span></div>
 			</div>
 			<div className='characteristic'>
-				<label><span className='symbol'>A</span>gility</label>
+				<label><span className='symbol'>Л</span>овкість</label>
 				<div className='value'><span>{SheetFormatter.addSign(sheet.agility)}</span></div>
 			</div>
 			<div className='characteristic'>
-				<label><span className='symbol'>R</span>eason</label>
+				<label><span className='symbol'>Р</span>озум</label>
 				<div className='value'><span>{SheetFormatter.addSign(sheet.reason)}</span></div>
 			</div>
 			<div className='characteristic'>
-				<label><span className='symbol'>I</span>ntuition</label>
+				<label><span className='symbol'>І</span>нтуїція</label>
 				<div className='value'><span>{SheetFormatter.addSign(sheet.intuition)}</span></div>
 			</div>
 			<div className='characteristic'>
-				<label><span className='symbol'>P</span>resence</label>
+				<label><span className='symbol'>П</span>рисутність</label>
 				<div className='value'><span>{SheetFormatter.addSign(sheet.presence)}</span></div>
 			</div>
 		</div>

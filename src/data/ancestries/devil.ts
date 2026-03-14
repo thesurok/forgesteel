@@ -6,41 +6,41 @@ import { SkillList } from '@/enums/skill-list';
 
 export const devil: Ancestry = {
 	id: 'ancestry-devil',
-	name: 'Devil',
-	description: 'The native ancestry of the Seven Cities of Hell, devils are humanoids with red or blue skin expressed in a wide variety of hues, from bright crimson to deep purple. Each devil is born with some hellmark - horns, a tail, cloven hooves, a forked tongue, fanged incisors, or even wings.',
+	name: 'Диявол',
+	description: 'Рідна раса Семи Міст Пекла — дияволи — гуманоїди з червоною або синьою шкірою у різних відтінках: від яскравої кармінної до глибокого фіолетового. Кожен диявол народжується з якимось пекельним знаком — рогами, хвостом, розщепленими копитами, роздвоєним язиком, іклами або навіть крилами.',
 	features: [
 		FactoryLogic.feature.createMultiple({
 			id: 'devil-feature-1',
-			name: 'Silver Tongue',
+			name: 'Срібний язик',
 			features: [
 				FactoryLogic.feature.create({
 					id: 'devil-feature-1a',
-					name: 'Silver Tongue',
-					description: 'Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You gain an edge on tests when attempting to discover an NPC’s motivations and pitfalls during a negotiation.'
+					name: 'Срібний язик',
+					description: 'Ваша вроджена магія дозволяє змінювати сприйняття ваших слів, щоб краще розпізнати людей і переконати їх бачити речі по-вашому. Ви отримуєте перевагу на перевірках, коли намагаєтеся зʼясувати мотивації й підводні камені NPC під час переговорів.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'devil-feature-1b',
-					listOptions: [ SkillList.Interpersonal ]
+					listOptions: [SkillList.Interpersonal]
 				})
 			]
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'devil-feature-2',
-			name: 'Devil Traits',
+			name: 'Риси диявола',
 			options: [
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'devil-feature-2-1',
-						name: 'Barbed Tail',
-						description: 'Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee strike, you can deal extra damage with the strike equal to your highest characteristic score.'
+						name: 'Шипастий хвіст',
+						description: 'Гострий хвіст дозволяє підкреслювати ваші дії. Раз за раунд, коли ви завдаєте удару в ближньому бою, ви можете завдати додаткової шкоди, рівної вашому найвищому значенню характеристики.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.createSpeed({
 						id: 'devil-feature-2-2',
-						name: 'Beast Legs',
-						description: 'Your powerful legs improve your speed. Your Speed is 6.',
+						name: 'Звірячі ноги',
+						description: 'Потужні ноги підвищують вашу швидкість. Ваша швидкість — 6.',
 						speed: 6
 					}),
 					value: 1
@@ -49,11 +49,11 @@ export const devil: Ancestry = {
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'devil-feature-2-3',
-							name: 'Glowing Eyes',
-							description: 'Your eyes are a solid, vibrant color that flares to show your excitement or rage.',
+							name: 'Сяючі очі',
+							description: 'Ваші очі мають рівномірний яскравий колір, який спалахує, коли ви збуджені або розлючені.',
 							type: FactoryLogic.type.createTrigger('You take damage from a creature'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Whenever you take damage from a creature, you can use a triggered action to deal that creature psychic damage equal to 1d10 + your level.')
+								FactoryLogic.createAbilitySectionText('Коли ви отримуєте шкоду від істоти, ви можете використати тригерну дію, щоб завдати їй психічної шкоди в розмірі 1d10 + вашого рівня.')
 							]
 						})
 					}),
@@ -62,16 +62,16 @@ export const devil: Ancestry = {
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'devil-feature-2-4',
-						name: 'Hellsight',
-						description: 'Your eyes let you see through darkness, fog, and other obscuring effects. You don’t take a bane on strikes made against creatures with concealment.'
+						name: 'Пекельний зір',
+						description: 'Ваші очі дозволяють бачити крізь темряву, туман та інші ефекти, що заважають огляду. Ви не отримуєте штрафу до ударів по істотах, що перебувають у прихованні.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.createSaveThreshold({
 						id: 'devil-feature-2-5',
-						name: 'Impressive Horns',
-						description: 'Your cherished horns are larger than your average devil’s, and a hardened representation of your force of will. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+						name: 'Вражаючі роги',
+						description: 'Ваші роги більші за середні й є виявом вашої сили волі. Коли ви робите рят. кидок, він вважається успішним при результаті 5 або більше.',
 						value: 5
 					}),
 					value: 2
@@ -79,16 +79,16 @@ export const devil: Ancestry = {
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'devil-feature-2-6',
-						name: 'Prehensile Tail',
-						description: 'Your prehensile tail allows you to challenge foes on all sides. You can’t be flanked.'
+						name: 'Хваткий хвіст',
+						description: 'Ваш хваткий хвіст дозволяє протистояти ворогам з усіх боків. Вас неможливо фланкувати.',
 					}),
 					value: 2
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'devil-feature-2-7',
-						name: 'Wings',
-						description: 'You possess wings powerful enough to take you airborne. While using your wings to fly, you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to fly at 3rd level or lower, you have damage weakness 5.'
+						name: 'Крила',
+						description: 'Ви маєте крила, достатньо потужні, щоб підняти вас у повітря. Коли ви летите, ви можете залишатися в повітрі протягом числа раундів, рівного значенню вашої характеристики С (мінімум 1 раунд), перш ніж впасти. Якщо ви летите на рівні 3 або нижче, у вас є слабкість до шкоди 5.'
 					}),
 					value: 2
 				}
@@ -97,5 +97,5 @@ export const devil: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Devil', 'Urban, bureaucratic, academic.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.academic, 'Anjali')
+	culture: FactoryLogic.createCulture('Диявол', 'Міський, бюрократичний, академічний.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.academic, 'Anjali')
 };

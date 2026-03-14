@@ -1,19 +1,19 @@
 export enum ConditionType {
-	Custom = 'Custom Condition',
-	Quick = 'Quick Condition',
-	Bleeding = 'Bleeding',
-	Dazed = 'Dazed',
-	Frightened = 'Frightened',
-	Grabbed = 'Grabbed',
-	Prone = 'Prone',
-	Restrained = 'Restrained',
-	Slowed = 'Slowed',
-	Taunted = 'Taunted',
-	Weakened = 'Weakened'
+	Custom = 'Незвичайний стан',
+	Quick = 'Швидкий стан',
+	Bleeding = 'Кровотеча',
+	Dazed = 'Приголомшений',
+	Frightened = 'Зляканий',
+	Grabbed = 'Схоплений',
+	Prone = 'Розпластаний',
+	Restrained = 'Cкутий',
+	Slowed = 'Сповільнений',
+	Taunted = 'Спровокований',
+	Weakened = 'Ослаблений'
 }
 
 export enum ConditionEndType {
-	EndOfTurn = 'End of turn',
-	SaveEnds = 'Save ends',
-	UntilRemoved = 'Until removed'
+	EndOfTurn = 'Кінець ходу',
+	SaveEnds = 'Рят. кидок закінчує',
+	UntilRemoved = 'Поки не буде знято'
 }

@@ -6,37 +6,37 @@ import { FeatureField } from '@/enums/feature-field';
 
 export const human: Ancestry = {
 	id: 'ancestry-human',
-	name: 'Human',
-	description: 'Humans belong to the world in a way the other speaking peoples do not. You can sense the presence of the supernatural—that … oily smell in the air, as I’ve heard it described. And the presence of deathless causes the hairs on the back of your neck to stand up. Or why do you think graveyards affect you so? Whatever magic is, its grip on you is light. Whatever drives the deathless, your nature rebels against it.',
+	name: 'Людина',
+	description: 'Люди належать до світу так, як інші розмовляючі народи — ні. Ви можете відчувати присутність надприродного — той … маслянистий запах у повітрі, як я чув, його описують. А присутність безсмертних змушує волосся на вашій шиї ставати дибки. Або чому, як ви думаєте, кладовища так на вас впливають? Що б не було магією, її вплив на вас легкий. Що б не керувало безсмертними, ваша природа повстає проти цього.',
 	features: [
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'human-feature-1',
-				name: 'Detect the Supernatural',
-				description: 'You open your awareness to detect supernatural creatures and phenomena.',
+				name: 'Виявлення надприродного',
+				description: 'Ви відкриваєте свою свідомість, щоб виявити надприродних істот і явища.',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('Until the end of your next turn, you know the location of any supernatural object, undead, construct, or creature from another world within 5 squares, even if you don’t have line of effect to that object or creature. You know if you’re detecting an item or a creature, and you know the nature of any creature you detect.')
+					FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу ви знаєте місцезнаходження будь-якого надприродного об’єкта, нежиті, конструкта або істоти з іншого світу в межах 5 клітинок, навіть якщо у вас немає лінії впливу на цей об’єкт або істоту. Ви знаєте, чи виявляєте ви предмет або істоту, і знаєте природу будь-якої істоти, яку ви виявляєте.')
 				]
 			})
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'human-feature-2',
-			name: 'Human Traits',
+			name: 'Риси людини',
 			options: [
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'human-feature-2-1',
-						name: 'Can\'t Take Hold',
-						description: 'Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary difficult terrain created by magic and psionic abilities. Additionally, when you are force moved by a magic or psionic ability, you can reduce the forced movement distance by 1.'
+						name: 'Не піддається впливу',
+						description: 'Ваш зв’язок із природним світом дозволяє вам протистояти певним надприродним ефектам. Ви ігноруєте тимчасову складну місцевість, створену магічними та псіонічними здібностями. Крім того, коли вас змушують рухатися магічною або псіонічною здатністю, ви можете зменшити відстань примусового переміщення на 1.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'human-feature-2-2',
-						name: 'Perseverence',
-						description: 'Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.'
+						name: 'Наполегливість',
+						description: 'Здаватися — це для інших людей. Ви отримуєте перевагу на випробуваннях, зроблених за допомогою навички Витривалість. Крім того, коли ви уповільнені, ваша швидкість зменшується до 3 замість 2.'
 					}),
 					value: 1
 				},
@@ -44,11 +44,11 @@ export const human: Ancestry = {
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'human-feature-2-3',
-							name: 'Resist the Unnatural',
-							description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-							type: FactoryLogic.type.createTrigger('You take damage that isn’t untyped'),
+							name: 'Протистояти неприродному',
+							description: 'Ваша інстинктивна стійкість захищає вас від травм, які виходять за межі звичайного.',
+							type: FactoryLogic.type.createTrigger('Ви отримуєте шкоду, яка не є нетиповою'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You halve the damage.')
+								FactoryLogic.createAbilitySectionText('Ви зменшуєте шкоду наполовину.')
 							]
 						})
 					}),
@@ -58,11 +58,11 @@ export const human: Ancestry = {
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'human-feature-2-4',
-							name: 'Determination',
-							description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
+							name: 'Рішучість',
+							description: 'Толерантність до болю та стресу дозволяє вам долати складні ситуації.',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You immediately end one of the frightened, slowed, or weakened conditions on yourself.')
+								FactoryLogic.createAbilitySectionText('Ви негайно припиняєте один із станів: переляк, уповільнення або ослаблення.')
 							]
 						})
 					}),
@@ -71,8 +71,8 @@ export const human: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createBonus({
 						id: 'human-feature-2-5',
-						name: 'Staying Power',
-						description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
+						name: 'Стійкість',
+						description: 'Ваша людська фізіологія дозволяє вам битися, бігати та не спати довше за інших.',
 						field: FeatureField.Recoveries,
 						value: 2
 					}),
@@ -83,5 +83,5 @@ export const human: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Human', 'Urban, communal, labor.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.labor, 'Vaslorian')
+	culture: FactoryLogic.createCulture('Людина', 'Міський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.labor, 'Васлоріан')
 };

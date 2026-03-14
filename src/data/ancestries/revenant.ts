@@ -8,13 +8,13 @@ import { FactoryLogic } from '@/logic/factory-logic';
 
 export const revenant: Ancestry = {
 	id: 'ancestry-revenant',
-	name: 'Revenant',
-	description: 'The dead walk among us. Some of them are happier about it than others. Unlike the necromantic rituals that produce wights and wraiths and zombies, revenants rise from the grave through a combination of an unjust death and a burning desire for vengeance. Creatures sustained on pure will, they have no need of food or water or air - and, unlike their zombified cousins, they retain all their memories and personality from life.',
+	name: 'Ревенант',
+	description: 'Мертві ходять серед нас. Деякі з них раді цьому більше, ніж інші. На відміну від некромантичних ритуалів, які створюють упирів, привидів і зомбі, ревенанти піднімаються з могили через поєднання несправедливої смерті та палкого бажання помсти. Істоти, які підтримуються чистою волею, не потребують їжі, води чи повітря — і, на відміну від своїх зомбіфікованих родичів, вони зберігають усі свої спогади та особистість із життя.',
 	features: [
 		FactoryLogic.feature.createAncestry({
 			id: 'revenant-feature-1',
-			name: 'Former Life',
-			description: 'Choose the ancestry you were before you died. Your size is that ancestry’s size and your speed is 5. Unless you select one of the Previous Life traits (see below), you don’t receive any other ancestral traits from your original ancestry.'
+			name: 'Минуле Життя',
+			description: 'Виберіть походження, яке ви мали до смерті. Ваш розмір відповідає розміру цього походження, а ваша швидкість становить 5. Якщо ви не виберете одну з рис Попереднього Життя (див. нижче), ви не отримаєте жодних інших рис походження від вашого початкового походження.'
 		}),
 		FactoryLogic.feature.createDamageModifier({
 			id: 'revenant-feature-2',
@@ -28,12 +28,12 @@ export const revenant: Ancestry = {
 		}),
 		FactoryLogic.feature.create({
 			id: 'revenant-feature-3',
-			name: 'Tough But Withered',
-			description: 'When your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.'
+			name: 'Міцний, але Зівʼялий',
+			description: 'Коли ваша Витривалість досягає негативного значення вашого значення захеканості, ви стаєте інертними замість того, щоб померти. Ви падаєте долілиць і не можете встати. Ви продовжуєте спостерігати за своїм оточенням, але не можете говорити, виконувати основні дії, маневри, рухи чи тригерні дії. Поки ви інертні таким чином, якщо ви отримуєте будь-яку шкоду від вогню, ваше тіло знищується, і ви помираєте. В іншому випадку через 12 годин ви відновлюєте Витривалість, рівну вашому значенню відновлення.'
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'revenant-feature-4',
-			name: 'Revenant Traits',
+			name: 'Риси Ревенанта',
 			options: [
 				{
 					feature: FactoryLogic.feature.createAncestryFeature({
@@ -48,17 +48,17 @@ export const revenant: Ancestry = {
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'revenant-feature-4-2',
-						name: 'Undead Influence',
-						description: 'Your supernatural gifts allow you to influence other undead. You gain an edge on Reason, Intuition, and Presence tests made to interact with undead creatures.'
+						name: 'Вплив Нежиті',
+						description: 'Ваші надприродні дари дозволяють вам впливати на інших неживих. Ви отримуєте перевагу на випробування Розуму, Інтуїції та Присутності, зроблені для взаємодії з істотами нежиті.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.createConditionImmunity({
 						id: 'revenant-feature-4-3',
-						name: 'Bloodless',
-						description: 'For you, an open wound is indistinguishable from a scratch.',
-						conditions: [ ConditionType.Bleeding ]
+						name: 'Безкровний',
+						description: 'Для вас відкрита рана не відрізняється від подряпини.',
+						conditions: [ConditionType.Bleeding]
 					}),
 					value: 2
 				},
@@ -75,36 +75,36 @@ export const revenant: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createMultiple({
 						id: 'revenant-feature-4-5',
-						name: 'Vengeance Mark',
+						name: 'Мітка Помсти',
 						features: [
 							FactoryLogic.feature.create({
 								id: 'revenant-feature-4-5-1',
-								name: 'Vengeance Mark',
+								name: 'Мітка Помсти',
 								description: `
-As a maneuver, you place a magic sigil on a creature within 10 squares of you. When you place a sigil, you can decide where it appears on the creature’s body, and whether the sigil is visible to only you or to all creatures.
+Як маневр, ви розміщуєте магічний сигіл на істоті в межах 10 клітинок від вас. Коли ви розміщуєте сигіл, ви можете вирішити, де він зʼявиться на тілі істоти, і чи буде сигіл видимим лише для вас або для всіх істот.
 
-You always know the direction to the exact location of a creature who bears one of your sigils and is on the same world. You can have an active number of sigils equal to your level, and can remove a sigil from a creature at will (no action required). If you already have the maximum number of sigils activated and you place a new one, your oldest sigil disappears with no other effect.`
+Ви завжди знаєте напрямок до точного місця розташування істоти, яка несе один із ваших сигілів і знаходиться на тому ж світі. Ви можете мати активну кількість сигілів, рівну вашому рівню, і можете видалити сигіл з істоти за бажанням (дія не потрібна). Якщо у вас уже є максимальна кількість активованих сигілів і ви розміщуєте новий, ваш найстаріший сигіл зникає без інших наслідків.`
 							}),
 							FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'revenant-feature-4-5-2',
-									name: 'Detonate Sigil',
-									description: 'A magic sigil you placed on a creature explodes with energy.',
+									name: 'Детонація Сигілу',
+									description: 'Магічний сигіл, який ви розмістили на істоті, вибухає енергією.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature bearing your sigil',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота, що несе ваш сигіл',
 									cost: 'signature',
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-												tier1: '3 + R, I, or P damage; slide 1',
-												tier2: '3 + R, I, or P damage; slide 2',
-												tier3: '8 + R, I, or P damage; slide 3'
+												characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+												tier1: '3 + Р, І або П ушкодження; зсув 1',
+												tier2: '3 + Р, І або П ушкодження; зсув 2',
+												tier3: '8 + Р, І або П ушкодження; зсув 3'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('The sigil disappears from the creature.')
+										FactoryLogic.createAbilitySectionText('Сигіл зникає з істоти.')
 									]
 								})
 							})

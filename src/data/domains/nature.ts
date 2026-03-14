@@ -7,8 +7,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const nature: Domain = {
 	id: 'domain-nature',
-	name: 'Nature',
-	description: 'The Nature domain.',
+	name: 'Природа',
+	description: 'Сфера Природи.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -19,20 +19,20 @@ export const nature: Domain = {
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
 								id: 'domain-nature-1-1',
-								name: 'Faithful Friend',
-								description: 'An animal spirit is drawn to you, sharing their senses and serving you faithfully.',
+								name: 'Вірний друг',
+								description: 'До вас приходить дух тварини, ділиться своїми відчуттями й вірно служить вам.',
 								type: FactoryLogic.type.createMain(),
-								keywords: [ AbilityKeyword.Magic ],
-								distance: [ FactoryLogic.distance.createSelf() ],
-								target: 'Self',
+								keywords: [AbilityKeyword.Magic],
+								distance: [FactoryLogic.distance.createSelf()],
+								target: 'Ви',
 								sections: [
-									FactoryLogic.createAbilitySectionText('You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has speed 5 and can fly, but can’t physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can’t be reduced in any way.')
+									FactoryLogic.createAbilitySectionText('Ви викликаєте духа у формі будь-якої тварини, яку бачили. Нематеріальна тварина має швидкість 5 і може літати, але не може фізично взаємодіяти зі світом. Поки ви перебуваєте в межах 10 клітинок від духа, ви автоматично відчуваєте все, що відчувала б ця тварина, а також свої власні відчуття. Ви можете відпустити духа будь-коли (без дії). Якщо дух отримує будь-яку шкоду, він зникає, а ви отримуєте 1d10 психічної шкоди, яку не можна зменшити жодним чином.')
 								]
 							})
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-nature-1-2',
-							listOptions: [ SkillList.Exploration ]
+							listOptions: [SkillList.Exploration]
 						})
 					]
 				})
@@ -44,20 +44,20 @@ export const nature: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-nature-2',
-						name: 'Nature Judges Thee',
-						description: 'Mystical thorned vines appear at your bidding and bind your foes.',
+						name: 'Суд Природи',
+						description: 'Містичні колючі лози зʼявляються за вашим наказом і сковують ворогів.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '2 damage; A < [weak], restrained (save ends)',
-									tier2: '3 damage; A < [average], restrained (save ends)',
-									tier3: '7 damage; A < [strong], restrained (save ends)'
+									characteristic: [Characteristic.Intuition],
+									tier1: '2 шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
+									tier2: '3 шкоди; Л < [середній], сковування (рят. кидок закінчує)',
+									tier3: '7 шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -74,8 +74,8 @@ export const nature: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-nature-4',
-					name: 'Wode Road',
-					description: 'As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your Intuition score. Whenever you touch any tree in your network, you can use a main action to teleport yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your distance from it, including across different worlds (no action required).'
+					name: 'Лісова дорога',
+					description: 'Основною дією ви торкаєтеся живого дерева й робите його частиною божественної мережі переміщення. Ви можете підтримувати кількість дерев у мережі, що дорівнює вашій Інтуїції. Коли ви торкаєтеся будь-якого дерева з мережі, ви можете основною дією телепортувати себе й будь-яких бажаючих істот у межах 10 клітинок до іншого дерева з мережі на тому ж світі. Якщо дерево з мережі гине, воно більше не є її частиною. Ви можете видалити дерево з мережі на будь-якій відстані, навіть між світами (без дії).'
 				})
 			]
 		},
@@ -89,20 +89,20 @@ export const nature: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-nature-6',
-						name: 'Spirit Stampede',
-						description: 'Animal spirits run through the battlefield, trampling your foes.',
+						name: 'Духовий табун',
+						description: 'Духи тварин мчать полем бою, топчучи ворогів.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 5 })],
+						target: 'Кожен ворог у зоні',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '5 damage; M < [weak], prone and can’t stand (save ends)',
-									tier2: '8 damage; M < [average], prone and can’t stand (save ends)',
-									tier3: '11 damage; M < [strong], prone and can’t stand (save ends)'
+									characteristic: [Characteristic.Intuition],
+									tier1: '5 шкоди; С < [слабкий], повалений і не може підвестися (рят. кидок закінчує)',
+									tier2: '8 шкоди; С < [середній], повалений і не може підвестися (рят. кидок закінчує)',
+									tier3: '11 шкоди; С < [сильний], повалений і не може підвестися (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -115,17 +115,17 @@ export const nature: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-nature-7',
-					name: 'Nature’s Bounty',
+					name: 'Щедроти Природи',
 					description: `
-When you finish a respite, you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
+Після завершення відпочинку ви можете приготувати магічну страву з місцевої флори для всіх супутників, які відпочивали з вами. Оберіть дві з наступних переваг для істот, які споживають страву:
 
-* Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different damage immunity each time.
-* Each creature gains 20 temporary Stamina.
-* Each creature gains a +1 bonus to speed.
-* Each creature gains a +1 bonus to saving throws.
-* Each creature gains an edge on tests made to influence other creatures.
+* Кожна істота отримує імунітет до кислоти, холоду, скверни, вогню, блискавки, отрути або звукової шкоди, що дорівнює вашому рівню. Ви можете обрати цю перевагу двічі, кожного разу для іншого типу шкоди.
+* Кожна істота отримує 20 тимчасової Витривалості.
+* Кожна істота отримує +1 до швидкості.
+* Кожна істота отримує +1 до рят. кидків.
+* Кожна істота отримує перевагу на випробування для впливу на інших істот.
 
-Each benefit lasts until the creature who gains it finishes another respite.`
+Кожна перевага триває, поки істота не завершить наступний відпочинок.`
 				})
 			]
 		},
@@ -139,24 +139,23 @@ Each benefit lasts until the creature who gains it finishes another respite.`
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-nature-9',
-						name: 'Thorn Cage',
-						description: 'Vines burst forth from the ground and bind your foe, slowly closing around them.',
+						name: 'Клітка з тернів',
+						description: 'Лози вириваються із землі й сковують ворога, поступово стискаючись навколо нього.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '10 + I damage; A < [weak], restrained (save ends)',
-									tier2: '15 + I damage; A < [average], restrained (save ends)',
-									tier3: '21 + I damage; A < [strong], restrained (save ends)'
+									characteristic: [Characteristic.Intuition],
+									tier1: '10 + І шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
+									tier2: '15 + І шкоди; Л < [середній], сковування (рят. кидок закінчує)',
+									tier3: '21 + І шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While restrained this way, the target takes 10 damage at the start of each of your turns.')
-
+							FactoryLogic.createAbilitySectionText('Поки ціль сковується цим ефектом, вона отримує 10 шкоди на початку кожного вашого ходу.')
 						]
 					})
 				})
@@ -169,17 +168,17 @@ Each benefit lasts until the creature who gains it finishes another respite.`
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that you or a creature within 10 squares takes acid, cold, fire, lightning, poison, or sonic damage',
+			trigger: 'Вперше під час сутички, коли ви або істота в межах 10 клітинок отримує шкоду від кислоти, холоду, вогню, блискавки, отрути або звуку',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'nature-default-1',
-			name: 'Nature Prayer Effect',
-			description: 'Vines whip up from the floor or ground within 10 squares, wrapping around a number of creatures of your choice equal to your Intuition score. You can slide each creature up to a number of squares equal to your Intuition score. The vines then fade away.',
+			name: 'Ефект молитви Природи',
+			description: 'Лози здіймаються з підлоги чи землі в межах 10 клітинок, обвиваючи обрану вами кількість істот, що дорівнює вашій Інтуїції. Ви можете пересунути кожну істоту на кількість клітинок, що дорівнює вашій Інтуїції. Потім лози зникають.',
 			tag: 'conduit-prayer'
 		})
 	]

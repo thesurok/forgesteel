@@ -36,7 +36,7 @@ export const DrawSteelSymbolText = (props: Props) => {
 		const results: (string | JSX.Element)[] = [];
 
 		let i = 0;
-		[ ...text.matchAll(regex) ].forEach(str => {
+		[...text.matchAll(regex)].forEach(str => {
 			const beforeMatch = text.slice(i, str.index);
 			i = str.index + str[0].length;
 			results.push(beforeMatch);
@@ -45,13 +45,13 @@ export const DrawSteelSymbolText = (props: Props) => {
 				const c = str[1].toLowerCase();
 				let check = str[2];
 				switch (str[2].toLowerCase()) {
-					case 'weak':
+					case 'слабка':
 						check = 'w';
 						break;
-					case 'average':
+					case 'середня':
 						check = 'v';
 						break;
-					case 'strong':
+					case 'сильна':
 						check = 's';
 						break;
 				}

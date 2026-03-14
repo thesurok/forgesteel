@@ -40,31 +40,23 @@ export const MarkdownReferenceCard = (props: MarkdownRefProps) => {
 export const MainActionsReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Main Actions</h2>
-			<p>Any creature can take the following main actions, in addition to those
-				listed in their stats:
-			</p>
+			<h2>Основні дії</h2>
+			<p>Кожна істота може виконувати такі основні дії, окрім тих, що вказані в її характеристиках:</p>
 			<ul className='actions'>
 				<li>
-					<strong>Charge:</strong> Move up to your speed in a straight line without shifting, and
-					can then make a melee free strike or use an ability with the Charge
-					keyword against a creature when you end your move.
+					<strong>Розгін (Charge):</strong> Рухайтесь по прямій до своєї швидкості без зрушення (shift), після чого можете виконати безкоштовний ближній удар або використати здібність з ключовим словом Charge проти істоти, коли закінчите рух.
 				</li>
 				<li>
-					<strong>Defend:</strong> All ability power rolls made against you have a double bane
-					until the start of your next turn. You gain no benefit from this action
-					while another creature is taunted by you.
+					<strong>Захист (Defend):</strong> Всі кидки здібностей, спрямовані проти вас, мають подвійне бане до початку вашого наступного ходу. Ви не отримуєте вигоди від цієї дії, якщо інша істота спровокована вами.
 				</li>
 				<li>
-					<strong>Free Strike:</strong> You make a free strike.
+					<strong>Безкоштовний удар (Free Strike):</strong> Ви виконуєте безкоштовний ближній удар.
 				</li>
 				<li>
-					<strong>Heal:</strong> Choose an adjacent creature who can spend a Recovery or
-					make a saving throw.
+					<strong>Лікування (Heal):</strong> Оберіть суміжну істоту, яка може витратити Відновлення або зробити рят. кидок.
 				</li>
 				<li>
-					<strong>Trade:</strong> You can convert your main action into a maneuver or move
-					action, allowing you to take two maneuvers or move actions on your turn.
+					<strong>Обмін (Trade):</strong> Ви можете перетворити основну дію на маневр або на дію руху, що дозволяє виконати два маневри або дві дії руху під час вашого ходу.
 				</li>
 			</ul>
 		</div>
@@ -74,19 +66,17 @@ export const MainActionsReferenceCard = () => {
 export const MoveActionsReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Move Actions</h2>
-			<p>Any creature can take the following move actions:</p>
+			<h2>Дії руху</h2>
+			<p>Кожна істота може виконувати такі дії руху:</p>
 			<ul className='actions'>
 				<li>
-					<strong>Advance:</strong> Move a number of squares up to your speed. You can break
-					up this movement with your maneuver and action however you wish.
+					<strong>Рух вперед (Advance):</strong> Переміститися на кількість клітинок до вашої швидкості. Ви можете розбити цей рух маневром і основною дією так, як забажаєте.
 				</li>
 				<li>
-					<strong>Disengage:</strong> Shift 1 square.
+					<strong>Відступ (Disengage):</strong> Виконати відступ (shift) на 1 клітинку.
 				</li>
 				<li>
-					<strong>Ride:</strong> Cause a mount you are riding to take the Advance move action.
-					A mount can only benefit from this once per round.
+					<strong>Верхова їзда (Ride):</strong> Змушувати сідло, на якому ви їдете, виконати дію Рух вперед (Advance). Одне сідло може скористатися цією дією лише раз за раунд.
 				</li>
 			</ul>
 		</div>
@@ -96,48 +86,41 @@ export const MoveActionsReferenceCard = () => {
 export const ManeuversReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Maneuvers</h2>
-			<p>Any creature can take the following maneuvers, in addition to those listed in their stats:</p>
+			<h2>Маневри</h2>
+			<p>Кожна істота може виконувати наступні маневри, окрім тих, що вказані в її характеристиках:</p>
 			<ul className='actions'>
 				<li>
-					<strong>Aid Attack:</strong> Choose an adjacent enemy. The next ability power roll
-					an ally makes against them before the start of your next turn has
-					an edge.
+					<strong>Допомога в атаці (Aid Attack):</strong> Оберіть суміжного ворога. Наступний кидок сили, який союзник зробить проти цього ворога до початку вашого наступного ходу, отримує перевагу (edge).
 				</li>
 				<li>
-					<strong>Catch Breath:</strong> Spend a Recovery.
+					<strong>Передих (Catch Breath):</strong> Витратити Відновлення.
 				</li>
 				<li>
-					<strong>Claw Dirt:</strong> You use the Claw Dirt ability.
+					<strong>Розкопати (Claw Dirt):</strong> Ви використовуєте здібність Claw Dirt.
 				</li>
 				<li>
-					<strong>Escape Grab:</strong> You use the Escape Grab ability while grabbed.
+					<strong>Вирватися з захоплення (Escape Grab):</strong> Ви використовуєте здібність Escape Grab, перебуваючи в захопленні.
 				</li>
 				<li>
-					<strong>Grab:</strong> You use the Grab ability.
+					<strong>Схоплення (Grab):</strong> Ви використовуєте здібність Grab.
 				</li>
 				<li>
-					<strong>Hide:</strong> You become hidden from creatures who aren’t observing you
-					while you have cover or concealment from them.
+					<strong>Сховатися (Hide):</strong> Ви стаєте прихованими від істот, які не спостерігають за вами, доки маєте прикриття або прихованість від них.
 				</li>
 				<li>
-					<strong>Knockback:</strong> You use the Knockback ability.
+					<strong>Відштовхування (Knockback):</strong> Ви використовуєте здібність Knockback.
 				</li>
 				<li>
-					<strong>Make or Assist a Test:</strong> Making or assisting a test is a maneuver in combat.
+					<strong>Зробити або допомогти у тесті (Make or Assist a Test):</strong> Виконання або допомога у тесті в бою вважається маневром.
 				</li>
 				<li>
-					<strong>Search for Hidden Creatures:</strong> Attempt to locate creatures hidden from you.
+					<strong>Пошук прихованих істот (Search for Hidden Creatures):</strong> Спроба знайти істот, прихованих від вас.
 				</li>
 				<li>
-					<strong>Stand Up:</strong> You stand up from prone, ending that condition.
-					Alternatively, you can use this maneuver to make an adjacent prone
-					creature stand up.
+					<strong>Встати (Stand Up):</strong> Ви встаєте з положення prone, завершуючи цей стан. Альтернативно, ви можете використати цей маневр, щоб підняти суміжну істоту, яка лежить.
 				</li>
 				<li>
-					<strong>Use Consumable:</strong> Unless otherwise noted in its description, you can use this
-					maneuver to activate a consumable treasure. A creature can use this maneuver to administer a
-					consumable treasure that benefits the user either to thelself or a willing adjacent creature.
+					<strong>Використати споживний предмет (Use Consumable):</strong> Якщо не вказано інше, ви можете використати цей маневр, щоб активувати споживний скарб. Істота може застосувати споживний скарб або до себе, або до суміжної охочої істоти.
 				</li>
 			</ul>
 		</div>
@@ -147,25 +130,32 @@ export const ManeuversReferenceCard = () => {
 export const EdgesBanesReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Edges and Banes</h2>
-			<p><strong>Edge:</strong> If you have a situational advantage (edge) on a power roll, the roll
-				gains +2.
+			<h2>Переваги і шкоди</h2>
+			<p>
+				<strong>Перевага (Edge):</strong> Ситуативна перевага дає кидку сили +2.
 			</p>
-			<p><strong>Double Edge:</strong> If you have two or more edges, the roll is one tier
-				higher instead.
+			<p>
+				<strong>Подвійна перевага (Double Edge):</strong> Дві або більше переваг змінюють рівень результату кидка на один вгору (наприклад, з Рівня 2 → Рівень 3).
 			</p>
-			<p><strong>Bane:</strong> If you have a situational disadvantage (bane) on a power roll, the
-				roll gains -2.
+			<p>
+				<strong>Шкода (Bane):</strong> Ситуативна шкода дає кидку сили −2.
 			</p>
-			<p><strong>Double Bane:</strong> If you have two or more banes, the roll is one tier
-				lower instead.
+			<p>
+				<strong>Подвійна шкода (Double Bane):</strong> Дві або більше шкоди змінюють рівень результату кидка на один вниз.
 			</p>
 			<ul>
-				<li>If you have an edge and a bane or a double edge and a double bane,
-					the roll is made normally without any edges or banes.
+				<li>
+					Переваги та шкоди взаємно компенсуються: одна перевага і одна шкода дають звичайний кидок без модифікаторів.
 				</li>
-				<li>If you have a double edge and a bane, the roll has one edge.</li>
-				<li>If you have a double bane and an edge, the roll has one bane.</li>
+				<li>
+					Якщо у вас є подвійна перевага і одна шкода, одна шкода скасовує одну перевагу, тож залишає одну перевагу (еквівалент однієї переваги).
+				</li>
+				<li>
+					Якщо у вас є подвійна шкода і одна перевага, одна перевага скасовує одну шкоду, тож залишається одна шкода (еквівалент одного бане).
+				</li>
+				<li>
+					У випадках складних комбінацій підсумковий ефект визначають арифметично: кожна перевага дає +2, кожна шкода дає −2; якщо кількість переваг і шкод рівна, вони взаємно анулюються; подвійні ефекти змінюють рівень результату.
+				</li>
 			</ul>
 		</div>
 	);
@@ -174,40 +164,21 @@ export const EdgesBanesReferenceCard = () => {
 export const MovementReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Movement</h2>
+			<h2>Рух</h2>
 			<p>
-				All squares adjacent to your character cost 1 movement to move into. No,
-				there’s no Pythagorean theorem on the grid. It’s a game, don’t overthink it.
+				Усі сусідні клітинки навколо вашого персонажа коштують 1 одиницю пересування. Ні, тут немає теореми Піфагора на сітці — це гра.
 			</p>
 			<p>
-				Your hero can move freely through an ally’s space. You can move through
-				an enemy’s space, but that space is difficult terrain. You can’t
-				stop moving in any other creature’s space, including to make a strike or use
-				a main action or maneuver while in that space and then continuing your
-				move, unless that creature’s size is two or more sizes greater or smaller
-				than your own.
+				Ваш герой може вільно проходити через простір союзника. Ви можете пройти через простір ворога, але такий простір вважається важкопрохідним. Ви не можете зупинятись у просторі іншої істоти, включно з виконанням strike, основної дії або маневру в цьому просторі і продовженням руху, якщо тільки розмір тієї істоти не більший або не менший за ваш щонайменше на 2 розміри.
 			</p>
 			<p>
-				At the Director’s discretion, you can be forced into the same space as
-				another creature whose size is within 1 of yours, such as by falling down
-				a narrow shaft with such a creature already at the bottom. When you are
-				squeezed into the same space as another creature whose size is within 1 of
-				yours, your ability rolls and tests take a bane.
+				На розсуд Директора вас можуть примусово помістити в той самий простір з іншою істотою, розмір якої відрізняється від вашого не більш ніж на 1, наприклад при падінні вузьким шахтним колодязем. Коли вас здавлюють у такому просторі, ваші кидки здібностей і перевірки виконуються з бане (bane).
 			</p>
 			<p>
-				<strong>Can’t Exceed Speed</strong>: A single move or other effect can never
-				allow a creature to move more squares than their speed, unless the effect states
-				otherwise. For example, a creature with speed 5 might have that speed reduced to
-				2 by the slowed condition (see Conditions in Chapter 5: Classes). If an ally
-				then targets them with an effect that allows them to move up to 3 squares, the
-				creature can move only 2 squares because that’s their current speed.
+				<strong>Не перевищуйте швидкість</strong>: Один рух або інший ефект ніколи не дозволяє істоті пройти більше клітинок, ніж її поточна швидкість, якщо ефект не вказує інше. Наприклад, істота зі швидкістю 5 може мати її зменшено до 2 через стан slowed. Якщо союзник потім дає ефект, що дозволяє переміститися на 3 клітинки, істота все одно може переміститися лише на 2, бо це її поточна швидкість.
 			</p>
 			<p>
-				<strong>Can’t Cut Corners</strong>: A creature can’t move diagonally when
-				doing so would involve passing through the corner of a wall or some other
-				object that completely fills the corner between the creature’s space and
-				the space they are moving to. This rule applies only to moving past objects,
-				not moving past other creatures.
+				<strong>Не проходьте крізь кути</strong>: Істота не може рухатися по діагоналі, якщо це вимагає проходження через кут стіни або іншого об’єкта, що повністю займає кут між простором істоти і простором, куди вона рухається. Це правило стосується лише проходження повз об’єкти, а не повз інших істот.
 			</p>
 		</div>
 	);
@@ -216,27 +187,16 @@ export const MovementReferenceCard = () => {
 export const FallingReferenceCard = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Falling</h2>
+			<h2>Падіння</h2>
 			<p>
-				When a creature falls 2 or more squares and lands on the ground, they
-				take 2 damage for each square they fall (to a maximum of 50 damage)
-				and land prone. A creature who falls can reduce the effective height
-				of the fall by a number of squares equal to their Agility score (to a
-				minimum of 0). Falling into liquid that is 1 square or more deep reduces
-				the effective height of a fall by 4 squares (to a minimum of 0).
+				Коли істота падає на 2 або більше клітинок і приземляється на землю, вона отримує 2 шкоди за кожну клітинку падіння (максимум 50) і опиняється у положенні «розпластаний». Істота, що падає, може зменшити ефективну висоту падіння на кількість клітинок, рівну її показнику Ловкості (мінімум 0). Падіння у рідину глибиною 1 або більше клітинок зменшує ефективну висоту падіння на 4 клітинки (мінімум 0).
 			</p>
 			<p>
-				Falling is not forced movement, but being force moved downward is
-				considered falling. Movement from falling doesn’t
-				provoke opportunity attacks.
+				Падіння не вважається примусовим переміщенням, проте примусове переміщення вниз вважається падінням. Рух від падіння не провокує атак нагоди.
 			</p>
-			<h3>Falling Onto Another Creature</h3>
+			<h3>Падіння на іншу істоту</h3>
 			<p>
-				A creature who falls and lands on another creature causes that creature
-				to take the same damage from the fall. The falling creature then lands
-				prone in the nearest unoccupied space of their choice. If the falling
-				creature’s size is greater than the Might score of the creature they land
-				on, that creature is knocked prone.
+				Істота, яка падає і приземляється на іншу істоту, завдає цій істоті такої ж шкоди від падіння. Та істота, що падала, потім опиняється у положенні «розпластаний» у найближчій незайнятій клітинці за її вибором. Якщо розмір істоти, що падає, більший за показник Сили (Might) цілі, ця ціль опиняється у положенні «розпластаний».
 			</p>
 		</div>
 	);
@@ -245,47 +205,31 @@ export const FallingReferenceCard = () => {
 export const CarryThreeSafelyReference = () => {
 	return (
 		<div className='extra-reference card'>
-			<h2>Carry Three Safely</h2>
+			<h2>Безпечне носіння трьох скарбів</h2>
 			<p>
-				Your connection with leveled treasures doesn’t just make them useful.
-				It also makes them dangerous. Each leveled treasure is a quasi-sentient,
-				purpose-driven entity. A magic sword wishes to be used in combat.
-				A psionic implement yearns to unleash its powerful magic. As such,
-				a creature can safely carry a maximum of three leveled treasures at a
-				time. If you carry more leveled treasures, those items become jealous of
-				one another and fight for your attention, attempting to subconsciously
-				influence you into using them—and leaving your other items behind.
+				Ваш зв’язок із рівневими скарбами робить їх не лише корисними, а й небезпечними. Кожен рівневий скарб — напівсвідомий, цілеспрямований предмет. Магічний меч прагне бою. Псіонічний артефакт прагне звільнити свою міць. Тому істота може безпечно носити максимум три рівневі скарби одночасно. Якщо ви носите більше трьох, предмети починають заздрити одне одному і змагатися за вашу увагу, підсвідомо схиляючи вас до їх використання — і залишаючи інші предмети позаду.
 			</p>
 			<p>
-				It’s fine to own or possess more than three leveled treasures, as long as
-				the extras are stored away or in the possession of other creatures. But if
-				you carry more than three leveled treasures, you must make a Presence
-				test during each respite:
+				Можна володіти більше трьох рівневих скарбів, якщо зайві предмети зберігаються або перебувають у володінні інших істот. Але якщо ви носите більше трьох рівневих скарбів, під час кожного перепочинку ви повинні зробити перевірку Присутності:
 			</p>
 			<div className='power-roll'>
 				<div className='roll-tiers'>
 					<div className='tier t1'>
 						<img alt='≤ 11' className='range' src={rollT1Icon} />
 						<span className='effect'>
-							One of your leveled treasures (chosen by the Director) grabs
-							hold of your psyche. It forces you to sleepwalk or otherwise
-							enter an active fugue state and discard the rest of your leveled
-							treasures in locations you can’t remember. If you want those
-							items back, you’d better get looking before someone else
-							finds them.
+							Один із ваших рівневих скарбів (за вибором Директора) захоплює вашу психіку. Він змушує вас прогулюватися уві сні або входить у активний фугоподібний стан і викидати решту рівневих скарбів у місцях, які ви не зможете пригадати. Якщо ви хочете повернути ці предмети, краще почніть пошуки до того, як хтось інший їх знайде.
 						</span>
 					</div>
 					<div className='tier t2'>
 						<img alt='12 - 16' className='range' src={rollT2Icon} />
 						<span className='effect'>
-							Your items work together to prevent you from moving until
-							you pick three items and leave the rest behind.
+							Предмети працюють разом, щоб не дозволити вам рухатися, доки ви не оберете три предмети і не залишите решту позаду.
 						</span>
 					</div>
 					<div className='tier t3'>
 						<img alt='17 +' className='range' src={rollT3Icon} />
 						<span className='effect'>
-							Nothing happens.
+							Нічого не відбувається.
 						</span>
 					</div>
 				</div>

@@ -7,8 +7,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const knowledge: Domain = {
 	id: 'domain-knowledge',
-	name: 'Knowledge',
-	description: 'The Knowledge domain.',
+	name: 'Знання',
+	description: 'Домена Знання.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,12 +18,12 @@ export const knowledge: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-knowledge-1-1',
-							name: 'Blessing of Comprehension',
-							description: 'You can interpret diagrams and charts even if you don’t understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any research or crafting project.'
+							name: 'Благословення розуміння',
+							description: 'Ви можете тлумачити діаграми й схеми, навіть якщо не розумієте пов’язану з ними мову. Для цілей розуміння джерела проєкту для будь-якого дослідження чи ремісничого проєкту ви вважаєтеся вільно володіючим усіма мовами.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-knowledge-1-2',
-							listOptions: [ SkillList.Lore ]
+							listOptions: [SkillList.Lore]
 						})
 					]
 				})
@@ -35,20 +35,20 @@ export const knowledge: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-knowledge-2',
-						name: 'The Gods Command, You Obey',
-						description: 'You speak with the voice of your saint, commanding your enemies.',
+						name: 'Боги наказують — ти підкоряєшся',
+						description: 'Ви говорите голосом свого святого, наказуючи ворогам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '4 + I holy damage; P < [weak], before taking damage, the target makes a free strike against a target you choose',
-									tier2: '7 + I holy damage; P < [average], before taking damage, the target uses an ability of your choice and you choose any targets for that ability',
-									tier3: '11 + I holy damage; P < [strong], before taking damage, the target shifts up to their speed to a location you choose, uses an ability of your choice, and you choose any targets for that ability'
+									characteristic: [Characteristic.Intuition],
+									tier1: '4 + І священної шкоди; П < [слабкий], перед отриманням шкоди ціль робить безкоштовний удар по цілі, яку ви обираєте',
+									tier2: '7 + І священної шкоди; П < [середній], перед отриманням шкоди ціль використовує здібність на ваш вибір, і ви обираєте цілі для цієї здібності',
+									tier3: '11 + І священної шкоди; П < [сильний], перед отриманням шкоди ціль зміщується на свою швидкість у місце, яке ви обираєте, використовує здібність на ваш вибір, і ви обираєте цілі для цієї здібності'
 								})
 							)
 						]
@@ -65,8 +65,8 @@ export const knowledge: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-knowledge-4',
-					name: 'Saint’s Epiphany',
-					description: 'At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your Intuition score to the roll.'
+					name: 'Осяяння святого',
+					description: 'На початку відпочинку ви можете надихнути себе або іншу істоту, що відпочиває разом із вами, божественним знанням. Якщо ціль робить кидок проєкту під час цього відпочинку, вона додає 1d10 + вашу Інтуїцію до кидка.'
 				})
 			]
 		},
@@ -80,23 +80,23 @@ export const knowledge: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-knowledge-6',
-						name: 'Invocation of Undoing',
-						description: 'You utter a secret word of destruction known only to deities.',
+						name: 'Заклик скасування',
+						description: 'Ви вимовляєте таємне слово руйнування, відоме лише богам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						target: 'Кожен ворог у області',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '3 sonic damage; push 3',
-									tier2: '6 sonic damage; push 5',
-									tier3: '9 sonic damage; push 7'
+									characteristic: [Characteristic.Intuition],
+									tier1: '3 звукової шкоди; відштовхування 3',
+									tier2: '6 звукової шкоди; відштовхування 5',
+									tier3: '9 звукової шкоди; відштовхування 7'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('You can choose to have this ability deal damage to and push objects, and to deal damage to buildings.')
+							FactoryLogic.createAbilitySectionText('Ви можете обрати, щоб ця здібність завдавала шкоди й відштовхувала об’єкти, а також завдавала шкоди будівлям.')
 						]
 					})
 				})
@@ -107,8 +107,8 @@ export const knowledge: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-knowledge-7',
-					name: 'Gods’ Library',
-					description: 'You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects. Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don’t already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.'
+					name: 'Бібліотека богів',
+					description: 'Ви можете отримати потрібну інформацію через молитву, тому більше не потребуєте дослідницьких матеріалів для ремісничих і дослідницьких проєктів. Додаєте свій рівень до кидків проєкту для ремесла й досліджень. Також ви отримуєте всі навички з групи знань, яких у вас не було, і додатково отримуєте навички з інших груп у кількості, що дорівнює кількості ваших навичок у групі знань до набуття цієї особливості.'
 				})
 			]
 		},
@@ -122,23 +122,23 @@ export const knowledge: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-knowledge-9',
-						name: 'Word of Weakening',
-						description: 'You utter a divine word that makes a foe brittle.',
+						name: 'Слово ослаблення',
+						description: 'Ви вимовляєте божественне слово, що робить ворога крихким.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота або об’єкт',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Intuition ],
-									tier1: '10 + I corruption damage; A < [weak], weakened (save ends)',
-									tier2: '15 + I corruption damage; A < [average], weakened (save ends)',
-									tier3: '21 + I corruption damage; A < [strong], weakened (save ends)'
+									characteristic: [Characteristic.Intuition],
+									tier1: '10 + І шкоди скверною; Л < [слабкий], ослаблення (рят. кидок завершує)',
+									tier2: '15 + І шкоди скверною; Л < [середній], ослаблення (рят. кидок завершує)',
+									tier3: '21 + І шкоди скверною; Л < [сильний], ослаблення (рят. кидок завершує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While weakened this way, the target has damage weakness 10.')
+							FactoryLogic.createAbilitySectionText('Поки ціль ослаблена таким чином, вона має вразливість до шкоди 10.')
 						]
 					})
 				})
@@ -151,17 +151,17 @@ export const knowledge: Domain = {
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that the Director spends Malice',
+			trigger: 'Вперше за сутичку, коли Директор витрачає Злобу',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'knowledge-default-1',
-			name: 'Knowledge Prayer Effect',
-			description: 'Choose up to five allies within 10 squares of you, or choose yourself instead of one ally. Each target gains 1 surge.',
+			name: 'Ефект Молитви Знання',
+			description: 'Оберіть до п’яти союзників у межах 10 клітинок від себе або себе замість одного союзника. Кожна ціль отримує 1 сплеск.',
 			tag: 'conduit-prayer'
 		})
 	]

@@ -6,8 +6,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const life: Domain = {
 	id: 'domain-life',
-	name: 'Life',
-	description: 'The Life domain.',
+	name: 'Життя',
+	description: 'Сфера Життя.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -17,12 +17,12 @@ export const life: Domain = {
 					features: [
 						FactoryLogic.feature.create({
 							id: 'domain-life-1-1',
-							name: 'Revitalizing Ritual',
-							description: 'Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. The chosen character gains a bonus to their recovery value equal to your level that lasts until you finish another respite.'
+							name: 'Оживлюючий ритуал',
+							description: 'Кожного разу, коли ви завершуєте відпочинок, ви можете обрати себе або одного союзника, який також завершує відпочинок, щоб надати йому користь божественного ритуалу. Обраний персонаж отримує бонус до значення відновлення, що дорівнює вашому рівню, який триває до наступного відпочинку.'
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-life-1-2',
-							listOptions: [ SkillList.Exploration ]
+							listOptions: [SkillList.Exploration]
 						})
 					]
 				})
@@ -34,15 +34,15 @@ export const life: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-life-2',
-						name: 'Wellspring of Grace',
-						description: 'A holy light is emitted from your body, healing your allies.',
+						name: 'Джерело благодаті',
+						description: 'Світле сяйво виходить із вашого тіла, зцілюючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
-						target: 'Each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						target: 'Кожен союзник у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever a target starts their turn in the area, they can spend a Recovery.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не перебуваєте в стані "Вмираючий", кожен цільовий персонаж на початку свого ходу в зоні може витратити Відновлення.')
 						]
 					})
 				})
@@ -57,8 +57,8 @@ export const life: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-life-4',
-					name: 'Blessing of Life',
-					description: 'Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your Healing Grace ability regains Stamina, they regain additional Stamina equal to your Intuition score.'
+					name: 'Благословення Життя',
+					description: 'Ваша божественна присутність допомагає гідним швидко відновлюватися після бою. Коли союзник у межах дії вашої здібності "Цілюща благодать" відновлює Витривалість, він додатково відновлює Витривалість, що дорівнює вашому показнику Інтуїції.'
 				})
 			]
 		},
@@ -72,15 +72,15 @@ export const life: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-life-6',
-						name: 'Revitalizing Grace',
-						description: 'With a gesture, you restore your health and that of your allies.',
+						name: 'Оживлююча благодать',
+						description: 'Жестом ви відновлюєте своє здоровʼя та здоровʼя союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						target: 'Ви та кожен союзник у зоні',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target can spend any number of Recoveries. Additionally, each target can end one effect on themself that is ended by a saving throw or that ends at the end of their turn, or they can stand up if prone.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль може витратити будь-яку кількість Відновлень. Додатково кожна ціль може скинути один ефект, який скидається рят. кидком або закінчується наприкінці її ходу, або підвестися, якщо вона лежить.')
 						]
 					})
 				})
@@ -91,10 +91,10 @@ export const life: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-life-7',
-					name: 'Font of Grace',
+					name: 'Джерело благодаті',
 					description: `
-* If you are a **Conduit**: Each time you use your *Healing Grace* ability, you gain 1 piety that can be spent only on that ability during the same turn. If you don’t use this piety, it is lost. Additionally, you can use your *Minor Miracle* feature to return a creature to life even if you don’t have their remains.
-* If you are a **Censor**: Each time you use your *My Life for Yours* ability, you gain 1 wrath that can be spent only on that ability during the same turn. If you don’t use this wrath, it is lost. Additionally, the target of *My Life for Yours* gains 10 temporary Stamina.`
+* Якщо ви **Провідник**: Кожного разу, коли ви використовуєте здібність *Цілюща благодать*, ви отримуєте 1 Благочестя, яке можна витратити лише на цю здібність протягом того ж ходу. Якщо ви не використаєте це Благочестя, воно зникає. Додатково ви можете використати властивість *Малий диво* для повернення істоти до життя навіть без її останків.
+* Якщо ви **Цензор**: Кожного разу, коли ви використовуєте здібність *Моє життя за твоє*, ви отримуєте 1 Гнів, який можна витратити лише на цю здібність протягом того ж ходу. Якщо ви не використаєте цей Гнів, він зникає. Додатково ціль *Моє життя за твоє* отримує 10 тимчасової Витривалості.`
 				})
 			]
 		},
@@ -108,15 +108,15 @@ export const life: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-life-9',
-						name: 'Radiance of Grace',
-						description: 'Intense light is emitted from your body, healing your allies.',
+						name: 'Сяйво благодаті',
+						description: 'Із вашого тіла виривається яскраве світло, зцілюючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Four Allies',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Чотири союзники',
 						cost: 11,
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can target yourself instead of one ally with this ability. Each target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone.')
+							FactoryLogic.createAbilitySectionText('Ви можете обрати себе замість одного союзника як ціль цієї здібності. Кожна ціль може витратити будь-яку кількість Відновлень, скинути будь-які ефекти, які скидаються рят. кидком або закінчуються наприкінці її ходу, та підвестися, якщо лежить.')
 						]
 					})
 				})
@@ -129,17 +129,17 @@ export const life: Domain = {
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that a creature within 10 squares regains Stamina',
+			trigger: 'Вперше під час сутички, коли істота в межах 10 клітинок відновлює Витривалість',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'life-default-1',
-			name: 'Life Prayer Effect',
-			description: 'Choose yourself or one ally within 10 squares of you. That character can spend a Recovery, can end one effect on them that is ended by a saving throw or that end at the end of their turn, or can stand up if they are prone. Alternatively, you or one ally within 10 squares gains temporary Stamina equal to 2 times your Intuition score.',
+			name: 'Ефект молитви Життя',
+			description: 'Обираєте себе або одного союзника в межах 10 клітинок. Цей персонаж може витратити Відновлення, скинути один ефект, який скидається рят. кидком або закінчується наприкінці його ходу, або підвестися, якщо лежить. Або ж ви чи союзник у межах 10 клітинок отримує тимчасову Витривалість, що дорівнює подвоєному значенню вашої Інтуїції.',
 			tag: 'conduit-prayer'
 		})
 	]

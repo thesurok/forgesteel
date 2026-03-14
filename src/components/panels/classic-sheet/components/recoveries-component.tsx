@@ -17,20 +17,20 @@ export const RecoveriesComponent = (props: Props) => {
 
 		<div className='recoveries'>
 			<LabeledTextField
-				label='Recoveries'
+				label='Відновлення'
 				content={(showState && recoveries.current?.toString()) || ''}
-				additionalClasses={[ 'label-above', 'fancy' ]}
+				additionalClasses={['label-above', 'fancy']}
 			/>
 			<div className='reference'>
 				<LabeledTextField
-					label='Stamina'
+					label='Витривалість'
 					content={recoveries.value}
-					additionalClasses={[ 'no-box' ]}
+					additionalClasses={['no-box']}
 				/>
 				<LabeledTextField
-					label='Max'
+					label='Макс.'
 					content={recoveries.max}
-					additionalClasses={[ 'no-box' ]}
+					additionalClasses={['no-box']}
 				/>
 			</div>
 		</div>

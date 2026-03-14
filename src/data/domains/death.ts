@@ -6,8 +6,8 @@ import { SkillList } from '@/enums/skill-list';
 
 export const death: Domain = {
 	id: 'domain-death',
-	name: 'Death',
-	description: 'The Death domain.',
+	name: 'Смерть',
+	description: 'Домена Смерті.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,20 +18,20 @@ export const death: Domain = {
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
 								id: 'domain-death-1-1',
-								name: 'Grave Speech',
-								description: 'You commune with the lingering soul of the recently dead.',
+								name: 'Мова Могили',
+								description: 'Ви спілкуєтеся з душею нещодавно померлого.',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [ AbilityKeyword.Magic ],
-								distance: [ FactoryLogic.distance.createMelee() ],
-								target: 'One dead creature',
+								keywords: [AbilityKeyword.Magic],
+								distance: [FactoryLogic.distance.createMelee()],
+								target: 'Одна мертва істота',
 								sections: [
-									FactoryLogic.createAbilitySectionText('You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of dying can make a creature’s memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can’t use this ability on the same creature twice.')
+									FactoryLogic.createAbilitySectionText('Ви можете говорити з ціллю, якщо це істота, яка померла протягом останніх 24 годин і знає мову, якою ви володієте, навіть якщо це лише голова. Ціль ставиться до вас так, як ставилася за життя, і вам, можливо, доведеться проходити випробування, щоб вплинути на неї чи переконати говорити. Травма смерті може зробити спогади про цю подію нечіткими, але ціль знає все, що знала за життя. Через 1 хвилину ефект закінчується. Ви не можете використати цю здібність на тій самій істоті двічі.')
 								]
 							})
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-death-1-2',
-							listOptions: [ SkillList.Lore ]
+							listOptions: [SkillList.Lore]
 						})
 					]
 				})
@@ -43,15 +43,15 @@ export const death: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-death-2',
-						name: 'Reap',
-						description: 'The gods reward those who smite their foes.',
+						name: 'Жнива',
+						description: 'Боги винагороджують тих, хто карає ворогів.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Each ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Кожен союзник',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the start of your next turn, each time a target kills an enemy, they regain Stamina equal to 5 + your Intuition score.')
+							FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу, кожного разу, коли ціль вбиває ворога, вона відновлює Витривалість, що дорівнює 5 + ваша Інтуїція.')
 						]
 					})
 				})
@@ -66,8 +66,8 @@ export const death: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-death-4',
-					name: 'Seance',
-					description: 'You can commune with a network of spirits. As a respite activity, you speak the name of a creature who died and isn’t undead. If the creature’s spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn’t free or willing to appear, you can speak another name or choose another respite activity.'
+					name: 'Сеанс',
+					description: 'Ви можете спілкуватися з мережею духів. Під час відпочинку ви називаєте імʼя істоти, яка померла і не є нежиттю. Якщо дух істоти вільний і бажає говорити з вами, він зʼявляється, і ви можете поговорити з ним. Під час цієї розмови істота відповідає так, як робила б за життя. Якщо дух не вільний або не бажає зʼявлятися, ви можете назвати інше імʼя або обрати іншу дію відпочинку.'
 				})
 			]
 		},
@@ -81,15 +81,15 @@ export const death: Domain = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-death-6',
-						name: 'Aura of Souls',
-						description: 'A whirlwind of souls of the dead flies around you at your command.',
+						name: 'Аура Душ',
+						description: 'Вихор душ померлих кружляє навколо вас за вашим наказом.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
-						target: 'Each creature in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						target: 'Кожна істота в області',
 						cost: 9,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your Intuition score. This forced movement ignores stability for your allies.')
+							FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не вмираєте, наприкінці кожного вашого ходу ви можете зсунути кожну істоту в області на кількість клітинок, що дорівнює вашій Інтуїції. Це примусове переміщення ігнорує стабільність для ваших союзників.')
 						]
 					})
 				})
@@ -100,11 +100,11 @@ export const death: Domain = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'domain-death-7',
-					name: 'Word of Death Deferred',
+					name: 'Слово Відкладеної Смерті',
 					description: `
-You can stop death from taking your allies. When an ally within distance of your Healing Grace ability dies and you are not dying, you can use a free triggered action to instead have that ally fall unconscious until they regain Stamina.
+Ви можете зупинити смерть для своїх союзників. Коли союзник у межах дії вашої здібності «Благодать Зцілення» помирає, а ви не вмираєте, ви можете безкоштовною тригерною дією замість смерті змусити союзника впасти без свідомості до відновлення Витривалості.
 
-Additionally, your abilities deal an extra 5 damage to winded creatures.`
+Крім того, ваші здібності завдають додатково 5 шкоди захеканим істотам.`
 				})
 			]
 		},
@@ -118,15 +118,15 @@ Additionally, your abilities deal an extra 5 damage to winded creatures.`
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'domain-death-9',
-						name: 'Word of Final Redemption',
-						description: 'Your death will fuel our victory.',
+						name: 'Слово Останнього Спасіння',
+						description: 'Ваша смерть підживить нашу перемогу.',
 						type: FactoryLogic.type.createTrigger('The target dies.', { free: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 11,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Before the target dies, you can look at their stat block and force them to use one ability that is a main action or a maneuver. If the ability costs a Heroic Resource or Malice, the creature can use it without any cost. For the purpose of using this ability, your allies and enemies are the target’s allies and enemies, and you decide who the ability targets.')
+							FactoryLogic.createAbilitySectionText('Перед смертю цілі ви можете переглянути її блок характеристик і змусити використати одну здібність, яка є основною дією або маневром. Якщо здібність коштує Героїчний Ресурс або Злобу, істота може використати її безкоштовно. Для цієї здібності ваші союзники й вороги стають союзниками й ворогами цілі, а ви вирішуєте, кого вона обирає ціллю.')
 						]
 					})
 				})
@@ -139,17 +139,17 @@ Additionally, your abilities deal an extra 5 damage to winded creatures.`
 	],
 	resourceGains: [
 		{
-			resource: 'Piety',
+			resource: 'Благочестя',
 			tag: '',
-			trigger: 'The first time in an encounter that a creature within 10 squares who isn’t a minion is reduced to 0 Stamina, or the first time in an encounter that a solo creature within 10 squares becomes winded.',
+			trigger: 'Вперше за сутичку, коли істота в межах 10 клітинок, яка не є міньйоном, знижена до 0 Витривалості, або вперше за сутичку, коли соло-істота в межах 10 клітинок стає захеканою.',
 			value: '2'
 		}
 	],
 	defaultFeatures: [
 		FactoryLogic.feature.createPackageContent({
 			id: 'death-default-1',
-			name: 'Death Prayer Effect',
-			description: 'You inflict a deadly curse upon up to two enemies within 10 squares of you. Each target takes corruption damage equal to twice your Intuition score.',
+			name: 'Ефект Молитви Смерті',
+			description: 'Ви накладаєте смертельне прокляття на до двох ворогів у межах 10 клітинок від себе. Кожна ціль отримує шкоду скверною, що дорівнює подвоєній вашій Інтуїції.',
 			tag: 'conduit-prayer'
 		})
 	]

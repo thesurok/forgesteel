@@ -6,16 +6,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const soldier: Career = {
 	id: 'career-soldier',
-	name: 'Soldier',
-	description: 'In your formative years, you fought tirelessly in skirmishes and campaigns against enemy forces.',
+	name: 'Воїн',
+	description: 'У юності ви невтомно боролися в сутичках і кампаніях проти ворожих сил.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-soldier-feature-1',
-			listOptions: [ SkillList.Exploration ]
+			listOptions: [SkillList.Exploration]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-soldier-feature-2',
-			listOptions: [ SkillList.Intrigue ]
+			listOptions: [SkillList.Intrigue]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-soldier-feature-3',
@@ -28,40 +28,40 @@ export const soldier: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-soldier-feature-5',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-soldier-ii-1',
-				name: 'Dishonorable Discharge',
-				description: 'You enlisted in the military to protect others, but your commander ordered you to beat and kill civilians. When you refused, things got violent. You barely escaped the brawl that ensued, but now you vow to help people on your own terms.'
+				name: 'Ганьба честі',
+				description: 'Ви вступили до війська, щоб захищати інших, але командир наказав бити й убивати мирних жителів. Коли ви відмовилися, усе переросло у бійку. Ви ледве втекли, але тепер клянетеся допомагати людям на власних умовах.'
 			},
 			{
 				id: 'career-soldier-ii-2',
-				name: 'Out of Retirement',
-				description: 'You had a long and storied career as a soldier before deciding to retire to a simpler life. But when you returned to your old home, you found your enemies had laid waste to it. Now the skills you earned on the battlefield are helping you as you become a different kind of warrior - one seeking to save others from the fate you suffered.'
+				name: 'Повернення з відставки',
+				description: 'Ви мали довгу й славетну карʼєру воїна, перш ніж вирішили піти на спокій. Але, повернувшись додому, ви побачили, що вороги зруйнували його. Тепер навички, здобуті на полі бою, допомагають вам стати іншим воїном — тим, хто рятує інших від вашої долі.'
 			},
 			{
 				id: 'career-soldier-ii-3',
-				name: 'Peace Through Healing',
-				description: 'The sight of constant bloodshed took its toll on you. You seek peace through healing and dedicated yourself to ending wars before they begin, to spare those around you from the horror.'
+				name: 'Мир через зцілення',
+				description: 'Видовище постійної кровопролиття далося взнаки. Ви шукаєте миру через зцілення й присвятили себе тому, щоб зупиняти війни до їх початку, рятуючи оточуючих від жахіть.'
 			},
 			{
 				id: 'career-soldier-ii-4',
-				name: 'Sole Survivor',
-				description: 'You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a soldier then, seeking to become a hero who could stand against such threats.'
+				name: 'Єдиний, хто вижив',
+				description: 'Ви були останнім, хто вижив у підрозділі після важкого бою чи нападу монстрів, урятувавшись лише завдяки вдачі. Ви відмовилися від життя воїна, прагнучи стати героєм, здатним протистояти таким загрозам.'
 			},
 			{
 				id: 'career-soldier-ii-5',
-				name: 'Stolen Valor',
-				description: 'Tired of eking out an existence on the streets, you enrolled in the military. However, you were unable to escape your lower-status background until the officer leading your unit fell in battle. In the chaos that ensued, you assumed their identity and returned home a hero. To avoid suspicion, you took on the life of an adventurer, staying always on the move.'
+				name: 'Вкрадена слава',
+				description: 'Втомившись животіти на вулиці, ви записалися до війська. Але не могли позбутися минулого, поки офіцер, що командував підрозділом, не загинув у бою. У хаосі ви прийняли його особу й повернулися додому героєм. Щоб уникнути підозр, ви стали мандрівним шукачем пригод.'
 			},
 			{
 				id: 'career-soldier-ii-6',
-				name: 'Vow of Sacrifice',
-				description: 'You promised a fellow soldier that you’d protect his family if he ever fell in battle. When he did, you traveled to his village, but found its people slain or scattered by war. Driven by your vow, you have dedicated your life to finding any survivors and protecting others from a similar fate.'
+				name: 'Клятва самопожертви',
+				description: 'Ви пообіцяли товаришу, що захищатимете його родину, якщо він загине в бою. Коли це сталося, ви вирушили до його села, але знайшли його мешканців убитими чи розсіяними війною. Керуючись клятвою, ви присвятили життя пошукам уцілілих і захисту інших від подібної долі.'
 			}
 		],
 		selected: null,

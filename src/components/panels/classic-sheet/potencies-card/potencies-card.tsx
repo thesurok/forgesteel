@@ -10,21 +10,21 @@ export const PotenciesCard = (props: Props) => {
 	const character = props.character;
 	return (
 		<div className='potencies card'>
-			<h3>Potency</h3>
+			<h3>Потужність</h3>
 			<LabeledTextField
-				label='Weak'
+				label='Слабка'
 				content={character.potencyWeak}
-				additionalClasses={[ 'label-above', 'box-both' ]}
+				additionalClasses={['label-above', 'box-both']}
 			/>
 			<LabeledTextField
-				label='Average'
+				label='Середня'
 				content={character.potencyAverage}
-				additionalClasses={[ 'label-above', 'box-both' ]}
+				additionalClasses={['label-above', 'box-both']}
 			/>
 			<LabeledTextField
-				label='Strong'
+				label='Сильна'
 				content={character.potencyStrong}
-				additionalClasses={[ 'label-above', 'box-both' ]}
+				additionalClasses={['label-above', 'box-both']}
 			/>
 		</div>
 	);

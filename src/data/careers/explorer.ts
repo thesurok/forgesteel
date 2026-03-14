@@ -5,16 +5,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const explorer: Career = {
 	id: 'career-explorer',
-	name: 'Explorer',
-	description: 'You ventured into uncharted areas and made your living as a cartographer, researcher, resource seeker, or treasure hunter.',
+	name: 'Дослідник',
+	description: 'Ви вирушали в незвідані землі й заробляли на життя як картограф, дослідник, шукач ресурсів або мисливець за скарбами.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-explorer-feature-1',
-			selected: [ 'Navigate' ]
+			selected: ['Navigate']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-explorer-feature-2',
-			listOptions: [ SkillList.Exploration ],
+			listOptions: [SkillList.Exploration],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -23,40 +23,40 @@ export const explorer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-explorer-feature-4',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-explorer-ii-1',
-				name: 'Awakening',
-				description: 'In an uncharted area, you awakened some dark horror. You have turned to the life of a hero to put an end to the horror you unleashed and keep other hidden dangers at bay.'
+				name: 'Пробудження',
+				description: 'У незвіданій місцевості ви пробудили темний жах. Ви стали героєм, щоб зупинити це зло й захистити інших від прихованих небезпек.'
 			},
 			{
 				id: 'career-explorer-ii-2',
-				name: 'Missing Piece',
-				description: 'You made an important but dangerous discovery about a treasure or ancient ritual that could spell mass destruction. Then the unthinkable happened when an unscrupulous colleague, spy, or treasure hunter stole your research notes. You’re looking for them now, and anyone else who might use such discoveries for ill.'
+				name: 'Відсутня частина',
+				description: 'Ви зробили важливе, але небезпечне відкриття про скарб або стародавній ритуал, що міг призвести до масового знищення. Невдовзі безчесний колега, шпигун чи мисливець за скарбами викрав ваші дослідницькі записи. Тепер ви шукаєте їх і всіх, хто може використати ці знання на зло.'
 			},
 			{
 				id: 'career-explorer-ii-3',
-				name: 'Nothing Belongs in a Museum',
-				description: 'Traversing seas and mountains to collect valuable artifacts for cultural institutions was once your way of life. When people died trying to reclaim one of the objects you took, you realized the truth. Your work was part of a larger problem of misappropriation and the best place for these significant objects wasn’t in a museum but with the people who created them. You set out to return what had been taken and to protect others from theft.'
+				name: 'Місце не в музеї',
+				description: 'Колись ви перетинали моря й гори, збираючи цінні артефакти для культурних установ. Коли люди загинули, намагаючись повернути один із предметів, ви усвідомили істину: ваша робота була частиною проблеми привласнення, і найкраще місце для цих речей — серед їхніх творців. Ви вирушили повертати вкрадене й захищати інших від крадіжок.'
 			},
 			{
 				id: 'career-explorer-ii-4',
-				name: 'Unschooled',
-				description: 'You delved into dungeons and far-off places by studying them in books. You were an explorer who never felt the need to experience the dangers your peers did. However, your theory about a lost world cost you your reputation. It gave you the impetus to go on adventures and stand up for those with different ideas.'
+				name: 'Самоук',
+				description: 'Ви досліджували підземелля й далекі місця, вивчаючи їх у книжках. Ви були дослідником, якому не потрібно було ризикувати, як іншим. Однак ваша теорія про загублений світ зруйнувала вашу репутацію. Це спонукало вас вирушити в пригоди й захищати тих, хто мислить інакше.'
 			},
 			{
 				id: 'career-explorer-ii-5',
-				name: 'Wanderlust',
-				description: 'You saw yourself as an observer and operated within a code of conduct. You swore to never interfere with a group by exposing them to your technology, knowledge, or values. When faced with a moral conundrum, you either broke your code or stood idly by - and suffered the consequences. During this incident, you lost your observation journal but became a hero who refuses to let evil stand unchecked.'
+				name: 'Тяга до мандрів',
+				description: 'Ви вважали себе спостерігачем і дотримувалися кодексу поведінки. Ви поклялися не втручатися в життя груп, не навʼязуючи їм свої технології, знання чи цінності. Зіткнувшись із моральною дилемою, ви або порушили кодекс, або залишилися осторонь — і зазнали наслідків. Під час цієї пригоди ви втратили журнал спостережень, але стали героєм, який не дозволяє злу залишатися безкарним.'
 			},
 			{
 				id: 'career-explorer-ii-6',
-				name: 'Wind in your Sails',
-				description: 'As a seafaring explorer, you lived to chart unknown courses. Though travel on the high seas was fraught with danger, the destination was always rewarding in riches, knowledge, or some other way that was meaningful to you. Your luck ran out when your ship was destroyed by pirates or other enemy forces. You’ve taken to protecting those who seek safe passage while also hoping to avenge your crew.'
+				name: 'Вітер у вітрилах',
+				description: 'Як морський дослідник, ви прокладали невідомі маршрути. Хоча подорожі морем були сповнені небезпек, винагородою ставали багатства, знання чи щось інше важливе для вас. Удача зрадила, коли ваш корабель знищили пірати чи вороги. Тепер ви захищаєте тих, хто шукає безпечний шлях, і прагнете помститися за екіпаж.'
 			}
 		],
 		selected: null,

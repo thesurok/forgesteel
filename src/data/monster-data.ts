@@ -123,7 +123,7 @@ export class MonsterData {
 			name: 'Brutal Effectiveness',
 			cost: 3,
 			sections: [
-				'The monster digs into the enemy’s weak spot. The next ability the monster uses with a potency has its potency increased by 1.'
+				'Монстр влучає у слабке місце ворога. Наступна здібність монстра з потужністю отримує +1 до потужності.'
 			],
 			icon: StatBlockIcon.Self
 		}),
@@ -133,7 +133,7 @@ export class MonsterData {
 			cost: 5,
 			repeatable: true,
 			sections: [
-				'The monster pours all their animosity into their attack. Their next strike deals additional damage to one target equal to their highest characteristic. The damage increases by 1 for every additional malice spent on this feature (to a maximum total of three times their highest characteristic). This feature can’t be used two rounds in a row.'
+				'Монстр спрямовує всю злість у свою атаку. Його наступний удар завдає додаткової шкоди одній цілі, рівної найвищій характеристиці. Шкода зростає на 1 за кожну додаткову витрачену злість (максимум до потрійної найвищої характеристики). Цю властивість не можна використовувати два раунди поспіль.'
 			],
 			icon: StatBlockIcon.Self
 		})

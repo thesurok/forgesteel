@@ -10,30 +10,30 @@ import { FactoryLogic } from '@/logic/factory-logic';
 
 export const timeRaider: Ancestry = {
 	id: 'ancestry-time-raider',
-	name: 'Time Raider',
-	description: 'The original servitor species of the synliroi — evil psions with near godlike power — the kuran’zoi liberated themselves during the First Psychic War. In the centuries since, they built their own culture and civilization as nomads of the timescape. The exonym “time raiders” was given to them by denizens of the lower worlds who, seeing the advanced technology the kuran’zoi wield, concluded they must be from the future',
+	name: 'Рейдер Часу',
+	description: 'Початковий вид-слуга синліроїв — злих псіоніків із майже божественною силою — куранʼзої звільнили себе під час Першої Психічної Війни. За століття вони створили власну культуру та цивілізацію як кочівники часопростору. Екзонім "рейдери часу" їм дали мешканці нижніх світів, які, побачивши передові технології куранʼзоїв, вирішили, що ті з майбутнього.',
 	features: [
 		FactoryLogic.feature.createDamageModifier({
 			id: 'time-raider-feature-1',
-			name: 'Psychic Scar',
-			description: 'Your mind is a formidable layer of defense. You have psychic immunity equal to your level.',
-			modifiers: [ FactoryLogic.damageModifier.createPerLevel({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 1 }) ]
+			name: 'Психічний Шрам',
+			description: 'Ваш розум є потужним шаром захисту. Ви маєте психічний імунітет, рівний вашому рівню.',
+			modifiers: [FactoryLogic.damageModifier.createPerLevel({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 1 })]
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'time-raider-feature-2',
-			name: 'Time Raider Traits',
+			name: 'Риси Рейдера Часу',
 			options: [
 				{
 					feature: FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'time-raider-feature-2-1',
-							name: 'Beyondsight',
-							description: 'You adjust your vision to allow you to see through mundane obstructions.',
+							name: 'Зір Поза Межами',
+							description: 'Ви налаштовуєте свій зір, щоб бачити крізь звичайні перешкоди.',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createSelf() ],
-							target: 'Self',
+							distance: [FactoryLogic.distance.createSelf()],
+							target: 'Себе',
 							sections: [
-								FactoryLogic.createAbilitySectionText('You can see through mundane obstructions that are 1 square thick or less. While your vision is adjusted this way, you can’t see the area within 1 square of you and you don’t have line of effect to any creature or object in that area. You can restore your usual vision as a maneuver.')
+								FactoryLogic.createAbilitySectionText('Ви можете бачити крізь звичайні перешкоди товщиною 1 клітинка або менше. Поки ваш зір налаштований таким чином, ви не бачите область у межах 1 клітинки від вас і не маєте лінії ефекту до будь-якої істоти чи обʼєкта в цій області. Ви можете відновити свій звичайний зір як маневр.')
 							]
 						})
 					}),
@@ -42,24 +42,24 @@ export const timeRaider: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createMultiple({
 						id: 'time-raider-feature-2-2',
-						name: 'Foresight',
-						description: 'Your senses extend past mundane obscuration and the veil of the future alike.',
+						name: 'Передбачення',
+						description: 'Ваші відчуття виходять за межі звичайного затемнення та завіси майбутнього.',
 						features: [
 							FactoryLogic.feature.create({
 								id: 'time-raider-feature-2-2a',
-								name: 'Foresight',
-								description: 'You automatically know the location of any creature with concealment who isn’t hidden from you within 20, and you negate the usual bane on strikes against such creatures.'
+								name: 'Передбачення',
+								description: 'Ви автоматично знаєте місцезнаходження будь-якої істоти з маскуванням, яка не прихована від вас у межах 20, і ви скасовуєте звичайний штраф на удари проти таких істот.'
 							}),
 							FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'time-raider-feature-2-2b',
-									name: 'Foresight',
+									name: 'Передбачення',
 									description: '',
-									type: FactoryLogic.type.createTrigger('You are targeted with a strike'),
-									distance: [ FactoryLogic.distance.createSelf() ],
-									target: 'Self',
+									type: FactoryLogic.type.createTrigger('Вас атакують'),
+									distance: [FactoryLogic.distance.createSelf()],
+									target: 'Себе',
 									sections: [
-										FactoryLogic.createAbilitySectionText('You impose a bane on the power roll.')
+										FactoryLogic.createAbilitySectionText('Ви накладаєте штраф на кидок сили.')
 									]
 								})
 							})
@@ -70,43 +70,43 @@ export const timeRaider: Ancestry = {
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'time-raider-feature-2-3',
-						name: 'Four-Armed Athletics',
-						description: 'Your unique physiology enhances your movement. You gain an edge on tests that use the Climb, Gymnastics, or Swim skills when you can use all your arms in the attempt.'
+						name: 'Атлетика Чотирьох Рук',
+						description: 'Ваша унікальна фізіологія покращує ваш рух. Ви отримуєте перевагу на випробування, які використовують навички Лазіння, Гімнастики або Плавання, коли ви можете використовувати всі свої руки в спробі.'
 					}),
 					value: 1
 				},
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'time-raider-feature-2-4',
-						name: 'Four-Armed Martial Arts',
-						description: 'Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback maneuver against an adjacent creature, you can target one additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures grabbed at a time.'
+						name: 'Бойові Мистецтва Чотирьох Рук',
+						description: 'Ваші численні руки дозволяють вам виконувати кілька завдань одночасно. Коли ви використовуєте маневр Захоплення або Відштовхування проти сусідньої істоти, ви можете націлити ще одну сусідню істоту, використовуючи той самий кидок сили для обох цілей. Крім того, ви можете одночасно захопити до двох істот.'
 					}),
 					value: 2
 				},
 				{
 					feature: FactoryLogic.feature.createChoice({
 						id: 'time-raider-feature-2-5',
-						name: 'Psionic Gift',
+						name: 'Псіонічний Дар',
 						count: 1,
 						options: [
 							{
 								feature: FactoryLogic.feature.createAbility({
 									ability: FactoryLogic.createAbility({
 										id: 'time-raider-feature-2-5-1',
-										name: 'Concussive Slam',
-										description: 'You slam an invisible force down upon the target.',
+										name: 'Удар Конкусії',
+										description: 'Ви обрушуєте невидиму силу на ціль.',
 										type: FactoryLogic.type.createMain(),
 										cost: 'signature',
-										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-										distance: [ FactoryLogic.distance.createRanged(10) ],
-										target: 'One creature or object',
+										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+										distance: [FactoryLogic.distance.createRanged(10)],
+										target: 'Одна істота або обʼєкт',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-													tier1: '2 + R, I, or P damage',
-													tier2: '5 + R, I, or P damage; push 1',
-													tier3: '7 + R, I, or P damage; push 2; M < [strong] prone'
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+													tier1: '2 + Р, І або П шкоди',
+													tier2: '5 + Р, І або П шкоди; зсув 1',
+													tier3: '7 + Р, І або П шкоди; зсув 2; М < [сильний] повалений'
 												})
 											)
 										]
@@ -118,20 +118,20 @@ export const timeRaider: Ancestry = {
 								feature: FactoryLogic.feature.createAbility({
 									ability: FactoryLogic.createAbility({
 										id: 'time-raider-feature-2-5-2',
-										name: 'Psionic Bolt',
-										description: 'You shoot forth a purple beam of psychic force that grips your target.',
+										name: 'Псіонічний Промінь',
+										description: 'Ви випускаєте фіолетовий промінь психічної сили, який охоплює вашу ціль.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-										distance: [ FactoryLogic.distance.createRanged(10) ],
-										target: 'One creature or object',
+										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+										distance: [FactoryLogic.distance.createRanged(10)],
+										target: 'Одна істота або обʼєкт',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-													tier1: '2 + R, I, or P psychic damage; slide 1',
-													tier2: '5 + R, I, or P psychic damage; slide 2',
-													tier3: '7 + R, I, or P psychic damage; slide 3'
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+													tier1: '2 + Р, І або П психічної шкоди; зсув 1',
+													tier2: '5 + Р, І або П психічної шкоди; зсув 2',
+													tier3: '7 + Р, І або П психічної шкоди; зсув 3'
 												})
 											)
 										]
@@ -143,18 +143,18 @@ export const timeRaider: Ancestry = {
 								feature: FactoryLogic.feature.createAbility({
 									ability: FactoryLogic.createAbility({
 										id: 'time-raider-feature-2-5-3',
-										name: 'Minor Acceleration',
-										description: 'You fill yourself or an ally with a burst of speed.',
+										name: 'Мала Прискореність',
+										description: 'Ви наповнюєте себе або союзника сплеском швидкості.',
 										type: FactoryLogic.type.createManeuver(),
-										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Melee ],
+										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Melee],
 										distance: [
 											FactoryLogic.distance.createSelf(),
 											FactoryLogic.distance.createMelee()
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 'signature',
 										sections: [
-											FactoryLogic.createAbilitySectionText('The target gains a bonus to speed equal to your Reason, Intuition, or Presence score (your choice) until the start of your next turn.')
+											FactoryLogic.createAbilitySectionText('Ціль отримує бонус до швидкості, рівний вашому значенню Розуму, Інтуїції або Присутності (на ваш вибір) до початку вашого наступного ходу.')
 										]
 									})
 								}),
@@ -167,9 +167,9 @@ export const timeRaider: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createConditionImmunity({
 						id: 'time-raider-feature-2-6',
-						name: 'Unstoppable Mind',
-						description: 'Your mind allows you to maintain your focus in any situation.',
-						conditions: [ ConditionType.Dazed ]
+						name: 'Незламний Розум',
+						description: 'Ваш розум дозволяє вам зберігати концентрацію в будь-якій ситуації.',
+						conditions: [ConditionType.Dazed]
 					}),
 					value: 2
 				}
@@ -178,5 +178,5 @@ export const timeRaider: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Time Raider', 'Nomadic, communal, martial.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.martial, 'Voll')
+	culture: FactoryLogic.createCulture('Рейдер Часу', 'Кочовий, комунальний, бойовий.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.martial, 'Волл')
 };

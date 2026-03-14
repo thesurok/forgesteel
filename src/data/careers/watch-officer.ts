@@ -5,16 +5,16 @@ import { SkillList } from '@/enums/skill-list';
 
 export const watchOfficer: Career = {
 	id: 'career-watch-officer',
-	name: 'Watch Officer',
-	description: 'You served as an officer of the law for a local government. You might have been a single person in a much larger city watch or the only constable patrolling a small village.',
+	name: 'Офіцер варти',
+	description: 'Ви служили охоронцем порядку при місцевій владі. Ви могли бути одним із багатьох у міській варті або єдиним констеблем, що патрулював маленьке село.',
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-watch-officer-feature-1',
-			selected: [ 'Alertness' ]
+			selected: ['Alertness']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-watch-officer-feature-2',
-			listOptions: [ SkillList.Intrigue ],
+			listOptions: [SkillList.Intrigue],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -23,40 +23,40 @@ export const watchOfficer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-watch-officer-feature-4',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {
 		options: [
 			{
 				id: 'career-watch-officer-ii-1',
-				name: 'Bigger Fish',
-				description: 'You grew bored and disillusioned with chasing down petty thieves and imprisoning folks just trying to survive. Surely there are greater threats in the world. You will find that evil wherever it may lurk, and you’ll be the one to stop it.'
+				name: 'Великі риби',
+				description: 'Вам набридло ганятися за дрібними злодіями й саджати за ґрати тих, хто просто намагається вижити. У світі є загрози й серйозніші. Ви знайдете зло, де б воно не ховалося, і саме ви його зупините.'
 			},
 			{
 				id: 'career-watch-officer-ii-2',
-				name: 'Corruption Within',
-				description: 'You joined the force to help the helpless and bring justice to those wronged. You weren’t prepared for the rampant corruption reaching the top of your organization. You refused to cover for your fellow officers and were told in no simple terms to leave town or face the consequences. Now you travel as a hero, acting as the protector you always wanted to be.'
+				name: 'Корупція всередині',
+				description: 'Ви приєдналися до варти, щоб допомагати беззахисним і відновлювати справедливість. Ви не були готові до тотальної корупції, що сягала верхівки організації. Ви відмовилися покривати колег і отримали чітку вимогу залишити місто або зіткнутися з наслідками. Тепер ви мандруєте як герой, захищаючи людей так, як завжди мріяли.'
 			},
 			{
 				id: 'career-watch-officer-ii-3',
-				name: 'Frame Job',
-				description: 'Your partner was murdered. That much is irrefutable. But you didn’t do it, despite what the evidence implies. When it became clear you’d take the fall, you fled, leaving everything behind. Not content to cower in the shadows, you decided to adventure under a new name while you work to clear your own.'
+				name: 'Підстава',
+				description: 'Вашого напарника вбили — це незаперечно. Але це зробили не ви, попри докази. Коли стало ясно, що вас зроблять цапом-відбувайлом, ви втекли, залишивши все. Не бажаючи ховатися в тіні, ви вирішили стати шукачем пригод під новим імʼям, поки працюєте над очищенням власного.'
 			},
 			{
 				id: 'career-watch-officer-ii-4',
-				name: 'Missing Mentor',
-				description: 'You learned everything you know about the job from someone you always looked up to in a corrupt organization. One night, they sent you a cryptic message saying they had discovered “something big,” but before you found out more, they disappeared. No longer sure who you could trust, you slipped away and sought a new life. Now you do what good you can and search to find the truth.'
+				name: 'Зниклий наставник',
+				description: 'Усьому, що знаєте про роботу, вас навчив хтось, ким ви захоплювалися, навіть у корумпованій організації. Однієї ночі він надіслав вам загадкове повідомлення, що відкрив «щось велике», але до того, як ви дізналися подробиці, зник. Більше не знаючи, кому довіряти, ви зникли й почали нове життя. Тепер ви робите добро, як можете, і шукаєте правду.'
 			},
 			{
 				id: 'career-watch-officer-ii-5',
-				name: 'One That Got Away',
-				description: 'A particularly violent or depraved criminal began targeting you - perhaps stealing something personal or hurting someone you love - after slipping through your grasp. You left your career to pursue the criminal, but the trail has gone cold … for now. Might as well help folk in the meantime.'
+				name: 'Той, хто вислизнув',
+				description: 'Особливо жорстокий чи розбещений злочинець почав переслідувати вас — можливо, вкрав щось особисте чи скривдив когось із близьких — після того, як вислизнув із ваших рук. Ви залишили службу, щоб вистежити злочинця, але слід охолов… принаймні поки що. Тим часом можна допомогти іншим.'
 			},
 			{
 				id: 'career-watch-officer-ii-6',
-				name: 'Powerful Enemies',
-				description: 'You made it your responsibility to root out and bring down the region’s foremost crime syndicate. They sent goons to burn down your home and teach you a lesson, leaving you bleeding in the street with nothing left except your life. You’ve since taken on the life of a hero to gain the power and influence you need to destroy the syndicate once and for all.'
+				name: 'Могутні вороги',
+				description: 'Ви взяли на себе відповідальність викрити й знищити головне злочинне угруповання регіону. Вони надіслали головорізів, які спалили ваш дім і залишили вас стікати кровʼю на вулиці, позбавивши всього, крім життя. Відтоді ви стали героєм, щоб здобути силу й вплив, необхідні для остаточної перемоги над синдикатом.'
 			}
 		],
 		selected: null,

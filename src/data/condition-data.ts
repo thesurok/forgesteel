@@ -1,42 +1,42 @@
 export class ConditionData {
 	static bleeding = `
-While a creature is bleeding, whenever they use a main action, use a triggered action, or make a test or ability roll using Might or Agility, they lose Stamina equal to 1d6 + their level after the main action, triggered action, or power roll is resolved. This Stamina loss can’t be prevented in any way, and only happens once per action.
+Поки істота стікає кровʼю, щоразу коли вона використовує основну дію, тригерну дію або виконує випробування чи кидок здібності на Силу чи Ловкість, вона втрачає Витривалість, рівну 1d6 + її рівень після завершення дії, тригерної дії або кидка сили. Цю втрату Витривалості не можна запобігти жодним чином, і вона відбувається лише раз за дію.
 
-You take damage from this condition when you use a main action off your turn. For example, a signature ability used as a free triggered action with the assistance of the tactician’s Strike Now ability triggers the damage from the bleeding condition.`;
+Ви отримуєте шкоду від цього стану, коли використовуєте основну дію не у свій хід. Наприклад, фірмова здібність, використана як безкоштовна тригерна дія за допомогою здібності «Удар зараз» тактика, спричиняє шкоду від стану кровотечі.`;
 
 	static dazed = `
-A creature who is dazed can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A dazed creature also can’t use triggered actions, free triggered actions, or free maneuvers.`;
+Істота з цим станом може виконати лише одну дію за хід: основну дію, маневр або дію переміщення. Також така істота не може використовувати тригерні дії, безкоштовні тригерні дії чи безкоштовні маневри.`;
 
 	static frightened = `
-When a creature is frightened, any ability roll they make against the source of their fear takes a bane. If that source is a creature, their ability rolls made against the frightened creature gain an edge. A frightened creature can’t willingly move closer to the source of their fear if they know the location of that source. If a creature gains the frightened condition from one source while already frightened by a different source, the new condition replaces the old one.`;
+Коли істота налякана, будь-який кидок здібності проти джерела страху отримує шкоду. Якщо джерело — інша істота, її кидки проти наляканої істоти отримують перевагу. Налякана істота не може свідомо наближатися до джерела страху, якщо знає його місцезнаходження. Якщо істота отримує цей стан від нового джерела, попередній стан страху замінюється новим.`;
 
 	static grabbed = `
-A creature who is grabbed has speed 0, can’t be force moved except by a creature, object, or effect that has them grabbed, can’t use the Knockback maneuver, and takes a bane on abilities that don’t target the creature, object, or effect that has them grabbed. If a creature is grabbed by another creature and that creature moves, they bring the grabbed creature with them. If a creature’s size is equal to or less than the size of a creature they have grabbed, their speed is halved while they have that creature grabbed.
+Істота, яку схопили, має швидкість 0, не може бути примусово переміщена, окрім як істотою, обʼєктом чи ефектом, що її схопив, не може використовувати маневр «Відштовхування» й отримує шкоду на здібності, які не спрямовані на того, хто її схопив. Якщо істоту схопила інша істота й рухається, вона тягне схоплену істоту за собою. Якщо розмір істоти дорівнює або менший за розмір тієї, кого вона схопила, її швидкість удвічі менша, поки вона тримає цю істоту.
 
-A creature who has another creature grabbed can use a maneuver to move the grabbed creature into an unoccupied space adjacent to them.
+Істота, що схопила іншу, може використати маневр, щоб перемістити схоплену істоту на вільну клітинку поруч із собою.
 
-A creature can release a creature they have grabbed at any time to end that condition (no action required). A grabbed creature can attempt to escape being grabbed using the Escape Grab maneuver. If a grabbed creature teleports, or if either the grabbed creature or the creature grabbing them is force moved so that both creatures are not adjacent to each other, that creature is no longer grabbed.
+Істота може відпустити схоплену істоту будь-коли (без дії). Схоплена істота може спробувати вирватися за допомогою маневру «Вирватися». Якщо схоплена істота телепортується або якщо будь-хто з пари перестає бути сусідом, стан закінчується.
 
-A creature can grab only creatures of their size or smaller. If a creature’s Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
+Істота може схопити лише істот свого розміру або менших. Якщо її Сила 2 або більше, вона може схопити істоту більшого розміру, якщо її розмір не перевищує значення Сили.
 
-Unless otherwise indicated, a creature can grab only one creature at a time.`;
+Якщо не зазначено інше, істота може схопити лише одну істоту одночасно.`;
 
 	static prone = `
-While a creature is prone, they are flat on the ground, any strike they make takes a bane, and melee abilities used against them gain an edge. A prone creature must crawl to move along the ground, which costs 1 additional square of movement for every square crawled. A creature can’t climb, jump, swim, or fly while prone. If they are climbing, flying, or jumping when knocked prone, they fall.
+Поки істота лежить, вона знаходиться на землі, будь-який її удар отримує шкоду, а здібності ближнього бою проти неї отримують перевагу. Щоб рухатися, істота має повзти, витрачаючи на кожну клітинку на 1 більше руху. Вона не може лазити, стрибати, плавати чи літати, поки лежить. Якщо істота лежить під час лазіння, польоту чи стрибка, вона падає.
 
-Unless the ability or effect that imposed the prone condition says otherwise, a prone creature can stand up using the Stand Up maneuver. A creature adjacent to a willing prone creature can likewise use the Stand Up maneuver to make that creature stand up.`;
+Якщо не зазначено інше, істота може підвестися за допомогою маневру «Підвестися». Істота поруч із добровільною лежачою істотою також може використати цей маневр, щоб підняти її.`;
 
 	static restrained = `
-A creature who is restrained has speed 0, can’t use the Stand Up maneuver, and can’t be force moved. A restrained creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
+Істота зі станом сковування має швидкість 0, не може підвестися й не може бути примусово переміщена. Вона отримує шкоду на кидки здібностей і випробування Сили та Ловкості, а здібності проти неї отримують перевагу.
 
-If a creature teleports while restrained, that condition ends.`;
+Якщо істота телепортується, стан сковування закінчується.`;
 
 	static slowed = `
-A creature who is slowed has speed 2 unless their speed is already lower, and they can’t shift.`;
+Істота з цим станом має швидкість 2, якщо її швидкість не нижча, і не може зміщуватися.`;
 
 	static taunted = `
-A creature who is taunted has a double bane on ability rolls for any ability that doesn’t target the creature who taunted them, as long as they have line of effect to that creature. If a creature gains the taunted condition from one source while already taunted by a different source, the new condition replaces the old one.`;
+Істота з цим станом отримує подвійну шкоду на кидки здібностей для будь-якої здібності, що не спрямована на того, хто її насміхнув, якщо є пряма видимість. Якщо істота отримує цей стан від нового джерела, попередній стан насмішки замінюється новим.`;
 
 	static weakened = `
-A creature who is weakened takes a bane on power rolls.`;
+Істота з цим станом отримує шкоду на кидки сили.`;
 }
