@@ -10,7 +10,7 @@ export const columnOfBlades: Terrain = {
 	id: 'terrain-column-of-blades',
 	name: 'Column of Blades',
 	description:
-    'A spinning wooden column is affixed with sharp blades to slash the unwary.',
+		'A spinning wooden column is affixed with sharp blades to slash the unwary.',
 	category: TerrainCategory.Mechanism,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(
@@ -45,7 +45,7 @@ export const columnOfBlades: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A creature or object moves adjacent to the column of blades.'
+						'A creature or object moves adjacent to the column of blades.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -71,9 +71,9 @@ export const columnOfBlades: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage',
-									tier2: '6 damage; M<2 bleeding (save ends)',
-									tier3: '9 damage; M<3 bleeding (save ends)'
+									tier1: '4 шкоди',
+									tier2: '6 шкоди; С < 2 кровотеча (рят. кидок завершує)',
+									tier3: '9 шкоди; С < 3 кровотеча (рят. кидок завершує)'
 								})
 							)
 						]
@@ -146,9 +146,9 @@ export const columnOfBlades: Terrain = {
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 2,
-											tier1: '5 damage',
-											tier2: '8 damage; M<2 dazed (save ends)',
-											tier3: '11 damage; M<3 dazed (save ends)'
+											tier1: '5 шкоди',
+											tier2: '8 шкоди; С < 2 приголомшений (рят. кидок завершує)',
+											tier3: '11 шкоди; С < 3 приголомшений (рят. кидок завершує)'
 										})
 									)
 								]
@@ -207,7 +207,7 @@ export const dartTrap: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A pressure plate, switch, or other linked trigger is activated.'
+						'A pressure plate, switch, or other linked trigger is activated.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -233,9 +233,9 @@ export const dartTrap: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '2 damage',
-									tier2: '4 damage',
-									tier3: '5 damage'
+									tier1: '2 шкоди',
+									tier2: '4 шкоди',
+									tier3: '5 шкоди'
 								})
 							)
 						]
@@ -287,7 +287,7 @@ export const pillar: Terrain = {
 	id: 'terrain-pillar',
 	name: 'Pillar',
 	description:
-    'This stone pillar can be toppled onto unsuspecting foes with the right amount of damage or a well-engineered trigger mechanism.',
+		'This stone pillar can be toppled onto unsuspecting foes with the right amount of damage or a well-engineered trigger mechanism.',
 	category: TerrainCategory.Mechanism,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(
@@ -322,7 +322,7 @@ export const pillar: Terrain = {
 					id: 'trigger',
 					name: 'Trigger',
 					description:
-            'The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.'
+						'The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -351,9 +351,9 @@ export const pillar: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage',
-									tier2: '6 damage; M<1 restrained (save ends)',
-									tier3: '9 damage; M<2 restrained (save ends)'
+									tier1: '4 шкоди',
+									tier2: '6 шкоди; С < 1 скутий (рят. кидок завершує)',
+									tier3: '9 шкоди; С < 2 скутий (рят. кидок завершує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
@@ -391,7 +391,7 @@ export const hiddenPortcullis: Terrain = {
 	id: 'terrain-portcullis',
 	name: 'Portcullis',
 	description:
-    'A portcullis is hidden in the ceiling of a passage or choke point waiting to drop when activated.',
+		'A portcullis is hidden in the ceiling of a passage or choke point waiting to drop when activated.',
 	category: TerrainCategory.Mechanism,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(
@@ -430,7 +430,7 @@ export const hiddenPortcullis: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A pressure plate, switch, or other linked trigger is activated.'
+						'A pressure plate, switch, or other linked trigger is activated.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -456,9 +456,9 @@ export const hiddenPortcullis: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '3 damage; slide 1, ignoring stability',
-									tier2: '7 damage; a<2] restrained (save ends)',
-									tier3: '10 damage; a<3] restrained (save ends)'
+									tier1: '3 шкоди; зсунути на 1, ігноруючи стійкість',
+									tier2: '7 шкоди; С < 2 скутий (рят. кидок завершує)',
+									tier3: '10 шкоди; С < 3 скутий (рят. кидок завершує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
@@ -491,7 +491,7 @@ export const pressurePlate: Terrain = {
 	id: 'terrain-pressure-plate',
 	name: 'Pressure Plate',
 	description:
-    'This mechanism acts as a trigger for another linked mechanism, and is skillfully hidden from view in the floor.',
+		'This mechanism acts as a trigger for another linked mechanism, and is skillfully hidden from view in the floor.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -530,7 +530,7 @@ export const pressurePlate: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'The pressure plate is calibrated to be triggered by creatures or objects of a particular size. The pressure plate triggers when a creature or object of the appropriate size enters its area.'
+						'The pressure plate is calibrated to be triggered by creatures or objects of a particular size. The pressure plate triggers when a creature or object of the appropriate size enters its area.'
 				})
 			]
 		},
@@ -541,7 +541,7 @@ export const pressurePlate: Terrain = {
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The linked mechanism is activated. A pressure plate automatically resets and can be triggered repeatedly.'
+						'The linked mechanism is activated. A pressure plate automatically resets and can be triggered repeatedly.'
 				})
 			]
 		},
@@ -552,7 +552,7 @@ export const pressurePlate: Terrain = {
 					id: 'hidden',
 					name: 'Hidden',
 					description:
-            'The pressure plate is hidden until triggered or detected.'
+						'The pressure plate is hidden until triggered or detected.'
 				})
 			]
 		}
@@ -576,7 +576,7 @@ export const pulley: Terrain = {
 	id: 'terrain-pulley',
 	name: 'Pulley',
 	description:
-    'A counterweighted pulley system can be used to quickly ascend to the top of a wall, scaffold, tower, or other structure.',
+		'A counterweighted pulley system can be used to quickly ascend to the top of a wall, scaffold, tower, or other structure.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -615,13 +615,13 @@ export const pulley: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A creature adjacent to the pulley uses a maneuver to release the pulley.'
+						'A creature adjacent to the pulley uses a maneuver to release the pulley.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The triggering creature is lifted to the top of the structure the pulley is attached to. The pulley must be manually reset.'
+						'The triggering creature is lifted to the top of the structure the pulley is attached to. The pulley must be manually reset.'
 				})
 			]
 		},
@@ -632,7 +632,7 @@ export const pulley: Terrain = {
 					id: 'climbable',
 					name: 'Climbable',
 					description:
-            'A creature adjacent to the pulley can climb its ropes with an **easy Agility test** to ascend to the top of the structure it’s attached to.'
+						'A creature adjacent to the pulley can climb its ropes with an **easy Agility test** to ascend to the top of the structure it’s attached to.'
 				})
 			]
 		}
@@ -656,7 +656,7 @@ export const ram: Terrain = {
 	id: 'terrain-ram',
 	name: 'Ram',
 	description:
-    'A heavy wooden ram drops down or swings into the fray, crushing all in its path.',
+		'A heavy wooden ram drops down or swings into the fray, crushing all in its path.',
 	category: TerrainCategory.Mechanism,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(
@@ -695,7 +695,7 @@ export const ram: Terrain = {
 					id: 'trigger',
 					name: 'Trigger',
 					description:
-            'A pressure plate, switch, or other linked trigger is activated.'
+						'A pressure plate, switch, or other linked trigger is activated.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -721,9 +721,9 @@ export const ram: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '3 damage; slide 1, ignoring stability',
-									tier2: '6 damage; push 3',
-									tier3: '9 damage; push 5'
+									tier1: '3 шкоди; зсунути на 1, ігноруючи стійкість',
+									tier2: '6 шкоди; відштовхнути на 3',
+									tier3: '9 шкоди; відштовхнути на 5'
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
@@ -792,7 +792,7 @@ export const switchTerrain: Terrain = {
 	id: 'terrain-switch',
 	name: 'Switch',
 	description:
-    'Set into any surface, this mechanism acts as a trigger for another linked mechanism.',
+		'Set into any surface, this mechanism acts as a trigger for another linked mechanism.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -831,13 +831,13 @@ export const switchTerrain: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A creature adjacent to the switch uses a maneuver to trigger it.'
+						'A creature adjacent to the switch uses a maneuver to trigger it.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The linked mechanism is activated. A switch automatically resets and can be triggered repeatedly.'
+						'The linked mechanism is activated. A switch automatically resets and can be triggered repeatedly.'
 				})
 			]
 		}

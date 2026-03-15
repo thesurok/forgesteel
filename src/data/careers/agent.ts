@@ -10,15 +10,15 @@ export const agent: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-1',
-			selected: ['Sneak']
+			selected: [ 'Sneak' ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-2',
-			listOptions: [SkillList.Interpersonal]
+			listOptions: [ SkillList.Interpersonal ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-agent-feature-3',
-			listOptions: [SkillList.Intrigue]
+			listOptions: [ SkillList.Intrigue ]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-agent-feature-4',
@@ -26,7 +26,7 @@ export const agent: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-agent-feature-5',
-			lists: [PerkList.Intrigue]
+			lists: [ PerkList.Intrigue ]
 		})
 	],
 	incitingIncidents: {

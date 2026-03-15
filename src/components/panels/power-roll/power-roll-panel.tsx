@@ -28,8 +28,8 @@ interface Props {
 }
 
 export const PowerRollPanel = (props: Props) => {
-	const [distance, setDistance] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
-	const [showOdds, setShowOdds] = useState<boolean>(false);
+	const [ distance, setDistance ] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
+	const [ showOdds, setShowOdds ] = useState<boolean>(false);
 
 	const getHeader = () => {
 		if (props.test) {

@@ -19,18 +19,18 @@ export const RecoveriesComponent = (props: Props) => {
 			<LabeledTextField
 				label='Відновлення'
 				content={(showState && recoveries.current?.toString()) || ''}
-				additionalClasses={['label-above', 'fancy']}
+				additionalClasses={[ 'label-above', 'fancy' ]}
 			/>
 			<div className='reference'>
 				<LabeledTextField
 					label='Витривалість'
 					content={recoveries.value}
-					additionalClasses={['no-box']}
+					additionalClasses={[ 'no-box' ]}
 				/>
 				<LabeledTextField
 					label='Макс.'
 					content={recoveries.max}
-					additionalClasses={['no-box']}
+					additionalClasses={[ 'no-box' ]}
 				/>
 			</div>
 		</div>

@@ -22,7 +22,7 @@ export const trickery: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-trickery-1-2',
-							listOptions: [SkillList.Intrigue]
+							listOptions: [ SkillList.Intrigue ]
 						})
 					]
 				})
@@ -37,8 +37,8 @@ export const trickery: Domain = {
 						name: 'Божественна комедія',
 						description: 'Ти та твої союзники міняєтеся місцями, щоб збити ворогів з пантелику.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
 						target: 'Ти та кожен союзник у зоні',
 						cost: 5,
 						sections: [
@@ -61,8 +61,8 @@ export const trickery: Domain = {
 						name: 'Благословення таємниць',
 						description: 'Ти створюєш ілюзорну ауру, яка ускладнює помічення тебе та союзників.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						keywords: [ AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
 						target: 'Ти та кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Кожна істота в зоні отримує подвійну перевагу на випробуваннях на приховування або підкрадання. Аура триває, доки ти не припиниш її (без дії) або доки ціль не завдасть шкоди істоті чи обʼєкту.')
@@ -84,8 +84,8 @@ export const trickery: Domain = {
 						name: 'Заклик таємниці',
 						description: '"Тепер ти нас бачиш…"',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
 						target: 'Ти та кожен союзник у зоні',
 						cost: 9,
 						sections: [
@@ -104,8 +104,8 @@ export const trickery: Domain = {
 						name: 'Трійця підступності',
 						description: 'Гей! Я тут. Ні, тут, дурнику.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Ти або один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ти створюєш дві ілюзорні копії цілі, які зʼявляються будь-де в межах дистанції. Ці копії існують до кінця сутички. На кожному зі своїх ходів ціль може перемістити кожну копію на відстань до своєї швидкості. Якщо ціль стає мішенню здібності, вона може безкоштовно переміститися з копією в межах лінії ефекту, зробивши копію мішенню замість себе. Коли копія отримує шкоду, вона знищується.')
@@ -127,8 +127,8 @@ export const trickery: Domain = {
 						name: 'Ніч опускається',
 						description: 'Ти насилаєш темряву, яка заважає лише ворогам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
 						target: 'Особлива',
 						cost: 11,
 						sections: [

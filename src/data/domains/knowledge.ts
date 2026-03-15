@@ -23,7 +23,7 @@ export const knowledge: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-knowledge-1-2',
-							listOptions: [SkillList.Lore]
+							listOptions: [ SkillList.Lore ]
 						})
 					]
 				})
@@ -38,14 +38,14 @@ export const knowledge: Domain = {
 						name: 'Боги наказують — ти підкоряєшся',
 						description: 'Ви говорите голосом свого святого, наказуючи ворогам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Одна істота',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '4 + І священної шкоди; П < [слабкий], перед отриманням шкоди ціль робить безкоштовний удар по цілі, яку ви обираєте',
 									tier2: '7 + І священної шкоди; П < [середній], перед отриманням шкоди ціль використовує здібність на ваш вибір, і ви обираєте цілі для цієї здібності',
 									tier3: '11 + І священної шкоди; П < [сильний], перед отриманням шкоди ціль зміщується на свою швидкість у місце, яке ви обираєте, використовує здібність на ваш вибір, і ви обираєте цілі для цієї здібності'
@@ -83,14 +83,14 @@ export const knowledge: Domain = {
 						name: 'Заклик скасування',
 						description: 'Ви вимовляєте таємне слово руйнування, відоме лише богам.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
 						target: 'Кожен ворог у області',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '3 звукової шкоди; відштовхування 3',
 									tier2: '6 звукової шкоди; відштовхування 5',
 									tier3: '9 звукової шкоди; відштовхування 7'
@@ -125,14 +125,14 @@ export const knowledge: Domain = {
 						name: 'Слово ослаблення',
 						description: 'Ви вимовляєте божественне слово, що робить ворога крихким.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Одна істота або об’єкт',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '10 + І шкоди скверною; Л < [слабкий], ослаблення (рят. кидок завершує)',
 									tier2: '15 + І шкоди скверною; Л < [середній], ослаблення (рят. кидок завершує)',
 									tier3: '21 + І шкоди скверною; Л < [сильний], ослаблення (рят. кидок завершує)'

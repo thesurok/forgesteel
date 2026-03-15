@@ -119,9 +119,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [ Characteristic.Might, Characteristic.Agility ],
-										tier1: '2 + M or A damage; pull 1; A < [weak], grabbed',
-										tier2: '4 + M or A damage; pull 2; A < [average], grabbed',
-										tier3: '6 + M or A damage; pull 3; A < [strong], grabbed'
+										tier1: '2 + С або Л шкоди; притягнути на 1; Л < [слабкий], схоплений',
+										tier2: '4 + С або Л шкоди; притягнути на 2; Л < [середній], схоплений',
+										tier3: '6 + С або Л шкоди; притягнути на 3; Л < [сильний], схоплений'
 									})
 								),
 								FactoryLogic.createAbilitySectionText('If you grab the target this way, they don\'t count towards your limit of grabbed creatures.')

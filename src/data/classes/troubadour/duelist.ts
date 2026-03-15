@@ -6,25 +6,25 @@ import { SubClass } from '@/models/subclass';
 
 export const duelist: SubClass = {
 	id: 'O51GO1EdIggJHj40',
-	name: 'Duelist',
-	description: 'Drama infuses your every movement done in tandem with another. You perform dances of death, putting trust in your opponent to return your passion in kind.',
+	name: 'Дуеліст',
+	description: 'Драма пронизує кожен ваш рух, виконаний у парі з іншим. Ви виконуєте танці смерті, покладаючись на супротивника, що він відповість вам взаємністю.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '1NhlI9WCQUCKkX0u',
-					selected: ['Gymnastics']
+					selected: [ 'Gymnastics' ]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'gTezUhLaizAfbmXy',
-						name: 'Acrobatics',
-						description: 'Folks love a good tumble.',
+						name: 'Акробатика',
+						description: 'Глядачам подобається видовищний кульбіт.',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
-						target: 'Self and each ally in the area',
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						target: 'Ви та кожний союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, може автоматично отримати результат 3-го рівня в одному випробуванні на стрибок, перекид або лазіння як частину свого переміщення до кінця свого ходу.')
 						]
@@ -33,16 +33,16 @@ export const duelist: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'vS4O8NKJgdBVoVjj',
-						name: 'Star Power',
-						description: 'Your years of practicing fencing and dancing pay off on the battlefield.',
+						name: 'Зіркова сила',
+						description: 'Роки практики фехтування й танців дають плоди на полі бою.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Self',
+						distance: [ FactoryLogic.distance.createMelee() ],
+						target: 'Ви',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ви отримуєте +2 до швидкості до кінця свого ходу. Крім того, наступний кидок сили, який ви зробите цього ходу, не може мати результат нижче 2-го рівня.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You gain a +4 bonus to speed instead.'
+								effect: 'Натомість ви отримуєте +4 до швидкості.'
 							})
 						]
 					})
@@ -50,12 +50,12 @@ export const duelist: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'uWQCoI4iBOhFpHgW',
-						name: 'Riposte',
-						description: '“I’d have brought treats had I known I’d be fighting a dog.”',
-						type: FactoryLogic.type.createTrigger('The target takes damage from a melee strike.'),
-						keywords: [AbilityKeyword.Melee],
-						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Self or one ally',
+						name: 'Ріпост',
+						description: '«Якби я знав, що битимуся з собакою, я б приніс ласощі.»',
+						type: FactoryLogic.type.createTrigger('Ціль отримує шкоду від ближнього удару.'),
+						keywords: [ AbilityKeyword.Melee ],
+						distance: [ FactoryLogic.distance.createMelee() ],
+						target: 'Ви або один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ціль робить безкоштовний удар по істоті, яка завдала тригерного удару.')
 						]
@@ -68,18 +68,18 @@ export const duelist: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'lAPeP3iSpt8PqQJI',
-					name: '2nd-Level Class Act Ability',
+					name: 'Здібність класу (2 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'FViXbLCcsCb1xdHQ',
-									name: 'Classic Chandelier Stunt',
-									description: 'Audiences love this bit.',
+									name: 'Класичний трюк з люстрою',
+									description: 'Глядачам це подобається.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'Self and one willing ally',
+									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Ви та один охочий союзник',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Кожна ціль може зміститися до 5 клітинок, включно по вертикалі, але має завершити це переміщення поруч з іншою ціллю і на твердій поверхні. Потім кожна ціль може зробити ближній безкоштовний удар, який завдає додаткової шкоди, що дорівнює подвійному значенню їхньої найвищої характеристики.')
@@ -93,19 +93,19 @@ export const duelist: SubClass = {
 								ability: FactoryLogic.createAbility({
 									id: 'MRR7Ag6ujfREe9A8',
 									name: 'En Garde!',
-									description: 'Wait, it’s … Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!',
+									description: 'Стій! Охорона! Поворот! Парі! Ухил! Оберт! Удар! Ха!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature',
+									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Agility],
-												tier1: '7 + A damage',
-												tier2: '11 + A damage',
-												tier3: '16 + A damage'
+												characteristic: [ Characteristic.Agility ],
+												tier1: '7 + Л шкоди',
+												tier2: '11 + Л шкоди',
+												tier3: '16 + Л шкоди'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('Ціль може зробити ближній безкоштовний удар по вам. Якщо вона це робить, ви можете зробити ближній безкоштовний удар по цілі.')
@@ -123,9 +123,8 @@ export const duelist: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'TkRYPzOk7E7KosGI',
-					name: 'Foil',
-					description: `At the start of an encounter, choose one creature within your line of effect. You have a double edge on power rolls made against or in
-competition with that creature. The chosen creature also has a double edge on power rolls made against or in competition with you. If the chosen creature is reduced to 0 Stamina, you can choose a new foil at the start of the next combat round. `
+					name: 'Контрзавдання',
+					description: 'На початку зустрічі оберіть одну істоту у межах вашої лінії ефекту. Ви маєте подвійну перевагу на кидках сили, спрямованих проти або у конкуренції з цією істотою. Обрана істота також має подвійну перевагу на кидках сили, спрямованих проти або у конкуренції з вами. Якщо обрана істота зменшується до 0 Витривалості, ви можете обрати нову контрзавдання на початку наступного раунду бою.'
 				})
 			]
 		},
@@ -138,13 +137,13 @@ competition with that creature. The chosen creature also has a double edge on po
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'AYG8ODq4Xvn4vWMr',
-					name: '5th-Level Class Act Feature',
+					name: 'Здібність класу (5 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'EpJ6mBFE2kfCK1IY',
-								name: 'Verbal Duel',
-								description: 'Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a free maneuver to exchange words with them. Make an opposed Presence test with the target. Whoever gets the higher result can make a free strike, which deals psychic damage instead of its usual damage.'
+								name: 'Словесна дуель',
+								description: 'Одного разу в кожному вашому ході, поки ціль вашої риси «Контрзавдання» знаходиться поруч, ви можете використати безкоштовний маневр, щоб обмінятися словами з нею. Зробіть протиставлений тест на Присутність з ціллю. Той, хто отримає вищий результат, може зробити безкоштовний удар, який завдає психічної шкоди замість звичайної.'
 							}),
 							value: 1
 						},
@@ -152,12 +151,12 @@ competition with that creature. The chosen creature also has a double edge on po
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'TqxhltwD22GJjGkU',
-									name: 'We Can’t Be Upstaged!',
-									description: 'Swordplay so graceful it looks like you all practiced this.',
+									name: 'Нас не затьмарити!',
+									description: 'Фехтування таке витончене, що здається, ніби ви всі репетирували це разом.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
-									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
-									target: 'Self and each ally in the area',
+									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
+									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									target: 'Ви та кожний союзник у зоні',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Поки цей виступ активний, ціль, яка починає свій хід у зоні, отримує бонус до дистанції зміщення, що дорівнює вашому показнику Присутності, до кінця свого ходу.')
 									]
@@ -174,26 +173,26 @@ competition with that creature. The chosen creature also has a double edge on po
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'AkvymN5wTwBpvJk6',
-					name: '6th-Level Class Act Ability',
+					name: 'Здібність класу (6 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'gCxHNxuFdPtoWOSw',
-									name: 'Blood on the Stage',
-									description: 'It’s love and blood or drama and blood. Either way, there’s always blood.',
+									name: 'Кров на сцені',
+									description: 'Тут і любов, і кров, або драма й кров. У будь-якому разі — завжди кров.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature or object',
+									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Одна істота або обʼєкт',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Agility],
-												tier1: '12 + A damage; M < [weak], bleeding (save ends)',
-												tier2: '18 + A damage; M < [average], bleeding (save ends)',
-												tier3: '24 + A damage; bleeding (EoT), or if M < [strong], bleeding (save ends)'
+												characteristic: [ Characteristic.Agility ],
+												tier1: '12 + Л шкоди; С < [слабкий], кровотеча (завершується рят. кидком)',
+												tier2: '18 + Л шкоди; С < [середній], кровотеча (завершується рят. кидком)',
+												tier3: '24 + Л шкоди; кровотеча (до кінця ходу), або якщо С < [сильний], кровотеча (завершується рят. кидком)'
 											})
 										)
 									]
@@ -205,12 +204,12 @@ competition with that creature. The chosen creature also has a double edge on po
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'yzRbbBkrzCSPBh1w',
-									name: 'Fight Choreography',
-									description: 'You and your partner make a flashy show of derring-do, then get back to your corners.',
+									name: 'Хореографія бою',
+									description: 'Ви та ваш партнер робите показовий яскравий виступ, а потім повертаєтесь по своїх місцях.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature',
+									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви і ціль кожен робите ближній безкоштовний удар, який цілить у кожного ворога в межах 3 клітинок від кожного з вас, розподіляючи ворогів між собою. Ви обираєте, яких ворогів цілить ваш удар, а яких — удар цільової істоти. Потім ви зсуваєте ціль на 5 клітинок, ігноруючи стійкість.')
@@ -232,10 +231,10 @@ competition with that creature. The chosen creature also has a double edge on po
 			features: [
 				FactoryLogic.feature.create({
 					id: 'FwA0rbxGHrD7Oj2H',
-					name: 'Masterwork',
-					description: `Choose one of your signature abilities and name it after yourself. You always have this ability available, even if it is sourced from a kit you switch out. Whenever you use this ability, you gain an edge and 1 surge that you can use only on this ability.
+					name: 'Шедевр',
+					description: `Оберіть одну зі своїх підписних здібностей і назвіть її своїм імʼям. Ви завжди маєте цю здібність доступною, навіть якщо вона походить з набору, який ви замінюєте. Коли ви використовуєте цю здібність, ви отримуєте перевагу та 1 сплеск, який можна витратити лише на цю здібність.
 
-Additionally, when your named signature ability is the last ability you use in an encounter, you can immediately use the Hear Ye, Hear Ye! effect of your Zeitgeist feature to tell tales of your exploits after the encounter ends`
+Додатково, коли названа вами підписна здібність є останньою, яку ви використовуєте в зустрічі, ви можете негайно використати ефект «Hear Ye, Hear Ye!» вашої риси «Zeitgeist», щоб розповісти історії про ваші подвиги після завершення зустрічі.`
 				})
 			]
 		},
@@ -244,26 +243,26 @@ Additionally, when your named signature ability is the last ability you use in a
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'qIMKE6V6R4w2teMf',
-					name: '9th-Level Class Act Ability',
+					name: 'Здібність класу (9 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: '4LyAtdASe3AEJaon',
-									name: 'Expert Fencer',
-									description: 'If you can land the strike, the crowd goes wild.',
+									name: 'Майстерний фехтувальник',
+									description: 'Якщо вам вдасться влучити ударом, натовп шаленіє.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee(3)],
-									target: 'One creature or object',
+									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee(3) ],
+									target: 'Одна істота або обʼєкт',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Agility],
-												tier1: '15 + A damage',
-												tier2: '21 + A damage',
-												tier3: '28 + A damage; M < [strong], bleeding (save ends)'
+												characteristic: [ Characteristic.Agility ],
+												tier1: '15 + Л шкоди',
+												tier2: '21 + Л шкоди',
+												tier3: '28 + Л шкоди; якщо С < [сильний], кровотеча (завершується рят. кидком)'
 											})
 										)
 									]
@@ -275,21 +274,21 @@ Additionally, when your named signature ability is the last ability you use in a
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'IZCTPQBJer4fFuKi',
-									name: 'Renegotiated Contract',
-									description: 'No, no. You don’t die until the sequel.',
+									name: 'Переговорений контракт',
+									description: 'Ні, ні. Ви не вмираєте, доки не вийде сіквел.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature',
+									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Додайте вашу поточну Витривалість до поточної Витривалості цілі, потім ви маєте половину цієї суми, а ціль — залишок. Якщо хтось із вас отримує більше Витривалості, ніж його максимум, різницю отримує інша істота. Жоден із вас не може отримати більше Витривалості, ніж його максимум, цим способом. Потім ви робите кидок сили.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Presence],
-												tier1: 'You and the target can each end one effect on yourselves that is ended by a saving throw or that ends at the end of your turns.',
-												tier2: 'You and the target can end any effects on yourselves that are ended by a saving throw or that end at the end of your turns.',
-												tier3: 'You can choose any of the current effects on you and the target that are ended by a saving throw or that end at the end of your turns, apply the chosen effects to the target, and end the rest.'
+												characteristic: [ Characteristic.Presence ],
+												tier1: 'Ви та ціль можете кожен скасувати один ефект на собі, який скасовується рятівним кидком або який закінчується наприкінці ваших ходів.',
+												tier2: 'Ви та ціль можете скасувати будь-які ефекти на собі, які скасовуються рятівним кидком або які закінчуються наприкінці ваших ходів.',
+												tier3: 'Ви можете обрати будь-які поточні ефекти на вас і на цілі, що скасовуються рятівним кидком або закінчуються наприкінці ходів, застосувати обрані ефекти до цілі та завершити інші.'
 											})
 										)
 									]

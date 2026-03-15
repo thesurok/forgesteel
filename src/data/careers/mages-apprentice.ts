@@ -11,11 +11,11 @@ export const magesApprentice: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'mages-apprentice-feature-1',
-			selected: ['Magic']
+			selected: [ 'Magic' ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'mages-apprentice-feature-2',
-			listOptions: [SkillList.Lore],
+			listOptions: [ SkillList.Lore ],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -28,7 +28,7 @@ export const magesApprentice: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'mages-apprentice-feature-5',
-			lists: [PerkList.Supernatural]
+			lists: [ PerkList.Supernatural ]
 		})
 	],
 	incitingIncidents: {

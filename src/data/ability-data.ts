@@ -10,13 +10,13 @@ export class AbilityData {
 		name: 'Вільний удар (ближній)',
 		description: '',
 		type: FactoryLogic.type.createFreeStrike(),
-		keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-		distance: [FactoryLogic.distance.createMelee()],
+		keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+		distance: [ FactoryLogic.distance.createMelee() ],
 		target: 'Одна істота або предмет',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [Characteristic.Might, Characteristic.Agility],
+					characteristic: [ Characteristic.Might, Characteristic.Agility ],
 					tier1: '2 + С або Л шкоди',
 					tier2: '5 + С або Л шкоди',
 					tier3: '7 + С або Л шкоди'
@@ -30,13 +30,13 @@ export class AbilityData {
 		name: 'Вільний удар (дальний)',
 		description: '',
 		type: FactoryLogic.type.createFreeStrike(),
-		keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
-		distance: [FactoryLogic.distance.createRanged(5)],
+		keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+		distance: [ FactoryLogic.distance.createRanged(5) ],
 		target: 'Одна істота або предмет',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [Characteristic.Might, Characteristic.Agility],
+					characteristic: [ Characteristic.Might, Characteristic.Agility ],
 					tier1: '2 + С або Л шкоди',
 					tier2: '4 + С або Л шкоди',
 					tier3: '6 + С або Л шкоди'
@@ -110,8 +110,8 @@ export class AbilityData {
 		id: 'claw-dirt',
 		name: 'Копнути ґрунт',
 		description: '',
-		type: FactoryLogic.type.createManeuver({ qualifiers: ['можна використовувати, якщо ваша швидкість щонайменше 2'] }),
-		distance: [FactoryLogic.distance.createSelf()],
+		type: FactoryLogic.type.createManeuver({ qualifiers: [ 'можна використовувати, якщо ваша швидкість щонайменше 2' ] }),
+		distance: [ FactoryLogic.distance.createSelf() ],
 		target: 'Сам',
 		sections: [
 			FactoryLogic.createAbilitySectionRoll(
@@ -130,13 +130,13 @@ export class AbilityData {
 		name: 'Втекти з захвату',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		distance: [FactoryLogic.distance.createSelf()],
+		distance: [ FactoryLogic.distance.createSelf() ],
 		target: 'Сам',
 		sections: [
 			FactoryLogic.createAbilitySectionText('Істота, яку захопила інша істота, предмет або ефект, може спробувати вирватися, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [Characteristic.Might, Characteristic.Agility],
+					characteristic: [ Characteristic.Might, Characteristic.Agility ],
 					tier1: 'Без ефекту.',
 					tier2: 'Ви можете вирватися з захвату, але якщо це станеться, істота, яка вас тримає, може зробити ближній вільний удар проти вас, перш ніж ви перестанете бути захопленими.',
 					tier3: 'Ви більше не захоплені.'
@@ -161,14 +161,14 @@ export class AbilityData {
 		name: 'Схопити',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
-		distance: [FactoryLogic.distance.createMelee()],
+		keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
+		distance: [ FactoryLogic.distance.createMelee() ],
 		target: 'Одна істота',
 		sections: [
 			FactoryLogic.createAbilitySectionText('Істота, яка хоче тримати ворога поруч і обеззброїти його, може спробувати схопити цю істоту, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [Characteristic.Might],
+					characteristic: [ Characteristic.Might ],
 					tier1: 'Без ефекту',
 					tier2: 'Ви можете схопити ціль, але якщо ви це зробите, ціль може зробити проти вас ближній вільний удар, перш ніж її буде схоплено.',
 					tier3: 'Ціль схоплена вами.'
@@ -195,14 +195,14 @@ export class AbilityData {
 		name: 'Відштовхнути',
 		description: '',
 		type: FactoryLogic.type.createManeuver(),
-		keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
-		distance: [FactoryLogic.distance.createMelee()],
+		keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
+		distance: [ FactoryLogic.distance.createMelee() ],
 		target: 'Одна істота',
 		sections: [
 			FactoryLogic.createAbilitySectionText('Істота, яка хоче відштовхнути сусідню істоту від себе, може спробувати штовхнути цю істоту, використавши цю здатність.'),
 			FactoryLogic.createAbilitySectionRoll(
 				FactoryLogic.createPowerRoll({
-					characteristic: [Characteristic.Might],
+					characteristic: [ Characteristic.Might ],
 					tier1: 'Відштовхнути на 1',
 					tier2: 'Відштовхнути на 2',
 					tier3: 'Відштовхнути на 3'

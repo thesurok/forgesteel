@@ -22,7 +22,7 @@ export const life: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-life-1-2',
-							listOptions: [SkillList.Exploration]
+							listOptions: [ SkillList.Exploration ]
 						})
 					]
 				})
@@ -37,8 +37,8 @@ export const life: Domain = {
 						name: 'Джерело благодаті',
 						description: 'Світле сяйво виходить із вашого тіла, зцілюючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
 						target: 'Кожен союзник у зоні',
 						cost: 5,
 						sections: [
@@ -75,8 +75,8 @@ export const life: Domain = {
 						name: 'Оживлююча благодать',
 						description: 'Жестом ви відновлюєте своє здоровʼя та здоровʼя союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
 						target: 'Ви та кожен союзник у зоні',
 						cost: 9,
 						sections: [
@@ -111,8 +111,8 @@ export const life: Domain = {
 						name: 'Сяйво благодаті',
 						description: 'Із вашого тіла виривається яскраве світло, зцілюючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Чотири союзники',
 						cost: 11,
 						sections: [

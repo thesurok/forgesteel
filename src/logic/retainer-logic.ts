@@ -199,11 +199,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '5 damage; M < [weak] bleeding (save ends)',
-									tier2: '9 damage; M < [average] bleeding (save ends)',
-									tier3: '12 damage; M [strong] bleeding (save ends)'
+									tier1: '5 шкоди; С < [слабкий], кровотеча (рят. кидок завершує)',
+									tier2: '9 шкоди; С < [середній], кровотеча (рят. кидок завершує)',
+									tier3: '12 шкоди; С < [сильний], кровотеча (рят. кидок завершує)'
 								})),
-								FactoryLogic.createAbilitySectionText('If the target is grabbed or the retainer had an edge on the power roll, the retainer gains 2 surges.')
+								FactoryLogic.createAbilitySectionText('Якщо ціль схоплена або ретейнер мав перевагу на кидку сили, ретейнер отримує 2 сплески.')
 							]
 						})
 					}),
@@ -221,11 +221,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '7 damage; M < [weak] slowed (EoT)',
-									tier2: '10 damage; M < [average] slowed (save ends)',
-									tier3: '15 damage; M < [strong] slowed and target can’t use triggered actions (save ends)'
+									tier1: '7 шкоди; С < [слабкий], сповільнений (до кінця ходу)',
+									tier2: '10 шкоди; С < [середній], сповільнений (рят. кидок завершує)',
+									tier3: '15 шкоди; С < [сильний], сповільнений і ціль не може використовувати тригерні дії (рят. кидок завершує)'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer and their mentor can each move up to their speed.')
+								FactoryLogic.createAbilitySectionText('Ретейнер та його ментор можуть кожен переміститись на відстань до свого показника швидкості.')
 							]
 						})
 					}),
@@ -243,11 +243,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '11 damage; if the target is size 1 or smaller, who has M < [weak] is grabbed',
-									tier2: '16 damage; if the target is size 1 or smaller, who has M < [average] is grabbed',
-									tier3: '21 damage; if the target is size 1 or smaller, who has M < [strong] is grabbed'
+									tier1: '11 шкоди; якщо ціль розміру 1 або менша і має С < [слабкий], вона схоплена',
+									tier2: '16 шкоди; якщо ціль розміру 1 або менша і має С < [середній], вона схоплена',
+									tier3: '21 шкоди; якщо ціль розміру 1 або менша і має С < [сильний], вона схоплена'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer gains 2 surges when any creature makes a strike against a target grabbed this way.')
+								FactoryLogic.createAbilitySectionText('Ретейнер отримує 2 сплески, коли будь-яка істота робить удар по цілі, схопленій таким чином.')
 							]
 						})
 					})
@@ -263,7 +263,7 @@ export class RetainerLogic {
 							distance: [ FactoryLogic.distance.createRanged(5) ],
 							target: 'The triggering creature',
 							sections: [
-								FactoryLogic.createAbilitySectionText('The retainer makes a ranged free strike against the target.')
+								FactoryLogic.createAbilitySectionText('Ретейнер робить дальній безкоштовний удар по цілі.')
 							]
 						})
 					}),
@@ -278,9 +278,9 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '7 damage; M < [weak] prone',
-									tier2: '11 damage; M < [average] prone',
-									tier3: '16 damage; M < [strong] prone'
+									tier1: '7 шкоди; С < [слабкий], розпластаний',
+									tier2: '11 шкоди; С < [середній], розпластаний',
+									tier3: '16 шкоди; С < [сильний], розпластаний'
 								}))
 							]
 						})
@@ -296,11 +296,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '9 damage',
-									tier2: '14 damage',
-									tier3: '19 damage'
+									tier1: '9 шкоди',
+									tier2: '14 шкоди',
+									tier3: '19 шкоди'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer can target a second creature or object within 5 squares of the original target that has line of effect to the original target. The retainer doesn’t need line of effect to the second target but must be aware of their location.')
+								FactoryLogic.createAbilitySectionText('Ретейнер може націлитися на другу істоту або обʼєкт в межах 5 клітинок від початкової цілі, яка має лінію ефекту до початкової цілі. Ретейнеру не потрібна лінія ефекту до другої цілі, але він повинен знати її місцезнаходження.')
 							]
 						})
 					})
@@ -315,7 +315,7 @@ export class RetainerLogic {
 							distance: [ FactoryLogic.distance.createSelf() ],
 							target: 'Self',
 							sections: [
-								FactoryLogic.createAbilitySectionText('Until the start of the retainer’s next turn, strikes made against the retainer gain an edge. At the start of the retainer’s next turn, they gain 2 surges, and any ability they use before the end of their turn that force moves a creature can move that creature 2 additional squares.')
+								FactoryLogic.createAbilitySectionText('До початку наступного ходу ретейнера удари по ретейнеру отримують перевагу. На початку наступного ходу ретейнера він отримує 2 сплески, а будь-яка здібність, яку він використає до кінця свого ходу і яка примушує переміщувати істоту, може перемістити цю істоту ще на 2 клітинки.')
 							]
 						})
 					}),
@@ -330,11 +330,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '8 damage',
-									tier2: '13 damage; push 2',
-									tier3: '16 damage; push 3; M < [strong] prone'
+									tier1: '8 шкоди',
+									tier2: '13 шкоди; Відштовхування 2',
+									tier3: '16 шкоди; Відштовхування 3; С < [сильний], розпластаний'
 								})),
-								FactoryLogic.createAbilitySectionText('If the target ends any forced movement from this ability in a square adjacent to the retainer’s mentor, the mentor can make a melee free strike against them.')
+								FactoryLogic.createAbilitySectionText('Якщо ціль завершує будь-яке примусове переміщення від цієї здібності в клітинці, суміжній до ментора ретейнера, ментор може зробити ближній безкоштовний удар по ній.')
 							]
 						})
 					}),
@@ -349,11 +349,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '10 damage; push 1',
-									tier2: '14 damage; push 2',
-									tier3: '20 damage; push 4'
+									tier1: '10 шкоди; Відштовхування 1',
+									tier2: '14 шкоди; Відштовхування 2',
+									tier3: '20 шкоди; Відштовхування 4'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer is dazed until the end of their next turn.')
+								FactoryLogic.createAbilitySectionText('Ретейнер приголомшений до кінця свого наступного ходу.')
 							]
 						})
 					})
@@ -371,11 +371,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '4 damage; push 2',
-									tier2: '6 damage; push 3',
-									tier3: '10 damage; push 5'
+									tier1: '4 шкоди; Відштовхування 2',
+									tier2: '6 шкоди; Відштовхування 3',
+									tier3: '10 шкоди; Відштовхування 5'
 								})),
-								FactoryLogic.createAbilitySectionText('When the retainer uses this ability, they can choose for it to deal one of the following damage types: acid, cold, lightning, poison, or sonic.')
+								FactoryLogic.createAbilitySectionText('Коли ретейнер використовує цю здібність, він може обрати, щоб вона завдавала одного з наступних типів шкоди: кислотної, холодної, блискавичної, отруйної або звукової.')
 							]
 						})
 					}),
@@ -390,11 +390,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '5 poison damage; M < [weak] prone',
-									tier2: '8 poison damage; M < [average] prone',
-									tier3: '11 poison damage; M < [strong] prone'
+									tier1: '5 отруйної шкоди; С < [слабкий], розпластаний',
+									tier2: '8 отруйної шкоди; С < [середній], розпластаний',
+									tier3: '11 отруйної шкоди; С < [сильний], розпластаний'
 								})),
-								FactoryLogic.createAbilitySectionText('The area is difficult terrain for eenemies. Any enemy has fire weakness 5 while in the area, and any enemy who ends their turn in the area and has no movement remaining falls prone.')
+								FactoryLogic.createAbilitySectionText('Зона є важкопрохідною для ворогів. Кожен ворог має вразливість до вогню 5, поки перебуває в зоні, і будь-який ворог, який закінчує свій хід у зоні і не має залишкового руху, падає розпластаним.')
 							]
 						})
 					}),
@@ -413,7 +413,7 @@ export class RetainerLogic {
 									tier2: '11 damage',
 									tier3: '16 damage'
 								})),
-								FactoryLogic.createAbilitySectionText('The area within 2 squares of the target is difficult terrain, and each enemy in the area takes the same damage that the object took.')
+								FactoryLogic.createAbilitySectionText('Зона в радіусі 2 клітинок від цілі є важкопрохідною, і кожен ворог у цій зоні отримує ту ж шкоду, що й обʼєкт.')
 							]
 						})
 					})
@@ -428,7 +428,7 @@ export class RetainerLogic {
 							distance: [ FactoryLogic.distance.createMelee() ],
 							target: 'The retainer’s mentor',
 							sections: [
-								FactoryLogic.createAbilitySectionText('The retainer pushes the target or the attacking creature up to 2 squares. If that moves the mentor out of range of the strike, the strike has no effect.')
+								FactoryLogic.createAbilitySectionText('Ретейнер штовхає ціль або атакуючу істоту на до 2 клітинок. Якщо це рухає ментора поза діапазон удару, удар не має ефекту.')
 							]
 						})
 					}),
@@ -443,9 +443,9 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '7 damage; taunted (EoT)',
-									tier2: '11 damage; taunted (save ends)',
-									tier3: '16 damage; taunted (save ends)'
+									tier1: '7 шкоди; спровокований (до кінця ходу)',
+									tier2: '11 шкоди; спровокований (рят. кидок завершує)',
+									tier3: '16 шкоди; спровокований (рят. кидок завершує)'
 								}))
 							]
 						})
@@ -465,7 +465,7 @@ export class RetainerLogic {
 									tier2: '13 damage',
 									tier3: '17 damage'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer and their mentor each gain 10 temporary Stamina. Additionally, each winded ally within 2 of the retainer can spend a Recovery.')
+								FactoryLogic.createAbilitySectionText('Ретейнер та його ментор отримують по 10 тимчасової Витривалості. Додатково, кожен захеканий союзник в межах 2 клітинок від ретейнера може витратити одне Відновлення.')
 							]
 						})
 					})
@@ -483,7 +483,7 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '5 damage; push 1',
+									tier1: '5 шкоди; Відштовхування 1',
 									tier2: '9 damage; push 2',
 									tier3: '12 damage; push 4'
 								}))
@@ -505,7 +505,7 @@ export class RetainerLogic {
 									tier2: '10 damage',
 									tier3: '15 damage'
 								})),
-								FactoryLogic.createAbilitySectionText('Before or after the strike, the retainer and their mentor can each shift up to their speed.')
+								FactoryLogic.createAbilitySectionText('До або після удару ретейнер та його ментор можуть кожен зміститися на відстань до своєї швидкості.')
 							]
 						})
 					}),
@@ -524,7 +524,7 @@ export class RetainerLogic {
 									tier2: '16 damage; one target who has M < [average] is grabbed',
 									tier3: '21 damage; one target who has M < [strong] is grabbed'
 								})),
-								FactoryLogic.createAbilitySectionText('The retainer shifts up to 2 squares, and can move a creature grabbed using this ability with them.')
+								FactoryLogic.createAbilitySectionText('Ретейнер зміщується на до 2 клітинок і може перемістити разом із собою істоту, схоплену цією здібністю.')
 							]
 						})
 					})
@@ -542,11 +542,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '2 corruption damage; the target is cursed (EoT)',
-									tier2: '5 corruption damage; the target is cursed (EoT)',
-									tier3: '7 corruption damage; the target is cursed (EoT)'
+									tier1: '2 шкоди від скверни; ціль проклята (до кінця ходу)',
+									tier2: '5 шкоди від скверни; ціль проклята (до кінця ходу)',
+									tier3: '7 шкоди від скверни; ціль проклята (до кінця ходу)'
 								})),
-								FactoryLogic.createAbilitySectionText('While the target is cursed this way, whenever they make a strike that targets only one creature, the retainer can use a free triggered action to choose a second target for the strike within its distance.')
+								FactoryLogic.createAbilitySectionText('Поки ціль проклята таким чином, коли вона робить удар, що націлений лише на одну істоту, ретейнер може використати безкоштовну тригерну дію, щоб обрати другий ціль для удару в межах його дистанції.')
 							]
 						})
 					}),
@@ -561,11 +561,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '5 damage; M < [weak] slowed (save ends)',
-									tier2: '9 damage; M < [average] slowed (save ends)',
-									tier3: '12 damage; M < [strong] slowed (save ends)'
+									tier1: '5 шкоди; С < [слабкий], сповільнений (рят. кидок завершує)',
+									tier2: '9 шкоди; С < [середній], сповільнений (рят. кидок завершує)',
+									tier3: '12 шкоди; С < [сильний], сповільнений (рят. кидок завершує)'
 								})),
-								FactoryLogic.createAbilitySectionText('While the target is slowed this way, if they end their turn without moving on that turn, they are no longer slowed and are restrained (save ends).')
+								FactoryLogic.createAbilitySectionText('Поки ціль сповільнена таким чином, якщо вона завершує свій хід, не рухаючись протягом цього ходу, вона більше не сповільнена та опиняється у стані сковування (рят. кидок закінчує).')
 							]
 						})
 					}),
@@ -580,11 +580,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '7 damage; M < [weak] mazed (save ends)',
-									tier2: '11 damage; M < [average] mazed (save ends)',
-									tier3: '16 damage; M < [strong] mazed (save ends)'
+									tier1: '7 шкоди; С < [слабкий], у лабіринті (рят. кидок завершує)',
+									tier2: '11 шкоди; С < [середній], у лабіринті (рят. кидок завершує)',
+									tier3: '16 шкоди; С < [сильний], у лабіринті (рят. кидок завершує)'
 								})),
-								FactoryLogic.createAbilitySectionText('While mazed, the target is dazed. Additionally, at the end of each of the mazed target’s turns, the retainer can cause the target to move up to their speed in a straight line in a direction of the retainer’s choice. This is not forced movement, and the movement ends if it would cause the target to enter difficult or damaging terrain.')
+								FactoryLogic.createAbilitySectionText('Поки ціль у лабіринті (mazed), вона приголомшена. Додатково, в кінці кожного ходу такої цілі ретейнер може спричинити переміщення цілі на відстань до її швидкості по прямій у напрямку на вибір ретейнера. Це не є примусовим переміщенням, і рух припиняється, якщо він змусив би ціль увійти в важкопрохідну або шкідливу місцевість.')
 							]
 						})
 					})
@@ -602,11 +602,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '6 damage',
+									tier1: '6 шкоди',
 									tier2: '8 damage',
 									tier3: '11 damage'
 								})),
-								FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge action, the mount’s rider can use a free triggered action to make a melee free strike against the same target.')
+								FactoryLogic.createAbilitySectionText('Якщо ця здібність використовується в рамках дії Charge, вершник питомця може використати безкоштовну тригерну дію, щоб зробити ближній безкоштовний удар по тій самій цілі.')
 							]
 						})
 					}),
@@ -618,7 +618,7 @@ export class RetainerLogic {
 							distance: [ FactoryLogic.distance.createRanged(5) ],
 							target: 'Self',
 							sections: [
-								FactoryLogic.createAbilitySectionText('The mount shifts twice their speed. They can jump as part of this movement.')
+								FactoryLogic.createAbilitySectionText('Пеший/тварина зміщується вдвічі більше своєї швидкості. Воно може виконати стрибок як частину цього руху.')
 							]
 						})
 					}),
@@ -633,11 +633,11 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '10 damage; M < [weak] prone',
-									tier2: '15 damage; M < [average] prone',
-									tier3: '21 damage; M < [strong] prone'
+									tier1: '10 шкоди; С < [слабкий], розпластаний',
+									tier2: '15 шкоди; С < [середній], розпластаний',
+									tier3: '21 шкоди; С < [сильний], розпластаний'
 								})),
-								FactoryLogic.createAbilitySectionText('A target knocked prone this way or who is already prone takes an extra 5 damage')
+								FactoryLogic.createAbilitySectionText('Ціль, збита таким чином чи яка вже лежить, отримує додаткові 5 шкоди')
 							]
 						})
 					})
@@ -668,7 +668,7 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
-									tier1: '9 damage',
+									tier1: '9 шкоди',
 									tier2: '13 damage',
 									tier3: '18 damage'
 								})),

@@ -12,6 +12,7 @@
 
     font-size: round(1.1rem, 1px);
     line-height: round(1.3rem, 1px);
+
     strong {
         font-weight: 500;
     }
@@ -64,7 +65,12 @@
             margin-top: 0;
         }
 
+        font-size: round(0.8rem, 1px);
+        line-height: round(1.1rem, 1px);
+
         .actions-maneuvers {
+            font-size: round(0.8rem, 1px);
+
             * {
                 color: var(--color-text-lighter);
             }

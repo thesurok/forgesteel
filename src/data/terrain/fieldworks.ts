@@ -9,7 +9,7 @@ export const archersStakes: Terrain = {
 	id: 'terrain-archers-stakes',
 	name: 'Archer\'s Stakes',
 	description:
-    'A series of sharp stakes have been placed point-out to protect defenders against charges and other direct attacks.',
+		'A series of sharp stakes have been placed point-out to protect defenders against charges and other direct attacks.',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -49,7 +49,7 @@ export const archersStakes: Terrain = {
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The triggering creature takes 2 damage per square of stakes they enter. If they are force moved into an area of stakes, they take an additional 3 damage.'
+						'The triggering creature takes 2 damage per square of stakes they enter. If they are force moved into an area of stakes, they take an additional 3 damage.'
 				})
 			]
 		},
@@ -60,7 +60,7 @@ export const archersStakes: Terrain = {
 					id: 'allied-awareness',
 					name: 'Allied Awareness',
 					description:
-            'Allies of this object ignore the difficult terrain created by the stakes, take no damage from moving through the stakes unless they are force moved, and have cover while in an area of archer’s stakes.'
+						'Allies of this object ignore the difficult terrain created by the stakes, take no damage from moving through the stakes unless they are force moved, and have cover while in an area of archer’s stakes.'
 				})
 			]
 		}
@@ -101,9 +101,9 @@ export const archersStakes: Terrain = {
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 2,
-											tier1: 'no effect',
-											tier2: 'A<1 slowed (save ends)',
-											tier3: 'A<2 restrained (save ends)'
+											tier1: 'Без ефекту',
+											tier2: 'A<1 сповільнений (рят. кидок завершує)',
+											tier3: 'A<2 скутий (рят. кидок завершує)'
 										})
 									)
 								]
@@ -124,7 +124,7 @@ export const bearTrap: Terrain = {
 	id: 'terrain-bear-trap',
 	name: 'Bear Trap',
 	description:
-    'A set of spring-loaded steel jaws stands ready to snap shut when stepped on.',
+		'A set of spring-loaded steel jaws stands ready to snap shut when stepped on.',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -163,13 +163,13 @@ export const bearTrap: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'The bear trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its space.'
+						'The bear trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its space.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'A triggering creature or object ends their movement and is targeted by the *Bear Trap* ability.'
+						'A triggering creature or object ends their movement and is targeted by the *Bear Trap* ability.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -233,7 +233,7 @@ export const flammableOil: Terrain = {
 	id: 'terrain-flammable-oil',
 	name: 'Flammable Oil',
 	description:
-    'A patch of flammable oil or pitch on the ground is ready to be ignited.',
+		'A patch of flammable oil or pitch on the ground is ready to be ignited.',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -272,13 +272,13 @@ export const flammableOil: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A creature or object in a square of oil takes fire damage, or a creature or object enters a square of burning oil or starts their turn there.'
+						'A creature or object in a square of oil takes fire damage, or a creature or object enters a square of burning oil or starts their turn there.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The triggering creature or object takes 3 fire damage and is burning (save ends). A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.'
+						'The triggering creature or object takes 3 fire damage and is burning (save ends). A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.'
 				})
 			]
 		},
@@ -289,7 +289,7 @@ export const flammableOil: Terrain = {
 					id: 'allied-awareness',
 					name: 'Allied Awareness',
 					description:
-            'Allies who have weapons are equipped with torches. Any ally can use a maneuver to throw a torch up to 5 squares and ignite the flammable oil.'
+						'Allies who have weapons are equipped with torches. Any ally can use a maneuver to throw a torch up to 5 squares and ignite the flammable oil.'
 				})
 			]
 		}
@@ -313,7 +313,7 @@ export const hideyHole: Terrain = {
 	id: 'terrain-hidey-hole',
 	name: 'Hidey Hole',
 	description:
-    'A cavity in a floor, wall, or ceiling might hold hidden threats.',
+		'A cavity in a floor, wall, or ceiling might hold hidden threats.',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -352,13 +352,13 @@ export const hideyHole: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'A creature starts the encounter in the hidey-hole or ends their turn their.'
+						'A creature starts the encounter in the hidey-hole or ends their turn their.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'The triggering creature can attempt to hide as a free triggered action.'
+						'The triggering creature can attempt to hide as a free triggered action.'
 				})
 			]
 		}
@@ -382,7 +382,7 @@ export const paviseShield: Terrain = {
 	id: 'terrain-pavise-shield',
 	name: 'Pavise Shield',
 	description:
-    'A reinforced metal shield embedded in the ground that acts as cover the creature controlling it',
+		'A reinforced metal shield embedded in the ground that acts as cover the creature controlling it',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -421,13 +421,13 @@ export const paviseShield: Terrain = {
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'While a creature has the pavise grabbed they have cover and take half damage from from abilities whose line of effect extends through the shield. The pavise takes the other half of the damage.'
+						'While a creature has the pavise grabbed they have cover and take half damage from from abilities whose line of effect extends through the shield. The pavise takes the other half of the damage.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'movement',
 					name: 'Movement',
 					description:
-            'While a creature has a pavise shield grabbed, their speed is halved and they move the shield like a grabbed creature.'
+						'While a creature has a pavise shield grabbed, their speed is halved and they move the shield like a grabbed creature.'
 				})
 			]
 		}
@@ -443,7 +443,7 @@ export const snareTrap: Terrain = {
 	id: 'terrain-snare-trip',
 	name: 'Snare Trap',
 	description:
-    'A rope snare is set to grab a target, leaving them hanging up-side down.',
+		'A rope snare is set to grab a target, leaving them hanging up-side down.',
 	category: TerrainCategory.Fieldwork,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -482,13 +482,13 @@ export const snareTrap: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'The snare trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its space.'
+						'The snare trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its space.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-            'A triggering creature or object ends their movement and is targeted by the *Snare* ability.'
+						'A triggering creature or object ends their movement and is targeted by the *Snare* ability.'
 				})
 			]
 		},
@@ -557,7 +557,7 @@ export const spikeTrap: Terrain = {
 	id: 'terrain-spike-trap',
 	name: 'Spike Trap',
 	description:
-    'A pit dug into the ground is filled with spikes, and camouflaged to avoid detection.',
+		'A pit dug into the ground is filled with spikes, and camouflaged to avoid detection.',
 	category: TerrainCategory.Fieldwork,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(
@@ -596,7 +596,7 @@ export const spikeTrap: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-            'The spike trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its area.'
+						'The spike trap is calibrated to be triggered by creatures or objects of a particular size or larger. The trap triggers when a creature or object of the appropriate size enters its area.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -624,10 +624,10 @@ export const spikeTrap: Terrain = {
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
 									tier1:
-                    '3 damage; the target shifts 1 square away from the trap',
+										'3 damage; the target shifts 1 square away from the trap',
 									tier2: '4 damage; the target falls into the pit; a<0] prone',
 									tier3:
-                    '6 damage; the target falls into the pit; a<1] prone; restrained (save ends)'
+										'6 damage; the target falls into the pit; a<1] prone; restrained (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText(

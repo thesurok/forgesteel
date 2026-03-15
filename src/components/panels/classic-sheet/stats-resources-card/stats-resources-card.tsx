@@ -72,19 +72,19 @@ export const StatsResourcesCard = (props: Props) => {
 				<LabeledTextField
 					label='Героїчний ресурс'
 					content={(showState && character.heroicResourceCurrent?.toString()) || ''}
-					additionalClasses={['label-above', 'fancy']}
+					additionalClasses={[ 'label-above', 'fancy' ]}
 				/>
 				<LabeledTextField
 					label='Назва'
 					content={character.heroicResourceName}
-					additionalClasses={['no-box']}
+					additionalClasses={[ 'no-box' ]}
 				/>
 			</div>
 			<div className='surges'>
 				<LabeledTextField
 					label='Сплески'
 					content={(showState && character.surgesCurrent?.toString()) || ''}
-					additionalClasses={['label-above', 'fancy']}
+					additionalClasses={[ 'label-above', 'fancy' ]}
 				/>
 				<div className='reference'>
 					<div>1 Сплеск = Урон <span className='data'>{character.surgeDamageAmount}</span></div>

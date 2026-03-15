@@ -11,11 +11,11 @@ export const criminal: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-criminal-feature-1',
-			selected: ['Criminal Underworld']
+			selected: [ 'Criminal Underworld' ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-criminal-feature-2',
-			listOptions: [SkillList.Intrigue],
+			listOptions: [ SkillList.Intrigue ],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -28,7 +28,7 @@ export const criminal: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-criminal-feature-5',
-			lists: [PerkList.Intrigue]
+			lists: [ PerkList.Intrigue ]
 		})
 	],
 	incitingIncidents: {

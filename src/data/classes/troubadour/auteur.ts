@@ -6,25 +6,25 @@ import { SubClass } from '@/models/subclass';
 
 export const auteur: SubClass = {
 	id: 'u3JAwbvGQEHPi6cY',
-	name: 'Auteur',
-	description: 'You seek drama from story and recount, using your magic to manipulate the sequence of events unfolding before you.',
+	name: 'Автор',
+	description: 'Ви шукаєте драму в історіях та переказах, використовуючи свою магію для маніпулювання послідовністю подій, що розгортаються перед вами.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '63GSnAtLidKQThSw',
-					selected: ['Brag']
+					selected: [ 'Brag' ]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'VM5qLsp8pXpYt180',
-						name: 'Blocking',
-						description: 'No, no, no, you lose the audience that way. Try it like this …',
+						name: 'Блокування',
+						description: 'Ні, ні, ні, ви втрачаєте аудиторію таким чином. Спробуйте так …',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
-						target: 'Each creature in the area',
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності, і телепортувати їх у вільні клітинки в зоні. Ціль не можна телепортувати так, щоб це їй зашкодило (наприклад, над прірвою), залишило її вмираючою або спричинило стан чи інший негативний ефект.')
 						]
@@ -33,19 +33,16 @@ export const auteur: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'WLhzen5TMIS87eap',
-						name: 'Dramatic Monologue',
-						description: 'It doesn’t need to make sense. Just say it with emotion.',
+						name: 'Драматичний монолог',
+						description: 'Не обов’язково, щоб це мало сенс. Просто скажіть це з емоціями.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
+						target: 'Спеціальна',
 						sections: [
-							FactoryLogic.createAbilitySectionText(` Choose one of the following effects:
- * Ви виголошуєте надихаючу історію перемоги. Один союзник у межах дистанції отримує перевагу на наступний кидок сили до початку вашого наступного ходу.
- * Ви переповідаєте історію героїзму. Один союзник у межах дистанції отримує 1 імпульс.
- * Ви ображаєте ворога у найвразливішому місці. Один ворог у межах дистанції отримує перешкоду на наступний кидок сили до кінця свого наступного ходу.`),
+							FactoryLogic.createAbilitySectionText('Виберіть один із наступних ефектів:\n* Ви виголошуєте надихаючу історію перемоги. Один союзник у межах дистанції отримує перевагу на наступний кидок сили до початку вашого наступного ходу.\n* Ви переповідаєте історію героїзму. Один союзник у межах дистанції отримує 1 імпульс.\n* Ви ображаєте ворога у найвразливішому місці. Один ворог у межах дистанції отримує перешкоду на наступний кидок сили до кінця свого наступного ходу.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You can choose two targets for the chosen effect.'
+								effect: 'Ви можете обрати дві цілі для обраного ефекту.'
 							})
 						]
 					})
@@ -53,17 +50,17 @@ export const auteur: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'MUMrI7zMhGiDF6an',
-						name: 'Turnabout Is Fair Play',
-						description: 'All’s fair in love and whatever.',
-						type: FactoryLogic.type.createTrigger('The target makes an ability roll that has an edge, a double edge, a bane, or a double bane.'),
-						keywords: [AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature',
+						name: 'Відплата — чесна гра',
+						description: 'У коханні та у всьому іншому усі засоби дозволені.',
+						type: FactoryLogic.type.createTrigger('Ціль робить кидок здібності, який має перевагу, подвійну перевагу, перешкоду або подвійну перешкоду.'),
+						keywords: [ AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Перевага на тригерному кидку стає перешкодою, або подвійна перевага стає перевагою. Перешкода стає перевагою, або подвійна перешкода стає перешкодою.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'An edge on the triggering roll becomes a double bane, or a double edge is negated. A bane becomes a double edge, or a double bane is negated.'
+								effect: 'Перевага на тригерному кидку стає подвійною перешкодою, або подвійна перевага нейтралізується. Перешкода стає подвійною перевагою, або подвійна перешкода нейтралізується.'
 							})
 						]
 					})
@@ -75,18 +72,18 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'NR3KiD1HgYdQ5KHv',
-					name: '2nd-Level Class Act Ability',
+					name: 'Здібність класу (2 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'wbcpRLxbH1FXK30r',
-									name: 'Guest Star',
-									description: 'We offered them a percentage of the gross. So they’re working for free!',
+									name: 'Запрошена зірка',
+									description: 'Ми запропонували їм відсоток від валового, тому вони працюють безкоштовно!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-									distance: [FactoryLogic.distance.createMelee()],
-									target: 'Special',
+									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+									distance: [ FactoryLogic.distance.createMelee() ],
+									target: 'Спеціальна',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Запрошена зірка з’являється, щоб допомогти вам під час зустрічі: або сторонній у межах дистанції, піднесений вашою магією, або таємничий новий герой, який з’являється у вільній клітинці в межах дистанції. Ця зірка під вашим контролем, має власний хід і ваші характеристики. Її максимум Витривалості — половина вашого. Вона не має здібностей, окрім ваших ближніх і далеких безкоштовних ударів. Наприкінці зустрічі або коли зірка знижується до 0 Витривалості, вона відступає або повертається до стороннього. Того ж стороннього не можна піднести цим способом більше одного разу за зустріч.')
@@ -99,12 +96,12 @@ export const auteur: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'xun0HqS4EyDtB40D',
-									name: 'Twist at the End',
-									description: 'You didn’t see that coming, did you?!',
+									name: 'Поворот у кінці',
+									description: 'Ви цього не чекали, правда?!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'One dead enemy',
+									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+									distance: [ FactoryLogic.distance.createRanged(10) ],
+									target: 'Один мертвий ворог',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ціль, яка не є лідером або одинаком, повертається до життя з половиною своєї Витривалості і стає союзником під контролем Директора. Гравці можуть разом із Директором визначити, коли ціль ходить кожен раунд бою. Наприкінці зустрічі ціль перетворюється на порох і розвіюється.')
@@ -122,8 +119,8 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: '8mgJuIOaJ89ei7An',
-					name: 'Missed Cue',
-					description: 'If you aren’t surprised at the start of an encounter, you can choose one enemy within your line of effect who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second combat round. You must earn 3 Victories before you can use this feature again.'
+					name: 'Пропущений сигнал',
+					description: 'Якщо ви не були здивовані на початку зустрічі, ви можете обрати одного ворога у межах вашої лінії ефекту, який не є лідером або одинаком. Директор тимчасово видаляє обрану істоту зі зустрічі. Обрана істота повертається на початку другого раунду бою. Ви повинні заробити 3 Перемоги, перш ніж знову використати цю рису.'
 				})
 			]
 		},
@@ -136,13 +133,13 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'z5ajGRuxCgWGBqkY',
-					name: '5th-Level Class Act Feature',
+					name: 'Риса класу (5 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'V532EvelvtngOBm5',
-								name: 'Fix It in Post',
-								description: 'Once on each of your turns, you can use a free maneuver to change one condition affecting a creature within distance of your Dramatic Monologue ability. Choose one of the following conditions on the target: bleeding, frightened, prone, slowed, or taunted. You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.'
+								name: 'Виправити у монтажі',
+								description: 'Одного разу в кожному вашому ході ви можете використати безкоштовний маневр, щоб змінити один стан, що впливає на істоту в межах дистанції вашої здібності «Драматичний монолог». Виберіть один із наступних станів у цілі: кровотеча, наляканий, розпластаний, сповільнений або спровокований. Ви змінюєте цей стан на інший із перерахованих, зберігаючи тривалість і походження початкового стану. Ціль, яка більше не розпластана, може підвестися.'
 							}),
 							value: 1
 						},
@@ -150,14 +147,14 @@ export const auteur: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'blD6AhJ1qRfFDLGB',
-									name: 'Take Two!',
-									description: 'One more, and this time make it interesting.',
+									name: 'Ще один дубль!',
+									description: 'Ще один дубль, і цього разу зробіть це цікавіше.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
-									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
-									target: 'Self and each ally in the area',
+									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
+									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									target: 'Ви та кожний союзник у зоні',
 									sections: [
-										FactoryLogic.createAbilitySectionText('While this performance is active, each target who starts their turn in the area can reroll the first power roll that turn that obtains a tier 2 outcome. They must use the new roll.')
+										FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, може перебросити перший кидок сили того ходу, який отримує результат рівня 2. Вона повинна використовувати новий кидок.')
 									]
 								})
 							}),
@@ -172,26 +169,26 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'CwUQTsffxHIfqd1R',
-					name: '6th-Level Class Act Ability',
+					name: 'Здібність класу (6 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: '0Gh84KaW8ivImayH',
-									name: 'Here’s How Your Story Ends',
-									description: 'You give away the ending of this battle, and it’s not great for them.',
+									name: 'Ось як закінчується ваша історія',
+									description: 'Ви розкриваєте кінець цієї битви, і це не надто добре для них.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-									target: 'Each enemy in the area',
+									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Presence],
-												tier1: '2 psychic damage; P < [weak], frightened (save ends)',
-												tier2: '5 psychic damage; P < [average], frightened (save ends)',
-												tier3: '7 psychic damage; P < [strong], frightened (save ends)'
+												characteristic: [ Characteristic.Presence ],
+												tier1: '2 психічної шкоди; П < [слабкий], зляканий (рят. кидок завершує)',
+												tier2: '5 психічної шкоди; П < [середній], зляканий (рят. кидок завершує)',
+												tier3: '7 психічної шкоди; П < [сильний], зляканий (рят. кидок завершу)'
 											})
 										)
 									]
@@ -203,15 +200,15 @@ export const auteur: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: '756Ynw8Qoy8v7gPo',
-									name: 'You’re All My Understudies',
-									description: 'It’s important for everyone to know each other’s lines, just in case …',
+									name: 'Ви — мої дублери',
+									description: 'Важливо, щоб усі знали ролі один одного, на всякий випадок…',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-									target: 'Each ally in the area',
+									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									target: 'Кожний союзник у зоні',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the end of the encounter, each target gains the speed bonus, weapon distance bonus, disengage bonus, and stability bonus of your currently equipped kit in addition to their own kit’s bonuses.')
+										FactoryLogic.createAbilitySectionText('До кінця зустрічі кожна ціль отримує бонус швидкості, бонус дистанції зброї, бонус відходу та бонус стійкості від вашого нині обладнаного набору, додатково до бонусів її власного набору.')
 									]
 								})
 							}),
@@ -231,7 +228,7 @@ export const auteur: SubClass = {
 				FactoryLogic.feature.create({
 					id: 'oyvdzACJtFq8WHn7',
 					name: 'Deleted Scene',
-					description: 'Whenever a creature within distance of your Dramatic Monologue ability makes a power roll, you can spend 1 drama as a free triggered action to use Dramatic Monologue, targeting only one creature.'
+					description: 'Коли істота в межах дистанції вашої здібності «Драматичний монолог» робить кидок сили, ви можете витратити 1 одиницю драми як безкоштовну тригерну дію, щоб використати «Драматичний монолог», націливши лише одну істоту.'
 				})
 			]
 		},
@@ -240,32 +237,32 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'gPzNIv7yp4ELiJSz',
-					name: '9th-Level Class Act Ability',
+					name: 'Здібність класу (9 рівень)',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'vHIxEUa7yuxQSjDO',
-									name: 'Epic',
-									description: 'Your story tells a tale of the villain’s waning power and how the heroes rose to the occasion to stop them.',
+									name: 'Епічний',
+									description: 'Ваша історія розповідає про занепад могутності лиходія та про те, як герої зуміли піднятися, щоб зупинити його.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
+									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(10)
 									],
-									target: 'One creature',
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Presence],
-												tier1: 'The target takes a bane on ability rolls (save ends).',
-												tier2: 'The target has a double bane on ability rolls (save ends).',
-												tier3: 'The target has a double bane on power rolls (save ends).'
+												characteristic: [ Characteristic.Presence ],
+												tier1: 'Ціль отримує перешкоду на кидки здібності (рят. кидок завершує).',
+												tier2: 'Ціль має подвійну перешкоду на кидки здібності (рят. кидок завершує).',
+												tier3: 'Ціль має подвійну перешкоду на кидки здібностей (рят. кидок завершує).'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Choose one ally within distance. While the target is affected by this ability, each time they use an ability, that ally can make a free strike against them after the ability is resolved.')
+										FactoryLogic.createAbilitySectionText('Виберіть одного союзника в межах дистанції. Поки ціль під впливом цієї здібності, кожного разу, коли вона використовує здібність, цей союзник може зробити безкоштовний удар по ній після розвʼязання здібності.')
 									]
 								})
 							}),
@@ -275,15 +272,15 @@ export const auteur: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'nqibjR3wWOCxaYIk',
-									name: 'Rising Tension',
-									description: 'You narrate the tension of the scene and put all hope into your protagonist to turn things around.',
+									name: 'Нарастаюча напруга',
+									description: 'Ви нарощуєте напругу сцени та вкладаєте всю надію в свого головного героя, щоб він змінив хід подій.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'One ally',
+									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+									distance: [ FactoryLogic.distance.createRanged(10) ],
+									target: 'Один союзник',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('The target gains 3 of their Heroic Resource, has a double edge on a power roll of their choice made during their next turn, is no longer slowed or weakened if they were before, and can immediately take their turn after yours if they have not taken their turn already this round.')
+										FactoryLogic.createAbilitySectionText('Ціль отримує 3 одиниці свого Героїчного Ресурсу, має подвійний бонус на кидок сили за вибором, виконаний під час її наступного ходу, більше не є сповільненою або ослабленою, якщо була раніше, і може негайно здійснити свій хід після вашого, якщо ще не ходила цього раунду.')
 									]
 								})
 							}),

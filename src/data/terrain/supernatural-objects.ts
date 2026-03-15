@@ -37,9 +37,9 @@ export const theBlackObelisk: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
-									tier1: 'The creature accidentally activates the **Your Fears Become Manifest** ability, which gains an edge.',
-									tier2: 'The creature must make another test to deactivate the obelisk. If they obtain this outcome a second time, they accidentally activate **Your Fears Become Manifest**.',
-									tier3: 'The obelisk is deactivated until the end of the encounter.'
+									tier1: 'Істота випадково активує здібність **Your Fears Become Manifest**, яка отримує перевагу.',
+									tier2: 'Істота повинна зробити ще один тест, щоб деактивувати обеліск. Якщо вона отримує цей результат вдруге, вона випадково активує **Your Fears Become Manifest**.',
+									tier3: 'Обеліск деактивовано до кінця зустрічі.'
 								})
 							)
 						]
@@ -67,9 +67,9 @@ export const theBlackObelisk: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'P < 1 slowed (EoT)',
-									tier2: 'P < 2 slowed and weakened (EoT)',
-									tier3: 'P < 3 frightened, slowed, and weakened (EoT)'
+									tier1: 'П < 1 сповільнений (до кінця ходу)',
+									tier2: 'П < 2 сповільнений і ослаблений (до кінця ходу)',
+									tier3: 'П < 3 зляканий, сповільнений і ослаблений (до кінця ходу)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The target is pushed 2.')
@@ -116,9 +116,9 @@ export const theChronalHypercube: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
-									tier1: 'The creature takes 1d6 psychic damage.',
-									tier2: 'The creature fails to deactivate the hypercube.',
-									tier3: 'The hypercube teleports adjacent to the creature at the start of the next round and becomes an ally to the creature and their allies.'
+									tier1: 'Істота отримує 1d6 психічної шкоди.',
+									tier2: 'Істота не може деактивувати гіперкуб.',
+									tier3: 'Гіперкуб телепортується поруч з істотою на початку наступного раунду і стає союзником цієї істоти та її союзників.'
 								})
 							)
 						]
@@ -174,9 +174,9 @@ export const theThroneOfAAn: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: 'The hierophant triggers the **Nova** ability.',
-									tier2: 'The hierophant fails to deactivate the throne.',
-									tier3: 'The throne is deactivated until the end of the encounter.'
+									tier1: 'Ієрофант активує здібність **Nova**.',
+									tier2: 'Ієрофанту не вдається деактивувати трон.',
+									tier3: 'Трон деактивовано до кінця зустрічі.'
 								})
 							)
 						]
@@ -204,9 +204,9 @@ export const theThroneOfAAn: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: 'The creature takes 11 fire damage.',
-									tier2: 'The creature fails to attune to the throne.',
-									tier3: 'The creature attunes to the throne and can sit on it.'
+									tier1: 'Істота отримує 11 вогняної шкоди.',
+									tier2: 'Істота не може налаштуватися на трон.',
+									tier3: 'Істота налаштовується на трон і може на ньому сидіти.'
 								})
 							),
 							FactoryLogic.createAbilitySectionText(`
@@ -231,9 +231,9 @@ A creature seated on the throne becomes the hierophant of A’An and gains the f
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '6 fire damage',
-									tier2: '11 fire damage',
-									tier3: '14 fire damage'
+									tier1: '6 вогняної шкоди',
+									tier2: '11 вогняної шкоди',
+									tier3: '14 вогняної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The target has fire weakness 10 until the start of the hierophant’s next turn.')

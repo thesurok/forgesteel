@@ -252,9 +252,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 sonic damage',
-								tier2: '2 sonic damage; P < 1 slowed (save ends)',
-								tier3: '3 sonic damage; P < 2 slowed (save ends)'
+								tier1: '1 звукової шкоди',
+								tier2: '2 звукової шкоди; П < 1 сповільнений (рят. кидок завершує)',
+								tier3: '3 звукової шкоди; П < 2 сповільнений (рят. кидок завершує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Allies gain an edge on melee strikes against the target until the glorifier and each other glorifier in their squad are killed.')
 						]

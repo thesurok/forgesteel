@@ -85,7 +85,7 @@ export const dragonKnight: Ancestry = {
 							name: 'Драконячий щит',
 							description: 'Ви можете розмахнути крилами й захиститися від удару.',
 							type: FactoryLogic.type.createTrigger('You, or a creature adjacent to you, takes damage from a strike'),
-							distance: [FactoryLogic.distance.createSelf()],
+							distance: [ FactoryLogic.distance.createSelf() ],
 							target: 'Self',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Ви зменшуєте шкоду від удару на величину, рівну вашому рівню.')
@@ -181,14 +181,14 @@ export const dragonKnight: Ancestry = {
 							name: 'Драконяча гордість',
 							description: 'Ви видаєте могутній рик, щоб похитнути духи ворогів.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+							keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
 							target: 'Each enemy in the area',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [Characteristic.Might, Characteristic.Presence],
+										characteristic: [ Characteristic.Might, Characteristic.Presence ],
 										tier1: '2 шкоди',
 										tier2: '5 шкоди; відштовхнути 1',
 										tier3: '7 шкоди; відштовхнути 2'
@@ -206,14 +206,14 @@ export const dragonKnight: Ancestry = {
 							name: 'Дихання дракона',
 							description: 'Люте видихання енергії накриває ваших ворогів.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
+							keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
 							target: 'Each enemy in the area',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [Characteristic.Might, Characteristic.Presence],
+										characteristic: [ Characteristic.Might, Characteristic.Presence ],
 										tier1: '2 шкоди',
 										tier2: '4 шкоди',
 										tier3: '6 шкоди'

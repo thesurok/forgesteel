@@ -87,7 +87,7 @@ interface Props {
 
 export const HeroPanel = (props: Props) => {
 	const isSmall = useIsSmall();
-	const [tab, setTab] = useState<string>('Hero');
+	const [ tab, setTab ] = useState<string>('Hero');
 
 	const getNameSection = () => {
 		return (
@@ -95,7 +95,7 @@ export const HeroPanel = (props: Props) => {
 				style={{ marginTop: '0' }}
 				level={props.options.compactView ? 2 : 1}
 				ribbon={props.hero.picture ? <HeroToken hero={props.hero} size={props.options.compactView ? 21 : 34} /> : null}
-				tags={props.hero.folder ? [props.hero.folder] : []}
+				tags={props.hero.folder ? [ props.hero.folder ] : []}
 			>
 				{props.hero.name || 'Unnamed Hero'}
 			</HeaderText>
@@ -238,7 +238,7 @@ export const HeroPanel = (props: Props) => {
 								</div>
 								:
 								<div key={c.id} className='overview-tile warning clickable' onClick={onShowVitals}>
-									<HeaderText tags={[c.ends]}>{c.type}</HeaderText>
+									<HeaderText tags={[ c.ends ]}>{c.type}</HeaderText>
 									<Markdown text={c.type === ConditionType.Custom ? c.text || 'A custom condition.' : ConditionLogic.getDescription(c.type)} />
 								</div>
 						)
@@ -375,7 +375,7 @@ export const HeroPanel = (props: Props) => {
 					}
 					{
 						(props.options.showSkillsInGroups || false) ?
-							[SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore, SkillList.Custom]
+							[ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore, SkillList.Custom ]
 								.map(list => getSkills(`${list} Skills`, HeroLogic.getSkills(props.hero, props.sourcebooks).filter(s => s.list === list)))
 							:
 							getSkills('Skills', HeroLogic.getSkills(props.hero, props.sourcebooks))
@@ -742,7 +742,7 @@ export const HeroPanel = (props: Props) => {
 	};
 
 	const getFeaturesSection = () => {
-		const featureTypes = [FeatureType.Text, FeatureType.HeroicResource, FeatureType.Package];
+		const featureTypes = [ FeatureType.Text, FeatureType.HeroicResource, FeatureType.Package ];
 
 		const features = HeroLogic.getFeatures(props.hero)
 			.filter(f => featureTypes.includes(f.feature.type));
@@ -879,7 +879,7 @@ export const HeroPanel = (props: Props) => {
 											hero={props.hero}
 											options={props.options}
 											mode={PanelMode.Full}
-											tags={props.options.showSources ? [a.source] : undefined}
+											tags={props.options.showSources ? [ a.source ] : undefined}
 										/>
 									</SelectablePanel>
 							)
@@ -902,7 +902,7 @@ export const HeroPanel = (props: Props) => {
 											hero={props.hero}
 											options={props.options}
 											mode={PanelMode.Full}
-											tags={props.options.showSources ? [a.source] : undefined}
+											tags={props.options.showSources ? [ a.source ] : undefined}
 										/>
 									</SelectablePanel>
 							)
@@ -1105,7 +1105,7 @@ export const HeroPanel = (props: Props) => {
 					<HeaderText
 						level={1}
 						ribbon={props.hero.picture ? <HeroToken hero={props.hero} size={34} /> : null}
-						tags={props.hero.folder ? [props.hero.folder] : []}
+						tags={props.hero.folder ? [ props.hero.folder ] : []}
 					>
 						{props.hero.name || 'Unnamed Hero'}
 					</HeaderText>
@@ -1129,7 +1129,7 @@ export const HeroPanel = (props: Props) => {
 						props.hero.class ?
 							<Field
 								label='Class'
-								value={`${props.hero.class.name} (${[`Level ${props.hero.class.level}`, ...props.hero.class.subclasses.filter(sc => sc.selected).map(sc => sc.name)].join(' ')})`}
+								value={`${props.hero.class.name} (${[ `Level ${props.hero.class.level}`, ...props.hero.class.subclasses.filter(sc => sc.selected).map(sc => sc.name) ].join(' ')})`}
 							/>
 							: null
 					}

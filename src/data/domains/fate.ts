@@ -22,7 +22,7 @@ export const fate: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-fate-1-2',
-							listOptions: [SkillList.Lore]
+							listOptions: [ SkillList.Lore ]
 						})
 					]
 				})
@@ -37,8 +37,8 @@ export const fate: Domain = {
 						name: 'Благословення Долі й Призначення',
 						description: 'Ваші вороги страждають від своєї долі; ваші союзники приймають своє призначення!',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Три істоти',
 						cost: 5,
 						sections: [
@@ -79,14 +79,14 @@ export const fate: Domain = {
 						name: 'Твоя історія закінчується тут',
 						description: 'Ви згинаєте долю ворога, бажаючи йому смерті.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Одна істота',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '9 + І шкоди скверною; Р < [слабкий], ослаблення (рят. кидок завершує)',
 									tier2: '14 + І шкоди скверною; Р < [середній], ослаблення (рят. кидок завершує)',
 									tier3: '19 + І шкоди скверною; Р < [сильний], ослаблення (рят. кидок завершує)'
@@ -121,8 +121,8 @@ export const fate: Domain = {
 						name: 'Зігни Долю',
 						description: 'Боги знають, що ви повинні перемогти, і благословляють вашу долю.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Self or one ally',
 						cost: 11,
 						sections: [

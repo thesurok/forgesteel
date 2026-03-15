@@ -11,7 +11,7 @@ export const politician: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-politician-feature-1',
-			listOptions: [SkillList.Interpersonal],
+			listOptions: [ SkillList.Interpersonal ],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -29,7 +29,7 @@ export const politician: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-politician-feature-5',
-			lists: [PerkList.Interpersonal]
+			lists: [ PerkList.Interpersonal ]
 		})
 	],
 	incitingIncidents: {

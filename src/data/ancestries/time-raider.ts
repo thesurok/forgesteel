@@ -17,7 +17,7 @@ export const timeRaider: Ancestry = {
 			id: 'time-raider-feature-1',
 			name: 'Психічний Шрам',
 			description: 'Ваш розум є потужним шаром захисту. Ви маєте психічний імунітет, рівний вашому рівню.',
-			modifiers: [FactoryLogic.damageModifier.createPerLevel({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 1 })]
+			modifiers: [ FactoryLogic.damageModifier.createPerLevel({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 1 }) ]
 		}),
 		FactoryLogic.feature.createChoice({
 			id: 'time-raider-feature-2',
@@ -30,7 +30,7 @@ export const timeRaider: Ancestry = {
 							name: 'Зір Поза Межами',
 							description: 'Ви налаштовуєте свій зір, щоб бачити крізь звичайні перешкоди.',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [FactoryLogic.distance.createSelf()],
+							distance: [ FactoryLogic.distance.createSelf() ],
 							target: 'Себе',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Ви можете бачити крізь звичайні перешкоди товщиною 1 клітинка або менше. Поки ваш зір налаштований таким чином, ви не бачите область у межах 1 клітинки від вас і не маєте лінії ефекту до будь-якої істоти чи обʼєкта в цій області. Ви можете відновити свій звичайний зір як маневр.')
@@ -56,7 +56,7 @@ export const timeRaider: Ancestry = {
 									name: 'Передбачення',
 									description: '',
 									type: FactoryLogic.type.createTrigger('Вас атакують'),
-									distance: [FactoryLogic.distance.createSelf()],
+									distance: [ FactoryLogic.distance.createSelf() ],
 									target: 'Себе',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви накладаєте штраф на кидок сили.')
@@ -97,13 +97,13 @@ export const timeRaider: Ancestry = {
 										description: 'Ви обрушуєте невидиму силу на ціль.',
 										type: FactoryLogic.type.createMain(),
 										cost: 'signature',
-										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-										distance: [FactoryLogic.distance.createRanged(10)],
+										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+										distance: [ FactoryLogic.distance.createRanged(10) ],
 										target: 'Одна істота або обʼєкт',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
 													tier1: '2 + Р, І або П шкоди',
 													tier2: '5 + Р, І або П шкоди; зсув 1',
 													tier3: '7 + Р, І або П шкоди; зсув 2; М < [сильний] повалений'
@@ -121,14 +121,14 @@ export const timeRaider: Ancestry = {
 										name: 'Псіонічний Промінь',
 										description: 'Ви випускаєте фіолетовий промінь психічної сили, який охоплює вашу ціль.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-										distance: [FactoryLogic.distance.createRanged(10)],
+										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+										distance: [ FactoryLogic.distance.createRanged(10) ],
 										target: 'Одна істота або обʼєкт',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
 													tier1: '2 + Р, І або П психічної шкоди; зсув 1',
 													tier2: '5 + Р, І або П психічної шкоди; зсув 2',
 													tier3: '7 + Р, І або П психічної шкоди; зсув 3'
@@ -146,7 +146,7 @@ export const timeRaider: Ancestry = {
 										name: 'Мала Прискореність',
 										description: 'Ви наповнюєте себе або союзника сплеском швидкості.',
 										type: FactoryLogic.type.createManeuver(),
-										keywords: [AbilityKeyword.Psionic, AbilityKeyword.Melee],
+										keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Melee ],
 										distance: [
 											FactoryLogic.distance.createSelf(),
 											FactoryLogic.distance.createMelee()
@@ -169,7 +169,7 @@ export const timeRaider: Ancestry = {
 						id: 'time-raider-feature-2-6',
 						name: 'Незламний Розум',
 						description: 'Ваш розум дозволяє вам зберігати концентрацію в будь-якій ситуації.',
-						conditions: [ConditionType.Dazed]
+						conditions: [ ConditionType.Dazed ]
 					}),
 					value: 2
 				}

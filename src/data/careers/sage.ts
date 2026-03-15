@@ -11,7 +11,7 @@ export const sage: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-sage-feature-1',
-			listOptions: [SkillList.Lore],
+			listOptions: [ SkillList.Lore ],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -24,7 +24,7 @@ export const sage: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-sage-feature-4',
-			lists: [PerkList.Lore]
+			lists: [ PerkList.Lore ]
 		})
 	],
 	incitingIncidents: {

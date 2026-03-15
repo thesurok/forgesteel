@@ -11,11 +11,11 @@ export const soldier: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-soldier-feature-1',
-			listOptions: [SkillList.Exploration]
+			listOptions: [ SkillList.Exploration ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-soldier-feature-2',
-			listOptions: [SkillList.Intrigue]
+			listOptions: [ SkillList.Intrigue ]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-soldier-feature-3',
@@ -28,7 +28,7 @@ export const soldier: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-soldier-feature-5',
-			lists: [PerkList.Exploration]
+			lists: [ PerkList.Exploration ]
 		})
 	],
 	incitingIncidents: {

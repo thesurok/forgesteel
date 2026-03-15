@@ -19,8 +19,8 @@ export const polder: Ancestry = {
 				name: 'Злиття з тінню',
 				description: 'Ви стаєте справжньою тінню.',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [AbilityKeyword.Magic],
-				distance: [FactoryLogic.distance.createSelf()],
+				keywords: [ AbilityKeyword.Magic ],
+				distance: [ FactoryLogic.distance.createSelf() ],
 				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
@@ -89,7 +89,7 @@ export const polder: Ancestry = {
 						id: 'polder-feature-3-5',
 						name: 'Безстрашний',
 						description: 'Ви знаєте лише сміливість.',
-						conditions: [ConditionType.Frightened]
+						conditions: [ ConditionType.Frightened ]
 					}),
 					value: 2
 				},

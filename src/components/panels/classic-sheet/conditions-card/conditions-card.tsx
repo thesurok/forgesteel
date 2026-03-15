@@ -53,7 +53,7 @@ export const ConditionsCard = (props: Props) => {
 				</div>
 
 				{conditionTypes.map(ct => {
-					const classes = ['condition'];
+					const classes = [ 'condition' ];
 					if (character.conditionImmunities?.includes(ct)) {
 						classes.push('immune');
 					}
@@ -63,12 +63,12 @@ export const ConditionsCard = (props: Props) => {
 							<LabeledBooleanField
 								value={showState && character.conditions?.find(c => c.type === ct)?.ends === ConditionEndType.EndOfTurn}
 								label=''
-								additionalClasses={['center', 'no-label']}
+								additionalClasses={[ 'center', 'no-label' ]}
 							/>
 							<LabeledBooleanField
 								value={showState && character.conditions?.find(c => c.type === ct)?.ends === ConditionEndType.SaveEnds}
 								label=''
-								additionalClasses={['center', 'no-label']}
+								additionalClasses={[ 'center', 'no-label' ]}
 							/>
 						</div>
 					);
@@ -79,12 +79,12 @@ export const ConditionsCard = (props: Props) => {
 						<LabeledBooleanField
 							value={showState && c.ends === ConditionEndType.EndOfTurn}
 							label=''
-							additionalClasses={['center', 'no-label']}
+							additionalClasses={[ 'center', 'no-label' ]}
 						/>
 						<LabeledBooleanField
 							value={showState && c.ends === ConditionEndType.SaveEnds}
 							label=''
-							additionalClasses={['center', 'no-label']}
+							additionalClasses={[ 'center', 'no-label' ]}
 						/>
 					</div>
 				)}
@@ -94,12 +94,12 @@ export const ConditionsCard = (props: Props) => {
 					<LabeledBooleanField
 						value={false}
 						label=''
-						additionalClasses={['center', 'no-label']}
+						additionalClasses={[ 'center', 'no-label' ]}
 					/>
 					<LabeledBooleanField
 						value={false}
 						label=''
-						additionalClasses={['center', 'no-label']}
+						additionalClasses={[ 'center', 'no-label' ]}
 					/>
 				</div>
 			</div>

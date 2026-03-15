@@ -1,5 +1,5 @@
 import { Alert, Button, Flex, Segmented } from 'antd';
-import { BookOutlined, CloseOutlined, PlayCircleOutlined, PlusOutlined, TeamOutlined } from '@ant-design/icons';
+import { BookOutlined, PlayCircleOutlined, PlusOutlined, TeamOutlined } from '@ant-design/icons';
 import { AppFooter } from '@/components/panels/app-footer/app-footer';
 import { AppHeader } from '@/components/panels/app-header/app-header';
 import { Collections } from '@/utils/collections';
@@ -31,7 +31,7 @@ interface Props {
 
 export const WelcomePage = (props: Props) => {
 	const isSmall = useMediaQuery('(max-width: 1000px)');
-	const [showBanner, setShowBanner] = useState<boolean>(true);
+	const [showBanner] = useState<boolean>(true);
 
 	if (isSmall) {
 		return (
@@ -55,7 +55,7 @@ export const WelcomePage = (props: Props) => {
 					/>
 					{
 						showBanner ?
-							<Banner onClose={() => setShowBanner(false)} />
+							<Banner />
 							: null
 					}
 				</div>
@@ -93,14 +93,13 @@ export const WelcomePage = (props: Props) => {
 				/>
 				{
 					showBanner ?
-						<Banner onClose={() => setShowBanner(false)} />
+						<Banner />
 						: null
 				}
 			</div>
 		</ErrorBoundary>
 	);
 };
-
 interface WelcomeProps {
 	onNewHero: () => void;
 }
@@ -374,10 +373,6 @@ const Tips = () => {
 	);
 };
 
-interface BannerProps {
-	onClose: () => void;
-}
-
-const Banner = (props: BannerProps) => {
+const Banner = () => {
 	return null;
 };

@@ -14,17 +14,17 @@ export const PotenciesCard = (props: Props) => {
 			<LabeledTextField
 				label='Слабка'
 				content={character.potencyWeak}
-				additionalClasses={['label-above', 'box-both']}
+				additionalClasses={[ 'label-above', 'box-both' ]}
 			/>
 			<LabeledTextField
 				label='Середня'
 				content={character.potencyAverage}
-				additionalClasses={['label-above', 'box-both']}
+				additionalClasses={[ 'label-above', 'box-both' ]}
 			/>
 			<LabeledTextField
 				label='Сильна'
 				content={character.potencyStrong}
-				additionalClasses={['label-above', 'box-both']}
+				additionalClasses={[ 'label-above', 'box-both' ]}
 			/>
 		</div>
 	);

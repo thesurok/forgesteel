@@ -11,7 +11,7 @@ export const gladiator: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'gladiator-feature-1',
-			listOptions: [SkillList.Exploration],
+			listOptions: [ SkillList.Exploration ],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -24,7 +24,7 @@ export const gladiator: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'gladiator-feature-4',
-			lists: [PerkList.Exploration]
+			lists: [ PerkList.Exploration ]
 		})
 	],
 	incitingIncidents: {

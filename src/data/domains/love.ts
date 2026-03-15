@@ -24,7 +24,7 @@ export const love: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-love-1-2',
-							listOptions: [SkillList.Interpersonal]
+							listOptions: [ SkillList.Interpersonal ]
 						})
 					]
 				})
@@ -39,8 +39,8 @@ export const love: Domain = {
 						name: 'Наші серця — твоя сила',
 						description: 'Союзник черпає силу у друзів.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Ви та один союзник',
 						cost: 5,
 						sections: [
@@ -77,8 +77,8 @@ export const love: Domain = {
 						name: 'Звеличений богом',
 						description: 'Ви благаєте богів дати союзникам усе необхідне для перемоги — і боги відповідають.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Два союзники',
 						cost: 9,
 						sections: [
@@ -102,8 +102,8 @@ export const love: Domain = {
 						name: 'Проведений до тебе',
 						description: 'Ви концентруєтеся на другові й телепортуєтеся до нього.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Ви та кожен союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Кожна ціль телепортується на вільні клітинки в межах 5 клітинок від істоти, з якою ви маєте звʼязок через "Поклик серця". Вам не потрібна пряма лінія ефекту, але ви маєте бути в одному світі.')
@@ -125,8 +125,8 @@ export const love: Domain = {
 						name: 'Жвавість серця',
 						description: 'Ви надихаєте друга словами, спонукаючи його до неймовірних вчинків.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'один союзник',
 						cost: 11,
 						sections: [

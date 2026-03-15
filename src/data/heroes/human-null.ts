@@ -1649,9 +1649,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '5 + A psychic damage; vertical pull 1',
-							tier2: '8 + A psychic damage; vertical pull 2',
-							tier3: '11 + A psychic damage; vertical pull 3'
+							tier1: '5 + Л психічної шкоди; вертикально притягнути на 1',
+							tier2: '8 + Л психічної шкоди; вертикально притягнути на 2',
+							tier3: '11 + Л психічної шкоди; вертикально притягнути на 3'
 						}
 					}
 				],

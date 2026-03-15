@@ -2801,9 +2801,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '3 damage; vertical pull 3',
-																	tier2: '5 damage; vertical pull 5',
-																	tier3: '8 damage; vertical pull 7'
+																	tier1: '3 шкоди; вертикально притягнути на 3',
+																	tier2: '5 шкоди; вертикально притягнути на 5',
+																	tier3: '8 шкоди; вертикально притягнути на 7'
 																}
 															},
 															{

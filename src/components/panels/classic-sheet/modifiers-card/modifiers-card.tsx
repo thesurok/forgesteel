@@ -17,7 +17,7 @@ interface Props {
 export const ModifiersCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[props.character]
+		[ props.character ]
 	);
 
 	const getModifierNameLabel = () => {
@@ -106,7 +106,7 @@ export const ModifiersCard = (props: Props) => {
 			<LabeledTextField
 				label={getModifierNameLabel()}
 				content={character.modifierName}
-				additionalClasses={['name', 'label-overlay']}
+				additionalClasses={[ 'name', 'label-overlay' ]}
 			/>
 
 			<div className='modifier-augmentations'>
@@ -116,7 +116,7 @@ export const ModifiersCard = (props: Props) => {
 							<LabeledTextField
 								label='Зброя / Інструмент'
 								content={character.modifierWeaponImplement}
-								additionalClasses={['label-overlay']}
+								additionalClasses={[ 'label-overlay' ]}
 							/>
 							: null
 					}
@@ -125,7 +125,7 @@ export const ModifiersCard = (props: Props) => {
 							<LabeledTextField
 								label='Броня / Щит'
 								content={character.modifierArmorWard}
-								additionalClasses={['label-overlay']}
+								additionalClasses={[ 'label-overlay' ]}
 							/>
 							: null
 					}

@@ -71,9 +71,9 @@ export const telepathy: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [ Characteristic.Reason ],
-											tier1: '6 + R psychic damage; I < [weak], slowed (save ends)',
-											tier2: '10 + R psychic damage; I < [average], weakened (save ends)',
-											tier3: '14 + R psychic damage; I < [strong], dazed (save ends)'
+											tier1: '6 + Р психічної шкоди; І < [слабкий], сповільнений (рят. кидок завершує)',
+											tier2: '10 + Р психічної шкоди; І < [середній], ослаблений (рят. кидок завершує)',
+											tier3: '14 + Р психічної шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
 										})),
 										FactoryLogic.createAbilitySectionField({
 											name: 'Strained',
@@ -172,9 +172,9 @@ export const telepathy: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '10 psychic damage; the target takes a bane on ability rolls made to harm you or your allies (save ends)',
-												tier2: '14 psychic damage; the target has a double bane on ability rolls made to harm you or your allies (save ends)',
-												tier3: '20 psychic damage; the target considers you and your allies to be their allies when using abilities and features (save ends)'
+												tier1: '10 психічної шкоди; ціль отримує перешкоду на кидки здібності, спрямовані на вас або ваших союзників (рят. кидок завершує)',
+												tier2: '14 психічної шкоди; ціль має подвійну перешкоду на кидки здібності, спрямовані на вас або ваших союзників (рят. кидок завершує)',
+												tier3: '20 психічної шкоди; ціль вважає вас і ваших союзників союзниками при використанні здібностей і рис (рят. кидок завершує)'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
@@ -261,9 +261,9 @@ export const telepathy: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '15 + R psychic damage',
-												tier2: '24 + R psychic damage',
-												tier3: '28 + R psychic damage'
+												tier1: '15 + Р психічної шкоди',
+												tier2: '24 + Р психічної шкоди',
+												tier3: '28 + Р психічної шкоди'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('This ability ignores cover and concealment.'),

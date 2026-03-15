@@ -22,8 +22,8 @@ export const nature: Domain = {
 								name: 'Вірний друг',
 								description: 'До вас приходить дух тварини, ділиться своїми відчуттями й вірно служить вам.',
 								type: FactoryLogic.type.createMain(),
-								keywords: [AbilityKeyword.Magic],
-								distance: [FactoryLogic.distance.createSelf()],
+								keywords: [ AbilityKeyword.Magic ],
+								distance: [ FactoryLogic.distance.createSelf() ],
 								target: 'Ви',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Ви викликаєте духа у формі будь-якої тварини, яку бачили. Нематеріальна тварина має швидкість 5 і може літати, але не може фізично взаємодіяти зі світом. Поки ви перебуваєте в межах 10 клітинок від духа, ви автоматично відчуваєте все, що відчувала б ця тварина, а також свої власні відчуття. Ви можете відпустити духа будь-коли (без дії). Якщо дух отримує будь-яку шкоду, він зникає, а ви отримуєте 1d10 психічної шкоди, яку не можна зменшити жодним чином.')
@@ -32,7 +32,7 @@ export const nature: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-nature-1-2',
-							listOptions: [SkillList.Exploration]
+							listOptions: [ SkillList.Exploration ]
 						})
 					]
 				})
@@ -47,14 +47,14 @@ export const nature: Domain = {
 						name: 'Суд Природи',
 						description: 'Містичні колючі лози зʼявляються за вашим наказом і сковують ворогів.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '2 шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
 									tier2: '3 шкоди; Л < [середній], сковування (рят. кидок закінчує)',
 									tier3: '7 шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
@@ -92,14 +92,14 @@ export const nature: Domain = {
 						name: 'Духовий табун',
 						description: 'Духи тварин мчать полем бою, топчучи ворогів.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 5 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 5 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '5 шкоди; С < [слабкий], повалений і не може підвестися (рят. кидок закінчує)',
 									tier2: '8 шкоди; С < [середній], повалений і не може підвестися (рят. кидок закінчує)',
 									tier3: '11 шкоди; С < [сильний], повалений і не може підвестися (рят. кидок закінчує)'
@@ -142,14 +142,14 @@ export const nature: Domain = {
 						name: 'Клітка з тернів',
 						description: 'Лози вириваються із землі й сковують ворога, поступово стискаючись навколо нього.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Одна істота',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '10 + І шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
 									tier2: '15 + І шкоди; Л < [середній], сковування (рят. кидок закінчує)',
 									tier3: '21 + І шкоди; Л < [сильний], сковування (рят. кидок закінчує)'

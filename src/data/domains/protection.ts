@@ -21,7 +21,7 @@ export const protection: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-protection-1-2',
-							listOptions: [SkillList.Exploration]
+							listOptions: [ SkillList.Exploration ]
 						})
 					]
 				})
@@ -36,8 +36,8 @@ export const protection: Domain = {
 						name: 'Священний звʼязок',
 						description: 'Ви створюєте божественний звʼязок між двома істотами.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Ви та один союзник',
 						cost: 5,
 						sections: [
@@ -80,8 +80,8 @@ export const protection: Domain = {
 						name: 'Кіраса богів',
 						description: 'Ваші союзники вкриті духовною бронею.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Три істоти',
 						cost: 9,
 						sections: [
@@ -114,8 +114,8 @@ export const protection: Domain = {
 						name: 'Благословення фортеці',
 						description: 'Магічне коло розширюється від вас, не дозволяючи ворогам наближатися.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.createSelf()],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.createSelf() ],
 						target: 'Ви',
 						cost: 11,
 						sections: [

@@ -23,7 +23,7 @@ export const war: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-war-1-2',
-							listOptions: [SkillList.Exploration]
+							listOptions: [ SkillList.Exploration ]
 						})
 					]
 				})
@@ -38,8 +38,8 @@ export const war: Domain = {
 						name: 'Благословення прозорливості',
 						description: 'Боги дарують прозорливість, що відкриває найкращі місця для удару по ворогах.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Ти та кожен союзник',
 						cost: 5,
 						sections: [
@@ -59,7 +59,7 @@ export const war: Domain = {
 				FactoryLogic.feature.create({
 					id: 'domain-war-4',
 					name: 'Покращена освячена зброя',
-					description: 'Зброя, покращена твоєю властивістю "Освячена зброя", дає +3 до кидка шкоди замість +1.',
+					description: 'Зброя, покращена твоєю властивістю "Освячена зброя", дає +3 до кидка шкоди замість +1.'
 				})
 			]
 		},
@@ -76,14 +76,14 @@ export const war: Domain = {
 						name: 'Клинок небес',
 						description: 'Великий меч спускається з неба, загрожуючи приголомшити ворога.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-						distance: [FactoryLogic.distance.createRanged(5)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						distance: [ FactoryLogic.distance.createRanged(5) ],
 						target: 'Одна істота',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '8 + І шкоди; Л < [слабка], повалена та скута (рят. кидок завершує)',
 									tier2: '12 + І шкоди; Л < [середня], повалена та скута (рят. кидок завершує)',
 									tier3: '16 + І шкоди; Л < [сильна], повалена та скута (рят. кидок завершує)'
@@ -100,7 +100,7 @@ export const war: Domain = {
 				FactoryLogic.feature.create({
 					id: 'domain-war-7',
 					name: 'Твої тріумфи памʼятають',
-					description: 'Боги дозволяють тобі та твоїм супутникам купатися у славі минулих перемог. Коли ти завершуєш відпочинок, ти та інші герої, які відпочивали з тобою, відновлюєте 1 Перемогу після того, як Перемоги перетворюються на досвід. Ця Перемога не перетворюється на досвід після наступного відпочинку.',
+					description: 'Боги дозволяють тобі та твоїм супутникам купатися у славі минулих перемог. Коли ти завершуєш відпочинок, ти та інші герої, які відпочивали з тобою, відновлюєте 1 Перемогу після того, як Перемоги перетворюються на досвід. Ця Перемога не перетворюється на досвід після наступного відпочинку.'
 				})
 			]
 		},
@@ -117,8 +117,8 @@ export const war: Domain = {
 						name: 'Праведна фаланга',
 						description: 'Стіна з обертових мечів і ножів зʼявляється там, де ти забажаєш.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 15, within: 10 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 15, within: 10 }) ],
 						target: 'Особлива',
 						cost: 11,
 						sections: [

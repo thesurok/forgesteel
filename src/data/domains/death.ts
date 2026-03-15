@@ -21,8 +21,8 @@ export const death: Domain = {
 								name: 'Мова Могили',
 								description: 'Ви спілкуєтеся з душею нещодавно померлого.',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [AbilityKeyword.Magic],
-								distance: [FactoryLogic.distance.createMelee()],
+								keywords: [ AbilityKeyword.Magic ],
+								distance: [ FactoryLogic.distance.createMelee() ],
 								target: 'Одна мертва істота',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Ви можете говорити з ціллю, якщо це істота, яка померла протягом останніх 24 годин і знає мову, якою ви володієте, навіть якщо це лише голова. Ціль ставиться до вас так, як ставилася за життя, і вам, можливо, доведеться проходити випробування, щоб вплинути на неї чи переконати говорити. Травма смерті може зробити спогади про цю подію нечіткими, але ціль знає все, що знала за життя. Через 1 хвилину ефект закінчується. Ви не можете використати цю здібність на тій самій істоті двічі.')
@@ -31,7 +31,7 @@ export const death: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-death-1-2',
-							listOptions: [SkillList.Lore]
+							listOptions: [ SkillList.Lore ]
 						})
 					]
 				})
@@ -46,8 +46,8 @@ export const death: Domain = {
 						name: 'Жнива',
 						description: 'Боги винагороджують тих, хто карає ворогів.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Кожен союзник',
 						cost: 5,
 						sections: [
@@ -84,8 +84,8 @@ export const death: Domain = {
 						name: 'Аура Душ',
 						description: 'Вихор душ померлих кружляє навколо вас за вашим наказом.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
 						target: 'Кожна істота в області',
 						cost: 9,
 						sections: [
@@ -121,8 +121,8 @@ export const death: Domain = {
 						name: 'Слово Останнього Спасіння',
 						description: 'Ваша смерть підживить нашу перемогу.',
 						type: FactoryLogic.type.createTrigger('The target dies.', { free: true }),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Одна істота',
 						cost: 11,
 						sections: [

@@ -738,9 +738,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 corruption damage; P < 1 slowed (save ends)',
-								tier2: '14 corruption damage; P < 2 restrained (save ends)',
-								tier3: '17 corruption damage; P < 3 restrained (save ends)'
+								tier1: '9 шкоди від скверни; П < 1 сповільнений (рят. кидок завершує)',
+								tier2: '14 шкоди від скверни; П < 2 скутий (рят. кидок завершує)',
+								tier3: '17 шкоди від скверни; П < 3 скутий (рят. кидок завершує)'
 							}))
 						]
 					})

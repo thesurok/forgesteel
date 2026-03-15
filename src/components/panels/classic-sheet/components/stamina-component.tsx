@@ -21,7 +21,7 @@ export const StaminaComponent = (props: Props) => {
 					<LabeledTextField
 						label='Поточна'
 						content={(showState && stamina.current?.toString()) || ''}
-						additionalClasses={['no-box']}
+						additionalClasses={[ 'no-box' ]}
 					/>
 				</div>
 			</div>
@@ -30,7 +30,7 @@ export const StaminaComponent = (props: Props) => {
 					<LabeledBooleanField
 						label='Захеканий'
 						value={showState && (stamina.current || 1) <= (stamina.windedAt || 0)}
-						additionalClasses={['label-below']}
+						additionalClasses={[ 'label-below' ]}
 					/>
 					<div className='ref'>≤ <span className='data'>{stamina.windedAt}</span></div>
 				</div>
@@ -38,7 +38,7 @@ export const StaminaComponent = (props: Props) => {
 					<LabeledBooleanField
 						label='При смерті'
 						value={showState && (stamina.current || 1) <= 0}
-						additionalClasses={['label-below']}
+						additionalClasses={[ 'label-below' ]}
 					/>
 					<div className='ref'>0 до <span className='data'>{stamina.deadAt}</span></div>
 				</div>
@@ -47,12 +47,12 @@ export const StaminaComponent = (props: Props) => {
 				<LabeledTextField
 					label='Тимчасова'
 					content={(showState && stamina.temp?.toString()) || ''}
-					additionalClasses={['no-box']}
+					additionalClasses={[ 'no-box' ]}
 				/>
 				<LabeledTextField
 					label='Максимальна'
 					content={stamina.max}
-					additionalClasses={['no-box']}
+					additionalClasses={[ 'no-box' ]}
 				/>
 			</div>
 		</div>

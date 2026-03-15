@@ -11,15 +11,15 @@ export const warden: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-warden-feature-1',
-			selected: ['Nature']
+			selected: [ 'Nature' ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-warden-feature-2',
-			listOptions: [SkillList.Exploration]
+			listOptions: [ SkillList.Exploration ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-warden-feature-3',
-			listOptions: [SkillList.Intrigue]
+			listOptions: [ SkillList.Intrigue ]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-warden-feature-4'
@@ -31,7 +31,7 @@ export const warden: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-warden-feature-6',
-			lists: [PerkList.Exploration]
+			lists: [ PerkList.Exploration ]
 		})
 	],
 	incitingIncidents: {

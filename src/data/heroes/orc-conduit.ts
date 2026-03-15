@@ -2329,9 +2329,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I holy damage; vertical pull 2',
-							tier2: '5 + I holy damage; vertical pull 3',
-							tier3: '8 + I holy damage; vertical pull 4'
+							tier1: '3 + І святої шкоди; вертикально притягнути на 2',
+							tier2: '5 + І святої шкоди; вертикально притягнути на 3',
+							tier3: '8 + І святої шкоди; вертикально притягнути на 4'
 						}
 					}
 				],

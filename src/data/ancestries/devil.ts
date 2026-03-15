@@ -20,7 +20,7 @@ export const devil: Ancestry = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'devil-feature-1b',
-					listOptions: [SkillList.Interpersonal]
+					listOptions: [ SkillList.Interpersonal ]
 				})
 			]
 		}),
@@ -80,7 +80,7 @@ export const devil: Ancestry = {
 					feature: FactoryLogic.feature.create({
 						id: 'devil-feature-2-6',
 						name: 'Хваткий хвіст',
-						description: 'Ваш хваткий хвіст дозволяє протистояти ворогам з усіх боків. Вас неможливо фланкувати.',
+						description: 'Ваш хваткий хвіст дозволяє протистояти ворогам з усіх боків. Вас неможливо фланкувати.'
 					}),
 					value: 2
 				},

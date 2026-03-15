@@ -54,9 +54,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 0,
-									tier1: '5 damage',
-									tier2: '8 damage',
-									tier3: '11 damage'
+									tier1: '5 шкоди',
+									tier2: '8 шкоди',
+									tier3: '11 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability can’t be used again until the arrow launcher is reloaded.')
@@ -140,9 +140,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 0,
-											tier1: '5 damage; R<0 dazed (save ends)',
-											tier2: '8 damage; R<1 dazed (save ends)',
-											tier3: '11 damage; R<1 frightened (save ends)'
+											tier1: '5 шкоди; R<0 приголомшений (рят. кидок завершує)',
+											tier2: '8 шкоди; R<1 приголомшений (рят. кидок завершує)',
+											tier3: '11 шкоди; R<1 зляканий (рят. кидок завершує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionText('This ability can’t be used again until the arrow launcher is reloaded.')
@@ -208,9 +208,9 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 fire damage; M<1 burning (save ends)',
-									tier2: '9 fire damage; M<2 burning (save ends)',
-									tier3: '12 fire damage; M<3 burning (save ends)'
+									tier1: '5 вогняної шкоди; M<1 палає (рят. кидок завершує)',
+									tier2: '9 вогняної шкоди; M<2 палає (рят. кидок завершує)',
+									tier3: '12 вогняної шкоди; M<3 палає (рят. кидок завершує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the boiling oil is poured down on targets from above, it has high ground and gains an edge on the power roll. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can’t be used again until the boiling oil cauldron is reloaded.')
@@ -290,9 +290,9 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 damage',
-									tier2: '9 damage; A<0 push 1',
-									tier3: '12 damage; A<1 push 2'
+									tier1: '5 шкоди',
+									tier2: '9 шкоди; A<0 відштовхнути на 1',
+									tier3: '12 шкоди; A<1 відштовхнути на 2'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Line of effect for this ability is an arc that can be traced over obstacles between the catapult and the target area. This ability can’t be used again until the catapult is reloaded.')
@@ -508,9 +508,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 damage',
-									tier2: '8 damage; M<1 push 1',
-									tier3: '11 damage; M<2 push 2'
+									tier1: '5 шкоди',
+									tier2: '8 шкоди; M<1 відштовхнути на 1',
+									tier3: '11 шкоди; M<2 відштовхнути на 2'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability can’t be used again until the field ballista is reloaded.')
@@ -594,9 +594,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 2,
-											tier1: '4 damage',
-											tier2: '7 damage; M<1 slowed (save ends)',
-											tier3: '10 damage; M<2 slowed (save ends)'
+											tier1: '4 шкоди',
+											tier2: '7 шкоди; M<1 сповільнений (рят. кидок завершує)',
+											tier3: '10 шкоди; M<2 сповільнений (рят. кидок завершує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionText('This ability can’t be used again until the field ballista is reloaded.')
@@ -619,9 +619,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 2,
-											tier1: 'Pull 1',
-											tier2: 'Pull 3',
-											tier3: 'Pull 5'
+											tier1: 'Притягнути на 1',
+											tier2: 'Притягнути на 3',
+											tier3: 'Притягнути на 5'
 										})
 									),
 									FactoryLogic.createAbilitySectionText('This forced movement triggers opportunity attacks.')
@@ -687,9 +687,9 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '6 fire damage; A < 0 burning (save ends)',
-									tier2: '10 fire damage; A < 1 burning (save ends)',
-									tier3: '13 fire damage; A < 2 burning (save ends)'
+									tier1: '6 вогняної шкоди; A < 0 палає (рят. кидок завершує)',
+									tier2: '10 вогняної шкоди; A < 1 палає (рят. кидок завершує)',
+									tier3: '13 вогняної шкоди; A < 2 палає (рят. кидок завершує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can’t be used again until the iron dragon is reloaded.')

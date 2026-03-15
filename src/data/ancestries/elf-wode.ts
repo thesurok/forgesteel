@@ -59,14 +59,14 @@ export const wodeElf: Ancestry = {
 							name: 'Вуд захищається',
 							description: 'Колючі лози з’являються і намагаються зв’язати вашого ворога.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-							distance: [FactoryLogic.distance.createRanged(10)],
+							keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+							distance: [ FactoryLogic.distance.createRanged(10) ],
 							target: 'Одна істота',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [Characteristic.Might, Characteristic.Agility],
+										characteristic: [ Characteristic.Might, Characteristic.Agility ],
 										tier1: '2 + С або Л шкоди; Л < [слабкий] уповільнений (рят. кидок закінчує)',
 										tier2: '3 + С або Л шкоди; Л < [середній] уповільнений (рят. кидок закінчує)',
 										tier3: '5 + С або Л шкоди; Л < [сильний] сковування (рят. кидок закінчує)'

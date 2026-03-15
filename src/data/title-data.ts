@@ -91,7 +91,7 @@ export class TitleData {
 					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
 					target: 'One enemy',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You redirect the strike against the second creature. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.')
+						FactoryLogic.createAbilitySectionText('Ви перенаправляєте удар проти другої істоти. Після використання цієї переваги ви не можете використати її знову, поки не заробите 1 або більше Перемог.')
 					]
 				})
 			}),
@@ -181,7 +181,7 @@ export class TitleData {
 					distance: [ FactoryLogic.distance.createSelf() ],
 					target: 'Self',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You gain concealment. This concealment lasts until you leave the square or use an ability.')
+						FactoryLogic.createAbilitySectionText('Ви отримуєте прикриття. Це прикриття триває, доки ви не покинете клітку або не використаєте здібність.')
 					]
 				})
 			})
@@ -321,7 +321,7 @@ You find an agent who can provide you with three pieces of information about the
 					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
 					target: 'One creature',
 					sections: [
-						FactoryLogic.createAbilitySectionText('Make a free strike.')
+						FactoryLogic.createAbilitySectionText('Виконайте безкоштовний удар.')
 					]
 				})
 			}),
@@ -339,7 +339,7 @@ You find an agent who can provide you with three pieces of information about the
 							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
 							target: 'Each creature in the area',
 							sections: [
-								FactoryLogic.createAbilitySectionText('Until the end of your next turn, you are aware of whether each target is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour.')
+								FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу ви знаєте, чи є кожна ціль конструкцією, нежиттю чи істотою з іншого світу, а також чи використовувала вона магічну здібність протягом попередньої години.')
 							]
 						})
 					}),
@@ -375,7 +375,7 @@ You find an agent who can provide you with three pieces of information about the
 					distance: [ FactoryLogic.distance.createSelf() ],
 					target: 'Self',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You deal yourself 1d6 damage that can’t be reduced in any way. When you do, you ignore difficult terrain and you can increase the distance of any jump you make by 1 square, both until the end of your turn.')
+						FactoryLogic.createAbilitySectionText('Ви завдаєте собі 1d6 шкоди, яку не можна зменшити жодним чином. Коли це відбувається, ви ігноруєте важкопрохідну місцевість і можете збільшити дальність будь-якого стрибка на 1 клітку до кінця вашого ходу.')
 					]
 				})
 			}),
@@ -501,7 +501,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					target: 'Each enemy in the area hidden to you',
 					cost: 1,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Each target who has P < [average] is taunted by you until the end of their next turn, and you know the location of each creature taunted in this way.')
+						FactoryLogic.createAbilitySectionText('Кожна ціль, у якої П < [average], висміюється вами до кінця її наступного ходу, і ви знаєте місцезнаходження кожної істоти, висміяної таким чином.')
 					]
 				})
 			})
@@ -586,7 +586,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
 					target: 'One ally',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You push the target up to 2 squares if their size is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.')
+						FactoryLogic.createAbilitySectionText('Ви штовхаєте ціль на до 2 клітинок, якщо її розмір такий самий, як ваш, або на 4 клітинки, якщо вона менша. Якщо це штовхання спричиняє падіння союзника, він може використати маневр перед падінням, щоб зменшити висоту падіння на 2.')
 					]
 				})
 			}),
@@ -680,7 +680,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					target: 'Each undead enemy in the area',
 					cost: 3,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Each target takes holy damage equal to your Reason, Intuition, or Presence score (your choice). Additionally, each target who has P < [strong] is frightened (save ends).')
+						FactoryLogic.createAbilitySectionText('Кожна ціль отримує святу шкоду, рівну вашому показнику Розуму, Інтуїції або Присутності (на ваш вибір). Додатково, кожна ціль з П < [strong] залякано (рят. кидок закінчує).')
 					]
 				})
 			})
@@ -725,12 +725,12 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [ Characteristic.Might, Characteristic.Agility ],
-								tier1: '6 damage; I < [weak], slowed (save ends)',
-								tier2: '10 damage; I < [average], frightened (save ends)',
-								tier3: '14 damage; I < [strong], dazed (save ends)'
+								tier1: '6 шкоди; І < [слабкий], сповільнений (рят. кидок завершує)',
+								tier2: '10 шкоди; І < [середній], зляканий (рят. кидок завершує)',
+								tier3: '14 шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('If you kill a non-minion opponent using this ability, each enemy within 3 squares of you is frightened (save ends).')
+						FactoryLogic.createAbilitySectionText('Якщо ви вбиваєте не-мініонного супротивника, використовуючи цю здібність, кожен ворог у радіусі 3 клітинок від вас лякається (рят. кидок закінчує).')
 					]
 				})
 			})
@@ -763,7 +763,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					distance: [ FactoryLogic.distance.createRanged(10) ],
 					target: 'One creature who understands a langauge you know',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You communicate telepathically with the target. The targer can respond telepathically as part of the same maneuver.')
+						FactoryLogic.createAbilitySectionText('Ви телепатично спілкуєтесь із ціллю. Ціль може відповісти телепатично як частина того ж маневру.')
 					]
 				})
 			})
@@ -789,7 +789,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					target: 'Self and each ally in the area',
 					cost: 9,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Each target can use the Charge main action.')
+						FactoryLogic.createAbilitySectionText('Кожна ціль може виконати основну дію «Charge».')
 					]
 				})
 			}),
@@ -978,12 +978,12 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [ Characteristic.Might, Characteristic.Agility ],
-								tier1: '7 damage; M < [weak], prone and can\'t stand (save ends)',
-								tier2: '11 damage; M < [average], prone and can\'t stand (save ends)',
-								tier3: '16 damage; M < [strong], prone and can\'t stand (save ends)'
+								tier1: '7 шкоди; С < [слабкий], розпластаний і не може встати (рят. кидок завершує)',
+								tier2: '11 шкоди; С < [середній], розпластаний і не може встати (рят. кидок завершує)',
+								tier3: '16 шкоди; С < [сильний], розпластаний і не може встати (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('If the target is size 2 or larger, you gain an edge on this ability.')
+						FactoryLogic.createAbilitySectionText('Якщо ціль має розмір 2 або більше, ви отримуєте перевагу на цю здібність.')
 					]
 				})
 			}),
@@ -1016,7 +1016,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					distance: [ FactoryLogic.distance.createSelf() ],
 					target: 'Self',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You recite a prayer for help, gaining a pool of 2d10 of the Heroic Resource granted by your class. This pool disappears at the end of your turn if you haven’t used it. Once you use this benefit, you can’t use it again until you perform another service for a god or saint, or until you gain a level.')
+						FactoryLogic.createAbilitySectionText('Ви виголошуєте молитву про допомогу, отримуючи пул у 2d10 одиниць Героїчного Ресурсу, який надає ваш клас. Цей пул зникає наприкінці вашого ходу, якщо ви ним не скористались. Після використання цієї переваги ви не можете використати її знову, доки не виконаєте іншу послугу для бога чи святого, або доки не підніметесь на рівень.')
 					]
 				})
 			}),
@@ -1070,7 +1070,7 @@ I better watch out for that banana peel!`,
 					distance: [ FactoryLogic.distance.createRanged(10) ],
 					target: 'One creature',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You momentarily attract the target’s notice to let your ally reroll their test. Once you use this ability, you can’t use it again against the same target for 1 hour.')
+						FactoryLogic.createAbilitySectionText('Ви на мить привертаєте увагу цілі, дозволяючи вашому союзнику перебросити свій тест. Після використання цієї здібності ви не можете застосувати її повторно проти тієї ж цілі протягом 1 години.')
 					]
 				})
 			})
@@ -1111,13 +1111,13 @@ I better watch out for that banana peel!`,
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [ Characteristic.Might, Characteristic.Agility ],
-								tier1: '7 damage; taunted (save ends)',
-								tier2: '11 damage; taunted (save ends)',
-								tier3: '16 damage; taunted (save ends)'
+								tier1: '7 шкоди; спровокований (рят. кидок завершує)',
+								tier2: '11 шкоди; спровокований (рят. кидок завершує)',
+								tier3: '16 шкоди; спровокований (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('You can end the taunted condition on the target as a free maneuver.'),
-						FactoryLogic.createAbilitySectionText('If you take this title, you might occasionally be called upon to perform duties for the person who knighted you.')
+						FactoryLogic.createAbilitySectionText('Ви можете завершити стан висміювання (taunted) на цілі як безкоштовний маневр.'),
+						FactoryLogic.createAbilitySectionText('Якщо ви приймаєте цей титул, вас іноді можуть кликати виконувати обовʼязки на користь особи, яка вас посвятила.')
 					]
 				})
 			})
@@ -1203,7 +1203,7 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 					distance: [ FactoryLogic.distance.createRanged(10) ],
 					target: 'One creature',
 					sections: [
-						FactoryLogic.createAbilitySectionText('You swear a hunter’s oath against the target. This oath lasts until the target dies or until you swear a hunter’s oath against a different creature. As long as the hunter’s oath lasts, you magically know the direction to the target if they are within 50 miles of you, and your damage-dealing abilities gain a +5 damage bonus against the target.')
+						FactoryLogic.createAbilitySectionText('Ви даєте мисливську присягу проти цілі. Ця присяга триває доти, поки ціль не помре або поки ви не дасте мисливську присягу проти іншої істоти. Поки присяга діє, ви магічно знаєте напрямок до цілі, якщо вона в межах 50 миль від вас, а ваші здібності, що завдають шкоди, отримують +5 до шкоди проти цієї цілі.')
 					]
 				})
 			}),
@@ -1463,12 +1463,12 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [ Characteristic.Presence ],
-								tier1: 'You take 4 sonic damage unless you have the Performance skill.',
-								tier2: '6 sonic damage; M < [average], weakened (save ends)',
-								tier3: '10 sonic damage; M < [average], weakened and bleeding (save ends)'
+								tier1: 'Ви отримуєте 4 звукової шкоди, якщо не маєте навички Performance.',
+								tier2: '6 звукової шкоди; С < [середній], ослаблення (рят. кидок завершує)',
+								tier3: '10 звукової шкоди; С < [середній], ослаблення і кровотеча (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('The soul of any creature killed by this ability is dragged to Hell.')
+						FactoryLogic.createAbilitySectionText('Душа будь-якої істоти, вбитої цією здібністю, виривається до Пекла.')
 					]
 				})
 			}),

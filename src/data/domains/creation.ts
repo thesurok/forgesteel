@@ -21,8 +21,8 @@ export const creation: Domain = {
 								name: 'Руки Творця',
 								description: 'Ви можете створювати предмети силою розуму.',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [AbilityKeyword.Magic],
-								distance: [FactoryLogic.distance.createSelf()],
+								keywords: [ AbilityKeyword.Magic ],
+								distance: [ FactoryLogic.distance.createSelf() ],
 								target: 'Self',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Ви створюєте звичайний предмет розміру 1С або менше. Ви можете підтримувати одночасно кількість таких предметів, що дорівнює вашій Інтуїції. Ви можете знищити створений предмет думкою, незалежно від відстані (без дії).')
@@ -31,7 +31,7 @@ export const creation: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-creation-1-2',
-							listOptions: [SkillList.Crafting]
+							listOptions: [ SkillList.Crafting ]
 						})
 					]
 				})
@@ -46,8 +46,8 @@ export const creation: Domain = {
 						name: 'Статуя Сили',
 						description: 'Мармурова статуя вашого божества піднімається з землі.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Special',
 						cost: 5,
 						sections: [
@@ -84,15 +84,15 @@ export const creation: Domain = {
 						name: 'Машина Богів',
 						description: 'Ви створюєте гудячий танк із лез і металу.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Special',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ви створюєте котячу машину розміру 2, яка зʼявляється на вільній клітинці в межах дистанції. Машина має 50 Витривалості й імунітет до отрути та психічної шкоди. Вона зникає наприкінці сутички, якщо її Витривалість падає до 0 або якщо ви вмираєте. Коли машина зʼявляється, зробіть наступний кидок сили по кожному ворогу поруч.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '3 шкоди',
 									tier2: '5 шкоди',
 									tier3: '8 шкоди'
@@ -128,8 +128,8 @@ export const creation: Domain = {
 						name: 'Божественний дракон',
 						description: 'З нічого, лише божественною волею, ви створюєте могутнього союзника.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.createRanged(10)],
+						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.createRanged(10) ],
 						target: 'Special',
 						cost: 11,
 						sections: [
@@ -139,7 +139,7 @@ export const creation: Domain = {
 На наступних ходах ви можете використати основну дію, щоб наказати дракону дихати магічним вогнем у кубі 3 в межах 1 клітинки від нього. Зробіть наступний кидок сили по кожному ворогу в області.`),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '5 вогняної шкоди',
 									tier2: '9 вогняної шкоди',
 									tier3: '12 вогняної шкоди'
@@ -148,7 +148,7 @@ export const creation: Domain = {
 							FactoryLogic.createAbilitySectionText('Крім того, ви можете використати маневр, щоб перемістити дракона на його швидкість або завдати удару кігтем по сусідній істоті чи обʼєкту. Дракон також може зробити цей удар як безкоштовний.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '3 + І шкоди',
 									tier2: '5 + І шкоди',
 									tier3: '8 + І шкоди'

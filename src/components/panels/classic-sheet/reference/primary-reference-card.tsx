@@ -14,7 +14,7 @@ interface Props {
 export const PrimaryReferenceCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[props.character]
+		[ props.character ]
 	);
 
 	const showTriggerHelp = props.options.classicSheetPageSize === SheetPageSize.A4 &&
@@ -101,7 +101,7 @@ export const PrimaryReferenceCard = (props: Props) => {
 									<li>Захоплення</li>
 									<li>Сховатися</li>
 									<li>Відштовхування</li>
-									<li>Зробити або допомогти в тесті</li>
+									<li>Виконати тест/допомогти в тесті</li>
 									<li>Пошук схованої істоти</li>
 									<li>Встати</li>
 									<li>Використати розхідник</li>

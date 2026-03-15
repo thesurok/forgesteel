@@ -36,7 +36,7 @@ export const DrawSteelSymbolText = (props: Props) => {
 		const results: (string | JSX.Element)[] = [];
 
 		let i = 0;
-		[...text.matchAll(regex)].forEach(str => {
+		[ ...text.matchAll(regex) ].forEach(str => {
 			const beforeMatch = text.slice(i, str.index);
 			i = str.index + str[0].length;
 			results.push(beforeMatch);

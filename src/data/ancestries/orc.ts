@@ -58,7 +58,7 @@ export const orc: Ancestry = {
 						id: 'orc-feature-2-5',
 						name: 'Безперервність',
 						description: 'Ваша кров’яна магія забезпечує вас постійним припливом адреналіну.',
-						conditions: [ConditionType.Slowed]
+						conditions: [ ConditionType.Slowed ]
 					}),
 					value: 2
 				}

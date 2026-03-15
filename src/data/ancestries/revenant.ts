@@ -58,7 +58,7 @@ export const revenant: Ancestry = {
 						id: 'revenant-feature-4-3',
 						name: 'Безкровний',
 						description: 'Для вас відкрита рана не відрізняється від подряпини.',
-						conditions: [ConditionType.Bleeding]
+						conditions: [ ConditionType.Bleeding ]
 					}),
 					value: 2
 				},
@@ -91,14 +91,14 @@ export const revenant: Ancestry = {
 									name: 'Детонація Сигілу',
 									description: 'Магічний сигіл, який ви розмістили на істоті, вибухає енергією.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
-									distance: [FactoryLogic.distance.createRanged(10)],
+									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+									distance: [ FactoryLogic.distance.createRanged(10) ],
 									target: 'Одна істота, що несе ваш сигіл',
 									cost: 'signature',
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
+												characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
 												tier1: '3 + Р, І або П ушкодження; зсув 1',
 												tier2: '3 + Р, І або П ушкодження; зсув 2',
 												tier3: '8 + Р, І або П ушкодження; зсув 3'

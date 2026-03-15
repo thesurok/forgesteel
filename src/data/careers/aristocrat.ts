@@ -11,11 +11,11 @@ export const aristocrat: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-aristocrat-feature-1',
-			listOptions: [SkillList.Interpersonal]
+			listOptions: [ SkillList.Interpersonal ]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-aristocrat-feature-2',
-			listOptions: [SkillList.Lore]
+			listOptions: [ SkillList.Lore ]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-aristocrat-feature-3'
@@ -32,7 +32,7 @@ export const aristocrat: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-aristocrat-feature-6',
-			lists: [PerkList.Lore]
+			lists: [ PerkList.Lore ]
 		})
 	],
 	incitingIncidents: {

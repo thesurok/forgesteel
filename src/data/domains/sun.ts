@@ -23,7 +23,7 @@ export const sun: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-sun-1-2',
-							listOptions: [SkillList.Lore]
+							listOptions: [ SkillList.Lore ]
 						})
 					]
 				})
@@ -38,14 +38,14 @@ export const sun: Domain = {
 						name: 'Ранкове світло',
 						description: 'Світло за вашим наказом палає, обпалюючи ворогів і благословляючи союзників.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '4 вогняної шкоди',
 									tier2: '6 вогняної шкоди',
 									tier3: '10 вогняної шкоди'
@@ -84,8 +84,8 @@ export const sun: Domain = {
 						name: 'Благословення полуденного сонця',
 						description: 'Ваше тіло випромінює жар, що випікає ворогів і надихає союзників.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 }) ],
 						target: 'Ви та кожна істота в зоні',
 						cost: 9,
 						sections: [
@@ -118,14 +118,14 @@ export const sun: Domain = {
 						name: 'Сонячний спалах',
 						description: 'Ви закликаєте сферу вогню, яка спалює ворогів до попелу.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '9 вогняної шкоди',
 									tier2: '14 вогняної шкоди',
 									tier3: '19 вогняної шкоди'

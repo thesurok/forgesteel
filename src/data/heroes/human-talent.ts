@@ -4480,9 +4480,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '6 damage; vertical pull 5 toward the center of the a',
-																	tier2: '9 damage; vertical pull 7 toward the center of the area',
-																	tier3: '13 damage; vertical pull 10 toward the center of the area'
+																	tier1: '6 шкоди; вертикально притягнути на 5 до центру зони',
+																	tier2: '9 шкоди; вертикально притягнути на 7 до центру зони',
+																	tier3: '13 шкоди; вертикально притягнути на 10 до центру зони'
 																}
 															},
 															{

@@ -117,9 +117,9 @@ export const wodeElfTroubadour = {
 														'Agility'
 													],
 													bonus: 0,
-													tier1: '2 + M or A damage; A < [weak] slowed (save ends)',
-													tier2: '3 + M or A damage; A < [average] slowed (save ends)',
-													tier3: '5 + M or A damage; A < [strong] restrained (save ends)'
+													tier1: '2 + С або Л шкоди; Л < [слабкий], сповільнений (рят. кидок завершує)',
+													tier2: '3 + С або Л шкоди; Л < [середній], сповільнений (рят. кидок завершує)',
+													tier3: '5 + С або Л шкоди; Л < [сильний], скутий (рят. кидок завершує)'
 												}
 											}
 										],
@@ -184,7 +184,7 @@ export const wodeElfTroubadour = {
 			data: {
 				options: [],
 				count: 1,
-				selected: ['Yllyric']
+				selected: [ 'Yllyric' ]
 			}
 		},
 		languages: [],
@@ -461,9 +461,9 @@ export const wodeElfTroubadour = {
 																	'Agility'
 																],
 																bonus: 0,
-																tier1: '3 + M or A damage',
-																tier2: '5 + M or A damage; push 1',
-																tier3: '8 + M or A damage; push 2'
+																tier1: '3 + С або Л шкоди',
+																tier2: '5 + С або Л шкоди; Відштовхування 1',
+																tier3: '8 + С або Л шкоди; Відштовхування 2'
 															}
 														},
 														{
@@ -1413,9 +1413,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '2 + P psychic damage; P < [weak] , bleeding (save ends)',
-							tier2: '5 + P psychic damage; P < [average] , bleeding (save ends)',
-							tier3: '7 + P psychic damage; P < [strong] , bleeding (save ends)'
+							tier1: '2 + П психічної шкоди; П < [слабкий], кровотеча (рят. кидок завершує)',
+							tier2: '5 + П психічної шкоди; П < [середній], кровотеча (рят. кидок завершує)',
+							tier3: '7 + П психічної шкоди; П < [сильний], кровотеча (рят. кидок завершує)'
 						}
 					}
 				],
@@ -1467,9 +1467,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + P damage',
-							tier2: '6 + P damage',
-							tier3: '9 + P damage'
+							tier1: '3 + П шкоди',
+							tier2: '6 + П шкоди',
+							tier3: '9 + П шкоди'
 						}
 					},
 					{
@@ -1534,9 +1534,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '4 + P psychic damage',
-							tier2: '5 + P psychic damage',
-							tier3: '7 + P psychic damage'
+							tier1: '4 + П психічної шкоди',
+							tier2: '5 + П психічної шкоди',
+							tier3: '7 + П психічної шкоди'
 						}
 					},
 					{
@@ -1608,9 +1608,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '7 + P sonic damage',
-							tier2: '10 + P sonic damage',
-							tier3: '13 + P sonic damage'
+							tier1: '7 + П звукової шкоди',
+							tier2: '10 + П звукової шкоди',
+							tier3: '13 + П звукової шкоди'
 						}
 					},
 					{
@@ -1665,9 +1665,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Slide 1; I < [weak], dazed (save ends)',
-							tier2: 'Slide 1; I < [average], dazed (save ends)',
-							tier3: 'Slide 2; I < [strong], dazed (save ends)'
+							tier1: 'Зсунути 1; І < [слабкий], приголомшений (рят. кидок завершує)',
+							tier2: 'Зсунути 1; І < [середній], приголомшений (рят. кидок завершує)',
+							tier3: 'Зсунути 2; І < [сильний], приголомшений (рят. кидок завершує)'
 						}
 					},
 					{
@@ -1726,9 +1726,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '4 damage; P < [weak], slowed (save ends)',
-							tier2: '5 damage; P < [average], slowed (save ends)',
-							tier3: '6 damage; P < [strong], restrained (save ends)'
+							tier1: '4 шкоди; П < [слабкий], сповільнений (рят. кидок завершує)',
+							tier2: '5 шкоди; П < [середній], сповільнений (рят. кидок завершує)',
+							tier3: '6 шкоди; П < [сильний], скутий (рят. кидок завершує)'
 						}
 					},
 					{
@@ -1789,9 +1789,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Taunted (EoT); A < [weak], prone',
-							tier2: 'Taunted (EoT); A < [average], prone',
-							tier3: 'Taunted (EoT); A < [strong], prone and can’t stand (EoT)'
+							tier1: 'Спровокований (до кінця ходу); Л < [слабкий], розпластаний',
+							tier2: 'Спровокований (до кінця ходу); Л < [середній], розпластаний',
+							tier3: 'Спровокований (до кінця ходу); Л < [сильний], розпластаний і не може встати (до кінця ходу)'
 						}
 					}
 				],
@@ -4506,9 +4506,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '5 corruption damage; M < [weak], pull 1 toward the center of the area',
-																	tier2: '9 corruption damage; M < [average], pull 2 toward the center of the area',
-																	tier3: '12 corruption damage; M < [strong], pull 3 toward the center of the area'
+																	tier1: '5 шкоди від скверни; С < [слабкий], притягнути на 1 до центру зони',
+																	tier2: '9 шкоди від скверни; С < [середній], притягнути на 2 до центру зони',
+																	tier3: '12 шкоди від скверни; С < [сильний], притягнути на 3 до центру зони'
 																}
 															}
 														],

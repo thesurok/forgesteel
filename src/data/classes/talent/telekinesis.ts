@@ -85,9 +85,9 @@ export const telekinesis: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [ Characteristic.Reason ],
-											tier1: '3 damage; vertical push 2',
-											tier2: '6 damage; vertical push 4',
-											tier3: '9 damage; vertical push 6'
+											tier1: '3 шкоди; вертикально відштовхнути на 2',
+											tier2: '6 шкоди; вертикально відштовхнути на 4',
+											tier3: '9 шкоди; вертикально відштовхнути на 6'
 										})),
 										FactoryLogic.createAbilitySectionField({
 											name: 'Strained',
@@ -112,9 +112,9 @@ export const telekinesis: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [ Characteristic.Reason ],
-											tier1: '6 + R damage; M < [weak], prone',
-											tier2: '10 + R damage; M < [average], prone',
-											tier3: '14 + R damage; M < [strong], prone and can’t stand (save ends)'
+											tier1: '6 + Р шкоди; С < [слабкий], розпластаний',
+											tier2: '10 + Р шкоди; С < [середній], розпластаний',
+											tier3: '14 + Р шкоди; С < [сильний], розпластаний і не може встати (рят. кидок завершує)'
 										})),
 										FactoryLogic.createAbilitySectionField({
 											name: 'Strained',
@@ -174,9 +174,9 @@ export const telekinesis: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '6 damage; vertical pull 5 toward the center of the a',
-												tier2: '9 damage; vertical pull 7 toward the center of the area',
-												tier3: '13 damage; vertical pull 10 toward the center of the area'
+												tier1: '6 шкоди; вертикально притягнути на 5 до центру зони',
+												tier2: '9 шкоди; вертикально притягнути на 7 до центру зони',
+												tier3: '13 шкоди; вертикально притягнути на 10 до центру зони'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('Targets closest to the center of the area are pulled first.'),
@@ -204,9 +204,9 @@ export const telekinesis: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'Slide 4 + R; M < [weak], the forced movement is vertic',
-												tier2: 'Slide 8 + R; M < [average], the forced movement is vertical',
-												tier3: 'Slide 12 + R; prone; M < [strong], the forced movement is vertical'
+												tier1: 'Зсунути на 4 + Р; С < [слабкий], примусове переміщення вертикальне',
+												tier2: 'Зсунути на 8 + Р; С < [середній], примусове переміщення вертикальне',
+												tier3: 'Зсунути на 12 + Р; розпластаний; С < [сильний], примусове переміщення вертикальне'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({

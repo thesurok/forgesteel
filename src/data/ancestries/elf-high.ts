@@ -73,7 +73,7 @@ export const highElf: Ancestry = {
 						id: 'high-elf-feature-2-5',
 						name: 'Нескінченний розум',
 						description: 'Ваш розум дозволяє зберігати концентрацію в будь-якій ситуації.',
-						conditions: [ConditionType.Dazed]
+						conditions: [ ConditionType.Dazed ]
 					}),
 					value: 2
 				}

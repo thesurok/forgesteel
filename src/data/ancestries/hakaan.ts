@@ -48,7 +48,7 @@ export const hakaan: Ancestry = {
 						id: 'hakaan-feature-2-4',
 						name: 'Велика витривалість',
 						description: 'Ваш міцний організм запобігає втраті сили.',
-						conditions: [ConditionType.Weakened]
+						conditions: [ ConditionType.Weakened ]
 					}),
 					value: 2
 				},

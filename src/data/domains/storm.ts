@@ -33,7 +33,7 @@ export const storm: Domain = {
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'domain-storm-1-2',
-							listOptions: [SkillList.Exploration]
+							listOptions: [ SkillList.Exploration ]
 						})
 					]
 				})
@@ -48,14 +48,14 @@ export const storm: Domain = {
 						name: 'Буря святого',
 						description: 'Лютує буря, що вражає ворогів блискавками й кидає їх вітром.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '2 блискавки шкоди; вертикальне зсування 1',
 									tier2: '5 блискавки шкоди; вертикальне зсування 2',
 									tier3: '7 блискавки шкоди; вертикальне зсування 3'
@@ -93,14 +93,14 @@ export const storm: Domain = {
 						name: 'Володар блискавок',
 						description: 'Блискавки вириваються з вашого тіла в різні боки.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 1, within: 1 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 1, within: 1 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '6 блискавки шкоди; штовхання 1',
 									tier2: '9 блискавки шкоди; штовхання 2',
 									tier3: '13 блискавки шкоди; штовхання 3'
@@ -135,14 +135,14 @@ export const storm: Domain = {
 						name: 'Божественна буря',
 						description: 'Ви викликаєте божественну бурю, яка залишається під вашим контролем.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
-						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 5 })],
+						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 5 }) ],
 						target: 'Кожен ворог у зоні',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [Characteristic.Intuition],
+									characteristic: [ Characteristic.Intuition ],
 									tier1: '2 блискавки шкоди; 2 звукової шкоди',
 									tier2: '3 блискавки шкоди; 3 звукової шкоди',
 									tier3: '5 блискавки шкоди; 5 звукової шкоди'
