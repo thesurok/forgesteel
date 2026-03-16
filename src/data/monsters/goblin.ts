@@ -271,7 +271,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -395,7 +395,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 15 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -452,7 +452,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -471,7 +471,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the underboss’s next turn, each target gains an edge on strikes, and any strike made against a target gains an edge.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -510,7 +510,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -626,7 +626,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can move up to their speed or make a free strike.')
 						]
@@ -791,7 +791,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

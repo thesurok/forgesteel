@@ -57,9 +57,9 @@ Adding insult to injury, those who deal with hags almost always discover the pro
 				name: 'Hag Wyrd',
 				type: FactoryLogic.type.createMain(),
 				cost: 5,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
-				target: 'Each enemy in the area',
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
@@ -90,9 +90,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 **KICK**`,
 				type: FactoryLogic.type.createMain(),
 				cost: 10,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 2 }) ],
-				target: 'Each enemy in the area',
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 2 })],
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
@@ -110,7 +110,7 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 			name: 'Wode Hag',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Fey', 'Hag' ],
+			keywords: ['Fey', 'Hag'],
 			encounterValue: 60,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -133,8 +133,8 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-3',
 						name: 'Corrosive Claws',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -152,9 +152,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-4',
 						name: 'Soul Steal',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 1 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -175,8 +175,8 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-5',
 						name: 'Shapeshifter',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hag alters their body to become any size 1 creature, from a house cat to a humanoid. If the hag uses this ability while outside of any enemy’s line of effect, they can choose to be automatically hidden. The hag can return to their original form as a free maneuver.'),
@@ -192,9 +192,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-6',
 						name: 'Turned Upside Down',
 						type: FactoryLogic.type.createTrigger('A creature targets the hag with a melee strike.'),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+						target: 'Кожен ворог у зоні',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -212,8 +212,8 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-7',
 						name: 'Snackies for Sweeties',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hag attaches an ornate explosive pastry to each target who has A<2. At the end of the round, the hag makes one power roll against each creature with a pastry attached to them.'),
@@ -238,9 +238,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-8',
 						name: 'Predator’s Alacrity',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Before using this villain action, the hag shifts up to their speed. They then use Corrosive Claws against each target, push each target up to 2 squares, and shift up to their speed again.')
 						]
@@ -251,8 +251,8 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						id: 'hag-feature-9',
 						name: 'Open the Oven',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

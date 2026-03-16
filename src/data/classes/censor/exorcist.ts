@@ -144,7 +144,7 @@ export const exorcist: SubClass = {
 									type: FactoryLogic.type.createTrigger('Ціль отримує стан або ефект, який закінчується рятівним кидком або який завершується в кінці її ходу.', { free: true }),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Себе або одного союзника',
+									target: 'На себе або одного союзника',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ефект знімається з цілі і переноситься на істоту, яка наклала ефект. Та істота також отримує шкоду, рівну тричі вашому показнику Присутності.')

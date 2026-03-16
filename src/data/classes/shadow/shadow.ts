@@ -488,7 +488,7 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -775,7 +775,7 @@ Subterfuge remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a power roll upon your return.'),
@@ -794,7 +794,7 @@ Subterfuge remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -839,7 +839,7 @@ Subterfuge remains until you spend it.`
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -861,7 +861,7 @@ Subterfuge remains until you spend it.`
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 			],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -897,7 +897,7 @@ Subterfuge remains until you spend it.`
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 5 })
 			],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

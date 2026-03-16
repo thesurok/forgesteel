@@ -195,7 +195,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				cost: 7,
 				keywords: [],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 5,
@@ -533,7 +533,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(3)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -593,7 +593,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -625,7 +625,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The neuronite chooses one ally within 10 squares. Each target is either taunted by the ally, or the ally has damage immunity 3 whenever any target makes a strike against them (the neuronite’s choice). Either effect lasts until the start of the neuronite’s next turn.')
 						]
@@ -666,7 +666,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -726,7 +726,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A detonator attaches to the target. At the end of each round, roll a die. On an odd result, the detonator explodes, triggering the power roll.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -784,7 +784,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -855,7 +855,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -975,7 +975,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can make a ranged free strike, then immediately use the Charge main action.')
 						]
@@ -988,7 +988,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each ally within 5 squares of the target moves up to their speed and can make a free strike against the target. If the target has <code>I < 2</code>, they are frightened of the ground commander (save ends).')
 						]
@@ -1175,7 +1175,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1254,7 +1254,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1309,7 +1309,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1372,7 +1372,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1556,7 +1556,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1576,7 +1576,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1744,7 +1744,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tetrarch can jump up to 7 squares before using this ability.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1935,7 +1935,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -2066,7 +2066,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(15)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -2310,7 +2310,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 1, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								tier1: '3 damage',
@@ -2368,7 +2368,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								tier1: '3 psychic damage',
@@ -2385,7 +2385,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the prismite’s next turn, each target has cover and gains a +2 bonus to stability.')
 						]
@@ -2489,7 +2489,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Slide 5, and if the the target has <code>M < 4</code>, they fall prone.')
 						]
@@ -2515,7 +2515,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
@@ -2947,7 +2947,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createTrigger('The target moves within distance of Vesper'),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(3)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is dropped through a portal, which teleports them up to 7 squares above a space within 15 squares.')
 						]
@@ -3007,7 +3007,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 2,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
@@ -3054,7 +3054,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createTrigger('A war dog within distance is made winded or reduced to 0 Stamina', { free: true }),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target loses all their surges and takes 5 corruption damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -3075,7 +3075,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes 10 psychic damage.')
 						]
@@ -3131,7 +3131,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of Alkestis’s next turn, any effect that reduces the damage taken by the target has no effect.')
 						]

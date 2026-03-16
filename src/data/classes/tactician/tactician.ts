@@ -388,7 +388,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -411,7 +411,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -447,7 +447,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -471,7 +471,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You mark the target.'),
@@ -627,7 +627,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target gains 2 surges and can use a signature or heroic ability as a free triggered action. The ability has a double edge on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.')

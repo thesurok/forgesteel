@@ -136,7 +136,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -154,7 +154,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -252,7 +252,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox directs each of his eyestalks to use a signature ability against any target.')
 						]
@@ -323,7 +323,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						cost: 'signature',
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -403,7 +403,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						cost: 'signature',
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -444,7 +444,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -484,7 +484,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

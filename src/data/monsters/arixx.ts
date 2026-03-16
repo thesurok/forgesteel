@@ -75,7 +75,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 			name: 'Arixx',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Arixx', 'Beast' ],
+			keywords: ['Arixx', 'Beast'],
 			encounterValue: 36,
 			speed: FactoryLogic.createSpeed(5, 'burrow'),
 			stamina: 200,
@@ -103,9 +103,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-3',
 						name: 'Bite',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -123,8 +123,8 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-4',
 						name: 'Claw Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -142,8 +142,8 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-5',
 						name: 'Spitfire',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -161,9 +161,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-6',
 						name: 'Dirt Devil',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -181,8 +181,8 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-7',
 						name: 'Dust Cloud',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The arixx kicks up dust to fill the area until the start of their next turn, then moves up to their speed. Any enemy in the area or who targets a creature in the area takes a bane on power rolls.')
@@ -194,7 +194,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-8',
 						name: 'Skitter',
 						type: FactoryLogic.type.createTrigger('The arixx takes damage.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect**: The arixx halves the damage and shifts up to 3 squares after the triggering effect resolves.')
@@ -206,8 +206,8 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-9',
 						name: 'Acid Spew',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 2, value2: 10, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 2, value2: 10, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -225,7 +225,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-10',
 						name: 'Sinkhole',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Self, value: 0 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Self, value: 0 })],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The arixx shifts up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig maneuver.')
@@ -237,8 +237,8 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						id: 'arixx-1-feature-11',
 						name: 'Acid and Claws',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

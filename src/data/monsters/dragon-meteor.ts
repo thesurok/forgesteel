@@ -91,7 +91,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 			name: 'Meteor Dragon',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Dragon', 'Elemental' ],
+			keywords: ['Dragon', 'Elemental'],
 			encounterValue: 144,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(15, 'fly'),
@@ -115,8 +115,8 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-4',
 						name: 'Gravity Well',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each creature and object in the area',
 						cost: 'signature',
 						sections: [
@@ -136,7 +136,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-5',
 						name: 'Cosmic Tail Ray',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(2),
 							FactoryLogic.distance.createRanged(15)
@@ -163,9 +163,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-7',
 						name: 'Investiture of Gravity',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 15 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 15 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. The dragon chooses a direction and vertical slides each target 10 squares in that direction, ignoring stability. A target who strikes an obstacle takes damage as if they had fallen the forced movement distance.')
@@ -177,7 +177,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-8',
 						name: 'Field Collapse',
 						type: FactoryLogic.type.createTrigger('The dragon takes damage from an ability while the area of their Voidshroud Wyrmscale Aura is 2 or more.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon halves the damage. Each enemy and object in the area of the dragon’s Voidshroud Wyrmscale Aura trait takes 5 sonic damage and is pulled up to 5 squares toward the dragon. The area of the wyrmscale aura then resets to 1.')
@@ -190,8 +190,8 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						name: 'A Hero Faces the Void',
 						type: FactoryLogic.type.createTrigger('A creature within distance spends their Heroic Resource to use an ability.', { free: true }),
 						cost: 2,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -216,8 +216,8 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-11',
 						name: 'Impactful Arrival',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSpecial('1-mile burst') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSpecial('1-mile burst')],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 30 fire damage, and if they have M<5, they are knocked prone.'),
@@ -233,7 +233,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-12',
 						name: 'Burning Aurora',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, each enemy who is dragonsealed and weakened and who the dragon has line of effect to loses 1 of their Heroic Resource at the start of each of their turns (to a minimum of 0). The dragon then uses their Cosmic Tail Ray ability with a double edge, targeting four creatures or objects.')
@@ -245,8 +245,8 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						id: 'dragon-meteor-feature-13',
 						name: 'Voidlight Breath',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSpecial('∞ × 3 line within 1') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSpecial('∞ × 3 line within 1')],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

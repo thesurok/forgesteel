@@ -91,7 +91,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 			name: 'Omen Dragon',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Dragon', 'Elemental' ],
+			keywords: ['Dragon', 'Elemental'],
 			encounterValue: 120,
 			size: FactoryLogic.createSize(5),
 			speed: FactoryLogic.createSpeed(10, 'fly'),
@@ -102,7 +102,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'dragon-omen-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Corruption, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Corruption, modifierType: DamageModifierType.Immunity, value: 6 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'dragon-omen-feature-2',
@@ -124,8 +124,8 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-4',
 						name: 'Corroding Breath',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 						target: 'Each creature and object in the area',
 						cost: 'signature',
 						sections: [
@@ -145,8 +145,8 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-5',
 						name: 'Barbed Tail Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(4) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(4)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -172,9 +172,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-7',
 						name: 'Detonation',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Each target takes 9 corruption damage, and the omen dragon regains Stamina equal to half the total damage dealt. The target then loses their dragonseal.')
@@ -187,7 +187,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						name: 'Don’t Turn Away',
 						type: FactoryLogic.type.createTrigger('A creature leaves the area of the dragon’s Stagnant Wyrmscale Aura trait.', { free: true }),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon shifts up to their speed, and the Deathcount of each dragonsealed creature who comes adjacent to the dragon during this shift is reduced by 1.')
@@ -200,7 +200,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						name: 'Repent!',
 						type: FactoryLogic.type.createTrigger('A dragonsealed creature within distance deals damage to the dragon.', { free: true }),
 						cost: 2,
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target must choose between making a free strike against themself or gaining a Deathcount of 5.')
@@ -217,9 +217,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-11',
 						name: 'What You Deserve',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
@@ -236,8 +236,8 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-12',
 						name: 'Souls of the Broken',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Five creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon spits fragments of souls to attempt to possess the targets, making a separate power roll for each target.'),
@@ -255,8 +255,8 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						id: 'dragon-omen-feature-13',
 						name: 'So Long and Goodnight',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. The dragon’s eyes glow with unequalled malevolence, and any target who has a Deathcount has that Deathcount reduced to 1.')

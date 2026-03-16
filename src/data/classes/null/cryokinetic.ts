@@ -75,7 +75,7 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

@@ -10,7 +10,7 @@ export const vuken: Kit = {
 	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a wolf, becoming a fleet-footed hunter. Vuken are tied to forests and open steppes, and this aspect is associated with the thunderstorm.',
 	type: 'Stormwight',
 	armor: [],
-	weapon: [ KitWeapon.Unarmed ],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 9,
 	speed: 2,
 	stability: 0,
@@ -26,14 +26,14 @@ export const vuken: Kit = {
 				name: 'Unbalancing Attack',
 				description: 'A wild assault forces your foe onto their back.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might ],
+							characteristic: [Characteristic.Might],
 							tier1: '2 + M damage; A < [weak], prone',
 							tier2: '5 + M damage; A < [average], prone',
 							tier3: '7 + M damage; A < [strong], prone'

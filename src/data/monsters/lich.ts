@@ -99,7 +99,7 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 			name: 'Lich',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Undead' ],
+			keywords: ['Undead'],
 			encounterValue: 144,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(10, 'fly, hover'),
@@ -125,8 +125,8 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						id: 'lich-1-3',
 						name: 'Conflagration',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -147,9 +147,9 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						id: 'lich-1-4',
 						name: 'Hopeless Place',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -172,9 +172,9 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						id: 'lich-1-5',
 						name: 'Pain Unending',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(20)],
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -203,7 +203,7 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						id: 'lich-1-6',
 						name: 'Necrotic Form',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The lich becomes spectral, moves up to their speed, and becomes corporeal again. While spectral, the lich automatically ends the grabbed or restrained conditions, has damage immunity 5, can move through solid matter, and ignores difficult terrain. If the lich ends this movement inside solid matter, they are shunted out into the space from which they entered it.')
@@ -215,9 +215,9 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						id: 'lich-1-7',
 						name: 'Baleful Swap',
 						type: FactoryLogic.type.createTrigger('The lich is targeted using an ability by a creature other than the target.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
-						target: 'One enemy',
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
+						target: 'Один ворог',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has P<4, they swap places with the lich to become the new target of the triggering ability.')
@@ -251,8 +251,8 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 						id: 'lich-1-11',
 						name: 'Cages of Wasting',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSpecial('Two 3 cubes within 10') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSpecial('Two 3 cubes within 10')],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
@@ -273,9 +273,9 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 						id: 'lich-1-12',
 						name: 'My Power Alone',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 12 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 12 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A target can’t use heroic abilities until the start of the lich’s next turn.')
 						]
@@ -286,8 +286,8 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 						id: 'lich-1-13',
 						name: 'Arms of Necrosis',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

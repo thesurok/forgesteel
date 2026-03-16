@@ -79,7 +79,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 			name: 'Werewolf',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Accursed', 'Humanoid', 'Werebeast' ],
+			keywords: ['Accursed', 'Humanoid', 'Werebeast'],
 			encounterValue: 36,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -108,9 +108,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						name: 'Accursed Bite',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -131,8 +131,8 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						id: 'werewolf-feature-5',
 						name: 'Ripping Claws',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -150,8 +150,8 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						name: 'Berserker Slash',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -169,7 +169,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						id: 'werewolf-feature-7',
 						name: 'Wall Leap',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee free strike. If the target of the free strike has M<2, they are knocked prone.')
@@ -182,7 +182,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						name: 'Facepalm and Head Slam',
 						type: FactoryLogic.type.createTrigger('A creature within distance targets the werewolf with a melee ability after charging or moving 2 or more squares in a straight line toward them.'),
 						cost: 2,
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is knocked prone and takes 5 damage before the triggering ability is resolved.')
@@ -199,9 +199,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						id: 'werewolf-feature-10',
 						name: 'Howl',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition test**'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -219,7 +219,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						id: 'werewolf-feature-11',
 						name: 'Full Wolf',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The werewolf transforms into a massive wolf of size 3 until they die or until the end of the encounter. They move to a space that can accommodate their new size and push adjacent creatures out of their way. While in wolf form, they have speed 10 and stability 2, their strikes gain a +2 damage bonus and bestow an additional 1 rage, and the potency of Accursed Bite increases by 1.')
@@ -231,8 +231,8 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						id: 'werewolf-feature-12',
 						name: 'Rampage',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

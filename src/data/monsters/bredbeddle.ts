@@ -165,7 +165,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bredbeddle must have a head in their possession (attached to them or not), which they throw at the target. If the head was attached, the bredbeddle becomes headless.'),
@@ -217,7 +217,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						name: 'Challenge',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`The bredbeddle points at the target and issues them a challenge. If the target refuses, they turn green until the end of the encounter (see Turn Green).
 

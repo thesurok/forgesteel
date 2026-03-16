@@ -93,7 +93,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				name: 'Convocation of Chaos',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 7,
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 				distance: [
 					FactoryLogic.distance.createRanged(8)
 				],
@@ -110,7 +110,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 			name: 'Crux of Fire',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Artillery),
-			keywords: [ 'Elemental' ],
+			keywords: ['Elemental'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'T'),
 			speed: FactoryLogic.createSpeed(6),
@@ -125,8 +125,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Spitfire',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(12)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -144,8 +144,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						id: 'elemental-1-feature-2',
 						name: 'Convocation of Flames',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self or one elemental',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the crux’s next turn, the target has fire immunity 5.'),
@@ -162,8 +162,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Flame Jet',
 						type: FactoryLogic.type.createTrigger('The crux takes damage'),
 						cost: 1,
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The crux ignores any effects associated with the damage and can fly up to their speed. If the crux doesn’t end this movement on solid ground, they fall.')
@@ -177,11 +177,11 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'elemental-1-feature-4b',
-					conditions: [ ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone ]
+					conditions: [ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone]
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elemental-1-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -190,7 +190,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 			name: 'Essence of Storms',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Harrier),
-			keywords: [ 'Elemental' ],
+			keywords: ['Elemental'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(8, 'fly'),
@@ -205,9 +205,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Bluster',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -224,8 +224,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						id: 'elemental-2-feature-2',
 						name: 'Convocation of Squalls',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self or one elemental',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the essence’s next turn, the target has lightning immunity 5.'),
@@ -242,7 +242,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Thunderclap',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the essence.'),
 						cost: 1,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [
 							FactoryLogic.distance.createRanged(5)
 						],
@@ -259,11 +259,11 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'elemental-2-feature-4b',
-					conditions: [ ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone ]
+					conditions: [ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone]
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elemental-2-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Lightning, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Lightning, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -272,7 +272,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 			name: 'Essence of Tides',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Elemental' ],
+			keywords: ['Elemental'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'swim'),
@@ -287,8 +287,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Water Wing',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -306,8 +306,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						id: 'elemental-3-feature-2',
 						name: 'Convocation of Waves',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self or one elemental',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the essence’s next turn, the target has cold immunity 5.'),
@@ -324,9 +324,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Sea Salted Wounds',
 						type: FactoryLogic.type.createTrigger('An ally deals rolled damage to the target.'),
 						cost: 1,
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One enemy',
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The essence makes a free strike against the target.')
 						]
@@ -344,11 +344,11 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'elemental-3-feature-5b',
-					conditions: [ ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone ]
+					conditions: [ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone]
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elemental-3-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -357,7 +357,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 			name: 'Field of Growth',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Elemental' ],
+			keywords: ['Elemental'],
 			encounterValue: 28,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(8, 'climb'),
@@ -372,8 +372,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Hampering Roots',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -391,8 +391,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						id: 'elemental-4-feature-2',
 						name: 'Convocation of Verdure',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self or one elemental',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target gains 15 temporary Stamina that lasts until the start of the field’s next turn.'),
@@ -409,8 +409,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Rose Lash Wounds',
 						type: FactoryLogic.type.createTrigger('A creature or object within distance deals damage to the field.'),
 						cost: 1,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes 6 damage, and if they have A<2, they are bleeding (save ends).')
@@ -429,11 +429,11 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'elemental-4-feature-5b',
-					conditions: [ ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone ]
+					conditions: [ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone]
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elemental-4-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -442,7 +442,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 			name: 'Force of Earth',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Elemental' ],
+			keywords: ['Elemental'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5, 'burrow'),
@@ -457,8 +457,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Slam Into Dirt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -476,8 +476,8 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						id: 'elemental-5-feature-2',
 						name: 'Convocation of Quartz',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self or one elemental',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the force’s next turn, any melee strike made against the target takes a bane if it doesn’t already have a bane or double bane.'),
@@ -494,7 +494,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						name: 'Break Armor',
 						type: FactoryLogic.type.createTrigger('The force takes damage.'),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The force halves the damage, and has damage weakness 3 and a +3 bonus to speed until the end of the encounter. This damage weakness increases by 3 each time the force uses this ability in the same encounter.')
@@ -513,7 +513,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'elemental-5-feature-5b',
-					conditions: [ ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone ]
+					conditions: [ConditionType.Restrained, ConditionType.Slowed, ConditionType.Prone]
 				})
 			]
 		})

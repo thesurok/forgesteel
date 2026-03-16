@@ -10,8 +10,8 @@ export const spellsword: Kit = {
 	name: 'Spellsword',
 	description: 'The Spellsword kit combines melee strikes and a little bit of magic, letting you create a warrior who doesn\'t have to choose between the incantation and the blade.',
 	type: '',
-	armor: [ KitArmor.Light, KitArmor.Shield ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Light, KitArmor.Shield],
+	weapon: [KitWeapon.Medium],
 	stamina: 6,
 	speed: 1,
 	stability: 1,
@@ -27,14 +27,14 @@ export const spellsword: Kit = {
 				name: 'Leaping Lightning',
 				description: 'Lightning jumps from your weapon as you strike to harm a nearby foe.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '3 + M, R, I or P lightning damage',
 							tier2: '6 + M, R, I or P lightning damage',
 							tier3: '9 + M, R, I or P lightning damage'

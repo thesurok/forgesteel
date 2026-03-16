@@ -83,7 +83,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 				cost: 5,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionText('The high elf chooses a damage type and condition from one of the following combinations: cold damage and slowed, poison damage and weakened, or corruption damage and frightened.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -304,7 +304,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -344,7 +344,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -575,7 +575,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -648,7 +648,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -706,7 +706,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -780,7 +780,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target glows briefly, and can end one effect on themself, then move up to their speed.')
 						]
@@ -793,7 +793,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -843,7 +843,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -861,7 +861,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

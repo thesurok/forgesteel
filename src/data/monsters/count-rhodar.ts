@@ -165,7 +165,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -209,7 +209,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -264,7 +264,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 8, within: 15 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -285,7 +285,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -307,7 +307,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 15, value2: 3, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

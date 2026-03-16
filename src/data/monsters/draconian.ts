@@ -72,7 +72,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				cost: 5,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 1 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
@@ -92,7 +92,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				cost: 7,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
@@ -251,7 +251,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						cost: 2,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -330,7 +330,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -438,7 +438,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -526,7 +526,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -630,7 +630,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Before the power roll is made, Dorzinuuth shifts to an unoccupied space adjacent to the end of the line.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -679,7 +679,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Roaring Gambit',
 						type: FactoryLogic.type.createVillainAction(1),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Dorzinuuth lets loose a powerful roar. Each target makes a **Reason test.**'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

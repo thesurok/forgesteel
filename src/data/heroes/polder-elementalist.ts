@@ -475,7 +475,7 @@ export const polderElementalist = {
 										qualifier: ''
 									}
 								],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1895,7 +1895,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1950,7 +1950,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2005,7 +2005,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2064,7 +2064,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2119,7 +2119,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2181,7 +2181,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2301,7 +2301,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2360,7 +2360,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2486,7 +2486,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2540,7 +2540,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2714,7 +2714,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 2,
@@ -2892,7 +2892,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 3,
@@ -2950,7 +2950,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 3,
@@ -3070,7 +3070,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 9,
 				repeatable: false,
 				minLevel: 5,
@@ -3129,7 +3129,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 9,
 				repeatable: false,
 				minLevel: 5,
@@ -3195,7 +3195,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 9,
 				repeatable: false,
 				minLevel: 5,
@@ -3257,7 +3257,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 9,
 				repeatable: false,
 				minLevel: 5,
@@ -3324,7 +3324,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3379,7 +3379,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3434,7 +3434,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3595,7 +3595,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 11,
 				repeatable: false,
 				minLevel: 8,
@@ -3700,7 +3700,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 11,
 				repeatable: false,
 				minLevel: 8,
@@ -3820,7 +3820,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 9,
@@ -4054,7 +4054,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4459,7 +4459,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4651,7 +4651,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4936,7 +4936,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,

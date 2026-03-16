@@ -578,7 +578,7 @@ Jackson Bootblack`,
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -599,7 +599,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -624,7 +624,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -733,7 +733,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -754,7 +754,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -778,7 +778,7 @@ Jackson Bootblack`,
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -815,7 +815,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -849,7 +849,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ціль отримує 20 тимчасової Витривалості. До кінця зустрічі, коли ціль отримує шкоду, перебуваючи в межах вашої дистанції, ви можете обрати взяти цю шкоду на себе замість цілі.')
@@ -895,7 +895,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли ціль отримує шкоду, будучи захеканою, вона може використати безкоштовну тригерну дію, щоб завдати джерелу цієї шкоди половину отриманої шкоди.')
@@ -925,7 +925,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

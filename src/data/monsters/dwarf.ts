@@ -91,7 +91,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 				cost: 7,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 10, within: 10 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -284,7 +284,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -343,7 +343,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -363,7 +363,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -404,7 +404,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -459,7 +459,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -536,7 +536,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -580,7 +580,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -600,7 +600,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -637,7 +637,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -657,7 +657,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 5,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -724,7 +724,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target vertical slides up to 5 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -743,7 +743,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target halves any damage from the strike and the triggering creature takes 4 damage.')
 						]
@@ -761,7 +761,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The marauder lord uses Levitating Axes against each target, making one power roll against all targets.')
 						]
@@ -774,7 +774,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. The marauder lord then uses Levitating Axes.')
 						]
@@ -837,7 +837,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

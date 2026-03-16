@@ -316,7 +316,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -336,7 +336,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -377,7 +377,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -398,7 +398,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -461,7 +461,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -482,7 +482,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -515,7 +515,7 @@ Primordial power remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

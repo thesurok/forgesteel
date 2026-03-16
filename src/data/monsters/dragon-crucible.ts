@@ -91,7 +91,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 			name: 'Crucible Dragon',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Dragon', 'Elemental' ],
+			keywords: ['Dragon', 'Elemental'],
 			encounterValue: 96,
 			size: FactoryLogic.createSize(4),
 			speed: FactoryLogic.createSpeed(8),
@@ -102,7 +102,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'dragon-crucible-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'dragon-crucible-feature-2',
@@ -119,8 +119,8 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-4',
 						name: 'Slag Spew',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 1 })],
 						target: 'Each creature and object in the area',
 						cost: 'signature',
 						sections: [
@@ -142,8 +142,8 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-5',
 						name: 'Forge Hammer Tail Slam',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -169,9 +169,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-7',
 						name: 'Thermodynamic Flight',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
+						target: 'Кожен ворог у зоні',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon expels blistering steam, dealing 7 fire damage to each target in the area. The dragon then shifts up to their speed vertically and can fly until the end of the round.')
@@ -184,7 +184,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						name: 'Hammer and Anvil',
 						type: FactoryLogic.type.createTrigger('While flying, the dragon starts their turn or moves.', { free: true }),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon drops to the ground and uses Forge Hammer Tail Slam, which deals an extra 4 damage for each square they descended.')
@@ -196,8 +196,8 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-9',
 						name: 'Polarize Aura',
 						type: FactoryLogic.type.createTrigger('The dragon is targeted by two melee strikes in the current turn.'),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each creature and object in the area',
 						cost: 1,
 						sections: [
@@ -224,9 +224,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-11',
 						name: 'Heart of the Forge',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -242,7 +242,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-12',
 						name: 'Subdermal Shielding',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Shields embedded under the dragon’s scales emerge, and the dragon gains damage immunity 6 at the start of each round until the end of the encounter. If the dragon takes any damage, they lose this immunity until the end of the current round.')
@@ -254,7 +254,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						id: 'dragon-crucible-feature-13',
 						name: 'Polarity Chaos',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),

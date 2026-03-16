@@ -274,7 +274,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -292,7 +292,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.createRanged(5)],
-							target: 'One creature or object',
+							target: 'Одна істота або предмет',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -386,7 +386,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -457,7 +457,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'One enemy',
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -479,7 +479,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'One enemy',
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -538,7 +538,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged],
 							distance: [FactoryLogic.distance.createRanged(10)],
-							target: 'One enemy',
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -598,7 +598,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'One enemy',
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -629,7 +629,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -651,7 +651,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createManeuver(),
 							keywords: [AbilityKeyword.Melee],
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'Себе або одного союзника',
+							target: 'На себе або одного союзника',
 							sections: [
 								FactoryLogic.createAbilitySectionText('The target spends a Recovery, and ability rolls against the target take a bane until the start of the retainer’s next turn.')
 							]

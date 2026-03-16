@@ -156,7 +156,7 @@ export class TrinketData {
 							name: 'Item Ability',
 							type: FactoryLogic.type.createManeuver({ free: true, qualifiers: ['When you fall 5 or more squares'] }),
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'One enemy',
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a melee free strike as a free maneuver once during the fall before you hit the ground.')
 							]
@@ -220,7 +220,7 @@ export class TrinketData {
 							name: 'Item Ability',
 							type: FactoryLogic.type.createManeuver(),
 							distance: [FactoryLogic.distance.createRanged(5)],
-							target: 'One creature or object',
+							target: 'Одна істота або предмет',
 							sections: [
 								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
 							]
@@ -786,7 +786,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 							description: 'Your punch delivers a devastating burst of psionic energy.',
 							type: FactoryLogic.type.createMain(),
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'One creature or object',
+							target: 'Одна істота або предмет',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({

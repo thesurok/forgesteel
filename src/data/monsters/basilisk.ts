@@ -59,7 +59,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 5,
 				sections: [
 					FactoryLogic.createAbilitySectionText('The basilisk spits up a chuck of a past petrified victim.'),
@@ -171,7 +171,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createTrigger('The basilisk takes damage from a melee ability.'),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 5 damage. Any target who has <code>A < 2</code> is also bleeding (save ends).')
 						]
@@ -209,7 +209,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(3)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -282,7 +282,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createTrigger('The tonguesnapper takes damage from a melee ability.'),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 4 acid damage. Any target who has <code>M < 2</code> is also slowed (save ends).')
 						]

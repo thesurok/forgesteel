@@ -199,7 +199,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -341,7 +341,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -469,7 +469,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -542,7 +542,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -678,7 +678,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 4,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -820,7 +820,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -948,7 +948,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1021,7 +1021,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1157,7 +1157,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, value2: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 4,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1299,7 +1299,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1427,7 +1427,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1504,7 +1504,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1645,7 +1645,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area becomes overgrown with caustic vines until the end of the encounter. While in the area, any enemy has acid weakness 5 and is slowed. Any enemy who ends their turn in the area and has <code>M < 4</code> is restrained (save ends).')
@@ -1986,7 +1986,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

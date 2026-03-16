@@ -128,7 +128,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -202,7 +202,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

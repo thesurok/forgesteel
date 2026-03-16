@@ -248,7 +248,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -307,7 +307,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -368,7 +368,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -388,7 +388,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

@@ -310,7 +310,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -329,7 +329,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -386,7 +386,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -405,7 +405,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target who has used their Ready Rodent ability this round regains the use of their triggered action.'),
@@ -477,7 +477,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ratcrobat slides the target up to 3 squares, then can shift into any square the target left.')
 						]
@@ -526,7 +526,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -586,7 +586,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can shift up to their speed or take the Defend action.')
 						]

@@ -225,7 +225,7 @@ A creature who drinks the potion receives benefits based on your power roll.`),
 						type: FactoryLogic.type.createManeuver({ free: true }),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
 Each target takes acid, fire, or poison damage (your choice) equal to your Agility score.
@@ -259,7 +259,7 @@ For each combat round that has passed since this ability was last used in the cu
 									distance: [
 										FactoryLogic.distance.createRanged(10)
 									],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Each enemy within 3 squares of the target who is not currently targeted by this ability also becomes targeted by this ability. This effect continues until there are no more available targets. The ability deals acid, fire, or poison damage (your choice).'),
@@ -286,7 +286,7 @@ For each combat round that has passed since this ability was last used in the cu
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(10)
 									],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

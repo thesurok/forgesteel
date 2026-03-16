@@ -10,7 +10,7 @@ export const boren: Kit = {
 	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a bear, becoming large, durable, and imposing. Boren are tied to the craggy, rocky north, and this aspect is associated with the blizzard’s bitter cold.',
 	type: 'Stormwight',
 	armor: [],
-	weapon: [ KitWeapon.Unarmed ],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 9,
 	speed: 0,
 	stability: 2,
@@ -26,14 +26,14 @@ export const boren: Kit = {
 				name: 'Bear Claws',
 				description: 'Attacks with your sharp and deadly claws grab the weak.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might ],
+							characteristic: [Characteristic.Might],
 							tier1: '2 + M damage; M < [weak], grabbed',
 							tier2: '5 + M damage; M < [average], grabbed',
 							tier3: '7 + M damage; M < [strong], grabbed'

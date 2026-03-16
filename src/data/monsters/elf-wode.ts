@@ -303,7 +303,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -362,7 +362,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -423,7 +423,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -497,7 +497,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -559,7 +559,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -626,7 +626,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -650,7 +650,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -691,7 +691,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -774,7 +774,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 5,
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each non-minion target can make a free strike, then each target shifts up to 3 squares. A target who has cover or concealment at the end of this shift can attempt to hide at the end of the warleader’s turn.')
 						]
@@ -786,7 +786,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Wode Sickness',
 						type: FactoryLogic.type.createTrigger('An ally ends their turn.'),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target must not have taken their turn this round. The target takes their turn immediately, and if they have P<2 they are bleeding and take a bane on strikes until the end of their turn.')
 						]
@@ -814,7 +814,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader uses Wodeblade against each target and gains an edge on the power roll.')
 						]
@@ -827,7 +827,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader can use Wodeblade. Each target can then make a free strike.')
 						]
@@ -872,7 +872,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

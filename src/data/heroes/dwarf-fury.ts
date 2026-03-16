@@ -834,7 +834,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -888,7 +888,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1000,7 +1000,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1058,7 +1058,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1231,7 +1231,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1289,7 +1289,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -1389,7 +1389,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2190,7 +2190,7 @@ export const dwarfFury = {
 																	qualifier: ''
 																}
 															],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															cost: 'signature',
 															repeatable: false,
 															minLevel: 1,
@@ -2720,7 +2720,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -2789,7 +2789,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3789,7 +3789,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4057,7 +4057,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4122,7 +4122,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

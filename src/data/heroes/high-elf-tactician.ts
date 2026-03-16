@@ -1203,7 +1203,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1266,7 +1266,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1373,7 +1373,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -1440,7 +1440,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -1935,7 +1935,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3381,7 +3381,7 @@ export const highElfTactician = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -3471,7 +3471,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'One enemy',
+														target: 'Один ворог',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,

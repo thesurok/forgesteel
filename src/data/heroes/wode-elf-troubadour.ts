@@ -1596,7 +1596,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1653,7 +1653,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1714,7 +1714,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2030,7 +2030,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2089,7 +2089,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2157,7 +2157,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2260,7 +2260,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2362,7 +2362,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2504,7 +2504,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2594,7 +2594,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3098,7 +3098,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3162,7 +3162,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Each ally in the area',
+														target: 'Кожен союзник у зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3532,7 +3532,7 @@ export const wodeElfTroubadour = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -3842,7 +3842,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature or object',
+														target: 'Одна істота або предмет',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3998,7 +3998,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature or object',
+														target: 'Одна істота або предмет',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4169,7 +4169,7 @@ export const wodeElfTroubadour = {
 												qualifier: ''
 											}
 										],
-										target: 'Each enemy in the area',
+										target: 'Кожен ворог у зоні',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4739,7 +4739,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4884,7 +4884,7 @@ export const wodeElfTroubadour = {
 															qualifier: ''
 														}
 													],
-													target: 'Each ally in the area',
+													target: 'Кожен союзник у зоні',
 													cost: 0,
 													repeatable: false,
 													minLevel: 1,
@@ -5007,7 +5007,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -5085,7 +5085,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature or object',
+														target: 'Одна істота або предмет',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

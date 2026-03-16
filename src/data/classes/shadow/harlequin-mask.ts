@@ -69,7 +69,7 @@ The illusion ends when you harm another creature, when you physically interact w
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -151,7 +151,7 @@ If the creature is the same size as you, you can disguise yourself as them using
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Until the start of your next turn, any ability roll made against a target gains an edge.')
@@ -240,7 +240,7 @@ If the creature is the same size as you, you can disguise yourself as them using
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

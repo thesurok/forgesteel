@@ -233,7 +233,7 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 							type: FactoryLogic.type.createMain(),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({

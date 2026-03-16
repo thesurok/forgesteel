@@ -465,7 +465,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -539,7 +539,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -605,7 +605,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -676,7 +676,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -746,7 +746,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createRanged(15)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -830,7 +830,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(15)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -889,7 +889,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })
 						],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -910,7 +910,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'You!',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is marked until the start of the blackguard’s next turn. The blackguard and each of their allies gain an edge on abilities used against targets marked by the blackguard.')
 						]
@@ -935,7 +935,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved.')
 						]
@@ -960,7 +960,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard slides each target up to 5 squares.')
 						]
@@ -973,7 +973,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard uses their Zweihander Swing against each target. Each ally within 5 squares of the area can then make a free strike against a target (one target per ally).')
 						]
@@ -1040,7 +1040,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1100,7 +1100,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. Additionally, until the end of the encounter, while the bandit chief or any ally is adjacent to a target, they have damage immunity 2.')
 						]
@@ -1143,7 +1143,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

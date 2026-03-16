@@ -14,11 +14,11 @@ export class LeveledWeaponData {
 		name: 'Authority’s End',
 		description: 'This long, sinuous chain is composed entirely of broken links held together by unseen power.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ AbilityKeyword.Psionic, KitWeapon.Whip ],
+		keywords: [AbilityKeyword.Psionic, KitWeapon.Whip],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lash used to punish a mutineer',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -29,7 +29,7 @@ export class LeveledWeaponData {
 						ability: FactoryLogic.createAbility({
 							id: 'item-authoritys-end-1',
 							name: 'Use Authority’s End',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'Immediately after you damage a creature with the weapon' ] }),
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['Immediately after you damage a creature with the weapon'] }),
 							sections: [
 								FactoryLogic.createAbilitySectionText('End one effect imposed by the damaged creature on you or another creature within 5 squares of you.')
 							]
@@ -38,7 +38,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-authoritys-end-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -54,7 +54,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-authoritys-end-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -70,7 +70,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-authoritys-end-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -83,11 +83,11 @@ export class LeveledWeaponData {
 		name: 'Blade of Quintessence',
 		description: 'This crystal blade houses a stormy vortex of fire, ice, and lightning',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Medium, AbilityKeyword.Magic ],
+		keywords: [KitWeapon.Medium, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A ruby hardened in the fires of the City of Brass, a sapphire that has been struck by lightning',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -102,7 +102,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-quintessence-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					})
 				]
@@ -118,13 +118,13 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-quintessence-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					}),
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-blade-of-quintessence-5c',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 3
 					})
 				]
@@ -135,7 +135,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-quintessence-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					}),
 					FactoryLogic.feature.createDamageModifier({
@@ -173,11 +173,11 @@ export class LeveledWeaponData {
 		name: 'Blade of the Luxurious Fop',
 		description: 'Despite sporting an outrageously ornate hilt adorned with far too many jewels, this blade remains perfectly balanced.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Light, AbilityKeyword.Magic ],
+		keywords: [KitWeapon.Light, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A personal blessing from the greatest duelist in the land, six fake and extremely shiny gemstones',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -192,7 +192,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-the-luxurious-fop-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -208,7 +208,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-the-luxurious-fop-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					}),
 					FactoryLogic.feature.createBonus({
@@ -229,7 +229,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-the-luxurious-fop-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -242,11 +242,11 @@ export class LeveledWeaponData {
 		name: 'Displacer',
 		description: 'This crystal battleaxe seems to pull at the hands that wield it, as if anxious to leap across the battlefield.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Medium, AbilityKeyword.Psionic ],
+		keywords: [KitWeapon.Medium, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ancient bronze gear covered in indecipherable runes',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -257,7 +257,7 @@ export class LeveledWeaponData {
 						ability: FactoryLogic.createAbility({
 							id: 'item-displacer-1',
 							name: 'Use Displacer',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'After you deal rolled damage' ] }),
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['After you deal rolled damage'] }),
 							sections: [
 								FactoryLogic.createAbilitySectionText('You teleport yourself and the damaged creature, letting you trade places provided you both fit into each other’s spaces.'),
 								FactoryLogic.createAbilitySectionPackage('item-displacer-tag')
@@ -267,7 +267,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-displacer-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -285,7 +285,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-displacer-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -303,7 +303,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-displacer-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -317,11 +317,11 @@ export class LeveledWeaponData {
 		name: 'Executioner\'s Blade',
 		description: 'This blade exudes a faint hum that grows louder as its quarry weakens.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Heavy, AbilityKeyword.Psionic ],
+		keywords: [KitWeapon.Heavy, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The skull of a convicted criminal',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -336,7 +336,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-executioners-blade-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -353,7 +353,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-executioners-blade-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -370,7 +370,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-executioners-blade-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -384,11 +384,11 @@ export class LeveledWeaponData {
 		name: 'Icemaker Maul',
 		description: 'The head of this platinum hammer is cold to the touch, and encases whatever it strikes in a thin layer of ice.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Heavy, AbilityKeyword.Magic ],
+		keywords: [KitWeapon.Heavy, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Eight iron bars cooled in a glacier, the branch of an ancient evergreen',
 			source: 'Texts in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -409,7 +409,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-icemaker-maul-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Cold
 					})
@@ -427,7 +427,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-icemaker-maul-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Cold
 					})
@@ -445,7 +445,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-icemaker-maul-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Cold
 					})
@@ -459,11 +459,11 @@ export class LeveledWeaponData {
 		name: 'Knife of Nine',
 		description: 'This ivory dagger features nine faintly glowing indentations along the blade.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Light, AbilityKeyword.Psionic ],
+		keywords: [KitWeapon.Light, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Eighteen daggers - nine taken from personal enemies and nine gifted by friends',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -515,11 +515,11 @@ export class LeveledWeaponData {
 		name: 'Lance of the Sundered Star',
 		description: 'This needlelike lance is cast of shimmering metal and induces a yearning for the skies in those who handle it.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ AbilityKeyword.Magic, KitWeapon.Polearm ],
+		keywords: [AbilityKeyword.Magic, KitWeapon.Polearm],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Night-blooming flower petals, a starmetal meteorite',
 			source: 'Texts or lore in Hyrallic',
-			characteristic: [ Characteristic.Agility, Characteristic.Presence ],
+			characteristic: [Characteristic.Agility, Characteristic.Presence],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -534,7 +534,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lance-of-the-sundered-star-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Holy
 					})
@@ -551,7 +551,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lance-of-the-sundered-star-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Holy
 					})
@@ -568,7 +568,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lance-of-the-sundered-star-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Holy
 					})
@@ -582,11 +582,11 @@ export class LeveledWeaponData {
 		name: 'Molten Constrictor',
 		description: 'This flexible black-iron net burns with the heat of a volcano.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ AbilityKeyword.Magic, KitWeapon.Ensnaring ],
+		keywords: [AbilityKeyword.Magic, KitWeapon.Ensnaring],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Four iron bars coated in magma slag',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -601,7 +601,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-molten-constrictor-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Fire
 					})
@@ -618,7 +618,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-molten-constrictor-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Fire
 					})
@@ -635,7 +635,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-molten-constrictor-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Fire
 					}),
@@ -644,7 +644,7 @@ export class LeveledWeaponData {
 							id: 'item-molten-constrictor-5b',
 							name: 'Weapon Ability',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createSpecial('') ],
+							distance: [FactoryLogic.distance.createSpecial('')],
 							target: 'One creature grabbed by the net.',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a free strike with another weapon against the target')
@@ -661,11 +661,11 @@ export class LeveledWeaponData {
 		name: 'Onerous Bow',
 		description: 'This mechanized bow is set with magical reservoirs that carry the faint tang of toxins.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Bow, AbilityKeyword.Magic ],
+		keywords: [KitWeapon.Bow, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A venom sac from a giant spider, one valok gyroscope',
 			source: 'Texts or lore in Caelian and Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -680,7 +680,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-onerous-bow-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1
 					})
 				]
@@ -696,7 +696,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-onerous-bow-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1
 					})
 				]
@@ -712,7 +712,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-onerous-bow-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1
 					})
 				]
@@ -725,11 +725,11 @@ export class LeveledWeaponData {
 		name: 'Steeltongue',
 		description: 'This sinuous whip reflects all light off its plated steel surfaces.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ AbilityKeyword.Magic, KitWeapon.Whip ],
+		keywords: [AbilityKeyword.Magic, KitWeapon.Whip],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One hundred steel arrowheads stained with blood',
 			source: 'Texts or lore in Caelian and Kalliak',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -744,7 +744,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-steeltongue-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -760,7 +760,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-steeltongue-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -776,7 +776,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-steeltongue-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -789,11 +789,11 @@ export class LeveledWeaponData {
 		name: 'Third Eye Seeker',
 		description: 'The shifting patterns on this bow’s crystalline grip resemble dozens of blinking eyes.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Bow, AbilityKeyword.Psionic ],
+		keywords: [KitWeapon.Bow, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Heart strings of a tapir, a pound of tiger\'s eye gemstones',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -808,7 +808,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-third-eye-seeker-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -822,8 +822,8 @@ export class LeveledWeaponData {
 							id: 'item-third-eye-seeker-5',
 							name: 'Weapon Ability',
 							type: FactoryLogic.type.createTrigger('After target\'s triggered action resolves'),
-							distance: [ FactoryLogic.distance.createSpecial('Ranged weapon free strike distance') ],
-							target: 'One enemy',
+							distance: [FactoryLogic.distance.createSpecial('Ranged weapon free strike distance')],
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a ranged weapon free strike using this weapon against the target.')
 							]
@@ -832,7 +832,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-third-eye-seeker-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -849,7 +849,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-third-eye-seeker-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Ranged],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -863,11 +863,11 @@ export class LeveledWeaponData {
 		name: 'Thunderhead Bident',
 		description: 'This bident is made from two pieces of moon metal twisted together, and hums like a tuning fork.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ AbilityKeyword.Magic, KitWeapon.Medium ],
+		keywords: [AbilityKeyword.Magic, KitWeapon.Medium],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A jar of captured thunder, two ingots of moon metal',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -882,7 +882,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-thunderhead-bident-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Sonic
 					})
@@ -899,7 +899,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-thunderhead-bident-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Sonic
 					})
@@ -916,7 +916,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-thunderhead-bident-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Sonic
 					})
@@ -930,11 +930,11 @@ export class LeveledWeaponData {
 		name: 'Wetwork',
 		description: 'When first held, this naginata whispers the names of its past victims.',
 		type: ItemType.LeveledWeapon,
-		keywords: [ KitWeapon.Polearm, AbilityKeyword.Psionic ],
+		keywords: [KitWeapon.Polearm, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A folded metal blade infused with blood',
 			source: 'Texts or lore in Higaran',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -945,9 +945,9 @@ export class LeveledWeaponData {
 						ability: FactoryLogic.createAbility({
 							id: 'item-wetwork-1',
 							name: 'Weapon Ability',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'After you reduce a creature to 0 stamina using this weapon' ] }),
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One enemy',
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['After you reduce a creature to 0 stamina using this weapon'] }),
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Один ворог',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a melee free strike.'),
 								FactoryLogic.createAbilitySectionPackage('item-wetwork-tag')
@@ -957,7 +957,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-wetwork-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -975,7 +975,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-wetwork-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})
@@ -998,7 +998,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-wetwork-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Psychic
 					})

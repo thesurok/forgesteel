@@ -91,7 +91,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 			name: 'Gloom Dragon',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Dragon', 'Elemental' ],
+			keywords: ['Dragon', 'Elemental'],
 			encounterValue: 72,
 			size: FactoryLogic.createSize(4),
 			speed: FactoryLogic.createSpeed(8, 'fly, hover'),
@@ -102,7 +102,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'dragon-gloom-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'dragon-gloom-feature-2',
@@ -119,8 +119,8 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-4',
 						name: 'Breath of Brume',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each enemy and object in the area',
 						cost: 'signature',
 						sections: [
@@ -140,8 +140,8 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-5',
 						name: 'Phantom Tail Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -167,9 +167,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-7',
 						name: 'Visions in the Dark',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Each target takes 3 psychic damage, and if they have I<3 they immediately make a free strike against one ally of the dragon’s choice.')
@@ -182,7 +182,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						name: 'Encroaching Darkness',
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares moves.', { free: true }),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon moves two existing cubes of magical darkness up to 10 squares each.')
@@ -199,9 +199,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-11',
 						name: 'Enveloping Umbrage',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -217,9 +217,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-12',
 						name: 'Pall of Nightmares',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -236,7 +236,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						id: 'dragon-gloom-feature-13',
 						name: 'Absence of All Light',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSpecial('') ],
+						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon’s speed. An illusion acts on the dragon’s turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.')

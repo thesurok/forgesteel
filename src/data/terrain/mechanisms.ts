@@ -65,7 +65,7 @@ export const columnOfBlades: Terrain = {
 							AbilityKeyword.Weapon,
 							AbilityKeyword.Strike
 						],
-						distance: [ FactoryLogic.distance.createMelee(0) ],
+						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -140,7 +140,7 @@ export const columnOfBlades: Terrain = {
 									AbilityKeyword.Weapon,
 									AbilityKeyword.Strike
 								],
-								distance: [ FactoryLogic.distance.createMelee(0) ],
+								distance: [FactoryLogic.distance.createMelee(0)],
 								target: 'The triggering creature or object',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
@@ -227,8 +227,8 @@ export const dartTrap: Terrain = {
 							AbilityKeyword.Weapon,
 							AbilityKeyword.Strike
 						],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One creature or object',
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -337,7 +337,7 @@ export const pillar: Terrain = {
 							'The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.',
 							{ free: true }
 						),
-						keywords: [ AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.create({
 								type: AbilityDistanceType.Line,
@@ -445,7 +445,7 @@ export const hiddenPortcullis: Terrain = {
 							'A pressure plate, switch, or other linked trigger is activated.',
 							{ free: true }
 						),
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.createSpecial(
 								'The area of this ability is the area directly beneath the portcullis when it falls.'
@@ -710,7 +710,7 @@ export const ram: Terrain = {
 							'A pressure plate, switch, or other linked trigger is activated.',
 							{ free: true }
 						),
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.createSpecial(
 								'The area of this ability is the path the ram moves through from its starting position.'

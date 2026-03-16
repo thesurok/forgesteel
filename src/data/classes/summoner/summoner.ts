@@ -140,7 +140,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('R damage. If the target has R < [weak], they are slowed (save ends).'),
 							FactoryLogic.createAbilitySectionField({
@@ -283,7 +283,7 @@ You can shift into squares that contain one of your minions, even if they occupy
 									description: 'You ensure the enemy can’t escape the incoming attack.',
 									type: FactoryLogic.type.createTrigger('The target deals damage to another creature.'),
 									distance: [FactoryLogic.distance.createSummoner()],
-									target: 'Себе або одного союзника',
+									target: 'На себе або одного союзника',
 									sections: [
 										FactoryLogic.createAbilitySectionText('The target gains a surge for each of your minions adjacent to them (up to a maximum of 3 surges), which they can use on the triggering damage'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -342,7 +342,7 @@ You can shift into squares that contain one of your minions, even if they occupy
 									description: 'You call upon a minion to use their body to dampen the blow.',
 									type: FactoryLogic.type.createTrigger('The target is targeted by a strike.'),
 									distance: [FactoryLogic.distance.createSummoner()],
-									target: 'Себе або одного союзника',
+									target: 'На себе або одного союзника',
 									sections: [
 										FactoryLogic.createAbilitySectionText('If one of your minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -983,7 +983,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee(3)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

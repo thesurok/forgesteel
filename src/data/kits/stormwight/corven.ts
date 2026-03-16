@@ -11,7 +11,7 @@ export const corven: Kit = {
 	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a crow, becoming stealthy and quick. Corven are tied to the mountain passes and the hot winds that flow through them. This aspect is associated with the warm and fast-rising anabatic wind.',
 	type: 'Stormwight',
 	armor: [],
-	weapon: [ KitWeapon.Unarmed ],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -27,14 +27,14 @@ export const corven: Kit = {
 				name: 'Wing Buffet',
 				description: 'Foes who try to close in around you do so at their peril.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-				target: 'Each enemy in the area',
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Agility ],
+							characteristic: [Characteristic.Agility],
 							tier1: '1 damage',
 							tier2: '4 damage',
 							tier3: '6 damage'

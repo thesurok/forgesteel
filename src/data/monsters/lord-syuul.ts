@@ -116,7 +116,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 			name: 'Lord Syuul',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Horror', 'Voiceless Talker' ],
+			keywords: ['Horror', 'Voiceless Talker'],
 			encounterValue: 96,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'hover, teleport'),
@@ -143,8 +143,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						name: 'Tentacle Grab',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -165,9 +165,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-3',
 						name: 'Dampening Grenade',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -185,8 +185,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						name: 'Mind Blown',
 						type: FactoryLogic.type.createMain(),
 						cost: 7,
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One grabbed enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -204,8 +204,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-5',
 						name: 'You Come With Me',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lord Syuul can teleport up to 5 squares along with each creature and object he has grabbed. He can release grabbed creatures and objects before or after teleporting.')
@@ -217,8 +217,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-6',
 						name: 'Adaptability',
 						type: FactoryLogic.type.createTrigger('Lord Syuul takes damage that has a damage type.'),
-						keywords: [ AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of his next turn, Lord Syuul gains immunity 5 to the triggering damage type.')
@@ -235,9 +235,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-8',
 						name: 'See Only Me',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition Test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -254,8 +254,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-9',
 						name: 'Phantom Pain',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lord Syuul becomes invisible, can teleport up to 10 squares, and projects an illusory double within 10 squares. The double can’t move or act, but Lord Syuul can use psionic abilities as if he were in its square. Whenever a creature touches or damages the double with a melee strike, they take 10 psychic damage. If Lord Syuul takes damage, his invisibility ends and the double disappears.')
@@ -267,8 +267,8 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						id: 'lord-syuul-feature-10',
 						name: 'Mindshatter',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

@@ -94,7 +94,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -110,8 +110,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Hasta',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -137,7 +137,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -153,8 +153,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Composite Bow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -180,7 +180,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -196,8 +196,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Pugio',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -223,7 +223,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(6),
@@ -239,7 +239,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Pilium',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -269,7 +269,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -284,9 +284,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Shocking Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(15)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -304,8 +304,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Arcane Telum',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'Three creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -331,7 +331,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -346,9 +346,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Chain Hook',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -365,7 +365,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-6-feature-2',
 						name: 'Activate Trap',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One trap or other terrain object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The trap or terrain object instantly triggers.'),
@@ -389,7 +389,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -404,9 +404,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Gladius',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -426,9 +426,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-7-feature-2',
 						name: 'Shield Bash',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -452,7 +452,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -467,9 +467,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Signum',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -492,9 +492,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Glory to the Legion',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each ally in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target regains 5 Stamina.')
 						]
@@ -518,7 +518,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -533,9 +533,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Dolabra and Net',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -573,7 +573,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Hexer),
-			keywords: [ 'Kobold', 'Ooze', 'Soulless' ],
+			keywords: ['Kobold', 'Ooze', 'Soulless'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -588,9 +588,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Engulf',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -611,8 +611,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-trained-gelatinous-cube-feature-2',
 						name: 'You Didn’t Pay Attention!',
 						type: FactoryLogic.type.createTrigger('A creature moves or is force moved adjacent to the brick.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
-						target: 'One creature or object',
+						distance: [FactoryLogic.distance.createSelf()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The brick uses Engulf against the triggering creature and has a double edge.')
 						]
@@ -625,7 +625,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'kobold-trained-gelatinous-cube-feature-4',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 3 })]
 				})
 			]
 		}),
@@ -635,7 +635,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -650,7 +650,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Pilum',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
@@ -676,8 +676,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-2',
 						name: 'Concentrate All Fire on That Hero!',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One enemy',
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the centurion’s next turn, the centurion and their allies gain an edge on power rolls against the target.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -693,8 +693,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-3',
 						name: 'Testudo!',
 						type: FactoryLogic.type.createTrigger('A creature uses an ability that targets the centurion or an ally of the centurion within distance.'),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each ally in the area',
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to 2 squares before the damage is resolved. Each kobold with the Shield? Shield! trait gains damage immunity 2 against the triggering ability.')
 						]
@@ -710,7 +710,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-5',
 						name: 'Firetail Pilum',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.createSpecial('Special') ],
+						distance: [FactoryLogic.distance.createSpecial('Special')],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The centurion moves up to their speed, ignoring difficult terrain, and uses Pilum against each creature whose space they move through. They make one power roll against all targets, and the ability deals an extra 5 damage. While weakened by that ability, each target takes 2 fire damage at the start of each of their turns.')
@@ -722,9 +722,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-6',
 						name: 'Boom Pilum!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The centurion uses Pilum against each target and has a double edge. Each target is then pushed up to 3 squares.')
 						]
@@ -735,9 +735,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-7',
 						name: 'Are You Not Entertained?',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A target who has P<2 is taunted (save ends). Each ally within distance can make a free strike. Additionally, until the end of the encounter, the centurion has damage immunity 2.')
 						]
@@ -756,7 +756,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Kobold' ],
+			keywords: ['Humanoid', 'Kobold'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(7, 'burrow'),
@@ -771,8 +771,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Fiery Claws',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -791,7 +791,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Drangolin Plume',
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The drangolin shifts up to their speed and uses Fiery Claws against each creature who comes adjacent to them during the shift. The drangolin makes one power roll against all targets.')
@@ -804,8 +804,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						name: 'Erupt',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The drangolin uses the Dig maneuver to breach the surface before using this ability. Each target in the area where the drangolin breaches takes an extra 2 fire damage.'),

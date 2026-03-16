@@ -11,7 +11,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The blood of a devil',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -32,7 +32,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A piece of ice from Quintessence that never melts',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -48,7 +48,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A vial of blood from a living saint',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -64,7 +64,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A magnet made from rare metals',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -80,7 +80,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A sprig of dockwart, a rare plant with natural anesthetic properties',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -96,7 +96,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The preserved, intact amygdala of a mindkiller',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -112,7 +112,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The heart of a lion, bear, or other large predatory animal',
 			source: 'Texts or lore in Low Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -128,7 +128,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The crown of a usurper',
 			source: 'Texts or lore in Kalliak',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -144,7 +144,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The pinfeather of a giant hawk',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -160,7 +160,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An adamantine spearhead',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -169,9 +169,9 @@ export class ImbuedWeaponData {
 				id: 'imbuement-chargebreaker',
 				name: 'Chargebreaker',
 				type: FactoryLogic.type.createTrigger('The target willingly moves adjacent to you', { free: true }),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One enemy',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Один ворог',
 				sections: [
 					FactoryLogic.createAbilitySectionText('The target takes 5 damage.')
 				]
@@ -184,7 +184,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Frozen bones from the lair of a white dragon',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -200,7 +200,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A slaughter demon’s horn',
 			source: 'Texts or lore in High Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -216,7 +216,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cutting from a century-old living tree in a graveyard',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -232,7 +232,7 @@ export class ImbuedWeaponData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Oil from an olothec’s liver',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -257,7 +257,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An executioner’s hood worn during the execution of a mage',
 			source: 'Texts or lore in The First Language',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -273,7 +273,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Riverbed silt harvested from the Abyssal Wasteland',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -289,7 +289,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An iron rod charged by the death throes of an essence of storms',
 			source: 'Texts or lore in Low Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -305,7 +305,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The remains of a sworn foe of the creature imbuing the item',
 			source: 'Texts or lore in Kalliak',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -321,7 +321,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The weapon must be dipped in the Glacial Forge in the coldest depths of Hell',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -337,7 +337,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Wrappings from a mummy buried at least a century ago',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -353,7 +353,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The intact, still-thinking brain of a voiceless talker',
 			source: 'Texts or lore in Voll',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -369,7 +369,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A chain once used to restrain an angel',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -385,7 +385,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A piece of metal touched by a sun',
 			source: 'Texts or lore in Ullorvic',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -395,13 +395,13 @@ You can change this weapon’s shape and form, granting one of the following ben
 				name: 'Nova',
 				description: 'I am an eternal flame, baby!',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-				target: 'Each enemy in the area',
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '7 fire damage',
 							tier2: '11 fire damage',
 							tier3: '16 fire damage'
@@ -417,7 +417,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The central eye of an overmind',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -433,7 +433,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An oracle of storms must willingly bless the weapon with lightning while it is being wielded, and its wielder must survive this trial',
 			source: 'Texts or lore in Low Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -449,7 +449,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The true name of a devil who hunts other devils',
 			source: 'Texts or lore in Kalliak',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -465,7 +465,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A feather from a bird, once thought extinct, who dwells at the eye of an ever-whirling tornado',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,

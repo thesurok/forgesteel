@@ -41,7 +41,7 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 						type: FactoryLogic.type.createTrigger('The target takes damage.'),
 						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved.'),
 							FactoryLogic.createAbilitySectionSpend({

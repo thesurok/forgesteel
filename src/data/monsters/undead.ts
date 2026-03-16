@@ -408,7 +408,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -475,7 +475,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -495,7 +495,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 2,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -606,7 +606,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -684,7 +684,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -746,7 +746,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 'signature',
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -766,7 +766,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 3,
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The zombie falls prone, expelling a wave of rot and dust.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -879,7 +879,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -898,7 +898,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1103,7 +1103,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1128,7 +1128,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -1250,7 +1250,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(3)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1331,7 +1331,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1396,7 +1396,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1548,7 +1548,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -1589,7 +1589,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -1780,7 +1780,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1802,7 +1802,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1862,7 +1862,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(3)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1884,7 +1884,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1934,7 +1934,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(5)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -1956,7 +1956,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -2006,7 +2006,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -2028,7 +2028,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the waxen is ignited (see Burn Bright), they shift up to their speed before using this ability. Each target makes an **Agility test**.'),
@@ -2079,7 +2079,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -2101,7 +2101,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -2123,7 +2123,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against the vampire.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target becomes the new target of the strike.')
@@ -2206,7 +2206,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against the vampire.', { free: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target becomes the new target of the strike.')
@@ -2225,7 +2225,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target who has P<4 is now bleeding (save ends).')
 						]
@@ -2238,7 +2238,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -2487,7 +2487,7 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSpecial('Four 10 × 1 lines within 3')],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bonecage can put up to two 90-degree bends in each of the lines. Each target makes an **Agility test**.'),
@@ -2533,7 +2533,7 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

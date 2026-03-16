@@ -93,7 +93,7 @@ export const prowler: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(

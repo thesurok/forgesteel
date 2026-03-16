@@ -93,7 +93,7 @@ export const guardian: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
@@ -231,7 +231,7 @@ While teleporting after making the attack, your companion can teleport with a gr
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -260,7 +260,7 @@ While teleporting after making the attack, your companion can teleport with a gr
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One enemy',
+									target: 'Один ворог',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(

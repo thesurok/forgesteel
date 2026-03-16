@@ -80,7 +80,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 			name: 'Wyvern Lurker',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Ambusher),
-			keywords: [ 'Beast', 'Wyvern' ],
+			keywords: ['Beast', 'Wyvern'],
 			encounterValue: 24,
 			speed: FactoryLogic.createSpeed(9, 'fly'),
 			stamina: 120,
@@ -94,8 +94,8 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						id: 'wyvern-1-feature-1',
 						name: 'Agonizing Stinger',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -117,9 +117,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						name: 'Acidic Anguish',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -138,7 +138,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						id: 'wyvern-1-feature-3',
 						name: 'Swooping Torment',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText(
@@ -152,7 +152,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						id: 'wyvern-1-feature-4',
 						name: 'Retaliatory Dive',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the lurker with a ranged ability.'),
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText(
@@ -173,7 +173,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'wyvern-1-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -182,7 +182,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 			name: 'Wyvern Predator',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Beast', 'Wyvern' ],
+			keywords: ['Beast', 'Wyvern'],
 			encounterValue: 24,
 			speed: FactoryLogic.createSpeed(7, 'fly'),
 			stamina: 140,
@@ -196,8 +196,8 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						id: 'wyvern-2-feature-1',
 						name: 'Sedating Stinger',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -216,8 +216,8 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						id: 'wyvern-2-feature-2',
 						name: 'Tail Sweep',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 6, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 6, within: 1 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -239,9 +239,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						name: 'Grasping Jaws',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -258,8 +258,8 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						name: 'Deterring Sting',
 						cost: 1,
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the prdator with a melee ability.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The predator uses Sedating Stinger against the target, then shifts up to 3 squares.')
@@ -278,7 +278,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'wyvern-2-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		})

@@ -39,7 +39,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 				name: 'Swoop',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 3,
-				distance: [ FactoryLogic.distance.createSelf() ],
+				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Self',
 				sections: [
 					FactoryLogic.createAbilitySectionText('The griffon flies up to their speed, and can make a free strike against each creature who makes an opportunity attack against them during this movement.')
@@ -77,7 +77,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 			name: 'Griffon',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Mount),
-			keywords: [ 'Beast', 'Griffon' ],
+			keywords: ['Beast', 'Griffon'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(9, 'fly'),
 			stamina: 80,
@@ -91,8 +91,8 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-1-feature-1',
 						name: 'Claw Swipes',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -113,9 +113,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-1-feature-2',
 						name: 'Crack the Earth',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 8 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 8 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The griffon must be flying and must have a creature or object grabbed.'),
 							FactoryLogic.createAbilitySectionText('The griffon flies up to half their speed toward the ground, then sends the creature or object they’ve grabbed hurtling down. The creature or object hits the ground to turn the area into an impact crater, and takes falling damage that can’t be reduced in any way.'),
@@ -136,8 +136,8 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						name: 'Wing Buffet',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 1 })],
 						target: 'Each creature or object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** A target object must be size 2 or smaller'),
@@ -157,7 +157,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-1-feature-4',
 						name: 'Zephyr Feint',
 						type: FactoryLogic.type.createTrigger('The griffon takes damage.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The griffon halves the damage, ignores any nondamaging effects associated with it, and shifts up to 2 squares.')
@@ -181,7 +181,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 			name: 'Striped Condor Griffon',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Beast', 'Griffon' ],
+			keywords: ['Beast', 'Griffon'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(7, 'fly'),
 			stamina: 100,
@@ -195,8 +195,8 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-2-feature-1',
 						name: 'Violent Thrashing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -216,7 +216,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-2-feature-2',
 						name: 'Bound Ahead',
 						type: FactoryLogic.type.createMain(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						cost: 5,
 						sections: [
@@ -230,8 +230,8 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						name: 'Power Wing Buffet',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 1 })],
 						target: 'Each creature or object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -250,7 +250,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						id: 'griffon-2-feature-4',
 						name: 'Circle and Strike',
 						type: FactoryLogic.type.createTrigger('The griffon flies directly above a creature within distance.'),
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The griffon dives down onto the target, taking no damage from falling if they reach the ground. The target takes 3 damage for each square the griffon dove, and if they have A<2, they are grabbed or knocked prone.')

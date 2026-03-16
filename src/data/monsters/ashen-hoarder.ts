@@ -82,7 +82,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 			name: 'Ashen Hoarder',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Construct', 'Undead' ],
+			keywords: ['Construct', 'Undead'],
 			encounterValue: 72,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(8, 'burrow'),
@@ -93,7 +93,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'ashen-hoarder-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'ashen-hoarder-feature-2',
@@ -104,8 +104,8 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-3',
 						name: 'Claw and Blade',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -124,9 +124,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-4',
 						name: 'Corpse Bomb',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 20 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 20 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -150,9 +150,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-5',
 						name: 'Impale',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 1, within: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 1, within: 1 })],
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -170,7 +170,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-6',
 						name: 'Bone Dozer',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Effect: The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either pushed into the nearest unoccupied space outside the path, or if they have <code>M < 3</code> is pushed forward until the movement ends. Any creature who is force moved forward into an obstacle is dazed (save ends).')
@@ -182,7 +182,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-7',
 						name: 'Armor of Corpses',
 						type: FactoryLogic.type.createTrigger('The ashen hoarder takes damage.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						cost: 2,
 						sections: [
@@ -205,9 +205,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-10',
 						name: 'Skeletal Eruption',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 3, within: 1 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 3, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -225,7 +225,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-11',
 						name: 'Mobile Mine Field',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 10, within: 20 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 10, within: 20 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ashen hoarder sprays out six size 1M zombie mines that appear in unoccupied squares within distance. Any enemy who moves adjacent to a zombie mine for the first time in a round or starts their turn there causes the mine to explode, dealing 4 corruption damage to each creature adjacent to the mine. Any other zombie mines adjacent to the exploding mine also explode. At the start of each of the ashen hoarder’s turns, each unexploded zombie mine can be moved up to 2 squares.')
@@ -237,8 +237,8 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						id: 'ashen-hoarder-feature-12',
 						name: 'Ossuary Assault',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ashen hoarder moves up to their speed and uses Claw and Blade with a double edge against one target. On a tier 3 outcome, the ashen hoarder can use Impale without spending Malice.')

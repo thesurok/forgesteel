@@ -89,7 +89,7 @@ export class TitleData {
 					name: 'Duck!',
 					type: FactoryLogic.type.createTrigger('An enemy strikes you while a second creature is flanking you'),
 					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
-					target: 'One enemy',
+					target: 'Один ворог',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви перенаправляєте удар проти другої істоти. Після використання цієї переваги ви не можете використати її знову, поки не заробите 1 або більше Перемог.')
 					]

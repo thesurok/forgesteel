@@ -203,7 +203,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The target must be the animal’s size or smaller.'),
 							FactoryLogic.createAbilitySectionText('The target vertical slides up to 3 squares. If the target is an ally, they can make a free strike at the end of the forced movement, then fall without taking damage.')

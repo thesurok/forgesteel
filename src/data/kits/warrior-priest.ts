@@ -10,8 +10,8 @@ export const warriorPriest: Kit = {
 	name: 'Warrior Priest',
 	description: 'The Warrior Priest kit imbues the power of the gods into your weapon, making it a smiting instrument. You wade into the fray without fear, thanks to the power of the divine … and the heavy armor you wear.',
 	type: '',
-	armor: [ KitArmor.Heavy ],
-	weapon: [ KitWeapon.Light ],
+	armor: [KitArmor.Heavy],
+	weapon: [KitWeapon.Light],
 	stamina: 9,
 	speed: 1,
 	stability: 1,
@@ -27,14 +27,14 @@ export const warriorPriest: Kit = {
 				name: 'Weakening Brand',
 				description: 'The impact of your weapon brands your target for destruction.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '2 + M, R, I, or P holy damage',
 							tier2: '4 + M, R, I, or P holy damage',
 							tier3: '7 + M, R, I, or P holy damage'

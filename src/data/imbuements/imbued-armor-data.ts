@@ -14,7 +14,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lock of hair from a fey, taken in amicable bargain',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -30,7 +30,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lock of hair from a fey, taken in violence',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -46,7 +46,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Elemental sand left behind when an elemental enters Orden from Quintessence',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -59,11 +59,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-a',
 						name: 'Damage Immunity I (Acid)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Acid,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -71,11 +71,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-b',
 						name: 'Damage Immunity I (Cold)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Cold,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -83,11 +83,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-c',
 						name: 'Damage Immunity I (Corruption)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Corruption,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -95,11 +95,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-d',
 						name: 'Damage Immunity I (Fire)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Fire,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -107,11 +107,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-e',
 						name: 'Damage Immunity I (Holy)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Holy,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -119,11 +119,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-f',
 						name: 'Damage Immunity I (Lightning)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Lightning,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -131,11 +131,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-g',
 						name: 'Damage Immunity I (Poison)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Poison,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -143,11 +143,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-h',
 						name: 'Damage Immunity I (Psychic)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Psychic,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -155,11 +155,11 @@ export class ImbuedArmorData {
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-i',
 						name: 'Damage Immunity I (Sonic)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Sonic,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				}
@@ -173,7 +173,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The blood of a lycanthrope',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -194,7 +194,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Fur from a lightbender',
 			source: 'Texts or lore in Hyrallic',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -215,7 +215,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a dragon',
 			source: 'Texts or lore in The First Language',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -231,7 +231,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A rose from the magical hedge of a hag',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -247,7 +247,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ichor from a destroyed wraith',
 			source: 'Texts or lore in Szetch',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -263,7 +263,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Rare crystals that resonate with psionic energy, often found at sites of psionic experimentation',
 			source: 'Texts or lore in Voll',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -279,7 +279,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The feather of a falcon slain as it was diving',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -296,7 +296,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A strip of starmetal struck by lightning',
 			source: 'Texts or lore in Ullorvic',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
@@ -319,7 +319,7 @@ export class ImbuedArmorData {
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A mirror blessed by a priest of a god of magic',
 			source: 'Texts or lore in The First Language',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -343,7 +343,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The essence of an elemental who is still alive',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -356,11 +356,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-a',
 						name: 'Damage Immunity II (Acid)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Acid,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -368,11 +368,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-b',
 						name: 'Damage Immunity II (Cold)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Cold,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -380,11 +380,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-c',
 						name: 'Damage Immunity II (Corruption)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Corruption,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -392,11 +392,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-d',
 						name: 'Damage Immunity II (Fire)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Fire,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -404,11 +404,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-e',
 						name: 'Damage Immunity II (Holy)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Holy,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -416,11 +416,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-f',
 						name: 'Damage Immunity II (Lightning)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Lightning,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -428,11 +428,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-g',
 						name: 'Damage Immunity II (Poison)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Poison,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -440,11 +440,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-h',
 						name: 'Damage Immunity II (Psychic)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Psychic,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				},
@@ -452,11 +452,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-i',
 						name: 'Damage Immunity II (Sonic)',
-						modifiers: [ FactoryLogic.damageModifier.create({
+						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Sonic,
 							modifierType: DamageModifierType.Immunity,
 							value: 5
-						}) ]
+						})]
 					}),
 					value: 1
 				}
@@ -470,7 +470,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a dead dragon',
 			source: 'Texts or lore in Vastariax',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -483,7 +483,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 					FactoryLogic.createAbilitySectionText('You cause the soul of a dragon to emerge from the armor and hurtle toward the creature'),
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '2 шкоди; Відштовхування 3',
 							tier2: '12 шкоди; Відштовхування 4',
 							tier3: '15 шкоди; Відштовхування 5'
@@ -499,7 +499,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A palm-sized crystal grown in the subterranean lair of an overmind',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -515,7 +515,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a mature dragon',
 			source: 'Texts or lore in The First Language',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -531,7 +531,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The remnants of a slain ooze',
 			source: 'Texts or lore in Szetch',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -547,7 +547,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A fresh crystalline scale from a gemstone dragon',
 			source: 'Texts or lore in Voll',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -563,7 +563,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A complex, hand-engineered set of brass gears inscribed with runes in silver dust',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -579,7 +579,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The sweat of a troll',
 			source: 'Texts or lore in Kalliak',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -600,7 +600,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pound of volcanic obsidian, formed naturally as a single piece',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -616,7 +616,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The armor must be laid out under a clear sky as a comet passes over',
 			source: 'Texts or lore in Ullorvic',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
@@ -633,7 +633,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The wing of an archdevil',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -649,7 +649,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An offering of gems, coins, and art stolen from a dragon’s hoard, sacrificed in ritual fire',
 			source: 'Texts or lore in Vastariax',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -658,14 +658,14 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				id: 'imbuement-dragon-soul-ii',
 				name: 'Dragon Soul II',
 				description: 'You open your maw and unleash hell.',
-				type: FactoryLogic.type.createMain({ qualifiers: [ 'You are winded' ] }),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
-				target: 'Each enemy in the area',
+				type: FactoryLogic.type.createMain({ qualifiers: ['You are winded'] }),
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '5 fire damage',
 							tier2: '8 fire damage',
 							tier3: '11 fire damage'
@@ -681,7 +681,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Repurposed metal plates from a servok war engine',
 			source: 'Texts or lore in Rallarian',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -697,7 +697,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cutting from an ethereal tree that manifests in the mundane world only once a year',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -705,7 +705,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-leyline-walker',
 				name: 'Leyline Walker',
-				type: FactoryLogic.type.createMove({ qualifiers: [ 'Once per turn' ] }),
+				type: FactoryLogic.type.createMove({ qualifiers: ['Once per turn'] }),
 				sections: [
 					FactoryLogic.createAbilitySectionText('You can spend any amount of your movement to instead teleport that distance.')
 				]
@@ -718,7 +718,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The tear of a saint',
 			source: 'Texts or lore in High Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -734,7 +734,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from an ancient dragon',
 			source: 'Texts or lore in The First Language',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -750,7 +750,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Perfectly clear glass from a house that disappeared into the Ethereal Plane',
 			source: 'Texts or lore in Szetch',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -766,7 +766,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The skull of a voiceless talker at least a century old',
 			source: 'Texts or lore in Voll',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -782,7 +782,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An experimental temporal capacitor invented by the kuran’zoi',
 			source: 'Texts or lore in Voll',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
@@ -806,7 +806,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 						id: 'temporal-flux-b',
 						name: 'Temporal Flux',
 						type: FactoryLogic.type.createTrigger('You are targeted by an ability', { free: true }),
-						distance: [ FactoryLogic.distance.createSpecial('') ],
+						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport to your imprint, and the power roll for the ability is an automatic tier 1 result.')
@@ -822,7 +822,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spearhead or other weapon broken off in the body of a stone giant, and ossified for a year or more',
 			source: 'Texts or lore in High Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,

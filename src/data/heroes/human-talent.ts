@@ -1660,7 +1660,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1789,7 +1789,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1854,7 +1854,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1915,7 +1915,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1977,7 +1977,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2043,7 +2043,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2109,7 +2109,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2292,7 +2292,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2397,7 +2397,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2450,7 +2450,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2503,7 +2503,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2556,7 +2556,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2610,7 +2610,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2860,7 +2860,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2914,7 +2914,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3694,7 +3694,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One enemy',
+														target: 'Один ворог',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4016,7 +4016,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'Each ally in the area',
+														target: 'Кожен союзник у зоні',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4161,7 +4161,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Себе або одного союзника',
+										target: 'На себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4278,7 +4278,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4351,7 +4351,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature or object',
+														target: 'Одна істота або предмет',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4545,7 +4545,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature or object',
+														target: 'Одна істота або предмет',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4629,7 +4629,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Each ally in the area',
+										target: 'Кожен союзник у зоні',
 										cost: 3,
 										repeatable: false,
 										minLevel: 1,
@@ -4936,7 +4936,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'One creature or object',
+										target: 'Одна істота або предмет',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -5090,7 +5090,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One enemy',
+														target: 'Один ворог',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,

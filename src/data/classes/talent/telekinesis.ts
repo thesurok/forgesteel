@@ -43,7 +43,7 @@ export const telekinesis: SubClass = {
 						type: FactoryLogic.type.createTrigger('The target takes damage or is force moved.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes half the triggering damage, or the distance of the triggering forced movement is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the forced movement is reduced to 0 squares, the target can push the source of the forced movement a number of squares equal to your Reason score.')
 						]
@@ -80,7 +80,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -107,7 +107,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -198,7 +198,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'One creature or object',
+									target: 'Одна істота або предмет',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -237,7 +237,7 @@ export const telekinesis: SubClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can fly until the start of your next turn, and can immediately shift up to their speed. You can also shift up to your speed. While flying, a target’s stability is reduced to 0 and can’t be increased.'),

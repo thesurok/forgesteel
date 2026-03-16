@@ -49,7 +49,7 @@ export const kingfissureWorm: MonsterGroup = {
 				id: 'kingfissure-worm-malice-1',
 				name: 'Aftershock',
 				type: FactoryLogic.type.createTrigger('A creature deals damage to the kingfissure worm or one of their tongues.', { free: true }),
-				distance: [ FactoryLogic.distance.createSelf() ],
+				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Self',
 				cost: 3,
 				sections: [
@@ -80,8 +80,8 @@ export const kingfissureWorm: MonsterGroup = {
 				id: 'kingfissure-worm-malice-4',
 				name: 'Megaquake',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 				target: 'Each enemy and object in the area',
 				cost: 7,
 				sections: [
@@ -104,7 +104,7 @@ export const kingfissureWorm: MonsterGroup = {
 			name: 'Kingfissure Worm',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Beast', 'Worm' ],
+			keywords: ['Beast', 'Worm'],
 			encounterValue: 108,
 			size: FactoryLogic.createSize(5),
 			speed: FactoryLogic.createSpeed(10, 'burrow'),
@@ -128,8 +128,8 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-3',
 						name: 'Tongue Grab',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(5) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(5)],
 						target: 'One creature or object per tongue',
 						cost: 'signature',
 						sections: [
@@ -150,9 +150,9 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-4',
 						name: 'Maw',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -174,8 +174,8 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-5',
 						name: 'Consume',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One grabbed creature',
 						cost: 2,
 						sections: [
@@ -188,12 +188,12 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-6',
 						name: 'Tongue Whip',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(5),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this maneuver only while they have a creature or object grabbed. The worm slams the grabbed creature or object against the target, dealing 13 damage to both. If this ability is used at range, it deals an extra 5 damage and the grabbed creature or object is released.')
 						]
@@ -204,7 +204,7 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-7',
 						name: 'Tearing Recoil',
 						type: FactoryLogic.type.createTrigger('A tongue takes damage that doesn’t reduce it to 0 Stamina.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The kingfissure worm deals 5 damage to the creature or object the tongue had grabbed, releases that creature or object, then pulls the damaged tongue back into their mouth.')
@@ -236,8 +236,8 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-12',
 						name: 'King’s Fissure',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 4, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 4, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionField({
@@ -261,8 +261,8 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-13',
 						name: 'Earth Breach',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have A<4 they are knocked prone. Any creature who is made winded by this damage is swallowed (see Swallowed).')
@@ -274,8 +274,8 @@ export const kingfissureWorm: MonsterGroup = {
 						id: 'kingfissure-worm-1-feature-14',
 						name: 'Better Out Than In',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

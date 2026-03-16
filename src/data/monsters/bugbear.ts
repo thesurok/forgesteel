@@ -122,7 +122,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -161,7 +161,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the channeler.'),
 							FactoryLogic.createAbilitySectionText('The target is vertical pushed up to 3 squares. An ally doesn’t take damage from being force moved this way.')
@@ -248,7 +248,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						name: 'Fall Back!',
 						type: FactoryLogic.type.createMain(),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each ally in the area',
+						target: 'Кожен союзник у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can use the Throw maneuver.')
@@ -262,7 +262,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the commander.'),
 							FactoryLogic.createAbilitySectionText('The target is vertical pushed up to 4 squares. An ally doesn’t take damage from being force moved this way.')
@@ -332,7 +332,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -351,7 +351,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the roughneck.'),
@@ -366,7 +366,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the roughneck.'),
 							FactoryLogic.createAbilitySectionText('The target is vertical pushed up to 5 squares. An ally doesn’t take damage from being force moved this way.')
@@ -421,7 +421,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -441,7 +441,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -480,7 +480,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the sneak.'),
 							FactoryLogic.createAbilitySectionText('The target is vertical pushed up to 4 squares. An ally doesn’t take damage from being force moved this way')
@@ -506,7 +506,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						name: 'Clever Trick',
 						type: FactoryLogic.type.createTrigger('The sneak is targeted by a strike.'),
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The sneak chooses one enemy within distance of the strike to become the target of the strike.')

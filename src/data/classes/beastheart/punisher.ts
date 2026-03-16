@@ -31,7 +31,7 @@ export const punisher: SubClass = {
 						type: FactoryLogic.type.createTrigger('An enemy adjacent to you deals damage to a creature.'),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You deal damage equal to your Might score to the target and push them up to a number of squares equal to your Might score + 1. If this movement causes the enemy to move farther from the creature they damaged, the triggering damage is halved.'),
 							FactoryLogic.createAbilitySectionSpend({

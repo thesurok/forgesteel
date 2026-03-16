@@ -569,7 +569,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -618,7 +618,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Pyrokinesis],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -643,7 +643,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -667,7 +667,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -691,7 +691,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Resopathy, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -716,7 +716,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -741,7 +741,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee(2)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -808,7 +808,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Melee, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createMelee(2)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a triggered action to make a free strike against the source of the damage.')
@@ -842,7 +842,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target uses an ability with a base Heroic Resource cost of 7 or lower that they’ve previously used this round, without needing to spend the base cost. Augmentations to the ability can be paid for as usual.'),
@@ -859,7 +859,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target ignores difficult terrain and takes no damage from forced movement until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your Reason score. When pushing an ally, the target can ignore that ally’s stability. A creature can only be force moved this way once a turn.'),
@@ -876,7 +876,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target’s stability increases by an amount equal to your Reason score, and they gain 10 temporary Stamina and 2 surges. This stability increase lasts until the target no longer has temporary Stamina from this ability.'),
@@ -893,7 +893,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the start of your next turn, the target gains a +3 bonus to speed, and they have a double edge on the next power roll they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.'),
@@ -910,7 +910,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1005,7 +1005,7 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Pyrokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('**Effect** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your Reason score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.'),
@@ -1022,7 +1022,7 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You teleport to a square on the opposite side of the area before making the power roll.'),

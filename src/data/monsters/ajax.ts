@@ -53,7 +53,7 @@ His arsenal is vast and strategically picked to round out his strength. There ar
 			name: 'Nexus Jewel',
 			cost: 5,
 			icon: StatBlockIcon.SpecialArea,
-			sections: [ `
+			sections: [`
 Until the end of the round, Ajax chooses one of the following environments he has previously visited and overlays that environment on top of the encounter map, temporarily merging multiple realities.
 
 **Incredibly High Above the Ground**: The winds whip and bluster. Any creature who can’t fly takes a −3 penalty to stability, and forced movement effects gain a +3 bonus to their distance against such creatures. 
@@ -77,13 +77,13 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 				name: 'Draw Steel',
 				type: FactoryLogic.type.createMain(),
 				cost: 10,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createSpecial('Four 3 cubes within 10') ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createSpecial('Four 3 cubes within 10')],
 				target: 'Each target makes a test using their highest characteristic.',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Agility, Characteristic.Intuition, Characteristic.Might, Characteristic.Presence, Characteristic.Reason ],
+							characteristic: [Characteristic.Agility, Characteristic.Intuition, Characteristic.Might, Characteristic.Presence, Characteristic.Reason],
 							tier1: '26 damage; bleeding and slowed (save ends)',
 							tier2: '22 damage; bleeding (save ends)',
 							tier3: '16 damage'
@@ -100,7 +100,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 			name: 'Ajax the Invincible',
 			level: 11,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 156,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(7, 'fly, hover'),
@@ -130,8 +130,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						name: 'Blade of the Gol King',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -155,8 +155,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-4',
 						name: 'Decree by the Jade Hand',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -180,9 +180,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-5',
 						name: 'Divine Vine',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -203,8 +203,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						name: 'Bead of Hell',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 						target: '',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax’s next turn and creates an area around it that lasts until the start of Ajax’s following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have <code>A < 5</code>, they are dazed (save ends). Any enemy who starts their turn in the area takes 10 fire damage.')
@@ -221,8 +221,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-8',
 						name: 'Is This What They Taught You?',
 						type: FactoryLogic.type.createTrigger('A creature within distance marks Ajax.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a triggered action involving their mark on Ajax, he can make a free strike against them.')
@@ -234,8 +234,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-9',
 						name: 'Shieldbreaker Talisman',
 						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability to reduce damage.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax makes a free strike against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can’t be reduced in any way.')
@@ -247,7 +247,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-10',
 						name: 'Who’s Hesitating?',
 						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
@@ -259,8 +259,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-11',
 						name: 'Your Obsession With Me Betrays You',
 						type: FactoryLogic.type.createTrigger('Ajax causes a creature within distance to gain ferocity or wrath.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has <code>I < 4</code>, they use a signature ability against a target of Ajax’s choice.')
@@ -272,8 +272,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-12',
 						name: 'You Would Flounder Your Assault?',
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
@@ -285,9 +285,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-13',
 						name: 'Phoenix Wing King',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -306,9 +306,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-14',
 						name: 'I’ve Learned Their Tricks ',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax uses the shadow elf eclipse’s technique to reduce each target’s surges to 0. Additionally, until the end of the round, Ajax ignores edges and double edges on any target’s abilities, and ignores any nondamaging effects of any target’s damage-dealing abilities.'),
 							FactoryLogic.createAbilitySectionText('**Special:** This villain action can be replaced with a villain action from a creature any target has previously encountered.')
@@ -320,9 +320,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-1-feature-15',
 						name: 'Awe of the Iron Crown',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target who has <code>I < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
 						]
@@ -335,7 +335,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 			name: 'Ajax the Leader',
 			level: 11,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 52,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(7, 'fly, hover'),
@@ -358,8 +358,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						name: 'Blade of the Gol King',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -383,8 +383,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-3',
 						name: 'Decree by the Jade Hand',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -408,7 +408,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-4',
 						name: 'Strike Them Down',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each ally can move up to their speed and can use a signature ability.')
@@ -425,8 +425,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-6',
 						name: 'Is This What They Taught You?',
 						type: FactoryLogic.type.createTrigger('A creature within distance marks Ajax.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a triggered action involving their mark on Ajax, he can make a free strike against them.')
@@ -438,8 +438,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-7',
 						name: 'Shieldbreaker Talisman',
 						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability to reduce damage.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax makes a free strike against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can’t be reduced in any way.')
@@ -451,7 +451,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-8',
 						name: 'Who’s Hesitating?',
 						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
@@ -463,8 +463,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-9',
 						name: 'Your Obsession With Me Betrays You',
 						type: FactoryLogic.type.createTrigger('Ajax causes a creature within distance to gain ferocity or wrath.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has <code>I < 4</code>, they use a signature ability against a target of Ajax’s choice.')
@@ -476,8 +476,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-10',
 						name: 'You Would Flounder Your Assault?',
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
@@ -489,9 +489,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-11',
 						name: 'Phoenix Wing King',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -510,8 +510,8 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-12',
 						name: 'I’ve Learned Their Tricks ',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-						target: 'Each enemy in the area',
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax uses the shadow elf eclipse’s technique to reduce each target’s surges to 0. Additionally, until the end of the round, Ajax ignores edges and double edges on any target’s abilities, and ignores any nondamaging effects of any target’s damage-dealing abilities.'),
 							FactoryLogic.createAbilitySectionText('**Special:** This villain action can be replaced with a villain action from a creature any target has previously encountered.')
@@ -523,9 +523,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						id: 'ajax-2-feature-13',
 						name: 'Awe of the Iron Crown',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target who has <code>I < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
 						]

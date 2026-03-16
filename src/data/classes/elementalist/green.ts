@@ -31,7 +31,7 @@ Additionally, you can touch a living plant that is not a plant creature to commu
 						type: FactoryLogic.type.createTrigger('The target starts their turn or takes damage.'),
 						keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target can spend a Recovery.'),
 							FactoryLogic.createAbilitySectionSpend({

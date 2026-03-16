@@ -94,7 +94,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			name: 'Multivok Bodyguard',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Defender),
-			keywords: [ 'Construct', 'Multivok', 'Soulless', 'Valok' ],
+			keywords: ['Construct', 'Multivok', 'Soulless', 'Valok'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -109,8 +109,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Gatling Bolt Gun',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -130,9 +130,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Valiar Axe',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -151,8 +151,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-1-feature-3',
 						name: 'Magnetic Pull',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** This ability targets only metal-clad enemies and metal objects of size 3 or smaller.'),
@@ -165,8 +165,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-1-feature-4',
 						name: 'Valiar Cloak',
 						type: FactoryLogic.type.createTrigger('One ally within distance is targeted by an enemy’s ability. The bodyguard can use this ability after seeing the outcome of the power roll.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bodyguard becomes the triggering ability’s target instead.')
@@ -195,7 +195,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			name: 'Multivok Chief',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Support),
-			keywords: [ 'Construct', 'Multivok', 'Soulless', 'Valok' ],
+			keywords: ['Construct', 'Multivok', 'Soulless', 'Valok'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -210,8 +210,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Pneumatic Punch',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -231,9 +231,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Targeting Beam',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -252,8 +252,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-2-feature-3',
 						name: 'Chief’s Command',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target shifts up to their speed and can use a main action.')
@@ -265,8 +265,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-2-feature-4',
 						name: 'Quick Shield',
 						type: FactoryLogic.type.createTrigger('The chief or an ally within distance is subject to an effect that can be ended by a saving throw or that ends at the end of their turn.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target gains 15 temporary Stamina. Each time this triggered action is used, the amount of temporary Stamina received decreases by 3 (to a minimum of 0).')
@@ -295,7 +295,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			name: 'Servok Builder',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Construct', 'Multivok', 'Soulless', 'Valok' ],
+			keywords: ['Construct', 'Multivok', 'Soulless', 'Valok'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(5),
@@ -310,14 +310,14 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Wrecking Ball',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 5 })],
 						target: 'Each enemy and the object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must make either an **Agility test** or an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+									characteristic: [Characteristic.Agility, Characteristic.Intuition],
 									tier1: '15 damage; push 5, prone',
 									tier2: '12 damage; push 3',
 									tier3: '8 damage'
@@ -331,9 +331,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-3-feature-2',
 						name: 'Construction Arm',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -351,8 +351,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-3-feature-3',
 						name: 'Lay the Foundation',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 6, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 6, value2: 3, within: 1 })],
 						cost: 3,
 						target: 'Special',
 						sections: [
@@ -372,8 +372,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-3-feature-4',
 						name: 'Build Wall',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 6, value2: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 6, value2: 3 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The builder creates a concrete wall. They can also remove any unoccupied squares of wet concrete within 3 squares of them, creating two additional squares of wall for each square of concrete removed.')
@@ -385,8 +385,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-3-feature-4',
 						name: 'Sputter',
 						type: FactoryLogic.type.createTrigger('A creature or object within distance deals damage to the builder.', { free: true }),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						cost: 1,
 						target: 'The triggering creature',
 						sections: [
@@ -423,7 +423,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			name: 'Servok Miner',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Construct', 'Multivok', 'Soulless', 'Valok' ],
+			keywords: ['Construct', 'Multivok', 'Soulless', 'Valok'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5, 'burrow, climb'),
@@ -438,8 +438,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Drill Press',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -460,14 +460,14 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Unload Rocks',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 1 })],
 						target: 'Each enemy and the object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+									characteristic: [Characteristic.Agility, Characteristic.Intuition],
 									tier1: '14 damage; slide 4; the miner’s allies have concealment from the target (save ends)',
 									tier2: '11 damage; slide 2',
 									tier3: '7 damage'
@@ -483,14 +483,14 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Break Ground',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 1, within: 1 })],
 						target: 'Each enemy and the object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A 5-square-deep fissure opens along the ground in the area. Each ally in the area can shift into the nearest unoccupied space outside the fissure. Each target makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Agility ],
+									characteristic: [Characteristic.Agility],
 									tier1: '14 damage; the target falls into the fissure, and is prone and can’t stand (EoT)',
 									tier2: '11 damage; the target is prone and hanging onto the edge of the fissure',
 									tier3: '7 damage; the target can shift into the nearest unoccupied space outside the fissure'
@@ -505,8 +505,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Miner Inconvenience',
 						type: FactoryLogic.type.createTrigger('The miner is targeted by a strike.'),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the round, dust and dirt billow in a 2 burst around the miner’s initial space. While the miner is in the area, they ignore the nondamaging effects of any strike made against them, including the triggering strike.')
@@ -540,7 +540,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			name: 'Servok War Engine',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Construct', 'Multivok', 'Soulless', 'Valok' ],
+			keywords: ['Construct', 'Multivok', 'Soulless', 'Valok'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(5),
@@ -555,8 +555,8 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Blade Rake',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -575,9 +575,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-5-feature-2',
 						name: 'Prismacore Cannon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -596,7 +596,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-5-feature-3',
 						name: 'Destructive Rollout',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The war engine moves up to their speed in a straight line, automatically destroying mundane size 1 objects or walls in their path. The first time the war engine moves through a creature’s space during this movement, that creature can choose to either fall prone or take 10 damage.')
@@ -608,7 +608,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-5-feature-4',
 						name: 'Burning Oil',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 1, within: 1 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 1, within: 1 })],
 						target: 'Each enemy and object in the area',
 						cost: 3,
 						sections: [
@@ -630,9 +630,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						id: 'valok-5-feature-5',
 						name: 'Quick Blast',
 						type: FactoryLogic.type.createTrigger('The target deals damage to the war engine', { free: true }),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

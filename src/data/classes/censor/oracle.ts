@@ -50,7 +50,7 @@ export const oracle: SubClass = {
 									type: FactoryLogic.type.createTrigger('Ворог у межах 10 клітинок починає свій хід.'),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Себе або одного союзника',
+									target: 'На себе або одного союзника',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви можете витратити Відновлення, щоб дозволити цілі відновити Витривалість, рівну вашому значенню відновлення. Ціль може тоді виконати свій хід одразу перед ворогом, який спричинив тригер.')
@@ -68,7 +68,7 @@ export const oracle: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Себе або одного союзника',
+									target: 'На себе або одного союзника',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ціль може використати безкоштовну тригерну дію, щоб застосувати підписну ударну здібність або героїчну ударну здібність, і має подвійну перевагу на цю здібність. Якщо обрано героїчну здібність, зменшіть її вартість Героїчного ресурсу на 3 (мінімум 0).')

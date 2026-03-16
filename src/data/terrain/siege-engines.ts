@@ -503,7 +503,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -589,7 +589,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 								type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 								keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 								distance: [FactoryLogic.distance.createRanged(20)],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({

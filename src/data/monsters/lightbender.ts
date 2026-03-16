@@ -70,7 +70,7 @@ export const lightbender: MonsterGroup = {
 			name: 'Lightbender',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Ambusher),
-			keywords: [ 'Beast', 'Lightbender' ],
+			keywords: ['Beast', 'Lightbender'],
 			encounterValue: 20,
 			speed: FactoryLogic.createSpeed(10),
 			stamina: 100,
@@ -84,9 +84,9 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-1-feature-1',
 						name: 'Flash Swipe',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -106,9 +106,9 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-1-feature-2',
 						name: 'Piercing Tails',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -127,9 +127,9 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-1-feature-3',
 						name: 'Hypnotic Mane',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -149,8 +149,8 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-1-feature-4',
 						name: 'Stalker\'s Afterimage',
 						type: FactoryLogic.type.createTrigger('The lightbender takes damage from a strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The lightbender halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the lightbender can immediately attempt to hide as a free maneuver.')
@@ -169,7 +169,7 @@ export const lightbender: MonsterGroup = {
 			name: 'Lightbender Pouncer',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Harrier),
-			keywords: [ 'Beast', 'Lightbender' ],
+			keywords: ['Beast', 'Lightbender'],
 			encounterValue: 20,
 			speed: FactoryLogic.createSpeed(10),
 			stamina: 100,
@@ -183,8 +183,8 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-2-feature-1',
 						name: 'Pounce',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -205,8 +205,8 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-2-feature-2',
 						name: 'Sparkling Tail Whip',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -226,9 +226,9 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-2-feature-3',
 						name: 'Illusory Feint',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -248,8 +248,8 @@ export const lightbender: MonsterGroup = {
 						id: 'lightbender-2-feature-4',
 						name: 'Striking Afterimage',
 						type: FactoryLogic.type.createTrigger('The pouncer takes damage from a strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The pouncer halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the pouncer can immediately attempt to hide as a free maneuver.')

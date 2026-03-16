@@ -34,7 +34,7 @@ export const telepathy: SubClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The next ability roll an ally makes against the target before the start of your next turn gains an edge.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -93,7 +93,7 @@ export const telepathy: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'One enemy',
+									target: 'Один ворог',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

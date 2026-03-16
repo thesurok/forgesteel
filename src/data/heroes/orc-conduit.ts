@@ -362,7 +362,7 @@ export const orcConduit = {
 																	qualifier: ''
 																}
 															],
-															target: 'Each ally in the area',
+															target: 'Кожен союзник у зоні',
 															cost: 5,
 															repeatable: false,
 															minLevel: 1,
@@ -514,7 +514,7 @@ export const orcConduit = {
 																	qualifier: ''
 																}
 															],
-															target: 'Four Allies',
+															target: 'Чотири союзники',
 															cost: 11,
 															repeatable: false,
 															minLevel: 1,
@@ -638,7 +638,7 @@ export const orcConduit = {
 																	qualifier: ''
 																}
 															],
-															target: 'Each enemy in the area',
+															target: 'Кожен ворог у зоні',
 															cost: 5,
 															repeatable: false,
 															minLevel: 1,
@@ -803,7 +803,7 @@ export const orcConduit = {
 																	qualifier: ''
 																}
 															],
-															target: 'Each enemy in the area',
+															target: 'Кожен ворог у зоні',
 															cost: 11,
 															repeatable: false,
 															minLevel: 1,
@@ -948,7 +948,7 @@ export const orcConduit = {
 										qualifier: ''
 									}
 								],
-								target: 'Себе або одного союзника',
+								target: 'На себе або одного союзника',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1010,7 +1010,7 @@ export const orcConduit = {
 										qualifier: ''
 									}
 								],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -2201,7 +2201,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2317,7 +2317,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2370,7 +2370,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2486,7 +2486,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2598,7 +2598,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2652,7 +2652,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2755,7 +2755,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2867,7 +2867,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2974,7 +2974,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Four allies',
+				target: 'Чотири союзники',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -3031,7 +3031,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each ally in the area',
+				target: 'Кожен союзник у зоні',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -3077,7 +3077,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -3180,7 +3180,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One enemy',
+				target: 'Один ворог',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -3237,7 +3237,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -3353,7 +3353,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3406,7 +3406,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3451,7 +3451,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3496,7 +3496,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3632,7 +3632,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,

@@ -106,7 +106,7 @@ export const stormwight: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -230,7 +230,7 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -255,7 +255,7 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(

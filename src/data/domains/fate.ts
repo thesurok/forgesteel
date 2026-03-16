@@ -123,7 +123,7 @@ export const fate: Domain = {
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each of the target’s power rolls has its outcome improved by one tier.')

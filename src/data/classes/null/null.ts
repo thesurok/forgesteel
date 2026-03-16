@@ -471,7 +471,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -513,7 +513,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -534,7 +534,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -552,7 +552,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -588,7 +588,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -609,7 +609,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -627,7 +627,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -648,7 +648,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Null Field ability increases by 1. At the end of your current turn, each enemy in the area of your Null Field ability takes psychic damage equal to your Intuition score.')
@@ -661,7 +661,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -682,7 +682,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -700,7 +700,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -721,7 +721,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -763,7 +763,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -946,7 +946,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

@@ -95,7 +95,7 @@ export const spark: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -179,7 +179,7 @@ Your companion’s transformation lasts until the start of your next turn. At th
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -257,7 +257,7 @@ Your companion’s transformation lasts until the start of your next turn. At th
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Your companion summons an area of ghostly creatures that resemble your companion. The area can appear in and move through creatures, objects, and terrain. Once it is summoned, it moves in a straight line toward your companion until its center is in the center of your companion’s space, and it then continues moving in a straight line until it is up to 20 squares away. Any enemy inside the area at any point during its movement is targeted once by the following power roll. The body of any creature killed by this ability is dragged off to the Primordial Chaos to be devoured at leisure.'),

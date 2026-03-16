@@ -77,7 +77,7 @@ As an elementalist, you can unleash your wrath across a field of foes, put an en
 						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Reason],
@@ -752,7 +752,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -772,7 +772,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -792,7 +792,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -813,7 +813,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -833,7 +833,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -857,7 +857,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -900,7 +900,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -919,7 +919,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -967,7 +967,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the start of your next turn, the target can move through solid matter, they ignore difficult terrain, and their movement can’t provoke opportunity attacks. If the target ends their turn inside solid matter, they are forced out into the space where they entered it and this effect ends.'),
@@ -984,7 +984,7 @@ Breath remains until you convert it to essence.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1048,7 +1048,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 5,
 			minLevel: 2,
 			sections: [
@@ -1112,7 +1112,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			minLevel: 3,
 			sections: [
@@ -1132,7 +1132,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			minLevel: 3,
 			sections: [
@@ -1174,7 +1174,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 9,
 			minLevel: 5,
 			sections: [
@@ -1194,7 +1194,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			minLevel: 5,
 			sections: [
@@ -1218,7 +1218,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Void, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 9,
 			minLevel: 5,
 			sections: [
@@ -1241,7 +1241,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Green, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			minLevel: 5,
 			sections: [
@@ -1265,7 +1265,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1283,7 +1283,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Earth],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1308,7 +1308,7 @@ Until the start of your next turn, the area gains the following effects:
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1363,7 +1363,7 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			minLevel: 8,
 			sections: [
@@ -1397,7 +1397,7 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			minLevel: 8,
 			sections: [
@@ -1441,7 +1441,7 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 11,
 			minLevel: 9,
 			sections: [

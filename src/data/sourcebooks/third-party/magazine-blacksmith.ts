@@ -228,11 +228,11 @@ const abundanceOfLoveAndReticence: Item = FactoryLogic.createItem({
 
 A wand made of twisted flower stems with three colourful petals sprouting from the tip.`,
 	type: ItemType.Leveled,
-	keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Wand ],
+	keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Wand],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A yellow rose, a red lily, a white sunflower',
 		source: 'Texts or lore in Yllyric',
-		characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -246,12 +246,12 @@ A wand made of twisted flower stems with three colourful petals sprouting from t
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'item-abundance-1a',
-					keywords: [ AbilityKeyword.Magic ],
+					keywords: [AbilityKeyword.Magic],
 					value: 3
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'item-abundance-1b',
-					keywords: [ AbilityKeyword.Psionic ],
+					keywords: [AbilityKeyword.Psionic],
 					value: 3
 				})
 			]
@@ -266,12 +266,12 @@ A wand made of twisted flower stems with three colourful petals sprouting from t
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'item-abundance-5a',
-					keywords: [ AbilityKeyword.Magic ],
+					keywords: [AbilityKeyword.Magic],
 					value: 2
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'item-abundance-5b',
-					keywords: [ AbilityKeyword.Psionic ],
+					keywords: [AbilityKeyword.Psionic],
 					value: 2
 				})
 			]
@@ -302,11 +302,11 @@ const braidedDecay: Item = FactoryLogic.createItem({
 
 This belt, always damp to the touch, growls and barks in reaction to the vital energies of battle.`,
 	type: ItemType.Leveled,
-	keywords: [ AbilityKeyword.Belt, AbilityKeyword.Magic, AbilityKeyword.Rot ],
+	keywords: [AbilityKeyword.Belt, AbilityKeyword.Magic, AbilityKeyword.Rot],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Pelts from three partially-decomposed beasts, each from a different world',
 		source: 'Texts or lore in Tholl',
-		characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+		characteristic: [Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -366,11 +366,11 @@ const darkStarPlate: Item = FactoryLogic.createItem({
 
 Light does not reflect off of this full suit of armour.`,
 	type: ItemType.LeveledArmor,
-	keywords: [ KitArmor.Heavy, AbilityKeyword.Void ],
+	keywords: [KitArmor.Heavy, AbilityKeyword.Void],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Four ingots of starmetal',
 		source: 'Texts or lore in Ullorvic',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -415,11 +415,11 @@ const shiftingTides: Item = FactoryLogic.createItem({
 
 The water in this clear staff is constantly moving and shifting between ice, water, and steam. The movement continues even as the staff is held still.`,
 	type: ItemType.LeveledImplement,
-	keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic, AbilityKeyword.Water ],
+	keywords: [AbilityKeyword.Implement, AbilityKeyword.Magic, AbilityKeyword.Water],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A vial of water from seven different seas',
 		source: 'Texts or lore in The First Language',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -464,11 +464,11 @@ const siegeEnder: Item = FactoryLogic.createItem({
 
 This morning star has a glowing, cylindrical head that emits a flare-up whenever it strikes.`,
 	type: ItemType.LeveledWeapon,
-	keywords: [ AbilityKeyword.Fire, KitWeapon.Heavy, AbilityKeyword.Magic ],
+	keywords: [AbilityKeyword.Fire, KitWeapon.Heavy, AbilityKeyword.Magic],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Metal from a siege weapon used on the losing side of a war',
 		source: 'Texts or lore in Anjali',
-		characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -513,11 +513,11 @@ const titanShield: Item = FactoryLogic.createItem({
 
 This tower shield has a projection of Orden seen from a great height across its face. The projection slowly moves over time.`,
 	type: ItemType.Leveled,
-	keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, KitArmor.Shield ],
+	keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, KitArmor.Shield],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Roots from an oak tree, a 10-pound tungsten cube',
 		source: 'Texts or lore in Zaliac',
-		characteristic: [ Characteristic.Might, Characteristic.Presence ],
+		characteristic: [Characteristic.Might, Characteristic.Presence],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -582,11 +582,11 @@ const wingedSandals: Item = FactoryLogic.createItem({
 
 Tiny, fluttering wings decorate the sides of these sandals.`,
 	type: ItemType.Leveled,
-	keywords: [ AbilityKeyword.Air, AbilityKeyword.Feet, AbilityKeyword.Magic ],
+	keywords: [AbilityKeyword.Air, AbilityKeyword.Feet, AbilityKeyword.Magic],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'One jar of gale force winds',
 		source: 'Texts or lore in Low Rhyvian',
-		characteristic: [ Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
 	featuresByLevel: [
@@ -643,11 +643,11 @@ const arachnianImplants: Item = FactoryLogic.createItem({
 
 This black metal implant replaces your spine with a set of extendable blades.`,
 	type: ItemType.Trinket1st,
-	keywords: [ AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Spine ],
+	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Spine],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Eight zodiakol tipped blades',
 		source: 'Texts or lore in Voll',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
 	featuresByLevel: [
@@ -672,11 +672,11 @@ const internalSuspension: Item = FactoryLogic.createItem({
 
 This neural implant causes a numb sensation at the base of your neck.`,
 	type: ItemType.Trinket1st,
-	keywords: [ AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Neck ],
+	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Neck],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Poison from an axiomatic scorpion',
 		source: 'Texts or lore in Axiomatic',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
 	featuresByLevel: [
@@ -701,11 +701,11 @@ const opticalMoteFocuser: Item = FactoryLogic.createItem({
 
 This bulky crystalline implant replaces your eye with a singular bead of red.`,
 	type: ItemType.Trinket1st,
-	keywords: [ AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Eye ],
+	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Eye],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A polished fire quartz from Quintessence',
 		source: 'Texts or lore in Voll',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
 	featuresByLevel: [
@@ -718,9 +718,9 @@ This bulky crystalline implant replaces your eye with a singular bead of red.`,
 						name: 'Laser Eye!',
 						description: 'A pinprick of fire extends across the battlefield.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
+						target: 'Кожен ворог у зоні',
 						cost: 0,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -747,11 +747,11 @@ const psionicBackup: Item = FactoryLogic.createItem({
 
 Just in case…`,
 	type: ItemType.Trinket1st,
-	keywords: [ AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Brain ],
+	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Brain],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A flake of prismacore, synlirii cerebral fluid',
 		source: 'Texts or lore in Variac',
-		characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 300
 	}),
 	featuresByLevel: [
@@ -780,8 +780,8 @@ const barnacle: Kit = {
 
 You are like a barnacle: You have a tough exterior and are damn near impossible to get rid of. You are tough, sticky, and are a real pain in the enemy’s collective rear end.`,
 	type: '',
-	armor: [ KitArmor.Heavy, KitArmor.Shield ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Heavy, KitArmor.Shield],
+	weapon: [KitWeapon.Medium],
 	stamina: 12,
 	speed: 0,
 	stability: 2,
@@ -797,14 +797,14 @@ You are like a barnacle: You have a tough exterior and are damn near impossible 
 				name: 'Guillotine Choke',
 				description: '“Where do you think you’re going?”',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 + M or A damage; M < [weak], grabbed',
 							tier2: '5 + M or A damage; M < [average], grabbed',
 							tier3: '7 + M or A damage; M < [strong], grabbed'
@@ -824,8 +824,8 @@ const condor: Kit = {
 
 The Condor kit grants you the sturdiness of a front liner with the safety of mid-range fighting. With a ranged weapon and heavy armour, you fight like a gun turret!`,
 	type: '',
-	armor: [ KitArmor.Heavy ],
-	weapon: [ KitWeapon.Bow ],
+	armor: [KitArmor.Heavy],
+	weapon: [KitWeapon.Bow],
 	stamina: 12,
 	speed: 0,
 	stability: 1,
@@ -841,14 +841,14 @@ The Condor kit grants you the sturdiness of a front liner with the safety of mid
 				name: 'Ballista Bolt',
 				description: 'You fire a heavy projectile, knocking your enemy back.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createRanged(5) ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createRanged(5)],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 + M or A damage; push 1',
 							tier2: '5 + M or A damage; push 2',
 							tier3: '7 + M or A damage; push 3'
@@ -869,7 +869,7 @@ const eagle: Kit = {
 The Eagle kit makes you a sharp-eyed dead-shot. You fire upon your opponents from incredible distances, hitting your mark every single time.`,
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Bow ],
+	weapon: [KitWeapon.Bow],
 	stamina: 0,
 	speed: 2,
 	stability: 0,
@@ -885,14 +885,14 @@ The Eagle kit makes you a sharp-eyed dead-shot. You fire upon your opponents fro
 				name: 'Downtown Delivery',
 				description: 'You fire an unbelievably long range shot.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createRanged(10) ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createRanged(10)],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '6 + M or A damage',
 							tier3: '9 + M or A damage'
@@ -912,8 +912,8 @@ const juggernaut: Kit = {
 
 The Juggernaut kit allows you to act as a one person riot. With a heavy weapon, you carve a canyon through your foes.`,
 	type: '',
-	armor: [ KitArmor.Heavy ],
-	weapon: [ KitWeapon.Heavy ],
+	armor: [KitArmor.Heavy],
+	weapon: [KitWeapon.Heavy],
 	stamina: 9,
 	speed: 1,
 	stability: 1,
@@ -929,14 +929,14 @@ The Juggernaut kit allows you to act as a one person riot. With a heavy weapon, 
 				name: 'Cleave',
 				description: 'You spin around, attacking your surrounding foes.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'All enemies in the area',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 damage',
 							tier2: '5 damage',
 							tier3: '7 damage'
@@ -957,7 +957,7 @@ const mauler: Kit = {
 Heroes using the Mauler Kit charge headfirst into battle, undaunted by the dangers ahead. Wielding nothing but a medium weapon and your audacity, you are as fearsome as you are fearless.`,
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Medium ],
+	weapon: [KitWeapon.Medium],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -973,14 +973,14 @@ Heroes using the Mauler Kit charge headfirst into battle, undaunted by the dange
 				name: 'Untold Aggression',
 				description: 'You throw yourself at an enemy and try to put the fear of the Gods into them.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '5 + M or A damage; push 1',
 							tier3: '9 + M or A damage; push 2'
@@ -1001,7 +1001,7 @@ const sunWukong: Kit = {
 Heroes using the Sun Wukong kit are highly mobile thanks to their lack of armour. They strike with long poles from just out of reach, harrying enemies with far-off attacks.`,
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Polearm ],
+	weapon: [KitWeapon.Polearm],
 	stamina: 0,
 	speed: 3,
 	stability: 0,
@@ -1017,14 +1017,14 @@ Heroes using the Sun Wukong kit are highly mobile thanks to their lack of armour
 				name: 'My Stick, Your Face',
 				description: '“Allow me to introduce your face to my stick.”',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee(2) ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee(2)],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '5 + M or A damage',
 							tier3: '9 + M or A damage'
@@ -1046,7 +1046,7 @@ const swift: Kit = {
 The Swift kit makes you a mid-range, lightning fast archer. It allows you to be a ranged fighter that sprints across the battlefield, pestering your foes with arrows and drawing their focus.`,
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Bow ],
+	weapon: [KitWeapon.Bow],
 	stamina: 0,
 	speed: 3,
 	stability: 0,
@@ -1062,14 +1062,14 @@ The Swift kit makes you a mid-range, lightning fast archer. It allows you to be 
 				name: 'Maddening Missile',
 				description: 'Your well-placed projectiles drive your opponents mad.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createRanged(5) ],
-				target: 'One creature or object',
+				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createRanged(5)],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 + M or A damage',
 							tier2: '4 + M or A damage',
 							tier3: '6 + M or A damage'
@@ -1105,7 +1105,7 @@ You can install a psionic implant into either yourself or another hero. Implants
 `,
 	prerequisites: 'A Psionic Implant',
 	source: 'Text or lore in either Voll or Variac',
-	characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+	characteristic: [Characteristic.Reason, Characteristic.Intuition],
 	goal: 100
 });
 

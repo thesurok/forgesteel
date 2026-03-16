@@ -113,7 +113,7 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 							type: FactoryLogic.type.createMain(),
 							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 							distance: [FactoryLogic.distance.createMelee(3)],
-							target: 'One creature or object',
+							target: 'Одна істота або предмет',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
@@ -700,7 +700,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -724,7 +724,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -835,7 +835,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -856,7 +856,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1004,7 +1004,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.distance.createMelee(),
 						FactoryLogic.distance.createRanged(5)
 					],
-					target: 'One creature or object',
+					target: 'Одна істота або предмет',
 					cost: 'signature',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
@@ -1046,7 +1046,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One creature or object',
+					target: 'Одна істота або предмет',
 					cost: 3,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
@@ -1067,7 +1067,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-					target: 'Each enemy in the area',
+					target: 'Кожен ворог у зоні',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
@@ -1126,7 +1126,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-					target: 'Each enemy in the area',
+					target: 'Кожен ворог у зоні',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
@@ -1147,7 +1147,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One creature or object',
+					target: 'Одна істота або предмет',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
@@ -1475,7 +1475,7 @@ You've adopted the fighting traditions of knights and nobles. Protected by your 
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
@@ -1562,7 +1562,7 @@ You are all muscle, no finesse. You focus on being as brutal as possible for you
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({

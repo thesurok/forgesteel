@@ -248,7 +248,7 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -274,7 +274,7 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each enemy in the area',
+									target: 'Кожен ворог у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(

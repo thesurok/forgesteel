@@ -83,7 +83,7 @@ export const manticore: MonsterGroup = {
 			name: 'Manticore',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Beast', 'Manticore' ],
+			keywords: ['Beast', 'Manticore'],
 			encounterValue: 72,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10, 'fly'),
@@ -107,9 +107,9 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-3',
 						name: 'Carniverous Bite',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота або предмет',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -127,8 +127,8 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-4',
 						name: 'Tail Spike',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -148,8 +148,8 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-5',
 						name: 'Harrying Claws',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -166,8 +166,8 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-6',
 						name: 'Reflexive Instinct',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the manticore.'),
-						keywords: [ ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Triggering creature',
 						cost: 2,
 						sections: [
@@ -180,8 +180,8 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-7',
 						name: 'Trumpeting Howl',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -198,7 +198,7 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-8',
 						name: 'Cornered Predator',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The manticore shifts up to their speed, then can use Tail Spike against each enemy within distance of that ability.')
@@ -210,7 +210,7 @@ export const manticore: MonsterGroup = {
 						id: 'manticore-feature-9',
 						name: 'Debilitating Poison',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The manticore sours their poison with enmity. Until the end of the encounter, the manticore has a double edge on power rolls against weakened creatures. Additionally, any creature weakened by the manticore’s Tail Spike ability has their speed halved and takes an extra 3 poison damage at the start of each of their turns.')

@@ -11,11 +11,11 @@ import { SkillList } from '@/enums/skill-list';
 
 export const conduit: HeroClass = {
 	id: 'class-conduit',
-	name: 'Conduit',
+	name: 'Провідник',
 	description: `
-The power of the gods flows through you! As a vessel for divine power, you don’t just keep your allies in the fight. You make those allies more effective, even as you rain divine energy down upon your foes. Though the deity or saint you serve might have other faithful and clergy, you are special among worshippers, receiving your abilities from the highest source.
+Сила богів тече через вас! Як посудина божественної сили, ви не просто підтримуєте союзників у бою. Ви робите їх ефективнішими, одночасно посилаючи божественну енергію на ворогів. Хоч божество або святий, якому ви служите, може мати інших вірних і кліриків, ви особливі серед поклонників і отримуєте здібності від найвищого джерела.
 
-As a conduit, you heal and buff your allies, and debuff your foes while smiting them with divine magic. The spark of divinity within you shines, filling your enemies with awe and making you more worldly and aware.`,
+Як провідник, ви зціляєте й підсилюєте союзників і послаблюєте ворогів, караючи їх божественною магією. Іскра божественності в вас сяє, наповнюючи ворогів благоговінням та роблячи вас уважнішим і обізнанішим.`,
 	type: 'standard',
 	subclassName: '',
 	subclassCount: 0,
@@ -40,11 +40,11 @@ As a conduit, you heal and buff your allies, and debuff your foes while smiting 
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'conduit-resource',
-					name: 'Piety',
+					name: 'Благочестя',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '1d3'
 						}
 					]
@@ -60,40 +60,40 @@ As a conduit, you heal and buff your allies, and debuff your foes while smiting 
 				}),
 				FactoryLogic.feature.createPackage({
 					id: 'conduit-1-3b',
-					name: 'Prayer',
+					name: 'Молитва',
 					description: `
-You can gain more piety by praying to the gods—but beware! Doing so can easily draw their ire, as the gods hate to be annoyed. Before you roll to gain piety at the start of your turn, you can pray (no action required). If you do, your roll gains the following additional effects:
+Ви можете отримати більше благочестя, молячись богам — але будьте обережні! Це легко може викликати їхнє обурення, адже богам не подобається, коли їх дратують. Перед тим як кидати кістки для отримання благочестя на початку вашого ходу, ви можете помолитися (дій не вимагається). Якщо ви це зробите, ваш кидок отримує такі додаткові ефекти:
 
-* If the roll is a 1, you gain 1 additional piety but anger the gods! You take psychic damage equal to 1d6 + your level, which can’t be reduced in any way.
-* If the roll is a 2, you gain 1 additional piety.
-* If the roll is a 3, you gain 2 additional piety and can activate a domain effect of your choice.`,
+* Якщо випадає 1, ви отримуєте на 1 благочестя більше, але розгнівуєте богів! Ви отримуєте психічну шкоду в розмірі 1d6 + ваш рівень, яку неможливо зменшити будь-яким чином.
+* Якщо випадає 2, ви отримуєте на 1 благочестя більше.
+* Якщо випадає 3, ви отримуєте на 2 благочестя більше і можете активувати будь-який ефект домену на ваш вибір.`,
 					tag: 'conduit-prayer'
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-1-4',
-					name: '1st-Level Domain Feature',
+					name: 'Особливість домену 1-го рівня',
 					level: 1
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'conduit-1-5',
-						name: 'Healing Grace',
-						description: 'Your divine energy restores the righteous.',
+						name: 'Благодать зцілення',
+						description: 'Ваша божественна енергія відновлює праведних.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target can spend a Recovery.'),
+							FactoryLogic.createAbilitySectionText('Ціль може витратити Відновлення.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
 								effect: `
-For each piety spent, you can choose one of the following enhancements:
+		За кожне витрачене благочестя ви можете обрати одне з наступних посилень:
 
-* You can target one additional ally within distance.
-* You can end one effect on a target that is ended by a saving throw or that ends at the end of their turn.
-* A prone target can stand up.
-* A target can spend 1 additional Recovery.`
+		* Ви можете націлитися на одного додаткового союзника в межах дистанції.
+		* Ви можете припинити один ефект на цілі, який припиняється рят. кидком або який закінчується наприкінці її ходу.
+		* Персонаж, що лежить, може піднятися.
+		* Ціль може витратити ще 1 Відновлення.`
 							})
 						]
 					})
@@ -101,41 +101,41 @@ For each piety spent, you can choose one of the following enhancements:
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'conduit-1-6',
-						name: 'Ray of Wrath',
-						description: 'You unleash a blast of holy light upon your foe.',
+						name: 'Промінь гніву',
+						description: 'Ви випускаєте спалах священного світла на ворога.',
 						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Intuition],
-								tier1: '2 + I damage',
-								tier2: '4 + I damage',
-								tier3: '6 + I damage'
+								tier1: '2 + І шкоди',
+								tier2: '4 + І шкоди',
+								tier3: '6 + І шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('You can have this ability deal holy damage.')
+							FactoryLogic.createAbilitySectionText('Ця здатність може наносити священну шкоду.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'conduit-1-7',
-					name: 'Triggered Action',
+					name: 'Тригерна дія',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'conduit-1-7a',
-									name: 'Word of Guidance',
-									description: 'You invigorate an attacking ally with divine energy.',
-									type: FactoryLogic.type.createTrigger('The target makes an ability roll for a damage-dealing ability.'),
+									name: 'Слово керівництва',
+									description: 'Ви наповнюєте божественною енергією союзника, який атакує.',
+									type: FactoryLogic.type.createTrigger('Ціль робить кидок для здібності, що завдає шкоди.'),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Один союзник',
 									sections: [
-										FactoryLogic.createAbilitySectionText('The power roll gains an edge.'),
+										FactoryLogic.createAbilitySectionText('Кидок сили отримує перевагу.'),
 										FactoryLogic.createAbilitySectionSpend({
-											effect: 'The power roll has a double edge.'
+											effect: 'Кидок сили має подвійну перевагу.'
 										})
 									]
 								})
@@ -146,16 +146,16 @@ For each piety spent, you can choose one of the following enhancements:
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'conduit-1-7b',
-									name: 'Word of Judgment',
-									description: 'Your holy word saps an attacking enemy’s strength.',
-									type: FactoryLogic.type.createTrigger('The target would take damage from an ability that uses a power roll.'),
+									name: 'Слово суду',
+									description: 'Ваше священне слово ослаблює силу атакуючого ворога.',
+									type: FactoryLogic.type.createTrigger('Ціль могла б отримати шкоду від здібності, яка використовує кидок сили.'),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Один союзник',
 									sections: [
-										FactoryLogic.createAbilitySectionText('The power roll takes a bane against the target.'),
+										FactoryLogic.createAbilitySectionText('Кидок сили отримує шкоду (bane) проти цілі.'),
 										FactoryLogic.createAbilitySectionSpend({
-											effect: 'The power roll has a double bane against the target.'
+											effect: 'Кидок сили має подвійну шкоду (double bane) проти цілі.'
 										})
 									]
 								})
@@ -166,13 +166,13 @@ For each piety spent, you can choose one of the following enhancements:
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'conduit-1-8',
-					name: 'Prayer',
+					name: 'Молитва',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbilityDamage({
 								id: 'conduit-1-8a',
-								name: 'Prayer of Destruction',
-								description: 'Your god infuses wrath within your being.',
+								name: 'Молитва руйнування',
+								description: 'Ваш бог наповнює вас гнівом.',
 								keywords: [AbilityKeyword.Magic],
 								value: 1
 							}),
@@ -181,8 +181,8 @@ For each piety spent, you can choose one of the following enhancements:
 						{
 							feature: FactoryLogic.feature.createAbilityDistance({
 								id: 'conduit-1-8b',
-								name: 'Prayer of Distance',
-								description: 'Your god blesses you with the ability to stretch your divine magic farther.',
+								name: 'Молитва дальності',
+								description: 'Ваш бог благословляє вас здатністю розширювати дію вашої божественної магії.',
 								keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 								value: 2
 							}),
@@ -191,13 +191,13 @@ For each piety spent, you can choose one of the following enhancements:
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'conduit-1-8c',
-								name: 'Prayer of Soldier\'s Skill',
-								description: 'Your god gives your mind the training of a soldier. You can wear light armor and wield light weapons effectively, even though you don’t have a kit. You can use light armor treasures and light weapon treasures. If you have a kit, you can’t take this blessing.',
+								name: 'Молитва військової майстерності',
+								description: 'Ваш бог дає вашому розуму тренування солдата. Ви можете одягати легку броню і ефективно володіти легкою зброєю, навіть якщо у вас немає набору. Ви можете використовувати скарби з легкою бронею та легкими зброями. Якщо у вас є набір, ви не можете взяти це благословення.',
 								features: [
 									FactoryLogic.feature.create({
 										id: 'conduit-1-8da',
-										name: 'Prayer of Soldier\'s Skill',
-										description: 'While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes.'
+										name: 'Молитва військової майстерності',
+										description: 'Поки ви володієте легкою зброєю, ви отримуєте +1 до шкоди від здатностей зі зброєю, включно з безкоштовними ударами.'
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'conduit-1-8db',
@@ -216,8 +216,8 @@ For each piety spent, you can choose one of the following enhancements:
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'conduit-1-8d',
-								name: 'Prayer of Speed',
-								description: 'Your god blesses your flesh and infuses it with divine quickness.',
+								name: 'Молитва швидкості',
+								description: 'Ваш бог благословляє ваше тіло і наповнює його божественною швидкістю.',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'conduit-1-8ca',
@@ -236,8 +236,8 @@ For each piety spent, you can choose one of the following enhancements:
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'conduit-1-8e',
-								name: 'Prayer of Steel',
-								description: 'Your god fills your body with the light of creation, making you harder to hurt and move.',
+								name: 'Молитва сталі',
+								description: 'Ваш бог наповнює ваше тіло світлом творіння, роблячи вас менш вразливим до пошкоджень і переміщення.',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'conduit-1-8ea',
@@ -257,37 +257,37 @@ For each piety spent, you can choose one of the following enhancements:
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'conduit-1-9',
-					name: 'Conduit Ward',
+					name: 'Оберіг Провідника',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'conduit-1-9a',
-								name: 'Bastion Ward',
-								description: 'Your god grants you a holy countenance that protects you at all times. You gain a +1 bonus to saving throws.'
+								name: 'Бастіонний оберіг',
+								description: 'Ваш бог дарує вам священний вигляд, що захищає вас постійно. Ви отримуєте +1 до рятувальних кидків.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'conduit-1-9b',
-								name: 'Quickness Ward',
-								description: 'The gods imbue a divine swiftness within you. Whenever an adjacent creature deals damage to you, you can shift up to a number of squares equal to your Intuition score after the damage is dealt.'
+								name: 'Оберіг швидкості',
+								description: 'Боги наділяють вас божественною швидкістю. Коли сусідня істота завдає вам шкоди, після завдання шкоди ви можете зміститися на число клітин, рівне вашому показнику Інтуїції.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'conduit-1-9c',
-								name: 'Sanctuary Ward',
-								description: 'In response to a foe’s aggression, your god protects you. Whenever another creature damages you, that creature can’t target you with a strike until you harm them or one of their allies, or until the end of their next turn.'
+								name: 'Оберіг притулку',
+								description: 'У відповідь на агресію ворога ваш бог захищає вас. Коли інша істота завдає вам шкоди, ця істота не може цілитися по вам ударом, поки ви не зашкодите їй або одному з її союзників, або до кінця її наступного ходу.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'conduit-1-9d',
-								name: 'Spirit Ward',
-								description: 'Invisible spirits surround you if you are harmed. Whenever an adjacent creature deals damage to you, they take corruption damage equal to your Intuition score.'
+								name: 'Оберіг духа',
+								description: 'Невидимі духи оточують вас, якщо вам завдано шкоди. Коли сусідня істота завдає вам шкоди, вона отримує шкоду скверною, рівну вашому показнику Інтуїції.'
 							}),
 							value: 1
 						}
@@ -313,8 +313,8 @@ For each piety spent, you can choose one of the following enhancements:
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-2-1',
-					name: 'The Lists of Heaven',
-					description: 'Your deity is aware of your growing influence, making it easier to draw their attention and power when you heal your allies. Whenever you allow another creature to spend a Recovery, you can also spend a Recovery.'
+					name: 'Небесні списки',
+					description: 'Божество усвідомлює ваш зростаючий вплив, що полегшує привернення його уваги і сили, коли ви зцілюєте союзників. Коли ви дозволяєте іншій істоті витратити відновлення, ви також можете витратити відновлення.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-2-2',
@@ -322,13 +322,13 @@ For each piety spent, you can choose one of the following enhancements:
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-2-3',
-					name: '2nd-Level Domain Feature',
-					description: 'You gain the 1st-level domain feature and ability to choose a skill for the domain you selected at 1st level but whose domain feature you didn’t take at that level.',
+					name: 'Особливість домену 2-го рівня',
+					description: 'Ви отримуєте особливість домену 1-го рівня і можливість вибрати навичку для домену, який ви обрали на 1-му рівні, але особливість якого ви тоді не взяли.',
 					level: 1
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-2-4',
-					name: '2nd-Level Domain Ability',
+					name: 'Здібність домену 2-го рівня',
 					level: 2
 				})
 			]
@@ -338,11 +338,11 @@ For each piety spent, you can choose one of the following enhancements:
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-3-1',
-					name: 'Minor Miracle',
+					name: 'Мале диво',
 					description: `
-As a respite activity, you can perform a religious ritual and beseech the gods to restore a dead creature to life. You must have at least half the creature’s remains, and they must have died within the last 24 hours from an effect that isn’t age related. The creature’s soul must be willing to return to life for the ritual to work. If they are not willing, you instinctively understand that as you start the respite activity and can cease it immediately.
+Як діяльність під час відпочинку ви можете виконати релігійний ритуал і благати богів відновити мертву істоту до життя. Ви повинні мати принаймні половину останків істоти, і вона має померти протягом останніх 24 годин від ефекту, що не пов'язаний зі старістю. Душа істоти повинна бути готова повернутися до життя, щоб ритуал спрацював. Якщо вона не готова, ви інтуїтивно відчуєте це на початку виконання ритуалу і можете відразу припинити його.
 
-A creature with a willing soul returns to life at the end of the respite with full Stamina and half their Recoveries. You regain only half your Recoveries at the end of the respite.`
+Істота з готовою душею повертається до життя в кінці відпочинку з повною Витривалістю і половиною своїх Відновлень. Ви відновлюєте тільки половину своїх Відновлень в кінці відпочинку.`,
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'conduit-3-2',
@@ -355,20 +355,20 @@ A creature with a willing soul returns to life at the end of the respite with fu
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-4-1',
-					name: 'Blessed Domain',
-					description: 'Whenever you gain piety from a domain effect, you gain 1 additional piety.'
+					name: 'Благословенний домен',
+					description: 'Коли ви отримуєте благочестя від ефекту домену, ви отримуєте додаткове 1 благочестя.'
 				}),
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'conduit-4-1a',
-					name: 'Characteristic Increase: Intuition',
-					description: 'Your Intuition score increases to 3.',
+					name: 'Збільшення характеристики: Інтуїція',
+					description: 'Ваш показник Інтуїції збільшується до 3.',
 					characteristic: Characteristic.Intuition,
 					value: 1
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'conduit-4-1b',
-					name: 'Characteristic Increase: Additional Choice',
-					description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.',
+					name: 'Збільшення характеристики: Додатковий вибір',
+					description: 'Крім того, ви можете збільшити один із показників ваших характеристик на 1, до максимуму 3.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createCharacteristicBonus({
@@ -414,7 +414,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-4-4',
-					name: '4th-Level Domain Feature',
+					name: 'Особливість домену 4-го рівня',
 					level: 4
 				})
 			]
@@ -424,8 +424,8 @@ A creature with a willing soul returns to life at the end of the respite with fu
 			features: [
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-5-1',
-					name: '5th-Level Domain Feature',
-					description: 'You gain the 4th-level domain feature for the domain whose feature you didn’t select at that level.',
+					name: 'Особливість домену 5-го рівня',
+					description: 'Ви отримуєте особливість домену 4-го рівня для домену, особливість якого ви не вибрали на тому рівні.',
 					level: 4
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
@@ -439,14 +439,14 @@ A creature with a willing soul returns to life at the end of the respite with fu
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-6-1',
-					name: 'Burgeoning Saint',
+					name: 'Зростаючий святий',
 					description: `
-You are infused with the power your deity reserves for their most worthy instruments. You have the following benefits:
+Вас наповнює сила, яку ваше божество зберігає для своїх найгідніших інструментів. Ви маєте такі переваги:
 
-* You gain an edge on Presence tests made to interact with other creatures.
-* Whenever you deal damage to an enemy, you can spend a Recovery.
-* You have corruption immunity 10 or holy immunity 10 (your choice).
-* Your clothing and equipment changes in a way that reflects your status as your deity’s chosen champion, such as ordinary robes turning into gold vestments or a simple dagger becoming a wicked blade with intricate etching.`
+* Ви отримуєте перевагу на перевірках Присутності для взаємодії з іншими істотами.
+* Коли ви завдаєте шкоди ворогу, ви можете витратити Відновлення.
+* Ви маєте імунітет до скверни 10 або імунітет до священної шкоди 10 (на ваш вибір).
+* Ваш одяг і спорядження змінюються так, щоб відображати ваш статус обраного чемпіона вашого божества, наприклад звичайні ризи стають золотими шатами, або простий кинджал перетворюється на витончено оздоблений клинок.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-6-2',
@@ -454,7 +454,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-6-3',
-					name: '6th-Level Domain Ability',
+					name: 'Здібність домену 6-го рівня',
 					level: 6
 				})
 			]
@@ -489,9 +489,9 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'conduit-7-2',
-					name: 'Faithful’s Reward',
+					name: 'Нагорода вірних',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '1d3 + 1'
 				}),
 				FactoryLogic.feature.createSkillChoice({
@@ -500,7 +500,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-7-4',
-					name: '7th-Level Domain Feature',
+					name: 'Особливість домену 7-го рівня',
 					level: 7
 				})
 			]
@@ -513,8 +513,8 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-8-2',
-					name: '8th-Level Domain Feature',
-					description: 'You gain the 7th-level domain feature for the domain whose feature you didn’t select at that level.',
+					name: 'Особливість домену 8-го рівня',
+					description: 'Ви отримуєте особливість домену 7-го рівня для домену, особливість якого ви не вибрали на тому рівні.',
 					level: 7
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
@@ -528,17 +528,17 @@ You are infused with the power your deity reserves for their most worthy instrum
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-9-1',
-					name: 'Faith’s Sword',
-					description: 'Each time you finish a respite, you can choose a willing hero ally who finished the respite with you. That ally gains the benefits of your Burgeoning Saint feature until you finish another respite. Additionally, you can spend piety as a free maneuver to give the hero 1 of their Heroic Resource for every 2 piety spent.'
+					name: 'Меч віри',
+					description: 'Кожного разу, коли ви завершите відпочинок, ви можете вибрати охочого героя-союзника, який завершив відпочинок разом з вами. Цей союзник отримує переваги вашої особливості "Зростаючий святий" до того моменту, коли ви завершите наступний відпочинок. Крім того, ви можете витратити благочестя як безкоштовний маневр, щоб дати герою 1 одиницю їхнього героїчного ресурсу за кожні 2 витрачені благочестя.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'conduit-9-2',
-					name: 'Ordained',
-					description: 'Your god elevates the power flowing through you. Your characteristic scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.'
+					name: 'Освячений',
+					description: 'Ваш бог підносить силу, що тече через вас. Ваші показники характеристик вважаються на 1 вищими при протистоянні потужностям. Крім того, поки у вас 5 або більше Перемог, ви говорите голосом вашого божества. Ви маєте подвійну перевагу на перевірках Присутності для впливу на інших істот.'
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-9-3',
-					name: '9th-Level Domain Ability',
+					name: 'Здібність домену 9-го рівня',
 					level: 9
 				})
 			]
@@ -548,23 +548,23 @@ You are infused with the power your deity reserves for their most worthy instrum
 			features: [
 				FactoryLogic.feature.create({
 					id: 'conduit-10-1',
-					name: 'Avatar',
+					name: 'Аватар',
 					description: `
-You are now an avatar of your god! When you use your Prayer feature, you can be affected by up to three prayers at once, and you can change all those prayers and your ward as a respite activity. You can also use a maneuver to activate one of your domain effects without needing to pray.
+Ви тепер аватар вашого божества! Коли ви використовуєте здатність "Молитва", на вас може впливати до трьох молитов одночасно, і ви можете змінювати усі ці молитви та свій оберіг як діяльність під час відпочинку. Ви також можете використати маневр, щоб активувати один із ефектів вашого домену без потреби молитися.
 
-Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.`
+Крім того, коли ви берете відпочинок, ви можете відкрити портал, щоб відпочити в присутності вашого божества та взяти з собою союзників. Коли ви це робите, ви можете поставити вашому божеству три питання, на які Директор повинен відповісти чесно, якщо ваше божество знає відповіді (хоча воно може відповісти загадково або неповно). Коли ви завершуєте відпочинок, ви та ваші союзники можете з'явитися в будь-якому місці часопростору, де хтось поклоняється вашому божеству.`
 				}),
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'conduit-10-2a',
-					name: 'Characteristic Increase: Intuition',
-					description: 'Your Intuition score increases to 5.',
+					name: 'Збільшення характеристики: Інтуїція',
+					description: 'Ваш показник Інтуїції збільшується до 5.',
 					characteristic: Characteristic.Intuition,
 					value: 1
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'conduit-10-2b',
-					name: 'Characteristic Increase: Additional Choice',
-					description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.',
+					name: 'Збільшення характеристики: Додатковий вибір',
+					description: 'Крім того, ви можете збільшити один із показників ваших характеристик на 1, до максимуму 5.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createCharacteristicBonus({
@@ -602,26 +602,26 @@ Additionally, whenever you take a respite, you can open a portal to rest in the 
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'conduit-10-3',
-					name: 'Divine Power',
+					name: 'Божественна сила',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'XP gained'
 						}
 					],
 					description: `
-You can spend divine power on your abilities as if it were piety.
+Ви можете витрачати Божественну силу на свої здібності так само, як благочестя.
 
-Additionally, you can spend divine power as if it were piety to use any conduit abilities you don’t have, as the gods answer your prayers with temporary and unique gifts. If you use a conduit ability you don’t have that usually costs no piety, you must spend 1 divine power to use it.
+Крім того, ви можете витрачати Божественну силу як благочестя, щоб використовувати будь-які здібності провідника, яких у вас немає, оскільки боги відповідають на ваші молитви тимчасовими та унікальними дарами. Якщо ви використовуєте здібність провідника, якої у вас немає, і яка зазвичай не коштує благочестя, ви повинні витратити 1 одиницю Божественної сили, щоб її використати.
 
-Divine power remains until you spend it.`
+Божественна сила зберігається, поки ви її не витратите.`
 				}),
 				FactoryLogic.feature.create({
 					id: 'conduit-10-4',
-					name: 'Most Pious',
-					description: 'When you roll for piety at the start of your turn in combat and you pray, you gain 1 additional piety.'
+					name: 'Найбільш благочестивий',
+					description: 'Коли на початку вашого ходу в бою ви кидаєте на благочестя і молитесь, ви отримуєте +1 благочестя.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-10-5',
@@ -637,29 +637,29 @@ Divine power remains until you spend it.`
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-1',
-			name: 'Blessed Light',
-			description: 'Burning radiance falls upon your foe, transferring some of their energy to a nearby ally.',
+			name: 'Благодатне світло',
+			description: 'Палаюче сяйво падає на вашого ворога, передаючи частину його енергії ближньому союзнику.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '3 + I holy damage',
-						tier2: '5 + I holy damage',
-						tier3: '8 + I holy damage'
+						tier1: '3 + І священної шкоди',
+						tier2: '5 + І священної шкоди',
+						tier3: '8 + І священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('One ally within distance gains a number of surges equal to the tier outcome of your power roll.')
+				FactoryLogic.createAbilitySectionText('Один союзник у межах дистанції отримує кількість сплесків, рівну рівню результату вашого кидка сили.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-2',
-			name: 'Drain',
-			description: 'You drain the energy from your target and revitalize yourself or an ally.',
+			name: 'Висмоктування',
+			description: 'Ви відсмоктуєте енергію з цілі і відновлюєте здоров’я собі або союзнику.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -669,57 +669,57 @@ Divine power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '2 + I corruption damage',
-						tier2: '5 + I corruption damage',
-						tier3: '7 + I corruption damage'
+						tier1: '2 + І шкоди скверною',
+						tier2: '5 + І шкоди скверною',
+						tier3: '7 + І шкоди скверною'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You or one ally within distance can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('Ви або один союзник у межах дистанції може витратити Відновлення.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-3',
-			name: 'Holy Lash',
-			description: 'A tendril of divine energy shoots forth to draw in your foe.',
+			name: 'Священний хлист',
+			description: 'Щупальце божественної енергії виривається вперед, щоб притягнути вашого ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I holy damage; vertical pull 2',
-					tier2: '5 + I holy damage; vertical pull 3',
-					tier3: '8 + I holy damage; vertical pull 4'
+					tier1: '3 + І священної шкоди; вертикальне притягнення 2',
+					tier2: '5 + І священної шкоди; вертикальне притягнення 3',
+					tier3: '8 + І священної шкоди; вертикальне притягнення 4'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-4',
-			name: 'Lightfall',
-			description: 'A rain of holy light scours your enemies and repositions your allies.',
+			name: 'Падіння світла',
+			description: 'Дощ священного світла обпікає ваших ворогів і переміщує союзників.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '2 holy damage',
-						tier2: '3 holy damage',
-						tier3: '5 holy damage'
+						tier1: '2 священної шкоди',
+						tier2: '3 священної шкоди',
+						tier3: '5 священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can teleport yourself and each ally in the area to unoccupied spaces in the area.')
+				FactoryLogic.createAbilitySectionText('Ви можете телепортувати себе та кожного союзника в зоні на незайняті клітини цієї зони.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-5',
-			name: 'Sacrificial Offer',
-			description: 'Divine magic tears at your foe and defends a nearby friend.',
+			name: 'Жертовна пропозиція',
+			description: 'Божественна магія терзає вашого ворога і захищає ближнього союзника.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -729,36 +729,36 @@ Divine power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '2 + I corruption damage',
-						tier2: '4 + I corruption damage',
-						tier3: '6 + I corruption damage'
+						tier1: '2 + І шкоди скверною',
+						tier2: '4 + І шкоди скверною',
+						tier3: '6 + І шкоди скверною'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Choose yourself or one ally within distance. That character can impose a bane on one power roll made against them before the end of their next turn.')
+				FactoryLogic.createAbilitySectionText('Виберіть себе або одного союзника у межах дистанції. Цей персонаж може накласти шкоду (bane) на один кидок сили, зроблений проти нього до кінця його наступного ходу.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-6',
-			name: 'Staggering Curse',
-			description: 'A blast of judgment disorients your foe.',
+			name: 'Приголомшливе прокляття',
+			description: 'Удар суду дезорієнтує вашого ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I holy damage; slide 1',
-					tier2: '5 + I holy damage; slide 2',
-					tier3: '8 + I holy damage; slide 3'
+					tier1: '3 + І священної шкоди; зсув 1',
+					tier2: '5 + І священної шкоди; зсув 2',
+					tier3: '8 + І священної шкоди; зсув 3'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-7',
-			name: 'Warrior\'s Prayer',
-			description: 'Your quickly uttered prayer lends aggressive divine energy to a friend engaged in melee.',
+			name: 'Молитва воїна',
+			description: 'Ваша швидка молитва надає агресивну божественну енергію союзнику, який веде ближній бій.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -768,74 +768,74 @@ Divine power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '3 + I holy damage',
-						tier2: '6 + I holy damage',
-						tier3: '9 + I holy damage'
+						tier1: '3 + І священної шкоди',
+						tier2: '6 + І священної шкоди',
+						tier3: '9 + І священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You or one ally within distance gains temporary Stamina equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Ви або один союзник у межах дистанції отримує тимчасову Витривалість, рівну вашому показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-8',
-			name: 'Wither',
-			description: 'A bolt of holy energy saps the life from a foe.',
+			name: 'Згасання',
+			description: 'Промінь священної енергії висмоктує життя з ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I corruption damage; P < [weak], the target takes a bane on their next power roll',
-					tier2: '5 + I corruption damage; P < [average], the target takes a bane on their next power roll',
-					tier3: '8 + I corruption damage; P < [strong], the target takes a bane on their next power roll'
+					tier1: '3 + І шкоди скверною; П < [weak], ціль отримує шкоду (bane) на свій наступний кидок сили',
+					tier2: '6 + І шкоди скверною; П < [average], ціль отримує шкоду (bane) на свій наступний кидок сили',
+					tier3: '9 + І шкоди скверною; П < [strong], ціль отримує шкоду (bane) на свій наступний кидок сили'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-9',
-			name: 'Call the Thunder Down',
-			description: 'You ask your saint for thunder and your prayer is answered.',
+			name: 'Заклик грому',
+			description: 'Ви просите свого святого про грім, і ваша молитва почута.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '2 sonic damage; push 1',
-						tier2: '3 sonic damage; push 2',
-						tier3: '5 sonic damage; push 3'
+						tier1: '2 звукової шкоди; штовх 1',
+						tier2: '3 звукової шкоди; штовх 2',
+						tier3: '5 звукової шкоди; штовх 3'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can push each willing ally in the area the same distance, ignoring stability.')
+				FactoryLogic.createAbilitySectionText('Ви можете штовхнути кожного охочого союзника в зоні на ту саму відстань, ігноруючи стійкість.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-10',
-			name: 'Font of Wrath',
-			description: 'A brilliant column of holy light appears on the battlefield, striking out at nearby enemies.',
+			name: 'Джерело гніву',
+			description: 'Сяючий стовп священного світла з’являється на полі бою, вражаючи сусідніх ворогів.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You summon a spirit of size 2 who can’t be harmed, and who appears in an unoccupied space within distance. The spirit lasts until the end of your next turn. You and your allies can move through the spirit’s space, but enemies can’t. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Ви викликаєте духа розміру 2, якому не можна завдати шкоди, і який з’являється на незайнятій клітині в межах дистанції. Дух триває до кінця вашого наступного ходу. Ви та ваші союзники можете рухатися через клітину духа, а вороги не можуть. Будь-який ворог, який уперше за раунд бою переміщується в межі 2 клітин від духа або починає там свій хід, отримує священну шкоду, рівну вашому показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-11',
-			name: 'Judgment\'s Hammer',
-			description: 'Your divine fury is a hammer that crashes down upon the unrighteous.',
+			name: 'Молот суду',
+			description: 'Ваша божественна лють — молот, що падає на неправедників.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -848,8 +848,8 @@ Divine power remains until you spend it.`
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-12',
-			name: 'Violence Will Not Aid Thee',
-			description: 'After some holy lightning, your enemy will think twice about their next attack.',
+			name: 'Насильство не допоможе',
+			description: 'Після удару священної блискавки ваш ворог подумає двічі, перш ніж наступного разу атакувати.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -859,36 +859,36 @@ Divine power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '3 + I lightning damage',
-						tier2: '6 + I lightning damage',
-						tier3: '9 + I lightning damage'
+						tier1: '3 + І блискавичної шкоди',
+						tier2: '6 + І блискавичної шкоди',
+						tier3: '9 + І блискавичної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The first time on a turn that the target deals damage to another creature, the target of this ability takes 1d10 lightning damage (save ends).')
+				FactoryLogic.createAbilitySectionText('Перший раз у ході, коли ціль завдає шкоди іншій істоті, ціль цієї здатності отримує 1d10 блискавичної шкоди (рят. кидок припиняє).')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-13',
-			name: 'Corruption\'s Curse',
-			description: 'Cursed by you, your enemy takes more damage from your allies.',
+			name: 'Прокляття скверни',
+			description: 'Проклятий вами, ваш ворог отримує більше шкоди від ваших союзників.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I corruption damage; M < [weak], damage weakness 5 (save ends)',
-					tier2: '6 + I corruption damage; M < [average], damage weakness 5 (save ends)',
-					tier3: '9 + I corruption damage; M < [strong], damage weakness 5 (save ends)'
+					tier1: '3 + І шкоди скверною; С < [weak], вразливість до шкоди 5 (рят. кидок припиняє)',
+					tier2: '6 + І шкоди скверною; С < [average], вразливість до шкоди 5 (рят. кидок припиняє)',
+					tier3: '9 + І шкоди скверною; С < [strong], вразливість до шкоди 5 (рят. кидок припиняє)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-14',
-			name: 'Curse of Terror',
-			description: 'Fear of divine judgment overwhelms your foe.',
+			name: 'Прокляття жаху',
+			description: 'Страх божественного суду переповнює вашого ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -897,120 +897,120 @@ Divine power remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '6 + I holy damage; I < [weak], frightened (save ends)',
-					tier2: '9 + I holy damage; I < [average], frightened (save ends)',
-					tier3: '13 + I holy damage; I < [strong], frightened (save ends)'
+					tier1: '6 + І священної шкоди; І < [weak], переляканий (рят. кидок припиняє)',
+					tier2: '9 + І священної шкоди; І < [average], переляканий (рят. кидок припиняє)',
+					tier3: '13 + І священної шкоди; І < [strong], переляканий (рят. кидок припиняє)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-15',
-			name: 'Faith is Our Armor',
-			description: 'The heroes’ armor glows with golden light, granting divine protection.',
+			name: 'Віра — наша броня',
+			description: 'Броня героїв сяє золотистим світлом, надаючи божественний захист.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Four allies',
+			target: 'Чотири союзники',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You can target yourself instead of one ally with this ability.'),
+				FactoryLogic.createAbilitySectionText('Ви можете спрямувати цю здатність на себе замість одного союзника.'),
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: 'The target gains 5 temporary Stamina',
-					tier2: 'The target gains 10 temporary Stamina',
-					tier3: 'The target gains 15 temporary Stamina'
+					tier1: 'Ціль отримує 5 тимчасової Витривалості',
+					tier2: 'Ціль отримує 10 тимчасової Витривалості',
+					tier3: 'Ціль отримує 15 тимчасової Витривалості'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-16',
-			name: 'Sermon of Grace',
-			description: 'You inspire your allies with tales of your saint’s great deeds.',
+			name: 'Проповідь благодаті',
+			description: 'Ви надихаєте союзників оповідями про великі діла вашого святого.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
-			target: 'Each ally in the area',
+			target: 'Кожен союзник у зоні',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target can spend a Recovery. Additionally, each target can use a free triggered action to end one effect on them that is ended by a saving throw or that ends at the end of their turn, or to stand up if prone.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль може витратити Відновлення. Крім того, кожна ціль може використати безкоштовну тригерну дію, щоб завершити один ефект на собі, який завершується рят. кидком або наприкінці їхнього ходу, або щоб піднятися, якщо лежить.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-17',
-			name: 'Fear of the Gods',
-			description: 'Your divine magic makes a creature appear as what your enemies fear most.',
+			name: 'Страх богів',
+			description: 'Ваша божественна магія змушує істоту з’являтися в образі того, чого найбільше бояться ваші вороги.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '6 psychic damage; I < [weak], frightened (save ends)',
-					tier2: '9 psychic damage; I < [average], frightened (save ends)',
-					tier3: '13 psychic damage; I < [strong], frightened (save ends)'
+					tier1: '6 психічної шкоди; І < [weak], переляканий (рят. кидок припиняє)',
+					tier2: '9 психічної шкоди; І < [average], переляканий (рят. кидок припиняє)',
+					tier3: '13 психічної шкоди; І < [strong], переляканий (рят. кидок припиняє)'
 				})),
-				FactoryLogic.createAbilitySectionText('Each target is frightened of you or a creature you choose within distance.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль перелякана вами або істотою на ваш вибір у межах дистанції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-18',
-			name: 'Saint\'s Raiment',
-			description: 'An ally becomes the wearer of an empowered golden cloak.',
+			name: 'Мантія святого',
+			description: 'Союзник отримує посилений золотий плащ.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Один союзник',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target gains 20 temporary Stamina and 3 surges.')
+				FactoryLogic.createAbilitySectionText('Ціль отримує 20 тимчасової Витривалості і 3 сплески.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-19',
-			name: 'Soul Siphon',
-			description: 'A beam of energy connects a foe to a friend, draining life from one to heal the other.',
+			name: 'Відсмоктування душі',
+			description: 'Промінь енергії зв’язує ворога та друга, висмоктуючи життя з одного, щоб зцілити іншого.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One enemy',
+			target: 'Один ворог',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '7 + I corruption damage',
-					tier2: '10 + I corruption damage',
-					tier3: '15 + I corruption damage'
+					tier1: '7 + І шкоди скверною',
+					tier2: '10 + І шкоди скверною',
+					tier3: '15 + І шкоди скверною'
 				})),
-				FactoryLogic.createAbilitySectionText('One ally within distance can spend any number of Recoveries.')
+				FactoryLogic.createAbilitySectionText('Один союзник у межах дистанції може витратити будь-яку кількість Відновлень.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-20',
-			name: 'Words of Wrath and Grace',
-			description: 'Your saint grants your enemies a vision of pain and fills your allies with healing energy.',
+			name: 'Слова гніву і благодаті',
+			description: 'Ваш святий дарує вашим ворогам видіння болю і наповнює союзників лікувальною енергією.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '2 holy damage',
-						tier2: '5 holy damage',
-						tier3: '7 holy damage'
+						tier1: '2 священної шкоди',
+						tier2: '5 священної шкоди',
+						tier3: '7 священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each ally in the area can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('Кожен союзник у зоні може витратити Відновлення.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-21',
-			name: 'Beacon of Grace',
-			description: 'You ignite a foe with holy radiance, rewarding allies who attack them.',
+			name: 'Маяк благодаті',
+			description: 'Ви підпалюєте ворога священним сяйвом, винагороджуючи союзників, які атакують його.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -1020,116 +1020,116 @@ Divine power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '8 + I holy damage',
-						tier2: '13 + I holy damage',
-						tier3: '17 + I holy damage'
+						tier1: '8 + І священної шкоди',
+						tier2: '13 + І священної шкоди',
+						tier3: '17 + І священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever you or any ally damages the target using an ability, that creature can spend a Recovery. If the target is reduced to 0 Stamina before the end of the encounter, you can use a free triggered action to move this effect to another creature within distance.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі кожного разу, коли ви або будь-який союзник завдає шкоди цілі за допомогою здатності, та істота може витратити Відновлення. Якщо ціль буде зведена до 0 Витривалості до кінця зустрічі, ви можете використати безкоштовну тригерну дію, щоб перемістити цей ефект на іншу істоту в межах дистанції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-22',
-			name: 'Penance',
-			description: '“If you won’t kneel, the gods will make you.”',
+			name: 'Покаяння',
+			description: '«Якщо ти не вклонешся, боги змусять тебе.»',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '4 corruption damage; I < [weak], prone and can’t stand (save ends)',
-					tier2: '7 corruption damage; I < [average], prone and can’t stand (save ends)',
-					tier3: '11 corruption damage; I < [strong], prone and can’t stand (save ends)'
+					tier1: '4 шкоди скверною; І < [weak], повалений і не може встати (рят. кидок припиняє)',
+					tier2: '7 шкоди скверною; І < [average], повалений і не може встати (рят. кидок припиняє)',
+					tier3: '11 шкоди скверною; І < [strong], повалений і не може встати (рят. кидок припиняє)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-23',
-			name: 'Sanctuary',
-			description: 'You send yourself or an ally to a divine manifold to instantaneously regain health.',
+			name: 'Святилище',
+			description: 'Ви відсилаєте себе або союзника до божественного порталу, щоб миттєво відновити здоров’я.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target is removed from the encounter map until the start of their next turn and can spend any number of Recoveries. At the start of their turn, the target reappears in the space they left or the nearest unoccupied space of their choice.')
+				FactoryLogic.createAbilitySectionText('Ціль видаляється з карти зустрічі до початку їхнього наступного ходу і може витратити будь-яку кількість Відновлень. На початку їхнього ходу ціль з’являється в клітині, яку покинула, або в найближчій незайнятій клітині за її вибором.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-24',
-			name: 'Vessel of Retribution',
-			description: 'You infuse yourself or an ally with the retributive energy of the gods, waiting to be unleashed.',
+			name: 'Посудина відплати',
+			description: 'Ви наповнюєте себе або союзника відплатною енергією богів, готовою до звільнення.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The first time the target is dying or winded before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.')
+				FactoryLogic.createAbilitySectionText('Вперше, коли ціль опиняється вмираючою або захеканою до кінця зустрічі, кожен ворог у межах 5 клітин від неї отримує 15 священної шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-25',
-			name: 'Arise!',
-			description: 'Your deity rewards you or an ally on the verge of defeat with a miracle burst of strength and resolve.',
+			name: 'Встань!',
+			description: 'Ваше божество винагороджує вас або союзника на межі поразки чудесним сплеском сили і рішучості.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone. Additionally, at the start of each of their turns until the end of the encounter or until they are dying, the target gains 3 surges.')
+				FactoryLogic.createAbilitySectionText('Ціль може витратити будь-яку кількість Відновлень, може завершити будь-які ефекти на собі, які завершуються рят. кидком або наприкінці її ходу, і може встати, якщо лежить. Крім того, на початку кожного її ходу до кінця зустрічі або поки вона не опиниться вмираючою, ціль отримує 3 сплески.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-26',
-			name: 'Blessing of Steel',
-			description: 'A protective aura defends your allies from harm.',
+			name: 'Благословення сталі',
+			description: 'Захисна аура оберігає ваших союзників від шкоди.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, any ability roll made against a target takes a bane and each target has damage immunity 5.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі будь-який кидок здатності, зроблений проти цілі, отримує bane, а кожна ціль має імунітет до шкоди 5.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-27',
-			name: 'Blessing of the Blade',
-			description: '“The power of the gods is within you, friends. Allow me to unleash it.”',
+			name: 'Благословення клинка',
+			description: '«Сила богів у вас, друзі. Дозвольте мені її звільнити.»',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('At the end of each of your turns until the end of the encounter or until you are dying, each target gains 3 surges.')
+				FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу до кінця зустрічі або доки ви не опинитесь вмираючим, кожна ціль отримує 3 сплески.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'conduit-ability-28',
-			name: 'Drag the Unworthy',
-			description: 'You conjure an angel who moves a foe and heals your allies.',
+			name: 'Притягнути негідних',
+			description: 'Ви викликаєте ангела, який пересуває ворога і лікує ваших союзників.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: '9 + I holy damage; slide 3',
-						tier2: '13 + I holy damage; slide 4',
-						tier3: '17 + I holy damage; slide 6'
+						tier1: '9 + І священної шкоди; зсув 3',
+						tier2: '13 + І священної шкоди; зсув 4',
+						tier3: '17 + І священної шкоди; зсув 6'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each ally the target comes adjacent to during the forced movement can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('Кожен союзник, до якого ціль наближається під час примусового переміщення, може витратити Відновлення.')
 			]
 		})
 	],

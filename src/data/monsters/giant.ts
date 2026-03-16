@@ -80,7 +80,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 				cost: 3,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionText('A giant unearths a structure, hazard, or chunk of the encounter map and launches it to fill the area. Each target makes an **Agility test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -365,7 +365,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 							FactoryLogic.distance.createMelee(3),
 							FactoryLogic.distance.createRanged(12)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -398,7 +398,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 						],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pushed up to 3 squares, or if they have A<3, they are pushed up to 6 squares and knocked prone.')
 						]
@@ -472,7 +472,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createRanged(6)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -989,7 +989,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -1008,7 +1008,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy in the area',
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must make either a **Might** or **Agility** test.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1102,7 +1102,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

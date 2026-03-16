@@ -40,7 +40,7 @@ export const fire: SubClass = {
 						type: FactoryLogic.type.createTrigger('The target force moves a creature or object.'),
 						keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The forced movement distance gains a bonus equal to your Reason score.'),
 							FactoryLogic.createAbilitySectionSpend({

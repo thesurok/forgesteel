@@ -102,7 +102,7 @@ It is whispered that, with the Life Oath broken, it is not a matter of 'if' but 
 							type: FactoryLogic.type.createMain(),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Melee],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
@@ -186,7 +186,7 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 							type: FactoryLogic.type.createTrigger('The first time in an encounter a creature deals damage to you that leaves you dying', { free: true }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
@@ -281,7 +281,7 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 							type: FactoryLogic.type.createMain(),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each enemy in the area',
+							target: 'Кожен ворог у зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
@@ -403,7 +403,7 @@ Additionally, you add your level to project rolls to craft projects and whenever
 							AbilityKeyword.Ranged
 						],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target gains two surges.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -433,7 +433,7 @@ Additionally, you add your level to project rolls to craft projects and whenever
 							AbilityKeyword.Ranged
 						],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -666,7 +666,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Strike
 			],
 			distance: [FactoryLogic.distance.createRanged(5)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -690,7 +690,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Magic
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -714,7 +714,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Magic
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -769,7 +769,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Strike
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -798,7 +798,7 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
 			],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -823,7 +823,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Strike
 			],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -848,7 +848,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -874,7 +874,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Magic
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You gain 2 surges and each target takes lightning damage equal to twice your Reason score. Until the start of your next turn, any creature within 2 squares that strikes you takes lightning damage equal to twice your Reason score.')
@@ -891,7 +891,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -944,7 +944,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Strike
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -968,7 +968,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Magic
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
-			target: 'Each enemy in the area',
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1054,7 +1054,7 @@ You can target yourself instead of one creature with this ability. Each target g
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You envelop the target in a number of layers of protective shielding equal to twice your Reason score. Each layer provides the target a cumulative damage immunity 1 for each layer. Whenever the target is attacked, they lose 1 layer. Whenever the target loses a layer, they can spend a recovery or end an effect that is ended by a saving throw or ends at the end of their turn. At the start of each of their turns, the target can choose to lose one or more layers as a free maneuver.')
@@ -1070,7 +1070,7 @@ You can target yourself instead of one creature with this ability. Each target g
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target becomes invisible and hidden, even if observed, until they use an ability. Until the end of the encounter or you are dying, the target may use a free maneuver once on their turn to regain the effects of this ability.')
@@ -1086,7 +1086,7 @@ You can target yourself instead of one creature with this ability. Each target g
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, the target gains a +3 bonus to speed, their movement doesn’t provoke opportunity attacks, and they can’t be slowed or dazed. If the target is slowed or dazed, those conditions end for them. Additionally, during their turn, the target can choose to take an additional main action. If they do, this effect ends at the end of that turn.')
@@ -1102,7 +1102,7 @@ You can target yourself instead of one creature with this ability. Each target g
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Себе або одного союзника',
+			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
@@ -1242,7 +1242,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon
 															],
 															distance: [FactoryLogic.distance.createMelee()],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('2 + M damage; until the end of your next turn, enemies are weakened while adjacent to the servitor.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1339,7 +1339,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon
 															],
 															distance: [FactoryLogic.distance.createMelee()],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('2 + A damage; M< [average], prone.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1436,7 +1436,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Magic
 															],
 															distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 })],
-															target: 'Each enemy in the area',
+															target: 'Кожен ворог у зоні',
 															sections: [
 																FactoryLogic.createAbilitySectionText('M damage of the attuned damage type (see Attuned).'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1538,7 +1538,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Magic
 															],
 															distance: [FactoryLogic.distance.createMelee()],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('3 + M lightning damage; I < [average], dazzled (EoT)'),
 																FactoryLogic.createAbilitySectionField({
@@ -1639,7 +1639,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Ranged
 															],
 															distance: [FactoryLogic.distance.createRanged(5)],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('2 + M damage and the next ability roll made against the target has an edge.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1736,7 +1736,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon
 															],
 															distance: [FactoryLogic.distance.createMelee(3)],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('M damage; pull 3; if the target is pulled adjacent to the servitor, they are M < [average] grabbed'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1833,7 +1833,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon
 															],
 															distance: [FactoryLogic.distance.createMelee()],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('3 + M damage; push 2.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1930,7 +1930,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon
 															],
 															distance: [FactoryLogic.distance.createMelee()],
-															target: 'One creature or object',
+															target: 'Одна істота або предмет',
 															sections: [
 																FactoryLogic.createAbilitySectionText('3 + M damage; the servitor is invisible to the enemy until the end of the servitor’s next turn or the servitor deals damage to the enemy.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -2006,7 +2006,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 									AbilityKeyword.Ranged
 								],
 								distance: [FactoryLogic.distance.createSpecial('Special')],
-								target: 'Себе або одного союзника',
+								target: 'На себе або одного союзника',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Your servitor can shift its speed toward the target. If the servitor ends this movement adjacent to the target, it can swap places with the target, become the target of the triggering attack, and reduce the damage by half.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -2100,7 +2100,7 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 												AbilityKeyword.Servitor
 											],
 											distance: [FactoryLogic.distance.createMelee()],
-											target: 'One creature or object',
+											target: 'Одна істота або предмет',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
@@ -2216,7 +2216,7 @@ You choose one of the following benefits:
 									AbilityKeyword.Ranged
 								],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Before the damage is applied, the target gains damage immunity or weakness (your choice) to one of the following damage types: acid, cold, fire, lightning, poison, or sonic equal to your Reason score (save ends). The triggering damage is then changed to that same damage type.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -2280,7 +2280,7 @@ As a maneuver, you can expend project points from the stone and craft any consum
 												AbilityKeyword.Ranged
 											],
 											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-											target: 'Each enemy in the area',
+											target: 'Кожен ворог у зоні',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
@@ -2308,7 +2308,7 @@ As a maneuver, you can expend project points from the stone and craft any consum
 												AbilityKeyword.Magic
 											],
 											distance: [],
-											target: 'Себе або одного союзника',
+											target: 'На себе або одного союзника',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('The target can spend a recovery, and gains regeneration that lasts until the end of the encounter. While the target has this regeneration, at the start of each of their turns, they gains temporary stamina equal to your Reason score and can spend a Recovery. Additionally, they can’t be made bleeding, even while dying.')
@@ -2506,7 +2506,7 @@ During a respite, you are able to create a number of experimental devices equal 
 									AbilityKeyword.Ranged
 								],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'Себе або одного союзника',
+								target: 'На себе або одного союзника',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You can apply the effect of an additional experimental device to the triggering ability, even if the target doesn’t have the associated device.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -2755,7 +2755,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -2818,7 +2818,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -2922,7 +2922,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -3060,7 +3060,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -3250,7 +3250,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createMelee()],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								cost: 1,
 								sections: [
 									FactoryLogic.createAbilitySectionText('When using this ability, choose one of the Enweave effects, ignoring the component that changes the damage type of your next strike. You brand your target with a rune imbued by the effect you chose, priming it for detonation. At the end of your turn, the rune is primed. When a rune is primed, the next time the branded target is damaged, the rune detonates, applying its effect to every enemy within range 2 of it. If the branded effect already has an area, it is increased by 2 instead. If the branded effect has a push effect, it is relative to the branded target’s location.'),
@@ -3269,7 +3269,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 								type: FactoryLogic.type.createTrigger('The target moves'),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'One enemy',
+								target: 'Один ворог',
 								sections: [
 									FactoryLogic.createAbilitySectionText('The target takes damage equal to triple your Reason score.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -3406,7 +3406,7 @@ Choose a modified form for your Soulblade, each granting a distinct effect until
 								type: FactoryLogic.type.createTrigger('A creature deals damage to the target.'),
 								keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 								distance: [FactoryLogic.distance.createRanged(5)],
-								target: 'Себе або одного союзника',
+								target: 'На себе або одного союзника',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You can shift a number of squares equal to your Reason score. If the target is you, or if you end this shift adjacent to the target, the target takes half the damage.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -3749,7 +3749,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'One enemy',
+						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You curse the target, causing them to have a bane on their next power roll before the end of their next turn.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -3923,7 +3923,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -3944,7 +3944,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -4084,7 +4084,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -4149,7 +4149,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One creature or object',
+			target: 'Одна істота або предмет',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -4312,7 +4312,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 								type: FactoryLogic.type.createMain(),
 								keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								cost: 'signature',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
@@ -4400,7 +4400,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 					type: FactoryLogic.type.createTrigger('A creature damages you with a rolled ability.', { free: true }),
 					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One enemy',
+					target: 'Один ворог',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionText('The target obtains a tier 1 result on the power roll against you. You can add one additional target within the range or area to the ability, including enemies or the target themself. Then, roll power.'),
@@ -4618,7 +4618,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 								type: FactoryLogic.type.createMain(),
 								keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 								distance: [FactoryLogic.distance.createMelee(2)],
-								target: 'One creature or object',
+								target: 'Одна істота або предмет',
 								cost: 'signature',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
@@ -4643,7 +4643,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 								type: FactoryLogic.type.createTrigger('An enemy starts or ends their turn.'),
 								keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'One enemy',
+								target: 'Один ворог',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You slide the target a number of squares up to your Presence score.')
 								]

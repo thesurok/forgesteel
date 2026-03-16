@@ -26,7 +26,7 @@ export const beastheart: HeroClass = {
 	subclassName: 'Дика природа',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Intuition ]
+		[Characteristic.Might, Characteristic.Intuition]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -67,11 +67,11 @@ export const beastheart: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-1-1a',
-					selected: [ 'Догляд за тваринами' ]
+					selected: ['Догляд за тваринами']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-1-1b',
-					listOptions: [ SkillList.Exploration, SkillList.Intrigue ],
+					listOptions: [SkillList.Exploration, SkillList.Intrigue],
 					count: 2
 				}),
 				FactoryLogic.feature.createSummonChoice({
@@ -85,7 +85,7 @@ export const beastheart: HeroClass = {
 								name: 'Василіск',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5),
@@ -102,7 +102,7 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-1-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'beastheart-1-2a-1-3',
@@ -120,7 +120,7 @@ export const beastheart: HeroClass = {
 											name: 'Перетворення на камінь',
 											description: 'Під впливом магічного погляду або отруйних кігтів василіска тіло ворога починає кам’яніти.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 											distance: [
 												FactoryLogic.distance.createMelee(),
 												FactoryLogic.distance.createRanged(5)
@@ -172,7 +172,7 @@ export const beastheart: HeroClass = {
 								name: 'Біл',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -189,11 +189,11 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-2-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-2-3',
-										selected: [ 'Intimidate' ]
+										selected: ['Intimidate']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -201,8 +201,8 @@ export const beastheart: HeroClass = {
 											name: 'Backhand',
 											description: 'The bear casually swats the pesky foe into next week.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
 												FactoryLogic.createAbilitySectionText('3 + M damage; push 2'),
@@ -250,7 +250,7 @@ export const beastheart: HeroClass = {
 								name: 'Boar',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5),
@@ -267,11 +267,11 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-3-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-3-3',
-										selected: [ 'Search' ]
+										selected: ['Search']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -279,8 +279,8 @@ export const beastheart: HeroClass = {
 											name: 'Gore',
 											description: 'With an enraged snort, the boar lunges forward to rip open foes with their tusks.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
 												FactoryLogic.createAbilitySectionText('The boar moves up to their speed in a straight line, and can then deal 2 + M damage to an adjacent target. If the boar moved closer to the target as part of this ability’s movement, the boar deals extra damage equal to their Might score.'),
@@ -328,7 +328,7 @@ export const beastheart: HeroClass = {
 								name: 'Condor',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7, 'fly'),
@@ -345,11 +345,11 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-4-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-4-3',
-										selected: [ 'Alertness' ]
+										selected: ['Alertness']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -357,8 +357,8 @@ export const beastheart: HeroClass = {
 											name: 'Flurry of Wings',
 											description: 'I can’t draw a bead on them with that infernal bird flapping in my face!',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M damage; until the end of your next turn, enemies are weakened while adjacent to the condor.'),
@@ -406,7 +406,7 @@ export const beastheart: HeroClass = {
 								name: 'Deinonychus',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7),
@@ -423,11 +423,11 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-5-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-5-3',
-										selected: [ 'Track' ]
+										selected: ['Track']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -435,8 +435,8 @@ export const beastheart: HeroClass = {
 											name: 'Terrible Claw',
 											description: 'The deinonychus kicks their prey, slashing them with their wicked claws.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M damage; bleeding (EoT)'),
@@ -484,7 +484,7 @@ export const beastheart: HeroClass = {
 								name: 'Drake',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -501,7 +501,7 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-6-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -509,8 +509,8 @@ export const beastheart: HeroClass = {
 											name: 'Drake Breath',
 											description: 'The drake exhales a blast of flesh-melting energy.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Area ],
-											distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 1 }) ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Area],
+											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 1 })],
 											target: 'Each creature in the area',
 											sections: [
 												FactoryLogic.createAbilitySectionText('M damage of the attuned damage type (see Elementally Attuned)'),
@@ -567,7 +567,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 								name: 'Gummy Ball',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5),
@@ -584,7 +584,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-7-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'beastheart-1-2a-7-3',
@@ -602,8 +602,8 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											name: 'Absorb',
 											description: 'With a sickening squelch, the sphere oozes around their hapless prey.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M acid damage; A < [average], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
@@ -661,7 +661,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 								name: 'Hellhound',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7),
@@ -678,7 +678,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-8-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'beastheart-1-2a-8-3',
@@ -692,7 +692,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-8-4',
-										selected: [ 'Intimidate' ]
+										selected: ['Intimidate']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -700,8 +700,8 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											name: 'Fire Breath',
 											description: 'The hellhound exhales infernal flames.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee ],
-											distance: [ FactoryLogic.distance.createMelee(2) ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee],
+											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'Один іншій',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M fire damage'),
@@ -749,7 +749,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 								name: 'Lightbender',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(7),
@@ -766,11 +766,11 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-9-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-9-3',
-										selected: [ 'Hide' ]
+										selected: ['Hide']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -778,8 +778,8 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											name: 'Sparkling Tail Whip',
 											description: 'The lightbender swings their tail, sending gouts of sparks in their foe’s face.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
@@ -830,7 +830,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								name: 'Panther',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -847,11 +847,11 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-10-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-10-3',
-										selected: [ 'Sneak' ]
+										selected: ['Sneak']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -859,8 +859,8 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											name: 'Pounce',
 											description: 'The panther bunches themself up and then uncoils into a deadly leap.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M damage; M < [average], prone'),
@@ -908,7 +908,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								name: 'Spider',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -925,11 +925,11 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-11-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-11-3',
-										selected: [ 'Sneak' ]
+										selected: ['Sneak']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -937,8 +937,8 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											name: 'Web Shot',
 											description: 'The spider fires a ball of sticky silk.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createRanged(5) ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('M < [average], restrained (EoT)'),
@@ -986,7 +986,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								name: 'Sporeling',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(5),
@@ -1003,7 +1003,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-12-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'beastheart-1-2a-12-3',
@@ -1017,7 +1017,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-12-4',
-										selected: [ 'Hide' ]
+										selected: ['Hide']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1025,8 +1025,8 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											name: 'Spore Puff',
 											description: 'The sporeling breathes a cloud of disorienting fumes.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M poison damage; the sporeling is invisible to the enemy until the end of the sporeling’s next turn or the sporeling deals damage to the enemy.'),
@@ -1074,7 +1074,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								name: 'Wolf',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
-								keywords: [ 'Тварина' ],
+								keywords: ['Тварина'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7),
@@ -1091,11 +1091,11 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createBonus({
 										id: 'beastheart-1-2a-13-2',
 										field: FeatureField.FreeStrikeDamage,
-										valueCharacteristics: [ Characteristic.Might ]
+										valueCharacteristics: [Characteristic.Might]
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-13-3',
-										selected: [ 'Track' ]
+										selected: ['Track']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1103,8 +1103,8 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											name: 'Clamping Jaws',
 											description: 'With an unnerving growl, the wolf sinks powerful teeth onto their quarry.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M damage; M < [average], grabbed'),
@@ -1184,8 +1184,8 @@ You and your companion each have separate move actions. You have one triggered a
 						name: 'Heart of the Beast',
 						description: '“Better look away, this might not be pretty.”',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You spend a Recovery as your partner rips their way out of your chest or climbs from your unnaturally wide jaws. Your partner teleports to your space over any distance, even if they don’t have line of effect to you. Your partner gains temporary Stamina equal to their recovery value.'),
@@ -1205,8 +1205,8 @@ You and your companion each have separate move actions. You have one triggered a
 						name: 'Feral Strike',
 						description: 'Your companion lunges into the fray, attacking wildly with teeth, claws, or other weapons.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Один ворог',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Before taking this action, your companion moves a number of squares equal to their Intuition score straight toward the closest enemy they are aware of, avoiding damaging terrain and ending the movement when they are adjacent to an enemy. If they are within distance of the enemy at the end of this movement, they make the following power roll.'),
@@ -1243,7 +1243,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'beastheart-1-6a',
-					types: [ 'Beastheart' ]
+					types: ['Beastheart']
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-1-6b',
@@ -1275,7 +1275,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-2-1',
 					name: 'Perk',
-					lists: [ PerkList.Exploration, PerkList.Intrigue, PerkList.Interpersonal ]
+					lists: [PerkList.Exploration, PerkList.Intrigue, PerkList.Interpersonal]
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-2-2',
@@ -1318,7 +1318,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 					tag: 'deal-damage-self 2',
 					trigger: 'The first time in a round that you deal damage',
 					value: '2',
-					replacesTags: [ 'deal-damage-self' ]
+					replacesTags: ['deal-damage-self']
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'beastheart-4-4b',
@@ -1326,7 +1326,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 					tag: 'deal-damage-companion 2',
 					trigger: 'The first time in a round that your companion deals damage',
 					value: '2',
-					replacesTags: [ 'deal-damage-companion' ]
+					replacesTags: ['deal-damage-companion']
 				})
 			]
 		},
@@ -1345,7 +1345,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-6-1',
 					name: 'Perk',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -1383,7 +1383,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 +1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-7-3'
@@ -1412,11 +1412,11 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-9-1b',
-					selected: [ 'Nature' ]
+					selected: ['Nature']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-9-1c',
-					listOptions: [ SkillList.Lore ]
+					listOptions: [SkillList.Lore]
 				})
 			]
 		},
@@ -1439,12 +1439,12 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 					tag: 'start 3',
 					trigger: 'Start of your turn',
 					value: '1d3 +2',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-10-3',
 					name: 'Perk',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'beastheart-10-4',
@@ -1472,7 +1472,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Burning Rage',
 			description: 'Lances of primordial energy leap from you and your companion to sear, crush, or freeze your foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1496,8 +1496,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Covering Fire',
 			description: 'Keep your head down or I’ll shoot it off!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(5) ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(5)],
 			target: 'Один ворог',
 			cost: 'signature',
 			sections: [
@@ -1517,7 +1517,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Scatter!',
 			description: 'You launch a flurry of attacks and then retreat.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1541,8 +1541,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Tag Me In',
 			description: 'Drawing on your primordial magic, you magically switch places with an ally, giving them a breather while you deliver a surprise attack.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один іншій',
 			cost: 'signature',
 			sections: [
@@ -1562,8 +1562,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Herd the Sheep',
 			description: 'Your companion circles your foe, luring them out of position with fake openings and unpredictable attacks.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 3,
 			sections: [
@@ -1583,8 +1583,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'High and Low',
 			description: 'You and your companion surround your foe in order to bring them down.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один іншій',
 			cost: 3,
 			sections: [
@@ -1604,8 +1604,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Hungry like the Wolf',
 			description: 'The enemy’s blood flows like wine, invigorating your companion.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 3,
 			sections: [
@@ -1624,9 +1624,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Mighty Roar',
 			description: 'Your companion unleashes a shattering roar, screech, or howl that terrifies your foes—or at least gets their attention.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1647,7 +1647,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Bloodlust Strike',
 			description: 'Invigorated by the smell of blood, you strike a savage blow.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1671,9 +1671,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Bring it On!',
 			description: 'Let all of them come forward and shatter yourselves against your might!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Beastheart ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You can spend a Recovery. Each enemy in the area is taunted (EoT). You gain 3 temporary Stamina for each enemy in the area.'),
@@ -1687,9 +1687,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Friendly Fire',
 			description: 'As your arrows rain down on your foes, flames spiral around your companion, setting the arrows ablaze.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
+			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1708,8 +1708,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Unfair Advantage',
 			description: 'The wilderness has no concept of fair play.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 5,
 			sections: [
@@ -1729,8 +1729,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Heart Eater',
 			description: 'Bones crack as a bloody figure leaps from your foe’s corpse.',
 			type: FactoryLogic.type.createTrigger('You use an ability that reduces the creature to 0 Stamina.'),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Один ворог',
 			cost: 7,
 			sections: [
@@ -1750,8 +1750,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Heedless Headbutt',
 			description: 'Your bloody forehead smash drives your companion into a frenzy.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 7,
 			sections: [
@@ -1771,7 +1771,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Primordial Jaws',
 			description: 'The spectral jaws of a trap clamp on a foe, chaining them to you and draining their life essence.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1795,7 +1795,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Setup Strike',
 			description: 'Your attack sets up a vicious combo.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1819,8 +1819,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Dogpile',
 			description: 'You and your allies surround your enemy like a pack of wolves, mobbing them and pulling them down.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 9,
 			sections: [
@@ -1840,8 +1840,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Hunter\'s Mercy',
 			description: 'You take a single shot that ends your quarry’s life.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(15) ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(15)],
 			target: 'Один іншій',
 			cost: 9,
 			sections: [
@@ -1861,8 +1861,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Massive Throw',
 			description: 'You can bear impossible burdens with the aid of your companion.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 9,
 			sections: [
@@ -1882,8 +1882,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Rend in Two',
 			description: 'In a gruesome display, you and your companion rip off a pinioned enemy’s limb or other body part and toss it away.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Один ворог',
 			cost: 9,
 			sections: [
@@ -1903,7 +1903,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Bloodied Blade and Claw',
 			description: 'Driven by the pain and desperation of battle, you and your companion spend your last strength in a flurry of wild attacks.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -1927,9 +1927,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Burn the World to Ash',
 			description: 'Wrenching power from your primordial bond, you unleash elemental power in a devastating conflagration that you can’t control.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1952,8 +1952,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Double Trouble',
 			description: 'Your enemies might be stronger than you, but that’s why you’re not here alone.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Beastheart],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
@@ -1965,7 +1965,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			name: 'Life-Drinking Wound',
 			description: 'As your attack strikes home, your enemy’s escaping life force drifts to your allies in crimson threads.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)

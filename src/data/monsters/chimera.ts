@@ -76,7 +76,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 			name: 'Chimera',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Beast', 'Chimera' ],
+			keywords: ['Beast', 'Chimera'],
 			encounterValue: 60,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10, 'fly'),
@@ -91,7 +91,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'chimera-feature-2',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 })]
 				}),
 				FactoryLogic.feature.create({
 					id: 'chimera-feature-4',
@@ -103,8 +103,8 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-5',
 						name: 'Bite',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -123,9 +123,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-6',
 						name: 'Dragon’s Eruption',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -142,9 +142,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-7',
 						name: 'Roar',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -161,9 +161,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-8',
 						name: 'Lion’s Toss',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature or object',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -179,8 +179,8 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-9',
 						name: 'Ram’s Defiance',
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against the chimera and obtains a tier 1 outcome.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chimera shifts up to 5 squares. If they end this shift within distance of the target, make a power roll.'),
@@ -198,9 +198,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-10',
 						name: 'Overture of Destruction',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect** The chimera can use Bite and Lion’s Toss against each target.')
 						]
@@ -211,7 +211,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-11',
 						name: 'Fire Solo',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect** The chimera uses Dragon’s Eruption and Roar without spending Malice.')
@@ -223,7 +223,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						id: 'chimera-feature-12',
 						name: 'Chorus of Destruction',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect** The chimera uses Roar, then shifts up to their speed and can make a free strike against each enemy who comes adjacent to them during the shift. When the chimera ends this shift, they use Dragon’s Eruption. The use of these abilities as part of this villain action costs no Malice.')

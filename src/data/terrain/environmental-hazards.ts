@@ -445,7 +445,7 @@ export const quicksand: Terrain = {
 						type: FactoryLogic.type.createTrigger('A creature or object enters the quicksand or starts their turn there.', { free: true }),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(0)],
-						target: 'One creature or object',
+						target: 'Одна істота або предмет',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

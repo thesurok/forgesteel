@@ -43,7 +43,7 @@ export const voidSubclass: SubClass = {
 						type: FactoryLogic.type.createTrigger('The target starts their turn, moves, or is force moved.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Себе або одного союзника',
+						target: 'На себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport the target up to a number of squares equal to your Reason score. If the target moves to trigger this ability, you can teleport them at any point during the move.'),
 							FactoryLogic.createAbilitySectionSpend({

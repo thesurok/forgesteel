@@ -91,7 +91,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 			name: 'Thorn Dragon',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Dragon', 'Elemental' ],
+			keywords: ['Dragon', 'Elemental'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(8, 'fly'),
@@ -102,7 +102,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'dragon-thorn-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 5 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'dragon-thorn-feature-2',
@@ -119,8 +119,8 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-5',
 						name: 'Virulent Breath',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
 						target: 'Each enemy and object in the area',
 						cost: 'signature',
 						sections: [
@@ -140,8 +140,8 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-6',
 						name: 'Spinous Tail Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two enemies or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -167,9 +167,9 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-8',
 						name: 'Investiture of Verdure',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Each enemy in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Each target is pulled up to 5 squares toward the dragon, who gains 5 temporary Stamina for each target pulled.')
@@ -181,8 +181,8 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-9',
 						name: 'Prickly Situation',
 						type: FactoryLogic.type.createTrigger('A dragonsealed creature within distance ends the dragonsealed effect.', { free: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pulled up to 5 squares toward the dragon, and if they have A<2, they are restrained until the end of their next turn.')
@@ -195,7 +195,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						name: 'Thorny Scales',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the dragon with a melee strike.', { free: true }),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon makes a free strike against the target, and if the target has M<2, they are bleeding until the end of their next turn.')
@@ -212,8 +212,8 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-12',
 						name: 'Briar Bindings',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 						target: 'All enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -230,7 +230,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-13',
 						name: 'Thorned Armor',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The thorns upon the dragon’s scales grow longer and sharper. Until the end of the encounter, any adjacent creature who targets the dragon with a melee strike takes 3 damage. The dragon then uses their Provoking Nettles ability.')
@@ -242,7 +242,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						id: 'dragon-thorn-feature-14',
 						name: 'Malign Thicket',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature force moved by the dragon takes 1d3 poison damage, and if they have M<2, they are weakened (save ends).

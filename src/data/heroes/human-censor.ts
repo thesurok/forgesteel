@@ -783,7 +783,7 @@ export const humanCensor = {
 										qualifier: ''
 									}
 								],
-								target: 'One enemy',
+								target: 'Один ворог',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -947,7 +947,7 @@ export const humanCensor = {
 										qualifier: ''
 									}
 								],
-								target: 'Себе або одного союзника',
+								target: 'На себе або одного союзника',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1548,7 +1548,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1660,7 +1660,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1714,7 +1714,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1772,7 +1772,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1830,7 +1830,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1889,7 +1889,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature or object',
+				target: 'Одна істота або предмет',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2253,7 +2253,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2298,7 +2298,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2343,7 +2343,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2388,7 +2388,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy in the area',
+				target: 'Кожен ворог у зоні',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2432,7 +2432,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Себе або одного союзника',
+				target: 'На себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3014,7 +3014,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3107,7 +3107,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3171,7 +3171,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Себе або одного союзника',
+														target: 'На себе або одного союзника',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3472,7 +3472,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Себе або одного союзника',
+														target: 'На себе або одного союзника',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3528,7 +3528,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Себе або одного союзника',
+														target: 'На себе або одного союзника',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3686,7 +3686,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Each enemy in the area',
+														target: 'Кожен ворог у зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,

@@ -1438,7 +1438,7 @@ export class ComplicationData {
 					type: FactoryLogic.type.createManeuver({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
 					keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One creature or object',
+					target: 'Одна істота або предмет',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
@@ -1914,7 +1914,7 @@ export class ComplicationData {
 					type: FactoryLogic.type.createManeuver(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-					target: 'Each enemy in the area',
+					target: 'Кожен ворог у зоні',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ваш нашийник вірності детонує, завдаючи вогняної шкоди, рівної 5 плюс ваш рівень, кожній цілі. Після використання цієї здібності ви не можете застосувати її знову, поки не проведете 1 хвилину поза боєм на скидання нашийника.')
 					]
@@ -1982,7 +1982,7 @@ export class ComplicationData {
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One creature or object',
+					target: 'Одна істота або предмет',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
