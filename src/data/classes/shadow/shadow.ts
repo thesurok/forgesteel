@@ -21,7 +21,7 @@ As a shadow, you possess abilities that deal significant damage, enable you to m
 	subclassName: 'Shadow College',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Agility ]
+		[Characteristic.Agility]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -62,12 +62,12 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-1',
 					count: 2,
-					selected: [ 'Hide', 'Sneak' ]
+					selected: ['Hide', 'Sneak']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-3',
-					options: [ 'Criminal Underworld' ],
-					listOptions: [ SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue ],
+					options: ['Criminal Underworld'],
+					listOptions: [SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue],
 					count: 5
 				}),
 				FactoryLogic.feature.createAbility({
@@ -76,7 +76,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 						name: 'Hesitation Is Weakness',
 						description: 'Keep up the attack. Never give them a moment’s grace.',
 						type: FactoryLogic.type.createTrigger('Another hero ends their turn. That hero can’t have used this ability to start their turn.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						cost: 1,
 						sections: [
@@ -106,7 +106,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'shadow-2-1',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -119,8 +119,8 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 						name: 'Careful Observation',
 						description: 'A moment of focus leaves a foe firmly in your sights.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSpecial('20 squares') ],
-						target: 'One creature',
+						distance: [FactoryLogic.distance.createSpecial('20 squares')],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('As long as you remain within distance of the target, maintain line of effect to them, and strike no other creature first, you gain a surge and an edge on the next strike you make against the assessed creature.')
 						]
@@ -197,9 +197,9 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 						name: 'Night Watch',
 						description: 'A steely dagger from out of the blue knocks another weapon off course.',
 						type: FactoryLogic.type.createTrigger('The target takes damage from another creature’s ability while you are hidden.'),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes half the damage. You remain hidden.')
 						]
@@ -210,7 +210,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-4-5',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ],
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore],
 					count: 1
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
@@ -219,7 +219,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 					tag: 'deal-damage 2',
 					trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
 					value: '2',
-					replacesTags: [ 'deal-damage' ]
+					replacesTags: ['deal-damage']
 				})
 			]
 		},
@@ -293,11 +293,11 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 + 1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-7-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-7-4',
@@ -391,14 +391,14 @@ Outside of combat, you can have one clone active for every 2 Victories you have.
 					tag: 'deal-damage 3',
 					trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
 					value: '3',
-					replacesTags: [ 'deal-damage', 'deal-damage 2' ]
+					replacesTags: ['deal-damage', 'deal-damage 2']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'shadow-10-3'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-10-4',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-10-5',
@@ -438,14 +438,14 @@ Subterfuge remains until you spend it.`
 			name: 'Gasping in Pain',
 			description: 'Your precise strikes let your allies take advantage of a target’s agony.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 + A damage',
 						tier2: '5 + A damage',
 						tier3: '8 + A damage; I < [strong], prone'
@@ -459,17 +459,17 @@ Subterfuge remains until you spend it.`
 			name: 'I Work Better Alone',
 			description: 'It’s better, just you and me. Isn’t it?',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 + A damage',
 						tier2: '6 + A damage',
 						tier3: '9 + A damage'
@@ -483,7 +483,7 @@ Subterfuge remains until you spend it.`
 			name: 'Teamwork Has Its Place',
 			description: 'You attack an enemy as an ally exposes their weakness.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -493,7 +493,7 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 + A damage',
 						tier2: '6 + A damage',
 						tier3: '9 + A damage'
@@ -507,14 +507,14 @@ Subterfuge remains until you spend it.`
 			name: 'You Were Watching The Wrong One',
 			description: 'They can’t watch both of you at once.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 + A damage',
 						tier2: '5 + A damage',
 						tier3: '8 + A damage'
@@ -528,14 +528,14 @@ Subterfuge remains until you spend it.`
 			name: 'Disorienting Strike',
 			description: 'Your attack leaves them reeling, allowing you to follow up.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '4 + A damage; slide 2',
 						tier2: '6 + A damage; slide 3',
 						tier3: '10 + A damage; slide 5'
@@ -549,16 +549,16 @@ Subterfuge remains until you spend it.`
 			name: 'Eviscerate',
 			description: 'You leave your foe bleeding out after a devastating attack.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 + A damage; A < [weak], bleeding (save ends)',
 					tier2: '6 + A damage; A < [average], bleeding (save ends)',
 					tier3: '10 + A damage; A < [strong], bleeding (save ends)'
@@ -570,14 +570,14 @@ Subterfuge remains until you spend it.`
 			name: 'Get In Get Out',
 			description: 'Move unexpectedly, strike fast, and be gone!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '5 + A damage',
 						tier2: '8 + A damage',
 						tier3: '11 + A damage'
@@ -591,7 +591,7 @@ Subterfuge remains until you spend it.`
 			name: 'Two Throats At Once',
 			description: 'A bargain.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -600,7 +600,7 @@ Subterfuge remains until you spend it.`
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 damage',
 					tier2: '6 damage',
 					tier3: '10 damage'
@@ -612,16 +612,16 @@ Subterfuge remains until you spend it.`
 			name: 'Coup de Grâce',
 			description: 'Your blade might be the last thing they see.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '2d6 + 7 + A damage',
 					tier2: '2d6 + 11 + A damage',
 					tier3: '2d6 + 16 + A damage'
@@ -633,15 +633,15 @@ Subterfuge remains until you spend it.`
 			name: 'One Hundred Throats',
 			description: 'As you move across the battlefield, every foe within reach feels your wrath.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You shift up to your speed and make one power roll that targets up to three enemies who came adjacent to you during the move.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 damage',
 						tier2: '6 damage',
 						tier3: '9 damage'
@@ -654,13 +654,13 @@ Subterfuge remains until you spend it.`
 			name: 'Setup',
 			description: 'Your friends will thank you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(5) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(5)],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '6 + A damage; R < [weak], the target has damage weakness 5 (save ends)',
 					tier2: '9 + A damage; R < [average], the target has damage weakness 5 (save ends)',
 					tier3: '13 + A damage; R < [strong], the target has damage weakness 5 (save ends)'
@@ -672,8 +672,8 @@ Subterfuge remains until you spend it.`
 			name: 'Shadowstrike',
 			description: 'They have no idea what the college taught you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 5,
 			sections: [
@@ -685,7 +685,7 @@ Subterfuge remains until you spend it.`
 			name: 'Dancer',
 			description: 'You enter a flow state that makes you nearly impossible to pin down.',
 			type: FactoryLogic.type.createManeuver(),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -697,17 +697,17 @@ Subterfuge remains until you spend it.`
 			name: 'Misdirecting Strike',
 			description: 'Why are you looking at ME?!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '9 + A damage',
 						tier2: '13 + A damage',
 						tier3: '18 + A damage'
@@ -721,13 +721,13 @@ Subterfuge remains until you spend it.`
 			name: 'Pinning Shot',
 			description: 'One missile - placed well and placed hard.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(5) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(5)],
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '8 + A damage; A < [weak], restrained (save ends)',
 					tier2: '12 + A damage; A < [average], restrained (save ends)',
 					tier3: '16 + A damage; A < [strong], restrained (save ends)'
@@ -739,16 +739,16 @@ Subterfuge remains until you spend it.`
 			name: 'Staggering Blow',
 			description: 'There’s no recovering from this.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '7 + A damage; M < [weak], slowed (save ends)',
 					tier2: '11 + A damage; M < [average], prone and can’t stand (save ends)',
 					tier3: '16 + A damage; M < [strong], prone and can’t stand (save ends)'
@@ -760,8 +760,8 @@ Subterfuge remains until you spend it.`
 			name: 'Blackout',
 			description: 'You cause a plume of shadow to erupt from your eyes and create a cloud of darkness.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Self',
 			cost: 9,
 			sections: [
@@ -773,14 +773,14 @@ Subterfuge remains until you spend it.`
 			name: 'Into the Shadows',
 			description: 'You sweep your foe off their feet and plunge them into absolute darkness.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a power roll upon your return.'),
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '8 + A corruption damage',
 					tier2: '13 + A corruption damage',
 					tier3: '17 + A corruption damage'
@@ -792,13 +792,13 @@ Subterfuge remains until you spend it.`
 			name: 'Shadowfall',
 			description: 'You vanish. They fall. You reappear.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '10 damage',
 					tier2: '14 damage',
 					tier3: '20 damage'
@@ -812,16 +812,16 @@ Subterfuge remains until you spend it.`
 			name: 'You Talk Too Much',
 			description: 'Silence is a virtue. A knife pinning their mouth shut is the next best thing.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '10 + A damage; P < [weak], dazed (save ends)',
 					tier2: '15 + A damage; P < [average], dazed (save ends)',
 					tier3: '21 + A damage; P < [strong], dazed (save ends)'
@@ -835,7 +835,7 @@ Subterfuge remains until you spend it.`
 			name: 'Assassinate',
 			description: 'A practiced attack will instantly kill an already weakened foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
@@ -843,7 +843,7 @@ Subterfuge remains until you spend it.`
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '12 + A damage',
 					tier2: '18 + A damage',
 					tier3: '24 + A damage'
@@ -857,7 +857,7 @@ Subterfuge remains until you spend it.`
 			name: 'Shadowgrasp',
 			description: 'The shadows around you give way, allowing the shadow creature within you to grasp at your foes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 			],
@@ -865,7 +865,7 @@ Subterfuge remains until you spend it.`
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '11 corruption damage; A < [weak] , restrained (save ends)',
 					tier2: '16 corruption damage; A < [average] , restrained (save ends)',
 					tier3: '21 corruption damage; A < [strong] , restrained (save ends)'
@@ -878,7 +878,7 @@ Subterfuge remains until you spend it.`
 			name: 'Speed of Shadows',
 			description: 'You make multiple strikes against a foe before they even notice they’re dead.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic ],
+			keywords: [AbilityKeyword.Magic],
 			distance: [
 				FactoryLogic.distance.createSelf()
 			],
@@ -893,7 +893,7 @@ Subterfuge remains until you spend it.`
 			name: 'They Always Line Up',
 			description: 'You fire a projectile so fast that it passes through a line of foes, hamstringing them.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 5 })
 			],
@@ -901,7 +901,7 @@ Subterfuge remains until you spend it.`
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '12 damage; M < [weak] , slowed (save ends)',
 					tier2: '18 damage; M < [average] , slowed (save ends)',
 					tier3: '24 damage; M < [strong] , slowed (save ends)'

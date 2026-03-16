@@ -257,7 +257,7 @@ export const humanNull = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Kalliak' ]
+				selected: ['Kalliak']
 			}
 		},
 		languages: [],
@@ -1637,7 +1637,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2142,7 +2142,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2435,7 +2435,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2494,7 +2494,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2595,7 +2595,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and each ally in the area',
+				target: 'На себе і кожного союзника в зоні впливу',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2642,7 +2642,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2701,7 +2701,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2988,7 +2988,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3246,7 +3246,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3854,7 +3854,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4008,7 +4008,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4388,7 +4388,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

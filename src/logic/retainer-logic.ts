@@ -7,9 +7,9 @@ import { MonsterRoleType } from '@/enums/monster-role-type';
 
 export class RetainerLogic {
 	static getRetainerAdvancementFeatures = (level: number, role: MonsterRoleType, level4?: Feature, level7?: Feature, level10?: Feature): { level: number, feature: Feature }[] => {
-		const options4 = level4 ? [ level4 ] : [];
-		const options7 = level7 ? [ level7 ] : [];
-		const options10 = level10 ? [ level10 ] : [];
+		const options4 = level4 ? [level4] : [];
+		const options7 = level7 ? [level7] : [];
+		const options10 = level10 ? [level10] : [];
 
 		const std = RetainerLogic.getRetainerStandardAbilities(role);
 		if (std) {
@@ -192,13 +192,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-ambusher-4',
 							name: 'Go for the Jugular',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '5 шкоди; С < [слабкий], кровотеча (рят. кидок завершує)',
 									tier2: '9 шкоди; С < [середній], кровотеча (рят. кидок завершує)',
 									tier3: '12 шкоди; С < [сильний], кровотеча (рят. кидок завершує)'
@@ -211,16 +211,16 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-ambusher-7',
 							name: 'Hamstring Slice',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [
 								FactoryLogic.distance.createMelee(),
 								FactoryLogic.distance.createRanged(5)
 							],
-							target: 'One creature',
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 шкоди; С < [слабкий], сповільнений (до кінця ходу)',
 									tier2: '10 шкоди; С < [середній], сповільнений (рят. кидок завершує)',
 									tier3: '15 шкоди; С < [сильний], сповільнений і ціль не може використовувати тригерні дії (рят. кидок завершує)'
@@ -233,16 +233,16 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-ambusher-10',
 							name: 'Hold ’Em Down',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [
 								FactoryLogic.distance.createMelee(),
 								FactoryLogic.distance.createRanged(5)
 							],
-							target: 'One creature',
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '11 шкоди; якщо ціль розміру 1 або менша і має С < [слабкий], вона схоплена',
 									tier2: '16 шкоди; якщо ціль розміру 1 або менша і має С < [середній], вона схоплена',
 									tier3: '21 шкоди; якщо ціль розміру 1 або менша і має С < [сильний], вона схоплена'
@@ -259,8 +259,8 @@ export class RetainerLogic {
 							id: 'retainer-artillery-4',
 							name: 'Supporting Volley',
 							type: FactoryLogic.type.createTrigger('The retainer’s mentor makes a strike against a creature within distance.'),
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createRanged(5) ],
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'The triggering creature',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Ретейнер робить дальній безкоштовний удар по цілі.')
@@ -271,13 +271,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-artillery-7',
 							name: 'Line ‘Em Up',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
 							target: 'Each enemy in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 шкоди; С < [слабкий], розпластаний',
 									tier2: '11 шкоди; С < [середній], розпластаний',
 									tier3: '16 шкоди; С < [сильний], розпластаний'
@@ -289,13 +289,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-artillery-10',
 							name: 'Ricochet Shot',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createRanged(5) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'One creature or object',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '9 шкоди',
 									tier2: '14 шкоди',
 									tier3: '19 шкоди'
@@ -312,7 +312,7 @@ export class RetainerLogic {
 							id: 'retainer-brute-4',
 							name: 'Big Windup',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createSelf() ],
+							distance: [FactoryLogic.distance.createSelf()],
 							target: 'Self',
 							sections: [
 								FactoryLogic.createAbilitySectionText('До початку наступного ходу ретейнера удари по ретейнеру отримують перевагу. На початку наступного ходу ретейнера він отримує 2 сплески, а будь-яка здібність, яку він використає до кінця свого ходу і яка примушує переміщувати істоту, може перемістити цю істоту ще на 2 клітинки.')
@@ -323,13 +323,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-brute-7',
 							name: 'Overhand Swat',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '8 шкоди',
 									tier2: '13 шкоди; Відштовхування 2',
 									tier3: '16 шкоди; Відштовхування 3; С < [сильний], розпластаний'
@@ -342,13 +342,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-brute-10',
 							name: 'Dizzying Sweep',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 							target: 'Each creature in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '10 шкоди; Відштовхування 1',
 									tier2: '14 шкоди; Відштовхування 2',
 									tier3: '20 шкоди; Відштовхування 4'
@@ -364,13 +364,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-controller-4',
 							name: 'Elemental Blast',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 							target: 'Each creature in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '4 шкоди; Відштовхування 2',
 									tier2: '6 шкоди; Відштовхування 3',
 									tier3: '10 шкоди; Відштовхування 5'
@@ -383,13 +383,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-controller-7',
 							name: 'Oil Slick',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 							target: 'Each enemy in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '5 отруйної шкоди; С < [слабкий], розпластаний',
 									tier2: '8 отруйної шкоди; С < [середній], розпластаний',
 									tier3: '11 отруйної шкоди; С < [сильний], розпластаний'
@@ -402,13 +402,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-controller-10',
 							name: 'Shattering Shards',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createRanged(10)],
 							target: 'One Object',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 damage',
 									tier2: '11 damage',
 									tier3: '16 damage'
@@ -424,8 +424,8 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-defender-4',
 							name: 'Watch Out!',
-							type: FactoryLogic.type.createTrigger('The target takes damage from a strike', { qualifiers: [ 'encounter' ] }),
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createTrigger('The target takes damage from a strike', { qualifiers: ['encounter'] }),
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'The retainer’s mentor',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Ретейнер штовхає ціль або атакуючу істоту на до 2 клітинок. Якщо це рухає ментора поза діапазон удару, удар не має ефекту.')
@@ -436,13 +436,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-defender-7',
 							name: 'It’s Me You Want!',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'Two creatures',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 шкоди; спровокований (до кінця ходу)',
 									tier2: '11 шкоди; спровокований (рят. кидок завершує)',
 									tier3: '16 шкоди; спровокований (рят. кидок завершує)'
@@ -454,13 +454,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-defender-10',
 							name: 'Last Stand',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'One enemy',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '8 damage',
 									tier2: '13 damage',
 									tier3: '17 damage'
@@ -476,13 +476,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-harrier-4',
 							name: 'Tackle',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'One enemy',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '5 шкоди; Відштовхування 1',
 									tier2: '9 damage; push 2',
 									tier3: '12 damage; push 4'
@@ -494,13 +494,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-harrier-7',
 							name: 'Meet You There',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 damage',
 									tier2: '10 damage',
 									tier3: '15 damage'
@@ -513,13 +513,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-harrier-10',
 							name: 'Nab and Stab',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 							target: 'Each creature in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '11 damage; one target who has M < [weak] is grabbed',
 									tier2: '16 damage; one target who has M < [average] is grabbed',
 									tier3: '21 damage; one target who has M < [strong] is grabbed'
@@ -535,13 +535,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-hexer-4',
 							name: 'Backfire Curse',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged],
+							distance: [FactoryLogic.distance.createRanged(10)],
 							target: 'One enemy',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '2 шкоди від скверни; ціль проклята (до кінця ходу)',
 									tier2: '5 шкоди від скверни; ціль проклята (до кінця ходу)',
 									tier3: '7 шкоди від скверни; ціль проклята (до кінця ходу)'
@@ -554,13 +554,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-hexer-7',
 							name: 'Take Root',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+							distance: [FactoryLogic.distance.createRanged(10)],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '5 шкоди; С < [слабкий], сповільнений (рят. кидок завершує)',
 									tier2: '9 шкоди; С < [середній], сповільнений (рят. кидок завершує)',
 									tier3: '12 шкоди; С < [сильний], сповільнений (рят. кидок завершує)'
@@ -573,13 +573,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-hexer-10',
 							name: 'Mazed',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Magic, AbilityKeyword.Strike ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Magic, AbilityKeyword.Strike],
+							distance: [FactoryLogic.distance.createRanged(10)],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '7 шкоди; С < [слабкий], у лабіринті (рят. кидок завершує)',
 									tier2: '11 шкоди; С < [середній], у лабіринті (рят. кидок завершує)',
 									tier3: '16 шкоди; С < [сильний], у лабіринті (рят. кидок завершує)'
@@ -595,13 +595,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-mount-4',
 							name: 'Cavalry Charge',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'One enemy',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '6 шкоди',
 									tier2: '8 damage',
 									tier3: '11 damage'
@@ -614,8 +614,8 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-mount-7',
 							name: 'Giddyup!',
-							type: FactoryLogic.type.createMove({ qualifiers: [ 'encounter' ] }),
-							distance: [ FactoryLogic.distance.createRanged(5) ],
+							type: FactoryLogic.type.createMove({ qualifiers: ['encounter'] }),
+							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'Self',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Пеший/тварина зміщується вдвічі більше своєї швидкості. Воно може виконати стрибок як частину цього руху.')
@@ -626,13 +626,13 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-mount-10',
 							name: 'Rearing Trample',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 							target: 'Each enemy in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '10 шкоди; С < [слабкий], розпластаний',
 									tier2: '15 шкоди; С < [середній], розпластаний',
 									tier3: '21 шкоди; С < [сильний], розпластаний'
@@ -649,9 +649,9 @@ export class RetainerLogic {
 							id: 'retainer-support-4',
 							name: 'Battlefield Medic',
 							type: FactoryLogic.type.createManeuver(),
-							keywords: [ AbilityKeyword.Melee ],
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'Self or one ally',
+							keywords: [AbilityKeyword.Melee],
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Себе або одного союзника',
 							sections: [
 								FactoryLogic.createAbilitySectionText('The target spends a Recovery, and ability rolls against the target take a bane until the start of the retainer’s next turn.')
 							]
@@ -661,18 +661,18 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-support-7',
 							name: 'Focus Fire',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-							distance: [ FactoryLogic.distance.createRanged(5) ],
-							target: 'One creature',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+							distance: [FactoryLogic.distance.createRanged(5)],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-									characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 									tier1: '9 шкоди',
 									tier2: '13 damage',
 									tier3: '18 damage'
 								})),
-								FactoryLogic.createAbilitySectionText('One ally within distance gains 2 surges.')
+								FactoryLogic.createAbilitySectionText('Один союзник у межах дистанції отримує 2 сплески.')
 							]
 						})
 					}),
@@ -680,12 +680,12 @@ export class RetainerLogic {
 						ability: FactoryLogic.createAbility({
 							id: 'retainer-support-10',
 							name: 'Back from the Dead',
-							type: FactoryLogic.type.createMain({ qualifiers: [ 'encounter' ] }),
-							keywords: [ AbilityKeyword.Melee ],
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One ally',
+							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
+							keywords: [AbilityKeyword.Melee],
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Один союзник',
 							sections: [
-								FactoryLogic.createAbilitySectionText('If the target is at or below 0 Stamina, or if they have died due to Stamina loss since the end of the retainer’s last turn, the target is alive with 1 Stamina and can spend a Recovery.')
+								FactoryLogic.createAbilitySectionText('Якщо ціль має 0 або менше Витривалості, або якщо вона померла через втрату Витривалості з моменту завершення останнього ходу ретейнера, ціль повертається до життя з 1 Витривалістю і може витратити Відновлення.')
 							]
 						})
 					})

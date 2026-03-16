@@ -103,7 +103,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Clerk',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -119,8 +119,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Quill Pushing',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -140,7 +140,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-1-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -149,7 +149,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Notary',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -165,8 +165,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Importunity',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -186,7 +186,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -195,7 +195,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Scrivener',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -211,8 +211,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Litigation',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -232,7 +232,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-3-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -241,7 +241,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Adjudicator',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -256,8 +256,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Infernal Injunction',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -275,9 +275,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-4-feature-2',
 						name: 'Adjudicator’s Interdiction',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -294,8 +294,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-4-feature-3',
 						name: 'Quid Pro Quo',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One ally or frightened creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The adjudicator and the target teleport to switch places.')
@@ -308,8 +308,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Devilish Charm',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the adjudicator with a strike.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
@@ -334,7 +334,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-4-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -343,7 +343,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Jurist',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Artillery),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 28,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -358,8 +358,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Fire and Brimstone',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(12)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -381,8 +381,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-5-feature-2',
 						name: 'Dismissal with Prejudice',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -400,9 +400,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-5-feature-3',
 						name: 'Ashes to Ashes',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(12)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target is burning (see Fire and Brimstone), they take 6 fire damage.')
 						]
@@ -414,8 +414,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Devilish Charm',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the jurist with a strike.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
@@ -440,7 +440,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-5-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -449,7 +449,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Legate',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Defender),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 28,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -464,8 +464,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Infernal Pike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -483,8 +483,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-6-feature-2',
 						name: 'Writ of Execution',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -502,9 +502,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-6-feature-3',
 						name: 'Law and Order',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(1)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is taunted by the legate (save ends). The legate can have only one creature taunted at a time.')
 						]
@@ -516,8 +516,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Devilish Charm',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the legate with a strike.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
@@ -542,7 +542,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-6-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -551,7 +551,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil Magistrate',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Harrier),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -566,8 +566,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Edge of the Law',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -585,9 +585,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-7-feature-2',
 						name: 'Verdict',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -604,7 +604,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-7-feature-3',
 						name: 'Justice Turns Its Gaze',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The magistrate turns invisible until the start of their next turn, and can attempt to hide as a free maneuver before the end of the current turn.')
@@ -617,8 +617,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Devilish Charm',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the magistrate with a strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
@@ -643,7 +643,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-7-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -652,7 +652,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 			name: 'Devil High Judge',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Devil', 'Infernal' ],
+			keywords: ['Devil', 'Infernal'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'fly'),
@@ -667,8 +667,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Infernal Decree',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(12)],
 						target: 'Three creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -689,8 +689,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-8-feature-2',
 						name: 'Compel the Jury',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(12)],
 						target: 'Two creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -709,8 +709,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Devilish Suggestion',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the high judge with a strike.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
@@ -736,15 +736,15 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-8-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 8 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 8 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'devil-8-feature-7',
 						name: 'Welcome, Friends',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
@@ -763,12 +763,12 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-8-feature-8',
 						name: 'Heed My Decree',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. The high judge can make each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion move up to half that creature’s speed.')
 						]
@@ -779,9 +779,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						id: 'devil-8-feature-9',
 						name: 'Deceptive Strategem',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(12)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target is an ally or a creature charmed by All Rise, Compel the Jury, or Devilish Suggestion, the high judge and the target teleport to swap places. Each ally within 12 squares of the high judge can then make a free strike against a target of the high judge’s choice. Each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion makes a free strike against a target of the high judge’s choice.')
 						]

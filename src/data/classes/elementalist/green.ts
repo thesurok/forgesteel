@@ -29,9 +29,9 @@ Additionally, you can touch a living plant that is not a plant creature to commu
 						name: 'Breath of Dawn Remembered',
 						description: 'The power you channel grants the ability to get back in the fight.',
 						type: FactoryLogic.type.createTrigger('The target starts their turn or takes damage.'),
-						keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target can spend a Recovery.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -93,8 +93,8 @@ You can revert back to your true form as a maneuver. You can’t enter an animal
 						name: 'Remember Growth and Sun and Rain',
 						description: 'You stir any wood’s memory and learn what it has seen.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One mundane wooden object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You see and hear any events that have occurred within 10 squares of the object within the last 12 hours, perceiving those events from the object’s location as if you were there.')

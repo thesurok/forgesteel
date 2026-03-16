@@ -15,7 +15,7 @@ export const berserker: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-sub-1-1-1',
-					selected: [ 'Lift' ]
+					selected: ['Lift']
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-1-1-2'
@@ -38,8 +38,8 @@ As your ferocity grows, you gain benefits as noted on the Berserker Growing Fero
 						name: 'Lines of Force',
 						description: 'You redirect the energy of motion.',
 						type: FactoryLogic.type.createTrigger('The target would be force moved.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Self or one creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can select a new target of the same size or smaller within distance to be force moved instead. You become the source of the forced movement, determine the new target’s destination, and can push the target instead of using the original forced movement type. Additionally, the forced movement distance gains a bonus equal to your Might score.'),
@@ -70,8 +70,8 @@ As your ferocity grows, you gain benefits as noted on the Berserker Growing Fero
 									name: 'Special Delivery',
 									description: 'You ready?',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One willing ally',
 									cost: 5,
 									sections: [
@@ -88,8 +88,8 @@ As your ferocity grows, you gain benefits as noted on the Berserker Growing Fero
 									name: 'Wrecking Ball',
 									description: 'It’s easier to destroy than to create. Much easier, in fact!',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self; see below',
 									cost: 5,
 									sections: [
@@ -99,7 +99,7 @@ You move up to your speed in a straight line. During this movement, you can move
 Additionally, you make one power roll that targets each enemy you move adjacent to during this movement.`),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: 'Push 1',
 												tier2: 'Push 2',
 												tier3: 'Push 3'
@@ -125,7 +125,7 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 				FactoryLogic.feature.createBonus({
 					id: 'fury-sub-1-3-2',
 					field: FeatureField.Stability,
-					valueCharacteristics: [ Characteristic.Might ]
+					valueCharacteristics: [Characteristic.Might]
 				})
 			]
 		},
@@ -163,15 +163,15 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									name: 'Avalanche Impact',
 									description: 'You leap and crash down, causing a shockwave that devastates foes.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You jump up to your maximum jump distance and make one power roll that targets each creature adjacent to the space where you land.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '4 damage; push 1',
 												tier2: '7 damage; push 2',
 												tier3: '11 damage; push 3'
@@ -189,14 +189,14 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									name: 'Force of Storms',
 									description: 'You strike an enemy hard enough to be a projectile that knocks a crowd of creatures around.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '7 + M damage; push 3',
 												tier2: '11 + M damage; push 5',
 												tier3: '16 + M damage; push 7'
@@ -246,14 +246,14 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									name: 'Death Comes for You All!',
 									description: 'You use your weapon to create a destructive shockwave.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '7 damage; push 3',
 												tier2: '10 damage; push 5',
 												tier3: '15 damage; push 7'
@@ -272,14 +272,14 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 									name: 'Primordial Vortex',
 									description: 'You channel the power of the Primordial Chaos to pull foes to you.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '3 damage; vertical pull 3',
 												tier2: '5 damage; vertical pull 5',
 												tier3: '8 damage; vertical pull 7'

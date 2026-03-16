@@ -14,7 +14,7 @@ export const metakinetic: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-sub-3-1-1',
-					listOptions: [ SkillList.Exploration ]
+					listOptions: [SkillList.Exploration]
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-3-1-2',
@@ -67,13 +67,13 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Gravitic Strike',
 									description: 'Your fist emanates gravitic force that pulls a distant enemy closer.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(3) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(3)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '8 + A psychic damage; vertical pull 3',
 											tier2: '12 + A psychic damage; vertical pull 5',
 											tier3: '16 + A psychic damage; vertical pull 7'
@@ -90,13 +90,13 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Kinetic Shield',
 									description: 'You manifest a force barrier that absorbs incoming kinetic energy.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: 'You gain 10 temporary Stamina',
 											tier2: 'You gain 15 temporary Stamina',
 											tier3: 'You gain 20 temporary Stamina'
@@ -143,13 +143,13 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Gravitic Charge',
 									description: 'You channel your discipline into momentum that defies gravity.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Intuition ],
+											characteristic: [Characteristic.Intuition],
 											tier1: 'Vertical slide 5',
 											tier2: 'Vertical slide 7',
 											tier3: 'Vertical slide 9'
@@ -167,8 +167,8 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Iron Body',
 									description: 'You focus until your body becomes as hard as iron.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -210,8 +210,8 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Inertial Absorption',
 									description: 'You absorb an attack to empower your body.',
 									type: FactoryLogic.type.createTrigger('Another creature damages you using an ability.', { free: true }),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [
@@ -228,13 +228,13 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									name: 'Realitas',
 									description: 'Your essential hyperreality disrupts your enemy’s connection to existence.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '7 + A psychic damage; I < [weak], dazed',
 											tier2: '10 + A psychic damage; I < [average], dazed',
 											tier3: '13 + A psychic damage; I < [strong], dazed'

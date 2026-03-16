@@ -56,7 +56,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Animal',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Harrier),
-			keywords: [ 'Animal' ],
+			keywords: ['Animal'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -70,8 +70,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-1-feature-1',
 						name: 'Natural Weapon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -90,7 +90,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-1-feature-2',
 						name: 'Rush',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal moves up to their speed.')
@@ -109,7 +109,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Swarm',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Hexer),
-			keywords: [ 'Animal', 'Swarm' ],
+			keywords: ['Animal', 'Swarm'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -123,8 +123,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-2-feature-1',
 						name: 'Flurry',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -143,8 +143,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-2-feature-2',
 						name: 'Impede',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The swarm forces themselves in the way of their foes. The affected area is considered difficult terrain for enemies until the start of the swarm’s next turn.')
@@ -168,7 +168,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Big Animal A',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Mount),
-			keywords: [ 'Animal' ],
+			keywords: ['Animal'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(6),
@@ -182,8 +182,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-3-feature-1',
 						name: 'Natural Weapon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -201,8 +201,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-3-feature-2',
 						name: 'Toss',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The target must be the animal’s size or smaller.'),
@@ -215,7 +215,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-3-feature-3',
 						name: 'Juke',
 						type: FactoryLogic.type.createTrigger('The animal is targeted by an area ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal shifts up to 2 squares before the ability resolves.')
@@ -234,7 +234,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Big Animal B',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Mount),
-			keywords: [ 'Animal' ],
+			keywords: ['Animal'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(6),
@@ -248,8 +248,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-4-feature-1',
 						name: 'Natural Weapon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -267,7 +267,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-4-feature-2',
 						name: 'Trundle',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal moves up to their speed. They can make a free strike against each creature who makes an opportunity attack against them during this movement.')
@@ -279,8 +279,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-4-feature-3',
 						name: 'Animal Rally',
 						type: FactoryLogic.type.createTrigger('The target is knocked prone.'),
-						distance: [ FactoryLogic.distance.createRanged(20) ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createRanged(20)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal moves up to their speed. If they end their turn adjacent to the target, they can use the Stand Up maneuver to let the target stand, then get on to ride them.')
 						]
@@ -303,7 +303,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Predator A',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Animal' ],
+			keywords: ['Animal'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -317,8 +317,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-5-feature-1',
 						name: 'Natural Weapon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -336,7 +336,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-5-feature-2',
 						name: 'Ready to Strike',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The predator assesses their environment or lets loose a threatening roar and gains an edge on their next strike.')
@@ -348,8 +348,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-5-feature-3',
 						name: 'Quick Strike',
 						type: FactoryLogic.type.createTrigger('A creature or object comes within distance.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The predator makes a free strike against the target. If the predator was hidden from the target, the strike deals an extra 3 damage.')
@@ -368,7 +368,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			name: 'Predator B',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Animal' ],
+			keywords: ['Animal'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(5),
@@ -382,8 +382,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-6-feature-1',
 						name: 'Natural Weapon',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -401,8 +401,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-6-feature-2',
 						name: 'Wild Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy or object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -419,8 +419,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						id: 'animal-6-feature-3',
 						name: 'Swat',
 						type: FactoryLogic.type.createTrigger('A creature or object within distance deals damage to the predator.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pushed up to 5 squares.')

@@ -101,7 +101,7 @@ How his return might be possible is not clear, but it would surely involve the R
 			name: 'Count Rhodar von Glauer',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Undead', 'Vampire' ],
+			keywords: ['Undead', 'Vampire'],
 			encounterValue: 144,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(12, 'fly, hover, teleport'),
@@ -138,7 +138,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-5',
 						name: 'Spear of the Damned',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(2),
 							FactoryLogic.distance.createRanged(15)
@@ -163,8 +163,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-6',
 						name: 'Disarming Glare',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition test**.'),
@@ -185,9 +185,9 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-7',
 						name: 'Vermilion Fangs',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -207,8 +207,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-8',
 						name: 'Sanguineous Flourish',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						cost: 5,
 						sections: [
@@ -229,8 +229,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-9',
 						name: 'Vengeance of Rhöl',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSpecial('Two 3 cubes within 5') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSpecial('Two 3 cubes within 5')],
 						target: 'Special',
 						cost: 2,
 						sections: [
@@ -243,8 +243,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-10',
 						name: 'Reactive Rebuke',
 						type: FactoryLogic.type.createTrigger('A creature within distance makes a strike against Rhodar.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						cost: 2,
 						sections: [
@@ -262,8 +262,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-12',
 						name: 'Red Tide',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 8, within: 15 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 8, within: 15 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -283,8 +283,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-13',
 						name: 'Sanguine Mist',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
@@ -305,8 +305,8 @@ How his return might be possible is not clear, but it would surely involve the R
 						id: 'count-rhodar-1-14',
 						name: 'Fires of Dracul',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 15, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 15, value2: 3, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

@@ -300,7 +300,7 @@ export const humanCensor = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Vaslorian' ]
+				selected: ['Vaslorian']
 			}
 		},
 		languages: [],
@@ -617,7 +617,7 @@ export const humanCensor = {
 																	qualifier: ''
 																}
 															],
-															target: 'One creature',
+															target: 'Одна істота',
 															cost: 9,
 															repeatable: false,
 															minLevel: 1,
@@ -876,7 +876,7 @@ export const humanCensor = {
 															qualifier: ''
 														}
 													],
-													target: 'One creature',
+													target: 'Одна істота',
 													cost: 'signature',
 													repeatable: false,
 													minLevel: 1,
@@ -947,7 +947,7 @@ export const humanCensor = {
 										qualifier: ''
 									}
 								],
-								target: 'Self or one ally',
+								target: 'Себе або одного союзника',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1602,7 +1602,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1947,7 +1947,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2002,7 +2002,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2070,7 +2070,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2128,7 +2128,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2196,7 +2196,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2432,7 +2432,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2476,7 +2476,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and each ally in the area',
+				target: 'На себе і кожного союзника в зоні впливу',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2534,7 +2534,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2592,7 +2592,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2646,7 +2646,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2704,7 +2704,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2762,7 +2762,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2820,7 +2820,7 @@ export const humanCensor = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2946,7 +2946,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3171,7 +3171,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Self or one ally',
+														target: 'Себе або одного союзника',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3261,7 +3261,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3330,7 +3330,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3472,7 +3472,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Self or one ally',
+														target: 'Себе або одного союзника',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3528,7 +3528,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Self or one ally',
+														target: 'Себе або одного союзника',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3775,7 +3775,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3831,7 +3831,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One ally',
+														target: 'Один союзник',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3961,7 +3961,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Self and each ally in the area',
+														target: 'На себе і кожного союзника в зоні впливу',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4019,7 +4019,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4125,7 +4125,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4193,7 +4193,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One ally',
+														target: 'Один союзник',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4283,7 +4283,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4351,7 +4351,7 @@ export const humanCensor = {
 																qualifier: ''
 															}
 														],
-														target: 'Self and each ally in the area',
+														target: 'На себе і кожного союзника в зоні впливу',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

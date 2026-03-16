@@ -86,7 +86,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Channeler',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(5),
 			stamina: 60,
@@ -100,8 +100,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-1',
 						name: 'Shadow Drag',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'Two creatures or objects on the ground',
 						cost: 'signature',
 						sections: [
@@ -120,8 +120,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-2',
 						name: 'Blistering Element',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -139,9 +139,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-3',
 						name: 'Twist Shape',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Одна істота',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -159,8 +159,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-4',
 						name: 'Throw',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the channeler.'),
@@ -173,7 +173,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-5',
 						name: 'Catcher',
 						type: FactoryLogic.type.createTrigger('A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.', { free: true }),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is grabbed by the channeler.')
@@ -185,8 +185,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-1-feature-6',
 						name: 'Shadow Veil',
 						type: FactoryLogic.type.createTrigger('An ally within distance takes damage.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering ally',
 						cost: 1,
 						sections: [
@@ -201,7 +201,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Commander',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Support),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(5),
 			stamina: 80,
@@ -215,8 +215,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-2-feature-1',
 						name: 'Inspiring Swordplay',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -235,8 +235,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-2-feature-2',
 						name: 'You Next!',
 						type: FactoryLogic.type.createMain(),
-						distance: [ FactoryLogic.distance.createRanged(8) ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createRanged(8)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target moves up to their speed and uses a signature action.')
 						]
@@ -247,7 +247,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-2-feature-3',
 						name: 'Fall Back!',
 						type: FactoryLogic.type.createMain(),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each ally in the area',
 						cost: 5,
 						sections: [
@@ -260,8 +260,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-2-feature-4',
 						name: 'Throw',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the commander.'),
@@ -274,7 +274,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-2-feature-5',
 						name: 'Catcher',
 						type: FactoryLogic.type.createTrigger('A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.', { free: true }),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is grabbed by the commander.')
@@ -293,7 +293,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Roughneck',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(6),
 			stamina: 109,
@@ -307,8 +307,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-1',
 						name: 'Haymaker',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -330,8 +330,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-2',
 						name: 'Leaping Fury',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -349,8 +349,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-3',
 						name: 'Drag Through Hell',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						cost: 3,
 						sections: [
@@ -364,8 +364,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-4',
 						name: 'Throw',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the roughneck.'),
@@ -378,8 +378,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-5',
 						name: 'Catcher',
 						type: FactoryLogic.type.createTrigger('A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.', { free: true }),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is grabbed by the roughneck.')
@@ -391,7 +391,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-3-feature-6',
 						name: 'Flying Sawblade',
 						type: FactoryLogic.type.createTrigger('The roughneck is vertical force moved by another creature.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The roughneck uses Haymaker against a creature or object at any point during the forced movement, or after falling as a result of it.')
@@ -405,7 +405,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Sneak',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Ambusher),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 16,
 			speed: FactoryLogic.createSpeed(7),
 			stamina: 80,
@@ -419,8 +419,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-1',
 						name: 'Sucker Punch',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -439,8 +439,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-2',
 						name: 'Shadow Cloak',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						cost: 3,
 						sections: [
@@ -459,8 +459,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-3',
 						name: 'Carving Dagger',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -478,8 +478,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-4',
 						name: 'Throw',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('*Special*: The target must be grabbed by the sneak.'),
@@ -492,8 +492,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-5',
 						name: 'Catcher',
 						type: FactoryLogic.type.createTrigger('A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.', { free: true }),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is grabbed by the sneak.')
@@ -505,7 +505,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-4-feature-6',
 						name: 'Clever Trick',
 						type: FactoryLogic.type.createTrigger('The sneak is targeted by a strike.'),
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One enemy',
 						cost: 1,
 						sections: [
@@ -520,7 +520,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Knightmare',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 10,
 			speed: FactoryLogic.createSpeed(5),
 			stamina: 12,
@@ -535,8 +535,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-5-feature-1',
 						name: 'Corrosive Blade',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -567,7 +567,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Mob',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 7,
 			speed: FactoryLogic.createSpeed(6),
 			stamina: 10,
@@ -582,8 +582,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-6-feature-1',
 						name: 'Mug and Tear',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -609,7 +609,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			name: 'Bugbear Snare',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Bugbear', 'Goblin', 'Humanoid', 'Fey' ],
+			keywords: ['Bugbear', 'Goblin', 'Humanoid', 'Fey'],
 			encounterValue: 7,
 			speed: FactoryLogic.createSpeed(6),
 			stamina: 9,
@@ -624,8 +624,8 @@ When bugbears are compelled to take action, they take to the high ground and use
 						id: 'bugbear-7-feature-1',
 						name: 'Cut Em Low!',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [

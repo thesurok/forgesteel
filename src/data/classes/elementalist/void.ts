@@ -13,7 +13,7 @@ export const voidSubclass: SubClass = {
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'elementalist-sub-4-1-1',
 					name: 'Acolyte of the Void',
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 					value: 2
 				}),
 				FactoryLogic.feature.create({
@@ -27,8 +27,8 @@ export const voidSubclass: SubClass = {
 						name: 'Shared Void Sense',
 						description: 'You grant allies a taste of your unearthly vision.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('For each Victory you have, you can target one creature. Each target gains the benefit of your A Beyonding of Vision feature until the end of your next turn, but doesn’t gain the use of the Shared Void Sense ability.')
@@ -41,9 +41,9 @@ export const voidSubclass: SubClass = {
 						name: 'Subtle Relocation',
 						description: 'You call on the void to swallow and spit out an ally.',
 						type: FactoryLogic.type.createTrigger('The target starts their turn, moves, or is force moved.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport the target up to a number of squares equal to your Reason score. If the target moves to trigger this ability, you can teleport them at any point during the move.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -63,8 +63,8 @@ export const voidSubclass: SubClass = {
 						name: 'There is No Space Between',
 						description: 'Knowledge of the mystery reveals that two spaces are the same space.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`

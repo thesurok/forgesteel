@@ -15,7 +15,7 @@ export const punisher: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-3-1-1',
-					selected: [ 'Endurance' ]
+					selected: ['Endurance']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-3-1-2',
@@ -29,8 +29,8 @@ export const punisher: SubClass = {
 						name: 'Swat Away',
 						description: 'You bat away an attacker.',
 						type: FactoryLogic.type.createTrigger('An enemy adjacent to you deals damage to a creature.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You deal damage equal to your Might score to the target and push them up to a number of squares equal to your Might score + 1. If this movement causes the enemy to move farther from the creature they damaged, the triggering damage is halved.'),
@@ -47,7 +47,7 @@ export const punisher: SubClass = {
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-sub-3-2-1a',
-					selected: [ PerkData.youCanPetThem ]
+					selected: [PerkData.youCanPetThem]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -55,7 +55,7 @@ export const punisher: SubClass = {
 						name: 'No, You Take Him',
 						description: 'When someone is pushed into you, you reach out to steady an ally or send a foe careening off in another direction.',
 						type: FactoryLogic.type.createTrigger('A creature being force moved by another creature enters a space adjacent to you.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You end the forced movement. You can then push the creature up to a number of squares equal to your Might score + 1. The creature takes 1 damage for each square they are moved in this way.'),
@@ -76,9 +76,9 @@ export const punisher: SubClass = {
 									name: 'Foe Bowling',
 									description: 'Your companion sends one enemy tumbling into another, taking them both out.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -102,9 +102,9 @@ export const punisher: SubClass = {
 									name: 'Psych Up',
 									description: 'Your companion builds up courage with a roar, growl, or aggressive display.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Companion ],
-									distance: [ FactoryLogic.distance.createRanged(5) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion],
+									distance: [FactoryLogic.distance.createRanged(5)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Your companion and an ally within range can gain two surges, spend up to two Recoveries, and end one (EoT) or (Save Ends) condition or effect on themselves.')
@@ -149,8 +149,8 @@ export const punisher: SubClass = {
 									name: 'Howling Advance',
 									description: 'Roaring like a pack of wild beasts, your companion and your allies rush toward the foe.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Companion ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Companion],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -167,8 +167,8 @@ export const punisher: SubClass = {
 									name: 'Thundering Strike',
 									description: 'The rumble of your companion’s dash is a rolling thunderclap, their impact an earthquake.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -222,8 +222,8 @@ export const punisher: SubClass = {
 									name: 'Battle Frenzy',
 									description: 'Your companion shatters the floodgates that keep their rampage dammed up, and it cascades into the unprepared minds of nearby creatures.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Creatures of your choice',
 									cost: 11,
 									sections: [
@@ -248,8 +248,8 @@ export const punisher: SubClass = {
 									name: 'Send \'Em Flying',
 									description: 'Your companion plows through the front lines, tossing enemies—and allies—this way and that.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Companion ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Companion],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 									target: 'Each creature',
 									cost: 11,
 									sections: [

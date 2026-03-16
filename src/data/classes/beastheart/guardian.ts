@@ -15,7 +15,7 @@ export const guardian: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-1-1-1',
-					selected: [ 'Read Person' ]
+					selected: ['Read Person']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-1-1-2',
@@ -29,9 +29,9 @@ export const guardian: SubClass = {
 						name: 'Don’t Worry, I’m Here',
 						description: 'You siphon away the pain and endure it yourself.',
 						type: FactoryLogic.type.createTrigger('An adjacent ally takes damage.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The triggering damage is halved for the ally.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -47,7 +47,7 @@ export const guardian: SubClass = {
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-sub-1-2-1a',
-					selected: [ PerkData.peopleSense ]
+					selected: [PerkData.peopleSense]
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-1-2-1b',
@@ -65,8 +65,8 @@ export const guardian: SubClass = {
 									name: 'Belly of the Beast',
 									description: 'What do you have in your mouth? No! Bad boy!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One grabbed creature your companion’s size or smaller',
 									cost: 5,
 									sections: [
@@ -91,8 +91,8 @@ export const guardian: SubClass = {
 									name: 'Fetch!',
 									description: 'Your companion blinks out of existence, returning with a visitor you were particularly hoping to meet.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature or object',
 									cost: 5,
 									sections: [
@@ -149,9 +149,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 									name: 'Sic \'Em!',
 									description: 'Your companion rushes forward to protect you from a dangerous foe.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 'signature',
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -178,9 +178,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 									name: 'Staredown',
 									description: 'Your companion locks eyes with an enemy, imposing their will upon the enemy and daring them to move a muscle.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(5) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(5)],
+									target: 'Одна істота',
 									cost: 'signature',
 									sections: [
 										FactoryLogic.createAbilitySectionText('The first time the target uses a move, action, maneuver, or triggered action before the start of your next turn, the target triggers the following power roll before they act. At the start of the next turn, if the target hasn’t triggered this power roll, they become frightened (save ends).'),
@@ -229,8 +229,8 @@ While teleporting after making the attack, your companion can teleport with a gr
 									name: 'Banshee Howl',
 									description: 'Your companion’s howl, screech, roar, or psychic emanation presages death to those who hear it.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [
@@ -258,8 +258,8 @@ While teleporting after making the attack, your companion can teleport with a gr
 									name: 'Enemies Till Death',
 									description: 'Your companion launches themself at your foe, shielding allies with their body.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One enemy',
 									cost: 11,
 									sections: [

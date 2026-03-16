@@ -1,0 +1,722 @@
+{
+  "classes": {
+    "censor": {
+      "name": "Censor",
+      "description": "Демони й безсмертні бояться вас. Злочинці тікають, щойно бачать вашу тінь. Агенти хаосу, богохульники та єретики тремтять від звуку вашого голосу. Ви несете силу богів, озброєні гнівом і послані у світ, щоб спершу розшукати, а тоді засудити тих, чиї вчинки або навіть саме існування є анафемою для вашої церкви.\n\nЯк цензор, ви найкраще проявляєте себе проти найсильніших ворогів. Ваш суд жахає єретиків, зупиняє ворогів на місці й навіть відкидає їх через усе поле бою.",
+      "type": "standard",
+      "subclassName": "Order",
+      "resource": {
+        "censor-resource": {
+          "name": "Wrath",
+          "gains": {
+            "start": {
+              "trigger": "Start of your turn",
+              "value": "2"
+            },
+            "take-damage": {
+              "trigger": "The first time each round that a creature judged by you deals damage to you",
+              "value": "1"
+            },
+            "deal-damage": {
+              "trigger": "The first time each round that you deal damage to a creature judged by you",
+              "value": "1"
+            }
+          }
+        }
+      },
+      "feature": {
+        "censor-1-7": {
+          "name": "1st-Level Domain Feature",
+          "level": "1"
+        },
+        "censor-3-1": {
+          "name": "Look On My Work and Despair",
+          "description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [average], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [strong], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score."
+        },
+        "censor-4-5": {
+          "name": "4th-Level Domain Feature",
+          "level": "4"
+        },
+        "censor-6-1": {
+          "name": "Implement of Wrath",
+          "description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has P < [strong] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened."
+        },
+        "censor-7-2": {
+          "name": "7th-Level Domain Feature",
+          "level": "7"
+        },
+        "censor-10-4": {
+          "name": "Templar",
+          "description": "You are the ultimate representation of your god’s justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect associated with your chosen domain, or a domain you access with virtue. If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.\n\nAdditionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.\n\nWhile you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double edge on power rolls made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god’s wrath, as determined by the Director."
+        },
+        "censor-10-5": {
+          "name": "Virtue",
+          "type": "epic",
+          "gains": {
+            "finish-respite": {
+              "trigger": "Finish a respite",
+              "value": "XP gained"
+            }
+          },
+          "description": "You can spend 3 virtue to access one of your deity’s domains that you usually don’t have access to. When you do, you can use that domain’s features until you finish another respite.\n\nVirtue remains until you spend it."
+        }
+      },
+      "abilities": {
+        "censor-ability-1": {
+          "name": "Back, Blasphemer!",
+          "description": "You channel power through your weapon to repel foes.",
+          "type": "main",
+          "cost": "signature",
+          "keywords": "Area, Magic, Melee, Weapon",
+          "distance": "Cube 2 within 1",
+          "target": "Each enemy in the area",
+          "sections": {
+            "roll": {
+              "tier1": "2 holy damage; push 1",
+              "tier2": "4 holy damage; push 2",
+              "tier3": "6 holy damage; push 3"
+            }
+          }
+        },
+        "censor-ability-2": {
+          "name": "Every Step ... Death!",
+          "description": "You show your foe a glimpse of their fate after death.",
+          "type": "main",
+          "cost": "signature",
+          "keywords": "Magic, Ranged, Strike",
+          "distance": "Ranged 10",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "5 + P psychic damage",
+              "tier2": "7 + P psychic damage",
+              "tier3": "10 + P psychic damage"
+            },
+            "text": "Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move."
+          }
+        },
+        "censor-ability-3": {
+          "name": "Halt, Miscreant!",
+          "description": "You infuse your weapon with holy magic that makes it difficult for your foe to get away.",
+          "type": "main",
+          "cost": "signature",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature or object",
+          "sections": {
+            "roll": {
+              "tier1": "2 + M holy damage; P < [weak], slowed (save ends)",
+              "tier2": "5 + M holy damage; P < [average], slowed (save ends)",
+              "tier3": "7 + M holy damage; P < [strong], slowed (save ends)"
+            }
+          }
+        },
+        "censor-ability-4": {
+          "name": "Your Allies Cannot Save You!",
+          "description": "Your magic strike turns your foe’s guilt into a burst of holy power",
+          "type": "main",
+          "cost": "signature",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature or object",
+          "sections": {
+            "roll": {
+              "tier1": "3 + M holy damage",
+              "tier2": "5 + M holy damage",
+              "tier3": "8 + M holy damage"
+            },
+            "text": "Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score."
+          }
+        },
+        "censor-ability-5": {
+          "name": "Behold, a Shield of Faith!",
+          "description": "A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.",
+          "type": "main",
+          "cost": "3",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature or object",
+          "sections": {
+            "roll": {
+              "tier1": "3 + M holy damage",
+              "tier2": "6 + M holy damage",
+              "tier3": "9 + M holy damage"
+            },
+            "text": "Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you."
+          }
+        },
+        "censor-ability-6": {
+          "name": "Driving Assault",
+          "description": "As you force your enemy back with your weapon, you use your faith to stay close.",
+          "type": "main",
+          "cost": "3",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature or object",
+          "sections": {
+            "roll": {
+              "tier1": "3 + M damage; push 1",
+              "tier2": "6 + M damage; push 3",
+              "tier3": "9 + M damage; push 5"
+            },
+            "text": "You can shift up to your speed in a straight line toward the target after pushing them."
+          }
+        },
+        "censor-ability-7": {
+          "name": "The Gods Punish and Defend",
+          "description": "You channel holy energy to smite a foe and heal an ally.",
+          "type": "main",
+          "cost": "3",
+          "keywords": "Magic, Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature or object",
+          "sections": {
+            "roll": {
+              "tier1": "5 + M holy damage",
+              "tier2": "8 + M holy damage",
+              "tier3": "11 + M holy damage"
+            },
+            "text": "You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value."
+          }
+        },
+        "censor-ability-8": {
+          "name": "Repent!",
+          "description": "You conjure memories of their sins to harry your foes.",
+          "type": "main",
+          "cost": "3",
+          "keywords": "Magic, Ranged, Strike",
+          "distance": "Ranged 10",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "5 + P holy damage; I < [weak], dazed (save ends)",
+              "tier2": "8 + P holy damage; I < [average], dazed (save ends)",
+              "tier3": "11 + P holy damage; I < [strong], dazed (save ends)"
+            }
+          }
+        },
+        "censor-ability-9": {
+          "name": "Arrest",
+          "description": "“I got you, you son of a bitch.”",
+          "type": "main",
+          "cost": "5",
+          "keywords": "Magic, Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "6 + M holy damage; grabbed",
+              "tier2": "9 + M holy damage; grabbed",
+              "tier3": "13 + M holy damage; grabbed"
+            },
+            "text": "If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance."
+          }
+        },
+        "censor-ability-10": {
+          "name": "Behold the Face of Justice!",
+          "description": "You attack a foe and your enemies behold a vision of the true nature of your resolve.",
+          "type": "main",
+          "cost": "5",
+          "keywords": "Magic, Melee, Ranged, Strike, Weapon",
+          "distance": "Melee or Ranged 5",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "3 + M holy damage; if the target has P < [weak], each enemy within 2 squares of them is frightened of you (save ends)",
+              "tier2": "5 + M holy damage; if the target has P < [average], each enemy within 2 squares of them is frightened of you (save ends)",
+              "tier3": "8 + M holy damage; if the target has P < [strong], each enemy within 2 squares of them is frightened of you (save ends)"
+            },
+            "text": "Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score."
+          }
+        },
+        "censor-ability-11": {
+          "name": "Censored",
+          "description": "Judged and sentenced.",
+          "type": "main",
+          "cost": "5",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "2 + M holy damage",
+              "tier2": "3 + M holy damage",
+              "tier3": "5 + M holy damage"
+            },
+            "text": "When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina."
+          }
+        },
+        "censor-ability-12": {
+          "name": "Purifying Fire",
+          "description": "The gods judge, fire cleanses.",
+          "type": "main",
+          "cost": "5",
+          "keywords": "Magic, Melee, Ranged, Strike, Weapon",
+          "distance": "Melee or Ranged 5",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "5 + M holy damage; M < [weak], the target has fire weakness 3 (save ends)",
+              "tier2": "9 + M holy damage; M < [average], the target has fire weakness 5 (save ends)",
+              "tier3": "12 + M holy damage; M < [strong], the target has fire weakness 7 (save ends)"
+            },
+            "text": "While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage."
+          }
+        },
+        "censor-ability-13": {
+          "name": "Edict of Disruptive Isolation",
+          "description": "The evil within your foes detonates with holy fire that burns only the guilty.",
+          "type": "maneuver",
+          "cost": "7",
+          "keywords": "Area, Magic",
+          "distance": "Aura 2",
+          "target": "Each enemy in the area",
+          "sections": {
+            "text": "Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy."
+          }
+        },
+        "censor-ability-14": {
+          "name": "Edict of Perfect Order",
+          "description": "Within the area of your divine presence, your enemies will regret using their fell abilities.",
+          "type": "maneuver",
+          "cost": "7",
+          "keywords": "Area, Magic",
+          "distance": "Aura 2",
+          "target": "Each enemy in the area",
+          "sections": {
+            "text": "Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice, they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage."
+          }
+        },
+        "censor-ability-15": {
+          "name": "Edict of Purifying Pacifism",
+          "description": "You shed a righteous energy that punishes enemies who would harm you or your allies.",
+          "type": "maneuver",
+          "cost": "7",
+          "keywords": "Area, Magic",
+          "distance": "Aura 2",
+          "target": "Each enemy in the area",
+          "sections": {
+            "text": "Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage."
+          }
+        },
+        "censor-ability-16": {
+          "name": "Edict of Stillness",
+          "description": "The holy aura you project makes it painful for evil-doers to leave your reach.",
+          "type": "maneuver",
+          "cost": "7",
+          "keywords": "Area, Magic",
+          "distance": "Aura 2",
+          "target": "Each enemy in the area",
+          "sections": {
+            "text": "Until the end of the encounter or until you are dying, whenever a target moves or is force moved out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage."
+          }
+        },
+        "censor-ability-17": {
+          "name": "Gods Grant Thee Strength",
+          "description": "You channel divine force for movement that cannot be stopped.",
+          "type": "main",
+          "cost": "9",
+          "keywords": "Ranged",
+          "distance": "Ranged 10",
+          "target": "Self or one ally",
+          "sections": {
+            "text": "The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a free triggered action."
+          }
+        },
+        "censor-ability-18": {
+          "name": "Orison of Victory",
+          "description": "You channel your god’s will to overcome hardship and inflict pain.",
+          "type": "maneuver",
+          "cost": "9",
+          "keywords": "Area",
+          "distance": "Burst 1",
+          "target": "Self and each ally in the area",
+          "sections": {
+            "roll": {
+              "tier1": "Each target gains 1 surge.",
+              "tier2": "Each target gains 2 surges.",
+              "tier3": "Each target gains 3 surges."
+            },
+            "text": "A target can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up."
+          }
+        },
+        "censor-ability-19": {
+          "name": "Righteous Judgment",
+          "description": "You amplify the power of your judgment.",
+          "type": "main",
+          "cost": "9",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "10 + M damage",
+              "tier2": "14 + M damage",
+              "tier3": "20 + M damage"
+            },
+            "text": "Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge."
+          }
+        },
+        "censor-ability-20": {
+          "name": "Shield of the Righteous",
+          "description": "You strike a foe and create a fleet of divine shields that protect your allies.",
+          "type": "main",
+          "cost": "9",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina",
+              "tier2": "14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina",
+              "tier3": "20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina"
+            }
+          }
+        },
+        "censor-ability-21": {
+          "name": "Excommunication",
+          "description": "You curse your foe to become a bane to their allies.",
+          "type": "main",
+          "cost": "11",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "9 + M damage; I < [weak], weakened (save ends)",
+              "tier2": "13 + M damage; I < [average], weakened (save ends)",
+              "tier3": "18 + M damage; I < [strong], weakened (save ends)"
+            },
+            "text": "At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities."
+          }
+        },
+        "censor-ability-22": {
+          "name": "Hand of the Gods",
+          "description": "You use your foe as a tool against your enemies.",
+          "type": "main",
+          "cost": "11",
+          "keywords": "Ranged, Strike, Weapon",
+          "distance": "Ranged 10",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "10 + M damage",
+              "tier2": "15 + M damage",
+              "tier3": "21 + M damage"
+            },
+            "text": "Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking."
+          }
+        },
+        "censor-ability-23": {
+          "name": "Pillar of Holy Fire",
+          "description": "Your enemy’s guilt fuels a holy flame that burns your foes.",
+          "type": "main",
+          "cost": "11",
+          "keywords": "Melee, Strike, Weapon",
+          "distance": "Melee",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "9 + M damage; I < [weak], dazed (save ends)",
+              "tier2": "13 + M damage; I < [average], dazed (save ends)",
+              "tier3": "18 + M damage; I < [strong], dazed (save ends)"
+            },
+            "text": "At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them."
+          }
+        },
+        "censor-ability-24": {
+          "name": "Your Allies Turn on You!",
+          "description": "You turn your enemies’ ire to the target.",
+          "type": "main",
+          "cost": "11",
+          "keywords": "Ranged, Strike, Weapon",
+          "distance": "Ranged 10",
+          "target": "One creature",
+          "sections": {
+            "roll": {
+              "tier1": "5 + P damage; I < [weak], slowed (save ends)",
+              "tier2": "9 + P damage; I < [average], slowed (save ends)",
+              "tier3": "12 + P damage; I < [strong], slowed (save ends)"
+            },
+            "text": "While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead."
+          }
+        }
+      },
+      "subclasses": {
+        "exorcist": "Exorcist",
+        "oracle": "Oracle",
+        "paragon": "Paragon"
+      }
+    }
+  },
+  "classes.censor.class-censor.id": "class-censor",
+  "classes.censor.class-censor.name": "Censor",
+  "classes.censor.class-censor.description": "\r\nДемони й безсмертні бояться вас. Злочинці тікають, щойно бачать вашу тінь. Агенти хаосу, богохульники та єретики тремтять від звуку вашого голосу. Ви несете силу богів, озброєні гнівом і послані у світ, щоб спершу розшукати, а тоді засудити тих, чиї вчинки або навіть саме існування є анафемою для вашої церкви.\r\n\r\nЯк цензор, ви найкраще проявляєте себе проти найсильніших ворогів. Ваш суд жахає єретиків, зупиняє ворогів на місці й навіть відкидає їх через усе поле бою.",
+  "classes.censor.class-censor.type": "standard",
+  "classes.censor.class-censor.subclassName": "Order",
+  "classes.censor.censor-stamina.id": "censor-stamina",
+  "classes.censor.censor-recoveries.id": "censor-recoveries",
+  "classes.censor.censor-resource.id": "censor-resource",
+  "classes.censor.censor-resource.name": "Wrath",
+  "classes.censor.censor-resource.tag": "deal-damage",
+  "classes.censor.censor-resource.trigger": "The first time each round that you deal damage to a creature judged by you",
+  "classes.censor.censor-resource.value": "1",
+  "classes.censor.censor-1-1.id": "censor-1-1",
+  "classes.censor.censor-1-2.id": "censor-1-2",
+  "classes.censor.censor-1-4.id": "censor-1-4",
+  "classes.censor.censor-1-4.name": "Judgment",
+  "classes.censor.censor-1-4.description": "You utter a prayer that outlines your foe in holy energy.",
+  "classes.censor.censor-1-4.target": "One enemy",
+  "classes.censor.censor-1-4.text": "censor-judgment",
+  "classes.censor.censor-1-5.id": "censor-1-5",
+  "classes.censor.censor-1-6.id": "censor-1-6",
+  "classes.censor.censor-1-6.name": "My Life for Yours",
+  "classes.censor.censor-1-6.description": "You channel some of your vitality into more resilience for you or an ally.",
+  "classes.censor.censor-1-6.text": "You spend a Recovery and the target regains Stamina equal to your Recovery value.",
+  "classes.censor.censor-1-6.target": "Self or one ally",
+  "classes.censor.censor-1-6.effect": "You can end one effect on the target that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.",
+  "classes.censor.censor-1-7.id": "censor-1-7",
+  "classes.censor.censor-1-7.name": "1st-Level Domain Feature",
+  "classes.censor.censor-1-8.id": "censor-1-8",
+  "classes.censor.censor-1-8.cost": "signature",
+  "classes.censor.censor-1-9.id": "censor-1-9",
+  "classes.censor.censor-1-10.id": "censor-1-10",
+  "classes.censor.censor-2-1.id": "censor-2-1",
+  "classes.censor.censor-3-1.id": "censor-3-1",
+  "classes.censor.censor-3-1.name": "Look On My Work and Despair",
+  "classes.censor.censor-3-1.description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [average], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [strong], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.",
+  "classes.censor.censor-3-2.id": "censor-3-2",
+  "classes.censor.censor-4-1a.id": "censor-4-1a",
+  "classes.censor.censor-4-1b.id": "censor-4-1b",
+  "classes.censor.censor-4-2.id": "censor-4-2",
+  "classes.censor.censor-4-3.id": "censor-4-3",
+  "classes.censor.censor-4-4.id": "censor-4-4",
+  "classes.censor.censor-4-4.name": "Wrath Beyond Wrath",
+  "classes.censor.censor-4-4.tag": "deal-damage 2",
+  "classes.censor.censor-4-4.trigger": "The first time each round that you deal damage to a creature judged by you",
+  "classes.censor.censor-4-4.value": "2",
+  "classes.censor.censor-4-4.text": "deal-damage",
+  "classes.censor.censor-4-5.id": "censor-4-5",
+  "classes.censor.censor-4-5.name": "4th-Level Domain Feature",
+  "classes.censor.censor-5-1.id": "censor-5-1",
+  "classes.censor.censor-6-1.id": "censor-6-1",
+  "classes.censor.censor-6-1.name": "Implement of Wrath",
+  "classes.censor.censor-6-1.description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\r\n\r\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\r\n* Any creature struck by the weapon who has holy weakness and has P < [strong] is frightened and weakened (save ends).\r\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\r\n* The weapon’s wielder can’t be made frightened.",
+  "classes.censor.censor-6-2.id": "censor-6-2",
+  "classes.censor.censor-7-1a.id": "censor-7-1a",
+  "classes.censor.censor-7-1b.id": "censor-7-1b",
+  "classes.censor.censor-7-1c.id": "censor-7-1c",
+  "classes.censor.censor-7-1d.id": "censor-7-1d",
+  "classes.censor.censor-7-1e.id": "censor-7-1e",
+  "classes.censor.censor-7-2.id": "censor-7-2",
+  "classes.censor.censor-7-2.name": "7th-Level Domain Feature",
+  "classes.censor.censor-7-3.id": "censor-7-3",
+  "classes.censor.censor-7-3.name": "Focused Wrath",
+  "classes.censor.censor-7-3.tag": "start 2",
+  "classes.censor.censor-7-3.trigger": "Start of your turn",
+  "classes.censor.censor-7-3.value": "3",
+  "classes.censor.censor-7-3.text": "start",
+  "classes.censor.censor-7-4.id": "censor-7-4",
+  "classes.censor.censor-8-1.id": "censor-8-1",
+  "classes.censor.censor-8-2.id": "censor-8-2",
+  "classes.censor.censor-9-1.id": "censor-9-1",
+  "classes.censor.censor-9-1.name": "Improved Implement of Wrath",
+  "classes.censor.censor-9-1.description": "The weapon you target with your Implement of Wrath feature gains the following additional benefits:\r\n\r\n* The weapon’s wielder and each ally adjacent to them gain a +2 bonus to saving throws.\r\n* At the end of each of the weapon wielder’s turns, each ally adjacent to the wielder makes a saving throw against each effect on them that is ended by a saving throw.\r\n* The weapon’s wielder has corruption immunity 10.",
+  "classes.censor.censor-10-1a.id": "censor-10-1a",
+  "classes.censor.censor-10-1b.id": "censor-10-1b",
+  "classes.censor.censor-10-2.id": "censor-10-2",
+  "classes.censor.censor-10-3.id": "censor-10-3",
+  "classes.censor.censor-10-4.id": "censor-10-4",
+  "classes.censor.censor-10-4.name": "Templar",
+  "classes.censor.censor-10-4.description": "You are the ultimate representation of your god’s justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect associated with your chosen domain, or a domain you access with virtue. If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.\r\n\r\nAdditionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.\r\n\r\nWhile you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double edge on power rolls made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god’s wrath, as determined by the Director.\t \r\n  \r\n  \t\t\t\t",
+  "classes.censor.censor-10-5.id": "censor-10-5",
+  "classes.censor.censor-10-5.name": "Virtue",
+  "classes.censor.censor-10-5.type": "epic",
+  "classes.censor.censor-10-5.tag": "",
+  "classes.censor.censor-10-5.trigger": "Finish a respite",
+  "classes.censor.censor-10-5.value": "XP gained",
+  "classes.censor.censor-10-5.description": "\r\nYou can spend 3 virtue to access one of your deity’s domains that you usually don’t have access to. When you do, you can use that domain’s features until you finish another respite.\r\n\r\nVirtue remains until you spend it.",
+  "classes.censor.censor-10-6.id": "censor-10-6",
+  "classes.censor.censor-10-6.name": "Wrath of the Gods",
+  "classes.censor.censor-10-6.tag": "start 3",
+  "classes.censor.censor-10-6.trigger": "Start of your turn",
+  "classes.censor.censor-10-6.value": "4",
+  "classes.censor.censor-10-6.text": "start 2",
+  "classes.censor.censor-ability-1.id": "censor-ability-1",
+  "classes.censor.censor-ability-1.name": "Back, Blasphemer!",
+  "classes.censor.censor-ability-1.description": "You channel power through your weapon to repel foes.",
+  "classes.censor.censor-ability-1.cost": "signature",
+  "classes.censor.censor-ability-1.target": "Each enemy in the area",
+  "classes.censor.censor-ability-1.tier1": "2 holy damage; push 1",
+  "classes.censor.censor-ability-1.tier2": "4 holy damage; push 2",
+  "classes.censor.censor-ability-1.tier3": "6 holy damage; push 3",
+  "classes.censor.censor-ability-2.id": "censor-ability-2",
+  "classes.censor.censor-ability-2.name": "Every Step ... Death!",
+  "classes.censor.censor-ability-2.description": "You show your foe a glimpse of their fate after death.",
+  "classes.censor.censor-ability-2.target": "One creature",
+  "classes.censor.censor-ability-2.cost": "signature",
+  "classes.censor.censor-ability-2.tier1": "5 + P psychic damage",
+  "classes.censor.censor-ability-2.tier2": "7 + P psychic damage",
+  "classes.censor.censor-ability-2.tier3": "10 + P psychic damage",
+  "classes.censor.censor-ability-2.text": "Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.",
+  "classes.censor.censor-ability-3.id": "censor-ability-3",
+  "classes.censor.censor-ability-3.name": "Halt, Miscreant!",
+  "classes.censor.censor-ability-3.description": "You infuse your weapon with holy magic that makes it difficult for your foe to get away.",
+  "classes.censor.censor-ability-3.target": "One creature or object",
+  "classes.censor.censor-ability-3.cost": "signature",
+  "classes.censor.censor-ability-3.tier1": "2 + M holy damage; P < [weak], slowed (save ends)",
+  "classes.censor.censor-ability-3.tier2": "5 + M holy damage; P < [average], slowed (save ends)",
+  "classes.censor.censor-ability-3.tier3": "7 + M holy damage; P < [strong], slowed (save ends)",
+  "classes.censor.censor-ability-4.id": "censor-ability-4",
+  "classes.censor.censor-ability-4.name": "Your Allies Cannot Save You!",
+  "classes.censor.censor-ability-4.description": "Your magic strike turns your foe’s guilt into a burst of holy power",
+  "classes.censor.censor-ability-4.target": "One creature or object",
+  "classes.censor.censor-ability-4.cost": "signature",
+  "classes.censor.censor-ability-4.tier1": "3 + M holy damage",
+  "classes.censor.censor-ability-4.tier2": "5 + M holy damage",
+  "classes.censor.censor-ability-4.tier3": "8 + M holy damage",
+  "classes.censor.censor-ability-4.text": "Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.",
+  "classes.censor.censor-ability-5.id": "censor-ability-5",
+  "classes.censor.censor-ability-5.name": "Behold, a Shield of Faith!",
+  "classes.censor.censor-ability-5.description": "A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.",
+  "classes.censor.censor-ability-5.target": "One creature or object",
+  "classes.censor.censor-ability-5.tier1": "3 + M holy damage",
+  "classes.censor.censor-ability-5.tier2": "6 + M holy damage",
+  "classes.censor.censor-ability-5.tier3": "9 + M holy damage",
+  "classes.censor.censor-ability-5.text": "Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you.",
+  "classes.censor.censor-ability-6.id": "censor-ability-6",
+  "classes.censor.censor-ability-6.name": "Driving Assault",
+  "classes.censor.censor-ability-6.description": "As you force your enemy back with your weapon, you use your faith to stay close.",
+  "classes.censor.censor-ability-6.target": "One creature or object",
+  "classes.censor.censor-ability-6.tier1": "3 + M damage; push 1",
+  "classes.censor.censor-ability-6.tier2": "6 + M damage; push 3",
+  "classes.censor.censor-ability-6.tier3": "9 + M damage; push 5",
+  "classes.censor.censor-ability-6.text": "You can shift up to your speed in a straight line toward the target after pushing them.",
+  "classes.censor.censor-ability-7.id": "censor-ability-7",
+  "classes.censor.censor-ability-7.name": "The Gods Punish and Defend",
+  "classes.censor.censor-ability-7.description": "You channel holy energy to smite a foe and heal an ally.",
+  "classes.censor.censor-ability-7.target": "One creature or object",
+  "classes.censor.censor-ability-7.tier1": "5 + M holy damage",
+  "classes.censor.censor-ability-7.tier2": "8 + M holy damage",
+  "classes.censor.censor-ability-7.tier3": "11 + M holy damage",
+  "classes.censor.censor-ability-7.text": "You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value.",
+  "classes.censor.censor-ability-8.id": "censor-ability-8",
+  "classes.censor.censor-ability-8.name": "Repent!",
+  "classes.censor.censor-ability-8.description": "You conjure memories of their sins to harry your foes.",
+  "classes.censor.censor-ability-8.target": "One creature",
+  "classes.censor.censor-ability-8.tier1": "5 + P holy damage; I < [weak], dazed (save ends)",
+  "classes.censor.censor-ability-8.tier2": "8 + P holy damage; I < [average], dazed (save ends)",
+  "classes.censor.censor-ability-8.tier3": "11 + P holy damage; I < [strong], dazed (save ends)",
+  "classes.censor.censor-ability-9.id": "censor-ability-9",
+  "classes.censor.censor-ability-9.name": "Arrest",
+  "classes.censor.censor-ability-9.description": "“I got you, you son of a bitch.”",
+  "classes.censor.censor-ability-9.target": "One creature",
+  "classes.censor.censor-ability-9.tier1": "6 + M holy damage; grabbed",
+  "classes.censor.censor-ability-9.tier2": "9 + M holy damage; grabbed",
+  "classes.censor.censor-ability-9.tier3": "13 + M holy damage; grabbed",
+  "classes.censor.censor-ability-9.text": "If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance.",
+  "classes.censor.censor-ability-10.id": "censor-ability-10",
+  "classes.censor.censor-ability-10.name": "Behold the Face of Justice!",
+  "classes.censor.censor-ability-10.description": "You attack a foe and your enemies behold a vision of the true nature of your resolve.",
+  "classes.censor.censor-ability-10.target": "One creature",
+  "classes.censor.censor-ability-10.tier1": "3 + M holy damage; if the target has P < [weak], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.tier2": "5 + M holy damage; if the target has P < [average], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.tier3": "8 + M holy damage; if the target has P < [strong], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.text": "Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score.",
+  "classes.censor.censor-ability-11.id": "censor-ability-11",
+  "classes.censor.censor-ability-11.name": "Censored",
+  "classes.censor.censor-ability-11.description": "Judged and sentenced.",
+  "classes.censor.censor-ability-11.target": "One creature",
+  "classes.censor.censor-ability-11.tier1": "2 + M holy damage",
+  "classes.censor.censor-ability-11.tier2": "3 + M holy damage",
+  "classes.censor.censor-ability-11.tier3": "5 + M holy damage",
+  "classes.censor.censor-ability-11.text": "When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.",
+  "classes.censor.censor-ability-12.id": "censor-ability-12",
+  "classes.censor.censor-ability-12.name": "Purifying Fire",
+  "classes.censor.censor-ability-12.description": "The gods judge, fire cleanses.",
+  "classes.censor.censor-ability-12.target": "One creature",
+  "classes.censor.censor-ability-12.tier1": "5 + M holy damage; M < [weak], the target has fire weakness 3 (save ends)",
+  "classes.censor.censor-ability-12.tier2": "9 + M holy damage; M < [average], the target has fire weakness 5 (save ends)",
+  "classes.censor.censor-ability-12.tier3": "12 + M holy damage; M < [strong], the target has fire weakness 7 (save ends)",
+  "classes.censor.censor-ability-12.text": "While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage.",
+  "classes.censor.censor-ability-13.id": "censor-ability-13",
+  "classes.censor.censor-ability-13.name": "Edict of Disruptive Isolation",
+  "classes.censor.censor-ability-13.description": "The evil within your foes detonates with holy fire that burns only the guilty.",
+  "classes.censor.censor-ability-13.target": "Each enemy in the area",
+  "classes.censor.censor-ability-13.text": "Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.",
+  "classes.censor.censor-ability-14.id": "censor-ability-14",
+  "classes.censor.censor-ability-14.name": "Edict of Perfect Order",
+  "classes.censor.censor-ability-14.description": "Within the area of your divine presence, your enemies will regret using their fell abilities.",
+  "classes.censor.censor-ability-14.target": "Each enemy in the area",
+  "classes.censor.censor-ability-14.text": "Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice, they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.",
+  "classes.censor.censor-ability-15.id": "censor-ability-15",
+  "classes.censor.censor-ability-15.name": "Edict of Purifying Pacifism",
+  "classes.censor.censor-ability-15.description": "You shed a righteous energy that punishes enemies who would harm you or your allies.",
+  "classes.censor.censor-ability-15.target": "Each enemy in the area",
+  "classes.censor.censor-ability-15.text": "Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.",
+  "classes.censor.censor-ability-16.id": "censor-ability-16",
+  "classes.censor.censor-ability-16.name": "Edict of Stillness",
+  "classes.censor.censor-ability-16.description": "The holy aura you project makes it painful for evil-doers to leave your reach.",
+  "classes.censor.censor-ability-16.target": "Each enemy in the area",
+  "classes.censor.censor-ability-16.text": "Until the end of the encounter or until you are dying, whenever a target moves or is force moved out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.",
+  "classes.censor.censor-ability-17.id": "censor-ability-17",
+  "classes.censor.censor-ability-17.name": "Gods Grant Thee Strength",
+  "classes.censor.censor-ability-17.description": "You channel divine force for movement that cannot be stopped.",
+  "classes.censor.censor-ability-17.target": "Self or one ally",
+  "classes.censor.censor-ability-17.text": "The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a free triggered action.",
+  "classes.censor.censor-ability-18.id": "censor-ability-18",
+  "classes.censor.censor-ability-18.name": "Orison of Victory",
+  "classes.censor.censor-ability-18.description": "You channel your god’s will to overcome hardship and inflict pain.",
+  "classes.censor.censor-ability-18.target": "Self and each ally in the area",
+  "classes.censor.censor-ability-18.tier1": "Each target gains 1 surge.",
+  "classes.censor.censor-ability-18.tier2": "Each target gains 2 surges.",
+  "classes.censor.censor-ability-18.tier3": "Each target gains 3 surges.",
+  "classes.censor.censor-ability-18.text": "A target can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.",
+  "classes.censor.censor-ability-19.id": "censor-ability-19",
+  "classes.censor.censor-ability-19.name": "Righteous Judgment",
+  "classes.censor.censor-ability-19.description": "You amplify the power of your judgment.",
+  "classes.censor.censor-ability-19.target": "One creature",
+  "classes.censor.censor-ability-19.tier1": "10 + M damage",
+  "classes.censor.censor-ability-19.tier2": "14 + M damage",
+  "classes.censor.censor-ability-19.tier3": "20 + M damage",
+  "classes.censor.censor-ability-19.text": "Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge.",
+  "classes.censor.censor-ability-20.id": "censor-ability-20",
+  "classes.censor.censor-ability-20.name": "Shield of the Righteous",
+  "classes.censor.censor-ability-20.description": "You strike a foe and create a fleet of divine shields that protect your allies.",
+  "classes.censor.censor-ability-20.target": "One creature",
+  "classes.censor.censor-ability-20.tier1": "10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina",
+  "classes.censor.censor-ability-20.tier2": "14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina",
+  "classes.censor.censor-ability-20.tier3": "20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina",
+  "classes.censor.censor-ability-21.id": "censor-ability-21",
+  "classes.censor.censor-ability-21.name": "Excommunication",
+  "classes.censor.censor-ability-21.description": "You curse your foe to become a bane to their allies.",
+  "classes.censor.censor-ability-21.target": "One creature",
+  "classes.censor.censor-ability-21.tier1": "9 + M damage; I < [weak], weakened (save ends)",
+  "classes.censor.censor-ability-21.tier2": "13 + M damage; I < [average], weakened (save ends)",
+  "classes.censor.censor-ability-21.tier3": "18 + M damage; I < [strong], weakened (save ends)",
+  "classes.censor.censor-ability-21.text": "At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities.",
+  "classes.censor.censor-ability-22.id": "censor-ability-22",
+  "classes.censor.censor-ability-22.name": "Hand of the Gods",
+  "classes.censor.censor-ability-22.description": "You use your foe as a tool against your enemies.",
+  "classes.censor.censor-ability-22.target": "One creature",
+  "classes.censor.censor-ability-22.tier1": "10 + M damage",
+  "classes.censor.censor-ability-22.tier2": "15 + M damage",
+  "classes.censor.censor-ability-22.tier3": "21 + M damage",
+  "classes.censor.censor-ability-22.text": "Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.",
+  "classes.censor.censor-ability-23.id": "censor-ability-23",
+  "classes.censor.censor-ability-23.name": "Pillar of Holy Fire",
+  "classes.censor.censor-ability-23.description": "Your enemy’s guilt fuels a holy flame that burns your foes.",
+  "classes.censor.censor-ability-23.target": "One creature",
+  "classes.censor.censor-ability-23.tier1": "9 + M damage; I < [weak], dazed (save ends)",
+  "classes.censor.censor-ability-23.tier2": "13 + M damage; I < [average], dazed (save ends)",
+  "classes.censor.censor-ability-23.tier3": "18 + M damage; I < [strong], dazed (save ends)",
+  "classes.censor.censor-ability-23.text": "At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.",
+  "classes.censor.censor-ability-24.id": "censor-ability-24",
+  "classes.censor.censor-ability-24.name": "Your Allies Turn on You!",
+  "classes.censor.censor-ability-24.description": "You turn your enemies’ ire to the target.",
+  "classes.censor.censor-ability-24.target": "One creature",
+  "classes.censor.censor-ability-24.tier1": "5 + P damage; I < [weak], slowed (save ends)",
+  "classes.censor.censor-ability-24.tier2": "9 + P damage; I < [average], slowed (save ends)",
+  "classes.censor.censor-ability-24.tier3": "12 + P damage; I < [strong], slowed (save ends)",
+  "classes.censor.censor-ability-24.text": "While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead."
+}

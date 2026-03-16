@@ -27,7 +27,7 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 	subclassName: 'Circle',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Reason ]
+		[Characteristic.Reason]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -65,11 +65,11 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1',
 					count: 2,
-					selected: [ 'Magic', 'Strategy' ]
+					selected: ['Magic', 'Strategy']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1c',
-					listOptions: [ SkillList.Intrigue, SkillList.Lore ],
+					listOptions: [SkillList.Intrigue, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createPackage({
@@ -134,8 +134,8 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						id: 'summoner-1-3',
 						name: 'Summoner Strike',
 						description: 'A sudden burst of energy erupts from your implement and shocks your foes’ nerves.',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'can be used as a free strike' ], freeStrike: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a free strike'], freeStrike: true }),
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -157,8 +157,8 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						name: 'Strike For Me',
 						description: 'Your minions fight in your stead.',
 						type: FactoryLogic.type.createTrigger('You use a triggered action to make a free strike or use a signature ability.', { free: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSummoner() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSummoner()],
 						target: 'Each of your minions',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -183,8 +183,8 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						name: 'Call Forth',
 						description: 'My power is yours, and yours, mine. I summon thee.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSummoner() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSummoner()],
 						target: 'Self',
 						cost: 1,
 						repeatable: true,
@@ -207,8 +207,8 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						name: 'Minion Bridge',
 						description: 'Your minions do everything in their power to form a safe path for you to cross.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One of your minions',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -261,8 +261,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 									}),
 									FactoryLogic.feature.createProficiency({
 										id: 'summoner-1-7db',
-										weapons: [ KitWeapon.Light ],
-										armor: [ KitArmor.Light ]
+										weapons: [KitWeapon.Light],
+										armor: [KitArmor.Light]
 									})
 								]
 							}),
@@ -282,8 +282,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 									name: 'Focus Fire!',
 									description: 'You ensure the enemy can’t escape the incoming attack.',
 									type: FactoryLogic.type.createTrigger('The target deals damage to another creature.'),
-									distance: [ FactoryLogic.distance.createSummoner() ],
-									target: 'Self or one ally',
+									distance: [FactoryLogic.distance.createSummoner()],
+									target: 'Себе або одного союзника',
 									sections: [
 										FactoryLogic.createAbilitySectionText('The target gains a surge for each of your minions adjacent to them (up to a maximum of 3 surges), which they can use on the triggering damage'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -301,8 +301,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 									name: 'Impede!',
 									description: 'You order a minion to get in the way.',
 									type: FactoryLogic.type.createTrigger('The target starts their turn, moves, or is force moved.'),
-									distance: [ FactoryLogic.distance.createSummoner() ],
-									target: 'One creature',
+									distance: [FactoryLogic.distance.createSummoner()],
+									target: 'Одна істота',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You summon a signature minion in an unoccupied space adjacent to the target. If the target is force moved into the minion, you can choose to make the target take no damage from the collision.'),
 										FactoryLogic.createAbilitySectionField({
@@ -321,8 +321,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 									name: 'Not Yet!',
 									description: 'I command you to not die.',
 									type: FactoryLogic.type.createTrigger('The target receives enough damage to die or be destroyed.'),
-									distance: [ FactoryLogic.distance.createSummoner() ],
-									target: 'One ally',
+									distance: [FactoryLogic.distance.createSummoner()],
+									target: 'Один союзник',
 									sections: [
 										FactoryLogic.createAbilitySectionField({
 											name: 'Special',
@@ -341,8 +341,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 									name: 'Take the Hit!',
 									description: 'You call upon a minion to use their body to dampen the blow.',
 									type: FactoryLogic.type.createTrigger('The target is targeted by a strike.'),
-									distance: [ FactoryLogic.distance.createSummoner() ],
-									target: 'Self or one ally',
+									distance: [FactoryLogic.distance.createSummoner()],
+									target: 'Себе або одного союзника',
 									sections: [
 										FactoryLogic.createAbilitySectionText('If one of your minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -367,7 +367,7 @@ You can shift into squares that contain one of your minions, even if they occupy
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-2-1',
 					name: 'Perk',
-					lists: [ PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-2-2',
@@ -530,7 +530,7 @@ The chain lasts until the start of your next turn or until the chain is no longe
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-6-1',
 					name: 'Perk',
-					lists: [ PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-6-2',
@@ -667,7 +667,7 @@ Additionally, you can increase each of your minions’ Stamina as shown on the 7
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-7-4',
@@ -865,7 +865,7 @@ Eidos remains until you spend it.`
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-10-7',
 					name: 'Perk',
-					lists: [ PerkList.Intrigue, PerkList.Interpersonal, PerkList.Supernatural ]
+					lists: [PerkList.Intrigue, PerkList.Interpersonal, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-10-8',
@@ -880,9 +880,9 @@ Eidos remains until you spend it.`
 			name: 'Essence Transfer',
 			description: 'You pierce your foe and repurpose some of that ‘fiber of their being’ they weren’t using.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -906,8 +906,8 @@ You can spend charges to activate one of the following effects. You can activate
 			name: 'Explosive Parade',
 			description: 'Your minions swell with energy until they can no longer exist in this realm.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createSummoner() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createSummoner()],
 			target: 'Special',
 			cost: 5,
 			sections: [
@@ -934,8 +934,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Distraction Tactics',
 			description: 'Your minions do the work to draw the heat away from your allies.',
 			type: FactoryLogic.type.createManeuver({ free: true }),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Special',
 			cost: 5,
 			sections: [
@@ -947,8 +947,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Rally Cry',
 			description: '“Show them what you’re made of!”',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'All allies',
 			cost: 5,
 			sections: [
@@ -960,8 +960,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Summoner\'s Cradle',
 			description: 'You call forth protective forces to keep you all from harm.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createSummoner() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createSummoner()],
 			target: 'Special',
 			cost: 5,
 			sections: [
@@ -981,8 +981,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Summoner\'s Sword',
 			description: 'You draw your strength from the army you surround yourself with and summon a hot blade of energy and fervor.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee(3) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee(3)],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
@@ -1002,8 +1002,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Blitz Tactics',
 			description: 'Rush em! CRUSH EM!',
 			type: FactoryLogic.type.createManeuver({ free: true }),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Special',
 			cost: 7,
 			sections: [
@@ -1015,8 +1015,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			name: 'Cavalry Call',
 			description: 'A lone squad appears to disrupt the enemy’s plans and peel off their forces, one by one.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSummoner() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSummoner()],
 			target: 'Special',
 			cost: 7,
 			sections: [
@@ -1031,8 +1031,8 @@ These minions die at the end of your turn, activate no effects upon death, and y
 			name: 'Essence Funnel',
 			description: 'You rapidly summon and sacrifice minions in order to power a devastating blast of magic.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
 			target: 'All enemies and objects',
 			cost: 7,
 			sections: [
@@ -1055,7 +1055,7 @@ These minions die at the end of your turn, activate no effects upon death, and y
 			name: 'Lead by Example',
 			description: 'Your minions watch as your implement crackles with power, ready to slam unbelievable force into your foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createSummoner()
@@ -1078,8 +1078,8 @@ These minions die at the end of your turn, activate no effects upon death, and y
 			name: 'A Champion\'s Cry',
 			description: 'Your champion unleashes a bellow that shakes you to your core.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'All enemies',
 			cost: 9,
 			sections: [
@@ -1099,8 +1099,8 @@ These minions die at the end of your turn, activate no effects upon death, and y
 			name: 'Army\'s Idol',
 			description: 'Your champion’s appearance has an enchanting impact on you and your allies.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Self and all allies',
 			cost: 9,
 			sections: [
@@ -1117,8 +1117,8 @@ Each target can immediately make each of their saving throws and stand up from p
 			name: 'The Champion Slams the Earth',
 			description: 'Your champion lays their fury upon those unfortunate enough to be in their wake.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 1 })],
 			target: 'All enemies and objects',
 			cost: 9,
 			sections: [
@@ -1142,8 +1142,8 @@ Each target can immediately make each of their saving throws and stand up from p
 			name: 'Their Pall Shrouds All',
 			description: 'Your champion fills the area with a thick haze hiding friend from foe.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'All enemies',
 			cost: 9,
 			sections: [
@@ -1160,8 +1160,8 @@ Until the end of the encounter, whenever a target gets a tier 1 result on a stri
 			name: '1,000,000 Minions',
 			description: 'The battle is now a war. Your entire army storms the field.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSpecial('Special') ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSpecial('Special')],
 			target: 'Special',
 			cost: 11,
 			sections: [
@@ -1176,8 +1176,8 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 			name: 'Bodyguard Tactics',
 			description: 'You surround your allies with a nigh-endless supply of summons that stand in the way of all impacts.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 			target: 'Self and each non-minion ally',
 			cost: 11,
 			sections: [
@@ -1189,8 +1189,8 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 			name: 'I Unsummon Thee',
 			description: 'Cast those not affixed to this manifold into the void of a minion’s existence.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'All enemies',
 			cost: 11,
 			sections: [
@@ -1205,8 +1205,8 @@ A leader or a solo enemy in the area that has R, I, or P < [average] is weakened
 			name: 'Wrath of a Champion',
 			description: 'Your champion appears and goes into a rampage, clearing the way for your minions to march forth.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'All enemies',
 			cost: 11,
 			sections: [

@@ -20,7 +20,7 @@ As a conduit, you heal and buff your allies, and debuff your foes while smiting 
 	subclassName: '',
 	subclassCount: 0,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Intuition ]
+		[Characteristic.Intuition]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -51,7 +51,7 @@ As a conduit, you heal and buff your allies, and debuff your foes while smiting 
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'conduit-1-1',
-					listOptions: [ SkillList.Interpersonal, SkillList.Lore ],
+					listOptions: [SkillList.Interpersonal, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createDomainChoice({
@@ -80,9 +80,9 @@ You can gain more piety by praying to the gods—but beware! Doing so can easily
 						name: 'Healing Grace',
 						description: 'Your divine energy restores the righteous.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target can spend a Recovery.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -103,13 +103,13 @@ For each piety spent, you can choose one of the following enhancements:
 						id: 'conduit-1-6',
 						name: 'Ray of Wrath',
 						description: 'You unleash a blast of holy light upon your foe.',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'can be used as a ranged free strike' ], freeStrike: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Intuition ],
+								characteristic: [Characteristic.Intuition],
 								tier1: '2 + I damage',
 								tier2: '4 + I damage',
 								tier3: '6 + I damage'
@@ -129,9 +129,9 @@ For each piety spent, you can choose one of the following enhancements:
 									name: 'Word of Guidance',
 									description: 'You invigorate an attacking ally with divine energy.',
 									type: FactoryLogic.type.createTrigger('The target makes an ability roll for a damage-dealing ability.'),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One ally',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Один союзник',
 									sections: [
 										FactoryLogic.createAbilitySectionText('The power roll gains an edge.'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -149,9 +149,9 @@ For each piety spent, you can choose one of the following enhancements:
 									name: 'Word of Judgment',
 									description: 'Your holy word saps an attacking enemy’s strength.',
 									type: FactoryLogic.type.createTrigger('The target would take damage from an ability that uses a power roll.'),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One ally',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Один союзник',
 									sections: [
 										FactoryLogic.createAbilitySectionText('The power roll takes a bane against the target.'),
 										FactoryLogic.createAbilitySectionSpend({
@@ -173,7 +173,7 @@ For each piety spent, you can choose one of the following enhancements:
 								id: 'conduit-1-8a',
 								name: 'Prayer of Destruction',
 								description: 'Your god infuses wrath within your being.',
-								keywords: [ AbilityKeyword.Magic ],
+								keywords: [AbilityKeyword.Magic],
 								value: 1
 							}),
 							value: 1
@@ -183,7 +183,7 @@ For each piety spent, you can choose one of the following enhancements:
 								id: 'conduit-1-8b',
 								name: 'Prayer of Distance',
 								description: 'Your god blesses you with the ability to stretch your divine magic farther.',
-								keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+								keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 								value: 2
 							}),
 							value: 1
@@ -206,8 +206,8 @@ For each piety spent, you can choose one of the following enhancements:
 									}),
 									FactoryLogic.feature.createProficiency({
 										id: 'conduit-1-8dc',
-										weapons: [ KitWeapon.Light ],
-										armor: [ KitArmor.Light ]
+										weapons: [KitWeapon.Light],
+										armor: [KitArmor.Light]
 									})
 								]
 							}),
@@ -318,7 +318,7 @@ For each piety spent, you can choose one of the following enhancements:
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-2-2',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-2-3',
@@ -409,7 +409,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'conduit-4-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ],
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore],
 					count: 1
 				}),
 				FactoryLogic.feature.createDomainFeature({
@@ -450,7 +450,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-6-2',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-6-3',
@@ -496,7 +496,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'conduit-7-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'conduit-7-4',
@@ -625,11 +625,11 @@ Divine power remains until you spend it.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'conduit-10-5',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'conduit-10-6',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		}
@@ -640,14 +640,14 @@ Divine power remains until you spend it.`
 			name: 'Blessed Light',
 			description: 'Burning radiance falls upon your foe, transferring some of their energy to a nearby ally.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '3 + I holy damage',
 						tier2: '5 + I holy damage',
 						tier3: '8 + I holy damage'
@@ -661,14 +661,14 @@ Divine power remains until you spend it.`
 			name: 'Drain',
 			description: 'You drain the energy from your target and revitalize yourself or an ally.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '2 + I corruption damage',
 						tier2: '5 + I corruption damage',
 						tier3: '7 + I corruption damage'
@@ -682,13 +682,13 @@ Divine power remains until you spend it.`
 			name: 'Holy Lash',
 			description: 'A tendril of divine energy shoots forth to draw in your foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '3 + I holy damage; vertical pull 2',
 					tier2: '5 + I holy damage; vertical pull 3',
 					tier3: '8 + I holy damage; vertical pull 4'
@@ -700,14 +700,14 @@ Divine power remains until you spend it.`
 			name: 'Lightfall',
 			description: 'A rain of holy light scours your enemies and repositions your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '2 holy damage',
 						tier2: '3 holy damage',
 						tier3: '5 holy damage'
@@ -721,14 +721,14 @@ Divine power remains until you spend it.`
 			name: 'Sacrificial Offer',
 			description: 'Divine magic tears at your foe and defends a nearby friend.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '2 + I corruption damage',
 						tier2: '4 + I corruption damage',
 						tier3: '6 + I corruption damage'
@@ -742,13 +742,13 @@ Divine power remains until you spend it.`
 			name: 'Staggering Curse',
 			description: 'A blast of judgment disorients your foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '3 + I holy damage; slide 1',
 					tier2: '5 + I holy damage; slide 2',
 					tier3: '8 + I holy damage; slide 3'
@@ -760,14 +760,14 @@ Divine power remains until you spend it.`
 			name: 'Warrior\'s Prayer',
 			description: 'Your quickly uttered prayer lends aggressive divine energy to a friend engaged in melee.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '3 + I holy damage',
 						tier2: '6 + I holy damage',
 						tier3: '9 + I holy damage'
@@ -781,13 +781,13 @@ Divine power remains until you spend it.`
 			name: 'Wither',
 			description: 'A bolt of holy energy saps the life from a foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '3 + I corruption damage; P < [weak], the target takes a bane on their next power roll',
 					tier2: '5 + I corruption damage; P < [average], the target takes a bane on their next power roll',
 					tier3: '8 + I corruption damage; P < [strong], the target takes a bane on their next power roll'
@@ -799,14 +799,14 @@ Divine power remains until you spend it.`
 			name: 'Call the Thunder Down',
 			description: 'You ask your saint for thunder and your prayer is answered.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '2 sonic damage; push 1',
 						tier2: '3 sonic damage; push 2',
 						tier3: '5 sonic damage; push 3'
@@ -820,8 +820,8 @@ Divine power remains until you spend it.`
 			name: 'Font of Wrath',
 			description: 'A brilliant column of holy light appears on the battlefield, striking out at nearby enemies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 3,
 			sections: [
@@ -833,13 +833,13 @@ Divine power remains until you spend it.`
 			name: 'Judgment\'s Hammer',
 			description: 'Your divine fury is a hammer that crashes down upon the unrighteous.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '3 + I holy damage; A < [weak], prone',
 					tier2: '6 + I holy damage; A < [average], prone',
 					tier3: '9 + I holy damage; A < [strong], prone and can’t stand (save ends)'
@@ -851,14 +851,14 @@ Divine power remains until you spend it.`
 			name: 'Violence Will Not Aid Thee',
 			description: 'After some holy lightning, your enemy will think twice about their next attack.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '3 + I lightning damage',
 						tier2: '6 + I lightning damage',
 						tier3: '9 + I lightning damage'
@@ -872,13 +872,13 @@ Divine power remains until you spend it.`
 			name: 'Corruption\'s Curse',
 			description: 'Cursed by you, your enemy takes more damage from your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '3 + I corruption damage; M < [weak], damage weakness 5 (save ends)',
 					tier2: '6 + I corruption damage; M < [average], damage weakness 5 (save ends)',
 					tier3: '9 + I corruption damage; M < [strong], damage weakness 5 (save ends)'
@@ -890,13 +890,13 @@ Divine power remains until you spend it.`
 			name: 'Curse of Terror',
 			description: 'Fear of divine judgment overwhelms your foe.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '6 + I holy damage; I < [weak], frightened (save ends)',
 					tier2: '9 + I holy damage; I < [average], frightened (save ends)',
 					tier3: '13 + I holy damage; I < [strong], frightened (save ends)'
@@ -908,14 +908,14 @@ Divine power remains until you spend it.`
 			name: 'Faith is Our Armor',
 			description: 'The heroes’ armor glows with golden light, granting divine protection.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Four allies',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You can target yourself instead of one ally with this ability.'),
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: 'The target gains 5 temporary Stamina',
 					tier2: 'The target gains 10 temporary Stamina',
 					tier3: 'The target gains 15 temporary Stamina'
@@ -927,8 +927,8 @@ Divine power remains until you spend it.`
 			name: 'Sermon of Grace',
 			description: 'You inspire your allies with tales of your saint’s great deeds.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'Each ally in the area',
 			cost: 5,
 			sections: [
@@ -940,13 +940,13 @@ Divine power remains until you spend it.`
 			name: 'Fear of the Gods',
 			description: 'Your divine magic makes a creature appear as what your enemies fear most.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '6 psychic damage; I < [weak], frightened (save ends)',
 					tier2: '9 psychic damage; I < [average], frightened (save ends)',
 					tier3: '13 psychic damage; I < [strong], frightened (save ends)'
@@ -959,9 +959,9 @@ Divine power remains until you spend it.`
 			name: 'Saint\'s Raiment',
 			description: 'An ally becomes the wearer of an empowered golden cloak.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Один союзник',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target gains 20 temporary Stamina and 3 surges.')
@@ -972,13 +972,13 @@ Divine power remains until you spend it.`
 			name: 'Soul Siphon',
 			description: 'A beam of energy connects a foe to a friend, draining life from one to heal the other.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One enemy',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '7 + I corruption damage',
 					tier2: '10 + I corruption damage',
 					tier3: '15 + I corruption damage'
@@ -991,14 +991,14 @@ Divine power remains until you spend it.`
 			name: 'Words of Wrath and Grace',
 			description: 'Your saint grants your enemies a vision of pain and fills your allies with healing energy.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '2 holy damage',
 						tier2: '5 holy damage',
 						tier3: '7 holy damage'
@@ -1012,14 +1012,14 @@ Divine power remains until you spend it.`
 			name: 'Beacon of Grace',
 			description: 'You ignite a foe with holy radiance, rewarding allies who attack them.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '8 + I holy damage',
 						tier2: '13 + I holy damage',
 						tier3: '17 + I holy damage'
@@ -1033,13 +1033,13 @@ Divine power remains until you spend it.`
 			name: 'Penance',
 			description: '“If you won’t kneel, the gods will make you.”',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Intuition ],
+					characteristic: [Characteristic.Intuition],
 					tier1: '4 corruption damage; I < [weak], prone and can’t stand (save ends)',
 					tier2: '7 corruption damage; I < [average], prone and can’t stand (save ends)',
 					tier3: '11 corruption damage; I < [strong], prone and can’t stand (save ends)'
@@ -1051,9 +1051,9 @@ Divine power remains until you spend it.`
 			name: 'Sanctuary',
 			description: 'You send yourself or an ally to a divine manifold to instantaneously regain health.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target is removed from the encounter map until the start of their next turn and can spend any number of Recoveries. At the start of their turn, the target reappears in the space they left or the nearest unoccupied space of their choice.')
@@ -1064,9 +1064,9 @@ Divine power remains until you spend it.`
 			name: 'Vessel of Retribution',
 			description: 'You infuse yourself or an ally with the retributive energy of the gods, waiting to be unleashed.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The first time the target is dying or winded before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.')
@@ -1077,9 +1077,9 @@ Divine power remains until you spend it.`
 			name: 'Arise!',
 			description: 'Your deity rewards you or an ally on the verge of defeat with a miracle burst of strength and resolve.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone. Additionally, at the start of each of their turns until the end of the encounter or until they are dying, the target gains 3 surges.')
@@ -1090,9 +1090,9 @@ Divine power remains until you spend it.`
 			name: 'Blessing of Steel',
 			description: 'A protective aura defends your allies from harm.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter, any ability roll made against a target takes a bane and each target has damage immunity 5.')
@@ -1103,9 +1103,9 @@ Divine power remains until you spend it.`
 			name: 'Blessing of the Blade',
 			description: '“The power of the gods is within you, friends. Allow me to unleash it.”',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('At the end of each of your turns until the end of the encounter or until you are dying, each target gains 3 surges.')
@@ -1116,14 +1116,14 @@ Divine power remains until you spend it.`
 			name: 'Drag the Unworthy',
 			description: 'You conjure an angel who moves a foe and heals your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: '9 + I holy damage; slide 3',
 						tier2: '13 + I holy damage; slide 4',
 						tier3: '17 + I holy damage; slide 6'

@@ -57,8 +57,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 				id: 'baslisk-malice-2',
 				name: 'Upchuck',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 				target: 'Each enemy in the area',
 				cost: 5,
 				sections: [
@@ -90,7 +90,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 			name: 'Basilisk',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Basilisk', 'Beast' ],
+			keywords: ['Basilisk', 'Beast'],
 			encounterValue: 12,
 			speed: FactoryLogic.createSpeed(8),
 			stamina: 80,
@@ -104,8 +104,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-1-feature-1',
 						name: 'Noxious Bite',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -126,8 +126,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-1-feature-2',
 						name: 'Petrifying Eye Beams',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The area extends from both the basilisk’s eyes, and this ability targets the first creature without cover on either side of the area.'),
@@ -148,8 +148,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-1-feature-3',
 						name: 'Poison Fumes',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 						target: 'Each creature in the area',
 						cost: 5,
 						sections: [
@@ -169,8 +169,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-1-feature-4',
 						name: 'Lash Out',
 						type: FactoryLogic.type.createTrigger('The basilisk takes damage from a melee ability.'),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 5 damage. Any target who has <code>A < 2</code> is also bleeding (save ends).')
@@ -184,7 +184,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'basilisk-1-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 4 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 4 })]
 				})
 			]
 		}),
@@ -193,7 +193,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 			name: 'Basilisk Tonguesnapper',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Hexer),
-			keywords: [ 'Basilisk', 'Beast' ],
+			keywords: ['Basilisk', 'Beast'],
 			encounterValue: 12,
 			speed: FactoryLogic.createSpeed(8),
 			stamina: 40,
@@ -207,8 +207,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-2-feature-1',
 						name: 'Prehensile Tongue',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -233,8 +233,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-2-feature-2',
 						name: 'Petrifying Eye Beams',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The area extends from both the tonguesnapper’s eyes, and this ability targets the first creature without cover on either side of the area.'),
@@ -255,12 +255,12 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-2-feature-3',
 						name: 'Wink',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'One creature',
+						target: 'Одна істота',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -280,8 +280,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						id: 'basilisk-2-feature-4',
 						name: 'Neurotoxin Splash',
 						type: FactoryLogic.type.createTrigger('The tonguesnapper takes damage from a melee ability.'),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 4 acid damage. Any target who has <code>M < 2</code> is also slowed (save ends).')

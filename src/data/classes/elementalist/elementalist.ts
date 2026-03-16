@@ -26,7 +26,7 @@ As an elementalist, you can unleash your wrath across a field of foes, put an en
 	subclassName: 'Elemental Specialization',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Reason ]
+		[Characteristic.Reason]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -62,11 +62,11 @@ As an elementalist, you can unleash your wrath across a field of foes, put an en
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-1-1',
-					selected: [ 'Magic' ]
+					selected: ['Magic']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-1-2',
-					listOptions: [ SkillList.Crafting, SkillList.Lore ],
+					listOptions: [SkillList.Crafting, SkillList.Lore],
 					count: 3
 				}),
 				FactoryLogic.feature.createAbility({
@@ -74,13 +74,13 @@ As an elementalist, you can unleash your wrath across a field of foes, put an en
 						id: 'elementalist-1-4',
 						name: 'Hurl Element',
 						description: 'You hurl a ball of elemental energy at an unsuspecting foe.',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'can be used as a ranged free strike' ], freeStrike: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Reason ],
+								characteristic: [Characteristic.Reason],
 								tier1: '2 + R damage',
 								tier2: '4 + R damage',
 								tier3: '6 + R damage'
@@ -106,8 +106,8 @@ If you take damage equal to or greater than 5 times your Reason score in one tur
 						name: 'Practical Magic',
 						description: 'Your mastery of elemental power lets you customize your conjurations.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -142,8 +142,8 @@ Choose one of the following effects:
 									}),
 									FactoryLogic.feature.createProficiency({
 										id: 'elementalist-1-7ac',
-										weapons: [ KitWeapon.Light ],
-										armor: [ KitArmor.Light ]
+										weapons: [KitWeapon.Light],
+										armor: [KitArmor.Light]
 									})
 								]
 							}),
@@ -174,7 +174,7 @@ Choose one of the following effects:
 								id: 'elementalist-1-7c',
 								name: 'Enchantment of Destruction',
 								description: 'You gain a bonus to rolled damage with magic abilities.',
-								keywords: [ AbilityKeyword.Magic ],
+								keywords: [AbilityKeyword.Magic],
 								value: 1
 							}),
 							value: 1
@@ -184,7 +184,7 @@ Choose one of the following effects:
 								id: 'elementalist-1-7d',
 								name: 'Enchantment of Distance',
 								description: 'You have a bonus to the distance of your ranged magic abilities.',
-								keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+								keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 								value: 2
 							}),
 							value: 1
@@ -235,7 +235,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Acid,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -248,7 +248,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Cold,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -261,7 +261,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Corruption,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -274,7 +274,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Fire,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -287,7 +287,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Lightning,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -300,7 +300,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Poison,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -313,7 +313,7 @@ Choose one of the following effects:
 												FactoryLogic.damageModifier.createCharacteristic({
 													damageType: DamageType.Sonic,
 													modifierType: DamageModifierType.Immunity,
-													characteristics: [ Characteristic.Reason ]
+													characteristics: [Characteristic.Reason]
 												})
 											]
 										}),
@@ -330,7 +330,7 @@ Choose one of the following effects:
 									name: 'Ward of Nature\'s Affection',
 									description: 'You store green energy within your body that allows you to produce powerful vines when you’re in danger.',
 									type: FactoryLogic.type.createTrigger('A creature within a number of squares equal to your Reason score deals damage to you,', { free: true }),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You slide the attacking creature up to a number of squares equal to your Reason score.')
@@ -346,7 +346,7 @@ Choose one of the following effects:
 									name: 'Ward of Surprising Reactivity',
 									description: 'You use the magic of fire to create a ward of explosive energy.',
 									type: FactoryLogic.type.createTrigger('An adjacent creature deals damage to you.', { free: true }),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You push that creature a number of squares equal to twice your Reason score.')
@@ -377,7 +377,7 @@ Choose one of the following effects:
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'elementalist-2-1',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'elementalist-2-2',
@@ -457,15 +457,15 @@ Choose one of the following effects:
 					tag: 'take-damage 2',
 					trigger: 'The first time in a round that you or a creature within 10 of you takes damage that isn’t untyped or holy',
 					value: '2',
-					replacesTags: [ 'take-damage' ]
+					replacesTags: ['take-damage']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'elementalist-4-3',
-					lists: [ PerkList.Interpersonal, PerkList.Crafting, PerkList.Lore, PerkList.Supernatural, PerkList.Intrigue, PerkList.Exploration ]
+					lists: [PerkList.Interpersonal, PerkList.Crafting, PerkList.Lore, PerkList.Supernatural, PerkList.Intrigue, PerkList.Exploration]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-4-4',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				})
 			]
 		},
@@ -484,7 +484,7 @@ Choose one of the following effects:
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'elementalist-6-1',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'elementalist-6-2',
@@ -539,11 +539,11 @@ Choose one of the following effects:
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-7-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -552,7 +552,7 @@ Choose one of the following effects:
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'elementalist-8-1',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'elementalist-8-2',
@@ -648,15 +648,15 @@ Breath remains until you convert it to essence.`
 					tag: 'start 3',
 					trigger: 'Start of your turn',
 					value: '4',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'elementalist-10-5',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-10-6',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		}
@@ -667,14 +667,14 @@ Breath remains until you convert it to essence.`
 			name: 'Afflict a Bountiful Decay',
 			description: 'Your curse causes a foe’s flesh to rot off as spores that aid your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Rot, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Rot, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R corruption damage',
 						tier2: '4 + R corruption damage',
 						tier3: '6 + R corruption damage'
@@ -688,14 +688,14 @@ Breath remains until you convert it to essence.`
 			name: 'Bifurcated Incineration',
 			description: 'Two jets of flame lance out at your command.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Two creatures or objects',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 fire damage',
 						tier2: '4 fire damage',
 						tier3: '6 fire damage'
@@ -708,14 +708,14 @@ Breath remains until you convert it to essence.`
 			name: 'Grasp of Beyond',
 			description: 'You absorb the life energy of another creature and use it to teleport.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 + R corruption damage',
 						tier2: '6 + R corruption damage',
 						tier3: '9 + R corruption damage'
@@ -729,14 +729,14 @@ Breath remains until you convert it to essence.`
 			name: 'The Green Within, The Green Without',
 			description: 'Whipping vines erupt from a foe’s body to grasp at another close by.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R damage',
 						tier2: '5 + R damage',
 						tier3: '7 + R damage'
@@ -750,14 +750,14 @@ Breath remains until you convert it to essence.`
 			name: 'A Meteoric Introduction',
 			description: 'You give your enemy a gentle tap - like an asteroid impact.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 + R damage; push 2',
 						tier2: '5 + R damage; push 3',
 						tier3: '8 + R damage; push 4'
@@ -770,14 +770,14 @@ Breath remains until you convert it to essence.`
 			name: 'Ray of Agonizing Self Reflection',
 			description: 'You inflict pain and doubt in equal measure.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R corruption damage; R < [weak], slowed (save ends)',
 						tier2: '4 + R corruption damage; R < [average], slowed (save ends)',
 						tier3: '6 + R corruption damage; R < [strong], slowed (save ends)'
@@ -790,14 +790,14 @@ Breath remains until you convert it to essence.`
 			name: 'Unquiet Ground',
 			description: 'A sudden storm of detritus assaults your foes and leaves them struggling to move.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 damage',
 						tier2: '5 damage',
 						tier3: '7 damage'
@@ -811,14 +811,14 @@ Breath remains until you convert it to essence.`
 			name: 'Viscous Fire',
 			description: 'A jet of heavy fire erupts where you strike.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R fire damage; push 2',
 						tier2: '5 + R fire damage; push 3',
 						tier3: '7 + R fire damage; push 4'
@@ -831,14 +831,14 @@ Breath remains until you convert it to essence.`
 			name: 'Behold the Mystery',
 			description: 'You open a rift into the void to harry your foes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 psychic damage',
 						tier2: '4 psychic damage',
 						tier3: '6 psychic damage'
@@ -855,14 +855,14 @@ Breath remains until you convert it to essence.`
 			name: 'The Flesh, a Crucible',
 			description: 'Fire engulfs your target and continues to churn.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '5 + R fire damage',
 						tier2: '8 + R fire damage',
 						tier3: '11 + R fire damage'
@@ -879,13 +879,13 @@ Breath remains until you convert it to essence.`
 			name: 'Invigorating Growth',
 			description: 'Mushrooms erupt from a foe, sapping their vitality to spread strengthening spores.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '4 + R poison damage',
 					tier2: '7 + R poison damage',
 					tier3: '11 + R poison damage'
@@ -898,13 +898,13 @@ Breath remains until you convert it to essence.`
 			name: 'Ripples in the Earth',
 			description: 'Like a stone dropped into a pond, waves in the earth radiate from you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '3 damage',
 					tier2: '5 damage',
 					tier3: '8 damage; M < [strong], prone'
@@ -917,13 +917,13 @@ Breath remains until you convert it to essence.`
 			name: 'Conflagration',
 			description: 'A storm of fire descends upon your enemies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '4 fire damage',
 					tier2: '6 fire damage',
 					tier3: '10 fire damage'
@@ -940,15 +940,15 @@ Breath remains until you convert it to essence.`
 			name: 'Instantaneous Excavation',
 			description: 'The surface of the world around you opens up at your command.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You open up two holes with 1-square openings that are 4 squares deep, which can be placed on any mundane surface within distance. You can place these holes next to each other to create fewer holes with wider openings. When the holes open, make a separate power roll for each creature on the ground above a hole and small enough to fall in. (You can’t score a critical hit with this ability because it uses a maneuver.)'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: 'The target can shift 1 square from the edge of the hole to the nearest unoccupied space of their choice.',
 						tier2: 'The target falls into the hole.',
 						tier3: 'The target falls into the hole and can’t reduce the height of the fall.'
@@ -965,9 +965,9 @@ Breath remains until you convert it to essence.`
 			name: 'No More than a Breeze',
 			description: 'The material substance of a creature shreds away at your command.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the start of your next turn, the target can move through solid matter, they ignore difficult terrain, and their movement can’t provoke opportunity attacks. If the target ends their turn inside solid matter, they are forced out into the space where they entered it and this effect ends.'),
@@ -982,13 +982,13 @@ Breath remains until you convert it to essence.`
 			name: 'Test of Rain',
 			description: 'You call down a rain that burns your enemies and restores your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '4 acid damage',
 					tier2: '6 acid damage',
 					tier3: '10 acid damage'
@@ -1001,8 +1001,8 @@ Breath remains until you convert it to essence.`
 			name: 'O Flower Aid, O Earth Defend',
 			description: 'Revitalizing plants and jagged stones grow, helping allies and hindering foes.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Special',
 			cost: 5,
 			minLevel: 2,
@@ -1024,16 +1024,16 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Subvert the Green Within',
 			description: 'Fungal spores sprout inside your enemy’s brain, allowing you to control their actions.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 5,
 			minLevel: 2,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target uses their signature ability against a creature of your choice. This signature ability can target the creature even if it usually wouldn’t. You then make a power roll against the target of this ability.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '5 + R poison damage',
 						tier2: '9 + R poison damage',
 						tier3: '12 + R poison damage'
@@ -1046,16 +1046,16 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Translated Through Flame',
 			description: 'Your ally disappears, then reappears in a burst of fire!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			minLevel: 2,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target is teleported to another space within distance. Make a power roll that affects each enemy adjacent to the target’s new space.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 fire damage',
 						tier2: '5 fire damage',
 						tier3: '8 fire damage'
@@ -1068,14 +1068,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Volcano\'s Embrace',
 			description: 'Wrap them up in fire and melting stone.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 5,
 			minLevel: 2,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '5 + R fire damage; A < [weak], restrained (save ends)',
 					tier2: '9 + R fire damage; A < [average], restrained (save ends)',
 					tier3: '12 + R fire damage; A < [strong], restrained (save ends)'
@@ -1087,8 +1087,8 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Erase',
 			description: 'With a flick of the wrist, you phase creatures out of existence.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 7,
 			minLevel: 3,
@@ -1096,8 +1096,8 @@ Until the start of your next turn, the area gains the following effects:
 				FactoryLogic.createAbilitySectionText('The number of creatures you target with this ability is determined by your power roll.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
-						tier1: 'One creature',
+						characteristic: [Characteristic.Reason],
+						tier1: 'Одна істота',
 						tier2: 'Two creatures',
 						tier3: 'Three creatures'
 					})
@@ -1110,14 +1110,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Maw of Earth',
 			description: 'You open up the ground, unleashing a shower of stone and debris.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			minLevel: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '5 damage',
 					tier2: '9 damage',
 					tier3: '12 damage'
@@ -1130,14 +1130,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Swarm of Spirits',
 			description: 'Guardian animal spirits surround you to harry your foes and bolster your allies.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			minLevel: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '3 damage',
 					tier2: '6 damage',
 					tier3: '9 damage'
@@ -1154,8 +1154,8 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Wall of Fire',
 			description: 'A blazing, beautifully organized inferno erupts at your command.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
 			target: 'Special',
 			cost: 7,
 			minLevel: 3,
@@ -1172,14 +1172,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Combustion Deferred',
 			description: 'Your flames dance from kindling to kindling to kindling.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 9,
 			minLevel: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '8 + M fire damage',
 					tier2: '13 + M fire damage',
 					tier3: '17 + M fire damage'
@@ -1192,14 +1192,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Storm of Sands',
 			description: 'Dirt and debris swirl into a dark, pulsing hurricane.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			minLevel: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '2 damage',
 					tier2: '5 damage',
 					tier3: '7 damage'
@@ -1216,14 +1216,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Subverted Perception of Space',
 			description: 'You rip an enemy’s world in twain.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Void, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Void, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 9,
 			minLevel: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '9 + R corruption damage',
 					tier2: '10 + R corruption damage; the target has line of effect only to creatures and objects within 4 squares of them until the start of your next turn',
 					tier3: '15 + R corruption damage; the target has line of effect only to adjacent creatures and objects until the start of your next turn'
@@ -1239,14 +1239,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Web of All That\'s Come Before',
 			description: 'Threads you’ve been weaving through your adventures create a vibrant, pearlescent web.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Green, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Green, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			minLevel: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '2 corruption damage; A < [weak], restrained (save ends)',
 					tier2: '3 corruption damage; A < [average], restrained (save ends)',
 					tier3: '5 corruption damage; A < [strong], restrained (save ends)'
@@ -1263,9 +1263,9 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Luminous Champion Aloft',
 			description: 'They shine vibrantly, a beautiful diamond in the night sky.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
+			target: 'Себе або одного союзника',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1281,9 +1281,9 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Magma Titan',
 			description: 'Their body swells with lava, mud, and might, towering over their enemies.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Earth ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Earth],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1306,14 +1306,14 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Meteor',
 			description: 'You teleport the target into the air and let the ground and the elemental force of fire do the rest.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 9,
 			minLevel: 6,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: 'You teleport the target up to 4 squares.',
 					tier2: 'You teleport the target up to 6 squares.',
 					tier3: 'You teleport the target up to 8 squares.'
@@ -1326,8 +1326,8 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'The Wode Remembers and Returns',
 			description: 'You create a terrarium that spans from canopy above to underbrush below.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'Special',
 			cost: 9,
 			minLevel: 6,
@@ -1345,8 +1345,8 @@ Until the start of your next turn, the area gains the following effects:
 			name: 'Heart of the Wode',
 			description: 'You call forth one of the Great Tree’s many splinters to provide for your every need.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 11,
 			minLevel: 8,
@@ -1361,14 +1361,14 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'Muse of Fire',
 			description: 'The fire burns hot enough to sear the face of any god watching.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+			keywords: [AbilityKeyword.Earth, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 11,
 			minLevel: 8,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '7 fire damage; the Director loses 2 Malice',
 					tier2: '10 fire damage; the Director loses 3 Malice',
 					tier3: '15 fire damage; the Director loses 4 Malice'
@@ -1381,8 +1381,8 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'Return to Oblivion',
 			description: 'You create a tear in reality that could consume everything.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 11,
 			minLevel: 8,
@@ -1395,14 +1395,14 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'World Torn Asunder',
 			description: 'You stomp your foot and quake the whole world over.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 			target: 'Each enemy in the area',
 			cost: 11,
 			minLevel: 8,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: 'M < [weak]; prone',
 					tier2: 'M < [average]; prone',
 					tier3: 'M < [strong]; prone'
@@ -1415,14 +1415,14 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'Earth Rejects You',
 			description: 'Everyone and everything gets blown away in an eruption of rocks and debris.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 			target: 'Each enemy and object in the area',
 			cost: 11,
 			minLevel: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '6 damage',
 					tier2: '9 damage',
 					tier3: '13 damage'
@@ -1439,9 +1439,9 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'The Green Defends Its Servants',
 			description: 'A luminous green shield shows its true beauty the more it cracks.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 11,
 			minLevel: 9,
 			sections: [
@@ -1458,8 +1458,8 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'Prism',
 			description: 'You split your essence, allowing you to cast multiple effects at once.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Void ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Void],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			minLevel: 9,
@@ -1472,14 +1472,14 @@ Each enemy who ends their turn within 3 squares of the tree is restrained until 
 			name: 'Unquenchable Fire',
 			description: 'You let fly a fiery missile braided with pure primal energy.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One enemy or object',
 			cost: 11,
 			minLevel: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason ],
+					characteristic: [Characteristic.Reason],
 					tier1: '13 + R fire damage; I < [weak] , dazed (save ends)',
 					tier2: '18 + R fire damage; I < [average] , dazed (save ends)',
 					tier3: '25 + R fire damage; I < [strong] , dazed (save ends)'

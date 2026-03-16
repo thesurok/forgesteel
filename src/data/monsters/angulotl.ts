@@ -90,7 +90,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Cleaver',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(6, 'swim, climb'),
@@ -106,8 +106,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Hop and Chop',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -129,7 +129,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-1-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -138,7 +138,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Pollywog',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(6, 'swim, climb'),
@@ -154,8 +154,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Nip',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -176,7 +176,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -185,7 +185,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Dart',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'swim, climb'),
@@ -201,8 +201,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Poison Dart',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -224,7 +224,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-3-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -233,7 +233,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Clawfish',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Angulotl', 'Animal' ],
+			keywords: ['Angulotl', 'Animal'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'swim, climb'),
@@ -249,8 +249,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Hookclaw',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -284,7 +284,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Needler',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'swim, climb'),
@@ -299,9 +299,9 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Blowgun',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -324,7 +324,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-5-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -333,7 +333,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Slink',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'swim, climb'),
@@ -348,8 +348,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Tonguelash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(6) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(6)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -370,7 +370,7 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Hop To It',
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The slink jumps up to 3 squares. If they have cover or concealment when they land, they can attempt to hide.')
@@ -389,7 +389,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-6-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -398,7 +398,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Wave',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'swim, climb'),
@@ -413,8 +413,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Refulgent Beams',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -435,8 +435,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Noxious Bubble',
 						cost: 2,
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10, qualifier: 'unoccupied space' }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10, qualifier: 'unoccupied space' })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A bubble of toxic gas fills the area, ready to pop. If any creature or object touches the bubble or if the bubble takes damage, it bursts. Each angulotl adjacent to the bubble is wet until the end of the encounter, and each enemy adjacent to the bubble makes a **Might test**.'),
@@ -458,7 +458,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-7-feature-4',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 2 })]
 				})
 			]
 		}),
@@ -467,7 +467,7 @@ Pinna, Hedge Witch, Gravesford`,
 			name: 'Angulotl Daybringer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Angulotl', 'Humanoid' ],
+			keywords: ['Angulotl', 'Humanoid'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb, swim'),
@@ -482,8 +482,8 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Acid Grasp',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -506,7 +506,7 @@ Pinna, Hedge Witch, Gravesford`,
 						id: 'angulotl-8-feature-2',
 						name: 'Sun Lamp',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The daybringer expands their throat to make it resemble the sun until the start of their next turn. During that time, each angulotl who starts their turn within 10 squares of the daybringer regains 5 Stamina and gains a +3 bonus to speed until the end of their turn.')
@@ -518,8 +518,8 @@ Pinna, Hedge Witch, Gravesford`,
 						id: 'angulotl-8-feature-3',
 						name: 'Tongue Slap',
 						type: FactoryLogic.type.createTrigger('The target makes a strike against the daybringer or an ally that isn’t a critical hit.'),
-						distance: [ FactoryLogic.distance.createMelee(5) ],
-						target: 'One creature',
+						distance: [FactoryLogic.distance.createMelee(5)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The outcome of the strike’s power roll is reduced by one tier'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -539,7 +539,7 @@ Pinna, Hedge Witch, Gravesford`,
 						id: 'angulotl-8-feature-5',
 						name: 'New Dawn',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Four **angulotl pollywogs** erupt from the daybringer’s back and waddle into unoccupied spaces within distance.')
@@ -554,7 +554,7 @@ Pinna, Hedge Witch, Gravesford`,
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 8 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can jump up to 4 squares. Each non-minion target can make a free strike at the end of the jump.')
 						]
@@ -565,7 +565,7 @@ Pinna, Hedge Witch, Gravesford`,
 						id: 'angulotl-8-feature-7',
 						name: 'It Is Day',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSpecial('') ],
+						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The encounter map dries up and each enemy and object on it is illuminated until the end of the encounter. An illuminated creature or object can’t hide or become invisible, and any strike made against an illuminated target gains an edge. Additionally, each enemy in the encounter who is wet has that effect end and takes 6 acid damage. Each angulotl in the encounter has a double edge on their next strike.')
@@ -579,7 +579,7 @@ Pinna, Hedge Witch, Gravesford`,
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-8-feature-9',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 3 })]
 				})
 			]
 		})

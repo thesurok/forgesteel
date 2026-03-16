@@ -15,7 +15,7 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-2-1-1',
-					selected: [ 'Hide' ]
+					selected: ['Hide']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-2-1-2',
@@ -29,8 +29,8 @@ export const prowler: SubClass = {
 						name: 'While No One’s Looking',
 						description: 'While everyone’s eyes are drawn to your foe, you take the opportunity to blend into the scenery.',
 						type: FactoryLogic.type.createTrigger('An enemy deals damage to a creature other than you.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You become invisible, use the Hide maneuver, and move up to a number of squares equal to your Intuition score, in any order. You remain invisible until the end of your next turn or you deal damage.'),
@@ -47,7 +47,7 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-sub-2-2-1a',
-					selected: [ PerkData.bornTracker ]
+					selected: [PerkData.bornTracker]
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-2-2-1b',
@@ -65,8 +65,8 @@ export const prowler: SubClass = {
 									name: 'Jump Scare',
 									description: 'Surprised to see me?',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 									target: 'Each enemy in the area with line of effect',
 									cost: 5,
 									sections: [
@@ -91,8 +91,8 @@ export const prowler: SubClass = {
 									name: 'Close Combat',
 									description: 'Your companion darts around their target, staying out of reach and using them as a shield.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature or object',
 									cost: 5,
 									sections: [
@@ -146,8 +146,8 @@ export const prowler: SubClass = {
 									name: 'Phantom Form',
 									description: 'Your companion becomes a soul-freezing wraith.',
 									type: FactoryLogic.type.createMove(),
-									keywords: [ AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -164,9 +164,9 @@ export const prowler: SubClass = {
 									name: 'Raking Lunge',
 									description: 'Your companion ducks under your enemy’s guard and rakes open their soft vitals, leaving them vulnerable to further attacks.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(2) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(2)],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -215,9 +215,9 @@ export const prowler: SubClass = {
 									name: 'Chaos Duel',
 									description: 'You or your companion drag your chosen foe into storms of the Primordial Plane.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
@@ -236,9 +236,9 @@ While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightnin
 									name: 'Nightmare Apparition',
 									description: 'Your companion appears next to their victim in the guise of a heart-stopping nightmare.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Your companion teleports up to their speed.'),

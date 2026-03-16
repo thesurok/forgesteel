@@ -17,7 +17,7 @@ export const cryokinetic: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-sub-2-1-1',
-					listOptions: [ SkillList.Crafting ]
+					listOptions: [SkillList.Crafting]
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-2-1-2',
@@ -59,7 +59,7 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 				FactoryLogic.feature.createDamageModifier({
 					id: 'null-sub-2-2-1b',
 					modifiers: [
-						FactoryLogic.damageModifier.createCharacteristic({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, characteristics: [ Characteristic.Intuition ], multiplier: 2 })
+						FactoryLogic.damageModifier.createCharacteristic({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, characteristics: [Characteristic.Intuition], multiplier: 2 })
 					]
 				}),
 				FactoryLogic.feature.createChoice({
@@ -73,13 +73,13 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Entropic Field',
 									description: 'You drastically increase the local entropy.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 									target: 'Each enemy in the area',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '6 cold damage; A < [weak], slowed (save ends)',
 											tier2: '9 cold damage; A < [average], slowed (save ends)',
 											tier3: '13 cold damage; A < [strong], slowed (save ends)'
@@ -96,8 +96,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Heat Sink',
 									description: 'You absorb ambient heat, coating the ground in frost and precipitating snow from the air',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
@@ -143,13 +143,13 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Ice Pillars',
 									description: 'Pillars of ice erupt from the ground and launch your foes into the air.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Three creatures or objects',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Intuition ],
+											characteristic: [Characteristic.Intuition],
 											tier1: 'Vertical slide 6',
 											tier2: 'Vertical slide 8',
 											tier3: 'Vertical slide 10'
@@ -167,8 +167,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Wall of Ice',
 									description: 'You create a wall of ice.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 }) ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
 									target: 'Special',
 									cost: 9,
 									sections: [
@@ -210,13 +210,13 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Absolute Zero',
 									description: 'You become the coldest thing in the timescape.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Intuition ],
+											characteristic: [Characteristic.Intuition],
 											tier1: 'You gain 20 temporary Stamina.',
 											tier2: 'You gain 30 temporary Stamina.',
 											tier3: 'You gain 40 temporary Stamina.'
@@ -234,13 +234,13 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									name: 'Heat Drain',
 									description: 'You drain all the heat from the target.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Intuition ],
+											characteristic: [Characteristic.Intuition],
 											tier1: '8 + I cold damage; M < [weak], restrained (save ends)',
 											tier2: '11 + I cold damage; M < [average], restrained (save ends)',
 											tier3: '15 + I cold damage; M < [strong], restrained (save ends)'

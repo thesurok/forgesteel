@@ -23,7 +23,7 @@ Jackson Bootblack`,
 	subclassName: 'Амплуа',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Agility, Characteristic.Presence ]
+		[Characteristic.Agility, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -43,16 +43,16 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'UH5m1URtvSjZqfQb',
-					selected: [ 'Read Person' ]
+					selected: ['Read Person']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'GjD2ZwdbvEIZOKQV',
-					listOptions: [ SkillList.Interpersonal ],
+					listOptions: [SkillList.Interpersonal],
 					count: 2
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'WpHiobCwPhxC5q2g',
-					listOptions: [ SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'tS1DEkc8ZWqFRIxE',
@@ -107,8 +107,8 @@ Jackson Bootblack`,
 						name: 'Хореографія',
 						description: 'Топи, удари, кроки. Все це "хореографія".',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожен цільовий об’єкт, який починає свій хід у зоні впливу, отримує бонус +2 до швидкості до кінця свого ходу.')
@@ -121,8 +121,8 @@ Jackson Bootblack`,
 						name: 'Оживляючий лимерик',
 						description: 'Жив-був чоловік із столиці…',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності. Кожна обрана ціль може витратити Відновлення.')
@@ -168,7 +168,7 @@ Jackson Bootblack`,
 									name: 'Дозвольте представити сьогоднішніх гравців',
 									description: '',
 									type: FactoryLogic.type.createMain(),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Щоразу, коли ви ходите першим у бойовій зустрічі, ви можете основною дією представити себе та своїх союзників супротивникам. Кожен союзник може зміститися на свою швидкість, а кидки здібностей проти них отримують подвійну перешкоду до кінця раунду. Крім того, будь-який застигнутий зненацька ворог більше не вважається застигнутим.')
@@ -201,7 +201,7 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tknnoxNMdhRdiF1e',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -297,7 +297,7 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'pBD0Fhn5vO1A26aB',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'faVh7riGGaN0uOHR',
@@ -337,7 +337,7 @@ Jackson Bootblack`,
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'ywf7fUdThUpCdF6J',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -345,8 +345,8 @@ Jackson Bootblack`,
 						name: 'Прожектор',
 						description: 'Глядачі стежать, тож краще дайте їм шоу.',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожен цільовий об’єкт, який починає свій хід у зоні, отримує 1 героїчний ресурс. Цей ресурс зникає наприкінці ходу цілі, якщо його не витрачено.')
@@ -396,11 +396,11 @@ Jackson Bootblack`,
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 + 1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'A7CsaTimMURrXg0M',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -464,11 +464,11 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'MJlch8xy0BmtjEAz',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'gIVmDrETVg4F0eTC',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		}
@@ -479,14 +479,14 @@ Jackson Bootblack`,
 			name: 'Мистецький фінт',
 			description: 'А вони казали, що фехтування — марна справа!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Two creatures or objects',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '2 шкоди',
 						tier2: '5 шкоди',
 						tier3: '7 шкоди'
@@ -505,14 +505,14 @@ Jackson Bootblack`,
 			name: 'Різкий сарказм',
 			description: 'Ось ви, випромінюєте свою звичну харизму.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '2 + П психічної шкоди; П < [weak], кровотеча (рят. кидок закінчує)',
 						tier2: '5 + П психічної шкоди; П < [average], кровотеча (рят. кидок закінчує)',
 						tier3: '7 + П психічної шкоди; П < [strong], кровотеча (рят. кидок закінчує)'
@@ -525,14 +525,14 @@ Jackson Bootblack`,
 			name: 'Провокатор',
 			description: 'Це не я! Що?',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '3 + П шкоди',
 						tier2: '6 + П шкоди',
 						tier3: '9 + П шкоди'
@@ -546,17 +546,17 @@ Jackson Bootblack`,
 			name: 'Дотепна перепалка',
 			description: 'Ліричний (і фізичний) випад ображає ворога й надихає союзника.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '4 + П психічної шкоди',
 						tier2: '5 + П психічної шкоди',
 						tier3: '7 + П психічної шкоди'
@@ -573,7 +573,7 @@ Jackson Bootblack`,
 			name: 'Суворий критик',
 			description: 'Один поганий відгук — і день зіпсовано.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
@@ -583,7 +583,7 @@ Jackson Bootblack`,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '7 + П звукової шкоди',
 						tier2: '10 + П звукової шкоди',
 						tier3: '13 + П звукової шкоди'
@@ -597,14 +597,14 @@ Jackson Bootblack`,
 			name: 'Гіпнотичні відтінки',
 			description: 'Ви створюєте зачаровуючу ноту, що вражаюче спотворює відчуття.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'зсунути на 1; І < [weak], приголомшений (рят. кидок закінчує)',
 						tier2: 'зсунути на 1; І < [average], приголомшений (рят. кидок закінчує)',
 						tier3: 'зсунути на 2; І < [strong], приголомшений (рят. кидок закінчує)'
@@ -622,14 +622,14 @@ Jackson Bootblack`,
 			name: 'Швидке переписування',
 			description: 'Ви вписуєте у сцену щось неочікуване, що заважає ворогу.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '4 шкоди; П < [weak], сповільнений (рят. кидок закінчує)',
 						tier2: '5 шкоди; П < [average], сповільнений (рят. кидок закінчує)',
 						tier3: '6 шкоди; П < [strong], скутий (рят. кидок закінчує)'
@@ -643,15 +643,15 @@ Jackson Bootblack`,
 			name: 'Затьмарити',
 			description: 'Маневруючи серед натовпу, ви неминуче залишаєте глядачів у передчутті більшого.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви зміщуєтеся на свою швидкість. Ви робите один кидок сили, який цілить у кожного ворога, до якого ви наблизилися під час цього зміщення.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility, Characteristic.Presence ],
+						characteristic: [Characteristic.Agility, Characteristic.Presence],
 						tier1: 'спровокований (до кінця ходу); Л < [weak], розпластаний',
 						tier2: 'спровокований (до кінця ходу); Л < [average], розпластаний',
 						tier3: 'спровокований (до кінця ходу); Л < [strong], розпластаний і не може встати (до кінця ходу)'
@@ -664,14 +664,14 @@ Jackson Bootblack`,
 			name: 'Драматичний поворот',
 			description: 'Подаруйте глядачам несподіванку.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'Ціль може зміститися на 1 клітинку і зробити безкоштовний удар.',
 						tier2: 'Ціль може зміститися до 2 клітинок і зробити безкоштовний удар з перевагою.',
 						tier3: 'Ціль може зміститися до 3 клітинок і зробити безкоштовний удар з перевагою, а потім може витратити Відновлення.'
@@ -684,8 +684,8 @@ Jackson Bootblack`,
 			name: 'Імітація смерті',
 			description: 'О, щасливий кинджал, ось твій піхви!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 5,
 			sections: [
@@ -697,8 +697,8 @@ Jackson Bootblack`,
 			name: 'Перевернути сценарій',
 			description: 'Ви переписуєте події, пояснюючи нові місця, де всі опинилися.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 5,
 			sections: [
@@ -710,14 +710,14 @@ Jackson Bootblack`,
 			name: 'Метод акторства',
 			description: 'Ваша гра так вражає, що ви самі починаєте вірити у неї.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '6 + Л шкоди; П < [weak], ослаблений (рят. кидок закінчує)',
 						tier2: '10 + Л шкоди; П < [average], ослаблений (рят. кидок закінчує)',
 						tier3: '14 + Л шкоди; П < [strong], ослаблений (рят. кидок закінчує)'
@@ -731,14 +731,14 @@ Jackson Bootblack`,
 			name: 'Розширені переробки',
 			description: 'Ні, це не так. Той ворог був он там!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'зсунути на 3; П < [weak], цей зсув ігнорує стійкість цілі',
 						tier2: 'зсунути на 5; П < [average], цей зсув ігнорує стійкість цілі',
 						tier3: 'зсунути на 7; П < [strong], цей зсув ігнорує стійкість цілі'
@@ -752,14 +752,14 @@ Jackson Bootblack`,
 			name: 'Пекельна гавота',
 			description: 'Палкий виступ запалює вогонь під ногами ваших союзників.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Each enemy in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '5 вогняної шкоди; Л < [weak], ослаблений (рят. кидок закінчує)',
 						tier2: '7 вогняної шкоди; Л < [average], ослаблений (рят. кидок закінчує)',
 						tier3: '10 вогняної шкоди; Л < [strong], ослаблений (рят. кидок закінчує)'
@@ -773,7 +773,7 @@ Jackson Bootblack`,
 			name: 'Зіркове соло',
 			description: 'Ваша вистава мандрує і не зупиняється, доки ваша аудиторія не буде повністю вражена.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(10)
@@ -783,7 +783,7 @@ Jackson Bootblack`,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '5 + П шкоди',
 						tier2: '8 + П шкоди; штовхнути на 3',
 						tier3: '11 + П шкоди; штовхнути на 5'
@@ -797,9 +797,9 @@ Jackson Bootblack`,
 			name: 'Нарешті зустрілися',
 			description: 'Ви магічно переплітаєте свою долю з іншою істотою — на краще чи на гірше.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
@@ -813,14 +813,14 @@ Jackson Bootblack`,
 			name: 'Екшн-герой',
 			description: 'Ви володієте зброєю з шаленою швидкістю, змушуючи всіх навколо боротися за своє життя.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '10 шкоди',
 						tier2: '14 шкоди',
 						tier3: '20 шкоди'
@@ -834,8 +834,8 @@ Jackson Bootblack`,
 			name: 'Помилка неперервності',
 			description: 'Ваша ціль одночасно опиняється у двох місцях.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One enemy or object',
 			cost: 9,
 			sections: [
@@ -847,8 +847,8 @@ Jackson Bootblack`,
 			name: 'Любовна пісня',
 			description: 'Ви граєте коротку мелодію, що оселяє вас у серці цілі.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 9,
 			sections: [
@@ -860,14 +860,14 @@ Jackson Bootblack`,
 			name: 'Жвава пісня',
 			description: 'Засліпіть їх своїм дотепним паттером, і вони забудуть, де знаходяться.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Special',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'Один союзник у межах дистанції може зробити свій хід одразу після вашого.',
 						tier2: 'Два союзники у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку.',
 						tier3: 'Три союзники у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку. Один із цих союзників уже міг зробити хід у цьому раунді бою.'
@@ -880,8 +880,8 @@ Jackson Bootblack`,
 			name: 'Драматичне відкриття',
 			description: 'Трохи сценічної хитрості — і там, де стояв ворог, тепер стоїть друг!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
@@ -893,9 +893,9 @@ Jackson Bootblack`,
 			name: 'Потужна балада',
 			description: 'Пісня для розбитих сердець огортає ціль і розквітає захисним вінцем із шипів.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли ціль отримує шкоду, будучи захеканою, вона може використати безкоштовну тригерну дію, щоб завдати джерелу цієї шкоди половину отриманої шкоди.')
@@ -906,8 +906,8 @@ Jackson Bootblack`,
 			name: 'Врятовано в монтажі',
 			description: 'Ви вигукуєте слово сили, що дозволяє переписати реальність на свій розсуд.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
@@ -923,14 +923,14 @@ Jackson Bootblack`,
 			name: 'Шоу має продовжуватися',
 			description: 'Ви спрямовуєте яскраве світло на гравців на сцені й змушуєте їх завершити виставу.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '6 шкоди; П < [weak], ціль не може добровільно залишити зону (до кінця ходу)',
 						tier2: '8 шкоди; П < [average], ціль не може добровільно залишити зону (рят. кидок закінчує)',
 						tier3: '12 шкоди; ціль не може добровільно залишити зону (до кінця ходу); якщо П < [strong], вона не може добровільно залишити зону (рят. кидок закінчує)'

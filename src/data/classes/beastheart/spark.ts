@@ -15,7 +15,7 @@ export const spark: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-4-1-1',
-					selected: [ 'Magic' ]
+					selected: ['Magic']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-4-1-2',
@@ -29,8 +29,8 @@ export const spark: SubClass = {
 						name: 'Self-Immolate',
 						description: 'You vanish in a sizzling burst of elemental energy.',
 						type: FactoryLogic.type.createTrigger('You take damage.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport up to 5 spaces and halve the triggering damage.'),
@@ -47,7 +47,7 @@ export const spark: SubClass = {
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-sub-4-2-1a',
-					selected: [ PerkData.wildsExplorer ]
+					selected: [PerkData.wildsExplorer]
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-4-2-1b',
@@ -65,9 +65,9 @@ export const spark: SubClass = {
 									name: 'Burning Lash',
 									description: 'A blazing whip of energy lashes out to curl around a foe’s legs and burn them to a crisp.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(2) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(2)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -93,8 +93,8 @@ export const spark: SubClass = {
 									name: 'Howling Gale',
 									description: 'A blizzard or thunderstorm sends foes flying and lifts you like a feather.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 									target: 'Each enemy in the area',
 									cost: 5,
 									sections: [
@@ -148,8 +148,8 @@ export const spark: SubClass = {
 									name: 'Elemental Form',
 									description: 'Your companion’s body becomes a bank of glowing coals, a web of arcing lightning, a cloud of rumbling thunder, or a flurry of dancing ice crystals.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -177,8 +177,8 @@ Your companion’s transformation lasts until the start of your next turn. At th
 									name: 'Killing Frost',
 									description: 'Black frost freezes boots to the floor and creeps up trapped victims until they are completely encased in ice.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
 									target: 'Each enemy in the area',
 									cost: 9,
 									sections: [
@@ -228,8 +228,8 @@ Your companion’s transformation lasts until the start of your next turn. At th
 									name: 'Phoenix Ascendant',
 									description: 'They’d tell stories in hushed tones of your companion’s last stand—if any of them were left to tell the tale.',
 									type: FactoryLogic.type.createTrigger('After taking damage, your companion is dead or dying.', { free: true }),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createSpecial('-') ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createSpecial('-')],
 									target: '-',
 									cost: 11,
 									sections: [
@@ -255,8 +255,8 @@ Your companion’s transformation lasts until the start of your next turn. At th
 									name: 'Wild Hunt',
 									description: 'Your companion summons a ravening pack of spectral ancestors to devour your foes.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [

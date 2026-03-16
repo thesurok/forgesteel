@@ -108,7 +108,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Xorannox the Tyract',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Horror', 'Overmind' ],
+			keywords: ['Horror', 'Overmind'],
 			encounterValue: 96,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -134,8 +134,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Toothful Thrashing',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -152,8 +152,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-4',
 						name: 'Grav Spike',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -171,7 +171,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-5',
 						name: 'Optical Collusion',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox commands all his eyestalks to move up to their speed.')
@@ -183,8 +183,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-6',
 						name: 'Shutout',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 						target: 'Special',
 						cost: 2,
 						sections: [
@@ -197,8 +197,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-7',
 						name: 'Cower!',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to Xorannox.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has I<3 they are frightened (save ends).')
@@ -220,8 +220,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-10',
 						name: 'Disruption Beam',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -238,7 +238,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-11',
 						name: 'All Eyes, All Rise',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox recreates any destroyed eyestalks, which return in unoccupied spaces on the encounter map with full Stamina.')
@@ -250,8 +250,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						id: 'xorannox-1-feature-12',
 						name: 'Panoptibeam',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox directs each of his eyestalks to use a signature ability against any target.')
@@ -265,7 +265,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Compulsion Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Controller),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -280,9 +280,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Compulsion Beam',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(6) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(6)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -306,7 +306,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Demolition Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Artillery),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -321,8 +321,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Explosion',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -346,7 +346,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Mover Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Controller),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -361,8 +361,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Telekinetic Beam',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(6) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(6)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -386,7 +386,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Necrotic Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Hexer),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -401,8 +401,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Necro Beam',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -427,7 +427,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Toxic Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Hexer),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -442,8 +442,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Toxic Vapors',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -467,7 +467,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			name: 'Zapper Eye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.Artillery),
-			keywords: [ 'Eyestalk', 'Horror', 'Overmind' ],
+			keywords: ['Eyestalk', 'Horror', 'Overmind'],
 			encounterValue: 0,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -482,8 +482,8 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Suffusing Strike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

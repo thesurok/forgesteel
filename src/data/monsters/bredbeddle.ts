@@ -77,7 +77,7 @@ Travelers warn one another of roads rumored to be haunted by “wild green knigh
 			name: 'Bredbeddle',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Bredbeddle', 'Giant' ],
+			keywords: ['Bredbeddle', 'Giant'],
 			encounterValue: 50,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -108,8 +108,8 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-4',
 						name: 'Executioner\'s Swing',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the burst',
 						cost: 'signature',
 						sections: [
@@ -131,9 +131,9 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-5',
 						name: 'Lop',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -151,7 +151,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-6',
 						name: 'Scramble',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf('while headless') ],
+						distance: [FactoryLogic.distance.createSelf('while headless')],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bredbeddle shifts up to their speed, and can push each creature who comes within their reach during the movement 1 square. Each square the bredbeddle exits during the movement becomes difficult terrain.')
@@ -163,8 +163,8 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-7',
 						name: 'Headway',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature or object',
 						cost: 5,
 						sections: [
@@ -184,8 +184,8 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						name: 'Envious Imitation',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('A creature targets the bredbeddle with a ranged strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bredbeddle uses the same ability against the triggering creature, using that creature’s bonus to any power rolls they have to make.')
@@ -197,8 +197,8 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-9',
 						name: 'Turn Green',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the burst',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -216,7 +216,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						id: 'bredbeddle-feature-10',
 						name: 'Challenge',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`The bredbeddle points at the target and issues them a challenge. If the target refuses, they turn green until the end of the encounter (see Turn Green).
@@ -230,8 +230,8 @@ If the target accepts, the bredbeddle shifts to a space adjacent to the target, 
 						id: 'bredbeddle-feature-11',
 						name: 'Headlam Rampage',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Four creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

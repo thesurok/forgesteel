@@ -88,7 +88,7 @@ export class TitleData {
 					id: 'title-brawler-1',
 					name: 'Duck!',
 					type: FactoryLogic.type.createTrigger('An enemy strikes you while a second creature is flanking you'),
-					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
+					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
 					target: 'One enemy',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви перенаправляєте удар проти другої істоти. Після використання цієї переваги ви не можете використати її знову, поки не заробите 1 або більше Перемог.')
@@ -177,8 +177,8 @@ export class TitleData {
 				ability: FactoryLogic.createAbility({
 					id: 'title-dwarf-legionnaire-3',
 					name: 'Stonemeld',
-					type: FactoryLogic.type.createManeuver({ qualifiers: [ 'Adjacent to a stone wall' ] }),
-					distance: [ FactoryLogic.distance.createSelf() ],
+					type: FactoryLogic.type.createManeuver({ qualifiers: ['Adjacent to a stone wall'] }),
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви отримуєте прикриття. Це прикриття триває, доки ви не покинете клітку або не використаєте здібність.')
@@ -318,8 +318,8 @@ You find an agent who can provide you with three pieces of information about the
 					id: 'title-mage-hunter-2',
 					name: 'Oh No You Don’t!',
 					type: FactoryLogic.type.createTrigger('Target uses an ability with the Magic keyword'),
-					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
-					target: 'One creature',
+					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
+					target: 'Одна істота',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Виконайте безкоштовний удар.')
 					]
@@ -336,7 +336,7 @@ You find an agent who can provide you with three pieces of information about the
 							name: 'Stink of Magic',
 							description: 'You open your senses to the residue of magic',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 							target: 'Each creature in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу ви знаєте, чи є кожна ціль конструкцією, нежиттю чи істотою з іншого світу, а також чи використовувала вона магічну здібність протягом попередньої години.')
@@ -372,7 +372,7 @@ You find an agent who can provide you with three pieces of information about the
 					name: 'Heedless Pursuer',
 					description: 'You open your senses to the residue of magic',
 					type: FactoryLogic.type.createManeuver({ free: true }),
-					distance: [ FactoryLogic.distance.createSelf() ],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви завдаєте собі 1d6 шкоди, яку не можна зменшити жодним чином. Коли це відбувається, ви ігноруєте важкопрохідну місцевість і можете збільшити дальність будь-якого стрибка на 1 клітку до кінця вашого ходу.')
@@ -496,8 +496,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'Come Out to Play',
 					description: 'Come out to play-yay!',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 					target: 'Each enemy in the area hidden to you',
 					cost: 1,
 					sections: [
@@ -583,8 +583,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					id: 'title-troupe-tactics-1',
 					name: 'Flying Circus',
 					type: FactoryLogic.type.createTrigger('During target\'s turn'),
-					distance: [ FactoryLogic.distance.createSpecial('Adjacent') ],
-					target: 'One ally',
+					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
+					target: 'Один союзник',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви штовхаєте ціль на до 2 клітинок, якщо її розмір такий самий, як ваш, або на 4 клітинки, якщо вона менша. Якщо це штовхання спричиняє падіння союзника, він може використати маневр перед падінням, щоб зменшити висоту падіння на 2.')
 					]
@@ -663,7 +663,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 							FactoryLogic.damageModifier.createCharacteristic({
 								damageType: DamageType.Corruption,
 								modifierType: DamageModifierType.Immunity,
-								characteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+								characteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 							})
 						]
 					})
@@ -675,8 +675,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'Holy Terror',
 					description: 'Return to your grave!',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 					target: 'Each undead enemy in the area',
 					cost: 3,
 					sections: [
@@ -717,14 +717,14 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'Showstopper',
 					description: 'Show\'s over, kids!',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-					distance: [ FactoryLogic.distance.createMelee() ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+					distance: [FactoryLogic.distance.createMelee()],
+					target: 'Одна істота',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility ],
+								characteristic: [Characteristic.Might, Characteristic.Agility],
 								tier1: '6 шкоди; І < [слабкий], сповільнений (рят. кидок завершує)',
 								tier2: '10 шкоди; І < [середній], зляканий (рят. кидок завершує)',
 								tier3: '14 шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
@@ -760,7 +760,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					id: 'title-awakened-3',
 					name: 'Telepathy',
 					type: FactoryLogic.type.createManeuver(),
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One creature who understands a langauge you know',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви телепатично спілкуєтесь із ціллю. Ціль може відповісти телепатично як частина того ж маневру.')
@@ -784,9 +784,9 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'Charge!',
 					description: 'Follow me!',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-					target: 'Self and each ally in the area',
+					keywords: [AbilityKeyword.Area],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+					target: 'На себе і кожного союзника в зоні впливу',
 					cost: 9,
 					sections: [
 						FactoryLogic.createAbilitySectionText('Кожна ціль може виконати основну дію «Charge».')
@@ -907,7 +907,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-1-1',
 						name: 'Gift of Charm',
-						selected: [ 'Khelt' ]
+						selected: ['Khelt']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-1-2',
@@ -923,7 +923,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-2-1',
 						name: 'Gift of Foresight',
-						selected: [ 'Khelt' ]
+						selected: ['Khelt']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-2-2',
@@ -939,7 +939,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-3-1',
 						name: 'Gift of Knowledge',
-						selected: [ 'Khelt' ]
+						selected: ['Khelt']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-3-2',
@@ -970,14 +970,14 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'The Harder They Fall',
 					description: 'Timber!',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-					distance: [ FactoryLogic.distance.createMelee() ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+					distance: [FactoryLogic.distance.createMelee()],
+					target: 'Одна істота',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility ],
+								characteristic: [Characteristic.Might, Characteristic.Agility],
 								tier1: '7 шкоди; С < [слабкий], розпластаний і не може встати (рят. кидок завершує)',
 								tier2: '11 шкоди; С < [середній], розпластаний і не може встати (рят. кидок завершує)',
 								tier3: '16 шкоди; С < [сильний], розпластаний і не може встати (рят. кидок завершує)'
@@ -1013,7 +1013,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					id: 'title-godsworn-2',
 					name: 'Last-Ditch Prayer',
 					type: FactoryLogic.type.createManeuver({ free: true }),
-					distance: [ FactoryLogic.distance.createSelf() ],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви виголошуєте молитву про допомогу, отримуючи пул у 2d10 одиниць Героїчного Ресурсу, який надає ваш клас. Цей пул зникає наприкінці вашого ходу, якщо ви ним не скористались. Після використання цієї переваги ви не можете використати її знову, доки не виконаєте іншу послугу для бога чи святого, або доки не підніметесь на рівень.')
@@ -1066,9 +1066,9 @@ Coming through with hot soup!
 
 I better watch out for that banana peel!`,
 					type: FactoryLogic.type.createTrigger('An ally makes a test to lie to, pick the pocket of, hide from, or sneak by the target and doesn’t like the outcome.'),
-					keywords: [ AbilityKeyword.Ranged ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Ranged],
+					distance: [FactoryLogic.distance.createRanged(10)],
+					target: 'Одна істота',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви на мить привертаєте увагу цілі, дозволяючи вашому союзнику перебросити свій тест. Після використання цієї здібності ви не можете застосувати її повторно проти тієї ж цілі протягом 1 години.')
 					]
@@ -1103,14 +1103,14 @@ I better watch out for that banana peel!`,
 					name: 'Knightly Challenge',
 					description: 'Have at thee!',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-					distance: [ FactoryLogic.distance.createMelee() ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+					distance: [FactoryLogic.distance.createMelee()],
+					target: 'Одна істота',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility ],
+								characteristic: [Characteristic.Might, Characteristic.Agility],
 								tier1: '7 шкоди; спровокований (рят. кидок завершує)',
 								tier2: '11 шкоди; спровокований (рят. кидок завершує)',
 								tier3: '16 шкоди; спровокований (рят. кидок завершує)'
@@ -1200,8 +1200,8 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 					id: 'title-sworn-hunter-1',
 					name: 'Hunter\'s Oath',
 					type: FactoryLogic.type.createMain(),
-					distance: [ FactoryLogic.distance.createRanged(10) ],
-					target: 'One creature',
+					distance: [FactoryLogic.distance.createRanged(10)],
+					target: 'Одна істота',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви даєте мисливську присягу проти цілі. Ця присяга триває доти, поки ціль не помре або поки ви не дасте мисливську присягу проти іншої істоти. Поки присяга діє, ви магічно знаєте напрямок до цілі, якщо вона в межах 50 миль від вас, а ваші здібності, що завдають шкоди, отримують +5 до шкоди проти цієї цілі.')
 					]
@@ -1455,14 +1455,14 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 					name: 'The Devil’s Chord',
 					description: 'Helloooo Orden!',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 					target: 'Each creature in the area',
 					cost: 9,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: 'Ви отримуєте 4 звукової шкоди, якщо не маєте навички Performance.',
 								tier2: '6 звукової шкоди; С < [середній], ослаблення (рят. кидок завершує)',
 								tier3: '10 звукової шкоди; С < [середній], ослаблення і кровотеча (рят. кидок завершує)'

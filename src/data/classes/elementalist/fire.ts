@@ -15,7 +15,7 @@ export const fire: SubClass = {
 				FactoryLogic.feature.createAbilityDamage({
 					id: 'elementalist-sub-2-1-1',
 					name: 'Acolyte of Fire',
-					keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic ],
+					keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic],
 					value: 1
 				}),
 				FactoryLogic.feature.createAbility({
@@ -24,8 +24,8 @@ export const fire: SubClass = {
 						name: 'Return to Formlessness',
 						description: 'With the merest touch, you cause an object to turn into slag or ash.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One mundane object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You heat the target and cause it to melt or combust, destroying it. If the object is larger than 1 square, then only the square of the object you touch is destroyed.')
@@ -38,9 +38,9 @@ export const fire: SubClass = {
 						name: 'Explosive Assistance',
 						description: 'You add a little magic to an ally’s aggression at just the right time.',
 						type: FactoryLogic.type.createTrigger('The target force moves a creature or object.'),
-						keywords: [ AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The forced movement distance gains a bonus equal to your Reason score.'),
 							FactoryLogic.createAbilitySectionSpend({

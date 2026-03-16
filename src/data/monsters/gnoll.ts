@@ -54,8 +54,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 				name: 'Iron Jaws',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 3,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 })],
 				target: 'Special',
 				sections: [
 					FactoryLogic.createAbilitySectionText('A gnoll acting this turn drops an iron-jawed snare into the affected area. The first time an enemy steps into the area, they make an **Agility test**. If they were unaware of the snare, they make the roll with a bane.'),
@@ -96,7 +96,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Abyssal Hyena',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Animal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Animal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8),
@@ -112,8 +112,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Snapjaw',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -137,7 +137,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Chainflail',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -153,8 +153,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Chain Shotput',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -178,7 +178,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Mage Mauler',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -194,8 +194,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Wizard Ripper',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -220,7 +220,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Wildling',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -235,8 +235,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Flail',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -260,7 +260,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Abyssal Archer',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -275,8 +275,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Dark Longbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -299,7 +299,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of their next turn, each target gains an edge on their next strike. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
 						]
@@ -322,7 +322,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Abyssal Summoner',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Support),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -337,8 +337,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Flame Wad',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -356,7 +356,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						id: 'gnoll-6-feature-2',
 						name: 'Call Abyssal Hyenas',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Special',
 						cost: 3,
 						sections: [
@@ -370,7 +370,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Summoner\'s Cackletongue',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 4,
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('One abyssal hyena target turns into a **gnoll marauder**, keeping their current Stamina. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
@@ -389,7 +389,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Bonesplitter',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -404,8 +404,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Three-Tail Flail',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -428,7 +428,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Up to three targets can make a free strike. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
 						]
@@ -446,7 +446,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Cackler',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -461,9 +461,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Moment of Brutality',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -481,8 +481,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Cackler\'s Cackletongue',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 4,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each enemy target makes an **Intuition test**.'),
@@ -510,7 +510,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Marauder',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -525,8 +525,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Fury Flail',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -553,7 +553,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
 						]
@@ -571,7 +571,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Tusker Demon',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon', 'Gnoll' ],
+			keywords: ['Abyssal', 'Demon', 'Gnoll'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(7),
@@ -586,8 +586,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Gore',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -605,7 +605,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						id: 'gnoll-10-feature-2',
 						name: 'Vengeful Tusker',
 						type: FactoryLogic.type.createTrigger('An enemy within distance deals damage to the tusker.'),
-						distance: [ FactoryLogic.distance.createRanged(7) ],
+						distance: [FactoryLogic.distance.createRanged(7)],
 						target: 'Triggering enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tusker demon uses the Charge main action and Gore against the target.')
@@ -629,7 +629,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 			name: 'Gnoll Carnage',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Abyssal', 'Gnoll' ],
+			keywords: ['Abyssal', 'Gnoll'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -644,7 +644,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Shrapnel Whip',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -667,7 +667,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target deals an extra 3 damage with their next strike until the start of the carnage’s next turn. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
 						]
@@ -693,7 +693,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						id: 'gnoll-11-feature-6',
 						name: 'Call Up from The Abyss',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The carnage summons four **abyssal hyenas** and 5 **abyssal hyenas** into unoccupied spaces within distance.')
@@ -705,7 +705,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						id: 'gnoll-11-feature-7',
 						name: 'Edacity',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })
@@ -721,8 +721,8 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						id: 'gnoll-11-feature-8',
 						name: 'Deepest Wounds',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each winded enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The carnage\'s eyes and all explosed blood within distance glow bright red. Each target makes a **Presence test**.'),

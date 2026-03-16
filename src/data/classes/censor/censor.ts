@@ -12,7 +12,7 @@ import { paragon } from '@/data/classes/censor/paragon';
 
 export const censor: HeroClass = {
 	id: 'class-censor',
-	name: 'Censor',
+	name: 'Цензор',
 	description: `
 Демони й безсмертні бояться вас. Злочинці тікають, щойно бачать вашу тінь. Агенти хаосу, богохульники та єретики тремтять від звуку вашого голосу. Ви несете силу богів, озброєні гнівом і послані у світ, щоб спершу розшукати, а тоді засудити тих, чиї вчинки або навіть саме існування є анафемою для вашої церкви.
 
@@ -21,7 +21,7 @@ export const censor: HeroClass = {
 	subclassName: 'Order',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Presence ]
+		[Characteristic.Might, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -41,7 +41,7 @@ export const censor: HeroClass = {
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'censor-resource',
-					name: 'Wrath',
+					name: 'Гнів',
 					gains: [
 						{
 							tag: 'start',
@@ -62,38 +62,38 @@ export const censor: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-1-1',
-					listOptions: [ SkillList.Interpersonal, SkillList.Lore ],
+					listOptions: [SkillList.Interpersonal, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createDomainChoice({
 					id: 'censor-1-2',
 					characteristic: Characteristic.Presence,
-					levels: [ 1, 4, 7 ]
+					levels: [1, 4, 7]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'censor-1-4',
-						name: 'Judgment',
-						description: 'You utter a prayer that outlines your foe in holy energy.',
+						name: 'Суд',
+						description: 'Ви вимовляєте молитву, що окреслює вашого ворога священною енергією.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One enemy',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один ворог',
 						sections: [
-							FactoryLogic.createAbilitySectionText(`The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another censor judges the target.
+							FactoryLogic.createAbilitySectionText(`Ціль перебуває під вашим судом до кінця зустрічі, доки ви не використаєте цю здібність знову, добровільно не припините цей ефект (дія не потрібна), або доки інший цензор не засудить цю ціль.
 
-Whenever a creature judged by you uses a main action and is within your line of effect, you can use a free triggered action to deal holy damage equal to twice your Presence score to them.
+Коли істота, засуджена вами, виконує основну дію і знаходиться у вашій лінії впливу, ви можете використати безкоштовну тригерну дію, щоб завдати їй священної шкоди, рівної подвоєному показнику вашої Присутності.
 
-When a creature judged by you is reduced to 0 Stamina, you can use a free triggered action to use this ability against a new target.
+Якщо істота, засуджена вами, знижується до 0 Витривалості, ви можете використати безкоштовну тригерну дію, щоб спрямувати цю здібність на нову ціль.
 
-Additionally, you can spend 1 wrath to take one of the following free triggered actions:
+Крім того, ви можете витратити 1 гнів, щоб виконати одну з наведених нижче безкоштовних тригерних дій:
 
-* When an adjacent creature judged by you starts to shift, you make a melee free strike against them and their speed becomes 0 until the end of the current turn, preventing them from shifting.
-* When a creature judged by you within 10 squares makes a power roll, you cause them to take a bane on the roll.
-* When a creature judged by you within 10 squares uses an ability with a potency that targets only one creature, the potency is reduced by 1 for that creature.
-* If you damage a creature judged by you with a melee ability, the creature is taunted by you until the end of their next turn.
+* Коли сусідня істота, засуджена вами, починає зрушуватися, ви робите проти неї безкоштовний удар у ближньому бою, і її швидкість стає 0 до кінця поточного ходу, запобігаючи зрушенню.
+* Коли істота, засуджена вами, у межах 10 клітинок робить кидок сили, ви накладаєте на цей кидок шкоду (bane).
+* Коли істота, засуджена вами, у межах 10 клітинок використовує здібність з потужністю, що цілиться тільки в одну істоту, потужність для тієї істоти зменшується на 1.
+* Якщо ви пошкодите засуджену вами істоту ближньою здібністю, ця істота буде висміяна вами до кінця її наступного ходу.
 
-You can choose only one free triggered action option at a time, even if multiple options are triggered by the same effect.`),
+Ви можете вибрати тільки один варіант безкоштовної тригерної дії одночасно, навіть якщо кілька варіантів спрацьовують від того самого ефекту.`),
 							FactoryLogic.createAbilitySectionPackage('censor-judgment')
 						]
 					})
@@ -104,23 +104,23 @@ You can choose only one free triggered action option at a time, even if multiple
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'censor-1-6',
-						name: 'My Life for Yours',
-						description: 'You channel some of your vitality into more resilience for you or an ally.',
+						name: 'Моє життя за твоє',
+						description: 'Ви спрямовуєте частину своєї життєвої сили, щоб надати собі або союзнику більшу витривалість.',
 						type: FactoryLogic.type.createTrigger('The target starts their turn or takes damage.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Ви або один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You spend a Recovery and the target regains Stamina equal to your Recovery value.'),
+							FactoryLogic.createAbilitySectionText('Ви витрачаєте Відновлення, і ціль відновлює Витривалість, рівну вашому значенню Відновлення.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You can end one effect on the target that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.'
+								effect: 'Ви можете завершити один ефект на цілі, який закінчується рятівним кидком або який закінчується в кінці її ходу, або лежача ціль може підвестися.'
 							})
 						]
 					})
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'censor-1-7',
-					name: '1st-Level Domain Feature',
+					name: 'Особливість домену 1 рівня',
 					level: 1
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
@@ -142,7 +142,7 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'censor-2-1',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -151,8 +151,8 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.create({
 					id: 'censor-3-1',
-					name: 'Look On My Work and Despair',
-					description: 'Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [average], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [strong], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.'
+					name: 'Поглянь на мою працю і впади у відчай',
+					description: `Ваш суд збільшився в божественній силі, вселяючи страх у тих, кого ви засуджуєте. Коли ви використовуєте здібність Суд, ви можете витратити 1 гнів; якщо ціль має П < [average], вона злякається вас (рят. кидок). Крім того, коли істота, засуджена вами, знижується до 0 Витривалості і ви використовуєте Суд як безкоштовну тригерну дію, якщо нова ціль має П < [strong], вона злякається вас (рят. кидок). Якщо ціль уже злякана вами, вона замість цього отримує священну шкоду, рівну подвоєному вашому показнику Присутності.`
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'censor-3-2',
@@ -175,23 +175,23 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-4-2',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-4-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'censor-4-4',
-					name: 'Wrath Beyond Wrath',
+					name: 'Гнів понад гнів',
 					tag: 'deal-damage 2',
 					trigger: 'The first time each round that you deal damage to a creature judged by you',
 					value: '2',
-					replacesTags: [ 'deal-damage' ]
+					replacesTags: ['deal-damage']
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'censor-4-5',
-					name: '4th-Level Domain Feature',
+					name: 'Особливість домену 4 рівня',
 					level: 4
 				})
 			]
@@ -210,17 +210,17 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.create({
 					id: 'censor-6-1',
-					name: 'Implement of Wrath',
-					description: `Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:
+					name: 'Знаряддя гніву',
+					description: `Кожного разу, коли ви завершуєте відпочинок, ви можете вибрати зброю одного героя, включно зі своєю, щоб спрямувати через неї надприродну силу як знаряддя гніву вашого бога. Зброя стає магічною та отримує наступні переваги до вашого наступного відпочинку:
 
-* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.
-* Any creature struck by the weapon who has holy weakness and has P < [strong] is frightened and weakened (save ends).
-* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.
-* The weapon’s wielder can’t be made frightened.`
+* Удари цією зброєю завдають додаткової священної шкоди, рівної найвищому показнику характеристики носія.
+* Будь-яка істота, вражена цією зброєю, яка має вразливість до священного та має П < [strong], стає зляканою й ослабленою (рят. кидок).
+* Будь-який міньйон, уражений ударом цієї зброї, гине. Максимум Витривалості того міньйона вилучається з пулу міньйонів перед будь-яким нанесенням шкоди решті загону.
+* Носія зброї неможливо зробити зляканим.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-6-2',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -254,20 +254,20 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createDomainFeature({
 					id: 'censor-7-2',
-					name: '7th-Level Domain Feature',
+					name: 'Особливість домену 7 рівня',
 					level: 7
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'censor-7-3',
-					name: 'Focused Wrath',
+					name: 'Сфокусований гнів',
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-7-4',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				})
 			]
 		},
@@ -276,7 +276,7 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'censor-8-1',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'censor-8-2',
@@ -289,12 +289,12 @@ You can choose only one free triggered action option at a time, even if multiple
 			features: [
 				FactoryLogic.feature.create({
 					id: 'censor-9-1',
-					name: 'Improved Implement of Wrath',
-					description: `The weapon you target with your Implement of Wrath feature gains the following additional benefits:
+					name: 'Покращене знаряддя гніву',
+					description: `Зброя, яку ви вибираєте за допомогою знаряддя гніву, отримує такі додаткові переваги:
 
-* The weapon’s wielder and each ally adjacent to them gain a +2 bonus to saving throws.
-* At the end of each of the weapon wielder’s turns, each ally adjacent to the wielder makes a saving throw against each effect on them that is ended by a saving throw.
-* The weapon’s wielder has corruption immunity 10.`
+* Носій зброї та кожен союзник поруч отримують +2 до рятівних кидків.
+* Наприкінці кожного ходу носія зброї кожен союзник поруч робить рятівний кидок проти кожного ефекту на собі, який завершується рятівним кидком.
+* Носій зброї має імунітет до корупції 10.`
 				})
 			]
 		},
@@ -313,46 +313,44 @@ You can choose only one free triggered action option at a time, even if multiple
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'censor-10-2',
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-10-3',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Lore, SkillList.Intrigue]
 				}),
 				FactoryLogic.feature.create({
 					id: 'censor-10-4',
-					name: 'Templar',
-					description: `You are the ultimate representation of your god’s justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect associated with your chosen domain, or a domain you access with virtue. If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.
+					name: 'Тамплієр',
+					description: `Ви є втіленням правосуддя вашого бога у часовому просторі. Коли ви використовуєте здібність Суд, ви можете виконати безкоштовну тригерну дію, щоб активувати ефект домену проводу, пов’язаний з вашим вибраним доменом, або домен, до якого ви отримали доступ за доблестю. Якщо ефект вимагає використання вашого показника Інтуїції, використовуйте замість нього показник Присутності. Якщо ефект використовує рівень проводу, використовуйте рівень цензора замість цього.
 
-Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
+Крім того, коли ви берете відпочинок, ви можете відкрити портал, щоб відпочити у присутності своєї божества і привести із собою союзників. Коли ви це робите, ви можете поставити божеству три питання; Директор має відповісти чесно, якщо божество знає відповіді (хоча відповіді можуть бути криптичними або неповними). Коли ви закінчуєте відпочинок, ви й ваші союзники можете з’явитися в будь-якому місці часової течії, де хтось поклоняється вашому божеству.
 
-While you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double edge on power rolls made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god’s wrath, as determined by the Director.	 
-  
-  				`
+Під час відпочинку у присутності божества ваше божество може також надати пріоритетні цілі для здійснення правосуддя. Ви та ваші союзники отримуєте подвійний бонус на кидки сили проти таких цілей. Якщо ви намагаєтесь відкрити портал до вашого божества знову, перш ніж ви знищите пріоритетні цілі, ви зазнаєте гніву вашого бога, як вирішить Директор.`
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'censor-10-5',
-					name: 'Virtue',
+					name: 'Доблесть',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
-							value: 'XP gained'
+							trigger: 'Закінчення відпочинку',
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-You can spend 3 virtue to access one of your deity’s domains that you usually don’t have access to. When you do, you can use that domain’s features until you finish another respite.
+Ви можете витратити 3 доблесті, щоб отримати доступ до одного з доменів вашого божества, до якого зазвичай не маєте доступу. Коли ви це робите, ви можете використовувати функції того домену, доки не завершите інший відпочинок.
 
-Virtue remains until you spend it.`
+Доблесть зберігається, поки ви її не витратите.`
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'censor-10-6',
-					name: 'Wrath of the Gods',
+					name: 'Гнів богів',
 					tag: 'start 3',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '4',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				})
 			]
 		}
@@ -360,482 +358,482 @@ Virtue remains until you spend it.`
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'censor-ability-1',
-			name: 'Back, Blasphemer!',
-			description: 'You channel power through your weapon to repel foes.',
+			name: 'Геть, богохульнику!',
+			description: 'Ви спрямовуєте силу через свою зброю, щоб відштовхнути ворогів.',
 			type: FactoryLogic.type.createMain(),
 			cost: 'signature',
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 })],
+			target: 'Кожен ворог у зоні',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '2 holy damage; push 1',
-						tier2: '4 holy damage; push 2',
-						tier3: '6 holy damage; push 3'
+						characteristic: [Characteristic.Presence],
+						tier1: '2 священної шкоди; штовх 1',
+						tier2: '4 священної шкоди; штовх 2',
+						tier3: '6 священної шкоди; штовх 3'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-2',
-			name: 'Every Step ... Death!',
-			description: 'You show your foe a glimpse of their fate after death.',
+			name: 'Кожен крок... смерть!',
+			description: 'Ви показуєте ворогу проблиск його долі після смерті.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '5 + P psychic damage',
-						tier2: '7 + P psychic damage',
-						tier3: '10 + P psychic damage'
+						characteristic: [Characteristic.Presence],
+						tier1: '5 + П психічної шкоди',
+						tier2: '7 + П психічної шкоди',
+						tier3: '10 + П психічної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.')
+				FactoryLogic.createAbilitySectionText('Кожного разу, коли ціль добровільно рухається до кінця вашого наступного ходу, вона отримує 1 психічну шкоду за кожну клітинку, яку пройшла.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-3',
-			name: 'Halt, Miscreant!',
-			description: 'You infuse your weapon with holy magic that makes it difficult for your foe to get away.',
+			name: 'Зупинись, негіднику!',
+			description: 'Ви наповнюєте свою зброю священною магією, що ускладнює ворогу втечу.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature or object',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота або об’єкт',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '2 + M holy damage; P < [weak], slowed (save ends)',
-						tier2: '5 + M holy damage; P < [average], slowed (save ends)',
-						tier3: '7 + M holy damage; P < [strong], slowed (save ends)'
+						characteristic: [Characteristic.Might],
+						tier1: '2 + С священної шкоди; П < [weak], сповільнений (рят. кидок)',
+						tier2: '5 + С священної шкоди; П < [average], сповільнений (рят. кидок)',
+						tier3: '7 + С священної шкоди; П < [strong], сповільнений (рят. кидок)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-4',
-			name: 'Your Allies Cannot Save You!',
-			description: 'Your magic strike turns your foe’s guilt into a burst of holy power',
+			name: 'Твої союзники не врятують тебе!',
+			description: 'Ваш магічний удар перетворює провину ворога на вибух священної сили',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature or object',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота або об’єкт',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '3 + M holy damage',
-						tier2: '5 + M holy damage',
-						tier3: '8 + M holy damage'
+						characteristic: [Characteristic.Might],
+						tier1: '3 + С священної шкоди',
+						tier2: '5 + С священної шкоди',
+						tier3: '8 + С священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.')
+				FactoryLogic.createAbilitySectionText('Кожен ворог, що знаходиться поруч із ціллю, штовхається від цілі на число клітинок, рівне вашому показнику Присутності.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-5',
-			name: 'Behold, a Shield of Faith!',
-			description: 'A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.',
+			name: 'Ось щит віри!',
+			description: 'Потужний удар перетворює життєву силу ворога на священне сяйво, що огортає вас і союзника, відлякуючи ворогів, які можуть напасти.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature or object',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота або об’єкт',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '3 + M holy damage',
-						tier2: '6 + M holy damage',
-						tier3: '9 + M holy damage'
+						characteristic: [Characteristic.Might],
+						tier1: '3 + С священної шкоди',
+						tier2: '6 + С священної шкоди',
+						tier3: '9 + С священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you.')
+				FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу вороги мають шкоду (bane) на кидках здібностей, зроблених проти вас і кожного союзника, що знаходиться поруч із вами.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-6',
-			name: 'Driving Assault',
-			description: 'As you force your enemy back with your weapon, you use your faith to stay close.',
+			name: 'Рішучий наступ',
+			description: 'Коли ви відкидаєте ворога своєю зброєю, ви використовуєте віру, щоб залишатися поруч.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature or object',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота або об’єкт',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '3 + M damage; push 1',
-						tier2: '6 + M damage; push 3',
-						tier3: '9 + M damage; push 5'
+						characteristic: [Characteristic.Might],
+						tier1: '3 + С шкоди; штовх 1',
+						tier2: '6 + С шкоди; штовх 3',
+						tier3: '9 + С шкоди; штовх 5'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift up to your speed in a straight line toward the target after pushing them.')
+				FactoryLogic.createAbilitySectionText('Після штовхання ви можете зрушити в прямій лінії до цілі на відстань до вашої швидкості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-7',
-			name: 'The Gods Punish and Defend',
-			description: 'You channel holy energy to smite a foe and heal an ally.',
+			name: 'Боги карають і захищають',
+			description: 'Ви спрямовуєте священну енергію, щоб уразити ворога та зцілити союзника.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature or object',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота або об’єкт',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '5 + M holy damage',
-						tier2: '8 + M holy damage',
-						tier3: '11 + M holy damage'
+						characteristic: [Characteristic.Might],
+						tier1: '5 + С священної шкоди',
+						tier2: '8 + С священної шкоди',
+						tier3: '11 + С священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value.')
+				FactoryLogic.createAbilitySectionText('Ви можете витратити Відновлення, щоб дозволити собі або одному союзнику в межах 10 клітинок відновити Витривалість, рівну вашому значенню Відновлення.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-8',
-			name: 'Repent!',
-			description: 'You conjure memories of their sins to harry your foes.',
+			name: 'Покайся!',
+			description: 'Ви викликаєте спогади про їхні гріхи, щоб терзати своїх ворогів.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '5 + P holy damage; I < [weak], dazed (save ends)',
-						tier2: '8 + P holy damage; I < [average], dazed (save ends)',
-						tier3: '11 + P holy damage; I < [strong], dazed (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '5 + П священної шкоди; І < [weak], приголомшений (рят. кидок)',
+						tier2: '8 + П священної шкоди; І < [average], приголомшений (рят. кидок)',
+						tier3: '11 + П священної шкоди; І < [strong], приголомшений (рят. кидок)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-9',
-			name: 'Arrest',
-			description: '“I got you, you son of a bitch.”',
+			name: 'Затримай',
+			description: '«Я впіймав тебе, виродку.»',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '6 + M holy damage; grabbed',
-						tier2: '9 + M holy damage; grabbed',
-						tier3: '13 + M holy damage; grabbed'
+						characteristic: [Characteristic.Might],
+						tier1: '6 + С священної шкоди; схоплений',
+						tier2: '9 + С священної шкоди; схоплений',
+						tier3: '13 + С священної шкоди; схоплений'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance.')
+				FactoryLogic.createAbilitySectionText('Якщо ціль робить удар по істоті, будучи схопленою таким чином, ви можете витратити 3 гніву, щоб завдати їй священної шкоди, рівної вашому показнику Присутності, а потім змінити ціль удару на іншу ціль у межах дальності цього удару.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-10',
-			name: 'Behold the Face of Justice!',
-			description: 'You attack a foe and your enemies behold a vision of the true nature of your resolve.',
+			name: 'Ось обличчя правосуддя!',
+			description: 'Ви атакуєте ворога, і ваші вороги бачать видіння істинної природи вашої рішучості.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '3 + M holy damage; if the target has P < [weak], each enemy within 2 squares of them is frightened of you (save ends)',
-						tier2: '5 + M holy damage; if the target has P < [average], each enemy within 2 squares of them is frightened of you (save ends)',
-						tier3: '8 + M holy damage; if the target has P < [strong], each enemy within 2 squares of them is frightened of you (save ends)'
+						characteristic: [Characteristic.Might],
+						tier1: '3 + С священної шкоди; якщо ціль має П < [weak], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок)',
+						tier2: '5 + С священної шкоди; якщо ціль має П < [average], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок)',
+						tier3: '8 + С священної шкоди; якщо ціль має П < [strong], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score.')
+				FactoryLogic.createAbilitySectionText('Кожен ворог, наляканий цією здібністю, штовхається на 2 клітинки від цілі і отримує психічну шкоду, рівну вашому показнику Присутності.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-11',
-			name: 'Censored',
-			description: 'Judged and sentenced.',
+			name: 'Осуджено',
+			description: 'Ось — осуджено й покарано.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '2 + M holy damage',
-						tier2: '3 + M holy damage',
-						tier3: '5 + M holy damage'
+						characteristic: [Characteristic.Might],
+						tier1: '2 + С священної шкоди',
+						tier2: '3 + С священної шкоди',
+						tier3: '5 + С священної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.')
+				FactoryLogic.createAbilitySectionText('Коли ціль, що не є лідером або соло-істотою, стає захеканою через цю здібність, вона знижується до 0 Витривалості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-12',
-			name: 'Purifying Fire',
-			description: 'The gods judge, fire cleanses.',
+			name: 'Очищувальний вогонь',
+			description: 'Боги судять, вогонь очищає.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '5 + M holy damage; M < [weak], the target has fire weakness 3 (save ends)',
-						tier2: '9 + M holy damage; M < [average], the target has fire weakness 5 (save ends)',
-						tier3: '12 + M holy damage; M < [strong], the target has fire weakness 7 (save ends)'
+						characteristic: [Characteristic.Might],
+						tier1: '5 + С священної шкоди; С < [weak], ціль має вогняну вразливість 3 (рят. кидок)',
+						tier2: '9 + С священної шкоди; С < [average], ціль має вогняну вразливість 5 (рят. кидок)',
+						tier3: '12 + С священної шкоди; С < [strong], ціль має вогняну вразливість 7 (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage.')
+				FactoryLogic.createAbilitySectionText('Поки ціль має вогняну вразливість від цієї здібності, ви можете обрати, щоб ваші здібності завдавали цілі вогняної шкоди замість священної.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-13',
-			name: 'Edict of Disruptive Isolation',
-			description: 'The evil within your foes detonates with holy fire that burns only the guilty.',
+			name: 'Едикт руйнівної ізоляції',
+			description: 'Зло всередині ваших ворогів вибухає священним вогнем, що палає лише винних.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не опинитесь у стані вмирання, кожна ціль отримує священну шкоду, рівну вашому показнику Присутності, наприкінці кожного вашого ходу. Ціль отримує додаткові 2d6 священної шкоди, якщо вона засуджена вами або якщо перебуває поруч із будь-яким ворогом.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-14',
-			name: 'Edict of Perfect Order',
-			description: 'Within the area of your divine presence, your enemies will regret using their fell abilities.',
+			name: 'Едикт досконалого порядку',
+			description: 'У межах вашої божественної присутності вороги пошкодують про використання своїх злих здібностей.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice, they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не опинитесь у стані вмирання, коли ціль використовує здібність, що коштує Злоби, вона отримує священну шкоду, рівну тричі вашому показнику Присутності. Ціль, засуджена вами, отримує додаткові 2d6 священної шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-15',
-			name: 'Edict of Purifying Pacifism',
-			description: 'You shed a righteous energy that punishes enemies who would harm you or your allies.',
+			name: 'Едикт очищаючого пацифізму',
+			description: 'Ви випромінюєте праведну енергію, яка карає ворогів, що намагаються завдати шкоди вам або вашим союзникам.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не опинитесь у стані вмирання, коли ціль робить удар, вона отримує священну шкоду, рівну подвоєному вашому показнику Присутності. Ціль, засуджена вами, отримує додаткові 2d6 священної шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-16',
-			name: 'Edict of Stillness',
-			description: 'The holy aura you project makes it painful for evil-doers to leave your reach.',
+			name: 'Едикт нерухомості',
+			description: 'Священна аура, що ви розгортаєте, робить болючим для злочинців покидати вашу досяжність.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
-			target: 'Each enemy in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
+			target: 'Кожен ворог у зоні',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever a target moves or is force moved out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не опинитесь у стані вмирання, коли ціль рухається або примусово переміщується за межі зони, вона отримує священну шкоду, рівну подвоєному вашому показнику Присутності. Ціль, засуджена вами, яка рухається добровільно, отримує додаткові 2d6 священної шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-17',
-			name: 'Gods Grant Thee Strength',
-			description: 'You channel divine force for movement that cannot be stopped.',
+			name: 'Боги дарують тобі силу',
+			description: 'Ви спрямовуєте божественну силу для руху, який неможливо зупинити.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Ви або один союзник',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a free triggered action.')
+				FactoryLogic.createAbilitySectionText('Ціль знімає будь-який стан або ефект, який знімається рятівним кидком або який закінчується в кінці її ходу, або лежача ціль може підвестися. Потім ціль отримує 2 сплески, може зрушити до своєї швидкості, ігноруючи важкопрохідну місцевість, і може використати підписову ударну здібність як безкоштовну тригерну дію.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-18',
-			name: 'Orison of Victory',
-			description: 'You channel your god’s will to overcome hardship and inflict pain.',
+			name: 'Молитва перемоги',
+			description: 'Ви спрямовуєте волю свого бога, щоб подолати труднощі та завдати болю.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area ],
+			keywords: [AbilityKeyword.Area],
 			distance: [
 				FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })
 			],
-			target: 'Self and each ally in the area',
+			target: 'Ви та кожен союзник у зоні',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: 'Each target gains 1 surge.',
-						tier2: 'Each target gains 2 surges.',
-						tier3: 'Each target gains 3 surges.'
+						characteristic: [Characteristic.Presence],
+						tier1: 'Кожна ціль отримує 1 сплеск.',
+						tier2: 'Кожна ціль отримує 2 сплески.',
+						tier3: 'Кожна ціль отримує 3 сплески.'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A target can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.')
+				FactoryLogic.createAbilitySectionText('Ціль може завершити один ефект на собі, який завершується рятівним кидком або закінчується в кінці її ходу, або лежача ціль може підвестися.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-19',
-			name: 'Righteous Judgment',
-			description: 'You amplify the power of your judgment.',
+			name: 'Праведний суд',
+			description: 'Ви підсилюєте силу свого суду.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '10 + M damage',
-						tier2: '14 + M damage',
-						tier3: '20 + M damage'
+						characteristic: [Characteristic.Might],
+						tier1: '10 + С шкоди',
+						tier2: '14 + С шкоди',
+						tier3: '20 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли будь-який союзник завдає шкоди цілі, засудженій вами, цей союзник отримує 1 сплеск.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-20',
-			name: 'Shield of the Righteous',
-			description: 'You strike a foe and create a fleet of divine shields that protect your allies.',
+			name: 'Щит праведних',
+			description: 'Ви вражаєте ворога й створюєте сузір’я божественних щитів, що захищають ваших союзників.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina',
-						tier2: '14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina',
-						tier3: '20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina'
+						characteristic: [Characteristic.Might],
+						tier1: '10 + С шкоди; ви та кожен союзник поруч отримують 10 тимчасової Витривалості',
+						tier2: '14 + С шкоди; ви та кожен союзник поруч отримують 15 тимчасової Витривалості',
+						tier3: '20 + С шкоди; ви та кожен союзник поруч отримують 20 тимчасової Витривалості'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-21',
-			name: 'Excommunication',
-			description: 'You curse your foe to become a bane to their allies.',
+			name: 'Екскомунікація',
+			description: 'Ви проклинаєте ворога, щоб він став караючим для своїх союзників.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '9 + M damage; I < [weak], weakened (save ends)',
-						tier2: '13 + M damage; I < [average], weakened (save ends)',
-						tier3: '18 + M damage; I < [strong], weakened (save ends)'
+						characteristic: [Characteristic.Might],
+						tier1: '9 + С шкоди; І < [weak], ослаблений (рят. кидок)',
+						tier2: '13 + С шкоди; І < [average], ослаблений (рят. кидок)',
+						tier3: '18 + С шкоди; І < [strong], ослаблений (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities.')
+				FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу ціль, ослаблена таким чином, завдає священної шкоди, рівної подвоєному вашому показнику Присутності, кожному ворогу в межах 2 клітинок від неї. Крім того, ціль, ослаблена таким чином, не може бути обрана цілями здібностей її союзників.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-22',
-			name: 'Hand of the Gods',
-			description: 'You use your foe as a tool against your enemies.',
+			name: 'Рука богів',
+			description: 'Ви використовуєте свого ворога як інструмент проти супротивників.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createRanged(10)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '10 + M damage',
-						tier2: '15 + M damage',
-						tier3: '21 + M damage'
+						characteristic: [Characteristic.Might],
+						tier1: '10 + С шкоди',
+						tier2: '15 + С шкоди',
+						tier3: '21 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі, поки ціль засуджена вами, ви можете вирішити зробити її джерелом будь-якої вашої здібності. Додатково, така ціль рахується союзником для цілей фланговання.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-23',
-			name: 'Pillar of Holy Fire',
-			description: 'Your enemy’s guilt fuels a holy flame that burns your foes.',
+			name: 'Стовп священного вогню',
+			description: 'Вина вашого ворога підживлює священний вогонь, що палить ваших ворогів.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee()
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
-						tier1: '9 + M damage; I < [weak], dazed (save ends)',
-						tier2: '13 + M damage; I < [average], dazed (save ends)',
-						tier3: '18 + M damage; I < [strong], dazed (save ends)'
+						characteristic: [Characteristic.Might],
+						tier1: '9 + С шкоди; І < [weak], приголомшений (рят. кидок)',
+						tier2: '13 + С шкоди; І < [average], приголомшений (рят. кидок)',
+						tier3: '18 + С шкоди; І < [strong], приголомшений (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.')
+				FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу ціль, приголомшена таким чином, завдає священної шкоди, рівної подвоєному вашому показнику Присутності, кожному ворогу в межах 2 клітинок від неї.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'censor-ability-24',
-			name: 'Your Allies Turn on You!',
-			description: 'You turn your enemies’ ire to the target.',
+			name: 'Твої союзники обертаються проти тебе!',
+			description: 'Ви спрямовуєте лють ваших ворогів на ціль.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createRanged(10)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
-						tier1: '5 + P damage; I < [weak], slowed (save ends)',
-						tier2: '9 + P damage; I < [average], slowed (save ends)',
-						tier3: '12 + P damage; I < [strong], slowed (save ends)'
+						characteristic: [Characteristic.Presence],
+						tier1: '5 + П шкоди; І < [weak], сповільнений (рят. кидок)',
+						tier2: '9 + П шкоди; І < [average], сповільнений (рят. кидок)',
+						tier3: '12 + П шкоди; І < [strong], сповільнений (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead.')
+				FactoryLogic.createAbilitySectionText('Поки ціль сповільнена таким чином, кожен її союзник, який починає свій хід у межах 5 клітинок від неї, повинен використати безкоштовний маневр, щоб зробити безкоштовний удар по цілі. Додатково, поки ціль сповільнена таким чином, кожен її союзник у межах 5 клітинок, який може виконати тригерний безкоштовний удар проти іншої істоти, повинен замість цього зробити удар по цілі.')
 			]
 		})
 	],

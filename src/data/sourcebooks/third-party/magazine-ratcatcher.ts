@@ -106,13 +106,13 @@ Swift to bloom and swift to wither, Anthousai remind others of the fleeting natu
 							name: 'Luring Scent',
 							description: 'Enchanting blossoms emit a dangerously alluring scent, magically drawing an enemy toward them.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-							distance: [ FactoryLogic.distance.createRanged(10) ],
-							target: 'One creature',
+							keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+							distance: [FactoryLogic.distance.createRanged(10)],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+										characteristic: [Characteristic.Intuition, Characteristic.Presence],
 										tier1: '2 + I or P poison damage; P < [weak] pull 2',
 										tier2: '3 + I or P poison damage; P < [average] pull 3',
 										tier3: '5 + I or P poison damage; P < [strong] pull 4'
@@ -212,7 +212,7 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 						id: 'dryad-feature-3f',
 						name: 'Great Fortitude',
 						description: 'Your hearty constitution prevents you from losing strength.',
-						conditions: [ ConditionType.Weakened ]
+						conditions: [ConditionType.Weakened]
 					}),
 					value: 2
 				},
@@ -231,13 +231,13 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 							name: 'Seizing Roots',
 							description: 'Magical grasping roots erupt from the ground and entangle your foes.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-							distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+							keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 							target: 'Each enemy in the area',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [ Characteristic.Might, Characteristic.Presence ],
+										characteristic: [Characteristic.Might, Characteristic.Presence],
 										tier1: '2 damage; M < [weak] slowed (save ends)',
 										tier2: '3 damage; M < [average] slowed (save ends)',
 										tier3: '5 damage; M < [strong] restrained (save ends)'

@@ -10,8 +10,8 @@ export const mountain: Kit = {
 	name: 'Mountain',
 	description: 'The Mountain kit does exactly what it says on the tin. You don heavy armor and raise a heavy weapon to stand strong against your foes, quickly demolishing them when it\'s your turn to strike.',
 	type: '',
-	armor: [ KitArmor.Heavy ],
-	weapon: [ KitWeapon.Heavy ],
+	armor: [KitArmor.Heavy],
+	weapon: [KitWeapon.Heavy],
 	stamina: 9,
 	speed: 0,
 	stability: 2,
@@ -27,14 +27,14 @@ export const mountain: Kit = {
 				name: 'Pain For Pain',
 				description: 'An enemy who tagged you will pay for that.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 damage + M or A damage',
 							tier2: '5 damage + M or A damage',
 							tier3: '9 damage + M or A damage'

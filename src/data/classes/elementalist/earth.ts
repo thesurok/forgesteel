@@ -22,8 +22,8 @@ export const earth: SubClass = {
 						name: 'Motivate Earth',
 						description: 'The earth rises, falls, or opens up at your command.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -39,9 +39,9 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 						name: 'Skin Like Castle Walls',
 						description: 'You cover yourself or an ally in protective stone.',
 						type: FactoryLogic.type.createTrigger('The target takes damage.'),
-						keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -74,8 +74,8 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 						name: 'The Earth Accepts Me',
 						description: 'You can slip into the stone.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You step into a mundane dirt, metal, or stone object (including a wall) that is as large as you or larger. You can remain inside the object for as long as you like. While inside the object, you can observe events and speak to creatures outside it, but you don’t have line of effect to anything outside the object and vice versa. You can travel through the object freely until you exit it. If the object you meld with is destroyed, you take 10 damage and exit the object.')
@@ -119,8 +119,8 @@ Additionally, whenever an ally within distance of your Hurl Element ability is f
 								id: 'elementalist-sub-1-5-1b',
 								name: 'The Mountain Does Not Move',
 								type: FactoryLogic.type.createTrigger('The target is force moved', { free: true }),
-								distance: [ FactoryLogic.distance.createSpecial('The distance of your Hurl Element ability') ],
-								target: 'One ally',
+								distance: [FactoryLogic.distance.createSpecial('The distance of your Hurl Element ability')],
+								target: 'Один союзник',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You decrease your stability down to a minimum of 0, then increase the target’s stability by an amount equal to the stability you lost. This change lasts until the end of the round.')
 								]
@@ -156,8 +156,8 @@ Additionally, your Mantle of Essence now radiates magic that creates a calming a
 						name: 'Summon Source of Earth',
 						description: 'The ground rumbles as an elemental bursts forth, ready to serve.',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`

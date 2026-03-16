@@ -136,7 +136,7 @@ export const orcConduit = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Kalliak' ]
+				selected: ['Kalliak']
 			}
 		},
 		languages: [],
@@ -440,7 +440,7 @@ export const orcConduit = {
 																	qualifier: ''
 																}
 															],
-															target: 'Self and each ally in the area',
+															target: 'На себе і кожного союзника в зоні впливу',
 															cost: 9,
 															repeatable: false,
 															minLevel: 1,
@@ -948,7 +948,7 @@ export const orcConduit = {
 										qualifier: ''
 									}
 								],
-								target: 'Self or one ally',
+								target: 'Себе або одного союзника',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1083,7 +1083,7 @@ export const orcConduit = {
 														qualifier: ''
 													}
 												],
-												target: 'One ally',
+												target: 'Один союзник',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -1146,7 +1146,7 @@ export const orcConduit = {
 														qualifier: ''
 													}
 												],
-												target: 'One ally',
+												target: 'Один союзник',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -1211,7 +1211,7 @@ export const orcConduit = {
 													qualifier: ''
 												}
 											],
-											target: 'One ally',
+											target: 'Один союзник',
 											cost: 0,
 											repeatable: false,
 											minLevel: 1,
@@ -2259,7 +2259,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2428,7 +2428,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2540,7 +2540,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2809,7 +2809,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2921,7 +2921,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -3134,7 +3134,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One ally',
+				target: 'Один союзник',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -3295,7 +3295,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3406,7 +3406,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3451,7 +3451,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3496,7 +3496,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3541,7 +3541,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and each ally in the area',
+				target: 'На себе і кожного союзника в зоні впливу',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3586,7 +3586,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and each ally in the area',
+				target: 'На себе і кожного союзника в зоні впливу',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,

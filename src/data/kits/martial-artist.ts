@@ -10,7 +10,7 @@ export const martialArtist: Kit = {
 	description: 'If you want to be fast in a fight, then Martial Artist is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed strikes against opponents, and allows you to be the ultimate skirmisher.',
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Unarmed ],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -26,14 +26,14 @@ export const martialArtist: Kit = {
 				name: 'Battle Grace',
 				description: 'You feint to move your enemies into perfect position.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '6 + M or A damage; you swap places with the target',
 							tier3: '9 + M or A damage; you swap places with the target'

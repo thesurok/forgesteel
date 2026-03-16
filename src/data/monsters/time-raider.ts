@@ -60,8 +60,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 				name: 'Gravity Well',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 3,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 3 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 3 })],
 				target: 'Special',
 				sections: [
 					FactoryLogic.createAbilitySectionText('A time raider acting this turn activates a gravity well in the affected area. The gravity well sits in the center of the cube and lasts until the end of the encounter or until a creature who can reach the well uses a maneuver to disable it. The affected area is considered difficult terrain for enemies. Whenever an enemy ends their turn in an affected square, they are pulled 4 towards the well.')
@@ -99,7 +99,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Archon',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 5,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -114,8 +114,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-1-feature-1',
 						name: 'Brutal Flail',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -152,7 +152,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Myriad',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 5,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -167,8 +167,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-2-feature-1',
 						name: 'Fifth Fist',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -205,7 +205,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Armiger',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -219,8 +219,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-3-feature-1',
 						name: 'Serrated Saber',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -244,8 +244,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-3-feature-2',
 						name: 'Shared Sickness',
 						type: FactoryLogic.type.createTrigger('A creature deals damage to any ally of the armiger who the armiger has line of effect to.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -286,7 +286,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Cannonfall',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -300,8 +300,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-4-feature-1',
 						name: 'Sunderbuss',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						cost: 'signature',
 						sections: [
@@ -321,10 +321,10 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 					ability: FactoryLogic.createAbility({
 						id: 'time-raider-4-feature-2',
 						name: 'Buss Buffer',
-						type: FactoryLogic.type.createTrigger('A creature damages the cannonfall with a ranged or area ability.', { free: true, qualifiers: [ ] }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
-						target: 'Self and each ally in the area',
+						type: FactoryLogic.type.createTrigger('A creature damages the cannonfall with a ranged or area ability.', { free: true, qualifiers: [] }),
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved for the cannonfall and each target also affected by the triggering ability.')
@@ -353,7 +353,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Helix',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -367,8 +367,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-5-feature-1',
 						name: 'Blaster Volley',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -388,8 +388,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-5-feature-2',
 						name: 'Kinetic Lane',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 10 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is a psionically charged treadmill that pushes creatures and objects at high speed in one direction of the helix’s choice. Any creature who enters the area or starts their turn there slides 3 squares toward the end of the area in the chosen direction. Each ene- my in the area when it first appears takes 3 damage before they slide.'),
@@ -422,7 +422,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Hijack',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -436,9 +436,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-6-feature-1',
 						name: 'Golden Sickles',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -458,8 +458,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-6-feature-2',
 						name: 'Psi-Sickle',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hijack psychically latches their sickle onto the target and closes the distance between them. If the target is larger than the hijack, the hijack moves adjacent to the target. Otherwise, the target is pulled up to 4 squares toward the hijack.')
@@ -488,7 +488,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Mind Punk',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -502,8 +502,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-7-feature-1',
 						name: 'Repelling Psihander',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures adjacent to each other',
 						cost: 'signature',
 						sections: [
@@ -524,8 +524,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-7-feature-2',
 						name: 'Mindpunk',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						cost: 2,
 						sections: [
@@ -562,7 +562,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Nemesis',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'fly'),
@@ -576,8 +576,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-8-feature-1',
 						name: 'Golden Scythe',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -598,9 +598,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-8-feature-2',
 						name: 'Kinetic Crush',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -637,7 +637,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Vertex',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -651,9 +651,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-9-feature-1',
 						name: 'Psionic Slam',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -673,8 +673,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-9-feature-2',
 						name: 'Split Space',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
 						target: 'Special',
 						cost: 5,
 						sections: [
@@ -687,8 +687,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-9-feature-3',
 						name: 'Invigorated March',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to half their speed.')
@@ -717,7 +717,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			name: 'Time Raider Tyrannis',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Time Raider' ],
+			keywords: ['Humanoid', 'Time Raider'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10, 'hover, teleport'),
@@ -731,7 +731,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-1',
 						name: 'Gatling Blaster',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(2),
 							FactoryLogic.distance.createRanged(10)
@@ -756,8 +756,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-2',
 						name: 'Air Raid!',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three time raiders',
 						cost: 3,
 						sections: [
@@ -770,8 +770,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-3',
 						name: 'Precog Reflexes',
 						type: FactoryLogic.type.createTrigger('A creature within distance makes a strike against the tyrannis.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The strike takes a bane. After the strike resolves, the tyrannis can make a free strike against the target.'),
@@ -807,8 +807,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-7',
 						name: 'We Will Won!',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self and three allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target gains 15 temporary Stamina, and has their speed doubled until the end of their next turn.')
@@ -820,9 +820,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-8',
 						name: 'Stick to the Plan!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can end one effect on them or can move up to their speed.')
 						]
@@ -833,8 +833,8 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						id: 'time-raider-10-feature-9',
 						name: 'Armageddon',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tyrannis fires a sensor mine into each unoccupied square in the area, and creates a gravity well whose area contains one or more squares of the tyrannis’s space (see Gravity Well). Whenever an enemy enters a square with a sensor mine in it, the mine explodes, dealing 3 damage to the enemy.')

@@ -7,6 +7,8 @@
 	"homepage": "https://andyaiken.github.io/forgesteel/",
 	"scripts": {
 		"start": "vite --host",
+		"i18n:extract": "node scripts/extract-hero-strings.cjs --src src/data/classes --out src/i18n/en/classes",
+		"i18n:extract:replace": "node scripts/extract-hero-strings.cjs --src src/data/classes --out src/i18n/en/classes --replace",
 		"update": "npx npm-check-updates --interactive --format group",
 		"lint": "eslint \"src/**/*.{ts,tsx}\"",
 		"fix": "eslint \"src/**/*.{ts,tsx}\" --fix",

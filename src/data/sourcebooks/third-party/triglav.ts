@@ -82,7 +82,7 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 							}),
 							FactoryLogic.feature.createConditionImmunity({
 								id: 'boggit-4a-2',
-								conditions: [ ConditionType.Weakened ]
+								conditions: [ConditionType.Weakened]
 							})
 						]
 					}),
@@ -111,20 +111,20 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 							name: 'Sticky Strike',
 							description: 'You use your tongue to strike and pull an enemy.',
 							type: FactoryLogic.type.createMain(),
-							keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-							distance: [ FactoryLogic.distance.createMelee(3) ],
+							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+							distance: [FactoryLogic.distance.createMelee(3)],
 							target: 'One creature or object',
 							cost: 'signature',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [ Characteristic.Might, Characteristic.Agility ],
+										characteristic: [Characteristic.Might, Characteristic.Agility],
 										tier1: '2 + С або Л шкоди; притягнути на 1; Л < [слабкий], схоплений',
 										tier2: '4 + С або Л шкоди; притягнути на 2; Л < [середній], схоплений',
 										tier3: '6 + С або Л шкоди; притягнути на 3; Л < [сильний], схоплений'
 									})
 								),
-								FactoryLogic.createAbilitySectionText('If you grab the target this way, they don\'t count towards your limit of grabbed creatures.')
+								FactoryLogic.createAbilitySectionText('Якщо ви схопите ціль таким чином, вона не враховується у вашому ліміті схоплених істот.')
 							]
 						})
 					}),
@@ -150,14 +150,14 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Devastating Croak',
 										description: 'Your directed croaking spreads destruction among your enemies.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 										target: 'All enemies',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 													tier1: '2 sonic damage; push 1',
 													tier2: '3 sonic damage; push 2',
 													tier3: '5 sonic damage; push 3'
@@ -175,12 +175,12 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Fortifying Croak',
 										description: 'Your croaking builds up the spirits of your allies.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 										target: 'All allies in the area',
 										cost: 'signature',
 										sections: [
-											FactoryLogic.createAbilitySectionText('Each target gains temporary Stamina equal to your Reason, Intuition, or Presence score.')
+											FactoryLogic.createAbilitySectionText('Кожна ціль отримує тимчасову Витривалість, рівну вашому показнику Розуму, Інтуїції або Присутності.')
 										]
 									})
 								}),
@@ -193,14 +193,14 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Frightening Croak',
 										description: 'Your croaking sows terror in the hearts of your enemies.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 										target: 'All enemies in the area',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 													tier1: '2 psychic damage; P < [weak], frightened (EoT)',
 													tier2: '3 psychic damage; P < [average], frightened (EoT)',
 													tier3: '5 psychic damage; P < [strong], frightened (EoT)'
@@ -218,12 +218,12 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Mobilizing Croak',
 										description: 'Your croaking encourages your allies to fight harder.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 										target: 'All allies in the area',
 										cost: 'signature',
 										sections: [
-											FactoryLogic.createAbilitySectionText('Each target gains a surge.')
+											FactoryLogic.createAbilitySectionText('Кожна ціль отримує 1 сплеск.')
 										]
 									})
 								}),
@@ -236,14 +236,14 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Provocative Croak',
 										description: 'Your irreverent croaking angers your adversaries.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 										target: 'All enemies in the area',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 													tier1: 'R < [weak], taunted (save ends)',
 													tier2: 'R < [average], taunted (save ends)',
 													tier3: 'R < [strong], taunted (save ends)'
@@ -261,14 +261,14 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 										name: 'Vexing Croak',
 										description: 'Your loud croaking disturbs nearby enemies.',
 										type: FactoryLogic.type.createMain(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 										target: 'All enemies',
 										cost: 'signature',
 										sections: [
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
-													characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 													tier1: '1 psychic damage; I < [weak], dazed (EoT)',
 													tier2: '2 psychic damage; I < [average], dazed (EoT)',
 													tier3: '3 psychic damage; I < [strong], dazed (EoT)'
@@ -344,11 +344,11 @@ When choosing an ancestry, you can choose to be a vampire. A hero with the vampi
 				name: 'Sanguine Kiss',
 				description: 'I have to admit, your blood tastes simply delicious...',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Melee ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				sections: [
-					FactoryLogic.createAbilitySectionText('The target takes corruption damage equal to your highest characteristic score. This damage can\'t be reduced in any way. You gain temporary Stamina equal to your level + 2. For each condition the target is suffering, increase the damage taken and temporary Stamina gained by 1.')
+					FactoryLogic.createAbilitySectionText('Ціль отримує шкоду корупції, рівну вашому найвищому показнику характеристики. Цю шкоду не можна зменшити жодним чином. Ви отримуєте тимчасову Витривалість, рівну вашому рівню + 2. За кожний стан, яким страждає ціль, збільшіть нанесену шкоду і отриману тимчасову Витривалість на 1.')
 				]
 			})
 		}),
@@ -479,7 +479,7 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 					feature: FactoryLogic.feature.createPerk({
 						id: 'vampire-ancestry-5j',
 						name: 'Vampire Perk',
-						lists: [ PerkList.Special ]
+						lists: [PerkList.Special]
 					}),
 					value: 2
 				}
@@ -507,8 +507,8 @@ As a vampire, you possess supernatural abilities that make you an excellent hunt
 	subclassName: 'Bloodline',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Presence ],
-		[ Characteristic.Agility, Characteristic.Presence ]
+		[Characteristic.Might, Characteristic.Presence],
+		[Characteristic.Agility, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -530,11 +530,11 @@ As a vampire, you possess supernatural abilities that make you an excellent hunt
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'vampire-class-1-3',
-					selected: [ 'Alertness' ]
+					selected: ['Alertness']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'vampire-class-1-4',
-					listOptions: [ SkillList.Exploration, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Exploration, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'vampire-class-1-5',
@@ -625,12 +625,12 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 						name: 'Drink Most Exquisite',
 						description: 'Don\'t worry, I am going to just take a sip...',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						cost: 1,
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target takes corruption damage equal to your level + 2. This damage can\'t be reduced in any way. You gain temporary Stamina equal to your level + 2.'),
+							FactoryLogic.createAbilitySectionText('Ціль отримує шкоду корупції, рівну вашому рівню + 2. Цю шкоду не можна зменшити жодним чином. Ви отримуєте тимчасову Витривалість, рівну вашому рівню + 2.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
 								effect: `
@@ -667,7 +667,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'vampire-class-2-1',
-					lists: [ PerkList.Special ]
+					lists: [PerkList.Special]
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'vampire-class-2-2',
@@ -698,20 +698,20 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Cornering Scheme',
 			description: 'There\'s nowhere to run now.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '2 + M or A damage; slide 1',
 						tier2: '4 + M or A damage; slide 2',
 						tier3: '6 + M or A damage; slide 3'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Slide the target first. You can\'t slide them beyond your melee distance. Until the start of your next turn, objects (including walls) count as your allies for the purposes of flanking. If the target is flanked, you gain 1 surge which you can use immediately.')
+				FactoryLogic.createAbilitySectionText('Спочатку посуньте ціль. Ви не можете посунути її далі, ніж ваша дистанція ближнього бою. До початку вашого наступного ходу обʼєкти (включно зі стінами) рахуються як ваші союзники для цілей флангування. Якщо ціль флангована, ви отримуєте 1 сплеск, який можете використати негайно.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -719,7 +719,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Crippling Strike',
 			description: 'Where do you think you\'re going?',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -729,7 +729,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '2 + M or A damage; A < [weak], slowed (save ends)',
 						tier2: '5 + M or A damage; A < [average], slowed (save ends)',
 						tier3: '7 + M or A damage; A < [strong], slowed (save ends)'
@@ -742,17 +742,17 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Go for the Throat',
 			description: 'That pulsating vein on your neck is fascinating...',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '2 + M or A damage; M < [weak], bleeding (save ends)',
 						tier2: '5 + M or A damage; M < [average], bleeding (save ends)',
 						tier3: '7 + M or A damage; M < [strong], bleeding (save ends)'
@@ -765,14 +765,14 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Sonic Surprise',
 			description: 'A concentrated blast of sound catches your prey off guard.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee(3) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee(3)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '4 + P sonic damage; I < [weak], dazed (EoT)',
 						tier2: '5 + P sonic damage; I < [average], dazed (EoT)',
 						tier3: '7 + P sonic damage; I < [strong], dazed (EoT)'
@@ -785,8 +785,8 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Bleed them Dry',
 			description: 'What a pity! So much drink spilled!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Three creatures',
 			cost: 3,
 			sections: [
@@ -796,7 +796,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				}),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '3 damage; M < [weak], bleeding (save ends)',
 						tier2: '5 damage; M < [average], bleeding (save ends)',
 						tier3: '8 damage; M < [strong], bleeding (save ends)'
@@ -809,7 +809,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Harass the Hunted',
 			description: 'You slip among their ranks, attacking and escaping their retaliation.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -819,13 +819,13 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '4 damage',
 						tier2: '6 damage',
 						tier3: '10 damage'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You shift up to your speed while using this ability. This movement can be broken up before, after, and in between striking each target however you wish.')
+				FactoryLogic.createAbilitySectionText('Ви зрушуєте на відстань до своєї швидкості під час використання цієї здібності. Це переміщення можна розбити до, після та між ударами по кожній цілі на ваш розсуд.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -833,20 +833,20 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Isolating Rush',
 			description: 'In the end, you\'re all alone, anyway.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '5 + M or A damage; P < [weak], frightened (EoT)',
 						tier2: '9 + M or A damage; P < [average], frightened (EoT)',
 						tier3: '12 + M or A damage; P < [strong], frightened (EoT)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If you use this ability as part of the Charge action, you gain an edge. If you don\'t, you can move up to half your speed before you make the strike. Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.')
+				FactoryLogic.createAbilitySectionText('Якщо ви використовуєте цю здібність як частину дії «Charge», ви отримуєте перевагу. Якщо ні, ви можете переміститися до половини вашої швидкості перед ударом. Кожен ворог, що знаходиться поруч із ціллю, штовхається від цілі на число клітинок, рівне вашому показнику Присутності.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -854,14 +854,14 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Ravenous Storm',
 			description: 'You furiously assault enemies surrounding you, relishing their pain.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '5 damage',
 						tier2: '8 damage',
 						tier3: '11 damage'
@@ -875,17 +875,17 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Agonizing Mutilation',
 			description: 'You don\'t really need BOTH of your kidneys, do you?',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '7 + M or A damage; M < [weak], bleeding and weakened (save ends)',
 						tier2: '11 + M or A damage; M < [average], bleeding and weakened (save ends)',
 						tier3: '16 + M or A damage; M < [strong], bleeding and weakened (save ends)'
@@ -898,14 +898,14 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			name: 'Ultrasonic Screech',
 			description: 'Your shriek impels and disorients your prey.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 			target: 'Each enemy and object in the area',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might, Characteristic.Agility ],
+						characteristic: [Characteristic.Might, Characteristic.Agility],
 						tier1: '5 sonic damage; push 2; I < [weak] dazed (save ends)',
 						tier2: '8 sonic damage; push 4; I < [average] dazed (save ends)',
 						tier3: '11 sonic damage; push 6; I < [strong] dazed (save ends)'
@@ -926,7 +926,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vampire-subclass-1-1-1',
-							selected: [ 'Hide' ]
+							selected: ['Hide']
 						}),
 						FactoryLogic.feature.create({
 							id: 'vampire-subclass-1-1-2',
@@ -948,8 +948,8 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 								name: 'Misty Passage',
 								description: 'You cannot escape and you cannot catch me...',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [ AbilityKeyword.Magic ],
-								distance: [ FactoryLogic.distance.createSelf() ],
+								keywords: [AbilityKeyword.Magic],
+								distance: [FactoryLogic.distance.createSelf()],
 								target: 'Self',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You teleport up to a number of squares equal to twice your Presence score.'),
@@ -965,8 +965,8 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 								name: 'Fade Away',
 								description: 'Now you see me, now you don\'t...',
 								type: FactoryLogic.type.createTrigger('You take damage'),
-								keywords: [ AbilityKeyword.Magic ],
-								distance: [ FactoryLogic.distance.createSelf() ],
+								keywords: [AbilityKeyword.Magic],
+								distance: [FactoryLogic.distance.createSelf()],
 								target: 'Self',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You take half the triggering damage, then can teleport up to a number of squares equal to your Presence score after the triggering effect resolves.'),
@@ -999,7 +999,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'From the Shadows and Back',
 					description: 'You strike and then fade into darkness like a fleeting shadow.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+					keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 					distance: [
 						FactoryLogic.distance.createMelee(),
 						FactoryLogic.distance.createRanged(5)
@@ -1009,7 +1009,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility ],
+								characteristic: [Characteristic.Might, Characteristic.Agility],
 								tier1: '2 + M or A damage',
 								tier2: '4 + M or A damage',
 								tier3: '6 + M or A damage'
@@ -1027,8 +1027,8 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Darkspeed',
 					description: 'You blink and I\'m...right behind you!',
 					type: FactoryLogic.type.createManeuver({ free: true }),
-					keywords: [ AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.createSelf() ],
+					keywords: [AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					cost: 3,
 					sections: [
@@ -1044,14 +1044,14 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Longing Shadows',
 					description: 'The shadows reach out to enfold your prey.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One creature or object',
 					cost: 3,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '4 + P shadow damage; A < [weak], restrained (save ends)',
 								tier2: '6 + P shadow damage; A < [average], restrained (save ends)',
 								tier3: '8 + P shadow damage; A < [strong], restrained (save ends)'
@@ -1065,14 +1065,14 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Chthonic Embrace',
 					description: 'Shadowy appendages burst from the ground to seize your prey.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 					target: 'Each enemy in the area',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '3 shadow damage; A < [weak], restrained (save ends)',
 								tier2: '4 shadow damage; A < [average], restrained (save ends)',
 								tier3: '5 shadow damage; A < [strong], restrained (save ends)'
@@ -1086,14 +1086,14 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Only the Black Remains',
 					description: 'Are you afraid of the dark? You should be.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
+					target: 'Одна істота',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: 'blind (EoT); P < [weak], frightened',
 								tier2: 'blind (save ends); P < [average], frightened',
 								tier3: 'blind (save ends); P < [strong], frightened'
@@ -1107,8 +1107,8 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Umbral Shroud',
 					description: 'You obscure yourself and your allies with a veil made of shadows.',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 					target: 'Self and all allies',
 					cost: 5,
 					sections: [
@@ -1124,14 +1124,14 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Impenetrable Veil',
 					description: 'A field of darkness so dense, not even the sun can pierce it.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 					target: 'Each enemy in the area',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '4 shadow damage',
 								tier2: '6 shadow damage',
 								tier3: '8 shadow damage'
@@ -1145,14 +1145,14 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					name: 'Within My Dark Grasp',
 					description: 'A shadowy hand grabs, pulls, and places your prey at your mercy.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One creature or object',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '8 + P shadow damage; pull 3',
 								tier2: '12 + P shadow damage; pull 5',
 								tier3: '16 + P shadow damage; pull 7'
@@ -1174,7 +1174,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vampire-subclass-2-1-1',
-							selected: [ 'Nature' ]
+							selected: ['Nature']
 						}),
 						FactoryLogic.feature.create({
 							id: 'vampire-subclass-2-1-2',
@@ -1204,8 +1204,8 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 								name: 'Expand the Spread',
 								description: 'You increase the reach of your swirling swarm of spores.',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [ AbilityKeyword.Magic ],
-								distance: [ FactoryLogic.distance.createSelf() ],
+								keywords: [AbilityKeyword.Magic],
+								distance: [FactoryLogic.distance.createSelf()],
 								target: 'Self',
 								sections: [
 									FactoryLogic.createAbilitySectionText('The size of your Spore Cloud aura increases by 1 until the start of your next turn.'),
@@ -1221,8 +1221,8 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 								name: 'Emergency Release',
 								description: 'Upon spotting danger, you release more spores to disorient the attacker.',
 								type: FactoryLogic.type.createTrigger('An enemy targets you or an ally with an ability.'),
-								keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-								distance: [ FactoryLogic.distance.createRanged(10) ],
+								keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+								distance: [FactoryLogic.distance.createRanged(10)],
 								target: 'Self or one infected ally',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Spores are released in a 1 burst area originating from the target. Each creature in the area becomes infected. The area lasts until the start of your next turn. You and your allies have concealment while in the area, including against the triggering ability, and all creatures have concealment from enemies in the area.'),
@@ -1255,7 +1255,7 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					name: 'One Good Spread',
 					description: 'Your attack delivers a cavalcade of infectious spores.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+					keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 					distance: [
 						FactoryLogic.distance.createMelee(),
 						FactoryLogic.distance.createRanged(5)
@@ -1265,7 +1265,7 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility ],
+								characteristic: [Characteristic.Might, Characteristic.Agility],
 								tier1: '3 + M or A damage',
 								tier2: '5 + M or A damage',
 								tier3: '8 + M or A damage'
@@ -1279,14 +1279,14 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					name: 'Exude Venom',
 					description: 'Your spores secrete poison afflicting your prey.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Each infected enemy in the area',
 					cost: 3,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '4 poison damage',
 								tier2: '5 poison damage',
 								tier3: '7 poison damage'
@@ -1300,8 +1300,8 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					name: 'Vitalizing Secretions',
 					description: 'Your spores release soothing substances into your allies.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Self and each infected ally in the area',
 					cost: 3,
 					sections: [
@@ -1321,14 +1321,14 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					name: 'Dissolve the Insides',
 					description: 'Your spores release acid that burns your prey from within.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Spore, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Spore, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One infected creature',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '9 + P acid damage',
 								tier2: '13 + P acid damage',
 								tier3: '18 + P acid damage'
@@ -1350,14 +1350,14 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 					name: 'Malignant Growths',
 					description: 'Your spores sprout from your foes into menacing appendages.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Self and each infected creature in the area',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '4 damage',
 								tier2: '5 damage',
 								tier3: '7 damage'
@@ -1382,8 +1382,8 @@ If the target is an enemy, the appendage doesn't immediately wither down and is 
 					name: 'Protective Thallus',
 					description: 'Your spores sprout into a protective layer covering your allies.',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Self and each infected ally in the area',
 					cost: 5,
 					sections: [
@@ -1395,8 +1395,8 @@ If the target is an enemy, the appendage doesn't immediately wither down and is 
 					name: 'Adrenal Stimulation',
 					description: 'Your spores mobilize your allies to fight harder.',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Self and each infected ally in the area',
 					cost: 7,
 					sections: [
@@ -1412,14 +1412,14 @@ If the target is an enemy, the appendage doesn't immediately wither down and is 
 					name: 'Restraining Creepers',
 					description: 'Your spores sprout from your prey into binding vines.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Spore],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 					target: 'Each infected enemy in the area',
 					cost: 7,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Presence ],
+								characteristic: [Characteristic.Presence],
 								tier1: '4 damage; M < [weak], slowed (save ends)',
 								tier2: '5 damage; M < [average], slowed (save ends)',
 								tier3: '7 damage; M < [strong], slowed (save ends)'
@@ -1456,8 +1456,8 @@ const crimsonKnight: Kit = {
 
 You've adopted the fighting traditions of knights and nobles. Protected by your house's ornate armor and wielding a blade that drains lifeforce of your enemies, you fight with deadly grace, balancing offense and defense.`,
 	type: '',
-	armor: [ KitArmor.Medium ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Medium],
+	weapon: [KitWeapon.Medium],
 	stamina: 6,
 	speed: 1,
 	stability: 1,
@@ -1473,13 +1473,13 @@ You've adopted the fighting traditions of knights and nobles. Protected by your 
 				name: 'Draining Strike',
 				description: 'Just let it flow straight to me!',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
 				target: 'One creature or object',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 + M or A damage',
 							tier2: '5 + M or A damage',
 							tier3: '7 + M or A damage; M < [strong], weakened (save ends)'
@@ -1500,8 +1500,8 @@ const lasher: Kit = {
 
 You are a master of a whip, and your weapon leaves gory marks on the bodies of your enemies. Even though you use a weapon of your enemies, you don't use it to subjugate others, but to punish those who do, and to liberate those enslaved by them.`,
 	type: '',
-	armor: [ KitArmor.Light ],
-	weapon: [ KitWeapon.Whip ],
+	armor: [KitArmor.Light],
+	weapon: [KitWeapon.Whip],
 	stamina: 3,
 	speed: 1,
 	stability: 0,
@@ -1517,13 +1517,13 @@ You are a master of a whip, and your weapon leaves gory marks on the bodies of y
 				name: 'Blood Streak',
 				description: 'These will definitely leave scars...',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee(2) ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee(2)],
+				target: 'Одна істота',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage; A < [weak], bleeding (EoT)',
 							tier2: '5 + M or A damage; A < [average], bleeding (EoT)',
 							tier3: '8 + M or A damage; A < [strong], bleeding (save ends)'
@@ -1543,8 +1543,8 @@ const mangler: Kit = {
 
 You are all muscle, no finesse. You focus on being as brutal as possible for you know there is no better enemy than a dead and mutilated one. Your clawed hands usually just graze your opponents, but once you land a solid hit, you mercilessly maim your prey.`,
 	type: '',
-	armor: [ KitArmor.Medium ],
-	weapon: [ KitWeapon.Unarmed ],
+	armor: [KitArmor.Medium],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 6,
 	speed: 1,
 	stability: 1,
@@ -1560,13 +1560,13 @@ You are all muscle, no finesse. You focus on being as brutal as possible for you
 				name: 'Shred To Bits',
 				description: 'When I am done with you, you will be but a lump of meat!',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
 				target: 'One creature or object',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might ],
+							characteristic: [Characteristic.Might],
 							tier1: '3 + M damage',
 							tier2: '6 + M damage',
 							tier3: '9 + M damage; A < [strong], prone and bleeding (save ends)'
@@ -1586,8 +1586,8 @@ const slasher: Kit = {
 
 You use your sharp, elongated claws to cut and tear your enemies, trying to injure as many as possible as fast as possible. You are fast and deadly, joining the fray immediately and relentlessly wounding your enemies.`,
 	type: '',
-	armor: [ KitArmor.Light ],
-	weapon: [ KitWeapon.Unarmed ],
+	armor: [KitArmor.Light],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -1603,13 +1603,13 @@ You use your sharp, elongated claws to cut and tear your enemies, trying to inju
 				name: 'Furious Lacerations',
 				description: 'One more cut and you fall apart!',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
 				target: 'Up to three creatures or objects',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '1 damage',
 							tier2: '3 damage',
 							tier3: '5 damage'

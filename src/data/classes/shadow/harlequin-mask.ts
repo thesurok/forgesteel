@@ -14,7 +14,7 @@ export const harlequinMask: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-3-1-1',
-					selected: [ 'Lie' ]
+					selected: ['Lie']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,8 +22,8 @@ export const harlequinMask: SubClass = {
 						name: 'I’m No Threat',
 						description: 'Taking on the illusory countenance of another creature gives you an advantage on subterfuge.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -42,8 +42,8 @@ The illusion ends when you harm another creature, when you physically interact w
 						name: 'Clever Trick',
 						description: 'You sow a moment of confusion in combat, to your enemy’s peril.',
 						type: FactoryLogic.type.createTrigger('An enemy targets you with a strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						cost: 1,
 						sections: [
@@ -67,13 +67,13 @@ The illusion ends when you harm another creature, when you physically interact w
 									name: 'Machinations of Sound',
 									description: 'Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 									target: 'Each enemy in the area',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: 'Slide 4',
 											tier2: 'Slide 5',
 											tier3: 'Slide 7'
@@ -91,8 +91,8 @@ The illusion ends when you harm another creature, when you physically interact w
 									name: 'So Gullible',
 									description: 'When your enemy strikes, you reveal you were in a different place all along.',
 									type: FactoryLogic.type.createTrigger('Another creature targets you with a strike.', { free: true }),
-									keywords: [ AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
@@ -149,8 +149,8 @@ If the creature is the same size as you, you can disguise yourself as them using
 									name: 'Look!',
 									description: 'You distract your foes, allowing your allies to take advantage of that distraction.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Each enemy in the area',
 									cost: 9,
 									sections: [
@@ -167,7 +167,7 @@ If the creature is the same size as you, you can disguise yourself as them using
 									name: 'Puppet Strings',
 									description: 'You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
 										FactoryLogic.distance.createMelee()
 									],
@@ -175,7 +175,7 @@ If the creature is the same size as you, you can disguise yourself as them using
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '2 damage; if the target has R < [weak], before the damage is resolved, they make a free strike.',
 											tier2: '5 damage; if the target has R < [average], before the damage is resolved, they use a main action ability of your choice.',
 											tier3: '7 damage; if the target has R < [strong], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
@@ -220,9 +220,9 @@ If the creature is the same size as you, you can disguise yourself as them using
 									name: 'I Am You',
 									description: 'Your mask reflects your foe’s face. Surely they won’t need it much longer.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Until the end of the encounter, you gain the target’s damage immunities and speed (if they are better than yours), and can use any types of movement they can use. You can also use the target’s signature ability, using their bonus for the power roll.')
@@ -238,13 +238,13 @@ If the creature is the same size as you, you can disguise yourself as them using
 									name: 'It Was Me All Along',
 									description: 'After everything you’ve been through together, you twist the blade and make the pain extra personal.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'One creature or object',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '15 + A damage',
 											tier2: '21 + A damage',
 											tier3: '28 + A damage'

@@ -24,7 +24,7 @@ export class ComplicationData {
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence, Characteristic.Agility, Characteristic.Might ],
+								characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence, Characteristic.Agility, Characteristic.Might],
 								tier1: 'Ви викликаєте ворожого демона вашого рівня або нижчого, який атакує вас наприкінці відпочинку. Демон діє першим у бою, незалежно від рис або здібностей інших істот.',
 								tier2: 'Ви нічого не дізнаєтеся, і ваш час витрачено даремно.',
 								tier3: 'Ви вивчаєте одну бонусну героїчну здібність вашого класу, на яку ви маєте право. Ви володієте цією здібністю лише до завершення наступного відпочинку.'
@@ -107,7 +107,7 @@ export class ComplicationData {
 				id: 'comp-amnesia-b',
 				name: 'Перевага: Амнезія',
 				description: 'У вас є надприродна річ — дрібниця 1-го ешелону. Вона може мати звʼязок з вашим колишнім життям.',
-				types: [ ItemType.Trinket1st ]
+				types: [ItemType.Trinket1st]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-amnesia-d',
@@ -160,7 +160,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createItemChoice({
 				id: 'comp-artifactBonded-b1',
-				types: [ ItemType.Artifact ]
+				types: [ItemType.Artifact]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-artifactBonded-b2',
@@ -184,7 +184,7 @@ export class ComplicationData {
 				id: 'comp-betrothed-b',
 				name: 'Перевага: Обручений',
 				description: 'Ви втекли з посагом — дрібницею 1-го ешелону на ваш вибір.',
-				types: [ ItemType.Trinket1st ]
+				types: [ItemType.Trinket1st]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-betrothed-d',
@@ -237,7 +237,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-consumingInterest-skill',
-				listOptions: [ SkillList.Lore ]
+				listOptions: [SkillList.Lore]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-consumingInterest-b',
@@ -277,8 +277,8 @@ export class ComplicationData {
 					name: 'Корумпований Дух',
 					description: 'Ви відкриваєте зловісні таємниці болю',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.createSelf() ],
+					keywords: [AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionText('До кінця вашого ходу, коли ви використовуєте героїчну здібність, що завдає шкоди, проти однієї цілі, ви можете послабити життєву силу цієї цілі. Здібність завдає додаткової шкоди від скверни, рівної вашому найвищому значенню характеристики.')
@@ -318,7 +318,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-crashLanded-skill',
-				selected: [ 'Timescape' ]
+				selected: ['Timescape']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-crashLanded-b',
@@ -469,7 +469,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createItemChoice({
 				id: 'comp-cursedWeapon-b',
-				types: [ ItemType.LeveledWeapon ]
+				types: [ItemType.LeveledWeapon]
 			}),
 			FactoryLogic.feature.createDamageModifier({
 				id: 'comp-cursedWeapon-d',
@@ -492,7 +492,7 @@ export class ComplicationData {
 			}),
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-disgraced-skill',
-				listOptions: [ SkillList.Interpersonal, SkillList.Intrigue ]
+				listOptions: [SkillList.Interpersonal, SkillList.Intrigue]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-disgraced-d',
@@ -564,7 +564,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-fallenImmortal-skill',
-				selected: [ 'Religion' ]
+				selected: ['Religion']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-fallenImmortal-b',
@@ -857,7 +857,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-hunted-skill',
-				listOptions: [ SkillList.Intrigue ]
+				listOptions: [SkillList.Intrigue]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-hunted-b',
@@ -879,7 +879,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-hunter-b1',
-				options: [ 'Alertness', 'Criminal Underworld', 'Eavesdrop', 'Interrogate', 'Rumors', 'Search', 'Track', 'Society' ]
+				options: ['Alertness', 'Criminal Underworld', 'Eavesdrop', 'Interrogate', 'Rumors', 'Search', 'Track', 'Society']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-hunter-b2',
@@ -979,12 +979,12 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-ivoryTower-skills',
-				listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ],
+				listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore],
 				count: 3
 			}),
 			FactoryLogic.feature.createLanguageChoice({
 				id: 'comp-ivoryTower-lang',
-				options: [ LanguageType.Dead ],
+				options: [LanguageType.Dead],
 				description: 'Ви знаєте одну мертву мову на ваш вибір.'
 			}),
 			FactoryLogic.feature.create({
@@ -1078,8 +1078,8 @@ export class ComplicationData {
 					name: 'Запозичити голову',
 					description: 'У вас немає голови, але ви можете психічно позичити іншу.',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One willing creature',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви можете бачити, чути й відчувати запахи так, ніби знаходитесь у просторі цілі. Додатково ви можете позичити їхній рот для мовлення — говорите своїм голосом. Ефект закінчується, коли ви застосуєте Запозичити голову до іншої цілі, коли ціль відійде більш ніж на 10 клітин, або коли істота більше не бажає ділитися головою.')
@@ -1119,7 +1119,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-masterChef-skill',
-				selected: [ 'Cooking' ]
+				selected: ['Cooking']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-masterChef-b',
@@ -1165,13 +1165,13 @@ export class ComplicationData {
 					id: 'comp-medium-b-ability',
 					name: 'Контакт із духами',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.createSelf() ],
+					keywords: [AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+								characteristic: [Characteristic.Intuition, Characteristic.Presence],
 								tier1: 'Ви отримуєте шкоду від скверни, рівну 5 + ваш рівень.',
 								tier2: 'Дух будь-кого з ваших знайомих, хто помер, говорить з вами, за умови що він перебуває в тому ж світі. Ви дізнаєтеся, як вони загинули, і можете поставити їм одне питання; вони можуть відповісти правдиво або неправдиво. Дух знає все, що знав за життя, і усвідомлює події, які сталися в його безпосередньому оточенні з моменту смерті.',
 								tier3: 'Як у рівні 2, але ви можете поставити 3 питання.'
@@ -1195,13 +1195,13 @@ export class ComplicationData {
 					name: 'Камʼяні очі',
 					description: 'Ці погляди не вбивають — вони перетворюють на камінь.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
-					target: 'One creature',
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
+					target: 'Одна істота',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Presence ],
+								characteristic: [Characteristic.Might, Characteristic.Presence],
 								tier1: '2 ушкодження; С < [слабкий] сповільнений (рят. кидок скасує)',
 								tier2: '4 ушкодження; С < [середній] сповільнений (рят. кидок скасує)',
 								tier3: '6 ушкоджень; С < [сильний] сповільнений (рят. кидок скасує)'
@@ -1335,7 +1335,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-promisingApprentice-skill',
-				listOptions: [ SkillList.Crafting ]
+				listOptions: [SkillList.Crafting]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-promisingApprentice-b',
@@ -1361,14 +1361,14 @@ export class ComplicationData {
 					name: 'Психічний вибух',
 					description: 'Псіонічна енергія вибухає з вашого тіла райдужним блиском.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 					target: 'Each creature in the area',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Використання цієї здібності коштує всі ваші геройські ресурси.'),
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 								tier1: '1 психічна шкода за кожен витрачений геройський ресурс, максимум рівний вашому рівню',
 								tier2: '1 психічна шкода за кожен витрачений геройський ресурс, максимум рівний вашому рівню + ваше найвище значення характеристики',
 								tier3: '1 психічна шкода за кожен витрачений геройський ресурс'
@@ -1392,7 +1392,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-raisedByBeasts-skill',
-				selected: [ 'Handle Animals' ]
+				selected: ['Handle Animals']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-raisedByBeasts-b',
@@ -1435,14 +1435,14 @@ export class ComplicationData {
 					id: 'comp-rogueTalent-b',
 					name: 'Телекинетичний хват',
 					description: 'Ви простягаєте розум, щоб зрушити істоту або предмет.',
-					type: FactoryLogic.type.createManeuver({ qualifiers: [ 'can be used as a ranged free strike' ], freeStrike: true }),
-					keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					type: FactoryLogic.type.createManeuver({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
+					keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One creature or object',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Intuition, Characteristic.Presence ],
+								characteristic: [Characteristic.Might, Characteristic.Intuition, Characteristic.Presence],
 								tier1: 'Відштовхнути або притягнути 1',
 								tier2: 'Відштовхнути або притягнути 2',
 								tier3: 'Відштовхнути або притягнути 3'
@@ -1467,7 +1467,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-runaway-b',
-				listOptions: [ SkillList.Crafting ]
+				listOptions: [SkillList.Crafting]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-runaway-d',
@@ -1502,7 +1502,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-secretIdentity-skill',
-				listOptions: [ SkillList.Intrigue ]
+				listOptions: [SkillList.Intrigue]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-secretIdentity-b',
@@ -1526,7 +1526,7 @@ export class ComplicationData {
 				id: 'comp-secretTwin-b',
 				name: 'Перевага таємного близнюка',
 				description: 'Ви отримуєте тринкет 1-го ешелону на свій вибір. Це була підписна реліквія вашого близнюка і має його ім’я або герб десь на собі.',
-				types: [ ItemType.Trinket1st ]
+				types: [ItemType.Trinket1st]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-secretTwin-d',
@@ -1612,7 +1612,7 @@ export class ComplicationData {
 				id: 'comp-shatteredLegacy-b',
 				name: 'Перевага: Розбитий спадок',
 				description: 'Ви отримуєте один рівневий скарб на ваш вибір.',
-				types: [ ItemType.LeveledArmor, ItemType.LeveledImplement, ItemType.LeveledWeapon, ItemType.Leveled ]
+				types: [ItemType.LeveledArmor, ItemType.LeveledImplement, ItemType.LeveledWeapon, ItemType.Leveled]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-shatteredLegacy-d',
@@ -1630,7 +1630,7 @@ export class ComplicationData {
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-shipwrecked-b',
 				name: 'Перевага: Потопельник',
-				listOptions: [ SkillList.Exploration ],
+				listOptions: [SkillList.Exploration],
 				count: 2
 			}),
 			FactoryLogic.feature.create({
@@ -1667,11 +1667,11 @@ export class ComplicationData {
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill1',
 				count: 2,
-				selected: [ 'Eavesdrop', 'Sneak' ]
+				selected: ['Eavesdrop', 'Sneak']
 			}),
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill3',
-				listOptions: [ SkillList.Lore ]
+				listOptions: [SkillList.Lore]
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-silentSentinel-b',
@@ -1765,9 +1765,9 @@ export class ComplicationData {
 					name: 'Віддати наказ',
 					description: '«Рухайтесь або загиньте, люди.»',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Ranged ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
-					target: 'One ally',
+					keywords: [AbilityKeyword.Ranged],
+					distance: [FactoryLogic.distance.createRanged(10)],
+					target: 'Один союзник',
 					sections: [
 						FactoryLogic.createAbilitySectionText('**Ефект** Ціль може використати тригерну дію, щоб виконати головну дію, маневр або рух.'),
 						FactoryLogic.createAbilitySectionText('**Особливість** Якщо у вас є тактична здатність Strike Now, ціль може використати безкоштовну тригерну дію замість звичайної тригерної дії, щоб отримати перевагу цієї здібності.')
@@ -1884,7 +1884,7 @@ export class ComplicationData {
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Reason ],
+								characteristic: [Characteristic.Reason],
 								tier1: 'Ви отримуєте болісне видіння, фрагментарне і незбагненне. Після завершення відпочинку ви втрачаєте 1 відновлення (Recovery).',
 								tier2: 'Ви бачите видіння події, що зараз відбувається у вашому світі. Воно триває лише кілька секунд, але інформація, що ви отримали, корисна.',
 								tier3: 'Видіння триває 1 хвилину або більше.'
@@ -1912,8 +1912,8 @@ export class ComplicationData {
 					name: 'Останній відпочинок',
 					description: 'Ви приводите в дію вибух у вашому переробленому нашийнику.',
 					type: FactoryLogic.type.createManeuver(),
-					keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 					target: 'Each enemy in the area',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ваш нашийник вірності детонує, завдаючи вогняної шкоди, рівної 5 плюс ваш рівень, кожній цілі. Після використання цієї здібності ви не можете застосувати її знову, поки не проведете 1 хвилину поза боєм на скидання нашийника.')
@@ -1980,13 +1980,13 @@ export class ComplicationData {
 					name: 'Раптова хвиля',
 					description: 'Ви викликаєте хвилю води, що розбиває вашого ворога.',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-					distance: [ FactoryLogic.distance.createRanged(10) ],
+					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'One creature or object',
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 								tier1: '2 шкоди; штовхнути або потягнути на 1',
 								tier2: '5 шкоди; штовхнути або потягнути на 2',
 								tier3: '7 шкоди; штовхнути або потягнути на 3'
@@ -2018,7 +2018,7 @@ export class ComplicationData {
 			FactoryLogic.feature.createBonus({
 				id: 'comp-wodewalker-b',
 				field: FeatureField.RecoveryValue,
-				valueCharacteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+				valueCharacteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 			}),
 			FactoryLogic.feature.createDamageModifier({
 				id: 'comp-wodewalker-d',
@@ -2054,7 +2054,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-wronglyImprisoned-b',
-				listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Intrigue, SkillList.Lore ],
+				listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Intrigue, SkillList.Lore],
 				count: 2
 			}),
 			FactoryLogic.feature.create({

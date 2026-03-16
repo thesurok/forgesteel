@@ -87,10 +87,10 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			ability: FactoryLogic.createAbility({
 				id: 'dwarf-malice-3',
 				name: 'Snaring Line',
-				type: FactoryLogic.type.createManeuver({ qualifiers: [ 'Non-minion' ] }),
+				type: FactoryLogic.type.createManeuver({ qualifiers: ['Non-minion'] }),
 				cost: 7,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 10, within: 10 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 10, within: 10 })],
 				target: 'Each enemy in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
@@ -113,7 +113,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Axethrower',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -129,7 +129,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Whistling Axes',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -153,7 +153,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Catchpole',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -169,8 +169,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Maul',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -190,7 +190,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Driver',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -206,7 +206,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Handaxes',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -230,7 +230,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Hunter',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -246,8 +246,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Snaring Javelin',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -267,7 +267,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Gunner',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -282,8 +282,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Portable Ballista',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -306,8 +306,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Ensnaring Chains',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One prone, restrained, or slowed creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gunner makes a free strike against the target, and the prone, restrained, and slowed conditions on the target end. The target is then restrained (save ends).')
@@ -326,7 +326,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Launcher',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -341,8 +341,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Concussive Grenade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -361,8 +361,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Sleep Grenade',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -387,7 +387,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Reel Winch',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -402,8 +402,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Snaring Crossbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -422,8 +422,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Reel Them In',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pulled up to 8 squares. A restrained or slowed target can be pulled an additional 2 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
@@ -442,7 +442,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Shieldwall',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -457,8 +457,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Wide Axe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -480,7 +480,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-8-feature-2',
 						name: 'Intercepting Shield',
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against an ally adjacent to the shieldwall.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shieldwall becomes the target of the triggering strike and halves the damage.')
@@ -499,7 +499,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Stone Whisperer',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'burrow'),
@@ -514,8 +514,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Tile Slide',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -534,8 +534,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Stone Wave',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -560,7 +560,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Trapper',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -575,7 +575,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Concussive Bolts',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
@@ -598,8 +598,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Steam-Powered Snare',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
@@ -620,7 +620,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Warden',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -635,8 +635,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Concussive Maul',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -655,8 +655,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Concussive Shockwave',
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -681,7 +681,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Dwarf Marauder Lord',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Dwarf', 'Humanoid' ],
+			keywords: ['Dwarf', 'Humanoid'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -696,7 +696,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Levitating Axes',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
@@ -722,8 +722,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-12-feature-2',
 						name: 'Magnetomancy',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target vertical slides up to 5 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.'),
@@ -739,11 +739,11 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-12-feature-3',
 						name: 'Your Weapon Is Useless',
 						type: FactoryLogic.type.createTrigger('A creature makes a melee strike against the target.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'Self or one ally',
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target halves any damage from the strike and the triggering creature takes 4 damage.')
 						]
@@ -759,8 +759,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-12-feature-5',
 						name: 'Ajax Will Pay Well for These Specimens',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The marauder lord uses Levitating Axes against each target, making one power roll against all targets.')
@@ -772,8 +772,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-12-feature-6',
 						name: 'Don’t Let Them Escape!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. The marauder lord then uses Levitating Axes.')
@@ -785,8 +785,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						id: 'dwarf-12-feature-7',
 						name: 'Test Your Metal!',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The marauder lord creates three size 2 metal objects in unoccupied spaces within distance. Whenever the marauder lord uses Magnetomancy, they can additionally target one of these objects.')
@@ -800,7 +800,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 			name: 'Servitor War Walker',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Mount),
-			keywords: [ 'Construct', 'Dwarf' ],
+			keywords: ['Construct', 'Dwarf'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(8, 'climb'),
@@ -815,8 +815,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Grasping Claws',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -835,8 +835,8 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Stunning Blast',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

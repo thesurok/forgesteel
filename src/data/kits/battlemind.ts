@@ -10,8 +10,8 @@ export const battlemind: Kit = {
 	name: 'Battlemind',
 	description: 'Who says lightly armored heroes can\'t also be hard to move? You just need to employ some psionics! The Battlemind kit harnesses the power of your mind to make you harder to move—and to make your foes easier to push around.',
 	type: '',
-	armor: [ KitArmor.Light ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Light],
+	weapon: [KitWeapon.Medium],
 	stamina: 3,
 	speed: 2,
 	stability: 1,
@@ -27,14 +27,14 @@ export const battlemind: Kit = {
 				name: 'Unmooring',
 				description: 'Your weapon unleashes psionic energy that reduces your target’s weight.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+							characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 							tier1: '3 + M, R, I, or P damage',
 							tier2: '6 + M, R, I, or P damage',
 							tier3: '9 + M, R, I, or P damage'

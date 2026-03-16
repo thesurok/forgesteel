@@ -126,13 +126,13 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				name: 'Fire for Effect',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 3,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 				target: 'Each creature in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**. The same condition is imposed on each affected target'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '5 fire damage; slowed or weakened (save ends)',
 						tier2: '5 fire damage; slowed or weakened (EoT)',
 						tier3: '5 fire damage'
@@ -155,13 +155,13 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				name: 'Loyalty Unto Death',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 5,
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-				distance: [ FactoryLogic.distance.createRanged(10) ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+				distance: [FactoryLogic.distance.createRanged(10)],
 				target: 'Two war dogs',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each target who has a loyalty collar shifts up to their speed, then is reduced to 0 Stamina. After each target’s Loyalty Collar trait is resolved, each enemy adjacent to either target makes a **Presence test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: 'Push 4; the enemy is frightened of the nearest non-minion war dog (save end)',
 						tier2: 'Push 2; the enemy is frightened of the nearest non-minion war dog (EoT)',
 						tier3: 'Push 2'
@@ -178,7 +178,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				sections: [
 					FactoryLogic.createAbilitySectionText('A bank of choking chemicals sweeps across the area of the enácounter map. Each enemy in the encounter makes a **Might test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '8 poison damage; dazed (Eot)',
 						tier2: '7 poison damage; weakened (EoT)',
 						tier3: '4 poison damage'
@@ -193,8 +193,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				name: 'Cry Havoc',
 				type: FactoryLogic.type.createManeuver(),
 				cost: 7,
-				keywords: [ ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+				keywords: [],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 				target: 'Each enemy in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -216,7 +216,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Commando',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -232,7 +232,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Daggers',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -261,7 +261,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Conscript',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -277,7 +277,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -306,7 +306,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Sharpshooter',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -322,8 +322,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Bolt Launcher',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -348,7 +348,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Tetherite',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -364,8 +364,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Banded Dagger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -394,7 +394,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Amalgamite',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -409,8 +409,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Several Arms',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -432,8 +432,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-5-feature-2',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Effect: If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -452,7 +452,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Crucibite',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -473,8 +473,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Flamebelcher',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -496,8 +496,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-6-feature-3',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -516,7 +516,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Eviscerite',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -531,8 +531,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Chainsaw Whip',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -550,8 +550,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-7-feature-2',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -570,7 +570,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Neuronite',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -591,8 +591,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Synlirii Grafts',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -609,8 +609,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-8-feature-3',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -623,8 +623,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'The Voice',
 						cost: 1,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The neuronite chooses one ally within 10 squares. Each target is either taunted by the ally, or the ally has damage immunity 3 whenever any target makes a strike against them (the neuronite’s choice). Either effect lasts until the start of the neuronite’s next turn.')
@@ -643,7 +643,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Pestilite',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 5,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -664,8 +664,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Plaguecaster',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -683,8 +683,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-9-feature-3',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -703,7 +703,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Phosphorite',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -724,8 +724,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Caustic Detonator',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A detonator attaches to the target. At the end of each round, roll a die. On an odd result, the detonator explodes, triggering the power roll.'),
@@ -744,8 +744,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-10-feature-3',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -764,7 +764,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Teletalite',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'teleport'),
@@ -779,7 +779,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Corrupted Ash Daggers',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -804,8 +804,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-11-feature-2',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -818,8 +818,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Corrupted Ash Teleport',
 						cost: 1,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The teletalite can teleport up to 5 squares and gains an edge on strikes until the end of their turn.')
@@ -838,7 +838,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Subcommander',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -853,8 +853,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Command Saber',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -872,8 +872,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-12-feature-2',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -897,7 +897,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Ground Commander',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -912,7 +912,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Conditioning Spear',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -937,8 +937,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-13-feature-2',
 						name: 'Highest Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each war dog in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Any target who has a loyalty collar is reduced to 0 Stamina')
@@ -950,9 +950,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-13-feature-3',
 						name: 'Final Orders',
 						type: FactoryLogic.type.createTrigger('The target takes damage, is force moved, or is reduced to 0 Stamina.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Even if reduced to 0 Stamina, the target moves up to their speed and can make a free strike after the triggering effect is resolved. The target then immediately dies.')
 						]
@@ -973,8 +973,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-13-feature-6',
 						name: 'Combined Arms',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can make a ranged free strike, then immediately use the Charge main action.')
@@ -986,8 +986,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-13-feature-7',
 						name: 'Make an Example of Them',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each ally within 5 squares of the target moves up to their speed and can make a free strike against the target. If the target has <code>I < 2</code>, they are frightened of the ground commander (save ends).')
@@ -999,8 +999,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-1st-13-feature-8',
 						name: 'Claim Them for the Body Banks',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target ally shifts up to 2 squares and can use the Grab maneuver. Until the end of the encounter, each target enemy takes a bane on the Escape Grab maneuver.')
@@ -1014,7 +1014,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Sparkslinger',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1030,8 +1030,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Galvanic Arc',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(7) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(7)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1062,7 +1062,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Sweeper',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -1078,7 +1078,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Shrikegun Shot',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(3)
@@ -1107,7 +1107,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Frog',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'Climb, swim'),
@@ -1123,7 +1123,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Poisoned Dagger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(4)
@@ -1158,7 +1158,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Arachnite',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5, 'Climb'),
@@ -1173,8 +1173,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Longarm Shrikegun',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1196,8 +1196,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-4-feature-2',
 						name: 'Web Vial',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, value2: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, value2: 10 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain until the end of the encounter.')
@@ -1227,7 +1227,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Doomthief',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1252,8 +1252,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Ripper Shrikegun',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1272,8 +1272,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Expanding Doom',
 						cost: 4,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The doomthief has damage immunity 4 and the size of the aura from their Doom Magnet trait increases by 3, both until the start of their next turn.')
@@ -1287,7 +1287,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Equivite',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(8),
@@ -1307,8 +1307,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Fuse-Iron Lance',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1330,8 +1330,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-6-feature-3',
 						name: 'Blazing Charge',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The equivite moves up to their speed and ignores difficult terrain. Any mundane size 1 object whose space they move through is destroyed. The equivite makes one power roll against each enemy whose space they move through for the first time.'),
@@ -1350,7 +1350,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Hypokrite',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8),
@@ -1370,8 +1370,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Needle-Knife',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1390,8 +1390,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Feign Death',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('The hypokrite takes damage'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hypokrite detonates their loyalty collar to deal 2d6 damage to each adjacent enemy, but teleports to an unoccupied space adjacent to an ally within distance and remains alive.')
@@ -1410,7 +1410,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Mischievite',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -1430,7 +1430,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Fuse-Iron Knives',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -1452,8 +1452,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-8-feature-3',
 						name: 'Misdirection',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(3) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(3)],
 						target: 'One ally or dazzled creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mischievite swaps positions with the target. An ally targeted by this ability can make a free strike before or after being swapped.'),
@@ -1476,7 +1476,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Thanatite',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1496,9 +1496,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Snaking Entrails',
 						cost: 'signature',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target dies and the thanatite makes one power roll against each enemy within 2 squares of the target.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1519,8 +1519,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-9-feature-3',
 						name: 'Wall of Flesh',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
 						target: 'One corpse',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target spawns a wall of bloody muscle and pulsing viscera that must share one or more squares with the target. Each enemy in the area when the wall is created vertically slides up to 2 squares and is knocked prone. Each square of the wall has 3 Stamina.')
@@ -1534,7 +1534,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Tormentite',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1554,8 +1554,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Mark of Agony',
 						cost: 'signature',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1574,8 +1574,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Vortex of Pain',
 						cost: 3,
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1600,7 +1600,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog War Doc',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1615,9 +1615,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Syringe Crossbow',
 						cost: 'signature',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -1634,8 +1634,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-11-feature-2',
 						name: 'Posthumous Promotion',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One war dog',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the target has a loyalty collar, they are reduced to 0 Stamina.')
@@ -1648,8 +1648,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Sanguine Stimulants',
 						cost: 1,
 						type: FactoryLogic.type.createTrigger('One ally within distance dies'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each ally adjacent to the dead ally deals an extra 6 damage on their next strike.')
@@ -1668,7 +1668,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Tetrarch',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -1688,7 +1688,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Houndblade',
 						cost: 'signature',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(3)
@@ -1716,8 +1716,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 1,
 						repeatable: true,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures (1 Malice per target)',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed and can make a free strike. If the free strike targets an enemy taunted by the tetrarch, it deals an extra 4 damage.')
@@ -1729,8 +1729,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-12-feature-4',
 						name: 'Sneering Disregard',
 						type: FactoryLogic.type.createTrigger('A creature within distance who is not taunted by the tetrarch targets the tetrarch with a power roll.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The power roll has a double bane. If the target obtains a tier 1 outcome, the tetrarch ignores any of the power roll’s effects other than damage and the target is frightened of the tetrarch (save ends).')
@@ -1742,8 +1742,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-12-feature-5',
 						name: 'Enter the Fray',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tetrarch can jump up to 7 squares before using this ability.'),
@@ -1760,8 +1760,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-12-feature-6',
 						name: 'Lay Waste',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createSpecial('Five 2 cubes within 20') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createSpecial('Five 2 cubes within 20')],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1778,7 +1778,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-2nd-12-feature-7',
 						name: 'You Would Dare?!',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the tetrarch has damage immunity 2, and their Houndblade ability targets three creatures or objects.')
@@ -1792,7 +1792,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Draconite',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -1808,8 +1808,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Greatsword and Roar',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1834,7 +1834,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Saboteur',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(6),
@@ -1850,8 +1850,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Fuse-Iron Bomb',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1876,7 +1876,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Shriketroop',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1892,8 +1892,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Canis Shrikegun',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1918,7 +1918,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Aerocite',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8, 'Fly'),
@@ -1933,8 +1933,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Dive Bomb',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1955,8 +1955,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Caustic Paste Bomb',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5 })],
 						target: 'Each creature or object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1986,7 +1986,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Ballistite',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(0),
@@ -2001,8 +2001,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Biokinetic Ballista',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2021,8 +2021,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Kill Zone',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 12 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 12 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the ballistite’s next turn, the area is difficult terrain, and any ranged ability targeting an enemy in the area deals an extra 8 damage.')
@@ -2046,7 +2046,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Blackcap',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'Teleport'),
@@ -2061,7 +2061,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Flesh-Eater Knife',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(15)
@@ -2083,8 +2083,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-6-feature-2',
 						name: 'Ashes to Ashes',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Up to three ash clones',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a free strike.')
@@ -2108,7 +2108,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Breaker',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 36,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5),
@@ -2123,8 +2123,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Pile Bunker Gauntlet',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2141,8 +2141,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-7-feature-2',
 						name: 'Surging Power',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of their next turn, the breaker has a double edge on abilities and is automatically affected by all potency effects.')
@@ -2166,7 +2166,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Firestarter',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2181,8 +2181,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Twin Flamebelchers',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2200,8 +2200,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-8-feature-2',
 						name: 'Enflame',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('This ability targets each enemy within 2 squares of any seared creature within distance.'),
@@ -2231,7 +2231,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Geomancer',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'Burrow'),
@@ -2246,8 +2246,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Earthwave',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 2, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 2, within: 10 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2268,8 +2268,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-9-feature-2',
 						name: 'Siegeworks',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The geomancer raises a wall of stone set with viewing gaps. Creatures have line of effect through the wall while adjacent to it.')
@@ -2293,7 +2293,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Iron Priest',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2308,8 +2308,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Houndcannon',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 1, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2328,8 +2328,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
 						repeatable: true,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText(` For every 2 Malice spent, each target gains one of the following effects until the start of the iron priest’s next turn.
@@ -2351,7 +2351,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Prismite',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5, 'Fly, hover'),
@@ -2366,8 +2366,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Grasping Tonguetacles',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2383,8 +2383,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-11-feature-2',
 						name: 'Hard Light Field',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the prismite’s next turn, each target has cover and gains a +2 bonus to stability.')
@@ -2397,8 +2397,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Tractor Beam',
 						type: FactoryLogic.type.createTrigger('An enemy within distance uses a melee ability against an ally.'),
 						cost: 1,
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pulled up to 5 squares toward the prismite and any damage from the triggering ability is halved.')
@@ -2417,7 +2417,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Taxiarch',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'Teleport'),
@@ -2432,8 +2432,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Stunning Surge',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2456,8 +2456,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Overcharge',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, value2: 10 })],
 						target: 'Each war dog in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed and can make a free strike that deals an extra 5 lightning damage.')
@@ -2469,8 +2469,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-12-feature-3',
 						name: 'Thunderstruck',
 						type: FactoryLogic.type.createTrigger('An enemy within distance deals damage to the taxiarch'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'The triggering enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('After the ability is resolved, the target is teleported up to 5 squares and is thunderstruck (save ends). A thunderstruck creature has lightning weakness 5, and the taxiarch gains an edge on power rolls against them.')
@@ -2487,8 +2487,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-12-feature-5',
 						name: 'Magnetic Trickery',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Slide 5, and if the the target has <code>M < 4</code>, they fall prone.')
@@ -2500,8 +2500,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-12-feature-6',
 						name: 'Conductor of Combat',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each war dog in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can make a free strike or use a maneuver.')
@@ -2513,8 +2513,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-3rd-12-feature-7',
 						name: 'Unlimited Power!',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2534,7 +2534,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Blood Jumper',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'Fly'),
@@ -2550,8 +2550,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Jumplance',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2581,7 +2581,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Hunter-Killer',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2597,8 +2597,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Fuse-Iron Rocket',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2623,7 +2623,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'War Dog Socialite',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2639,8 +2639,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Call to Self-Sabotage',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2665,7 +2665,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'Castellan Hoplon',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2680,8 +2680,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Inspiring Strike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2700,8 +2700,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Summon the Onyx Tower',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A 10-square-tall tower made of black stone shimmers into being in an unoccupied space that is 5 squares on a side. The tower has three floors, an entrance in the middle of each side on the ground floor, and a crenelated rooftop. Any war dog inside or adjacent to the tower has damage immunity 2 and regains 5 Stamina at the start of each of their turns, and war dogs inside the tower can observe through and have line of effect through its walls. This ability can be used only once per encounter.')
@@ -2714,8 +2714,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Shield Warden',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2733,8 +2733,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-4-feature-4',
 						name: 'Timely Intervention',
 						type: FactoryLogic.type.createTrigger('An enemy within 10 squares targets an ally with an ability.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Hoplon teleports to an unoccupied space adjacent to the enemy and becomes the new target of the ability. He can then make a free strike against the enemy, and if that enemy has <code>R < 4</code> they are taunted until the end of their next turn.')
@@ -2764,7 +2764,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'Iron Champion Doru',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -2779,8 +2779,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Houndaxe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2803,8 +2803,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Bloody Whirlwind',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2822,8 +2822,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-5-feature-3',
 						name: 'Hunting Leap',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature of object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Doru jumps to an unoccupied space adjacent to the target, then can make a free strike against them. If the target is bleeding or winded, the distance of the ability becomes Ranged 10 and the free strike deals an extra 5 damage.')
@@ -2835,7 +2835,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-5-feature-4',
 						name: 'Laugh It Off',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The triggering strike takes a bane and Doru gains an edge on his next power roll.')
@@ -2864,7 +2864,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'Logostician Vesper',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10),
@@ -2879,8 +2879,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Portal to the Firing Line',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 15 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 15 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** This ability targets only non-prone creatures.'),
@@ -2904,8 +2904,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Portal to the Mantle',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 15 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 15 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2923,8 +2923,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-6-feature-3',
 						name: 'Portal to the Void',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, value2: 15 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, value2: 15 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2945,8 +2945,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-6-feature-4',
 						name: 'Portal to the Sky',
 						type: FactoryLogic.type.createTrigger('The target moves within distance of Vesper'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(3) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(3)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is dropped through a portal, which teleports them up to 7 squares above a space within 15 squares.')
@@ -2970,7 +2970,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'Soulbinder Psyche',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(10, 'Fly, hover'),
@@ -2985,8 +2985,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Soulbind',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -3005,8 +3005,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Soulstorm',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -3027,8 +3027,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-7-feature-3',
 						name: 'Command the Awakened',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each soulbound enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 5 damage from a self-inflicted wound, and if they have <code>M < 4</code> Psyche slides them up to 5 squares.')
@@ -3040,7 +3040,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-7-feature-4',
 						name: 'Spirit Form',
 						type: FactoryLogic.type.createTrigger('An enemy moves within 2 squares of Psyche'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Psyche moves up to 5 squares, and has damage immunity 5 and ignores difficult terrain during this movement. The first time she moves through any creature during this movement, that creature takes 5 corruption damage.')
@@ -3052,8 +3052,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-7-feature-5',
 						name: 'Vengence for the Slain',
 						type: FactoryLogic.type.createTrigger('A war dog within distance is made winded or reduced to 0 Stamina', { free: true }),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target loses all their surges and takes 5 corruption damage.'),
@@ -3073,8 +3073,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-7-feature-7',
 						name: 'Immortal Flare',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes 10 psychic damage.')
@@ -3088,7 +3088,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 			name: 'Strategos Alkestis',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Soulless', 'War Dog' ],
+			keywords: ['Humanoid', 'Soulless', 'War Dog'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -3103,7 +3103,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Houndgun and Houndblade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(10)
@@ -3129,8 +3129,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-8-feature-2',
 						name: 'Focus Fire',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of Alkestis’s next turn, any effect that reduces the damage taken by the target has no effect.')
@@ -3143,8 +3143,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Artillery Enfilade',
 						type: FactoryLogic.type.createTrigger('An ally is reduced to 0 Stamina within 10 squares of Alkestis.'),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 3, within: 10 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -3172,7 +3172,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-8-feature-6',
 						name: 'Fog of War',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.createSpecial('') ],
+						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Each ally in the encounter',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can disappear, then reappear anywhere on the encounter map 3 or more squares away from any enemy. Additionally, each target has a double edge on their next power roll.')
@@ -3184,8 +3184,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-8-feature-7',
 						name: 'Send in the Second Wave',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('For each war dog reduced to 0 Stamina in the encounter, a war dog shriketrooper appears in an unoccupied space within distance.')
@@ -3197,8 +3197,8 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						id: 'wardog-4th-8-feature-8',
 						name: 'The Silver Wolf’s Final Stratagem',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the next round, each target enemy who has <code>I < 4</code> is dazed, each target enemy who has <code>M < 4</code> is restrained, and each target enemy who has <code>A < 4</code> can’t use triggered actions. Additionally, until the end of the encounter, Alkestis and each target ally have damage immunity 3 and deal an extra 5 damage with strikes.')

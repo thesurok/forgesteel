@@ -10,7 +10,7 @@ export const sniper: Kit = {
 	description: 'The Sniper kit gives you the tools and techniques to take down enemies from afar. This kit can help you become the archer who lurks behind trees or down tunnels, picking off enemies with a bow or crossbow as they approach.',
 	type: '',
 	armor: [],
-	weapon: [ KitWeapon.Bow ],
+	weapon: [KitWeapon.Bow],
 	stamina: 0,
 	speed: 1,
 	stability: 0,
@@ -26,14 +26,14 @@ export const sniper: Kit = {
 				name: 'Patient Shot',
 				description: 'Breathe … aim … wait … then strike!',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createRanged(5) ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createRanged(5)],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '6 + M or A damage',
 							tier3: '9 + M or A damage'

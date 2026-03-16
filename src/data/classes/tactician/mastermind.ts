@@ -15,7 +15,7 @@ export const mastermind: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-sub-2-1-1',
-					listOptions: [ SkillList.Lore ]
+					listOptions: [SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-2-1-2',
@@ -49,9 +49,9 @@ You can make this test only once for any encounter or negotiation.`
 						name: 'Overwatch',
 						description: 'Under your direction, an ally waits for just the right moment to strike.',
 						type: FactoryLogic.type.createTrigger('The target moves.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('At any time during the target’s movement, one ally can make a free strike against them.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -71,7 +71,7 @@ You can make this test only once for any encounter or negotiation.`
 						name: 'Goaded',
 						description: 'You have learned to leverage your marked foes’ psychology and goad them into acting before they’re tactically ready.',
 						type: FactoryLogic.type.createTrigger('A creature marked by you uses a strike that targets you or any ally within your line of effect.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can change one target of the strike to you or another ally within your line of effect. The new target must be within distance of the ability and within line of effect of the creature using it.')
@@ -89,14 +89,14 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'I\'ve Got Your Back',
 									description: 'Your enemy will think twice about attacking your friend.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createRanged(5) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createRanged(5)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Reason ],
+												characteristic: [Characteristic.Reason],
 												tier1: '5 + R damage; taunted (EoT)',
 												tier2: '9 + R damage; taunted (EoT)',
 												tier3: '12 + R damage; taunted (EoT)'
@@ -115,8 +115,8 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'Targets of Opportunity',
 									description: 'You point out easy targets to your friends, allowing them to include more enemies in their attacks.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(5) ],
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(5)],
 									target: 'Two creatures',
 									cost: 5,
 									sections: [
@@ -172,8 +172,8 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'Battle Plan',
 									description: 'With new understanding of your foes, you create the perfect plan to win the battle.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Three creatures',
 									cost: 9,
 									sections: [
@@ -194,9 +194,9 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'Hustle!',
 									description: 'You and your allies coordinate to form a new battle line.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
-									target: 'Self and each ally in the area',
+									keywords: [AbilityKeyword.Area],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
+									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You mark two enemies within 10 squares of you. Each target can shift up to their speed. You and each target gain 2 surges.')
@@ -244,9 +244,9 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'Blot Out the Sun!',
 									description: 'What makes a good soldier? The ability to fire four shots a minute in any weather.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-									target: 'Self and each ally in the area',
+									keywords: [AbilityKeyword.Area],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Each target can make a ranged free strike that gains an edge against any enemy marked by you within distance of their ranged free strike. A target ignores banes and double banes when making this strike.')
@@ -262,7 +262,7 @@ You can make this test only once for any encounter or negotiation.`
 									name: 'Counterstrategy',
 									description: 'I’ve identified a way to negate their strengths.',
 									type: FactoryLogic.type.createMain(),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [

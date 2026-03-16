@@ -21,7 +21,7 @@ As a tactician, you have abilities that heal your allies and grant them increase
 	subclassName: 'Tactical Doctrine',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Reason ]
+		[Characteristic.Might, Characteristic.Reason]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -62,12 +62,12 @@ As a tactician, you have abilities that heal your allies and grant them increase
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-1-1',
-					selected: [ 'Lead' ]
+					selected: ['Lead']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-1-2',
-					options: [ 'Alertness', 'Architecture', 'Blacksmithing', 'Brag', 'Culture', 'Empathize', 'Fletching', 'Mechanics', 'Monsters', 'Search', 'Strategy' ],
-					listOptions: [ SkillList.Exploration ],
+					options: ['Alertness', 'Architecture', 'Blacksmithing', 'Brag', 'Culture', 'Empathize', 'Fletching', 'Mechanics', 'Monsters', 'Search', 'Strategy'],
+					listOptions: [SkillList.Exploration],
 					count: 2
 				}),
 				FactoryLogic.feature.createKitChoice({
@@ -86,9 +86,9 @@ As a tactician, you have abilities that heal your allies and grant them increase
 								name: 'Mark',
 								description: 'You draw your allies’ attention to a specific foe—with devastating effect.',
 								type: FactoryLogic.type.createManeuver(),
-								keywords: [ AbilityKeyword.Ranged ],
-								distance: [ FactoryLogic.distance.createRanged(10) ],
-								target: 'One creature',
+								keywords: [AbilityKeyword.Ranged],
+								distance: [FactoryLogic.distance.createRanged(10)],
+								target: 'Одна істота',
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
 The target is marked by you until the end of the encounter, until you are dying, or until you use this ability again. You can willingly end your mark on a creature (no action required), and if another tactician marks a creature, your mark on that creature ends. When a creature marked by you is reduced to 0 Stamina, you can use a free triggered action to mark a new target within distance.
@@ -105,7 +105,7 @@ While a creature marked by you is within your line of effect, you and allies wit
 								id: 'tactician-1-5b',
 								name: 'Mark: Trigger',
 								type: FactoryLogic.type.createTrigger('You or any ally uses an ability to deal rolled damage to a creature marked by you', { free: true }),
-								distance: [ FactoryLogic.distance.createSpecial('Special') ],
+								distance: [FactoryLogic.distance.createSpecial('Special')],
 								target: 'Special',
 								cost: 1,
 								sections: [
@@ -130,9 +130,9 @@ You can’t gain more than one benefit from the same trigger.`),
 						name: '“Strike Now!”',
 						description: 'Your foe left an opening. You point this out to an ally!',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target can use a signature ability as a free triggered action.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -157,7 +157,7 @@ You can’t gain more than one benefit from the same trigger.`),
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-2-1',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -194,7 +194,7 @@ You can’t gain more than one benefit from the same trigger.`),
 					tag: 'deal-damage 2',
 					trigger: 'The first time each round that you or an ally damages a creature you have marked',
 					value: '2',
-					replacesTags: [ 'deal-damage' ]
+					replacesTags: ['deal-damage']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-4-3',
@@ -228,7 +228,7 @@ You can’t gain more than one benefit from the same trigger.`),
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-6-2',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -266,7 +266,7 @@ You can’t gain more than one benefit from the same trigger.`),
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-7-3',
@@ -332,7 +332,7 @@ Command remains until you spend it.`
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-10-3',
 					name: 'Perk',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-10-4',
@@ -344,7 +344,7 @@ Command remains until you spend it.`
 					tag: 'start 3',
 					trigger: 'Start of your turn',
 					value: '4',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-10-6',
@@ -363,14 +363,14 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Battle Cry',
 			description: 'You shout a phrase that galvanizes your team.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Three allies',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: 'Each target gains 1 surge.',
 						tier2: 'Each target gains 2 surges.',
 						tier3: 'Each target gains 3 surges.'
@@ -383,7 +383,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Concussive Strike',
 			description: 'Your precise strike leaves your foe struggling to respond.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -393,7 +393,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; M < [weak], dazed (save ends)',
 						tier2: '5 + M damage; M < [average], dazed (save ends)',
 						tier3: '8 + M damage; M < [strong], dazed (save ends)'
@@ -406,7 +406,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Inspiring Strike',
 			description: 'Your attack gives an ally hope.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -416,7 +416,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; you or one ally within 10 squares of you can spend a Recovery',
 						tier2: '5 + M damage; you or one ally within 10 squares of you can spend a Recovery',
 						tier3: '8 + M damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter'
@@ -429,8 +429,8 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Squad! Forward!',
 			description: 'On your command, you and your allies force back the enemy line.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Self and two allies',
 			cost: 3,
 			sections: [
@@ -442,7 +442,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Hammer And Anvil',
 			description: '“Let’s not argue about who’s the hammer and who’s the anvil!',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -452,7 +452,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '5 + M damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action',
 						tier2: '9 + M damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action',
 						tier3: '12 + M damage; two allies within 10 squares of you can each use a strike signature ability that gains an edge against the target as a free triggered action'
@@ -466,7 +466,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Mind Game',
 			description: 'Your attack demoralizes your foe. Your allies begin to think you can win.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
@@ -477,7 +477,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionText('You mark the target.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '4 + M damage; R < [weak], weakened (save ends)',
 						tier2: '6 + M damage; R < [average], weakened (save ends)',
 						tier3: '10 + M damage; R < [strong], weakened (save ends)'
@@ -491,8 +491,8 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Now!',
 			description: 'Your allies wait for your command - then unleash death!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Three allies',
 			cost: 5,
 			sections: [
@@ -504,8 +504,8 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'This Is What We Planned For',
 			description: 'All those coordination drills you made them do finally pay off.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Two allies',
 			cost: 5,
 			sections: [
@@ -517,7 +517,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Frontal Assault',
 			description: 'The purpose of a charge is to break their morale and force a retreat.',
 			type: FactoryLogic.type.createManeuver(),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -529,7 +529,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Hit ’Em Hard!',
 			description: 'Your allies see the advantages in attacking the targets you select.',
 			type: FactoryLogic.type.createManeuver(),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -541,7 +541,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Rout',
 			description: 'The tide begins to turn.',
 			type: FactoryLogic.type.createManeuver(),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -553,7 +553,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Stay Strong and Focus!',
 			description: 'We can do this! Keep faith and hold fast!',
 			type: FactoryLogic.type.createManeuver(),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -565,9 +565,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Squad! Gear Check!',
 			description: 'You distract a foe while your allies secure their defensive gear.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -586,8 +586,8 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Squad! Remember Your Training!',
 			description: 'You remind your allies how to best use their gear.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Self and two allies',
 			cost: 9,
 			sections: [
@@ -599,9 +599,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Win This Day!',
 			description: 'You inspire your allies to recover and gather their strength.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Each target gains 2 surges. Additionally, they can spend a Recovery, remove any conditions or effects on them, and stand up if they are prone.')
@@ -612,9 +612,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'You’ve Still Got Something Left',
 			description: 'You push an ally to use a heroic ability sooner than they otherwise would.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One ally',
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Один союзник',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your Reason score. The ability has its Heroic Resource cost reduced by 1 + your Reason score (minimum cost 0).')
@@ -625,9 +625,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Go Now and Speed Well',
 			description: 'You direct an attack to strike true.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target gains 2 surges and can use a signature or heroic ability as a free triggered action. The ability has a double edge on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.')
@@ -638,9 +638,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Finish Them!',
 			description: 'You point out an opening to your ally so they can land a killing blow.',
 			type: FactoryLogic.type.createTrigger('The target is not a leader or solo creature, and becomes winded.', { free: true }),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target is killed. Additionally, the creature who caused the target to be winded can spend a Recovery.')
@@ -651,8 +651,8 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'Floodgates Open',
 			description: 'You direct your squad to strike in unison and with devastating effect.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Three allies',
 			cost: 11,
 			sections: [
@@ -664,12 +664,12 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			name: 'I’ll Open and You’ll Close',
 			description: 'You create an opening for an ally.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'One creature',
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

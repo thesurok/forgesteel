@@ -21,7 +21,7 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 	subclassName: 'Primordial Aspect',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Might, Characteristic.Agility ]
+		[Characteristic.Might, Characteristic.Agility]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -62,11 +62,11 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-1-1',
-					selected: [ 'Nature' ]
+					selected: ['Nature']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-1-2',
-					listOptions: [ SkillList.Exploration, SkillList.Intrigue ],
+					listOptions: [SkillList.Exploration, SkillList.Intrigue],
 					count: 2
 				}),
 				FactoryLogic.feature.create({
@@ -93,7 +93,7 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'fury-2-1',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Intrigue ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Intrigue]
 				})
 			]
 		},
@@ -125,7 +125,7 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 					tag: 'take-damage 2',
 					trigger: 'The first time each combat round that you take damage',
 					value: '2',
-					replacesTags: [ 'take-damage' ]
+					replacesTags: ['take-damage']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'fury-4-3'
@@ -175,7 +175,7 @@ As a main action, you can touch a magic source of elemental power and use it to 
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'fury-6-3',
-					lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Intrigue ]
+					lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Intrigue]
 				})
 			]
 		},
@@ -221,7 +221,7 @@ Additionally, if you are a berserker or reaver, you have immunity to acid, cold,
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 + 1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-7-4'
@@ -282,7 +282,7 @@ Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, ga
 					tag: 'take-damage 3',
 					trigger: 'The first time each combat round that you take damage',
 					value: '3',
-					replacesTags: [ 'take-damage', 'take-damage 2' ]
+					replacesTags: ['take-damage', 'take-damage 2']
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'fury-10-5',
@@ -314,14 +314,14 @@ Primordial power remains until you spend it.`
 			name: 'Brutal Slam',
 			description: 'The heavy impact of your weapon attacks drives your foes ever back.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; push 1',
 						tier2: '6 + M damage; push 2',
 						tier3: '9 + M damage; push 4'
@@ -334,14 +334,14 @@ Primordial power remains until you spend it.`
 			name: 'Hit And Run',
 			description: 'Staying in constant motion helps you slip out of reach after a brutal assault.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '2 + M damage',
 						tier2: '5 + M damage',
 						tier3: '7 + M damage; A < [strong], slowed (save ends)'
@@ -355,14 +355,14 @@ Primordial power remains until you spend it.`
 			name: 'Impaled!',
 			description: 'You skewer your enemy like a boar upon a spit.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature of your size or smaller',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '2 + M damage; M < [weak], grabbed',
 						tier2: '5 + M damage; M < [average], grabbed',
 						tier3: '7 + M damage; M < [strong], grabbed'
@@ -375,14 +375,14 @@ Primordial power remains until you spend it.`
 			name: 'To the Death!',
 			description: 'Your reckless assault leaves you tactically vulnerable.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage',
 						tier2: '6 + M damage',
 						tier3: '9 + M damage'
@@ -396,14 +396,14 @@ Primordial power remains until you spend it.`
 			name: 'Back!',
 			description: 'You hew about you with your mighty weapon, hurling enemies backward.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '5 damage',
 						tier2: '8 damage; push 1',
 						tier3: '11 damage; push 3'
@@ -416,14 +416,14 @@ Primordial power remains until you spend it.`
 			name: 'Out of the Way!',
 			description: 'Your enemies will clear your path — whether they want to or not.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; slide 2',
 						tier2: '5 + M damage; slide 3',
 						tier3: '8 + M damage; slide 5'
@@ -437,15 +437,15 @@ Primordial power remains until you spend it.`
 			name: 'Tide of Death',
 			description: 'Teach them the folly of lining up for you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self; see below',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You move up to your speed in a straight line, and enemy squares are not difficult terrain for this movement. You can end this movement in a creature’s space and move them to an adjacent unoccupied space. You make one power roll that targets each enemy whose space you move through.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '2 damage',
 						tier2: '3 damage',
 						tier3: '5 damage'
@@ -459,14 +459,14 @@ Primordial power remains until you spend it.`
 			name: 'Your Entrails Are Your Extrails!',
 			description: 'Hard for them to fight when they’re busy holding in their giblets.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '3 + M damage; M < [weak], bleeding (save ends)',
 						tier2: '5 + M damage; M < [average], bleeding (save ends)',
 						tier3: '8 + M damage; M < [strong], bleeding (save ends)'
@@ -480,14 +480,14 @@ Primordial power remains until you spend it.`
 			name: 'Blood for Blood!',
 			description: 'See how well they fight after you’ve bled them dry.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '4 + M damage; M < [weak], bleeding and weakened (save ends)',
 						tier2: '6 + M damage; M < [average], bleeding and weakened (save ends)',
 						tier3: '10 + M damage; M < [strong], bleeding and weakened (save ends)'
@@ -501,7 +501,7 @@ Primordial power remains until you spend it.`
 			name: 'Make Peace With Your God!',
 			description: 'Anger is an energy.',
 			type: FactoryLogic.type.createManeuver({ free: true }),
-			distance: [ FactoryLogic.distance.createSelf() ],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 5,
 			sections: [
@@ -513,14 +513,14 @@ Primordial power remains until you spend it.`
 			name: 'Thunder Roar',
 			description: 'You unleash a howl that hurls your enemies back.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 			target: 'Each enemy in the area',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '6 damage; push 2',
 						tier2: '9 damage; push 4',
 						tier3: '13 damage; push 6'
@@ -534,14 +534,14 @@ Primordial power remains until you spend it.`
 			name: 'To the Uttermost End',
 			description: 'You gut your life force to ensure a foe’s demise.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '7 + M damage',
 						tier2: '11 + M damage',
 						tier3: '16 + M damage'
@@ -558,8 +558,8 @@ Primordial power remains until you spend it.`
 			name: 'Demon Unleashed',
 			description: 'Foes tremble at the sight of you.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -571,8 +571,8 @@ Primordial power remains until you spend it.`
 			name: 'Face the Storm!',
 			description: 'Shocked in the face of your naked brutality, your enemy’s instincts take over.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -584,8 +584,8 @@ Primordial power remains until you spend it.`
 			name: 'Steelbreaker',
 			description: 'See how useless their weapons are!',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -597,9 +597,9 @@ Primordial power remains until you spend it.`
 			name: 'You Are Already Dead',
 			description: 'Slash. Walk away.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('If the target is not a leader or solo creature, they are reduced to 0 Stamina at the end of their next turn. If the target is a leader or solo creature, you gain 3 surges and can make a melee free strike against them.')
@@ -610,14 +610,14 @@ Primordial power remains until you spend it.`
 			name: 'Debilitating Strike',
 			description: 'You need just one blow to sabotage your target.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '10 + M damage; M < [weak], slowed (save ends)',
 						tier2: '14 + M damage; M < [average], slowed (save ends)',
 						tier3: '20 + M damage; M < [strong], slowed (save ends)'
@@ -631,14 +631,14 @@ Primordial power remains until you spend it.`
 			name: 'My Turn!',
 			description: 'You quickly strike back at a foe.',
 			type: FactoryLogic.type.createTrigger('A creature causes you to be winded or dying, or damages you while you are winded or dying.'),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'The triggering creature',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '6 + M damage;',
 						tier2: '9 + M damage;',
 						tier3: '13 + M damage;'
@@ -652,14 +652,14 @@ Primordial power remains until you spend it.`
 			name: 'Rebounding Storm',
 			description: 'You knock around enemies like playthings.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Two creatures or objects',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '9 + M damage; push 3',
 						tier2: '14 + M damage; push 5',
 						tier3: '19 + M damage; push 7'
@@ -673,14 +673,14 @@ Primordial power remains until you spend it.`
 			name: 'To Stone!',
 			description: 'You channel the Primordial Chaos into blows that petrify your foe … literally.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '9 + M damage; M < [weak], slowed (save ends)',
 						tier2: '13 + M damage; M < [average], slowed (save ends)',
 						tier3: '18 + M damage; M < [strong], restrained (save ends)'
@@ -694,8 +694,8 @@ Primordial power remains until you spend it.`
 			name: 'Elemental Ferocity',
 			description: 'Your primordial energy makes for instant retribution.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
@@ -707,14 +707,14 @@ Primordial power remains until you spend it.`
 			name: 'Overkill',
 			description: 'You strike so no damage is wasted.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: '6 + M damage',
 						tier2: '10 + M damage',
 						tier3: '14 + M damage'
@@ -728,8 +728,8 @@ Primordial power remains until you spend it.`
 			name: 'Primordial Rage',
 			description: 'Your ferocity manifests into primordial power.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 11,
 			sections: [
@@ -741,15 +741,15 @@ Primordial power remains until you spend it.`
 			name: 'Relentless Death',
 			description: 'You won’t escape your fate.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self; see below',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You shift up to your speed. Each enemy you move adjacent to during this movement takes damage equal to twice your Might score. Then make one power roll that targets each enemy you move adjacent to during this shift. You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Might ],
+						characteristic: [Characteristic.Might],
 						tier1: 'Any target whose Stamina is equal to or less than 8 dies.',
 						tier2: 'Any target whose Stamina is equal to or less than 11 dies.',
 						tier3: 'Any target whose Stamina is equal to or less than 17 dies.'

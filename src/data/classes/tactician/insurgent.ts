@@ -14,7 +14,7 @@ export const insurgent: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-sub-1-1-1',
-					listOptions: [ SkillList.Intrigue ]
+					listOptions: [SkillList.Intrigue]
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-1-1-2',
@@ -30,9 +30,9 @@ At the Director’s discretion, you and your allies can use skills from the intr
 						name: 'Advanced Tactics',
 						description: 'Your leadership aids an ally.',
 						type: FactoryLogic.type.createTrigger('The target deals damage to another creature.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target gains 2 surges, which they can use on the triggering damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -62,8 +62,8 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Fog of War',
 									description: 'Your unorthodox strategy causes enemies to lash out in fear, heedless of who they might be attacking.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Two creatures',
 									cost: 5,
 									sections: [
@@ -84,15 +84,15 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Try Me Instead',
 									description: '“Try picking on someone my size.”',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSelf() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSelf()],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You shift up to your speed directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other’s spaces. The ally can spend a Recovery, and you can make the following weapon strike with a distance of melee 1 against a creature.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Reason ],
+												characteristic: [Characteristic.Reason],
 												tier1: '2 + R damage; R < [weak], frightened (save ends)',
 												tier2: '3 + R damage; R < [average], frightened (save ends)',
 												tier3: '4 + R damage; R < [strong], frightened (save ends)'
@@ -144,9 +144,9 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Coordinated Execution',
 									description: 'You direct your ally to make a killing blow.',
 									type: FactoryLogic.type.createTrigger('The target uses an ability to deal rolled damage to a creature while hidden.', { free: true }),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One ally',
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Один союзник',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('If the target of the triggering ability is not a leader or solo creature, they are reduced to 0 Stamina. If the target of the triggering ability is a minion, the entire squad is killed. If the target of the triggering ability is a leader or solo creature, the triggering ability’s power roll automatically obtains a tier 3 outcome.')
@@ -162,7 +162,7 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Panic in Their Lines',
 									description: 'You confuse your foes, causing them to turn on each other.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(5)
@@ -223,8 +223,8 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Squad! Hit and Run!',
 									description: 'I had to pry this secret from the shadow colleges.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Self and two allies',
 									cost: 11,
 									sections: [
@@ -241,8 +241,8 @@ At the Director’s discretion, you and your allies can use skills from the intr
 									name: 'Their Lack of Focus Is Their Undoing',
 									description: 'You trick your enemies into attacking each other and leave them confused by the aftermath.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Three enemies',
 									cost: 11,
 									sections: [

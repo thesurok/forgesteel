@@ -45,11 +45,11 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			ability: FactoryLogic.createAbility({
 				id: 'radenwight-malice-1',
 				name: 'Trouser Cut',
-				type: FactoryLogic.type.createMain({ qualifiers: [ 'Non-minion' ] }),
+				type: FactoryLogic.type.createMain({ qualifiers: ['Non-minion'] }),
 				cost: 3,
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 2,
@@ -92,7 +92,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Mischiever',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -108,7 +108,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Dagger Dance',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -130,9 +130,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-1-feature-2',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mischiever makes a free strike against the target.')
 						]
@@ -145,7 +145,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Scrapper',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -161,8 +161,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Buckler Bash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -179,9 +179,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-2-feature-2',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The scrapper makes a free strike against the target.')
 						]
@@ -194,7 +194,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Swiftpaw',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -210,8 +210,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Rapier Flunge',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -228,9 +228,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-3-feature-2',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The swiftpaw makes a free strike against the target.')
 						]
@@ -243,7 +243,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Redeye',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -259,8 +259,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Eyes-On-Me Shot',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -278,9 +278,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-4-feature-2',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The redeye makes a free strike against the target.')
 						]
@@ -293,7 +293,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Bruxer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -308,8 +308,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Lockjaw',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -327,8 +327,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-5-feature-2',
 						name: 'Flurry of Bites',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy in the area',
 						cost: 3,
 						sections: [
@@ -346,9 +346,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-5-feature-3',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bruxer makes a free strike against the target.')
 						]
@@ -366,7 +366,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Piper',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -381,7 +381,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Piercing Trill',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(10)
@@ -403,8 +403,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-6-feature-2',
 						name: 'Vivace Vivace!',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each ally in the area',
 						cost: 3,
 						sections: [
@@ -421,9 +421,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-6-feature-3',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The piper makes a free strike against the target.')
 						]
@@ -441,7 +441,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			name: 'Radenwight Ratcrobat',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -456,8 +456,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'En Garde!',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -475,8 +475,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-7-feature-3',
 						name: 'Over Here, Thanks',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ratcrobat slides the target up to 3 squares, then can shift into any square the target left.')
@@ -488,9 +488,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-7-feature-4',
 						name: 'Ready Rodent',
 						type: FactoryLogic.type.createTrigger('An ally deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ratcrobat makes a free strike against the target.')
 						]
@@ -509,7 +509,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 			description: '',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Radenwight' ],
+			keywords: ['Humanoid', 'Radenwight'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -524,8 +524,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Cacophony',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -543,8 +543,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-8-feature-2',
 						name: 'Tempo Change',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -566,8 +566,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						name: 'Ever-Ready Rodent',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to an ally or takes damage from an ally.', { free: true }),
 						cost: 2,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The maestro makes a free strike against the target.')
@@ -584,8 +584,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-8-feature-5',
 						name: 'Overture',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can shift up to their speed or take the Defend action.')
@@ -597,9 +597,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-8-feature-6',
 						name: 'Solo Act',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(15)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of their next turn, the target halves any damage they take, gains a +4 damage bonus to strikes, and has their speed doubled.')
 						]
@@ -610,8 +610,8 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						id: 'radenwight-8-feature-7',
 						name: 'Rondo of Rat',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each dead ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target stands, makes a free strike, then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.')

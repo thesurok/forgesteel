@@ -18,8 +18,8 @@ export const telekinesis: SubClass = {
 						name: 'Minor Telekinesis',
 						description: 'Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self or one size 1 creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You slide the target up to a number of squares equal to your Reason score.'),
@@ -41,9 +41,9 @@ export const telekinesis: SubClass = {
 						name: 'Repel',
 						description: 'They aren’t going anywhere, but you might!',
 						type: FactoryLogic.type.createTrigger('The target takes damage or is force moved.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes half the triggering damage, or the distance of the triggering forced movement is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the forced movement is reduced to 0 squares, the target can push the source of the forced movement a number of squares equal to your Reason score.')
 						]
@@ -60,7 +60,7 @@ export const telekinesis: SubClass = {
 						name: 'Ease their Fall',
 						description: '',
 						type: FactoryLogic.type.createTrigger('You land after a fall, or any falling creature lands within 2 squares of you.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You reduce the falling damage by an amount equal to 2 + your Reason score.')
@@ -78,13 +78,13 @@ export const telekinesis: SubClass = {
 									name: 'Gravitic Burst',
 									description: 'Everyone get away from me!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 									target: 'Each enemy in the area',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Reason ],
+											characteristic: [Characteristic.Reason],
 											tier1: '3 шкоди; вертикально відштовхнути на 2',
 											tier2: '6 шкоди; вертикально відштовхнути на 4',
 											tier3: '9 шкоди; вертикально відштовхнути на 6'
@@ -105,13 +105,13 @@ export const telekinesis: SubClass = {
 									name: 'Levity and Gravity',
 									description: 'You raise the target into the air, then smother them against the ground.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'One creature or object',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Reason ],
+											characteristic: [Characteristic.Reason],
 											tier1: '6 + Р шкоди; С < [слабкий], розпластаний',
 											tier2: '10 + Р шкоди; С < [середній], розпластаний',
 											tier3: '14 + Р шкоди; С < [сильний], розпластаний і не може встати (рят. кидок завершує)'
@@ -166,8 +166,8 @@ export const telekinesis: SubClass = {
 									name: 'Gravitic Well',
 									description: 'You bend gravity into a fine point and pull your foes toward it.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 									target: 'Each enemy and object in the area',
 									cost: 9,
 									sections: [
@@ -196,8 +196,8 @@ export const telekinesis: SubClass = {
 									name: 'Greater Kinetic Grip',
 									description: 'You raise the target into the air without breaking a sweat.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'One creature or object',
 									cost: 9,
 									sections: [
@@ -235,8 +235,8 @@ export const telekinesis: SubClass = {
 						name: 'Levitation Field',
 						description: 'You manipulate the air around your allies so they can move as freely through the sky as you can.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each ally in the area',
 						cost: 3,
 						sections: [
@@ -269,8 +269,8 @@ export const telekinesis: SubClass = {
 									name: 'Fulcrum',
 									description: 'You precisely manipulate the creatures around you.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.createSpecial('Special') ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.createSpecial('Special')],
 									target: 'Each enemy and object in the area',
 									cost: 11,
 									sections: [
@@ -299,8 +299,8 @@ export const telekinesis: SubClass = {
 									name: 'Gravitic Nova',
 									description: 'Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each enemy and object in the area',
 									cost: 11,
 									sections: [

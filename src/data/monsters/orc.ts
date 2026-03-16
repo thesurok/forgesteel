@@ -97,7 +97,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Mohler',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Animal', 'Orc' ],
+			keywords: ['Animal', 'Orc'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(7, 'burrow'),
@@ -113,8 +113,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Earth Bump',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -144,7 +144,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Blitzer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -160,8 +160,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Lugged Spear',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -186,7 +186,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Bloodspark',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -202,8 +202,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Explosive Mote',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -227,7 +227,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Glorifier',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -243,7 +243,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Call to Victory',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -272,7 +272,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Razor',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(6),
@@ -288,8 +288,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Boot and Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -314,7 +314,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Bloodrunner',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8),
@@ -329,8 +329,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Shield Bash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -364,7 +364,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Chainlock',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -379,8 +379,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Hook and Chain',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -398,8 +398,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-7-feature-2',
 						name: 'Heavy Crossbolt',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						cost: 3,
 						sections: [
@@ -429,7 +429,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Eye of Grole',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -449,8 +449,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Elemental Discharge',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -468,8 +468,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-8-feature-3',
 						name: 'Elemental Discharge',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -502,7 +502,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Garroter',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -517,8 +517,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Dagger Feint',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -536,9 +536,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-9-feature-2',
 						name: 'Strangle',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -573,7 +573,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Godcaller',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -588,7 +588,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Power Chord',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(10)
@@ -609,9 +609,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-10-feature-2',
 						name: 'Cadenza',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a main action'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -627,8 +627,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Rally Ostinato',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self and three allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target regains 15 Stamina and ignores difficult terrain until the end of the encounter.')
@@ -647,7 +647,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Juggernaut',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(6),
@@ -662,8 +662,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Haymaker Greataxe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -682,7 +682,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Hrraaaaaagh!',
 						type: FactoryLogic.type.createTrigger('The juggernaut takes damage.', { free: true }),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The juggernaut moves up to their speed and can make a free strike.')
@@ -706,7 +706,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Rampart',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(6),
@@ -721,8 +721,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'My Spear, My Foe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -740,8 +740,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-12-feature-2',
 						name: 'Castling',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createSelf()],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The rampart moves or shifts up to their speed adjacent to the target, then can swap places with the target.')
 						]
@@ -752,7 +752,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-12-feature-3',
 						name: 'No.',
 						type: FactoryLogic.type.createTrigger('A creature targets an ally adjacent to the rampart with an ability that doesn’t also target the rampart.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The rampart becomes the target of the triggering ability instead.')
@@ -771,7 +771,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Terranova',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'burrow'),
@@ -786,8 +786,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Earth Pillar',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -806,8 +806,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Sinkhole',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -837,7 +837,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Orc Warleader',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Orc' ],
+			keywords: ['Humanoid', 'Orc'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -852,8 +852,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Go.',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a main action.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -871,8 +871,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-14-feature-2',
 						name: 'Mace Lariat',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Each enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -904,8 +904,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-14-feature-4',
 						name: 'Courtesy Call',
 						type: FactoryLogic.type.createTrigger('The target obtains a tier 1 outcome on one power roll.'),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target has a double edge on their next power roll before the end of the encounter')
 						]
@@ -916,8 +916,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-14-feature-5',
 						name: 'Close In',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'All allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target moves up to their speed. Each enemy adjacent to a target after this move makes an **Intuition test.**'),
@@ -935,8 +935,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-14-feature-6',
 						name: 'Familial Reinforcements',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader shifts up to their speed, and four orc blitzers appear in unoccupied spaces within distance.')
@@ -948,7 +948,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-14-feature-7',
 						name: 'I’ll Do This Myself',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Three times in succession, the warleader shifts up to their speed and can use Mace Lariat.')
@@ -972,7 +972,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 			name: 'Scyza',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Mount),
-			keywords: [ 'Animal', 'Orc' ],
+			keywords: ['Animal', 'Orc'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(4),
 			speed: FactoryLogic.createSpeed(6),
@@ -987,8 +987,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Clawed Kick',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1006,8 +1006,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-15-feature-2',
 						name: 'Whiptail',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1026,8 +1026,8 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Crestfall',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1044,7 +1044,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-15-feature-4',
 						name: 'Sandstorm',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The scyza kicks up a sandstorm, granting concealment to themself and any ally in the area until the end of the scyza’s next turn. Each enemy in the area makes an **Intuition test**.'),
@@ -1062,7 +1062,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						id: 'orc-15-feature-5',
 						name: 'Brace and Break',
 						type: FactoryLogic.type.createTrigger('The scyza or an ally riding the scyza is targeted by an ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Any damage dealt by the triggering ability is halved. If the creature or object who used the ability is within 3 squares of the scyza, the scyza can make a free strike against them.')

@@ -95,7 +95,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Cloak',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8, 'climb'),
@@ -111,8 +111,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Stick and Poke',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -137,7 +137,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Dusk Mage',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -153,8 +153,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Gloom Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -178,7 +178,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Sniper',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -194,8 +194,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Lumina Arrow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(7) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(7)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -222,7 +222,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Nightstrike',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -238,8 +238,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Vault',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -266,7 +266,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Assassin',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -281,8 +281,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Lumina Assault',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -307,8 +307,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Splitbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 4, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -335,7 +335,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Duskcaller',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 14,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -350,8 +350,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Night Knife',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -371,7 +371,7 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-6-feature-2',
 						name: 'The Lay of Cor’thoroth',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 3 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 3 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the duskcaller’s next turn, the area is filled with darkness.'),
@@ -394,7 +394,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Knightfell',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -409,8 +409,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Suffusing Strike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(3) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(3)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -427,9 +427,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-7-feature-2',
 						name: 'Trick of the Eye',
 						type: FactoryLogic.type.createTrigger('An enemy within distance makes a strike against the target.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes half the damage and the knightfell takes the other half.')
 						]
@@ -447,7 +447,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Luminator',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -462,8 +462,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Lumina Mark',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(3) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(3)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -484,8 +484,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Mourning Till Dusk',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -512,7 +512,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Moondancer',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 14,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -527,8 +527,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Crescent Sweep',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -548,8 +548,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-9-feature-2',
 						name: 'Dissolve',
 						type: FactoryLogic.type.createTrigger('The moondancer takes damage from a strike'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The moondancer can teleport up to 10 squares to a space with concealment created by darkness.')
@@ -568,7 +568,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Mournblade',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -583,8 +583,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Knife in the Dark',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -604,8 +604,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-10-feature-2',
 						name: 'Shadow Step',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the mournblade has concealment, they can teleport up to 10 squares to a space with concealment created by darkness.')
@@ -624,7 +624,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Noctis Mage',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 16,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -639,8 +639,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Blotting Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -665,8 +665,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Enemies in the Dark',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Two enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -692,7 +692,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Panther',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -707,8 +707,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Dusk Cleave',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -729,8 +729,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Bladestorm',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -757,7 +757,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Shadow Elf Eclipse',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Fey', 'Humanoid', 'Shadow Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Shadow Elf'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'climb'),
@@ -772,8 +772,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Manifold Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -795,8 +795,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Grasping Shadow',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Three creatures or objects casting a shadow',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -813,8 +813,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-13-feature-3',
 						name: 'Put It Out!',
 						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability that emits light, including abilities that deal fire or lightning damage.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target has a double bane on the ability.')
@@ -836,8 +836,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-13-feature-6',
 						name: 'From the Shadows',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The eclipse calls forth one **brush stalker** into an unoccupied space within distance. Each ally within distance can then shift up to their speed and make a free strike.')
@@ -849,8 +849,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-13-feature-7',
 						name: 'Cast Away All Hope',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target loses all their surges. Additionally, until the end of the round, allies ignore edges and double edges on any targets’ abilities, and ignore any nondamaging effects of any target’s damage-dealing abilities.')
@@ -862,8 +862,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						id: 'elf-shadow-13-feature-8',
 						name: 'Umbral Hunger',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -883,7 +883,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			name: 'Brush Stalker',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Mount),
-			keywords: [ 'Animal', 'Fey', 'Shadow Elf' ],
+			keywords: ['Animal', 'Fey', 'Shadow Elf'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(8),
@@ -898,8 +898,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Gore',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -917,8 +917,8 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'Reclamation',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

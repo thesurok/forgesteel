@@ -10,8 +10,8 @@ export const shiningArmor: Kit = {
 	name: 'Shining Armor',
 	description: 'The Shining Armor kit provides the most protection a kit can afford, providing you with the sword, shield, and armor necessary to play the prototypical knight.',
 	type: '',
-	armor: [ KitArmor.Heavy, KitArmor.Shield ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Heavy, KitArmor.Shield],
+	weapon: [KitWeapon.Medium],
 	stamina: 12,
 	speed: 0,
 	stability: 1,
@@ -27,14 +27,14 @@ export const shiningArmor: Kit = {
 				name: 'Protective Attack',
 				description: 'The strength of your assault makes it impossible for your foe to ignore you.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '6 + M or A damage',
 							tier3: '9 + M or A damage'

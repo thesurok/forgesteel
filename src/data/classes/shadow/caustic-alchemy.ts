@@ -14,7 +14,7 @@ export const causticAlchemy: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-2-1-1',
-					selected: [ 'Alchemy' ]
+					selected: ['Alchemy']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,7 +22,7 @@ export const causticAlchemy: SubClass = {
 						name: 'Coat The Blade',
 						description: 'A little poison goes a long way.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You gain two surges. Additionally, whenever you use a surge before the end of the encounter, you can choose to have it deal poison damage.'),
@@ -44,7 +44,7 @@ export const causticAlchemy: SubClass = {
 						name: 'Defensive Roll',
 						description: 'When an enemy attacks, you roll with the impact to reduce the harm.',
 						type: FactoryLogic.type.createTrigger('Another creature damages you.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You take half the triggering damage, then can shift up to 2 squares after the triggering effect resolves. If you end this shift with concealment or cover, you can use the Hide maneuver even if you are observed.'),
@@ -70,15 +70,15 @@ export const causticAlchemy: SubClass = {
 									name: 'Sticky Bomb',
 									description: 'Explosives are best when they’re attached to an enemy.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You attach a small bomb to a creature. If you are hidden from the creature, they don’t notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don’t, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a power roll targeting each enemy within 2 squares of it.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '4 + A fire damage',
 												tier2: '7 + A fire damage',
 												tier3: '11 + A fire damage'
@@ -96,13 +96,13 @@ export const causticAlchemy: SubClass = {
 									name: 'Stink Bomb',
 									description: 'Putrid yellow gas explodes from a bomb you toss.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 									target: 'Each creature in the area',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '2 poison damage',
 											tier2: '5 poison damage',
 											tier3: '7 poison damage'
@@ -157,8 +157,8 @@ Additionally, your Defensive Roll ability now allows you to shift up to 5 square
 									name: 'One Vial Makes You Better',
 									description: 'A well-timed throw of a potion will keep your allies in the fight.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Three creatures',
 									cost: 9,
 									sections: [
@@ -178,7 +178,7 @@ A creature who drinks the potion can spend up to 2 Recoveries, and has acid immu
 									name: 'One Vial Makes You Faster',
 									description: 'Each ally who catches a potion you throw can take the battle to the next level.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Ranged ],
+									keywords: [AbilityKeyword.Ranged],
 									distance: [
 										FactoryLogic.distance.createRanged(10)
 									],
@@ -190,7 +190,7 @@ You ready, hand, or lob a potion to each target, who can immediately quaff the p
 
 A creature who drinks the potion receives benefits based on your power roll.`),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: 'The creature’s speed is increased by 2 until the end of the encounter.',
 											tier2: 'The creature can fly until the end of the encounter.',
 											tier3: 'The creature turns invisible until the end of their next turn.'
@@ -223,8 +223,8 @@ A creature who drinks the potion receives benefits based on your power roll.`),
 						name: 'Time Bomb',
 						description: 'The longer it cooks, the bigger the boom.',
 						type: FactoryLogic.type.createManeuver({ free: true }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -255,7 +255,7 @@ For each combat round that has passed since this ability was last used in the cu
 									name: 'Chain Reaction',
 									description: 'One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Ranged ],
+									keywords: [AbilityKeyword.Ranged],
 									distance: [
 										FactoryLogic.distance.createRanged(10)
 									],
@@ -264,7 +264,7 @@ For each combat round that has passed since this ability was last used in the cu
 									sections: [
 										FactoryLogic.createAbilitySectionText('Each enemy within 3 squares of the target who is not currently targeted by this ability also becomes targeted by this ability. This effect continues until there are no more available targets. The ability deals acid, fire, or poison damage (your choice).'),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '7 damage',
 											tier2: '10 damage',
 											tier3: '15 damage'
@@ -281,7 +281,7 @@ For each combat round that has passed since this ability was last used in the cu
 									name: 'To the Stars',
 									description: 'You attach your most potent explosive to your foe. Under less pressing circumstances, you’re sure you could launch them into orbit.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(10)
@@ -290,7 +290,7 @@ For each combat round that has passed since this ability was last used in the cu
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '4 + A fire damage; vertical push 8',
 											tier2: '7 + A fire damage; vertical push 10',
 											tier3: '11 + A fire damage; vertical push 15'

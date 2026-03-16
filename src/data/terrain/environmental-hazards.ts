@@ -177,8 +177,8 @@ export const corrosivePool: Terrain = {
 						id: 'effect-explosive-reaction',
 						name: 'Explosive Reaction',
 						type: FactoryLogic.type.createTrigger('The pool takes fire damage.', { free: true }),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -254,8 +254,8 @@ export const frozenPond: Terrain = {
 						id: 'effect-slippery-surface',
 						name: 'Slippery Surface',
 						type: FactoryLogic.type.createTrigger('A creature or object enters a square of the frozen pond without shifting.', { free: true }),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(0) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -275,8 +275,8 @@ export const frozenPond: Terrain = {
 						id: 'effect-icy-water',
 						name: 'Icy Water',
 						type: FactoryLogic.type.createTrigger('A creature or object enters or falls prone in a square of the frozen pond.', { free: true }),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(0) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -363,8 +363,8 @@ export const lava: Terrain = {
 						id: 'effect-liquid-hot-magma',
 						name: 'Liquid Hot Magma',
 						type: FactoryLogic.type.createTrigger('A creature or object enters the lava or starts their turn there, or starts their turn adjacent to the lava.', { free: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -375,7 +375,7 @@ export const lava: Terrain = {
 									tier3: '12 fire damage; M < 3 the target is burning (save ends)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If the target is adjacent to lava but not in it, this ability takes a bane. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. ')
+							FactoryLogic.createAbilitySectionText('Якщо ціль знаходиться поруч із лавою, але не в ній, ця здібність отримує шкоду (bane). Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди в кінці кожного раунду.')
 						]
 					})
 				})
@@ -443,8 +443,8 @@ export const quicksand: Terrain = {
 						id: 'effect-grasping-depths',
 						name: 'Grasping Depths',
 						type: FactoryLogic.type.createTrigger('A creature or object enters the quicksand or starts their turn there.', { free: true }),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(0) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -510,8 +510,8 @@ export const toxicPlants: Terrain = {
 						id: 'effect-sleep-spores',
 						name: 'Sleep Spores',
 						type: FactoryLogic.type.createTrigger('A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without shifting.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

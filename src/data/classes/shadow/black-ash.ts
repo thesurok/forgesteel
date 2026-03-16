@@ -14,7 +14,7 @@ export const blackAsh: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-1-1-1',
-					selected: [ 'Magic' ]
+					selected: ['Magic']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,8 +22,8 @@ export const blackAsh: SubClass = {
 						name: 'Black Ash Teleport',
 						description: 'In a swirl of black ash, you step from one place to another.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport up to 5 squares. If you have concealment or cover at your destination, you can use the Hide maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.'),
@@ -40,8 +40,8 @@ export const blackAsh: SubClass = {
 						name: 'In All This Confusion',
 						description: 'You vanish in a plume of black smoke to avoid danger.',
 						type: FactoryLogic.type.createTrigger('You take damage.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You halve the damage, then can teleport up to 4 squares after the triggering effect resolves.'),
@@ -68,16 +68,16 @@ export const blackAsh: SubClass = {
 									name: 'In a Puff of Ash',
 									description: 'You enchant a strike with your teleportation magic.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(5)
 									],
-									target: 'One creature',
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '6 + A damage; you can teleport the target 1 square',
 											tier2: '10 + A damage; you can teleport the target up to 3 squares',
 											tier3: '14 + A damage; you can teleport the target up to 5 squares'
@@ -94,8 +94,8 @@ export const blackAsh: SubClass = {
 									name: 'Too Slow',
 									description: 'Your foe made a big mistake.',
 									type: FactoryLogic.type.createTrigger('You use your In All This Confusion ability.', { free: true }),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
@@ -149,13 +149,13 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									name: 'Black Ash Eruption',
 									description: 'Your attack produces a cloud of black ash that launches an enemy into the air.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '3 + A damage; vertical push 5',
 											tier2: '6 + A damage; vertical push 10',
 											tier3: '9 + A damage; vertical push 15'
@@ -174,9 +174,9 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									name: 'Cinderstorm',
 									description: 'You teleport your friends in a burst of ash and fire.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
-									target: 'Self and each ally in the area',
+									keywords: [AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
+									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Each target can teleport up to 5 squares. For each target in addition to you who teleports away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in concealment or cover can use the Hide maneuver even if they are observed.')
@@ -217,14 +217,14 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									name: 'Cacophony of Cinders',
 									description: 'You tumble through the battle, stabbing foes and teleporting allies.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You shift up to twice your speed, making one power roll that targets each creature you come adjacent to during the shift.'),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: 'An enemy takes 6 damage; an ally can teleport up to 3 squares.',
 											tier2: 'An enemy takes 10 damage; an ally can teleport up to 5 squares.',
 											tier3: 'An enemy takes 14 damage; an ally can teleport up to 7 squares.'
@@ -241,13 +241,13 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									name: 'Demon Door',
 									description: 'You create a temporary portal to allow a massive demonic hand to reach through.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(3) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(3)],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '13 + A corruption damage; push 3',
 											tier2: '18 + A corruption damage; push 5',
 											tier3: '25 + A corruption damage; push 7'

@@ -33,7 +33,7 @@ export const theBlackObelisk: Terrain = {
 						id: 'deactivate',
 						name: 'Deactivate',
 						sections: [
-							FactoryLogic.createAbilitySectionText('As a maneuver, a creature adjacent to the black obelisk can make a **Reason test.**'),
+							FactoryLogic.createAbilitySectionText('Як маневр, істота, що знаходиться поруч із чорним обеліском, може виконати **перевірку Розуму**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
@@ -60,8 +60,8 @@ export const theBlackObelisk: Terrain = {
 						id: 'your-fears-become-manifest',
 						name: 'Your Fears Become Manifest',
 						type: FactoryLogic.type.createTrigger('A new round starts', { free: true }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -72,7 +72,7 @@ export const theBlackObelisk: Terrain = {
 									tier3: 'П < 3 зляканий, сповільнений і ослаблений (до кінця ходу)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The target is pushed 2.')
+							FactoryLogic.createAbilitySectionText('Ціль штовхається на 2 клітинки.'),
 						]
 					})
 				})
@@ -112,7 +112,7 @@ export const theChronalHypercube: Terrain = {
 						id: 'deactivate',
 						name: 'Deactivate',
 						sections: [
-							FactoryLogic.createAbilitySectionText('A creature who has the Psionics skill can deactivate and take control of the chronal hypercube by making a **Reason test** while within 10 squares of the hypercube.'),
+							FactoryLogic.createAbilitySectionText('Істота, яка має навичку Псіоніка, може деактивувати і взяти під контроль часовий гіперкуб, виконавши **перевірку Розуму** перебуваючи в межах 10 клітинок від гіперкуба.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
@@ -224,8 +224,8 @@ A creature seated on the throne becomes the hierophant of A’An and gains the f
 						id: 'primordial-flare',
 						name: 'Primordial Flare',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -245,9 +245,9 @@ A creature seated on the throne becomes the hierophant of A’An and gains the f
 						id: 'solar-accretion',
 						name: 'Solar Accretion',
 						type: FactoryLogic.type.createTrigger('A target within distance is made winded or is reduced to 0 Stamina by fire damage.', { free: true }),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the hierophant is a hero, they gain 3 of their Heroic Resource. If the hierophant is a Director-controlled creature, the Director gains 3 Malice.')
 						]
@@ -258,8 +258,8 @@ A creature seated on the throne becomes the hierophant of A’An and gains the f
 						id: 'nova',
 						name: 'Nova',
 						type: FactoryLogic.type.createTrigger('The throne is destroyed or the hierophant obtains a tier 1 outcome on the test to deactivate it.', { free: true }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 14 fire damage and the Hierophant gains the Incubator of A’An complication (see the sidebar). If there is no hierophant, one creature within 10 squares of the throne chosen by the Director gains this complication.')

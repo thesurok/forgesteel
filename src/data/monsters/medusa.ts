@@ -52,9 +52,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				id: 'medusa-malice-1',
 				name: 'Weakening Glare',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-				distance: [ FactoryLogic.distance.createRanged(10) ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+				distance: [FactoryLogic.distance.createRanged(10)],
+				target: 'Одна істота',
 				cost: 4,
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -80,8 +80,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				id: 'medusa-malice-3',
 				name: 'Ssstop and Lisssten',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-				distance: [ FactoryLogic.distance.createRanged(10) ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+				distance: [FactoryLogic.distance.createRanged(10)],
 				target: 'Three creatures',
 				cost: 5,
 				sections: [
@@ -117,7 +117,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 			name: 'Medusa',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Accursed', 'Humanoid', 'Medusa' ],
+			keywords: ['Accursed', 'Humanoid', 'Medusa'],
 			encounterValue: 84,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(10),
@@ -136,8 +136,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-3',
 						name: 'Snake Bites',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -155,8 +155,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-4',
 						name: 'Damning Gaze',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -177,8 +177,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-5',
 						name: 'Petrify',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						cost: 5,
 						sections: [
@@ -199,7 +199,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-6',
 						name: 'Nimble Escape',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The medusa shifts up to 3 squares and can attempt to hide even if observed.')
@@ -211,8 +211,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-7',
 						name: 'Venomous Spit',
 						type: FactoryLogic.type.createTrigger('A creature within distance deals damage to the medusa.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
 						cost: 2,
 						sections: [
@@ -240,8 +240,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-10',
 						name: 'Mass Petrify',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(50) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(50)],
 						target: 'Each enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The medusa can use Petrify against each target without spending Malice. A target who doesn’t have cover increases the potency by 1.')
@@ -253,7 +253,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-11',
 						name: 'Serpent Wings',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The medusa temporarily manifests wings and flies up to their speed without provoking opportunity attacks. During or after this movement, they can use Snake Bites and Damning Gaze once each.')
@@ -265,8 +265,8 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						id: 'medusa-feature-12',
 						name: 'Stone Puppets',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

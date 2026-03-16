@@ -53,8 +53,8 @@ export const olothec: MonsterGroup = {
 				id: 'olothec-malice-2',
 				name: 'Writhing Envelopment',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee(3) ],
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee(3)],
 				target: 'One slimed, transformed, or devolved creature',
 				cost: 4,
 				sections: [
@@ -84,7 +84,7 @@ export const olothec: MonsterGroup = {
 			name: 'Olothec',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
-			keywords: [ 'Horror', 'Olothec' ],
+			keywords: ['Horror', 'Olothec'],
 			encounterValue: 96,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(7, 'fly, swim'),
@@ -95,7 +95,7 @@ export const olothec: MonsterGroup = {
 			features: [
 				FactoryLogic.feature.createDamageModifier({
 					id: 'olothec-feature-1',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 6 })]
 				}),
 				FactoryLogic.feature.createSoloMonster({
 					id: 'olothec-feature-2',
@@ -112,8 +112,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-4',
 						name: 'Devolving Tentacles',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -132,8 +132,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-5',
 						name: 'Slime Spew',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 2, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 2, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -154,9 +154,9 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-6',
 						name: 'Oozing Transformation',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -186,8 +186,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-7',
 						name: 'Jaunt',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The olothec teleports to an unoccupied space within 10 squares. Alternatively, they swap places with a creature or object within 5 squares of them.')
@@ -199,8 +199,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-8',
 						name: 'Liquify',
 						type: FactoryLogic.type.createTrigger('An enemy within distance deals damage to the olothec.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Each enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes 8 psychic damage and has psychic weakness 3 until the end of the olothec’s next turn.')
@@ -222,8 +222,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-11',
 						name: 'Horrifying Form',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Each enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -243,8 +243,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-12',
 						name: 'Psychic Pulse',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The olothec slides each target up to 5 squares. Each target takes 12 psychic damage, and if they have M<3 they are weakened and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.')
@@ -256,8 +256,8 @@ export const olothec: MonsterGroup = {
 						id: 'olothec-feature-13',
 						name: 'Return to Perfection',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

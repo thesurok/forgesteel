@@ -14,7 +14,7 @@ export const chronokinetic: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-sub-1-1-1',
-					listOptions: [ SkillList.Lore ]
+					listOptions: [SkillList.Lore]
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-1-1-2',
@@ -64,8 +64,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Blur',
 									description: 'You release stored time, allowing you to act twice.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
@@ -82,13 +82,13 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Force Redirected',
 									description: 'The force of your strike moves your target in a surprising direction.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(3) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(3)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '8 + A damage; slide 1',
 											tier2: '12 + A damage; slide 3',
 											tier3: '16 + A damage; slide 5'
@@ -134,8 +134,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Interphase',
 									description: 'You slip into a faster timestream to act more quickly.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -152,13 +152,13 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Phase Step',
 									description: 'You weaken your connection to this manifold, allowing you to move through and damage enemies.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSpecial('Self; see below') ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSpecial('Self; see below')],
 									target: 'Self',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Agility ],
+											characteristic: [Characteristic.Agility],
 											tier1: '6 damage; M < [weak]. dazed',
 											tier2: '8 damage; M < [average]. dazed',
 											tier3: '12 damage; M < [strong]. dazed'
@@ -201,13 +201,13 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Arrestor Cycle',
 									description: 'You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.',
 									type: FactoryLogic.type.createTrigger('The triggering creature starts their turn.', { free: true }),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Intuition ],
+											characteristic: [Characteristic.Intuition],
 											tier1: 'I < [weak]. the target loses their turn',
 											tier2: 'I < [average]. the target loses their turn',
 											tier3: 'I < [strong]. the target loses their turn'
@@ -225,8 +225,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									name: 'Time Loop',
 									description: 'You show shadows what true speed is.',
 									type: FactoryLogic.type.createTrigger('Another creature on the encounter map ends their turn.', { free: true }),
-									keywords: [ AbilityKeyword.Psionic ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Psionic],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [

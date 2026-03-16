@@ -155,13 +155,13 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Abyssal Rift',
 			cost: 7,
 			icon: StatBlockIcon.Area,
-			sections: [ 'Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 Stamina, damage immunity 2, and holy weakness 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a **Reason test** or **Intuition test** as a maneuver while adjacent to a rift to destabilize and close it.',
+			sections: ['Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 Stamina, damage immunity 2, and holy weakness 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a **Reason test** or **Intuition test** as a maneuver while adjacent to a rift to destabilize and close it.',
 				FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+					characteristic: [Characteristic.Reason, Characteristic.Intuition],
 					tier1: 'The rift remains open and regains 5 Stamina.',
 					tier2: 'The rift remains open.',
 					tier3: 'The rift closes.'
-				}) ]
+				})]
 		}),
 		FactoryLogic.feature.createMalice({
 			id: 'demon-2nd-malice-2',
@@ -207,7 +207,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Ensnarer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -223,8 +223,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Barbed Tongues',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -244,7 +244,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-1-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -253,7 +253,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Frenzied',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -269,8 +269,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Rip and Tear',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -289,7 +289,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -298,7 +298,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Pitling',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'T'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -314,8 +314,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Spit',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -339,7 +339,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-3-feature-4',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -348,7 +348,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Bendrak',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -363,9 +363,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Warp Perception',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -383,9 +383,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Vanish',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 1,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is invisible until the start of their next turn. They can then move up to 3 squares and attempt to hide.')
 						]
@@ -403,7 +403,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-4-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -412,7 +412,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Muceron',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 5,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -427,8 +427,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Barbed Tongues',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -447,8 +447,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Tongue Pull',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Three creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The muceron pulls each target up to 5 squares.')
@@ -467,7 +467,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-5-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -476,7 +476,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Remasch',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5, 'teleport'),
@@ -491,8 +491,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Abyssal Strike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -514,8 +514,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Grasping Shadows',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The remasch can teleport up to 2 squares and uses Abyssal Strike.')
@@ -534,7 +534,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-6-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -543,7 +543,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Ruinant',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -558,8 +558,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Bloodletting Claw',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -577,8 +577,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Salt Wounds',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** Each target must be at less than full Stamina.'),
@@ -603,7 +603,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-7-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -612,7 +612,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Torlas',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(5),
@@ -627,8 +627,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Floor to Flesh',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -646,8 +646,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-1st-8-feature-2',
 						name: 'Grasping Tendons',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The torlas pulls each target up to 3 squares.')
@@ -666,7 +666,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-8-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 3 })]
 				})
 			]
 		}),
@@ -675,7 +675,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Chorogaunt',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5),
@@ -690,8 +690,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Agonizing Harmony',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -709,8 +709,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-1st-9-feature-2',
 						name: 'Chaotic Entrancing Harmony',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chorogaunt slides each target up to 3 squares, ignoring stability.')
@@ -723,8 +723,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'I Thrive on Pain',
 						cost: 3,
 						type: FactoryLogic.type.createTrigger('The chorogaunt is targeted by a strike.'),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Any damage from the strike is halved, and the chorogaunt’s abilities deal an extra 3 damage until the end of their next turn.')
@@ -748,15 +748,15 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-1st-9-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'demon-1st-9-feature-8',
 						name: 'Frightening Tones',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must choose between taking 5 psychic damage, or being frightened (save ends).')
@@ -768,9 +768,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-1st-9-feature-9',
 						name: 'Bully the Weak',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One ally',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chorogaunt kills the target, and each other ally in the encounter deals an extra 3 damage with strikes until the end of the round. The Director gains Malice equal to the number of heroes in the encounter.')
 						]
@@ -781,8 +781,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-1st-9-feature-10',
 						name: 'Running Cacophony',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chorogaunt shifts up to their speed, uses Agonizing Harmony, shifts up to their speed, and then uses Agonizing Harmony again.')
@@ -796,7 +796,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Grulqin',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(8),
@@ -812,8 +812,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Spinning Bone Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -833,7 +833,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-1-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -842,7 +842,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Orliq',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'T'),
 			speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -858,8 +858,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Soul Prism',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -883,7 +883,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -892,7 +892,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Wobalas',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -908,8 +908,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Despair Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -924,7 +924,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-3-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -933,7 +933,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Bale Eye',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(4),
 			speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -948,9 +948,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Wilting Visions',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(15)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -972,8 +972,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Demonwarp Tears',
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The bale eye must create the cube beneath themself.'),
@@ -999,7 +999,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-4-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1008,7 +1008,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Fangling',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(8),
@@ -1023,8 +1023,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Tooth! Tusk! Claw!',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1043,8 +1043,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Tumbling Gore',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 3, within: 1 })],
 						target: 'All enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1073,7 +1073,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-5-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1082,7 +1082,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Fiktin',
 			level: 5,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 7,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6),
@@ -1097,8 +1097,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Violent Transformation',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1117,8 +1117,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Aggressive Mimicry',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 1,
-						keywords: [ AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a free maneuver.')
@@ -1137,7 +1137,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-6-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1146,7 +1146,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Gunge',
 			level: 4,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(6),
@@ -1161,7 +1161,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Bilious Expulsion',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })
@@ -1184,8 +1184,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Spew Slide',
 						type: FactoryLogic.type.createTrigger('The gunge takes damage from a melee strike.', { free: true }),
 						cost: 1,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gunge vomits with great force, letting them shift up to their speed and ignore any additional effects from the strike. The space the gunge occupied before the shift is covered in slime that is difficult terrain for enemies. Additionally, any enemy is bleeding while in the slime.')
@@ -1204,7 +1204,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-7-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1213,7 +1213,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Tormenauk',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(6),
@@ -1228,8 +1228,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Many Maws',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1248,8 +1248,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Agony Wail',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1274,7 +1274,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-8-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1283,7 +1283,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Lumbering Egress',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(6),
@@ -1298,8 +1298,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Ensnarer Cannon',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1321,7 +1321,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Demonic Egress',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Four level 1 demon minions (most commonly **ensnarers**, **frenzieds**, and **pitlings**) burst forth from the egress and appear in unoccupied squares in the area.'),
@@ -1338,8 +1338,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Abyssal Protectors',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('The last ally minion on the encounter map dies, or the egress is reduced below 25 Stamina.'),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Eight **ensnarers** appear anywhere in the area.')
@@ -1353,15 +1353,15 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-2nd-9-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'demon-2nd-9-feature-8',
 						name: 'Frenzied Deluge',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Three enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1378,8 +1378,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-2nd-9-feature-9',
 						name: 'Fold Space',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The egress folds into their own portal and teleports to an unoccupied space within distance. Four level 4 demon minions (most commonly **orliq**, **grulqins**, and **wobalas**) appear in squares in the egress’s former space.')
@@ -1391,8 +1391,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						id: 'demon-2nd-9-feature-10',
 						name: 'Blood of the Abyss',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1412,7 +1412,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Soulraker Scout',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'fly'),
@@ -1428,8 +1428,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Soul Stinger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1448,7 +1448,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-1-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1457,7 +1457,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Soulraker Soldier',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(6),
@@ -1473,8 +1473,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Chitin Bash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1493,7 +1493,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1502,7 +1502,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Soulraker Stinger',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(6, 'climb'),
@@ -1518,8 +1518,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Barb Launch',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1539,7 +1539,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-3-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1548,7 +1548,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Blight Phage',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(6),
@@ -1563,8 +1563,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Blight Pus',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1583,8 +1583,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Blight Rain',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The blight phage must create the cube beneath themself.'),
@@ -1608,7 +1608,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-4-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1617,7 +1617,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Chimeron',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 11,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(6),
@@ -1632,8 +1632,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Flux Gnash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1652,8 +1652,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Pain Absorption',
 						type: FactoryLogic.type.createTrigger('The chimeron is targeted by a damage-dealing strike.'),
 						cost: 1,
-						keywords: [ ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chimeron halves the damage.')
@@ -1672,7 +1672,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-5-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1681,7 +1681,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Styrich',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(6),
@@ -1696,8 +1696,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Hair Whip',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(4) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(4)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1716,8 +1716,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Tangled Nest',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1741,7 +1741,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-6-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1750,7 +1750,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Soulraker Praetorian',
 			level: 7,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 9,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(8),
@@ -1765,9 +1765,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Barbed Stinger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -1785,8 +1785,8 @@ A number of lesser demons have been identified across categories 1 to 3:
 						name: 'Stinging Departure',
 						type: FactoryLogic.type.createTrigger('A creature ends the praetorian’s grab.'),
 						cost: 2,
-						keywords: [ ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The praetorian makes a free strike against the target, breaks off part of their stinger in the target, and shifts up to half their speed. The target is bleeding until they remove the stinger fragment as a free maneuver, taking 6 damage in the process.')
@@ -1805,7 +1805,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-7-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1814,7 +1814,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Soulraker Handmaiden',
 			level: 8,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Ambusher),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(0),
@@ -1841,8 +1841,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Emergent Horrors',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1862,7 +1862,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-8-feature-4',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -1871,7 +1871,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Soulraker Hivequeen',
 			level: 9,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Abyssal', 'Demon', 'Soulraker' ],
+			keywords: ['Abyssal', 'Demon', 'Soulraker'],
 			encounterValue: 44,
 			size: FactoryLogic.createSize(5),
 			speed: FactoryLogic.createSpeed(6),
@@ -1886,8 +1886,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Stinging Ovipositor',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(1), FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(1), FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1906,8 +1906,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Forced Gestation',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each implanted handmaiden parasite in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hivequeen lets loose a subsonic call to each target, forcing them to immediately emerge from their host’s body as a mature **soulraker handmaiden** and make a free strike.')
@@ -1920,8 +1920,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'For the Queen!',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('The hivequeen is targeted by a strike for the second time on an attacker’s turn, whether by the attacker or another creature acting on the attacker’s turn.'),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Two soulraker minions appear within distance.'),
@@ -1945,15 +1945,15 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-3rd-9-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'demon-3rd-9-feature-7',
 						name: 'Kicking the Nest',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each soulraker minion in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can move their speed and make a free strike. If no minions are present, four soulraker minions are summoned into unoccupied spaces within distance before the hivequeen uses this villain action.')
@@ -1965,8 +1965,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						id: 'demon-3rd-9-feature-8',
 						name: 'Buzz Off!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1984,8 +1984,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						id: 'demon-3rd-9-feature-9',
 						name: 'Bomber Wasp Warfare',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSpecial('Four 2 cubes within 10') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSpecial('Four 2 cubes within 10')],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2004,7 +2004,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Optacus',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'S'),
 			speed: FactoryLogic.createSpeed(6, 'climb'),
@@ -2020,8 +2020,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Optical Flare',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2036,7 +2036,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-1-feature-2',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -2045,7 +2045,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Tyburaki',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(8, 'swim'),
@@ -2061,8 +2061,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Tail Bite',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2087,7 +2087,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-2-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -2096,7 +2096,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Unguloid',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(8),
@@ -2112,8 +2112,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Gore Horn',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2133,7 +2133,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-3-feature-3',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -2142,7 +2142,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Izyak',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Controller),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(6, 'teleport'),
@@ -2157,9 +2157,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Nostalgic Wanderlust',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
@@ -2181,8 +2181,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Ruinous Temptation',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2211,7 +2211,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-4-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -2220,7 +2220,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Vicisitator',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Horde, MonsterRoleType.Harrier),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(9),
@@ -2235,8 +2235,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Warp Touch',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(1), FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(1), FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2255,8 +2255,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Soul Flay',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 6, value2: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 6, value2: 3, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2281,7 +2281,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-5-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				})
 			]
 		}),
@@ -2290,7 +2290,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 			name: 'Aurumvas',
 			level: 10,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Abyssal', 'Demon' ],
+			keywords: ['Abyssal', 'Demon'],
 			encounterValue: 48,
 			size: FactoryLogic.createSize(3),
 			speed: FactoryLogic.createSpeed(8, 'fly'),
@@ -2310,8 +2310,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Greedy Hands',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2333,8 +2333,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Covetous Bolts',
 						type: FactoryLogic.type.createMain(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Two creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2356,8 +2356,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						name: 'Greed Is Good',
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas chooses a supernatural treasure or an item made of gold and teleports to an unoccupied space adjacent to that object, then ends one effect on him that can be ended by a saving throw.')
@@ -2376,16 +2376,16 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'demon-4th-6-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Holy, modifierType: DamageModifierType.Weakness, value: 5 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'demon-4th-6-feature-8',
 						name: 'Time Is Money',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas warps time with his abyssal avarice. Each target can teleport up to their speed and make a free strike.')
 						]
@@ -2396,8 +2396,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						id: 'demon-4th-6-feature-9',
 						name: 'Hostile Acquisition',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas chooses up to three treasures within distance that he has line of effect to and that aren’t artifacts. Until the end of the encounter, ethereal golden snakes swirl around the target treasures. While an affected treasure is worn or held by a hero, each time that hero gains any amount of their Heroic Resource, the Director gains 1 Malice.')
@@ -2409,8 +2409,8 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						id: 'demon-4th-6-feature-10',
 						name: 'No Matter the Cost',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createSpecial('Four 3 cubes within 10') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createSpecial('Four 3 cubes within 10')],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas summons treasures from his vaults into the area, then causes them to explode.'),

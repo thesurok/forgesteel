@@ -15,11 +15,11 @@ export class TrinketData {
 		name: 'Color Cloak (blue)',
 		description: 'This silky-blue hooded cloak is emblazoned with a golden Anjali sigil meaning "ice."',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Neck ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of blue ichor, soul chalk',
 			source: 'Licensing agreements in Anjali',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		featuresByLevel: [
@@ -56,11 +56,11 @@ export class TrinketData {
 		name: 'Color Cloak (red)',
 		description: 'This woolen red hooded cloak is emblazoned with a golden Anjali sigil meaning "fire."',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Neck ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of red ichor, soul chalk',
 			source: 'Licensing agreements in Anjali',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		featuresByLevel: [
@@ -97,11 +97,11 @@ export class TrinketData {
 		name: 'Color Cloak (yellow)',
 		description: 'This rubbery, yellow hooded cloak is emblazoned with a golden Anjali sigil meaning "lightning."',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Neck ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of yellow ichor, soul chalk',
 			source: 'Licensing agreements in Anjali',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		featuresByLevel: [
@@ -138,11 +138,11 @@ export class TrinketData {
 		name: 'Deadweight',
 		description: 'Though this humanoid femur is coated in lead, it feels impossibly heavy for its size.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One humanoid femur, one bar of lead laced with starmetal',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		effect: 'While holding the Deadweight, you fall twice as fast, taking an extra 1 damage for each square you fall (to a maximum of 75 total damage from a single fall).',
@@ -154,8 +154,8 @@ export class TrinketData {
 						ability: FactoryLogic.createAbility({
 							id: 'item-deadweight-1',
 							name: 'Item Ability',
-							type: FactoryLogic.type.createManeuver({ free: true, qualifiers: [ 'When you fall 5 or more squares' ] }),
-							distance: [ FactoryLogic.distance.createMelee() ],
+							type: FactoryLogic.type.createManeuver({ free: true, qualifiers: ['When you fall 5 or more squares'] }),
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'One enemy',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a melee free strike as a free maneuver once during the fall before you hit the ground.')
@@ -172,11 +172,11 @@ export class TrinketData {
 		name: 'Displacing Replacement Bracer',
 		description: 'A wooden bangle is etched with an ambigram sigil of the Zaliac word for "transfer."',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Arms, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Arms, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Petrified wood from a tree that has not been observed since falling',
 			source: 'Texts or lore in Zaliac',
-			characteristic: [ Characteristic.Reason ],
+			characteristic: [Characteristic.Reason],
 			goal: 150
 		}),
 		featuresByLevel: [
@@ -203,11 +203,11 @@ export class TrinketData {
 		name: 'Divine Vine',
 		description: 'A coil of emerald-green vines is topped with the jaws of an enormous Venus flytrap.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Three withered mundane vines, a tree\'s blessing',
 			source: 'Songs in Yllyric',
-			characteristic: [ Characteristic.Reason, Characteristic.Presence ],
+			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 100
 		}),
 		featuresByLevel: [
@@ -219,7 +219,7 @@ export class TrinketData {
 							id: 'item-divine-vine-1',
 							name: 'Item Ability',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createRanged(5) ],
+							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'One creature or object',
 							sections: [
 								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
@@ -236,11 +236,11 @@ export class TrinketData {
 		name: 'Flameshade Gloves',
 		description: 'These finely stitched gloves appear to flicker in and out of reality when first handled.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Hands, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Hands, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A humanoid\'s shadow disconnected from its source',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Reason ],
+			characteristic: [Characteristic.Reason],
 			goal: 150
 		}),
 		effect: `
@@ -254,11 +254,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 		name: 'Gecko Gloves',
 		description: 'These scaled gloves have palms and fingers covered in nearinvisible sticky hairs.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Hands, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Hands, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten gecko tails',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 100
 		}),
 		effect: 'While you wear these gloves, your grip is all but impossible to break. You can’t be disarmed, you can’t lose your grip while climbing unless you are force moved, and any creature grabbed by you takes a bane on the test for the Escape Grab maneuver.'
@@ -269,11 +269,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 		name: 'Hellcharger Helm',
 		description: 'A steel helm is set with two curved ebony horns, a crackling plume of fire floating between them.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One broken contract, one ingot of steel',
 			source: 'Texts or lore in Anjali and Caelian',
-			characteristic: [ Characteristic.Might, Characteristic.Reason ],
+			characteristic: [Characteristic.Might, Characteristic.Reason],
 			goal: 150
 		}),
 		effect: 'Whenever you take the Charge action while wearing this helmet, you gain a +5 bonus to speed until the end of your current turn.',
@@ -285,9 +285,9 @@ If the object is too thick or has no open space on the other side, your hand bec
 						ability: FactoryLogic.createAbility({
 							id: 'item-hellcharger-helm-1',
 							name: 'Item Ability',
-							type: FactoryLogic.type.createManeuver({ free: true, qualifiers: [ 'After charging' ] }),
-							distance: [ FactoryLogic.distance.createMelee() ],
-							target: 'One creature',
+							type: FactoryLogic.type.createManeuver({ free: true, qualifiers: ['After charging'] }),
+							distance: [FactoryLogic.distance.createMelee()],
+							target: 'Одна істота',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Use the Knockback maneuver, regardless of the target creature\'s size.')
 							]
@@ -303,11 +303,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 		name: 'Mask of the Many',
 		description: 'A plain white mask is lined with soft black velvet - which smells faintly of blood.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One used death shroud',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		featuresByLevel: [
@@ -334,11 +334,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 		name: 'Quantum Satchel',
 		description: 'A woven metal drawstring seals this plain-looking leather bag, which is affixed with an opal brooch.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One uncut opal',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		effect: 'When the brooch is removed from this bag and placed in a container or room, it magically entangles that location to the bag. Any item that can be placed in the Quantum Satchel appears near to the brooch and can be recovered by reaching inside while picturing the desired object. The capacity of the satchel is dictated by the size of the container or room where the entangled brooch is. If an item is removed from the container or room containing the brooch, it can’t be retrieved through the satchel.'
@@ -349,11 +349,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 		name: 'Snakerattle Bangle',
 		description: 'This loose-fitting, scaley bangle shifts and slithers while worn. It emits a bone-chilling rattle each time it hits its user’s wrist.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Arms, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The tail of a size 3 or larger rattlesnake',
 			source: 'Texts or lore in Anjali',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		effect: `
@@ -367,11 +367,11 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 		name: 'Unbinder Boots',
 		description: 'A pair of ornately embroidered leather boots are covered in images of broken chains.',
 		type: ItemType.Trinket1st,
-		keywords: [ AbilityKeyword.Feet, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Feet, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One battered gold chain of at least fifty links',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		effect: 'These boots can temporarily unbind themselves from the chains of the earth, letting you move through the air as high as 3 squares above the ground from where you started. If you end your turn while you are still airborne, you fall.'
@@ -386,11 +386,11 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 		name: 'Abyssal Map Ink',
 		description: 'The puddle of living ink snarls and snaps while it feeds on parchment and smooth surfaces. It spreads itself across its meal until it resembles a flat, top-down view of its immediate surroundings, wriggling and readjusting itself wherever it goes.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A vial of pitling spit, and a jar of human blood',
 			source: 'Texts or lore in Tholl',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		effect: 'While the ink is spread on a smooth surface or a piece of parchment paper, it turns into a size 1T or 1S map. This map grants you a double edge on tests you make using the Navigate skill. If you have the map active before the start of an encounter, you can move up to three allies (including yourself ) up to 3 squares away from the starting area.'
@@ -401,11 +401,11 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 		name: 'Bastion Belt',
 		description: 'This thick leather belt features a bone clasp and feels unusually heavy when handled.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Waist, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Waist, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A giant’s tooth',
 			source: 'Texts or lore in High Kuric',
-			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
+			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 300
 		}),
 		featuresByLevel: [
@@ -432,11 +432,11 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 		name: 'Evilest Eye',
 		description: 'A perfectly preserved eyeball hangs unnervingly from a gold chain.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Neck, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An eyeball from a pirate captain who drowned at sea',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		featuresByLevel: [
@@ -463,11 +463,11 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 		name: 'Grasp of the Chained Hand',
 		description: 'A gauntlet of loose chains rattles, shackled to each of the user’s fingers. They clatter whenever magic surges through them.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Arms, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Blood-soaked chains that restrained a demon for at least 30 days',
 			source: 'Texts or lore in Tholl',
-			characteristic: [ Characteristic.Reason, Characteristic.Presence ],
+			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 300
 		}),
 		effect: `
@@ -481,11 +481,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Insightful Crown',
 		description: 'Shaped of polished crystal, this shimmering circlet shifts through myriad colors in the presence of strong emotions.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: ' One measure of pure crystal, a jarred memory of true joy',
 			source: 'Texts or lore in Variac',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		effect: 'While wearing the crown, you gain an edge on Intuition tests made to read the emotions and discern the honesty of other creatures. If you succeed on an Intuition test to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director’s discretion, you might not be able to tap into the creature’s deepest secrets this way.'
@@ -496,11 +496,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Key of Inquiry',
 		description: 'A foot-long platinum key is set with three opals',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The finger bone of a creature with telepathy, three black opals',
 			source: ' Texts or lore in Ullorvic',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		featuresByLevel: [
@@ -527,11 +527,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Mediator\'s Charm',
 		description: 'A fancy gold earring is set with a small ruby.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The gold nib of a fountain pen used to sign a major treaty or compact, a ruby once worn by a devil',
 			source: 'Texts or lore in Hyrallic',
-			characteristic: [ Characteristic.Reason, Characteristic.Presence ],
+			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 300
 		}),
 		effect: 'While you wear the Mediator’s Charm, the patience of any NPC you negotiate with increases by 1 (to a maximum of 5). Additionally, at the start of a negotiation, you learn one of an NPC’s motivations or pitfalls of the Director’s choice.'
@@ -542,11 +542,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Necklace of the Bayou',
 		description: 'A worn leather circlet bears a lizard-shaped pendant of rotting wood.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Neck, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A gallon of swamp water, the limbs of four different newts',
 			source: ' Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		effect: 'While you wear this necklace, you can breathe underwater, you can automatically swim at full speed while moving, and you ignore difficult terrain created by water or in marsh and similar terrain.'
@@ -557,11 +557,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Scannerstone',
 		description: 'This flat, palm-sized triangular stone is decorated with a starfield of tiny gems.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: ': A piece of polished obsidian, seven flawless pea-sized diamonds',
 			source: ' Texts or lore in Variac',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		effect: 'When held against a wall or other solid surface 1 square thick or less, the Scannerstone creates an image floating in the air beside it that shows a rough miniature approximation of the space on the other side of the surface. The image displays floors, walls, and other barriers but doesn’t show other objects. It shows representations of any moving creatures on the other side, but not creatures who are still.'
@@ -572,11 +572,11 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		name: 'Stop-’n-Go Coin',
 		description: 'This small, featureless coin is solid green on one side and solid red on the other.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A coin minted during an earthquake',
 			source: ' Texts or lore in Caelian,',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		featuresByLevel: [
@@ -610,11 +610,11 @@ The coin must be picked up before it can be used again. If any creature picks up
 		name: 'Thunder Chariot',
 		description: 'A porcelain cart with golden filigree and wheels that crackle with electricity.',
 		type: ItemType.Trinket2nd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Twenty lightning bolts frozen in time',
 			source: 'Texts or lore in the First Language',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
 		effect: `
@@ -632,11 +632,11 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 		name: 'Bracers of Strife',
 		description: 'Each of these metallic blue bracers is oversized',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Arms, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The severed hand of a giant',
 			source: 'Texts or lore in Yllyric',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: 'You gain a +1 bonus to the distance you push any target with any weapon ability.',
@@ -647,7 +647,7 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bracers-of-strife-1',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 2
 					})
 				]
@@ -660,11 +660,11 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 		name: 'Cross of the Scorned Puppeteer',
 		description: 'This shiny black marionette cross reveals a masked figure standing in its reflection where its wielder should be.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spool of silk, a plank of stage wood, and the soul of a famous performer',
 			source: 'A record of a soulbinder ritual in Anjali',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: `
@@ -682,11 +682,11 @@ You can also pull the strings of your allies to keep them out of harm’s way. W
 		name: 'Crystallized Essence',
 		description: 'A storm rages at the center of this color-shifting shard of rock.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The remains of an elemental',
 			source: 'Records in Rhorvic',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: `
@@ -700,11 +700,11 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		name: 'Mask of Oversight',
 		description: 'This angular electrum mask is set with an excess of eye holes and a horrifying maw.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An overmind egg, the skin of any shapeshifter',
 			source: ': Texts or lore in the First Language',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -731,11 +731,11 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		name: 'Mirage Band',
 		description: 'A sable blue circlet shimmers with finely woven threads of sparkling white.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Head, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spool of mindspider silk, an ingot of white gold',
 			source: 'Texts or lore in Higaran',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: 'While wearing the Mirage Band, you automatically perceive illusions for what they are, you can see invisible creatures, and supernatural effects can’t conceal creatures and objects from you.',
@@ -748,9 +748,9 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 							id: 'item-mirage-band-1',
 							name: 'Hallucination Field',
 							description: 'A blanket of illusion twists around you and your allies, making you seem as if you belong wherever you are.',
-							keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
+							keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createRanged(10) ],
+							distance: [FactoryLogic.distance.createRanged(10)],
 							target: 'Self and any ally',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Each target is covered by an illusion causing them to appear exactly as any creature (humanoid, animal, undead, and so forth) an observer most expects to see. The illusion ends for all targets if any creature under its effect harms or physically interacts with any creature not affected by the illusion, if you use this ability again, or if you choose to end the effect (no action required). The illusion also ends for any affected ally who moves more than the distance of this ability away from you.')
@@ -767,11 +767,11 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		name: 'Nullfield Resonator Ring',
 		description: 'This simple band of copper vibrates slightly when handled.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Ring, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Ring, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A wafer of gallium arsenide',
 			source: 'Texts or lore in Mindspeech',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: 'You must be a null to wear this ring. While you do so, the area of your Null Field ability increases by 1.',
@@ -785,12 +785,12 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 							name: 'Nullring Strike',
 							description: 'Your punch delivers a devastating burst of psionic energy.',
 							type: FactoryLogic.type.createMain(),
-							distance: [ FactoryLogic.distance.createMelee() ],
+							distance: [FactoryLogic.distance.createMelee()],
 							target: 'One creature or object',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
-										characteristic: [ Characteristic.Might, Characteristic.Agility ],
+										characteristic: [Characteristic.Might, Characteristic.Agility],
 										tier1: '3 psychic damage',
 										tier2: '5 psychic damage; I < [average], slowed (save ends)',
 										tier3: '8 psychic damage; I < [strong], slowed (save ends)'
@@ -810,11 +810,11 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		name: 'Shifting Ring',
 		description: 'This silvery metal ring seems to momentarily vanish when observed from certain angles.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Ring, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Ring, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One-third of a pound of diamond dust, one nugget of pure silver',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+			characteristic: [Characteristic.Agility, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: 'When targeted by any other effect that causes you to teleport, you can teleport up to 3 additional squares.',
@@ -826,7 +826,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 						ability: FactoryLogic.createAbility({
 							id: 'item-shifting-ring-1',
 							name: 'Use Shifting Ring Teleport',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'Once per turn' ] }),
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['Once per turn'] }),
 							sections: [
 								FactoryLogic.createAbilitySectionText('Teleport up to 3 squares. Additionally, when targeted by any other effect that causes you to teleport, you can teleport up to 3 additional squares.')
 							]
@@ -842,11 +842,11 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		name: 'Warbanner of Pride',
 		description: 'A large banner billows from this tall flagpole. Its heraldry depicts a three-headed lion covered in wounds but still standing.',
 		type: ItemType.Trinket3rd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A king’s cape and a solid gold flagpole',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		effect: `
@@ -864,11 +864,11 @@ At the end of each of your turns, each ally within 10 squares of you can make a 
 		name: 'Gravekeeper’s Lantern',
 		description: 'This ancient wooden lantern is inscribed with eldritch runes and stained with dark blood.',
 		type: ItemType.Trinket4th,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The powdered jawbone of a powerful spellcaster, wood from a tree marking multiple graves',
 			source: 'Texts or lore in Hyrallic',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),
 		effect: `
@@ -888,11 +888,11 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 		name: 'Hagbasket',
 		description: 'This throne woven from wood, hair, and metal floats several feet above the ground. The gentle humming it makes while it soars sounds reminiscent of a hag’s cackle.',
 		type: ItemType.Trinket4th,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A mundane broom, a hag’s hut, and a hag’s kiss',
 			source: 'Texts or lore in Khelt',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),
 		effect: `
@@ -906,11 +906,11 @@ The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s
 		name: 'Psi Blade',
 		description: 'This wide metal bracer is set with a glowing gemstone.',
 		type: ItemType.Trinket4th,
-		keywords: [ AbilityKeyword.Arms, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Arms, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Steel alloy, one fine-cut topaz',
 			source: 'Texts or lore in Mindspeech',
-			characteristic: [ Characteristic.Agility, Characteristic.Presence ],
+			characteristic: [Characteristic.Agility, Characteristic.Presence],
 			goal: 600
 		}),
 		effect: '',
@@ -932,7 +932,7 @@ The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s
 						ability: FactoryLogic.createAbility({
 							id: 'item-psi-blade-2',
 							name: 'Psi Blade Strike',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'The blade is active', 'Once per turn' ] }),
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['The blade is active', 'Once per turn'] }),
 							sections: [
 								FactoryLogic.createAbilitySectionText('Make a melee weapon free strike that deals an extra 3 psychic damage.')
 							]
@@ -948,11 +948,11 @@ The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s
 		name: 'Warbanner of Wrath',
 		description: 'A large banner billows from this tall flagpole. Its heraldry depicts a dragon breathing fire with outstretched wings covered in holes and tears.',
 		type: ItemType.Trinket4th,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A king’s deathbed veil and a solid brass flagpole',
 			source: 'Texts or lore in Caelian',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),
 		effect: `

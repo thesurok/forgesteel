@@ -146,7 +146,7 @@ export const dwarfFury = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Zaliac' ]
+				selected: ['Zaliac']
 			}
 		},
 		languages: [],
@@ -1112,7 +1112,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1447,7 +1447,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -1640,7 +1640,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -1686,7 +1686,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -1861,7 +1861,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -1964,7 +1964,7 @@ export const dwarfFury = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2609,7 +2609,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3027,7 +3027,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3270,7 +3270,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3381,7 +3381,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3450,7 +3450,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3721,7 +3721,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3900,7 +3900,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,

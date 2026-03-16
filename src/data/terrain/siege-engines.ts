@@ -46,9 +46,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 					ability: FactoryLogic.createAbility({
 						id: 'arrow-storm',
 						name: 'Arrow Storm',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 }) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -59,7 +59,7 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 									tier3: '11 шкоди'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('This ability can’t be used again until the arrow launcher is reloaded.')
+							FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки стріломет не буде перезаряджено.')
 						]
 					})
 				})
@@ -72,9 +72,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 					ability: FactoryLogic.createAbility({
 						id: 'reload',
 						name: 'Reload',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The arrow launcher is reloaded, allowing **Arrow Storm** to be used again. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Стріломет перезаряджено, що дозволяє знову використати **Arrow Storm**. Ця дія може бути виконана лише один раз за раунд.')
 						]
 					})
 				})
@@ -87,9 +87,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 					ability: FactoryLogic.createAbility({
 						id: 'spot',
 						name: 'Spot',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The next use of **Arrow Storm** gains an edge and has a +10 bonus to ranged distance. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Наступне використання **Arrow Storm** отримує перевагу і має +10 до дальності. Цю дію можна використати лише один раз за раунд.')
 						]
 					})
 				})
@@ -102,9 +102,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 					ability: FactoryLogic.createAbility({
 						id: 'move',
 						name: 'Move',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The arrow launcher and the creature using this action move together up to 3 squares.')
+							FactoryLogic.createAbilitySectionText('Стріломет і істота, що використовує цю дію, переміщуються разом до 3 клітинок.')
 						]
 					})
 				})
@@ -132,9 +132,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 							ability: FactoryLogic.createAbility({
 								id: 'screamers',
 								name: 'Screamers',
-								type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-								keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-								distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 }) ],
+								type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+								keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+								distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 								target: 'Each creature and object in the area',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
@@ -145,7 +145,7 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 											tier3: '11 шкоди; R<1 зляканий (рят. кидок завершує)'
 										})
 									),
-									FactoryLogic.createAbilitySectionText('This ability can’t be used again until the arrow launcher is reloaded.')
+									FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки стріломет не буде перезаряджено.')
 								]
 							})
 						})
@@ -200,9 +200,9 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 					ability: FactoryLogic.createAbility({
 						id: 'boiling-oil',
 						name: 'Boiling Oil',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -213,7 +213,7 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 									tier3: '12 вогняної шкоди; M<3 палає (рят. кидок завершує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If the boiling oil is poured down on targets from above, it has high ground and gains an edge on the power roll. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can’t be used again until the boiling oil cauldron is reloaded.')
+							FactoryLogic.createAbilitySectionText('Якщо киплячу олію виливають зверху на цілі, вона отримує перевагу з висоти і має перевагу на кидок сили. Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди в кінці кожного раунду. Цю здібність не можна використовувати повторно, доки казан з киплячою олією не буде перезаряджено.')
 						]
 					})
 				})
@@ -226,9 +226,9 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 					ability: FactoryLogic.createAbility({
 						id: 'reload',
 						name: 'Reload',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The boiling oil cauldron is reloaded, allowing **Boiling Oil** to be used again. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Казан з киплячою олією перезаряджено, що дозволяє знову використати **Boiling Oil**. Цю дію можна виконати лише один раз за раунд.')
 						]
 					})
 				})
@@ -282,9 +282,9 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 					ability: FactoryLogic.createAbility({
 						id: 'arcing-shot',
 						name: 'Arcing Shot',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 20 }) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 20 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -295,7 +295,7 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 									tier3: '12 шкоди; A<1 відштовхнути на 2'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Line of effect for this ability is an arc that can be traced over obstacles between the catapult and the target area. This ability can’t be used again until the catapult is reloaded.')
+							FactoryLogic.createAbilitySectionText('Лінія дії цієї здібності — дуга, яку можна простежити над перешкодами між катапультoю і цільовою зоною. Цю здібність не можна використовувати повторно, доки катапульту не буде перезаряджено.')
 						]
 					})
 				})
@@ -308,9 +308,9 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 					ability: FactoryLogic.createAbility({
 						id: 'reload',
 						name: 'Reload',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The catapult is reloaded, allowing **Arcing Shot** to be used again. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Катапульта перезаряджена, що дозволяє знову використати **Arcing Shot**. Цю дію можна виконати лише один раз за раунд.')
 						]
 					})
 				})
@@ -323,9 +323,9 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 					ability: FactoryLogic.createAbility({
 						id: 'spot',
 						name: 'Spot',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The next use of **Arcing Shot** gains an edge and has a +10 bonus to ranged distance. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Наступне використання **Arcing Shot** отримує перевагу і має +10 до дальності. Цю дію можна використати лише один раз за раунд.')
 						]
 					})
 				})
@@ -338,9 +338,9 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 					ability: FactoryLogic.createAbility({
 						id: 'move',
 						name: 'Move',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The catapult and the creature using this action move together up to 2 squares.')
+							FactoryLogic.createAbilitySectionText('Катапульта і істота, яка використовує цю дію, переміщуються разом до 2 клітинок.')
 						]
 					})
 				})
@@ -411,9 +411,9 @@ Once the wheel is rolling, it can’t be deactivated. However, it can be explode
 					ability: FactoryLogic.createAbility({
 						id: 'roll-the-wheel',
 						name: 'Roll the Wheel',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.createSpecial('Special') ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.createSpecial('Special')],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -500,9 +500,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 					ability: FactoryLogic.createAbility({
 						id: 'release-bolt',
 						name: 'Release Bolt',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(20) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -513,7 +513,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 									tier3: '11 шкоди; M<2 відштовхнути на 2'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('This ability can’t be used again until the field ballista is reloaded.')
+							FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки польову баллісту не буде перезаряджено.')
 						]
 					})
 				})
@@ -526,9 +526,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 					ability: FactoryLogic.createAbility({
 						id: 'reload',
 						name: 'Reload',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The field ballista is reloaded, allowing **Release Bolt** to be used again. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Польову баллісту перезаряджено, що дозволяє знову використати **Release Bolt**. Цю дію можна виконати лише один раз за раунд.')
 						]
 					})
 				})
@@ -541,9 +541,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 					ability: FactoryLogic.createAbility({
 						id: 'spot',
 						name: 'Spot',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The next use of **Release Bolt** gains an edge and has a +10 bonus to ranged distance. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Наступне використання **Release Bolt** отримує перевагу і має +10 до дальності. Цю дію можна використати лише один раз за раунд.')
 						]
 					})
 				})
@@ -556,9 +556,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 					ability: FactoryLogic.createAbility({
 						id: 'move',
 						name: 'Move',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The field ballista and the creature using this action move together up to 3 squares.')
+							FactoryLogic.createAbilitySectionText('Польова балліста і істота, яка використовує цю дію, переміщуються разом до 3 клітинок.')
 						]
 					})
 				})
@@ -586,9 +586,9 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 							ability: FactoryLogic.createAbility({
 								id: 'chain-bolt',
 								name: 'Chain Bolt',
-								type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-								keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-								distance: [ FactoryLogic.distance.createRanged(20) ],
+								type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+								keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+								distance: [FactoryLogic.distance.createRanged(20)],
 								target: 'One creature or object',
 								sections: [
 									FactoryLogic.createAbilitySectionRoll(
@@ -599,7 +599,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 											tier3: '10 шкоди; M<2 сповільнений (рят. кидок завершує)'
 										})
 									),
-									FactoryLogic.createAbilitySectionText('This ability can’t be used again until the field ballista is reloaded.')
+									FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки польову баллісту не буде перезаряджено.')
 								]
 							})
 						}),
@@ -607,10 +607,10 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 							ability: FactoryLogic.createAbility({
 								id: 'crank-chain',
 								name: 'Crank Chain',
-								type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-								keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-								distance: [ FactoryLogic.distance.createRanged(20) ],
-								target: 'One creature',
+								type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+								keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+								distance: [FactoryLogic.distance.createRanged(20)],
+								target: 'Одна істота',
 								sections: [
 									FactoryLogic.createAbilitySectionField({
 										name: 'Special',
@@ -624,7 +624,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 											tier3: 'Притягнути на 5'
 										})
 									),
-									FactoryLogic.createAbilitySectionText('This forced movement triggers opportunity attacks.')
+									FactoryLogic.createAbilitySectionText('Це примусове переміщення провокує атаку можливості (opportunity attacks).')
 								]
 							})
 						})
@@ -679,9 +679,9 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 					ability: FactoryLogic.createAbility({
 						id: 'gout-of-flame',
 						name: 'Gout of Flame',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 2, within: 1 }) ],
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 8, value2: 2, within: 1 })],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
@@ -692,7 +692,7 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 									tier3: '13 вогняної шкоди; A < 2 палає (рят. кидок завершує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can’t be used again until the iron dragon is reloaded.')
+							FactoryLogic.createAbilitySectionText('Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди в кінці кожного раунду. Цю здібність не можна використовувати повторно, доки Залізного Дракона не буде перезаряджено.')
 						]
 					})
 				})
@@ -705,9 +705,9 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 					ability: FactoryLogic.createAbility({
 						id: 'reload',
 						name: 'Reload',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The iron dragon is reloaded, allowing **Gout of Flame** to be used again. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Залізного Дракона перезаряджено, що дозволяє знову використати **Gout of Flame**. Цю дію можна виконати лише один раз за раунд.')
 						]
 					})
 				})
@@ -720,9 +720,9 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 					ability: FactoryLogic.createAbility({
 						id: 'spot',
 						name: 'Spot',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The next use of **Gout of Flame** gains an edge and has a +10 bonus to ranged distance. This action can be used only once per round.')
+							FactoryLogic.createAbilitySectionText('Наступне використання **Gout of Flame** отримує перевагу і має +10 до дальності. Цю дію можна використати лише один раз за раунд.')
 						]
 					})
 				})
@@ -735,7 +735,7 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 					ability: FactoryLogic.createAbility({
 						id: 'move',
 						name: 'Move',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'adjacent creature' ] }),
+						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
 							FactoryLogic.createAbilitySectionText('The iron dragon and the creature using this action move together up to 2 squares')
 						]

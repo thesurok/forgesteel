@@ -18,9 +18,9 @@ export const telepathy: SubClass = {
 						name: 'Feedback Loop',
 						description: 'Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.',
 						type: FactoryLogic.type.createTrigger('The target deals damage to an ally.'),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target takes psychic damage equal to half the triggering damage.')
 						]
@@ -32,8 +32,8 @@ export const telepathy: SubClass = {
 						name: 'Remote Assistance',
 						description: 'An ally gains the benefit of your intellect.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The next ability roll an ally makes against the target before the start of your next turn gains an edge.'),
@@ -64,13 +64,13 @@ export const telepathy: SubClass = {
 									name: 'Overwhelm',
 									description: 'You overload their senses, turning all their subconscious thoughts into conscious ones.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Reason ],
+											characteristic: [Characteristic.Reason],
 											tier1: '6 + Р психічної шкоди; І < [слабкий], сповільнений (рят. кидок завершує)',
 											tier2: '10 + Р психічної шкоди; І < [середній], ослаблений (рят. кидок завершує)',
 											tier3: '14 + Р психічної шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
@@ -91,13 +91,13 @@ export const telepathy: SubClass = {
 									name: 'Synaptic Override',
 									description: 'You gain control over an enemy’s nervous system. How pleasant for them.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'One enemy',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Reason ],
+											characteristic: [Characteristic.Reason],
 											tier1: 'The target makes a free strike against one enemy of your choice.',
 											tier2: 'The target shifts up to their speed and uses their signature ability against any enemies of your choice.',
 											tier3: 'The target moves up to their speed and uses their signature ability against any enemies of your choice.'
@@ -143,7 +143,7 @@ export const telepathy: SubClass = {
 						}),
 						FactoryLogic.feature.createAbilityDistance({
 							id: 'talent-sub-3-5-2b',
-							keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Psionic ],
+							keywords: [AbilityKeyword.Ranged, AbilityKeyword.Psionic],
 							value: 5
 						})
 					]
@@ -164,9 +164,9 @@ export const telepathy: SubClass = {
 									name: 'Synaptic Conditioning',
 									description: 'It’s a subtle mindset shift. It’s not that they’re your enemy—you just don’t like them!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.createMelee(2) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.createMelee(2)],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -193,8 +193,8 @@ export const telepathy: SubClass = {
 									name: 'Synaptic Dissipation',
 									description: 'You manipulate your enemies’ minds and make them wonder if you were ever really there in the first place.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Special',
 									cost: 9,
 									sections: [
@@ -253,9 +253,9 @@ export const telepathy: SubClass = {
 									name: 'Resonant Mind Spike',
 									description: 'You fire a telepathic bolt empowered by every consciousness within reach directly into your foe’s mind.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.createRanged(10)],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -283,8 +283,8 @@ export const telepathy: SubClass = {
 									name: 'Synaptic Terror',
 									description: 'You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each ally and enemy in the area',
 									cost: 11,
 									sections: [

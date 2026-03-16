@@ -70,8 +70,8 @@ Six individual draconians are presented in this section—not an adventuring par
 				name: 'Breath Weapon',
 				type: FactoryLogic.type.createMain(),
 				cost: 5,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 1 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 1 })],
 				target: 'Each enemy in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -90,8 +90,8 @@ Six individual draconians are presented in this section—not an adventuring par
 				name: 'Scaleshatter Burst',
 				type: FactoryLogic.type.createMain({ free: true }),
 				cost: 7,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 				target: 'Each enemy in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -111,7 +111,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Aeolyxria the Uncanny',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Controller),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -126,8 +126,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Spittlesplash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -144,8 +144,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-1-feature-2',
 						name: 'Experimental Treasure',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -169,7 +169,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Elevate!',
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ground in the area rises 5 squares, creating a pillar of dirt. Any creature in the area moves with the ground to its new elevation.'),
@@ -185,9 +185,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-1-feature-4',
 						name: 'Blood for Blood',
 						type: FactoryLogic.type.createTrigger('An ally is made bleeding by the target.'),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -205,7 +205,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-1-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Poison, modifierType: DamageModifierType.Immunity, value: 6 })]
 				})
 			]
 		}),
@@ -214,7 +214,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Lokratix the Morningstar',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Harrier),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(8, 'fly'),
@@ -229,8 +229,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Skewer',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -249,8 +249,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Acidic Stun',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -268,7 +268,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-2-feature-3',
 						name: 'Takeoff',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Locratix flies up to her speed. Any creature adjacent to the space on the ground she took off from who has A<2 is knocked prone.')
@@ -280,7 +280,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-2-feature-4',
 						name: 'Stay Back!',
 						type: FactoryLogic.type.createTrigger('A creature within distance moves or is forced moved.'),
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -304,7 +304,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-2-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Acid, modifierType: DamageModifierType.Immunity, value: 6 })]
 				})
 			]
 		}),
@@ -313,7 +313,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Lydixavus the Deadeye',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Artillery),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -328,8 +328,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Breathsnipe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -346,8 +346,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-3-feature-2',
 						name: 'Ice Lob',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -364,7 +364,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-3-feature-3',
 						name: 'Parting Gift',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lydixavus flies up to their speed, leaving a size 1S ice mine in the space they took off from. The ice mine explodes when an enemy enters its space, using the power roll for the Ice Lob ability, and targeting the triggering creature and each creature and object adjacent to the ice mine.')
@@ -376,7 +376,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-3-feature-4',
 						name: 'Wasn\'t Aiming For You',
 						type: FactoryLogic.type.createTrigger('Lydixavus obtains a tier 1 outcome on their signature ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lydixavus uses their signature ability again, targeting a creature within 5 squares of the original target.')
@@ -390,7 +390,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-3-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Cold, modifierType: DamageModifierType.Immunity, value: 6 })]
 				})
 			]
 		}),
@@ -399,7 +399,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Myxovidan the Sintaker',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Hexer),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -414,8 +414,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Breaking Palm',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -436,8 +436,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-4-feature-2',
 						name: 'Expunging Exhalation',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -454,8 +454,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-4-feature-3',
 						name: 'Step and Swap',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(3) ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createRanged(3)],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Myxovidan and the target shift to swap places.')
 						]
@@ -467,7 +467,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Anyone Can Do That',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('An adjacent creature damages Myxovidan with a melee ability.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Myxovidan recreates the ability to use it against the triggering creature. If the ability has a power roll, Myxovidan uses his highest characteristic score for the roll. If Myxovidan gets a higher tier outcome than the triggering creature, the Director gains 2 Malice.')
@@ -481,7 +481,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-4-feature-6',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Corruption, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Corruption, modifierType: DamageModifierType.Immunity, value: 6 })]
 				})
 			]
 		}),
@@ -490,7 +490,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Phrrygalax the Subduer',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Elite, MonsterRoleType.Brute),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -505,8 +505,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Baneful Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creature or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -524,8 +524,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Spinning Spit',
 						cost: 2,
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -542,8 +542,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-5-feature-3',
 						name: 'Heavy Landing',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax flies up to his speed and lands in an unoccupied space on the ground. Each creature adjacent to where he lands who has A<2 is knocked prone.')
@@ -556,7 +556,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Armor of the Ancients',
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('Phrrygalax takes acid, cold, corruption, fire, lightning, or poison damage.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax takes no damage and instead regains the same amount of Stamina. He then swaps his current damage immunity with the triggering damage type.')
@@ -568,7 +568,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-5-feature-5',
 						name: 'Still Your Tongue!',
 						type: FactoryLogic.type.createTrigger('Phrrygalax hears a creature within 5 squares reciting the oath of Good King Omund’s Dragon Phalanx.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax shifts up to his speed and uses Baneful Blade against the triggering creature. That ability deals an extra 7 damage.')
@@ -582,7 +582,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-5-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 6 })]
 				})
 			]
 		}),
@@ -591,7 +591,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			name: 'Dorzinuuth the Base',
 			level: 6,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Draconian', 'Dragon', 'Humanoid' ],
+			keywords: ['Draconian', 'Dragon', 'Humanoid'],
 			encounterValue: 32,
 			size: FactoryLogic.createSize(1, 'L'),
 			speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -606,8 +606,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Punishing Flail',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -628,8 +628,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-6-feature-2',
 						name: 'I\'ll Cut A Path',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Before the power roll is made, Dorzinuuth shifts to an unoccupied space adjacent to the end of the line.'),
@@ -647,8 +647,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-6-feature-3',
 						name: 'Watch Your Six!',
 						type: FactoryLogic.type.createTrigger('An ally within distance takes damage while Dorzinuuth isn’t flying.'),
-						distance: [ FactoryLogic.distance.createMelee() ],
-						target: 'One ally',
+						distance: [FactoryLogic.distance.createMelee()],
+						target: 'Один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Dorzinuuth shields the triggering ally with his wings, halving the damage.')
 						]
@@ -671,14 +671,14 @@ Six individual draconians are presented in this section—not an adventuring par
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'draconian-6-feature-7',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Lightning, modifierType: DamageModifierType.Immunity, value: 6 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Lightning, modifierType: DamageModifierType.Immunity, value: 6 })]
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'draconian-6-feature-8',
 						name: 'Roaring Gambit',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Dorzinuuth lets loose a powerful roar. Each target makes a **Reason test.**'),
@@ -701,7 +701,7 @@ Six individual draconians are presented in this section—not an adventuring par
 							FactoryLogic.distance.createSelf(),
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts or flies up to their speed and regains 10 Stamina.')
 						]
@@ -712,8 +712,8 @@ Six individual draconians are presented in this section—not an adventuring par
 						id: 'draconian-6-feature-10',
 						name: 'Snap, Crackle, Pop',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'All allies in the burst',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Dorzinuuth covers the targets in an electrifying mesh. Whenever a target takes damage from a melee ability, the attacker takes 6 lightning damage.')

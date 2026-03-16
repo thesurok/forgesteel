@@ -10,8 +10,8 @@ export const swashbuckler: Kit = {
 	name: 'Swashbuckler',
 	description: 'If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the Swashbuckler kit. This is a great kit for heroes who want to be master duelists.',
 	type: '',
-	armor: [ KitArmor.Light ],
-	weapon: [ KitWeapon.Medium ],
+	armor: [KitArmor.Light],
+	weapon: [KitWeapon.Medium],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -27,14 +27,14 @@ export const swashbuckler: Kit = {
 				name: 'Fancy Footwork',
 				description: 'All combat is a dance - and you\'ll be the one leading.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
+							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '3 + M or A damage',
 							tier2: '5 + M or A damage; push 1',
 							tier3: '8 + M or A damage; push 2'

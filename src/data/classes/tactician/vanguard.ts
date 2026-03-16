@@ -15,7 +15,7 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-sub-3-1-1',
-					listOptions: [ SkillList.Interpersonal ]
+					listOptions: [SkillList.Interpersonal]
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-1-2',
@@ -28,9 +28,9 @@ export const vanguard: SubClass = {
 						name: 'Parry',
 						description: 'Your quick reflexes cost an enemy the precision they seek.',
 						type: FactoryLogic.type.createTrigger('A creature deals damage to the target.'),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
-						target: 'Self or one ally',
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can shift 1 square. If the target is you, or if you end this shift adjacent to the target, the target takes half the damage. If the damage has any potency effect associated with it, the potency is decreased by 1.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -66,15 +66,15 @@ export const vanguard: SubClass = {
 									name: 'No Dying on My Watch',
 									description: 'You prioritize saving an ally over your own safety.',
 									type: FactoryLogic.type.createTrigger('The target deals damage to an ally.'),
-									keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createRanged(5) ],
+									keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createRanged(5)],
 									target: 'One enemy',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You move up to your speed toward the triggering ally, ending this movement adjacent to them or in the nearest square if you can’t reach an adjacent square. The triggering ally can spend a Recovery and gains 5 temporary Stamina for each enemy you came adjacent to during the move. You then make a power roll against the target.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: 'R < [weak], the target is frightened of the triggering ally (save ends)',
 												tier2: ' R < [average], the target is frightened of the triggering ally (save ends)',
 												tier3: 'R < [strong], the target is frightened of the triggering ally (save ends)'
@@ -92,9 +92,9 @@ export const vanguard: SubClass = {
 									name: 'Squad! On Me!',
 									description: 'Together we are invincible!',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
-									target: 'Self and each ally in the area',
+									keywords: [AbilityKeyword.Area],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
+									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Until the start of your next turn, each target has a bonus to stability equal to your Might score. Additionally, each target gains 2 surges.')
@@ -144,9 +144,9 @@ export const vanguard: SubClass = {
 									name: 'Instant Retaliation',
 									description: 'You parry with almost supernatural speed.',
 									type: FactoryLogic.type.createTrigger('A creature deals damage to the target.', { free: true }),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One ally',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Один союзник',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('The target takes half the damage. You then make a power roll against the triggering creature.'),
@@ -170,9 +170,9 @@ export const vanguard: SubClass = {
 									name: 'To Me Squad!',
 									description: 'You lead your allies in a charge.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -228,9 +228,9 @@ export const vanguard: SubClass = {
 									name: 'No Escape',
 									description: 'Nothing will stop you from reaching your foe.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You mark the target.'),
@@ -255,12 +255,12 @@ export const vanguard: SubClass = {
 									name: 'That One Is Mine!',
 									description: 'You focus on making an enemy irrelevant.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(5)
 									],
-									target: 'One creature',
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('The target is marked by you.'),

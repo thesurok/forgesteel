@@ -14,7 +14,7 @@ export const reaver: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-sub-2-1-1',
-					selected: [ 'Hide' ]
+					selected: ['Hide']
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-2-1-2'
@@ -37,7 +37,7 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 						name: 'Unearthly Reflexes',
 						description: 'You are as elusive as a hummingbird.',
 						type: FactoryLogic.type.createTrigger('You take damage.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You take half the damage from the triggering effect and can shift up to a number of squares equal to your Agility score.'),
@@ -64,7 +64,7 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 						FactoryLogic.feature.createBonus({
 							id: 'fury-sub-2-2-1b',
 							field: FeatureField.Speed,
-							valueCharacteristics: [ Characteristic.Agility ]
+							valueCharacteristics: [Characteristic.Agility]
 						})
 					]
 				}),
@@ -79,13 +79,13 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Death ... Deeaaath!',
 									description: 'Your unbridled rage strikes terror in their hearts.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Might ],
+											characteristic: [Characteristic.Might],
 											tier1: '3 + M damage; P < [weak], dazed and frightened (save ends)',
 											tier2: '5 + M damage; P < [average], dazed and frightened (save ends)',
 											tier3: '8 + M damage; P < [strong], dazed and frightened (save ends)'
@@ -102,15 +102,15 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Phalanx-Breaker',
 									description: 'Organizing your forces like feckless creatures of Law. Pitiful.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createSelf() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self; see below',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You shift up to your speed and make one power roll that targets up to three enemies you move adjacent to during this shift.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '2 damage; A < [weak], dazed (save ends)',
 												tier2: '4 damage; A < [average], dazed (save ends)',
 												tier3: '6 damage; A < [strong], dazed (save ends)'
@@ -169,8 +169,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Death Strike',
 									description: 'Once you taste your foe’s blood, you become more efficient and turn every killing blow into an opportunity.',
 									type: FactoryLogic.type.createTrigger('You reduce a creature to 0 Stamina with a strike.', { free: true }),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Self',
 									cost: 9,
 									sections: [
@@ -187,14 +187,14 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Seek and Destroy',
 									description: 'You break through the enemy lines to make an example.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '4 + M damage; P < [weak] frightened (save ends)',
 												tier2: '6 + M damage; P < [average] frightened (save ends)',
 												tier3: '10 + M damage; P < [strong] frightened (save ends)'
@@ -244,14 +244,14 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Primordial Bane',
 									description: 'You attune the target to be weaker to a specific element.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '11 + M damage',
 												tier2: '16 + M damage',
 												tier3: '21 + M damage'
@@ -270,14 +270,14 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									name: 'Shower of Blood',
 									description: 'You shock your foes with the brutality of your strike, resetting the balance of combat.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '12 + M damage',
 												tier2: '18 + M damage',
 												tier3: '24 + M damage'

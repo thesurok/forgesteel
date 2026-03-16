@@ -58,15 +58,15 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 				id: 'lizardfolk-malice-1',
 				name: 'Net Trap',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 })],
 				target: 'Special',
 				cost: 3,
 				sections: [
 					FactoryLogic.createAbilitySectionText('A lizardfolk acting this turn sets up a net trap into the area. The first time an enemy steps into a square with a net trap, they make an Agility test. If the creature was unaware of the trap, they take a bane on the test.'),
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Agility ],
+							characteristic: [Characteristic.Agility],
 							tier1: 'Restrained (save ends).',
 							tier2: 'Restrained (EoT).',
 							tier3: 'No effect.'
@@ -107,7 +107,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Grunt',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 3,
 			speed: FactoryLogic.createSpeed(6, 'swim'),
 			stamina: 4,
@@ -122,8 +122,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-1-feature-1',
 						name: 'Snap and Toss',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -148,7 +148,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Shellguard',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 3,
 			speed: FactoryLogic.createSpeed(5, 'swim'),
 			stamina: 6,
@@ -163,8 +163,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-2-feature-1',
 						name: 'Shield Smash',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -190,7 +190,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Tonguer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 3,
 			speed: FactoryLogic.createSpeed(5, 'swim'),
 			stamina: 3,
@@ -205,8 +205,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-3-feature-1',
 						name: 'Tonguelash',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(8) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(8)],
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
@@ -232,7 +232,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Bloodeye',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 6,
 			speed: FactoryLogic.createSpeed(5, 'swim'),
 			stamina: 20,
@@ -246,8 +246,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-4-feature-1',
 						name: 'Bola Knock',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -265,9 +265,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-4-feature-2',
 						name: 'Bloodshot',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -291,7 +291,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Scaletooth',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 6,
 			speed: FactoryLogic.createSpeed(5, 'swim'),
 			stamina: 46,
@@ -305,8 +305,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-5-feature-1',
 						name: 'Razor Bite',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -325,8 +325,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-5-feature-2',
 						name: 'Tail Whip',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'Two creatures or objects',
 						cost: 2,
 						sections: [
@@ -352,7 +352,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Skyterror',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 6,
 			speed: FactoryLogic.createSpeed(7, 'swim'),
 			stamina: 30,
@@ -366,8 +366,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-6-feature-1',
 						name: 'Glaive Rush',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						cost: 'signature',
 						sections: [
@@ -386,8 +386,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-6-feature-2',
 						name: 'Poison Blowdart',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -417,7 +417,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 			name: 'Lizardfolk Deathrex',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Humanoid', 'Lizardfolk' ],
+			keywords: ['Humanoid', 'Lizardfolk'],
 			encounterValue: 12,
 			speed: FactoryLogic.createSpeed(5, 'climb, swim'),
 			stamina: 80,
@@ -431,8 +431,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-1',
 						name: 'Ripper Spear',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(3) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'Two creatures or objects',
 						cost: 'signature',
 						sections: [
@@ -454,8 +454,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-2',
 						name: 'Death Roll',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One grabbed creature or object',
 						cost: 3,
 						sections: [
@@ -474,7 +474,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-3',
 						name: 'Trundle',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The deathrex moves up to their speed. They can make a free strike against each creature who makes an opportunity attack against them during this movement.')
@@ -486,8 +486,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-4',
 						name: 'Swat the Fly',
 						type: FactoryLogic.type.createTrigger('A creature or object within distance moves or shifts away from the deathrex.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The deathrex slides the target up to 5 squares.')
@@ -499,9 +499,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-5',
 						name: 'Snack Attack',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target moves up to their speed and can make a free strike. Each target gains temporary Stamina equal to the damage they deal.')
 						]
@@ -512,7 +512,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-6',
 						name: 'Shed Some Skin',
 						type: FactoryLogic.type.createVillainAction(2),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The deathrex shifts up to their speed, leaving behind a shed skin duplicate in the space they started in. The duplicate acts on the deathrex’s turn and has the deathrex’s characteristics, but has 10 Stamina and no villain actions.')
@@ -524,8 +524,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						id: 'lizardfolk-7-feature-7',
 						name: 'Thresher Thrasher',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Self and each ally in the area',
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target moves up to their speed. Until the end of the encounter, whenever a creature comes adjacent to a target or starts their turn there, the target can make a free strike against them.')
 						]

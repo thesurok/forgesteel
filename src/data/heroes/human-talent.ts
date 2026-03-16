@@ -300,7 +300,7 @@ export const humanTalent = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Hyrallic' ]
+				selected: ['Hyrallic']
 			}
 		},
 		languages: [],
@@ -513,7 +513,7 @@ export const humanTalent = {
 										qualifier: ''
 									}
 								],
-								target: 'One creature',
+								target: 'Одна істота',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -1726,7 +1726,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2175,7 +2175,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2234,7 +2234,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2292,7 +2292,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2339,7 +2339,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2397,7 +2397,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2450,7 +2450,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2503,7 +2503,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2556,7 +2556,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2795,7 +2795,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2860,7 +2860,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2980,7 +2980,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -3112,7 +3112,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3178,7 +3178,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3243,7 +3243,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3296,7 +3296,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -4161,7 +4161,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4883,7 +4883,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'One creature',
+										target: 'Одна істота',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -5018,7 +5018,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -5238,7 +5238,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -5428,7 +5428,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'One creature',
+														target: 'Одна істота',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

@@ -55,10 +55,10 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			ability: FactoryLogic.createAbility({
 				id: 'human-malice-1',
 				name: 'Alchemical Device',
-				type: FactoryLogic.type.createManeuver({ qualifiers: [ 'Non-minion' ] }),
+				type: FactoryLogic.type.createManeuver({ qualifiers: ['Non-minion'] }),
 				cost: 3,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 				target: 'Each enemy and object in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -98,7 +98,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Apprentice Mage',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 4,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -126,7 +126,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Lightning Strike',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Ranged],
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
@@ -154,7 +154,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Guard',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -182,7 +182,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Halberd',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(2)
 						],
@@ -210,7 +210,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Archer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -238,7 +238,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Crossbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
@@ -265,7 +265,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Raider',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -293,7 +293,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Handaxe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
@@ -321,7 +321,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Death Acolyte',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -349,7 +349,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Necrotic Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
@@ -377,7 +377,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Rogue',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -405,7 +405,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Concealed Dagger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -434,7 +434,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Brawler',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Brute),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -461,7 +461,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Haymaker',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
@@ -483,7 +483,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Throw',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 1,
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature grabbed by the brawler',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The brawler pushes the target up to 5 squares.')
@@ -507,7 +507,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Knave',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -534,7 +534,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Morningstar & Javelin',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(5)
@@ -573,7 +573,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Death Cultist',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -600,7 +600,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Death Scythe',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(10)
@@ -624,10 +624,10 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 					ability: FactoryLogic.createAbility({
 						id: 'human-9-feature-4',
 						name: 'Rise, My Minions',
-						type: FactoryLogic.type.createManeuver({ qualifiers: [ '1 malice per minion' ] }),
+						type: FactoryLogic.type.createManeuver({ qualifiers: ['1 malice per minion'] }),
 						cost: 1,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each dead minion in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target who died during this encounter revives with full Stamina. They immediately die at the end of the encounter or if the death cultist is killed. A target can be revived multiple times by this ability.')
@@ -646,7 +646,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Scoundrel',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -672,7 +672,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-10-feature-3',
 						name: 'Rapier & Dagger',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
@@ -715,7 +715,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Storm Mage',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -742,7 +742,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Lightning Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createRanged(15)
 						],
@@ -767,8 +767,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Gust of Wind',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
 						target: 'Each enemy and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -798,7 +798,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Trickshot',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -825,7 +825,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Trick Crossbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1),
 							FactoryLogic.distance.createRanged(15)
@@ -858,7 +858,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Blackguard',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 12,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -885,7 +885,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Zweihander Swing',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })
 						],
@@ -909,7 +909,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-13-feature-4',
 						name: 'You!',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is marked until the start of the blackguard’s next turn. The blackguard and each of their allies gain an edge on abilities used against targets marked by the blackguard.')
@@ -931,11 +931,11 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-13-feature-7',
 						name: 'Parry!',
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against the blackguard or an ally adjacent to them.'),
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],
-						target: 'Self or one ally',
+						target: 'Себе або одного союзника',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved.')
 						]
@@ -946,7 +946,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-13-feature-8',
 						name: 'Advance!',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard shifts up to their speed. During or after this movement, they can use their Zweihander Swing twice.')
@@ -958,8 +958,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-13-feature-9',
 						name: 'Back!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard slides each target up to 5 squares.')
@@ -971,8 +971,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-13-feature-10',
 						name: 'I Can Throw My Blade and So Should You!',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard uses their Zweihander Swing against each target. Each ally within 5 squares of the area can then make a free strike against a target (one target per ally).')
@@ -986,7 +986,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Human Bandit Chief',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Human', 'Humanoid' ],
+			keywords: ['Human', 'Humanoid'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -1013,7 +1013,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Whip and Magic Longsword',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(3)
 						],
@@ -1038,8 +1038,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-14-feature-4',
 						name: 'Kneel, Peasant!',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee(1) ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1060,7 +1060,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-14-feature-5',
 						name: 'Bloodstones',
 						type: FactoryLogic.type.createTrigger('The bandit chief makes a power roll.'),
-						keywords: [ AbilityKeyword.Magic ],
+						keywords: [AbilityKeyword.Magic],
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
@@ -1085,8 +1085,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-14-feature-8',
 						name: 'Shoot!',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each artillery ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a ranged free strike.')
@@ -1098,8 +1098,8 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-14-feature-9',
 						name: 'Form Up!',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. Additionally, until the end of the encounter, while the bandit chief or any ally is adjacent to a target, they have damage immunity 2.')
@@ -1111,7 +1111,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-14-feature-10',
 						name: 'Lead From the Front',
 						type: FactoryLogic.type.createVillainAction(3),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bandit chief shifts up to 10 squares regardless of their speed. During or after this movement, they can use their Whip and Magic Longsword against up to four targets. Additionally, one ally adjacent to each target can make a free strike against that target.')
@@ -1125,7 +1125,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 			name: 'Giant Hawk',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Mount),
-			keywords: [ 'Human', 'Animal' ],
+			keywords: ['Human', 'Animal'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(5, 'flying'),
@@ -1139,7 +1139,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						id: 'human-15-feature-1',
 						name: 'Talons',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(1)
 						],

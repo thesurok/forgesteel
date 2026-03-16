@@ -24,7 +24,7 @@ As a null, you resist the supernatural forces of the universe with composure and
 	subclassName: 'Tradition',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Agility, Characteristic.Intuition ]
+		[Characteristic.Agility, Characteristic.Intuition]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -65,11 +65,11 @@ As a null, you resist the supernatural forces of the universe with composure and
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-1-1',
-					selected: [ 'Psionics' ]
+					selected: ['Psionics']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-1-2',
-					listOptions: [ SkillList.Interpersonal, SkillList.Lore ],
+					listOptions: [SkillList.Interpersonal, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createAbility({
@@ -78,8 +78,8 @@ As a null, you resist the supernatural forces of the universe with composure and
 						name: 'Null Field',
 						description: 'You project an aura that dampens the power of your foes.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 })],
 						target: 'All enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -101,8 +101,8 @@ This ability remains active even after an encounter ends. It ends only if you ar
 						name: 'Inertial Shield',
 						description: 'You intuit the course of an incoming attack, reducing its effects.',
 						type: FactoryLogic.type.createTrigger('You take damage.'),
-						keywords: [ AbilityKeyword.Psionic ],
-						distance: [ FactoryLogic.distance.createSelf() ],
+						keywords: [AbilityKeyword.Psionic],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You halve the damage.'),
@@ -122,13 +122,13 @@ This ability remains active even after an encounter ends. It ends only if you ar
 							id: 'null-1-6a',
 							name: 'Null Speed',
 							field: FeatureField.Speed,
-							valueCharacteristics: [ Characteristic.Agility ]
+							valueCharacteristics: [Characteristic.Agility]
 						}),
 						FactoryLogic.feature.createBonus({
 							id: 'null-1-6b',
 							name: 'Null Speed',
 							field: FeatureField.Disengage,
-							valueCharacteristics: [ Characteristic.Agility ]
+							valueCharacteristics: [Characteristic.Agility]
 						})
 					]
 				}),
@@ -160,7 +160,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 							feature: FactoryLogic.feature.createAbilityDamage({
 								id: 'null-1-7b',
 								name: 'Force Augmentation',
-								keywords: [ AbilityKeyword.Psionic ],
+								keywords: [AbilityKeyword.Psionic],
 								value: 1
 							}),
 							value: 1
@@ -228,7 +228,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'null-2-1',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -246,7 +246,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 						name: 'Reorder',
 						description: '',
 						type: FactoryLogic.type.createTrigger('You start your turn.', { free: true }),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('End one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your Null Field ability.')
@@ -287,11 +287,11 @@ This ability remains active even after an encounter ends. It ends only if you ar
 					tag: 'action 2',
 					trigger: 'The first time each combat round that an enemy in the area of your Null Field ability uses a main action',
 					value: '2',
-					replacesTags: [ 'action' ]
+					replacesTags: ['action']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-4-5',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -320,7 +320,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'null-6-3',
-					lists: [ PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue ]
+					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
 		},
@@ -372,11 +372,11 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '3',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-7-4',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -404,7 +404,7 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'null-9-1b',
 					name: 'I Am the Weapon',
-					conditions: [ ConditionType.Bleeding ]
+					conditions: [ConditionType.Bleeding]
 				})
 			]
 		},
@@ -427,7 +427,7 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 					tag: 'start 3',
 					trigger: 'Start of your turn',
 					value: '4',
-					replacesTags: [ 'start', 'start 2' ]
+					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.create({
 					id: 'null-10-3',
@@ -458,7 +458,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-10-6',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		}
@@ -469,14 +469,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Dance of Blows',
 			description: 'You strike everywhere at once, tricking an enemy into moving out of position.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 			target: 'Each enemy in the area',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 damage',
 						tier2: '4 damage',
 						tier3: '5 damage'
@@ -490,14 +490,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Faster than the Eye',
 			description: 'You strike so quickly that your hands become a blur.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Two creatures or objects',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '4 damage',
 						tier2: '5 damage',
 						tier3: '7 damage'
@@ -511,14 +511,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Inertial Step',
 			description: 'You flit about the battlefield and take an opportunistic strike.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '5 + A damage',
 						tier2: '7 + A damage',
 						tier3: '10 + A damage'
@@ -532,13 +532,13 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Joint Lock',
 			description: 'You contort your enemy’s body into a stance they struggle to escape from.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 + A damage; A < [weak], grabbed',
 					tier2: '7 + A damage; A < [average], grabbed',
 					tier3: '9 + A damage; A < [strong], grabbed'
@@ -550,13 +550,13 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Kinetic Strike',
 			description: 'Your opponent staggers. They cannot ignore you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 + A damage; taunted (EoT)',
 					tier2: '5 + A damage; taunted (EoT); slide 1',
 					tier3: '6 + A damage; taunted (EoT); slide 2'
@@ -568,13 +568,13 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Magnetic Strike',
 			description: 'The force of your blow extends past the limits of your body, pulling your enemy closer.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee(2) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee(2)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '5 + A psychic damage; vertical pull 1',
 					tier2: '8 + A psychic damage; vertical pull 2',
 					tier3: '11 + A psychic damage; vertical pull 3'
@@ -586,14 +586,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Phase Inversion Strike',
 			description: 'You step momentarily out of phase as you pull an enemy through you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '4 + A damage; push 2',
 						tier2: '6 + A damage; push 4',
 						tier3: '8 + A damage; push 6'
@@ -607,13 +607,13 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Pressure Points',
 			description: 'You strike at key nerve clusters to leave your foe staggered.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 + A damage; A < [weak], weakened (save ends)',
 					tier2: '7 + A damage; A < [average], weakened (save ends)',
 					tier3: '9 + A damage; A < [strong], weakened (save ends)'
@@ -625,14 +625,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Chronal Spike',
 			description: 'You foresee the best moment to strike, then exploit it.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '7 + A damage',
 						tier2: '10 + A damage',
 						tier3: '13 + A damage'
@@ -646,8 +646,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Psychic Pulse',
 			description: 'A burst of psionic energy interferes with your enemy’s synapses.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 3,
 			sections: [
@@ -659,14 +659,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Relentless Nemesis',
 			description: 'You strike, and for the next few moments, your enemy can’t escape you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '6 + A damage',
 						tier2: '8 + A damage',
 						tier3: '12 + A damage'
@@ -680,13 +680,13 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Stunning Blow',
 			description: 'You focus your psionic technique into a concussive punch.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-					characteristic: [ Characteristic.Agility ],
+					characteristic: [Characteristic.Agility],
 					tier1: '4 + A damage; I < [weak], dazed and slowed (save ends)',
 					tier2: '5 + A damage; I < [average], dazed and slowed (save ends)',
 					tier3: '7 + A damage; I < [strong], dazed and slowed (save ends)'
@@ -698,14 +698,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Arcane Disruptor',
 			description: 'Your blow reorders a foe’s body, causing pain if they attempt to channel sorcery.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '8 + A psychic damage; M < [weak], weakened (save ends)',
 						tier2: '12 + A psychic damage; M < [average], weakened (save ends)',
 						tier3: '16 + A psychic damage; M < [strong], weakened (save ends)'
@@ -719,14 +719,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Impart Force',
 			description: 'A single touch from you, and your enemy flies backward.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: 'One creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Intuition ],
+						characteristic: [Characteristic.Intuition],
 						tier1: 'Push 3',
 						tier2: 'Push 5',
 						tier3: 'Push 7'
@@ -740,14 +740,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Phase Strike',
 			description: 'For a moment, your foe slips out of phase with this manifold.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '3 + A psychic damage; I < [weak], the target goes out of phase (save ends)',
 						tier2: '4 + A psychic damage; I < [average], the target goes out of phase (save ends)',
 						tier3: '6 + A psychic damage; I < [strong], the target goes out of phase (save ends)'
@@ -761,14 +761,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'A Squad Unto Myself',
 			description: 'You move so quickly, it seems as though an army assaulted your foes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Each enemy in the area',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '6 damage',
 						tier2: '9 damage',
 						tier3: '13 damage'
@@ -782,8 +782,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Absorption Field',
 			description: 'Your null field absorbs kinetic energy.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -795,8 +795,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Molecular Rearrangement Field',
 			description: 'Your enemies’ wounds open, your allies’ wounds close.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -808,8 +808,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Stabilizing Field',
 			description: 'You project order, making it harder for your enemies to interfere with you and your allies.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -821,8 +821,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Synapse Field',
 			description: 'Attacks made by allies in your null field disrupt your enemies’ thoughts, causing psychic pain.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
@@ -834,14 +834,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Anticipating Strike',
 			description: 'You suddenly strike an enemy, then grab them in a psionically enhanced grip.',
 			type: FactoryLogic.type.createTrigger('The target moves or uses a main action', { free: true }),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '7 + A damage; I < [weak], restrained (save ends)',
 						tier2: '10 + A damage; I < [average], restrained (save ends)',
 						tier3: '13 + A damage; I < [strong], restrained (save ends)'
@@ -855,14 +855,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Iron Grip',
 			description: 'You grab the target with supernatural force.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '10 + A damage; A < [weak], grabbed',
 						tier2: '14 + A damage; A < [average], grabbed',
 						tier3: '18 + A damage; A < [strong], grabbed'
@@ -876,8 +876,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Phase Leap',
 			description: 'You leap beyond reality, leaving an afterimage of yourself.',
 			type: FactoryLogic.type.createMove(),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 9,
 			sections: [
@@ -889,9 +889,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Synaptic Reset',
 			description: 'You expand your nullifying power to mitigate harmful effects.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
-			target: 'Self and each ally in the area',
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
+			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Each target can end any conditions or effects on themself, and gains 5 temporary Stamina for each condition or effect removed.')
@@ -902,14 +902,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Arcane Purge',
 			description: 'You focus your null field into a pressure point strike that prevents your foe from channeling sorcery.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '13 + A damage; M < [weak], the target is suppressed (save ends)',
 						tier2: '19 + A damage; M < [average], the target is suppressed (save ends)',
 						tier3: '24 + A damage; M < [strong], the target is suppressed (save ends)'
@@ -923,14 +923,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Phase Hurl',
 			description: 'You throw your foe out of phase with this manifold, causing them to harm other enemies as they return.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '9 + A damage; push 5; I < [weak], dazed (save ends)',
 						tier2: '13 + A damage; push 7;  I < [average], dazed (save ends)',
 						tier3: '18 + A damage; push 10; I < [strong], dazed (save ends)'
@@ -944,14 +944,14 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Scalar Assault',
 			description: 'You warp reality to grow a limb for just a moment and make a single devastating attack.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 			target: 'Each enemy in the area',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Agility ],
+						characteristic: [Characteristic.Agility],
 						tier1: '12 psychic damage; push 3',
 						tier2: '17 psychic damage; push 5',
 						tier3: '23 psychic damage; push 7'
@@ -964,8 +964,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			name: 'Synaptic Anchor',
 			description: 'You disrupt an enemy’s strike and create a feedback loop in their mind, preventing them from focusing on future attacks.',
 			type: FactoryLogic.type.createTrigger('The target takes damage from another creature’s ability while in the area of your Null Field ability', { free: true }),
-			keywords: [ AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createSpecial('Self; see below') ],
+			keywords: [AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createSpecial('Self; see below')],
 			target: 'Self or one creature',
 			cost: 11,
 			sections: [

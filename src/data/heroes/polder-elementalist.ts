@@ -277,7 +277,7 @@ export const polderElementalist = {
 			data: {
 				options: [],
 				count: 1,
-				selected: [ 'Khoursirian' ]
+				selected: ['Khoursirian']
 			}
 		},
 		languages: [],
@@ -1663,7 +1663,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1777,7 +1777,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -1836,7 +1836,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 'signature',
 				repeatable: false,
 				minLevel: 1,
@@ -2243,7 +2243,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -2486,7 +2486,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2655,7 +2655,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 2,
@@ -2714,7 +2714,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 5,
 				repeatable: false,
 				minLevel: 2,
@@ -2774,7 +2774,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'One creature',
+				target: 'Одна істота',
 				cost: 5,
 				repeatable: false,
 				minLevel: 2,
@@ -2845,7 +2845,7 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: 'One creature',
+							tier1: 'Одна істота',
 							tier2: 'Two creatures',
 							tier3: 'Three creatures'
 						}
@@ -3324,7 +3324,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3379,7 +3379,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3820,7 +3820,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one ally',
+				target: 'Себе або одного союзника',
 				cost: 11,
 				repeatable: false,
 				minLevel: 9,
@@ -4054,7 +4054,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4226,7 +4226,7 @@ export const polderElementalist = {
 															qualifier: ''
 														}
 													],
-													target: 'One ally',
+													target: 'Один союзник',
 													cost: 0,
 													repeatable: false,
 													minLevel: 1,
@@ -4459,7 +4459,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4651,7 +4651,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4936,7 +4936,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one ally',
+										target: 'Себе або одного союзника',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,

@@ -14,12 +14,12 @@ export const stormwight: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-sub-3-1-1',
-					selected: [ 'Track' ]
+					selected: ['Track']
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-3-1-2',
 					name: 'Beast Shape',
-					types: [ 'Stormwight' ]
+					types: ['Stormwight']
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-1-3',
@@ -32,7 +32,7 @@ export const stormwight: SubClass = {
 						name: 'Furious Change',
 						description: 'In your anger, you revert to a more bestial form.',
 						type: FactoryLogic.type.createTrigger('You lose Stamina and are not dying.'),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your Might score and can enter your animal form or hybrid form.'),
@@ -47,9 +47,9 @@ export const stormwight: SubClass = {
 						id: 'fury-sub-3-1-5',
 						name: 'Aspect of the Wild',
 						description: 'You assume the form of the animal who channels your ferocity.',
-						keywords: [ AbilityKeyword.Magic ],
+						keywords: [AbilityKeyword.Magic],
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can shapeshift into the animal defined by your stormwight kit, into a hybrid form, or back into your true form. While in animal form or hybrid form, you can speak as you usually do, and you can also speak to animals who share your form. If you are in a negotiation with an animal while in animal form, you treat your Renown as 2 higher than usual.'),
@@ -80,13 +80,13 @@ export const stormwight: SubClass = {
 									name: 'Apex Predator',
 									description: 'I will hunt you down.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Might ],
+											characteristic: [Characteristic.Might],
 											tier1: '4 + M damage; I < [weak], slowed (save ends)',
 											tier2: '6 + M damage; I < [average], slowed (save ends)',
 											tier3: '10 + M damage; I < [strong], slowed (save ends)'
@@ -104,13 +104,13 @@ export const stormwight: SubClass = {
 									name: 'Visceral Roar',
 									description: 'The sound of the storm within you staggers your opponents.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 									target: 'Each enemy in the area',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-											characteristic: [ Characteristic.Might ],
+											characteristic: [Characteristic.Might],
 											tier1: '2 damage; push 1; M < [weak], dazed (save ends)',
 											tier2: '5 damage; push 2; M < [average], dazed (save ends)',
 											tier3: '7 damage; push 3; M < [strong], dazed (save ends)'
@@ -162,14 +162,14 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									name: 'Pounce',
 									description: 'You strike at the target like the ultimate predator you are.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
-									target: 'One creature',
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
+									target: 'Одна істота',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '8 damage; M < [weak], grabbed',
 												tier2: '13 damage; M < [average], grabbed',
 												tier3: '17 damage; M < [strong], grabbed'
@@ -188,8 +188,8 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									name: 'Riders on the Storm',
 									description: 'You focus your connection to the Primordial Chaos into a seething storm.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
 									target: 'Each creature in the area',
 									cost: 9,
 									sections: [
@@ -228,14 +228,14 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									name: 'Death Rattle',
 									description: 'You unleash an otherworldly cry that rips through your enemies, killing the weakest of them.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '4 psychic damage; any target who is a minion is reduced to 0 Stamina',
 												tier2: '6 psychic damage; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature',
 												tier3: '10 psychic damage; each target who is not a leader or solo creature is winded; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature'
@@ -253,14 +253,14 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 									name: 'Deluge',
 									description: 'You summon your primordial storm.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 									target: 'Each enemy in the area',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Might ],
+												characteristic: [Characteristic.Might],
 												tier1: '7 damage',
 												tier2: '10 damage',
 												tier3: '15 damage'

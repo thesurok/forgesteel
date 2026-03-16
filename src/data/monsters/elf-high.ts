@@ -79,10 +79,10 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			ability: FactoryLogic.createAbility({
 				id: 'elf-high-malice-2',
 				name: 'Gift From an Accursed Tome',
-				type: FactoryLogic.type.createMain({ qualifiers: [ 'Non-minion' ] }),
+				type: FactoryLogic.type.createMain({ qualifiers: ['Non-minion'] }),
 				cost: 5,
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 				target: 'Each enemy in the area',
 				sections: [
 					FactoryLogic.createAbilitySectionText('The high elf chooses a damage type and condition from one of the following combinations: cold damage and slowed, poison damage and weakened, or corruption damage and frightened.'),
@@ -112,7 +112,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'Elemental Mote',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-			keywords: [ 'Elemental', 'High Elf', 'Soulless' ],
+			keywords: ['Elemental', 'High Elf', 'Soulless'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'T'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -128,8 +128,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Dweomer Plume',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -153,7 +153,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Dawn Mage',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -169,8 +169,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Bright Bolt',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -195,7 +195,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Quiver',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -211,8 +211,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Heavy Arrow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -237,7 +237,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'Soot Crow',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Elemental', 'High Elf' ],
+			keywords: ['Elemental', 'High Elf'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'T'),
 			speed: FactoryLogic.createSpeed(7, 'fly'),
@@ -253,8 +253,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Heckle',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -274,7 +274,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'Brambleguard',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Elemental', 'High Elf' ],
+			keywords: ['Elemental', 'High Elf'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(4),
@@ -289,8 +289,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Wall of Roses',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.createSpecial('Special; see below') ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.createSpecial('Special; see below')],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the brambleguard’s next turn, their speed is 0 and they extend themself into a 5 wall. Each ally who starts their turn adjacent to the brambleguard regains 5 Stamina and can apply the Magic keyword to their weapon abilities until the end of their turn.')
@@ -302,8 +302,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-5-feature-2',
 						name: 'Whip Frenzy',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -327,7 +327,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Bloodletter',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -342,8 +342,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Razor\'s Edge',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -362,8 +362,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Blood Haze',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the next round, a cloud of blood vapor fills the area. The cloud blocks line of effect for enemies, and any enemy has damage weakness 3 while in the area. The bloodletter can then shift up to their speed, and can attempt to hide if they end that shift with concealment.')
@@ -382,7 +382,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Deathtouch',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -397,9 +397,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Heartpiercer',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -419,7 +419,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-7-feature-2',
 						name: 'Kiss of Death',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One willing ally',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target has a +5 bonus to speed and automatically obtains a tier 3 outcome on power rolls. They can still roll to determine if they score a critical hit. At the end of their next turn, the target immediately dies.')
@@ -438,7 +438,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Orbweaver',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -453,8 +453,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Awash',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
 						target: 'Each creature in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -471,8 +471,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-8-feature-2',
 						name: 'Aetherweb',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'Two enemies or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -497,7 +497,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Palinode',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -512,9 +512,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Instill Regret',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
-						target: 'One creature',
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(8)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -534,8 +534,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-9-feature-2',
 						name: 'Recall',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Two allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can teleport to an unoccupied space adjacent to the palinode. The palinode and each target then gain 5 temporary Stamina.')
@@ -549,7 +549,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elf-high-9-feature-4',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -558,7 +558,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Wyrd',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5),
@@ -573,8 +573,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Twystrd',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -593,8 +593,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Summon Elemental',
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wyrd summons two **elemental motes** or two **soot crows** into unoccupied spaces within distance.')
@@ -607,8 +607,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Wyrd Warp',
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 8, within: 8 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 8, within: 8 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wyrd shapes the land in the area as if it were loose clay, either raising the ground or pushing it down to create a trench. Any creature in the area moves with the terrain to its new higher elevation, or falls if the ground is lowered beneath them.')
@@ -622,7 +622,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elf-high-10-feature-5',
-					modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 }) ]
+					modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Psychic, modifierType: DamageModifierType.Immunity, value: 5 })]
 				})
 			]
 		}),
@@ -631,7 +631,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Zephyr',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -646,8 +646,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Sweeping Blade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee(2) ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee(2)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -665,7 +665,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-11-feature-2',
 						name: 'Windwalk',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The zephyr flies up to their speed. If they don’t end this movement on solid ground, they are prone.')
@@ -689,7 +689,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'High Elf Ordinator',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Fey', 'High Elf', 'Humanoid' ],
+			keywords: ['Fey', 'High Elf', 'Humanoid'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -704,8 +704,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Lightning Rod',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -723,8 +723,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-12-feature-2',
 						name: 'Elemental Uproar',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each elemental ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can move up to their speed or make a free strike. Elemental mote targets can, instead, use their Spark of Life trait.')
@@ -738,7 +738,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 2,
 						repeatable: true,
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ordinator summons four **elemental motes** or four **soot crows** into unoccupied space within distance.'),
@@ -755,8 +755,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-12-feature-4',
 						name: 'Enough!',
 						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability against the ordinator or any ally within distance.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ordinator uses Lightning Rod against the target after the ability is resolved.')
@@ -778,8 +778,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-12-feature-7',
 						name: 'Fountains Roar, Now Free From the Earth',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target glows briefly, and can end one effect on themself, then move up to their speed.')
@@ -791,8 +791,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-12-feature-8',
 						name: 'And the Sun Forsook Her Children',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
@@ -811,9 +811,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-12-feature-9',
 						name: 'But We Will Change Her Mind.',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-						distance: [	FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
-						target: 'Self and each ally in the area',
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target’s free strike now has the Magic keyword and can target two creatures or objects. Additionally, each target glows with magic.')
 						]
@@ -826,7 +826,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 			name: 'Ceramic Horse',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Mount),
-			keywords: [ 'Elemental', 'High Elf' ],
+			keywords: ['Elemental', 'High Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10),
@@ -841,8 +841,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Elemental Charge',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -859,8 +859,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						id: 'elf-high-13-feature-2',
 						name: 'Stomp',
 						type: FactoryLogic.type.createMain(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -879,7 +879,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Buck',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'The horse\'s rider',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The horse vertical slides the target up to 3 squares, ignoring stability. The target can use a ranged ability at any point during this forced movement, and takes no damage if they then fall.')

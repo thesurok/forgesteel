@@ -26,7 +26,7 @@ As a talent, you are limited only by the strength of your mind. But the ability 
 	subclassName: 'Tradition',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Reason, Characteristic.Presence ]
+		[Characteristic.Reason, Characteristic.Presence]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -70,11 +70,11 @@ Whenever you use an ability with a strain effect outside of combat, you can take
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-skill-a',
 					count: 2,
-					selected: [ 'Psionics', 'Read Person' ]
+					selected: ['Psionics', 'Read Person']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-skill-c',
-					listOptions: [ SkillList.Interpersonal, SkillList.Lore ],
+					listOptions: [SkillList.Interpersonal, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createAbility({
@@ -82,13 +82,13 @@ Whenever you use an ability with a strain effect outside of combat, you can take
 						id: 'talent-1-2',
 						name: 'Mind Spike',
 						description: 'A telepathic bolt instantly zaps a creature’s brain.',
-						type: FactoryLogic.type.createMain({ qualifiers: [ 'can be used as a ranged free strike' ], freeStrike: true }),
-						keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
-						target: 'One creature',
+						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
+						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+						distance: [FactoryLogic.distance.createRanged(10)],
+						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								characteristic: [ Characteristic.Reason ],
+								characteristic: [Characteristic.Reason],
 								tier1: '2 + R psychic damage',
 								tier2: '4 + R psychic damage',
 								tier3: '6 + R psychic damage'
@@ -102,7 +102,7 @@ Whenever you use an ability with a strain effect outside of combat, you can take
 				}),
 				FactoryLogic.feature.createLanguageChoice({
 					id: 'talent-1-3',
-					selected: [ 'Mindspeech' ]
+					selected: ['Mindspeech']
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-1-4',
@@ -135,8 +135,8 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 									}),
 									FactoryLogic.feature.createProficiency({
 										id: 'talent-1-5ac',
-										weapons: [ KitWeapon.Light ],
-										armor: [ KitArmor.Light ]
+										weapons: [KitWeapon.Light],
+										armor: [KitArmor.Light]
 									})
 								]
 							}),
@@ -165,7 +165,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 							feature: FactoryLogic.feature.createAbilityDistance({
 								id: 'talent-1-5c',
 								name: 'Distance Augmentation',
-								keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
+								keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 								value: 2
 							}),
 							value: 1
@@ -174,7 +174,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 							feature: FactoryLogic.feature.createAbilityDamage({
 								id: 'talent-1-5d',
 								name: 'Force Augmentation',
-								keywords: [ AbilityKeyword.Psionic ],
+								keywords: [AbilityKeyword.Psionic],
 								value: 1
 							}),
 							value: 1
@@ -220,7 +220,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 									name: 'Repulsive Ward',
 									description: 'You surround yourself with an invisible ward of telekinetic energy.',
 									type: FactoryLogic.type.createTrigger('An adjacent creature deals damage to you.', { free: true }),
-									distance: [ FactoryLogic.distance.createSelf() ],
+									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You can push your attacker up to a number of squares equal to your Reason score.')
@@ -267,7 +267,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'talent-2-1',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				})
 			]
 		},
@@ -304,7 +304,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						name: 'Mind Projection',
 						description: 'You project your mind outside your body.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -329,7 +329,7 @@ Any abilities or features you use originate from your mind. Both your mind and y
 							tag: 'move 2',
 							trigger: 'The first time each combat round that a creature is force moved',
 							value: '2',
-							replacesTags: [ 'move' ]
+							replacesTags: ['move']
 						})
 					]
 				}),
@@ -338,7 +338,7 @@ Any abilities or features you use originate from your mind. Both your mind and y
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-4-5',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-4-6',
@@ -364,7 +364,7 @@ If you are strained while flying and are force moved, the forced movement distan
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'talent-6-1',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-6-2',
@@ -426,11 +426,11 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 					tag: 'start 2',
 					trigger: 'Start of your turn',
 					value: '1d3 + 1',
-					replacesTags: [ 'start' ]
+					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-7-5',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				})
 			]
 		},
@@ -475,7 +475,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 						}),
 						FactoryLogic.feature.createConditionImmunity({
 							id: 'talent-9-1c',
-							conditions: [ ConditionType.Taunted, ConditionType.Frightened ]
+							conditions: [ConditionType.Taunted, ConditionType.Frightened]
 						})
 					]
 				})
@@ -500,7 +500,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 					tag: 'move 3',
 					trigger: 'The first time each combat round that a creature is force moved',
 					value: '3',
-					replacesTags: [ 'move', 'move 2' ]
+					replacesTags: ['move', 'move 2']
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-10-3',
@@ -508,7 +508,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 					features: [
 						FactoryLogic.feature.createAbilityDistance({
 							id: 'talent-10-3a',
-							keywords: [ AbilityKeyword.Ranged ],
+							keywords: [AbilityKeyword.Ranged],
 							value: 10
 						}),
 						FactoryLogic.feature.create({
@@ -520,7 +520,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'talent-10-4',
-					lists: [ PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural ]
+					lists: [PerkList.Interpersonal, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-10-5',
@@ -532,7 +532,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 							tag: 'start 3',
 							trigger: 'Start of your turn',
 							value: '1d3 + 2',
-							replacesTags: [ 'start', 'start 2' ]
+							replacesTags: ['start', 'start 2']
 						}),
 						FactoryLogic.feature.create({
 							id: 'talent-10-5b',
@@ -543,7 +543,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-10-6',
-					listOptions: [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ]
+					listOptions: [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'talent-10-7',
@@ -567,14 +567,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Entropic Bolt',
 			description: 'You advance an enemy’s age for a moment.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '2 + P corruption damage; P < [weak], slowed (save ends)',
 						tier2: '3 + P corruption damage; P < [average], slowed (save ends)',
 						tier3: '5 + P corruption damage; P < [strong], slowed (save ends)'
@@ -592,14 +592,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Hoarfrost',
 			description: 'You blast a foe with a pulse of cold energy.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Cryokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Cryokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R cold damage; M < [weak], slowed (EoT)',
 						tier2: '4 + R cold damage; M < [average], slowed (EoT)',
 						tier3: '6 + R cold damage; M < [strong], slowed (EoT)'
@@ -616,14 +616,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Incinerate',
 			description: 'The air erupts into a column of smokeless flame.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Pyrokinesis ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Pyrokinesis],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 			target: 'Each enemy in the area',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 fire damage',
 						tier2: '4 fire damage',
 						tier3: '6 fire damage'
@@ -641,14 +641,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Kinetic Grip',
 			description: 'You lift and hurl your foe away from you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: 'Slide 2 + R',
 						tier2: 'Slide 4 + R',
 						tier3: 'Slide 6 + R; prone'
@@ -665,14 +665,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Kinetic Pulse',
 			description: 'The force of your mind hurls enemies backward.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 			target: 'Each enemy in the area',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 psychic damage',
 						tier2: '5 psychic damage; push 1',
 						tier3: '7 psychic damage; push 2'
@@ -689,14 +689,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Materialize',
 			description: 'You picture an object in your mind and give it form—directly above your opponent’s head.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Resopathy, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Resopathy, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 + R damage',
 						tier2: '5 + R damage',
 						tier3: '8 + R damage'
@@ -714,14 +714,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Optic Blast',
 			description: 'Your eyes emit rays of powerful enervating force.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 + R damage; M < [weak], prone',
 						tier2: '4 + R damage; M < [average], prone',
 						tier3: '6 + R damage; M < [strong], prone'
@@ -739,14 +739,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Spirit Sword',
 			description: 'You form a blade of mind energy and stab your target, invigorating yourself.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Animapathy, AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createMelee(2) ],
+			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createMelee(2)],
 			target: 'One creature or object',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '3 + P damage',
 						tier2: '6 + P damage',
 						tier3: '9 + P damage'
@@ -764,15 +764,15 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Awe',
 			description: 'You project psionic energy out to a creature and take on a new visage in their mind.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('If you target an ally, they gain temporary Stamina equal to three times your Presence score, and they can end one effect on them that is ended by a saving throw or that ends at the end of their turn. If you target an enemy, you make a power roll.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '3 + P psychic damage; I < [weak], frightened (save ends)',
 						tier2: '6 + P psychic damage; I < [average], frightened (save ends)',
 						tier3: '9 + P psychic damage; I < [strong], frightened (save ends)'
@@ -785,14 +785,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Choke',
 			description: 'You crush a foe in a telekinetic grip.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 + R damage; M < [weak], slowed (save ends)',
 						tier2: '5 + R damage; M < [average], slowed (save ends)',
 						tier3: '8 + R damage; M < [strong], restrained (save ends)'
@@ -806,9 +806,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Precognition',
 			description: 'You give a target a glimpse into the future so that they’re ready for what comes next.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Chronopathy, AbilityKeyword.Melee, AbilityKeyword.Psionic ],
-			distance: [ FactoryLogic.distance.createMelee(2) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Melee, AbilityKeyword.Psionic],
+			distance: [FactoryLogic.distance.createMelee(2)],
+			target: 'Себе або одного союзника',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a triggered action to make a free strike against the source of the damage.')
@@ -819,15 +819,15 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Smolder',
 			description: 'Smoke flows from your enemy like tears as their skin begins to blacken and flake.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Pyrokinesis, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Pyrokinesis, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Choose the damage type and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '3 + R damage; R < [weak], the target has weakness 5 (save ends)',
 						tier2: '6 + R damage; R < [average], the target has weakness 5 (save ends)',
 						tier3: '9 + R damage; R < [strong], the target has weakness equal to 5 + your Reason score (save ends)'
@@ -840,9 +840,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Flashback',
 			description: 'The target is thrown several seconds back through time and gets to do it all again.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target uses an ability with a base Heroic Resource cost of 7 or lower that they’ve previously used this round, without needing to spend the base cost. Augmentations to the ability can be paid for as usual.'),
@@ -857,9 +857,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Inertia Soak',
 			description: 'Your psionic energy surrounds the target and pushes everything else away from them.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target ignores difficult terrain and takes no damage from forced movement until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your Reason score. When pushing an ally, the target can ignore that ally’s stability. A creature can only be force moved this way once a turn.'),
@@ -874,9 +874,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Iron',
 			description: 'The target’s skin turns to hard, dark metal, impenetrable and dense.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target’s stability increases by an amount equal to your Reason score, and they gain 10 temporary Stamina and 2 surges. This stability increase lasts until the target no longer has temporary Stamina from this ability.'),
@@ -891,9 +891,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Perfect Clarity',
 			description: 'You clear the mind of nothing but the goal.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the start of your next turn, the target gains a +3 bonus to speed, and they have a double edge on the next power roll they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.'),
@@ -908,14 +908,14 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Fling Through Time',
 			description: 'You hurl the target through the annals of time, forcing them to witness every moment of their existence all at once.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'One creature or object',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '3 + P corruption damage; P < [weak], weakened (save ends)',
 						tier2: '5 + P corruption damage; the target is flung through time, and if P < [average] they are weakened (save ends)',
 						tier3: '8 + P corruption damage; the target is flung through time, and if P < [strong] they are weakened (save ends)'
@@ -933,8 +933,8 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 			name: 'Force Orb',
 			description: 'Spheres of solid psionic energy float around you.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self; see below',
 			cost: 7,
 			sections: [
@@ -944,7 +944,7 @@ You create three size 1T orbs that orbit your body. Each orb gives you a cumulat
 Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.`),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '2 damage',
 						tier2: '3 damage',
 						tier3: '5 damage'
@@ -961,8 +961,8 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Reflector Field',
 			description: 'A protective field reverses the momentum of incoming attacks.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
 			target: 'Special',
 			cost: 7,
 			sections: [
@@ -978,14 +978,14 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Soul Burn',
 			description: 'You blast their soul out of their body, leaving it to helplessly float back to a weakened husk.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '6 + P damage; P < [weak], dazed (save ends)',
 						tier2: '10 + P damage; P < [average], dazed (save ends)',
 						tier3: '14 + P damage; P < [strong], dazed (save ends)'
@@ -1003,9 +1003,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Exothermic Shield',
 			description: 'You encase the target in psionic flame and allow them to flicker without fear of burning out.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Pyrokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'Self or one ally',
+			keywords: [AbilityKeyword.Pyrokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Себе або одного союзника',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('**Effect** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your Reason score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.'),
@@ -1020,15 +1020,15 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Hypersonic',
 			description: 'You move fast enough to turn around and watch your foes feel the aftermath.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 			target: 'Each enemy in the area',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You teleport to a square on the opposite side of the area before making the power roll.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '12 sonic damage',
 						tier2: '18 sonic damage',
 						tier3: '24 sonic damage'
@@ -1045,14 +1045,14 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Mind Snare',
 			description: 'You latch onto your prey’s brain and don’t let go, like a song they can’t get out of their head.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '10 + R psychic damage; R < [weak], slowed (save ends)',
 						tier2: '14 + R psychic damage; R < [average], slowed (save ends)',
 						tier3: '20 + R psychic damage; R < [strong], slowed (save ends)'
@@ -1070,14 +1070,14 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Soulbound',
 			description: 'You fire a piercing bolt of psychic energy that lances through two foes and leaves a faint intangible thread between them.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
+			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Two enemies',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '8 damage; A < [weak], the target is stitched to the other target (save ends)',
 						tier2: '13 damage; A < [average], the target is stitched to the other target (save ends)',
 						tier3: '17 damage; A < [strong], the target is stitched to the other target (save ends)'
@@ -1095,14 +1095,14 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Doubt',
 			description: 'You tug at the strings of the foe’s anima and unravel them, allowing someone else to take advantage of their drive.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Presence ],
+						characteristic: [Characteristic.Presence],
 						tier1: '10 + P damage; P < [weak], weakened (save ends)',
 						tier2: '14 + P damage; P < [average], weakened (save ends)',
 						tier3: '20 + P damage; P < [strong], weakened and slowed (save ends)'
@@ -1120,14 +1120,14 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Mindwipe',
 			description: 'You attempt to make them forget all their training.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy ],
-			distance: [ FactoryLogic.distance.createMelee(2) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
+			distance: [FactoryLogic.distance.createMelee(2)],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
-						characteristic: [ Characteristic.Reason ],
+						characteristic: [Characteristic.Reason],
 						tier1: '12 + R damage; R < [weak], the target takes a bane on their next power roll',
 						tier2: '17 + R damage; R < [average], the target takes a bane on power rolls (save ends)',
 						tier3: '23 + R damage; R < [strong], the target has a double bane on power rolls (save ends)'
@@ -1145,9 +1145,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			name: 'Rejuvenate',
 			description: 'You reshape the flow of time in the target’s body to return it to an earlier state.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
@@ -1168,9 +1168,9 @@ effects on them that are ended by a saving throw or that end at the end of their
 			name: 'Steel',
 			description: 'The target’s skin becomes covered in tough metal.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(10) ],
-			target: 'One creature',
+			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(10)],
+			target: 'Одна істота',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The target has damage immunity 5 and can’t be made slowed or weakened until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the forced movement distance gains a +5 bonus.'),

@@ -102,7 +102,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Lookout',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -118,8 +118,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Longbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(8) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -148,7 +148,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Runner',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -164,7 +164,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Spear',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -193,7 +193,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Scout',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(10),
@@ -209,7 +209,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Daggers',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -242,7 +242,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Yeoman',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 3,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -258,8 +258,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Heavy Longbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(12) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(12)],
 						target: 'One creature or object per minion',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -283,7 +283,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Chirurgeon',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Harrier),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -298,7 +298,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Wild Ax',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -325,8 +325,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'The Wode Protects Us',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [	FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Self and three allies',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can teleport up to 10 squares to a space that has cover or concealment.')
@@ -345,7 +345,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Druid',
 			level: 2,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Controller),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 8,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -360,8 +360,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Entangling Vines',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -384,7 +384,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'The Wode Protects Us',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [
 							FactoryLogic.distance.createRanged(5)
 						],
@@ -406,7 +406,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Green Seer',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Hexer),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -421,8 +421,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'The Forest’s Embrace',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -441,8 +441,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'The Natural Cycle',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Two creatures',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -460,8 +460,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						id: 'elf-wode-7-feature-3',
 						name: 'Foreseen Punishment',
 						type: FactoryLogic.type.createTrigger('A creature uses a triggered action targeting the green seer or an ally within distance.', { free: true }),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The green seer makes a free strike against the target after the target’s triggered action is resolved.')
@@ -480,7 +480,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Greenskeeper',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Defender),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -495,8 +495,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Growing Longsword',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -519,8 +519,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Overgrowth',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Special',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is overgrown with heavy brush and brambles until the end of the encounter, providing cover and concealment for the greenskeeper and their allies. The area is difficult terrain for enemies, and any enemy who starts their turn in the area takes 3 damage.')
@@ -539,7 +539,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Guerilla',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Ambusher),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'teleport'),
@@ -554,7 +554,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Splinter Dagger',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [
 							FactoryLogic.distance.createMelee(),
 							FactoryLogic.distance.createRanged(5)
@@ -581,7 +581,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Do Not Hesitate in the wode',
 						type: FactoryLogic.type.createTrigger('An ally ends their turn while the guerrilla hasn’t acted this round.', { free: true }),
 						cost: 3,
-						keywords: [ AbilityKeyword.Ranged ],
+						keywords: [AbilityKeyword.Ranged],
 						distance: [
 							FactoryLogic.distance.createRanged(20)
 						],
@@ -609,7 +609,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Gweiadur',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Artillery),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 10,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -624,8 +624,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Snare Bow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(15) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(15)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -648,8 +648,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'You Activated My Trap!',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -674,7 +674,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Sentry',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Support),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7),
@@ -689,8 +689,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Tracer Longbow',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -713,8 +713,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Death Blossom',
 						type: FactoryLogic.type.createMain(),
 						cost: 2,
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each marked enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 3 damage.')
@@ -733,7 +733,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wode Elf Warleader',
 			level: 3,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
-			keywords: [ 'Fey', 'Humanoid', 'Wode Elf' ],
+			keywords: ['Fey', 'Humanoid', 'Wode Elf'],
 			encounterValue: 20,
 			size: FactoryLogic.createSize(1, 'M'),
 			speed: FactoryLogic.createSpeed(7, 'teleport'),
@@ -748,8 +748,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Wodeblade',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -772,8 +772,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Fairness Is a Human Concept',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 5,
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each non-minion target can make a free strike, then each target shifts up to 3 squares. A target who has cover or concealment at the end of this shift can attempt to hide at the end of the warleader’s turn.')
@@ -785,7 +785,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						id: 'elf-wode-12-feature-3',
 						name: 'Wode Sickness',
 						type: FactoryLogic.type.createTrigger('An ally ends their turn.'),
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'One enemy',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target must not have taken their turn this round. The target takes their turn immediately, and if they have P<2 they are bleeding and take a bane on strikes until the end of their turn.')
@@ -812,8 +812,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						id: 'elf-wode-12-feature-7',
 						name: 'You Will All Witness My Blade',
 						type: FactoryLogic.type.createVillainAction(1),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each enemy in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader uses Wodeblade against each target and gains an edge on the power roll.')
@@ -825,8 +825,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						id: 'elf-wode-12-feature-8',
 						name: 'Suppressing Volley',
 						type: FactoryLogic.type.createVillainAction(2),
-						keywords: [ AbilityKeyword.Area ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+						keywords: [AbilityKeyword.Area],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each ally in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader can use Wodeblade. Each target can then make a free strike.')
@@ -838,11 +838,11 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						id: 'elf-wode-12-feature-9',
 						name: 'Is It Now or Is It Then?',
 						type: FactoryLogic.type.createVillainAction(3),
-						keywords: [ AbilityKeyword.Area ],
+						keywords: [AbilityKeyword.Area],
 						distance: [
 							FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })
 						],
-						target: 'Self and each ally in the area',
+						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target is invisible until the start of the next round. The warleader then uses Wodeblade.')
 						]
@@ -855,7 +855,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 			name: 'Wodenelg',
 			level: 1,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Platoon, MonsterRoleType.Mount),
-			keywords: [ 'Plant', 'Wode Elf' ],
+			keywords: ['Plant', 'Wode Elf'],
 			encounterValue: 6,
 			size: FactoryLogic.createSize(2),
 			speed: FactoryLogic.createSpeed(10),
@@ -870,8 +870,8 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Gore',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
-						keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'One creature or object',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -895,7 +895,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						name: 'Where I End the Woods Begin',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
-						distance: [ FactoryLogic.distance.createSelf() ],
+						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wodenelg and their rider become invisible until the start of the wodenelg’s next turn.')
