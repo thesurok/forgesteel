@@ -84,9 +84,9 @@ export const punisher: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '3 + M damage; push 2; M < [weak], prone',
-												tier2: '5 + M damage; push 3; M < [average], prone',
-												tier3: '8 + M damage; push 4; M < [strong], prone'
+												tier1: '3 + M damage; push 2; M < [слабкий], prone',
+												tier2: '5 + M damage; push 3; M < [середній], prone',
+												tier3: '8 + M damage; push 4; M < [сильний], prone'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('If the target is force moved at least 1 square, at the end of this movement an enemy adjacent to the target is also targeted by this ability’s power roll but not this additional effect.')
@@ -176,9 +176,9 @@ export const punisher: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '9 sonic damage; M < [weak], prone',
-												tier2: '13 sonic damage; M < [average], prone',
-												tier3: '18 sonic damage; M < [strong], prone'
+												tier1: '9 sonic damage; M < [слабкий], prone',
+												tier2: '13 sonic damage; M < [середній], prone',
+												tier3: '18 sonic damage; M < [сильний], prone'
 											})
 										),
 										FactoryLogic.createAbilitySectionSpend({
@@ -230,8 +230,8 @@ export const punisher: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: 'P < [weak], battle frenzied',
-												tier2: 'P < [average], battle frenzied',
+												tier1: 'P < [слабкий], battle frenzied',
+												tier2: 'P < [середній], battle frenzied',
 												tier3: 'battle frenzied'
 											})
 										),
@@ -256,9 +256,9 @@ export const punisher: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '9 damage; vertical slide 2, M [weak] prone',
-												tier2: '13 damage; vertical slide 4, M [average] prone',
-												tier3: '18 damage; vertical slide 6, M [strong] prone'
+												tier1: '9 damage; vertical slide 2, M [слабкий] prone',
+												tier2: '13 damage; vertical slide 4, M [середній] prone',
+												tier3: '18 damage; vertical slide 6, M [сильний] prone'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('Your companion can forgo dealing damage to targets of your choice.')

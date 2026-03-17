@@ -87,9 +87,9 @@ export const stormwight: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '4 + M damage; I < [weak], slowed (save ends)',
-											tier2: '6 + M damage; I < [average], slowed (save ends)',
-											tier3: '10 + M damage; I < [strong], slowed (save ends)'
+											tier1: '4 + M damage; I < [слабкий], slowed (save ends)',
+											tier2: '6 + M damage; I < [середній], slowed (save ends)',
+											tier3: '10 + M damage; I < [сильний], slowed (save ends)'
 										})),
 										FactoryLogic.createAbilitySectionText('The target can’t be hidden from you for 24 hours. Until the end of the encounter, whenever the target willingly moves, you can use a free triggered action to move.')
 									]
@@ -111,9 +111,9 @@ export const stormwight: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '2 damage; push 1; M < [weak], dazed (save ends)',
-											tier2: '5 damage; push 2; M < [average], dazed (save ends)',
-											tier3: '7 damage; push 3; M < [strong], dazed (save ends)'
+											tier1: '2 damage; push 1; M < [слабкий], dazed (save ends)',
+											tier2: '5 damage; push 2; M < [середній], dazed (save ends)',
+											tier3: '7 damage; push 3; M < [сильний], dazed (save ends)'
 										})),
 										FactoryLogic.createAbilitySectionText('This ability deals your primordial damage type.')
 									]
@@ -170,9 +170,9 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '8 damage; M < [weak], grabbed',
-												tier2: '13 damage; M < [average], grabbed',
-												tier3: '17 damage; M < [strong], grabbed'
+												tier1: '8 damage; M < [слабкий], grabbed',
+												tier2: '13 damage; M < [середній], grabbed',
+												tier3: '17 damage; M < [сильний], grabbed'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('You can shift up to 4 squares, bringing the target with you. While grabbed this way, the target takes damage equal to twice your Might score at the start of each of your turns.')

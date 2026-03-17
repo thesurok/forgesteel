@@ -80,9 +80,9 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '6 cold damage; A < [weak], slowed (save ends)',
-											tier2: '9 cold damage; A < [average], slowed (save ends)',
-											tier3: '13 cold damage; A < [strong], slowed (save ends)'
+											tier1: '6 cold damage; A < [слабкий], slowed (save ends)',
+											tier2: '9 cold damage; A < [середній], slowed (save ends)',
+											tier3: '13 cold damage; A < [сильний], slowed (save ends)'
 										}))
 									]
 								})
@@ -172,7 +172,7 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									target: 'Special',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [average] is slowed (save ends). Each enemy who is force moved into the wall and has M < [average] is restrained (save ends).')
+										FactoryLogic.createAbilitySectionText('You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [середній] is slowed (save ends). Each enemy who is force moved into the wall and has M < [середній] is restrained (save ends).')
 									]
 								})
 							}),
@@ -241,9 +241,9 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: '8 + I cold damage; M < [weak], restrained (save ends)',
-											tier2: '11 + I cold damage; M < [average], restrained (save ends)',
-											tier3: '15 + I cold damage; M < [strong], restrained (save ends)'
+											tier1: '8 + I cold damage; M < [слабкий], restrained (save ends)',
+											tier2: '11 + I cold damage; M < [середній], restrained (save ends)',
+											tier3: '15 + I cold damage; M < [сильний], restrained (save ends)'
 										})),
 										FactoryLogic.createAbilitySectionText('While restrained this way, the target takes cold damage equal to your Intuition score at the start of each of your turns. Additionally, whenever the target damages another creature while restrained this way, any potency associated with the damage is reduced by 2.')
 									]

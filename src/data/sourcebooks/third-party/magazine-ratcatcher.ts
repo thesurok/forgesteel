@@ -113,9 +113,9 @@ Swift to bloom and swift to wither, Anthousai remind others of the fleeting natu
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Intuition, Characteristic.Presence],
-										tier1: '2 + I or P poison damage; P < [weak] pull 2',
-										tier2: '3 + I or P poison damage; P < [average] pull 3',
-										tier3: '5 + I or P poison damage; P < [strong] pull 4'
+										tier1: '2 + I or P poison damage; P < [слабкий] pull 2',
+										tier2: '3 + I or P poison damage; P < [середній] pull 3',
+										tier3: '5 + I or P poison damage; P < [сильний] pull 4'
 									})
 								)
 							]
@@ -238,9 +238,9 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Presence],
-										tier1: '2 damage; M < [weak] slowed (save ends)',
-										tier2: '3 damage; M < [average] slowed (save ends)',
-										tier3: '5 damage; M < [strong] restrained (save ends)'
+										tier1: '2 damage; M < [слабкий] slowed (save ends)',
+										tier2: '3 damage; M < [середній] slowed (save ends)',
+										tier3: '5 damage; M < [сильний] restrained (save ends)'
 									})
 								)
 							]

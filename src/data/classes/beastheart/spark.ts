@@ -73,9 +73,9 @@ export const spark: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + I fire or lightning damage; M < [weak], prone',
-												tier2: '9 + I fire or lightning damage; M < [average], prone',
-												tier3: '14 + I fire or lightning damage; M < [strong], prone and can’t stand (EoT)'
+												tier1: '6 + I fire or lightning damage; M < [слабкий], prone',
+												tier2: '9 + I fire or lightning damage; M < [середній], prone',
+												tier3: '14 + I fire or lightning damage; M < [сильний], prone and can’t stand (EoT)'
 											})
 										),
 										FactoryLogic.createAbilitySectionSpend({
@@ -185,9 +185,9 @@ Your companion’s transformation lasts until the start of your next turn. At th
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '5 cold damage; I < [weak] restrained (save ends)',
-												tier2: '7 cold damage; I < [average] restrained (save ends)',
-												tier3: '12 cold damage; I < [strong] restrained (save ends)'
+												tier1: '5 cold damage; I < [слабкий] restrained (save ends)',
+												tier2: '7 cold damage; I < [середній] restrained (save ends)',
+												tier3: '12 cold damage; I < [сильний] restrained (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('While restrained by this ability, a creature takes 5 cold damage at the start of each of your turns. A creature killed by this ability becomes an ice statue; their space is difficult terrain.')

@@ -1229,7 +1229,7 @@ export const wodeElfTroubadour = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -1985,9 +1985,9 @@ export const wodeElfTroubadour = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; P < [weak], weakened (save ends)',
-							tier2: '10 + A damage; P < [weak], weakened (save ends)',
-							tier3: '14 + A damage; P < [weak], weakened (save ends)'
+							tier1: '6 + A damage; P < [слабкий], weakened (save ends)',
+							tier2: '10 + A damage; P < [слабкий], weakened (save ends)',
+							tier3: '14 + A damage; P < [слабкий], weakened (save ends)'
 						}
 					},
 					{
@@ -2042,9 +2042,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Slide 3; P < [weak], this slide ignores the target’s stability',
-							tier2: 'Slide 5; P < [average], this slide ignores the target’s stability',
-							tier3: 'Slide 7; P < [strong], this slide ignores the target’s stability'
+							tier1: 'Slide 3; P < [слабкий], this slide ignores the target’s stability',
+							tier2: 'Slide 5; P < [середній], this slide ignores the target’s stability',
+							tier3: 'Slide 7; P < [сильний], this slide ignores the target’s stability'
 						}
 					},
 					{
@@ -2101,9 +2101,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 fire damage; A < [weak], weakened (save ends)',
-							tier2: '7 fire damage; A < [average], weakened (save ends)',
-							tier3: '10 fire damage; A < [strong], weakened (save ends)'
+							tier1: '5 fire damage; A < [слабкий], weakened (save ends)',
+							tier2: '7 fire damage; A < [середній], weakened (save ends)',
+							tier3: '10 fire damage; A < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -2606,9 +2606,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '6 damage; P < [weak], the target can’t willingly leave the area (EoT)',
-							tier2: '8 damage; P < [average], the target can’t willingly leave the area (save ends)',
-							tier3: '12 damage; the target can’t willingly leave the area (EoT); if P < [strong], they can’t willingly leave the area (save ends)'
+							tier1: '6 damage; P < [слабкий], the target can’t willingly leave the area (EoT)',
+							tier2: '8 damage; P < [середній], the target can’t willingly leave the area (save ends)',
+							tier3: '12 damage; the target can’t willingly leave the area (EoT); if P < [сильний], they can’t willingly leave the area (save ends)'
 						}
 					},
 					{
@@ -3110,9 +3110,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '2 psychic damage; P < [weak], frightened (save ends)',
-																	tier2: '5 psychic damage; P < [average], frightened (save ends)',
-																	tier3: '7 psychic damage; P < [strong], frightened (save ends)'
+																	tier1: '2 psychic damage; P < [слабкий], frightened (save ends)',
+																	tier2: '5 psychic damage; P < [середній], frightened (save ends)',
+																	tier3: '7 psychic damage; P < [сильний], frightened (save ends)'
 																}
 															}
 														],
@@ -3854,9 +3854,9 @@ export const wodeElfTroubadour = {
 																		'Agility'
 																	],
 																	bonus: 0,
-																	tier1: '12 + A damage; M < [weak], bleeding (save ends)',
-																	tier2: '18 + A damage; M < [average], bleeding (save ends)',
-																	tier3: '24 + A damage; bleeding (EoT), or if M < [strong], bleeding (save ends)'
+																	tier1: '12 + A damage; M < [слабкий], bleeding (save ends)',
+																	tier2: '18 + A damage; M < [середній], bleeding (save ends)',
+																	tier3: '24 + A damage; bleeding (EoT), or if M < [сильний], bleeding (save ends)'
 																}
 															}
 														],
@@ -4012,7 +4012,7 @@ export const wodeElfTroubadour = {
 																	bonus: 0,
 																	tier1: '15 + A damage',
 																	tier2: '21 + A damage',
-																	tier3: '28 + A damage; M < [strong], bleeding (save ends)'
+																	tier3: '28 + A damage; M < [сильний], bleeding (save ends)'
 																}
 															}
 														],
@@ -4755,9 +4755,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '7 sonic damage; P < [weak], prone',
-																	tier2: '10 sonic damage; P < [average], prone',
-																	tier3: '13 sonic damage; P < [strong], prone'
+																	tier1: '7 sonic damage; P < [слабкий], prone',
+																	tier2: '10 sonic damage; P < [середній], prone',
+																	tier3: '13 sonic damage; P < [сильний], prone'
 																}
 															}
 														],

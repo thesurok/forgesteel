@@ -34,9 +34,9 @@ export const boren: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might],
-							tier1: '2 + M damage; M < [weak], grabbed',
-							tier2: '5 + M damage; M < [average], grabbed',
-							tier3: '7 + M damage; M < [strong], grabbed'
+							tier1: '2 + M damage; M < [слабкий], grabbed',
+							tier2: '5 + M damage; M < [середній], grabbed',
+							tier3: '7 + M damage; M < [сильний], grabbed'
 						})
 					)
 				]
@@ -45,7 +45,7 @@ export const boren: Kit = {
 		FactoryLogic.feature.create({
 			id: 'kit-boren-feature-1',
 			name: 'Aspect Benefits',
-			description: 'Whenever you use forced movement to push a creature, you can pull that creature instead. Whenever you pull a creature adjacent to you and that creature has M < [average], you can use a free triggered action to make that creature grabbed by you.'
+			description: 'Whenever you use forced movement to push a creature, you can pull that creature instead. Whenever you pull a creature adjacent to you and that creature has M < [середній], you can use a free triggered action to make that creature grabbed by you.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-boren-feature-2a',

@@ -608,7 +608,7 @@ export const conduit: HeroClass = {
 						{
 							tag: '',
 							trigger: 'Завершення відпочинку',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -788,9 +788,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + І шкоди скверною; П < [weak], ціль отримує шкоду (bane) на свій наступний кидок сили',
-					tier2: '6 + І шкоди скверною; П < [average], ціль отримує шкоду (bane) на свій наступний кидок сили',
-					tier3: '9 + І шкоди скверною; П < [strong], ціль отримує шкоду (bane) на свій наступний кидок сили'
+					tier1: '3 + І шкоди скверною; П < [слабкий], ціль отримує шкоду (bane) на свій наступний кидок сили',
+					tier2: '6 + І шкоди скверною; П < [середній], ціль отримує шкоду (bane) на свій наступний кидок сили',
+					tier3: '9 + І шкоди скверною; П < [сильний], ціль отримує шкоду (bane) на свій наступний кидок сили'
 				}))
 			]
 		}),
@@ -840,9 +840,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I holy damage; A < [weak], prone',
-					tier2: '6 + I holy damage; A < [average], prone',
-					tier3: '9 + I holy damage; A < [strong], prone and can’t stand (save ends)'
+					tier1: '3 + I holy damage; A < [слабкий], prone',
+					tier2: '6 + I holy damage; A < [середній], prone',
+					tier3: '9 + I holy damage; A < [сильний], prone and can’t stand (save ends)'
 				}))
 			]
 		}),
@@ -879,9 +879,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + І шкоди скверною; С < [weak], вразливість до шкоди 5 (рят. кидок припиняє)',
-					tier2: '6 + І шкоди скверною; С < [average], вразливість до шкоди 5 (рят. кидок припиняє)',
-					tier3: '9 + І шкоди скверною; С < [strong], вразливість до шкоди 5 (рят. кидок припиняє)'
+					tier1: '3 + І шкоди скверною; С < [слабкий], вразливість до шкоди 5 (рят. кидок припиняє)',
+					tier2: '6 + І шкоди скверною; С < [середній], вразливість до шкоди 5 (рят. кидок припиняє)',
+					tier3: '9 + І шкоди скверною; С < [сильний], вразливість до шкоди 5 (рят. кидок припиняє)'
 				}))
 			]
 		}),
@@ -897,9 +897,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '6 + І священної шкоди; І < [weak], переляканий (рят. кидок припиняє)',
-					tier2: '9 + І священної шкоди; І < [average], переляканий (рят. кидок припиняє)',
-					tier3: '13 + І священної шкоди; І < [strong], переляканий (рят. кидок припиняє)'
+					tier1: '6 + І священної шкоди; І < [слабкий], переляканий (рят. кидок припиняє)',
+					tier2: '9 + І священної шкоди; І < [середній], переляканий (рят. кидок припиняє)',
+					tier3: '13 + І священної шкоди; І < [сильний], переляканий (рят. кидок припиняє)'
 				}))
 			]
 		}),
@@ -947,9 +947,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '6 психічної шкоди; І < [weak], переляканий (рят. кидок припиняє)',
-					tier2: '9 психічної шкоди; І < [average], переляканий (рят. кидок припиняє)',
-					tier3: '13 психічної шкоди; І < [strong], переляканий (рят. кидок припиняє)'
+					tier1: '6 психічної шкоди; І < [слабкий], переляканий (рят. кидок припиняє)',
+					tier2: '9 психічної шкоди; І < [середній], переляканий (рят. кидок припиняє)',
+					tier3: '13 психічної шкоди; І < [сильний], переляканий (рят. кидок припиняє)'
 				})),
 				FactoryLogic.createAbilitySectionText('Кожна ціль перелякана вами або істотою на ваш вибір у межах дистанції.')
 			]
@@ -1040,9 +1040,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '4 шкоди скверною; І < [weak], повалений і не може встати (рят. кидок припиняє)',
-					tier2: '7 шкоди скверною; І < [average], повалений і не може встати (рят. кидок припиняє)',
-					tier3: '11 шкоди скверною; І < [strong], повалений і не може встати (рят. кидок припиняє)'
+					tier1: '4 шкоди скверною; І < [слабкий], повалений і не може встати (рят. кидок припиняє)',
+					tier2: '7 шкоди скверною; І < [середній], повалений і не може встати (рят. кидок припиняє)',
+					tier3: '11 шкоди скверною; І < [сильний], повалений і не може встати (рят. кидок припиняє)'
 				}))
 			]
 		}),

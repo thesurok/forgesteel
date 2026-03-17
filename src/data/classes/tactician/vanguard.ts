@@ -75,9 +75,9 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: 'R < [weak], the target is frightened of the triggering ally (save ends)',
-												tier2: ' R < [average], the target is frightened of the triggering ally (save ends)',
-												tier3: 'R < [strong], the target is frightened of the triggering ally (save ends)'
+												tier1: 'R < [слабкий], the target is frightened of the triggering ally (save ends)',
+												tier2: ' R < [середній], the target is frightened of the triggering ally (save ends)',
+												tier3: 'R < [сильний], the target is frightened of the triggering ally (save ends)'
 											})
 										)
 									]
@@ -153,9 +153,9 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: 'A < [weak], dazed (save ends)',
-												tier2: 'A < [average], dazed (save ends)',
-												tier3: 'A < [strong], dazed (save ends)'
+												tier1: 'A < [слабкий], dazed (save ends)',
+												tier2: 'A < [середній], dazed (save ends)',
+												tier3: 'A < [сильний], dazed (save ends)'
 											})
 										)
 									]
@@ -183,7 +183,7 @@ export const vanguard: SubClass = {
 												tier3: '13 + M damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If the target is hit with two or more strikes as part of this ability and they have R < [strong] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.')
+										FactoryLogic.createAbilitySectionText('If the target is hit with two or more strikes as part of this ability and they have R < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.')
 									]
 								})
 							}),

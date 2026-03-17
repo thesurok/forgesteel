@@ -201,9 +201,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: '2 psychic damage; P < [weak], frightened (EoT)',
-													tier2: '3 psychic damage; P < [average], frightened (EoT)',
-													tier3: '5 psychic damage; P < [strong], frightened (EoT)'
+													tier1: '2 psychic damage; P < [слабкий], frightened (EoT)',
+													tier2: '3 psychic damage; P < [середній], frightened (EoT)',
+													tier3: '5 psychic damage; P < [сильний], frightened (EoT)'
 												})
 											)
 										]
@@ -244,9 +244,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: 'R < [weak], taunted (save ends)',
-													tier2: 'R < [average], taunted (save ends)',
-													tier3: 'R < [strong], taunted (save ends)'
+													tier1: 'R < [слабкий], taunted (save ends)',
+													tier2: 'R < [середній], taunted (save ends)',
+													tier3: 'R < [сильний], taunted (save ends)'
 												})
 											)
 										]
@@ -269,9 +269,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: '1 psychic damage; I < [weak], dazed (EoT)',
-													tier2: '2 psychic damage; I < [average], dazed (EoT)',
-													tier3: '3 psychic damage; I < [strong], dazed (EoT)'
+													tier1: '1 psychic damage; I < [слабкий], dazed (EoT)',
+													tier2: '2 psychic damage; I < [середній], dazed (EoT)',
+													tier3: '3 psychic damage; I < [сильний], dazed (EoT)'
 												})
 											)
 										]
@@ -637,8 +637,8 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 Spending additional thirst on this ability grants you the following benefits:
 
 * For each additional thirst spent, the corruption damage dealt and temporary Stamina gained increases by 1.
-* If you've spent at least 3 total thirst on this ability, the target is M < [average] weakened (save ends), and you can spend a Recovery.
-* If you've spent at least 5 total thirst on this ability, the target is M < [strong] weakened (save ends) instead, and you can spend another Recovery.
+* If you've spent at least 3 total thirst on this ability, the target is M < [середній] weakened (save ends), and you can spend a Recovery.
+* If you've spent at least 5 total thirst on this ability, the target is M < [сильний] weakened (save ends) instead, and you can spend another Recovery.
 
 For each condition the target suffers from, treat the thirst spent on this ability as 1 higher.`
 							})
@@ -730,9 +730,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '2 + M or A damage; A < [weak], slowed (save ends)',
-						tier2: '5 + M or A damage; A < [average], slowed (save ends)',
-						tier3: '7 + M or A damage; A < [strong], slowed (save ends)'
+						tier1: '2 + M or A damage; A < [слабкий], slowed (save ends)',
+						tier2: '5 + M or A damage; A < [середній], slowed (save ends)',
+						tier3: '7 + M or A damage; A < [сильний], slowed (save ends)'
 					})
 				)
 			]
@@ -753,9 +753,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '2 + M or A damage; M < [weak], bleeding (save ends)',
-						tier2: '5 + M or A damage; M < [average], bleeding (save ends)',
-						tier3: '7 + M or A damage; M < [strong], bleeding (save ends)'
+						tier1: '2 + M or A damage; M < [слабкий], bleeding (save ends)',
+						tier2: '5 + M or A damage; M < [середній], bleeding (save ends)',
+						tier3: '7 + M or A damage; M < [сильний], bleeding (save ends)'
 					})
 				)
 			]
@@ -773,9 +773,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '4 + P sonic damage; I < [weak], dazed (EoT)',
-						tier2: '5 + P sonic damage; I < [average], dazed (EoT)',
-						tier3: '7 + P sonic damage; I < [strong], dazed (EoT)'
+						tier1: '4 + P sonic damage; I < [слабкий], dazed (EoT)',
+						tier2: '5 + P sonic damage; I < [середній], dazed (EoT)',
+						tier3: '7 + P sonic damage; I < [сильний], dazed (EoT)'
 					})
 				)
 			]
@@ -797,9 +797,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '3 damage; M < [weak], bleeding (save ends)',
-						tier2: '5 damage; M < [average], bleeding (save ends)',
-						tier3: '8 damage; M < [strong], bleeding (save ends)'
+						tier1: '3 damage; M < [слабкий], bleeding (save ends)',
+						tier2: '5 damage; M < [середній], bleeding (save ends)',
+						tier3: '8 damage; M < [сильний], bleeding (save ends)'
 					})
 				)
 			]
@@ -841,9 +841,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '5 + M or A damage; P < [weak], frightened (EoT)',
-						tier2: '9 + M or A damage; P < [average], frightened (EoT)',
-						tier3: '12 + M or A damage; P < [strong], frightened (EoT)'
+						tier1: '5 + M or A damage; P < [слабкий], frightened (EoT)',
+						tier2: '9 + M or A damage; P < [середній], frightened (EoT)',
+						tier3: '12 + M or A damage; P < [сильний], frightened (EoT)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Якщо ви використовуєте цю здібність як частину дії «Charge», ви отримуєте перевагу. Якщо ні, ви можете переміститися до половини вашої швидкості перед ударом. Кожен ворог, що знаходиться поруч із ціллю, штовхається від цілі на число клітинок, рівне вашому показнику Присутності.')
@@ -886,9 +886,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '7 + M or A damage; M < [weak], bleeding and weakened (save ends)',
-						tier2: '11 + M or A damage; M < [average], bleeding and weakened (save ends)',
-						tier3: '16 + M or A damage; M < [strong], bleeding and weakened (save ends)'
+						tier1: '7 + M or A damage; M < [слабкий], bleeding and weakened (save ends)',
+						tier2: '11 + M or A damage; M < [середній], bleeding and weakened (save ends)',
+						tier3: '16 + M or A damage; M < [сильний], bleeding and weakened (save ends)'
 					})
 				)
 			]
@@ -906,9 +906,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '5 sonic damage; push 2; I < [weak] dazed (save ends)',
-						tier2: '8 sonic damage; push 4; I < [average] dazed (save ends)',
-						tier3: '11 sonic damage; push 6; I < [strong] dazed (save ends)'
+						tier1: '5 sonic damage; push 2; I < [слабкий] dazed (save ends)',
+						tier2: '8 sonic damage; push 4; I < [середній] dazed (save ends)',
+						tier3: '11 sonic damage; push 6; I < [сильний] dazed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The targets are force moved one at a time, starting with the target nearest to you, and can be pushed into other targets in the same line.')
@@ -1052,9 +1052,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 + P shadow damage; A < [weak], restrained (save ends)',
-								tier2: '6 + P shadow damage; A < [average], restrained (save ends)',
-								tier3: '8 + P shadow damage; A < [strong], restrained (save ends)'
+								tier1: '4 + P shadow damage; A < [слабкий], restrained (save ends)',
+								tier2: '6 + P shadow damage; A < [середній], restrained (save ends)',
+								tier3: '8 + P shadow damage; A < [сильний], restrained (save ends)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('While the target is restrained this way, at the start of each of their turns, they take shadow damage equal to your Presence score.')
@@ -1073,9 +1073,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '3 shadow damage; A < [weak], restrained (save ends)',
-								tier2: '4 shadow damage; A < [average], restrained (save ends)',
-								tier3: '5 shadow damage; A < [strong], restrained (save ends)'
+								tier1: '3 shadow damage; A < [слабкий], restrained (save ends)',
+								tier2: '4 shadow damage; A < [середній], restrained (save ends)',
+								tier3: '5 shadow damage; A < [сильний], restrained (save ends)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('Each target standing on the ground takes 1d3 extra damage, and the potency of this ability increases by 1 against them.')
@@ -1094,9 +1094,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: 'blind (EoT); P < [weak], frightened',
-								tier2: 'blind (save ends); P < [average], frightened',
-								tier3: 'blind (save ends); P < [strong], frightened'
+								tier1: 'blind (EoT); P < [слабкий], frightened',
+								tier2: 'blind (save ends); P < [середній], frightened',
+								tier3: 'blind (save ends); P < [сильний], frightened'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('A blind target treats all other creatures and objects as if they are invisible, and doesn\'t have line of effect to creatures or objects more than 5 squares away. A target made frightened this way is frightened as long as they are blind.')
@@ -1420,9 +1420,9 @@ If the target is an enemy, the appendage doesn't immediately wither down and is 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 damage; M < [weak], slowed (save ends)',
-								tier2: '5 damage; M < [average], slowed (save ends)',
-								tier3: '7 damage; M < [strong], slowed (save ends)'
+								tier1: '4 damage; M < [слабкий], slowed (save ends)',
+								tier2: '5 damage; M < [середній], slowed (save ends)',
+								tier3: '7 damage; M < [сильний], slowed (save ends)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('While slowed or restrained this way, at the start of each target\'s turn, they take damage equal to your Presence score + your virulence.'),
@@ -1482,7 +1482,7 @@ You've adopted the fighting traditions of knights and nobles. Protected by your 
 							characteristic: [Characteristic.Might, Characteristic.Agility],
 							tier1: '2 + M or A damage',
 							tier2: '5 + M or A damage',
-							tier3: '7 + M or A damage; M < [strong], weakened (save ends)'
+							tier3: '7 + M or A damage; M < [сильний], weakened (save ends)'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your highest characteristic score.')
@@ -1524,9 +1524,9 @@ You are a master of a whip, and your weapon leaves gory marks on the bodies of y
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage; A < [weak], bleeding (EoT)',
-							tier2: '5 + M or A damage; A < [average], bleeding (EoT)',
-							tier3: '8 + M or A damage; A < [strong], bleeding (save ends)'
+							tier1: '3 + M or A damage; A < [слабкий], bleeding (EoT)',
+							tier2: '5 + M or A damage; A < [середній], bleeding (EoT)',
+							tier3: '8 + M or A damage; A < [сильний], bleeding (save ends)'
 						})
 					)
 				]
@@ -1569,7 +1569,7 @@ You are all muscle, no finesse. You focus on being as brutal as possible for you
 							characteristic: [Characteristic.Might],
 							tier1: '3 + M damage',
 							tier2: '6 + M damage',
-							tier3: '9 + M damage; A < [strong], prone and bleeding (save ends)'
+							tier3: '9 + M damage; A < [сильний], prone and bleeding (save ends)'
 						})
 					)
 				]

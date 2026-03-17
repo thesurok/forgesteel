@@ -74,9 +74,9 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '4 damage; P < [weak], frightened (save ends)',
-												tier2: '6 damage; P < [average], frightened (save ends)',
-												tier3: '10 damage; P < [strong], frightened (save ends)'
+												tier1: '4 damage; P < [слабкий], frightened (save ends)',
+												tier2: '6 damage; P < [середній], frightened (save ends)',
+												tier3: '10 damage; P < [сильний], frightened (save ends)'
 											})
 										)
 									]
@@ -172,9 +172,9 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '10 + M damage; A < [weak], bleeding (save ends)',
-												tier2: '15 + M damage; A < [average], bleeding (save ends)',
-												tier3: '20 + M damage; A < [strong], bleeding (save ends)'
+												tier1: '10 + M damage; A < [слабкий], bleeding (save ends)',
+												tier2: '15 + M damage; A < [середній], bleeding (save ends)',
+												tier3: '20 + M damage; A < [сильний], bleeding (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('While the target is bleeding, they have damage weakness 5.')
@@ -245,9 +245,9 @@ While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightnin
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '13 + I psychic damage; P < [weak], frightened (save ends)',
-												tier2: '20 + I psychic damage; P < [average], frightened (save ends)',
-												tier3: '27 + I psychic damage; P < [strong], frightened (save ends)'
+												tier1: '13 + I psychic damage; P < [слабкий], frightened (save ends)',
+												tier2: '20 + I psychic damage; P < [середній], frightened (save ends)',
+												tier3: '27 + I psychic damage; P < [сильний], frightened (save ends)'
 											})
 										)
 									]

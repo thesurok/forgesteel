@@ -606,7 +606,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M acid damage; A < [average], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
+												FactoryLogic.createAbilitySectionText('2 + M acid damage; A < [середній], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'Until the grab ends, the creature takes acid damage equal to the sphere’s Might score at the end of each of the sphere’s turns.'
 												})
@@ -725,7 +725,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-8-3-1',
 									name: 'Infernal Apparition',
-									description: 'When the hellhound strikes a creature while rampaging, a target who has P < [average] is frightened.'
+									description: 'When the hellhound strikes a creature while rampaging, a target who has P < [середній] is frightened.'
 								})
 							],
 							level6: [
@@ -783,7 +783,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
-2 + M damage; I < [average], dazzled (EoT)
+2 + M damage; I < [середній], dazzled (EoT)
 
 A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.`),
 												FactoryLogic.createAbilitySectionSpend({
@@ -863,9 +863,9 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; M < [average], prone'),
+												FactoryLogic.createAbilitySectionText('2 + M damage; M < [середній], prone'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The panther can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is M < [strong] is prone.'
+													effect: 'The panther can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is M < [сильний] is prone.'
 												})
 											]
 										})
@@ -941,9 +941,9 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('M < [average], restrained (EoT)'),
+												FactoryLogic.createAbilitySectionText('M < [середній], restrained (EoT)'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'M < [strong], restrained (save ends)'
+													effect: 'M < [сильний], restrained (save ends)'
 												})
 											]
 										})
@@ -1031,7 +1031,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											sections: [
 												FactoryLogic.createAbilitySectionText('2 + M poison damage; the sporeling is invisible to the enemy until the end of the sporeling’s next turn or the sporeling deals damage to the enemy.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'An enemy affected by Spore Puff who is M < [strong] is dazed (EoT).'
+													effect: 'An enemy affected by Spore Puff who is M < [сильний] is dazed (EoT).'
 												})
 											]
 										})
@@ -1064,7 +1064,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-12-10-1',
 									name: 'Trailing Mycelia',
-									description: 'While the sporeling is rampaging, your and the sporeling’s limbs sprout rootlike, gripping mycelia. While the sporeling is rampaging, you and the sporeling can’t be force moved or knocked prone, and when you or the sporeling strike a creature who is M < [strong] the creature is grabbed.'
+									description: 'While the sporeling is rampaging, your and the sporeling’s limbs sprout rootlike, gripping mycelia. While the sporeling is rampaging, you and the sporeling can’t be force moved or knocked prone, and when you or the sporeling strike a creature who is M < [сильний] the creature is grabbed.'
 								})
 							]
 						}),
@@ -1107,9 +1107,9 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; M < [average], grabbed'),
+												FactoryLogic.createAbilitySectionText('2 + M damage; M < [середній], grabbed'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'M < [strong], grabbed'
+													effect: 'M < [сильний], grabbed'
 												})
 											]
 										})
@@ -1142,7 +1142,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-13-10-1',
 									name: 'Dire Wolf',
-									description: 'While the wolf is rampaging, you and the wolf are surrounded by an aura of dread. Enemies that start their turn adjacent to you or the wolf who have P < [strong] are frightened (EoT).'
+									description: 'While the wolf is rampaging, you and the wolf are surrounded by an aura of dread. Enemies that start their turn adjacent to you or the wolf who have P < [сильний] are frightened (EoT).'
 								})
 							]
 						})
@@ -1454,7 +1454,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: 'You can spend 1 primordial power as a free maneuver to allow you each to take a main action on your turn, instead of a main action and a maneuver. For that turn, the ferocity cost of heroic abilities is reduced by 1.'
@@ -1570,9 +1570,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '5 + M damage; slide 1; I < [weak], weakened (save ends)',
-						tier2: '8 + M damage; slide 2; I < [average], weakened (save ends)',
-						tier3: '11 + M damage; slide 4; I < [strong], weakened (save ends)'
+						tier1: '5 + M damage; slide 1; I < [слабкий], weakened (save ends)',
+						tier2: '8 + M damage; slide 2; I < [середній], weakened (save ends)',
+						tier3: '11 + M damage; slide 4; I < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You and your companion can shift up to a number of squares equal to the number of squares the target was moved.')
@@ -1614,7 +1614,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 						characteristic: Characteristic.Might,
 						tier1: '4 + M damage; your companion can spend a Recovery',
 						tier2: '7 + M damage; each of you can can spend a Recovery',
-						tier3: '11 + M damage; A < [strong], bleeding (EoT); each of you can spend a Recovery and shift up to 2 squares'
+						tier3: '11 + M damage; A < [сильний], bleeding (EoT); each of you can spend a Recovery and shift up to 2 squares'
 					})
 				)
 			]
@@ -1632,9 +1632,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '3 sonic damage; push 1; P < [weak], taunted (save ends)',
-						tier2: '5 sonic damage; push 2; P < [average], taunted (save ends)',
-						tier3: '7 sonic damage; push 3; P < [strong], taunted (save ends)'
+						tier1: '3 sonic damage; push 1; P < [слабкий], taunted (save ends)',
+						tier2: '5 sonic damage; push 2; P < [середній], taunted (save ends)',
+						tier3: '7 sonic damage; push 3; P < [сильний], taunted (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -1660,7 +1660,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 						characteristic: Characteristic.Might,
 						tier1: '8 + M damage',
 						tier2: '12 + M damage',
-						tier3: '16 + M damage; M < [strong], bleeding (save ends)'
+						tier3: '16 + M damage; M < [сильний], bleeding (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is winded or bleeding after the attack, you gain two surges.')
@@ -1716,9 +1716,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '8 + M damage; M < [weak], grabbed',
-						tier2: '12 + M damage; M < [average], grabbed',
-						tier3: '16 + M damage; M < [strong], grabbed'
+						tier1: '8 + M damage; M < [слабкий], grabbed',
+						tier2: '12 + M damage; M < [середній], grabbed',
+						tier3: '16 + M damage; M < [сильний], grabbed'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If you grab the target while your companion is adjacent to the target, your companion can make a melee free strike against the target.')
@@ -1738,9 +1738,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: 'P < [weak], frightened (save ends)',
-						tier2: '4 psychic damage; P < [average], frightened (save ends)',
-						tier3: '8 psychic damage; P < [strong], frightened (save ends)'
+						tier1: 'P < [слабкий], frightened (save ends)',
+						tier2: '4 psychic damage; P < [середній], frightened (save ends)',
+						tier3: '8 psychic damage; P < [сильний], frightened (save ends)'
 					})
 				)
 			]
@@ -1758,9 +1758,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '13 + M damage; P < [weak], dazed (save ends)',
-						tier2: '19 + M damage; P < [average], dazed (save ends)',
-						tier3: '25 + M damage; P < [strong], dazed (save ends)'
+						tier1: '13 + M damage; P < [слабкий], dazed (save ends)',
+						tier2: '19 + M damage; P < [середній], dazed (save ends)',
+						tier3: '25 + M damage; P < [сильний], dazed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You are bleeding (save ends). Until you are no longer bleeding, your companion has an edge on power rolls.')
@@ -1782,9 +1782,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '7 + I damage; P < [weak], weakened (save ends)',
-						tier2: '10 + I damage; P < [average], weakened (save ends)',
-						tier3: '14 + I damage; P < [strong], weakened (save ends)'
+						tier1: '7 + I damage; P < [слабкий], weakened (save ends)',
+						tier2: '10 + I damage; P < [середній], weakened (save ends)',
+						tier3: '14 + I damage; P < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('When a target weakened by this ability fails their saving throw against this ability while more than 3 squares from you, as a free triggered action you can pull the target up to a number of squares equal to your Intuition score.')
@@ -1827,9 +1827,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '10 + M damage; M < [weak], grabbed and prone',
-						tier2: '15 + M damage; M < [average], grabbed and prone',
-						tier3: '20 + M damage; M < [strong], grabbed and prone'
+						tier1: '10 + M damage; M < [слабкий], grabbed and prone',
+						tier2: '15 + M damage; M < [середній], grabbed and prone',
+						tier3: '20 + M damage; M < [сильний], grabbed and prone'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Each ally adjacent to the target can use a triggered free action to deal damage to the target equal to the ally’s highest characteristic.')
@@ -1890,9 +1890,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '11 + M damage; M < [weak], bleeding (save ends)',
-						tier2: '17 + M damage; M < [average], bleeding (save ends)',
-						tier3: '22 + M damage; M < [strong], bleeding (save ends)'
+						tier1: '11 + M damage; M < [слабкий], bleeding (save ends)',
+						tier2: '17 + M damage; M < [середній], bleeding (save ends)',
+						tier3: '22 + M damage; M < [сильний], bleeding (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your companion’s Might score. If this ability reduces a target to 0 Stamina, each enemy within 2 squares who has P < average is frightened (save ends).')

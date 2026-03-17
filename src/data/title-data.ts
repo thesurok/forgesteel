@@ -501,7 +501,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					target: 'Each enemy in the area hidden to you',
 					cost: 1,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Кожна ціль, у якої П < [average], висміюється вами до кінця її наступного ходу, і ви знаєте місцезнаходження кожної істоти, висміяної таким чином.')
+						FactoryLogic.createAbilitySectionText('Кожна ціль, у якої П < [середній], висміюється вами до кінця її наступного ходу, і ви знаєте місцезнаходження кожної істоти, висміяної таким чином.')
 					]
 				})
 			})
@@ -680,7 +680,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					target: 'Each undead enemy in the area',
 					cost: 3,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Кожна ціль отримує святу шкоду, рівну вашому показнику Розуму, Інтуїції або Присутності (на ваш вибір). Додатково, кожна ціль з П < [strong] залякано (рят. кидок закінчує).')
+						FactoryLogic.createAbilitySectionText('Кожна ціль отримує святу шкоду, рівну вашому показнику Розуму, Інтуїції або Присутності (на ваш вибір). Додатково, кожна ціль з П < [сильний] залякано (рят. кидок закінчує).')
 					]
 				})
 			})

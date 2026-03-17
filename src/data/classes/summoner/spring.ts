@@ -62,7 +62,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'These nixies are especially tiny. Their hair grows longer than their bodies and curls into reeds. The water soakreeds swim in tends to turn thick and cling to surfaces.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5, 'swim'),
@@ -79,7 +79,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-2',
 										name: 'Soaking Bog',
-										description: 'The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < [weak] slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).'
+										description: 'The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < [слабкий] slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-3',
@@ -180,7 +180,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'This pixie flies on a delicate array of vibrant flower petals for wings. The color drains from their wings as they call forth acid rain showers.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5),
@@ -196,7 +196,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Acid,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -205,17 +205,17 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 											id: 'summoner-3-1-5a-2',
 											name: 'Burning / Healing Rain',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(5) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '5 acid damage; M < [weak] weakened (EoT)',
-														tier2: '7 acid damage; M < [average] weakened (EoT)',
-														tier3: '9 acid damage; M < [strong] weakened (save ends)'
+														tier1: '5 acid damage; M < [слабкий] weakened (EoT)',
+														tier2: '7 acid damage; M < [середній] weakened (EoT)',
+														tier3: '9 acid damage; M < [сильний] weakened (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('After the hydrain’s squad uses this ability, you or one ally within distance can spend a Recovery or end a condition.')
@@ -239,7 +239,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'Loftlillies lazily drift through the air in flower cups. They sip on toxic nectar to emit a powerful haze from their skin.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -255,7 +255,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -281,7 +281,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'The orchiguard is a sprite surrounded by a wheel of shields. They are usually crushed by the pressures of their own impenetrable defenses before ever being felled by enemy hands.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -404,7 +404,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into the water surrounding them. Any sailor caught in a whirlpool created by hemloches knows that their ship won’t survive the encounter.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(6, 'swim'),
@@ -422,7 +422,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2a-2',
 										name: 'Whirling Waves',
-										description: 'The area within 1 square of the hemloche is filled with churning water and is considered difficult terrain. At the end of the hemloche’s turn, the hemloche can choose to slide each enemy in the affected area 3 squares. An enemy that takes damage while being force moved is also M < [average] knocked prone.'
+										description: 'The area within 1 square of the hemloche is filled with churning water and is considered difficult terrain. At the end of the hemloche’s turn, the hemloche can choose to slide each enemy in the affected area 3 squares. An enemy that takes damage while being force moved is also M < [середній] knocked prone.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2a-3',
@@ -441,7 +441,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'Foxglows are masked sprites that leave behind an evanescent trail of tiny glowing orbs as they fly. They beat their wings at a frequency that completely blocks out all nearby noise.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(8, 'fly'),
@@ -457,14 +457,14 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Fire,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2b-2',
 										name: 'Flash Strike',
-										description: 'The foxglow’s melee strikes inflict I < [strong] dazed (EoT) if they were hidden when they make the strike.'
+										description: 'The foxglow’s melee strikes inflict I < [сильний] dazed (EoT) if they were hidden when they make the strike.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2b-3',
@@ -488,7 +488,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 								description: 'The collective of blood-eyed pixie warriors that make up a rosenthall are also known as rosies. It’s said that some rosenthall armies contain thousands of pixies and can span half the length of a wode.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(6, 'fly, hover'),
@@ -502,17 +502,17 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 											id: 'summoner-3-2-2c-1',
 											name: 'Stickerbush Symphony',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee(2) ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '3 damage; pull 2; A < [weak] bleeding (EoT)',
-														tier2: '6 damage; pull 3; A < [average] bleeding (EoT)',
-														tier3: '8 damage; pull 4; A < [strong] bleeding (EoT)'
+														tier1: '3 damage; pull 2; A < [слабкий] bleeding (EoT)',
+														tier2: '6 damage; pull 3; A < [середній] bleeding (EoT)',
+														tier3: '8 damage; pull 4; A < [сильний] bleeding (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target can’t shift while bleeding from this ability.')
@@ -574,7 +574,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 								description: 'Corallias are saltwater nixies with coarse, coral-like skin and curly hair with hooked ends. Their salty tears are used to hallow places of worship and ward off demons.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(6, 'swim'),
@@ -590,7 +590,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Lightning,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -621,7 +621,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 								description: 'The belladonix are found among the elite guard of fey monarchs and carry themselves like royalty. Their moth-like wings ooze with vibrant colors and are barbed; the poison within threatening to completely shift the reality of their victims.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(6, 'fly, hover'),
@@ -637,7 +637,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -646,17 +646,17 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 											id: 'summoner-3-5-3b-2',
 											name: 'A Thorn, Woe to the Pricked ',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(15) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(15)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '8 poison damage; M < [weak] restrained (save ends)',
-														tier2: '12 poison damage; M < [average] restrained (save ends)',
-														tier3: '17 poison damage; M < [strong] restrained (save ends)'
+														tier1: '8 poison damage; M < [слабкий] restrained (save ends)',
+														tier2: '12 poison damage; M < [середній] restrained (save ends)',
+														tier3: '17 poison damage; M < [сильний] restrained (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target restrained by this ability is trapped in a poison- fueled haze and considers each creature within 1 square of them to be an enemy until the condition ends.')
@@ -680,7 +680,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 								description: 'These brawny sprites wear heavy beetle armor and have a halo hovering away from their backs where their wings used to be. The faster the halo spins, the more power the olyender generates, enabling them to stand toe to toe with giants.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -692,12 +692,12 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-3-5-3c-1',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3c-2',
 										name: 'Warrior’s Toss',
-										description: 'The olyender’s melee strikes inflict push 4. If the target is force moved into an object, they are M < [average] knocked prone and can’t stand (save ends).'
+										description: 'The olyender’s melee strikes inflict push 4. If the target is force moved into an object, they are M < [середній] knocked prone and can’t stand (save ends).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3c-3',
@@ -753,7 +753,7 @@ Your champion is an Attendant of a celestial. Whenever you call on their assista
 The celestial Attendant wants to swarm the map with pixies while limiting their foes’ ability to do anything about it. A single neurotoxic strike is all it takes to move everyone into position.`,
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Champion),
-								keywords: [ 'Fey' ],
+								keywords: ['Fey'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(7, 'fly, hover'),
@@ -783,8 +783,8 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 											id: 'summoner-3-8-2a-3',
 											name: 'Pixie Swarm',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(10) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(10)],
 											target: 'Two creatures or objects',
 											cost: 'signature',
 											sections: [
@@ -803,7 +803,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-8-2a-4',
 										name: 'Neurotoxic Strike',
-										description: 'A creature that takes damage from the Attendant’s free strike is I < [average] unable to establish line of effect beyond 3 squares (EoT). '
+										description: 'A creature that takes damage from the Attendant’s free strike is I < [середній] unable to establish line of effect beyond 3 squares (EoT). '
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-8-2a-5',
@@ -815,7 +815,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 											id: 'summoner-3-8-2a-6',
 											name: 'Celestial Bell',
 											type: FactoryLogic.type.createTrigger('The Attendant takes damage from an enemy.', { free: true }),
-											distance: [ FactoryLogic.distance.createSelf() ],
+											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Self',
 											sections: [
 												FactoryLogic.createAbilitySectionText('The Attendant rings a bell, and you summon a signature minion into an unoccupied space adjacent to the Attendant.')
@@ -841,7 +841,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 										id: 'summoner-3-8-2a-10-2',
 										name: 'A Shower of Dust ',
 										type: FactoryLogic.type.createChampionAction(),
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 }) ],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 })],
 										target: 'Self and each non-minion ally in the area',
 										cost: 1,
 										sections: [

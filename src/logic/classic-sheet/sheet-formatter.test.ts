@@ -17,10 +17,10 @@ afterEach(() => {
 
 describe.concurrent('Test addSign', () => {
 	test.each([
-		[ 1, '+1' ],
-		[ 2, '+2' ],
-		[ 10, '+10' ],
-		[ 5, '+5' ]
+		[1, '+1'],
+		[2, '+2'],
+		[10, '+10'],
+		[5, '+5']
 	])('addSign(%i) -> %s', (n, expected) => {
 		expect(SheetFormatter.addSign(n)).toBe(expected);
 	});
@@ -30,10 +30,10 @@ describe.concurrent('Test addSign', () => {
 	});
 
 	test.each([
-		[ -1, '-1' ],
-		[ -2, '-2' ],
-		[ -10, '-10' ],
-		[ -5, '-5' ]
+		[-1, '-1'],
+		[-2, '-2'],
+		[-10, '-10'],
+		[-5, '-5']
 	])('addSign(%i) -> %s', (n, expected) => {
 		expect(SheetFormatter.addSign(n)).toBe(expected);
 	});
@@ -41,46 +41,46 @@ describe.concurrent('Test addSign', () => {
 
 describe.concurrent('Test markdown enhancement', () => {
 	test.each([
-		[ 'M < Strong', '<span class="potency">m&lt;s]</span>' ],
-		[ 'A < Average', '<span class="potency">a&lt;v]</span>' ],
-		[ 'R < weak', '<span class="potency">r&lt;w]</span>' ],
-		[ 'I < [strong]', '<span class="potency">i&lt;s]</span>' ],
-		[ 'P < [weak]', '<span class="potency">p&lt;w]</span>' ],
-		[ 'M<Strong', '<span class="potency">m&lt;s]</span>' ]
+		['M < Strong', '<span class="potency">m&lt;s]</span>'],
+		['A < Average', '<span class="potency">a&lt;v]</span>'],
+		['R < weak', '<span class="potency">r&lt;w]</span>'],
+		['I < [сильний]', '<span class="potency">i&lt;s]</span>'],
+		['P < [слабкий]', '<span class="potency">p&lt;w]</span>'],
+		['M<Strong', '<span class="potency">m&lt;s]</span>']
 	])('converts potency text to glyph form', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
 
 	test.each([
-		[ 'M < 5', '<span class="potency">m&lt;5]</span>' ],
-		[ 'A<3', '<span class="potency">a&lt;3]</span>' ]
+		['M < 5', '<span class="potency">m&lt;5]</span>'],
+		['A<3', '<span class="potency">a&lt;3]</span>']
 	])('converts potency values to glyph form', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
 
 	test.each([
-		[ '`M < Strong`', '<span class="potency">m&lt;s]</span>' ],
-		[ '`M < 5`', '<span class="potency">m&lt;5]</span>' ],
-		[ '<code>M < 5</code>', '<span class="potency">m&lt;5]</span>' ]
+		['`M < Strong`', '<span class="potency">m&lt;s]</span>'],
+		['`M < 5`', '<span class="potency">m&lt;5]</span>'],
+		['<code>M < 5</code>', '<span class="potency">m&lt;5]</span>']
 	])('Removes extra/bad markdown stuff', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
 
 	test.each([
-		[ '| ≤ 11 |', '|![11 or less](<img>)|' ],
-		[ '|<=11|', '|![11 or less](<img>)|' ],
-		[ '|11 or less		|', '|![11 or less](<img>)|' ],
-		[ '* 11 or lower:', '* ![11 or less](<img>)' ],
-		[ '* ≤11:', '* ![11 or less](<img>)' ],
-		[ '<=11', '![11 or less](<img>)' ],
-		[ '\\<\\=11', '![11 or less](<img>)' ],
-		[ '* <= 11:', '* ![11 or less](<img>)' ],
-		[ '| 12-16 |', '|![12 to 16](<img>)|' ],
-		[ '* 12 - 16:', '* ![12 to 16](<img>)' ],
-		[ '| 17+ |', '|![17 or greater](<img>)|' ],
-		[ '* ≥ 17:', '* ![17 or greater](<img>)' ],
-		[ '* >=17:', '* ![17 or greater](<img>)' ],
-		[ '* 17+:', '* ![17 or greater](<img>)' ]
+		['| ≤ 11 |', '|![11 or less](<img>)|'],
+		['|<=11|', '|![11 or less](<img>)|'],
+		['|11 or less		|', '|![11 or less](<img>)|'],
+		['* 11 or lower:', '* ![11 or less](<img>)'],
+		['* ≤11:', '* ![11 or less](<img>)'],
+		['<=11', '![11 or less](<img>)'],
+		['\\<\\=11', '![11 or less](<img>)'],
+		['* <= 11:', '* ![11 or less](<img>)'],
+		['| 12-16 |', '|![12 to 16](<img>)|'],
+		['* 12 - 16:', '* ![12 to 16](<img>)'],
+		['| 17+ |', '|![17 or greater](<img>)|'],
+		['* ≥ 17:', '* ![17 or greater](<img>)'],
+		['* >=17:', '* ![17 or greater](<img>)'],
+		['* 17+:', '* ![17 or greater](<img>)']
 	])('Converts power roll text to glyphs', (inStr, expected) => {
 		const markdown = SheetFormatter.enhanceMarkdown(inStr);
 		// switch out the image svg details
@@ -89,9 +89,9 @@ describe.concurrent('Test markdown enhancement', () => {
 	});
 
 	test.each([
-		[ '|---|---|', '|---|---|' ],
-		[ '|---|---|\n|---|---|', '|---|---|\n|---|---|' ],
-		[ '  |   ---	|---  |\n|---|---|', '|---|---|\n|---|---|' ]
+		['|---|---|', '|---|---|'],
+		['|---|---|\n|---|---|', '|---|---|\n|---|---|'],
+		['  |   ---	|---  |\n|---|---|', '|---|---|\n|---|---|']
 	])('properly handles table whitespace', (inStr, expected) => {
 		const markdown = SheetFormatter.enhanceMarkdown(inStr);
 
@@ -204,7 +204,7 @@ Line 3`
 	});
 
 	test('should create an extra reference item for tables with more than 3 columns', () => {
-		const features = [ {
+		const features = [{
 			source: 'test',
 			feature: FactoryLogic.feature.create({
 				id: 'tf1',
@@ -218,7 +218,7 @@ This is some description of the table below.
 | Content 2 | Lorem Ipsum | Test 2 | Column 4 |
 | Content 3 | Lorem Ipsum | Test 3 | Column 4 |`
 			})
-		} ];
+		}];
 
 		const result = SheetFormatter.divideFeatures(features, null, 50, 50, 1);
 		expect(result.displayed.length).toBe(1);
@@ -234,13 +234,13 @@ This is some description of the table below.
 
 describe.concurrent('sortFeatures', () => {
 	test.each([
-		[ FeatureType.Package, FeatureType.Text, true ],
-		[ FeatureType.Package, FeatureType.PackageContent, false ],
-		[ FeatureType.Ability, FeatureType.PackageContent, true ],
-		[ FeatureType.HeroicResource, FeatureType.Ability, true ],
-		[ FeatureType.HeroicResource, FeatureType.Kit, false ],
-		[ FeatureType.Domain, FeatureType.HeroicResource, true ],
-		[ FeatureType.Language, FeatureType.ConditionImmunity, true ]
+		[FeatureType.Package, FeatureType.Text, true],
+		[FeatureType.Package, FeatureType.PackageContent, false],
+		[FeatureType.Ability, FeatureType.PackageContent, true],
+		[FeatureType.HeroicResource, FeatureType.Ability, true],
+		[FeatureType.HeroicResource, FeatureType.Kit, false],
+		[FeatureType.Domain, FeatureType.HeroicResource, true],
+		[FeatureType.Language, FeatureType.ConditionImmunity, true]
 	])('sorts types correctly', (aType, bType, bFirst) => {
 		const fA = {
 			type: aType
@@ -258,8 +258,8 @@ describe.concurrent('sortFeatures', () => {
 	});
 
 	test.each([
-		[ 'Line1 \n Line 2', 'Line 1', false ],
-		[ 'Line 1', 'Line 1 \n Line 2', true ]
+		['Line1 \n Line 2', 'Line 1', false],
+		['Line 1', 'Line 1 \n Line 2', true]
 	])('falls back to sorting by length if types are the same', (aDesc, bDesc, aFirst) => {
 		const fA = {
 			type: FeatureType.Text,
@@ -285,10 +285,10 @@ describe('containsExtractableReferenceContent', () => {
 	});
 
 	test.each([
-		[ false, false, false ],
-		[ true, false, true ],
-		[ false, true, true ],
-		[ true, true, true ]
+		[false, false, false],
+		[true, false, true],
+		[false, true, true],
+		[true, true, true]
 	])('returns true if there is an extractable table or is a special feature', (hasTable: boolean, isSpecial: boolean, expected: boolean) => {
 		const f = {} as Feature;
 
@@ -301,9 +301,9 @@ describe('containsExtractableReferenceContent', () => {
 
 describe('containsLargeTable', () => {
 	test.each([
-		[ 'Some text.' ],
-		[ 'Some text.\nMultiple\nLines' ],
-		[ `| A Table | With Three | Columns |
+		['Some text.'],
+		['Some text.\nMultiple\nLines'],
+		[`| A Table | With Three | Columns |
 | --- | --- | --- |
 | A Table | With Three | Columns |
 | A Table | With Three | Columns |` ]
@@ -316,11 +316,11 @@ describe('containsLargeTable', () => {
 	});
 
 	test.each([
-		[ `| A Table | With | FOUR | Columns |
+		[`| A Table | With | FOUR | Columns |
 | --- | --- | --- | --- |
 | A Table | With | FOUR | Columns |
 | A Table | With | FOUR | Columns |` ],
-		[ `| A Table | With | FOUR | Columns |
+		[`| A Table | With | FOUR | Columns |
 |:---|:---:|===:|===|
 | A Table | With | FOUR | Columns |
 | A Table | With | FOUR | Columns |` ]
@@ -335,9 +335,9 @@ describe('containsLargeTable', () => {
 
 describe('isSpecialHandlingFeature', () => {
 	test.each([
-		[ 'not-special', false ],
-		[ 'beastheart-1-2b', true ],
-		[ 'summoner-1-2', true ]
+		['not-special', false],
+		['beastheart-1-2b', true],
+		['summoner-1-2', true]
 	])(' returns true for the correct feature ids', (id: string, expected: boolean) => {
 		const f = { id: id } as Feature;
 		expect(SheetFormatter.isSpecialHandlingFeature(f)).toBe(expected);
@@ -346,28 +346,28 @@ describe('isSpecialHandlingFeature', () => {
 
 describe('extractTable', () => {
 	test.each([
-		[ 'No table here' ],
-		[ '| Might | Look |\n|Like| A | Table|\n|But isnt|' ]
+		['No table here'],
+		['| Might | Look |\n|Like| A | Table|\n|But isnt|']
 	])('returns null when there is no table', (t: string) => {
 		expect(SheetFormatter.extractTable(t)).toBeNull();
 	});
 
 	test.each([
-		[ `|Simple|Table|
+		[`|Simple|Table|
 |---|---|
 |Some|Content|`, '', `|Simple|Table|
 |---|---|
 |Some|Content|` ],
-		[ `Content Before
+		[`Content Before
 
-		|Simple|Table|\n|---|---|\n|Some|Content|`, 'Content Before', '|Simple|Table|\n|---|---|\n|Some|Content|' ],
-		[ `Content Before
+		|Simple|Table|\n|---|---|\n|Some|Content|`, 'Content Before', '|Simple|Table|\n|---|---|\n|Some|Content|'],
+		[`Content Before
 |Simple|Table|\n|---|---|\n|Some|Content|
 		
-Content After`, 'Content Before\nContent After', '|Simple|Table|\n|---|---|\n|Some|Content|' ],
-		[ `Content Before
+Content After`, 'Content Before\nContent After', '|Simple|Table|\n|---|---|\n|Some|Content|'],
+		[`Content Before
 			** Table Label**
-		|Simple|Table|\n|---|---|\n|Some|Content|`, 'Content Before', '|Simple|Table|\n|---|---|\n|Some|Content|' ]
+		|Simple|Table|\n|---|---|\n|Some|Content|`, 'Content Before', '|Simple|Table|\n|---|---|\n|Some|Content|']
 	])('Correctly extracts tables from features', (initial: string, after: string, table: string) => {
 		const result = SheetFormatter.extractTable(initial);
 		expect(result).not.toBeNull();
@@ -376,11 +376,11 @@ Content After`, 'Content Before\nContent After', '|Simple|Table|\n|---|---|\n|So
 	});
 
 	test.each([
-		[ 'No hint from content\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Simple Table' ],
-		[ 'No hint from content\n| Simple 2  |Table|\n|---|---|\n|Some|Content|', 'Simple 2 Table' ],
-		[ '**Table Label**\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label' ],
-		[ '### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label' ],
-		[ '\t### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label' ]
+		['No hint from content\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Simple Table'],
+		['No hint from content\n| Simple 2  |Table|\n|---|---|\n|Some|Content|', 'Simple 2 Table'],
+		['**Table Label**\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label'],
+		['### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label'],
+		['\t### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label']
 	])('correctly sets the table title', (text: string, expectedTitle: string) => {
 		const result = SheetFormatter.extractTable(text);
 		expect(result).not.toBeNull();
@@ -396,7 +396,7 @@ describe('calculateFeatureReferenceSize', () => {
 	});
 
 	test('Correctly calculates the size for a single column and source', () => {
-		const features = [ { feature: {} as Feature, source: 'Source 1' } ];
+		const features = [{ feature: {} as Feature, source: 'Source 1' }];
 		const hero = FactoryLogic.createHero([]);
 
 		vi.spyOn(SheetFormatter, 'calculateFeatureSize').mockReturnValueOnce(10);
@@ -521,11 +521,11 @@ describe('calculateProjectsOverviewCardSize', () => {
 
 describe('calculateAbilitySize', () => {
 	test.each([
-		[ AbilityData.heal, 11.2 ],
-		[ AbilityData.freeStrike, 7.2 ],
-		[ AbilityData.escapeGrab, 25.4 ],
-		[ AbilityData.clawDirt, 23.1 ],
-		[ AbilityData.advance, 9 ]
+		[AbilityData.heal, 11.2],
+		[AbilityData.freeStrike, 7.2],
+		[AbilityData.escapeGrab, 25.4],
+		[AbilityData.clawDirt, 23.1],
+		[AbilityData.advance, 9]
 	])('calculates size properly for standard abilities', (ability: Ability, expected: number) => {
 		const hero = FactoryLogic.createHero([]);
 		const sheet = ClassicSheetBuilder.buildAbilitySheet(ability, hero);
@@ -544,10 +544,10 @@ describe('calculateFollowerSize()', () => {
 	const humanWarrior = retainer.monsters.find(m => m.id === 'retainer-12') as Monster;
 
 	test.each([
-		[ 1, 37.5 ],
-		[ 4, 48 ],
-		[ 7, 61 ],
-		[ 10, 70 ]
+		[1, 37.5],
+		[4, 48],
+		[7, 61],
+		[10, 70]
 	])('properly calculates the size of a retainer at different levels of advancement', (level, expectedSize) => {
 		const followerSheet = HeroSheetBuilder.buildRetainerSheet(humanWarrior, level);
 		expect(SheetFormatter.calculateFollowerSize(followerSheet, 54)).toBeCloseTo(expectedSize, 0);

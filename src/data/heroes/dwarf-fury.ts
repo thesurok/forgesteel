@@ -540,7 +540,7 @@ export const dwarfFury = {
 					{
 						id: 'fury-6-1',
 						name: 'Marauder of the Primordial Chaos',
-						description: '\nAs your connection to the power of the Primordial Chaos grows ever stronger, you automatically sense any elemental creatures or magic sources of elemental power, such as a lava pool or a lake overlapping with Quintessence, within 1 mile of you.\n\nAdditionally, you can speak with elemental creatures, and when you are in a negotiation with an elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown provided by the Nature’s Knight aspect feature (see 3rd-Level Features). When any elemental first becomes aware of you in combat, if they have P < [average], they are frightened of you (save ends).',
+						description: '\nAs your connection to the power of the Primordial Chaos grows ever stronger, you automatically sense any elemental creatures or magic sources of elemental power, such as a lava pool or a lake overlapping with Quintessence, within 1 mile of you.\n\nAdditionally, you can speak with elemental creatures, and when you are in a negotiation with an elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown provided by the Nature’s Knight aspect feature (see 3rd-Level Features). When any elemental first becomes aware of you in combat, if they have P < [середній], they are frightened of you (save ends).',
 						type: 'Text',
 						data: null
 					},
@@ -715,7 +715,7 @@ export const dwarfFury = {
 					{
 						id: 'fury-10-1',
 						name: 'Chaos Incarnate',
-						description: '\nYour mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your Primordial Storm feature (see Stormwight Kits) increases to three times your Might score.\n\nWhen any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < [strong], they are frightened of you (save ends).\n\nAdditionally, when you use Primordial Strike, you can spend up to 3 ferocity, gaining 1 surge per ferocity spent to use for that strike.',
+						description: '\nYour mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your Primordial Storm feature (see Stormwight Kits) increases to three times your Might score.\n\nWhen any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < [сильний], they are frightened of you (save ends).\n\nAdditionally, when you use Primordial Strike, you can spend up to 3 ferocity, gaining 1 surge per ferocity spent to use for that strike.',
 						type: 'Text',
 						data: null
 					},
@@ -783,7 +783,7 @@ export const dwarfFury = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -902,7 +902,7 @@ export const dwarfFury = {
 							bonus: 0,
 							tier1: '2 + M damage',
 							tier2: '5 + M damage',
-							tier3: '7 + M damage; A < [strong], slowed (save ends)'
+							tier3: '7 + M damage; A < [сильний], slowed (save ends)'
 						}
 					},
 					{
@@ -958,9 +958,9 @@ export const dwarfFury = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '2 + M damage; M < [weak], grabbed',
-							tier2: '5 + M damage; M < [average], grabbed',
-							tier3: '7 + M damage; M < [strong], grabbed'
+							tier1: '2 + M damage; M < [слабкий], grabbed',
+							tier2: '5 + M damage; M < [середній], grabbed',
+							tier3: '7 + M damage; M < [сильний], grabbed'
 						}
 					}
 				],
@@ -1243,9 +1243,9 @@ export const dwarfFury = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + M damage; M < [weak], bleeding (save ends)',
-							tier2: '5 + M damage; M < [average], bleeding (save ends)',
-							tier3: '8 + M damage; M < [strong], bleeding (save ends)'
+							tier1: '3 + M damage; M < [слабкий], bleeding (save ends)',
+							tier2: '5 + M damage; M < [середній], bleeding (save ends)',
+							tier3: '8 + M damage; M < [сильний], bleeding (save ends)'
 						}
 					},
 					{
@@ -1301,9 +1301,9 @@ export const dwarfFury = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '4 + M damage; M < [weak], bleeding and weakened (save ends)',
-							tier2: '6 + M damage; M < [average], bleeding and weakened (save ends)',
-							tier3: '10 + M damage; M < [strong], bleeding and weakened (save ends)'
+							tier1: '4 + M damage; M < [слабкий], bleeding and weakened (save ends)',
+							tier2: '6 + M damage; M < [середній], bleeding and weakened (save ends)',
+							tier3: '10 + M damage; M < [сильний], bleeding and weakened (save ends)'
 						}
 					},
 					{
@@ -1513,7 +1513,7 @@ export const dwarfFury = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < [strong] is frightened until the end of their turn.'
+						text: 'Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < [сильний] is frightened until the end of their turn.'
 					}
 				],
 				preEffect: '',
@@ -1557,7 +1557,7 @@ export const dwarfFury = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < [average] is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.'
+						text: 'Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < [середній] is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.'
 					}
 				],
 				preEffect: '',
@@ -1698,9 +1698,9 @@ export const dwarfFury = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '10 + M damage; M < [weak], slowed (save ends)',
-							tier2: '14 + M damage; M < [average], slowed (save ends)',
-							tier3: '20 + M damage; M < [strong], slowed (save ends)'
+							tier1: '10 + M damage; M < [слабкий], slowed (save ends)',
+							tier2: '14 + M damage; M < [середній], slowed (save ends)',
+							tier3: '20 + M damage; M < [сильний], slowed (save ends)'
 						}
 					},
 					{
@@ -1873,9 +1873,9 @@ export const dwarfFury = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '9 + M damage; M < [weak], slowed (save ends)',
-							tier2: '13 + M damage; M < [average], slowed (save ends)',
-							tier3: '18 + M damage; M < [strong], restrained (save ends)'
+							tier1: '9 + M damage; M < [слабкий], slowed (save ends)',
+							tier2: '13 + M damage; M < [середній], slowed (save ends)',
+							tier3: '18 + M damage; M < [сильний], restrained (save ends)'
 						}
 					},
 					{
@@ -3039,9 +3039,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '3 + M damage; P < [weak], dazed and frightened (save ends)',
-																	tier2: '5 + M damage; P < [average], dazed and frightened (save ends)',
-																	tier3: '8 + M damage; P < [strong], dazed and frightened (save ends)'
+																	tier1: '3 + M damage; P < [слабкий], dazed and frightened (save ends)',
+																	tier2: '5 + M damage; P < [середній], dazed and frightened (save ends)',
+																	tier3: '8 + M damage; P < [сильний], dazed and frightened (save ends)'
 																}
 															}
 														],
@@ -3107,9 +3107,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '2 damage; A < [weak], dazed (save ends)',
-																	tier2: '4 damage; A < [average], dazed (save ends)',
-																	tier3: '6 damage; A < [strong], dazed (save ends)'
+																	tier1: '2 damage; A < [слабкий], dazed (save ends)',
+																	tier2: '4 damage; A < [середній], dazed (save ends)',
+																	tier3: '6 damage; A < [сильний], dazed (save ends)'
 																}
 															}
 														],
@@ -3282,14 +3282,14 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '4 + M damage; P < [weak] frightened (save ends)',
-																	tier2: '6 + M damage; P < [average] frightened (save ends)',
-																	tier3: '10 + M damage; P < [strong] frightened (save ends)'
+																	tier1: '4 + M damage; P < [слабкий] frightened (save ends)',
+																	tier2: '6 + M damage; P < [середній] frightened (save ends)',
+																	tier3: '10 + M damage; P < [сильний] frightened (save ends)'
 																}
 															},
 															{
 																type: 'text',
-																text: 'If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < [average], they are frightened of you (save ends).'
+																text: 'If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < [середній], they are frightened of you (save ends).'
 															}
 														],
 														preEffect: '',
@@ -3733,9 +3733,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '4 + M damage; I < [weak], slowed (save ends)',
-																	tier2: '6 + M damage; I < [average], slowed (save ends)',
-																	tier3: '10 + M damage; I < [strong], slowed (save ends)'
+																	tier1: '4 + M damage; I < [слабкий], slowed (save ends)',
+																	tier2: '6 + M damage; I < [середній], slowed (save ends)',
+																	tier3: '10 + M damage; I < [сильний], slowed (save ends)'
 																}
 															},
 															{
@@ -3801,9 +3801,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '2 damage; push 1; M < [weak], dazed (save ends)',
-																	tier2: '5 damage; push 2; M < [average], dazed (save ends)',
-																	tier3: '7 damage; push 3; M < [strong], dazed (save ends)'
+																	tier1: '2 damage; push 1; M < [слабкий], dazed (save ends)',
+																	tier2: '5 damage; push 2; M < [середній], dazed (save ends)',
+																	tier3: '7 damage; push 3; M < [сильний], dazed (save ends)'
 																}
 															},
 															{
@@ -3912,9 +3912,9 @@ export const dwarfFury = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '8 damage; M < [weak], grabbed',
-																	tier2: '13 damage; M < [average], grabbed',
-																	tier3: '17 damage; M < [strong], grabbed'
+																	tier1: '8 damage; M < [слабкий], grabbed',
+																	tier2: '13 damage; M < [середній], grabbed',
+																	tier3: '17 damage; M < [сильний], grabbed'
 																}
 															},
 															{

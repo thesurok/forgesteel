@@ -1103,7 +1103,7 @@ export const highElfTactician = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -1215,9 +1215,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + M damage; M < [weak], dazed (save ends)',
-							tier2: '5 + M damage; M < [average], dazed (save ends)',
-							tier3: '8 + M damage; M < [strong], dazed (save ends)'
+							tier1: '3 + M damage; M < [слабкий], dazed (save ends)',
+							tier2: '5 + M damage; M < [середній], dazed (save ends)',
+							tier3: '8 + M damage; M < [сильний], dazed (save ends)'
 						}
 					}
 				],
@@ -1456,9 +1456,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '4 + M damage; R < [weak], weakened (save ends)',
-							tier2: '6 + M damage; R < [average], weakened (save ends)',
-							tier3: '10 + M damage; R < [strong], weakened (save ends)'
+							tier1: '4 + M damage; R < [слабкий], weakened (save ends)',
+							tier2: '6 + M damage; R < [середній], weakened (save ends)',
+							tier3: '10 + M damage; R < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -1678,7 +1678,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [average], the target is frightened of the creature who dealt the damage (save ends).'
+						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [середній], the target is frightened of the creature who dealt the damage (save ends).'
 					}
 				],
 				preEffect: '',
@@ -2330,9 +2330,9 @@ export const highElfTactician = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '2 + R damage; R < [weak], frightened (save ends)',
-																	tier2: '3 + R damage; R < [average], frightened (save ends)',
-																	tier3: '4 + R damage; R < [strong], frightened (save ends)'
+																	tier1: '2 + R damage; R < [слабкий], frightened (save ends)',
+																	tier2: '3 + R damage; R < [середній], frightened (save ends)',
+																	tier3: '4 + R damage; R < [сильний], frightened (save ends)'
 																}
 															}
 														],
@@ -2674,9 +2674,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: 'R < [weak], dazed (save ends)',
-																	tier2: 'R < [average], dazed (save ends)',
-																	tier3: 'R < [strong], dazed (save ends)'
+																	tier1: 'R < [слабкий], dazed (save ends)',
+																	tier2: 'R < [середній], dazed (save ends)',
+																	tier3: 'R < [сильний], dazed (save ends)'
 																}
 															}
 														],
@@ -2782,7 +2782,7 @@ export const highElfTactician = {
 												name: 'Spend',
 												value: 1,
 												repeatable: false,
-												effect: 'If the target has R < [average], they are slowed (EoT).'
+												effect: 'If the target has R < [середній], they are slowed (EoT).'
 											}
 										],
 										preEffect: '',
@@ -3487,9 +3487,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: 'R < [weak], the target is frightened of the triggering ally (save ends)',
-																	tier2: ' R < [average], the target is frightened of the triggering ally (save ends)',
-																	tier3: 'R < [strong], the target is frightened of the triggering ally (save ends)'
+																	tier1: 'R < [слабкий], the target is frightened of the triggering ally (save ends)',
+																	tier2: ' R < [середній], the target is frightened of the triggering ally (save ends)',
+																	tier3: 'R < [сильний], the target is frightened of the triggering ally (save ends)'
 																}
 															}
 														],
@@ -3654,9 +3654,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: 'A < [weak], dazed (save ends)',
-																	tier2: 'A < [average], dazed (save ends)',
-																	tier3: 'A < [strong], dazed (save ends)'
+																	tier1: 'A < [слабкий], dazed (save ends)',
+																	tier2: 'A < [середній], dazed (save ends)',
+																	tier3: 'A < [сильний], dazed (save ends)'
 																}
 															}
 														],
@@ -3727,7 +3727,7 @@ export const highElfTactician = {
 															},
 															{
 																type: 'text',
-																text: 'If the target is hit with two or more strikes as part of this ability and they have R < [strong] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.'
+																text: 'If the target is hit with two or more strikes as part of this ability and they have R < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.'
 															}
 														],
 														preEffect: '',

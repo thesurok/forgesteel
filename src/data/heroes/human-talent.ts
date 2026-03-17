@@ -1620,7 +1620,7 @@ export const humanTalent = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: 'You can spend vision to use one additional psionic ability on your turn, provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.',
@@ -1672,9 +1672,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '2 + P corruption damage; P < [weak], slowed (save ends)',
-							tier2: '3 + P corruption damage; P < [average], slowed (save ends)',
-							tier3: '5 + P corruption damage; P < [strong], slowed (save ends)'
+							tier1: '2 + P corruption damage; P < [слабкий], slowed (save ends)',
+							tier2: '3 + P corruption damage; P < [середній], slowed (save ends)',
+							tier3: '5 + P corruption damage; P < [сильний], slowed (save ends)'
 						}
 					},
 					{
@@ -1738,9 +1738,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R cold damage; M < [weak], slowed (EoT)',
-							tier2: '4 + R cold damage; M < [average], slowed (EoT)',
-							tier3: '6 + R cold damage; M < [strong], slowed (EoT)'
+							tier1: '2 + R cold damage; M < [слабкий], slowed (EoT)',
+							tier2: '4 + R cold damage; M < [середній], slowed (EoT)',
+							tier3: '6 + R cold damage; M < [сильний], slowed (EoT)'
 						}
 					},
 					{
@@ -2055,9 +2055,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R damage; M < [weak], prone',
-							tier2: '4 + R damage; M < [average], prone',
-							tier3: '6 + R damage; M < [strong], prone'
+							tier1: '2 + R damage; M < [слабкий], prone',
+							tier2: '4 + R damage; M < [середній], prone',
+							tier3: '6 + R damage; M < [сильний], prone'
 						}
 					},
 					{
@@ -2191,9 +2191,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + P psychic damage; I < [weak], frightened (save ends)',
-							tier2: '6 + P psychic damage; I < [average], frightened (save ends)',
-							tier3: '9 + P psychic damage; I < [strong], frightened (save ends)'
+							tier1: '3 + P psychic damage; I < [слабкий], frightened (save ends)',
+							tier2: '6 + P psychic damage; I < [середній], frightened (save ends)',
+							tier3: '9 + P psychic damage; I < [сильний], frightened (save ends)'
 						}
 					}
 				],
@@ -2246,9 +2246,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + R damage; M < [weak], slowed (save ends)',
-							tier2: '5 + R damage; M < [average], slowed (save ends)',
-							tier3: '8 + R damage; M < [strong], restrained (save ends)'
+							tier1: '3 + R damage; M < [слабкий], slowed (save ends)',
+							tier2: '5 + R damage; M < [середній], slowed (save ends)',
+							tier3: '8 + R damage; M < [сильний], restrained (save ends)'
 						}
 					},
 					{
@@ -2355,9 +2355,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + R damage; R < [weak], the target has weakness 5 (save ends)',
-							tier2: '6 + R damage; R < [average], the target has weakness 5 (save ends)',
-							tier3: '9 + R damage; R < [strong], the target has weakness equal to 5 + your Reason score (save ends)'
+							tier1: '3 + R damage; R < [слабкий], the target has weakness 5 (save ends)',
+							tier2: '6 + R damage; R < [середній], the target has weakness 5 (save ends)',
+							tier3: '9 + R damage; R < [сильний], the target has weakness equal to 5 + your Reason score (save ends)'
 						}
 					}
 				],
@@ -2622,9 +2622,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + P corruption damage; P < [weak], weakened (save ends)',
-							tier2: '5 + P corruption damage; the target is flung through time, and if P < [average] they are weakened (save ends)',
-							tier3: '8 + P corruption damage; the target is flung through time, and if P < [strong] they are weakened (save ends)'
+							tier1: '3 + P corruption damage; P < [слабкий], weakened (save ends)',
+							tier2: '5 + P corruption damage; the target is flung through time, and if P < [середній] they are weakened (save ends)',
+							tier3: '8 + P corruption damage; the target is flung through time, and if P < [сильний] they are weakened (save ends)'
 						}
 					},
 					{
@@ -2807,9 +2807,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '6 + P damage; P < [weak], dazed (save ends)',
-							tier2: '10 + P damage; P < [average], dazed (save ends)',
-							tier3: '14 + P damage; P < [strong], dazed (save ends)'
+							tier1: '6 + P damage; P < [слабкий], dazed (save ends)',
+							tier2: '10 + P damage; P < [середній], dazed (save ends)',
+							tier3: '14 + P damage; P < [сильний], dazed (save ends)'
 						}
 					},
 					{
@@ -2992,9 +2992,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '10 + R psychic damage; R < [weak], slowed (save ends)',
-							tier2: '14 + R psychic damage; R < [average], slowed (save ends)',
-							tier3: '20 + R psychic damage; R < [strong], slowed (save ends)'
+							tier1: '10 + R psychic damage; R < [слабкий], slowed (save ends)',
+							tier2: '14 + R psychic damage; R < [середній], slowed (save ends)',
+							tier3: '20 + R psychic damage; R < [сильний], slowed (save ends)'
 						}
 					},
 					{
@@ -3058,9 +3058,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '8 damage; A < [weak], the target is stitched to the other target (save ends)',
-							tier2: '13 damage; A < [average], the target is stitched to the other target (save ends)',
-							tier3: '17 damage; A < [strong], the target is stitched to the other target (save ends)'
+							tier1: '8 damage; A < [слабкий], the target is stitched to the other target (save ends)',
+							tier2: '13 damage; A < [середній], the target is stitched to the other target (save ends)',
+							tier3: '17 damage; A < [сильний], the target is stitched to the other target (save ends)'
 						}
 					},
 					{
@@ -3124,9 +3124,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '10 + P damage; P < [weak], weakened (save ends)',
-							tier2: '14 + P damage; P < [average], weakened (save ends)',
-							tier3: '20 + P damage; P < [strong], weakened and slowed (save ends)'
+							tier1: '10 + P damage; P < [слабкий], weakened (save ends)',
+							tier2: '14 + P damage; P < [середній], weakened (save ends)',
+							tier3: '20 + P damage; P < [сильний], weakened and slowed (save ends)'
 						}
 					},
 					{
@@ -3190,9 +3190,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '12 + R damage; R < [weak], the target takes a bane on their next power roll',
-							tier2: '17 + R damage; R < [average], the target takes a bane on power rolls (save ends)',
-							tier3: '23 + R damage; R < [strong], the target has a double bane on power rolls (save ends)'
+							tier1: '12 + R damage; R < [слабкий], the target takes a bane on their next power roll',
+							tier2: '17 + R damage; R < [середній], the target takes a bane on power rolls (save ends)',
+							tier3: '23 + R damage; R < [сильний], the target has a double bane on power rolls (save ends)'
 						}
 					},
 					{
@@ -3586,9 +3586,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'The target’s speed is halved (save ends), or if P < [weak], the target is slowed (save ends).',
-																	tier2: 'The target is slowed (save ends), or if P < [average], the target’s speed is 0 (save ends).',
-																	tier3: 'The target is slowed (save ends), or if P < [strong], the target’s speed is 0 (save ends).'
+																	tier1: 'The target’s speed is halved (save ends), or if P < [слабкий], the target is slowed (save ends).',
+																	tier2: 'The target is slowed (save ends), or if P < [середній], the target’s speed is 0 (save ends).',
+																	tier3: 'The target is slowed (save ends), or if P < [сильний], the target’s speed is 0 (save ends).'
 																}
 															},
 															{
@@ -3787,9 +3787,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'P < [weak], the target is slowed until the effect ends',
-																	tier2: 'P < [average], the target’s speed is 0 until the effect ends',
-																	tier3: 'P < [strong], the target is restrained until the effect ends'
+																	tier1: 'P < [слабкий], the target is slowed until the effect ends',
+																	tier2: 'P < [середній], the target’s speed is 0 until the effect ends',
+																	tier3: 'P < [сильний], the target is restrained until the effect ends'
 																}
 															},
 															{
@@ -4363,9 +4363,9 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '6 + R damage; M < [weak], prone',
-																	tier2: '10 + R damage; M < [average], prone',
-																	tier3: '14 + R damage; M < [strong], prone and can’t stand (save ends)'
+																	tier1: '6 + R damage; M < [слабкий], prone',
+																	tier2: '10 + R damage; M < [середній], prone',
+																	tier3: '14 + R damage; M < [сильний], prone and can’t stand (save ends)'
 																}
 															},
 															{
@@ -4557,9 +4557,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'Slide 4 + R; M < [weak], the forced movement is vertic',
-																	tier2: 'Slide 8 + R; M < [average], the forced movement is vertical',
-																	tier3: 'Slide 12 + R; prone; M < [strong], the forced movement is vertical'
+																	tier1: 'Slide 4 + R; M < [слабкий], the forced movement is vertic',
+																	tier2: 'Slide 8 + R; M < [середній], the forced movement is vertical',
+																	tier3: 'Slide 12 + R; prone; M < [сильний], the forced movement is vertical'
 																}
 															},
 															{
@@ -5030,9 +5030,9 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '6 + R psychic damage; I < [weak], slowed (save ends)',
-																	tier2: '10 + R psychic damage; I < [average], weakened (save ends)',
-																	tier3: '14 + R psychic damage; I < [strong], dazed (save ends)'
+																	tier1: '6 + R psychic damage; I < [слабкий], slowed (save ends)',
+																	tier2: '10 + R psychic damage; I < [середній], weakened (save ends)',
+																	tier3: '14 + R psychic damage; I < [сильний], dazed (save ends)'
 																}
 															},
 															{
@@ -5520,9 +5520,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'R < [weak], frightened (save ends)',
-																	tier2: 'R < [average], frightened (save ends)',
-																	tier3: 'R < [strong], frightened (save ends)'
+																	tier1: 'R < [слабкий], frightened (save ends)',
+																	tier2: 'R < [середній], frightened (save ends)',
+																	tier3: 'R < [сильний], frightened (save ends)'
 																}
 															},
 															{

@@ -34,7 +34,7 @@ export const warBeast: Kit = {
 					FactoryLogic.createAbilitySectionText('2 + M damage; M < medium, prone'),
 					FactoryLogic.createAbilitySectionText('You can move up to three squares after the strike. During this move, a prone enemy’s space doesn’t count as difficult terrain, and the first time you enter each prone enemy’s space you deal damage equal to your Might score.'),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'If the target is M < [strong], they are prone.'
+						effect: 'If the target is M < [сильний], they are prone.'
 					})
 				]
 			})

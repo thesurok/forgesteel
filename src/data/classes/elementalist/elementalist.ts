@@ -329,7 +329,7 @@ export const elementalist: HeroClass = {
 									id: 'elementalist-1-8c',
 									name: 'Оберіг Природної Лагоди',
 									description: 'Ви накопичуєте зелену енергію в тілі, що дозволяє створювати потужні лози, коли ви опиняєтесь у небезпеці.',
-									type: FactoryLogic.type.createTrigger('A creature within a number of squares equal to your Reason score deals damage to you,', { free: true }),
+									type: FactoryLogic.type.createTrigger('Істота в межах числа клітинок, рівного вашому показникові Розуму, завдає вам шкоди,', { free: true }),
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									sections: [
@@ -345,7 +345,7 @@ export const elementalist: HeroClass = {
 									id: 'elementalist-1-8d',
 									name: 'Оберіг Несподіваної Реактивності',
 									description: 'Ви використовуєте вогняну магію, щоб створити оберіг вибухової енергії.',
-									type: FactoryLogic.type.createTrigger('An adjacent creature deals damage to you.', { free: true }),
+									type: FactoryLogic.type.createTrigger('Сусідня істота завдає вам шкоди.', { free: true }),
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									sections: [
@@ -455,7 +455,7 @@ export const elementalist: HeroClass = {
 					id: 'elementalist-4-2',
 					name: 'Джерело Есенції',
 					tag: 'take-damage 2',
-					trigger: 'The first time in a round that you or a creature within 10 of you takes damage that isn’t untyped or holy',
+					trigger: 'Першого разу в раунді, коли ви або істота в межах 10 від вас отримує шкоду, яка не є безтиповою або священною',
 					value: '2',
 					replacesTags: ['take-damage']
 				}),
@@ -590,7 +590,7 @@ export const elementalist: HeroClass = {
 						{
 							tag: '',
 							trigger: 'Після завершення перепочинку',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -778,9 +778,9 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + Р шкоди скверни; Р < [weak], сповільнений (рят. кидок)',
-						tier2: '4 + Р шкоди скверни; Р < [average], сповільнений (рят. кидок)',
-						tier3: '6 + Р шкоди скверни; Р < [strong], сповільнений (рят. кидок)'
+						tier1: '2 + Р шкоди скверни; Р < [слабкий], сповільнений (рят. кидок)',
+						tier2: '4 + Р шкоди скверни; Р < [середній], сповільнений (рят. кидок)',
+						tier3: '6 + Р шкоди скверни; Р < [сильний], сповільнений (рят. кидок)'
 					})
 				)
 			]
@@ -907,7 +907,7 @@ export const elementalist: HeroClass = {
 					characteristic: [Characteristic.Reason],
 					tier1: '3 шкоди',
 					tier2: '5 шкоди',
-					tier3: '8 шкоди; С < [strong], повалений'
+					tier3: '8 шкоди; С < [сильний], повалений'
 				})),
 				FactoryLogic.createAbilitySectionText('Ви повинні торкатися ґрунту, щоб використати цю здібність. Додатково ви можете обрати клітинку ґрунту в зоні, яка порожня або зайнята вами чи союзником. У цій клітинці піднімається стовп землі висотою до вашого показника Розуму в клітинках. Стовп не може врізатися в інших істот або об’єкти і не може змусити піднятих ним істот стикатися з іншими істотами чи об’єктами.')
 			]
@@ -973,7 +973,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу ціль може рухатися крізь тверду матерію, ігнорує важкопрохідну місцевість, а її рух не провокує випадкові атаки. Якщо ціль завершує свій хід всередині твердої матерії, її виштовхують у клітинку, через яку вона увійшла, і цей ефект завершиться.'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The effect lasts until the start of your next turn.'
+					effect: 'Ефект триває до початку вашого наступного ходу.'
 				})
 			]
 		}),
@@ -1010,12 +1010,12 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText(`
 До початку вашого наступного ходу зона набуває таких ефектів:
 
-* Один раз як безкоштовний маневр на початку вашого ходу ви даєте собі та кожному союзнику в зоні можливість витратити будь - яку кількість відновлень(Recoveries).
+* Один раз як безкоштовний маневр на початку вашого ходу ви даєте собі та кожному союзнику в зоні можливість витратити будь-яку кількість відновлень (відновлень).
 * Зона є важкопрохідною для ворогів.
 * Кожний ворог, який вперше входить у зону в бойовому раунді або починає там свій хід, отримує пошкодження, рівне вашому показникові Розуму.`),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your line of effect.'
+					effect: 'Зона зберігається до початку вашого наступного ходу. Як маневр, ви можете перемістити зону до 5 клітинок. Ця здібність припиняється, якщо зона перестає бути в межах вашої лінії ефекту.'
 				})
 			]
 		}),
@@ -1076,9 +1076,9 @@ export const elementalist: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason],
-					tier1: '5 + Р вогняної шкоди; Л < [weak], скутаний (рят. кидок)',
-					tier2: '9 + Р вогняної шкоди; Л < [average], скутаний (рят. кидок)',
-					tier3: '12 + Р вогняної шкоди; Л < [strong], скутаний (рят. кидок)'
+					tier1: '5 + Р вогняної шкоди; Л < [слабкий], скутаний (рят. кидок)',
+					tier2: '9 + Р вогняної шкоди; Л < [середній], скутаний (рят. кидок)',
+					tier3: '12 + Р вогняної шкоди; Л < [сильний], скутаний (рят. кидок)'
 				}))
 			]
 		}),
@@ -1098,8 +1098,8 @@ export const elementalist: HeroClass = {
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
 						tier1: 'Одна істота',
-						tier2: 'Two creatures',
-						tier3: 'Three creatures'
+						tier2: 'Дві істоти',
+						tier3: 'Три істоти'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Кожна ціль починає зникати з існування (припиняється спас-кидком). На їхньому першому ході, поки вони зникають, ціль отримує бан до кидків сили. Наприкінці першого ходу бан стає подвійним. Наприкінці другого ходу ціль зникає з існування на 1 годину, після чого з’являється у своєму початковому місці або в найближчій незайнятій клітинці.'),
@@ -1145,7 +1145,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу кожний союзник у зоні має кожний свій показник характеристики вважатися на 1 вищим при протидії потужним ефектам і отримує +1 до спас-кидків.'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'You make the power roll again to target each enemy in the area without spending essence, and the effect lasts until the start of your next turn.'
+					effect: 'Ви повторно робите кидок сили для націлювання кожного ворога в зоні без витрат есенції; ефект триває до початку вашого наступного ходу.'
 				})
 			]
 		}),
@@ -1163,7 +1163,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText('Стіна триває до початку вашого наступного ходу та може бути розміщена в зайнятих клітинках. Істоти можуть входити та проходити через стіну. Кожний ворог, який вперше входить у зону в бойовому раунді або починає там свій хід, отримує вогняне пошкодження, рівне вашому показникові Розуму, за кожну клітинку зони, в якій він починає свій хід або яку входить.'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The wall lasts until the start of your next turn, and you can add a number of squares to the wall equal to your Reason score.'
+					effect: 'Стіна триває до початку вашого наступного ходу, і ви можете додати до стіни кількість клітинок, рівну вашому показникові Розуму.'
 				})
 			]
 		}),
@@ -1207,7 +1207,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText('Зона триває до початку вашого наступного ходу. Вона є важкопрохідною для ворогів, і ви та ваші союзники маєте прикриття, перебуваючи в зоні.'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The area remains until the start of your next turn, and you can move it up to 5 squares (no action required). As a maneuver, you can make the power roll again without spending essence.'
+					effect: 'Зона зберігається до початку вашого наступного ходу, і ви можете перемістити її до 5 клітинок (не потребує дії). Як маневр, ви можете зробити кидок сили знову без витрати есенції.'
 				})
 			]
 		}),
@@ -1230,7 +1230,7 @@ export const elementalist: HeroClass = {
 				})),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The target’s limited line of effect lasts until the start of your next turn.'
+					effect: 'Обмежена лінія ефекту цілі триває до початку вашого наступного ходу.'
 				})
 			]
 		}),
@@ -1247,14 +1247,14 @@ export const elementalist: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason],
-					tier1: '2 шкоди скверни; Л < [weak], скутаний (рят. кидок)',
-					tier2: '3 шкоди скверни; Л < [average], скутаний (рят. кидок)',
-					tier3: '5 шкоди скверни; Л < [strong], скутаний (рят. кидок)'
+					tier1: '2 шкоди скверни; Л < [слабкий], скутаний (рят. кидок)',
+					tier2: '3 шкоди скверни; Л < [середній], скутаний (рят. кидок)',
+					tier3: '5 шкоди скверни; Л < [сильний], скутаний (рят. кидок)'
 				})),
 				FactoryLogic.createAbilitySectionText('Зона є важкопрохідною до початку вашого наступного ходу. Кожний ворог, який завершує свій хід у зоні, стає скутим (припиняється спас-кидком).'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The area remains until the start of your next turn.'
+					effect: 'Зона зберігається до початку вашого наступного ходу.'
 				})
 			]
 		}),
@@ -1272,7 +1272,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionText('Ціль отримує +3 до швидкості, може літати, а її здібності ігнорують прикриття. Додатково, щоразу коли ціль отримує свій Героїчний ресурс, вона отримує ще 1 Героїчний ресурс. Цей ефект триває до початку вашого наступного ходу.'),
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
-					effect: 'The effect lasts until the start of your next turn.'
+					effect: 'Ефект триває до початку вашого наступного ходу.'
 				})
 			]
 		}),
@@ -1297,7 +1297,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
 					value: 2,
-					effect: 'The effect lasts until the start of your next turn. Additionally, at the start of your turn, the target can spend 2 Recoveries.'
+					effect: 'Ефект триває до початку вашого наступного ходу. Додатково, на початку вашого ходу ціль може витратити 2 відновлення.'
 				})
 			]
 		}),
@@ -1336,7 +1336,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
 					value: 2,
-					effect: 'The area remains until the start of your next turn. Additionally, at the start of your turn, each ally in the area can spend a Recovery.'
+					effect: 'Зона зберігається до початку вашого наступного ходу. Додатково, на початку вашого ходу кожний союзник у зоні може витратити одне відновлення.'
 				})
 			]
 		}),
@@ -1386,7 +1386,7 @@ export const elementalist: HeroClass = {
 			cost: 11,
 			minLevel: 8,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Ви створюєте вихор розміру 1L, що триває до кінця сутички. На початку кожного бойового раунду, доки вихор порожній, вихор вертикально притягує на 3 клітинки кожного ворога в межах 5 клітинок від нього. Кожний ворог, який входить у вихор або починає там свій хід, повалений (prone). Наприкінці раунду, якщо знесилений ворог, який не є лідером або соло-сутністю, знаходиться у вихорі, він миттєво знищується.')
+				FactoryLogic.createAbilitySectionText('Ви створюєте вихор розміру 1L, що триває до кінця сутички. На початку кожного бойового раунду, доки вихор порожній, вихор вертикально притягує на 3 клітинки кожного ворога в межах 5 клітинок від нього. Кожний ворог, який входить у вихор або починає там свій хід, повалений. Наприкінці раунду, якщо знесилений ворог, який не є лідером або соло-сутністю, знаходиться у вихорі, він миттєво знищується.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1402,9 +1402,9 @@ export const elementalist: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason],
-					tier1: 'M < [weak]; prone',
-					tier2: 'M < [average]; prone',
-					tier3: 'M < [strong]; prone'
+					tier1: 'С < [слабкий]; повалений',
+					tier2: 'С < [середній]; повалений',
+					tier3: 'С < [сильний]; повалений'
 				})),
 				FactoryLogic.createAbilitySectionText('Ви створюєте тріщину в землі поруч із вами розміром 10 × 2 і глибиною 6 клітинок. Кожна істота в зоні, яка лежить і має розмір 2 або менший, падає в неї. Інші істоти можуть входити в тріщину або зсовуватися до найближчої незайнятої клітинки поза нею.'),
 			]
@@ -1429,7 +1429,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
 					value: 2,
-					effect: 'At the start of your turn, you can use a maneuver to use this ability again without spending essence.'
+					effect: 'На початку вашого ходу ви можете використати маневр, щоб застосувати цю здатність знову без витрати есенції.'
 				})
 			]
 		}),
@@ -1448,7 +1448,7 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionSpend({
 					name: 'Утримання',
 					value: 2,
-					effect: 'At the start of your turn, you can use a maneuver to use this ability again without spending essence.'
+					effect: 'На початку вашого ходу ви можете використати маневр, щоб застосувати цю здатність знову без витрати есенції.'
 				})
 			]
 		}),
@@ -1479,9 +1479,9 @@ export const elementalist: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason],
-					tier1: '13 + Р вогняної шкоди; І < [weak], приголомшений (рят. кидок)',
-					tier2: '18 + Р вогняної шкоди; І < [average], приголомшений (рят. кидок)',
-					tier3: '25 + Р вогняної шкоди; І < [strong], приголомшений (рят. кидок)'
+					tier1: '13 + Р вогняної шкоди; І < [слабкий], приголомшений (рят. кидок)',
+					tier2: '18 + Р вогняної шкоди; І < [середній], приголомшений (рят. кидок)',
+					tier3: '25 + Р вогняної шкоди; І < [сильний], приголомшений (рят. кидок)'
 				})),
 				FactoryLogic.createAbilitySectionText('Це пошкодження ігнорує імунітет.')
 			]

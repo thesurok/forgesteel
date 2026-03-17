@@ -805,9 +805,9 @@ You are like a barnacle: You have a tough exterior and are damn near impossible 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; M < [weak], grabbed',
-							tier2: '5 + M or A damage; M < [average], grabbed',
-							tier3: '7 + M or A damage; M < [strong], grabbed'
+							tier1: '2 + M or A damage; M < [слабкий], grabbed',
+							tier2: '5 + M or A damage; M < [середній], grabbed',
+							tier3: '7 + M or A damage; M < [сильний], grabbed'
 						})
 					)
 				]

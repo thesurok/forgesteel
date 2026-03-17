@@ -739,7 +739,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-steeltongue-1',
 						name: '',
-						description: 'Any damage-dealing weapon ability using the weapon against a target who has A < [average] also leaves that target bleeding (save ends).'
+						description: 'Any damage-dealing weapon ability using the weapon against a target who has A < [середній] also leaves that target bleeding (save ends).'
 					}),
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-steeltongue-1a',

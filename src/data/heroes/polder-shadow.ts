@@ -1382,7 +1382,7 @@ export const polderShadow = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -1435,7 +1435,7 @@ export const polderShadow = {
 							bonus: 0,
 							tier1: '3 + A damage',
 							tier2: '5 + A damage',
-							tier3: '8 + A damage; I < [strong], prone'
+							tier3: '8 + A damage; I < [сильний], prone'
 						}
 					},
 					{
@@ -1750,9 +1750,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [weak], bleeding (save ends)',
-							tier2: '6 + A damage; A < [average], bleeding (save ends)',
-							tier3: '10 + A damage; A < [strong], bleeding (save ends)'
+							tier1: '4 + A damage; A < [слабкий], bleeding (save ends)',
+							tier2: '6 + A damage; A < [середній], bleeding (save ends)',
+							tier3: '10 + A damage; A < [сильний], bleeding (save ends)'
 						}
 					}
 				],
@@ -2045,9 +2045,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; R < [weak], the target has damage weakness 5 (save ends)',
-							tier2: '9 + A damage; R < [average], the target has damage weakness 5 (save ends)',
-							tier3: '13 + A damage; R < [strong], the target has damage weakness 5 (save ends)'
+							tier1: '6 + A damage; R < [слабкий], the target has damage weakness 5 (save ends)',
+							tier2: '9 + A damage; R < [середній], the target has damage weakness 5 (save ends)',
+							tier3: '13 + A damage; R < [сильний], the target has damage weakness 5 (save ends)'
 						}
 					}
 				],
@@ -2254,9 +2254,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '8 + A damage; A < [weak], restrained (save ends)',
-							tier2: '12 + A damage; A < [average], restrained (save ends)',
-							tier3: '16 + A damage; A < [strong], restrained (save ends)'
+							tier1: '8 + A damage; A < [слабкий], restrained (save ends)',
+							tier2: '12 + A damage; A < [середній], restrained (save ends)',
+							tier3: '16 + A damage; A < [сильний], restrained (save ends)'
 						}
 					}
 				],
@@ -2317,9 +2317,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '7 + A damage; M < [weak], slowed (save ends)',
-							tier2: '11 + A damage; M < [average], prone and can’t stand (save ends)',
-							tier3: '16 + A damage; M < [strong], prone and can’t stand (save ends)'
+							tier1: '7 + A damage; M < [слабкий], slowed (save ends)',
+							tier2: '11 + A damage; M < [середній], prone and can’t stand (save ends)',
+							tier3: '16 + A damage; M < [сильний], prone and can’t stand (save ends)'
 						}
 					}
 				],
@@ -2542,9 +2542,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; P < [weak], dazed (save ends)',
-							tier2: '15 + A damage; P < [average], dazed (save ends)',
-							tier3: '21 + A damage; P < [strong], dazed (save ends)'
+							tier1: '10 + A damage; P < [слабкий], dazed (save ends)',
+							tier2: '15 + A damage; P < [середній], dazed (save ends)',
+							tier3: '21 + A damage; P < [сильний], dazed (save ends)'
 						}
 					},
 					{
@@ -2657,9 +2657,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '11 corruption damage; A < [weak] , restrained (save ends)',
-							tier2: '16 corruption damage; A < [average] , restrained (save ends)',
-							tier3: '21 corruption damage; A < [strong] , restrained (save ends)'
+							tier1: '11 corruption damage; A < [слабкий] , restrained (save ends)',
+							tier2: '16 corruption damage; A < [середній] , restrained (save ends)',
+							tier3: '21 corruption damage; A < [сильний] , restrained (save ends)'
 						}
 					}
 				],
@@ -2755,9 +2755,9 @@ export const polderShadow = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '12 damage; M < [weak] , slowed (save ends)',
-							tier2: '18 damage; M < [average] , slowed (save ends)',
-							tier3: '24 damage; M < [strong] , slowed (save ends)'
+							tier1: '12 damage; M < [слабкий] , slowed (save ends)',
+							tier2: '18 damage; M < [середній] , slowed (save ends)',
+							tier3: '24 damage; M < [сильний] , slowed (save ends)'
 						}
 					}
 				],
@@ -3691,7 +3691,7 @@ export const polderShadow = {
 															},
 															{
 																type: 'text',
-																text: 'The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < [average] is weakened (save ends).'
+																text: 'The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < [середній] is weakened (save ends).'
 															}
 														],
 														preEffect: '',
@@ -4543,9 +4543,9 @@ export const polderShadow = {
 																		'Agility'
 																	],
 																	bonus: 0,
-																	tier1: '2 damage; if the target has R < [weak], before the damage is resolved, they make a free strike.',
-																	tier2: '5 damage; if the target has R < [average], before the damage is resolved, they use a main action ability of your choice.',
-																	tier3: '7 damage; if the target has R < [strong], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
+																	tier1: '2 damage; if the target has R < [слабкий], before the damage is resolved, they make a free strike.',
+																	tier2: '5 damage; if the target has R < [середній], before the damage is resolved, they use a main action ability of your choice.',
+																	tier3: '7 damage; if the target has R < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
 																}
 															},
 															{

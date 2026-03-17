@@ -553,7 +553,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					details: 'You can spend vision to use one additional psionic ability on your turn, provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.'
@@ -575,9 +575,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '2 + P corruption damage; P < [weak], slowed (save ends)',
-						tier2: '3 + P corruption damage; P < [average], slowed (save ends)',
-						tier3: '5 + P corruption damage; P < [strong], slowed (save ends)'
+						tier1: '2 + P corruption damage; P < [слабкий], slowed (save ends)',
+						tier2: '3 + P corruption damage; P < [середній], slowed (save ends)',
+						tier3: '5 + P corruption damage; P < [сильний], slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target takes 1 extra corruption damage for each additional time they are targeted by this ability during the encounter.'),
@@ -600,9 +600,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + R cold damage; M < [weak], slowed (EoT)',
-						tier2: '4 + R cold damage; M < [average], slowed (EoT)',
-						tier3: '6 + R cold damage; M < [strong], slowed (EoT)'
+						tier1: '2 + R cold damage; M < [слабкий], slowed (EoT)',
+						tier2: '4 + R cold damage; M < [середній], slowed (EoT)',
+						tier3: '6 + R cold damage; M < [сильний], slowed (EoT)'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
@@ -722,9 +722,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + R damage; M < [weak], prone',
-						tier2: '4 + R damage; M < [average], prone',
-						tier3: '6 + R damage; M < [strong], prone'
+						tier1: '2 + R damage; M < [слабкий], prone',
+						tier2: '4 + R damage; M < [середній], prone',
+						tier3: '6 + R damage; M < [сильний], prone'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('When targeting an object with a solid reflective surface or a creature carrying or wearing such an object (such as a mirror, an unpainted metal shield, or shiny metal plate armor), you can target one additional creature or object within 3 squares of the first target.'),
@@ -773,9 +773,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + P psychic damage; I < [weak], frightened (save ends)',
-						tier2: '6 + P psychic damage; I < [average], frightened (save ends)',
-						tier3: '9 + P psychic damage; I < [strong], frightened (save ends)'
+						tier1: '3 + P psychic damage; I < [слабкий], frightened (save ends)',
+						tier2: '6 + P psychic damage; I < [середній], frightened (save ends)',
+						tier3: '9 + P psychic damage; I < [сильний], frightened (save ends)'
 					})
 				)
 			]
@@ -793,9 +793,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + R damage; M < [weak], slowed (save ends)',
-						tier2: '5 + R damage; M < [average], slowed (save ends)',
-						tier3: '8 + R damage; M < [strong], restrained (save ends)'
+						tier1: '3 + R damage; M < [слабкий], slowed (save ends)',
+						tier2: '5 + R damage; M < [середній], slowed (save ends)',
+						tier3: '8 + R damage; M < [сильний], restrained (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can vertical pull the target up to 2 squares. If the target is made restrained by this ability, this forced movement ignores their stability.')
@@ -828,9 +828,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + R damage; R < [weak], the target has weakness 5 (save ends)',
-						tier2: '6 + R damage; R < [average], the target has weakness 5 (save ends)',
-						tier3: '9 + R damage; R < [strong], the target has weakness equal to 5 + your Reason score (save ends)'
+						tier1: '3 + R damage; R < [слабкий], the target has weakness 5 (save ends)',
+						tier2: '6 + R damage; R < [середній], the target has weakness 5 (save ends)',
+						tier3: '9 + R damage; R < [сильний], the target has weakness equal to 5 + your Reason score (save ends)'
 					})
 				)
 			]
@@ -916,9 +916,9 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + P corruption damage; P < [weak], weakened (save ends)',
-						tier2: '5 + P corruption damage; the target is flung through time, and if P < [average] they are weakened (save ends)',
-						tier3: '8 + P corruption damage; the target is flung through time, and if P < [strong] they are weakened (save ends)'
+						tier1: '3 + P corruption damage; P < [слабкий], weakened (save ends)',
+						tier2: '5 + P corruption damage; the target is flung through time, and if P < [середній] they are weakened (save ends)',
+						tier3: '8 + P corruption damage; the target is flung through time, and if P < [сильний] they are weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A target who is flung through time is removed from the encounter map until the end of their next turn, reappearing in their original space or the nearest unoccupied space.'),
@@ -986,9 +986,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '6 + P damage; P < [weak], dazed (save ends)',
-						tier2: '10 + P damage; P < [average], dazed (save ends)',
-						tier3: '14 + P damage; P < [strong], dazed (save ends)'
+						tier1: '6 + P damage; P < [слабкий], dazed (save ends)',
+						tier2: '10 + P damage; P < [середній], dazed (save ends)',
+						tier3: '14 + P damage; P < [сильний], dazed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target takes a bane on Presence tests until the end of the encounter.'),
@@ -1053,9 +1053,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '10 + R psychic damage; R < [weak], slowed (save ends)',
-						tier2: '14 + R psychic damage; R < [average], slowed (save ends)',
-						tier3: '20 + R psychic damage; R < [strong], slowed (save ends)'
+						tier1: '10 + R psychic damage; R < [слабкий], slowed (save ends)',
+						tier2: '14 + R psychic damage; R < [середній], slowed (save ends)',
+						tier3: '20 + R psychic damage; R < [сильний], slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While slowed this way, the target takes 3 psychic damage for each square they willingly leave.'),
@@ -1078,9 +1078,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '8 damage; A < [weak], the target is stitched to the other target (save ends)',
-						tier2: '13 damage; A < [average], the target is stitched to the other target (save ends)',
-						tier3: '17 damage; A < [strong], the target is stitched to the other target (save ends)'
+						tier1: '8 damage; A < [слабкий], the target is stitched to the other target (save ends)',
+						tier2: '13 damage; A < [середній], the target is stitched to the other target (save ends)',
+						tier3: '17 damage; A < [сильний], the target is stitched to the other target (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If any target becomes stitched to the other, both targets are stitched together. While stitched together, a target takes a bane on power rolls while not adjacent to a creature they’re stitched to. Whenever a stitched target takes damage that wasn’t dealt by or also taken by another stitched target, each other stitched target takes half the damage the initial target took.'),
@@ -1103,9 +1103,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '10 + P damage; P < [weak], weakened (save ends)',
-						tier2: '14 + P damage; P < [average], weakened (save ends)',
-						tier3: '20 + P damage; P < [strong], weakened and slowed (save ends)'
+						tier1: '10 + P damage; P < [слабкий], weakened (save ends)',
+						tier2: '14 + P damage; P < [середній], weakened (save ends)',
+						tier3: '20 + P damage; P < [сильний], weakened and slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This ability gains an edge against a target with a soul. After you make the power roll, you or one ally within distance have a double edge on the next power roll you make before the end of the encounter.'),
@@ -1128,9 +1128,9 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '12 + R damage; R < [weak], the target takes a bane on their next power roll',
-						tier2: '17 + R damage; R < [average], the target takes a bane on power rolls (save ends)',
-						tier3: '23 + R damage; R < [strong], the target has a double bane on power rolls (save ends)'
+						tier1: '12 + R damage; R < [слабкий], the target takes a bane on their next power roll',
+						tier2: '17 + R damage; R < [середній], the target takes a bane on power rolls (save ends)',
+						tier3: '23 + R damage; R < [сильний], the target has a double bane on power rolls (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target can’t communicate with anyone until the end of the encounter.'),

@@ -163,7 +163,7 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 					description: `
 As your connection to the power of the Primordial Chaos grows ever stronger, you automatically sense any elemental creatures or magic sources of elemental power, such as a lava pool or a lake overlapping with Quintessence, within 1 mile of you.
 
-Additionally, you can speak with elemental creatures, and when you are in a negotiation with an elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown provided by the Nature’s Knight aspect feature (see 3rd-Level Features). When any elemental first becomes aware of you in combat, if they have P < [average], they are frightened of you (save ends).`
+Additionally, you can speak with elemental creatures, and when you are in a negotiation with an elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown provided by the Nature’s Knight aspect feature (see 3rd-Level Features). When any elemental first becomes aware of you in combat, if they have P < [середній], they are frightened of you (save ends).`
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-6-2',
@@ -259,7 +259,7 @@ Additionally, if you are a berserker or reaver, you have immunity to acid, cold,
 					description: `
 Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your Primordial Storm feature (see Stormwight Kits) increases to three times your Might score.
 
-When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < [strong], they are frightened of you (save ends).
+When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < [сильний], they are frightened of you (save ends).
 
 Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, gaining 1 surge per ferocity spent to use for that strike.`
 				}),
@@ -292,7 +292,7 @@ Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, ga
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -344,7 +344,7 @@ Primordial power remains until you spend it.`
 						characteristic: [Characteristic.Might],
 						tier1: '2 + M damage',
 						tier2: '5 + M damage',
-						tier3: '7 + M damage; A < [strong], slowed (save ends)'
+						tier3: '7 + M damage; A < [сильний], slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can shift 1 square.')
@@ -363,9 +363,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '2 + M damage; M < [weak], grabbed',
-						tier2: '5 + M damage; M < [average], grabbed',
-						tier3: '7 + M damage; M < [strong], grabbed'
+						tier1: '2 + M damage; M < [слабкий], grabbed',
+						tier2: '5 + M damage; M < [середній], grabbed',
+						tier3: '7 + M damage; M < [сильний], grabbed'
 					})
 				)
 			]
@@ -467,9 +467,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; M < [weak], bleeding (save ends)',
-						tier2: '5 + M damage; M < [average], bleeding (save ends)',
-						tier3: '8 + M damage; M < [strong], bleeding (save ends)'
+						tier1: '3 + M damage; M < [слабкий], bleeding (save ends)',
+						tier2: '5 + M damage; M < [середній], bleeding (save ends)',
+						tier3: '8 + M damage; M < [сильний], bleeding (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While bleeding this way, the target takes damage equal to your Might score at the end of your turns.')
@@ -488,9 +488,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '4 + M damage; M < [weak], bleeding and weakened (save ends)',
-						tier2: '6 + M damage; M < [average], bleeding and weakened (save ends)',
-						tier3: '10 + M damage; M < [strong], bleeding and weakened (save ends)'
+						tier1: '4 + M damage; M < [слабкий], bleeding and weakened (save ends)',
+						tier2: '6 + M damage; M < [середній], bleeding and weakened (save ends)',
+						tier3: '10 + M damage; M < [сильний], bleeding and weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can deal 1d6 damage to yourself to deal an extra 1d6 damage to the target.')
@@ -563,7 +563,7 @@ Primordial power remains until you spend it.`
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < [strong] is frightened until the end of their turn.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < [сильний] is frightened until the end of their turn.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -576,7 +576,7 @@ Primordial power remains until you spend it.`
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < [average] is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < [середній] is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -618,9 +618,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '10 + M damage; M < [weak], slowed (save ends)',
-						tier2: '14 + M damage; M < [average], slowed (save ends)',
-						tier3: '20 + M damage; M < [strong], slowed (save ends)'
+						tier1: '10 + M damage; M < [слабкий], slowed (save ends)',
+						tier2: '14 + M damage; M < [середній], slowed (save ends)',
+						tier3: '20 + M damage; M < [сильний], slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While slowed this way, the target takes 1 damage for every square they move, including from forced movement.')
@@ -681,9 +681,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '9 + M damage; M < [weak], slowed (save ends)',
-						tier2: '13 + M damage; M < [average], slowed (save ends)',
-						tier3: '18 + M damage; M < [strong], restrained (save ends)'
+						tier1: '9 + M damage; M < [слабкий], slowed (save ends)',
+						tier2: '13 + M damage; M < [середній], slowed (save ends)',
+						tier3: '18 + M damage; M < [сильний], restrained (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While the target is slowed this way, any other effect that would make the target slowed instead makes them restrained by this ability. Additionally, a creature who fails the saving throw while restrained this way is petrified until they are given a supernatural cure or you choose to reverse the effect (no action required).')

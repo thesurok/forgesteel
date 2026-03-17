@@ -73,9 +73,9 @@ export const paragon: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Presence],
-											tier1: '5 + П шкоди; П < [weak], скутий (рят. кидок)',
-											tier2: '9 + П шкоди; П < [average], скутий (рят. кидок)',
-											tier3: '12 + П шкоди; П < [strong], скутий (рят. кидок)'
+											tier1: '5 + П шкоди; П < [слабкий], скутий (рят. кидок)',
+											tier2: '9 + П шкоди; П < [середній], скутий (рят. кидок)',
+											tier3: '12 + П шкоди; П < [сильний], скутий (рят. кидок)'
 										})),
 										FactoryLogic.createAbilitySectionText('Поки ціль сковується таким чином, ваші здібності, що накладають примусовий рух, все ще можуть її переміщувати.')
 									]

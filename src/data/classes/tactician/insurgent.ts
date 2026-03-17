@@ -93,9 +93,9 @@ At the Director’s discretion, you and your allies can use skills from the intr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Reason],
-												tier1: '2 + R damage; R < [weak], frightened (save ends)',
-												tier2: '3 + R damage; R < [average], frightened (save ends)',
-												tier3: '4 + R damage; R < [strong], frightened (save ends)'
+												tier1: '2 + R damage; R < [слабкий], frightened (save ends)',
+												tier2: '3 + R damage; R < [середній], frightened (save ends)',
+												tier3: '4 + R damage; R < [сильний], frightened (save ends)'
 											})
 										)
 									]
@@ -250,9 +250,9 @@ At the Director’s discretion, you and your allies can use skills from the intr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: 'R < [weak], dazed (save ends)',
-												tier2: 'R < [average], dazed (save ends)',
-												tier3: 'R < [strong], dazed (save ends)'
+												tier1: 'R < [слабкий], dazed (save ends)',
+												tier2: 'R < [середній], dazed (save ends)',
+												tier3: 'R < [сильний], dazed (save ends)'
 											})
 										)
 									]

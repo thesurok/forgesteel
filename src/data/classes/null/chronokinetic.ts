@@ -159,9 +159,9 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '6 damage; M < [weak]. dazed',
-											tier2: '8 damage; M < [average]. dazed',
-											tier3: '12 damage; M < [strong]. dazed'
+											tier1: '6 damage; M < [слабкий]. dazed',
+											tier2: '8 damage; M < [середній]. dazed',
+											tier3: '12 damage; M < [сильний]. dazed'
 										})),
 										FactoryLogic.createAbilitySectionText('You can shift up to your speed, and squares occupied by enemies or objects are not difficult terrain for this shift. You make one power roll that targets each enemy you moved through during this shift')
 									]
@@ -208,9 +208,9 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: 'I < [weak]. the target loses their turn',
-											tier2: 'I < [average]. the target loses their turn',
-											tier3: 'I < [strong]. the target loses their turn'
+											tier1: 'I < [слабкий]. the target loses their turn',
+											tier2: 'I < [середній]. the target loses their turn',
+											tier3: 'I < [сильний]. the target loses their turn'
 										})),
 										FactoryLogic.createAbilitySectionText('If the target loses their turn, the round continues as if they had acted. A target who doesn’t lose their turn takes psychic damage equal to twice your Intuition score for each main action they take until the end of their next turn.')
 									]

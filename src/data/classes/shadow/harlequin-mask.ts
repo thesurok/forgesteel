@@ -176,9 +176,9 @@ If the creature is the same size as you, you can disguise yourself as them using
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '2 damage; if the target has R < [weak], before the damage is resolved, they make a free strike.',
-											tier2: '5 damage; if the target has R < [average], before the damage is resolved, they use a main action ability of your choice.',
-											tier3: '7 damage; if the target has R < [strong], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
+											tier1: '2 damage; if the target has R < [слабкий], before the damage is resolved, they make a free strike.',
+											tier2: '5 damage; if the target has R < [середній], before the damage is resolved, they use a main action ability of your choice.',
+											tier3: '7 damage; if the target has R < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
 										})),
 										FactoryLogic.createAbilitySectionText('You choose the new targets for the original target’s free strike or ability. Additionally, if you are hidden or disguised, using this ability doesn’t cause you to be revealed.')
 

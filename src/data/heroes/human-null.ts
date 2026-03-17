@@ -1275,7 +1275,7 @@ export const humanNull = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -1539,9 +1539,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [weak], grabbed',
-							tier2: '7 + A damage; A < [average], grabbed',
-							tier3: '9 + A damage; A < [strong], grabbed'
+							tier1: '4 + A damage; A < [слабкий], grabbed',
+							tier2: '7 + A damage; A < [середній], grabbed',
+							tier3: '9 + A damage; A < [сильний], grabbed'
 						}
 					}
 				],
@@ -1763,9 +1763,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [weak], weakened (save ends)',
-							tier2: '7 + A damage; A < [average], weakened (save ends)',
-							tier3: '9 + A damage; A < [strong], weakened (save ends)'
+							tier1: '4 + A damage; A < [слабкий], weakened (save ends)',
+							tier2: '7 + A damage; A < [середній], weakened (save ends)',
+							tier3: '9 + A damage; A < [сильний], weakened (save ends)'
 						}
 					}
 				],
@@ -1981,9 +1981,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; I < [weak], dazed and slowed (save ends)',
-							tier2: '5 + A damage; I < [average], dazed and slowed (save ends)',
-							tier3: '7 + A damage; I < [strong], dazed and slowed (save ends)'
+							tier1: '4 + A damage; I < [слабкий], dazed and slowed (save ends)',
+							tier2: '5 + A damage; I < [середній], dazed and slowed (save ends)',
+							tier3: '7 + A damage; I < [сильний], dazed and slowed (save ends)'
 						}
 					}
 				],
@@ -2036,9 +2036,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '8 + A psychic damage; M < [weak], weakened (save ends)',
-							tier2: '12 + A psychic damage; M < [average], weakened (save ends)',
-							tier3: '16 + A psychic damage; M < [strong], weakened (save ends)'
+							tier1: '8 + A psychic damage; M < [слабкий], weakened (save ends)',
+							tier2: '12 + A psychic damage; M < [середній], weakened (save ends)',
+							tier3: '16 + A psychic damage; M < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -2154,9 +2154,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '3 + A psychic damage; I < [weak], the target goes out of phase (save ends)',
-							tier2: '4 + A psychic damage; I < [average], the target goes out of phase (save ends)',
-							tier3: '6 + A psychic damage; I < [strong], the target goes out of phase (save ends)'
+							tier1: '3 + A psychic damage; I < [слабкий], the target goes out of phase (save ends)',
+							tier2: '4 + A psychic damage; I < [середній], the target goes out of phase (save ends)',
+							tier3: '6 + A psychic damage; I < [сильний], the target goes out of phase (save ends)'
 						}
 					},
 					{
@@ -2307,7 +2307,7 @@ export const humanNull = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [average] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
+						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
 					}
 				],
 				preEffect: '',
@@ -2447,9 +2447,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '7 + A damage; I < [weak], restrained (save ends)',
-							tier2: '10 + A damage; I < [average], restrained (save ends)',
-							tier3: '13 + A damage; I < [strong], restrained (save ends)'
+							tier1: '7 + A damage; I < [слабкий], restrained (save ends)',
+							tier2: '10 + A damage; I < [середній], restrained (save ends)',
+							tier3: '13 + A damage; I < [сильний], restrained (save ends)'
 						}
 					},
 					{
@@ -2506,9 +2506,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; A < [weak], grabbed',
-							tier2: '14 + A damage; A < [average], grabbed',
-							tier3: '18 + A damage; A < [strong], grabbed'
+							tier1: '10 + A damage; A < [слабкий], grabbed',
+							tier2: '14 + A damage; A < [середній], grabbed',
+							tier3: '18 + A damage; A < [сильний], grabbed'
 						}
 					},
 					{
@@ -2654,9 +2654,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '13 + A damage; M < [weak], the target is suppressed (save ends)',
-							tier2: '19 + A damage; M < [average], the target is suppressed (save ends)',
-							tier3: '24 + A damage; M < [strong], the target is suppressed (save ends)'
+							tier1: '13 + A damage; M < [слабкий], the target is suppressed (save ends)',
+							tier2: '19 + A damage; M < [середній], the target is suppressed (save ends)',
+							tier3: '24 + A damage; M < [сильний], the target is suppressed (save ends)'
 						}
 					},
 					{
@@ -2713,9 +2713,9 @@ export const humanNull = {
 								'Agility'
 							],
 							bonus: 0,
-							tier1: '9 + A damage; push 5; I < [weak], dazed (save ends)',
-							tier2: '13 + A damage; push 7;  I < [average], dazed (save ends)',
-							tier3: '18 + A damage; push 10; I < [strong], dazed (save ends)'
+							tier1: '9 + A damage; push 5; I < [слабкий], dazed (save ends)',
+							tier2: '13 + A damage; push 7;  I < [середній], dazed (save ends)',
+							tier3: '18 + A damage; push 10; I < [сильний], dazed (save ends)'
 						}
 					},
 					{
@@ -2817,7 +2817,7 @@ export const humanNull = {
 				sections: [
 					{
 						type: 'text',
-						text: 'The target takes half the damage, and if the triggering creature has I < [average], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.'
+						text: 'The target takes half the damage, and if the triggering creature has I < [середній], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.'
 					}
 				],
 				preEffect: '',
@@ -3157,9 +3157,9 @@ export const humanNull = {
 																		'Agility'
 																	],
 																	bonus: 0,
-																	tier1: '6 damage; M < [weak]. dazed',
-																	tier2: '8 damage; M < [average]. dazed',
-																	tier3: '12 damage; M < [strong]. dazed'
+																	tier1: '6 damage; M < [слабкий]. dazed',
+																	tier2: '8 damage; M < [середній]. dazed',
+																	tier3: '12 damage; M < [сильний]. dazed'
 																}
 															},
 															{
@@ -3258,9 +3258,9 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: 'I < [weak]. the target loses their turn',
-																	tier2: 'I < [average]. the target loses their turn',
-																	tier3: 'I < [strong]. the target loses their turn'
+																	tier1: 'I < [слабкий]. the target loses their turn',
+																	tier2: 'I < [середній]. the target loses their turn',
+																	tier3: 'I < [сильний]. the target loses their turn'
 																}
 															},
 															{
@@ -3485,9 +3485,9 @@ export const humanNull = {
 																		'Agility'
 																	],
 																	bonus: 0,
-																	tier1: '6 cold damage; A < [weak], slowed (save ends)',
-																	tier2: '9 cold damage; A < [average], slowed (save ends)',
-																	tier3: '13 cold damage; A < [strong], slowed (save ends)'
+																	tier1: '6 cold damage; A < [слабкий], slowed (save ends)',
+																	tier2: '9 cold damage; A < [середній], slowed (save ends)',
+																	tier3: '13 cold damage; A < [сильний], slowed (save ends)'
 																}
 															}
 														],
@@ -3704,7 +3704,7 @@ export const humanNull = {
 														sections: [
 															{
 																type: 'text',
-																text: 'You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [average] is slowed (save ends). Each enemy who is force moved into the wall and has M < [average] is restrained (save ends).'
+																text: 'You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [середній] is slowed (save ends). Each enemy who is force moved into the wall and has M < [середній] is restrained (save ends).'
 															}
 														],
 														preEffect: '',
@@ -3866,9 +3866,9 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: '8 + I cold damage; M < [weak], restrained (save ends)',
-																	tier2: '11 + I cold damage; M < [average], restrained (save ends)',
-																	tier3: '15 + I cold damage; M < [strong], restrained (save ends)'
+																	tier1: '8 + I cold damage; M < [слабкий], restrained (save ends)',
+																	tier2: '11 + I cold damage; M < [середній], restrained (save ends)',
+																	tier3: '15 + I cold damage; M < [сильний], restrained (save ends)'
 																}
 															},
 															{
@@ -4400,9 +4400,9 @@ export const humanNull = {
 																		'Agility'
 																	],
 																	bonus: 0,
-																	tier1: '7 + A psychic damage; I < [weak], dazed',
-																	tier2: '10 + A psychic damage; I < [average], dazed',
-																	tier3: '13 + A psychic damage; I < [strong], dazed'
+																	tier1: '7 + A psychic damage; I < [слабкий], dazed',
+																	tier2: '10 + A psychic damage; I < [середній], dazed',
+																	tier3: '13 + A psychic damage; I < [сильний], dazed'
 																}
 															},
 															{

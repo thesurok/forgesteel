@@ -44,7 +44,7 @@ export const circleofStorms: SubClass = {
 								description: 'This near-pure form of autonomous essence just barely maintains their form. They can shift their nature to match their surroundings.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-								keywords: [ 'Elemental' ],
+								keywords: ['Elemental'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -85,7 +85,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'The gales are twisting ribbons of cloud and debris endlessly dancing in  place. They disrupt the air and allow their allies to move freely.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Elemental (air)' ],
+								keywords: ['Elemental (air)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -118,7 +118,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'A fire plume burns so bright that their true shape is hard to discern from the flames. They sputter and spit motes of fire in high arcs.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Elemental (fire)' ],
+								keywords: ['Elemental (fire)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5),
@@ -151,7 +151,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'These massive clods of animated stone roll upon smaller piles of rocks that could be perceived as limbs. Walking boulders are useful for taking up space and forming barricades.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Elemental (fire)' ],
+								keywords: ['Elemental (fire)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(4, 'climb'),
@@ -163,7 +163,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-2-1-5c-1',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-5c-2',
@@ -194,7 +194,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'The crux is a curtain of billowing hot ash with an avian head. They cover their victims in a burning cloak of charcoal and soot.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Elemental (fire, air)' ],
+								keywords: ['Elemental (fire, air)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -209,19 +209,19 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Sonic,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Fire,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6a-2',
 										name: 'Soot Strike',
-										description: 'The crux’s melee free strikes M < [average] automatically hide each ally from the target until the start of the crux’s next turn, until the target uses a maneuver to clear the soot, until the crux takes damage, or until the crux is destroyed.'
+										description: 'The crux’s melee free strikes M < [середній] automatically hide each ally from the target until the start of the crux’s next turn, until the target uses a maneuver to clear the soot, until the crux takes damage, or until the crux is destroyed.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -245,7 +245,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'This elemental is a long, serpentine creature of heated rock. Flows of magma drool trails of lava from their fangs after biting their prey.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Elemental (fire, earth)' ],
+								keywords: ['Elemental (fire, earth)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5, 'climb'),
@@ -261,7 +261,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Fire,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -270,8 +270,8 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											id: 'summoner-2-1-6b-2',
 											name: 'Molten Strike',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createMelee(2) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'One creature or object per minion',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
@@ -292,7 +292,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											name: 'Eruption',
 											cost: 1,
 											sections: [
-												FactoryLogic.createAbilitySectionText('When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < [average] 4 fire damage.')
+												FactoryLogic.createAbilitySectionText('When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < [середній] 4 fire damage.')
 											]
 										})
 									})
@@ -308,7 +308,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'The desolations have vaguely humanoid sand forms with no legs. Their glass hose “arms” shift and bristle before firing high pressure streams of sand at their foes.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-								keywords: [ 'Elemental (air, earth)' ],
+								keywords: ['Elemental (air, earth)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5, 'burrow'),
@@ -323,14 +323,14 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Sonic,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6c-2',
 										name: 'Burying Strike',
-										description: 'The desolation’s free strikes inflict M < [average] slowed (save ends). If the target is already slowed, then they are M < [strong] restrained (EoT).'
+										description: 'The desolation’s free strikes inflict M < [середній] slowed (save ends). If the target is already slowed, then they are M < [сильний] restrained (EoT).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6c-3',
@@ -451,7 +451,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'The silks are akin to baby spiders ballooning through the air on strands of webbing. They spin silk from their legs as they fly, eventually turning huge swaths of the environment into tangled web mazes.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Elemental (earth, air, green)' ],
+								keywords: ['Elemental (earth, air, green)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'T'),
 								speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -466,14 +466,14 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-2-2a-2',
 										name: 'Entangling Strike',
-										description: 'The silk’s ranged free strikes inflict A < [average] restrained (EoT). Each creature adjacent to the target is A < [weak] slowed (EoT).'
+										description: 'The silk’s ranged free strikes inflict A < [середній] restrained (EoT). Each creature adjacent to the target is A < [слабкий] slowed (EoT).'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -481,7 +481,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											name: 'Web',
 											cost: 1,
 											sections: [
-												FactoryLogic.createAbilitySectionText('When the silk is reduced to 0 Stamina, they launch ribbons of webbing into an area equal to their size + 1 within 5 before being destroyed. The affected area is considered difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the webbing is M < [strong] slowed (EoT).')
+												FactoryLogic.createAbilitySectionText('When the silk is reduced to 0 Stamina, they launch ribbons of webbing into an area equal to their size + 1 within 5 before being destroyed. The affected area is considered difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the webbing is M < [сильний] slowed (EoT).')
 											]
 										})
 									})
@@ -497,7 +497,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'The manes of these equine sludge dwellers extend and hook into things like strong, fraying arms. This allows the principle of the swamp to either pull themselves onto dry land, or pull their prey into the dank depths.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Elemental (green, water, rot)' ],
+								keywords: ['Elemental (green, water, rot)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(4, 'swim'),
@@ -509,7 +509,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-2-2-2b-1',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'summoner-2-2-2b-2',
@@ -517,19 +517,19 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-2-2b-3',
 										name: 'Encroaching Strike',
-										description: 'The principle’s melee free strikes have a distance of R and inflict M < [strong] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
+										description: 'The principle’s melee free strikes have a distance of R and inflict M < [сильний] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -553,7 +553,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'This elemental is a pure-white vulpine with six legs that freely sprints through the air. Their howls are telepathic, washing over the receivers with a strong chill and a wave of goosebumps.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Elemental (air, rot, water)' ],
+								keywords: ['Elemental (air, rot, water)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -569,12 +569,12 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Sonic,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Cold,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -583,17 +583,17 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											id: 'summoner-2-2-2c-2',
 											name: 'Freezing Strike',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(5) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 cold damage; M < [weak] slowed (EoT)',
-														tier2: '6 cold damage; M < [average] slowed (EoT)',
-														tier3: '8 cold damage; M < [strong] speed is 0 (EoT)'
+														tier1: '4 cold damage; M < [слабкий] slowed (EoT)',
+														tier2: '6 cold damage; M < [середній] slowed (EoT)',
+														tier3: '8 cold damage; M < [сильний] speed is 0 (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Frost slows the enemy down, allowing one ally adjacent to each target to shift 2 and either hide or defend.')
@@ -646,7 +646,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodies endlessly shed metal shavings and hard sheets of iron as they move.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Elemental (earth, fire, void)' ],
+								keywords: ['Elemental (earth, fire, void)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(6, 'burrow'),
@@ -661,14 +661,14 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-2-5-3a-2',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3a-3',
@@ -678,7 +678,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3a-4',
 										name: 'Bladed Strike',
-										description: 'The reaver’s free strikes inflict M < [weak] bleeding (save ends). Each time the reaver inflicts bleeding on a creature, they can shift 2 and make an additional free strike on a new target.'
+										description: 'The reaver’s free strikes inflict M < [слабкий] bleeding (save ends). Each time the reaver inflicts bleeding on a creature, they can shift 2 and make an additional free strike on a new target.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -702,7 +702,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'These faceless suits of armor have visible rivers of deep red blood flowing throughout their being. Their blood has a powerful pull to it, causing any open wounds nearby to rip deeper and leak toward the knight.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Elemental (earth, fire, rot, water)' ],
+								keywords: ['Elemental (earth, fire, rot, water)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(6),
@@ -718,19 +718,19 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-2-5-3b-2',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3b-3',
 										name: 'Scarlet Death',
-										description: 'The knight’s melee strikes inflict P < [strong] bleeding (save ends). While bleeding this way, the target can’t roll lower than a 3 on the die used to resolve bleeding damage.'
+										description: 'The knight’s melee strikes inflict P < [сильний] bleeding (save ends). While bleeding this way, the target can’t roll lower than a 3 on the die used to resolve bleeding damage.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -754,7 +754,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 								description: 'These elementals are blazing white avian-shaped beings that are nearly impossible to perceive directly. Between a light of the sun’s talons is a massive glowing sword that can split the heaviest of defenses asunder.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-								keywords: [ 'Elemental (air, green, fire, void)' ],
+								keywords: ['Elemental (air, green, fire, void)'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -770,12 +770,12 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Fire,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -784,17 +784,17 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											id: 'summoner-2-5-3c-2',
 											name: 'Solar Blade',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 fire damage; I < [weak] dazed (EoT)',
-														tier2: '11 fire damage; I < [average] dazed (EoT)',
-														tier3: '16 fire damage; I < [strong] dazed (save ends)'
+														tier1: '7 fire damage; I < [слабкий] dazed (EoT)',
+														tier2: '11 fire damage; I < [середній] dazed (EoT)',
+														tier3: '16 fire damage; I < [сильний] dazed (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target dazed by this ability has their stability reduced to 0 until the condition ends.')
@@ -859,7 +859,7 @@ Your champion is a Portent of a dragon yet to manifest. Through defending the in
 As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and control of the environment. Their final shape has yet to be determined; use this to your advantage and call upon the affinity that will end conflict the quickest.`,
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Champion),
-								keywords: [ 'Dragon', 'Elemental' ],
+								keywords: ['Dragon', 'Elemental'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -883,8 +883,8 @@ As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and 
 											id: 'summoner-2-8-2a-3',
 											name: 'Elemental Tail Swing',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee(2) ],
+											keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'Two creatures or objects',
 											cost: 'signature',
 											sections: [
@@ -902,7 +902,7 @@ As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-8-2a-2',
 										name: 'Sealing Strike',
-										description: 'The Portent’s free strikes inflict M < [strong] slowed (save ends). While slowed this way, the target takes 1d6 aﬃnity damage at the start of each of their turns.'
+										description: 'The Portent’s free strikes inflict M < [сильний] slowed (save ends). While slowed this way, the target takes 1d6 aﬃnity damage at the start of each of their turns.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-8-2a-2',
@@ -933,8 +933,8 @@ As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and 
 										id: 'summoner-2-8-2a-10-2',
 										name: 'A Breath Felt in a Hurricane ',
 										type: FactoryLogic.type.createChampionAction(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 10, within: 4 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 10, within: 4 })],
 										target: 'All enemies and objects in the area',
 										cost: 1,
 										sections: [

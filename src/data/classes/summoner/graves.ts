@@ -50,7 +50,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'Husks have stiff corpses that snap and crackle with each sudden movement. Corrosive breath endlessly billows from their slackjawed faces.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5),
@@ -71,19 +71,19 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-4a-2',
 										name: 'Rotting Strike',
-										description: 'The husk’s melee free strikes inflict M < [weak] slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).'
+										description: 'The husk’s melee free strikes inflict M < [слабкий] slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).'
 									})
 								]
 							}),
@@ -98,7 +98,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'The shrieker expresses their unending pain in a way that can be heard and felt for miles. A white-hot fire smolders within each of their sunken eye sockets.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(4),
@@ -114,12 +114,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -146,7 +146,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'These autonomous bone networks fall just short of replicating the structure they had in life. Skeleton bones are especially brittle and can splinter into huge shards when met with enough force.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(6),
@@ -161,12 +161,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -195,7 +195,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'The grave knights are zombie warriors that continue to fight after death. Any blood spilled at a grave knight’s hand runs pitch black.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(6),
@@ -210,12 +210,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -224,17 +224,17 @@ This ability becomes a free triggered action if the target was a minion (either 
 											id: 'summoner-4-1-5a-2',
 											name: 'Knight Strike',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '5 corruption damage; M < [weak] bleeding (EoT)',
-														tier2: '7 corruption damage; M < [average] bleeding (EoT)',
-														tier3: '9 corruption damage; M < [strong] bleeding (save ends)'
+														tier1: '5 corruption damage; M < [слабкий] bleeding (EoT)',
+														tier2: '7 corruption damage; M < [середній] bleeding (EoT)',
+														tier3: '9 corruption damage; M < [сильний] bleeding (save ends)'
 													})
 												)
 											]
@@ -257,7 +257,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'Shades are a form of umbral stalker that float free from any floor or surface. They can bend their appearance to completely vanish in the light.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5, 'fly, hover'),
@@ -273,12 +273,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -304,7 +304,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'These massive, animated ogre corpses still maintain their incredible grip strength. When a lumberer falls, they’ll take anything within reach down with them.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(5),
@@ -316,7 +316,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-4-1-5c-1',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'summoner-4-1-5c-2',
@@ -324,24 +324,24 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-5c-3',
 										name: 'Zombie Clutch',
-										description: 'The lumberer’s melee free strikes inflict A < [average] grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.'
+										description: 'The lumberer’s melee free strikes inflict A < [середній] grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-5c-4',
 										name: 'Death Grasp',
-										description: 'When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < [strong] restrained (EoT).'
+										description: 'When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < [сильний] restrained (EoT).'
 									})
 								]
 							}),
@@ -371,7 +371,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-fixture-1-1',
 										name: 'The Bell Tolls',
-										description: 'Each enemy that starts their turn within 3 squares of the gates is I < [average] frightened (EoT) by the gates. The potency increases by 1 for winded enemies.'
+										description: 'Each enemy that starts their turn within 3 squares of the gates is I < [середній] frightened (EoT) by the gates. The potency increases by 1 for winded enemies.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-fixture-1-2',
@@ -447,7 +447,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'The preserved dead, bound for eternal rest, know only violence when robbed of their future. Accursed mummies use their wrappings to bind others to the same fate.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-								keywords: [ 'Mummy', 'Undead' ],
+								keywords: ['Mummy', 'Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5),
@@ -463,12 +463,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -477,8 +477,8 @@ This ability becomes a free triggered action if the target was a minion (either 
 											id: 'summoner-4-2-2a-2',
 											name: 'Fetid Bindings',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createSpecial('Melee R') ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createSpecial('Melee R')],
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
@@ -489,7 +489,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 														tier3: '6 poison damage; pull R + 2'
 													})
 												),
-												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the mummy is M < [strong] weakened (EoT).')
+												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the mummy is M < [сильний] weakened (EoT).')
 											]
 										})
 									}),
@@ -510,7 +510,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenches where their cheeks used to be. Their crying shakes enemies to their bone and renders them struggling to move.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(5, 'burrow'),
@@ -526,19 +526,19 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-4-2-2b-2',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-2-2b-3',
@@ -567,7 +567,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 								description: 'Phase ghouls are bilocated undead caught between two different manifolds, rapidly flickering between them. They almost appear transparent save for their long, bright blue tongues that appears to lag behind their movements by a full second.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5, 'teleport'),
@@ -582,19 +582,19 @@ This ability becomes a free triggered action if the target was a minion (either 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-2-2c-2',
 										name: 'Leaping Strike',
-										description: 'The ghoul teleports 5 squares before making a melee free strike. The target is M < [average] knocked prone. If the target is in the air, the potency increases by 1.'
+										description: 'The ghoul teleports 5 squares before making a melee free strike. The target is M < [середній] knocked prone. If the target is in the air, the potency increases by 1.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-2-2c-3',
@@ -647,7 +647,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 								description: 'A false vampire is a bestial, bipedal ghoul that draws life from liquified remains. In death, their hands curl into thick hooks, their bodies turn a putrid red-green as if wearing a dress suit, and their mouth twists and extends into a large feeding needle that can pierce steel.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(6, 'climb'),
@@ -663,19 +663,19 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3a-2',
 										name: 'Proboscis Strike',
-										description: 'The false vampire’s melee free strikes have a distance of 2 and inflict M < [average] restrained (EoT). The false vampire can move the target while they are restrained this way. At the start of a restrained creature’s turn, they take acid damage equal to your Reason.'
+										description: 'The false vampire’s melee free strikes have a distance of 2 and inflict M < [середній] restrained (EoT). The false vampire can move the target while they are restrained this way. At the start of a restrained creature’s turn, they take acid damage equal to your Reason.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3a-3',
@@ -694,7 +694,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 								description: 'These phantoms puppet the remnants of their corporeal forms. Unlike other spirits, the ripper tears the reality around them and leaves behind distorted or uneven “bumps” in the air, which can affect stone, metal, and flesh',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(6, 'fly, hover'),
@@ -709,12 +709,12 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
@@ -723,17 +723,17 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 											id: 'summoner-4-5-3b-2',
 											name: 'Plunge of the Knife',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '8 damage; A < [weak] slowed (save ends)',
-														tier2: '13 damage; A < [average] slowed (save ends)',
-														tier3: '17 damage; A < [strong] slowed (save ends)'
+														tier1: '8 damage; A < [слабкий] slowed (save ends)',
+														tier2: '13 damage; A < [середній] slowed (save ends)',
+														tier3: '17 damage; A < [сильний] slowed (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('The phantom deals an additional 3 damage if they have an edge.')
@@ -757,7 +757,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 								description: 'Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or amalgamations of a graveyard’s entire population. The titan lumbers and slumps across battlefields, wanting desperately to collapse and crash into the earth like a sea of flesh and bone.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(4),
 								speed: FactoryLogic.createSpeed(4),
@@ -769,7 +769,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 									FactoryLogic.feature.createBonus({
 										id: 'summoner-4-5-3c-1',
 										field: FeatureField.Stability,
-										valueCharacteristics: [ Characteristic.Reason ]
+										valueCharacteristics: [Characteristic.Reason]
 									}),
 									FactoryLogic.feature.createDamageModifier({
 										id: 'summoner-4-5-3c-2',
@@ -777,19 +777,19 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Corruption,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											}),
 											FactoryLogic.damageModifier.createCharacteristic({
 												damageType: DamageType.Poison,
 												modifierType: DamageModifierType.Immunity,
-												characteristics: [ Characteristic.Reason ]
+												characteristics: [Characteristic.Reason]
 											})
 										]
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3c-3',
 										name: 'Big Stomp',
-										description: 'The titan’s melee free strikes M < [strong] knock the target prone.'
+										description: 'The titan’s melee free strikes M < [сильний] knock the target prone.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3c-4',
@@ -843,7 +843,7 @@ Your champion is an Avatar of death. The number of creatures you and your army h
 The Avatar of death weighs down their foes with conditions so their army can take care of the rest. If an enemy can’t handle it, well then maybe they should just die.`,
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Champion),
-								keywords: [ 'Undead' ],
+								keywords: ['Undead'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(6, 'fly'),
@@ -878,17 +878,17 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 											id: 'summoner-4-8-2a-3',
 											name: 'Culling Scythe',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee(2) ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'Two creatures or objects',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														bonus: 5,
-														tier1: '9 corruption damage; M < [weak] bleeding (save ends)',
-														tier2: '12 corruption damage; M < [average] bleeding (save ends)',
-														tier3: '12 corruption damage; M < [strong] bleeding (save ends)'
+														tier1: '9 corruption damage; M < [слабкий] bleeding (save ends)',
+														tier2: '12 corruption damage; M < [середній] bleeding (save ends)',
+														tier3: '12 corruption damage; M < [сильний] bleeding (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('If the target is a creature that isn’t a leader or a solo and they are still bleeding at the end of the encounter, they instantly die.')
@@ -898,7 +898,7 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 									FactoryLogic.feature.create({
 										id: 'summoner-4-8-2a-4',
 										name: 'Revelation Strike',
-										description: 'The Avatar’s melee free strikes P < [weak] instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.'
+										description: 'The Avatar’s melee free strikes P < [слабкий] instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-8-2a-5',
@@ -910,12 +910,12 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 											id: 'summoner-4-8-2a-6',
 											name: 'Dust and Rot',
 											type: FactoryLogic.type.createTrigger('The Avatar takes damage.', { free: true }),
-											keywords: [ AbilityKeyword.Area ],
-											distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+											keywords: [AbilityKeyword.Area],
+											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 											target: 'Each enemy in the burst',
 											cost: 'signature',
 											sections: [
-												FactoryLogic.createAbilitySectionText('M < [average] weakened (EoT).')
+												FactoryLogic.createAbilitySectionText('M < [середній] weakened (EoT).')
 											]
 										})
 									}),
@@ -938,8 +938,8 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 										id: 'summoner-4-8-2a-10-2',
 										name: 'Gravemaker',
 										type: FactoryLogic.type.createChampionAction(),
-										keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 1 }) ],
+										keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 3, within: 1 })],
 										target: 'All enemies and objects in the line',
 										cost: 1,
 										sections: [

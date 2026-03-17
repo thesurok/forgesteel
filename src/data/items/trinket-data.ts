@@ -357,7 +357,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 			goal: 150
 		}),
 		effect: `
-While wearing this bangle, your melee free strikes inflict I < [average] frightened (EoT). The potency increases by 1 if you have an edge on the power roll.
+While wearing this bangle, your melee free strikes inflict I < [середній] frightened (EoT). The potency increases by 1 if you have an edge on the power roll.
 
 **Special**: If you are a summoner, you regain the use of your standard melee free strike while wearing this bangle.`
 	});
@@ -471,7 +471,7 @@ While wearing this bangle, your melee free strikes inflict I < [average] frighte
 			goal: 300
 		}),
 		effect: `
-While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has P < [average], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
+While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has P < [середній], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
 
 **Special**: If you are a summoner, you regain the use of your standard ranged free strike while wearing this gauntlet.`
 	});
@@ -792,8 +792,8 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Agility],
 										tier1: '3 psychic damage',
-										tier2: '5 psychic damage; I < [average], slowed (save ends)',
-										tier3: '8 psychic damage; I < [strong], slowed (save ends)'
+										tier2: '5 psychic damage; I < [середній], slowed (save ends)',
+										tier3: '8 psychic damage; I < [сильний], slowed (save ends)'
 									})
 								),
 								FactoryLogic.createAbilitySectionText('While slowed in this way, the target takes a bane on magic or psionic abilities.')

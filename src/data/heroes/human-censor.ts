@@ -629,9 +629,9 @@ export const humanCensor = {
 																			'Intuition'
 																		],
 																		bonus: 0,
-																		tier1: '8 + I damage; A < [weak], prone and restrained (save ends)',
-																		tier2: '12 + I damage; A < [average], prone and restrained (save ends)',
-																		tier3: '16 + I damage; A < [strong], prone and restrained (save ends)'
+																		tier1: '8 + I damage; A < [слабкий], prone and restrained (save ends)',
+																		tier2: '12 + I damage; A < [середній], prone and restrained (save ends)',
+																		tier3: '16 + I damage; A < [сильний], prone and restrained (save ends)'
 																	}
 																}
 															],
@@ -1108,7 +1108,7 @@ export const humanCensor = {
 					{
 						id: 'censor-3-1',
 						name: 'Look On My Work and Despair',
-						description: 'Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [average] , they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [strong], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.',
+						description: 'Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [середній] , they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.',
 						type: 'Text',
 						data: null
 					},
@@ -1247,7 +1247,7 @@ export const humanCensor = {
 					{
 						id: 'censor-6-1',
 						name: 'Implement of Wrath',
-						description: 'Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has P < [strong] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened.',
+						description: 'Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has P < [сильний] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened.',
 						type: 'Text',
 						data: null
 					},
@@ -1493,7 +1493,7 @@ export const humanCensor = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -1672,9 +1672,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '2 + M holy damage; P < [weak], slowed (save ends)',
-							tier2: '5 + M holy damage; P < [average], slowed (save ends)',
-							tier3: '7 + M holy damage; P < [strong], slowed (save ends)'
+							tier1: '2 + M holy damage; P < [слабкий], slowed (save ends)',
+							tier2: '5 + M holy damage; P < [середній], slowed (save ends)',
+							tier3: '7 + M holy damage; P < [сильний], slowed (save ends)'
 						}
 					}
 				],
@@ -1959,9 +1959,9 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + P holy damage; I < [weak], dazed (save ends)',
-							tier2: '8 + P holy damage; I < [average], dazed (save ends)',
-							tier3: '11 + P holy damage; I < [strong], dazed (save ends)'
+							tier1: '5 + P holy damage; I < [слабкий], dazed (save ends)',
+							tier2: '8 + P holy damage; I < [середній], dazed (save ends)',
+							tier3: '11 + P holy damage; I < [сильний], dazed (save ends)'
 						}
 					}
 				],
@@ -2082,9 +2082,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + M holy damage; if the target has P < [weak], each enemy within 2 squares of them is frightened of you (save ends)',
-							tier2: '5 + M holy damage; if the target has P < [average], each enemy within 2 squares of them is frightened of you (save ends)',
-							tier3: '8 + M holy damage; if the target has P < [strong], each enemy within 2 squares of them is frightened of you (save ends)'
+							tier1: '3 + M holy damage; if the target has P < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)',
+							tier2: '5 + M holy damage; if the target has P < [середній], each enemy within 2 squares of them is frightened of you (save ends)',
+							tier3: '8 + M holy damage; if the target has P < [сильний], each enemy within 2 squares of them is frightened of you (save ends)'
 						}
 					},
 					{
@@ -2208,9 +2208,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '5 + M holy damage; M < [weak], the target has fire weakness 3 (save ends)',
-							tier2: '9 + M holy damage; M < [average], the target has fire weakness 5 (save ends)',
-							tier3: '12 + M holy damage; M < [strong], the target has fire weakness 7 (save ends)'
+							tier1: '5 + M holy damage; M < [слабкий], the target has fire weakness 3 (save ends)',
+							tier2: '9 + M holy damage; M < [середній], the target has fire weakness 5 (save ends)',
+							tier3: '12 + M holy damage; M < [сильний], the target has fire weakness 7 (save ends)'
 						}
 					},
 					{
@@ -2658,9 +2658,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '9 + M damage; I < [weak], weakened (save ends)',
-							tier2: '13 + M damage; I < [average], weakened (save ends)',
-							tier3: '18 + M damage; I < [strong], weakened (save ends)'
+							tier1: '9 + M damage; I < [слабкий], weakened (save ends)',
+							tier2: '13 + M damage; I < [середній], weakened (save ends)',
+							tier3: '18 + M damage; I < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -2774,9 +2774,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '9 + M damage; I < [weak], dazed (save ends)',
-							tier2: '13 + M damage; I < [average], dazed (save ends)',
-							tier3: '18 + M damage; I < [strong], dazed (save ends)'
+							tier1: '9 + M damage; I < [слабкий], dazed (save ends)',
+							tier2: '13 + M damage; I < [середній], dazed (save ends)',
+							tier3: '18 + M damage; I < [сильний], dazed (save ends)'
 						}
 					},
 					{
@@ -2832,9 +2832,9 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + P damage; I < [weak], slowed (save ends)',
-							tier2: '9 + P damage; I < [average], slowed (save ends)',
-							tier3: '12 + P damage; I < [strong], slowed (save ends)'
+							tier1: '5 + P damage; I < [слабкий], slowed (save ends)',
+							tier2: '9 + P damage; I < [середній], slowed (save ends)',
+							tier3: '12 + P damage; I < [сильний], slowed (save ends)'
 						}
 					},
 					{
@@ -2958,9 +2958,9 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '8 + M holy damage; P < [weak], frightened (save ends)',
-																	tier2: '12 + M holy damage; P < [average], frightened (save ends)',
-																	tier3: '15 + M holy damage; P < [strong], frightened (save ends)'
+																	tier1: '8 + M holy damage; P < [слабкий], frightened (save ends)',
+																	tier2: '12 + M holy damage; P < [середній], frightened (save ends)',
+																	tier3: '15 + M holy damage; P < [сильний], frightened (save ends)'
 																}
 															},
 															{
@@ -3273,9 +3273,9 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '5 + M damage; P < [weak], the target is banished (save ends)',
-																	tier2: '8 + M damage; P < [average], the target is banished (save ends)',
-																	tier3: '11 + M damage; P < [strong], the target is banished (save ends)'
+																	tier1: '5 + M damage; P < [слабкий], the target is banished (save ends)',
+																	tier2: '8 + M damage; P < [середній], the target is banished (save ends)',
+																	tier3: '11 + M damage; P < [сильний], the target is banished (save ends)'
 																}
 															},
 															{
@@ -3342,9 +3342,9 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '7 + P psychic damage; P < [weak], frightened (save ends)',
-																	tier2: '10 + P psychic damage; P < [average], frightened (save ends)',
-																	tier3: '12 + P psychic damage; P < [strong], frightened (save ends)'
+																	tier1: '7 + P psychic damage; P < [слабкий], frightened (save ends)',
+																	tier2: '10 + P psychic damage; P < [середній], frightened (save ends)',
+																	tier3: '12 + P psychic damage; P < [сильний], frightened (save ends)'
 																}
 															},
 															{
@@ -3634,9 +3634,9 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'Slide 3; I < [weak], dazed (save ends)',
-																	tier2: 'Slide 5; I < [average], dazed (save ends)',
-																	tier3: 'Slide 7; I < [strong], dazed (save ends)'
+																	tier1: 'Slide 3; I < [слабкий], dazed (save ends)',
+																	tier2: 'Slide 5; I < [середній], dazed (save ends)',
+																	tier3: 'Slide 7; I < [сильний], dazed (save ends)'
 																}
 															}
 														],
@@ -4031,9 +4031,9 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '5 + P damage; P < [weak], restrained (save ends)',
-																	tier2: '9 + P damage; P < [average], restrained (save ends)',
-																	tier3: '12 + P damage; P < [strong], restrained (save ends)'
+																	tier1: '5 + P damage; P < [слабкий], restrained (save ends)',
+																	tier2: '9 + P damage; P < [середній], restrained (save ends)',
+																	tier3: '12 + P damage; P < [сильний], restrained (save ends)'
 																}
 															},
 															{

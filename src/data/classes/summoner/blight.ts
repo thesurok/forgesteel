@@ -47,7 +47,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'This vaguely humanoid form is warped and distorted by a demon nestled inside them. They extend long tongues from multiple orifices to drag victims in close.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5),
@@ -89,7 +89,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'The rasquine are skulking demons that shimmer in the light. They teleport into position before biting the necks of their prey.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(4, 'teleport'),
@@ -131,7 +131,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'Razors appear to be a diminutive variant of the ruinant demon. Their bodies are swift, tumbling mounds of scarred flesh and deadly claws.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(6),
@@ -180,7 +180,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'These minor demons resemble larger pitlings. They can spit a nerve-numbing phlegm at long distance that makes it easy to catch their next meal.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Artillery),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'S'),
 								speed: FactoryLogic.createSpeed(5),
@@ -222,7 +222,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'Ensnarers knot and twist their bodies together to form heaving, heavy musilexes. They’re compelled to drag everything in toward their body.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(6),
@@ -263,7 +263,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'The bengrul is an undulating heap of glass and flesh. They shatter pieces of themselves to disrupt senses and inflict grisly wounds on their prey.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Hexer),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5),
@@ -288,17 +288,17 @@ When you finish a respite, you can always perceive the soul trails of each creat
 											id: 'summoner-1-1-5c-2',
 											name: 'Mind Twist',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(5) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 damage; P < [weak] twisted (save ends)',
-														tier2: '4 damage; P < [average] twisted (save ends)',
-														tier3: '4 damage; P < [strong] twisted (save ends)'
+														tier1: '4 damage; P < [слабкий] twisted (save ends)',
+														tier2: '4 damage; P < [середній] twisted (save ends)',
+														tier3: '4 damage; P < [сильний] twisted (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A twisted target can’t take advantage of edges or search for hidden creatures until the condition ends.')
@@ -338,12 +338,12 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-fixture-1-1',
 										name: 'Hunger Thrush',
-										description: 'Each enemy that starts their turn within 3 squares of the boil is I < [average] taunted (EoT) by the boil, or I < [weak] taunted (EoT) by the boil and can’t move further from it.'
+										description: 'Each enemy that starts their turn within 3 squares of the boil is I < [середній] taunted (EoT) by the boil, or I < [слабкий] taunted (EoT) by the boil and can’t move further from it.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-fixture-1-2',
 										name: 'Oh, It Pops',
-										description: 'When the boil is destroyed, each enemy within 3 squares of the boil takes acid damage equal to your level and is A < [strong] weakened (save ends).'
+										description: 'When the boil is destroyed, each enemy within 3 squares of the boil takes acid damage equal to your level and is A < [сильний] weakened (save ends).'
 									})
 								]
 							},
@@ -414,7 +414,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'A spewler’s mouth makes up most of its size. They unleash torrents of acid and bile from their pitless stomachs before consuming their prey with bag-like maws.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Controller),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(5),
@@ -461,7 +461,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'Chimors have no true shape; their bodies restructure and change endlessly. Pieces of the chimor demon snap off inside their prey, causing their bodies to also restructure from the inside out.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Defender),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(5),
@@ -483,7 +483,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2b-2',
 										name: 'Mercurial Strike',
-										description: 'The chimor’s melee free strikes inflict M < [weak] weakened (EoT). The potency is increased by the current round number.'
+										description: 'The chimor’s melee free strikes inflict M < [слабкий] weakened (EoT). The potency is increased by the current round number.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2b-3',
@@ -507,7 +507,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 								description: 'The violents are lanky, oily bipeds with bright red flesh that contort and snap their bodies into unassuming objects. Their mimicry is particularly precise, to the point where it’s unclear whether their victims die from the surprise or the violent transformation process first.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Ambusher),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'M'),
 								speed: FactoryLogic.createSpeed(7, 'climb'),
@@ -568,7 +568,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 					description: `
 As a maneuver, you can command one or more of your demon minions to each deal damage equal to their free strike value to an adjacent ally. This damage can’t be reduced. The ally then ends a condition affecting them and confers it to the demon that attacked them.
 
-Additionally, whenever one of your demon minions Death Snaps, their target is P < [weak] affected by a condition the minion was suffering from. The potency increases by 1 on each subsequent Death Snap the target takes damage from in the same turn (maximum +2).`
+Additionally, whenever one of your demon minions Death Snaps, their target is P < [слабкий] affected by a condition the minion was suffering from. The potency increases by 1 on each subsequent Death Snap the target takes damage from in the same turn (maximum +2).`
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-1-5-2',
@@ -586,7 +586,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 								description: 'This cherubin creature is bloated and warped by demonic energy. The lights from their myriad eyes have all but gone out, now resembling pustules across their body.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Support),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(1, 'L'),
 								speed: FactoryLogic.createSpeed(5, 'fly'),
@@ -611,17 +611,17 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 											id: 'summoner-1-5-3a-2',
 											name: 'Blighted Strike',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createRanged(5) ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 corruption damage; P < [weak] bleeding (EoT)',
-														tier2: '11 corruption damage; P < [average] bleeding (EoT)',
-														tier3: '16 corruption damage; P < [strong] bleeding (EoT)'
+														tier1: '7 corruption damage; P < [слабкий] bleeding (EoT)',
+														tier2: '11 corruption damage; P < [середній] bleeding (EoT)',
+														tier3: '16 corruption damage; P < [сильний] bleeding (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Instead of taking damage, you or an ally targeted by this ability impose a double bane on the next strike that targets them.')
@@ -650,7 +650,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 								description: 'The gorrre demons evoke features of rhino and orangutan while clad in heavy armor. They’ve been utilized as jail guards by devils, as few prisoners can ever hope to outrun a monster with unlimited endurance.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Brute),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(5),
@@ -672,7 +672,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 									FactoryLogic.feature.create({
 										id: 'summoner-1-5-3b-2',
 										name: 'Goring Strike',
-										description: 'The gorrre must charge before making a strike. The target is M < [strong] knocked prone if the gorrre moved through an enemy or object other than the target during the charge.'
+										description: 'The gorrre must charge before making a strike. The target is M < [сильний] knocked prone if the gorrre moved through an enemy or object other than the target during the charge.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-5-3b-3',
@@ -696,7 +696,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 								description: 'It’s difficult to identify the base nature of a vicisittante apart from an ever-changing mass of burning flesh. Any surface they touch immediately scars as the demon leaves parts of themselves behind.',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Minion, MonsterRoleType.Harrier),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(10),
@@ -721,17 +721,17 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 											id: 'summoner-1-5-3c-2',
 											name: 'Cerebral Flay',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'One creature or object per minion',
 											cost: 'signature',
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 psychic damage; P < [weak] weakened (save ends)',
-														tier2: '11 psychic damage; P < [average] weakened (save ends)',
-														tier3: '16 psychic damage; P < [strong] weakened (save ends)'
+														tier1: '7 psychic damage; P < [слабкий] weakened (save ends)',
+														tier2: '11 psychic damage; P < [середній] weakened (save ends)',
+														tier3: '16 psychic damage; P < [сильний] weakened (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target weakened by this ability is always considered flanked by the vicisittante regardless of position until the condition ends.')
@@ -785,7 +785,7 @@ Your champion is an Aspect of a demon lord. They have borne witness to your expl
 The demon lord’s Aspect enjoys bringing enemies in close with their appendages or flinging victims and throwing them to the gnashing horde. They’re willing to put your connection to this world at risk if it means taking one more bite.`,
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Champion),
-								keywords: [ 'Abyssal', 'Demon' ],
+								keywords: ['Abyssal', 'Demon'],
 								encounterValue: 0,
 								size: FactoryLogic.createSize(2),
 								speed: FactoryLogic.createSpeed(5, 'teleport'),
@@ -815,8 +815,8 @@ The demon lord’s Aspect enjoys bringing enemies in close with their appendages
 											id: 'summoner-1-8-2a-3',
 											name: 'Grasping Appendages',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee(5) ],
+											keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee(5)],
 											target: 'Two creatures or objects',
 											cost: 'signature',
 											sections: [
@@ -847,7 +847,7 @@ The demon lord’s Aspect enjoys bringing enemies in close with their appendages
 											id: 'summoner-1-8-2a-6',
 											name: 'I Like Your Taste',
 											type: FactoryLogic.type.createTrigger('The Aspect takes damage from an enemy.', { free: true }),
-											distance: [ FactoryLogic.distance.createSelf() ],
+											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Self',
 											sections: [
 												FactoryLogic.createAbilitySectionText('The Aspect has a double edge on their next power roll. They can choose to give this benefit to an ally within your Summoner’s Range instead.')
@@ -873,7 +873,7 @@ The demon lord’s Aspect enjoys bringing enemies in close with their appendages
 										id: 'summoner-1-8-2a-10-2',
 										name: 'Flensing Reality',
 										type: FactoryLogic.type.createChampionAction(),
-										distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 }) ],
+										distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 })],
 										target: 'Self and each non-minion ally in the area',
 										cost: 1,
 										sections: [

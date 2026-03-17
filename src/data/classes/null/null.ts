@@ -447,7 +447,7 @@ Additionally, you and allies in the area of your Null Field ability ignore banes
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -539,9 +539,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; A < [weak], grabbed',
-					tier2: '7 + A damage; A < [average], grabbed',
-					tier3: '9 + A damage; A < [strong], grabbed'
+					tier1: '4 + A damage; A < [слабкий], grabbed',
+					tier2: '7 + A damage; A < [середній], grabbed',
+					tier3: '9 + A damage; A < [сильний], grabbed'
 				}))
 			]
 		}),
@@ -614,9 +614,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; A < [weak], weakened (save ends)',
-					tier2: '7 + A damage; A < [average], weakened (save ends)',
-					tier3: '9 + A damage; A < [strong], weakened (save ends)'
+					tier1: '4 + A damage; A < [слабкий], weakened (save ends)',
+					tier2: '7 + A damage; A < [середній], weakened (save ends)',
+					tier3: '9 + A damage; A < [сильний], weakened (save ends)'
 				}))
 			]
 		}),
@@ -687,9 +687,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; I < [weak], dazed and slowed (save ends)',
-					tier2: '5 + A damage; I < [average], dazed and slowed (save ends)',
-					tier3: '7 + A damage; I < [strong], dazed and slowed (save ends)'
+					tier1: '4 + A damage; I < [слабкий], dazed and slowed (save ends)',
+					tier2: '5 + A damage; I < [середній], dazed and slowed (save ends)',
+					tier3: '7 + A damage; I < [сильний], dazed and slowed (save ends)'
 				}))
 			]
 		}),
@@ -706,9 +706,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '8 + A psychic damage; M < [weak], weakened (save ends)',
-						tier2: '12 + A psychic damage; M < [average], weakened (save ends)',
-						tier3: '16 + A psychic damage; M < [strong], weakened (save ends)'
+						tier1: '8 + A psychic damage; M < [слабкий], weakened (save ends)',
+						tier2: '12 + A psychic damage; M < [середній], weakened (save ends)',
+						tier3: '16 + A psychic damage; M < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While weakened this way, the target takes damage equal to your Intuition score whenever they use a supernatural ability that costs Malice.')
@@ -748,9 +748,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A psychic damage; I < [weak], the target goes out of phase (save ends)',
-						tier2: '4 + A psychic damage; I < [average], the target goes out of phase (save ends)',
-						tier3: '6 + A psychic damage; I < [strong], the target goes out of phase (save ends)'
+						tier1: '3 + A psychic damage; I < [слабкий], the target goes out of phase (save ends)',
+						tier2: '4 + A psychic damage; I < [середній], the target goes out of phase (save ends)',
+						tier3: '6 + A psychic damage; I < [сильний], the target goes out of phase (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A target who goes out of phase is slowed, has their stability reduced by 2, and can’t obtain a tier 3 outcome on ability rolls.')
@@ -800,7 +800,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [average] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -842,9 +842,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '7 + A damage; I < [weak], restrained (save ends)',
-						tier2: '10 + A damage; I < [average], restrained (save ends)',
-						tier3: '13 + A damage; I < [strong], restrained (save ends)'
+						tier1: '7 + A damage; I < [слабкий], restrained (save ends)',
+						tier2: '10 + A damage; I < [середній], restrained (save ends)',
+						tier3: '13 + A damage; I < [сильний], restrained (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This strike resolves before the triggering movement or main action.')
@@ -863,9 +863,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '10 + A damage; A < [weak], grabbed',
-						tier2: '14 + A damage; A < [average], grabbed',
-						tier3: '18 + A damage; A < [strong], grabbed'
+						tier1: '10 + A damage; A < [слабкий], grabbed',
+						tier2: '14 + A damage; A < [середній], grabbed',
+						tier3: '18 + A damage; A < [сильний], grabbed'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While grabbed this way, the target takes a bane on the Escape Grab maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.')
@@ -910,9 +910,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '13 + A damage; M < [weak], the target is suppressed (save ends)',
-						tier2: '19 + A damage; M < [average], the target is suppressed (save ends)',
-						tier3: '24 + A damage; M < [strong], the target is suppressed (save ends)'
+						tier1: '13 + A damage; M < [слабкий], the target is suppressed (save ends)',
+						tier2: '19 + A damage; M < [середній], the target is suppressed (save ends)',
+						tier3: '24 + A damage; M < [сильний], the target is suppressed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.')
@@ -931,9 +931,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '9 + A damage; push 5; I < [weak], dazed (save ends)',
-						tier2: '13 + A damage; push 7;  I < [average], dazed (save ends)',
-						tier3: '18 + A damage; push 10; I < [strong], dazed (save ends)'
+						tier1: '9 + A damage; push 5; I < [слабкий], dazed (save ends)',
+						tier2: '13 + A damage; push 7;  I < [середній], dazed (save ends)',
+						tier3: '18 + A damage; push 10; I < [сильний], dazed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target and each creature or object they collide with from this forced movement takes psychic damage equal to the total number of squares the target was force moved. While the target is dazed this way, they see glimpses of creatures from other parts of the timescape.')
@@ -969,7 +969,7 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			target: 'Self or one creature',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target takes half the damage, and if the triggering creature has I < [average], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.')
+				FactoryLogic.createAbilitySectionText('The target takes half the damage, and if the triggering creature has I < [середній], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.')
 			]
 		})
 	],

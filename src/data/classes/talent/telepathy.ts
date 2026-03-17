@@ -292,9 +292,9 @@ export const telepathy: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'R < [weak], frightened (save ends)',
-												tier2: 'R < [average], frightened (save ends)',
-												tier3: 'R < [strong], frightened (save ends)'
+												tier1: 'R < [слабкий], frightened (save ends)',
+												tier2: 'R < [середній], frightened (save ends)',
+												tier3: 'R < [сильний], frightened (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({

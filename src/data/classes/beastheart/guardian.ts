@@ -73,9 +73,9 @@ export const guardian: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + M damage ; M < [weak], swallowed',
-												tier2: '10 + M damage ; M < [average], swallowed',
-												tier3: '14 + M damage ; M < [strong], swallowed'
+												tier1: '6 + M damage ; M < [слабкий], swallowed',
+												tier2: '10 + M damage ; M < [середній], swallowed',
+												tier3: '14 + M damage ; M < [сильний], swallowed'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('A swallowed creature shares your companion’s space, is grabbed and restrained, and has line of effect only to your companion. Nothing has line of effect to the swallowed creature. At the start of each of your turns, the swallowed creature takes acid damage equal to 1 + your companion’s Might. If the creature escapes the grab, the companion immediately regurgitates the creature, who lands prone in an unoccupied square adjacent to your companion and is no longer grabbed or restrained. Your companion can also regurgitate the creature as a free maneuver. Your companion can have one creature swallowed at a time.')
@@ -103,9 +103,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + M damage; M < [weak], grabbed',
-												tier2: '8 + M damage; M < [average], grabbed',
-												tier3: '12 + M damage; M < [strong], grabbed'
+												tier1: '6 + M damage; M < [слабкий], grabbed',
+												tier2: '8 + M damage; M < [середній], grabbed',
+												tier3: '12 + M damage; M < [сильний], grabbed'
 											})
 										)
 									]
@@ -157,9 +157,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '11 + M damage; taunted (save ends); M < [weak], prone',
-												tier2: '16 + M damage; taunted (save ends); M < [average], prone',
-												tier3: '21 + M damage; taunted (save ends); M < [strong], prone and can’t stand (EoT)'
+												tier1: '11 + M damage; taunted (save ends); M < [слабкий], prone',
+												tier2: '16 + M damage; taunted (save ends); M < [середній], prone',
+												tier3: '21 + M damage; taunted (save ends); M < [сильний], prone and can’t stand (EoT)'
 											})
 										),
 										FactoryLogic.createAbilitySectionSpend({
@@ -187,9 +187,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '9 + I psychic damage; I < [weak], weakened (save ends)',
-												tier2: '13 + I psychic damage; I < [average], weakened (save ends)',
-												tier3: '18 + I psychic damage; I < [strong], weakened (save ends)'
+												tier1: '9 + I psychic damage; I < [слабкий], weakened (save ends)',
+												tier2: '13 + I psychic damage; I < [середній], weakened (save ends)',
+												tier3: '18 + I psychic damage; I < [сильний], weakened (save ends)'
 											})
 										)
 									]
@@ -237,9 +237,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '5 sonic damage; I < [weak], frightened (save ends)',
-												tier2: '10 sonic damage; I < [average], frightened (save ends)',
-												tier3: '15 sonic damage; I < [strong], frightened (save ends)'
+												tier1: '5 sonic damage; I < [слабкий], frightened (save ends)',
+												tier2: '10 sonic damage; I < [середній], frightened (save ends)',
+												tier3: '15 sonic damage; I < [сильний], frightened (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('While frightened by this ability, a creature takes 10 psychic damage at the start of each of your turns.'),
@@ -266,9 +266,9 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '11 + M damage; P < [weak], taunted (save ends)',
-												tier2: '17 + M damage; P < [average], taunted (save ends)',
-												tier3: '22 + M damage; P < [strong], taunted (save ends)'
+												tier1: '11 + M damage; P < [слабкий], taunted (save ends)',
+												tier2: '17 + M damage; P < [середній], taunted (save ends)',
+												tier3: '22 + M damage; P < [сильний], taunted (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('While the target is taunted by this ability, all creatures except your companion have immunity 10 to damage dealt by the target.')

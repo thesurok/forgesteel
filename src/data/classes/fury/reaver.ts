@@ -86,9 +86,9 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '3 + M damage; P < [weak], dazed and frightened (save ends)',
-											tier2: '5 + M damage; P < [average], dazed and frightened (save ends)',
-											tier3: '8 + M damage; P < [strong], dazed and frightened (save ends)'
+											tier1: '3 + M damage; P < [слабкий], dazed and frightened (save ends)',
+											tier2: '5 + M damage; P < [середній], dazed and frightened (save ends)',
+											tier3: '8 + M damage; P < [сильний], dazed and frightened (save ends)'
 										}))
 									]
 								})
@@ -111,9 +111,9 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '2 damage; A < [weak], dazed (save ends)',
-												tier2: '4 damage; A < [average], dazed (save ends)',
-												tier3: '6 damage; A < [strong], dazed (save ends)'
+												tier1: '2 damage; A < [слабкий], dazed (save ends)',
+												tier2: '4 damage; A < [середній], dazed (save ends)',
+												tier3: '6 damage; A < [сильний], dazed (save ends)'
 											})
 										)
 									]
@@ -195,12 +195,12 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '4 + M damage; P < [weak] frightened (save ends)',
-												tier2: '6 + M damage; P < [average] frightened (save ends)',
-												tier3: '10 + M damage; P < [strong] frightened (save ends)'
+												tier1: '4 + M damage; P < [слабкий] frightened (save ends)',
+												tier2: '6 + M damage; P < [середній] frightened (save ends)',
+												tier3: '10 + M damage; P < [сильний] frightened (save ends)'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < [average], they are frightened of you (save ends).')
+										FactoryLogic.createAbilitySectionText('If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < [середній], they are frightened of you (save ends).')
 									]
 								})
 							}),

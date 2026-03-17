@@ -2122,7 +2122,7 @@ export const orcConduit = {
 								{
 									tag: '',
 									trigger: 'Finish a respite',
-									value: 'XP gained'
+									value: 'Отримання досвіду'
 								}
 							],
 							details: '',
@@ -2610,9 +2610,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I corruption damage; P < [weak], the target takes a bane on their next power roll',
-							tier2: '5 + I corruption damage; P < [average], the target takes a bane on their next power roll',
-							tier3: '8 + I corruption damage; P < [strong], the target takes a bane on their next power roll'
+							tier1: '3 + I corruption damage; P < [слабкий], the target takes a bane on their next power roll',
+							tier2: '5 + I corruption damage; P < [середній], the target takes a bane on their next power roll',
+							tier3: '8 + I corruption damage; P < [сильний], the target takes a bane on their next power roll'
 						}
 					}
 				],
@@ -2767,9 +2767,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I holy damage; A < [weak], prone',
-							tier2: '6 + I holy damage; A < [average], prone',
-							tier3: '9 + I holy damage; A < [strong], prone and can’t stand (save ends)'
+							tier1: '3 + I holy damage; A < [слабкий], prone',
+							tier2: '6 + I holy damage; A < [середній], prone',
+							tier3: '9 + I holy damage; A < [сильний], prone and can’t stand (save ends)'
 						}
 					}
 				],
@@ -2879,9 +2879,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I corruption damage; M < [weak], damage weakness 5 (save ends)',
-							tier2: '6 + I corruption damage; M < [average], damage weakness 5 (save ends)',
-							tier3: '9 + I corruption damage; M < [strong], damage weakness 5 (save ends)'
+							tier1: '3 + I corruption damage; M < [слабкий], damage weakness 5 (save ends)',
+							tier2: '6 + I corruption damage; M < [середній], damage weakness 5 (save ends)',
+							tier3: '9 + I corruption damage; M < [сильний], damage weakness 5 (save ends)'
 						}
 					}
 				],
@@ -2933,9 +2933,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '6 + I holy damage; I < [weak], frightened (save ends)',
-							tier2: '9 + I holy damage; I < [average], frightened (save ends)',
-							tier3: '13 + I holy damage; I < [strong], frightened (save ends)'
+							tier1: '6 + I holy damage; I < [слабкий], frightened (save ends)',
+							tier2: '9 + I holy damage; I < [середній], frightened (save ends)',
+							tier3: '13 + I holy damage; I < [сильний], frightened (save ends)'
 						}
 					}
 				],
@@ -3089,9 +3089,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '6 psychic damage; I < [weak], frightened (save ends)',
-							tier2: '9 psychic damage; I < [average], frightened (save ends)',
-							tier3: '13 psychic damage; I < [strong], frightened (save ends)'
+							tier1: '6 psychic damage; I < [слабкий], frightened (save ends)',
+							tier2: '9 psychic damage; I < [середній], frightened (save ends)',
+							tier3: '13 psychic damage; I < [сильний], frightened (save ends)'
 						}
 					},
 					{
@@ -3365,9 +3365,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '4 corruption damage; I < [weak], prone and can’t stand (save ends)',
-							tier2: '7 corruption damage; I < [average], prone and can’t stand (save ends)',
-							tier3: '11 corruption damage; I < [strong], prone and can’t stand (save ends)'
+							tier1: '4 corruption damage; I < [слабкий], prone and can’t stand (save ends)',
+							tier2: '7 corruption damage; I < [середній], prone and can’t stand (save ends)',
+							tier3: '11 corruption damage; I < [сильний], prone and can’t stand (save ends)'
 						}
 					}
 				],

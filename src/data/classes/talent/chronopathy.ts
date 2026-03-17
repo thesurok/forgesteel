@@ -100,9 +100,9 @@ export const chronopathy: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Presence],
-											tier1: 'The target’s speed is halved (save ends), or if P < [weak], the target is slowed (save ends).',
-											tier2: 'The target is slowed (save ends), or if P < [average], the target’s speed is 0 (save ends).',
-											tier3: 'The target is slowed (save ends), or if P < [strong], the target’s speed is 0 (save ends).'
+											tier1: 'The target’s speed is halved (save ends), or if P < [слабкий], the target is slowed (save ends).',
+											tier2: 'The target is slowed (save ends), or if P < [середній], the target’s speed is 0 (save ends).',
+											tier3: 'The target is slowed (save ends), or if P < [сильний], the target’s speed is 0 (save ends).'
 										})),
 										FactoryLogic.createAbilitySectionText('A target can’t use triggered actions while their speed is reduced this way.'),
 										FactoryLogic.createAbilitySectionField({
@@ -197,9 +197,9 @@ Make a power roll that targets each enemy in the area.`),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'P < [weak], the target is slowed until the effect ends',
-												tier2: 'P < [average], the target’s speed is 0 until the effect ends',
-												tier3: 'P < [strong], the target is restrained until the effect ends'
+												tier1: 'P < [слабкий], the target is slowed until the effect ends',
+												tier2: 'P < [середній], the target’s speed is 0 until the effect ends',
+												tier3: 'P < [сильний], the target is restrained until the effect ends'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({

@@ -27,7 +27,7 @@ As a kiln, you arrive to stoke the flame wherever the spark of opportunity prese
 	subclassName: 'Cadre',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
-		[ Characteristic.Agility, Characteristic.Reason ]
+		[Characteristic.Agility, Characteristic.Reason]
 	],
 	primaryCharacteristics: [],
 	featuresByLevel: [
@@ -49,15 +49,15 @@ As a kiln, you arrive to stoke the flame wherever the spark of opportunity prese
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: '40EUJLeDYXVn2fjh',
-					selected: [ AbilityKeyword.Magic ]
+					selected: [AbilityKeyword.Magic]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: '1D5vcoaQjS4bxAfB',
-					selected: [ 'Carpentry' ]
+					selected: ['Carpentry']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'XpH3WAhclAzTtZiv',
-					listOptions: [ SkillList.Crafting, SkillList.Lore ],
+					listOptions: [SkillList.Crafting, SkillList.Lore],
 					count: 2
 				}),
 				FactoryLogic.feature.createHeroicResource({
@@ -97,8 +97,8 @@ You lose any remaining spark at the end of the encounter.`,
 						name: 'Stoke the Flame',
 						description: 'As an ally attacks, you harness a bit of arcane energy to grant them a decisive advantage.',
 						type: FactoryLogic.type.createTrigger('The target makes an ability roll for a damage-dealing ability.'),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(5) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(5)],
 						target: '1 ally',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Apply one Stoke the Flame effect from your talisman kit granted by the Tinderbox feature.'),
@@ -115,7 +115,7 @@ You lose any remaining spark at the end of the encounter.`,
 				FactoryLogic.feature.createKitChoice({
 					id: 'dsTOgwyx33aQcquK',
 					name: 'Tinderbox',
-					types: [ 'Kiln' ]
+					types: ['Kiln']
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'QeAzUQduMYs8dMZS',
@@ -140,7 +140,7 @@ If you choose a kiln perk, you must first complete a task from the Undermind bef
 
 * Plant the brain of a freshly slain enemy in the shade of a thousand-year old tree.
 * Go to the nearest wode, take the seeds from a fruit freshly plucked, and feed those seeds to birds outside the wode.`,
-					lists: [ PerkList.Crafting, PerkList.Lore, PerkList.Supernatural, PerkList.Special ]
+					lists: [PerkList.Crafting, PerkList.Lore, PerkList.Supernatural, PerkList.Special]
 				})
 			]
 		},
@@ -188,8 +188,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Dance Like Embers',
 			description: 'You dart from skirmish to skirmish leaving an ephemeral doppelganger of fire in your wake.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 3,
 			sections: [
@@ -201,8 +201,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Heat Wave',
 			description: 'Toasty.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'All enemies',
 			cost: 3,
 			sections: [
@@ -221,8 +221,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Smoke on the Wind',
 			description: 'Your body grows hazy and you briefly fade to an incorporeal state.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 3,
 			sections: [
@@ -234,17 +234,17 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Wavering Flame',
 			description: 'The heat of your movement plays tricks on your foes’ eyes.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Ranged, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee(), FactoryLogic.distance.createRanged(5) ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee(), FactoryLogic.distance.createRanged(5)],
 			target: '2 creatures or objects',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '3 damage; R < [weak], blinded (EoT)',
-						tier2: '4 damage; R < [average], blinded (EoT)',
-						tier3: '6 damage; R < [strong], blinded (EoT)'
+						tier1: '3 damage; R < [слабкий], blinded (EoT)',
+						tier2: '4 damage; R < [середній], blinded (EoT)',
+						tier3: '6 damage; R < [сильний], blinded (EoT)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A blinded creature has line of effect only to creatures and objects within 2 squares of them.')
@@ -255,8 +255,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Grasp and Immolate',
 			description: 'There may be such thing as too warm of an embrace.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: '1 creature or object',
 			cost: 5,
 			sections: [
@@ -276,8 +276,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Rake Over the Coals',
 			description: 'They drag their feet, but they only kick up more fire.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: '1 creature or object',
 			cost: 5,
 			sections: [
@@ -297,17 +297,17 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Searing Strike',
 			description: 'Memory of your steel radiates oppressive heat.',
 			type: FactoryLogic.type.createMain(),
-			keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-			distance: [ FactoryLogic.distance.createMelee() ],
+			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+			distance: [FactoryLogic.distance.createMelee()],
 			target: '1 creature or object',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '5 + A damage; M < [weak], the target has fire weakness 5 (save ends)',
-						tier2: '8 + A damage; M < [average], the target has fire weakness 5 (save ends)',
-						tier3: '11 + A damage; M < [strong], the target has fire weakness 5 (save ends)'
+						tier1: '5 + A damage; M < [слабкий], the target has fire weakness 5 (save ends)',
+						tier2: '8 + A damage; M < [середній], the target has fire weakness 5 (save ends)',
+						tier3: '11 + A damage; M < [сильний], the target has fire weakness 5 (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever the target takes damage, all adjacent enemies take 2 fire damage.')
@@ -318,8 +318,8 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			name: 'Smoldering Sword',
 			description: 'Embers and ash rise and coalesce into a solid mass, honed to an edge and ready to command.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-			distance: [ FactoryLogic.distance.createRanged(5) ],
+			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+			distance: [FactoryLogic.distance.createRanged(5)],
 			target: 'Special',
 			cost: 5,
 			sections: [
@@ -336,8 +336,8 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			name: 'Demoralizing Incense',
 			description: 'Your talismans burn with an acrid smell that distracts and sows doubt.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'All enemies',
 			cost: 7,
 			sections: [
@@ -349,8 +349,8 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			name: 'Focusing Incense',
 			description: 'Your talismans burn with an earthy smell that sharpens your focus.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self and all allies',
 			cost: 7,
 			sections: [
@@ -362,8 +362,8 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			name: 'Invigorating Incense',
 			description: 'Your talismans burn with a sweet smell that affirms and empowers.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self and all non-minion allies',
 			cost: 7,
 			sections: [
@@ -375,8 +375,8 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			name: 'Revitalizing Incense',
 			description: 'Your talismans burn with a floral smell that heals and reinvigorates.',
 			type: FactoryLogic.type.createManeuver(),
-			keywords: [ AbilityKeyword.Magic ],
-			distance: [ FactoryLogic.distance.createSelf() ],
+			keywords: [AbilityKeyword.Magic],
+			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self and all allies',
 			cost: 7,
 			sections: [
@@ -399,7 +399,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'j0NHyyP7a0NF1TnH',
-							selected: [ 'Navigate' ]
+							selected: ['Navigate']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'P6VcK01mJc1PkCfH',
@@ -428,8 +428,8 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											name: 'See the Tapestry of Battle',
 											description: 'This section over here could use a patch.',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic ],
-											distance: [ FactoryLogic.distance.createRanged(10) ],
+											keywords: [AbilityKeyword.Magic],
+											distance: [FactoryLogic.distance.createRanged(10)],
 											target: '1 ally',
 											cost: 5,
 											sections: [
@@ -446,8 +446,8 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											name: 'Thread the Needle',
 											description: 'Connect the movements, just as you were trained.',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic ],
-											distance: [ FactoryLogic.distance.createSelf() ],
+											keywords: [AbilityKeyword.Magic],
+											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Self',
 											cost: 5,
 											sections: [
@@ -479,7 +479,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'K2orXNVgQlytsh8Q',
-							selected: [ 'Endurance' ]
+							selected: ['Endurance']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'QFwqnEtHE9TZFhXd',
@@ -518,8 +518,8 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											name: 'Color out of Flame',
 											description: 'The hue of your fire entrances you, to the mortal detriment of the Undermind’s enemies.',
 											type: FactoryLogic.type.createManeuver(),
-											keywords: [ AbilityKeyword.Magic ],
-											distance: [ FactoryLogic.distance.createSelf() ],
+											keywords: [AbilityKeyword.Magic],
+											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Self',
 											cost: 5,
 											sections: [
@@ -542,8 +542,8 @@ Changing the color of your flames requires the use of this ability again.`)
 											name: 'Fuel the Engine',
 											description: 'Your heart burns hotter with each strike.',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-											distance: [ FactoryLogic.distance.createMelee() ],
+											keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Two creatures or objects',
 											cost: 5,
 											sections: [
@@ -587,7 +587,7 @@ Changing the color of your flames requires the use of this ability again.`)
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'Jx8AcVTauHPBKCxS',
-							selected: [ 'Escape Artist' ]
+							selected: ['Escape Artist']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'ErWk8f3OqP3RYNJn',
@@ -616,8 +616,8 @@ Changing the color of your flames requires the use of this ability again.`)
 											name: 'Choking Soot',
 											description: 'The blackened sky grants you a vision: your foes reduced to ash.',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Magic ],
-											distance: [ FactoryLogic.distance.createSelf() ],
+											keywords: [AbilityKeyword.Magic],
+											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Self',
 											cost: 5,
 											sections: [
@@ -634,17 +634,17 @@ Changing the color of your flames requires the use of this ability again.`)
 											name: 'Vortex in the Smog',
 											description: 'Draw them in, then slip out.',
 											type: FactoryLogic.type.createMain(),
-											keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-											distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+											keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 											target: 'All enemies',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Agility,
-														tier1: 'Pull 3; M < [weak], restrained (EoT)',
-														tier2: 'Pull 5; M < [average], restrained (EoT)',
-														tier3: 'Pull 7; M < [strong], restrained (EoT)'
+														tier1: 'Pull 3; M < [слабкий], restrained (EoT)',
+														tier2: 'Pull 5; M < [середній], restrained (EoT)',
+														tier3: 'Pull 7; M < [сильний], restrained (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('You can shift up to your speed. If you end the movement with cover or concealment, you are hidden.'),
@@ -701,8 +701,8 @@ const hawthorn: Kit = {
 				name: 'Put Down Roots',
 				description: 'Unwavering in the storm.',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Area ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Area],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'Self',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Until the start of your next turn, your stability is increased by 2. You and allies in the area each gain 1 surge and can spend a Recovery.'),
@@ -722,8 +722,8 @@ const hawthorn: Kit = {
 				name: 'Untame the Land',
 				description: 'Your talismans imbue you with a vivid memory of the wode before war or time.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 				target: 'All enemies',
 				cost: 'signature',
 				sections: [
@@ -777,11 +777,11 @@ const hazel: Kit = {
 				name: 'Shiver with Anticipation',
 				description: 'Remove the cause, but not the symptom.',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Area ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Area],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'All enemies',
 				sections: [
-					FactoryLogic.createAbilitySectionText('The next strike against each target gains an edge and each target is additionally I < [weak] weakened (save ends).'),
+					FactoryLogic.createAbilitySectionText('The next strike against each target gains an edge and each target is additionally I < [слабкий] weakened (save ends).'),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
 						effect: 'You or an ally in the area can make a melee free strike.'
@@ -798,8 +798,8 @@ const hazel: Kit = {
 				name: 'Peer Beyond the Veil',
 				description: 'The line between what is and what will be has never been clearer.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 				target: 'All enemies',
 				cost: 'signature',
 				sections: [
@@ -825,7 +825,7 @@ const hazel: Kit = {
 			description: `
 | Talisman | Stoke the Flame Effect |
 | :--- | :--- |
-| Dagaz | All targets of the ability are R < [average] weakened (EoT). If the target is hidden, the ability deals extra psychic damage equal to twice your Reason score to one creature it is targeting. |
+| Dagaz | All targets of the ability are R < [середній] weakened (EoT). If the target is hidden, the ability deals extra psychic damage equal to twice your Reason score to one creature it is targeting. |
 | Laguz | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, the ability roll is a critical hit on double rolled values (e.g. two 6s) instead of 19 or higher. |
 | Kaunan | The ability gains an edge. If the ability is made with a double edge against a creature that is frightened or weakened, then the target gains 1 Heroic Resource after resolving the ability. |`
 		})
@@ -854,8 +854,8 @@ const rosewood: Kit = {
 				name: 'Speed of Sound',
 				description: 'In a clap of thunder, you flash across the battlefield, your poised form burned into the eyes of your foes.',
 				type: FactoryLogic.type.createManeuver(),
-				keywords: [ AbilityKeyword.Magic, AbilityKeyword.Area ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 }) ],
+				keywords: [AbilityKeyword.Magic, AbilityKeyword.Area],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'All enemies',
 				sections: [
 					FactoryLogic.createAbilitySectionText('You teleport up to 3 squares. In the square you teleport from, you leave an afterimage that lasts until the end of the round. All targets are taunted by the afterimage. You can push one creature you are adjacent to after you teleport a number of squares equal to the distance you teleported.'),
@@ -875,16 +875,16 @@ const rosewood: Kit = {
 				name: 'Resonate',
 				description: 'Your talismans imbue you with the resonance of a hollow trunk reaching up from the Undermind.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-				distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 }) ],
+				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 				target: 'All enemies',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Reason,
 							tier1: '2 sonic damage',
-							tier2: '3 sonic damage; R < [average], slowed (save ends)',
-							tier3: '4 sonic damage; R < [strong], slowed (save ends)'
+							tier2: '3 sonic damage; R < [середній], slowed (save ends)',
+							tier3: '4 sonic damage; R < [сильний], slowed (save ends)'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
@@ -902,7 +902,7 @@ const rosewood: Kit = {
 | :--- | :--- |
 | Gebo | The target gains temporary Stamina equal to your Reason score, or equal to 5 + your level if the ability has a double edge. |
 | Othalan | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, they can additionally make a free strike after the ability. |
-| Uruz | The ability gains an edge. All enemies adjacent to the target are P < [average] frightened of the target (EoT). Enemies who are already slowed automatically fail to resist the potency. |`
+| Uruz | The ability gains an edge. All enemies adjacent to the target are P < [середній] frightened of the target (EoT). Enemies who are already slowed automatically fail to resist the potency. |`
 		})
 	]
 };
@@ -1068,8 +1068,8 @@ Your connection with the Undermind lets you share senses with it. You can search
 					name: 'Tendrils of the Undermind',
 					description: '',
 					type: FactoryLogic.type.createMain(),
-					keywords: [ AbilityKeyword.Magic ],
-					distance: [ FactoryLogic.distance.createSelf() ],
+					keywords: [AbilityKeyword.Magic],
+					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Self',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Until the end of the round, your Stoke the Flame ability gains a distance bonus of +5 and you don’t need line of effect to target allies with your Stoke the Flame ability.')

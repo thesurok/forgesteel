@@ -114,7 +114,7 @@ You also have special minions at your disposal called **signature minions**, low
 
 **Individual Maneuvers**: An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from prone or escaping a grab. If they do, they can’t take part in their squad’s main action or maneuver.
 
-**Characteristics**: Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion’s stat block refers to an R or uses a potency (such as M < [weak]). 
+**Characteristics**: Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion’s stat block refers to an R or uses a potency (such as M < [слабкий]). 
 
 **Unconscious**: If you are unconscious or unable to act on your turn, you can’t summon new minions. Additionally, your remaining minions can’t deal damage; they can only act to bring you to safety.
 
@@ -142,7 +142,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('R damage. If the target has R < [weak], they are slowed (save ends).'),
+							FactoryLogic.createAbilitySectionText('R damage. If the target has R < [слабкий], they are slowed (save ends).'),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Special',
 								effect: 'This ability has the Charge keyword when it’s used as a melee strike.'
@@ -389,7 +389,7 @@ Your fixture gains additional features at 5th and 9th level.`
 You conjure a kit for yourself. This kit includes an implement, such as a rod or a baton, which grants you the following benefits:
 
 * The damage of your Summoner Strike ability increases to twice your Reason score.
-* The potency of your Summoner Strike ability increases to R < [average].
+* The potency of your Summoner Strike ability increases to R < [середній].
 * The distance of your Summoner Strike ability is now equal to your Summoner’s Range.`,
 					tag: 'summoner-strike'
 				}),
@@ -715,7 +715,7 @@ Your champion gains additional features at 10th level. This includes a special C
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-9-1a',
 					name: 'Kit Improvement',
-					description: 'The potency of your Summoner Strike ability increases to R < [strong].',
+					description: 'The potency of your Summoner Strike ability increases to R < [сильний].',
 					tag: 'summoner-strike'
 				}),
 				FactoryLogic.feature.createChoice({
@@ -842,7 +842,7 @@ Each of your minions’ Stamina improves as shown in the table. Additionally, ea
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -939,7 +939,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			target: 'Special',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each minion under your control during the encounter is the target of the following effect:The target’s strikes can inflict I < [weak] taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each minion under your control during the encounter is the target of the following effect:The target’s strikes can inflict I < [слабкий] taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1007,7 +1007,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			target: 'Special',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, each minion under your control during the encounter is the target of the following effect. The first time on a turn that the target moves through an enemy’s space, the enemy can choose to shift 1 square or be M < [weak] (or M < [average] if the target is larger than the enemy) knocked prone. The potency increases by 1 for each subsequent target that moves through the enemy’s space during the same move action.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, each minion under your control during the encounter is the target of the following effect. The first time on a turn that the target moves through an enemy’s space, the enemy can choose to shift 1 square or be M < [слабкий] (or M < [середній] if the target is larger than the enemy) knocked prone. The potency increases by 1 for each subsequent target that moves through the enemy’s space during the same move action.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1021,7 +1021,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You summon a temporary squad containing 6 of your signature minions regardless of your minion maximum within distance. Whenever one of these minions deals damage to an enemy, the enemy is R < [average] compelled to move 5 squares toward the source of the damage (provoking opportunity attacks). The potency increases by 1 for enemies targeted by two or more of these minions.
+You summon a temporary squad containing 6 of your signature minions regardless of your minion maximum within distance. Whenever one of these minions deals damage to an enemy, the enemy is R < [середній] compelled to move 5 squares toward the source of the damage (provoking opportunity attacks). The potency increases by 1 for enemies targeted by two or more of these minions.
 
 These minions die at the end of your turn, activate no effects upon death, and you gain no essence from their deaths`)
 			]
@@ -1066,9 +1066,9 @@ These minions die at the end of your turn, activate no effects upon death, and y
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '8 + R damage; R < [weak], dazed (save ends)',
-						tier2: '12 + R damage; R < [average], dazed (save ends)',
-						tier3: '16 + R damage; R < [strong], dazed (save ends)'
+						tier1: '8 + R damage; R < [слабкий], dazed (save ends)',
+						tier2: '12 + R damage; R < [середній], dazed (save ends)',
+						tier3: '16 + R damage; R < [сильний], dazed (save ends)'
 					})
 				)
 			]
@@ -1086,9 +1086,9 @@ These minions die at the end of your turn, activate no effects upon death, and y
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 psychic or sonic damage; I < [weak] frightened of you (save ends)',
-						tier2: '5 psychic or sonic damage; I < [average] frightened of you and all allies (EoT)',
-						tier3: '7 psychic or sonic damage; I < [strong] frightened of you and all allies (save ends)'
+						tier1: '2 psychic or sonic damage; I < [слабкий] frightened of you (save ends)',
+						tier2: '5 psychic or sonic damage; I < [середній] frightened of you and all allies (EoT)',
+						tier3: '7 psychic or sonic damage; I < [сильний] frightened of you and all allies (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can use this ability as if in the space of one of your minions within your Summoner’s Range.')
@@ -1125,9 +1125,9 @@ Each target can immediately make each of their saving throws and stand up from p
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '5 damage; M < [weak] prone and can’t stand (save ends)',
-						tier2: '8 damage; M < [average] prone and can’t stand (save ends)',
-						tier3: '11 damage; M < [strong] prone and can’t stand (save ends)'
+						tier1: '5 damage; M < [слабкий] prone and can’t stand (save ends)',
+						tier2: '8 damage; M < [середній] prone and can’t stand (save ends)',
+						tier3: '11 damage; M < [сильний] prone and can’t stand (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can use this ability as if in the space of one of your minions within your Summoner’s Range.'),
@@ -1150,7 +1150,7 @@ Each target can immediately make each of their saving throws and stand up from p
 				FactoryLogic.createAbilitySectionText(`
 You can use this ability as if in the space of one of your minions within your Summoner’s Range.
 
-The target is R < [average] weakened (save ends).
+The target is R < [середній] weakened (save ends).
 
 Until the end of the encounter, whenever a target gets a tier 1 result on a strike, they deal half damage. If a target was striking a creature adjacent to one of their allies, they target their ally instead.`)
 			]
@@ -1197,7 +1197,7 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 				FactoryLogic.createAbilitySectionText(`
 Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 round.
 
-A leader or a solo enemy in the area that has R, I, or P < [average] is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.`)
+A leader or a solo enemy in the area that has R, I, or P < [середній] is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.`)
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1213,9 +1213,9 @@ A leader or a solo enemy in the area that has R, I, or P < [average] is weakened
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '6 damage; push 4 M < [weak] push is vertical',
-						tier2: '10 damage; push 5 M < [average] push is vertical',
-						tier3: '14 damage; push 6 M < [strong] push is vertical'
+						tier1: '6 damage; push 4 M < [слабкий] push is vertical',
+						tier2: '10 damage; push 5 M < [середній] push is vertical',
+						tier3: '14 damage; push 6 M < [сильний] push is vertical'
 					})
 				),
 				FactoryLogic.createAbilitySectionText(`

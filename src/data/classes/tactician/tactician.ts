@@ -321,7 +321,7 @@ You can’t gain more than one benefit from the same trigger.`),
 						{
 							tag: '',
 							trigger: 'Finish a respite',
-							value: 'XP gained'
+							value: 'Отримання досвіду'
 						}
 					],
 					description: `
@@ -394,9 +394,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; M < [weak], dazed (save ends)',
-						tier2: '5 + M damage; M < [average], dazed (save ends)',
-						tier3: '8 + M damage; M < [strong], dazed (save ends)'
+						tier1: '3 + M damage; M < [слабкий], dazed (save ends)',
+						tier2: '5 + M damage; M < [середній], dazed (save ends)',
+						tier3: '8 + M damage; M < [сильний], dazed (save ends)'
 					})
 				)
 			]
@@ -478,9 +478,9 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '4 + M damage; R < [weak], weakened (save ends)',
-						tier2: '6 + M damage; R < [average], weakened (save ends)',
-						tier3: '10 + M damage; R < [strong], weakened (save ends)'
+						tier1: '4 + M damage; R < [слабкий], weakened (save ends)',
+						tier2: '6 + M damage; R < [середній], weakened (save ends)',
+						tier3: '10 + M damage; R < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Before the start of your next turn, the first time any ally deals damage to any target marked by you, that ally can spend a Recovery.')
@@ -545,7 +545,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [average], the target is frightened of the creature who dealt the damage (save ends).')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [середній], the target is frightened of the creature who dealt the damage (save ends).')
 			]
 		}),
 		FactoryLogic.createAbility({
