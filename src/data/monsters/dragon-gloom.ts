@@ -121,7 +121,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),

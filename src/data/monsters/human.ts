@@ -59,7 +59,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 				cost: 3,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-				target: 'Each enemy and object in the area',
+				target: 'Кожен ворог та обʼєкт у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						tier1: '4 corruption damage; A<0 slowed (save ends)',
@@ -769,7 +769,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

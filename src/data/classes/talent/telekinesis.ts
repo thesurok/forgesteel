@@ -168,7 +168,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-									target: 'Each enemy and object in the area',
+									target: 'Кожен ворог та обʼєкт у зоні',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
@@ -271,7 +271,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createSpecial('Special')],
-									target: 'Each enemy and object in the area',
+									target: 'Кожен ворог та обʼєкт у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Make a power roll to determine the area of this ability. Each target is vertical pushed 6 squares. You can target only objects of size 1L or smaller.'),
@@ -301,7 +301,7 @@ export const telekinesis: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each enemy and object in the area',
+									target: 'Кожен ворог та обʼєкт у зоні',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(

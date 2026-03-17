@@ -3759,7 +3759,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Each enemy and object in the area',
+				target: 'Кожен ворог та обʼєкт у зоні',
 				cost: 11,
 				repeatable: false,
 				minLevel: 9,

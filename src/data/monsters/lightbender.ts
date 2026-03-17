@@ -207,7 +207,7 @@ export const lightbender: MonsterGroup = {
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

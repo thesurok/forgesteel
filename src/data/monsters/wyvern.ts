@@ -218,7 +218,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 6, within: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,

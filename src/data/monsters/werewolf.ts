@@ -152,7 +152,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,

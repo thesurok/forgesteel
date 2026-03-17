@@ -247,7 +247,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSpecial('∞ × 3 line within 1')],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

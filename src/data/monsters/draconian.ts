@@ -348,7 +348,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,

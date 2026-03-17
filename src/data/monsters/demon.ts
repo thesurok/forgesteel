@@ -1393,7 +1393,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 3, within: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

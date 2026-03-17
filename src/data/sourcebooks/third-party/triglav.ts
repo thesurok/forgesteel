@@ -900,7 +900,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
-			target: 'Each enemy and object in the area',
+			target: 'Кожен ворог та обʼєкт у зоні',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

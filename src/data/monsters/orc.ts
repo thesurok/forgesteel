@@ -808,7 +808,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

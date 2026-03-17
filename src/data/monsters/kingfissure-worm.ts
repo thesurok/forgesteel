@@ -82,7 +82,7 @@ export const kingfissureWorm: MonsterGroup = {
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-				target: 'Each enemy and object in the area',
+				target: 'Кожен ворог та обʼєкт у зоні',
 				cost: 7,
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
@@ -276,7 +276,7 @@ export const kingfissureWorm: MonsterGroup = {
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

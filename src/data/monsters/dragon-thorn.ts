@@ -121,7 +121,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						cost: 'signature',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),

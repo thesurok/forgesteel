@@ -609,7 +609,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Burning Oil',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 20, value2: 1, within: 1 })],
-						target: 'Each enemy and object in the area',
+						target: 'Кожен ворог та обʼєкт у зоні',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test.**'),
