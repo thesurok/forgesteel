@@ -12,11 +12,11 @@ import { harlequinMask } from '@/data/classes/shadow/harlequin-mask';
 
 export const shadow: HeroClass = {
 	id: 'class-shadow',
-	name: 'Shadow',
+	name: 'Тінь',
 	description: `
-Subtlety is your art, the tip of the blade your brush. You studied at a secret college, specializing in alchemy, illusion, or shadow-magics. Your training and knowledge place you among the elite ranks of assassins, spies, and commandos. But more potent than any weapon or sorcery is your insight into your enemies’ weaknesses.
+Тонкість — ваше мистецтво, вістря клинка — ваш пензель. Ви навчалися в таємному коледжі, що спеціалізується на алхімії, ілюзіях або магії тіні. Ваше навчання та знання ставлять вас в еліту вбивць, шпигунів і командосів. Але могутніша за будь-яку зброю чи чаклунство — ваша прозорливість у виявленні слабкостей ворогів.
 
-As a shadow, you possess abilities that deal significant damage, enable you to move swiftly across the battlefield and evade hazards, and allow you to fade from notice even in the midstof the most intense combat encounters. You also possess more skills than any other hero.`,
+Як Тінь, ви володієте здібностями, що завдають значної шкоди, дозволяють швидко маневрувати на полі бою й уникати небезпек, а також зникати з поля зору навіть у розпал найзапекліших сутичок. Ви також маєте більше навичок, ніж будь-який інший герой.`,
 	type: 'standard',
 	subclassName: 'Shadow College',
 	subclassCount: 1,
@@ -41,23 +41,23 @@ As a shadow, you possess abilities that deal significant damage, enable you to m
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'shadow-resource',
-					name: 'Insight',
+					name: 'Прозорливість',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '1d3'
 						},
 						{
 							tag: 'deal-damage',
-							trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
+							trigger: 'Першого разу в кожному раунді бою, коли ви завдаєте шкоди, що включає 1 або більше сплесків',
 							value: '1'
 						}
 					],
 					details: `
-When you use a heroic ability that has a power roll, that ability costs 1 less insight if you have an edge or double edge on it.
+Коли ви використовуєте героїчну здібність, яка має кидок сили, її вартість зменшується на 1 Прозорливість, якщо у вас є перевага або подвійна перевага щодо неї.
 
-If the ability has multiple targets, the cost is reduced even if the ability has an edge or double edge against only one target.`
+Якщо здібність має кілька цілей, вартість зменшується навіть якщо перевага або подвійна перевага є лише проти однієї цілі.`
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-1',
@@ -73,14 +73,14 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-1-5',
-						name: 'Hesitation Is Weakness',
-						description: 'Keep up the attack. Never give them a moment’s grace.',
-						type: FactoryLogic.type.createTrigger('Another hero ends their turn. That hero can’t have used this ability to start their turn.', { free: true }),
+						name: 'Вагання — слабкість',
+						description: 'Продовжуйте атаку. Ніколи не даруйте їм жодної хвилини пощади.',
+						type: FactoryLogic.type.createTrigger('Інший герой завершує свій хід. Той герой не міг використовувати цю здібність для початку свого ходу.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						cost: 1,
 						sections: [
-							FactoryLogic.createAbilitySectionText('You take your turn after the triggering hero.')
+							FactoryLogic.createAbilitySectionText('Ви виконуєте свій хід після героя-ініціатора.')
 						]
 					})
 				}),
@@ -116,13 +116,13 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-3-1',
-						name: 'Careful Observation',
-						description: 'A moment of focus leaves a foe firmly in your sights.',
+						name: 'Ретельне спостереження',
+						description: 'Миті концентрації достатньо, щоб міцно зафіксувати ворога у прицілі.',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSpecial('20 squares')],
 						target: 'Одна істота',
 						sections: [
-							FactoryLogic.createAbilitySectionText('As long as you remain within distance of the target, maintain line of effect to them, and strike no other creature first, you gain a surge and an edge on the next strike you make against the assessed creature.')
+							FactoryLogic.createAbilitySectionText('Поки ви залишаєтеся в межах дистанції до цілі, підтримуєте лінію ефекту та не вражаєте іншу істоту першою, ви отримуєте сплеск і перевагу на наступний удар по оціненій істоті.')
 						]
 					})
 				}),
@@ -137,15 +137,15 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 			features: [
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'shadow-4-1a',
-					name: 'Characteristic Increase: Agility',
-					description: 'Your Agility score increases to 3',
+					name: 'Підвищення характеристики: Ловкість',
+					description: 'Ваш показник Ловкості збільшується до 3',
 					characteristic: Characteristic.Agility,
 					value: 1
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-4-1b',
-					name: 'Characteristic Increase: Additional',
-					description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.',
+					name: 'Підвищення характеристики: Додаткове',
+					description: 'Додатково ви можете підвищити одну зі своїх характеристик на 1, до максимуму 3.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createCharacteristicBonus({
@@ -183,25 +183,25 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-4-2',
-					name: 'Keep It Down',
-					description: 'While conversing with any creature you share a language with, you can decide whether anyone else can perceive what you’re conveying, even while yelling.'
+					name: 'Тримай тихо',
+					description: 'Під час розмови з будь-якою істотою, з якою ви ділите мову, ви можете вирішувати, чи можуть інші сприймати те, що ви передаєте, навіть якщо ви кричите.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-4-3a',
-					name: 'Night Watch',
-					description: 'Your sense for stealth shows those around you how to evade notice. While you are hidden, enemies take a bane on tests made to search for you or other hidden creatures within 10 squares of you.'
+					name: 'Нічне чергування',
+					description: 'Ваша майстерність у прихованні вчить оточуючих уникати викриття. Поки ви заховані, вороги отримують штрафи на перевірки пошуку вас або інших захованих істот у межах 10 клітинок.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-4-3b',
-						name: 'Night Watch',
-						description: 'A steely dagger from out of the blue knocks another weapon off course.',
-						type: FactoryLogic.type.createTrigger('The target takes damage from another creature’s ability while you are hidden.'),
+						name: 'Нічне чергування',
+						description: 'Зненацька кинджал збиває іншу зброю з курсу.',
+						type: FactoryLogic.type.createTrigger('Ціль отримує шкоду від здібності іншої істоти, поки ви заховані.'),
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target takes half the damage. You remain hidden.')
+							FactoryLogic.createAbilitySectionText('Ціль отримує половину шкоди. Ви залишаєтесь захованими.')
 						]
 					})
 				}),
@@ -215,9 +215,9 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'shadow-4-6',
-					name: 'Surge of Insight',
+					name: 'Сплеск Прозорливості',
 					tag: 'deal-damage 2',
-					trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
+					trigger: 'Першого разу в кожному раунді бою, коли ви завдаєте шкоди, що включає 1 або більше сплесків',
 					value: '2',
 					replacesTags: ['deal-damage']
 				})
@@ -241,19 +241,19 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-6-2',
-						name: 'Umbral Form',
-						description: 'You lose control of yourself, becoming a shadow creature dripping with ash.',
+						name: 'Тіньова форма',
+						description: 'Ви втрачаєте контроль над собою й перетворюєтеся на тіньову істоту, що стікає попелом.',
 						type: FactoryLogic.type.createManeuver(),
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('This transformation lasts until the end of the encounter, until you are dying, or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:'),
-							FactoryLogic.createAbilitySectionText('- You can automatically climb at full speed while moving.'),
-							FactoryLogic.createAbilitySectionText('- Enemies’ spaces don’t count as difficult terrain for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.'),
-							FactoryLogic.createAbilitySectionText('- If you end your turn with cover or concealment from another creature, you are automatically hidden from that creature.'),
-							FactoryLogic.createAbilitySectionText('- You gain 1 surge at the start of each of your turns.'),
-							FactoryLogic.createAbilitySectionText('- You have corruption immunity equal to 5 + your level.'),
-							FactoryLogic.createAbilitySectionText('- Creatures gain an edge on strikes against you.'),
-							FactoryLogic.createAbilitySectionText('- You take a bane on Presence tests made to interact with other creatures.')
+							FactoryLogic.createAbilitySectionText('Ця трансформація триває до кінця сутички, доки ви не опинитеся вмираючим, або до 1 години безперервної концентрації поза боєм. Ви отримуєте такі ефекти у цій формі:'),
+							FactoryLogic.createAbilitySectionText('- Ви можете автоматично підніматися повною швидкістю під час руху.'),
+							FactoryLogic.createAbilitySectionText('- Клітини ворогів не рахуються для вас як складна місцевість. Ворог отримує корупційну шкоду, рівну вашому показнику Ловкості, вперше коли ви проходите їх клітину за хід.'),
+							FactoryLogic.createAbilitySectionText('- Якщо ви завершуєте свій хід маючи укриття або прихованість від іншої істоти, ви автоматично є захованими від тієї істоти.'),
+							FactoryLogic.createAbilitySectionText('- Ви отримуєте 1 сплеск на початку кожного свого ходу.'),
+							FactoryLogic.createAbilitySectionText('- Ви маєте імунітет до корупції, рівний 5 + ваш рівень.'),
+							FactoryLogic.createAbilitySectionText('- Істоти отримують перевагу на удари проти вас.'),
+							FactoryLogic.createAbilitySectionText('- Ви отримуєте штраф на перевірки Присутності при взаємодії з іншими істотами.')
 						]
 					})
 				})
@@ -289,9 +289,9 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'shadow-7-2',
-					name: 'Keen Insight',
+					name: 'Гостра прозорливість',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '1d3 + 1',
 					replacesTags: ['start']
 				}),
@@ -301,13 +301,13 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-7-4',
-					name: 'Careful Observation Improvement',
-					description: 'You can target two creatures simultaneously with your Careful Observation ability, observing both simultaneously. Making a strike against one target doesn’t end your observation of the other target.'
+					name: 'Удосконалення ретельного спостереження',
+					description: 'Ви можете одночасно націлюватися на дві істоти за допомогою здібності Ретельне спостереження, спостерігаючи за обома. Удар по одній цілі не припиняє спостереження за іншою.',
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-7-5',
-					name: 'Ventriloquist',
-					description: 'Whenever you communicate, you can throw your voice so that it seems to originate from a creature or object within 10 squares. If you are hidden, talking this way doesn’t cause you to be revealed.'
+					name: 'Вентрилоквіст',
+					description: 'Коли ви спілкуєтеся, ви можете кинути голос так, що здається, ніби він походить від істоти або предмета в межах 10 клітинок. Якщо ви заховані, така розмова не розкриває вас.',
 				})
 			]
 		},
@@ -328,11 +328,11 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-9-1',
-					name: 'Gloom Squad',
+					name: 'Загін мороку',
 					description: `
-At the start of each of your turns, you can forgo gaining insight to create 1d6 clones of yourself in unoccupied adjacent spaces. A clone acts on your turn and uses your statistics, except they have 1 Stamina. They are affected by any conditions and effects on you, and last until the start of your next turn. A clone doesn’t have insight and can’t use the Careful Observation ability, the Umbral Form feature, or any triggered actions. On their turn, a clone has a move action, a maneuver, and a main action that they can use only to make a free strike. While making a free strike, a clone must choose targets that you or another clone aren’t also striking.
+На початку кожного вашого ходу ви можете відмовитися від отримання Прозорливості, щоб створити 1d6 клонів себе в порожніх суміжних клітинах. Клон діє під час вашого ходу і використовує ваші показники, за винятком того, що має 1 Витривалість. Клони піддаються тим самим станам і ефектам, що впливають на вас, і тривають до початку вашого наступного ходу. Клон не має Прозорливості і не може використовувати здібність Ретельне спостереження, функцію Тіньової форми або будь-які тригерні дії. У свій хід клон має дію руху, маневр і основну дію, яку може використати лише для виконання безкоштовного удару. Під час виконання безкоштовного удару клон має обирати цілі, яких ви чи інший клон також не атакують.
 
-Outside of combat, you can have one clone active for every 2 Victories you have. If a clone is destroyed, you must wait 1 hour before creating another one.`
+Поза боєм ви можете мати одного активного клона на кожні 2 Перемоги, які у вас є. Якщо клон знищено, ви повинні чекати 1 годину перед створенням наступного.`
 				})
 			]
 		},
@@ -341,15 +341,15 @@ Outside of combat, you can have one clone active for every 2 Victories you have.
 			features: [
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'shadow-10-1a',
-					name: 'Characteristic Increase: Agility',
-					description: 'Your Agility score increases to 5',
+					name: 'Підвищення характеристики: Ловкість',
+					description: 'Ваш показник Ловкості збільшується до 5',
 					characteristic: Characteristic.Agility,
 					value: 1
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-10-1b',
-					name: 'Characteristic Increase: Additional',
-					description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.',
+					name: 'Підвищення характеристики: Додаткове',
+					description: 'Додатково ви можете підвищити одну зі своїх характеристик на 1, до максимуму 5.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createCharacteristicBonus({
@@ -387,9 +387,9 @@ Outside of combat, you can have one clone active for every 2 Victories you have.
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'shadow-10-2',
-					name: 'Death Pool',
+					name: 'Пул смерті',
 					tag: 'deal-damage 3',
-					trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
+					trigger: 'Першого разу в кожному раунді бою, коли ви завдаєте шкоди, що включає 1 або більше сплесків',
 					value: '3',
 					replacesTags: ['deal-damage', 'deal-damage 2']
 				}),
@@ -402,12 +402,12 @@ Outside of combat, you can have one clone active for every 2 Victories you have.
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-10-5',
-					name: 'Careful Observation Improvement',
-					description: 'You can target three creatures simultaneously with your Careful Observation ability.'
+					name: 'Удосконалення ретельного спостереження',
+					description: 'Ви можете одночасно націлюватися на три істоти за допомогою здібності Ретельне спостереження.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-10-6',
-					name: 'Improved Umbral Form',
+					name: 'Покращена тіньова форма',
 					description: `
 You gain full control over the shadow creature you become with your Umbral Form feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you concealment while in this form, and creatures no longer gain an edge on strikes against you.
 
@@ -415,19 +415,19 @@ While you are in your umbral form, you can spend 1 uninterrupted minute concentr
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'shadow-10-7',
-					name: 'Subterfuge',
+					name: 'Підступ',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення перепочинку',
 							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-You can spend subterfuge on your abilities as if it were insight. Additionally, you can spend subterfuge to take additional maneuvers on your turn. You can use one maneuver for each subterfuge you spend.
+Ви можете витрачати Підступ на свої здібності, ніби це була Прозорливість. Додатково ви можете витрачати Підступ, щоб виконувати додаткові маневри у свій хід — по одному маневру за одиницю Підступу.
 
-Subterfuge remains until you spend it.`
+Підступ залишається у вас, доки ви його не витратите.`
 				})
 			]
 		}
@@ -435,8 +435,8 @@ Subterfuge remains until you spend it.`
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-1',
-			name: 'Gasping in Pain',
-			description: 'Your precise strikes let your allies take advantage of a target’s agony.',
+			name: 'Задихаючись від болю',
+			description: 'Ваші точні удари дозволяють союзникам скористатися стражданням цілі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -446,18 +446,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A damage',
-						tier2: '5 + A damage',
-						tier3: '8 + A damage; I < [сильний], prone'
+						tier1: '3 + A шкоди',
+						tier2: '5 + A шкоди',
+						tier3: '8 + A шкоди; I < [сильний], розпластаний'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('One ally of your choice within 5 squares of the target gains 1 surge.')
+				FactoryLogic.createAbilitySectionText('Один обраний вами союзник у межах 5 клітинок від цілі отримує 1 сплеск.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-2',
-			name: 'I Work Better Alone',
-			description: 'It’s better, just you and me. Isn’t it?',
+			name: 'Я краще працюю сам',
+			description: 'Краще — тільки ти й я. Хіба ні?',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -470,18 +470,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A damage',
-						tier2: '6 + A damage',
-						tier3: '9 + A damage'
+						tier1: '3 + A шкоди',
+						tier2: '6 + A шкоди',
+						tier3: '9 + A шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target has none of your allies adjacent to them, you gain 1 surge before making the power roll.')
+				FactoryLogic.createAbilitySectionText('Якщо поруч з ціллю немає жодного вашого союзника, ви отримуєте 1 сплеск перед кидком сили.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-3',
-			name: 'Teamwork Has Its Place',
-			description: 'You attack an enemy as an ally exposes their weakness.',
+			name: 'Командна робота має своє місце',
+			description: 'Ви атакуєте ворога, коли союзник виявляє його слабкість.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -494,18 +494,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A damage',
-						tier2: '6 + A damage',
-						tier3: '9 + A damage'
+						tier1: '3 + A шкоди',
+						tier2: '6 + A шкоди',
+						tier3: '9 + A шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If any ally is adjacent to the target, you gain 1 surge before making the power roll.')
+				FactoryLogic.createAbilitySectionText('Якщо будь-який союзник стоїть поруч із ціллю, ви отримуєте 1 сплеск перед кидком сили.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-4',
-			name: 'You Were Watching The Wrong One',
-			description: 'They can’t watch both of you at once.',
+			name: 'Ти дивився не на того',
+			description: 'Вони не можуть слідкувати за вами обома одночасно.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -515,18 +515,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A damage',
-						tier2: '5 + A damage',
-						tier3: '8 + A damage'
+						tier1: '3 + A шкоди',
+						tier2: '5 + A шкоди',
+						tier3: '8 + A шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('As long as you have one or more allies within 5 squares of the target, you gain 1 surge. If you are flanking the target when you use this ability, choose one ally who is flanking with you. That ally also gains 1 surge.')
+				FactoryLogic.createAbilitySectionText('Поки у вас є один або більше союзників у межах 5 клітинок від цілі, ви отримуєте 1 сплеск. Якщо ви флангуєте ціль під час використання цієї здібності, оберіть одного союзника, що флангує разом із вами. Той союзник також отримує 1 сплеск.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-5',
-			name: 'Disorienting Strike',
-			description: 'Your attack leaves them reeling, allowing you to follow up.',
+			name: 'Дезорієнтуючий удар',
+			description: 'Ваш удар ставить їх у розгубленість, дозволяючи вам добити.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -536,18 +536,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '4 + A damage; slide 2',
-						tier2: '6 + A damage; slide 3',
-						tier3: '10 + A damage; slide 5'
+						tier1: '4 + A шкоди; зрушити на 2',
+						tier2: '6 + A шкоди; зрушити на 3',
+						tier3: '10 + A шкоди; зрушити на 5'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift into any square the target leaves when you slide them.')
+				FactoryLogic.createAbilitySectionText('Ви можете переміститися в будь-яку клітину, яку ціль покидає, коли ви її штовхаєте.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-6',
-			name: 'Eviscerate',
-			description: 'You leave your foe bleeding out after a devastating attack.',
+			name: 'Розпороття',
+			description: 'Після нищівного удару ви лишаєте ворога, що стікає кровʼю.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -559,16 +559,16 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; A < [слабкий], bleeding (save ends)',
-					tier2: '6 + A damage; A < [середній], bleeding (save ends)',
-					tier3: '10 + A damage; A < [сильний], bleeding (save ends)'
+					tier1: '4 + A шкоди; A < [слабкий], кровотеча (рят. кидок закінчує)',
+					tier2: '6 + A шкоди; A < [середній], кровотеча (рят. кидок закінчує)',
+					tier3: '10 + A шкоди; A < [сильний], кровотеча (рят. кидок закінчує)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-7',
-			name: 'Get In Get Out',
-			description: 'Move unexpectedly, strike fast, and be gone!',
+			name: 'Заходь і виходь',
+			description: 'Рухайся непередбачувано, вдарь швидко і зникни!',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -578,39 +578,39 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '5 + A damage',
-						tier2: '8 + A damage',
-						tier3: '11 + A damage'
+						tier1: '5 + A шкоди',
+						tier2: '8 + A шкоди',
+						tier3: '11 + A шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift up to your speed, dividing that movement before or after your strike as desired.')
+				FactoryLogic.createAbilitySectionText('Ви можете пересунутися на відстань до своєї швидкості, розділивши цей рух до або після удару за бажанням.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-8',
-			name: 'Two Throats At Once',
-			description: 'A bargain.',
+			name: 'Одразу дві горлянки',
+			description: 'Угода.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'Two creatures or objects',
+			target: 'Дві істоти або предмети',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 damage',
-					tier2: '6 damage',
-					tier3: '10 damage'
+					tier1: '4 шкоди',
+					tier2: '6 шкоди',
+					tier3: '10 шкоди'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-9',
-			name: 'Coup de Grâce',
-			description: 'Your blade might be the last thing they see.',
+			name: 'Фатальний удар',
+			description: 'Ваш клинок може стати останнім, що вони побачать.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -622,37 +622,37 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '2d6 + 7 + A damage',
-					tier2: '2d6 + 11 + A damage',
-					tier3: '2d6 + 16 + A damage'
+					tier1: '2d6 + 7 + A шкоди',
+					tier2: '2d6 + 11 + A шкоди',
+					tier3: '2d6 + 16 + A шкоди'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-10',
-			name: 'One Hundred Throats',
-			description: 'As you move across the battlefield, every foe within reach feels your wrath.',
+			name: 'Сто горлянок',
+			description: 'Коли ви рухаєтесь полем бою, кожен ворог у досяжності відчує ваш гнів.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You shift up to your speed and make one power roll that targets up to three enemies who came adjacent to you during the move.'),
+				FactoryLogic.createAbilitySectionText('Ви пересуваєтесь на відстань до своєї швидкості і робите один кидок сили, що спрямований на до трьох ворогів, які стали суміжними з вами під час руху.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 damage',
-						tier2: '6 damage',
-						tier3: '9 damage'
+						tier1: '3 шкоди',
+						tier2: '6 шкоди',
+						tier3: '9 шкоди'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-11',
-			name: 'Setup',
-			description: 'Your friends will thank you.',
+			name: 'Підготовка',
+			description: 'Ваші друзі будуть вдячні.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createRanged(5)],
@@ -661,41 +661,41 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '6 + A damage; R < [слабкий], the target has damage weakness 5 (save ends)',
-					tier2: '9 + A damage; R < [середній], the target has damage weakness 5 (save ends)',
-					tier3: '13 + A damage; R < [сильний], the target has damage weakness 5 (save ends)'
+					tier1: '6 + A шкоди; R < [слабкий], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+					tier2: '9 + A шкоди; R < [середній], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+					tier3: '13 + A шкоди; R < [сильний], ціль має вразливість до шкоди 5 (рят. кидок закінчує)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-12',
-			name: 'Shadowstrike',
-			description: 'They have no idea what the college taught you.',
+			name: 'Тіньовий удар',
+			description: 'Вони й гадки не мають, чого вас навчив коледж.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You use a strike signature ability twice.')
+				FactoryLogic.createAbilitySectionText('Ви використовуєте підписну ударну здібність двічі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-13',
-			name: 'Dancer',
-			description: 'You enter a flow state that makes you nearly impossible to pin down.',
+			name: 'Танець',
+			description: 'Ви входите в стан потоку, який робить вас майже неможливим для утримання.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever an enemy moves or is force moved adjacent to you or damages you, you can take the Disengage move action as a free triggered action.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички, коли ворог рухається або примусово переміщується поруч з вами або завдає вам шкоди, ви можете виконати дію відходу (Disengage) як безкоштовну тригерну дію.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-14',
-			name: 'Misdirecting Strike',
-			description: 'Why are you looking at ME?!',
+			name: 'Відволікаючий удар',
+			description: 'Чому ви дивитесь на МЕНЕ?!',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -708,18 +708,18 @@ Subterfuge remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '9 + A damage',
-						tier2: '13 + A damage',
-						tier3: '18 + A damage'
+						tier1: '9 + A шкоди',
+						tier2: '13 + A шкоди',
+						tier3: '18 + A шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target is taunted by a willing ally within 5 squares of you until the end of the target’s next turn.')
+				FactoryLogic.createAbilitySectionText('Ціль провокується добровільним союзником у межах 5 клітинок від вас до кінця наступного ходу цілі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-15',
-			name: 'Pinning Shot',
-			description: 'One missile - placed well and placed hard.',
+			name: 'Приковуючий постріл',
+			description: 'Один снаряд — влучно й потужно.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createRanged(5)],
@@ -728,16 +728,16 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '8 + A damage; A < [слабкий], restrained (save ends)',
-					tier2: '12 + A damage; A < [середній], restrained (save ends)',
-					tier3: '16 + A damage; A < [сильний], restrained (save ends)'
+					tier1: '8 + A шкоди; A < [слабкий], сковування (рят. кидок закінчує)',
+					tier2: '12 + A шкоди; A < [середній], сковування (рят. кидок закінчує)',
+					tier3: '16 + A шкоди; A < [сильний], сковування (рят. кидок закінчує)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-16',
-			name: 'Staggering Blow',
-			description: 'There’s no recovering from this.',
+			name: 'Оголомшливий удар',
+			description: 'Від цього не відновитися.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -749,48 +749,48 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '7 + A damage; M < [слабкий], slowed (save ends)',
-					tier2: '11 + A damage; M < [середній], prone and can’t stand (save ends)',
-					tier3: '16 + A damage; M < [сильний], prone and can’t stand (save ends)'
+					tier1: '7 + A шкоди; M < [слабкий], сповільнений (рят. кидок закінчує)',
+					tier2: '11 + A шкоди; M < [середній], розпластаний і не може стати (рят. кидок закінчує)',
+					tier3: '16 + A шкоди; M < [сильний], розпластаний і не може стати (рят. кидок закінчує)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-17',
-			name: 'Blackout',
-			description: 'You cause a plume of shadow to erupt from your eyes and create a cloud of darkness.',
+			name: 'Затемнення',
+			description: 'Ви викликаєте сплеск тіні з очей і створюєте хмару темряви.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Себе',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to shift to a new location within the area and make a free strike against them.')
+				FactoryLogic.createAbilitySectionText('Чорна хмара заповнює область до кінця вашого наступного ходу, надаючи вам і вашим союзникам прихованість від ворогів. Поки ви перебуваєте в області, коли ворог завершує свій хід у ній, ви можете як безкоштовну тригерну дію переміститися в нове місце в межах області і здійснити проти нього безкоштовний удар.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-18',
-			name: 'Into the Shadows',
-			description: 'You sweep your foe off their feet and plunge them into absolute darkness.',
+			name: 'У тіні',
+			description: 'Ви збиваєте ворога з ніг і занурюєте його в абсолютну темряву.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Одна істота або предмет',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a power roll upon your return.'),
+				FactoryLogic.createAbilitySectionText('Ви та ціль видаляєтесь з карти зустрічі до початку вашого наступного ходу. Ви зʼявляєтесь у клітинах, які покинули, або в найближчих вільних клітинах. По поверненні зробіть кидок сили.'),
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '8 + A corruption damage',
-					tier2: '13 + A corruption damage',
-					tier3: '17 + A corruption damage'
+					tier1: '8 + A корупційної шкоди',
+					tier2: '13 + A корупційної шкоди',
+					tier3: '17 + A корупційної шкоди'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-19',
-			name: 'Shadowfall',
-			description: 'You vanish. They fall. You reappear.',
+			name: 'Падіння тіні',
+			description: 'Ви зникаєте. Вони падають. Ви зʼявляєтесь знову.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
@@ -799,18 +799,18 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '10 damage',
-					tier2: '14 damage',
-					tier3: '20 damage'
+					tier1: '10 шкоди',
+					tier2: '14 шкоди',
+					tier3: '20 шкоди'
 				})),
-				FactoryLogic.createAbilitySectionText('You disappear before making the power roll. After the power roll is resolved, you appear in the first unoccupied space at the far end of the line.')
+				FactoryLogic.createAbilitySectionText('Ви зникаєте перед кидком сили. Після розвʼязання кидка ви зʼявляєтеся в першій вільній клітині на дальньому кінці лінії.')
 
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-20',
-			name: 'You Talk Too Much',
-			description: 'Silence is a virtue. A knife pinning their mouth shut is the next best thing.',
+			name: 'Ти занадто балакучий',
+			description: 'Мовчання — чеснота. Ніж, що затуляє їм рот, — наступне найкраще.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -822,18 +822,18 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '10 + A damage; P < [слабкий], dazed (save ends)',
-					tier2: '15 + A damage; P < [середній], dazed (save ends)',
-					tier3: '21 + A damage; P < [сильний], dazed (save ends)'
+					tier1: '10 + A шкоди; P < [слабкий], приголомшений (рят. кидок закінчує)',
+					tier2: '15 + A шкоди; P < [середній], приголомшений (рят. кидок закінчує)',
+					tier3: '21 + A шкоди; P < [сильний], приголомшений (рят. кидок закінчує)'
 				})),
-				FactoryLogic.createAbilitySectionText('The target can’t communicate with anyone until the end of the encounter.')
+				FactoryLogic.createAbilitySectionText('Ціль не може спілкуватися ні з ким до кінця сутички.')
 
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-21',
-			name: 'Assassinate',
-			description: 'A practiced attack will instantly kill an already weakened foe.',
+			name: 'Убивство',
+			description: 'Практикований удар миттєво вбиває вже ослабленого ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -844,18 +844,18 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '12 + A damage',
-					tier2: '18 + A damage',
-					tier3: '24 + A damage'
+					tier1: '12 + A шкоди',
+					tier2: '18 + A шкоди',
+					tier3: '24 + A шкоди'
 				})),
-				FactoryLogic.createAbilitySectionText('A target who is not a minion, leader, or solo creature and who is winded after taking this damage is reduced to 0 Stamina.')
+				FactoryLogic.createAbilitySectionText('Ціль, яка не є міньйоном, лідером або сольною істотою і яка після отриманої шкоди опиняється в стані "Захеканий", зводиться до 0 Витривалості.')
 
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-22',
-			name: 'Shadowgrasp',
-			description: 'The shadows around you give way, allowing the shadow creature within you to grasp at your foes.',
+			name: 'Тіньовий захват',
+			description: 'Тіні навколо вас відступають, дозволяючи тіньовій істоті всередині вас схоплювати ворогів.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [
@@ -866,17 +866,17 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '11 corruption damage; A < [слабкий] , restrained (save ends)',
-					tier2: '16 corruption damage; A < [середній] , restrained (save ends)',
-					tier3: '21 corruption damage; A < [сильний] , restrained (save ends)'
+					tier1: '11 + A корупційної шкоди; A < [слабкий], сковування (рят. кидок закінчує)',
+					tier2: '16 + A корупційної шкоди; A < [середній], сковування (рят. кидок закінчує)',
+					tier3: '21 + A корупційної шкоди; A < [сильний], сковування (рят. кидок закінчує)'
 				}))
 
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-23',
-			name: 'Speed of Shadows',
-			description: 'You make multiple strikes against a foe before they even notice they’re dead.',
+			name: 'Швидкість тіней',
+			description: 'Ви завдаєте кілька ударів ворогу, ще до того як він усвідомить свою загибель.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [
@@ -885,13 +885,13 @@ Subterfuge remains until you spend it.`
 			target: 'Себе',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You can use a strike signature ability four times, use a strike signature ability that gains an edge three times, or use a strike signature ability that has a double edge twice. You can shift up to 2 squares between each use.')
+				FactoryLogic.createAbilitySectionText('Ви можете використати підписну ударну здібність чотири рази, або підписну здібність, що дає перевагу, тричі, або підписну здібність з подвійною перевагою двічі. Ви можете пересуватися до 2 клітин між кожним використанням.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'shadow-ability-24',
-			name: 'They Always Line Up',
-			description: 'You fire a projectile so fast that it passes through a line of foes, hamstringing them.',
+			name: 'Вони завжди стають в ряд',
+			description: 'Ви випускаєте снаряд так швидко, що він проходить крізь ряд ворогів, калічачи їх.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 			distance: [
@@ -902,9 +902,9 @@ Subterfuge remains until you spend it.`
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '12 damage; M < [слабкий] , slowed (save ends)',
-					tier2: '18 damage; M < [середній] , slowed (save ends)',
-					tier3: '24 damage; M < [сильний] , slowed (save ends)'
+					tier1: '12 шкоди; M < [слабкий], сповільнений (рят. кидок закінчує)',
+					tier2: '18 шкоди; M < [середній], сповільнений (рят. кидок закінчує)',
+					tier3: '24 шкоди; M < [сильний], сповільнений (рят. кидок закінчує)'
 				}))
 
 			]
