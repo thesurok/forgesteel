@@ -24,7 +24,7 @@ export const blackAsh: SubClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport up to 5 squares. If you have concealment or cover at your destination, you can use the Hide maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -42,7 +42,7 @@ export const blackAsh: SubClass = {
 						type: FactoryLogic.type.createTrigger('You take damage.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You halve the damage, then can teleport up to 4 squares after the triggering effect resolves.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -96,7 +96,7 @@ export const blackAsh: SubClass = {
 									type: FactoryLogic.type.createTrigger('You use your In All This Confusion ability.', { free: true }),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You ignore any effects associated with the damage that triggered your In All This Confusion ability. Before you teleport, you can make a free strike against a creature who damaged you to trigger In All This Confusion. After you teleport, you can spend a Recovery.')
@@ -219,7 +219,7 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You shift up to twice your speed, making one power roll that targets each creature you come adjacent to during the shift.'),

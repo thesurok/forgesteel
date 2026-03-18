@@ -721,7 +721,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The spider shifts up to their speed and uses Leg Blade against each creature who comes adjacent to them during the shift. The spider makes one power roll against all targets.')
 						]
@@ -751,7 +751,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						name: 'Skitter',
 						type: FactoryLogic.type.createTrigger('The spider or any ally riding the spider takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The damage is halved, and the spider shifts up to 2 squares after the triggering effect resolves.')
 						]
@@ -809,7 +809,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createManeuver(),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The worg moves up to their speed.')
 						]

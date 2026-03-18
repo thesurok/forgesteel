@@ -61,7 +61,7 @@ export const telekinesis: SubClass = {
 						description: '',
 						type: FactoryLogic.type.createTrigger('You land after a fall, or any falling creature lands within 2 squares of you.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You reduce the falling damage by an amount equal to 2 + your Reason score.')
 						]

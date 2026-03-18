@@ -35,7 +35,7 @@ export const humanTalent = {
 						keywords: [],
 						distance: [
 							{
-								type: 'Self',
+								type: 'Себе',
 								value: 0,
 								value2: 0,
 								within: 0,
@@ -43,7 +43,7 @@ export const humanTalent = {
 								qualifier: ''
 							}
 						],
-						target: 'Self',
+						target: 'Себе',
 						cost: 0,
 						repeatable: false,
 						minLevel: 1,
@@ -113,7 +113,7 @@ export const humanTalent = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -121,7 +121,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -166,7 +166,7 @@ export const humanTalent = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -174,7 +174,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -238,7 +238,7 @@ export const humanTalent = {
 									keywords: [],
 									distance: [
 										{
-											type: 'Self',
+											type: 'Себе',
 											value: 0,
 											value2: 0,
 											within: 0,
@@ -246,7 +246,7 @@ export const humanTalent = {
 											qualifier: ''
 										}
 									],
-									target: 'Self',
+									target: 'Себе',
 									cost: 0,
 									repeatable: false,
 									minLevel: 1,
@@ -808,7 +808,7 @@ export const humanTalent = {
 												keywords: [],
 												distance: [
 													{
-														type: 'Self',
+														type: 'Себе',
 														value: 0,
 														value2: 0,
 														within: 0,
@@ -816,7 +816,7 @@ export const humanTalent = {
 														qualifier: ''
 													}
 												],
-												target: 'Self',
+												target: 'Себе',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -883,7 +883,7 @@ export const humanTalent = {
 											keywords: [],
 											distance: [
 												{
-													type: 'Self',
+													type: 'Себе',
 													value: 0,
 													value2: 0,
 													within: 0,
@@ -891,7 +891,7 @@ export const humanTalent = {
 													qualifier: ''
 												}
 											],
-											target: 'Self',
+											target: 'Себе',
 											cost: 0,
 											repeatable: false,
 											minLevel: 1,
@@ -1072,7 +1072,7 @@ export const humanTalent = {
 								keywords: [],
 								distance: [
 									{
-										type: 'Self',
+										type: 'Себе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -1080,7 +1080,7 @@ export const humanTalent = {
 										qualifier: ''
 									}
 								],
-								target: 'Self',
+								target: 'Себе',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -2668,7 +2668,7 @@ export const humanTalent = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -4208,7 +4208,7 @@ export const humanTalent = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -4216,7 +4216,7 @@ export const humanTalent = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,

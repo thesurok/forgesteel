@@ -42,8 +42,8 @@ export class ExplorationPerkData {
 				name: 'Friend Catapult',
 				description: 'You hurl your ally through the air.',
 				type: FactoryLogic.type.createManeuver(),
-				distance: [ FactoryLogic.distance.createSelf() ],
-				target: 'Self',
+				distance: [FactoryLogic.distance.createSelf()],
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('You grab a willing adjacent ally or object of your size or smaller, then vertical push that target up to a number of squares equal to twice your Might score. If a creature you push falls as a result of this movement, the effective distance of the fall is reduced by a number of squares equal to twice your Might score. When you use this perk, you can’t use it again until you earn 1 or more Victories.')
 				]
@@ -63,8 +63,8 @@ export class ExplorationPerkData {
 				name: 'I\'ve Got You',
 				description: 'You catch a falling ally at the last possible moment.',
 				type: FactoryLogic.type.createTrigger('A willing ally lands on you or adjacent to you when they fall.', { free: true }),
-				distance: [ FactoryLogic.distance.createSelf() ],
-				target: 'Self',
+				distance: [FactoryLogic.distance.createSelf()],
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('You catch your ally. Neither of you takes damage from the fall.')
 				]
@@ -140,7 +140,7 @@ export class ExplorationPerkData {
 				name: 'Ride Along',
 				description: 'You ride behind your companion’s eyes.',
 				type: FactoryLogic.type.createManeuver(),
-				distance: [ FactoryLogic.distance.createMelee() ],
+				distance: [FactoryLogic.distance.createMelee()],
 				target: 'Companion',
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
@@ -166,8 +166,8 @@ While riding along with your companion, you can’t act, except to spend a free 
 				name: 'Wild Rumpus',
 				description: 'The ability to glide like a condor or race like a wolf is intoxicating—but beware the temptation to run yourself to death.',
 				type: FactoryLogic.type.createManeuver({ free: true }),
-				distance: [ FactoryLogic.distance.createSelf() ],
-				target: 'Self',
+				distance: [FactoryLogic.distance.createSelf()],
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Until the end of your next turn you and your companion gain each others’ movement tags as well as your own. You and your companion both use your speed or your companion’s speed, whichever is higher. Once you have used this ability once, each additional time you use it before you finish a respite or gain 1 or more Victories you take damage equal to your level. This Stamina loss can’t be prevented in any way.')
 				]

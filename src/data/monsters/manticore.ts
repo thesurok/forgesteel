@@ -199,7 +199,7 @@ export const manticore: MonsterGroup = {
 						name: 'Cornered Predator',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The manticore shifts up to their speed, then can use Tail Spike against each enemy within distance of that ability.')
 						]
@@ -211,7 +211,7 @@ export const manticore: MonsterGroup = {
 						name: 'Debilitating Poison',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The manticore sours their poison with enmity. Until the end of the encounter, the manticore has a double edge on power rolls against weakened creatures. Additionally, any creature weakened by the manticore’s Tail Spike ability has their speed halved and takes an extra 3 poison damage at the start of each of their turns.')
 						]

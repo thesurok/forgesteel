@@ -152,7 +152,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						name: 'Scramble',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf('while headless')],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bredbeddle shifts up to their speed, and can push each creature who comes within their reach during the movement 1 square. Each square the bredbeddle exits during the movement becomes difficult terrain.')
 						]
@@ -186,7 +186,7 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						type: FactoryLogic.type.createTrigger('A creature targets the bredbeddle with a ranged strike.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bredbeddle uses the same ability against the triggering creature, using that creature’s bonus to any power rolls they have to make.')
 						]

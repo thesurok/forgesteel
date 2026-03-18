@@ -816,7 +816,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 											name: 'Celestial Bell',
 											type: FactoryLogic.type.createTrigger('The Attendant takes damage from an enemy.', { free: true }),
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											sections: [
 												FactoryLogic.createAbilitySectionText('The Attendant rings a bell, and you summon a signature minion into an unoccupied space adjacent to the Attendant.')
 											]

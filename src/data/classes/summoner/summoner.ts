@@ -185,7 +185,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSummoner()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						repeatable: true,
 						sections: [

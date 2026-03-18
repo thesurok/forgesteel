@@ -231,7 +231,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						name: 'Thorned Armor',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The thorns upon the dragon’s scales grow longer and sharper. Until the end of the encounter, any adjacent creature who targets the dragon with a melee strike takes 3 damage. The dragon then uses their Provoking Nettles ability.')
 						]
@@ -243,7 +243,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						name: 'Malign Thicket',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature force moved by the dragon takes 1d3 poison damage, and if they have M<2, they are weakened (save ends).
 

@@ -56,7 +56,7 @@ export const punisher: SubClass = {
 						description: 'When someone is pushed into you, you reach out to steady an ally or send a foe careening off in another direction.',
 						type: FactoryLogic.type.createTrigger('A creature being force moved by another creature enters a space adjacent to you.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You end the forced movement. You can then push the creature up to a number of squares equal to your Might score + 1. The creature takes 1 damage for each square they are moved in this way.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -151,7 +151,7 @@ export const punisher: SubClass = {
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Companion],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Your companion shifts up to their speed and can make a free strike. If within 10 squares of the square from which this movement started, you and up to 10 allies can also shift up to their speed and make free strikes.')
@@ -169,7 +169,7 @@ export const punisher: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Your companion shifts up to their speed. Your companion makes one power roll that targets each enemy your companion comes adjacent to during the shift. If your companion only targets one enemy with this ability, the power roll has an edge.'),

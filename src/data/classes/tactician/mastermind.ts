@@ -72,7 +72,7 @@ You can make this test only once for any encounter or negotiation.`
 						description: 'You have learned to leverage your marked foes’ psychology and goad them into acting before they’re tactically ready.',
 						type: FactoryLogic.type.createTrigger('A creature marked by you uses a strike that targets you or any ally within your line of effect.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can change one target of the strike to you or another ally within your line of effect. The new target must be within distance of the ability and within line of effect of the creature using it.')
 						]
@@ -263,7 +263,7 @@ You can make this test only once for any encounter or negotiation.`
 									description: 'I’ve identified a way to negate their strengths.',
 									type: FactoryLogic.type.createMain(),
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You gain 6 surges. Until the end of the encounter or until you are dying, whenever the Director spends Malice, choose yourself or one ally within 10 squares. The chosen character gains 2 of their Heroic Resource.')

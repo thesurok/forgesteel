@@ -170,7 +170,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						name: 'Wall Leap',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee free strike. If the target of the free strike has M<2, they are knocked prone.')
 						]
@@ -220,7 +220,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						name: 'Full Wolf',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The werewolf transforms into a massive wolf of size 3 until they die or until the end of the encounter. They move to a space that can accommodate their new size and push adjacent creatures out of their way. While in wolf form, they have speed 10 and stability 2, their strikes gain a +2 damage bonus and bestow an additional 1 rage, and the potency of Accursed Bite increases by 1.')
 						]

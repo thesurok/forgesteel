@@ -1186,7 +1186,7 @@ You and your companion each have separate move actions. You have one triggered a
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You spend a Recovery as your partner rips their way out of your chest or climbs from your unnaturally wide jaws. Your partner teleports to your space over any distance, even if they don’t have line of effect to you. Your partner gains temporary Stamina equal to their recovery value.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1954,7 +1954,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You each use a different ability that costs 9 or less ferocity and that uses a maneuver or an action. These abilities cost no ferocity. If an ability lets you spend extra ferocity for an enhanced effect, you can’t do so.')

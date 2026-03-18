@@ -37,7 +37,7 @@ export const polderShadow = {
 						],
 						distance: [
 							{
-								type: 'Self',
+								type: 'Себе',
 								value: 0,
 								value2: 0,
 								within: 0,
@@ -45,7 +45,7 @@ export const polderShadow = {
 								qualifier: ''
 							}
 						],
-						target: 'Self',
+						target: 'Себе',
 						cost: 0,
 						repeatable: false,
 						minLevel: 1,
@@ -156,7 +156,7 @@ export const polderShadow = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -164,7 +164,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -468,7 +468,7 @@ export const polderShadow = {
 								keywords: [],
 								distance: [
 									{
-										type: 'Self',
+										type: 'Себе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -476,7 +476,7 @@ export const polderShadow = {
 										qualifier: ''
 									}
 								],
-								target: 'Self',
+								target: 'Себе',
 								cost: 1,
 								repeatable: false,
 								minLevel: 1,
@@ -1026,7 +1026,7 @@ export const polderShadow = {
 									qualifiers: [],
 									freeStrike: false
 								},
-								target: 'Self',
+								target: 'Себе',
 								minLevel: 1,
 								sections: [
 									{
@@ -1967,7 +1967,7 @@ export const polderShadow = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1975,7 +1975,7 @@ export const polderShadow = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2079,7 +2079,7 @@ export const polderShadow = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2087,7 +2087,7 @@ export const polderShadow = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2121,7 +2121,7 @@ export const polderShadow = {
 				keywords: [],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2129,7 +2129,7 @@ export const polderShadow = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2358,7 +2358,7 @@ export const polderShadow = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2689,7 +2689,7 @@ export const polderShadow = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2697,7 +2697,7 @@ export const polderShadow = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2819,7 +2819,7 @@ export const polderShadow = {
 										],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -2827,7 +2827,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -2878,7 +2878,7 @@ export const polderShadow = {
 										],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -2886,7 +2886,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -3028,7 +3028,7 @@ export const polderShadow = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3036,7 +3036,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3287,7 +3287,7 @@ export const polderShadow = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3295,7 +3295,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3460,7 +3460,7 @@ export const polderShadow = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -3468,7 +3468,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -3524,7 +3524,7 @@ export const polderShadow = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -3532,7 +3532,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4172,7 +4172,7 @@ export const polderShadow = {
 										],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -4180,7 +4180,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4231,7 +4231,7 @@ export const polderShadow = {
 										],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -4239,7 +4239,7 @@ export const polderShadow = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 1,
 										repeatable: false,
 										minLevel: 1,
@@ -4365,7 +4365,7 @@ export const polderShadow = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4373,7 +4373,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,

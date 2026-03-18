@@ -313,7 +313,7 @@ export class RetainerLogic {
 							name: 'Big Windup',
 							type: FactoryLogic.type.createManeuver(),
 							distance: [FactoryLogic.distance.createSelf()],
-							target: 'Self',
+							target: 'Себе',
 							sections: [
 								FactoryLogic.createAbilitySectionText('До початку наступного ходу ретейнера удари по ретейнеру отримують перевагу. На початку наступного ходу ретейнера він отримує 2 сплески, а будь-яка здібність, яку він використає до кінця свого ходу і яка примушує переміщувати істоту, може перемістити цю істоту ще на 2 клітинки.')
 							]
@@ -616,7 +616,7 @@ export class RetainerLogic {
 							name: 'Giddyup!',
 							type: FactoryLogic.type.createMove({ qualifiers: ['encounter'] }),
 							distance: [FactoryLogic.distance.createRanged(5)],
-							target: 'Self',
+							target: 'Себе',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Пеший/тварина зміщується вдвічі більше своєї швидкості. Воно може виконати стрибок як частину цього руху.')
 							]

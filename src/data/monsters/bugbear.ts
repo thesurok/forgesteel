@@ -392,7 +392,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						name: 'Flying Sawblade',
 						type: FactoryLogic.type.createTrigger('The roughneck is vertical force moved by another creature.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The roughneck uses Haymaker against a creature or object at any point during the forced movement, or after falling as a result of it.')
 						]

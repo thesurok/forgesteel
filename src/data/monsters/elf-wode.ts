@@ -896,7 +896,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						type: FactoryLogic.type.createManeuver(),
 						cost: 3,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wodenelg and their rider become invisible until the start of the wodenelg’s next turn.')
 						]

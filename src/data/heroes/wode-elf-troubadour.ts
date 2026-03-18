@@ -710,7 +710,7 @@ export const wodeElfTroubadour = {
 												keywords: [],
 												distance: [
 													{
-														type: 'Self',
+														type: 'Себе',
 														value: 0,
 														value2: 0,
 														within: 0,
@@ -718,7 +718,7 @@ export const wodeElfTroubadour = {
 														qualifier: ''
 													}
 												],
-												target: 'Self',
+												target: 'Себе',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -1764,7 +1764,7 @@ export const wodeElfTroubadour = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1772,7 +1772,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1874,7 +1874,7 @@ export const wodeElfTroubadour = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1882,7 +1882,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2451,7 +2451,7 @@ export const wodeElfTroubadour = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2459,7 +2459,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -2540,7 +2540,7 @@ export const wodeElfTroubadour = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2548,7 +2548,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,
@@ -3473,7 +3473,7 @@ export const wodeElfTroubadour = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 1,
 										repeatable: false,
 										minLevel: 1,

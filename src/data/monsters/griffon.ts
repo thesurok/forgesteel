@@ -40,7 +40,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 				type: FactoryLogic.type.createManeuver(),
 				cost: 3,
 				distance: [FactoryLogic.distance.createSelf()],
-				target: 'Self',
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('The griffon flies up to their speed, and can make a free strike against each creature who makes an opportunity attack against them during this movement.')
 				]
@@ -158,7 +158,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						name: 'Zephyr Feint',
 						type: FactoryLogic.type.createTrigger('The griffon takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The griffon halves the damage, ignores any nondamaging effects associated with it, and shifts up to 2 squares.')
 						]
@@ -217,7 +217,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						name: 'Bound Ahead',
 						type: FactoryLogic.type.createMain(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The griffon shifts up to their speed along the ground in a straight line. Each enemy who comes adjacent to the griffon during this shift can choose to either take 5 damage or be knocked prone.')

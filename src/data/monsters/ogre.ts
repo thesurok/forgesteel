@@ -268,7 +268,7 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 						name: 'Hrraaaaaagh!',
 						type: FactoryLogic.type.createTrigger('The juggernaut takes damage.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The juggernaut moves up to their speed and can make a free strike.')

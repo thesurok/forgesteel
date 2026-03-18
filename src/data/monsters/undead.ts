@@ -425,7 +425,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						name: 'Leap',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ghoul jumps up to 3 squares. If they land on a size 1 enemy, that enemy is knocked prone and the ghoul can make a free strike against them.')
 						]
@@ -564,7 +564,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						name: 'Hidden Movement',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The specter turns invisible, moves up to their speed, and is visible again.')
 						]
@@ -1355,7 +1355,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						name: 'Vampire Celerity',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The vampire spawn can shift 1 square, then move up to their speed. The next ability the vampire uses before the start of their next turn gains an edge.')
 						]
@@ -1417,7 +1417,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						name: 'Hidden Movement',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wraith turns invisible, moves up to their speed, and is visible again.')
 						]
@@ -1568,7 +1568,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						name: 'Land’s Guardian',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mummy lord gains a +2 bonus to speed and can automatically burrow at full speed while moving. They can then use the Dig maneuver. The next time the mummy lord breaches the surface, each enemy within 2 squares of the mummy lord makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(

@@ -269,7 +269,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Takeoff',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Locratix flies up to her speed. Any creature adjacent to the space on the ground she took off from who has A<2 is knocked prone.')
 						]
@@ -365,7 +365,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Parting Gift',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lydixavus flies up to their speed, leaving a size 1S ice mine in the space they took off from. The ice mine explodes when an enemy enters its space, using the power roll for the Ice Lob ability, and targeting the triggering creature and each creature and object adjacent to the ice mine.')
 						]
@@ -377,7 +377,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Wasn\'t Aiming For You',
 						type: FactoryLogic.type.createTrigger('Lydixavus obtains a tier 1 outcome on their signature ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lydixavus uses their signature ability again, targeting a creature within 5 squares of the original target.')
 						]
@@ -468,7 +468,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('An adjacent creature damages Myxovidan with a melee ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Myxovidan recreates the ability to use it against the triggering creature. If the ability has a power roll, Myxovidan uses his highest characteristic score for the roll. If Myxovidan gets a higher tier outcome than the triggering creature, the Director gains 2 Malice.')
 						]
@@ -544,7 +544,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax flies up to his speed and lands in an unoccupied space on the ground. Each creature adjacent to where he lands who has A<2 is knocked prone.')
 						]
@@ -557,7 +557,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						cost: 2,
 						type: FactoryLogic.type.createTrigger('Phrrygalax takes acid, cold, corruption, fire, lightning, or poison damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax takes no damage and instead regains the same amount of Stamina. He then swaps his current damage immunity with the triggering damage type.')
 						]
@@ -569,7 +569,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						name: 'Still Your Tongue!',
 						type: FactoryLogic.type.createTrigger('Phrrygalax hears a creature within 5 squares reciting the oath of Good King Omund’s Dragon Phalanx.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Phrrygalax shifts up to his speed and uses Baneful Blade against the triggering creature. That ability deals an extra 7 damage.')
 						]

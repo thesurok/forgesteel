@@ -151,7 +151,7 @@ export const lightbender: MonsterGroup = {
 						type: FactoryLogic.type.createTrigger('The lightbender takes damage from a strike.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The lightbender halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the lightbender can immediately attempt to hide as a free maneuver.')
 						]
@@ -250,7 +250,7 @@ export const lightbender: MonsterGroup = {
 						type: FactoryLogic.type.createTrigger('The pouncer takes damage from a strike.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The pouncer halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the pouncer can immediately attempt to hide as a free maneuver.')
 						]

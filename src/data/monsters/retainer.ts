@@ -785,7 +785,7 @@ export const retainer: MonsterGroup = {
 						name: 'Magic Arrows',
 						type: FactoryLogic.type.createManeuver({ qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever the arrowswift makes a ranged strike, the strike gains an edge and the arrowswift gains 1 surge that must be used immediately. While the arrowswift’s mentor is adjacent to them, the mentor also gains this benefit.')
 						]
@@ -857,7 +857,7 @@ export const retainer: MonsterGroup = {
 						name: 'Frenzied Bite',
 						type: FactoryLogic.type.createTrigger('An enemy within 5 squares is reduced to 0 Stamina.', { qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gnasher moves up to their speed and can use their signature ability.')
 						]
@@ -887,7 +887,7 @@ export const retainer: MonsterGroup = {
 						name: 'Horrific Feast',
 						type: FactoryLogic.type.createTrigger('The gnasher reduces a creature to 0 Stamina.', { qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gnasher consumes part of the target’s body. The gnasher can spend a Recovery, and each enemy within 5 squares of the gnasher who has I < [середній] is frightened (save ends).')
 						]
@@ -1340,7 +1340,7 @@ export const retainer: MonsterGroup = {
 						name: 'Triumphant Bay',
 						type: FactoryLogic.type.createManeuver({ qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gorer gains 3 surges, and until the start of the gorer’s next turn, strikes made against them and their mentor take a bane.')
 						]
@@ -1415,7 +1415,7 @@ export const retainer: MonsterGroup = {
 						name: 'Blood Oath',
 						type: FactoryLogic.type.createManeuver({ qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the charger’s next turn, the charger and their mentor each have temporary Stamina equal to their Recovery value and a +2 bonus to speed, and they each gain an edge on reactive tests.')
 						]
@@ -1427,7 +1427,7 @@ export const retainer: MonsterGroup = {
 						name: 'Mow ’Em Down',
 						type: FactoryLogic.type.createMain({ qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The charger moves in a straight line up to their speed. During this move, they ignore enemy free strikes, and they can make a melee free strike against any creature they move adjacent to.')
 						]
@@ -1511,7 +1511,7 @@ export const retainer: MonsterGroup = {
 						name: 'Boost',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the sidekick’s mentor moves adjacent to the sidekick at any point during the mentor’s turn, the mentor gains a +1 bonus to speed and can automatically climb at full speed while moving until the end of their turn.')
 						]
@@ -1751,7 +1751,7 @@ export const retainer: MonsterGroup = {
 						name: 'Fire Bad',
 						type: FactoryLogic.type.createTrigger('An ability deals acid or fire damage to the mercenary.', { qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mercenary moves up to their speed. If this movement takes them beyond the distance of the triggering ability, the ability has no effect on them.')
 						]
@@ -1917,7 +1917,7 @@ export const retainer: MonsterGroup = {
 						name: 'Spirit Meld',
 						type: FactoryLogic.type.createMain(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('While adjacent to their mentor, the unquiet spirit enters the mentor’s space. A spirit who enters their mentor’s space this way moves with the mentor, can’t be sensed, and can’t affect or be affected by other creatures or objects. They can’t take main actions, maneuvers, or move actions, except to use this ability to leave their mentor’s space and appear in an adjacent space.')
 						]
@@ -2026,7 +2026,7 @@ export const retainer: MonsterGroup = {
 						name: 'Bat Form',
 						type: FactoryLogic.type.createMove({ qualifiers: ['Encounter'] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The vampire rebel changes their form into a bat. In bat form, their size is 1T and they can fly. The vampire rebel then shifts up to their speed, then regains their true form. If they can’t fit in their current space when they return to their true form, they take 10 damage and are pushed to the nearest unoccupied space.')
 						]

@@ -28,7 +28,7 @@ interface Props {
 }
 
 export const AbilityEditPanel = (props: Props) => {
-	const [ ability, setAbility ] = useState<Ability>(props.ability);
+	const [ability, setAbility] = useState<Ability>(props.ability);
 
 	const getAbilityPage = () => {
 		const setName = (value: string) => {
@@ -85,7 +85,7 @@ export const AbilityEditPanel = (props: Props) => {
 
 		const setTypeQualifiers = (value: string) => {
 			const copy = Utils.copy(ability);
-			copy.type.qualifiers = value ? [ value ] : [];
+			copy.type.qualifiers = value ? [value] : [];
 			setAbility(copy);
 			props.onChange(copy);
 		};
@@ -123,7 +123,7 @@ export const AbilityEditPanel = (props: Props) => {
 
 			switch (distance.type) {
 				case AbilityDistanceType.Self:
-					return 'Self';
+					return 'Себе';
 				case AbilityDistanceType.Melee:
 					return 'Melee';
 				case AbilityDistanceType.Ranged:
@@ -146,7 +146,7 @@ export const AbilityEditPanel = (props: Props) => {
 			const copy = Utils.copy(ability);
 
 			switch (value) {
-				case 'Self':
+				case 'Себе':
 					copy.distance[index] = FactoryLogic.distance.createSelf();
 					break;
 				case 'Melee':
@@ -257,7 +257,7 @@ export const AbilityEditPanel = (props: Props) => {
 					<Select
 						style={{ width: '100%' }}
 						placeholder='Select usage type'
-						options={[ AbilityUsage.MainAction, AbilityUsage.Maneuver, AbilityUsage.Move, AbilityUsage.Trigger, AbilityUsage.VillainAction, AbilityUsage.ChampionAction, AbilityUsage.NoAction, AbilityUsage.Other ].map(option => ({ value: option }))}
+						options={[AbilityUsage.MainAction, AbilityUsage.Maneuver, AbilityUsage.Move, AbilityUsage.Trigger, AbilityUsage.VillainAction, AbilityUsage.ChampionAction, AbilityUsage.NoAction, AbilityUsage.Other].map(option => ({ value: option }))}
 						optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 						value={ability.type.usage}
 						onChange={setTypeUsage}
@@ -337,7 +337,7 @@ export const AbilityEditPanel = (props: Props) => {
 									<Select
 										style={{ width: '100%' }}
 										placeholder='Distance'
-										options={[ 'Self', 'Melee', 'Ranged', 'Area', 'Line', 'Summoner', 'Special' ].map(option => ({ value: option }))}
+										options={['Себе', 'Melee', 'Ranged', 'Area', 'Line', 'Summoner', 'Special'].map(option => ({ value: option }))}
 										optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 										value={getDistanceMainType(n)}
 										onChange={value => setDistanceMainType(n, value)}
@@ -353,7 +353,7 @@ export const AbilityEditPanel = (props: Props) => {
 												style={{ width: '100%' }}
 												disabled={getDistanceMainType(n) !== 'Area'}
 												placeholder='Area type'
-												options={[ AbilityDistanceType.Aura, AbilityDistanceType.Burst, AbilityDistanceType.Cube, AbilityDistanceType.Wall ].map(option => ({ value: option }))}
+												options={[AbilityDistanceType.Aura, AbilityDistanceType.Burst, AbilityDistanceType.Cube, AbilityDistanceType.Wall].map(option => ({ value: option }))}
 												optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 												value={distance.type}
 												onChange={value => setDistanceType(n, value)}
@@ -361,12 +361,12 @@ export const AbilityEditPanel = (props: Props) => {
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Self') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
 											<HeaderText>Value</HeaderText>
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Self') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
 											<NumberSpin min={1} value={distance.value} onChange={value => setDistanceValue(n, value)} />
 											: null
 									}
@@ -635,7 +635,7 @@ export const AbilityEditPanel = (props: Props) => {
 													status={(section.roll.characteristic.length === 0) && (section.roll.bonus === 0) ? 'warning' : ''}
 													placeholder='Characteristics'
 													mode='multiple'
-													options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+													options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 													optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 													value={section.roll.characteristic}
 													onChange={setRollSectionCharacteristics}

@@ -172,7 +172,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'Optical Collusion',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox commands all his eyestalks to move up to their speed.')
 						]
@@ -239,7 +239,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						name: 'All Eyes, All Rise',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox recreates any destroyed eyestalks, which return in unoccupied spaces on the encounter map with full Stamina.')
 						]

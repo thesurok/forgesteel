@@ -206,7 +206,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lord Syuul can teleport up to 5 squares along with each creature and object he has grabbed. He can release grabbed creatures and objects before or after teleporting.')
 						]
@@ -219,7 +219,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						type: FactoryLogic.type.createTrigger('Lord Syuul takes damage that has a damage type.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of his next turn, Lord Syuul gains immunity 5 to the triggering damage type.')
 						]
@@ -256,7 +256,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Lord Syuul becomes invisible, can teleport up to 10 squares, and projects an illusory double within 10 squares. The double can’t move or act, but Lord Syuul can use psionic abilities as if he were in its square. Whenever a creature touches or damages the double with a melee strike, they take 10 psychic damage. If Lord Syuul takes damage, his invisibility ends and the double disappears.')
 						]

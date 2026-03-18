@@ -291,7 +291,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSpecial('Special; see below')],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the brambleguard’s next turn, their speed is 0 and they extend themself into a 5 wall. Each ally who starts their turn adjacent to the brambleguard regains 5 Stamina and can apply the Magic keyword to their weapon abilities until the end of their turn.')
 						]
@@ -666,7 +666,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						name: 'Windwalk',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The zephyr flies up to their speed. If they don’t end this movement on solid ground, they are prone.')
 						]

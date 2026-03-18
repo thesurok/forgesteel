@@ -86,7 +86,7 @@ export const dragonKnight: Ancestry = {
 							description: 'Ви можете розмахнути крилами й захиститися від удару.',
 							type: FactoryLogic.type.createTrigger('You, or a creature adjacent to you, takes damage from a strike'),
 							distance: [FactoryLogic.distance.createSelf()],
-							target: 'Self',
+							target: 'Себе',
 							sections: [
 								FactoryLogic.createAbilitySectionText('Ви зменшуєте шкоду від удару на величину, рівну вашому рівню.')
 							]

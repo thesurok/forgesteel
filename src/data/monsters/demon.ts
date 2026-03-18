@@ -516,7 +516,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						cost: 3,
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The remasch can teleport up to 2 squares and uses Abyssal Strike.')
 						]
@@ -725,7 +725,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createTrigger('The chorogaunt is targeted by a strike.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Any damage from the strike is halved, and the chorogaunt’s abilities deal an extra 3 damage until the end of their next turn.')
 						]
@@ -783,7 +783,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chorogaunt shifts up to their speed, uses Agonizing Harmony, shifts up to their speed, and then uses Agonizing Harmony again.')
 						]
@@ -1119,7 +1119,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						cost: 1,
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a free maneuver.')
 						]
@@ -1186,7 +1186,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						cost: 1,
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The gunge vomits with great force, letting them shift up to their speed and ignore any additional effects from the strike. The space the gunge occupied before the shift is covered in slime that is difficult terrain for enemies. Additionally, any enemy is bleeding while in the slime.')
 						]
@@ -1380,7 +1380,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The egress folds into their own portal and teleports to an unoccupied space within distance. Four level 4 demon minions (most commonly **orliq**, **grulqins**, and **wobalas**) appear in squares in the egress’s former space.')
 						]
@@ -1654,7 +1654,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						cost: 1,
 						keywords: [],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chimeron halves the damage.')
 						]

@@ -205,7 +205,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						type: FactoryLogic.type.createTrigger('The whelp reduces a non-minion creature to 0 Stamina'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The whelp transforms into a **mindkiller** whose Stamina equals their squad’s Stamina pool before transforming. The Stamina pool then loses the whelp’s Stamina.')
 						]
@@ -288,7 +288,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						name: 'Lumber',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hulking brain shifts up to 4 squares, ignoring difficult terrain.')
 						]
@@ -300,7 +300,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						name: 'Brawny Buffer',
 						type: FactoryLogic.type.createTrigger('An ally voiceless talker within 5 squares takes damage from an enemy ability.', { free: true, qualifiers: [] }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hulking brain shifts to a square adjacent to the ally and takes the damage instead.'),
@@ -398,7 +398,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						name: 'Meat Shield',
 						type: FactoryLogic.type.createTrigger('The mindkiller takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mindkiller halves the damage. If the mindkiller has a creature grabbed, that creature takes the other half of the damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -509,7 +509,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						name: 'Tactical Reposition',
 						type: FactoryLogic.type.createTrigger('The artillerist takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The artillerist can teleport up to 5 squares and ignores any effects associated with the damage.')
@@ -707,7 +707,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						type: FactoryLogic.type.createTrigger('The evolutionist takes damage that has a damage type.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of their next turn, the evolutionist has damage immunity 5 to the triggering damage type.')
 						]

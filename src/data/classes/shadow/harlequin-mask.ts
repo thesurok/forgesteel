@@ -24,7 +24,7 @@ export const harlequinMask: SubClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
 You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the Disengage move action, you gain a +1 bonus to the distance you can shift.
@@ -44,7 +44,7 @@ The illusion ends when you harm another creature, when you physically interact w
 						type: FactoryLogic.type.createTrigger('An enemy targets you with a strike.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Choose an enemy within distance of the triggering strike, including the enemy who targeted you. The strike targets that enemy instead.')
@@ -93,7 +93,7 @@ The illusion ends when you harm another creature, when you physically interact w
 									type: FactoryLogic.type.createTrigger('Another creature targets you with a strike.', { free: true }),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You use your Clever Trick ability with no insight cost against the triggering creature and strike. You can teleport to an unoccupied space within 3 squares of that creature and can make a free strike against them. You can then spend a Recovery.')

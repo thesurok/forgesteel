@@ -820,7 +820,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The teletalite can teleport up to 5 squares and gains an edge on strikes until the end of their turn.')
 						]
@@ -1274,7 +1274,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The doomthief has damage immunity 4 and the size of the aura from their Doom Magnet trait increases by 3, both until the start of their next turn.')
 						]
@@ -1779,7 +1779,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'You Would Dare?!',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the tetrarch has damage immunity 2, and their Houndblade ability targets three creatures or objects.')
 						]
@@ -2143,7 +2143,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of their next turn, the breaker has a double edge on abilities and is automatically affected by all potency effects.')
 						]
@@ -2735,7 +2735,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createTrigger('An enemy within 10 squares targets an ally with an ability.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Hoplon teleports to an unoccupied space adjacent to the enemy and becomes the new target of the ability. He can then make a free strike against the enemy, and if that enemy has <code>R < 4</code> they are taunted until the end of their next turn.')
 						]
@@ -2836,7 +2836,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Laugh It Off',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The triggering strike takes a bane and Doru gains an edge on his next power roll.')
 						]
@@ -3041,7 +3041,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						name: 'Spirit Form',
 						type: FactoryLogic.type.createTrigger('An enemy moves within 2 squares of Psyche'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Psyche moves up to 5 squares, and has damage immunity 5 and ignores difficult terrain during this movement. The first time she moves through any creature during this movement, that creature takes 5 corruption damage.')
 						]

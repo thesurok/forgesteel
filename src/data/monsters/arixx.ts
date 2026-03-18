@@ -195,7 +195,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						name: 'Skitter',
 						type: FactoryLogic.type.createTrigger('The arixx takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect**: The arixx halves the damage and shifts up to 3 squares after the triggering effect resolves.')
 						]
@@ -226,7 +226,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						name: 'Sinkhole',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Self, value: 0 })],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The arixx shifts up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig maneuver.')
 						]

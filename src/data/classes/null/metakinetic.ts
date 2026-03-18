@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const metakinetic: SubClass = {
 	id: 'null-sub-3',
-	name: 'Metakinetic',
-	description: 'You learn to see through the illusions of the universe to more fully understand your body and its psionic potential.',
+	name: 'Метакінетик',
+	description: 'Ви вчитеся бачити крізь ілюзіії всесвіту, щоб глибше зрозуміти своє тіло та його психічний потенціал.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,27 +18,27 @@ export const metakinetic: SubClass = {
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-3-1-2',
-					name: 'Metakinetic Mastery',
+					name: 'Майстерність метакінетики',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'null-sub-3-1-2a',
-							name: 'Metakinetic Mastery',
+							name: 'Майстерність метакінетики',
 							description: `
-As your discipline grows, your psionic potential is amplified, granting benefits from the Metakinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+		У міру зростання вашої дисципліни ваш психічний потенціал посилюється, надаючи переваги згідно з таблицею «Майстерність метакінетики». Переваги накопичуються, за винятком випадків, коли покращена перевага замінює меншу.
 
-| Discipline | Benefit                                                                                                                                                                                        |
-|:-----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2              | Whenever you use the Knockback maneuver, the forced movement distance gains a bonus equal to your Intuition score.                                                                         |
-| 4              | The first time in a combat round that you take damage or are force moved, you gain 1 surge, even if you resist the effect.                                                                 |
-| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                      |
-| 8 (4th level)  | The first time in a combat round that you take damage or are force moved, you gain 2 surges, even if you resist the effect.                                                                |
-| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                |
-| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|`
+		| Дисципліна | Перевага                                                                                                                                                                                       |
+		|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+		| 2         | Коли ви використовуєте маневр «Відштовхування», відстань примусового переміщення отримує бонус, рівний вашому показнику Інтуїції.                                                                 |
+		| 4         | У перший раз у боєвому раунді, коли ви отримуєте шкоду або зазнаєте примусового переміщення, ви отримуєте 1 сплеск, навіть якщо ви протидієте ефекту.                                                |
+		| 6         | Ви отримуєте перевагу на маневри «Схоплення» та «Відштовхування».                                                                                                                             |
+		| 8 (4-й рівень)  | У перший раз у боєвому раунді, коли ви отримуєте шкоду або зазнаєте примусового переміщення, ви отримуєте 2 сплески, навіть якщо ви протидієте ефекту.                                    |
+		| 10 (7-й рівень) | Ви маєте подвійну перевагу на маневри «Схоплення» та «Відштовхування».                                                                                                                      |
+		| 12 (10-й рівень)| Коли ви примусово переміщуєте ціль, відстань примусового переміщення отримує бонус, рівний вашому показнику Інтуїції. Додатково, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості.|`
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'null-sub-3-1-2b',
-							name: 'Metakinetic Mastery',
-							description: 'Whenever you use your Inertial Shield ability, you can then use the Knockback maneuver as a free triggered action.',
+							name: 'Майстерність метакінетики',
+							description: 'Коли ви використовуєте здібність «Інерційний щит», ви можете виконати маневр «Відштовхування» як безкоштовну тригерну дію.',
 							tag: 'inertial-shield'
 						})
 					]
@@ -50,22 +50,22 @@ As your discipline grows, your psionic potential is amplified, granting benefits
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-3-2-1',
-					name: 'Inertial Sink',
+					name: 'Поглинач інерції',
 					description: `
-You add your Intuition score to your effective size for the purpose of interacting with creatures and objects, such as for determining whether you can lift an object, whether you are affected by forced movement, and so forth. This has no effect on whether you can be grabbed.
+Ви додаєте свій показник Інтуїції до ефективного розміру для взаємодії з істотами та об'єктами, наприклад при визначенні, чи можете ви підійняти предмет, чи на вас впливає примусове переміщення тощо. Це не впливає на те, чи можна вас схопити.
 
-Additionally, when you fall, you reduce the effective height of the fall by 5 squares in addition to any other reductions. Whenever you take damage from being force moved, you reduce that damage by an amount equal to your level.`
+Крім того, коли ви падаєте, ви зменшуєте ефективну висоту падіння на 5 клітинок, додатково до будь-яких інших зменшень. Коли ви отримуєте шкоду через примусове переміщення, ви зменшуєте цю шкоду на суму, що дорівнює вашому рівню.`
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-3-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Здібність традиції 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-2-2a',
-									name: 'Gravitic Strike',
-									description: 'Your fist emanates gravitic force that pulls a distant enemy closer.',
+									name: 'Гравітний удар',
+									description: 'Ваш кулак випромінює гравітаційну силу, яка притягує віддаленого ворога ближче.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee(3)],
@@ -74,9 +74,9 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '8 + A psychic damage; vertical pull 3',
-											tier2: '12 + A psychic damage; vertical pull 5',
-											tier3: '16 + A psychic damage; vertical pull 7'
+											tier1: '8 + Л психічної шкоди; вертикальне притягнення 3',
+											tier2: '12 + Л психічної шкоди; вертикальне притягнення 5',
+											tier3: '16 + Л психічної шкоди; вертикальне притягнення 7'
 										}))
 									]
 								})
@@ -87,21 +87,21 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-2-2b',
-									name: 'Kinetic Shield',
-									description: 'You manifest a force barrier that absorbs incoming kinetic energy.',
+									name: 'Кінетичний щит',
+									description: 'Ви створюєте силовий барʼєр, який поглинає вхідну кінетичну енергію.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: 'You gain 10 temporary Stamina',
-											tier2: 'You gain 15 temporary Stamina',
-											tier3: 'You gain 20 temporary Stamina'
+											tier1: 'Ви отримуєте 10 тимчасової Витривалості',
+											tier2: 'Ви отримуєте 15 тимчасової Витривалості',
+											tier3: 'Ви отримуєте 20 тимчасової Витривалості'
 										})),
-										FactoryLogic.createAbilitySectionText('While you have temporary Stamina from this ability, you can’t be made bleeding even while dying.')
+										FactoryLogic.createAbilitySectionText('Поки у вас є тимчасова Витривалість від цієї здібності, вам не може бути накладено стан «Кровотеча», навіть коли ви вмираєте.')
 									]
 								})
 							}),
@@ -124,8 +124,8 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-3-5-1',
-					name: 'Inertial Fulcrum',
-					description: 'Whenever you use an ability to reduce damage dealt to you or to reduce the distance of forced movement imposed upon you, you can deal damage to one enemy in the area of your Null Field ability equal to your Intuition score.'
+					name: 'Інерційний важіль',
+					description: 'Коли ви використовуєте здібність, щоб зменшити завдану вам шкоду або скоротити відстань примусового переміщення, ви можете завдати шкоди одному ворогу в зоні дії вашої здібності Нульове Поле в розмірі, рівному вашому показнику Інтуїції.'
 				})
 			]
 		},
@@ -134,27 +134,27 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-3-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Здібність традиції 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-6-1a',
-									name: 'Gravitic Charge',
-									description: 'You channel your discipline into momentum that defies gravity.',
+									name: 'Гравітний заряд',
+									description: 'Ви спрямовуєте свою дисципліну в імпульс, який долає гравітацію.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: 'Vertical slide 5',
-											tier2: 'Vertical slide 7',
-											tier3: 'Vertical slide 9'
+											tier1: 'Вертикальний зсув 5',
+											tier2: 'Вертикальний зсув 7',
+											tier3: 'Вертикальний зсув 9'
 										})),
-										FactoryLogic.createAbilitySectionText('This movement ignores stability. If you slide into another creature, you resolve damage to both of you as if your force movement had ended, but you keep moving through that creature’s space.')
+										FactoryLogic.createAbilitySectionText('Цей рух ігнорує стабільність. Якщо ви ковзнете в іншу істоту, ви отримуєте шкоду обидва так, ніби ваше примусове переміщення закінчилося, але ви продовжуєте рух через її простір.')
 									]
 								})
 							}),
@@ -164,15 +164,15 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-6-1b',
-									name: 'Iron Body',
-									description: 'You focus until your body becomes as hard as iron.',
+									name: 'Залізне тіло',
+									description: 'Ви концентруєтесь, поки ваше тіло не стане твердим, мов залізо.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You gain 20 temporary Stamina. Additionally, until the end of the encounter, your stability gains a bonus equal to your Intuition score.')
+										FactoryLogic.createAbilitySectionText('Ви отримуєте 20 тимчасової Витривалості. Додатково до кінця сутички ваша стабільність отримує бонус, рівний вашому показнику Інтуїції.')
 									]
 								})
 							}),
@@ -191,8 +191,8 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-3-8-1',
-					name: 'Inertial Dampener',
-					description: 'You and each creature or object of your choice in the area of your Null Field ability gain a bonus to stability equal to your Intuition score. A creature who attempts to force move a target with this bonus takes psychic damage equal to your Intuition score.'
+					name: 'Інерційний демпфер',
+					description: 'Ви та кожна обрана вами істота або обʼєкт у зоні дії вашої здібності Нульове Поле отримують бонус до стабільності, рівний вашому показнику Інтуїції. Істота, яка намагається примусово перемістити ціль з цим бонусом, отримує психічну шкоду, рівну вашому показнику Інтуїції.'
 				})
 			]
 		},
@@ -201,21 +201,21 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-3-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Здібність традиції 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-9-1a',
-									name: 'Inertial Absorption',
-									description: 'You absorb an attack to empower your body.',
-									type: FactoryLogic.type.createTrigger('Another creature damages you using an ability.', { free: true }),
+									name: 'Інерційне поглинання',
+									description: 'Ви поглинаєте атаку, щоб підсилити своє тіло.',
+									type: FactoryLogic.type.createTrigger('Інша істота завдає вам шкоди, використовуючи здібність.', { free: true }),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You take half the damage, negate any effects associated with the damage for you, and gain 3 surges.')
+										FactoryLogic.createAbilitySectionText('Ви отримуєте половину шкоди, скасовуєте будь-які ефекти, повʼязані з цією шкодою для себе, і отримуєте 3 сплески.')
 									]
 								})
 							}),
@@ -225,8 +225,8 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-3-9-1b',
-									name: 'Realitas',
-									description: 'Your essential hyperreality disrupts your enemy’s connection to existence.',
+									name: 'Реалітас',
+									description: 'Ваша істотна гіперреальність порушує звʼязок ворога з існуванням.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -235,11 +235,11 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '7 + A psychic damage; I < [слабкий], dazed',
-											tier2: '10 + A psychic damage; I < [середній], dazed',
-											tier3: '13 + A psychic damage; I < [сильний], dazed'
+											tier1: '7 + Л психічної шкоди; І < [слабкий], приголомшений',
+											tier2: '10 + Л психічної шкоди; І < [середній], приголомшений',
+											tier3: '13 + Л психічної шкоди; І < [сильний], приголомшений'
 										})),
-										FactoryLogic.createAbilitySectionText('While dazed this way, the target takes psychic damage equal to twice your Intuition score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become winded, they are instead reduced to 0 Stamina. Any creature reduced to 0 Stamina by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director’s discretion.')
+										FactoryLogic.createAbilitySectionText('Поки ціль приголомшена цим способом, вона отримує психічну шкоду, рівну подвоєному показнику вашої Інтуїції на початку кожного вашого ходу. Якщо ця здібність спричиняє, що істота, яка не є лідером або соло-істотою, стає захеканою, її замість цього зведено до 0 Витривалості. Будь-яка істота, доведена до 0 Витривалості цією здібністю, забувається всіма істотами вашого рівня або нижчими в часовому просторі, які не присутні в сутичці. Рідні забутої істоти зберігають легке відчуття смутку. Цей ефект може бути скасований лише на розсуд Директора.')
 									]
 								})
 							}),

@@ -139,7 +139,7 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						name: 'Swooping Torment',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(
 								'The lurker flies up to their speed, then can attempt to hide. Each enemy the lurker moves adjacent to during this movement can choose to take 3 sonic damage or fall prone.'

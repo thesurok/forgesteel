@@ -578,7 +578,7 @@ If you have a kit, you can’t take this upgrade.`,
 									description: 'Your ward converts harmful energy into a protective shield.',
 									type: FactoryLogic.type.createTrigger('The first time each round you take acid, cold, fire, poison, sonic, or lighting damage.'),
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You gain temporary stamina equal to your Reason score.')
 									]
@@ -2249,7 +2249,7 @@ As a maneuver, you can expend project points from the stone and craft any consum
 										description: '',
 										type: FactoryLogic.type.createManeuver(),
 										distance: [FactoryLogic.distance.createSelf()],
-										target: 'Self',
+										target: 'Себе',
 										sections: [
 											FactoryLogic.createAbilitySectionText('You expend project points from the stone and craft any consumable that you have both an item prerequisite and project source for, as long as you have the project points available. Additionally, you may craft a 1st echelon consumable of your choice without spending any project points. When you use the stone in this way, you cannot do so again until you finish a respite.')
 										]
@@ -2414,7 +2414,7 @@ You can choose only one free triggered action option at a time, even if multiple
 												AbilityKeyword.Magic
 											],
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('The target avoids any effects associated with the damage that triggered your Warding Glyph ability and can spend a Recovery. Each enemy adjacent to the target is pushed a number of squares equal to twice your Reason score.')
@@ -2532,7 +2532,7 @@ During a respite, you are able to create a number of experimental devices equal 
 								description: '',
 								type: FactoryLogic.type.createManeuver(),
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
 As a maneuver, you can choose a magewright signature or heroic ability that you would be able to learn if you were one level higher or lower. Provided you meet the ability’s other prerequisites and can spend any required Heroic Resources, you can use this ability once this encounter, and it costs 1d3 fewer wonder to use.
@@ -2686,7 +2686,7 @@ As a Scion, you are the the quiet before the storm. You move like the wind, and 
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSpecial('')],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -3047,7 +3047,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('For the rest of the combat encounter you have an additional maneuver per turn, and gain a +5 bonus to speed.')
@@ -3081,7 +3081,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Place a d6 die set to 6 to track this effect. Once a turn you may reduce the die by any amount up to its current value. Then, distribute that many spectral blades among enemies within range 5 as you choose. Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy. In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency of the ability by 1.')
@@ -3124,7 +3124,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You teleport up to 7 squares.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -3142,7 +3142,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 								type: FactoryLogic.type.createTrigger('You take damage'),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You take half the damage, you can then teleport up to 4 squares after the triggering effect resolves.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -3382,7 +3382,7 @@ By default, your Soulblade is sentient and capable of communicating with you, th
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
 Choose a modified form for your Soulblade, each granting a distinct effect until the start of your next turn:
@@ -3450,7 +3450,7 @@ Choose a modified form for your Soulblade, each granting a distinct effect until
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Magic],
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape maneuver.')
@@ -3575,7 +3575,7 @@ As a vessel, you debilitate your enemies and bolster yourself, sacrificing long-
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
 You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose one of the following benefits that lasts until the end of the encounter, each of which can only be chosen once per encounter:
@@ -4491,7 +4491,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 								type: FactoryLogic.type.createTrigger('You take damage.'),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to twice your Presence score and reduce any potency of effects associated with the damage by 1.')
 								]
@@ -4584,7 +4584,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 					type: FactoryLogic.type.createManeuver(),
 					keywords: [AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionText('Until the end of the encounter, when you use this and at the start of your turn, you can spend any number of Recoveries. If you spend none, you gain temporary Stamina equal to thrice your Presence score that lasts until the start of your next turn.')
@@ -4710,7 +4710,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 					type: FactoryLogic.type.createManeuver(),
 					keywords: [AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					cost: 5,
 					sections: [
 						FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, whenever an enemy uses an ability on you that requires line of effect or Searches while it can perceive you, the creature takes psychic damage equal to thrice your Presence score unless it takes a double bane on the roll.')

@@ -45,8 +45,8 @@ interface Props {
 }
 
 export const HeroCustomizeModal = (props: Props) => {
-	const [ hero, setHero ] = useState<Hero>(Utils.copy(props.hero));
-	const [ menuOpen, setMenuOpen ] = useState<boolean>(false);
+	const [hero, setHero] = useState<Hero>(Utils.copy(props.hero));
+	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
 	const addFeature = (feature: Feature) => {
 		const heroCopy = Utils.copy(hero);
@@ -115,8 +115,8 @@ export const HeroCustomizeModal = (props: Props) => {
 											id: Utils.guid(),
 											name: 'Unnamed Ability',
 											type: FactoryLogic.type.createMain(),
-											distance: [ FactoryLogic.distance.createSelf() ],
-											target: 'Self',
+											distance: [FactoryLogic.distance.createSelf()],
+											target: 'Себе',
 											sections: []
 										})
 									}));
@@ -162,7 +162,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									setMenuOpen(false);
 									addFeature(FactoryLogic.feature.createDamageModifier({
 										id: Utils.guid(),
-										modifiers: [ FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 2 }) ]
+										modifiers: [FactoryLogic.damageModifier.create({ damageType: DamageType.Fire, modifierType: DamageModifierType.Immunity, value: 2 })]
 									}));
 								}}
 							>
@@ -221,7 +221,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									setMenuOpen(false);
 									addFeature(FactoryLogic.feature.createPerk({
 										id: Utils.guid(),
-										lists: [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special ]
+										lists: [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special]
 									}));
 								}}
 							>
@@ -510,7 +510,7 @@ export const HeroCustomizeModal = (props: Props) => {
 						<Select
 							style={{ width: '100%' }}
 							placeholder='Select ancestry'
-							options={[ null, ...SourcebookLogic.getAncestries(props.sourcebooks) ].map(o => ({ value: o ? o.id : '', label: o ? o.name : 'Your ancestry' }))}
+							options={[null, ...SourcebookLogic.getAncestries(props.sourcebooks)].map(o => ({ value: o ? o.id : '', label: o ? o.name : 'Your ancestry' }))}
 							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.source.customID}
 							onChange={setCustomAncestryID}
@@ -526,7 +526,7 @@ export const HeroCustomizeModal = (props: Props) => {
 						<Select
 							style={{ width: '100%' }}
 							placeholder='Select field'
-							options={[ FeatureField.AncestryPoints, FeatureField.Disengage, FeatureField.ProjectPoints, FeatureField.Recoveries, FeatureField.RecoveryValue, FeatureField.Renown, FeatureField.Save, FeatureField.Speed, FeatureField.Stability, FeatureField.Stamina, FeatureField.Wealth ].map(o => ({ value: o }))}
+							options={[FeatureField.AncestryPoints, FeatureField.Disengage, FeatureField.ProjectPoints, FeatureField.Recoveries, FeatureField.RecoveryValue, FeatureField.Renown, FeatureField.Save, FeatureField.Speed, FeatureField.Stability, FeatureField.Stamina, FeatureField.Wealth].map(o => ({ value: o }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.field}
 							onChange={setValueField}
@@ -539,7 +539,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							style={{ width: '100%' }}
 							placeholder='Characteristics'
 							mode='multiple'
-							options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.valueCharacteristics}
 							onChange={setValueCharacteristics}
@@ -553,7 +553,7 @@ export const HeroCustomizeModal = (props: Props) => {
 						<Select
 							style={{ width: '100%' }}
 							placeholder='Select characteristic'
-							options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(o => ({ value: o }))}
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(o => ({ value: o }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.characteristic}
 							onChange={setCharacteristic}
@@ -570,7 +570,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							style={{ width: '100%' }}
 							allowClear={!!feature.data.classID}
 							placeholder='Select class'
-							options={[ { id: '', name: 'Your Class', description: 'An ability from your own class.' }, ...SourcebookLogic.getClasses(props.sourcebooks) ].map(o => ({ value: o.id, label: o.name, description: o.description }))}
+							options={[{ id: '', name: 'Your Class', description: 'An ability from your own class.' }, ...SourcebookLogic.getClasses(props.sourcebooks)].map(o => ({ value: o.id, label: o.name, description: o.description }))}
 							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.classID || ''}
 							onChange={setClassID}
@@ -599,7 +599,7 @@ export const HeroCustomizeModal = (props: Props) => {
 						style={{ width: '100%' }}
 						placeholder='Select condition'
 						mode='multiple'
-						options={[ ConditionType.Bleeding, ConditionType.Dazed, ConditionType.Frightened, ConditionType.Grabbed, ConditionType.Prone, ConditionType.Restrained, ConditionType.Slowed, ConditionType.Taunted, ConditionType.Weakened ].map(o => ({ value: o }))}
+						options={[ConditionType.Bleeding, ConditionType.Dazed, ConditionType.Frightened, ConditionType.Grabbed, ConditionType.Prone, ConditionType.Restrained, ConditionType.Slowed, ConditionType.Taunted, ConditionType.Weakened].map(o => ({ value: o }))}
 						optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 						value={feature.data.conditions}
 						onChange={setConditionTypes}
@@ -612,14 +612,14 @@ export const HeroCustomizeModal = (props: Props) => {
 						<Select
 							style={{ width: '100%' }}
 							placeholder='Select field'
-							options={[ DamageType.Damage, DamageType.Acid, DamageType.Cold, DamageType.Corruption, DamageType.Fire, DamageType.Holy, DamageType.Lightning, DamageType.Poison, DamageType.Psychic, DamageType.Sonic ].map(o => ({ value: o }))}
+							options={[DamageType.Damage, DamageType.Acid, DamageType.Cold, DamageType.Corruption, DamageType.Fire, DamageType.Holy, DamageType.Lightning, DamageType.Poison, DamageType.Psychic, DamageType.Sonic].map(o => ({ value: o }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.modifiers[0].damageType}
 							onChange={setDamageModifierDamageType}
 						/>
 						<Segmented
 							block={true}
-							options={[ DamageModifierType.Immunity, DamageModifierType.Weakness ].map(o => ({ label: o, value: o }))}
+							options={[DamageModifierType.Immunity, DamageModifierType.Weakness].map(o => ({ label: o, value: o }))}
 							value={feature.data.modifiers[0].type}
 							onChange={setDamageModifierType}
 						/>
@@ -631,7 +631,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							style={{ width: '100%' }}
 							placeholder='Characteristics'
 							mode='multiple'
-							options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.modifiers[0].valueCharacteristics}
 							onChange={setDamageModifierCharacteristics}
@@ -666,7 +666,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							mode='multiple'
 							allowClear={true}
 							placeholder='List'
-							options={[ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special ].map(pl => ({ label: pl, value: pl }))}
+							options={[PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special].map(pl => ({ label: pl, value: pl }))}
 							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.lists}
 							onChange={setPerkLists}
@@ -682,7 +682,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							placeholder='Weapons'
 							mode='multiple'
 							allowClear={true}
-							options={[ KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip ].map(option => ({ value: option }))}
+							options={[KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip].map(option => ({ value: option }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.weapons}
 							onChange={setProficiencyWeapons}
@@ -693,7 +693,7 @@ export const HeroCustomizeModal = (props: Props) => {
 							placeholder='Armor'
 							mode='multiple'
 							allowClear={true}
-							options={[ KitArmor.Heavy, KitArmor.Light, KitArmor.Medium, KitArmor.Shield ].map(option => ({ value: option }))}
+							options={[KitArmor.Heavy, KitArmor.Light, KitArmor.Medium, KitArmor.Shield].map(option => ({ value: option }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.armor}
 							onChange={setProficiencyArmor}

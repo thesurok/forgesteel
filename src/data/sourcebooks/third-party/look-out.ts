@@ -190,7 +190,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You can teleport twice, each time up to 2 squares, leaving a doppelganger in each square you teleport from until the start of your next turn. If you are adjacent an enemy, no matter the enemy’s size, you can teleport to a space on the opposite side of the enemy as one of the teleports. When an enemy is adjacent to at least one of your doppelgangers, they have damage weakness equal to your Reason score.')
@@ -223,7 +223,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You can shift up to your speed. You can pass through 1 square of solid matter as part of this movement, but you cannot end this movement inside solid matter. Allies occupying squares that you move through during this shift each gain a surge. Squares occupied by enemies do not count as difficult terrain during this movement. You can make one free strike at any point during this movement.')
@@ -448,7 +448,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											type: FactoryLogic.type.createMain(),
 											keywords: [AbilityKeyword.Magic],
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('Use a signature ability. After you use the ability, you can shift up to your speed. At the end of your movement, you or an adjacent ally can make a melee free strike.')
@@ -520,7 +520,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Magic],
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
@@ -618,7 +618,7 @@ Changing the color of your flames requires the use of this ability again.`)
 											type: FactoryLogic.type.createMain(),
 											keywords: [AbilityKeyword.Magic],
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('Until the end of the encounter, soot falls from the sky. You and each ally gain an edge on tests that use the Hide skill. Enemies have fire weakness 3. If an enemy is grabbed, they have fire weakness 7.')
@@ -703,7 +703,7 @@ const hawthorn: Kit = {
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Magic, AbilityKeyword.Area],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-				target: 'Self',
+				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Until the start of your next turn, your stability is increased by 2. You and allies in the area each gain 1 surge and can spend a Recovery.'),
 					FactoryLogic.createAbilitySectionField({
@@ -1070,7 +1070,7 @@ Your connection with the Undermind lets you share senses with it. You can search
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Until the end of the round, your Stoke the Flame ability gains a distance bonus of +5 and you don’t need line of effect to target allies with your Stoke the Flame ability.')
 					]

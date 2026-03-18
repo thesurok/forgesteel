@@ -383,7 +383,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						name: 'Cobble Stone Shape',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The basalt stone giant moves up to their speed. Each square that they leave during this move is difficult terrain for enemies. Giants ignore this difficult terrain. ')
 						]
@@ -507,7 +507,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The lightbearer emits a beacon of light until the start of their next turn. Each fire giant who has line of effect to the lightbearer has a double edge on abilities.')
 						]
@@ -593,7 +593,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						name: 'Blazing Leap',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The red fist jumps up to 5 squares. Each creature adjacent to them when they land takes 5 fire damage.')
 						]
@@ -626,7 +626,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createMelee(3)
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The red fist becomes the target of the triggering ability, then can make a free strike against the enemy after the ability resolves.')
 						]
@@ -723,7 +723,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The triggering strike has a double bane. If the strike obtains a tier 1 outcome, the storm hurler uses Ice Javelins against the creature who made it.')
 						]
@@ -788,7 +788,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wind sprinter shifts up to their speed and uses Cold Axe against each enemy who comes within 2 squares of them during the move. The wind sprinter makes one power roll against all targets.')
 						]
@@ -815,7 +815,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wind sprinter moves up to their speed and uses Cold Axe against one target.')
 						]
@@ -898,7 +898,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						name: 'Castle Stone Shape',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The granite stone giant moves up to their speed and creates a 14 wall of stone in squares adjacent to the path of their movement.')
 						]
@@ -1136,7 +1136,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The marble stone giant halves the damage, and has damage weakness 3 and a +3 bonus to speed until the end of the encounter. The damage weakness increases by 3 each time the marble stone giant uses this ability in the same encounter.')
 						]

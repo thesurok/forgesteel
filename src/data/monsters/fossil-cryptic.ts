@@ -168,7 +168,7 @@ export const fossilCryptic: MonsterGroup = {
 						name: 'Dissipate',
 						type: FactoryLogic.type.createTrigger('The cryptic takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The cryptic halves the damage, ignores any nondamaging effects associated with it, and shifts up to 3 squares.')

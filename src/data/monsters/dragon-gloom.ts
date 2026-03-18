@@ -183,7 +183,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares moves.', { free: true }),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon moves two existing cubes of magical darkness up to 10 squares each.')
 						]

@@ -167,7 +167,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						type: FactoryLogic.type.createTrigger('One ally within distance is targeted by an enemy’s ability. The bodyguard can use this ability after seeing the outcome of the power roll.'),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bodyguard becomes the triggering ability’s target instead.')
 						]
@@ -507,7 +507,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						cost: 2,
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the round, dust and dirt billow in a 2 burst around the miner’s initial space. While the miner is in the area, they ignore the nondamaging effects of any strike made against them, including the triggering strike.')
 						]
@@ -597,7 +597,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						name: 'Destructive Rollout',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The war engine moves up to their speed in a straight line, automatically destroying mundane size 1 objects or walls in their path. The first time the war engine moves through a creature’s space during this movement, that creature can choose to either fall prone or take 10 damage.')
 						]

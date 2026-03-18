@@ -1,5 +1,5 @@
 export enum AbilityDistanceType {
-	Self = 'Self',
+	Self = 'Себе',
 	Melee = 'Melee',
 	Ranged = 'Ranged',
 	Aura = 'Aura',

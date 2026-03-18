@@ -950,7 +950,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You teleport up to a number of squares equal to twice your Presence score.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -967,7 +967,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 								type: FactoryLogic.type.createTrigger('You take damage'),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You take half the triggering damage, then can teleport up to a number of squares equal to your Presence score after the triggering effect resolves.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -1029,7 +1029,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					type: FactoryLogic.type.createManeuver({ free: true }),
 					keywords: [AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					cost: 3,
 					sections: [
 						FactoryLogic.createAbilitySectionText('You can teleport up to a number of squares equal to 10 + your Presence score. You have concealment until the start of your next turn. After you teleport, you can make a free strike as a free maneuver.'),
@@ -1206,7 +1206,7 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createSelf()],
-								target: 'Self',
+								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('The size of your Spore Cloud aura increases by 1 until the start of your next turn.'),
 									FactoryLogic.createAbilitySectionSpend({

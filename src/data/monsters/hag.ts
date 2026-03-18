@@ -177,7 +177,7 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hag alters their body to become any size 1 creature, from a house cat to a humanoid. If the hag uses this ability while outside of any enemy’s line of effect, they can choose to be automatically hidden. The hag can return to their original form as a free maneuver.'),
 							FactoryLogic.createAbilitySectionSpend({

@@ -171,7 +171,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						name: 'Bone Dozer',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Effect: The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either pushed into the nearest unoccupied space outside the path, or if they have <code>M < 3</code> is pushed forward until the movement ends. Any creature who is force moved forward into an obstacle is dazed (save ends).')
 						]
@@ -183,7 +183,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						name: 'Armor of Corpses',
 						type: FactoryLogic.type.createTrigger('The ashen hoarder takes damage.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ashen hoarder halves the damage. If the ashen hoarder has one or more creatures impaled, the Malice cost of this feature is reduced by 1 and one impaled creature takes the other half of the damage.')
@@ -239,7 +239,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ashen hoarder moves up to their speed and uses Claw and Blade with a double edge against one target. On a tier 3 outcome, the ashen hoarder can use Impale without spending Malice.')
 						]

@@ -212,7 +212,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						name: 'Fire Solo',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect** The chimera uses Dragon’s Eruption and Roar without spending Malice.')
 						]
@@ -224,7 +224,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						name: 'Chorus of Destruction',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Effect** The chimera uses Roar, then shifts up to their speed and can make a free strike against each enemy who comes adjacent to them during the shift. When the chimera ends this shift, they use Dragon’s Eruption. The use of these abilities as part of this villain action costs no Malice.')
 						]

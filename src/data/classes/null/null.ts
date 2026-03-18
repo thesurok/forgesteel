@@ -80,7 +80,7 @@ export const nullClass: HeroClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 })],
-						target: 'All enemies',
+						target: 'Усі вороги',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
 Кожна ціль знижує свої потужності на 1.
@@ -103,13 +103,11 @@ export const nullClass: HeroClass = {
 						type: FactoryLogic.type.createTrigger('Ви отримуєте ушкодження.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You halve the damage.'),
-
 							FactoryLogic.createAbilitySectionText('Ви зменшуєте ушкодження наполовину.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The potency of one effect associated with the damage is reduced by 1 for you.'
+								effect: 'Потужність одного ефекту, повʼязаного з цією шкодою, зменшується на 1 для вас.'
 							}),
 							FactoryLogic.createAbilitySectionPackage('inertial-shield')
 						]
@@ -249,7 +247,7 @@ export const nullClass: HeroClass = {
 						description: '',
 						type: FactoryLogic.type.createTrigger('Ви починаєте свій хід.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Припиніть один ефект на собі, який закінчується рят. кидком або який завершується в кінці вашого ходу. Або ви можете надати цю перевагу одній істоті в області вашої здібності «Нульове поле».')
 						]
@@ -786,7 +784,7 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, кожен ворог у ній отримує bane на кидки здібностей.')
@@ -799,7 +797,7 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, кожен ворог з I < [середній], який вперше в раунді входить в область або починає свій хід там, отримує bleeding (save ends). Кожен союзник, який вперше в раунді входить в область або починає там свій хід, отримує тимчасову витривалість, рівну вашому показникові Інтуїції.')
@@ -812,7 +810,7 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, ви ігноруєте важкодоступну місцевість і для вас знижується потужність ворожих ефектів, спрямованих на вас, на 1. Також на початку кожного вашого ходу ви можете використати вільну тригерну дію, щоб припинити один ефект на собі, який закінчується рят. кидком або який завершується в кінці вашого ходу. Кожен союзник в області також отримує ці переваги.')
@@ -825,7 +823,7 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, коли ворог у ній отримує шкоду за кидком, він також отримує додаткове психічне ушкодження, рівне подвоєному значенню вашого показника Інтуїції.')
@@ -880,7 +878,7 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createMove(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви стрибаєте на відстань до вашої швидкості, не провокуючи опортуністичних атак. До кінця вашого наступного ходу в клітині, яку ви покинули, залишається статичний післяобраз вас, і будь-який ворог поруч із цим післяобразом отримує bane на кидки здібностей. Ви можете використовувати свої здібності зі своєї клітини або з клітини післяобразу, ніби ви все ще там. Додатково, якщо ваша здібність «Нульове поле» активна, ваш післяобраз також проектує ауру цієї здібності, якою ви керуєте, ніби перебуваєте в клітині післяобразу.')
@@ -917,7 +915,7 @@ export const nullClass: HeroClass = {
 						tier3: '24 + A ушкодження; M < [сильний], ціль пригнічена (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.')
+				FactoryLogic.createAbilitySectionText('Поки ціль пригнічена, вона отримує психічну шкоду, рівну подвоєному показникові вашої Інтуїції на початку своїх ходів; також вона отримує таку шкоду щоразу, коли використовує надприродну здібність або здібність, яка коштує Malice.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -938,7 +936,7 @@ export const nullClass: HeroClass = {
 						tier3: '18 + A ушкодження; штовх 10; I < [сильний], оглушений (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target and each creature or object they collide with from this forced movement takes psychic damage equal to the total number of squares the target was force moved. While the target is dazed this way, they see glimpses of creatures from other parts of the timescape.')
+				FactoryLogic.createAbilitySectionText('Ціль та кожна істота або обʼєкт, з якими вона зіткнулася під час цього примусового переміщення, отримують психічну шкоду, рівну загальній кількості клітин, на які ціль була примусово переміщена. Поки ціль приголомшена таким чином, вона бачить проблиски істот з інших частин часовому просторі.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -968,10 +966,10 @@ export const nullClass: HeroClass = {
 			type: FactoryLogic.type.createTrigger('Ціль отримує ушкодження від здібності іншої істоти, поки перебуває в області вашої здібності «Нульове поле»', { free: true }),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSpecial('Self; see below')],
-			target: 'На себе або одно істоту',
+			target: 'На себе або одну істоту',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Ціль отримує половину ушкодження, і якщо істота, що спричинила тригер, має I < [середній], вона стає dazed (save ends). Поки істота, що спричинила тригер, є dazed таким чином, вона отримує психічне ушкодження, рівне вашому показникові Інтуїції, щоразу, коли використовує основну дію.')
+				FactoryLogic.createAbilitySectionText('Ціль отримує половину ушкодження, і якщо істота, що спричинила тригер, має I < [середній], вона стає приголомшеною (рят. кидок). Поки істота, що спричинила тригер, є приголомшеною таким чином, вона отримує психічне ушкодження, рівне вашому показникові Інтуїції, щоразу, коли використовує основну дію.')
 			]
 		})
 	],

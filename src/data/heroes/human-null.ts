@@ -35,7 +35,7 @@ export const humanNull = {
 						keywords: [],
 						distance: [
 							{
-								type: 'Self',
+								type: 'Себе',
 								value: 0,
 								value2: 0,
 								within: 0,
@@ -43,7 +43,7 @@ export const humanNull = {
 								qualifier: ''
 							}
 						],
-						target: 'Self',
+						target: 'Себе',
 						cost: 0,
 						repeatable: false,
 						minLevel: 1,
@@ -113,7 +113,7 @@ export const humanNull = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -121,7 +121,7 @@ export const humanNull = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -166,7 +166,7 @@ export const humanNull = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -174,7 +174,7 @@ export const humanNull = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -379,7 +379,7 @@ export const humanNull = {
 								},
 								{
 									tag: 'action',
-									trigger: 'The first time each combat round that an enemy in the area of your Null Field ability uses a main action',
+									trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a main action',
 									value: '1'
 								},
 								{
@@ -429,13 +429,13 @@ export const humanNull = {
 					},
 					{
 						id: 'null-1-4',
-						name: 'Null Field',
+						name: 'Нульове Поле',
 						description: 'You project an aura that dampens the power of your foes.',
 						type: 'Ability',
 						data: {
 							ability: {
 								id: 'null-1-4',
-								name: 'Null Field',
+								name: 'Нульове Поле',
 								description: 'You project an aura that dampens the power of your foes.',
 								type: {
 									usage: 'Maneuver',
@@ -465,7 +465,7 @@ export const humanNull = {
 								sections: [
 									{
 										type: 'text',
-										text: '\nEach target reduces their potencies by 1.\n\nOnce as a free maneuver on each of your turns, you can spend 1 discipline and give your Null Field one of the following additional effects until the start of your next turn:\n* **Gravitic Disruption**: The first time on a turn that a target takes damage, you can slide them up to 2 squares.\n* **Inertial Anchor**: Any target who starts their turn in the area can\'t shift.\n* **Synaptic Break**: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.\n\nThis ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required)'
+										text: '\nEach target reduces their potencies by 1.\n\nOnce as a free maneuver on each of your turns, you can spend 1 discipline and give your Нульове Поле one of the following additional effects until the start of your next turn:\n* **Gravitic Disruption**: The first time on a turn that a target takes damage, you can slide them up to 2 squares.\n* **Inertial Anchor**: Any target who starts their turn in the area can\'t shift.\n* **Synaptic Break**: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.\n\nThis ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required)'
 									},
 									{
 										type: 'package',
@@ -506,7 +506,7 @@ export const humanNull = {
 								],
 								distance: [
 									{
-										type: 'Self',
+										type: 'Себе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -514,7 +514,7 @@ export const humanNull = {
 										qualifier: ''
 									}
 								],
-								target: 'Self',
+								target: 'Себе',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -862,7 +862,7 @@ export const humanNull = {
 								keywords: [],
 								distance: [
 									{
-										type: 'Self',
+										type: 'Себе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -870,14 +870,14 @@ export const humanNull = {
 										qualifier: ''
 									}
 								],
-								target: 'Self',
+								target: 'Себе',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
 								sections: [
 									{
 										type: 'text',
-										text: 'End one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your Null Field ability.'
+										text: 'End one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your Нульове Поле ability.'
 									}
 								],
 								preEffect: '',
@@ -936,7 +936,7 @@ export const humanNull = {
 					},
 					{
 						id: 'null-4-2',
-						name: 'Enhanced Null Field',
+						name: 'Enhanced Нульове Поле',
 						description: 'During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.',
 						type: 'Package Content',
 						data: {
@@ -968,7 +968,7 @@ export const humanNull = {
 						type: 'Heroic Resource Gain',
 						data: {
 							tag: 'action 2',
-							trigger: 'The first time each combat round that an enemy in the area of your Null Field ability uses a main action',
+							trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a main action',
 							value: '2',
 							replacesTags: [
 								'action'
@@ -1260,14 +1260,14 @@ export const humanNull = {
 					{
 						id: 'null-10-3',
 						name: 'Manifold Resonance',
-						description: '\nYour body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can shift yourself and any creatures in the area of your Null Field ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.\n\nWhenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your Psi Boost feature to that ability.\n\nAdditionally, you and allies in the area of your Null Field ability ignore banes and double banes on your power rolls.',
+						description: '\nYour body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can shift yourself and any creatures in the area of your Нульове Поле ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.\n\nWhenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your Psi Boost feature to that ability.\n\nAdditionally, you and allies in the area of your Нульове Поле ability ignore banes and double banes on your power rolls.',
 						type: 'Text',
 						data: null
 					},
 					{
 						id: 'null-10-4',
 						name: 'Order',
-						description: '\nYou have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline. At the start of a combat encounter, you can spend 1 order to increase the size of your Null Field by 1 until the end of the encounter. Order remains until you spend it',
+						description: '\nYou have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline. At the start of a combat encounter, you can spend 1 order to increase the size of your Нульове Поле by 1 until the end of the encounter. Order remains until you spend it',
 						type: 'Heroic Resource',
 						data: {
 							type: 'epic',
@@ -1870,7 +1870,7 @@ export const humanNull = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Null Field ability increases by 1. At the end of your current turn, each enemy in the area of your Null Field ability takes psychic damage equal to your Intuition score.'
+						text: 'Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Нульове Поле ability increases by 1. At the end of your current turn, each enemy in the area of your Нульове Поле ability takes psychic damage equal to your Intuition score.'
 					}
 				],
 				preEffect: '',
@@ -2234,7 +2234,7 @@ export const humanNull = {
 			{
 				id: 'null-ability-17',
 				name: 'Absorption Field',
-				description: 'Your null field absorbs kinetic energy.',
+				description: 'Your Нульове Поле absorbs kinetic energy.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -2248,7 +2248,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2256,14 +2256,14 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.'
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.'
 					}
 				],
 				preEffect: '',
@@ -2292,7 +2292,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2300,14 +2300,14 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
 					}
 				],
 				preEffect: '',
@@ -2336,7 +2336,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2344,14 +2344,14 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.'
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.'
 					}
 				],
 				preEffect: '',
@@ -2366,7 +2366,7 @@ export const humanNull = {
 			{
 				id: 'null-ability-20',
 				name: 'Synapse Field',
-				description: 'Attacks made by allies in your null field disrupt your enemies’ thoughts, causing psychic pain.',
+				description: 'Attacks made by allies in your Нульове Поле disrupt your enemies’ thoughts, causing psychic pain.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -2380,7 +2380,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2388,14 +2388,14 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.'
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.'
 					}
 				],
 				preEffect: '',
@@ -2542,7 +2542,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2550,14 +2550,14 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your Null Field ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage’s space.'
+						text: 'You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your Нульове Поле ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage’s space.'
 					}
 				],
 				preEffect: '',
@@ -2617,7 +2617,7 @@ export const humanNull = {
 			{
 				id: 'null-ability-25',
 				name: 'Arcane Purge',
-				description: 'You focus your null field into a pressure point strike that prevents your foe from channeling sorcery.',
+				description: 'You focus your Нульове Поле into a pressure point strike that prevents your foe from channeling sorcery.',
 				type: {
 					usage: 'Main Action',
 					free: false,
@@ -2792,7 +2792,7 @@ export const humanNull = {
 				type: {
 					usage: 'Triggered Action',
 					free: true,
-					trigger: 'The target takes damage from another creature’s ability while in the area of your Null Field ability',
+					trigger: 'The target takes damage from another creature’s ability while in the area of your Нульове Поле ability',
 					time: '',
 					qualifiers: [],
 					freeStrike: false
@@ -2922,7 +2922,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -2930,7 +2930,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3080,7 +3080,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3088,7 +3088,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3145,7 +3145,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3197,7 +3197,7 @@ export const humanNull = {
 							{
 								id: 'null-sub-1-8-1',
 								name: 'Shared Momentum',
-								description: 'When you take the Disengage move action, one ally in the area of your Null Field ability can also take the Disengage move action as a free triggered action, using your distance for that move action.',
+								description: 'When you take the Disengage move action, one ally in the area of your Нульове Поле ability can also take the Disengage move action as a free triggered action, using your distance for that move action.',
 								type: 'Text',
 								data: null
 							}
@@ -3305,7 +3305,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3313,7 +3313,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -3383,7 +3383,7 @@ export const humanNull = {
 										{
 											id: 'null-sub-2-1-2a',
 											name: 'Cryokinetic Mastery',
-											description: '\nAs your discipline grows, you strengthen the psionic power suffusing you, granting benefits from the Cryokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                          |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead.|\n| 4              | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Null Field ability, you gain 1 surge.                                                  |\n| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                            |\n| 8 (4th level)  | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Null Field ability, you gain 2 surges.                                                 |\n| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                      |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.      |',
+											description: '\nAs your discipline grows, you strengthen the psionic power suffusing you, granting benefits from the Cryokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                          |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead.|\n| 4              | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 1 surge.                                                  |\n| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                            |\n| 8 (4th level)  | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 2 surges.                                                 |\n| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                      |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.      |',
 											type: 'Text',
 											data: null
 										},
@@ -3528,7 +3528,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3536,14 +3536,14 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
 														sections: [
 															{
 																type: 'text',
-																text: 'Until the start of your next turn, the size of your Null Field ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.'
+																text: 'Until the start of your next turn, the size of your Нульове Поле ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.'
 															}
 														],
 														preEffect: '',
@@ -3737,7 +3737,7 @@ export const humanNull = {
 							{
 								id: 'null-sub-2-8-1',
 								name: 'Synaptic Triage',
-								description: 'As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your Null Field ability also gains this benefit.',
+								description: 'As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your Нульове Поле ability also gains this benefit.',
 								type: 'Text',
 								data: null
 							}
@@ -3777,7 +3777,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3785,7 +3785,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -4063,7 +4063,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4071,7 +4071,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4127,7 +4127,7 @@ export const humanNull = {
 							{
 								id: 'null-sub-3-5-1',
 								name: 'Inertial Fulcrum',
-								description: 'Whenever you use an ability to reduce damage dealt to you or to reduce the distance of forced movement imposed upon you, you can deal damage to one enemy in the area of your Null Field ability equal to your Intuition score.',
+								description: 'Whenever you use an ability to reduce damage dealt to you or to reduce the distance of forced movement imposed upon you, you can deal damage to one enemy in the area of your Нульове Поле ability equal to your Intuition score.',
 								type: 'Text',
 								data: null
 							}
@@ -4167,7 +4167,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4175,7 +4175,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4234,7 +4234,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4242,7 +4242,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4282,7 +4282,7 @@ export const humanNull = {
 							{
 								id: 'null-sub-3-8-1',
 								name: 'Inertial Dampener',
-								description: 'You and each creature or object of your choice in the area of your Null Field ability gain a bonus to stability equal to your Intuition score. A creature who attempts to force move a target with this bonus takes psychic damage equal to your Intuition score.',
+								description: 'You and each creature or object of your choice in the area of your Нульове Поле ability gain a bonus to stability equal to your Intuition score. A creature who attempts to force move a target with this bonus takes psychic damage equal to your Intuition score.',
 								type: 'Text',
 								data: null
 							}
@@ -4322,7 +4322,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4330,7 +4330,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

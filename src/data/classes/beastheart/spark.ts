@@ -31,7 +31,7 @@ export const spark: SubClass = {
 						type: FactoryLogic.type.createTrigger('You take damage.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport up to 5 spaces and halve the triggering damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -150,7 +150,7 @@ export const spark: SubClass = {
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`

@@ -91,7 +91,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						name: 'Rush',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal moves up to their speed.')
 						]
@@ -216,7 +216,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						name: 'Juke',
 						type: FactoryLogic.type.createTrigger('The animal is targeted by an area ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal shifts up to 2 squares before the ability resolves.')
 						]
@@ -268,7 +268,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						name: 'Trundle',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The animal moves up to their speed. They can make a free strike against each creature who makes an opportunity attack against them during this movement.')
 						]
@@ -337,7 +337,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						name: 'Ready to Strike',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The predator assesses their environment or lets loose a threatening roar and gains an edge on their next strike.')
 						]

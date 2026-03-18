@@ -219,7 +219,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('The elementalist takes damage.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The elementalist can teleport up to 2 squares. Each creature adjacent to the space they leave takes 2 corruption damage.')
 						]
@@ -407,7 +407,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						name: 'Poison the Blade',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They gain an edge on their next strike, and any potency for that strike increases by 1.')
 						]
@@ -561,7 +561,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('A creature deals damage to the talent.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The talent halves the damage and shifts up to 2 squares.')
@@ -698,7 +698,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('The elementalist takes damage.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The elementalist can teleport up to 3 squares. Each creature adjacent to the space they leave takes 3 corruption damage.')
 						]
@@ -886,7 +886,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						name: 'Poison the Blade',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They gain an edge on their next strike, and any potency for that strike increases by 1.')
 						]
@@ -1040,7 +1040,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('A creature deals damage to the talent.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The talent halves the damage and shifts up to 2 squares.')
@@ -1177,7 +1177,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('The elementalist takes damage.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The elementalist can teleport up to 4 squares. Each creature adjacent to the space they leave takes 4 corruption damage.')
 						]
@@ -1365,7 +1365,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						name: 'Poison the Blade',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They have a double edge on their next strike, and any potency for that strike increases by 2.')
 						]
@@ -1523,7 +1523,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('A creature deals damage to the talent.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The talent halves the damage and shifts up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt.')
@@ -1659,7 +1659,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('The elementalist takes damage.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The elementalist can teleport up to 5 squares. Each creature adjacent to the space they leave or appear in takes 5 corruption damage.')
 						]
@@ -1847,7 +1847,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						name: 'Envenomed Steel',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They have a double edge on their next strike, any potency for that strike increases by 2, and if the target has m<4], they are weakened (save ends).')
 						]
@@ -2006,7 +2006,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						type: FactoryLogic.type.createTrigger('A creature deals damage to the talent.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The talent halves the damage and shifts up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt and is pushed up to 5 squares.')

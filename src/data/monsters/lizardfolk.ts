@@ -475,7 +475,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						name: 'Trundle',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The deathrex moves up to their speed. They can make a free strike against each creature who makes an opportunity attack against them during this movement.')
 						]
@@ -513,7 +513,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						name: 'Shed Some Skin',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The deathrex shifts up to their speed, leaving behind a shed skin duplicate in the space they started in. The duplicate acts on the deathrex’s turn and has the deathrex’s characteristics, but has 10 Stamina and no villain actions.')
 						]

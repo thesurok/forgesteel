@@ -683,7 +683,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						type: FactoryLogic.type.createTrigger('The juggernaut takes damage.', { free: true }),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The juggernaut moves up to their speed and can make a free strike.')
 						]
@@ -753,7 +753,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'No.',
 						type: FactoryLogic.type.createTrigger('A creature targets an ally adjacent to the rampart with an ability that doesn’t also target the rampart.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The rampart becomes the target of the triggering ability instead.')
 						]
@@ -937,7 +937,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The warleader shifts up to their speed, and four orc blitzers appear in unoccupied spaces within distance.')
 						]
@@ -949,7 +949,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'I’ll Do This Myself',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Three times in succession, the warleader shifts up to their speed and can use Mace Lariat.')
 						]
@@ -1063,7 +1063,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Brace and Break',
 						type: FactoryLogic.type.createTrigger('The scyza or an ally riding the scyza is targeted by an ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Any damage dealt by the triggering ability is halved. If the creature or object who used the ability is within 3 squares of the scyza, the scyza can make a free strike against them.')
 						]

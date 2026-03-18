@@ -176,7 +176,7 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						name: 'Leech',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each creature engulfed by the shambling mound takes 5 poison damage. The shambling mound gains 5 temporary Stamina for each creature who takes damage this way.')
 						]
@@ -247,7 +247,7 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						name: 'Exposed Crux',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shambling mound rips themself apart, exposing the crux of magic holding them together. The distance of the shambling mound’s melee abilities increases to melee 10, the creature has a double edge on power rolls, and strikes made against them gain an edge.')
 						]

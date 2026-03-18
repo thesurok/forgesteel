@@ -23,7 +23,7 @@ export const causticAlchemy: SubClass = {
 						description: 'A little poison goes a long way.',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You gain two surges. Additionally, whenever you use a surge before the end of the encounter, you can choose to have it deal poison damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -45,7 +45,7 @@ export const causticAlchemy: SubClass = {
 						description: 'When an enemy attacks, you roll with the impact to reduce the harm.',
 						type: FactoryLogic.type.createTrigger('Another creature damages you.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You take half the triggering damage, then can shift up to 2 squares after the triggering effect resolves. If you end this shift with concealment or cover, you can use the Hide maneuver even if you are observed.'),
 							FactoryLogic.createAbilitySectionSpend({

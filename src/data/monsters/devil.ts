@@ -605,7 +605,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						name: 'Justice Turns Its Gaze',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The magistrate turns invisible until the start of their next turn, and can attempt to hide as a free maneuver before the end of the current turn.')
 						]

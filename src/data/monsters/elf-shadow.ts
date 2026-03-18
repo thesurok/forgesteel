@@ -550,7 +550,7 @@ In many shadow elf societies, all people are given basic combat training and are
 						type: FactoryLogic.type.createTrigger('The moondancer takes damage from a strike'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The moondancer can teleport up to 10 squares to a space with concealment created by darkness.')
 						]
@@ -606,7 +606,7 @@ In many shadow elf societies, all people are given basic combat training and are
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('If the mournblade has concealment, they can teleport up to 10 squares to a space with concealment created by darkness.')
 						]

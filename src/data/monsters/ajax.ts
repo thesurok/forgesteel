@@ -248,7 +248,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						name: 'Who’s Hesitating?',
 						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
 						]
@@ -274,7 +274,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
 						]
@@ -452,7 +452,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						name: 'Who’s Hesitating?',
 						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
 						]
@@ -478,7 +478,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
 						]

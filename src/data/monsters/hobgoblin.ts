@@ -476,7 +476,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The firerunner moves up to their speed and creates an 8 wall of fire along the path of their movement. Creatures can enter and pass through the wall. Any enemy who enters the wall for the first time in a round or starts their turn there takes 5 fire damage.')
 						]
@@ -1036,7 +1036,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the bloodlord surrounds themself with a storm of flying skulls. Any enemy who enters the area for the first time in a round or starts their turn there takes 8 corruption damage and takes a bane on their next power roll until the start of their next turn. ')
 						]

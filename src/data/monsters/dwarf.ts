@@ -481,7 +481,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						name: 'Intercepting Shield',
 						type: FactoryLogic.type.createTrigger('A creature makes a strike against an ally adjacent to the shieldwall.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The shieldwall becomes the target of the triggering strike and halves the damage.')
 						]

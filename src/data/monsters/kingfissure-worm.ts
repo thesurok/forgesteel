@@ -50,7 +50,7 @@ export const kingfissureWorm: MonsterGroup = {
 				name: 'Aftershock',
 				type: FactoryLogic.type.createTrigger('A creature deals damage to the kingfissure worm or one of their tongues.', { free: true }),
 				distance: [FactoryLogic.distance.createSelf()],
-				target: 'Self',
+				target: 'Себе',
 				cost: 3,
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each creature within 5 squares of the kingfissure worm takes 5 damage, and if they have A<4 they are knocked prone. The kingfissure worm can use this ability only once per round.')

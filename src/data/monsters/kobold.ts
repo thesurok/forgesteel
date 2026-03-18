@@ -792,7 +792,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The drangolin shifts up to their speed and uses Fiery Claws against each creature who comes adjacent to them during the shift. The drangolin makes one power roll against all targets.')
 						]

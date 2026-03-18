@@ -37,7 +37,7 @@ export const polderElementalist = {
 						],
 						distance: [
 							{
-								type: 'Self',
+								type: 'Себе',
 								value: 0,
 								value2: 0,
 								within: 0,
@@ -45,7 +45,7 @@ export const polderElementalist = {
 								qualifier: ''
 							}
 						],
-						target: 'Self',
+						target: 'Себе',
 						cost: 0,
 						repeatable: false,
 						minLevel: 1,
@@ -156,7 +156,7 @@ export const polderElementalist = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -164,7 +164,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -539,7 +539,7 @@ export const polderElementalist = {
 								],
 								distance: [
 									{
-										type: 'Self',
+										type: 'Себе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -547,7 +547,7 @@ export const polderElementalist = {
 										qualifier: ''
 									}
 								],
-								target: 'Self',
+								target: 'Себе',
 								cost: 0,
 								repeatable: false,
 								minLevel: 1,
@@ -897,7 +897,7 @@ export const polderElementalist = {
 												keywords: [],
 												distance: [
 													{
-														type: 'Self',
+														type: 'Себе',
 														value: 0,
 														value2: 0,
 														within: 0,
@@ -905,7 +905,7 @@ export const polderElementalist = {
 														qualifier: ''
 													}
 												],
-												target: 'Self',
+												target: 'Себе',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -950,7 +950,7 @@ export const polderElementalist = {
 												keywords: [],
 												distance: [
 													{
-														type: 'Self',
+														type: 'Себе',
 														value: 0,
 														value2: 0,
 														within: 0,
@@ -958,7 +958,7 @@ export const polderElementalist = {
 														qualifier: ''
 													}
 												],
-												target: 'Self',
+												target: 'Себе',
 												cost: 0,
 												repeatable: false,
 												minLevel: 1,
@@ -3864,7 +3864,7 @@ export const polderElementalist = {
 				],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -3872,7 +3872,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 9,
@@ -4130,7 +4130,7 @@ export const polderElementalist = {
 										],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -4138,7 +4138,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -5225,7 +5225,7 @@ export const polderElementalist = {
 									],
 									distance: [
 										{
-											type: 'Self',
+											type: 'Себе',
 											value: 0,
 											value2: 0,
 											within: 0,
@@ -5233,7 +5233,7 @@ export const polderElementalist = {
 											qualifier: ''
 										}
 									],
-									target: 'Self',
+									target: 'Себе',
 									cost: 0,
 									repeatable: false,
 									minLevel: 1,

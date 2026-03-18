@@ -114,7 +114,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						name: 'Primal Bay',
 						type: FactoryLogic.type.createMain(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes. On their next turn, the minotaur can use one additional maneuver.')

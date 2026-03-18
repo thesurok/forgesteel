@@ -1579,7 +1579,7 @@ export const highElfTactician = {
 				keywords: [],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1587,7 +1587,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -1621,7 +1621,7 @@ export const highElfTactician = {
 				keywords: [],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1629,7 +1629,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -1663,7 +1663,7 @@ export const highElfTactician = {
 				keywords: [],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1671,7 +1671,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -1705,7 +1705,7 @@ export const highElfTactician = {
 				keywords: [],
 				distance: [
 					{
-						type: 'Self',
+						type: 'Себе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -1713,7 +1713,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self',
+				target: 'Себе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -2306,7 +2306,7 @@ export const highElfTactician = {
 														],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -2822,7 +2822,7 @@ export const highElfTactician = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Self',
+												type: 'Себе',
 												value: 0,
 												value2: 0,
 												within: 0,
@@ -2830,7 +2830,7 @@ export const highElfTactician = {
 												qualifier: ''
 											}
 										],
-										target: 'Self',
+										target: 'Себе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -3272,7 +3272,7 @@ export const highElfTactician = {
 														keywords: [],
 														distance: [
 															{
-																type: 'Self',
+																type: 'Себе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3280,7 +3280,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Self',
+														target: 'Себе',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,

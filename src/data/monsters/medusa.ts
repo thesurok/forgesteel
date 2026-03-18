@@ -200,7 +200,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						name: 'Nimble Escape',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The medusa shifts up to 3 squares and can attempt to hide even if observed.')
 						]
@@ -254,7 +254,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						name: 'Serpent Wings',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The medusa temporarily manifests wings and flies up to their speed without provoking opportunity attacks. During or after this movement, they can use Snake Bites and Damning Gaze once each.')
 						]

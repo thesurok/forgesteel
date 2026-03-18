@@ -371,7 +371,7 @@ Pinna, Hedge Witch, Gravesford`,
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The slink jumps up to 3 squares. If they have cover or concealment when they land, they can attempt to hide.')
 						]
@@ -507,7 +507,7 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'Sun Lamp',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The daybringer expands their throat to make it resemble the sun until the start of their next turn. During that time, each angulotl who starts their turn within 10 squares of the daybringer regains 5 Stamina and gains a +3 bonus to speed until the end of their turn.')
 						]

@@ -77,7 +77,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 						description: 'Keep up the attack. Never give them a moment’s grace.',
 						type: FactoryLogic.type.createTrigger('Another hero ends their turn. That hero can’t have used this ability to start their turn.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionText('You take your turn after the triggering hero.')
@@ -244,7 +244,7 @@ If the ability has multiple targets, the cost is reduced even if the ability has
 						name: 'Umbral Form',
 						description: 'You lose control of yourself, becoming a shadow creature dripping with ash.',
 						type: FactoryLogic.type.createManeuver(),
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('This transformation lasts until the end of the encounter, until you are dying, or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:'),
 							FactoryLogic.createAbilitySectionText('- You can automatically climb at full speed while moving.'),
@@ -635,7 +635,7 @@ Subterfuge remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You shift up to your speed and make one power roll that targets up to three enemies who came adjacent to you during the move.'),
@@ -674,7 +674,7 @@ Subterfuge remains until you spend it.`
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You use a strike signature ability twice.')
@@ -686,7 +686,7 @@ Subterfuge remains until you spend it.`
 			description: 'You enter a flow state that makes you nearly impossible to pin down.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever an enemy moves or is force moved adjacent to you or damages you, you can take the Disengage move action as a free triggered action.')
@@ -762,7 +762,7 @@ Subterfuge remains until you spend it.`
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'Self',
+			target: 'Себе',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to shift to a new location within the area and make a free strike against them.')
@@ -882,7 +882,7 @@ Subterfuge remains until you spend it.`
 			distance: [
 				FactoryLogic.distance.createSelf()
 			],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You can use a strike signature ability four times, use a strike signature ability that gains an edge three times, or use a strike signature ability that has a double edge twice. You can shift up to 2 squares between each use.')

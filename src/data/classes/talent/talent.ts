@@ -221,7 +221,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 									description: 'You surround yourself with an invisible ward of telekinetic energy.',
 									type: FactoryLogic.type.createTrigger('An adjacent creature deals damage to you.', { free: true }),
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									sections: [
 										FactoryLogic.createAbilitySectionText('You can push your attacker up to a number of squares equal to your Reason score.')
 									]
@@ -305,7 +305,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						description: 'You project your mind outside your body.',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
 While you are in this state, your body remains unconscious and prone, and your mind is a separate entity with size 1T. Your mind automatically has concealment, and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.

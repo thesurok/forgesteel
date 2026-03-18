@@ -848,7 +848,7 @@ The demon lord’s Aspect enjoys bringing enemies in close with their appendages
 											name: 'I Like Your Taste',
 											type: FactoryLogic.type.createTrigger('The Aspect takes damage from an enemy.', { free: true }),
 											distance: [FactoryLogic.distance.createSelf()],
-											target: 'Self',
+											target: 'Себе',
 											sections: [
 												FactoryLogic.createAbilitySectionText('The Aspect has a double edge on their next power roll. They can choose to give this benefit to an ally within your Summoner’s Range instead.')
 											]

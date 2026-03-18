@@ -947,7 +947,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Advance!',
 						type: FactoryLogic.type.createVillainAction(1),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The blackguard shifts up to their speed. During or after this movement, they can use their Zweihander Swing twice.')
 						]
@@ -1064,7 +1064,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						distance: [
 							FactoryLogic.distance.createSelf()
 						],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bandit chief takes 5 corruption damage and increases the outcome of the power roll by one tier. This damage can’t be reduced in any way.')
 						]
@@ -1112,7 +1112,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						name: 'Lead From the Front',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The bandit chief shifts up to 10 squares regardless of their speed. During or after this movement, they can use their Whip and Magic Longsword against up to four targets. Additionally, one ally adjacent to each target can make a free strike against that target.')
 						]

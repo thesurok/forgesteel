@@ -185,7 +185,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						type: FactoryLogic.type.createTrigger('While flying, the dragon starts their turn or moves.', { free: true }),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon drops to the ground and uses Forge Hammer Tail Slam, which deals an extra 4 damage for each square they descended.')
 						]
@@ -243,7 +243,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						name: 'Subdermal Shielding',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Shields embedded under the dragon’s scales emerge, and the dragon gains damage immunity 6 at the start of each round until the end of the encounter. If the dragon takes any damage, they lose this immunity until the end of the current round.')
 						]

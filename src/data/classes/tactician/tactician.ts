@@ -518,7 +518,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			description: 'The purpose of a charge is to break their morale and force a retreat.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then shift up to 2 squares. Additionally, any ally using the Charge main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee free strike.')
@@ -530,7 +530,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			description: 'Your allies see the advantages in attacking the targets you select.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.')
@@ -542,7 +542,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			description: 'The tide begins to turn.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [середній], the target is frightened of the creature who dealt the damage (save ends).')
@@ -554,7 +554,7 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			description: 'We can do this! Keep faith and hold fast!',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, the creature who dealt the damage can spend a Recovery.')

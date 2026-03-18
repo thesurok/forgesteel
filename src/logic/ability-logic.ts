@@ -86,7 +86,7 @@ export class AbilityLogic {
 			if (distance.qualifier) {
 				return `Self (${distance.qualifier})`;
 			} else {
-				return 'Self';
+				return 'Себе';
 			}
 		}
 
@@ -157,7 +157,7 @@ export class AbilityLogic {
 	static usesDamage = (ability: Ability) => {
 		return ability.sections
 			.filter(s => s.type === 'roll')
-			.flatMap(s => [ s.roll.tier1, s.roll.tier2, s.roll.tier3 ])
+			.flatMap(s => [s.roll.tier1, s.roll.tier2, s.roll.tier3])
 			.some(tier => tier.includes('damage') || tier.includes('dmg'));
 	};
 
@@ -166,7 +166,7 @@ export class AbilityLogic {
 			return /(<|>|=)\s*(weak|average|avg|strong)/.test(tier);
 		};
 
-		return [ powerRoll.tier1, powerRoll.tier2, powerRoll.tier3 ].some(tier => match(tier));
+		return [powerRoll.tier1, powerRoll.tier2, powerRoll.tier3].some(tier => match(tier));
 	};
 
 	static getPowerRollBonusValue = (ability: Ability, creature: Hero | Monster | undefined): number => {
@@ -183,7 +183,7 @@ export class AbilityLogic {
 					console.warn('More than one roll section!', ability.name, rollSections);
 				}
 
-				[ rollSection.roll.tier1, rollSection.roll.tier2, rollSection.roll.tier3 ].forEach(tier => {
+				[rollSection.roll.tier1, rollSection.roll.tier2, rollSection.roll.tier3].forEach(tier => {
 					const potency = tier.match(/[MmAaRrIiPp]<(\d)/);
 					if (potency && potency[1]) {
 						rollPowerAmount = Math.max(rollPowerAmount, Number.parseInt(potency[1]));
@@ -205,9 +205,9 @@ export class AbilityLogic {
 			let rollCharacteristics = rollSection.roll.characteristic;
 			// Specific check for Grab/Knockback + Psionic Martial Arts override
 			if (CreatureLogic.isHero(creature)
-				&& ([ 'grab', 'knockback' ].includes(ability.id))
+				&& (['grab', 'knockback'].includes(ability.id))
 				&& HeroLogic.getFeatures(creature as Hero).find(f => f.feature.id === 'null-1-8')) { // Psionic Martial Arts id
-				rollCharacteristics = [ Characteristic.Intuition ];
+				rollCharacteristics = [Characteristic.Intuition];
 			}
 			return rollCharacteristics;
 		}
@@ -219,7 +219,7 @@ export class AbilityLogic {
 			.split(';')
 			.map(section => section.trim())
 			.map((section, n) => {
-				if (hero && (n === 0) && [ 'damage', 'dmg' ].some(s => section.toLowerCase().endsWith(s))) {
+				if (hero && (n === 0) && ['damage', 'dmg'].some(s => section.toLowerCase().endsWith(s))) {
 					let value = 0;
 					let sign = '+';
 					const dice: string[] = [];
@@ -297,12 +297,12 @@ export class AbilityLogic {
 						total = `${dice.join(' + ')} + ${total}`;
 					}
 
-					const damage = [ ...types, 'damage' ].join(' ');
+					const damage = [...types, 'damage'].join(' ');
 
 					return `${total} ${damage}`;
 				}
 
-				if (hero && (n === 0) && [ 'pull', 'push', 'slide' ].some(s => section.toLowerCase().includes(s))) {
+				if (hero && (n === 0) && ['pull', 'push', 'slide'].some(s => section.toLowerCase().includes(s))) {
 					let value = 0;
 					let sign = '+';
 					let vertical = false;
@@ -354,7 +354,7 @@ export class AbilityLogic {
 			.split(';')
 			.map(section => section.trim())
 			.map((section, n) => {
-				if (retainer && (n === 0) && [ 'damage', 'dmg' ].some(s => section.toLowerCase().endsWith(s))) {
+				if (retainer && (n === 0) && ['damage', 'dmg'].some(s => section.toLowerCase().endsWith(s))) {
 					let value = 0;
 					const types: string[] = [];
 
@@ -387,7 +387,7 @@ export class AbilityLogic {
 						}
 					});
 
-					const damage = [ types.sort().join(' or '), 'damage' ].join(' ');
+					const damage = [types.sort().join(' or '), 'damage'].join(' ');
 
 					return `${value} ${damage}`;
 				}
@@ -418,7 +418,7 @@ export class AbilityLogic {
 		// Equal to [N times] your [Characteristic(s)] score
 		if (hero) {
 			const charRegex = /(equal to(?: or (?:greater|less) than)?)[^,.;:]* your ([^,.;:]*) score/gi;
-			[ ...text.matchAll(charRegex) ].forEach(match => {
+			[...text.matchAll(charRegex)].forEach(match => {
 				const options: number[] = [];
 				[
 					Characteristic.Might,
@@ -450,7 +450,7 @@ export class AbilityLogic {
 		// Equal to [N times] your level
 		if (hero) {
 			const lvlRegex = /equal to[^,.;:]*your level/gi;
-			[ ...text.matchAll(lvlRegex) ].map(r => r[0]).forEach(str => {
+			[...text.matchAll(lvlRegex)].map(r => r[0]).forEach(str => {
 				const dice = FormatLogic.getDice(str);
 				const constant = FormatLogic.getConstant(str);
 				const value = hero.class ? hero.class.level : 1;
@@ -466,7 +466,7 @@ export class AbilityLogic {
 		// Equal to [N times] your recovery value
 		if (hero) {
 			const recRegex = /equal to[^,.;:]*your recovery value/gi;
-			[ ...text.matchAll(recRegex) ].map(r => r[0]).forEach(str => {
+			[...text.matchAll(recRegex)].map(r => r[0]).forEach(str => {
 				const dice = FormatLogic.getDice(str);
 				const constant = FormatLogic.getConstant(str);
 				const value = HeroLogic.getRecoveryValue(hero);
@@ -484,7 +484,7 @@ export class AbilityLogic {
 			text = text.replace('a number of squares equal to your speed', 'up to your speed');
 			text = text.replace('a number of squares up to your speed', 'up to your speed');
 			const speedRegex = /up to[^,.;:]*your speed/gi;
-			[ ...text.matchAll(speedRegex) ].map(r => r[0]).forEach(str => {
+			[...text.matchAll(speedRegex)].map(r => r[0]).forEach(str => {
 				const dice = FormatLogic.getDice(str);
 				const constant = FormatLogic.getConstant(str);
 				const value = HeroLogic.getSpeed(hero).value;
@@ -499,7 +499,7 @@ export class AbilityLogic {
 
 		// Potencies
 		const potencyRegex = /[MARIP]\s*<\s*\[?(\d+|weak|average|avg|strong)\]?,?/gi;
-		[ ...text.matchAll(potencyRegex) ].map(r => r[0]).forEach(str => {
+		[...text.matchAll(potencyRegex)].map(r => r[0]).forEach(str => {
 			const x = str.endsWith(',') ? str.substring(0, str.length - 1) : str;
 			text = text.replace(str, `\`${x}\``);
 		});

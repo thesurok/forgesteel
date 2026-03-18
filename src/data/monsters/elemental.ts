@@ -164,7 +164,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						cost: 1,
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The crux ignores any effects associated with the damage and can fly up to their speed. If the crux doesn’t end this movement on solid ground, they fall.')
 						]
@@ -495,7 +495,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						type: FactoryLogic.type.createTrigger('The force takes damage.'),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The force halves the damage, and has damage weakness 3 and a +3 bonus to speed until the end of the encounter. This damage weakness increases by 3 each time the force uses this ability in the same encounter.')
 						]

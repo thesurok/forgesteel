@@ -188,7 +188,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						type: FactoryLogic.type.createTrigger('A creature leaves the area of the dragon’s Stagnant Wyrmscale Aura trait.', { free: true }),
 						cost: 1,
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon shifts up to their speed, and the Deathcount of each dragonsealed creature who comes adjacent to the dragon during this shift is reduced by 1.')
 						]

@@ -178,7 +178,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						name: 'Field Collapse',
 						type: FactoryLogic.type.createTrigger('The dragon takes damage from an ability while the area of their Voidshroud Wyrmscale Aura is 2 or more.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon halves the damage. Each enemy and object in the area of the dragon’s Voidshroud Wyrmscale Aura trait takes 5 sonic damage and is pulled up to 5 squares toward the dragon. The area of the wyrmscale aura then resets to 1.')
 						]
@@ -234,7 +234,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						name: 'Burning Aurora',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, each enemy who is dragonsealed and weakened and who the dragon has line of effect to loses 1 of their Heroic Resource at the start of each of their turns (to a minimum of 0). The dragon then uses their Cosmic Tail Ray ability with a double edge, targeting four creatures or objects.')
 						]

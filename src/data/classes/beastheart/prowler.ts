@@ -31,7 +31,7 @@ export const prowler: SubClass = {
 						type: FactoryLogic.type.createTrigger('An enemy deals damage to a creature other than you.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You become invisible, use the Hide maneuver, and move up to a number of squares equal to your Intuition score, in any order. You remain invisible until the end of your next turn or you deal damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -148,7 +148,7 @@ export const prowler: SubClass = {
 									type: FactoryLogic.type.createMove(),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('You and your companion shift up to your speeds. During this movement, you are both invisible and can move through enemies, objects, and difficult terrain without spending additional squares of movement. You deal corruption damage equal to your Intuition score to each enemy you pass through during this movement. Each of you can damage each enemy once in this way.')

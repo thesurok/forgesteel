@@ -774,7 +774,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
-		effect: 'You must be a null to wear this ring. While you do so, the area of your Null Field ability increases by 1.',
+		effect: 'You must be a null to wear this ring. While you do so, the area of your Нульове Поле ability increases by 1.',
 		featuresByLevel: [
 			{
 				level: 1,

@@ -807,7 +807,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 						name: 'Temporal Flux',
 						type: FactoryLogic.type.createTrigger('You are targeted by an ability', { free: true }),
 						distance: [FactoryLogic.distance.createSpecial('')],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You teleport to your imprint, and the power roll for the ability is an automatic tier 1 result.')
 						]

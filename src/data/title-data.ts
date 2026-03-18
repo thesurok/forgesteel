@@ -179,7 +179,7 @@ export class TitleData {
 					name: 'Stonemeld',
 					type: FactoryLogic.type.createManeuver({ qualifiers: ['Adjacent to a stone wall'] }),
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви отримуєте прикриття. Це прикриття триває, доки ви не покинете клітку або не використаєте здібність.')
 					]
@@ -373,7 +373,7 @@ You find an agent who can provide you with three pieces of information about the
 					description: 'You open your senses to the residue of magic',
 					type: FactoryLogic.type.createManeuver({ free: true }),
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви завдаєте собі 1d6 шкоди, яку не можна зменшити жодним чином. Коли це відбувається, ви ігноруєте важкопрохідну місцевість і можете збільшити дальність будь-якого стрибка на 1 клітку до кінця вашого ходу.')
 					]
@@ -1014,7 +1014,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					name: 'Last-Ditch Prayer',
 					type: FactoryLogic.type.createManeuver({ free: true }),
 					distance: [FactoryLogic.distance.createSelf()],
-					target: 'Self',
+					target: 'Себе',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Ви виголошуєте молитву про допомогу, отримуючи пул у 2d10 одиниць Героїчного Ресурсу, який надає ваш клас. Цей пул зникає наприкінці вашого ходу, якщо ви ним не скористались. Після використання цієї переваги ви не можете використати її знову, доки не виконаєте іншу послугу для бога чи святого, або доки не підніметесь на рівень.')
 					]

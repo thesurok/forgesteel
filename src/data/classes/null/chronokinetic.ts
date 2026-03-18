@@ -66,7 +66,7 @@ export const chronokinetic: SubClass = {
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви можете використати сигнатурну або героїчну здібність. Ви отримуєте перевагу на кидки сили цієї здібності.')
@@ -136,7 +136,7 @@ export const chronokinetic: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви можете використати до трьох сигнатурних здібностей, кожна з яких отримує перевагу.')
@@ -154,7 +154,7 @@ export const chronokinetic: SubClass = {
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSpecial('Self; see below')],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -227,7 +227,7 @@ export const chronokinetic: SubClass = {
 									type: FactoryLogic.type.createTrigger('Інша істота на карті зустрічі завершує свій хід.', { free: true }),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Ви отримуєте бонусний хід негайно після створіння, що викликало тригер. Ця здібність може бути використана лише один раз за бойовий раунд.')

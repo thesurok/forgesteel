@@ -188,7 +188,7 @@ export const olothec: MonsterGroup = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The olothec teleports to an unoccupied space within 10 squares. Alternatively, they swap places with a creature or object within 5 squares of them.')
 						]

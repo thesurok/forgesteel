@@ -169,7 +169,7 @@ Jackson Bootblack`,
 									description: '',
 									type: FactoryLogic.type.createMain(),
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Щоразу, коли ви ходите першим у бойовій зустрічі, ви можете основною дією представити себе та своїх союзників супротивникам. Кожен союзник може зміститися на свою швидкість, а кидки здібностей проти них отримують подвійну перешкоду до кінця раунду. Крім того, будь-який застигнутий зненацька ворог більше не вважається застигнутим.')
 									]
@@ -645,7 +645,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви зміщуєтеся на свою швидкість. Ви робите один кидок сили, який цілить у кожного ворога, до якого ви наблизилися під час цього зміщення.'),
@@ -686,7 +686,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви стаєте невидимим і створюєте магічну ілюзію свого тіла, що падає у вашому місці. Поки ви невидимі, ви отримуєте +3 до швидкості та ігноруєте важкопрохідну місцевість. Ілюзія та невидимість тривають до кінця вашого наступного ходу або поки ілюзію не взаємодіють, ви не отримаєте шкоду чи не використаєте основну дію або маневр.')
@@ -882,7 +882,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText('До кінця зустрічі, коли ви знижуєте істоту до 0 Витривалості за допомогою здібності, ви можете використати безкоштовну тригерну дію, щоб телепортувати союзника в межах дистанції цієї здібності у простір цієї істоти в потоці пелюсток троянд. Ви або телепортований союзник можуть потім зробити ближній безкоштовний удар.')
@@ -908,7 +908,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`**Ефект** До кінця зустрічі, щоразу, коли ви завдаєте кидкову шкоду істоті чи об'єкту або дозволяєте істоті витратити Відновлення, ви можете безкоштовною тригерною дією надати цій істоті чи об'єкту один із наступних ефектів до початку вашого наступного ходу. Якщо ця здібність спрацьовує через те, що кілька цілей одночасно отримують шкоду або кілька істот одночасно витрачають Відновлення, кожна ціль отримує той самий ефект:
