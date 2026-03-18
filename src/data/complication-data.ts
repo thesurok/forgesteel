@@ -1363,7 +1363,7 @@ export class ComplicationData {
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-					target: 'Each creature in the area',
+					target: 'Кожна істота в зоні',
 					sections: [
 						FactoryLogic.createAbilitySectionText('Використання цієї здібності коштує всі ваші геройські ресурси.'),
 						FactoryLogic.createAbilitySectionRoll(
@@ -1667,7 +1667,7 @@ export class ComplicationData {
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill1',
 				count: 2,
-				selected: ['Eavesdrop', 'Sneak']
+				selected: ['Eavesdrop', 'Крастись']
 			}),
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill3',

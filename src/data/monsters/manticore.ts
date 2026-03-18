@@ -182,7 +182,7 @@ export const manticore: MonsterGroup = {
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

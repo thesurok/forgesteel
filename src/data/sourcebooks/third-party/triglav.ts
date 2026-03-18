@@ -787,7 +787,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Three creatures',
+			target: '3 Істоти',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionField({
@@ -926,7 +926,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vampire-subclass-1-1-1',
-							selected: ['Hide']
+							selected: ['Сховатись']
 						}),
 						FactoryLogic.feature.create({
 							id: 'vampire-subclass-1-1-2',

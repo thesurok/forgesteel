@@ -33,7 +33,7 @@ export const polderShadow = {
 							freeStrike: false
 						},
 						keywords: [
-							'Magic'
+							'Магія'
 						],
 						distance: [
 							{
@@ -114,7 +114,7 @@ export const polderShadow = {
 								description: 'Your small size makes it easier for you to slip away from the fray.',
 								type: 'Bonus',
 								data: {
-									field: 'Disengage',
+									field: 'Відступ',
 									value: 1,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -250,7 +250,7 @@ export const polderShadow = {
 							description: 'Your small size makes it easier for you to slip away from the fray.',
 							type: 'Bonus',
 							data: {
-								field: 'Disengage',
+								field: 'Відступ',
 								value: 1,
 								valueCharacteristics: [],
 								valueCharacteristicMultiplier: 1,
@@ -344,11 +344,11 @@ export const polderShadow = {
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
-				'Agility'
+				'Ловкість'
 			]
 		],
 		primaryCharacteristics: [
-			'Agility'
+			'Ловкість'
 		],
 		featuresByLevel: [
 			{
@@ -418,8 +418,8 @@ export const polderShadow = {
 							],
 							count: 2,
 							selected: [
-								'Hide',
-								'Sneak'
+								'Сховатись',
+								'Крастись'
 							]
 						}
 					},
@@ -443,7 +443,7 @@ export const polderShadow = {
 								'Flirt',
 								'Gymnastics',
 								'Jump',
-								'Lie'
+								'Брехня'
 							]
 						}
 					},
@@ -588,7 +588,7 @@ export const polderShadow = {
 															roll: {
 																characteristic: [
 																	'Might',
-																	'Agility'
+																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '2 + M or A damage; you shift 1 square',
@@ -777,7 +777,7 @@ export const polderShadow = {
 						description: 'Your Agility score increases to 3',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1090,11 +1090,11 @@ export const polderShadow = {
 					},
 					{
 						id: 'shadow-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1238,7 +1238,7 @@ export const polderShadow = {
 						description: 'Your Agility score increases to 5',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1430,7 +1430,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 + A damage',
@@ -1497,7 +1497,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 + A damage',
@@ -1564,7 +1564,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 + A damage',
@@ -1622,7 +1622,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 + A damage',
@@ -1680,7 +1680,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; slide 2',
@@ -1747,7 +1747,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; A < [слабкий], bleeding (save ends)',
@@ -1801,7 +1801,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '5 + A damage',
@@ -1868,7 +1868,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 damage',
@@ -1931,7 +1931,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '2d6 + 7 + A damage',
@@ -1988,7 +1988,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 damage',
@@ -2042,7 +2042,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '6 + A damage; R < [слабкий], the target has damage weakness 5 (save ends)',
@@ -2073,7 +2073,7 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged'
 				],
@@ -2193,7 +2193,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '9 + A damage',
@@ -2251,7 +2251,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '8 + A damage; A < [слабкий], restrained (save ends)',
@@ -2314,7 +2314,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '7 + A damage; M < [слабкий], slowed (save ends)',
@@ -2346,7 +2346,7 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2390,7 +2390,7 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -2418,7 +2418,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '8 + A corruption damage',
@@ -2472,7 +2472,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '10 damage',
@@ -2539,7 +2539,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '10 + A damage; P < [слабкий], dazed (save ends)',
@@ -2597,7 +2597,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '12 + A damage',
@@ -2633,7 +2633,7 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2654,7 +2654,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '11 corruption damage; A < [слабкий] , restrained (save ends)',
@@ -2685,7 +2685,7 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2752,7 +2752,7 @@ export const polderShadow = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '12 damage; M < [слабкий] , slowed (save ends)',
@@ -2792,7 +2792,7 @@ export const polderShadow = {
 									],
 									count: 1,
 									selected: [
-										'Magic'
+										'Магія'
 									]
 								}
 							},
@@ -2815,7 +2815,7 @@ export const polderShadow = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -2874,7 +2874,7 @@ export const polderShadow = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -2946,7 +2946,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Ranged',
 															'Strike',
@@ -2979,7 +2979,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '6 + A damage; you can teleport the target 1 square',
@@ -3123,7 +3123,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -3147,7 +3147,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '3 + A damage; vertical push 5',
@@ -3193,7 +3193,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3281,7 +3281,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Weapon'
 														],
@@ -3308,7 +3308,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: 'An enemy takes 6 damage; an ally can teleport up to 3 squares.',
@@ -3350,7 +3350,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -3374,7 +3374,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '13 + A corruption damage; push 3',
@@ -3617,7 +3617,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '4 + A fire damage',
@@ -3672,7 +3672,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Each creature in the area',
+														target: 'Кожна істота в зоні',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3681,7 +3681,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '2 poison damage',
@@ -3783,7 +3783,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Three creatures',
+														target: '3 Істоти',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3838,7 +3838,7 @@ export const polderShadow = {
 																qualifier: ''
 															}
 														],
-														target: 'Three creatures',
+														target: '3 Істоти',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3851,7 +3851,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: 'The creature’s speed is increased by 2 until the end of the encounter.',
@@ -4011,7 +4011,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '7 damage',
@@ -4084,7 +4084,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '4 + A fire damage; vertical push 8',
@@ -4145,7 +4145,7 @@ export const polderShadow = {
 									],
 									count: 1,
 									selected: [
-										'Lie'
+										'Брехня'
 									]
 								}
 							},
@@ -4168,7 +4168,7 @@ export const polderShadow = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -4227,7 +4227,7 @@ export const polderShadow = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -4293,7 +4293,7 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4315,7 +4315,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: 'Slide 4',
@@ -4361,7 +4361,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4461,7 +4461,7 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4516,7 +4516,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -4540,7 +4540,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '2 damage; if the target has R < [слабкий], before the damage is resolved, they make a free strike.',
@@ -4619,7 +4619,7 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4698,7 +4698,7 @@ export const polderShadow = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '15 + A damage',
@@ -4747,7 +4747,7 @@ export const polderShadow = {
 				value: -1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 2
 			},
 			{

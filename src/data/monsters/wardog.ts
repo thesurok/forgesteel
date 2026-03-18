@@ -128,7 +128,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				cost: 3,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-				target: 'Each creature in the area',
+				target: 'Кожна істота в зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**. The same condition is imposed on each affected target'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1001,7 +1001,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target ally shifts up to 2 squares and can use the Grab maneuver. Until the end of the encounter, each target enemy takes a bane on the Escape Grab maneuver.')
 						]
@@ -2248,7 +2248,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 'signature',
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 7, value2: 2, within: 10 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								tier1: '3 damage; M < 2 push (see effect)',
@@ -3199,7 +3199,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the next round, each target enemy who has <code>I < 4</code> is dazed, each target enemy who has <code>M < 4</code> is restrained, and each target enemy who has <code>A < 4</code> can’t use triggered actions. Additionally, until the end of the encounter, Alkestis and each target ally have damage immunity 3 and deal an extra 5 damage with strikes.')
 						]

@@ -6,30 +6,30 @@ import { SubClass } from '@/models/subclass';
 
 export const blackAsh: SubClass = {
 	id: 'shadow-sub-1',
-	name: 'College of Black Ash',
-	description: 'The College of Black Ash founded the art of being a shadow. Its graduates use Black Ash sorcery to teleport around the battlefield in clouds of soot, and to manipulate and create darkness. Graduates of the college are unmatched in mobility.',
+	name: 'Коледж Чорного Попілу',
+	description: 'Коледж Чорного Попілу заснував мистецтво бути тінню. Його випускники використовують чаклунство Чорного Попілу, щоб телепортуватися полем бою в клубах сажі та маніпулювати й створювати темряву. Випускники коледжу не мають собі рівних у мобільності.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-1-1-1',
-					selected: ['Magic']
+					selected: ['Магія']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-1-1-2',
-						name: 'Black Ash Teleport',
-						description: 'In a swirl of black ash, you step from one place to another.',
+						name: 'Телепорт Чорного Попілу',
+						description: 'У вирі чорного попілу ви переступаєте з одного місця на інше.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You teleport up to 5 squares. If you have concealment or cover at your destination, you can use the Hide maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.'),
+							FactoryLogic.createAbilitySectionText('Ви телепортуєтеся на відстань до 5 клітин. Якщо на місці приземлення ви маєте затемнення або укриття, ви можете використати маневр Сховатися навіть якщо вас бачать. Якщо ви успішно сховаєтеся, використавши цей маневр, ви отримуєте 1 сплеск.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'You teleport 1 additional square for each insight spent.'
+								effect: 'Ви телепортуєтеся на 1 додаткову клітину за кожну витрачену Прозорливість.'
 							})
 						]
 					})
@@ -37,17 +37,17 @@ export const blackAsh: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-1-1-3',
-						name: 'In All This Confusion',
-						description: 'You vanish in a plume of black smoke to avoid danger.',
-						type: FactoryLogic.type.createTrigger('You take damage.'),
+						name: 'У всій цій метушні',
+						description: 'Ви зникаєте у стовпі чорного диму, щоб уникнути небезпеки.',
+						type: FactoryLogic.type.createTrigger('Ви отримуєте шкоду.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You halve the damage, then can teleport up to 4 squares after the triggering effect resolves.'),
+							FactoryLogic.createAbilitySectionText('Ви зменшуєте шкоду наполовину, а потім можете телепортуватися на відстань до 4 клітин після розвʼязання викликаного ефекту.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'You teleport 1 additional square for each insight spent.'
+								effect: 'Ви телепортуєтеся на 1 додаткову клітину за кожну витрачену Прозорливість.'
 							})
 						]
 					})
@@ -59,14 +59,14 @@ export const blackAsh: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-1-2-1',
-					name: '2nd-Level College Ability',
+					name: 'Здібність коледжу 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-2-1a',
-									name: 'In a Puff of Ash',
-									description: 'You enchant a strike with your teleportation magic.',
+									name: 'У клубку попелу',
+									description: 'Ви зачаровуєте удар своєю телепортаційною магією.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
@@ -78,9 +78,9 @@ export const blackAsh: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '6 + A damage; you can teleport the target 1 square',
-											tier2: '10 + A damage; you can teleport the target up to 3 squares',
-											tier3: '14 + A damage; you can teleport the target up to 5 squares'
+											tier1: '6 + Л шкоди; ви можете телепортувати ціль на 1 клітину',
+											tier2: '10 + Л шкоди; ви можете телепортувати ціль на відстань до 3 клітин',
+											tier3: '14 + Л шкоди; ви можете телепортувати ціль на відстань до 5 клітин'
 										}))
 									]
 								})
@@ -91,15 +91,15 @@ export const blackAsh: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-2-1b',
-									name: 'Too Slow',
-									description: 'Your foe made a big mistake.',
-									type: FactoryLogic.type.createTrigger('You use your In All This Confusion ability.', { free: true }),
+									name: 'Занадто повільно',
+									description: 'Ваш супротивник припустився великої помилки.',
+									type: FactoryLogic.type.createTrigger('Ви використовуєте вашу здібність «У всій цій метушні».', { free: true }),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You ignore any effects associated with the damage that triggered your In All This Confusion ability. Before you teleport, you can make a free strike against a creature who damaged you to trigger In All This Confusion. After you teleport, you can spend a Recovery.')
+										FactoryLogic.createAbilitySectionText('Ви ігноруєте будь-які ефекти, повʼязані зі шкодою, що спричинила вашу здібність «У всій цій метушні». Перед телепортацією ви можете виконати безкоштовний удар по істоті, яка завдала вам шкоду, щоб викликати «У всій цій метушні». Після телепортації ви можете витратити відновлення.')
 									]
 								})
 							}),
@@ -109,8 +109,8 @@ export const blackAsh: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-1-2-2',
-					name: 'Burning Ash',
-					description: 'The ash you leave behind burns your foes. The first time on a turn that you use a shadow ability to teleport away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score.'
+					name: 'Палаючий Попіл',
+					description: 'Попіл, що ви лишаєте по собі, обпалює ворогів. Першого разу за хід, коли ви використовуєте тіньову здібність, щоб телепортуватися від або в простір, прилеглий до ворога, той ворог отримує вогняне ушкодження, рівне вашому показнику Ловкості.'
 				})
 			]
 		},
@@ -127,11 +127,11 @@ export const blackAsh: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-1-5-1',
-					name: 'Trail of Cinders',
+					name: 'Сліди іскор',
 					description: `
-Whenever you reduce a non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your Black Ash Teleport ability.
+Коли ви зменшуєте витривалість немініонної істоти до 0, ви можете негайно використати безкоштовний маневр, щоб застосувати вашу здібність Телепорт Чорного Попілу.
 
-Additionally, you can now bring an adjacent willing creature along with you whenever you use a shadow ability to teleport. The creature appears in an unoccupied space adjacent to the space into which you teleported. If no such space exists, they can’t teleport with you.`
+Крім того, тепер ви можете брати з собою суміжну готову істоту щоразу, коли використовуєте тіньову здібність для телепортації. Істота зʼявляється в незайнятому просторі, прилеглому до клітини, у яку ви телепортувалися. Якщо такого простору немає, вона не може телепортуватися разом з вами.`
 				})
 			]
 		},
@@ -140,14 +140,14 @@ Additionally, you can now bring an adjacent willing creature along with you when
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-1-6-1',
-					name: '6th-Level College Ability',
+					name: 'Здібність коледжу 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-6-1a',
-									name: 'Black Ash Eruption',
-									description: 'Your attack produces a cloud of black ash that launches an enemy into the air.',
+									name: 'Виверження Чорного Попілу',
+									description: 'Ваш удар створює хмару чорного попілу, що підкидає ворога в повітря.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -156,11 +156,11 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '3 + A damage; vertical push 5',
-											tier2: '6 + A damage; vertical push 10',
-											tier3: '9 + A damage; vertical push 15'
+											tier1: '3 + Л шкоди; вертикальне підкидання на 5 клітин',
+											tier2: '6 + Л шкоди; вертикальне підкидання на 10 клітин',
+											tier3: '9 + Л шкоди; вертикальне підкидання на 15 клітин'
 										})),
-										FactoryLogic.createAbilitySectionText('A creature force moved by this ability must be moved straight upward.')
+										FactoryLogic.createAbilitySectionText('Істота, примусово переміщена цією здібністю, має бути переміщена строго вгору.')
 
 									]
 								})
@@ -171,15 +171,15 @@ Additionally, you can now bring an adjacent willing creature along with you when
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-6-1b',
-									name: 'Cinderstorm',
-									description: 'You teleport your friends in a burst of ash and fire.',
+									name: 'Попелевий Шторм',
+									description: 'Ви телепортуєте своїх союзників у сплеску попелу й вогню.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
 									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Each target can teleport up to 5 squares. For each target in addition to you who teleports away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in concealment or cover can use the Hide maneuver even if they are observed.')
+										FactoryLogic.createAbilitySectionText('Кожна ціль може телепортуватися на відстань до 5 клітин. За кожну ціль, окрім вас, яка телепортується від або в простір, прилеглий до ворога, той ворог отримує вогняне ушкодження, рівне вашому показнику Ловкості. Крім того, ціль, яка завершить цей рух у затемненні або укритті, може використати маневр Сховатися, навіть якщо її помітили.')
 									]
 								})
 							}),
@@ -198,8 +198,8 @@ Additionally, you can now bring an adjacent willing creature along with you when
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-1-8-1',
-					name: 'Cinder Step',
-					description: 'Whenever you willingly move, you can teleport. When you teleport this way, it counts as using a shadow ability for the purpose of using your Burning Ash and Trail of Cinders features.'
+					name: 'Крок Попелу',
+					description: 'Коли ви добровільно рухаєтеся, ви можете телепортуватися. Телепортація таким чином рахується як використання тіньової здібності для цілей ваших здібностей Палаючий Попіл і Сліди іскор.'
 				})
 			]
 		},
@@ -208,26 +208,26 @@ Additionally, you can now bring an adjacent willing creature along with you when
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-1-9-1',
-					name: '9th-Level College Ability',
+					name: 'Здібність коледжу 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-9-1a',
-									name: 'Cacophony of Cinders',
-									description: 'You tumble through the battle, stabbing foes and teleporting allies.',
+									name: 'Какофонія Попелу',
+									description: 'Ви мчитеся полем бою, пронзаючи ворогів і телепортуючи союзників.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You shift up to twice your speed, making one power roll that targets each creature you come adjacent to during the shift.'),
+										FactoryLogic.createAbilitySectionText('Ви зміщуєтеся до двох разів вашої швидкості, виконуючи один кидок сили, що спрямований на кожну істоту, до якої ви підходите під час зміщення.'),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: 'An enemy takes 6 damage; an ally can teleport up to 3 squares.',
-											tier2: 'An enemy takes 10 damage; an ally can teleport up to 5 squares.',
-											tier3: 'An enemy takes 14 damage; an ally can teleport up to 7 squares.'
+											tier1: 'Ворог отримує 6 шкоди; союзник може телепортуватися на відстань до 3 клітин.',
+											tier2: 'Ворог отримує 10 шкоди; союзник може телепортуватися на відстань до 5 клітин.',
+											tier3: 'Ворог отримує 14 шкоди; союзник може телепортуватися на відстань до 7 клітин.'
 										}))
 									]
 								})
@@ -238,8 +238,8 @@ Additionally, you can now bring an adjacent willing creature along with you when
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-1-9-1b',
-									name: 'Demon Door',
-									description: 'You create a temporary portal to allow a massive demonic hand to reach through.',
+									name: 'Двері Демона',
+									description: 'Ви створюєте тимчасовий портал, через який може простягнутися величезна демонічна рука.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee(3)],
@@ -248,11 +248,11 @@ Additionally, you can now bring an adjacent willing creature along with you when
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '13 + A corruption damage; push 3',
-											tier2: '18 + A corruption damage; push 5',
-											tier3: '25 + A corruption damage; push 7'
+											tier1: '13 + Л корупційної шкоди; поштовх на 3 клітини',
+											tier2: '18 + Л корупційної шкоди; поштовх на 5 клітин',
+											tier3: '25 + Л корупційної шкоди; поштовх на 7 клітин'
 										})),
-										FactoryLogic.createAbilitySectionText('On a critical hit, the target is grabbed by the demon and pulled through the portal before it closes, never to be seen again.')
+										FactoryLogic.createAbilitySectionText('При критичному влучанні демон хапає ціль і затягує її через портал перед тим, як він закриється — цю істоту більше ніколи не побачать.')
 									]
 								})
 							}),

@@ -1,6 +1,6 @@
 export enum FeatureField {
 	AncestryPoints = 'Ancestry Points',
-	Disengage = 'Disengage',
+	Disengage = 'Відступ',
 	FreeStrikeDamage = 'Free Strike Damage',
 	ProjectPoints = 'Project Points',
 	Recoveries = 'Recoveries',

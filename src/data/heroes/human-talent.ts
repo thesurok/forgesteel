@@ -350,7 +350,7 @@ export const humanTalent = {
 				],
 				count: 1,
 				selected: [
-					'Magic'
+					'Магія'
 				]
 			}
 		}
@@ -474,7 +474,7 @@ export const humanTalent = {
 							count: 2,
 							selected: [
 								'Timescape',
-								'Lie'
+								'Брехня'
 							]
 						}
 					},
@@ -729,11 +729,11 @@ export const humanTalent = {
 												},
 												{
 													id: 'talent-1-5eb',
-													name: 'Disengage',
+													name: 'Відступ',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Disengage',
+														field: 'Відступ',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1308,11 +1308,11 @@ export const humanTalent = {
 					},
 					{
 						id: 'talent-7-3b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -5328,7 +5328,7 @@ export const humanTalent = {
 																	],
 																	bonus: 0,
 																	tier1: 'Two creatures',
-																	tier2: 'Three creatures',
+																	tier2: '3 Істоти',
 																	tier3: 'Five creatures'
 																}
 															},
@@ -5569,7 +5569,7 @@ export const humanTalent = {
 				value: -1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 1
 			},
 			{
@@ -5603,7 +5603,7 @@ export const humanTalent = {
 					],
 					count: 1,
 					selected: [
-						'Sneak'
+						'Крастись'
 					]
 				}
 			},

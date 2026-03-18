@@ -1524,7 +1524,7 @@ export const retainer: MonsterGroup = {
 						type: FactoryLogic.type.createMain({ qualifiers: ['Encounter'] }),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 3 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -1739,7 +1739,7 @@ export const retainer: MonsterGroup = {
 						type: FactoryLogic.type.createMain({ qualifiers: ['Encounter'] }),
 						keywords: [AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The mercenary must be winded to use this ability. The mercenary uses Big Bite against each target.')
 						]

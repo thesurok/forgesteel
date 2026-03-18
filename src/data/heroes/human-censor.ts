@@ -525,7 +525,7 @@ export const humanCensor = {
 																freeStrike: false
 															},
 															keywords: [
-																'Magic',
+																'Магія',
 																'Ranged'
 															],
 															distance: [
@@ -603,7 +603,7 @@ export const humanCensor = {
 																freeStrike: false
 															},
 															keywords: [
-																'Magic',
+																'Магія',
 																'Ranged',
 																'Strike'
 															],
@@ -687,7 +687,7 @@ export const humanCensor = {
 															},
 															keywords: [
 																'Area',
-																'Magic',
+																'Магія',
 																'Ranged'
 															],
 															distance: [
@@ -770,7 +770,7 @@ export const humanCensor = {
 									freeStrike: false
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged'
 								],
 								distance: [
@@ -886,7 +886,7 @@ export const humanCensor = {
 															roll: {
 																characteristic: [
 																	'Might',
-																	'Agility'
+																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '3 damage + M or A damage',
@@ -934,7 +934,7 @@ export const humanCensor = {
 									freeStrike: false
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged'
 								],
 								distance: [
@@ -1283,11 +1283,11 @@ export const humanCensor = {
 					},
 					{
 						id: 'censor-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1534,7 +1534,7 @@ export const humanCensor = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Melee',
 					'Weapon'
 				],
@@ -1588,7 +1588,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -1874,7 +1874,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -1933,7 +1933,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -1987,7 +1987,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -2046,7 +2046,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged',
 					'Strike',
@@ -2172,7 +2172,7 @@ export const humanCensor = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged',
 					'Strike',
@@ -2241,7 +2241,7 @@ export const humanCensor = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2286,7 +2286,7 @@ export const humanCensor = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2331,7 +2331,7 @@ export const humanCensor = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2376,7 +2376,7 @@ export const humanCensor = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2932,7 +2932,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged',
 															'Strike'
 														],
@@ -3002,7 +3002,7 @@ export const humanCensor = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3095,7 +3095,7 @@ export const humanCensor = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3158,7 +3158,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3316,7 +3316,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged',
 															'Strike'
 														],
@@ -3400,7 +3400,7 @@ export const humanCensor = {
 									],
 									count: 1,
 									selected: [
-										'Magic'
+										'Магія'
 									]
 								}
 							},
@@ -3459,7 +3459,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3515,7 +3515,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3608,7 +3608,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged',
 															'Strike'
 														],
@@ -3674,7 +3674,7 @@ export const humanCensor = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3762,7 +3762,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3818,7 +3818,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3949,7 +3949,7 @@ export const humanCensor = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4004,7 +4004,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -4180,7 +4180,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4338,7 +4338,7 @@ export const humanCensor = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4397,7 +4397,7 @@ export const humanCensor = {
 				value: 2
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: -1
 			},
 			{

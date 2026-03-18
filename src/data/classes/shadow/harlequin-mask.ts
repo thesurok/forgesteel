@@ -6,32 +6,32 @@ import { SubClass } from '@/models/subclass';
 
 export const harlequinMask: SubClass = {
 	id: 'shadow-sub-3',
-	name: 'College of the Harlequin Mask',
-	description: 'Graduates of the College of the Harlequin Mask learn illusion magic, which they use to infiltrate enemy strongholds and create orchestrated chaos in combat.',
+	name: 'Колегія Маски Арлекіна',
+	description: 'Випускники Колегії Маски Арлекіна опановують ілюзійну магію, якою користуються для проникнення в укріплення ворога та створення скоординованого хаосу в бою.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-3-1-1',
-					selected: ['Lie']
+					selected: ['Брехня']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-3-1-2',
-						name: 'I’m No Threat',
-						description: 'Taking on the illusory countenance of another creature gives you an advantage on subterfuge.',
+						name: 'Я не загроза',
+						description: 'Прийняття ілюзорної подоби іншої істоти дає вам перевагу в обмані.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the Disengage move action, you gain a +1 bonus to the distance you can shift.
+Ви огортаєте себе ілюзією, яка робить вас нестрашним і нешкідливим у очах ворогів. Ви можете набувати вигляду нешкідливої тварини вашого розміру, наприклад вівці або капібари, або виглядати як менш героїчна й беззброя версія себе. Поки ця ілюзія триває, ваші удари отримують перевагу, а коли ви виконуєте дію переміщення «Відступ», ви отримуєте +1 до дистанції, на яку можете зміститися.
 
-The illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 surge.`),
+Ілюзія припиняється, коли ви завдаєте шкоди іншій істоті, коли ви фізично взаємодієте з істотою, коли використовуєте цю здібність знову або коли ви припиняєте ілюзію (дія не потрібна). Якщо ви припиняєте цю ілюзію, завдаючи шкоди іншій істоті, ви отримуєте 1 сплеск.`),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'Choose a creature whose size is no more than 1 greater than yours and who is within 10 squares. This ability’s illusion makes you appear as that creature. This illusion covers your entire body, including clothing and armor, and alters your voice to sound like that of the creature. You gain an edge on tests made to convince the creature’s allies that you are the creature.'
+								effect: 'Оберіть істоту, розмір якої не перевищує вашого більш ніж на 1 і яка знаходиться в межах 10 клітин. Ілюзія цієї здібності робить вас схожим на ту істоту. Ілюзія покриває все ваше тіло, включно з одягом і бронею, і змінює ваш голос так, щоб він звучав як голос тієї істоти. Ви отримуєте перевагу на перевірках, спрямованих на переконання союзників істоти, що ви — та істота.'
 							})
 						]
 					})
@@ -39,15 +39,15 @@ The illusion ends when you harm another creature, when you physically interact w
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-3-1-3',
-						name: 'Clever Trick',
-						description: 'You sow a moment of confusion in combat, to your enemy’s peril.',
-						type: FactoryLogic.type.createTrigger('An enemy targets you with a strike.'),
+						name: 'Хитрий трюк',
+						description: 'Ви сієте мить плутанини в бою, що йде на шкоду ворогу.',
+						type: FactoryLogic.type.createTrigger('Коли ворог націлюється на вас ударом.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						cost: 1,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Choose an enemy within distance of the triggering strike, including the enemy who targeted you. The strike targets that enemy instead.')
+							FactoryLogic.createAbilitySectionText('Оберіть ворога в межах дальності ініціюючого удару, включно з ворогом, який націлився на вас. Удар спрямовується проти обраного ворога замість вас.')
 						]
 					})
 				})
@@ -58,14 +58,14 @@ The illusion ends when you harm another creature, when you physically interact w
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-3-2-1',
-					name: '2nd-Level College Ability',
+					name: 'Здібність колегії 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-2-1a',
-									name: 'Machinations of Sound',
-									description: 'Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.',
+									name: 'Звукові хитрощі',
+									description: 'Ілюзорні звуки змушують ворогів змінювати позиції, коли ті лякаються або обшукують джерело шуму.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
@@ -74,11 +74,11 @@ The illusion ends when you harm another creature, when you physically interact w
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: 'Slide 4',
-											tier2: 'Slide 5',
-											tier3: 'Slide 7'
+											tier1: 'зрушити на 4',
+											tier2: 'зрушити на 5',
+											tier3: 'зрушити на 7'
 										})),
-										FactoryLogic.createAbilitySectionText('This forced movement ignores stability. Instead, the forced movement is reduced by a number equal to the target’s Intuition score.')
+										FactoryLogic.createAbilitySectionText('Це примусове переміщення ігнорує стійкість. Натомість примусове переміщення зменшується на число, рівне показнику Інтуїції цілі.')
 									]
 								})
 							}),
@@ -88,15 +88,15 @@ The illusion ends when you harm another creature, when you physically interact w
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-2-1b',
-									name: 'So Gullible',
-									description: 'When your enemy strikes, you reveal you were in a different place all along.',
-									type: FactoryLogic.type.createTrigger('Another creature targets you with a strike.', { free: true }),
+									name: 'Надто довірливий',
+									description: 'Коли ворог атакує, ви виявляєте, що весь час були в іншому місці.',
+									type: FactoryLogic.type.createTrigger('Коли інша істота націлюється на вас ударом.', { free: true }),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You use your Clever Trick ability with no insight cost against the triggering creature and strike. You can teleport to an unoccupied space within 3 squares of that creature and can make a free strike against them. You can then spend a Recovery.')
+										FactoryLogic.createAbilitySectionText('Ви використовуєте свою здібність «Хитрий трюк» без витрат прозорливості проти тригерної істоти і наносите удар. Ви можете телепортуватися на незайняту клітину в межах 3 клітин від цієї істоти та виконати безкоштовний удар по ній. Після цього ви можете витратити Відновлення.')
 									]
 								})
 							}),
@@ -106,11 +106,11 @@ The illusion ends when you harm another creature, when you physically interact w
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-3-2-2',
-					name: 'Friend!',
+					name: 'Друг!',
 					description: `
-Your illusions make your enemies believe you are their friend in critical moments. Whenever an enemy uses an ability or trait that targets multiple allies and you are within distance of the effect, you can choose to be a target of the effect as well.
+Ваші ілюзії змушують ворогів у критичні моменти вірити, що ви їхній друг. Коли ворог використовує здібність або рису, що націлена на кількох союзників, і ви перебуваєте в межах дії ефекту, ви можете обрати бути також ціллю цього ефекту.
 
-Additionally, when you use your I’m No Threat ability, you can take the Disengage move action as part of that ability.`
+Крім того, коли ви використовуєте свою здібність «Я не загроза», ви можете виконати дію переміщення «Відступ» як частину цієї здібності.`
 				})
 			]
 		},
@@ -127,11 +127,11 @@ Additionally, when you use your I’m No Threat ability, you can take the Diseng
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-3-5-1',
-					name: 'Harlequin Gambit',
+					name: 'Гамбіт Арлекіна',
 					description: `
-Whenever you reduce an adjacent non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your I’m No Threat ability and then move up to your speed.
+Коли ви приводите прилеглу немініонну істоту до 0 Витривалості, ви можете негайно виконати безкоштовний маневр, щоб активувати свою здібність «Я не загроза», а потім переміститися на відстань, що не перевищує вашу швидкість.
 
-If the creature is the same size as you, you can disguise yourself as them using I’m No Threat without spending insight. If you do, while I’m No Threat is active, the creature’s body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature’s body, it ends for both.`
+Якщо істота того ж розміру, що й ви, ви можете замаскуватися під неї за допомогою «Я не загроза» без витрат прозорливості. У такому разі, поки «Я не загроза» активна, тіло істоти виглядає як ваше тіло. Ілюзія на їхньому тілі припиняється, якщо інша істота фізично взаємодіє з ним. Коли ілюзія закінчується для вас або для тіла істоти, вона закінчується для обох.`
 				})
 			]
 		},
@@ -140,21 +140,21 @@ If the creature is the same size as you, you can disguise yourself as them using
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-3-6-1',
-					name: '6th-Level College Ability',
+					name: 'Здібність колегії 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-6-1a',
-									name: 'Look!',
-									description: 'You distract your foes, allowing your allies to take advantage of that distraction.',
+									name: 'Дивись!',
+									description: 'Ви відволікаєте ворогів, що дозволяє союзникам скористатися цією ситуацією.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the start of your next turn, any ability roll made against a target gains an edge.')
+										FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу будь-який кидок здібності, зроблений проти цілі, отримує перевагу.')
 									]
 								})
 							}),
@@ -164,23 +164,23 @@ If the creature is the same size as you, you can disguise yourself as them using
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-6-1b',
-									name: 'Puppet Strings',
-									description: 'You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.',
+									name: 'Нитки маріонетки',
+									description: 'Ви вколюєте дрібні голки кінчиками пальців у нерви ворогів і примушуєте їх втратити контроль.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
 										FactoryLogic.distance.createMelee()
 									],
-									target: 'Two enemies',
+									target: 'Двоє ворогів',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '2 damage; if the target has R < [слабкий], before the damage is resolved, they make a free strike.',
-											tier2: '5 damage; if the target has R < [середній], before the damage is resolved, they use a main action ability of your choice.',
-											tier3: '7 damage; if the target has R < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
+											tier1: '2 шкоди; якщо у цілі R < [слабкий], перед вирішенням шкоди вона виконує безкоштовний удар.',
+											tier2: '5 шкоди; якщо у цілі R < [середній], перед вирішенням шкоди вона використовує основну здібність на ваш вибір.',
+											tier3: '7 шкоди; якщо у цілі R < [сильний], перед вирішенням шкоди вона може зміститись на відстань, що не перевищує її швидкість, і використати основну здібність на ваш вибір.'
 										})),
-										FactoryLogic.createAbilitySectionText('You choose the new targets for the original target’s free strike or ability. Additionally, if you are hidden or disguised, using this ability doesn’t cause you to be revealed.')
+										FactoryLogic.createAbilitySectionText('Ви обираєте нові цілі для безкоштовного удару або здібності первісної цілі. Додатково, якщо ви приховані або замасковані, використання цієї здібності не розкриває вас.')
 
 									]
 								})
@@ -201,8 +201,8 @@ If the creature is the same size as you, you can disguise yourself as them using
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-3-8-1',
-					name: 'Parkour',
-					description: 'Your movement no longer provokes opportunity attacks. Additionally, you can use your Harlequin Gambit feature as a free triggered action when a creature is reduced to 0 Stamina by your Clever Trick ability.'
+					name: 'Паркур',
+					description: 'Ваш рух більше не провокує атаки можливості. Крім того, ви можете використовувати свою здібність «Гамбіт Арлекіна» як безкоштовну тригерну дію, коли істота знижується до 0 Витривалості вашою здібністю «Хитрий трюк».'
 				})
 			]
 		},
@@ -211,21 +211,21 @@ If the creature is the same size as you, you can disguise yourself as them using
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-3-9-1',
-					name: '9th-Level College Ability',
+					name: 'Здібність колегії 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-9-1a',
-									name: 'I Am You',
-									description: 'Your mask reflects your foe’s face. Surely they won’t need it much longer.',
+									name: 'Я — ти',
+									description: 'Ваша маска відтворює обличчя ворога. Напевно, йому це скоро не знадобиться.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Одна істота',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the end of the encounter, you gain the target’s damage immunities and speed (if they are better than yours), and can use any types of movement they can use. You can also use the target’s signature ability, using their bonus for the power roll.')
+										FactoryLogic.createAbilitySectionText('До кінця сутички ви отримуєте імунітети цілі до типів пошкоджень та її швидкість (якщо вона краща за вашу) і можете використовувати будь-які види пересування, доступні цілі. Ви також можете використовувати фірмову здібність цілі, застосовуючи її бонус до кидка сили.')
 									]
 								})
 							}),
@@ -235,8 +235,8 @@ If the creature is the same size as you, you can disguise yourself as them using
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-3-9-1b',
-									name: 'It Was Me All Along',
-									description: 'After everything you’ve been through together, you twist the blade and make the pain extra personal.',
+									name: 'Це був я увесь час',
+									description: 'Після всього пережитого разом ви вивертаєте клинок і робите біль ще більш особистою.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -245,11 +245,11 @@ If the creature is the same size as you, you can disguise yourself as them using
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '15 + A damage',
-											tier2: '21 + A damage',
-											tier3: '28 + A damage'
+											tier1: '15 + A шкоди',
+											tier2: '21 + A шкоди',
+											tier3: '28 + A шкоди'
 										})),
-										FactoryLogic.createAbilitySectionText('If you are disguised as a creature the target knew using your I’m No Threat ability, this ability deals extra damage equal to three times your Agility score.')
+										FactoryLogic.createAbilitySectionText('Якщо ви замасковані під істоту, яку ціль знала, використовуючи вашу здібність «Я не загроза», ця здібність завдає додаткової шкоди, рівної трьом разам вашого показника Ловкості.')
 									]
 								})
 							}),

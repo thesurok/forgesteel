@@ -150,7 +150,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

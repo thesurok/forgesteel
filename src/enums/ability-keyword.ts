@@ -21,7 +21,7 @@ export enum AbilityKeyword {
 	Head = 'Head',
 	Implant = 'Implant',
 	Implement = 'Implement',
-	Magic = 'Magic',
+	Magic = 'Магія',
 	Melee = 'Melee',
 	Metamorphosis = 'Metamorphosis',
 	Neck = 'Neck',

@@ -493,7 +493,7 @@ const KitSheet = (props: KitProps) => {
 			}
 			{props.kit.meleeDistance > 0 ? <Field label='Melee Distance' value={`+${props.kit.meleeDistance}`} /> : null}
 			{props.kit.rangedDistance > 0 ? <Field label='Ranged Distance' value={`+${props.kit.rangedDistance}`} /> : null}
-			{props.kit.disengage > 0 ? <Field label='Disengage' value={`+${props.kit.disengage}`} /> : null}
+			{props.kit.disengage > 0 ? <Field label='Відступ' value={`+${props.kit.disengage}`} /> : null}
 			{
 				props.kit.features.map(f => (
 					<FeaturePanel key={f.id} feature={f} sourcebooks={props.sourcebooks} options={props.options} mode={PanelMode.Full} />
@@ -610,7 +610,7 @@ const MonsterSheet = (props: MonsterProps) => {
 			</StatsRow>
 			<StatsRow>
 				{
-					[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+					[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 						.map(ch => <Field key={ch} orientation='vertical' label={ch} value={MonsterLogic.getCharacteristic(props.monster, ch)} />)
 				}
 			</StatsRow>
@@ -677,7 +677,7 @@ const MonsterSheet = (props: MonsterProps) => {
 							props.monster.retainer.level4 && (props.monster.retainer.level < 4) ?
 								<>
 									<HeaderText level={1}>Level 4</HeaderText>
-									<FeaturePanel key={props.monster.retainer.level4.id} feature={props.monster.retainer.level4}options={props.options} mode={PanelMode.Full} />
+									<FeaturePanel key={props.monster.retainer.level4.id} feature={props.monster.retainer.level4} options={props.options} mode={PanelMode.Full} />
 								</>
 								: null
 						}
@@ -685,7 +685,7 @@ const MonsterSheet = (props: MonsterProps) => {
 							props.monster.retainer.level7 && (props.monster.retainer.level < 7) ?
 								<>
 									<HeaderText level={1}>Level 7</HeaderText>
-									<FeaturePanel key={props.monster.retainer.level7.id} feature={props.monster.retainer.level7}options={props.options} mode={PanelMode.Full} />
+									<FeaturePanel key={props.monster.retainer.level7.id} feature={props.monster.retainer.level7} options={props.options} mode={PanelMode.Full} />
 								</>
 								: null
 						}
@@ -693,7 +693,7 @@ const MonsterSheet = (props: MonsterProps) => {
 							props.monster.retainer.level10 && (props.monster.retainer.level < 10) ?
 								<>
 									<HeaderText level={1}>Level 10</HeaderText>
-									<FeaturePanel key={props.monster.retainer.level10.id} feature={props.monster.retainer.level10}options={props.options} mode={PanelMode.Full} />
+									<FeaturePanel key={props.monster.retainer.level10.id} feature={props.monster.retainer.level10} options={props.options} mode={PanelMode.Full} />
 								</>
 								: null
 						}

@@ -245,7 +245,7 @@ export const olothec: MonsterGroup = {
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The olothec slides each target up to 5 squares. Each target takes 12 psychic damage, and if they have M<3 they are weakened and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.')
 						]
@@ -258,7 +258,7 @@ export const olothec: MonsterGroup = {
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

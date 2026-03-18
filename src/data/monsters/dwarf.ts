@@ -424,7 +424,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						cost: 3,
 						keywords: [AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target is pulled up to 8 squares. A restrained or slowed target can be pulled an additional 2 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]

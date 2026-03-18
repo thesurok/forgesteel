@@ -348,7 +348,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						distance: [
 							FactoryLogic.distance.createRanged(10)
 						],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target can teleport up to 5 squares. Each creature adjacent to a target at their destination takes 3 fire damage.')
 						]

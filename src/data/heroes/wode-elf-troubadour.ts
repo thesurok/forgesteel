@@ -90,7 +90,7 @@ export const wodeElfTroubadour = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged',
 											'Strike'
 										],
@@ -114,7 +114,7 @@ export const wodeElfTroubadour = {
 												roll: {
 													characteristic: [
 														'Might',
-														'Agility'
+														'Ловкість'
 													],
 													bonus: 0,
 													tier1: '2 + С або Л шкоди; Л < [слабкий], сповільнений (рят. кидок завершує)',
@@ -218,7 +218,7 @@ export const wodeElfTroubadour = {
 				],
 				count: 1,
 				selected: [
-					'Sneak'
+					'Крастись'
 				]
 			}
 		},
@@ -251,12 +251,12 @@ export const wodeElfTroubadour = {
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
-				'Agility',
+				'Ловкість',
 				'Presence'
 			]
 		],
 		primaryCharacteristics: [
-			'Agility',
+			'Ловкість',
 			'Presence'
 		],
 		featuresByLevel: [
@@ -337,7 +337,7 @@ export const wodeElfTroubadour = {
 							],
 							count: 1,
 							selected: [
-								'Hide'
+								'Сховатись'
 							]
 						}
 					},
@@ -458,7 +458,7 @@ export const wodeElfTroubadour = {
 															roll: {
 																characteristic: [
 																	'Might',
-																	'Agility'
+																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '3 + С або Л шкоди',
@@ -521,7 +521,7 @@ export const wodeElfTroubadour = {
 								},
 								keywords: [
 									'Area',
-									'Magic',
+									'Магія',
 									'Performance'
 								],
 								distance: [
@@ -575,7 +575,7 @@ export const wodeElfTroubadour = {
 								},
 								keywords: [
 									'Area',
-									'Magic',
+									'Магія',
 									'Performance'
 								],
 								distance: [
@@ -811,11 +811,11 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'bEgiUgVeMGaONxTn',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1032,7 +1032,7 @@ export const wodeElfTroubadour = {
 								},
 								keywords: [
 									'Area',
-									'Magic',
+									'Магія',
 									'Performance'
 								],
 								distance: [
@@ -1083,11 +1083,11 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'LNpO0wUO8Eevov6c',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1239,11 +1239,11 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'nkOnWwzyFh2QZOnV',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1344,7 +1344,7 @@ export const wodeElfTroubadour = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '2 damage',
@@ -1386,7 +1386,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike',
 					'Weapon'
@@ -1499,7 +1499,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged',
 					'Strike'
@@ -1573,7 +1573,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged',
 					'Strike'
@@ -1641,7 +1641,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1701,7 +1701,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -1785,7 +1785,7 @@ export const wodeElfTroubadour = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility',
+								'Ловкість',
 								'Presence'
 							],
 							bonus: 0,
@@ -1818,7 +1818,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1870,7 +1870,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1915,7 +1915,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1982,7 +1982,7 @@ export const wodeElfTroubadour = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '6 + A damage; P < [слабкий], weakened (save ends)',
@@ -2018,7 +2018,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2075,7 +2075,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Melee',
 					'Weapon'
 				],
@@ -2133,7 +2133,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Ranged',
 					'Strike',
@@ -2201,7 +2201,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2269,7 +2269,7 @@ export const wodeElfTroubadour = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '10 damage',
@@ -2304,7 +2304,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2349,7 +2349,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2394,7 +2394,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2447,7 +2447,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2491,7 +2491,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2536,7 +2536,7 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2581,7 +2581,7 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2671,7 +2671,7 @@ export const wodeElfTroubadour = {
 										},
 										keywords: [
 											'Area',
-											'Magic',
+											'Магія',
 											'Performance'
 										],
 										distance: [
@@ -2684,7 +2684,7 @@ export const wodeElfTroubadour = {
 												qualifier: ''
 											}
 										],
-										target: 'Each creature in the area',
+										target: 'Кожна істота в зоні',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -2724,7 +2724,7 @@ export const wodeElfTroubadour = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										distance: [
@@ -2856,7 +2856,7 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -2912,7 +2912,7 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3012,7 +3012,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Performance'
 														],
 														distance: [
@@ -3086,7 +3086,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3150,7 +3150,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3238,7 +3238,7 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Ranged'
 														],
@@ -3315,7 +3315,7 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -3410,7 +3410,7 @@ export const wodeElfTroubadour = {
 										},
 										keywords: [
 											'Area',
-											'Magic',
+											'Магія',
 											'Performance'
 										],
 										distance: [
@@ -3665,7 +3665,7 @@ export const wodeElfTroubadour = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '7 + A damage',
@@ -3755,7 +3755,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Performance'
 														],
 														distance: [
@@ -3851,7 +3851,7 @@ export const wodeElfTroubadour = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '12 + A damage; M < [слабкий], bleeding (save ends)',
@@ -4007,7 +4007,7 @@ export const wodeElfTroubadour = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '15 + A damage',
@@ -4157,7 +4157,7 @@ export const wodeElfTroubadour = {
 										},
 										keywords: [
 											'Area',
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -4224,7 +4224,7 @@ export const wodeElfTroubadour = {
 														freeStrike: false
 													},
 													keywords: [
-														'Magic',
+														'Магія',
 														'Performance',
 														'Ranged',
 														'Strike'
@@ -4292,7 +4292,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Area',
-														'Magic',
+														'Магія',
 														'Performance'
 													],
 													distance: [
@@ -4420,7 +4420,7 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Strike'
 														],
 														distance: [
@@ -4477,7 +4477,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4562,7 +4562,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Area',
-														'Magic',
+														'Магія',
 														'Performance'
 													],
 													distance: [
@@ -4616,7 +4616,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Area',
-														'Magic',
+														'Магія',
 														'Performance'
 													],
 													distance: [
@@ -4727,7 +4727,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4795,7 +4795,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4871,7 +4871,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Area',
-														'Magic',
+														'Магія',
 														'Performance'
 													],
 													distance: [
@@ -4925,7 +4925,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Area',
-														'Magic',
+														'Магія',
 														'Performance'
 													],
 													distance: [
@@ -4995,7 +4995,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -5063,7 +5063,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Melee',
-															'Magic',
+															'Магія',
 															'Ranged',
 															'Strike'
 														],
@@ -5143,7 +5143,7 @@ export const wodeElfTroubadour = {
 				value: 1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 2
 			},
 			{

@@ -174,7 +174,7 @@ You can make this test only once for any encounter or negotiation.`
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Three creatures',
+									target: '3 Істоти',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Each target is marked by you. Immediately and until the end of the encounter, the Director tells you if any creatures marked by you have damage immunity or weakness and the value of that immunity or weakness. Additionally, you and each ally within 3 squares of you gains 2 surges.'),

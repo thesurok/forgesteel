@@ -33,7 +33,7 @@ export const polderElementalist = {
 							freeStrike: false
 						},
 						keywords: [
-							'Magic'
+							'Магія'
 						],
 						distance: [
 							{
@@ -114,7 +114,7 @@ export const polderElementalist = {
 								description: 'Your small size makes it easier for you to slip away from the fray.',
 								type: 'Bonus',
 								data: {
-									field: 'Disengage',
+									field: 'Відступ',
 									value: 1,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -231,7 +231,7 @@ export const polderElementalist = {
 							description: 'Your small size makes it easier for you to slip away from the fray.',
 							type: 'Bonus',
 							data: {
-								field: 'Disengage',
+								field: 'Відступ',
 								value: 1,
 								valueCharacteristics: [],
 								valueCharacteristicMultiplier: 1,
@@ -418,7 +418,7 @@ export const polderElementalist = {
 							],
 							count: 1,
 							selected: [
-								'Magic'
+								'Магія'
 							]
 						}
 					},
@@ -461,7 +461,7 @@ export const polderElementalist = {
 									]
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged',
 									'Strike'
 								],
@@ -534,7 +534,7 @@ export const polderElementalist = {
 									freeStrike: false
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged'
 								],
 								distance: [
@@ -647,11 +647,11 @@ export const polderElementalist = {
 												},
 												{
 													id: 'elementalist-1-7bb',
-													name: 'Disengage',
+													name: 'Відступ',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Disengage',
+														field: 'Відступ',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -672,7 +672,7 @@ export const polderElementalist = {
 										type: 'Ability Damage',
 										data: {
 											keywords: [
-												'Magic'
+												'Магія'
 											],
 											value: 1,
 											valueCharacteristics: [],
@@ -692,7 +692,7 @@ export const polderElementalist = {
 										type: 'Ability Distance',
 										data: {
 											keywords: [
-												'Magic',
+												'Магія',
 												'Ranged'
 											],
 											value: 2,
@@ -755,7 +755,7 @@ export const polderElementalist = {
 									type: 'Ability Damage',
 									data: {
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										value: 1,
 										valueCharacteristics: [],
@@ -1154,11 +1154,11 @@ export const polderElementalist = {
 								{
 									feature: {
 										id: 'elementalist-4-1bb',
-										name: 'Agility',
+										name: 'Ловкість',
 										description: '',
 										type: 'Characteristic Bonus',
 										data: {
-											characteristic: 'Agility',
+											characteristic: 'Ловкість',
 											value: 1
 										}
 									},
@@ -1343,11 +1343,11 @@ export const polderElementalist = {
 					},
 					{
 						id: 'elementalist-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1541,11 +1541,11 @@ export const polderElementalist = {
 								{
 									feature: {
 										id: 'elementalist-10-3-2',
-										name: 'Agility',
+										name: 'Ловкість',
 										description: '',
 										type: 'Characteristic Bonus',
 										data: {
-											characteristic: 'Agility',
+											characteristic: 'Ловкість',
 											value: 1
 										}
 									},
@@ -1649,7 +1649,7 @@ export const polderElementalist = {
 				keywords: [
 					'Green',
 					'Rot',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -1708,7 +1708,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -1762,7 +1762,7 @@ export const polderElementalist = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Void'
@@ -1822,7 +1822,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -1881,7 +1881,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Earth',
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike'
 				],
@@ -1935,7 +1935,7 @@ export const polderElementalist = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike',
 					'Void'
@@ -1992,7 +1992,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Earth',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2050,7 +2050,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2105,7 +2105,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Void'
 				],
@@ -2167,7 +2167,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2229,7 +2229,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2289,7 +2289,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Earth',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2347,7 +2347,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2408,7 +2408,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Earth',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2472,7 +2472,7 @@ export const polderElementalist = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Void'
 				],
@@ -2527,7 +2527,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2587,7 +2587,7 @@ export const polderElementalist = {
 					'Area',
 					'Earth',
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2640,7 +2640,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike',
 					'Void'
@@ -2700,7 +2700,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Void'
 				],
@@ -2760,7 +2760,7 @@ export const polderElementalist = {
 				keywords: [
 					'Earth',
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2814,7 +2814,7 @@ export const polderElementalist = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike',
 					'Void'
@@ -2847,7 +2847,7 @@ export const polderElementalist = {
 							bonus: 0,
 							tier1: 'Одна істота',
 							tier2: 'Two creatures',
-							tier3: 'Three creatures'
+							tier3: '3 Істоти'
 						}
 					},
 					{
@@ -2879,7 +2879,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Earth',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2938,7 +2938,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Green',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -3003,7 +3003,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3056,7 +3056,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -3115,7 +3115,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Earth',
 					'Ranged'
 				],
@@ -3181,7 +3181,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Void',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -3243,7 +3243,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Green',
 					'Ranged'
 				],
@@ -3310,7 +3310,7 @@ export const polderElementalist = {
 				keywords: [
 					'Fire',
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Void'
 				],
@@ -3365,7 +3365,7 @@ export const polderElementalist = {
 				keywords: [
 					'Fire',
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Earth'
 				],
@@ -3420,7 +3420,7 @@ export const polderElementalist = {
 				keywords: [
 					'Earth',
 					'Fire',
-					'Magic',
+					'Магія',
 					'Void',
 					'Ranged'
 				],
@@ -3480,7 +3480,7 @@ export const polderElementalist = {
 				keywords: [
 					'Area',
 					'Green',
-					'Magic',
+					'Магія',
 					'Earth',
 					'Void'
 				],
@@ -3534,7 +3534,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3581,7 +3581,7 @@ export const polderElementalist = {
 				keywords: [
 					'Earth',
 					'Fire',
-					'Magic',
+					'Магія',
 					'Void',
 					'Ranged'
 				],
@@ -3640,7 +3640,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Void',
 					'Ranged'
 				],
@@ -3687,7 +3687,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Earth'
 				],
 				distance: [
@@ -3745,7 +3745,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Earth',
 					'Ranged'
 				],
@@ -3807,7 +3807,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Green',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3859,7 +3859,7 @@ export const polderElementalist = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Void'
 				],
 				distance: [
@@ -3905,7 +3905,7 @@ export const polderElementalist = {
 				},
 				keywords: [
 					'Fire',
-					'Magic',
+					'Магія',
 					'Strike',
 					'Ranged'
 				],
@@ -3987,7 +3987,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Earth',
-											'Magic',
+											'Магія',
 											'Melee'
 										],
 										distance: [
@@ -4041,7 +4041,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Earth',
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										distance: [
@@ -4126,7 +4126,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Earth',
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -4287,7 +4287,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Earth',
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										distance: [
@@ -4362,7 +4362,7 @@ export const polderElementalist = {
 								data: {
 									keywords: [
 										'Fire',
-										'Magic'
+										'Магія'
 									],
 									value: 1,
 									valueCharacteristics: [],
@@ -4392,7 +4392,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Fire',
-											'Magic',
+											'Магія',
 											'Melee'
 										],
 										distance: [
@@ -4446,7 +4446,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Fire',
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										distance: [
@@ -4638,7 +4638,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Green',
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										distance: [
@@ -4716,7 +4716,7 @@ export const polderElementalist = {
 										},
 										keywords: [
 											'Green',
-											'Magic',
+											'Магія',
 											'Melee'
 										],
 										distance: [
@@ -4831,7 +4831,7 @@ export const polderElementalist = {
 								type: 'Ability Distance',
 								data: {
 									keywords: [
-										'Magic',
+										'Магія',
 										'Ranged',
 										'Void'
 									],
@@ -4868,7 +4868,7 @@ export const polderElementalist = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged',
 											'Void'
 										],
@@ -4922,7 +4922,7 @@ export const polderElementalist = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged',
 											'Void'
 										],
@@ -4988,7 +4988,7 @@ export const polderElementalist = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged',
 											'Void'
 										],
@@ -5109,7 +5109,7 @@ export const polderElementalist = {
 				value: -1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 1
 			},
 			{
@@ -5221,7 +5221,7 @@ export const polderElementalist = {
 										freeStrike: false
 									},
 									keywords: [
-										'Magic'
+										'Магія'
 									],
 									distance: [
 										{

@@ -40,7 +40,7 @@ interface Props {
 }
 
 export const KitEditPanel = (props: Props) => {
-	const [ kit, setKit ] = useState<Kit>(props.kit);
+	const [kit, setKit] = useState<Kit>(props.kit);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -119,7 +119,7 @@ export const KitEditPanel = (props: Props) => {
 					mode='multiple'
 					allowClear={true}
 					placeholder='Select armor'
-					options={[ KitArmor.Light, KitArmor.Medium, KitArmor.Heavy, KitArmor.Shield ].map(option => ({ value: option }))}
+					options={[KitArmor.Light, KitArmor.Medium, KitArmor.Heavy, KitArmor.Shield].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={kit.armor}
 					onChange={setArmor}
@@ -131,7 +131,7 @@ export const KitEditPanel = (props: Props) => {
 					mode='multiple'
 					allowClear={true}
 					placeholder='Select weapon'
-					options={[ KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip ].map(option => ({ value: option }))}
+					options={[KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={kit.weapon}
 					onChange={setWeapon}
@@ -362,7 +362,7 @@ export const KitEditPanel = (props: Props) => {
 						<Expander
 							key={f.id}
 							title={f.name || 'Unnamed Feature'}
-							tags={[ FeatureLogic.getFeatureTag(f) ]}
+							tags={[FeatureLogic.getFeatureTag(f)]}
 							extra={[
 								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'up'); }} />,
 								<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'down'); }} />,
@@ -393,7 +393,7 @@ export const KitEditPanel = (props: Props) => {
 
 		powerA.push({ name: 'Stamina', value: Math.floor(kit.stamina / 3) });
 
-		powerA.push({ name: 'Disengage', value: kit.disengage });
+		powerA.push({ name: 'Відступ', value: kit.disengage });
 
 		powerA.push({ name: 'Speed', value: kit.speed > 0 ? 1 + kit.speed : 0 });
 
@@ -427,7 +427,7 @@ export const KitEditPanel = (props: Props) => {
 		}
 		powerB.push({ name: 'Ranged Damage', value: powerRangedDamage });
 
-		const power = Collections.sum([ ...powerA, ...powerB ], p => p.value);
+		const power = Collections.sum([...powerA, ...powerB], p => p.value);
 
 		const constraints: { name: string, value: boolean }[] = [];
 		const gear: { name: string, value: boolean }[] = [];
@@ -464,7 +464,7 @@ export const KitEditPanel = (props: Props) => {
 					marks={marks}
 					min={0}
 					max={16}
-					value={[ power ]}
+					value={[power]}
 					styles={{
 						track: {
 							background: 'transparent'

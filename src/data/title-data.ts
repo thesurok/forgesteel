@@ -337,7 +337,7 @@ You find an agent who can provide you with three pieces of information about the
 							description: 'You open your senses to the residue of magic',
 							type: FactoryLogic.type.createManeuver(),
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-							target: 'Each creature in the area',
+							target: 'Кожна істота в зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу ви знаєте, чи є кожна ціль конструкцією, нежиттю чи істотою з іншого світу, а також чи використовувала вона магічну здібність протягом попередньої години.')
 							]
@@ -1457,7 +1457,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-					target: 'Each creature in the area',
+					target: 'Кожна істота в зоні',
 					cost: 9,
 					sections: [
 						FactoryLogic.createAbilitySectionRoll(

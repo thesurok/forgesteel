@@ -25,13 +25,13 @@ interface Props {
 }
 
 export const KitPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
 			<>
 				<Markdown text={props.kit.description} />
-				<Field label='Uses' value={[ ...props.kit.armor, ...props.kit.weapon ].join(', ')} />
+				<Field label='Uses' value={[...props.kit.armor, ...props.kit.weapon].join(', ')} />
 				<Field label='Features' value={props.kit.features.map(f => f.name).join(', ')} />
 			</>
 		);
@@ -57,7 +57,7 @@ export const KitPanel = (props: Props) => {
 				}
 				{props.kit.meleeDistance > 0 ? <Field label='Melee Distance' value={`+${props.kit.meleeDistance}`} /> : null}
 				{props.kit.rangedDistance > 0 ? <Field label='Ranged Distance' value={`+${props.kit.rangedDistance}`} /> : null}
-				{props.kit.disengage > 0 ? <Field label='Disengage' value={`+${props.kit.disengage}`} /> : null}
+				{props.kit.disengage > 0 ? <Field label='Відступ' value={`+${props.kit.disengage}`} /> : null}
 			</>
 		);
 	};

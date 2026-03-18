@@ -82,7 +82,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.createRanged(10)],
-				target: 'Three creatures',
+				target: '3 Істоти',
 				cost: 5,
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

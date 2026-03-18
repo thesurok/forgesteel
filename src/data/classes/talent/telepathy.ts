@@ -203,7 +203,7 @@ export const telepathy: SubClass = {
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
 												tier1: 'Two creatures',
-												tier2: 'Three creatures',
+												tier2: '3 Істоти',
 												tier3: 'Five creatures'
 											})
 										),

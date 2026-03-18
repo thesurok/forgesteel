@@ -65,7 +65,7 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1',
 					count: 2,
-					selected: ['Magic', 'Strategy']
+					selected: ['Магія', 'Strategy']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1c',
@@ -968,7 +968,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'Three creatures',
+						tier1: '3 Істоти',
 						tier2: 'Four creatures',
 						tier3: 'Five creatures'
 					})

@@ -45,7 +45,7 @@ export const highElfTactician = {
 								description: 'You gain a +1 bonus to the distance you can shift when you take the Disengage move action.',
 								type: 'Bonus',
 								data: {
-									field: 'Disengage',
+									field: 'Відступ',
 									value: 1,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -401,7 +401,7 @@ export const highElfTactician = {
 															roll: {
 																characteristic: [
 																	'Might',
-																	'Agility'
+																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '3 + M or A damage',
@@ -494,7 +494,7 @@ export const highElfTactician = {
 															roll: {
 																characteristic: [
 																	'Might',
-																	'Agility'
+																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '2 damage',
@@ -937,11 +937,11 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -2644,7 +2644,7 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Ranged',
 															'Weapon'
 														],
@@ -3067,7 +3067,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Three creatures',
+														target: '3 Істоти',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3965,7 +3965,7 @@ export const highElfTactician = {
 				value: 2
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 1
 			},
 			{

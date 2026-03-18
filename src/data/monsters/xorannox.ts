@@ -222,7 +222,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

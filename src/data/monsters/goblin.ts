@@ -291,7 +291,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						cost: 3,
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
@@ -734,7 +734,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								tier1: 'A<0 restrained (save ends)',

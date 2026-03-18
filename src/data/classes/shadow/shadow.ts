@@ -18,7 +18,7 @@ export const shadow: HeroClass = {
 
 Як Тінь, ви володієте здібностями, що завдають значної шкоди, дозволяють швидко маневрувати на полі бою й уникати небезпек, а також зникати з поля зору навіть у розпал найзапекліших сутичок. Ви також маєте більше навичок, ніж будь-який інший герой.`,
 	type: 'standard',
-	subclassName: 'Shadow College',
+	subclassName: 'Тіньовий коледж',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Agility]
@@ -62,7 +62,7 @@ export const shadow: HeroClass = {
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-1',
 					count: 2,
-					selected: ['Hide', 'Sneak']
+					selected: ['Сховатись', 'Крастись']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-3',
@@ -409,9 +409,9 @@ export const shadow: HeroClass = {
 					id: 'shadow-10-6',
 					name: 'Покращена тіньова форма',
 					description: `
-You gain full control over the shadow creature you become with your Umbral Form feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you concealment while in this form, and creatures no longer gain an edge on strikes against you.
+Ви отримуєте повний контроль над тіньовою істотою, в яку перетворюєтесь за допомогою функції Тіньової форми, і можете завершити трансформацію за бажанням (дія не потрібна). Додатково ви завжди огорнуті темрявою, що надає вам прикриття в цій формі, і істоти більше не отримують переваги на удари проти вас.
 
-While you are in your umbral form, you can spend 1 uninterrupted minute concentrating on a location where you’ve been before. At the end of that minute, you and each willing creature of your choice within 10 squares of you can teleport to unoccupied spaces of your choice within that location. Each creature who teleports this way is invisible for 1 hour or until they use an ability.`
+Поки ви перебуваєте в тіньовій формі, ви можете витратити 1 безперервну хвилину на концентрацію на місці, де ви вже були раніше. По закінченні цієї хвилини ви та кожна охоча істота на вибір у межах 10 клітинок від вас можете телепортуватися у вільні клітини за вашим вибором усередині тієї локації. Кожна істота, що телепортується таким чином, стає невидимою на 1 годину або до використання нею будь-якої здібності.`
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'shadow-10-7',

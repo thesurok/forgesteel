@@ -511,7 +511,7 @@ export const beastheart: HeroClass = {
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Area],
 											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 1 })],
-											target: 'Each creature in the area',
+											target: 'Кожна істота в зоні',
 											sections: [
 												FactoryLogic.createAbilitySectionText('M damage of the attuned damage type (see Elementally Attuned)'),
 												FactoryLogic.createAbilitySectionSpend({
@@ -770,7 +770,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-9-3',
-										selected: ['Hide']
+										selected: ['Сховатись']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -851,7 +851,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-10-3',
-										selected: ['Sneak']
+										selected: ['Крастись']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -929,7 +929,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-11-3',
-										selected: ['Sneak']
+										selected: ['Крастись']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1017,7 +1017,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-12-4',
-										selected: ['Hide']
+										selected: ['Сховатись']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({

@@ -483,7 +483,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						cost: 4,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each enemy target makes an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(

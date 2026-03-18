@@ -148,7 +148,7 @@ export class SheetFormatter {
 				return options.slice(-2).join(' or ');
 			} else {
 				const last2 = options.slice(-2).join(' or ');
-				return [ options.slice(0, -2).join(', '), last2 ].join(', ');
+				return [options.slice(0, -2).join(', '), last2].join(', ');
 			}
 		} else {
 			return '';
@@ -168,7 +168,7 @@ export class SheetFormatter {
 
 	// #region Feature Logic
 	static isLongFeature = (f: Feature, check: number = 2): boolean => {
-		return ([ FeatureType.Text, FeatureType.Package ].includes(f.type))
+		return ([FeatureType.Text, FeatureType.Package].includes(f.type))
 			&& (f.description.trim().split('\n').length > check);
 	};
 
@@ -535,7 +535,7 @@ export class SheetFormatter {
 		let size = 1;
 		const headerSize = 1.5;
 		const bottomMargin = 0.3;
-		if ([ FeatureType.Multiple, FeatureType.PackageContent ].includes(f.type)) {
+		if ([FeatureType.Multiple, FeatureType.PackageContent].includes(f.type)) {
 			size = 0;
 		} else if (this.isLongFeature(f) && countShortenedText) {
 			size = headerSize + this.countLines(f.description.trim().split('\n')[0], lineWidth);
@@ -563,14 +563,14 @@ export class SheetFormatter {
 			size += bottomMargin + 0.3;
 		} else if (f.type === FeatureType.HeroicResource) {
 			size = headerSize + (2 * this.countLines(f.data.details, lineWidth));
-		} else if ([ FeatureType.Choice,
-			FeatureType.ItemChoice,
-			FeatureType.SkillChoice,
-			FeatureType.LanguageChoice,
-			FeatureType.Perk,
-			FeatureType.Domain,
-			FeatureType.DomainFeature,
-			FeatureType.ClassAbility ].includes(f.type)) {
+		} else if ([FeatureType.Choice,
+		FeatureType.ItemChoice,
+		FeatureType.SkillChoice,
+		FeatureType.LanguageChoice,
+		FeatureType.Perk,
+		FeatureType.Domain,
+		FeatureType.DomainFeature,
+		FeatureType.ClassAbility].includes(f.type)) {
 			if (f.data && (Object.hasOwn(f.data, 'selected') || Object.hasOwn(f.data, 'selectedIds'))) {
 				size += 0.2; // choices with selections are sliiightly taller than a single line
 			}
@@ -870,7 +870,7 @@ export class SheetFormatter {
 	};
 
 	static keywordOrder: string[] = [
-		'Melee', 'Ranged', 'Magic'
+		'Melee', 'Ranged', 'Магія'
 	];
 
 	static sortKeywords = (a: string, b: string): number => {

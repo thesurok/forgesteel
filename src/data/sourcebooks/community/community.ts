@@ -344,7 +344,7 @@ As a magewright, you are able to utilize the majesty of magic and infuse it into
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'magewright-1-3',
-					selected: ['Magic']
+					selected: ['Магія']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'magewright-1-4',
@@ -525,7 +525,7 @@ If you have a kit, you can’t take this upgrade.`,
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'tjERIjbYqUZuFNkO',
-										name: 'Disengage',
+										name: 'Відступ',
 										field: FeatureField.Disengage,
 										value: 1
 									})
@@ -1372,7 +1372,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'dLmCKAUVRUTLMGvN',
 														name: 'Skill',
-														description: 'Sneak'
+														description: 'Крастись'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
@@ -1973,7 +1973,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: '36D7a7FRWqWNUAuY',
 														name: 'Skill',
-														description: 'Hide'
+														description: 'Сховатись'
 													})
 												]
 											}),

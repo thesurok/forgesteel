@@ -350,7 +350,7 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Area',
-																'Magic'
+																'Магія'
 															],
 															distance: [
 																{
@@ -428,7 +428,7 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Area',
-																'Magic'
+																'Магія'
 															],
 															distance: [
 																{
@@ -501,7 +501,7 @@ export const orcConduit = {
 																freeStrike: false
 															},
 															keywords: [
-																'Magic',
+																'Магія',
 																'Ranged'
 															],
 															distance: [
@@ -626,7 +626,7 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Area',
-																'Magic'
+																'Магія'
 															],
 															distance: [
 																{
@@ -716,7 +716,7 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Area',
-																'Magic'
+																'Магія'
 															],
 															distance: [
 																{
@@ -790,7 +790,7 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Area',
-																'Magic',
+																'Магія',
 																'Ranged'
 															],
 															distance: [
@@ -935,7 +935,7 @@ export const orcConduit = {
 									freeStrike: false
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged'
 								],
 								distance: [
@@ -996,7 +996,7 @@ export const orcConduit = {
 									]
 								},
 								keywords: [
-									'Magic',
+									'Магія',
 									'Ranged',
 									'Strike'
 								],
@@ -1070,7 +1070,7 @@ export const orcConduit = {
 													freeStrike: false
 												},
 												keywords: [
-													'Magic',
+													'Магія',
 													'Ranged'
 												],
 												distance: [
@@ -1133,7 +1133,7 @@ export const orcConduit = {
 													freeStrike: false
 												},
 												keywords: [
-													'Magic',
+													'Магія',
 													'Ranged'
 												],
 												distance: [
@@ -1198,7 +1198,7 @@ export const orcConduit = {
 												freeStrike: false
 											},
 											keywords: [
-												'Magic',
+												'Магія',
 												'Ranged'
 											],
 											distance: [
@@ -1257,7 +1257,7 @@ export const orcConduit = {
 										type: 'Ability Damage',
 										data: {
 											keywords: [
-												'Magic'
+												'Магія'
 											],
 											value: 1,
 											valueCharacteristics: [],
@@ -1277,7 +1277,7 @@ export const orcConduit = {
 										type: 'Ability Distance',
 										data: {
 											keywords: [
-												'Magic',
+												'Магія',
 												'Ranged'
 											],
 											value: 2,
@@ -1361,11 +1361,11 @@ export const orcConduit = {
 												},
 												{
 													id: 'conduit-1-8cb',
-													name: 'Disengage',
+													name: 'Відступ',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Disengage',
+														field: 'Відступ',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1429,7 +1429,7 @@ export const orcConduit = {
 									type: 'Ability Distance',
 									data: {
 										keywords: [
-											'Magic',
+											'Магія',
 											'Ranged'
 										],
 										value: 2,
@@ -1674,11 +1674,11 @@ export const orcConduit = {
 								{
 									feature: {
 										id: 'conduit-4-1b-1',
-										name: 'Agility',
+										name: 'Ловкість',
 										description: '',
 										type: 'Characteristic Bonus',
 										data: {
-											characteristic: 'Agility',
+											characteristic: 'Ловкість',
 											value: 1
 										}
 									},
@@ -1864,11 +1864,11 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -2070,11 +2070,11 @@ export const orcConduit = {
 								{
 									feature: {
 										id: 'shadow-10-1b-2',
-										name: 'Agility',
+										name: 'Ловкість',
 										description: '',
 										type: 'Characteristic Bonus',
 										data: {
-											characteristic: 'Agility',
+											characteristic: 'Ловкість',
 											value: 1
 										}
 									},
@@ -2187,7 +2187,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2245,7 +2245,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike'
 				],
@@ -2303,7 +2303,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2358,7 +2358,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2414,7 +2414,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2472,7 +2472,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike'
 				],
@@ -2526,7 +2526,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2584,7 +2584,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2639,7 +2639,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2696,7 +2696,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -2741,7 +2741,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2795,7 +2795,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2853,7 +2853,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2907,7 +2907,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -2961,7 +2961,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3019,7 +3019,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -3064,7 +3064,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3121,7 +3121,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3166,7 +3166,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -3225,7 +3225,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -3281,7 +3281,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -3340,7 +3340,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3393,7 +3393,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3438,7 +3438,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3483,7 +3483,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged'
 				],
 				distance: [
@@ -3529,7 +3529,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -3574,7 +3574,7 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Area',
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -3618,7 +3618,7 @@ export const orcConduit = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Ranged',
 					'Strike'
 				],
@@ -3672,7 +3672,7 @@ export const orcConduit = {
 				value: 1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: -1
 			},
 			{
@@ -3722,7 +3722,7 @@ export const orcConduit = {
 					],
 					count: 2,
 					selected: [
-						'Magic',
+						'Магія',
 						'Culture'
 					]
 				}

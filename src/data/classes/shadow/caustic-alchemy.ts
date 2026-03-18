@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const causticAlchemy: SubClass = {
 	id: 'shadow-sub-2',
-	name: 'College of Caustic Alchemy',
-	description: 'The College of Caustic Alchemy teaches its students recipes for the acids, bombs, and poisons used in their grim work. Graduates of the college are exceptional assassins.',
+	name: 'Коледж Каустичної Алхімії',
+	description: 'Коледж Каустичної Алхімії навчає студентів рецептам кислот, бомб і отрут, що використовуються в їхній похмурій роботі. Випускники коледжу — надзвичайні вбивці.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -19,37 +19,37 @@ export const causticAlchemy: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-2-1-2',
-						name: 'Coat The Blade',
-						description: 'A little poison goes a long way.',
+						name: 'Покриття клинка',
+						description: 'Трохи отрути дає значний ефект.',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You gain two surges. Additionally, whenever you use a surge before the end of the encounter, you can choose to have it deal poison damage.'),
+							FactoryLogic.createAbilitySectionText('Ви отримуєте два сплески. Крім того, коли ви використовуєте сплеск до кінця сутички, ви можете обрати, щоб він завдав отруйного пошкодження.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'For each insight you spend, you gain 1 additional surge.'
+								effect: 'За кожну витрачену Прозорливість ви отримуєте 1 додатковий сплеск.'
 							})
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-2-1-3',
-					name: 'Smoke Bomb',
-					description: 'You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the Hide maneuver even if you are observed and don’t initially have cover or concealment. When you do so, you can shift a number of squares equal to your Agility score. If you end this movement with cover or concealment, you are automatically hidden.'
+					name: 'Димова бомба',
+					description: 'Ви завжди носите запас димових бомб для відволікання та швидкого відступу. Ви можете виконати маневр «Сховатися», навіть якщо вас помітили й спочатку немає укриття або маскування. При цьому ви можете зміститися на число клітинок, рівне вашому показнику Ловкості. Якщо ви завершуєте це переміщення в укритті або під маскуванням, ви автоматично стаєте схованим.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-2-1-4',
-						name: 'Defensive Roll',
-						description: 'When an enemy attacks, you roll with the impact to reduce the harm.',
-						type: FactoryLogic.type.createTrigger('Another creature damages you.'),
+						name: 'Захисний перекат',
+						description: 'Коли ворог атакує, ви згладжуєте удар, щоб зменшити завдану шкоду.',
+						type: FactoryLogic.type.createTrigger('Інша істота завдає вам шкоди.'),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You take half the triggering damage, then can shift up to 2 squares after the triggering effect resolves. If you end this shift with concealment or cover, you can use the Hide maneuver even if you are observed.'),
+							FactoryLogic.createAbilitySectionText('Ви отримуєте половину шкоди від тригерної дії, після чого можете зміститися до 2 клітинок після вирішення тригерного ефекту. Якщо ви завершуєте це зміщення в маскуванні або укритті, ви можете виконати маневр «Сховатися», навіть якщо вас помітили.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The potency of any effects associated with the damage are reduced by 1 for you.'
+								effect: 'Потужність будь-яких ефектів, повʼязаних із цією шкодою, для вас зменшується на 1.'
 							})
 						]
 					})
@@ -61,27 +61,27 @@ export const causticAlchemy: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-2-2-1',
-					name: '2nd-Level College Ability',
+					name: 'Здібність коледжу 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-2-1a',
-									name: 'Sticky Bomb',
-									description: 'Explosives are best when they’re attached to an enemy.',
+									name: 'Прикріпна бомба',
+									description: 'Вибухівку найкраще прикріплювати до ворога.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Одна істота',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You attach a small bomb to a creature. If you are hidden from the creature, they don’t notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don’t, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a power roll targeting each enemy within 2 squares of it.'),
+										FactoryLogic.createAbilitySectionText('Ви прикріплюєте невелику бомбу до істоти. Якщо ви сховані від цієї істоти, вона не помічає бомбу, і ви лишаєтеся схованим. В іншому разі істота зауважує бомбу і може роззняти її та зняти як основну дію. Якщо не знімає, наприкінці вашого наступного ходу бомба детонує. Коли бомба детонує, ви робите кидок сили, спрямований на кожного ворога в межах 2 клітинок від неї.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Agility],
-												tier1: '4 + A fire damage',
-												tier2: '7 + A fire damage',
-												tier3: '11 + A fire damage'
+												tier1: '4 + Л вогняне пошкодження',
+												tier2: '7 + Л вогняне пошкодження',
+												tier3: '11 + Л вогняне пошкодження'
 											})
 										)
 									]
@@ -93,21 +93,21 @@ export const causticAlchemy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-2-1b',
-									name: 'Stink Bomb',
-									description: 'Putrid yellow gas explodes from a bomb you toss.',
+									name: 'Смердюча бомба',
+									description: 'З бомби, яку ви кидаєте, виривається гнильний жовтий газ.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-									target: 'Each creature in the area',
+									target: 'Кожна істота в зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '2 poison damage',
-											tier2: '5 poison damage',
-											tier3: '7 poison damage'
+											tier1: '2 отруйне пошкодження',
+											tier2: '5 отруйне пошкодження',
+											tier3: '7 отруйне пошкодження'
 										})),
-										FactoryLogic.createAbilitySectionText('The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < [середній] is weakened (save ends).')
+										FactoryLogic.createAbilitySectionText('Газ залишається в зоні до кінця сутички. Будь-яка істота, яка починає свій хід у зоні і має С < [середній], стає ослабленою (рят. кидок закінчує).')
 									]
 								})
 							}),
@@ -117,8 +117,8 @@ export const causticAlchemy: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-2-2-2',
-					name: 'Trained Assassin',
-					description: 'You know just where to cut your enemies. Whenever you make a strike that has no bane or double bane, and that incorporates 1 or more surges, you gain 1 additional surge that you can use only on that strike.'
+					name: 'Тренований вбивця',
+					description: 'Ви знаєте, де саме завдати удару ворогу. Коли ви завдаєте удару, який не має шкоди або подвійної шкоди і який включає один або більше сплесків, ви отримуєте один додатковий сплеск, який можна використати лише для цього удару.'
 				})
 			]
 		},
@@ -135,11 +135,11 @@ export const causticAlchemy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-2-5-1',
-					name: 'Volatile Reagents',
+					name: 'Нестабільні реагенти',
 					description: `
-Whenever you take damage, each enemy adjacent to you takes fire, acid, or poison damage (your choice) equal to your Agility score.
+Коли ви отримуєте шкоду, кожен ворог, що стоїть поруч, отримує вогняне, кислотне або отруйне пошкодження (на ваш вибір) рівне вашому показнику Ловкості.
 
-Additionally, your Defensive Roll ability now allows you to shift up to 5 squares, including shifting vertically. If you don’t end this shift on solid ground and are not flying, you fall.`
+Крім того, ваша здатність «Захисний перекат» тепер дозволяє зміститися до 5 клітинок, включно з вертикальним переміщенням. Якщо ви не завершуєте це переміщення на твердому ґрунті і не літаєте, ви падаєте.`
 				})
 			]
 		},
@@ -148,24 +148,24 @@ Additionally, your Defensive Roll ability now allows you to shift up to 5 square
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-2-6-1',
-					name: '6th-Level College Ability',
+					name: 'Здібність коледжу 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-6-1a',
-									name: 'One Vial Makes You Better',
-									description: 'A well-timed throw of a potion will keep your allies in the fight.',
+									name: 'Одна ампула робить вас кращими',
+									description: 'Своєчасний кидок еліксиру допомагає вашим союзникам залишатися в бою.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Three creatures',
+									target: 'Три істоти',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.
+Ви готуєте, передаєте або кидаєте еліксир кожній цілі; ціль може негайно випити еліксир (без необхідності виконувати дію). Якщо вона не випиває еліксир одразу, їй доведеться використати маневр «Вжити витратний предмет», щоб спожити його пізніше. Еліксир втрачає свою потужність наприкінці сутички.
 
-A creature who drinks the potion can spend up to 2 Recoveries, and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.`)
+Істота, що випила еліксир, може витратити до 2 Відновлень і отримує імунітет до кислоти, вогню або отрути (на її вибір), рівний вашому рівню до кінця сутички.`)
 									]
 								})
 							}),
@@ -175,25 +175,25 @@ A creature who drinks the potion can spend up to 2 Recoveries, and has acid immu
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-6-1b',
-									name: 'One Vial Makes You Faster',
-									description: 'Each ally who catches a potion you throw can take the battle to the next level.',
+									name: 'Одна ампула робить вас швидшими',
+									description: 'Кожен союзник, який ловить кинутий вами еліксир, може підняти ефективність у бою.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Ranged],
 									distance: [
 										FactoryLogic.distance.createRanged(10)
 									],
-									target: 'Three creatures',
+									target: 'Три істоти',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.
+Ви готуєте, передаєте або кидаєте еліксир кожній цілі; ціль може негайно випити еліксир (без необхідності виконувати дію). Якщо вона не випиває еліксир одразу, їй доведеться використати маневр «Вжити витратний предмет», щоб спожити його пізніше. Еліксир втрачає свою потужність наприкінці сутички.
 
-A creature who drinks the potion receives benefits based on your power roll.`),
+Істота, що випила еліксир, отримує ефекти залежно від результату вашого кидка сили.`),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: 'The creature’s speed is increased by 2 until the end of the encounter.',
-											tier2: 'The creature can fly until the end of the encounter.',
-											tier3: 'The creature turns invisible until the end of their next turn.'
+											tier1: 'Швидкість істоти збільшується на 2 до кінця сутички.',
+											tier2: 'Істота може літати до кінця сутички.',
+											tier3: 'Істота стає невидимою до кінця свого наступного ходу.'
 										}))
 									]
 								})
@@ -214,27 +214,27 @@ A creature who drinks the potion receives benefits based on your power roll.`),
 			features: [
 				FactoryLogic.feature.create({
 					id: 'shadow-sub-2-8-1',
-					name: 'Time Bomb',
-					description: 'You have damage immunity against area abilities and effects equal to your Agility score.'
+					name: 'Часова бомба',
+					description: 'Ви маєте імунітет до шкоди від зональних здібностей та ефектів у розмірі, рівному вашому показнику Ловкості.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'shadow-sub-2-8-2',
-						name: 'Time Bomb',
-						description: 'The longer it cooks, the bigger the boom.',
+						name: 'Часова бомба',
+						description: 'Чим довше готується, тим сильніший вибух.',
 						type: FactoryLogic.type.createManeuver({ free: true }),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-Each target takes acid, fire, or poison damage (your choice) equal to your Agility score.
+Кожна ціль отримує кислотне, вогняне або отруйне пошкодження (на ваш вибір), рівне вашому показнику Ловкості.
 
-For each combat round that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 surge that must be used with this ability. After using the ability or at the end of the encounter, its area and surges are reset.`),
+За кожен раунд бою, що минув з моменту останнього використання цієї здібності в поточній сутичці, розмір зони збільшується на 1, і ви отримуєте 1 сплеск, який має бути використаний з цією здібністю. Після використання здібності або в кінці сутички її зона та сплески скидаються.`),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								repeatable: true,
-								effect: 'For every 2 insight spent, you increase the cube’s size by 1 and gain 1 surge that can be used only with this ability.'
+								effect: 'За кожні 2 витрачені Прозорливості ви збільшуєте розмір куба на 1 і отримуєте 1 сплеск, який можна використати лише з цією здібністю.'
 							})
 						]
 					})
@@ -246,14 +246,14 @@ For each combat round that has passed since this ability was last used in the cu
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'shadow-sub-2-9-1',
-					name: '9th-Level College Ability',
+					name: 'Здібність коледжу 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-9-1a',
-									name: 'Chain Reaction',
-									description: 'One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.',
+									name: 'Ланцюгова реакція',
+									description: 'Один вибух — напад. Три вибухи — штурм. Девʼять вибухів — святкування.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Ranged],
 									distance: [
@@ -262,12 +262,12 @@ For each combat round that has passed since this ability was last used in the cu
 									target: 'Одна істота або предмет',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Each enemy within 3 squares of the target who is not currently targeted by this ability also becomes targeted by this ability. This effect continues until there are no more available targets. The ability deals acid, fire, or poison damage (your choice).'),
+										FactoryLogic.createAbilitySectionText('Кожен ворог у межах 3 клітинок від цілі, який наразі не є мішенню цієї здібності, також стає її мішенню. Цей ефект триває, поки є доступні цілі. Здібність завдає кислотного, вогняного або отруйного пошкодження (на ваш вибір).'),
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '7 damage',
-											tier2: '10 damage',
-											tier3: '15 damage'
+											tier1: '7 пошкодження',
+											tier2: '10 пошкодження',
+											tier3: '15 пошкодження'
 										}))
 									]
 								})
@@ -278,8 +278,8 @@ For each combat round that has passed since this ability was last used in the cu
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'shadow-sub-2-9-1b',
-									name: 'To the Stars',
-									description: 'You attach your most potent explosive to your foe. Under less pressing circumstances, you’re sure you could launch them into orbit.',
+									name: 'До зірок',
+									description: 'Ви прикріплюєте найпотужнішу вибухівку до ворога. За менш напружених обставин ви, напевно, могли б відправити його на орбіту.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 									distance: [
@@ -291,11 +291,11 @@ For each combat round that has passed since this ability was last used in the cu
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '4 + A fire damage; vertical push 8',
-											tier2: '7 + A fire damage; vertical push 10',
-											tier3: '11 + A fire damage; vertical push 15'
+											tier1: '4 + Л вогняне пошкодження; вертикальний поштовх 8',
+											tier2: '7 + Л вогняне пошкодження; вертикальний поштовх 10',
+											tier3: '11 + Л вогняне пошкодження; вертикальний поштовх 15'
 										})),
-										FactoryLogic.createAbilitySectionText('The ground beneath a 3-cube area around the target’s starting position is difficult terrain.')
+										FactoryLogic.createAbilitySectionText('Ґрунт під областю розміром 3 куби навколо початкової позиції цілі вважається важкодоступною місцевістю.')
 									]
 								})
 							}),

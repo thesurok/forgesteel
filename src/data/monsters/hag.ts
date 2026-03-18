@@ -214,7 +214,7 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hag attaches an ornate explosive pastry to each target who has A<2. At the end of the round, the hag makes one power roll against each creature with a pastry attached to them.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -253,7 +253,7 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 1 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,

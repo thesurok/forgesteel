@@ -253,7 +253,7 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSpecial('Two 3 cubes within 10')],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -288,7 +288,7 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

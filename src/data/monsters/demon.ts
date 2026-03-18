@@ -579,7 +579,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						cost: 3,
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** Each target must be at less than full Stamina.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -648,7 +648,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three creatures',
+						target: '3 Істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The torlas pulls each target up to 3 squares.')
 						]
@@ -2411,7 +2411,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSpecial('Four 3 cubes within 10')],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas summons treasures from his vaults into the area, then causes them to explode.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

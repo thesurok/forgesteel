@@ -806,7 +806,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The drangolin uses the Dig maneuver to breach the surface before using this ability. Each target in the area where the drangolin breaches takes an extra 2 fire damage.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

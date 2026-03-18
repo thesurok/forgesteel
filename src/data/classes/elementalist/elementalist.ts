@@ -62,7 +62,7 @@ export const elementalist: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-1-1',
-					selected: ['Magic']
+					selected: ['Магія']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'elementalist-1-2',

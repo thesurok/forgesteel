@@ -1,6 +1,6 @@
 export enum Characteristic {
 	Might = 'Might',
-	Agility = 'Agility',
+	Agility = 'Ловкість',
 	Reason = 'Reason',
 	Intuition = 'Intuition',
 	Presence = 'Presence'

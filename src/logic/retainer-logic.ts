@@ -345,7 +345,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each creature in the area',
+							target: 'Кожна істота в зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -367,7 +367,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-							target: 'Each creature in the area',
+							target: 'Кожна істота в зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -516,7 +516,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Area, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-							target: 'Each creature in the area',
+							target: 'Кожна істота в зоні',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],

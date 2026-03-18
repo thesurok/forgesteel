@@ -257,7 +257,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 6 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. The dragon’s eyes glow with unequalled malevolence, and any target who has a Deathcount has that Deathcount reduced to 1.')
 						]

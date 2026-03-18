@@ -324,12 +324,12 @@ export const humanNull = {
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
-				'Agility',
+				'Ловкість',
 				'Intuition'
 			]
 		],
 		primaryCharacteristics: [
-			'Agility',
+			'Ловкість',
 			'Intuition'
 		],
 		featuresByLevel: [
@@ -562,7 +562,7 @@ export const humanNull = {
 										field: 'Speed',
 										value: 0,
 										valueCharacteristics: [
-											'Agility'
+											'Ловкість'
 										],
 										valueCharacteristicMultiplier: 1,
 										valuePerLevel: 0,
@@ -571,14 +571,14 @@ export const humanNull = {
 								},
 								{
 									id: 'null-1-6b',
-									name: 'Disengage',
+									name: 'Відступ',
 									description: '',
 									type: 'Bonus',
 									data: {
-										field: 'Disengage',
+										field: 'Відступ',
 										value: 0,
 										valueCharacteristics: [
-											'Agility'
+											'Ловкість'
 										],
 										valueCharacteristicMultiplier: 1,
 										valuePerLevel: 0,
@@ -680,11 +680,11 @@ export const humanNull = {
 												},
 												{
 													id: 'null-1-7cb',
-													name: 'Disengage',
+													name: 'Відступ',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Disengage',
+														field: 'Відступ',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -916,11 +916,11 @@ export const humanNull = {
 				features: [
 					{
 						id: 'null-4-1a',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1069,11 +1069,11 @@ export const humanNull = {
 					},
 					{
 						id: 'null-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1224,11 +1224,11 @@ export const humanNull = {
 				features: [
 					{
 						id: 'null-10-1a',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1359,7 +1359,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 damage',
@@ -1418,7 +1418,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 damage',
@@ -1477,7 +1477,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '5 + A damage',
@@ -1536,7 +1536,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; A < [слабкий], grabbed',
@@ -1591,7 +1591,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; taunted (EoT)',
@@ -1646,7 +1646,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '5 + Л психічної шкоди; вертикально притягнути на 1',
@@ -1701,7 +1701,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; push 2',
@@ -1760,7 +1760,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; A < [слабкий], weakened (save ends)',
@@ -1815,7 +1815,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '7 + A damage',
@@ -1919,7 +1919,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '6 + A damage',
@@ -1978,7 +1978,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '4 + A damage; I < [слабкий], dazed and slowed (save ends)',
@@ -2033,7 +2033,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '8 + A psychic damage; M < [слабкий], weakened (save ends)',
@@ -2151,7 +2151,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '3 + A psychic damage; I < [слабкий], the target goes out of phase (save ends)',
@@ -2209,7 +2209,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '6 damage',
@@ -2444,7 +2444,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '7 + A damage; I < [слабкий], restrained (save ends)',
@@ -2503,7 +2503,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '10 + A damage; A < [слабкий], grabbed',
@@ -2651,7 +2651,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '13 + A damage; M < [слабкий], the target is suppressed (save ends)',
@@ -2710,7 +2710,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '9 + A damage; push 5; I < [слабкий], dazed (save ends)',
@@ -2767,7 +2767,7 @@ export const humanNull = {
 						type: 'roll',
 						roll: {
 							characteristic: [
-								'Agility'
+								'Ловкість'
 							],
 							bonus: 0,
 							tier1: '12 psychic damage; push 3',
@@ -2997,7 +2997,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '8 + A damage; slide 1',
@@ -3154,7 +3154,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '6 damage; M < [слабкий]. dazed',
@@ -3482,7 +3482,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '6 cold damage; A < [слабкий], slowed (save ends)',
@@ -4017,7 +4017,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '8 + A psychic damage; vertical pull 3',
@@ -4080,7 +4080,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: 'You gain 10 temporary Stamina',
@@ -4397,7 +4397,7 @@ export const humanNull = {
 																type: 'roll',
 																roll: {
 																	characteristic: [
-																		'Agility'
+																		'Ловкість'
 																	],
 																	bonus: 0,
 																	tier1: '7 + A psychic damage; I < [слабкий], dazed',
@@ -4446,7 +4446,7 @@ export const humanNull = {
 				value: 1
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 2
 			},
 			{

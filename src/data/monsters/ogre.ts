@@ -226,7 +226,7 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Each creature in the area',
+						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The juggernaut jumps up to 6 squares before using this ability.'),
 							FactoryLogic.createAbilitySectionRoll(

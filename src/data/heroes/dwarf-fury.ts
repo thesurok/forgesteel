@@ -214,12 +214,12 @@ export const dwarfFury = {
 		primaryCharacteristicsOptions: [
 			[
 				'Might',
-				'Agility'
+				'Ловкість'
 			]
 		],
 		primaryCharacteristics: [
 			'Might',
-			'Agility'
+			'Ловкість'
 		],
 		featuresByLevel: [
 			{
@@ -443,11 +443,11 @@ export const dwarfFury = {
 					},
 					{
 						id: 'fury-4-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -583,11 +583,11 @@ export const dwarfFury = {
 					},
 					{
 						id: 'fury-7-1b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -731,11 +731,11 @@ export const dwarfFury = {
 					},
 					{
 						id: 'fury-10-2b',
-						name: 'Agility',
+						name: 'Ловкість',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
-							characteristic: 'Agility',
+							characteristic: 'Ловкість',
 							value: 1
 						}
 					},
@@ -1494,7 +1494,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1538,7 +1538,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1582,7 +1582,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1846,7 +1846,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -1905,7 +1905,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -1949,7 +1949,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -2008,7 +2008,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic'
+					'Магія'
 				],
 				distance: [
 					{
@@ -2052,7 +2052,7 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Magic',
+					'Магія',
 					'Melee',
 					'Strike',
 					'Weapon'
@@ -2200,7 +2200,7 @@ export const dwarfFury = {
 																	roll: {
 																		characteristic: [
 																			'Might',
-																			'Agility'
+																			'Ловкість'
 																		],
 																		bonus: 0,
 																		tier1: '3 + M or A damage',
@@ -2255,7 +2255,7 @@ export const dwarfFury = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic',
+											'Магія',
 											'Melee'
 										],
 										distance: [
@@ -2528,7 +2528,7 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -2706,7 +2706,7 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Melee',
 															'Weapon'
 														],
@@ -2867,7 +2867,7 @@ export const dwarfFury = {
 									],
 									count: 1,
 									selected: [
-										'Hide'
+										'Сховатись'
 									]
 								}
 							},
@@ -2976,7 +2976,7 @@ export const dwarfFury = {
 												field: 'Speed',
 												value: 0,
 												valueCharacteristics: [
-													'Agility'
+													'Ловкість'
 												],
 												valueCharacteristicMultiplier: 1,
 												valuePerLevel: 0,
@@ -3199,7 +3199,7 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Strike',
 															'Weapon'
 														],
@@ -3366,7 +3366,7 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -3628,7 +3628,7 @@ export const dwarfFury = {
 											freeStrike: false
 										},
 										keywords: [
-											'Magic'
+											'Магія'
 										],
 										distance: [
 											{
@@ -3777,7 +3777,7 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3885,7 +3885,7 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Magic',
+															'Магія',
 															'Melee',
 															'Strike',
 															'Weapon'
@@ -3956,7 +3956,7 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -3968,7 +3968,7 @@ export const dwarfFury = {
 																qualifier: ''
 															}
 														],
-														target: 'Each creature in the area',
+														target: 'Кожна істота в зоні',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -4045,7 +4045,7 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Area',
-															'Magic'
+															'Магія'
 														],
 														distance: [
 															{
@@ -4109,7 +4109,7 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Area',
-															'Magic',
+															'Магія',
 															'Ranged'
 														],
 														distance: [
@@ -4176,7 +4176,7 @@ export const dwarfFury = {
 				value: 2
 			},
 			{
-				characteristic: 'Agility',
+				characteristic: 'Ловкість',
 				value: 2
 			},
 			{
