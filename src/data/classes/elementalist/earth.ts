@@ -5,47 +5,47 @@ import { SubClass } from '@/models/subclass';
 
 export const earth: SubClass = {
 	id: 'elementalist-sub-1',
-	name: 'Earth',
-	description: 'Earth is the element of permanence. Earth abilities bolster your body and grant the power to permanently create and shape physical terrain.',
+	name: 'Земля',
+	description: 'Земля — елемент сталості. Здібності Землі зміцнюють ваше тіло і дарують силу постійно створювати та формувати фізичний ландшафт.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-1-1-1',
-					name: 'Earth: Acolyte of Earth',
-					description: 'You harness the flow of earth magic to become harder to move. Whenever you use an ability that has the Earth and Magic keywords, your stability increases by 1 until the start of your next turn. This benefit is cumulative.'
+					name: 'Земля: Адепт Землі',
+					description: 'Ви спрямовуєте потік земної магії, щоб стати важчим для переміщення. Коли ви використовуєте здібність з ключовими словами Земля та Магія, ваша стабільність збільшується на 1 до початку вашого наступного ходу. Ця перевага накопичується.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-1-1-2',
-						name: 'Motivate Earth',
-						description: 'The earth rises, falls, or opens up at your command.',
+						name: 'Пробудити Землю',
+						description: 'Земля піднімається, опускається або розкривається за вашим наказом.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Special',
+						target: 'Особлива',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-You touch a square containing mundane dirt, stone, or metal and create a 5 wall of the same material, which rises up out of the ground and must include the square you touched.
+Ви торкаєтеся клітинки, що містить звичайний ґрунт, камінь або метал, і створюєте стіну розміром 5 з того самого матеріалу, яка піднімається з землі і має включати торкнуту клітинку.
 
-Alternatively, you touch a structure made of mundane dirt, stone, or metal that occupies 2 or more squares. You can open a 1-square opening in the structure where you touched it. You can instead touch an existing doorway or other opening that is 1 square or smaller in a mundane dirt, stone, or metal surface. The opening is sealed by the same material that makes up the surface.`)
+Альтернативно, ви можете торкнутися споруди зі звичайного ґрунту, каменю або металу, яка займає 2 або більше клітинок. Ви можете відкрити у споруді отвір розміром 1 клітинку у місці торкання. Натомість ви також можете торкнутися існуючих дверей або іншого отвору розміром 1 клітинку або менше в поверхні зі звичайного ґрунту, каменю або металу. Отвір запечатаний тим самим матеріалом, з якого складається поверхня.`)
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-1-1-3',
-						name: 'Skin Like Castle Walls',
-						description: 'You cover yourself or an ally in protective stone.',
-						type: FactoryLogic.type.createTrigger('The target takes damage.'),
+						name: 'Шкіра як замкові мури',
+						description: 'Ви покриваєте себе або союзника захисним каменем.',
+						type: FactoryLogic.type.createTrigger('Ціль зазнає пошкодження.'),
 						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'На себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The damage is halved.'),
+							FactoryLogic.createAbilitySectionText('Шкода зменшується наполовину.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'If the damage has any potency effect associate with it, the potency is reduced by 1.'
+								effect: 'Якщо пошкодження має будь‑який ефект потужності, повʼязаний із ним, потужність зменшується на 1.'
 							})
 						]
 					})
@@ -57,8 +57,8 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'elementalist-sub-1-2-1',
-					name: 'Disciple of Earth',
-					description: 'Your body is strengthened by your mind’s connection to the element of permanence.',
+					name: 'Учень Землі',
+					description: 'Ваше тіло зміцнюється завдяки звʼязку вашого розуму з елементом сталості.',
 					field: FeatureField.Stamina,
 					value: 3, // RAW is 6 stamina at 2nd level and 3 for each level after that, but the 3 per level will get added at lvl 2 as well here
 					valuePerLevel: 3
@@ -71,14 +71,14 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-1-3-1',
-						name: 'The Earth Accepts Me',
-						description: 'You can slip into the stone.',
+						name: 'Земля Приймає Мене',
+						description: 'Ви можете прослизнути в камінь.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'На себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You step into a mundane dirt, metal, or stone object (including a wall) that is as large as you or larger. You can remain inside the object for as long as you like. While inside the object, you can observe events and speak to creatures outside it, but you don’t have line of effect to anything outside the object and vice versa. You can travel through the object freely until you exit it. If the object you meld with is destroyed, you take 10 damage and exit the object.')
+							FactoryLogic.createAbilitySectionText('Ви заходите в обʼєкт зі звичайного ґрунту, металу або каменю (включно зі стіною), який за розмірами дорівнює вам або більший. Ви можете залишатися всередині обʼєкта стільки, скільки бажаєте. Перебуваючи всередині, ви можете спостерігати події та говорити з істотами зовні, але ви не маєте лінії ефекту до нічого поза обʼєктом і навпаки. Ви можете вільно переміщатися всередині обʼєкта, поки не вийдете. Якщо обʼєкт, з яким ви злилися, буде зруйновано, ви отримуєте 10 шкоди і виходите з обʼєкта.')
 						]
 					})
 				})
@@ -89,11 +89,11 @@ Alternatively, you touch a structure made of mundane dirt, stone, or metal that 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-1-4-1',
-					name: 'Mantle of Essence: Quaking Earth',
+					name: 'Мантія Есенції: Землетрус',
 					description: `
-While you have 3 or more essence and are not dying, you exude an aura of magic whose distance is equal to your Reason score. You can activate and deactivate the aura at will (no action required).
+Поки у вас 3 або більше есенції та ви не вмираєте, ви випромінюєте ауру магії, радіус якої дорівнює вашому показнику Розуму. Ви можете вмикати та вимикати ауру за бажанням (дія не потрібна).
 
-At the end of each of your turns, you can push each enemy in the area up to a number of squares equal to your Reason score.`
+В кінці кожного вашого ходу ви можете відштовхнути кожного ворога в цій зоні на кількість клітинок, що дорівнює вашому показнику Розуму.`
 				})
 			]
 		},
@@ -102,11 +102,11 @@ At the end of each of your turns, you can push each enemy in the area up to a nu
 			features: [
 				FactoryLogic.feature.createMultiple({
 					id: 'elementalist-sub-1-5-1',
-					name: 'The Mountain Does Not Move',
+					name: 'Гора не зрушиться',
 					description: `
-You stand firm and magnetize your allies to stay grounded. Your stability increases by your level.
+Ви стоїте міцно і притягуєте союзників, щоб вони залишалися вкоріненими. Ваша стабільність збільшується на значення вашого рівня.
 
-Additionally, whenever an ally within distance of your Hurl Element ability is force moved, you can use a free triggered action to decrease your stability down to a minimum of 0, then increase the ally’s stability by an amount equal to the stability you lost. This change lasts until the end of the round.`,
+Крім того, коли союзник у межах дальності вашої здібності «Кинути Елемент» зазнає примусового переміщення, ви можете використати безкоштовну тригерну дію, щоб знизити вашу стабільність до мінімуму 0, а потім збільшити стабільність союзника на величину, рівну втраченій вами стабільності. Ця зміна триває до кінця раунду.`,
 					features: [
 						FactoryLogic.feature.createBonus({
 							id: 'elementalist-sub-1-5-1a',
@@ -117,12 +117,12 @@ Additionally, whenever an ally within distance of your Hurl Element ability is f
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
 								id: 'elementalist-sub-1-5-1b',
-								name: 'The Mountain Does Not Move',
-								type: FactoryLogic.type.createTrigger('The target is force moved', { free: true }),
-								distance: [FactoryLogic.distance.createSpecial('The distance of your Hurl Element ability')],
+								name: 'Гора не зрушиться',
+								type: FactoryLogic.type.createTrigger('Ціль зазнає примусового переміщення', { free: true }),
+								distance: [FactoryLogic.distance.createSpecial('Дальність вашої здібності «Кинути Елемент»')],
 								target: 'Один союзник',
 								sections: [
-									FactoryLogic.createAbilitySectionText('You decrease your stability down to a minimum of 0, then increase the target’s stability by an amount equal to the stability you lost. This change lasts until the end of the round.')
+									FactoryLogic.createAbilitySectionText('Ви знижуєте свою стабільність до мінімуму 0, а потім збільшуєте стабільність цілі на величину, рівну втраченій вами стабільності. Ця зміна триває до кінця раунду.')
 								]
 							})
 						})
@@ -139,11 +139,11 @@ Additionally, whenever an ally within distance of your Hurl Element ability is f
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-1-6-1',
-					name: 'Mantle of Quintessence',
+					name: 'Мантія Квінтесенції',
 					description: `
-Your Mantle of Essence feature no longer requires essence.
+Ваша особливість «Мантія Есенції» більше не вимагає есенції.
 
-Additionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.`
+Крім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії отримують приріст початкового терпіння на 1 (до максимуму 5) під час будь-яких переговорів. Поки ви в зоні, ви та будь-який союзник отримуєте перевагу на перевірки, що використовують навичку «Управління тваринами». Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а перевірки з «Управління тваринами» мають подвійний ефект.`
 				})
 			]
 		},
@@ -153,21 +153,21 @@ Additionally, your Mantle of Essence now radiates magic that creates a calming a
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-1-7-1',
-						name: 'Summon Source of Earth',
-						description: 'The ground rumbles as an elemental bursts forth, ready to serve.',
+						name: 'Призвати Джерело Землі',
+						description: 'Ґрунт тремтить, коли з нього виривається елементаль, готовий служити.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особлива',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-A source of earth emerges from an unoccupied space within distance. The source takes their turn immediately after you, moving up to their speed and either taking a main action or a maneuver. The source is dismissed at the start of your next turn.
+З незайнятої клітинки в межах дистанції зʼявляється джерело землі. Джерело робить свій хід одразу після вас: може рухатися на відстань, що дорівнює його швидкості, і виконати або головну дію, або маневр. Джерело зникає на початку вашого наступного ходу.
 
-The source starts an encounter at full Stamina, but maintains their current Stamina throughout the encounter, even if they are dismissed and you use this ability again. They can’t regain Stamina during the encounter. When the source’s Stamina is reduced to 0, you can’t use this ability again until you earn 1 or more Victories.`),
+Джерело починає сутичку з повною Витривалістю, але зберігає своє поточне значення Витривалості протягом усієї сутички, навіть якщо його відміняють і ви знову використовуєте цю здібність. Воно не може відновлювати Витривалість під час сутички. Коли Витривалість джерела зменшується до 0, ви не можете використовувати цю здібність знову, поки не здобудете 1 або більше Перемог.`),
 							FactoryLogic.createAbilitySectionSpend({
-								name: 'Persist',
+								name: 'Тривати',
 								value: 2,
-								effect: 'The source takes another turn. They are dismissed at the start of your next turn.'
+								effect: 'Джерело робить ще один хід. Воно зникає на початку вашого наступного ходу.'
 							})
 						]
 					})
@@ -179,13 +179,13 @@ The source starts an encounter at full Stamina, but maintains their current Stam
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-1-8-1',
-					name: 'One: Master of Earth',
+					name: 'Один: Майстер Землі',
 					description: `
-You become the embodiment of the element of your chosen specialization. Whenever you use magic, elemental motes flit around you and your skin changes to reflect your element, taking on an earthen or stony appearance for earth, appearing like flickering flame for fire, gaining a leaf pattern for green, and becoming a starry expanse for void.
+Ви стаєте втіленням елементу вашої обраної спеціалізації. Коли ви використовуєте магію, навколо вас кружляють елементальні частинки, і ваша шкіра набуває властивостей вашого елементу: земля — ґрунтовий або кам'яний вигляд, вогонь — наче тліюче полум'я, зелень — листковий візерунок, пустота — зоряне небо.
 
-You have damage immunity 5.
+Ви маєте імунітет до шкоди 5.
 
-Additionally, as a respite activity, you can shape the mundane earth around you in a 1-mile radius. You can open sinkholes, form mountains, level mundane structures or whole settlements, create canyons, raise islands or sink them in the sea, and perform similar feats. You can’t use this respite activity if another creature within 1 mile is already using it. Once you use this respite activity, you can’t use it again for 10 days.`
+Крім того, як діяльність відпочинку, ви можете формувати буденну землю навколо себе в радіусі 1 милі. Ви можете відкрити провалля, створити гори, зрівняти буденні споруди або цілі поселення, створити каньйони, підняти острови або занурити їх у море та виконувати подібні дії. Ви не можете використовувати цю діяльність відпочинку, якщо інша істота в межах 1 милі вже її використовує. Після використання ви не можете використовувати її знову протягом 10 днів.`
 				})
 			]
 		}

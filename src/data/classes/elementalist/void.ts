@@ -4,50 +4,50 @@ import { SubClass } from '@/models/subclass';
 
 export const voidSubclass: SubClass = {
 	id: 'elementalist-sub-4',
-	name: 'Void',
-	description: 'Void is the element of the mystery. Void abilities warp space and reality, allowing you to teleport, create illusions, and make things incorporeal.',
+	name: 'Порожнеча',
+	description: 'Порожнеча — стихія таємниці. Здібності Порожнечі деформують простір і реальність, дозволяючи телепортуватися, створювати ілюзії й робити предмети нематеріальними.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'elementalist-sub-4-1-1',
-					name: 'Acolyte of the Void',
+					name: 'Адепт Порожнечі',
 					keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 					value: 2
 				}),
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-1-2',
-					name: 'A Beyonding of Vision',
-					description: 'You instantly recognize illusions for what they are, you can see invisible creatures, and supernatural effects can’t conceal creatures and objects from you. Additionally, you always know if an area or object you observe is magical or affected by magic, and you know the specifics of what that magic can do.'
+					name: 'Видіння Поза',
+					description: 'Ви миттєво розпізнаєте ілюзії, бачите невидимих істот, і надприродні ефекти не можуть приховати від вас істот та предметів. Крім того, ви завжди знаєте, чи є спостережувана область або предмет магічними або під дією магії, і знаєте, що саме робить ця магія.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-4-1-3',
-						name: 'Shared Void Sense',
-						description: 'You grant allies a taste of your unearthly vision.',
+						name: 'Спільне відчуття Порожнечі',
+						description: 'Ви даруєте союзникам частинку свого позаземного зору.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особлива',
 						sections: [
-							FactoryLogic.createAbilitySectionText('For each Victory you have, you can target one creature. Each target gains the benefit of your A Beyonding of Vision feature until the end of your next turn, but doesn’t gain the use of the Shared Void Sense ability.')
+							FactoryLogic.createAbilitySectionText('За кожну вашу Перемогу ви можете обрати одну істоту. Кожна обрана істота отримує ефект вашої здібності Видіння Поза до кінця вашого наступного ходу, але не отримує можливості використовувати Спільне відчуття Порожнечі.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-4-1-4',
-						name: 'Subtle Relocation',
-						description: 'You call on the void to swallow and spit out an ally.',
-						type: FactoryLogic.type.createTrigger('The target starts their turn, moves, or is force moved.'),
+						name: 'Непомітне переміщення',
+						description: 'Ви звертаєтеся до Порожнечі, щоб вона поглинула й виплюнула союзника.',
+						type: FactoryLogic.type.createTrigger('Ціль починає свій хід, рухається або її примусово переміщують.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'На себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You teleport the target up to a number of squares equal to your Reason score. If the target moves to trigger this ability, you can teleport them at any point during the move.'),
+							FactoryLogic.createAbilitySectionText('Ви телепортуєте ціль на число клітинок, рівне вашому показнику Розуму. Якщо ціль рухається і це спричиняє активацію цієї здібності, ви можете телепортувати її в будь-який момент під час руху.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You teleport the target up to a number of squares equal to twice your Reason score instead.'
+								effect: 'Натомість ви телепортуєте ціль на число клітинок, рівне подвоєному значенню вашого показника Розуму.'
 							})
 						]
 					})
@@ -60,17 +60,17 @@ export const voidSubclass: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-4-2-1',
-						name: 'There is No Space Between',
-						description: 'Knowledge of the mystery reveals that two spaces are the same space.',
+						name: 'Між просторами немає відстані',
+						description: 'Пізнання таємниці відкриває, що дві просторові точки можуть бути одним і тим же простором.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Void],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особлива',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-You open two size 1 portals in unoccupied spaces within distance, which last until you move beyond distance from any portal, end the effect as a maneuver, or are dying. Each portal must be placed at a height of no more than 1 square above the ground. When you or any ally touch a portal, that creature can choose to be instantly teleported to an unoccupied space of their choice adjacent to the other portal. If an enemy is force moved into a portal, their forced movement ends and they emerge from the other portal in an unoccupied space chosen by the creature who force moved them.
+Ви відкриваєте два портали розміром 1 у вільних клітинках у межах дистанції; вони діють доки ви не відійдете за межі дистанції від будь-якого порталу, не припините ефект як маневр або не опинитесь у стані вмирання. Кожен портал має бути розташований на висоті не більше 1 клітинки над землею. Коли ви або будь-який союзник торкаєтеся порталу, та істота може обрати негайно телепортуватися в будь-яку вільну клітинку поруч з іншим порталом. Якщо ворога примусово переміщують у портал, їхнє примусове переміщення припиняється, і вони зʼявляються з іншого порталу у вільній клітинці, обраній істотою, яка примусово їх перемістила.
 
-At the start of each of your turns while the portals are active, you can open a new portal connected to the others. If three or more portals are present, you and your allies choose which portal to emerge from when entering a portal, and a creature who force moves an enemy into a portal chooses that enemy’s destination portal.`)
+На початку кожного вашого ходу, поки портали активні, ви можете відкрити новий портал, зʼєднаний з іншими. Якщо присутні три або більше порталів, ви та ваші союзники обираєте, з якого порталу виходити при вході в портал, а істота, яка примусово переміщує ворога в портал, обирає портал призначення для того ворога.`)
 						]
 					})
 				})
@@ -81,8 +81,8 @@ At the start of each of your turns while the portals are active, you can open a 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-3-1',
-					name: 'Distance is Only Memory',
-					description: 'Each time you finish a respite, you can open a two-way portal that leads to any place you have previously been. You and your allies can pass through the portal, which remains open for 1 hour or until you dismiss it as a main action.'
+					name: 'Відстань — лише спогад',
+					description: 'Кожного разу, коли ви завершуєте перерву, ви можете відкрити двосторонній портал, який веде до будь-якого місця, де ви раніше були. Ви та ваші союзники можете проходити крізь портал; він залишається відкритим 1 годину або доки ви не закриєте його як головну дію.'
 				})
 			]
 		},
@@ -91,11 +91,11 @@ At the start of each of your turns while the portals are active, you can open a 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-4-1',
-					name: 'Mantle of Essence: Veiling Bed',
+					name: 'Мантія Есенції: Завіса',
 					description: `
-While you have 3 or more essence and are not dying, you exude an aura of magic whose distance is equal to your Reason score. You can activate and deactivate the aura at will (no action required).
+Поки у вас 3 або більше есенції й ви не перебуваєте в стані вмирання, ви випромінюєте ауру магії з радіусом, рівним вашому показнику Розуму. Ви можете вмикати та вимикати ауру за бажанням (дія не потрібна).
 
-The area provides concealment for you and your allies.`
+Область надає прикриття вам та вашим союзникам.`
 				})
 			]
 		},
@@ -104,11 +104,11 @@ The area provides concealment for you and your allies.`
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-5-1',
-					name: 'Pierce the Veil of Substance',
+					name: 'Прорвати Завісу Матерії',
 					description: `
-Solidity is merely a suggestion to you. Mundane barriers that are 1 square thick or less do not block your senses or line of effect. You can only sense or have line of effect past one such barrier at a time.
+Твердість для вас — лиш порада. Побутові перешкоди товщиною до 1 клітинки не блокують ваші відчуття або лінію ефекту. Ви можете відчувати або мати лінію ефекту через не більше ніж одну таку перешкоду одночасно.
 
-Additionally, whenever you use a void ability, you or one ally within distance of the ability can teleport a number of squares equal to your Reason score.`
+Крім того, кожного разу, коли ви використовуєте здібність Порожнечі, ви або один союзник у межах дії цієї здібності можете телепортуватися на число клітинок, рівне вашому показнику Розуму.`
 				})
 			]
 		},
@@ -121,11 +121,11 @@ Additionally, whenever you use a void ability, you or one ally within distance o
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-6-1',
-					name: 'Mantle of Quintessence',
+					name: 'Мантія Квінтесенції',
 					description: `
-Your Mantle of Essence feature no longer requires essence.
+Ваша здібність Мантія Есенції більше не вимагає есенції.
 
-Additionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.`
+    			Крім того, тепер ваша Мантія Есенції випромінює магію, що створює заспокійливу атмосферу. Істоти в межах аури мантії отримують +1 до початкової терпеливості (до максимуму 5) під час будь-яких переговорів. Поки ви в області, ви й будь-який союзник отримують перевагу в випробуваннях, що використовують навичку Управління тваринами. Якщо у вас 5 або більше Перемог, бонус до терпеливості збільшується до 2, а випробування з навичкою Управління тваринами мають подвійну перевагу.`
 				})
 			]
 		},
@@ -134,11 +134,11 @@ Additionally, your Mantle of Essence now radiates magic that creates a calming a
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-7-1',
-					name: 'Black Hole Star',
+					name: 'Зірка Чорної Діри',
 					description: `
-You warp gravity around your heavenly body and can pull even the sturdiest titans toward your core. At the end of each of your turns, you target one creature or object within distance of your Hurl Element ability and vertical pull that target up to 5 squares. If their stability reduces this forced movement, they are pulled a minimum of 2 squares. This forced movement ignores stability for your allies.
+Ви деформуєте гравітацію навколо свого небесного тіла й можете притягнути навіть найстійкіших титанів до свого ядра. Наприкінці кожного вашого ходу ви обираєте одну істоту або предмет у межах дистанції вашої здібності Кидок стихії і вертикально притягаєте цю ціль до 5 клітинок. Якщо їхня стійкість зменшує це примусове переміщення, вони притягуються мінімум на 2 клітинки. Це примусове переміщення ігнорує стійкість для ваших союзників.
 
-Additionally, your Mantle of Essence improves. While in the area of the aura, enemies and objects have their stability reduced by an amount equal to your level.`
+Крім того, ваша Мантія Есенції покращується. Поки ви в межах аури, вороги та предмети мають зменшену стійкість на величину, рівну вашому рівню.`
 				})
 			]
 		},
@@ -147,13 +147,13 @@ Additionally, your Mantle of Essence improves. While in the area of the aura, en
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-4-8-1',
-					name: 'One: Master of Void',
+					name: 'Один: Майстер Порожнечі',
 					description: `
-You become the embodiment of the element of your chosen specialization. Whenever you use magic, elemental motes flit around you and your skin changes to reflect your element, taking on an earthen or stony appearance for earth, appearing like flickering flame for fire, gaining a leaf pattern for green, and becoming a starry expanse for void.
+Ви стаєте втіленням стихії вашої обраної спеціалізації. Коли ви використовуєте магію, навколо вас кружляють елементарні іскорки, а шкіра змінює свій вигляд відповідно до стихії: земля набуває земляного або камʼяного вигляду, вогонь — наче мерехтливе полумʼя, зелень — листковий візерунок, а Порожнеча — вигляд зоряного простору.
 
-Whenever you willingly move, you can teleport.
+Кожного разу, коли ви добровільно рухаєтесь, ви можете телепортуватися.
 
-Additionally, your mind is connected to the mystery and helps you find the answers you seek. You no longer require project sources for research projects. Whenever you use a respite activity to make a project roll for a research project, you automatically complete the project.`
+Крім того, ваш розум пов'язаний із Таємницею і допомагає знаходити відповіді, які ви шукаєте. Вам більше не потрібні джерела проєкту для дослідницьких проєктів. Кожного разу, коли ви використовуєте дію відпочинку для виконання кидка проєкту для дослідницького проєкту, ви автоматично завершуєте цей проєкт.`
 				})
 			]
 		}

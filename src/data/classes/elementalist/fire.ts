@@ -6,45 +6,45 @@ import { SubClass } from '@/models/subclass';
 
 export const fire: SubClass = {
 	id: 'elementalist-sub-2',
-	name: 'Fire',
-	description: 'Fire is the element of destruction. Fire abilities devastate enemies and melt objects to slag.',
+	name: 'Вогонь',
+	description: 'Вогонь — елемент руйнування. Вогняні здібності нищать ворогів і перетворюють обʼєкти на шлак.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createAbilityDamage({
 					id: 'elementalist-sub-2-1-1',
-					name: 'Acolyte of Fire',
+					name: 'Адепт вогню',
 					keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic],
 					value: 1
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-2-1-2',
-						name: 'Return to Formlessness',
-						description: 'With the merest touch, you cause an object to turn into slag or ash.',
+						name: 'Повернення до безформності',
+						description: 'Найменший дотик перетворює обʼєкт на шлак або попіл.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One mundane object',
+						target: 'Один звичайний обʼєкт',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You heat the target and cause it to melt or combust, destroying it. If the object is larger than 1 square, then only the square of the object you touch is destroyed.')
+							FactoryLogic.createAbilitySectionText('Ви нагріваєте ціль і змушуєте її танути або горіти, знищуючи її. Якщо обʼєкт більший за 1 клітинку, то знищується лише клітинка обʼєкта, яку ви торкаєтесь.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'elementalist-sub-2-1-3',
-						name: 'Explosive Assistance',
-						description: 'You add a little magic to an ally’s aggression at just the right time.',
-						type: FactoryLogic.type.createTrigger('The target force moves a creature or object.'),
+						name: 'Вибухова підтримка',
+						description: 'Ви додаєте трішки магії до агресії союзника у потрібний момент.',
+						type: FactoryLogic.type.createTrigger('Цільова сила переміщує істоту чи обʼєкт.'),
 						keywords: [AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'На себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The forced movement distance gains a bonus equal to your Reason score.'),
+							FactoryLogic.createAbilitySectionText('Відстань примусового переміщення отримує бонус, рівний вашому показнику Розуму.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The forced movement distance gains a bonus equal to twice your Reason score instead.'
+								effect: 'Натомість відстань примусового переміщення отримує бонус, рівний подвоєному вашому показнику Розуму.'
 							})
 						]
 					})
@@ -56,11 +56,11 @@ export const fire: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-2-1',
-					name: 'Disciple of Fire',
+					name: 'Учень вогню',
 					description: `
-Your connection to fire allows you to protect yourself from it, even as you rip away the protections of others. You have fire immunity equal to 5 plus your level. Additionally, fire damage you deal ignores a target’s fire immunity.
+Ваш зв'язок з вогнем дозволяє захищати себе від нього, одночасно зриваючи захист інших. Ви маєте імунітет до вогню, рівний 5 плюс ваш рівень. Крім того, вогняна шкода, яку ви наносите, ігнорує імунітет цілі до вогню.
 
-At the start of a combat encounter, you gain a number of surges equal to your Victories. Whenever you spend a surge to deal extra damage, you can make that damage fire damage`
+На початку бойової сутички ви отримуєте кількість сплесків, рівну вашим Перемогам. Кожного разу, коли ви витрачаєте сплеск, щоб завдати додаткової шкоди, ви можете зробити цю шкоду вогняною.`
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'elementalist-sub-2-2-2',
@@ -80,8 +80,8 @@ At the start of a combat encounter, you gain a number of surges equal to your Vi
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-3-1',
-					name: 'A Conversation with Fire',
-					description: 'When you spend 1 uninterrupted minute in front of a fire, you can speak the name of another creature. If that creature is willing to speak to you, their image appears in the fire, and they can see you before them in a shimmering ball of light. The two of you can speak to each other through these images as if you were together in person. As a maneuver, you or the creature can end the conversation.'
+					name: 'Розмова з вогнем',
+					description: 'Коли ви проводите 1 безперервну хвилину біля вогню, ви можете вимовити імʼя іншої істоти. Якщо та істота погоджується говорити з вами, її образ зʼявляється у вогні, і вона бачить вас перед собою у сяйній кулі світла. Ви обоє можете розмовляти через ці образи, ніби ви перебуваєте поруч. Як маневр, ви або та істота можете завершити розмову.'
 				})
 			]
 		},
@@ -90,11 +90,11 @@ At the start of a combat encounter, you gain a number of surges equal to your Vi
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-4-1',
-					name: 'Mantle of Essence: Burning Grounds',
+					name: 'Мантія Есенції: Палаючі землі',
 					description: `
-While you have 3 or more essence and are not dying, you exude an aura of magic whose distance is equal to your Reason score. You can activate and deactivate the aura at will (no action required).
+Поки у вас 3 або більше есенції та ви не вмираєте, ви випромінюєте ауру магії на відстань, рівну вашому показнику Розуму. Ви можете вмикати й вимикати ауру за бажанням (без витрати дії).
 
-At the end of each of your turns, each enemy in the area takes fire damage equal to your Reason score.`
+Наприкінці кожного вашого ходу кожен ворог у зоні отримує вогняну шкоду, рівну вашому показнику Розуму.`
 				})
 			]
 		},
@@ -103,11 +103,11 @@ At the end of each of your turns, each enemy in the area takes fire damage equal
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-5-1',
-					name: 'Smoldering Step',
+					name: 'Тліючий крок',
 					description: `
-You can use 1 square of movement to walk into an area of fire your size or larger and teleport to any other area of fire your size or larger within 10 squares of the first area.
+Ви можете витратити 1 клітинку руху, щоб увійти в область вогню вашого розміру або більшої й телепортуватися в будь-яку іншу область вогню вашого розміру або більшої в межах 10 клітинок від першої області.
 
-Additionally, whenever you use a fire ability or are targeted by an ability that deals fire damage, each enemy adjacent to you takes fire damage equal to your Reason score.`
+Крім того, щоразу, коли ви використовуєте вогняну здібність або стаєте ціллю здібності, яка завдає вогняної шкоди, кожен ворог, що стоїть поруч з вами, отримує вогняну шкоду, рівну вашому показнику Розуму.`
 				})
 			]
 		},
@@ -120,11 +120,11 @@ Additionally, whenever you use a fire ability or are targeted by an ability that
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-6-1',
-					name: 'Mantle of Quintessence',
+					name: 'Мантія Квінтесенції',
 					description: `
-Your Mantle of Essence feature no longer requires essence.
+Властивість вашої Мантії Есенції більше не вимагає есенції.
 
-Additionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.`
+Крім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії мають початкове терпіння збільшене на 1 (до максимуму 5) під час будь-яких переговорів. Поки в зоні, ви та будь-який союзник отримуєте перевагу в перевірках, що використовують навичку «Управління тваринами». Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а перевірки з «Управління тваринами» мають подвійну перевагу.`
 				})
 			]
 		},
@@ -133,11 +133,11 @@ Additionally, your Mantle of Essence now radiates magic that creates a calming a
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-7-1',
-					name: 'The Flame Primordial',
+					name: 'Первісне полумʼя',
 					description: `
-You produce a fire that entrances the fates, distracting them from aiding your foes. Whenever you deal fire damage to a creature or object, they take an extra 1d6 fire damage. If you deal fire damage to a mundane object, you can use a free triggered action to target it with your Return to Formlessness ability instead.
+Ви створюєте вогонь, що зачаровує долі, відволікаючи їх від допомоги вашим ворогам. Кожного разу, коли ви завдаєте вогняної шкоди істоті або обʼєкту, вони отримують додаткову 1d6 вогняної шкоди. Якщо ви завдаєте вогняної шкоди звичайному обʼєкту, ви можете використати безкоштовну тригерну дію, щоб спрямувати на нього вашу здібність «Повернення до безформності».
 
-Additionally, any enemy who starts their turn adjacent to you has fire weakness equal to your Reason score until the start of their next turn. This increases to twice your Reason score if the enemy is made of or is wearing mostly metal.`
+Крім того, будь-який ворог, який починає свій хід поруч із вами, має слабкість до вогню, рівну вашому показнику Розуму, до початку свого наступного ходу. Це збільшується до двох разів вашого показника Розуму, якщо ворог зроблений з або носить переважно метал.`
 				})
 			]
 		},
@@ -146,13 +146,13 @@ Additionally, any enemy who starts their turn adjacent to you has fire weakness 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'elementalist-sub-2-8-1a',
-					name: 'One: Master of Fire',
+					name: 'Один: Майстер вогню',
 					description: `
-You become the embodiment of the element of your chosen specialization. Whenever you use magic, elemental motes flit around you and your skin changes to reflect your element, taking on an earthen or stony appearance for earth, appearing like flickering flame for fire, gaining a leaf pattern for green, and becoming a starry expanse for void.
+Ви стаєте втіленням елемента вашої обраної спеціалізації. Коли ви використовуєте магію, навколо вас літають елементальні іскорки, і ваша шкіра змінює вигляд відповідно до елементу: земля — ґрунтова або камʼяниста текстура, вогонь — ніби мерехтливе полумʼя, зелень — листковий візерунок, пустота — зоряне небо.
 
-The damage bonus of your Acolyte of Fire feature increases to +5 and applies to all your magic abilities.
+Бонус до шкоди вашої здібності «Адепт вогню» збільшується до +5 і застосовується до всіх ваших магічних здібностей.
 
-Additionally, your Return to Formlessness ability can be used on supernatural objects (but not on artifacts). When you melt a treasure, you gain breath equal to its echelon.`
+Крім того, вашу здібність «Повернення до безформності» можна використовувати на надприродних обʼєктах (але не на артефактах). Коли ви плавите скарб, ви отримуєте подих, рівний його ешелону.`
 				})
 			]
 		}
