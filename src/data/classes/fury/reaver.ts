@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const reaver: SubClass = {
 	id: 'fury-sub-2',
-	name: 'Reaver',
-	description: 'You channel your rage into instinct and cunning, challenging the false order of civilization.',
+	name: 'Руйнівник',
+	description: 'Ви спрямовуєте свою лють в інстинкти й хитрість, кидаючи виклик фальшивому порядку цивілізації.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -21,28 +21,28 @@ export const reaver: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-1-3',
-					name: 'Primordial Cunning',
+					name: 'Первісна Хитрість',
 					description: `
-You are never surprised. Additionally, whenever you would push a target with forced movement, you can slide them instead.
+Ви ніколи не буваєте здивовані. Додатково, коли ви мали б відштовхнути ціль примусовим переміщенням, ви можете замість цього зрушити її.
 
-As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+Зі зростанням вашої люті ви отримуєте бонуси, зазначені в таблиці «Зростаюча лють Руйнівника». Бонуси накопичуються, якщо тільки покращення не замінює менш потужне.
 
-* **Ferocity 2**: Whenever you use the Knockback maneuver, the forced movement distance gains a bonus equal to your Agility score.
-* **Ferocity 4**: The first time you slide a creature on a turn, you gain 1 surge.
-* **Ferocity 6**: You gain an edge on Agility tests and the Knockback maneuver.`
+* **Лють 2**: Коли ви використовуєте маневр «Відштовхування», відстань примусового переміщення отримує бонус, рівний вашому показнику Ловкості.
+* **Лють 4**: Першого разу за хід, коли ви зрушуєте істоту, ви отримуєте 1 сплеск.
+* **Лють 6**: Ви отримуєте подвійну перевагу на перевірки Ловкості та на маневр «Відштовхування`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'fury-sub-2-1-4',
-						name: 'Unearthly Reflexes',
-						description: 'You are as elusive as a hummingbird.',
-						type: FactoryLogic.type.createTrigger('You take damage.'),
+						name: 'Надзвичайні Рефлекси',
+						description: 'Ви невловимі, мов колібрі.',
+						type: FactoryLogic.type.createTrigger('Коли ви отримуєте шкоду.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You take half the damage from the triggering effect and can shift up to a number of squares equal to your Agility score.'),
+							FactoryLogic.createAbilitySectionText('Ви отримуєте половину шкоди від ефекту-тригера і можете зрушитися на число клітинок, рівне вашому показнику Ловкості.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'If the damage has any potency effects associated with it, the potency is reduced by 1 for you.'
+								effect: 'Якщо завдана шкода має повʼязані з нею ефекти потужності, потужність для вас зменшується на 1.'
 							})
 						]
 					})
@@ -54,12 +54,12 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.createMultiple({
 					id: 'fury-sub-2-2-1',
-					name: 'Inescapable Wrath',
+					name: 'Невблаганний Гнів',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'fury-sub-2-2-1a',
-							name: 'Inescapable Wrath',
-							description: 'You ignore difficult terrain.'
+							name: 'Невблаганний Гнів',
+							description: 'Ви ігноруєте важкопрохідну місцевість.'
 						}),
 						FactoryLogic.feature.createBonus({
 							id: 'fury-sub-2-2-1b',
@@ -70,14 +70,14 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-2-2-2',
-					name: '2nd-Level Aspect Ability',
+					name: 'Аспект 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-2-2a',
-									name: 'Death ... Deeaaath!',
-									description: 'Your unbridled rage strikes terror in their hearts.',
+									name: 'Смерть... Сме-е-е-рть!',
+									description: 'Ваша невтримна лють вселяє жах у їхні серця.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -86,9 +86,9 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '3 + M damage; P < [слабкий], dazed and frightened (save ends)',
-											tier2: '5 + M damage; P < [середній], dazed and frightened (save ends)',
-											tier3: '8 + M damage; P < [сильний], dazed and frightened (save ends)'
+											tier1: '3 + С шкоди; P < [слабкий], приголомшений і зляканий (рят. кидок закінчує)',
+											tier2: '5 + С шкоди; P < [середній], приголомшений і зляканий (рят. кидок закінчує)',
+											tier3: '8 + С шкоди; P < [сильний], приголомшений і зляканий (рят. кидок закінчує)'
 										}))
 									]
 								})
@@ -99,21 +99,21 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-2-2b',
-									name: 'Phalanx-Breaker',
-									description: 'Organizing your forces like feckless creatures of Law. Pitiful.',
+									name: 'Руйнівник Фаланги',
+									description: 'Організовуючи свої сили, мов безпорадні створіння Закону — жалюгідно.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self; see below',
+									target: 'Себе (див. нижче)',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You shift up to your speed and make one power roll that targets up to three enemies you move adjacent to during this shift.'),
+										FactoryLogic.createAbilitySectionText('Ви зрушуєте на відстань, рівну вашій швидкості, і робите один кидок сили, що спрямовується на до трьох ворогів, до яких ви підходите під час цього зрушення.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '2 damage; A < [слабкий], dazed (save ends)',
-												tier2: '4 damage; A < [середній], dazed (save ends)',
-												tier3: '6 damage; A < [сильний], dazed (save ends)'
+												tier1: '2 шкоди; Л < [слабкий], приголомшений (рят. кидок закінчує)',
+												tier2: '4 шкоди; Л < [середній], приголомшений (рят. кидок закінчує)',
+												tier3: '6 шкоди; Л < [сильний], приголомшений (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -130,8 +130,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-3-1',
-					name: 'See Through Your Tricks',
-					description: 'You have a double edge on tests made to search for hidden creatures, discern hidden motives, or detect lies. You also have a double edge on tests made to gamble!'
+					name: 'Розпізнавання хитрощів',
+					description: 'Ви маєте подвійну перевагу на перевірки для пошуку прихованих істот, розпізнавання прихованих мотивів або виявлення брехні. Також ви маєте подвійну перевагу на перевірки, повʼязані з азартними іграми!'
 				})
 			]
 		},
@@ -140,8 +140,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-4-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**8 Ferocity:** The first time you slide a creature on a turn, you gain 2 surges.'
+					name: 'Покращення зростаючої люті',
+					description: '**8 Люті:** Першого разу за хід, коли ви зрушуєте істоту, ви отримуєте 2 сплески.'
 				})
 			]
 		},
@@ -150,8 +150,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-5-1',
-					name: 'Unfettered',
-					description: 'At the start of your turn, you can end any restrained condition on you. Additionally, you have a double edge on tests made to escape being confined or imprisoned.'
+					name: 'Без кайданів',
+					description: 'На початку вашого ходу ви можете зняти будь-який стан Сковування з себе. Додатково ви маєте подвійну перевагу на перевірки, щоб вирватися з увʼязнення або полону.'
 				})
 			]
 		},
@@ -160,21 +160,21 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-2-6-1',
-					name: '6th-Level Aspect Ability',
+					name: 'Аспект 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-6-1a',
-									name: 'Death Strike',
-									description: 'Once you taste your foe’s blood, you become more efficient and turn every killing blow into an opportunity.',
-									type: FactoryLogic.type.createTrigger('You reduce a creature to 0 Stamina with a strike.', { free: true }),
+									name: 'Удар Смерті',
+									description: 'Як тільки ви відчуєте кров ворога, ви стаєте ефективнішими і перетворюєте кожен смертельний удар на можливість.',
+									type: FactoryLogic.type.createTrigger('Коли ви збиваєте істоту до 0 Витривалості ударом.', { free: true }),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You target a creature adjacent to you with the same strike, using the same power roll as the triggering strike.')
+										FactoryLogic.createAbilitySectionText('Ви націлюєтеся на істоту, суміжну з вами, тим самим ударом, використовуючи той самий кидок сили, що й тригерний удар.')
 									]
 								})
 							}),
@@ -184,8 +184,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-6-1b',
-									name: 'Seek and Destroy',
-									description: 'You break through the enemy lines to make an example.',
+									name: 'Шукай і знищуй',
+									description: 'Ви прориваєте ворожі лінії, щоб подати приклад.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -195,12 +195,12 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '4 + M damage; P < [слабкий] frightened (save ends)',
-												tier2: '6 + M damage; P < [середній] frightened (save ends)',
-												tier3: '10 + M damage; P < [сильний] frightened (save ends)'
+												tier1: '4 + С шкоди; P < [слабкий], зляканий (рят. кидок закінчує)',
+												tier2: '6 + С шкоди; P < [середній], зляканий (рят. кидок закінчує)',
+												tier3: '10 + С шкоди; P < [сильний], зляканий (рят. кидок закінчує)'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < [середній], they are frightened of you (save ends).')
+										FactoryLogic.createAbilitySectionText('Якщо ціль, що не є лідером або одиночним створінням, захекана цим ударом, її Витривалість знижується до 0, і ви обираєте ворога в межах 5 клітинок від вас. Якщо той ворог має P < [середній], він наляканий вами (рят. кидок закінчує).')
 									]
 								})
 							}),
@@ -215,8 +215,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-7-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**10 Ferocity:** You have a double edge on Agility tests and the Knockback maneuver.'
+					name: 'Покращення зростаючої люті',
+					description: '**10 Люті:** Ви маєте подвійну перевагу на перевірки Ловкості та на маневр «Відштовхування». '
 				})
 			]
 		},
@@ -225,8 +225,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-8-1',
-					name: 'A Step Ahead',
-					description: 'You move with legendary grace. Whenever you make an Agility test, you can roll three dice and choose which two to use. Additionally, whenever you use the Disengage move action, the distance you can shift gains a bonus equal to your Agility score.'
+					name: 'На крок попереду',
+					description: 'Ви рухаєтеся з легендарною грацією. Коли ви робите перевірку Ловкості, ви можете кинути три куби й обрати, які два використати. Додатково, коли ви використовуєте дію Відступу, відстань вашого зміщення отримує бонус, рівний вашому показнику Ловкості.'
 				})
 			]
 		},
@@ -235,14 +235,14 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-2-9-1',
-					name: '9th-Level Aspect Ability',
+					name: 'Аспект 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-9-1a',
-									name: 'Primordial Bane',
-									description: 'You attune the target to be weaker to a specific element.',
+									name: 'Первісна Уразливість',
+									description: 'Ви налаштовуєте ціль так, щоб вона стала вразливішою до певного елементу.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -252,12 +252,12 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '11 + M damage',
-												tier2: '16 + M damage',
-												tier3: '21 + M damage'
+												tier1: '11 + С шкоди',
+												tier2: '16 + С шкоди',
+												tier3: '21 + С шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The target loses any damage immunity to the chosen type and gains weakness 10 to the chosen type (save ends).')
+										FactoryLogic.createAbilitySectionText('Виберіть кислотний, холодний, скверни, вогняний, блискавичний, отруйний або звуковий тип шкоди. Ціль втрачає будь-який імунітет до обраного типу і набуває уразливість 10 до обраного типу (рят. кидок закінчує).')
 									]
 								})
 							}),
@@ -267,8 +267,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-2-9-1b',
-									name: 'Shower of Blood',
-									description: 'You shock your foes with the brutality of your strike, resetting the balance of combat.',
+									name: 'Злива Крові',
+									description: 'Ви шокуєте ворогів жорстокістю свого удару, змінюючи баланс бою.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -278,12 +278,12 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '12 + M damage',
-												tier2: '18 + M damage',
-												tier3: '24 + M damage'
+												tier1: '12 + С шкоди',
+												tier2: '18 + С шкоди',
+												tier3: '24 + С шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Each enemy within 5 squares of you is distracted until the end of the round. While a creature is distracted this way, they can’t take triggered actions or free triggered actions, ability rolls made against them gain an edge, and their characteristic scores are considered 1 lower for the purpose of resisting potencies.')
+										FactoryLogic.createAbilitySectionText('Кожен ворог у межах 5 клітинок від вас відволікається до кінця раунду. Поки істота відволікана таким чином, вона не може виконувати тригерні дії або безкоштовні тригерні дії, кидки здібностей проти неї отримують перевагу, а її показники характеристик вважаються на 1 меншими для опору потужностям.')
 									]
 								})
 							}),
@@ -298,8 +298,8 @@ As your ferocity grows, you gain benefits as noted on the Reaver Growing Ferocit
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-2-10-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**12 Ferocity:** Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, whenever you make a power roll that imposes forced movement on a target, the forced movement distance gains a bonus equal to your Agility score.'
+					name: 'Покращення зростаючої люті',
+					description: '**12 Люті:** Кожного разу, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості. Додатково, коли ви робите кидок сили, що накладає примусове переміщення на ціль, відстань примусового переміщення отримує бонус, рівний вашому показнику Ловкості.'
 				})
 			]
 		}

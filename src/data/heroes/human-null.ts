@@ -2810,7 +2810,7 @@ export const humanNull = {
 						qualifier: ''
 					}
 				],
-				target: 'Self or one creature',
+				target: 'На себе або одно істоту',
 				cost: 11,
 				repeatable: false,
 				minLevel: 1,

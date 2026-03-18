@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const chronokinetic: SubClass = {
 	id: 'null-sub-1',
-	name: 'Chronokinetic',
-	description: 'Your training unmoors you from temporal reality, allowing you to use the flow of time as another dimension that all things move through.',
+	name: 'Хронокінетик',
+	description: 'Ваше навчання відриває вас від часової реальності, дозволяючи використовувати плин часу як ще один вимір, через який рухаються всі речі.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,27 +18,27 @@ export const chronokinetic: SubClass = {
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-1-1-2',
-					name: 'Chronokinetic Mastery',
+					name: 'Майстерність Хронокінетики',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'null-sub-1-1-2a',
-							name: 'Chronokinetic Mastery',
+							name: 'Майстерність Хронокінетики',
 							description: `
-As your discipline grows, your psionic mastery of your body intensifies, granting benefits from the Chronokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+Зі зростанням вашої дисципліни ваша психічна майстерність над тілом посилюється, надаючи переваги згідно з таблицею «Майстерність Хронокінетики». Переваги накопичуються, за винятком випадків, коли покращена перевага замінює менш значну.
 
-| Discipline     | Benefit                                                                                                                                                                                    |
-|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2              | Whenever you use the Knockback maneuver, you can use the Disengage move action as a free triggered action either before or after the maneuver.                                             |
-| 4              | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 1 surge.                                                                                |
-| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                      |
-| 8 (4th level)  | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 surges.                                                                               |
-| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                |
-| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|`
+| Дисципліна      | Перевага                                                                                                                                                                                                     |
+|:----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2               | Коли ви використовуєте маневр «Відштовхнення» (Knockback), ви можете виконати рухову дію «Відступ» (Disengage) як вільну тригерну дію до або після маневру.                                                  |
+| 4               | Першого разу в ході, коли ви добровільно переміститеся на 1 або більше клітин як частина здібності, ви отримуєте 1 сплеск.                                                                   				 |
+| 6               | Ви отримуєте перевагу (Edge) на маневри «Схоплення» (Grab) та «Відштовхнення» (Knockback).                                                                                               					 |
+| 8 (4-й рівень)  | Першого разу в ході, коли ви добровільно переміститеся на 1 або більше клітин як частина здібності, ви отримуєте 2 сплески.                                                                   				 |
+| 10 (7-й рівень) | У вас подвійна перевага (double edge) на маневри «Схоплення» та «Відштовхнення».                                                                                                                             |
+| 12 (10-й рівень)| Коли ви примусово переміщуєте ціль, відстань примусового руху отримує бонус, рівний вашому показнику Інтуїції. Додатково, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості.|`
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'null-sub-1-1-2b',
-							name: 'Chronokinetic Mastery',
-							description: 'Whenever you use your Inertial Shield ability, you can then use the Disengage move action as a free triggered action.',
+							name: 'Майстерність Хронокінетики',
+							description: 'Коли ви використовуєте здібність «Інерційний Щит» (Inertial Shield), ви можете потім виконати рухову дію «Відступ» як вільну тригерну дію.',
 							tag: 'inertial-shield'
 						})
 					]
@@ -50,26 +50,26 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-1-2-1',
-					name: 'Rapid Processing',
-					description: 'As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any respite, you can take an additional respite activity.'
+					name: 'Швидка Обробка',
+					description: 'Як маневр, ви можете прочитати цілу книгу або опрацювати подібний обсяг інформації. Додатково під час будь-якого перепочинку ви можете виконати ще одну дію перепочинку.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-1-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Традиційна здібність 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-2-2a',
-									name: 'Blur',
-									description: 'You release stored time, allowing you to act twice.',
+									name: 'Розмиття',
+									description: 'Ви звільняєте накопичений час, що дозволяє вам діяти двічі.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You can use a signature or heroic ability. You gain an edge on that ability’s power rolls.')
+										FactoryLogic.createAbilitySectionText('Ви можете використати сигнатурну або героїчну здібність. Ви отримуєте перевагу на кидки сили цієї здібності.')
 									]
 								})
 							}),
@@ -79,8 +79,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-2-2b',
-									name: 'Force Redirected',
-									description: 'The force of your strike moves your target in a surprising direction.',
+									name: 'Перенаправлення сили',
+									description: 'Сила вашого удару переміщує ціль у несподіваному напрямку.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee(3)],
@@ -89,9 +89,9 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '8 + A damage; slide 1',
-											tier2: '12 + A damage; slide 3',
-											tier3: '16 + A damage; slide 5'
+											tier1: '8 + Л шкоди; зсунути 1',
+											tier2: '12 + Л шкоди; зсунути 3',
+											tier3: '16 + Л шкоди; зсунути 5'
 										}))
 									]
 								})
@@ -115,8 +115,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-1-5-1',
-					name: 'Instant Action',
-					description: 'If you’re not surprised at the start of your first turn in combat, you gain an edge on ability rolls and gain 2 surges. If you are surprised, you can spend 3 discipline to no longer be surprised and gain the benefits of this feature.'
+					name: 'Миттєва Дія',
+					description: 'Якщо ви не здивовані на початку вашого першого ходу в бою, ви отримуєте перевагу на кидки здібностей і 2 сплески. Якщо ви здивовані, ви можете витратити 3 дисципліни, щоб більше не бути здивованим і отримати переваги цієї особливості.'
 				})
 			]
 		},
@@ -125,21 +125,21 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-1-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Традиційна здібність 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-6-1a',
-									name: 'Interphase',
-									description: 'You slip into a faster timestream to act more quickly.',
+									name: 'Інтерфаза',
+									description: 'Ви переходите у швидший часовий потік, щоб діяти швидше.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You can use up to three signature abilities, each of which gains an edge.')
+										FactoryLogic.createAbilitySectionText('Ви можете використати до трьох сигнатурних здібностей, кожна з яких отримує перевагу.')
 									]
 								})
 							}),
@@ -149,8 +149,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-6-1b',
-									name: 'Phase Step',
-									description: 'You weaken your connection to this manifold, allowing you to move through and damage enemies.',
+									name: 'Фазовий Крок',
+									description: 'Ви послаблюєте свій звʼязок із цим виміром, що дозволяє вам проходити крізь ворогів і завдавати їм шкоди.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSpecial('Self; see below')],
@@ -159,11 +159,11 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '6 damage; M < [слабкий]. dazed',
-											tier2: '8 damage; M < [середній]. dazed',
-											tier3: '12 damage; M < [сильний]. dazed'
+											tier1: '6 шкоди; С < [слабкий]. приголомшений',
+											tier2: '8 шкоди; С < [середній]. приголомшений',
+											tier3: '12 шкоди; С < [сильний]. приголомшений'
 										})),
-										FactoryLogic.createAbilitySectionText('You can shift up to your speed, and squares occupied by enemies or objects are not difficult terrain for this shift. You make one power roll that targets each enemy you moved through during this shift')
+										FactoryLogic.createAbilitySectionText('Ви можете зсунутись до своєї швидкості, і клітини, зайняті ворогами або об’єктами, не вважаються важкою місцевістю для цього зсуву. Ви робите один кидок сили, який націлений на кожного ворога, через якого ви пройшли під час цього зсуву.')
 									]
 								})
 							}),
@@ -182,8 +182,8 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-1-8-1',
-					name: 'Shared Momentum',
-					description: 'When you take the Disengage move action, one ally in the area of your Null Field ability can also take the Disengage move action as a free triggered action, using your distance for that move action.'
+					name: 'Спільний Імпульс',
+					description: 'Коли ви виконуєте рухову дію «Відступ», один союзник у зоні дії вашої здібності «Нульове Поле» також може виконати рухову дію «Відступ» як вільну тригерну дію, використовуючи вашу дистанцію для цієї рухової дії.'
 				})
 			]
 		},
@@ -192,15 +192,15 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-1-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Традиційна здібність 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-9-1a',
-									name: 'Arrestor Cycle',
-									description: 'You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.',
-									type: FactoryLogic.type.createTrigger('The triggering creature starts their turn.', { free: true }),
+									name: 'Цикл Затримання',
+									description: 'Ви увʼязнюєте ворога у петлі часу, де він знову й знову переживає останні кілька секунд.',
+									type: FactoryLogic.type.createTrigger('Сутність, що спричинила тригер, починає свій хід.', { free: true }),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Одна істота',
@@ -208,11 +208,11 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: 'I < [слабкий]. the target loses their turn',
-											tier2: 'I < [середній]. the target loses their turn',
-											tier3: 'I < [сильний]. the target loses their turn'
+											tier1: 'І < [слабкий]. ціль втрачає свій хід',
+											tier2: 'І < [середній]. ціль втрачає свій хід',
+											tier3: 'І < [сильний]. ціль втрачає свій хід'
 										})),
-										FactoryLogic.createAbilitySectionText('If the target loses their turn, the round continues as if they had acted. A target who doesn’t lose their turn takes psychic damage equal to twice your Intuition score for each main action they take until the end of their next turn.')
+										FactoryLogic.createAbilitySectionText('Якщо ціль втрачає свій хід, раунд продовжується так, ніби вона діяла. Ціль, яка не втрачає хід, отримує психічну шкоду, рівну двом вашим показникам Інтуїції за кожну основну дію, яку вона виконує, до кінця свого наступного ходу.')
 									]
 								})
 							}),
@@ -222,15 +222,15 @@ As your discipline grows, your psionic mastery of your body intensifies, grantin
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-1-9-1b',
-									name: 'Time Loop',
-									description: 'You show shadows what true speed is.',
-									type: FactoryLogic.type.createTrigger('Another creature on the encounter map ends their turn.', { free: true }),
+									name: 'Петля Часу',
+									description: 'Ви показуєте тіням, що таке справжня швидкість.',
+									type: FactoryLogic.type.createTrigger('Інша істота на карті зустрічі завершує свій хід.', { free: true }),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Self',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You take a bonus turn immediately after the triggering creature. This ability can be used only once per combat round.')
+										FactoryLogic.createAbilitySectionText('Ви отримуєте бонусний хід негайно після створіння, що викликало тригер. Ця здібність може бути використана лише один раз за бойовий раунд.')
 									]
 								})
 							}),

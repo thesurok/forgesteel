@@ -12,11 +12,11 @@ import { stormwight } from '@/data/classes/fury/stormwight';
 
 export const fury: HeroClass = {
 	id: 'class-fury',
-	name: 'Fury',
+	name: 'Фурія',
 	description: `
-You do not temper the heat of battle within you. You unleash it! Your experience in the wild taught you the secrets of predators, and now, like the raptor, the panther, the wolf, you channel unfettered anger into martial prowess. Primordial Chaos is your ally. Let others use finesse to clean up the wreckage left in your wake.
+Ви не вгамовуєте жар битви всередині себе. Ви звільняєте його! Досвід життя в дикій природі відкрив вам секрети хижаків, і тепер, як яструб, пантера чи вовк, ви спрямовуєте невтримну лють у бойову майстерність. Первісний Хаос — ваш союзник. Нехай інші використовують тонкість, щоб прибирати руїни, що лишаються по вашому сліду.
 
-As a fury, you devastate foes with overwhelming might, hurl yourself and enemies around the battlefield, and grow stronger as your ferocity increases. Nature has no concept of fairness — and neither do you..`,
+Як фурія, ви нищите ворогів приголомшливою міццю, кидаєте себе й супротивників по полю бою та стаєте сильнішими, коли зростає ваша лють. Природа не знає поняття справедливості — і ви також.`,
 	type: 'standard',
 	subclassName: 'Primordial Aspect',
 	subclassCount: 1,
@@ -41,21 +41,21 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'fury-resource',
-					name: 'Ferocity',
+					name: 'Лють',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '1d3'
 						},
 						{
 							tag: 'take-damage',
-							trigger: 'The first time each combat round that you take damage',
+							trigger: 'Першого разу в кожному раунді бою, коли ви отримуєте шкоду',
 							value: '1'
 						},
 						{
 							tag: 'winded',
-							trigger: 'The first time you become winded or are dying in an encounter',
+							trigger: 'Першого разу, коли ви стаєте захеканим або вмираючим у зустрічі',
 							value: '1d3'
 						}
 					]
@@ -71,8 +71,8 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-1-4',
-					name: 'Mighty Leaps',
-					description: 'You can’t obtain lower than a tier 2 outcome on any Might test made to jump.'
+					name: 'Потужні стрибки',
+					description: 'Під час перевірки Сили для стрибка ви не можете отримати результат нижчий за рівень 2.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'fury-1-5',
@@ -121,9 +121,9 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'fury-4-2',
-					name: 'Damaging Ferocity',
+					name: 'Руйнівна лють',
 					tag: 'take-damage 2',
-					trigger: 'The first time each combat round that you take damage',
+					trigger: 'Першого разу в кожному раунді бою, коли ви отримуєте шкоду',
 					value: '2',
 					replacesTags: ['take-damage']
 				}),
@@ -132,13 +132,13 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-4-4',
-					name: 'Primordial Attunement',
-					description: 'As your ferocity manifests elemental forces created by the Primordial Chaos, you are aware of how elemental power interacts with those around you. You automatically sense whether any creature within 10 squares has damage immunity or damage weakness to acid, cold, corruption, fire, lightning, poison, or sonic damage, learning whether they have immunity or weakness, the value of that immunity or weakness, and the specific damage type. Additionally, you automatically sense any source of one of those damage types within 10 squares, such as a fire or a source of elemental power.'
+					name: 'Первісне налаштування',
+					description: 'Коли ваша лють проявляє стихійні сили, створені Первісним Хаосом, ви відчуваєте, як елементальна сила взаємодіє з оточенням. Ви автоматично визначаєте, чи має будь-яка істота в межах 10 клітин імунітет або слабкість до кислотного, холодного, корупційного, вогняного, блискавичного, отруйного або звукового типу ушкоджень, дізнаючись про наявність імунітету чи слабкості, значення цієї стійкості або вразливості та конкретний тип ушкодження. Додатково ви автоматично відчуваєте джерело одного з цих типів ушкоджень у межах 10 клітин, наприклад вогонь або джерело стихійної сили.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-4-5',
-					name: 'Primordial Strike',
-					description: 'You can manifest your ferocity directly as an elemental force created by the Primordial Chaos. As part of any strike, you can spend 1 ferocity to gain 1 surge that must be used for that strike. The extra damage dealt by the surge can be acid, cold, corruption, fire, lightning, poison, or sonic (your choice).'
+					name: 'Первісний удар',
+					description: 'Ви можете виявити свою лють безпосередньо як стихійну силу, створену Первісним Хаосом. Як частина будь-якого удару ви можете витратити 1 одиницю люті, щоб отримати 1 сплеск, який має бути використаний саме для цього удару. Додаткова шкода від сплеску може бути кислотною, холодною, корупційною, вогняною, блискавичною, отруйною або звуковою (на ваш вибір).'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-4-6'
@@ -159,19 +159,19 @@ As a fury, you devastate foes with overwhelming might, hurl yourself and enemies
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-6-1',
-					name: 'Marauder of the Primordial Chaos',
+					name: 'Мародер Первісного Хаосу',
 					description: `
-As your connection to the power of the Primordial Chaos grows ever stronger, you automatically sense any elemental creatures or magic sources of elemental power, such as a lava pool or a lake overlapping with Quintessence, within 1 mile of you.
+Коли ваш зв'язок із силою Первісного Хаосу стає сильнішим, ви автоматично відчуваєте будь-яких стихійних істот або магічні джерела стихійної сили, такі як потік лави або озеро, що накладається на Квінтесенцію, в межах 1 милі від вас.
 
-Additionally, you can speak with elemental creatures, and when you are in a negotiation with an elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown provided by the Nature’s Knight aspect feature (see 3rd-Level Features). When any elemental first becomes aware of you in combat, if they have P < [середній], they are frightened of you (save ends).`
+Крім того, ви можете спілкуватися зі стихійними істотами, і під час переговорів зі стихією ваше Визнання (Renown) враховується як на 1 більше, ніж зазвичай. Це сумується зі збільшенням ефективного Визнання, яке надає аспект Рицаря природи (див. здібності 3-го рівня). Коли будь-яка стихійна істота вперше усвідомлює вашу присутність у бою, якщо в неї P < [середній], вона стає налякана вами (рят. кидок закінчує).`
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-6-2',
-					name: 'Primordial Portal',
+					name: 'Первісний портал',
 					description: `
-As a main action, you can touch a magic source of elemental power and use it to create a portal to Quintessence. You can then use a main action to teleport yourself and any willing creatures within 10 squares of you through the portal and onto a safe island in Quintessence, or to teleport back again. You can maintain a number of portals equal to your Might score, each leading to the same safe island in Quintessence. If a portal in your network is destroyed, it is no longer part of the network. You can remove a portal from your network no matter your distance from it, including across different worlds (no action required).
+Як основну дію ви можете торкнутися магічного джерела стихійної сили і використати його для створення порталу до Квінтесенції. Потім ви можете використати основну дію, щоб телепортувати себе та будь-яких охочих істот у межах 10 клітин через портал на безпечний острів у Квінтесенції або повернутися назад. Ви можете підтримувати кількість порталів, рівну вашому показнику Сили (Might), кожен з яких веде на той самий безпечний острів у Квінтесенції. Якщо портал у вашій мережі буде знищено, він більше не належить мережі. Ви можете видалити портал із мережі незалежно від вашої відстані від нього, включно з різними світами (додаткових дій не потрібно).
 
-(Exploring Quintessence is possible from your island, but continued safety is not guaranteed.)`
+(Дослідження Квінтесенції можливе з вашого острова, але постійна безпека не гарантована.)`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'fury-6-3',
@@ -209,17 +209,17 @@ As a main action, you can touch a magic source of elemental power and use it to 
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-7-2',
-					name: 'Elemental Form',
+					name: 'Форма Стихії',
 					description: `
-You exhibit ever-stronger signs of how the force of the Primordial Chaos flows within you. Whenever you show strong emotion or increase your ferocity, elemental motes attuned to your mood flit around you, and your skin changes in appearance to reflect an element of your choice.
+Ви дедалі сильніше виявляєте ознаки того, як сила Первісного Хаосу тече всередині вас. Коли ви відчуваєте сильні емоції або ваша лють зростає, елементальні частинки, налаштовані на ваш настрій, кружляють навколо вас, а ваша шкіра змінює вигляд, відображаючи обраний вами елемент.
 
-Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Might score. If you are a stormwight, you have immunity to the damage type of your Primordial Storm feature equal to twice your Might score.`
+Крім того, якщо ви — берсеркер або рейвер, ви маєте імунітет до кислотного, холодного, корупційного, вогняного, блискавичного, отруйного та звукового ушкоджень, рівний вашому показнику Сили (Might). Якщо ви — штормовий воїн (stormwight), ви маєте імунітет до типу ушкоджень вашої здібності Первісної Бурі (Primordial Storm), рівний двічі вашому показнику Сили.`
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'fury-7-3',
-					name: 'Greater Ferocity',
+					name: 'Посилена лють',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '1d3 + 1',
 					replacesTags: ['start']
 				}),
@@ -245,8 +245,8 @@ Additionally, if you are a berserker or reaver, you have immunity to acid, cold,
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-9-1',
-					name: 'Harbinger of the Primordial Chaos',
-					description: 'You can create a temporary source of elemental power as a respite activity. This source of elemental power lasts 24 hours after creation, and can be used to create a portal to Quintessence with your Primordial Portal feature. If you do so, the source of elemental power lasts as long as the portal is maintained in your network.'
+					name: 'Провісник Первісного Хаосу',
+					description: 'Ви можете створити тимчасове джерело стихійної сили як діяльність під час відпочинку. Це джерело стихійної сили діє 24 години після створення і може бути використане для створення порталу до Квінтесенції за допомогою вашої здатності Первісний портал. Якщо ви це зробите, джерело стихійної сили діє стільки, скільки портал підтримується у вашій мережі.'
 				})
 			]
 		},
@@ -255,13 +255,13 @@ Additionally, if you are a berserker or reaver, you have immunity to acid, cold,
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-10-1',
-					name: 'Chaos Incarnate',
+					name: 'Втілення Хаосу',
 					description: `
-Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your Primordial Storm feature (see Stormwight Kits) increases to three times your Might score.
+Ваше володіння стихійними силами захищає і підбадьорює вас. Якщо ви — берсеркер або рейвер, ви маєте імунітет до кислотного, холодного, корупційного, вогняного, блискавичного, отруйного та звукового ушкоджень, рівний подвійній величині вашого показника Сили (Might). Якщо ви — штормовий воїн (stormwight), ваш імунітет від ушкоджень від здібності Первісна Буря збільшується до трьохкратного значення вашого показника Сили.
 
-When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < [сильний], they are frightened of you (save ends).
+Коли будь-яка стихійна істота або інша істота, чії здібності завдають кислотного, холодного, корупційного, вогняного, блискавичного, отруйного або звукового ушкодження, вперше помічає вас у бою, якщо в неї P < [сильний], вона наляканa вами (рят. кидок закінчує).
 
-Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, gaining 1 surge per ferocity spent to use for that strike.`
+Додатково, коли ви використовуєте Первісний удар (Primordial Strike), ви можете витратити до 3 одиниць люті, отримуючи по 1 сплеску за кожну витрачену одиницю люті, які можна використати для цього удару.`
 				}),
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'fury-10-2a',
@@ -278,7 +278,7 @@ Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, ga
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'fury-10-4',
-					name: 'Primordial Ferocity',
+					name: 'Первісна лють',
 					tag: 'take-damage 3',
 					trigger: 'The first time each combat round that you take damage',
 					value: '3',
@@ -286,21 +286,21 @@ Additionally, when you use Primordial Strike, you can spend up to 3 ferocity, ga
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'fury-10-5',
-					name: 'Primordial Power',
+					name: 'Первісна сила',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-You can spend any amount of primordial power as a free maneuver, ending one effect on you for each primordial power spent.
+Ви можете витратити будь-яку кількість первісної сили як безкоштовний маневр, припиняючи один ефект на собі за кожну витрачену одиницю первісної сили.
 
-You can also spend 3 primordial power to create a portal to Quintessence without needing a source of elemental power.
+Ви також можете витратити 3 одиниці первісної сили, щоб створити портал до Квінтесенції без необхідності в джерелі стихійної сили.
 
-Primordial power remains until you spend it.`
+Первісна сила зберігається, поки ви її не витратите.`
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-10-6'
@@ -311,8 +311,8 @@ Primordial power remains until you spend it.`
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'fury-ability-1',
-			name: 'Brutal Slam',
-			description: 'The heavy impact of your weapon attacks drives your foes ever back.',
+			name: 'Жорстокий Удар',
+			description: 'Сильні удари вашої зброї відкидають ворогів назад.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -322,17 +322,17 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; push 1',
-						tier2: '6 + M damage; push 2',
-						tier3: '9 + M damage; push 4'
+						tier1: '3 + С ушкоджень; відштовхнути на 1 клітину',
+						tier2: '6 + С ушкоджень; відштовхнути на 2 клітини',
+						tier3: '9 + С ушкоджень; відштовхнути на 4 клітини'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-2',
-			name: 'Hit And Run',
-			description: 'Staying in constant motion helps you slip out of reach after a brutal assault.',
+			name: 'Удар і Втеча',
+			description: 'Постійний рух допомагає вам виходити з досяжності після жорсткого нападу.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -342,38 +342,38 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '2 + M damage',
-						tier2: '5 + M damage',
-						tier3: '7 + M damage; A < [сильний], slowed (save ends)'
+						tier1: '2 + С ушкоджень',
+						tier2: '5 + С ушкоджень',
+						tier3: '7 + С ушкоджень; A < [сильний], сповільнений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift 1 square.')
+				FactoryLogic.createAbilitySectionText('Ви можете зміститися на 1 клітину.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-3',
-			name: 'Impaled!',
-			description: 'You skewer your enemy like a boar upon a spit.',
+			name: 'Проколотий!',
+			description: 'Ви нанизуєте ворога, як кабана на шампур.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'One creature of your size or smaller',
+			target: 'Одна істота вашого розміру або менша',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '2 + M damage; M < [слабкий], grabbed',
-						tier2: '5 + M damage; M < [середній], grabbed',
-						tier3: '7 + M damage; M < [сильний], grabbed'
+						tier1: '2 + С ушкоджень; С < [слабкий], схоплений',
+						tier2: '5 + С ушкоджень; С < [середній], схоплений',
+						tier3: '7 + С ушкоджень; С < [сильний], схоплений'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-4',
-			name: 'To the Death!',
-			description: 'Your reckless assault leaves you tactically vulnerable.',
+			name: 'До Смерті!',
+			description: 'Ваша безрозсудна атака робить вас тактично вразливим.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -383,18 +383,18 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage',
-						tier2: '6 + M damage',
-						tier3: '9 + M damage'
+						tier1: '3 + С ушкоджень',
+						tier2: '6 + С ушкоджень',
+						tier3: '9 + С ушкоджень'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You gain 2 surges, and the target can make an opportunity attack against you as a free triggered action.')
+				FactoryLogic.createAbilitySectionText('Ви отримуєте 2 сплески, і ціль може зробити атаку нагоди проти вас як безкоштовну тригерну дію.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-5',
-			name: 'Back!',
-			description: 'You hew about you with your mighty weapon, hurling enemies backward.',
+			name: 'Назад!',
+			description: 'Ви рубаєте навколо себе могутньою зброєю, відкидаючи ворогів назад.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
@@ -404,17 +404,17 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '5 damage',
-						tier2: '8 damage; push 1',
-						tier3: '11 damage; push 3'
+						tier1: '5 ушкоджень',
+						tier2: '8 ушкоджень; відштовхнути на 1 клітину',
+						tier3: '11 ушкоджень; відштовхнути на 3 клітини'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-6',
-			name: 'Out of the Way!',
-			description: 'Your enemies will clear your path — whether they want to or not.',
+			name: 'Геть з дороги!',
+			description: 'Вороги розчистять вам шлях — хочуть вони того чи ні.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -424,40 +424,40 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; slide 2',
-						tier2: '5 + M damage; slide 3',
-						tier3: '8 + M damage; slide 5'
+						tier1: '3 + С ушкоджень; зсунути на 2 клітини',
+						tier2: '5 + С ушкоджень; зсунути на 3 клітини',
+						tier3: '8 + С ушкоджень; зсунути на 5 клітин'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('When you slide the target, you can move into any square they leave. If you take damage from an opportunity attack by moving this way, the target takes the same damage.')
+				FactoryLogic.createAbilitySectionText('Коли ви зсуваєте ціль (slide), ви можете переміститися в будь-яку клітину, яку вона залишає. Якщо ви отримуєте шкоду від атаки нагоди через таке пересування, ціль отримує таку ж шкоду.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-7',
-			name: 'Tide of Death',
-			description: 'Teach them the folly of lining up for you.',
+			name: 'Приплив Смерті',
+			description: 'Покажіть їм нерозумність шикуватись у ряд перед вами.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self; see below',
+			target: 'Себе (див. нижче)',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You move up to your speed in a straight line, and enemy squares are not difficult terrain for this movement. You can end this movement in a creature’s space and move them to an adjacent unoccupied space. You make one power roll that targets each enemy whose space you move through.'),
+				FactoryLogic.createAbilitySectionText('Ви рухаєтесь до своєї швидкості по прямій лінії, і клітини ворогів не вважаються важкою місцевістю для цього руху. Ви можете завершити цей рух у клітині істоти та перемістити її в суміжну незайняту клітину. Ви робите один кидок Сили, що націлений на кожного ворога, простір якого ви проходите.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '2 damage',
-						tier2: '3 damage',
-						tier3: '5 damage'
+						tier1: '2 ушкодження',
+						tier2: '3 ушкодження',
+						tier3: '5 ушкоджень'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The last target you damage takes extra damage equal to your Might score for each opportunity attack you trigger during your move')
+				FactoryLogic.createAbilitySectionText('Остання ціль, якій ви завдаєте шкоди, отримує додаткову шкоду, рівну вашому показнику Сили, за кожну атаку нагоди, яку ви спричиняєте під час руху.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-8',
-			name: 'Your Entrails Are Your Extrails!',
-			description: 'Hard for them to fight when they’re busy holding in their giblets.',
+			name: 'Твої нутрощі — твої сліди!',
+			description: 'Їм важко боротися, коли вони зайняті тримати свої нутрощі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -467,18 +467,18 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; M < [слабкий], bleeding (save ends)',
-						tier2: '5 + M damage; M < [середній], bleeding (save ends)',
-						tier3: '8 + M damage; M < [сильний], bleeding (save ends)'
+						tier1: '3 + С ушкоджень; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '5 + С ушкоджень; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '8 + С ушкоджень; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While bleeding this way, the target takes damage equal to your Might score at the end of your turns.')
+				FactoryLogic.createAbilitySectionText('Поки ціль кровоточить таким чином, вона отримує шкоду, рівну вашому показнику Сили, наприкінці ваших ходів.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-9',
-			name: 'Blood for Blood!',
-			description: 'See how well they fight after you’ve bled them dry.',
+			name: 'Кров за кров!',
+			description: 'Побачимо, як вони битимуться після того, як ви висмоктали з них кров.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -488,30 +488,30 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '4 + M damage; M < [слабкий], bleeding and weakened (save ends)',
-						tier2: '6 + M damage; M < [середній], bleeding and weakened (save ends)',
-						tier3: '10 + M damage; M < [сильний], bleeding and weakened (save ends)'
+						tier1: '4 + С ушкоджень; С < [слабкий], кровотеча та ослаблення (рят. кидок закінчує)',
+						tier2: '6 + С ушкоджень; С < [середній], кровотеча та ослаблення (рят. кидок закінчує)',
+						tier3: '10 + С ушкоджень; С < [сильний], кровотеча та ослаблення (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can deal 1d6 damage to yourself to deal an extra 1d6 damage to the target.')
+				FactoryLogic.createAbilitySectionText('Ви можете завдати собі 1d6 шкоди, щоб завдати додатково 1d6 ушкодження цілі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-10',
-			name: 'Make Peace With Your God!',
-			description: 'Anger is an energy.',
+			name: 'Помирися зі своїм богом!',
+			description: 'Гнів — це енергія.',
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You gain 1 surge, and the next ability roll you make this turn automatically obtains a tier 3 outcome.')
+				FactoryLogic.createAbilitySectionText('Ви отримуєте 1 сплеск, і наступний кидок здібності, який ви зробите цього ходу, автоматично отримує результат рівня 3.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-11',
-			name: 'Thunder Roar',
-			description: 'You unleash a howl that hurls your enemies back.',
+			name: 'Громовий рев',
+			description: 'Ви випускаєте виття, що відкидає ворогів назад.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
@@ -521,18 +521,18 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '6 damage; push 2',
-						tier2: '9 damage; push 4',
-						tier3: '13 damage; push 6'
+						tier1: '6 ушкоджень; відштовхнути на 2 клітини',
+						tier2: '9 ушкоджень; відштовхнути на 4 клітини',
+						tier3: '13 ушкоджень; відштовхнути на 6 клітин'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The targets are force moved one at a time, starting with the target nearest to you, and can be pushed into other targets in the same line.')
+				FactoryLogic.createAbilitySectionText('Цілі переміщуються примусово по одній, починаючи з цілі, найближчої до вас, і можуть бути штовхнуті в інші цілі на тій же лінії.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-12',
-			name: 'To the Uttermost End',
-			description: 'You gut your life force to ensure a foe’s demise.',
+			name: 'До самого кінця',
+			description: 'Ви віддаєте свою життєву силу, щоб забезпечити загибель ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -542,9 +542,9 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '7 + M damage',
-						tier2: '11 + M damage',
-						tier3: '16 + M damage'
+						tier1: '7 + С ушкоджень',
+						tier2: '11 + С ушкоджень',
+						tier3: '16 + С ушкоджень'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -555,60 +555,60 @@ Primordial power remains until you spend it.`
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-13',
-			name: 'Demon Unleashed',
-			description: 'Foes tremble at the sight of you.',
+			name: 'Випущений демон',
+			description: 'Супротивники тремтять при погляді на вас.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < [сильний] is frightened until the end of their turn.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не станете вмираючим, кожен ворог, який починає свій хід поруч з вами і має P < [сильний], стає переляканим до кінця свого ходу.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-14',
-			name: 'Face the Storm!',
-			description: 'Shocked in the face of your naked brutality, your enemy’s instincts take over.',
+			name: 'Стій перед бурею!',
+			description: 'Шоковані вашою відвертою жорстокістю, інстинкти ворога беруть гору.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < [середній] is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не станете вмираючим, кожна істота, якій ви завдаєте удару в ближньому бою і в якої P < [середній], стає спровокованою до кінця її наступного ходу. Додатково, коли ви використовуєте здібність з кидком пошкодження проти ворога, спровокованого вами, здібність завдає додаткову шкоду, рівну двом вашим показникам Сили, і збільшує свою потужність на 1.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-15',
-			name: 'Steelbreaker',
-			description: 'See how useless their weapons are!',
+			name: 'Ламач сталі',
+			description: 'Подивіться, наскільки марна їхня зброя!',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You gain 20 temporary Stamina.')
+				FactoryLogic.createAbilitySectionText('Ви отримуєте 20 тимчасової Витривалості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-16',
-			name: 'You Are Already Dead',
-			description: 'Slash. Walk away.',
+			name: 'Ти вже мертвий',
+			description: 'Рубай і відходь.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Одна істота',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('If the target is not a leader or solo creature, they are reduced to 0 Stamina at the end of their next turn. If the target is a leader or solo creature, you gain 3 surges and can make a melee free strike against them.')
+				FactoryLogic.createAbilitySectionText('Якщо ціль не є лідером або одиничною істотою, вона зводиться до 0 Витривалості наприкінці свого наступного ходу. Якщо ціль є лідером або одиничною істотою, ви отримуєте 3 сплески і можете зробити проти неї безкоштовну ударну дію в ближньому бою.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-17',
-			name: 'Debilitating Strike',
-			description: 'You need just one blow to sabotage your target.',
+			name: 'Ослаблюючий удар',
+			description: 'Вам потрібен лише один удар, щоб вивести ціль з ладу.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -618,60 +618,60 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '10 + M damage; M < [слабкий], slowed (save ends)',
-						tier2: '14 + M damage; M < [середній], slowed (save ends)',
-						tier3: '20 + M damage; M < [сильний], slowed (save ends)'
+						tier1: '10 + С ушкоджень; С < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '14 + С ушкоджень; С < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '20 + С ушкоджень; С < [сильний], сповільнений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While slowed this way, the target takes 1 damage for every square they move, including from forced movement.')
+				FactoryLogic.createAbilitySectionText('Поки ціль сповільнена таким чином, вона отримує 1 шкоду за кожну клітину, яку вона рухається, включаючи примусове переміщення.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-18',
-			name: 'My Turn!',
-			description: 'You quickly strike back at a foe.',
-			type: FactoryLogic.type.createTrigger('A creature causes you to be winded or dying, or damages you while you are winded or dying.'),
+			name: 'Мій хід!',
+			description: 'Ви швидко контратакуєте ворога.',
+			type: FactoryLogic.type.createTrigger('Істота спричиняє, що ви стаєте захеканим або вмираючим, або завдає вам шкоди, поки ви захекані або вмираючі.'),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'The triggering creature',
+			target: 'Ініціююча істота',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '6 + M damage;',
-						tier2: '9 + M damage;',
-						tier3: '13 + M damage;'
+						tier1: '6 + С ушкоджень;',
+						tier2: '9 + С ушкоджень;',
+						tier3: '13 + С ушкоджень;'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('Ви можете витратити відновлення (Recovery).')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-19',
-			name: 'Rebounding Storm',
-			description: 'You knock around enemies like playthings.',
+			name: 'Буря відскоку',
+			description: 'Ви кидаєте ворогів, немов іграшки.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Two creatures or objects',
+			target: 'Дві істоти або предмети',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '9 + M damage; push 3',
-						tier2: '14 + M damage; push 5',
-						tier3: '19 + M damage; push 7'
+						tier1: '9 + С ушкоджень; відштовхнути на 3 клітини',
+						tier2: '14 + С ушкоджень; відштовхнути на 5 клітин',
+						tier3: '19 + С ушкоджень; відштовхнути на 7 клітин'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('When a target would end this forced movement by colliding with a creature or object, they take damage as usual, then are pushed the remaining distance away from the creature or object in the direction they came from. As long as forced movement remains, this effect continues if the target collides with another creature or object.')
+				FactoryLogic.createAbilitySectionText('Коли ціль закінчує примусове переміщення, стикаючись із істотою або предметом, вона отримує звичну шкоду, а потім відштовхується на залишкову відстань від істоти або предмета в напрямку, з якого прийшла. Якщо примусове переміщення продовжується, цей ефект повторюється при кожному новому зіткненні цілі з іншою істотою або предметом.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-20',
-			name: 'To Stone!',
-			description: 'You channel the Primordial Chaos into blows that petrify your foe … literally.',
+			name: 'У камінь!',
+			description: 'Ви спрямовуєте Первісний Хаос у удари, що перетворюють ворога на камінь… буквально.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -681,31 +681,31 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '9 + M damage; M < [слабкий], slowed (save ends)',
-						tier2: '13 + M damage; M < [середній], slowed (save ends)',
-						tier3: '18 + M damage; M < [сильний], restrained (save ends)'
+						tier1: '9 + С ушкоджень; С < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '13 + С ушкоджень; С < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '18 + С ушкоджень; С < [сильний], скований (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While the target is slowed this way, any other effect that would make the target slowed instead makes them restrained by this ability. Additionally, a creature who fails the saving throw while restrained this way is petrified until they are given a supernatural cure or you choose to reverse the effect (no action required).')
+				FactoryLogic.createAbilitySectionText('Поки ціль сповільнена таким чином, будь-який інший ефект, що мав би зробити ціль сповільненою, натомість накладає на неї стан скуття (restrained) цим ефектом. Додатково, істота, яка провалює рятівний кидок під час скуття таким чином, стає застиглою (петріфікованою) доти, поки їй не нададуть надприродне лікування або ви не вирішите зняти ефект (дії не потрібно).')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-21',
-			name: 'Elemental Ferocity',
-			description: 'Your primordial energy makes for instant retribution.',
+			name: 'Елементальна лють',
+			description: 'Ваша первісна енергія забезпечує миттєву відплату.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You gain 10 temporary Stamina. Additionally, choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, whenever an enemy damages you, they take 10 damage of the chosen type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.')
+				FactoryLogic.createAbilitySectionText('Ви отримуєте 10 тимчасової Витривалості. Додатково оберіть один із типів ушкоджень: кислотний, холодний, корупційний, вогняний, блискавичний, отруйний або звуковий. До кінця зустрічі або поки ви не станете вмираючим, коли ворог завдає вам шкоди, він отримує 10 ушкоджень обраного типу. Якщо це ушкодження зводить ворога до 0 Витривалості, ви отримуєте 10 тимчасової Витривалості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-22',
-			name: 'Overkill',
-			description: 'You strike so no damage is wasted.',
+			name: 'Надмірний удар',
+			description: 'Ви атакуєте так, щоб жодна нанесена шкода не пропадала дарма.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -715,44 +715,44 @@ Primordial power remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '6 + M damage',
-						tier2: '10 + M damage',
-						tier3: '14 + M damage'
+						tier1: '6 + С ушкоджень',
+						tier2: '10 + С ушкоджень',
+						tier3: '14 + С ушкоджень'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is a minion or is winded but isn’t a leader or solo creature, they are reduced to 0 Stamina before this ability’s damage is dealt. If the target is killed by this damage, you can deal any damage over what was required to kill them to another creature within 5 squares of the target.')
+				FactoryLogic.createAbilitySectionText('Якщо ціль є міньйоном або знаходиться в стані захеканості (winded), але не є лідером чи одиничною істотою, вона зводиться до 0 Витривалості перед тим, як завдається шкода цієї здібності. Якщо ціль вбита цим ушкодженням, ви можете перенаправити будь-яку надлишкову шкоду на іншу істоту в радіусі 5 клітин від цілі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-23',
-			name: 'Primordial Rage',
-			description: 'Your ferocity manifests into primordial power.',
+			name: 'Первісний гнів',
+			description: 'Ваша лють виявляється як первісна сила.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self',
+			target: 'Себе',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, you can choose one target of any ability you use, with that target taking an extra 15 damage of the chosen type. Additionally, whenever you gain ferocity from taking damage, the source of the damage takes 5 damage of the chosen type.')
+				FactoryLogic.createAbilitySectionText('Оберіть кислотний, холодний, корупційний, вогняний, блискавичний, отруйний або звуковий тип ушкоджень. До кінця зустрічі або поки ви не станете вмираючим, ви можете обрати одну ціль будь-якої здібності, яку ви використовуєте; ця ціль отримує додаткові 15 ушкоджень обраного типу. Додатково, коли ви отримуєте лють від отриманої шкоди, джерело цієї шкоди отримує 5 ушкоджень обраного типу.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'fury-ability-24',
-			name: 'Relentless Death',
-			description: 'You won’t escape your fate.',
+			name: 'Безжальна смерть',
+			description: 'Ви не уникнете своєї долі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self; see below',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You shift up to your speed. Each enemy you move adjacent to during this movement takes damage equal to twice your Might score. Then make one power roll that targets each enemy you move adjacent to during this shift. You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).'),
+				FactoryLogic.createAbilitySectionText('Ви зсуваєтесь на відстань до своєї швидкості. Кожен ворог, до якого ви підходите впритул під час цього руху, отримує ушкодження, рівне двом вашим показникам Сили. Потім зробіть один кидок Сили, що націлений на кожного ворога, до якого ви наблизились під час цього зсуву. Ви отримуєте 1 одиницю люті за кожну ціль, яка помирає внаслідок цієї здібності (максимум 11 люті).'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: 'Any target whose Stamina is equal to or less than 8 dies.',
-						tier2: 'Any target whose Stamina is equal to or less than 11 dies.',
-						tier3: 'Any target whose Stamina is equal to or less than 17 dies.'
+						tier1: 'Будь-яка ціль, чия Витривалість дорівнює або менша за 8, гине.',
+						tier2: 'Будь-яка ціль, чия Витривалість дорівнює або менша за 11, гине.',
+						tier3: 'Будь-яка ціль, чия Витривалість дорівнює або менша за 17, гине.'
 					})
 				)
 			]

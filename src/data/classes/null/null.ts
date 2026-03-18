@@ -13,13 +13,13 @@ import { metakinetic } from '@/data/classes/null/metakinetic';
 
 export const nullClass: HeroClass = {
 	id: 'class-null',
-	name: 'Null',
+	name: 'Нуль',
 	description: `
-The mind is not separate from the body. Perfection of one requires perfection of the other. You strive for perfect discipline, perfect order, mastery over mind and body becoming an unarmed psionic warrior who dampens and absorbs magic and psionics. You require no weapons, no tools. You suffice.
+Розум не відокремлений від тіла. Досконалість одного вимагає досконалості іншого. Ви прагнете ідеальної дисципліни, досконалого порядку та володіння розумом і тілом, стаючи беззбройним псіонічним воїном, який пригнічує й поглинає магію та псіоніку. Вам не потрібні зброя або інструменти — ви самі собі достатні.
 
-As a null, you resist the supernatural forces of the universe with composure and confidence. As you strive for perfect order, you are an enemy of the ultimate expression of chaos: the supernatural. Those who break the laws of nature using sorcery or psionics should fear you.
+Як Нуль, ви стримано й упевнено протистоїте надприродним силам всесвіту. Прагнучи досконалого порядку, ви стаєте ворогом найвищого виявлення хаосу — надприродного. Ті, хто порушує закони природи за допомогою чаклунства чи псіоніки, повинні вас остерігатися.
 
-*"Any weapon can be turned against the hand that wields it."* - Ardashir`,
+"Будь-яку зброю можна звернути проти руки, яка її тримає." — Ардашир`,
 	type: 'standard',
 	subclassName: 'Tradition',
 	subclassCount: 1,
@@ -44,21 +44,21 @@ As a null, you resist the supernatural forces of the universe with composure and
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'null-resource',
-					name: 'Discipline',
+					name: 'Дисципліна',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '2'
 						},
 						{
 							tag: 'action',
-							trigger: 'The first time each combat round that an enemy in the area of your Null Field ability uses a main action',
+							trigger: 'Вперше в кожному раунді бою, коли ворог в області вашої здібності «Нульове поле» використовує основну дію',
 							value: '1'
 						},
 						{
 							tag: 'malice',
-							trigger: 'The first time each combat round that the Director uses an ability that costs Malice',
+							trigger: 'Вперше в кожному раунді бою, коли Директор використовує здібність, що вимагає Malice',
 							value: '1'
 						}
 					]
@@ -75,22 +75,22 @@ As a null, you resist the supernatural forces of the universe with composure and
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'null-1-4',
-						name: 'Null Field',
-						description: 'You project an aura that dampens the power of your foes.',
+						name: 'Нульове поле',
+						description: 'Ви створюєте ауру, що послаблює силу ваших ворогів.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 })],
 						target: 'All enemies',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-Each target reduces their potencies by 1.
+Кожна ціль знижує свої потужності на 1.
 
-Once as a free maneuver on each of your turns, you can spend 1 discipline and give your Null Field one of the following additional effects until the start of your next turn:
-* **Gravitic Disruption**: The first time on a turn that a target takes damage, you can slide them up to 2 squares.
-* **Inertial Anchor**: Any target who starts their turn in the area can't shift.
-* **Synaptic Break**: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.
+Раз на хід як вільний маневр ви можете витратити 1 дисципліну, щоб надати вашому «Нульовому полю» один із наведених додаткових ефектів до початку вашого наступного ходу:
+* **Гравітаційне порушення**: Першого разу за хід, коли ціль отримує ушкодження, ви можете зсунути її до 2 клітин.
+* **Інерційний якір**: Будь-яка ціль, яка починає свій хід в області, не може зсуватися.
+* **Синаптичний розрив**: Коли ви або союзник використовує здібність проти цілі з ефектом потужності, потужність збільшується на 1.
 
-This ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required)`),
+Ця здібність залишається активною навіть після завершення сутички. Вона припиняється лише якщо ви помираєте або добровільно її припиняєте (без дії)`),
 							FactoryLogic.createAbilitySectionPackage('null-field')
 						]
 					})
@@ -98,14 +98,16 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'null-1-5',
-						name: 'Inertial Shield',
-						description: 'You intuit the course of an incoming attack, reducing its effects.',
-						type: FactoryLogic.type.createTrigger('You take damage.'),
+						name: 'Інерційний щит',
+						description: 'Ви відчуваєте хід наближення атаки й зменшуєте її наслідки.',
+						type: FactoryLogic.type.createTrigger('Ви отримуєте ушкодження.'),
 						keywords: [AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You halve the damage.'),
+
+							FactoryLogic.createAbilitySectionText('Ви зменшуєте ушкодження наполовину.'),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The potency of one effect associated with the damage is reduced by 1 for you.'
 							}),
@@ -115,18 +117,18 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-1-6',
-					name: 'Null Speed',
-					description: 'The flow of psionic power through you allows you to achieve high velocity.',
+					name: 'Нульова швидкість',
+					description: 'Потік псіонічної енергії через вас дозволяє досягати високої швидкості.',
 					features: [
 						FactoryLogic.feature.createBonus({
 							id: 'null-1-6a',
-							name: 'Null Speed',
+							name: 'Нульова швидкість',
 							field: FeatureField.Speed,
 							valueCharacteristics: [Characteristic.Agility]
 						}),
 						FactoryLogic.feature.createBonus({
 							id: 'null-1-6b',
-							name: 'Null Speed',
+							name: 'Нульова швидкість',
 							field: FeatureField.Disengage,
 							valueCharacteristics: [Characteristic.Agility]
 						})
@@ -134,13 +136,13 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'null-1-7',
-					name: 'Psionic Augmentation',
-					description: 'Your training has turned your body into the perfect psionic weapon, shaping pathways in your mind that enhance your physical form. Choose one of the following augmentations. You can change your augmentation by undergoing a psionic meditation as a respite activity.',
+					name: 'Псіонічна модифікація',
+					description: 'Ваше навчання перетворило тіло на досконалу псіонічну зброю, формуючи в розумі шляхи, що підсилюють вашу фізичну форму. Оберіть одну з наведених модифікацій. Ви можете змінити модифікацію під час псіонічної медитації як активності відпочинку.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'null-1-7a',
-								name: 'Density Augmentation',
+								name: 'Підвищення щільності',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'null-1-7aa',
@@ -159,7 +161,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 						{
 							feature: FactoryLogic.feature.createAbilityDamage({
 								id: 'null-1-7b',
-								name: 'Force Augmentation',
+								name: 'Підсилення сили',
 								keywords: [AbilityKeyword.Psionic],
 								value: 1
 							}),
@@ -168,7 +170,7 @@ This ability remains active even after an encounter ends. It ends only if you ar
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'null-1-7c',
-								name: 'Speed Augmentation',
+								name: 'Підвищення швидкості',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'null-1-7ca',
@@ -191,19 +193,19 @@ This ability remains active even after an encounter ends. It ends only if you ar
 					features: [
 						FactoryLogic.feature.create({
 							id: 'null-1-8a',
-							name: 'Psionic Martial Arts',
-							description: 'Whenever you use the Knockback or Grab maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the Knockback maneuver, you can choose to slide the target instead of pushing them.'
+							name: 'Псіонічне бойове мистецтво',
+							description: 'Коли ви використовуєте маневр відштовхування або захоплення, ви застосовуєте Інтуїцію замість Сили для кидка потужності та для визначення, чи можете цілитися в істот більших за вас. Додатково, при використанні маневру відштовхування ви можете обрати зсувати ціль замість штовхання.'
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'null-1-8b',
-							name: 'Psionic Martial Arts',
-							description: 'You use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you.',
+							name: 'Псіонічне бойове мистецтво',
+							description: 'Ви використовуєте Інтуїцію замість Сили для кидка потужності та для визначення, чи можете цілитися в істот більших за вас.',
 							tag: 'null-psionic-martial-arts-grab'
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'null-1-8c',
-							name: 'Psionic Martial Arts',
-							description: 'You use Intuition instead of Might for the power roll and you can choose to slide the target instead of pushing them.',
+							name: 'Псіонічне бойове мистецтво',
+							description: 'Ви використовуєте Інтуїцію замість Сили для кидка потужності, і можете замість штовхання обрати зсувати ціль.',
 							tag: 'null-psionic-martial-arts-knockback'
 						})
 					]
@@ -237,19 +239,19 @@ This ability remains active even after an encounter ends. It ends only if you ar
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-3-1',
-					name: 'Psionic Leap',
-					description: 'You can long jump and high jump a distance equal to twice your Agility score without needing to make a test.'
+					name: 'Псіонічний стрибок',
+					description: 'Ви можете виконати довгий або високий стрибок на відстань, рівну подвоєному значенню вашого показника Ловкості, без потреби в перевірці.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'null-3-2',
-						name: 'Reorder',
+						name: 'Перестановка',
 						description: '',
-						type: FactoryLogic.type.createTrigger('You start your turn.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Ви починаєте свій хід.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Self',
 						sections: [
-							FactoryLogic.createAbilitySectionText('End one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your Null Field ability.')
+							FactoryLogic.createAbilitySectionText('Припиніть один ефект на собі, який закінчується рят. кидком або який завершується в кінці вашого ходу. Або ви можете надати цю перевагу одній істоті в області вашої здібності «Нульове поле».')
 						]
 					})
 				}),
@@ -274,8 +276,8 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'null-4-2',
-					name: 'Enhanced Null Field',
-					description: 'During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.',
+					name: 'Посилене Нульове поле',
+					description: 'Під час бою будь-які тимчасові надприродні ефекти місцевості вашого рівня або нижчого видаляються, коли ваша аура частково або повністю перекриває їхнє розташування. Постійні надприродні ефекти місцевості вашого рівня або нижчого тимчасово нейтралізуються, поки ваша аура їх перекриває, але повертаються, коли перекриття припиняється.',
 					tag: 'null-field'
 				}),
 				FactoryLogic.feature.createPerk({
@@ -283,9 +285,9 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'null-4-4',
-					name: 'Regenerative Field',
+					name: 'Регенеративне поле',
 					tag: 'action 2',
-					trigger: 'The first time each combat round that an enemy in the area of your Null Field ability uses a main action',
+					trigger: 'Вперше в кожному раунді бою, коли ворог в області вашої здібності «Нульове поле» використовує основну дію',
 					value: '2',
 					replacesTags: ['action']
 				}),
@@ -309,14 +311,14 @@ This ability remains active even after an encounter ends. It ends only if you ar
 			features: [
 				FactoryLogic.feature.createPackageContent({
 					id: 'null-6-1',
-					name: 'Elemental Absorption',
-					description: 'Whenever you use your Inertial Shield triggered action, you gain immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Intuition score against the triggering damage.',
+					name: 'Поглинання стихій',
+					description: 'Коли ви використовуєте тригерну дію Інерційного щита, ви отримуєте імунітет до ушкоджень типів: кислота, холод, корупція, вогонь, блискавка, отрута та звукові ушкодження на величину, рівну вашому показникові Інтуїції, проти типу ушкодження, що спричинив тригер.',
 					tag: 'inertial-shield'
 				}),
 				FactoryLogic.feature.create({
 					id: 'null-6-2',
-					name: 'Elemental Buffer',
-					description: 'Whenever you reduce acid, cold, corruption, fire, lightning, poison, or sonic damage with damage immunity, you gain 2 surges that can be used only to increase the damage of your next strike.'
+					name: 'Стихійний буфер',
+					description: 'Коли ви зменшуєте ушкодження типів кислота, холод, корупція, вогонь, блискавка, отрута або звукові ушкодження завдяки імунітету, ви отримуєте 2 сплески, які можна використати виключно для збільшення шкоди вашого наступного удару.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'null-6-3',
@@ -354,23 +356,23 @@ This ability remains active even after an encounter ends. It ends only if you ar
 				}),
 				FactoryLogic.feature.create({
 					id: 'null-7-2',
-					name: 'Psi Boost',
+					name: 'Псі-підсилення',
 					description: `
-Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
+Коли ви використовуєте здібність, що є основною дією або маневром з ключовим словом «Псіоніка», ви можете витратити додаткову дисципліну, щоб застосувати пі-сі-підсилення до неї й підсилити її ефекти. Ефекти пі-сі-підсилення тривають лише до кінця ходу, у якому здібність вперше застосована. Ви можете застосувати кілька підсилень до однієї здібності, але тільки по одному екземпляру кожного конкретного підсилення. Ви можете використовувати такі підсилення:
 
-**Dynamic Power** (1 Discipline) If the ability force moves a target, the forced movement distance gains a bonus equal to your Intuition score.
-**Expanded Power** (3 Discipline) If the ability targets an area, you increase the size of the area by 1. If the area is a line, you increase the size of one dimension, not both.
-**Extended Power** (1 Discipline) If the ability is ranged, the distance gains a bonus equal to your Intuition score. If the ability is melee, the distance gains a +2 bonus.
-**Heightened Power** (1 Discipline) If the ability deals rolled damage, it deals extra damage equal to your Intuition score.
-**Magnified Power** (5 Discipline) If the ability has a potency, you increase that potency by an amount equal to your Intuition score.
-**Shared Power** (5 Discipline) If the ability targets individual creatures or objects, you target one additional creature or object within distance.
-**Sharpened Power** (1 Discipline) If the ability has any power roll, that roll gains an edge.`
+**Динамічна сила** (1 Дисципліна) Якщо здібність примусово переміщує ціль, відстань примусового переміщення отримує бонус, рівний вашому показникові Інтуїції.
+**Розширена сила** (3 Дисципліни) Якщо здібність цілиться на область, ви збільшуєте розмір області на 1. Якщо область є лінією, ви збільшуєте тільки один вимір, а не обидва.
+**Подовжена сила** (1 Дисципліна) Якщо здібність є далекобійною, відстань отримує бонус, рівний вашому показникові Інтуїції. Якщо здібність є ближньою, відстань отримує бонус +2.
+**Підвищена сила** (1 Дисципліна) Якщо здібність завдає кидальної шкоди, вона завдає додаткову шкоду, рівну вашому показникові Інтуїції.
+**Збільшена сила** (5 Дисциплін) Якщо здібність має потужність, ви збільшуєте цю потужність на величину, рівну вашому показникові Інтуїції.
+**Поділена сила** (5 Дисциплін) Якщо здібність цілиться на окремі істоти або предмети, ви цілитесь на одну додаткову істоту або предмет у межах дистанції.
+**Загострена сила** (1 Дисципліна) Якщо здібність має будь-який кидок потужності, цей кидок отримує перевагу.`
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'null-7-3',
-					name: 'Improved Body',
+					name: 'Покращене тіло',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '3',
 					replacesTags: ['start']
 				}),
@@ -397,13 +399,13 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'null-9-1a',
-					name: 'I Am the Weapon',
+					name: 'Я — Зброя',
 					field: FeatureField.Stamina,
 					value: 21
 				}),
 				FactoryLogic.feature.createConditionImmunity({
 					id: 'null-9-1b',
-					name: 'I Am the Weapon',
+					name: 'Я — Зброя',
 					conditions: [ConditionType.Bleeding]
 				})
 			]
@@ -423,35 +425,35 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'null-10-2',
-					name: 'Manifold Body',
+					name: 'Маніфольдне тіло',
 					tag: 'start 3',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '4',
 					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.create({
 					id: 'null-10-3',
-					name: 'Manifold Resonance',
+					name: 'Маніфольдний резонанс',
 					description: `
-Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can shift yourself and any creatures in the area of your Null Field ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
+Ваше тіло стає досконалою матерією, поза примхами й хаосом часової тканини та обмеженнями маніфолдів. Кожного разу, коли ви завершуєте відпочинок, ви можете перемістити себе та будь-яких істот в області вашої здібності «Нульове поле» до будь-якого місця в часовому шарі, відомого вам, відомого будь-якій іншій істоті в області, або туди, де раніше перебував надприродний скарб у цій області.
 
-Whenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your Psi Boost feature to that ability.
+Коли ви використовуєте здібність, ви отримуєте 1 дисципліну, яку можна використати лише для застосування переваги з функції «Псі-підсилення» до цієї здібності.
 
-Additionally, you and allies in the area of your Null Field ability ignore banes and double banes on your power rolls.`
+Крім того, ви та союзники в області вашої здібності «Нульове поле» ігноруєте штрафи (bane) і подвійні штрафи на ваших кидках потужності.`
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'null-10-4',
-					name: 'Order',
+					name: 'Порядок',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-You have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline. At the start of a combat encounter, you can spend 1 order to increase the size of your Null Field by 1 until the end of the encounter. Order remains until you spend it`
+У вас є епічний ресурс під назвою «Порядок». Кожного разу, коли ви завершуєте відпочинок, ви отримуєте Порядок, рівний отриманому досвіду. Ви можете витрачати Порядок на свої здібності так само, як дисципліну. На початку бойового зіткнення ви можете витратити 1 Порядок, щоб збільшити розмір вашого «Нульового поля» на 1 до кінця сутички. Порядок зберігається, поки ви його не витратите.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'null-10-5'
@@ -466,8 +468,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'null-ability-1',
-			name: 'Dance of Blows',
-			description: 'You strike everywhere at once, tricking an enemy into moving out of position.',
+			name: 'Танець ударів',
+			description: 'Ви вражаєте всюди одночасно, змушуючи ворога змінити позицію.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
@@ -477,18 +479,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 damage',
-						tier2: '4 damage',
-						tier3: '5 damage'
+						tier1: '3 ушкодження',
+						tier2: '4 ушкодження',
+						tier3: '5 ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can slide one adjacent enemy up to a number of squares equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Ви можете зсунути одного сусіднього ворога на відстань до числа клітин, рівного вашому показникові Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-2',
-			name: 'Faster than the Eye',
-			description: 'You strike so quickly that your hands become a blur.',
+			name: 'Швидший за око',
+			description: 'Ви бʼєте так швидко, що ваші руки стають нечіткими.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -498,18 +500,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '4 damage',
-						tier2: '5 damage',
-						tier3: '7 damage'
+						tier1: '4 ушкодження',
+						tier2: '5 ушкодження',
+						tier3: '7 ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can deal damage equal to your Agility score to one creature or object adjacent to you.')
+				FactoryLogic.createAbilitySectionText('Ви можете завдати ушкодження, рівне вашому показникові Ловкості, одній істоті або предмету поруч із вами.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-3',
-			name: 'Inertial Step',
-			description: 'You flit about the battlefield and take an opportunistic strike.',
+			name: 'Інерційний крок',
+			description: 'Ви блискавично переміщаєтеся полем бою й наносите опортуністичний удар.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -519,18 +521,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '5 + A damage',
-						tier2: '7 + A damage',
-						tier3: '10 + A damage'
+						tier1: '5 + A ушкодження',
+						tier2: '7 + A ушкодження',
+						tier3: '10 + A ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift up to half your speed before or after you make the strike.')
+				FactoryLogic.createAbilitySectionText('Ви можете зсунутися на відстань до половини вашої швидкості до або після виконання удару.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-4',
-			name: 'Joint Lock',
-			description: 'You contort your enemy’s body into a stance they struggle to escape from.',
+			name: 'Фіксація суглоба',
+			description: 'Ви викручуєте тіло ворога в положення, з якого йому важко вирватися.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -539,16 +541,16 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; A < [слабкий], grabbed',
-					tier2: '7 + A damage; A < [середній], grabbed',
-					tier3: '9 + A damage; A < [сильний], grabbed'
+					tier1: '4 + A ушкодження; A < [слабкий], схоплений',
+					tier2: '7 + A ушкодження; A < [середній], схоплений',
+					tier3: '9 + A ушкодження; A < [сильний], схоплений'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-5',
-			name: 'Kinetic Strike',
-			description: 'Your opponent staggers. They cannot ignore you.',
+			name: 'Кінетичний удар',
+			description: 'Ваш супротивник хитнувся. Він не зможе ігнорувати вас.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -557,16 +559,16 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; taunted (EoT)',
-					tier2: '5 + A damage; taunted (EoT); slide 1',
-					tier3: '6 + A damage; taunted (EoT); slide 2'
+					tier1: '4 + A ушкодження; провокований (EoT)',
+					tier2: '5 + A ушкодження; провокований (EoT); зсув 1',
+					tier3: '6 + A ушкодження; провокований (EoT); зсув 2'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-6',
-			name: 'Magnetic Strike',
-			description: 'The force of your blow extends past the limits of your body, pulling your enemy closer.',
+			name: 'Магнітний удар',
+			description: 'Сила вашого удару виходить за межі тіла, притягуючи ворога ближче.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee(2)],
@@ -575,16 +577,16 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '5 + A psychic damage; vertical pull 1',
-					tier2: '8 + A psychic damage; vertical pull 2',
-					tier3: '11 + A psychic damage; vertical pull 3'
+					tier1: '5 + A психічне ушкодження; вертикальне притягнення 1',
+					tier2: '8 + A психічне ушкодження; вертикальне притягнення 2',
+					tier3: '11 + A психічне ушкодження; вертикальне притягнення 3'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-7',
-			name: 'Phase Inversion Strike',
-			description: 'You step momentarily out of phase as you pull an enemy through you.',
+			name: 'Удар інверсії фази',
+			description: 'Ви на мить виходите з фази, проводячи ворога крізь себе.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -594,18 +596,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '4 + A damage; push 2',
-						tier2: '6 + A damage; push 4',
-						tier3: '8 + A damage; push 6'
+						tier1: '4 + A ушкодження; штовх 2',
+						tier2: '6 + A ушкодження; штовх 4',
+						tier3: '8 + A ушкодження; штовх 6'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Before the push is resolved, you teleport the target to a square adjacent to you and opposite the one they started in. If the target can’t be teleported this way, you can’t push them.')
+				FactoryLogic.createAbilitySectionText('Перед вирішенням штовхання ви телепортуєте ціль на клітку поруч із вами, протилежну тій, з якої вона починала. Якщо ціль не може бути телепортована таким чином, ви не можете її штовхати.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-8',
-			name: 'Pressure Points',
-			description: 'You strike at key nerve clusters to leave your foe staggered.',
+			name: 'Точки тиску',
+			description: 'Ви вражаєте ключові нервові вузли, залишаючи ворога хитким.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -614,16 +616,16 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; A < [слабкий], weakened (save ends)',
-					tier2: '7 + A damage; A < [середній], weakened (save ends)',
-					tier3: '9 + A damage; A < [сильний], weakened (save ends)'
+					tier1: '4 + A ушкодження; A < [слабкий], ослаблений (рят. кидок)',
+					tier2: '7 + A ушкодження; A < [середній], ослаблений (рят. кидок)',
+					tier3: '9 + A ушкодження; A < [сильний], ослаблений (рят. кидок)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-9',
-			name: 'Chronal Spike',
-			description: 'You foresee the best moment to strike, then exploit it.',
+			name: 'Хрональний шип',
+			description: 'Ви передбачаєте найкращий момент для удару і використовуєте його.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -633,31 +635,31 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '7 + A damage',
-						tier2: '10 + A damage',
-						tier3: '13 + A damage'
+						tier1: '7 + A ушкодження',
+						tier2: '10 + A ушкодження',
+						tier3: '13 + A ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can shift up to half your speed before or after you make this strike. Additionally, whenever an effect lets you make a free strike or use a signature ability, you can use this ability instead, paying its discipline cost as usual.')
+				FactoryLogic.createAbilitySectionText('Ви можете зсунутися на відстань до половини вашої швидкості до або після виконання цього удару. Додатково, коли ефект дозволяє вам зробити вільний удар або використати сигнатурну здібність, ви можете використати цю здібність замість неї, сплачуючи її вартість дисципліни як звично.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-10',
-			name: 'Psychic Pulse',
-			description: 'A burst of psionic energy interferes with your enemy’s synapses.',
+			name: 'Психічний імпульс',
+			description: 'Спалах псіонічної енергії порушує синапси вашого ворога.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 			target: 'Кожен ворог у зоні',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Null Field ability increases by 1. At the end of your current turn, each enemy in the area of your Null Field ability takes psychic damage equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль отримує психічне ушкодження, рівне подвоєному значенню вашого показника Інтуїції. До початку вашого наступного ходу розмір вашої здібності «Нульове поле» збільшується на 1. Наприкінці вашого поточного ходу кожен ворог в області вашого «Нульового поля» отримує психічне ушкодження, рівне вашому показникові Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-11',
-			name: 'Relentless Nemesis',
-			description: 'You strike, and for the next few moments, your enemy can’t escape you.',
+			name: 'Невблаганна Немезида',
+			description: 'Ви наносите удар, і протягом наступних кількох моментів ворог не зможе уникнути вас.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -667,18 +669,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '6 + A damage',
-						tier2: '8 + A damage',
-						tier3: '12 + A damage'
+						tier1: '6 + A ушкодження',
+						tier2: '8 + A ушкодження',
+						tier3: '12 + A ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the start of your next turn, whenever the target finishes moving or being force moved, you can use a free triggered action to shift up to your speed. You must end this shift adjacent to the target.')
+				FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу, коли ціль завершує рух або примусове переміщення, ви можете використати вільну тригерну дію, щоб зсунутися на відстань до вашої швидкості. Ви повинні завершити цей зсув поруч із ціллю.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-12',
-			name: 'Stunning Blow',
-			description: 'You focus your psionic technique into a concussive punch.',
+			name: 'Оглушливий удар',
+			description: 'Ви концентруєте псіонічну техніку в контузивний удар.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -687,16 +689,16 @@ You have an epic resource called order. Each time you finish a respite, you gain
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A damage; I < [слабкий], dazed and slowed (save ends)',
-					tier2: '5 + A damage; I < [середній], dazed and slowed (save ends)',
-					tier3: '7 + A damage; I < [сильний], dazed and slowed (save ends)'
+					tier1: '4 + A ушкодження; I < [слабкий], оглушений і сповільнений (рят. кидок)',
+					tier2: '5 + A ушкодження; I < [середній], оглушений і сповільнений (рят. кидок)',
+					tier3: '7 + A ушкодження; I < [сильний], оглушений і сповільнений (рят. кидок)'
 				}))
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-13',
-			name: 'Arcane Disruptor',
-			description: 'Your blow reorders a foe’s body, causing pain if they attempt to channel sorcery.',
+			name: 'Арканний руйнівник',
+			description: 'Ваш удар порушує порядок тіла ворога, спричиняючи біль, якщо він намагається каналізувати чаклунство.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -706,18 +708,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '8 + A psychic damage; M < [слабкий], weakened (save ends)',
-						tier2: '12 + A psychic damage; M < [середній], weakened (save ends)',
-						tier3: '16 + A psychic damage; M < [сильний], weakened (save ends)'
+						tier1: '8 + A психічне ушкодження; M < [слабкий], ослаблений (рят. кидок)',
+						tier2: '12 + A психічне ушкодження; M < [середній], ослаблений (рят. кидок)',
+						tier3: '16 + A психічне ушкодження; M < [сильний], ослаблений (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While weakened this way, the target takes damage equal to your Intuition score whenever they use a supernatural ability that costs Malice.')
+				FactoryLogic.createAbilitySectionText('Поки ціль ослаблена таким чином, вона отримує ушкодження, рівне вашому показникові Інтуїції, щоразу, коли використовує надприродну здібність, яка вимагає Malice.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-14',
-			name: 'Impart Force',
-			description: 'A single touch from you, and your enemy flies backward.',
+			name: 'Накладення сили',
+			description: 'Один ваш дотик — і ворог відлітає назад.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -727,18 +729,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Intuition],
-						tier1: 'Push 3',
-						tier2: 'Push 5',
-						tier3: 'Push 7'
+						tier1: 'штовх 3',
+						tier2: 'штовх 5',
+						tier3: 'штовх 7'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('An object you target must be your size or smaller. You gain an edge on this ability. Additionally, for each square you push the target, they take 1 psychic damage')
+				FactoryLogic.createAbilitySectionText('Об’єкт, на який ви націлюєтесь, має бути вашого розміру або меншим. Ви отримуєте перевагу на цю здібність. Додатково, за кожну клітину, на яку ви штовхаєте ціль, вона отримує 1 психічне ушкодження')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-15',
-			name: 'Phase Strike',
-			description: 'For a moment, your foe slips out of phase with this manifold.',
+			name: 'Фазовий удар',
+			description: 'На мить ворог виходить з фази цього маніфолду.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -748,18 +750,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A psychic damage; I < [слабкий], the target goes out of phase (save ends)',
-						tier2: '4 + A psychic damage; I < [середній], the target goes out of phase (save ends)',
-						tier3: '6 + A psychic damage; I < [сильний], the target goes out of phase (save ends)'
+						tier1: '3 + A психічне ушкодження; I < [слабкий], ціль виходить з фази (рят. кидок)',
+						tier2: '4 + A психічне ушкодження; I < [середній], ціль виходить з фази (рят. кидок)',
+						tier3: '6 + A психічне ушкодження; I < [сильний], ціль виходить з фази (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A target who goes out of phase is slowed, has their stability reduced by 2, and can’t obtain a tier 3 outcome on ability rolls.')
+				FactoryLogic.createAbilitySectionText('Ціль, яка виходить з фази, сповільнюється, її стійкість знижується на 2, і вона не може отримати результат третього рівня (tier 3) на кидках здібностей.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-16',
-			name: 'A Squad Unto Myself',
-			description: 'You move so quickly, it seems as though an army assaulted your foes.',
+			name: 'Армія в одній особі',
+			description: 'Ви рухаєтеся так швидко, що здається, ніби на ворогів напала армія.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
@@ -769,71 +771,71 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '6 damage',
-						tier2: '9 damage',
-						tier3: '13 damage'
+						tier1: '6 ушкодження',
+						tier2: '9 ушкодження',
+						tier3: '13 ушкодження'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can take the Disengage move action as a free maneuver before or after you use this ability.')
+				FactoryLogic.createAbilitySectionText('Ви можете виконати дію руху «Відведення» як вільний маневр до або після використання цієї здібності.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-17',
-			name: 'Absorption Field',
-			description: 'Your null field absorbs kinetic energy.',
+			name: 'Поле поглинання',
+			description: 'Ваше нульове поле поглинає кінетичну енергію.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, кожен ворог у ній отримує bane на кидки здібностей.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-18',
-			name: 'Molecular Rearrangement Field',
-			description: 'Your enemies’ wounds open, your allies’ wounds close.',
+			name: 'Поле молекулярної перестановки',
+			description: 'У ворогів відкриваються рани, у союзників — загоєння.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, кожен ворог з I < [середній], який вперше в раунді входить в область або починає свій хід там, отримує bleeding (save ends). Кожен союзник, який вперше в раунді входить в область або починає там свій хід, отримує тимчасову витривалість, рівну вашому показникові Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-19',
-			name: 'Stabilizing Field',
-			description: 'You project order, making it harder for your enemies to interfere with you and your allies.',
+			name: 'Поле стабілізації',
+			description: 'Ви проєктуєте порядок, ускладнюючи ворогам втручання в дії вас та ваших союзників.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, ви ігноруєте важкодоступну місцевість і для вас знижується потужність ворожих ефектів, спрямованих на вас, на 1. Також на початку кожного вашого ходу ви можете використати вільну тригерну дію, щоб припинити один ефект на собі, який закінчується рят. кидком або який завершується в кінці вашого ходу. Кожен союзник в області також отримує ці переваги.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-20',
-			name: 'Synapse Field',
-			description: 'Attacks made by allies in your null field disrupt your enemies’ thoughts, causing psychic pain.',
+			name: 'Синаптичне поле',
+			description: 'Атаки союзників у вашому нульовому полі порушують думки ворогів, спричиняючи психічний біль.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички розмір вашої здібності «Нульове поле» збільшується на 1. Поки область так збільшена, коли ворог у ній отримує шкоду за кидком, він також отримує додаткове психічне ушкодження, рівне подвоєному значенню вашого показника Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-21',
-			name: 'Anticipating Strike',
-			description: 'You suddenly strike an enemy, then grab them in a psionically enhanced grip.',
-			type: FactoryLogic.type.createTrigger('The target moves or uses a main action', { free: true }),
+			name: 'Передбачливий удар',
+			description: 'Ви раптово вражаєте ворога, а потім хапаєте його псіонічно посиленою хваткою.',
+			type: FactoryLogic.type.createTrigger('Ціль рухається або використовує основну дію', { free: true }),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
 			target: 'Одна істота',
@@ -842,18 +844,18 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '7 + A damage; I < [слабкий], restrained (save ends)',
-						tier2: '10 + A damage; I < [середній], restrained (save ends)',
-						tier3: '13 + A damage; I < [сильний], restrained (save ends)'
+						tier1: '7 + A ушкодження; I < [слабкий], звʼязаний (рят. кидок)',
+						tier2: '10 + A ушкодження; I < [середній], звʼязаний (рят. кидок)',
+						tier3: '13 + A ушкодження; I < [сильний], звʼязаний (рят. кидок)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('This strike resolves before the triggering movement or main action.')
+				FactoryLogic.createAbilitySectionText('Цей удар розв’язується перед рухом або основною дією, що спричинила тригер.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-22',
-			name: 'Iron Grip',
-			description: 'You grab the target with supernatural force.',
+			name: 'Залізний хват',
+			description: 'Ви хапаєте ціль надприродною силою.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -863,44 +865,44 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '10 + A damage; A < [слабкий], grabbed',
-						tier2: '14 + A damage; A < [середній], grabbed',
-						tier3: '18 + A damage; A < [сильний], grabbed'
+						tier1: '10 + A ушкодження; A < [слабкий], схоплений',
+						tier2: '14 + A ушкодження; A < [середній], схоплений',
+						tier3: '18 + A ушкодження; A < [сильний], схоплений'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While grabbed this way, the target takes a bane on the Escape Grab maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.')
+				FactoryLogic.createAbilitySectionText('Поки ціль схоплена таким чином, вона отримує bane на маневр Escape Grab. Кожного разу, коли вона використовує цей маневр, вона отримує ушкодження, рівне подвоєному вашому показникові Ловкості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-23',
-			name: 'Phase Leap',
-			description: 'You leap beyond reality, leaving an afterimage of yourself.',
+			name: 'Фазовий стрибок',
+			description: 'Ви стрибаєте поза реальністю, залишаючи післяобраз себе.',
 			type: FactoryLogic.type.createMove(),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Self',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your Null Field ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage’s space.')
+				FactoryLogic.createAbilitySectionText('Ви стрибаєте на відстань до вашої швидкості, не провокуючи опортуністичних атак. До кінця вашого наступного ходу в клітині, яку ви покинули, залишається статичний післяобраз вас, і будь-який ворог поруч із цим післяобразом отримує bane на кидки здібностей. Ви можете використовувати свої здібності зі своєї клітини або з клітини післяобразу, ніби ви все ще там. Додатково, якщо ваша здібність «Нульове поле» активна, ваш післяобраз також проектує ауру цієї здібності, якою ви керуєте, ніби перебуваєте в клітині післяобразу.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-24',
-			name: 'Synaptic Reset',
-			description: 'You expand your nullifying power to mitigate harmful effects.',
+			name: 'Синаптичне скидання',
+			description: 'Ви розширюєте свою нівелюючу силу, щоб пом’якшити шкідливі ефекти.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target can end any conditions or effects on themself, and gains 5 temporary Stamina for each condition or effect removed.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль може припинити будь-які стани або ефекти на собі та отримує 5 тимчасової витривалості за кожен припинений стан або ефект.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-25',
-			name: 'Arcane Purge',
-			description: 'You focus your null field into a pressure point strike that prevents your foe from channeling sorcery.',
+			name: 'Арканне очищення',
+			description: 'Ви концентруєте Нульове поле в удар по точці тиску, що перешкоджає ворогу каналізувати чаклунство.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -910,9 +912,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '13 + A damage; M < [слабкий], the target is suppressed (save ends)',
-						tier2: '19 + A damage; M < [середній], the target is suppressed (save ends)',
-						tier3: '24 + A damage; M < [сильний], the target is suppressed (save ends)'
+						tier1: '13 + A ушкодження; M < [слабкий], ціль пригнічена (рят. кидок)',
+						tier2: '19 + A ушкодження; M < [середній], ціль пригнічена (рят. кидок)',
+						tier3: '24 + A ушкодження; M < [сильний], ціль пригнічена (рят. кидок)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.')
@@ -920,8 +922,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-26',
-			name: 'Phase Hurl',
-			description: 'You throw your foe out of phase with this manifold, causing them to harm other enemies as they return.',
+			name: 'Фазовий кидок',
+			description: 'Ви викидаєте ворога з фази цього маніфолду, через що він шкодить іншим ворогам, повертаючись.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -931,9 +933,9 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '9 + A damage; push 5; I < [слабкий], dazed (save ends)',
-						tier2: '13 + A damage; push 7;  I < [середній], dazed (save ends)',
-						tier3: '18 + A damage; push 10; I < [сильний], dazed (save ends)'
+						tier1: '9 + A ушкодження; штовх 5; I < [слабкий], оглушений (рят. кидок)',
+						tier2: '13 + A ушкодження; штовх 7; I < [середній], оглушений (рят. кидок)',
+						tier3: '18 + A ушкодження; штовх 10; I < [сильний], оглушений (рят. кидок)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target and each creature or object they collide with from this forced movement takes psychic damage equal to the total number of squares the target was force moved. While the target is dazed this way, they see glimpses of creatures from other parts of the timescape.')
@@ -941,8 +943,8 @@ You have an epic resource called order. Each time you finish a respite, you gain
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-27',
-			name: 'Scalar Assault',
-			description: 'You warp reality to grow a limb for just a moment and make a single devastating attack.',
+			name: 'Скалярний штурм',
+			description: 'Ви викривляєте реальність, щоб на мить виростити кінцівку і завдати один нищівний удар.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
@@ -952,24 +954,24 @@ You have an epic resource called order. Each time you finish a respite, you gain
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '12 psychic damage; push 3',
-						tier2: '17 psychic damage; push 5',
-						tier3: '23 psychic damage; push 7'
+						tier1: '12 психічне ушкодження; штовх 3',
+						tier2: '17 психічне ушкодження; штовх 5',
+						tier3: '23 психічне ушкодження; штовх 7'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'null-ability-28',
-			name: 'Synaptic Anchor',
-			description: 'You disrupt an enemy’s strike and create a feedback loop in their mind, preventing them from focusing on future attacks.',
-			type: FactoryLogic.type.createTrigger('The target takes damage from another creature’s ability while in the area of your Null Field ability', { free: true }),
+			name: 'Синаптичний якір',
+			description: 'Ви порушуєте удар ворога і створюєте петлю зворотного зв’язку в його розумі, що заважає зосередитися на майбутніх атаках.',
+			type: FactoryLogic.type.createTrigger('Ціль отримує ушкодження від здібності іншої істоти, поки перебуває в області вашої здібності «Нульове поле»', { free: true }),
 			keywords: [AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createSpecial('Self; see below')],
-			target: 'Self or one creature',
+			target: 'На себе або одно істоту',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target takes half the damage, and if the triggering creature has I < [середній], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.')
+				FactoryLogic.createAbilitySectionText('Ціль отримує половину ушкодження, і якщо істота, що спричинила тригер, має I < [середній], вона стає dazed (save ends). Поки істота, що спричинила тригер, є dazed таким чином, вона отримує психічне ушкодження, рівне вашому показникові Інтуїції, щоразу, коли використовує основну дію.')
 			]
 		})
 	],

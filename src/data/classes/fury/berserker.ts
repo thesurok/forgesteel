@@ -7,44 +7,44 @@ import { SubClass } from '@/models/subclass';
 
 export const berserker: SubClass = {
 	id: 'fury-sub-1',
-	name: 'Berserker',
-	description: 'You channel your rage into expressions of physical might, acting as a living version of the forces that reshape the world.',
+	name: 'Берсеркер',
+	description: 'Ви спрямовуєте свій гнів у прояви фізичної сили, діючи як жива сила, що перетворює світ.',
 	featuresByLevel: [
 		{
 			level: 1,
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-sub-1-1-1',
-					selected: ['Lift']
+					selected: ['Підйом']
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-1-1-2'
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-1-3',
-					name: 'Primordial Strength',
+					name: 'Первісна Сила',
 					description: `
-Whenever you damage an object with a weapon strike, the strike deals extra damage equal to your Might score. Additionally, whenever you push another creature into an object, the creature takes extra damage equal to your Might score.
+Кожного разу, коли ви пошкоджуєте обʼєкт ударом зброї, удар завдає додаткової шкоди, рівної вашому показникові Сили. Крім того, коли ви штовхаєте іншу істоту в обʼєкт, ця істота отримує додаткову шкоду, рівну вашому показникові Сили.
 
-As your ferocity grows, you gain benefits as noted on the Berserker Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+Коли ваша лють зростає, ви отримуєте переваги, зазначені в таблиці «Зростаюча Лють Берсеркера». Переваги накопичуються, окрім випадків, коли покращена перевага замінює менш потужну.
 
-* **Ferocity 2**: Whenever you use the Knockback maneuver, the forced movement distance gains a bonus equal to your Might score.
-* **Ferocity 4**: The first time you push a creature on a turn, you gain 1 surge.
-* **Ferocity 6**: You gain an edge on Might tests and the Knockback maneuver.`
+* **Лють 2**: Коли ви використовуєте маневр «Відштовхування», відстань примусового переміщення отримує бонус, рівний вашому показникові Сили.
+* **Лють 4**: Першого разу в ході, коли ви штовхаєте істоту, ви отримуєте 1 сплеск.
+* **Лють 6**: Ви маєте перевагу на перевірках Сили та при маневрі «Відштовхування».`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'fury-sub-1-1-4',
-						name: 'Lines of Force',
-						description: 'You redirect the energy of motion.',
-						type: FactoryLogic.type.createTrigger('The target would be force moved.'),
+						name: 'Лінії Сили',
+						description: 'Ви перенаправляєте енергію руху.',
+						type: FactoryLogic.type.createTrigger('Ціль мала б бути примусово переміщена.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Self or one creature',
+						target: 'Себе або одну істоту',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can select a new target of the same size or smaller within distance to be force moved instead. You become the source of the forced movement, determine the new target’s destination, and can push the target instead of using the original forced movement type. Additionally, the forced movement distance gains a bonus equal to your Might score.'),
+							FactoryLogic.createAbilitySectionText('Ви можете вибрати нову ціль такого ж розміру або меншу в межах дистанції для примусового переміщення замість початкової. Ви стаєте джерелом примусового переміщення, визначаєте призначення нової цілі й можете штовхнути ціль замість використання первісного типу примусового переміщення. Додатково відстань примусового переміщення отримує бонус, рівний вашому показникові Сили.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The forced movement distance gains a bonus equal to twice your Might score instead.'
+								effect: 'Відстань примусового переміщення натомість отримує бонус, рівний подвоєному показникові вашої Сили.'
 							})
 						]
 					})
@@ -56,26 +56,26 @@ As your ferocity grows, you gain benefits as noted on the Berserker Growing Fero
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-2-1',
-					name: 'Unstoppable Force',
-					description: 'Whenever you use the Charge main action, you can use a strike signature ability or a strike heroic ability instead of a free strike. Additionally, you can jump as part of your charge.'
+					name: 'Непереборна Сила',
+					description: 'Коли ви використовуєте основну дію «Ривок», ви можете застосувати підписну або героїчну здібність удару замість безкоштовного удару. Додатково ви можете виконати стрибок у складі ривка.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-1-2-2',
-					name: '2nd-Level Aspect Ability',
+					name: 'Здібність Аспекту 2-го Рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-2-2a',
-									name: 'Special Delivery',
-									description: 'You ready?',
+									name: 'Спеціальна Доставка',
+									description: 'Готові?',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One willing ally',
+									target: 'Один охочий союзник',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You vertically push the target up to 4 squares. This forced movement ignores the target’s stability, and the target takes no damage from colliding with creatures or objects. At the end of this movement, the target can make a free strike that deals extra damage equal to your Might score.')
+										FactoryLogic.createAbilitySectionText('Ви вертикально підштовхуєте ціль до 4 клітинок. Це примусове переміщення ігнорує стабільність цілі, і ціль не отримує шкоди від зіткнення з істотами або обʼєктами. Наприкінці цього переміщення ціль може виконати безкоштовний удар, який завдає додаткової шкоди, рівної вашому показникові Сили.')
 									]
 								})
 							}),
@@ -85,24 +85,24 @@ As your ferocity grows, you gain benefits as noted on the Berserker Growing Fero
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-2-2b',
-									name: 'Wrecking Ball',
-									description: 'It’s easier to destroy than to create. Much easier, in fact!',
+									name: 'Руйнівна Куля',
+									description: 'Руйнувати значно легше, ніж створювати. Насправді набагато легше!',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self; see below',
+									target: 'Себе; див. нижче',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-You move up to your speed in a straight line. During this movement, you can move through mundane structures, including walls, which are difficult terrain for you. You automatically destroy each square of structure you move through and leave behind a square of difficult terrain.
+Ви рухаєтеся на відстань, яка дорівнює вашій швидкості, по прямій. Під час цього руху ви можете проходити через звичайні конструкції, включаючи стіни, які для вас є важкодоступною місцевістю. Ви автоматично знищуєте кожну клітинку конструкції, через яку проходите, і залишаєте після себе клітинку важкодоступної місцевості.
 
-Additionally, you make one power roll that targets each enemy you move adjacent to during this movement.`),
+Додатково ви виконуєте один кидок сили, спрямований на кожного ворога, поруч з яким ви опинилися під час цього руху.`),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: 'Push 1',
-												tier2: 'Push 2',
-												tier3: 'Push 3'
+												tier1: 'Відштовхнути на 1 клітину',
+												tier2: 'Відштовхнути на 2 клітини',
+												tier3: 'Відштовхнути на 3 клітини'
 											})
 										)
 									]
@@ -119,8 +119,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-3-1',
-					name: 'Immovable Object',
-					description: 'You add your level to your effective size for the purpose of interacting with creatures and objects, including determining whether you can lift an object, are affected by forced movement, and so forth. This has no effect on whether you can be grabbed.'
+					name: 'Нерухомий Обʼєкт',
+					description: 'Ви додаєте свій рівень до вашого ефективного розміру для цілей взаємодії з істотами та обʼєктами, зокрема для визначення, чи можете ви підняти обʼєкт, чи на вас діє примусове переміщення тощо. Це не впливає на те, чи можуть вас схопити.'
 				}),
 				FactoryLogic.feature.createBonus({
 					id: 'fury-sub-1-3-2',
@@ -134,8 +134,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-4-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**8 Ferocity:** The first time you push a creature on a turn, you gain 2 surges.'
+					name: 'Покращення Зростаючої Люті',
+					description: '**8 Лють:** Першого разу в ході, коли ви штовхаєте істоту, ви отримуєте 2 сплески.'
 				})
 			]
 		},
@@ -144,8 +144,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-5-1',
-					name: 'Bounder',
-					description: 'Your jump distance and height double (see Movement Types in Chapter 10: Combat). Additionally, when you fall, you reduce the effective height of your fall by a number of squares equal to your jump distance for the purpose of determining damage and whether you land prone (see Falling in Chapter 10). You are not prone after falling and landing on another creature.'
+					name: 'Стрибун',
+					description: 'Відстань і висота вашого стрибка подвоюються (див. Розділ 10: Бій — Типи руху). Крім того, коли ви падаєте, ви зменшуєте ефективну висоту падіння на кількість клітинок, рівну вашій дистанції стрибка, для визначення шкоди та того, чи опинитесь ви лежачи (див. Падіння в Розділі 10). Ви не опиняєтесь лежачи після падіння й приземлення на іншу істоту.'
 				})
 			]
 		},
@@ -154,27 +154,27 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-1-6-1',
-					name: '6th-Level Aspect Ability',
+					name: 'Здібність Аспекту 6-го Рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-6-1a',
-									name: 'Avalanche Impact',
-									description: 'You leap and crash down, causing a shockwave that devastates foes.',
+									name: 'Лавинний Удар',
+									description: 'Ви стрибаєте й потужно вдаряєтесь об землю, спричиняючи ударну хвилю, що нищить ворогів.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You jump up to your maximum jump distance and make one power roll that targets each creature adjacent to the space where you land.'),
+										FactoryLogic.createAbilitySectionText('Ви стрибаєте на відстань, рівну вашому максимальному стрибку, і виконуєте один кидок сили, спрямований на кожну істоту, що знаходиться поруч із клітинкою, де ви приземляєтесь.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '4 damage; push 1',
-												tier2: '7 damage; push 2',
-												tier3: '11 damage; push 3'
+												tier1: '4 шкоди; відштовхнути на 1 клітину',
+												tier2: '7 шкоди; відштовхнути на 2 клітини',
+												tier3: '11 шкоди; відштовхнути на 3 клітини'
 											})
 										)
 									]
@@ -186,8 +186,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-6-1b',
-									name: 'Force of Storms',
-									description: 'You strike an enemy hard enough to be a projectile that knocks a crowd of creatures around.',
+									name: 'Сила Штормів',
+									description: 'Ви вражаєте ворога настільки сильно, що він стає снарядом, який відштовхує групу істот.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -197,12 +197,12 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '7 + M damage; push 3',
-												tier2: '11 + M damage; push 5',
-												tier3: '16 + M damage; push 7'
+												tier1: '7 + С шкоди; відштовхнути на 3 клітини',
+												tier2: '11 + С шкоди; відштовхнути на 5 клітин',
+												tier3: '16 + С шкоди; відштовхнути на 7 клітин'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('When the target ends this forced movement, each creature within 2 squares of the target is pushed 3 squares.')
+										FactoryLogic.createAbilitySectionText('Коли ціль завершує це примусове переміщення, кожна істота в межах 2 клітинок від цілі штовхається на 3 клітинки.')
 									]
 								})
 							}),
@@ -217,8 +217,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-7-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**10 Ferocity:** You have a double edge on Might tests and the Knockback maneuver.'
+					name: 'Покращення Зростаючої Люті',
+					description: '**10 Лють:** У вас подвійна перевага на перевірках Сили та при маневрі «Відштовхування». '
 				})
 			]
 		},
@@ -227,8 +227,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-8-1',
-					name: 'Strongest There Is',
-					description: 'Your strength is unmatched. Whenever you make a Might test, you can roll three dice and choose which two to use. Additionally, whenever you use the Knockback maneuver, the forced movement distance gains a bonus equal to your Might score.'
+					name: 'Найсильніший',
+					description: 'Ваша сила неперевершена. Коли ви виконуєте перевірку Сили, ви можете кинути три кубики й обрати два з них для результату. Додатково, коли ви використовуєте маневр «Відштовхування», відстань примусового переміщення отримує бонус, рівний вашому показникові Сили.'
 				})
 			]
 		},
@@ -237,14 +237,14 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-1-9-1',
-					name: '9th-Level Aspect Ability',
+					name: 'Здібність Аспекту 9-го Рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-9-1a',
-									name: 'Death Comes for You All!',
-									description: 'You use your weapon to create a destructive shockwave.',
+									name: 'Смерть Прийде До Вас Усіх!',
+									description: 'Ви використовуєте свою зброю, щоб створити руйнівну ударну хвилю.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
@@ -254,12 +254,12 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '7 damage; push 3',
-												tier2: '10 damage; push 5',
-												tier3: '15 damage; push 7'
+												tier1: '7 шкоди; відштовхнути на 3 клітини',
+												tier2: '10 шкоди; відштовхнути на 5 клітин',
+												tier3: '15 шкоди; відштовхнути на 7 клітин'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If this forced movement causes a target to be hurled through an object, that target takes an extra 10 damage.')
+										FactoryLogic.createAbilitySectionText('Якщо це примусове переміщення спричиняє викидання цілі через обʼєкт, ця ціль отримує додатково 10 шкоди.')
 									]
 								})
 							}),
@@ -269,8 +269,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-1-9-1b',
-									name: 'Primordial Vortex',
-									description: 'You channel the power of the Primordial Chaos to pull foes to you.',
+									name: 'Первісний Вихор',
+									description: 'Ви спрямовуєте силу Первісного Хаосу, щоб притягнути ворогів до себе.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
@@ -280,12 +280,12 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '3 damage; vertical pull 3',
-												tier2: '5 damage; vertical pull 5',
-												tier3: '8 damage; vertical pull 7'
+												tier1: '3 шкоди; вертикальне притягування на 3 клітини',
+												tier2: '5 шкоди; вертикальне притягування на 5 клітин',
+												tier3: '8 шкоди; вертикальне притягування на 7 клітин'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If this forced movement causes a target to slam into you, you take no damage from the collision and the target takes the damage you would have taken.')
+										FactoryLogic.createAbilitySectionText('Якщо це примусове переміщення спричиняє вдаряння цілі об вас, ви не отримуєте шкоди від зіткнення, а ціль отримує ту шкоду, яку б отримали ви.')
 									]
 								})
 							}),
@@ -300,8 +300,8 @@ Additionally, you make one power roll that targets each enemy you move adjacent 
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-10-1',
-					name: 'Growing Ferocity Improvement',
-					description: '**12 Ferocity:** Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, whenever you make a power roll that imposes forced movement on a target, the forced movement distance gains a bonus equal to your Might score.'
+					name: 'Покращення Зростаючої Люті',
+					description: '**12 Лють:** Коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової витривалості. Крім того, коли ви виконуєте кидок сили, який накладає примусове переміщення на ціль, відстань примусового переміщення отримує бонус, рівний вашому показникові Сили.'
 				})
 			]
 		}

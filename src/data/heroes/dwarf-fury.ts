@@ -2268,7 +2268,7 @@ export const dwarfFury = {
 												qualifier: ''
 											}
 										],
-										target: 'Self or one creature',
+										target: 'На себе або одно істоту',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,

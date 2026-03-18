@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const stormwight: SubClass = {
 	id: 'fury-sub-3',
-	name: 'Stormwight',
-	description: 'You channel your rage into the form of animals and primordial storms.',
+	name: 'Штормовий воїн',
+	description: 'Ви спрямовуєте свою лють у форму тварин та первісних бур.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -18,26 +18,26 @@ export const stormwight: SubClass = {
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-3-1-2',
-					name: 'Beast Shape',
+					name: 'Форма звіра',
 					types: ['Stormwight']
 				}),
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-1-3',
-					name: 'Relentless Hunter',
-					description: 'You gain an edge on tests made using the Track skill.'
+					name: 'Невпинний мисливець',
+					description: 'Ви отримуєте перевагу при тестах, виконаних із використанням навику Track.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'fury-sub-3-1-4',
-						name: 'Furious Change',
-						description: 'In your anger, you revert to a more bestial form.',
-						type: FactoryLogic.type.createTrigger('You lose Stamina and are not dying.'),
+						name: 'Люте перевтілення',
+						description: 'У люті ви повертаєтесь до більш звірячої форми.',
+						type: FactoryLogic.type.createTrigger('Ви втрачаєте Витривалість і не вмираєте.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your Might score and can enter your animal form or hybrid form.'),
+							FactoryLogic.createAbilitySectionText('Ви отримуєте тимчасову Витривалість, рівну вашому показнику Сили (Might), і можете перейти у форму тварини або гібридну форму.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'If you are not dying, you can spend a Recovery.'
+								effect: 'Якщо ви не вмираєте, ви можете витратити Відновлення.'
 							})
 						]
 					})
@@ -45,16 +45,16 @@ export const stormwight: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'fury-sub-3-1-5',
-						name: 'Aspect of the Wild',
-						description: 'You assume the form of the animal who channels your ferocity.',
+						name: 'Аспект дикості',
+						description: 'Ви набуваєте форму тварини, яка каналізує вашу лютость.',
 						keywords: [AbilityKeyword.Magic],
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Self',
+						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can shapeshift into the animal defined by your stormwight kit, into a hybrid form, or back into your true form. While in animal form or hybrid form, you can speak as you usually do, and you can also speak to animals who share your form. If you are in a negotiation with an animal while in animal form, you treat your Renown as 2 higher than usual.'),
+							FactoryLogic.createAbilitySectionText('Ви можете перевтілитися в тварину, визначену вашим набором штормового воїна, у гібридну форму або повернутися до своєї істинної форми. Поки ви у формі тварини або гібриді, ви можете говорити як зазвичай і також спілкуватися з тваринами, що мають таку ж форму. Якщо ви ведете переговори з твариною в формі тварини, ваш Renown вважається на 2 вищим, ніж зазвичай.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'As a free maneuver, you can shapeshift a second time, either into another animal form, into your hybrid form, or back into your true form.'
+								effect: 'Як безкоштовний маневр, ви можете перевтілитися вдруге, або в іншу форму тварини, або в свою гібридну форму, або повернутися до своєї істинної форми.'
 							})
 						]
 					})
@@ -66,19 +66,19 @@ export const stormwight: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-2-1',
-					name: 'Tooth and Claw',
-					description: 'At the end of each of your turns, each enemy adjacent to you takes damage equal to your Might score.'
+					name: 'Зуби та кігті',
+					description: 'Наприкінці кожного вашого ходу кожен ворог поруч отримує ушкодження, рівні вашому показнику Сили (Might).'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-3-2-2',
-					name: '2nd-Level Aspect Ability',
+					name: 'Здібність Аспекту 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-2-2a',
-									name: 'Apex Predator',
-									description: 'I will hunt you down.',
+									name: 'Вершинний хижак',
+									description: 'Я вполюю тебе.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -87,11 +87,11 @@ export const stormwight: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '4 + M damage; I < [слабкий], slowed (save ends)',
-											tier2: '6 + M damage; I < [середній], slowed (save ends)',
-											tier3: '10 + M damage; I < [сильний], slowed (save ends)'
+											tier1: '4 + С шкоди; І < [слабкий], сповільнений (рят. кидок закінчує)',
+											tier2: '6 + С шкоди; І < [середній], сповільнений (рят. кидок закінчує)',
+											tier3: '10 + С шкоди; І < [сильний], сповільнений (рят. кидок закінчує)'
 										})),
-										FactoryLogic.createAbilitySectionText('The target can’t be hidden from you for 24 hours. Until the end of the encounter, whenever the target willingly moves, you can use a free triggered action to move.')
+										FactoryLogic.createAbilitySectionText('Ціль не може ховатися від вас протягом 24 годин. До кінця зустрічі, коли ця ціль добровільно рухається, ви можете виконати переміщення як безкоштовну тригерну дію.')
 									]
 								})
 							}),
@@ -101,21 +101,21 @@ export const stormwight: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-2-2b',
-									name: 'Visceral Roar',
-									description: 'The sound of the storm within you staggers your opponents.',
+									name: 'Інстинктивний рик',
+									description: 'Звук бурі всередині вас приголомшує супротивників.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-									target: 'Кожен ворог у зоні',
+									target: 'Кожна істота в зоні',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Might],
-											tier1: '2 damage; push 1; M < [слабкий], dazed (save ends)',
-											tier2: '5 damage; push 2; M < [середній], dazed (save ends)',
-											tier3: '7 damage; push 3; M < [сильний], dazed (save ends)'
+											tier1: '2 шкоди; відштовхнути на 1 клітину; С < [слабкий], приголомшений (рят. кидок закінчує)',
+											tier2: '5 шкоди; відштовхнути на 2 клітини; С < [середній], приголомшений (рят. кидок закінчує)',
+											tier3: '7 шкоди; відштовхнути на 3 клітини; С < [сильний], приголомшений (рят. кидок закінчує)'
 										})),
-										FactoryLogic.createAbilitySectionText('This ability deals your primordial damage type.')
+										FactoryLogic.createAbilitySectionText('Ця здібність завдає ушкоджень вашого первісного типу.')
 									]
 								})
 							}),
@@ -130,11 +130,11 @@ export const stormwight: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-1-3-1',
-					name: 'Nature’s Knight',
+					name: 'Лицар Природи',
 					description: `
-You can speak with animals and elementals. Additionally, you automatically sense the presence of animals and elementals within 10 squares of you, even if they are hidden.
+Ви можете говорити з тваринами та елементалями. Крім того, ви автоматично відчуваєте присутність тварин і елементалів у межах 10 клітин від вас, навіть якщо вони приховані.
 
-When you are in a negotiation with an animal or elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown in a negotiation with an animal of your type while in animal form.`
+Коли ви перебуваєте в переговорі з твариною або елементалем, ваш Renown вважається на 1 вищим, ніж зазвичай. Це сумується з підвищенням вашого ефективного Renown у переговорах з твариною вашого типу, коли ви у формі тварини.`
 				})
 			]
 		},
@@ -143,8 +143,8 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-5-1',
-					name: 'Stormborn',
-					description: 'You and each ally within 5 squares of you ignore negative effects from inclement weather, such as banes or environmental damage. Additionally, you can use the Blessing of Fortunate Weather feature as if you were a 1st-level conduit (see 1st-Level Domain Feature in the Conduit section).'
+					name: 'Народжений штормом',
+					description: 'Ви та кожен союзник у межах 5 клітин ігноруєте негативні ефекти від негоди, такі як банси або ушкодження від довкілля. Крім того, ви можете використовувати Blessing of Fortunate Weather так, ніби ви були провідником 1-го рівня (див. 1st-Level Domain Feature у розділі Conduit).'
 				})
 			]
 		},
@@ -153,14 +153,14 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-3-6-1',
-					name: '6th-Level Aspect Ability',
+					name: 'Здібність аспекту 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-6-1a',
-									name: 'Pounce',
-									description: 'You strike at the target like the ultimate predator you are.',
+									name: 'Стрибок',
+									description: 'Ви вражаєте ціль, як справжній вершний хижак.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -170,12 +170,12 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '8 damage; M < [слабкий], grabbed',
-												tier2: '13 damage; M < [середній], grabbed',
-												tier3: '17 damage; M < [сильний], grabbed'
+												tier1: '8 шкоди; С < [слабкий], схоплений',
+												tier2: '13 шкоди; С < [середній], схоплений',
+												tier3: '17 шкоди; С < [сильний], схоплений'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('You can shift up to 4 squares, bringing the target with you. While grabbed this way, the target takes damage equal to twice your Might score at the start of each of your turns.')
+										FactoryLogic.createAbilitySectionText('Ви можете зсунутися на відстань до 4 клітин, перемістивши ціль разом із собою. Поки ціль утримується таким чином, вона отримує ушкодження, рівні двом вашим показникам Сили, на початку кожного вашого ходу.')
 									]
 								})
 							}),
@@ -185,16 +185,16 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-6-1b',
-									name: 'Riders on the Storm',
-									description: 'You focus your connection to the Primordial Chaos into a seething storm.',
+									name: 'Вершники шторму',
+									description: 'Ви концентруєте свій зв’язок із Первісним Хаосом у киплячу бурю.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
-									target: 'Each creature in the area',
+									target: 'Кожна істота в зоні',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy target takes damage of your primordial damage type equal to twice your Might score at the end of each of your turns. Additionally, you can fly while the aura is active. Each ally target who starts or ends their turn in the area can also fly until the start of their next turn or until the effect ends.'),
-										FactoryLogic.createAbilitySectionText('When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a primordial storm that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.')
+										FactoryLogic.createAbilitySectionText('До кінця зустрічі або поки ви не станете вмираючим, кожна ворожа ціль отримує ушкодження вашого первісного типу, рівні двом вашим показникам Сили, наприкінці кожного вашого ходу. Крім того, поки аура активна, ви можете літати. Кожен союзник, який починає або завершує свій хід у зоні, також може літати до початку свого наступного ходу або поки ефект не завершиться.'),
+										FactoryLogic.createAbilitySectionText('Коли ви використовуєте цю здібність поза боєм, не витрачаючи люті, ви мусите провести 1 безперервну хвилину, викликаючи первісну бурю, яка заповнює зону, і отримуєте 1d6 ушкоджень перед тим, як здібність набирає чинності. Буря триває 1 годину або до початку бою.')
 									]
 								})
 							}),
@@ -209,8 +209,8 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 			features: [
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-8-1',
-					name: 'Menagerie',
-					description: 'You can use all stormwight kits. During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature’s Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a test to track another creature, you can roll three dice and choose which two to use.'
+					name: 'Менажерія',
+					description: 'Ви можете використовувати всі набори штормового воїна. Під час перепочинку ви можете обрати заміну свого набору штормового воїна та все ще виконати іншу дію перепочинку. Ваша здатність «Лицар Природи» тепер дозволяє автоматично відчувати присутність тварин у межах 1 милі від вас. Крім того, коли ви робите перевірку для відстеження істоти, ви можете кинути три кубики та обрати, які два використовувати.'
 				})
 			]
 		},
@@ -219,14 +219,14 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'fury-sub-3-9-1',
-					name: '9th-Level Aspect Ability',
+					name: 'Здібність аспекту 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-9-1a',
-									name: 'Death Rattle',
-									description: 'You unleash an otherworldly cry that rips through your enemies, killing the weakest of them.',
+									name: 'Смертельний хрип',
+									description: 'Ви випускаєте потойбічний крик, який розриває ваших ворогів, вбиваючи найслабших серед них.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
@@ -236,9 +236,9 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '4 psychic damage; any target who is a minion is reduced to 0 Stamina',
-												tier2: '6 psychic damage; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature',
-												tier3: '10 psychic damage; each target who is not a leader or solo creature is winded; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature'
+												tier1: '4 психічної шкоди; будь-яка ціль, що є міньйоном, зводиться до 0 Витривалості',
+												tier2: '6 психічної шкоди; будь-яка ціль, що є міньйоном, зводиться до 0 Витривалості; додатково одна захекана ціль, яка не є лідером або одиничною істотою, також зводиться до 0 Витривалості',
+												tier3: '10 психічної шкоди; кожна ціль, яка не є лідером або одиничною істотою, стає захеканою; будь-яка ціль, що є міньййоном, зводиться до 0 Витривалості; додатково одна захекана ціль, яка не є лідером або одиничною істотою, також зводиться до 0 Витривалості'
 											})
 										)
 									]
@@ -250,8 +250,8 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'fury-sub-3-9-1b',
-									name: 'Deluge',
-									description: 'You summon your primordial storm.',
+									name: 'Потоп',
+									description: 'Ви викликаєте свою первісну бурю.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
@@ -261,12 +261,12 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: '7 damage',
-												tier2: '10 damage',
-												tier3: '15 damage'
+												tier1: '7 шкоди',
+												tier2: '10 шкоди',
+												tier3: '15 шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('This ability deals your primordial damage type and ignores damage immunity.')
+										FactoryLogic.createAbilitySectionText('Ця здібність завдає ушкоджень вашого первісного типу та ігнорує імунітет до ушкоджень.')
 									]
 								})
 							}),

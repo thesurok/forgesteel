@@ -9,8 +9,8 @@ import { SubClass } from '@/models/subclass';
 
 export const cryokinetic: SubClass = {
 	id: 'null-sub-2',
-	name: 'Cryokinetic',
-	description: 'You can tap into absolute cold, the most essential energy of myriad manifolds, and manifest its effects in your body.',
+	name: 'Кріокінетик',
+	description: 'Ви можете черпати абсолютний холод — найсутнішу енергію безлічі маніфолдів — і проявляти її ефекти у власному тілі.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -21,27 +21,28 @@ export const cryokinetic: SubClass = {
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'null-sub-2-1-2',
-					name: 'Cryokinetic Mastery',
+					name: 'Майстерність Кріокінетики',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'null-sub-2-1-2a',
-							name: 'Cryokinetic Mastery',
+							name: 'Майстерність Кріокінетики',
 							description: `
-As your discipline grows, you strengthen the psionic power suffusing you, granting benefits from the Cryokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+Як зростає ваша дисципліна, посилюється псіонічна сила, яка пронизує вас, і ви отримуєте переваги за таблицею «Майстерність Кріокінетики». Переваги сумуються, якщо не зазначено, що покращена перевага замінює менш значиму.
 
-| Discipline     | Benefit                                                                                                                                                                                          |
-|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2              | Whenever you use the Knockback maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead.|
-| 4              | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Null Field ability, you gain 1 surge.                                                  |
-| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                            |
-| 8 (4th level)  | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Null Field ability, you gain 2 surges.                                                 |
-| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                      |
-| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.      |`
+| Дисципліна    | Перевага                                                                                                                                                                                        |
+|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2             | Коли ви використовуєте маневр «Відштовхування», ви можете націлити ще одну істоту. Додатково, коли ви завдаєте нетипізованої шкоди псіонічною здібністю, ви можете замінити її на холодну шкоду. |
+| 4             | Першого разу за хід, коли ви схопите істоту або коли ворог переміститься на 1 або більше клітин в області дії вашої здібності «Null Field», ви отримуєте 1 сплеск.                                  |
+| 6             | Ви отримуєте перевагу (Edge) на маневри «Схоплення» та «Відштовхування».                                                                                                                           |
+| 8 (4th level) | Першого разу за хід, коли ви схопите істоту або коли ворог переміститься на 1 або більше клітин в області дії вашої здібності «Null Field», ви отримуєте 2 сплески.                                  |
+| 10 (7th level)| Ви маєте подвійну перевагу (Double Edge) на маневри «Схоплення» та «Відштовхування».                                                                                                              |
+| 12 (10th level)| Коли ви примусово переміщуєте ціль, відстань примусового переміщення отримує бонус, рівний значенню вашої Інтуїції. Додатково, щоразу коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості. |
+`
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'null-sub-2-1-2b',
-							name: 'Cryokinetic Mastery',
-							description: 'Whenever you use your Inertial Shield ability, you can then use the Grab maneuver as a free triggered action.',
+							name: 'Майстерність Кріокінетики',
+							description: 'Коли ви використовуєте вашу здібність «Інерційний щит», ви можете потім використати маневр «Схоплення» як безкоштовну тригерну дію.',
 							tag: 'inertial-shield'
 						})
 					]
@@ -53,8 +54,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-2-2-1',
-					name: 'Entropic Adaptability',
-					description: 'You ignore difficult terrain related to cold and ice, and you can automatically climb at full speed while moving.'
+					name: 'Ентропійна адаптивність',
+					description: 'Ви ігноруєте складну місцевість, повʼязану з холодом і льодом, і можете автоматично лазити з повною швидкістю під час руху.'
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'null-sub-2-2-1b',
@@ -64,14 +65,14 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-2-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Здібність традиції 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-2-2a',
-									name: 'Entropic Field',
-									description: 'You drastically increase the local entropy.',
+									name: 'Ентропійне поле',
+									description: 'Ви різко підвищуєте локальну ентропію.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
@@ -80,9 +81,9 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '6 cold damage; A < [слабкий], slowed (save ends)',
-											tier2: '9 cold damage; A < [середній], slowed (save ends)',
-											tier3: '13 cold damage; A < [сильний], slowed (save ends)'
+											tier1: '6 холодної шкоди; Л < [слабкий], сповільнюється (рят. кидок закінчує)',
+											tier2: '9 холодної шкоди; Л < [середній], сповільнюється (рят. кидок закінчує)',
+											tier3: '13 холодної шкоди; Л < [сильний], сповільнюється (рят. кидок закінчує)'
 										}))
 									]
 								})
@@ -93,15 +94,15 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-2-2b',
-									name: 'Heat Sink',
-									description: 'You absorb ambient heat, coating the ground in frost and precipitating snow from the air',
+									name: 'Поглинач тепла',
+									description: 'Ви поглинаєте навколишнє тепло, вкриваючи землю інеєм та спричиняючи снігопад.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the start of your next turn, the size of your Null Field ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.')
+										FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу розмір вашої здібності «Null Field» збільшується на 1, і ви та будь-який союзник отримують прикриття, перебуваючи в області. Наприкінці цього ходу кожен ворог в області отримує холодну шкоду, рівну вашому показнику Інтуїції.')
 									]
 								})
 							}),
@@ -124,8 +125,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-2-5-1',
-					name: 'Chilling Readiness',
-					description: 'You steel yourself for imminent danger by tapping into your body’s cold energy. At the start of any combat, you gain a number of surges equal to your Victories.'
+					name: 'Холодна готовність',
+					description: 'Ви загартовуєте себе до неминучої небезпеки, черпаючи холодну енергію свого тіла. На початку будь-якої сутички ви отримуєте число сплесків, рівне вашим Перемогам.'
 				})
 			]
 		},
@@ -134,27 +135,27 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-2-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Здібність традиції 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-6-1a',
-									name: 'Ice Pillars',
-									description: 'Pillars of ice erupt from the ground and launch your foes into the air.',
+									name: 'Крижані стовпи',
+									description: 'Стовпи льоду вириваються з ґрунту й підкидають ваших ворогів у повітря.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Three creatures or objects',
+									target: 'Три істоти або обʼєкти',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: 'Vertical slide 6',
-											tier2: 'Vertical slide 8',
-											tier3: 'Vertical slide 10'
+											tier1: 'Вертикальний зсув 6',
+											tier2: 'Вертикальний зсув 8',
+											tier3: 'Вертикальний зсув 10'
 										})),
-										FactoryLogic.createAbilitySectionText('The pillars vanish as soon as the effects of the forced movement are resolved.')
+										FactoryLogic.createAbilitySectionText('Стовпи зникають одразу після того, як ефекти примусового переміщення завершаться.')
 									]
 								})
 							}),
@@ -164,15 +165,15 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-6-1b',
-									name: 'Wall of Ice',
-									description: 'You create a wall of ice.',
+									name: 'Стіна льоду',
+									description: 'Ви створюєте стіну льоду.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
-									target: 'Special',
+									target: 'Особливе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [середній] is slowed (save ends). Each enemy who is force moved into the wall and has M < [середній] is restrained (save ends).')
+										FactoryLogic.createAbilitySectionText('Ви можете розмістити цю стіну в зайнятих клітинках, підсунути кожну істоту в області у найближчу вільну клітинку на ваш вибір. Стіна залишається до кінця зустрічі або поки ви не опинитесь у стані вмирання. Клітинки стіни вважаються камʼяними при підрахунку шкоди, і ви та союзники можете вільно рухатись через стіну. Кожен ворог, який входить у клітинку, суміжну зі стіною, і має M < [середній], сповільнюється (рят. кидок закінчує). Кожен ворог, якого примусово перемістили в стіну і який має M < [середній], стає скутим (рят. кидок закінчує).')
 									]
 								})
 							}),
@@ -191,8 +192,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 			features: [
 				FactoryLogic.feature.create({
 					id: 'null-sub-2-8-1',
-					name: 'Synaptic Triage',
-					description: 'As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your Null Field ability also gains this benefit.'
+					name: 'Синаптичний тріаж',
+					description: 'Як безкоштовний маневр ви можете витратити 1d6 Витривалості, щоб зняти один ефект з себе. Кожна істота за вашим вибором в області дії вашої здібності «Null Field» також отримує цю користь.'
 				})
 			]
 		},
@@ -201,27 +202,27 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'null-sub-2-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Здібність традиції 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-9-1a',
-									name: 'Absolute Zero',
-									description: 'You become the coldest thing in the timescape.',
+									name: 'Абсолютний нуль',
+									description: 'Ви стаєте найхолоднішою сутністю в часопросторі.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.createSelf()],
-									target: 'Self',
+									target: 'Себе',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: 'You gain 20 temporary Stamina.',
-											tier2: 'You gain 30 temporary Stamina.',
-											tier3: 'You gain 40 temporary Stamina.'
+											tier1: 'Ви отримуєте 20 тимчасової Витривалості.',
+											tier2: 'Ви отримуєте 30 тимчасової Витривалості.',
+											tier3: 'Ви отримуєте 40 тимчасової Витривалості.'
 										})),
-										FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your Entropic Adaptability trait, you ignore the negative effects of dying, and you have a +2 bonus to potencies.')
+										FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не помрете, ви стаєте втіленням найсильнішого холоду. Ви отримуєте імунітет до всіх видів шкоди, рівний імунітету до холодної шкоди, наданому вашою рисою «Ентропійна адаптивність», ігноруєте негативні ефекти вмирання, а також маєте бонус +2 до потужностей.')
 									]
 								})
 							}),
@@ -231,8 +232,8 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'null-sub-2-9-1b',
-									name: 'Heat Drain',
-									description: 'You drain all the heat from the target.',
+									name: 'Висмоктування тепла',
+									description: 'Ви витягуєте все тепло з цілі.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -241,11 +242,11 @@ As your discipline grows, you strengthen the psionic power suffusing you, granti
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Intuition],
-											tier1: '8 + I cold damage; M < [слабкий], restrained (save ends)',
-											tier2: '11 + I cold damage; M < [середній], restrained (save ends)',
-											tier3: '15 + I cold damage; M < [сильний], restrained (save ends)'
+											tier1: '8 + І холодної шкоди; С < [слабкий], стає скутим (рят. кидок закінчує)',
+											tier2: '11 + І холодної шкоди; С < [середній], стає скутим (рят. кидок закінчує)',
+											tier3: '15 + І холодної шкоди; С < [сильний], стає скутим (рят. кидок закінчує)'
 										})),
-										FactoryLogic.createAbilitySectionText('While restrained this way, the target takes cold damage equal to your Intuition score at the start of each of your turns. Additionally, whenever the target damages another creature while restrained this way, any potency associated with the damage is reduced by 2.')
+										FactoryLogic.createAbilitySectionText('Поки ціль скута таким чином, вона отримує холодну шкоду, рівну вашому показнику Інтуїції, на початку кожного вашого ходу. Додатково, щоразу коли ціль завдає шкоди іншій істоті, будучи скутою таким чином, будь-яка повʼязана з цією шкодою потужність зменшується на 2.')
 									]
 								})
 							}),

@@ -20,7 +20,7 @@ export const chronopathy: SubClass = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Self or one creature',
+						target: 'На себе або одно істоту',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target shifts up to a number of squares equal to your Reason score.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -38,7 +38,7 @@ export const chronopathy: SubClass = {
 						type: FactoryLogic.type.createTrigger('The target makes an ability roll.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Self or one creature',
+						target: 'На себе або одно істоту',
 						sections: [
 							FactoryLogic.createAbilitySectionText('You can use this ability after seeing the result of the triggering roll. The target must reroll the power roll and use the new roll.')
 						]
