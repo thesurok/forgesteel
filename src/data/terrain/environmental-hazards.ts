@@ -262,8 +262,8 @@ export const frozenPond: Terrain = {
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
 									tier1: 'Push 1 in the direction the target was moving',
-									tier2: 'Push 2 in the direction the target was moving; A < 1 slowed (save ends)',
-									tier3: 'Push 3 in the direction the target was moving; A < 2 prone and can’t stand (save ends)'
+									tier2: 'Push 2 in the direction the target was moving; Л < 1 slowed (save ends)',
+									tier3: 'Push 3 in the direction the target was moving; Л < 2 prone and can’t stand (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The triggering creature’s movement ends, then they are force moved. If the target triggered this ability by being force moved, this ability gains an edge and any remaining forced movement distance is added to the ability’s forced movement. The ability’s forced movement doesn’t trigger the ability again.')

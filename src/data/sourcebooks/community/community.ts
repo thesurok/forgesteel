@@ -438,9 +438,9 @@ Additionally, you add your level to project rolls to craft projects and whenever
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
-									tier1: '2 + R damage',
-									tier2: '4 + R damage',
-									tier3: '6 + R damage'
+									tier1: '2 + Р damage',
+									tier2: '4 + Р damage',
+									tier3: '6 + Р damage'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('When you make this strike, choose the damage type from one of the following options: acid, cold, fire, lightning, poison, or sonic.')
@@ -672,9 +672,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + R lightning damage; R < [слабкий], the target is jolted (save ends)',
-						tier2: '5 + R lightning damage; R < [середній], the target is jolted (save ends)',
-						tier3: '8 + R lightning damage; R < [сильний], the target is jolted (save ends)'
+						tier1: '3 + Р lightning damage; Р < [слабкий], the target is jolted (save ends)',
+						tier2: '5 + Р lightning damage; Р < [середній], the target is jolted (save ends)',
+						tier3: '8 + Р lightning damage; Р < [сильний], the target is jolted (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A jolted creature cannot take triggered actions, free triggered actions, or maneuvers.')
@@ -696,9 +696,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 fire damage; A < [слабкий], burning (save ends)',
-						tier2: '4 fire damage; A < [середній], burning (save ends)',
-						tier3: '6 fire damage; A < [сильний], burning (save ends)'
+						tier1: '2 fire damage; Л < [слабкий], burning (save ends)',
+						tier2: '4 fire damage; Л < [середній], burning (save ends)',
+						tier3: '6 fire damage; Л < [сильний], burning (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While burning, a target takes fire damage equal to your Reason score at the start of its turn.')
@@ -739,7 +739,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Strike
 			],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Two creatures',
+			target: 'Дві істоти',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -775,9 +775,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + R acid damage; R < [слабкий], weakened (save ends)',
-						tier2: '5 + R acid damage; R < [середній], weakened (save ends)',
-						tier3: '8 + R acid damage; R < [сильний], weakened (save ends)'
+						tier1: '3 + Р acid damage; Р < [слабкий], weakened (save ends)',
+						tier2: '5 + Р acid damage; Р < [середній], weakened (save ends)',
+						tier3: '8 + Р acid damage; Р < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While weakened this way, whenever you or an ally uses an ability that incorporates 1 or more surges against the target, they gain 1 additional surge they must use on the ability.')
@@ -804,9 +804,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + R damage',
-						tier2: '5 + R damage',
-						tier3: '11 + R damage'
+						tier1: '3 + Р damage',
+						tier2: '5 + Р damage',
+						tier3: '11 + Р damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain a surge for each natural odd number on your power roll. If you roll doubles, you gain 3 surges instead.')
@@ -926,9 +926,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + R poison damage; M < [слабкий], bleeding (save ends)',
-						tier2: '6 + R poison damage; M < [середній], bleeding (save ends)',
-						tier3: '9 + R poison damage; M < [сильний], bleeding (save ends)'
+						tier1: '3 + Р poison damage; M < [слабкий], bleeding (save ends)',
+						tier2: '6 + Р poison damage; M < [середній], bleeding (save ends)',
+						tier3: '9 + Р poison damage; M < [сильний], bleeding (save ends)'
 					})
 				)
 			]
@@ -950,9 +950,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'Vertical Slide 3 + R ',
-						tier2: 'Vertical Slide 5 + R ',
-						tier3: 'Vertical Slide 7 + R '
+						tier1: 'Vertical Slide 3 + Р ',
+						tier2: 'Vertical Slide 5 + Р ',
+						tier3: 'Vertical Slide 7 + Р '
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This forced movement ignores the target’s stability, and if this forced movement causes the target to slam into an enemy, the target takes no damage from the collision and the enemy takes extra damage equal to the number of squares the target moved. The target then pushes the enemy they collide with a number of squares equal to the distance the target moved.')
@@ -974,9 +974,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '6 lightning damage; R < [слабкий], the target is weakened (save ends)',
-						tier2: '9 lightning damage; R < [середній], the target is weakened (save ends)',
-						tier3: '12 lightning damage; R < [сильний], the target is weakened (save ends)'
+						tier1: '6 lightning damage; Р < [слабкий], the target is weakened (save ends)',
+						tier2: '9 lightning damage; Р < [середній], the target is weakened (save ends)',
+						tier3: '12 lightning damage; Р < [сильний], the target is weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Each enemy within 2 squares of at least 1 target takes lightning damage equal to twice your Reason score.')
@@ -1244,7 +1244,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('2 + M damage; until the end of your next turn, enemies are weakened while adjacent to the servitor.'),
+																FactoryLogic.createAbilitySectionText('2 + С damage; until the end of your next turn, enemies are weakened while adjacent to the servitor.'),
 																FactoryLogic.createAbilitySectionSpend({
 																	effect: 'When an enemy would be weakened by this ability, they are taunted instead.'
 																})
@@ -1540,7 +1540,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('3 + M lightning damage; I < [середній], dazzled (EoT)'),
+																FactoryLogic.createAbilitySectionText('3 + С lightning damage; I < [середній], dazzled (EoT)'),
 																FactoryLogic.createAbilitySectionField({
 																	name: 'Special',
 																	effect: 'A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.'
@@ -1641,7 +1641,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createRanged(5)],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('2 + M damage and the next ability roll made against the target has an edge.'),
+																FactoryLogic.createAbilitySectionText('2 + С damage and the next ability roll made against the target has an edge.'),
 																FactoryLogic.createAbilitySectionSpend({
 																	effect: 'The servitor adds their Intuition score to either the damage or the range.'
 																})
@@ -1835,7 +1835,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('3 + M damage; push 2.'),
+																FactoryLogic.createAbilitySectionText('3 + С damage; push 2.'),
 																FactoryLogic.createAbilitySectionSpend({
 																	effect: 'The target is pushed up to an additional number of squares equal to the servitor’s Might score.'
 																})
@@ -1932,7 +1932,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('3 + M damage; the servitor is invisible to the enemy until the end of the servitor’s next turn or the servitor deals damage to the enemy.'),
+																FactoryLogic.createAbilitySectionText('3 + С damage; the servitor is invisible to the enemy until the end of the servitor’s next turn or the servitor deals damage to the enemy.'),
 																FactoryLogic.createAbilitySectionSpend({
 																	effect: 'An enemy affected by Insurgent Strike who is M < strong is dazed (EoT).'
 																})
@@ -2106,9 +2106,9 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: [Characteristic.Might, Characteristic.Agility],
-														tier1: '6 + M or A damage; grabbed',
-														tier2: '9 + M or A damage; grabbed',
-														tier3: '12 + M or A damage; grabbed'
+														tier1: '6 + С or A damage; grabbed',
+														tier2: '9 + С or A damage; grabbed',
+														tier3: '12 + С or A damage; grabbed'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('While the target is grabbed by your servitor, ability rolls against them gain an edge, and whenever they take rolled damage, they take extra damage equal to twice your Reason score.')
@@ -2435,7 +2435,7 @@ You can choose only one free triggered action option at a time, even if multiple
 												AbilityKeyword.Ranged
 											],
 											distance: [FactoryLogic.distance.createRanged(10)],
-											target: 'Two creatures',
+											target: 'Дві істоти',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
@@ -2583,7 +2583,7 @@ Once you use this feature, you cannot do so again until you gain at least 1 vict
 											target: 'Одна істота',
 											cost: 5,
 											sections: [
-												FactoryLogic.createAbilitySectionText('Choose an enemy within range, including the triggering enemy. The strike targets that enemy instead. You can teleport the target up to 3 squares, and they are R < Strong dazed until the end of their turn. A target can’t be teleported in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.')
+												FactoryLogic.createAbilitySectionText('Choose an enemy within range, including the triggering enemy. The strike targets that enemy instead. You can teleport the target up to 3 squares, and they are Р < Strong dazed until the end of their turn. A target can’t be teleported in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.')
 											]
 										})
 									}),
@@ -2824,9 +2824,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 + R damage',
-						tier2: '8 + R damage',
-						tier3: '11 + R damage'
+						tier1: '6 + Р damage',
+						tier2: '8 + Р damage',
+						tier3: '11 + Р damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target’s characteristic scores are treated as lower by 1 for the sake of resisting potencies (save ends).')
@@ -2907,9 +2907,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '8 + R damage',
-						tier2: '12 + R damage',
-						tier3: '16 + R damage'
+						tier1: '8 + Р damage',
+						tier2: '12 + Р damage',
+						tier3: '16 + Р damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Create a 1 burst area of mist which provides concealment to allies that lasts until the end of your next turn. Allies inside the mist can hide even while observed.')
@@ -2970,9 +2970,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '5 cold damage, A < [слабкий], slowed (save ends)',
-						tier2: '8 cold damage, A < [середній], slowed (save ends)',
-						tier3: '11 cold damage, A < [сильний], restrained (save ends)'
+						tier1: '5 cold damage, Л < [слабкий], slowed (save ends)',
+						tier2: '8 cold damage, Л < [середній], slowed (save ends)',
+						tier3: '11 cold damage, Л < [сильний], restrained (save ends)'
 					})
 				)
 			]
@@ -3601,9 +3601,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: '2 + P damage',
-									tier2: '4 + P damage',
-									tier3: '6 + P damage'
+									tier1: '2 + П damage',
+									tier2: '4 + П damage',
+									tier3: '6 + П damage'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The damage this ability deals can be your patron’s damage type.')
@@ -3888,9 +3888,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 + P corruption damage',
-						tier2: '8 + P corruption damage',
-						tier3: '11 + P corruption damage'
+						tier1: '5 + П corruption damage',
+						tier2: '8 + П corruption damage',
+						tier3: '11 + П corruption damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your Presence score until the start of your next turn. If the attack kills the target, you get temporary Stamina equal to thrice your Presence score until the start of your next turn instead.')
@@ -3929,9 +3929,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 + P psychic damage',
-						tier2: '7 + P psychic damage',
-						tier3: '9 + P psychic damage'
+						tier1: '5 + П psychic damage',
+						tier2: '7 + П psychic damage',
+						tier3: '9 + П psychic damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If you’ve taken damage since the start of your last turn, you gain 1 surge before making the power roll.')
@@ -3950,9 +3950,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '3 + P corruption damage; P < [слабкий], the target takes a bane on their next power roll',
-						tier2: '5 + P corruption damage; P < [середній], the target takes a bane on their next power roll',
-						tier3: '8 + P corruption damage; P < [сильний], the target takes a bane on their next power roll'
+						tier1: '3 + П corruption damage; П < [слабкий], the target takes a bane on their next power roll',
+						tier2: '5 + П corruption damage; П < [середній], the target takes a bane on their next power roll',
+						tier3: '8 + П corruption damage; П < [сильний], the target takes a bane on their next power roll'
 					})
 				)
 			]
@@ -3973,9 +3973,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + P corruption damage',
-						tier2: '7 + P corruption damage',
-						tier3: '10 + P corruption damage'
+						tier1: '4 + П corruption damage',
+						tier2: '7 + П corruption damage',
+						tier3: '10 + П corruption damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You or an ally within range gain temporary Stamina equal to half the damage dealt.')
@@ -4007,9 +4007,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + P psychic damage; R < [слабкий], frenzy',
-						tier2: '6 + P psychic damage; R < [середній], frenzy',
-						tier3: '9 + P psychic damage; R < [сильний], frenzy'
+						tier1: '4 + П psychic damage; Р < [слабкий], frenzy',
+						tier2: '6 + П psychic damage; Р < [середній], frenzy',
+						tier3: '9 + П psychic damage; Р < [сильний], frenzy'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A frenzied target makes a melee free strike against all your enemies within their range, including themself.')
@@ -4028,9 +4028,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '6 + P patron damage; P < [слабкий], weakened (save ends)',
-						tier2: '10 + P patron damage; P < [середній], weakened (save ends)',
-						tier3: '14 + P patron damage; P < [сильний], weakened (save ends)'
+						tier1: '6 + П patron damage; П < [слабкий], weakened (save ends)',
+						tier2: '10 + П patron damage; П < [середній], weakened (save ends)',
+						tier3: '14 + П patron damage; П < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While weakened this way, the creature can’t benefit from edges or a critical hit.')
@@ -4090,9 +4090,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + P damage; M < [слабкий], slowed and the target has damage weakness 2 (EoT)',
-						tier2: '6 + P damage; M < [середній], slowed and the target has damage weakness 3 (EoT)',
-						tier3: '8 + P damage; M < [сильний], slowed and the target has damage weakness 5 (EoT)'
+						tier1: '4 + П damage; M < [слабкий], slowed and the target has damage weakness 2 (EoT)',
+						tier2: '6 + П damage; M < [середній], slowed and the target has damage weakness 3 (EoT)',
+						tier3: '8 + П damage; M < [сильний], slowed and the target has damage weakness 5 (EoT)'
 					})
 				)
 			]
@@ -4134,9 +4134,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '8 + P corruption damage; P < [слабкий], slowed (save ends)',
-						tier2: '11 + P corruption damage; P < [середній], slowed (save ends)',
-						tier3: '15 + P corruption damage; P < [сильний], slowed (save ends)'
+						tier1: '8 + П corruption damage; П < [слабкий], slowed (save ends)',
+						tier2: '11 + П corruption damage; П < [середній], slowed (save ends)',
+						tier3: '15 + П corruption damage; П < [сильний], slowed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While slowed this way, the target rolls two d10s on saving throws and takes the lower, and takes double damage from ending it using End Effect.')
@@ -4155,9 +4155,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '9 + P patron damage',
-						tier2: '12 + P patron damage',
-						tier3: '16 + P patron damage'
+						tier1: '9 + П patron damage',
+						tier2: '12 + П patron damage',
+						tier3: '16 + П patron damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the target is harrowed. You can use a maneuver on your turn to cause all creatures harrowed by you to take patron damage equal to thrice your Presence score.')
@@ -4220,9 +4220,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '6 + P patron damage; I < [слабкий], dazed (save ends)',
-						tier2: '9 + P patron damage; I < [середній], dazed (save ends)',
-						tier3: '12 + P patron damage; I < [сильний], dazed (save ends)'
+						tier1: '6 + П patron damage; I < [слабкий], dazed (save ends)',
+						tier2: '9 + П patron damage; I < [середній], dazed (save ends)',
+						tier3: '12 + П patron damage; I < [сильний], dazed (save ends)'
 					})
 				)
 			]
@@ -4240,9 +4240,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '8 + P damage',
-						tier2: '10 + P damage',
-						tier3: '13 + P damage'
+						tier1: '8 + П damage',
+						tier2: '10 + П damage',
+						tier3: '13 + П damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is winded after damage resolves, they die if they rely on a heart to live and aren’t a leader, solo or boss. Otherwise, a winded creature is bleeding (save ends).')
@@ -4261,9 +4261,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 psychic damage; R < [слабкий], wracked (save ends)',
-						tier2: '7 psychic damage; R < [середній], wracked (save ends)',
-						tier3: '10 psychic damage; R < [сильний], wracked (save ends)'
+						tier1: '5 psychic damage; Р < [слабкий], wracked (save ends)',
+						tier2: '7 psychic damage; Р < [середній], wracked (save ends)',
+						tier3: '10 psychic damage; Р < [сильний], wracked (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A wracked creature must spend twice as much malice to use any ability that costs malice, at the start of their turn or as part of their statblock.')
@@ -4318,9 +4318,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '2 + P fire damage; I < [слабкий], weakened (save ends)',
-											tier2: '4 + P fire damage; I < [середній], weakened (save ends)',
-											tier3: '7 + P fire damage; I < [сильний], weakened (save ends)'
+											tier1: '2 + П fire damage; I < [слабкий], weakened (save ends)',
+											tier2: '4 + П fire damage; I < [середній], weakened (save ends)',
+											tier3: '7 + П fire damage; I < [сильний], weakened (save ends)'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4472,9 +4472,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '3 + P corruption damage; P < [слабкий], slowed (save ends)',
-											tier2: '4 + P corruption damage; P < [середній], slowed (save ends)',
-											tier3: '6 + P corruption damage; P < [сильний], slowed (save ends)'
+											tier1: '3 + П corruption damage; П < [слабкий], slowed (save ends)',
+											tier2: '4 + П corruption damage; П < [середній], slowed (save ends)',
+											tier3: '6 + П corruption damage; П < [сильний], slowed (save ends)'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4624,9 +4624,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '4 + P psychic damage; M < [слабкий], grabbed',
-											tier2: '6 + P psychic damage; M < [середній], grabbed',
-											tier3: '9 + P psychic damage; M < [сильний], grabbed'
+											tier1: '4 + П psychic damage; M < [слабкий], grabbed',
+											tier2: '6 + П psychic damage; M < [середній], grabbed',
+											tier3: '9 + П psychic damage; M < [сильний], grabbed'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4729,9 +4729,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '8 + P psychic damage; I < [слабкий], can’t take triggered actions (EoT)',
-								tier2: '11 + P psychic damage; I < [середній], dazed (EoT)',
-								tier3: '14 + P psychic damage; I < [сильний], dazed (save ends)'
+								tier1: '8 + П psychic damage; I < [слабкий], can’t take triggered actions (EoT)',
+								tier2: '11 + П psychic damage; I < [середній], dazed (EoT)',
+								tier3: '14 + П psychic damage; I < [сильний], dazed (save ends)'
 							})
 						)
 					]

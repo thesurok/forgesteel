@@ -292,7 +292,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											name: 'Eruption',
 											cost: 1,
 											sections: [
-												FactoryLogic.createAbilitySectionText('When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < [середній] 4 fire damage.')
+												FactoryLogic.createAbilitySectionText('When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes Л < [середній] 4 fire damage.')
 											]
 										})
 									})
@@ -473,7 +473,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-2-2a-2',
 										name: 'Entangling Strike',
-										description: 'The silk’s ranged free strikes inflict A < [середній] restrained (EoT). Each creature adjacent to the target is A < [слабкий] slowed (EoT).'
+										description: 'The silk’s ranged free strikes inflict Л < [середній] restrained (EoT). Each creature adjacent to the target is Л < [слабкий] slowed (EoT).'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -529,7 +529,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-2-2b-3',
 										name: 'Encroaching Strike',
-										description: 'The principle’s melee free strikes have a distance of R and inflict M < [сильний] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
+										description: 'The principle’s melee free strikes have a distance of Р and inflict M < [сильний] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -730,7 +730,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3b-3',
 										name: 'Scarlet Death',
-										description: 'The knight’s melee strikes inflict P < [сильний] bleeding (save ends). While bleeding this way, the target can’t roll lower than a 3 on the die used to resolve bleeding damage.'
+										description: 'The knight’s melee strikes inflict П < [сильний] bleeding (save ends). While bleeding this way, the target can’t roll lower than a 3 on the die used to resolve bleeding damage.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({

@@ -118,7 +118,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 									bonus: 4,
 									tier1: '13 damage',
 									tier2: '18 damage',
-									tier3: '22 damage; A < 4 bleeding (save ends)'
+									tier3: '22 damage; Л < 4 bleeding (save ends)'
 								})
 							)
 						]
@@ -238,9 +238,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '15 damage; A < 2 slowed (save ends)',
-									tier2: '21 damage; A < 3 slowed (save ends)',
-									tier3: '26 damage; A < 4 slowed (save ends)'
+									tier1: '15 damage; Л < 2 slowed (save ends)',
+									tier2: '21 damage; Л < 3 slowed (save ends)',
+									tier3: '26 damage; Л < 4 slowed (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This damage can’t be reduced in any way. While a target is slowed this way, any strike against them has a double edge.')

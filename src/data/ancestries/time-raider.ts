@@ -106,7 +106,7 @@ export const timeRaider: Ancestry = {
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 													tier1: '2 + Р, І або П шкоди',
 													tier2: '5 + Р, І або П шкоди; зсув 1',
-													tier3: '7 + Р, І або П шкоди; зсув 2; М < [сильний] повалений'
+													tier3: '7 + Р, І або П шкоди; зсув 2; С < [сильний] повалений'
 												})
 											)
 										]

@@ -2610,9 +2610,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I corruption damage; P < [слабкий], the target takes a bane on their next power roll',
-							tier2: '5 + I corruption damage; P < [середній], the target takes a bane on their next power roll',
-							tier3: '8 + I corruption damage; P < [сильний], the target takes a bane on their next power roll'
+							tier1: '3 + I corruption damage; П < [слабкий], the target takes a bane on their next power roll',
+							tier2: '5 + I corruption damage; П < [середній], the target takes a bane on their next power roll',
+							tier3: '8 + I corruption damage; П < [сильний], the target takes a bane on their next power roll'
 						}
 					}
 				],
@@ -2767,9 +2767,9 @@ export const orcConduit = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: '3 + I holy damage; A < [слабкий], prone',
-							tier2: '6 + I holy damage; A < [середній], prone',
-							tier3: '9 + I holy damage; A < [сильний], prone and can’t stand (save ends)'
+							tier1: '3 + I holy damage; Л < [слабкий], prone',
+							tier2: '6 + I holy damage; Л < [середній], prone',
+							tier3: '9 + I holy damage; Л < [сильний], prone and can’t stand (save ends)'
 						}
 					}
 				],

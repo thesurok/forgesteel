@@ -114,7 +114,7 @@ You also have special minions at your disposal called **signature minions**, low
 
 **Individual Maneuvers**: An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from prone or escaping a grab. If they do, they can’t take part in their squad’s main action or maneuver.
 
-**Characteristics**: Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion’s stat block refers to an R or uses a potency (such as M < [слабкий]). 
+**Characteristics**: Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion’s stat block refers to an Р or uses a potency (such as M < [слабкий]). 
 
 **Unconscious**: If you are unconscious or unable to act on your turn, you can’t summon new minions. Additionally, your remaining minions can’t deal damage; they can only act to bring you to safety.
 
@@ -142,7 +142,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('R damage. If the target has R < [слабкий], they are slowed (save ends).'),
+							FactoryLogic.createAbilitySectionText('R damage. If the target has Р < [слабкий], they are slowed (save ends).'),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Special',
 								effect: 'This ability has the Charge keyword when it’s used as a melee strike.'
@@ -389,7 +389,7 @@ Your fixture gains additional features at 5th and 9th level.`
 You conjure a kit for yourself. This kit includes an implement, such as a rod or a baton, which grants you the following benefits:
 
 * The damage of your Summoner Strike ability increases to twice your Reason score.
-* The potency of your Summoner Strike ability increases to R < [середній].
+* The potency of your Summoner Strike ability increases to Р < [середній].
 * The distance of your Summoner Strike ability is now equal to your Summoner’s Range.`,
 					tag: 'summoner-strike'
 				}),
@@ -715,7 +715,7 @@ Your champion gains additional features at 10th level. This includes a special C
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-9-1a',
 					name: 'Kit Improvement',
-					description: 'The potency of your Summoner Strike ability increases to R < [сильний].',
+					description: 'The potency of your Summoner Strike ability increases to Р < [сильний].',
 					tag: 'summoner-strike'
 				}),
 				FactoryLogic.feature.createChoice({
@@ -888,9 +888,9 @@ Eidos remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '5 + R corruption damage; 2 charges (see below)',
-						tier2: '8 + R corruption damage; 3 charges',
-						tier3: '11 + R corruption damage; 4 charges'
+						tier1: '5 + Р corruption damage; 2 charges (see below)',
+						tier2: '8 + Р corruption damage; 3 charges',
+						tier3: '11 + Р corruption damage; 4 charges'
 					})
 				),
 				FactoryLogic.createAbilitySectionText(`
@@ -990,8 +990,8 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
 						tier1: 'R damage',
-						tier2: '2 + R damage',
-						tier3: '4 + R damage'
+						tier2: '2 + Р damage',
+						tier3: '4 + Р damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This strike deals an additional 2 damage for each ally adjacent to you.')
@@ -1021,7 +1021,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You summon a temporary squad containing 6 of your signature minions regardless of your minion maximum within distance. Whenever one of these minions deals damage to an enemy, the enemy is R < [середній] compelled to move 5 squares toward the source of the damage (provoking opportunity attacks). The potency increases by 1 for enemies targeted by two or more of these minions.
+You summon a temporary squad containing 6 of your signature minions regardless of your minion maximum within distance. Whenever one of these minions deals damage to an enemy, the enemy is Р < [середній] compelled to move 5 squares toward the source of the damage (provoking opportunity attacks). The potency increases by 1 for enemies targeted by two or more of these minions.
 
 These minions die at the end of your turn, activate no effects upon death, and you gain no essence from their deaths`)
 			]
@@ -1066,9 +1066,9 @@ These minions die at the end of your turn, activate no effects upon death, and y
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '8 + R damage; R < [слабкий], dazed (save ends)',
-						tier2: '12 + R damage; R < [середній], dazed (save ends)',
-						tier3: '16 + R damage; R < [сильний], dazed (save ends)'
+						tier1: '8 + Р damage; Р < [слабкий], dazed (save ends)',
+						tier2: '12 + Р damage; Р < [середній], dazed (save ends)',
+						tier3: '16 + Р damage; Р < [сильний], dazed (save ends)'
 					})
 				)
 			]
@@ -1150,7 +1150,7 @@ Each target can immediately make each of their saving throws and stand up from p
 				FactoryLogic.createAbilitySectionText(`
 You can use this ability as if in the space of one of your minions within your Summoner’s Range.
 
-The target is R < [середній] weakened (save ends).
+The target is Р < [середній] weakened (save ends).
 
 Until the end of the encounter, whenever a target gets a tier 1 result on a strike, they deal half damage. If a target was striking a creature adjacent to one of their allies, they target their ally instead.`)
 			]
@@ -1197,7 +1197,7 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 				FactoryLogic.createAbilitySectionText(`
 Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 round.
 
-A leader or a solo enemy in the area that has R, I, or P < [середній] is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.`)
+A leader or a solo enemy in the area that has R, I, or П < [середній] is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.`)
 			]
 		}),
 		FactoryLogic.createAbility({

@@ -1985,9 +1985,9 @@ export const wodeElfTroubadour = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; P < [слабкий], weakened (save ends)',
-							tier2: '10 + A damage; P < [слабкий], weakened (save ends)',
-							tier3: '14 + A damage; P < [слабкий], weakened (save ends)'
+							tier1: '6 + A damage; П < [слабкий], weakened (save ends)',
+							tier2: '10 + A damage; П < [слабкий], weakened (save ends)',
+							tier3: '14 + A damage; П < [слабкий], weakened (save ends)'
 						}
 					},
 					{
@@ -2042,9 +2042,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Slide 3; P < [слабкий], this slide ignores the target’s stability',
-							tier2: 'Slide 5; P < [середній], this slide ignores the target’s stability',
-							tier3: 'Slide 7; P < [сильний], this slide ignores the target’s stability'
+							tier1: 'Slide 3; П < [слабкий], this slide ignores the target’s stability',
+							tier2: 'Slide 5; П < [середній], this slide ignores the target’s stability',
+							tier3: 'Slide 7; П < [сильний], this slide ignores the target’s stability'
 						}
 					},
 					{
@@ -2101,9 +2101,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 fire damage; A < [слабкий], weakened (save ends)',
-							tier2: '7 fire damage; A < [середній], weakened (save ends)',
-							tier3: '10 fire damage; A < [сильний], weakened (save ends)'
+							tier1: '5 fire damage; Л < [слабкий], weakened (save ends)',
+							tier2: '7 fire damage; Л < [середній], weakened (save ends)',
+							tier3: '10 fire damage; Л < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -2169,9 +2169,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + P damage',
-							tier2: '8 + P damage; push 3',
-							tier3: '11 + P damage; push 5'
+							tier1: '5 + П damage',
+							tier2: '8 + П damage; push 3',
+							tier3: '11 + П damage; push 5'
 						}
 					},
 					{
@@ -2606,9 +2606,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '6 damage; P < [слабкий], the target can’t willingly leave the area (EoT)',
-							tier2: '8 damage; P < [середній], the target can’t willingly leave the area (save ends)',
-							tier3: '12 damage; the target can’t willingly leave the area (EoT); if P < [сильний], they can’t willingly leave the area (save ends)'
+							tier1: '6 damage; П < [слабкий], the target can’t willingly leave the area (EoT)',
+							tier2: '8 damage; П < [середній], the target can’t willingly leave the area (save ends)',
+							tier3: '12 damage; the target can’t willingly leave the area (EoT); if П < [сильний], they can’t willingly leave the area (save ends)'
 						}
 					},
 					{
@@ -3110,9 +3110,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '2 psychic damage; P < [слабкий], frightened (save ends)',
-																	tier2: '5 psychic damage; P < [середній], frightened (save ends)',
-																	tier3: '7 psychic damage; P < [сильний], frightened (save ends)'
+																	tier1: '2 psychic damage; П < [слабкий], frightened (save ends)',
+																	tier2: '5 psychic damage; П < [середній], frightened (save ends)',
+																	tier3: '7 psychic damage; П < [сильний], frightened (save ends)'
 																}
 															}
 														],
@@ -4755,9 +4755,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '7 sonic damage; P < [слабкий], prone',
-																	tier2: '10 sonic damage; P < [середній], prone',
-																	tier3: '13 sonic damage; P < [сильний], prone'
+																	tier1: '7 sonic damage; П < [слабкий], prone',
+																	tier2: '10 sonic damage; П < [середній], prone',
+																	tier3: '13 sonic damage; П < [сильний], prone'
 																}
 															}
 														],
@@ -5097,9 +5097,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '12 + P sonic damage; push 5',
-																	tier2: '16 + P sonic damage; push 10',
-																	tier3: '22 + P sonic damage; push 15'
+																	tier1: '12 + П sonic damage; push 5',
+																	tier2: '16 + П sonic damage; push 10',
+																	tier3: '22 + П sonic damage; push 15'
 																}
 															},
 															{

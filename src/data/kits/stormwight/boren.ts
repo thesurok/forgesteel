@@ -34,9 +34,9 @@ export const boren: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might],
-							tier1: '2 + M damage; M < [слабкий], grabbed',
-							tier2: '5 + M damage; M < [середній], grabbed',
-							tier3: '7 + M damage; M < [сильний], grabbed'
+							tier1: '2 + С damage; M < [слабкий], grabbed',
+							tier2: '5 + С damage; M < [середній], grabbed',
+							tier3: '7 + С damage; M < [сильний], grabbed'
 						})
 					)
 				]

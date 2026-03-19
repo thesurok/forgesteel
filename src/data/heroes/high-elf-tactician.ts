@@ -404,9 +404,9 @@ export const highElfTactician = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '3 + M or A damage',
-																tier2: '6 + M or A damage',
-																tier3: '9 + M or A damage'
+																tier1: '3 + С or A damage',
+																tier2: '6 + С or A damage',
+																tier3: '9 + С or A damage'
 															}
 														},
 														{
@@ -1215,9 +1215,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + M damage; M < [слабкий], dazed (save ends)',
-							tier2: '5 + M damage; M < [середній], dazed (save ends)',
-							tier3: '8 + M damage; M < [сильний], dazed (save ends)'
+							tier1: '3 + С damage; M < [слабкий], dazed (save ends)',
+							tier2: '5 + С damage; M < [середній], dazed (save ends)',
+							tier3: '8 + С damage; M < [сильний], dazed (save ends)'
 						}
 					}
 				],
@@ -1278,9 +1278,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + M damage; you or one ally within 10 squares of you can spend a Recovery',
-							tier2: '5 + M damage; you or one ally within 10 squares of you can spend a Recovery',
-							tier3: '8 + M damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter'
+							tier1: '3 + С damage; you or one ally within 10 squares of you can spend a Recovery',
+							tier2: '5 + С damage; you or one ally within 10 squares of you can spend a Recovery',
+							tier3: '8 + С damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter'
 						}
 					}
 				],
@@ -1318,7 +1318,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and two allies',
+				target: 'Себе і двох союзників',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1385,9 +1385,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '5 + M damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action',
-							tier2: '9 + M damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action',
-							tier3: '12 + M damage; two allies within 10 squares of you can each use a strike signature ability that gains an edge against the target as a free triggered action'
+							tier1: '5 + С damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action',
+							tier2: '9 + С damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action',
+							tier3: '12 + С damage; two allies within 10 squares of you can each use a strike signature ability that gains an edge against the target as a free triggered action'
 						}
 					},
 					{
@@ -1456,9 +1456,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '4 + M damage; R < [слабкий], weakened (save ends)',
-							tier2: '6 + M damage; R < [середній], weakened (save ends)',
-							tier3: '10 + M damage; R < [сильний], weakened (save ends)'
+							tier1: '4 + С damage; Р < [слабкий], weakened (save ends)',
+							tier2: '6 + С damage; Р < [середній], weakened (save ends)',
+							tier3: '10 + С damage; Р < [сильний], weakened (save ends)'
 						}
 					},
 					{
@@ -1678,7 +1678,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [середній], the target is frightened of the creature who dealt the damage (save ends).'
+						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has Р < [середній], the target is frightened of the creature who dealt the damage (save ends).'
 					}
 				],
 				preEffect: '',
@@ -1803,7 +1803,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Self and two allies',
+				target: 'Себе і двох союзників',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2090,9 +2090,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '6 + M damage',
-							tier2: '10 + M damage',
-							tier3: '14 + M damage'
+							tier1: '6 + С damage',
+							tier2: '10 + С damage',
+							tier3: '14 + С damage'
 						}
 					},
 					{
@@ -2250,7 +2250,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Two creatures',
+														target: 'Дві істоти',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -2330,9 +2330,9 @@ export const highElfTactician = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '2 + R damage; R < [слабкий], frightened (save ends)',
-																	tier2: '3 + R damage; R < [середній], frightened (save ends)',
-																	tier3: '4 + R damage; R < [сильний], frightened (save ends)'
+																	tier1: '2 + Р damage; Р < [слабкий], frightened (save ends)',
+																	tier2: '3 + Р damage; Р < [середній], frightened (save ends)',
+																	tier3: '4 + Р damage; Р < [сильний], frightened (save ends)'
 																}
 															}
 														],
@@ -2491,7 +2491,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Two creatures',
+														target: 'Дві істоти',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -2503,9 +2503,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '6 + M damage; slide 1',
-																	tier2: '9 + M damage; slide 3',
-																	tier3: '13 + M damage; slide 5'
+																	tier1: '6 + С damage; slide 1',
+																	tier2: '9 + С damage; slide 3',
+																	tier3: '13 + С damage; slide 5'
 																}
 															},
 															{
@@ -2601,7 +2601,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Self and two allies',
+														target: 'Себе і двох союзників',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -2658,7 +2658,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Three enemies',
+														target: 'Три вороги',
 														cost: 11,
 														repeatable: false,
 														minLevel: 1,
@@ -2782,7 +2782,7 @@ export const highElfTactician = {
 												name: 'Spend',
 												value: 1,
 												repeatable: false,
-												effect: 'If the target has R < [середній], they are slowed (EoT).'
+												effect: 'If the target has Р < [середній], they are slowed (EoT).'
 											}
 										],
 										preEffect: '',
@@ -2904,9 +2904,9 @@ export const highElfTactician = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '5 + R damage; taunted (EoT)',
-																	tier2: '9 + R damage; taunted (EoT)',
-																	tier3: '12 + R damage; taunted (EoT)'
+																	tier1: '5 + Р damage; taunted (EoT)',
+																	tier2: '9 + Р damage; taunted (EoT)',
+																	tier3: '12 + Р damage; taunted (EoT)'
 																}
 															},
 															{
@@ -2959,7 +2959,7 @@ export const highElfTactician = {
 																qualifier: ''
 															}
 														],
-														target: 'Two creatures',
+														target: 'Дві істоти',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3488,7 +3488,7 @@ export const highElfTactician = {
 																	],
 																	bonus: 0,
 																	tier1: 'R < [слабкий], the target is frightened of the triggering ally (save ends)',
-																	tier2: ' R < [середній], the target is frightened of the triggering ally (save ends)',
+																	tier2: ' Р < [середній], the target is frightened of the triggering ally (save ends)',
 																	tier3: 'R < [сильний], the target is frightened of the triggering ally (save ends)'
 																}
 															}
@@ -3720,14 +3720,14 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '6 + M damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability instead of a free strike for the charge',
-																	tier2: '9 + M damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a free strike for the charge',
-																	tier3: '13 + M damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
+																	tier1: '6 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability instead of a free strike for the charge',
+																	tier2: '9 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a free strike for the charge',
+																	tier3: '13 + С damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
 																}
 															},
 															{
 																type: 'text',
-																text: 'If the target is hit with two or more strikes as part of this ability and they have R < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.'
+																text: 'If the target is hit with two or more strikes as part of this ability and they have Р < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.'
 															}
 														],
 														preEffect: '',
@@ -3837,9 +3837,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '11 + M damage',
-																	tier2: '16 + M damage',
-																	tier3: '21 + M damage'
+																	tier1: '11 + С damage',
+																	tier2: '16 + С damage',
+																	tier3: '21 + С damage'
 																}
 															},
 															{
@@ -3919,9 +3919,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '8 + M damage',
-																	tier2: '13 + M damage',
-																	tier3: '17 + M damage'
+																	tier1: '8 + С damage',
+																	tier2: '13 + С damage',
+																	tier3: '17 + С damage'
 																}
 															},
 															{

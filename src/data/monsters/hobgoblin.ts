@@ -464,7 +464,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 								bonus: 3,
 								tier1: '9 fire damage',
 								tier2: '13 fire damage',
-								tier3: '16 fire damage; A < 3 dazed (EoT)'
+								tier3: '16 fire damage; Л < 3 dazed (EoT)'
 							}))
 						]
 					})
@@ -686,9 +686,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 fire damage; A < 1 burning (save ends)',
-								tier2: '9 fire damage; A < 2 burning (save ends)',
-								tier3: '11 fire damage; prone; A < 3 burning (save ends)'
+								tier1: '5 fire damage; Л < 1 burning (save ends)',
+								tier2: '9 fire damage; Л < 2 burning (save ends)',
+								tier3: '11 fire damage; prone; Л < 3 burning (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -758,7 +758,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '10 corruption damage',
-								tier2: '10 corruption damage, or if the target has P < 2 they are judged',
+								tier2: '10 corruption damage, or if the target has П < 2 they are judged',
 								tier3: 'The target is judged'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, a judged target takes 10 corruption damage at the start of each of their turns, and regains 5 Stamina each time they use an ability or other effect that allows another creature to spend a Recovery.')
@@ -806,7 +806,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 								bonus: 3,
 								tier1: '9 fire damage',
 								tier2: '14 fire damage',
-								tier3: '17 fire damage; R < 3 slowed (save ends)'
+								tier3: '17 fire damage; Р < 3 slowed (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, the target can’t communicate with anyone until the end of their next turn.')
 						]
@@ -968,9 +968,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 corruption damage; P < 2 bleeding (save ends)',
-								tier2: '16 corruption damage; P < 3 bleeding (save ends)',
-								tier3: '19 corruption damage; P < 4 bleeding (save ends)'
+								tier1: '11 corruption damage; П < 2 bleeding (save ends)',
+								tier2: '16 corruption damage; П < 3 bleeding (save ends)',
+								tier3: '19 corruption damage; П < 4 bleeding (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -1053,9 +1053,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '5 fire damage; P < 2 2 fire damage; push 2, prone',
-								tier2: '5 fire damage; P < 3 7 fire damage; push 3, prone',
-								tier3: '5 fire damage; P < 4 10 fire damage; push 5, prone'
+								tier1: '5 fire damage; П < 2 2 fire damage; push 2, prone',
+								tier2: '5 fire damage; П < 3 7 fire damage; push 3, prone',
+								tier3: '5 fire damage; П < 4 10 fire damage; push 5, prone'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the bloodlord is wreathed in black flames. Whenever any adjacent enemy grabs the bloodlord or uses a melee ability against them, that enemy takes 5 corruption damage.')
 						]
@@ -1096,8 +1096,8 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '9 damage',
-								tier2: '14 damage; A < 2 bleeding (save ends)',
-								tier3: '17 damage; A < 3 bleeding and restrained (save ends)'
+								tier2: '14 damage; Л < 2 bleeding (save ends)',
+								tier3: '17 damage; Л < 3 bleeding and restrained (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('A creature restrained this way moves with the slaughter demon. The slaughter demon can have up to six creatures or objects restrained at once.')
 						]

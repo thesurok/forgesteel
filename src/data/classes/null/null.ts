@@ -539,9 +539,9 @@ export const nullClass: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A ушкодження; A < [слабкий], схоплений',
-					tier2: '7 + A ушкодження; A < [середній], схоплений',
-					tier3: '9 + A ушкодження; A < [сильний], схоплений'
+					tier1: '4 + A ушкодження; Л < [слабкий], схоплений',
+					tier2: '7 + A ушкодження; Л < [середній], схоплений',
+					tier3: '9 + A ушкодження; Л < [сильний], схоплений'
 				}))
 			]
 		}),
@@ -614,9 +614,9 @@ export const nullClass: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A ушкодження; A < [слабкий], ослаблений (рят. кидок)',
-					tier2: '7 + A ушкодження; A < [середній], ослаблений (рят. кидок)',
-					tier3: '9 + A ушкодження; A < [сильний], ослаблений (рят. кидок)'
+					tier1: '4 + A ушкодження; Л < [слабкий], ослаблений (рят. кидок)',
+					tier2: '7 + A ушкодження; Л < [середній], ослаблений (рят. кидок)',
+					tier3: '9 + A ушкодження; Л < [сильний], ослаблений (рят. кидок)'
 				}))
 			]
 		}),
@@ -863,9 +863,9 @@ export const nullClass: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '10 + A ушкодження; A < [слабкий], схоплений',
-						tier2: '14 + A ушкодження; A < [середній], схоплений',
-						tier3: '18 + A ушкодження; A < [сильний], схоплений'
+						tier1: '10 + A ушкодження; Л < [слабкий], схоплений',
+						tier2: '14 + A ушкодження; Л < [середній], схоплений',
+						tier3: '18 + A ушкодження; Л < [сильний], схоплений'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Поки ціль схоплена таким чином, вона отримує bane на маневр Escape Grab. Кожного разу, коли вона використовує цей маневр, вона отримує ушкодження, рівне подвоєному вашому показникові Ловкості.')

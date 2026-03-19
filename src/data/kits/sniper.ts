@@ -34,9 +34,9 @@ export const sniper: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '6 + M or A damage',
-							tier3: '9 + M or A damage'
+							tier1: '3 + С or A damage',
+							tier2: '6 + С or A damage',
+							tier3: '9 + С or A damage'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('If you don\'t take a move action this turn, this strike deals extra damage equal to your Might or Agility score (your choice).')

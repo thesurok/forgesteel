@@ -32,7 +32,7 @@ export const predator: Kit = {
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionText('Before using this ability, you can jump in a straight line up to a number of squares equal to your Intuition score. During this jump, you can pass through enemies’ spaces without them counting as difficult terrain. You deal extra damage equal to the number of squares you jumped.'),
-					FactoryLogic.createAbilitySectionText('2 + M damage'),
+					FactoryLogic.createAbilitySectionText('2 + С damage'),
 					FactoryLogic.createAbilitySectionSpend({
 						effect: 'Your jump doesn’t provoke opportunity attacks.'
 					})

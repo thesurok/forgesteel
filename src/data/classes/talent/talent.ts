@@ -17,11 +17,11 @@ import { telepathy } from '@/data/classes/talent/telepathy';
 
 export const talent: HeroClass = {
 	id: 'class-talent',
-	name: 'Talent',
+	name: 'Талант',
 	description: `
-A rare few people are born with the potential to harness psionic power, but only those who experience an awakening, a significant event that activates a talent’s abilities, can tap into the mind’s full potential. You are one of those people—a master of psionics and a source of incredible power created through sheer force of will. You can move and change matter, time, gravity, the laws of physics, or another creature’s mind.
+Лише небагато людей народжуються з потенціалом володіти псіонічною силою, але лише ті, хто зазнає пробудження — значної події, що активує здібності таланту — можуть повністю розкрити силу свого розуму. Ви — один із таких: майстер псіоніки й джерело неймовірної сили, створеної чистою силою волі. Ви можете рухати й змінювати матерію, час, гравітацію, закони фізики або розум іншої істоти.
 
-As a talent, you are limited only by the strength of your mind. But the ability to wield multiple powers at once and change reality at will involves a gamble. Every manifestation has a chance of harming you, and talents who use too much power too quickly pay a deadly price.`,
+Як талант, ви обмежені лише міццю власного розуму. Проте здатність одночасно володіти кількома силами й змінювати реальність на свій розсуд — це ризик. Кожне проявлення може нашкодити вам, і таланти, що використовують забагато сили занадто швидко, платять смертельною ціною.`,
 	type: 'standard',
 	subclassName: 'Tradition',
 	subclassCount: 1,
@@ -46,25 +46,25 @@ As a talent, you are limited only by the strength of your mind. But the ability 
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'talent-resource',
-					name: 'Clarity',
+					name: 'Ясність',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '1d3'
 						},
 						{
 							tag: 'move',
-							trigger: 'The first time each combat round that a creature is force moved',
+							trigger: 'Першого разу в кожному раунді бою, коли істоту примусово переміщують',
 							value: '1'
-						}
+						},
 					],
 					details: `
-You can spend clarity you don’t have, pushing that Heroic Resource into negative numbers to a maximum negative value equal to 1 + your Reason score. At the end of each of your turns, you take 1 damage for each negative point of clarity.
+Ви можете витрачати ясність, якої у вас немає, доводячи цей Героїчний ресурс до відʼємних значень до максимальної відʼємної величини, рівної 1 + ваш показник Розуму. Наприкінці кожного вашого ходу ви отримуєте 1 шкоду за кожну відʼємну одиницю ясності.
 
-Whenever you have clarity below 0, you are strained. Some psionic abilities have additional effects if you are already strained or become strained when you use them. Strained effects can still impact you even after you are no longer strained.
+Коли ваша ясність менша за 0, ви перебуваєте в стані Напруження. Деякі псіонічні здібності мають додаткові ефекти, якщо ви вже перебуваєте в Напруженні або стаєте ним під час використання здібності. Ефекти напруження можуть продовжувати впливати на вас навіть після того, як ви більше не перебуваєте в Напруженні.
 
-Whenever you use an ability with a strain effect outside of combat, you can take 1d6 damage and incur the effect if you don't incur it for other reasons.`,
+Якщо ви використовуєте здібність з ефектом напруження поза боєм, ви можете прийняти 1d6 шкоди і зазнати ефекту, якщо інакше ви не зазнаєте його.`,
 					canBeNegative: true
 				}),
 				FactoryLogic.feature.createSkillChoice({
@@ -80,8 +80,8 @@ Whenever you use an ability with a strain effect outside of combat, you can take
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-1-2',
-						name: 'Mind Spike',
-						description: 'A telepathic bolt instantly zaps a creature’s brain.',
+						name: 'Укол Розуму',
+						description: 'Телепатичний болт миттєво вражає мозок істоти.',
 						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a ranged free strike'], freeStrike: true }),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 						distance: [FactoryLogic.distance.createRanged(10)],
@@ -89,44 +89,45 @@ Whenever you use an ability with a strain effect outside of combat, you can take
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Reason],
-								tier1: '2 + R psychic damage',
-								tier2: '4 + R psychic damage',
-								tier3: '6 + R psychic damage'
+								tier1: '2 + Р психічної шкоди',
+								tier2: '4 + Р психічної шкоди',
+								tier3: '6 + Р психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Strained',
-								effect: 'The target takes an extra 2 psychic damage. You also take 2 psychic damage that can’t be reduced in any way.'
+								name: 'Напруження',
+								effect: 'Ціль отримує додаткові 2 одиниці психічної шкоди. Ви також отримуєте 2 одиниці психічної шкоди, які неможливо зменшити ніяким чином.'
 							})
 						]
 					})
 				}),
+
 				FactoryLogic.feature.createLanguageChoice({
 					id: 'talent-1-3',
 					selected: ['Mindspeech']
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-1-4',
-					name: 'Telepathic Speech',
-					description: 'You can telepathically communicate with any creatures within distance of your Mind Spike ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.'
+					name: 'Телепатичне спілкування',
+					description: 'Ви можете телепатично спілкуватися з будь-якими істотами в межах дії вашої здібності Укол Розуму, якщо вони володіють мовою, спільною з вами, і ви знаєте одна одну. Коли ви так спілкуєтесь, вони можуть відповісти телепатично.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'talent-1-5',
-					name: 'Psionic Augmentation',
-					description: 'Through psionic meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation along with your ward by undergoing a psionic meditation as a respite activity.',
+					name: 'Псіонічне підсилення',
+					description: 'Через псіонічну медитацію ви створюєте канали в розумі, які покращують ваші характеристики. Виберіть одне із наведених підсилень. Ви можете змінювати підсилення разом із щитом під час псіонічної медитації як дії відпочинку.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'talent-1-5a',
-								name: 'Battle Augmentation',
+								name: 'Бойове підсилення',
 								description: `
-You can wear light armor and wield light weapons effectively, even though you don’t have a kit.
+Ви можете носити легку броню й ефективно володіти легкою зброєю, навіть якщо у вас немає набору обладнання.
 
-You can use light armor treasures and light weapon treasures. If you have a kit, you can’t take this augmentation.`,
+Ви можете використовувати скарби з легкою бронею та легкими видами зброї. Якщо у вас є набор (kit), ви не можете обрати це підсилення.`,
 								features: [
 									FactoryLogic.feature.create({
 										id: 'talent-1-5aa',
-										name: 'Battle Augmentation',
-										description: 'While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes.'
+										name: 'Бойове підсилення',
+										description: 'Поки ви володієте легкою зброєю, ви отримуєте бонус +1 до шкоди від зброєвих здібностей, включно з безкоштовними ударами.'
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'talent-1-5ab',
@@ -145,7 +146,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'talent-1-5b',
-								name: 'Density Augmentation',
+								name: 'Підсилення щільності',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'talent-1-5ba',
@@ -164,7 +165,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						{
 							feature: FactoryLogic.feature.createAbilityDistance({
 								id: 'talent-1-5c',
-								name: 'Distance Augmentation',
+								name: 'Підсилення дальності',
 								keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 								value: 2
 							}),
@@ -173,7 +174,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						{
 							feature: FactoryLogic.feature.createAbilityDamage({
 								id: 'talent-1-5d',
-								name: 'Force Augmentation',
+								name: 'Силове підсилення',
 								keywords: [AbilityKeyword.Psionic],
 								value: 1
 							}),
@@ -182,7 +183,7 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						{
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'talent-1-5e',
-								name: 'Speed Augmentation',
+								name: 'Підсилення швидкості',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'talent-1-5ea',
@@ -202,14 +203,14 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'talent-1-6',
-					name: 'Talent Ward',
-					description: 'Through psionic meditation, you create a ward that protects you. Choose one of the following wards. You can change your ward along with your psionic augmentation by undergoing a psionic meditation as a respite activity.',
+					name: 'Талантовий щит',
+					description: 'Через псіонічну медитацію ви створюєте щит, що захищає вас. Виберіть один із наведених щитів. Ви можете змінювати щит разом із псіонічним підсиленням під час псіонічної медитації як дії відпочинку.',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'talent-1-6a',
-								name: 'Entropy Ward',
-								description: 'Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your Reason score and they can’t use triggered actions until the end of their next turn.'
+								name: 'Щит ентропії',
+								description: 'Ваш щит уповільнює час для ворогів. Коли істота завдає вам шкоди, її швидкість зменшується на величину, рівну вашому показнику Розуму, і вона не може використовувати тригерні дії до кінця свого наступного ходу.'
 							}),
 							value: 1
 						},
@@ -217,13 +218,13 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-1-6b',
-									name: 'Repulsive Ward',
-									description: 'You surround yourself with an invisible ward of telekinetic energy.',
+									name: 'Відштовхувальний щит',
+									description: 'Ви оточуєте себе невидимим шаром телекінетичної енергії.',
 									type: FactoryLogic.type.createTrigger('An adjacent creature deals damage to you.', { free: true }),
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									sections: [
-										FactoryLogic.createAbilitySectionText('You can push your attacker up to a number of squares equal to your Reason score.')
+										FactoryLogic.createAbilitySectionText('Ви можете відштовхнути нападника на кількість клітинок, рівну вашому показнику Розуму.')
 									]
 								})
 							}),
@@ -232,16 +233,16 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'talent-1-6c',
-								name: 'Steel Ward',
-								description: 'Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain damage immunity equal to your Reason score until the end of your next turn.'
+								name: 'Сталевий щит',
+								description: 'Ваш щит реагує на небезпеку, захищаючи вас від майбутньої шкоди. Коли ви отримуєте шкоду, після її вирішення ви отримуєте імунітет до шкоди в розмірі, рівному вашому показнику Розуму, до кінця вашого наступного ходу.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'talent-1-6d',
-								name: 'Vanishing Ward',
-								description: 'Your ward allows you to slip away from threats. Whenever you take damage, you become invisible until the end of your next turn.'
+								name: 'Зникаючий щит',
+								description: 'Ваш щит дозволяє втекти від загроз. Коли ви отримуєте шкоду, ви стаєте невидимим до кінця вашого наступного ходу.'
 							}),
 							value: 1
 						}
@@ -276,8 +277,8 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-3-1',
-					name: 'Scan',
-					description: 'You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver. Additionally, once you establish line of effect to a thinking creature within distance of your Mind Spike ability, you always have line of effect to that creature until they move beyond that distance.'
+					name: 'Обстеження',
+					description: 'Ви можете поширити свої псіонічні відчуття за межі звичайного радіусу дії. Раз на кожен ваш хід ви можете шукати прихованих істот як безкоштовний маневр. Додатково, як тільки ви встановите лінію дії до мислячої істоти в межах дальності здібності Укол Розуму, ви завжди маєте лінію дії до цієї істоти, доки вона не переміститься за межі цієї дальності.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'talent-3-2',
@@ -301,33 +302,33 @@ You can use light armor treasures and light weapon treasures. If you have a kit,
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-4-2',
-						name: 'Mind Projection',
-						description: 'You project your mind outside your body.',
+						name: 'Проекція розуму',
+						description: 'Ви проєктуєте свій розум поза тілом.',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-While you are in this state, your body remains unconscious and prone, and your mind is a separate entity with size 1T. Your mind automatically has concealment, and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.
+Поки ви в цьому стані, ваше тіло залишається безсвідомим і лежачим, а ваш розум є окремою сутністю розміру 1T. Ваш розум автоматично має прикриття (concealment) і може вільно рухатися крізь тверду матерію. Якщо ви завершите хід усередині твердої матерії, вас викине у простір, звідки ви увійшли.
 
-Any abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your Stamina. Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a free maneuver.`)
+Усі здібності чи фічі, які ви використовуєте, походять від вашого розуму. І розум, і тіло можуть отримувати шкоду під час розділення, причому будь-яка така шкода застосовується до вашої Витривалості. Якщо ви отримуєте будь-яку шкоду, ваш розум миттєво повертається до тіла, і ви можете негайно повернутися до тіла як безкоштовний маневр.`)
 						]
 					})
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-4-3',
-					name: 'Mind Recovery',
+					name: 'Відновлення розуму',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'talent-4-3a',
-							name: 'Mind Recovery',
-							description: 'Whenever you spend a Recovery to regain Stamina while strained, you can forgo the Stamina and gain 3 clarity instead.'
+							name: 'Відновлення розуму',
+							description: 'Коли ви витрачаєте Відновлення, щоб відновити Витривалість під час Напруження, ви можете відмовитися від Витривалості і натомість отримати 3 одиниці ясності.'
 						}),
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'talent-4-3b',
-							name: 'Mind Recovery',
+							name: 'Відновлення розуму',
 							tag: 'move 2',
-							trigger: 'The first time each combat round that a creature is force moved',
+							trigger: 'Першого разу в кожному раунді бою, коли істоту примусово переміщують',
 							value: '2',
 							replacesTags: ['move']
 						})
@@ -342,12 +343,12 @@ Any abilities or features you use originate from your mind. Both your mind and y
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-4-6',
-					name: 'Suspensor Field',
+					name: 'Підвісне поле',
 					description: `
-You can fly. While flying, your stability is reduced to 0 and can’t be increased. If you can already fly, you have a +2 bonus to speed while flying instead.
+Ви можете літати. Під час польоту ваша стійкість знижується до 0 і не може бути збільшена. Якщо ви вже вмієте літати, ви замість цього отримуєте бонус +2 до швидкості під час польоту.
 
-If you are strained while flying and are force moved, the forced movement distance gains a +2 bonus.`
-				})
+Якщо ви перебуваєте в стані Напруження під час польоту й вас примусово переміщлять, відстань примусового переміщення отримує бонус +2.`,
+				}),
 			]
 		},
 		{
@@ -368,17 +369,17 @@ If you are strained while flying and are force moved, the forced movement distan
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-6-2',
-					name: 'Psi Boost',
+					name: 'Псі-підсилення',
 					description: `
-Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
+Коли ви використовуєте здібність як основну дію або маневр з ключовим словом Psionic, ви можете витратити додаткову дисципліну, щоб застосувати до неї псіопідсилення і посилити її ефекти. Ефекти псіопідсилення тривають лише до кінця ходу, у якому здібність була вперше використана. Ви можете застосувати кілька псіопідсилень до однієї здібності, але лише по одному екземпляру кожного конкретного підсилення. Ви можете використовувати такі псіопідсилення.
 
-**Dynamic Power** (1 Clarity) If the ability force moves a target, the forced movement distance gains a bonus equal to your Reason score.
-**Expanded Power** (3 Clarity) If the ability targets an area, you increase the size of the area by 1. If the area is a line, you increase the size of one dimension, not both.
-**Extended Power** (1 Clarity) If the ability is ranged, the distance gains a bonus equal to your Reason score. If the ability is melee, the distance gains a +2 bonus.
-**Heightened Power** (1 Clarity) If the ability deals rolled damage, it deals extra damage equal to your Reason score.
-**Magnified Power** (5 Clarity) If the ability has a potency, you increase that potency by an amount equal to your Reason score.
-**Shared Power** (5 Clarity) If the ability targets individual creatures or objects, you target one additional creature or object within distance.
-**Sharpened Power** (1 Clarity) If the ability has any power roll, that roll gains an edge.`
+**Динамічна сила** (1 Ясності) Якщо здібність примусово переміщує ціль, відстань примусового переміщення отримує бонус, рівний вашому показнику Розуму.
+**Розширена сила** (3 Ясності) Якщо здібність цілиться на область, ви збільшуєте розмір області на 1. Якщо область — лінія, ви збільшуєте одну вимірність, а не обидві.
+**Подовжена сила** (1 Ясності) Якщо здібність дальня, відстань отримує бонус, рівний вашому показнику Розуму. Якщо здібність ближня, відстань отримує бонус +2.
+**Посилена сила** (1 Ясності) Якщо здібність завдає кинутої шкоди, вона завдає додаткової шкоди, рівної вашому показнику Розуму.
+**Збільшена сила** (5 Ясностей) Якщо здібність має потужність, ви збільшуєте цю потужність на величину, рівну вашому показнику Розуму.
+**Поділена сила** (5 Ясностей) Якщо здібність цілиться на індивідуальні істоти або обʼєкти, ви націлюєте ще одну істоту або обʼєкт у межах дальності.
+**Загострена сила** (1 Ясності) Якщо здібність має будь-який кидок сили, цей кидок отримує edge.`
 				})
 			]
 		},
@@ -387,13 +388,13 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-7-1',
-					name: 'Ancestral Memory',
-					description: 'Each time you finish a respite, you can choose a number of skills you have up to your Reason score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next respite.'
+					name: 'Спадкова памʼять',
+					description: 'Кожного разу, коли ви завершите відпочинок, ви можете обрати кількість навичок до вашого показника Розуму і замінити їх на рівну кількість навичок з груп Інтерперсональних та Знань. Ці заміни тривають до кінця вашого наступного відпочинку.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-7-2',
-					name: 'Cascading Strain',
-					description: 'Whenever you take damage from a strained effect or from having negative clarity, you can choose one enemy within distance of your Mind Spike ability to take the same damage.'
+					name: 'Каскадне напруження',
+					description: 'Коли ви отримуєте шкоду від ефекту напруження або через відʼємну ясність, ви можете обрати одного ворога в межах дальності здібності Укол Розуму, щоб він отримав ту саму шкоду.'
 				}),
 				FactoryLogic.feature.createCharacteristicBonus({
 					id: 'talent-7-3a',
@@ -422,9 +423,9 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'talent-7-4',
-					name: 'Lucid Mind',
+					name: 'Ясний розум',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '1d3 + 1',
 					replacesTags: ['start']
 				}),
@@ -451,17 +452,17 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 			features: [
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-9-1',
-					name: 'Fortress of Perfect Thought',
+					name: 'Фортеця Досконалої думки',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'talent-9-1a',
-							name: 'Fortress of Perfect Thought',
+							name: 'Фортеця Досконалої думки',
 							description: `
-Your mind is an impenetrable palace that shields you from danger. You gain the following effects:
+Ваш розум — непроникний палац, що захищає вас від небезпек. Ви отримуєте такі ефекти:
 
-* You can breathe even when there is no breathable air.
-* Creatures can’t read your thoughts unless you allow them to.
-* Your Reason and Intuition are treated as 2 higher for the purpose of resisting the potency of abilities.`
+* Ви можете дихати навіть коли відсутнє придатне для дихання повітря.
+* Істоти не можуть читати ваші думки, якщо ви їм цього не дозволите.
+* Ваші показники Розуму та Інтуїції вважаються на 2 вищими при опорі потужності здібностей.`
 						}),
 						FactoryLogic.feature.createDamageModifier({
 							id: 'talent-9-1b',
@@ -496,15 +497,15 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'talent-10-2',
-					name: 'Clear Mind',
+					name: 'Чистий розум',
 					tag: 'move 3',
-					trigger: 'The first time each combat round that a creature is force moved',
+					trigger: 'Першого разу в кожному раунді бою, коли істоту примусово переміщують',
 					value: '3',
 					replacesTags: ['move', 'move 2']
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-10-3',
-					name: 'Omnisensory',
+					name: 'Омнічуття',
 					features: [
 						FactoryLogic.feature.createAbilityDistance({
 							id: 'talent-10-3a',
@@ -513,8 +514,8 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 						}),
 						FactoryLogic.feature.create({
 							id: 'talent-10-3b',
-							name: 'Omnisensory',
-							description: 'You don’t need line of effect to a target of a ranged ability if the target is a creature capable of thought who you have previously had line of effect to.'
+							name: 'Омнічуття',
+							description: 'Вам не потрібна лінія дії до цілі дальньої здібності, якщо ціль — мисляча істота, до якої ви раніше мали лінію дії.'
 						})
 					]
 				}),
@@ -524,20 +525,20 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-10-5',
-					name: 'Psion',
+					name: 'Псіон',
 					features: [
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'talent-10-5a',
-							name: 'Psion',
+							name: 'Псіон',
 							tag: 'start 3',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '1d3 + 2',
 							replacesTags: ['start', 'start 2']
 						}),
 						FactoryLogic.feature.create({
 							id: 'talent-10-5b',
-							name: 'Psion',
-							description: 'You can choose to not take damage from having negative clarity. You can also choose to take on any ability’s strained effect even if you’re not strained.'
+							name: 'Псіон',
+							description: 'Ви можете обрати не отримувати шкоду від відʼємної ясності. Також ви можете обрати прийняти ефект напруження будь-якої здібності, навіть якщо ви не перебуваєте в стані Напруження.'
 						})
 					]
 				}),
@@ -547,16 +548,16 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'talent-10-7',
-					name: 'Vision',
+					name: 'Видіння',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
-					details: 'You can spend vision to use one additional psionic ability on your turn, provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.'
+					details: 'Ви можете витратити видіння, щоб використати одну додаткову псіонічну здібність у вашому ході, за умови, що ви повністю оплачуєте її вартість видінням. Якщо ви обираєте використовувати псіонічну здібність, яка зазвичай не коштує ясності, ви маєте витратити 1 видіння для її використання.'
 				})
 			]
 		}
@@ -564,8 +565,8 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'talent-ability-1',
-			name: 'Entropic Bolt',
-			description: 'You advance an enemy’s age for a moment.',
+			name: 'Куля ентропії',
+			description: 'Ви миттєво старите ворога на мить.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -575,22 +576,22 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '2 + P corruption damage; P < [слабкий], slowed (save ends)',
-						tier2: '3 + P corruption damage; P < [середній], slowed (save ends)',
-						tier3: '5 + P corruption damage; P < [сильний], slowed (save ends)'
+						tier1: '2 + П шкоди скверни; П < [слабкий], уповільнений (рятівний кидок знімає)',
+						tier2: '3 + П шкоди скверни; П < [середній], уповільнений (рятівний кидок знімає)',
+						tier3: '5 + П шкоди скверни; П < [сильний], уповільнений (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target takes 1 extra corruption damage for each additional time they are targeted by this ability during the encounter.'),
+				FactoryLogic.createAbilitySectionText('Ціль отримує додаткову 1 одиницю шкоди скверни за кожен додатковий раз, коли її цілять цією здібністю під час зустрічі.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You gain 1 clarity when you obtain a tier 2 or tier 3 outcome on the power roll.'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 1 одиницю ясності, коли отримуєте результат рівня 2 або 3 на кидку сили.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-2',
-			name: 'Hoarfrost',
-			description: 'You blast a foe with a pulse of cold energy.',
+			name: 'Іній',
+			description: 'Ви вражаєте ворога імпульсом холодної енергії.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Cryokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -600,21 +601,21 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + R cold damage; M < [слабкий], slowed (EoT)',
-						tier2: '4 + R cold damage; M < [середній], slowed (EoT)',
-						tier3: '6 + R cold damage; M < [сильний], slowed (EoT)'
+						tier1: '2 + Р холодної шкоди; M < [слабкий], уповільнений (до кінця ходу)',
+						tier2: '4 + Р холодної шкоди; M < [середній], уповільнений (до кінця ходу)',
+						tier3: '6 + Р холодної шкоди; M < [сильний], уповільнений (до кінця ходу)'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You are slowed until the end of your next turn. Additionally, a target slowed by this ability is restrained instead.'
+					name: 'Напруження',
+					effect: 'Ви уповільнені до кінця вашого наступного ходу. Крім того, ціль, уповільнена цією здібністю, замість уповільнення стає скутою.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-3',
-			name: 'Incinerate',
-			description: 'The air erupts into a column of smokeless flame.',
+			name: 'Випалення',
+			description: 'Повітря вибухає у стовп бездимного полумʼя.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Pyrokinesis],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
@@ -624,22 +625,22 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 fire damage',
-						tier2: '4 fire damage',
-						tier3: '6 fire damage'
+						tier1: '2 вогняної шкоди',
+						tier2: '4 вогняної шкоди',
+						tier3: '6 вогняної шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A column of fire remains in the area until the start of your next turn. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 2 fire damage.'),
+				FactoryLogic.createAbilitySectionText('У зоні залишається стовп полумʼя до початку вашого наступного ходу. Кожен ворог, який вперше входить у цю зону під час раунду бою або починає тут свій хід, отримує 2 вогняної шкоди.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The size of the cube increases by 2, but the fire disappears at the end of your turn.'
+					name: 'Напруження',
+					effect: 'Розмір куба збільшується на 2, проте вогонь згасає в кінці вашого ходу.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-4',
-			name: 'Kinetic Grip',
-			description: 'You lift and hurl your foe away from you.',
+			name: 'Кінетичний захват',
+			description: 'Ви піднімаєте і відкидаєте ворога подалі від себе.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -649,21 +650,21 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: 'Slide 2 + R',
-						tier2: 'Slide 4 + R',
-						tier3: 'Slide 6 + R; prone'
+						tier1: 'Зсунути 2 + R',
+						tier2: 'Зсунути 4 + R',
+						tier3: 'Зсунути 6 + R; повалений'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You must vertical push the target instead of sliding them.'
+					name: 'Напруження',
+					effect: 'Ви повинні вертикально штовхнути ціль замість того, щоб зсунути її.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-5',
-			name: 'Kinetic Pulse',
-			description: 'The force of your mind hurls enemies backward.',
+			name: 'Кінетичний імпульс',
+			description: 'Сила вашого розуму відштовхує ворогів назад.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
@@ -673,21 +674,21 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 psychic damage',
-						tier2: '5 psychic damage; push 1',
-						tier3: '7 psychic damage; push 2'
+						tier1: '2 психічної шкоди',
+						tier2: '5 психічної шкоди; штовхнути 1',
+						tier3: '7 психічної шкоди; штовхнути 2'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The size of the burst increases by 2, and you are bleeding until the start of your next turn.'
+					name: 'Напруження',
+					effect: 'Розмір вибуху збільшується на 2, а ви кровоточите до початку вашого наступного ходу.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-6',
-			name: 'Materialize',
-			description: 'You picture an object in your mind and give it form—directly above your opponent’s head.',
+			name: 'Матеріалізація',
+			description: 'Ви уявляєте предмет у розумі і надаєте йому форму — безпосередньо над головою супротивника.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Resopathy, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -697,22 +698,22 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + R damage',
-						tier2: '5 + R damage',
-						tier3: '8 + R damage'
+						tier1: '3 + Р шкоди',
+						tier2: '5 + Р шкоди',
+						tier3: '8 + Р шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A worthless size 1M object drops onto the target to deal the damage, then rolls into an adjacent unoccupied space of your choice. The object is made of wood, stone, or metal (your choice).'),
+				FactoryLogic.createAbilitySectionText('На ціль падає безцінний предмет розміру 1M, завдаючи шкоди, а потім котиться у сусідню незайняту клітинку за вашим вибором. Предмет зроблено з дерева, каменю або металу (на ваш вибір).'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The object explodes after the damage is dealt, and each creature adjacent to the target takes damage equal to your Reason score. You also take damage equal to your Reason score that can’t be reduced in any way.'
+					name: 'Напруження',
+					effect: 'Після нанесення шкоди предмет вибухає, і кожна істота поруч із ціллю отримує шкоду, рівну вашому показнику Розуму. Ви також отримуєте шкоду, рівну вашому показнику Розуму, яку неможливо зменшити ніяким чином.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-7',
-			name: 'Optic Blast',
-			description: 'Your eyes emit rays of powerful enervating force.',
+			name: 'Оптичний промінь',
+			description: 'Ваші очі випромінюють промені потужної знесилюючої сили.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -722,22 +723,22 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + R damage; M < [слабкий], prone',
-						tier2: '4 + R damage; M < [середній], prone',
-						tier3: '6 + R damage; M < [сильний], prone'
+						tier1: '2 + Р шкоди; M < [слабкий], повалений',
+						tier2: '4 + Р шкоди; M < [середній], повалений',
+						tier3: '6 + Р шкоди; M < [сильний], повалений'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('When targeting an object with a solid reflective surface or a creature carrying or wearing such an object (such as a mirror, an unpainted metal shield, or shiny metal plate armor), you can target one additional creature or object within 3 squares of the first target.'),
+				FactoryLogic.createAbilitySectionText('Прицілюючись в обʼєкт з твердою відбивною поверхнею або в істоту, що носить чи має такий предмет (наприклад, дзеркало, немалёваний металевий щит або блискучу металеву броню), ви можете цілитися на одну додаткову істоту або обʼєкт у межах 3 клітинок від першої цілі.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You gain 1 surge that you can use immediately, and you take damage equal to your Reason score that can’t be reduced in any way.'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 1 сплеск, який можете використати негайно, і отримуєте шкоду, рівну вашому показнику Розуму, яку неможливо зменшити.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-8',
-			name: 'Spirit Sword',
-			description: 'You form a blade of mind energy and stab your target, invigorating yourself.',
+			name: 'Меч Духу',
+			description: 'Ви формуєте клинок енергії розуму і вражаєте ціль, що підживлює вас.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee(2)],
@@ -747,43 +748,43 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + P damage',
-						tier2: '6 + P damage',
-						tier3: '9 + P damage'
+						tier1: '3 + П шкоди',
+						tier2: '6 + П шкоди',
+						tier3: '9 + П шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You gain 1 surge.'),
+				FactoryLogic.createAbilitySectionText('Ви отримуєте 1 сплеск.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The target takes an extra 3 damage. You also take 3 damage that can’t be reduced in any way.'
+					name: 'Напруження',
+					effect: 'Ціль отримує додаткові 3 одиниці шкоди. Ви також отримуєте 3 одиниці шкоди, які неможливо зменшити.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-9',
-			name: 'Awe',
-			description: 'You project psionic energy out to a creature and take on a new visage in their mind.',
+			name: 'Захоплення',
+			description: 'Ви поширюєте псіонічну енергію до істоти й набуваєте нового образу в її свідомості.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Одна істота',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('If you target an ally, they gain temporary Stamina equal to three times your Presence score, and they can end one effect on them that is ended by a saving throw or that ends at the end of their turn. If you target an enemy, you make a power roll.'),
+				FactoryLogic.createAbilitySectionText('Якщо ви цілитеся в союзника, він отримує тимчасову Витривалість, рівну трьом вашим очкам Присутності, і може зняти один ефект, який знімається рятівним кидком або закінчується в кінці його ходу. Якщо ви цілитеся в ворога, ви робите кидок сили.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + P psychic damage; I < [слабкий], frightened (save ends)',
-						tier2: '6 + P psychic damage; I < [середній], frightened (save ends)',
-						tier3: '9 + P psychic damage; I < [сильний], frightened (save ends)'
+						tier1: '3 + П психічної шкоди; I < [слабкий], наляканий (рятівний кидок знімає)',
+						tier2: '6 + П психічної шкоди; I < [середній], наляканий (рятівний кидок знімає)',
+						tier3: '9 + П психічної шкоди; I < [сильний], наляканий (рятівний кидок знімає)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-10',
-			name: 'Choke',
-			description: 'You crush a foe in a telekinetic grip.',
+			name: 'Задушення',
+			description: 'Ви пережмагаєте ворога телекінетичною хваткою.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -793,120 +794,120 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + R damage; M < [слабкий], slowed (save ends)',
-						tier2: '5 + R damage; M < [середній], slowed (save ends)',
-						tier3: '8 + R damage; M < [сильний], restrained (save ends)'
+						tier1: '3 + Р шкоди; M < [слабкий], уповільнений (рятівний кидок знімає)',
+						tier2: '5 + Р шкоди; M < [середній], уповільнений (рятівний кидок знімає)',
+						tier3: '8 + Р шкоди; M < [сильний], скутий (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can vertical pull the target up to 2 squares. If the target is made restrained by this ability, this forced movement ignores their stability.')
+				FactoryLogic.createAbilitySectionText('Ви можете вертикально підтягнути ціль до 2 клітинок. Якщо ця здібність скує ціль, це примусове переміщення ігнорує її стійкість.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-11',
-			name: 'Precognition',
-			description: 'You give a target a glimpse into the future so that they’re ready for what comes next.',
+			name: 'Передбачення',
+			description: 'Ви даєте цілі проблиск майбутнього, щоб вона була готова до наступних подій.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Melee, AbilityKeyword.Psionic],
 			distance: [FactoryLogic.distance.createMelee(2)],
 			target: 'На себе або одного союзника',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a triggered action to make a free strike against the source of the damage.')
+				FactoryLogic.createAbilitySectionText('Кидки здібностей проти цілі отримують шкоду (bane) до початку вашого наступного ходу. Коли ціль отримує шкоду під цим ефектом, вона може використати тригерну дію, щоб зробити безкоштовний удар по джерелу шкоди.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-12',
-			name: 'Smolder',
-			description: 'Smoke flows from your enemy like tears as their skin begins to blacken and flake.',
+			name: 'Тління',
+			description: 'Дим тече з ворога як сльози, поки їхня шкіра чорніє й лущиться.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Pyrokinesis, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Одна істота',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Choose the damage type and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.'),
+				FactoryLogic.createAbilitySectionText('Виберіть тип шкоди та вразливість для цієї здібності з одного з наступних: кислотна, скверна або вогняна. Ціль отримує шкоду до того, як ця здібність накладає будь-яку вразливість.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + R damage; R < [слабкий], the target has weakness 5 (save ends)',
-						tier2: '6 + R damage; R < [середній], the target has weakness 5 (save ends)',
-						tier3: '9 + R damage; R < [сильний], the target has weakness equal to 5 + your Reason score (save ends)'
+						tier1: '3 + Р шкоди; Р < [слабкий], ціль має вразливість 5 (рятівний кидок знімає)',
+						tier2: '6 + Р шкоди; Р < [середній], ціль має вразливість 5 (рятівний кидок знімає)',
+						tier3: '9 + Р шкоди; Р < [сильний], ціль має вразливість, рівну 5 + вашому показнику Розуму (рятівний кидок знімає)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-13',
-			name: 'Flashback',
-			description: 'The target is thrown several seconds back through time and gets to do it all again.',
+			name: 'Флешбек',
+			description: 'Ціль відкидається на кілька секунд назад у часі і отримує можливість пережити все знову.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target uses an ability with a base Heroic Resource cost of 7 or lower that they’ve previously used this round, without needing to spend the base cost. Augmentations to the ability can be paid for as usual.'),
+				FactoryLogic.createAbilitySectionText('Ціль використовує здібність з базовою вартістю Героїчного ресурсу 7 або менш, яку вона вже використовувала цього раунду, без необхідності витрачати базову вартість. Платити за доповнення до здібності можна як зазвичай.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You take 1d6 damage and are slowed (save ends).'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 1d6 шкоди і уповільнені (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-14',
-			name: 'Inertia Soak',
-			description: 'Your psionic energy surrounds the target and pushes everything else away from them.',
+			name: 'Поглинання інерції',
+			description: 'Ваша псіонічна енергія оточує ціль і відштовхує від неї все решта.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target ignores difficult terrain and takes no damage from forced movement until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your Reason score. When pushing an ally, the target can ignore that ally’s stability. A creature can only be force moved this way once a turn.'),
+				FactoryLogic.createAbilitySectionText('Ціль ігнорує важку місцевість і не отримує шкоди від примусового переміщення до початку вашого наступного ходу. Коли ціль входить у клітинку під цим ефектом, вона може штовхнути одного сусіднього створіння на кількість клітинок, рівну вашому показнику Розуму. При штовханні союзника ціль може ігнорувати його стійкість. Істоту можна примусово перемістити таким чином лише раз за хід.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You are weakened (save ends). While you are weakened this way, whenever you are force moved, the forced movement distance gains a +5 bonus.'
+					name: 'Напруження',
+					effect: 'Ви ослаблені (рятівний кидок знімає). Поки ви ослаблені таким чином, коли вас примусово переміщують, відстань примусового переміщення отримує бонус +5.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-15',
-			name: 'Iron',
-			description: 'The target’s skin turns to hard, dark metal, impenetrable and dense.',
+			name: 'Залізний',
+			description: 'Шкіра цілі перетворюється на тверду темну металеву поверхню — непроникну й дуже щільну.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target’s stability increases by an amount equal to your Reason score, and they gain 10 temporary Stamina and 2 surges. This stability increase lasts until the target no longer has temporary Stamina from this ability.'),
+				FactoryLogic.createAbilitySectionText('Стійкість цілі збільшується на величину, рівну вашому показнику Розуму, і вона отримує 10 тимчасової Витривалості та 2 сплески. Це збільшення стійкості триває, поки у цілі є тимчасова Витривалість від цієї здібності.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You can’t use maneuvers (save ends).'
+					name: 'Напруження',
+					effect: 'Ви не можете використовувати маневри (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-16',
-			name: 'Perfect Clarity',
-			description: 'You clear the mind of nothing but the goal.',
+			name: 'Досконала ясність',
+			description: 'Ви очищуєте розум, залишаючи в ньому лише ціль.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the start of your next turn, the target gains a +3 bonus to speed, and they have a double edge on the next power roll they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.'),
+				FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу ціль отримує бонус +3 до швидкості і має подвійний edge на наступному кидку сили, який вона зробить. Якщо ціль отримує результат рівня 3 на тому кидку, ви отримуєте 1 одиницю ясності.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You take 1d6 damage, and you can’t use triggered actions (save ends).'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 1d6 шкоди і не можете використовувати тригерні дії (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-17',
-			name: 'Fling Through Time',
-			description: 'You hurl the target through the annals of time, forcing them to witness every moment of their existence all at once.',
+			name: 'Кидок у часі',
+			description: 'Ви швендяєте ціль крізь аннали часу, змушуючи її одночасно пережити кожен момент власного існування.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -916,67 +917,67 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + P corruption damage; P < [слабкий], weakened (save ends)',
-						tier2: '5 + P corruption damage; the target is flung through time, and if P < [середній] they are weakened (save ends)',
-						tier3: '8 + P corruption damage; the target is flung through time, and if P < [сильний] they are weakened (save ends)'
+						tier1: '3 + П шкоди скверни; П < [слабкий], ослаблений (рятівний кидок знімає)',
+						tier2: '5 + П шкоди скверни; ціль відкидається у часі, і якщо П < [середній], вона ослаблена (рятівний кидок знімає)',
+						tier3: '8 + П шкоди скверни; ціль відкидається у часі, і якщо П < [сильний], вона ослаблена (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A target who is flung through time is removed from the encounter map until the end of their next turn, reappearing in their original space or the nearest unoccupied space.'),
+				FactoryLogic.createAbilitySectionText('Ціль, відкинута у часі, вилучається з карти зустрічі до кінця свого наступного ходу, після чого зʼявляється у своєму первісному просторі або у найближчій незайнятій клітинці.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You take 2d6 damage and permanently grow visibly older (the equivalent of 10 years for a human). If you obtain a tier 3 outcome on the power roll, you gain 2 clarity.'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 2d6 шкоди і назавжди помітно старієте (еквівалентно 10 рокам для людини). Якщо ви отримуєте результат рівня 3 на кидку сили, ви отримуєте 2 одиниці ясності.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-18',
-			name: 'Force Orb',
-			description: 'Spheres of solid psionic energy float around you.',
+			name: 'Сфера сили',
+			description: 'Навколо вас плавають сфери суцільної псіонічної енергії.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Self; see below',
+			target: 'На себе; див. нижче',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You create three size 1T orbs that orbit your body. Each orb gives you a cumulative damage immunity 1. Each time you take damage, you lose 1 orb.
+Ви створюєте три сфери розміру 1T, що обертаються навколо вашого тіла. Кожна сфера дає вам накопичувальний імунітет до шкоди 1. Кожного разу, коли ви отримуєте шкоду, ви втрачаєте одну сферу.
 
-Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.`),
+Раз на ваш хід ви можете використати безкоштовний маневр, щоб випустити сферу по істоті або обʼєкту в межах 5 клітинок як дальній удар, втрачаючи сферу після удару.`),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 damage',
-						tier2: '3 damage',
-						tier3: '5 damage'
+						tier1: '2 шкоди',
+						tier2: '3 шкоди',
+						tier3: '5 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You create five orbs, and you are weakened while you have any orbs active.'
+					name: 'Напруження',
+					effect: 'Ви створюєте пʼять сфер, і ви ослаблені, поки маєте активні сфери.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-19',
-			name: 'Reflector Field',
-			description: 'A protective field reverses the momentum of incoming attacks.',
+			name: 'Поле відбиття',
+			description: 'Захисне поле змінює напрям імпульсу вхідних атак.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 3 })],
-			target: 'Special',
+			target: 'Спеціальне',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The aura lasts until the start of your next turn. Whenever an enemy targets an ally in the area with a ranged ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.'),
+				FactoryLogic.createAbilitySectionText('Аура триває до початку вашого наступного ходу. Коли ворог цілиться в союзника в цій зоні дальньою здібністю, здібність нейтралізується щодо союзника і відбивається назад на ворога. Здібність завдає ворогу половину шкоди, яку вона завдала б союзнику, і втрачає додаткові ефекти.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The size of the aura increases by 1. Whenever your aura reflects an ability, you take 2d6 damage and forget a memory, as determined by you and the Director.'
+					name: 'Напруження',
+					effect: 'Розмір аури збільшується на 1. Коли ваша аура відбиває здібність, ви отримуєте 2d6 шкоди і забуваєте спогад, визначений вами та Директором.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-20',
-			name: 'Soul Burn',
-			description: 'You blast their soul out of their body, leaving it to helplessly float back to a weakened husk.',
+			name: 'Опік душі',
+			description: 'Ви виштовхуєте їхню душу з тіла, залишаючи її безпомічно плаваючою над ослабленою оболонкою.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -986,64 +987,64 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '6 + P damage; P < [слабкий], dazed (save ends)',
-						tier2: '10 + P damage; P < [середній], dazed (save ends)',
-						tier3: '14 + P damage; P < [сильний], dazed (save ends)'
+						tier1: '6 + П шкоди; П < [слабкий], приголомшений (рятівний кидок знімає)',
+						tier2: '10 + П шкоди; П < [середній], приголомшений (рятівний кидок знімає)',
+						tier3: '14 + П шкоди; П < [сильний], приголомшений (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target takes a bane on Presence tests until the end of the encounter.'),
+				FactoryLogic.createAbilitySectionText('Ціль отримує bane до перевірок Присутності до кінця зустрічі.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The potency of this ability increases by 1. You take 2d6 damage and gain 3 surges that you can use immediately.'
+					name: 'Напруження',
+					effect: 'Потужність цієї здібності збільшується на 1. Ви отримуєте 2d6 шкоди і отримуєте 3 сплески, які можете використати негайно.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-21',
-			name: 'Exothermic Shield',
-			description: 'You encase the target in psionic flame and allow them to flicker without fear of burning out.',
+			name: 'Екзотермічний щит',
+			description: 'Ви огортаєте ціль псіонічним полумʼям і дозволяєте їй блимати без страху вигоряння.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Pyrokinesis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('**Effect** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your Reason score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.'),
+				FactoryLogic.createAbilitySectionText('**Ефект** До початку вашого наступного ходу ціль має імунітет до холоду 10 та імунітет до вогню 10, а її удари завдають додаткової вогняної шкоди, рівної подвоєному вашому показнику Розуму. Додатково, коли ворог використовує ближню здібність проти цілі під цим ефектом, ворог отримує 5 вогняної шкоди.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'The target gains 2 surges. You are weakened and slowed (save ends).'
+					name: 'Напруження',
+					effect: 'Ціль отримує 2 сплески. Ви ослаблені та уповільнені (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-22',
-			name: 'Hypersonic',
-			description: 'You move fast enough to turn around and watch your foes feel the aftermath.',
+			name: 'Гіперзвуковий',
+			description: 'Ви рухаєтесь настільки швидко, що встигаєте повернутися й спостерігати, як вороги відчувають наслідки.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Charge, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
 			target: 'Кожен ворог у зоні',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You teleport to a square on the opposite side of the area before making the power roll.'),
+				FactoryLogic.createAbilitySectionText('Ви телепортуєтесь на клітинку з протилежного боку зони перед виконанням кидка сили.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '12 sonic damage',
-						tier2: '18 sonic damage',
-						tier3: '24 sonic damage'
+						tier1: '12 звукової шкоди',
+						tier2: '18 звукової шкоди',
+						tier3: '24 звукової шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'If you obtain a tier 2 outcome or better, you are slowed until the end of your turn and each target is slowed until the end of their turn.'
+					name: 'Напруження',
+					effect: 'Якщо ви отримуєте результат рівня 2 або кращий, ви уповільнені до кінця вашого ходу, а кожна ціль уповільнена до кінця її ходу.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-23',
-			name: 'Mind Snare',
-			description: 'You latch onto your prey’s brain and don’t let go, like a song they can’t get out of their head.',
+			name: 'Пастка розуму',
+			description: 'Ви вчіплюєтесь у мозок здобичі і не відпускаєте — як пісня, що не виходить з голови.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -1053,47 +1054,47 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '10 + R psychic damage; R < [слабкий], slowed (save ends)',
-						tier2: '14 + R psychic damage; R < [середній], slowed (save ends)',
-						tier3: '20 + R psychic damage; R < [сильний], slowed (save ends)'
+						tier1: '10 + Р психічної шкоди; Р < [слабкий], уповільнений (рятівний кидок знімає)',
+						tier2: '14 + Р психічної шкоди; Р < [середній], уповільнений (рятівний кидок знімає)',
+						tier3: '20 + Р психічної шкоди; Р < [сильний], уповільнений (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While slowed this way, the target takes 3 psychic damage for each square they willingly leave.'),
+				FactoryLogic.createAbilitySectionText('Поки ціль уповільнена таким чином, вона отримує 3 психічної шкоди за кожну клітинку, яку вона добровільно покидає.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'While slowed this way, the target instead takes 5 psychic damage for each square they willingly leave. You have a double bane on ability rolls made against the target while they are slowed this way.'
+					name: 'Напруження',
+					effect: 'Поки ціль уповільнена таким чином, вона отримує 5 психічної шкоди за кожну клітинку, яку вона добровільно покидає. Ви маєте подвійну bane до кидків здібностей проти цієї цілі, поки вона уповільнена таким чином.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-24',
-			name: 'Soulbound',
-			description: 'You fire a piercing bolt of psychic energy that lances through two foes and leaves a faint intangible thread between them.',
+			name: 'Привʼязка душі',
+			description: 'Ви випускаєте пронизливий болт психічної енергії, що проходить крізь двох ворогів і залишає тонку невловиму нитку між ними.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Two enemies',
+			target: 'Двоє ворогів',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '8 damage; A < [слабкий], the target is stitched to the other target (save ends)',
-						tier2: '13 damage; A < [середній], the target is stitched to the other target (save ends)',
-						tier3: '17 damage; A < [сильний], the target is stitched to the other target (save ends)'
+						tier1: '8 шкоди; Л < [слабкий], ціль зшивається з іншою ціллю (рятівний кидок знімає)',
+						tier2: '13 шкоди; Л < [середній], ціль зшивається з іншою ціллю (рятівний кидок знімає)',
+						tier3: '17 шкоди; Л < [сильний], ціль зшивається з іншою ціллю (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If any target becomes stitched to the other, both targets are stitched together. While stitched together, a target takes a bane on power rolls while not adjacent to a creature they’re stitched to. Whenever a stitched target takes damage that wasn’t dealt by or also taken by another stitched target, each other stitched target takes half the damage the initial target took.'),
+				FactoryLogic.createAbilitySectionText('Якщо будь-яка ціль стає зшитою з іншою, обидві цілі зшиваються разом. Поки вони зшиті, ціль має bane до кидків сили, коли вона не суміжна зі створінням, з яким вона зшита. Коли зшита ціль отримує шкоду, яка не була завдана або не була також отримана іншою зшитою ціллю, кожна інша зшита ціль отримує половину шкоди від початкової.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You target yourself and three enemies instead.'
+					name: 'Напруження',
+					effect: 'Замість цього ви націлюєте себе та трьох ворогів.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-25',
-			name: 'Doubt',
-			description: 'You tug at the strings of the foe’s anima and unravel them, allowing someone else to take advantage of their drive.',
+			name: 'Сумнів',
+			description: 'Ви тягнете за нитки аніми ворога і розплітаєте їх, дозволяючи іншим скористатися їхнім поривом.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Animapathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -1103,22 +1104,22 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '10 + P damage; P < [слабкий], weakened (save ends)',
-						tier2: '14 + P damage; P < [середній], weakened (save ends)',
-						tier3: '20 + P damage; P < [сильний], weakened and slowed (save ends)'
+						tier1: '10 + П шкоди; П < [слабкий], ослаблений (рятівний кидок знімає)',
+						tier2: '14 + П шкоди; П < [середній], ослаблений (рятівний кидок знімає)',
+						tier3: '20 + П шкоди; П < [сильний], ослаблений і уповільнений (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('This ability gains an edge against a target with a soul. After you make the power roll, you or one ally within distance have a double edge on the next power roll you make before the end of the encounter.'),
+				FactoryLogic.createAbilitySectionText('Ця здібність отримує перевагу проти цілі з душею. Після того як ви зробите кидок сили, ви або один союзник у межах відстані маєте подвійний edge на наступний кидок сили, який ви зробите до кінця зустрічі.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the power roll, you and the target each have damage weakness 5 (save ends).'
+					name: 'Напруження',
+					effect: 'Ви відчуваєте пригніченість до завершення відпочинку. Якщо ви отримуєте результат рівня 3 на кидку сили, ви та ціль маєте слабкість до шкоди 5 (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-26',
-			name: 'Mindwipe',
-			description: 'You attempt to make them forget all their training.',
+			name: 'Стирання памʼяті',
+			description: 'Ви намагаєтесь змусити їх забути всю свою підготовку.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 			distance: [FactoryLogic.distance.createMelee(2)],
@@ -1128,22 +1129,22 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '12 + R damage; R < [слабкий], the target takes a bane on their next power roll',
-						tier2: '17 + R damage; R < [середній], the target takes a bane on power rolls (save ends)',
-						tier3: '23 + R damage; R < [сильний], the target has a double bane on power rolls (save ends)'
+						tier1: '12 + Р шкоди; Р < [слабкий], ціль отримує bane до свого наступного кидка сили',
+						tier2: '17 + Р шкоди; Р < [середній], ціль отримує bane до кидків сили (рятівний кидок знімає)',
+						tier3: '23 + Р шкоди; Р < [сильний], ціль має подвійну bane до кидків сили (рятівний кидок знімає)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The target can’t communicate with anyone until the end of the encounter.'),
+				FactoryLogic.createAbilitySectionText('Ціль не може спілкуватися з ким-небудь до кінця зустрічі.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You take 3d6 damage.'
+					name: 'Напруження',
+					effect: 'Ви отримуєте 3d6 шкоди.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-27',
-			name: 'Rejuvenate',
-			description: 'You reshape the flow of time in the target’s body to return it to an earlier state.',
+			name: 'Омолодження',
+			description: 'Ви змінюєте течію часу в тілі цілі, повертаючи його до попереднього стану.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
@@ -1151,32 +1152,31 @@ Once on each of your turns, you can use a free maneuver to fire an orb at a crea
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-Choose two of the following effects:
+Виберіть два з наступних ефектів:
 
-* The target can spend any number of Recoveries.
-* The target gains 1 of their Heroic Resource, and can end any
-effects on them that are ended by a saving throw or that end at the end of their turn.
-* The target gains 2 surges, and gains a +3 bonus to speed until the end of the encounter.`),
+* Ціль може витратити будь-яку кількість Відновлень.
+* Ціль отримує 1 одиницю свого Героїчного ресурсу і може зняти будь-які ефекти, що знімаються рятівним кидком або закінчуються в кінці її ходу.
+* Ціль отримує 2 сплески і отримує бонус +3 до швидкості до кінця зустрічі.`),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You and the target both permanently grow visibly younger (the equivalent of 20 human years, to the minimum of an 18-year-old). Additionally, you are weakened and slowed (save ends).'
+					name: 'Напруження',
+					effect: 'Ви і ціль обидва назавжди помітно молодшаєте (еквівалентно 20 рокам для людини, мінімум до 18 років). Додатково, ви ослаблені та уповільнені (рятівний кидок знімає).'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'talent-ability-28',
-			name: 'Steel',
-			description: 'The target’s skin becomes covered in tough metal.',
+			name: 'Сталь',
+			description: 'Шкіра цілі вкривається міцним металом.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Metamorphosis, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Одна істота',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target has damage immunity 5 and can’t be made slowed or weakened until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the forced movement distance gains a +5 bonus.'),
+				FactoryLogic.createAbilitySectionText('Ціль має імунітет до шкоди 5 і не може бути уповільнена або ослаблена до початку вашого наступного ходу. Коли ціль примусово переміщує істоту або обʼєкт під цим ефектом, відстань примусового переміщення отримує бонус +5.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Strained',
-					effect: 'You can’t use maneuvers (save ends).'
+					name: 'Напруження',
+					effect: 'Ви не можете використовувати маневри (рятівний кидок знімає).'
 				})
 			]
 		})

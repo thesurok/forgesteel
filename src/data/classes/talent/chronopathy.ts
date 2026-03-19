@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const chronopathy: SubClass = {
 	id: 'talent-sub-1',
-	name: 'Chronopathy',
-	description: 'Chronopathy abilities allow you to view future and past events, and to manipulate time to aid allies and hinder foes.',
+	name: 'Хронопатія',
+	description: 'Здібності хронопатії дозволяють вам бачити майбутні й минулі події та маніпулювати часом, щоб допомагати союзникам і перешкоджати ворогам.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -15,17 +15,17 @@ export const chronopathy: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-1-1-1',
-						name: 'Accelerate',
-						description: 'To your ally, it seems as though the world has slowed down.',
+						name: 'Прискорення',
+						description: 'Для вашого союзника здається, ніби світ уповільнився.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'На себе або одно істоту',
+						target: 'На себе або одну істоту',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target shifts up to a number of squares equal to your Reason score.'),
+							FactoryLogic.createAbilitySectionText('Ціль переміщується на кількість клітинок, рівну вашому показнику Розуму.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'The target can use a maneuver.'
+								effect: 'Ціль може виконати маневр.'
 							})
 						]
 					})
@@ -33,14 +33,14 @@ export const chronopathy: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-1-1-2',
-						name: 'Again',
-						description: 'You step back a split second to see if things play out a little differently.',
-						type: FactoryLogic.type.createTrigger('The target makes an ability roll.'),
+						name: 'Ще раз',
+						description: 'Ви відкотитеся на мить назад, щоб побачити, чи складеться все трохи інакше.',
+						type: FactoryLogic.type.createTrigger('Ціль робить кидок здібності.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'На себе або одно істоту',
+						target: 'На себе або одну істоту',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can use this ability after seeing the result of the triggering roll. The target must reroll the power roll and use the new roll.')
+							FactoryLogic.createAbilitySectionText('Ви можете використати цю здібність після того, як побачите результат кидка-тригера. Ціль мусить перебросити кидок сили та використати новий результат.')
 						]
 					})
 				})
@@ -51,35 +51,35 @@ export const chronopathy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-1-2-1',
-					name: 'Ease the Hours',
-					description: 'You can increase the number of rounds in a montage test by 1 if the test would end before the heroes hit the success limit.'
+					name: 'Полегшення годин',
+					description: 'Ви можете збільшити кількість раундів у тесті монтажу на 1, якщо тест завершився б до досягнення героями ліміту успіхів.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-1-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Здібність традиції 2 рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-2-2a',
-									name: 'Applied Chronometrics',
-									description: 'Time slows down around you. Your heartbeat is the only gauge of the extra moments you’ve gained.',
+									name: 'Прикладна хронометрія',
+									description: 'Час сповільнюється навколо вас. Ваше серцебиття — єдиний показник додаткових миттєвостей, які ви отримали.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Special',
+									target: 'Особливе',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Presence],
-											tier1: 'You target two creatures, one of which can be you',
-											tier2: 'You target three creatures, one of which can be you',
-											tier3: 'You target four creatures, one of which can be you'
+											tier1: 'Ви обираєте дві істоти, одна з яких може бути ви',
+											tier2: 'Ви обираєте три істоти, одна з яких може бути ви',
+											tier3: 'Ви обираєте чотири істоти, одна з яких може бути ви'
 										})),
-										FactoryLogic.createAbilitySectionText('Until the start of your next turn, each target gains a +5 bonus to speed, they can’t be made dazed, and they can use an additional maneuver on their turn. If a target is already dazed, that condition ends for them.'),
+										FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу кожна ціль отримує +5 до швидкості, її не можна зробити приголомшеною, і вона може виконати додатковий маневр у своєму ході. Якщо ціль уже приголомшена, цей стан для неї припиняється.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'Your speed is halved until the end of the encounter.'
+											name: 'Виснажений',
+											effect: 'Ваша швидкість зменшується наполовину до кінця бою.'
 										})
 									]
 								})
@@ -90,24 +90,24 @@ export const chronopathy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-2-2b',
-									name: 'Slow',
-									description: 'Perhaps they wonder why everyone else is moving so quickly?',
+									name: 'Сповільнення',
+									description: 'Можливо, вони дивуються, чому всі інші рухаються так швидко?',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Three creatures or objects',
+									target: 'Три істоти або обʼєкти',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Presence],
-											tier1: 'The target’s speed is halved (save ends), or if P < [слабкий], the target is slowed (save ends).',
-											tier2: 'The target is slowed (save ends), or if P < [середній], the target’s speed is 0 (save ends).',
-											tier3: 'The target is slowed (save ends), or if P < [сильний], the target’s speed is 0 (save ends).'
+											tier1: 'Швидкість цілі зменшується наполовину (рят. кидок закінчує), або якщо П < [слабкий], ціль сповільнюється (рят. кидок закінчує).',
+											tier2: 'Ціль сповільнюється (рят. кидок закінчує), або якщо П < [середній], швидкість цілі стає 0 (рят. кидок закінчує).',
+											tier3: 'Ціль сповільнюється (рят. кидок закінчує), або якщо П < [сильний], швидкість цілі стає 0 (рят. кидок закінчує).'
 										})),
-										FactoryLogic.createAbilitySectionText('A target can’t use triggered actions while their speed is reduced this way.'),
+										FactoryLogic.createAbilitySectionText('Ціль не може використовувати тригерні дії, поки її швидкість знижена таким чином.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The potency of this ability increases by 1 and you take 1d6 damage. At the start of each combat round while any target is affected by this ability, you take 1d6 damage. You can end the effect on all affected targets at any time (no action required).'
+											name: 'Виснажений',
+											effect: 'Потужність цієї здібності збільшується на 1 і ви отримуєте 1d6 пошкодження. На початку кожного раунду бою, поки будь-яка ціль під впливом цієї здібності, ви отримуєте 1d6 пошкодження. Ви можете припинити ефект на всіх уражених цілях у будь-який момент (без дії).'
 										})
 									]
 								})
@@ -131,13 +131,13 @@ export const chronopathy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-1-5-1',
-					name: 'Distortion Temporal',
-					description: 'While you are not dying, time behaves irregularly around you in a 3 aura. That area is difficult terrain for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to speed until the end of the turn.'
+					name: 'Часова деформація',
+					description: 'Поки ви не вмираєте, час поводиться нерегулярно навколо вас в аурі 3. Та область є важкопрохідною для ворогів. Крім того, коли союзник вперше за раунд бою входить у цю область або починає там свій хід, він отримує +2 до швидкості до кінця ходу.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-sub-1-5-2',
-					name: 'Speed of Thought',
-					description: 'Once per combat round while you are not dying, you can spend 2 clarity when you use a triggered action to turn it into a free triggered action.'
+					name: 'Швидкість думки',
+					description: 'Раз за раунд бою, поки ви не вмираєте, ви можете витратити 2 ясності, коли використовуєте тригерну дію, щоб зробити її безкоштовною тригерною дією.'
 				})
 			]
 		},
@@ -146,31 +146,31 @@ export const chronopathy: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-1-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Здібність традиції 6 рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-6-1a',
-									name: 'Fate',
-									description: 'Your foe gets a glimpse of how it will end for them.',
+									name: 'Доля',
+									description: 'Ваш ворог бачить проблиск того, як усе для нього завершиться.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Melee],
 									distance: [FactoryLogic.distance.createMelee(2)],
 									target: 'Один ворог',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('The target has damage weakness 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are knocked prone.'),
+										FactoryLogic.createAbilitySectionText('Ціль має вразливість до шкоди 5 до кінця вашого наступного ходу. Коли ціль отримує пошкодження, маючи цю вразливість, її збиває з ніг.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'This ability gains the Strike keyword as the vision hurts the target’s psyche. You make a power roll, then are weakened (save ends).'
+											name: 'Виснажений',
+											effect: 'Ця здібність набуває ключового слова Удар, оскільки бачення шкодить психіці цілі. Ви робите кидок сили, після чого ви стаєте ослабленими (рят. кидок закінчує).'
 										}),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '8 + P psychic damage',
-												tier2: '13 + P psychic damage',
-												tier3: '17 + P psychic damage'
+												tier1: '8 + П психічної шкоди',
+												tier2: '13 + П психічної шкоди',
+												tier3: '17 + П психічної шкоди'
 											})
 										)
 									]
@@ -182,29 +182,29 @@ export const chronopathy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-6-1b',
-									name: 'Statis Field',
-									description: 'Keep everything as it was. Ignore everything that will be.',
+									name: 'Стазове поле',
+									description: 'Залиште все як було. Ігноруйте все, що буде.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
-									target: 'Each creature and object in the area',
+									target: 'Кожна істота та обʼєкт в області',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-The area is frozen in time until the start of your next turn. Each object in the area is restrained and can’t fall until the effect ends. Until the effect ends, creatures in the area who are reduced to 0 Stamina or would die stay alive, and objects in the area that are reduced to 0 Stamina remain undestroyed.
+Область заморожена в часі до початку вашого наступного ходу. Кожний обʼєкт в області скуттий і не може впасти, поки ефект не закінчиться. До завершення ефекту істоти в області, які знижені до 0 Витривалості або мали б померти, залишаються живими, а обʼєкти в області, які знижені до 0 Витривалості, залишаються не зруйнованими.
 
-Make a power roll that targets each enemy in the area.`),
+Здійсніть кидок сили, що таргетує кожного ворога в області.`),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'P < [слабкий], the target is slowed until the effect ends',
-												tier2: 'P < [середній], the target’s speed is 0 until the effect ends',
-												tier3: 'P < [сильний], the target is restrained until the effect ends'
+												tier1: 'П < [слабкий], ціль сповільнюється до завершення ефекту',
+												tier2: 'П < [середній], швидкість цілі стає 0 до завершення ефекту',
+												tier3: 'П < [сильний], ціль скутa до завершення ефекту'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'Any creature or object force moved in the area takes 2 corruption damage for each square of the area they enter. Creatures and objects restrained in the area can be force moved. You are restrained until the effect ends.'
+											name: 'Виснажений',
+											effect: 'Будь-яка істота або обʼєкт, примусово переміщені в області, отримує 2 шкоди скверни за кожну клітинку області, яку вони входять. Істоти та обʼєкти, скуті в області, можуть бути примусово переміщені. Ви скуті до завершення ефекту.'
 										})
 									]
 								})
@@ -224,24 +224,24 @@ Make a power roll that targets each enemy in the area.`),
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-1-8-1',
-					name: 'Doubling the Hours',
-					description: 'While you have 5 or more Victories, you can undertake an additional respite activity during a respite.'
+					name: 'Подвоєння годин',
+					description: 'Поки у вас 5 або більше Перемог, під час відпочинку ви можете виконати ще одну дію відпочинку.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-1-8-2',
-						name: 'Stasis Shield',
-						description: 'You freeze time just long enough to bring the victim to safety!',
-						type: FactoryLogic.type.createTrigger('The target takes damage.'),
+						name: 'Стазовий щит',
+						description: 'Ви заморожуєте час настільки, щоб перемістити ціль у безпечне місце!',
+						type: FactoryLogic.type.createTrigger('Ціль отримує пошкодження.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Self or one creature or object',
+						target: 'На себе або одну істоту чи обʼєкт',
 						cost: 3,
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is teleported to an unoccupied space adjacent to you, taking no damage and suffering no additional effects if this movement would get them out of harm’s way.'),
+							FactoryLogic.createAbilitySectionText('Ціль телепортується на незайняту клітинку поруч із вами, не отримуючи пошкоджень і не зазнаючи додаткових ефектів, якщо це переміщення виводить її з зони небезпеки.'),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Strained',
-								effect: 'You can’t target yourself, and you take the damage and any additional effects instead of the target.'
+								name: 'Виснажений',
+								effect: 'Ви не можете націлитись на себе, і ви отримуєте пошкодження та будь-які додаткові ефекти замість цілі.'
 							})
 						]
 					})
@@ -253,31 +253,31 @@ Make a power roll that targets each enemy in the area.`),
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-1-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Здібність традиції 9 рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-9-1a',
-									name: 'Acceleration Field',
-									description: 'You forcibly stuff more moments into a critical point in time, knowing full well you might need to steal some of your own.',
+									name: 'Поле прискорення',
+									description: 'Ви примусово втискаєте більше миттєвостей у критичну точку часу, добре знаючи, що, можливо, доведеться вкрасти частину власних.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Chronopathy, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(5)],
-									target: 'Three allies',
+									target: 'Три союзники',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Each target can use any main action available to them as a free triggered action, but they lose their main action on their next turn.'),
+										FactoryLogic.createAbilitySectionText('Кожна ціль може використати будь-яку доступну їй основну дію як безкоштовну тригерну дію, але вона втрачає свою основну дію в наступному ході.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'Make a power roll that targets you and each enemy within distance.'
+											name: 'Виснажений',
+											effect: 'Зробіть кидок сили, що таргетує вас та кожного ворога в межах дистанції.'
 										}),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '4 corruption damage; slowed (save ends)',
-												tier2: '6 corruption damage; slowed (save ends)',
-												tier3: '10 corruption damage; slowed (save ends)'
+												tier1: '4 шкоди скверни; сповільнений (рят. кидок закінчує)',
+												tier2: '6 шкоди скверни; сповільнений (рят. кидок закінчує)',
+												tier3: '10 шкоди скверни; сповільнений (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -289,15 +289,15 @@ Make a power roll that targets each enemy in the area.`),
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-1-9-1b',
-									name: 'Borrow From the Future',
-									description: 'You lean on future heroism to assist you in the now.',
+									name: 'Запозичити у майбутнього',
+									description: 'Ви покладаєтесь на майбутні героїчні вчинки, щоб допомогти собі зараз.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Chronopathy, AbilityKeyword.Psionic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 									target: 'Кожен союзник у зоні',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('The targets share 6 of their Heroic Resource among themselves, as you determine. A target can’t gain more than 3 of their Heroic Resource this way. After using this ability, you can’t gain any clarity until the end of the next combat round.')
+										FactoryLogic.createAbilitySectionText('Цілі ділять між собою 6 одиниць свого Героїчного ресурсу за вашим розсудом. Жодна ціль не може отримати більше ніж 3 одиниці свого Героїчного ресурсу таким способом. Після використання цієї здібності ви не можете отримувати ясність до кінця наступного раунду бою.')
 									]
 								})
 							}),

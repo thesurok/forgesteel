@@ -443,7 +443,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 3,
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,

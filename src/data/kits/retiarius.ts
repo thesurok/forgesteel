@@ -35,9 +35,9 @@ export const retiarius: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; A < [слабкий] slowed (EoT)',
-							tier2: '4 + M or A damage; A < [середній] slowed (EoT)',
-							tier3: '6 + M or A damage; A < [сильний] restrained (EoT)'
+							tier1: '2 + С or A damage; Л < [слабкий] slowed (EoT)',
+							tier2: '4 + С or A damage; Л < [середній] slowed (EoT)',
+							tier3: '6 + С or A damage; Л < [сильний] restrained (EoT)'
 						})
 					)
 				]

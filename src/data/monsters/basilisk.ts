@@ -67,8 +67,8 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						FactoryLogic.createPowerRoll({
 							bonus: 2,
 							tier1: '4 damage',
-							tier2: '4 damage; A < 1 2 damage, prone',
-							tier3: '4 damage; A < 2 5 damage, prone and can\'t stand (save ends)'
+							tier2: '4 damage; Л < 1 2 damage, prone',
+							tier3: '4 damage; Л < 2 5 damage, prone and can\'t stand (save ends)'
 						})
 					)
 				]
@@ -243,7 +243,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 									bonus: 2,
 									tier1: 'A < 0 Restrained (save ends)',
 									tier2: 'A < 1 Restrained (save ends)',
-									tier3: 'Slowed (save ends) or A < 2 Restrained (save ends)'
+									tier3: 'Slowed (save ends) or Л < 2 Restrained (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.')
@@ -266,9 +266,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '8 corruption damage; R < 0 dazed (save ends)',
-									tier2: '10 corruption damage; R < 1 dazed (save ends)',
-									tier3: '14 corruption damage; R < 2 dazed (save ends)'
+									tier1: '8 corruption damage; Р < 0 dazed (save ends)',
+									tier2: '10 corruption damage; Р < 1 dazed (save ends)',
+									tier3: '14 corruption damage; Р < 2 dazed (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A creature dazed this way can’t benefit from edges or double edges and can’t gain or use surges.')

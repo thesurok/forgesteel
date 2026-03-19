@@ -244,7 +244,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-1-5b-2',
 										name: 'Mawful Strike',
-										description: 'The musilex’s melee free strikes have a distance of 2 + R and inflict pull 2. The pull distance increases by 2 for each additional musilex striking the same target. Choose the musilex that the target is being pulled to before applying forced movement. If the target is pulled adjacent to the musilex, the musilex either deals an additional 2 damage or grabs them.'
+										description: 'The musilex’s melee free strikes have a distance of 2 + Р and inflict pull 2. The pull distance increases by 2 for each additional musilex striking the same target. Choose the musilex that the target is being pulled to before applying forced movement. If the target is pulled adjacent to the musilex, the musilex either deals an additional 2 damage or grabs them.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-1-5b-3',
@@ -296,9 +296,9 @@ When you finish a respite, you can always perceive the soul trails of each creat
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 damage; P < [слабкий] twisted (save ends)',
-														tier2: '4 damage; P < [середній] twisted (save ends)',
-														tier3: '4 damage; P < [сильний] twisted (save ends)'
+														tier1: '4 damage; П < [слабкий] twisted (save ends)',
+														tier2: '4 damage; П < [середній] twisted (save ends)',
+														tier3: '4 damage; П < [сильний] twisted (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A twisted target can’t take advantage of edges or search for hidden creatures until the condition ends.')
@@ -343,7 +343,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-fixture-1-2',
 										name: 'Oh, It Pops',
-										description: 'When the boil is destroyed, each enemy within 3 squares of the boil takes acid damage equal to your level and is A < [сильний] weakened (save ends).'
+										description: 'When the boil is destroyed, each enemy within 3 squares of the boil takes acid damage equal to your level and is Л < [сильний] weakened (save ends).'
 									})
 								]
 							},
@@ -437,7 +437,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2a-2',
 										name: 'Gushing Strike',
-										description: 'The spewler’s ranged free strikes have a distance of 10 and slide the target R + 2 squares.'
+										description: 'The spewler’s ranged free strikes have a distance of 10 and slide the target Р + 2 squares.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2a-3',
@@ -568,7 +568,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 					description: `
 As a maneuver, you can command one or more of your demon minions to each deal damage equal to their free strike value to an adjacent ally. This damage can’t be reduced. The ally then ends a condition affecting them and confers it to the demon that attacked them.
 
-Additionally, whenever one of your demon minions Death Snaps, their target is P < [слабкий] affected by a condition the minion was suffering from. The potency increases by 1 on each subsequent Death Snap the target takes damage from in the same turn (maximum +2).`
+Additionally, whenever one of your demon minions Death Snaps, their target is П < [слабкий] affected by a condition the minion was suffering from. The potency increases by 1 on each subsequent Death Snap the target takes damage from in the same turn (maximum +2).`
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-1-5-2',
@@ -619,9 +619,9 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 corruption damage; P < [слабкий] bleeding (EoT)',
-														tier2: '11 corruption damage; P < [середній] bleeding (EoT)',
-														tier3: '16 corruption damage; P < [сильний] bleeding (EoT)'
+														tier1: '7 corruption damage; П < [слабкий] bleeding (EoT)',
+														tier2: '11 corruption damage; П < [середній] bleeding (EoT)',
+														tier3: '16 corruption damage; П < [сильний] bleeding (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Instead of taking damage, you or an ally targeted by this ability impose a double bane on the next strike that targets them.')
@@ -729,9 +729,9 @@ Additionally, whenever one of your demon minions Death Snaps, their target is P 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 psychic damage; P < [слабкий] weakened (save ends)',
-														tier2: '11 psychic damage; P < [середній] weakened (save ends)',
-														tier3: '16 psychic damage; P < [сильний] weakened (save ends)'
+														tier1: '7 psychic damage; П < [слабкий] weakened (save ends)',
+														tier2: '11 psychic damage; П < [середній] weakened (save ends)',
+														tier3: '16 psychic damage; П < [сильний] weakened (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target weakened by this ability is always considered flanked by the vicisittante regardless of position until the condition ends.')

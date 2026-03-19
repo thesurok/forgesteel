@@ -814,7 +814,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
@@ -906,7 +906,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 								tier2: '5 sonic damage',
 								tier3: '8 sonic damage'
 							})),
-							FactoryLogic.createAbilitySectionText('A target who has P < 2 is reduced to 1 Stamina if they are winded after taking this damage.')
+							FactoryLogic.createAbilitySectionText('A target who has П < 2 is reduced to 1 Stamina if they are winded after taking this damage.')
 						]
 					})
 				}),

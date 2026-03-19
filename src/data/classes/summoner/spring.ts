@@ -79,7 +79,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-2',
 										name: 'Soaking Bog',
-										description: 'The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < [слабкий] slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).'
+										description: 'The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is Л < [слабкий] slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-3',
@@ -510,9 +510,9 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '3 damage; pull 2; A < [слабкий] bleeding (EoT)',
-														tier2: '6 damage; pull 3; A < [середній] bleeding (EoT)',
-														tier3: '8 damage; pull 4; A < [сильний] bleeding (EoT)'
+														tier1: '3 damage; pull 2; Л < [слабкий] bleeding (EoT)',
+														tier2: '6 damage; pull 3; Л < [середній] bleeding (EoT)',
+														tier3: '8 damage; pull 4; Л < [сильний] bleeding (EoT)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target can’t shift while bleeding from this ability.')

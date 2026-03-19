@@ -35,9 +35,9 @@ export const swashbuckler: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '5 + M or A damage; push 1',
-							tier3: '8 + M or A damage; push 2'
+							tier1: '3 + С or A damage',
+							tier2: '5 + С or A damage; push 1',
+							tier3: '8 + С or A damage; push 2'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You can shift into any square the target leaves after you push them')

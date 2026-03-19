@@ -840,9 +840,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I holy damage; A < [слабкий], prone',
-					tier2: '6 + I holy damage; A < [середній], prone',
-					tier3: '9 + I holy damage; A < [сильний], prone and can’t stand (save ends)'
+					tier1: '3 + I holy damage; Л < [слабкий], prone',
+					tier2: '6 + I holy damage; Л < [середній], prone',
+					tier3: '9 + I holy damage; Л < [сильний], prone and can’t stand (save ends)'
 				}))
 			]
 		}),

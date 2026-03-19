@@ -31,7 +31,7 @@
         },
         "censor-3-1": {
           "name": "Look On My Work and Despair",
-          "description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [середній], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score."
+          "description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has П < [середній], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has П < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score."
         },
         "censor-4-5": {
           "name": "4th-Level Domain Feature",
@@ -39,7 +39,7 @@
         },
         "censor-6-1": {
           "name": "Implement of Wrath",
-          "description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has P < [сильний] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened."
+          "description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has П < [сильний] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened."
         },
         "censor-7-2": {
           "name": "7th-Level Domain Feature",
@@ -88,9 +88,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "5 + P psychic damage",
-              "tier2": "7 + P psychic damage",
-              "tier3": "10 + P psychic damage"
+              "tier1": "5 + П psychic damage",
+              "tier2": "7 + П psychic damage",
+              "tier3": "10 + П psychic damage"
             },
             "text": "Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move."
           }
@@ -105,9 +105,9 @@
           "target": "One creature or object",
           "sections": {
             "roll": {
-              "tier1": "2 + M holy damage; P < [слабкий], slowed (save ends)",
-              "tier2": "5 + M holy damage; P < [середній], slowed (save ends)",
-              "tier3": "7 + M holy damage; P < [сильний], slowed (save ends)"
+              "tier1": "2 + С holy damage; П < [слабкий], slowed (save ends)",
+              "tier2": "5 + С holy damage; П < [середній], slowed (save ends)",
+              "tier3": "7 + С holy damage; П < [сильний], slowed (save ends)"
             }
           }
         },
@@ -121,9 +121,9 @@
           "target": "One creature or object",
           "sections": {
             "roll": {
-              "tier1": "3 + M holy damage",
-              "tier2": "5 + M holy damage",
-              "tier3": "8 + M holy damage"
+              "tier1": "3 + С holy damage",
+              "tier2": "5 + С holy damage",
+              "tier3": "8 + С holy damage"
             },
             "text": "Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score."
           }
@@ -138,9 +138,9 @@
           "target": "One creature or object",
           "sections": {
             "roll": {
-              "tier1": "3 + M holy damage",
-              "tier2": "6 + M holy damage",
-              "tier3": "9 + M holy damage"
+              "tier1": "3 + С holy damage",
+              "tier2": "6 + С holy damage",
+              "tier3": "9 + С holy damage"
             },
             "text": "Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you."
           }
@@ -155,9 +155,9 @@
           "target": "One creature or object",
           "sections": {
             "roll": {
-              "tier1": "3 + M damage; push 1",
-              "tier2": "6 + M damage; push 3",
-              "tier3": "9 + M damage; push 5"
+              "tier1": "3 + С damage; push 1",
+              "tier2": "6 + С damage; push 3",
+              "tier3": "9 + С damage; push 5"
             },
             "text": "You can shift up to your speed in a straight line toward the target after pushing them."
           }
@@ -172,9 +172,9 @@
           "target": "One creature or object",
           "sections": {
             "roll": {
-              "tier1": "5 + M holy damage",
-              "tier2": "8 + M holy damage",
-              "tier3": "11 + M holy damage"
+              "tier1": "5 + С holy damage",
+              "tier2": "8 + С holy damage",
+              "tier3": "11 + С holy damage"
             },
             "text": "You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value."
           }
@@ -189,9 +189,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "5 + P holy damage; I < [слабкий], dazed (save ends)",
-              "tier2": "8 + P holy damage; I < [середній], dazed (save ends)",
-              "tier3": "11 + P holy damage; I < [сильний], dazed (save ends)"
+              "tier1": "5 + П holy damage; I < [слабкий], dazed (save ends)",
+              "tier2": "8 + П holy damage; I < [середній], dazed (save ends)",
+              "tier3": "11 + П holy damage; I < [сильний], dazed (save ends)"
             }
           }
         },
@@ -205,9 +205,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "6 + M holy damage; grabbed",
-              "tier2": "9 + M holy damage; grabbed",
-              "tier3": "13 + M holy damage; grabbed"
+              "tier1": "6 + С holy damage; grabbed",
+              "tier2": "9 + С holy damage; grabbed",
+              "tier3": "13 + С holy damage; grabbed"
             },
             "text": "If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance."
           }
@@ -222,9 +222,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "3 + M holy damage; if the target has P < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)",
-              "tier2": "5 + M holy damage; if the target has P < [середній], each enemy within 2 squares of them is frightened of you (save ends)",
-              "tier3": "8 + M holy damage; if the target has P < [сильний], each enemy within 2 squares of them is frightened of you (save ends)"
+              "tier1": "3 + С holy damage; if the target has П < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)",
+              "tier2": "5 + С holy damage; if the target has П < [середній], each enemy within 2 squares of them is frightened of you (save ends)",
+              "tier3": "8 + С holy damage; if the target has П < [сильний], each enemy within 2 squares of them is frightened of you (save ends)"
             },
             "text": "Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score."
           }
@@ -239,9 +239,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "2 + M holy damage",
-              "tier2": "3 + M holy damage",
-              "tier3": "5 + M holy damage"
+              "tier1": "2 + С holy damage",
+              "tier2": "3 + С holy damage",
+              "tier3": "5 + С holy damage"
             },
             "text": "When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina."
           }
@@ -256,9 +256,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "5 + M holy damage; M < [слабкий], the target has fire weakness 3 (save ends)",
-              "tier2": "9 + M holy damage; M < [середній], the target has fire weakness 5 (save ends)",
-              "tier3": "12 + M holy damage; M < [сильний], the target has fire weakness 7 (save ends)"
+              "tier1": "5 + С holy damage; M < [слабкий], the target has fire weakness 3 (save ends)",
+              "tier2": "9 + С holy damage; M < [середній], the target has fire weakness 5 (save ends)",
+              "tier3": "12 + С holy damage; M < [сильний], the target has fire weakness 7 (save ends)"
             },
             "text": "While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage."
           }
@@ -350,9 +350,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "10 + M damage",
-              "tier2": "14 + M damage",
-              "tier3": "20 + M damage"
+              "tier1": "10 + С damage",
+              "tier2": "14 + С damage",
+              "tier3": "20 + С damage"
             },
             "text": "Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge."
           }
@@ -367,9 +367,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina",
-              "tier2": "14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina",
-              "tier3": "20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina"
+              "tier1": "10 + С damage; you and each ally adjacent to you gain 10 temporary Stamina",
+              "tier2": "14 + С damage; you and each ally adjacent to you gain 15 temporary Stamina",
+              "tier3": "20 + С damage; you and each ally adjacent to you gain 20 temporary Stamina"
             }
           }
         },
@@ -383,9 +383,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "9 + M damage; I < [слабкий], weakened (save ends)",
-              "tier2": "13 + M damage; I < [середній], weakened (save ends)",
-              "tier3": "18 + M damage; I < [сильний], weakened (save ends)"
+              "tier1": "9 + С damage; I < [слабкий], weakened (save ends)",
+              "tier2": "13 + С damage; I < [середній], weakened (save ends)",
+              "tier3": "18 + С damage; I < [сильний], weakened (save ends)"
             },
             "text": "At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities."
           }
@@ -400,9 +400,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "10 + M damage",
-              "tier2": "15 + M damage",
-              "tier3": "21 + M damage"
+              "tier1": "10 + С damage",
+              "tier2": "15 + С damage",
+              "tier3": "21 + С damage"
             },
             "text": "Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking."
           }
@@ -417,9 +417,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "9 + M damage; I < [слабкий], dazed (save ends)",
-              "tier2": "13 + M damage; I < [середній], dazed (save ends)",
-              "tier3": "18 + M damage; I < [сильний], dazed (save ends)"
+              "tier1": "9 + С damage; I < [слабкий], dazed (save ends)",
+              "tier2": "13 + С damage; I < [середній], dazed (save ends)",
+              "tier3": "18 + С damage; I < [сильний], dazed (save ends)"
             },
             "text": "At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them."
           }
@@ -434,9 +434,9 @@
           "target": "One creature",
           "sections": {
             "roll": {
-              "tier1": "5 + P damage; I < [слабкий], slowed (save ends)",
-              "tier2": "9 + P damage; I < [середній], slowed (save ends)",
-              "tier3": "12 + P damage; I < [сильний], slowed (save ends)"
+              "tier1": "5 + П damage; I < [слабкий], slowed (save ends)",
+              "tier2": "9 + П damage; I < [середній], slowed (save ends)",
+              "tier3": "12 + П damage; I < [сильний], slowed (save ends)"
             },
             "text": "While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead."
           }
@@ -484,7 +484,7 @@
   "classes.censor.censor-2-1.id": "censor-2-1",
   "classes.censor.censor-3-1.id": "censor-3-1",
   "classes.censor.censor-3-1.name": "Look On My Work and Despair",
-  "classes.censor.censor-3-1.description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has P < [середній], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has P < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.",
+  "classes.censor.censor-3-1.description": "Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has П < [середній], they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has П < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.",
   "classes.censor.censor-3-2.id": "censor-3-2",
   "classes.censor.censor-4-1a.id": "censor-4-1a",
   "classes.censor.censor-4-1b.id": "censor-4-1b",
@@ -501,7 +501,7 @@
   "classes.censor.censor-5-1.id": "censor-5-1",
   "classes.censor.censor-6-1.id": "censor-6-1",
   "classes.censor.censor-6-1.name": "Implement of Wrath",
-  "classes.censor.censor-6-1.description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\r\n\r\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\r\n* Any creature struck by the weapon who has holy weakness and has P < [сильний] is frightened and weakened (save ends).\r\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\r\n* The weapon’s wielder can’t be made frightened.",
+  "classes.censor.censor-6-1.description": "Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\r\n\r\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\r\n* Any creature struck by the weapon who has holy weakness and has П < [сильний] is frightened and weakened (save ends).\r\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\r\n* The weapon’s wielder can’t be made frightened.",
   "classes.censor.censor-6-2.id": "censor-6-2",
   "classes.censor.censor-7-1a.id": "censor-7-1a",
   "classes.censor.censor-7-1b.id": "censor-7-1b",
@@ -555,89 +555,89 @@
   "classes.censor.censor-ability-2.description": "You show your foe a glimpse of their fate after death.",
   "classes.censor.censor-ability-2.target": "One creature",
   "classes.censor.censor-ability-2.cost": "signature",
-  "classes.censor.censor-ability-2.tier1": "5 + P psychic damage",
-  "classes.censor.censor-ability-2.tier2": "7 + P psychic damage",
-  "classes.censor.censor-ability-2.tier3": "10 + P psychic damage",
+  "classes.censor.censor-ability-2.tier1": "5 + П psychic damage",
+  "classes.censor.censor-ability-2.tier2": "7 + П psychic damage",
+  "classes.censor.censor-ability-2.tier3": "10 + П psychic damage",
   "classes.censor.censor-ability-2.text": "Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.",
   "classes.censor.censor-ability-3.id": "censor-ability-3",
   "classes.censor.censor-ability-3.name": "Halt, Miscreant!",
   "classes.censor.censor-ability-3.description": "You infuse your weapon with holy magic that makes it difficult for your foe to get away.",
   "classes.censor.censor-ability-3.target": "One creature or object",
   "classes.censor.censor-ability-3.cost": "signature",
-  "classes.censor.censor-ability-3.tier1": "2 + M holy damage; P < [слабкий], slowed (save ends)",
-  "classes.censor.censor-ability-3.tier2": "5 + M holy damage; P < [середній], slowed (save ends)",
-  "classes.censor.censor-ability-3.tier3": "7 + M holy damage; P < [сильний], slowed (save ends)",
+  "classes.censor.censor-ability-3.tier1": "2 + С holy damage; П < [слабкий], slowed (save ends)",
+  "classes.censor.censor-ability-3.tier2": "5 + С holy damage; П < [середній], slowed (save ends)",
+  "classes.censor.censor-ability-3.tier3": "7 + С holy damage; П < [сильний], slowed (save ends)",
   "classes.censor.censor-ability-4.id": "censor-ability-4",
   "classes.censor.censor-ability-4.name": "Your Allies Cannot Save You!",
   "classes.censor.censor-ability-4.description": "Your magic strike turns your foe’s guilt into a burst of holy power",
   "classes.censor.censor-ability-4.target": "One creature or object",
   "classes.censor.censor-ability-4.cost": "signature",
-  "classes.censor.censor-ability-4.tier1": "3 + M holy damage",
-  "classes.censor.censor-ability-4.tier2": "5 + M holy damage",
-  "classes.censor.censor-ability-4.tier3": "8 + M holy damage",
+  "classes.censor.censor-ability-4.tier1": "3 + С holy damage",
+  "classes.censor.censor-ability-4.tier2": "5 + С holy damage",
+  "classes.censor.censor-ability-4.tier3": "8 + С holy damage",
   "classes.censor.censor-ability-4.text": "Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.",
   "classes.censor.censor-ability-5.id": "censor-ability-5",
   "classes.censor.censor-ability-5.name": "Behold, a Shield of Faith!",
   "classes.censor.censor-ability-5.description": "A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.",
   "classes.censor.censor-ability-5.target": "One creature or object",
-  "classes.censor.censor-ability-5.tier1": "3 + M holy damage",
-  "classes.censor.censor-ability-5.tier2": "6 + M holy damage",
-  "classes.censor.censor-ability-5.tier3": "9 + M holy damage",
+  "classes.censor.censor-ability-5.tier1": "3 + С holy damage",
+  "classes.censor.censor-ability-5.tier2": "6 + С holy damage",
+  "classes.censor.censor-ability-5.tier3": "9 + С holy damage",
   "classes.censor.censor-ability-5.text": "Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you.",
   "classes.censor.censor-ability-6.id": "censor-ability-6",
   "classes.censor.censor-ability-6.name": "Driving Assault",
   "classes.censor.censor-ability-6.description": "As you force your enemy back with your weapon, you use your faith to stay close.",
   "classes.censor.censor-ability-6.target": "One creature or object",
-  "classes.censor.censor-ability-6.tier1": "3 + M damage; push 1",
-  "classes.censor.censor-ability-6.tier2": "6 + M damage; push 3",
-  "classes.censor.censor-ability-6.tier3": "9 + M damage; push 5",
+  "classes.censor.censor-ability-6.tier1": "3 + С damage; push 1",
+  "classes.censor.censor-ability-6.tier2": "6 + С damage; push 3",
+  "classes.censor.censor-ability-6.tier3": "9 + С damage; push 5",
   "classes.censor.censor-ability-6.text": "You can shift up to your speed in a straight line toward the target after pushing them.",
   "classes.censor.censor-ability-7.id": "censor-ability-7",
   "classes.censor.censor-ability-7.name": "The Gods Punish and Defend",
   "classes.censor.censor-ability-7.description": "You channel holy energy to smite a foe and heal an ally.",
   "classes.censor.censor-ability-7.target": "One creature or object",
-  "classes.censor.censor-ability-7.tier1": "5 + M holy damage",
-  "classes.censor.censor-ability-7.tier2": "8 + M holy damage",
-  "classes.censor.censor-ability-7.tier3": "11 + M holy damage",
+  "classes.censor.censor-ability-7.tier1": "5 + С holy damage",
+  "classes.censor.censor-ability-7.tier2": "8 + С holy damage",
+  "classes.censor.censor-ability-7.tier3": "11 + С holy damage",
   "classes.censor.censor-ability-7.text": "You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value.",
   "classes.censor.censor-ability-8.id": "censor-ability-8",
   "classes.censor.censor-ability-8.name": "Repent!",
   "classes.censor.censor-ability-8.description": "You conjure memories of their sins to harry your foes.",
   "classes.censor.censor-ability-8.target": "One creature",
-  "classes.censor.censor-ability-8.tier1": "5 + P holy damage; I < [слабкий], dazed (save ends)",
-  "classes.censor.censor-ability-8.tier2": "8 + P holy damage; I < [середній], dazed (save ends)",
-  "classes.censor.censor-ability-8.tier3": "11 + P holy damage; I < [сильний], dazed (save ends)",
+  "classes.censor.censor-ability-8.tier1": "5 + П holy damage; I < [слабкий], dazed (save ends)",
+  "classes.censor.censor-ability-8.tier2": "8 + П holy damage; I < [середній], dazed (save ends)",
+  "classes.censor.censor-ability-8.tier3": "11 + П holy damage; I < [сильний], dazed (save ends)",
   "classes.censor.censor-ability-9.id": "censor-ability-9",
   "classes.censor.censor-ability-9.name": "Arrest",
   "classes.censor.censor-ability-9.description": "“I got you, you son of a bitch.”",
   "classes.censor.censor-ability-9.target": "One creature",
-  "classes.censor.censor-ability-9.tier1": "6 + M holy damage; grabbed",
-  "classes.censor.censor-ability-9.tier2": "9 + M holy damage; grabbed",
-  "classes.censor.censor-ability-9.tier3": "13 + M holy damage; grabbed",
+  "classes.censor.censor-ability-9.tier1": "6 + С holy damage; grabbed",
+  "classes.censor.censor-ability-9.tier2": "9 + С holy damage; grabbed",
+  "classes.censor.censor-ability-9.tier3": "13 + С holy damage; grabbed",
   "classes.censor.censor-ability-9.text": "If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance.",
   "classes.censor.censor-ability-10.id": "censor-ability-10",
   "classes.censor.censor-ability-10.name": "Behold the Face of Justice!",
   "classes.censor.censor-ability-10.description": "You attack a foe and your enemies behold a vision of the true nature of your resolve.",
   "classes.censor.censor-ability-10.target": "One creature",
-  "classes.censor.censor-ability-10.tier1": "3 + M holy damage; if the target has P < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)",
-  "classes.censor.censor-ability-10.tier2": "5 + M holy damage; if the target has P < [середній], each enemy within 2 squares of them is frightened of you (save ends)",
-  "classes.censor.censor-ability-10.tier3": "8 + M holy damage; if the target has P < [сильний], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.tier1": "3 + С holy damage; if the target has П < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.tier2": "5 + С holy damage; if the target has П < [середній], each enemy within 2 squares of them is frightened of you (save ends)",
+  "classes.censor.censor-ability-10.tier3": "8 + С holy damage; if the target has П < [сильний], each enemy within 2 squares of them is frightened of you (save ends)",
   "classes.censor.censor-ability-10.text": "Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score.",
   "classes.censor.censor-ability-11.id": "censor-ability-11",
   "classes.censor.censor-ability-11.name": "Censored",
   "classes.censor.censor-ability-11.description": "Judged and sentenced.",
   "classes.censor.censor-ability-11.target": "One creature",
-  "classes.censor.censor-ability-11.tier1": "2 + M holy damage",
-  "classes.censor.censor-ability-11.tier2": "3 + M holy damage",
-  "classes.censor.censor-ability-11.tier3": "5 + M holy damage",
+  "classes.censor.censor-ability-11.tier1": "2 + С holy damage",
+  "classes.censor.censor-ability-11.tier2": "3 + С holy damage",
+  "classes.censor.censor-ability-11.tier3": "5 + С holy damage",
   "classes.censor.censor-ability-11.text": "When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.",
   "classes.censor.censor-ability-12.id": "censor-ability-12",
   "classes.censor.censor-ability-12.name": "Purifying Fire",
   "classes.censor.censor-ability-12.description": "The gods judge, fire cleanses.",
   "classes.censor.censor-ability-12.target": "One creature",
-  "classes.censor.censor-ability-12.tier1": "5 + M holy damage; M < [слабкий], the target has fire weakness 3 (save ends)",
-  "classes.censor.censor-ability-12.tier2": "9 + M holy damage; M < [середній], the target has fire weakness 5 (save ends)",
-  "classes.censor.censor-ability-12.tier3": "12 + M holy damage; M < [сильний], the target has fire weakness 7 (save ends)",
+  "classes.censor.censor-ability-12.tier1": "5 + С holy damage; M < [слабкий], the target has fire weakness 3 (save ends)",
+  "classes.censor.censor-ability-12.tier2": "9 + С holy damage; M < [середній], the target has fire weakness 5 (save ends)",
+  "classes.censor.censor-ability-12.tier3": "12 + С holy damage; M < [сильний], the target has fire weakness 7 (save ends)",
   "classes.censor.censor-ability-12.text": "While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage.",
   "classes.censor.censor-ability-13.id": "censor-ability-13",
   "classes.censor.censor-ability-13.name": "Edict of Disruptive Isolation",
@@ -676,47 +676,47 @@
   "classes.censor.censor-ability-19.name": "Righteous Judgment",
   "classes.censor.censor-ability-19.description": "You amplify the power of your judgment.",
   "classes.censor.censor-ability-19.target": "One creature",
-  "classes.censor.censor-ability-19.tier1": "10 + M damage",
-  "classes.censor.censor-ability-19.tier2": "14 + M damage",
-  "classes.censor.censor-ability-19.tier3": "20 + M damage",
+  "classes.censor.censor-ability-19.tier1": "10 + С damage",
+  "classes.censor.censor-ability-19.tier2": "14 + С damage",
+  "classes.censor.censor-ability-19.tier3": "20 + С damage",
   "classes.censor.censor-ability-19.text": "Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge.",
   "classes.censor.censor-ability-20.id": "censor-ability-20",
   "classes.censor.censor-ability-20.name": "Shield of the Righteous",
   "classes.censor.censor-ability-20.description": "You strike a foe and create a fleet of divine shields that protect your allies.",
   "classes.censor.censor-ability-20.target": "One creature",
-  "classes.censor.censor-ability-20.tier1": "10 + M damage; you and each ally adjacent to you gain 10 temporary Stamina",
-  "classes.censor.censor-ability-20.tier2": "14 + M damage; you and each ally adjacent to you gain 15 temporary Stamina",
-  "classes.censor.censor-ability-20.tier3": "20 + M damage; you and each ally adjacent to you gain 20 temporary Stamina",
+  "classes.censor.censor-ability-20.tier1": "10 + С damage; you and each ally adjacent to you gain 10 temporary Stamina",
+  "classes.censor.censor-ability-20.tier2": "14 + С damage; you and each ally adjacent to you gain 15 temporary Stamina",
+  "classes.censor.censor-ability-20.tier3": "20 + С damage; you and each ally adjacent to you gain 20 temporary Stamina",
   "classes.censor.censor-ability-21.id": "censor-ability-21",
   "classes.censor.censor-ability-21.name": "Excommunication",
   "classes.censor.censor-ability-21.description": "You curse your foe to become a bane to their allies.",
   "classes.censor.censor-ability-21.target": "One creature",
-  "classes.censor.censor-ability-21.tier1": "9 + M damage; I < [слабкий], weakened (save ends)",
-  "classes.censor.censor-ability-21.tier2": "13 + M damage; I < [середній], weakened (save ends)",
-  "classes.censor.censor-ability-21.tier3": "18 + M damage; I < [сильний], weakened (save ends)",
+  "classes.censor.censor-ability-21.tier1": "9 + С damage; I < [слабкий], weakened (save ends)",
+  "classes.censor.censor-ability-21.tier2": "13 + С damage; I < [середній], weakened (save ends)",
+  "classes.censor.censor-ability-21.tier3": "18 + С damage; I < [сильний], weakened (save ends)",
   "classes.censor.censor-ability-21.text": "At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities.",
   "classes.censor.censor-ability-22.id": "censor-ability-22",
   "classes.censor.censor-ability-22.name": "Hand of the Gods",
   "classes.censor.censor-ability-22.description": "You use your foe as a tool against your enemies.",
   "classes.censor.censor-ability-22.target": "One creature",
-  "classes.censor.censor-ability-22.tier1": "10 + M damage",
-  "classes.censor.censor-ability-22.tier2": "15 + M damage",
-  "classes.censor.censor-ability-22.tier3": "21 + M damage",
+  "classes.censor.censor-ability-22.tier1": "10 + С damage",
+  "classes.censor.censor-ability-22.tier2": "15 + С damage",
+  "classes.censor.censor-ability-22.tier3": "21 + С damage",
   "classes.censor.censor-ability-22.text": "Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.",
   "classes.censor.censor-ability-23.id": "censor-ability-23",
   "classes.censor.censor-ability-23.name": "Pillar of Holy Fire",
   "classes.censor.censor-ability-23.description": "Your enemy’s guilt fuels a holy flame that burns your foes.",
   "classes.censor.censor-ability-23.target": "One creature",
-  "classes.censor.censor-ability-23.tier1": "9 + M damage; I < [слабкий], dazed (save ends)",
-  "classes.censor.censor-ability-23.tier2": "13 + M damage; I < [середній], dazed (save ends)",
-  "classes.censor.censor-ability-23.tier3": "18 + M damage; I < [сильний], dazed (save ends)",
+  "classes.censor.censor-ability-23.tier1": "9 + С damage; I < [слабкий], dazed (save ends)",
+  "classes.censor.censor-ability-23.tier2": "13 + С damage; I < [середній], dazed (save ends)",
+  "classes.censor.censor-ability-23.tier3": "18 + С damage; I < [сильний], dazed (save ends)",
   "classes.censor.censor-ability-23.text": "At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.",
   "classes.censor.censor-ability-24.id": "censor-ability-24",
   "classes.censor.censor-ability-24.name": "Your Allies Turn on You!",
   "classes.censor.censor-ability-24.description": "You turn your enemies’ ire to the target.",
   "classes.censor.censor-ability-24.target": "One creature",
-  "classes.censor.censor-ability-24.tier1": "5 + P damage; I < [слабкий], slowed (save ends)",
-  "classes.censor.censor-ability-24.tier2": "9 + P damage; I < [середній], slowed (save ends)",
-  "classes.censor.censor-ability-24.tier3": "12 + P damage; I < [сильний], slowed (save ends)",
+  "classes.censor.censor-ability-24.tier1": "5 + П damage; I < [слабкий], slowed (save ends)",
+  "classes.censor.censor-ability-24.tier2": "9 + П damage; I < [середній], slowed (save ends)",
+  "classes.censor.censor-ability-24.tier3": "12 + П damage; I < [сильний], slowed (save ends)",
   "classes.censor.censor-ability-24.text": "While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead."
 }

@@ -222,9 +222,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; A < 1 3 acid damage',
-								tier2: '11 damage; A < 2 3 acid damage',
-								tier3: '14 damage; A < 3 3 acid damage'
+								tier1: '6 damage; Л < 1 3 acid damage',
+								tier2: '11 damage; Л < 2 3 acid damage',
+								tier3: '14 damage; Л < 3 3 acid damage'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -245,9 +245,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; A < 1 grabbed',
-								tier2: '14 damage; A < 2 grabbed',
-								tier3: '17 damage; A < 3 grabbed and the target takes a bane on the Escape Grab maneuver'
+								tier1: '9 damage; Л < 1 grabbed',
+								tier2: '14 damage; Л < 2 grabbed',
+								tier3: '17 damage; Л < 3 grabbed and the target takes a bane on the Escape Grab maneuver'
 							}))
 						]
 					})

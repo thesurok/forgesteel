@@ -38,9 +38,9 @@ export const cloakAndDagger: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; you shift 1 square',
-							tier2: '5 + M or A damage; you shift up to 2 squares',
-							tier3: '7 + M or A damage; you shift up to 3 squares'
+							tier1: '2 + С or A damage; you shift 1 square',
+							tier2: '5 + С or A damage; you shift up to 2 squares',
+							tier3: '7 + С or A damage; you shift up to 3 squares'
 						})
 					)
 				]

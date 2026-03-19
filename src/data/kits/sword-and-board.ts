@@ -35,9 +35,9 @@ export const swordAndBoard: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; push 1',
-							tier2: '5 + M or A damage; push 2',
-							tier3: '7 + M or A damage; push 3; M < [сильний] prone'
+							tier1: '2 + С or A damage; push 1',
+							tier2: '5 + С or A damage; push 2',
+							tier3: '7 + С or A damage; push 3; M < [сильний] prone'
 						})
 					)
 				]

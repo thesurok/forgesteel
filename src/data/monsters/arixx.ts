@@ -129,9 +129,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage; A < 1 grabbed',
-								tier2: '8 damage; A < 2 grabbed',
-								tier3: '11 damage; A < 3 grabbed'
+								tier1: '5 damage; Л < 1 grabbed',
+								tier2: '8 damage; Л < 2 grabbed',
+								tier3: '11 damage; Л < 3 grabbed'
 							})),
 							FactoryLogic.createAbilitySectionText('The arixx can vertically slide each grabbed target up to 3 squares.')
 						]

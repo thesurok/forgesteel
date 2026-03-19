@@ -74,9 +74,9 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '4 damage; P < [слабкий], frightened (save ends)',
-												tier2: '6 damage; P < [середній], frightened (save ends)',
-												tier3: '10 damage; P < [сильний], frightened (save ends)'
+												tier1: '4 damage; П < [слабкий], frightened (save ends)',
+												tier2: '6 damage; П < [середній], frightened (save ends)',
+												tier3: '10 damage; П < [сильний], frightened (save ends)'
 											})
 										)
 									]
@@ -99,9 +99,9 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '5 + M damage',
-												tier2: '8 + M damage',
-												tier3: '12 + M damage'
+												tier1: '5 + С damage',
+												tier2: '8 + С damage',
+												tier3: '12 + С damage'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('Your companion enters the target’s space. Until your companion is no longer in the target’s space, your companion can end their turn in the target’s space, strikes against your companion also affect the target, and your strikes against the target gain an edge.')
@@ -172,9 +172,9 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '10 + M damage; A < [слабкий], bleeding (save ends)',
-												tier2: '15 + M damage; A < [середній], bleeding (save ends)',
-												tier3: '20 + M damage; A < [сильний], bleeding (save ends)'
+												tier1: '10 + С damage; Л < [слабкий], bleeding (save ends)',
+												tier2: '15 + С damage; Л < [середній], bleeding (save ends)',
+												tier3: '20 + С damage; Л < [сильний], bleeding (save ends)'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('While the target is bleeding, they have damage weakness 5.')
@@ -245,9 +245,9 @@ While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightnin
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '13 + I psychic damage; P < [слабкий], frightened (save ends)',
-												tier2: '20 + I psychic damage; P < [середній], frightened (save ends)',
-												tier3: '27 + I psychic damage; P < [сильний], frightened (save ends)'
+												tier1: '13 + I psychic damage; П < [слабкий], frightened (save ends)',
+												tier2: '20 + I psychic damage; П < [середній], frightened (save ends)',
+												tier3: '27 + I psychic damage; П < [сильний], frightened (save ends)'
 											})
 										)
 									]

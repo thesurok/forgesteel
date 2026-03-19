@@ -336,7 +336,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-5c-3',
 										name: 'Zombie Clutch',
-										description: 'The lumberer’s melee free strikes inflict A < [середній] grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.'
+										description: 'The lumberer’s melee free strikes inflict Л < [середній] grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-5c-4',
@@ -485,8 +485,8 @@ This ability becomes a free triggered action if the target was a minion (either 
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
 														tier1: '3 poison damage; pull R',
-														tier2: '4 poison damage; pull R + 1',
-														tier3: '6 poison damage; pull R + 2'
+														tier2: '4 poison damage; pull Р + 1',
+														tier3: '6 poison damage; pull Р + 2'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the mummy is M < [сильний] weakened (EoT).')
@@ -731,9 +731,9 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '8 damage; A < [слабкий] slowed (save ends)',
-														tier2: '13 damage; A < [середній] slowed (save ends)',
-														tier3: '17 damage; A < [сильний] slowed (save ends)'
+														tier1: '8 damage; Л < [слабкий] slowed (save ends)',
+														tier2: '13 damage; Л < [середній] slowed (save ends)',
+														tier3: '17 damage; Л < [сильний] slowed (save ends)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('The phantom deals an additional 3 damage if they have an edge.')
@@ -898,7 +898,7 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 									FactoryLogic.feature.create({
 										id: 'summoner-4-8-2a-4',
 										name: 'Revelation Strike',
-										description: 'The Avatar’s melee free strikes P < [слабкий] instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.'
+										description: 'The Avatar’s melee free strikes П < [слабкий] instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-8-2a-5',

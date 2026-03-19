@@ -439,7 +439,7 @@ export class RetainerLogic {
 							type: FactoryLogic.type.createMain({ qualifiers: ['encounter'] }),
 							keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 							distance: [FactoryLogic.distance.createMelee()],
-							target: 'Two creatures',
+							target: 'Дві істоти',
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],

@@ -591,9 +591,9 @@ export const polderShadow = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '2 + M or A damage; you shift 1 square',
-																tier2: '5 + M or A damage; you shift up to 2 squares',
-																tier3: '7 + M or A damage; you shift up to 3 squares'
+																tier1: '2 + С or A damage; you shift 1 square',
+																tier2: '5 + С or A damage; you shift up to 2 squares',
+																tier3: '7 + С or A damage; you shift up to 3 squares'
 															}
 														}
 													],
@@ -1750,9 +1750,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [слабкий], bleeding (save ends)',
-							tier2: '6 + A damage; A < [середній], bleeding (save ends)',
-							tier3: '10 + A damage; A < [сильний], bleeding (save ends)'
+							tier1: '4 + A damage; Л < [слабкий], bleeding (save ends)',
+							tier2: '6 + A damage; Л < [середній], bleeding (save ends)',
+							tier3: '10 + A damage; Л < [сильний], bleeding (save ends)'
 						}
 					}
 				],
@@ -2045,9 +2045,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; R < [слабкий], the target has damage weakness 5 (save ends)',
-							tier2: '9 + A damage; R < [середній], the target has damage weakness 5 (save ends)',
-							tier3: '13 + A damage; R < [сильний], the target has damage weakness 5 (save ends)'
+							tier1: '6 + A damage; Р < [слабкий], the target has damage weakness 5 (save ends)',
+							tier2: '9 + A damage; Р < [середній], the target has damage weakness 5 (save ends)',
+							tier3: '13 + A damage; Р < [сильний], the target has damage weakness 5 (save ends)'
 						}
 					}
 				],
@@ -2254,9 +2254,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '8 + A damage; A < [слабкий], restrained (save ends)',
-							tier2: '12 + A damage; A < [середній], restrained (save ends)',
-							tier3: '16 + A damage; A < [сильний], restrained (save ends)'
+							tier1: '8 + A damage; Л < [слабкий], restrained (save ends)',
+							tier2: '12 + A damage; Л < [середній], restrained (save ends)',
+							tier3: '16 + A damage; Л < [сильний], restrained (save ends)'
 						}
 					}
 				],
@@ -2542,9 +2542,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; P < [слабкий], dazed (save ends)',
-							tier2: '15 + A damage; P < [середній], dazed (save ends)',
-							tier3: '21 + A damage; P < [сильний], dazed (save ends)'
+							tier1: '10 + A damage; П < [слабкий], dazed (save ends)',
+							tier2: '15 + A damage; П < [середній], dazed (save ends)',
+							tier3: '21 + A damage; П < [сильний], dazed (save ends)'
 						}
 					},
 					{
@@ -2657,9 +2657,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '11 corruption damage; A < [слабкий] , restrained (save ends)',
-							tier2: '16 corruption damage; A < [середній] , restrained (save ends)',
-							tier3: '21 corruption damage; A < [сильний] , restrained (save ends)'
+							tier1: '11 corruption damage; Л < [слабкий] , restrained (save ends)',
+							tier2: '16 corruption damage; Л < [середній] , restrained (save ends)',
+							tier3: '21 corruption damage; Л < [сильний] , restrained (save ends)'
 						}
 					}
 				],
@@ -4543,9 +4543,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '2 damage; if the target has R < [слабкий], before the damage is resolved, they make a free strike.',
-																	tier2: '5 damage; if the target has R < [середній], before the damage is resolved, they use a main action ability of your choice.',
-																	tier3: '7 damage; if the target has R < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
+																	tier1: '2 damage; if the target has Р < [слабкий], before the damage is resolved, they make a free strike.',
+																	tier2: '5 damage; if the target has Р < [середній], before the damage is resolved, they use a main action ability of your choice.',
+																	tier3: '7 damage; if the target has Р < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
 																}
 															},
 															{

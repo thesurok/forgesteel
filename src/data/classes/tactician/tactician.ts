@@ -12,13 +12,13 @@ import { vanguard } from '@/data/classes/tactician/vanguard';
 
 export const tactician: HeroClass = {
 	id: 'class-tactician',
-	name: 'Tactician',
+	name: 'Тактик',
 	description: `
-Strategist. Defender. Leader. With sword in hand, you lead allies into the maw of battle, barking out commands that inspire your fellow heroes to move faster and strike more precisely. All the while, you stand between your compatriots and death, taunting the followers of evil to best you if they can.
+Стратег. Захисник. Лідер. З мечем у руці ви ведете союзників у вир битви, віддаєте накази, що надихають товаришів діяти швидше й завдавати точніших ударів. Водночас ви стоїте між товаришами і небезпекою, викликаючи ворогів спробувати перевершити вас, якщо ті на те здатні.
 
-As a tactician, you have abilities that heal your allies and grant them increased damage, movement, and attacks.`,
+Як тактик, ви маєте здібності, що лікують союзників і надають їм підвищену шкоду, рухливість та атаки.`,
 	type: 'standard',
-	subclassName: 'Tactical Doctrine',
+	subclassName: 'Тактична доктрина',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Might, Characteristic.Reason]
@@ -41,21 +41,21 @@ As a tactician, you have abilities that heal your allies and grant them increase
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'tactician-resource',
-					name: 'Focus',
+					name: 'Фокус',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'Початок вашого ходу',
 							value: '2'
 						},
 						{
 							tag: 'deal-damage',
-							trigger: 'The first time each round that you or an ally damages a creature you have marked',
+							trigger: 'Перший раз у кожному раунді, коли ви або союзник завдаєте шкоди істоті, позначеній вами',
 							value: '1'
 						},
 						{
 							tag: 'ability',
-							trigger: 'The first time in a round that an ally within 10 squares of you uses a heroic ability',
+							trigger: 'Перший раз у раунді, коли союзник у межах 10 клітин від вас використовує героїчну здібність',
 							value: '1'
 						}
 					]
@@ -72,30 +72,30 @@ As a tactician, you have abilities that heal your allies and grant them increase
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'tactician-1-4',
-					name: 'Field Arsenal',
-					description: 'You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well.',
+					name: 'Польовий арсенал',
+					description: 'Ви тренувалися з широким набором зброї та обладунків і розробили техніки для їхнього оптимального використання. Ви можете користуватися й отримувати переваги двох комплектів, включно з їхніми фірмовими здібностями. Коли ви обираєте або змінюєте один комплект, ви можете також обрати або змінити другий.',
 					count: 2
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'tactician-1-5',
-					name: 'Mark',
+					name: 'Мітка',
 					features: [
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
 								id: 'tactician-1-5a',
-								name: 'Mark',
-								description: 'You draw your allies’ attention to a specific foe—with devastating effect.',
+								name: 'Мітка',
+								description: 'Ви привертаєте увагу союзників до певного ворога — з руйнівним ефектом.',
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Ranged],
 								distance: [FactoryLogic.distance.createRanged(10)],
 								target: 'Одна істота',
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
-The target is marked by you until the end of the encounter, until you are dying, or until you use this ability again. You can willingly end your mark on a creature (no action required), and if another tactician marks a creature, your mark on that creature ends. When a creature marked by you is reduced to 0 Stamina, you can use a free triggered action to mark a new target within distance.
+			Ціль позначається вами до кінця сутички, поки ви не опинитесь у вмираючому стані або не використаєте цю здібність знову. Ви можете добровільно зняти мітку з істоти (без дії), а якщо інший тактик позначить ту саму істоту, ваша мітка з неї знімається. Коли істота, позначена вами, знижується до 0 Витривалості, ви можете використати безкоштовну тригерну дію, щоб позначити нову ціль у межах дистанції.
 
-You can initially mark only one creature using this ability, though other tactician abilities allow you to mark additional creatures at the same time.
+			Спочатку ви можете позначити лише одну істоту за допомогою цієї здібності, хоча інші здібності тактика дозволяють позначати додаткові цілі одночасно.
 
-While a creature marked by you is within your line of effect, you and allies within your line of effect gain an edge on power rolls made against that creature.`),
+			Поки позначена вами істота знаходиться у вашій лінії ефекту, ви та союзники в цій лінії отримують перевагу на кидках сили проти цієї істоти.`),
 									FactoryLogic.createAbilitySectionPackage('mark')
 								]
 							})
@@ -103,21 +103,21 @@ While a creature marked by you is within your line of effect, you and allies wit
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
 								id: 'tactician-1-5b',
-								name: 'Mark: Trigger',
-								type: FactoryLogic.type.createTrigger('You or any ally uses an ability to deal rolled damage to a creature marked by you', { free: true }),
+								name: 'Мітка: Тригер',
+								type: FactoryLogic.type.createTrigger('Ви або будь-який союзник використовує здібність, щоб завдати киданої шкоди істоті, позначеній вами', { free: true }),
 								distance: [FactoryLogic.distance.createSpecial('Special')],
 								target: 'Special',
 								cost: 1,
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
-You gain one of the following benefits:
+			Ви отримуєте один із наведених нижче ефектів:
 
-* The ability deals extra damage equal to twice your Reason score.
-* The creature dealing the damage can spend a Recovery.
-* The creature dealing the damage can shift up to a number of squares equal to your Reason score.
-* If you damage a creature marked by you with a melee ability, the creature is taunted by you until the end of their next turn.
+			* Здібність завдає додаткової шкоди, рівної подвоєному значенню вашої Розумності.
+			* Істота, яка завдає шкоди, може витратити Відновлення.
+			* Істота, яка завдає шкоди, може зсунутися на кількість клітинок, рівну вашій Розумності.
+			* Якщо ви пошкоджуєте позначену вами істоту вблизи (melee), ця істота стає підбуреною вами до кінця їхнього наступного ходу.
 
-You can’t gain more than one benefit from the same trigger.`),
+			Ви не можете отримати більше одного ефекту з одного тригера.`),
 									FactoryLogic.createAbilitySectionPackage('mark')
 								]
 							})
@@ -127,17 +127,17 @@ You can’t gain more than one benefit from the same trigger.`),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'tactician-1-6',
-						name: '“Strike Now!”',
-						description: 'Your foe left an opening. You point this out to an ally!',
+						name: '«Удар зараз!»',
+						description: 'Ворог залишив отвір. Ви вказуєте на нього союзнику!',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target can use a signature ability as a free triggered action.'),
+							FactoryLogic.createAbilitySectionText('Ціль може використати фірмову здібність як безкоштовну тригерну дію.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
-								effect: 'You target two allies instead of one.'
+								effect: 'Ви націлюєтеся на двох союзників замість одного.'
 							})
 						]
 					})
@@ -166,8 +166,8 @@ You can’t gain more than one benefit from the same trigger.`),
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-3-1',
-					name: 'Out of Position',
-					description: 'Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can’t be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.'
+					name: 'Поза позицією',
+					description: 'Ще до початку бою вороги не встигають за вашими тактиками. На початку сутички ви можете використати безкоштовну тригерну дію, щоб застосувати свою здібність "Мітка" проти одного ворога, в якого у вас є лінія ефекту, навіть якщо ви були зненацька. Ви можете потім пересунути позначену ціль до 3 клітин, ігноруючи стабільність. Ціль не може бути переміщена так, щоб завдати їй шкоди (наприклад через обрив), залишити її вмираючою або спричинити стан чи інший негативний ефект.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'tactician-3-2',
@@ -190,16 +190,16 @@ You can’t gain more than one benefit from the same trigger.`),
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'tactician-4-2',
-					name: 'Focus on Their Weakness',
+					name: 'Фокус на їхню слабкість',
 					tag: 'deal-damage 2',
-					trigger: 'The first time each round that you or an ally damages a creature you have marked',
+					trigger: 'Перший раз у кожному раунді, коли ви або союзник завдаєте шкоди істоті, позначеній вами',
 					value: '2',
 					replacesTags: ['deal-damage']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-4-3',
-					name: 'Improved Field Arsenal',
-					description: 'Your expertise with weapons has grown. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you gain an edge.'
+					name: 'Удосконалений польовий арсенал',
+					description: 'Ваша майстерність зі зброєю зросла. Коли ви використовуєте фірмову здібність одного з ваших обладнаних комплектів або робите вільний удар зброєю з одного з них, ви отримуєте перевагу.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-4-4'
@@ -223,8 +223,8 @@ You can’t gain more than one benefit from the same trigger.`),
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-6-1',
-					name: 'Master of Arms',
-					description: 'Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you can negate a bane on the power roll or reduce a double bane to a bane.'
+					name: 'Майстер зброї',
+					description: 'Ваша майстерність у володінні зброєю досягла істинного досконалості. Коли ви використовуєте фірмову здібність одного з ваших обладнаних комплектів або робите вільний удар зброєю з одного з них, ви можете скасувати штраф (bane) на кидку сили або зменшити подвійний штраф до одиничного.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-6-2',
@@ -262,16 +262,16 @@ You can’t gain more than one benefit from the same trigger.`),
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'tactician-7-2',
-					name: 'Heightened Focus',
+					name: 'Посилений фокус',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '3',
 					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-7-3',
-					name: 'Seize the Initiative',
-					description: 'If you are not surprised when combat begins, your side gets to go first. If an enemy has an ability that allows their side to go first, you roll as usual to determine who goes first.'
+					name: 'Захопити ініціативу',
+					description: 'Якщо на початку сутички ви не були зненацька, ваша сторона ходить першою. Якщо ворог має здібність, яка дозволяє їхній стороні ходити першою, порядок визначається звичайним кидком.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-7-4'
@@ -295,8 +295,8 @@ You can’t gain more than one benefit from the same trigger.`),
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-9-1',
-					name: 'Grandmaster of Arms',
-					description: 'Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you automatically obtain a tier 3 outcome on the power roll. You can still roll to determine if you score a critical hit.'
+					name: 'Грандмайстер зброї',
+					description: 'Ваша майстерність зі зброєю зросла до справжньої досконалості. Коли ви використовуєте фірмову здібність одного з ваших обладнаних комплектів або робите безкоштовний удар зброєю з одного з них, ви автоматично отримуєте результат рівня 3 у кидку потужності. Ви все ще можете кинути, щоб визначити, чи завдаєте критичний удар.'
 				})
 			]
 		},
@@ -315,44 +315,44 @@ You can’t gain more than one benefit from the same trigger.`),
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'tactician-10-2',
-					name: 'Command',
+					name: 'Наказ',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Після завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-Whenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 command as a free triggered action to increase the power roll outcome for that target by one tier. Whenever an enemy marked by you makes an ability roll, you can spend 1 command as a free triggered action to decrease the power roll outcome by one tier.
+Коли ви або будь-який союзник використовує здібність, щоб завдати киданої шкоди істоті, позначеній вами, ви можете витратити 1 наказ як безкоштовну тригерну дію, щоб підвищити рівень результату кидка сили для тієї цілі на один рівень. Коли ворог, позначений вами, робить перевірку здібності, ви можете витратити 1 наказ як безкоштовну тригерну дію, щоб знизити рівень результату кидка сили на один рівень.
 
-Command remains until you spend it.`
+Наказ зберігається, доки ви його не витратите.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'tactician-10-3',
-					name: 'Perk',
+					name: 'Перевага',
 					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-10-4',
-					name: 'Skill'
+					name: 'Навичка'
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'tactician-10-5',
-					name: 'True Focus',
+					name: 'Справжній фокус',
 					tag: 'start 3',
-					trigger: 'Start of your turn',
+					trigger: 'Початок вашого ходу',
 					value: '4',
 					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-10-6',
-					name: 'Warmaster',
+					name: 'Воєначальник',
 					description: `
-You have mastered the entirety of possible strategies and tactics. Whenever you or any ally makes an ability roll against a target marked by you, the character making the roll can roll three dice and choose which two to use.
+Ви оволоділи всіма можливими стратегіями та тактиками. Коли ви або будь-який союзник робить перевірку здібності проти цілі, позначеної вами, виконавець кидка може кинути три кубики і вибрати, які два використати.
 
-Additionally, whenever an ally uses a heroic ability that targets one or more creatures marked by you, they spend 2 fewer of their Heroic Resource on that ability (minimum 1).`
+Крім того, коли союзник використовує героїчну здібність, що спрямована на одну або більше істот, позначених вами, витрати їхнього Героїчного ресурсу на цю здібність зменшуються на 2 (мінімум 1).`
 				})
 			]
 		}
@@ -360,28 +360,28 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-1',
-			name: 'Battle Cry',
-			description: 'You shout a phrase that galvanizes your team.',
+			name: 'Боєвий клич',
+			description: 'Ви вигукуєте слова, що надихають вашу команду.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Three allies',
+			target: 'Троє союзників',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: 'Each target gains 1 surge.',
-						tier2: 'Each target gains 2 surges.',
-						tier3: 'Each target gains 3 surges.'
+						tier1: 'Кожна ціль отримує 1 сплеск.',
+						tier2: 'Кожна ціль отримує 2 сплески.',
+						tier3: 'Кожна ціль отримує 3 сплески.'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-2',
-			name: 'Concussive Strike',
-			description: 'Your precise strike leaves your foe struggling to respond.',
+			name: 'Оглушливий удар',
+			description: 'Ваш точний удар лишає ворога нездатним адекватно відповісти.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -394,17 +394,17 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; M < [слабкий], dazed (save ends)',
-						tier2: '5 + M damage; M < [середній], dazed (save ends)',
-						tier3: '8 + M damage; M < [сильний], dazed (save ends)'
+						tier1: '3 + С шкоди; M < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '5 + С шкоди; M < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '8 + С шкоди; M < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-3',
-			name: 'Inspiring Strike',
-			description: 'Your attack gives an ally hope.',
+			name: 'Надихаючий удар',
+			description: 'Ваша атака вселяє надію в союзника.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -417,30 +417,30 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '3 + M damage; you or one ally within 10 squares of you can spend a Recovery',
-						tier2: '5 + M damage; you or one ally within 10 squares of you can spend a Recovery',
-						tier3: '8 + M damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter'
+						tier1: '3 + С шкоди; ви або один союзник у межах 10 клітин від вас може витратити Відновлення',
+						tier2: '5 + С шкоди; ви або один союзник у межах 10 клітин від вас може витратити Відновлення',
+						tier3: '8 + С шкоди; ви та один союзник у межах 10 клітин від вас можуть витратити Відновлення, і кожен з вас отримує перевагу на наступну перевірку здібності під час сутички'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-4',
-			name: 'Squad! Forward!',
-			description: 'On your command, you and your allies force back the enemy line.',
+			name: 'Загін! Вперед!',
+			description: 'За вашим наказом ви й союзники відтісняєте ворожу лінію.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Self and two allies',
+			target: 'Себе і двох союзників',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target can move up to their speed.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль може переміститися на відстань, що дорівнює її швидкості.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-5',
-			name: 'Hammer And Anvil',
-			description: '“Let’s not argue about who’s the hammer and who’s the anvil!',
+			name: 'Молот і наковальня',
+			description: '«Не сперечаймося, хто молот, а хто наковальня!»',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -453,18 +453,18 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '5 + M damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action',
-						tier2: '9 + M damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action',
-						tier3: '12 + M damage; two allies within 10 squares of you can each use a strike signature ability that gains an edge against the target as a free triggered action'
+						tier1: '5 + С шкоди; один союзник у межах 10 клітин від вас може використати фірмову здібність удару проти цілі як безкоштовну тригерну дію',
+						tier2: '9 + С шкоди; один союзник у межах 10 клітин від вас може використати фірмову здібність удару, яка отримує перевагу проти цілі, як безкоштовну тригерну дію',
+						tier3: '12 + С шкоди; два союзники у межах 10 клітин від вас можуть кожен використати фірмову здібність удару, яка отримує перевагу проти цілі, як безкоштовну тригерну дію'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is reduced to 0 Stamina before one or both chosen allies has made their strike, the ally or allies can pick a different target.')
+				FactoryLogic.createAbilitySectionText('Якщо ціль знижується до 0 Витривалості до того, як один або обидва обрані союзники здійснять свій удар, ці союзники можуть вибрати іншу ціль.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-6',
-			name: 'Mind Game',
-			description: 'Your attack demoralizes your foe. Your allies begin to think you can win.',
+			name: 'Гра розуму',
+			description: 'Ваша атака деморалізує ворога. Союзники починають вірити, що ви можете перемогти.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -474,96 +474,96 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 			target: 'Одна істота або предмет',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You mark the target.'),
+				FactoryLogic.createAbilitySectionText('Ви позначаєте ціль.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '4 + M damage; R < [слабкий], weakened (save ends)',
-						tier2: '6 + M damage; R < [середній], weakened (save ends)',
-						tier3: '10 + M damage; R < [сильний], weakened (save ends)'
+						tier1: '4 + С шкоди; Р < [слабкий], ослаблений (рят. кидок закінчує)',
+						tier2: '6 + С шкоди; Р < [середній], ослаблений (рят. кидок закінчує)',
+						tier3: '10 + С шкоди; Р < [сильний], ослаблений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Before the start of your next turn, the first time any ally deals damage to any target marked by you, that ally can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу перший раз, коли будь-який союзник завдасть шкоди цілі, позначеній вами, цей союзник може витратити Відновлення.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-7',
-			name: 'Now!',
-			description: 'Your allies wait for your command - then unleash death!',
+			name: 'Зараз!',
+			description: 'Союзники чекають вашого наказу — і тоді наносять смертельний удар!',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Three allies',
+			target: 'Троє союзників',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target can make a free strike.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль може виконати вільний удар.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-8',
-			name: 'This Is What We Planned For',
-			description: 'All those coordination drills you made them do finally pay off.',
+			name: 'Ось для чого ми готувалися',
+			description: 'Усі ті вправи з координації, які ви проводили, нарешті дають результат.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Two allies',
+			target: 'Двоє союзників',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target who hasn’t acted yet this combat round can take their turn in any order immediately after yours.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль, яка ще не діяла в цьому боєвому раунді, може виконати свій хід у будь-якому порядку одразу після вашого.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-9',
-			name: 'Frontal Assault',
-			description: 'The purpose of a charge is to break their morale and force a retreat.',
+			name: 'Фронтальний штурм',
+			description: 'Мета штурму — зламати їхній моральний дух і змусити відступити.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then shift up to 2 squares. Additionally, any ally using the Charge main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee free strike.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не опинитесь у вмираючому стані, перший раз у ході, коли ви або будь-який союзник завдає шкоди цілі, позначеній вами, істота, яка завдала шкоди, може штовхнути ціль на до 2 клітин і потім зсунутися до 2 клітин. Крім того, будь-який союзник, який використовує головну дію "Штурм" (Штурм) проти істоти, позначеної вами, може використати фірмову або героїчну здібність удару вблизи замість вільного удару вблизи.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-10',
-			name: 'Hit ’Em Hard!',
-			description: 'Your allies see the advantages in attacking the targets you select.',
+			name: 'Вдарте їх сильно!',
+			description: 'Ваші союзники бачать переваги атак по цілях, які ви обираєте.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не опинитесь у вмираючому стані, коли ви або будь-який союзник завдає шкоди цілі, позначеній вами, ця істота отримує 2 сплески (сплеск), які може використати негайно.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-11',
-			name: 'Rout',
-			description: 'The tide begins to turn.',
+			name: 'Розгром',
+			description: 'Хід битви починає змінюватися.',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < [середній], the target is frightened of the creature who dealt the damage (save ends).')
+				FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не опинитесь у вмираючому стані, коли ви або будь-який союзник завдає шкоди цілі, позначеній вами, яка має Р < [середній], ця ціль боїться істоту, яка завдала шкоди (рятувальний кидок закінчує).'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-12',
-			name: 'Stay Strong and Focus!',
-			description: 'We can do this! Keep faith and hold fast!',
+			name: 'Тримайтеся і зосередьтесь!',
+			description: 'Ми зможемо це зробити! Зберігайте віру і стійте міцно!',
 			type: FactoryLogic.type.createManeuver(),
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, the creature who dealt the damage can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички або поки ви не опинитесь у вмираючому стані, коли ви або будь-який союзник завдає шкоди цілі, позначеній вами, істота, що завдала шкоди, може витратити Відновлення.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-13',
-			name: 'Squad! Gear Check!',
-			description: 'You distract a foe while your allies secure their defensive gear.',
+			name: 'Загін! Перевірка спорядження!',
+			description: 'Ви відволікаєте ворога, поки ваші союзники закріплюють захисне спорядження.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -573,96 +573,96 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '9 + M damage',
-						tier2: '13 + M damage',
-						tier3: '18 + M damage'
+						tier1: '9 + С шкоди',
+						tier2: '13 + С шкоди',
+						tier3: '18 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You and each ally adjacent to the target gain 10 temporary Stamina.')
+				FactoryLogic.createAbilitySectionText('Ви та кожен союзник, що знаходиться поруч із ціллю, отримуєте 10 тимчасової Витривалості.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-14',
-			name: 'Squad! Remember Your Training!',
-			description: 'You remind your allies how to best use their gear.',
+			name: 'Загін! Памʼятайте тренування!',
+			description: 'Ви нагадуєте союзникам, як найкраще користуватися своїм спорядженням.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Self and two allies',
+			target: 'Себе і двох союзників',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target gains 1 surge and can use a signature ability that has a double edge.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль отримує 1 сплеск і може використати фірмову здібність, яка має подвійний ефект (подвійний ефект).'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-15',
-			name: 'Win This Day!',
-			description: 'You inspire your allies to recover and gather their strength.',
+			name: 'Переможемо сьогодні!',
+			description: 'Ви надихаєте союзників відновитися та зібрати сили.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'На себе і кожного союзника в зоні впливу',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target gains 2 surges. Additionally, they can spend a Recovery, remove any conditions or effects on them, and stand up if they are prone.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль отримує 2 сплески. Крім того, вони можуть витратити Відновлення, зняти будь-які стани або ефекти з себе та піднятися, якщо були лежачими.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-16',
-			name: 'You’ve Still Got Something Left',
-			description: 'You push an ally to use a heroic ability sooner than they otherwise would.',
+			name: 'У тебе ще є сили',
+			description: 'Ви підштовхуєте союзника використати героїчну здібність раніше, ніж зазвичай.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Один союзник',
 			cost: 9,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your Reason score. The ability has its Heroic Resource cost reduced by 1 + your Reason score (minimum cost 0).')
+				FactoryLogic.createAbilitySectionText('Ціль використовує героїчну здібність з ключовим словом Strike як безкоштовну тригерну дію і завдає додаткової шкоди цією здібністю, рівної вашому значенню Розумності. Вартість цієї здібності у Героїчному ресурсі зменшується на 1 + ваше значення Розумності (мінімум 0).'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-17',
-			name: 'Go Now and Speed Well',
-			description: 'You direct an attack to strike true.',
+			name: 'Іди зараз і швидко!',
+			description: 'Ви спрямовуєте атаку так, щоб вона вразила точно.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'На себе або одного союзника',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target gains 2 surges and can use a signature or heroic ability as a free triggered action. The ability has a double edge on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.')
+				FactoryLogic.createAbilitySectionText('Ціль отримує 2 сплески і може використати фірмову або героїчну здібність як безкоштовну тригерну дію. Ця здібність має подвійний ефект на кидку сили, ігнорує імунітети до шкоди та збільшує потужність будь-яких ефектів потужності на 1.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-18',
-			name: 'Finish Them!',
-			description: 'You point out an opening to your ally so they can land a killing blow.',
-			type: FactoryLogic.type.createTrigger('The target is not a leader or solo creature, and becomes winded.', { free: true }),
+			name: 'Добий їх!',
+			description: 'Ви вказуєте союзнику вразливе місце, щоб він міг нанести смертельний удар.',
+			type: FactoryLogic.type.createTrigger('Ціль не є лідером або одиничною істотою і стає захеканою.', { free: true }),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Одна істота',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target is killed. Additionally, the creature who caused the target to be winded can spend a Recovery.')
+				FactoryLogic.createAbilitySectionText('Ціль вбита. Крім того, істота, яка призвела ціль до стану "Захеканий" (захеканий), може витратити Відновлення.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-19',
-			name: 'Floodgates Open',
-			description: 'You direct your squad to strike in unison and with devastating effect.',
+			name: 'Шлюзи відкриті',
+			description: 'Ви наказуєте загону вдарити одночасно з руйнівним ефектом.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Three allies',
+			target: 'Троє союзників',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target gains 1 surge and can use a signature ability as a free triggered action. That ability gains an edge on the power roll and increases the potency of any potency effects by 1.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль отримує 1 сплеск і може використати фірмову здібність як безкоштовну тригерну дію. Та здібність отримує перевагу на кидку сили та збільшує потужність будь-яких ефектів потужності на 1.'),
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'tactician-ability-20',
-			name: 'I’ll Open and You’ll Close',
-			description: 'You create an opening for an ally.',
+			name: 'Я відкрию, ти закриєш',
+			description: 'Ви створюєте прорив для союзника.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -675,12 +675,12 @@ Additionally, whenever an ally uses a heroic ability that targets one or more cr
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '6 + M damage',
-						tier2: '10 + M damage',
-						tier3: '14 + M damage'
+						tier1: '6 + С шкоди',
+						tier2: '10 + С шкоди',
+						tier3: '14 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('One ally within 10 squares of you can use a heroic ability against the target as a free triggered action without spending any of their Heroic Resource, as long as they have enough Heroic Resource to pay for the ability. If the target is reduced to 0 Stamina before the chosen ally has used their ability, the ally can pick a different target.')
+				FactoryLogic.createAbilitySectionText('Один союзник у межах 10 клітин від вас може використати героїчну здібність проти цілі як безкоштовну тригерну дію без витрачання свого Героїчного ресурсу, за умови що в нього достатньо ресурсу для оплати здібності. Якщо ціль знижується до 0 Витривалості до того, як обраний союзник використає свою здібність, союзник може вибрати іншу ціль.'),
 			]
 		})
 	],

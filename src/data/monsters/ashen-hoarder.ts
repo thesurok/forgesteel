@@ -111,9 +111,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 damage; if one target has M < 2 they are bleeding (save ends); if the other target has A < 2 they are grabbed',
-								tier2: '15 damage; if one target has M < 3 they are bleeding (save ends); if the other target has A < 3 they are grabbed',
-								tier3: '18 damage; M < 4 bleeding (save ends); A < 2 grabbed'
+								tier1: '10 damage; if one target has M < 2 they are bleeding (save ends); if the other target has Л < 2 they are grabbed',
+								tier2: '15 damage; if one target has M < 3 they are bleeding (save ends); if the other target has Л < 3 they are grabbed',
+								tier3: '18 damage; M < 4 bleeding (save ends); Л < 2 grabbed'
 							})),
 							FactoryLogic.createAbilitySectionText('The ashen hoarder can have up to two size 1 creatures grabbed at a time.')
 						]
@@ -130,9 +130,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage; A < 2 weakened (save ends)',
-								tier2: '8 damage; A < 3 weakened (save ends)',
-								tier3: '11 damage; A < 4 weakened (save ends)'
+								tier1: '4 damage; Л < 2 weakened (save ends)',
+								tier2: '8 damage; Л < 3 weakened (save ends)',
+								tier3: '11 damage; Л < 4 weakened (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,

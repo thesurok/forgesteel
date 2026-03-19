@@ -35,9 +35,9 @@ export const stickAndRobe: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '6 + M or A damage; slide 1',
-							tier3: '9 + M or A damage; slide 3'
+							tier1: '3 + С or A damage',
+							tier2: '6 + С or A damage; slide 1',
+							tier3: '9 + С or A damage; slide 3'
 						})
 					)
 				]

@@ -84,9 +84,9 @@ export const punisher: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '3 + M damage; push 2; M < [слабкий], prone',
-												tier2: '5 + M damage; push 3; M < [середній], prone',
-												tier3: '8 + M damage; push 4; M < [сильний], prone'
+												tier1: '3 + С damage; push 2; M < [слабкий], prone',
+												tier2: '5 + С damage; push 3; M < [середній], prone',
+												tier3: '8 + С damage; push 4; M < [сильний], prone'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('If the target is force moved at least 1 square, at the end of this movement an enemy adjacent to the target is also targeted by this ability’s power roll but not this additional effect.')

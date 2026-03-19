@@ -594,9 +594,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 acid damage; A < 0 dazed (save ends)',
-								tier2: '10 acid damage; A < 1 dazed (save ends)',
-								tier3: '14 acid damage; A < 2 restrained (save ends)'
+								tier1: '7 acid damage; Л < 0 dazed (save ends)',
+								tier2: '10 acid damage; Л < 1 dazed (save ends)',
+								tier3: '14 acid damage; Л < 2 restrained (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('A size 2 or smaller creature restrained this way is pulled into the brick’s space, moves with the brick, and takes 4 acid damage at the start of each of their turns. An engulfed creature who is no longer restrained moves to the nearest unoccupied space adjacent to the brick. The brick can have as many creatures or objects engulfed as will fit within their space.'),
 							FactoryLogic.createAbilitySectionSpend({

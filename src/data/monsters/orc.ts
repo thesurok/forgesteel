@@ -405,9 +405,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; A < 0 slowed (save ends)',
-								tier2: '7 damage; A < 1 slowed (save ends)',
-								tier3: '9 damage; prone; A < 2 slowed (save ends)'
+								tier1: '5 damage; Л < 0 slowed (save ends)',
+								tier2: '7 damage; Л < 1 slowed (save ends)',
+								tier3: '9 damage; prone; Л < 2 slowed (save ends)'
 							}))
 						]
 					})
@@ -599,7 +599,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 								bonus: 2,
 								tier1: '5 sonic damage',
 								tier2: '7 sonic damage',
-								tier3: '9 sonic damage; P < 2 weakened (save ends)'
+								tier3: '9 sonic damage; П < 2 weakened (save ends)'
 							}))
 						]
 					})
@@ -792,9 +792,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; A < 0 prone and can’t stand (save ends)',
-								tier2: '9 damage; A < 1 prone and can’t stand (save ends)',
-								tier3: '12 damage; A < 2 prone and can’t stand (save ends)'
+								tier1: '6 damage; Л < 0 prone and can’t stand (save ends)',
+								tier2: '9 damage; Л < 1 prone and can’t stand (save ends)',
+								tier3: '12 damage; Л < 2 prone and can’t stand (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target must be on the ground, and the ground in each target’s space rises 1 square.')
 						]
@@ -1014,7 +1014,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 								bonus: 2,
 								tier1: '8 damage',
 								tier2: '13 damage; prone',
-								tier3: '16 damage; A < 2 bleeding (save ends)'
+								tier3: '16 damage; Л < 2 bleeding (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('Against a target on top of the scyza, this ability gains an edge, and the target is pushed into an unoccupied adjacent square and knocked prone.')
 						]
@@ -1032,9 +1032,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; 1 sonic damage; R < 0 dazed (save ends)',
-								tier2: '7 damage; 2 sonic damage; R < 1 dazed (save ends)',
-								tier3: '9 damage; 3 sonic damage; R < 2 dazed (save ends)'
+								tier1: '4 damage; 1 sonic damage; Р < 0 dazed (save ends)',
+								tier2: '7 damage; 2 sonic damage; Р < 1 dazed (save ends)',
+								tier3: '9 damage; 3 sonic damage; Р < 2 dazed (save ends)'
 							}))
 						]
 					})

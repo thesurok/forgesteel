@@ -346,9 +346,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; R < 0 slowed (EoT)',
-								tier2: '10 damage; R < 1 slowed (EoT)',
-								tier3: '13 damage; R < 2 dazed and slowed (EoT)'
+								tier1: '7 damage; Р < 0 slowed (EoT)',
+								tier2: '10 damage; Р < 1 slowed (EoT)',
+								tier3: '13 damage; Р < 2 dazed and slowed (EoT)'
 							}))
 						]
 					})
@@ -393,7 +393,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 								bonus: 2,
 								tier1: '7 damage',
 								tier2: '11 damage',
-								tier3: '14 damage; A < 2 bleeding (save ends)'
+								tier3: '14 damage; Л < 2 bleeding (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 5 squares, then can attempt to hide.'
@@ -806,9 +806,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; the null shifts up to 3 squares; A < 1 6 damage',
-								tier2: '14 damage; the null shifts up to 4 squares; A < 2 11 damage',
-								tier3: '17 damage; the null shifts up to 5 squares; A < 3 11 damage'
+								tier1: '9 damage; the null shifts up to 3 squares; Л < 1 6 damage',
+								tier2: '14 damage; the null shifts up to 4 squares; Л < 2 11 damage',
+								tier3: '17 damage; the null shifts up to 5 squares; Л < 3 11 damage'
 							}))
 						]
 					})
@@ -825,9 +825,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; R < 1 dazed (EoT)',
-								tier2: '14 damage; R < 2 dazed (save ends)',
-								tier3: '17 damage; R < 3 dazed and restrained (save ends)'
+								tier1: '9 damage; Р < 1 dazed (EoT)',
+								tier2: '14 damage; Р < 2 dazed (save ends)',
+								tier3: '17 damage; Р < 3 dazed and restrained (save ends)'
 							}))
 						]
 					})
@@ -871,8 +871,8 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '10 damage',
-								tier2: '15 damage; A < 2 bleeding (save ends)',
-								tier3: '18 damage; A < 3 bleeding (save ends)'
+								tier2: '15 damage; Л < 2 bleeding (save ends)',
+								tier3: '18 damage; Л < 3 bleeding (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 6 squares, then can attempt to hide.'
@@ -1026,9 +1026,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 psychic damage; R < 1 dazed (save ends)',
-								tier2: '6 psychic damage; R < 2 dazed (save ends)',
-								tier3: '6 psychic damage; R < 3 dazed and slowed (save ends)'
+								tier1: '6 psychic damage; Р < 1 dazed (save ends)',
+								tier2: '6 psychic damage; Р < 2 dazed (save ends)',
+								tier3: '6 psychic damage; Р < 3 dazed and slowed (save ends)'
 							}))
 						]
 					})
@@ -1285,9 +1285,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; the null shifts up to 3 squares; A < 2 6 damage',
-								tier2: '17 damage; the null shifts up to 4 squares; A < 3 11 damage',
-								tier3: '21 damage; the null shifts up to 5 squares; A < 4 11 damage'
+								tier1: '12 damage; the null shifts up to 3 squares; Л < 2 6 damage',
+								tier2: '17 damage; the null shifts up to 4 squares; Л < 3 11 damage',
+								tier3: '21 damage; the null shifts up to 5 squares; Л < 4 11 damage'
 							}))
 						]
 					})
@@ -1304,9 +1304,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; R < 2 dazed (save ends)',
-								tier2: '17 damage; R < 3 dazed (save ends)',
-								tier3: '21 damage; R < 4 dazed and restrained (save ends)'
+								tier1: '12 damage; Р < 2 dazed (save ends)',
+								tier2: '17 damage; Р < 3 dazed (save ends)',
+								tier3: '21 damage; Р < 4 dazed and restrained (save ends)'
 							}))
 						]
 					})
@@ -1349,9 +1349,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 damage; A < 2 bleeding (save ends)',
-								tier2: '18 damage; A < 3 bleeding (save ends)',
-								tier3: '22 damage; A < 4 bleeding and weakened (save ends)'
+								tier1: '13 damage; Л < 2 bleeding (save ends)',
+								tier2: '18 damage; Л < 3 bleeding (save ends)',
+								tier3: '22 damage; Л < 4 bleeding and weakened (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 7 squares, then can attempt to hide.'
@@ -1410,8 +1410,8 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
 								tier1: '13 damage',
-								tier2: '18 damage; A < 3 prone',
-								tier3: '22 damage; A < 4 prone '
+								tier2: '18 damage; Л < 3 prone',
+								tier3: '22 damage; Л < 4 prone '
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 4,
@@ -1509,9 +1509,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '8 psychic damage; R < 1 dazed (save ends)',
-								tier2: '8 psychic damage; R < 2 dazed and slowed (save ends)',
-								tier3: '8 psychic damage; R < 3 dazed and slowed (save ends)'
+								tier1: '8 psychic damage; Р < 1 dazed (save ends)',
+								tier2: '8 psychic damage; Р < 2 dazed and slowed (save ends)',
+								tier3: '8 psychic damage; Р < 3 dazed and slowed (save ends)'
 							}))
 						]
 					})
@@ -1767,9 +1767,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; the null shifts up to 4 squares; A < 3 10 damage',
-								tier2: '20 damage; the null shifts up to 5 squares; A < 4 15 damage',
-								tier3: '224 damage; the null shifts up to 6 squares; A < 5 19 damage'
+								tier1: '15 damage; the null shifts up to 4 squares; Л < 3 10 damage',
+								tier2: '20 damage; the null shifts up to 5 squares; Л < 4 15 damage',
+								tier3: '224 damage; the null shifts up to 6 squares; Л < 5 19 damage'
 							}))
 						]
 					})
@@ -1786,9 +1786,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '13 damage; R < 3 dazed and restrained (save ends)',
-								tier2: '17 damage; R < 4 dazed and restrained (save ends)',
-								tier3: '20 damage; R < 5 dazed and restrained (save ends)'
+								tier1: '13 damage; Р < 3 dazed and restrained (save ends)',
+								tier2: '17 damage; Р < 4 dazed and restrained (save ends)',
+								tier3: '20 damage; Р < 5 dazed and restrained (save ends)'
 							}))
 						]
 					})
@@ -1831,9 +1831,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; A < 3 bleeding (save ends)',
-								tier2: '21 damage; A < 4 bleeding (save ends)',
-								tier3: '25 damage; A < 5 bleeding (save ends)'
+								tier1: '15 damage; Л < 3 bleeding (save ends)',
+								tier2: '21 damage; Л < 4 bleeding (save ends)',
+								tier3: '25 damage; Л < 5 bleeding (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 10 squares, then can attempt to hide.'
@@ -1892,8 +1892,8 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
 								tier1: '15 damage',
-								tier2: '21 damage; A < 3 prone and can’t stand (EoT)',
-								tier3: '25 damage; prone; A < 5 can’t stand (EoT)'
+								tier2: '21 damage; Л < 3 prone and can’t stand (EoT)',
+								tier3: '25 damage; prone; Л < 5 can’t stand (EoT)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,

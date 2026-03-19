@@ -190,8 +190,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
 								tier1: '6 damage',
-								tier2: '9 damage; A < 1 3 damage',
-								tier3: '12 damage; A < 2 3 damage'
+								tier2: '9 damage; Л < 1 3 damage',
+								tier3: '12 damage; Л < 2 3 damage'
 							}))
 						]
 					})
@@ -409,7 +409,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 								bonus: 2,
 								tier1: '3 damage',
 								tier2: '6 damage',
-								tier3: '8 damage; A < 2 bleeding (save ends)'
+								tier3: '8 damage; Л < 2 bleeding (save ends)'
 							}))
 						]
 					})

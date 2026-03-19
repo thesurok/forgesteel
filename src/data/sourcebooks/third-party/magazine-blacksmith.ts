@@ -805,9 +805,9 @@ You are like a barnacle: You have a tough exterior and are damn near impossible 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; M < [слабкий], grabbed',
-							tier2: '5 + M or A damage; M < [середній], grabbed',
-							tier3: '7 + M or A damage; M < [сильний], grabbed'
+							tier1: '2 + С or A damage; M < [слабкий], grabbed',
+							tier2: '5 + С or A damage; M < [середній], grabbed',
+							tier3: '7 + С or A damage; M < [сильний], grabbed'
 						})
 					)
 				]
@@ -849,9 +849,9 @@ The Condor kit grants you the sturdiness of a front liner with the safety of mid
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; push 1',
-							tier2: '5 + M or A damage; push 2',
-							tier3: '7 + M or A damage; push 3'
+							tier1: '2 + С or A damage; push 1',
+							tier2: '5 + С or A damage; push 2',
+							tier3: '7 + С or A damage; push 3'
 						})
 					)
 				]
@@ -893,9 +893,9 @@ The Eagle kit makes you a sharp-eyed dead-shot. You fire upon your opponents fro
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '6 + M or A damage',
-							tier3: '9 + M or A damage'
+							tier1: '3 + С or A damage',
+							tier2: '6 + С or A damage',
+							tier3: '9 + С or A damage'
 						})
 					)
 				]
@@ -981,9 +981,9 @@ Heroes using the Mauler Kit charge headfirst into battle, undaunted by the dange
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '5 + M or A damage; push 1',
-							tier3: '9 + M or A damage; push 2'
+							tier1: '3 + С or A damage',
+							tier2: '5 + С or A damage; push 1',
+							tier3: '9 + С or A damage; push 2'
 						})
 					)
 				]
@@ -1025,9 +1025,9 @@ Heroes using the Sun Wukong kit are highly mobile thanks to their lack of armour
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '5 + M or A damage',
-							tier3: '9 + M or A damage'
+							tier1: '3 + С or A damage',
+							tier2: '5 + С or A damage',
+							tier3: '9 + С or A damage'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You gain a surge.')
@@ -1070,9 +1070,9 @@ The Swift kit makes you a mid-range, lightning fast archer. It allows you to be 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage',
-							tier2: '4 + M or A damage',
-							tier3: '6 + M or A damage'
+							tier1: '2 + С or A damage',
+							tier2: '4 + С or A damage',
+							tier3: '6 + С or A damage'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('The target is taunted (EoT).')

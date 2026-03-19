@@ -495,9 +495,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage; P < [слабкий] frightened',
-								tier2: '9 damage; P < [середній] frightened',
-								tier3: '13 damage; P < [сильний] frightened'
+								tier1: '6 damage; П < [слабкий] frightened',
+								tier2: '9 damage; П < [середній] frightened',
+								tier3: '13 damage; П < [сильний] frightened'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the mortar’s next turn, strikes made against the mortar or any ally adjacent to them take a bane.')
 						]
@@ -607,9 +607,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 corruption damage; P < [слабкий] prone and can\'t stand (save ends)',
-								tier2: '10 corruption damage; P < [середній] prone and can\'t stand (save ends)',
-								tier3: '14 corruption damage; P < [сильний] prone and can\'t stand (save ends)'
+								tier1: '6 corruption damage; П < [слабкий] prone and can\'t stand (save ends)',
+								tier2: '10 corruption damage; П < [середній] prone and can\'t stand (save ends)',
+								tier3: '14 corruption damage; П < [сильний] prone and can\'t stand (save ends)'
 							}))
 						]
 					})
@@ -1022,7 +1022,7 @@ export const retainer: MonsterGroup = {
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 								tier1: '5 fire damage',
 								tier2: '9 fire damage',
-								tier3: '12 fire damage; A < [сильний] the target is burning (save ends)'
+								tier3: '12 fire damage; Л < [сильний] the target is burning (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -1063,7 +1063,7 @@ export const retainer: MonsterGroup = {
 								tier2: '12 damage; pull 2',
 								tier3: '16 damage; pull 4'
 							})),
-							FactoryLogic.createAbilitySectionText('A target who is pulled adjacent to the flameslinger and who has P < [середній] is knocked prone.')
+							FactoryLogic.createAbilitySectionText('A target who is pulled adjacent to the flameslinger and who has П < [середній] is knocked prone.')
 						]
 					})
 				}),
@@ -1254,7 +1254,7 @@ export const retainer: MonsterGroup = {
 						type: FactoryLogic.type.createMain({ qualifiers: ['Encounter'] }),
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(1)],
-						target: 'Three enemies',
+						target: 'Три вороги',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -1627,9 +1627,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '8 psychic damage; R < [слабкий] frightened (save ends)',
-									tier2: '13 psychic damage; R < [середній] frightened (save ends)',
-									tier3: '17 psychic damage; R < [сильний] frightened (save ends)'
+									tier1: '8 psychic damage; Р < [слабкий] frightened (save ends)',
+									tier2: '13 psychic damage; Р < [середній] frightened (save ends)',
+									tier3: '17 psychic damage; Р < [сильний] frightened (save ends)'
 								})
 							)
 						]
@@ -1831,9 +1831,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '8 corruption damage; P < [слабкий] weakened (save ends)',
-									tier2: '13 corruption damage; P < [середній] weakened (save ends)',
-									tier3: '17 corruption damage; P < [сильний] weakened (save ends)'
+									tier1: '8 corruption damage; П < [слабкий] weakened (save ends)',
+									tier2: '13 corruption damage; П < [середній] weakened (save ends)',
+									tier3: '17 corruption damage; П < [сильний] weakened (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Before making the strike, the servitor can teleport up to 10 squares to a space containing a dead creature, then burst out of the creature’s body.')
@@ -1906,7 +1906,7 @@ export const retainer: MonsterGroup = {
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 								tier1: '3 cold damage',
 								tier2: '5 cold damage',
-								tier3: '7 cold damage; P < [сильний] slowed (EoT)'
+								tier3: '7 cold damage; П < [сильний] slowed (EoT)'
 							}))
 						]
 					})
@@ -1980,7 +1980,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Одна істота',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has P < [сильний], they are phased until the end of their next turn. A phased target gains the unquiet spirit’s Corruptive Phasing trait and can fly. They are visible but can’t affect or be affected by other creatures or objects. A willing creature not subject to the ability’s potency can choose to automatically be affected.')
+							FactoryLogic.createAbilitySectionText('If the target has П < [сильний], they are phased until the end of their next turn. A phased target gains the unquiet spirit’s Corruptive Phasing trait and can fly. They are visible but can’t affect or be affected by other creatures or objects. A willing creature not subject to the ability’s potency can choose to automatically be affected.')
 						]
 					})
 				})

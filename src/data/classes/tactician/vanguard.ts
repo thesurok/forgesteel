@@ -76,7 +76,7 @@ export const vanguard: SubClass = {
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
 												tier1: 'R < [слабкий], the target is frightened of the triggering ally (save ends)',
-												tier2: ' R < [середній], the target is frightened of the triggering ally (save ends)',
+												tier2: ' Р < [середній], the target is frightened of the triggering ally (save ends)',
 												tier3: 'R < [сильний], the target is frightened of the triggering ally (save ends)'
 											})
 										)
@@ -178,12 +178,12 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + M damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability instead of a free strike for the charge',
-												tier2: '9 + M damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a free strike for the charge',
-												tier3: '13 + M damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
+												tier1: '6 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability instead of a free strike for the charge',
+												tier2: '9 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a free strike for the charge',
+												tier3: '13 + С damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If the target is hit with two or more strikes as part of this ability and they have R < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.')
+										FactoryLogic.createAbilitySectionText('If the target is hit with two or more strikes as part of this ability and they have Р < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.')
 									]
 								})
 							}),
@@ -237,9 +237,9 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '11 + M damage',
-												tier2: '16 + M damage',
-												tier3: '21 + M damage'
+												tier1: '11 + С damage',
+												tier2: '16 + С damage',
+												tier3: '21 + С damage'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('If you use this ability as part of the Charge main action, enemies’ spaces don’t count as difficult terrain for your movement. Additionally, if you move through any creature’s space, you can slide that creature 1 square out of the path of your charge.')
@@ -267,9 +267,9 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '8 + M damage',
-												tier2: '13 + M damage',
-												tier3: '17 + M damage'
+												tier1: '8 + С damage',
+												tier2: '13 + С damage',
+												tier3: '17 + С damage'
 											})
 										),
 										FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, you can use a signature or heroic ability instead of a free strike against any target marked by you.')

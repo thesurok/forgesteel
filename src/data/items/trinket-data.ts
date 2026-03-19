@@ -471,7 +471,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 			goal: 300
 		}),
 		effect: `
-While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has P < [середній], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
+While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has П < [середній], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
 
 **Special**: If you are a summoner, you regain the use of your standard ranged free strike while wearing this gauntlet.`
 	});

@@ -172,8 +172,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '3 fire damage',
-								tier2: '5 fire damage; R < 2 target takes a bane on their next strike',
-								tier3: '6 fire damage; R < 3 target takes a bane on their next strike'
+								tier2: '5 fire damage; Р < 2 target takes a bane on their next strike',
+								tier3: '6 fire damage; Р < 3 target takes a bane on their next strike'
 							})),
 							FactoryLogic.createAbilitySectionText('One non-minion devil within 5 squares of the notary gains an edge on their next strike.')
 						]
@@ -365,8 +365,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '10 fire damage',
-								tier2: '15 fire damage; A < 2 burning (save ends)',
-								tier3: '18 fire damage; A < 3 burning (save ends)'
+								tier2: '15 fire damage; Л < 2 burning (save ends)',
+								tier3: '18 fire damage; Л < 3 burning (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -471,8 +471,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
 								tier1: '9 damage',
-								tier2: '14 damage; A < 2 slowed (save ends)',
-								tier3: '17 damage; A < 3 slowed (save ends)'
+								tier2: '14 damage; Л < 2 slowed (save ends)',
+								tier3: '17 damage; Л < 3 slowed (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the targets are adjacent to each other, this ability deals an extra 3 damage.')
 						]
@@ -574,7 +574,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 								bonus: 3,
 								tier1: '10 damage',
 								tier2: '15 damage',
-								tier3: '18 damage; R < 3 dazed (save ends)'
+								tier3: '18 damage; Р < 3 dazed (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('The magistrate shifts up to 3 squares before or after using this ability, or between each strike.')
 						]
@@ -673,9 +673,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 damage; R < 2 the target can’t hide (save ends)',
-								tier2: '15 damage; R < 3 the target can’t hide (save ends)',
-								tier3: '19 damage; R < 4 the target can’t hide (save ends)'
+								tier1: '10 damage; Р < 2 the target can’t hide (save ends)',
+								tier2: '15 damage; Р < 3 the target can’t hide (save ends)',
+								tier3: '19 damage; Р < 4 the target can’t hide (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -691,7 +691,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(12)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,

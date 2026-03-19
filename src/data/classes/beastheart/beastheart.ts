@@ -127,7 +127,7 @@ export const beastheart: HeroClass = {
 											],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M шкоди від розкладу; скам’янілий (до кінця ходу)'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди від розкладу; скам’янілий (до кінця ходу)'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'Поки скам’янілий, ціль уповільнена.'
 												})
@@ -205,7 +205,7 @@ export const beastheart: HeroClass = {
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('3 + M damage; push 2'),
+												FactoryLogic.createAbilitySectionText('3 + С damage; push 2'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'The target is pushed up to an additional number of squares equal to the bear’s Might score.'
 												})
@@ -283,7 +283,7 @@ export const beastheart: HeroClass = {
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('The boar moves up to their speed in a straight line, and can then deal 2 + M damage to an adjacent target. If the boar moved closer to the target as part of this ability’s movement, the boar deals extra damage equal to their Might score.'),
+												FactoryLogic.createAbilitySectionText('The boar moves up to their speed in a straight line, and can then deal 2 + С damage to an adjacent target. If the boar moved closer to the target as part of this ability’s movement, the boar deals extra damage equal to their Might score.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'The target is bleeding (EoT).'
 												})
@@ -361,7 +361,7 @@ export const beastheart: HeroClass = {
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; until the end of your next turn, enemies are weakened while adjacent to the condor.'),
+												FactoryLogic.createAbilitySectionText('2 + С damage; until the end of your next turn, enemies are weakened while adjacent to the condor.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'When an enemy would be weakened by this ability, they are taunted instead.'
 												})
@@ -439,7 +439,7 @@ export const beastheart: HeroClass = {
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; bleeding (EoT)'),
+												FactoryLogic.createAbilitySectionText('2 + С damage; bleeding (EoT)'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'The target is bleeding (save ends) instead of bleeding (EoT).'
 												})
@@ -606,7 +606,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M acid damage; A < [середній], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
+												FactoryLogic.createAbilitySectionText('2 + С acid damage; Л < [середній], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'Until the grab ends, the creature takes acid damage equal to the sphere’s Might score at the end of each of the sphere’s turns.'
 												})
@@ -704,7 +704,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M fire damage'),
+												FactoryLogic.createAbilitySectionText('2 + С fire damage'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'The hellhound adds their Intuition score to either the damage or the range.'
 												})
@@ -725,7 +725,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-8-3-1',
 									name: 'Infernal Apparition',
-									description: 'When the hellhound strikes a creature while rampaging, a target who has P < [середній] is frightened.'
+									description: 'When the hellhound strikes a creature while rampaging, a target who has П < [середній] is frightened.'
 								})
 							],
 							level6: [
@@ -783,7 +783,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
-2 + M damage; I < [середній], dazzled (EoT)
+2 + С damage; I < [середній], dazzled (EoT)
 
 A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.`),
 												FactoryLogic.createAbilitySectionSpend({
@@ -863,7 +863,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; M < [середній], prone'),
+												FactoryLogic.createAbilitySectionText('2 + С damage; M < [середній], prone'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'The panther can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is M < [сильний] is prone.'
 												})
@@ -1029,7 +1029,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M poison damage; the sporeling is invisible to the enemy until the end of the sporeling’s next turn or the sporeling deals damage to the enemy.'),
+												FactoryLogic.createAbilitySectionText('2 + С poison damage; the sporeling is invisible to the enemy until the end of the sporeling’s next turn or the sporeling deals damage to the enemy.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'An enemy affected by Spore Puff who is M < [сильний] is dazed (EoT).'
 												})
@@ -1107,7 +1107,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + M damage; M < [середній], grabbed'),
+												FactoryLogic.createAbilitySectionText('2 + С damage; M < [середній], grabbed'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'M < [сильний], grabbed'
 												})
@@ -1142,7 +1142,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-13-10-1',
 									name: 'Dire Wolf',
-									description: 'While the wolf is rampaging, you and the wolf are surrounded by an aura of dread. Enemies that start their turn adjacent to you or the wolf who have P < [сильний] are frightened (EoT).'
+									description: 'While the wolf is rampaging, you and the wolf are surrounded by an aura of dread. Enemies that start their turn adjacent to you or the wolf who have П < [сильний] are frightened (EoT).'
 								})
 							]
 						})
@@ -1213,9 +1213,9 @@ You and your companion each have separate move actions. You have one triggered a
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Might,
-									tier1: '2 + M damage',
-									tier2: '4 + M damage',
-									tier3: '7 + M damage'
+									tier1: '2 + С damage',
+									tier2: '4 + С damage',
+									tier3: '7 + С damage'
 								})
 							),
 							FactoryLogic.createAbilitySectionPackage('feral-strike')
@@ -1483,9 +1483,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '2 + M cold, fire, lightning, or sonic damage',
-						tier2: '4 + M cold, fire, lightning, or sonic damage',
-						tier3: '6 + M cold, fire, lightning, or sonic damage'
+						tier1: '2 + С cold, fire, lightning, or sonic damage',
+						tier2: '4 + С cold, fire, lightning, or sonic damage',
+						tier3: '6 + С cold, fire, lightning, or sonic damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can spend a surge to allow your partner to use this ability as a free triggered action, targeting a different target with the same power roll and not using this effect.')
@@ -1528,9 +1528,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '2 + M damage',
-						tier2: '3 + M damage',
-						tier3: '4 + M damage'
+						tier1: '2 + С damage',
+						tier2: '3 + С damage',
+						tier3: '4 + С damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Your companion makes a free strike. You both shift up to a number of squares equal to your Intuition score.')
@@ -1570,9 +1570,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '5 + M damage; slide 1; I < [слабкий], weakened (save ends)',
-						tier2: '8 + M damage; slide 2; I < [середній], weakened (save ends)',
-						tier3: '11 + M damage; slide 4; I < [сильний], weakened (save ends)'
+						tier1: '5 + С damage; slide 1; I < [слабкий], weakened (save ends)',
+						tier2: '8 + С damage; slide 2; I < [середній], weakened (save ends)',
+						tier3: '11 + С damage; slide 4; I < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You and your companion can shift up to a number of squares equal to the number of squares the target was moved.')
@@ -1591,9 +1591,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '5 + M damage; push 2',
-						tier2: '8 + M damage; push 4',
-						tier3: '11 + M damage; push 6'
+						tier1: '5 + С damage; push 2',
+						tier2: '8 + С damage; push 4',
+						tier3: '11 + С damage; push 6'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This ability’s push can pass through your space but not end there. If it passes through your space, the target falls prone and takes extra damage equal to your Intuition score.')
@@ -1612,9 +1612,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '4 + M damage; your companion can spend a Recovery',
-						tier2: '7 + M damage; each of you can can spend a Recovery',
-						tier3: '11 + M damage; A < [сильний], bleeding (EoT); each of you can spend a Recovery and shift up to 2 squares'
+						tier1: '4 + С damage; your companion can spend a Recovery',
+						tier2: '7 + С damage; each of you can can spend a Recovery',
+						tier3: '11 + С damage; Л < [сильний], bleeding (EoT); each of you can spend a Recovery and shift up to 2 squares'
 					})
 				)
 			]
@@ -1632,9 +1632,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '3 sonic damage; push 1; P < [слабкий], taunted (save ends)',
-						tier2: '5 sonic damage; push 2; P < [середній], taunted (save ends)',
-						tier3: '7 sonic damage; push 3; P < [сильний], taunted (save ends)'
+						tier1: '3 sonic damage; push 1; П < [слабкий], taunted (save ends)',
+						tier2: '5 sonic damage; push 2; П < [середній], taunted (save ends)',
+						tier3: '7 sonic damage; push 3; П < [сильний], taunted (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -1658,9 +1658,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '8 + M damage',
-						tier2: '12 + M damage',
-						tier3: '16 + M damage; M < [сильний], bleeding (save ends)'
+						tier1: '8 + С damage',
+						tier2: '12 + С damage',
+						tier3: '16 + С damage; M < [сильний], bleeding (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is winded or bleeding after the attack, you gain two surges.')
@@ -1716,9 +1716,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '8 + M damage; M < [слабкий], grabbed',
-						tier2: '12 + M damage; M < [середній], grabbed',
-						tier3: '16 + M damage; M < [сильний], grabbed'
+						tier1: '8 + С damage; M < [слабкий], grabbed',
+						tier2: '12 + С damage; M < [середній], grabbed',
+						tier3: '16 + С damage; M < [сильний], grabbed'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If you grab the target while your companion is adjacent to the target, your companion can make a melee free strike against the target.')
@@ -1739,8 +1739,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
 						tier1: 'P < [слабкий], frightened (save ends)',
-						tier2: '4 psychic damage; P < [середній], frightened (save ends)',
-						tier3: '8 psychic damage; P < [сильний], frightened (save ends)'
+						tier2: '4 psychic damage; П < [середній], frightened (save ends)',
+						tier3: '8 psychic damage; П < [сильний], frightened (save ends)'
 					})
 				)
 			]
@@ -1758,9 +1758,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '13 + M damage; P < [слабкий], dazed (save ends)',
-						tier2: '19 + M damage; P < [середній], dazed (save ends)',
-						tier3: '25 + M damage; P < [сильний], dazed (save ends)'
+						tier1: '13 + С damage; П < [слабкий], dazed (save ends)',
+						tier2: '19 + С damage; П < [середній], dazed (save ends)',
+						tier3: '25 + С damage; П < [сильний], dazed (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You are bleeding (save ends). Until you are no longer bleeding, your companion has an edge on power rolls.')
@@ -1782,9 +1782,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '7 + I damage; P < [слабкий], weakened (save ends)',
-						tier2: '10 + I damage; P < [середній], weakened (save ends)',
-						tier3: '14 + I damage; P < [сильний], weakened (save ends)'
+						tier1: '7 + I damage; П < [слабкий], weakened (save ends)',
+						tier2: '10 + I damage; П < [середній], weakened (save ends)',
+						tier3: '14 + I damage; П < [сильний], weakened (save ends)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('When a target weakened by this ability fails their saving throw against this ability while more than 3 squares from you, as a free triggered action you can pull the target up to a number of squares equal to your Intuition score.')
@@ -1806,9 +1806,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '9 + M damage',
-						tier2: '14 + M damage',
-						tier3: '19 + M damage'
+						tier1: '9 + С damage',
+						tier2: '14 + С damage',
+						tier3: '19 + С damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The next creature to damage the target before the start of your next turn gains three surges.')
@@ -1827,9 +1827,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '10 + M damage; M < [слабкий], grabbed and prone',
-						tier2: '15 + M damage; M < [середній], grabbed and prone',
-						tier3: '20 + M damage; M < [сильний], grabbed and prone'
+						tier1: '10 + С damage; M < [слабкий], grabbed and prone',
+						tier2: '15 + С damage; M < [середній], grabbed and prone',
+						tier3: '20 + С damage; M < [сильний], grabbed and prone'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Each ally adjacent to the target can use a triggered free action to deal damage to the target equal to the ally’s highest characteristic.')
@@ -1869,9 +1869,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '10 + M damage; vertical push 4; prone',
-						tier2: '15 + M damage; vertical push 6; prone',
-						tier3: '20 + M damage; vertical push 8; prone'
+						tier1: '10 + С damage; vertical push 4; prone',
+						tier2: '15 + С damage; vertical push 6; prone',
+						tier3: '20 + С damage; vertical push 8; prone'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If your companion is adjacent to the target, you can ignore the target’s Stability.')
@@ -1890,12 +1890,12 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '11 + M damage; M < [слабкий], bleeding (save ends)',
-						tier2: '17 + M damage; M < [середній], bleeding (save ends)',
-						tier3: '22 + M damage; M < [сильний], bleeding (save ends)'
+						tier1: '11 + С damage; M < [слабкий], bleeding (save ends)',
+						tier2: '17 + С damage; M < [середній], bleeding (save ends)',
+						tier3: '22 + С damage; M < [сильний], bleeding (save ends)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your companion’s Might score. If this ability reduces a target to 0 Stamina, each enemy within 2 squares who has P < average is frightened (save ends).')
+				FactoryLogic.createAbilitySectionText('If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your companion’s Might score. If this ability reduces a target to 0 Stamina, each enemy within 2 squares who has П < average is frightened (save ends).')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1914,9 +1914,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '5 + M damage',
-						tier2: '15 + M damage',
-						tier3: '25 + M damage'
+						tier1: '5 + С damage',
+						tier2: '15 + С damage',
+						tier3: '25 + С damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Your companion can repeat the attack as a melee attack, making their own power roll. Both power rolls have an edge if either of you is bleeding, dying, or winded, and your power roll has a double edge if your companion is dead or otherwise unable to act.')
@@ -1976,9 +1976,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '12 + M damage',
-						tier2: '18 + M damage',
-						tier3: '24 + M damage'
+						tier1: '12 + С damage',
+						tier2: '18 + С damage',
+						tier3: '24 + С damage'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Up to three creatures within 2 squares of the target gain temporary Stamina equal to half the damage you dealt.')

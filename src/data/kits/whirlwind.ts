@@ -34,9 +34,9 @@ export const whirlwind: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage; vertical pull 1',
-							tier2: '6 + M or A damage; vertical pull 2',
-							tier3: '9 + M or A damage; vertical pull 3'
+							tier1: '3 + С or A damage; vertical pull 1',
+							tier2: '6 + С or A damage; vertical pull 2',
+							tier3: '9 + С or A damage; vertical pull 3'
 						})
 					)
 				]

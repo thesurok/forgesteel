@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const telekinesis: SubClass = {
 	id: 'talent-sub-2',
-	name: 'Telekinesis',
-	description: 'Telekinesis abilities allow you to physically manipulate creatures and objects.',
+	name: 'Телекінез',
+	description: 'Здібності телекінезу дозволяють вам фізично маніпулювати істотами та предметами.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -15,22 +15,22 @@ export const telekinesis: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-2-1-1',
-						name: 'Minor Telekinesis',
-						description: 'Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.',
+						name: 'Малий телекінез',
+						description: 'Поштовхи психічної енергії помітно хвилюються навколо вашого мозку, коли ви змушуєте ціль рухатися, використовуючи лише свій розум.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Self or one size 1 creature or object',
+						target: 'Себе або одну істоту чи предмет розміру 1',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You slide the target up to a number of squares equal to your Reason score.'),
+							FactoryLogic.createAbilitySectionText('Ви зсуваєте ціль на кількість клітинок, рівну вашому показнику Р.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								repeatable: true,
-								effect: 'The size of the creature or object you can target increases by 1 for every 2 clarity spent.'
+								effect: 'Розмір істоти або предмета, на який ви можете націлитися, збільшується на 1 за кожні 2 витрачені одиниці ясності.'
 							}),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'You can vertical slide the target.'
+								effect: 'Ви можете вертикально зсунути ціль.'
 							})
 						]
 					})
@@ -38,14 +38,14 @@ export const telekinesis: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-2-1-2',
-						name: 'Repel',
-						description: 'They aren’t going anywhere, but you might!',
-						type: FactoryLogic.type.createTrigger('The target takes damage or is force moved.'),
+						name: 'Відштовхування',
+						description: 'Вони нікуди не підуть, але ви — можливо!',
+						type: FactoryLogic.type.createTrigger('Ціль отримує шкоду або примусово переміщується.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'На себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target takes half the triggering damage, or the distance of the triggering forced movement is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the forced movement is reduced to 0 squares, the target can push the source of the forced movement a number of squares equal to your Reason score.')
+							FactoryLogic.createAbilitySectionText('Ціль отримує половину шкоди, що спричинила тригер, або дистанція примусового переміщення, що спричинила тригер, зменшується на кількість клітинок, рівну вашому показнику Р. Якщо ціль отримала шкоду і була примусово переміщена, ви обираєте ефект. Якщо примусове переміщення зменшено до 0 клітинок, ціль може штовхнути джерело примусового переміщення на кількість клітинок, рівну вашому показнику Р.')
 						]
 					})
 				})
@@ -57,26 +57,26 @@ export const telekinesis: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-2-2-1',
-						name: 'Ease their Fall',
+						name: 'Помʼякшення падіння',
 						description: '',
-						type: FactoryLogic.type.createTrigger('You land after a fall, or any falling creature lands within 2 squares of you.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Ви приземляєтесь після падіння, або будь-яка падаюча істота приземляється в межах 2 клітинок від вас.', { free: true }),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You reduce the falling damage by an amount equal to 2 + your Reason score.')
+							FactoryLogic.createAbilitySectionText('Ви зменшуєте шкоду від падіння на величину, рівну 2 + ваш показник Р.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-2-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Традиційна здібність 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-2-2a',
-									name: 'Gravitic Burst',
-									description: 'Everyone get away from me!',
+									name: 'Гравітаційний сплеск',
+									description: 'Усі — відстаньте від мене!',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
@@ -90,8 +90,8 @@ export const telekinesis: SubClass = {
 											tier3: '9 шкоди; вертикально відштовхнути на 6'
 										})),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The size of the burst increases by 1, and you are weakened until the end of your turn.'
+											name: 'Напруження',
+											effect: 'Розмір вибуху збільшується на 1, і ви ослаблені до кінця вашого ходу.'
 										})
 									]
 								})
@@ -102,8 +102,8 @@ export const telekinesis: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-2-2b',
-									name: 'Levity and Gravity',
-									description: 'You raise the target into the air, then smother them against the ground.',
+									name: 'Легкість і тяжіння',
+									description: 'Ви піднімаєте ціль у повітря, а потім притискаєте її до землі.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createRanged(10)],
@@ -117,8 +117,8 @@ export const telekinesis: SubClass = {
 											tier3: '14 + Р шкоди; С < [сильний], розпластаний і не може встати (рят. кидок завершує)'
 										})),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You take half the damage the target takes.'
+											name: 'Напруження',
+											effect: 'Ви отримуєте половину шкоди, яку отримує ціль.'
 										})
 									]
 								})
@@ -142,13 +142,13 @@ export const telekinesis: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-2-5-1',
-					name: 'Kinetic Amplifier',
-					description: 'Whenever you force move a creature, you can spend up to 2 surges. For each surge spent, the forced movement distance gains a bonus equal to your Reason score.'
+					name: 'Кінетичний підсилювач',
+					description: 'Коли ви примусово переміщаєте істоту, ви можете витратити до 2 сплесків. За кожний витрачений сплеск дистанція примусового переміщення отримує бонус, рівний вашому показнику Р.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-sub-2-5-2',
-					name: 'Triangulate',
-					description: 'Whenever an ally uses a ranged ability while you are within the ability’s distance, you can spend 1 clarity as a free triggered action to allow them to use the ability as if they were in your space.'
+					name: 'Тріангуляція',
+					description: 'Коли союзник використовує дальню здібність, поки ви перебуваєте в її дистанції, ви можете витратити 1 ясність як безкоштовну тригерну дію, щоб дозволити йому використати здібність, ніби він перебуває у вашому просторі.'
 				})
 			]
 		},
@@ -157,14 +157,14 @@ export const telekinesis: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-2-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Традиційна здібність 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-6-1a',
-									name: 'Gravitic Well',
-									description: 'You bend gravity into a fine point and pull your foes toward it.',
+									name: 'Гравітаційна яма',
+									description: 'Ви згинаєте гравітацію в тонку точку і притягуєте ворогів до неї.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 10 })],
@@ -179,10 +179,10 @@ export const telekinesis: SubClass = {
 												tier3: '13 шкоди; вертикально притягнути на 10 до центру зони'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Targets closest to the center of the area are pulled first.'),
+										FactoryLogic.createAbilitySectionText('Цілі, що ближчі до центру зони, притягуються першими.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The size of the area increases by 2. You also target yourself and each ally within distance.'
+											name: 'Напруження',
+											effect: 'Розмір області збільшується на 2. Ви також націлюєтесь на себе та кожного союзника в межах дистанції.'
 										})
 									]
 								})
@@ -193,8 +193,8 @@ export const telekinesis: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-6-1b',
-									name: 'Greater Kinetic Grip',
-									description: 'You raise the target into the air without breaking a sweat.',
+									name: 'Посилений кінетичний захват',
+									description: 'Ви піднімаєте ціль у повітря без жодних зусиль.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createRanged(10)],
@@ -210,8 +210,8 @@ export const telekinesis: SubClass = {
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The forced movement ignores stability. You take 2d6 damage and are weakened (save ends).'
+											name: 'Напруження',
+											effect: 'Примусове переміщення ігнорує стабільність. Ви отримуєте 2d6 шкоди і стаєте ослабленими (рят. кидок завершує).'
 										})
 									]
 								})
@@ -232,26 +232,26 @@ export const telekinesis: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-2-8-1',
-						name: 'Levitation Field',
-						description: 'You manipulate the air around your allies so they can move as freely through the sky as you can.',
+						name: 'Поле левітації',
+						description: 'Ви маніпулюєте повітрям навколо союзників, щоб вони могли так само вільно рухатися в небі, як і ви.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Кожен союзник у зоні',
 						cost: 3,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target can fly until the start of your next turn, and can immediately shift up to their speed. You can also shift up to your speed. While flying, a target’s stability is reduced to 0 and can’t be increased.'),
+							FactoryLogic.createAbilitySectionText('Кожна ціль може літати до початку вашого наступного ходу і може негайно зміститися на відстань до своєї швидкості. Ви також можете зміститись на відстань до своєї швидкості. Поки літає, стабільність цілі зменшена до 0 і не може бути збільшена.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
-								effect: 'The effects last for 1 hour instead.'
+								effect: 'Натомість ефекти тривають 1 годину.'
 							})
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-sub-2-8-2',
-					name: 'Low Gravity',
-					description: 'Your mind can carry your body through tough times. You ignore difficult terrain and don’t need to spend additional movement while prone.'
+					name: 'Мала гравітація',
+					description: 'Ваш розум може нести ваше тіло у важкі часи. Ви ігноруєте важкопрохідну місцевість і не потребуєте додаткового переміщення, перебуваючи в положенні лежачи.'
 				})
 			]
 		},
@@ -260,32 +260,32 @@ export const telekinesis: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-2-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Традиційна здібність 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-9-1a',
-									name: 'Fulcrum',
-									description: 'You precisely manipulate the creatures around you.',
+									name: 'Точка опори',
+									description: 'Ви точно маніпулюєте істотами навколо себе.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.createSpecial('Special')],
 									target: 'Кожен ворог та обʼєкт у зоні',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Make a power roll to determine the area of this ability. Each target is vertical pushed 6 squares. You can target only objects of size 1L or smaller.'),
+										FactoryLogic.createAbilitySectionText('Зробіть кидок сили, щоб визначити площу дії цієї здібності. Кожну ціль вертикально відштовхують на 6 клітинок. Ви можете націлюватися лише на предмети розміру 1L або менші.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '2 burst',
-												tier2: '3 burst',
-												tier3: '4 burst'
+												tier1: '2 сплески',
+												tier2: '3 сплески',
+												tier3: '4 сплески'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You can choose to reduce the size of the burst by 2 (to a minimum of 1 burst) to give the forced movement distance a +2 bonus. You take half the total damage all targets take from forced movement.'
+											name: 'Напруження',
+											effect: 'Ви можете зменшити розмір вибуху на 2 (до мінімуму 1 вибух), щоб надати дистанції примусового переміщення бонус +2. Ви отримуєте половину загальної шкоди, яку отримують усі цілі від примусового переміщення.'
 										})
 									]
 								})
@@ -296,8 +296,8 @@ export const telekinesis: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-2-9-1b',
-									name: 'Gravitic Nova',
-									description: 'Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.',
+									name: 'Гравітаційна нова',
+									description: 'Нестримна психічна енергія виривається з вашого тіла і спалахами поширюється назовні, відштовхуючи ваших ворогів.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
@@ -307,15 +307,15 @@ export const telekinesis: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: '6 damage; push 7',
-												tier2: '9 damage; push 10',
-												tier3: '13 damage; push 15'
+												tier1: '6 шкоди; відштовхнути на 7',
+												tier2: '9 шкоди; відштовхнути на 10',
+												tier3: '13 шкоди; відштовхнути на 15'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('On a critical hit, the size of the area increases by 3, and this ability deals an extra 10 damage.'),
+										FactoryLogic.createAbilitySectionText('При критичному попаданні розмір зони збільшується на 3, і ця здібність завдає додаткових 10 шкоди.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You are weakened (save ends). If you scored a critical hit with this ability, you die.'
+											name: 'Напруження',
+											effect: 'Ви ослаблені (рят. кидок завершує). Якщо ви завдали критичного удару цією здібністю, ви вмираєте.'
 										})
 									]
 								})

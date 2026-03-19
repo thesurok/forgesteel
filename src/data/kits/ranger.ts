@@ -35,9 +35,9 @@ export const ranger: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage; A < [слабкий] slowed (save ends)',
-							tier2: '4 + M or A damage; A < [середній] slowed (save ends)',
-							tier3: '6 + M or A damage; A < [сильний] slowed (save ends)'
+							tier1: '2 + С or A damage; Л < [слабкий] slowed (save ends)',
+							tier2: '4 + С or A damage; Л < [середній] slowed (save ends)',
+							tier3: '6 + С or A damage; Л < [сильний] slowed (save ends)'
 						})
 					)
 				]

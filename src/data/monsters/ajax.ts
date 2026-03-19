@@ -162,9 +162,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 holy damage; P < 4 the target is hexed (save ends)',
-									tier2: '17 holy damage; P < 5 the target is hexed (save ends)',
-									tier3: '21 holy damage; P < 6 the target is hexed (save ends)'
+									tier1: '11 holy damage; П < 4 the target is hexed (save ends)',
+									tier2: '17 holy damage; П < 5 the target is hexed (save ends)',
+									tier3: '21 holy damage; П < 6 the target is hexed (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
@@ -292,9 +292,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 fire damage; A < 4 weakended (save ends)',
-									tier2: '17 fire damage; A < 5 weakended (save ends)',
-									tier3: '21 fire damage; A < 6 weakended (save ends)'
+									tier1: '11 fire damage; Л < 4 weakended (save ends)',
+									tier2: '17 fire damage; Л < 5 weakended (save ends)',
+									tier3: '21 fire damage; Л < 6 weakended (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')
@@ -390,9 +390,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 holy damage; P < 4 the target is hexed (save ends)',
-									tier2: '17 holy damage; P < 5 the target is hexed (save ends)',
-									tier3: '21 holy damage; P < 6 the target is hexed (save ends)'
+									tier1: '11 holy damage; П < 4 the target is hexed (save ends)',
+									tier2: '17 holy damage; П < 5 the target is hexed (save ends)',
+									tier3: '21 holy damage; П < 6 the target is hexed (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
@@ -496,9 +496,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 fire damage; A < 4 weakended (save ends)',
-									tier2: '17 fire damage; A < 5 weakended (save ends)',
-									tier3: '21 fire damage; A < 6 weakended (save ends)'
+									tier1: '11 fire damage; Л < 4 weakended (save ends)',
+									tier2: '17 fire damage; Л < 5 weakended (save ends)',
+									tier3: '21 fire damage; Л < 6 weakended (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')

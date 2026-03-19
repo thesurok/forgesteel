@@ -487,9 +487,9 @@ export const polderElementalist = {
 												'Reason'
 											],
 											bonus: 0,
-											tier1: '2 + R damage',
-											tier2: '4 + R damage',
-											tier3: '6 + R damage'
+											tier1: '2 + Р damage',
+											tier2: '4 + Р damage',
+											tier3: '6 + Р damage'
 										}
 									},
 									{
@@ -1675,9 +1675,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R corruption damage',
-							tier2: '4 + R corruption damage',
-							tier3: '6 + R corruption damage'
+							tier1: '2 + Р corruption damage',
+							tier2: '4 + Р corruption damage',
+							tier3: '6 + Р corruption damage'
 						}
 					},
 					{
@@ -1789,9 +1789,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + R corruption damage',
-							tier2: '6 + R corruption damage',
-							tier3: '9 + R corruption damage'
+							tier1: '3 + Р corruption damage',
+							tier2: '6 + Р corruption damage',
+							tier3: '9 + Р corruption damage'
 						}
 					},
 					{
@@ -1848,9 +1848,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R damage',
-							tier2: '5 + R damage',
-							tier3: '7 + R damage'
+							tier1: '2 + Р damage',
+							tier2: '5 + Р damage',
+							tier3: '7 + Р damage'
 						}
 					},
 					{
@@ -1907,9 +1907,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + R damage; push 2',
-							tier2: '5 + R damage; push 3',
-							tier3: '8 + R damage; push 4'
+							tier1: '3 + Р damage; push 2',
+							tier2: '5 + Р damage; push 3',
+							tier3: '8 + Р damage; push 4'
 						}
 					}
 				],
@@ -1962,9 +1962,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R corruption damage; R < [слабкий], slowed (save ends)',
-							tier2: '4 + R corruption damage; R < [середній], slowed (save ends)',
-							tier3: '6 + R corruption damage; R < [сильний], slowed (save ends)'
+							tier1: '2 + Р corruption damage; Р < [слабкий], slowed (save ends)',
+							tier2: '4 + Р corruption damage; Р < [середній], slowed (save ends)',
+							tier3: '6 + Р corruption damage; Р < [сильний], slowed (save ends)'
 						}
 					}
 				],
@@ -2076,9 +2076,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + R fire damage; push 2',
-							tier2: '5 + R fire damage; push 3',
-							tier3: '7 + R fire damage; push 4'
+							tier1: '2 + Р fire damage; push 2',
+							tier2: '5 + Р fire damage; push 3',
+							tier3: '7 + Р fire damage; push 4'
 						}
 					}
 				],
@@ -2193,9 +2193,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '5 + R fire damage',
-							tier2: '8 + R fire damage',
-							tier3: '11 + R fire damage'
+							tier1: '5 + Р fire damage',
+							tier2: '8 + Р fire damage',
+							tier3: '11 + Р fire damage'
 						}
 					},
 					{
@@ -2255,9 +2255,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '4 + R poison damage',
-							tier2: '7 + R poison damage',
-							tier3: '11 + R poison damage'
+							tier1: '4 + Р poison damage',
+							tier2: '7 + Р poison damage',
+							tier3: '11 + Р poison damage'
 						}
 					},
 					{
@@ -2671,9 +2671,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '5 + R poison damage',
-							tier2: '9 + R poison damage',
-							tier3: '12 + R poison damage'
+							tier1: '5 + Р poison damage',
+							tier2: '9 + Р poison damage',
+							tier3: '12 + Р poison damage'
 						}
 					}
 				],
@@ -2786,9 +2786,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '5 + R fire damage; A < [слабкий], restrained (save ends)',
-							tier2: '9 + R fire damage; A < [середній], restrained (save ends)',
-							tier3: '12 + R fire damage; A < [сильний], restrained (save ends)'
+							tier1: '5 + Р fire damage; Л < [слабкий], restrained (save ends)',
+							tier2: '9 + Р fire damage; Л < [середній], restrained (save ends)',
+							tier3: '12 + Р fire damage; Л < [сильний], restrained (save ends)'
 						}
 					}
 				],
@@ -2846,7 +2846,7 @@ export const polderElementalist = {
 							],
 							bonus: 0,
 							tier1: 'Одна істота',
-							tier2: 'Two creatures',
+							tier2: 'Дві істоти',
 							tier3: '3 Істоти'
 						}
 					},
@@ -3082,9 +3082,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '8 + M fire damage',
-							tier2: '13 + M fire damage',
-							tier3: '17 + M fire damage'
+							tier1: '8 + С fire damage',
+							tier2: '13 + С fire damage',
+							tier3: '17 + С fire damage'
 						}
 					},
 					{
@@ -3207,9 +3207,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '9 + R corruption damage',
-							tier2: '10 + R corruption damage; the target has line of effect only to creatures and objects within 4 squares of them until the start of your next turn',
-							tier3: '15 + R corruption damage; the target has line of effect only to adjacent creatures and objects until the start of your next turn'
+							tier1: '9 + Р corruption damage',
+							tier2: '10 + Р corruption damage; the target has line of effect only to creatures and objects within 4 squares of them until the start of your next turn',
+							tier3: '15 + Р corruption damage; the target has line of effect only to adjacent creatures and objects until the start of your next turn'
 						}
 					},
 					{
@@ -3269,9 +3269,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 corruption damage; A < [слабкий], restrained (save ends)',
-							tier2: '3 corruption damage; A < [середній], restrained (save ends)',
-							tier3: '5 corruption damage; A < [сильний], restrained (save ends)'
+							tier1: '2 corruption damage; Л < [слабкий], restrained (save ends)',
+							tier2: '3 corruption damage; Л < [середній], restrained (save ends)',
+							tier3: '5 corruption damage; Л < [сильний], restrained (save ends)'
 						}
 					},
 					{
@@ -3931,9 +3931,9 @@ export const polderElementalist = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '13 + R fire damage; I < [слабкий] , dazed (save ends)',
-							tier2: '18 + R fire damage; I < [середній] , dazed (save ends)',
-							tier3: '25 + R fire damage; I < [сильний] , dazed (save ends)'
+							tier1: '13 + Р fire damage; I < [слабкий] , dazed (save ends)',
+							tier2: '18 + Р fire damage; I < [середній] , dazed (save ends)',
+							tier3: '25 + Р fire damage; I < [сильний] , dazed (save ends)'
 						}
 					},
 					{

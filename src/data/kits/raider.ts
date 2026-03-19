@@ -38,9 +38,9 @@ export const raider: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + M or A damage',
-							tier2: '5 + M or A damage',
-							tier3: '7 + M or A damage'
+							tier1: '2 + С or A damage',
+							tier2: '5 + С or A damage',
+							tier3: '7 + С or A damage'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('The target takes a bane on their next power roll made before the end of their next turn')

@@ -1539,9 +1539,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [слабкий], grabbed',
-							tier2: '7 + A damage; A < [середній], grabbed',
-							tier3: '9 + A damage; A < [сильний], grabbed'
+							tier1: '4 + A damage; Л < [слабкий], grabbed',
+							tier2: '7 + A damage; Л < [середній], grabbed',
+							tier3: '9 + A damage; Л < [сильний], grabbed'
 						}
 					}
 				],
@@ -1763,9 +1763,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; A < [слабкий], weakened (save ends)',
-							tier2: '7 + A damage; A < [середній], weakened (save ends)',
-							tier3: '9 + A damage; A < [сильний], weakened (save ends)'
+							tier1: '4 + A damage; Л < [слабкий], weakened (save ends)',
+							tier2: '7 + A damage; Л < [середній], weakened (save ends)',
+							tier3: '9 + A damage; Л < [сильний], weakened (save ends)'
 						}
 					}
 				],
@@ -2506,9 +2506,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; A < [слабкий], grabbed',
-							tier2: '14 + A damage; A < [середній], grabbed',
-							tier3: '18 + A damage; A < [сильний], grabbed'
+							tier1: '10 + A damage; Л < [слабкий], grabbed',
+							tier2: '14 + A damage; Л < [середній], grabbed',
+							tier3: '18 + A damage; Л < [сильний], grabbed'
 						}
 					},
 					{
@@ -3485,9 +3485,9 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '6 cold damage; A < [слабкий], slowed (save ends)',
-																	tier2: '9 cold damage; A < [середній], slowed (save ends)',
-																	tier3: '13 cold damage; A < [сильний], slowed (save ends)'
+																	tier1: '6 cold damage; Л < [слабкий], slowed (save ends)',
+																	tier2: '9 cold damage; Л < [середній], slowed (save ends)',
+																	tier3: '13 cold damage; Л < [сильний], slowed (save ends)'
 																}
 															}
 														],

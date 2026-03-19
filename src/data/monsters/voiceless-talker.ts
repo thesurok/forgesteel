@@ -365,7 +365,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(

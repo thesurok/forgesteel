@@ -34,9 +34,9 @@ export const panther: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + M or A damage',
-							tier2: '6 + M or A damage',
-							tier3: '9 + M or A damage'
+							tier1: '3 + С or A damage',
+							tier2: '6 + С or A damage',
+							tier3: '9 + С or A damage'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You can move up to 3 squares straight toward the target before this strike, which deals extra damage equal to the number of squares you move this way.')

@@ -757,7 +757,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three enemies',
+						target: 'Три вороги',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must choose between taking 5 psychic damage, or being frightened (save ends).')
 						]
@@ -1362,7 +1362,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Three enemies',
+						target: 'Три вороги',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
@@ -1397,9 +1397,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 corruption damage; R < 2 weakened (save ends)',
-								tier2: '11 corruption damage; R < 3 weakened (save ends)',
-								tier3: '14 corruption damage; R < 4 weakened (save ends)'
+								tier1: '6 corruption damage; Р < 2 weakened (save ends)',
+								tier2: '11 corruption damage; Р < 3 weakened (save ends)',
+								tier3: '14 corruption damage; Р < 4 weakened (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('The egress recalls and instantly destroys any minion allies on the encounter map. A torrent of churned-up minion bodies, blood, and ichor erupts from the egress, dealing an extra 1 damage for each minion destroyed this way.')
 						]
@@ -1888,7 +1888,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						cost: 'signature',
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(1), FactoryLogic.distance.createRanged(10)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
@@ -2335,7 +2335,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						cost: 3,
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'Two creatures',
+						target: 'Дві істоти',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,

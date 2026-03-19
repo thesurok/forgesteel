@@ -421,8 +421,8 @@ Pinna, Hedge Witch, Gravesford`,
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
 									tier1: '3 holy damage',
-									tier2: '4 holy damage; R < 1 illuminated (save ends)',
-									tier3: '5 holy damage; R < 2 illuminated (save ends)'
+									tier2: '4 holy damage; Р < 1 illuminated (save ends)',
+									tier3: '5 holy damage; Р < 2 illuminated (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('An illuminated creature or object can’t hide or become invisible, and any strike made against an illuminated target gains an edge.')
@@ -489,9 +489,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '7 acid damage; A < 1 dazed (save ends)',
-									tier2: '10 acid damage; A < 2 dazed (save ends)',
-									tier3: '13 acid damage; A < 3 dazed (save ends)'
+									tier1: '7 acid damage; Л < 1 dazed (save ends)',
+									tier2: '10 acid damage; Л < 2 dazed (save ends)',
+									tier3: '13 acid damage; Л < 3 dazed (save ends)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next time the target makes a strike against the daybringer, the target takes 4 acid damage after the strike is resolved.'),

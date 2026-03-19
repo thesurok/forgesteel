@@ -6,8 +6,8 @@ import { SubClass } from '@/models/subclass';
 
 export const telepathy: SubClass = {
 	id: 'talent-sub-3',
-	name: 'Telepathy',
-	description: 'Telepathy abilities allow you to communicate with, read, and influence the minds of other creatures.',
+	name: 'Телепатія',
+	description: 'Здібності телепатії дозволяють спілкуватися, читати та впливати на розуми інших істот.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -15,30 +15,30 @@ export const telepathy: SubClass = {
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-3-1-1',
-						name: 'Feedback Loop',
-						description: 'Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.',
-						type: FactoryLogic.type.createTrigger('The target deals damage to an ally.'),
+						name: 'Петля зворотного звʼязку',
+						description: 'Створення короткого психічного звʼязку між ворогом і його ціллю дозволяє тому ворогу відчути це на собі.',
+						type: FactoryLogic.type.createTrigger('Ціль завдає шкоди союзнику.'),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Одна істота',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target takes psychic damage equal to half the triggering damage.')
+							FactoryLogic.createAbilitySectionText('Ціль отримує психічну шкоду, рівну половині шкоди, спричиненої тригером.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'talent-sub-3-1-2',
-						name: 'Remote Assistance',
-						description: 'An ally gains the benefit of your intellect.',
+						name: 'Віддалена допомога',
+						description: 'Союзник отримує користь від вашого інтелекту.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The next ability roll an ally makes against the target before the start of your next turn gains an edge.'),
+							FactoryLogic.createAbilitySectionText('Наступний кидок здібності, який союзник робить проти цілі до початку вашого наступного ходу, отримує перевагу.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You target one additional creature or object.'
+								effect: 'Ви обираєте одну додаткову істоту або предмет.'
 							})
 						]
 					})
@@ -50,19 +50,19 @@ export const telepathy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-3-2-1',
-					name: 'Ease the Mind',
-					description: 'You gain an edge on tests made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).'
+					name: 'Заспокоєння розуму',
+					description: 'Ви отримуєте перевагу на перевірках для припинення бою та початку переговорів. Якщо ви присутні під час переговорів, будь-який NPC з ворожим або підозрілим початковим ставленням отримує +1 до терпіння (максимум 5).'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-3-2-2',
-					name: '2nd-Level Tradition Ability',
+					name: 'Здібність традиції 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-2-2a',
-									name: 'Overwhelm',
-									description: 'You overload their senses, turning all their subconscious thoughts into conscious ones.',
+									name: 'Перевантаження',
+									description: 'Ви перевантажуєте їхні відчуття, перетворюючи підсвідомі думки на свідомі.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createRanged(10)],
@@ -76,8 +76,8 @@ export const telepathy: SubClass = {
 											tier3: '14 + Р психічної шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
 										})),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You start crying, and you can’t use triggered actions or make free strikes until the end of the target’s next turn.'
+											name: 'Виснаження',
+											effect: 'Ви починаєте плакати і не можете використовувати тригерні дії або виконувати вільні удари до кінця наступного ходу цілі.'
 										})
 									]
 								})
@@ -88,8 +88,8 @@ export const telepathy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-2-2b',
-									name: 'Synaptic Override',
-									description: 'You gain control over an enemy’s nervous system. How pleasant for them.',
+									name: 'Синаптичний контроль',
+									description: 'Ви отримуєте контроль над нервовою системою ворога — як їм пощастило.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createRanged(10)],
@@ -98,14 +98,14 @@ export const telepathy: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Reason],
-											tier1: 'The target makes a free strike against one enemy of your choice.',
-											tier2: 'The target shifts up to their speed and uses their signature ability against any enemies of your choice.',
-											tier3: 'The target moves up to their speed and uses their signature ability against any enemies of your choice.'
+											tier1: 'Ціль робить вільну атаку проти одного ворога на ваш вибір.',
+											tier2: 'Ціль переміщується на відстань до своєї швидкості і використовує свою фірмову здібність проти ворогів на ваш вибір.',
+											tier3: 'Ціль переміщується на відстань до своєї швидкості і використовує свою фірмову здібність проти ворогів на ваш вибір.'
 										})),
-										FactoryLogic.createAbilitySectionText('**Effect** You control the target’s movement. The target can’t be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect. However, you can move them to provoke opportunity attacks.'),
+										FactoryLogic.createAbilitySectionText('**Ефект** Ви контролюєте рухи цілі. Ціль не може бути переміщена таким чином, щоб завдати їй шкоди (наприклад, через обрив), залишити її вмираючою або спричинити стан чи інший негативний ефект. Проте ви можете переміщати її так, щоб провокувати можливі атаки.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You take 1d6 damage and are weakened until the end of your turn.'
+											name: 'Виснаження',
+											effect: 'Ви отримуєте 1d6 шкоди і стаєте ослабленими до кінця вашого ходу.'
 										})
 									]
 								})
@@ -129,17 +129,17 @@ export const telepathy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-3-5-1',
-					name: 'Compulsion',
-					description: 'Whenever you obtain a success on a test using a skill from the interpersonal skill group while interacting with an NPC, you can ask them a question using your Telepathic Speech feature. The NPC must answer the question truthfully to the best of their ability.'
+					name: 'Примушення',
+					description: 'Коли ви отримуєте успіх у перевірці навику з групи міжособистісних навичок під час взаємодії з NPC, ви можете поставити їм питання за допомогою особливості Телепатична мова. NPC має відповісти чесно, наскільки це в їхніх силах.'
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'talent-sub-3-5-2',
-					name: 'Remote Amplification',
+					name: 'Віддалене підсилення',
 					features: [
 						FactoryLogic.feature.create({
 							id: 'talent-sub-3-5-2a',
-							name: 'Remote Amplification',
-							description: 'The range of your Telepathic Speech feature increases to 1 mile.'
+							name: 'Віддалене підсилення',
+							description: 'Дальність дії вашої особливості Телепатична мова збільшується до 1 милі.'
 						}),
 						FactoryLogic.feature.createAbilityDistance({
 							id: 'talent-sub-3-5-2b',
@@ -155,14 +155,14 @@ export const telepathy: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-3-6-1',
-					name: '6th-Level Tradition Ability',
+					name: 'Здібність традиції 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-6-1a',
-									name: 'Synaptic Conditioning',
-									description: 'It’s a subtle mindset shift. It’s not that they’re your enemy—you just don’t like them!',
+									name: 'Синаптичне кондиціювання',
+									description: 'Це тонка зміна мислення. Справа не в тому, що вони ваші вороги — вам просто не подобаються!',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createMelee(2)],
@@ -178,8 +178,8 @@ export const telepathy: SubClass = {
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'While the target is under this effect, you no longer consider your enemies to be your enemies when using your abilities and features.'
+											name: 'Виснаження',
+											effect: 'Поки ціль під дією цього ефекту, ви більше не вважаєте своїх ворогів ворогами при використанні своїх здібностей та рис.'
 										})
 									]
 								})
@@ -190,26 +190,26 @@ export const telepathy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-6-1b',
-									name: 'Synaptic Dissipation',
-									description: 'You manipulate your enemies’ minds and make them wonder if you were ever really there in the first place.',
+									name: 'Синаптичне розсіювання',
+									description: 'Ви маніпулюєте розумами ворогів і змушуєте їх сумніватися, чи взагалі ви коли-небудь тут були.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createRanged(10)],
-									target: 'Special',
+									target: 'Особливе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You target a number of creatures with this ability determined by the outcome of your power roll. You and your allies are invisible to each target until the start of your next turn.'),
+										FactoryLogic.createAbilitySectionText('Ви обираєте кількість істот для цієї здібності, що визначається результатом вашого кидка сили. Ви та ваші союзники стаєте невидимими для кожної такої цілі до початку вашого наступного ходу.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'Two creatures',
-												tier2: '3 Істоти',
-												tier3: 'Five creatures'
+												tier1: 'Дві істоти',
+												tier2: 'Три істоти',
+												tier3: 'Пʼять істот'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The effect ends early if you take damage from an enemy’s ability.'
+											name: 'Виснаження',
+											effect: 'Ефект припиняється раніше, якщо ви отримуєте пошкодження від здібності ворога.'
 										})
 									]
 								})
@@ -229,13 +229,13 @@ export const telepathy: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'talent-sub-3-8-1',
-					name: 'Mindlink',
-					description: 'During a respite, you can choose a number of creatures up to your Reason score who you have communicated with using your Telepathic Speech feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more Recoveries, each other linked creature can spend a Recovery.'
+					name: 'Ментальний звʼязок',
+					description: 'Під час відпочинку ви можете вибрати число істот до вашого значення Розум, з якими ви спілкувалися за допомогою особливості Телепатична мова, створивши телепатичний звʼязок. Коли будь-яка звʼязана істота витрачає одне або більше Відновлень, кожна інша звʼязана істота може витратити одне Відновлення.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-sub-3-8-2',
-					name: 'Universal Connection',
-					description: 'The range of your Telepathic Speech feature increases to anywhere on the same world.'
+					name: 'Універсальне зʼєднання',
+					description: 'Дальність дії вашої особливості Телепатична мова збільшується до будь-якого місця на тій самій планеті.'
 				})
 			]
 		},
@@ -244,14 +244,14 @@ export const telepathy: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'talent-sub-3-9-1',
-					name: '9th-Level Tradition Ability',
+					name: 'Здібність традиції 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-9-1a',
-									name: 'Resonant Mind Spike',
-									description: 'You fire a telepathic bolt empowered by every consciousness within reach directly into your foe’s mind.',
+									name: 'Резонансний розумовий укол',
+									description: 'Ви випускаєте телепатичний заряд, посилений кожною свідомістю в межах досяжності, прямо в розум вашого ворога.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.createRanged(10)],
@@ -266,10 +266,10 @@ export const telepathy: SubClass = {
 												tier3: '28 + Р психічної шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('This ability ignores cover and concealment.'),
+										FactoryLogic.createAbilitySectionText('Ця здібність ігнорує прикриття та маскування.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'The ability roll scores a critical hit on a natural 17 or higher. You take half the damage the target takes, and you can’t reduce this damage in any way.'
+											name: 'Виснаження',
+											effect: 'Кидок здібності завдає критичний удар при натуральному 17 або вище. Ви отримуєте половину шкоди, яку отримує ціль, і не можете жодним чином зменшити цю шкоду.'
 										})
 									]
 								})
@@ -280,26 +280,26 @@ export const telepathy: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'talent-sub-3-9-1b',
-									name: 'Synaptic Terror',
-									description: 'You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.',
+									name: 'Синаптичний жах',
+									description: 'Ви проектуєте жахливий образ у свідомість ворогів, а їхній страх психічно підживлює ваших союзників.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telepathy],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-									target: 'Each ally and enemy in the area',
+									target: 'Кожен союзник і ворог у зоні',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You and each target ally can’t obtain lower than a tier 2 outcome on power rolls until the start of your next turn. Each target enemy is affected by the ability’s power roll.'),
+										FactoryLogic.createAbilitySectionText('Ви та кожен союзник-ціль не можете отримати результат нижчий за рівень 2 на кидках сили до початку вашого наступного ходу. Кожна ворожа ціль підпадає під дію кидка сили цієї здібності.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Presence,
-												tier1: 'R < [слабкий], frightened (save ends)',
-												tier2: 'R < [середній], frightened (save ends)',
-												tier3: 'R < [сильний], frightened (save ends)'
+												tier1: 'Р < [слабкий], зляканий (рят. кидок завершує)',
+												tier2: 'Р < [середній], зляканий (рят. кидок завершує)',
+												tier3: 'Р < [сильний], зляканий (рят. кидок завершує)'
 											})
 										),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Strained',
-											effect: 'You can’t use this ability if doing so would cause you to have negative clarity.'
+											name: 'Виснаження',
+											effect: 'Ви не можете використовувати цю здібність, якщо це спричинить у вас негативну ясність.'
 										})
 									]
 								})

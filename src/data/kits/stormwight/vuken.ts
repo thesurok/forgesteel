@@ -34,9 +34,9 @@ export const vuken: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might],
-							tier1: '2 + M damage; A < [слабкий], prone',
-							tier2: '5 + M damage; A < [середній], prone',
-							tier3: '7 + M damage; A < [сильний], prone'
+							tier1: '2 + С damage; Л < [слабкий], prone',
+							tier2: '5 + С damage; Л < [середній], prone',
+							tier3: '7 + С damage; Л < [сильний], prone'
 						})
 					)
 				]

@@ -242,9 +242,9 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '3 damage; R < [слабкий], blinded (EoT)',
-						tier2: '4 damage; R < [середній], blinded (EoT)',
-						tier3: '6 damage; R < [сильний], blinded (EoT)'
+						tier1: '3 damage; Р < [слабкий], blinded (EoT)',
+						tier2: '4 damage; Р < [середній], blinded (EoT)',
+						tier3: '6 damage; Р < [сильний], blinded (EoT)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A blinded creature has line of effect only to creatures and objects within 2 squares of them.')
@@ -825,7 +825,7 @@ const hazel: Kit = {
 			description: `
 | Talisman | Stoke the Flame Effect |
 | :--- | :--- |
-| Dagaz | All targets of the ability are R < [середній] weakened (EoT). If the target is hidden, the ability deals extra psychic damage equal to twice your Reason score to one creature it is targeting. |
+| Dagaz | All targets of the ability are Р < [середній] weakened (EoT). If the target is hidden, the ability deals extra psychic damage equal to twice your Reason score to one creature it is targeting. |
 | Laguz | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, the ability roll is a critical hit on double rolled values (e.g. two 6s) instead of 19 or higher. |
 | Kaunan | The ability gains an edge. If the ability is made with a double edge against a creature that is frightened or weakened, then the target gains 1 Heroic Resource after resolving the ability. |`
 		})
@@ -883,8 +883,8 @@ const rosewood: Kit = {
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Reason,
 							tier1: '2 sonic damage',
-							tier2: '3 sonic damage; R < [середній], slowed (save ends)',
-							tier3: '4 sonic damage; R < [сильний], slowed (save ends)'
+							tier2: '3 sonic damage; Р < [середній], slowed (save ends)',
+							tier3: '4 sonic damage; Р < [сильний], slowed (save ends)'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
@@ -902,7 +902,7 @@ const rosewood: Kit = {
 | :--- | :--- |
 | Gebo | The target gains temporary Stamina equal to your Reason score, or equal to 5 + your level if the ability has a double edge. |
 | Othalan | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, they can additionally make a free strike after the ability. |
-| Uruz | The ability gains an edge. All enemies adjacent to the target are P < [середній] frightened of the target (EoT). Enemies who are already slowed automatically fail to resist the potency. |`
+| Uruz | The ability gains an edge. All enemies adjacent to the target are П < [середній] frightened of the target (EoT). Enemies who are already slowed automatically fail to resist the potency. |`
 		})
 	]
 };
