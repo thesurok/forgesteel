@@ -81,12 +81,12 @@ export const HeroViewPage = (props: Props) => {
 	const isSmall = useIsSmall();
 	const navigation = useNavigation();
 	const { heroID } = useParams<{ heroID: string }>();
-	const [ view, setView ] = useState<string>('modern');
-	const [ showExportPopover, setShowExportPopover ] = useState<boolean>(false);
-	const [ showToolsPopover, setShowToolsPopover ] = useState<boolean>(false);
+	const [view, setView] = useState<string>('classic');
+	const [showExportPopover, setShowExportPopover] = useState<boolean>(false);
+	const [showToolsPopover, setShowToolsPopover] = useState<boolean>(false);
 	const hero = useMemo(
 		() => props.heroes.find(h => h.id === heroID)!,
-		[ heroID, props.heroes ]
+		[heroID, props.heroes]
 	);
 	useTitle(hero.name || 'Unnamed Hero');
 
@@ -150,14 +150,14 @@ export const HeroViewPage = (props: Props) => {
 			<div className='hero-view-page'>
 				<AppHeader subheader='Hero'>
 					<Button icon={<CloseOutlined />} onClick={() => navigation.goToHeroList(hero.folder)}>
-						Close
+						Закрити
 					</Button>
 					<div className='divider' />
 					<Button icon={<EditOutlined />} onClick={() => navigation.goToHeroEdit(heroID!, 'details')}>
-						Edit
+						Редагувати
 					</Button>
 					<Button icon={<CopyOutlined />} onClick={() => props.copyHero(hero)}>
-						Copy
+						Копіювати
 					</Button>
 					<Popover
 						trigger='click'
@@ -166,35 +166,35 @@ export const HeroViewPage = (props: Props) => {
 						content={(
 							<div style={{ width: '325px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
 								{
-									![ 'classic', 'abilities' ].includes(view) ?
+									!['classic', 'abilities'].includes(view) ?
 										<Alert
 											type='info'
 											showIcon={true}
-											title='If you want to export your hero as a PDF, switch to Classic view.'
-											action={<Button onClick={() => setView('classic')}>Classic</Button>}
+											title='Якщо ви хочете експортувати свого героя у форматі PDF, перейдіть до класичного перегляду.'
+											action={<Button onClick={() => setView('classic')}>Класичний</Button>}
 										/>
 										: null
 								}
 								{
 									view === 'classic' ?
 										<>
-											<Button onClick={() => { setShowExportPopover(false); props.exportHeroPdf(hero, 'standard'); }}>Export as PDF</Button>
-											<Button onClick={() => { setShowExportPopover(false); props.exportHeroPdf(hero, 'high'); }}>Export as PDF (high res)</Button>
+											<Button onClick={() => { setShowExportPopover(false); props.exportHeroPdf(hero, 'standard'); }}>Експортувати як PDF</Button>
+											<Button onClick={() => { setShowExportPopover(false); props.exportHeroPdf(hero, 'high'); }}>Експортувати як PDF (висока роздільна здатність)</Button>
 										</>
 										: null
 								}
 								{
 									view === 'abilities' ?
-										<Button onClick={() => { setShowExportPopover(false); props.exportStandardAbilities(); }}>Export as PDF</Button>
+										<Button onClick={() => { setShowExportPopover(false); props.exportStandardAbilities(); }}>Експортувати як PDF</Button>
 										: null
 								}
 								<Divider />
-								<Button onClick={() => { setShowExportPopover(false); props.exportHeroData(hero); }}>Export as Data</Button>
+								<Button onClick={() => { setShowExportPopover(false); props.exportHeroData(hero); }}>Експортувати як дані</Button>
 							</div>
 						)}
 					>
 						<Button icon={<UploadOutlined />}>
-							Export
+							Експортувати
 							<DownOutlined />
 						</Button>
 					</Popover>
@@ -209,15 +209,15 @@ export const HeroViewPage = (props: Props) => {
 						onOpenChange={setShowToolsPopover}
 						content={
 							<Space orientation='vertical' style={{ width: '100%' }}>
-								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroState(hero, HeroStatePage.Resources); }}>Manage Your Hero</Button>
-								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroRespite(hero); }}>Take A Respite</Button>
+								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroState(hero, HeroStatePage.Resources); }}>Керувати героєм</Button>
+								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroRespite(hero); }}>Зробити відпочинок</Button>
 								<Divider />
-								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroCustomize(hero); }}>Customize</Button>
+								<Button block={true} onClick={() => { setShowToolsPopover(false); props.showHeroCustomize(hero); }}>Налаштувати</Button>
 							</Space>
 						}
 					>
 						<Button icon={<ToolOutlined />}>
-							Tools
+							Інструменти
 						</Button>
 					</Popover>
 					<div className='divider' />

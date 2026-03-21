@@ -60,7 +60,7 @@ export const SourcebookPanel = (props: Props) => {
 			<div className='sourcebook-panel' id={props.sourcebook.id}>
 				<HeaderText
 					level={1}
-					tags={[ props.sourcebook.type ]}
+					tags={[props.sourcebook.type]}
 				>
 					{props.sourcebook.name || 'Unnamed Sourcebook'}
 				</HeaderText>
@@ -81,8 +81,8 @@ interface EditorProps {
 }
 
 export const SourcebookEditorPanel = (props: EditorProps) => {
-	const [ sourcebook, setSourcebook ] = useState<Sourcebook>(Utils.copy(props.sourcebook));
-	const [ isEditing, setIsEditing ] = useState<boolean>(false);
+	const [sourcebook, setSourcebook] = useState<Sourcebook>(Utils.copy(props.sourcebook));
+	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	let content: ReactNode = null;
 	const buttons: ReactNode[] = [];
@@ -275,7 +275,7 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 										<MarkdownEditor placeholder='Description' value={lang.description} onChange={value => setLanguageDescription(n, value)} />
 										<Segmented
 											block={true}
-											options={[ LanguageType.Common, LanguageType.Regional, LanguageType.Cultural, LanguageType.Dead ]}
+											options={[LanguageType.Common, LanguageType.Regional, LanguageType.Cultural, LanguageType.Dead]}
 											value={lang.type}
 											onChange={value => setLanguageType(n, value)}
 										/>
@@ -333,7 +333,7 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 										<Select
 											style={{ width: '100%' }}
 											placeholder='Skill List'
-											options={[ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ].map(option => ({ value: option }))}
+											options={[SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore].map(option => ({ value: option }))}
 											optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 											value={skill.list}
 											onChange={list => setSkillList(n, list)}
@@ -428,7 +428,7 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 		<ErrorBoundary>
 			<div className='sourcebook-panel' id={SheetFormatter.getPageId('sourcebook', sourcebook.id)}>
 				<HeaderText
-					tags={[ sourcebook.type ]}
+					tags={[sourcebook.type]}
 					extra={<Flex>{buttons}</Flex>}
 				>
 					{sourcebook.name || 'Unnamed Sourcebook'}

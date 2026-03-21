@@ -18,7 +18,7 @@ interface Props {
 }
 
 export const AbilityComponent = (props: Props) => {
-	const ability = useMemo(() => props.ability, [ props.ability ]);
+	const ability = useMemo(() => props.ability, [props.ability]);
 	const includeIcon = props.includeIcon || false;
 
 	const getPowerRollSection = () => {
@@ -95,14 +95,14 @@ export const AbilityComponent = (props: Props) => {
 					<div className='power-roll'>2d10 + {ability.rollPower}</div>
 					: undefined}
 				<div className='ability-type'>
-					{ability.abilityType}
+					{ability.abilityTypeLabel ?? ability.abilityType}
 					{icon}
 				</div>
 			</div>
 			<div className='stats'>
 				<div className='keywords-action-type'>
 					<div className='keywords'>{ability.keywords}</div>
-					<div className='action-type'>{ability.actionType}</div>
+					<div className='action-type'>{ability.actionTypeLabel ?? ability.actionType}</div>
 				</div>
 				<div className='distance-target'>
 					<div className='distance'>

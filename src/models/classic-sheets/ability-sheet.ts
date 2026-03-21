@@ -5,7 +5,9 @@ export interface AbilitySheet {
 	isSignature: boolean;
 	isNotTrueAbility: boolean;
 	abilityType?: string;
+	abilityTypeLabel?: string;
 	actionType?: string;
+	actionTypeLabel?: string;
 	description?: string;
 	keywords?: string;
 	distance?: string;

@@ -12,12 +12,12 @@ export const dwarfFury = {
 	ancestry: {
 		id: 'ancestry-dwarf',
 		name: 'Dwarf',
-		description: 'Possessed of a strength that belies their size, dwarves have flesh infused with stone - a silico-organic hybrid making them physically denser than other humanoids. They enjoy a reputation in Orden as savvy engineers and technologists thanks to the lore they inherited from their elder siblings, the long-extinct steel dwarves.',
+		description: 'Гноми, володіючи силою, що суперечить їхньому вигляду, мають плоть, просякнуту каменем — силіко-органічний гібрид, що робить їх фізично щільнішими за інших гуманоїдів. Вони відомі в Ордені як кмітливі інженери й технологи завдяки знанням, успадкованим від старших братів — давно вимерлих сталевих гномів.',
 		features: [
 			{
 				id: 'dwarf-feature-1',
 				name: 'Runic Carving',
-				description: '\nYou can carve a rune onto your skin with 10 uninterrupted minutes of work, which is activated by the magic within your body. The rune you carve determines the benefit you receive. chosen from among the following:\n\n* **Detection**: Pick a specific type of creature (such as “goblins” or “humans”) or object (such as “gems” or “potions”). Your rune glows softly when you are within 20 squares of any creature or object of that type, even if you don’t have line of effect to the creature or object. You can change the type of creature or object as a maneuver.\n* **Light**: Your skin sheds light for 10 squares. You can turn this on and off as a maneuver.\n* **Voice**: As a maneuver, you can communicate telepathically with a willing creature you have met before and who is within 1 mile of you. You must know the creature’s name, and they must speak and understand a language you know. You and the creature can respond to one another as if having a spoken conversation. You can communicate with a different creature by changing the rune.\n\nYou can have one rune active at a time, and can change or remove a rune with 10 uninterrupted minutes of work.',
+				description: '\nВи можете вирізати руну на своїй шкірі за 10 хвилин безперервної роботи — руна активується магією в вашому тілі. Руна визначає отримувану користь; оберіть одну з наведених:\n\n* **Виявлення**: Виберіть конкретний тип істоти (наприклад, “гобліни” або “люди”) або об’єкт (наприклад, “коштовні камені” або “зілля”). Ваша руна м’яко світиться, коли ви перебуваєте в межах 20 клітин від будь-якої істоти або об’єкта цього типу, навіть якщо у вас немає лінії ефекту. Ви можете змінити тип як маневр.\n* **Світло**: Ваша шкіра випромінює світло на 10 клітин. Ви можете вмикати і вимикати це як маневр.\n* **Голос**: Як маневр ви можете телепатично спілкуватися з охочою істотою, яку ви раніше зустрічали і яка перебуває в межах 1 милі. Ви повинні знати імʼя істоти, і вона має говорити й розуміти мову, яку ви знаєте. Ви й істота можете відповідати одне одному як при усному діалозі. Ви можете змінити руну, щоб спілкуватися з іншою істотою.\n\nВи можете мати лише одну активну руну і змінювати або видаляти руну за 10 хвилин безперервної роботи.',
 				type: 'Text',
 				data: null
 			},
@@ -32,7 +32,7 @@ export const dwarfFury = {
 							feature: {
 								id: 'dwarf-feature-2-1',
 								name: 'Grounded',
-								description: 'Your heavy stone body and connection to the earth make it difficult for others to move you.',
+								description: 'Ваш важкий камʼяний корпус і звʼязок із землею ускладнюють іншим пересувати вас.',
 								type: 'Bonus',
 								data: {
 									field: 'Stability',
@@ -49,7 +49,7 @@ export const dwarfFury = {
 							feature: {
 								id: 'dwarf-feature-2-2',
 								name: 'Stand Tough',
-								description: 'Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature’s traits or abilities.',
+								description: 'Ваше тіло створене, щоб витримувати удари ворогів. Ваш показник Сили вважається на 1 вищим при протистоянні потужностям, і ви отримуєте перевагу на тестах Сили, коли потрібно протистояти впливам середовища або рисам чи здібностям істоти.',
 								type: 'Text',
 								data: null
 							},
@@ -59,7 +59,7 @@ export const dwarfFury = {
 							feature: {
 								id: 'dwarf-feature-2-3',
 								name: 'Stone Singer',
-								description: 'You have a magic connection to the earth. When you spend 1 uninterrupted hour singing, you can reshape any unworked mundane stone within 3 squares. You can’t destroy this stone, but you can move each square of it anywhere within 3 squares of you, piling it off to one side to dig a hole or building it up to create a wall.',
+								description: 'У вас є магічний звʼязок із землею. Коли ви проводите 1 годину співу без перерв, ви можете перетворити будь-який непрацюваний звичайний камінь в межах 3 клітин. Ви не можете знищити цей камінь, але можете перемістити кожну його клітину на відстань до 3 клітин від вас, відкидаючи вбік, щоб викопати яму, або нарощуючи, щоб звести стіну.',
 								type: 'Text',
 								data: null
 							},
@@ -69,7 +69,7 @@ export const dwarfFury = {
 							feature: {
 								id: 'dwarf-feature-2-4',
 								name: 'Great Fortitude',
-								description: 'Your hearty constitution prevents you from losing strength.',
+								description: 'Ваша тверда конституція заважає вам втрачати силу.',
 								type: 'Condition Immunity',
 								data: {
 									conditions: [
@@ -83,7 +83,7 @@ export const dwarfFury = {
 							feature: {
 								id: 'dwarf-feature-2-5',
 								name: 'Spark Off Your Skin',
-								description: 'Your stone skin affords you potent protection.',
+								description: 'Ваша камʼяна шкіра надає вам потужний захист.',
 								type: 'Bonus',
 								data: {
 									field: 'Stamina',
@@ -136,7 +136,7 @@ export const dwarfFury = {
 	culture: {
 		id: 'culture-dwarf',
 		name: 'Dwarf',
-		description: 'Secluded, bureaucratic, creative.',
+		description: 'Відлюдний, бюрократичний, творчий.',
 		type: 'Ancestral',
 		language: {
 			id: 'culture-language',
@@ -153,7 +153,7 @@ export const dwarfFury = {
 		environment: {
 			id: 'env-secluded',
 			name: 'Secluded',
-			description: 'A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave. When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.',
+			description: 'Відлюдний культурний осередок базується в одному відносно тісному місці — будівлі, печері тощо — і рідко взаємодіє з іншими культурами. Такі місця часто бувають монастирями, замками або тюрмами. Люди в відлюдній культурі мають мало причин покидати свій дім або взаємодіяти з зовнішнім світом, хоча можуть усвідомлювати ті культури та події поза своєю анклавою. Коли люди живуть разом у тісноті, вони зазвичай вчаться уживатися. Вони часто проводять багато часу в навчанні або самоспогляданні, бо в усамітненні небагато іншого.',
 			type: 'Skill Choice',
 			data: {
 				options: [],
@@ -207,7 +207,7 @@ export const dwarfFury = {
 	class: {
 		id: 'class-fury',
 		name: 'Fury',
-		description: '\nYou do not temper the heat of battle within you. You unleash it! Your experience in the wild taught you the secrets of predators, and now, like the raptor, the panther, the wolf, you channel unfettered anger into martial prowess. Primordial Chaos is your ally. Let others use finesse to clean up the wreckage left in your wake.\n\nAs a fury, you devastate foes with overwhelming might, hurl yourself and enemies around the battlefield, and grow stronger as your ferocity increases. Nature has no concept of fairness — and neither do you..',
+		description: '\nВи не приборкуєте жар бою всередині себе. Ви його звільняєте! Досвід у дику природі навчив вас таємниць хижаків, і тепер, як яструб, пантера чи вовк, ви спрямовуєте невгамовну лють у бойове мистецтво. Первісний Хаос — ваш союзник. Нехай інші використовують вишуканість, щоб прибирати залишки після вас.\n\nЯк фурія, ви руйнуєте ворогів приголомшливою силою, кидаєте себе й супротивників по полю бою і стаєте сильнішими з ростом вашої люті. Природа не знає поняття справедливості — і ви також.',
 		type: 'standard',
 		subclassName: 'Primordial Aspect',
 		subclassCount: 1,

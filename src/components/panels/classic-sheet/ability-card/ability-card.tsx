@@ -31,19 +31,19 @@ export const AbilityCard = (props: Props) => {
 			<div className='stats'>
 				<div className='keywords-action-type'>
 					<div className='keywords'>{ability.keywords}</div>
-					<div className='action-type'>{ability.actionType}</div>
+					<div className='action-type'>{ability.actionTypeLabel ?? ability.actionType}</div>
 				</div>
 				<div className='distance-target'>
 					<div className='distance'>
 						{ability.distance?.length ?
 							<img src={distanceIcon} alt='Distance' />
-							: undefined }
+							: undefined}
 						<span>{ability.distance}</span>
 					</div>
 					<div className='target'>
 						{ability.target?.length ?
 							<img src={targetIcon} alt='Target' />
-							: undefined }
+							: undefined}
 						<span>{ability.target}</span>
 					</div>
 				</div>
@@ -119,7 +119,7 @@ export const AbilityCard = (props: Props) => {
 	};
 
 	const getCardClasses = (ability: AbilitySheet) => {
-		const classes = [ 'ability', 'card' ];
+		const classes = ['ability', 'card'];
 		if (ability.actionType) {
 			classes.push(ability.actionType.toLocaleLowerCase().split(' ').join('-'));
 		}
@@ -132,11 +132,11 @@ export const AbilityCard = (props: Props) => {
 	return (
 		<div className={getCardClasses(ability)}>
 			<section className='bordered'>
-				<h3>{ability.abilityType}</h3>
+				<h3>{ability.abilityTypeLabel ?? ability.abilityType}</h3>
 				<h2><span className='ability-name'>{ability.name}</span>{getAbilityCost()}</h2>
 				{ability.description?.length ?
 					<p className='description'>{ability.description}</p>
-					: undefined }
+					: undefined}
 				{getStatsSection()}
 				{ability.qualifiers?.map((q, i) => {
 					return (<div className='action-qualifier' key={`qualifier-${i}`}>{q}</div>);

@@ -97,7 +97,7 @@ export class ClassicSheetBuilder {
 		};
 
 		sheet.features = MonsterLogic.getFeatures(monster)
-			.filter(f => [ FeatureType.Text, FeatureType.AddOn ].includes(f.type));
+			.filter(f => [FeatureType.Text, FeatureType.AddOn].includes(f.type));
 
 		const abilities = MonsterLogic.getFeatures(monster)
 			.filter(f => f.type === FeatureType.Ability)
@@ -127,6 +127,20 @@ export class ClassicSheetBuilder {
 			trigger: ability.type.trigger,
 			hasPowerRoll: false
 		};
+
+		// canonical English actionType (used for classes, sorting) and localized label
+		const canonicalActionMap: Record<string, string> = {
+			[AbilityUsage.MainAction]: 'Main Action',
+			[AbilityUsage.Maneuver]: 'Maneuver',
+			[AbilityUsage.Move]: 'Move Action',
+			[AbilityUsage.Trigger]: 'Triggered Action',
+			[AbilityUsage.VillainAction]: 'Villain Action',
+			[AbilityUsage.ChampionAction]: 'Champion Action',
+			[AbilityUsage.FreeStrike]: 'Free Strike'
+		};
+		const canonicalBase = canonicalActionMap[ability.type.usage] ?? ability.type.usage.toString();
+		sheet.actionType = ability.type.free ? `Free ${canonicalBase}` : canonicalBase;
+		sheet.actionTypeLabel = ability.type.free ? `Безкоштовна ${ability.type.usage.toString()}` : ability.type.usage.toString();
 
 		sheet.name = sheet.name.replace(/\s*Benefit and Drawback\s*/, '').trim();
 
@@ -179,9 +193,19 @@ export class ClassicSheetBuilder {
 			}
 		}
 
-		if (sheet.actionType && ability.type.free) {
-			sheet.actionType = `Free ${sheet.actionType}`;
-		}
+		// Localized labels for abilityType (map English labels to Ukrainian where appropriate)
+		const abilityTypeLocalizedMap: Record<string, string> = {
+			'Signature Ability': 'Фірмова здібність',
+			'Heroic Ability': 'Героїчна здібність',
+			'Triggered Action': 'Тригерна дія',
+			'Free Strike': 'Вільний удар',
+			'Maneuver': 'Маневр',
+			'Move Action': 'Дія руху',
+			'Performance': 'Виконання',
+			'Encounter': 'Сутичка'
+		};
+		sheet.abilityTypeLabel = abilityTypeLocalizedMap[sheet.abilityType ?? ''] ?? sheet.abilityType ?? '';
+
 
 		sheet.qualifiers = ability.type.qualifiers;
 
@@ -201,8 +225,8 @@ export class ClassicSheetBuilder {
 
 		// Kind of hacky, but this is a one-off at the moment
 		if (CreatureLogic.isHero(creature)
-				&& ([ 'grab', 'knockback' ].includes(ability.id))
-				&& HeroLogic.getFeatures(creature as Hero).find(f => f.feature.id === 'null-1-8')) { // Psionic Martial Arts id
+			&& (['grab', 'knockback'].includes(ability.id))
+			&& HeroLogic.getFeatures(creature as Hero).find(f => f.feature.id === 'null-1-8')) { // Psionic Martial Arts id
 			effectText = effectText.replace(/your Might/g, 'your Intuition');
 		}
 		sheet.effect = effectText;

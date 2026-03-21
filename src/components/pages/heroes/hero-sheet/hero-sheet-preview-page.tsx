@@ -35,12 +35,12 @@ export const HeroSheetPreviewPage = (props: Props) => {
 	const { heroID } = useParams<{ heroID: string }>();
 	const hero = useMemo(
 		() => props.heroes.find(h => h.id === heroID)!,
-		[ heroID, props.heroes ]
+		[heroID, props.heroes]
 	);
 
-	const [ drawerOpen, setDrawerOpen ] = useState(false);
-	const [ spinning, setSpinning ] = useState(false);
-	const [ previewOptions, setPreviewOptions ] = useState<'html' | 'canvas'>('html');
+	const [drawerOpen, setDrawerOpen] = useState(false);
+	const [spinning, setSpinning] = useState(false);
+	const [previewOptions, setPreviewOptions] = useState<'html' | 'canvas'>('html');
 
 	const changeTextColor = (newColor: 'light' | 'default' | 'dark') => {
 		setDrawColor(newColor);
@@ -112,7 +112,7 @@ export const HeroSheetPreviewPage = (props: Props) => {
 
 	const includedStandardAbilitiesChanged = (value: string | string[]) => {
 		const copy = Utils.copy(props.options);
-		copy.shownStandardAbilities = [ value ].flat(1);
+		copy.shownStandardAbilities = [value].flat(1);
 		props.setOptions(copy);
 	};
 
@@ -123,7 +123,7 @@ export const HeroSheetPreviewPage = (props: Props) => {
 	standardAbilities.forEach(a => {
 		standardAbilityOptions.push({
 			value: a.id,
-			label: <div className='ds-text'>{a.name} <Tag variant='outlined'>{a.actionType}</Tag></div>
+			label: <div className='ds-text'>{a.name} <Tag variant='outlined'>{a.actionTypeLabel ?? a.actionType}</Tag></div>
 		});
 	});
 
@@ -290,7 +290,7 @@ export const HeroSheetPreviewPage = (props: Props) => {
 			card.addEventListener('mouseleave', cardLeave);
 			card.addEventListener('click', cardClick);
 		});
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
@@ -359,7 +359,7 @@ export const HeroSheetPreviewPage = (props: Props) => {
 						<Segmented
 							name='pagesize'
 							block={true}
-							options={[ SheetPageSize.Letter, SheetPageSize.A4 ]}
+							options={[SheetPageSize.Letter, SheetPageSize.A4]}
 							value={props.options.classicSheetPageSize}
 							onChange={setClassicSheetPageSize}
 						/>

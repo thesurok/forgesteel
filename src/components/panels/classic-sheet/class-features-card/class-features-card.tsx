@@ -13,13 +13,13 @@ export const ClassFeaturesCard = (props: Props) => {
 	const character = props.character;
 
 	let moreInRef;
-	if (character.featuresReferenceOther?.find(r => [ character.className, character.subclassName ].includes(r.source))) {
-		moreInRef = (<li key='more'><em>Remaining features in Reference…</em></li>);
+	if (character.featuresReferenceOther?.find(r => [character.className, character.subclassName].includes(r.source))) {
+		moreInRef = (<li key='more'><em>Залишок особливостей в Довіднику…</em></li>);
 	}
 
 	return (
 		<div className='class-features card'>
-			<h2>Class Features</h2>
+			<h2>Особливості класу</h2>
 			<div className={`features-container ${props.options.pageOrientation === 'portrait' ? 'two-column' : null}`}>
 				{character.classFeatures?.map(f =>
 					<FeatureComponent

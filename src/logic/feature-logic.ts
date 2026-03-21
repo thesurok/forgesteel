@@ -210,7 +210,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-1a',
-						keywords: [ AbilityKeyword.Magic ],
+						keywords: [AbilityKeyword.Magic],
 						value: 1
 					}),
 					source: item.name
@@ -218,7 +218,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-1b',
-						keywords: [ AbilityKeyword.Psionic ],
+						keywords: [AbilityKeyword.Psionic],
 						value: 1
 					}),
 					source: item.name
@@ -228,7 +228,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-5a',
-						keywords: [ AbilityKeyword.Magic ],
+						keywords: [AbilityKeyword.Magic],
 						value: 1
 					}),
 					source: item.name
@@ -236,7 +236,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-5b',
-						keywords: [ AbilityKeyword.Psionic ],
+						keywords: [AbilityKeyword.Psionic],
 						value: 1
 					}),
 					source: item.name
@@ -246,7 +246,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-9a',
-						keywords: [ AbilityKeyword.Magic ],
+						keywords: [AbilityKeyword.Magic],
 						value: 1
 					}),
 					source: item.name
@@ -254,7 +254,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-9b',
-						keywords: [ AbilityKeyword.Psionic ],
+						keywords: [AbilityKeyword.Psionic],
 						value: 1
 					}), source: item.name
 				});
@@ -266,7 +266,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-1',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					}),
 					source: item.name
@@ -276,7 +276,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-5',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					}),
 					source: item.name
@@ -286,7 +286,7 @@ export class FeatureLogic {
 				features.push({
 					feature: FactoryLogic.feature.createAbilityDamage({
 						id: item.name + '-bonus-9',
-						keywords: [ AbilityKeyword.Weapon ],
+						keywords: [AbilityKeyword.Weapon],
 						value: 1
 					}),
 					source: item.name
@@ -360,7 +360,7 @@ export class FeatureLogic {
 			switch (f.type) {
 				case FeatureType.Bonus: {
 					const match = reduced.find(m => m.type === FeatureType.Bonus
-							&& this.matchDataFields(m.data, f.data, [ 'field' ]));
+						&& this.matchDataFields(m.data, f.data, ['field']));
 					if (match) {
 						(match as FeatureBonus).data.value += f.data.value;
 					} else {
@@ -370,7 +370,7 @@ export class FeatureLogic {
 				}
 				case FeatureType.AbilityDamage: {
 					const match = reduced.find(m => m.type === FeatureType.AbilityDamage
-						&& this.matchDataFields(m.data, f.data, [ 'damageType', 'keywords' ]));
+						&& this.matchDataFields(m.data, f.data, ['damageType', 'keywords']));
 					if (match) {
 						(match as FeatureAbilityDamage).data.value += f.data.value;
 					} else {
@@ -425,7 +425,7 @@ export class FeatureLogic {
 							s.effect = s.effect.replaceAll(fromStr, toStr);
 							break;
 						case 'roll':
-							s.roll.characteristic = [ toCharacteristic ];
+							s.roll.characteristic = [toCharacteristic];
 							s.roll.tier1 = s.roll.tier1.replaceAll(fromStr, toStr);
 							s.roll.tier1 = s.roll.tier1.replaceAll(`+ ${fromChar}`, `+ ${toChar}`);
 							s.roll.tier2 = s.roll.tier2.replaceAll(fromStr, toStr);
@@ -437,7 +437,7 @@ export class FeatureLogic {
 				});
 				break;
 			case FeatureType.Choice:
-				[ ...feature.data.options.map(f => f.feature), ...feature.data.selected ]
+				[...feature.data.options.map(f => f.feature), ...feature.data.selected]
 					.forEach(f => FeatureLogic.switchFeatureCharacteristic(f, fromCharacteristic, toCharacteristic));
 				break;
 			case FeatureType.Multiple:
@@ -500,7 +500,7 @@ export class FeatureLogic {
 						name: '',
 						description: '',
 						type: FactoryLogic.type.createMain(),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: '',
 						sections: []
 					})
@@ -630,7 +630,7 @@ export class FeatureLogic {
 			case FeatureType.Domain: {
 				const data: FeatureDomainData = {
 					characteristic: Characteristic.Intuition,
-					levels: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+					levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 					count: 1,
 					selected: []
 				};
@@ -764,7 +764,7 @@ export class FeatureLogic {
 				const data: FeatureMaliceData = {
 					cost: 3,
 					repeatable: false,
-					sections: [ '' ],
+					sections: [''],
 					echelon: 1,
 					icon: undefined
 				};
@@ -777,7 +777,7 @@ export class FeatureLogic {
 						name: '',
 						description: '',
 						type: FactoryLogic.type.createMain(),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: '',
 						sections: []
 					}),
@@ -933,7 +933,7 @@ export class FeatureLogic {
 			case FeatureType.AncestryFeatureChoice:
 				return !!feature.data.selected;
 			case FeatureType.Choice: {
-				let availableOptions = [ ...feature.data.options ];
+				let availableOptions = [...feature.data.options];
 				if (availableOptions.some(opt => opt.feature.type === FeatureType.AncestryFeatureChoice)) {
 					availableOptions = availableOptions.filter(opt => opt.feature.type !== FeatureType.AncestryFeatureChoice);
 					const additionalOptions = HeroLogic.getFormerAncestries(hero)
@@ -1020,91 +1020,91 @@ export class FeatureLogic {
 	static getFeatureTypeDescription = (type: FeatureType) => {
 		switch (type) {
 			case FeatureType.Ability:
-				return 'This feature grants you an ability.';
+				return 'Ця особливість надає здібність.';
 			case FeatureType.AbilityCost:
-				return 'This feature modifies the cost to use an ability.';
+				return 'Ця особливість змінює вартість використання здібності.';
 			case FeatureType.AbilityDamage:
-				return 'This feature modifies the damage of an ability.';
+				return 'Ця особливість змінює шкоду здібності.';
 			case FeatureType.AbilityDistance:
-				return 'This feature modifies the distance of an ability.';
+				return 'Ця особливість змінює дальність здібності.';
 			case FeatureType.AddOn:
-				return 'This feature grants you a monster customization.';
+				return 'Ця особливість надає налаштування монстра.';
 			case FeatureType.AncestryChoice:
-				return 'This feature sets the hero\'s former ancestry.';
+				return 'Ця особливість встановлює попередню належність героя.';
 			case FeatureType.AncestryFeatureChoice:
-				return 'This feature allows you to select a feature from an ancestry.';
+				return 'Ця особливість дозволяє вибрати особливість із походження.';
 			case FeatureType.Bonus:
-				return 'This feature modifies a statistic.';
+				return 'Ця особливість змінює показник.';
 			case FeatureType.CharacteristicBonus:
-				return 'This feature modifies a characteristic.';
+				return 'Ця особливість змінює характеристику.';
 			case FeatureType.Choice:
-				return 'This feature allows you to choose from a collection of features.';
+				return 'Ця особливість дозволяє вибрати з набору особливостей.';
 			case FeatureType.ClassAbility:
-				return 'This feature allows you to choose an ability from your class.';
+				return 'Ця особливість дозволяє вибрати здібність свого класу.';
 			case FeatureType.Companion:
-				return 'This feature grants you a companion or mount.';
+				return 'Ця особливість надає компаньйона або верхову тварину.';
 			case FeatureType.ConditionImmunity:
-				return 'This feature grants you immunity to one or more condition types.';
+				return 'Ця особливість надає імунітет до одного або кількох типів станів.';
 			case FeatureType.DamageModifier:
-				return 'This feature grants you an immunity or a weakness.';
+				return 'Ця особливість надає імунітет або вразливість.';
 			case FeatureType.Domain:
-				return 'This feature allows you to choose a domain.';
+				return 'Ця особливість дозволяє обрати домен.';
 			case FeatureType.DomainFeature:
-				return 'This feature allows you to choose a feature from your domain.';
+				return 'Ця особливість дозволяє вибрати особливість із домену.';
 			case FeatureType.Fixture:
-				return 'This feature allows you to summon a fixture.';
+				return 'Ця особливість дозволяє викликати фіксований обʼєкт.';
 			case FeatureType.Follower:
-				return 'This feature grants you a follower.';
+				return 'Ця особливість надає прибічника.';
 			case FeatureType.HeroicResource:
-				return 'This feature grants you a heroic (or epic) resource.';
+				return 'Ця особливість надає героїчний (або епічний) ресурс.';
 			case FeatureType.HeroicResourceGain:
-				return 'This feature grants you a way to gain your heroic resource.';
+				return 'Ця особливість надає спосіб отримувати героїчний ресурс.';
 			case FeatureType.ItemChoice:
-				return 'This feature allows you to choose an item.';
+				return 'Ця особливість дозволяє обрати предмет.';
 			case FeatureType.Kit:
-				return 'This feature allows you to choose a kit.';
+				return 'Ця особливість дозволяє обрати набір.';
 			case FeatureType.Language:
-				return 'This feature grants you a language.';
+				return 'Ця особливість надає мову.';
 			case FeatureType.LanguageChoice:
-				return 'This feature allows you to choose a language.';
+				return 'Ця особливість дозволяє обрати мову.';
 			case FeatureType.Malice:
-				return 'This feature grants you a malice effect.';
+				return 'Ця особливість надає ефект злоби.';
 			case FeatureType.MaliceAbility:
-				return 'This feature grants you a malice ability.';
+				return 'Ця особливість надає злосну здібність.';
 			case FeatureType.MovementMode:
-				return 'This feature grants you an additional movement mode.';
+				return 'Ця особливість додає додатковий режим руху.';
 			case FeatureType.Multiple:
-				return 'This feature grants you a collection of features.';
+				return 'Ця особливість надає набір особливостей.';
 			case FeatureType.Package:
-				return 'This feature collates content from other features.';
+				return 'Ця особливість обʼєднує вміст інших особливостей.';
 			case FeatureType.PackageContent:
-				return 'This feature provides content for a Package feature.';
+				return 'Ця особливість забезпечує вміст для пакету.';
 			case FeatureType.Perk:
-				return 'This feature allows you to choose a perk.';
+				return 'Ця особливість дозволяє обрати перевагу.';
 			case FeatureType.Proficiency:
-				return 'This feature grants you proficiency with weapons or armor.';
+				return 'Ця особливість надає майстерність у використанні зброї або броні.';
 			case FeatureType.Retainer:
-				return 'This feature grants you a retainer.';
+				return 'Ця особливість надає ретейнера.';
 			case FeatureType.SaveThreshold:
-				return 'This feature modifies your threshold for saves.';
+				return 'Ця особливість змінює поріг для рятувальних кидків.';
 			case FeatureType.Size:
-				return 'This feature sets your size.';
+				return 'Ця особливість встановлює ваш розмір.';
 			case FeatureType.SkillChoice:
-				return 'This feature allows you to choose a skill.';
+				return 'Ця особливість дозволяє обрати навичку.';
 			case FeatureType.Speed:
-				return 'This feature sets your base speed.';
+				return 'Ця особливість встановлює вашу базову швидкість.';
 			case FeatureType.Summon:
-				return 'This feature specifies monsters you can summon.';
+				return 'Ця особливість визначає монстрів, яких можна викликати.';
 			case FeatureType.SummonChoice:
-				return 'This feature allows you to choose monsters you can summon.';
+				return 'Ця особливість дозволяє вибрати монстрів для виклику.';
 			case FeatureType.TaggedFeature:
-				return 'This feature describes a tagged feature.';
+				return 'Ця особливість описує позначену особливість.';
 			case FeatureType.TaggedFeatureChoice:
-				return 'This feature allows you to select a tagged feature.';
+				return 'Ця особливість дозволяє вибрати позначену особливість.';
 			case FeatureType.Text:
-				return 'This feature has no special properties, just a text description.';
+				return 'Ця особливість не має особливих властивостей, лише текстовий опис.';
 			case FeatureType.TitleChoice:
-				return 'This feature allows you to choose a title.';
+				return 'Ця особливість дозволяє обрати титул.';
 		}
 	};
 }
