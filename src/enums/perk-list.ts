@@ -1,9 +1,9 @@
 export enum PerkList {
-	Crafting = 'Crafting',
-	Exploration = 'Exploration',
-	Interpersonal = 'Interpersonal',
-	Intrigue = 'Intrigue',
-	Lore = 'Lore',
-	Supernatural = 'Supernatural',
-	Special = 'Special'
+	Crafting = 'Ремесло',
+	Exploration = 'Дослідження',
+	Interpersonal = 'Міжособистісні',
+	Intrigue = 'Інтриги',
+	Lore = 'Знання',
+	Supernatural = 'Надприродне',
+	Special = 'Особливе'
 }

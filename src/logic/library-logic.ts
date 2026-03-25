@@ -429,7 +429,7 @@ export class LibraryLogic {
 		if (category === 'project') {
 			const project = element as Project;
 			if (project.name.startsWith('Craft')) {
-				return 'Crafting';
+				return 'Ремесло';
 			}
 			if (project.name.startsWith('Imbue')) {
 				return 'Imbuing';

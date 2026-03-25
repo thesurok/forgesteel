@@ -75,7 +75,7 @@ interface EditProps {
 }
 
 export const EditChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureChoiceData>(Utils.copy(props.data));
 
 	const addChoice = (data: FeatureChoiceData) => {
 		const copy = Utils.copy(data);
@@ -180,11 +180,11 @@ interface ConfigProps {
 }
 
 export const ConfigChoice = (props: ConfigProps) => {
-	const [ comprehensive, setComprehensive ] = useState<boolean>(false);
-	const [ choiceSelectorOpen, setChoiceSelectorOpen ] = useState<boolean>(false);
-	const [ selectedFeature, setSelectedFeature ] = useState<Feature | null>(null);
+	const [comprehensive, setComprehensive] = useState<boolean>(false);
+	const [choiceSelectorOpen, setChoiceSelectorOpen] = useState<boolean>(false);
+	const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
 
-	let allOptions = [ ...props.data.options ];
+	let allOptions = [...props.data.options];
 	if ((props.data.count === 'ancestry') && comprehensive) {
 		allOptions = props.sourcebooks
 			.flatMap(sb => sb.ancestries)
@@ -230,9 +230,9 @@ export const ConfigChoice = (props: ConfigProps) => {
 			<div className='ds-text'>
 				{
 					showCosts ?
-						(pointsLeft > 0) ? `You have ${pointsLeft} point(s) to spend.` : null
+						(pointsLeft > 0) ? `Ви маєте ${pointsLeft} очок для витрати.` : null
 						:
-						`Choose ${props.data.count} option(s).`
+						`Виберіть ${props.data.count} опцію(ї).`
 				}
 			</div>
 			{
@@ -272,7 +272,7 @@ export const ConfigChoice = (props: ConfigProps) => {
 						<Empty text='There are no options to choose for this feature.' />
 						:
 						<Button className='status-warning' block={true} onClick={() => setChoiceSelectorOpen(true)}>
-							{comprehensive ? 'Choose an option (extended)' : 'Choose an option'}
+							{comprehensive ? 'Оберіть опцію (розширено)' : 'Виберіть опцію'}
 						</Button>
 					: null
 			}
@@ -280,7 +280,7 @@ export const ConfigChoice = (props: ConfigProps) => {
 				(pointsLeft > 0) && (props.data.count === 'ancestry') ?
 					<>
 						<Divider />
-						<Toggle label='Choose a feature from a different ancestry' value={comprehensive} onChange={setComprehensive} />
+						<Toggle label='Оберіть опцію з іншої раси' value={comprehensive} onChange={setComprehensive} />
 					</>
 					: null
 			}
@@ -289,7 +289,7 @@ export const ConfigChoice = (props: ConfigProps) => {
 					<Alert
 						type='warning'
 						showIcon={true}
-						title='This is typically against the rules.'
+						title='Це зазвичай суперечить правилам.'
 					/>
 					: null
 			}

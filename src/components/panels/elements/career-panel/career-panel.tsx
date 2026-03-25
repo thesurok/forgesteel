@@ -26,7 +26,7 @@ interface Props {
 }
 
 export const CareerPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
@@ -85,7 +85,7 @@ export const CareerPanel = (props: Props) => {
 					options={[
 						{ value: 'overview', label: 'Overview' },
 						{ value: 'features', label: 'Features' },
-						{ value: 'incidents', label: 'Inciting Incidents' }
+						{ value: 'incidents', label: 'Поворотна подія' }
 					]}
 					value={page}
 					onChange={setPage}

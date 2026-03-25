@@ -12,10 +12,10 @@ export const CareerCard = (props: Props) => {
 	const career = props.career;
 	return (
 		<div className='career card'>
-			<h2>Career</h2>
+			<h2>Кар'єра</h2>
 			<div className='name'>{career?.name}</div>
 			<section className='bordered benefit'>
-				<h3>Benefit</h3>
+				<h3>Перевага</h3>
 				{career?.benefits?.map(f =>
 					<FeatureComponent
 						feature={f}
@@ -26,7 +26,7 @@ export const CareerCard = (props: Props) => {
 			</section>
 
 			<section className='bordered inciting-incident'>
-				<h3>Inciting Incident</h3>
+				<h3>Поворотна подія</h3>
 				<h4>{career?.incitingIncident?.name}</h4>
 				<p>{career?.incitingIncident?.description}</p>
 			</section>

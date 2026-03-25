@@ -11,7 +11,7 @@ interface Props {
 export const ImmunitiesWeaknessesCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[ props.character ]
+		[props.character]
 	);
 
 	const getImmunities = () => {
@@ -27,7 +27,7 @@ export const ImmunitiesWeaknessesCard = (props: Props) => {
 			);
 		} else {
 			return (
-				<em>None</em>
+				<em>Немає</em>
 			);
 		}
 	};
@@ -45,7 +45,7 @@ export const ImmunitiesWeaknessesCard = (props: Props) => {
 			);
 		} else {
 			return (
-				<em>None</em>
+				<em>Немає</em>
 			);
 		}
 	};
@@ -53,11 +53,11 @@ export const ImmunitiesWeaknessesCard = (props: Props) => {
 	return (
 		<div className='immunities-weaknesses card'>
 			<div className='immunities'>
-				<h4>Immunities</h4>
+				<h4>Імунітети</h4>
 				{getImmunities()}
 			</div>
 			<div className='weaknesses'>
-				<h4>Weaknesses</h4>
+				<h4>Слабкості</h4>
 				{getWeaknesses()}
 			</div>
 		</div>

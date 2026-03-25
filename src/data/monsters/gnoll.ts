@@ -56,7 +56,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 				cost: 3,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 })],
-				target: 'Special',
+				target: 'Особливе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('A gnoll acting this turn drops an iron-jawed snare into the affected area. The first time an enemy steps into the area, they make an **Agility test**. If they were unaware of the snare, they make the roll with a bane.'),
 					FactoryLogic.createAbilitySectionRoll(
@@ -357,7 +357,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Call Abyssal Hyenas',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Two **abyssal hyenas** claw up from the ground in unoccupied squares within distance.')
@@ -694,7 +694,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						name: 'Call Up from The Abyss',
 						type: FactoryLogic.type.createVillainAction(1),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The carnage summons four **abyssal hyenas** and 5 **abyssal hyenas** into unoccupied spaces within distance.')
 						]

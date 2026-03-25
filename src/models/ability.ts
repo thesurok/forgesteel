@@ -4,7 +4,7 @@ import { Element } from '@/models/element';
 import { PowerRoll } from '@/models/power-roll';
 
 export interface AbilityType {
-	usage: AbilityUsage;
+	usage: AbilityUsage | string;
 	free: boolean;
 	trigger: string;
 	time: string;

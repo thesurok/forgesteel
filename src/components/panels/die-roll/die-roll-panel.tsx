@@ -15,7 +15,7 @@ import { RollState } from '@/enums/roll-state';
 import './die-roll-panel.scss';
 
 interface Props {
-	type: 'Power Roll' | 'Saving Throw';
+	type: 'Кидок Сили' | 'Saving Throw';
 	modifiers: number[];
 	rollState: RollState;
 	hero?: Hero;
@@ -24,14 +24,14 @@ interface Props {
 }
 
 export const DieRollPanel = (props: Props) => {
-	const [ showOdds, setShowOdds ] = useState<boolean>(false);
-	const [ results, setResults ] = useState<number[]>([]);
+	const [showOdds, setShowOdds] = useState<boolean>(false);
+	const [results, setResults] = useState<number[]>([]);
 
 	const roll = () => {
 		const rolls: number[] = [];
 
 		switch (props.type) {
-			case 'Power Roll':
+			case 'Кидок Сили':
 				rolls.push(Random.die(10), Random.die(10));
 				break;
 			case 'Saving Throw':
@@ -47,7 +47,7 @@ export const DieRollPanel = (props: Props) => {
 		if (props.onRoll) {
 			let tier = 1;
 
-			const total = Collections.sum([ ...rolls, ...props.modifiers, RollLogic.getBonus(rollState) ], r => r);
+			const total = Collections.sum([...rolls, ...props.modifiers, RollLogic.getBonus(rollState)], r => r);
 			if (total <= 11) {
 				tier = 1;
 			} else if (total <= 16) {
@@ -69,7 +69,7 @@ export const DieRollPanel = (props: Props) => {
 		}
 	};
 
-	const getTierMessage = (rollState: RollState, type: string = 'Power Roll') => {
+	const getTierMessage = (rollState: RollState, type: string = 'Кидок Сили') => {
 		if (type == 'Saving Throw') {
 			return null;
 		}
@@ -87,12 +87,12 @@ export const DieRollPanel = (props: Props) => {
 	const bonus = RollLogic.getBonus(props.rollState, props.type);
 	const tierMessage = getTierMessage(props.rollState, props.type);
 
-	const total = Collections.sum([ ...results, ...props.modifiers, bonus ], r => r);
+	const total = Collections.sum([...results, ...props.modifiers, bonus], r => r);
 
 	let max: number;
 	const marks: Record<string | number, ReactNode> = {};
 	switch (props.type) {
-		case 'Power Roll':
+		case 'Кидок Сили':
 			max = 20;
 			marks[1] = <div className='ds-text dimmed-text small-text'>1</div>;
 			marks[11.5] = <div className='ds-text dimmed-text small-text'>-</div>;
@@ -111,7 +111,7 @@ export const DieRollPanel = (props: Props) => {
 		<ErrorBoundary>
 			<div className='die-roll-panel'>
 				{
-					props.type === 'Power Roll' ?
+					props.type === 'Кидок Сили' ?
 						<Flex align='center' justify='space-evenly'>
 							<Segmented
 								className='roll-state-selector'
@@ -135,14 +135,14 @@ export const DieRollPanel = (props: Props) => {
 						: null
 				}
 				<Button type='primary' block={true} onClick={roll}>
-					{(props.type === 'Power Roll') ? 'Roll 2d10' : 'Roll 1d10' }
+					{(props.type === 'Кидок Сили') ? 'Roll 2d10' : 'Roll 1d10'}
 				</Button>
 				{
 					results.length > 0 ?
 						<div className='result-row'>
-							{(props.type === 'Power Roll') ? results.map((r, n) => <Statistic key={n} title='d10' value={r} />) : null}
-							{(props.type === 'Power Roll') ? props.modifiers.filter(m => m !== 0).map((m, n) => <Statistic key={n} title='Modifier' value={`${m >= 0 ? '+' : ''}${m}`} />) : null}
-							{(props.type === 'Power Roll') && bonus ? <Statistic title={bonus > 0 ? 'Edge' : 'Bane'} value={`${bonus >= 0 ? '+' : ''}${bonus}`} /> : null}
+							{(props.type === 'Кидок Сили') ? results.map((r, n) => <Statistic key={n} title='d10' value={r} />) : null}
+							{(props.type === 'Кидок Сили') ? props.modifiers.filter(m => m !== 0).map((m, n) => <Statistic key={n} title='Modifier' value={`${m >= 0 ? '+' : ''}${m}`} />) : null}
+							{(props.type === 'Кидок Сили') && bonus ? <Statistic title={bonus > 0 ? 'Edge' : 'Bane'} value={`${bonus >= 0 ? '+' : ''}${bonus}`} /> : null}
 							<Statistic className='total' title='Total' value={total} />
 						</div>
 						: null
@@ -154,7 +154,7 @@ export const DieRollPanel = (props: Props) => {
 							marks={marks}
 							min={Math.min(1, total)}
 							max={Math.max(max, total)}
-							value={[ total ]}
+							value={[total]}
 							styles={{
 								track: {
 									background: 'transparent'
@@ -174,7 +174,7 @@ export const DieRollPanel = (props: Props) => {
 						: null
 				}
 				{
-					(props.type === 'Power Roll') && (Collections.sum(results, r => r) >= 19) ?
+					(props.type === 'Кидок Сили') && (Collections.sum(results, r => r) >= 19) ?
 						<Alert
 							type='success'
 							showIcon={true}

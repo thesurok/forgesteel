@@ -942,7 +942,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви відкриваєте дві ями з отворами розміром 1 клітинка й глибиною 4 клітинки, які можна розмістити на будь-якій звичайній поверхні в межах дистанції. Ви можете розмістити ці ями поруч, щоб утворити менше ям з ширшими отворами. Коли ями відкриваються, зробіть окремий кидок сили для кожної істоти на поверхні над ямою, яка достатньо мала, щоб впасти. (Ви не можете отримати критичний успіх цією здібністю, оскільки вона використовує маневр.)'),
@@ -1003,7 +1003,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Earth, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			minLevel: 2,
 			sections: [
@@ -1089,7 +1089,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 7,
 			minLevel: 3,
 			sections: [
@@ -1156,7 +1156,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Fire, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 7,
 			minLevel: 3,
 			sections: [
@@ -1328,7 +1328,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Earth, AbilityKeyword.Void],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 9,
 			minLevel: 6,
 			sections: [
@@ -1347,7 +1347,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 11,
 			minLevel: 8,
 			sections: [
@@ -1382,7 +1382,7 @@ export const elementalist: HeroClass = {
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Void, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 11,
 			minLevel: 8,
 			sections: [

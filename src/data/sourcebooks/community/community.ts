@@ -991,7 +991,7 @@ If you have a kit, you can’t take this upgrade.`,
 				AbilityKeyword.Magic
 			],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You conjure a size 1T flying machine that appears in an unoccupied space within distance. The machine’s Stamina is half of yours, and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its Stamina drops to 0, or if you are dying. When the conscript appears, you may use a signature ability or free strike as if you were in the machine’s space. Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares equal to twice your Reason score, then use a signature ability or free strike.')
@@ -1030,7 +1030,7 @@ You can target yourself instead of one creature with this ability. Each target g
 				AbilityKeyword.Ranged
 			],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1219,8 +1219,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1316,8 +1316,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1413,8 +1413,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1515,8 +1515,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1542,7 +1542,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('3 + С lightning damage; I < [середній], dazzled (EoT)'),
 																FactoryLogic.createAbilitySectionField({
-																	name: 'Special',
+																	name: 'Особливе',
 																	effect: 'A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.'
 																}),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1616,8 +1616,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1713,8 +1713,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1810,8 +1810,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -1907,8 +1907,8 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 																AbilityKeyword.Weapon,
 																AbilityKeyword.Servitor
 															],
-															distance: [FactoryLogic.distance.createSpecial('Special')],
-															target: 'Special',
+															distance: [FactoryLogic.distance.createSpecial('Особливе')],
+															target: 'Особливе',
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
@@ -2005,7 +2005,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 									AbilityKeyword.Magic,
 									AbilityKeyword.Ranged
 								],
-								distance: [FactoryLogic.distance.createSpecial('Special')],
+								distance: [FactoryLogic.distance.createSpecial('Особливе')],
 								target: 'На себе або одного союзника',
 								sections: [
 									FactoryLogic.createAbilitySectionText('Your servitor can shift its speed toward the target. If the servitor ends this movement adjacent to the target, it can swap places with the target, become the target of the triggering attack, and reduce the damage by half.'),
@@ -2076,7 +2076,7 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 												AbilityKeyword.Magic,
 												AbilityKeyword.Servitor
 											],
-											distance: [FactoryLogic.distance.createSpecial('Special')],
+											distance: [FactoryLogic.distance.createSpecial('Особливе')],
 											target: 'Your servitor',
 											cost: 5,
 											sections: [
@@ -2196,8 +2196,8 @@ You choose one of the following benefits:
 										name: 'Create Elixirs',
 										description: '',
 										type: FactoryLogic.type.createManeuver({ qualifiers: ['Once per turn'] }),
-										distance: [FactoryLogic.distance.createSpecial('Special')],
-										target: 'Special',
+										distance: [FactoryLogic.distance.createSpecial('Особливе')],
+										target: 'Особливе',
 										sections: [
 											FactoryLogic.createAbilitySectionText('You create two elixirs, which are immediately added to the Elixir Pool.')
 										]
@@ -2374,7 +2374,7 @@ You can choose only one free triggered action option at a time, even if multiple
 									AbilityKeyword.Magic
 								],
 								distance: [FactoryLogic.distance.createRanged(10)],
-								target: 'Special',
+								target: 'Особливе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('The damage is halved. If any effect of the damage has a potency effect, you decrease the potency by 1.'),
 									FactoryLogic.createAbilitySectionSpend({
@@ -2559,7 +2559,7 @@ Once you use this feature, you cannot do so again until you gain at least 1 vict
 												AbilityKeyword.Melee
 											],
 											distance: [FactoryLogic.distance.createMelee()],
-											target: 'Special',
+											target: 'Особливе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText('You can place this wall in occupied squares, sliding each creature in an affected square into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage and allies can move freely through the wall. An enemy who is force moved into the wall takes extra damage equal to your Reason score. As long as 1 square remains, you may regenerate up to 5 squares of the wall at the end of your turn.')
@@ -3175,7 +3175,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 											type: FactoryLogic.type.createMain(),
 											keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createSpecial('')],
-											target: 'Special',
+											target: 'Особливе',
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionRoll(
@@ -3988,7 +3988,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('The area becomes cursed with your patron’s energy. The area lasts until the end of the encounter or you are dying. At the start of each round, the area grows by 1 square in every direction. Any enemy in the area or who targets a creature in the area takes a bane on power rolls due to concealment. The area is difficult terrain for enemies.')
@@ -4170,7 +4170,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('You open a 3-cube portal to your patron’s realm that lasts until the end of the encounter. As you conjure the portal and at the start of each round, make a power roll that affects all enemies within 5 of the portal. Then, any enemy in the portal’s space takes damage of your patron’s type equal to your Presence score.'),
@@ -4276,7 +4276,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10, within: 10 })],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
@@ -4505,7 +4505,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 								type: FactoryLogic.type.createManeuver(),
 								keywords: [AbilityKeyword.Magic],
 								distance: [FactoryLogic.distance.createMelee()],
-								target: 'Special',
+								target: 'Особливе',
 								sections: [
 									FactoryLogic.createAbilitySectionText('You can sense the last things seen by a corpse or head of a dead creature that you can touch.')
 								]
@@ -4824,8 +4824,8 @@ When you make a test that uses the Brag, Intimidate, or Lie skill, you can use R
 
 export const communityPrerelease: Sourcebook = {
 	id: 'community-prerelease',
-	name: 'Community (pre-release)',
-	description: 'Selected community creations (pre-release).',
+	name: 'Комʼюніті (пререліз)',
+	description: 'Вибіркові роботи користувачів (пререліз).',
 	type: SourcebookType.Community,
 	adventures: [],
 	ancestries: [],
@@ -4853,8 +4853,8 @@ export const communityPrerelease: Sourcebook = {
 
 export const community: Sourcebook = {
 	id: 'community',
-	name: 'Community',
-	description: 'Selected community creations.',
+	name: 'Комьюніті',
+	description: 'Вибіркові роботи користувачів.',
 	type: SourcebookType.Community,
 	adventures: [],
 	ancestries: [

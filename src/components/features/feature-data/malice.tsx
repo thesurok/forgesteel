@@ -49,7 +49,7 @@ interface EditProps {
 }
 
 export const EditMalice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureMaliceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureMaliceData>(Utils.copy(props.data));
 
 	const setEchelon = (value: number) => {
 		const copy = Utils.copy(data);
@@ -82,7 +82,7 @@ export const EditMalice = (props: EditProps) => {
 	const addMaliceSectionPowerRoll = (data: FeatureMaliceData) => {
 		const copy = Utils.copy(data);
 		copy.sections.push(FactoryLogic.createPowerRoll({
-			characteristic: [ Characteristic.Might ],
+			characteristic: [Characteristic.Might],
 			tier1: '',
 			tier2: '',
 			tier3: ''
@@ -173,13 +173,13 @@ export const EditMalice = (props: EditProps) => {
 										</div>
 										:
 										<Space orientation='vertical' style={{ width: '100%' }}>
-											<HeaderText>Power Roll</HeaderText>
+											<HeaderText>Кидок Сили</HeaderText>
 											<Select
 												style={{ width: '100%' }}
 												status={section.characteristic.length === 0 ? 'warning' : ''}
 												placeholder='Characteristics'
 												mode='multiple'
-												options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+												options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 												optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 												value={section.characteristic}
 												onChange={value => setMaliceSectionPowerRollCharacteristics(data, n, value)}
@@ -218,7 +218,7 @@ export const EditMalice = (props: EditProps) => {
 				}
 				<Flex gap='8px'>
 					<Button block={true} onClick={() => addMaliceSectionText(data)}>Add Text</Button>
-					<Button block={true} onClick={() => addMaliceSectionPowerRoll(data)}>Add a Power Roll</Button>
+					<Button block={true} onClick={() => addMaliceSectionPowerRoll(data)}>Add a Кидок Сили</Button>
 				</Flex>
 			</Space>
 		</Space>

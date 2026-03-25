@@ -20,16 +20,16 @@ interface Props {
 }
 
 export const RollModal = (props: Props) => {
-	const [ modifier, setModifier ] = useState<number>(0);
-	const [ type, setType ] = useState<'Power Roll' | 'Saving Throw'>('Power Roll');
-	const [ rollState, setRollState ] = useState<RollState>(RollState.Standard);
+	const [modifier, setModifier] = useState<number>(0);
+	const [type, setType] = useState<'Кидок Сили' | 'Saving Throw'>('Кидок Сили');
+	const [rollState, setRollState] = useState<RollState>(RollState.Standard);
 
 	const warnings: { label: string, text: string }[] = [];
 	let characteristicBonus = 0;
 	let saveBonus = 0;
 
 	if (props.characteristics && props.hero) {
-		if (props.characteristics.some(ch => [ Characteristic.Might, Characteristic.Agility ].includes(ch))) {
+		if (props.characteristics.some(ch => [Characteristic.Might, Characteristic.Agility].includes(ch))) {
 			if (props.hero.state.conditions.some(c => c.type === ConditionType.Bleeding) || (HeroLogic.getCombatState(props.hero) === 'dying')) {
 				warnings.push({
 					label: ConditionType.Bleeding,
@@ -53,7 +53,7 @@ export const RollModal = (props: Props) => {
 
 	const getContent = () => {
 		switch (type) {
-			case 'Power Roll':
+			case 'Кидок Сили':
 				return (
 					<>
 						{
@@ -74,7 +74,7 @@ export const RollModal = (props: Props) => {
 							}
 							<NumberSpin style={{ width: '150px' }} label='Modifier' value={modifier} onChange={setModifier} />
 						</Flex>
-						<DieRollPanel type='Power Roll' modifiers={[ characteristicBonus, modifier ]} rollState={rollState} hero={props.hero} onRollStateChange={setRollState} />
+						<DieRollPanel type='Кидок Сили' modifiers={[characteristicBonus, modifier]} rollState={rollState} hero={props.hero} onRollStateChange={setRollState} />
 						<Expander title='Rules'>
 							<HeaderText>Test Results</HeaderText>
 							<table>
@@ -119,7 +119,7 @@ export const RollModal = (props: Props) => {
 			case 'Saving Throw':
 				return (
 					<>
-						<DieRollPanel type='Saving Throw' modifiers={[ saveBonus ]} rollState={rollState} hero={props.hero} onRollStateChange={setRollState} />
+						<DieRollPanel type='Saving Throw' modifiers={[saveBonus]} rollState={rollState} hero={props.hero} onRollStateChange={setRollState} />
 					</>
 				);
 		}
@@ -131,7 +131,7 @@ export const RollModal = (props: Props) => {
 				<div style={{ width: '100%', textAlign: 'center' }}>
 					<Segmented
 						name='tabs'
-						options={[ 'Power Roll', 'Saving Throw' ]}
+						options={['Кидок Сили', 'Saving Throw']}
 						value={type}
 						onChange={setType}
 					/>

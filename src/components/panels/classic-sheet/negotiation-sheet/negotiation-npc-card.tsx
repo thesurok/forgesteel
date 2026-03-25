@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const NegotiationNpcCard = (props: Props) => {
-	const negotiation = useMemo(() => props.negotiation, [ props.negotiation ]);
+	const negotiation = useMemo(() => props.negotiation, [props.negotiation]);
 	return (
 		<div className='negotiation-npc card'>
 			<h2>Negotiating NPC</h2>
@@ -60,7 +60,7 @@ export const NegotiationNpcCard = (props: Props) => {
 			<div className='uncover-roll'>
 				<h3>Uncover Motivation</h3>
 				<div className='power-roll'>
-					<div className='power'>Power Roll + Reason, Intuition, or Presence:</div>
+					<div className='power'>Кидок Сили + Reason, Intuition, or Presence:</div>
 					<div className='roll-tiers'>
 						<div className='tier t1'>
 							<img alt='≤ 11' className='range' src={rollT1Icon} />

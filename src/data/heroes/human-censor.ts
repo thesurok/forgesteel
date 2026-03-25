@@ -312,8 +312,8 @@ export const humanCensor = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -329,8 +329,8 @@ export const humanCensor = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -349,7 +349,7 @@ export const humanCensor = {
 					'Handle Animals'
 				],
 				listOptions: [
-					'Exploration'
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -444,8 +444,8 @@ export const humanCensor = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal',
-								'Lore'
+								'Міжособистісні',
+								'Знання'
 							],
 							count: 2,
 							selected: [
@@ -492,7 +492,7 @@ export const humanCensor = {
 																data: {
 																	options: [],
 																	listOptions: [
-																		'Exploration'
+																		'Дослідження'
 																	],
 																	count: 1,
 																	selected: []
@@ -700,7 +700,7 @@ export const humanCensor = {
 																	qualifier: ''
 																}
 															],
-															target: 'Special',
+															target: 'Особливе',
 															cost: 11,
 															repeatable: false,
 															minLevel: 1,
@@ -1006,7 +1006,7 @@ export const humanCensor = {
 												data: {
 													options: [],
 													listOptions: [
-														'Exploration'
+														'Дослідження'
 													],
 													count: 1,
 													selected: [
@@ -1092,9 +1092,9 @@ export const humanCensor = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1162,12 +1162,12 @@ export const humanCensor = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1181,11 +1181,11 @@ export const humanCensor = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1258,9 +1258,9 @@ export const humanCensor = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1354,11 +1354,11 @@ export const humanCensor = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1376,12 +1376,12 @@ export const humanCensor = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1449,9 +1449,9 @@ export const humanCensor = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1465,11 +1465,11 @@ export const humanCensor = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2869,7 +2869,7 @@ export const humanCensor = {
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -3396,7 +3396,7 @@ export const humanCensor = {
 								data: {
 									options: [],
 									listOptions: [
-										'Lore'
+										'Знання'
 									],
 									count: 1,
 									selected: [
@@ -3885,7 +3885,7 @@ export const humanCensor = {
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -4427,7 +4427,7 @@ export const humanCensor = {
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -4443,7 +4443,7 @@ export const humanCensor = {
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 2,
 					selected: [
@@ -4473,7 +4473,7 @@ export const humanCensor = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Exploration'
+						'Дослідження'
 					],
 					count: 1,
 					selected: [
@@ -4483,7 +4483,7 @@ export const humanCensor = {
 							description: 'At the start of a group test or montage test, you can spend a hero token. If you do, all participants make tests as if they also had any skill you have from the exploration group.',
 							type: 'Text',
 							data: null,
-							list: 'Exploration'
+							list: 'Дослідження'
 						}
 					]
 				}

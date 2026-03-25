@@ -30,8 +30,8 @@ import { TrinketData } from '@/data/items/trinket-data';
 
 export const core: Sourcebook = {
 	id: 'core',
-	name: 'Core',
-	description: 'Core game elements.',
+	name: 'Основна книга',
+	description: 'Ключові елементи гри.',
 	type: SourcebookType.Official,
 	adventures: [],
 	ancestries: [

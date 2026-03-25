@@ -1,6 +1,6 @@
 export enum SourcebookType {
-	Official = 'Official',
-	ThirdParty = 'Third Party',
-	Community = 'Community',
-	Homebrew = 'Homebrew'
+	Official = 'Офіційні',
+	ThirdParty = 'Сторонні',
+	Community = 'Комʼюніті',
+	Homebrew = 'Хоумбрю',
 };

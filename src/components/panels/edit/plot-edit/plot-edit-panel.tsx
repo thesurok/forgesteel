@@ -44,11 +44,11 @@ interface Props {
 }
 
 export const PlotEditPanel = (props: Props) => {
-	const [ plot, setPlot ] = useState<Plot>(props.plot);
-	const [ menuOpen, setMenuOpen ] = useState<boolean>(false);
-	const [ addingReference, setAddingReference ] = useState<boolean>(false);
-	const [ referenceType, setReferenceType ] = useState<SourcebookElementKind>('encounter');
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
+	const [plot, setPlot] = useState<Plot>(props.plot);
+	const [menuOpen, setMenuOpen] = useState<boolean>(false);
+	const [addingReference, setAddingReference] = useState<boolean>(false);
+	const [referenceType, setReferenceType] = useState<SourcebookElementKind>('encounter');
+	const [searchTerm, setSearchTerm] = useState<string>('');
 
 	const parentPlot = AdventureLogic.getPlotPointParent(props.adventure.plot, plot.id) as Plot;
 	const upstreamIDs = AdventureLogic.getUpstreamPlotPoints(parentPlot, plot.id).map(p => p.id);
@@ -264,7 +264,7 @@ export const PlotEditPanel = (props: Props) => {
 								<Space orientation='vertical' style={{ width: '120px' }}>
 									<Button block={true} type='text' onClick={() => { setMenuOpen(false); addContentText(); }}>Text</Button>
 									<Button block={true} type='text' onClick={() => { setMenuOpen(false); addContentImage(); }}>Picture</Button>
-									<Button block={true} type='text' onClick={() => { setMenuOpen(false); addContentRoll(); }}>Power Roll</Button>
+									<Button block={true} type='text' onClick={() => { setMenuOpen(false); addContentRoll(); }}>Кидок Сили</Button>
 									<Button block={true} type='text' onClick={() => { setMenuOpen(false); setAddingReference(true); }}>Library Element</Button>
 								</Space>
 							}
@@ -372,7 +372,7 @@ export const PlotEditPanel = (props: Props) => {
 								break;
 							}
 							case 'roll': {
-								name = 'Power Roll';
+								name = 'Кидок Сили';
 								content = (
 									<Space orientation='vertical' style={{ width: '100%' }}>
 										<HeaderText>Roll</HeaderText>
@@ -381,7 +381,7 @@ export const PlotEditPanel = (props: Props) => {
 											status={c.roll.characteristic.length === 0 ? 'warning' : ''}
 											placeholder='Characteristics'
 											mode='multiple'
-											options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+											options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 											optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 											value={c.roll.characteristic}
 											onChange={value => setRollCharacteristics(c.id, value)}
@@ -480,7 +480,7 @@ export const PlotEditPanel = (props: Props) => {
 							<Expander
 								key={c.id}
 								title={name}
-								tags={tag ? [ tag ] : []}
+								tags={tag ? [tag] : []}
 								extra={[
 									<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveContent(c, 'up'); }} />,
 									<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveContent(c, 'down'); }} />,
@@ -607,7 +607,7 @@ export const PlotEditPanel = (props: Props) => {
 		.flatMap(sb => SourcebookLogic.getElements(sb))
 		.filter(e => e.element.id !== props.adventure.id)
 		.filter(e => e.type === referenceType)
-		.filter(e => Utils.textMatches([ e.element.name, e.element.description ], searchTerm));
+		.filter(e => Utils.textMatches([e.element.name, e.element.description], searchTerm));
 
 	return (
 		<ErrorBoundary>
@@ -683,7 +683,7 @@ export const PlotEditPanel = (props: Props) => {
 									Collections.sort(elements, e => e.element.name)
 										.map(e => (
 											<SelectablePanel key={e.element.id} onSelect={() => addContentReference(e.type, e.element.id)}>
-												<HeaderText tags={[ Format.capitalize(e.type.split('-').join(' ')) ]}>{e.element.name}</HeaderText>
+												<HeaderText tags={[Format.capitalize(e.type.split('-').join(' '))]}>{e.element.name}</HeaderText>
 												<Markdown text={e.element.description} />
 											</SelectablePanel>
 										))

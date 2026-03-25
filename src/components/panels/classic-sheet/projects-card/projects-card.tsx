@@ -26,13 +26,13 @@ export const ProjectsCard = (props: Props) => {
 
 	return (
 		<div className='projects card'>
-			<h2>Projects</h2>
+			<h2>Проєкти</h2>
 			<div className='projects-table'>
 				<div className='header'>
-					<div>Project Name</div>
-					<div>Assigned Hero / Follower</div>
-					<div>Roll Characteristic</div>
-					<div>Goal Points</div>
+					<div>Назва проєкту</div>
+					<div>Призначений герой / послідовник</div>
+					<div>Характеристика кидка</div>
+					<div>Очки мети</div>
 				</div>
 				{projects.map(proj =>
 					<div className='project' key={proj.name || i++}>

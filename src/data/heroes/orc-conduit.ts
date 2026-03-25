@@ -148,8 +148,8 @@ export const orcConduit = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -165,8 +165,8 @@ export const orcConduit = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -185,7 +185,7 @@ export const orcConduit = {
 					'Perform'
 				],
 				listOptions: [
-					'Crafting'
+					'Ремесло'
 				],
 				count: 1,
 				selected: [
@@ -268,8 +268,8 @@ export const orcConduit = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal',
-								'Lore'
+								'Міжособистісні',
+								'Знання'
 							],
 							count: 2,
 							selected: [
@@ -316,7 +316,7 @@ export const orcConduit = {
 																data: {
 																	options: [],
 																	listOptions: [
-																		'Exploration'
+																		'Дослідження'
 																	],
 																	count: 1,
 																	selected: []
@@ -592,7 +592,7 @@ export const orcConduit = {
 																data: {
 																	options: [],
 																	listOptions: [
-																		'Lore'
+																		'Знання'
 																	],
 																	count: 1,
 																	selected: []
@@ -902,7 +902,7 @@ export const orcConduit = {
 												data: {
 													options: [],
 													listOptions: [
-														'Exploration'
+														'Дослідження'
 													],
 													count: 1,
 													selected: [
@@ -1582,9 +1582,9 @@ export const orcConduit = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1735,12 +1735,12 @@ export const orcConduit = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1754,11 +1754,11 @@ export const orcConduit = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1828,9 +1828,9 @@ export const orcConduit = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1922,11 +1922,11 @@ export const orcConduit = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1955,12 +1955,12 @@ export const orcConduit = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -2144,9 +2144,9 @@ export const orcConduit = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -2160,11 +2160,11 @@ export const orcConduit = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2709,7 +2709,7 @@ export const orcConduit = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -3702,7 +3702,7 @@ export const orcConduit = {
 				data: {
 					options: [],
 					listOptions: [
-						'Lore'
+						'Знання'
 					],
 					count: 1,
 					selected: [
@@ -3718,7 +3718,7 @@ export const orcConduit = {
 				data: {
 					options: [],
 					listOptions: [
-						'Lore'
+						'Знання'
 					],
 					count: 2,
 					selected: [
@@ -3748,7 +3748,7 @@ export const orcConduit = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Supernatural'
+						'Надприродне'
 					],
 					count: 1,
 					selected: [
@@ -3758,7 +3758,7 @@ export const orcConduit = {
 							description: 'You can spend 1 uninterrupted minute to perform a magic ritual of blessing, targeting yourself or one willing creature you touch. The target has a double edge on the next test they make within the next minute. A target can’t use this benefit on an activity that takes longer than 1 minute.',
 							type: 'Text',
 							data: null,
-							list: 'Supernatural'
+							list: 'Надприродне'
 						}
 					]
 				}

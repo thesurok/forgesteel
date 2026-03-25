@@ -41,7 +41,7 @@ interface Props {
 }
 
 export const ItemEditPanel = (props: Props) => {
-	const [ item, setItem ] = useState<Item>(props.item);
+	const [item, setItem] = useState<Item>(props.item);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -105,7 +105,7 @@ export const ItemEditPanel = (props: Props) => {
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Type'
-					options={[ ItemType.Artifact, ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th, ItemType.LeveledArmor, ItemType.LeveledImplement, ItemType.LeveledWeapon, ItemType.Leveled, ItemType.Trinket1st, ItemType.Trinket2nd, ItemType.Trinket3rd, ItemType.Trinket4th ].map(option => ({ value: option }))}
+					options={[ItemType.Artifact, ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th, ItemType.LeveledArmor, ItemType.LeveledImplement, ItemType.LeveledWeapon, ItemType.Leveled, ItemType.Trinket1st, ItemType.Trinket2nd, ItemType.Trinket3rd, ItemType.Trinket4th].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={item.type}
 					onChange={setType}
@@ -198,7 +198,7 @@ export const ItemEditPanel = (props: Props) => {
 										<Expander
 											key={f.id}
 											title={f.name || 'Unnamed Feature'}
-											tags={[ FeatureLogic.getFeatureTag(f) ]}
+											tags={[FeatureLogic.getFeatureTag(f)]}
 											extra={[
 												<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveFeature(lvl.level, f, 'up'); }} />,
 												<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveFeature(lvl.level, f, 'down'); }} />,
@@ -279,7 +279,7 @@ export const ItemEditPanel = (props: Props) => {
 							},
 							{
 								key: '3',
-								label: 'Crafting',
+								label: 'Ремесло',
 								children: getCraftingEditSection()
 							},
 							{

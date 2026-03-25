@@ -35,36 +35,36 @@ export const StartSection = (props: Props) => {
 		<div className='hero-edit-content start-section'>
 			<div className='hero-edit-content-column selected'>
 				<SelectablePanel>
-					<HeaderText>Creating a Hero</HeaderText>
+					<HeaderText>Створення героя</HeaderText>
 					<div className='ds-text'>
-						Creating a hero in <b>FORGE STEEL</b> is simple.
+						Створення героя в <b>FORGE STEEL</b> просте.
 					</div>
 					<ul>
 						<li>
-							Use the tabs above to select your hero's <code>Ancestry</code>, <code>Culture</code>, <code>Career</code>, and <code>Class</code>.
-							If there are any choices to be made, you'll be prompted to make your selections.
+							Використовуйте вкладки вище, щоб обрати <code>Рід</code>, <code>Культуру</code>, <code>Кар'єру</code> та <code>Клас</code> вашого героя.
+							Якщо будуть будь-які додаткові опції, вам буде запропоновано зробити свій вибір.
 						</li>
 						<li>
-							Optionally, you can choose a <code>Complication</code> - but you can skip this if you'd prefer.
+							За бажанням, ви можете обрати <code>Ускладнення</code> - але ви можете пропустити це, якщо бажаєте.
 						</li>
 						<li>
-							Finally, go to the <code>Details</code> tab and give your hero a name.
+							Нарешті, перейдіть на вкладку <code>Деталі</code> та дайте вашому герою ім'я.
 						</li>
 					</ul>
 					<div className='ds-text'>
-						When you're done, click <code>Save Changes</code> in the toolbar at the top, and you'll see your hero sheet.
+						Коли ви закінчите, натисніть <code>Зберегти зміни</code> на панелі інструментів вгорі, і ви побачите лист вашого героя.
 					</div>
 				</SelectablePanel>
 			</div>
 			<div className='hero-edit-content-column choices'>
-				<HeaderText>Sourcebooks</HeaderText>
+				<HeaderText>Книги джерел</HeaderText>
 				<div className='ds-text'>
-					This hero can use content from the following sourcebooks:
+					Цей герой може використовувати контент з наступних книг джерел:
 				</div>
 				{
-					[ SourcebookType.Official, SourcebookType.ThirdParty, SourcebookType.Community, SourcebookType.Homebrew ].map(type => (
+					[SourcebookType.Official, SourcebookType.ThirdParty, SourcebookType.Community, SourcebookType.Homebrew].map(type => (
 						<div key={type} className='sourcebook-type-section'>
-							<HeaderText level={3}>{type} Sourcebooks</HeaderText>
+							<HeaderText level={3}>{type} Книги джерел</HeaderText>
 							{
 								props.sourcebooks
 									.filter(sb => sb.type === type)
@@ -83,7 +83,7 @@ export const StartSection = (props: Props) => {
 				<Divider />
 				<Flex align='center' gap={10}>
 					<div className='ds-text'>
-						If you have a homebrew sourcebook you want to use, and it isn't listed here, you can import it now.
+						Якщо у вас є домашня книга джерел, яку ви хочете використати, і вона не вказана тут, ви можете імпортувати її зараз.
 					</div>
 					<Upload
 						style={{ width: '100%' }}

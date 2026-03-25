@@ -183,7 +183,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The arixx kicks up dust to fill the area until the start of their next turn, then moves up to their speed. Any enemy in the area or who targets a creature in the area takes a bane on power rolls.')
 						]

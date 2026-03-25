@@ -60,7 +60,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 3 })],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 3,
 				sections: [
 					FactoryLogic.createAbilitySectionText('A lizardfolk acting this turn sets up a net trap into the area. The first time an enemy steps into a square with a net trap, they make an Agility test. If the creature was unaware of the trap, they take a bane on the test.'),

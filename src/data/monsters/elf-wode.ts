@@ -521,7 +521,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is overgrown with heavy brush and brambles until the end of the encounter, providing cover and concealment for the greenskeeper and their allies. The area is difficult terrain for enemies, and any enemy who starts their turn in the area takes 3 damage.')
 						]

@@ -270,7 +270,7 @@ const CareerSheet = (props: CareerProps) => {
 					<FeaturePanel key={f.id} feature={f} options={props.options} sourcebooks={props.sourcebooks} mode={PanelMode.Full} />
 				))
 			}
-			<HeaderText>Inciting Incidents</HeaderText>
+			<HeaderText>Поворотна подія</HeaderText>
 			{
 				props.career.incitingIncidents.options.map(option => (
 					<Field key={option.id} label={option.name} value={option.description} />
@@ -631,7 +631,7 @@ const MonsterSheet = (props: MonsterProps) => {
 			}
 			{
 				conditions.length > 0 ?
-					<Field label='Cannot Be' value={conditions.join(', ')} />
+					<Field label='Не може бути' value={conditions.join(', ')} />
 					: null
 			}
 			{

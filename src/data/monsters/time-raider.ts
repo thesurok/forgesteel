@@ -62,7 +62,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 				cost: 3,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 3 })],
-				target: 'Special',
+				target: 'Особливе',
 				sections: [
 					FactoryLogic.createAbilitySectionText('A time raider acting this turn activates a gravity well in the affected area. The gravity well sits in the center of the cube and lasts until the end of the encounter or until a creature who can reach the well uses a maneuver to disable it. The affected area is considered difficult terrain for enemies. Whenever an enemy ends their turn in an affected square, they are pulled 4 towards the well.')
 				]
@@ -390,7 +390,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 4, value2: 2, within: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is a psionically charged treadmill that pushes creatures and objects at high speed in one direction of the helix’s choice. Any creature who enters the area or starts their turn there slides 3 squares toward the end of the area in the chosen direction. Each ene- my in the area when it first appears takes 3 damage before they slide.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -675,7 +675,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('A portal fills the area, connecting to a location the vertex has experienced on any plane of existence, in person or otherwise. Any creature who enters the portal for the first time in a round or starts their turn there is instantly teleported to any unoccupied space in the portal at the chosen location. The portal lasts until the vertex uses this ability again, dismisses the portal (no action required), or is transported by the portal.')
@@ -835,7 +835,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tyrannis fires a sensor mine into each unoccupied square in the area, and creates a gravity well whose area contains one or more squares of the tyrannis’s space (see Gravity Well). Whenever an enemy enters a square with a sensor mine in it, the mine explodes, dealing 3 damage to the enemy.')
 						]

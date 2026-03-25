@@ -15,7 +15,7 @@ interface InventoryProps {
 export const TrinketsCard = (props: InventoryProps) => {
 	const character = props.character;
 	const wide = props.wide || false;
-	const cardClasses = [ 'inventory', 'trinkets', 'card' ];
+	const cardClasses = ['inventory', 'trinkets', 'card'];
 
 	const getTrinkets = () => {
 		return character.inventory?.filter(i => ItemLogic.isTrinket(i.item)) || [];
@@ -23,7 +23,7 @@ export const TrinketsCard = (props: InventoryProps) => {
 
 	return (
 		<div className={cardClasses.join(' ')}>
-			<h2>Trinkets</h2>
+			<h2>Дрібнички</h2>
 			<div className={`features-container ${wide ? 'three-column' : 'two-column'}`}>
 				{getTrinkets().map(item => (
 					<ItemComponent key={item.id} item={item} character={character} />
@@ -36,15 +36,15 @@ export const TrinketsCard = (props: InventoryProps) => {
 export const ConsumablesCard = (props: InventoryProps) => {
 	const character = props.character;
 	const wide = props.wide || false;
-	const cardClasses = [ 'inventory', 'consumables', 'card' ];
+	const cardClasses = ['inventory', 'consumables', 'card'];
 
-	const consumables = character.inventory?.filter(i => [ ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th ].includes(i.item.type)) ?? [];
+	const consumables = character.inventory?.filter(i => [ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th].includes(i.item.type)) ?? [];
 	const maxConsumables = wide ? 4 : 2; // approximation
 	const displayShort = consumables.length > maxConsumables;
 
 	return (
 		<div className={cardClasses.join(' ')}>
-			<h2>Consumables</h2>
+			<h2>Розхідники</h2>
 			<div className={`features-container ${wide ? 'two-column' : ''}`}>
 				{consumables.map(item => (
 					<ItemComponent key={item.id} item={item} character={character} truncate={displayShort} />
@@ -57,7 +57,7 @@ export const ConsumablesCard = (props: InventoryProps) => {
 export const LeveledTreasureCard = (props: InventoryProps) => {
 	const character = props.character;
 	const columns = props.wide || false;
-	const cardClasses = [ 'inventory', 'leveled-treasure', 'card' ];
+	const cardClasses = ['inventory', 'leveled-treasure', 'card'];
 	if (columns) {
 		cardClasses.push('wide');
 	}
@@ -71,12 +71,12 @@ export const LeveledTreasureCard = (props: InventoryProps) => {
 	return (
 		<div className={cardClasses.join(' ')}>
 			<h2>
-				<div className='title'>Leveled Treasures</div>
+				<div className='title'>Рівневі скарби</div>
 				<div className='count'>
-					<label className={leveledTreasures.length > 3 ? 'extra' : undefined}>Carry Three Safely</label>
+					<label className={leveledTreasures.length > 3 ? 'extra' : undefined}>Носити три безпечно</label>
 					<div className='leveled-treasure-boxes'>
 						<ol>
-							{[ ...Array(Math.max(3, leveledTreasures.length)) ].map((_o, i) => {
+							{[...Array(Math.max(3, leveledTreasures.length))].map((_o, i) => {
 								return <li className={i >= 3 ? 'extra' : undefined} key={`leveled-treasure-marker-${i}`}>{leveledTreasures.length >= i + 1 ? '◼' : <>&nbsp;</>}</li>;
 							})}
 						</ol>
@@ -103,7 +103,7 @@ export const RemainingInventoryCard = (props: RemainingInventoryProps) => {
 
 	return (
 		<div className='inventory card'>
-			<h2>Remaining Inventory</h2>
+			<h2>Залишковий інвентар</h2>
 			<div className='features-container'>
 				{items.map(item => (
 					<ItemComponent key={item.id} item={item} character={props.character} />
@@ -131,13 +131,13 @@ export const ItemComponent = (props: ItemProps) => {
 			name += ` (x${item.count})`;
 		}
 
-		if ([ ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th ].includes(item.type)) {
+		if ([ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th].includes(item.type)) {
 			return (
 				<>
 					<span className='item-name'>{name}</span>
 					<span className='item-uses'>
 						<ol>
-							{[ ...Array(item.count) ].map((_o, i) => {
+							{[...Array(item.count)].map((_o, i) => {
 								return <li key={`consumable-${item.id}-uses-${i}`}>◇</li>;
 							})}
 						</ol>
@@ -168,7 +168,7 @@ export const ItemComponent = (props: ItemProps) => {
 					ItemLogic.isImbuedItem(item) ?
 						<LabeledTextField
 							label={item.type.toString().slice(7)}
-							additionalClasses={[ 'label-overlay' ]}
+							additionalClasses={['label-overlay']}
 							content={undefined}
 						/>
 						: null

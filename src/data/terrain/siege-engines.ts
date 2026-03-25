@@ -413,7 +413,7 @@ Once the wheel is rolling, it can’t be deactivated. However, it can be explode
 						name: 'Roll the Wheel',
 						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						keywords: [AbilityKeyword.Area],
-						distance: [FactoryLogic.distance.createSpecial('Special')],
+						distance: [FactoryLogic.distance.createSpecial('Особливе')],
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
@@ -613,7 +613,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 								target: 'Одна істота',
 								sections: [
 									FactoryLogic.createAbilitySectionField({
-										name: 'Special',
+										name: 'Особливе',
 										effect: 'The target must be slowed by the field ballista.'
 									}),
 									FactoryLogic.createAbilitySectionRoll(

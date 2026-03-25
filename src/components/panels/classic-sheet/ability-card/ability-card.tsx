@@ -55,7 +55,7 @@ export const AbilityCard = (props: Props) => {
 		if (ability.hasPowerRoll) {
 			return (
 				<div className='power-roll'>
-					<div className='power'>Power Roll + <DrawSteelSymbolText content={ability.rollPower} lookFor='characteristics' /></div>
+					<div className='power'>Кидок Сили + <DrawSteelSymbolText content={ability.rollPower} lookFor='characteristics' /></div>
 					<div className='roll-tiers'>
 						<div className='tier t1'>
 							<img src={rollT1} alt='≤ 11' className='range' />

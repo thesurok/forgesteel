@@ -1521,7 +1521,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createTrigger('The mummy lord is made winded for the first time in the encounter.'),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('One **mummy** or four **ghoul cravers** appear within distance.')
@@ -2192,7 +2192,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Two **blood-starved vampires** appear in unoccupied spaces within distance.')

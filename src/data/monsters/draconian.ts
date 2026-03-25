@@ -170,7 +170,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						cost: 2,
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 5 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ground in the area rises 5 squares, creating a pillar of dirt. Any creature in the area moves with the ground to its new elevation.'),
 							FactoryLogic.createAbilitySectionSpend({

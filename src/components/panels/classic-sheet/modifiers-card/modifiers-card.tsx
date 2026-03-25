@@ -17,7 +17,7 @@ interface Props {
 export const ModifiersCard = (props: Props) => {
 	const character = useMemo(
 		() => props.character,
-		[ props.character ]
+		[props.character]
 	);
 
 	const getModifierNameLabel = () => {
@@ -43,7 +43,7 @@ export const ModifiersCard = (props: Props) => {
 		return (
 			<>
 				<div className='power-roll-damage-modifiers'>
-					<h4>Melee Damage Bonus</h4>
+					<h4>Бонус шкоди ближнього бою</h4>
 					<div className='roll-tiers'>
 						<div className='tier t1'>
 							<div className='effect'>{SheetFormatter.addSign(character.modifierMeleeDamageT1)}</div>
@@ -60,7 +60,7 @@ export const ModifiersCard = (props: Props) => {
 					</div>
 				</div>
 				<div className='power-roll-damage-modifiers'>
-					<h4>Ranged Damage Bonus</h4>
+					<h4>Бонус шкоди дальньої атаки</h4>
 					<div className='roll-tiers'>
 						<div className='tier t1'>
 							<div className='effect'>{SheetFormatter.addSign(character.modifierRangedDamageT1)}</div>
@@ -106,7 +106,7 @@ export const ModifiersCard = (props: Props) => {
 			<LabeledTextField
 				label={getModifierNameLabel()}
 				content={character.modifierName}
-				additionalClasses={[ 'name', 'label-overlay' ]}
+				additionalClasses={['name', 'label-overlay']}
 			/>
 
 			<div className='modifier-augmentations'>
@@ -116,7 +116,7 @@ export const ModifiersCard = (props: Props) => {
 							<LabeledTextField
 								label='Зброя / Інструмент'
 								content={character.modifierWeaponImplement}
-								additionalClasses={[ 'label-overlay' ]}
+								additionalClasses={['label-overlay']}
 							/>
 							: null
 					}
@@ -125,7 +125,7 @@ export const ModifiersCard = (props: Props) => {
 							<LabeledTextField
 								label='Броня / Щит'
 								content={character.modifierArmorWard}
-								additionalClasses={[ 'label-overlay' ]}
+								additionalClasses={['label-overlay']}
 							/>
 							: null
 					}

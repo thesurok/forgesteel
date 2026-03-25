@@ -105,8 +105,8 @@ export const tactician: HeroClass = {
 								id: 'tactician-1-5b',
 								name: 'Мітка: Тригер',
 								type: FactoryLogic.type.createTrigger('Ви або будь-який союзник використовує здібність, щоб завдати киданої шкоди істоті, позначеній вами', { free: true }),
-								distance: [FactoryLogic.distance.createSpecial('Special')],
-								target: 'Special',
+								distance: [FactoryLogic.distance.createSpecial('Особливе')],
+								target: 'Особливе',
 								cost: 1,
 								sections: [
 									FactoryLogic.createAbilitySectionText(`

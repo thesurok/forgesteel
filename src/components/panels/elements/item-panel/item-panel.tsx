@@ -39,9 +39,9 @@ interface Props {
 }
 
 export const ItemPanel = (props: Props) => {
-	const [ item, setItem ] = useState<Item>(Utils.copy(props.item));
-	const [ page, setPage ] = useState<string>('overview');
-	const [ imbuementsOpen, setImbuementsOpen ] = useState<boolean>(false);
+	const [item, setItem] = useState<Item>(Utils.copy(props.item));
+	const [page, setPage] = useState<string>('overview');
+	const [imbuementsOpen, setImbuementsOpen] = useState<boolean>(false);
 
 	const getOverview = () => {
 		const setCount = (value: number) => {
@@ -280,7 +280,7 @@ export const ItemPanel = (props: Props) => {
 			pages.push({ value: 'imbuements', label: 'Imbuements' });
 		}
 		if (item.crafting) {
-			pages.push({ value: 'crafting', label: 'Crafting' });
+			pages.push({ value: 'crafting', label: 'Ремесло' });
 		}
 
 		return (
@@ -298,7 +298,7 @@ export const ItemPanel = (props: Props) => {
 		);
 	};
 
-	const tags: string[] = [ item.type, ...item.keywords ];
+	const tags: string[] = [item.type, ...item.keywords];
 	if (props.sourcebooks.length > 0) {
 		const sourcebookType = SourcebookLogic.getItemSourcebook(props.sourcebooks, item)?.type || SourcebookType.Official;
 		if (sourcebookType !== SourcebookType.Official) {

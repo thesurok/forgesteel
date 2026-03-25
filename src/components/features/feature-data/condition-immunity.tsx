@@ -19,7 +19,7 @@ interface InfoProps {
 
 export const InfoConditionImmunity = (props: InfoProps) => {
 	return (
-		<Field label='Cannot Be' value={props.data.conditions.join(', ')} />
+		<Field label='Не може бути' value={props.data.conditions.join(', ')} />
 	);
 };
 
@@ -31,7 +31,7 @@ interface EditProps {
 }
 
 export const EditConditionImmunity = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureConditionImmunityData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureConditionImmunityData>(Utils.copy(props.data));
 
 	const setConditions = (value: ConditionType[]) => {
 		const copy = Utils.copy(data);
@@ -48,7 +48,7 @@ export const EditConditionImmunity = (props: EditProps) => {
 				placeholder='Select conditions'
 				mode='multiple'
 				allowClear={true}
-				options={[ ConditionType.Bleeding, ConditionType.Dazed, ConditionType.Frightened, ConditionType.Grabbed, ConditionType.Prone, ConditionType.Restrained, ConditionType.Slowed, ConditionType.Taunted, ConditionType.Weakened ].map(o => ({ value: o }))}
+				options={[ConditionType.Bleeding, ConditionType.Dazed, ConditionType.Frightened, ConditionType.Grabbed, ConditionType.Prone, ConditionType.Restrained, ConditionType.Slowed, ConditionType.Taunted, ConditionType.Weakened].map(o => ({ value: o }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				value={data.conditions}
 				onChange={conditions => setConditions(conditions)}

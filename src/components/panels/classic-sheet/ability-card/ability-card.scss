@@ -3,7 +3,7 @@
 #classic-sheet .hero-sheet .ability.card {
     // @include common.striped-card;
     padding: 10px;
-    display:grid;
+    display: grid;
     justify-self: stretch;
 
     section.bordered {
@@ -99,10 +99,11 @@
             text-align: right;
         }
 
-        .distance, 
+        .distance,
         .target {
             display: flex;
             align-items: baseline;
+
             img {
                 height: 17px;
                 margin-right: 3px;
@@ -110,7 +111,8 @@
                 transform: translateY(2px);
             }
 
-            img, span {
+            img,
+            span {
                 font-weight: 350;
                 display: inline-block;
                 vertical-align: middle;
@@ -150,6 +152,7 @@
 
         .roll-bonuses {
             margin-top: 5px;
+
             p {
                 margin-top: 0;
                 margin-bottom: 3px;
@@ -159,19 +162,64 @@
 
     .trigger {
         font-size: 15px;
+
         label {
             font-weight: 450;
         }
     }
+
     .effect {
+        min-width: 0;
+
         h4 {
             text-align: left;
             font-weight: 450;
-            margin:0 10px 5px;
+            margin: 0 10px 5px;
         }
     }
+
     .ability-effect {
         font-size: 15px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+
+        >* {
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        p,
+        li,
+        td,
+        th,
+        span,
+        a,
+        code,
+        strong,
+        em {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            max-width: 100%;
+            table-layout: fixed;
+        }
+
+        img,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
 
         ul {
             margin-left: 10px;
@@ -188,13 +236,16 @@
     &.no-action h2 {
         @include common.divider-fancy(common.$color-medium);
     }
+
     &.maneuver h2 {
         @include common.divider-fancy-4(common.$color-medium);
     }
+
     &.triggered-action h2,
     &.free-triggered-action h2 {
         @include common.divider-fancy-5(common.$color-medium);
     }
+
     &.free-strike h2 {
         @include common.divider-fancy-3(common.$color-medium);
     }

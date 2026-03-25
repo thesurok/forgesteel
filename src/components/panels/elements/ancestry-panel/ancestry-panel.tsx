@@ -29,7 +29,7 @@ interface Props {
 }
 
 export const AncestryPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
@@ -59,7 +59,7 @@ export const AncestryPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<Field label='Ancestry Points' value={props.ancestry.ancestryPoints} />
+				<Field label='Очки походження' value={props.ancestry.ancestryPoints} />
 				{
 					features.map(f => (
 						<SelectablePanel key={f.feature.id}>
@@ -97,13 +97,13 @@ export const AncestryPanel = (props: Props) => {
 		}
 
 		const pages = [
-			{ value: 'overview', label: 'Overview' },
-			{ value: 'signature', label: 'Signature' },
-			{ value: 'purchased', label: 'Purchased' }
+			{ value: 'overview', label: 'Огляд' },
+			{ value: 'signature', label: 'Фірмові' },
+			{ value: 'purchased', label: 'Придбано' }
 		];
 
 		if (props.ancestry.culture) {
-			pages.push({ value: 'culture', label: 'Culture' });
+			pages.push({ value: 'culture', label: 'Культура' });
 		}
 
 		return (
@@ -133,7 +133,7 @@ export const AncestryPanel = (props: Props) => {
 		return (
 			<div className='ancestry-panel compact'>
 				<HeaderText level={1} tags={tags}>
-					{props.ancestry.name || 'Unnamed Ancestry'}
+					{props.ancestry.name || 'Невідоме походження'}
 				</HeaderText>
 				<Markdown text={props.ancestry.description} />
 			</div>
@@ -144,7 +144,7 @@ export const AncestryPanel = (props: Props) => {
 		<ErrorBoundary>
 			<div className='ancestry-panel' id={SheetFormatter.getPageId('ancestry', props.ancestry.id)}>
 				<HeaderText level={1} tags={tags}>
-					{props.ancestry.name || 'Unnamed Ancestry'}
+					{props.ancestry.name || 'Невідоме походження'}
 				</HeaderText>
 				{getContent()}
 			</div>

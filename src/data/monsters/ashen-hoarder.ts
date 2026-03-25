@@ -226,7 +226,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						name: 'Mobile Mine Field',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 10, within: 20 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ashen hoarder sprays out six size 1M zombie mines that appear in unoccupied squares within distance. Any enemy who moves adjacent to a zombie mine for the first time in a round or starts their turn there causes the mine to explode, dealing 4 corruption damage to each creature adjacent to the mine. Any other zombie mines adjacent to the exploding mine also explode. At the start of each of the ashen hoarder’s turns, each unexploded zombie mine can be moved up to 2 squares.')
 						]

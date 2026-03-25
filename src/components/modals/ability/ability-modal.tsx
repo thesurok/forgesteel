@@ -34,15 +34,15 @@ interface Props {
 }
 
 export const AbilityModal = (props: Props) => {
-	const [ hero, setHero ] = useState<Hero | undefined>(props.hero ? Utils.copy(props.hero) : undefined);
-	const [ page, setPage ] = useState<string>('Ability Card');
-	const [ rollState, setRollState ] = useState<RollState>(RollState.Standard);
-	const [ tier, setTier ] = useState<number | null>(null);
+	const [hero, setHero] = useState<Hero | undefined>(props.hero ? Utils.copy(props.hero) : undefined);
+	const [page, setPage] = useState<string>('Ability Card');
+	const [rollState, setRollState] = useState<RollState>(RollState.Standard);
+	const [tier, setTier] = useState<number | null>(null);
 
 	const customization = hero ? hero.abilityCustomizations.find(ac => ac.abilityID === props.ability.id) : undefined;
 
 	const hasCost = props.ability.cost !== 'signature';
-	const hasRange = props.ability.distance.some(d => ![ AbilityDistanceType.Self, AbilityDistanceType.Special ].includes(d.type));
+	const hasRange = props.ability.distance.some(d => ![AbilityDistanceType.Self, AbilityDistanceType.Special].includes(d.type));
 	const hasDamage = AbilityLogic.usesDamage(props.ability);
 
 	const getCharacteristic = (ch: Characteristic) => {
@@ -191,7 +191,7 @@ export const AbilityModal = (props: Props) => {
 				if (hero && rollSection) {
 					const values = rollSection.roll.characteristic.map(ch => HeroLogic.getCharacteristic(hero!, ch));
 					const bonus = Collections.max(values, v => v) || 0;
-					odds = RollLogic.getOdds([ bonus ], rollState);
+					odds = RollLogic.getOdds([bonus], rollState);
 				}
 
 				return (
@@ -209,7 +209,7 @@ export const AbilityModal = (props: Props) => {
 						{
 							rollSection ?
 								<DieRollPanel
-									type='Power Roll'
+									type='Кидок Сили'
 									modifiers={[
 										(rollSection.roll.characteristic.length > 0) ?
 											Math.max(...rollSection.roll.characteristic.map(getCharacteristic))
@@ -268,13 +268,13 @@ export const AbilityModal = (props: Props) => {
 						</Expander>
 						{
 							props.ability.sections.some(s => (s.type === 'roll')) ?
-								<Expander title='Power Roll'>
+								<Expander title='Кидок Сили'>
 									<Space orientation='vertical' style={{ width: '100%' }}>
 										<Select
 											style={{ width: '100%' }}
 											allowClear={true}
 											placeholder='Select a characteristic'
-											options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(ch => ({ value: ch, label: <div className='ds-text'>{ch}</div> }))}
+											options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(ch => ({ value: ch, label: <div className='ds-text'>{ch}</div> }))}
 											value={customization?.characteristic}
 											onChange={setCharacteristic}
 										/>
@@ -294,7 +294,7 @@ export const AbilityModal = (props: Props) => {
 					<div style={{ width: '100%', textAlign: 'center' }}>
 						<Segmented
 							name='tabs'
-							options={[ 'Ability Card', 'Customize' ]}
+							options={['Ability Card', 'Customize']}
 							value={page}
 							onChange={setPage}
 						/>

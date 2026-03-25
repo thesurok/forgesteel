@@ -41,10 +41,10 @@ import './hero-edit-page.scss';
 
 enum PageState {
 	Blank = '',
-	Optional = 'Optional',
-	NotStarted = 'Not Started',
-	InProgress = 'In Progress',
-	Completed = 'Completed'
+	Optional = 'За бажанням',
+	NotStarted = 'Не розпочато',
+	InProgress = 'В процесі',
+	Completed = 'Завершено'
 }
 
 interface Props {
@@ -64,10 +64,10 @@ export const HeroEditPage = (props: Props) => {
 	const isSmall = useIsSmall();
 	const navigation = useNavigation();
 	const { heroID, page } = useParams<{ heroID: string; page: HeroEditTab }>();
-	const originalHero = useMemo(() => props.heroes.find(h => h.id === heroID)!, [ heroID, props.heroes ]);
-	const [ hero, setHero ] = useState<Hero>(Utils.copy(originalHero));
-	const [ dirty, setDirty ] = useState<boolean>(false);
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
+	const originalHero = useMemo(() => props.heroes.find(h => h.id === heroID)!, [heroID, props.heroes]);
+	const [hero, setHero] = useState<Hero>(Utils.copy(originalHero));
+	const [dirty, setDirty] = useState<boolean>(false);
+	const [searchTerm, setSearchTerm] = useState<string>('');
 	useTitle('Hero Builder');
 
 	const getPageState = (page: HeroEditTab) => {
@@ -175,7 +175,7 @@ export const HeroEditPage = (props: Props) => {
 	const setCulture = (culture: Culture | null) => {
 		const cultureCopy = Utils.copy(culture) as Culture | null;
 		if (cultureCopy) {
-			const features: Feature[] = [ cultureCopy.language ];
+			const features: Feature[] = [cultureCopy.language];
 			if (cultureCopy.environment) {
 				features.push(cultureCopy.environment);
 			}
@@ -399,7 +399,7 @@ export const HeroEditPage = (props: Props) => {
 				setAncestry(Collections.draw(SourcebookLogic.getAncestries(props.sourcebooks)));
 				break;
 			case 'culture':
-				setCulture(Collections.draw([ CultureData.bespoke, ...SourcebookLogic.getCultures(props.sourcebooks, true) ]));
+				setCulture(Collections.draw([CultureData.bespoke, ...SourcebookLogic.getCultures(props.sourcebooks, true)]));
 				break;
 			case 'career':
 				setCareer(Collections.draw(SourcebookLogic.getCareers(props.sourcebooks)));
@@ -414,6 +414,15 @@ export const HeroEditPage = (props: Props) => {
 	};
 
 	const getControls = () => {
+		const tabLabels: { [key: string]: string } = {
+			start: 'Початок',
+			ancestry: 'Походження',
+			culture: 'Культура',
+			career: "Кар'єра",
+			class: 'Клас',
+			complication: 'Ускладнення',
+			details: 'Деталі'
+		};
 		let allowRandom = false;
 		let unselect = undefined;
 		switch (page) {
@@ -455,7 +464,7 @@ export const HeroEditPage = (props: Props) => {
 								'details'
 							] as const).map(tab => ({
 								value: tab,
-								label: <div className='ds-text'>{Format.capitalize(tab, '-')}</div>
+								label: <div className='ds-text'>{tabLabels[tab]}</div>
 							}))}
 							value={page}
 							onChange={value => navigation.goToHeroEdit(heroID!, value)}
@@ -476,7 +485,7 @@ export const HeroEditPage = (props: Props) => {
 								value: tab,
 								label: (
 									<div className={`page-button ${getPageState(tab).toLowerCase().replace(' ', '-')}`}>
-										<div className='page-button-title'>{Format.capitalize(tab, '-')}</div>
+										<div className='page-button-title'>{tabLabels[tab]}</div>
 										<div className='page-button-subtitle'>{getPageState(tab)}</div>
 									</div>
 								)
@@ -487,8 +496,8 @@ export const HeroEditPage = (props: Props) => {
 						/>
 				}
 				<Space orientation='vertical' size={4}>
-					{!isSmall ? <Button disabled={!allowRandom || !!searchTerm} icon={<ThunderboltOutlined />} onClick={selectRandom}>Random</Button> : null}
-					<Button disabled={!unselect} icon={<CloseOutlined />} onClick={unselect}>Unselect</Button>
+					{!isSmall ? <Button disabled={!allowRandom || !!searchTerm} icon={<ThunderboltOutlined />} onClick={selectRandom}>Випадковий</Button> : null}
+					<Button disabled={!unselect} icon={<CloseOutlined />} onClick={unselect}>Зняти вибір</Button>
 				</Space>
 			</div>
 		);
@@ -609,10 +618,10 @@ export const HeroEditPage = (props: Props) => {
 					<SearchBox disabled={!allowSearch()} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 					<div className='divider' />
 					<Button icon={<SaveOutlined />} type='primary' disabled={!dirty} onClick={saveChanges}>
-						Save Changes
+						Зберегти зміни
 					</Button>
 					<Button icon={<CloseOutlined />} onClick={() => navigation.goToHeroView(heroID!)}>
-						Cancel
+						Скасувати
 					</Button>
 				</AppHeader>
 				<ErrorBoundary>

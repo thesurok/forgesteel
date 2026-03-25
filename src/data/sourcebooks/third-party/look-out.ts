@@ -320,7 +320,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(5)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`

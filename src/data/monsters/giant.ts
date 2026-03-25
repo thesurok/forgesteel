@@ -574,7 +574,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						type: FactoryLogic.type.createMain(),
 						cost: 5,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Melee],
-						distance: [FactoryLogic.distance.createSpecial('Special')],
+						distance: [FactoryLogic.distance.createSpecial('Особливе')],
 						target: 'Кожен ворог та обʼєкт у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -691,7 +691,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						distance: [
 							FactoryLogic.distance.createRanged(15)
 						],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The storm hurler throws three size 1L ice javelins into unoccupied squares within distance. Each javelin has 30 Stamina and fire weakness 5. At the start of the storm hurler’s next turn, all javelins not destroyed explode in a shower of icicles. Each enemy and object within 3 squares of an exploding javelin makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1121,7 +1121,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 2, within: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ground in the area becomes slick and glossy. Any non-giant who starts or ends their turn in the area is knocked prone and slides 2 squares.')
 						]
@@ -1276,7 +1276,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						name: 'Burning Legion',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The chief shifts up to 10 squares. Five **fire giant fireballers** then arrive in unoccupied spaces within distance.')
 						]

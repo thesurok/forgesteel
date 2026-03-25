@@ -1,8 +1,8 @@
 export enum SkillList {
-	Crafting = 'Crafting',
-	Exploration = 'Exploration',
-	Interpersonal = 'Interpersonal',
-	Intrigue = 'Intrigue',
-	Lore = 'Lore',
+	Crafting = 'Ремесло',
+	Exploration = 'Дослідження',
+	Interpersonal = 'Міжособистісні',
+	Intrigue = 'Інтриги',
+	Lore = 'Знання',
 	Custom = 'Custom'
 }

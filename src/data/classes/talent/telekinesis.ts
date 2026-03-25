@@ -270,7 +270,7 @@ export const telekinesis: SubClass = {
 									description: 'Ви точно маніпулюєте істотами навколо себе.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Psionic, AbilityKeyword.Telekinesis],
-									distance: [FactoryLogic.distance.createSpecial('Special')],
+									distance: [FactoryLogic.distance.createSpecial('Особливе')],
 									target: 'Кожен ворог та обʼєкт у зоні',
 									cost: 11,
 									sections: [

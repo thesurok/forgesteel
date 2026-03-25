@@ -138,7 +138,7 @@ export const AbilityEditPanel = (props: Props) => {
 				case AbilityDistanceType.Summoner:
 					return 'Summoner Range';
 				case AbilityDistanceType.Special:
-					return 'Special';
+					return 'Особливе';
 			}
 		};
 
@@ -164,7 +164,7 @@ export const AbilityEditPanel = (props: Props) => {
 				case 'Summoner':
 					copy.distance[index] = FactoryLogic.distance.createSummoner();
 					break;
-				case 'Special':
+				case 'Особливе':
 					copy.distance[index] = FactoryLogic.distance.createSpecial('');
 					break;
 			}
@@ -337,7 +337,7 @@ export const AbilityEditPanel = (props: Props) => {
 									<Select
 										style={{ width: '100%' }}
 										placeholder='Distance'
-										options={['Себе', 'Melee', 'Ranged', 'Area', 'Line', 'Summoner', 'Special'].map(option => ({ value: option }))}
+										options={['Себе', 'Melee', 'Ranged', 'Area', 'Line', 'Summoner', 'Особливе'].map(option => ({ value: option }))}
 										optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 										value={getDistanceMainType(n)}
 										onChange={value => setDistanceMainType(n, value)}
@@ -361,12 +361,12 @@ export const AbilityEditPanel = (props: Props) => {
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Особливе') ?
 											<HeaderText>Value</HeaderText>
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Special') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Особливе') ?
 											<NumberSpin min={1} value={distance.value} onChange={value => setDistanceValue(n, value)} />
 											: null
 									}
@@ -391,15 +391,15 @@ export const AbilityEditPanel = (props: Props) => {
 											: null
 									}
 									{
-										getDistanceMainType(n) === 'Special' ?
+										getDistanceMainType(n) === 'Особливе' ?
 											<HeaderText>Special</HeaderText>
 											: null
 									}
 									{
-										getDistanceMainType(n) === 'Special' ?
+										getDistanceMainType(n) === 'Особливе' ?
 											<TextInput
 												status={distance.special === '' ? 'warning' : ''}
-												placeholder='Special'
+												placeholder='Особливе'
 												allowClear={true}
 												value={distance.special}
 												onChange={value => setDistanceSpecial(n, value)}

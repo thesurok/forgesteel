@@ -269,8 +269,8 @@ export const humanNull = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Lore'
+					'Міжособистісні',
+					'Знання'
 				],
 				count: 1,
 				selected: [
@@ -286,8 +286,8 @@ export const humanNull = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -306,7 +306,7 @@ export const humanNull = {
 					'Handle Animals'
 				],
 				listOptions: [
-					'Exploration'
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -401,7 +401,7 @@ export const humanNull = {
 						data: {
 							options: [],
 							listOptions: [
-								'Lore'
+								'Знання'
 							],
 							count: 1,
 							selected: [
@@ -417,8 +417,8 @@ export const humanNull = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal',
-								'Lore'
+								'Міжособистісні',
+								'Знання'
 							],
 							count: 2,
 							selected: [
@@ -821,9 +821,9 @@ export const humanNull = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 1,
 							selected: []
@@ -950,12 +950,12 @@ export const humanNull = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -983,11 +983,11 @@ export const humanNull = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1044,9 +1044,9 @@ export const humanNull = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 1,
 							selected: []
@@ -1136,11 +1136,11 @@ export const humanNull = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1158,12 +1158,12 @@ export const humanNull = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1290,12 +1290,12 @@ export const humanNull = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1309,11 +1309,11 @@ export const humanNull = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2802,7 +2802,7 @@ export const humanNull = {
 				],
 				distance: [
 					{
-						type: 'Special',
+						type: 'Особливе',
 						value: 0,
 						value2: 0,
 						within: 0,
@@ -2847,7 +2847,7 @@ export const humanNull = {
 								data: {
 									options: [],
 									listOptions: [
-										'Lore'
+										'Знання'
 									],
 									count: 1,
 									selected: []
@@ -3137,7 +3137,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Special',
+																type: 'Особливе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -3367,7 +3367,7 @@ export const humanNull = {
 								data: {
 									options: [],
 									listOptions: [
-										'Crafting'
+										'Ремесло'
 									],
 									count: 1,
 									selected: []
@@ -3697,7 +3697,7 @@ export const humanNull = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -3920,7 +3920,7 @@ export const humanNull = {
 								data: {
 									options: [],
 									listOptions: [
-										'Exploration'
+										'Дослідження'
 									],
 									count: 1,
 									selected: [
@@ -4476,7 +4476,7 @@ export const humanNull = {
 				data: {
 					options: [],
 					listOptions: [
-						'Interpersonal'
+						'Міжособистісні'
 					],
 					count: 1,
 					selected: [
@@ -4492,7 +4492,7 @@ export const humanNull = {
 				data: {
 					options: [],
 					listOptions: [
-						'Exploration'
+						'Дослідження'
 					],
 					count: 2,
 					selected: [
@@ -4535,7 +4535,7 @@ export const humanNull = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Exploration'
+						'Дослідження'
 					],
 					count: 1,
 					selected: [
@@ -4545,7 +4545,7 @@ export const humanNull = {
 							description: 'You can use the Handle Animals skill to interact with nonsapient creatures who are not animals.',
 							type: 'Text',
 							data: null,
-							list: 'Exploration'
+							list: 'Дослідження'
 						}
 					]
 				}

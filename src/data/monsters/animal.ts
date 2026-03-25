@@ -145,7 +145,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The swarm forces themselves in the way of their foes. The affected area is considered difficult terrain for enemies until the start of the swarm’s next turn.')
 						]
@@ -708,7 +708,7 @@ The animal gains the following ability.
 **Keywords** Area, Weapon
 **Distance** 3 cube within 1
 **Target** Each creature in the area
-**Power Roll** 2d10 + highest characteristic
+**Кидок Сили** 2d10 + highest characteristic
 **11-** <code>A < 0</code> restrained (save ends)
 **12–16** <code>A < 1</code> restrained (save ends)
 **17+** <code>A < 2</code> restrained (save ends)

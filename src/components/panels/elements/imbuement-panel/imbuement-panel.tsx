@@ -25,7 +25,7 @@ interface Props {
 }
 
 export const ImbuementPanel = (props: Props) => {
-	const tags = [ `Level ${props.imbuement.level}` ];
+	const tags = [`Level ${props.imbuement.level}`];
 	if (props.sourcebooks.length > 0) {
 		const sourcebookType = SourcebookLogic.getImbuementSourcebook(props.sourcebooks, props.imbuement)?.type || SourcebookType.Official;
 		if (sourcebookType !== SourcebookType.Official) {
@@ -55,7 +55,7 @@ export const ImbuementPanel = (props: Props) => {
 				</div>
 				{
 					props.imbuement.crafting ?
-						<Expander title='Crafting'>
+						<Expander title='Ремесло'>
 							<ProjectPanel project={props.imbuement.crafting} sourcebooks={props.sourcebooks} mode={PanelMode.Full} />
 						</Expander>
 						: null

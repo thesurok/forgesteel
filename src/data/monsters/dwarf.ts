@@ -787,7 +787,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The marauder lord creates three size 2 metal objects in unoccupied spaces within distance. Whenever the marauder lord uses Magnetomancy, they can additionally target one of these objects.')
 						]

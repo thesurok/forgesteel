@@ -417,7 +417,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is filled with a green haze that lasts until the start of the stinker’s next turn or until the stinker is reduced to 0 Stamina, and which can’t be dispersed by wind. The area is difficult terrain for non-goblins, and each non-goblin who moves in the area takes 2 poison damage for each square moved.')
 						]
@@ -591,7 +591,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						type: FactoryLogic.type.createManeuver(),
 						cost: 1,
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Two **goblin runners** appear in unoccupied spaces within distance.')
 						]
@@ -650,8 +650,8 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						name: 'Kill!',
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area],
-						distance: [FactoryLogic.distance.createSpecial('Special')],
-						target: 'Special',
+						distance: [FactoryLogic.distance.createSpecial('Особливе')],
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each enemy in the encounter takes 2 damage for each goblin adjacent to them.')
 						]

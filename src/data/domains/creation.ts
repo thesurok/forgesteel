@@ -48,7 +48,7 @@ export const creation: Domain = {
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 5,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Статуя розміру 2 зʼявляється на вільній клітинці в межах дистанції й існує до кінця сутички. Поки ви в межах 3 клітинок від статуї, ви отримуєте 1 сплеск на початку кожного свого ходу. Кожен союзник у межах 3 клітинок також отримує цю перевагу. Статуя знищується, якщо отримує 20 або більше шкоди. Вона має імунітет до отрути й психічної шкоди.')
@@ -86,7 +86,7 @@ export const creation: Domain = {
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 9,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ви створюєте котячу машину розміру 2, яка зʼявляється на вільній клітинці в межах дистанції. Машина має 50 Витривалості й імунітет до отрути та психічної шкоди. Вона зникає наприкінці сутички, якщо її Витривалість падає до 0 або якщо ви вмираєте. Коли машина зʼявляється, зробіть наступний кидок сили по кожному ворогу поруч.'),
@@ -130,7 +130,7 @@ export const creation: Domain = {
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 11,
 						sections: [
 							FactoryLogic.createAbilitySectionText(`

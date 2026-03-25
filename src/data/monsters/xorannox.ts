@@ -185,7 +185,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 2,
 						sections: [
 							FactoryLogic.createAbilitySectionText('Xorannox ends all ongoing supernatural effects and suppresses supernatural effects from treasures in the area. New supernatural effects can’t be activated in the area until the end of Xorannox’s next turn.')

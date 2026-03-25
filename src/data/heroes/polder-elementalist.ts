@@ -289,8 +289,8 @@ export const polderElementalist = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -306,8 +306,8 @@ export const polderElementalist = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -326,7 +326,7 @@ export const polderElementalist = {
 					'Perform'
 				],
 				listOptions: [
-					'Crafting'
+					'Ремесло'
 				],
 				count: 1,
 				selected: [
@@ -414,7 +414,7 @@ export const polderElementalist = {
 						data: {
 							options: [],
 							listOptions: [
-								'Lore'
+								'Знання'
 							],
 							count: 1,
 							selected: [
@@ -430,8 +430,8 @@ export const polderElementalist = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Lore'
+								'Ремесло',
+								'Знання'
 							],
 							count: 3,
 							selected: [
@@ -1067,9 +1067,9 @@ export const polderElementalist = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1229,12 +1229,12 @@ export const polderElementalist = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Crafting',
-								'Lore',
-								'Supernatural',
-								'Intrigue',
-								'Exploration'
+								'Міжособистісні',
+								'Ремесло',
+								'Знання',
+								'Надприродне',
+								'Інтриги',
+								'Дослідження'
 							],
 							count: 1,
 							selected: []
@@ -1248,11 +1248,11 @@ export const polderElementalist = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1293,9 +1293,9 @@ export const polderElementalist = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1403,11 +1403,11 @@ export const polderElementalist = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1425,12 +1425,12 @@ export const polderElementalist = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1604,9 +1604,9 @@ export const polderElementalist = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1620,11 +1620,11 @@ export const polderElementalist = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2421,7 +2421,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
@@ -2600,7 +2600,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 5,
 				repeatable: false,
 				minLevel: 2,
@@ -2829,7 +2829,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 3,
@@ -3016,7 +3016,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 3,
@@ -3494,7 +3494,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 9,
 				repeatable: false,
 				minLevel: 6,
@@ -3547,7 +3547,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 8,
@@ -3654,7 +3654,7 @@ export const polderElementalist = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 11,
 				repeatable: false,
 				minLevel: 8,
@@ -4000,7 +4000,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Special',
+										target: 'Особливе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4218,7 +4218,7 @@ export const polderElementalist = {
 													keywords: [],
 													distance: [
 														{
-															type: 'Special',
+															type: 'Особливе',
 															value: 0,
 															value2: 0,
 															within: 0,
@@ -4300,7 +4300,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Special',
+										target: 'Особливе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -4882,7 +4882,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Special',
+										target: 'Особливе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -5002,7 +5002,7 @@ export const polderElementalist = {
 												qualifier: ''
 											}
 										],
-										target: 'Special',
+										target: 'Особливе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -5139,7 +5139,7 @@ export const polderElementalist = {
 				data: {
 					options: [],
 					listOptions: [
-						'Lore'
+						'Знання'
 					],
 					count: 1,
 					selected: [
@@ -5155,7 +5155,7 @@ export const polderElementalist = {
 				data: {
 					options: [],
 					listOptions: [
-						'Lore'
+						'Знання'
 					],
 					count: 2,
 					selected: [
@@ -5198,7 +5198,7 @@ export const polderElementalist = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Supernatural'
+						'Надприродне'
 					],
 					count: 1,
 					selected: [
@@ -5253,7 +5253,7 @@ export const polderElementalist = {
 									persistence: []
 								}
 							},
-							list: 'Supernatural'
+							list: 'Надприродне'
 						}
 					]
 				}

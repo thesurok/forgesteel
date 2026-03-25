@@ -16,18 +16,18 @@ interface Props {
 }
 
 export const TextInput = (props: Props) => {
-	const [ value, setValue ] = useState(props.value);
+	const [value, setValue] = useState(props.value);
 	const debouncedValue = useDebounce(value);
 
 	useEffect(
 		() => setValue(props.value),
-		[ props.value ]
+		[props.value]
 	);
 
 	useEffect(
 		() => props.onChange(debouncedValue),
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[ debouncedValue ]
+		[debouncedValue]
 	);
 
 	return (
@@ -57,7 +57,7 @@ export const SearchBox = (props: SearchBoxProps) => {
 	return (
 		<ErrorBoundary>
 			<TextInput
-				placeholder='Search'
+				placeholder='Пошук'
 				allowClear={true}
 				value={props.searchTerm}
 				disabled={props.disabled}

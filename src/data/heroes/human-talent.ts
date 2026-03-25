@@ -312,8 +312,8 @@ export const humanTalent = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Lore'
+					'Міжособистісні',
+					'Знання'
 				],
 				count: 1,
 				selected: [
@@ -329,8 +329,8 @@ export const humanTalent = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -346,7 +346,7 @@ export const humanTalent = {
 			data: {
 				options: [],
 				listOptions: [
-					'Lore'
+					'Знання'
 				],
 				count: 1,
 				selected: [
@@ -436,7 +436,7 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Lore'
+								'Знання'
 							],
 							count: 1,
 							selected: [
@@ -452,7 +452,7 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal'
+								'Міжособистісні'
 							],
 							count: 1,
 							selected: [
@@ -468,8 +468,8 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal',
-								'Lore'
+								'Міжособистісні',
+								'Знання'
 							],
 							count: 2,
 							selected: [
@@ -988,9 +988,9 @@ export const humanTalent = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1139,12 +1139,12 @@ export const humanTalent = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1158,11 +1158,11 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1210,9 +1210,9 @@ export const humanTalent = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1368,11 +1368,11 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1390,12 +1390,12 @@ export const humanTalent = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1551,9 +1551,9 @@ export const humanTalent = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1599,11 +1599,11 @@ export const humanTalent = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2741,7 +2741,7 @@ export const humanTalent = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 7,
 				repeatable: false,
 				minLevel: 1,
@@ -3498,7 +3498,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4702,11 +4702,11 @@ export const humanTalent = {
 														],
 														distance: [
 															{
-																type: 'Special',
+																type: 'Особливе',
 																value: 0,
 																value2: 0,
 																within: 0,
-																special: 'Special',
+																special: 'Особливе',
 																qualifier: ''
 															}
 														],
@@ -5311,7 +5311,7 @@ export const humanTalent = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 9,
 														repeatable: false,
 														minLevel: 1,
@@ -5599,7 +5599,7 @@ export const humanTalent = {
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -5615,7 +5615,7 @@ export const humanTalent = {
 				data: {
 					options: [],
 					listOptions: [
-						'Interpersonal'
+						'Міжособистісні'
 					],
 					count: 1,
 					selected: [
@@ -5631,7 +5631,7 @@ export const humanTalent = {
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -5660,7 +5660,7 @@ export const humanTalent = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -5670,7 +5670,7 @@ export const humanTalent = {
 							description: 'If you spend 10 minutes or less interacting with a creature who hasn’t met you before, you can cause them to forget your face when you part. If asked to describe you, the creature gives only a vague, blank, and unhelpful description. Additionally, if you spend 1 hour or more assembling a disguise, you automatically obtain a tier 2 outcome on any test that could make use of the Disguise skill. If you have the Disguise skill, you automatically obtain a tier 3 outcome on the test.',
 							type: 'Text',
 							data: null,
-							list: 'Intrigue'
+							list: 'Інтриги'
 						}
 					]
 				}

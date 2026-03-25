@@ -372,7 +372,7 @@ In many shadow elf societies, all people are given basic combat training and are
 						name: 'The Lay of Cor’thoroth',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 3 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the duskcaller’s next turn, the area is filled with darkness.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -838,7 +838,7 @@ In many shadow elf societies, all people are given basic combat training and are
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The eclipse calls forth one **brush stalker** into an unoccupied space within distance. Each ally within distance can then shift up to their speed and make a free strike.')
 						]

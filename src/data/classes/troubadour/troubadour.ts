@@ -862,7 +862,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(

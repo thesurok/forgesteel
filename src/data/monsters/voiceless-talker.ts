@@ -92,7 +92,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
-						name: 'Special',
+						name: 'Особливе',
 						effect: 'This ability can’t be used by a minion.'
 					})
 				]
@@ -251,7 +251,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 								})
 							),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'The hulking brain can have up to four size 1 creatures grabbed.'
 							}),
 							FactoryLogic.createAbilitySectionSpend({
@@ -761,7 +761,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The evolutionist teleports eight minions of level 4 or lower into unoccupied spaces within distance. All eight minions can be of any monster type but must share the same name.')
 						]

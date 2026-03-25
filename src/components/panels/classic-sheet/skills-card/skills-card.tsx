@@ -12,10 +12,10 @@ export const SkillsCard = (props: Props) => {
 	const allSkills = character.allSkills?.entries() || new Map<string, string[]>();
 	return (
 		<div className='skills card'>
-			<h2>Skills</h2>
-			<div className='reference'>Have 1+ skills that apply to a test? +2 bonus</div>
+			<h2>Навички</h2>
+			<div className='reference'>Маєте 1+ навичок, що застосовуються до тесту? +2 бонус</div>
 			<div className='skills-lists'>
-				{Array.from(allSkills).map(([ list, skills ]) =>
+				{Array.from(allSkills).map(([list, skills]) =>
 					<div className='skill-list' key={`skill-list-${list}`}>
 						<h3>{list}</h3>
 						<div className='skill-group'>

@@ -99,7 +99,7 @@ export class AbilityLogic {
 		}
 
 		if (distance.type === AbilityDistanceType.Special) {
-			return distance.special || 'Special';
+			return distance.special || 'Особливе';
 		}
 
 		let bonus = 0;

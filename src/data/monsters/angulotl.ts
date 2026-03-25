@@ -437,7 +437,7 @@ Pinna, Hedge Witch, Gravesford`,
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, within: 10, qualifier: 'unoccupied space' })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A bubble of toxic gas fills the area, ready to pop. If any creature or object touches the bubble or if the bubble takes damage, it bursts. Each angulotl adjacent to the bubble is wet until the end of the encounter, and each enemy adjacent to the bubble makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -540,7 +540,7 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'New Dawn',
 						type: FactoryLogic.type.createVillainAction(1),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Four **angulotl pollywogs** erupt from the daybringer’s back and waddle into unoccupied spaces within distance.')
 						]
@@ -566,7 +566,7 @@ Pinna, Hedge Witch, Gravesford`,
 						name: 'It Is Day',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSpecial('')],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The encounter map dries up and each enemy and object on it is illuminated until the end of the encounter. An illuminated creature or object can’t hide or become invisible, and any strike made against an illuminated target gains an edge. Additionally, each enemy in the encounter who is wet has that effect end and takes 6 acid damage. Each angulotl in the encounter has a double edge on their next strike.')
 						]

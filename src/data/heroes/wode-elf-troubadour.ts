@@ -196,8 +196,8 @@ export const wodeElfTroubadour = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -213,8 +213,8 @@ export const wodeElfTroubadour = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -233,7 +233,7 @@ export const wodeElfTroubadour = {
 					'Perform'
 				],
 				listOptions: [
-					'Crafting'
+					'Ремесло'
 				],
 				count: 1,
 				selected: [
@@ -299,7 +299,7 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal'
+								'Міжособистісні'
 							],
 							count: 1,
 							selected: [
@@ -315,7 +315,7 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal'
+								'Міжособистісні'
 							],
 							count: 2,
 							selected: [
@@ -332,8 +332,8 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Intrigue',
-								'Lore'
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: [
@@ -773,9 +773,9 @@ export const wodeElfTroubadour = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -933,12 +933,12 @@ export const wodeElfTroubadour = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -952,11 +952,11 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1004,9 +1004,9 @@ export const wodeElfTroubadour = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1150,11 +1150,11 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1172,12 +1172,12 @@ export const wodeElfTroubadour = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1278,9 +1278,9 @@ export const wodeElfTroubadour = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Interpersonal',
-								'Lore',
-								'Supernatural'
+								'Міжособистісні',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1294,11 +1294,11 @@ export const wodeElfTroubadour = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2407,7 +2407,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					}
 				],
-				target: 'Special',
+				target: 'Особливе',
 				cost: 9,
 				repeatable: false,
 				minLevel: 1,
@@ -2643,7 +2643,7 @@ export const wodeElfTroubadour = {
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -2737,7 +2737,7 @@ export const wodeElfTroubadour = {
 												qualifier: ''
 											}
 										],
-										target: 'Special',
+										target: 'Особливе',
 										cost: 0,
 										repeatable: false,
 										minLevel: 1,
@@ -2869,7 +2869,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -3382,7 +3382,7 @@ export const wodeElfTroubadour = {
 								data: {
 									options: [],
 									listOptions: [
-										'Exploration'
+										'Дослідження'
 									],
 									count: 1,
 									selected: [
@@ -4129,7 +4129,7 @@ export const wodeElfTroubadour = {
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -4425,7 +4425,7 @@ export const wodeElfTroubadour = {
 														],
 														distance: [
 															{
-																type: 'Special',
+																type: 'Особливе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -4433,7 +4433,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4490,7 +4490,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															}
 														],
-														target: 'Special',
+														target: 'Особливе',
 														cost: 5,
 														repeatable: false,
 														minLevel: 1,
@@ -4731,7 +4731,7 @@ export const wodeElfTroubadour = {
 														],
 														distance: [
 															{
-																type: 'Special',
+																type: 'Особливе',
 																value: 0,
 																value2: 0,
 																within: 0,
@@ -5190,7 +5190,7 @@ export const wodeElfTroubadour = {
 				data: {
 					options: [],
 					listOptions: [
-						'Interpersonal'
+						'Міжособистісні'
 					],
 					count: 2,
 					selected: [
@@ -5220,7 +5220,7 @@ export const wodeElfTroubadour = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Interpersonal'
+						'Міжособистісні'
 					],
 					count: 1,
 					selected: [
@@ -5230,7 +5230,7 @@ export const wodeElfTroubadour = {
 							description: 'You can make a Presence test using the Music skill to influence creatures who don’t have emotions or can’t understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.',
 							type: 'Text',
 							data: null,
-							list: 'Interpersonal'
+							list: 'Міжособистісні'
 						}
 					]
 				}

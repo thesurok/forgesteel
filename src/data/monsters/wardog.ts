@@ -1198,7 +1198,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 2, value2: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain until the end of the encounter.')
 						]
@@ -1332,7 +1332,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 						distance: [],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The equivite moves up to their speed and ignores difficult terrain. Any mundane size 1 object whose space they move through is destroyed. The equivite makes one power roll against each enemy whose space they move through for the first time.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -1392,7 +1392,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createTrigger('The hypokrite takes damage'),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(20)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The hypokrite detonates their loyalty collar to deal 2d6 damage to each adjacent enemy, but teleports to an unoccupied space adjacent to an ally within distance and remains alive.')
 						]
@@ -1650,7 +1650,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createTrigger('One ally within distance dies'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each ally adjacent to the dead ally deals an extra 6 damage on their next strike.')
 						]
@@ -2023,7 +2023,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 3,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, value2: 12 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the start of the ballistite’s next turn, the area is difficult terrain, and any ranged ability targeting an enemy in the area deals an extra 8 damage.')
 						]
@@ -2202,7 +2202,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('This ability targets each enemy within 2 squares of any seared creature within distance.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
@@ -2270,7 +2270,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The geomancer raises a wall of stone set with viewing gaps. Creatures have line of effect through the wall while adjacent to it.')
 						]
@@ -2330,7 +2330,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						repeatable: true,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 4 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText(` For every 2 Malice spent, each target gains one of the following effects until the start of the iron priest’s next turn.
 - The target has damage immunity 2.
@@ -2702,7 +2702,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						cost: 5,
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('A 10-square-tall tower made of black stone shimmers into being in an unoccupied space that is 5 squares on a side. The tower has three floors, an entrance in the middle of each side on the ground floor, and a crenelated rooftop. Any war dog inside or adjacent to the tower has damage immunity 2 and regains 5 Stamina at the start of each of their turns, and war dogs inside the tower can observe through and have line of effect through its walls. This ability can be used only once per encounter.')
 						]
@@ -3186,7 +3186,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(15)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('For each war dog reduced to 0 Stamina in the encounter, a war dog shriketrooper appears in an unoccupied space within distance.')
 						]

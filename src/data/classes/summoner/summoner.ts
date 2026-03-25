@@ -144,7 +144,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						sections: [
 							FactoryLogic.createAbilitySectionText('R damage. If the target has Р < [слабкий], they are slowed (save ends).'),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'This ability has the Charge keyword when it’s used as a melee strike.'
 							}),
 							FactoryLogic.createAbilitySectionPackage('summoner-strike')
@@ -170,7 +170,7 @@ When combat begins, any of your minions who were summoned outside of combat fini
 								})
 							),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'On a natural 19 or 20, each target makes a free strike.'
 							}),
 							FactoryLogic.createAbilitySectionText('Your minions act in place of you making a free strike or using a signature ability. If you were granted the triggered action against a specific target, your minions must strike the same target. If the triggered action granted you a signature ability, you have an edge on the power roll.')
@@ -306,7 +306,7 @@ You can shift into squares that contain one of your minions, even if they occupy
 									sections: [
 										FactoryLogic.createAbilitySectionText('You summon a signature minion in an unoccupied space adjacent to the target. If the target is force moved into the minion, you can choose to make the target take no damage from the collision.'),
 										FactoryLogic.createAbilitySectionField({
-											name: 'Special',
+											name: 'Особливе',
 											effect: 'Instead of summoning a new minion, you can command one of your minions within distance to shift up to their speed toward a square adjacent to the target before any additional effects occur.'
 										})
 									]
@@ -325,7 +325,7 @@ You can shift into squares that contain one of your minions, even if they occupy
 									target: 'Один союзник',
 									sections: [
 										FactoryLogic.createAbilitySectionField({
-											name: 'Special',
+											name: 'Особливе',
 											effect: 'If the target is a minion, they must be the only minion remaining in their squad.'
 										}),
 										FactoryLogic.createAbilitySectionText('The damage the target receives is reduced by an amount that leaves the target alive with 1 point of Stamina.')
@@ -908,7 +908,7 @@ You can spend charges to activate one of the following effects. You can activate
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSummoner()],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -924,7 +924,7 @@ The minions are summoned within distance regardless of your minion maximum and w
 
 If they move adjacent to their target, become targeted by an opportunity attack, or stop moving, they explode, dealing 2 damage to one adjacent creature or object and pushing them 1 square. If a target is affected by two or more minions’ explosions, the effects stack. These minions activate no effects upon death, and you gain no essence from their deaths.`),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Special',
+					name: 'Особливе',
 					effect: 'In addition to the minions summoned as a part of this ability, you can choose to command any number of your minions within distance, provided they haven’t used a main action or maneuver during the turn.'
 				})
 			]
@@ -936,7 +936,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each minion under your control during the encounter is the target of the following effect:The target’s strikes can inflict I < [слабкий] taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.')
@@ -962,7 +962,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSummoner()],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -1004,7 +1004,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, each minion under your control during the encounter is the target of the following effect. The first time on a turn that the target moves through an enemy’s space, the enemy can choose to shift 1 square or be M < [слабкий] (or M < [середній] if the target is larger than the enemy) knocked prone. The potency increases by 1 for each subsequent target that moves through the enemy’s space during the same move action.')
@@ -1017,7 +1017,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSummoner()],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
@@ -1045,7 +1045,7 @@ These minions die at the end of your turn, activate no effects upon death, and y
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Special',
+					name: 'Особливе',
 					effect: 'You can choose to kill any number of your minions within your Summoner’s Range as a part of this ability, provided they haven’t used a main action or maneuver during the turn. Each target takes an additional 1 damage, plus 1 damage for each minion killed this way. These minions activate no effects upon death, and you gain no essence from their deaths.'
 				})
 			]
@@ -1132,7 +1132,7 @@ Each target can immediately make each of their saving throws and stand up from p
 				),
 				FactoryLogic.createAbilitySectionText('You can use this ability as if in the space of one of your minions within your Summoner’s Range.'),
 				FactoryLogic.createAbilitySectionField({
-					name: 'Special',
+					name: 'Особливе',
 					effect: 'You can change the damage type to be a type that your champion deals on their stat block.'
 				})
 			]
@@ -1161,8 +1161,8 @@ Until the end of the encounter, whenever a target gets a tier 1 result on a stri
 			description: 'The battle is now a war. Your entire army storms the field.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic],
-			distance: [FactoryLogic.distance.createSpecial('Special')],
-			target: 'Special',
+			distance: [FactoryLogic.distance.createSpecial('Особливе')],
+			target: 'Особливе',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`

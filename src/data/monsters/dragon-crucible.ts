@@ -202,7 +202,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						cost: 1,
 						sections: [
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'The target must be size 2 or smaller.'
 							}),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

@@ -1340,7 +1340,7 @@ When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-5',
-				name: 'Special',
+				name: 'Особливе',
 				description: 'When you make a Presence test and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.'
 			})
 		],
@@ -1536,7 +1536,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-noble-4',
-				name: 'Special',
+				name: 'Особливе',
 				description: 'If you take this title, you might occasionally be called upon to perform duties for the person who granted your noble rank.'
 			})
 		],
@@ -1583,7 +1583,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-scarred-2',
-				name: 'Special',
+				name: 'Особливе',
 				description: 'You can gain this title multiple times. The second and each subsequent time that you gain it, your Stamima maximum doesn’t increase.'
 			})
 		],

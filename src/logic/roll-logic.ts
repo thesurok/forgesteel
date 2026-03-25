@@ -2,12 +2,12 @@ import { Collections } from '@/utils/collections';
 import { RollState } from '@/enums/roll-state';
 
 export class RollLogic {
-	static getOdds = (modifiers: number[], rollState: RollState, rollType: string = 'Power Roll') => {
+	static getOdds = (modifiers: number[], rollState: RollState, rollType: string = 'Кидок Сили') => {
 		const results = [];
 
 		for (let a = 1; a <= 10; ++a) {
 			for (let b = 1; b <= 10; ++b) {
-				const total = Collections.sum([ a, b, ...modifiers, RollLogic.getBonus(rollState, rollType) ], r => r);
+				const total = Collections.sum([a, b, ...modifiers, RollLogic.getBonus(rollState, rollType)], r => r);
 				if (total >= 17) {
 					// Tier 3
 					switch (rollState) {
@@ -48,7 +48,7 @@ export class RollLogic {
 		return results;
 	};
 
-	static getBonus = (rollState: RollState, type: string = 'Power Roll') => {
+	static getBonus = (rollState: RollState, type: string = 'Кидок Сили') => {
 		if (type == 'Saving Throw') {
 			return 0;
 		}

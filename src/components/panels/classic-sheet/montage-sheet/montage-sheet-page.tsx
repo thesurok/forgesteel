@@ -23,7 +23,7 @@ interface Props {
 export const MontageSheetPage = (props: Props) => {
 	const montage = useMemo(
 		() => MontageSheetBuilder.buildMontageSheet(props.montage, props.heroes, props.options),
-		[ props.montage, props.heroes, props.options ]
+		[props.montage, props.heroes, props.options]
 	);
 
 	const sheetClasses = useMemo(
@@ -38,7 +38,7 @@ export const MontageSheetPage = (props: Props) => {
 			}
 			return classes;
 		},
-		[ props.options.classicSheetPageSize, props.options.colorSheet, props.options.colorScheme ]
+		[props.options.classicSheetPageSize, props.options.colorSheet, props.options.colorScheme]
 	);
 
 	return (
@@ -84,7 +84,7 @@ export const MontageSheetPage = (props: Props) => {
 						<div className='assist-roll'>
 							<h3>Assisting a Test</h3>
 							<div className='power-roll'>
-								<div className='power'>Power Roll + Characteristic</div>
+								<div className='power'>Кидок Сили + Characteristic</div>
 								<div className='roll-tiers'>
 									<div className='tier t1'>
 										<img alt='≤ 11' className='range' src={rollT1Icon} />

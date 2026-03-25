@@ -67,7 +67,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						tier3: '9 corruption damage; A<2 restrained (save ends)'
 					})),
 					FactoryLogic.createAbilitySectionField({
-						name: 'Special',
+						name: 'Особливе',
 						effect: 'This ability can’t be used by a minion.'
 					})
 				]

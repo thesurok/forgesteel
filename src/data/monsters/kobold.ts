@@ -710,8 +710,8 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						id: 'kobold-10-feature-5',
 						name: 'Firetail Pilum',
 						type: FactoryLogic.type.createVillainAction(1),
-						distance: [FactoryLogic.distance.createSpecial('Special')],
-						target: 'Special',
+						distance: [FactoryLogic.distance.createSpecial('Особливе')],
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The centurion moves up to their speed, ignoring difficult terrain, and uses Pilum against each creature whose space they move through. They make one power roll against all targets, and the ability deals an extra 5 damage. While weakened by that ability, each target takes 2 fire damage at the start of each of their turns.')
 						]

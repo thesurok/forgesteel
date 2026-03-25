@@ -128,7 +128,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The area extends from both the basilisk’s eyes, and this ability targets the first creature without cover on either side of the area.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -235,7 +235,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 2, within: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** The area extends from both the tonguesnapper’s eyes, and this ability targets the first creature without cover on either side of the area.'),
 							FactoryLogic.createAbilitySectionRoll(

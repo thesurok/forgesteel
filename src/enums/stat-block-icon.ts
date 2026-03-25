@@ -6,7 +6,7 @@ export enum StatBlockIcon {
 	MeleeRanged = 'MeleeRanged',
 	Ranged = 'Ranged',
 	Self = 'Себе',
-	SpecialArea = 'Special',
+	SpecialArea = 'Особливе',
 	Target = 'Target',
 	Trait = 'Trait',
 	Trigger = 'Trigger',

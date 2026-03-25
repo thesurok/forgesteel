@@ -267,7 +267,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({

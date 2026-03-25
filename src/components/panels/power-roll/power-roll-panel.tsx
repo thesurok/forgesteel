@@ -28,8 +28,8 @@ interface Props {
 }
 
 export const PowerRollPanel = (props: Props) => {
-	const [ distance, setDistance ] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
-	const [ showOdds, setShowOdds ] = useState<boolean>(false);
+	const [distance, setDistance] = useState<AbilityDistanceType | undefined>(props.ability && props.ability.distance.length > 1 ? props.ability.distance[0].type : undefined);
+	const [showOdds, setShowOdds] = useState<boolean>(false);
 
 	const getHeader = () => {
 		if (props.test) {
@@ -61,16 +61,16 @@ export const PowerRollPanel = (props: Props) => {
 
 		if (rollCharacteristics.length > 0) {
 			if (rollCharacteristics.length === 0) {
-				return 'Power Roll';
+				return 'Кидок Сили';
 			}
 			if (rollCharacteristics.length === 5) {
-				return 'Power Roll + Highest Characteristic';
+				return 'Кидок Сили + Highest Characteristic';
 			}
-			return `Power Roll + ${rollCharacteristics.join(' or ')}`;
+			return `Кидок Сили + ${rollCharacteristics.join(' or ')}`;
 		}
 
 		const sign = props.powerRoll.bonus >= 0 ? '+' : '';
-		return `Power Roll ${sign} ${props.powerRoll.bonus}`;
+		return `Кидок Сили ${sign} ${props.powerRoll.bonus}`;
 	};
 
 	const getFooter = () => {

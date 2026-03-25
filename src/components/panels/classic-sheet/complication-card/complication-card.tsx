@@ -17,7 +17,7 @@ export const ComplicationCard = (props: Props) => {
 		if (complication && !(complication.benefits.length && complication.drawbacks.length)) {
 			return (
 				<section className='bordered'>
-					<h3>Description</h3>
+					<h3>Опис</h3>
 					<p>{complication.description}</p>
 				</section>
 			);
@@ -25,9 +25,9 @@ export const ComplicationCard = (props: Props) => {
 	};
 
 	const getBenefitSection = () => {
-		let header = 'Benefit';
+		let header = 'Перевага';
 		if (complication && !complication.drawbacks.length) {
-			header = 'Benefit and Drawback';
+			header = 'Перевага та Недолік';
 		}
 		if (!complication || complication.benefits.length) {
 			return (
@@ -47,9 +47,9 @@ export const ComplicationCard = (props: Props) => {
 
 	const getDrawbackSection = () => {
 		if (!complication || complication.drawbacks.length) {
-			let header = 'Drawback';
+			let header = 'Недолік';
 			if (complication && !complication.benefits.length) {
-				header = 'Benefit and Drawback';
+				header = 'Перевага та Недолік';
 			}
 			return (
 				<section className='bordered drawback'>
@@ -68,7 +68,7 @@ export const ComplicationCard = (props: Props) => {
 
 	return (
 		<div className='complication card'>
-			<h2>Complication</h2>
+			<h2>Ускладнення</h2>
 			<div className='name'>{complication?.name}</div>
 			{getDescriptionSection()}
 			{getBenefitSection()}

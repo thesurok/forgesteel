@@ -16,7 +16,7 @@ export const NegotiationArgumentsCard = () => {
 					<div>Used Motivation?</div>
 				</div>
 				{
-					[ ...Array(6) ].map((_e, i) => {
+					[...Array(6)].map((_e, i) => {
 						return (
 							<div className='row' key={`negotiaion-arguments-${i}`}>
 								<div className='motivation-indicator'>
@@ -33,7 +33,7 @@ export const NegotiationArgumentsCard = () => {
 				<div className='appeal-roll'>
 					<h3>Appeal to Motivation</h3>
 					<div className='power-roll'>
-						<div className='power'>Power Roll + Reason, Intuition, or Presence:</div>
+						<div className='power'>Кидок Сили + Reason, Intuition, or Presence:</div>
 						<div className='roll-tiers'>
 							<div className='tier t1'>
 								<img alt='≤ 11' className='range' src={rollT1Icon} />
@@ -64,7 +64,7 @@ export const NegotiationArgumentsCard = () => {
 				<div className='standard-roll'>
 					<h3>No Motivation or Pitfall</h3>
 					<div className='power-roll'>
-						<div className='power'>Power Roll + Reason, Intuition, or Presence:</div>
+						<div className='power'>Кидок Сили + Reason, Intuition, or Presence:</div>
 						<div className='roll-tiers'>
 							<div className='tier t1'>
 								<img alt='≤ 11' className='range' src={rollT1Icon} />

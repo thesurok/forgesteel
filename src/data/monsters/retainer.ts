@@ -662,7 +662,7 @@ export const retainer: MonsterGroup = {
 						type: FactoryLogic.type.createManeuver({ qualifiers: ['Encounter'] }),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the next turn, the area is filled with darkness. The shade’s mentor ignores concealment created by this darkness.')
 						]
@@ -979,8 +979,8 @@ export const retainer: MonsterGroup = {
 						id: 'retainer-10-retainer-10',
 						name: 'Poison Blade',
 						type: FactoryLogic.type.createManeuver({ qualifiers: ['Encounter'] }),
-						distance: [FactoryLogic.distance.createSpecial('Special')],
-						target: 'Special',
+						distance: [FactoryLogic.distance.createSpecial('Особливе')],
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon strike, the strike deals an extra 10 poison damage, and if the target has M < [середній], they are weakened (save ends). If the guide is adjacent to their mentor when they use Poison Blade, they apply poison to the mentor’s weapon in the same way.')
 						]

@@ -289,8 +289,8 @@ export const polderShadow = {
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -306,8 +306,8 @@ export const polderShadow = {
 			data: {
 				options: [],
 				listOptions: [
-					'Crafting',
-					'Exploration'
+					'Ремесло',
+					'Дослідження'
 				],
 				count: 1,
 				selected: [
@@ -326,7 +326,7 @@ export const polderShadow = {
 					'Perform'
 				],
 				listOptions: [
-					'Crafting'
+					'Ремесло'
 				],
 				count: 1,
 				selected: [
@@ -414,7 +414,7 @@ export const polderShadow = {
 						data: {
 							options: [],
 							listOptions: [
-								'Intrigue'
+								'Інтриги'
 							],
 							count: 2,
 							selected: [
@@ -433,9 +433,9 @@ export const polderShadow = {
 								'Criminal Underworld'
 							],
 							listOptions: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 5,
 							selected: [
@@ -685,9 +685,9 @@ export const polderShadow = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 1,
 							selected: []
@@ -719,7 +719,7 @@ export const polderShadow = {
 								keywords: [],
 								distance: [
 									{
-										type: 'Special',
+										type: 'Особливе',
 										value: 0,
 										value2: 0,
 										within: 0,
@@ -919,12 +919,12 @@ export const polderShadow = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -938,11 +938,11 @@ export const polderShadow = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -997,12 +997,12 @@ export const polderShadow = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1150,11 +1150,11 @@ export const polderShadow = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1186,12 +1186,12 @@ export const polderShadow = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1328,12 +1328,12 @@ export const polderShadow = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1347,11 +1347,11 @@ export const polderShadow = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -2788,7 +2788,7 @@ export const polderShadow = {
 								data: {
 									options: [],
 									listOptions: [
-										'Lore'
+										'Знання'
 									],
 									count: 1,
 									selected: [
@@ -3431,7 +3431,7 @@ export const polderShadow = {
 								data: {
 									options: [],
 									listOptions: [
-										'Crafting'
+										'Ремесло'
 									],
 									count: 1,
 									selected: [
@@ -4141,7 +4141,7 @@ export const polderShadow = {
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -4777,7 +4777,7 @@ export const polderShadow = {
 				data: {
 					options: [],
 					listOptions: [
-						'Lore'
+						'Знання'
 					],
 					count: 1,
 					selected: [
@@ -4793,7 +4793,7 @@ export const polderShadow = {
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 2,
 					selected: [
@@ -4836,7 +4836,7 @@ export const polderShadow = {
 				type: 'Perk',
 				data: {
 					lists: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -4846,7 +4846,7 @@ export const polderShadow = {
 							description: 'Whenever you fail a test using any skill from the intrigue skill group, you can lose Stamina equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.',
 							type: 'Text',
 							data: null,
-							list: 'Intrigue'
+							list: 'Інтриги'
 						}
 					]
 				}

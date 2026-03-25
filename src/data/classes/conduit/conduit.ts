@@ -822,7 +822,7 @@ export const conduit: HeroClass = {
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'Special',
+			target: 'Особливе',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ви викликаєте духа розміру 2, якому не можна завдати шкоди, і який з’являється на незайнятій клітині в межах дистанції. Дух триває до кінця вашого наступного ходу. Ви та ваші союзники можете рухатися через клітину духа, а вороги не можуть. Будь-який ворог, який уперше за раунд бою переміщується в межі 2 клітин від духа або починає там свій хід, отримує священну шкоду, рівну вашому показнику Інтуїції.')

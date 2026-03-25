@@ -205,7 +205,7 @@ export const kingfissureWorm: MonsterGroup = {
 						name: 'Tearing Recoil',
 						type: FactoryLogic.type.createTrigger('A tongue takes damage that doesn’t reduce it to 0 Stamina.'),
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The kingfissure worm deals 5 damage to the creature or object the tongue had grabbed, releases that creature or object, then pulls the damaged tongue back into their mouth.')
 						]
@@ -241,7 +241,7 @@ export const kingfissureWorm: MonsterGroup = {
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'Each target must be on the ground.'
 							}),
 							FactoryLogic.createAbilitySectionText('The area becomes a 10-square-deep fissure in the earth. Each target makes an **Agility test**.'),
@@ -263,7 +263,7 @@ export const kingfissureWorm: MonsterGroup = {
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createSelf()],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have A<4 they are knocked prone. Any creature who is made winded by this damage is swallowed (see Swallowed).')
 						]

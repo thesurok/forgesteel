@@ -38,7 +38,7 @@ export const TitlesCard = (props: Props) => {
 
 	return (
 		<div className='titles card'>
-			<h2>Titles</h2>
+			<h2>Титули</h2>
 			<div className={`titles-container ${wide ? 'three-column' : 'two-column'}`}>
 				{character.titles?.map(t => getTitleFragment(t, fragmentSize))}
 			</div>

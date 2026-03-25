@@ -44,9 +44,9 @@ interface Props {
 
 export const SettingsModal = (props: Props) => {
 	const { themeMode, setTheme } = useTheme();
-	const [ options, setOptions ] = useState<Options>(Utils.copy(props.options));
-	const [ page, setPage ] = useState<string>('Settings');
-	const [ standardAbilitiesMode, setStandardAbilitiesMode ] = useState<string>(() => {
+	const [options, setOptions] = useState<Options>(Utils.copy(props.options));
+	const [page, setPage] = useState<string>('Settings');
+	const [standardAbilitiesMode, setStandardAbilitiesMode] = useState<string>(() => {
 		if (options.shownStandardAbilities.length === 0) {
 			return 'none';
 		}
@@ -56,11 +56,11 @@ export const SettingsModal = (props: Props) => {
 
 		return 'custom';
 	});
-	const [ showAbilitySelector, setShowAbilitySelector ] = useState<boolean>(false);
-	const [ flag, setFlag ] = useState<string>('');
+	const [showAbilitySelector, setShowAbilitySelector] = useState<boolean>(false);
+	const [flag, setFlag] = useState<string>('');
 
-	const [ connectionSettings, setConnectionSettings ] = useState<ConnectionSettings>(props.connectionSettings);
-	const [ reloadNeeded, setReloadNeeded ] = useState<boolean>(false);
+	const [connectionSettings, setConnectionSettings] = useState<ConnectionSettings>(props.connectionSettings);
+	const [reloadNeeded, setReloadNeeded] = useState<boolean>(false);
 
 	const updateConnectionSettings = (value: ConnectionSettings) => {
 		const copy = Utils.copy(value);
@@ -98,7 +98,7 @@ export const SettingsModal = (props: Props) => {
 
 		const setShownStandardAbilities = (value: string | string[]) => {
 			const copy = Utils.copy(options);
-			copy.shownStandardAbilities = [ value ].flat(1);
+			copy.shownStandardAbilities = [value].flat(1);
 			setOptions(copy);
 			props.setOptions(copy);
 		};
@@ -272,7 +272,7 @@ export const SettingsModal = (props: Props) => {
 			<Expander title='Heroes - Classic View'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
 					<Toggle label='Show play state' value={options.includePlayState} onChange={setIncludePlayState} />
-					<Toggle label='Calculate Power Roll bonuses' value={options.showPowerRollCalculation} onChange={setShowPowerRollCalculation} />
+					<Toggle label='Calculate Кидок Сили bonuses' value={options.showPowerRollCalculation} onChange={setShowPowerRollCalculation} />
 					<LabelControl
 						label='Show class features'
 						control={
@@ -382,7 +382,7 @@ export const SettingsModal = (props: Props) => {
 							<Segmented
 								name='pagesize'
 								block={true}
-								options={[ SheetPageSize.Letter, SheetPageSize.A4 ]}
+								options={[SheetPageSize.Letter, SheetPageSize.A4]}
 								value={options.classicSheetPageSize}
 								onChange={setClassicSheetPageSize}
 							/>
@@ -406,21 +406,21 @@ export const SettingsModal = (props: Props) => {
 					<Toggle label='Use color' value={options.colorSheet} onChange={setColorSheet} />
 					{
 						options.colorSheet &&
-							<LabelControl
-								label='Color scheme'
-								control={
-									<Segmented
-										name='colorScheme'
-										block={true}
-										options={[
-											{ value: 'community', label: 'Community' },
-											{ value: 'classic', label: 'Classic' }
-										]}
-										value={options.colorScheme}
-										onChange={setColorScheme}
-									/>
-								}
-							/>
+						<LabelControl
+							label='Color scheme'
+							control={
+								<Segmented
+									name='colorScheme'
+									block={true}
+									options={[
+										{ value: 'community', label: 'Community' },
+										{ value: 'classic', label: 'Classic' }
+									]}
+									value={options.colorScheme}
+									onChange={setColorScheme}
+								/>
+							}
+						/>
 					}
 					<LabelControl
 						label='Text contrast'
@@ -518,7 +518,7 @@ export const SettingsModal = (props: Props) => {
 									<Select
 										style={{ width: '100%' }}
 										placeholder='Select a party'
-										options={[ '', ...parties ].map(p => ({ value: p, label: p || 'No heroes' }))}
+										options={['', ...parties].map(p => ({ value: p, label: p || 'No heroes' }))}
 										optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 										value={options.party}
 										onChange={p => setParty(p || '')}
@@ -575,7 +575,7 @@ export const SettingsModal = (props: Props) => {
 							<Select
 								style={{ width: '100%' }}
 								placeholder='Select a party'
-								options={[ ...parties, '' ].map(p => ({ value: p, label: p || 'A custom party' }))}
+								options={[...parties, ''].map(p => ({ value: p, label: p || 'A custom party' }))}
 								optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 								value={options.heroParty}
 								onChange={p => setHeroParty(p || '')}
@@ -614,8 +614,8 @@ export const SettingsModal = (props: Props) => {
 		return (
 			<Expander title='Tactical Maps'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<NumberSpin label='Director Map Grid Size' min={5} steps={[ 5 ]} value={options.gridSize} onChange={setGridSize} />
-					<NumberSpin label='Player Map Grid Size' min={5} steps={[ 5 ]} value={options.playerGridSize} onChange={setPlayerGridSize} />
+					<NumberSpin label='Director Map Grid Size' min={5} steps={[5]} value={options.gridSize} onChange={setGridSize} />
+					<NumberSpin label='Player Map Grid Size' min={5} steps={[5]} value={options.playerGridSize} onChange={setPlayerGridSize} />
 				</Space>
 			</Expander>
 		);
@@ -824,7 +824,7 @@ export const SettingsModal = (props: Props) => {
 				<Flex align='center' justify='center' style={{ width: '100%' }}>
 					<Segmented
 						name='tabs'
-						options={[ 'Settings', 'Admin' ]}
+						options={['Settings', 'Admin']}
 						value={page}
 						onChange={setPage}
 					/>

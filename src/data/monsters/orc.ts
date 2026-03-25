@@ -1045,7 +1045,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						name: 'Sandstorm',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The scyza kicks up a sandstorm, granting concealment to themself and any ally in the area until the end of the scyza’s next turn. Each enemy in the area makes an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

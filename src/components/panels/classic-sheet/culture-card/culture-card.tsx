@@ -22,15 +22,15 @@ export const CultureCard = (props: Props) => {
 
 	return (
 		<div className='culture card'>
-			<h2>Culture</h2>
+			<h2>Культура</h2>
 			<section className='name bordered'>
-				<h3>Culture Name</h3>
+				<h3>Назва культури</h3>
 				<div className='content'>
 					{character.culture?.name}
 				</div>
 			</section>
 			<section className='culture-language bordered'>
-				<h3>Culture Language</h3>
+				<h3>Мова культури</h3>
 				{
 					character.culture?.language ?
 						<FeatureComponent
@@ -42,12 +42,12 @@ export const CultureCard = (props: Props) => {
 			</section>
 			<div className='culture-edge'>
 				<p>
-					You gain an edge on tests made to recall lore about your culture,
-					and on tests made to influence and interact with people of your culture.
+					Ви отримуєте перевагу в тестах на згадування знань про вашу культуру,
+					а також у тестах на вплив та взаємодію з людьми вашої культури.
 				</p>
 			</div>
 			<section className='bordered'>
-				<h3>Environment</h3>
+				<h3>Середовище</h3>
 				<h4>{character.culture?.environment?.name}</h4>
 				{character.culture?.environment ?
 					<FeatureComponent
@@ -57,7 +57,7 @@ export const CultureCard = (props: Props) => {
 					: undefined}
 			</section>
 			<section className='bordered'>
-				<h3>Organization</h3>
+				<h3>Організація</h3>
 				<h4>{character.culture?.organization?.name}</h4>
 				{character.culture?.organization ?
 					<FeatureComponent
@@ -67,7 +67,7 @@ export const CultureCard = (props: Props) => {
 					: undefined}
 			</section>
 			<section className='bordered'>
-				<h3>Upbringing</h3>
+				<h3>Виховання</h3>
 				<h4>{character.culture?.upbringing?.name}</h4>
 				{character.culture?.upbringing ?
 					<FeatureComponent
@@ -77,7 +77,7 @@ export const CultureCard = (props: Props) => {
 					: undefined}
 			</section>
 			<section className='bordered languages'>
-				<h3>Languages</h3>
+				<h3>Мови</h3>
 				<ul>
 					{getLanguages()}
 				</ul>

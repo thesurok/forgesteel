@@ -364,7 +364,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						cost: 2,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Until the end of the next round, a cloud of blood vapor fills the area. The cloud blocks line of effect for enemies, and any enemy has damage weakness 3 while in the area. The bloodletter can then shift up to their speed, and can attempt to hide if they end that shift with concealment.')
 						]
@@ -595,7 +595,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wyrd summons two **elemental motes** or two **soot crows** into unoccupied spaces within distance.')
 						]
@@ -609,7 +609,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 8, within: 8 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The wyrd shapes the land in the area as if it were loose clay, either raising the ground or pushing it down to create a trench. Any creature in the area moves with the terrain to its new higher elevation, or falls if the ground is lowered beneath them.')
 						]
@@ -739,7 +739,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						repeatable: true,
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The ordinator summons four **elemental motes** or four **soot crows** into unoccupied space within distance.'),
 							FactoryLogic.createAbilitySectionSpend({

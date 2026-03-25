@@ -35,7 +35,7 @@ interface Props {
 }
 
 export const CareerEditPanel = (props: Props) => {
-	const [ career, setCareer ] = useState<Career>(props.career);
+	const [career, setCareer] = useState<Career>(props.career);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -122,7 +122,7 @@ export const CareerEditPanel = (props: Props) => {
 						<Expander
 							key={f.id}
 							title={f.name || 'Unnamed Feature'}
-							tags={[ FeatureLogic.getFeatureTag(f) ]}
+							tags={[FeatureLogic.getFeatureTag(f)]}
 							extra={[
 								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'up'); }} />,
 								<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'down'); }} />,
@@ -191,7 +191,7 @@ export const CareerEditPanel = (props: Props) => {
 						<Button type='text' icon={<PlusOutlined />} onClick={addIncident} />
 					}
 				>
-					Inciting Incidents
+					Поворотна подія
 				</HeaderText>
 				{
 					career.incitingIncidents.options.map(o => (
@@ -228,17 +228,17 @@ export const CareerEditPanel = (props: Props) => {
 						items={[
 							{
 								key: '1',
-								label: 'Career',
+								label: 'Кар\'єра',
 								children: getNameAndDescriptionSection()
 							},
 							{
 								key: '2',
-								label: 'Features',
+								label: 'Здібності',
 								children: getFeaturesEditSection()
 							},
 							{
 								key: '3',
-								label: 'Inciting Incidents',
+								label: 'Поворотна подія',
 								children: getIncitingIncidentsSection()
 							}
 						]}

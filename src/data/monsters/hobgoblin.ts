@@ -904,7 +904,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 10 })],
-						target: 'Special',
+						target: 'Особливе',
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionText('The war mage consecrates the area and causes it to smolder until the end of the encounter. The area is difficult terrain and any enemy in the area has fire weakness 10.')

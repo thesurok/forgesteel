@@ -79,9 +79,9 @@ export const WelcomePage = (props: Props) => {
 							onNewHero={props.onNewHero}
 						/>
 					</div>
-					<div className='tip-column'>
+					{/* <div className='tip-column'>
 						<Tips />
-					</div>
+					</div> */}
 				</div>
 				<AppFooter
 					page='welcome'
@@ -115,13 +115,13 @@ const Welcome = (props: WelcomeProps) => {
 					<div className='welcome-section'>
 						<div>
 							<HeaderText>
-								For Players
+								Для гравців
 							</HeaderText>
 							<div className='ds-text'>
 								Якщо ви гравець <b>DRAW STEEL</b>, ви у правильному місці.
 							</div>
 							<div className='ds-text'>
-								На екрані <b>HEROES</b> ви можете легко створювати своїх персонажів; майстер створення героя проведе вас крок за кроком.
+								На екрані <b>ГЕРОЇ</b> ви можете легко створювати своїх персонажів; майстер створення героя проведе вас крок за кроком.
 							</div>
 							<ul>
 								<li>
@@ -146,8 +146,8 @@ const Welcome = (props: WelcomeProps) => {
 						</div>
 						<div className='welcome-buttons'>
 							<Flex align='center' justify='center' gap={10}>
-								<Button type='primary' icon={<TeamOutlined />} onClick={() => navigation.goToHeroList()}>Heroes</Button>
-								<Button icon={<PlusOutlined />} onClick={props.onNewHero}>New Hero</Button>
+								<Button type='primary' icon={<TeamOutlined />} onClick={() => navigation.goToHeroList()}>Герої</Button>
+								<Button icon={<PlusOutlined />} onClick={props.onNewHero}>Новий герой</Button>
 							</Flex>
 						</div>
 					</div>
@@ -157,38 +157,38 @@ const Welcome = (props: WelcomeProps) => {
 					<div className='welcome-section'>
 						<div>
 							<HeaderText>
-								For Directors: Prep Time
+								Для режисерів: Підготовка
 							</HeaderText>
 							<div className='ds-text'>
-								In your <b>LIBRARY</b>, you can build anything you might need for your games:
+								У вашій <b>БІБЛІОТЕЦІ</b> ви можете створювати все, що може знадобитися для ваших ігор:
 							</div>
 							<ul>
 								<li>
-									You can build <b>encounters</b>, ensuring that they're perfectly balanced for your heroes.
-									Add monsters and terrain objects, and the app will automatically calculate the encounter's difficulty - or let the app generate a random encounter for you.
-									You can specify the encounter's objectives, or you can use one of the predefined options.
+									Ви можете створювати <b>зустрічі</b>, забезпечуючи їх ідеальний баланс для ваших героїв.
+									Додавайте монстрів та об'єкти місцевості, і додаток автоматично розрахує складність зустрічі - або дозвольте додатку згенерувати випадкову зустріч для вас.
+									Ви можете вказати цілі зустрічі або використати один із попередньо визначених варіантів.
 								</li>
 								<li>
-									You can build <b>montage tests</b>, laying out all the options the players can take and how many times they can take them.
+									Ви можете створювати <b>тестові монтажі</b>, розкладаючи всі варіанти, які можуть обрати гравці, і скільки разів вони можуть їх обрати.
 								</li>
 								<li>
-									You can build <b>negotiations</b>, specifying motivations, pitfalls, and outcomes.
+									Ви можете створювати <b>переговори</b>, вказуючи мотивації, пастки та результати.
 								</li>
 								<li>
-									You can choose from a set of predefined encounters, montages, and negotiations - or use them as a starting point for your own creations.
+									Ви можете обирати з набору попередньо визначених зустрічей, монтажів та переговорів - або використовувати їх як відправну точку для власних творінь.
 								</li>
 								<li>
-									You can also create detailed <b>tactical maps</b> for your heroes to explore, adding tiles and walls and overlays - or you can generate a random map of whatever size you need.
-									You can use battlemap images for your maps - even animated maps!
+									Ви також можете створювати детальні <b>тактичні карти</b> для ваших героїв, додаючи плитки, стіни та накладки - або ви можете згенерувати випадкову карту будь-якого розміру.
+									Ви можете використовувати зображення бойових карт для ваших карт - навіть анімовані карти!
 								</li>
 							</ul>
 							<div className='ds-text'>
-								All of these elements can be bundled together into an <b>adventure</b>.
+								Всі ці елементи можна об'єднати в <b>пригоди</b>.
 							</div>
 						</div>
 						<div className='welcome-buttons'>
 							<Flex align='center' justify='center' gap={10}>
-								<Button type='primary' icon={<BookOutlined />} onClick={() => navigation.goToLibrary('encounter')}>Library</Button>
+								<Button type='primary' icon={<BookOutlined />} onClick={() => navigation.goToLibrary('encounter')}>Бібліотека</Button>
 							</Flex>
 						</div>
 					</div>
@@ -198,37 +198,37 @@ const Welcome = (props: WelcomeProps) => {
 					<div className='welcome-section'>
 						<div>
 							<HeaderText>
-								For Directors: Game Time
+								Для режисерів: Під час гри
 							</HeaderText>
 							<div className='ds-text'>
-								In the <b>SESSION</b> screen, you can run your encounters, montages, negotiations, and maps.
+								У екрані <b>СЕСІЯ</b> ви можете проводити ваші зустрічі, монтажі, переговори та карти.
 							</div>
 							<ul>
 								<li>
-									In an <b>encounter</b> you can see at a glance the current stamina and conditions of all your monsters (and heroes) and you can add a captain to your minions.
-									When you start a round the app will automatically grant you the appropriate amount of malice.
-									It lists all the ways in which you can spend malice, and it provides a cheat sheet for any triggered actions your monsters or terrain objects have.
+									У <b>зустрічі</b> ви можете на перший погляд побачити поточну витривалість та умови всіх ваших монстрів (і героїв), а також додати капітана до ваших міньйонів.
+									Коли ви починаєте раунд, додаток автоматично надає вам відповідну кількість злобності.
+									Він показує всі способи, якими ви можете витратити злобність, і надає шпаргалку для будь-яких тригерних дій ваших монстрів або об'єктів місцевості.
 								</li>
 								<li>
-									In a <b>montage</b> you can see which skills the heroes have used, and how many successes and failures they have accumulated.
+									У <b>монтажі</b> ви можете бачити, які навички використовували герої, і скільки успіхів та невдач вони накопичили.
 								</li>
 								<li>
-									In a <b>negotiation</b> you can track the interest and negotiation stats, and see all the details for motivations and pitfalls.
+									У <b>переговорах</b> ви можете відстежувати інтереси та статистику переговорів, а також бачити всі деталі мотивацій та пасток.
 								</li>
 								<li>
-									In a <b>tactical map</b> you can modify the fog of war and even edit the map on the fly.
+									У <b>тактичній карті</b> ви можете змінювати туман війни та навіть редагувати карту на ходу.
 								</li>
 								<li>
-									You can also create a <b>counter</b> that can count down (or up) to track time, alert levels, or anything else you might need.
+									Ви також можете створювати <b>лічильник</b>, який може відраховувати час (вгору або вниз), рівні тривоги або будь-що інше, що вам може знадобитися.
 								</li>
 							</ul>
 							<div className='ds-text'>
-								Any of these elements can be shared with your players by opening the <b>player view</b>, a separate tab that you can share (using Discord etc).
+								Будь-який з цих елементів можна поділитися з вашими гравцями, відкривши <b>вигляд гравця</b>, окрему вкладку, яку ви можете поділитися (використовуючи Discord тощо).
 							</div>
 						</div>
 						<div className='welcome-buttons'>
 							<Flex align='center' justify='center' gap={10}>
-								<Button type='primary' icon={<PlayCircleOutlined />} onClick={() => navigation.goToSession()}>Session</Button>
+								<Button type='primary' icon={<PlayCircleOutlined />} onClick={() => navigation.goToSession()}>Сесія</Button>
 							</Flex>
 						</div>
 					</div>
@@ -238,34 +238,34 @@ const Welcome = (props: WelcomeProps) => {
 					<div className='welcome-section'>
 						<div>
 							<HeaderText>
-								For Content Creators
+								Для творців контенту
 							</HeaderText>
 							<div className='ds-text'>
-								In the <b>LIBRARY</b>, you can browse the collections of official <b>DRAW STEEL</b> content.
+								У <b>БІБЛІОТЕЦІ</b> ви можете переглядати колекції офіційного контенту <b>DRAW STEEL</b>.
 							</div>
 							<ul>
 								<li>
-									For heroes: ancestries, careers, classes, complications, cultures, domains, kits, perks, titles
+									Для героїв: походження, кар'єри, класи, ускладнення, культури, домени, набори, переваги, титули
 								</li>
 								<li>
-									For directors: magic items, monsters, terrain objects
+									Для режисерів: магічні предмети, монстри, об'єкти місцевості
 								</li>
 							</ul>
 							<div className='ds-text'>
-								When you're creating your own homebrew content, you can create a copy of an existing element and modify it to suit your needs, or you can create it from scratch.
+								Коли ви створюєте власний контент, ви можете створити копію існуючого елемента та змінити його відповідно до ваших потреб, або створити його з нуля.
 							</div>
 							<div className='ds-text'>
-								If you're creating a monster, <b>FORGE STEEL</b> provides lots of extra tools so you can build exactly the monster you're imagining, and gauge exactly how much of a challenge it will be.
+								Якщо ви створюєте монстра, <b>FORGE STEEL</b> надає багато додаткових інструментів, щоб ви могли створити саме того монстра, якого уявляєте, і точно оцінити, наскільки складним він буде.
 							</div>
 							<ul>
 								<li>
-									Want to quickly re-use an ability from an existing monster? You can do that with a click.
+									Хочете швидко повторно використати здатність існуючого монстра? Ви можете зробити це одним кліком.
 								</li>
 								<li>
-									Need to check how your monster compares to others of the same level? You can do that with a click.
+									Потрібно перевірити, як ваш монстр порівнюється з іншими на тому ж рівні? Ви можете зробити це одним кліком.
 								</li>
 								<li>
-									Want to create a monster that's a mashup of two or three existing monsters? You can do that with a click.
+									Хочете створити монстра, який є сумішшю двох або трьох існуючих монстрів? Ви можете зробити це одним кліком.
 								</li>
 							</ul>
 						</div>
@@ -275,7 +275,7 @@ const Welcome = (props: WelcomeProps) => {
 							title={
 								<Markdown
 									text={`
-**FORGE STEEL** now includes third-party content. If you'd like your own homebrew creations to feature in Forge Steel, you can submit them [here](https://forms.office.com/r/mmxqfnFzx4).`}
+**FORGE STEEL** тепер включає контент від третіх сторін. Якщо ви хочете, щоб ваші власні домашні творіння з'явилися у Forge Steel, ви можете подати їх [тут](https://forms.office.com/r/mmxqfnFzx4).`}
 								/>
 							}
 						/>
@@ -293,7 +293,7 @@ const Welcome = (props: WelcomeProps) => {
 		<ErrorBoundary>
 			<div>
 				<div className='ds-text centered-text'>
-					<b>FORGE STEEL</b> is an app for <b>DRAW STEEL</b> players, directors, and content creators.
+					<b>FORGE STEEL</b> це додаток для гравців, режисерів та творців контенту <b>DRAW STEEL</b>.
 				</div>
 				<Segmented
 					style={{ margin: '15px 0' }}
@@ -303,7 +303,7 @@ const Welcome = (props: WelcomeProps) => {
 							value: 'player',
 							label: (
 								<div className='welcome-tab-button'>
-									<div className='title'>Players</div>
+									<div className='title'>Гравці</div>
 								</div>
 							)
 						},
@@ -311,8 +311,8 @@ const Welcome = (props: WelcomeProps) => {
 							value: 'director-prep',
 							label: (
 								<div className='welcome-tab-button'>
-									<div className='title'>Directors</div>
-									<div className='subtitle'>Prep Time</div>
+									<div className='title'>Режисери</div>
+									<div className='subtitle'>Час підготовки</div>
 								</div>
 							)
 						},
@@ -320,8 +320,8 @@ const Welcome = (props: WelcomeProps) => {
 							value: 'director-run',
 							label: (
 								<div className='welcome-tab-button'>
-									<div className='title'>Directors</div>
-									<div className='subtitle'>Game Time</div>
+									<div className='title'>Режисери</div>
+									<div className='subtitle'>Час гри</div>
 								</div>
 							)
 						},
@@ -329,7 +329,7 @@ const Welcome = (props: WelcomeProps) => {
 							value: 'creator',
 							label: (
 								<div className='welcome-tab-button'>
-									<div className='title'>Creators</div>
+									<div className='title'>Творці</div>
 								</div>
 							)
 						}

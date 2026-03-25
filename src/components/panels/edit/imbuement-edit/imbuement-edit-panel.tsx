@@ -33,7 +33,7 @@ interface Props {
 }
 
 export const ImbuementEditPanel = (props: Props) => {
-	const [ imbuement, setImbuement ] = useState<Imbuement>(props.imbuement);
+	const [imbuement, setImbuement] = useState<Imbuement>(props.imbuement);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -87,12 +87,12 @@ export const ImbuementEditPanel = (props: Props) => {
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
 				<HeaderText>Level</HeaderText>
-				<NumberSpin min={1} max={9} steps={[ 4 ]} value={imbuement.level} onChange={setLevel} />
+				<NumberSpin min={1} max={9} steps={[4]} value={imbuement.level} onChange={setLevel} />
 				<HeaderText>Item Type</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Type'
-					options={[ ItemType.ImbuedArmor, ItemType.ImbuedImplement, ItemType.ImbuedWeapon ].map(option => ({ value: option }))}
+					options={[ItemType.ImbuedArmor, ItemType.ImbuedImplement, ItemType.ImbuedWeapon].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={imbuement.type}
 					onChange={setType}
@@ -176,7 +176,7 @@ export const ImbuementEditPanel = (props: Props) => {
 							},
 							{
 								key: '3',
-								label: 'Crafting',
+								label: 'Ремесло',
 								children: getCraftingEditSection()
 							},
 							{

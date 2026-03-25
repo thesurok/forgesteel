@@ -11,7 +11,7 @@ export const NotesCard = (props: Props) => {
 
 	return (
 		<div className='notes card'>
-			<h2>Notes</h2>
+			<h2>Нотатки</h2>
 			<div className='content'>
 				<Markdown text={notes} />
 			</div>

@@ -2,7 +2,7 @@ import { Hero } from '@/models/hero';
 
 export const highElfTactician = {
 	id: '7it9NqSWNlAo8JeB',
-	name: 'The Earth Cries The Skies Divide',
+	name: 'Земля плаче — небеса розділяються',
 	picture: null,
 	folder: '',
 	settingIDs: [
@@ -11,19 +11,19 @@ export const highElfTactician = {
 	],
 	ancestry: {
 		id: 'ancestry-high-elf',
-		name: 'Elf (high)',
-		description: 'Children of the solar celestials created to tend their libraries and attend to the true elves as heralds, the high elf history describes a better age, before the coming of humans and war. A time when the celestials were still in the world, and all that mattered was art and beauty.',
+		name: 'Високий ельф',
+		description: 'Діти сонячних небожителів, створені, щоб доглядати їхні бібліотеки й служити справжнім ельфам як вісники; історія високих ельфів описує кращу епоху до приходу людей і воєн. Тоді небожителі ще були в світі, і все, що мало значення — мистецтво та краса.',
 		features: [
 			{
 				id: 'high-elf-feature-1',
-				name: 'High Elf Glamor',
-				description: 'A magic glamor makes others perceive you as interesting and engaging, granting you an edge on Presence tests using the Flirt or Persuade skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.',
+				name: 'Гламур високого ельфа',
+				description: 'Магічний гламур змушує інших сприймати вас як цікаву та привабливу особу, надаючи перевагу на перевірках Присутності при використанні навичок Флірт або Переконання. Цей гламур робить ваш вигляд і голос трохи різними для кожної істоти, бо те, що приваблює одну, може не підходити іншій. Проте ви ніколи не здаєтесь кимось іншим.',
 				type: 'Text',
 				data: null
 			},
 			{
 				id: 'high-elf-feature-2',
-				name: 'High Elf Features',
+				name: 'Риси високого ельфа',
 				description: '',
 				type: 'Choice',
 				data: {
@@ -31,8 +31,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-0',
-								name: 'Glamor of Terror',
-								description: 'When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a triggered action to make that creature frightened of you until the end of their next turn.',
+								name: 'Гламур жаху',
+								description: 'Коли ворог завдає удару, ви звертаєте магію свого гламура, щоб вселити страх у його серце. Кожного разу, коли ви отримуєте пошкодження від істоти, ви можете використати спрацьовану дію, щоб зробити цю істоту наляканою вами до кінця її наступного ходу.',
 								type: 'Text',
 								data: null
 							},
@@ -41,8 +41,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-1',
-								name: 'Graceful Retreat',
-								description: 'You gain a +1 bonus to the distance you can shift when you take the Disengage move action.',
+								name: 'Витончений відступ',
+								description: 'Ви отримуєте бонус +1 до відстані, на яку можете зміститися під час виконання рухової дії «Відступ».',
 								type: 'Bonus',
 								data: {
 									field: 'Відступ',
@@ -58,8 +58,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-2',
-								name: 'High Senses',
-								description: 'Your senses are especially keen and perceptive. You gain an edge on tests made to notice threats.',
+								name: 'Гострі відчуття',
+								description: 'Ваші почуття особливо гострі й спостережливі. Ви отримуєте перевагу на перевірках для виявлення загроз.',
 								type: 'Text',
 								data: null
 							},
@@ -68,8 +68,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-4',
-								name: 'Otherworldly Grace',
-								description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+								name: 'Іншосвітня грація',
+								description: 'Тіло й розум ельфа важко утримати. Коли ви робите рятівний кидок, ви успішні при результаті 5 або вище.',
 								type: 'Text',
 								data: null
 							},
@@ -78,8 +78,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-3',
-								name: 'Revisit Memory',
-								description: 'Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.',
+								name: 'Відновлення спогадів',
+								description: 'Доступ до спогадів для вас такий же простий, як життя в теперішньому. Ви отримуєте перевагу на перевірках для пригадування знань.',
 								type: 'Text',
 								data: null
 							},
@@ -88,8 +88,8 @@ export const highElfTactician = {
 						{
 							feature: {
 								id: 'high-elf-feature-2-5',
-								name: 'Unstoppable Mind',
-								description: 'Your mind allows you to maintain your focus in any situation.',
+								name: 'Нескорений розум',
+								description: 'Ваш розум дозволяє вам зберігати фокус у будь-якій ситуації.',
 								type: 'Condition Immunity',
 								data: {
 									conditions: [
@@ -104,15 +104,15 @@ export const highElfTactician = {
 					selected: [
 						{
 							id: 'high-elf-feature-2-2',
-							name: 'High Senses',
-							description: 'Your senses are especially keen and perceptive. You gain an edge on tests made to notice threats.',
+							name: 'Гострі відчуття',
+							description: 'Ваші відчуття особливо гострі й спостережливі. Ви отримуєте перевагу на перевірках для виявлення загроз.',
 							type: 'Text',
 							data: null
 						},
 						{
 							id: 'high-elf-feature-2-4',
-							name: 'Otherworldly Grace',
-							description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+							name: 'Іншосвітня грація',
+							description: 'Тіло й розум ельфа важко втримати під контролем. Коли ви робите рятівний кидок, ви успішні при результаті 5 або вищому.',
 							type: 'Text',
 							data: null
 						}
@@ -124,12 +124,12 @@ export const highElfTactician = {
 	},
 	culture: {
 		id: 'culture-high-elf',
-		name: 'High Elf',
-		description: 'Secluded, bureaucratic, martial.',
+		name: 'Високий ельф',
+		description: 'Відокремлена, бюрократична, військова.',
 		type: 'Ancestral',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
 			type: 'Language Choice',
 			data: {
@@ -141,14 +141,14 @@ export const highElfTactician = {
 		languages: [],
 		environment: {
 			id: 'env-secluded',
-			name: 'Secluded',
-			description: 'A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave. When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.',
+			name: 'Ізольований',
+			description: 'Відокремлена культура базується в одному доволі тісному просторі — будівлі, печері тощо — і рідко взаємодіє з іншими культурами. Такі місця часто є монастирями, замками або в’язницями. Люди в відокремленій культурі мають мало причин залишати свій дім або спілкуватися з іншими культурами, хоч можуть знати про них та події за межами анклаву. Коли люди живуть разом близько один до одного, вони зазвичай вчаться ладнати. Вони часто проводять багато часу в навчанні чи усамітненні, бо в ізоляції небагато іншого робити.',
 			type: 'Skill Choice',
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Lore'
+					'Міжособистісні',
+					'Знання'
 				],
 				count: 1,
 				selected: [
@@ -158,14 +158,14 @@ export const highElfTactician = {
 		},
 		organization: {
 			id: 'org-bureaucratic',
-			name: 'Bureaucratic',
-			description: 'Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures. Those who thrive in bureaucratic cultures don’t simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.',
+			name: 'Бюрократичний',
+			description: 'Бюрократичні культури просякнуті офіційним керівництвом і формально зафіксованими законами. Учасники такої культури часто ранжуються за владою згідно з цими законами; невелика група людей має право керувати за походженням, виборами або іншим офіційним стандартом. Багато бюрократичних спільнот мають одну людину на вершині, інші — раду. Прикладами є торгова гільдія з гільдмастером, скарбником і статутом; феодальний лорд, що править групою лицарів, які, у свою чергу, правлять селянами; або мілітаристичне суспільство з рангами й правилами. Ті, хто процвітає в бюрократіях, не просто слідують правилам — вони вміють використовувати їх на власну користь, змінюючи або тлумачачи політику. Важливо налагодити стосунки з тими, хто творить закони. Інші ж спеціалізуються на діях поза суворими правилами, уникаючи покарання.',
 			type: 'Skill Choice',
 			data: {
 				options: [],
 				listOptions: [
-					'Interpersonal',
-					'Intrigue'
+					'Міжособистісні',
+					'Інтриги'
 				],
 				count: 1,
 				selected: [
@@ -175,8 +175,8 @@ export const highElfTactician = {
 		},
 		upbringing: {
 			id: 'up-martial',
-			name: 'Martial',
-			description: 'A hero with a martial upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a martial upbringing are always ready for a fight—and they know how to finish that fight.',
+			name: 'Військовий',
+			description: 'Герой з військовим вихованням виріс серед воїнів — солдат регулярної армії, загону найманців, гільдії мисливців на чудовиськ або інших, чиї життя обертаються навколо бою. Герої з таким вихованням завжди готові до битви — і знають, як її завершити.',
 			type: 'Skill Choice',
 			data: {
 				options: [
@@ -201,10 +201,10 @@ export const highElfTactician = {
 	},
 	class: {
 		id: 'class-tactician',
-		name: 'Tactician',
-		description: '\nStrategist. Defender. Leader. With sword in hand, you lead allies into the maw of battle, barking out commands that inspire your fellow heroes to move faster and strike more precisely. All the while, you stand between your compatriots and death, taunting the followers of evil to best you if they can.\n\nAs a tactician, you have abilities that heal your allies and grant them increased damage, movement, and attacks.',
+		name: 'Тактик',
+		description: '\nСтратег. Захисник. Лідер. З мечем у руці ви ведете союзників у саме горло битви, віддаючи накази, що надихають товаришів діяти швидше й бити точніше. Водночас ви стоїте між побратимами та смертю, насміхаючись над послідовниками зла, якщо вони спробують перевершити вас.\n\nЯк тактик, ви маєте здібності, що лікують союзників і дають їм додаткову шкоду, рухливість та атаки.',
 		type: 'standard',
-		subclassName: 'Tactical Doctrine',
+		subclassName: 'Тактична доктрина',
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
@@ -222,7 +222,7 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tatician-stamina',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
@@ -236,7 +236,7 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-recoveries',
-						name: 'Recoveries',
+						name: 'Відновлення',
 						description: '',
 						type: 'Bonus',
 						data: {
@@ -250,7 +250,7 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-resource',
-						name: 'Focus',
+						name: 'Фокус',
 						description: '',
 						type: 'Heroic Resource',
 						data: {
@@ -279,13 +279,13 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-1-1',
-						name: 'Interpersonal Skill',
+						name: 'Міжособистісна навичка',
 						description: '',
 						type: 'Skill Choice',
 						data: {
 							options: [],
 							listOptions: [
-								'Interpersonal'
+								'Міжособистісні'
 							],
 							count: 1,
 							selected: [
@@ -295,7 +295,7 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-1-2',
-						name: 'Skills',
+						name: 'Навички',
 						description: '',
 						type: 'Skill Choice',
 						data: {
@@ -313,7 +313,7 @@ export const highElfTactician = {
 								'Strategy'
 							],
 							listOptions: [
-								'Exploration'
+								'Дослідження'
 							],
 							count: 2,
 							selected: [
@@ -324,8 +324,8 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-1-4',
-						name: 'Field Arsenal',
-						description: 'You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well.',
+						name: 'Польовий арсенал',
+						description: 'Ви тренувалися з широким арсеналом зброї та обладунків і розробили техніки для оптимізації їх використання. Ви можете використовувати та отримувати переваги двох наборів, включно з обома їхніми сигнатурними здібностями. Коли ви обираєте або змінюєте один набір, ви також можете обрати або змінити свій другий набір.',
 						type: 'Kit',
 						data: {
 							types: [
@@ -335,8 +335,8 @@ export const highElfTactician = {
 							selected: [
 								{
 									id: 'kit-shining-armor',
-									name: 'Shining Armor',
-									description: 'The Shining Armor kit provides the most protection a kit can afford, providing you with the sword, shield, and armor necessary to play the prototypical knight.',
+									name: 'Блискучі обладунки',
+									description: 'Набір «Блискучі обладунки» дає найвищий захист для набору, надаючи меч, щит і обладунки, необхідні для гри архетипним лицарем.',
 									type: '',
 									armor: [
 										'Heavy Armor',
@@ -360,14 +360,14 @@ export const highElfTactician = {
 									features: [
 										{
 											id: 'kit-shining-armor-signature',
-											name: 'Protective Attack',
-											description: 'The strength of your assault makes it impossible for your foe to ignore you.',
+											name: 'Оборонний напад',
+											description: 'Сила вашого нападу робить неможливим для ворога ігнорувати вас.',
 											type: 'Ability',
 											data: {
 												ability: {
 													id: 'kit-shining-armor-signature',
 													name: 'Protective Attack',
-													description: 'The strength of your assault makes it impossible for your foe to ignore you.',
+													description: 'Сила вашого нападу робить неможливим для ворога ігнорувати вас.',
 													type: {
 														usage: 'Main Action',
 														free: false,
@@ -404,14 +404,14 @@ export const highElfTactician = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '3 + С or A damage',
-																tier2: '6 + С or A damage',
-																tier3: '9 + С or A damage'
+																tier1: '3 + С або Л пошкодження',
+																tier2: '6 + С або Л пошкодження',
+																tier3: '9 + С або Л пошкодження'
 															}
 														},
 														{
 															type: 'text',
-															text: 'The target is taunted until the end of their next turn.'
+															text: 'Ціль провокується до кінця її наступного ходу.'
 														}
 													],
 													preEffect: '',
@@ -429,8 +429,8 @@ export const highElfTactician = {
 								},
 								{
 									id: 'kit-rapid-fire',
-									name: 'Rapid Fire',
-									description: 'The Rapid-Fire kit is for archers who want to deal maximum damage by shooting as many arrows as possible into nearby enemies. With this kit, your fighting technique focuses on peppering foes before they can get close enough to counterattack.',
+									name: 'Швидка стрільба',
+									description: 'Набір «Швидка стрільба» призначений для лучників, які прагнуть завдати максимальну шкоду, випускаючи якомога більше стріл у сусідніх ворогів. З цим набором ваша техніка бою зосереджена на осипанні супротивників, перш ніж вони зможуть наблизитися для контратаки.',
 									type: '',
 									armor: [
 										'Light Armor'
@@ -453,14 +453,14 @@ export const highElfTactician = {
 									features: [
 										{
 											id: 'kit-rapid-fire-signature',
-											name: 'Two Shot',
-											description: 'When you fire two arrows back to back, both hit their mark.',
+											name: 'Два постріли',
+											description: 'Коли ви випускаєте дві стріли підряд, обидві потрапляють у ціль.',
 											type: 'Ability',
 											data: {
 												ability: {
 													id: 'kit-rapid-fire-signature',
 													name: 'Two Shot',
-													description: 'When you fire two arrows back to back, both hit their mark.',
+													description: 'Коли ви випускаєте дві стріли підряд, обидві потрапляють у ціль.',
 													type: {
 														usage: 'Main Action',
 														free: false,
@@ -484,7 +484,7 @@ export const highElfTactician = {
 															qualifier: ''
 														}
 													],
-													target: 'Two creatures or objects',
+													target: 'Дві істоти або предмети',
 													cost: 'signature',
 													repeatable: false,
 													minLevel: 1,
@@ -497,9 +497,9 @@ export const highElfTactician = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '2 damage',
-																tier2: '4 damage',
-																tier3: '6 damage'
+																tier1: '2 пошкодження',
+																tier2: '4 пошкодження',
+																tier3: '6 пошкодження'
 															}
 														}
 													],
@@ -521,21 +521,21 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-1-5',
-						name: 'Mark',
+						name: 'Мітка',
 						description: 'Mark, Mark: Trigger',
 						type: 'Multiple Features',
 						data: {
 							features: [
 								{
 									id: 'tactician-1-5a',
-									name: 'Mark',
-									description: 'You draw your allies’ attention to a specific foe—with devastating effect.',
+									name: 'Мітка',
+									description: 'Ви привертаєте увагу союзників до конкретного ворога — з руйнівним ефектом.',
 									type: 'Ability',
 									data: {
 										ability: {
 											id: 'tactician-1-5a',
-											name: 'Mark',
-											description: 'You draw your allies’ attention to a specific foe—with devastating effect.',
+											name: 'Мітка',
+											description: 'Ви привертаєте увагу союзників до конкретного ворога — з руйнівним ефектом.',
 											type: {
 												usage: 'Maneuver',
 												free: false,
@@ -564,7 +564,7 @@ export const highElfTactician = {
 											sections: [
 												{
 													type: 'text',
-													text: '\nThe target is marked by you until the end of the encounter, until you are dying, or until you use this ability again. You can willingly end your mark on a creature (no action required), and if another tactician marks a creature, your mark on that creature ends. When a creature marked by you is reduced to 0 Stamina, you can use a free triggered action to mark a new target within distance.\n\nYou can initially mark only one creature using this ability, though other tactician abilities allow you to mark additional creatures at the same time.\n\nWhile a creature marked by you is within your line of effect, you and allies within your line of effect gain an edge on power rolls made against that creature.'
+													text: '\nЦіль відмічена вами до кінця зустрічі, доки ви не опинитеся в стані, близькому до смерті, або доки ви не використаєте цю здатність знову. Ви можете добровільно зняти свою мітку з істоти (дія не потрібна), і якщо інший тактик відмітить істоту, ваша мітка на цій істоті зникає. Коли істота з вашою міткою зменшується до 0 Витривалості, ви можете використати безкоштовну спрацьовану дію, щоб відмітити нову ціль у межах відстані.\n\nСпочатку ви можете відмітити лише одну істоту за допомогою цієї здатності, хоча інші здібності тактика дозволяють відмічати додаткові цілі одночасно.\n\nПоки істота з вашою міткою перебуває в межах вашої лінії дії, ви та союзники в межах цієї лінії отримують перевагу на кидках сили проти цієї істоти.'
 												},
 												{
 													type: 'package',
@@ -584,13 +584,13 @@ export const highElfTactician = {
 								},
 								{
 									id: 'tactician-1-5b',
-									name: 'Mark: Trigger',
+									name: 'Мітка: Тригер',
 									description: '',
 									type: 'Ability',
 									data: {
 										ability: {
 											id: 'tactician-1-5b',
-											name: 'Mark: Trigger',
+											name: 'Мітка: Тригер',
 											description: '',
 											type: {
 												usage: 'Triggered Action',
@@ -603,22 +603,22 @@ export const highElfTactician = {
 											keywords: [],
 											distance: [
 												{
-													type: 'Special',
+													type: 'Особливе',
 													value: 0,
 													value2: 0,
 													within: 0,
-													special: 'Special',
+													special: 'Особливий',
 													qualifier: ''
 												}
 											],
-											target: 'Special',
+											target: 'Особливий',
 											cost: 1,
 											repeatable: false,
 											minLevel: 1,
 											sections: [
 												{
 													type: 'text',
-													text: '\nYou gain one of the following benefits:\n\n* The ability deals extra damage equal to twice your Reason score.\n* The creature dealing the damage can spend a Recovery.\n* The creature dealing the damage can shift up to a number of squares equal to your Reason score.\n* If you damage a creature marked by you with a melee ability, the creature is taunted by you until the end of their next turn.\n\nYou can’t gain more than one benefit from the same trigger.'
+													text: '\nВи отримуєте один із наступних ефектів:\n\n* Здатність завдає додаткової шкоди, рівної двом вашим очкам Розуму.\n* Істота, що завдала пошкодження, може витратити Відновлення.\n* Істота, що завдала пошкодження, може зміститися на кількість клітин, рівну вашому показнику Розуму.\n* Якщо ви завдаєте шкоди істоті з вашою міткою ближньою здібністю, ця істота піддається провокації від вас до кінця її наступного ходу.\n\nВи не можете отримати більше одного ефекту від одного й того ж тригера.'
 												},
 												{
 													type: 'package',
@@ -641,14 +641,14 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-1-6',
-						name: '“Strike Now!”',
-						description: 'Your foe left an opening. You point this out to an ally!',
+						name: '«Ударяй зараз!»',
+						description: 'Ворог залишив вразливе місце. Ви вказуєте на це союзникові!',
 						type: 'Ability',
 						data: {
 							ability: {
 								id: 'tactician-1-6',
-								name: '“Strike Now!”',
-								description: 'Your foe left an opening. You point this out to an ally!',
+								name: '«Ударяй зараз!»',
+								description: 'Ворог залишив вразливе місце. Ви вказуєте на це союзникові!',
 								type: {
 									usage: 'Main Action',
 									free: false,
@@ -677,14 +677,14 @@ export const highElfTactician = {
 								sections: [
 									{
 										type: 'text',
-										text: 'The target can use a signature ability as a free triggered action.'
+										text: 'Ціль може використати сигнатурну здатність як безкоштовну спрацьовану дію.'
 									},
 									{
 										type: 'field',
 										name: 'Spend',
 										value: 5,
 										repeatable: false,
-										effect: 'You target two allies instead of one.'
+										effect: 'Ви обираєте двох союзників замість одного.'
 									}
 								],
 								preEffect: '',
@@ -745,14 +745,14 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tactician-2-1',
-						name: 'Exploration / Interpersonal / Intrigue Perk',
+						name: 'Перевага: Дослідження/Міжособисте/Інтриги',
 						description: '',
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 1,
 							selected: []
@@ -765,8 +765,8 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tactician-3-1',
-						name: 'Out of Position',
-						description: 'Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can’t be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.',
+						name: 'Поза позицією',
+						description: 'Ще до початку битви ваші вороги важко встигають за вашими тактиками. На початку зустрічі ви можете використати безкоштовну спрацьовану дію, щоб застосувати вашу здібність «Відмітка» до одного ворога, до якого у вас є лінія впливу, навіть якщо ви здивовані. Потім ви можете підсунути відмічену ціль на відстань до 3 клітин, ігноруючи стабільність. Ціль не можна перемістити таким чином, щоб завдати їй шкоди (наприклад через обрив), залишити її в стані, близькому до смерті, або спричинити їй отримання стану чи іншого негативного ефекту.',
 						type: 'Text',
 						data: null
 					},
@@ -795,7 +795,7 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tactician-4-1a',
-						name: 'Might',
+						name: 'Сила',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
@@ -805,7 +805,7 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-4-1b',
-						name: 'Reason',
+						name: 'Розум',
 						description: '',
 						type: 'Characteristic Bonus',
 						data: {
@@ -815,7 +815,7 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-4-2',
-						name: 'Focus on Their Weakness',
+						name: 'Зосередься на їхній слабкості',
 						description: '',
 						type: 'Heroic Resource Gain',
 						data: {
@@ -829,8 +829,8 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-4-3',
-						name: 'Improved Field Arsenal',
-						description: 'Your expertise with weapons has grown. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you gain an edge.',
+						name: 'Удосконалений польовий арсенал',
+						description: 'Ваша майстерність у користуванні зброєю зросла. Коли ви використовуєте сигнатурну здатність з одного з екіпірованих наборів або робите безкоштовний удар зброєю з такого набору, ви отримуєте перевагу.',
 						type: 'Text',
 						data: null
 					},
@@ -841,12 +841,12 @@ export const highElfTactician = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -860,11 +860,11 @@ export const highElfTactician = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -900,8 +900,8 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tactician-6-1',
-						name: 'Master of Arms',
-						description: 'Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you can negate a bane on the power roll or reduce a double bane to a bane.',
+						name: 'Майстер зброї',
+						description: 'Ваша майстерність зі зброєю досягла справжнього вищого рівня. Коли ви використовуєте сигнатурну здатність з одного з екіпірованих наборів або робите безкоштовний удар зброєю з такого набору, ви можете скасувати бан на кидку сили або зменшити подвійний бан до бану.',
 						type: 'Text',
 						data: null
 					},
@@ -912,9 +912,9 @@ export const highElfTactician = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Exploration',
-								'Interpersonal',
-								'Intrigue'
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги'
 							],
 							count: 1,
 							selected: []
@@ -992,7 +992,7 @@ export const highElfTactician = {
 					{
 						id: 'tactician-7-3',
 						name: 'Seize the Initiative',
-						description: 'If you are not surprised when combat begins, your side gets to go first. If an enemy has an ability that allows their side to go first, you roll as usual to determine who goes first.',
+						description: 'Якщо ви не здивовані на початку бою, ваша сторона ходить першою. Якщо у ворога є здібність, яка дозволяє їхній стороні ходити першою, ви кидаєте як звичайно, щоб визначити, хто ходить першим.',
 						type: 'Text',
 						data: null
 					},
@@ -1004,11 +1004,11 @@ export const highElfTactician = {
 						data: {
 							options: [],
 							listOptions: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання'
 							],
 							count: 1,
 							selected: []
@@ -1026,12 +1026,12 @@ export const highElfTactician = {
 						type: 'Perk',
 						data: {
 							lists: [
-								'Crafting',
-								'Exploration',
-								'Interpersonal',
-								'Intrigue',
-								'Lore',
-								'Supernatural'
+								'Ремесло',
+								'Дослідження',
+								'Міжособистісні',
+								'Інтриги',
+								'Знання',
+								'Надприродне'
 							],
 							count: 1,
 							selected: []
@@ -1062,7 +1062,7 @@ export const highElfTactician = {
 				features: [
 					{
 						id: 'tactician-9-1',
-						name: 'Grandmaster of Arms',
+						name: 'Вища майстерність зброї',
 						description: 'Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you automatically obtain a tier 3 outcome on the power roll. You can still roll to determine if you score a critical hit.',
 						type: 'Text',
 						data: null
@@ -1094,8 +1094,8 @@ export const highElfTactician = {
 					},
 					{
 						id: 'tactician-10-2',
-						name: 'Command',
-						description: '\nWhenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 command as a free triggered action to increase the power roll outcome for that target by one tier. Whenever an enemy marked by you makes an ability roll, you can spend 1 command as a free triggered action to decrease the power roll outcome by one tier.\n\nCommand remains until you spend it.',
+						name: 'Команда',
+						description: '\nКоли ви або будь-який союзник використовує здібність, щоб завдати кинутої шкоди істоті, відміченій вами, ви можете витратити 1 команду як безкоштовну спрацьовану дію, щоб підвищити результат кидка сили для тієї цілі на один рівень. Коли ворог, відмічений вами, робить кидок здібності, ви можете витратити 1 команду як безкоштовну спрацьовану дію, щоб зменшити результат кидка сили на один рівень.\n\nКоманда зберігається, доки ви не витратите її.',
 						type: 'Heroic Resource',
 						data: {
 							type: 'epic',
@@ -1117,8 +1117,8 @@ export const highElfTactician = {
 		abilities: [
 			{
 				id: 'tactician-ability-1',
-				name: 'Battle Cry',
-				description: 'You shout a phrase that galvanizes your team.',
+				name: 'Бойовий клич',
+				description: 'Ви викрикуєте фразу, що надихає вашу команду.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1140,7 +1140,7 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Three allies',
+				target: 'Троє союзників',
 				cost: 3,
 				repeatable: false,
 				minLevel: 1,
@@ -1152,9 +1152,9 @@ export const highElfTactician = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: 'Each target gains 1 surge.',
-							tier2: 'Each target gains 2 surges.',
-							tier3: 'Each target gains 3 surges.'
+							tier1: 'Кожна ціль отримує 1 сплеск.',
+							tier2: 'Кожна ціль отримує 2 сплески.',
+							tier3: 'Кожна ціль отримує 3 сплески.'
 						}
 					}
 				],
@@ -1169,8 +1169,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-2',
-				name: 'Concussive Strike',
-				description: 'Your precise strike leaves your foe struggling to respond.',
+				name: 'Оглушливий удар',
+				description: 'Ваш точний удар залишає ворога, що важко відповідає.',
 				type: {
 					usage: 'Main Action',
 					free: false,
@@ -1215,9 +1215,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С damage; M < [слабкий], dazed (save ends)',
-							tier2: '5 + С damage; M < [середній], dazed (save ends)',
-							tier3: '8 + С damage; M < [сильний], dazed (save ends)'
+							tier1: '3 + С пошкодження; M < [слабкий], оглушений (рятівний кидок закінчує дію)',
+							tier2: '5 + С пошкодження; M < [середній], оглушений (рятівний кидок закінчує дію)',
+							tier3: '8 + С пошкодження; M < [сильний], оглушений (рятівний кидок закінчує дію)'
 						}
 					}
 				],
@@ -1232,8 +1232,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-3',
-				name: 'Inspiring Strike',
-				description: 'Your attack gives an ally hope.',
+				name: 'Натхненний удар',
+				description: 'Ваш напад додає союзникові надії.',
 				type: {
 					usage: 'Main Action',
 					free: false,
@@ -1278,9 +1278,9 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С damage; you or one ally within 10 squares of you can spend a Recovery',
-							tier2: '5 + С damage; you or one ally within 10 squares of you can spend a Recovery',
-							tier3: '8 + С damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter'
+							tier1: '3 + С пошкодження; ви або один союзник у межах 10 клітин від вас може витратити Відновлення',
+							tier2: '5 + С пошкодження; ви або один союзник у межах 10 клітин від вас може витратити Відновлення',
+							tier3: '8 + С пошкодження; ви і один союзник у межах 10 клітин від вас можуть витратити Відновлення, і кожен з вас отримує перевагу на наступний кидок здібності під час зустрічі'
 						}
 					}
 				],
@@ -1295,8 +1295,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-4',
-				name: 'Squad! Forward!',
-				description: 'On your command, you and your allies force back the enemy line.',
+				name: 'Взвод! Вперед!',
+				description: 'За вашим наказом ви та ваші союзники відтіснюють ворожу лінію.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1325,7 +1325,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target can move up to their speed.'
+						text: 'Кожна ціль може переміститися на відстань, що дорівнює її швидкості.'
 					}
 				],
 				preEffect: '',
@@ -1339,8 +1339,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-5',
-				name: 'Hammer And Anvil',
-				description: '“Let’s not argue about who’s the hammer and who’s the anvil!',
+				name: 'Молот і наковальня',
+				description: '«Не сперечаймося, хто молот, а хто ковадло!"',
 				type: {
 					usage: 'Main Action',
 					free: false,
@@ -1385,14 +1385,14 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '5 + С damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action',
-							tier2: '9 + С damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action',
-							tier3: '12 + С damage; two allies within 10 squares of you can each use a strike signature ability that gains an edge against the target as a free triggered action'
+							tier1: '5 + С пошкодження; один союзник у межах 10 клітин від вас може використати підписну ударну здібність проти цілі як безкоштовну спрацьовану дію',
+							tier2: '9 + С пошкодження; один союзник у межах 10 клітин від вас може використати підписну ударну здібність, що отримує перевагу проти цілі, як безкоштовну спрацьовану дію',
+							tier3: '12 + С пошкодження; двоє союзників у межах 10 клітин від вас можуть кожен використати підписну ударну здібність, що отримує перевагу проти цілі, як безкоштовну спрацьовану дію'
 						}
 					},
 					{
 						type: 'text',
-						text: 'If the target is reduced to 0 Stamina before one or both chosen allies has made their strike, the ally or allies can pick a different target.'
+						text: 'Якщо ціль знижена до 0 Витривалості до того, як один або обидва обрані союзники встигли зробити свій удар, союзник або союзники можуть обрати іншу ціль.'
 					}
 				],
 				preEffect: '',
@@ -1406,7 +1406,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-6',
-				name: 'Mind Game',
+				name: 'Гра розуму',
 				description: 'Your attack demoralizes your foe. Your allies begin to think you can win.',
 				type: {
 					usage: 'Main Action',
@@ -1447,7 +1447,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'You mark the target.'
+						text: 'Ви відмічаєте ціль.'
 					},
 					{
 						type: 'roll',
@@ -1456,14 +1456,14 @@ export const highElfTactician = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '4 + С damage; Р < [слабкий], weakened (save ends)',
-							tier2: '6 + С damage; Р < [середній], weakened (save ends)',
-							tier3: '10 + С damage; Р < [сильний], weakened (save ends)'
+							tier1: '4 + С пошкодження; Р < [слабкий], ослаблений (рятівний кидок закінчує дію)',
+							tier2: '6 + С пошкодження; Р < [середній], ослаблений (рятівний кидок закінчує дію)',
+							tier3: '10 + С пошкодження; Р < [сильний], ослаблений (рятівний кидок закінчує дію)'
 						}
 					},
 					{
 						type: 'text',
-						text: 'Before the start of your next turn, the first time any ally deals damage to any target marked by you, that ally can spend a Recovery.'
+						text: 'Перш ніж почнеться ваш наступний хід, при першому випадку в ході, коли будь-який союзник завдає шкоди будь-якій цілі, відміченій вами, цей союзник може витратити Відновлення.'
 					}
 				],
 				preEffect: '',
@@ -1477,8 +1477,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-7',
-				name: 'Now!',
-				description: 'Your allies wait for your command - then unleash death!',
+				name: 'Зараз!',
+				description: 'Союзники чекають вашого наказу — потім завдають смертоносного удару!',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1508,7 +1508,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target can make a free strike.'
+						text: 'Кожна ціль може виконати безкоштовний удар.'
 					}
 				],
 				preEffect: '',
@@ -1522,8 +1522,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-8',
-				name: 'This Is What We Planned For',
-				description: 'All those coordination drills you made them do finally pay off.',
+				name: 'Ось на що ми готувалися',
+				description: 'Усі ті вправи з координації, які ви їм наказували, нарешті окупаються.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1545,14 +1545,14 @@ export const highElfTactician = {
 						qualifier: ''
 					}
 				],
-				target: 'Two allies',
+				target: 'Двоє союзників',
 				cost: 5,
 				repeatable: false,
 				minLevel: 1,
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target who hasn’t acted yet this combat round can take their turn in any order immediately after yours.'
+						text: 'Кожна ціль, яка ще не діяла в цьому раунді бою, може виконати свій хід у будь-якому порядку негайно після вашого.'
 					}
 				],
 				preEffect: '',
@@ -1566,8 +1566,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-9',
-				name: 'Frontal Assault',
-				description: 'The purpose of a charge is to break their morale and force a retreat.',
+				name: 'Фронтальний штурм',
+				description: 'Мета штурму — зламати їхню мораль і змусити до відступу.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1594,7 +1594,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then shift up to 2 squares. Additionally, any ally using the Charge main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee free strike.'
+						text: 'До кінця зустрічі або поки ви не опинитеся в стані, близькому до смерті, вперше в ході, коли ви або будь-який союзник завдає шкоди цілі, відміченій вами, істота, що завдала шкоди, може штовхнути ціль до 2 клітин, а потім зміститися до 2 клітин. Крім того, будь-який союзник, який використовує основну дію Charge, щоб націлитися на істоту, відмічену вами, може замість безкоштовного удару в ближньому бою використати сигнатурну або героїчну здатність удару в ближньому бою.'
 					}
 				],
 				preEffect: '',
@@ -1608,7 +1608,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-10',
-				name: 'Hit ’Em Hard!',
+				name: 'Вдарте їх сильно!',
 				description: '',
 				type: {
 					usage: 'Maneuver',
@@ -1636,7 +1636,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.'
+						text: 'До кінця зустрічі або поки ви не опинитеся в стані, близькому до смерті, коли ви або будь-який союзник завдає шкоди цілі, відміченій вами, ця істота отримує 2 сплески, які може використати негайно.'
 					}
 				],
 				preEffect: '',
@@ -1650,8 +1650,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-11',
-				name: 'Rout',
-				description: 'The tide begins to turn.',
+				name: 'Розгром',
+				description: 'Хід битви починає змінюватися.',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1678,7 +1678,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has Р < [середній], the target is frightened of the creature who dealt the damage (save ends).'
+						text: 'До кінця зустрічі або поки ви не опинитеся в стані, близькому до смерті, коли ви або будь-який союзник завдає шкоди цілі, відміченій вами, яка має Р < [середній], ціль перелякана істоти, що завдала шкоди (рятунок знімає).'
 					}
 				],
 				preEffect: '',
@@ -1692,8 +1692,8 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-12',
-				name: 'Stay Strong and Focus!',
-				description: 'We can do this! Keep faith and hold fast!',
+				name: 'Тримайся та зосередься!',
+				description: 'Ми можемо це зробити! Зберігайте віру і тримайтеся міцно!',
 				type: {
 					usage: 'Maneuver',
 					free: false,
@@ -1720,7 +1720,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, the creature who dealt the damage can spend a Recovery.'
+						text: 'До кінця зустрічі або поки ви не опинитеся в стані, близькому до смерті, коли ви або будь-який союзник завдає шкоди цілі, відміченій вами, істота, що завдала шкоди, може витратити Відновлення.'
 					}
 				],
 				preEffect: '',
@@ -1734,7 +1734,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-13',
-				name: 'Squad! Gear Check!',
+				name: 'Взвод! Перевірка спорядження!',
 				description: 'You distract a foe while your allies secure their defensive gear.',
 				type: {
 					usage: 'Main Action',
@@ -1766,7 +1766,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'You and each ally adjacent to the target gain 10 temporary Stamina.'
+						text: 'Ви та кожен союзник, що прилягає до цілі, отримуєте по 10 тимчасової Витривалості.'
 					}
 				],
 				preEffect: '',
@@ -1780,7 +1780,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-14',
-				name: 'Squad! Remember Your Training!',
+				name: 'Взвод! Пам’ятайте тренування!',
 				description: 'You remind your allies how to best use their gear.',
 				type: {
 					usage: 'Main Action',
@@ -1810,7 +1810,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target gains 1 surge and can use a signature ability that has a double edge.'
+						text: 'Кожна ціль отримує 1 сплеск і може використати сигнатурну здатність, яка має подвійний ефект.'
 					}
 				],
 				preEffect: '',
@@ -1824,7 +1824,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-15',
-				name: 'Win This Day!',
+				name: 'Переможімо сьогодні!',
 				description: 'You inspire your allies to recover and gather their strength.',
 				type: {
 					usage: 'Main Action',
@@ -1854,7 +1854,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target gains 2 surges. Additionally, they can spend a Recovery, remove any conditions or effects on them, and stand up if they are prone.'
+						text: 'Кожна ціль отримує 2 сплески. Крім того, вони можуть витратити Відновлення, зняти будь-які умови або ефекти з себе та підвестися, якщо вони лежать.'
 					}
 				],
 				preEffect: '',
@@ -1868,7 +1868,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-16',
-				name: 'You’ve Still Got Something Left',
+				name: 'У тебе ще щось лишилось',
 				description: 'You push an ally to use a heroic ability sooner than they otherwise would.',
 				type: {
 					usage: 'Main Action',
@@ -1898,7 +1898,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your Reason score. The ability has its Heroic Resource cost reduced by 1 + your Reason score (minimum cost 0).'
+						text: 'Ціль використовує героїчну здатність з ключовим словом Strike як безкоштовну спрацьовану дію і завдає додаткової шкоди цією здатністю, рівної вашому показнику Розуму. Вартість Героїчного ресурсу цієї здібності зменшена на 1 + ваш показник Розуму (мінімальна вартість 0).'
 					}
 				],
 				preEffect: '',
@@ -1912,7 +1912,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-17',
-				name: 'Go Now and Speed Well',
+				name: 'Йди зараз і швидко рухайся',
 				description: 'You direct an attack to strike true.',
 				type: {
 					usage: 'Main Action',
@@ -1942,7 +1942,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'The target gains 2 surges and can use a signature or heroic ability as a free triggered action. The ability has a double edge on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.'
+						text: 'Ціль отримує 2 сплески і може використати сигнатурну або героїчну здатність як безкоштовну спрацьовану дію. У цієї здібності подвійний ефект на кидку сили, вона ігнорує імунітет до пошкоджень і збільшує потужність будь-яких ефектів потужності на 1.'
 					}
 				],
 				preEffect: '',
@@ -1956,7 +1956,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-18',
-				name: 'Finish Them!',
+				name: 'Дозаверши їх!',
 				description: 'You point out an opening to your ally so they can land a killing blow.',
 				type: {
 					usage: 'Triggered Action',
@@ -1986,7 +1986,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'The target is killed. Additionally, the creature who caused the target to be winded can spend a Recovery.'
+						text: 'Ціль убита. Крім того, істота, яка спричинила знесилення цілі, може витратити Відновлення.'
 					}
 				],
 				preEffect: '',
@@ -2000,7 +2000,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-19',
-				name: 'Floodgates Open',
+				name: 'Відкрий шлюзи',
 				description: 'You direct your squad to strike in unison and with devastating effect.',
 				type: {
 					usage: 'Main Action',
@@ -2030,7 +2030,7 @@ export const highElfTactician = {
 				sections: [
 					{
 						type: 'text',
-						text: 'Each target gains 1 surge and can use a signature ability as a free triggered action. That ability gains an edge on the power roll and increases the potency of any potency effects by 1.'
+						text: 'Кожна ціль отримує 1 сплеск і може використати сигнатурну здатність як безкоштовну спрацьовану дію. Та здібність отримує перевагу на кидку сили і збільшує потужність будь-яких ефектів потужності на 1.'
 					}
 				],
 				preEffect: '',
@@ -2044,7 +2044,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-ability-20',
-				name: 'I’ll Open and You’ll Close',
+				name: 'Я відкрию, ти закриєш',
 				description: 'You create an opening for an ally.',
 				type: {
 					usage: 'Main Action',
@@ -2113,7 +2113,7 @@ export const highElfTactician = {
 		subclasses: [
 			{
 				id: 'tactician-sub-1',
-				name: 'Insurgent',
+				name: 'Повстанець',
 				description: 'Doing your duty, playing fair, and dying honorably in battle is your opponent’s job. You’ll do whatever it takes to keep your allies alive.',
 				featuresByLevel: [
 					{
@@ -2121,13 +2121,13 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-1-1',
-								name: 'Intrigue Skill',
+								name: 'Навичка інтриг',
 								description: '',
 								type: 'Skill Choice',
 								data: {
 									options: [],
 									listOptions: [
-										'Intrigue'
+										'Інтриги'
 									],
 									count: 1,
 									selected: []
@@ -2135,14 +2135,14 @@ export const highElfTactician = {
 							},
 							{
 								id: 'tactician-sub-1-1-2',
-								name: 'Covert Operations',
+								name: 'Таємні операції',
 								description: '\nWhile in your presence or working according to your plans, each of your allies gains an edge on tests using any skill from the intrigue skill group. Additionally, you can use the Lead skill to assist another creature with any test made using a skill from the intrigue group.\n\nAt the Director’s discretion, you and your allies can use skills from the intrigue skill group to attempt research or reconnaissance during a negotiation instead of outside of a negotiation.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-1-1-3',
-								name: 'Advanced Tactics',
+								name: 'Просунута тактика',
 								description: 'Your leadership aids an ally.',
 								type: 'Ability',
 								data: {
@@ -2206,7 +2206,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-2-1',
-								name: 'Infiltration Tactics',
+								name: 'Тактика проникнення',
 								description: 'You have trained your squad to work together, stay silent, and wait for the opportune time to strike. Whenever you or any ally within 10 squares of you becomes hidden, that creature gains 1 surge.',
 								type: 'Text',
 								data: null
@@ -2221,7 +2221,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-2-2a',
-												name: 'Fog of War',
+												name: 'Туман війни',
 												description: 'Your unorthodox strategy causes enemies to lash out in fear, heedless of who they might be attacking.',
 												type: 'Ability',
 												data: {
@@ -2283,7 +2283,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-2-2b',
-												name: 'Try Me Instead',
+												name: 'Спробуй мене замість',
 												description: '“Try picking on someone my size.”',
 												type: 'Ability',
 												data: {
@@ -2369,14 +2369,14 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-5-1',
-								name: 'Distracted',
+								name: 'Відволіканий',
 								description: 'You have mastered the ability to distract your foes, allowing you and your allies to take advantage of their gaps in attention. Whenever you or any ally attempts to hide, any creature marked by you doesn’t count as an observer. Additionally, you and your allies can use other allies as cover for the purpose of hiding.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-1-5-2',
-								name: 'Leave No Trace',
+								name: 'Не лишай слідів',
 								description: 'You and any ally within 10 squares of you can move at full speed while sneaking. Additionally, enemies within 10 squares of you take a bane on tests made to search for you or your allies while any of you are hidden.',
 								type: 'Text',
 								data: null
@@ -2396,7 +2396,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-6-1a',
-												name: 'Coordinated Execution',
+												name: 'Скоординоване виконання',
 												description: 'You direct your ally to make a killing blow.',
 												type: 'Ability',
 												data: {
@@ -2451,7 +2451,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-6-1b',
-												name: 'Panic in Their Lines',
+												name: 'Паніка в їх лавах',
 												description: 'You confuse your foes, causing them to turn on each other.',
 												type: 'Ability',
 												data: {
@@ -2503,9 +2503,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '6 + С damage; slide 1',
-																	tier2: '9 + С damage; slide 3',
-																	tier3: '13 + С damage; slide 5'
+																	tier1: '6 + С пошкодження; зсунути 1',
+																	tier2: '9 + С пошкодження; зсунути 3',
+																	tier3: '13 + С пошкодження; зсунути 5'
 																}
 															},
 															{
@@ -2538,7 +2538,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-7-1',
-								name: 'Asymmetric Warfare',
+								name: 'Асиметрична війна',
 								description: 'You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the intrigue skill group. Additionally, you can use skills from the intrigue skill group to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.',
 								type: 'Text',
 								data: null
@@ -2550,7 +2550,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-8-1',
-								name: 'Bait and Ambush',
+								name: 'Намір і засідка',
 								description: 'When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to let the character making the strike shift up to a number of squares equal to your Reason score and use the Hide maneuver as a free maneuver once during the shift. The creature can shift before or after the strike is resolved.',
 								type: 'Package Content',
 								data: {
@@ -2572,7 +2572,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-9-1a',
-												name: 'Squad! Hit and Run!',
+												name: 'Взвод! Удар і біг',
 												description: 'I had to pry this secret from the shadow colleges.',
 												type: 'Ability',
 												data: {
@@ -2627,7 +2627,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-1-9-1b',
-												name: 'Their Lack of Focus Is Their Undoing',
+												name: 'Їхня відсутність фокусу — їхня загибель',
 												description: 'You trick your enemies into attacking each other and leave them confused by the aftermath.',
 												type: 'Ability',
 												data: {
@@ -2674,9 +2674,9 @@ export const highElfTactician = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: 'R < [слабкий], dazed (save ends)',
-																	tier2: 'R < [середній], dazed (save ends)',
-																	tier3: 'R < [сильний], dazed (save ends)'
+																	tier1: 'R < [слабкий], оглушений (рятівний кидок закінчує дію)',
+																	tier2: 'R < [середній], оглушений (рятівний кидок закінчує дію)',
+																	tier3: 'R < [сильний], оглушений (рятівний кидок закінчує дію)'
 																}
 															}
 														],
@@ -2710,7 +2710,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-sub-2',
-				name: 'Mastermind',
+				name: 'Майстер розуму',
 				description: 'You have an encyclopedic knowledge of warfare, viewing the battlefield as a game board and seeking victory by thinking steps ahead of your opponents.',
 				featuresByLevel: [
 					{
@@ -2718,13 +2718,13 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-2-1-1',
-								name: 'Lore Skill',
+								name: 'Навичка знань',
 								description: '',
 								type: 'Skill Choice',
 								data: {
 									options: [],
 									listOptions: [
-										'Lore'
+										'Знання'
 									],
 									count: 1,
 									selected: []
@@ -2732,14 +2732,14 @@ export const highElfTactician = {
 							},
 							{
 								id: 'tactician-sub-2-1-2',
-								name: 'Studied Commander',
+								name: 'Вивчений командир',
 								description: '\nYour encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete.\n\nAdditionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a Reason test as a respite activity.\n\nThe following test outcomes apply to a combat encounter:\n\n| Roll    | Effect                                                                                                           |\n|:--------|:-----------------------------------------------------------------------------------------------------------------|\n| ≤ 11    | The Director tells you the number of creatures in the encounter.                                                 |\n| 12 - 16 | The Director tells you the number and level of the creatures in the encounter.                                   |\n| ≥ 17    | The Director tells you the tier 2 outcome information, and when the encounter begins, all enemies are surprised. |\n\nThe following test outcomes apply to a negotiation:\n\n| Roll    | Effect                                                                                                                                                       |\n|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| ≤ 11    | The Director gives you three motivations, one of which belongs to an NPC in the negotiation.                                                                 |\n| 12 - 16 | The Director gives you one motivation for an NPC in the negotiation.                                                                                         |\n| ≥ 17    | The Director tells you the tier 2 outcome information, and you and each of your allies gains an edge on tests made to influence NPCs during the negotiation. |\n\nYou can make this test only once for any encounter or negotiation.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-2-1-3',
-								name: 'Overwatch',
+								name: 'Нагляд',
 								description: 'Under your direction, an ally waits for just the right moment to strike.',
 								type: 'Ability',
 								data: {
@@ -2803,7 +2803,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-2-2-1',
-								name: 'Goaded',
+								name: 'Підбурений',
 								description: 'You have learned to leverage your marked foes’ psychology and goad them into acting before they’re tactically ready.',
 								type: 'Ability',
 								data: {
@@ -2861,7 +2861,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-2-2a',
-												name: 'I\'ve Got Your Back',
+												name: 'Я прикрию тебе',
 												description: 'Your enemy will think twice about attacking your friend.',
 												type: 'Ability',
 												data: {
@@ -2904,9 +2904,9 @@ export const highElfTactician = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '5 + Р damage; taunted (EoT)',
-																	tier2: '9 + Р damage; taunted (EoT)',
-																	tier3: '12 + Р damage; taunted (EoT)'
+																	tier1: '5 + Р пошкодження; провокований (до кінця свого ходу)',
+																	tier2: '9 + Р пошкодження; провокований (до кінця свого ходу)',
+																	tier3: '12 + Р пошкодження; провокований (до кінця свого ходу)'
 																}
 															},
 															{
@@ -2930,7 +2930,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-2-2b',
-												name: 'Targets of Opportunity',
+												name: 'Мішені нагоди',
 												description: 'You point out easy targets to your friends, allowing them to include more enemies in their attacks.',
 												type: 'Ability',
 												data: {
@@ -3009,7 +3009,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-2-5-1',
-								name: 'Anticipation',
+								name: 'Передбачення',
 								description: 'You have learned to be more preemptive on the battlefield, thinking more steps ahead than your opponents. You can target two creatures with your Mark ability.',
 								type: 'Package Content',
 								data: {
@@ -3018,7 +3018,7 @@ export const highElfTactician = {
 							},
 							{
 								id: 'tactician-sub-2-5-2',
-								name: 'I Predicted That',
+								name: 'Я це передбачив',
 								description: 'Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an edge on Reason tests.',
 								type: 'Text',
 								data: null
@@ -3038,7 +3038,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-6-1a',
-												name: 'Battle Plan',
+												name: 'Бойовий план',
 												description: 'With new understanding of your foes, you create the perfect plan to win the battle.',
 												type: 'Ability',
 												data: {
@@ -3100,7 +3100,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-6-1b',
-												name: 'Hustle!',
+												name: 'Пожвався!',
 												description: 'You and your allies coordinate to form a new battle line.',
 												type: 'Ability',
 												data: {
@@ -3164,7 +3164,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-2-7-1',
-								name: 'Grand Strategy',
+								name: 'Грандіозна стратегія',
 								description: 'You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.',
 								type: 'Text',
 								data: null
@@ -3176,7 +3176,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-8-1',
-								name: 'Pincer Movement',
+								name: 'Щипцевий маневр',
 								description: 'When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to have the character making the strike shift up to a number of squares equal to your Reason score before the strike is resolved. If you didn’t make the strike, you can make this shift as well. If you did make the strike, one ally within 10 squares of you can make this shift as well.',
 								type: 'Package Content',
 								data: {
@@ -3198,7 +3198,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-9-1a',
-												name: 'Blot Out the Sun!',
+												name: 'Закрий сонце!',
 												description: 'What makes a good soldier? The ability to fire four shots a minute in any weather.',
 												type: 'Ability',
 												data: {
@@ -3253,7 +3253,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-2-9-1b',
-												name: 'Counterstrategy',
+												name: 'Контрстратегія',
 												description: 'I’ve identified a way to negate their strengths.',
 												type: 'Ability',
 												data: {
@@ -3320,7 +3320,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'tactician-sub-3',
-				name: 'Vanguard',
+				name: 'Авангард',
 				description: 'You have learned the stratagems of ancient heroes, letting you lead from the front lines and seek victory through sheer force of will and personality.',
 				featuresByLevel: [
 					{
@@ -3328,13 +3328,13 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-3-1-1',
-								name: 'Interpersonal Skill',
+								name: 'Міжособистісна навичка',
 								description: '',
 								type: 'Skill Choice',
 								data: {
 									options: [],
 									listOptions: [
-										'Interpersonal'
+										'Міжособистісні'
 									],
 									count: 1,
 									selected: [
@@ -3344,14 +3344,14 @@ export const highElfTactician = {
 							},
 							{
 								id: 'tactician-sub-3-1-2',
-								name: 'Commanding Presence',
-								description: 'You command any room you walk into. While you are present during a negotiation, each hero with you treats their Renown as 2 higher than usual. Additionally, each hero with you during a combat encounter has a double edge on tests made to stop combat and start a negotiation.',
+								name: 'Командна присутність',
+								description: 'Ви пануєте в будь-якій кімнаті, куди заходите. Поки ви присутні під час переговорів, кожен герой поруч із вами вважає свою Славу на 2 вищою, ніж зазвичай. Крім того, кожен герой поруч із вами під час бойової зустрічі має подвійний ефект на тести, зроблені для припинення бою та початку переговорів.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-3-1-3',
-								name: 'Parry',
+								name: 'Парірування',
 								description: 'Your quick reflexes cost an enemy the precision they seek.',
 								type: 'Ability',
 								data: {
@@ -3416,14 +3416,14 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-3-2-1',
-								name: 'Melee Superiority',
+								name: 'Перевага в ближньому бою',
 								description: 'After constant drills, you can more accurately anticipate an enemy’s plan and thwart their attempts to move across the battlefield. Whenever you make an opportunity attack, the target’s speed is reduced to 0 until the end of the current turn.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-3-2-1a',
-								name: 'Mark Benefit',
+								name: 'Перевага мітки',
 								description: 'When a creature marked by you attempts to move or shift within distance of your melee free strike, you can use a free triggered action and spend 2 focus to make a melee free strike against that creature.',
 								type: 'Package Content',
 								data: {
@@ -3440,7 +3440,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-2-2a',
-												name: 'No Dying on My Watch',
+												name: 'Не помирай під моїм наглядом',
 												description: 'You prioritize saving an ally over your own safety.',
 												type: 'Ability',
 												data: {
@@ -3509,7 +3509,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-2-2b',
-												name: 'Squad! On Me!',
+												name: 'Взвод! До мене!',
 												description: 'Together we are invincible!',
 												type: 'Ability',
 												data: {
@@ -3581,14 +3581,14 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-3-5-1',
-								name: 'Shake It Off',
+								name: 'Струсіть це',
 								description: 'As a free maneuver, you can spend 1d6 Stamina to ignore a consequence from a test, or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend Stamina as a free maneuver to gain this benefit.',
 								type: 'Text',
 								data: null
 							},
 							{
 								id: 'tactician-sub-3-5-2',
-								name: 'Tactical Offensive',
+								name: 'Тактична наступальна',
 								description: 'When you use the Charge main action to attack a creature marked by you, you can use a signature or heroic ability with the Melee and Strike keywords instead of a melee free strike.',
 								type: 'Text',
 								data: null
@@ -3608,7 +3608,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-6-1a',
-												name: 'Instant Retaliation',
+												name: 'Миттєве відплата',
 												description: 'You parry with almost supernatural speed.',
 												type: 'Ability',
 												data: {
@@ -3676,7 +3676,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-6-1b',
-												name: 'To Me Squad!',
+												name: 'До мене, взвод!',
 												description: 'You lead your allies in a charge.',
 												type: 'Ability',
 												data: {
@@ -3755,7 +3755,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-3-7-1',
-								name: 'Shock and Awe',
+								name: 'Шок і трепет',
 								description: 'You have expanded your leadership skills, strengthening your followers’ morale and providing logistical support. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.',
 								type: 'Text',
 								data: null
@@ -3767,7 +3767,7 @@ export const highElfTactician = {
 						features: [
 							{
 								id: 'tactician-sub-1-8-1',
-								name: 'See Your Enemies Driven Before You',
+								name: 'Бачити, як твої вороги відступають перед тобою',
 								description: 'When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your Reason score. That character can then shift up to a number of squares equal to your Reason score, ending this shift adjacent to the target.',
 								type: 'Package Content',
 								data: {
@@ -3789,7 +3789,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-9-1a',
-												name: 'No Escape',
+												name: 'Немає втечі',
 												description: 'Nothing will stop you from reaching your foe.',
 												type: 'Ability',
 												data: {
@@ -3863,7 +3863,7 @@ export const highElfTactician = {
 										{
 											feature: {
 												id: 'tactician-sub-3-9-1b',
-												name: 'That One Is Mine!',
+												name: 'Цей — мій!',
 												description: 'You focus on making an enemy irrelevant.',
 												type: 'Ability',
 												data: {
@@ -3984,18 +3984,18 @@ export const highElfTactician = {
 	},
 	career: {
 		id: 'career-soldier',
-		name: 'Soldier',
+		name: 'Солдат',
 		description: 'In your formative years, you fought tirelessly in skirmishes and campaigns against enemy forces.',
 		features: [
 			{
 				id: 'career-soldier-feature-1',
-				name: 'Exploration Skill',
+				name: 'Навичка дослідження',
 				description: '',
 				type: 'Skill Choice',
 				data: {
 					options: [],
 					listOptions: [
-						'Exploration'
+						'Дослідження'
 					],
 					count: 1,
 					selected: [
@@ -4005,13 +4005,13 @@ export const highElfTactician = {
 			},
 			{
 				id: 'career-soldier-feature-2',
-				name: 'Intrigue Skill',
+				name: 'Навичка інтриг',
 				description: '',
 				type: 'Skill Choice',
 				data: {
 					options: [],
 					listOptions: [
-						'Intrigue'
+						'Інтриги'
 					],
 					count: 1,
 					selected: [
@@ -4021,7 +4021,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'career-soldier-feature-3',
-				name: 'Languages',
+				name: 'Мови',
 				description: '',
 				type: 'Language Choice',
 				data: {
@@ -4035,7 +4035,7 @@ export const highElfTactician = {
 			},
 			{
 				id: 'career-soldier-feature-4',
-				name: 'Renown',
+				name: 'Відомість',
 				description: '',
 				type: 'Bonus',
 				data: {
@@ -4049,22 +4049,22 @@ export const highElfTactician = {
 			},
 			{
 				id: 'career-soldier-feature-5',
-				name: 'Exploration Perk',
+				name: 'Перевага дослідження',
 				description: '',
 				type: 'Perk',
 				data: {
 					lists: [
-						'Exploration'
+						'Дослідження'
 					],
 					count: 1,
 					selected: [
 						{
 							id: 'perk-put-your-back-into-it',
-							name: 'Put Your Back Into It',
+							name: 'Вклади силу!',
 							description: 'During montage tests, whenever you make a test to assist a test and obtain a tier 1 outcome, the assisted test doesn’t take a bane. Additionally, once per montage test, you can turn an ally’s tier 1 test outcome into a tier 2 outcome.',
 							type: 'Text',
 							data: null,
-							list: 'Exploration'
+							list: 'Дослідження'
 						}
 					]
 				}
@@ -4074,38 +4074,38 @@ export const highElfTactician = {
 			options: [
 				{
 					id: 'career-soldier-ii-1',
-					name: 'Dishonorable Discharge',
-					description: 'You enlisted in the military to protect others, but your commander ordered you to beat and kill civilians. When you refused, things got violent. You barely escaped the brawl that ensued, but now you vow to help people on your own terms.'
+					name: 'Наруга статусу',
+					description: 'Ви вступили до армії, щоб захищати інших, але ваш командир наказав бити й вбивати цивільних. Коли ви відмовилися, ситуація стала жорстокою. Ви ледь вирвалися з бійки, що спалахнула, але тепер клянетеся допомагати людям на своїх умовах.'
 				},
 				{
 					id: 'career-soldier-ii-2',
-					name: 'Out of Retirement',
-					description: 'You had a long and storied career as a soldier before deciding to retire to a simpler life. But when you returned to your old home, you found your enemies had laid waste to it. Now the skills you earned on the battlefield are helping you as you become a different kind of warrior - one seeking to save others from the fate you suffered.'
+					name: 'Повернення з відставки',
+					description: 'У вас була довга й славетна кар’єра солдата, перш ніж ви вирішили піти на спокій до простішого життя. Але коли ви повернулися до рідного дому, ви виявили, що вороги його зруйнували. Тепер навички, здобуті на полі бою, допомагають вам стати іншим типом воїна — тим, хто прагне врятувати інших від долі, що сталася з вами.'
 				},
 				{
 					id: 'career-soldier-ii-3',
-					name: 'Peace Through Healing',
+					name: 'Мир через зцілення',
 					description: 'The sight of constant bloodshed took its toll on you. You seek peace through healing and dedicated yourself to ending wars before they begin, to spare those around you from the horror.'
 				},
 				{
 					id: 'career-soldier-ii-4',
-					name: 'Sole Survivor',
+					name: 'Один виживший',
 					description: 'You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a soldier then, seeking to become a hero who could stand against such threats.'
 				},
 				{
 					id: 'career-soldier-ii-5',
-					name: 'Stolen Valor',
+					name: 'Украдене звання',
 					description: 'Tired of eking out an existence on the streets, you enrolled in the military. However, you were unable to escape your lower-status background until the officer leading your unit fell in battle. In the chaos that ensued, you assumed their identity and returned home a hero. To avoid suspicion, you took on the life of an adventurer, staying always on the move.'
 				},
 				{
 					id: 'career-soldier-ii-6',
-					name: 'Vow of Sacrifice',
+					name: 'Клятва жертви',
 					description: 'You promised a fellow soldier that you’d protect his family if he ever fell in battle. When he did, you traveled to his village, but found its people slain or scattered by war. Driven by your vow, you have dedicated your life to finding any survivors and protecting others from a similar fate.'
 				}
 			],
 			selected: {
 				id: 'career-soldier-ii-4',
-				name: 'Sole Survivor',
+				name: 'Один виживший',
 				description: 'You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a soldier then, seeking to become a hero who could stand against such threats.'
 			},
 			selectedID: 'career-soldier-ii-4'
@@ -4115,7 +4115,7 @@ export const highElfTactician = {
 	features: [
 		{
 			id: 'default-language',
-			name: 'Default Language',
+			name: 'Мова за замовчуванням',
 			description: '',
 			type: 'Language Choice',
 			data: {

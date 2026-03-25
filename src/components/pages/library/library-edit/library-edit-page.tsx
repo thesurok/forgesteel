@@ -76,7 +76,7 @@ interface Props {
 export const LibraryEditPage = (props: Props) => {
 	const navigation = useNavigation();
 	const { kind, sourcebookID, elementID } = useParams<{ kind: SourcebookElementKind, sourcebookID: string, elementID: string }>();
-	const [ element, setElement ] = useState<Element>(() => {
+	const [element, setElement] = useState<Element>(() => {
 		const sourcebook = props.sourcebooks.find(s => s.id === sourcebookID)!;
 		let original: Element;
 		switch (kind!) {
@@ -143,8 +143,8 @@ export const LibraryEditPage = (props: Props) => {
 		}
 		return Utils.copy(original) as Element;
 	});
-	const [ dirty, setDirty ] = useState<boolean>(false);
-	const [ revision, setRevision ] = useState<number>(0);
+	const [dirty, setDirty] = useState<boolean>(false);
+	const [revision, setRevision] = useState<number>(0);
 
 	const getSubheader = () => {
 		return `${Format.capitalize(kind!.split('-').join(' '))} Builder`;
@@ -394,10 +394,10 @@ export const LibraryEditPage = (props: Props) => {
 			<div className='library-edit-page'>
 				<AppHeader subheader={getSubheader()}>
 					<Button type='primary' icon={<SaveOutlined />} disabled={!dirty} onClick={() => props.saveChanges(kind!, sourcebookID!, element)}>
-						Save Changes
+						Зберегти зміни
 					</Button>
 					<Button icon={<CloseOutlined />} onClick={() => navigation.goToLibrary(kind!, elementID!)}>
-						Cancel
+						Скасувати
 					</Button>
 				</AppHeader>
 				<div className='library-edit-page-content'>

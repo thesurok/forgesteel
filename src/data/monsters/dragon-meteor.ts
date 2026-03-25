@@ -222,7 +222,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target takes 30 fire damage, and if they have M<5, they are knocked prone.'),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'The dragon can use this ability before the encounter begins.'
 							})
 						]

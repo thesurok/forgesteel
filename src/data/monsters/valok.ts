@@ -354,7 +354,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 6, value2: 3, within: 1 })],
 						cost: 3,
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The area is covered in wet concrete and is difficult terrain. Any enemy who starts their turn in the concrete makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(
@@ -374,7 +374,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Wall, value: 6, value2: 3 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The builder creates a concrete wall. They can also remove any unoccupied squares of wet concrete within 3 squares of them, creating two additional squares of wall for each square of concrete removed.')
 						]

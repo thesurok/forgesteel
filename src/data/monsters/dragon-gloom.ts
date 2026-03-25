@@ -237,7 +237,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						name: 'Absence of All Light',
 						type: FactoryLogic.type.createVillainAction(3),
 						distance: [FactoryLogic.distance.createSpecial('')],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon’s speed. An illusion acts on the dragon’s turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.')
 						]

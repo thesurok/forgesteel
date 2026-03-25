@@ -60,7 +60,7 @@ export const AbilityComponent = (props: Props) => {
 
 	const getEffectSection = () => {
 		if (ability.effect) {
-			// A small number of ability effects start with a 'Special' section, so we want to make sure we don't prepend 'Effect' to that
+			// A small number of ability effects start with a 'Особливе' section, so we want to make sure we don't prepend 'Effect' to that
 			let addedLabel = false;
 			const effectText = ability.effect.split('\n').map(l => {
 				let newLine = l;

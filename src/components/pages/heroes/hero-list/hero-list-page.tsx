@@ -40,9 +40,9 @@ interface Props {
 export const HeroListPage = (props: Props) => {
 	const navigation = useNavigation();
 	const { folder } = useParams<{ folder: string }>();
-	const [ previousTab, setPreviousTab ] = useState<string | undefined>(folder);
-	const [ currentTab, setCurrentTab ] = useState<string>(folder ?? '');
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
+	const [previousTab, setPreviousTab] = useState<string | undefined>(folder);
+	const [currentTab, setCurrentTab] = useState<string>(folder ?? '');
+	const [searchTerm, setSearchTerm] = useState<string>('');
 	useTitle('Heroes');
 
 	if (folder !== previousTab) {
@@ -111,7 +111,7 @@ export const HeroListPage = (props: Props) => {
 						content={(
 							<Space orientation='vertical' style={{ width: '300px' }}>
 								<Button type='primary' block={true} icon={<PlusOutlined />} onClick={() => props.addHero(currentTab)}>
-									Create a New Hero
+									Створити нового героя
 								</Button>
 								<Divider />
 								<Upload
@@ -129,13 +129,13 @@ export const HeroListPage = (props: Props) => {
 									}}
 								>
 									<Button block={true} icon={<DownloadOutlined />}>
-										Import a Hero File
+										Імпортувати файл героя
 									</Button>
 								</Upload>
 								<Button block={true} icon={<ThunderboltOutlined />} onClick={() => props.importHero(HeroLogic.createRandomHero(), currentTab)}>
-									Generate a Random Hero
+									Згенерувати випадкового героя
 								</Button>
-								<Expander title='Use a premade example'>
+								<Expander title='Використати готовий приклад'>
 									<Space orientation='vertical' style={{ width: '100%', maxHeight: '200px', overflowY: 'auto' }}>
 										{
 											exampleHeroes.map(h => (
@@ -150,7 +150,7 @@ export const HeroListPage = (props: Props) => {
 						)}
 					>
 						<Button type='primary'>
-							Add
+							Додати
 							<DownOutlined />
 						</Button>
 					</Popover>
@@ -159,7 +159,7 @@ export const HeroListPage = (props: Props) => {
 							<>
 								<div className='divider' />
 								<Button onClick={() => props.showParty(currentTab)}>
-									Party Overview
+									Огляд групи
 								</Button>
 							</>
 							: null

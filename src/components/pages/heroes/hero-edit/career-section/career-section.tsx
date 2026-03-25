@@ -45,7 +45,7 @@ interface Props {
 
 export const CareerSection = (props: Props) => {
 	const isSmall = useIsSmall();
-	const [ showIncitingIncidents, setShowIncitingIncidents ] = useState<boolean>(false);
+	const [showIncitingIncidents, setShowIncitingIncidents] = useState<boolean>(false);
 
 	const careers = SourcebookLogic.getCareers(props.sourcebooks).map(Utils.copy).filter(c => matchElement(c, props.searchTerm));
 	const options = careers.map(c => (
@@ -67,7 +67,7 @@ export const CareerSection = (props: Props) => {
 
 		choices.push(
 			<SelectablePanel key='inciting-incident'>
-				<HeaderText>Inciting Incident</HeaderText>
+				<HeaderText>Поворотна подія</HeaderText>
 				{
 					props.hero.career.incitingIncidents.selected ?
 						<Flex className='selection-box' align='center' gap={10}>
@@ -88,7 +88,7 @@ export const CareerSection = (props: Props) => {
 						</Flex>
 						:
 						<Button block={true} className='status-warning' onClick={() => setShowIncitingIncidents(true)}>
-							Choose an inciting incident
+							Виберіть поворотну подію
 						</Button>
 				}
 			</SelectablePanel>
@@ -129,7 +129,7 @@ export const CareerSection = (props: Props) => {
 				{
 					choices.length > 0 ?
 						<div className='hero-edit-content-column choices' id='career-choices'>
-							<HeaderText>Choices</HeaderText>
+							<HeaderText>Варіанти</HeaderText>
 							{choices}
 						</div>
 						: null

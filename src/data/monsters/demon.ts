@@ -1322,7 +1322,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Four level 1 demon minions (most commonly **ensnarers**, **frenzieds**, and **pitlings**) burst forth from the egress and appear in unoccupied squares in the area.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1340,7 +1340,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						type: FactoryLogic.type.createTrigger('The last ally minion on the encounter map dies, or the egress is reduced below 25 Stamina.'),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Eight **ensnarers** appear anywhere in the area.')
 						]
@@ -1922,7 +1922,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						type: FactoryLogic.type.createTrigger('The hivequeen is targeted by a strike for the second time on an attacker’s turn, whether by the attacker or another creature acting on the attacker’s turn.'),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Two soulraker minions appear within distance.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -2358,7 +2358,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas chooses a supernatural treasure or an item made of gold and teleports to an unoccupied space adjacent to that object, then ends one effect on him that can be ended by a saving throw.')
 						]
@@ -2398,7 +2398,7 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Special',
+						target: 'Особливе',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Aurumvas chooses up to three treasures within distance that he has line of effect to and that aren’t artifacts. Until the end of the encounter, ethereal golden snakes swirl around the target treasures. While an affected treasure is worn or held by a hero, each time that hero gains any amount of their Heroic Resource, the Director gains 1 Malice.')
 						]

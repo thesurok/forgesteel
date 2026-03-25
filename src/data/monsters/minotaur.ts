@@ -226,7 +226,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						cost: 3,
 						sections: [
 							FactoryLogic.createAbilitySectionField({
-								name: 'Special',
+								name: 'Особливе',
 								effect: 'The target must be grabbed by the sunderer.'
 							}),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({

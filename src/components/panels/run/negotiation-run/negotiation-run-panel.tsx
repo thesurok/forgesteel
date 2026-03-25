@@ -19,7 +19,7 @@ interface Props {
 }
 
 export const NegotiationRunPanel = (props: Props) => {
-	const [ negotiation, setNegotiation ] = useState<Negotiation>(Utils.copy(props.negotiation));
+	const [negotiation, setNegotiation] = useState<Negotiation>(Utils.copy(props.negotiation));
 
 	const setInterest = (value: number) => {
 		const copy = Utils.copy(negotiation);
@@ -86,7 +86,7 @@ export const NegotiationRunPanel = (props: Props) => {
 							text={`
 If a hero wishes to figure out an NPC’s motivations, they can begin by simply asking, “What do you want out of this deal?” In response, the NPC can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch NPC with the greed motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch’s gratitude. The Director can also decide that during the natural course of the negotiation, the NPC might offer up similar suggestions without the heroes asking, provided the NPC already has an interest of 3 or higher. If an NPC isn’t as forthcoming, or if the heroes want to learn one of the NPC’s pitfalls, a hero can make a Reason, Intuition, or Presence test while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Кидок Сили + Reason, Intuition, or Presence:**
 
 | Roll    | Effect                                                                                                                                                                                                      |
 |:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -102,7 +102,7 @@ After this test is made, the heroes can’t make another test to determine the s
 							text={`
 If an argument doesn’t include a pitfall and appeals to one of the NPC’s motivations that hasn’t already been appealed to, the hero making the argument can make an medium test to attempt to sway the NPC with the argument. Depending on the argument, this can be a Reason, Intuition, or Presence test using any applicable skill—most commonly a skill from the interpersonal skill group. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Кидок Сили + Reason, Intuition, or Presence:**
 
 | Roll    | Effect                                                                |
 |:--------|:----------------------------------------------------------------------|
@@ -120,7 +120,7 @@ If the heroes attempt to appeal to a motivation that’s already been appealed t
 							text={`
 If an argument doesn’t include one of the NPC’s motivations or pitfalls, the hero who makes the argument must make a more difficult test to appeal to the NPC. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Кидок Сили + Reason, Intuition, or Presence:**
 
 | Roll    | Effect                                                                |
 |:--------|:----------------------------------------------------------------------|

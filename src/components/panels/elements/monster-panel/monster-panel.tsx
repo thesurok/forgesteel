@@ -46,7 +46,7 @@ interface Props {
 }
 
 export const MonsterPanel = (props: Props) => {
-	const [ selectedAbility, setSelectedAbility ] = useState<Ability | null>(null);
+	const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
 	const speed = MonsterLogic.getSpeed(props.monster);
 	const signatureBonus = MonsterLogic.getSignatureDamageBonus(props.monster);
@@ -118,7 +118,7 @@ export const MonsterPanel = (props: Props) => {
 								<Field orientation='vertical' label='Free Strike' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
 							</StatsRow>
 							{
-								![ 'healthy', 'injured' ].includes(MonsterLogic.getCombatState(props.monster)) ?
+								!['healthy', 'injured'].includes(MonsterLogic.getCombatState(props.monster)) ?
 									<Alert
 										type='warning'
 										showIcon={true}
@@ -128,7 +128,7 @@ export const MonsterPanel = (props: Props) => {
 							}
 							<StatsRow>
 								{
-									[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+									[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 										.map(ch => <Field key={ch} orientation='vertical' label={ch} value={MonsterLogic.getCharacteristic(props.monster, ch)} />)
 								}
 							</StatsRow>
@@ -152,7 +152,7 @@ export const MonsterPanel = (props: Props) => {
 										}
 										{
 											conditions.length > 0 ?
-												<Field label='Cannot Be' value={conditions.join(', ')} />
+												<Field label='Не може бути' value={conditions.join(', ')} />
 												: null
 										}
 										{
@@ -201,7 +201,7 @@ export const MonsterPanel = (props: Props) => {
 											props.monster.retainer.level4 && (props.monster.retainer.level < 4) ?
 												<>
 													<HeaderText level={1}>Level 4</HeaderText>
-													<FeaturePanel key={props.monster.retainer.level4.id} feature={props.monster.retainer.level4}options={props.options} mode={PanelMode.Full} />
+													<FeaturePanel key={props.monster.retainer.level4.id} feature={props.monster.retainer.level4} options={props.options} mode={PanelMode.Full} />
 												</>
 												: null
 										}
@@ -209,7 +209,7 @@ export const MonsterPanel = (props: Props) => {
 											props.monster.retainer.level7 && (props.monster.retainer.level < 7) ?
 												<>
 													<HeaderText level={1}>Level 7</HeaderText>
-													<FeaturePanel key={props.monster.retainer.level7.id} feature={props.monster.retainer.level7}options={props.options} mode={PanelMode.Full} />
+													<FeaturePanel key={props.monster.retainer.level7.id} feature={props.monster.retainer.level7} options={props.options} mode={PanelMode.Full} />
 												</>
 												: null
 										}
@@ -217,7 +217,7 @@ export const MonsterPanel = (props: Props) => {
 											props.monster.retainer.level10 && (props.monster.retainer.level < 10) ?
 												<>
 													<HeaderText level={1}>Level 10</HeaderText>
-													<FeaturePanel key={props.monster.retainer.level10.id} feature={props.monster.retainer.level10}options={props.options} mode={PanelMode.Full} />
+													<FeaturePanel key={props.monster.retainer.level10.id} feature={props.monster.retainer.level10} options={props.options} mode={PanelMode.Full} />
 												</>
 												: null
 										}

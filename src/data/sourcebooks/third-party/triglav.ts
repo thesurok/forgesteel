@@ -791,7 +791,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionField({
-					name: 'Special',
+					name: 'Особливе',
 					effect: 'Each target must be adjacent to another target as well as within distance.'
 				}),
 				FactoryLogic.createAbilitySectionRoll(
