@@ -50,11 +50,11 @@ interface Props {
 }
 
 export const MonsterEditPanel = (props: Props) => {
-	const [ monster, setMonster ] = useState<Monster>(props.monster);
-	const [ selectedCategory, setSelectedCategory ] = useState<MonsterFeatureCategory>(MonsterFeatureCategory.Text);
-	const [ scratchpadMonsters, setScratchpadMonsters ] = useState<Monster[]>([]);
-	const [ hiddenMonsterIDs, setHiddenMonsterIDs ] = useState<string[]>([]);
-	const [ drawerOpen, setDrawerOpen ] = useState<boolean>(false);
+	const [monster, setMonster] = useState<Monster>(props.monster);
+	const [selectedCategory, setSelectedCategory] = useState<MonsterFeatureCategory>(MonsterFeatureCategory.Text);
+	const [scratchpadMonsters, setScratchpadMonsters] = useState<Monster[]>([]);
+	const [hiddenMonsterIDs, setHiddenMonsterIDs] = useState<string[]>([]);
+	const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -252,7 +252,7 @@ export const MonsterEditPanel = (props: Props) => {
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Select organization'
-					options={[ MonsterOrganizationType.NoOrganization, MonsterOrganizationType.Minion, MonsterOrganizationType.Horde, MonsterOrganizationType.Platoon, MonsterOrganizationType.Elite, MonsterOrganizationType.Leader, MonsterOrganizationType.Solo, MonsterOrganizationType.Retainer ].map(option => ({ value: option, desc: MonsterLogic.getRoleOrganizationDescription(option) }))}
+					options={[MonsterOrganizationType.NoOrganization, MonsterOrganizationType.Minion, MonsterOrganizationType.Horde, MonsterOrganizationType.Platoon, MonsterOrganizationType.Elite, MonsterOrganizationType.Leader, MonsterOrganizationType.Solo, MonsterOrganizationType.Retainer].map(option => ({ value: option, desc: MonsterLogic.getRoleOrganizationDescription(option) }))}
 					optionRender={option => <Field label={option.data.value} value={option.data.desc} />}
 					value={monster.role.organization}
 					onChange={setRoleOrganization}
@@ -260,13 +260,13 @@ export const MonsterEditPanel = (props: Props) => {
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Select role'
-					options={[ MonsterRoleType.NoRole, MonsterRoleType.Ambusher, MonsterRoleType.Artillery, MonsterRoleType.Brute, MonsterRoleType.Controller, MonsterRoleType.Defender, MonsterRoleType.Harrier, MonsterRoleType.Hexer, MonsterRoleType.Mount, MonsterRoleType.Support ].map(option => ({ value: option, desc: MonsterLogic.getRoleTypeDescription(option) }))}
+					options={[MonsterRoleType.NoRole, MonsterRoleType.Ambusher, MonsterRoleType.Artillery, MonsterRoleType.Brute, MonsterRoleType.Controller, MonsterRoleType.Defender, MonsterRoleType.Harrier, MonsterRoleType.Hexer, MonsterRoleType.Mount, MonsterRoleType.Support].map(option => ({ value: option, desc: MonsterLogic.getRoleTypeDescription(option) }))}
 					optionRender={option => <Field label={option.data.value} value={option.data.desc} />}
 					value={monster.role.type}
 					onChange={setRoleType}
 				/>
 				<HeaderText>Encounter Value</HeaderText>
-				<NumberSpin min={1} value={monster.encounterValue} steps={[ 1, 10 ]} onChange={setEncounterValue} />
+				<NumberSpin min={1} value={monster.encounterValue} steps={[1, 10]} onChange={setEncounterValue} />
 				{
 					getSimilarMonsters().length > 0 ?
 						<Expander
@@ -313,7 +313,7 @@ export const MonsterEditPanel = (props: Props) => {
 
 		const setMovementModes = (value: string) => {
 			const copy = Utils.copy(monster);
-			copy.speed.modes = [ value ];
+			copy.speed.modes = [value];
 			setMonster(copy);
 			props.onChange(copy);
 		};
@@ -375,7 +375,7 @@ export const MonsterEditPanel = (props: Props) => {
 						<Segmented<'' | 'T' | 'S' | 'M' | 'L'>
 							name='sizemodtypes'
 							block={true}
-							options={[ 'T', 'S', 'M', 'L' ]}
+							options={['T', 'S', 'M', 'L']}
 							value={monster.size.mod}
 							onChange={setSizeMod}
 						/>
@@ -408,7 +408,7 @@ export const MonsterEditPanel = (props: Props) => {
 						: null
 				}
 				<HeaderText>Stamina</HeaderText>
-				<NumberSpin min={0} value={monster.stamina} steps={[ 1, 10 ]} onChange={setStamina} />
+				<NumberSpin min={0} value={monster.stamina} steps={[1, 10]} onChange={setStamina} />
 				{
 					getSimilarMonsters().length > 0 ?
 						<Expander
@@ -447,11 +447,11 @@ export const MonsterEditPanel = (props: Props) => {
 						: null
 				}
 				<HeaderText>Free Strike</HeaderText>
-				<NumberSpin label='Damage' min={0} value={monster.freeStrikeDamage} steps={[ 1, 10 ]} onChange={setFreeStrikeDamage} />
+				<NumberSpin label='Damage' min={0} value={monster.freeStrikeDamage} steps={[1, 10]} onChange={setFreeStrikeDamage} />
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Damage type'
-					options={[ DamageType.Damage, DamageType.Acid, DamageType.Cold, DamageType.Corruption, DamageType.Fire, DamageType.Holy, DamageType.Lightning, DamageType.Poison, DamageType.Psychic, DamageType.Sonic ].map(option => ({ value: option }))}
+					options={[DamageType.Damage, DamageType.Acid, DamageType.Cold, DamageType.Corruption, DamageType.Fire, DamageType.Holy, DamageType.Lightning, DamageType.Poison, DamageType.Psychic, DamageType.Sonic].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={monster.freeStrikeType}
 					onChange={setFreeStrikeType}
@@ -617,7 +617,7 @@ export const MonsterEditPanel = (props: Props) => {
 						<Expander
 							key={f.id}
 							title={f.name || 'Unnamed Feature'}
-							tags={[ FeatureLogic.getFeatureTag(f) ]}
+							tags={[FeatureLogic.getFeatureTag(f)]}
 							extra={[
 								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'up'); }} />,
 								<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'down'); }} />,
@@ -627,7 +627,7 @@ export const MonsterEditPanel = (props: Props) => {
 							<FeatureEditPanel
 								feature={f}
 								sourcebooks={props.sourcebooks}
-								allowedTypes={[ FeatureType.Text, FeatureType.Ability, FeatureType.ConditionImmunity, FeatureType.DamageModifier ]}
+								allowedTypes={[FeatureType.Text, FeatureType.Ability, FeatureType.ConditionImmunity, FeatureType.DamageModifier]}
 								options={props.options}
 								onChange={changeFeature}
 							/>
@@ -649,7 +649,7 @@ export const MonsterEditPanel = (props: Props) => {
 									name='categories'
 									block={true}
 									options={
-										[ MonsterFeatureCategory.Text, MonsterFeatureCategory.DamageMod, MonsterFeatureCategory.Signature, MonsterFeatureCategory.Action, MonsterFeatureCategory.Maneuver, MonsterFeatureCategory.Trigger, MonsterFeatureCategory.Other ]
+										[MonsterFeatureCategory.Text, MonsterFeatureCategory.DamageMod, MonsterFeatureCategory.Signature, MonsterFeatureCategory.Action, MonsterFeatureCategory.Maneuver, MonsterFeatureCategory.Trigger, MonsterFeatureCategory.Other]
 											.map(tab => ({
 												value: tab,
 												label: <div className='category-selector'>{tab}</div>
@@ -663,7 +663,7 @@ export const MonsterEditPanel = (props: Props) => {
 										<Expander
 											key={s.feature.id}
 											title={s.feature.name}
-											tags={[ FeatureLogic.getFeatureTag(s.feature) ]}
+											tags={[FeatureLogic.getFeatureTag(s.feature)]}
 											extra={[
 												<Button key='up' type='text' title='Import' icon={<ImportOutlined />} onClick={e => { e.stopPropagation(); importFeature(s.feature); }} />
 											]}
@@ -748,12 +748,12 @@ export const MonsterEditPanel = (props: Props) => {
 					monster.retainer && monster.retainer.level4 ?
 						<Expander
 							title='Level 4'
-							tags={[ FeatureLogic.getFeatureTag(monster.retainer.level4) ]}
+							tags={[FeatureLogic.getFeatureTag(monster.retainer.level4)]}
 						>
 							<FeatureEditPanel
 								feature={monster.retainer.level4}
 								sourcebooks={props.sourcebooks}
-								allowedTypes={[ FeatureType.Ability ]}
+								allowedTypes={[FeatureType.Ability]}
 								options={props.options}
 								onChange={f => changeRetainerFeature(f, 4)}
 							/>
@@ -764,12 +764,12 @@ export const MonsterEditPanel = (props: Props) => {
 					monster.retainer && monster.retainer.level7 ?
 						<Expander
 							title='Level 7'
-							tags={[ FeatureLogic.getFeatureTag(monster.retainer.level7) ]}
+							tags={[FeatureLogic.getFeatureTag(monster.retainer.level7)]}
 						>
 							<FeatureEditPanel
 								feature={monster.retainer.level7}
 								sourcebooks={props.sourcebooks}
-								allowedTypes={[ FeatureType.Ability ]}
+								allowedTypes={[FeatureType.Ability]}
 								options={props.options}
 								onChange={f => changeRetainerFeature(f, 7)}
 							/>
@@ -780,12 +780,12 @@ export const MonsterEditPanel = (props: Props) => {
 					monster.retainer && monster.retainer.level10 ?
 						<Expander
 							title='Level 10'
-							tags={[ FeatureLogic.getFeatureTag(monster.retainer.level10) ]}
+							tags={[FeatureLogic.getFeatureTag(monster.retainer.level10)]}
 						>
 							<FeatureEditPanel
 								feature={monster.retainer.level10}
 								sourcebooks={props.sourcebooks}
-								allowedTypes={[ FeatureType.Ability ]}
+								allowedTypes={[FeatureType.Ability]}
 								options={props.options}
 								onChange={f => changeRetainerFeature(f, 10)}
 							/>
@@ -817,7 +817,7 @@ export const MonsterEditPanel = (props: Props) => {
 				<Flex align='center' justify='space-around'>
 					<Field orientation='vertical' label='Highest characteristic' value={stats.highestCharacteristic} />
 					<Field orientation='vertical' label='EV' value={stats.ev} />
-					<Field orientation='vertical' label='Stamina' value={stats.stamina} />
+					<Field orientation='vertical' label='Витривалість' value={stats.stamina} />
 					<Field orientation='vertical' label='Free strike damage' value={stats.freeStrikeDamage} />
 				</Flex>
 				<HeaderText>Ability Damage</HeaderText>

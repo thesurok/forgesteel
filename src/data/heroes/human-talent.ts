@@ -378,11 +378,11 @@ export const humanTalent = {
 				features: [
 					{
 						id: 'talent-stamina',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 18,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -499,13 +499,13 @@ export const humanTalent = {
 								},
 								keywords: [
 									'Psionic',
-									'Ranged',
-									'Strike',
+									'Дальній',
+									'Удар',
 									'Telepathy'
 								],
 								distance: [
 									{
-										type: 'Ranged',
+										type: 'Дальній',
 										value: 10,
 										value2: 0,
 										within: 0,
@@ -593,11 +593,11 @@ export const humanTalent = {
 												},
 												{
 													id: 'talent-1-5ab',
-													name: 'Stamina',
+													name: 'Витривалість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stamina',
+														field: 'Витривалість',
 														value: 0,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -634,11 +634,11 @@ export const humanTalent = {
 											features: [
 												{
 													id: 'talent-1-5ba',
-													name: 'Stamina',
+													name: 'Витривалість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stamina',
+														field: 'Витривалість',
 														value: 0,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -648,11 +648,11 @@ export const humanTalent = {
 												},
 												{
 													id: 'talent-1-5bb',
-													name: 'Stability',
+													name: 'Непорушність',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stability',
+														field: 'Непорушність',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -674,7 +674,7 @@ export const humanTalent = {
 										data: {
 											keywords: [
 												'Psionic',
-												'Ranged'
+												'Дальній'
 											],
 											value: 2,
 											valueCharacteristics: [],
@@ -715,11 +715,11 @@ export const humanTalent = {
 											features: [
 												{
 													id: 'talent-1-5ea',
-													name: 'Speed',
+													name: 'Швидкість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Speed',
+														field: 'Швидкість',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -757,7 +757,7 @@ export const humanTalent = {
 									data: {
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										value: 2,
 										valueCharacteristics: [],
@@ -1525,7 +1525,7 @@ export const humanTalent = {
 									type: 'Ability Distance',
 									data: {
 										keywords: [
-											'Ranged'
+											'Дальній'
 										],
 										value: 10,
 										valueCharacteristics: [],
@@ -1647,12 +1647,12 @@ export const humanTalent = {
 				keywords: [
 					'Chronopathy',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1713,12 +1713,12 @@ export const humanTalent = {
 				keywords: [
 					'Cryokinesis',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1776,7 +1776,7 @@ export const humanTalent = {
 					'Area',
 					'Fire',
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Pyrokinesis'
 				],
 				distance: [
@@ -1841,12 +1841,12 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Telekinesis'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1963,13 +1963,13 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Resopathy',
-					'Strike'
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2030,12 +2030,12 @@ export const humanTalent = {
 				keywords: [
 					'Metamorphosis',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2095,13 +2095,13 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Animapathy',
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike'
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 2,
 						value2: 0,
 						within: 0,
@@ -2161,13 +2161,13 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
-					'Strike',
+					'Дальній',
+					'Удар',
 					'Telepathy'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2220,13 +2220,13 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
-					'Strike',
+					'Дальній',
+					'Удар',
 					'Telekinesis'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2279,12 +2279,12 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Chronopathy',
-					'Melee',
+					'Ближній бій',
 					'Psionic'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 2,
 						value2: 0,
 						within: 0,
@@ -2326,12 +2326,12 @@ export const humanTalent = {
 				keywords: [
 					'Psionic',
 					'Pyrokinesis',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2385,11 +2385,11 @@ export const humanTalent = {
 				keywords: [
 					'Chronopathy',
 					'Psionic',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2437,12 +2437,12 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Telekinesis'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2491,11 +2491,11 @@ export const humanTalent = {
 				keywords: [
 					'Metamorphosis',
 					'Psionic',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2543,12 +2543,12 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Telepathy'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2597,12 +2597,12 @@ export const humanTalent = {
 				keywords: [
 					'Chronopathy',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2662,8 +2662,8 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
-					'Strike',
+					'Дальній',
+					'Удар',
 					'Telekinesis'
 				],
 				distance: [
@@ -2782,12 +2782,12 @@ export const humanTalent = {
 				keywords: [
 					'Animapathy',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2848,11 +2848,11 @@ export const humanTalent = {
 				keywords: [
 					'Pyrokinesis',
 					'Psionic',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2900,7 +2900,7 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Area',
-					'Charge',
+					'Ривок',
 					'Psionic',
 					'Telekinesis'
 				],
@@ -2966,13 +2966,13 @@ export const humanTalent = {
 				},
 				keywords: [
 					'Psionic',
-					'Ranged',
-					'Strike',
+					'Дальній',
+					'Удар',
 					'Telepathy'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3033,12 +3033,12 @@ export const humanTalent = {
 				keywords: [
 					'Animapathy',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3099,12 +3099,12 @@ export const humanTalent = {
 				keywords: [
 					'Animapathy',
 					'Psionic',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3163,14 +3163,14 @@ export const humanTalent = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Ranged',
+					'Дальній',
 					'Telepathy'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 2,
 						value2: 0,
 						within: 0,
@@ -3231,11 +3231,11 @@ export const humanTalent = {
 				keywords: [
 					'Chronopathy',
 					'Psionic',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3284,11 +3284,11 @@ export const humanTalent = {
 				keywords: [
 					'Metamorphosis',
 					'Psionic',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3352,11 +3352,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -3412,11 +3412,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -3486,11 +3486,11 @@ export const humanTalent = {
 														keywords: [
 															'Chronopathy',
 															'Psionic',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3562,11 +3562,11 @@ export const humanTalent = {
 														keywords: [
 															'Chronopathy',
 															'Psionic',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3682,11 +3682,11 @@ export const humanTalent = {
 														keywords: [
 															'Chronopathy',
 															'Psionic',
-															'Melee'
+															'Ближній бій'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 2,
 																value2: 0,
 																within: 0,
@@ -3759,7 +3759,7 @@ export const humanTalent = {
 															'Area',
 															'Chronopathy',
 															'Psionic',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
@@ -3854,11 +3854,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -3928,11 +3928,11 @@ export const humanTalent = {
 														keywords: [
 															'Chronopathy',
 															'Psionic',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -4082,11 +4082,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -4149,11 +4149,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -4337,13 +4337,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
-															'Strike',
+															'Дальній',
+															'Удар',
 															'Telekinesis'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -4455,7 +4455,7 @@ export const humanTalent = {
 														keywords: [
 															'Area',
 															'Psionic',
-															'Ranged',
+															'Дальній',
 															'Telekinesis'
 														],
 														distance: [
@@ -4531,13 +4531,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
-															'Strike',
+															'Дальній',
+															'Удар',
 															'Telekinesis'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -4871,11 +4871,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -4924,11 +4924,11 @@ export const humanTalent = {
 										},
 										keywords: [
 											'Psionic',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -5004,13 +5004,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
-															'Strike',
+															'Дальній',
+															'Удар',
 															'Telepathy'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -5077,12 +5077,12 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
+															'Дальній',
 															'Telepathy'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -5178,7 +5178,7 @@ export const humanTalent = {
 											type: 'Ability Distance',
 											data: {
 												keywords: [
-													'Ranged',
+													'Дальній',
 													'Psionic'
 												],
 												value: 5,
@@ -5224,13 +5224,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Melee',
-															'Ranged',
+															'Ближній бій',
+															'Дальній',
 															'Telepathy'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 2,
 																value2: 0,
 																within: 0,
@@ -5297,13 +5297,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
-															'Strike',
+															'Дальній',
+															'Удар',
 															'Telepathy'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -5414,13 +5414,13 @@ export const humanTalent = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged',
-															'Strike',
+															'Дальній',
+															'Удар',
 															'Telepathy'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,

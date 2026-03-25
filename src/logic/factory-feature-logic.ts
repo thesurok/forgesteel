@@ -251,7 +251,7 @@ export class FactoryFeatureLogic {
 			type: FeatureType.Domain,
 			data: {
 				characteristic: data.characteristic || Characteristic.Intuition,
-				levels: data.levels || [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+				levels: data.levels || [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 				count: data.count || 1,
 				selected: []
 			}
@@ -335,7 +335,7 @@ export class FactoryFeatureLogic {
 			description: data.description || '',
 			type: FeatureType.ItemChoice,
 			data: {
-				types: data.types || [ ItemType.Artifact, ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th, ItemType.Leveled, ItemType.Trinket1st, ItemType.Trinket2nd, ItemType.Trinket3rd, ItemType.Trinket4th ],
+				types: data.types || [ItemType.Artifact, ItemType.Consumable1st, ItemType.Consumable2nd, ItemType.Consumable3rd, ItemType.Consumable4th, ItemType.Leveled, ItemType.Trinket1st, ItemType.Trinket2nd, ItemType.Trinket3rd, ItemType.Trinket4th],
 				count: data.count || 1,
 				selected: []
 			}
@@ -345,11 +345,11 @@ export class FactoryFeatureLogic {
 	createKitChoice = (data: { id: string, name?: string, description?: string, types?: string[], count?: number }): FeatureKit => {
 		return {
 			id: data.id,
-			name: data.name || 'Kit',
+			name: data.name || 'Набір',
 			description: data.description || '',
 			type: FeatureType.Kit,
 			data: {
-				types: data.types || [ '' ],
+				types: data.types || [''],
 				count: data.count || 1,
 				selected: []
 			}
@@ -472,7 +472,7 @@ export class FactoryFeatureLogic {
 			description: data.description || '',
 			type: FeatureType.Perk,
 			data: {
-				lists: data.lists || [ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural ],
+				lists: data.lists || [PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural],
 				count: count,
 				selected: data.selected || []
 			}
@@ -540,7 +540,7 @@ export class FactoryFeatureLogic {
 
 		if ((options.length === 0) && (listOptions.length === 0)) {
 			// No options provided - let the user choose any skill
-			listOptions = [ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ];
+			listOptions = [SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore];
 		}
 
 		return {
@@ -560,9 +560,9 @@ export class FactoryFeatureLogic {
 	createSoloMonster = (data: { id: string, name: string, gender?: 'm' | 'f' | 'n', endEffect?: number }): FeatureText => {
 		const capitalizedName = data.name.split(' ').map((n, i) => i === 0 ? Format.capitalize(n) : n).join(' ');
 		const genderWithDefault = data.gender ?? 'n';
-		const heSheThey = ({ m: 'he', f: 'she', n: 'they' } as const)[ genderWithDefault ];
-		const hisHerTheir = ({ m: 'his', f: 'her', n: 'their' } as const)[ genderWithDefault ];
-		const himHerThem = ({ m: 'him', f: 'her', n: 'them' } as const)[ genderWithDefault ];
+		const heSheThey = ({ m: 'he', f: 'she', n: 'they' } as const)[genderWithDefault];
+		const hisHerTheir = ({ m: 'his', f: 'her', n: 'their' } as const)[genderWithDefault];
+		const himHerThem = ({ m: 'him', f: 'her', n: 'them' } as const)[genderWithDefault];
 		return {
 			id: data.id,
 			name: 'Solo Monster',
@@ -577,7 +577,7 @@ export class FactoryFeatureLogic {
 	createSpeed = (data: { id: string, name?: string, description?: string, speed: number }): FeatureSpeed => {
 		return {
 			id: data.id,
-			name: data.name || 'Speed',
+			name: data.name || 'Швидкість',
 			description: data.description || '',
 			type: FeatureType.Speed,
 			data: {

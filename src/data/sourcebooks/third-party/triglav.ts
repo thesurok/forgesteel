@@ -517,7 +517,7 @@ As a vampire, you possess supernatural abilities that make you an excellent hunt
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'vampire-class-1-1',
-					name: 'Stamina',
+					name: 'Витривалість',
 					field: FeatureField.Stamina,
 					value: 18,
 					valuePerLevel: 6

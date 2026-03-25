@@ -35,7 +35,7 @@ interface Props {
 }
 
 export const TerrainPanel = (props: Props) => {
-	const [ terrain, setTerrain ] = useState<Terrain>(Utils.copy(props.terrain));
+	const [terrain, setTerrain] = useState<Terrain>(Utils.copy(props.terrain));
 
 	const setSquares = (value: number) => {
 		const copy = Utils.copy(terrain);
@@ -120,7 +120,7 @@ export const TerrainPanel = (props: Props) => {
 									: null
 							}
 							<Field label='Size' value={typeof terrain.size === 'string' ? terrain.size : FormatLogic.getSize(terrain.size)} />
-							<Field label='Stamina' value={props.updateTerrain ? TerrainLogic.getStaminaValue(terrain) : TerrainLogic.getStaminaDescription(terrain)} />
+							<Field label='Витривалість' value={props.updateTerrain ? TerrainLogic.getStaminaValue(terrain) : TerrainLogic.getStaminaDescription(terrain)} />
 							{
 								terrain.direction ?
 									<Field label='Direction' value={terrain.direction} />

@@ -36,7 +36,7 @@ interface HeroProps {
 }
 
 export const HeroHealthPanel = (props: HeroProps) => {
-	const [ hero, setHero ] = useState<Hero>(Utils.copy(props.hero));
+	const [hero, setHero] = useState<Hero>(Utils.copy(props.hero));
 
 	const setStaminaDamage = (value: number) => {
 		const copy = Utils.copy(hero);
@@ -213,7 +213,7 @@ interface MonsterProps {
 }
 
 export const MonsterHealthPanel = (props: MonsterProps) => {
-	const [ monster, setMonster ] = useState<Monster>(Utils.copy(props.monster));
+	const [monster, setMonster] = useState<Monster>(Utils.copy(props.monster));
 
 	const setStaminaDamage = (value: number) => {
 		const copy = Utils.copy(monster);
@@ -402,7 +402,7 @@ interface MinionGroupProps {
 }
 
 export const MinionGroupHealthPanel = (props: MinionGroupProps) => {
-	const [ slot, setSlot ] = useState<EncounterSlot>(Utils.copy(props.slot));
+	const [slot, setSlot] = useState<EncounterSlot>(Utils.copy(props.slot));
 
 	const setStaminaDamage = (value: number) => {
 		const copy = Utils.copy(slot);
@@ -579,9 +579,9 @@ interface Props {
 }
 
 const HealthPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>(!props.stamina && props.recoveries ? 'recoveries' : 'stamina');
-	const [ damageValue, setDamageValue ] = useState<number>(0);
-	const [ conditionsVisible, setConditionsVisible ] = useState<boolean>(false);
+	const [page, setPage] = useState<string>(!props.stamina && props.recoveries ? 'recoveries' : 'stamina');
+	const [damageValue, setDamageValue] = useState<number>(0);
+	const [conditionsVisible, setConditionsVisible] = useState<boolean>(false);
 
 	const takeDamage = () => {
 		if (props.stamina) {
@@ -646,7 +646,7 @@ const HealthPanel = (props: Props) => {
 							<NumberSpin
 								style={{ flex: '1 1 0' }}
 								min={0}
-								steps={[ 1, 10 ]}
+								steps={[1, 10]}
 								value={damageValue}
 								onChange={setDamageValue}
 							>
@@ -706,7 +706,7 @@ const HealthPanel = (props: Props) => {
 		if (props.defeated && props.defeated.value) {
 			tags.push('Defeated');
 		} else {
-			if (props.stamina && ![ 'healthy', 'injured' ].includes(props.stamina.state)) {
+			if (props.stamina && !['healthy', 'injured'].includes(props.stamina.state)) {
 				tags.push(Format.capitalize(props.stamina.state));
 			}
 			if (props.hidden && props.hidden.value) {
@@ -729,7 +729,7 @@ const HealthPanel = (props: Props) => {
 					{
 						props.stamina ?
 							<Field
-								label='Stamina'
+								label='Витривалість'
 								value={props.stamina.staminaDamage ? `${props.stamina!.staminaMax - props.stamina!.staminaDamage} / ${props.stamina!.staminaMax}` : props.stamina!.staminaMax}
 							/>
 							: null
@@ -756,7 +756,7 @@ const HealthPanel = (props: Props) => {
 						: null
 				}
 				{
-					props.stamina && ![ 'healthy', 'injured', 'dying' ].includes(props.stamina.state) ?
+					props.stamina && !['healthy', 'injured', 'dying'].includes(props.stamina.state) ?
 						<Alert
 							type='warning'
 							showIcon={true}

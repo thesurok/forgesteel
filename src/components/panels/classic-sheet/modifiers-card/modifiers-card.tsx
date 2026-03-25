@@ -23,17 +23,17 @@ export const ModifiersCard = (props: Props) => {
 	const getModifierNameLabel = () => {
 		let label = 'Name';
 
-		if (character.modifierTypes.includes('Kit')) {
-			label = 'Kit';
+		if (character.modifierTypes.includes('Набір')) {
+			label = 'Набір';
 			if (character.modifierName?.includes('&')) {
 				label += 's';
 			}
-		} else if (character.modifierTypes.includes('Augmentation')) {
-			label = 'Augmentation';
-		} else if (character.modifierTypes.includes('Prayer')) {
-			label = 'Prayer';
-		} else if (character.modifierTypes.includes('Enchantment')) {
-			label = 'Enchantment';
+		} else if (character.modifierTypes.includes('Псі-посилення')) {
+			label = 'Псі-посилення';
+		} else if (character.modifierTypes.includes('Молитва')) {
+			label = 'Молитва';
+		} else if (character.modifierTypes.includes('Зачарування ')) {
+			label = 'Зачарування ';
 		}
 
 		return label;
@@ -99,8 +99,8 @@ export const ModifiersCard = (props: Props) => {
 			<h2>
 				<div className='title'>Спорядження та модифікатори</div>
 				<LabeledBooleanField
-					label='Kit'
-					value={character.modifierTypes?.includes('Kit')}
+					label='Набір'
+					value={character.modifierTypes?.includes('Набір')}
 				/>
 			</h2>
 			<LabeledTextField

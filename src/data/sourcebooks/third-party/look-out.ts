@@ -36,7 +36,7 @@ As a kiln, you arrive to stoke the flame wherever the spark of opportunity prese
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'AHShD5RQJEsUMI5D',
-					name: 'Stamina',
+					name: 'Витривалість',
 					field: FeatureField.Stamina,
 					value: 21,
 					valuePerLevel: 9

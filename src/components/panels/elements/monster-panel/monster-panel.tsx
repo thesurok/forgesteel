@@ -112,10 +112,10 @@ export const MonsterPanel = (props: Props) => {
 						<>
 							<StatsRow>
 								<Field orientation='vertical' label='Size' value={FormatLogic.getSize(props.monster.size)} />
-								<Field orientation='vertical' label='Speed' value={speedStr} />
-								<Field orientation='vertical' label='Stamina' value={MonsterLogic.getStaminaDescription(props.monster)} />
-								<Field orientation='vertical' label='Stability' value={MonsterLogic.getStability(props.monster)} />
-								<Field orientation='vertical' label='Free Strike' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
+								<Field orientation='vertical' label='Швидкість' value={speedStr} />
+								<Field orientation='vertical' label='Витривалість' value={MonsterLogic.getStaminaDescription(props.monster)} />
+								<Field orientation='vertical' label='Непорушність' value={MonsterLogic.getStability(props.monster)} />
+								<Field orientation='vertical' label='Вільний Удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
 							</StatsRow>
 							{
 								!['healthy', 'injured'].includes(MonsterLogic.getCombatState(props.monster)) ?

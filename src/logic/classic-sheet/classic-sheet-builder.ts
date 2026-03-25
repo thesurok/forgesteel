@@ -136,7 +136,7 @@ export class ClassicSheetBuilder {
 			[AbilityUsage.Trigger]: 'Triggered Action',
 			[AbilityUsage.VillainAction]: 'Villain Action',
 			[AbilityUsage.ChampionAction]: 'Champion Action',
-			[AbilityUsage.FreeStrike]: 'Free Strike'
+			[AbilityUsage.FreeStrike]: 'Вільний Удар'
 		};
 		const canonicalBase = canonicalActionMap[ability.type.usage] ?? ability.type.usage.toString();
 		sheet.actionType = ability.type.free ? `Free ${canonicalBase}` : canonicalBase;
@@ -153,7 +153,7 @@ export class ClassicSheetBuilder {
 			} else if (ability.type.usage === AbilityUsage.Trigger) {
 				sheet.abilityType = 'Triggered Action';
 			} else if (ability.type.usage === AbilityUsage.FreeStrike) {
-				sheet.abilityType = 'Free Strike';
+				sheet.abilityType = 'Вільний Удар';
 				if (ability.name.toLowerCase().includes('melee')) {
 					sheet.name = 'Melee Free Strike';
 				} else if (ability.name.toLowerCase().includes('ranged')) {
@@ -198,7 +198,7 @@ export class ClassicSheetBuilder {
 			'Signature Ability': 'Фірмова здібність',
 			'Heroic Ability': 'Героїчна здібність',
 			'Triggered Action': 'Тригерна дія',
-			'Free Strike': 'Вільний удар',
+			'Вільний Удар': 'Вільний удар',
 			'Maneuver': 'Маневр',
 			'Move Action': 'Дія руху',
 			'Performance': 'Виконання',

@@ -7,8 +7,8 @@ export enum FeatureField {
 	RecoveryValue = 'Recovery Value',
 	Renown = 'Renown',
 	Save = 'Save',
-	Speed = 'Speed',
-	Stability = 'Stability',
-	Stamina = 'Stamina',
+	Speed = 'Швидкість',
+	Stability = 'Непорушність',
+	Stamina = 'Витривалість',
 	Wealth = 'Wealth'
 };

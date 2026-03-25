@@ -477,22 +477,22 @@ const KitSheet = (props: KitProps) => {
 			</HeaderText>
 			<Markdown text={props.kit.description} />
 			{props.kit.armor.length > 0 ? <Field label='Armor' value={props.kit.armor.join(', ')} /> : null}
-			{props.kit.weapon.length > 0 ? <Field label='Weapon' value={props.kit.weapon.join(', ')} /> : null}
-			{props.kit.stamina > 0 ? <Field label='Stamina' value={`+${props.kit.stamina}`} /> : null}
-			{props.kit.speed > 0 ? <Field label='Speed' value={`+${props.kit.speed}`} /> : null}
-			{props.kit.stability > 0 ? <Field label='Stability' value={`+${props.kit.stability}`} /> : null}
+			{props.kit.weapon.length > 0 ? <Field label='Зброя' value={props.kit.weapon.join(', ')} /> : null}
+			{props.kit.stamina > 0 ? <Field label='Витривалість' value={`+${props.kit.stamina}`} /> : null}
+			{props.kit.speed > 0 ? <Field label='Швидкість' value={`+${props.kit.speed}`} /> : null}
+			{props.kit.stability > 0 ? <Field label='Непорушність' value={`+${props.kit.stability}`} /> : null}
 			{
 				props.kit.meleeDamage ?
-					<Field label='Melee Damage' value={`+${props.kit.meleeDamage.tier1} / +${props.kit.meleeDamage.tier2} / +${props.kit.meleeDamage.tier3}`} />
+					<Field label='Урон у ближньому бою' value={`+${props.kit.meleeDamage.tier1} / +${props.kit.meleeDamage.tier2} / +${props.kit.meleeDamage.tier3}`} />
 					: null
 			}
 			{
 				props.kit.rangedDamage ?
-					<Field label='Ranged Damage' value={`+${props.kit.rangedDamage.tier1} / +${props.kit.rangedDamage.tier2} / +${props.kit.rangedDamage.tier3}`} />
+					<Field label='Урон дальнього бою' value={`+${props.kit.rangedDamage.tier1} / +${props.kit.rangedDamage.tier2} / +${props.kit.rangedDamage.tier3}`} />
 					: null
 			}
-			{props.kit.meleeDistance > 0 ? <Field label='Melee Distance' value={`+${props.kit.meleeDistance}`} /> : null}
-			{props.kit.rangedDistance > 0 ? <Field label='Ranged Distance' value={`+${props.kit.rangedDistance}`} /> : null}
+			{props.kit.meleeDistance > 0 ? <Field label='Відстань ближнього бою' value={`+${props.kit.meleeDistance}`} /> : null}
+			{props.kit.rangedDistance > 0 ? <Field label='Відстань дальнього бою' value={`+${props.kit.rangedDistance}`} /> : null}
 			{props.kit.disengage > 0 ? <Field label='Відступ' value={`+${props.kit.disengage}`} /> : null}
 			{
 				props.kit.features.map(f => (
@@ -603,10 +603,10 @@ const MonsterSheet = (props: MonsterProps) => {
 			</Flex>
 			<StatsRow>
 				<Field orientation='vertical' label='Size' value={FormatLogic.getSize(props.monster.size)} />
-				<Field orientation='vertical' label='Speed' value={speedStr} />
-				<Field orientation='vertical' label='Stamina' value={MonsterLogic.getStaminaDescription(props.monster)} />
-				<Field orientation='vertical' label='Stability' value={MonsterLogic.getStability(props.monster)} />
-				<Field orientation='vertical' label='Free Strike' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
+				<Field orientation='vertical' label='Швидкість' value={speedStr} />
+				<Field orientation='vertical' label='Витривалість' value={MonsterLogic.getStaminaDescription(props.monster)} />
+				<Field orientation='vertical' label='Непорушність' value={MonsterLogic.getStability(props.monster)} />
+				<Field orientation='vertical' label='Вільний Удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
 			</StatsRow>
 			<StatsRow>
 				{
@@ -820,7 +820,7 @@ const TerrainSheet = (props: TerrainProps) => {
 			</Flex>
 			<div>
 				<Field label='Size' value={typeof props.terrain.size === 'string' ? props.terrain.size : FormatLogic.getSize(props.terrain.size)} />
-				<Field label='Stamina' value={TerrainLogic.getStaminaDescription(props.terrain)} />
+				<Field label='Витривалість' value={TerrainLogic.getStaminaDescription(props.terrain)} />
 				{
 					props.terrain.direction ?
 						<Field label='Direction' value={props.terrain.direction} />

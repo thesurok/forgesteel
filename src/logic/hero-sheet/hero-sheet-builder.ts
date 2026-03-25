@@ -96,7 +96,7 @@ export class HeroSheetBuilder {
 
 			const heroicResource = HeroLogic.getHeroicResources(hero)[0];
 			if (heroicResource) {
-				sheet.heroicResourceGains = [ ...heroicResource.gains ].sort(SheetFormatter.sortHeroicResourceGains);
+				sheet.heroicResourceGains = [...heroicResource.gains].sort(SheetFormatter.sortHeroicResourceGains);
 				sheet.heroicResourceName = heroicResource?.name;
 				sheet.heroicResourceCurrent = allFeatures
 					.map(f => f.feature)
@@ -140,16 +140,16 @@ export class HeroSheetBuilder {
 		const modifiers = allFeatures.map(f => f.feature)
 			.filter(f => f.type !== FeatureType.Choice)
 			.filter(f => f.name.match(' Augmentation')
-                        || f.name.match('Ward')
-                        || f.name.match('Prayer of')
-                        || f.name.match('Enchantment of'));
+				|| f.name.match('Ward')
+				|| f.name.match('Prayer of')
+				|| f.name.match('Enchantment of'));
 
 		sheet.modifierTypes = [];
 		if (kits.length) {
-			sheet.modifierTypes.push('Kit');
+			sheet.modifierTypes.push('Набір');
 			sheet.modifierName = kits.map(k => k.name).join(' & ');
 			sheet.modifierWeaponImplement = kits.map(k => k.weapon[0]).filter(v => v).join(', ');
-			sheet.modifierArmorWard = [ ...new Set(kits.map(k => k.armor[0]).filter(v => v)) ].join(', ');
+			sheet.modifierArmorWard = [...new Set(kits.map(k => k.armor[0]).filter(v => v))].join(', ');
 
 			sheet.modifierSpeed = HeroLogic.getBonusFromModifier(hero, k => k.speed);
 			sheet.modifierMeleeDistance = HeroLogic.getBonusFromModifier(hero, k => k.meleeDistance);
@@ -174,16 +174,16 @@ export class HeroSheetBuilder {
 		} else if (modifiers) {
 			modifiers.forEach(modifier => {
 				if (modifier.name.match(' Augmentation')) {
-					sheet.modifierTypes.push('Augmentation');
+					sheet.modifierTypes.push('Псі-посилення');
 					sheet.modifierName = modifier.name;
 				} else if (modifier.name.match('Ward')) {
 					sheet.modifierTypes.push('Ward');
 					sheet.modifierArmorWard = modifier.name;
 				} else if (modifier.name.match('Prayer of')) {
-					sheet.modifierTypes.push('Prayer');
+					sheet.modifierTypes.push('Молитва');
 					sheet.modifierName = modifier.name;
 				} else if (modifier.name.match('Enchantment of')) {
-					sheet.modifierTypes.push('Enchantment');
+					sheet.modifierTypes.push('Зачарування ');
 					sheet.modifierName = modifier.name;
 				}
 
@@ -272,7 +272,7 @@ export class HeroSheetBuilder {
 		sheet.saveBonus = HeroLogic.getSaveBonus(hero);
 
 		const conditions = hero.state.conditions;
-		conditions.filter(c => [ ConditionType.Custom, ConditionType.Quick ].includes(c.type))
+		conditions.filter(c => [ConditionType.Custom, ConditionType.Quick].includes(c.type))
 			.forEach((c, i) => {
 				if (i === 0) {
 					sheet.condition1Name = c.text;
@@ -303,7 +303,7 @@ export class HeroSheetBuilder {
 			map.set(skill.list.toString(), Collections.distinct(skillList, s => s).sort());
 			return map;
 		}, skillsMap);
-		sheet.allSkills = new Map([ ...allSkills.entries() ].sort());
+		sheet.allSkills = new Map([...allSkills.entries()].sort());
 
 		const heroSkills = HeroLogic.getSkills(hero, sourcebooks);
 		const customSkills = heroSkills.filter(s => s.list === SkillList.Custom);
@@ -324,7 +324,7 @@ export class HeroSheetBuilder {
 
 		sheet.languages = HeroLogic.getLanguages(hero, sourcebooks).map(l => l.name);
 		coveredFeatureIds.push(...allFeatures
-			.filter(f => [ FeatureType.Language, FeatureType.LanguageChoice ].includes(f.feature.type))
+			.filter(f => [FeatureType.Language, FeatureType.LanguageChoice].includes(f.feature.type))
 			.map(f => f.feature.id));
 
 		// #region Ancestry + Perks (combined)
@@ -376,7 +376,7 @@ export class HeroSheetBuilder {
 		sheet.titles = titles;
 		coveredFeatureIds.push(...titles.flatMap(t => t.features.map(f => f.id)));
 		coveredFeatureIds.push(...allFeatures
-			.filter(f => [ FeatureType.TitleChoice ].includes(f.feature.type))
+			.filter(f => [FeatureType.TitleChoice].includes(f.feature.type))
 			.map(f => f.feature.id));
 
 		sheet.projects = hero.state.projects.map(p => this.buildProjectSheet(p, hero));
@@ -384,18 +384,18 @@ export class HeroSheetBuilder {
 		// #region Abilities
 		const abilities = HeroLogic.getAbilities(hero, sourcebooks, []).map(a => a.ability);
 
-		const freeStrikes = [ AbilityData.freeStrikeMelee, AbilityData.freeStrikeRanged ]
+		const freeStrikes = [AbilityData.freeStrikeMelee, AbilityData.freeStrikeRanged]
 			.map(a => ClassicSheetBuilder.buildAbilitySheet(a, hero, undefined, options));
 		sheet.abilities = abilities.map(a => ClassicSheetBuilder.buildAbilitySheet(a, hero, undefined, options)).concat(freeStrikes);
 
 		sheet.standardAbilities = AbilityData.standardAbilities.map(a => ClassicSheetBuilder.buildAbilitySheet(a, hero, undefined, options));
 
 		coveredFeatureIds.push(...allFeatures
-			.filter(f => [ FeatureType.ClassAbility, FeatureType.Ability ].includes(f.feature.type))
+			.filter(f => [FeatureType.ClassAbility, FeatureType.Ability].includes(f.feature.type))
 			.map(f => f.feature.id));
 		// #endregion
 
-		const retinue = allFeatures.filter(f => [ FeatureType.Follower, FeatureType.Retainer, FeatureType.Companion, FeatureType.Summon, FeatureType.SummonChoice ].includes(f.feature.type))
+		const retinue = allFeatures.filter(f => [FeatureType.Follower, FeatureType.Retainer, FeatureType.Companion, FeatureType.Summon, FeatureType.SummonChoice].includes(f.feature.type))
 			.map(f => f.feature);
 		sheet.followers = retinue.flatMap(f => this.buildFollowerCompanionSheet(f, hero)).filter(s => !!s);
 
@@ -567,7 +567,7 @@ export class HeroSheetBuilder {
 		};
 
 		sheet.features = MonsterLogic.getFeatures(follower)
-			.filter(f => [ FeatureType.Text, FeatureType.AddOn ].includes(f.type));
+			.filter(f => [FeatureType.Text, FeatureType.AddOn].includes(f.type));
 
 		const abilities = MonsterLogic.getFeatures(follower)
 			.filter(f => f.type === FeatureType.Ability)
@@ -633,7 +633,7 @@ export class HeroSheetBuilder {
 		};
 
 		sheet.features = MonsterLogic.getFeatures(monster)
-			.filter(f => [ FeatureType.Text, FeatureType.AddOn ].includes(f.type));
+			.filter(f => [FeatureType.Text, FeatureType.AddOn].includes(f.type));
 
 		const abilities = MonsterLogic.getFeatures(monster)
 			.filter(f => f.type === FeatureType.Ability)

@@ -443,13 +443,13 @@ export class SheetFormatter {
 	static getAbilityIcon = (ability: Ability | AbilitySheet) => {
 		let abilityIcon = starIcon;
 		// Melee / Ranged
-		if (ability.keywords?.includes('Melee')) {
-			if (ability.keywords.includes('Ranged')) {
+		if (ability.keywords?.includes('Ближній бій')) {
+			if (ability.keywords.includes('Дальній')) {
 				abilityIcon = meleeRangedIcon;
 			} else {
 				abilityIcon = meleeIcon;
 			}
-		} else if (ability.keywords?.includes('Ranged')) {
+		} else if (ability.keywords?.includes('Дальній')) {
 			abilityIcon = rangedIcon;
 		}
 
@@ -870,7 +870,7 @@ export class SheetFormatter {
 	};
 
 	static keywordOrder: string[] = [
-		'Melee', 'Ranged', 'Магія'
+		'Ближній бій', 'Дальній', 'Магія'
 	];
 
 	static sortKeywords = (a: string, b: string): number => {
@@ -905,7 +905,7 @@ export class SheetFormatter {
 		'Maneuver',
 		'Free Triggered Action',
 		'Triggered Action',
-		'Free Strike',
+		'Вільний Удар',
 		'Move Action'
 	];
 

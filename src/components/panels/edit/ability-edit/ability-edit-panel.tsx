@@ -125,9 +125,9 @@ export const AbilityEditPanel = (props: Props) => {
 				case AbilityDistanceType.Self:
 					return 'Себе';
 				case AbilityDistanceType.Melee:
-					return 'Melee';
+					return 'Ближній бій';
 				case AbilityDistanceType.Ranged:
-					return 'Ranged';
+					return 'Дальній';
 				case AbilityDistanceType.Aura:
 				case AbilityDistanceType.Burst:
 				case AbilityDistanceType.Cube:
@@ -149,10 +149,10 @@ export const AbilityEditPanel = (props: Props) => {
 				case 'Себе':
 					copy.distance[index] = FactoryLogic.distance.createSelf();
 					break;
-				case 'Melee':
+				case 'Ближній бій':
 					copy.distance[index] = FactoryLogic.distance.createMelee();
 					break;
-				case 'Ranged':
+				case 'Дальній':
 					copy.distance[index] = FactoryLogic.distance.createRanged(10);
 					break;
 				case 'Area':
@@ -337,7 +337,7 @@ export const AbilityEditPanel = (props: Props) => {
 									<Select
 										style={{ width: '100%' }}
 										placeholder='Distance'
-										options={['Себе', 'Melee', 'Ranged', 'Area', 'Line', 'Summoner', 'Особливе'].map(option => ({ value: option }))}
+										options={['Себе', 'Ближній бій', 'Дальній', 'Area', 'Line', 'Summoner', 'Особливе'].map(option => ({ value: option }))}
 										optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 										value={getDistanceMainType(n)}
 										onChange={value => setDistanceMainType(n, value)}

@@ -395,7 +395,7 @@ export const HeroPanel = (props: Props) => {
 
 		const speed = HeroLogic.getSpeed(props.hero);
 		const speedSuffix = HeroLogic.getSpeedModified(props.hero) ? <ArrowDownOutlined /> : undefined;
-		const speedStr = speed.modes.length === 0 ? 'Speed' : `Speed (${FormatLogic.getSpeedModes(speed.modes).toLowerCase()})`;
+		const speedStr = speed.modes.length === 0 ? 'Швидкість' : `Speed (${FormatLogic.getSpeedModes(speed.modes).toLowerCase()})`;
 
 		const maxStamina = HeroLogic.getStamina(props.hero);
 		const stamina = props.hero.state.staminaDamage === 0 ? maxStamina : maxStamina - props.hero.state.staminaDamage;
@@ -489,12 +489,12 @@ export const HeroPanel = (props: Props) => {
 									<StatsRow caption='Statistics' style={{ flex: '5 5 0' }}>
 										<Statistic title='Size' value={size.value} suffix={sizeSuffix} />
 										<Statistic title={speedStr} value={speed.value} suffix={speedSuffix} />
-										<Statistic title='Stability' value={HeroLogic.getStability(props.hero)} />
+										<Statistic title='Непорушність' value={HeroLogic.getStability(props.hero)} />
 										<Statistic title='Відступ' value={HeroLogic.getDisengage(props.hero)} />
 										<Statistic title='Save' value={HeroLogic.getSaveThreshold(props.hero)} suffix={HeroLogic.getSaveBonus(props.hero) ? `+${HeroLogic.getSaveBonus(props.hero)}` : undefined} />
 									</StatsRow>
 									<StatsRow caption='Vitals' onClick={onShowVitals} style={{ flex: '3 3 0' }}>
-										<Statistic title='Stamina' value={stamina} suffix={staminaSuffix} />
+										<Statistic title='Витривалість' value={stamina} suffix={staminaSuffix} />
 										<Statistic title='Відновлення' value={recoveries} suffix={recoveriesSuffix} />
 										<Statistic title='Recovery Value' value={HeroLogic.getRecoveryValue(props.hero)} />
 									</StatsRow>

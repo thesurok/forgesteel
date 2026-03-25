@@ -1,7 +1,7 @@
 export enum AbilityDistanceType {
 	Self = 'Себе',
-	Melee = 'Melee',
-	Ranged = 'Ranged',
+	Melee = 'Ближній бій',
+	Ranged = 'Дальній',
 	Aura = 'Aura',
 	Burst = 'Burst',
 	Cube = 'Cube',

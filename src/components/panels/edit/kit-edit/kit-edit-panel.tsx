@@ -100,9 +100,9 @@ export const KitEditPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<HeaderText>Type</HeaderText>
+				<HeaderText>Тип</HeaderText>
 				<TextInput
-					placeholder='Type'
+					placeholder='Тип'
 					allowClear={true}
 					value={kit.type}
 					onChange={setType}
@@ -110,27 +110,27 @@ export const KitEditPanel = (props: Props) => {
 				<Alert
 					type='info'
 					showIcon={true}
-					title='If your kit has a Type, it can only be selected from a kit feature that specifies this value.'
+					title='Якщо ваш набір має тип, його можна вибрати лише з функції набору, яка вказує це значення.'
 				/>
-				<HeaderText>Armor</HeaderText>
+				<HeaderText>Броня</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					status={kit.armor.length === 0 ? 'warning' : ''}
 					mode='multiple'
 					allowClear={true}
-					placeholder='Select armor'
+					placeholder='Виберіть броню'
 					options={[KitArmor.Light, KitArmor.Medium, KitArmor.Heavy, KitArmor.Shield].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={kit.armor}
 					onChange={setArmor}
 				/>
-				<HeaderText>Weapons</HeaderText>
+				<HeaderText>Зброя</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					status={kit.weapon.length === 0 ? 'warning' : ''}
 					mode='multiple'
 					allowClear={true}
-					placeholder='Select weapon'
+					placeholder='Виберіть зброю'
 					options={[KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip].map(option => ({ value: option }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 					value={kit.weapon}
@@ -185,38 +185,38 @@ export const KitEditPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<HeaderText>Stamina</HeaderText>
+				<HeaderText>Витривалість</HeaderText>
 				<NumberSpin
 					min={0}
 					value={kit.stamina}
 					onChange={setStamina}
 				/>
-				<HeaderText>Speed</HeaderText>
+				<HeaderText>Швидкість</HeaderText>
 				<NumberSpin
 					min={0}
 					value={kit.speed}
 					onChange={setSpeed}
 				/>
-				<HeaderText>Stability</HeaderText>
+				<HeaderText>Непорушність</HeaderText>
 				<NumberSpin
 					min={0}
 					value={kit.stability}
 					onChange={setStability}
 				/>
-				<HeaderText>Distance</HeaderText>
+				<HeaderText>Дальність</HeaderText>
 				<NumberSpin
-					label='Melee'
+					label='Ближній бій'
 					min={0}
 					value={kit.meleeDistance}
 					onChange={setMeleeDistance}
 				/>
 				<NumberSpin
-					label='Ranged'
+					label='Дальній'
 					min={0}
 					value={kit.rangedDistance}
 					onChange={setRangedDistance}
 				/>
-				<HeaderText>Disengage</HeaderText>
+				<HeaderText>Відступ</HeaderText>
 				<NumberSpin
 					min={0}
 					value={kit.disengage}
@@ -297,16 +297,16 @@ export const KitEditPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<HeaderText>Melee Damage</HeaderText>
-				<Toggle label='Melee damage' value={!!kit.meleeDamage} onChange={setMeleeDamage} />
-				{kit.meleeDamage ? <NumberSpin label='Tier 1' min={0} value={kit.meleeDamage.tier1} onChange={setMeleeDamage1} /> : null}
-				{kit.meleeDamage ? <NumberSpin label='Tier 2' min={0} value={kit.meleeDamage.tier2} onChange={setMeleeDamage2} /> : null}
-				{kit.meleeDamage ? <NumberSpin label='Tier 3' min={0} value={kit.meleeDamage.tier3} onChange={setMeleeDamage3} /> : null}
-				<HeaderText>Ranged Damage</HeaderText>
-				<Toggle label='Ranged damage' value={!!kit.rangedDamage} onChange={setRangedDamage} />
-				{kit.rangedDamage ? <NumberSpin label='Tier 1' min={0} value={kit.rangedDamage.tier1} onChange={setRangedDamage1} /> : null}
-				{kit.rangedDamage ? <NumberSpin label='Tier 2' min={0} value={kit.rangedDamage.tier2} onChange={setRangedDamage2} /> : null}
-				{kit.rangedDamage ? <NumberSpin label='Tier 3' min={0} value={kit.rangedDamage.tier3} onChange={setRangedDamage3} /> : null}
+				<HeaderText>Ближній бій</HeaderText>
+				<Toggle label='Ближній бій' value={!!kit.meleeDamage} onChange={setMeleeDamage} />
+				{kit.meleeDamage ? <NumberSpin label='Рівень 1' min={0} value={kit.meleeDamage.tier1} onChange={setMeleeDamage1} /> : null}
+				{kit.meleeDamage ? <NumberSpin label='Рівень 2' min={0} value={kit.meleeDamage.tier2} onChange={setMeleeDamage2} /> : null}
+				{kit.meleeDamage ? <NumberSpin label='Рівень 3' min={0} value={kit.meleeDamage.tier3} onChange={setMeleeDamage3} /> : null}
+				<HeaderText>Дальній бій</HeaderText>
+				<Toggle label='Дальній бій' value={!!kit.rangedDamage} onChange={setRangedDamage} />
+				{kit.rangedDamage ? <NumberSpin label='Рівень 1' min={0} value={kit.rangedDamage.tier1} onChange={setRangedDamage1} /> : null}
+				{kit.rangedDamage ? <NumberSpin label='Рівень 2' min={0} value={kit.rangedDamage.tier2} onChange={setRangedDamage2} /> : null}
+				{kit.rangedDamage ? <NumberSpin label='Рівень 3' min={0} value={kit.rangedDamage.tier3} onChange={setRangedDamage3} /> : null}
 			</Space>
 		);
 	};
@@ -355,7 +355,7 @@ export const KitEditPanel = (props: Props) => {
 						<Button type='text' icon={<PlusOutlined />} onClick={addFeature} />
 					}
 				>
-					Features
+					Особливості
 				</HeaderText>
 				{
 					kit.features.map(f => (
@@ -391,22 +391,22 @@ export const KitEditPanel = (props: Props) => {
 		const powerA: { name: string, value: number }[] = [];
 		const powerB: { name: string, value: number }[] = [];
 
-		powerA.push({ name: 'Stamina', value: Math.floor(kit.stamina / 3) });
+		powerA.push({ name: 'Витривалість', value: Math.floor(kit.stamina / 3) });
 
 		powerA.push({ name: 'Відступ', value: kit.disengage });
 
-		powerA.push({ name: 'Speed', value: kit.speed > 0 ? 1 + kit.speed : 0 });
+		powerA.push({ name: 'Швидкість', value: kit.speed > 0 ? 1 + kit.speed : 0 });
 
-		powerA.push({ name: 'Stability', value: kit.stability > 0 ? 1 + kit.stability : 0 });
+		powerA.push({ name: 'Непорушність', value: kit.stability > 0 ? 1 + kit.stability : 0 });
 
-		powerB.push({ name: 'Melee Distance', value: 2 * kit.meleeDistance });
+		powerB.push({ name: 'Відстань ближнього бою', value: 2 * kit.meleeDistance });
 
 		const minMeleeDamage = kit.meleeDamage ? Math.min(kit.meleeDamage.tier1, kit.meleeDamage.tier2, kit.meleeDamage.tier3) : 0;
 		let powerMeleeDamage = minMeleeDamage;
 		if (kit.meleeDamage && (kit.meleeDamage.tier3 - minMeleeDamage >= 4)) {
 			powerMeleeDamage += 2;
 		}
-		powerB.push({ name: 'Melee Damage', value: powerMeleeDamage });
+		powerB.push({ name: 'Урон у ближньому бою', value: powerMeleeDamage });
 
 		let powerRange = 0;
 		if (kit.rangedDistance >= 5) {
@@ -418,14 +418,14 @@ export const KitEditPanel = (props: Props) => {
 		if (kit.rangedDistance >= 10) {
 			powerRange += 1;
 		}
-		powerB.push({ name: 'Ranged Distance', value: powerRange });
+		powerB.push({ name: 'Відстань дальнього бою', value: powerRange });
 
 		const minRangedDamage = kit.rangedDamage ? Math.min(kit.rangedDamage.tier1, kit.rangedDamage.tier2, kit.rangedDamage.tier3) : 0;
 		let powerRangedDamage = minRangedDamage;
 		if (kit.rangedDamage && (kit.rangedDamage.tier3 - minRangedDamage >= 4)) {
 			powerRangedDamage += 2;
 		}
-		powerB.push({ name: 'Ranged Damage', value: powerRangedDamage });
+		powerB.push({ name: 'Урон дальнього бою', value: powerRangedDamage });
 
 		const power = Collections.sum([...powerA, ...powerB], p => p.value);
 
@@ -509,7 +509,7 @@ export const KitEditPanel = (props: Props) => {
 						items={[
 							{
 								key: '1',
-								label: 'Kit',
+								label: 'Набір',
 								children: getNameAndDescriptionSection()
 							},
 							{

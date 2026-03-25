@@ -226,7 +226,7 @@ export const highElfTactician = {
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 21,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -326,7 +326,7 @@ export const highElfTactician = {
 						id: 'tactician-1-4',
 						name: 'Польовий арсенал',
 						description: 'Ви тренувалися з широким арсеналом зброї та обладунків і розробили техніки для оптимізації їх використання. Ви можете використовувати та отримувати переваги двох наборів, включно з обома їхніми сигнатурними здібностями. Коли ви обираєте або змінюєте один набір, ви також можете обрати або змінити свій другий набір.',
-						type: 'Kit',
+						type: 'Набір',
 						data: {
 							types: [
 								''
@@ -377,13 +377,13 @@ export const highElfTactician = {
 														freeStrike: false
 													},
 													keywords: [
-														'Melee',
-														'Strike',
-														'Weapon'
+														'Ближній бій',
+														'Удар',
+														'Зброя'
 													],
 													distance: [
 														{
-															type: 'Melee',
+															type: 'Ближній бій',
 															value: 1,
 															value2: 0,
 															within: 0,
@@ -470,13 +470,13 @@ export const highElfTactician = {
 														freeStrike: false
 													},
 													keywords: [
-														'Ranged',
-														'Strike',
-														'Weapon'
+														'Дальній',
+														'Удар',
+														'Зброя'
 													],
 													distance: [
 														{
-															type: 'Ranged',
+															type: 'Дальній',
 															value: 5,
 															value2: 0,
 															within: 0,
@@ -545,11 +545,11 @@ export const highElfTactician = {
 												freeStrike: false
 											},
 											keywords: [
-												'Ranged'
+												'Дальній'
 											],
 											distance: [
 												{
-													type: 'Ranged',
+													type: 'Дальній',
 													value: 10,
 													value2: 0,
 													within: 0,
@@ -658,11 +658,11 @@ export const highElfTactician = {
 									freeStrike: false
 								},
 								keywords: [
-									'Ranged'
+									'Дальній'
 								],
 								distance: [
 									{
-										type: 'Ranged',
+										type: 'Дальній',
 										value: 10,
 										value2: 0,
 										within: 0,
@@ -1128,11 +1128,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1180,14 +1180,14 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1195,7 +1195,7 @@ export const highElfTactician = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1243,14 +1243,14 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1258,7 +1258,7 @@ export const highElfTactician = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1306,11 +1306,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1350,14 +1350,14 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1365,7 +1365,7 @@ export const highElfTactician = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1417,14 +1417,14 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1432,7 +1432,7 @@ export const highElfTactician = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1488,12 +1488,12 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged',
-					'Weapon'
+					'Дальній',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1533,11 +1533,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1745,13 +1745,13 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1791,11 +1791,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1879,11 +1879,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1923,11 +1923,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1967,11 +1967,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2011,11 +2011,11 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2055,14 +2055,14 @@ export const highElfTactician = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2070,7 +2070,7 @@ export const highElfTactician = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2159,11 +2159,11 @@ export const highElfTactician = {
 											freeStrike: false
 										},
 										keywords: [
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -2238,11 +2238,11 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -2300,9 +2300,9 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -2413,11 +2413,11 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -2468,14 +2468,14 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -2483,7 +2483,7 @@ export const highElfTactician = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -2589,11 +2589,11 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -2645,12 +2645,12 @@ export const highElfTactician = {
 														},
 														keywords: [
 															'Магія',
-															'Ranged',
-															'Weapon'
+															'Дальній',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -2756,11 +2756,11 @@ export const highElfTactician = {
 											freeStrike: false
 										},
 										keywords: [
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -2878,13 +2878,13 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -2947,11 +2947,11 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -3055,11 +3055,11 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3368,12 +3368,12 @@ export const highElfTactician = {
 											freeStrike: false
 										},
 										keywords: [
-											'Melee',
-											'Weapon'
+											'Ближній бій',
+											'Зброя'
 										],
 										distance: [
 											{
-												type: 'Melee',
+												type: 'Ближній бій',
 												value: 2,
 												value2: 0,
 												within: 0,
@@ -3457,13 +3457,13 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -3625,12 +3625,12 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3693,14 +3693,14 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Charge',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ривок',
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3806,14 +3806,14 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Charge',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ривок',
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3880,14 +3880,14 @@ export const highElfTactician = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3895,7 +3895,7 @@ export const highElfTactician = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,

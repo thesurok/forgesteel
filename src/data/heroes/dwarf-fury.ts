@@ -35,7 +35,7 @@ export const dwarfFury = {
 								description: 'Ваш важкий камʼяний корпус і звʼязок із землею ускладнюють іншим пересувати вас.',
 								type: 'Bonus',
 								data: {
-									field: 'Stability',
+									field: 'Непорушність',
 									value: 1,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -86,7 +86,7 @@ export const dwarfFury = {
 								description: 'Ваша камʼяна шкіра надає вам потужний захист.',
 								type: 'Bonus',
 								data: {
-									field: 'Stamina',
+									field: 'Витривалість',
 									value: 0,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -105,7 +105,7 @@ export const dwarfFury = {
 							description: 'Ваш важкий камʼяний корпус і звʼязок із землею ускладнюють іншим пересувати вас.',
 							type: 'Bonus',
 							data: {
-								field: 'Stability',
+								field: 'Непорушність',
 								value: 1,
 								valueCharacteristics: [],
 								valueCharacteristicMultiplier: 1,
@@ -119,7 +119,7 @@ export const dwarfFury = {
 							description: 'Ваша камʼяна шкіра надає вам потужний захист.',
 							type: 'Bonus',
 							data: {
-								field: 'Stamina',
+								field: 'Витривалість',
 								value: 0,
 								valueCharacteristics: [],
 								valueCharacteristicMultiplier: 1,
@@ -231,7 +231,7 @@ export const dwarfFury = {
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 21,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -820,13 +820,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -874,13 +874,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -932,13 +932,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -986,13 +986,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1045,8 +1045,8 @@ export const dwarfFury = {
 				},
 				keywords: [
 					'Area',
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -1098,13 +1098,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1156,8 +1156,8 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -1217,13 +1217,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1275,13 +1275,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1376,8 +1376,8 @@ export const dwarfFury = {
 				},
 				keywords: [
 					'Area',
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -1433,13 +1433,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1626,13 +1626,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1672,13 +1672,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1730,13 +1730,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1788,13 +1788,13 @@ export const dwarfFury = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1847,13 +1847,13 @@ export const dwarfFury = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1950,13 +1950,13 @@ export const dwarfFury = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2053,9 +2053,9 @@ export const dwarfFury = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2126,9 +2126,9 @@ export const dwarfFury = {
 							},
 							{
 								id: 'fury-sub-1-1-2',
-								name: 'Kit',
+								name: 'Набір',
 								description: '',
-								type: 'Kit',
+								type: 'Набір',
 								data: {
 									types: [
 										''
@@ -2176,13 +2176,13 @@ export const dwarfFury = {
 																freeStrike: false
 															},
 															keywords: [
-																'Melee',
-																'Strike',
-																'Weapon'
+																'Ближній бій',
+																'Удар',
+																'Зброя'
 															],
 															distance: [
 																{
-																	type: 'Melee',
+																	type: 'Ближній бій',
 																	value: 1,
 																	value2: 0,
 																	within: 0,
@@ -2256,11 +2256,11 @@ export const dwarfFury = {
 										},
 										keywords: [
 											'Магія',
-											'Melee'
+											'Ближній бій'
 										],
 										distance: [
 											{
-												type: 'Melee',
+												type: 'Ближній бій',
 												value: 1,
 												value2: 0,
 												within: 0,
@@ -2335,12 +2335,12 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -2391,8 +2391,8 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -2458,11 +2458,11 @@ export const dwarfFury = {
 							},
 							{
 								id: 'fury-sub-1-3-2',
-								name: 'Stability',
+								name: 'Непорушність',
 								description: '',
 								type: 'Bonus',
 								data: {
-									field: 'Stability',
+									field: 'Непорушність',
 									value: 0,
 									valueCharacteristics: [
 										'Might'
@@ -2595,13 +2595,13 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -2707,8 +2707,8 @@ export const dwarfFury = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -2775,9 +2775,9 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -2873,9 +2873,9 @@ export const dwarfFury = {
 							},
 							{
 								id: 'fury-sub-2-1-2',
-								name: 'Kit',
+								name: 'Набір',
 								description: '',
-								type: 'Kit',
+								type: 'Набір',
 								data: {
 									types: [
 										''
@@ -2969,11 +2969,11 @@ export const dwarfFury = {
 										},
 										{
 											id: 'fury-sub-2-2-1b',
-											name: 'Speed',
+											name: 'Швидкість',
 											description: '',
 											type: 'Bonus',
 											data: {
-												field: 'Speed',
+												field: 'Швидкість',
 												value: 0,
 												valueCharacteristics: [
 													'Ловкість'
@@ -3013,13 +3013,13 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3078,8 +3078,8 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3200,12 +3200,12 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Магія',
-															'Strike',
-															'Weapon'
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3256,13 +3256,13 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3367,13 +3367,13 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3436,13 +3436,13 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3536,7 +3536,7 @@ export const dwarfFury = {
 								id: 'fury-sub-3-1-2',
 								name: 'Beast Shape',
 								description: '',
-								type: 'Kit',
+								type: 'Набір',
 								data: {
 									types: [
 										'Stormwight'
@@ -3707,13 +3707,13 @@ export const dwarfFury = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3886,13 +3886,13 @@ export const dwarfFury = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -4110,7 +4110,7 @@ export const dwarfFury = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{

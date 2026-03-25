@@ -356,11 +356,11 @@ export const polderShadow = {
 				features: [
 					{
 						id: 'shadow-stamina',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 18,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -499,9 +499,9 @@ export const polderShadow = {
 					},
 					{
 						id: 'shadow-1-5.5',
-						name: 'Kit',
+						name: 'Набір',
 						description: '',
-						type: 'Kit',
+						type: 'Набір',
 						data: {
 							types: [
 								''
@@ -555,14 +555,14 @@ export const polderShadow = {
 														freeStrike: false
 													},
 													keywords: [
-														'Melee',
-														'Ranged',
-														'Strike',
-														'Weapon'
+														'Ближній бій',
+														'Дальній',
+														'Удар',
+														'Зброя'
 													],
 													distance: [
 														{
-															type: 'Melee',
+															type: 'Ближній бій',
 															value: 1,
 															value2: 0,
 															within: 0,
@@ -570,7 +570,7 @@ export const polderShadow = {
 															qualifier: ''
 														},
 														{
-															type: 'Ranged',
+															type: 'Дальній',
 															value: 5,
 															value2: 0,
 															within: 0,
@@ -878,12 +878,12 @@ export const polderShadow = {
 									freeStrike: false
 								},
 								keywords: [
-									'Ranged',
-									'Weapon'
+									'Дальній',
+									'Зброя'
 								],
 								distance: [
 									{
-										type: 'Ranged',
+										type: 'Дальній',
 										value: 5,
 										value2: 0,
 										within: 0,
@@ -1407,13 +1407,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1465,14 +1465,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1480,7 +1480,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1532,14 +1532,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1547,7 +1547,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1599,13 +1599,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1657,13 +1657,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1715,14 +1715,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1730,7 +1730,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1778,13 +1778,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1836,14 +1836,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1851,7 +1851,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1899,14 +1899,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1914,7 +1914,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1962,8 +1962,8 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2019,13 +2019,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2074,8 +2074,8 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Ranged'
+					'Ближній бій',
+					'Дальній'
 				],
 				distance: [
 					{
@@ -2161,14 +2161,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2176,7 +2176,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2228,13 +2228,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2282,14 +2282,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2297,7 +2297,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2391,13 +2391,13 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2450,8 +2450,8 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Area',
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2507,14 +2507,14 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2522,7 +2522,7 @@ export const polderShadow = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -2574,13 +2574,13 @@ export const polderShadow = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2730,8 +2730,8 @@ export const polderShadow = {
 				},
 				keywords: [
 					'Area',
-					'Ranged',
-					'Weapon'
+					'Дальній',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2947,14 +2947,14 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -2962,7 +2962,7 @@ export const polderShadow = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 5,
 																value2: 0,
 																within: 0,
@@ -3021,10 +3021,10 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Ranged',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Дальній',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3124,13 +3124,13 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3282,8 +3282,8 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Weapon'
+															'Ближній бій',
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3351,13 +3351,13 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 3,
 																value2: 0,
 																within: 0,
@@ -3592,11 +3592,11 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3660,7 +3660,7 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Area',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
@@ -3771,11 +3771,11 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3826,11 +3826,11 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3914,7 +3914,7 @@ export const polderShadow = {
 										},
 										keywords: [
 											'Area',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
@@ -3986,11 +3986,11 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -4053,13 +4053,13 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Ranged',
-															'Strike'
+															'Ближній бій',
+															'Дальній',
+															'Удар'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -4067,7 +4067,7 @@ export const polderShadow = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -4294,7 +4294,7 @@ export const polderShadow = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
@@ -4517,13 +4517,13 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -4620,11 +4620,11 @@ export const polderShadow = {
 														},
 														keywords: [
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -4675,13 +4675,13 @@ export const polderShadow = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,

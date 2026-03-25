@@ -53,7 +53,7 @@ export const wodeElfTroubadour = {
 								id: 'wode-elf-feature-2-3',
 								name: 'Swift',
 								description: '',
-								type: 'Speed',
+								type: 'Швидкість',
 								data: {
 									speed: 6
 								}
@@ -91,12 +91,12 @@ export const wodeElfTroubadour = {
 										},
 										keywords: [
 											'Магія',
-											'Ranged',
-											'Strike'
+											'Дальній',
+											'Удар'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -160,7 +160,7 @@ export const wodeElfTroubadour = {
 							id: 'wode-elf-feature-2-3',
 							name: 'Swift',
 							description: '',
-							type: 'Speed',
+							type: 'Швидкість',
 							data: {
 								speed: 6
 							}
@@ -265,11 +265,11 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: '3G7nEekJVbHgJJNl',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 18,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -382,9 +382,9 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: '3rwc3gnUTZ6Ta7a0',
-						name: 'Kit',
+						name: 'Набір',
 						description: '',
-						type: 'Kit',
+						type: 'Набір',
 						data: {
 							types: [
 								''
@@ -434,13 +434,13 @@ export const wodeElfTroubadour = {
 														freeStrike: false
 													},
 													keywords: [
-														'Melee',
-														'Strike',
-														'Weapon'
+														'Ближній бій',
+														'Удар',
+														'Зброя'
 													],
 													distance: [
 														{
-															type: 'Melee',
+															type: 'Ближній бій',
 															value: 1,
 															value2: 0,
 															within: 0,
@@ -1321,13 +1321,13 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1387,13 +1387,13 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1441,13 +1441,13 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1500,13 +1500,13 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Ranged',
-					'Strike'
+					'Ближній бій',
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1514,7 +1514,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 5,
 						value2: 0,
 						within: 0,
@@ -1574,13 +1574,13 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Ranged',
-					'Strike'
+					'Ближній бій',
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1588,7 +1588,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -1702,7 +1702,7 @@ export const wodeElfTroubadour = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
@@ -1758,9 +1758,9 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -1959,13 +1959,13 @@ export const wodeElfTroubadour = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2076,8 +2076,8 @@ export const wodeElfTroubadour = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2134,14 +2134,14 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Ranged',
-					'Strike',
-					'Weapon'
+					'Ближній бій',
+					'Дальній',
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2149,7 +2149,7 @@ export const wodeElfTroubadour = {
 						qualifier: ''
 					},
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2202,11 +2202,11 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2247,8 +2247,8 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Area',
-					'Melee',
-					'Weapon'
+					'Ближній бій',
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2305,11 +2305,11 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2350,11 +2350,11 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2395,11 +2395,11 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2492,11 +2492,11 @@ export const wodeElfTroubadour = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2582,7 +2582,7 @@ export const wodeElfTroubadour = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
@@ -2725,11 +2725,11 @@ export const wodeElfTroubadour = {
 										},
 										keywords: [
 											'Магія',
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -2784,11 +2784,11 @@ export const wodeElfTroubadour = {
 											freeStrike: false
 										},
 										keywords: [
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 10,
 												value2: 0,
 												within: 0,
@@ -2857,11 +2857,11 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -2913,11 +2913,11 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3239,12 +3239,12 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Магія',
-															'Melee',
-															'Ranged'
+															'Ближній бій',
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3252,7 +3252,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3316,11 +3316,11 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3465,7 +3465,7 @@ export const wodeElfTroubadour = {
 										keywords: [],
 										distance: [
 											{
-												type: 'Melee',
+												type: 'Ближній бій',
 												value: 1,
 												value2: 0,
 												within: 0,
@@ -3520,11 +3520,11 @@ export const wodeElfTroubadour = {
 											freeStrike: false
 										},
 										keywords: [
-											'Melee'
+											'Ближній бій'
 										],
 										distance: [
 											{
-												type: 'Melee',
+												type: 'Ближній бій',
 												value: 1,
 												value2: 0,
 												within: 0,
@@ -3585,13 +3585,13 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3642,13 +3642,13 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3828,13 +3828,13 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3893,13 +3893,13 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3983,14 +3983,14 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Charge',
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ривок',
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 3,
 																value2: 0,
 																within: 0,
@@ -4049,13 +4049,13 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
-															'Strike',
-															'Weapon'
+															'Ближній бій',
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -4226,12 +4226,12 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Магія',
 														'Performance',
-														'Ranged',
-														'Strike'
+														'Дальній',
+														'Удар'
 													],
 													distance: [
 														{
-															type: 'Ranged',
+															type: 'Дальній',
 															value: 10,
 															value2: 0,
 															within: 0,
@@ -4348,11 +4348,11 @@ export const wodeElfTroubadour = {
 											freeStrike: false
 										},
 										keywords: [
-											'Ranged'
+											'Дальній'
 										],
 										distance: [
 											{
-												type: 'Ranged',
+												type: 'Дальній',
 												value: 5,
 												value2: 0,
 												within: 0,
@@ -4421,7 +4421,7 @@ export const wodeElfTroubadour = {
 														},
 														keywords: [
 															'Магія',
-															'Strike'
+															'Удар'
 														],
 														distance: [
 															{
@@ -4478,7 +4478,7 @@ export const wodeElfTroubadour = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
@@ -5062,14 +5062,14 @@ export const wodeElfTroubadour = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Магія',
-															'Ranged',
-															'Strike'
+															'Дальній',
+															'Удар'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -5077,7 +5077,7 @@ export const wodeElfTroubadour = {
 																qualifier: ''
 															},
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,

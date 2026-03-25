@@ -19,7 +19,7 @@ interface InfoProps {
 
 export const InfoSpeed = (props: InfoProps) => {
 	return (
-		<Field label='Speed' value={props.data.speed} />
+		<Field label='Швидкість' value={props.data.speed} />
 	);
 };
 
@@ -31,7 +31,7 @@ interface EditProps {
 }
 
 export const EditSpeed = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureSpeedData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureSpeedData>(Utils.copy(props.data));
 
 	const setSpeed = (value: number) => {
 		const copy = Utils.copy(data);

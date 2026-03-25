@@ -30,7 +30,7 @@ export const FixturePanel = (props: Props) => {
 			<div className={props.mode === PanelMode.Full ? 'fixture-panel' : 'fixture-panel compact'} id={props.mode === PanelMode.Full ? SheetFormatter.getPageId('fixture', props.fixture.id) : undefined}>
 				<HeaderText level={1}>{props.fixture.name || 'Unnamed Fixture'}</HeaderText>
 				<FixtureLabel fixture={props.fixture} />
-				<Field label='Stamina' value={FixtureLogic.getStamina(props.fixture)} />
+				<Field label='Витривалість' value={FixtureLogic.getStamina(props.fixture)} />
 				<Field label='Size' value={FormatLogic.getSize(props.fixture.size)} />
 				<Markdown text={props.fixture.description} />
 				{

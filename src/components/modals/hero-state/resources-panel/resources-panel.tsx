@@ -35,9 +35,9 @@ interface Props {
 }
 
 export const ResourcesPanel = (props: Props) => {
-	const [ hero, setHero ] = useState<Hero>(Utils.copy(props.hero));
-	const [ expression, setExpression ] = useState<Expression | null>(null);
-	const [ showLevelUp, setShowLevelUp ] = useState<boolean>(false);
+	const [hero, setHero] = useState<Hero>(Utils.copy(props.hero));
+	const [expression, setExpression] = useState<Expression | null>(null);
+	const [showLevelUp, setShowLevelUp] = useState<boolean>(false);
 
 	const getHeroicResourceSection = () => {
 		const setHeroicResource = (featureID: string, value: number) => {
@@ -426,7 +426,7 @@ export const ResourcesPanel = (props: Props) => {
 											<Field
 												innerStyle={{ color: 'rgba(0, 0, 0, 0.88)' }}
 												orientation='vertical'
-												label='Stamina'
+												label='Витривалість'
 												value={`${HeroLogic.getStamina(hero) - hero.state.staminaDamage} / ${HeroLogic.getStamina(hero)}`}
 											/>
 											<Button disabled={hero.state.staminaDamage === 0} onClick={gainStamina}>+{HeroLogic.getRecoveryValue(hero)} Stamina</Button>

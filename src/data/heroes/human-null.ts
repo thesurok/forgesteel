@@ -338,11 +338,11 @@ export const humanNull = {
 				features: [
 					{
 						id: 'null-stamina',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 21,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -555,11 +555,11 @@ export const humanNull = {
 							features: [
 								{
 									id: 'null-1-6a',
-									name: 'Speed',
+									name: 'Швидкість',
 									description: '',
 									type: 'Bonus',
 									data: {
-										field: 'Speed',
+										field: 'Швидкість',
 										value: 0,
 										valueCharacteristics: [
 											'Ловкість'
@@ -605,11 +605,11 @@ export const humanNull = {
 											features: [
 												{
 													id: 'null-1-7aa',
-													name: 'Stability',
+													name: 'Непорушність',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stability',
+														field: 'Непорушність',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -619,11 +619,11 @@ export const humanNull = {
 												},
 												{
 													id: 'null-1-7ab',
-													name: 'Stamina',
+													name: 'Витривалість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stamina',
+														field: 'Витривалість',
 														value: 0,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -666,11 +666,11 @@ export const humanNull = {
 											features: [
 												{
 													id: 'null-1-7ca',
-													name: 'Speed',
+													name: 'Швидкість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Speed',
+														field: 'Швидкість',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -709,11 +709,11 @@ export const humanNull = {
 										features: [
 											{
 												id: 'null-1-7aa',
-												name: 'Stability',
+												name: 'Непорушність',
 												description: '',
 												type: 'Bonus',
 												data: {
-													field: 'Stability',
+													field: 'Непорушність',
 													value: 1,
 													valueCharacteristics: [],
 													valueCharacteristicMultiplier: 1,
@@ -723,11 +723,11 @@ export const humanNull = {
 											},
 											{
 												id: 'null-1-7ab',
-												name: 'Stamina',
+												name: 'Витривалість',
 												description: '',
 												type: 'Bonus',
 												data: {
-													field: 'Stamina',
+													field: 'Витривалість',
 													value: 0,
 													valueCharacteristics: [],
 													valueCharacteristicMultiplier: 1,
@@ -1198,7 +1198,7 @@ export const humanNull = {
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 21,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -1338,7 +1338,7 @@ export const humanNull = {
 				keywords: [
 					'Area',
 					'Psionic',
-					'Weapon'
+					'Зброя'
 				],
 				distance: [
 					{
@@ -1394,14 +1394,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1453,14 +1453,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1512,14 +1512,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1567,14 +1567,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1622,14 +1622,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 2,
 						value2: 0,
 						within: 0,
@@ -1677,14 +1677,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1736,14 +1736,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1791,14 +1791,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1895,14 +1895,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -1954,14 +1954,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2009,14 +2009,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2068,14 +2068,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2127,14 +2127,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2188,7 +2188,7 @@ export const humanNull = {
 				keywords: [
 					'Area',
 					'Psionic',
-					'Weapon'
+					'Зброя'
 				],
 				distance: [
 					{
@@ -2420,14 +2420,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2479,14 +2479,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2627,14 +2627,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2686,14 +2686,14 @@ export const humanNull = {
 					freeStrike: false
 				},
 				keywords: [
-					'Melee',
+					'Ближній бій',
 					'Psionic',
-					'Strike',
-					'Weapon'
+					'Удар',
+					'Зброя'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2973,14 +2973,14 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Strike',
-															'Weapon'
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 3,
 																value2: 0,
 																within: 0,
@@ -3131,9 +3131,9 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Weapon'
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3234,11 +3234,11 @@ export const humanNull = {
 														},
 														keywords: [
 															'Psionic',
-															'Ranged'
+															'Дальній'
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3461,7 +3461,7 @@ export const humanNull = {
 														keywords: [
 															'Area',
 															'Psionic',
-															'Weapon'
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3620,7 +3620,7 @@ export const humanNull = {
 														],
 														distance: [
 															{
-																type: 'Ranged',
+																type: 'Дальній',
 																value: 10,
 																value2: 0,
 																within: 0,
@@ -3683,9 +3683,9 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Weapon'
+															'Зброя'
 														],
 														distance: [
 															{
@@ -3840,13 +3840,13 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Strike'
+															'Удар'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,
@@ -3993,14 +3993,14 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Strike',
-															'Weapon'
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 3,
 																value2: 0,
 																within: 0,
@@ -4373,14 +4373,14 @@ export const humanNull = {
 															freeStrike: false
 														},
 														keywords: [
-															'Melee',
+															'Ближній бій',
 															'Psionic',
-															'Strike',
-															'Weapon'
+															'Удар',
+															'Зброя'
 														],
 														distance: [
 															{
-																type: 'Melee',
+																type: 'Ближній бій',
 																value: 1,
 																value2: 0,
 																within: 0,

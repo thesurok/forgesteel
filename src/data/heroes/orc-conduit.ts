@@ -45,7 +45,7 @@ export const orcConduit = {
 								description: 'The magic in your blood makes it difficult for others to move you.',
 								type: 'Bonus',
 								data: {
-									field: 'Stability',
+									field: 'Непорушність',
 									value: 1,
 									valueCharacteristics: [],
 									valueCharacteristicMultiplier: 1,
@@ -109,7 +109,7 @@ export const orcConduit = {
 							description: 'The magic in your blood makes it difficult for others to move you.',
 							type: 'Bonus',
 							data: {
-								field: 'Stability',
+								field: 'Непорушність',
 								value: 1,
 								valueCharacteristics: [],
 								valueCharacteristicMultiplier: 1,
@@ -215,11 +215,11 @@ export const orcConduit = {
 				features: [
 					{
 						id: 'conduit-stamina',
-						name: 'Stamina',
+						name: 'Витривалість',
 						description: '',
 						type: 'Bonus',
 						data: {
-							field: 'Stamina',
+							field: 'Витривалість',
 							value: 18,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -502,11 +502,11 @@ export const orcConduit = {
 															},
 															keywords: [
 																'Магія',
-																'Ranged'
+																'Дальній'
 															],
 															distance: [
 																{
-																	type: 'Ranged',
+																	type: 'Дальній',
 																	value: 10,
 																	value2: 0,
 																	within: 0,
@@ -791,7 +791,7 @@ export const orcConduit = {
 															keywords: [
 																'Area',
 																'Магія',
-																'Ranged'
+																'Дальній'
 															],
 															distance: [
 																{
@@ -864,7 +864,7 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-1-3b',
-						name: 'Prayer',
+						name: 'Молитва',
 						description: '\nYou can gain more piety by praying to the gods—but beware! Doing so can easily draw their ire, as the gods hate to be annoyed. Before you roll to gain piety at the start of your turn, you can pray (no action required). If you do, your roll gains the following additional effects:\n\n* If the roll is a 1, you gain 1 additional piety but anger the gods! You take psychic damage equal to 1d6 + your level, which can’t be reduced in any way.\n* If the roll is a 2, you gain 1 additional piety.\n* If the roll is a 3, you gain 2 additional piety and can activate a domain effect of your choice.',
 						type: 'Package',
 						data: {
@@ -936,11 +936,11 @@ export const orcConduit = {
 								},
 								keywords: [
 									'Магія',
-									'Ranged'
+									'Дальній'
 								],
 								distance: [
 									{
-										type: 'Ranged',
+										type: 'Дальній',
 										value: 10,
 										value2: 0,
 										within: 0,
@@ -997,12 +997,12 @@ export const orcConduit = {
 								},
 								keywords: [
 									'Магія',
-									'Ranged',
-									'Strike'
+									'Дальній',
+									'Удар'
 								],
 								distance: [
 									{
-										type: 'Ranged',
+										type: 'Дальній',
 										value: 10,
 										value2: 0,
 										within: 0,
@@ -1071,11 +1071,11 @@ export const orcConduit = {
 												},
 												keywords: [
 													'Магія',
-													'Ranged'
+													'Дальній'
 												],
 												distance: [
 													{
-														type: 'Ranged',
+														type: 'Дальній',
 														value: 10,
 														value2: 0,
 														within: 0,
@@ -1134,11 +1134,11 @@ export const orcConduit = {
 												},
 												keywords: [
 													'Магія',
-													'Ranged'
+													'Дальній'
 												],
 												distance: [
 													{
-														type: 'Ranged',
+														type: 'Дальній',
 														value: 10,
 														value2: 0,
 														within: 0,
@@ -1199,11 +1199,11 @@ export const orcConduit = {
 											},
 											keywords: [
 												'Магія',
-												'Ranged'
+												'Дальній'
 											],
 											distance: [
 												{
-													type: 'Ranged',
+													type: 'Дальній',
 													value: 10,
 													value2: 0,
 													within: 0,
@@ -1244,7 +1244,7 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-1-8',
-						name: 'Prayer',
+						name: 'Молитва',
 						description: '',
 						type: 'Choice',
 						data: {
@@ -1278,7 +1278,7 @@ export const orcConduit = {
 										data: {
 											keywords: [
 												'Магія',
-												'Ranged'
+												'Дальній'
 											],
 											value: 2,
 											valueCharacteristics: [],
@@ -1306,11 +1306,11 @@ export const orcConduit = {
 												},
 												{
 													id: 'conduit-1-8db',
-													name: 'Stamina',
+													name: 'Витривалість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stamina',
+														field: 'Витривалість',
 														value: 0,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1347,11 +1347,11 @@ export const orcConduit = {
 											features: [
 												{
 													id: 'conduit-1-8ca',
-													name: 'Speed',
+													name: 'Швидкість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Speed',
+														field: 'Швидкість',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1388,11 +1388,11 @@ export const orcConduit = {
 											features: [
 												{
 													id: 'conduit-1-8ea',
-													name: 'Stamina',
+													name: 'Витривалість',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stamina',
+														field: 'Витривалість',
 														value: 0,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1402,11 +1402,11 @@ export const orcConduit = {
 												},
 												{
 													id: 'conduit-1-8eb',
-													name: 'Stability',
+													name: 'Непорушність',
 													description: '',
 													type: 'Bonus',
 													data: {
-														field: 'Stability',
+														field: 'Непорушність',
 														value: 1,
 														valueCharacteristics: [],
 														valueCharacteristicMultiplier: 1,
@@ -1430,7 +1430,7 @@ export const orcConduit = {
 									data: {
 										keywords: [
 											'Магія',
-											'Ranged'
+											'Дальній'
 										],
 										value: 2,
 										valueCharacteristics: [],
@@ -2188,12 +2188,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2246,12 +2246,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike'
+					'Ближній бій',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2304,12 +2304,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2415,12 +2415,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2473,12 +2473,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Melee',
-					'Strike'
+					'Ближній бій',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Melee',
+						type: 'Ближній бій',
 						value: 1,
 						value2: 0,
 						within: 0,
@@ -2527,12 +2527,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2585,12 +2585,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2640,7 +2640,7 @@ export const orcConduit = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
@@ -2697,11 +2697,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2742,12 +2742,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2796,12 +2796,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2854,12 +2854,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2908,12 +2908,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -2962,11 +2962,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3065,7 +3065,7 @@ export const orcConduit = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
@@ -3122,11 +3122,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3167,12 +3167,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3282,12 +3282,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3341,7 +3341,7 @@ export const orcConduit = {
 				keywords: [
 					'Area',
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
@@ -3394,11 +3394,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3439,11 +3439,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3484,11 +3484,11 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged'
+					'Дальній'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,
@@ -3619,12 +3619,12 @@ export const orcConduit = {
 				},
 				keywords: [
 					'Магія',
-					'Ranged',
-					'Strike'
+					'Дальній',
+					'Удар'
 				],
 				distance: [
 					{
-						type: 'Ranged',
+						type: 'Дальній',
 						value: 10,
 						value2: 0,
 						within: 0,

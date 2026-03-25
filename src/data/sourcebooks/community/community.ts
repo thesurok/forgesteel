@@ -331,7 +331,7 @@ As a magewright, you are able to utilize the majesty of magic and infuse it into
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'magewright-1-1',
-					name: 'Stamina',
+					name: 'Витривалість',
 					field: FeatureField.Stamina,
 					value: 18,
 					valuePerLevel: 6
@@ -519,7 +519,7 @@ If you have a kit, you can’t take this upgrade.`,
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'viZ60LWZ30lRVtR5',
-										name: 'Speed',
+										name: 'Швидкість',
 										field: FeatureField.Speed,
 										value: 1
 									}),
@@ -541,13 +541,13 @@ If you have a kit, you can’t take this upgrade.`,
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'qiJTWUSbPvne14QA',
-										name: 'Stamina',
+										name: 'Витривалість',
 										field: FeatureField.Stamina,
 										valuePerEchelon: 6
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'ybD0nwio3ErTlFBo',
-										name: 'Stability',
+										name: 'Непорушність',
 										field: FeatureField.Stability,
 										value: 1
 									})
@@ -1990,7 +1990,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 								}),
 								FactoryLogic.feature.createKitChoice({
 									id: 'yEz97EFZ6id4meil',
-									name: 'Kit',
+									name: 'Набір',
 									description: 'Your servitor can gain the benefits of a kit and use the kit’s signature ability. When your servitor deals damage with an action that doesn’t have a power roll, the damage bonus from its kit is not added to that damage. Your servitor can also equip treasures. Any leveled treasure used by your Servitor counts against the number you can carry safely.'
 								})
 							]
@@ -2628,7 +2628,7 @@ As a Scion, you are the the quiet before the storm. You move like the wind, and 
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'scion-O9HoOpa7euJhtYOU',
-					name: 'Stamina',
+					name: 'Витривалість',
 					field: FeatureField.Stamina,
 					value: 21,
 					valuePerLevel: 9
@@ -2662,7 +2662,7 @@ As a Scion, you are the the quiet before the storm. You move like the wind, and 
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'scion-DPrp53cyrPmKlK8Q',
-					name: 'Kit',
+					name: 'Набір',
 					description: 'You can use and the gain the benefits of a kit.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
@@ -3525,7 +3525,7 @@ As a vessel, you debilitate your enemies and bolster yourself, sacrificing long-
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'vessel-1-1',
-					name: 'Stamina',
+					name: 'Витривалість',
 					field: FeatureField.Stamina,
 					value: 18,
 					valuePerLevel: 6
