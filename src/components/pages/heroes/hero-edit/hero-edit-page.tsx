@@ -22,7 +22,6 @@ import { Element } from '@/models/element';
 import { ErrorBoundary } from '@/components/controls/error-boundary/error-boundary';
 import { FeatureLogic } from '@/logic/feature-logic';
 import { FeatureType } from '@/enums/feature-type';
-import { Format } from '@/utils/format';
 import { HeroClass } from '@/models/class';
 import { HeroLogic } from '@/logic/hero-logic';
 import { Options } from '@/models/options';
@@ -418,7 +417,7 @@ export const HeroEditPage = (props: Props) => {
 			start: 'Початок',
 			ancestry: 'Походження',
 			culture: 'Культура',
-			career: "Кар'єра",
+			career: 'Кар\'єра',
 			class: 'Клас',
 			complication: 'Ускладнення',
 			details: 'Деталі'

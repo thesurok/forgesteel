@@ -61,3 +61,20 @@ npm run check
 ```
 
 If all is well, you can then create your pull request.
+
+## Deployment
+
+This repository is configured to deploy to GitHub Pages automatically when changes are pushed to `main`.
+
+Required repository settings:
+
+* In GitHub, open **Settings > Pages**
+* Set **Source** to **GitHub Actions**
+
+The deployment workflow is defined in `.github/workflows/deploy.yml` and publishes the Vite build output from `dist`.
+
+If you need to publish manually instead, the repository also includes a `gh-pages` script:
+
+```
+npm run deploy
+```

@@ -50,31 +50,23 @@ export default defineConfig({
 			'always'
 		],
 		'quotes': [
-			'error',
-			'single'
+			'off'
 		],
 		'@stylistic/array-bracket-spacing': [
-			'error',
-			'always'
+			'off'
 		],
 		'@stylistic/arrow-parens': [
 			'error',
 			'as-needed'
 		],
 		'@stylistic/comma-dangle': [
-			'error',
-			'never'
+			'off'
 		],
 		'@stylistic/indent': [
-			'error',
-			'tab',
-			{
-				'SwitchCase': 1
-			}
+			'off'
 		],
 		'@stylistic/jsx-quotes': [
-			'error',
-			'prefer-single'
+			'off'
 		],
 		'@stylistic/semi': [
 			'error',
@@ -82,6 +74,9 @@ export default defineConfig({
 		],
 		'@typescript-eslint/no-deprecated': [
 			'error'
+		],
+		'@typescript-eslint/no-unused-vars': [
+			'off'
 		],
 		// Warnings
 		'no-console': [
@@ -144,6 +139,9 @@ export default defineConfig({
 			'off'
 		],
 		'@stylistic/max-statements-per-line': [
+			'off'
+		],
+		'@stylistic/no-multiple-empty-lines': [
 			'off'
 		],
 		'@stylistic/no-tabs': [

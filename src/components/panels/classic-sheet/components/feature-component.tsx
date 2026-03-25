@@ -185,8 +185,9 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 
 	const getAbilityType = (ability: Ability) => {
 		let type = '';
-		if (![ AbilityUsage.NoAction, AbilityUsage.Other ].includes(ability.type.usage)) {
-			type = ability.type.usage.toString();
+		const usage = ability.type.usage as AbilityUsage;
+		if (![AbilityUsage.NoAction, AbilityUsage.Other].includes(usage)) {
+			type = usage.toString();
 			if (ability.type.free) {
 				type = 'Free ' + type;
 			}
@@ -198,7 +199,7 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 	};
 
 	const type = getAbilityType(feature.data.ability);
-	const typeClasses = [ 'type' ];
+	const typeClasses = ['type'];
 	typeClasses.push(type.toLocaleLowerCase().split(' ').join('-'));
 
 	return (
@@ -445,7 +446,7 @@ const MaliceAbilityFeatureComponent = (feature: FeatureMaliceAbility) => {
 };
 
 export const FeatureComponent = (props: Props) => {
-	const classes = [ 'feature' ].concat(props.additionalClasses || []).join(' ');
+	const classes = ['feature'].concat(props.additionalClasses || []).join(' ');
 	const feature = props.feature;
 	const hero = props.hero;
 	let content;

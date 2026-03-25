@@ -2,14 +2,10 @@ import { Alert, Button, Flex, Segmented } from 'antd';
 import { BookOutlined, PlayCircleOutlined, PlusOutlined, TeamOutlined } from '@ant-design/icons';
 import { AppFooter } from '@/components/panels/app-footer/app-footer';
 import { AppHeader } from '@/components/panels/app-header/app-header';
-import { Collections } from '@/utils/collections';
 import { ErrorBoundary } from '@/components/controls/error-boundary/error-boundary';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Markdown } from '@/components/controls/markdown/markdown';
 import { SelectablePanel } from '@/components/controls/selectable-panel/selectable-panel';
-import { Tip } from '@/models/tip';
-import { TipData } from '@/data/tip-data';
-import { TipPanel } from '@/components/panels/tip/tip-panel';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { useNavigation } from '@/hooks/use-navigation';
 import { useState } from 'react';
@@ -345,33 +341,33 @@ const Welcome = (props: WelcomeProps) => {
 	);
 };
 
-const Tips = () => {
-	const [tips] = useState<Tip[]>([
-		...Collections.shuffle(TipData.getTips().filter(t => t.isNew)),
-		...Collections.shuffle(TipData.getTips().filter(t => !t.isNew))
-	]);
-	const [tipIndex, setTipIndex] = useState<number>(0);
+// const Tips = () => {
+// 	const [tips] = useState<Tip[]>([
+// 		...Collections.shuffle(TipData.getTips().filter(t => t.isNew)),
+// 		...Collections.shuffle(TipData.getTips().filter(t => !t.isNew))
+// 	]);
+// 	const [tipIndex, setTipIndex] = useState<number>(0);
 
-	const prevTip = () => {
-		const index = tipIndex - 1;
-		setTipIndex(Math.max(index, 0));
-	};
+// 	const prevTip = () => {
+// 		const index = tipIndex - 1;
+// 		setTipIndex(Math.max(index, 0));
+// 	};
 
-	const nextTip = () => {
-		const index = tipIndex + 1;
-		setTipIndex(Math.min(index, tips.length - 1));
-	};
+// 	const nextTip = () => {
+// 		const index = tipIndex + 1;
+// 		setTipIndex(Math.min(index, tips.length - 1));
+// 	};
 
-	return (
-		<ErrorBoundary>
-			<TipPanel
-				tip={tips[tipIndex]}
-				onPrevious={tipIndex === 0 ? undefined : prevTip}
-				onNext={tipIndex === tips.length - 1 ? undefined : nextTip}
-			/>
-		</ErrorBoundary>
-	);
-};
+// 	return (
+// 		<ErrorBoundary>
+// 			<TipPanel
+// 				tip={tips[tipIndex]}
+// 				onPrevious={tipIndex === 0 ? undefined : prevTip}
+// 				onNext={tipIndex === tips.length - 1 ? undefined : nextTip}
+// 			/>
+// 		</ErrorBoundary>
+// 	);
+// };
 
 const Banner = () => {
 	return null;
