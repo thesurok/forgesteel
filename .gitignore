@@ -2,7 +2,8 @@ coverage
 dist
 node_modules
 .DS_Store
-.github
 .vscode/
 .vscode/*
 .env
+TRANSLATION_GUIDELINES.md
+.prompts/
