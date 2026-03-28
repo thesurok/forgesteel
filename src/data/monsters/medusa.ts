@@ -43,7 +43,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 		{
 			id: 'medusa-info-6',
 			name: 'Medusa Languages',
-			description: 'Medusas can speak any language they knew before they were cursed. Many of them speak Caelian, and others have learned the languages of monsters and creatures they dwell near. Additionally, tales tell of some medusas who speak the original form of Khamish.'
+			description: 'Medusas can speak any language they knew before they were cursed. Many of them speak Келіан (Caelian), and others have learned the languages of monsters and creatures they dwell near. Additionally, tales tell of some medusas who speak the original form of Кхаміш (Khamish).'
 		}
 	],
 	malice: [

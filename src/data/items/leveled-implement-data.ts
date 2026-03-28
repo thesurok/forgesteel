@@ -16,7 +16,7 @@ export class LeveledImplementData {
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A diamond ring',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Presence, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -104,7 +104,7 @@ export class LeveledImplementData {
 		keywords: [ AbilityKeyword.Psionic, AbilityKeyword.Wand ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A handful of shattered quartz',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -196,7 +196,7 @@ export class LeveledImplementData {
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of primordial ice, an ounce of mammoth-ivory shards',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -272,7 +272,7 @@ export class LeveledImplementData {
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Incense distilled from the essence of ether',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Reason ],
 			goal: 450
 		}),
@@ -351,7 +351,7 @@ This long, ornate rod with a silver bulb head is braided with 33 green cords. A 
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A silver ingot and a written strategy from 33 warleaders',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
 			goal: 450
 		}),
@@ -427,7 +427,7 @@ This long, ornate rod with a silver bulb head is braided with 33 green cords. A 
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Two clear lenses carved from volcanic glass',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -503,7 +503,7 @@ This long, ornate rod with a silver bulb head is braided with 33 green cords. A 
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A tree branch and fealty from three hundred or more sworn followers',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Presence ],
 			goal: 450
 		}),
@@ -610,7 +610,7 @@ This long, ornate rod with a silver bulb head is braided with 33 green cords. A 
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An iron ingot and a singing tree’s wood found in Arcadia',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [ Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -686,7 +686,7 @@ This long, ornate rod with a silver bulb head is braided with 33 green cords. A 
 		keywords: [ AbilityKeyword.Implement, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Written permission from a high elf magistrate',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),

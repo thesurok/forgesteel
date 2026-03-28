@@ -57,7 +57,7 @@ export const dwarf: Ancestry = {
 						id: 'dwarf-feature-2-4',
 						name: 'Надзвичайна витримка',
 						description: 'Ваша міцна конституція перешкоджає втраті сили.',
-						conditions: [ ConditionType.Weakened ]
+						conditions: [ConditionType.Weakened]
 					}),
 					value: 2
 				},
@@ -76,5 +76,5 @@ export const dwarf: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Гном', 'Відлюдний, бюрократичний, творчий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.creative, 'Zaliac')
+	culture: FactoryLogic.createCulture('Гном', 'Відлюдний, бюрократичний, творчий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.creative, 'Заліак (Zaliac)')
 };

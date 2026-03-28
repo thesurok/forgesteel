@@ -7,6 +7,7 @@ import { DangerButton } from '@/components/controls/danger-button/danger-button'
 import { ErrorBoundary } from '@/components/controls/error-boundary/error-boundary';
 import { FeatureLogic } from '@/logic/feature-logic';
 import { FeatureType } from '@/enums/feature-type';
+import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
 import { Markdown } from '@/components/controls/markdown/markdown';
@@ -27,7 +28,8 @@ interface Props {
 }
 
 export const FeatureConfigPanel = (props: Props) => {
-	const [ autoCalc, setAutoCalc ] = useState<boolean>(true);
+	const [autoCalc, setAutoCalc] = useState<boolean>(true);
+	const featureName = FeatureUpdateLogic.normalizeFeatureName(props.feature.name || 'Unnamed Feature');
 
 	const autoCalcAvailable = () => {
 		return (props.feature.type === FeatureType.Text) && (AbilityLogic.getTextEffect(props.feature.description, props.hero) !== props.feature.description);
@@ -82,7 +84,7 @@ export const FeatureConfigPanel = (props: Props) => {
 						</>
 					}
 				>
-					{props.feature.name || 'Unnamed Feature'}
+					{featureName}
 				</HeaderText>
 				<Markdown text={getDescription()} />
 				<ConfigFeature

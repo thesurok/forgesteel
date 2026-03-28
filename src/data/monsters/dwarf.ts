@@ -60,7 +60,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 		{
 			id: 'dwarf-info-6',
 			name: 'Dwarf Languages',
-			description: 'Most dwarves speak Caelian and Zaliac.'
+			description: 'Most dwarves speak Келіан (Caelian) and Заліак (Zaliac).'
 		}
 	],
 	malice: [

@@ -48,7 +48,7 @@ export const hakaan: Ancestry = {
 						id: 'hakaan-feature-2-4',
 						name: 'Велика витривалість',
 						description: 'Ваш міцний організм запобігає втраті сили.',
-						conditions: [ ConditionType.Weakened ]
+						conditions: [ConditionType.Weakened]
 					}),
 					value: 2
 				},
@@ -70,5 +70,5 @@ export const hakaan: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Хакаан', 'Сільський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.rural, OrganizationData.communal, UpbringingData.labor, 'Ворик')
+	culture: FactoryLogic.createCulture('Хакаан', 'Сільський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.rural, OrganizationData.communal, UpbringingData.labor, 'Ворик (Vhoric)')
 };

@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const vuken: Kit = {
 	id: 'kit-vuken',
-	name: 'Vuken',
-	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a wolf, becoming a fleet-footed hunter. Vuken are tied to forests and open steppes, and this aspect is associated with the thunderstorm.',
+	name: 'Вукен',
+	description: 'З цим набором штормового воїна ви спрямовуєте свою первісну лють у форму вовка, стаючи прудконогим мисливцем. Вукени повʼязані з лісами та відкритими степами, а цей аспект асоціюється з грозою.',
 	type: 'Stormwight',
 	armor: [],
 	weapon: [KitWeapon.Unarmed],
@@ -23,8 +23,8 @@ export const vuken: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-vuken-signature',
-				name: 'Unbalancing Attack',
-				description: 'A wild assault forces your foe onto their back.',
+				name: 'Збивальний напад',
+				description: 'Дикий напад валить ворога на спину.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -34,9 +34,9 @@ export const vuken: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might],
-							tier1: '2 + С damage; Л < [слабкий], prone',
-							tier2: '5 + С damage; Л < [середній], prone',
-							tier3: '7 + С damage; Л < [сильний], prone'
+							tier1: '2 + С шкоди; Л < [слабкий], розпластаний',
+							tier2: '5 + С шкоди; Л < [середній], розпластаний',
+							tier3: '7 + С шкоди; Л < [сильний], розпластаний'
 						})
 					)
 				]
@@ -44,34 +44,34 @@ export const vuken: Kit = {
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-vuken-feature-1',
-			name: 'Aspect Benefits',
-			description: 'Whenever you use the Knockback maneuver, you can then use the Aid Attack maneuver as a free triggered action.'
+			name: 'Переваги аспекту',
+			description: 'Кожного разу, коли ви використовуєте маневр «Відштовхування», ви можете після цього безкоштовною тригерною дією використати маневр «Допомога в атаці».'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-vuken-feature-2a',
-			name: 'Animal Form: Wolf',
-			description: 'While you are in your wolf form, your size is 1L, you have a +2 bonus to speed, and you ignore difficult terrain.'
+			name: 'Форма тварини: Вовк',
+			description: 'Поки ви у формі вовка, ваш розмір дорівнює 1L, ви отримуєте +2 бонус до швидкості та ігноруєте складну місцевість.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-vuken-feature-2b',
-			name: 'Hybrid Form: Wolf',
-			description: 'While you are in your hybrid form, your size is 1L, you have a +2 bonus to speed, and you ignore difficult terrain. At 4th level, the first time you take hybrid form in an encounter, you gain 10 temporary Stamina.'
+			name: 'Гібридна форма: Вовк',
+			description: 'Поки ви у гібридній формі, ваш розмір дорівнює 1L, ви отримуєте +2 бонус до швидкості та ігноруєте складну місцевість. На 4 рівні, коли ви вперше за зустріч набуваєте гібридної форми, ви отримуєте 10 тимчасової Витривалості.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-vuken-feature-3',
-			name: 'Primordial Storm: Lightning Storm',
-			description: 'Your primordial damage type is lightning.'
+			name: 'Первісна буря: Блискавична буря',
+			description: 'Ваш первісний тип шкоди - блискавка.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-vuken-feature-4',
-			name: 'Growing Ferocity',
+			name: 'Зростаюча лють',
 			description: `
-* **Ferocity 2**: Whenever you use the Knockback maneuver, you can target one additional creature.
-* **Ferocity 4**: The first time on a turn that you push a creature or knock a creature prone, you gain 1 surge.
-* **Ferocity 6**: You gain an edge on Agility tests and the Knockback maneuver.
-* **Ferocity 8 (4th level)**: The first time on a turn that you push a creature or knock a creature prone, you gain 2 surges.
-* **Ferocity 10 (7th level)**: You have a double edge on Agility tests and the Knockback maneuver.
-* **Ferocity 12 (10th level)**: Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, whenever you make a power roll that imposes forced movement on a target, the forced movement distance gains a bonus equal to your Agility score.`
+* **Лють 2**: Кожного разу, коли ви використовуєте маневр «Відштовхування», ви можете націлити ще одну істоту.
+* **Лють 4**: Першого разу за хід, коли ви штовхаєте істоту або розпластуєте її, ви отримуєте 1 сплеск.
+* **Лють 6**: Ви отримуєте перевагу на перевірки Ловкості та маневр «Відштовхування».
+* **Лють 8 (4 рівень)**: Першого разу за хід, коли ви штовхаєте істоту або розпластуєте її, ви отримуєте 2 сплески.
+* **Лють 10 (7 рівень)**: Ви маєте подвійну перевагу на перевірки Ловкості та маневр «Відштовхування».
+* **Лють 12 (10 рівень)**: Кожного разу, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості. Додатково, коли ви робите кидок сили, що накладає примусове переміщення на ціль, відстань цього примусового переміщення отримує бонус, рівний вашому показнику Ловкості.`
 		})
 	]
 };

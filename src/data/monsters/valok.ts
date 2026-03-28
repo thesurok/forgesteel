@@ -56,7 +56,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 		{
 			id: 'valok-info-7',
 			name: 'Valok Languages',
-			description: 'Most valok communicate exclusively in Rallarian.'
+			description: 'Most valok communicate exclusively in Ралларіан (Rallarian).'
 		}
 	],
 	malice: [

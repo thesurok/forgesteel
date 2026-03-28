@@ -1,5 +1,6 @@
 import { AbilityUpdateLogic } from '@/logic/update/ability-update-logic';
 import { AttitudeType } from '@/enums/attitude-type';
+import { ClassUpdateLogic } from '@/logic/update/class-update-logic';
 import { Collections } from '@/utils/collections';
 import { EncounterDifficulty } from '@/enums/encounter-difficulty';
 import { EncounterObjectiveData } from '@/data/encounter-objective-data';
@@ -131,6 +132,8 @@ export class SourcebookUpdateLogic {
 		});
 
 		sourcebook.classes.forEach(c => {
+			ClassUpdateLogic.updateClass(c);
+
 			if (c.type === undefined) {
 				c.type = 'standard';
 			}
@@ -340,7 +343,7 @@ export class SourcebookUpdateLogic {
 			}
 
 			if (n.outcomes === undefined) {
-				n.outcomes = [ '', '', '', '', '', '' ];
+				n.outcomes = ['', '', '', '', '', ''];
 			}
 		});
 

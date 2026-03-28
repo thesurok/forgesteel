@@ -7,11 +7,11 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const guisarmier: Kit = {
 	id: 'kit-guisarmier',
-	name: 'Guisarmier',
-	description: 'The Guisarmier kit is for those who want to use a polearm for extended reach while remaining protected by sturdy armor. This is the kit that allows you to become the ultimate halberd, longspear, or glaive fighter.',
+	name: 'Гвізармієр',
+	description: 'Набір «Гвізармієр» для тих, хто хоче битися держаковою зброєю з подовженою досяжністю, залишаючись захищеним міцною бронею. Саме цей набір робить вас майстром алебарди, довгого списа чи глефи.',
 	type: '',
-	armor: [ KitArmor.Medium ],
-	weapon: [ KitWeapon.Polearm ],
+	armor: [KitArmor.Medium],
+	weapon: [KitWeapon.Polearm],
 	stamina: 6,
 	speed: 0,
 	stability: 1,
@@ -24,20 +24,20 @@ export const guisarmier: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-guisarmier-signature',
-				name: 'Forward Thrust, Backward Smash',
-				description: 'In your hands, the haft is as good as the head.',
+				name: 'Колю вперед, бʼю назад',
+				description: 'У ваших руках древко не менш небезпечне, ніж вістря.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'Two creatures or objects',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Дві істоти або предмети',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Might, Characteristic.Agility ],
-							tier1: '2 damage',
-							tier2: '5 damage',
-							tier3: '7 damage'
+							characteristic: [Characteristic.Might, Characteristic.Agility],
+							tier1: '2 шкоди',
+							tier2: '5 шкоди',
+							tier3: '7 шкоди'
 						})
 					)
 				]

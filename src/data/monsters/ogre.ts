@@ -42,7 +42,7 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 		{
 			id: 'ogre-info-5',
 			name: 'Ogre Languages',
-			description: 'Most ogres speak Caelian and High Kuric.'
+			description: 'Most ogres speak Келіан (Caelian) and Високий Курик (High Kuric).'
 		}
 	],
 	malice: [

@@ -23,7 +23,7 @@ export const elementalist: HeroClass = {
 
 Як елементаліст, ви можете обрушити свою лють на поле ворогів, ставити ворога саме туди, куди хочете, ослаблювати супротивників шкідливими ефектами, оберігати себе та союзників від небезпеки, змінювати місцевість, викривляти простір і багато іншого. Вибір елементальної спеціалізації визначає, у чому ви найсильніші.`,
 	type: 'standard',
-	subclassName: 'Elemental Specialization',
+	subclassName: 'Стихійна спеціалізація',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Reason]

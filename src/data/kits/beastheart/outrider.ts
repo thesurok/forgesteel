@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const outrider: Kit = {
 	id: 'kit-outrider',
-	name: 'Outrider',
-	description: 'With the Outrider kit, you gain magically-enhanced mobility and range, along with enough Stamina to keep your companion in the thick of battle. With well-balanced benefits for melee and ranged attackers, the Outrider kit can be adopted by beasthearts of any wild nature.',
+	name: 'Аутрайдер',
+	description: 'З набором «Аутрайдер» ви отримуєте магічно посилену рухливість і досяжність, а також достатньо Витривалості, щоб підтримувати свого компаньйона в самісінькій гущі бою. Завдяки добре збалансованим перевагам для ближніх і дистанційних бійців цей набір підходить звіросерцю будь-якої дикої вдачі.',
 	type: 'Beastheart',
 	armor: [KitArmor.Medium],
 	weapon: [KitWeapon.Bow, KitWeapon.Medium],
@@ -23,17 +23,17 @@ export const outrider: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-outrider-1',
-				name: 'Living Arrow',
-				description: 'Your arrow picks out the target for your companion’s next attack.',
+				name: 'Жива стріла',
+				description: 'Ваша стріла позначає ціль для наступної атаки вашого компаньйона.',
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createRanged(5)],
-				target: 'One creature, object, or unoccupied space',
+				target: 'Одна істота, предмет або незайнята клітинка',
 				cost: 'signature',
 				sections: [
-					FactoryLogic.createAbilitySectionText('2 + С damage; if the target is a creature or object, your companion can teleport to an unoccupied space adjacent to the target, provided your companion is also within range. If the target is an unoccupied space, you or your companion can teleport to the space.'),
+					FactoryLogic.createAbilitySectionText('2 + С шкоди; якщо ціль - істота або предмет, ваш компаньйон може телепортуватися в незайняту клітинку поруч із ціллю, за умови що він також перебуває в межах дистанції. Якщо ціль - незайнята клітинка, туди можете телепортуватися ви або ваш компаньйон.'),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'The ability’s distance increases to ranged 10.'
+						effect: 'Дистанція здібності збільшується до дистанційної 10.'
 					})
 				]
 			})

@@ -107,7 +107,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 		{
 			id: 'wardog-1st-info-6',
 			name: 'War Dog Languages',
-			description: 'Most war dogs speak Caelian and one Vaslorian human language.'
+			description: 'Most war dogs speak Келіан (Caelian) and one Васлоріан (Vaslorian) human language.'
 		}
 	],
 	malice: [

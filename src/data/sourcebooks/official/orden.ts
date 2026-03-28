@@ -42,267 +42,267 @@ export const orden: Sourcebook = {
 	titles: [],
 	skills: [
 		{
-			name: 'Timescape',
-			description: 'Knowing about the various planets of the timescape',
+			name: 'Таймскейп',
+			description: 'Знати про різні планети таймскейпу.',
 			list: SkillList.Lore
 		}
 	],
 	languages: [
-		// Common languages
+		// Загальні мови
 		{
-			name: 'Caelian',
-			description: 'The language of the ancient Caelian Empire; the common tongue of Orden.',
+			name: 'Келіан (Caelian)',
+			description: 'Мова стародавньої Келіанської імперії; загальна мова Ордену.',
 			type: LanguageType.Common,
 			related: []
 		},
-		// Regional languages
+		// Регіональні мови
 		{
-			name: 'Higaran',
-			description: 'Spoken in Higara.',
+			name: 'Хігаран (Higaran)',
+			description: 'Нею розмовляють у Хігарі.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Khemharic',
-			description: 'Spoken in Khemhara.',
+			name: 'Кемхарік (Khemharic)',
+			description: 'Нею розмовляють у Кемхарі.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Khoursirian',
-			description: 'Spoken in Khoursir; a distant offshoot of Khamish.',
+			name: 'Кхурсіріан (Khoursirian)',
+			description: 'Нею розмовляють у Кхурсірі; це далеке відгалуження Кхамішу.',
 			type: LanguageType.Regional,
-			related: ['Khamish']
+			related: ['Кхаміш (Khamish)']
 		},
 		{
-			name: 'Oaxuatl',
-			description: 'Spoken in Ix.',
-			type: LanguageType.Regional,
-			related: []
-		},
-		{
-			name: 'Phaedran',
-			description: 'Spoken in Phaedros.',
+			name: 'Оашуатль (Oaxuatl)',
+			description: 'Нею розмовляють в Іксі.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Riojan',
-			description: 'Spoken in Rioja.',
+			name: 'Федран (Phaedran)',
+			description: 'Нею розмовляють у Федросі.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Uvalic',
-			description: 'Spoken by the gol.',
+			name: 'Ріохан (Riojan)',
+			description: 'Нею розмовляють у Ріосі.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Vaniric',
-			description: 'Spoken in Vanigar.',
+			name: 'Увалік (Uvalic)',
+			description: 'Нею розмовляють голи.',
 			type: LanguageType.Regional,
 			related: []
 		},
 		{
-			name: 'Vaslorian',
-			description: 'Spoken in Vasloria.',
+			name: 'Ванірик (Vaniric)',
+			description: 'Нею розмовляють у Ванігарі.',
 			type: LanguageType.Regional,
 			related: []
 		},
-		// Cultural languages
 		{
-			name: 'Anjali',
-			description: 'Spoken in the Hells; the language of contract law.',
+			name: 'Васлоріан (Vaslorian)',
+			description: 'Нею розмовляють у Васлорії.',
+			type: LanguageType.Regional,
+			related: []
+		},
+		// Культурні мови
+		{
+			name: 'Анжалі (Anjali)',
+			description: 'Нею розмовляють у Пеклах; мова контрактного права.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Axiomatic',
-			description: 'Spoken by Memoneks; native language of Axiom; the common language of the timescape by trade.',
+			name: 'Аксіоматичний (Axiomatic)',
+			description: 'Нею розмовляють мемонеки; рідна мова Аксіому; торговельна загальна мова таймскейпу.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Filliaric',
-			description: 'Spoken by Angulotls; an offshoot of Cyllinric.',
+			name: 'Філліарик (Filliaric)',
+			description: 'Нею розмовляють ангулотлі; відгалуження Циллінрика.',
 			type: LanguageType.Cultural,
-			related: ['Cyllinric']
+			related: ['Циллінрик (Cyllinric)']
 		},
 		{
-			name: 'The First Language',
-			description: 'Spoken by elder dragons; the language of magic.',
-			type: LanguageType.Cultural,
-			related: []
-		},
-		{
-			name: 'High Kuric',
-			description: 'Spoken by bredbeddles, giants, ogres, and trolls.',
+			name: 'Перша мова (The First Language)',
+			description: 'Нею розмовляють старші дракони; мова магії.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Hyrallic',
-			description: 'Spoken by high elves; the language of interspecies diplomacy.',
+			name: 'Високий Курик (High Kuric)',
+			description: 'Нею розмовляють бредбеддли, велетні, огри й тролі.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Illyvric',
-			description: 'Spoken by shadow elves.',
+			name: 'Гіраллік (Hyrallic)',
+			description: 'Нею розмовляють високі ельфи; мова міжвидової дипломатії.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Kalliak',
-			description: 'Spoken by orcs; an offshoot of Zaliac.',
-			type: LanguageType.Cultural,
-			related: ['Zaliac']
-		},
-		{
-			name: 'Kethaic',
-			description: 'Spoken by kobolds; a patois of Vastariax and Caelian.',
-			type: LanguageType.Cultural,
-			related: ['Caelian', 'Vastariax']
-		},
-		{
-			name: 'Khelt',
-			description: 'Spoken by bugbears and the fey; an offshoot of Kheltivari.',
-			type: LanguageType.Cultural,
-			related: ['Kheltivari']
-		},
-		{
-			name: 'Low Kuric',
-			description: 'Spoken by elementals.',
+			name: 'Ілліврик (Illyvric)',
+			description: 'Нею розмовляють тіньові ельфи.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Mindspeech',
-			description: 'Spoken by voiceless talkers; a symbolic language shared among native telepaths.',
+			name: 'Калліак (Kalliak)',
+			description: 'Нею розмовляють орки; відгалуження Заліаку.',
+			type: LanguageType.Cultural,
+			related: ['Заліак (Zaliac)']
+		},
+		{
+			name: 'Кетайк (Kethaic)',
+			description: 'Нею розмовляють кобольди; патуа з Вастаріаксу й Келіану.',
+			type: LanguageType.Cultural,
+			related: ['Келіан (Caelian)', 'Вастаріакс (Vastariax)']
+		},
+		{
+			name: 'Кхелт (Khelt)',
+			description: 'Нею розмовляють багбери й феї; відгалуження Кхелтіварі.',
+			type: LanguageType.Cultural,
+			related: ['Кхелтіварі (Kheltivari)']
+		},
+		{
+			name: 'Низький Курик (Low Kuric)',
+			description: 'Нею розмовляють елементалі.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Proto-Ctholl',
-			description: 'Spoken by demons; an incomplete offshoot of Tholl.',
-			type: LanguageType.Cultural,
-			related: ['Tholl']
-		},
-		{
-			name: 'Szetch',
-			description: 'Spoken by goblins and radenwights.',
+			name: 'Мислемова (Mindspeech)',
+			description: 'Нею розмовляють безмовні мовці; символічна мова, спільна для вроджених телепатів.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Tholl',
-			description: 'Spoken by gnolls.',
+			name: 'Прото-Ктолл (Proto-Ctholl)',
+			description: 'Нею розмовляють демони; незавершене відгалуження Толлу.',
+			type: LanguageType.Cultural,
+			related: ['Толл (Tholl)']
+		},
+		{
+			name: 'Сзетч (Szetch)',
+			description: 'Нею розмовляють гобліни й раденвайти.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Urollialic',
-			description: 'Spoken by olothecs.',
+			name: 'Толл (Tholl)',
+			description: 'Нею розмовляють гноли.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Variac',
-			description: 'Spoken by gnomes, olothecs, trolls, and voiceless talkers; the common language of the World Below.',
+			name: 'Уролліалік (Urollialic)',
+			description: 'Нею розмовляють олотеки.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Vastariax',
-			description: 'Spoken by dragons and dragon knights.',
+			name: 'Варіак (Variac)',
+			description: 'Нею розмовляють гноми, олотеки, тролі й безмовні мовці; загальна мова Підземного світу.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Vhoric',
-			description: 'Spoken by hakaan; offshoot of the stone giant dialect of High Kuric.',
-			type: LanguageType.Cultural,
-			related: ['High Kuric']
-		},
-		{
-			name: 'Voll',
-			description: 'Spoken by time raiders.',
+			name: 'Вастаріакс (Vastariax)',
+			description: 'Нею розмовляють дракони й драконячі лицарі.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Yllyric',
-			description: 'Spoken by wode elves; the language of druids.',
+			name: 'Ворик (Vhoric)',
+			description: 'Нею розмовляють хакаани; відгалуження каменевелетенського діалекту Високого Курика.',
+			type: LanguageType.Cultural,
+			related: ['Високий Курик (High Kuric)']
+		},
+		{
+			name: 'Волл (Voll)',
+			description: 'Нею розмовляють рейдери часу.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Za\'hariax',
-			description: 'Spoken by overminds.',
+			name: 'Іллірик (Yllyric)',
+			description: 'Нею розмовляють вудські ельфи; мова друїдів.',
 			type: LanguageType.Cultural,
 			related: []
 		},
 		{
-			name: 'Zaliac',
-			description: 'Spoken by dwarves; the language of engineering.',
+			name: 'За\'гаріакс (Za\'hariax)',
+			description: 'Нею розмовляють овермайнди.',
 			type: LanguageType.Cultural,
 			related: []
 		},
-		// Dead languages
 		{
-			name: 'Ananjali',
-			description: 'Was spoken by hobgoblins.',
+			name: 'Заліак (Zaliac)',
+			description: 'Нею розмовляють дворфи; мова інженерії.',
+			type: LanguageType.Cultural,
+			related: []
+		},
+		// Мертві мови
+		{
+			name: 'Ананжалі (Ananjali)',
+			description: 'Нею колись розмовляли хобгобліни.',
 			type: LanguageType.Dead,
-			related: ['Anjali']
+			related: ['Анжалі (Anjali)']
 		},
 		{
-			name: 'High Rhyvian',
-			description: 'Was spoken by sun elves.',
+			name: 'Високий Ривіан (High Rhyvian)',
+			description: 'Нею колись розмовляли сонячні ельфи.',
 			type: LanguageType.Dead,
-			related: ['Hyrallic', 'Yllyric']
+			related: ['Гіраллік (Hyrallic)', 'Іллірик (Yllyric)']
 		},
 		{
-			name: 'Khamish',
-			description: 'Was spoken by beast lords.',
+			name: 'Кхаміш (Khamish)',
+			description: 'Нею колись розмовляли володарі звірів.',
 			type: LanguageType.Dead,
-			related: ['Khoursirian']
+			related: ['Кхурсіріан (Khoursirian)']
 		},
 		{
-			name: 'Kheltivari',
-			description: 'Was spoken by the fae.',
+			name: 'Кхелтіварі (Kheltivari)',
+			description: 'Нею колись розмовляли феї.',
 			type: LanguageType.Dead,
-			related: ['Khelt', 'Yllyric']
+			related: ['Кхелт (Khelt)', 'Іллірик (Yllyric)']
 		},
 		{
-			name: 'Low Rhyvian',
-			description: 'Was spoken by sky elves.',
+			name: 'Низький Ривіан (Low Rhyvian)',
+			description: 'Нею колись розмовляли небесні ельфи.',
 			type: LanguageType.Dead,
-			related: ['Hyrallic']
+			related: ['Гіраллік (Hyrallic)']
 		},
 		{
-			name: 'Old Variac',
-			description: 'Was spoken by olothecs and voiceless talkers.',
+			name: 'Старий Варіак (Old Variac)',
+			description: 'Нею колись розмовляли олотеки й безмовні мовці.',
 			type: LanguageType.Dead,
-			related: ['Variac']
+			related: ['Варіак (Variac)']
 		},
 		{
-			name: 'Phorialtic',
-			description: 'Was spoken by elementals.',
+			name: 'Форіалтик (Phorialtic)',
+			description: 'Нею колись розмовляли елементалі.',
 			type: LanguageType.Dead,
-			related: ['High Kuric', 'Low Kuric']
+			related: ['Високий Курик (High Kuric)', 'Низький Курик (Low Kuric)']
 		},
 		{
-			name: 'Rallarian',
-			description: 'Was spoken by steel dwarves.',
+			name: 'Ралларіан (Rallarian)',
+			description: 'Нею колись розмовляли сталеві дворфи.',
 			type: LanguageType.Dead,
-			related: ['Zaliac']
+			related: ['Заліак (Zaliac)']
 		},
 		{
-			name: 'Ullorvic',
-			description: 'Was spoken by star elves.',
+			name: 'Уллорвік (Ullorvic)',
+			description: 'Нею колись розмовляли зоряні ельфи.',
 			type: LanguageType.Dead,
-			related: ['Hyrallic', 'Yllyric']
+			related: ['Гіраллік (Hyrallic)', 'Іллірик (Yllyric)']
 		}
 	]
 };

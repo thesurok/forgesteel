@@ -31,11 +31,31 @@ interface InfoProps {
 	options: Options;
 }
 
+const getAbilityLabel = (cost: number | 'signature', plural: boolean = false) => {
+	if ((cost === 'signature') || (cost === 0)) {
+		return plural ? 'фірмові навички' : 'фірмову навичку';
+	}
+
+	return plural ? `${cost}-очкові навички` : `${cost}-очкову навичку`;
+};
+
+const getAbilityOptionLabel = (cost: number | 'signature') => {
+	if ((cost === 'signature') || (cost === 0)) {
+		return 'Оберіть фірмову навичку';
+	}
+
+	return `Оберіть ${cost}-очкову навичку`;
+};
+
+const getChooseAbilityText = (count: number, cost: number | 'signature') => {
+	return `Оберіть ${count > 1 ? count : 'одну'} ${getAbilityLabel(cost, count > 1)}.`;
+};
+
 export const InfoClassAbility = (props: InfoProps) => {
 	if (!props.hero) {
 		return (
 			<div className='ds-text'>
-				Choose {props.data.count > 1 ? props.data.count : 'a'} {(props.data.cost === 'signature') || (props.data.cost === 0) ? 'signature' : `${props.data.cost}pt`} {props.data.count > 1 ? 'abilities' : 'ability'}.
+				{getChooseAbilityText(props.data.count, props.data.cost)}
 			</div>
 		);
 	}
@@ -69,7 +89,7 @@ export const InfoClassAbility = (props: InfoProps) => {
 	if (!props.feature.description) {
 		return (
 			<div className='ds-text'>
-				Choose {props.data.count > 1 ? props.data.count : 'a'} {(props.data.cost === 'signature') || (props.data.cost === 0) ? 'signature' : `${props.data.cost}pt`} {props.data.count > 1 ? 'abilities' : 'ability'}{props.data.classID ? ` from the ${heroClass.name}` : ''}.
+				{getChooseAbilityText(props.data.count, props.data.cost).slice(0, -1)}{props.data.classID ? ` з класу ${heroClass.name}` : ''}.
 			</div>
 		);
 	}
@@ -85,7 +105,7 @@ interface EditProps {
 }
 
 export const EditClassAbility = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureClassAbilityData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureClassAbilityData>(Utils.copy(props.data));
 
 	const setAbilityCost = (value: number | 'signature') => {
 		const copy = Utils.copy(data);
@@ -159,24 +179,24 @@ export const EditClassAbility = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Ability Options</HeaderText>
+			<HeaderText>Параметри навичок</HeaderText>
 			<Select
 				style={{ width: '100%' }}
 				options={[
-					{ value: 'signature', label: 'Choose a signature ability' },
-					{ value: 3, label: 'Choose a 3pt ability' },
-					{ value: 5, label: 'Choose a 5pt ability' },
-					{ value: 7, label: 'Choose a 7pt ability' },
-					{ value: 9, label: 'Choose a 9pt ability' },
-					{ value: 11, label: 'Choose a 11pt ability' },
-					{ value: 1, label: 'Choose a 1pt ability' },
-					{ value: 2, label: 'Choose a 2pt ability' },
-					{ value: 4, label: 'Choose a 4pt ability' },
-					{ value: 6, label: 'Choose a 6pt ability' },
-					{ value: 8, label: 'Choose a 8pt ability' },
-					{ value: 10, label: 'Choose a 10pt ability' },
-					{ value: 12, label: 'Choose a 12pt ability' },
-					{ value: 0, label: 'Choose an ability with no cost' }
+					{ value: 'signature', label: getAbilityOptionLabel('signature') },
+					{ value: 3, label: getAbilityOptionLabel(3) },
+					{ value: 5, label: getAbilityOptionLabel(5) },
+					{ value: 7, label: getAbilityOptionLabel(7) },
+					{ value: 9, label: getAbilityOptionLabel(9) },
+					{ value: 11, label: getAbilityOptionLabel(11) },
+					{ value: 1, label: getAbilityOptionLabel(1) },
+					{ value: 2, label: getAbilityOptionLabel(2) },
+					{ value: 4, label: getAbilityOptionLabel(4) },
+					{ value: 6, label: getAbilityOptionLabel(6) },
+					{ value: 8, label: getAbilityOptionLabel(8) },
+					{ value: 10, label: getAbilityOptionLabel(10) },
+					{ value: 12, label: getAbilityOptionLabel(12) },
+					{ value: 0, label: 'Оберіть навичку без вартості' }
 				]}
 				optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 				value={data.cost}
@@ -185,25 +205,25 @@ export const EditClassAbility = (props: EditProps) => {
 			<Select
 				style={{ width: '100%' }}
 				allowClear={!!data.classID}
-				placeholder='Select class'
+				placeholder='Оберіть клас'
 				options={[
-					{ value: '', label: 'From your class' },
-					...SourcebookLogic.getClasses(props.sourcebooks).map(o => ({ value: o.id, label: `From the ${o.name}` }))
+					{ value: '', label: 'З вашого класу' },
+					...SourcebookLogic.getClasses(props.sourcebooks).map(o => ({ value: o.id, label: `З класу ${o.name}` }))
 				]}
 				optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 				value={data.classID || ''}
 				onChange={setAbilityClassID}
 			/>
-			<HeaderText>Ability Source</HeaderText>
-			<Toggle label='Class abilities' value={data.source.fromClassAbilities} onChange={setClassAbilities} />
-			<Toggle label='Abilities from selected subclasses' value={data.source.fromSelectedSubclassAbilities} onChange={setSelectedSubclassAbilities} />
-			<Toggle label='Abilities from unselected subclasses' value={data.source.fromUnselectedSubclassAbilities} onChange={setUnselectedSubclassAbilities} />
-			<Toggle label='Abilities from class levels' value={data.source.fromClassLevels} onChange={setClassLevels} />
-			<Toggle label='Abilities from selected subclass levels' value={data.source.fromSelectedSubclassLevels} onChange={setSelectedSubclassLevels} />
-			<Toggle label='Abilities from unselected subclass levels' value={data.source.fromUnselectedSubclassLevels} onChange={setUnselectedSubclassLevels} />
-			<HeaderText>Count</HeaderText>
+			<HeaderText>Джерела навичок</HeaderText>
+			<Toggle label='Навички класу' value={data.source.fromClassAbilities} onChange={setClassAbilities} />
+			<Toggle label='Навички вибраних підкласів' value={data.source.fromSelectedSubclassAbilities} onChange={setSelectedSubclassAbilities} />
+			<Toggle label='Навички невибраних підкласів' value={data.source.fromUnselectedSubclassAbilities} onChange={setUnselectedSubclassAbilities} />
+			<Toggle label='Навички з рівнів класу' value={data.source.fromClassLevels} onChange={setClassLevels} />
+			<Toggle label='Навички з рівнів вибраних підкласів' value={data.source.fromSelectedSubclassLevels} onChange={setSelectedSubclassLevels} />
+			<Toggle label='Навички з рівнів невибраних підкласів' value={data.source.fromUnselectedSubclassLevels} onChange={setUnselectedSubclassLevels} />
+			<HeaderText>Кількість</HeaderText>
 			<NumberSpin min={1} value={data.count} onChange={setCount} />
-			<HeaderText>Minimum Level</HeaderText>
+			<HeaderText>Мінімальний рівень</HeaderText>
 			<NumberSpin min={1} value={data.minLevel} onChange={setMinLevel} />
 		</Space>
 	);
@@ -219,8 +239,8 @@ interface ConfigProps {
 }
 
 export const ConfigClassAbility = (props: ConfigProps) => {
-	const [ abilitySelectorOpen, setAbilitySelectorOpen ] = useState<boolean>(false);
-	const [ selectedAbility, setSelectedAbility ] = useState<Ability | null>(null);
+	const [abilitySelectorOpen, setAbilitySelectorOpen] = useState<boolean>(false);
+	const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
 	let heroClass: HeroClass | null = props.hero.class;
 	if (props.data.classID) {
@@ -247,13 +267,13 @@ export const ConfigClassAbility = (props: ConfigProps) => {
 	const getAddButton = () => {
 		if (sortedAbilities.length === 0) {
 			return (
-				<Empty text='There are no options to choose for this feature.' />
+				<Empty text='Для цієї риси немає доступних варіантів.' />
 			);
 		}
 
 		return (
 			<Button className='status-warning' block={true} onClick={() => setAbilitySelectorOpen(true)}>
-				Choose an ability
+				Оберіть навичку
 			</Button>
 		);
 	};
@@ -261,7 +281,7 @@ export const ConfigClassAbility = (props: ConfigProps) => {
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
 			<div className='ds-text'>
-				Choose {props.data.count > 1 ? props.data.count : 'a'} {props.data.cost === 'signature' ? 'signature' : `${props.data.cost}pt`} {props.data.count > 1 ? 'abilities' : 'ability'}.
+				{getChooseAbilityText(props.data.count, props.data.cost)}
 			</div>
 			{
 				props.data.selectedIDs.map(id => {
@@ -277,14 +297,14 @@ export const ConfigClassAbility = (props: ConfigProps) => {
 								<Button
 									style={{ flex: '0 0 auto' }}
 									type='text'
-									title='Show details'
+									title='Показати деталі'
 									icon={<InfoCircleOutlined />}
 									onClick={() => setSelectedAbility(ability)}
 								/>
 								<Button
 									style={{ flex: '0 0 auto' }}
 									type='text'
-									title='Remove'
+									title='Видалити'
 									icon={<CloseOutlined />}
 									onClick={() => {
 										const dataCopy = Utils.copy(props.data);

@@ -27,7 +27,7 @@ Under new rule, Rhodar’s people lament the absence of their lord, recalling th
 			description: `
 “In those days the Chain was in service to the Emperor Gaius VIII, third of the Five Crusading Emperors, and 27th Emperor of Caelia. Gaius continued the crusades started by his illustrious granduncle. Those were profitable days for the Chain, the Wheel, and the Gate. While the other Helltroopers waded into the deserts of Khoursir and Khemhara, we battled in the forests of Vaslor. We had it easy. I hate deserts.
 
-“Thinking his vampiric power would save him, Count Rhodar von Glauer waited until he was fulsome in his strength before trying to extend his dark realm into Caelian territory. But we know how to deal with vampires. The black and gold standard of the von Glauer family reads, “I do the devil’s work.” We can attest to that. We lost many souls to that long siege, but in the end, we staked him. An old woman howled at us saying, “He is the land!” but we hear that stuff all the time. We sacked his castle, burned his forest and orchards, and delivered his staff to the emperor. That was harder than it sounds. Finger had to drop it in one of his bottomless sacks to stop the mists from coming. What the emperor will do with it, I don’t know. I fear that staff may hold more than the power to make the mist.”
+“Thinking his vampiric power would save him, Count Rhodar von Glauer waited until he was fulsome in his strength before trying to extend his dark realm into Келіан (Caelian) territory. But we know how to deal with vampires. The black and gold standard of the von Glauer family reads, “I do the devil’s work.” We can attest to that. We lost many souls to that long siege, but in the end, we staked him. An old woman howled at us saying, “He is the land!” but we hear that stuff all the time. We sacked his castle, burned his forest and orchards, and delivered his staff to the emperor. That was harder than it sounds. Finger had to drop it in one of his bottomless sacks to stop the mists from coming. What the emperor will do with it, I don’t know. I fear that staff may hold more than the power to make the mist.”
 
 - Dancer, Chronicler of the Chain of Acheron, Heroes 228`
 		},
@@ -54,7 +54,7 @@ How his return might be possible is not clear, but it would surely involve the R
 		{
 			id: 'count-rhodar-info-4',
 			name: 'Count Rhodar’s Languages',
-			description: 'Rhodar speaks Caelian and Vaslorian.'
+			description: 'Rhodar speaks Келіан (Caelian) and Васлоріан (Vaslorian).'
 		}
 	],
 	malice: [

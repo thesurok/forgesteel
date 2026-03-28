@@ -16,7 +16,7 @@ export class ConsumableData {
 		crafting: FactoryLogic.createProject({
 			description: 'Yields 1d3 darts, or three darts if crafted by a shadow',
 			prerequisites: 'Three vials of black ash from the College of Black Ash',
-			source: 'Texts or lore in Szetch',
+			source: 'Texts or lore in Сзетч (Szetch)',
 			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -36,7 +36,7 @@ As a maneuver, you can make a ranged free strike using a black ash dart. The str
 		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A ruby purloined from a vampire',
-			source: 'Texts or lore in Proto-Ctholl',
+			source: 'Texts or lore in Прото-Ктолл (Proto-Ctholl)',
 			characteristic: [ Characteristic.Agility, Characteristic.Reason ],
 			goal: 45
 		}),
@@ -51,7 +51,7 @@ As a maneuver, you can make a ranged free strike using a black ash dart. The str
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Oil ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of demon honey',
-			source: 'Texts or lore in Kalliak',
+			source: 'Texts or lore in Калліак (Kalliak)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -66,7 +66,7 @@ As a maneuver, you can make a ranged free strike using a black ash dart. The str
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of witherite crystal',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -81,7 +81,7 @@ As a maneuver, you can make a ranged free strike using a black ash dart. The str
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Oil ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One vial of fire giant blood',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -101,7 +101,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.`
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A half-pound of seagrass',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -116,7 +116,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.`
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of costmary leaves',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -131,7 +131,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.`
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One imp\'s tongue',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -147,7 +147,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.`
 		crafting: FactoryLogic.createProject({
 			description: 'Yields 1d3 teeth',
 			prerequisites: 'A leftover carcass of a lachomp meal',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ]
 		}),
 		effect: `
@@ -166,7 +166,7 @@ As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to s
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Three sheets of glass, sunbaked gold dust',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -181,7 +181,7 @@ As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to s
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A strip of starmetal coated in the blood of the item\'s crafter',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Reason ],
 			goal: 45
 		}),
@@ -199,7 +199,7 @@ While you have line of effect to your homunculus, you can use a maneuver to issu
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cup of rainwater from a sacred fey grove',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 30
 		}),
@@ -214,7 +214,7 @@ While you have line of effect to your homunculus, you can use a maneuver to issu
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten ounces of rainwater from a sacred fey grove; one ounce of undead flesh',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -232,7 +232,7 @@ Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-s
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten ounces of rainwater from a sacred fey grove, a spool of copper wire',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -250,7 +250,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The roots of a just-budded nightshade',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason ],
 			goal: 45
 		}),
@@ -266,7 +266,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		crafting: FactoryLogic.createProject({
 			description: 'Yields 1d6 + 1 snapdragons',
 			prerequisites: 'Fifty snapdragon seeds',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 45
 		}),
@@ -285,7 +285,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The breath of a mystic sage captured at sunrise',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
 			goal: 90
 		}),
@@ -300,7 +300,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One vial of pure bovine essence',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -315,7 +315,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A chocolate made by a gnome confectioner',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -330,7 +330,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of sap from a tree damaged by psionic fire',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -346,7 +346,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		crafting: FactoryLogic.createProject({
 			description: 'Yields 1d3 vials',
 			prerequisites: 'Several strands of hag hair',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
 			goal: 90
 		}),
@@ -362,7 +362,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		crafting: FactoryLogic.createProject({
 			description: 'Yields 1d3 doses',
 			prerequisites: 'A cup of algae from glacial water',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -377,7 +377,7 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Scroll ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A sheet of paper infused with the dust of a painite',
-			source: 'Texts or lore in the First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
 			goal: 90
 		}),
@@ -395,7 +395,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A shard of prismacore, an ounce of ferrous metal',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -417,7 +417,7 @@ If you pull a size 1T object adjacent to you, you can catch it.`
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A signed agreement with a ghost, a large obsidian disk',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 90
 		}),
@@ -436,7 +436,7 @@ If you pull a size 1T object adjacent to you, you can catch it.`
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A grub steeped in voiceless talker bile',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -454,7 +454,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A month’s lifespan from the creator or another willing creature, ground sapphire',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -469,7 +469,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One vial of archdevil’s blood, an expired contract',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -484,7 +484,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A brief period of contact with the creature the effigy is tied to',
-			source: 'Texts or lore in Khemharic',
+			source: 'Texts or lore in Кемхарік (Khemharic)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 120
 		}),
@@ -499,7 +499,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of scrapings from a coven’s used cauldron',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -514,7 +514,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A time crystal',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -534,7 +534,7 @@ As a maneuver, you make a ranged free strike using the Timesplitter, which shatt
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A small quartz',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -549,7 +549,7 @@ As a maneuver, you make a ranged free strike using the Timesplitter, which shatt
 		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of troll’s blood, raw honey',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
 			goal: 180
 		}),
@@ -568,7 +568,7 @@ As a maneuver, you make a ranged free strike using the Timesplitter, which shatt
 		keywords: [ AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The captured breath of a god, an ounce of condensed dreams',
-			source: 'Texts or lore in the First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
 			goal: 360
 		}),
@@ -586,7 +586,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ounce of the blood of Saint Elspeth',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Presence ],
 			goal: 360
 		}),
@@ -601,7 +601,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One vial of sacred ink, blessed parchment',
-			source: 'Reference materials in the First Language from the Infinite Library detailing incomplete instructions for building a sun',
+			source: 'Reference materials in Перша мова (The First Language) from the Infinite Library detailing incomplete instructions for building a sun',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
 			goal: 360
 		}),
@@ -616,7 +616,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 		keywords: [ AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A year’s lifespan from the creator or another willing creature, the laughter of a young hero',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [ Characteristic.Reason, Characteristic.Presence ],
 			goal: 360
 		}),

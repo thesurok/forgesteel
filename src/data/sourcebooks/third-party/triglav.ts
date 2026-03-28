@@ -504,7 +504,7 @@ The thrill of the hunt. The quickened beating of your victim's heart. The fear i
 
 As a vampire, you possess supernatural abilities that make you an excellent hunter. You are swift, strong, and you wield powers making your enemies unable to escape your thirst.`,
 	type: 'standard',
-	subclassName: 'Bloodline',
+	subclassName: 'Родовід',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Might, Characteristic.Presence],

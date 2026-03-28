@@ -24,7 +24,7 @@ Kilns are magical warriors and guardians of the Undermind. The omnipresent roots
 
 As a kiln, you arrive to stoke the flame wherever the spark of opportunity presents itself, empowering your allies to devastate your enemies. Should the need arise, however, you’re well-equipped to put those who stand against you to the pyre yourself.`,
 	type: 'standard',
-	subclassName: 'Cadre',
+	subclassName: 'Кадр',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Agility, Characteristic.Reason]

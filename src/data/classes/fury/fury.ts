@@ -18,7 +18,7 @@ export const fury: HeroClass = {
 
 Як фурія, ви нищите ворогів приголомшливою міццю, кидаєте себе й супротивників по полю бою та стаєте сильнішими, коли зростає ваша лють. Природа не знає поняття справедливості — і ви також.`,
 	type: 'standard',
-	subclassName: 'Primordial Aspect',
+	subclassName: 'Первісний аспект',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Might, Characteristic.Agility]

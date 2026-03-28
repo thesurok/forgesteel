@@ -58,7 +58,7 @@ export const orc: Ancestry = {
 						id: 'orc-feature-2-5',
 						name: 'Безперервність',
 						description: 'Ваша кров’яна магія забезпечує вас постійним припливом адреналіну.',
-						conditions: [ ConditionType.Slowed ]
+						conditions: [ConditionType.Slowed]
 					}),
 					value: 2
 				}
@@ -67,5 +67,5 @@ export const orc: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Орк', 'Дика природа, комунальний, творчий.', CultureType.Ancestral, EnvironmentData.wilderness, OrganizationData.communal, UpbringingData.creative, 'Калліак')
+	culture: FactoryLogic.createCulture('Орк', 'Дика природа, комунальний, творчий.', CultureType.Ancestral, EnvironmentData.wilderness, OrganizationData.communal, UpbringingData.creative, 'Калліак (Kalliak)')
 };

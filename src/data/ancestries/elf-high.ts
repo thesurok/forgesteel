@@ -73,7 +73,7 @@ export const highElf: Ancestry = {
 						id: 'high-elf-feature-2-5',
 						name: 'Нескінченний розум',
 						description: 'Ваш розум дозволяє зберігати концентрацію в будь-якій ситуації.',
-						conditions: [ ConditionType.Dazed ]
+						conditions: [ConditionType.Dazed]
 					}),
 					value: 2
 				}
@@ -82,5 +82,5 @@ export const highElf: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Високий ельф', 'Відлюдний, бюрократичний, військовий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.martial, 'Hyrallic')
+	culture: FactoryLogic.createCulture('Високий ельф', 'Відлюдний, бюрократичний, військовий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.martial, 'Гіраллік (Hyrallic)')
 };

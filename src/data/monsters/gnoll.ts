@@ -44,7 +44,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 		{
 			id: 'gnoll-info-6',
 			name: 'Gnoll Languages',
-			description: 'Most gnolls speak Tholl. Gnoll carnages and other older gnolls usually also know Variac.'
+			description: 'Most gnolls speak Толл (Tholl). Gnoll carnages and other older gnolls usually also know Варіак (Variac).'
 		}
 	],
 	malice: [

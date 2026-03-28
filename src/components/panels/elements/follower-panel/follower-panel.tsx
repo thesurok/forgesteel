@@ -32,7 +32,7 @@ export const FollowerPanel = (props: Props) => {
 								{props.follower.characteristics.map(ch => <Field key={ch.characteristic} orientation='vertical' label={ch.characteristic} value={ch.value} />)}
 							</StatsRow>
 							<Field label='Skills' value={props.follower.skills.sort().join(', ') || '(none)'} />
-							<Field label='Languages' value={[ 'Caelian', ...props.follower.languages ].sort().join(', ') || '(none)'} />
+							<Field label='Languages' value={[ 'Келіан (Caelian)', ...props.follower.languages ].sort().join(', ') || '(none)'} />
 						</>
 						: null
 				}

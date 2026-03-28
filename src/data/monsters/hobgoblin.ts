@@ -47,14 +47,14 @@ Many hobgoblin settlements constantly and aggressively test each other’s bound
 			id: 'hobgoblin-info-6',
 			name: 'Slaughter Demon',
 			description: `
-When evil hobgoblins who embrace their fiendish heritage need to wipe an enemy off the map, their war mages ritualistically beseech an archdevil for the service of a grack’tanar, known as a slaughter demon in the Caelian language. Once summoned, this towering, serpent-bodied, six-clawed demon slithers to war alongside the hobgoblins who summoned them.
+When evil hobgoblins who embrace their fiendish heritage need to wipe an enemy off the map, their war mages ritualistically beseech an archdevil for the service of a grack’tanar, known as a slaughter demon in the Келіан (Caelian) language. Once summoned, this towering, serpent-bodied, six-clawed demon slithers to war alongside the hobgoblins who summoned them.
 
 Devils captured the grack’tanars eons ago. Broken, these demons wait for a call to war, hungry and frothing in the Seven Cities of Hell. Slaughter demons are eager to kill and please their devil captors so they might be sent out again, and they rarely turn on hobgoblins unless they fall into lethe (see the Demons section).`
 		},
 		{
 			id: 'hobgoblin-info-7',
 			name: 'Hobgoblin Languages',
-			description: 'Most hobgoblins speak Anjali, Caelian, and Szetch.'
+			description: 'Most hobgoblins speak Анжалі (Anjali), Келіан (Caelian), and Сзетч (Szetch).'
 		}
 	],
 	malice: [

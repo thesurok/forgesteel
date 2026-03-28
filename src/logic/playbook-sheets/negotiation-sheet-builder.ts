@@ -1,5 +1,6 @@
 import { Negotiation } from '@/models/negotiation';
 import { NegotiationSheet } from '@/models/classic-sheets/negotiation-sheet';
+import { COMMON_LANGUAGE_NAME, normalizeLanguageName } from '@/utils/language-names';
 
 export class NegotiationSheetBuilder {
 	static buildNegotiationSheet = (negotiation: Negotiation): NegotiationSheet => {
@@ -18,11 +19,12 @@ export class NegotiationSheetBuilder {
 
 		let nativeFound = false;
 		negotiation.languages.forEach(lang => {
-			if (lang !== 'Caelian' && !nativeFound) {
-				sheet.languages.push(`${lang} (Native)`);
+			const normalizedLanguage = normalizeLanguageName(lang);
+			if (normalizedLanguage !== COMMON_LANGUAGE_NAME && !nativeFound) {
+				sheet.languages.push(`${normalizedLanguage} (Native)`);
 				nativeFound = true;
 			} else {
-				sheet.languages.push(lang);
+				sheet.languages.push(normalizedLanguage);
 			}
 		});
 

@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const mountain: Kit = {
 	id: 'kit-mountain',
-	name: 'Mountain',
-	description: 'The Mountain kit does exactly what it says on the tin. You don heavy armor and raise a heavy weapon to stand strong against your foes, quickly demolishing them when it\'s your turn to strike.',
+	name: 'Гора',
+	description: 'Набір «Гора» робить саме те, що обіцяє назва. Ви вдягаєте важку броню й берете важку зброю, щоб непохитно стояти проти ворогів і швидко трощити їх, коли настає ваш час бити.',
 	type: '',
 	armor: [KitArmor.Heavy],
 	weapon: [KitWeapon.Heavy],
@@ -24,8 +24,8 @@ export const mountain: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-mountain-signature',
-				name: 'Pain For Pain',
-				description: 'An enemy who tagged you will pay for that.',
+				name: 'Біль за біль',
+				description: 'Ворог, який вас зачепив, дорого за це заплатить.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,12 +35,12 @@ export const mountain: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 damage + С or A damage',
-							tier2: '5 damage + С or A damage',
-							tier3: '9 damage + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your Might or Agility score (your choice).')
+					FactoryLogic.createAbilitySectionText('Якщо ціль завдавала вам шкоди з кінця вашого минулого ходу, цей удар завдає додаткової шкоди, рівної вашому показнику Сили або Ловкості на ваш вибір.')
 				]
 			})
 		})

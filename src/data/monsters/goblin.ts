@@ -11,7 +11,7 @@ export const goblin: MonsterGroup = {
 	id: 'monster-group-goblin',
 	name: 'Goblin',
 	description: `
-Known among themselves as rogabrin, meaning “more of us” in their Szetch language, goblins are one of the most numerous humanoid species in the world. They can be found across many lands, have developed countless distinct cultures, and dare to venture into environments that few other humanoids are willing to hazard.
+Known among themselves as rogabrin, meaning “more of us” in their Сзетч (Szetch) language, goblins are one of the most numerous humanoid species in the world. They can be found across many lands, have developed countless distinct cultures, and dare to venture into environments that few other humanoids are willing to hazard.
 
 Their long arms and prehensile toes make goblins particularly well adapted to environments requiring climbing, and they live equally comfortably in treetop cities as in subterranean realms filled with stalactites, ledges, and chasms. However, just as many prefer to dwell in tight-knit neighborhoods within diverse cities. Many of those goblins who cross swords with adventuring heroes are the worst of their society—thieves and murderers shunned by their own people.`,
 	picture: null,
@@ -49,7 +49,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 		{
 			id: 'goblin-info-7',
 			name: 'Goblin Languages',
-			description: 'Most goblins speak Caelian and Szetch.'
+			description: 'Most goblins speak Келіан (Caelian) and Сзетч (Szetch).'
 		}
 	],
 	malice: [

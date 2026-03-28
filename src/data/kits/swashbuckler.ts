@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const swashbuckler: Kit = {
 	id: 'kit-swashbuckler',
-	name: 'Swashbuckler',
-	description: 'If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the Swashbuckler kit. This is a great kit for heroes who want to be master duelists.',
+	name: 'Бретер',
+	description: 'Якщо ви хочете бути рухливими й завдавати багато шкоди ближніми ударами, вам підійде набір «Бретер». Це чудовий набір для героїв, які прагнуть стати майстрами дуелі.',
 	type: '',
 	armor: [KitArmor.Light],
 	weapon: [KitWeapon.Medium],
@@ -24,8 +24,8 @@ export const swashbuckler: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-swashbuckler-signature',
-				name: 'Fancy Footwork',
-				description: 'All combat is a dance - and you\'ll be the one leading.',
+				name: 'Вишукані па',
+				description: 'Кожен бій - це танець, і ведете в ньому саме ви.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,12 +35,12 @@ export const swashbuckler: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '5 + С or A damage; push 1',
-							tier3: '8 + С or A damage; push 2'
+							tier1: '3 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди; штовхнути на 1',
+							tier3: '8 + С або Л шкоди; штовхнути на 2'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('You can shift into any square the target leaves after you push them')
+					FactoryLogic.createAbilitySectionText('Після того як ви штовхнули ціль, ви можете зміститися в будь-яку клітинку, яку вона залишила.')
 				]
 			})
 		})

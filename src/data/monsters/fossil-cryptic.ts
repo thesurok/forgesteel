@@ -30,7 +30,7 @@ export const fossilCryptic: MonsterGroup = {
 		{
 			id: 'fossil-cryptic-info-4',
 			name: 'Fossil Cryptic Languages',
-			description: 'Many fossil cryptics speak Phorialtic, but they are known to also use the ancient languages of the ruins they inhabit.'
+			description: 'Many fossil cryptics speak Форіалтик (Phorialtic), but they are known to also use the ancient languages of the ruins they inhabit.'
 		}
 	],
 	malice: [

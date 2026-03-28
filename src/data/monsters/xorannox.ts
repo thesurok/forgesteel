@@ -52,7 +52,7 @@ themselves becoming a newly hatched overmind’s first victim.`
 			id: 'xorannox-info-6',
 			name: 'Xorannox the Tyract',
 			description: `
-Xorannox (ZOR-ah-nocks) rules as Lord of the White Tower, an isolated, multilevel finger of alabaster stone connecting to the World Below. He is commonly known as the Tyract, an ancient Za’hariax word that literally translates as “a king who rules with his teeth”—and the overmind indeed consumes those who displease him.
+Xorannox (ZOR-ah-nocks) rules as Lord of the White Tower, an isolated, multilevel finger of alabaster stone connecting to the World Below. He is commonly known as the Tyract, an ancient За’гаріакс (Za’hariax) word that literally translates as “a king who rules with his teeth”—and the overmind indeed consumes those who displease him.
 
 Xorannox is chief of the Grasp, a secret organization that seeks to overthrow the voiceless talkers’ great empire and place Xorannox above all, first as king, then as god. The Tyract is a master strategist, always one step ahead of his enemies. Heroes may be surprised to discover their allies are members of the Grasp. When they meet Xorannox, he’s delighted! He loves treating with humanoids! They have the same enemies, after all.
 
@@ -61,7 +61,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 		{
 			id: 'xorannox-info-7',
 			name: 'Xorannox\'s Languages',
-			description: 'Overminds typically speak Za’hariax. Xorannox also speaks Caelian, Hyrallic, and Voll.'
+			description: 'Overminds typically speak За’гаріакс (Za’hariax). Xorannox also speaks Келіан (Caelian), Гіраллік (Hyrallic), and Волл (Voll).'
 		}
 	],
 	malice: [

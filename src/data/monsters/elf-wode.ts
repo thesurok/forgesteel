@@ -58,7 +58,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 		{
 			id: 'elf-wode-info-7',
 			name: 'Wode Elf Languages',
-			description: 'Most wode elves speak Caelian and Yllyric.'
+			description: 'Most wode elves speak Келіан (Caelian) and Іллірик (Yllyric).'
 		}
 	],
 	malice: [

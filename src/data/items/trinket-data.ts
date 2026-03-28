@@ -13,12 +13,12 @@ export class TrinketData {
 	static colorCloakBlue: Item = FactoryLogic.createItem({
 		id: 'item-color-cloak-blue',
 		name: 'Color Cloak (blue)',
-		description: 'This silky-blue hooded cloak is emblazoned with a golden Anjali sigil meaning "ice."',
+		description: 'This silky-blue hooded cloak is emblazoned with a golden Анжалі (Anjali) sigil meaning "ice."',
 		type: ItemType.Trinket1st,
 		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of blue ichor, soul chalk',
-			source: 'Licensing agreements in Anjali',
+			source: 'Licensing agreements in Анжалі (Anjali)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -54,12 +54,12 @@ export class TrinketData {
 	static colorCloakRed: Item = FactoryLogic.createItem({
 		id: 'item-color-cloak-red',
 		name: 'Color Cloak (red)',
-		description: 'This woolen red hooded cloak is emblazoned with a golden Anjali sigil meaning "fire."',
+		description: 'This woolen red hooded cloak is emblazoned with a golden Анжалі (Anjali) sigil meaning "fire."',
 		type: ItemType.Trinket1st,
 		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of red ichor, soul chalk',
-			source: 'Licensing agreements in Anjali',
+			source: 'Licensing agreements in Анжалі (Anjali)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -95,12 +95,12 @@ export class TrinketData {
 	static colorCloakYellow: Item = FactoryLogic.createItem({
 		id: 'item-color-cloak-yellow',
 		name: 'Color Cloak (yellow)',
-		description: 'This rubbery, yellow hooded cloak is emblazoned with a golden Anjali sigil meaning "lightning."',
+		description: 'This rubbery, yellow hooded cloak is emblazoned with a golden Анжалі (Anjali) sigil meaning "lightning."',
 		type: ItemType.Trinket1st,
 		keywords: [AbilityKeyword.Magic, AbilityKeyword.Neck],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pint of yellow ichor, soul chalk',
-			source: 'Licensing agreements in Anjali',
+			source: 'Licensing agreements in Анжалі (Anjali)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -141,7 +141,7 @@ export class TrinketData {
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One humanoid femur, one bar of lead laced with starmetal',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -170,12 +170,12 @@ export class TrinketData {
 	static displacingReplacementBracer: Item = FactoryLogic.createItem({
 		id: 'item-displacing-replacement-bracer',
 		name: 'Displacing Replacement Bracer',
-		description: 'A wooden bangle is etched with an ambigram sigil of the Zaliac word for "transfer."',
+		description: 'A wooden bangle is etched with an ambigram sigil of the Заліак (Zaliac) word for "transfer."',
 		type: ItemType.Trinket1st,
 		keywords: [AbilityKeyword.Arms, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Petrified wood from a tree that has not been observed since falling',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Reason],
 			goal: 150
 		}),
@@ -206,7 +206,7 @@ export class TrinketData {
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Three withered mundane vines, a tree\'s blessing',
-			source: 'Songs in Yllyric',
+			source: 'Songs in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 100
 		}),
@@ -222,7 +222,7 @@ export class TrinketData {
 							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'Одна істота або предмет',
 							sections: [
-								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
+								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Іллірик (Yllyric), causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
 							]
 						})
 					})
@@ -239,7 +239,7 @@ export class TrinketData {
 		keywords: [AbilityKeyword.Hands, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A humanoid\'s shadow disconnected from its source',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Reason],
 			goal: 150
 		}),
@@ -257,7 +257,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 		keywords: [AbilityKeyword.Hands, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten gecko tails',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 100
 		}),
@@ -272,7 +272,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One broken contract, one ingot of steel',
-			source: 'Texts or lore in Anjali and Caelian',
+			source: 'Texts or lore in Анжалі (Anjali) and Келіан (Caelian)',
 			characteristic: [Characteristic.Might, Characteristic.Reason],
 			goal: 150
 		}),
@@ -306,7 +306,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One used death shroud',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -337,7 +337,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One uncut opal',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -352,7 +352,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The tail of a size 3 or larger rattlesnake',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -370,7 +370,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 		keywords: [AbilityKeyword.Feet, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One battered gold chain of at least fifty links',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -389,7 +389,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A vial of pitling spit, and a jar of human blood',
-			source: 'Texts or lore in Tholl',
+			source: 'Texts or lore in Толл (Tholl)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -404,7 +404,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 		keywords: [AbilityKeyword.Waist, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A giant’s tooth',
-			source: 'Texts or lore in High Kuric',
+			source: 'Texts or lore in Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -435,7 +435,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 		keywords: [AbilityKeyword.Neck, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An eyeball from a pirate captain who drowned at sea',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -466,7 +466,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Blood-soaked chains that restrained a demon for at least 30 days',
-			source: 'Texts or lore in Tholl',
+			source: 'Texts or lore in Толл (Tholl)',
 			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 300
 		}),
@@ -484,7 +484,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: ' One measure of pure crystal, a jarred memory of true joy',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -499,7 +499,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The finger bone of a creature with telepathy, three black opals',
-			source: ' Texts or lore in Ullorvic',
+			source: ' Texts or lore in Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -530,7 +530,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The gold nib of a fountain pen used to sign a major treaty or compact, a ruby once worn by a devil',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 300
 		}),
@@ -545,7 +545,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Neck, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A gallon of swamp water, the limbs of four different newts',
-			source: ' Texts or lore in Yllyric',
+			source: ' Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -560,7 +560,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: ': A piece of polished obsidian, seven flawless pea-sized diamonds',
-			source: ' Texts or lore in Variac',
+			source: ' Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -575,7 +575,7 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A coin minted during an earthquake',
-			source: ' Texts or lore in Caelian,',
+			source: ' Texts or lore in Келіан (Caelian),',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -613,7 +613,7 @@ The coin must be picked up before it can be used again. If any creature picks up
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Twenty lightning bolts frozen in time',
-			source: 'Texts or lore in the First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 300
 		}),
@@ -635,7 +635,7 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 		keywords: [AbilityKeyword.Arms, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The severed hand of a giant',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -663,7 +663,7 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 		keywords: [AbilityKeyword.Magic, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spool of silk, a plank of stage wood, and the soul of a famous performer',
-			source: 'A record of a soulbinder ritual in Anjali',
+			source: 'A record of a soulbinder ritual in Анжалі (Anjali)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -703,7 +703,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An overmind egg, the skin of any shapeshifter',
-			source: ': Texts or lore in the First Language',
+			source: ': Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -734,7 +734,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spool of mindspider silk, an ingot of white gold',
-			source: 'Texts or lore in Higaran',
+			source: 'Texts or lore in Хігаран (Higaran)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -770,7 +770,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		keywords: [AbilityKeyword.Ring, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A wafer of gallium arsenide',
-			source: 'Texts or lore in Mindspeech',
+			source: 'Texts or lore in Мислемова (Mindspeech)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -813,7 +813,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		keywords: [AbilityKeyword.Ring, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One-third of a pound of diamond dust, one nugget of pure silver',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Agility, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -845,7 +845,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A king’s cape and a solid gold flagpole',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -867,7 +867,7 @@ At the end of each of your turns, each ally within 10 squares of you can make a 
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The powdered jawbone of a powerful spellcaster, wood from a tree marking multiple graves',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),
@@ -891,7 +891,7 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A mundane broom, a hag’s hut, and a hag’s kiss',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),
@@ -909,7 +909,7 @@ The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s
 		keywords: [AbilityKeyword.Arms, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Steel alloy, one fine-cut topaz',
-			source: 'Texts or lore in Mindspeech',
+			source: 'Texts or lore in Мислемова (Mindspeech)',
 			characteristic: [Characteristic.Agility, Characteristic.Presence],
 			goal: 600
 		}),
@@ -951,7 +951,7 @@ The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s
 		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A king’s deathbed veil and a solid brass flagpole',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 600
 		}),

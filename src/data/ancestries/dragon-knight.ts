@@ -248,5 +248,5 @@ export const dragonKnight: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Драконячий лицар', 'Відлюдний, бюрократичний, військовий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.martial, 'Vastariax')
+	culture: FactoryLogic.createCulture('Драконячий лицар', 'Відлюдний, бюрократичний, військовий.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.bureaucratic, UpbringingData.martial, 'Вастаріакс (Vastariax)')
 };

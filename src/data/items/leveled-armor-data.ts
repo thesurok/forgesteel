@@ -17,7 +17,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Light, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Five rabid honey badger pelts, the quills of a hedgehog',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -103,7 +103,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Heavy, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A set of wings from a flying carp, a set of chain mail rusted by seawater',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -184,7 +184,7 @@ export class LeveledArmorData {
 		keywords: [ AbilityKeyword.Magic, KitArmor.Medium ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A giant scarab beetle carapace',
-			source: 'Texts or lore in Phaedran',
+			source: 'Texts or lore in Федран (Phaedran)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -245,7 +245,7 @@ export class LeveledArmorData {
 		keywords: [ AbilityKeyword.Magic, KitArmor.Shield ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A ballad of heroism, two ingots of sunmetal',
-			source: 'Songs in High Rhyvian',
+			source: 'Songs in Високий Ривіан (High Rhyvian)',
 			characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
 			goal: 450
 		}),
@@ -315,7 +315,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Medium, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The eyes of a time raider who died valiantly in battle',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
 			goal: 450
 		}),
@@ -385,7 +385,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Light, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten pages from each of a hundred different books',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -474,7 +474,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Light, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The will of a deceased person with no heirs',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [ Characteristic.Agility, Characteristic.Presence ],
 			goal: 450
 		}),
@@ -542,7 +542,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Heavy, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ten steel gears from an ancient construct',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -610,7 +610,7 @@ export class LeveledArmorData {
 		keywords: [ KitArmor.Heavy, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A large vessel of astral ice, a pint of supercooled mercury',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -714,7 +714,7 @@ export class LeveledArmorData {
 		keywords: [ AbilityKeyword.Psionic, KitArmor.Shield ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Three ingots of steel, six crystals that resonate with psionic power',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),

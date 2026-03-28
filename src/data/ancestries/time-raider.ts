@@ -178,5 +178,5 @@ export const timeRaider: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Рейдер Часу', 'Кочовий, комунальний, бойовий.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.martial, 'Волл')
+	culture: FactoryLogic.createCulture('Рейдер Часу', 'Кочовий, комунальний, бойовий.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.martial, 'Волл (Voll)')
 };

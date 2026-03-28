@@ -38,7 +38,7 @@ export const troll: MonsterGroup = {
 		{
 			id: 'troll-info-7',
 			name: 'Troll Languages',
-			description: 'Most trolls speak High Kuric or Variac, while a few also know Caelian. Trolls are notably difficult to negotiate with unless heroes can provide more appetizing food than themselves.'
+			description: 'Most trolls speak Високий Курик (High Kuric) or Варіак (Variac), while a few also know Келіан (Caelian). Trolls are notably difficult to negotiate with unless heroes can provide more appetizing food than themselves.'
 		}
 	],
 	malice: [

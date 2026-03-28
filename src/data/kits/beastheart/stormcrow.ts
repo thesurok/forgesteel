@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const stormcrow: Kit = {
 	id: 'kit-stormcrow',
-	name: 'Stormcrow',
-	description: 'Your gear is inscribed with elemental runes to channel the raging primordial storm within you, bringing blizzards, hurricanes, or firestorms to carry you around the battlefield. This kit is most often adopted by Sparks, although beasthearts with any wild nature can benefit from the speed that it grants.',
+	name: 'Штормова ворона',
+	description: 'Ваше спорядження вкрите елементальними рунами, що проводять крізь вас шалену первісну бурю, викликаючи хуртовини, урагани чи вогняні бурі, які носять вас полем бою. Цей набір найчастіше обирають звіросерця, що покладаються на стихійну силу, хоча швидкість, яку він дає, стане в пригоді звіросерцю будь-якої дикої вдачі.',
 	type: 'Beastheart',
 	armor: [KitArmor.Light],
 	weapon: [KitWeapon.Light],
@@ -24,17 +24,17 @@ export const stormcrow: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-stormcrow-1',
-				name: 'Energy Blast',
-				description: 'You call upon the elements to do your bidding.',
+				name: 'Енергетичний вибух',
+				description: 'Ви закликаєте стихії виконати вашу волю.',
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1 })],
 				target: 'Кожен ворог у зоні',
 				cost: 'signature',
 				sections: [
-					FactoryLogic.createAbilitySectionText('M cold, fire, lightning, or sonic damage (your choice)'),
+					FactoryLogic.createAbilitySectionText('С холодної, вогняної, блискавичної або звукової шкоди (на ваш вибір)'),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'The distance becomes 3 cube within 1.'
+						effect: 'Дистанція стає кубом 3 у межах 1.'
 					})
 				]
 			})

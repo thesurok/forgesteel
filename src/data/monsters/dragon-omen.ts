@@ -38,7 +38,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 		{
 			id: 'dragon-omen-info-4',
 			name: 'Omen Dragon Languages',
-			description: 'An omen dragon speaks with the voices of all the souls they have collected. In addition to Vastariax, the dragon speaks and understands whatever languages those souls knew in life.'
+			description: 'An omen dragon speaks with the voices of all the souls they have collected. In addition to Вастаріакс (Vastariax), the dragon speaks and understands whatever languages those souls knew in life.'
 		}
 	],
 	malice: [

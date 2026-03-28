@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const martialArtist: Kit = {
 	id: 'kit-martial-artist',
-	name: 'Martial Artist',
-	description: 'If you want to be fast in a fight, then Martial Artist is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed strikes against opponents, and allows you to be the ultimate skirmisher.',
+	name: 'Майстер бойових мистецтв',
+	description: 'Якщо ви хочете бути швидкими в бою, набір «Майстер бойових мистецтв» саме для вас. Не обтяжений зброєю чи бронею, цей стиль винагороджує швидкі, зосереджені беззбройні удари й робить вас неперевершеним застрільником.',
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Unarmed],
@@ -23,8 +23,8 @@ export const martialArtist: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-martial-artist-signature',
-				name: 'Battle Grace',
-				description: 'You feint to move your enemies into perfect position.',
+				name: 'Бойова грація',
+				description: 'Ви використовуєте фінт, щоб пересунути ворогів у вигідне для себе положення.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -34,12 +34,12 @@ export const martialArtist: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '6 + С or A damage; you swap places with the target',
-							tier3: '9 + С or A damage; you swap places with the target'
+							tier1: '3 + С або Л шкоди',
+							tier2: '6 + С або Л шкоди; ви міняєтеся місцями з ціллю',
+							tier3: '9 + С або Л шкоди; ви міняєтеся місцями з ціллю'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('If you obtain a tier 2 or tier 3 outcome and can\'t swap places with the target because one or both of you is too big to fit into the swapped space, you both remain in your original spaces and the target takes 1 extra damage.')
+					FactoryLogic.createAbilitySectionText('Якщо ви отримали результат 2 або 3 рівня, але не можете помінятися місцями з ціллю, бо хтось із вас завеликий для нового простору, ви обоє лишаєтеся на місцях, а ціль отримує додаткову 1 шкоду.')
 				]
 			})
 		})

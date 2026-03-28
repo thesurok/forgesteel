@@ -36,7 +36,7 @@ export const olothec: MonsterGroup = {
 		{
 			id: 'olothec-info-5',
 			name: 'Olothec Languages',
-			description: 'Most olothec communicate telepathically using Mindspeech and speak Urollialic. Many also know Old Variac and Caelian, but converse in those languages only when necessary.'
+			description: 'Most olothec communicate telepathically using Мислемова (Mindspeech) and speak Уролліалік (Urollialic). Many also know Старий Варіак (Old Variac) and Келіан (Caelian), but converse in those languages only when necessary.'
 		}
 	],
 	malice: [

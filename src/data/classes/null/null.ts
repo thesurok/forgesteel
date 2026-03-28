@@ -21,7 +21,7 @@ export const nullClass: HeroClass = {
 
 "Будь-яку зброю можна звернути проти руки, яка її тримає." — Ардашир`,
 	type: 'standard',
-	subclassName: 'Tradition',
+	subclassName: 'Традиція',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Agility, Characteristic.Intuition]

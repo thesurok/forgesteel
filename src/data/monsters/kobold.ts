@@ -55,7 +55,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 		{
 			id: 'kobold-info-8',
 			name: 'Kobold Languages',
-			description: 'Most kobolds speak Kethaic and can understand Caelian.'
+			description: 'Most kobolds speak Кетайк (Kethaic) and can understand Келіан (Caelian).'
 		}
 	],
 	malice: [

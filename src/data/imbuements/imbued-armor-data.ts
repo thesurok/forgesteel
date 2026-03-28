@@ -13,7 +13,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lock of hair from a fey, taken in amicable bargain',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -29,7 +29,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lock of hair from a fey, taken in violence',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -45,7 +45,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Elemental sand left behind when an elemental enters Orden from Quintessence',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -172,7 +172,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The blood of a lycanthrope',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -180,7 +180,7 @@ export class ImbuedArmorData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-disguise',
-				name: 'Disguise',
+				name: 'Маскування',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
 					FactoryLogic.createAbilitySectionText('You cause this armor to take the form of any type of clothing that you have been in the presence of—a noble’s dress, a guard’s uniform, a cultist’s robes, and so forth. The armor loses none of its protective qualities while transformed into other clothing.')
@@ -193,7 +193,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Fur from a lightbender',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -214,7 +214,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a dragon',
-			source: 'Texts or lore in The First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -230,7 +230,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A rose from the magical hedge of a hag',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -246,7 +246,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Ichor from a destroyed wraith',
-			source: 'Texts or lore in Szetch',
+			source: 'Texts or lore in Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -262,7 +262,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Rare crystals that resonate with psionic energy, often found at sites of psionic experimentation',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -278,7 +278,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The feather of a falcon slain as it was diving',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -295,7 +295,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A strip of starmetal struck by lightning',
-			source: 'Texts or lore in Ullorvic',
+			source: 'Texts or lore in Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -318,7 +318,7 @@ export class ImbuedArmorData {
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A mirror blessed by a priest of a god of magic',
-			source: 'Texts or lore in The First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -342,7 +342,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The essence of an elemental who is still alive',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -469,7 +469,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a dead dragon',
-			source: 'Texts or lore in Vastariax',
+			source: 'Texts or lore in Вастаріакс (Vastariax)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -498,7 +498,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A palm-sized crystal grown in the subterranean lair of an overmind',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -514,7 +514,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from a mature dragon',
-			source: 'Texts or lore in The First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -530,7 +530,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The remnants of a slain ooze',
-			source: 'Texts or lore in Szetch',
+			source: 'Texts or lore in Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -546,7 +546,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A fresh crystalline scale from a gemstone dragon',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -562,7 +562,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A complex, hand-engineered set of brass gears inscribed with runes in silver dust',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -578,7 +578,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The sweat of a troll',
-			source: 'Texts or lore in Kalliak',
+			source: 'Texts or lore in Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -599,7 +599,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pound of volcanic obsidian, formed naturally as a single piece',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -615,7 +615,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The armor must be laid out under a clear sky as a comet passes over',
-			source: 'Texts or lore in Ullorvic',
+			source: 'Texts or lore in Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -632,7 +632,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The wing of an archdevil',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -648,7 +648,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An offering of gems, coins, and art stolen from a dragon’s hoard, sacrificed in ritual fire',
-			source: 'Texts or lore in Vastariax',
+			source: 'Texts or lore in Вастаріакс (Vastariax)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -680,7 +680,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Repurposed metal plates from a servok war engine',
-			source: 'Texts or lore in Rallarian',
+			source: 'Texts or lore in Ралларіан (Rallarian)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -696,7 +696,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cutting from an ethereal tree that manifests in the mundane world only once a year',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -717,7 +717,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The tear of a saint',
-			source: 'Texts or lore in High Kuric',
+			source: 'Texts or lore in Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -733,7 +733,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A scale from an ancient dragon',
-			source: 'Texts or lore in The First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -749,7 +749,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Perfectly clear glass from a house that disappeared into the Ethereal Plane',
-			source: 'Texts or lore in Szetch',
+			source: 'Texts or lore in Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -765,7 +765,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The skull of a voiceless talker at least a century old',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -781,7 +781,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An experimental temporal capacitor invented by the kuran’zoi',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -821,7 +821,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A spearhead or other weapon broken off in the body of a stone giant, and ossified for a year or more',
-			source: 'Texts or lore in High Kuric',
+			source: 'Texts or lore in Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),

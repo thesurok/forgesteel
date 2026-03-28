@@ -83,5 +83,5 @@ export const human: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Людина', 'Міський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.labor, 'Васлоріан')
+	culture: FactoryLogic.createCulture('Людина', 'Міський, комунальний, праця.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.communal, UpbringingData.labor, 'Васлоріан (Vaslorian)')
 };

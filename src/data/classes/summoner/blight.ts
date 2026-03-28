@@ -573,7 +573,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is П
 				FactoryLogic.feature.create({
 					id: 'summoner-1-5-2',
 					name: 'Shaping',
-					description: 'You can spend 1 uninterrupted minute to perform a ritual that causes one of your minions to fold their shape and disguise themself to look like a duplicate of you, including speaking basic Caelian, allowing them to (potentially) freely move through civilization while completing their tasks. You can have a number of minions disguised at the same time equal to your Reason score.'
+					description: 'You can spend 1 uninterrupted minute to perform a ritual that causes one of your minions to fold their shape and disguise themself to look like a duplicate of you, including speaking basic Келіан (Caelian), allowing them to (potentially) freely move through civilization while completing their tasks. You can have a number of minions disguised at the same time equal to your Reason score.'
 				}),
 				FactoryLogic.feature.createSummonChoice({
 					id: 'summoner-1-5-3',

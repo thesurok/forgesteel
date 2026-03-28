@@ -26,8 +26,8 @@ export const PatienceInterestCard = (props: Props) => {
 					</p>
 				</div>
 				<div className='patience-reference'>
-					<p className='reference'>One hero shares NPC's native language (non-Caelian): <strong>Patience +1</strong></p>
-					<p className='reference'>Three or more heroes shares NPC's native language (non-Caelian): <strong>Patience +2</strong></p>
+					<p className='reference'>One hero shares NPC's native language (non-Келіан (Caelian)): <strong>Patience +1</strong></p>
+					<p className='reference'>Three or more heroes shares NPC's native language (non-Келіан (Caelian)): <strong>Patience +2</strong></p>
 				</div>
 			</div>
 			<div className='interest'>

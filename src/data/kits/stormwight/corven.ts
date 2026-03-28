@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const corven: Kit = {
 	id: 'kit-corven',
-	name: 'Corven',
-	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a crow, becoming stealthy and quick. Corven are tied to the mountain passes and the hot winds that flow through them. This aspect is associated with the warm and fast-rising anabatic wind.',
+	name: 'Корвен',
+	description: 'З цим набором штормового воїна ви спрямовуєте свою первісну лють у форму крука, стаючи потайними й швидкими. Корвени повʼязані з гірськими перевалами та гарячими вітрами, що течуть крізь них. Цей аспект асоціюється з теплим анабатичним вітром, що стрімко підіймається вгору.',
 	type: 'Stormwight',
 	armor: [],
 	weapon: [KitWeapon.Unarmed],
@@ -24,8 +24,8 @@ export const corven: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-corven-signature',
-				name: 'Wing Buffet',
-				description: 'Foes who try to close in around you do so at their peril.',
+				name: 'Помах крил',
+				description: 'Ті, хто намагається оточити вас, роблять це на власну біду.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
@@ -35,45 +35,45 @@ export const corven: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Agility],
-							tier1: '1 damage',
-							tier2: '4 damage',
-							tier3: '6 damage'
+							tier1: '1 шкоди',
+							tier2: '4 шкоди',
+							tier3: '6 шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('You can shift up to 2 squares before or after making the power roll.')
+					FactoryLogic.createAbilitySectionText('Ви можете зміститися до 2 клітинок до або після кидка сили.')
 				]
 			})
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-corven-feature-1',
-			name: 'Aspect Benefits',
-			description: 'You gain an edge on tests made to hide and sneak. Additionally, whenever you fall, you can use a free triggered action to use your Aspect of the Wild ability.'
+			name: 'Переваги аспекту',
+			description: 'Ви отримуєте перевагу на тести, повʼязані з хованням і підкраданням. Додатково, коли ви падаєте, ви можете безкоштовною тригерною дією використати свою здібність «Аспект дикості».'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-corven-feature-2a',
-			name: 'Animal Form: Crow',
-			description: 'While you are in your crow form, your size is 1T and you can fly. You can use the Hide maneuver as a free maneuver, and you can use your allies as cover when you hide. You can’t use any abilities while in this form except for Aspect of the Wild.'
+			name: 'Форма тварини: Крук',
+			description: 'Поки ви у формі крука, ваш розмір дорівнює 1T, і ви можете літати. Ви можете використовувати маневр «Сховатися» як безкоштовний маневр і використовувати союзників як укриття, коли ховаєтеся. У цій формі ви не можете використовувати жодних здібностей, окрім «Аспекту дикості».'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-corven-feature-2b',
-			name: 'Hybrid Form: Crow',
-			description: 'While you are in your hybrid form, your size is your choice of 1S or 1M. At 4th level, you can fly.'
+			name: 'Гібридна форма: Крук',
+			description: 'Поки ви у гібридній формі, ваш розмір на вибір 1S або 1M. На 4 рівні ви можете літати.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-corven-feature-3',
-			name: 'Primordial Storm: Anabatic Wind',
-			description: 'Your primordial damage type is fire.'
+			name: 'Первісна буря: Анабатичний вітер',
+			description: 'Ваш первісний тип шкоди - вогонь.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-corven-feature-4',
-			name: 'Growing Ferocity',
+			name: 'Зростаюча лють',
 			description: `
-* **Ferocity 2**: Whenever you use the Disengage move action, the distance you can shift gains a bonus equal to your Agility score.
-* **Ferocity 4**: The first time you shift on a turn, you gain 1 surge.
-* **Ferocity 6**: You gain an edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.
-* **Ferocity 8 (4th level)**: The first time you shift on a turn, you gain 2 surges instead of 1.
-* **Ferocity 10 (7th level)**: You have a double edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.
-* **Ferocity 12 (10th level)**: Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, the potency of any effects targeting you is reduced by 2 for you.`
+* **Лють 2**: Коли ви використовуєте дію руху «Вийти з бою», відстань вашого зміщення отримує бонус, рівний вашому показнику Ловкості.
+* **Лють 4**: Першого разу за хід, коли ви зміщуєтеся, ви отримуєте 1 сплеск.
+* **Лють 6**: Ви отримуєте перевагу на перевірки Ловкості, маневр «Вирватися» та маневр «Відштовхування».
+* **Лють 8 (4 рівень)**: Першого разу за хід, коли ви зміщуєтеся, ви отримуєте 2 сплески замість 1.
+* **Лють 10 (7 рівень)**: Ви маєте подвійну перевагу на перевірки Ловкості, маневр «Вирватися» та маневр «Відштовхування».
+* **Лють 12 (10 рівень)**: Кожного разу, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості. Додатково, потужність будь-яких ефектів, спрямованих на вас, зменшується для вас на 2.`
 		})
 	]
 };

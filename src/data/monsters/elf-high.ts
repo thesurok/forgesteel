@@ -24,7 +24,7 @@ export const elfHigh: MonsterGroup = {
 			id: 'elf-high-info-2',
 			name: 'Loremasters',
 			description: `
-The adage “knowledge is power” is a rough translation of an ancient Hyrallic saying. A closer translation is “knowledge before power.” High elves believe knowledge is the pursuit from which all good things flow: life, power, legacy.
+The adage “knowledge is power” is a rough translation of an ancient Гіраллік (Hyrallic) saying. A closer translation is “knowledge before power.” High elves believe knowledge is the pursuit from which all good things flow: life, power, legacy.
 
 In their ruined towers, they study ancient history and magic thought long extinct. They revive dead spells and languages and manipulate their use to suit their means. High elves can use this magic for wondrous creations. They can also use it to kill by lifting a finger.`
 		},
@@ -62,7 +62,7 @@ Many high elves have also collected extensive libraries of tomes over the centur
 		{
 			id: 'elf-high-info-8',
 			name: 'High Elf Languages',
-			description: 'Most high elves speak Caelian and Hyrallic, with some also speaking Yllyric.'
+			description: 'Most high elves speak Келіан (Caelian) and Гіраллік (Hyrallic), with some also speaking Іллірик (Yllyric).'
 		}
 	],
 	malice: [

@@ -41,7 +41,7 @@ Pinna, Hedge Witch, Gravesford`,
 		{
 			id: 'angulotl-info-5',
 			name: 'Angulotl Languages',
-			description: 'Most angulotls speak Filliaric.'
+			description: 'Most angulotls speak Філліарик (Filliaric).'
 		},
 		{
 			id: 'angulotl-info-6',

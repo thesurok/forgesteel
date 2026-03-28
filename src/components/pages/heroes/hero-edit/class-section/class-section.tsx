@@ -34,6 +34,40 @@ import { useIsSmall } from '@/hooks/use-is-small';
 
 import './class-section.scss';
 
+const characteristicLabelMap: Record<Characteristic, string> = {
+	[Characteristic.Might]: 'Сила',
+	[Characteristic.Agility]: 'Ловкість',
+	[Characteristic.Reason]: 'Розум',
+	[Characteristic.Intuition]: 'Інтуїція',
+	[Characteristic.Presence]: 'Присутність'
+};
+
+const getCharacteristicLabel = (characteristic: Characteristic) => {
+	return characteristicLabelMap[characteristic] || characteristic;
+};
+
+const formatCharacteristicList = (characteristics: Characteristic[]) => {
+	const labels = characteristics.map(getCharacteristicLabel);
+
+	if (labels.length <= 1) {
+		return labels[0] || '';
+	}
+
+	if (labels.length === 2) {
+		return labels.join(' і ');
+	}
+
+	return `${labels.slice(0, -1).join(', ')} і ${labels[labels.length - 1]}`;
+};
+
+const getSubclassPrompt = (heroClass: HeroClass) => {
+	if (heroClass.subclassCount === 1) {
+		return `Оберіть ${heroClass.subclassName.toLowerCase() || 'підклас'}.`;
+	}
+
+	return `Оберіть ${heroClass.subclassCount} варіанти ${heroClass.subclassName.toLowerCase() || 'підкласу'}.`;
+};
+
 const matchElement = (element: Element, searchTerm: string) => {
 	const name = element.name.toLowerCase();
 	const desc = element.description.toLowerCase();
@@ -59,8 +93,8 @@ interface Props {
 
 export const ClassSection = (props: Props) => {
 	const isSmall = useIsSmall();
-	const [ selectedSubClass, setSelectedSubClass ] = useState<SubClass | null>(null);
-	const [ subclassSelectorOpen, setSubclassSelectorOpen ] = useState<boolean>(false);
+	const [selectedSubClass, setSelectedSubClass] = useState<SubClass | null>(null);
+	const [subclassSelectorOpen, setSubclassSelectorOpen] = useState<boolean>(false);
 
 	const getClassOptions = (heroClass: HeroClass) => {
 		const options = {
@@ -110,7 +144,7 @@ export const ClassSection = (props: Props) => {
 			options.choices.push(
 				<SelectablePanel key='subclass'>
 					<HeaderText>{heroClass.subclassName}</HeaderText>
-					<div className='ds-text'>Choose {heroClass.subclassCount === 1 ? `${Format.startsWithVowel(heroClass.subclassName || 'subclass') ? 'an' : 'a'} ${heroClass.subclassName || 'subclass'}` : `${heroClass.subclassCount} ${heroClass.subclassName || 'subclasse'}s`}.</div>
+					<div className='ds-text'>{getSubclassPrompt(heroClass)}</div>
 					{
 						heroClass.subclasses
 							.filter(sc => sc.selected)
@@ -125,14 +159,14 @@ export const ClassSection = (props: Props) => {
 										<Button
 											style={{ flex: '0 0 auto' }}
 											type='text'
-											title='Select'
+											title='Показати'
 											icon={<InfoCircleOutlined />}
 											onClick={() => setSelectedSubClass(sc)}
 										/>
 										<Button
 											style={{ flex: '0 0 auto' }}
 											type='text'
-											title='Remove'
+											title='Видалити'
 											icon={<CloseOutlined />}
 											onClick={() => props.removeSubclass(sc.id)}
 										/>
@@ -143,7 +177,7 @@ export const ClassSection = (props: Props) => {
 					{
 						heroClass.subclasses.filter(sc => sc.selected).length < heroClass.subclassCount ?
 							<Button className='status-warning' block={true} onClick={() => setSubclassSelectorOpen(true)}>
-								Choose {Format.startsWithVowel(heroClass.subclassName || 'subclass') ? 'an' : 'a'} {heroClass.subclassName || 'subclass'}
+								{heroClass.subclassCount === 1 ? `Оберіть ${heroClass.subclassName.toLowerCase() || 'підклас'}` : 'Оберіть варіант'}
 							</Button>
 							: null
 					}
@@ -291,22 +325,22 @@ const Characteristics = (props: CharacteristicsProps) => {
 		return currentArray;
 	};
 
-	const [ array, setArray ] = useState<number[] | null>(getArray);
-	const [ values, setValues ] = useState<{ characteristic: Characteristic, value: number }[] | null>(null);
+	const [array, setArray] = useState<number[] | null>(getArray);
+	const [values, setValues] = useState<{ characteristic: Characteristic, value: number }[] | null>(null);
 
 	if ((props.heroClass.primaryCharacteristicsOptions.length > 0) && (props.heroClass.primaryCharacteristics.length === 0)) {
 		return (
 			<div>
 				<div className='ds-text'>
-					Your class allows you to choose your primary characteristics.
+					Ваш клас дозволяє обрати основні характеристики.
 				</div>
 				<Select
 					style={{ width: '100%' }}
 					status='warning'
-					placeholder='Select your primary characteristics'
-					options={props.heroClass.primaryCharacteristicsOptions.map(a => ({ value: a.join(', '), array: a }))}
+					placeholder='Оберіть основні характеристики'
+					options={props.heroClass.primaryCharacteristicsOptions.map(a => ({ value: formatCharacteristicList(a), array: a }))}
 					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
-					value={props.heroClass.primaryCharacteristics && (props.heroClass.primaryCharacteristics.length > 0) ? props.heroClass.primaryCharacteristics.join(', ') : null}
+					value={props.heroClass.primaryCharacteristics && (props.heroClass.primaryCharacteristics.length > 0) ? formatCharacteristicList(props.heroClass.primaryCharacteristics) : null}
 					onChange={(_text, option) => {
 						const data = option as { value: string, array: Characteristic[] };
 						props.selectPrimaryCharacteristics(data.array);
@@ -320,7 +354,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
 				<div className='ds-text'>
-					You start with a 2 in <b>{props.heroClass.primaryCharacteristics.join(' and ')}</b>. Choose the set of values you'd like for your other characteristics.
+					Ви починаєте з 2 у <b>{formatCharacteristicList(props.heroClass.primaryCharacteristics)}</b>. Оберіть набір значень для інших характеристик.
 				</div>
 				{
 					HeroLogic.getCharacteristicArrays(props.heroClass.primaryCharacteristics.length)
@@ -333,7 +367,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 				{
 					(props.heroClass.primaryCharacteristicsOptions.length > 1) ?
 						<Button block={true} onClick={() => props.selectPrimaryCharacteristics([])}>
-							Choose different primary characteristics
+							Оберіть інші основні характеристики
 						</Button>
 						: null
 				}
@@ -345,7 +379,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
 				<div className='ds-text'>
-					Choose your characteristics.
+					Оберіть свої характеристики.
 				</div>
 				{
 					HeroLogic.calculateCharacteristicArrays(array, props.heroClass.primaryCharacteristics)
@@ -362,7 +396,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 										<Field
 											key={ch.characteristic}
 											orientation='vertical'
-											label={ch.characteristic}
+											label={getCharacteristicLabel(ch.characteristic)}
 											value={ch.value}
 										/>
 									))
@@ -371,7 +405,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 						))
 				}
 				<Button block={true} onClick={() => setArray(null)}>
-					Choose a different array of values
+					Оберіть інший набір значень
 				</Button>
 			</Space>
 		);

@@ -31,7 +31,7 @@ interface Props {
 }
 
 export const ClassPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
@@ -39,7 +39,7 @@ export const ClassPanel = (props: Props) => {
 				<Markdown text={props.heroClass.description} />
 				{
 					props.heroClass.subclasses.length > 0 ?
-						<Field label={`${props.heroClass.subclassName}s`} value={props.heroClass.subclasses.map(c => c.name).join(', ')} />
+						<Field label={props.heroClass.subclassName} value={props.heroClass.subclasses.map(c => c.name).join(', ')} />
 						: null
 				}
 				<Field label='Primary Characteristics' value={props.heroClass.primaryCharacteristics.join(', ') || props.heroClass.primaryCharacteristicsOptions.map(array => array.join(', ') || 'None').join(' or ') || 'None'} />
@@ -85,7 +85,7 @@ export const ClassPanel = (props: Props) => {
 		return (
 			<div className='class-abilities-list'>
 				{
-					[ 'signature', ...costs ].map(cost => {
+					['signature', ...costs].map(cost => {
 						const abilities = props.heroClass.abilities.filter(a => a.cost === cost);
 						if (abilities.length === 0) {
 							return null;

@@ -146,7 +146,7 @@ export const dwarfFury = {
 			data: {
 				options: [],
 				count: 1,
-				selected: ['Zaliac']
+				selected: ['Заліак (Zaliac)']
 			}
 		},
 		languages: [],
@@ -4255,7 +4255,7 @@ export const dwarfFury = {
 					options: [],
 					count: 1,
 					selected: [
-						'Vaslorian'
+						'Васлоріан (Vaslorian)'
 					]
 				}
 			},
@@ -4348,7 +4348,7 @@ export const dwarfFury = {
 				options: [],
 				count: 1,
 				selected: [
-					'Caelian'
+					'Келіан (Caelian)'
 				]
 			}
 		}

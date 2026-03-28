@@ -37,7 +37,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 		{
 			id: 'radenwight-info-4',
 			name: 'Radenwight Languages',
-			description: 'Most radenwights speak Caelian and Szetch.'
+			description: 'Most radenwights speak Келіан (Caelian) and Сзетч (Szetch).'
 		}
 	],
 	malice: [

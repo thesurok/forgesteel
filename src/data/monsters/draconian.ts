@@ -51,7 +51,7 @@ Six individual draconians are presented in this section—not an adventuring par
 		{
 			id: 'draconian-info-7',
 			name: 'Draconian Languages',
-			description: 'Most draconians speak Caelian in addition to the languages of their employers and creators. Lydixavus, Phrrygalax, and Dorzinuuth all speak Caelian and Vastariax. Aeolyxria speaks Caelian and the First Language. Locratix speaks Caelian and Oaxuatl. Myxovidan speaks Caelian and Axiomatic.'
+			description: 'Most draconians speak Келіан (Caelian) in addition to the languages of their employers and creators. Lydixavus, Phrrygalax, and Dorzinuuth all speak Келіан (Caelian) and Вастаріакс (Vastariax). Aeolyxria speaks Келіан (Caelian) and Перша мова (The First Language). Locratix speaks Келіан (Caelian) and Оашуатль (Oaxuatl). Myxovidan speaks Келіан (Caelian) and Аксіоматичний (Axiomatic).'
 		}
 	],
 	malice: [

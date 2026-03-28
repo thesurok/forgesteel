@@ -18,7 +18,7 @@ export const censor: HeroClass = {
 
 Як цензор, ви найкраще проявляєте себе проти найсильніших ворогів. Ваш суд жахає єретиків, зупиняє ворогів на місці й навіть відкидає їх через усе поле бою.`,
 	type: 'standard',
-	subclassName: 'Order',
+	subclassName: 'Орден',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Might, Characteristic.Presence]

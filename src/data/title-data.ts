@@ -907,7 +907,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-1-1',
 						name: 'Gift of Charm',
-						selected: ['Khelt']
+						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-1-2',
@@ -923,7 +923,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-2-1',
 						name: 'Gift of Foresight',
-						selected: ['Khelt']
+						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-2-2',
@@ -939,7 +939,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-3-1',
 						name: 'Gift of Knowledge',
-						selected: ['Khelt']
+						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-3-2',
@@ -1321,7 +1321,7 @@ When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-1',
 				name: 'Demonic Lore',
-				description: 'You know the Proto-Ctholl language. Additionally, when you deal damage using a magic ability, you can change the ability’s damage type to holy.'
+				description: 'You know the Прото-Ктолл (Proto-Ctholl) language. Additionally, when you deal damage using a magic ability, you can change the ability’s damage type to holy.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-2',
@@ -1341,7 +1341,7 @@ When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-5',
 				name: 'Особливе',
-				description: 'When you make a Presence test and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.'
+				description: 'When you make a Presence test and roll a natural 5 or lower, you are cursed to communicate in only Прото-Ктолл (Proto-Ctholl) for 1 minute, whether you know that language or not.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1357,7 +1357,7 @@ When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-1',
 				name: 'Devil Lore',
-				description: 'You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.'
+				description: 'You know the Анжалі (Anjali) language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-2',

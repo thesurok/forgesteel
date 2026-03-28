@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const raider: Kit = {
 	id: 'kit-raider',
-	name: 'Raider',
-	description: 'The Raider kit keeps you protected while granting you full mobility, providing a boost to speed and distance that lets you run around the battlefield like a Viking warrior.',
+	name: 'Нальотник',
+	description: 'Набір «Нальотник» захищає вас і водночас зберігає повну рухливість, підвищуючи швидкість і дистанцію так, що ви літаєте полем бою, мов воїн-вікінг.',
 	type: '',
 	armor: [KitArmor.Light, KitArmor.Shield],
 	weapon: [KitWeapon.Light],
@@ -24,8 +24,8 @@ export const raider: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-raider-signature',
-				name: 'Raider’s Awe',
-				description: 'You execute a brutal strike that leaves your foe reeling.',
+				name: 'Жах нальотника',
+				description: 'Ви завдаєте жорстокого удару, після якого ворог хитається.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [
@@ -38,12 +38,12 @@ export const raider: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage',
-							tier2: '5 + С or A damage',
-							tier3: '7 + С or A damage'
+							tier1: '2 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди',
+							tier3: '7 + С або Л шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('The target takes a bane on their next power roll made before the end of their next turn')
+					FactoryLogic.createAbilitySectionText('Ціль отримує перешкоду на свій наступний кидок сили, зроблений до кінця її наступного ходу.')
 				]
 			})
 		})

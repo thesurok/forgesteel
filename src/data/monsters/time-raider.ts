@@ -50,7 +50,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 		{
 			id: 'time-raider-info-7',
 			name: 'Time Raider Languages',
-			description: 'Most time raiders speak Caelian and Voll. Because of the number of worlds they’ve visited, many time raiders have their speech peppered with misplaced tenses and strange references.'
+			description: 'Most time raiders speak Келіан (Caelian) and Волл (Voll). Because of the number of worlds they’ve visited, many time raiders have their speech peppered with misplaced tenses and strange references.'
 		}
 	],
 	malice: [

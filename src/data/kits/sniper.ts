@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const sniper: Kit = {
 	id: 'kit-sniper',
-	name: 'Sniper',
-	description: 'The Sniper kit gives you the tools and techniques to take down enemies from afar. This kit can help you become the archer who lurks behind trees or down tunnels, picking off enemies with a bow or crossbow as they approach.',
+	name: 'Снайпер',
+	description: 'Набір «Снайпер» дає вам інструменти й техніки, щоб знімати ворогів здалеку. Завдяки йому ви стаєте лучником, що ховається за деревами чи в тунелях і відстрілює ворогів з лука або арбалета, щойно ті наближаються.',
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Bow],
@@ -23,8 +23,8 @@ export const sniper: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-sniper-signature',
-				name: 'Patient Shot',
-				description: 'Breathe … aim … wait … then strike!',
+				name: 'Терплячий постріл',
+				description: 'Вдих… приціл… очікування… і удар!',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createRanged(5)],
@@ -34,12 +34,12 @@ export const sniper: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '6 + С or A damage',
-							tier3: '9 + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '6 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('If you don\'t take a move action this turn, this strike deals extra damage equal to your Might or Agility score (your choice).')
+					FactoryLogic.createAbilitySectionText('Якщо цього ходу ви не виконуєте дію руху, цей удар завдає додаткової шкоди, рівної вашому показнику Сили або Ловкості на ваш вибір.')
 				]
 			})
 		})

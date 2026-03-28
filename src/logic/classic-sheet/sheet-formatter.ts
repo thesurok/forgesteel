@@ -7,6 +7,7 @@ import { Collections } from '@/utils/collections';
 import { CreatureLogic } from '@/logic/creature-logic';
 import { Feature } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
+import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
 import { Format } from '@/utils/format';
 import { Hero } from '@/models/hero';
 import { HeroLogic } from '@/logic/hero-logic';
@@ -58,6 +59,7 @@ export class SheetFormatter {
 
 	static cleanupFeature = (feature: Feature, display: 'short' | 'full' = 'short'): Feature => {
 		const result = Utils.copy(feature);
+		result.name = FeatureUpdateLogic.normalizeFeatureName(feature.name);
 		if (display !== 'full' && this.isVERYLongFeature(feature)) {
 			result.description = '*See Reference for details…*';
 		} else if (display !== 'full' && this.isLongFeature(feature)) {

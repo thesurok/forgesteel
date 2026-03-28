@@ -48,7 +48,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 		{
 			id: 'lord-syuul-info-3',
 			name: 'Lord Syuul’s Languages',
-			description: 'Lord Syuul communicates telepathically using Mindspeech and speaks Variac.'
+			description: 'Lord Syuul communicates telepathically using Мислемова (Mindspeech) and speaks Варіак (Variac).'
 		}
 	],
 	malice: [

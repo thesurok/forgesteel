@@ -57,7 +57,7 @@ In many shadow elf societies, all people are given basic combat training and are
 		{
 			id: 'elf-shadow-info-7',
 			name: 'Shadow Elf Languages',
-			description: 'Most shadow elves speak Illyvric, though platoon leaders might speak some Caelian or Hyrallic.'
+			description: 'Most shadow elves speak Ілліврик (Illyvric), though platoon leaders might speak some Келіан (Caelian) or Гіраллік (Hyrallic).'
 		}
 	],
 	malice: [

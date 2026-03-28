@@ -38,7 +38,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 		{
 			id: 'dragon-meteor-info-5',
 			name: 'Meteor Dragon Languages',
-			description: 'Meteor dragons are not known for their conversational habits. When they do deign to speak, it is exclusively in Vastariax and the First Language.'
+			description: 'Meteor dragons are not known for their conversational habits. When they do deign to speak, it is exclusively in Вастаріакс (Vastariax) and Перша мова (The First Language).'
 		}
 	],
 	malice: [

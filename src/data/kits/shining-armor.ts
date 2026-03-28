@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const shiningArmor: Kit = {
 	id: 'kit-shining-armor',
-	name: 'Shining Armor',
-	description: 'The Shining Armor kit provides the most protection a kit can afford, providing you with the sword, shield, and armor necessary to play the prototypical knight.',
+	name: 'Сяйлива броня',
+	description: 'Набір «Сяйлива броня» дає найбільший захист, який тільки може забезпечити набір, надаючи вам меч, щит і броню, потрібні для втілення образу взірцевого лицаря.',
 	type: '',
 	armor: [KitArmor.Heavy, KitArmor.Shield],
 	weapon: [KitWeapon.Medium],
@@ -24,8 +24,8 @@ export const shiningArmor: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-shining-armor-signature',
-				name: 'Protective Attack',
-				description: 'The strength of your assault makes it impossible for your foe to ignore you.',
+				name: 'Захисний удар',
+				description: 'Сила вашого натиску не дозволяє ворогу просто проігнорувати вас.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,12 +35,12 @@ export const shiningArmor: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '6 + С or A damage',
-							tier3: '9 + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '6 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('The target is taunted until the end of their next turn.')
+					FactoryLogic.createAbilitySectionText('Ціль спровокована до кінця свого наступного ходу.')
 				]
 			})
 		})

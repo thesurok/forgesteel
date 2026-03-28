@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const warriorPriest: Kit = {
 	id: 'kit-warrior-priest',
-	name: 'Warrior Priest',
-	description: 'The Warrior Priest kit imbues the power of the gods into your weapon, making it a smiting instrument. You wade into the fray without fear, thanks to the power of the divine … and the heavy armor you wear.',
+	name: 'Воїн-жрець',
+	description: 'Набір «Воїн-жрець» насичує вашу зброю силою богів, перетворюючи її на знаряддя кари. Ви безстрашно входите в гущу бою завдяки божественній силі… і важкій броні, яку носите.',
 	type: '',
 	armor: [KitArmor.Heavy],
 	weapon: [KitWeapon.Light],
@@ -24,8 +24,8 @@ export const warriorPriest: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-warrior-priest-signature',
-				name: 'Weakening Brand',
-				description: 'The impact of your weapon brands your target for destruction.',
+				name: 'Послаблювальне тавро',
+				description: 'Удар вашої зброї таврує ціль на погибель.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,12 +35,12 @@ export const warriorPriest: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-							tier1: '2 + M, R, I, or P holy damage',
-							tier2: '4 + M, R, I, or P holy damage',
-							tier3: '7 + M, R, I, or P holy damage'
+							tier1: '2 + С, Р, І або П святої шкоди',
+							tier2: '4 + С, Р, І або П святої шкоди',
+							tier3: '7 + С, Р, І або П святої шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('Until the end of the target\'s next turn, they have damage weakness equal to the characteristic score used for this ability\'s power roll.')
+					FactoryLogic.createAbilitySectionText('До кінця наступного ходу цілі вона має вразливість до шкоди, рівну показнику характеристики, використаної для кидка сили цієї здібності.')
 				]
 			})
 		})

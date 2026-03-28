@@ -43,7 +43,7 @@ Liches know they have all the time in the world to plot against their foes, and 
 		{
 			id: 'lich-info-5',
 			name: 'Lich Languages',
-			description: 'A lich speaks the languages they knew in life, and might also pick up Anjali, Proto-Ctholl, Variac, and Vastariax over their limitless lifetime.'
+			description: 'A lich speaks the languages they knew in life, and might also pick up Анжалі (Anjali), Прото-Ктолл (Proto-Ctholl), Варіак (Variac), and Вастаріакс (Vastariax) over their limitless lifetime.'
 		}
 	],
 	malice: [

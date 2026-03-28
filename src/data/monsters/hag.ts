@@ -38,7 +38,7 @@ Adding insult to injury, those who deal with hags almost always discover the pro
 		{
 			id: 'hag-info-5',
 			name: 'Hag Languages',
-			description: 'Most hags speak Anjali, Caelian, Khelt, and Yllyric, with older hags often knowing several more languages.'
+			description: 'Most hags speak Анжалі (Anjali), Келіан (Caelian), Кхелт (Khelt), and Іллірик (Yllyric), with older hags often knowing several more languages.'
 		}
 	],
 	malice: [

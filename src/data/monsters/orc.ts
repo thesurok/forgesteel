@@ -47,7 +47,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 		{
 			id: 'orc-info-5',
 			name: 'Orc Languages',
-			description: 'Most orcs speak Caelian and Kalliak.'
+			description: 'Most orcs speak Келіан (Caelian) and Калліак (Kalliak).'
 		}
 	],
 	malice: [

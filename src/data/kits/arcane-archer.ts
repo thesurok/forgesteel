@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const arcaneArcher: Kit = {
 	id: 'kit-arcane-archer',
-	name: 'Arcane Archer',
-	description: 'The Arcane Archer kit allows you to combine magic and ranged weapon strikes. Your lack of armor keeps you mobile, and your magic makes your arrows explode to devastate your foes.',
+	name: 'Арканний лучник',
+	description: 'Набір «Арканний лучник» дозволяє поєднувати магію з дистанційними ударами зброєю. Відсутність броні зберігає вашу рухливість, а магія змушує стріли вибухати й трощити ворогів.',
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Bow],
@@ -23,8 +23,8 @@ export const arcaneArcher: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-arcane-archer-signature',
-				name: 'Exploding Arrow',
-				description: 'Your ammunition explodes with magical energy.',
+				name: 'Вибухова стріла',
+				description: 'Ваші боєприпаси вибухають магічною енергією.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createRanged(5)],
@@ -34,12 +34,12 @@ export const arcaneArcher: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-							tier1: '3 + A, R, I, or P fire damage',
-							tier2: '5 + A, R, I, or P fire damage',
-							tier3: '8 + A, R, I, or P fire damage'
+							tier1: '3 + Л, Р, І або П вогняної шкоди',
+							tier2: '5 + Л, Р, І або П вогняної шкоди',
+							tier3: '8 + Л, Р, І або П вогняної шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('One creature or object of your choice within 2 squares of the target takes fire damage equal to the characteristic score used for this ability\'s power roll.')
+					FactoryLogic.createAbilitySectionText('Одна обрана вами істота або предмет у межах 2 клітинок від цілі отримує вогняну шкоду, рівну показнику характеристики, використаної для кидка сили цієї здібності.')
 				]
 			})
 		})

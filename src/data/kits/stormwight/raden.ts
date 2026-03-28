@@ -6,11 +6,11 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const raden: Kit = {
 	id: 'kit-raden',
-	name: 'Raden',
-	description: 'With this stormwight kit, you channel your primordial ferocity into the form of a rat, becoming mobile and elusive. Raden are associated with the wild nature of the rat, before cities became their habitat. This aspect is associated with the rat flood—a surge of corrupted water that draws forth hordes of rats.',
+	name: 'Раден',
+	description: 'З цим набором штормового воїна ви спрямовуєте свою первісну лють у форму щура, стаючи рухливими й невловними. Радени повʼязані з дикою природою щура, ще до того, як міста стали його домівкою. Цей аспект асоціюється зі щурячою повінню - хвилею корупційної води, що вивергає орди щурів.',
 	type: 'Stormwight',
 	armor: [],
-	weapon: [ KitWeapon.Unarmed ],
+	weapon: [KitWeapon.Unarmed],
 	stamina: 3,
 	speed: 3,
 	stability: 0,
@@ -23,56 +23,56 @@ export const raden: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-raden-signature',
-				name: 'Driving Pounce',
-				description: 'Your enemies try in vain to fall back from your pouncing attack.',
+				name: 'Наскок із напором',
+				description: 'Ваші вороги марно намагаються відступити від вашого стрибучого нападу.',
 				type: FactoryLogic.type.createMain(),
-				keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-				distance: [ FactoryLogic.distance.createMelee() ],
-				target: 'One creature or objects',
+				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+				distance: [FactoryLogic.distance.createMelee()],
+				target: 'Одна істота або предмет',
 				cost: 'signature',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
-							characteristic: [ Characteristic.Agility ],
-							tier1: '2 + A damage',
-							tier2: '5 + A damage; push 1',
-							tier3: '7 + A damage; push 2'
+							characteristic: [Characteristic.Agility],
+							tier1: '2 + Л шкоди',
+							tier2: '5 + Л шкоди; штовхнути на 1',
+							tier3: '7 + Л шкоди; штовхнути на 2'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('You can shift up to the same number of squares that you pushed the target.')
+					FactoryLogic.createAbilitySectionText('Ви можете зміститися на стільки ж клітинок, на скільки штовхнули ціль.')
 				]
 			})
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-raden-feature-1',
-			name: 'Aspect Benefits',
-			description: 'You gain an edge on tests made to hide and sneak. Additionally, you ignore difficult terrain.'
+			name: 'Переваги аспекту',
+			description: 'Ви отримуєте перевагу на тести, повʼязані з хованням і підкраданням. Додатково, ви ігноруєте складну місцевість.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-raden-feature-2a',
-			name: 'Animal Form: Rat',
-			description: 'While you are in your rat form, your size is 1T and you can automatically climb at full speed while moving. You can use the Hide maneuver as a free maneuver, you can use your allies as cover when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an edge on tests made to climb other creatures. You can’t use any abilities while in this form except for Aspect of the Wild.'
+			name: 'Форма тварини: Щур',
+			description: 'Поки ви у формі щура, ваш розмір дорівнює 1T, і ви можете автоматично дертися на повній швидкості під час руху. Ви можете використовувати маневр «Сховатися» як безкоштовний маневр, використовувати союзників як укриття, коли ховаєтеся, і залишатися схованими, рухаючись крізь клітинки, зайняті будь-якою істотою. Додатково, ви отримуєте перевагу на тести, повʼязані з лазінням по інших істотах. У цій формі ви не можете використовувати жодних здібностей, окрім «Аспекту дикості».'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-raden-feature-2b',
-			name: 'Hybrid Form: Rat',
-			description: 'While you are in your hybrid form, your size is your choice of 1S or 1M. At 4th level, you can automatically climb at full speed while moving.'
+			name: 'Гібридна форма: Щур',
+			description: 'Поки ви у гібридній формі, ваш розмір на вибір 1S або 1M. На 4 рівні ви можете автоматично дертися на повній швидкості під час руху.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-raden-feature-3',
-			name: 'Primordial Storm: Rat Flood',
-			description: 'Your primordial damage type is corruption.'
+			name: 'Первісна буря: Щуряча повінь',
+			description: 'Ваш первісний тип шкоди - корупція.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'kit-raden-feature-4',
-			name: 'Growing Ferocity',
+			name: 'Зростаюча лють',
 			description: `
-* **Ferocity 2**: Whenever you use the Disengage move action, the distance you can shift gains a bonus equal to your Agility score.
-* **Ferocity 4**: The first time you shift on a turn, you gain 1 surge.
-* **Ferocity 6**: You gain an edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.
-* **Ferocity 8 (4th level)**: The first time you shift on a turn, you gain 2 surges instead of 1.
-* **Ferocity 10 (7th level)**: You have a double edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.
-* **Ferocity 12 (10th level)**: Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, the potency of any effects targeting you is reduced by 2 for you.`
+* **Лють 2**: Коли ви використовуєте дію руху «Вийти з бою», відстань вашого зміщення отримує бонус, рівний вашому показнику Ловкості.
+* **Лють 4**: Першого разу за хід, коли ви зміщуєтеся, ви отримуєте 1 сплеск.
+* **Лють 6**: Ви отримуєте перевагу на перевірки Ловкості, маневр «Вирватися» та маневр «Відштовхування».
+* **Лють 8 (4 рівень)**: Першого разу за хід, коли ви зміщуєтеся, ви отримуєте 2 сплески замість 1.
+* **Лють 10 (7 рівень)**: Ви маєте подвійну перевагу на перевірки Ловкості, маневр «Вирватися» та маневр «Відштовхування».
+* **Лють 12 (10 рівень)**: Кожного разу, коли ви використовуєте героїчну здібність, ви отримуєте 10 тимчасової Витривалості. Додатково, потужність будь-яких ефектів, спрямованих на вас, зменшується для вас на 2.`
 		})
 	]
 };

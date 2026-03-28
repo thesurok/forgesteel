@@ -65,7 +65,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 		{
 			id: 'elemental-info-8',
 			name: 'Elemental Languages',
-			description: 'Most elementals speak Low Kuric. Some can use Caelian when they need to.'
+			description: 'Most elementals speak Низький Курик (Low Kuric). Some can use Келіан (Caelian) when they need to.'
 		}
 	],
 	malice: [

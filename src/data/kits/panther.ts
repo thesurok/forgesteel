@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const panther: Kit = {
 	id: 'kit-panther',
-	name: 'Panther',
-	description: 'If you want a good balance of protection, speed, and damage, the Panther kit is for you. This kit increases your Stamina not by wearing armor, but through the focused battle preparation of body and mind, letting you be fast and mobile while swinging a heavy weapon at your foes.',
+	name: 'Пантера',
+	description: 'Якщо вам потрібен добрий баланс захисту, швидкості та шкоди, набір «Пантера» саме для вас. Він підвищує вашу Витривалість не бронею, а зосередженою бойовою підготовкою тіла й розуму, дозволяючи лишатися швидкими та рухливими, завдаючи ударів важкою зброєю.',
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Heavy],
@@ -23,8 +23,8 @@ export const panther: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-panther-signature',
-				name: 'Devastating Rush',
-				description: 'The faster you move, the harder you hit.',
+				name: 'Нищівний ривок',
+				description: 'Що швидше ви рухаєтеся, то сильніше бʼєте.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -34,12 +34,12 @@ export const panther: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '6 + С or A damage',
-							tier3: '9 + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '6 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('You can move up to 3 squares straight toward the target before this strike, which deals extra damage equal to the number of squares you move this way.')
+					FactoryLogic.createAbilitySectionText('Перед цим ударом ви можете пройти прямою до 3 клітинок у бік цілі. Цей удар завдає додаткової шкоди, рівної кількості клітинок, які ви пройшли таким чином.')
 				]
 			})
 		})

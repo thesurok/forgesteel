@@ -16,7 +16,7 @@ export class LeveledItemData {
 		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ring ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pair of obituaries that each mention the subject of the other',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -82,7 +82,7 @@ export class LeveledItemData {
 		keywords: [ AbilityKeyword.Hands, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One cotton bolt soaked in the blood of six adventurers',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -146,7 +146,7 @@ export class LeveledItemData {
 		keywords: [ AbilityKeyword.Feet, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One jar of lightning',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [ Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -225,7 +225,7 @@ export class LeveledItemData {
 		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Magic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cloak worn by a murdered monarch',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),
@@ -271,7 +271,7 @@ export class LeveledItemData {
 		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Psionic ],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A pound of feathers, a pound of bricks from the Seven Cities of Hell',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 450
 		}),

@@ -135,7 +135,7 @@ export const highElfTactician = {
 			data: {
 				options: [],
 				count: 1,
-				selected: ['Hyrallic']
+				selected: ['Гіраллік (Hyrallic)']
 			}
 		},
 		languages: [],
@@ -4028,8 +4028,8 @@ export const highElfTactician = {
 					options: [],
 					count: 2,
 					selected: [
-						'Szetch',
-						'Vaslorian'
+						'Сзетч (Szetch)',
+						'Васлоріан (Vaslorian)'
 					]
 				}
 			},
@@ -4122,7 +4122,7 @@ export const highElfTactician = {
 				options: [],
 				count: 1,
 				selected: [
-					'Caelian'
+					'Келіан (Caelian)'
 				]
 			}
 		}

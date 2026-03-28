@@ -44,7 +44,7 @@ Each time a demon consumes a soul, there’s a chance they might evolve into a m
 		{
 			id: 'demon-1st-info-5',
 			name: 'Demon Languages',
-			description: 'Lower categories of demons speak Proto-Ctholl. As demons evolve and reach category 3 or higher, their speech turns into proper Tholl.'
+			description: 'Lower categories of demons speak Прото-Ктолл (Proto-Ctholl). As demons evolve and reach category 3 or higher, their speech turns into proper Толл (Tholl).'
 		},
 		{
 			id: 'demon-1st-info-6',

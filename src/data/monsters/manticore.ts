@@ -30,7 +30,7 @@ export const manticore: MonsterGroup = {
 		{
 			id: 'manticore-info-4',
 			name: 'Manticore Languages',
-			description: 'Most manticores can mimic Caelian and one language commonly spoken in the region where they dwell. Except in rare cases, manticores don’t communicate in full sentences and are too driven by hunger to engage in negotiation.'
+			description: 'Most manticores can mimic Келіан (Caelian) and one language commonly spoken in the region where they dwell. Except in rare cases, manticores don’t communicate in full sentences and are too driven by hunger to engage in negotiation.'
 		}
 	],
 	malice: [

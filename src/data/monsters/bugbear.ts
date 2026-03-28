@@ -10,7 +10,7 @@ export const bugbear: MonsterGroup = {
 	id: 'monster-group-bugbear',
 	name: 'Bugbear',
 	description: `
-Bugbears are the bu’gath in the Khelt language, or “the bearers of the great fear.” Modern bugbears come from early goblins who first stepped into the wode centuries ago. Fey magic twisted their bodies, making them grow imposingly tall and hairy while removing all sound from their footsteps.
+Bugbears are the bu’gath in the Кхелт (Khelt) language, or “the bearers of the great fear.” Modern bugbears come from early goblins who first stepped into the wode centuries ago. Fey magic twisted their bodies, making them grow imposingly tall and hairy while removing all sound from their footsteps.
 
  Many bugbears become legendary hunters and mercenaries. Many more become reclusive and hide their whole lives in the shadows. A rare few dive into their magic potential and become living nightmares who haunt the wode.`,
 	picture: null,
@@ -36,7 +36,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 		{
 			id: 'bugbear-info-4',
 			name: 'Bugbear Languages',
-			description: 'Most bugbears speak Caelian, Khelt, and Szetch.'
+			description: 'Most bugbears speak Келіан (Caelian), Кхелт (Khelt), and Сзетч (Szetch).'
 		}
 	],
 	malice: [

@@ -17,7 +17,7 @@ export class LeveledWeaponData {
 		keywords: [AbilityKeyword.Psionic, KitWeapon.Whip],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A lash used to punish a mutineer',
-			source: 'Texts or lore in Khelt',
+			source: 'Texts or lore in Кхелт (Khelt)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 			goal: 450
 		}),
@@ -86,7 +86,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Medium, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A ruby hardened in the fires of the City of Brass, a sapphire that has been struck by lightning',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -176,7 +176,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Light, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A personal blessing from the greatest duelist in the land, six fake and extremely shiny gemstones',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -245,7 +245,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Medium, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An ancient bronze gear covered in indecipherable runes',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -320,7 +320,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Heavy, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The skull of a convicted criminal',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -387,7 +387,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Heavy, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Eight iron bars cooled in a glacier, the branch of an ancient evergreen',
-			source: 'Texts in Zaliac',
+			source: 'Texts in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -462,7 +462,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Light, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Eighteen daggers - nine taken from personal enemies and nine gifted by friends',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -518,7 +518,7 @@ export class LeveledWeaponData {
 		keywords: [AbilityKeyword.Magic, KitWeapon.Polearm],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Night-blooming flower petals, a starmetal meteorite',
-			source: 'Texts or lore in Hyrallic',
+			source: 'Texts or lore in Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Agility, Characteristic.Presence],
 			goal: 450
 		}),
@@ -585,7 +585,7 @@ export class LeveledWeaponData {
 		keywords: [AbilityKeyword.Magic, KitWeapon.Ensnaring],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Four iron bars coated in magma slag',
-			source: 'Texts or lore in Caelian',
+			source: 'Texts or lore in Келіан (Caelian)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -664,7 +664,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Bow, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A venom sac from a giant spider, one valok gyroscope',
-			source: 'Texts or lore in Caelian and Variac',
+			source: 'Texts or lore in Келіан (Caelian) and Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -728,7 +728,7 @@ export class LeveledWeaponData {
 		keywords: [AbilityKeyword.Magic, KitWeapon.Whip],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'One hundred steel arrowheads stained with blood',
-			source: 'Texts or lore in Caelian and Kalliak',
+			source: 'Texts or lore in Келіан (Caelian) and Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -792,7 +792,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Bow, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Heart strings of a tapir, a pound of tiger\'s eye gemstones',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -866,7 +866,7 @@ export class LeveledWeaponData {
 		keywords: [AbilityKeyword.Magic, KitWeapon.Medium],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A jar of captured thunder, two ingots of moon metal',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
@@ -933,7 +933,7 @@ export class LeveledWeaponData {
 		keywords: [KitWeapon.Polearm, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A folded metal blade infused with blood',
-			source: 'Texts or lore in Higaran',
+			source: 'Texts or lore in Хігаран (Higaran)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),

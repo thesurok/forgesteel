@@ -83,7 +83,7 @@ export const memonek: Ancestry = {
 						id: 'memonek-feature-3-7',
 						name: 'Безперервність',
 						description: 'Ваш зв’язок із Аксіомом дозволяє вам регулювати свій рух.',
-						conditions: [ ConditionType.Slowed ]
+						conditions: [ConditionType.Slowed]
 					}),
 					value: 2
 				}
@@ -92,5 +92,5 @@ export const memonek: Ancestry = {
 		})
 	],
 	ancestryPoints: 4,
-	culture: FactoryLogic.createCulture('Мемонек', 'Кочовий, комунальний, академічний.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.academic, 'Аксіоматичний')
+	culture: FactoryLogic.createCulture('Мемонек', 'Кочовий, комунальний, академічний.', CultureType.Ancestral, EnvironmentData.nomadic, OrganizationData.communal, UpbringingData.academic, 'Аксіоматичний (Axiomatic)')
 };

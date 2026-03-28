@@ -20,7 +20,7 @@ export const devil: Ancestry = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'devil-feature-1b',
-					listOptions: [ SkillList.Interpersonal ]
+					listOptions: [SkillList.Interpersonal]
 				})
 			]
 		}),
@@ -97,5 +97,5 @@ export const devil: Ancestry = {
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Диявол', 'Міський, бюрократичний, академічний.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.academic, 'Anjali')
+	culture: FactoryLogic.createCulture('Диявол', 'Міський, бюрократичний, академічний.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.academic, 'Анжалі (Anjali)')
 };

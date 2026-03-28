@@ -39,7 +39,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 		{
 			id: 'rival-1st-info-5',
 			name: 'Rival Languagues',
-			description: 'Most rivals speak Caelian and two other languages.'
+			description: 'Most rivals speak Келіан (Caelian) and two other languages.'
 		}
 	],
 	malice: [

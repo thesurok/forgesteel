@@ -10,7 +10,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The blood of a devil',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -31,7 +31,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A piece of ice from Quintessence that never melts',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -47,7 +47,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A vial of blood from a living saint',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -63,7 +63,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A magnet made from rare metals',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -79,7 +79,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A sprig of dockwart, a rare plant with natural anesthetic properties',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -95,7 +95,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The preserved, intact amygdala of a mindkiller',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -111,7 +111,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The heart of a lion, bear, or other large predatory animal',
-			source: 'Texts or lore in Low Kuric',
+			source: 'Texts or lore in Низький Курик (Low Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -127,7 +127,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The crown of a usurper',
-			source: 'Texts or lore in Kalliak',
+			source: 'Texts or lore in Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -143,7 +143,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The pinfeather of a giant hawk',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -159,7 +159,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An adamantine spearhead',
-			source: 'Texts or lore in Zaliac',
+			source: 'Texts or lore in Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -183,7 +183,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Frozen bones from the lair of a white dragon',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -199,7 +199,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A slaughter demon’s horn',
-			source: 'Texts or lore in High Kuric',
+			source: 'Texts or lore in Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -215,7 +215,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A cutting from a century-old living tree in a graveyard',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -231,7 +231,7 @@ export class ImbuedWeaponData {
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Oil from an olothec’s liver',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -256,7 +256,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An executioner’s hood worn during the execution of a mage',
-			source: 'Texts or lore in The First Language',
+			source: 'Texts or lore in Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -272,7 +272,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Riverbed silt harvested from the Abyssal Wasteland',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -288,7 +288,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An iron rod charged by the death throes of an essence of storms',
-			source: 'Texts or lore in Low Kuric',
+			source: 'Texts or lore in Низький Курик (Low Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -304,7 +304,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The remains of a sworn foe of the creature imbuing the item',
-			source: 'Texts or lore in Kalliak',
+			source: 'Texts or lore in Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -320,7 +320,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The weapon must be dipped in the Glacial Forge in the coldest depths of Hell',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -336,7 +336,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'Wrappings from a mummy buried at least a century ago',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -352,7 +352,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The intact, still-thinking brain of a voiceless talker',
-			source: 'Texts or lore in Voll',
+			source: 'Texts or lore in Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -368,7 +368,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A chain once used to restrain an angel',
-			source: 'Texts or lore in Anjali',
+			source: 'Texts or lore in Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -384,7 +384,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A piece of metal touched by a sun',
-			source: 'Texts or lore in Ullorvic',
+			source: 'Texts or lore in Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -416,7 +416,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The central eye of an overmind',
-			source: 'Texts or lore in Variac',
+			source: 'Texts or lore in Варіак (Variac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -432,7 +432,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'An oracle of storms must willingly bless the weapon with lightning while it is being wielded, and its wielder must survive this trial',
-			source: 'Texts or lore in Low Kuric',
+			source: 'Texts or lore in Низький Курик (Low Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -448,7 +448,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'The true name of a devil who hunts other devils',
-			source: 'Texts or lore in Kalliak',
+			source: 'Texts or lore in Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -464,7 +464,7 @@ You can change this weapon’s shape and form, granting one of the following ben
 		type: ItemType.ImbuedWeapon,
 		crafting: FactoryLogic.createProject({
 			prerequisites: 'A feather from a bird, once thought extinct, who dwells at the eye of an ever-whirling tornado',
-			source: 'Texts or lore in Yllyric',
+			source: 'Texts or lore in Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),

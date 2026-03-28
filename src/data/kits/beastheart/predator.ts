@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const predator: Kit = {
 	id: 'kit-predator',
-	name: 'Predator',
-	description: 'The Predator kit lets you move fast and strike hard. It’s commonly used by Prowlers, but it’s also useful for Sparks who want to stay out of their enemies’ way and for Guardians and Punishers who want to overwhelm their enemies with speed and power.',
+	name: 'Хижак',
+	description: 'Набір «Хижак» дозволяє швидко рухатися й бити боляче. Його часто обирають звіросерця, що полюють із тіні, але він також корисний тим, хто хоче не потрапляти ворогам під руку, а також тим, хто прагне задавити супротивників швидкістю та силою.',
 	type: 'Beastheart',
 	armor: [KitArmor.Light],
 	weapon: [KitWeapon.Light],
@@ -23,18 +23,18 @@ export const predator: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-predator-1',
-				name: 'Assassin\'s Leap',
-				description: 'You spring forward, leaving a wounded foe in your wake.',
+				name: 'Стрибок убивці',
+				description: 'Ви рвучко кидаєтеся вперед, лишаючи по собі пораненого ворога.',
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
 				target: 'Одна істота',
 				cost: 'signature',
 				sections: [
-					FactoryLogic.createAbilitySectionText('Before using this ability, you can jump in a straight line up to a number of squares equal to your Intuition score. During this jump, you can pass through enemies’ spaces without them counting as difficult terrain. You deal extra damage equal to the number of squares you jumped.'),
-					FactoryLogic.createAbilitySectionText('2 + С damage'),
+					FactoryLogic.createAbilitySectionText('Перед використанням цієї здібності ви можете стрибнути по прямій на кількість клітинок, що дорівнює вашому показнику Інтуїції. Під час цього стрибка ви можете проходити крізь клітинки ворогів, і вони не вважаються складною місцевістю. Ви завдаєте додаткової шкоди, рівної кількості клітинок, які перестрибнули.'),
+					FactoryLogic.createAbilitySectionText('2 + С шкоди'),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'Your jump doesn’t provoke opportunity attacks.'
+						effect: 'Ваш стрибок не провокує атаки можливості.'
 					})
 				]
 			})

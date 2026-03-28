@@ -123,7 +123,7 @@ It is whispered that, with the Life Oath broken, it is not a matter of 'if' but 
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Aranox', 'Secluded, communal, labor.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.communal, UpbringingData.labor, 'Khamish')
+	culture: FactoryLogic.createCulture('Aranox', 'Secluded, communal, labor.', CultureType.Ancestral, EnvironmentData.secluded, OrganizationData.communal, UpbringingData.labor, 'Кхаміш (Khamish)')
 };
 
 const solar: Ancestry = {
@@ -302,7 +302,7 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 		})
 	],
 	ancestryPoints: 3,
-	culture: FactoryLogic.createCulture('Solar', 'Urban, bureaucratic, noble.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.noble, 'Axiomatic')
+	culture: FactoryLogic.createCulture('Solar', 'Urban, bureaucratic, noble.', CultureType.Ancestral, EnvironmentData.urban, OrganizationData.bureaucratic, UpbringingData.noble, 'Аксіоматичний (Axiomatic)')
 };
 
 // #endregion
@@ -319,7 +319,7 @@ To create is to grasp at immortality. From the humblest apprentice to a master a
 
 As a magewright, you are able to utilize the majesty of magic and infuse it into the stone and steel of your creations. Bolstered with your enchantments, these tools can alter the nature of your allies assault or deploy constructs as unyielding sentinels upon the battlefield. Your choice of vocation determines which of these approaches you are best equipped to use.`,
 	type: 'standard',
-	subclassName: 'Vocation',
+	subclassName: 'Покликання',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Reason]
@@ -2616,7 +2616,7 @@ You were deemed worthy of a secret Art known only to a chosen few, allowing you 
 
 As a Scion, you are the the quiet before the storm. You move like the wind, and strike as lightning. Your flexibility is unmatched - each blow empowered to suit the moment, whether to debilitate foes, or bring their end closer still. The battlefield is a canvas upon which you paint your masterpiece, and your Art is your brush.`,
 	type: 'standard',
-	subclassName: 'Art',
+	subclassName: 'Мистецтво',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Agility, Characteristic.Reason]
@@ -3513,7 +3513,7 @@ You made a pact with an otherworldly being in exchange for power. Thanks to this
 
 As a vessel, you debilitate your enemies and bolster yourself, sacrificing long-term power for short term gain (or vice versa). You call on otherworldly gifts to rend your foes’ souls, and glimpse into the realms beyond ours.`,
 	type: 'standard',
-	subclassName: 'Otherworldly Patron',
+	subclassName: 'Потойбічний покровитель',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Presence]
@@ -4656,7 +4656,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						}),
 						FactoryLogic.feature.createLanguage({
 							id: 'vessel-subclass-3-1-3b',
-							language: 'Mindspeech'
+							language: 'Мислемова (Mindspeech)'
 						}),
 						FactoryLogic.feature.create({
 							id: 'vessel-subclass-3-1-4',

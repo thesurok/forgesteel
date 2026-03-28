@@ -51,7 +51,7 @@ When an NPC devil is ready to make an offer, divide their interest by 2 to get t
 		{
 			id: 'devil-info-6',
 			name: 'Devil Languages',
-			description: 'Most devils speak Anjal and Caelian, among other languages. The more powerful a devil, the more languages they learn in order to more easily make ironclad contracts with a wide variety of people and cultures. Outside of rare circumstances, devils are always willing to negotiate, ever desiring to twist a situation in their favor.'
+			description: 'Most devils speak Анжаль (Anjal) and Келіан (Caelian), among other languages. The more powerful a devil, the more languages they learn in order to more easily make ironclad contracts with a wide variety of people and cultures. Outside of rare circumstances, devils are always willing to negotiate, ever desiring to twist a situation in their favor.'
 		},
 		{
 			id: 'devil-info-7',
@@ -62,7 +62,7 @@ Although some devils enjoy comfort and opulence for their own sake, they primari
 The following are samples of the wonders that a devil can offer—to only the most discriminating customers, of course. A devil might only have two or three of these items available for trade, but others (such as an archdevil’s wing) can be won by force. See Draw Steel: Heroes for more information about how these items can be used by heroes.
 
 - Components: An archdevil’s wing, archdevil’s blood, soul chalk, a wide selection of true names
-- Project Sources: Notes in Anjali for the Devil’s Bargain armor enhancement or a Hellcharger Helm, notes in Hyrallic for a Mediator’s Charm
+- Project Sources: Notes in Анжалі (Anjali) for the Devil’s Bargain armor enhancement or a Hellcharger Helm, notes in Гіраллік (Hyrallic) for a Mediator’s Charm
 - Titles: Diabolist, Maestro
 - Treasures: G’Allios Visiting Card, Thief of Joy
 - Wealth: Each hero can earn 1 wealth in exchange for a small favor`

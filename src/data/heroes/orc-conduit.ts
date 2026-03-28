@@ -136,7 +136,7 @@ export const orcConduit = {
 			data: {
 				options: [],
 				count: 1,
-				selected: ['Kalliak']
+				selected: ['Калліак (Kalliak)']
 			}
 		},
 		languages: [],
@@ -3816,7 +3816,7 @@ export const orcConduit = {
 				options: [],
 				count: 1,
 				selected: [
-					'Caelian'
+					'Келіан (Caelian)'
 				]
 			}
 		}

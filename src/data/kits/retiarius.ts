@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const retiarius: Kit = {
 	id: 'kit-retiarius',
-	name: 'Retiarius',
-	description: 'The retiarius is often depicted as a lightly armored warrior with a net in one hand and a trident in the other, and this kit gives you the equipment and fighting technique to make that happen. Tie up your foe with a net and then poke them to death!',
+	name: 'Ретіарій',
+	description: 'Ретіарія часто зображають легкоброньованим воїном із сіткою в одній руці та тризубом в іншій, і цей набір дає вам спорядження та техніку бою, щоб втілити саме це. Спершу сплутайте ворога сіткою, а потім заколіть його!',
 	type: '',
 	armor: [KitArmor.Light],
 	weapon: [KitWeapon.Polearm, KitWeapon.Ensnaring],
@@ -24,8 +24,8 @@ export const retiarius: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-retiarius-signature',
-				name: 'Net And Stab',
-				description: 'The well-thrown net that follows your main attack leaves your foes right where you want them.',
+				name: 'Сітка й удар',
+				description: 'Влучно кинута після основної атаки сітка лишає ворога саме там, де вам потрібно.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,9 +35,9 @@ export const retiarius: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage; Л < [слабкий] slowed (EoT)',
-							tier2: '4 + С or A damage; Л < [середній] slowed (EoT)',
-							tier3: '6 + С or A damage; Л < [сильний] restrained (EoT)'
+							tier1: '2 + С або Л шкоди; Л < [слабкий] сповільнений (до кінця ходу)',
+							tier2: '4 + С або Л шкоди; Л < [середній] сповільнений (до кінця ходу)',
+							tier3: '6 + С або Л шкоди; Л < [сильний] скутий (до кінця ходу)'
 						})
 					)
 				]

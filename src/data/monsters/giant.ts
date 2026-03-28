@@ -68,7 +68,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 		{
 			id: 'giant-info-6',
 			name: 'Giant Languages',
-			description: 'Most giants speak their kind’s dialect of High Kuric. Many hill giants also know Caelian.'
+			description: 'Most giants speak their kind’s dialect of Високий Курик (High Kuric). Many hill giants also know Келіан (Caelian).'
 		}
 	],
 	malice: [

@@ -65,6 +65,7 @@ import { TerrainCategory } from '@/enums/terrain-category';
 import { TerrainRoleType } from '@/enums/terrain-role-type';
 import { Tip } from '@/models/tip';
 import { Title } from '@/models/title';
+import { COMMON_LANGUAGE_NAME } from '@/utils/language-names';
 import { Utils } from '@/utils/utils';
 
 export class FactoryLogic {
@@ -92,7 +93,7 @@ export class FactoryLogic {
 				FactoryLogic.feature.createLanguageChoice({
 					id: 'default-language',
 					name: 'Default Language',
-					selected: [ 'Caelian' ]
+					selected: [COMMON_LANGUAGE_NAME]
 				})
 			],
 			state: FactoryLogic.createHeroState(),
@@ -203,7 +204,7 @@ export class FactoryLogic {
 			type: type,
 			language: FactoryLogic.feature.createLanguageChoice({
 				id: id,
-				selected: language ? [ language ] : []
+				selected: language ? [language] : []
 			}),
 			languages: [],
 			environment: environment || null,
@@ -236,7 +237,7 @@ export class FactoryLogic {
 			subclassCount: 1,
 			primaryCharacteristicsOptions: [],
 			primaryCharacteristics: [],
-			featuresByLevel: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map(n => ({ level: n, features: [] })),
+			featuresByLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => ({ level: n, features: [] })),
 			abilities: [],
 			subclasses: [],
 			level: 1,
@@ -278,7 +279,7 @@ export class FactoryLogic {
 			id: Utils.guid(),
 			name: '',
 			description: '',
-			featuresByLevel: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map(n => ({ level: n, features: [], optionalFeatures: [] })),
+			featuresByLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => ({ level: n, features: [], optionalFeatures: [] })),
 			abilities: [],
 			selected: false
 		};
@@ -298,7 +299,7 @@ export class FactoryLogic {
 			id: Utils.guid(),
 			name: '',
 			description: '',
-			featuresByLevel: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map(n => ({ level: n, features: [], optionalFeatures: [] })),
+			featuresByLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => ({ level: n, features: [], optionalFeatures: [] })),
 			resourceGains: [],
 			defaultFeatures: []
 		};
@@ -462,7 +463,7 @@ export class FactoryLogic {
 			description: data.description || '',
 			itemPrerequisites: data.prerequisites || '',
 			source: data.source || '',
-			characteristic: data.characteristic || [ Characteristic.Reason ],
+			characteristic: data.characteristic || [Characteristic.Reason],
 			goal: data.goal || 0,
 			isCustom: data.isCustom ?? false,
 			progress: null
@@ -708,7 +709,7 @@ export class FactoryLogic {
 				levelAdjustment: 0,
 				convertToSolo: false
 			},
-			monsters: [ m ],
+			monsters: [m],
 			state: {
 				staminaDamage: 0,
 				staminaTemp: 0,
@@ -746,7 +747,7 @@ export class FactoryLogic {
 			motivations: [],
 			pitfalls: [],
 			languages: [],
-			outcomes: [ '', '', '', '', '', '' ]
+			outcomes: ['', '', '', '', '', '']
 		};
 	};
 
@@ -757,7 +758,7 @@ export class FactoryLogic {
 			description: '',
 			difficulty: EncounterDifficulty.Standard,
 			scene: '',
-			sections: [ FactoryLogic.createMontageSection() ],
+			sections: [FactoryLogic.createMontageSection()],
 			outcomes: {
 				totalSuccess: '',
 				partialSuccess: '',
@@ -922,7 +923,7 @@ export class FactoryLogic {
 		crit?: string
 	}): PowerRoll => {
 		return {
-			characteristic: data.characteristic ? Array.isArray(data.characteristic) ? data.characteristic : [ data.characteristic ] : [],
+			characteristic: data.characteristic ? Array.isArray(data.characteristic) ? data.characteristic : [data.characteristic] : [],
 			bonus: data.bonus ?? 0,
 			tier1: data.tier1,
 			tier2: data.tier2,

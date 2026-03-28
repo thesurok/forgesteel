@@ -49,7 +49,7 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 		{
 			id: 'lizardfolk-info-5',
 			name: 'Lizardfolk Languages',
-			description: 'Most lizardfolk speak Caelian and their own dialect of Khamish.'
+			description: 'Most lizardfolk speak Келіан (Caelian) and their own dialect of Кхаміш (Khamish).'
 		}
 	],
 	malice: [

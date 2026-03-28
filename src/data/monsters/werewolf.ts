@@ -41,7 +41,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 		{
 			id: 'werewolf-info-5',
 			name: 'Werewolf Languages',
-			description: 'Werewolves can speak any language they knew before they were cursed. A werewolf who has spent time researching their curse might also know Khamish, Anjali, or Khelt, depending on the circumstances underlying their transformation.'
+			description: 'Werewolves can speak any language they knew before they were cursed. A werewolf who has spent time researching their curse might also know Кхаміш (Khamish), Анжалі (Anjali), or Кхелт (Khelt), depending on the circumstances underlying their transformation.'
 		}
 	],
 	malice: [

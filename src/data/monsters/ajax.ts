@@ -16,7 +16,7 @@ export const ajax: MonsterGroup = {
 			id: 'ajax-info-1',
 			name: 'By Might and Merit',
 			description: `
-Ajax the Invincible has earned his title. He graduated top of his class at Capital’s military academy, and then immediately launched into a campaign across his homeland of Phaedros. At his side was his advisor Mortum, a nefarious wizard who guided Ajax in the footsteps of the Caelian Empire’s conquests before them.
+Ajax the Invincible has earned his title. He graduated top of his class at Capital’s military academy, and then immediately launched into a campaign across his homeland of Phaedros. At his side was his advisor Mortum, a nefarious wizard who guided Ajax in the footsteps of the Келіан (Caelian) Empire’s conquests before them.
 
 Together, Ajax and Mortum went on to subjugate and enlist hamlet after town after city after territory with little standing in their way. When they successfully returned the Chrysopolis—an ancient flying sky-elf city—to the sky, and their accomplishments literally rose above the country—no one could ignore their might any longer.`
 		},
@@ -35,7 +35,7 @@ His arsenal is vast and strategically picked to round out his strength. There ar
 		{
 			id: 'ajax-info-4',
 			name: 'Ajax’s Languages',
-			description: 'Ajax speaks Caelian, Higaran, Khoursirian, Phaedran, Riojan, Vaniric, and Vaslorian.'
+			description: 'Ajax speaks Келіан (Caelian), Хігаран (Higaran), Кхурсіріан (Khoursirian), Федран (Phaedran), Ріохан (Riojan), Ванірик (Vaniric), and Васлоріан (Vaslorian).'
 		}
 	],
 	malice: [

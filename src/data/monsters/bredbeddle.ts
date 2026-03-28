@@ -30,7 +30,7 @@ Travelers warn one another of roads rumored to be haunted by “wild green knigh
 		{
 			id: 'bredbeddle-info-3',
 			name: 'Bredbeddle Languages',
-			description: 'When a bredbeddle communicates, they usually use the languages that their head’s previous owner knew or High Kuric. A bredbeddle that’s taken multiple heads over their lifetime will most likely know Caelian as well.'
+			description: 'When a bredbeddle communicates, they usually use the languages that their head’s previous owner knew or Високий Курик (High Kuric). A bredbeddle that’s taken multiple heads over their lifetime will most likely know Келіан (Caelian) as well.'
 		}
 	],
 	malice: [

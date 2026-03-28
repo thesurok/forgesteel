@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const swordAndBoard: Kit = {
 	id: 'kit-sword-and-board',
-	name: 'Sword and Board',
-	description: 'The Sword and Board kit doesn\'t just give you a shield—it makes the shield part of your offensive arsenal. With a medium weapon in one hand and a block of steel or solid oak in the other, you protect yourself while you control the battlefield.',
+	name: 'Меч і щит',
+	description: 'Набір «Меч і щит» не просто дає вам щит - він робить його частиною вашого наступального арсеналу. Зі зброєю середнього розміру в одній руці та плитою сталі чи міцного дуба в іншій ви захищаєте себе й водночас контролюєте поле бою.',
 	type: '',
 	armor: [KitArmor.Medium, KitArmor.Shield],
 	weapon: [KitWeapon.Medium],
@@ -24,8 +24,8 @@ export const swordAndBoard: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-sword-and-board-signature',
-				name: 'Shield Bash',
-				description: 'In your hands, a shield isn\'t just for protection.',
+				name: 'Удар щитом',
+				description: 'У ваших руках щит - це не лише захист.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee()],
@@ -35,9 +35,9 @@ export const swordAndBoard: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage; push 1',
-							tier2: '5 + С or A damage; push 2',
-							tier3: '7 + С or A damage; push 3; M < [сильний] prone'
+							tier1: '2 + С або Л шкоди; штовхнути на 1',
+							tier2: '5 + С або Л шкоди; штовхнути на 2',
+							tier3: '7 + С або Л шкоди; штовхнути на 3; С < [сильний] розпластаний'
 						})
 					)
 				]

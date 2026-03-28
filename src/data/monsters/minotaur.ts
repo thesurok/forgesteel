@@ -34,7 +34,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 		{
 			id: 'minotaur-info-4',
 			name: 'Mintaur Languages',
-			description: 'Most minotaurs speak their own dialect of Khamish.'
+			description: 'Most minotaurs speak their own dialect of Кхаміш (Khamish).'
 		}
 	],
 	malice: [

@@ -111,6 +111,24 @@ describe.concurrent('cleanupText', () => {
 	});
 });
 
+describe.concurrent('cleanupFeature', () => {
+	test.each([
+		['Дослідження/Інтриги Skills', 'Навички Дослідження/Інтриги'],
+		['Intrigue Perk', 'Перевага Інтриги'],
+		['Lore Skill', 'Навичка Знання']
+	])('normalizes mixed-language feature names for classic sheet output', (name, expected) => {
+		const feature = FactoryLogic.feature.create({
+			id: 'cleanup-feature',
+			name: name,
+			description: ''
+		});
+
+		const result = SheetFormatter.cleanupFeature(feature);
+
+		expect(result.name).toBe(expected);
+	});
+});
+
 describe.concurrent('calculateFeatureSize', () => {
 	test('properly calculates size for features with tables', () => {
 		const feature = FactoryLogic.feature.create({
@@ -469,7 +487,7 @@ describe('calculateProjectDetailCardSize', () => {
 			name: 'Craft Black Ash Dart',
 			description: 'Yields 1d3 darts, or three darts if crafted by a shadow',
 			prerequisites: 'Three vials of black ash from the College of Black Ash',
-			source: 'Texts or lore in Szetch',
+			source: 'Texts or lore in Сзетч (Szetch)',
 			characteristic: 'A or I',
 			pointsGoal: 45
 		} as ProjectSheet;
@@ -486,21 +504,21 @@ describe('calculateProjectsOverviewCardSize', () => {
 				name: 'Craft Buzz Balm',
 				characteristic: 'R or I',
 				prerequisites: 'An ounce of demon honey',
-				source: 'Texts or lore in Kalliak',
+				source: 'Texts or lore in Калліак (Kalliak)',
 				pointsGoal: 45
 			},
 			{
 				name: 'Craft Healing Potion',
 				characteristic: 'R or I',
 				prerequisites: 'An ounce of costmary leaves',
-				source: 'Texts or lore in Caelian',
+				source: 'Texts or lore in Келіан (Caelian)',
 				pointsGoal: 45
 			},
 			{
 				name: 'Craft Foesense Lenses',
 				characteristic: 'R or I',
 				prerequisites: 'Two clear lenses carved from volcanic glass',
-				source: 'Texts or lore in Caelian',
+				source: 'Texts or lore in Келіан (Caelian)',
 				pointsGoal: 450
 			},
 			{
@@ -508,7 +526,7 @@ describe('calculateProjectsOverviewCardSize', () => {
 				characteristic: 'A or I',
 				effect: 'Yields 1d3 darts, or three darts if crafted by a shadow',
 				prerequisites: 'Three vials of black ash from the College of Black Ash',
-				source: 'Texts or lore in Szetch',
+				source: 'Texts or lore in Сзетч (Szetch)',
 				pointsGoal: 45
 			}
 		];

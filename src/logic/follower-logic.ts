@@ -3,6 +3,7 @@ import { FollowerType } from '@/enums/follower-type';
 import { SkillList } from '@/enums/skill-list';
 import { Sourcebook } from '@/models/sourcebook';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
+import { COMMON_LANGUAGE_NAME } from '@/utils/language-names';
 
 export class FollowerLogic {
 	static getCharacteristicArrays = (type: FollowerType) => {
@@ -52,6 +53,6 @@ export class FollowerLogic {
 	};
 
 	static getLanguageOptions = (sourcebooks: Sourcebook[]) => {
-		return SourcebookLogic.getLanguages(sourcebooks).filter(l => l.name !== 'Caelian');
+		return SourcebookLogic.getLanguages(sourcebooks).filter(l => l.name !== COMMON_LANGUAGE_NAME);
 	};
 }

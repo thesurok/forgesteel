@@ -6,8 +6,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const whirlwind: Kit = {
 	id: 'kit-whirlwind',
-	name: 'Whirlwind',
-	description: 'The Whirlwind kit makes effective use of whips, granting you mobility, damage, and reach. If you want to be a fast-moving warrior who lashes foes with a chain or whip, then this is the kit for you.',
+	name: 'Вихор',
+	description: 'Набір «Вихор» дозволяє ефективно використовувати батоги, надаючи вам рухливість, шкоду й досяжність. Якщо ви хочете бути швидким воїном, що шмагає ворогів ланцюгом чи батогом, це саме ваш набір.',
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Whip],
@@ -23,8 +23,8 @@ export const whirlwind: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-whirlwind-signature',
-				name: 'Extension Of My Arm',
-				description: 'When you draw your whip back after an attack, your enemy is drawn ever closer.',
+				name: 'Продовження моєї руки',
+				description: 'Коли ви відтягуєте батіг після удару, ворога тягне дедалі ближче.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createMelee(2)],
@@ -34,9 +34,9 @@ export const whirlwind: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage; vertical pull 1',
-							tier2: '6 + С or A damage; vertical pull 2',
-							tier3: '9 + С or A damage; vertical pull 3'
+							tier1: '3 + С або Л шкоди; вертикально притягнути на 1',
+							tier2: '6 + С або Л шкоди; вертикально притягнути на 2',
+							tier3: '9 + С або Л шкоди; вертикально притягнути на 3'
 						})
 					)
 				]

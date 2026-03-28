@@ -68,7 +68,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 		{
 			id: 'undead-3rd-info-1',
 			name: 'Koptourok',
-			description: 'Koptourok is a Variac name that roughly translates to “dead tourist.” It’s given to those who meet their end suffocating in the depths, whether they drowned in a subterranean lake, wandered into a cave of trapped gas, or were crushed by a rockslide. These rasping, slouching undead rise from their grave desperate for the one thing they’ve lost: breath.'
+			description: 'Koptourok is a Варіак (Variac) name that roughly translates to “dead tourist.” It’s given to those who meet their end suffocating in the depths, whether they drowned in a subterranean lake, wandered into a cave of trapped gas, or were crushed by a rockslide. These rasping, slouching undead rise from their grave desperate for the one thing they’ve lost: breath.'
 		},
 		{
 			id: 'undead-3rd-info-2',
@@ -93,7 +93,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 		{
 			id: 'undead-4th-info-2',
 			name: 'Lithgekh',
-			description: 'Every mage who lives long enough eventually contends with the fact that their knowledge will one day leave the world. For those who can’t stomach this idea, seeking the immortality of the lich often becomes an irresistible temptation. But many of those who try and fail to achieve lichdom become lithgekh—a word in the First Language meaning “lich corpse.” Having failed to create a proper soul vessel, a lithgekh suffers an eternal hunger for magic to sustain themself. Liches will sometimes trick or tempt mortal mages into pursuing lichdom, only to sabotage them and create a lithgekh under the lich’s control. These servants are prized by liches for their ability to disrupt enemy magic and empower their own.'
+			description: 'Every mage who lives long enough eventually contends with the fact that their knowledge will one day leave the world. For those who can’t stomach this idea, seeking the immortality of the lich often becomes an irresistible temptation. But many of those who try and fail to achieve lichdom become lithgekh—a word in Перша мова (The First Language) meaning “lich corpse.” Having failed to create a proper soul vessel, a lithgekh suffers an eternal hunger for magic to sustain themself. Liches will sometimes trick or tempt mortal mages into pursuing lichdom, only to sabotage them and create a lithgekh under the lich’s control. These servants are prized by liches for their ability to disrupt enemy magic and empower their own.'
 		},
 		{
 			id: 'undead-1st-info-5',

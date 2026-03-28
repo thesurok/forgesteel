@@ -300,7 +300,7 @@ export const humanTalent = {
 			data: {
 				options: [],
 				count: 1,
-				selected: ['Hyrallic']
+				selected: ['Гіраллік (Hyrallic)']
 			}
 		},
 		languages: [],
@@ -360,7 +360,7 @@ export const humanTalent = {
 		name: 'Talent',
 		description: '\nA rare few people are born with the potential to harness psionic power, but only those who experience an awakening, a significant event that activates a talent’s abilities, can tap into the mind’s full potential. You are one of those people—a master of psionics and a source of incredible power created through sheer force of will. You can move and change matter, time, gravity, the laws of physics, or another creature’s mind.\n\nAs a talent, you are limited only by the strength of your mind. But the ability to wield multiple powers at once and change reality at will involves a gamble. Every manifestation has a chance of harming you, and talents who use too much power too quickly pay a deadly price.',
 		type: 'standard',
-		subclassName: 'Tradition',
+		subclassName: 'Традиція',
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
@@ -558,7 +558,7 @@ export const humanTalent = {
 							options: [],
 							count: 1,
 							selected: [
-								'Mindspeech'
+								'Мислемова (Mindspeech)'
 							]
 						}
 					},
@@ -5648,8 +5648,8 @@ export const humanTalent = {
 					options: [],
 					count: 2,
 					selected: [
-						'Vaslorian',
-						'Yllyric'
+						'Васлоріан (Vaslorian)',
+						'Іллірик (Yllyric)'
 					]
 				}
 			},
@@ -5728,7 +5728,7 @@ export const humanTalent = {
 				options: [],
 				count: 1,
 				selected: [
-					'Caelian'
+					'Келіан (Caelian)'
 				]
 			}
 		}

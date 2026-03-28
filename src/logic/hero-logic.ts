@@ -31,6 +31,7 @@ import { SkillList } from '@/enums/skill-list';
 import { Sourcebook } from '@/models/sourcebook';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
 import { SummonLogic } from '@/logic/summon-logic';
+import { normalizeLanguageName } from '@/utils/language-names';
 import { Utils } from '@/utils/utils';
 
 export class HeroLogic {
@@ -158,7 +159,7 @@ export class HeroLogic {
 				// Distance bonus / damage bonus are handled separately
 
 				if (customization.characteristic) {
-					ability.sections.filter(s => s.type === 'roll').forEach(s => s.roll.characteristic = [ customization.characteristic! ]);
+					ability.sections.filter(s => s.type === 'roll').forEach(s => s.roll.characteristic = [customization.characteristic!]);
 				}
 
 				if (customization.notes) {
@@ -339,11 +340,12 @@ export class HeroLogic {
 		const languages: Language[] = [];
 		Collections.distinct(languageNames, l => l)
 			.forEach(name => {
-				const language = allLanguages.find(l => l.name === name);
+				const normalizedName = normalizeLanguageName(name);
+				const language = allLanguages.find(l => normalizeLanguageName(l.name) === normalizedName);
 				if (language) {
 					languages.push(language);
 				} else {
-					languages.push({ name: name, description: '', type: LanguageType.Custom, related: [] });
+					languages.push({ name: normalizedName, description: '', type: LanguageType.Custom, related: [] });
 				}
 			});
 
@@ -532,10 +534,10 @@ export class HeroLogic {
 				.filter(data => data.field === FeatureField.Speed)
 				.forEach(data => value += ModifierLogic.calculateModifierValue(data, hero));
 
-			if (hero.state.conditions.some(c => [ ConditionType.Grabbed, ConditionType.Restrained ].includes(c.type))) {
+			if (hero.state.conditions.some(c => [ConditionType.Grabbed, ConditionType.Restrained].includes(c.type))) {
 				value = 0;
 			}
-			if (hero.state.conditions.some(c => [ ConditionType.Slowed ].includes(c.type))) {
+			if (hero.state.conditions.some(c => [ConditionType.Slowed].includes(c.type))) {
 				value = Math.min(value, 2);
 			}
 
@@ -557,7 +559,7 @@ export class HeroLogic {
 	};
 
 	static getSpeedModified = (hero: Hero) => {
-		if (hero.state.conditions.some(c => [ ConditionType.Grabbed, ConditionType.Restrained, ConditionType.Slowed ].includes(c.type))) {
+		if (hero.state.conditions.some(c => [ConditionType.Grabbed, ConditionType.Restrained, ConditionType.Slowed].includes(c.type))) {
 			return true;
 		}
 
@@ -599,7 +601,7 @@ export class HeroLogic {
 	};
 
 	static getSaveThreshold = (hero: Hero) => {
-		const values = [ 6 ];
+		const values = [6];
 
 		HeroLogic.getFeatures(hero)
 			.map(f => f.feature)
@@ -886,18 +888,18 @@ export class HeroLogic {
 	static getCharacteristicArrays = (primaryCount: number) => {
 		if (primaryCount === 2) {
 			return [
-				[ 2, -1, -1 ],
-				[ 1, 0, 0 ],
-				[ 1, 1, -1 ]
+				[2, -1, -1],
+				[1, 0, 0],
+				[1, 1, -1]
 			];
 		}
 
 		if (primaryCount === 1) {
 			return [
-				[ 2, 2, -1, -1 ],
-				[ 2, 1, 1, -1 ],
-				[ 2, 1, 0, 0 ],
-				[ 1, 1, 1, 0 ]
+				[2, 2, -1, -1],
+				[2, 1, 1, -1],
+				[2, 1, 0, 0],
+				[1, 1, 1, 0]
 			];
 		}
 
@@ -905,7 +907,7 @@ export class HeroLogic {
 	};
 
 	static calculateCharacteristicArrays = (array: number[], primary: Characteristic[]) => {
-		const all = [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ];
+		const all = [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence];
 		const others = all.filter(c => !primary.includes(c));
 
 		return Collections.distinct(Collections.getPermutations(array), item => item.join(', ')).map(arr => {
@@ -1175,7 +1177,7 @@ export class HeroLogic {
 					case FeatureType.SkillChoice: {
 						while (feature.data.selected.length < feature.data.count) {
 							const current = HeroLogic.getSkills(hero, sourcebooks).map(s => s.name);
-							const allOptions = [ ...feature.data.options ];
+							const allOptions = [...feature.data.options];
 							feature.data.listOptions.forEach(list => {
 								SourcebookLogic
 									.getSkills(sourcebooks)

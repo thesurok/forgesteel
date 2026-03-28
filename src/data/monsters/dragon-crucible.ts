@@ -38,7 +38,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 		{
 			id: 'dragon-crucible-info-4',
 			name: 'Crucible Dragon Languages',
-			description: 'The oldest of crucible dragons are known to speak some Vastariax, though younger dragons are typically silent. However, survivors of an encounter with a younger crucible dragon sometimes report the monster using the Caelian phrases “not enough” and “mine.”'
+			description: 'The oldest of crucible dragons are known to speak some Вастаріакс (Vastariax), though younger dragons are typically silent. However, survivors of an encounter with a younger crucible dragon sometimes report the monster using the Келіан (Caelian) phrases “not enough” and “mine.”'
 		}
 	],
 	malice: [

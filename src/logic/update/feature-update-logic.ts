@@ -5,7 +5,66 @@ import { FeatureType } from '@/enums/feature-type';
 import { ItemUpdateLogic } from '@/logic/update/item-update-logic';
 
 export class FeatureUpdateLogic {
+	private static readonly featureNameSuffixMap: Record<string, string> = {
+		Skill: 'Навичка',
+		Skills: 'Навички',
+		Perk: 'Перевага'
+	};
+
+	private static readonly featureNameGroupMap: Record<string, string> = {
+		Crafting: 'Ремесло',
+		Exploration: 'Дослідження',
+		Interpersonal: 'Міжособистісні',
+		Intrigue: 'Інтриги',
+		Lore: 'Знання',
+		Supernatural: 'Надприродне',
+		Special: 'Особливе',
+		Ремесло: 'Ремесло',
+		Дослідження: 'Дослідження',
+		Міжособистісні: 'Міжособистісні',
+		Інтриги: 'Інтриги',
+		Знання: 'Знання',
+		Надприродне: 'Надприродне',
+		Особливе: 'Особливе'
+	};
+
+	static normalizeFeatureName = (name: string) => {
+		const trimmedName = name.trim();
+		const exactMatch = FeatureUpdateLogic.featureNameSuffixMap[trimmedName];
+		if (exactMatch) {
+			return exactMatch;
+		}
+
+		if (/^signature ability$/i.test(trimmedName)) {
+			return 'Фірмова навичка';
+		}
+
+		const pointAbilityMatch = /^(?<cost>\d+)\s*pt\s+ability$/i.exec(trimmedName);
+		if (pointAbilityMatch?.groups) {
+			return `${pointAbilityMatch.groups.cost}-очкова навичка`;
+		}
+
+		const match = /^(?<groups>.+?)\s+(?<suffix>Skill|Skills|Perk)$/.exec(trimmedName);
+		if (!match?.groups) {
+			return name;
+		}
+
+		const suffix = FeatureUpdateLogic.featureNameSuffixMap[match.groups.suffix];
+		const groups = match.groups.groups
+			.split('/')
+			.map(group => group.trim())
+			.map(group => FeatureUpdateLogic.featureNameGroupMap[group]);
+
+		if (groups.some(group => !group)) {
+			return name;
+		}
+
+		return `${suffix} ${groups.join('/')}`;
+	};
+
 	static updateFeature = (feature: Feature) => {
+		feature.name = FeatureUpdateLogic.normalizeFeatureName(feature.name);
+
 		switch (feature.type) {
 			case FeatureType.Ability:
 				AbilityUpdateLogic.updateAbility(feature.data.ability);
@@ -62,7 +121,7 @@ export class FeatureUpdateLogic {
 					feature.data.characteristic = Characteristic.Intuition;
 				}
 				if (feature.data.levels === undefined) {
-					feature.data.levels = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+					feature.data.levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 				}
 				feature.data.selected.forEach(d => {
 					if (d.resourceGains === undefined) {

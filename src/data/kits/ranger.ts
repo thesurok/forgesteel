@@ -7,8 +7,8 @@ import { KitWeapon } from '@/enums/kit-weapon';
 
 export const ranger: Kit = {
 	id: 'kit-ranger',
-	name: 'Ranger',
-	description: 'The Ranger kit outfits you with light armor and weapons for every challenge, letting you easily switch between melee and ranged combat. This kit provides a good balance of bonuses to defense and offense to create a hero who is a jack-of-all-trades.',
+	name: 'Слідопит',
+	description: 'Набір «Слідопит» споряджає вас бронею та зброєю на всі випадки життя, дозволяючи легко перемикатися між ближнім і дистанційним боєм. Він дає добрий баланс захисту й наступу, створюючи героя на всі руки.',
 	type: '',
 	armor: [KitArmor.Medium],
 	weapon: [KitWeapon.Medium, KitWeapon.Bow],
@@ -24,8 +24,8 @@ export const ranger: Kit = {
 		FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'kit-ranger-signature',
-				name: 'Hamstring Shot',
-				description: 'A well-placed shot leaves your enemy struggling to move.',
+				name: 'Підсічний постріл',
+				description: 'Влучний постріл лишає ворога ледве здатним рухатися.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 				distance: [FactoryLogic.distance.createRanged(5)],
@@ -35,9 +35,9 @@ export const ranger: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage; Л < [слабкий] slowed (save ends)',
-							tier2: '4 + С or A damage; Л < [середній] slowed (save ends)',
-							tier3: '6 + С or A damage; Л < [сильний] slowed (save ends)'
+							tier1: '2 + С або Л шкоди; Л < [слабкий] сповільнений (рят. кидок закінчує)',
+							tier2: '4 + С або Л шкоди; Л < [середній] сповільнений (рят. кидок закінчує)',
+							tier3: '6 + С або Л шкоди; Л < [сильний] сповільнений (рят. кидок закінчує)'
 						})
 					)
 				]

@@ -1402,7 +1402,7 @@ export class ComplicationData {
 			FactoryLogic.feature.create({
 				id: 'comp-raisedByBeasts-d',
 				name: 'Недолік: Вирощений звірами',
-				description: 'У вас немає культури, але ви все ще можете говорити Caelian.'
+				description: 'У вас немає культури, але ви все ще можете говорити Келіан (Caelian).'
 			})
 		]
 	};

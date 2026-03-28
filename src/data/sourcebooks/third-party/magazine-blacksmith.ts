@@ -231,7 +231,7 @@ A wand made of twisted flower stems with three colourful petals sprouting from t
 	keywords: [AbilityKeyword.Green, AbilityKeyword.Magic, AbilityKeyword.Wand],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A yellow rose, a red lily, a white sunflower',
-		source: 'Texts or lore in Yllyric',
+		source: 'Texts or lore in Іллірик (Yllyric)',
 		characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
@@ -305,7 +305,7 @@ This belt, always damp to the touch, growls and barks in reaction to the vital e
 	keywords: [AbilityKeyword.Belt, AbilityKeyword.Magic, AbilityKeyword.Rot],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Pelts from three partially-decomposed beasts, each from a different world',
-		source: 'Texts or lore in Tholl',
+		source: 'Texts or lore in Толл (Tholl)',
 		characteristic: [Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
@@ -369,7 +369,7 @@ Light does not reflect off of this full suit of armour.`,
 	keywords: [KitArmor.Heavy, AbilityKeyword.Void],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Four ingots of starmetal',
-		source: 'Texts or lore in Ullorvic',
+		source: 'Texts or lore in Уллорвік (Ullorvic)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
@@ -418,7 +418,7 @@ The water in this clear staff is constantly moving and shifting between ice, wat
 	keywords: [AbilityKeyword.Implement, AbilityKeyword.Magic, AbilityKeyword.Water],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A vial of water from seven different seas',
-		source: 'Texts or lore in The First Language',
+		source: 'Texts or lore in Перша мова (The First Language)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 		goal: 450
 	}),
@@ -467,7 +467,7 @@ This morning star has a glowing, cylindrical head that emits a flare-up whenever
 	keywords: [AbilityKeyword.Fire, KitWeapon.Heavy, AbilityKeyword.Magic],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Metal from a siege weapon used on the losing side of a war',
-		source: 'Texts or lore in Anjali',
+		source: 'Texts or lore in Анжалі (Anjali)',
 		characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
@@ -516,7 +516,7 @@ This tower shield has a projection of Orden seen from a great height across its 
 	keywords: [AbilityKeyword.Earth, AbilityKeyword.Magic, KitArmor.Shield],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Roots from an oak tree, a 10-pound tungsten cube',
-		source: 'Texts or lore in Zaliac',
+		source: 'Texts or lore in Заліак (Zaliac)',
 		characteristic: [Characteristic.Might, Characteristic.Presence],
 		goal: 450
 	}),
@@ -585,7 +585,7 @@ Tiny, fluttering wings decorate the sides of these sandals.`,
 	keywords: [AbilityKeyword.Air, AbilityKeyword.Feet, AbilityKeyword.Magic],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'One jar of gale force winds',
-		source: 'Texts or lore in Low Rhyvian',
+		source: 'Texts or lore in Низький Ривіан (Low Rhyvian)',
 		characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition],
 		goal: 450
 	}),
@@ -646,7 +646,7 @@ This black metal implant replaces your spine with a set of extendable blades.`,
 	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Spine],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Eight zodiakol tipped blades',
-		source: 'Texts or lore in Voll',
+		source: 'Texts or lore in Волл (Voll)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
@@ -675,7 +675,7 @@ This neural implant causes a numb sensation at the base of your neck.`,
 	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Neck],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'Poison from an axiomatic scorpion',
-		source: 'Texts or lore in Axiomatic',
+		source: 'Texts or lore in Аксіоматичний (Axiomatic)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
@@ -704,7 +704,7 @@ This bulky crystalline implant replaces your eye with a singular bead of red.`,
 	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Eye],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A polished fire quartz from Quintessence',
-		source: 'Texts or lore in Voll',
+		source: 'Texts or lore in Волл (Voll)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 150
 	}),
@@ -750,7 +750,7 @@ Just in case…`,
 	keywords: [AbilityKeyword.Implant, AbilityKeyword.Psionic, AbilityKeyword.Brain],
 	crafting: FactoryLogic.createProject({
 		prerequisites: 'A flake of prismacore, synlirii cerebral fluid',
-		source: 'Texts or lore in Variac',
+		source: 'Texts or lore in Варіак (Variac)',
 		characteristic: [Characteristic.Reason, Characteristic.Intuition],
 		goal: 300
 	}),
@@ -1096,7 +1096,7 @@ You can install a psionic implant into either yourself or another hero. Implants
 
 | D6 | Event |
 |:---|:------|
-| 1  | Before the roll, the hero discovers an installation manual built into the implant. If the hero can read Voll, they treat the project roll as an automatic breakthrough.   |
+| 1  | Before the roll, the hero discovers an installation manual built into the implant. If the hero can read Волл (Voll), they treat the project roll as an automatic breakthrough.   |
 | 2  | The Psi-tech the hero is installing contains a volatile, experimental AI, previously unknown to them. The AI may be purged from the device, but the Director must secretly roll an Easy Reason test for the hero. On a Tier 1 result, the AI survives within the implant, now desiring vengeance. If the hero chooses to keep the AI, it can communicate telepathically. As long as it remains on good terms with the hero, it grants an edge on all future research rolls. However, the AI is jealous of any other sentient equipment the hero possesses.   |
 | 3  | The implant contains a psionic alarm; its creator immediately becomes aware of its location and that someone is attempting to install it.   |
 | 4  | The stress of the installation process causes periodic malfunctions from the half-installed implant. Until the project is complete, the recipient gains the Psychic Eruption complication.   |
@@ -1104,7 +1104,7 @@ You can install a psionic implant into either yourself or another hero. Implants
 | 6  | A rogue Psi-borg learns of the procedure and offers to help install the implant. They reveal that they are being hunted by UNISOL agents, who are already on their trail. If the hero protects the Psi-borg from the agents, the Psi-borg becomes one of the hero’s followers. The follower is either a retainer or a sage as determined by the Director. If the hero helps the Psi-borg, they also gain an immediate 50 project points toward the implant’s installation.   |
 `,
 	prerequisites: 'A Psionic Implant',
-	source: 'Text or lore in either Voll or Variac',
+	source: 'Text or lore in either Волл (Voll) or Варіак (Variac)',
 	characteristic: [Characteristic.Reason, Characteristic.Intuition],
 	goal: 100
 });

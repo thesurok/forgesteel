@@ -23,7 +23,7 @@ export const talent: HeroClass = {
 
 Як талант, ви обмежені лише міццю власного розуму. Проте здатність одночасно володіти кількома силами й змінювати реальність на свій розсуд — це ризик. Кожне проявлення може нашкодити вам, і таланти, що використовують забагато сили занадто швидко, платять смертельною ціною.`,
 	type: 'standard',
-	subclassName: 'Tradition',
+	subclassName: 'Традиція',
 	subclassCount: 1,
 	primaryCharacteristicsOptions: [
 		[Characteristic.Reason, Characteristic.Presence]
@@ -103,7 +103,7 @@ export const talent: HeroClass = {
 
 				FactoryLogic.feature.createLanguageChoice({
 					id: 'talent-1-3',
-					selected: ['Mindspeech']
+					selected: ['Мислемова (Mindspeech)']
 				}),
 				FactoryLogic.feature.create({
 					id: 'talent-1-4',

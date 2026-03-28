@@ -47,7 +47,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 		{
 			id: 'human-info-5',
 			name: 'Human Languages',
-			description: 'Most humans speak Caelian and one Vaslorian human language.'
+			description: 'Most humans speak Келіан (Caelian) and one Васлоріан (Vaslorian) human language.'
 		}
 	],
 	malice: [

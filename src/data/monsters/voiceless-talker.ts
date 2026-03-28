@@ -60,7 +60,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 		{
 			id: 'voiceless-talker-info-9',
 			name: 'Voiceless Talker Languages',
-			description: 'Most voiceless talkers communicate telepathically using Mindspeech and speak Variac.'
+			description: 'Most voiceless talkers communicate telepathically using Мислемова (Mindspeech) and speak Варіак (Variac).'
 		}
 	],
 	malice: [
