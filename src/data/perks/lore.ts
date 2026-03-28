@@ -6,8 +6,8 @@ import { PerkList } from '@/enums/perk-list';
 export class LorePerkData {
 	static butIKnowWhoDoes: Perk = {
 		id: 'perk-but-i-know-who-does',
-		name: 'But I Know Who Does',
-		description: 'Whenever you fail a test to recall lore using a skill from the lore skill group, you instinctively recall the nearest location where the information you seek might be found. This could be the tower of a local sage, a library in a nearby city, somewhere deep in a dungeon, or any other location of the Director’s determination. The Director can decide that certain lore can’t be revealed this way.',
+		name: 'Але я знаю, хто знає',
+		description: 'Кожного разу, коли ви провалюєте тест, щоб пригадати знання, використовуючи навичку з групи знань, ви інстинктивно згадуєте найближче місце, де можна знайти потрібну інформацію. Це може бути вежа місцевого мудреця, бібліотека в сусідньому місті, щось глибоко в підземеллі чи будь-яке інше місце на розсуд Директора. Директор може вирішити, що певні знання не можна відкрити таким способом.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -15,8 +15,8 @@ export class LorePerkData {
 
 	static eideticMemory: Perk = {
 		id: 'perk-eidetic-memory',
-		name: 'Eidetic Memory',
-		description: 'Your mind is an encyclopedia, though not always an easy one to organize. When you finish a respite, choose one skill from the lore skill group that you don’t have. You have that skill until you finish your next respite. Additionally, if you spend 1 uninterrupted minute or more reading any page of text, you can memorize its contents, allowing you to memorize entire books with sufficient time.',
+		name: 'Ейдетична памʼять',
+		description: 'Ваш розум - це енциклопедія, хай і не завжди зручна для впорядкування. Коли ви завершуєте перепочинок, оберіть одну навичку з групи знань, якої у вас немає. Ви маєте цю навичку до завершення наступного перепочинку. Додатково, якщо ви витратите 1 безперервну хвилину або більше на читання будь-якої сторінки тексту, то можете запамʼятати її вміст, а маючи достатньо часу - й цілі книжки.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -24,8 +24,8 @@ export class LorePerkData {
 
 	static expertSage: Perk = {
 		id: 'perk-expert-sage',
-		name: 'Expert Sage',
-		description: 'Whenever you make a test as part of a crafting or research project using a skill from the lore skill group, you can make the power roll twice and use either roll.',
+		name: 'Досвідчений мудрець',
+		description: 'Кожного разу, коли ви робите тест як частину ремісничого або дослідницького проєкту, використовуючи навичку з групи знань, ви можете зробити кидок сили двічі й використати будь-який із результатів.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -33,15 +33,15 @@ export class LorePerkData {
 
 	static iveReadAboutThisPlace: Perk = {
 		id: 'perk-ive-read-about-this-place',
-		name: 'I\'ve Read About This Place',
+		name: 'Я читав про це місце',
 		description: `
-Each time you enter a settlement you’ve never been to before, you can ask the Director one of the following questions:
+Щоразу, коли ви входите до поселення, у якому ніколи раніше не були, ви можете поставити Директору одне з таких запитань:
 
-* Who is the most influential public figure in this settlement?
-* Who in this settlement would be the friendliest to us right now?
-* What does this settlement need most from outsiders?
+* Хто є найвпливовішою публічною постаттю в цьому поселенні?
+* Хто в цьому поселенні зараз був би до нас найприязнішим?
+* Чого це поселення найбільше потребує від чужинців?
 
-If the Director doesn’t have an answer to the question you ask, or doesn’t want to answer, you can instead ask a different question.`,
+Якщо в Директора немає відповіді на поставлене вами запитання або він не хоче відповідати, ви можете натомість поставити інше запитання.`,
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -49,15 +49,15 @@ If the Director doesn’t have an answer to the question you ask, or doesn’t w
 
 	static linguist: Perk = {
 		id: 'perk-linguist',
-		name: 'Linguist',
-		description: 'You have an ear for languages. You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before.',
+		name: 'Лінгвіст',
+		description: 'У вас добрий слух до мов. Ви автоматично вивчаєте дві нові мови, якщо раніше регулярно чули їх у мовленні або бачили в письмі.',
 		type: FeatureType.Multiple,
 		data: {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'perk-linguist-1',
-					name: 'Linguist',
-					description: 'If you spend 7 days or more in a place where you regularly hear or read a language you don’t know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost.'
+					name: 'Лінгвіст',
+					description: 'Якщо ви проводите 7 днів або більше в місці, де регулярно чуєте або читаєте мову, якої не знаєте, то можете вловити її достатньо, щоб підтримувати розмову або розуміти базову письмову інформацію. Опісля, коли ви вже підхопили мову таким чином, ви можете вивчити її через дослідницький проєкт Learn New Language за половину звичайної вартості цілі проєкту.'
 				}),
 				FactoryLogic.feature.createLanguageChoice({
 					id: 'perk-linguist-2',
@@ -70,8 +70,8 @@ If the Director doesn’t have an answer to the question you ask, or doesn’t w
 
 	static polymath: Perk = {
 		id: 'perk-polymath',
-		name: 'Polymath',
-		description: 'Whenever you make a test to recall lore and don’t have a skill that applies to the test, you gain a +1 bonus to the power roll.',
+		name: 'Полімат',
+		description: 'Кожного разу, коли ви робите тест, щоб пригадати знання, і не маєте навички, що підходить до цього тесту, ви отримуєте +1 бонус до кидка сили.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -79,8 +79,8 @@ If the Director doesn’t have an answer to the question you ask, or doesn’t w
 
 	static specialist: Perk = {
 		id: 'perk-specialist',
-		name: 'Specialist',
-		description: 'You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double edge on tests made to recall lore using this skill. Additionally, your specialist knowledge grants you notoriety in fields related to the chosen skill. You treat your Renown as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.',
+		name: 'Спеціаліст',
+		description: 'Ви є провідним фахівцем у певній темі. Оберіть одну навичку з групи знань, яку ви маєте. Ви завжди маєте подвійну перевагу на тести, щоб пригадати знання, використовуючи цю навичку. Додатково, ваша спеціалізована обізнаність дає вам репутацію в галузях, повʼязаних із цією навичкою. Ви вважаєте свій Renown на 1 вищим під час переговорів із NPC, який знає вашу славу, або на 2 вищим, якщо він має ту саму навичку, яку ви обрали для цієї переваги.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore
@@ -88,8 +88,8 @@ If the Director doesn’t have an answer to the question you ask, or doesn’t w
 
 	static travellingSage: Perk = {
 		id: 'perk-travelling-sage',
-		name: 'Travelling Sage',
-		description: 'On any day when you don’t take a respite, you can spend 1 uninterrupted hour working on a research project using a skill you have from the lore skill group. If you do so, you gain 1d10 project points toward that project.',
+		name: 'Мандрівний мудрець',
+		description: 'У будь-який день, коли ви не берете перепочинок, ви можете витратити 1 безперервну годину на роботу над дослідницьким проєктом, використовуючи навичку з групи знань, яку маєте. Якщо зробите це, ви отримаєте 1d10 очок проєкту для цього проєкту.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Lore

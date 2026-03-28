@@ -5,8 +5,8 @@ import { PerkList } from '@/enums/perk-list';
 export class CraftingPerkData {
 	static areaOfExpertise: Perk = {
 		id: 'perk-area-of-expertise',
-		name: 'Area of Expertise',
-		description: 'Choose one skill you already have from the crafting skill group. Whenever you obtain a tier 1 outcome on an easy or medium test using this skill, you treat it as a tier 2 outcome instead. Additionally, if you spend 1 minute inspecting an object related to the chosen skill, you can estimate its value and learn of any flaws in its construction.',
+		name: 'Галузь майстерності',
+		description: 'Оберіть одну навичку з групи навичок ремесла, яку ви вже маєте. Кожного разу, коли ви отримуєте результат 1 рівня на легкому або середньому тесті з цією навичкою, вважайте його результатом 2 рівня. Додатково, якщо ви витратите 1 хвилину на огляд предмета, повʼязаного з обраною навичкою, то зможете оцінити його вартість і виявити будь-які вади конструкції.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting
@@ -14,8 +14,8 @@ export class CraftingPerkData {
 
 	static expertArtisan: Perk = {
 		id: 'perk-expert-artisan',
-		name: 'Expert Artisan',
-		description: 'Whenever you make a test as part of a crafting or research project that uses a skill you already have from the crafting skill group, you can make the power roll twice and use either roll.',
+		name: 'Майстерний ремісник',
+		description: 'Кожного разу, коли ви робите тест як частину ремісничого або дослідницького проєкту, що використовує навичку з групи ремесла, яку ви вже маєте, ви можете зробити кидок сили двічі й використати будь-який із результатів.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting
@@ -23,8 +23,8 @@ export class CraftingPerkData {
 
 	static handy: Perk = {
 		id: 'perk-handy',
-		name: 'Handy',
-		description: 'Whenever you make a test to craft something and don’t have a skill that applies to the test, you gain a +1 bonus to the power roll.',
+		name: 'Умілі руки',
+		description: 'Кожного разу, коли ви робите тест, щоб щось створити, і не маєте навички, що підходить до цього тесту, ви отримуєте +1 бонус до кидка сили.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting
@@ -32,8 +32,8 @@ export class CraftingPerkData {
 
 	static improvisationCreation: Perk = {
 		id: 'perk-improvisation-creation',
-		name: 'Improvisation Creation',
-		description: 'Without needing to make a test—and even without tools—you can quickly jury-rig or repair a mundane item or piece of equipment related to a skill you have from the crafting skill group. That item lasts for 1 hour or works for one use or activation (whichever comes first, as the Director determines), then breaks beyond repair. For example, if you have the Carpentry skill, you could repair a rickety wooden bridge long enough for a group of creatures to cross it, or build a simple shovel made of wood that can be used for 1 hour.',
+		name: 'Імпровізоване творіння',
+		description: 'Без жодного тесту і навіть без інструментів ви можете швидко змайструвати або полагодити звичайний предмет чи одиницю спорядження, повʼязані з навичкою з групи ремесла, яку ви маєте. Такий предмет існує 1 годину або витримує одне використання чи активацію, залежно від того, що настане раніше за рішенням Директора, а потім ламається безповоротно. Наприклад, якщо ви маєте навичку Carpentry, то можете полагодити хисткий деревʼяний міст настільки, щоб ним перейшла група істот, або зробити просту деревʼяну лопату, якою можна користуватися 1 годину.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting
@@ -41,8 +41,8 @@ export class CraftingPerkData {
 
 	static inspiredArtisan: Perk = {
 		id: 'perk-inspired-artisan',
-		name: 'Inspired Artisan',
-		description: 'When you make a project roll using a skill from the crafting skill group, you can spend a hero token to make another project roll for the same project as part of the same respite activity. You can’t use this perk more than once per respite.',
+		name: 'Натхненний ремісник',
+		description: 'Коли ви робите кидок проєкту, використовуючи навичку з групи ремесла, ви можете витратити жетон героя, щоб у межах тієї самої дії перепочинку зробити ще один кидок проєкту для того самого проєкту. Ви не можете використати цю перевагу більше одного разу за перепочинок.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting
@@ -50,8 +50,8 @@ export class CraftingPerkData {
 
 	static travellingArtisan: Perk = {
 		id: 'perk-travelling-artisan',
-		name: 'Travelling Artisan',
-		description: 'On any day when you don’t take a respite, you can spend 1 uninterrupted hour working on a crafting project using a skill you have from the crafting skill group. If you do so, you gain 1d10 project points toward that project.',
+		name: 'Мандрівний ремісник',
+		description: 'У будь-який день, коли ви не берете перепочинок, ви можете витратити 1 безперервну годину на роботу над ремісничим проєктом, використовуючи навичку з групи ремесла, яку маєте. Якщо зробите це, ви отримаєте 1d10 очок проєкту для цього проєкту.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Crafting

@@ -5,8 +5,8 @@ import { PerkList } from '@/enums/perk-list';
 export class InterpersonalPerkData {
 	static charmingLiar: Perk = {
 		id: 'perk-charming-liar',
-		name: 'Charming Liar',
-		description: 'If you fail a test using the Lie skill, you don’t suffer any consequences associated with the failure. Additionally, during a negotiation, you can be caught in one lie without negative consequences. When you use either benefit of this perk, you can’t use this perk again until you earn 1 or more Victories.',
+		name: 'Чарівний брехун',
+		description: 'Якщо ви провалюєте тест із навичкою Lie, то не зазнаєте жодних наслідків, повʼязаних із провалом. Додатково, під час переговорів вас можуть спіймати на одній брехні без негативних наслідків. Після використання будь-якої з переваг цієї особливості ви не можете використати її знову, доки не здобудете 1 або більше перемог.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -14,8 +14,8 @@ export class InterpersonalPerkData {
 
 	static dazzler: Perk = {
 		id: 'perk-dazzler',
-		name: 'Dazzler',
-		description: 'Whenever a creature watches you sing, dance, or perform a role (as an actor, not just in disguise) for 1 uninterrupted minute or more, you gain an edge on any test made to influence that creature for 1 hour after the performance ends.',
+		name: 'Сліпучий виступ',
+		description: 'Кожного разу, коли істота безперервно спостерігає за тим, як ви співаєте, танцюєте або граєте роль упродовж 1 хвилини чи довше, ви отримуєте перевагу на будь-який тест, щоб вплинути на цю істоту протягом 1 години після завершення виступу.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -23,8 +23,8 @@ export class InterpersonalPerkData {
 
 	static engrossingMonologue: Perk = {
 		id: 'perk-engrossing-monologue',
-		name: 'Engrossing Monologue',
-		description: 'Whenever you are not in combat, you can shout to get the attention of hearing creatures within 10 squares of you. Each such creature who is not hostile toward you listens to what you have to say for 1 uninterrupted minute or more, or until they sense danger or any form of imminent harm. While creatures are listening to you, each of your allies gains an edge on tests made to avoid being noticed by those creatures.',
+		name: 'Захопливий монолог',
+		description: 'Коли ви не в бою, ви можете гукнути, щоб привернути увагу всіх істот, які чують вас у межах 10 клітинок. Кожна така істота, що не є ворожою до вас, слухає вас безперервно щонайменше 1 хвилину або доки не відчує небезпеку чи неминучу шкоду. Поки істоти вас слухають, кожен ваш союзник отримує перевагу на тести, щоб залишитися непоміченим для цих істот.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -32,8 +32,8 @@ export class InterpersonalPerkData {
 
 	static harmonizer: Perk = {
 		id: 'perk-harmonizer',
-		name: 'Harmonizer',
-		description: 'You can make a Presence test using the Music skill to influence creatures who don’t have emotions or can’t understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.',
+		name: 'Гармонізатор',
+		description: 'Ви можете робити тест Присутності з навичкою Music, щоб впливати на істот, які не мають емоцій або не можуть вас зрозуміти. Додатково, один раз під час переговорів, коли союзник висуває аргумент, ви можете заграти музику, щоб дати цьому союзникові перевагу на його тест.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -41,8 +41,8 @@ export class InterpersonalPerkData {
 
 	static lieDetector: Perk = {
 		id: 'perk-lie-detector',
-		name: 'Lie Detector',
-		description: 'In response to another creature communicating information to you, you can spend a hero token to determine whether that information contained any knowing lies. If so, you know what the lies are, but not what the truth is.',
+		name: 'Детектор брехні',
+		description: 'Коли інша істота повідомляє вам інформацію, ви можете витратити жетон героя, щоб визначити, чи містить ця інформація свідомі неправдиві твердження. Якщо так, ви розумієте, де саме брехня, але не дізнаєтеся, яка правда.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -50,8 +50,8 @@ export class InterpersonalPerkData {
 
 	static openBook: Perk = {
 		id: 'perk-open-book',
-		name: 'Open Book',
-		description: 'Whenever you speak one-on-one with a creature, you can ask them one question about themself that might typically offend them or raise suspicion. If they choose not to answer honestly, they simply deflect or redirect the question, with no further complications. If they choose to answer honestly, the creature can immediately ask you a question about yourself in turn, which you must answer honestly.',
+		name: 'Відкрита книга',
+		description: 'Коли ви розмовляєте з істотою віч-на-віч, ви можете поставити їй одне запитання про неї саму, яке зазвичай могло б образити або викликати підозру. Якщо вона вирішить не відповідати чесно, то просто ухилиться від відповіді або переведе розмову без подальших ускладнень. Якщо ж вона відповість чесно, істота може одразу поставити вам запитання про вас самих, і ви мусите відповісти чесно.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -59,8 +59,8 @@ export class InterpersonalPerkData {
 
 	static pardonMyFriend: Perk = {
 		id: 'perk-pardon-my-friend',
-		name: 'Pardon My Friend',
-		description: 'When an ally within 5 squares fails a Presence test, you can step in and make a Presence test that takes a bane, with your roll replacing the ally’s roll. This perk can be used only once per test, even if more than one character has it.',
+		name: 'Пробачте мого друга',
+		description: 'Коли союзник у межах 5 клітинок провалює тест Присутності, ви можете втрутитися і зробити тест Присутності зі шкодою, а ваш результат замінить результат союзника. Цю перевагу можна використати лише один раз на тест, навіть якщо вона є в кількох персонажів.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -68,8 +68,8 @@ export class InterpersonalPerkData {
 
 	static powerPlayer: Perk = {
 		id: 'perk-power-player',
-		name: 'Power Player',
-		description: 'Whenever you make a test that uses the Brag, Flirt, or Intimidate skills, you can use Might instead of any other characteristic the test calls for.',
+		name: 'Гра мʼязами',
+		description: 'Кожного разу, коли ви робите тест із навичками Brag, Flirt або Intimidate, ви можете використовувати Силу замість будь-якої іншої характеристики, яку вимагає цей тест.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -77,8 +77,8 @@ export class InterpersonalPerkData {
 
 	static soTellMe: Perk = {
 		id: 'perk-so-tell-me',
-		name: 'So, Tell Me ...',
-		description: 'Whenever you succeed on a Presence test to influence one or more creatures, you can ask one creature you influenced a follow-up question after the test resolves, which they must answer honestly. At the Director’s discretion, the creature doesn’t have to answer the question completely—or at all—if the response would put them or a loved one in danger.',
+		name: 'Ну то розкажи...',
+		description: 'Кожного разу, коли ви успішно проходите тест Присутності, щоб вплинути на одну чи більше істот, після завершення тесту ви можете поставити одній із цих істот уточнювальне запитання, на яке вона мусить відповісти чесно. На розсуд Директора істота може не відповідати повністю або взагалі не відповідати, якщо правдива відповідь поставила б її чи близьку їй істоту під загрозу.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -86,8 +86,8 @@ export class InterpersonalPerkData {
 
 	static spotTheTell: Perk = {
 		id: 'perk-spot-the-tell',
-		name: 'Spot The Tell',
-		description: 'Whenever you make a test to read a person and obtain a tier 3 outcome, you notice several tells that give away their true feelings. Any test you make to read that person in the future gains an edge.',
+		name: 'Помітити виказку',
+		description: 'Кожного разу, коли ви робите тест, щоб прочитати людину, і отримуєте результат 3 рівня, ви помічаєте кілька виказок, що розкривають її справжні почуття. Усі ваші майбутні тести, щоб читати цю людину, отримують перевагу.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -97,8 +97,8 @@ export class InterpersonalPerkData {
 
 	static peopleSense: Perk = {
 		id: 'perk-people-sense',
-		name: 'People Sense',
-		description: '(Beastheart only) While you are within 5 squares of your companion, when you or your companion makes a test to determine a creature’s motives, emotions, or body language, their partner can make the same test as a free triggered action. You both use the higher result.',
+		name: 'Чуття на людей',
+		description: '(Лише для Звіросерця) Поки ви перебуваєте в межах 5 клітинок від свого компаньйона, коли ви або він робите тест, щоб визначити мотиви, емоції чи мову тіла істоти, інший партнер може зробити той самий тест як безкоштовну тригерну дію. Ви обоє використовуєте вищий результат.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -106,8 +106,8 @@ export class InterpersonalPerkData {
 
 	static voiceOfTheWild: Perk = {
 		id: 'perk-voice-of-the-wild',
-		name: 'Voice of the Wild',
-		description: '(Beastheart only) Your companion can speak any language you can speak.',
+		name: 'Голос дикості',
+		description: '(Лише для Звіросерця) Ваш компаньйон може говорити будь-якою мовою, якою можете говорити ви.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal
@@ -115,8 +115,8 @@ export class InterpersonalPerkData {
 
 	static youCanPetThem: Perk = {
 		id: 'perk-you-can-pet-them',
-		name: 'You Can Pet Them, They\'re Friendly',
-		description: '(Beastheart only) While you are within 5 squares of your companion, when you make a Presence test to interact with a creature, you can use your companion’s Presence instead of your own.',
+		name: 'Їх можна погладити, вони дружні',
+		description: '(Лише для Звіросерця) Поки ви перебуваєте в межах 5 клітинок від свого компаньйона, коли ви робите тест Присутності, щоб взаємодіяти з істотою, ви можете використовувати Присутність компаньйона замість своєї.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Interpersonal

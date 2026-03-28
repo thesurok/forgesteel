@@ -6,8 +6,8 @@ import { PerkList } from '@/enums/perk-list';
 export class ExplorationPerkData {
 	static brawny: Perk = {
 		id: 'perk-brawny',
-		name: 'Brawny',
-		description: 'Whenever you fail a Might test, you can lose Stamina equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.',
+		name: 'Дужий',
+		description: 'Кожного разу, коли ви провалюєте тест Сили, ви можете втратити Витривалість, рівну 1d6 + ваш рівень, щоб підвищити результат тесту на один рівень. Ви можете використовувати цю перевагу лише раз за тест.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -15,8 +15,8 @@ export class ExplorationPerkData {
 
 	static camouflageHunter: Perk = {
 		id: 'perk-camouflage-hunter',
-		name: 'Camouflage Hunter',
-		description: 'Whenever you are in wilderness, once you are hidden from a creature, you don’t need cover or concealment to stay hidden from them.',
+		name: 'Мисливець у камуфляжі',
+		description: 'Коли ви перебуваєте в дикій місцевості, щойно ви сховалися від істоти, вам більше не потрібні прикриття чи прихованість, щоб залишатися схованими від неї.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -24,8 +24,8 @@ export class ExplorationPerkData {
 
 	static dangerSense: Perk = {
 		id: 'perk-danger-sense',
-		name: 'Danger Sense',
-		description: 'Whenever you are in a natural environment (but not in a settlement in that environment), you gain an edge on tests made using the Alertness skill, and you can’t be surprised. Additionally, you have a connection to nature that warns you if any natural disaster is imminent within the next 72 hours, though you don’t know exactly what it will entail (an earthquake, a wildfire, and so forth).',
+		name: 'Чуття небезпеки',
+		description: 'Коли ви перебуваєте в природному середовищі, але не в поселенні всередині нього, ви отримуєте перевагу на тести з навичкою Alertness, і вас неможливо застати зненацька. Додатково, ваш звʼязок із природою попереджає вас, якщо впродовж наступних 72 годин має статися природне лихо, хоча ви не знаєте точно, яким воно буде: землетрусом, лісовою пожежею тощо.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -33,19 +33,19 @@ export class ExplorationPerkData {
 
 	static friendCatapult: Perk = {
 		id: 'perk-friend-catapult',
-		name: 'Friend Catapult',
-		description: 'You hurl your ally through the air.',
+		name: 'Катапульта для друга',
+		description: 'Ви жбурляєте союзника в повітря.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-friend-catapult-1',
-				name: 'Friend Catapult',
-				description: 'You hurl your ally through the air.',
+				name: 'Катапульта для друга',
+				description: 'Ви жбурляєте союзника в повітря.',
 				type: FactoryLogic.type.createManeuver(),
 				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Себе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('You grab a willing adjacent ally or object of your size or smaller, then vertical push that target up to a number of squares equal to twice your Might score. If a creature you push falls as a result of this movement, the effective distance of the fall is reduced by a number of squares equal to twice your Might score. When you use this perk, you can’t use it again until you earn 1 or more Victories.')
+					FactoryLogic.createAbilitySectionText('Ви хапаєте сусіднього добровільного союзника або предмет вашого розміру чи меншого, а потім вертикально штовхаєте ціль на кількість клітинок до подвійного значення вашого показника Сили. Якщо істота, яку ви штовхнули, падає внаслідок цього руху, ефективна дистанція падіння зменшується на кількість клітинок, рівну подвоєному значенню вашого показника Сили. Після використання цієї переваги ви не можете використати її знову, доки не здобудете 1 або більше перемог.')
 				]
 			})
 		},
@@ -54,19 +54,19 @@ export class ExplorationPerkData {
 
 	static iveGotYou: Perk = {
 		id: 'perk-ive-got-you',
-		name: 'I\'ve Got You',
-		description: 'You catch a falling ally at the last possible moment.',
+		name: 'Я тебе спіймав',
+		description: 'Ви ловите союзника, що падає, в останню мить.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-ive-got-you-1',
-				name: 'I\'ve Got You',
-				description: 'You catch a falling ally at the last possible moment.',
-				type: FactoryLogic.type.createTrigger('A willing ally lands on you or adjacent to you when they fall.', { free: true }),
+				name: 'Я тебе спіймав',
+				description: 'Ви ловите союзника, що падає, в останню мить.',
+				type: FactoryLogic.type.createTrigger('Добровільний союзник падає на вас або поруч із вами.', { free: true }),
 				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Себе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('You catch your ally. Neither of you takes damage from the fall.')
+					FactoryLogic.createAbilitySectionText('Ви ловите свого союзника. Ніхто з вас не отримує шкоди від падіння.')
 				]
 			})
 		},
@@ -75,8 +75,8 @@ export class ExplorationPerkData {
 
 	static monsterWhisperer: Perk = {
 		id: 'perk-monster-whisperer',
-		name: 'Monster Whisperer',
-		description: 'You can use the Handle Animals skill to interact with nonsapient creatures who are not animals.',
+		name: 'Шепотун до чудовиськ',
+		description: 'Ви можете використовувати навичку Handle Animals, щоб взаємодіяти з нерозумними істотами, які не є тваринами.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -84,8 +84,8 @@ export class ExplorationPerkData {
 
 	static putYourBackIntoIt: Perk = {
 		id: 'perk-put-your-back-into-it',
-		name: 'Put Your Back Into It',
-		description: 'During montage tests, whenever you make a test to assist a test and obtain a tier 1 outcome, the assisted test doesn’t take a bane. Additionally, once per montage test, you can turn an ally’s tier 1 test outcome into a tier 2 outcome.',
+		name: 'Налягай як слід',
+		description: 'Під час монтажних тестів, коли ви робите тест на допомогу і отримуєте результат 1 рівня, тест, якому ви допомагали, не отримує шкоди. Додатково, один раз за монтажний тест ви можете перетворити результат 1 рівня союзника на результат 2 рівня.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -93,8 +93,8 @@ export class ExplorationPerkData {
 
 	static teamLeader: Perk = {
 		id: 'perk-team-leader',
-		name: 'Team Leader',
-		description: 'At the start of a group test or montage test, you can spend a hero token. If you do, all participants make tests as if they also had any skill you have from the exploration group.',
+		name: 'Лідер команди',
+		description: 'На початку групового або монтажного тесту ви можете витратити жетон героя. Якщо робите це, усі учасники проходять тести так, ніби також мали будь-яку навичку з групи дослідження, яку маєте ви.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -102,8 +102,8 @@ export class ExplorationPerkData {
 
 	static teamwork: Perk = {
 		id: 'perk-teamwork',
-		name: 'Teamwork',
-		description: 'When you take your first turn during a montage test, you can both make a test and assist another hero’s test.',
+		name: 'Командна робота',
+		description: 'Коли ви робите свій перший хід під час монтажного тесту, ви можете одночасно зробити власний тест і допомогти тесту іншого героя.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -111,8 +111,8 @@ export class ExplorationPerkData {
 
 	static woodWise: Perk = {
 		id: 'perk-wood-wise',
-		name: 'Wood Wise',
-		description: 'When you make a test using a skill from the exploration skill group and at least one of the d10s rolled is a 1, you can reroll one d10. You can use this perk only once per test.',
+		name: 'Лісова кмітливість',
+		description: 'Коли ви робите тест із навичкою з групи дослідження і принаймні один із кинутих d10 показує 1, ви можете перекинути один d10. Ви можете використовувати цю перевагу лише раз за тест.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -122,8 +122,8 @@ export class ExplorationPerkData {
 
 	static bornTracker: Perk = {
 		id: 'perk-born-tracker',
-		name: 'Born Tracker',
-		description: '(Beastheart only) You and your companion have an edge on tests made to track creatures, find your way, or search for hidden creatures.',
+		name: 'Природжений слідопит',
+		description: '(Лише для Звіросерця) Ви та ваш компаньйон маєте перевагу на тести, щоб вистежувати істот, знаходити шлях або шукати прихованих істот.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration
@@ -131,24 +131,24 @@ export class ExplorationPerkData {
 
 	static rideAlong: Perk = {
 		id: 'perk-ride-along',
-		name: 'Ride Along',
-		description: '(Beastheart only)',
+		name: 'Очима компаньйона',
+		description: '(Лише для Звіросерця)',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-ride-along-1',
-				name: 'Ride Along',
-				description: 'You ride behind your companion’s eyes.',
+				name: 'Очима компаньйона',
+				description: 'Ви дивитеся на світ очима свого компаньйона.',
 				type: FactoryLogic.type.createManeuver(),
 				distance: [FactoryLogic.distance.createMelee()],
-				target: 'Companion',
+				target: 'Компаньйон',
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
-Your body disappears, and your consciousness shares your companion’s body. While riding along, you can sense what your companion senses. You can communicate with your companion telepathically but not control them. You can’t be detected, targeted, or affected by any effect. Any condition or effect on you is temporarily suspended until you regain your body.
+Ваше тіло зникає, а ваша свідомість розділяє тіло компаньйона. Поки ви мандруєте разом із ним, ви відчуваєте все, що відчуває він. Ви можете спілкуватися з компаньйоном телепатично, але не можете ним керувати. Вас не можна виявити, націлити чи зачепити жодним ефектом. Будь-який стан чи ефект на вас тимчасово призупиняється, доки ви не повернете своє тіло.
 
-While you are riding along, your companion continues to benefit normally from any magic treasure you are wearing.
+Поки ви перебуваєте в компаньйоні, він і далі звичайним чином отримує переваги від будь-якого магічного скарбу, який ви носите.
 
-While riding along with your companion, you can’t act, except to spend a free maneuver to regain your body. You also regain your body if your companion dies or chooses to eject you. When you regain your body, you reappear in a space adjacent to your companion.`)
+Поки ви перебуваєте в компаньйоні, ви не можете діяти, окрім як витратити безкоштовний маневр, щоб повернути собі тіло. Ви також повертаєте тіло, якщо компаньйон помирає або вирішує виштовхнути вас. Коли ви повертаєте своє тіло, то зʼявляєтеся в клітинці поруч із компаньйоном.`)
 				]
 			})
 		},
@@ -157,19 +157,19 @@ While riding along with your companion, you can’t act, except to spend a free 
 
 	static wildRumpus: Perk = {
 		id: 'perk-wild-rumpus',
-		name: 'Wild Rumpus',
-		description: '(Beastheart only)',
+		name: 'Дике шаленство',
+		description: '(Лише для Звіросерця)',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-wild-rumpus-1',
-				name: 'Wild Rumpus',
-				description: 'The ability to glide like a condor or race like a wolf is intoxicating—but beware the temptation to run yourself to death.',
+				name: 'Дике шаленство',
+				description: 'Здатність ширяти, мов кондор, або мчати, мов вовк, пʼянить, але остерігайтеся спокуси загнати себе до смерті.',
 				type: FactoryLogic.type.createManeuver({ free: true }),
 				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Себе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('Until the end of your next turn you and your companion gain each others’ movement tags as well as your own. You and your companion both use your speed or your companion’s speed, whichever is higher. Once you have used this ability once, each additional time you use it before you finish a respite or gain 1 or more Victories you take damage equal to your level. This Stamina loss can’t be prevented in any way.')
+					FactoryLogic.createAbilitySectionText('До кінця вашого наступного ходу ви та ваш компаньйон отримуєте рухові теги одне одного, а також власні. Ви обоє використовуєте або вашу швидкість, або швидкість компаньйона, залежно від того, яка з них вища. Після першого використання цієї здібності кожне наступне використання до завершення перепочинку або здобуття 1 чи більше перемог завдає вам шкоди, рівної вашому рівню. Цю втрату Витривалості неможливо запобігти жодним способом.')
 				]
 			})
 		},
@@ -178,8 +178,8 @@ While riding along with your companion, you can’t act, except to spend a free 
 
 	static wildsExplorer: Perk = {
 		id: 'perk-wilds-explorer',
-		name: 'Wilds Explorer',
-		description: '(Beastheart only) You and your companion have an edge on tests made to overcome environmental cold, heat, weather, unsteady ground, or challenging terrain. During your turn each of you can ignore the extra cost for the first square of difficult terrain you enter.',
+		name: 'Дослідник дикої природи',
+		description: '(Лише для Звіросерця) Ви та ваш компаньйон маєте перевагу на тести, щоб долати холод, спеку, негоду, нестійкий ґрунт або важку місцевість. Протягом свого ходу кожен із вас може ігнорувати додаткову вартість першої клітинки складної місцевості, у яку входить.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Exploration

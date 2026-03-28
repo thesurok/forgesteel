@@ -10,29 +10,29 @@ import { PerkList } from '@/enums/perk-list';
 export class SupernaturalPerkData {
 	static arcaneTrick: Perk = {
 		id: 'perk-arcane-trick',
-		name: 'Arcane Trick',
-		description: 'You cast an entertaining spell that creates a minor but impressive magical effect.',
+		name: 'Арканний трюк',
+		description: 'Ви накладаєте розважальне закляття, що створює незначний, але вражаючий магічний ефект.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-arcane-trick-1',
-				name: 'Arcane Trick',
-				description: 'You cast an entertaining spell that creates a minor but impressive magical effect.',
+				name: 'Арканний трюк',
+				description: 'Ви накладаєте розважальне закляття, що створює незначний, але вражаючий магічний ефект.',
 				type: FactoryLogic.type.createMain(),
 				keywords: [AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Себе',
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
-Choose one of the following effects:
+Оберіть один із таких ефектів:
 
-* You teleport a size 1S or smaller object adjacent to you into an unoccupied space adjacent to you.
-* Until the start of your next turn, a part of your body shoots a shower of harmless noisy sparks that light up each square adjacent to you.
-* You ignite or snuff out (your choice) every mundane light source of 1L or smaller adjacent to you.
-* You transform up to 1 pound of edible food you touch to make it taste delicious or disgusting.
-* Until the start of your next turn, you make your body exude a particular odor you’ve smelled before. This smell can be sensed by each creature within 5 squares of you, but can’t impose any condition or other drawback on those creatures.
-* You place a small magical inscription on the surface of a mundane object you touch, or you can remove an inscription that was made by you or by another creature using Arcane Trick.
-* You touch a size 1T object to cover it with an illusion that makes it look like a different object. Any creature who handles the object becomes aware of the illusion. The illusion ends when you stop touching the object.`)
+* Ви телепортуєте сусідній предмет розміру 1S або менше в іншу незайняту сусідню клітинку.
+* До початку вашого наступного ходу частина вашого тіла випускає зливу нешкідливих гучних іскор, що освітлюють кожну сусідню клітинку.
+* Ви запалюєте або гасите, на свій вибір, кожне звичайне джерело світла розміру 1L або менше поруч із вами.
+* Ви змінюєте до 1 фунта їстівної їжі, якої торкаєтеся, роблячи її надзвичайно смачною або огидною.
+* До початку вашого наступного ходу ваше тіло виділяє певний запах, який ви вже колись відчували. Цей запах відчуває кожна істота в межах 5 клітинок від вас, але він не може накладати на них жодного стану чи іншого недоліку.
+* Ви наносите невеликий магічний напис на поверхню звичайного предмета, якого торкаєтеся, або стираєте напис, зроблений вами чи іншою істотою за допомогою Арканного трюку.
+* Ви торкаєтеся предмета розміру 1T, щоб покрити його ілюзією, яка змушує його виглядати іншим предметом. Будь-яка істота, що бере предмет до рук, помічає ілюзію. Ілюзія зникає, коли ви перестаєте торкатися предмета.`)
 				]
 			})
 		},
@@ -41,19 +41,19 @@ Choose one of the following effects:
 
 	static creatureSense: Perk = {
 		id: 'perk-creature-sense',
-		name: 'Creature Sense',
-		description: 'You intuit a creature\'s keywords.',
+		name: 'Чуття істоти',
+		description: 'Ви інтуїтивно відчуваєте ключові слова істоти.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-creature-sense-1',
-				name: 'Creature Sense',
-				description: 'You intuit a creature\'s keywords.',
+				name: 'Чуття істоти',
+				description: 'Ви інтуїтивно відчуваєте ключові слова істоти.',
 				type: FactoryLogic.type.createManeuver(),
 				distance: [FactoryLogic.distance.createSelf()],
 				target: 'Себе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('Choose a creature within 10 squares. If that creature is your level or lower, you learn the keywords in their stat block (Demon, Humanoid, Undead, and so forth)')
+					FactoryLogic.createAbilitySectionText('Оберіть істоту в межах 10 клітинок. Якщо її рівень не вищий за ваш, ви дізнаєтеся ключові слова з її блоку характеристик: Demon, Humanoid, Undead тощо.')
 				]
 			})
 		},
@@ -62,7 +62,7 @@ Choose one of the following effects:
 
 	static familiar: Perk = {
 		id: 'perk-familiar',
-		name: 'Familiar',
+		name: 'Фамільяр',
 		description: '',
 		type: FeatureType.Summon,
 		data: {
@@ -70,15 +70,15 @@ Choose one of the following effects:
 				FactoryLogic.createSummon({
 					monster: FactoryLogic.createMonster({
 						id: 'familiar',
-						name: 'Familiar',
+						name: 'Фамільяр',
 						description: `
-A supernatural spirit who has taken the form of a specific small animal or animated object has chosen to be your familiar—or to adopt you as their familiar.
+Надприродний дух, який набув форми маленької тварини або оживленого предмета, обрав стати вашим фамільяром - або ж вирішив, що це ви його фамільяр.
 
-The familiar can hold small objects in their mouth or claws, but can’t perform activities that would typically require hands (opening a door, unrolling a scroll, and so forth).
+Фамільяр може тримати маленькі предмети в зубах або кігтях, але не здатен виконувати дії, для яких зазвичай потрібні руки: відчиняти двері, розгортати сувій тощо.
 
-They can’t harm other creatures or objects. They can flank in combat, but only with you.
+Він не може завдавати шкоди іншим істотам чи предметам. У бою він може заходити у фланг, але лише разом із вами.
 
-If your familiar is destroyed, you can restore them as a respite activity, or by spending a Recovery as a main action to bring them back into existence in an unoccupied space adjacent to you.`,
+Якщо вашого фамільяра знищено, ви можете відновити його як дію перепочинку або, витративши Відновлення як основну дію, повернути його до існування в незайнятій клітинці поруч із собою.`,
 						level: 0,
 						role: FactoryLogic.createMonsterRole(MonsterOrganizationType.NoOrganization, MonsterRoleType.NoRole),
 						keywords: [],
@@ -98,8 +98,8 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 							}),
 							FactoryLogic.feature.create({
 								id: 'familiar-2',
-								name: 'Telepathic',
-								description: 'While you and your familiar are within 10 squares of each other, you can communicate telepathically and share each other’s senses. While sharing senses, each of you also benefits from your own senses at the same time.'
+								name: 'Телепатичний',
+								description: 'Поки ви й ваш фамільяр перебуваєте в межах 10 клітинок одне від одного, ви можете спілкуватися телепатично і ділитися відчуттями. Поки ви ділитеся чуттями, кожен із вас водночас користується і власними чуттями.'
 							})
 						]
 					}),
@@ -113,20 +113,20 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 	static invisibleForce: Perk = {
 		id: 'perk-invisible-force',
-		name: 'Invisible Force',
-		description: 'You manipulate a tiny object with your mind.',
+		name: 'Невидима сила',
+		description: 'Ви керуєте крихітним предметом силою думки.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-invisible-force-1',
-				name: 'Invisible Force',
-				description: 'You manipulate a tiny object with your mind.',
+				name: 'Невидима сила',
+				description: 'Ви керуєте крихітним предметом силою думки.',
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.createRanged(10)],
-				target: '1 size 1T unattended object',
+				target: '1 предмет розміру 1T без нагляду',
 				sections: [
-					FactoryLogic.createAbilitySectionText('You can grab or manipulate the target object with your mind, moving the object up to a number of squares equal to your Reason, Intuition, or Presence score (your choice). You can use this ability to turn doorknobs, pull levers, and so forth. You can manipulate any small movable piece of a larger object as long as the piece is unattended and size 1T. You can’t use this ability to break a smaller piece off a larger object.')
+					FactoryLogic.createAbilitySectionText('Ви можете схопити або пересувати цільовий предмет силою думки, перемістивши його на кількість клітинок до вашого показника Розуму, Інтуїції або Присутності на вибір. Ви можете використовувати цю здібність, щоб повертати дверні ручки, тягнути важелі тощо. Ви також можете маніпулювати будь-якою маленькою рухомою частиною більшого предмета, якщо вона без нагляду і має розмір 1T. Ви не можете відламати меншу частину від більшого предмета за допомогою цієї здібності.')
 				]
 			})
 		},
@@ -135,20 +135,20 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 	static psychicWhisper: Perk = {
 		id: 'perk-psychic-whisper',
-		name: 'Psychic Whisper',
-		description: 'You send a one-way telepathic message to a friend.',
+		name: 'Психічний шепіт',
+		description: 'Ви надсилаєте одностороннє телепатичне повідомлення другові.',
 		type: FeatureType.Ability,
 		data: {
 			ability: FactoryLogic.createAbility({
 				id: 'perk-psychic-whisper-1',
-				name: 'Psychic Whisper',
-				description: 'You send a one-way telepathic message to a friend.',
+				name: 'Психічний шепіт',
+				description: 'Ви надсилаєте одностороннє телепатичне повідомлення другові.',
 				type: FactoryLogic.type.createManeuver(),
 				keywords: [AbilityKeyword.Psionic, AbilityKeyword.Ranged],
 				distance: [FactoryLogic.distance.createRanged(10)],
-				target: '1 ally who understands at least one language',
+				target: '1 союзник, який розуміє принаймні одну мову',
 				sections: [
-					FactoryLogic.createAbilitySectionText('You send a telepathic message to them that takes 10 seconds or less to speak. The target knows who the message is from and can decide to ignore it and subsequent messages.')
+					FactoryLogic.createAbilitySectionText('Ви надсилаєте телепатичне повідомлення, яке можна було б вимовити за 10 секунд або менше. Ціль знає, від кого повідомлення, і може вирішити ігнорувати його та всі наступні повідомлення.')
 				]
 			})
 		},
@@ -157,8 +157,8 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 	static ritualist: Perk = {
 		id: 'perk-ritualist',
-		name: 'Ritualist',
-		description: 'You can spend 1 uninterrupted minute to perform a magic ritual of blessing, targeting yourself or one willing creature you touch. The target has a double edge on the next test they make within the next minute. A target can’t use this benefit on an activity that takes longer than 1 minute.',
+		name: 'Ритуаліст',
+		description: 'Ви можете витратити 1 безперервну хвилину, щоб провести магічний ритуал благословення, націлений на себе або одну добровільну істоту, якої торкаєтеся. Ціль отримує подвійну перевагу на наступний тест, який зробить упродовж наступної хвилини. Цю перевагу не можна використати для дії, що триває довше за 1 хвилину.',
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Supernatural
@@ -166,17 +166,17 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 	static thingspeaker: Perk = {
 		id: 'perk-thingspeaker',
-		name: 'Thingspeaker',
+		name: 'Речемовець',
 		description: `
-When you hold an object in your hand for 1 uninterrupted minute, you can sense whether it bears emotional resonance. Objects with emotional resonance could include treasured gifts, murder weapons, or personal keepsakes.
-If the Director determines that the object bears emotional resonance, you learn the most dominant emotion associated with the object, then receive a vision that answers one of the following questions:
+Коли ви тримаєте предмет у руці 1 безперервну хвилину, ви можете відчути, чи несе він емоційний відгомін. Предметами з емоційним відгомоном можуть бути дорогі серцю подарунки, знаряддя вбивства або особисті памʼятки.
+Якщо Директор вирішує, що предмет несе емоційний відгомін, ви дізнаєтеся найсильнішу емоцію, повʼязану з ним, а тоді отримуєте видіння, яке відповідає на одне з таких запитань:
 
-* What was the name of the person whose emotion is imprinted on this object?
-* Why does this emotion linger on the object?
-* How long has it been since the object was held by the person whose emotion lingers on it?
+* Як звали людину, чия емоція відбилася на цьому предметі?
+* Чому ця емоція затрималася на предметі?
+* Скільки часу минуло відтоді, як предмет востаннє тримала людина, чия емоція на ньому лишилася?
 
-After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you.
-You take a bane on Intuition and Presence tests until you finish a respite, and you can’t use this perk again while you suffer this bane.`,
+Поставивши одне запитання, ви можете вирішити заглибитися далі й поставити ще одне зі списку, але тоді вас переповнять емоції, що не належать вам.
+До завершення перепочинку ви отримуєте шкоду на тести Інтуїції та Присутності й не можете знову використати цю перевагу, поки маєте цю шкоду.`,
 		type: FeatureType.Text,
 		data: null,
 		list: PerkList.Supernatural
