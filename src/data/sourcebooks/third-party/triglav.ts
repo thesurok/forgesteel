@@ -530,7 +530,7 @@ As a vampire, you possess supernatural abilities that make you an excellent hunt
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'vampire-class-1-3',
-					selected: ['Alertness']
+					selected: ['Пильність']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'vampire-class-1-4',
@@ -926,7 +926,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vampire-subclass-1-1-1',
-							selected: ['Сховатись']
+							selected: ['Ховання']
 						}),
 						FactoryLogic.feature.create({
 							id: 'vampire-subclass-1-1-2',
@@ -1174,7 +1174,7 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vampire-subclass-2-1-1',
-							selected: ['Nature']
+							selected: ['Природа']
 						}),
 						FactoryLogic.feature.create({
 							id: 'vampire-subclass-2-1-2',

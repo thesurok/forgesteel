@@ -14,7 +14,7 @@ export const causticAlchemy: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-sub-2-1-1',
-					selected: ['Alchemy']
+					selected: ['Алхімія']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({

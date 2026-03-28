@@ -20,7 +20,7 @@ interface InfoProps {
 export const InfoLanguage = (props: InfoProps) => {
 	if (!props.feature.description) {
 		return (
-			<Field label='Language' value={props.data.language} />
+			<Field label='Мова' value={props.data.language} />
 		);
 	}
 
@@ -35,7 +35,7 @@ interface EditProps {
 }
 
 export const EditLanguage = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureLanguageData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureLanguageData>(Utils.copy(props.data));
 
 	const setLanguage = (value: string) => {
 		const copy = Utils.copy(data);
@@ -46,11 +46,11 @@ export const EditLanguage = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Language</HeaderText>
+			<HeaderText>Мова</HeaderText>
 			<Select
 				style={{ width: '100%' }}
 				status={data.language === '' ? 'warning' : ''}
-				placeholder='Language'
+				placeholder='Мова'
 				allowClear={true}
 				options={SourcebookLogic.getLanguages(props.sourcebooks).map(option => ({ value: option.name, description: option.description }))}
 				optionRender={option => <Field label={option.data.value} value={option.data.description} />}

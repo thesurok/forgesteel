@@ -62,11 +62,11 @@ export const tactician: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-1-1',
-					selected: ['Lead']
+					selected: ['Лідерство']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'tactician-1-2',
-					options: ['Alertness', 'Architecture', 'Blacksmithing', 'Brag', 'Culture', 'Empathize', 'Fletching', 'Mechanics', 'Monsters', 'Search', 'Strategy'],
+					options: ['Пильність', 'Архітектура', 'Ковальство', 'Вихваляння', 'Культура', 'Емпатія', 'Стрільництво', 'Механіка', 'Монстри', 'Пошук', 'Стратегія'],
 					listOptions: [SkillList.Exploration],
 					count: 2
 				}),

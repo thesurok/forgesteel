@@ -25,7 +25,7 @@ interface Props {
 }
 
 export const MontageRunPanel = (props: Props) => {
-	const [ montage, setMontage ] = useState<Montage>(Utils.copy(props.montage));
+	const [montage, setMontage] = useState<Montage>(Utils.copy(props.montage));
 
 	const getChallenge = (challenge: MontageChallenge, sectionIndex: number, challengeIndex: number) => {
 		const addSuccess = () => {
@@ -97,7 +97,7 @@ export const MontageRunPanel = (props: Props) => {
 						/>
 						<ul>
 							{challenge.characteristics.length > 0 ? <li><Field label='Characteristics' value={challenge.characteristics.join(', ')} /></li> : null}
-							{challenge.skills.length > 0 ? <li><Field label='Skills' value={challenge.skills} /></li> : null}
+							{challenge.skills.length > 0 ? <li><Field label='Навички' value={challenge.skills} /></li> : null}
 							{challenge.abilities.length > 0 ? <li><Field label='Abilities' value={challenge.abilities} /></li> : null}
 						</ul>
 					</Flex>

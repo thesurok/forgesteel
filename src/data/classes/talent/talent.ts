@@ -70,7 +70,7 @@ export const talent: HeroClass = {
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-skill-a',
 					count: 2,
-					selected: ['Psionics', 'Read Person']
+					selected: ['Псіоніка', 'Зчитування людини']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'talent-skill-c',

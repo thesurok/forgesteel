@@ -92,7 +92,7 @@ export const DetailsSection = (props: DetailsSectionProps) => {
 					title='You can add your hero to a folder to group it with other heroes.'
 				/>
 				<Divider />
-				<Expander title='Language Choices'>
+				<Expander title='Вибір мов'>
 					{
 						HeroLogic.getFeatures(props.hero)
 							.map(f => f.feature)
@@ -100,11 +100,11 @@ export const DetailsSection = (props: DetailsSectionProps) => {
 							.map(f => {
 								return FactoryLogic.feature.createLanguageChoice({
 									id: f.id,
-									name: f.name || 'Language',
-									description: `${f.data.options.length > 0 ? `**Skills**: ${f.data.options.join(', ')}` : ''}`,
-									options: [ ...f.data.options ],
+									name: f.name || 'Мова',
+									description: `${f.data.options.length > 0 ? `**Мови**: ${f.data.options.join(', ')}` : ''}`,
+									options: [...f.data.options],
 									count: f.data.count,
-									selected: [ ...f.data.selected ]
+									selected: [...f.data.selected]
 								});
 							})
 							.map(f => (
@@ -131,10 +131,10 @@ export const DetailsSection = (props: DetailsSectionProps) => {
 									description: `
 ${f.data.options.length > 0 ? `**Skills**: ${f.data.options.join(', ')}` : ''}
 ${f.data.listOptions.length > 0 ? `**Lists**: ${f.data.listOptions.map(s => `${s} Skills`).join(', ')}` : ''}`,
-									options: [ ...f.data.options ],
-									listOptions: [ ...f.data.listOptions ],
+									options: [...f.data.options],
+									listOptions: [...f.data.listOptions],
 									count: f.data.count,
-									selected: [ ...f.data.selected ]
+									selected: [...f.data.selected]
 								});
 							})
 							.map(f => (

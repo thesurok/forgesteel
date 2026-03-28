@@ -1107,4 +1107,17 @@ export class FeatureLogic {
 				return 'Ця особливість дозволяє обрати титул.';
 		}
 	};
+
+	static getFeatureTypeLabel = (type: FeatureType) => {
+		switch (type) {
+			case FeatureType.Language:
+				return 'Мова';
+			case FeatureType.LanguageChoice:
+				return 'Вибір мови';
+			case FeatureType.SkillChoice:
+				return 'Вибір навички';
+			default:
+				return type;
+		}
+	};
 }

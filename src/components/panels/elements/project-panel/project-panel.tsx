@@ -36,8 +36,8 @@ interface Props {
 }
 
 export const ProjectPanel = (props: Props) => {
-	const [ project, setProject ] = useState<Project>(Utils.copy(props.project));
-	const [ editing, setEditing ] = useState<boolean>(false);
+	const [project, setProject] = useState<Project>(Utils.copy(props.project));
+	const [editing, setEditing] = useState<boolean>(false);
 
 	const getPrerequisitesMet = () => {
 		if (project.itemPrerequisites && project.progress && !project.progress.prerequisites) {
@@ -127,24 +127,24 @@ export const ProjectPanel = (props: Props) => {
 
 			return (
 				<div>
-					<HeaderText tags={[ follower.type ]}>
+					<HeaderText tags={[follower.type]}>
 						{follower.name || 'Unnamed Follower'}
 					</HeaderText>
 					<Field
 						label='Characteristics'
 						value={
-							[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+							[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 								.filter(ch => project.characteristic.includes(ch))
 								.map(ch => `${ch} ${getCharacteristic(ch)}`)
 								.join(', ')
 						}
 					/>
 					<Field
-						label='Skills'
+						label='Навички'
 						value={follower.skills.join(', ')}
 					/>
 					<Field
-						label='Languages'
+						label='Мови'
 						value={follower.languages.join(', ')}
 					/>
 				</div>
@@ -179,7 +179,7 @@ export const ProjectPanel = (props: Props) => {
 					label='Progress'
 					min={0}
 					max={project.goal || undefined}
-					steps={[ 1, 10 ]}
+					steps={[1, 10]}
 					value={project.progress.points}
 					suffix={props.project.goal ? `/ ${props.project.goal}` : undefined}
 					onChange={setPoints}

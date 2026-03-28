@@ -26,7 +26,7 @@ export const FeatureTypeSelectModal = (props: Props) => {
 									style={{ padding: '5px 15px' }}
 									onSelect={() => props.onSelect(ft)}
 								>
-									<Field label={ft} value={FeatureLogic.getFeatureTypeDescription(ft)} />
+									<Field label={FeatureLogic.getFeatureTypeLabel(ft)} value={FeatureLogic.getFeatureTypeDescription(ft)} />
 								</SelectablePanel>
 							))
 						}

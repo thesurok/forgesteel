@@ -14,7 +14,7 @@ export const paragon: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'censor-sub-3-1-1',
-					selected: ['Lead']
+					selected: ['Лідерство']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'censor-sub-3-1-2',

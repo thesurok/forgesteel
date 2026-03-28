@@ -33,8 +33,8 @@ interface Props {
 }
 
 export const FeatureEditPanel = (props: Props) => {
-	const [ feature, setFeature ] = useState<Feature | Perk>(props.feature);
-	const [ typeSelectorVisible, setTypeSelectorVisible ] = useState<boolean>(false);
+	const [feature, setFeature] = useState<Feature | Perk>(props.feature);
+	const [typeSelectorVisible, setTypeSelectorVisible] = useState<boolean>(false);
 
 	const isPerk = (feature as Perk).list !== undefined;
 
@@ -106,9 +106,9 @@ export const FeatureEditPanel = (props: Props) => {
 										{
 											(props.allowedTypes || FeatureLogic.getSelectableFeatureTypes()).length !== 1 ?
 												<>
-													<HeaderText>Feature Type</HeaderText>
+													<HeaderText>Тип особливості</HeaderText>
 													<Flex align='center' justify='space-between'>
-														<Field label={feature.type} value={FeatureLogic.getFeatureTypeDescription(feature.type)} />
+														<Field label={FeatureLogic.getFeatureTypeLabel(feature.type)} value={FeatureLogic.getFeatureTypeDescription(feature.type)} />
 														<Button onClick={() => setTypeSelectorVisible(true)}>
 															<EditOutlined />
 															Change
@@ -124,7 +124,7 @@ export const FeatureEditPanel = (props: Props) => {
 													<Select
 														style={{ width: '100%' }}
 														placeholder='Select list'
-														options={[ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special ].map(o => ({ value: o }))}
+														options={[PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special].map(o => ({ value: o }))}
 														optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 														value={(feature as Perk).list}
 														onChange={setList}

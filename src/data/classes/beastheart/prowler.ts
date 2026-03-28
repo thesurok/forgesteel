@@ -15,7 +15,7 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-2-1-1',
-					selected: ['Сховатись']
+					selected: ['Ховання']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-2-1-2',

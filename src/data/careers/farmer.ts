@@ -11,11 +11,11 @@ export const farmer: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-farmer-feature-1',
-			selected: [ 'Handle Animals' ]
+			selected: ['Догляд за тваринами']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-farmer-feature-2',
-			listOptions: [ SkillList.Exploration ],
+			listOptions: [SkillList.Exploration],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -28,7 +28,7 @@ export const farmer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-farmer-feature-5',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {

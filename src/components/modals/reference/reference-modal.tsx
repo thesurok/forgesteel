@@ -33,9 +33,9 @@ interface Props {
 }
 
 export const ReferenceModal = (props: Props) => {
-	const [ page, setPage ] = useState<string>(props.startPage || RulesPage.Rules);
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
-	const [ selectedRule, setSelectedRule ] = useState<string>('');
+	const [page, setPage] = useState<string>(props.startPage || RulesPage.Rules);
+	const [searchTerm, setSearchTerm] = useState<string>('');
+	const [selectedRule, setSelectedRule] = useState<string>('');
 
 	const getRulesSection = () => {
 		const rules = [
@@ -81,7 +81,7 @@ export const ReferenceModal = (props: Props) => {
 		];
 
 		const filteredRules = rules
-			.filter(r => Utils.textMatches([ r.label, r.content ], searchTerm))
+			.filter(r => Utils.textMatches([r.label, r.content], searchTerm))
 			.sort((a, b) => a.label.localeCompare(b.label))
 			.map(r => r.label);
 
@@ -197,7 +197,12 @@ export const ReferenceModal = (props: Props) => {
 						LanguageType.Dead
 					].map((type, n1) => (
 						<div key={n1}>
-							<HeaderText>{type} Languages</HeaderText>
+							<HeaderText>{({
+								[LanguageType.Common]: 'Загальні мови',
+								[LanguageType.Regional]: 'Регіональні мови',
+								[LanguageType.Cultural]: 'Культурні мови',
+								[LanguageType.Dead]: 'Мертві мови'
+							} as Record<LanguageType, string>)[type]}</HeaderText>
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{
 									allLanguages
@@ -345,7 +350,7 @@ export const ReferenceModal = (props: Props) => {
 				<div style={{ width: '100%', textAlign: 'center' }}>
 					<Segmented
 						name='tabs'
-						options={[ RulesPage.Rules, RulesPage.Conditions, RulesPage.Skills, RulesPage.Languages, RulesPage.Abilities ]}
+						options={[RulesPage.Rules, RulesPage.Conditions, RulesPage.Skills, RulesPage.Languages, RulesPage.Abilities]}
 						value={page}
 						onChange={setPage}
 					/>

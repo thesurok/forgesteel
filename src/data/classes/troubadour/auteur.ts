@@ -14,7 +14,7 @@ export const auteur: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '63GSnAtLidKQThSw',
-					selected: [ 'Brag' ]
+					selected: ['Вихваляння']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,8 +22,8 @@ export const auteur: SubClass = {
 						name: 'Блокування',
 						description: 'Ні, ні, ні, ви втрачаєте аудиторію таким чином. Спробуйте так …',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 2 })],
 						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності, і телепортувати їх у вільні клітинки в зоні. Ціль не можна телепортувати так, щоб це їй зашкодило (наприклад, над прірвою), залишило її вмираючою або спричинило стан чи інший негативний ефект.')
@@ -36,8 +36,8 @@ export const auteur: SubClass = {
 						name: 'Драматичний монолог',
 						description: 'Не обов’язково, щоб це мало сенс. Просто скажіть це з емоціями.',
 						type: FactoryLogic.type.createManeuver(),
-						keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Спеціальна',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Виберіть один із наступних ефектів:\n* Ви виголошуєте надихаючу історію перемоги. Один союзник у межах дистанції отримує перевагу на наступний кидок сили до початку вашого наступного ходу.\n* Ви переповідаєте історію героїзму. Один союзник у межах дистанції отримує 1 імпульс.\n* Ви ображаєте ворога у найвразливішому місці. Один ворог у межах дистанції отримує перешкоду на наступний кидок сили до кінця свого наступного ходу.'),
@@ -53,8 +53,8 @@ export const auteur: SubClass = {
 						name: 'Відплата — чесна гра',
 						description: 'У коханні та у всьому іншому усі засоби дозволені.',
 						type: FactoryLogic.type.createTrigger('Ціль робить кидок здібності, який має перевагу, подвійну перевагу, перешкоду або подвійну перешкоду.'),
-						keywords: [ AbilityKeyword.Ranged ],
-						distance: [ FactoryLogic.distance.createRanged(10) ],
+						keywords: [AbilityKeyword.Ranged],
+						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Одна істота',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Перевага на тригерному кидку стає перешкодою, або подвійна перевага стає перевагою. Перешкода стає перевагою, або подвійна перешкода стає перешкодою.'),
@@ -81,8 +81,8 @@ export const auteur: SubClass = {
 									name: 'Запрошена зірка',
 									description: 'Ми запропонували їм відсоток від валового, тому вони працюють безкоштовно!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Спеціальна',
 									cost: 5,
 									sections: [
@@ -99,8 +99,8 @@ export const auteur: SubClass = {
 									name: 'Поворот у кінці',
 									description: 'Ви цього не чекали, правда?!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Один мертвий ворог',
 									cost: 5,
 									sections: [
@@ -150,8 +150,8 @@ export const auteur: SubClass = {
 									name: 'Ще один дубль!',
 									description: 'Ще один дубль, і цього разу зробіть це цікавіше.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 									target: 'Ви та кожний союзник у зоні',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, може перебросити перший кидок сили того ходу, який отримує результат рівня 2. Вона повинна використовувати новий кидок.')
@@ -178,14 +178,14 @@ export const auteur: SubClass = {
 									name: 'Ось як закінчується ваша історія',
 									description: 'Ви розкриваєте кінець цієї битви, і це не надто добре для них.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: '2 психічної шкоди; П < [слабкий], зляканий (рят. кидок завершує)',
 												tier2: '5 психічної шкоди; П < [середній], зляканий (рят. кидок завершує)',
 												tier3: '7 психічної шкоди; П < [сильний], зляканий (рят. кидок завершу)'
@@ -203,8 +203,8 @@ export const auteur: SubClass = {
 									name: 'Ви — мої дублери',
 									description: 'Важливо, щоб усі знали ролі один одного, на всякий випадок…',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 									target: 'Кожний союзник у зоні',
 									cost: 9,
 									sections: [
@@ -246,7 +246,7 @@ export const auteur: SubClass = {
 									name: 'Епічний',
 									description: 'Ваша історія розповідає про занепад могутності лиходія та про те, як герої зуміли піднятися, щоб зупинити його.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 									distance: [
 										FactoryLogic.distance.createMelee(),
 										FactoryLogic.distance.createRanged(10)
@@ -256,7 +256,7 @@ export const auteur: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: 'Ціль отримує перешкоду на кидки здібності (рят. кидок завершує).',
 												tier2: 'Ціль має подвійну перешкоду на кидки здібності (рят. кидок завершує).',
 												tier3: 'Ціль має подвійну перешкоду на кидки здібностей (рят. кидок завершує).'
@@ -275,8 +275,8 @@ export const auteur: SubClass = {
 									name: 'Нарастаюча напруга',
 									description: 'Ви нарощуєте напругу сцени та вкладаєте всю надію в свого головного героя, щоб він змінив хід подій.',
 									type: FactoryLogic.type.createManeuver(),
-									keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ranged ],
-									distance: [ FactoryLogic.distance.createRanged(10) ],
+									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
+									distance: [FactoryLogic.distance.createRanged(10)],
 									target: 'Один союзник',
 									cost: 11,
 									sections: [

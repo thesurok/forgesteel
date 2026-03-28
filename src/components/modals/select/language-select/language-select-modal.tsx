@@ -19,8 +19,8 @@ interface Props {
 }
 
 export const LanguageSelectModal = (props: Props) => {
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
-	const [ customLanguage, setCustomLanguage ] = useState<string>('');
+	const [searchTerm, setSearchTerm] = useState<string>('');
+	const [customLanguage, setCustomLanguage] = useState<string>('');
 
 	const languages = props.languages
 		.filter(l => Utils.textMatches([
@@ -36,7 +36,7 @@ export const LanguageSelectModal = (props: Props) => {
 			content={
 				<div className='language-select-modal'>
 					{
-						[ LanguageType.Common, LanguageType.Cultural, LanguageType.Regional, LanguageType.Dead ].map(type => {
+						[LanguageType.Common, LanguageType.Cultural, LanguageType.Regional, LanguageType.Dead].map(type => {
 							const subset = languages.filter(l => l.type === type);
 							if (subset.length === 0) {
 								return null;
@@ -44,7 +44,12 @@ export const LanguageSelectModal = (props: Props) => {
 
 							return (
 								<Space key={type} orientation='vertical' style={{ width: '100%' }}>
-									<HeaderText level={1}>{type}</HeaderText>
+									<HeaderText level={1}>{({
+										[LanguageType.Common]: 'Загальні мови',
+										[LanguageType.Cultural]: 'Культурні мови',
+										[LanguageType.Regional]: 'Регіональні мови',
+										[LanguageType.Dead]: 'Мертві мови'
+									} as Record<LanguageType, string>)[type]}</HeaderText>
 									{
 										subset.map((l, n) => (
 											<SelectablePanel key={n} onSelect={() => props.onSelect(l)}>
@@ -58,16 +63,16 @@ export const LanguageSelectModal = (props: Props) => {
 						})
 					}
 					<Divider />
-					<Expander title='Add a custom language'>
+					<Expander title='Додати власну мову'>
 						<Space orientation='vertical' style={{ width: '100%' }}>
-							<HeaderText>Custom Language</HeaderText>
+							<HeaderText>Власна мова</HeaderText>
 							<TextInput
-								placeholder='Custom Language Name'
+								placeholder='Назва власної мови'
 								allowClear={true}
 								value={customLanguage}
 								onChange={setCustomLanguage}
 							/>
-							<Button block={true} disabled={!customLanguage} onClick={() => props.onSelect({ name: customLanguage, description: '', type: LanguageType.Cultural, related: [] })}>Select</Button>
+							<Button block={true} disabled={!customLanguage} onClick={() => props.onSelect({ name: customLanguage, description: '', type: LanguageType.Cultural, related: [] })}>Обрати</Button>
 						</Space>
 					</Expander>
 				</div>

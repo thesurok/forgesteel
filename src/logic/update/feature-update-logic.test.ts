@@ -2,6 +2,7 @@ import { describe, expect, test } from 'vitest';
 import { Feature } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
 import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
+import { SkillList } from '@/enums/skill-list';
 
 const createFeature = (name: string): Feature => {
     return {
@@ -38,6 +39,26 @@ describe('FeatureUpdateLogic', () => {
             FeatureUpdateLogic.updateFeature(feature);
 
             expect(feature.name).toBe('Inner Light, Lore Skill');
+        });
+
+        test('normalizes skill choice options and selections', () => {
+            const feature: Feature = {
+                id: 'feature-id',
+                name: 'Skill',
+                description: '',
+                type: FeatureType.SkillChoice,
+                data: {
+                    options: ['Brag', 'Alertness', 'Сховатись'],
+                    listOptions: [SkillList.Interpersonal],
+                    count: 1,
+                    selected: ['Read Person', 'Крастись']
+                }
+            } as Feature;
+
+            FeatureUpdateLogic.updateFeature(feature);
+
+            expect(feature.data.options).toEqual(['Вихваляння', 'Пильність', 'Ховання']);
+            expect(feature.data.selected).toEqual(['Зчитування людини', 'Крадіжка']);
         });
     });
 });

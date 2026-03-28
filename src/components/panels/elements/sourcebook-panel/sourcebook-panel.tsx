@@ -243,11 +243,11 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 					<HeaderText>Description</HeaderText>
 					<MarkdownEditor value={sourcebook.description} onChange={setDescription} />
 				</Expander>
-				<Expander title='Languages'>
+				<Expander title='Мови'>
 					<HeaderText
 						extra={<Button type='text' icon={<PlusOutlined />} onClick={addLanguage} />}
 					>
-						Languages
+						Мови
 					</HeaderText>
 					<Space orientation='vertical' style={{ width: '100%' }}>
 						{
@@ -300,11 +300,11 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 						}
 					</Space>
 				</Expander>
-				<Expander title='Skills'>
+				<Expander title='Навички'>
 					<HeaderText
 						extra={<Button type='text' icon={<PlusOutlined />} onClick={addSkill} />}
 					>
-						Skills
+						Навички
 					</HeaderText>
 					<Space orientation='vertical' style={{ width: '100%' }}>
 						{

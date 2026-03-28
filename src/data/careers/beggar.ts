@@ -10,15 +10,15 @@ export const beggar: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-beggar-feature-1',
-			selected: [ 'Rumors' ]
+			selected: ['Чутки']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-beggar-feature-2',
-			listOptions: [ SkillList.Exploration ]
+			listOptions: [SkillList.Exploration]
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-beggar-feature-3',
-			listOptions: [ SkillList.Interpersonal ]
+			listOptions: [SkillList.Interpersonal]
 		}),
 		FactoryLogic.feature.createLanguageChoice({
 			id: 'career-beggar-feature-4',
@@ -26,7 +26,7 @@ export const beggar: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-beggar-feature-5',
-			lists: [ PerkList.Interpersonal ]
+			lists: [PerkList.Interpersonal]
 		})
 	],
 	incitingIncidents: {

@@ -57,7 +57,7 @@ export const NegotiationRunPanel = (props: Props) => {
 					</NumberSpin>
 				</StatsRow>
 				<Field label='Impression' value={`${negotiation.impression}: If a hero is famous to an NPC, they gain an edge on tests when making arguments to which the Flirt, Lead, or Persuade skill could be applied. If they are infamous to the NPC, they gain an edge on tests when making arguments to which the Brag, Interrogate, or Intimidate skill could be applied. A hero gains this edge even if they don’t have the appropriate skill.`} />
-				{negotiation.languages.length > 0 ? <Field label='Languages' value={negotiation.languages.join(', ')} /> : null}
+				{negotiation.languages.length > 0 ? <Field label='Мови' value={negotiation.languages.join(', ')} /> : null}
 				<div className='negotiation-content'>
 					<div>
 						<HeaderText>Motivations</HeaderText>

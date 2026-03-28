@@ -193,7 +193,7 @@ export const beastheart: HeroClass = {
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-2-3',
-										selected: ['Intimidate']
+										selected: ['Залякування']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -271,7 +271,7 @@ export const beastheart: HeroClass = {
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-3-3',
-										selected: ['Search']
+										selected: ['Пошук']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -349,7 +349,7 @@ export const beastheart: HeroClass = {
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-4-3',
-										selected: ['Alertness']
+										selected: ['Пильність']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -427,7 +427,7 @@ export const beastheart: HeroClass = {
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-5-3',
-										selected: ['Track']
+										selected: ['Відстеження']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -692,7 +692,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-8-4',
-										selected: ['Intimidate']
+										selected: ['Залякування']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -770,7 +770,7 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-9-3',
-										selected: ['Сховатись']
+										selected: ['Ховання']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -851,7 +851,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-10-3',
-										selected: ['Крастись']
+										selected: ['Крадіжка']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -929,7 +929,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-11-3',
-										selected: ['Крастись']
+										selected: ['Крадіжка']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1017,7 +1017,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-12-4',
-										selected: ['Сховатись']
+										selected: ['Ховання']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1095,7 +1095,7 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									}),
 									FactoryLogic.feature.createSkillChoice({
 										id: 'beastheart-1-2a-13-3',
-										selected: ['Track']
+										selected: ['Відстеження']
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -1412,7 +1412,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-9-1b',
-					selected: ['Nature']
+					selected: ['Природа']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-9-1c',

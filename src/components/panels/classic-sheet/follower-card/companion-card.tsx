@@ -20,7 +20,7 @@ interface Props {
 }
 
 export const CompanionCard = (props: Props) => {
-	const companion = useMemo(() => props.companion, [ props.companion ]);
+	const companion = useMemo(() => props.companion, [props.companion]);
 
 	const getDetails = () => {
 		return (
@@ -57,7 +57,7 @@ export const CompanionCard = (props: Props) => {
 					{
 						companion.skills?.length ?
 							<div className='stat skills'>
-								<label>Skills:</label>
+								<label>Навички:</label>
 								<span>{companion.skills?.join(', ')}</span>
 							</div>
 							: null
@@ -175,7 +175,7 @@ export const CompanionCard = (props: Props) => {
 		);
 	};
 
-	const cardClasses = [ 'follower', 'card' ];
+	const cardClasses = ['follower', 'card'];
 	cardClasses.push(companion.role.toLocaleLowerCase().split(' ').join('-'));
 	cardClasses.push(companion.classification.toLocaleLowerCase().split(' ').join('-'));
 

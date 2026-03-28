@@ -43,7 +43,7 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'UH5m1URtvSjZqfQb',
-					selected: ['Read Person']
+					selected: ['Зчитування людини']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'GjD2ZwdbvEIZOKQV',

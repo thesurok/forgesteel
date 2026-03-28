@@ -3,6 +3,7 @@ import { Characteristic } from '@/enums/characteristic';
 import { Feature } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
 import { ItemUpdateLogic } from '@/logic/update/item-update-logic';
+import { normalizeSkillNames } from '@/utils/skill-names';
 
 export class FeatureUpdateLogic {
 	private static readonly featureNameSuffixMap: Record<string, string> = {
@@ -158,6 +159,19 @@ export class FeatureUpdateLogic {
 					feature.data.types = feature.data.types.filter(t => t !== 'Standard');
 					feature.data.types.push('');
 				}
+				break;
+			case FeatureType.SkillChoice:
+				if (feature.data.options === undefined) {
+					feature.data.options = [];
+				}
+				if (feature.data.listOptions === undefined) {
+					feature.data.listOptions = [];
+				}
+				if (feature.data.selected === undefined) {
+					feature.data.selected = [];
+				}
+				feature.data.options = normalizeSkillNames(feature.data.options);
+				feature.data.selected = normalizeSkillNames(feature.data.selected);
 				break;
 			case FeatureType.Malice:
 				if (feature.data.echelon === undefined) {

@@ -65,7 +65,7 @@ export const nullClass: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-1-1',
-					selected: ['Psionics']
+					selected: ['Псіоніка']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'null-1-2',

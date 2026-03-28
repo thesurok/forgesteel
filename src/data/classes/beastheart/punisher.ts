@@ -15,7 +15,7 @@ export const punisher: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-sub-3-1-1',
-					selected: ['Endurance']
+					selected: ['Витривалість']
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-3-1-2',

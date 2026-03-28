@@ -14,7 +14,7 @@ export const stormwight: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-sub-3-1-1',
-					selected: ['Track']
+					selected: ['Відстеження']
 				}),
 				FactoryLogic.feature.createKitChoice({
 					id: 'fury-sub-3-1-2',

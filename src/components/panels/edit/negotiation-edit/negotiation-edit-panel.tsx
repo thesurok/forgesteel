@@ -35,7 +35,7 @@ interface Props {
 }
 
 export const NegotiationEditPanel = (props: Props) => {
-	const [ negotiation, setNegotiation ] = useState<Negotiation>(props.negotiation);
+	const [negotiation, setNegotiation] = useState<Negotiation>(props.negotiation);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -100,18 +100,18 @@ export const NegotiationEditPanel = (props: Props) => {
 				<HeaderText>Attitude</HeaderText>
 				<Select
 					style={{ width: '100%' }}
-					options={[ AttitudeType.Trusting, AttitudeType.Friendly, AttitudeType.Open, AttitudeType.Neutral, AttitudeType.Suspicious, AttitudeType.Hostile ].map(a => ({ value: a, label: a, desc: NegotiationLogic.getAttitudeDescription(a) }))}
+					options={[AttitudeType.Trusting, AttitudeType.Friendly, AttitudeType.Open, AttitudeType.Neutral, AttitudeType.Suspicious, AttitudeType.Hostile].map(a => ({ value: a, label: a, desc: NegotiationLogic.getAttitudeDescription(a) }))}
 					optionRender={option => <Field label={option.data.value} value={option.data.desc} />}
 					value={negotiation.attitude}
 					onChange={setAttitude}
 				/>
 				<HeaderText>Impression</HeaderText>
 				<NumberSpin min={0} max={15} value={negotiation.impression} onChange={setImpression} />
-				<HeaderText>Languages</HeaderText>
+				<HeaderText>Мови</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					mode='multiple'
-					placeholder='Select languages'
+					placeholder='Оберіть мови'
 					options={SourcebookLogic.getLanguages(props.sourcebooks).map(l => ({ value: l.name, label: l.name, desc: l.description }))}
 					optionRender={option => <Field label={option.data.value} value={option.data.desc} />}
 					value={negotiation.languages}
@@ -187,7 +187,7 @@ export const NegotiationEditPanel = (props: Props) => {
 								<Select
 									style={{ width: '100%' }}
 									placeholder='Trait'
-									options={[ NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance ].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getMotivationDescription(nt) }))}
+									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getMotivationDescription(nt) }))}
 									optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 									value={m.trait}
 									onChange={t => setMotivationTrait(n, t)}
@@ -272,7 +272,7 @@ export const NegotiationEditPanel = (props: Props) => {
 								<Select
 									style={{ width: '100%' }}
 									placeholder='Trait'
-									options={[ NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance ].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getPitfallDescription(nt) }))}
+									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getPitfallDescription(nt) }))}
 									optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 									value={p.trait}
 									onChange={t => setPitfallTrait(n, t)}

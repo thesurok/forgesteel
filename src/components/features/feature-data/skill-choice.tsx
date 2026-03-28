@@ -13,6 +13,7 @@ import { SkillList } from '@/enums/skill-list';
 import { SkillSelectModal } from '@/components/modals/select/skill-select/skill-select-modal';
 import { Sourcebook } from '@/models/sourcebook';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
+import { normalizeSkillName, normalizeSkillNames } from '@/utils/skill-names';
 import { Utils } from '@/utils/utils';
 import { useState } from 'react';
 
@@ -27,7 +28,7 @@ interface InfoProps {
 export const InfoSkillChoice = (props: InfoProps) => {
 	if (props.data.selected.length > 0) {
 		return (
-			<Field label='Skill' value={props.data.selected.join(', ')} />
+			<Field label='Навичка' value={props.data.selected.map(normalizeSkillName).join(', ')} />
 		);
 	}
 
@@ -36,10 +37,10 @@ export const InfoSkillChoice = (props: InfoProps) => {
 
 		let str = '';
 		if (props.data.listOptions.length === 5) {
-			str = (count > 1 ? `Choose ${count} skills.` : 'Choose a skill.');
+			str = (count > 1 ? `Оберіть ${count} навички.` : 'Оберіть навичку.');
 		} else {
-			const names = (Collections.sort(props.data.options, o => o) || []).concat((Collections.sort(props.data.listOptions, o => o) || []).map(l => `the ${l} list`)).join(', ');
-			str = (count > 1 ? `Choose ${count} skills from ${names}.` : `Choose a skill from ${names}.`);
+			const names = (Collections.sort(props.data.options, o => o) || []).concat((Collections.sort(props.data.listOptions, o => o) || []).map(l => `списку ${l}`)).join(', ');
+			str = (count > 1 ? `Оберіть ${count} навички з ${names}.` : `Оберіть навичку з ${names}.`);
 		}
 
 		return (
@@ -58,11 +59,11 @@ interface EditProps {
 }
 
 export const EditSkillChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureSkillChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureSkillChoiceData>(Utils.copy(props.data));
 
 	const setSkillOptions = (value: string[]) => {
 		const copy = Utils.copy(data);
-		copy.options = value;
+		copy.options = normalizeSkillNames(value);
 		setData(copy);
 		props.setData(copy);
 	};
@@ -83,7 +84,7 @@ export const EditSkillChoice = (props: EditProps) => {
 
 	const setSkillSelected = (value: string[]) => {
 		const copy = Utils.copy(data);
-		copy.selected = value;
+		copy.selected = normalizeSkillNames(value);
 		setData(copy);
 		props.setData(copy);
 	};
@@ -95,10 +96,10 @@ export const EditSkillChoice = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Options</HeaderText>
+			<HeaderText>Опції</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Skills'
+				placeholder='Навички'
 				allowClear={true}
 				mode='multiple'
 				options={SourcebookLogic.getSkills(props.sourcebooks).map(option => ({ value: option.name, description: option.description }))}
@@ -106,23 +107,23 @@ export const EditSkillChoice = (props: EditProps) => {
 				value={data.options}
 				onChange={setSkillOptions}
 			/>
-			<HeaderText>List Options</HeaderText>
+			<HeaderText>Списки навичок</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Skill Lists'
+				placeholder='Списки навичок'
 				allowClear={true}
 				mode='multiple'
-				options={[ SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore ].map(option => ({ value: option }))}
+				options={[SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore].map(option => ({ value: option }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				value={data.listOptions}
 				onChange={setSkillListOptions}
 			/>
-			<HeaderText>Count</HeaderText>
+			<HeaderText>Кількість</HeaderText>
 			<NumberSpin min={1} value={data.count} onChange={setCount} />
-			<HeaderText>Default Selection</HeaderText>
+			<HeaderText>Типовий вибір</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Selection'
+				placeholder='Вибір'
 				allowClear={true}
 				mode='multiple'
 				options={sortedSkills.map(option => ({ value: option.name }))}
@@ -144,7 +145,7 @@ interface ConfigProps {
 }
 
 export const ConfigSkillChoice = (props: ConfigProps) => {
-	const [ skillSelectorOpen, setSkillSelectorOpen ] = useState<boolean>(false);
+	const [skillSelectorOpen, setSkillSelectorOpen] = useState<boolean>(false);
 
 	const currentSkills = HeroLogic.getSkills(props.hero, props.sourcebooks).map(s => s.name);
 	const skills = SourcebookLogic.getSkills(props.sourcebooks as Sourcebook[])
@@ -157,24 +158,26 @@ export const ConfigSkillChoice = (props: ConfigProps) => {
 		// We can always add a custom skill, so we always show the Add button
 		return (
 			<Button className='status-warning' block={true} onClick={() => setSkillSelectorOpen(true)}>
-				Choose a Skill
+				Оберіть навичку
 			</Button>
 		);
 	};
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			{props.data.count > 1 ? <div className='ds-text'>Choose {props.data.count}:</div> : null}
+			{props.data.count > 1 ? <div className='ds-text'>Оберіть {props.data.count}:</div> : null}
 			{
 				props.data.selected.map((skill, n) => {
+					const normalizedSkill = normalizeSkillName(skill);
 					const duplicated = props.hero && HeroLogic.getFeatures(props.hero)
 						.map(f => f.feature)
 						.filter(f => f.type === FeatureType.SkillChoice)
 						.flatMap(f => f.data.selected)
-						.filter(s => s === skill)
+						.map(normalizeSkillName)
+						.filter(s => s === normalizedSkill)
 						.length > 1;
 
-					const sk = SourcebookLogic.getSkill(skill, props.sourcebooks!);
+					const sk = SourcebookLogic.getSkill(normalizedSkill, props.sourcebooks!);
 					return (
 						<Flex key={n} className='selection-box' align='center' justify='space-between' gap={10}>
 							<Flex vertical={true}>
@@ -182,11 +185,11 @@ export const ConfigSkillChoice = (props: ConfigProps) => {
 									sk ?
 										<Field label={sk.name} value={sk.description} style={{ flex: '1 1 0' }} />
 										:
-										<div className='ds-text' style={{ flex: '1 1 0' }}>{skill}</div>
+										<div className='ds-text' style={{ flex: '1 1 0' }}>{normalizedSkill}</div>
 								}
 								{
 									duplicated ?
-										<Field danger={true} label='Duplicated' value='You already have this skill.' />
+										<Field danger={true} label='Дублікат' value='У вас вже є ця навичка.' />
 										: null
 								}
 							</Flex>
@@ -198,7 +201,7 @@ export const ConfigSkillChoice = (props: ConfigProps) => {
 									icon={<CloseOutlined />}
 									onClick={() => {
 										const dataCopy = Utils.copy(props.data);
-										dataCopy.selected = dataCopy.selected.filter(s => s !== skill);
+										dataCopy.selected = dataCopy.selected.filter(s => normalizeSkillName(s) !== normalizedSkill);
 										props.setData(dataCopy);
 									}}
 								/>

@@ -11,11 +11,11 @@ export const disciple: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-disciple-feature-1',
-			selected: [ 'Religion' ]
+			selected: ['Релігія']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-disciple-feature-2',
-			listOptions: [ SkillList.Lore ],
+			listOptions: [SkillList.Lore],
 			count: 2
 		}),
 		FactoryLogic.feature.createBonus({
@@ -25,7 +25,7 @@ export const disciple: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-disciple-feature-4',
-			lists: [ PerkList.Supernatural ]
+			lists: [PerkList.Supernatural]
 		})
 	],
 	incitingIncidents: {

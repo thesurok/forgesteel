@@ -25,13 +25,13 @@ interface InfoProps {
 export const InfoLanguageChoice = (props: InfoProps) => {
 	if (props.data.selected.length > 0) {
 		return (
-			<Field label='Language' value={props.data.selected.join(', ')} />
+			<Field label='Мова' value={props.data.selected.join(', ')} />
 		);
 	}
 
 	if (!props.feature.description) {
 		return (
-			<div className='ds-text'>Choose {props.data.count > 1 ? props.data.count : 'a'} {props.data.count > 1 ? 'languages' : 'language'}.</div>
+			<div className='ds-text'>Оберіть {props.data.count > 1 ? props.data.count : 'одну'} {props.data.count > 1 ? 'мови' : 'мову'}.</div>
 		);
 	}
 
@@ -46,7 +46,7 @@ interface EditProps {
 }
 
 export const EditLanguageChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureLanguageChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureLanguageChoiceData>(Utils.copy(props.data));
 
 	const setLanguageOptions = (value: string[]) => {
 		const copy = Utils.copy(data);
@@ -75,11 +75,11 @@ export const EditLanguageChoice = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Options</HeaderText>
+			<HeaderText>Опції</HeaderText>
 			<Select
 				style={{ width: '100%' }}
 				status={data.options.length === 0 ? 'warning' : ''}
-				placeholder='Options'
+				placeholder='Опції'
 				mode='multiple'
 				allowClear={true}
 				options={SourcebookLogic.getLanguages(props.sourcebooks).map(option => ({ value: option.name, description: option.description }))}
@@ -87,12 +87,12 @@ export const EditLanguageChoice = (props: EditProps) => {
 				value={data.options}
 				onChange={setLanguageOptions}
 			/>
-			<HeaderText>Count</HeaderText>
+			<HeaderText>Кількість</HeaderText>
 			<NumberSpin min={1} value={data.count} onChange={setCount} />
-			<HeaderText>Default Selection</HeaderText>
+			<HeaderText>Типовий вибір</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Selection'
+				placeholder='Вибір'
 				allowClear={true}
 				mode='multiple'
 				options={sortedLanguages.map(option => ({ value: option.name }))}
@@ -114,7 +114,7 @@ interface ConfigProps {
 }
 
 export const ConfigLanguageChoice = (props: ConfigProps) => {
-	const [ languageSelectorOpen, setLanguageSelectorOpen ] = useState<boolean>(false);
+	const [languageSelectorOpen, setLanguageSelectorOpen] = useState<boolean>(false);
 
 	const currentLanguages = HeroLogic.getLanguages(props.hero, props.sourcebooks).map(l => l.name);
 	const languages = SourcebookLogic.getLanguages(props.sourcebooks as Sourcebook[])
@@ -126,14 +126,14 @@ export const ConfigLanguageChoice = (props: ConfigProps) => {
 		// We can always add a custom language, so we always show the Add button
 		return (
 			<Button className='status-warning' block={true} onClick={() => setLanguageSelectorOpen(true)}>
-				Choose a language
+				Оберіть мову
 			</Button>
 		);
 	};
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			{props.data.count > 1 ? <div className='ds-text'>Choose {props.data.count}:</div> : null}
+			{props.data.count > 1 ? <div className='ds-text'>Оберіть {props.data.count}:</div> : null}
 			{
 				props.data.selected.map((language, n) => {
 					const lang = SourcebookLogic.getLanguage(language, props.sourcebooks!);

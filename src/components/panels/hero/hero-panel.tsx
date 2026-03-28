@@ -360,11 +360,11 @@ export const HeroPanel = (props: Props) => {
 					{
 						useRows ?
 							<div className='selectable-row clickable' onClick={onShowLanguages}>
-								<div>Languages: <b>{languages.map(l => l.name).join(', ')}</b></div>
+								<div>Мови: <b>{languages.map(l => l.name).join(', ')}</b></div>
 							</div>
 							:
 							<div className='overview-tile clickable' onClick={onShowLanguages}>
-								<HeaderText>Languages</HeaderText>
+								<HeaderText>Мови</HeaderText>
 								{
 									languages.length > 0 ?
 										languages.map(l => <div key={l.name} className='ds-text'>{l.name}</div>)
@@ -376,9 +376,9 @@ export const HeroPanel = (props: Props) => {
 					{
 						(props.options.showSkillsInGroups || false) ?
 							[SkillList.Crafting, SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue, SkillList.Lore, SkillList.Custom]
-								.map(list => getSkills(`${list} Skills`, HeroLogic.getSkills(props.hero, props.sourcebooks).filter(s => s.list === list)))
+								.map(list => getSkills(`${list} Навички`, HeroLogic.getSkills(props.hero, props.sourcebooks).filter(s => s.list === list)))
 							:
-							getSkills('Skills', HeroLogic.getSkills(props.hero, props.sourcebooks))
+							getSkills('Навички', HeroLogic.getSkills(props.hero, props.sourcebooks))
 					}
 				</div>
 			</ErrorBoundary>

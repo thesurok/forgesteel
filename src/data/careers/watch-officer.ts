@@ -10,11 +10,11 @@ export const watchOfficer: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-watch-officer-feature-1',
-			selected: [ 'Alertness' ]
+			selected: ['Пильність']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'career-watch-officer-feature-2',
-			listOptions: [ SkillList.Intrigue ],
+			listOptions: [SkillList.Intrigue],
 			count: 2
 		}),
 		FactoryLogic.feature.createLanguageChoice({
@@ -23,7 +23,7 @@ export const watchOfficer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'career-watch-officer-feature-4',
-			lists: [ PerkList.Exploration ]
+			lists: [PerkList.Exploration]
 		})
 	],
 	incitingIncidents: {

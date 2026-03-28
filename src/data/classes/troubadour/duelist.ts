@@ -14,7 +14,7 @@ export const duelist: SubClass = {
 			features: [
 				FactoryLogic.feature.createSkillChoice({
 					id: '1NhlI9WCQUCKkX0u',
-					selected: [ 'Gymnastics' ]
+					selected: ['Гімнастика']
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -22,8 +22,8 @@ export const duelist: SubClass = {
 						name: 'Акробатика',
 						description: 'Глядачам подобається видовищний кульбіт.',
 						type: FactoryLogic.type.createNoAction(),
-						keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-						distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 						target: 'Ви та кожний союзник у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, може автоматично отримати результат 3-го рівня в одному випробуванні на стрибок, перекид або лазіння як частину свого переміщення до кінця свого ходу.')
@@ -36,7 +36,7 @@ export const duelist: SubClass = {
 						name: 'Зіркова сила',
 						description: 'Роки практики фехтування й танців дають плоди на полі бою.',
 						type: FactoryLogic.type.createManeuver(),
-						distance: [ FactoryLogic.distance.createMelee() ],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Ви',
 						cost: 1,
 						sections: [
@@ -53,8 +53,8 @@ export const duelist: SubClass = {
 						name: 'Ріпост',
 						description: '«Якби я знав, що битимуся з собакою, я б приніс ласощі.»',
 						type: FactoryLogic.type.createTrigger('Ціль отримує шкоду від ближнього удару.'),
-						keywords: [ AbilityKeyword.Melee ],
-						distance: [ FactoryLogic.distance.createMelee() ],
+						keywords: [AbilityKeyword.Melee],
+						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Ви або один союзник',
 						sections: [
 							FactoryLogic.createAbilitySectionText('Ціль робить безкоштовний удар по істоті, яка завдала тригерного удару.')
@@ -77,8 +77,8 @@ export const duelist: SubClass = {
 									name: 'Класичний трюк з люстрою',
 									description: 'Глядачам це подобається.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Ви та один охочий союзник',
 									cost: 5,
 									sections: [
@@ -95,14 +95,14 @@ export const duelist: SubClass = {
 									name: 'En Garde!',
 									description: 'Стій! Охорона! Поворот! Парі! Ухил! Оберт! Удар! Ха!',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '7 + Л шкоди',
 												tier2: '11 + Л шкоди',
 												tier3: '16 + Л шкоди'
@@ -154,8 +154,8 @@ export const duelist: SubClass = {
 									name: 'Нас не затьмарити!',
 									description: 'Фехтування таке витончене, що здається, ніби ви всі репетирували це разом.',
 									type: FactoryLogic.type.createNoAction(),
-									keywords: [ AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance ],
-									distance: [ FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 }) ],
+									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Performance],
+									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 									target: 'Ви та кожний союзник у зоні',
 									sections: [
 										FactoryLogic.createAbilitySectionText('Поки цей виступ активний, ціль, яка починає свій хід у зоні, отримує бонус до дистанції зміщення, що дорівнює вашому показнику Присутності, до кінця свого ходу.')
@@ -182,14 +182,14 @@ export const duelist: SubClass = {
 									name: 'Кров на сцені',
 									description: 'Тут і любов, і кров, або драма й кров. У будь-якому разі — завжди кров.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота або обʼєкт',
 									cost: 9,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '12 + Л шкоди; С < [слабкий], кровотеча (завершується рят. кидком)',
 												tier2: '18 + Л шкоди; С < [середній], кровотеча (завершується рят. кидком)',
 												tier3: '24 + Л шкоди; кровотеча (до кінця ходу), або якщо С < [сильний], кровотеча (завершується рят. кидком)'
@@ -207,8 +207,8 @@ export const duelist: SubClass = {
 									name: 'Хореографія бою',
 									description: 'Ви та ваш партнер робите показовий яскравий виступ, а потім повертаєтесь по своїх місцях.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота',
 									cost: 9,
 									sections: [
@@ -252,14 +252,14 @@ export const duelist: SubClass = {
 									name: 'Майстерний фехтувальник',
 									description: 'Якщо вам вдасться влучити ударом, натовп шаленіє.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee(3) ],
+									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee(3)],
 									target: 'Одна істота або обʼєкт',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Agility ],
+												characteristic: [Characteristic.Agility],
 												tier1: '15 + Л шкоди',
 												tier2: '21 + Л шкоди',
 												tier3: '28 + Л шкоди; якщо С < [сильний], кровотеча (завершується рят. кидком)'
@@ -277,15 +277,15 @@ export const duelist: SubClass = {
 									name: 'Переговорений контракт',
 									description: 'Ні, ні. Ви не вмираєте, доки не вийде сіквел.',
 									type: FactoryLogic.type.createMain(),
-									keywords: [ AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon ],
-									distance: [ FactoryLogic.distance.createMelee() ],
+									keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
+									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота',
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText('Додайте вашу поточну Витривалість до поточної Витривалості цілі, потім ви маєте половину цієї суми, а ціль — залишок. Якщо хтось із вас отримує більше Витривалості, ніж його максимум, різницю отримує інша істота. Жоден із вас не може отримати більше Витривалості, ніж його максимум, цим способом. Потім ви робите кидок сили.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
-												characteristic: [ Characteristic.Presence ],
+												characteristic: [Characteristic.Presence],
 												tier1: 'Ви та ціль можете кожен скасувати один ефект на собі, який скасовується рятівним кидком або який закінчується наприкінці ваших ходів.',
 												tier2: 'Ви та ціль можете скасувати будь-які ефекти на собі, які скасовуються рятівним кидком або які закінчуються наприкінці ваших ходів.',
 												tier3: 'Ви можете обрати будь-які поточні ефекти на вас і на цілі, що скасовуються рятівним кидком або закінчуються наприкінці ходів, застосувати обрані ефекти до цілі та завершити інші.'

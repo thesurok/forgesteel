@@ -34,7 +34,7 @@ export const PartyModal = (props: Props) => {
 			<Modal
 				content={
 					<div className='party-modal'>
-						<HeaderText>Languages</HeaderText>
+						<HeaderText>Мови</HeaderText>
 						<table>
 							<thead>
 								<tr>
@@ -61,7 +61,7 @@ export const PartyModal = (props: Props) => {
 								}
 							</tbody>
 						</table>
-						<HeaderText>Skills</HeaderText>
+						<HeaderText>Навички</HeaderText>
 						<table>
 							<thead>
 								<tr>

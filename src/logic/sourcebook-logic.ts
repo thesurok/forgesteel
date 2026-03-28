@@ -35,6 +35,7 @@ import { TacticalMap } from '@/models/tactical-map';
 import { Terrain } from '@/models/terrain';
 import { Title } from '@/models/title';
 import { normalizeLanguageName } from '@/utils/language-names';
+import { normalizeSkillName } from '@/utils/skill-names';
 
 export class SourcebookLogic {
 	static getSourcebooks = (homebrew: Sourcebook[] = []) => {
@@ -510,7 +511,8 @@ export class SourcebookLogic {
 	static getSkill = (skillName: string, sourcebooks: Sourcebook[]) => {
 		const skills = SourcebookLogic.getSkills(sourcebooks);
 
-		const skill = skills.find(s => s.name === skillName);
+		const normalizedSkillName = normalizeSkillName(skillName);
+		const skill = skills.find(s => normalizeSkillName(s.name) === normalizedSkillName);
 		return skill || null;
 	};
 

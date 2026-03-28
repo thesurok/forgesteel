@@ -20,7 +20,7 @@ export const FollowerPanel = (props: Props) => {
 			<div className={props.mode === PanelMode.Full ? 'follower-panel' : 'follower-panel compact'} id={props.mode === PanelMode.Full ? SheetFormatter.getPageId('follower', props.follower.id) : undefined}>
 				<HeaderText
 					level={1}
-					tags={[ props.follower.type ]}
+					tags={[props.follower.type]}
 				>
 					{props.follower.name || 'Unnamed Follower'}
 				</HeaderText>
@@ -31,8 +31,8 @@ export const FollowerPanel = (props: Props) => {
 							<StatsRow>
 								{props.follower.characteristics.map(ch => <Field key={ch.characteristic} orientation='vertical' label={ch.characteristic} value={ch.value} />)}
 							</StatsRow>
-							<Field label='Skills' value={props.follower.skills.sort().join(', ') || '(none)'} />
-							<Field label='Languages' value={[ 'Келіан (Caelian)', ...props.follower.languages ].sort().join(', ') || '(none)'} />
+							<Field label='Навички' value={props.follower.skills.sort().join(', ') || '(none)'} />
+							<Field label='Мови' value={['Келіан (Caelian)', ...props.follower.languages].sort().join(', ') || '(none)'} />
 						</>
 						: null
 				}

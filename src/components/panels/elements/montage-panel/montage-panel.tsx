@@ -28,7 +28,7 @@ interface Props {
 }
 
 export const MontagePanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
@@ -83,7 +83,7 @@ export const MontagePanel = (props: Props) => {
 					</Flex>
 					<ul>
 						{challenge.characteristics.length > 0 ? <li><Field label='Characteristics' value={challenge.characteristics.join(', ')} /></li> : null}
-						{challenge.skills.length > 0 ? <li><Field label='Skills' value={challenge.skills} /></li> : null}
+						{challenge.skills.length > 0 ? <li><Field label='Навички' value={challenge.skills} /></li> : null}
 						{challenge.abilities.length > 0 ? <li><Field label='Abilities' value={challenge.abilities} /></li> : null}
 					</ul>
 				</div>

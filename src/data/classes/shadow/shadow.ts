@@ -62,11 +62,11 @@ export const shadow: HeroClass = {
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-1',
 					count: 2,
-					selected: ['Сховатись', 'Крастись']
+					selected: ['Ховання', 'Крадіжка']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'shadow-1-3',
-					options: ['Criminal Underworld'],
+					options: ['Кримінальний світ'],
 					listOptions: [SkillList.Exploration, SkillList.Interpersonal, SkillList.Intrigue],
 					count: 5
 				}),

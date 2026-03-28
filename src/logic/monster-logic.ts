@@ -24,6 +24,7 @@ import { Skill } from '@/models/skill';
 import { SkillList } from '@/enums/skill-list';
 import { Sourcebook } from '@/models/sourcebook';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
+import { normalizeSkillName } from '@/utils/skill-names';
 import { Utils } from '@/utils/utils';
 
 export class MonsterLogic {
@@ -95,7 +96,7 @@ export class MonsterLogic {
 		let tier3 = 0;
 
 		if (monster.retainer && monster.retainer.level) {
-			const levels = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].filter(lvl => (lvl > monster.level) && (lvl <= monster.retainer!.level));
+			const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter(lvl => (lvl > monster.level) && (lvl <= monster.retainer!.level));
 			tier1 += levels.filter(lvl => lvl % 2 === 0).length;
 			tier2 += levels.length;
 			tier3 += levels.length;
@@ -116,7 +117,7 @@ export class MonsterLogic {
 		let damage = monster.freeStrikeDamage;
 
 		if (monster.retainer && monster.retainer.level) {
-			const levels = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].filter(lvl => (lvl > monster.level) && (lvl <= monster.retainer!.level));
+			const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter(lvl => (lvl > monster.level) && (lvl <= monster.retainer!.level));
 			damage += levels.filter(lvl => lvl % 3 === 0).length * 2;
 		}
 
@@ -139,7 +140,7 @@ export class MonsterLogic {
 	};
 
 	static getFeatures = (monster: Monster) => {
-		const features = [ ...monster.features ];
+		const features = [...monster.features];
 
 		if (monster.retainer) {
 			monster.retainer.featuresByLevel
@@ -269,10 +270,10 @@ export class MonsterLogic {
 				value += ModifierLogic.calculateModifierValue(f.data, monster);
 			});
 
-		if (monster.state.conditions.some(c => [ ConditionType.Grabbed, ConditionType.Restrained ].includes(c.type))) {
+		if (monster.state.conditions.some(c => [ConditionType.Grabbed, ConditionType.Restrained].includes(c.type))) {
 			value = 0;
 		}
-		if (monster.state.conditions.some(c => [ ConditionType.Slowed ].includes(c.type))) {
+		if (monster.state.conditions.some(c => [ConditionType.Slowed].includes(c.type))) {
 			value = Math.min(value, 2);
 		}
 
@@ -283,7 +284,7 @@ export class MonsterLogic {
 	};
 
 	static getSpeedModified = (monster: Monster) => {
-		if (monster.state.conditions.some(c => [ ConditionType.Grabbed, ConditionType.Restrained, ConditionType.Slowed ].includes(c.type))) {
+		if (monster.state.conditions.some(c => [ConditionType.Grabbed, ConditionType.Restrained, ConditionType.Slowed].includes(c.type))) {
 			return true;
 		}
 
@@ -453,7 +454,7 @@ export class MonsterLogic {
 				if (skill) {
 					skills.push(skill);
 				} else {
-					skills.push({ name: name, description: '', list: SkillList.Custom });
+					skills.push({ name: normalizeSkillName(name), description: '', list: SkillList.Custom });
 				}
 			});
 
@@ -479,7 +480,7 @@ export class MonsterLogic {
 	};
 
 	static getMaliceOptions = (monster: Monster, group?: MonsterGroup) => {
-		const options: (FeatureMalice | FeatureMaliceAbility)[] = [ ...MonsterData.malice ];
+		const options: (FeatureMalice | FeatureMaliceAbility)[] = [...MonsterData.malice];
 		if (group) {
 			const level = MonsterLogic.getMonsterLevel(monster);
 			options.push(...group.malice.filter(f => f.data.echelon <= CreatureLogic.getEchelon(level)));

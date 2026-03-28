@@ -564,7 +564,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-fallenImmortal-skill',
-				selected: ['Religion']
+				selected: ['Релігія']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-fallenImmortal-b',
@@ -879,7 +879,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-hunter-b1',
-				options: ['Alertness', 'Criminal Underworld', 'Eavesdrop', 'Interrogate', 'Rumors', 'Search', 'Track', 'Society']
+				options: ['Пильність', 'Кримінальний світ', 'Підслуховування', 'Допит', 'Чутки', 'Пошук', 'Відстеження', 'Суспільство']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-hunter-b2',
@@ -1119,7 +1119,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-masterChef-skill',
-				selected: ['Cooking']
+				selected: ['Кулінарія']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-masterChef-b',
@@ -1392,7 +1392,7 @@ export class ComplicationData {
 		features: [
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-raisedByBeasts-skill',
-				selected: ['Handle Animals']
+				selected: ['Догляд за тваринами']
 			}),
 			FactoryLogic.feature.create({
 				id: 'comp-raisedByBeasts-b',
@@ -1667,7 +1667,7 @@ export class ComplicationData {
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill1',
 				count: 2,
-				selected: ['Eavesdrop', 'Крастись']
+				selected: ['Підслуховування', 'Крадіжка']
 			}),
 			FactoryLogic.feature.createSkillChoice({
 				id: 'comp-silentSentinel-skill3',

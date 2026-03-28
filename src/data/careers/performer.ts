@@ -11,11 +11,11 @@ export const performer: Career = {
 	features: [
 		FactoryLogic.feature.createSkillChoice({
 			id: 'performer-feature-1',
-			options: [ 'Music', 'Perform' ]
+			options: ['Музика', 'Виступ']
 		}),
 		FactoryLogic.feature.createSkillChoice({
 			id: 'performer-feature-2',
-			listOptions: [ SkillList.Interpersonal ],
+			listOptions: [SkillList.Interpersonal],
 			count: 2
 		}),
 		FactoryLogic.feature.createBonus({
@@ -25,7 +25,7 @@ export const performer: Career = {
 		}),
 		FactoryLogic.feature.createPerk({
 			id: 'performer-feature-4',
-			lists: [ PerkList.Interpersonal ]
+			lists: [PerkList.Interpersonal]
 		})
 	],
 	incitingIncidents: {

@@ -32,6 +32,7 @@ import { Sourcebook } from '@/models/sourcebook';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
 import { SummonLogic } from '@/logic/summon-logic';
 import { normalizeLanguageName } from '@/utils/language-names';
+import { normalizeSkillName } from '@/utils/skill-names';
 import { Utils } from '@/utils/utils';
 
 export class HeroLogic {
@@ -370,7 +371,7 @@ export class HeroLogic {
 				if (skill) {
 					skills.push(skill);
 				} else {
-					skills.push({ name: name, description: '', list: SkillList.Custom });
+					skills.push({ name: normalizeSkillName(name), description: '', list: SkillList.Custom });
 				}
 			});
 

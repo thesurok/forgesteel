@@ -21,6 +21,7 @@ import { PowerRoll } from '@/models/power-roll';
 import { SkillList } from '@/enums/skill-list';
 import { StatBlockIcon } from '@/enums/stat-block-icon';
 import { Summon } from '@/models/summon';
+import { normalizeSkillNames } from '@/utils/skill-names';
 
 export class FactoryFeatureLogic {
 	create = (data: { id: string, name: string, description: string }): FeatureText => {
@@ -533,7 +534,7 @@ export class FactoryFeatureLogic {
 
 	createSkillChoice = (data: { id: string, name?: string, description?: string, options?: string[], listOptions?: SkillList[], count?: number, selected?: string[] }): FeatureSkillChoice => {
 		const count = data.count || 1;
-		const options = data.options || [];
+		const options = normalizeSkillNames(data.options || []);
 		let listOptions = data.listOptions || [];
 
 		const prefix = (listOptions.length < 5) ? ((options.length === 0) && (listOptions.length > 0) ? `${listOptions.join(' / ')} ` : '') : '';
@@ -549,10 +550,10 @@ export class FactoryFeatureLogic {
 			description: data.description || '',
 			type: FeatureType.SkillChoice,
 			data: {
-				options: data.options || [],
+				options: options,
 				listOptions: listOptions || [],
 				count: count,
-				selected: data.selected || []
+				selected: normalizeSkillNames(data.selected || [])
 			}
 		};
 	};

@@ -85,9 +85,9 @@ export const NegotiationNpcCard = (props: Props) => {
 			</div>
 
 			<section className='bordered'>
-				<h3>Skills and Languages</h3>
+				<h3>Навички та мови</h3>
 				<p className='languages'>
-					Languages: {negotiation.languages.join(', ')}
+					Мови: {negotiation.languages.join(', ')}
 				</p>
 			</section>
 		</div>

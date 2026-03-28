@@ -35,7 +35,7 @@ interface Props {
 }
 
 export const MontageEditPanel = (props: Props) => {
-	const [ montage, setMontage ] = useState<Montage>(props.montage);
+	const [montage, setMontage] = useState<Montage>(props.montage);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -92,7 +92,7 @@ export const MontageEditPanel = (props: Props) => {
 				<Select
 					style={{ width: '100%' }}
 					placeholder='Select difficulty'
-					options={[ EncounterDifficulty.Easy, EncounterDifficulty.Standard, EncounterDifficulty.Hard ].map(diff => ({ value: diff, label: <div className='ds-text'>{diff}</div> }))}
+					options={[EncounterDifficulty.Easy, EncounterDifficulty.Standard, EncounterDifficulty.Hard].map(diff => ({ value: diff, label: <div className='ds-text'>{diff}</div> }))}
 					value={montage.difficulty}
 					onChange={setDifficulty}
 				/>
@@ -385,15 +385,15 @@ export const MontageEditPanel = (props: Props) => {
 																status={c.characteristics.length < 2 ? 'warning' : ''}
 																mode='multiple'
 																placeholder='Select characteristics'
-																options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(ch => ({ value: ch }))}
+																options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(ch => ({ value: ch }))}
 																optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 																value={c.characteristics}
 																onChange={value => setChallengeCharacteristics(sectionIndex, challengeIndex, value)}
 															/>
-															<HeaderText>Skills</HeaderText>
+															<HeaderText>Навички</HeaderText>
 															<TextInput
 																status={c.skills === '' ? 'warning' : ''}
-																placeholder='Skills'
+																placeholder='Навички'
 																allowClear={true}
 																value={c.skills}
 																onChange={value => setChallengeSkills(sectionIndex, challengeIndex, value)}
@@ -401,7 +401,7 @@ export const MontageEditPanel = (props: Props) => {
 															<HeaderText>Abilities</HeaderText>
 															<TextInput
 																status={c.abilities === '' ? 'warning' : ''}
-																placeholder='Skills'
+																placeholder='Здібності'
 																allowClear={true}
 																value={c.abilities}
 																onChange={value => setChallengeAbilities(sectionIndex, challengeIndex, value)}
@@ -459,15 +459,15 @@ export const MontageEditPanel = (props: Props) => {
 																status={t.characteristics.length < 2 ? 'warning' : ''}
 																mode='multiple'
 																placeholder='Select characteristics'
-																options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(ch => ({ value: ch }))}
+																options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(ch => ({ value: ch }))}
 																optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 																value={t.characteristics}
 																onChange={value => setTwistCharacteristics(sectionIndex, twistIndex, value)}
 															/>
-															<HeaderText>Skills</HeaderText>
+															<HeaderText>Навички</HeaderText>
 															<TextInput
 																status={t.skills === '' ? 'warning' : ''}
-																placeholder='Skills'
+																placeholder='Навички'
 																allowClear={true}
 																value={t.skills}
 																onChange={value => setTwistSkills(sectionIndex, twistIndex, value)}
@@ -475,7 +475,7 @@ export const MontageEditPanel = (props: Props) => {
 															<HeaderText>Abilities</HeaderText>
 															<TextInput
 																status={t.abilities === '' ? 'warning' : ''}
-																placeholder='Skills'
+																placeholder='Здібності'
 																allowClear={true}
 																value={t.abilities}
 																onChange={value => setTwistAbilities(sectionIndex, twistIndex, value)}

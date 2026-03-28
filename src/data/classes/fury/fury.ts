@@ -62,7 +62,7 @@ export const fury: HeroClass = {
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-1-1',
-					selected: ['Nature']
+					selected: ['Природа']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'fury-1-2',

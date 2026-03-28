@@ -25,7 +25,7 @@ interface Props {
 }
 
 export const FollowerEditPanel = (props: Props) => {
-	const [ follower, setFollower ] = useState<Follower>(props.follower);
+	const [follower, setFollower] = useState<Follower>(props.follower);
 
 	const getNameAndDescriptionSection = () => {
 		const setName = (value: string) => {
@@ -112,7 +112,7 @@ export const FollowerEditPanel = (props: Props) => {
 				<HeaderText>Type</HeaderText>
 				<Segmented
 					block={true}
-					options={[ FollowerType.Artisan, FollowerType.Sage ].map(o => ({ value: o, label: o }))}
+					options={[FollowerType.Artisan, FollowerType.Sage].map(o => ({ value: o, label: o }))}
 					value={follower.type}
 					onChange={setFollowerType}
 				/>
@@ -129,25 +129,25 @@ export const FollowerEditPanel = (props: Props) => {
 						setFollowerCharacteristics(data.array);
 					}}
 				/>
-				<HeaderText>Skills</HeaderText>
+				<HeaderText>Навички</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					mode='multiple'
 					maxCount={4}
 					allowClear={true}
-					placeholder='Skills'
+					placeholder='Навички'
 					options={FollowerLogic.getSkillOptions(follower.type, props.sourcebooks).map(s => ({ value: s.name, label: s.name, desc: s.description }))}
 					optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 					value={follower.skills}
 					onChange={setFollowerSkills}
 				/>
-				<HeaderText>Languages</HeaderText>
+				<HeaderText>Мови</HeaderText>
 				<Select
 					style={{ width: '100%' }}
 					mode='multiple'
 					maxCount={2}
 					allowClear={true}
-					placeholder='Languages'
+					placeholder='Мови'
 					options={FollowerLogic.getLanguageOptions(props.sourcebooks).map(s => ({ value: s.name, label: s.name, desc: s.description }))}
 					optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 					value={follower.languages}

@@ -209,7 +209,7 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 						features: [
 							FactoryLogic.feature.createSkillChoice({
 								id: 'solar-2-4a',
-								selected: ['Navigate']
+								selected: ['Навігація']
 							}),
 							FactoryLogic.feature.create({
 								id: 'solar-2-4b',
@@ -1126,7 +1126,7 @@ Until the end of the encounter or you are dying, the target gains the following 
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'magewright-sub-1-1-1',
-							selected: ['Mechanics']
+							selected: ['Механіка']
 						}),
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'GJRGJCgzCjqpokR6',
@@ -2139,7 +2139,7 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'magewright-sub-2-1-1',
-							selected: ['Alchemy']
+							selected: ['Алхімія']
 						}),
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'hEvu81mPFu8yEyCW',
@@ -2339,7 +2339,7 @@ As a maneuver, you can expend project points from the stone and craft any consum
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'magewright-sub-3-1-1',
-							selected: ['Blacksmithing']
+							selected: ['Ковальство']
 						}),
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'Ru8Fd3eJPJ9V4MC7',
@@ -2469,7 +2469,7 @@ You can target yourself instead of one creature with this ability. The targets b
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'magewright-sub-4-1-1',
-							selected: ['Jewelry']
+							selected: ['Ювелірна справа']
 						}),
 						FactoryLogic.feature.createHeroicResourceGain({
 							id: 'COx5givvrbck4khY',
@@ -2671,7 +2671,7 @@ As a Scion, you are the the quiet before the storm. You move like the wind, and 
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'scion-szzG0j9VXTie1vzU',
-					selected: ['Strategy']
+					selected: ['Стратегія']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'scion-wWXEEpo7fYtbd7H5',
@@ -3099,7 +3099,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'scion-R6zmbAYzj5QQnf5r',
-							selected: ['Gymnastics']
+							selected: ['Гімнастика']
 						}),
 						FactoryLogic.feature.createMultiple({
 							id: 'scion-d7U62IAB3V2YaasD',
@@ -3240,7 +3240,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'scion-5hK9y3rFtS2uW5d0',
-							selected: ['Mechanics']
+							selected: ['Механіка']
 						}),
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
@@ -3362,7 +3362,7 @@ The area remains until the end of the encounter or you are dying. Choose one of 
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'scion-YMhhEe1upKHfymOH',
-							selected: ['Empathize']
+							selected: ['Емпатія']
 						}),
 						FactoryLogic.feature.create({
 							id: 'scion-1jXjv5q9Tmlax2TD',
@@ -4302,7 +4302,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vessel-subclass-1-1-skill',
-							selected: ['Persuade']
+							selected: ['Переконання']
 						}),
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
@@ -4453,7 +4453,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vessel-subclass-2-1-skill',
-							selected: ['Endurance']
+							selected: ['Витривалість']
 						}),
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
@@ -4608,7 +4608,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						}),
 						FactoryLogic.feature.createSkillChoice({
 							id: 'vessel-subclass-3-1-skill',
-							selected: ['Psionics']
+							selected: ['Псіоніка']
 						}),
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({

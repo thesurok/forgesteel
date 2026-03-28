@@ -65,7 +65,7 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1',
 					count: 2,
-					selected: ['Магія', 'Strategy']
+					selected: ['Магія', 'Стратегія']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1c',

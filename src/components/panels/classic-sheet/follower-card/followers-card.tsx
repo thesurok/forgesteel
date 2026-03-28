@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const FollowersCard = (props: Props) => {
-	const followers = useMemo(() => props.followers, [ props.followers ]);
+	const followers = useMemo(() => props.followers, [props.followers]);
 
 	const getFollowerBlock = (follower: FollowerSheet) => {
 		return (
@@ -25,11 +25,11 @@ export const FollowersCard = (props: Props) => {
 				</div>
 				<CharacteristicsComponent characteristics={follower.characteristics} />
 				<div className='stat skills'>
-					<label>Skills:</label>
+					<label>Навички:</label>
 					<span>{follower.skills?.join(', ')}</span>
 				</div>
 				<div className='stat languages'>
-					<label>Languages:</label>
+					<label>Мови:</label>
 					<span>{follower.languages?.join(', ')}</span>
 				</div>
 			</div>

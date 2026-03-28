@@ -53,7 +53,7 @@ As a kiln, you arrive to stoke the flame wherever the spark of opportunity prese
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: '1D5vcoaQjS4bxAfB',
-					selected: ['Carpentry']
+					selected: ['Столярство']
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'XpH3WAhclAzTtZiv',
@@ -399,7 +399,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'j0NHyyP7a0NF1TnH',
-							selected: ['Navigate']
+							selected: ['Навігація']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'P6VcK01mJc1PkCfH',
@@ -479,7 +479,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'K2orXNVgQlytsh8Q',
-							selected: ['Endurance']
+							selected: ['Витривалість']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'QFwqnEtHE9TZFhXd',
@@ -587,7 +587,7 @@ Changing the color of your flames requires the use of this ability again.`)
 					features: [
 						FactoryLogic.feature.createSkillChoice({
 							id: 'Jx8AcVTauHPBKCxS',
-							selected: ['Escape Artist']
+							selected: ['Втеча']
 						}),
 						FactoryLogic.feature.createPackageContent({
 							id: 'ErWk8f3OqP3RYNJn',
