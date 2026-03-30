@@ -754,7 +754,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 								tier2: '6 шкоди',
 								tier3: '7 шкоди; схоплений'
 							})),
-							FactoryLogic.createAbilitySectionText('A target who starts their turn grabbed by the zombie takes 2 corruption damage. A creature who takes 5 or more corruption damage this way becomes insatiably hungry for flesh, and must complete the Find a Cure downtime project in Draw Steel: Heroes to end this effect.')
+							FactoryLogic.createAbilitySectionText('A target who starts their turn grabbed by the zombie takes 2 corruption damage. A creature who takes 5 or more corruption damage this way becomes insatiably hungry for flesh, and must complete the «Знайти ліки» downtime project in Draw Steel: Heroes to end this effect.')
 						]
 					})
 				}),

@@ -1,4 +1,5 @@
 import { Negotiation } from '@/models/negotiation';
+import { NegotiationLogic } from '@/logic/negotiation-logic';
 import { NegotiationSheet } from '@/models/classic-sheets/negotiation-sheet';
 import { COMMON_LANGUAGE_NAME, normalizeLanguageName } from '@/utils/language-names';
 
@@ -7,7 +8,7 @@ export class NegotiationSheetBuilder {
 		const sheet: NegotiationSheet = {
 			id: negotiation.id,
 			name: negotiation.name,
-			attitude: negotiation.attitude.toString(),
+			attitude: NegotiationLogic.getAttitudeName(negotiation.attitude),
 			impression: negotiation.impression,
 			interest: negotiation.interest,
 			patience: negotiation.patience,
@@ -21,7 +22,7 @@ export class NegotiationSheetBuilder {
 		negotiation.languages.forEach(lang => {
 			const normalizedLanguage = normalizeLanguageName(lang);
 			if (normalizedLanguage !== COMMON_LANGUAGE_NAME && !nativeFound) {
-				sheet.languages.push(`${normalizedLanguage} (Native)`);
+				sheet.languages.push(`${normalizedLanguage} (рідна)`);
 				nativeFound = true;
 			} else {
 				sheet.languages.push(normalizedLanguage);

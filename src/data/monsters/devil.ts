@@ -27,16 +27,16 @@ export const devil: MonsterGroup = {
 		},
 		{
 			id: 'devil-info-3',
-			name: 'Negotiating With Devils',
+			name: 'Переговори з дияволами',
 			description: `
-Devils are eager to negotiate and strike deals, but often require more compelling arguments and concrete evidence from the other party. You can pick from the following motivations and pitfalls to quickly create a devil from one of the Seven Cities for a negotiation (see Chapter 11 in Draw Steel: Heroes):
+Дияволи охоче ведуть переговори й укладають угоди, але часто потребують вагоміших аргументів і конкретніших доказів від іншої сторони. Ви можете обрати з наведених нижче мотивів і вад, щоб швидко створити диявола з одного із Семи Міст для переговорів (див. розділ 11 у Draw Steel: Heroes):
 
-- Motivation: Greed, Power, Legacy
-- Pitfall: Benevolence, Freedom, Protection
+- Мотив: Жадібність, Влада, Спадщина
+- Вада: Милосердя, Свобода, Захист
 
-During a negotiation, an NPC devil has their impression and patience increased by 1 (to a maximum of 5). Their interest goes up to 10 instead of 5.
+Під час переговорів у NPC-диявола враження й терпіння зростають на 1 (до максимуму 5). Його зацікавленість може сягати 10 замість 5.
 
-When an NPC devil is ready to make an offer, divide their interest by 2 to get their final response. A devil typically never settles a negotiation unless they’re promised something desirable in return.`
+Коли NPC-диявол готовий зробити пропозицію, поділіть його зацікавленість на 2, щоб визначити остаточну відповідь. Диявол зазвичай не завершує переговори, якщо йому не пообіцяють чогось бажаного у відповідь.`
 		},
 		{
 			id: 'devil-info-4',
@@ -62,7 +62,7 @@ Although some devils enjoy comfort and opulence for their own sake, they primari
 The following are samples of the wonders that a devil can offer—to only the most discriminating customers, of course. A devil might only have two or three of these items available for trade, but others (such as an archdevil’s wing) can be won by force. See Draw Steel: Heroes for more information about how these items can be used by heroes.
 
 - Components: An archdevil’s wing, archdevil’s blood, soul chalk, a wide selection of true names
-- Project Sources: Notes in Анжалі (Anjali) for the Devil’s Bargain armor enhancement or a Hellcharger Helm, notes in Гіраллік (Hyrallic) for a Mediator’s Charm
+- Project Sources: Notes in Анжалі (Anjali) for the Devil’s Bargain armor enhancement or a Hellcharger Helm, notes in Гіраллік (Hyrallic) for a Шарм посередника
 - Titles: Diabolist, Maestro
 - Treasures: G’Allios Visiting Card, Thief of Joy
 - Wealth: Each hero can earn 1 wealth in exchange for a small favor`

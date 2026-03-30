@@ -4971,8 +4971,8 @@ export const humanTalent = {
 						features: [
 							{
 								id: 'talent-sub-3-2-1',
-								name: 'Ease the Mind',
-								description: 'You gain an edge on tests made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).',
+								name: 'Заспокоїти розум',
+								description: 'Ви отримуєте перевагу на випробування, щоб припинити бій і почати переговори. Крім того, якщо ви присутні під час переговорів, терпіння будь-якого NPC з ворожим або підозрілим початковим ставленням зростає на 1 (до максимуму 5).',
 								type: 'Текст',
 								data: null
 							},

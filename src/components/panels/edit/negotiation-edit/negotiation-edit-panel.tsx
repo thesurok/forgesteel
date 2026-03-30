@@ -54,18 +54,18 @@ export const NegotiationEditPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<HeaderText>Name</HeaderText>
+				<HeaderText>Назва</HeaderText>
 				<Space.Compact style={{ width: '100%' }}>
 					<TextInput
 						status={negotiation.name === '' ? 'warning' : ''}
-						placeholder='Name'
+						placeholder='Назва'
 						allowClear={true}
 						value={negotiation.name}
 						onChange={setName}
 					/>
 					<Button icon={<ThunderboltOutlined />} onClick={() => setName(NameGenerator.generateName())} />
 				</Space.Compact>
-				<HeaderText>Description</HeaderText>
+				<HeaderText>Опис</HeaderText>
 				<MarkdownEditor value={negotiation.description} onChange={setDescription} />
 			</Space>
 		);
@@ -97,15 +97,15 @@ export const NegotiationEditPanel = (props: Props) => {
 
 		return (
 			<Space orientation='vertical' style={{ width: '100%' }}>
-				<HeaderText>Attitude</HeaderText>
+				<HeaderText>Ставлення</HeaderText>
 				<Select
 					style={{ width: '100%' }}
-					options={[AttitudeType.Trusting, AttitudeType.Friendly, AttitudeType.Open, AttitudeType.Neutral, AttitudeType.Suspicious, AttitudeType.Hostile].map(a => ({ value: a, label: a, desc: NegotiationLogic.getAttitudeDescription(a) }))}
-					optionRender={option => <Field label={option.data.value} value={option.data.desc} />}
+					options={[AttitudeType.Trusting, AttitudeType.Friendly, AttitudeType.Open, AttitudeType.Neutral, AttitudeType.Suspicious, AttitudeType.Hostile].map(a => ({ value: a, label: NegotiationLogic.getAttitudeName(a), desc: NegotiationLogic.getAttitudeDescription(a) }))}
+					optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 					value={negotiation.attitude}
 					onChange={setAttitude}
 				/>
-				<HeaderText>Impression</HeaderText>
+				<HeaderText>Враження</HeaderText>
 				<NumberSpin min={0} max={15} value={negotiation.impression} onChange={setImpression} />
 				<HeaderText>Мови</HeaderText>
 				<Select
@@ -169,30 +169,30 @@ export const NegotiationEditPanel = (props: Props) => {
 						<Button type='text' icon={<PlusOutlined />} onClick={addMotivation} />
 					}
 				>
-					Motivations
+					Мотиви
 				</HeaderText>
 				{
 					negotiation.motivations.map((m, n) => (
 						<Expander
 							key={`m${n}`}
-							title={m.trait}
+							title={NegotiationLogic.getTraitName(m.trait)}
 							extra={[
-								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveMotivation(n, 'up'); }} />,
-								<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveMotivation(n, 'down'); }} />,
+								<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveMotivation(n, 'up'); }} />,
+								<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveMotivation(n, 'down'); }} />,
 								<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deleteMotivation(m.trait); }} />
 							]}
 						>
-							<HeaderText>Motivation</HeaderText>
+							<HeaderText>Мотив</HeaderText>
 							<Space orientation='vertical' style={{ width: '100%' }}>
 								<Select
 									style={{ width: '100%' }}
-									placeholder='Trait'
-									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getMotivationDescription(nt) }))}
+									placeholder='Риса'
+									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: NegotiationLogic.getTraitName(nt), value: nt, desc: NegotiationLogic.getMotivationDescription(nt) }))}
 									optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 									value={m.trait}
 									onChange={t => setMotivationTrait(n, t)}
 								/>
-								<MarkdownEditor placeholder='Description' value={m.description} onChange={value => setMotivationDescription(n, value)} />
+								<MarkdownEditor placeholder='Опис' value={m.description} onChange={value => setMotivationDescription(n, value)} />
 							</Space>
 						</Expander>
 					))
@@ -254,30 +254,30 @@ export const NegotiationEditPanel = (props: Props) => {
 						<Button type='text' icon={<PlusOutlined />} onClick={addPitfall} />
 					}
 				>
-					Pitfalls
+					Вади
 				</HeaderText>
 				{
 					negotiation.pitfalls.map((p, n) => (
 						<Expander
 							key={`p${n}`}
-							title={p.trait}
+							title={NegotiationLogic.getTraitName(p.trait)}
 							extra={[
-								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); movePitfall(n, 'up'); }} />,
-								<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); movePitfall(n, 'down'); }} />,
+								<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); movePitfall(n, 'up'); }} />,
+								<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); movePitfall(n, 'down'); }} />,
 								<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deletePitfall(p.trait); }} />
 							]}
 						>
-							<HeaderText>Pitfall</HeaderText>
+							<HeaderText>Вада</HeaderText>
 							<Space orientation='vertical' style={{ width: '100%' }}>
 								<Select
 									style={{ width: '100%' }}
-									placeholder='Trait'
-									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: nt, value: nt, desc: NegotiationLogic.getPitfallDescription(nt) }))}
+									placeholder='Риса'
+									options={[NegotiationTrait.Benevolence, NegotiationTrait.Discovery, NegotiationTrait.Freedom, NegotiationTrait.Greed, NegotiationTrait.HigherAuthority, NegotiationTrait.Justice, NegotiationTrait.Legacy, NegotiationTrait.Peace, NegotiationTrait.Power, NegotiationTrait.Protection, NegotiationTrait.Revelry, NegotiationTrait.Vengeance].map(nt => ({ label: NegotiationLogic.getTraitName(nt), value: nt, desc: NegotiationLogic.getPitfallDescription(nt) }))}
 									optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 									value={p.trait}
 									onChange={t => setPitfallTrait(n, t)}
 								/>
-								<MarkdownEditor placeholder='Description' value={p.description} onChange={value => setPitfallDescription(n, value)} />
+								<MarkdownEditor placeholder='Опис' value={p.description} onChange={value => setPitfallDescription(n, value)} />
 							</Space>
 						</Expander>
 					))
@@ -307,7 +307,7 @@ export const NegotiationEditPanel = (props: Props) => {
 							key={`o${n}`}
 							title={n}
 						>
-							<HeaderText>Outcome {n}</HeaderText>
+							<HeaderText>Результат {n}</HeaderText>
 							<MarkdownEditor value={o} onChange={value => setOutcome(n, value)} />
 						</Expander>
 					))
@@ -324,27 +324,27 @@ export const NegotiationEditPanel = (props: Props) => {
 						items={[
 							{
 								key: '1',
-								label: 'Negotiation',
+								label: 'Переговори',
 								children: getNameAndDescriptionSection()
 							},
 							{
 								key: '2',
-								label: 'Details',
+								label: 'Деталі',
 								children: getNegotiationDetailsSection()
 							},
 							{
 								key: '3',
-								label: 'Motivations',
+								label: 'Мотиви',
 								children: getNegotiationMotivationsSection()
 							},
 							{
 								key: '4',
-								label: 'Pitfalls',
+								label: 'Вади',
 								children: getNegotiationPitfallsSection()
 							},
 							{
 								key: '5',
-								label: 'Outcomes',
+								label: 'Результати',
 								children: getNegotiationOutcomesSection()
 							}
 						]}
@@ -357,7 +357,7 @@ export const NegotiationEditPanel = (props: Props) => {
 								items={[
 									{
 										key: '1',
-										label: 'Preview',
+										label: 'Перегляд',
 										children: (
 											<SelectablePanel>
 												<NegotiationPanel

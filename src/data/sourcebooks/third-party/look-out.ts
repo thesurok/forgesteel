@@ -929,7 +929,7 @@ const burntOutArtisan: Perk = {
 	description: `
 *Kilns only*
 
-When you make a project roll using a skill from the crafting skill group, you can choose to gain 30 project points instead of the total of your roll. After doing this, you cannot achieve a breakthrough on any subsequent project roll (ever!) until you complete the Spend Time With Loved Ones activity (see <u>Downtime Activities</u> in the Core Rules).`,
+When you make a project roll using a skill from the crafting skill group, you can choose to gain 30 project points instead of the total of your roll. After doing this, you cannot achieve a breakthrough on any subsequent project roll (ever!) until you complete the «Провести час із близькими» activity (see <u>Downtime Activities</u> in the Core Rules).`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Special
@@ -953,7 +953,7 @@ const ifYouCantStandTheHeat: Perk = {
 	description: `
 *Kilns only*
 
-You gain a +2 bonus to the Perfect New Recipe project roll (see Downtime Activities in the Core Rules). You additionally know the following recipes:
+You gain a +2 bonus to the «Удосконалити новий рецепт» project roll (see Downtime Activities in the Core Rules). You additionally know the following recipes:
 
 | Type of Recipe | Item Prerequisites | Benefits |
 | :--- | :--- | :--- |

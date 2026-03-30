@@ -118,7 +118,7 @@ export class AdventureLogic {
 
 		session.encounters.forEach(e => options.push({ type: 'encounter', id: e.id, name: e.name || 'Unnamed Encounter' }));
 		session.montages.forEach(m => options.push({ type: 'montage', id: m.id, name: m.name || 'Unnamed Montage' }));
-		session.negotiations.forEach(n => options.push({ type: 'negotiation', id: n.id, name: n.name || 'Unnamed Negotiation' }));
+		session.negotiations.forEach(n => options.push({ type: 'negotiation', id: n.id, name: n.name || 'Переговори без назви' }));
 		session.tacticalMaps.forEach(tm => options.push({ type: 'map', id: tm.id, name: tm.name || 'Unnamed Map' }));
 		session.counters.forEach(c => options.push({ type: 'counter', id: c.id, name: c.name || 'Unnamed Counter' }));
 

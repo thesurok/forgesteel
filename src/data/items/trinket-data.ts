@@ -524,17 +524,17 @@ While wearing this gauntlet, your ranged free strikes have the Magic keyword and
 
 	static mediatorsCharm: Item = FactoryLogic.createItem({
 		id: 'item-mediators-charm',
-		name: 'Mediator\'s Charm',
-		description: 'A fancy gold earring is set with a small ruby.',
+		name: 'Шарм посередника',
+		description: 'Вишукана золота сережка оздоблена маленьким рубіном.',
 		type: ItemType.Trinket2nd,
 		keywords: [AbilityKeyword.Head, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The gold nib of a fountain pen used to sign a major treaty or compact, a ruby once worn by a devil',
-			source: 'Texts or lore in Гіраллік (Hyrallic)',
+			prerequisites: 'Золоте перо авторучки, якою підписали великий договір або угоду, рубін, який колись носив диявол',
+			source: 'Тексти чи перекази в Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 300
 		}),
-		effect: 'While you wear the Mediator’s Charm, the patience of any NPC you negotiate with increases by 1 (to a maximum of 5). Additionally, at the start of a negotiation, you learn one of an NPC’s motivations or pitfalls of the Director’s choice.'
+		effect: 'Поки ви носите Шарм посередника, терпіння будь-якого NPC, з яким ви ведете переговори, зростає на 1 (до максимуму 5). Крім того, на початку переговорів ви дізнаєтеся один із мотивів або вад NPC за вибором Director.'
 	});
 
 	static necklaceOfTheBayou: Item = FactoryLogic.createItem({

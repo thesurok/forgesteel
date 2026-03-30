@@ -490,7 +490,7 @@ export const wodeElfTroubadour = {
 					{
 						id: 'q9DC0wXzaL4f1EeU',
 						name: 'Scene Partner',
-						description: 'Whenever you obtain a success on a test to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC’s interest by 1, you instead increase their interest by 2 (to a maximum of 5).\n\nYou can have a number of bonds active equal to your level. When you form a bond with a new NPC that would exceed the limit, you must choose which of your active bonds to lose.',
+						description: 'Щоразу, коли ви досягаєте успіху на випробуванні взаємодії з NPC, використовуючи навичку з міжособистісної групи, ви можете встановити звʼязок із цим NPC. Коли ви вступаєте в переговори зі звʼязаним NPC, його терпіння зростає на 1 (до максимуму 5). Крім того, уперше під час переговорів, коли ви особисто наводите аргумент, який збільшив би зацікавленість звʼязаного NPC на 1, ви натомість збільшуєте її на 2 (до максимуму 5).\n\nВи можете мати одночасно кількість звʼязків, що дорівнює вашому рівню. Коли ви формуєте звʼязок із новим NPC, що перевищує цей ліміт, ви мусите обрати, який з активних звʼязків утрачаєте.',
 						type: 'Текст',
 						data: null
 					},
@@ -755,7 +755,7 @@ export const wodeElfTroubadour = {
 									feature: {
 										id: 'vAsAdX1lzAwxKC0z',
 										name: 'My Reputation Precedes Me',
-										description: 'You can invoke your reputation at the start of a social interaction with one or more NPCs who haven’t met you before, automatically creating a bond with one of those NPCs from that group as if using your Scene Partner feature. This bond counts against the limit on active bonds from your Scene Partner feature. While the bond is active, all heroes present treat their Renown as 2 higher than usual for the purpose of entering into a negotiation with the bonded NPC.\n\nThe Director can award the heroes 1 hero token to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a bane on tests made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your Scene Partner feature to find allies within the group.',
+										description: 'Ви можете послатися на свою репутацію на початку соціальної взаємодії з одним або кількома NPC, які раніше вас не зустрічали, автоматично створивши звʼязок з одним із цих NPC із групи так, ніби ви використали свою особливість Scene Partner. Цей звʼязок зараховується до ліміту активних звʼязків вашої особливості Scene Partner. Поки звʼязок активний, усі присутні герої вважають свою Відомість на 2 вищою за звичайну для мети вступу в переговори зі звʼязаним NPC.\n\nDirector може натомість дати героям 1 жетон героя, щоб зробити вас сумнозвісним серед цієї групи істот і не дати вам сформувати цей звʼязок. Поки ви не вживете заходів, щоб поліпшити свою репутацію, усі присутні герої отримують шкоду на випробування взаємодії з істотами цієї групи, використовуючи навички з міжособистісної групи навичок. Ви все ще можете використовувати свою особливість Scene Partner, щоб знаходити союзників у межах групи.',
 										type: 'Текст',
 										data: null
 									},
@@ -1267,7 +1267,7 @@ export const wodeElfTroubadour = {
 					{
 						id: 'kN2tUhuHAbfRxOM3',
 						name: 'Greatest of All Time',
-						description: 'Whenever you obtain a success on a test, each NPC within your line of effect has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an edge on their next test. These effects last until you start your next respite.',
+						description: 'Щоразу, коли ви досягаєте успіху на випробуванні, показник Враження кожного NPC у межах вашої лінії ефекту зменшується на 4 під час переговорів (до мінімуму 1), а кожен союзник у межах 3 клітинок від вас отримує перевагу на своє наступне випробування. Ці ефекти тривають до початку вашого наступного перепочинку.',
 						type: 'Текст',
 						data: null
 					},
@@ -5227,7 +5227,7 @@ export const wodeElfTroubadour = {
 						{
 							id: 'perk-harmonizer',
 							name: 'Harmonizer',
-							description: 'You can make a Presence test using the Music skill to influence creatures who don’t have emotions or can’t understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.',
+							description: 'Ви можете робити випробування Присутності, використовуючи навичку Музика, щоб впливати на істот, які не мають емоцій або не можуть вас зрозуміти. Крім того, один раз під час переговорів, коли союзник наводить аргумент, ви можете заграти музику, щоб дати цьому союзникові перевагу на його випробування.',
 							type: 'Текст',
 							data: null,
 							list: 'Міжособистісні'

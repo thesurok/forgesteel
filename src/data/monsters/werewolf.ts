@@ -118,7 +118,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 								tier2: '13 шкоди; ціль отримує 4 rage',
 								tier3: '16 шкоди; ціль отримує 5 rage'
 							})),
-							FactoryLogic.createAbilitySectionText('A creature afflicted with lycanthropy gains 2 rage at the end of each of their turns whenever they’re in combat. Their rage doesn’t disappear after finishing a respite, and they must complete the Find a Cure downtime project to end this effect.'),
+							FactoryLogic.createAbilitySectionText('A creature afflicted with lycanthropy gains 2 rage at the end of each of their turns whenever they’re in combat. Their rage doesn’t disappear after finishing a respite, and they must complete the «Знайти ліки» downtime project to end this effect.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								effect: 'If the target has П<0, they are afflicted with lycanthropy. Each time the target is unaffected by the potency effect, the potency increases by 1 the next time the werewolf uses the ability against the same target.'

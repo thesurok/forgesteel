@@ -29,8 +29,8 @@ export const xorannox: MonsterGroup = {
 		},
 		{
 			id: 'xorannox-info-4',
-			name: 'Rivalries and Negotiations',
-			description: 'Unlike the synlirii and the olothec, overminds have an intense hatred of their own kind and never work together. However, overminds often enjoy diplomacy with other species, seeking to form alliances and build secret networks of agents throughout the World Below.'
+			name: 'Суперництва й переговори',
+			description: 'На відміну від синліріїв і олотеків, овермайнди палко ненавидять собі подібних і ніколи не співпрацюють між собою. Водночас вони часто охоче ведуть дипломатію з іншими видами, прагнучи укладати союзи та будувати таємні мережі агентів по всьому Нижньому Світу.'
 		},
 		{
 			id: 'xorannox-info-5',

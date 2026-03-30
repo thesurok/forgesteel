@@ -24,17 +24,17 @@ interface Props {
 }
 
 export const NegotiationPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
 			<>
 				<Markdown text={props.negotiation.description} />
 				<StatsRow>
-					<Field orientation='vertical' label='Attitude' value={props.negotiation.attitude} />
-					<Field orientation='vertical' label='Interest' value={props.negotiation.interest} />
-					<Field orientation='vertical' label='Patience' value={props.negotiation.patience} />
-					<Field orientation='vertical' label='Impression' value={props.negotiation.impression} />
+					<Field orientation='vertical' label='Ставлення' value={NegotiationLogic.getAttitudeName(props.negotiation.attitude)} />
+					<Field orientation='vertical' label='Зацікавленість' value={props.negotiation.interest} />
+					<Field orientation='vertical' label='Терпіння' value={props.negotiation.patience} />
+					<Field orientation='vertical' label='Враження' value={props.negotiation.impression} />
 				</StatsRow>
 			</>
 		);
@@ -43,8 +43,8 @@ export const NegotiationPanel = (props: Props) => {
 	const getMotivations = () => {
 		return (
 			<>
-				{props.negotiation.motivations.map((t, n) => <Field key={n} label={t.trait} value={<Markdown text={t.description || NegotiationLogic.getMotivationDescription(t.trait)} useSpan={true} />} />)}
-				{props.negotiation.motivations.length === 0 ? <div className='ds-text dimmed-text'>None</div> : null}
+				{props.negotiation.motivations.map((t, n) => <Field key={n} label={NegotiationLogic.getTraitName(t.trait)} value={<Markdown text={t.description || NegotiationLogic.getMotivationDescription(t.trait)} useSpan={true} />} />)}
+				{props.negotiation.motivations.length === 0 ? <div className='ds-text dimmed-text'>Немає</div> : null}
 			</>
 		);
 	};
@@ -52,8 +52,8 @@ export const NegotiationPanel = (props: Props) => {
 	const getPitfalls = () => {
 		return (
 			<>
-				{props.negotiation.pitfalls.map((t, n) => <Field key={n} label={t.trait} value={<Markdown text={t.description || NegotiationLogic.getPitfallDescription(t.trait)} useSpan={true} />} />)}
-				{props.negotiation.pitfalls.length === 0 ? <div className='ds-text dimmed-text'>None</div> : null}
+				{props.negotiation.pitfalls.map((t, n) => <Field key={n} label={NegotiationLogic.getTraitName(t.trait)} value={<Markdown text={t.description || NegotiationLogic.getPitfallDescription(t.trait)} useSpan={true} />} />)}
+				{props.negotiation.pitfalls.length === 0 ? <div className='ds-text dimmed-text'>Немає</div> : null}
 			</>
 		);
 	};
@@ -62,7 +62,7 @@ export const NegotiationPanel = (props: Props) => {
 		return (
 			<>
 				{props.negotiation.languages.map(l => SourcebookLogic.getLanguage(l, props.sourcebooks)).filter(l => !!l).map((l, n) => <Field key={n} label={l.name} value={l.description} />)}
-				{props.negotiation.languages.length === 0 ? <div className='ds-text dimmed-text'>None</div> : null}
+				{props.negotiation.languages.length === 0 ? <div className='ds-text dimmed-text'>Немає</div> : null}
 			</>
 		);
 	};
@@ -70,12 +70,12 @@ export const NegotiationPanel = (props: Props) => {
 	const getOutcomes = () => {
 		return (
 			<>
-				<Field label='5' value={<Markdown text={props.negotiation.outcomes[5] || 'Yes, and...'} useSpan={true} />} />
-				<Field label='4' value={<Markdown text={props.negotiation.outcomes[4] || 'Yes'} useSpan={true} />} />
-				<Field label='3' value={<Markdown text={props.negotiation.outcomes[3] || 'Yes, but...'} useSpan={true} />} />
-				<Field label='2' value={<Markdown text={props.negotiation.outcomes[2] || 'No, but...'} useSpan={true} />} />
-				<Field label='1' value={<Markdown text={props.negotiation.outcomes[1] || 'No'} useSpan={true} />} />
-				<Field label='0' value={<Markdown text={props.negotiation.outcomes[0] || 'No, and...'} useSpan={true} />} />
+				<Field label='5' value={<Markdown text={props.negotiation.outcomes[5] || 'Так, і...'} useSpan={true} />} />
+				<Field label='4' value={<Markdown text={props.negotiation.outcomes[4] || 'Так'} useSpan={true} />} />
+				<Field label='3' value={<Markdown text={props.negotiation.outcomes[3] || 'Так, але...'} useSpan={true} />} />
+				<Field label='2' value={<Markdown text={props.negotiation.outcomes[2] || 'Ні, але...'} useSpan={true} />} />
+				<Field label='1' value={<Markdown text={props.negotiation.outcomes[1] || 'Ні'} useSpan={true} />} />
+				<Field label='0' value={<Markdown text={props.negotiation.outcomes[0] || 'Ні, і...'} useSpan={true} />} />
 			</>
 		);
 	};
@@ -106,11 +106,11 @@ export const NegotiationPanel = (props: Props) => {
 					style={{ marginBottom: '20px' }}
 					block={true}
 					options={[
-						{ value: 'overview', label: 'Overview' },
-						{ value: 'motivations', label: 'Motivations' },
-						{ value: 'pitfalls', label: 'Pitfalls' },
-						{ value: 'languages', label: 'Languages' },
-						{ value: 'outcomes', label: 'Outcomes' }
+						{ value: 'overview', label: 'Огляд' },
+						{ value: 'motivations', label: 'Мотиви' },
+						{ value: 'pitfalls', label: 'Вади' },
+						{ value: 'languages', label: 'Мови' },
+						{ value: 'outcomes', label: 'Результати' }
 					]}
 					value={page}
 					onChange={setPage}
@@ -132,7 +132,7 @@ export const NegotiationPanel = (props: Props) => {
 		return (
 			<div className='negotiation-panel compact'>
 				<HeaderText level={1} tags={tags}>
-					{props.negotiation.name || 'Unnamed Negotiation'}
+					{props.negotiation.name || 'Переговори без назви'}
 				</HeaderText>
 				<Markdown text={props.negotiation.description} />
 			</div>
@@ -143,7 +143,7 @@ export const NegotiationPanel = (props: Props) => {
 		<ErrorBoundary>
 			<div className='negotiation-panel' id={SheetFormatter.getPageId('negotiation', props.negotiation.id)}>
 				<HeaderText level={1} tags={tags}>
-					{props.negotiation.name || 'Unnamed Negotiation'}
+					{props.negotiation.name || 'Переговори без назви'}
 				</HeaderText>
 				{getContent()}
 			</div>

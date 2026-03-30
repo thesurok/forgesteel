@@ -38,105 +38,105 @@ export const NegotiationRunPanel = (props: Props) => {
 	return (
 		<ErrorBoundary>
 			<div className='negotiation-run-panel' id={negotiation.id}>
-				<HeaderText level={1}>{props.negotiation.name || 'Unnamed Negotiation'}</HeaderText>
+				<HeaderText level={1}>{props.negotiation.name || 'Переговори без назви'}</HeaderText>
 				<Markdown text={props.negotiation.description} />
 				<StatsRow>
 					<NumberSpin min={0} max={5} value={negotiation.interest} onChange={setInterest}>
 						<Field
 							orientation='vertical'
-							label='Interest'
+							label='Зацікавленість'
 							value={<Progress percent={negotiation.interest * 20} steps={5} showInfo={false} />}
 						/>
 					</NumberSpin>
 					<NumberSpin min={0} max={5} value={negotiation.patience} onChange={setPatience}>
 						<Field
 							orientation='vertical'
-							label='Patience'
+							label='Терпіння'
 							value={<Progress percent={negotiation.patience * 20} steps={5} showInfo={false} />}
 						/>
 					</NumberSpin>
 				</StatsRow>
-				<Field label='Impression' value={`${negotiation.impression}: If a hero is famous to an NPC, they gain an edge on tests when making arguments to which the Флірт, Лідерство, or Переконання skill could be applied. If they are infamous to the NPC, they gain an edge on tests when making arguments to which the Вихваляння, Допит, or Залякування skill could be applied. A hero gains this edge even if they don’t have the appropriate skill.`} />
+				<Field label='Враження' value={`${negotiation.impression}: Якщо герой має добру славу серед NPC, він отримує перевагу на випробуваннях, коли наводить аргументи, до яких можна застосувати навичку Флірт, Лідерство або Переконання. Якщо герой має лиху славу серед NPC, він отримує перевагу на випробуваннях, коли наводить аргументи, до яких можна застосувати навичку Вихваляння, Допит або Залякування. Герой отримує цю перевагу, навіть якщо не має відповідної навички.`} />
 				{negotiation.languages.length > 0 ? <Field label='Мови' value={negotiation.languages.join(', ')} /> : null}
 				<div className='negotiation-content'>
 					<div>
-						<HeaderText>Motivations</HeaderText>
-						{props.negotiation.motivations.map((t, n) => <Field key={n} label={t.trait} value={t.description || NegotiationLogic.getMotivationDescription(t.trait)} />)}
-						{props.negotiation.motivations.length === 0 ? <div className='ds-text dimmed-text'>None</div> : null}
+						<HeaderText>Мотиви</HeaderText>
+						{props.negotiation.motivations.map((t, n) => <Field key={n} label={NegotiationLogic.getTraitName(t.trait)} value={t.description || NegotiationLogic.getMotivationDescription(t.trait)} />)}
+						{props.negotiation.motivations.length === 0 ? <div className='ds-text dimmed-text'>Немає</div> : null}
 					</div>
 					<div>
-						<HeaderText>Pitfalls</HeaderText>
-						{props.negotiation.pitfalls.map((t, n) => <Field key={n} label={t.trait} value={t.description || NegotiationLogic.getPitfallDescription(t.trait)} />)}
-						{props.negotiation.pitfalls.length === 0 ? <div className='ds-text dimmed-text'>None</div> : null}
+						<HeaderText>Вади</HeaderText>
+						{props.negotiation.pitfalls.map((t, n) => <Field key={n} label={NegotiationLogic.getTraitName(t.trait)} value={t.description || NegotiationLogic.getPitfallDescription(t.trait)} />)}
+						{props.negotiation.pitfalls.length === 0 ? <div className='ds-text dimmed-text'>Немає</div> : null}
 					</div>
 					<div>
-						<HeaderText>Outcomes</HeaderText>
-						<Field highlight={negotiation.interest === 5} label='5' value={<Markdown text={props.negotiation.outcomes[5] || 'Yes, and...'} useSpan={true} />} />
-						<Field highlight={negotiation.interest === 4} label='4' value={<Markdown text={props.negotiation.outcomes[4] || 'Yes'} useSpan={true} />} />
-						<Field highlight={negotiation.interest === 3} label='3' value={<Markdown text={props.negotiation.outcomes[3] || 'Yes, but...'} useSpan={true} />} />
-						<Field highlight={negotiation.interest === 2} label='2' value={<Markdown text={props.negotiation.outcomes[2] || 'No, but...'} useSpan={true} />} />
-						<Field highlight={negotiation.interest === 1} label='1' value={<Markdown text={props.negotiation.outcomes[1] || 'No'} useSpan={true} />} />
-						<Field highlight={negotiation.interest === 0} label='0' value={<Markdown text={props.negotiation.outcomes[0] || 'No, and...'} useSpan={true} />} />
+						<HeaderText>Результати</HeaderText>
+						<Field highlight={negotiation.interest === 5} label='5' value={<Markdown text={props.negotiation.outcomes[5] || 'Так, і...'} useSpan={true} />} />
+						<Field highlight={negotiation.interest === 4} label='4' value={<Markdown text={props.negotiation.outcomes[4] || 'Так'} useSpan={true} />} />
+						<Field highlight={negotiation.interest === 3} label='3' value={<Markdown text={props.negotiation.outcomes[3] || 'Так, але...'} useSpan={true} />} />
+						<Field highlight={negotiation.interest === 2} label='2' value={<Markdown text={props.negotiation.outcomes[2] || 'Ні, але...'} useSpan={true} />} />
+						<Field highlight={negotiation.interest === 1} label='1' value={<Markdown text={props.negotiation.outcomes[1] || 'Ні'} useSpan={true} />} />
+						<Field highlight={negotiation.interest === 0} label='0' value={<Markdown text={props.negotiation.outcomes[0] || 'Ні, і...'} useSpan={true} />} />
 					</div>
 				</div>
 				<Divider />
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<Expander title='Uncovering Motivations'>
+					<Expander title='Розкриття мотивів'>
 						<Markdown
 							text={`
-If a hero wishes to figure out an NPC’s motivations, they can begin by simply asking, “What do you want out of this deal?” In response, the NPC can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch NPC with the greed motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch’s gratitude. The Director can also decide that during the natural course of the negotiation, the NPC might offer up similar suggestions without the heroes asking, provided the NPC already has an interest of 3 or higher. If an NPC isn’t as forthcoming, or if the heroes want to learn one of the NPC’s pitfalls, a hero can make a Reason, Intuition, or Presence test while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The test has the following outcomes:
+Якщо герой хоче зʼясувати мотиви NPC, він може почати з простого запитання: "Чого ви хочете від цієї угоди?" У відповідь NPC може охоче натякнути або прямо розкрити один зі своїх мотивів, зазвичай попросивши щось. Наприклад, NPC-монарх із мотивацією жадібності та схильністю колекціонувати рідкісних тварин може натякнути, що герої заслужать його вдячність, якщо дістануть яйце грифона. Режисер також може вирішити, що в природному перебігу переговорів NPC сам запропонує подібні натяки, навіть якщо герої не питали, за умови, що його зацікавленість уже дорівнює 3 або більше. Якщо NPC не такий відвертий або якщо герої хочуть дізнатися одну з його вад, герой може зробити випробування Розуму, Інтуїції або Присутності під час взаємодії з NPC у ході переговорів, залежно від тактики, якою він намагається його розкрити. Випробування має такі результати:
 
-**Кидок Сили + Reason, Intuition, or Presence:**
+**Кидок Сили + Розум, Інтуїція або Присутність:**
 
-| Roll    | Effect                                                                                                                                                                                                      |
-|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ≤ 11    | The hero learns no information regarding the NPC’s motivations or pitfalls, and the NPC realizes the hero is trying to read them and becomes annoyed. As a consequence, the NPC’s patience is reduced by 1. |
-| 12 - 16 | The hero learns no information regarding the NPC’s motivations or pitfalls.                                                                                                                                 |
-| ≥ 17    | The hero learns one of the NPC’s motivations or pitfalls (their choice).                                                                                                                                    |
+| Кидок   | Ефект                                                                                                                                                                                              |
+|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ≤ 11    | Герой не дізнається нічого про мотиви чи вади NPC, а NPC розуміє, що герой намагається його розкусити, і дратується. Як наслідок, терпіння NPC зменшується на 1.                                |
+| 12 - 16 | Герой не дізнається жодної інформації про мотиви чи вади NPC.                                                                                                                                      |
+| ≥ 17    | Герой дізнається один із мотивів або одну з вад NPC на свій вибір.                                                                                                                                 |
 
-After this test is made, the heroes can’t make another test to determine the same NPC’s motivations or pitfalls until they make an argument to the NPC or the negotiation ends.`}
+Після цього випробування герої не можуть робити ще одне випробування, щоб визначити мотиви чи вади того самого NPC, доки не звернуться до нього з аргументом або доки переговори не завершаться.`}
 						/>
 					</Expander>
-					<Expander title='Appeal to Motivation'>
+					<Expander title='Звернення до мотиву'>
 						<Markdown
 							text={`
-If an argument doesn’t include a pitfall and appeals to one of the NPC’s motivations that hasn’t already been appealed to, the hero making the argument can make an medium test to attempt to sway the NPC with the argument. Depending on the argument, this can be a Reason, Intuition, or Presence test using any applicable skill—most commonly a skill from the interpersonal skill group. The test has the following outcomes:
+Якщо аргумент не містить вади й апелює до одного з мотивів NPC, до якого ще не зверталися, герой, який наводить цей аргумент, може пройти середнє випробування, щоб спробувати схилити NPC на свій бік. Залежно від аргументу, це може бути випробування Розуму, Інтуїції або Присутності з будь-якою доречною навичкою - найчастіше з групи міжособистісних навичок. Випробування має такі результати:
 
-**Кидок Сили + Reason, Intuition, or Presence:**
+**Кидок Сили + Розум, Інтуїція або Присутність:**
 
-| Roll    | Effect                                                                |
-|:--------|:----------------------------------------------------------------------|
-| ≤ 11    | The NPC’s patience decreases by 1.                                    |
-| 12 - 16 | The NPC’s interest increases by 1, and their patience decreases by 1. |
-| ≥ 17    | The NPC’s interest increases by 1, and their patience doesn’t change. |
+| Кидок   | Ефект                                                           |
+|:--------|:----------------------------------------------------------------|
+| ≤ 11    | Терпіння NPC зменшується на 1.                                  |
+| 12 - 16 | Зацікавленість NPC збільшується на 1, а терпіння зменшується на 1. |
+| ≥ 17    | Зацікавленість NPC збільшується на 1, а терпіння не змінюється. |
 
-At the Director’s discretion, a particularly well-roleplayed or well-reasoned argument automatically counts as a tier 3 outcome without a test. Good roleplaying should be rewarded!
+На розсуд Режисера особливо добре відіграний або добре обґрунтований аргумент автоматично дає результат рівня 3 без випробування. Гарне відігрування слід винагороджувати!
 
-If the heroes attempt to appeal to a motivation that’s already been appealed to, the NPC’s interest remains the same and their patience decreases by 1.`}
+Якщо герої намагаються звернутися до мотиву, до якого вже апелювали, зацікавленість NPC не змінюється, а терпіння зменшується на 1.`}
 						/>
 					</Expander>
-					<Expander title='No Motivation or Pitfall'>
+					<Expander title='Без мотиву чи вади'>
 						<Markdown
 							text={`
-If an argument doesn’t include one of the NPC’s motivations or pitfalls, the hero who makes the argument must make a more difficult test to appeal to the NPC. The test has the following outcomes:
+Якщо аргумент не спирається ні на мотив, ні на ваду NPC, герой, який його наводить, повинен пройти складніше випробування, щоб вплинути на NPC. Випробування має такі результати:
 
-**Кидок Сили + Reason, Intuition, or Presence:**
+**Кидок Сили + Розум, Інтуїція або Присутність:**
 
-| Roll    | Effect                                                                |
-|:--------|:----------------------------------------------------------------------|
-| ≤ 11    | The NPC’s patience decreases by 1, and their interest decreases by 1. |
-| 12 - 16 | The NPC’s patience decreases by 1.                                    |
-| ≥ 17    | The NPC’s interest increases by 1, and their patience decreases by 1. |
-| 19 / 20 | The NPC’s interest increases by 1.                                    |
+| Кидок   | Ефект                                                                    |
+|:--------|:-------------------------------------------------------------------------|
+| ≤ 11    | Терпіння NPC зменшується на 1, а зацікавленість зменшується на 1.         |
+| 12 - 16 | Терпіння NPC зменшується на 1.                                            |
+| ≥ 17    | Зацікавленість NPC збільшується на 1, а терпіння зменшується на 1.        |
+| 19 / 20 | Зацікавленість NPC збільшується на 1.                                     |
 
-If the heroes try to use the same argument without a pitfall or motivation twice, the test automatically obtains a tier 1 outcome.`}
+Якщо герої двічі намагаються використати той самий аргумент без вади чи мотиву, випробування автоматично дає результат рівня 1.`}
 						/>
 					</Expander>
-					<Expander title='Caught in a Lie'>
-						<Markdown text='If a hero lies to an NPC with an argument that fails to increase the NPC’s interest, the Director can decide that the NPC catches the lie and is offended by it. The NPC’s interest decreases by 1, in addition to any decrease imposed by the failure.' />
+					<Expander title='Спіймано на брехні'>
+						<Markdown text='Якщо герой бреше NPC аргументом, який не підвищує зацікавленість NPC, Режисер може вирішити, що NPC викриває цю брехню й ображається. Зацікавленість NPC зменшується на 1 на додачу до будь-якого іншого зменшення через невдачу.' />
 					</Expander>
-					<Expander title='Pitfall Used'>
-						<Markdown text='If an argument uses one of the NPC’s pitfalls, it automatically fails and the NPC’s interest and patience each decrease by 1. The NPC might also warn the heroes not to treat them in such a way again.' />
+					<Expander title='Використано ваду'>
+						<Markdown text='Якщо аргумент використовує одну з вад NPC, він автоматично провалюється, а зацікавленість і терпіння NPC зменшуються на 1 кожне. NPC також може застерегти героїв, щоб ті більше так із ним не поводилися.' />
 					</Expander>
 				</Space>
 			</div>

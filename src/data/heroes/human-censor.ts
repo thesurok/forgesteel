@@ -3211,7 +3211,7 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-1-5-1',
 								name: 'Demonologist',
-								description: 'The most esoteric secrets of your order teach you that to defeat your enemy, you must understand them. You treat your Renown as 2 higher than usual when dealing with demons, devils, and other agents of chaos. If you successfully complete a negotiation with one of these creatures, you gain an edge on power rolls made against them and can use your Judgment ability against them as a безкоштовна тригерна дія before an encounter begins.',
+								description: 'Найезотеричніші таємниці вашого ордену вчать, що, аби здолати ворога, його треба зрозуміти. Коли ви маєте справу з демонами, дияволами та іншими агентами хаосу, ваша Відомість вважається на 2 вищою за звичайну. Якщо ви успішно завершуєте переговори з однією з цих істот, ви отримуєте перевагу на кидки сили проти неї й можете використати проти неї свою здібність Judgment як безкоштовну тригерну дію до початку сутички.',
 								type: 'Текст',
 								data: null
 							}

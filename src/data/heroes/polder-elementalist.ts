@@ -4257,8 +4257,8 @@ export const polderElementalist = {
 						features: [
 							{
 								id: 'elementalist-sub-1-6-1',
-								name: 'Mantle of Quintessence',
-								description: '\nYour Mantle of Essence feature no longer requires essence.\n\nAdditionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.',
+								name: 'Мантія Квінтесенції',
+								description: '\nВластивість «Мантія Есенції» більше не вимагає есенції.\n\nКрім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії мають початкове терпіння збільшене на 1 (до максимуму 5) під час будь-яких переговорів. Поки в зоні, ви та будь-який союзник отримуєте перевагу на випробування, що використовують навичку Догляд за тваринами. Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а випробування з навичкою Догляд за тваринами мають подвійну перевагу.',
 								type: 'Текст',
 								data: null
 							}
@@ -4561,8 +4561,8 @@ export const polderElementalist = {
 						features: [
 							{
 								id: 'elementalist-sub-2-6-1',
-								name: 'Mantle of Quintessence',
-								description: '\nYour Mantle of Essence feature no longer requires essence.\n\nAdditionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.',
+								name: 'Мантія Квінтесенції',
+								description: '\nВластивість «Мантія Есенції» більше не вимагає есенції.\n\nКрім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії мають початкове терпіння збільшене на 1 (до максимуму 5) під час будь-яких переговорів. Поки в зоні, ви та будь-який союзник отримуєте перевагу на випробування, що використовують навичку Догляд за тваринами. Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а випробування з навичкою Догляд за тваринами мають подвійну перевагу.',
 								type: 'Текст',
 								data: null
 							}
@@ -4781,8 +4781,8 @@ export const polderElementalist = {
 						features: [
 							{
 								id: 'elementalist-sub-3-6-1',
-								name: 'Mantle of Quintessence',
-								description: '\nYour Mantle of Essence feature no longer requires essence.\n\nAdditionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.',
+								name: 'Мантія Квінтесенції',
+								description: '\nВластивість «Мантія Есенції» більше не вимагає есенції.\n\nКрім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії мають початкове терпіння збільшене на 1 (до максимуму 5) під час будь-яких переговорів. Поки в зоні, ви та будь-який союзник отримуєте перевагу на випробування, що використовують навичку Догляд за тваринами. Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а випробування з навичкою Догляд за тваринами мають подвійну перевагу.',
 								type: 'Текст',
 								data: null
 							}
@@ -5066,8 +5066,8 @@ export const polderElementalist = {
 						features: [
 							{
 								id: 'elementalist-sub-4-6-1',
-								name: 'Mantle of Quintessence',
-								description: '\nYour Mantle of Essence feature no longer requires essence.\n\nAdditionally, your Mantle of Essence now radiates magic that creates a calming air. Creatures in the area of the mantle’s aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an edge on tests that use the Handle Animals skill. If you have 5 or more Victories, the bonus to patience increases to 2 and tests that use the Handle Animals skill have a double edge.',
+								name: 'Мантія Квінтесенції',
+								description: '\nВластивість «Мантія Есенції» більше не вимагає есенції.\n\nКрім того, ваша Мантія Есенції тепер випромінює магію, що створює заспокійливу атмосферу. Істоти в зоні аури мантії мають початкове терпіння збільшене на 1 (до максимуму 5) під час будь-яких переговорів. Поки в зоні, ви та будь-який союзник отримуєте перевагу на випробування, що використовують навичку Догляд за тваринами. Якщо у вас 5 або більше Перемог, бонус до терпіння збільшується до 2, а випробування з навичкою Догляд за тваринами мають подвійну перевагу.',
 								type: 'Текст',
 								data: null
 							}

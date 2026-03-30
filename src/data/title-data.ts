@@ -17,8 +17,8 @@ export class TitleData {
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-ancient-loremaster-1',
-				name: 'Leverage',
-				description: 'You learn a priceless secret. The Director chooses the type of person who would value this secret, usually a member of a particular faction, such as a Higaran noble, or a type of person, such as a fence of stolen goods. When negotiating with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can only share this secret once.'
+				name: 'Важіль впливу',
+				description: 'Ви дізнаєтеся безцінну таємницю. Director обирає тип особи, яка цінувала б цю таємницю, зазвичай це член певної фракції, наприклад хігарський вельможа, або певний тип людей, наприклад скупник краденого. Під час переговорів із такою особою ви можете запропонувати цю таємницю. Якщо вона погодиться, її зацікавленість зростає на 3 (до максимуму 5). Ви можете поділитися цією таємницею лише раз.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ancient-loremaster-2',
@@ -39,12 +39,12 @@ export class TitleData {
 		name: 'Angler',
 		description: 'You gain the following benefit.',
 		echelon: 1,
-		prerequisites: '120 project points spent on the Tackle table while Fishing.',
+		prerequisites: '120 project points spent on the Tackle table while undertaking the «Риболовля» project.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-angler-1',
 				name: 'Angler',
-				description: 'You gain an edge on all Fishing project rolls.'
+				description: 'You gain an edge on all project rolls for «Риболовля».'
 			})
 		],
 		selectedFeatureID: ''
@@ -59,13 +59,13 @@ export class TitleData {
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-1',
-				name: 'Iron Hand in Velvet Glove',
-				description: 'The first time during a negotiation that you make a test using the Залякування skill and don’t make an argument that appeals to an NPC’s motivation, you don’t lower the NPC’s patience or interest no matter the outcome of the roll.'
+				name: 'Залізна рука в оксамитовій рукавичці',
+				description: 'Уперше під час переговорів, коли ви робите випробування з навичкою Залякування і не наводите аргумент, що апелює до мотиву NPC, ви не знижуєте терпіння чи зацікавленість NPC незалежно від результату кидка.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-2',
-				name: 'Truce!',
-				description: 'You have a double edge on tests made to stop combat and start a negotiation.'
+				name: 'Перемирʼя!',
+				description: 'Ви маєте подвійну перевагу на випробування, щоб припинити бій і почати переговори.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-3',
@@ -107,8 +107,8 @@ export class TitleData {
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-brawler-4',
-				name: 'If I Wanted You Dead, You’d Be Dead',
-				description: 'Whenever you defeat foes without killing any of them (including the foes you defeat to meet the prerequisite for this title), you gain an edge on tests during negotiations with those foes.'
+				name: 'Якби я хотів твоєї смерті, ти був би мертвий',
+				description: 'Щоразу, коли ви перемагаєте ворогів, не вбиваючи нікого з них (зокрема ворогів, перемога над якими дала вам право на цей титул), ви отримуєте перевагу на випробування під час переговорів із цими ворогами.'
 			})
 		],
 		selectedFeatureID: ''
@@ -224,35 +224,35 @@ export class TitleData {
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-faction-member-1',
-				name: 'Academic Faction',
+				name: 'Наукова фракція',
 				description: `
-When you’re negotiating with a member of your faction, their starting Patience increases by 2, up to a maximum of 5.
+Коли ви ведете переговори з членом своєї фракції, його початкове терпіння зростає на 2, до максимуму 5.
 
-You find a sage who can make up to three Reason tests to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these tests. These project rolls take 10 minutes each and don’t need to be made during a respite.`
+Ви знаходите мудреця, який може зробити до трьох випробувань Розуму для пригадування знань або кидків проєкту для дослідницьких проєктів від вашого імені. Мудрець має +5 до цих випробувань. Кожен такий кидок проєкту триває 10 хвилин і не потребує виконання під час перепочинку.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-faction-member-2',
-				name: 'Guild Faction',
+				name: 'Гільдійська фракція',
 				description: `
-When you’re negotiating with a member of your faction, their starting Patience increases by 2, up to a maximum of 5.
+Коли ви ведете переговори з членом своєї фракції, його початкове терпіння зростає на 2, до максимуму 5.
 
-You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these tests. These project rolls take 10 uninterrupted minutes each and don’t need to be made during a respite.`
+Ви знаходите вправного ремісника, який може зробити до трьох кидків проєкту для крафтових проєктів від вашого імені. Ремісник має +5 до цих кидків. Кожен такий кидок проєкту триває 10 безперервних хвилин і не потребує виконання під час перепочинку.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-faction-member-3',
-				name: 'Martial Faction',
+				name: 'Військова фракція',
 				description: `
-When you’re negotiating with a member of your faction, their starting Patience increases by 2, up to a maximum of 5.
+Коли ви ведете переговори з членом своєї фракції, його початкове терпіння зростає на 2, до максимуму 5.
 
-You recruit up to three minions with levels no greater than your own, of a type appropriate for the faction (such as human guards). These minions follow your orders for a day.`
+Ви набираєте до трьох міньйонів рівня не вище за ваш, тип яких відповідає фракції (наприклад, людських вартових). Ці міньйони виконують ваші накази протягом дня.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-faction-member-4',
-				name: 'Spy Faction',
+				name: 'Шпигунська фракція',
 				description: `
-When you’re negotiating with a member of your faction, their starting Patience increases by 2, up to a maximum of 5.
+Коли ви ведете переговори з членом своєї фракції, його початкове терпіння зростає на 2, до максимуму 5.
 
-You find an agent who can provide you with three pieces of information about the settlement you’re in, such as the location of a hidden person, a secret entrance into a guarded area, or the negotiation motivation or pitfall of an important person.`
+Ви знаходите агента, який може надати вам три відомості про поселення, у якому ви перебуваєте, наприклад місце перебування прихованої особи, таємний вхід до охоронюваної зони або мотив чи ваду важливої особи в переговорах.`
 			})
 		],
 		selectedFeatureID: ''
@@ -263,12 +263,12 @@ You find an agent who can provide you with three pieces of information about the
 		name: 'Goldenrod',
 		description: 'You gain the following benefit.',
 		echelon: 1,
-		prerequisites: '300 project points spent on the Tackle table while Fishing.',
+		prerequisites: '300 project points spent on the Tackle table while undertaking the «Риболовля» project.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-goldenrod-1',
 				name: 'Goldenrod',
-				description: 'Each time you undertake the Fishing project, you can reroll one project roll.'
+				description: 'Each time you undertake the «Риболовля» project, you can reroll one project roll.'
 			})
 		],
 		selectedFeatureID: ''
@@ -398,7 +398,7 @@ You find an agent who can provide you with three pieces of information about the
 		name: 'Master of Reels',
 		description: 'You gain the following benefit.',
 		echelon: 1,
-		prerequisites: 'You gain this title by undertaking the Fishing project.',
+		prerequisites: 'You gain this title by undertaking the «Риболовля» project.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-master-of-reels-1',
@@ -559,8 +559,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-3',
-				name: 'Signal Flags',
-				description: 'While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have line of effect to each other. You gain an edge on Presence tests made while negotiating in this way.'
+				name: 'Сигнальні прапори',
+				description: 'Перебуваючи на борту корабля, ви можете спілкуватися й вести переговори з іншим кораблем на відстані до 5 миль, якщо ви та істоти на тому кораблі маєте лінію ефекту один до одного. Ви отримуєте перевагу на випробування Присутності, коли ведете переговори таким чином.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-4',
@@ -618,8 +618,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-1',
-				name: 'Honor Among Thieves',
-				description: 'When negotiating with criminals, your Renown score is considered to be 2 higher than usual.'
+				name: 'Честь серед злодіїв',
+				description: 'Під час переговорів зі злочинцями ваш показник Відомості вважається на 2 вищим, ніж зазвичай.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-2',
@@ -813,7 +813,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 		name: 'Blood Magic',
 		description: '“Flow, blood, thou fiend’s libation, and catch my foes in conflagration!”',
 		echelon: 2,
-		prerequisites: 'You participate in a Discover Lore project to learn forbidden knowledge.',
+		prerequisites: 'You participate in the «Дослідити знання» project to learn forbidden knowledge.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-blood-magic-1',
@@ -1130,7 +1130,7 @@ I better watch out for that banana peel!`,
 		name: 'Master Librarian',
 		description: '“You want to know the exact coordinates of the Gem of the Waves shipwreck? I came across that just the other day in an unpublished memoir of its second mate. Let me get that for you.”',
 		echelon: 2,
-		prerequisites: 'You have the Ancient Loremaster title, and you have completed a Discover Lore project to learn lost knowledge or forbidden knowledge.',
+		prerequisites: 'You have the Ancient Loremaster title, and you have completed the «Дослідити знання» project to learn lost knowledge or forbidden knowledge.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-1',
@@ -1140,7 +1140,7 @@ I better watch out for that banana peel!`,
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-2',
 				name: 'I Have Just the Book',
-				description: 'If you start a Discover Lore project in your hero’s stronghold or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.'
+				description: 'If you start the «Дослідити знання» project in your hero’s stronghold or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-3',
@@ -1805,30 +1805,30 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static peaceBringer: Title = {
 		id: 'title-peace-bringer',
-		name: 'Peace Bringer',
-		description: '“There goes Diana, peace bringer. She has won many a victory with her sword, but her greatest deed was convincing two nations to stop fighting.”',
+		name: 'Миротворець',
+		description: '“Он іде Діана, миротвориця. Вона здобула чимало перемог своїм мечем, але її найбільшим звершенням стало те, що вона переконала дві держави припинити війну.”',
 		echelon: 4,
-		prerequisites: 'You conduct a successful negotiation on which the fate of a nation or a world stands.',
+		prerequisites: 'Ви успішно провели переговори, від яких залежала доля держави або цілого світу.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-1',
-				name: 'Calm Heads Prevail',
-				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). When you make a test to stop combat and start a negotiation, you always obtain a tier 3 outcome.'
+				name: 'Холодний розум перемагає',
+				description: 'Оберіть: ваш Розум або Присутність зростає на 1 (до максимуму 6). Коли ви робите випробування, щоб припинити бій і почати переговори, ви завжди отримуєте результат 3 рівня.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-2',
-				name: 'Drop Your Sword',
-				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). When you succeed on a test using the Залякування skill, you can cause affected creatures to drop any items they are holding.'
+				name: 'Кинь свій меч',
+				description: 'Оберіть: ваш Розум або Присутність зростає на 1 (до максимуму 6). Коли ви успішно проходите випробування з використанням навички Залякування, ви можете змусити уражених істот кинути будь-які предмети, які вони тримають.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-3',
-				name: 'Hear Me Out',
-				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). While you are present in a negotiation, an NPC’s starting patience increases by 3 (to a maximum of 5).'
+				name: 'Вислухай мене',
+				description: 'Оберіть: ваш Розум або Присутність зростає на 1 (до максимуму 6). Поки ви присутні під час переговорів, початкове терпіння NPC зростає на 3 (до максимуму 5).'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-4',
-				name: 'Many Paths to Peace',
-				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). When you make a test with a skill from the interpersonal skill group, you can use any characteristic of your choice for the test.'
+				name: 'Багато шляхів до миру',
+				description: 'Оберіть: ваш Розум або Присутність зростає на 1 (до максимуму 6). Коли ви робите випробування з навичкою з міжособистісної групи навичок, ви можете використовувати для нього будь-яку обрану вами характеристику.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1839,7 +1839,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 		name: 'Theoretical Warrior',
 		description: '“I’ve read about this tactic in books—it looks fairly straightforward.”',
 		echelon: 4,
-		prerequisites: 'You have the Master Librarian title, and you complete a Learn From a Master project with a project goal of 1,000.',
+		prerequisites: 'You have the Master Librarian title, and you complete the «Навчатися у майстра» project with a project goal of 1,000.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-theoretical-warrior-1',
@@ -2050,7 +2050,7 @@ If your champion would die while taking your place, you lose access to your Retu
 					FactoryLogic.feature.create({
 						id: 'title-high-summoner-1a',
 						name: 'Effect',
-						description: 'You are considered a master that can be learned from using the Learn from a Master downtime project. Anyone that makes a project roll using you as the source gains a bonus to their roll equal to your Reason.'
+						description: 'You are considered a master that can be learned from using the «Навчатися у майстра» downtime project. Anyone that makes a project roll using you as the source gains a bonus to their roll equal to your Reason.'
 					}),
 					FactoryLogic.feature.createChoice({
 						id: 'title-high-summoner-1b',

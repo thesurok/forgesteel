@@ -108,21 +108,21 @@ interface Props {
 export const LibraryListPage = (props: Props) => {
 	const navigation = useNavigation();
 	const { kind, elementID } = useParams<{ kind: SourcebookElementKind, elementID: string }>();
-	const [ category, setCategory ] = useState<SourcebookElementKind>(kind || 'ancestry');
-	const [ selectedID, setSelectedID ] = useState<string | null>(elementID || null);
-	const [ previousCategory, setPreviousCategory ] = useState<SourcebookElementKind | undefined>(kind);
-	const [ previousSelectedID, setPreviousSelectedID ] = useState<string | null | undefined>(elementID);
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
-	const [ showSidebar, setShowSidebar ] = useState<boolean>(true);
-	const [ view, setView ] = useState<string>('modern');
-	const [ showMonsters, setShowMonsters ] = useState<boolean>(false);
-	const [ showCulturesFromAncestries, setShowCulturesFromAncestries ] = useState<boolean>(false);
-	const [ showSubclassesFromClasses, setShowSubclassesFromClasses ] = useState<boolean>(false);
-	const [ showProjectsFromImbuements, setShowProjectsFromImbuements ] = useState<boolean>(false);
-	const [ showProjectsFromItems, setShowProjectsFromItems ] = useState<boolean>(false);
-	const [ showMonsterFilter, setShowMonsterFilter ] = useState<boolean>(false);
-	const [ monsterFilter, setMonsterFilter ] = useState<MonsterFilter>(FactoryLogic.createMonsterFilter());
-	const [ sourcebookID, setSourcebookID ] = useState<string>(props.sourcebooks.filter(sb => sb.type === SourcebookType.Homebrew).length > 0 ? Collections.sort(props.sourcebooks, sb => sb.name).filter(sb => sb.type === SourcebookType.Homebrew)[0].id : '');
+	const [category, setCategory] = useState<SourcebookElementKind>(kind || 'ancestry');
+	const [selectedID, setSelectedID] = useState<string | null>(elementID || null);
+	const [previousCategory, setPreviousCategory] = useState<SourcebookElementKind | undefined>(kind);
+	const [previousSelectedID, setPreviousSelectedID] = useState<string | null | undefined>(elementID);
+	const [searchTerm, setSearchTerm] = useState<string>('');
+	const [showSidebar, setShowSidebar] = useState<boolean>(true);
+	const [view, setView] = useState<string>('modern');
+	const [showMonsters, setShowMonsters] = useState<boolean>(false);
+	const [showCulturesFromAncestries, setShowCulturesFromAncestries] = useState<boolean>(false);
+	const [showSubclassesFromClasses, setShowSubclassesFromClasses] = useState<boolean>(false);
+	const [showProjectsFromImbuements, setShowProjectsFromImbuements] = useState<boolean>(false);
+	const [showProjectsFromItems, setShowProjectsFromItems] = useState<boolean>(false);
+	const [showMonsterFilter, setShowMonsterFilter] = useState<boolean>(false);
+	const [monsterFilter, setMonsterFilter] = useState<MonsterFilter>(FactoryLogic.createMonsterFilter());
+	const [sourcebookID, setSourcebookID] = useState<string>(props.sourcebooks.filter(sb => sb.type === SourcebookType.Homebrew).length > 0 ? Collections.sort(props.sourcebooks, sb => sb.name).filter(sb => sb.type === SourcebookType.Homebrew)[0].id : '');
 	useTitle('Library');
 
 	if (kind !== previousCategory) {
@@ -477,7 +477,7 @@ export const LibraryListPage = (props: Props) => {
 								<SelectorRow selected={category === 'encounter'} content='Encounters' info={getList('encounter').length} onSelect={() => navigation.goToLibrary('encounter')} />
 								<SelectorRow selected={category === 'monster-group'} content={showMonsters ? 'Monsters' : 'Monster Groups'} info={showMonsters ? getList('monster').length : getList('monster-group').length} onSelect={() => navigation.goToLibrary('monster-group')} />
 								<SelectorRow selected={category === 'montage'} content='Montages' info={getList('montage').length} onSelect={() => navigation.goToLibrary('montage')} />
-								<SelectorRow selected={category === 'negotiation'} content='Negotiations' info={getList('negotiation').length} onSelect={() => navigation.goToLibrary('negotiation')} />
+								<SelectorRow selected={category === 'negotiation'} content='Переговори' info={getList('negotiation').length} onSelect={() => navigation.goToLibrary('negotiation')} />
 								<SelectorRow selected={category === 'tactical-map'} content='Tactical Maps' info={getList('tactical-map').length} onSelect={() => navigation.goToLibrary('tactical-map')} />
 								<SelectorRow selected={category === 'terrain'} content='Terrain' info={getList('terrain').length} onSelect={() => navigation.goToLibrary('terrain')} />
 							</div>

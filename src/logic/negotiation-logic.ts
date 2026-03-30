@@ -40,20 +40,70 @@ export class NegotiationLogic {
 		return 0;
 	};
 
+	static getAttitudeName = (attitude: AttitudeType) => {
+		switch (attitude) {
+			case AttitudeType.Hostile:
+				return 'Вороже';
+			case AttitudeType.Suspicious:
+				return 'Підозріле';
+			case AttitudeType.Neutral:
+				return 'Нейтральне';
+			case AttitudeType.Open:
+				return 'Відкрите';
+			case AttitudeType.Friendly:
+				return 'Приязне';
+			case AttitudeType.Trusting:
+				return 'Довірливе';
+		}
+
+		return '';
+	};
+
 	static getAttitudeDescription = (attitude: AttitudeType) => {
 		switch (attitude) {
 			case AttitudeType.Hostile:
-				return 'Openly opposed to the heroes. Barely willing to listen. ';
+				return 'Відкрито налаштоване проти героїв. Ледве готове слухати.';
 			case AttitudeType.Suspicious:
-				return 'Doubts the heroes’ motives but is willing to listen. ';
+				return 'Сумнівається в мотивах героїв, але готове вислухати.';
 			case AttitudeType.Neutral:
-				return 'Doesn’t feel one way or the other. Would probably rather be somewhere else, but doesn’t want to be rude.';
+				return 'Не відчуває нічого ні в один, ні в інший бік. Воліло б бути деінде, але не хоче грубити.';
 			case AttitudeType.Open:
-				return 'Willing to listen, willing to help, as long as the heroes aren’t asking too much. ';
+				return 'Готове вислухати й допомогти, якщо герої не просять забагато.';
 			case AttitudeType.Friendly:
-				return 'The heroes seem like the NPC’s people. The NPC is willing to give them the benefit of the doubt.';
+				return 'Герої здаються NPC своїми людьми. NPC готовий дати їм кредит довіри.';
 			case AttitudeType.Trusting:
-				return 'The NPC has reason to take the heroes at their word and will help if the characters don’t screw this up.';
+				return 'NPC має підстави вірити героям на слово і допоможе, якщо персонажі самі все не зіпсують.';
+		}
+
+		return '';
+	};
+
+	static getTraitName = (trait: NegotiationTrait) => {
+		switch (trait) {
+			case NegotiationTrait.Benevolence:
+				return 'Милосердя';
+			case NegotiationTrait.Discovery:
+				return 'Пізнання';
+			case NegotiationTrait.Freedom:
+				return 'Свобода';
+			case NegotiationTrait.Greed:
+				return 'Жадібність';
+			case NegotiationTrait.HigherAuthority:
+				return 'Вища влада';
+			case NegotiationTrait.Justice:
+				return 'Справедливість';
+			case NegotiationTrait.Legacy:
+				return 'Спадщина';
+			case NegotiationTrait.Peace:
+				return 'Мир';
+			case NegotiationTrait.Power:
+				return 'Влада';
+			case NegotiationTrait.Protection:
+				return 'Захист';
+			case NegotiationTrait.Revelry:
+				return 'Розваги';
+			case NegotiationTrait.Vengeance:
+				return 'Помста';
 		}
 
 		return '';
@@ -62,58 +112,58 @@ export class NegotiationLogic {
 	static getMotivationDescription = (trait: NegotiationTrait) => {
 		switch (trait) {
 			case NegotiationTrait.Benevolence:
-				return 'An NPC with the benevolence motivation believes in sharing what they have with others. However, an NPC involved in a negotiation must be limited in their benevolence, so that they don’t just give the heroes what they need.';
+				return 'NPC із мотивацією милосердя вірить у те, що потрібно ділитися тим, що має, з іншими. Водночас NPC, залучений до переговорів, має бути обмежений у своєму милосерді, щоб не просто віддати героям усе, що їм потрібно.';
 			case NegotiationTrait.Discovery:
-				return 'An NPC with the discovery motivation wants to learn new lore, explore forgotten places, break ground with new experiments, or uncover artifacts lost to time. Their curiosity and quest for knowledge might be driven by a specific goal, such as seeking the cure for a rare disease or a portal to a specific far-off world. Or it could be that they are a naturally inquisitive person who just wants to understand all they can about the timescape.';
+				return 'NPC із мотивацією пізнання прагне вивчати нові знання, досліджувати забуті місця, проводити новаторські експерименти або відкривати артефакти, загублені часом. Його цікавість і жага знань можуть бути зумовлені конкретною метою, наприклад пошуком ліків від рідкісної хвороби чи порталу до далекого світу. Або ж це просто допитлива натура, яка хоче зрозуміти якомога більше про Таймскейп.';
 			case NegotiationTrait.Freedom:
-				return 'An NPC with the freedom motivation wants no authority above them and desires no authority over others. They might already have personal freedom and wish to maintain that status quo, or they might wish to liberate themself or others from someone else’s authority.';
+				return 'NPC із мотивацією свободи не хоче мати над собою влади й не прагне владарювати над іншими. Він може вже мати особисту свободу й бажати зберегти цей статус-кво, а може прагнути звільнити себе чи інших від чужої влади.';
 			case NegotiationTrait.Greed:
-				return 'An NPC with the greed motivation desires wealth and resources above almost anything else. Sometimes these NPCs are misers, much like wyrms who hoard coins and gems but never spend or donate them. Others flaunt their wealth, viewing it as a sign of their station in life.';
+				return 'NPC із мотивацією жадібності понад усе прагне багатства й ресурсів. Деякі з них - скнари, подібні до зміїв, що накопичують монети й самоцвіти, але ніколи не витрачають і не жертвують їх. Інші ж виставляють своє багатство напоказ, вважаючи його ознакою свого становища в житті.';
 			case NegotiationTrait.HigherAuthority:
-				return 'An NPC with the higher authority motivation remains staunchly loyal to a person or force they perceive as more important than themself. This higher authority could be an organization, a deity or being of great power, a formal leader such as a noble or monarch, a mystical presence or force the NPC might not fully understand, or a person the NPC sees as an informal authority figure (an older sibling, a personal hero, and so forth).';
+				return 'NPC із мотивацією вищої влади непохитно відданий особі або силі, яку вважає важливішою за себе. Такою вищою владою може бути організація, божество чи істота великої сили, офіційний правитель на кшталт шляхтича або монарха, містична присутність чи сила, яку NPC може й не до кінця розуміти, або людина, яку NPC сприймає як неформальний авторитет, наприклад старший брат, особистий герой тощо.';
 			case NegotiationTrait.Justice:
-				return 'An NPC with the justice motivation wants to see the righteous rewarded and the wicked punished, however subjective their sense of who or what is good and evil. A priest who venerates a god of nature might believe that all who protect plants and animals are righteous, and that who harvest natural resources as miners and lumberjacks do must die. Having a justice motivation doesn’t necessarily make an NPC a kind or charitable person.';
+				return 'NPC із мотивацією справедливості прагне бачити праведних винагородженими, а лихих покараними, хоч його уявлення про добро і зло можуть бути дуже субʼєктивними. Жрець, що вшановує бога природи, може вважати праведними всіх, хто захищає рослини й тварин, а тих, хто видобуває природні ресурси, як-от шахтарів чи лісорубів, - гідними смерті. Мотивація справедливості не обовʼязково робить NPC добрим чи милосердним.';
 			case NegotiationTrait.Legacy:
-				return 'An NPC with the legacy motivation desires fame while alive and acclaim that lasts long after their death. They hope others will know and remember their deeds, great or terrible. Some of these NPCs might even seek immortality through deification or undeath, so that the eventual shedding of their mortal coil doesn’t prevent them from continuing to make history.';
+				return 'NPC із мотивацією спадщини прагне слави за життя й визнання, що триватиме довго після смерті. Він сподівається, що інші знатимуть і памʼятатимуть його вчинки, великі чи жахливі. Дехто з таких NPC може навіть шукати безсмертя через обожнення чи нежиття, щоб втрата смертної оболонки не завадила й надалі творити історію.';
 			case NegotiationTrait.Peace:
-				return 'An NPC with the peace motivation wants calm in their life. Under typical circumstances, they want to be left alone to run their business, farm, kingdom, criminal empire, or whatever small slice of the timescape is theirs. Some such NPCs don’t have peace and need help obtaining it, while others want their peaceful status quo to be maintained.';
+				return 'NPC із мотивацією миру прагне спокою у своєму житті. За звичайних обставин він хоче, щоб його залишили в спокої керувати своєю справою, фермою, королівством, злочинною імперією чи будь-яким іншим клаптиком Таймскейпу, що належить йому. Дехто з таких NPC миру не має й потребує допомоги, щоб його здобути, а інші хочуть лише зберегти свій мирний статус-кво.';
 			case NegotiationTrait.Power:
-				return 'An NPC with the power motivation covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of supernatural rituals - though why choose one method when all three together achieve the best results? Some such NPCs are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.';
+				return 'NPC із мотивацією влади зазіхає на владу інших. Він прагне посилити свій вплив, яким би великим той уже не був, і зберегти своє володіння. Він може шукати силу через завоювання, збирання артефактів або надприродні ритуали - хоча навіщо обирати щось одне, коли найкращий результат дають усі три разом? Серед таких NPC трапляються тирани, що мандрують світами, але й дрібні управителі сільських організацій чи святинь можуть жадати влади не менш люто.';
 			case NegotiationTrait.Protection:
-				return 'An NPC with the protection motivation has land, people, information, items, or an organization they want protected above all else. Keeping their charge safe is a duty they hold dear, and aiding in that protection earns their favor. Most people have friends or family they wish to protect, but an NPC with the protection motivation believes in doing so above all else.';
+				return 'NPC із мотивацією захисту має землю, людей, інформацію, предмети чи організацію, які прагне захистити понад усе. Берегти те, що йому доручено, - святий для нього обовʼязок, а допомога в цьому захисті здобуває його прихильність. Більшість людей хоче захистити друзів і родину, але NPC із цією мотивацією ставить це понад усе.';
 			case NegotiationTrait.Revelry:
-				return 'An NPC with the revelry motivation just wants to have fun. They enjoy socializing at parties, thrill-seeking, or indulging in other hedonistic activities. Getting pleasure out of life while spending time with people they like is paramount to such NPCs.';
+				return 'NPC із мотивацією розваг просто хоче добре провести час. Йому до вподоби спілкування на вечірках, пошук гострих відчуттів та інші гедоністичні заняття. Для такого NPC найважливіше - насолоджуватися життям поруч із тими, хто йому подобається.';
 			case NegotiationTrait.Vengeance:
-				return 'An NPC with the vengeance motivation wants to harm another who has hurt them. Their desire for revenge could be proportional to the harm that was inflicted upon them, or they might wish to pay back their pain with interest. In some cases, a desire for vengeance can be satisfied only by the death of another, but an NPC might wish to pay back their own suffering with embarrassment, career failure, or some other less permanent pain.';
+				return 'NPC із мотивацією помсти прагне скривдити того, хто завдав йому болю. Бажання помсти може відповідати заподіяній шкоді, а може вимагати повернення болю з відсотками. Іноді таку помсту можна вгамувати лише смертю ворога, але NPC може захотіти відплатити інакше: приниженням, крахом карʼєри чи іншим, менш остаточним стражданням.';
 		}
 	};
 
 	static getPitfallDescription = (trait: NegotiationTrait) => {
 		switch (trait) {
 			case NegotiationTrait.Benevolence:
-				return 'An NPC with the benevolence pitfall has a cynical view of the world, believing that no creature has a right to anything just by being alive. The idea of helping others because it’s the right thing to do is a preposterous, immature, or inexperienced idea to be laughed off or snuffed out.';
+				return 'NPC із вадою милосердя цинічно дивиться на світ і вважає, що жодна істота не має права ні на що лише тому, що вона жива. Думка про те, що іншим треба допомагати просто тому, що це правильно, здається йому безглуздою, дитячою або наївною - таку ідею варто висміяти або придушити.';
 			case NegotiationTrait.Discovery:
-				return 'An NPC with the discovery pitfall has no interest in finding new places, peoples, or ideas. It might be that the unknown scares them or makes them so uncomfortable that they’d rather remain ignorant. Alternatively, a previous pursuit of discovery might have turned out poorly for them.';
+				return 'NPC із вадою пізнання не цікавиться новими місцями, народами чи ідеями. Можливо, невідоме лякає його або так сильно вибиває з рівноваги, що він воліє залишатися в невіданні. Або ж попередні пошуки відкриттів закінчилися для нього погано.';
 			case NegotiationTrait.Freedom:
-				return 'An NPC with the freedom pitfall believes that a world without authority is one in turmoil and chaos. They might even believe that they are the right person to rule, and that their ideals should be the ones that become the law of the land.';
+				return 'NPC із вадою свободи вірить, що світ без влади - це світ смути й хаосу. Він навіть може вважати, що саме він є правильною особою для правління, а його ідеали повинні стати законом землі.';
 			case NegotiationTrait.Greed:
-				return 'Greed-driven NPCs might share their wealth with a select group of people they love, such as a noble lord who indulges his children’s every desire. Some NPCs might be greedy for resources other than money, such as a demon who wants to collect and devour souls, or a troll lord who hungers endlessly for the flesh of others.';
+				return 'NPC, керовані жадібністю, можуть ділитися своїм багатством з обраним колом улюблених людей, як-от шляхетний лорд, що потурає кожній забаганці своїх дітей. Дехто жадібний не до грошей, а до інших ресурсів, як-от демон, що хоче збирати й пожирати душі, або троль-володар, який без кінця жадає плоті інших.';
 			case NegotiationTrait.HigherAuthority:
-				return 'An NPC with the higher authority pitfall scoffs at the idea of serving another. The NPC might not believe that all people should be free, but they certainly believe that they personally shouldn’t have to answer to anyone.';
+				return 'NPC із вадою вищої влади глузує з самої ідеї служіння комусь іншому. Він може й не вірити, що всі люди мають бути вільними, але твердо переконаний, що особисто він точно не повинен нікому звітувати.';
 			case NegotiationTrait.Justice:
-				return 'An NPC with the justice pitfall doesn’t believe that the timescape is an inherently just place, and has no interest in making it one. The world is eternal conflict, there is no such thing as justice, and anyone who thinks otherwise is a naive fool.';
+				return 'NPC із вадою справедливості не вірить, що Таймскейп за своєю природою є справедливим місцем, і не має жодного бажання робити його таким. Світ - це вічний конфлікт, ніякої справедливості не існує, а кожен, хто думає інакше, є наївним дурнем.';
 			case NegotiationTrait.Legacy:
-				return 'An NPC with a legacy pitfall cares nothing about leaving a personal mark on the world. To them, such vain thinking is nothing but a waste of time.';
+				return 'NPC із вадою спадщини зовсім не дбає про те, щоб залишити по собі особистий слід у світі. Для нього такі марнославні думки - лише марна трата часу.';
 			case NegotiationTrait.Peace:
-				return 'An NPC with the peace pitfall hates being bored. They want excitement, drama, and danger in their life. For them, there’s nothing worse than the status quo.';
+				return 'NPC із вадою миру ненавидить нудьгу. Йому потрібні хвилювання, драма й небезпека. Для нього немає нічого гіршого за статус-кво.';
 			case NegotiationTrait.Power:
-				return 'An NPC with the power pitfall has no interest in authority for themself. They might respect the authority of others, but they hate the thought of ruling over other people and roundly reject any suggestion of the idea.';
+				return 'NPC із вадою влади не цікавиться особистою владою. Він може поважати владу інших, але ненавидить саму думку про панування над людьми і рішуче відкидає будь-який натяк на таке.';
 			case NegotiationTrait.Protection:
-				return 'An NPC with the protection pitfall is happy to leave others to fend for themselves. They don’t believe that it’s their responsibility to protect anyone other than themself, and might be outright disgusted at the thought of risking themself or their property to protect others.';
+				return 'NPC із вадою захисту охоче залишає інших напризволяще. Він не вважає своїм обовʼязком захищати когось, крім себе, і може навіть відчувати відразу від самої думки ризикувати собою або своїм майном заради інших.';
 			case NegotiationTrait.Revelry:
-				return 'An NPC with the revelry pitfall sees social encounters and hedonism as a waste of time. They take pleasure only in work or in building their own skills and character. Others who suggest immature debauchery are not worth their time.';
+				return 'NPC із вадою розваг вважає світські зустрічі й гедонізм марною тратою часу. Він знаходить задоволення лише в праці або в розвитку власних навичок і характеру. Ті, хто пропонує незрілу розпусту, не варті його часу.';
 			case NegotiationTrait.Vengeance:
-				return 'An NPC with the vengeance pitfall believes that revenge solves nothing. They might have gained this belief first hand, or they might simply not have the ambition to seek revenge - and they take a dim view of others who do.';
+				return 'NPC із вадою помсти вважає, що помста нічого не вирішує. Можливо, він дійшов цього висновку з власного досвіду, а можливо, просто не має амбіцій мститися - і через це зневажливо ставиться до тих, хто має такі прагнення.';
 		}
 	};
 }

@@ -68,8 +68,8 @@ Swift to bloom and swift to wither, Anthousai remind others of the fleeting natu
 				{
 					feature: FactoryLogic.feature.create({
 						id: 'anthousai-feature-3b',
-						name: 'Inherent Allure',
-						description: 'An innate appeal suffuses your every action. You gain an edge on Intuition and Presence tests using the Flirt, Nature, or Persuade skills during negotiations with characters who have the Greed, Peace, or Protection motivations. (Your director may opt to roll on your behalf if you have not already determined if these apply as motivations or pitfalls.)'
+						name: 'Вроджена привабливість',
+						description: 'Природна вабливість пронизує кожну вашу дію. Ви отримуєте перевагу на випробування Інтуїції та Присутності з використанням навичок Флірт, Природа або Переконання під час переговорів із персонажами, які мають мотиви Жадібність, Мир або Захист. (Director може вирішити кидати замість вас, якщо ви ще не визначили, чи є це мотивами або вадами.)'
 					}),
 					value: 1
 				},

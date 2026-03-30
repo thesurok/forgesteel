@@ -187,7 +187,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-the-luxurious-fop-1',
 						name: '',
-						description: 'Whenever you deal damage with this weapon, you can immediately shift 1 square. As well, while you wield or carry the weapon and are present in a negotiation, if an NPC in the negotiation has the greed, legacy, power, or revelry motivation, their starting interest increases by 1 (to a maximum of 5).'
+						description: 'Щоразу, коли ви завдаєте шкоди цією зброєю, ви можете негайно зміститися на 1 клітинку. Крім того, поки ви володієте або носите цю зброю й присутні на переговорах, якщо NPC у цих переговорах має мотив жадібності, спадщини, влади або розваг, його початкова зацікавленість зростає на 1 (до максимуму 5).'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-the-luxurious-fop-1a',

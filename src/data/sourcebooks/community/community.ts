@@ -4345,8 +4345,8 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						}),
 						FactoryLogic.feature.create({
 							id: 'vessel-subclass-1-1-3',
-							name: 'Forked Tongue',
-							description: 'You have an edge on tests made to influence NPCs during negotiations.'
+							name: 'Роздвоєний язик',
+							description: 'Ви маєте перевагу на випробування, щоб впливати на NPC під час переговорів.'
 						}),
 						FactoryLogic.feature.create({
 							id: 'vessel-subclass-1-1-4',

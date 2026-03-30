@@ -10,38 +10,38 @@ interface Props {
 }
 
 export const NegotiationHeaderCard = (props: Props) => {
-	const negotiation = useMemo(() => props.negotiation, [ props.negotiation ]);
+	const negotiation = useMemo(() => props.negotiation, [props.negotiation]);
 
 	return (
 		<div className='negotiation-header card'>
 			<HeaderImage />
 			<section className='container overview'>
 				<LabeledTextField
-					label='Negotiation'
-					content={negotiation.name}
-					additionalClasses={[ 'name', 'no-box', 'text-left' ]}
+					label='Переговори'
+					content={negotiation.name || 'Переговори без назви'}
+					additionalClasses={['name', 'no-box', 'text-left']}
 				/>
 			</section>
 			<section className='container stats'>
 				<LabeledTextField
-					label='Starting Attitude'
+					label='Початкове ставлення'
 					content={negotiation.attitude}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='Starting Interest'
+					label='Початкова зацікавленість'
 					content={negotiation.interest}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='Starting Patience'
+					label='Початкове терпіння'
 					content={negotiation.patience}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='Impression'
+					label='Враження'
 					content={negotiation.impression}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 			</section>
 		</div>

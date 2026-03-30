@@ -1833,7 +1833,7 @@ After 1d3 + 1 weeks of gestation, the handmaiden fully forms inside the host. Th
 
 As a маневр, the handmaiden can emerge from the host as a horrifying tower of flesh and bone that remains attached to the host’s insides. While emerged, the handmaiden can use a дія руху to make the host move up to their speed and has access to the host’s signature abilities, using the host’s modifiers for any power rolls. The handmaiden has the same Stability as the host. If the handmaiden or host is force moved, the other moves with them. While emerged, the handmaiden can be targeted independently of the host. The handmaiden can retreat totally within the host’s body as a маневр. If the handmaiden dies, their remains separate from the host.
 
-The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a cure that removes a handmaiden from a host. The cure kills the handmaiden when consumed.`
+The «Знайти ліки» downtime project in *Draw Steel: Heroes* can be used to find a cure that removes a handmaiden from a host. The cure kills the handmaiden when consumed.`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({

@@ -63,13 +63,13 @@ interface Props {
 
 export const SessionDirectorPage = (props: Props) => {
 	const navigation = useNavigation();
-	const [ selectedElementID, setSelectedElementID ] = useState<string | null>(() => {
+	const [selectedElementID, setSelectedElementID] = useState<string | null>(() => {
 		const options = AdventureLogic.getContentOptions(props.session);
 		return options.length > 0 ? options[0].id : null;
 	});
-	const [ startElement, setStartElement ] = useState<string>('encounter');
-	const [ newCounterName, setNewCounterName ] = useState<string>('');
-	const [ newCounterValue, setNewCounterValue ] = useState<number>(0);
+	const [startElement, setStartElement] = useState<string>('encounter');
+	const [newCounterName, setNewCounterName] = useState<string>('');
+	const [newCounterValue, setNewCounterValue] = useState<number>(0);
 	useTitle('Session');
 
 	const getSelector = () => {
@@ -306,10 +306,10 @@ export const SessionDirectorPage = (props: Props) => {
 			case 'negotiation':
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
-						<div className='ds-text bold-text'>Your negotiations:</div>
+						<div className='ds-text bold-text'>Ваші переговори:</div>
 						{
 							SourcebookLogic.getNegotiations(props.sourcebooks).map(n => (
-								<Button key={n.id} block={true} onClick={() => startNegotiation(n)}>{n.name || 'Unnamed Negotiation'}</Button>
+								<Button key={n.id} block={true} onClick={() => startNegotiation(n)}>{n.name || 'Переговори без назви'}</Button>
 							))
 						}
 						{
@@ -317,12 +317,12 @@ export const SessionDirectorPage = (props: Props) => {
 								<Alert
 									type='warning'
 									showIcon={true}
-									title='You have not created any negotiations.'
-									action={<Button type='text' title='Negotiations' icon={<ReadOutlined />} onClick={() => navigation.goToLibrary('negotiation')} />}
+									title='Ви ще не створили жодних переговорів.'
+									action={<Button type='text' title='Переговори' icon={<ReadOutlined />} onClick={() => navigation.goToLibrary('negotiation')} />}
 								/>
 								: null
 						}
-						<div className='ds-text bold-text'>Example negotiations:</div>
+						<div className='ds-text bold-text'>Приклади переговорів:</div>
 						<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '10px' }}>
 							{
 								exampleNegotiations.map(n => (
@@ -388,7 +388,7 @@ export const SessionDirectorPage = (props: Props) => {
 								<Segmented
 									name='startelements'
 									block={true}
-									options={[ 'encounter', 'montage', 'negotiation', 'map', 'counter' ].map(o => ({ value: o, label: Format.capitalize(o) }))}
+									options={['encounter', 'montage', 'negotiation', 'map', 'counter'].map(o => ({ value: o, label: Format.capitalize(o) }))}
 									value={startElement}
 									onChange={setStartElement}
 								/>

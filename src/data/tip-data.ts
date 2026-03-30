@@ -211,15 +211,15 @@ export class TipData {
 			// #region Negotiations
 			FactoryLogic.createTip({
 				image: playbookNegotiation,
-				content: 'You can design negotiations in the **Library**.'
+				content: 'Ви можете створювати переговори в розділі **Library**.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookNegotiationClassic,
-				content: 'If you want to print out your negotiation, switch to the Classic view.'
+				content: 'Якщо ви хочете роздрукувати свої переговори, перемкніться на вигляд Classic.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookNegotiationBuilder,
-				content: 'Forge Steel makes it easy to build negotiations by adding motivatons and pitfalls.'
+				content: 'Forge Steel дозволяє легко створювати переговори, додаючи мотиви й вади.'
 			}),
 			// #endregion
 
@@ -249,11 +249,11 @@ export class TipData {
 			}),
 			FactoryLogic.createTip({
 				image: sessionNegotiation,
-				content: 'In the **Session** screen you can run negotiations, tracking the NPC\'s interest and patience.'
+				content: 'На екрані **Session** ви можете проводити переговори, відстежуючи зацікавленість і терпіння NPC.'
 			}),
 			FactoryLogic.createTip({
 				image: sessionMultiple,
-				content: 'If you\'re running more than one encounter (or montage, or negotiation) you can switch between them at the top of the **Session** screen.'
+				content: 'Якщо ви проводите більше ніж одну подію в **Session** (сутичку, montage або переговори), ви можете перемикатися між ними у верхній частині екрана.'
 			}),
 			// #endregion
 

@@ -418,17 +418,19 @@ export class AbilityLogic {
 		// Equal to [N times] your [Characteristic(s)] score
 		if (hero) {
 			const charRegex = /(equal to(?: or (?:greater|less) than)?)[^,.;:]* your ([^,.;:]*) score/gi;
+			const characteristicAliases = [
+				{ characteristic: Characteristic.Might, aliases: [Characteristic.Might.toLowerCase(), 'might'] },
+				{ characteristic: Characteristic.Agility, aliases: [Characteristic.Agility.toLowerCase(), 'agility'] },
+				{ characteristic: Characteristic.Reason, aliases: [Characteristic.Reason.toLowerCase(), 'reason'] },
+				{ characteristic: Characteristic.Intuition, aliases: [Characteristic.Intuition.toLowerCase(), 'intuition'] },
+				{ characteristic: Characteristic.Presence, aliases: [Characteristic.Presence.toLowerCase(), 'presence'] }
+			];
 			[...text.matchAll(charRegex)].forEach(match => {
 				const options: number[] = [];
-				[
-					Characteristic.Might,
-					Characteristic.Agility,
-					Characteristic.Reason,
-					Characteristic.Intuition,
-					Characteristic.Presence
-				].forEach(ch => {
-					if (match[2].toLowerCase() == 'highest characteristic' || match[2].toLowerCase().includes(ch.toLowerCase())) {
-						options.push(HeroLogic.getCharacteristic(hero, ch));
+				const normalizedScoreText = match[2].toLowerCase();
+				characteristicAliases.forEach(({ characteristic, aliases }) => {
+					if (normalizedScoreText === 'highest characteristic' || aliases.some(alias => normalizedScoreText.includes(alias))) {
+						options.push(HeroLogic.getCharacteristic(hero, characteristic));
 					}
 				});
 				if (options.length > 0) {

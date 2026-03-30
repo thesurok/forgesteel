@@ -35,9 +35,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 			name: 'Restorative Salve',
 			description: `After a basilisk dies, a character can make a Reason test to claim oil from the basilisk’s mouth, which can be used to create a special salve. One dose of salve can be applied to a petrified creature as a основна дія, and 1 minute after the salve is applied, that creature is no longer petrified.
 			
-<code><11</code> The character must complete the Find a Cure downtime project in Draw Steel: Heroes to create one dose of salve.
+<code><11</code> The character must complete the «Знайти ліки» downtime project in Draw Steel: Heroes to create one dose of salve.
 
-<code>12-16</code> The character creates one dose of salve and can create two more doses by completing the Find a Cure downtime project.
+<code>12-16</code> The character creates one dose of salve and can create two more doses by completing the «Знайти ліки» downtime project.
 
 <code>17+</code> The character creates three doses of salve.` }
 	],

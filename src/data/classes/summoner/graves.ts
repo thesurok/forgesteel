@@ -627,7 +627,7 @@ This ability becomes a безкоштовна тригерна дія if the tar
 					description: `
 You can spend 1 uninterrupted minute to perform a ritual and use your body as a host for a willing spirit of a creature who died in the area. While hosting the spirit, you have access to their memories of the 24 hours leading up to their death and any skills they knew in life. You can also magically change your appearance to look like them while they were alive.
 
-You can attempt to stop channeling the spirit at any time. If the spirit is hostile to you or you’ve hosted them for at least 1 hour, you must make a **medium Presence test**. On success, the spirit leaves your body. On failure, you become fully possessed by a **haunt**; you have no access to your skills and you can’t get above a tier 2 result on power rolls until you exorcise the haunt either by completing the Find a Cure downtime project or taking a respite with an exorcist.
+You can attempt to stop channeling the spirit at any time. If the spirit is hostile to you or you’ve hosted them for at least 1 hour, you must make a **medium Presence test**. On success, the spirit leaves your body. On failure, you become fully possessed by a **haunt**; you have no access to your skills and you can’t get above a tier 2 result on power rolls until you exorcise the haunt either by completing the «Знайти ліки» downtime project or taking a respite with an exorcist.
 
 After you stop channeling their spirit, you can’t use this feature to channel the same creature again.`
 				}),
