@@ -6,7 +6,9 @@
     .feature-line,
     .feature-title,
     .feature-iteration {
-        &, & * {
+
+        &,
+        & * {
             @include common.font-slab();
 
             strong {
@@ -19,8 +21,8 @@
     .feature-title,
     .feature-title span {
         color: var(--color-text);
-        line-height: 19px;
-        font-size: 17px;
+        line-height: 14px;
+        font-size: 14px;
         margin-bottom: 2px;
         font-weight: 500;
 
@@ -33,7 +35,9 @@
     }
 
     .feature-title {
-        span, img {
+
+        span,
+        img {
             display: inline-block;
             vertical-align: middle;
         }
@@ -45,7 +49,9 @@
     }
 
     .feature-title {
-        span, img {
+
+        span,
+        img {
             display: inline-block;
             vertical-align: middle;
         }
@@ -57,8 +63,8 @@
     }
 
     .feature-line {
-        line-height: 16px;
-        font-size: 15px;
+        line-height: 12px;
+        font-size: 12px;
     }
 
     .feature-description,
@@ -71,7 +77,7 @@
         margin-bottom: 10px;
         margin-top: 5px;
 
-        p > em {
+        p>em {
             display: block;
             margin-top: -5px;
             font-size: round(1rem, 1px);
@@ -86,7 +92,8 @@
             font-weight: 700;
         }
 
-        blockquote, blockquote * {
+        blockquote,
+        blockquote * {
             font-style: italic;
         }
 
@@ -106,6 +113,7 @@
     ul.feature-description {
         margin-left: 20px;
         padding-top: 3px;
+
         li {
             margin-bottom: 3px;
         }
@@ -140,6 +148,7 @@
             flex-basis: 100%;
             width: 0;
         }
+
         .feature-description {
             margin-bottom: 0;
         }
@@ -156,9 +165,9 @@
         border-radius: 3px;
         padding: 0 3px 1px;
         opacity: 0.8;
-        
-        line-height: 17px;
-        font-size: 14px;
+
+        line-height: 14px;
+        font-size: 12px;
 
         &.no-selection {
             @include common.font-serif;
@@ -166,9 +175,12 @@
         }
     }
 
-    table, th, td {
+    table,
+    th,
+    td {
         border: 0;
     }
+
     th {
         font-weight: 450;
         border-bottom: 1px solid common.$color-light;
@@ -178,14 +190,14 @@
         border-bottom: 0;
 
         td {
-            vertical-align:top;
+            vertical-align: top;
             padding-bottom: 0;
 
             &:not(:first-child) {
                 padding-top: 8px;
             }
         }
-        
+
         td:first-child {
             text-wrap: nowrap;
             vertical-align: text-top;
@@ -230,6 +242,7 @@
             border-bottom: 1px solid #fff;
         }
     }
+
     .header img.icon {
         transform: translateY(2px);
     }

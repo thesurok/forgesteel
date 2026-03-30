@@ -96,9 +96,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '8 damage; restrained (EoT)',
-						tier2: '6 damage; slowed (EoT)',
-						tier3: 'No effect'
+						tier1: '8 шкоди; скутий (до кінця ходу)',
+						tier2: '6 шкоди; сповільнений (до кінця ходу)',
+						tier3: 'Без ефекту'
 					})),
 					FactoryLogic.createAbilitySectionText('The snaring line remains until the end of the encounter. Any enemy who moves into the area for the first time in a round or starts their turn there must make the test.'),
 					FactoryLogic.createAbilitySectionText('**Special:** This ability can’t be used by a minion.')
@@ -138,11 +138,11 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage; an ally adjacent to the target can make a free strike'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди; союзник adjacent to ціль can make a безкоштовний удар'
 							})),
-							FactoryLogic.createAbilitySectionText('The target can’t use triggered actions until the start of the next round.')
+							FactoryLogic.createAbilitySectionText('The target can’t use тригерні дії until the start of the next round.')
 						]
 					})
 				})
@@ -175,9 +175,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage; grabbed or prone'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди; схоплений або розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is restrained, they take an extra 2 damage.')
 						]
@@ -215,9 +215,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage; push 1',
-								tier2: '2 damage; push 2',
-								tier3: '3 damage; push 4'
+								tier1: '1 шкоди; відштовхнути на 1',
+								tier2: '2 шкоди; відштовхнути на 2',
+								tier3: '3 шкоди; відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -252,9 +252,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage; pull 1',
-								tier2: '2 damage; pull 2',
-								tier3: '3 damage; pull 4'
+								tier1: '1 шкоди; притягнути на 1',
+								tier2: '2 шкоди; притягнути на 2',
+								tier3: '3 шкоди; притягнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -288,9 +288,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; push 1',
-								tier2: '9 damage; push 3',
-								tier3: '12 damage; push 5'
+								tier1: '6 шкоди; відштовхнути на 1',
+								tier2: '9 шкоди; відштовхнути на 3',
+								tier3: '12 шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is adjacent to an object or a wall after the power roll is resolved, they are restrained until the end of their next turn. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -347,9 +347,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; push 1',
-								tier2: '6 damage; push 3; M<1 slowed (save ends)',
-								tier3: '8 damage; push 3; M<2 slowed (save ends)'
+								tier1: '3 шкоди; відштовхнути на 1',
+								tier2: '6 шкоди; відштовхнути на 3; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: '8 шкоди; відштовхнути на 3; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -367,9 +367,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 poison damage; I<0 dazed (save ends)',
-								tier2: '6 poison damage; I<1 dazed (save ends)',
-								tier3: '8 poison damage; I<2 dazed (save ends)'
+								tier1: '3 отруйної шкоди; І<0 приголомшений (рят. кидок закінчує)',
+								tier2: '6 отруйної шкоди; І<1 приголомшений (рят. кидок закінчує)',
+								tier3: '8 отруйної шкоди; І<2 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target dazed this way treats their characteristic scores as 1 lower for the purpose of resisting potencies.')
 						]
@@ -408,9 +408,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; M<2 slowed (save ends)',
-								tier2: '7 damage; M<2 slowed (save ends)',
-								tier3: '9 damage; M<2 slowed (save ends)'
+								tier1: '5 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier2: '7 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '9 шкоди; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target is pulled up to 5 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -463,9 +463,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; slide 1',
-								tier2: '10 damage; slide 1',
-								tier3: '13 damage; slide 1'
+								tier1: '7 шкоди; зсунути на 1',
+								tier2: '10 шкоди; зсунути на 1',
+								tier3: '13 шкоди; зсунути на 1'
 							})),
 							FactoryLogic.createAbilitySectionText('The shieldwall can shift 1 square to remain adjacent to the target. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -520,9 +520,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; slide 1; M<0 slowed (save ends)',
-								tier2: '8 damage; slide 3; M<1 slowed (save ends)',
-								tier3: '11 damage; slide 5; M<2 restrained (save ends)'
+								tier1: '5 шкоди; зсунути на 1; С<0 сповільнений (рят. кидок закінчує)',
+								tier2: '8 шкоди; зсунути на 3; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: '11 шкоди; зсунути на 5; С<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -540,9 +540,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; push 2; R<1 slowed (save ends)',
-								tier2: '6 damage; push 3; R<2 slowed (save ends)',
-								tier3: '9 damage; push 3; R<3 slowed (save ends)'
+								tier1: '4 шкоди; відштовхнути на 2; Р<1 сповільнений (рят. кидок закінчує)',
+								tier2: '6 шкоди; відштовхнути на 3; Р<2 сповільнений (рят. кидок закінчує)',
+								tier3: '9 шкоди; відштовхнути на 3; Р<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -584,9 +584,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; push 2',
-								tier2: '7 damage; push 4',
-								tier3: '9 damage; push 6'
+								tier1: '5 шкоди; відштовхнути на 2',
+								tier2: '7 шкоди; відштовхнути на 4',
+								tier3: '9 шкоди; відштовхнути на 6'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -605,9 +605,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Might,
-								tier1: '7 damage; restrained (EoT)',
-								tier2: '5 damage; slowed (EoT)',
-								tier3: 'No effect'
+								tier1: '7 шкоди; скутий (до кінця ходу)',
+								tier2: '5 шкоди; сповільнений (до кінця ходу)',
+								tier3: 'Без ефекту'
 							})),
 							FactoryLogic.createAbilitySectionText('The snare remains until the end of the encounter. Any enemy who moves into the area for the first time in a round or starts their turn there must make the test.')
 						]
@@ -641,9 +641,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; push 1',
-								tier2: '10 damage; push 3',
-								tier3: '13 damage; push 5; M<2 restrained (save ends)'
+								tier1: '7 шкоди; відштовхнути на 1',
+								tier2: '10 шкоди; відштовхнути на 3',
+								tier3: '13 шкоди; відштовхнути на 5; С<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -661,9 +661,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; push 2; A<0 slowed (save ends)',
-								tier2: '8 damage; push 2; A<1 slowed (save ends)',
-								tier3: '11 damage; push 2; A<2 dazed (save ends)'
+								tier1: '5 шкоди; відштовхнути на 2; Л<0 сповільнений (рят. кидок закінчує)',
+								tier2: '8 шкоди; відштовхнути на 2; Л<1 сповільнений (рят. кидок закінчує)',
+								tier3: '11 шкоди; відштовхнути на 2; Л<2 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -705,9 +705,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; slide 1',
-								tier2: '12 damage; slide 3',
-								tier3: '15 damage; slide 5'
+								tier1: '8 шкоди; зсунути на 1',
+								tier2: '12 шкоди; зсунути на 3',
+								tier3: '15 шкоди; зсунути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -821,9 +821,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '8 damage',
-								tier3: '12 damage; M<2 restrained (save ends)'
+								tier1: '6 шкоди',
+								tier2: '8 шкоди',
+								tier3: '12 шкоди; С<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target already restrained or restrained by this ability is pulled up to 3 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn’t end the restrained condition unless the Director determines otherwise.')
 						]
@@ -841,9 +841,9 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 lightning damage; A<0 slowed (save ends)',
-								tier2: '6 lightning damage; A<1 slowed (save ends)',
-								tier3: '8 lightning damage; A<2 slowed (save ends)'
+								tier1: '3 блискавичної шкоди; Л<0 сповільнений (рят. кидок закінчує)',
+								tier2: '6 блискавичної шкоди; Л<1 сповільнений (рят. кидок закінчує)',
+								tier3: '8 блискавичної шкоди; Л<2 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})

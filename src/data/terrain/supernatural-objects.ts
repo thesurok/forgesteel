@@ -187,11 +187,11 @@ export const theThroneOfAAn: Terrain = {
 						id: 'light-of-the-northern-sun',
 						name: 'Light of the Northern Sun',
 						sections: [
-							FactoryLogic.createAbilitySectionText('In the Age of Suns, there was no darkness and no night. Even among the many suns of that time, the light of A’An was the brightest. The throne of A’An manifests the sun powers of that god, even when no one is seated in it. The following effects always occur within 10 squares of the throne:'),
+							FactoryLogic.createAbilitySectionText('У Вік Сонць не було ні темряви, ні ночі. Навіть серед багатьох сонць того часу світло А’Ан було найяскравішим. Трон А’Ан проявляє сонячні сили цього бога, навіть коли на ньому ніхто не сидить. У межах 10 клітинок від трону завжди діють такі ефекти:'),
 							FactoryLogic.createAbilitySectionText(`
-- The throne sheds bright light that negates all darkness and concealment, and which prevents creatures from being hidden.
-- Any creature with cold immunity has fire weakness 10.
-- Any creature who uses an ability that deals cold damage takes 11 fire damage.`)
+- Трон випромінює яскраве світло, яке розвіює всю темряву й маскування та не дає істотам бути прихованими.
+- Будь-яка істота з імунітетом до холоду має вразливість 10 до вогню.
+- Будь-яка істота, що використовує вміння, яке завдає шкоди холодом, отримує 11 вогняної шкоди.`)
 						]
 					})
 				}),
@@ -200,7 +200,7 @@ export const theThroneOfAAn: Terrain = {
 						id: 'sitting-on-the-throne',
 						name: 'Sitting on the Throne',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Only a creature attuned to the throne can sit on it. A creature adjacent to the throne can use a main action to attune to it by succeeding on a **Presence test.**'),
+							FactoryLogic.createAbilitySectionText('Лише істота, налаштована на трон, може на ньому сидіти. Істота поруч із троном може використати основну дію, щоб налаштуватися на нього, успішно пройшовши **тест Присутності**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
@@ -210,12 +210,12 @@ export const theThroneOfAAn: Terrain = {
 								})
 							),
 							FactoryLogic.createAbilitySectionText(`
-A creature seated on the throne becomes the hierophant of A’An and gains the following benefits:
+Істота, що сидить на троні, стає ієрофантом А’Ан і отримує такі переваги:
 
-- The hierophant and each of their allies within 10 squares of the throne have fire immunity 10.
-- The hierophant and each of their allies within 10 squares of the throne can choose to have their abilities deal fire damage instead of their usual damage.
-- The hierophant has a +5 bonus to stability, and any strike made against them takes a bane unless the attacker is also attuned to the throne.
-- The hierophant can use the **Primordial Flare** and **Solar Accretion** abilities.`)
+- Ієрофант і кожен його союзник у межах 10 клітинок від трону мають імунітет 10 до вогню.
+- Ієрофант і кожен його союзник у межах 10 клітинок від трону можуть обирати, щоб їхні вміння завдавали вогняної шкоди замість звичайної.
+- Ієрофант має бонус +5 до стійкості, а будь-який удар проти нього отримує шкоду, якщо нападник також не налаштований на трон.
+- Ієрофант може використовувати вміння **Primordial Flare** і **Solar Accretion**.`)
 						]
 					})
 				}),
@@ -236,7 +236,7 @@ A creature seated on the throne becomes the hierophant of A’An and gains the f
 									tier3: '14 вогняної шкоди'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The target has fire weakness 10 until the start of the hierophant’s next turn.')
+							FactoryLogic.createAbilitySectionText('Ціль має вразливість 10 до вогню до початку наступного ходу ієрофанта.')
 						]
 					})
 				}),

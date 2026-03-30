@@ -85,7 +85,7 @@ export class ImbuedImplementData {
 				name: 'Rat Form',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your size is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your Might is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a maneuver, and do so automatically if you take any damage.')
+					FactoryLogic.createAbilitySectionText('You transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your size is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your Might is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a маневр, and do so automatically if you take any damage.')
 				]
 			})
 		})
@@ -210,7 +210,7 @@ export class ImbuedImplementData {
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-celerity',
 			name: 'Celerity',
-			description: 'Immediately after using a magic or psionic ability that requires a main action, you can shift up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver.'
+			description: 'Immediately after using a magic or psionic ability that requires a основна дія, you can shift up to 3 squares, or you can use the Escape Grab маневр as a безкоштовний маневр.'
 		})
 	});
 
@@ -375,7 +375,7 @@ export class ImbuedImplementData {
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-anathema',
 			name: 'Anathema',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature is also weakened (save ends). If the creature is within 10 squares when this weakened effect ends, you can use a free triggered action to make a free strike against them.'
+			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature is also weakened (save ends). If the creature is within 10 squares when this weakened effect ends, you can use a безкоштовна тригерна дія to make a free strike against them.'
 		})
 	});
 

@@ -45,7 +45,7 @@ export const olothec: MonsterGroup = {
 			name: 'Solo Action',
 			cost: 4,
 			sections: [
-				'The olothec takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The olothec takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
@@ -60,9 +60,9 @@ export const olothec: MonsterGroup = {
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 4,
-						tier1: '11 psychic damage; A<2 grabbed',
-						tier2: '17 psychic damage; A<3 grabbed',
-						tier3: '20 psychic damage; A<4 grabbed'
+						tier1: '11 психічної шкоди; Л<2 схоплений',
+						tier2: '17 психічної шкоди; Л<3 схоплений',
+						tier3: '20 психічної шкоди; Л<4 схоплений'
 					})),
 					FactoryLogic.createAbilitySectionText('The olothec can pull a target grabbed this way adjacent to them. While grabbed this way, a target can’t make saving throws to end any other effects, and the olothec has a double edge on strikes against them.')
 				]
@@ -74,7 +74,7 @@ export const olothec: MonsterGroup = {
 			cost: 6,
 			icon: StatBlockIcon.AuraBurst,
 			sections: [
-				'The olothec broadcasts their memory of the universe in its primordial state—a sweeping cacophony of transcendental irrationality and unceasing change. Until the end of the encounter, any creature who starts their turn within 3 squares of the olothec and has R<3 is dazed and slowed until the end of their next turn).'
+				'The olothec broadcasts their memory of the universe in its primordial state—a sweeping cacophony of transcendental irrationality and unceasing change. Until the end of the encounter, any creature who starts their turn within 3 squares of the olothec and has Р<3 is dazed and slowed until the end of their next turn).'
 			]
 		})
 	],
@@ -119,9 +119,9 @@ export const olothec: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; M<2 weakened or the target is slimed (save ends)',
-								tier2: '17 damage; M<3 weakened or the target is slimed (save ends)',
-								tier3: '20 damage; M<4 weakened and the target is slimed (save ends)'
+								tier1: '11 шкоди; С<2 ослаблений або ціль is slimed (рят. кидок закінчує)',
+								tier2: '17 шкоди; С<3 ослаблений або ціль is slimed (рят. кидок закінчує)',
+								tier3: '20 шкоди; С<4 ослаблений і ціль is slimed (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A slimed target takes 4 psychic damage whenever they make a power roll.')
 						]
@@ -138,13 +138,13 @@ export const olothec: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 acid damage; A<2 push special',
-								tier2: '10 acid damage; A<3 push special',
-								tier3: '13 acid damage; A<4 push special and prone'
+								tier1: '6 кислотної шкоди; Л<2 push special',
+								tier2: '10 кислотної шкоди; Л<3 push special',
+								tier3: '13 кислотної шкоди; Л<4 push special і розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('Each creature pushed this way is pushed to an unoccupied space in the area as far as possible from the olothec.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The area is difficult terrain. Any creature who enters the area or moves within it for the first time on a turn and has A<3 is knocked prone.'
+								effect: 'The area is difficult terrain. Any creature who enters the area or moves within it for the first time on a turn and has Л<3 is knocked prone.'
 							})
 						]
 					})
@@ -161,9 +161,9 @@ export const olothec: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 psychic damage; I<2 the target is transformed (save ends)',
-								tier2: '20 psychic damage; I<3 the target is transformed (save ends)',
-								tier3: '23 psychic damage; I<4 the target is transformed (save ends)'
+								tier1: '13 психічної шкоди; І<2 ціль is transformed (рят. кидок закінчує)',
+								tier2: '20 психічної шкоди; І<3 ціль is transformed (рят. кидок закінчує)',
+								tier3: '23 психічної шкоди; І<4 ціль is transformed (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each time a target is transformed, the Director chooses one of the following transformations. When a target ends the transformed effect, all transformations on them end.'),
 							FactoryLogic.createAbilitySectionField({
@@ -229,9 +229,9 @@ export const olothec: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '10 psychic damage; P<2 frightened (save ends)',
-									tier2: '14 psychic damage; P<3 frightened (save ends)',
-									tier3: '17 psychic damage; P<4 frightened (save ends)'
+									tier1: '10 психічної шкоди; П<2 зляканий (рят. кидок закінчує)',
+									tier2: '14 психічної шкоди; П<3 зляканий (рят. кидок закінчує)',
+									tier3: '17 психічної шкоди; П<4 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While frightened this way, a target can’t make saving throws to end any other effects.')
@@ -247,7 +247,7 @@ export const olothec: MonsterGroup = {
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Кожна істота в зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The olothec slides each target up to 5 squares. Each target takes 12 psychic damage, and if they have M<3 they are weakened and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.')
+							FactoryLogic.createAbilitySectionText('The olothec slides each target up to 5 squares. Each target takes 12 psychic damage, and if they have С<3 they are weakened and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.')
 						]
 					})
 				}),
@@ -263,9 +263,9 @@ export const olothec: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 psychic damage; R<2 the target is devolved (save ends)',
-									tier2: '13 psychic damage; R<3 the target is devolved (save ends)',
-									tier3: '16 psychic damage; R<4 the target is devolved (save ends)'
+									tier1: '7 психічної шкоди; Р<2 ціль is devolved (рят. кидок закінчує)',
+									tier2: '13 психічної шкоди; Р<3 ціль is devolved (рят. кидок закінчує)',
+									tier3: '16 психічної шкоди; Р<4 ціль is devolved (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A devolved creature has a −1 score for all their characteristics other than Reason.')

@@ -116,9 +116,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 3 squares of the princeps shifts up to 2 squares.')
 						]
@@ -159,9 +159,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('While adjacent to any ally, the sagittarion gains an edge on this ability.')
 						]
@@ -202,9 +202,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage; the tiro can shift 1 square',
-								tier3: '3 damage; the tiro can shift 2 square'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди; the tiro може зміститися 1 клітинку',
+								tier3: '3 шкоди; the tiro може зміститися 2 клітинку'
 							})),
 							FactoryLogic.createAbilitySectionText('The target can’t shift until the start of the tiro’s next turn.')
 						]
@@ -248,9 +248,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the veles’s next turn, the target can’t make opportunity attacks against any kobold.')
 						]
@@ -290,9 +290,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 lightning damage',
-								tier2: '6 lightning damage',
-								tier3: '7 lightning damage'
+								tier1: '4 блискавичної шкоди',
+								tier2: '6 блискавичної шкоди',
+								tier3: '7 блискавичної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('While the target is adjacent to any enemy, the adeptus gains an edge on this ability. Each enemy adjacent to the target takes 2 lighting damage.')
 						]
@@ -310,9 +310,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '6 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '6 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores banes, double banes, and damage immunity.')
 						]
@@ -352,9 +352,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; pull 1',
-								tier2: '4 damage; pull 2',
-								tier3: '5 damage; pull 3'
+								tier1: '3 шкоди; притягнути на 1',
+								tier2: '4 шкоди; притягнути на 2',
+								tier3: '5 шкоди; притягнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('If this forced movement triggers a trap that uses a power roll, that roll has a double edge.')
 						]
@@ -410,9 +410,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; taunted (EoT)',
-								tier2: '4 damage; taunted (EoT)',
-								tier3: '5 damage; taunted (EoT)'
+								tier1: '3 шкоди; спровокований (до кінця ходу)',
+								tier2: '4 шкоди; спровокований (до кінця ходу)',
+								tier3: '5 шкоди; спровокований (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -432,9 +432,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; push 1; M<0 prone',
-								tier2: '3 damage; push 2; M<1 prone',
-								tier3: '4 damage; push 3; M<2 prone'
+								tier1: '2 шкоди; відштовхнути на 1; С<0 розпластаний',
+								tier2: '3 шкоди; відштовхнути на 2; С<1 розпластаний',
+								tier3: '4 шкоди; відштовхнути на 3; С<2 розпластаний'
 							}))
 						]
 					})
@@ -473,9 +473,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 10 squares of the signifer can shift up to their speed if they end that shift adjacent to an ally.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -539,9 +539,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '6 damage; M<1 restrained (save ends)',
-								tier3: '7 damage; M<2 restrained (save ends)'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди; С<1 скутий (рят. кидок закінчує)',
+								tier3: '7 шкоди; С<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -558,7 +558,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 				FactoryLogic.feature.create({
 					id: 'kobold-9-feature-3',
 					name: 'Not What I Seem',
-					description: 'The venator starts the encounter disguised as a minion. They have a double edge on their first main action of the encounter, after which they reveal themself.'
+					description: 'The venator starts the encounter disguised as a minion. They have a double edge on their first основна дія of the encounter, after which they reveal themself.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'kobold-9-feature-4',
@@ -594,9 +594,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 acid damage; Л < 0 dazed (save ends)',
-								tier2: '10 acid damage; Л < 1 dazed (save ends)',
-								tier3: '14 acid damage; Л < 2 restrained (save ends)'
+								tier1: '7 кислотної шкоди; Л < 0 приголомшений (рят. кидок закінчує)',
+								tier2: '10 кислотної шкоди; Л < 1 приголомшений (рят. кидок закінчує)',
+								tier3: '14 кислотної шкоди; Л < 2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A size 2 or smaller creature restrained this way is pulled into the brick’s space, moves with the brick, and takes 4 acid damage at the start of each of their turns. An engulfed creature who is no longer restrained moves to the nearest unoccupied space adjacent to the brick. The brick can have as many creatures or objects engulfed as will fit within their space.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -659,9 +659,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage; M<1 weakened (save ends)',
-								tier2: '10 damage; M<2 weakened (save ends)',
-								tier3: '13 damage; M<3 weakened (save ends)'
+								tier1: '7 шкоди; С<1 ослаблений (рят. кидок закінчує)',
+								tier2: '10 шкоди; С<2 ослаблений (рят. кидок закінчує)',
+								tier3: '13 шкоди; С<3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each ally adjacent to a target can make a free strike against that target.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -739,7 +739,7 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('A target who has P<2 is taunted (save ends). Each ally within distance can make a free strike. Additionally, until the end of the encounter, the centurion has damage immunity 2.')
+							FactoryLogic.createAbilitySectionText('A target who has П<2 is taunted (save ends). Each ally within distance can make a free strike. Additionally, until the end of the encounter, the centurion has damage immunity 2.')
 						]
 					})
 				}),
@@ -777,9 +777,9 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 fire damage',
-								tier2: '10 fire damage',
-								tier3: '13 fire damage'
+								tier1: '7 вогняної шкоди',
+								tier2: '10 вогняної шкоди',
+								tier3: '13 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('**Special:** If the drangolin is size 3, the distance becomes Melee 2.')
 						]
@@ -808,12 +808,12 @@ Kobold legionaries might join worthy adventurers as retainers, lending their def
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Кожна істота в зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The drangolin uses the Dig maneuver to breach the surface before using this ability. Each target in the area where the drangolin breaches takes an extra 2 fire damage.'),
+							FactoryLogic.createAbilitySectionText('The drangolin uses the Dig маневр to breach the surface before using this ability. Each target in the area where the drangolin breaches takes an extra 2 fire damage.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; push 1; A<0 prone',
-								tier2: '8 damage; push 3; A<0 prone',
-								tier3: '11 damage; push 5; A<0 prone'
+								tier1: '6 шкоди; відштовхнути на 1; Л<0 розпластаний',
+								tier2: '8 шкоди; відштовхнути на 3; Л<0 розпластаний',
+								tier3: '11 шкоди; відштовхнути на 5; Л<0 розпластаний'
 							}))
 						]
 					})

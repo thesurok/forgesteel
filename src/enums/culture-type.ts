@@ -1,5 +1,5 @@
 export enum CultureType {
-	Bespoke = 'Bespoke',
-	Ancestral = 'Ancestral',
-	Professional = 'Professional'
+	Bespoke = 'Авторська',
+	Ancestral = 'Походження',
+	Professional = 'Професійна'
 }

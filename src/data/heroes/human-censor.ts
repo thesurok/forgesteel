@@ -18,14 +18,14 @@ export const humanCensor = {
 				id: 'human-feature-1',
 				name: 'Detect the Supernatural',
 				description: 'You open your awareness to detect supernatural creatures and phenomena.',
-				type: 'Ability',
+				type: 'Здібність',
 				data: {
 					ability: {
 						id: 'human-feature-1',
 						name: 'Detect the Supernatural',
 						description: 'You open your awareness to detect supernatural creatures and phenomena.',
 						type: {
-							usage: 'Maneuver',
+							usage: 'Маневр',
 							free: false,
 							trigger: '',
 							time: '',
@@ -49,7 +49,7 @@ export const humanCensor = {
 						minLevel: 1,
 						sections: [
 							{
-								type: 'text',
+								type: 'Текст',
 								text: 'Until the end of your next turn, you know the location of any supernatural object, undead, construct, or creature from another world within 5 squares, even if you don’t have line of effect to that object or creature. You know if you’re detecting an item or a creature, and you know the nature of any creature you detect.'
 							}
 						],
@@ -68,7 +68,7 @@ export const humanCensor = {
 				id: 'human-feature-2',
 				name: 'Human Traits',
 				description: '',
-				type: 'Choice',
+				type: 'Вибір',
 				data: {
 					options: [
 						{
@@ -76,7 +76,7 @@ export const humanCensor = {
 								id: 'human-feature-2-1',
 								name: 'Can\'t Take Hold',
 								description: 'Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary difficult terrain created by magic and psionic abilities. Additionally, when you are force moved by a magic or psionic ability, you can reduce the forced movement distance by 1.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -86,7 +86,7 @@ export const humanCensor = {
 								id: 'human-feature-2-2',
 								name: 'Perseverence',
 								description: 'Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -96,14 +96,14 @@ export const humanCensor = {
 								id: 'human-feature-2-3',
 								name: 'Resist the Unnatural',
 								description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-3',
 										name: 'Resist the Unnatural',
 										description: 'Your instinctive resilience protects you from injuries beyond the routine.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'You take damage that isn’t untyped',
 											time: '',
@@ -127,7 +127,7 @@ export const humanCensor = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You halve the damage.'
 											}
 										],
@@ -149,14 +149,14 @@ export const humanCensor = {
 								id: 'human-feature-2-4',
 								name: 'Determination',
 								description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-4',
 										name: 'Determination',
 										description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -180,7 +180,7 @@ export const humanCensor = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You immediately end one of the frightened, slowed, or weakened conditions on yourself.'
 											}
 										],
@@ -202,7 +202,7 @@ export const humanCensor = {
 								id: 'human-feature-2-5',
 								name: 'Staying Power',
 								description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-								type: 'Bonus',
+								type: 'Бонус',
 								data: {
 									field: 'Recoveries',
 									value: 2,
@@ -221,14 +221,14 @@ export const humanCensor = {
 							id: 'human-feature-2-3',
 							name: 'Resist the Unnatural',
 							description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-							type: 'Ability',
+							type: 'Здібність',
 							data: {
 								ability: {
 									id: 'human-feature-2-3',
 									name: 'Resist the Unnatural',
 									description: 'Your instinctive resilience protects you from injuries beyond the routine.',
 									type: {
-										usage: 'Triggered Action',
+										usage: 'Тригерна дія',
 										free: false,
 										trigger: 'You take damage that isn’t untyped',
 										time: '',
@@ -252,7 +252,7 @@ export const humanCensor = {
 									minLevel: 1,
 									sections: [
 										{
-											type: 'text',
+											type: 'Текст',
 											text: 'You halve the damage.'
 										}
 									],
@@ -271,7 +271,7 @@ export const humanCensor = {
 							id: 'human-feature-2-5',
 							name: 'Staying Power',
 							description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-							type: 'Bonus',
+							type: 'Бонус',
 							data: {
 								field: 'Recoveries',
 								value: 2,
@@ -291,12 +291,12 @@ export const humanCensor = {
 		id: 'culture-human',
 		name: 'Human',
 		description: 'Urban, communal, labor.',
-		type: 'Ancestral',
+		type: 'Походження',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,
@@ -308,7 +308,7 @@ export const humanCensor = {
 			id: 'env-urban',
 			name: 'Urban',
 			description: 'An urban culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of urban cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -317,7 +317,7 @@ export const humanCensor = {
 				],
 				count: 1,
 				selected: [
-					'Intimidate'
+					'Залякування'
 				]
 			}
 		},
@@ -325,7 +325,7 @@ export const humanCensor = {
 			id: 'org-communal',
 			name: 'Communal',
 			description: 'A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures. Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -334,7 +334,7 @@ export const humanCensor = {
 				],
 				count: 1,
 				selected: [
-					'Climb'
+					'Лазіння'
 				]
 			}
 		},
@@ -342,18 +342,18 @@ export const humanCensor = {
 			id: 'up-labor',
 			name: 'Labor',
 			description: 'Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual labor tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a labor upbringing know the value of hard work.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [
-					'Blacksmithing',
-					'Handle Animals'
+					'Ковальство',
+					'Догляд за тваринами'
 				],
 				listOptions: [
 					'Дослідження'
 				],
 				count: 1,
 				selected: [
-					'Endurance'
+					'Витривалість'
 				]
 			}
 		}
@@ -383,7 +383,7 @@ export const humanCensor = {
 						id: 'censor-stamina',
 						name: 'Витривалість',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 21,
@@ -397,7 +397,7 @@ export const humanCensor = {
 						id: 'censor-recoveries',
 						name: 'Recoveries',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Recoveries',
 							value: 12,
@@ -411,7 +411,7 @@ export const humanCensor = {
 						id: 'censor-resource',
 						name: 'Wrath',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -440,7 +440,7 @@ export const humanCensor = {
 						id: 'censor-1-1',
 						name: 'Interpersonal / Lore Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -449,8 +449,8 @@ export const humanCensor = {
 							],
 							count: 2,
 							selected: [
-								'Read Person',
-								'Religion'
+								'Зчитування людини',
+								'Релігія'
 							]
 						}
 					},
@@ -458,7 +458,7 @@ export const humanCensor = {
 						id: 'censor-1-2',
 						name: 'Domain',
 						description: '',
-						type: 'Domain',
+						type: 'Домен',
 						data: {
 							count: 1,
 							selected: [
@@ -474,21 +474,21 @@ export const humanCensor = {
 													id: 'domain-war-1',
 													name: 'Sanctified Weapon, Exploration Skill',
 													description: 'Sanctified Weapon, Exploration Skill',
-													type: 'Multiple Features',
+													type: 'Набір особливостей',
 													data: {
 														features: [
 															{
 																id: 'domain-war-1-1',
 																name: 'Sanctified Weapon',
 																description: 'As a respite activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another respite.',
-																type: 'Text',
+																type: 'Текст',
 																data: null
 															},
 															{
 																id: 'domain-war-1-2',
 																name: 'Exploration Skill',
 																description: '',
-																type: 'Skill Choice',
+																type: 'Вибір навички',
 																data: {
 																	options: [],
 																	listOptions: [
@@ -510,14 +510,14 @@ export const humanCensor = {
 													id: 'domain-war-2',
 													name: 'Blessing of Insight',
 													description: 'The gods grant insight revealing where best to strike your enemies.',
-													type: 'Ability',
+													type: 'Здібність',
 													data: {
 														ability: {
 															id: 'domain-war-2',
 															name: 'Blessing of Insight',
 															description: 'The gods grant insight revealing where best to strike your enemies.',
 															type: {
-																usage: 'Maneuver',
+																usage: 'Маневр',
 																free: false,
 																trigger: '',
 																time: '',
@@ -544,7 +544,7 @@ export const humanCensor = {
 															minLevel: 1,
 															sections: [
 																{
-																	type: 'text',
+																	type: 'Текст',
 																	text: 'Until the end of the encounter or until you are dying, each target gains 1 surge at the end of each of your turns.'
 																}
 															],
@@ -572,7 +572,7 @@ export const humanCensor = {
 													id: 'domain-war-4',
 													name: 'Improved Sanctified Weapon',
 													description: 'The weapon improved by your Sanctified Weapon feature grants a +3 bonus to rolled damage instead of +1.',
-													type: 'Text',
+													type: 'Текст',
 													data: null
 												}
 											]
@@ -588,14 +588,14 @@ export const humanCensor = {
 													id: 'domain-war-6',
 													name: 'Blade of the Heavens',
 													description: 'A greatsword streams down from the sky, threatening to pin your foe.',
-													type: 'Ability',
+													type: 'Здібність',
 													data: {
 														ability: {
 															id: 'domain-war-6',
 															name: 'Blade of the Heavens',
 															description: 'A greatsword streams down from the sky, threatening to pin your foe.',
 															type: {
-																usage: 'Main Action',
+																usage: 'Основна дія',
 																free: false,
 																trigger: '',
 																time: '',
@@ -629,9 +629,9 @@ export const humanCensor = {
 																			'Intuition'
 																		],
 																		bonus: 0,
-																		tier1: '8 + I damage; Л < [слабкий], prone and restrained (save ends)',
-																		tier2: '12 + I damage; Л < [середній], prone and restrained (save ends)',
-																		tier3: '16 + I damage; Л < [сильний], prone and restrained (save ends)'
+																		tier1: '8 + І шкоди; Л < [слабкий], розпластаний і скутий (рят. кидок закінчує)',
+																		tier2: '12 + І шкоди; Л < [середній], розпластаний і скутий (рят. кидок закінчує)',
+																		tier3: '16 + І шкоди; Л < [сильний], розпластаний і скутий (рят. кидок закінчує)'
 																	}
 																}
 															],
@@ -655,7 +655,7 @@ export const humanCensor = {
 													id: 'domain-war-7',
 													name: 'Your Triumphs Are Remembered',
 													description: 'The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a respite, you and any other heroes who rested with you regain 1 Victory after your Victories are converted to XP. This Victory isn’t converted into XP at the end of a subsequent respite.',
-													type: 'Text',
+													type: 'Текст',
 													data: null
 												}
 											]
@@ -671,14 +671,14 @@ export const humanCensor = {
 													id: 'domain-war-9',
 													name: 'Righteous Phalanx',
 													description: 'A wall of spinning swords and knives appears where you wish.',
-													type: 'Ability',
+													type: 'Здібність',
 													data: {
 														ability: {
 															id: 'domain-war-9',
 															name: 'Righteous Phalanx',
 															description: 'A wall of spinning swords and knives appears where you wish.',
 															type: {
-																usage: 'Main Action',
+																usage: 'Основна дія',
 																free: false,
 																trigger: '',
 																time: '',
@@ -706,7 +706,7 @@ export const humanCensor = {
 															minLevel: 1,
 															sections: [
 																{
-																	type: 'text',
+																	type: 'Текст',
 																	text: 'The wall lasts until the end of the encounter or until you are dying, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 15 damage.'
 																}
 															],
@@ -741,7 +741,7 @@ export const humanCensor = {
 											id: 'war-default-1',
 											name: 'War Prayer Effect',
 											description: 'Choose up to three allies within 10 squares of you, or choose yourself instead of one ally. Each target gains 2 surges.',
-											type: 'Package Content',
+											type: 'Вміст пакета',
 											data: {
 												tag: 'conduit-prayer'
 											}
@@ -755,14 +755,14 @@ export const humanCensor = {
 						id: 'censor-1-4',
 						name: 'Judgment',
 						description: 'You utter a prayer that outlines your foe in holy energy.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'censor-1-4',
 								name: 'Judgment',
 								description: 'You utter a prayer that outlines your foe in holy energy.',
 								type: {
-									usage: 'Maneuver',
+									usage: 'Маневр',
 									free: false,
 									trigger: '',
 									time: '',
@@ -789,11 +789,11 @@ export const humanCensor = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
-										text: 'The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another censor judges the target.\n\nWhenever a creature judged by you uses a main action and is within your line of effect, you can use a free triggered action to deal holy damage equal to twice your Presence score to them.\n\nWhen a creature judged by you is reduced to 0 Stamina, you can use a free triggered action to use this ability against a new target.\n\nAdditionally, you can spend 1 wrath to take one of the following free triggered actions:\n\n* When an adjacent creature judged by you starts to shift, you make a melee free strike against them and their speed becomes 0 until the end of the current turn, preventing them from shifting.\n* When a creature judged by you within 10 squares makes a power roll, you cause them to take a bane on the roll.\n* When a creature judged by you within 10 squares uses an ability with a potency that targets only one creature, the potency is reduced by 1 for that creature.\n* If you damage a creature judged by you with a melee ability, the creature is taunted by you until the end of their next turn.\n\nYou can choose only one free triggered action option at a time, even if multiple options are triggered by the same effect.'
+										type: 'Текст',
+										text: 'The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another censor judges the target.\n\nWhenever a creature judged by you uses a основна дія and is within your line of effect, you can use a безкоштовна тригерна дія to deal holy damage equal to twice your Presence score to them.\n\nWhen a creature judged by you is reduced to 0 Stamina, you can use a безкоштовна тригерна дія to use this ability against a new target.\n\nAdditionally, you can spend 1 wrath to take one of the following безкоштовні тригерні дії:\n\n* When an adjacent creature judged by you starts to shift, you make a melee free strike against them and their speed becomes 0 until the end of the current turn, preventing them from shifting.\n* When a creature judged by you within 10 squares makes a power roll, you cause them to take a bane on the roll.\n* When a creature judged by you within 10 squares uses an ability with a potency that targets only one creature, the potency is reduced by 1 for that creature.\n* If you damage a creature judged by you with a melee ability, the creature is taunted by you until the end of their next turn.\n\nYou can choose only one безкоштовна тригерна дія option at a time, even if multiple options are triggered by the same effect.'
 									},
 									{
-										type: 'package',
+										type: 'Пакет',
 										tag: 'censor-judgment'
 									}
 								],
@@ -822,13 +822,13 @@ export const humanCensor = {
 								{
 									id: 'kit-mountain',
 									name: 'Mountain',
-									description: 'The Mountain kit does exactly what it says on the tin. You don heavy armor and raise a heavy weapon to stand strong against your foes, quickly demolishing them when it\'s your turn to strike.',
+									description: 'Набір «Гора» робить саме те, що обіцяє назва. Ви вдягаєте важку броню й піднімаєте важку зброю, щоб непохитно стояти проти ворогів і швидко трощити їх, коли настає ваша черга бити.',
 									type: '',
 									armor: [
-										'Heavy Armor'
+										'Важка броня'
 									],
 									weapon: [
-										'Heavy Weapon'
+										'Важка зброя'
 									],
 									stamina: 9,
 									speed: 0,
@@ -847,14 +847,14 @@ export const humanCensor = {
 											id: 'kit-mountain-signature',
 											name: 'Pain For Pain',
 											description: 'An enemy who tagged you will pay for that.',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'kit-mountain-signature',
 													name: 'Pain For Pain',
 													description: 'An enemy who tagged you will pay for that.',
 													type: {
-														usage: 'Main Action',
+														usage: 'Основна дія',
 														free: false,
 														trigger: '',
 														time: '',
@@ -889,13 +889,13 @@ export const humanCensor = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '3 damage + С or A damage',
-																tier2: '5 damage + С or A damage',
-																tier3: '9 damage + С or A damage'
+																tier1: '3 шкоди + С або Л шкоди',
+																tier2: '5 шкоди + С або Л шкоди',
+																tier3: '9 шкоди + С або Л шкоди'
 															}
 														},
 														{
-															type: 'text',
+															type: 'Текст',
 															text: 'If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your Might or Agility score (your choice).'
 														}
 													],
@@ -919,14 +919,14 @@ export const humanCensor = {
 						id: 'censor-1-6',
 						name: 'My Life for Yours',
 						description: 'You channel some of your vitality into more resilience for you or an ally.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'censor-1-6',
 								name: 'My Life for Yours',
 								description: 'You channel some of your vitality into more resilience for you or an ally.',
 								type: {
-									usage: 'Triggered Action',
+									usage: 'Тригерна дія',
 									free: false,
 									trigger: 'The target starts their turn or takes damage.',
 									time: '',
@@ -953,7 +953,7 @@ export const humanCensor = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'You spend a Recovery and the target regains Stamina equal to your Recovery value.'
 									},
 									{
@@ -979,7 +979,7 @@ export const humanCensor = {
 						id: 'censor-1-7',
 						name: 'Domain Feature Choice',
 						description: '',
-						type: 'Domain Feature',
+						type: 'Особливість домену',
 						data: {
 							level: 1,
 							count: 1,
@@ -988,21 +988,21 @@ export const humanCensor = {
 									id: 'domain-war-1',
 									name: 'Sanctified Weapon, Exploration Skill',
 									description: 'Sanctified Weapon, Exploration Skill',
-									type: 'Multiple Features',
+									type: 'Набір особливостей',
 									data: {
 										features: [
 											{
 												id: 'domain-war-1-1',
 												name: 'Sanctified Weapon',
 												description: 'As a respite activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another respite.',
-												type: 'Text',
+												type: 'Текст',
 												data: null
 											},
 											{
 												id: 'domain-war-1-2',
 												name: 'Exploration Skill',
 												description: '',
-												type: 'Skill Choice',
+												type: 'Вибір навички',
 												data: {
 													options: [],
 													listOptions: [
@@ -1010,7 +1010,7 @@ export const humanCensor = {
 													],
 													count: 1,
 													selected: [
-														'Jump'
+														'Стрибки'
 													]
 												}
 											}
@@ -1024,7 +1024,7 @@ export const humanCensor = {
 						id: 'censor-1-8',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 'signature',
 							source: {
@@ -1044,7 +1044,7 @@ export const humanCensor = {
 						id: 'censor-1-9',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 3,
 							source: {
@@ -1064,7 +1064,7 @@ export const humanCensor = {
 						id: 'censor-1-10',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 5,
 							source: {
@@ -1089,7 +1089,7 @@ export const humanCensor = {
 						id: 'censor-2-1',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1108,15 +1108,15 @@ export const humanCensor = {
 					{
 						id: 'censor-3-1',
 						name: 'Look On My Work and Despair',
-						description: 'Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has П < [середній] , they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a free triggered action, if the new target has П < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.',
-						type: 'Text',
+						description: 'Your judgment has grown in divine power, instilling fear in those you condemn. Whenever you use your Judgment ability, you can spend 1 wrath, and if the target has П < [середній] , they are frightened of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use Judgment as a безкоштовна тригерна дія, if the new target has П < [сильний], they are frightened of you (save ends). If the target is already frightened of you, they instead take holy damage equal to twice your Presence score.',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'censor-3-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 7,
 							source: {
@@ -1139,7 +1139,7 @@ export const humanCensor = {
 						id: 'censor-4-1a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1149,7 +1149,7 @@ export const humanCensor = {
 						id: 'censor-4-1b',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1159,7 +1159,7 @@ export const humanCensor = {
 						id: 'censor-4-2',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1177,7 +1177,7 @@ export const humanCensor = {
 						id: 'censor-4-3',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1195,7 +1195,7 @@ export const humanCensor = {
 						id: 'censor-4-4',
 						name: 'Wrath Beyond Wrath',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'deal-damage 2',
 							trigger: 'The first time each round that you deal damage to a creature judged by you',
@@ -1209,7 +1209,7 @@ export const humanCensor = {
 						id: 'censor-4-5',
 						name: 'Domain Feature Choice',
 						description: '',
-						type: 'Domain Feature',
+						type: 'Особливість домену',
 						data: {
 							level: 4,
 							count: 1,
@@ -1225,7 +1225,7 @@ export const humanCensor = {
 						id: 'censor-5-1',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 9,
 							source: {
@@ -1248,14 +1248,14 @@ export const humanCensor = {
 						id: 'censor-6-1',
 						name: 'Implement of Wrath',
 						description: 'Each time you finish a respite, you can choose one hero’s weapon, including your own, to channel supernatural power as an implement of your god’s wrath. The weapon becomes magic and gains the following benefits until your next respite:\n\n* Strikes with the weapon deal extra holy damage equal to the wielder’s highest characteristic score.\n* Any creature struck by the weapon who has holy weakness and has П < [сильний] is frightened and weakened (save ends).\n* Any minion targeted by a strike using the weapon dies. That minion’s Stamina maximum is removed from the minion Stamina pool before any damage is applied to the rest of the squad.\n* The weapon’s wielder can’t be made frightened.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'censor-6-2',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1275,7 +1275,7 @@ export const humanCensor = {
 						id: 'censor-7-1a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1285,7 +1285,7 @@ export const humanCensor = {
 						id: 'censor-7-1b',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1295,7 +1295,7 @@ export const humanCensor = {
 						id: 'censor-7-1c',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1305,7 +1305,7 @@ export const humanCensor = {
 						id: 'censor-7-1d',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1315,7 +1315,7 @@ export const humanCensor = {
 						id: 'censor-7-1e',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1325,7 +1325,7 @@ export const humanCensor = {
 						id: 'censor-7-2',
 						name: 'Domain Feature Choice',
 						description: '',
-						type: 'Domain Feature',
+						type: 'Особливість домену',
 						data: {
 							level: 7,
 							count: 1,
@@ -1336,7 +1336,7 @@ export const humanCensor = {
 						id: 'censor-7-3',
 						name: 'Focused Wrath',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
 							trigger: 'Start of your turn',
@@ -1350,7 +1350,7 @@ export const humanCensor = {
 						id: 'censor-7-4',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1373,7 +1373,7 @@ export const humanCensor = {
 						id: 'censor-8-1',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1391,7 +1391,7 @@ export const humanCensor = {
 						id: 'censor-8-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 11,
 							source: {
@@ -1414,7 +1414,7 @@ export const humanCensor = {
 						id: 'censor-9-1',
 						name: 'Improved Implement of Wrath',
 						description: 'The weapon you target with your Implement of Wrath feature gains the following additional benefits:\n\n* The weapon’s wielder and each ally adjacent to them gain a +2 bonus to saving throws.\n* At the end of each of the weapon wielder’s turns, each ally adjacent to the wielder makes a saving throw against each effect on them that is ended by a saving throw.\n* The weapon’s wielder has corruption immunity 10.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -1426,7 +1426,7 @@ export const humanCensor = {
 						id: 'censor-10-1a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1436,7 +1436,7 @@ export const humanCensor = {
 						id: 'censor-10-1b',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1446,7 +1446,7 @@ export const humanCensor = {
 						id: 'censor-10-2',
 						name: 'Crafting / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1461,7 +1461,7 @@ export const humanCensor = {
 						id: 'censor-10-3',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1478,15 +1478,15 @@ export const humanCensor = {
 					{
 						id: 'censor-10-4',
 						name: 'Templar',
-						description: 'You are the ultimate representation of your god’s justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect associated with your chosen domain, or a domain you access with virtue. If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.\n\nAdditionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.\n\nWhile you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double edge on power rolls made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god’s wrath, as determined by the Director.\t \n  \n  \t\t\t\t',
-						type: 'Text',
+						description: 'You are the ultimate representation of your god’s justice in the timescape. Whenever you use your Judgment ability, you can use a безкоштовна тригерна дія to use a conduit domain effect associated with your chosen domain, or a domain you access with virtue. If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.\n\nAdditionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.\n\nWhile you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double edge on power rolls made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god’s wrath, as determined by the Director.\t \n  \n  \t\t\t\t',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'censor-10-5',
 						name: 'Virtue',
 						description: '\nYou can spend 3 virtue to access one of your deity’s domains that you usually don’t have access to. When you do, you can use that domain’s features until you finish another respite.\n\nVirtue remains until you spend it.',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'epic',
 							gains: [
@@ -1505,7 +1505,7 @@ export const humanCensor = {
 						id: 'censor-10-6',
 						name: 'Wrath of the Gods',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 3',
 							trigger: 'Start of your turn',
@@ -1525,7 +1525,7 @@ export const humanCensor = {
 				name: 'Back, Blasphemer!',
 				description: 'You channel power through your weapon to repel foes.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1560,9 +1560,9 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '2 holy damage; push 1',
-							tier2: '4 holy damage; push 2',
-							tier3: '6 holy damage; push 3'
+							tier1: '2 священної шкоди; відштовхнути на 1',
+							tier2: '4 священної шкоди; відштовхнути на 2',
+							tier3: '6 священної шкоди; відштовхнути на 3'
 						}
 					}
 				],
@@ -1580,7 +1580,7 @@ export const humanCensor = {
 				name: 'Every Step ... Death!',
 				description: 'You show your foe a glimpse of their fate after death.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1614,13 +1614,13 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + П psychic damage',
-							tier2: '7 + П psychic damage',
-							tier3: '10 + П psychic damage'
+							tier1: '5 + П психічної шкоди',
+							tier2: '7 + П психічної шкоди',
+							tier3: '10 + П психічної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.'
 					}
 				],
@@ -1638,7 +1638,7 @@ export const humanCensor = {
 				name: 'Halt, Miscreant!',
 				description: 'You infuse your weapon with holy magic that makes it difficult for your foe to get away.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1672,9 +1672,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '2 + С holy damage; П < [слабкий], slowed (save ends)',
-							tier2: '5 + С holy damage; П < [середній], slowed (save ends)',
-							tier3: '7 + С holy damage; П < [сильний], slowed (save ends)'
+							tier1: '2 + С священної шкоди; П < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '5 + С священної шкоди; П < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '7 + С священної шкоди; П < [сильний], сповільнений (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -1692,7 +1692,7 @@ export const humanCensor = {
 				name: 'Your Allies Cannot Save You!',
 				description: 'Your magic strike turns your foe’s guilt into a burst of holy power',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1726,13 +1726,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С holy damage',
-							tier2: '5 + С holy damage',
-							tier3: '8 + С holy damage'
+							tier1: '3 + С священної шкоди',
+							tier2: '5 + С священної шкоди',
+							tier3: '8 + С священної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.'
 					}
 				],
@@ -1750,7 +1750,7 @@ export const humanCensor = {
 				name: 'Behold, a Shield of Faith!',
 				description: 'A mighty blow turns your foe’s vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1784,13 +1784,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С holy damage',
-							tier2: '6 + С holy damage',
-							tier3: '9 + С holy damage'
+							tier1: '3 + С священної шкоди',
+							tier2: '6 + С священної шкоди',
+							tier3: '9 + С священної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the start of your next turn, enemies have a bane on ability rolls made against you and each ally adjacent to you.'
 					}
 				],
@@ -1808,7 +1808,7 @@ export const humanCensor = {
 				name: 'Driving Assault',
 				description: 'As you force your enemy back with your weapon, you use your faith to stay close.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1842,13 +1842,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С damage; push 1',
-							tier2: '6 + С damage; push 3',
-							tier3: '9 + С damage; push 5'
+							tier1: '3 + С шкоди; відштовхнути на 1',
+							tier2: '6 + С шкоди; відштовхнути на 3',
+							tier3: '9 + С шкоди; відштовхнути на 5'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift up to your speed in a straight line toward the target after pushing them.'
 					}
 				],
@@ -1866,7 +1866,7 @@ export const humanCensor = {
 				name: 'The Gods Punish and Defend',
 				description: 'You channel holy energy to smite a foe and heal an ally.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1901,13 +1901,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '5 + С holy damage',
-							tier2: '8 + С holy damage',
-							tier3: '11 + С holy damage'
+							tier1: '5 + С священної шкоди',
+							tier2: '8 + С священної шкоди',
+							tier3: '11 + С священної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value.'
 					}
 				],
@@ -1925,7 +1925,7 @@ export const humanCensor = {
 				name: 'Repent!',
 				description: 'You conjure memories of their sins to harry your foes.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1959,9 +1959,9 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + П holy damage; I < [слабкий], dazed (save ends)',
-							tier2: '8 + П holy damage; I < [середній], dazed (save ends)',
-							tier3: '11 + П holy damage; I < [сильний], dazed (save ends)'
+							tier1: '5 + П священної шкоди; І < [слабкий], приголомшений (рят. кидок закінчує)',
+							tier2: '8 + П священної шкоди; І < [середній], приголомшений (рят. кидок закінчує)',
+							tier3: '11 + П священної шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -1979,7 +1979,7 @@ export const humanCensor = {
 				name: 'Arrest',
 				description: '“I got you, you son of a bitch.”',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2014,13 +2014,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '6 + С holy damage; grabbed',
-							tier2: '9 + С holy damage; grabbed',
-							tier3: '13 + С holy damage; grabbed'
+							tier1: '6 + С священної шкоди; схоплений',
+							tier2: '9 + С священної шкоди; схоплений',
+							tier3: '13 + С священної шкоди; схоплений'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike’s distance.'
 					}
 				],
@@ -2038,7 +2038,7 @@ export const humanCensor = {
 				name: 'Behold the Face of Justice!',
 				description: 'You attack a foe and your enemies behold a vision of the true nature of your resolve.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2082,13 +2082,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '3 + С holy damage; if the target has П < [слабкий], each enemy within 2 squares of them is frightened of you (save ends)',
-							tier2: '5 + С holy damage; if the target has П < [середній], each enemy within 2 squares of them is frightened of you (save ends)',
-							tier3: '8 + С holy damage; if the target has П < [сильний], each enemy within 2 squares of them is frightened of you (save ends)'
+							tier1: '3 + С священної шкоди; якщо ціль має П < [слабкий], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок закінчує)',
+							tier2: '5 + С священної шкоди; якщо ціль має П < [середній], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок закінчує)',
+							tier3: '8 + С священної шкоди; якщо ціль має П < [сильний], кожен ворог у межах 2 клітинок від неї зляканий вами (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each enemy frightened by this ability is pushed 2 squares away from the target and takes psychic damage equal to your Presence score.'
 					}
 				],
@@ -2106,7 +2106,7 @@ export const humanCensor = {
 				name: 'Censored',
 				description: 'Judged and sentenced.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2140,13 +2140,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '2 + С holy damage',
-							tier2: '3 + С holy damage',
-							tier3: '5 + С holy damage'
+							tier1: '2 + С священної шкоди',
+							tier2: '3 + С священної шкоди',
+							tier3: '5 + С священної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.'
 					}
 				],
@@ -2164,7 +2164,7 @@ export const humanCensor = {
 				name: 'Purifying Fire',
 				description: 'The gods judge, fire cleanses.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2208,13 +2208,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '5 + С holy damage; M < [слабкий], the target has fire weakness 3 (save ends)',
-							tier2: '9 + С holy damage; M < [середній], the target has fire weakness 5 (save ends)',
-							tier3: '12 + С holy damage; M < [сильний], the target has fire weakness 7 (save ends)'
+							tier1: '5 + С священної шкоди; С < [слабкий], ціль має вразливість 3 до вогняної шкоди (рят. кидок закінчує)',
+							tier2: '9 + С священної шкоди; С < [середній], ціль має вразливість 5 до вогняної шкоди (рят. кидок закінчує)',
+							tier3: '12 + С священної шкоди; С < [сильний], ціль має вразливість 7 до вогняної шкоди (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'While the target has fire weakness from this ability, you can choose to have your abilities deal fire damage to the target instead of holy damage.'
 					}
 				],
@@ -2232,7 +2232,7 @@ export const humanCensor = {
 				name: 'Edict of Disruptive Isolation',
 				description: 'The evil within your foes detonates with holy fire that burns only the guilty.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2259,7 +2259,7 @@ export const humanCensor = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.'
 					}
 				],
@@ -2277,7 +2277,7 @@ export const humanCensor = {
 				name: 'Edict of Perfect Order',
 				description: 'Within the area of your divine presence, your enemies will regret using their fell abilities.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2304,7 +2304,7 @@ export const humanCensor = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice, they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.'
 					}
 				],
@@ -2322,7 +2322,7 @@ export const humanCensor = {
 				name: 'Edict of Purifying Pacifism',
 				description: 'You shed a righteous energy that punishes enemies who would harm you or your allies.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2349,7 +2349,7 @@ export const humanCensor = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.'
 					}
 				],
@@ -2367,7 +2367,7 @@ export const humanCensor = {
 				name: 'Edict of Stillness',
 				description: 'The holy aura you project makes it painful for evil-doers to leave your reach.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2394,7 +2394,7 @@ export const humanCensor = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter or until you are dying, whenever a target moves or is force moved out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.'
 					}
 				],
@@ -2412,7 +2412,7 @@ export const humanCensor = {
 				name: 'Gods Grant Thee Strength',
 				description: 'You channel divine force for movement that cannot be stopped.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2438,8 +2438,8 @@ export const humanCensor = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a free triggered action.'
+						type: 'Текст',
+						text: 'The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a безкоштовна тригерна дія.'
 					}
 				],
 				preEffect: '',
@@ -2456,7 +2456,7 @@ export const humanCensor = {
 				name: 'Orison of Victory',
 				description: 'You channel your god’s will to overcome hardship and inflict pain.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2488,13 +2488,13 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Each target gains 1 surge.',
-							tier2: 'Each target gains 2 surges.',
-							tier3: 'Each target gains 3 surges.'
+							tier1: 'Кожна ціль отримує 1 сплеск.',
+							tier2: 'Кожна ціль отримує 2 сплески.',
+							tier3: 'Кожна ціль отримує 3 сплески.'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A target can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.'
 					}
 				],
@@ -2512,7 +2512,7 @@ export const humanCensor = {
 				name: 'Righteous Judgment',
 				description: 'You amplify the power of your judgment.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2546,13 +2546,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '10 + С damage',
-							tier2: '14 + С damage',
-							tier3: '20 + С damage'
+							tier1: '10 + С шкоди',
+							tier2: '14 + С шкоди',
+							tier3: '20 + С шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge.'
 					}
 				],
@@ -2570,7 +2570,7 @@ export const humanCensor = {
 				name: 'Shield of the Righteous',
 				description: 'You strike a foe and create a fleet of divine shields that protect your allies.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2604,9 +2604,9 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '10 + С damage; you and each ally adjacent to you gain 10 temporary Stamina',
-							tier2: '14 + С damage; you and each ally adjacent to you gain 15 temporary Stamina',
-							tier3: '20 + С damage; you and each ally adjacent to you gain 20 temporary Stamina'
+							tier1: '10 + С шкоди; ви й кожен союзник, суміжний із вами, отримуєте 10 тимчасової Витривалості',
+							tier2: '14 + С шкоди; ви й кожен союзник, суміжний із вами, отримуєте 15 тимчасової Витривалості',
+							tier3: '20 + С шкоди; ви й кожен союзник, суміжний із вами, отримуєте 20 тимчасової Витривалості'
 						}
 					}
 				],
@@ -2624,7 +2624,7 @@ export const humanCensor = {
 				name: 'Excommunication',
 				description: 'You curse your foe to become a bane to their allies.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2658,13 +2658,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '9 + С damage; I < [слабкий], weakened (save ends)',
-							tier2: '13 + С damage; I < [середній], weakened (save ends)',
-							tier3: '18 + С damage; I < [сильний], weakened (save ends)'
+							tier1: '9 + С шкоди; І < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '13 + С шкоди; І < [середній], ослаблений (рят. кидок закінчує)',
+							tier3: '18 + С шкоди; І < [сильний], ослаблений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can’t be targeted by their allies’ abilities.'
 					}
 				],
@@ -2682,7 +2682,7 @@ export const humanCensor = {
 				name: 'Hand of the Gods',
 				description: 'You use your foe as a tool against your enemies.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2716,13 +2716,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '10 + С damage',
-							tier2: '15 + С damage',
-							tier3: '21 + С damage'
+							tier1: '10 + С шкоди',
+							tier2: '15 + С шкоди',
+							tier3: '21 + С шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.'
 					}
 				],
@@ -2740,7 +2740,7 @@ export const humanCensor = {
 				name: 'Pillar of Holy Fire',
 				description: 'Your enemy’s guilt fuels a holy flame that burns your foes.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2774,13 +2774,13 @@ export const humanCensor = {
 								'Might'
 							],
 							bonus: 0,
-							tier1: '9 + С damage; I < [слабкий], dazed (save ends)',
-							tier2: '13 + С damage; I < [середній], dazed (save ends)',
-							tier3: '18 + С damage; I < [сильний], dazed (save ends)'
+							tier1: '9 + С шкоди; І < [слабкий], приголомшений (рят. кидок закінчує)',
+							tier2: '13 + С шкоди; І < [середній], приголомшений (рят. кидок закінчує)',
+							tier3: '18 + С шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.'
 					}
 				],
@@ -2798,7 +2798,7 @@ export const humanCensor = {
 				name: 'Your Allies Turn on You!',
 				description: 'You turn your enemies’ ire to the target.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2832,14 +2832,14 @@ export const humanCensor = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + П damage; I < [слабкий], slowed (save ends)',
-							tier2: '9 + П damage; I < [середній], slowed (save ends)',
-							tier3: '12 + П damage; I < [сильний], slowed (save ends)'
+							tier1: '5 + П шкоди; І < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '9 + П шкоди; І < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '12 + П шкоди; І < [сильний], сповільнений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
-						text: 'While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead.'
+						type: 'Текст',
+						text: 'While the target is slowed this way, each of their allies who starts their turn within 5 squares of them must use a безкоштовний маневр to make a free strike against the target. Additionally, while the target is slowed this way, each of their allies within 5 squares of them who can make a triggered free strike against a different creature must make the free strike against the target instead.'
 					}
 				],
 				preEffect: '',
@@ -2865,7 +2865,7 @@ export const humanCensor = {
 								id: 'censor-sub-1-1-1',
 								name: 'Interpersonal Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -2873,7 +2873,7 @@ export const humanCensor = {
 									],
 									count: 1,
 									selected: [
-										'Read Person'
+										'Зчитування людини'
 									]
 								}
 							},
@@ -2881,7 +2881,7 @@ export const humanCensor = {
 								id: 'censor-sub-1-1-2',
 								name: 'Judgment Order Benefit',
 								description: 'You can teleport up to a number of squares equal to twice your Presence score. This movement must take you closer to the judged creature. You do not need line of effect to your destination.',
-								type: 'Package Content',
+								type: 'Вміст пакета',
 								data: {
 									tag: 'censor-judgment'
 								}
@@ -2894,22 +2894,22 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-1-2-1',
 								name: 'Saint\'s Vigilance',
-								description: 'You have honed your ability to detect sin and can use it to find those who hide from justice. Any creature judged by you can’t use the Hide maneuver. Additionally, you gain an edge when searching for hidden creatures. If you find a hidden creature, you can use your Judgment ability against them as a free triggered action.',
-								type: 'Text',
+								description: 'You have honed your ability to detect sin and can use it to find those who hide from justice. Any creature judged by you can’t use the Hide маневр. Additionally, you gain an edge when searching for hidden creatures. If you find a hidden creature, you can use your Judgment ability against them as a безкоштовна тригерна дія.',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-1-2-2',
 								name: 'A Sense for Truth',
 								description: 'You are trained in secret techniques from your order that allow you to discern the truth with supernatural precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don’t necessarily know the actual truth behind their lie. Additionally, you gain an edge on tests made to detect lies or hidden motives.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-1-2-3',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -2917,14 +2917,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-2-3a',
 												name: 'It Is Justice You Fear',
 												description: 'I am but a vessel. Your own deeds weigh upon you.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-2-3a',
 														name: 'It Is Justice You Fear',
 														description: 'I am but a vessel. Your own deeds weigh upon you.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -2958,13 +2958,13 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '8 + С holy damage; П < [слабкий], frightened (save ends)',
-																	tier2: '12 + С holy damage; П < [середній], frightened (save ends)',
-																	tier3: '15 + С holy damage; П < [сильний], frightened (save ends)'
+																	tier1: '8 + С священної шкоди; П < [слабкий], зляканий (рят. кидок закінчує)',
+																	tier2: '12 + С священної шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+																	tier3: '15 + С священної шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'If the target is already frightened of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your Presence score.'
 															}
 														],
@@ -2986,14 +2986,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-2-3b',
 												name: 'Revelator',
 												description: 'You channel holy energy to harm unbelievers and reveal those hidden from your judgment.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-2-3b',
 														name: 'Revelator',
 														description: 'You channel holy energy to harm unbelievers and reveal those hidden from your judgment.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3020,8 +3020,8 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'Each target takes holy damage equal to twice your Presence score. Additionally, each hidden target is automatically revealed and can’t become hidden again until the start of your next turn. You can then use your Judgment ability against one target as a free triggered action.'
+																type: 'Текст',
+																text: 'Each target takes holy damage equal to twice your Presence score. Additionally, each hidden target is automatically revealed and can’t become hidden again until the start of your next turn. You can then use your Judgment ability against one target as a безкоштовна тригерна дія.'
 															}
 														],
 														preEffect: '',
@@ -3058,8 +3058,8 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-1-3-1',
 								name: 'Evil Revealed',
-								description: 'Your order has taught you methods to discern the disguises of both mortals and monsters. You automatically see through disguises and illusions created by creatures of your level or lower, and you gain an edge on tests made to see through the disguises and illusions of more powerful creatures. Whenever you see through a creature’s disguise or illusion, you can use your Judgment ability against them as a free triggered action.',
-								type: 'Text',
+								description: 'Your order has taught you methods to discern the disguises of both mortals and monsters. You automatically see through disguises and illusions created by creatures of your level or lower, and you gain an edge on tests made to see through the disguises and illusions of more powerful creatures. Whenever you see through a creature’s disguise or illusion, you can use your Judgment ability against them as a безкоштовна тригерна дія.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3071,7 +3071,7 @@ export const humanCensor = {
 								id: 'censor-sub-1-4-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3079,14 +3079,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-4-1a',
 												name: 'Begone',
 												description: 'You terrify your enemies into retreating, creating chaos in their ranks.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-4-1a',
 														name: 'Begone',
 														description: 'You terrify your enemies into retreating, creating chaos in their ranks.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3119,9 +3119,9 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '4 psychic damage; slide 3',
-																	tier2: '6 psychic damage; slide 5',
-																	tier3: '8 psychic damage; slide 7'
+																	tier1: '4 психічної шкоди; зсунути на 3',
+																	tier2: '6 психічної шкоди; зсунути на 5',
+																	tier3: '8 психічної шкоди; зсунути на 7'
 																}
 															}
 														],
@@ -3143,14 +3143,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-4-1b',
 												name: 'Pain of Your Own Making',
 												description: 'You reverse the effects from an evildoer.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-4-1b',
 														name: 'Pain of Your Own Making',
 														description: 'You reverse the effects from an evildoer.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'The target gains a condition or effect that is ended by a saving throw or that ends at the end of their turn.',
 															time: '',
@@ -3177,7 +3177,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The effect ends on the target and is applied to the creature who imposed the effect on them. That creature also takes damage equal to three times your Presence score.'
 															}
 														],
@@ -3211,8 +3211,8 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-1-5-1',
 								name: 'Demonologist',
-								description: 'The most esoteric secrets of your order teach you that to defeat your enemy, you must understand them. You treat your Renown as 2 higher than usual when dealing with demons, devils, and other agents of chaos. If you successfully complete a negotiation with one of these creatures, you gain an edge on power rolls made against them and can use your Judgment ability against them as a free triggered action before an encounter begins.',
-								type: 'Text',
+								description: 'The most esoteric secrets of your order teach you that to defeat your enemy, you must understand them. You treat your Renown as 2 higher than usual when dealing with demons, devils, and other agents of chaos. If you successfully complete a negotiation with one of these creatures, you gain an edge on power rolls made against them and can use your Judgment ability against them as a безкоштовна тригерна дія before an encounter begins.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3224,7 +3224,7 @@ export const humanCensor = {
 								id: 'censor-sub-1-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3232,14 +3232,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-6-1a',
 												name: 'Banish',
 												description: 'You sever the target’s tenuous connection to the world.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-6-1a',
 														name: 'Banish',
 														description: 'You sever the target’s tenuous connection to the world.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3273,13 +3273,13 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '5 + С damage; П < [слабкий], the target is banished (save ends)',
-																	tier2: '8 + С damage; П < [середній], the target is banished (save ends)',
-																	tier3: '11 + С damage; П < [сильний], the target is banished (save ends)'
+																	tier1: '5 + С шкоди; П < [слабкий], ціль is banished (рят. кидок закінчує)',
+																	tier2: '8 + С шкоди; П < [середній], ціль is banished (рят. кидок закінчує)',
+																	tier3: '11 + С шкоди; П < [сильний], ціль is banished (рят. кидок закінчує)'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'This ability gains an edge against demons, devils, undead, and creatures not native to your current world. If you know the target’s true name, this ability has a double edge. While banished, the target is sent to another manifold in the timescape and removed from the encounter map. A banished target can do nothing but make saving throws, and takes 10 holy damage each time they do so. If the target is reduced to 0 Stamina while banished, they are lost to the timescape.'
 															}
 														],
@@ -3301,14 +3301,14 @@ export const humanCensor = {
 												id: 'censor-sub-1-6-1b',
 												name: 'Terror Manifest',
 												description: '“I know what you fear.”',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-1-6-1b',
 														name: 'Terror Manifest',
 														description: '“I know what you fear.”',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3342,13 +3342,13 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '7 + П psychic damage; П < [слабкий], frightened (save ends)',
-																	tier2: '10 + П psychic damage; П < [середній], frightened (save ends)',
-																	tier3: '12 + П psychic damage; П < [сильний], frightened (save ends)'
+																	tier1: '7 + П психічної шкоди; П < [слабкий], зляканий (рят. кидок закінчує)',
+																	tier2: '10 + П психічної шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+																	tier3: '12 + П психічної шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While frightened this way, if a target who is a leader or solo creature is winded, they take an extra 25 psychic damage. If a target frightened this way is not a leader or solo creature and is winded, they are reduced to 0 Stamina.'
 															}
 														],
@@ -3392,7 +3392,7 @@ export const humanCensor = {
 								id: 'censor-sub-2-1-1',
 								name: 'Lore Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3408,7 +3408,7 @@ export const humanCensor = {
 								id: 'censor-sub-2-1-2',
 								name: 'Judgment Order Benefit',
 								description: 'You can deal holy damage equal to twice your Presence score to the judged creature.',
-								type: 'Package Content',
+								type: 'Вміст пакета',
 								data: {
 									tag: 'censor-judgment'
 								}
@@ -3421,22 +3421,22 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-2-2-1',
 								name: 'It Was Foretold',
-								description: 'Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a montage test, you can make one free test before the montage begins, which counts as an earned success or failure as usual.',
-								type: 'Text',
+								description: 'Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one основна дія before any other creature and before your first turn. Additionally, whenever the Director calls for a montage test, you can make one free test before the montage begins, which counts as an earned success or failure as usual.',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-2-2-2',
 								name: 'Judge of Character',
 								description: 'Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an Intuition test, you can make a Presence test instead.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-2-2-3',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3444,14 +3444,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-2-3a',
 												name: 'Prescient Grace',
 												description: 'Gifted by a prescient vision, you warn an ally of an impending attack.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-2-3a',
 														name: 'Prescient Grace',
 														description: 'Gifted by a prescient vision, you warn an ally of an impending attack.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: false,
 															trigger: 'An enemy within 10 squares starts their turn.',
 															time: '',
@@ -3478,7 +3478,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You can spend a Recovery to allow the target to regain Stamina equal to your recovery value. The target can then take their turn immediately before the triggering enemy.'
 															}
 														],
@@ -3500,14 +3500,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-2-3b',
 												name: 'With My Blessing',
 												description: 'A word in prayer, and the gods show the way.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-2-3b',
 														name: 'With My Blessing',
 														description: 'A word in prayer, and the gods show the way.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3534,8 +3534,8 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'The target can use a free triggered action to use a strike signature ability or a strike heroic ability, and has a double edge on that ability. If a heroic ability is chosen, reduce its Heroic Resource cost by 3 (to a minimum cost of 0).'
+																type: 'Текст',
+																text: 'The target can use a безкоштовна тригерна дія to use a strike signature ability or a strike heroic ability, and has a double edge on that ability. If a heroic ability is chosen, reduce its Heroic Resource cost by 3 (to a minimum cost of 0).'
 															}
 														],
 														preEffect: '',
@@ -3572,8 +3572,8 @@ export const humanCensor = {
 							{
 								id: 'censor-sub-2-3-1',
 								name: 'Prophecy',
-								description: 'You can better sift through the constant fragmentary visions from your deity and act to make them manifest. Each time you earn 1 or more Victories, you can make a number of 2d10 rolls equal to the number of Victories you earned. Record each roll in order. Then whenever you or a creature within 10 squares makes a power roll, you can use a free triggered action to replace the total on the dice with your first recorded roll.\n\nYou discard each roll as it is used, and each time you earn Victories, you\nadd new rolls to the bottom of the list. Any unused rolls are discarded\nwhen you finish a respite.\n\t\t\t\t\t',
-								type: 'Text',
+								description: 'You can better sift through the constant fragmentary visions from your deity and act to make them manifest. Each time you earn 1 or more Victories, you can make a number of 2d10 rolls equal to the number of Victories you earned. Record each roll in order. Then whenever you or a creature within 10 squares makes a power roll, you can use a безкоштовна тригерна дія to replace the total on the dice with your first recorded roll.\n\nYou discard each roll as it is used, and each time you earn Victories, you\nadd new rolls to the bottom of the list. Any unused rolls are discarded\nwhen you finish a respite.\n\t\t\t\t\t',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3585,7 +3585,7 @@ export const humanCensor = {
 								id: 'censor-sub-2-4-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3593,14 +3593,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-4-1a',
 												name: 'Burden of Evil',
 												description: 'You reveal a vision of your enemies’ fate that causes them to scramble as it staggers them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-4-1a',
 														name: 'Burden of Evil',
 														description: 'You reveal a vision of your enemies’ fate that causes them to scramble as it staggers them.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3634,9 +3634,9 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'Slide 3; I < [слабкий], dazed (save ends)',
-																	tier2: 'Slide 5; I < [середній], dazed (save ends)',
-																	tier3: 'Slide 7; I < [сильний], dazed (save ends)'
+																	tier1: 'Зсунути на 3; І < [слабкий], приголомшений (рят. кидок закінчує)',
+																	tier2: 'Зсунути на 5; І < [середній], приголомшений (рят. кидок закінчує)',
+																	tier3: 'Зсунути на 7; І < [сильний], приголомшений (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -3658,14 +3658,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-4-1b',
 												name: 'Edict of Peace',
 												description: 'You anticipate your foes’ moves and deny them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-4-1b',
 														name: 'Edict of Peace',
 														description: 'You anticipate your foes’ moves and deny them.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3692,8 +3692,8 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'Until the end of the encounter or until you are dying, whenever any target takes a triggered action or a free triggered action, that action is negated and the target takes holy damage equal to your Presence score.'
+																type: 'Текст',
+																text: 'Until the end of the encounter or until you are dying, whenever any target takes a тригерна дія or a безкоштовна тригерна дія, that action is negated and the target takes holy damage equal to your Presence score.'
 															}
 														],
 														preEffect: '',
@@ -3727,7 +3727,7 @@ export const humanCensor = {
 								id: 'censor-sub-2-5-1',
 								name: 'Their Past Revealed',
 								description: 'Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium Presence test to see visions from their past. On a success, you see a clear view of any subject related to the creature’s past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 Stamina.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3739,7 +3739,7 @@ export const humanCensor = {
 								id: 'censor-sub-2-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3747,14 +3747,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-6-1a',
 												name: 'Blessing and a Curse',
 												description: 'The gods bless and damn in equal measure.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-6-1a',
 														name: 'Blessing and a Curse',
 														description: 'The gods bless and damn in equal measure.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: false,
 															trigger: 'The target makes a power roll.',
 															time: '',
@@ -3781,7 +3781,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target obtains a tier 1 or tier 3 outcome on their power roll (your choice). You can then choose another target within distance, who obtains the opposite outcome on their next power roll.'
 															}
 														],
@@ -3803,14 +3803,14 @@ export const humanCensor = {
 												id: 'censor-sub-2-6-1b',
 												name: 'Fulfill Your Destiny',
 												description: 'You have looked at various futures, and only this one works.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-2-6-1b',
 														name: 'Fulfill Your Destiny',
 														description: 'You have looked at various futures, and only this one works.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: false,
 															trigger: 'You or another hero ends their turn.',
 															time: '',
@@ -3837,7 +3837,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target takes their turn after the triggering hero, and immediately removes all conditions and negative effects on themself. During their turn, the target has a double edge on power rolls.'
 															}
 														],
@@ -3881,7 +3881,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-1-1',
 								name: 'Interpersonal Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3889,7 +3889,7 @@ export const humanCensor = {
 									],
 									count: 1,
 									selected: [
-										'Interrogate'
+										'Допит'
 									]
 								}
 							},
@@ -3897,7 +3897,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-1-2',
 								name: 'Judgment Order Benefit',
 								description: 'You can vertical pull the judged creature up to a number of squares equal to twice your Presence score.',
-								type: 'Package Content',
+								type: 'Вміст пакета',
 								data: {
 									tag: 'censor-judgment'
 								}
@@ -3911,21 +3911,21 @@ export const humanCensor = {
 								id: 'censor-sub-3-2-1',
 								name: 'Lead by Example',
 								description: 'Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are adjacent to a creature, your allies gain the benefits of flanking against that creature. Additionally, your allies gain an edge on tests made to aid other creatures with their tests.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-3-2-2',
 								name: 'Stalwart Example',
 								description: 'You exhibit a small spark of your deity’s power, causing creatures to trust or fear you, depending on what you need. You gain an edge on tests made to intimidate or persuade others.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'censor-sub-3-2-3',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3933,14 +3933,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-2-3a',
 												name: 'Blessing of the Faithful',
 												description: 'The gods reward your faith.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-2-3a',
 														name: 'Blessing of the Faithful',
 														description: 'The gods reward your faith.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3967,7 +3967,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter or until you are dying, each target in the aura gains 1 surge at the end of each of your turns.'
 															}
 														],
@@ -3989,14 +3989,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-2-3b',
 												name: 'Sentenced',
 												description: 'The shock of your condemnation freezes your enemy in their boots.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-2-3b',
 														name: 'Sentenced',
 														description: 'The shock of your condemnation freezes your enemy in their boots.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4031,13 +4031,13 @@ export const humanCensor = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '5 + П damage; П < [слабкий], restrained (save ends)',
-																	tier2: '9 + П damage; П < [середній], restrained (save ends)',
-																	tier3: '12 + П damage; П < [сильний], restrained (save ends)'
+																	tier1: '5 + П шкоди; П < [слабкий], скутий (рят. кидок закінчує)',
+																	tier2: '9 + П шкоди; П < [середній], скутий (рят. кидок закінчує)',
+																	tier3: '12 + П шкоди; П < [сильний], скутий (рят. кидок закінчує)'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While the target is restrained this way, your abilities that impose forced movement can still move them.'
 															}
 														],
@@ -4076,7 +4076,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-3-1',
 								name: 'Stand Fast!',
 								description: 'Your divine spark grows in power, allowing you and your allies to focus and endure. At the start of each of your turns, you can spend 1d6 Stamina to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally who starts their turn within 5 squares of you can also spend Stamina to gain this benefit.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4088,7 +4088,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-4-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4096,14 +4096,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-4-1a',
 												name: 'Congregation',
 												description: 'You focus your allies’ wrath on a chosen foe.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-4-1a',
 														name: 'Congregation',
 														description: 'You focus your allies’ wrath on a chosen foe.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4137,13 +4137,13 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '8 + С damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability against the target',
-																	tier2: '12 + С damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability that gains an edge against the target',
-																	tier3: '16 + С damage; as a free triggered action, two allies within 10 squares of the target can each use a strike signature ability that gains an edge against the target'
+																	tier1: '8 + С шкоди; як безкоштовна тригерна дія, один союзник у межах 10 клітинок від цілі може використати сигнатурну здібність-удар проти цілі',
+																	tier2: '12 + С шкоди; як безкоштовна тригерна дія, один союзник у межах 10 клітинок від цілі може використати сигнатурну здібність-удар з перевагою проти цілі',
+																	tier3: '16 + С шкоди; як безкоштовна тригерна дія, двоє союзників у межах 10 клітинок від цілі можуть кожен використати сигнатурну здібність-удар з перевагою проти цілі'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Each ally can shift up to 2 squares and gains 2 surges before making the strike.'
 															}
 														],
@@ -4165,14 +4165,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-4-1b',
 												name: 'Intercede',
 												description: 'You take your ally’s place.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-4-1b',
 														name: 'Intercede',
 														description: 'You take your ally’s place.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'A creature makes a strike against the target.',
 															time: '',
@@ -4199,7 +4199,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target is unaffected by the strike and you become the target instead, even if you aren’t a valid target for it. You take half the damage from the strike, and the target gains 3 surges.'
 															}
 														],
@@ -4234,7 +4234,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-5-1',
 								name: 'Vow',
 								description: 'Your words take on the power of your deity, with all the authority that entails. If you convince a creature to take an oath, they can’t break it for 7 days. If you take an oath, you can’t break it for 7 days.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4246,7 +4246,7 @@ export const humanCensor = {
 								id: 'censor-sub-3-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4254,14 +4254,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-6-1a',
 												name: 'Apostate',
 												description: 'You channel holy energy to seal an enemy’s fate.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-6-1a',
 														name: 'Apostate',
 														description: 'You channel holy energy to seal an enemy’s fate.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4295,13 +4295,13 @@ export const humanCensor = {
 																		'Might'
 																	],
 																	bonus: 0,
-																	tier1: '13 + С holy damage',
-																	tier2: '19 + С holy damage',
-																	tier3: '26 + С holy damage'
+																	tier1: '13 + С священної шкоди',
+																	tier2: '19 + С священної шкоди',
+																	tier3: '26 + С священної шкоди'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter or until you are dying, the target has damage weakness 10.'
 															}
 														],
@@ -4323,14 +4323,14 @@ export const humanCensor = {
 												id: 'censor-sub-3-6-1b',
 												name: 'Edict of Unyielding Resolve',
 												description: 'You and your allies are clad in shimmering armor.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'censor-sub-3-6-1b',
 														name: 'Edict of Unyielding Resolve',
 														description: 'You and your allies are clad in shimmering armor.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4357,7 +4357,7 @@ export const humanCensor = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter or until you are dying, each target who starts their turn in the area gains 10 temporary Stamina.'
 															}
 														],
@@ -4423,7 +4423,7 @@ export const humanCensor = {
 				id: 'career-watch-officer-feature-1',
 				name: 'Intrigue Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4431,7 +4431,7 @@ export const humanCensor = {
 					],
 					count: 1,
 					selected: [
-						'Alertness'
+						'Пильність'
 					]
 				}
 			},
@@ -4439,7 +4439,7 @@ export const humanCensor = {
 				id: 'career-watch-officer-feature-2',
 				name: 'Intrigue Skills',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4447,8 +4447,8 @@ export const humanCensor = {
 					],
 					count: 2,
 					selected: [
-						'Search',
-						'Lift'
+						'Пошук',
+						'Підйом'
 					]
 				}
 			},
@@ -4456,7 +4456,7 @@ export const humanCensor = {
 				id: 'career-watch-officer-feature-3',
 				name: 'Languages',
 				description: '',
-				type: 'Language Choice',
+				type: 'Вибір мови',
 				data: {
 					options: [],
 					count: 2,
@@ -4470,7 +4470,7 @@ export const humanCensor = {
 				id: 'career-watch-officer-feature-4',
 				name: 'Exploration Perk',
 				description: '',
-				type: 'Perk',
+				type: 'Перевага',
 				data: {
 					lists: [
 						'Дослідження'
@@ -4481,7 +4481,7 @@ export const humanCensor = {
 							id: 'perk-team-leader',
 							name: 'Team Leader',
 							description: 'At the start of a group test or montage test, you can spend a hero token. If you do, all participants make tests as if they also had any skill you have from the exploration group.',
-							type: 'Text',
+							type: 'Текст',
 							data: null,
 							list: 'Дослідження'
 						}
@@ -4536,7 +4536,7 @@ export const humanCensor = {
 			id: 'default-language',
 			name: 'Default Language',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,

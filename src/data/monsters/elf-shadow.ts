@@ -67,7 +67,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			cost: 3,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Each shadow elf acting this turn can attempt to hide as a free maneuver if they have concealment.'
+				'Each shadow elf acting this turn can attempt to hide as a безкоштовний маневр if they have concealment.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -76,7 +76,7 @@ In many shadow elf societies, all people are given basic combat training and are
 			cost: 5,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'When any shadow elf acting this turn makes a strike against a target who has I<2 in addition to the strike’s regular effects, the target is bleeding (save ends) or slowed (save ends).'
+				'When any shadow elf acting this turn makes a strike against a target who has І<2 in addition to the strike’s regular effects, the target is bleeding (save ends) or slowed (save ends).'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -117,9 +117,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '6 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '6 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The cloak shifts up to 2 squares.')
 						]
@@ -159,9 +159,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage',
-								tier2: '4 damage; A<2 slowed (save ends)',
-								tier3: '6 damage; A<3 slowed (save ends)'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди; Л<2 сповільнений (рят. кидок закінчує)',
+								tier3: '6 шкоди; Л<3 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -201,9 +201,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 damage',
-									tier2: '5 damage',
-									tier3: '7 damage'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди',
+									tier3: '7 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next strike made against the target gains an edge.')
@@ -245,9 +245,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 damage',
-									tier2: '5 damage',
-									tier3: '7 damage'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди',
+									tier3: '7 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The nightstrike shifts to leap over the target and into an unoccupied space adjacent to the target, opposite from the nightstrike’s original space.')
@@ -288,9 +288,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '10 damage',
-									tier2: '15 damage',
-									tier3: '18 damage'
+									tier1: '10 шкоди',
+									tier2: '15 шкоди',
+									tier3: '18 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next ability made against the target has a double edge.'),
@@ -314,9 +314,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 damage; I<1 bleeding (save ends)',
-									tier2: '10 damage; I<2 bleeding (save ends)',
-									tier3: '12 damage; I<3 bleeding (save ends)'
+									tier1: '5 шкоди; І<1 кровотеча (рят. кидок закінчує)',
+									tier2: '10 шкоди; І<2 кровотеча (рят. кидок закінчує)',
+									tier3: '12 шкоди; І<3 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each target is pushed up to 4 squares.')
@@ -357,9 +357,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '9 damage',
-									tier2: '13 damage',
-									tier3: '16 damage'
+									tier1: '9 шкоди',
+									tier2: '13 шкоди',
+									tier3: '16 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the duskcaller has concealment, they can target one additional creature or object.')
@@ -415,9 +415,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 corruption damage',
-								tier2: '7 corruption damage; R<2 taunted (EoT)',
-								tier3: '9 corruption damage; R<3 taunted (EoT)'
+								tier1: '8 шкоди від скверни',
+								tier2: '7 шкоди від скверни; Р<2 спровокований (до кінця ходу)',
+								tier3: '9 шкоди від скверни; Р<3 спровокований (до кінця ходу)'
 							}))
 						]
 					})
@@ -469,9 +469,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '8 lightning damage',
-									tier2: '12 lightning damage',
-									tier3: '15 lightning damage'
+									tier1: '8 блискавичної шкоди',
+									tier2: '12 блискавичної шкоди',
+									tier3: '15 блискавичної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next strike made against the target deals an extra 5 damage.')
@@ -491,9 +491,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: 'The target regains 6 Stamina',
-									tier2: 'The target regains 9 Stamina',
-									tier3: 'The target regains 12 Stamina and the Director gains 3 Malice'
+									tier1: 'Ціль regains 6 Витривалість',
+									tier2: 'Ціль regains 9 Витривалість',
+									tier3: 'Ціль відновлює 12 Витривалості, а Режисер отримує 3 Злоби'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each target gains an edge on their next strike.')
@@ -534,9 +534,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '9 damage',
-									tier2: '13 damage',
-									tier3: '16 damage'
+									tier1: '9 шкоди',
+									tier2: '13 шкоди',
+									tier3: '16 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Until the end of the current turn, the moondancer ignores opportunity attacks from the target.')
@@ -590,9 +590,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '10 damage',
-									tier2: '15 damage',
-									tier3: '18 damage'
+									tier1: '10 шкоди',
+									tier2: '15 шкоди',
+									tier3: '18 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The mournblade is invisible to the target until the start of the mournblade’s next turn.')
@@ -646,9 +646,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '9 damage',
-									tier2: '14 damage',
-									tier3: '17 damage'
+									tier1: '9 шкоди',
+									tier2: '14 шкоди',
+									tier3: '17 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The target takes a bane on their next strike.'),
@@ -672,9 +672,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '8 damage; R<1 the target makes a free strike against one enemy of the noctis mage’s choice.',
-									tier2: '10 damage; R<2 the target makes a free strike against one enemy of the noctis mage’s choice.',
-									tier3: '13 damage; R<3 the target uses a signature ability against one enemy of the noctis mage’s choice.'
+									tier1: '8 шкоди; Р<1 ціль makes a безкоштовний удар against one enemy of the noctis mage’s choice.',
+									tier2: '10 шкоди; Р<2 ціль makes a безкоштовний удар against one enemy of the noctis mage’s choice.',
+									tier3: '13 шкоди; Р<3 ціль використовує сигнатурну здібність проти одного ворога на вибір noctis mage.'
 								})
 							)
 						]
@@ -714,9 +714,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '9 damage',
-									tier2: '13 damage',
-									tier3: '16 damage; I<3 bleeding (save ends)'
+									tier1: '9 шкоди',
+									tier2: '13 шкоди',
+									tier3: '16 шкоди; І<3 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The panther can make a free strike against a creature or object adjacent to the target.')
@@ -736,9 +736,9 @@ In many shadow elf societies, all people are given basic combat training and are
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 corruption damage',
-									tier2: '8 corruption damage; I<2 dazed (save ends)',
-									tier3: '10 corruption damage; I<3 dazed (save ends)'
+									tier1: '5 шкоди від скверни',
+									tier2: '8 шкоди від скверни; І<2 приголомшений (рят. кидок закінчує)',
+									tier3: '10 шкоди від скверни; І<3 приголомшений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The panther has a double edge on strikes against targets dazed this way.')
@@ -778,9 +778,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; I<2 bleeding (save ends)',
-								tier2: '16 damage; I<3 bleeding (save ends)',
-								tier3: '19 damage; I<4 bleeding (save ends)'
+								tier1: '11 шкоди; І<2 кровотеча (рят. кидок закінчує)',
+								tier2: '16 шкоди; І<3 кровотеча (рят. кидок закінчує)',
+								tier3: '19 шкоди; І<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -801,9 +801,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'pull 5; I<2 slowed (save ends)',
-								tier2: 'pull 7; I<3 slowed (save ends)',
-								tier3: 'pull 10; I<4 slowed (save ends)'
+								tier1: 'притягнути на 5; І<2 сповільнений (рят. кидок закінчує)',
+								tier2: 'притягнути на 7; І<3 сповільнений (рят. кидок закінчує)',
+								tier3: 'притягнути на 10; І<4 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -868,9 +868,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 corruption damage; R<2 the target has speed 0 (save ends)',
-								tier2: '12 corruption damage; R<3 the target has speed 0 (save ends)',
-								tier3: '15 corruption damage; R<4 the target has speed 0 (save ends)'
+								tier1: '7 шкоди від скверни; Р<2 ціль має speed 0 (рят. кидок закінчує)',
+								tier2: '12 шкоди від скверни; Р<3 ціль має speed 0 (рят. кидок закінчує)',
+								tier3: '15 шкоди від скверни; Р<4 ціль має speed 0 (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is shrouded in darkness that creates concealment until the end of the encounter. Any enemy who starts their turn in the area takes 5 corruption damage.')
 						]
@@ -904,9 +904,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage',
-								tier2: '10 damage',
-								tier3: '13 damage'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди',
+								tier3: '13 шкоди'
 							}))
 						]
 					})
@@ -923,9 +923,9 @@ In many shadow elf societies, all people are given basic combat training and are
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 corruption damage; M<1 weakened (save ends)',
-								tier2: '7 corruption damage; M<2 weakened (save ends)',
-								tier3: '10 corruption damage; M<3 weakened (save ends)'
+								tier1: '4 шкоди від скверни; С<1 ослаблений (рят. кидок закінчує)',
+								tier2: '7 шкоди від скверни; С<2 ослаблений (рят. кидок закінчує)',
+								tier3: '10 шкоди від скверни; С<3 ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})

@@ -108,9 +108,9 @@ It is whispered that, with the Life Oath broken, it is not a matter of 'if' but 
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Presence],
-										tier1: '2 damage',
-										tier2: '5 damage; push 1',
-										tier3: '7 damage; push 2'
+										tier1: '2 шкоди',
+										tier2: '5 шкоди; відштовхнути на 1',
+										tier3: '7 шкоди; відштовхнути на 2'
 									})
 								)
 							]
@@ -191,9 +191,9 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Presence],
-										tier1: '2 fire or holy damage; push 1',
-										tier2: '5 fire or holy damage; push 2',
-										tier3: '7 fire or holy damage; push 3'
+										tier1: '2 вогняної або священної шкоди; відштовхнути на 1',
+										tier2: '5 вогняної або священної шкоди; відштовхнути на 2',
+										tier3: '7 вогняної або священної шкоди; відштовхнути на 3'
 									})
 								),
 								FactoryLogic.createAbilitySectionText('If you reduce a creature to 0 Stamina with this ability, you can spend a Recovery.')
@@ -224,7 +224,7 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 					feature: FactoryLogic.feature.create({
 						id: 'solar-2-5',
 						name: 'Solar Flare',
-						description: 'Your burning starlight escapes in violent bursts. The first time on a turn an enemy damages you with a free strike, you can deal fire or holy damage to them equal to your highest characteristic as a free triggered action.'
+						description: 'Your burning starlight escapes in violent bursts. The first time on a turn an enemy damages you with a free strike, you can deal fire or holy damage to them equal to your highest characteristic as a безкоштовна тригерна дія.'
 					}),
 					value: 1
 				},
@@ -286,9 +286,9 @@ Solars have a strong moral code, but a simple one. Treat one with kindness, and 
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Presence],
-										tier1: '2 fire or holy damage',
-										tier2: '5 fire or holy damage',
-										tier3: '7 fire or holy damage; prone'
+										tier1: '2 вогняної або священної шкоди',
+										tier2: '5 вогняної або священної шкоди',
+										tier3: '7 вогняної або священної шкоди; розпластаний'
 									})
 								),
 								FactoryLogic.createAbilitySectionText('You can use this ability when you land after a fall on your turn. You reduce the effective height of the fall by twice your highest characteristic. You don\'t land prone from the fall, and the damage of this ability increases by 1 for each square you fell.')
@@ -349,13 +349,13 @@ As a magewright, you are able to utilize the majesty of magic and infuse it into
 				FactoryLogic.feature.createSkillChoice({
 					id: 'magewright-1-4',
 					options: [
-						'Heal',
-						'Drive',
-						'Conceal Object',
-						'Escape Artist',
-						'Pick Lock',
-						'Sabotage',
-						'Search'
+						'Лікування',
+						'Водіння',
+						'Приховування предмета',
+						'Втеча',
+						'Відмикання замків',
+						'Диверсія',
+						'Пошук'
 					],
 					listOptions: [
 						SkillList.Crafting,
@@ -438,9 +438,9 @@ Additionally, you add your level to project rolls to craft projects and whenever
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
-									tier1: '2 + Р damage',
-									tier2: '4 + Р damage',
-									tier3: '6 + Р damage'
+									tier1: '2 + Р шкоди',
+									tier2: '4 + Р шкоди',
+									tier3: '6 + Р шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('When you make this strike, choose the damage type from one of the following options: acid, cold, fire, lightning, poison, or sonic.')
@@ -459,13 +459,13 @@ Additionally, you add your level to project rolls to craft projects and whenever
 								description: `
 You have developed a special suit of armor that reinforces your movements and attacks.
 
-You can wear light armor and wield light weapons effectively, even though you don’t have a kit.
+Ви можете ефективно носити легку броню та володіти легкою зброєю, навіть якщо не маєте набору.
 
-While you wear light armor, you gain a +3 bonus to Stamina, and that bonus increases by 3 at 4th, 7th, and 10th levels.
+Поки ви носите легку броню, ви отримуєте +3 до Витривалості, і цей бонус збільшується на 3 на 4, 7 і 10 рівнях.
 
-While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes.
+Поки ви володієте легкою зброєю, ви отримуєте +1 до урону здібностями зброї, включно з вільними ударами.
 
-You can use light armor treasures and light weapon treasures.
+Ви можете використовувати скарби легкої броні та легкої зброї.
 
 If you have a kit, you can’t take this upgrade.`,
 								features: [
@@ -477,13 +477,13 @@ If you have a kit, you can’t take this upgrade.`,
 									}),
 									FactoryLogic.feature.createBonus({
 										id: 'aI4MyhZMPJXIP1PI',
-										name: 'Light Armor Stamina',
+										name: 'Витривалість легкої броні',
 										field: FeatureField.Stamina,
 										valuePerEchelon: 3
 									}),
 									FactoryLogic.feature.createAbilityDamage({
 										id: '740D4z9GVRpz4ncf',
-										name: 'Light Weapon Damage',
+										name: 'Урон легкої зброї',
 										keywords: [AbilityKeyword.Weapon],
 										value: 1
 									})
@@ -515,7 +515,7 @@ If you have a kit, you can’t take this upgrade.`,
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'yUZ2eeUaTqhkZW6x',
 								name: 'Actuated Joints',
-								description: 'You have imbued your armor with servos. You gain a +1 bonus to speed and to the distance you shift when you take the Disengage move action.',
+								description: 'You have imbued your armor with servos. You gain a +1 bonus to speed and to the distance you shift when you take the Disengage дія руху.',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'viZ60LWZ30lRVtR5',
@@ -672,12 +672,12 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + Р lightning damage; Р < [слабкий], the target is jolted (save ends)',
-						tier2: '5 + Р lightning damage; Р < [середній], the target is jolted (save ends)',
-						tier3: '8 + Р lightning damage; Р < [сильний], the target is jolted (save ends)'
+						tier1: '3 + Р блискавичної шкоди; Р < [слабкий], ціль is jolted (рят. кидок закінчує)',
+						tier2: '5 + Р блискавичної шкоди; Р < [середній], ціль is jolted (рят. кидок закінчує)',
+						tier3: '8 + Р блискавичної шкоди; Р < [сильний], ціль is jolted (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A jolted creature cannot take triggered actions, free triggered actions, or maneuvers.')
+				FactoryLogic.createAbilitySectionText('A jolted creature cannot take тригерні дії, безкоштовні тригерні дії, or маневри.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -696,9 +696,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 fire damage; Л < [слабкий], burning (save ends)',
-						tier2: '4 fire damage; Л < [середній], burning (save ends)',
-						tier3: '6 fire damage; Л < [сильний], burning (save ends)'
+						tier1: '2 вогняної шкоди; Л < [слабкий], палає (рят. кидок закінчує)',
+						tier2: '4 вогняної шкоди; Л < [середній], палає (рят. кидок закінчує)',
+						tier3: '6 вогняної шкоди; Л < [сильний], палає (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While burning, a target takes fire damage equal to your Reason score at the start of its turn.')
@@ -720,12 +720,12 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 cold damage; M < [слабкий], slowed (save ends)',
-						tier2: '4 cold damage; M < [середній], slowed (save ends)',
-						tier3: '6 cold damage; M < [сильний], slowed (save ends)'
+						tier1: '2 холодної шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '4 холодної шкоди; С < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '6 холодної шкоди; С < [сильний], сповільнений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('While slowed, targets cannot use triggered actions.')
+				FactoryLogic.createAbilitySectionText('While slowed, targets cannot use тригерні дії.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -745,9 +745,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 damage',
-						tier2: '4 damage',
-						tier3: '6 damage'
+						tier1: '2 шкоди',
+						tier2: '4 шкоди',
+						tier3: '6 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can negate a bane on the power roll, or reduce a double bane to a bane.'),
@@ -775,9 +775,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + Р acid damage; Р < [слабкий], weakened (save ends)',
-						tier2: '5 + Р acid damage; Р < [середній], weakened (save ends)',
-						tier3: '8 + Р acid damage; Р < [сильний], weakened (save ends)'
+						tier1: '3 + Р кислотної шкоди; Р < [слабкий], ослаблений (рят. кидок закінчує)',
+						tier2: '5 + Р кислотної шкоди; Р < [середній], ослаблений (рят. кидок закінчує)',
+						tier3: '8 + Р кислотної шкоди; Р < [сильний], ослаблений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While weakened this way, whenever you or an ally uses an ability that incorporates 1 or more surges against the target, they gain 1 additional surge they must use on the ability.')
@@ -804,9 +804,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + Р damage',
-						tier2: '5 + Р damage',
-						tier3: '11 + Р damage'
+						tier1: '3 + Р шкоди',
+						tier2: '5 + Р шкоди',
+						tier3: '11 + Р шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain a surge for each natural odd number on your power roll. If you roll doubles, you gain 3 surges instead.')
@@ -829,9 +829,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'Push 2 + R',
-						tier2: 'Push 3 + R',
-						tier3: 'Push 5 + R'
+						tier1: 'Відштовхнути на 2 + Р',
+						tier2: 'Відштовхнути на 3 + Р',
+						tier3: 'Відштовхнути на 5 + Р'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('For each square you push the target, they take 1 sonic damage.')
@@ -854,9 +854,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 damage',
-						tier2: '5 damage',
-						tier3: '7 damage: M < [сильний], prone'
+						tier1: '2 шкоди',
+						tier2: '5 шкоди',
+						tier3: '7 шкоди: С < [сильний], розпластаний'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -897,9 +897,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 sonic damage; I < [слабкий], dazed (save ends)',
-						tier2: '3 sonic damage; I < [середній], dazed (save ends)',
-						tier3: '5 sonic damage; I < [сильний], dazed (save ends)'
+						tier1: '2 звукової шкоди; І < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '3 звукової шкоди; І < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '5 звукової шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While dazed, targets treat other creatures as though they have concealment and do not count as observers.'),
@@ -926,9 +926,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 + Р poison damage; M < [слабкий], bleeding (save ends)',
-						tier2: '6 + Р poison damage; M < [середній], bleeding (save ends)',
-						tier3: '9 + Р poison damage; M < [сильний], bleeding (save ends)'
+						tier1: '3 + Р отруйної шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '6 + Р отруйної шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '9 + Р отруйної шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -950,9 +950,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'Vertical Slide 3 + Р ',
-						tier2: 'Vertical Slide 5 + Р ',
-						tier3: 'Vertical Slide 7 + Р '
+						tier1: 'Вертикально Зсунути на 3 + Р ',
+						tier2: 'Вертикально Зсунути на 5 + Р ',
+						tier3: 'Вертикально Зсунути на 7 + Р '
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This forced movement ignores the target’s stability, and if this forced movement causes the target to slam into an enemy, the target takes no damage from the collision and the enemy takes extra damage equal to the number of squares the target moved. The target then pushes the enemy they collide with a number of squares equal to the distance the target moved.')
@@ -974,9 +974,9 @@ If you have a kit, you can’t take this upgrade.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '6 lightning damage; Р < [слабкий], the target is weakened (save ends)',
-						tier2: '9 lightning damage; Р < [середній], the target is weakened (save ends)',
-						tier3: '12 lightning damage; Р < [сильний], the target is weakened (save ends)'
+						tier1: '6 блискавичної шкоди; Р < [слабкий], ціль is ослаблений (рят. кидок закінчує)',
+						tier2: '9 блискавичної шкоди; Р < [середній], ціль is ослаблений (рят. кидок закінчує)',
+						tier3: '12 блискавичної шкоди; Р < [сильний], ціль is ослаблений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Each enemy within 2 squares of at least 1 target takes lightning damage equal to twice your Reason score.')
@@ -994,7 +994,7 @@ If you have a kit, you can’t take this upgrade.`,
 			target: 'Особливе',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You conjure a size 1T flying machine that appears in an unoccupied space within distance. The machine’s Stamina is half of yours, and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its Stamina drops to 0, or if you are dying. When the conscript appears, you may use a signature ability or free strike as if you were in the machine’s space. Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares equal to twice your Reason score, then use a signature ability or free strike.')
+				FactoryLogic.createAbilitySectionText('You conjure a size 1T flying machine that appears in an unoccupied space within distance. The machine’s Stamina is half of yours, and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its Stamina drops to 0, or if you are dying. When the conscript appears, you may use a signature ability or free strike as if you were in the machine’s space. Once on each subsequent turn, you can use a безкоштовний маневр to move the machine a number of squares equal to twice your Reason score, then use a signature ability or free strike.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1036,9 +1036,9 @@ You can target yourself instead of one creature with this ability. Each target g
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '2 acid damage; M < [слабкий], the target has damage weakness equal to your Reason score (save ends)',
-						tier2: '5 acid damage; M < [середній], the target has damage weakness equal to your Reason score (save ends)',
-						tier3: '7 acid damage; M < [сильний], the target has damage weakness equal to your Reason score (save ends)'
+						tier1: '2 кислотної шкоди; С < [слабкий], ціль має вразливість до шкоди, що дорівнює вашому показнику Розуму (рят. кидок закінчує)',
+						tier2: '5 кислотної шкоди; С < [середній], ціль має вразливість до шкоди, що дорівнює вашому показнику Розуму (рят. кидок закінчує)',
+						tier3: '7 кислотної шкоди; С < [сильний], ціль має вразливість до шкоди, що дорівнює вашому показнику Розуму (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The gas remains in the area until the end of the end of your next turn. Any creature who ends their turn in the area takes acid damage equal to your Reason score.')
@@ -1057,7 +1057,7 @@ You can target yourself instead of one creature with this ability. Each target g
 			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You envelop the target in a number of layers of protective shielding equal to twice your Reason score. Each layer provides the target a cumulative damage immunity 1 for each layer. Whenever the target is attacked, they lose 1 layer. Whenever the target loses a layer, they can spend a recovery or end an effect that is ended by a saving throw or ends at the end of their turn. At the start of each of their turns, the target can choose to lose one or more layers as a free maneuver.')
+				FactoryLogic.createAbilitySectionText('You envelop the target in a number of layers of protective shielding equal to twice your Reason score. Each layer provides the target a cumulative damage immunity 1 for each layer. Whenever the target is attacked, they lose 1 layer. Whenever the target loses a layer, they can spend a recovery or end an effect that is ended by a saving throw or ends at the end of their turn. At the start of each of their turns, the target can choose to lose one or more layers as a безкоштовний маневр.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1073,7 +1073,7 @@ You can target yourself instead of one creature with this ability. Each target g
 			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The target becomes invisible and hidden, even if observed, until they use an ability. Until the end of the encounter or you are dying, the target may use a free maneuver once on their turn to regain the effects of this ability.')
+				FactoryLogic.createAbilitySectionText('The target becomes invisible and hidden, even if observed, until they use an ability. Until the end of the encounter or you are dying, the target may use a безкоштовний маневр once on their turn to regain the effects of this ability.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1089,7 +1089,7 @@ You can target yourself instead of one creature with this ability. Each target g
 			target: 'На себе або одного союзника',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, the target gains a +3 bonus to speed, their movement doesn’t provoke opportunity attacks, and they can’t be slowed or dazed. If the target is slowed or dazed, those conditions end for them. Additionally, during their turn, the target can choose to take an additional main action. If they do, this effect ends at the end of that turn.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, the target gains a +3 bonus to speed, their movement doesn’t provoke opportunity attacks, and they can’t be slowed or dazed. If the target is slowed or dazed, those conditions end for them. Additionally, during their turn, the target can choose to take an additional основна дія. If they do, this effect ends at the end of that turn.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -1110,7 +1110,7 @@ Until the end of the encounter or you are dying, the target gains the following 
 
 * Their size and stability increase by 2 (minimum size 2).
 * Whenever the target force moves a creature or object, the forced movement distance gains a +1 bonus.
-* The target gains an edge on Might tests, as well as the Grab and Knockback maneuvers.
+* The target gains an edge on Might tests, as well as the Grab and Knockback маневри.
 * When the target makes a strike to deal damage, they gain two surges, which they can use immediately.`)
 			]
 		})
@@ -1152,19 +1152,19 @@ You create a servitor that can join you on your adventure. Your servitor uses on
 
 **Servitor Actions.** Your servitor is your ally, but they take their turn as a part of your turn. For the purpose of effects that end at the end of the servitor’s turn, or any other rules elements that depend on the start or end of the creature's turn, the start and end of your turn is also the start and end of the servitor’s turn.
 
-You and your servitor each have separate move actions. You have one triggered action which can be taken by either you or your servitor. You split your maneuver and action between you: if you take an action, you can’t take a maneuver but your servitor can. If you take a maneuver, you can’t take an action but your servitor can. Taking an action doesn’t prevent you from taking free maneuvers.
+You and your servitor each have separate дії руху. You have one тригерна дія which can be taken by either you or your servitor. You split your маневр and action between you: if you take an action, you can’t take a маневр but your servitor can. If you take a маневр, you can’t take an action but your servitor can. Taking an action doesn’t prevent you from taking безкоштовні маневри.
 
-**Adding or Subtracting Actions**. Although you and your servitor share your action economy, you are treated as separate creatures by effects that grant or remove main actions, maneuvers, and moves. For instance, the talent’s Applied Chronometrics grants an extra maneuver. If both you and your companion are targeted by the ability, you both gain extra maneuvers.
+**Adding or Subtracting Actions**. Although you and your servitor share your action economy, you are treated as separate creatures by effects that grant or remove основні дії, маневри, and moves. For instance, the talent’s Applied Chronometrics grants an extra маневр. If both you and your companion are targeted by the ability, you both gain extra маневри.
 
-Similarly, the dazed condition limits a creature to using only one of a move, maneuver, or main action on their turn. Being dazed works just the same on you or your servitor as it does on other creatures: the dazed creature can only do one thing on their turn (move, maneuver, or main action). You being dazed has no effect on your partner.
+Similarly, the dazed condition limits a creature to using only one of a move, маневр, or основна дія on their turn. Being dazed works just the same on you or your servitor as it does on other creatures: the dazed creature can only do one thing on their turn (move, маневр, or основна дія). You being dazed has no effect on your partner.
 
-**Shared Maneuvers.** When you or your servitor take the following maneuvers, you can choose for both of you to benefit from the maneuver: Catch Breath, Escape Grab, Hide, Stand Up.
+**Shared Маневри.** When you or your servitor take the following маневри, you can choose for both of you to benefit from the маневр: Catch Breath, Escape Grab, Hide, Stand Up.
 
-**Remote Link.** Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.
+**Remote Link.** Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.
 
 **Construct.** Your servitor can’t be frightened.
 
-**Inert.** Your servitor becomes inert at negative half their stamina. While inert, it cannot take actions, maneuvers, triggered actions or move. As a maneuver, you can spend 5 Wonder to restore your Servitor with 1 Stamina, even if their body was destroyed.
+**Inert.** Your servitor becomes inert at negative half their stamina. While inert, it cannot take actions, маневри, тригерні дії or move. As a маневр, you can spend 5 Wonder to restore your Servitor with 1 Stamina, even if their body was destroyed.
 
 **Servitor Abilities.** If an ability has the servitor keyword, it can only be used by an automancer’s servitor.
 
@@ -1224,7 +1224,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1275,12 +1275,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'tTzkH0Ez9g3K7RTT',
 														name: 'Skill',
-														description: 'Alertness'
+														description: 'Пильність'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1301,7 +1301,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 												keywords: ['Construct'],
 												encounterValue: 0,
 												size: FactoryLogic.createSize(1, 'M'),
-												speed: FactoryLogic.createSpeed(7, 'Climb'),
+												speed: FactoryLogic.createSpeed(7, 'Лазіння'),
 												stamina: 21,
 												stability: 0,
 												freeStrikeDamage: 3,
@@ -1321,7 +1321,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1341,9 +1341,9 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('2 + A damage; M< [середній], prone.'),
+																FactoryLogic.createAbilitySectionText('2 + Л damage; С< [середній], prone.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is M < [сильний] is prone.'
+																	effect: 'The servitor can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is С < [сильний] is prone.'
 																})
 															]
 														})
@@ -1377,12 +1377,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
 														name: 'Lithe',
-														description: 'When the servitor takes the Advance move action or takes the Charge action, as part of the movement they can jump up to their speed in any direction, including vertically.'
+														description: 'When the servitor takes the Advance дія руху or takes the Charge action, as part of the movement they can jump up to their speed in any direction, including vertically.'
 													})
 												]
 											}),
@@ -1418,7 +1418,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1438,7 +1438,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 3, value2: 1, within: 1 })],
 															target: 'Кожен ворог у зоні',
 															sections: [
-																FactoryLogic.createAbilitySectionText('M damage of the attuned damage type (see Attuned).'),
+																FactoryLogic.createAbilitySectionText('С damage of the attuned damage type (see Attuned).'),
 																FactoryLogic.createAbilitySectionSpend({
 																	effect: 'The ability affects a 5 x 1 line within 1.'
 																})
@@ -1469,12 +1469,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'lfU5Hla87C26Jq5M',
 														name: 'Skill',
-														description: 'Endurance'
+														description: 'Витривалість'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1484,7 +1484,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'EAb6hfXtPMotwewB',
 														name: 'Radiator',
-														description: 'An enemy that moves adjacent to your servitor, or ends their turn adjacent to them takes M damage of the attuned damage type.'
+														description: 'An enemy that moves adjacent to your servitor, or ends their turn adjacent to them takes С damage of the attuned damage type.'
 													})
 												]
 											}),
@@ -1520,7 +1520,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1540,7 +1540,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee()],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('3 + С lightning damage; I < [середній], dazzled (EoT)'),
+																FactoryLogic.createAbilitySectionText('3 + С lightning damage; І < [середній], dazzled (EoT)'),
 																FactoryLogic.createAbilitySectionField({
 																	name: 'Особливе',
 																	effect: 'A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.'
@@ -1575,12 +1575,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'cCRfHzUUs6N3mtKp',
 														name: 'Skill',
-														description: 'Sabotage'
+														description: 'Диверсія'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1621,7 +1621,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1672,12 +1672,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'M00ZMEBk1tkj3tlH',
 														name: 'Skill',
-														description: 'Search'
+														description: 'Пошук'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1718,7 +1718,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1738,9 +1738,9 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															distance: [FactoryLogic.distance.createMelee(3)],
 															target: 'Одна істота або предмет',
 															sections: [
-																FactoryLogic.createAbilitySectionText('M damage; pull 3; if the target is pulled adjacent to the servitor, they are M < [середній] grabbed'),
+																FactoryLogic.createAbilitySectionText('С damage; pull 3; if the target is pulled adjacent to the servitor, they are С < [середній] grabbed'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The target is pulled up to an additional number of squares equal to the servitor’s Might score; M < [сильний], grabbed'
+																	effect: 'The target is pulled up to an additional number of squares equal to the servitor’s Might score; С < [сильний], grabbed'
 																})
 															]
 														})
@@ -1769,12 +1769,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'bShMF29uuHT9FOmx',
 														name: 'Skill',
-														description: 'Climb'
+														description: 'Лазіння'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1815,7 +1815,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1866,12 +1866,12 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'i6LtE53lDVMwO1it',
 														name: 'Skill',
-														description: 'Lift'
+														description: 'Підйом'
 													}),
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -1892,7 +1892,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 												keywords: ['Construct'],
 												encounterValue: 0,
 												size: FactoryLogic.createSize(1, 'S'),
-												speed: FactoryLogic.createSpeed(7, 'Climb'),
+												speed: FactoryLogic.createSpeed(7, 'Лазіння'),
 												stamina: 21,
 												stability: 0,
 												freeStrikeDamage: 4,
@@ -1912,7 +1912,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('The servitor uses the signature ability of their equipped kit.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'The servitor can use this ability once per round as a free maneuver.',
+																	effect: 'The servitor can use this ability once per round as a безкоштовний маневр.',
 																	value: 5
 																})
 															]
@@ -1934,7 +1934,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 															sections: [
 																FactoryLogic.createAbilitySectionText('3 + С damage; the servitor is invisible to the enemy until the end of the servitor’s next turn or the servitor deals damage to the enemy.'),
 																FactoryLogic.createAbilitySectionSpend({
-																	effect: 'An enemy affected by Insurgent Strike who is M < strong is dazed (EoT).'
+																	effect: 'An enemy affected by Insurgent Strike who is С < strong is dazed (EoT).'
 																})
 															]
 														})
@@ -1963,7 +1963,7 @@ Similarly, the dazed condition limits a creature to using only one of a move, ma
 													FactoryLogic.feature.create({
 														id: 'NpPjJOouiuITpehO',
 														name: 'Remote Link',
-														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or maneuver for the turn.'
+														description: 'Whenever you use a magewright ability, you can do so as if you were in the servitor’s space. Doing so counts as the servitor’s action or маневр for the turn.'
 													}),
 													FactoryLogic.feature.create({
 														id: 'n6QXX5WicXiE3G5R',
@@ -2046,7 +2046,7 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 									feature: FactoryLogic.feature.create({
 										id: 'RLvAe8mGZcvwVJeF',
 										name: 'Hunter-Seeker',
-										description: 'Your servitor gains a bonus to its speed and a bonus to the number of squares it can shift when it takes the Disengage move action equal to your Reason score. It gains a +2 bonus to its free strikes and its rolled damage bonus. It has an edge on Agility tests.'
+										description: 'Your servitor gains a bonus to its speed and a bonus to the number of squares it can shift when it takes the Disengage дія руху equal to your Reason score. It gains a +2 bonus to its free strikes and its rolled damage bonus. It has an edge on Agility tests.'
 									}),
 									value: 1
 								},
@@ -2106,9 +2106,9 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: [Characteristic.Might, Characteristic.Agility],
-														tier1: '6 + С or A damage; grabbed',
-														tier2: '9 + С or A damage; grabbed',
-														tier3: '12 + С or A damage; grabbed'
+														tier1: '6 + С або Л шкоди; схоплений',
+														tier2: '9 + С або Л шкоди; схоплений',
+														tier3: '12 + С або Л шкоди; схоплений'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('While the target is grabbed by your servitor, ability rolls against them gain an edge, and whenever they take rolled damage, they take extra damage equal to twice your Reason score.')
@@ -2159,20 +2159,20 @@ When you take a respite activity to change your upgrade or choose a new ward, yo
 									description: `
 You are able to distill your magic into elixirs and create a shared group resource called an Elixir Pool available to you and any ally that finishes a respite with you. At the start of an encounter, the Elixir Pool gains a number of elixirs equal to twice your Reason score, which retain their potency until the end of the encounter.
 
-Once per turn, a creature can consume an elixir as a free maneuver, or use a maneuver to administer an elixir to a willing adjacent creature. They choose one of the following benefits for the elixir to grant when administered:
+Once per turn, a creature can consume an elixir as a безкоштовний маневр, or use a маневр to administer an elixir to a willing adjacent creature. They choose one of the following benefits for the elixir to grant when administered:
 
 * **Surge.** The target gains 2 surges.
 * **Recovery.** The target can spend a Recovery.
 * **Saving Throw.** The target can end one effect on them that is ended by a saving throw or that ends at the end of their turn.
 
-Additionally, you can use a maneuver to create an elixir, which can be added to the Elixir Pool, or used immediately by you or an adjacent ally.`
+Additionally, you can use a маневр to create an elixir, which can be added to the Elixir Pool, or used immediately by you or an adjacent ally.`
 								}),
 								FactoryLogic.feature.createAbility({
 									ability: FactoryLogic.createAbility({
 										id: '25b8inIZ5bITHMOo',
 										name: 'Administer Elixir',
 										description: '',
-										type: FactoryLogic.type.createManeuver({ qualifiers: ['Once per turn', 'Free Maneuver if target is Self'] }),
+										type: FactoryLogic.type.createManeuver({ qualifiers: ['Once per turn', 'Безкоштовний маневр if target is Self'] }),
 										keywords: [],
 										distance: [
 											FactoryLogic.distance.createSelf(),
@@ -2240,7 +2240,7 @@ You choose one of the following benefits:
 									description: `
 When you make a crafting project roll using the Alchemy skill, you gain an edge and you can store the project points in a special alchemical stone. The stone can store a number of project points equal to 50 times your level. As part of this project roll, you can destroy any consumable in your possession and add an equivalent number of project points to the stone.
 
-As a maneuver, you can expend project points from the stone and craft any consumable that you have both an item prerequisite and project source for, as long as you have the points available. Additionally, you may craft a 1st echelon consumable of your choice without spending any project points. When you use the stone in this way, you cannot do so again until you finish a respite.`
+As a маневр, you can expend project points from the stone and craft any consumable that you have both an item prerequisite and project source for, as long as you have the points available. Additionally, you may craft a 1st echelon consumable of your choice without spending any project points. When you use the stone in this way, you cannot do so again until you finish a respite.`
 								}),
 								FactoryLogic.feature.createAbility({
 									ability: FactoryLogic.createAbility({
@@ -2286,12 +2286,12 @@ As a maneuver, you can expend project points from the stone and craft any consum
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '2 poison damage; M < [слабкий], slowed (save ends)',
-														tier2: '4 poison damage; M < [середній], slowed (save ends)',
-														tier3: '5 poison damage; M < [сильний], slowed (save ends)'
+														tier1: '2 отруйної шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+														tier2: '4 отруйної шкоди; С < [середній], сповільнений (рят. кидок закінчує)',
+														tier3: '5 отруйної шкоди; С < [сильний], сповільнений (рят. кидок закінчує)'
 													})
 												),
-												FactoryLogic.createAbilitySectionText('The area is considered difficult terrain. The tar remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < [середній] is slowed (save ends). If the target is already slowed, they are instead restrained (save ends).')
+												FactoryLogic.createAbilitySectionText('The area is considered difficult terrain. The tar remains in the area until the end of the encounter. Any creature who starts their turn in the area and has С < [середній] is slowed (save ends). If the target is already slowed, they are instead restrained (save ends).')
 											]
 										})
 									}),
@@ -2345,7 +2345,7 @@ As a maneuver, you can expend project points from the stone and craft any consum
 							id: 'Ru8Fd3eJPJ9V4MC7',
 							name: 'Gilder Wonder Gain',
 							tag: 'vocation',
-							trigger: 'The first time each round that an primed creature takes a main action',
+							trigger: 'The first time each round that an primed creature takes a основна дія',
 							value: '1',
 							replacesTags: []
 						}),
@@ -2355,14 +2355,14 @@ As a maneuver, you can expend project points from the stone and craft any consum
 							description: `
 You are able to inscribe arms, armor and implements with arcane glyphs that you can later prime during combat to bolster you or your allies. When you use your Infusion ability, one target of your choice becomes primed until the end of the encounter, you use this feature again, you willingly end this effect (no action required), or another magewright primes the target.
 
-While one or more creatures are primed by you, you can spend 1 wonder to take one of the following free triggered actions:
+While one or more creatures are primed by you, you can spend 1 wonder to take one of the following безкоштовні тригерні дії:
 
 * When a primed creature makes an ability roll, they gain an edge on that roll.
 * When a primed creature force moves a creature or object, they can increase the distance by a number of squares equal to your Reason score.
 * When a primed creature is force moved, you can reduce the total distance moved (to a minimum of 0) by an amount equal to your Reason score.
 * Whenever a primed creature takes the Advance or Disengage action, they can increase the number of squares moved or shifted by your Reason score.
 
-You can choose only one free triggered action option at a time, even if multiple options are triggered by the same effect.`
+You can choose only one безкоштовна тригерна дія option at a time, even if multiple options are triggered by the same effect.`
 						}),
 						FactoryLogic.feature.createAbility({
 							ability: FactoryLogic.createAbility({
@@ -2391,7 +2391,7 @@ You can choose only one free triggered action option at a time, even if multiple
 						FactoryLogic.feature.create({
 							id: 'WRKMJ75nlbTjAC2K',
 							name: 'Synergetic Activation',
-							description: 'At the start of an encounter, you can use a free triggered action to use your Infusion ability against one ally you have line of effect to, even if you are surprised. Additionally, whenever you use your free triggered action to activate an effect from your Sygaldry feature, you or another primed ally can spend a recovery.'
+							description: 'At the start of an encounter, you can use a безкоштовна тригерна дія to use your Infusion ability against one ally you have line of effect to, even if you are surprised. Additionally, whenever you use your безкоштовна тригерна дія to activate an effect from your Sygaldry feature, you or another primed ally can spend a recovery.'
 						}),
 						FactoryLogic.feature.create({
 							id: 'FfkIgxGcuTurA4Ku',
@@ -2441,7 +2441,7 @@ You can choose only one free triggered action option at a time, even if multiple
 												FactoryLogic.createAbilitySectionText(`
 You can target yourself instead of one creature with this ability. The targets become primed by you and gain 2 surges.
 
-**Primed Benefit:** Until the end of the encounter, whenever a primed creature uses a Main action, you can spend 1 or more wonder to allow one other primed creature per 1 wonder spent to use a free triggered action to shift up to half their speed and make a free strike.`)
+**Primed Benefit:** Until the end of the encounter, whenever a primed creature uses a Main action, you can spend 1 or more wonder to allow one other primed creature per 1 wonder spent to use a безкоштовна тригерна дія to shift up to half their speed and make a free strike.`)
 											]
 										})
 									}),
@@ -2483,7 +2483,7 @@ You can target yourself instead of one creature with this ability. The targets b
 							id: 'KQ79MHNTHfyhwZ8S',
 							name: 'Experimental Device',
 							description: `
-During a respite, you are able to create a number of experimental devices equal to twice your Reason score, from among the list below. These experimental devices count as trinkets, and last until you use this feature again. Once per round, whenever a creature with a device uses a signature or heroic ability, they can activate a device (no action required). Additionally, creatures can use a free maneuver to gift or trade a device with a willing adjacent ally.
+During a respite, you are able to create a number of experimental devices equal to twice your Reason score, from among the list below. These experimental devices count as trinkets, and last until you use this feature again. Once per round, whenever a creature with a device uses a signature or heroic ability, they can activate a device (no action required). Additionally, creatures can use a безкоштовний маневр to gift or trade a device with a willing adjacent ally.
 
 **Angular Fulcrum.** When you use an ability that pushes or pulls a creature or object with forced movement, you can activate this device to slide them instead. Until the start of your next turn, your stability becomes 0 and any forced movement that affects you has its distance increased by 2.
 
@@ -2535,7 +2535,7 @@ During a respite, you are able to create a number of experimental devices equal 
 								target: 'Себе',
 								sections: [
 									FactoryLogic.createAbilitySectionText(`
-As a maneuver, you can choose a magewright signature or heroic ability that you would be able to learn if you were one level higher or lower. Provided you meet the ability’s other prerequisites and can spend any required Heroic Resources, you can use this ability once this encounter, and it costs 1d3 fewer wonder to use.
+As a маневр, you can choose a magewright signature or heroic ability that you would be able to learn if you were one level higher or lower. Provided you meet the ability’s other prerequisites and can spend any required Heroic Resources, you can use this ability once this encounter, and it costs 1d3 fewer wonder to use.
 
 Once you use this feature, you cannot do so again until you gain at least 1 victory, or finish a respite.`)
 								]
@@ -2704,7 +2704,7 @@ Effects other than the changing of the damage type are applied after the ability
 You cannot use Enweave more than twice before applying its effect to an ability.`),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'This ability becomes a free maneuver instead.'
+								effect: 'This ability becomes a безкоштовний маневр instead.'
 							})
 						]
 					})
@@ -2761,9 +2761,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '2 + A damage',
-						tier2: '5 + A damage',
-						tier3: '8 + A damage'
+						tier1: '2 + Л шкоди',
+						tier2: '5 + Л шкоди',
+						tier3: '8 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Before choosing the target of this ability and resolving the power roll, choose a creature or object within range 5, then either vertical pull 4 the chosen creature or object, or vertical pull 4 yourself from the chosen creature or object\'s space. When a creature is pulled into the air this way, you may choose to make it so they stay aloft until the end of your turn, and lose all stability while in the air.')
@@ -2782,9 +2782,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '2 damage, push 1',
-						tier2: '3 damage, push 1',
-						tier3: '5 damage, push 1'
+						tier1: '2 шкоди, відштовхнути на 1',
+						tier2: '3 шкоди, відштовхнути на 1',
+						tier3: '5 шкоди, відштовхнути на 1'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('This ability ignores stability. Gain damage immunity equal to your Reason until the end of your next turn.')
@@ -2803,9 +2803,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '2 damage',
-						tier2: '5 damage',
-						tier3: '7 damage'
+						tier1: '2 шкоди',
+						tier2: '5 шкоди',
+						tier3: '7 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The wall area is only used for targeting, and does not create an actual wall. Each increase to the wall\'s length is doubled.')
@@ -2824,9 +2824,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 + Р damage',
-						tier2: '8 + Р damage',
-						tier3: '11 + Р damage'
+						tier1: '6 + Р шкоди',
+						tier2: '8 + Р шкоди',
+						tier3: '11 + Р шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The target’s characteristic scores are treated as lower by 1 for the sake of resisting potencies (save ends).')
@@ -2845,9 +2845,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '3 + A damage',
-						tier2: '6 + A damage',
-						tier3: '9 + A damage'
+						tier1: '3 + Л шкоди',
+						tier2: '6 + Л шкоди',
+						tier3: '9 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target willingly moves before the end of their next turn, they take damage equal to twice your Reason score.')
@@ -2866,9 +2866,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 + A damage',
-						tier2: '9 + A damage',
-						tier3: '13 + A damage'
+						tier1: '6 + Л шкоди',
+						tier2: '9 + Л шкоди',
+						tier3: '13 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is suffering from an effect that is ended by a saving throw, this ability deals an additional 10 damage.')
@@ -2887,9 +2887,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 damage',
-						tier2: '9 damage',
-						tier3: '13 damage'
+						tier1: '6 шкоди',
+						tier2: '9 шкоди',
+						tier3: '13 шкоди'
 					})
 				)
 			]
@@ -2907,9 +2907,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '8 + Р damage',
-						tier2: '12 + Р damage',
-						tier3: '16 + Р damage'
+						tier1: '8 + Р шкоди',
+						tier2: '12 + Р шкоди',
+						tier3: '16 + Р шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Create a 1 burst area of mist which provides concealment to allies that lasts until the end of your next turn. Allies inside the mist can hide even while observed.')
@@ -2928,9 +2928,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '4 + A damage',
-						tier2: '7 + A damage',
-						tier3: '11 + A damage'
+						tier1: '4 + Л шкоди',
+						tier2: '7 + Л шкоди',
+						tier3: '11 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to half the damage dealt by this ability.')
@@ -2949,9 +2949,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 lightning damage',
-						tier2: '10 lightning damage',
-						tier3: '14 lightning damage'
+						tier1: '6 блискавичної шкоди',
+						tier2: '10 блискавичної шкоди',
+						tier3: '14 блискавичної шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You teleport to a square on the opposite side of the area before making the power roll.')
@@ -2970,9 +2970,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '5 cold damage, Л < [слабкий], slowed (save ends)',
-						tier2: '8 cold damage, Л < [середній], slowed (save ends)',
-						tier3: '11 cold damage, Л < [сильний], restrained (save ends)'
+						tier1: '5 холодної шкоди, Л < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '8 холодної шкоди, Л < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '11 холодної шкоди, Л < [сильний], скутий (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -2990,9 +2990,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 damage; push 2',
-						tier2: '9 damage; push 4',
-						tier3: '13 damage; push 6'
+						tier1: '6 шкоди; відштовхнути на 2',
+						tier2: '9 шкоди; відштовхнути на 4',
+						tier3: '13 шкоди; відштовхнути на 6'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You can jump up to 2 squares before resolving the power roll. The targets are force moved one at a time, starting with the targets nearest to you, and can be pushed into other targets in the area.')
@@ -3011,9 +3011,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 + A psychic damage; I < [слабкий], dazed (save ends)',
-						tier2: '10 + A psychic damage; I < [середній], dazed (save ends)',
-						tier3: '14 + A psychic damage; I < [сильний], dazed (save ends)'
+						tier1: '6 + Л психічної шкоди; І < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '10 + Л психічної шкоди; І < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '14 + Л психічної шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While dazed this way, the target\'s characteristic scores are treated as lower by 1 for the sake of resisting potencies.')
@@ -3032,9 +3032,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '6 damage',
-						tier2: '10 damage',
-						tier3: '14 damage'
+						tier1: '6 шкоди',
+						tier2: '10 шкоди',
+						tier3: '14 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Overlapping lines are treated as a single area.')
@@ -3050,7 +3050,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 			target: 'Себе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('For the rest of the combat encounter you have an additional maneuver per turn, and gain a +5 bonus to speed.')
+				FactoryLogic.createAbilitySectionText('For the rest of the combat encounter you have an additional маневр per turn, and gain a +5 bonus to speed.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -3066,9 +3066,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '12 + A damage',
-						tier2: '18 + A damage',
-						tier3: '24 + A damage'
+						tier1: '12 + Л шкоди',
+						tier2: '18 + Л шкоди',
+						tier3: '24 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If this ability reduces a creature to 0 Stamina, gain 5 balance.')
@@ -3181,9 +3181,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Agility,
-														tier1: '3 damage',
-														tier2: '6 damage',
-														tier3: '9 damage'
+														tier1: '3 шкоди',
+														tier2: '6 шкоди',
+														tier3: '9 шкоди'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Choose a target within range 5, teleport to an unoccupied space adjacent to it, then apply the power roll result to it. Repeat this effect up to 3 more times. The same target cannot be chosen more than once.')
@@ -3207,9 +3207,9 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Agility,
-														tier1: '14 + A damage',
-														tier2: '18 + A damage',
-														tier3: '23 + A damage'
+														tier1: '14 + Л шкоди',
+														tier2: '18 + Л шкоди',
+														tier3: '23 + Л шкоди'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('You may teleport to up to 15 squares before this strike.')
@@ -3273,7 +3273,7 @@ You cannot use Enweave more than twice before applying its effect to an ability.
 								sections: [
 									FactoryLogic.createAbilitySectionText('The target takes damage equal to triple your Reason score.'),
 									FactoryLogic.createAbilitySectionSpend({
-										effect: 'If the target has I < [середній], they are slowed (EoT).'
+										effect: 'If the target has І < [середній], they are slowed (EoT).'
 									})
 								]
 							})
@@ -3329,9 +3329,9 @@ The area remains until the end of the encounter or you are dying. Choose one of 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '6 damage; M < [слабкий], restrained (save ends)',
-														tier2: '10 damage; M < [середній], restrained (save ends)',
-														tier3: '14 damage; M < [сильний], restrained (save ends)'
+														tier1: '6 шкоди; С < [слабкий], скутий (рят. кидок закінчує)',
+														tier2: '10 шкоди; С < [середній], скутий (рят. кидок закінчує)',
+														tier3: '14 шкоди; С < [сильний], скутий (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('While restrained this way, the target cannot teleport by any means.')
@@ -3368,7 +3368,7 @@ The area remains until the end of the encounter or you are dying. Choose one of 
 							id: 'scion-1jXjv5q9Tmlax2TD',
 							name: 'Soulbound',
 							description: `
-Your Soulblade is more than a weapon - it's an extension of your soul. Its appearance reflects the innermost truth of who you are. You are never truly separated from it; if it's not in your hands, you can summon it instantly as a free maneuver.
+Your Soulblade is more than a weapon - it's an extension of your soul. Its appearance reflects the innermost truth of who you are. You are never truly separated from it; if it's not in your hands, you can summon it instantly as a безкоштовний маневр.
 
 Your Soulforged abilities can only be used with your Soulblade. To bond with a new weapon, you must perform a ritual lasting several hours to transfer your bound soul fragment from another weapon to it. You may bond with as many weapons as a kit grants.
 
@@ -3453,7 +3453,7 @@ Choose a modified form for your Soulblade, each granting a distinct effect until
 											target: 'Себе',
 											cost: 5,
 											sections: [
-												FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape maneuver.')
+												FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape маневр.')
 											]
 										})
 									}),
@@ -3474,9 +3474,9 @@ Choose a modified form for your Soulblade, each granting a distinct effect until
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Agility,
-														tier1: '5 damage',
-														tier2: '8 damage; push 1',
-														tier3: '11 damage; push 3'
+														tier1: '5 шкоди',
+														tier2: '8 шкоди; відштовхнути на 1',
+														tier3: '11 шкоди; відштовхнути на 3'
 													})
 												)
 											]
@@ -3601,9 +3601,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: '2 + П damage',
-									tier2: '4 + П damage',
-									tier3: '6 + П damage'
+									tier1: '2 + П шкоди',
+									tier2: '4 + П шкоди',
+									tier3: '6 + П шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The damage this ability deals can be your patron’s damage type.')
@@ -3628,7 +3628,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'vessel-1-7b',
 								name: 'Boon of the Flesh',
-								description: 'You can wear light armor and wield light weapons effectively, even though you don’t have a kit. While you wear light armor, you gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels. While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes. You can use light armor treasures and light weapon treasures. If you have a kit, you can’t take this boon.',
+								description: 'Ви можете ефективно носити легку броню та володіти легкою зброєю, навіть якщо не маєте набору. Поки ви носите легку броню, ви отримуєте +3 до Витривалості, і цей бонус збільшується на 3 на 4, 7 і 10 рівнях. Поки ви володієте легкою зброєю, ви отримуєте +1 до урону здібностями зброї, включно з вільними ударами. Ви можете використовувати скарби легкої броні та легкої зброї. Якщо у вас є набір, ви не можете взяти це благословення.',
 								features: [
 									FactoryLogic.feature.createProficiency({
 										id: 'vessel-1-7b-1',
@@ -3689,7 +3689,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 							feature: FactoryLogic.feature.createMultiple({
 								id: 'vessel-1-7f',
 								name: 'Boon of Shadow',
-								description: 'Your shadow encompasses your form. You gain a +1 bonus to speed and to the distance you shift when you take the Disengage move action.',
+								description: 'Your shadow encompasses your form. You gain a +1 bonus to speed and to the distance you shift when you take the Disengage дія руху.',
 								features: [
 									FactoryLogic.feature.createBonus({
 										id: 'vessel-1-7f-1',
@@ -3761,7 +3761,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.feature.create({
 					id: 'vessel-3-2',
 					name: 'Soul Witness',
-					description: 'You can see the souls of those you face, peering into the true essence of their being to seek their vulnerabilities. Once per turn, you can choose a creature you can see within 10 as a free maneuver to learn which of their characteristic scores are < [слабкий].'
+					description: 'You can see the souls of those you face, peering into the true essence of their being to seek their vulnerabilities. Once per turn, you can choose a creature you can see within 10 as a безкоштовний маневр to learn which of their characteristic scores are < [слабкий].'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'vessel-3-3',
@@ -3868,9 +3868,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '2 damage',
-						tier2: '5 damage',
-						tier3: '7 damage; M < [сильний], prone'
+						tier1: '2 шкоди',
+						tier2: '5 шкоди',
+						tier3: '7 шкоди; С < [сильний], розпластаний'
 					})
 				)
 			]
@@ -3888,9 +3888,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 + П corruption damage',
-						tier2: '8 + П corruption damage',
-						tier3: '11 + П corruption damage'
+						tier1: '5 + П шкоди від скверни',
+						tier2: '8 + П шкоди від скверни',
+						tier3: '11 + П шкоди від скверни'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your Presence score until the start of your next turn. If the attack kills the target, you get temporary Stamina equal to thrice your Presence score until the start of your next turn instead.')
@@ -3909,9 +3909,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '2 patron damage; push 1',
-						tier2: '3 patron damage; push 2',
-						tier3: '4 patron damage; push 3'
+						tier1: '2 patron шкоди; відштовхнути на 1',
+						tier2: '3 patron шкоди; відштовхнути на 2',
+						tier3: '4 patron шкоди; відштовхнути на 3'
 					})
 				)
 			]
@@ -3929,9 +3929,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 + П psychic damage',
-						tier2: '7 + П psychic damage',
-						tier3: '9 + П psychic damage'
+						tier1: '5 + П психічної шкоди',
+						tier2: '7 + П психічної шкоди',
+						tier3: '9 + П психічної шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If you’ve taken damage since the start of your last turn, you gain 1 surge before making the power roll.')
@@ -3950,9 +3950,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '3 + П corruption damage; П < [слабкий], the target takes a bane on their next power roll',
-						tier2: '5 + П corruption damage; П < [середній], the target takes a bane on their next power roll',
-						tier3: '8 + П corruption damage; П < [сильний], the target takes a bane on their next power roll'
+						tier1: '3 + П шкоди від скверни; П < [слабкий], ціль отримує шкоду на свій наступний кидок сили',
+						tier2: '5 + П шкоди від скверни; П < [середній], ціль отримує шкоду на свій наступний кидок сили',
+						tier3: '8 + П шкоди від скверни; П < [сильний], ціль отримує шкоду на свій наступний кидок сили'
 					})
 				)
 			]
@@ -3973,9 +3973,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + П corruption damage',
-						tier2: '7 + П corruption damage',
-						tier3: '10 + П corruption damage'
+						tier1: '4 + П шкоди від скверни',
+						tier2: '7 + П шкоди від скверни',
+						tier3: '10 + П шкоди від скверни'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You or an ally within range gain temporary Stamina equal to half the damage dealt.')
@@ -4007,9 +4007,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + П psychic damage; Р < [слабкий], frenzy',
-						tier2: '6 + П psychic damage; Р < [середній], frenzy',
-						tier3: '9 + П psychic damage; Р < [сильний], frenzy'
+						tier1: '4 + П психічної шкоди; Р < [слабкий], frenzy',
+						tier2: '6 + П психічної шкоди; Р < [середній], frenzy',
+						tier3: '9 + П психічної шкоди; Р < [сильний], frenzy'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A frenzied target makes a melee free strike against all your enemies within their range, including themself.')
@@ -4028,9 +4028,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '6 + П patron damage; П < [слабкий], weakened (save ends)',
-						tier2: '10 + П patron damage; П < [середній], weakened (save ends)',
-						tier3: '14 + П patron damage; П < [сильний], weakened (save ends)'
+						tier1: '6 + П patron шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)',
+						tier2: '10 + П patron шкоди; П < [середній], ослаблений (рят. кидок закінчує)',
+						tier3: '14 + П patron шкоди; П < [сильний], ослаблений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While weakened this way, the creature can’t benefit from edges or a critical hit.')
@@ -4049,9 +4049,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '3 damage; M < [слабкий], bleeding (save ends)',
-						tier2: '4 damage; M < [середній], bleeding (save ends)',
-						tier3: '6 damage; M < [сильний], bleeding (save ends)'
+						tier1: '3 шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '4 шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '6 шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If a target is affected by the potency and is already bleeding, it takes additional damage equal to your Presence score.')
@@ -4070,9 +4070,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 psychic damage; I < [слабкий], frightened (save ends)',
-						tier2: '5 psychic damage; push 1; I < [середній], frightened (save ends)',
-						tier3: '6 psychic damage; push 2; I < [сильний], frightened (save ends)'
+						tier1: '4 психічної шкоди; І < [слабкий], зляканий (рят. кидок закінчує)',
+						tier2: '5 психічної шкоди; відштовхнути на 1; І < [середній], зляканий (рят. кидок закінчує)',
+						tier3: '6 психічної шкоди; відштовхнути на 2; І < [сильний], зляканий (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -4090,9 +4090,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '4 + П damage; M < [слабкий], slowed and the target has damage weakness 2 (EoT)',
-						tier2: '6 + П damage; M < [середній], slowed and the target has damage weakness 3 (EoT)',
-						tier3: '8 + П damage; M < [сильний], slowed and the target has damage weakness 5 (EoT)'
+						tier1: '4 + П шкоди; С < [слабкий], сповільнений і ціль має вразливість до шкоди 2 (до кінця ходу)',
+						tier2: '6 + П шкоди; С < [середній], сповільнений і ціль має вразливість до шкоди 3 (до кінця ходу)',
+						tier3: '8 + П шкоди; С < [сильний], сповільнений і ціль має вразливість до шкоди 5 (до кінця ходу)'
 					})
 				)
 			]
@@ -4110,9 +4110,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '2 patron damage',
-						tier2: '4 patron damage',
-						tier3: '5 patron damage'
+						tier1: '2 patron шкоди',
+						tier2: '4 patron шкоди',
+						tier3: '5 patron шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The area becomes difficult terrain for your enemies. Each square willingly moved through causes the enemy to take 1 patron damage.')
@@ -4134,9 +4134,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '8 + П corruption damage; П < [слабкий], slowed (save ends)',
-						tier2: '11 + П corruption damage; П < [середній], slowed (save ends)',
-						tier3: '15 + П corruption damage; П < [сильний], slowed (save ends)'
+						tier1: '8 + П шкоди від скверни; П < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '11 + П шкоди від скверни; П < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '15 + П шкоди від скверни; П < [сильний], сповільнений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('While slowed this way, the target rolls two d10s on saving throws and takes the lower, and takes double damage from ending it using End Effect.')
@@ -4155,12 +4155,12 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '9 + П patron damage',
-						tier2: '12 + П patron damage',
-						tier3: '16 + П patron damage'
+						tier1: '9 + П patron шкоди',
+						tier2: '12 + П patron шкоди',
+						tier3: '16 + П patron шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the target is harrowed. You can use a maneuver on your turn to cause all creatures harrowed by you to take patron damage equal to thrice your Presence score.')
+				FactoryLogic.createAbilitySectionText('Until the end of the encounter, the target is harrowed. You can use a маневр on your turn to cause all creatures harrowed by you to take patron damage equal to thrice your Presence score.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -4177,9 +4177,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: 'vertical pull 1 towards the portal’s center; I < [слабкий], vertical pull 3 instead',
-						tier2: 'vertical pull 2 towards the portal’s center; I < [середній], vertical pull 4 instead',
-						tier3: 'vertical pull 3 towards the portal’s center; I < [сильний], vertical pull 5 instead'
+						tier1: 'вертикально притягнути на 1 до центру порталу; І < [слабкий], натомість вертикально притягнути на 3',
+						tier2: 'вертикально притягнути на 2 до центру порталу; І < [середній], натомість вертикально притягнути на 4',
+						tier3: 'вертикально притягнути на 3 до центру порталу; І < [сильний], натомість вертикально притягнути на 5'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A target can’t be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.')
@@ -4198,9 +4198,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '3 corruption damage',
-						tier2: '4 corruption damage',
-						tier3: '6 corruption damage'
+						tier1: '3 шкоди від скверни',
+						tier2: '4 шкоди від скверни',
+						tier3: '6 шкоди від скверни'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to half the total damage dealt.')
@@ -4220,9 +4220,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '6 + П patron damage; I < [слабкий], dazed (save ends)',
-						tier2: '9 + П patron damage; I < [середній], dazed (save ends)',
-						tier3: '12 + П patron damage; I < [сильний], dazed (save ends)'
+						tier1: '6 + П patron шкоди; І < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '9 + П patron шкоди; І < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '12 + П patron шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -4240,9 +4240,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '8 + П damage',
-						tier2: '10 + П damage',
-						tier3: '13 + П damage'
+						tier1: '8 + П шкоди',
+						tier2: '10 + П шкоди',
+						tier3: '13 + П шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('If the target is winded after damage resolves, they die if they rely on a heart to live and aren’t a leader, solo or boss. Otherwise, a winded creature is bleeding (save ends).')
@@ -4261,9 +4261,9 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Presence,
-						tier1: '5 psychic damage; Р < [слабкий], wracked (save ends)',
-						tier2: '7 psychic damage; Р < [середній], wracked (save ends)',
-						tier3: '10 psychic damage; Р < [сильний], wracked (save ends)'
+						tier1: '5 психічної шкоди; Р < [слабкий], wracked (рят. кидок закінчує)',
+						tier2: '7 психічної шкоди; Р < [середній], wracked (рят. кидок закінчує)',
+						tier3: '10 психічної шкоди; Р < [сильний], wracked (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('A wracked creature must spend twice as much malice to use any ability that costs malice, at the start of their turn or as part of their statblock.')
@@ -4282,7 +4282,7 @@ You lose 1d6 + your level in Stamina, which ignores temporary Stamina. Choose on
 				FactoryLogic.createAbilitySectionText(`
 You can place this wall in occupied squares, with each creature in an affected place sliding to the nearest unoccupied square of your choice. The wall lasts until the end of the encounter or you are dying. The wall squares count as stone squares for purposes of damage. You can move freely through the wall squares. Whenever a creature dies within 10 of the wall, it grows an additional segment.
 
-Any enemy who moves into the area for the first time in a combat round or starts their turn there takes patron damage equal to twice your Presence score and is M < [слабкий], restrained by the wall (save ends). An enemy that is force moved into the wall is M < [сильний], restrained by the wall (save ends) instead, and the creature doing the forced movement can choose for the wall to not break if the excess movement would cause it to. A creature that saves against being restrained this way can shift 1 square.`)
+Any enemy who moves into the area for the first time in a combat round or starts their turn there takes patron damage equal to twice your Presence score and is С < [слабкий], restrained by the wall (save ends). An enemy that is force moved into the wall is С < [сильний], restrained by the wall (save ends) instead, and the creature doing the forced movement can choose for the wall to not break if the excess movement would cause it to. A creature that saves against being restrained this way can shift 1 square.`)
 			]
 		})
 	],
@@ -4318,9 +4318,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '2 + П fire damage; I < [слабкий], weakened (save ends)',
-											tier2: '4 + П fire damage; I < [середній], weakened (save ends)',
-											tier3: '7 + П fire damage; I < [сильний], weakened (save ends)'
+											tier1: '2 + П вогняної шкоди; І < [слабкий], ослаблений (рят. кидок закінчує)',
+											tier2: '4 + П вогняної шкоди; І < [середній], ослаблений (рят. кидок закінчує)',
+											tier3: '7 + П вогняної шкоди; І < [сильний], ослаблений (рят. кидок закінчує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4358,7 +4358,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 | 4           | You automatically succeed on saving throws to end the charmed or taunted conditions. |
 | 6           | Your Infernal Rebuke’s damage increases to three times your Presence score, and its push increases to 3 squares. |
 | 8           | You can’t be charmed or taunted. |
-| 10          | You gain a +2 bonus to speed and to the distance you shift when you take the Disengage move action. |
+| 10          | You gain a +2 bonus to speed and to the distance you shift when you take the Disengage дія руху. |
 | 12 (lvl 4+) | Your Infernal Rebuke’s damage increases to four times your Presence score, and its push increases to 5 squares. |`
 						})
 					]
@@ -4407,9 +4407,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: 'P < [слабкий], charmed (save ends)',
-								tier2: 'P < [середній], charmed (save ends)',
-								tier3: 'P < [сильний], charmed (save ends)'
+								tier1: 'П < [слабкий], зачарований (рят. кидок закінчує)',
+								tier2: 'П < [середній], зачарований (рят. кидок закінчує)',
+								tier3: 'П < [сильний], зачарований (рят. кидок закінчує)'
 							})
 						)
 					]
@@ -4427,9 +4427,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '5 fire damage; I < [слабкий], aflame (EoT)',
-								tier2: '7 fire damage; I < [середній], aflame (EoT)',
-								tier3: '11 fire damage; I < [сильний], aflame (EoT)'
+								tier1: '5 вогняної шкоди; І < [слабкий], палає (до кінця ходу)',
+								tier2: '7 вогняної шкоди; І < [середній], палає (до кінця ходу)',
+								tier3: '11 вогняної шкоди; І < [сильний], палає (до кінця ходу)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('The first time an aflame target willingly moves, they take fire damage equal to twice your Presence score and the condition ends.')
@@ -4472,9 +4472,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '3 + П corruption damage; П < [слабкий], slowed (save ends)',
-											tier2: '4 + П corruption damage; П < [середній], slowed (save ends)',
-											tier3: '6 + П corruption damage; П < [сильний], slowed (save ends)'
+											tier1: '3 + П шкоди від скверни; П < [слабкий], сповільнений (рят. кидок закінчує)',
+											tier2: '4 + П шкоди від скверни; П < [середній], сповільнений (рят. кидок закінчує)',
+											tier3: '6 + П шкоди від скверни; П < [сильний], сповільнений (рят. кидок закінчує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4532,7 +4532,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.feature.create({
 							id: 'vessel-subclass-2-2-1',
 							name: 'Indestructible Life',
-							description: 'You’re not fully alive. When you can take the Catch Breath maneuver or are the target of a Heal action, you can spend as many Recoveries as you like instead of just one. If you hold a severed body part in place and spend a recovery to regain Stamina, the body part reattaches, and any part of your dead body can count as your full remains.'
+							description: 'You’re not fully alive. When you can take the Catch Breath маневр or are the target of a Heal action, you can spend as many Recoveries as you like instead of just one. If you hold a severed body part in place and spend a recovery to regain Stamina, the body part reattaches, and any part of your dead body can count as your full remains.'
 						})
 					]
 				},
@@ -4569,9 +4569,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '5 corruption damage',
-								tier2: '7 corruption damage',
-								tier3: '9 corruption damage'
+								tier1: '5 шкоди від скверни',
+								tier2: '7 шкоди від скверни',
+								tier3: '9 шкоди від скверни'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('Choose Rotting Zombie or Shade. If you kill one or more creatures with this ability, they return in their spaces under your control as the chosen minion type. They can’t take their turns until your next turn.')
@@ -4624,9 +4624,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											characteristic: Characteristic.Presence,
-											tier1: '4 + П psychic damage; M < [слабкий], grabbed',
-											tier2: '6 + П psychic damage; M < [середній], grabbed',
-											tier3: '9 + П psychic damage; M < [сильний], grabbed'
+											tier1: '4 + П психічної шкоди; С < [слабкий], схоплений',
+											tier2: '6 + П психічної шкоди; С < [середній], схоплений',
+											tier3: '9 + П психічної шкоди; С < [сильний], схоплений'
 										})
 									),
 									FactoryLogic.createAbilitySectionSpend({
@@ -4679,7 +4679,7 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.feature.create({
 							id: 'vessel-subclass-3-2-1',
 							name: 'Sense Minds',
-							description: 'You know the general location of all creatures within 10 of you, regardless of line of effect. This does not impact their ability to hide from you, but you have a double edge on the Search for Hidden Creatures maneuver to find creatures in this range.'
+							description: 'You know the general location of all creatures within 10 of you, regardless of line of effect. This does not impact their ability to hide from you, but you have a double edge on the Search for Hidden Creatures маневр to find creatures in this range.'
 						})
 					]
 				},
@@ -4729,9 +4729,9 @@ Any enemy who moves into the area for the first time in a combat round or starts
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '8 + П psychic damage; I < [слабкий], can’t take triggered actions (EoT)',
-								tier2: '11 + П psychic damage; I < [середній], dazed (EoT)',
-								tier3: '14 + П psychic damage; I < [сильний], dazed (save ends)'
+								tier1: '8 + П психічної шкоди; І < [слабкий], can’t take тригерні дії (до кінця ходу)',
+								tier2: '11 + П психічної шкоди; І < [середній], приголомшений (до кінця ходу)',
+								tier3: '14 + П психічної шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 							})
 						)
 					]
@@ -4814,7 +4814,7 @@ const technobabble: Perk = {
 	description: `
 *This perk can only be taken by Magewright heroes*
 
-When you make a test that uses the Brag, Intimidate, or Lie skill, you can use Reason instead of any other characteristic the test calls for.`,
+When you make a test that uses the Вихваляння, Залякування, or Брехня skill, you can use Reason instead of any other characteristic the test calls for.`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Lore

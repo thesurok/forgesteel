@@ -168,7 +168,7 @@ export const HeroSheetPage = (props: Props) => {
 				shown: false
 			},
 			{
-				element: <ManeuversReferenceCard key='maneuvers-reference' />,
+				element: <ManeuversReferenceCard key='маневри-reference' />,
 				width: 1,
 				height: 39,
 				shown: false

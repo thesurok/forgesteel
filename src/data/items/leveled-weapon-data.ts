@@ -65,7 +65,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-authoritys-end-9',
 						name: '',
-						description: 'You no longer need to use a maneuver to end one effect when you damage a creature with the weapon. The weapon also refuses to vie for control of your psyche, and no longer counts against the limit of leveled treasures you can carry safely.'
+						description: 'You no longer need to use a маневр to end one effect when you damage a creature with the weapon. The weapon also refuses to vie for control of your psyche, and no longer counts against the limit of leveled treasures you can carry safely.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-authoritys-end-9a',
@@ -546,7 +546,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-lance-of-the-sundered-star-5',
 						name: '',
-						description: 'Whenever you use the Charge main action and use an ability with the Charge keyword, or whenever you use an ability that allows you to shift, you can fly as part of the charge movement or the shift. If you don’t end your flying movement on the ground, you fall.'
+						description: 'Whenever you use the Charge основна дія and use an ability with the Charge keyword, or whenever you use an ability that allows you to shift, you can fly as part of the charge movement or the shift. If you don’t end your flying movement on the ground, you fall.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lance-of-the-sundered-star-5a',
@@ -596,7 +596,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-molten-constrictor-1',
 						name: '',
-						description: 'Whenever you make a strike using the net and obtain a tier 3 outcome, you can automatically grab the target. A target grabbed in this way takes a bane when using the Escape Grab maneuver.'
+						description: 'Whenever you make a strike using the net and obtain a tier 3 outcome, you can automatically grab the target. A target grabbed in this way takes a bane when using the Escape Grab маневр.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-molten-constrictor-1a',
@@ -613,7 +613,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-molten-constrictor-5',
 						name: '',
-						description: 'A target grabbed by a strike using the net takes 8 fire damage each time they attempt to escape using the Escape Grab maneuver.'
+						description: 'A target grabbed by a strike using the net takes 8 fire damage each time they attempt to escape using the Escape Grab маневр.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-molten-constrictor-5a',
@@ -771,7 +771,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-steeltongue-9',
 						name: '',
-						description: 'y, if you use a signature ability using the weapon that targets one or more bleeding creatures, you can use the same ability again immediately as a maneuver.'
+						description: 'y, if you use a signature ability using the weapon that targets one or more bleeding creatures, you can use the same ability again immediately as a маневр.'
 					}),
 					FactoryLogic.feature.createAbilityDistance({
 						id: 'item-steeltongue-9a',
@@ -821,7 +821,7 @@ export class LeveledWeaponData {
 						ability: FactoryLogic.createAbility({
 							id: 'item-third-eye-seeker-5',
 							name: 'Weapon Ability',
-							type: FactoryLogic.type.createTrigger('After target\'s triggered action resolves'),
+							type: FactoryLogic.type.createTrigger('After target\'s тригерна дія resolves'),
 							distance: [FactoryLogic.distance.createSpecial('Ranged weapon free strike distance')],
 							target: 'Один ворог',
 							sections: [
@@ -987,7 +987,7 @@ export class LeveledWeaponData {
 					FactoryLogic.feature.create({
 						id: 'item-wetwork-9',
 						name: '',
-						description: 'The weapon\'s extra sonic damage increases to 3. Additionally, if you kill a creature using the weapon, you can use a maneuver to move up to your speed and make either a signature strike or a melee free strike.'
+						description: 'The weapon\'s extra sonic damage increases to 3. Additionally, if you kill a creature using the weapon, you can use a маневр to move up to your speed and make either a signature strike or a melee free strike.'
 					}),
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-wetwork-5',

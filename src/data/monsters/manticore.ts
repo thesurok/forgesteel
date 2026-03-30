@@ -40,7 +40,7 @@ export const manticore: MonsterGroup = {
 			cost: 3,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				'The manticore uses their mimicry in an attempt to unnerve one creature within their line of effect. If the target has R<4, they take a bane on power rolls against the manticore (save ends). Each time this feature is used against the same target during the encounter, its potency decreases by 2.'
+				'The manticore uses their mimicry in an attempt to unnerve one creature within their line of effect. If the target has Р<4, they take a bane on power rolls against the manticore (save ends). Each time this feature is used against the same target during the encounter, its potency decreases by 2.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -49,7 +49,7 @@ export const manticore: MonsterGroup = {
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The manticore takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The manticore takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -61,9 +61,9 @@ export const manticore: MonsterGroup = {
 				'The manticore lets out an unnerving cry. Each enemy within the manticore’s line of effect makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: 'Frightened (save ends)',
-					tier2: 'Frightened (EoT)',
-					tier3: 'No effect'
+					tier1: 'зляканий (рят. кидок закінчує)',
+					tier2: 'зляканий (до кінця ходу)',
+					tier3: 'Без ефекту'
 				})
 			]
 		}),
@@ -73,7 +73,7 @@ export const manticore: MonsterGroup = {
 			cost: 7,
 			icon: StatBlockIcon.AuraBurst,
 			sections: [
-				'The manticore sprays tail spikes across the ground within 5 squares of them. Each enemy in that area who has A<3 is bleeding (save ends). Additionally, the area is difficult terrain, and any enemy takes 3 poison damage for each square of the area they enter. An enemy who takes 9 poison damage this way on one turn is weakened until the end of the encounter.'
+				'The manticore sprays tail spikes across the ground within 5 squares of them. Each enemy in that area who has Л<3 is bleeding (save ends). Additionally, the area is difficult terrain, and any enemy takes 3 poison damage for each square of the area they enter. An enemy who takes 9 poison damage this way on one turn is weakened until the end of the encounter.'
 			]
 		})
 	],
@@ -114,9 +114,9 @@ export const manticore: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; A<2 bleeding (save ends)',
-								tier2: '17 damage; A<3 bleeding (save ends)',
-								tier3: '21 damage; A<4 bleeding (save ends)'
+								tier1: '12 шкоди; Л<2 кровотеча (рят. кидок закінчує)',
+								tier2: '17 шкоди; Л<3 кровотеча (рят. кидок закінчує)',
+								tier3: '21 шкоди; Л<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is frightened, this ability gains an edge.')
 						]
@@ -133,9 +133,9 @@ export const manticore: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage; M<2 4 poison damage',
-								tier2: '11 damage; M<3 4 poison damage, weakened (save ends)',
-								tier3: '14 damage; M<4 8 poison damage, weakened (save ends)'
+								tier1: '6 шкоди; С<2 4 отруйної шкоди',
+								tier2: '11 шкоди; С<3 4 отруйної шкоди, ослаблений (рят. кидок закінчує)',
+								tier3: '14 шкоди; С<4 8 отруйної шкоди, ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'While weakened this way, a target takes 1d6 poison damage at the start of each of their turns.'
@@ -154,9 +154,9 @@ export const manticore: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Slide 1; A<2 3 damage',
-								tier2: 'Slide 2; A<3 5 damage',
-								tier3: 'Slide 4; A<4 7 damage'
+								tier1: 'Зсунути на 1; Л<2 3 шкоди',
+								tier2: 'Зсунути на 2; Л<3 5 шкоди',
+								tier3: 'Зсунути на 4; Л<4 7 шкоди'
 							}))
 						]
 					})
@@ -186,9 +186,9 @@ export const manticore: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Frightened (EoT); if the target has I<2 they are instead frightened (save ends)',
-								tier2: 'Frightened (EoT); if the target has I<3 they are instead frightened (save ends)',
-								tier3: 'Frightened (EoT); if the target has I<4 they are instead dazed (save ends)'
+								tier1: 'зляканий (до кінця ходу); якщо ціль має І<2 they are instead зляканий (рят. кидок закінчує)',
+								tier2: 'зляканий (до кінця ходу); якщо ціль має І<3 they are instead зляканий (рят. кидок закінчує)',
+								tier3: 'зляканий (до кінця ходу); якщо ціль має І<4 they are instead приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})

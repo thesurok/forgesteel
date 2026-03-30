@@ -74,7 +74,7 @@ export const virtuoso: SubClass = {
 								distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5 })],
 								target: 'Ви та кожний союзник у зоні',
 								sections: [
-									FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, отримує 1 імпульс.')
+									FactoryLogic.createAbilitySectionText('Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, отримує 1 сплеск.')
 								]
 							})
 						})
@@ -272,7 +272,7 @@ export const virtuoso: SubClass = {
 									target: 'На себе та кожного союзника в зоні',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Кожна ціль отримує 1 імпульс, а потім отримує ще 1 імпульс на початку кожного раунду бою до кінця зустрічі.')
+										FactoryLogic.createAbilitySectionText('Кожна ціль отримує 1 сплеск, а потім отримує ще 1 сплеск на початку кожного раунду бою до кінця зустрічі.')
 									]
 								})
 							}),

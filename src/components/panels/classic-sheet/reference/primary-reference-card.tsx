@@ -65,7 +65,7 @@ export const PrimaryReferenceCard = (props: Props) => {
 				}
 				{
 					showActionsManeuversReference ?
-						<div className='actions-maneuvers'>
+						<div className='actions-маневри'>
 							<div className='move-actions'>
 								<h5>Дії руху</h5>
 								<ul>
@@ -91,7 +91,7 @@ export const PrimaryReferenceCard = (props: Props) => {
 									}
 								</ul>
 							</div>
-							<div className='maneuvers'>
+							<div className='маневри'>
 								<h5>Маневри</h5>
 								<ul>
 									<li>Допомога в атаці</li>

@@ -18,14 +18,14 @@ export const polderShadow = {
 				id: 'polder-feature-1',
 				name: 'Shadowmeld',
 				description: 'You become an actual shadow.',
-				type: 'Ability',
+				type: 'Здібність',
 				data: {
 					ability: {
 						id: 'polder-feature-1',
 						name: 'Shadowmeld',
 						description: 'You become an actual shadow.',
 						type: {
-							usage: 'Maneuver',
+							usage: 'Маневр',
 							free: false,
 							trigger: '',
 							time: '',
@@ -51,8 +51,8 @@ export const polderShadow = {
 						minLevel: 1,
 						sections: [
 							{
-								type: 'text',
-								text: '\nYou flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn’t observing you. While in shadow form, you have full awareness of your surroundings, and strikes against you and tests made to search for you take a bane. You can’t move or be force moved, and you can’t take main actions or maneuvers except to exit this form or to direct creates under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.\n\nIf the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can’t be reduced in any way.'
+								type: 'Текст',
+								text: '\nYou flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn’t observing you. While in shadow form, you have full awareness of your surroundings, and strikes against you and tests made to search for you take a bane. You can’t move or be force moved, and you can’t take основні дії or маневри except to exit this form or to direct creates under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a маневр.\n\nIf the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can’t be reduced in any way.'
 							}
 						],
 						preEffect: '',
@@ -70,7 +70,7 @@ export const polderShadow = {
 				id: 'polder-feature-2',
 				name: 'Small!',
 				description: 'Your diminutive stature lets you easily get out of — or into — trouble.',
-				type: 'Size',
+				type: 'Розмір',
 				data: {
 					size: {
 						value: 1,
@@ -82,7 +82,7 @@ export const polderShadow = {
 				id: 'polder-feature-3',
 				name: 'Polder Traits',
 				description: '',
-				type: 'Choice',
+				type: 'Вибір',
 				data: {
 					options: [
 						{
@@ -90,7 +90,7 @@ export const polderShadow = {
 								id: 'polder-feature-3-1',
 								name: 'Corruption Immunity',
 								description: 'Your innate shadow magic grants you resilience against the unnatural.',
-								type: 'Damage Modifier',
+								type: 'Модифікатор шкоди',
 								data: {
 									modifiers: [
 										{
@@ -112,7 +112,7 @@ export const polderShadow = {
 								id: 'polder-feature-3-2',
 								name: 'Graceful Retreat',
 								description: 'Your small size makes it easier for you to slip away from the fray.',
-								type: 'Bonus',
+								type: 'Бонус',
 								data: {
 									field: 'Відступ',
 									value: 1,
@@ -129,7 +129,7 @@ export const polderShadow = {
 								id: 'polder-feature-3-3',
 								name: 'Polder Geist',
 								description: 'Evading others’ notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have concealment from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -139,14 +139,14 @@ export const polderShadow = {
 								id: 'polder-feature-3-4',
 								name: 'Reactive Tumble',
 								description: 'Staying light on your feet lets you quickly get back into position.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'polder-feature-3-4',
 										name: 'Reactive Tumble',
 										description: 'Staying light on your feet lets you quickly get back into position.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: true,
 											trigger: 'Whenever you are force moved',
 											time: '',
@@ -170,7 +170,7 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You shift 1 square after the forced movement is resolved.'
 											}
 										],
@@ -192,7 +192,7 @@ export const polderShadow = {
 								id: 'polder-feature-3-5',
 								name: 'Fearless',
 								description: 'Courage is all you know.',
-								type: 'Condition Immunity',
+								type: 'Імунітет до станів',
 								data: {
 									conditions: [
 										'Frightened'
@@ -206,7 +206,7 @@ export const polderShadow = {
 								id: 'polder-feature-3-6',
 								name: 'Nimblestep',
 								description: 'A light step serves you well when speed is of the essence. You ignore the effects of difficult terrain and can move at full speed while sneaking.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 2
@@ -218,7 +218,7 @@ export const polderShadow = {
 							id: 'polder-feature-3-5',
 							name: 'Fearless',
 							description: 'Courage is all you know.',
-							type: 'Condition Immunity',
+							type: 'Імунітет до станів',
 							data: {
 								conditions: [
 									'Frightened'
@@ -229,7 +229,7 @@ export const polderShadow = {
 							id: 'polder-feature-3-1',
 							name: 'Corruption Immunity',
 							description: 'Your innate shadow magic grants you resilience against the unnatural.',
-							type: 'Damage Modifier',
+							type: 'Модифікатор шкоди',
 							data: {
 								modifiers: [
 									{
@@ -248,7 +248,7 @@ export const polderShadow = {
 							id: 'polder-feature-3-2',
 							name: 'Graceful Retreat',
 							description: 'Your small size makes it easier for you to slip away from the fray.',
-							type: 'Bonus',
+							type: 'Бонус',
 							data: {
 								field: 'Відступ',
 								value: 1,
@@ -268,12 +268,12 @@ export const polderShadow = {
 		id: 'culture-polder',
 		name: 'Polder',
 		description: 'Urban, communal, creative.',
-		type: 'Ancestral',
+		type: 'Походження',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,
@@ -285,7 +285,7 @@ export const polderShadow = {
 			id: 'env-urban',
 			name: 'Urban',
 			description: 'An urban culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of urban cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -294,7 +294,7 @@ export const polderShadow = {
 				],
 				count: 1,
 				selected: [
-					'Conceal Object'
+					'Приховування предмета'
 				]
 			}
 		},
@@ -302,7 +302,7 @@ export const polderShadow = {
 			id: 'org-communal',
 			name: 'Communal',
 			description: 'A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures. Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -311,7 +311,7 @@ export const polderShadow = {
 				],
 				count: 1,
 				selected: [
-					'Alchemy'
+					'Алхімія'
 				]
 			}
 		},
@@ -319,18 +319,18 @@ export const polderShadow = {
 			id: 'up-creative',
 			name: 'Creative',
 			description: 'A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [
-					'Music',
-					'Perform'
+					'Музика',
+					'Виступ'
 				],
 				listOptions: [
 					'Ремесло'
 				],
 				count: 1,
 				selected: [
-					'Forgery'
+					'Фальшування'
 				]
 			}
 		}
@@ -358,7 +358,7 @@ export const polderShadow = {
 						id: 'shadow-stamina',
 						name: 'Витривалість',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 18,
@@ -372,7 +372,7 @@ export const polderShadow = {
 						id: 'shadow-recoveries',
 						name: 'Recoveries',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Recoveries',
 							value: 8,
@@ -386,7 +386,7 @@ export const polderShadow = {
 						id: 'shadow-resource',
 						name: 'Insight',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -410,7 +410,7 @@ export const polderShadow = {
 						id: 'shadow-1-1',
 						name: 'Intrigue Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -427,10 +427,10 @@ export const polderShadow = {
 						id: 'shadow-1-3',
 						name: 'Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [
-								'Criminal Underworld'
+								'Кримінальний світ'
 							],
 							listOptions: [
 								'Дослідження',
@@ -439,10 +439,10 @@ export const polderShadow = {
 							],
 							count: 5,
 							selected: [
-								'Alertness',
-								'Flirt',
-								'Gymnastics',
-								'Jump',
+								'Пильність',
+								'Флірт',
+								'Гімнастика',
+								'Стрибки',
 								'Брехня'
 							]
 						}
@@ -451,14 +451,14 @@ export const polderShadow = {
 						id: 'shadow-1-5',
 						name: 'Hesitation Is Weakness',
 						description: 'Keep up the attack. Never give them a moment’s grace.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'shadow-1-5',
 								name: 'Hesitation Is Weakness',
 								description: 'Keep up the attack. Never give them a moment’s grace.',
 								type: {
-									usage: 'Triggered Action',
+									usage: 'Тригерна дія',
 									free: true,
 									trigger: 'Another hero ends their turn. That hero can’t have used this ability to start their turn.',
 									time: '',
@@ -482,7 +482,7 @@ export const polderShadow = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'You take your turn after the triggering hero.'
 									}
 								],
@@ -511,13 +511,13 @@ export const polderShadow = {
 								{
 									id: 'kit-cloak-and-dagger',
 									name: 'Cloak and Dagger',
-									description: 'Providing throwable light weapons and light armor easily concealed by a cloak to confuse your enemies, the Cloak and Dagger kit makes you more mobile while increasing the effectiveness of your short-range strikes.',
+									description: 'Набір «Плащ і кинджал» дає вам метальну легку зброю та легку броню, які легко сховати під плащем, щоб заплутувати ворогів. Він робить вас рухливішими й підсилює ваші удари на короткій дистанції.',
 									type: '',
 									armor: [
-										'Light Armor'
+										'Легка броня'
 									],
 									weapon: [
-										'Light Weapon'
+										'Легка зброя'
 									],
 									stamina: 3,
 									speed: 2,
@@ -540,14 +540,14 @@ export const polderShadow = {
 											id: 'kit-cloak-and-dagger-signature',
 											name: 'Fade',
 											description: 'A stab, and a few quick, careful steps back.',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'kit-cloak-and-dagger-signature',
 													name: 'Fade',
 													description: 'A stab, and a few quick, careful steps back.',
 													type: {
-														usage: 'Main Action',
+														usage: 'Основна дія',
 														free: false,
 														trigger: '',
 														time: '',
@@ -591,9 +591,9 @@ export const polderShadow = {
 																	'Ловкість'
 																],
 																bonus: 0,
-																tier1: '2 + С or A damage; you shift 1 square',
-																tier2: '5 + С or A damage; you shift up to 2 squares',
-																tier3: '7 + С or A damage; you shift up to 3 squares'
+																tier1: '2 + С або Л шкоди; ви зміщуєтеся на 1 клітинку',
+																tier2: '5 + С або Л шкоди; ви зміщуєтеся до 2 клітинок',
+																tier3: '7 + С або Л шкоди; ви зміщуєтеся до 3 клітинок'
 															}
 														}
 													],
@@ -617,7 +617,7 @@ export const polderShadow = {
 						id: 'shadow-1-6',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 'signature',
 							source: {
@@ -637,7 +637,7 @@ export const polderShadow = {
 						id: 'shadow-1-7',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 3,
 							source: {
@@ -657,7 +657,7 @@ export const polderShadow = {
 						id: 'shadow-1-8',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 5,
 							source: {
@@ -682,7 +682,7 @@ export const polderShadow = {
 						id: 'shadow-2-1',
 						name: 'Exploration / Interpersonal / Intrigue Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Дослідження',
@@ -702,14 +702,14 @@ export const polderShadow = {
 						id: 'shadow-3-1',
 						name: 'Careful Observation',
 						description: 'A moment of focus leaves a foe firmly in your sights.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'shadow-3-1',
 								name: 'Careful Observation',
 								description: 'A moment of focus leaves a foe firmly in your sights.',
 								type: {
-									usage: 'Maneuver',
+									usage: 'Маневр',
 									free: false,
 									trigger: '',
 									time: '',
@@ -733,7 +733,7 @@ export const polderShadow = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'As long as you remain within distance of the target, maintain line of effect to them, and strike no other creature first, you gain a surge and an edge on the next strike you make against the assessed creature.'
 									}
 								],
@@ -752,7 +752,7 @@ export const polderShadow = {
 						id: 'shadow-3-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 7,
 							source: {
@@ -775,7 +775,7 @@ export const polderShadow = {
 						id: 'shadow-4-1a',
 						name: 'Characteristic Increase: Agility',
 						description: 'Your Agility score increases to 3',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -785,7 +785,7 @@ export const polderShadow = {
 						id: 'shadow-4-1b',
 						name: 'Characteristic Increase: Additional',
 						description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
@@ -793,7 +793,7 @@ export const polderShadow = {
 										id: 'shadow-4-1b-1',
 										name: 'Might',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Might',
 											value: 1
@@ -806,7 +806,7 @@ export const polderShadow = {
 										id: 'shadow-4-1b-2',
 										name: 'Reason',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Reason',
 											value: 1
@@ -819,7 +819,7 @@ export const polderShadow = {
 										id: 'shadow-4-1b-3',
 										name: 'Intuition',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Intuition',
 											value: 1
@@ -832,7 +832,7 @@ export const polderShadow = {
 										id: 'shadow-4-1b-4',
 										name: 'Presence',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Presence',
 											value: 1
@@ -849,28 +849,28 @@ export const polderShadow = {
 						id: 'shadow-4-2',
 						name: 'Keep It Down',
 						description: 'While conversing with any creature you share a language with, you can decide whether anyone else can perceive what you’re conveying, even while yelling.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'shadow-4-3a',
 						name: 'Night Watch',
 						description: 'Your sense for stealth shows those around you how to evade notice. While you are hidden, enemies take a bane on tests made to search for you or other hidden creatures within 10 squares of you.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'shadow-4-3b',
 						name: 'Night Watch',
 						description: 'A steely dagger from out of the blue knocks another weapon off course.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'shadow-4-3b',
 								name: 'Night Watch',
 								description: 'A steely dagger from out of the blue knocks another weapon off course.',
 								type: {
-									usage: 'Triggered Action',
+									usage: 'Тригерна дія',
 									free: false,
 									trigger: 'The target takes damage from another creature’s ability while you are hidden.',
 									time: '',
@@ -897,7 +897,7 @@ export const polderShadow = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'The target takes half the damage. You remain hidden.'
 									}
 								],
@@ -916,7 +916,7 @@ export const polderShadow = {
 						id: 'shadow-4-4',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -934,7 +934,7 @@ export const polderShadow = {
 						id: 'shadow-4-5',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -952,7 +952,7 @@ export const polderShadow = {
 						id: 'shadow-4-6',
 						name: 'Surge of Insight',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'deal-damage 2',
 							trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
@@ -971,7 +971,7 @@ export const polderShadow = {
 						id: 'shadow-5-1',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 9,
 							source: {
@@ -994,7 +994,7 @@ export const polderShadow = {
 						id: 'shadow-6-1',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1012,14 +1012,14 @@ export const polderShadow = {
 						id: 'shadow-6-2',
 						name: 'Umbral Form',
 						description: 'You lose control of yourself, becoming a shadow creature dripping with ash.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'shadow-6-2',
 								name: 'Umbral Form',
 								description: 'You lose control of yourself, becoming a shadow creature dripping with ash.',
 								type: {
-									usage: 'Maneuver',
+									usage: 'Маневр',
 									free: false,
 									trigger: '',
 									time: '',
@@ -1030,35 +1030,35 @@ export const polderShadow = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'This transformation lasts until the end of the encounter, until you are dying, or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- You can automatically climb at full speed while moving.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- Enemies’ spaces don’t count as difficult terrain for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- If you end your turn with cover or concealment from another creature, you are automatically hidden from that creature.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- You gain 1 surge at the start of each of your turns.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- You have corruption immunity equal to 5 + your level.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- Creatures gain an edge on strikes against you.'
 									},
 									{
-										type: 'text',
+										type: 'Текст',
 										text: '- You take a bane on Presence tests made to interact with other creatures.'
 									}
 								],
@@ -1082,7 +1082,7 @@ export const polderShadow = {
 						id: 'shadow-7-1a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1092,7 +1092,7 @@ export const polderShadow = {
 						id: 'shadow-7-1b',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1102,7 +1102,7 @@ export const polderShadow = {
 						id: 'shadow-7-1c',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1112,7 +1112,7 @@ export const polderShadow = {
 						id: 'shadow-7-1d',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1122,7 +1122,7 @@ export const polderShadow = {
 						id: 'shadow-7-1e',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1132,7 +1132,7 @@ export const polderShadow = {
 						id: 'shadow-7-2',
 						name: 'Keen Insight',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
 							trigger: 'Start of your turn',
@@ -1146,7 +1146,7 @@ export const polderShadow = {
 						id: 'shadow-7-3',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1164,14 +1164,14 @@ export const polderShadow = {
 						id: 'shadow-7-4',
 						name: 'Careful Observation Improvement',
 						description: 'You can target two creatures simultaneously with your Careful Observation ability, observing both simultaneously. Making a strike against one target doesn’t end your observation of the other target.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'shadow-7-5',
 						name: 'Ventriloquist',
 						description: 'Whenever you communicate, you can throw your voice so that it seems to originate from a creature or object within 10 squares. If you are hidden, talking this way doesn’t cause you to be revealed.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -1183,7 +1183,7 @@ export const polderShadow = {
 						id: 'shadow-8-1',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1201,7 +1201,7 @@ export const polderShadow = {
 						id: 'shadow-8-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 11,
 							source: {
@@ -1223,8 +1223,8 @@ export const polderShadow = {
 					{
 						id: 'shadow-9-1',
 						name: 'Gloom Squad',
-						description: '\nAt the start of each of your turns, you can forgo gaining insight to create 1d6 clones of yourself in unoccupied adjacent spaces. A clone acts on your turn and uses your statistics, except they have 1 Stamina. They are affected by any conditions and effects on you, and last until the start of your next turn. A clone doesn’t have insight and can’t use the Careful Observation ability, the Umbral Form feature, or any triggered actions. On their turn, a clone has a move action, a maneuver, and a main action that they can use only to make a free strike. While making a free strike, a clone must choose targets that you or another clone aren’t also striking.\n\nOutside of combat, you can have one clone active for every 2 Victories you have. If a clone is destroyed, you must wait 1 hour before creating another one.',
-						type: 'Text',
+						description: '\nAt the start of each of your turns, you can forgo gaining insight to create 1d6 clones of yourself in unoccupied adjacent spaces. A clone acts on your turn and uses your statistics, except they have 1 Stamina. They are affected by any conditions and effects on you, and last until the start of your next turn. A clone doesn’t have insight and can’t use the Careful Observation ability, the Umbral Form feature, or any тригерні дії. On their turn, a clone has a дія руху, a маневр, and a основна дія that they can use only to make a free strike. While making a free strike, a clone must choose targets that you or another clone aren’t also striking.\n\nOutside of combat, you can have one clone active for every 2 Victories you have. If a clone is destroyed, you must wait 1 hour before creating another one.',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -1236,7 +1236,7 @@ export const polderShadow = {
 						id: 'shadow-10-1a',
 						name: 'Characteristic Increase: Agility',
 						description: 'Your Agility score increases to 5',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1246,7 +1246,7 @@ export const polderShadow = {
 						id: 'shadow-10-1b',
 						name: 'Characteristic Increase: Additional',
 						description: 'Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
@@ -1254,7 +1254,7 @@ export const polderShadow = {
 										id: 'shadow-10-1b-1',
 										name: 'Might',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Might',
 											value: 1
@@ -1267,7 +1267,7 @@ export const polderShadow = {
 										id: 'shadow-10-1b-2',
 										name: 'Reason',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Reason',
 											value: 1
@@ -1280,7 +1280,7 @@ export const polderShadow = {
 										id: 'shadow-10-1b-3',
 										name: 'Intuition',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Intuition',
 											value: 1
@@ -1293,7 +1293,7 @@ export const polderShadow = {
 										id: 'shadow-10-1b-4',
 										name: 'Presence',
 										description: '',
-										type: 'Characteristic Bonus',
+										type: 'Бонус характеристики',
 										data: {
 											characteristic: 'Presence',
 											value: 1
@@ -1310,7 +1310,7 @@ export const polderShadow = {
 						id: 'shadow-10-2',
 						name: 'Death Pool',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'deal-damage 2',
 							trigger: 'The first time each combat round that you deal damage incorporating 1 or more surges',
@@ -1325,7 +1325,7 @@ export const polderShadow = {
 						id: 'shadow-10-3',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1343,7 +1343,7 @@ export const polderShadow = {
 						id: 'shadow-10-4',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1361,21 +1361,21 @@ export const polderShadow = {
 						id: 'shadow-10-5',
 						name: 'Careful Observation Improvement',
 						description: 'You can target three creatures simultaneously with your Careful Observation ability.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'shadow-10-6',
 						name: 'Improved Umbral Form',
 						description: '\nYou gain full control over the shadow creature you become with your Umbral Form feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you concealment while in this form, and creatures no longer gain an edge on strikes against you.\n\nWhile you are in your umbral form, you can spend 1 uninterrupted minute concentrating on a location where you’ve been before. At the end of that minute, you and each willing creature of your choice within 10 squares of you can teleport to unoccupied spaces of your choice within that location. Each creature who teleports this way is invisible for 1 hour or until they use an ability.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'shadow-10-7',
 						name: 'Subterfuge',
-						description: '\nYou can spend subterfuge on your abilities as if it were insight. Additionally, you can spend subterfuge to take additional maneuvers on your turn. You can use one maneuver for each subterfuge you spend.\n\nSubterfuge remains until you spend it.',
-						type: 'Heroic Resource',
+						description: '\nYou can spend subterfuge on your abilities as if it were insight. Additionally, you can spend subterfuge to take additional маневри on your turn. You can use one маневр for each subterfuge you spend.\n\nSubterfuge remains until you spend it.',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'epic',
 							gains: [
@@ -1399,7 +1399,7 @@ export const polderShadow = {
 				name: 'Gasping in Pain',
 				description: 'Your precise strikes let your allies take advantage of a target’s agony.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1433,13 +1433,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 + A damage',
-							tier2: '5 + A damage',
-							tier3: '8 + A damage; I < [сильний], prone'
+							tier1: '3 + Л шкоди',
+							tier2: '5 + Л шкоди',
+							tier3: '8 + Л шкоди; І < [сильний], розпластаний'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'One ally of your choice within 5 squares of the target gains 1 surge.'
 					}
 				],
@@ -1457,7 +1457,7 @@ export const polderShadow = {
 				name: 'I Work Better Alone',
 				description: 'It’s better, just you and me. Isn’t it?',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1500,13 +1500,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 + A damage',
-							tier2: '6 + A damage',
-							tier3: '9 + A damage'
+							tier1: '3 + Л шкоди',
+							tier2: '6 + Л шкоди',
+							tier3: '9 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'If the target has none of your allies adjacent to them, you gain 1 surge before making the power roll.'
 					}
 				],
@@ -1524,7 +1524,7 @@ export const polderShadow = {
 				name: 'Teamwork Has Its Place',
 				description: 'You attack an enemy as an ally exposes their weakness.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1567,13 +1567,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 + A damage',
-							tier2: '6 + A damage',
-							tier3: '9 + A damage'
+							tier1: '3 + Л шкоди',
+							tier2: '6 + Л шкоди',
+							tier3: '9 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'If any ally is adjacent to the target, you gain 1 surge before making the power roll.'
 					}
 				],
@@ -1591,7 +1591,7 @@ export const polderShadow = {
 				name: 'You Were Watching The Wrong One',
 				description: 'They can’t watch both of you at once.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1625,13 +1625,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 + A damage',
-							tier2: '5 + A damage',
-							tier3: '8 + A damage'
+							tier1: '3 + Л шкоди',
+							tier2: '5 + Л шкоди',
+							tier3: '8 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'As long as you have one or more allies within 5 squares of the target, you gain 1 surge. If you are flanking the target when you use this ability, choose one ally who is flanking with you. That ally also gains 1 surge.'
 					}
 				],
@@ -1649,7 +1649,7 @@ export const polderShadow = {
 				name: 'Disorienting Strike',
 				description: 'Your attack leaves them reeling, allowing you to follow up.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1683,13 +1683,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; slide 2',
-							tier2: '6 + A damage; slide 3',
-							tier3: '10 + A damage; slide 5'
+							tier1: '4 + Л шкоди; зсунути на 2',
+							tier2: '6 + Л шкоди; зсунути на 3',
+							tier3: '10 + Л шкоди; зсунути на 5'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift into any square the target leaves when you slide them.'
 					}
 				],
@@ -1707,7 +1707,7 @@ export const polderShadow = {
 				name: 'Eviscerate',
 				description: 'You leave your foe bleeding out after a devastating attack.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1750,9 +1750,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; Л < [слабкий], bleeding (save ends)',
-							tier2: '6 + A damage; Л < [середній], bleeding (save ends)',
-							tier3: '10 + A damage; Л < [сильний], bleeding (save ends)'
+							tier1: '4 + Л шкоди; Л < [слабкий], кровотеча (рят. кидок закінчує)',
+							tier2: '6 + Л шкоди; Л < [середній], кровотеча (рят. кидок закінчує)',
+							tier3: '10 + Л шкоди; Л < [сильний], кровотеча (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -1770,7 +1770,7 @@ export const polderShadow = {
 				name: 'Get In Get Out',
 				description: 'Move unexpectedly, strike fast, and be gone!',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1804,13 +1804,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '5 + A damage',
-							tier2: '8 + A damage',
-							tier3: '11 + A damage'
+							tier1: '5 + Л шкоди',
+							tier2: '8 + Л шкоди',
+							tier3: '11 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift up to your speed, dividing that movement before or after your strike as desired.'
 					}
 				],
@@ -1828,7 +1828,7 @@ export const polderShadow = {
 				name: 'Two Throats At Once',
 				description: 'A bargain.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1871,9 +1871,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 damage',
-							tier2: '6 damage',
-							tier3: '10 damage'
+							tier1: '4 шкоди',
+							tier2: '6 шкоди',
+							tier3: '10 шкоди'
 						}
 					}
 				],
@@ -1891,7 +1891,7 @@ export const polderShadow = {
 				name: 'Coup de Grâce',
 				description: 'Your blade might be the last thing they see.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1934,9 +1934,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '2d6 + 7 + A damage',
-							tier2: '2d6 + 11 + A damage',
-							tier3: '2d6 + 16 + A damage'
+							tier1: '2d6 + 7 + Л шкоди',
+							tier2: '2d6 + 11 + Л шкоди',
+							tier3: '2d6 + 16 + Л шкоди'
 						}
 					}
 				],
@@ -1954,7 +1954,7 @@ export const polderShadow = {
 				name: 'One Hundred Throats',
 				description: 'As you move across the battlefield, every foe within reach feels your wrath.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1981,7 +1981,7 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You shift up to your speed and make one power roll that targets up to three enemies who came adjacent to you during the move.'
 					},
 					{
@@ -1991,9 +1991,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 damage',
-							tier2: '6 damage',
-							tier3: '9 damage'
+							tier1: '3 шкоди',
+							tier2: '6 шкоди',
+							tier3: '9 шкоди'
 						}
 					}
 				],
@@ -2011,7 +2011,7 @@ export const polderShadow = {
 				name: 'Setup',
 				description: 'Your friends will thank you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2045,9 +2045,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; Р < [слабкий], the target has damage weakness 5 (save ends)',
-							tier2: '9 + A damage; Р < [середній], the target has damage weakness 5 (save ends)',
-							tier3: '13 + A damage; Р < [сильний], the target has damage weakness 5 (save ends)'
+							tier1: '6 + Л шкоди; Р < [слабкий], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+							tier2: '9 + Л шкоди; Р < [середній], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+							tier3: '13 + Л шкоди; Р < [сильний], ціль має вразливість до шкоди 5 (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2065,7 +2065,7 @@ export const polderShadow = {
 				name: 'Shadowstrike',
 				description: 'They have no idea what the college taught you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2093,7 +2093,7 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You use a strike signature ability twice.'
 					}
 				],
@@ -2111,7 +2111,7 @@ export const polderShadow = {
 				name: 'Dancer',
 				description: 'You enter a flow state that makes you nearly impossible to pin down.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2135,8 +2135,8 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, whenever an enemy moves or is force moved adjacent to you or damages you, you can take the Disengage move action as a free triggered action.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, whenever an enemy moves or is force moved adjacent to you or damages you, you can take the Disengage дія руху as a безкоштовна тригерна дія.'
 					}
 				],
 				preEffect: '',
@@ -2153,7 +2153,7 @@ export const polderShadow = {
 				name: 'Misdirecting Strike',
 				description: 'Why are you looking at ME?!',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2196,13 +2196,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '9 + A damage',
-							tier2: '13 + A damage',
-							tier3: '18 + A damage'
+							tier1: '9 + Л шкоди',
+							tier2: '13 + Л шкоди',
+							tier3: '18 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target is taunted by a willing ally within 5 squares of you until the end of the target’s next turn.'
 					}
 				],
@@ -2220,7 +2220,7 @@ export const polderShadow = {
 				name: 'Pinning Shot',
 				description: 'One missile - placed well and placed hard.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2254,9 +2254,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '8 + A damage; Л < [слабкий], restrained (save ends)',
-							tier2: '12 + A damage; Л < [середній], restrained (save ends)',
-							tier3: '16 + A damage; Л < [сильний], restrained (save ends)'
+							tier1: '8 + Л шкоди; Л < [слабкий], скутий (рят. кидок закінчує)',
+							tier2: '12 + Л шкоди; Л < [середній], скутий (рят. кидок закінчує)',
+							tier3: '16 + Л шкоди; Л < [сильний], скутий (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2274,7 +2274,7 @@ export const polderShadow = {
 				name: 'Staggering Blow',
 				description: 'There’s no recovering from this.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2317,9 +2317,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '7 + A damage; M < [слабкий], slowed (save ends)',
-							tier2: '11 + A damage; M < [середній], prone and can’t stand (save ends)',
-							tier3: '16 + A damage; M < [сильний], prone and can’t stand (save ends)'
+							tier1: '7 + Л шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '11 + Л шкоди; С < [середній], розпластаний і не може встати (рят. кидок закінчує)',
+							tier3: '16 + Л шкоди; С < [сильний], розпластаний і не може встати (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2337,7 +2337,7 @@ export const polderShadow = {
 				name: 'Blackout',
 				description: 'You cause a plume of shadow to erupt from your eyes and create a cloud of darkness.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2364,8 +2364,8 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to shift to a new location within the area and make a free strike against them.'
+						type: 'Текст',
+						text: 'A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a безкоштовна тригерна дія to shift to a new location within the area and make a free strike against them.'
 					}
 				],
 				preEffect: '',
@@ -2382,7 +2382,7 @@ export const polderShadow = {
 				name: 'Into the Shadows',
 				description: 'You sweep your foe off their feet and plunge them into absolute darkness.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2411,7 +2411,7 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a power roll upon your return.'
 					},
 					{
@@ -2421,9 +2421,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '8 + A corruption damage',
-							tier2: '13 + A corruption damage',
-							tier3: '17 + A corruption damage'
+							tier1: '8 + Л шкоди від скверни',
+							tier2: '13 + Л шкоди від скверни',
+							tier3: '17 + Л шкоди від скверни'
 						}
 					}
 				],
@@ -2441,7 +2441,7 @@ export const polderShadow = {
 				name: 'Shadowfall',
 				description: 'You vanish. They fall. You reappear.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2475,13 +2475,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 damage',
-							tier2: '14 damage',
-							tier3: '20 damage'
+							tier1: '10 шкоди',
+							tier2: '14 шкоди',
+							tier3: '20 шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You disappear before making the power roll. After the power roll is resolved, you appear in the first unoccupied space at the far end of the line.'
 					}
 				],
@@ -2499,7 +2499,7 @@ export const polderShadow = {
 				name: 'You Talk Too Much',
 				description: 'Silence is a virtue. A knife pinning their mouth shut is the next best thing.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2542,13 +2542,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; П < [слабкий], dazed (save ends)',
-							tier2: '15 + A damage; П < [середній], dazed (save ends)',
-							tier3: '21 + A damage; П < [сильний], dazed (save ends)'
+							tier1: '10 + Л шкоди; П < [слабкий], приголомшений (рят. кидок закінчує)',
+							tier2: '15 + Л шкоди; П < [середній], приголомшений (рят. кидок закінчує)',
+							tier3: '21 + Л шкоди; П < [сильний], приголомшений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target can’t communicate with anyone until the end of the encounter.'
 					}
 				],
@@ -2566,7 +2566,7 @@ export const polderShadow = {
 				name: 'Assassinate',
 				description: 'A practiced attack will instantly kill an already weakened foe.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2600,13 +2600,13 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '12 + A damage',
-							tier2: '18 + A damage',
-							tier3: '24 + A damage'
+							tier1: '12 + Л шкоди',
+							tier2: '18 + Л шкоди',
+							tier3: '24 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A target who is not a minion, leader, or solo creature and who is winded after taking this damage is reduced to 0 Stamina.'
 					}
 				],
@@ -2624,7 +2624,7 @@ export const polderShadow = {
 				name: 'Shadowgrasp',
 				description: 'The shadows around you give way, allowing the shadow creature within you to grasp at your foes.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2657,9 +2657,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '11 corruption damage; Л < [слабкий] , restrained (save ends)',
-							tier2: '16 corruption damage; Л < [середній] , restrained (save ends)',
-							tier3: '21 corruption damage; Л < [сильний] , restrained (save ends)'
+							tier1: '11 шкоди від скверни; Л < [слабкий] , скутий (рят. кидок закінчує)',
+							tier2: '16 шкоди від скверни; Л < [середній] , скутий (рят. кидок закінчує)',
+							tier3: '21 шкоди від скверни; Л < [сильний] , скутий (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2677,7 +2677,7 @@ export const polderShadow = {
 				name: 'Speed of Shadows',
 				description: 'You make multiple strikes against a foe before they even notice they’re dead.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2703,7 +2703,7 @@ export const polderShadow = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can use a strike signature ability four times, use a strike signature ability that gains an edge three times, or use a strike signature ability that has a double edge twice. You can shift up to 2 squares between each use.'
 					}
 				],
@@ -2721,7 +2721,7 @@ export const polderShadow = {
 				name: 'They Always Line Up',
 				description: 'You fire a projectile so fast that it passes through a line of foes, hamstringing them.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2755,9 +2755,9 @@ export const polderShadow = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '12 damage; M < [слабкий] , slowed (save ends)',
-							tier2: '18 damage; M < [середній] , slowed (save ends)',
-							tier3: '24 damage; M < [сильний] , slowed (save ends)'
+							tier1: '12 шкоди; С < [слабкий] , сповільнений (рят. кидок закінчує)',
+							tier2: '18 шкоди; С < [середній] , сповільнений (рят. кидок закінчує)',
+							tier3: '24 шкоди; С < [сильний] , сповільнений (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2784,7 +2784,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-1-1',
 								name: 'Lore Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -2800,14 +2800,14 @@ export const polderShadow = {
 								id: 'shadow-sub-1-1-2',
 								name: 'Black Ash Teleport',
 								description: 'In a swirl of black ash, you step from one place to another.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-1-1-2',
 										name: 'Black Ash Teleport',
 										description: 'In a swirl of black ash, you step from one place to another.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -2833,8 +2833,8 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
-												text: 'You teleport up to 5 squares. If you have concealment or cover at your destination, you can use the Hide maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.'
+												type: 'Текст',
+												text: 'You teleport up to 5 squares. If you have concealment or cover at your destination, you can use the Hide маневр even if you are observed. If you successfully hide using this маневр, you gain 1 surge.'
 											},
 											{
 												type: 'field',
@@ -2859,14 +2859,14 @@ export const polderShadow = {
 								id: 'shadow-sub-1-1-3',
 								name: 'In All This Confusion',
 								description: 'You vanish in a plume of black smoke to avoid danger.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-1-1-3',
 										name: 'In All This Confusion',
 										description: 'You vanish in a plume of black smoke to avoid danger.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'You take damage.',
 											time: '',
@@ -2892,7 +2892,7 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You halve the damage, then can teleport up to 4 squares after the triggering effect resolves.'
 											},
 											{
@@ -2923,7 +2923,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-2-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -2931,14 +2931,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-2-1a',
 												name: 'In a Puff of Ash',
 												description: 'You enchant a strike with your teleportation magic.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-2-1a',
 														name: 'In a Puff of Ash',
 														description: 'You enchant a strike with your teleportation magic.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -2982,9 +2982,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '6 + A damage; you can teleport the target 1 square',
-																	tier2: '10 + A damage; you can teleport the target up to 3 squares',
-																	tier3: '14 + A damage; you can teleport the target up to 5 squares'
+																	tier1: '6 + Л шкоди; ви можете телепортувати ціль на 1 клітинку',
+																	tier2: '10 + Л шкоди; ви можете телепортувати ціль до 3 клітинок',
+																	tier3: '14 + Л шкоди; ви можете телепортувати ціль до 5 клітинок'
 																}
 															}
 														],
@@ -3006,14 +3006,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-2-1b',
 												name: 'Too Slow',
 												description: 'Your foe made a big mistake.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-2-1b',
 														name: 'Too Slow',
 														description: 'Your foe made a big mistake.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'You use your In All This Confusion ability.',
 															time: '',
@@ -3042,7 +3042,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You ignore any effects associated with the damage that triggered your In All This Confusion ability. Before you teleport, you can make a free strike against a creature who damaged you to trigger In All This Confusion. After you teleport, you can spend a Recovery.'
 															}
 														],
@@ -3068,7 +3068,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-2-2',
 								name: 'Burning Ash',
 								description: 'The ash you leave behind burns your foes. The first time on a turn that you use a shadow ability to teleport away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3087,8 +3087,8 @@ export const polderShadow = {
 							{
 								id: 'shadow-sub-1-5-1',
 								name: 'Trail of Cinders',
-								description: '\nWhenever you reduce a non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your Black Ash Teleport ability.\n\nAdditionally, you can now bring an adjacent willing creature along with you whenever you use a shadow ability to teleport. The creature appears in an unoccupied space adjacent to the space into which you teleported. If no such space exists, they can’t teleport with you.',
-								type: 'Text',
+								description: '\nWhenever you reduce a non-minion creature to 0 Stamina, you can immediately use a безкоштовний маневр to use your Black Ash Teleport ability.\n\nAdditionally, you can now bring an adjacent willing creature along with you whenever you use a shadow ability to teleport. The creature appears in an unoccupied space adjacent to the space into which you teleported. If no such space exists, they can’t teleport with you.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3100,7 +3100,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3108,14 +3108,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-6-1a',
 												name: 'Black Ash Eruption',
 												description: 'Your attack produces a cloud of black ash that launches an enemy into the air.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-6-1a',
 														name: 'Black Ash Eruption',
 														description: 'Your attack produces a cloud of black ash that launches an enemy into the air.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3150,13 +3150,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '3 + A damage; vertical push 5',
-																	tier2: '6 + A damage; vertical push 10',
-																	tier3: '9 + A damage; vertical push 15'
+																	tier1: '3 + Л шкоди; вертикально відштовхнути на 5',
+																	tier2: '6 + Л шкоди; вертикально відштовхнути на 10',
+																	tier3: '9 + Л шкоди; вертикально відштовхнути на 15'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'A creature force moved by this ability must be moved straight upward.'
 															}
 														],
@@ -3178,14 +3178,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-6-1b',
 												name: 'Cinderstorm',
 												description: 'You teleport your friends in a burst of ash and fire.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-6-1b',
 														name: 'Cinderstorm',
 														description: 'You teleport your friends in a burst of ash and fire.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3211,8 +3211,8 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'Each target can teleport up to 5 squares. For each target in addition to you who teleports away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in concealment or cover can use the Hide maneuver even if they are observed.'
+																type: 'Текст',
+																text: 'Each target can teleport up to 5 squares. For each target in addition to you who teleports away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in concealment or cover can use the Hide маневр even if they are observed.'
 															}
 														],
 														preEffect: '',
@@ -3246,7 +3246,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-8-1',
 								name: 'Cinder Step',
 								description: 'Whenever you willingly move, you can teleport. When you teleport this way, it counts as using a shadow ability for the purpose of using your Burning Ash and Trail of Cinders features.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3258,7 +3258,7 @@ export const polderShadow = {
 								id: 'shadow-sub-1-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3266,14 +3266,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-9-1a',
 												name: 'Cacophony of Cinders',
 												description: 'You tumble through the battle, stabbing foes and teleporting allies.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-9-1a',
 														name: 'Cacophony of Cinders',
 														description: 'You tumble through the battle, stabbing foes and teleporting allies.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3301,7 +3301,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You shift up to twice your speed, making one power roll that targets each creature you come adjacent to during the shift.'
 															},
 															{
@@ -3311,9 +3311,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: 'An enemy takes 6 damage; an ally can teleport up to 3 squares.',
-																	tier2: 'An enemy takes 10 damage; an ally can teleport up to 5 squares.',
-																	tier3: 'An enemy takes 14 damage; an ally can teleport up to 7 squares.'
+																	tier1: 'Ворог отримує 6 шкоди; союзник може телепортуватися до 3 клітинок.',
+																	tier2: 'Ворог отримує 10 шкоди; союзник може телепортуватися до 5 клітинок.',
+																	tier3: 'Ворог отримує 14 шкоди; союзник може телепортуватися до 7 клітинок.'
 																}
 															}
 														],
@@ -3335,14 +3335,14 @@ export const polderShadow = {
 												id: 'shadow-sub-1-9-1b',
 												name: 'Demon Door',
 												description: 'You create a temporary portal to allow a massive demonic hand to reach through.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-1-9-1b',
 														name: 'Demon Door',
 														description: 'You create a temporary portal to allow a massive demonic hand to reach through.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3377,13 +3377,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '13 + A corruption damage; push 3',
-																	tier2: '18 + A corruption damage; push 5',
-																	tier3: '25 + A corruption damage; push 7'
+																	tier1: '13 + Л шкоди від скверни; відштовхнути на 3',
+																	tier2: '18 + Л шкоди від скверни; відштовхнути на 5',
+																	tier3: '25 + Л шкоди від скверни; відштовхнути на 7'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'On a critical hit, the target is grabbed by the demon and pulled through the portal before it closes, never to be seen again.'
 															}
 														],
@@ -3427,7 +3427,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-1-1',
 								name: 'Crafting Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3435,7 +3435,7 @@ export const polderShadow = {
 									],
 									count: 1,
 									selected: [
-										'Alchemy'
+										'Алхімія'
 									]
 								}
 							},
@@ -3443,14 +3443,14 @@ export const polderShadow = {
 								id: 'shadow-sub-2-1-2',
 								name: 'Coat The Blade',
 								description: 'A little poison goes a long way.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-2-1-2',
 										name: 'Coat The Blade',
 										description: 'A little poison goes a long way.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -3474,7 +3474,7 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You gain two surges. Additionally, whenever you use a surge before the end of the encounter, you can choose to have it deal poison damage.'
 											},
 											{
@@ -3499,22 +3499,22 @@ export const polderShadow = {
 							{
 								id: 'shadow-sub-2-1-3',
 								name: 'Smoke Bomb',
-								description: 'You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the Hide maneuver even if you are observed and don’t initially have cover or concealment. When you do so, you can shift a number of squares equal to your Agility score. If you end this movement with cover or concealment, you are automatically hidden.',
-								type: 'Text',
+								description: 'You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the Hide маневр even if you are observed and don’t initially have cover or concealment. When you do so, you can shift a number of squares equal to your Agility score. If you end this movement with cover or concealment, you are automatically hidden.',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'shadow-sub-2-1-4',
 								name: 'Defensive Roll',
 								description: 'When an enemy attacks, you roll with the impact to reduce the harm.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-2-1-4',
 										name: 'Defensive Roll',
 										description: 'When an enemy attacks, you roll with the impact to reduce the harm.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'Another creature damages you.',
 											time: '',
@@ -3538,8 +3538,8 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
-												text: 'You take half the triggering damage, then can shift up to 2 squares after the triggering effect resolves. If you end this shift with concealment or cover, you can use the Hide maneuver even if you are observed.'
+												type: 'Текст',
+												text: 'You take half the triggering damage, then can shift up to 2 squares after the triggering effect resolves. If you end this shift with concealment or cover, you can use the Hide маневр even if you are observed.'
 											},
 											{
 												type: 'field',
@@ -3569,7 +3569,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-2-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3577,14 +3577,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-2-1a',
 												name: 'Sticky Bomb',
 												description: 'Explosives are best when they’re attached to an enemy.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-2-1a',
 														name: 'Sticky Bomb',
 														description: 'Explosives are best when they’re attached to an enemy.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3610,8 +3610,8 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'You attach a small bomb to a creature. If you are hidden from the creature, they don’t notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don’t, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a power roll targeting each enemy within 2 squares of it.'
+																type: 'Текст',
+																text: 'You attach a small bomb to a creature. If you are hidden from the creature, they don’t notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a основна дія. If they don’t, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a power roll targeting each enemy within 2 squares of it.'
 															},
 															{
 																type: 'roll',
@@ -3620,9 +3620,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '4 + A fire damage',
-																	tier2: '7 + A fire damage',
-																	tier3: '11 + A fire damage'
+																	tier1: '4 + Л вогняної шкоди',
+																	tier2: '7 + Л вогняної шкоди',
+																	tier3: '11 + Л вогняної шкоди'
 																}
 															}
 														],
@@ -3644,14 +3644,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-2-1b',
 												name: 'Stink Bomb',
 												description: 'Putrid yellow gas explodes from a bomb you toss.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-2-1b',
 														name: 'Stink Bomb',
 														description: 'Putrid yellow gas explodes from a bomb you toss.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3684,14 +3684,14 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '2 poison damage',
-																	tier2: '5 poison damage',
-																	tier3: '7 poison damage'
+																	tier1: '2 отруйної шкоди',
+																	tier2: '5 отруйної шкоди',
+																	tier3: '7 отруйної шкоди'
 																}
 															},
 															{
-																type: 'text',
-																text: 'The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < [середній] is weakened (save ends).'
+																type: 'Текст',
+																text: 'The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has С < [середній] is weakened (save ends).'
 															}
 														],
 														preEffect: '',
@@ -3716,7 +3716,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-2-2',
 								name: 'Trained Assassin',
 								description: 'You know just where to cut your enemies. Whenever you make a strike that has no bane or double bane, and that incorporates 1 or more surges, you gain 1 additional surge that you can use only on that strike.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3736,7 +3736,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-5-1',
 								name: 'Volatile Reagents',
 								description: '\nWhenever you take damage, each enemy adjacent to you takes fire, acid, or poison damage (your choice) equal to your Agility score.\n\nAdditionally, your Defensive Roll ability now allows you to shift up to 5 squares, including shifting vertically. If you don’t end this shift on solid ground and are not flying, you fall.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3748,7 +3748,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3756,14 +3756,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-6-1a',
 												name: 'One Vial Makes You Better',
 												description: 'A well-timed throw of a potion will keep your allies in the fight.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-6-1a',
 														name: 'One Vial Makes You Better',
 														description: 'A well-timed throw of a potion will keep your allies in the fight.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3789,8 +3789,8 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: '\nYou ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.\n\nA creature who drinks the potion can spend up to 2 Recoveries, and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.'
+																type: 'Текст',
+																text: '\nYou ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable маневр to consume it later. The potion loses its potency at the end of the encounter.\n\nA creature who drinks the potion can spend up to 2 Recoveries, and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.'
 															}
 														],
 														preEffect: '',
@@ -3811,14 +3811,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-6-1b',
 												name: 'One Vial Makes You Faster',
 												description: 'Each ally who catches a potion you throw can take the battle to the next level.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-6-1b',
 														name: 'One Vial Makes You Faster',
 														description: 'Each ally who catches a potion you throw can take the battle to the next level.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3844,8 +3844,8 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: '\nYou ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.\n\nA creature who drinks the potion receives benefits based on your power roll.'
+																type: 'Текст',
+																text: '\nYou ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don’t drink the potion right away, they must use the Use Consumable маневр to consume it later. The potion loses its potency at the end of the encounter.\n\nA creature who drinks the potion receives benefits based on your power roll.'
 															},
 															{
 																type: 'roll',
@@ -3854,9 +3854,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: 'The creature’s speed is increased by 2 until the end of the encounter.',
-																	tier2: 'The creature can fly until the end of the encounter.',
-																	tier3: 'The creature turns invisible until the end of their next turn.'
+																	tier1: 'Швидкість істоти збільшується на 2 до кінця сутички.',
+																	tier2: 'Істота може літати до кінця сутички.',
+																	tier3: 'Істота стає невидимою до кінця свого наступного ходу.'
 																}
 															}
 														],
@@ -3891,21 +3891,21 @@ export const polderShadow = {
 								id: 'shadow-sub-2-8-1',
 								name: 'Time Bomb',
 								description: 'You have damage immunity against area abilities and effects equal to your Agility score.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'shadow-sub-2-8-2',
 								name: 'Time Bomb',
 								description: 'The longer it cooks, the bigger the boom.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-2-8-2',
 										name: 'Time Bomb',
 										description: 'The longer it cooks, the bigger the boom.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: true,
 											trigger: '',
 											time: '',
@@ -3932,7 +3932,7 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: '\nEach target takes acid, fire, or poison damage (your choice) equal to your Agility score.\n\nFor each combat round that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 surge that must be used with this ability. After using the ability or at the end of the encounter, its area and surges are reset.'
 											},
 											{
@@ -3963,7 +3963,7 @@ export const polderShadow = {
 								id: 'shadow-sub-2-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3971,14 +3971,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-9-1a',
 												name: 'Chain Reaction',
 												description: 'One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-9-1a',
 														name: 'Chain Reaction',
 														description: 'One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4004,7 +4004,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Each enemy within 3 squares of the target who is not currently targeted by this ability also becomes targeted by this ability. This effect continues until there are no more available targets. The ability deals acid, fire, or poison damage (your choice).'
 															},
 															{
@@ -4014,9 +4014,9 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '7 damage',
-																	tier2: '10 damage',
-																	tier3: '15 damage'
+																	tier1: '7 шкоди',
+																	tier2: '10 шкоди',
+																	tier3: '15 шкоди'
 																}
 															}
 														],
@@ -4038,14 +4038,14 @@ export const polderShadow = {
 												id: 'shadow-sub-2-9-1b',
 												name: 'To the Stars',
 												description: 'You attach your most potent explosive to your foe. Under less pressing circumstances, you’re sure you could launch them into orbit.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-2-9-1b',
 														name: 'To the Stars',
 														description: 'You attach your most potent explosive to your foe. Under less pressing circumstances, you’re sure you could launch them into orbit.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4087,13 +4087,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '4 + A fire damage; vertical push 8',
-																	tier2: '7 + A fire damage; vertical push 10',
-																	tier3: '11 + A fire damage; vertical push 15'
+																	tier1: '4 + Л вогняної шкоди; вертикально відштовхнути на 8',
+																	tier2: '7 + Л вогняної шкоди; вертикально відштовхнути на 10',
+																	tier3: '11 + Л вогняної шкоди; вертикально відштовхнути на 15'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The ground beneath a 3-cube area around the target’s starting position is difficult terrain.'
 															}
 														],
@@ -4137,7 +4137,7 @@ export const polderShadow = {
 								id: 'shadow-sub-3-1-1',
 								name: 'Interpersonal Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -4153,14 +4153,14 @@ export const polderShadow = {
 								id: 'shadow-sub-3-1-2',
 								name: 'I’m No Threat',
 								description: 'Taking on the illusory countenance of another creature gives you an advantage on subterfuge.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-3-1-2',
 										name: 'I’m No Threat',
 										description: 'Taking on the illusory countenance of another creature gives you an advantage on subterfuge.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -4186,8 +4186,8 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
-												text: '\nYou envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the Disengage move action, you gain a +1 bonus to the distance you can shift.\n\nThe illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 surge.'
+												type: 'Текст',
+												text: '\nYou envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the Disengage дія руху, you gain a +1 bonus to the distance you can shift.\n\nThe illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 surge.'
 											},
 											{
 												type: 'field',
@@ -4212,14 +4212,14 @@ export const polderShadow = {
 								id: 'shadow-sub-3-1-3',
 								name: 'Clever Trick',
 								description: 'You sow a moment of confusion in combat, to your enemy’s peril.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'shadow-sub-3-1-3',
 										name: 'Clever Trick',
 										description: 'You sow a moment of confusion in combat, to your enemy’s peril.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'An enemy targets you with a strike.',
 											time: '',
@@ -4245,7 +4245,7 @@ export const polderShadow = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'Choose an enemy within distance of the triggering strike, including the enemy who targeted you. The strike targets that enemy instead.'
 											}
 										],
@@ -4269,7 +4269,7 @@ export const polderShadow = {
 								id: 'shadow-sub-3-2-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4277,14 +4277,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-2-1a',
 												name: 'Machinations of Sound',
 												description: 'Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-2-1a',
 														name: 'Machinations of Sound',
 														description: 'Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4318,13 +4318,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: 'Slide 4',
-																	tier2: 'Slide 5',
-																	tier3: 'Slide 7'
+																	tier1: 'Зсунути на 4',
+																	tier2: 'Зсунути на 5',
+																	tier3: 'Зсунути на 7'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'This forced movement ignores stability. Instead, the forced movement is reduced by a number equal to the target’s Intuition score.'
 															}
 														],
@@ -4346,14 +4346,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-2-1b',
 												name: 'So Gullible',
 												description: 'When your enemy strikes, you reveal you were in a different place all along.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-2-1b',
 														name: 'So Gullible',
 														description: 'When your enemy strikes, you reveal you were in a different place all along.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'Another creature targets you with a strike.',
 															time: '',
@@ -4379,7 +4379,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You use your Clever Trick ability with no insight cost against the triggering creature and strike. You can teleport to an unoccupied space within 3 squares of that creature and can make a free strike against them. You can then spend a Recovery.'
 															}
 														],
@@ -4404,8 +4404,8 @@ export const polderShadow = {
 							{
 								id: 'shadow-sub-3-2-2',
 								name: 'Friend!',
-								description: '\nYour illusions make your enemies believe you are their friend in critical moments. Whenever an enemy uses an ability or trait that targets multiple allies and you are within distance of the effect, you can choose to be a target of the effect as well.\n\nAdditionally, when you use your I’m No Threat ability, you can take the Disengage move action as part of that ability.',
-								type: 'Text',
+								description: '\nYour illusions make your enemies believe you are their friend in critical moments. Whenever an enemy uses an ability or trait that targets multiple allies and you are within distance of the effect, you can choose to be a target of the effect as well.\n\nAdditionally, when you use your I’m No Threat ability, you can take the Disengage дія руху as part of that ability.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4424,8 +4424,8 @@ export const polderShadow = {
 							{
 								id: 'shadow-sub-3-5-1',
 								name: 'Harlequin Gambit',
-								description: '\nWhenever you reduce an adjacent non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your I’m No Threat ability and then move up to your speed.\n\nIf the creature is the same size as you, you can disguise yourself as them using I’m No Threat without spending insight. If you do, while I’m No Threat is active, the creature’s body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature’s body, it ends for both.',
-								type: 'Text',
+								description: '\nWhenever you reduce an adjacent non-minion creature to 0 Stamina, you can immediately use a безкоштовний маневр to use your I’m No Threat ability and then move up to your speed.\n\nIf the creature is the same size as you, you can disguise yourself as them using I’m No Threat without spending insight. If you do, while I’m No Threat is active, the creature’s body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature’s body, it ends for both.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4437,7 +4437,7 @@ export const polderShadow = {
 								id: 'shadow-sub-3-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4445,14 +4445,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-6-1a',
 												name: 'Look!',
 												description: 'You distract your foes, allowing your allies to take advantage of that distraction.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-6-1a',
 														name: 'Look!',
 														description: 'You distract your foes, allowing your allies to take advantage of that distraction.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4479,7 +4479,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the start of your next turn, any ability roll made against a target gains an edge.'
 															}
 														],
@@ -4501,14 +4501,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-6-1b',
 												name: 'Puppet Strings',
 												description: 'You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-6-1b',
 														name: 'Puppet Strings',
 														description: 'You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4543,13 +4543,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '2 damage; if the target has Р < [слабкий], before the damage is resolved, they make a free strike.',
-																	tier2: '5 damage; if the target has Р < [середній], before the damage is resolved, they use a main action ability of your choice.',
-																	tier3: '7 damage; if the target has Р < [сильний], before the damage is resolved, they can shift up to their speed and use a main action ability of your choice.'
+																	tier1: '2 шкоди; якщо ціль має Р < [слабкий], перед нанесенням шкоди вона робить безкоштовний удар.',
+																	tier2: '5 шкоди; якщо ціль має Р < [середній], перед нанесенням шкоди вона використовує здібність основної дії на ваш вибір.',
+																	tier3: '7 шкоди; якщо ціль має Р < [сильний], перед нанесенням шкоди вона може зміститися до своєї швидкості й використати здібність основної дії на ваш вибір.'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You choose the new targets for the original target’s free strike or ability. Additionally, if you are hidden or disguised, using this ability doesn’t cause you to be revealed.'
 															}
 														],
@@ -4583,8 +4583,8 @@ export const polderShadow = {
 							{
 								id: 'shadow-sub-3-8-1',
 								name: 'Parkour',
-								description: 'Your movement no longer provokes opportunity attacks. Additionally, you can use your Harlequin Gambit feature as a free triggered action when a creature is reduced to 0 Stamina by your Clever Trick ability.',
-								type: 'Text',
+								description: 'Your movement no longer provokes opportunity attacks. Additionally, you can use your Harlequin Gambit feature as a безкоштовна тригерна дія when a creature is reduced to 0 Stamina by your Clever Trick ability.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4596,7 +4596,7 @@ export const polderShadow = {
 								id: 'shadow-sub-3-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4604,14 +4604,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-9-1a',
 												name: 'I Am You',
 												description: 'Your mask reflects your foe’s face. Surely they won’t need it much longer.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-9-1a',
 														name: 'I Am You',
 														description: 'Your mask reflects your foe’s face. Surely they won’t need it much longer.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4638,7 +4638,7 @@ export const polderShadow = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter, you gain the target’s damage immunities and speed (if they are better than yours), and can use any types of movement they can use. You can also use the target’s signature ability, using their bonus for the power roll.'
 															}
 														],
@@ -4660,14 +4660,14 @@ export const polderShadow = {
 												id: 'shadow-sub-3-9-1b',
 												name: 'It Was Me All Along',
 												description: 'After everything you’ve been through together, you twist the blade and make the pain extra personal.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'shadow-sub-3-9-1b',
 														name: 'It Was Me All Along',
 														description: 'After everything you’ve been through together, you twist the blade and make the pain extra personal.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4701,13 +4701,13 @@ export const polderShadow = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '15 + A damage',
-																	tier2: '21 + A damage',
-																	tier3: '28 + A damage'
+																	tier1: '15 + Л шкоди',
+																	tier2: '21 + Л шкоди',
+																	tier3: '28 + Л шкоди'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'If you are disguised as a creature the target knew using your I’m No Threat ability, this ability deals extra damage equal to three times your Agility score.'
 															}
 														],
@@ -4773,7 +4773,7 @@ export const polderShadow = {
 				id: 'career-criminal-feature-1',
 				name: 'Lore Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4781,7 +4781,7 @@ export const polderShadow = {
 					],
 					count: 1,
 					selected: [
-						'Criminal Underworld'
+						'Кримінальний світ'
 					]
 				}
 			},
@@ -4789,7 +4789,7 @@ export const polderShadow = {
 				id: 'career-criminal-feature-2',
 				name: 'Intrigue Skills',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4797,16 +4797,16 @@ export const polderShadow = {
 					],
 					count: 2,
 					selected: [
-						'Pick Lock',
-						'Pick Pocket'
+						'Відмикання замків',
+						'Кишенькова крадіжка'
 					]
 				}
 			},
 			{
 				id: 'career-criminal-feature-3',
-				name: 'Language',
+				name: 'Мова',
 				description: '',
-				type: 'Language Choice',
+				type: 'Вибір мови',
 				data: {
 					options: [],
 					count: 1,
@@ -4819,7 +4819,7 @@ export const polderShadow = {
 				id: 'career-criminal-feature-4',
 				name: 'Project Points',
 				description: '',
-				type: 'Bonus',
+				type: 'Бонус',
 				data: {
 					field: 'Project Points',
 					value: 120,
@@ -4833,7 +4833,7 @@ export const polderShadow = {
 				id: 'career-criminal-feature-5',
 				name: 'Intrigue Perk',
 				description: '',
-				type: 'Perk',
+				type: 'Перевага',
 				data: {
 					lists: [
 						'Інтриги'
@@ -4844,7 +4844,7 @@ export const polderShadow = {
 							id: 'perk-lucky-dog',
 							name: 'Lucky Dog',
 							description: 'Whenever you fail a test using any skill from the intrigue skill group, you can lose Stamina equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.',
-							type: 'Text',
+							type: 'Текст',
 							data: null,
 							list: 'Інтриги'
 						}
@@ -4899,7 +4899,7 @@ export const polderShadow = {
 			id: 'default-language',
 			name: 'Default Language',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,

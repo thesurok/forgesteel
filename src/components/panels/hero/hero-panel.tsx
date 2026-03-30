@@ -222,7 +222,7 @@ export const HeroPanel = (props: Props) => {
 								<div className='overview-tile danger clickable' onClick={onShowVitals}>
 									<HeaderText>Dying</HeaderText>
 									<div className='ds-text'>
-										You can’t take the Catch Breath maneuver in combat, and you are bleeding, and this condition can’t be removed in any way until you are no longer dying.
+										You can’t take the Catch Breath маневр in combat, and you are bleeding, and this condition can’t be removed in any way until you are no longer dying.
 									</div>
 									<div className='ds-text'>
 										Your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.
@@ -306,12 +306,12 @@ export const HeroPanel = (props: Props) => {
 					{
 						(triggers.length > 0) && !props.options.singlePage ?
 							useRows ?
-								<div className='selectable-row clickable' onClick={() => setTab('Triggers')}>
-									<div>Triggers: <b>{triggers.map(t => t.ability.name).join(', ')}</b></div>
+								<div className='selectable-row clickable' onClick={() => setTab('Тригерні дії')}>
+									<div>Тригерні дії: <b>{triggers.map(t => t.ability.name).join(', ')}</b></div>
 								</div>
 								:
-								<div className='overview-tile clickable' onClick={() => setTab('Triggers')}>
-									<HeaderText>Triggered Actions</HeaderText>
+								<div className='overview-tile clickable' onClick={() => setTab('Тригерні дії')}>
+									<HeaderText>Тригерні дії</HeaderText>
 									<Space orientation='vertical'>
 										{triggers.map(t => getTrigger(t.ability))}
 									</Space>
@@ -1004,16 +1004,16 @@ export const HeroPanel = (props: Props) => {
 			const others = abilities.filter(a => (a.ability.type.usage === AbilityUsage.Other) || (a.ability.type.usage === AbilityUsage.NoAction));
 
 			if (mains.length > 0) {
-				tabs.push('Mains');
+				tabs.push('Основні дії');
 			}
 			if (maneuvers.length > 0) {
-				tabs.push('Maneuvers');
+				tabs.push('Маневри');
 			}
 			if (moves.length > 0) {
-				tabs.push('Moves');
+				tabs.push('Дії руху');
 			}
 			if (triggers.length > 0) {
-				tabs.push('Triggers');
+				tabs.push('Тригерні дії');
 			}
 			if (others.length > 0) {
 				tabs.push('Others');
@@ -1052,10 +1052,10 @@ export const HeroPanel = (props: Props) => {
 			case 'Здібності':
 				return (
 					<>
-						{getAbilitiesSection('Main Actions', mains)}
-						{getAbilitiesSection('Maneuvers', maneuvers)}
-						{getAbilitiesSection('Move Actions', moves)}
-						{getAbilitiesSection('Triggered Actions', triggers)}
+						{getAbilitiesSection('Основні дії', mains)}
+						{getAbilitiesSection('Маневри', maneuvers)}
+						{getAbilitiesSection('Дії руху', moves)}
+						{getAbilitiesSection('Тригерні дії', triggers)}
 						{getAbilitiesSection('Other Abilities', others)}
 						{getAbilitiesSection('Free Strikes', [
 							{ ability: AbilityData.freeStrikeMelee, source: 'Standard' },
@@ -1063,14 +1063,14 @@ export const HeroPanel = (props: Props) => {
 						])}
 					</>
 				);
-			case 'Mains':
-				return getAbilitiesSection('Main Actions', mains);
-			case 'Maneuvers':
-				return getAbilitiesSection('Maneuvers', maneuvers);
-			case 'Moves':
-				return getAbilitiesSection('Move Actions', moves);
-			case 'Triggers':
-				return getAbilitiesSection('Triggered Actions', triggers);
+			case 'Основні дії':
+				return getAbilitiesSection('Основні дії', mains);
+			case 'Маневри':
+				return getAbilitiesSection('Маневри', maneuvers);
+			case 'Дії руху':
+				return getAbilitiesSection('Дії руху', moves);
+			case 'Тригерні дії':
+				return getAbilitiesSection('Тригерні дії', triggers);
 			case 'Others':
 				return getAbilitiesSection('Other Abilities', others);
 			case 'Free Strikes':

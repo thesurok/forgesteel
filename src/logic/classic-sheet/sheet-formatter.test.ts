@@ -41,27 +41,27 @@ describe.concurrent('Test addSign', () => {
 
 describe.concurrent('Test markdown enhancement', () => {
 	test.each([
-		['M < Strong', '<span class="potency">m&lt;s]</span>'],
-		['A < Average', '<span class="potency">a&lt;v]</span>'],
-		['R < weak', '<span class="potency">r&lt;w]</span>'],
-		['I < [сильний]', '<span class="potency">i&lt;s]</span>'],
-		['P < [слабкий]', '<span class="potency">p&lt;w]</span>'],
-		['M<Strong', '<span class="potency">m&lt;s]</span>']
+		['С < Strong', '<span class="potency">m&lt;s]</span>'],
+		['Л < Average', '<span class="potency">a&lt;v]</span>'],
+		['Р < weak', '<span class="potency">r&lt;w]</span>'],
+		['І < [сильний]', '<span class="potency">i&lt;s]</span>'],
+		['П < [слабкий]', '<span class="potency">p&lt;w]</span>'],
+		['С<Strong', '<span class="potency">m&lt;s]</span>']
 	])('converts potency text to glyph form', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
 
 	test.each([
-		['M < 5', '<span class="potency">m&lt;5]</span>'],
-		['A<3', '<span class="potency">a&lt;3]</span>']
+		['С < 5', '<span class="potency">m&lt;5]</span>'],
+		['Л<3', '<span class="potency">a&lt;3]</span>']
 	])('converts potency values to glyph form', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
 
 	test.each([
-		['`M < Strong`', '<span class="potency">m&lt;s]</span>'],
-		['`M < 5`', '<span class="potency">m&lt;5]</span>'],
-		['<code>M < 5</code>', '<span class="potency">m&lt;5]</span>']
+		['`С < Strong`', '<span class="potency">m&lt;s]</span>'],
+		['`С < 5`', '<span class="potency">m&lt;5]</span>'],
+		['<code>С < 5</code>', '<span class="potency">m&lt;5]</span>']
 	])('Removes extra/bad markdown stuff', (inStr, expected) => {
 		expect(SheetFormatter.enhanceMarkdown(inStr)).toBe(expected);
 	});
@@ -488,7 +488,7 @@ describe('calculateProjectDetailCardSize', () => {
 			description: 'Yields 1d3 darts, or three darts if crafted by a shadow',
 			prerequisites: 'Three vials of black ash from the College of Black Ash',
 			source: 'Texts or lore in Сзетч (Szetch)',
-			characteristic: 'A or I',
+			characteristic: 'Л or І',
 			pointsGoal: 45
 		} as ProjectSheet;
 
@@ -502,28 +502,28 @@ describe('calculateProjectsOverviewCardSize', () => {
 		const projects = [
 			{
 				name: 'Craft Buzz Balm',
-				characteristic: 'R or I',
+				characteristic: 'Р or І',
 				prerequisites: 'An ounce of demon honey',
 				source: 'Texts or lore in Калліак (Kalliak)',
 				pointsGoal: 45
 			},
 			{
 				name: 'Craft Healing Potion',
-				characteristic: 'R or I',
+				characteristic: 'Р or І',
 				prerequisites: 'An ounce of costmary leaves',
 				source: 'Texts or lore in Келіан (Caelian)',
 				pointsGoal: 45
 			},
 			{
 				name: 'Craft Foesense Lenses',
-				characteristic: 'R or I',
+				characteristic: 'Р or І',
 				prerequisites: 'Two clear lenses carved from volcanic glass',
 				source: 'Texts or lore in Келіан (Caelian)',
 				pointsGoal: 450
 			},
 			{
 				name: 'Craft Black Ash Dart',
-				characteristic: 'A or I',
+				characteristic: 'Л or І',
 				effect: 'Yields 1d3 darts, or three darts if crafted by a shadow',
 				prerequisites: 'Three vials of black ash from the College of Black Ash',
 				source: 'Texts or lore in Сзетч (Szetch)',
@@ -541,8 +541,8 @@ describe('calculateAbilitySize', () => {
 	test.each([
 		[AbilityData.heal, 11.2],
 		[AbilityData.freeStrike, 7.2],
-		[AbilityData.escapeGrab, 25.4],
-		[AbilityData.clawDirt, 23.1],
+		[AbilityData.escapeGrab, 24.4],
+		[AbilityData.clawDirt, 27],
 		[AbilityData.advance, 9]
 	])('calculates size properly for standard abilities', (ability: Ability, expected: number) => {
 		const hero = FactoryLogic.createHero([]);

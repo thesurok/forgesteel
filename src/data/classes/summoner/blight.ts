@@ -111,7 +111,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-1-4b-2',
 										name: 'Skulker',
-										description: 'Once per turn, the rasquine can hide as a free maneuver after teleporting.'
+										description: 'Once per turn, the rasquine can hide as a безкоштовний маневр after teleporting.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-1-4b-3',
@@ -296,9 +296,9 @@ When you finish a respite, you can always perceive the soul trails of each creat
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 damage; П < [слабкий] twisted (save ends)',
-														tier2: '4 damage; П < [середній] twisted (save ends)',
-														tier3: '4 damage; П < [сильний] twisted (save ends)'
+														tier1: '4 шкоди; П < [слабкий] twisted (рят. кидок закінчує)',
+														tier2: '4 шкоди; П < [середній] twisted (рят. кидок закінчує)',
+														tier3: '4 шкоди; П < [сильний] twisted (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A twisted target can’t take advantage of edges or search for hidden creatures until the condition ends.')
@@ -338,7 +338,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-fixture-1-1',
 										name: 'Hunger Thrush',
-										description: 'Each enemy that starts their turn within 3 squares of the boil is I < [середній] taunted (EoT) by the boil, or I < [слабкий] taunted (EoT) by the boil and can’t move further from it.'
+										description: 'Each enemy that starts their turn within 3 squares of the boil is І < [середній] taunted (EoT) by the boil, or І < [слабкий] taunted (EoT) by the boil and can’t move further from it.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-fixture-1-2',
@@ -483,7 +483,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2b-2',
 										name: 'Mercurial Strike',
-										description: 'The chimor’s melee free strikes inflict M < [слабкий] weakened (EoT). The potency is increased by the current round number.'
+										description: 'The chimor’s melee free strikes inflict С < [слабкий] weakened (EoT). The potency is increased by the current round number.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2b-3',
@@ -535,7 +535,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2c-3',
 										name: 'Mimicry',
-										description: 'The violent uses the Hide maneuver at the start of their turn as a free maneuver, disguising themselves as a a size 1M or smaller object.'
+										description: 'The violent uses the Hide маневр at the start of their turn as a безкоштовний маневр, disguising themselves as a a size 1M or smaller object.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-2-2c-4',
@@ -566,7 +566,7 @@ When you finish a respite, you can always perceive the soul trails of each creat
 					id: 'summoner-1-5-1',
 					name: 'Soul Flense',
 					description: `
-As a maneuver, you can command one or more of your demon minions to each deal damage equal to their free strike value to an adjacent ally. This damage can’t be reduced. The ally then ends a condition affecting them and confers it to the demon that attacked them.
+As a маневр, you can command one or more of your demon minions to each deal damage equal to their free strike value to an adjacent ally. This damage can’t be reduced. The ally then ends a condition affecting them and confers it to the demon that attacked them.
 
 Additionally, whenever one of your demon minions Death Snaps, their target is П < [слабкий] affected by a condition the minion was suffering from. The potency increases by 1 on each subsequent Death Snap the target takes damage from in the same turn (maximum +2).`
 				}),
@@ -619,9 +619,9 @@ Additionally, whenever one of your demon minions Death Snaps, their target is П
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 corruption damage; П < [слабкий] bleeding (EoT)',
-														tier2: '11 corruption damage; П < [середній] bleeding (EoT)',
-														tier3: '16 corruption damage; П < [сильний] bleeding (EoT)'
+														tier1: '7 шкоди від скверни; П < [слабкий] кровотеча (до кінця ходу)',
+														tier2: '11 шкоди від скверни; П < [середній] кровотеча (до кінця ходу)',
+														tier3: '16 шкоди від скверни; П < [сильний] кровотеча (до кінця ходу)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Instead of taking damage, you or an ally targeted by this ability impose a double bane on the next strike that targets them.')
@@ -672,7 +672,7 @@ Additionally, whenever one of your demon minions Death Snaps, their target is П
 									FactoryLogic.feature.create({
 										id: 'summoner-1-5-3b-2',
 										name: 'Goring Strike',
-										description: 'The gorrre must charge before making a strike. The target is M < [сильний] knocked prone if the gorrre moved through an enemy or object other than the target during the charge.'
+										description: 'The gorrre must charge before making a strike. The target is С < [сильний] knocked prone if the gorrre moved through an enemy or object other than the target during the charge.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-1-5-3b-3',
@@ -729,9 +729,9 @@ Additionally, whenever one of your demon minions Death Snaps, their target is П
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 psychic damage; П < [слабкий] weakened (save ends)',
-														tier2: '11 psychic damage; П < [середній] weakened (save ends)',
-														tier3: '16 psychic damage; П < [сильний] weakened (save ends)'
+														tier1: '7 психічної шкоди; П < [слабкий] ослаблений (рят. кидок закінчує)',
+														tier2: '11 психічної шкоди; П < [середній] ослаблений (рят. кидок закінчує)',
+														tier3: '16 психічної шкоди; П < [сильний] ослаблений (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target weakened by this ability is always considered flanked by the vicisittante regardless of position until the condition ends.')
@@ -823,9 +823,9 @@ The demon lord’s Aspect enjoys bringing enemies in close with their appendages
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														bonus: 5,
-														tier1: '9 corruption damage; pull 2',
-														tier2: '12 corruption damage; pull 4',
-														tier3: '14 corruption damage; pull 5'
+														tier1: '9 шкоди від скверни; притягнути на 2',
+														tier2: '12 шкоди від скверни; притягнути на 4',
+														tier3: '14 шкоди від скверни; притягнути на 5'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the Aspect is grabbed.')

@@ -236,7 +236,7 @@ Jackson Bootblack`,
 								id: 'bPZ0jgAHVi08ZX2X',
 								name: 'Мелодрама №1',
 								tag: '',
-								trigger: 'Whenever a creature rolls a natural 2 on a power roll.',
+								trigger: 'Щоразу, коли істота викидає природну 2 на кидку сили.',
 								value: '2'
 							}),
 							value: 1
@@ -246,7 +246,7 @@ Jackson Bootblack`,
 								id: 'Jlp0a0yANrSIoeXp',
 								name: 'Мелодрама №2',
 								tag: '',
-								trigger: 'The first time the Director deals damage to a hero using a Villain action or an ability that costs Malice.',
+								trigger: 'Вперше за раунд, коли Директор завдає герою шкоди дією Лиходія або здібністю, що коштує Злоби.',
 								value: '2'
 							}),
 							value: 1
@@ -256,7 +256,7 @@ Jackson Bootblack`,
 								id: '05FGfz1LetwQOlGm',
 								name: 'Мелодрама №3',
 								tag: '',
-								trigger: 'The first time a hero unwillingly falls 5 or more squares.',
+								trigger: 'Вперше за раунд, коли герой недобровільно падає на 5 або більше клітинок.',
 								value: '2'
 							}),
 							value: 1
@@ -266,7 +266,7 @@ Jackson Bootblack`,
 								id: 'bnEzQSbTNyay2M51',
 								name: 'Мелодрама №4',
 								tag: '',
-								trigger: 'The first time a hero deals damage with 3 surges.',
+								trigger: 'Вперше за раунд, коли герой завдає шкоди, витративши 3 сплески.',
 								value: '2'
 							}),
 							value: 1
@@ -276,7 +276,7 @@ Jackson Bootblack`,
 								id: 'lbGOgNoNt9SsiBDB',
 								name: 'Мелодрама №5',
 								tag: '',
-								trigger: 'Whenever a hero spends their last Recovery.',
+								trigger: 'Щоразу, коли герой витрачає своє останнє Відновлення.',
 								value: '2'
 							}),
 							value: 1
@@ -385,16 +385,16 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.create({
 					id: 'HRzXpQyzYdOU4f3r',
-					name: 'Equal Billing',
+					name: 'Рівне місце в афіші',
 					description: `Ви можете використати особливість "Партнер по сцені", щоб створити зв'язок із героєм-однодумцем замість NPC, з яким взаємодієте через випробування. Якщо ви створюєте зв'язок із новим героєм, попередній зв'язок із героєм втрачається.
 
 Крім того, ви та істоти, з якими у вас є зв'язок, отримуєте +1 до рят. кидків. Коли ви або пов'язана істота успішно проходите рят. кидок, ви та всі пов'язані з вами істоти отримуєте тимчасову Витривалість, рівну вашому рівню.`
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'JRIAGwr5xwIXZdG5',
-					name: 'A Muse’s Muse',
+					name: 'Муза для музи',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'На початку вашого ходу',
 					value: '1d3 + 1',
 					replacesTags: ['start']
 				}),
@@ -421,7 +421,7 @@ Jackson Bootblack`,
 			features: [
 				FactoryLogic.feature.create({
 					id: 'b4oYpDkEydG3CTOD',
-					name: 'Roar of the Crowd',
+					name: 'Рев натовпу',
 					description: `Ви отримуєте силу від своєї аудиторії, як близької, так і далекої. Вас не можна налякати, а якщо ви розпластані, можете встати безкоштовним маневром.
 
 Крім того, коли ви витрачаєте Відновлення, ви можете не відновлювати Витривалість, а викликати рев невидимої аплодуючої публіки. Ви та кожен союзник у межах 3 клітинок отримуєте тимчасову Витривалість, рівну 10 + кількість активних зв'язків із "Партнер по сцені" + або ваші Перемоги, або кількість гравців у грі (що більше).`
@@ -433,11 +433,11 @@ Jackson Bootblack`,
 			features: [
 				FactoryLogic.feature.createHeroicResource({
 					id: 'GYcwgp374s2e3GiY',
-					name: 'Applause',
+					name: 'Оплески',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					]
@@ -454,12 +454,12 @@ Jackson Bootblack`,
 				}),
 				FactoryLogic.feature.create({
 					id: 'SvXvD5JZWWIMcMGv',
-					name: 'Dramaturgy',
+					name: 'Драматургія',
 					description: 'Ви отримуєте 1 додаткову драму або інший героїчний ресурс щоразу, коли використовуєте "Звернення до муз". Крім того, ваші виступи більше не мають обмеження по дистанції й можуть впливати на будь-яку ціль на карті зустрічі в межах вашої лінії ефекту.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'kN2tUhuHAbfRxOM3',
-					name: 'Greatest of All Time',
+					name: 'Найкращий за всі часи',
 					description: 'Щоразу, коли ви досягаєте успіху у випробуванні, кожен NPC у межах вашої лінії ефекту знижує свій показник Враження на 4 під час переговорів (але не нижче 1), а кожен союзник у межах 3 клітинок отримує перевагу на наступному випробуванні. Ці ефекти тривають до початку вашого наступного відпочинку.'
 				}),
 				FactoryLogic.feature.createPerk({
@@ -481,7 +481,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Two creatures or objects',
+			target: 'Дві істоти або предмети',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
@@ -496,7 +496,7 @@ Jackson Bootblack`,
 				FactoryLogic.createAbilitySectionSpend({
 					value: 2,
 					repeatable: true,
-					effect: 'You can target one additional creature or object for every 2 drama spent.'
+					effect: 'Ви можете обрати ще одну істоту або предмет за кожні 2 витраченої драми.'
 				})
 			]
 		}),
@@ -564,7 +564,7 @@ Jackson Bootblack`,
 				),
 				FactoryLogic.createAbilitySectionText('Один союзник у межах 10 клітинок може скинути один ефект, який завершується рятувальним кидком або наприкінці його ходу.'),
 				FactoryLogic.createAbilitySectionSpend({
-					effect: 'The chosen ally can spend a Recovery.'
+					effect: 'Обраний союзник може витратити Відновлення.'
 				})
 			]
 		}),
@@ -613,7 +613,7 @@ Jackson Bootblack`,
 				FactoryLogic.createAbilitySectionSpend({
 					value: 2,
 					repeatable: true,
-					effect: 'The size of the burst increases by 1 for every 2 drama spent.'
+					effect: 'Розмір вибуху збільшується на 1 за кожні 2 витраченої драми.'
 				})
 			]
 		}),
@@ -805,7 +805,7 @@ Jackson Bootblack`,
 				FactoryLogic.createAbilitySectionText(`
 До кінця зустрічі ви та ціль можете націлювати одне одного здібностями, навіть якщо перебуваєте поза дистанцією, причому дистанція цієї здібності замінює дистанцію інших здібностей. Ціль не може бути примусово переміщена здібністю, використаною поза дистанцією таким чином.
 
-Крім того, раз на свій хід ви можете безкоштовно виконати маневр, щоб передати цілі надихаюче або пригнічуюче послання: або надати їй 2 імпульси, або змусити її отримати перешкоду на наступний кидок здібності, який вона зробить до початку вашого наступного ходу.`)
+Крім того, раз на свій хід ви можете безкоштовно виконати маневр, щоб передати цілі надихаюче або пригнічуюче послання: або надати їй 2 сплески, або змусити її отримати перешкоду на наступний кидок здібності, який вона зробить до початку вашого наступного ходу.`)
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -836,7 +836,7 @@ Jackson Bootblack`,
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
-			target: 'One enemy or object',
+			target: 'Один ворог або предмет',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText('Ціль розділяється на дві окремі сутності: одна залишається в початковому просторі цілі, інша зʼявляється в незайнятому просторі на ваш вибір у межах дистанції. Якщо ціль — істота, це створює нову істоту під контролем Директора. Кожна сутність має половину початкової Витривалості цілі, є ослабленою і отримує 1d6 шкоди Скверною на початку кожного свого ходу. Якщо будь-яка сутність знижується до 0 Витривалості, інша повертається до вигляду оригінальної сутності й ефект припиняється. Ефект також припиняється, якщо обидві сутності опиняються в одному просторі, спричиняючи їхнє автоматичне злиття та обʼєднання поточної Витривалості.')

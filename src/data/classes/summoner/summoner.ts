@@ -16,13 +16,13 @@ import { circleofStorms } from '@/data/classes/summoner/storms';
 
 export const summoner: HeroClass = {
 	id: 'class-summoner',
-	name: 'Summoner',
+	name: 'Призивач',
 	description: `
-You are the armada. The kings of old would trade armies for your abilities. You’ve undertaken the tradition that conjures an endless supply of warriors. You are the summoner, the mage who takes their dreams and makes them manifest.
+Ви і є армада. Королі минулого віддали б цілі армії за ваші здібності. Ви опанували традицію, що викликає невичерпний запас воїнів. Ви - призивач, маг, який бере свої мрії й робить їх явними.
 
-You call forth minions to trudge fearlessly into the fray and provide support, holding the enemy at bay while you and your fellow heroes ready the counteroffensive. Your minions serve unflinchingly, unerringly, to their death or to yours.
+Ви призиваєте міньйонів, щоб вони безстрашно йшли в гущу бою й надавали підтримку, стримуючи ворога, поки ви та ваші товариші-герої готуєте контрнаступ. Ваші міньйони служать без вагань, без промаху, до своєї смерті або до вашої.
 
-You can also take advantage of powerful magic to buff your allies, whittle down your enemies, or enlist the fallen into your ranks. And when push comes to shove, you can call upon your champion to finish the fight.`,
+Ви також можете скористатися могутньою магією, щоб посилювати союзників, виснажувати ворогів або поповнювати свої ряди полеглими. А коли справа доходить до крайнощів, ви можете покликати свого чемпіона, щоб завершити бій.`,
 	type: 'master',
 	subclassName: 'Коло',
 	subclassCount: 1,
@@ -47,20 +47,20 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'summoner-resource',
-					name: 'Essence',
+					name: 'Есенція',
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'На початку вашого ходу',
 							value: '2'
 						},
 						{
 							tag: 'minion-death',
-							trigger: 'The first time each round that any minion dies unwillingly within your Summoner’s Range',
+							trigger: 'Вперше за раунд, коли будь-який міньйон гине не з власної волі в межах дальності призивача',
 							value: '1'
 						}
 					],
-					details: 'Whenever you use a heroic ability or call forth a minion that costs essence, you can willingly sacrifice one or more of your minions within your Summoner’s Range to reduce the cost by 1. You can’t kill minions this way if they used a main action or maneuver during the turn. You can sacrifice more minions than you would reduce the cost by.'
+					details: 'Щоразу, коли ви використовуєте героїчну здібність або призиваєте міньйона, що коштує Есенції, ви можете добровільно пожертвувати одним чи кількома міньйонами в межах дальності призивача, щоб зменшити вартість на 1. Ви не можете вбивати міньйонів у такий спосіб, якщо вони цього ходу вже використали основну дію або маневр. Ви можете пожертвувати більше міньйонів, ніж потрібно для зменшення вартості.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-1-1',
@@ -74,67 +74,67 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 				}),
 				FactoryLogic.feature.createPackage({
 					id: 'summoner-1-2',
-					name: 'Minions',
+					name: 'Міньйони',
 					description: `
-The creatures you control are called **minions**. You can summon and maintain up to a maximum of 8 minions. Your minions are considered allies at your level.
+Істоти, якими ви керуєте, називаються **міньйонами**. Ви можете призвати й підтримувати максимум 8 міньйонів. Ваші міньйони вважаються союзниками вашого рівня.
 
-You can manage up to two **squads** of minions. Newly summoned minions can either be organized into a new squad or be distributed into other squads under your control. A squad can’t contain more than eight minions, and all minions in the squad must have the same name.
+Ви можете керувати максимум двома **загонами** міньйонів. Щойно призваних міньйонів можна або оформити в новий загін, або розподілити до інших загонів під вашим контролем. Загін не може містити більше восьми міньйонів, і всі міньйони в загоні повинні мати однакову назву.
 
-The maximum distance that you can summon minions and use specific conjuring abilities is called your **Summoner’s Range**. Your Summoner’s Range is equal to 5 + your Reason score. You must have line of effect to summon and give commands to minions within your Summoner’s Range. Commanding a minion to take a main action or a maneuver while hidden reveals you.
+Максимальна відстань, на якій ви можете призивати міньйонів і використовувати певні здібності призову, називається **дальністю призивача**. Вона дорівнює 5 + ваш показник Розуму. Ви мусите мати лінію ефекту, щоб призивати міньйонів і віддавати накази міньйонам у межах дальності призивача. Наказ міньйону виконати основну дію або маневр, поки ви приховані, розкриває вас.
 
-You also have special minions at your disposal called **signature minions**, low-cost creatures that you’ve become accustomed to summoning often.
+Також у вашому розпорядженні є особливі міньйони, що називаються **сигнатурними міньйонами** - недорогі істоти, яких ви звикли призивати найчастіше.
 
-### Minions in Combat
+### Міньйони в бою
 
-**Start of Combat**: At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you can summon up to two of your signature minions at no cost into unoccupied spaces within your Summoner’s Range (no action required).
+**Початок бою**: На початку бойової зустрічі або іншої напруженої ситуації, що відстежується бойовими раундами (на розсуд Режисера), ви можете безкоштовно призвати до двох своїх сигнатурних міньйонів у незайняті простори в межах дальності призивача (без дії).
 
-**Start of Turn**: At the start of each of your turns during combat, you can summon up to three of your signature minions at no cost into unoccupied spaces within your Summoner’s Range (no action required).
+**Початок ходу**: На початку кожного свого ходу під час бою ви можете безкоштовно призвати до трьох своїх сигнатурних міньйонів у незайняті простори в межах дальності призивача (без дії).
 
-**Summoning**: Each minion is summoned on the ground unless they can fly or hover. Unless an ability specifies, you can’t summon any new minions beyond your minion maximum until the same number of existing minions are dismissed or destroyed.
+**Призов**: Кожен міньйон призивається на землю, якщо тільки він не вміє літати або зависати. Якщо здібність не вказує інакше, ви не можете призивати нових міньйонів понад свій максимум, доки така сама кількість наявних міньйонів не буде відпущена або знищена.
 
-**Stamina**: Minions in a squad pool their Stamina together. Whenever a minion in a squad takes damage, the squad’s Stamina pool is reduced by a number equal to the damage taken. Each time the pool is reduced by an amount equal to a single squad member’s Stamina, one minion dies (starting with the minion that took damage, followed by the next nearest minion). If there is any excess damage after all minions in the squad are dead, you take damage equal to 2 + your level. Minions can’t be winded, can’t regain Stamina, and can’t gain temporary Stamina.
+**Витривалість**: Міньйони в загоні обʼєднують свою Витривалість в один пул. Щоразу, коли міньйон у загоні отримує шкоду, пул Витривалості загону зменшується на таку саму величину. Кожного разу, коли пул зменшується на кількість, рівну Витривалості одного члена загону, один міньйон гине (спершу той, хто отримав шкоду, а потім найближчий наступний). Якщо після загибелі всіх міньйонів у загоні залишається надлишкова шкода, ви отримуєте шкоду, рівну 2 + ваш рівень. Міньйони не можуть стати захеканими, не можуть відновлювати Витривалість і не можуть отримувати тимчасову Витривалість.
 
-**Area Effects**: The damage from an area effect dealt to a squad’s Stamina pool can only kill up to the minions in its area. Any excess damage is ignored.
+**Ефекти по зоні**: Шкода від ефекту по зоні, завдана пулу Витривалості загону, може вбити не більше міньйонів, ніж перебувало в цій зоні. Будь-яка надлишкова шкода ігнорується.
 
-**Strikes with Multiple Targets**: A squad’s Stamina pool only takes the largest single instance of damage from a strike that targets two or more minions in that squad. Any additional effects still affect the minions targeted by the strike.
+**Удари з кількома цілями**: Пул Витривалості загону отримує лише найбільший окремий примірник шкоди від удару, що націлюється на двох або більше міньйонів цього загону. Усі додаткові ефекти все одно впливають на міньйонів, по яких було націлено удар.
 
-**Conditions**: You resolve any saving throws on conditions affecting one or more of your minions. Treat saving throws as if you had one instance of each condition.
+**Стани**: Ви виконуєте будь-які рятівні кидки проти станів, що впливають на одного чи більше ваших міньйонів. Вважайте, що маєте по одному примірнику кожного стану.
 
-**Immunity and Weakness**: If any minion in a squad has damage immunity or weakness to a particular damage type, apply that effect to the entire squad only once, regardless of how many minions share the same trait.
+**Імунітет і вразливість**: Якщо будь-який міньйон у загоні має імунітет до певного типу шкоди або вразливість до нього, застосовуйте цей ефект до всього загону лише один раз, незалежно від того, скільки міньйонів мають цю рису.
 
-**Actions**: Minions in a squad act together on your turn in any order, before, in-between, and/or after any of your actions. They can either take a move action and a main action (excluding Heal and Defend), a move action and a maneuver, or two move actions. Individual minions can also make opportunity attacks.
+**Дії**: Міньйони в загоні діють разом у ваш хід у будь-якому порядку - до, між або після ваших дій. Вони можуть або виконати дію руху й основну дію (крім «Лікування» та «Оборони»), або дію руху й маневр, або дві дії руху. Окремі міньйони також можуть робити атаки можливості.
 
-**Free Strikes**: Unless otherwise specified, a minion’s free strike has a distance of Melee 1 or Ranged 5 and deals the damage value listed on the stat block. The minion can choose to deal untyped damage or the damage type next to the damage value.
+**Вільні удари**: Якщо не вказано інакше, вільний удар міньйона має дальність Ближня 1 або Дальня 5 і завдає значення шкоди, вказане в блоці характеристик. Міньйон може обрати безтипну шкоду або тип шкоди, зазначений поруч зі значенням шкоди.
 
-**Damage**: Whenever multiple minions strike the same target simultaneously, the damage is added together and treated as a single strike. Minions in a squad targeting the same target with a signature ability only apply one instance of the signature ability while each additional minion increases the damage by a number equal to their free strike value. 
+**Шкода**: Коли кілька міньйонів одночасно бʼють одну й ту саму ціль, шкода додається й розглядається як один удар. Якщо міньйони в загоні націлюють сигнатурну здібність на ту саму ціль, сигнатурна здібність застосовується лише один раз, а кожен додатковий міньйон збільшує шкоду на число, рівне значенню його вільного удару.
 
-**Surges**: Your minions share your pool of surges and can apply them to their strikes. Whenever one or more of your minions would gain a surge during a turn, you gain that surge instead.
+**Сплески**: Ваші міньйони користуються вашим пулом сплесків і можуть застосовувати їх до своїх ударів. Щоразу, коли один або більше ваших міньйонів мали б отримати сплеск протягом ходу, натомість цей сплеск отримуєте ви.
 
-**Maneuvers**: Unless otherwise specified on the minions’ stat block, a squad uses their maneuver together as a unit. If a maneuver targets a single creature, all minions in the squad target the same creature. If a maneuver requires a power roll, the result is equal to 8 + the minions’ characteristic + the number of squad members within distance of the maneuver.
+**Маневри**: Якщо не вказано інакше в блоці характеристик міньйонів, загін виконує свій маневр разом як єдине ціле. Якщо маневр націлюється на одну істоту, усі міньйони загону націлюються на ту саму істоту. Якщо маневр потребує кидка сили, результат дорівнює 8 + характеристика міньйонів + кількість членів загону в межах дальності маневру.
 
-**Individual Maneuvers**: An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from prone or escaping a grab. If they do, they can’t take part in their squad’s main action or maneuver.
+**Індивідуальні маневри**: Окремий міньйон може використати маневр, щоб полегшити власне становище, наприклад підвестися, якщо лежить, або втекти з захвату. Якщо він так робить, то не може брати участі в основній дії або маневрі свого загону.
 
-**Characteristics**: Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion’s stat block refers to an Р or uses a potency (such as M < [слабкий]). 
+**Характеристики**: Ваші міньйони мають власні характеристики для опору потужностям, маневрам і для виконання тестів. Ви використовуєте власні характеристики там, де блок характеристик міньйона посилається на Р або використовує потужність (наприклад, С < [слабкий]).
 
-**Unconscious**: If you are unconscious or unable to act on your turn, you can’t summon new minions. Additionally, your remaining minions can’t deal damage; they can only act to bring you to safety.
+**Непритомність**: Якщо ви непритомні або не можете діяти у свій хід, ви не можете призивати нових міньйонів. Крім того, ваші міньйони, що залишилися, не можуть завдавати шкоди; вони можуть діяти лише для того, щоб відвести вас у безпеку.
 
-**End of Combat**: At the end of combat, your minions finish their tasks (such as carrying someone to safety) and are then dismissed.
+**Кінець бою**: Наприкінці бою ваші міньйони завершують свої завдання (наприклад, несуть когось у безпечне місце), а потім відпускаються.
 
-### Minions Outside of Combat
+### Міньйони поза боєм
 
-While outside of combat, you can have up to 4 minions summoned without spending essence. You can freely summon your signature minions this way. For other minions, while you have a number of Victories equal to the minion’s essence cost or more, you can summon up to the set number of minions listed on their stat block.
+Поза боєм ви можете мати до 4 призваних міньйонів, не витрачаючи Есенцію. Ви можете вільно призивати таким чином своїх сигнатурних міньйонів. Для інших міньйонів: якщо у вас є кількість Перемог, не менша за вартість міньйона в Есенції, ви можете призвати до вказаної в його блоці характеристик кількості міньйонів.
 
-Each of your minions can be given a simple task and a destination you’ve previously visited and they’ll fulfill it to the best of their ability. Example tasks include sending messages, scouting, and carrying supplies. Your minions aren’t followers and can’t make project rolls until you can summon specialists.
+Кожному з ваших міньйонів можна дати просте завдання і пункт призначення, який ви вже відвідували, і вони виконають це настільки добре, наскільки зможуть. Приклади таких завдань: доставка повідомлень, розвідка й перенесення припасів. Ваші міньйони не є послідовниками й не можуть робити кидки проєктів, доки ви не навчитеся призивати спеціалістів.
 
-When combat begins, any of your minions who were summoned outside of combat finish their tasks and are then dismissed.`,
+Коли починається бій, усі ваші міньйони, яких було призвано поза боєм, завершують свої завдання, а потім відпускаються.`,
 					tag: 'minions'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'summoner-1-3',
-						name: 'Summoner Strike',
-						description: 'A sudden burst of energy erupts from your implement and shocks your foes’ nerves.',
-						type: FactoryLogic.type.createMain({ qualifiers: ['can be used as a free strike'], freeStrike: true }),
+						name: 'Удар призивача',
+						description: 'Раптовий сплеск енергії зривається з вашого імплемента й вражає нерви ворогів.',
+						type: FactoryLogic.type.createMain({ qualifiers: ['можна використовувати як вільний удар'], freeStrike: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 						distance: [
 							FactoryLogic.distance.createMelee(),
@@ -142,10 +142,10 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('R damage. If the target has Р < [слабкий], they are slowed (save ends).'),
+							FactoryLogic.createAbilitySectionText('Р шкоди. Якщо ціль має Р < [слабкий], вона уповільнена (рят. кидок закінчує).'),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Особливе',
-								effect: 'This ability has the Charge keyword when it’s used as a melee strike.'
+								effect: 'Ця здібність має ключове слово «Ривок», коли використовується як ближній удар.'
 							}),
 							FactoryLogic.createAbilitySectionPackage('summoner-strike')
 						]
@@ -154,34 +154,34 @@ When combat begins, any of your minions who were summoned outside of combat fini
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'summoner-1-4',
-						name: 'Strike For Me',
-						description: 'Your minions fight in your stead.',
-						type: FactoryLogic.type.createTrigger('You use a triggered action to make a free strike or use a signature ability.', { free: true }),
+						name: 'Бий за мене',
+						description: 'Ваші міньйони б’ються замість вас.',
+						type: FactoryLogic.type.createTrigger('Ви використовуєте тригерну дію, щоб завдати вільного удару або використати сигнатурну здібність.', { free: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSummoner()],
-						target: 'Each of your minions',
+						target: 'Кожен ваш міньйон',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Reason,
-									tier1: 'Up to three targets each make a free strike',
-									tier2: 'Up to five targets each make a free strike',
-									tier3: 'Up to seven targets each make a free strike'
+									tier1: 'До трьох цілей кожна здійснює безкоштовний удар',
+									tier2: 'До пʼяти цілей кожна здійснює безкоштовний удар',
+									tier3: 'До семи цілей кожна здійснює безкоштовний удар'
 								})
 							),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Особливе',
-								effect: 'On a natural 19 or 20, each target makes a free strike.'
+								effect: 'При натуральних 19 або 20 кожна ціль завдає вільного удару.'
 							}),
-							FactoryLogic.createAbilitySectionText('Your minions act in place of you making a free strike or using a signature ability. If you were granted the triggered action against a specific target, your minions must strike the same target. If the triggered action granted you a signature ability, you have an edge on the power roll.')
+							FactoryLogic.createAbilitySectionText('Ваші міньйони діють замість того, щоб ви завдавали вільного удару або використовували сигнатурну здібність. Якщо тригерна дія була надана вам проти конкретної цілі, ваші міньйони мусять бити ту саму ціль. Якщо тригерна дія надала вам сигнатурну здібність, ви отримуєте перевагу на кидок сили.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'summoner-1-5',
-						name: 'Call Forth',
-						description: 'My power is yours, and yours, mine. I summon thee.',
+						name: 'Поклич',
+						description: 'Моя сила - твоя, а твоя - моя. Закликаю тебе.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSummoner()],
@@ -189,14 +189,14 @@ When combat begins, any of your minions who were summoned outside of combat fini
 						cost: 1,
 						repeatable: true,
 						sections: [
-							FactoryLogic.createAbilitySectionText('You summon one or more minions from your portfolio into unoccupied spaces within distance. Choose one of the following options.'),
+							FactoryLogic.createAbilitySectionText('Ви призиваєте одного чи кількох міньйонів зі свого портфеля в незайняті простори в межах дальності. Виберіть один із наступних варіантів.'),
 							FactoryLogic.createAbilitySectionField({
-								name: 'Signature Minions',
-								effect: 'You summon one signature minion for each essence you spend on this ability.'
+								name: 'Сигнатурні міньйони',
+								effect: 'Ви призиваєте одного сигнатурного міньйона за кожну Есенцію, витрачену на цю здібність.'
 							}),
 							FactoryLogic.createAbilitySectionField({
-								name: 'All Other Minions',
-								effect: 'You summon the set number of minions listed on the stat block for their essence cost.'
+								name: 'Усі інші міньйони',
+								effect: 'Ви призиваєте вказану в блоці характеристик кількість міньйонів за їхню вартість в Есенції.'
 							})
 						]
 					})
@@ -204,49 +204,49 @@ When combat begins, any of your minions who were summoned outside of combat fini
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'summoner-1-6',
-						name: 'Minion Bridge',
-						description: 'Your minions do everything in their power to form a safe path for you to cross.',
+						name: 'Міст із міньйонів',
+						description: 'Ваші міньйони роблять усе можливе, щоб утворити для вас безпечний шлях.',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'One of your minions',
+						target: 'Один ваш міньйон',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-You shift into a square adjacent to the target, including vertically.
+Ви зміщуєтеся в клітинку поруч із ціллю, включно по вертикалі.
 
-You can shift into squares that contain one of your minions, even if they occupy difficult terrain. Each time you shift into a square that contains one of your minions while using this maneuver, you can shift an additional square.`),
+Ви можете зміщуватися в клітинки, які містять одного з ваших міньйонів, навіть якщо це складна місцевість. Щоразу, коли під час цього маневру ви зміщуєтеся в клітинку, що містить одного з ваших міньйонів, ви можете зміститися ще на одну додаткову клітинку.`),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'An adjacent ally can shift alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.'
+								effect: 'Суміжний союзник може зміщуватися разом із вами під час цього переміщення. Він мусить завершити рух у незайнятій клітинці поруч з останнім міньйоном, крізь якого ви пройшли.'
 							})
 						]
 					})
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'summoner-1-7',
-					name: 'Formation',
-					description: 'You’ve practiced a specific formation for your minions.',
+					name: 'Формація',
+					description: 'Ви відпрацювали особливу формацію для своїх міньйонів.',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-1-7a',
-								name: 'Horde Formation',
-								description: 'Your maximum number of minions increases by 4 and you summon up to four of your signature minions at the start of each of your turns instead of three.'
+								name: 'Ордна формація',
+								description: 'Ваш максимум міньйонів збільшується на 4, а на початку кожного свого ходу ви призиваєте до чотирьох сигнатурних міньйонів замість трьох.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-1-7b',
-								name: 'Platoon Formation',
-								description: 'Whenever one of your squads uses a damaging ability, choose one target of that ability to take additional damage equal to your Reason score.'
+								name: 'Взводна формація',
+								description: 'Щоразу, коли один із ваших загонів використовує здібність, що завдає шкоди, оберіть одну ціль цієї здібності, щоб вона отримала додаткову шкоду, рівну вашому показнику Розуму.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-1-7c',
-								name: 'Elite Formation',
-								description: 'Each of your minions have their Stamina increased by 3 and their stability increased by 1.'
+								name: 'Елітна формація',
+								description: 'Кожен ваш міньйон отримує +3 до Витривалості та +1 до Стійкості.'
 							}),
 							value: 1
 						},
@@ -256,8 +256,8 @@ You can shift into squares that contain one of your minions, even if they occupy
 								features: [
 									FactoryLogic.feature.create({
 										id: 'summoner-1-7da',
-										name: 'Leader Formation',
-										description: 'You aren’t affected by excess damage after all minions in a squad are dead. If your minion is within your Summoner’s Range when they take damage, you can choose to take damage in place of the minion.'
+										name: 'Формація ватажка',
+										description: 'На вас не впливає надлишкова шкода після загибелі всіх міньйонів у загоні. Якщо ваш міньйон перебуває в межах дальності призивача, коли отримує шкоду, ви можете обрати отримати цю шкоду замість нього.'
 									}),
 									FactoryLogic.feature.createProficiency({
 										id: 'summoner-1-7db',
@@ -272,22 +272,22 @@ You can shift into squares that contain one of your minions, even if they occupy
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'summoner-1-8',
-					name: 'Tactic Call',
-					description: 'You have a special command you can issue to your minions.',
+					name: 'Тактичний наказ',
+					description: 'У вас є особливий наказ, який ви можете віддати своїм міньйонам.',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'summoner-1-8a',
-									name: 'Focus Fire!',
-									description: 'You ensure the enemy can’t escape the incoming attack.',
-									type: FactoryLogic.type.createTrigger('The target deals damage to another creature.'),
+									name: 'Зосередьте вогонь!',
+									description: 'Ви дбаєте, щоб ворог не вислизнув від атаки, що насувається.',
+									type: FactoryLogic.type.createTrigger('Ціль завдає шкоди іншій істоті.'),
 									distance: [FactoryLogic.distance.createSummoner()],
 									target: 'На себе або одного союзника',
 									sections: [
-										FactoryLogic.createAbilitySectionText('The target gains a surge for each of your minions adjacent to them (up to a maximum of 3 surges), which they can use on the triggering damage'),
+										FactoryLogic.createAbilitySectionText('Ціль отримує по 1 сплеску за кожного вашого міньйона поруч із нею (максимум 3 сплески), які вона може витратити на тригерну шкоду.'),
 										FactoryLogic.createAbilitySectionSpend({
-											effect: 'If the triggering damage is from an ability that uses a power roll, the power roll gains an edge.'
+											effect: 'Якщо тригерна шкода завдається здібністю з кидком сили, цей кидок сили отримує перевагу.'
 										})
 									]
 								})
@@ -298,16 +298,16 @@ You can shift into squares that contain one of your minions, even if they occupy
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'summoner-1-8b',
-									name: 'Impede!',
-									description: 'You order a minion to get in the way.',
-									type: FactoryLogic.type.createTrigger('The target starts their turn, moves, or is force moved.'),
+									name: 'Перешкодь!',
+									description: 'Ви наказуєте міньйону стати на заваді.',
+									type: FactoryLogic.type.createTrigger('Ціль починає свій хід, рухається або її примусово переміщують.'),
 									distance: [FactoryLogic.distance.createSummoner()],
 									target: 'Одна істота',
 									sections: [
-										FactoryLogic.createAbilitySectionText('You summon a signature minion in an unoccupied space adjacent to the target. If the target is force moved into the minion, you can choose to make the target take no damage from the collision.'),
+										FactoryLogic.createAbilitySectionText('Ви призиваєте сигнатурного міньйона в незайнятий простір поруч із ціллю. Якщо ціль примусово переміщують у міньйона, ви можете обрати, щоб ціль не отримала шкоди від зіткнення.'),
 										FactoryLogic.createAbilitySectionField({
 											name: 'Особливе',
-											effect: 'Instead of summoning a new minion, you can command one of your minions within distance to shift up to their speed toward a square adjacent to the target before any additional effects occur.'
+											effect: 'Замість призову нового міньйона ви можете наказати одному зі своїх міньйонів у межах дальності зміститися на свою швидкість у бік клітинки поруч із ціллю до того, як відбудуться будь-які додаткові ефекти.'
 										})
 									]
 								})
@@ -318,17 +318,17 @@ You can shift into squares that contain one of your minions, even if they occupy
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'summoner-1-8c',
-									name: 'Not Yet!',
-									description: 'I command you to not die.',
-									type: FactoryLogic.type.createTrigger('The target receives enough damage to die or be destroyed.'),
+									name: 'Ще не час!',
+									description: 'Я наказую тобі не помирати.',
+									type: FactoryLogic.type.createTrigger('Ціль отримує достатньо шкоди, щоб померти або бути знищеною.'),
 									distance: [FactoryLogic.distance.createSummoner()],
 									target: 'Один союзник',
 									sections: [
 										FactoryLogic.createAbilitySectionField({
 											name: 'Особливе',
-											effect: 'If the target is a minion, they must be the only minion remaining in their squad.'
+											effect: 'Якщо ціль є міньйоном, він має бути єдиним міньйоном, що залишився в своєму загоні.'
 										}),
-										FactoryLogic.createAbilitySectionText('The damage the target receives is reduced by an amount that leaves the target alive with 1 point of Stamina.')
+										FactoryLogic.createAbilitySectionText('Шкода, яку отримує ціль, зменшується настільки, щоб залишити її живою з 1 пунктом Витривалості.')
 									]
 								})
 							}),
@@ -338,15 +338,15 @@ You can shift into squares that contain one of your minions, even if they occupy
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'summoner-1-8d',
-									name: 'Take the Hit!',
-									description: 'You call upon a minion to use their body to dampen the blow.',
-									type: FactoryLogic.type.createTrigger('The target is targeted by a strike.'),
+									name: 'Прийми удар!',
+									description: 'Ви кличете міньйона використати своє тіло, щоб послабити удар.',
+									type: FactoryLogic.type.createTrigger('Ціль стає ціллю удару.'),
 									distance: [FactoryLogic.distance.createSummoner()],
 									target: 'На себе або одного союзника',
 									sections: [
-										FactoryLogic.createAbilitySectionText('If one of your minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.'),
+										FactoryLogic.createAbilitySectionText('Якщо один із ваших міньйонів суміжний із ціллю та перебуває в межах дальності удару, він стає новою ціллю цього удару.'),
 										FactoryLogic.createAbilitySectionSpend({
-											effect: 'Instead of commanding an existing minion, you summon a signature minion into an unoccupied space adjacent to the target to take the strike.'
+											effect: 'Замість того щоб наказувати наявному міньйону, ви призиваєте сигнатурного міньйона в незайнятий простір поруч із ціллю, щоб він прийняв удар.'
 										})
 									]
 								})
@@ -366,16 +366,16 @@ You can shift into squares that contain one of your minions, even if they occupy
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-2-1',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-2-2',
-					name: 'Dominion',
+					name: 'Панування',
 					description: `
-Once per encounter, you can use a maneuver to summon a fixture from your minions’ native manifold or origin into an unoccupied space on the ground within your Summoner’s Range. You can spend 1 essence to relocate the fixture as a free maneuver on your turn. The fixture stays until the end of the encounter, until its Stamina is reduced to 0, or until you become dying.
+Раз за зустріч ви можете використати маневр, щоб призвати прояв із рідного маніфолду чи місця походження ваших міньйонів у незайнятий простір на землі в межах дальності призивача. Ви можете витратити 1 Есенцію, щоб перемістити цей прояв як безкоштовний маневр у свій хід. Прояв лишається до кінця зустрічі, доки його Витривалість не зведуть до 0 або доки ви не почнете вмирати.
 
-Your fixture gains additional features at 5th and 9th level.`
+Ваш прояв отримує додаткові риси на 5-му й 9-му рівнях.`
 				})
 			]
 		},
@@ -384,48 +384,48 @@ Your fixture gains additional features at 5th and 9th level.`
 			features: [
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-3-1',
-					name: 'Summoner’s Kit',
+					name: 'Комплект призивача',
 					description: `
-You conjure a kit for yourself. This kit includes an implement, such as a rod or a baton, which grants you the following benefits:
+Ви чаклунством створюєте собі комплект. Цей комплект містить імплемент, наприклад жезл або батон, і надає вам такі переваги:
 
-* The damage of your Summoner Strike ability increases to twice your Reason score.
-* The potency of your Summoner Strike ability increases to Р < [середній].
-* The distance of your Summoner Strike ability is now equal to your Summoner’s Range.`,
+* Шкода вашої здібності «Удар призивача» збільшується до подвоєного показника вашого Розуму.
+* Потужність вашої здібності «Удар призивача» зростає до Р < [середній].
+* Дальність вашої здібності «Удар призивача» тепер дорівнює дальності призивача.`,
 					tag: 'summoner-strike'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'summoner-3-2',
-					name: 'Ward',
+					name: 'Оберіг',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2a',
-								name: 'Conjured Ward',
-								description: 'You are clad in the natural defenses of your portfolio (bones, fairy wood, stone, writhing flesh). You gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels.'
+								name: 'Призваний оберіг',
+								description: 'Вас вкривають природні захисти вашого портфеля (кістки, фейське дерево, камінь, звивиста плоть). Ви отримуєте +3 до Витривалості, і цей бонус зростає ще на 3 на 4-му, 7-му та 10-му рівнях.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2b',
-								name: 'Emergency Ward',
-								description: 'The first time each round you take damage, you can use a free triggered action to shift 1 after the triggering effect resolves and summon a signature minion into the square you left (as long as there is enough space).'
+								name: 'Надзвичайний оберіг',
+								description: 'Вперше за раунд, коли ви отримуєте шкоду, ви можете після завершення тригерного ефекту використати безкоштовну тригерну дію, щоб зміститися на 1 клітинку й призвати сигнатурного міньйона в клітинку, яку ви щойно покинули (якщо там достатньо місця).'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2c',
-								name: 'Howling Ward',
-								description: 'You create a 1-aura vortex of slicing magic around you when you enter combat. An enemy that starts their turn adjacent to you takes damage equal to your Reason.'
+								name: 'Виючий оберіг',
+								description: 'Коли ви вступаєте в бій, навколо вас виникає аура 1 із ріжучої магії. Ворог, який починає свій хід поруч із вами, отримує шкоду, рівну вашому Розуму.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2d',
-								name: 'Snare Ward',
-								description: 'Whenever an adjacent creature deals damage to you, you can use a free triggered action to pull that creature toward one of your minions within your Summoner’s Range a number of squares equal to your Reason score.'
+								name: 'Ловчий оберіг',
+								description: 'Щоразу, коли суміжна істота завдає вам шкоди, ви можете використати безкоштовну тригерну дію, щоб притягнути цю істоту до одного зі своїх міньйонів у межах дальності призивача на кількість клітинок, рівну вашому показнику Розуму.'
 							}),
 							value: 1
 						}
@@ -484,33 +484,33 @@ You conjure a kit for yourself. This kit includes an implement, such as a rod or
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-4-3',
-					name: 'Minion Improvement',
+					name: 'Покращення міньйонів',
 					description: `
-Your maximum number of minions increases by 4.
+Ваш максимум міньйонів збільшується на 4.
 
-You can increase each of your minions’ Stamina as shown on the table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 3).
+Ви можете підвищити Витривалість кожного свого міньйона, як показано в таблиці. Крім того, кожен міньйон, що отримує приріст Витривалості, може вважати свої характеристики на 1 вищими для опору потужностям (до максимуму 3).
 
-| Minion           | Stamina Increase |
-|:=================|:=================|
-| Signature Minion | Stamina +1       |
-| 3-Essence Minion | Stamina +3       |
-| 5-Essence Minion | Stamina +2.      |`,
+| Міньйон            | Приріст Витривалості |
+|:===================|:=====================|
+| Сигнатурний міньйон | Витривалість +1      |
+| 3-есенційний міньйон | Витривалість +3      |
+| 5-есенційний міньйон | Витривалість +2      |`,
 					tag: 'minions'
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-4-4',
-					name: 'Essence Salvage',
-					description: 'The first time each combat round that any minion unwillingly dies within your Summoner’s Range, you gain 2 essence instead of 1. '
+					name: 'Повернення Есенції',
+					description: 'Вперше за бойовий раунд, коли будь-який міньйон гине не з власної волі в межах дальності призивача, ви отримуєте 2 Есенції замість 1.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-4-5',
-					name: 'Minion Chain',
+					name: 'Ланцюг міньйонів',
 					description: `
-Whenever you use Minion Bridge as a maneuver, each of your minions within your Summoner’s Range can shift up to their speed before the maneuver takes effect, as long as each minion that shifts ends their movement adjacent to another one of your minions.
+Щоразу, коли ви використовуєте «Міст із міньйонів» як маневр, кожен ваш міньйон у межах дальності призивача може зміститися на свою швидкість до того, як маневр подіє, за умови, що кожен міньйон, який зміщується, завершує рух поруч з іншим вашим міньйоном.
 
-Additionally, your minions can chain themselves together to function as a ladder or a swinging rope. When your minions move as a part of using Minion Bridge, each minion can use this movement to shift into a position directly beneath another one of your minions, hoisting them and each other minion they have hoisted, until they form a chain. The chain can then choose to fall across an unoccupied space and/or the topmost minion grabs an object to keep the chain steady.
+Крім того, ваші міньйони можуть зчіплюватися між собою, щоб слугувати драбиною або розгойданою мотузкою. Коли ваші міньйони рухаються як частина використання «Мосту з міньйонів», кожен із них може використати цей рух, щоб зміститися в позицію безпосередньо під іншим вашим міньйоном, підіймаючи його та кожного міньйона, якого той тримає, доки вони не утворять ланцюг. Потім ланцюг може впасти через незайнятий простір та/або верхній міньйон може вхопитися за предмет, щоб утримувати ланцюг стійким.
 
-The chain lasts until the start of your next turn or until the chain is no longer steady. The chain can also end when a minion in the chain is destroyed or when you command your minions to let go as a free maneuver. All size 1 minions count as one square when determining the chain’s length.`
+Ланцюг триває до початку вашого наступного ходу або доки перестає бути стійким. Він також може закінчитися, коли міньйон у ланцюгу знищений або коли ви накажете міньйонам розчепитися як безкоштовний маневр. Усі міньйони розміру 1 вважаються однією клітинкою при визначенні довжини ланцюга.`
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-4-6'
@@ -529,31 +529,31 @@ The chain lasts until the start of your next turn or until the chain is no longe
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-6-1',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-6-2',
-					name: 'Return to the Source',
+					name: 'Повернення до джерела',
 					description: `
-You can translate yourself and your allies into the space that your minions come from, as if summoning in reverse.
+Ви можете перенести себе й союзників у простір, звідки походять ваші міньйони, ніби виконуєте призов навпаки.
 
-When you take a respite, you teleport to your circle’s source manifold or point of origin, as shown on the table. You can bring along any allies to gather resources or research details about that location’s denizens. You are seen as a native resident of the location, but your allies might be seen as intruders.
+Коли ви починаєте відпочинок, то телепортуєтеся до маніфолду-джерела або місця походження свого кола, як показано в таблиці. Ви можете взяти з собою будь-яких союзників, щоб збирати ресурси або досліджувати відомості про мешканців цього місця. Вас там сприймають як місцевого, але ваших союзників можуть вважати чужинцями.
 
-| Circle    | Manifold or Point of Origin                           |
-|:==========|:======================================================|
-| Blight    | Abyssal Waste                                         |
-| Graves    | Necropolitan Ruins (located within the Abyssal Waste) |
-| Spring    | Arcadia                                               |
-| Storms    | Quintessence                                          |`
+| Коло      | Маніфолд або місце походження                             |
+|:==========|:==========================================================|
+| Скверни   | Абісальна пустка                                          |
+| Могил     | Некропольні руїни (розташовані в Абісальній пустці)       |
+| Весни     | Аркадія                                                   |
+| Бур       | Квінтесенція                                              |`
 				}),
 				FactoryLogic.feature.createMultiple({
 					id: 'summoner-6-3',
 					features: [
 						FactoryLogic.feature.createPackageContent({
 							id: 'summoner-6-3a',
-							name: 'Minion Machinations',
-							description: 'Your maximum number of followers increases by 2.',
+							name: 'Міньйонські махінації',
+							description: 'Ваш максимальний розмір загону послідовників збільшується на 2.',
 							tag: 'minions'
 						}),
 						FactoryLogic.feature.createFollower({
@@ -568,38 +568,38 @@ When you take a respite, you teleport to your circle’s source manifold or poin
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'summoner-6-4a',
-					name: 'Kit Improvement',
-					description: 'You can choose one additional ward from your Summoner’s Kit.',
+					name: 'Покращення комплекту',
+					description: 'Ви можете обрати ще один додатковий оберіг зі свого комплекту призивача.',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2a',
-								name: 'Conjured Ward',
-								description: 'You are clad in the natural defenses of your portfolio (bones, fairy wood, stone, writhing flesh). You gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels.'
+								name: 'Призваний оберіг',
+								description: 'Вас вкривають природні захисти вашого портфеля (кістки, фейське дерево, камінь, звивиста плоть). Ви отримуєте +3 до Витривалості, і цей бонус зростає ще на 3 на 4-му, 7-му та 10-му рівнях.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2b',
-								name: 'Emergency Ward',
-								description: 'The first time each round you take damage, you can use a free triggered action to shift 1 after the triggering effect resolves and summon a signature minion into the square you left (as long as there is enough space).'
+								name: 'Надзвичайний оберіг',
+								description: 'Вперше за раунд, коли ви отримуєте шкоду, ви можете після завершення тригерного ефекту використати безкоштовну тригерну дію, щоб зміститися на 1 клітинку й призвати сигнатурного міньйона в клітинку, яку ви щойно покинули (якщо там достатньо місця).'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2c',
-								name: 'Howling Ward',
-								description: 'You create a 1-aura vortex of slicing magic around you when you enter combat. An enemy that starts their turn adjacent to you takes damage equal to your Reason.'
+								name: 'Виючий оберіг',
+								description: 'Коли ви вступаєте в бій, навколо вас виникає аура 1 із ріжучої магії. Ворог, який починає свій хід поруч із вами, отримує шкоду, рівну вашому Розуму.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2d',
-								name: 'Snare Ward',
-								description: 'Whenever an adjacent creature deals damage to you, you can use a free triggered action to pull that creature toward one of your minions within your Summoner’s Range a number of squares equal to your Reason score.'
+								name: 'Ловчий оберіг',
+								description: 'Щоразу, коли суміжна істота завдає вам шкоди, ви можете використати безкоштовну тригерну дію, щоб притягнути цю істоту до одного зі своїх міньйонів у межах дальності призивача на кількість клітинок, рівну вашому показнику Розуму.'
 							}),
 							value: 1
 						}
@@ -607,8 +607,8 @@ When you take a respite, you teleport to your circle’s source manifold or poin
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-6-4b',
-					name: 'Kit Improvement',
-					description: 'Whenever you reduce an enemy to 0 Stamina with your Summoner Strike ability, you can use Call Forth as a free maneuver. Minions summoned this way are unable to act during this turn.',
+					name: 'Покращення комплекту',
+					description: 'Щоразу, коли ви зводите ворога до 0 Витривалості своєю здібністю «Удар призивача», ви можете використати «Поклич» як безкоштовний маневр. Призвані таким чином міньйони не можуть діяти цього ходу.',
 					tag: 'summoner-strike'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
@@ -647,35 +647,35 @@ When you take a respite, you teleport to your circle’s source manifold or poin
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-7-2',
-					name: 'Minion Improvement',
+					name: 'Покращення міньйонів',
 					description: `
-At the start of each of your turns during combat, you can summon one additional signature minion at no cost into an unoccupied space within your Summoner’s Range (no action required).
+На початку кожного свого ходу під час бою ви можете безкоштовно призвати ще одного додаткового сигнатурного міньйона в незайнятий простір у межах дальності призивача (без дії).
 
-Additionally, you can increase each of your minions’ Stamina as shown on the 7th-Level Minion Stamina Increase table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 4).
+Крім того, ви можете підвищити Витривалість кожного свого міньйона, як показано в таблиці приросту Витривалості міньйонів 7-го рівня. Також кожен міньйон, який отримує приріст Витривалості, може вважати свої характеристики на 1 вищими для опору потужностям (до максимуму 4).
 
-| Minion           | Stamina Increase              |
-|:=================|:==============================|
-| Signature Minion | Stamina +1 (to a total of +2) |
-| 3-Essence Minion | Stamina +3 (to a total of +6) |
-| 5-Essence Minion | Stamina +2 (to a total of +4) |
-| 7-Essence Minion | Stamina +5                    |`,
+| Міньйон             | Приріст Витривалості                |
+|:====================|:====================================|
+| Сигнатурний міньйон | Витривалість +1 (разом +2)          |
+| 3-есенційний міньйон | Витривалість +3 (разом +6)          |
+| 5-есенційний міньйон | Витривалість +2 (разом +4)          |
+| 7-есенційний міньйон | Витривалість +5                     |`,
 					tag: 'minions'
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'summoner-7-3',
-					name: 'Font of Creation',
+					name: 'Джерело творення',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'На початку вашого ходу',
 					value: '3',
 					replacesTags: ['start']
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-7-4',
-					name: 'Their Life for Mine',
+					name: 'Їхнє життя за моє',
 					description: `
-If you or an ally within your Summoner’s Range would die from an effect that isn’t age related, you sacrifice all your active minions (minimum 1) and spend all your essence (minimum 1) as a free triggered action to bring the target back to life, reconstructing the damaged parts of their body with summoned material related to your portfolio. The target comes back with 0 Stamina plus 1 Stamina for each minion and essence used in the effect. You must have at least one fragment of the creature’s remains, and the creature’s soul must be willing to return to life for the effect to work.
+Якщо ви або союзник у межах дальності призивача мали б померти від ефекту, не повʼязаного зі старістю, ви жертвуєте всіх своїх активних міньйонів (мінімум 1) і витрачаєте всю свою Есенцію (мінімум 1) як безкоштовну тригерну дію, щоб повернути ціль до життя, відновлюючи пошкоджені частини її тіла призваною матерією, повʼязаною з вашим портфелем. Ціль повертається з 0 Витривалості плюс 1 Витривалістю за кожного міньйона й кожну Есенцію, витрачених на ефект. Для роботи ефекту ви мусите мати принаймні один уламок решток істоти, а її душа має бажати повернутися до життя.
 
-You can’t use this feature again until you gain a new level, or until you spend 3 eidos to use it.`
+Ви не можете використати цю рису знову, доки не отримаєте новий рівень або доки не витратите 3 Ейдосу, щоб скористатися нею.`
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-7-5'
@@ -690,22 +690,22 @@ You can’t use this feature again until you gain a new level, or until you spen
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-8-2',
-					name: 'Portfolio Champion',
+					name: 'Чемпіон портфеля',
 					description: `
-Your circle now allows you to add a champion to your portfolio. Champions follow the same rules as your other minions, with the following exceptions:
+Ваше коло тепер дозволяє додати чемпіона до вашого портфеля. Чемпіони дотримуються тих самих правил, що й інші ваші міньйони, за такими винятками:
 
-* You can only summon and command one instance of your champion.
-* Your champion is in their own squad that does not count toward your maximum number of squads.
-* Your champion can regain Stamina and gain temporary Stamina.
-* Your champion uses your Recoveries to regain Stamina.
-* Your champion can take the Heal and Defend Actions.
-* Your champion uses the normal rules for maneuvers.
-* You have an edge whenever you use an ability with the Champion keyword from your Champion’s space.
-* Your champion refuses to be referred to as a minion.
+* Ви можете призвати й наказувати лише одному примірнику свого чемпіона.
+* Ваш чемпіон перебуває у власному загоні, який не рахується до вашого максимального числа загонів.
+* Ваш чемпіон може відновлювати Витривалість і отримувати тимчасову Витривалість.
+* Ваш чемпіон використовує ваші Відновлення, щоб відновлювати Витривалість.
+* Ваш чемпіон може виконувати дії «Лікування» та «Оборона».
+* Ваш чемпіон використовує звичайні правила для маневрів.
+* Ви маєте перевагу щоразу, коли використовуєте здібність із ключовим словом «Чемпіон» із простору свого чемпіона.
+* Ваш чемпіон відмовляється, щоб його називали міньйоном.
 
-After summoning a champion, you can’t summon them again until you earn a Victory.
+Після призову чемпіона ви не можете призвати його знову, доки не здобудете Перемогу.
 
-Your champion gains additional features at 10th level. This includes a special Champion Action ability that costs eidos to use. This ability can be activated once per encounter at the end of any other creature’s turn.`
+Ваш чемпіон отримує додаткові риси на 10-му рівні. Серед них є особлива здібність «Дія чемпіона», на використання якої витрачається Ейдос. Цю здібність можна активувати раз за зустріч наприкінці ходу будь-якої іншої істоти.`
 				})
 			]
 		},
@@ -714,44 +714,44 @@ Your champion gains additional features at 10th level. This includes a special C
 			features: [
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-9-1a',
-					name: 'Kit Improvement',
-					description: 'The potency of your Summoner Strike ability increases to Р < [сильний].',
+					name: 'Покращення комплекту',
+					description: 'Потужність вашої здібності «Удар призивача» зростає до Р < [сильний].',
 					tag: 'summoner-strike'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'summoner-10-1b',
-					name: 'Kit Improvement',
-					description: 'You can choose one additional ward from your Summoner’s Kit.',
+					name: 'Покращення комплекту',
+					description: 'Ви можете обрати ще один додатковий оберіг зі свого комплекту призивача.',
 					options: [
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2a',
-								name: 'Conjured Ward',
-								description: 'You are clad in the natural defenses of your portfolio (bones, fairy wood, stone, writhing flesh). You gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels.'
+								name: 'Призваний оберіг',
+								description: 'Вас вкривають природні захисти вашого портфеля (кістки, фейське дерево, камінь, звивиста плоть). Ви отримуєте +3 до Витривалості, і цей бонус зростає ще на 3 на 4-му, 7-му та 10-му рівнях.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2b',
-								name: 'Emergency Ward',
-								description: 'The first time each round you take damage, you can use a free triggered action to shift 1 after the triggering effect resolves and summon a signature minion into the square you left (as long as there is enough space).'
+								name: 'Надзвичайний оберіг',
+								description: 'Вперше за раунд, коли ви отримуєте шкоду, ви можете після завершення тригерного ефекту використати безкоштовну тригерну дію, щоб зміститися на 1 клітинку й призвати сигнатурного міньйона в клітинку, яку ви щойно покинули (якщо там достатньо місця).'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2c',
-								name: 'Howling Ward',
-								description: 'You create a 1-aura vortex of slicing magic around you when you enter combat. An enemy that starts their turn adjacent to you takes damage equal to your Reason.'
+								name: 'Виючий оберіг',
+								description: 'Коли ви вступаєте в бій, навколо вас виникає аура 1 із ріжучої магії. Ворог, який починає свій хід поруч із вами, отримує шкоду, рівну вашому Розуму.'
 							}),
 							value: 1
 						},
 						{
 							feature: FactoryLogic.feature.create({
 								id: 'summoner-3-2d',
-								name: 'Snare Ward',
-								description: 'Whenever an adjacent creature deals damage to you, you can use a free triggered action to pull that creature toward one of your minions within your Summoner’s Range a number of squares equal to your Reason score.'
+								name: 'Ловчий оберіг',
+								description: 'Щоразу, коли суміжна істота завдає вам шкоди, ви можете використати безкоштовну тригерну дію, щоб притягнути цю істоту до одного зі своїх міньйонів у межах дальності призивача на кількість клітинок, рівну вашому показнику Розуму.'
 							}),
 							value: 1
 						}
@@ -759,13 +759,13 @@ Your champion gains additional features at 10th level. This includes a special C
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-9-1c',
-					name: 'Kit Improvement',
-					description: 'You have a double edge on tests made to dissuade or scare enemy minions or lackeys.'
+					name: 'Покращення комплекту',
+					description: 'Ви маєте подвійну перевагу на тести, щоб відрадити або залякати ворожих міньйонів чи поплічників.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-9-2',
-					name: 'Steward of Two Worlds',
-					description: 'Your clothing and equipment become adorned with distinct and elaborate regalia to make you stand out from your army, like massive rib cage pauldrons, a tooth crested helmet, or a billowing mantle of fire.'
+					name: 'Управитель двох світів',
+					description: 'Ваш одяг і спорядження прикрашаються виразними й вишуканими регаліями, що вирізняють вас серед власної армії: масивними наплічниками з грудної клітки, шоломом із гребенем із зубів або розлогим полум’яним плащем.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'summoner-9-3',
@@ -820,56 +820,56 @@ Your champion gains additional features at 10th level. This includes a special C
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'summoner-10-3',
-					name: 'Minion Improvement',
+					name: 'Покращення міньйонів',
 					description: `
-You now start encounters and round-tracked situations by summoning up to two additional minions for every two Victories you have (in addition to the two you normally summon).
+Тепер на початку зустрічей і ситуацій, що відстежуються раундами, ви призиваєте до двох додаткових міньйонів за кожні дві ваші Перемоги (на додачу до двох, яких зазвичай призиваєте).
 
-Each of your minions’ Stamina improves as shown in the table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 5).
+Витривалість кожного вашого міньйона покращується, як показано в таблиці. Крім того, кожен міньйон, який отримує приріст Витривалості, може вважати свої характеристики на 1 вищими для опору потужностям (до максимуму 5).
 
-| Minion           | Stamina Increase               |
-|:=================|:===============================|
-| Signature Minion | Stamina +1 (to a total of +3)  |
-| 3-Essence Minion | Stamina +3 (to a total of +9)  |
-| 5-Essence Minion | Stamina +2 (to a total of +6)  |
-| 7-Essence minion | Stamina +5 (to a total of +10) |`,
+| Міньйон             | Приріст Витривалості                |
+|:====================|:====================================|
+| Сигнатурний міньйон | Витривалість +1 (разом +3)          |
+| 3-есенційний міньйон | Витривалість +3 (разом +9)          |
+| 5-есенційний міньйон | Витривалість +2 (разом +6)          |
+| 7-есенційний міньйон | Витривалість +5 (разом +10)         |`,
 					tag: 'minions'
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'summoner-10-4',
-					name: 'Eidos',
+					name: 'Ейдос',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
 					description: `
-You gain an epic resource called eidos. When you take a Respite, you gain eidos equal to the XP you gain. You can spend eidos as if it were essence on minions and abilities you have. When you do, you summon up to two bonus signature minions into unoccupied spaces within your Summoner’s Range.
+Ви отримуєте епічний ресурс, що називається ейдосом. Коли ви завершуєте відпочинок, ви отримуєте стільки Ейдосу, скільки XP здобули. Ви можете витрачати Ейдос як Есенцію на своїх міньйонів і здібності. Коли ви робите це, ви призиваєте до двох бонусних сигнатурних міньйонів у незайняті простори в межах дальності призивача.
 
-You and your champion also have access to abilities that can be used by spending eidos (see Their Life for Mine and Portfolio Champion).
+Ви й ваш чемпіон також отримуєте доступ до здібностей, які використовуються за Ейдос (див. «Їхнє життя за моє» і «Чемпіон портфеля»).
 
-Eidos remains until you spend it.`
+Ейдос зберігається, доки ви його не витратите.`
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-10-5',
-					name: 'No Matter the Cost',
-					description: 'Whenever you sacrifice minions, you now reduce the cost of a heroic ability or minion by the same amount (to a minimum of 1) instead of only reducing the cost by 1.'
+					name: 'Будь-якою ціною',
+					description: 'Щоразу, коли ви жертвуєте міньйонами, тепер ви зменшуєте вартість героїчної здібності або міньйона на таку саму величину (до мінімуму 1), а не лише на 1.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'summoner-10-6',
-					name: 'Among our Ranks',
-					description: 'As a respite activity, you summon a willing and not-restrained NPC or player ally to join your party, regardless of distance or manifold. The target stays until the start of your next respite or until they are killed, in which they are immediately dismissed to the place from which they were summoned. You can’t have more than one character summoned in this way.'
+					name: 'У наших лавах',
+					description: 'Як діяльність під час відпочинку ви призиваєте охочого й не скованого неігрового персонажа або союзника-гравця, щоб той приєднався до вашої групи, незалежно від відстані чи маніфолду. Ціль лишається з вами до початку вашого наступного відпочинку або до своєї загибелі, після чого її негайно відправляє назад у місце, звідки її було призвано. Ви не можете мати більше одного персонажа, призваного таким способом.'
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'summoner-10-7',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Intrigue, PerkList.Interpersonal, PerkList.Supernatural]
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'summoner-10-8',
-					name: 'Skill'
+					name: 'Навичка'
 				})
 			]
 		}
@@ -877,8 +877,8 @@ Eidos remains until you spend it.`
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-1',
-			name: 'Essence Transfer',
-			description: 'You pierce your foe and repurpose some of that ‘fiber of their being’ they weren’t using.',
+			name: 'Перенесення Есенції',
+			description: 'Ви пронизуєте ворога й переробляєте частину тієї «тканини його буття», якою він однаково не користувався.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -888,23 +888,23 @@ Eidos remains until you spend it.`
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '5 + Р corruption damage; 2 charges (see below)',
-						tier2: '8 + Р corruption damage; 3 charges',
-						tier3: '11 + Р corruption damage; 4 charges'
+						tier1: '5 + Р шкоди від скверни; 2 заряди (див. нижче)',
+						tier2: '8 + Р шкоди від скверни; 3 заряди',
+						tier3: '11 + Р шкоди від скверни; 4 заряди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText(`
-You can spend charges to activate one of the following effects. You can activate an effect multiple times. All charges disappear after using this ability.
+Ви можете витрачати заряди, щоб активувати один із наведених ефектів. Можна активувати той самий ефект кілька разів. Усі заряди зникають після використання цієї здібності.
 
-* **1 charge**: You or an ally within your Summoner’s Range can spend a recovery.
-* **1 charge**: You or an ally within your Summoner’s Range gain a surge.
-* **2 charges**: You call forth a signature minion into an unoccupied space within your Summoner’s Range.`)
+* **1 заряд**: Ви або союзник у межах дальності призивача можете витратити Відновлення.
+* **1 заряд**: Ви або союзник у межах дальності призивача отримуєте 1 сплеск.
+* **2 заряди**: Ви призиваєте сигнатурного міньйона в незайнятий простір у межах дальності призивача.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-2',
-			name: 'Explosive Parade',
-			description: 'Your minions swell with energy until they can no longer exist in this realm.',
+			name: 'Вибуховий парад',
+			description: 'Ваші міньйони розбухають від енергії, доки більше не можуть існувати в цьому світі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSummoner()],
@@ -914,51 +914,51 @@ You can spend charges to activate one of the following effects. You can activate
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'You summon four signature minions',
-						tier2: 'You summon five signature minions',
-						tier3: 'You summon six signature minions'
+						tier1: 'Ви призиваєте чотирьох сигнатурних міньйонів',
+						tier2: 'Ви призиваєте п’ятьох сигнатурних міньйонів',
+						tier3: 'Ви призиваєте шістьох сигнатурних міньйонів'
 					})
 				),
 				FactoryLogic.createAbilitySectionText(`
-The minions are summoned within distance regardless of your minion maximum and without organizing them into squads. Each newly summoned minion immediately moves up to their speed toward a creature or object.
+Міньйони призиваються в межах дальності незалежно від вашого максимуму міньйонів і без формування загонів. Кожен щойно призваний міньйон негайно рухається на свою швидкість до істоти або предмета.
 
-If they move adjacent to their target, become targeted by an opportunity attack, or stop moving, they explode, dealing 2 damage to one adjacent creature or object and pushing them 1 square. If a target is affected by two or more minions’ explosions, the effects stack. These minions activate no effects upon death, and you gain no essence from their deaths.`),
+Якщо він доходить суміжно до цілі, стає ціллю атаки можливості або припиняє рух, то вибухає, завдаючи 2 шкоди одній суміжній істоті чи предмету й відштовхуючи її на 1 клітинку. Якщо ціль зазнає вибухів двох або більше міньйонів, ефекти накопичуються. Ці міньйони не активують жодних ефектів смерті, а ви не отримуєте Есенції від їхньої загибелі.`),
 				FactoryLogic.createAbilitySectionField({
 					name: 'Особливе',
-					effect: 'In addition to the minions summoned as a part of this ability, you can choose to command any number of your minions within distance, provided they haven’t used a main action or maneuver during the turn.'
+					effect: 'Крім міньйонів, призваних як частина цієї здібності, ви можете обрати наказати будь-якій кількості своїх міньйонів у межах дальності, за умови що вони цього ходу ще не використовували основну дію або маневр.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-3',
-			name: 'Distraction Tactics',
-			description: 'Your minions do the work to draw the heat away from your allies.',
+			name: 'Тактика відволікання',
+			description: 'Ваші міньйони беруть на себе працю, щоб відтягнути увагу від союзників.',
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Особливе',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each minion under your control during the encounter is the target of the following effect:The target’s strikes can inflict I < [слабкий] taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або доки ви не почнете вмирати кожен міньйон під вашим контролем під час цієї зустрічі стає ціллю такого ефекту: удари цілі можуть накладати на ворогів І < [слабкий], спровокований (до кінця ходу). Потужність зростає на 1 за кожного міньйона, який приєднався до удару.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-4',
-			name: 'Rally Cry',
-			description: '“Show them what you’re made of!”',
+			name: 'Закличний крик',
+			description: '«Покажіть їм, з чого ви зроблені!»',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'All allies',
+			target: 'Усі союзники',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Each target chooses between gaining 2 surges or dealing additional damage equal to your Reason on their next strike.')
+				FactoryLogic.createAbilitySectionText('Кожна ціль обирає між отриманням 2 сплесків або додатковою шкодою, рівною вашому показнику Розуму, на своєму наступному ударі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-5',
-			name: 'Summoner\'s Cradle',
-			description: 'You call forth protective forces to keep you all from harm.',
+			name: 'Колиска призивача',
+			description: 'Ви кличете захисні сили, щоб уберегти всіх вас від шкоди.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createSummoner()],
@@ -968,18 +968,18 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '3 Істоти',
-						tier2: 'Four creatures',
-						tier3: 'Five creatures'
+						tier1: '3 істоти',
+						tier2: '4 істоти',
+						tier3: '5 істот'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, each target can use a free triggered action whenever they take damage to reduce the incoming damage by half and then lose this effect.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі кожна ціль може використати безкоштовну тригерну дію, коли отримує шкоду, щоб зменшити вхідну шкоду вдвічі, після чого втрачає цей ефект.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-6',
-			name: 'Summoner\'s Sword',
-			description: 'You draw your strength from the army you surround yourself with and summon a hot blade of energy and fervor.',
+			name: 'Меч призивача',
+			description: 'Ви черпаєте силу з армії, якою оточуєте себе, і призиваєте палахкий клинок енергії та запалу.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 			distance: [FactoryLogic.distance.createMelee(3)],
@@ -989,31 +989,31 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: 'R damage',
-						tier2: '2 + Р damage',
-						tier3: '4 + Р damage'
+						tier1: 'Р шкоди',
+						tier2: '2 + Р шкоди',
+						tier3: '4 + Р шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('This strike deals an additional 2 damage for each ally adjacent to you.')
+				FactoryLogic.createAbilitySectionText('Цей удар завдає додаткові 2 шкоди за кожного союзника поруч із вами.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-7',
-			name: 'Blitz Tactics',
-			description: 'Rush em! CRUSH EM!',
+			name: 'Бліц-тактика',
+			description: 'Вперед на них! РОЗЧАВІТЬ ЇХ!',
 			type: FactoryLogic.type.createManeuver({ free: true }),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Особливе',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, each minion under your control during the encounter is the target of the following effect. The first time on a turn that the target moves through an enemy’s space, the enemy can choose to shift 1 square or be M < [слабкий] (or M < [середній] if the target is larger than the enemy) knocked prone. The potency increases by 1 for each subsequent target that moves through the enemy’s space during the same move action.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або доки ви не почнете вмирати кожен міньйон під вашим контролем під час цієї зустрічі стає ціллю такого ефекту. Вперше за хід, коли ціль проходить крізь простір ворога, цей ворог може обрати зміститися на 1 клітинку або зробити С < [слабкий] (або С < [середній], якщо ціль більша за ворога), інакше падає лежачи. Потужність зростає на 1 за кожну наступну ціль, що проходить крізь простір ворога під час тієї самої дії руху.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-8',
-			name: 'Cavalry Call',
-			description: 'A lone squad appears to disrupt the enemy’s plans and peel off their forces, one by one.',
+			name: 'Поклик кавалерії',
+			description: 'Одинокий загін з’являється, щоб зірвати плани ворога й відтягнути його сили одну за одною.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSummoner()],
@@ -1021,144 +1021,144 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You summon a temporary squad containing 6 of your signature minions regardless of your minion maximum within distance. Whenever one of these minions deals damage to an enemy, the enemy is Р < [середній] compelled to move 5 squares toward the source of the damage (provoking opportunity attacks). The potency increases by 1 for enemies targeted by two or more of these minions.
+Ви призиваєте тимчасовий загін із 6 своїх сигнатурних міньйонів у межах дальності незалежно від свого максимуму міньйонів. Щоразу, коли один із цих міньйонів завдає ворогові шкоди, ворог робить Р < [середній], інакше змушений переміститися на 5 клітинок у бік джерела шкоди (провокуючи атаки можливості). Потужність зростає на 1 для ворогів, по яких націлилися двоє або більше таких міньйонів.
 
-These minions die at the end of your turn, activate no effects upon death, and you gain no essence from their deaths`)
+Ці міньйони гинуть наприкінці вашого ходу, не активують жодних ефектів смерті, а ви не отримуєте Есенції від їхньої загибелі.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-9',
-			name: 'Essence Funnel',
-			description: 'You rapidly summon and sacrifice minions in order to power a devastating blast of magic.',
+			name: 'Воронка Есенції',
+			description: 'Ви швидко призиваєте й жертвуєте міньйонами, щоб підживити нищівний магічний вибух.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 10, value2: 1, within: 1 })],
-			target: 'All enemies and objects',
+			target: 'Усі вороги й предмети',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '5 damage; push 2',
-						tier2: '9 damage; push 4',
-						tier3: '12 damage; push 6'
+						tier1: '5 шкоди; відштовхнути на 2',
+						tier2: '9 шкоди; відштовхнути на 4',
+						tier3: '12 шкоди; відштовхнути на 6'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
 					name: 'Особливе',
-					effect: 'You can choose to kill any number of your minions within your Summoner’s Range as a part of this ability, provided they haven’t used a main action or maneuver during the turn. Each target takes an additional 1 damage, plus 1 damage for each minion killed this way. These minions activate no effects upon death, and you gain no essence from their deaths.'
+					effect: 'Як частину цієї здібності ви можете обрати вбити будь-яку кількість своїх міньйонів у межах дальності призивача, за умови що вони цього ходу ще не використовували основну дію або маневр. Кожна ціль отримує додатково 1 шкоди плюс 1 шкоду за кожного міньйона, вбитого таким способом. Ці міньйони не активують жодних ефектів смерті, а ви не отримуєте Есенції від їхньої загибелі.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-10',
-			name: 'Lead by Example',
-			description: 'Your minions watch as your implement crackles with power, ready to slam unbelievable force into your foe.',
+			name: 'Веди прикладом',
+			description: 'Ваші міньйони дивляться, як ваш імплемент іскриться силою, готовою вгатити неймовірним ударом у ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createSummoner()
 			],
-			target: 'One enemy or object',
+			target: 'Один ворог або предмет',
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '8 + Р damage; Р < [слабкий], dazed (save ends)',
-						tier2: '12 + Р damage; Р < [середній], dazed (save ends)',
-						tier3: '16 + Р damage; Р < [сильний], dazed (save ends)'
+						tier1: '8 + Р шкоди; Р < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '12 + Р шкоди; Р < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '16 + Р шкоди; Р < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-11',
-			name: 'A Champion\'s Cry',
-			description: 'Your champion unleashes a bellow that shakes you to your core.',
+			name: 'Клич чемпіона',
+			description: 'Ваш чемпіон випускає рев, що пробирає вас до кісток.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'All enemies',
+			target: 'Усі вороги',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '2 psychic or sonic damage; I < [слабкий] frightened of you (save ends)',
-						tier2: '5 psychic or sonic damage; I < [середній] frightened of you and all allies (EoT)',
-						tier3: '7 psychic or sonic damage; I < [сильний] frightened of you and all allies (save ends)'
+						tier1: '2 психічної або звукової шкоди; І < [слабкий], зляканий вами (рят. кидок закінчує)',
+						tier2: '5 психічної або звукової шкоди; І < [середній], зляканий вами і всіма союзниками (до кінця ходу)',
+						tier3: '7 психічної або звукової шкоди; І < [сильний], зляканий вами і всіма союзниками (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can use this ability as if in the space of one of your minions within your Summoner’s Range.')
+				FactoryLogic.createAbilitySectionText('Ви можете використовувати цю здібність так, ніби перебуваєте в просторі одного зі своїх міньйонів у межах дальності призивача.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-12',
-			name: 'Army\'s Idol',
-			description: 'Your champion’s appearance has an enchanting impact on you and your allies.',
+			name: 'Ідол армії',
+			description: 'Поява вашого чемпіона зачаровує вас і ваших союзників.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'Self and all allies',
+			target: 'Себе та всіх союзників',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You can use this ability as if in the space of one of your minions within your Summoner’s Range
+Ви можете використовувати цю здібність так, ніби перебуваєте в просторі одного зі своїх міньйонів у межах дальності призивача.
 
-Until the end of the encounter or you become dying, each target has a +2 bonus to saving throws.
+До кінця зустрічі або доки ви не почнете вмирати кожна ціль отримує +2 до рятівних кидків.
 
-Each target can immediately make each of their saving throws and stand up from prone.`)
+Кожна ціль може негайно виконати всі свої рятівні кидки та підвестися, якщо лежить.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-13',
-			name: 'The Champion Slams the Earth',
-			description: 'Your champion lays their fury upon those unfortunate enough to be in their wake.',
+			name: 'Чемпіон трощить землю',
+			description: 'Ваш чемпіон обрушує свій гнів на тих, кому не пощастило опинитися на його шляху.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 4, within: 1 })],
-			target: 'All enemies and objects',
+			target: 'Усі вороги й предмети',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '5 damage; M < [слабкий] prone and can’t stand (save ends)',
-						tier2: '8 damage; M < [середній] prone and can’t stand (save ends)',
-						tier3: '11 damage; M < [сильний] prone and can’t stand (save ends)'
+						tier1: '5 шкоди; С < [слабкий] розпластаний і не може встати (рят. кидок закінчує)',
+						tier2: '8 шкоди; С < [середній] розпластаний і не може встати (рят. кидок закінчує)',
+						tier3: '11 шкоди; С < [сильний] розпластаний і не може встати (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can use this ability as if in the space of one of your minions within your Summoner’s Range.'),
+				FactoryLogic.createAbilitySectionText('Ви можете використовувати цю здібність так, ніби перебуваєте в просторі одного зі своїх міньйонів у межах дальності призивача.'),
 				FactoryLogic.createAbilitySectionField({
 					name: 'Особливе',
-					effect: 'You can change the damage type to be a type that your champion deals on their stat block.'
+					effect: 'Ви можете змінити тип шкоди на той, який чемпіон завдає у своєму блоці характеристик.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-14',
-			name: 'Their Pall Shrouds All',
-			description: 'Your champion fills the area with a thick haze hiding friend from foe.',
+			name: 'Їхній саван огортає всіх',
+			description: 'Ваш чемпіон наповнює місцевість густим серпанком, що ховає друга від ворога.',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
-			target: 'All enemies',
+			target: 'Усі вороги',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You can use this ability as if in the space of one of your minions within your Summoner’s Range.
+Ви можете використовувати цю здібність так, ніби перебуваєте в просторі одного зі своїх міньйонів у межах дальності призивача.
 
-The target is Р < [середній] weakened (save ends).
+Ціль робить Р < [середній], інакше стає ослабленою (рят. кидок закінчує).
 
-Until the end of the encounter, whenever a target gets a tier 1 result on a strike, they deal half damage. If a target was striking a creature adjacent to one of their allies, they target their ally instead.`)
+До кінця зустрічі щоразу, коли ціль отримує результат рівня 1 на ударі, вона завдає половинної шкоди. Якщо ціль завдавала удару істоті поруч з одним зі своїх союзників, натомість вона націлюється на цього союзника.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-15',
-			name: '1,000,000 Minions',
-			description: 'The battle is now a war. Your entire army storms the field.',
+			name: '1 000 000 міньйонів',
+			description: 'Битва тепер стала війною. Уся ваша армія накриває поле бою.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.createSpecial('Особливе')],
@@ -1166,62 +1166,62 @@ Until the end of the encounter, whenever a target gets a tier 1 result on a stri
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-Until the end of the encounter or you are dying, each square on the ground is considered teeming with minions. An enemy that ends their turn in an affected square takes 5 damage. This damage can’t be reduced.
+До кінця зустрічі або доки ви не почнете вмирати кожна клітинка на землі вважається заповненою міньйонами. Ворог, який завершує свій хід у такій клітинці, отримує 5 шкоди. Цю шкоду неможливо зменшити.
 
-Additionally, you can use Minion Bridge treating each affected square as an eligible minion (up to a maximum of 10 additional squares).`)
+Крім того, ви можете використовувати «Міст із міньйонів», вважаючи кожну уражену клітинку придатним міньйоном (максимум 10 додаткових клітинок).`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-16',
-			name: 'Bodyguard Tactics',
-			description: 'You surround your allies with a nigh-endless supply of summons that stand in the way of all impacts.',
+			name: 'Тактика охоронців',
+			description: 'Ви оточуєте союзників майже безмежним потоком призовів, що стають на шляху будь-яких ударів.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-			target: 'Self and each non-minion ally',
+			target: 'Себе та кожного союзника, що не є міньйоном',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter or you are dying, each target has damage immunity 5 and can use a free triggered action once per turn whenever they are force moved to reduce the distance by half.')
+				FactoryLogic.createAbilitySectionText('До кінця зустрічі або доки ви не почнете вмирати кожна ціль має імунітет до шкоди 5 і раз за хід може використати безкоштовну тригерну дію, коли її примусово переміщують, щоб зменшити цю відстань удвічі.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-17',
-			name: 'I Unsummon Thee',
-			description: 'Cast those not affixed to this manifold into the void of a minion’s existence.',
+			name: 'Я відкликаю тебе!',
+			description: 'Киньте тих, хто не прив’язаний до цього маніфолду, в порожнечу міньйонського буття.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-			target: 'All enemies',
+			target: 'Усі вороги',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 round.
+Кожен ворожий міньйон у зоні назавжди прибирається з мапи зустрічі. До трьох ворогів у зоні, що не є ватажками чи соло-істотами, вилучаються зі зустрічі на 1 раунд.
 
-A leader or a solo enemy in the area that has R, I, or П < [середній] is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.`)
+Ватажок або соло-ворог у зоні, який має Р, І або П < [середній], стає ослабленим і уповільненим (рят. кидок закінчує), бо його частково висмикує з маніфолду. Ви можете підвищити потужність на 1 за кожного свого міньйона, суміжного з ціллю, яким ви вирішите пожертвувати під час використання цієї здібності.`)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'summoner-ability-18',
-			name: 'Wrath of a Champion',
-			description: 'Your champion appears and goes into a rampage, clearing the way for your minions to march forth.',
+			name: 'Гнів чемпіона',
+			description: 'Ваш чемпіон з’являється й кидається в шаленство, розчищаючи шлях вашим міньйонам.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Champion, AbilityKeyword.Magic, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 4 })],
-			target: 'All enemies',
+			target: 'Усі вороги',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '6 damage; push 4 M < [слабкий] push is vertical',
-						tier2: '10 damage; push 5 M < [середній] push is vertical',
-						tier3: '14 damage; push 6 M < [сильний] push is vertical'
+						tier1: '6 шкоди; відштовхнути на 4; С < [слабкий], це відштовхування стає вертикальним',
+						tier2: '10 шкоди; відштовхнути на 5; С < [середній], це відштовхування стає вертикальним',
+						tier3: '14 шкоди; відштовхнути на 6; С < [сильний], це відштовхування стає вертикальним'
 					})
 				),
 				FactoryLogic.createAbilitySectionText(`
-You can use this ability as if in the space of one of your minions within your Summoner’s Range.
+Ви можете використовувати цю здібність так, ніби перебуваєте в просторі одного зі своїх міньйонів у межах дальності призивача.
 
-You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion). For each enemy reduced to 0 Stamina by this ability, an ally within distance can move up to their speed.`)
+Ви можете змінити тип шкоди на той, який чемпіон завдає у своєму блоці характеристик (див. «Чемпіон портфеля»). За кожного ворога, якого ця здібність зводить до 0 Витривалості, союзник у межах дальності може рухатися на свою швидкість.`)
 			]
 		})
 	],

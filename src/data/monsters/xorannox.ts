@@ -71,7 +71,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			cost: 3,
 			icon: StatBlockIcon.AuraBurst,
 			sections: [
-				'Xorannox lets out a noxious belch. Each enemy within 2 squares of him who has M<3 is weakened (save ends).'
+				'Xorannox lets out a noxious belch. Each enemy within 2 squares of him who has С<3 is weakened (save ends).'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -89,7 +89,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'Xorannox takes an additional main action on his turn. He can use this feature even if he is dazed.'
+				'Xorannox takes an additional основна дія on his turn. He can use this feature even if he is dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -140,9 +140,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; slide 2; M<2 bleeding (EoT)',
-								tier2: '20 damage; slide 3; M<3 bleeding (EoT)',
-								tier3: '23 damage; vertical slide 3; M<4 bleeding (EoT)'
+								tier1: '12 шкоди; зсунути на 2; С<2 кровотеча (до кінця ходу)',
+								tier2: '20 шкоди; зсунути на 3; С<3 кровотеча (до кінця ходу)',
+								tier3: '23 шкоди; вертикально зсунути на 3; С<4 кровотеча (до кінця ходу)'
 							}))
 						]
 					})
@@ -158,9 +158,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Vertical push 3',
-								tier2: 'Vertical push 5',
-								tier3: 'Vertical push 7'
+								tier1: 'Вертикально відштовхнути на 3',
+								tier2: 'Вертикально відштовхнути на 5',
+								tier3: 'Вертикально відштовхнути на 7'
 							})),
 							FactoryLogic.createAbilitySectionText('Xorannox shifts up to his speed before or after using this ability.')
 						]
@@ -201,7 +201,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has I<3 they are frightened (save ends).')
+							FactoryLogic.createAbilitySectionText('If the target has І<3 they are frightened (save ends).')
 						]
 					})
 				}),
@@ -226,9 +226,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 psychic damage; R<2 dazed (save ends)',
-								tier2: '17 psychic damage; R<3 dazed (save ends)',
-								tier3: '20 psychic damage; R<4 dazed (save ends)'
+								tier1: '11 психічної шкоди; Р<2 приголомшений (рят. кидок закінчує)',
+								tier2: '17 психічної шкоди; Р<3 приголомшений (рят. кидок закінчує)',
+								tier3: '20 психічної шкоди; Р<4 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -286,11 +286,11 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'I<2 the target is charmed',
-								tier2: 'I<3 the target is charmed',
-								tier3: 'I<4 the target is charmed'
+								tier1: 'І<2 ціль is зачарований',
+								tier2: 'І<3 ціль is зачарований',
+								tier3: 'І<4 ціль is зачарований'
 							})),
-							FactoryLogic.createAbilitySectionText('As a free triggered action, a charmed target immediately moves up to their speed and can make a free strike against an enemy of Xorannox’s choice. The target is then no longer charmed.')
+							FactoryLogic.createAbilitySectionText('As a безкоштовна тригерна дія, a charmed target immediately moves up to their speed and can make a free strike against an enemy of Xorannox’s choice. The target is then no longer charmed.')
 						]
 					})
 				}),
@@ -327,9 +327,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 fire damage',
-								tier2: '10 fire damage; M<3 prone',
-								tier3: '13 fire damage; M<4 prone'
+								tier1: '6 вогняної шкоди',
+								tier2: '10 вогняної шкоди; С<3 розпластаний',
+								tier3: '13 вогняної шкоди; С<4 розпластаний'
 							}))
 						]
 					})
@@ -367,9 +367,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; slide 4',
-								tier2: '17 damage; slide 5',
-								tier3: '20 damage; slide 6'
+								tier1: '11 шкоди; зсунути на 4',
+								tier2: '17 шкоди; зсунути на 5',
+								tier3: '20 шкоди; зсунути на 6'
 							}))
 						]
 					})
@@ -407,9 +407,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 corruption damage',
-								tier2: '17 corruption damage; M<3 bleeding (save ends)',
-								tier3: '20 corruption damage; M<4 bleeding (save ends)'
+								tier1: '11 шкоди від скверни',
+								tier2: '17 шкоди від скверни; С<3 кровотеча (рят. кидок закінчує)',
+								tier3: '20 шкоди від скверни; С<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If this damage or the Stamina loss from bleeding this way reduces a target creature’s Stamina to 0, that creature dies.')
 						]
@@ -448,9 +448,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 poison damage',
-								tier2: '10 poison damage; M<3 weakened (save ends)',
-								tier3: '13 poison damage; M<4 weakened (save ends)'
+								tier1: '6 отруйної шкоди',
+								tier2: '10 отруйної шкоди; С<3 ослаблений (рят. кидок закінчує)',
+								tier3: '13 отруйної шкоди; С<4 ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -488,9 +488,9 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 lightning damage',
-								tier2: '10 lightning damage',
-								tier3: '13 lightning damage'
+								tier1: '6 блискавичної шкоди',
+								tier2: '10 блискавичної шкоди',
+								tier3: '13 блискавичної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target loses all their surges.')
 						]

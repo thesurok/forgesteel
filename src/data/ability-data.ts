@@ -81,7 +81,7 @@ export class AbilityData {
 
 	// #endregion
 
-	// #region Maneuvers
+	// #region Маневри
 
 	static aidAttack = FactoryLogic.createAbility({
 		id: 'aid-attack',
@@ -258,7 +258,7 @@ export class AbilityData {
 
 	// #endregion
 
-	// #region Main Actions
+	// #region Основні дії
 
 	static charge = FactoryLogic.createAbility({
 		id: 'charge',
@@ -339,7 +339,7 @@ export class AbilityData {
 		AbilityData.freeStrike,
 		AbilityData.heal,
 		AbilityData.swap,
-		// Maneuver
+		// Маневр
 		AbilityData.aidAttack,
 		AbilityData.catchBreath,
 		AbilityData.clawDirt,

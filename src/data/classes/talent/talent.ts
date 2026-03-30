@@ -601,9 +601,9 @@ export const talent: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + Р холодної шкоди; M < [слабкий], уповільнений (до кінця ходу)',
-						tier2: '4 + Р холодної шкоди; M < [середній], уповільнений (до кінця ходу)',
-						tier3: '6 + Р холодної шкоди; M < [сильний], уповільнений (до кінця ходу)'
+						tier1: '2 + Р холодної шкоди; С < [слабкий], уповільнений (до кінця ходу)',
+						tier2: '4 + Р холодної шкоди; С < [середній], уповільнений (до кінця ходу)',
+						tier3: '6 + Р холодної шкоди; С < [сильний], уповільнений (до кінця ходу)'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
@@ -650,9 +650,9 @@ export const talent: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: 'Зсунути 2 + R',
-						tier2: 'Зсунути 4 + R',
-						tier3: 'Зсунути 6 + R; повалений'
+						tier1: 'Зсунути 2 + Р',
+						tier2: 'Зсунути 4 + Р',
+						tier3: 'Зсунути 6 + Р; повалений'
 					})
 				),
 				FactoryLogic.createAbilitySectionField({
@@ -723,9 +723,9 @@ export const talent: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '2 + Р шкоди; M < [слабкий], повалений',
-						tier2: '4 + Р шкоди; M < [середній], повалений',
-						tier3: '6 + Р шкоди; M < [сильний], повалений'
+						tier1: '2 + Р шкоди; С < [слабкий], повалений',
+						tier2: '4 + Р шкоди; С < [середній], повалений',
+						tier3: '6 + Р шкоди; С < [сильний], повалений'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Прицілюючись в обʼєкт з твердою відбивною поверхнею або в істоту, що носить чи має такий предмет (наприклад, дзеркало, немалёваний металевий щит або блискучу металеву броню), ви можете цілитися на одну додаткову істоту або обʼєкт у межах 3 клітинок від першої цілі.'),
@@ -774,9 +774,9 @@ export const talent: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '3 + П психічної шкоди; I < [слабкий], наляканий (рятівний кидок знімає)',
-						tier2: '6 + П психічної шкоди; I < [середній], наляканий (рятівний кидок знімає)',
-						tier3: '9 + П психічної шкоди; I < [сильний], наляканий (рятівний кидок знімає)'
+						tier1: '3 + П психічної шкоди; І < [слабкий], наляканий (рятівний кидок знімає)',
+						tier2: '6 + П психічної шкоди; І < [середній], наляканий (рятівний кидок знімає)',
+						tier3: '9 + П психічної шкоди; І < [сильний], наляканий (рятівний кидок знімає)'
 					})
 				)
 			]
@@ -794,9 +794,9 @@ export const talent: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: '3 + Р шкоди; M < [слабкий], уповільнений (рятівний кидок знімає)',
-						tier2: '5 + Р шкоди; M < [середній], уповільнений (рятівний кидок знімає)',
-						tier3: '8 + Р шкоди; M < [сильний], скутий (рятівний кидок знімає)'
+						tier1: '3 + Р шкоди; С < [слабкий], уповільнений (рятівний кидок знімає)',
+						tier2: '5 + Р шкоди; С < [середній], уповільнений (рятівний кидок знімає)',
+						tier3: '8 + Р шкоди; С < [сильний], скутий (рятівний кидок знімає)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Ви можете вертикально підтягнути ціль до 2 клітинок. Якщо ця здібність скує ціль, це примусове переміщення ігнорує її стійкість.'),

@@ -88,9 +88,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 					FactoryLogic.createAbilitySectionText('The high elf chooses a damage type and condition from one of the following combinations: cold damage and slowed, poison damage and weakened, or corruption damage and frightened.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 2,
-						tier1: '5 damage; R<1 chosen condition (save ends)',
-						tier2: '9 damage; R<2 chosen condition (save ends)',
-						tier3: '12 damage; R<3 chosen condition (save ends)'
+						tier1: '5 шкоди; Р<1 chosen condition (рят. кидок закінчує)',
+						tier2: '9 шкоди; Р<2 chosen condition (рят. кидок закінчує)',
+						tier3: '12 шкоди; Р<3 chosen condition (рят. кидок закінчує)'
 					})),
 					FactoryLogic.createAbilitySectionText('**Special:** This ability can’t be used by a minion.')
 				]
@@ -134,9 +134,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage; R<1 damage weakness 3 (save ends)',
-								tier3: '3 damage; R<2 damage weakness 3 (save ends)'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди; Р<1 шкоди weakness 3 (рят. кидок закінчує)',
+								tier3: '3 шкоди; Р<2 шкоди weakness 3 (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -175,9 +175,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 holy damage',
-								tier2: '2 holy damage',
-								tier3: '3 holy damage'
+								tier1: '1 священної шкоди',
+								tier2: '2 священної шкоди',
+								tier3: '3 священної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the dawn mage’s next turn, the target can’t hide.')
 						]
@@ -217,9 +217,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Each ally adjacent to the target shifts up to 2 squares.')
 						]
@@ -259,9 +259,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage; taunted (EoT)'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди; спровокований (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of their turn, the soot crow ignores opportunity attacks from the target.')
 						]
@@ -308,9 +308,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '7 damage; push 3',
-								tier3: '10 damage; push 3; A<2 bleeding (save ends)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди; відштовхнути на 3',
+								tier3: '10 шкоди; відштовхнути на 3; Л<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -348,9 +348,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; R<2 bleeding (save ends)'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; Р<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The bloodletter and each of their allies has a double edge on abilities targeting a creature bleeding this way.')
 						]
@@ -403,9 +403,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '10 damage',
-								tier3: '13 damage; R<1 bleeding (save ends); I<1 frightened (save ends); P<1 restrained (save ends)'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди',
+								tier3: '13 шкоди; Р<1 кровотеча (рят. кидок закінчує); І<1 зляканий (рят. кидок закінчує); П<1 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -459,9 +459,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 cold damage; M<0 push 3',
-								tier2: '6 cold damage; M<1 push 4 or prone',
-								tier3: '9 cold damage; M<2 slide 5 or prone'
+								tier1: '4 холодної шкоди; С<0 відштовхнути на 3',
+								tier2: '6 холодної шкоди; С<1 відштовхнути на 4 або розпластаний',
+								tier3: '9 холодної шкоди; С<2 зсунути на 5 або розпластаний'
 							}))
 						]
 					})
@@ -477,9 +477,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; R<0 slowed (save ends)',
-								tier2: '8 damage; R<1 slowed (save ends)',
-								tier3: '11 damage; R<2 restrained (save ends)'
+								tier1: '5 шкоди; Р<0 сповільнений (рят. кидок закінчує)',
+								tier2: '8 шкоди; Р<1 сповільнений (рят. кидок закінчує)',
+								tier3: '11 шкоди; Р<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each enemy within 3 squares of a target suffers the same potency effect as the target unless they are already adjacent to them, or if they immediately shift into an unoccupied space adjacent to the target (no action required).')
 						]
@@ -518,9 +518,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 psychic damage',
-								tier2: '7 psychic damage; I<1 weakened (save ends)',
-								tier3: '9 psychic damage; I<2 weakened (save ends)'
+								tier1: '5 психічної шкоди',
+								tier2: '7 психічної шкоди; І<1 ослаблений (рят. кидок закінчує)',
+								tier3: '9 психічної шкоди; І<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -579,9 +579,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'Vertical push 3',
-								tier2: 'Vertical push 5',
-								tier3: 'Vertical push 6'
+								tier1: 'Вертикально відштовхнути на 3',
+								tier2: 'Вертикально відштовхнути на 5',
+								tier3: 'Вертикально відштовхнути на 6'
 							})),
 							FactoryLogic.createAbilitySectionText('For each elemental mote adjacent to the wyrd, the size of the cube increases by 1.')
 						]
@@ -652,11 +652,11 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('On a tier 3 outcome, the zephyr can make a free strike against a creature adjacent to the target. If they do so and that creature and the target both have A<2, the creature and the target are both prone. On any tier outcome, the zephyr can then shift up to 2 squares.')
+							FactoryLogic.createAbilitySectionText('On a tier 3 outcome, the zephyr can make a free strike against a creature adjacent to the target. If they do so and that creature and the target both have Л<2, the creature and the target are both prone. On any tier outcome, the zephyr can then shift up to 2 squares.')
 						]
 					})
 				}),
@@ -710,9 +710,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 lightning damage; R<1 dazed (save ends)',
-								tier2: '14 lightning damage; R<2 dazed (save ends)',
-								tier3: '17 lightning damage; R<3 dazed (save ends)'
+								tier1: '9 блискавичної шкоди; Р<1 приголомшений (рят. кидок закінчує)',
+								tier2: '14 блискавичної шкоди; Р<2 приголомшений (рят. кидок закінчує)',
+								tier3: '17 блискавичної шкоди; Р<3 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the ordinator’s next turn, each ally high elf in the encounter gains an edge on ability rolls against the target.')
 						]
@@ -798,8 +798,8 @@ Many high elves have also collected extensive libraries of tomes over the centur
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '12 corruption damage; pull 5 towards the center of the cube',
-								tier2: '9 corruption damage; pull 3 towards the center of the cube',
+								tier1: '12 шкоди від скверни; притягнути на 5 towards the center of the cube',
+								tier2: '9 шкоди від скверни; притягнути на 3 towards the center of the cube',
 								tier3: 'Pull 1 towards the center of the cube'
 							})),
 							FactoryLogic.createAbilitySectionText('The area turns dark and distorted, and is difficult terrain for enemies.')
@@ -847,9 +847,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 fire damage',
-								tier3: '9 lightning damage; M<2 prone'
+								tier1: '5 шкоди',
+								tier2: '7 вогняної шкоди',
+								tier3: '9 блискавичної шкоди; С<2 розпластаний'
 							}))
 						]
 					})
@@ -865,9 +865,9 @@ Many high elves have also collected extensive libraries of tomes over the centur
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target who is prone takes an extra 2 damage.')
 						]

@@ -49,7 +49,7 @@ export const fossilCryptic: MonsterGroup = {
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The fossil cryptic takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The fossil cryptic takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -58,7 +58,7 @@ export const fossilCryptic: MonsterGroup = {
 			cost: 5,
 			icon: StatBlockIcon.Area,
 			sections: [
-				'Two pillars of stone 1 square wide either thrust up out of the ground or jut down from the ceiling anywhere on the encounter map, to a height of up to 5 squares. A creature in the area of a pillar before it appears is knocked prone on its surface. If the creature comes into contact with the ceiling above or the floor beneath the pillar and has M<2 they are restrained (save ends).'
+				'Two pillars of stone 1 square wide either thrust up out of the ground or jut down from the ceiling anywhere on the encounter map, to a height of up to 5 squares. A creature in the area of a pillar before it appears is knocked prone on its surface. If the creature comes into contact with the ceiling above or the floor beneath the pillar and has С<2 they are restrained (save ends).'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -70,9 +70,9 @@ export const fossilCryptic: MonsterGroup = {
 				'The air across the encounter map is thick with dust until the end of the encounter. Each enemy in the dust is suffocating. Additionally, at the end of each round, each enemy in the dust makes a **Might test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: 'Until the end of the enemy\'s next turn, their stability is reduced to 0, and any forced movement effects targeting them gain a +2 bonus to the distance moved',
-					tier2: 'The enemy\'s stability is halved (EoT).',
-					tier3: 'No effect'
+					tier1: 'Until the end of ворог\'s next turn, their stability is reduced to 0, and any forced movement effects targeting them gain a +2 bonus to the distance moved',
+					tier2: 'Ворог\'s stability is halved (EoT).',
+					tier3: 'Без ефекту'
 				})
 			]
 		})
@@ -118,9 +118,9 @@ export const fossilCryptic: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; A<1 slide 2',
-								tier2: '12 damage; A<2 slide 2, prone',
-								tier3: '15 damage; A<3 slide 3, prone and can\'t stand (EoT)'
+								tier1: '8 шкоди; Л<1 зсунути на 2',
+								tier2: '12 шкоди; Л<2 зсунути на 2, розпластаний',
+								tier3: '15 шкоди; Л<3 зсунути на 3, розпластаний і can\'t stand (EoT)'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target made prone this way is already prone, they are instead restrained (EoT).')
 						]
@@ -137,9 +137,9 @@ export const fossilCryptic: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 damage; M<1 push 2',
-								tier2: '7 damage; M<2 prone',
-								tier3: '10 damage; M<3 prone'
+								tier1: '4 шкоди; С<1 відштовхнути на 2',
+								tier2: '7 шкоди; С<2 розпластаний',
+								tier3: '10 шкоди; С<3 розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('The cryptic reforms their body and appears in an unoccupied space in the area.')
 						]
@@ -179,18 +179,18 @@ export const fossilCryptic: MonsterGroup = {
 					ability: FactoryLogic.createAbility({
 						id: 'fossil-cryptic-feature-9',
 						name: 'Shatterstone',
-						type: FactoryLogic.type.createTrigger('The cryptic uses the Dig maneuver to resurface.'),
+						type: FactoryLogic.type.createTrigger('The cryptic uses the Dig маневр to resurface.'),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Before using the Dig maneuver, the cryptic moves up to their speed. They then create the burst when they breach the surface.'),
+							FactoryLogic.createAbilitySectionText('Before using the Dig маневр, the cryptic moves up to their speed. They then create the burst when they breach the surface.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 damage; push 2',
-								tier2: '7 damage; push 3; prone',
-								tier3: '10 damage; push 4; prone'
+								tier1: '4 шкоди; відштовхнути на 2',
+								tier2: '7 шкоди; відштовхнути на 3; розпластаний',
+								tier3: '10 шкоди; відштовхнути на 4; розпластаний'
 							}))
 						]
 					})
@@ -208,9 +208,9 @@ export const fossilCryptic: MonsterGroup = {
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Might,
-								tier1: 'Prone and can’t stand (EoT)',
-								tier2: 'Prone',
-								tier3: 'No effect'
+								tier1: 'розпластаний і не може встати (до кінця ходу)',
+								tier2: 'розпластаний',
+								tier3: 'Без ефекту'
 							}))
 						]
 					})
@@ -228,9 +228,9 @@ export const fossilCryptic: MonsterGroup = {
 							FactoryLogic.createAbilitySectionText('The area drops 2 squares and is difficult terrain. Each target enemy falls, while each target ally drops safely. Additionally, each target enemy makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
-								tier1: '9 damage; prone',
-								tier2: '5 damage',
-								tier3: 'The target moves to the nearest unoccupied space outside the area.'
+								tier1: '9 шкоди; розпластаний',
+								tier2: '5 шкоди',
+								tier3: 'Ціль moves to the nearest unoccupied space outside the area.'
 							}))
 						]
 					})
@@ -247,9 +247,9 @@ export const fossilCryptic: MonsterGroup = {
 							FactoryLogic.createAbilitySectionText('The cryptic makes an initial power roll that calls down stone pillars from the ceiling.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage; prone; M<1 restrained (save ends)',
-								tier2: '9 damage; prone; M<2 restrained (save ends)',
-								tier3: '12 damage; prone; M<3 restrained (save ends)'
+								tier1: '5 шкоди; розпластаний; С<1 скутий (рят. кидок закінчує)',
+								tier2: '9 шкоди; розпластаний; С<2 скутий (рят. кидок закінчує)',
+								tier3: '12 шкоди; розпластаний; С<3 скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -266,9 +266,9 @@ export const fossilCryptic: MonsterGroup = {
 							FactoryLogic.createAbilitySectionText('The cryptic then makes a second power roll that raises stone pillars from the floor.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage; vertical slide 2',
-								tier2: '3 damage; vertical slide 4',
-								tier3: '4 damage; vertical slide 6; if this movement brings the target into contact with the ceiling, they are restrained (save ends).'
+								tier1: '2 шкоди; вертикально зсунути на 2',
+								tier2: '3 шкоди; вертикально зсунути на 4',
+								tier3: '4 шкоди; вертикально зсунути на 6; якщо this movement brings ціль into contact with the ceiling, they are скутий (рят. кидок закінчує).'
 							}))
 						]
 					})

@@ -1,3 +1,5 @@
+import { Characteristic } from '@/enums/characteristic';
+
 export class Format {
 	static capitalize = (text: string, separator: string = ' ') => {
 		return text
@@ -7,13 +9,35 @@ export class Format {
 			.join(' ');
 	};
 
+	static getCharacteristicAbbreviation = (characteristic: Characteristic | string) => {
+		switch (characteristic) {
+			case Characteristic.Might:
+			case 'M':
+				return 'С';
+			case Characteristic.Agility:
+			case 'A':
+				return 'Л';
+			case Characteristic.Reason:
+			case 'R':
+				return 'Р';
+			case Characteristic.Intuition:
+			case 'I':
+				return 'І';
+			case Characteristic.Presence:
+			case 'P':
+				return 'П';
+			default:
+				return characteristic.toString().slice(0, 1).toUpperCase();
+		}
+	};
+
 	static startsWithVowel = (text: string) => {
-		const vowels = [ 'a', 'e', 'i', 'o', 'u' ];
+		const vowels = ['a', 'e', 'i', 'o', 'u'];
 		return vowels.some(v => text.toLowerCase().startsWith(v));
 	};
 
 	static getMonogram = (text: string) => {
-		const stopList = [ 'a', 'an', 'the', 'in', 'on', 'of' ];
+		const stopList = ['a', 'an', 'the', 'in', 'on', 'of'];
 		return text
 			.replace(/[^a-zA-Z0-9 ]/g, '')
 			.toLowerCase()

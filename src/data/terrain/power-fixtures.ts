@@ -8,7 +8,7 @@ export const holyIdol: Terrain = {
 	id: 'holy-idol',
 	name: 'Holy Idol',
 	description:
-    'An empowering monument to a higher power enables a villain’s machinations.',
+		'An empowering monument to a higher power enables a villain’s machinations.',
 	category: TerrainCategory.PowerFixture,
 	level: 5,
 	role: FactoryLogic.createTerrainRole(
@@ -94,7 +94,7 @@ export const psionicShard: Terrain = {
 						name: 'Psionic Pulse',
 						type: FactoryLogic.type.createTrigger('The shard is destroyed', { free: true }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The shard releases a shockwave channeled through each creature affected by Psionic Barrier. Each ally in the encounter is dazed until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Уламок вивільняє ударну хвилю, спрямовану крізь кожну істоту, на яку впливає Psionic Barrier. Кожен союзник у сутичці приголомшений до кінця свого наступного ходу.')
 						]
 					})
 				})
@@ -156,7 +156,7 @@ export const treeOfMight: Terrain = {
 					id: 'trees-nourishment',
 					name: 'Tree\'s Nourishment',
 					description:
-            'At the start of each round while the tree of might is intact, each enemy touching the ground in the encounter area who has **M<0** takes 10 corruption damage, and the tree of might grows a fruit. The potency increases by 1 each subsequent round.'
+						'At the start of each round while the tree of might is intact, each enemy touching the ground in the encounter area who has **С<0** takes 10 corruption damage, and the tree of might grows a fruit. The potency increases by 1 each subsequent round.'
 				})
 			]
 		},
@@ -167,7 +167,7 @@ export const treeOfMight: Terrain = {
 					id: 'mighty-fruit',
 					name: 'Mighty Fruit',
 					description:
-            'Once per round, any creature adjacent to the tree of might can take a fruit from the tree and eat it (no action required). The creature gains 10 temporary Stamina and has their Might score increased by 1 (to a maximum of 6) until the end of the encounter.'
+						'Раз за раунд будь-яка істота поруч із деревом могутності може зірвати з нього плід і з’їсти його (без дії). Істота отримує 10 тимчасової витривалості, а її показник Могутності зростає на 1 (до максимуму 6) до кінця сутички.'
 				})
 			]
 		}

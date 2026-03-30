@@ -131,9 +131,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 fire damage',
-								tier2: '12 fire damage; A<1 the target is burning (save ends)',
-								tier3: '15 fire damage; A<2 the target is burning (save ends)'
+								tier1: '8 вогняної шкоди',
+								tier2: '12 вогняної шкоди; Л<1 ціль палає (рят. кидок закінчує)',
+								tier3: '15 вогняної шкоди; Л<2 ціль палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -211,9 +211,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '5 damage; 4 lightning damage; push 1',
-								tier3: '5 damage; 7 lightning damage; push 3'
+								tier1: '5 шкоди',
+								tier2: '5 шкоди; 4 блискавичної шкоди; відштовхнути на 1',
+								tier3: '5 шкоди; 7 блискавичної шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('The essence shifts up to 3 squares before or after using this ability.')
 						]
@@ -293,11 +293,11 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; slide 1',
-								tier2: '11 damage; slide 2',
-								tier3: '14 damage; slide 3'
+								tier1: '7 шкоди; зсунути на 1',
+								tier2: '11 шкоди; зсунути на 2',
+								tier3: '14 шкоди; зсунути на 3'
 							})),
-							FactoryLogic.createAbilitySectionText('If a target has P<2, their stability is reduced to 0 and they move 2 additional squares whenever they are force moved (save ends).')
+							FactoryLogic.createAbilitySectionText('If a target has П<2, their stability is reduced to 0 and they move 2 additional squares whenever they are force moved (save ends).')
 						]
 					})
 				}),
@@ -313,7 +313,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 							FactoryLogic.createAbilitySectionText('Until the start of the essence’s next turn, the target has cold immunity 5.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'Until the end of the encounter, the ground within 1 square of the target is a pool of water that is difficult terrain. This water extends out behind the target as they move, creating a stream that lasts until the end of the encounter. Any enemy who ends their turn in the stream and has M<2 is slowed (save ends).'
+								effect: 'Until the end of the encounter, the ground within 1 square of the target is a pool of water that is difficult terrain. This water extends out behind the target as they move, creating a stream that lasts until the end of the encounter. Any enemy who ends their turn in the stream and has С<2 is slowed (save ends).'
 							})
 						]
 					})
@@ -378,9 +378,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage',
-								tier2: '13 damage; R<1 prone and can\'t stand (save ends)',
-								tier3: '16 damage; R<2 prone and can\'t stand (save ends)'
+								tier1: '8 шкоди',
+								tier2: '13 шкоди; Р<1 розпластаний і can\'t stand (save ends)',
+								tier3: '16 шкоди; Р<2 розпластаний і can\'t stand (save ends)'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target made prone this way is already prone, they are instead restrained (save ends). If the target was also unable to stand, that effect ends when they are no longer restrained this way.')
 						]
@@ -413,7 +413,7 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						distance: [FactoryLogic.distance.createMelee(3)],
 						target: 'The triggering creature or object',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target takes 6 damage, and if they have A<2, they are bleeding (save ends).')
+							FactoryLogic.createAbilitySectionText('The target takes 6 damage, and if they have Л<2, they are bleeding (save ends).')
 						]
 					})
 				}),
@@ -463,9 +463,9 @@ Tidedrifters have a healthy sense of humor that makes it easy to win their frien
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage',
-								tier2: '12 damage; M<1 restrained (save ends)',
-								tier3: '15 damage; M<2 restrained (save ends)'
+								tier1: '8 шкоди',
+								tier2: '12 шкоди; С<1 скутий (рят. кидок закінчує)',
+								tier3: '15 шкоди; С<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target\'s space is difficult terrain.')
 						]

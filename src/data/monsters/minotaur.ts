@@ -54,7 +54,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 			cost: 5,
 			icon: StatBlockIcon.Self,
 			sections: [
-				'One minotaur acting this turn halves any damage they take, and can use the Knockback maneuver as a free triggered action whenever an enemy comes adjacent to them, all until the start of their next turn.'
+				'One minotaur acting this turn halves any damage they take, and can use the Knockback маневр as a безкоштовна тригерна дія whenever an enemy comes adjacent to them, all until the start of their next turn.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -66,9 +66,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 				'All minotaurs in the encounter fill the area around them with psychic impressions of feeling lost and isolated. Each enemy within 5 squares of a minotaur is teleported up to 5 squares and makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: 'The target has line of effect only within 3 squares and is frightened of all minotaurs (save ends).',
-					tier2: 'The target has line of effect only within 3 squares (EoT).',
-					tier3: 'No effect.'
+					tier1: 'Ціль має line of effect only within 3 клітинок і is зляканий усіма мінотаврами (рят. кидок закінчує).',
+					tier2: 'Ціль має line of effect only within 3 клітинок (до кінця ходу).',
+					tier3: 'Без ефекту.'
 				})
 			]
 		})
@@ -100,9 +100,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; push 1',
-								tier2: '11 damage; push 2',
-								tier3: '14 damage; push 3'
+								tier1: '7 шкоди; відштовхнути на 1',
+								tier2: '11 шкоди; відштовхнути на 2',
+								tier3: '14 шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('The minotaur shifts up to 3 squares.')
 						]
@@ -117,7 +117,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						target: 'Себе',
 						cost: 3,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes. On their next turn, the minotaur can use one additional maneuver.')
+							FactoryLogic.createAbilitySectionText('Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes. On their next turn, the minotaur can use one additional маневр.')
 						]
 					})
 				}),
@@ -133,11 +133,11 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; I<0 dazed (save ends)',
-								tier2: '8 damage; I<1 dazed (save ends)',
-								tier3: '9 damage; I<2 dazed (save ends)'
+								tier1: '5 шкоди; І<0 приголомшений (рят. кидок закінчує)',
+								tier2: '8 шкоди; І<1 приголомшений (рят. кидок закінчує)',
+								tier3: '9 шкоди; І<2 приголомшений (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, its potency increases by 1.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, its potency increases by 1.')
 						]
 					})
 				}),
@@ -150,7 +150,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						distance: [FactoryLogic.distance.createRanged(8)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The minotaur uses the Charge main action and either Flail and Blade or Goring Horns against the target.')
+							FactoryLogic.createAbilitySectionText('The minotaur uses the Charge основна дія and either Flail and Blade or Goring Horns against the target.')
 						]
 					})
 				}),
@@ -187,9 +187,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage; pull 1',
-								tier2: '12 damage; pull 2',
-								tier3: '15 damage; pull 3'
+								tier1: '8 шкоди; притягнути на 1',
+								tier2: '12 шкоди; притягнути на 2',
+								tier3: '15 шкоди; притягнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('A target pulled adjacent to the sunderer is automatically grabbed.')
 						]
@@ -207,9 +207,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'I<0 frightened (save ends)',
-								tier2: 'I<1 frightened (save ends)',
-								tier3: 'I<2 frightened (save ends)'
+								tier1: 'І<0 зляканий (рят. кидок закінчує)',
+								tier2: 'І<1 зляканий (рят. кидок закінчує)',
+								tier3: 'І<2 зляканий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes.')
 						]
@@ -231,9 +231,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 							}),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; M<0 bleeding (save ends)',
-								tier2: '8 damage; M<1 bleeding (save ends)',
-								tier3: '9 damage; M<2 bleeding (save ends)'
+								tier1: '5 шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '8 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '9 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While bleeding this way, the target takes 1d6 damage at the start of each of their turns.')
 						]
@@ -248,7 +248,7 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						distance: [FactoryLogic.distance.createRanged(6)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The sunderer uses the Charge main action and Spiked Maul against the target.')
+							FactoryLogic.createAbilitySectionText('The sunderer uses the Charge основна дія and Spiked Maul against the target.')
 						]
 					})
 				}),
@@ -289,9 +289,9 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '9 damage; I<4 taunted (EoT) or frightened of all minotaurs (save ends)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди; І<4 спровокований (до кінця ходу) або зляканий усіма мінотаврами (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -330,11 +330,11 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '3 damage',
-								tier2: '6 damage; slide 1',
-								tier3: '8 damage; slide 3'
+								tier1: '3 шкоди',
+								tier2: '6 шкоди; зсунути на 1',
+								tier3: '8 шкоди; зсунути на 3'
 							})),
-							FactoryLogic.createAbilitySectionText('A target that is force moved into an obstacle is M<3 bleeding (save ends).')
+							FactoryLogic.createAbilitySectionText('A target that is force moved into an obstacle is С<3 bleeding (save ends).')
 						]
 					})
 				}),
@@ -372,11 +372,11 @@ New minotaurs were born, and decades later, hundreds charged out of the maze tog
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '4 damage',
-								tier2: '7 damage; prone',
-								tier3: '9 damage; prone; M<5 can’t stand (save ends)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди; розпластаний',
+								tier3: '9 шкоди; розпластаний; С<5 не може встати (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, each creature the stampede moves through who has M<4 is knocked prone.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, each creature the stampede moves through who has С<4 is knocked prone.')
 						]
 					})
 				}),

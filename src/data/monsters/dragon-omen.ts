@@ -60,9 +60,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 				'The dragon flies up to 10 squares and carries fated souls with them. Each creature in the area of the dragon’s Stagnant Wyrmscale Aura trait makes a **Presence test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Presence,
-					tier1: 'Vertical pull 10',
-					tier2: 'Vertical pull 6',
-					tier3: 'Vertical pull 4'
+					tier1: 'Вертикально притягнути на 10',
+					tier2: 'Вертикально притягнути на 6',
+					tier3: 'Вертикально притягнути на 4'
 				})
 			]
 		}),
@@ -72,7 +72,7 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The dragon takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -132,9 +132,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
-								tier1: '18 corruption damage; the target is dragonsealed (save ends)',
-								tier2: '14 corruption damage; the target is dragonsealed (save ends)',
-								tier3: '9 corruption damage'
+								tier1: '18 шкоди від скверни; ціль is dragonsealed (рят. кидок закінчує)',
+								tier2: '14 шкоди від скверни; ціль is dragonsealed (рят. кидок закінчує)',
+								tier3: '9 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('Only creatures with souls can be dragonsealed by the omen dragon. A dragonsealed creature appears ghastly and pale, their Presence score is treated as 1 lower for the purpose of resisting potencies, and they can’t treat other creatures as allies.')
 						]
@@ -151,9 +151,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '14 damage; M<3 bleeding (save ends)',
-								tier2: '19 damage; M<4 bleeding (save ends)',
-								tier3: '23 damage; M<5 bleeding (save ends)'
+								tier1: '14 шкоди; С<3 кровотеча (рят. кидок закінчує)',
+								tier2: '19 шкоди; С<4 кровотеча (рят. кидок закінчує)',
+								tier3: '23 шкоди; С<5 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -223,9 +223,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'Pull 1; the target has a Deathcount of 10',
-								tier2: 'Pull 2; the target has a Deathcount of 8',
-								tier3: 'Pull 3; the target has a Deathcount of 6'
+								tier1: 'Pull 1; ціль має a Deathcount of 10',
+								tier2: 'Pull 2; ціль має a Deathcount of 8',
+								tier3: 'Pull 3; ціль має a Deathcount of 6'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target receives a premonition of their imminent death.')
 						]
@@ -243,9 +243,9 @@ The effects that surround an omen dragon also mean that new life cannot begin. C
 							FactoryLogic.createAbilitySectionText('The dragon spits fragments of souls to attempt to possess the targets, making a separate power roll for each target.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'P<5 frightened (save ends)',
-								tier2: 'P<5 the target moves up to their speed toward the dragon',
-								tier3: 'P<5 the target makes a free strike against the nearest ally'
+								tier1: 'П<5 зляканий (рят. кидок закінчує)',
+								tier2: 'П<5 ціль рухається до своєї швидкості toward the dragon',
+								tier3: 'П<5 ціль робить безкоштовний удар проти найближчого союзника'
 							}))
 						]
 					})

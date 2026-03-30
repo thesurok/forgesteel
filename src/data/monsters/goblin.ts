@@ -79,9 +79,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 				'The encounter map becomes covered in a green mist that lasts until the end of the round, and which can’t be dispersed by wind. All areas of the map become difficult terrain for non-goblins, and each non-goblin on the map must make a Might test.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: '5 poison damage; the creature is weakened until the mist disappears.',
-					tier2: 'The creature is weakened until the mist disappears.',
-					tier3: 'No effect.'
+					tier1: '5 отруйної шкоди; істота is ослаблений until the mist disappears.',
+					tier2: 'Істота is ослаблений until the mist disappears.',
+					tier3: 'Без ефекту.'
 				})
 			],
 			icon: StatBlockIcon.SpecialArea
@@ -115,9 +115,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							}))
 						]
 					})
@@ -156,11 +156,11 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('If the sniper doesn’t use a move action this turn, this ability gains an edge.')
+							FactoryLogic.createAbilitySectionText('If the sniper doesn’t use a дія руху this turn, this ability gains an edge.')
 						]
 					})
 				}),
@@ -198,9 +198,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; push 1',
-								tier2: '4 damage; push 3',
-								tier3: '5 damage; push 4'
+								tier1: '2 шкоди; відштовхнути на 1',
+								tier2: '4 шкоди; відштовхнути на 3',
+								tier3: '5 шкоди; відштовхнути на 4'
 							}))
 						]
 					})
@@ -239,9 +239,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 poison damage',
-								tier2: '2 poison damage',
-								tier3: '3 poison damage'
+								tier1: '1 отруйної шкоди',
+								tier2: '2 отруйної шкоди',
+								tier3: '3 отруйної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target takes a bane on their next strike.')
 						]
@@ -275,9 +275,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '6 damage',
-								tier3: '7 damage'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, it deals an extra 2 damage.')
 						]
@@ -295,9 +295,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 corruption damage; A<0 restrained (save ends)',
-								tier2: '4 corruption damage; A<1 restrained (save ends)',
-								tier3: '5 corruption damage; A<2 restrained (save ends)'
+								tier1: '2 шкоди від скверни; Л<0 скутий (рят. кидок закінчує)',
+								tier2: '4 шкоди від скверни; Л<1 скутий (рят. кидок закінчує)',
+								tier3: '5 шкоди від скверни; Л<2 скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -340,9 +340,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 corruption damage; I<0 weakened (save ends)',
-								tier2: '4 corruption damage; I<1 weakened (save ends)',
-								tier3: '5 corruption damage; I<2 weakened (save ends)'
+								tier1: '3 шкоди від скверни; І<0 ослаблений (рят. кидок закінчує)',
+								tier2: '4 шкоди від скверни; І<1 ослаблений (рят. кидок закінчує)',
+								tier3: '5 шкоди від скверни; І<2 ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -359,9 +359,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'I<0 prone',
-								tier2: 'I<1 prone and can’t stand (EoT)',
-								tier3: 'Prone; I<2 can’t stand (save ends)'
+								tier1: 'І<0 розпластаний',
+								tier2: 'І<1 розпластаний і не може встати (до кінця ходу)',
+								tier3: 'розпластаний; І<2 не може встати (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -399,9 +399,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 poison damage; slide 1',
-								tier2: '2 poison damage; slide 2',
-								tier3: '3 poison damage; slide 3'
+								tier1: '1 отруйної шкоди; зсунути на 1',
+								tier2: '2 отруйної шкоди; зсунути на 2',
+								tier3: '3 отруйної шкоди; зсунути на 3'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
@@ -456,9 +456,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally adjacent to the target can make a free strike against them.')
 						]
@@ -514,9 +514,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							}))
 						]
 					})
@@ -533,9 +533,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; M<0 bleeding (save ends)',
-								tier2: '6 damage; M<1 bleeding (save ends)',
-								tier3: '7 damage; M<2 bleeding (save ends)'
+								tier1: '5 шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '6 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '7 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -576,9 +576,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage',
-								tier2: '10 damage',
-								tier3: '13 damage'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди',
+								tier3: '13 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 10 squares of the monarch can make a free strike.')
 						]
@@ -685,13 +685,13 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 poison damage',
-								tier2: '11 poison damage',
-								tier3: '14 poison damage; M<2 weakened (save ends)'
+								tier1: '7 отруйної шкоди',
+								tier2: '11 отруйної шкоди',
+								tier3: '14 отруйної шкоди; С<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'For any tier outcome, if the target has m<3, they are weakened (save ends).'
+								effect: 'For any tier outcome, if the target has С<3, they are weakened (save ends).'
 							})
 						]
 					})
@@ -707,9 +707,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди'
 							}))
 						]
 					})
@@ -737,9 +737,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: 'A<0 restrained (save ends)',
-								tier2: 'A<1 restrained (save ends)',
-								tier3: 'A<2 restrained (save ends)'
+								tier1: 'Л<0 скутий (рят. кидок закінчує)',
+								tier2: 'Л<1 скутий (рят. кидок закінчує)',
+								tier3: 'Л<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies.')
 						]
@@ -795,9 +795,9 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							}))
 						]
 					})

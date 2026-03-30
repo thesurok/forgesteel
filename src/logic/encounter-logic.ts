@@ -212,7 +212,7 @@ export class EncounterLogic {
 				copy.features.push(FactoryLogic.feature.create({
 					id: 'custom-solo-action',
 					name: 'Solo Action',
-					description: '(5 Malice) The creature takes an additional main action on their turn. They can use this feature even if they are dazed.'
+					description: '(5 Malice) The creature takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 				}));
 
 				if (!copy.features.some(f => f.name === 'End Effect')) {

@@ -446,9 +446,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A шкоди',
-						tier2: '5 + A шкоди',
-						tier3: '8 + A шкоди; I < [сильний], розпластаний'
+						tier1: '3 + Л шкоди',
+						tier2: '5 + Л шкоди',
+						tier3: '8 + Л шкоди; І < [сильний], розпластаний'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Один обраний вами союзник у межах 5 клітинок від цілі отримує 1 сплеск.')
@@ -470,9 +470,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A шкоди',
-						tier2: '6 + A шкоди',
-						tier3: '9 + A шкоди'
+						tier1: '3 + Л шкоди',
+						tier2: '6 + Л шкоди',
+						tier3: '9 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Якщо поруч з ціллю немає жодного вашого союзника, ви отримуєте 1 сплеск перед кидком сили.')
@@ -494,9 +494,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A шкоди',
-						tier2: '6 + A шкоди',
-						tier3: '9 + A шкоди'
+						tier1: '3 + Л шкоди',
+						tier2: '6 + Л шкоди',
+						tier3: '9 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Якщо будь-який союзник стоїть поруч із ціллю, ви отримуєте 1 сплеск перед кидком сили.')
@@ -515,9 +515,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '3 + A шкоди',
-						tier2: '5 + A шкоди',
-						tier3: '8 + A шкоди'
+						tier1: '3 + Л шкоди',
+						tier2: '5 + Л шкоди',
+						tier3: '8 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Поки у вас є один або більше союзників у межах 5 клітинок від цілі, ви отримуєте 1 сплеск. Якщо ви флангуєте ціль під час використання цієї здібності, оберіть одного союзника, що флангує разом із вами. Той союзник також отримує 1 сплеск.')
@@ -536,9 +536,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '4 + A шкоди; зрушити на 2',
-						tier2: '6 + A шкоди; зрушити на 3',
-						tier3: '10 + A шкоди; зрушити на 5'
+						tier1: '4 + Л шкоди; зрушити на 2',
+						tier2: '6 + Л шкоди; зрушити на 3',
+						tier3: '10 + Л шкоди; зрушити на 5'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Ви можете переміститися в будь-яку клітину, яку ціль покидає, коли ви її штовхаєте.')
@@ -559,9 +559,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '4 + A шкоди; Л < [слабкий], кровотеча (рят. кидок закінчує)',
-					tier2: '6 + A шкоди; Л < [середній], кровотеча (рят. кидок закінчує)',
-					tier3: '10 + A шкоди; Л < [сильний], кровотеча (рят. кидок закінчує)'
+					tier1: '4 + Л шкоди; Л < [слабкий], кровотеча (рят. кидок закінчує)',
+					tier2: '6 + Л шкоди; Л < [середній], кровотеча (рят. кидок закінчує)',
+					tier3: '10 + Л шкоди; Л < [сильний], кровотеча (рят. кидок закінчує)'
 				}))
 			]
 		}),
@@ -578,9 +578,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '5 + A шкоди',
-						tier2: '8 + A шкоди',
-						tier3: '11 + A шкоди'
+						tier1: '5 + Л шкоди',
+						tier2: '8 + Л шкоди',
+						tier3: '11 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Ви можете пересунутися на відстань до своєї швидкості, розділивши цей рух до або після удару за бажанням.')
@@ -622,9 +622,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '2d6 + 7 + A шкоди',
-					tier2: '2d6 + 11 + A шкоди',
-					tier3: '2d6 + 16 + A шкоди'
+					tier1: '2d6 + 7 + Л шкоди',
+					tier2: '2d6 + 11 + Л шкоди',
+					tier3: '2d6 + 16 + Л шкоди'
 				}))
 			]
 		}),
@@ -661,9 +661,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '6 + A шкоди; Р < [слабкий], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
-					tier2: '9 + A шкоди; Р < [середній], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
-					tier3: '13 + A шкоди; Р < [сильний], ціль має вразливість до шкоди 5 (рят. кидок закінчує)'
+					tier1: '6 + Л шкоди; Р < [слабкий], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+					tier2: '9 + Л шкоди; Р < [середній], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+					tier3: '13 + Л шкоди; Р < [сильний], ціль має вразливість до шкоди 5 (рят. кидок закінчує)'
 				}))
 			]
 		}),
@@ -708,9 +708,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '9 + A шкоди',
-						tier2: '13 + A шкоди',
-						tier3: '18 + A шкоди'
+						tier1: '9 + Л шкоди',
+						tier2: '13 + Л шкоди',
+						tier3: '18 + Л шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Ціль провокується добровільним союзником у межах 5 клітинок від вас до кінця наступного ходу цілі.')
@@ -728,9 +728,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '8 + A шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
-					tier2: '12 + A шкоди; Л < [середній], сковування (рят. кидок закінчує)',
-					tier3: '16 + A шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
+					tier1: '8 + Л шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
+					tier2: '12 + Л шкоди; Л < [середній], сковування (рят. кидок закінчує)',
+					tier3: '16 + Л шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
 				}))
 			]
 		}),
@@ -749,9 +749,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '7 + A шкоди; M < [слабкий], сповільнений (рят. кидок закінчує)',
-					tier2: '11 + A шкоди; M < [середній], розпластаний і не може стати (рят. кидок закінчує)',
-					tier3: '16 + A шкоди; M < [сильний], розпластаний і не може стати (рят. кидок закінчує)'
+					tier1: '7 + Л шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+					tier2: '11 + Л шкоди; С < [середній], розпластаний і не може стати (рят. кидок закінчує)',
+					tier3: '16 + Л шкоди; С < [сильний], розпластаний і не може стати (рят. кидок закінчує)'
 				}))
 			]
 		}),
@@ -781,9 +781,9 @@ export const shadow: HeroClass = {
 				FactoryLogic.createAbilitySectionText('Ви та ціль видаляєтесь з карти зустрічі до початку вашого наступного ходу. Ви зʼявляєтесь у клітинах, які покинули, або в найближчих вільних клітинах. По поверненні зробіть кидок сили.'),
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '8 + A корупційної шкоди',
-					tier2: '13 + A корупційної шкоди',
-					tier3: '17 + A корупційної шкоди'
+					tier1: '8 + Л корупційної шкоди',
+					tier2: '13 + Л корупційної шкоди',
+					tier3: '17 + Л корупційної шкоди'
 				}))
 			]
 		}),
@@ -822,9 +822,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '10 + A шкоди; П < [слабкий], приголомшений (рят. кидок закінчує)',
-					tier2: '15 + A шкоди; П < [середній], приголомшений (рят. кидок закінчує)',
-					tier3: '21 + A шкоди; П < [сильний], приголомшений (рят. кидок закінчує)'
+					tier1: '10 + Л шкоди; П < [слабкий], приголомшений (рят. кидок закінчує)',
+					tier2: '15 + Л шкоди; П < [середній], приголомшений (рят. кидок закінчує)',
+					tier3: '21 + Л шкоди; П < [сильний], приголомшений (рят. кидок закінчує)'
 				})),
 				FactoryLogic.createAbilitySectionText('Ціль не може спілкуватися ні з ким до кінця сутички.')
 
@@ -844,9 +844,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '12 + A шкоди',
-					tier2: '18 + A шкоди',
-					tier3: '24 + A шкоди'
+					tier1: '12 + Л шкоди',
+					tier2: '18 + Л шкоди',
+					tier3: '24 + Л шкоди'
 				})),
 				FactoryLogic.createAbilitySectionText('Ціль, яка не є міньйоном, лідером або сольною істотою і яка після отриманої шкоди опиняється в стані "Захеканий", зводиться до 0 Витривалості.')
 
@@ -866,9 +866,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '11 + A корупційної шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
-					tier2: '16 + A корупційної шкоди; Л < [середній], сковування (рят. кидок закінчує)',
-					tier3: '21 + A корупційної шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
+					tier1: '11 + Л корупційної шкоди; Л < [слабкий], сковування (рят. кидок закінчує)',
+					tier2: '16 + Л корупційної шкоди; Л < [середній], сковування (рят. кидок закінчує)',
+					tier3: '21 + Л корупційної шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
 				}))
 
 			]
@@ -902,9 +902,9 @@ export const shadow: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Agility],
-					tier1: '12 шкоди; M < [слабкий], сповільнений (рят. кидок закінчує)',
-					tier2: '18 шкоди; M < [середній], сповільнений (рят. кидок закінчує)',
-					tier3: '24 шкоди; M < [сильний], сповільнений (рят. кидок закінчує)'
+					tier1: '12 шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+					tier2: '18 шкоди; С < [середній], сповільнений (рят. кидок закінчує)',
+					tier3: '24 шкоди; С < [сильний], сповільнений (рят. кидок закінчує)'
 				}))
 
 			]

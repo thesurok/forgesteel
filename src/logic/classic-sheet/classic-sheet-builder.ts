@@ -25,6 +25,7 @@ import { MonsterSheet } from '@/models/classic-sheets/monster-sheet';
 import { Options } from '@/models/options';
 import { SheetFormatter } from '@/logic/classic-sheet/sheet-formatter';
 import { Summon } from '@/models/summon';
+import { getAbilityUsageCanonicalName, getAbilityUsageLabel } from '@/utils/ability-usages';
 
 export class ClassicSheetBuilder {
 	static buildCharacteristicsSheet = (creature: Hero | Monster | Follower | undefined): CharacteristicsSheet => {
@@ -115,32 +116,21 @@ export class ClassicSheetBuilder {
 		const isSummon = CreatureLogic.isSummon(creature);
 		const sheet: AbilitySheet = {
 			id: ability.id,
-			abilityType: ability.type.usage.toString(),
+			abilityType: getAbilityUsageCanonicalName(ability.type.usage),
 			name: ability.name,
 			description: ability.description,
 			isSignature: false,
 			isNotTrueAbility: false,
 			cost: Number(ability.cost) || 0,
-			actionType: ability.type.usage.toString(),
+			actionType: getAbilityUsageCanonicalName(ability.type.usage),
 			keywords: ability.keywords.join(', '),
 			target: ability.target,
 			trigger: ability.type.trigger,
 			hasPowerRoll: false
 		};
 
-		// canonical English actionType (used for classes, sorting) and localized label
-		const canonicalActionMap: Record<string, string> = {
-			[AbilityUsage.MainAction]: 'Main Action',
-			[AbilityUsage.Maneuver]: 'Maneuver',
-			[AbilityUsage.Move]: 'Move Action',
-			[AbilityUsage.Trigger]: 'Triggered Action',
-			[AbilityUsage.VillainAction]: 'Villain Action',
-			[AbilityUsage.ChampionAction]: 'Champion Action',
-			[AbilityUsage.FreeStrike]: 'Вільний Удар'
-		};
-		const canonicalBase = canonicalActionMap[ability.type.usage] ?? ability.type.usage.toString();
-		sheet.actionType = ability.type.free ? `Free ${canonicalBase}` : canonicalBase;
-		sheet.actionTypeLabel = ability.type.free ? `Безкоштовна ${ability.type.usage.toString()}` : ability.type.usage.toString();
+		sheet.actionType = getAbilityUsageCanonicalName(ability.type.usage, ability.type.free);
+		sheet.actionTypeLabel = getAbilityUsageLabel(ability.type.usage, ability.type.free);
 
 		sheet.name = sheet.name.replace(/\s*Benefit and Drawback\s*/, '').trim();
 
@@ -153,7 +143,7 @@ export class ClassicSheetBuilder {
 			} else if (ability.type.usage === AbilityUsage.Trigger) {
 				sheet.abilityType = 'Triggered Action';
 			} else if (ability.type.usage === AbilityUsage.FreeStrike) {
-				sheet.abilityType = 'Вільний Удар';
+				sheet.abilityType = 'Free Strike';
 				if (ability.name.toLowerCase().includes('melee')) {
 					sheet.name = 'Melee Free Strike';
 				} else if (ability.name.toLowerCase().includes('ranged')) {
@@ -198,7 +188,7 @@ export class ClassicSheetBuilder {
 			'Signature Ability': 'Фірмова здібність',
 			'Heroic Ability': 'Героїчна здібність',
 			'Triggered Action': 'Тригерна дія',
-			'Вільний Удар': 'Вільний удар',
+			'Free Strike': 'Вільний удар',
 			'Maneuver': 'Маневр',
 			'Move Action': 'Дія руху',
 			'Performance': 'Виконання',
@@ -253,7 +243,7 @@ export class ClassicSheetBuilder {
 				if (isAllCharacteristics) {
 					sheet.rollPower = 'Highest Characteristic';
 				} else {
-					sheet.rollPower = SheetFormatter.joinCommasOr(characteristics.map(c => c.toString().slice(0, 1)));
+					sheet.rollPower = SheetFormatter.joinCommasOr(characteristics.map(c => Format.getCharacteristicAbbreviation(c)));
 				}
 			}
 

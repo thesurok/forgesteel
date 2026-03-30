@@ -56,9 +56,9 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 				'The shambling mound lashes out at each enemy within 10 squares of them, driving them back or into the air. Each target makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '7 damage; push 7 or vertical push 3; restrained (save ends)',
-					tier2: '6 damage; push 5 or vertical push 2',
-					tier3: '3 damage'
+					tier1: '7 шкоди; відштовхнути на 7 або вертикально відштовхнути на 3; скутий (рят. кидок закінчує)',
+					tier2: '6 шкоди; відштовхнути на 5 або вертикально відштовхнути на 2',
+					tier3: '3 шкоди'
 				})
 			]
 		}),
@@ -68,7 +68,7 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The shambling mound takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The shambling mound takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -118,9 +118,9 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; A<3 grabbed',
-								tier2: '16 damage; A<4 grabbed',
-								tier3: '19 damage; grabbed'
+								tier1: '11 шкоди; Л<3 схоплений',
+								tier2: '16 шкоди; Л<4 схоплений',
+								tier3: '19 шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -144,9 +144,9 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage; M<2 dazed (save ends)',
-								tier2: '6 damage; M<3 dazed (save ends)',
-								tier3: '7 damage; M<4 dazed (save ends)'
+								tier1: '4 шкоди; С<2 приголомшений (рят. кидок закінчує)',
+								tier2: '6 шкоди; С<3 приголомшений (рят. кидок закінчує)',
+								tier3: '7 шкоди; С<4 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -161,7 +161,7 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						target: 'Одна істота або предмет',
 						cost: 2,
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target must be size 1L or smaller. The shambling mound reaches out with writhing vines, and if the target has A<3, they are engulfed into the shambling mound’s sack. If the target is grabbed by the shambling mound, the potency increases by 1. An engulfed creature is restrained, takes 3 poison damage at the start of each turn, and can’t take damage from abilities used from outside the sack. When the shambling mound moves, the engulfed creature moves with them. If the shambling mound dies or their sack is destroyed, each engulfed creature is freed and appears in an unoccupied space within 2 squares of the shambling mound.'),
+							FactoryLogic.createAbilitySectionText('The target must be size 1L or smaller. The shambling mound reaches out with writhing vines, and if the target has Л<3, they are engulfed into the shambling mound’s sack. If the target is grabbed by the shambling mound, the potency increases by 1. An engulfed creature is restrained, takes 3 poison damage at the start of each turn, and can’t take damage from abilities used from outside the sack. When the shambling mound moves, the engulfed creature moves with them. If the shambling mound dies or their sack is destroyed, each engulfed creature is freed and appears in an unoccupied space within 2 squares of the shambling mound.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								repeatable: true,
@@ -193,9 +193,9 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage; M<2 restrained (EoT)',
-								tier2: '12 damage; M<3 restrained (EoT)',
-								tier3: '15 damage; M<4 restrained (EoT)'
+								tier1: '7 шкоди; С<2 скутий (до кінця ходу)',
+								tier2: '12 шкоди; С<3 скутий (до кінця ходу)',
+								tier3: '15 шкоди; С<4 скутий (до кінця ходу)'
 							}))
 						]
 					})
@@ -221,9 +221,9 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage; pull 3',
-								tier2: '12 damage; pull 4; the target has poison weakness 3 until the end of the encounter',
-								tier3: '15 damage; pull 6; the target has poison weakness 5 until the end of the encounter'
+								tier1: '7 шкоди; притягнути на 3',
+								tier2: '12 шкоди; притягнути на 4; ціль має poison weakness 3 until the end of the encounter',
+								tier3: '15 шкоди; притягнути на 6; ціль має poison вразливість до шкоди 5 until the end of the encounter'
 							}))
 						]
 					})

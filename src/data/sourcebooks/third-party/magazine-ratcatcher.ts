@@ -113,9 +113,9 @@ Swift to bloom and swift to wither, Anthousai remind others of the fleeting natu
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Intuition, Characteristic.Presence],
-										tier1: '2 + I or P poison damage; П < [слабкий] pull 2',
-										tier2: '3 + I or P poison damage; П < [середній] pull 3',
-										tier3: '5 + I or P poison damage; П < [сильний] pull 4'
+										tier1: '2 + І або П отруйної шкоди; П < [слабкий] притягнути на 2',
+										tier2: '3 + І або П отруйної шкоди; П < [середній] притягнути на 3',
+										tier3: '5 + І або П отруйної шкоди; П < [сильний] притягнути на 4'
 									})
 								)
 							]
@@ -220,7 +220,7 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 					feature: FactoryLogic.feature.create({
 						id: 'dryad-feature-3g',
 						name: 'Many Limbed',
-						description: 'Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback maneuver against an adjacent creature, you can target an additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures grabbed at a time.'
+						description: 'Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback маневр against an adjacent creature, you can target an additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures grabbed at a time.'
 					}),
 					value: 2
 				},
@@ -238,9 +238,9 @@ Dryads have forms as varied as the trees they resemble. Smooth skinned or rough,
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Presence],
-										tier1: '2 damage; M < [слабкий] slowed (save ends)',
-										tier2: '3 damage; M < [середній] slowed (save ends)',
-										tier3: '5 damage; M < [сильний] restrained (save ends)'
+										tier1: '2 шкоди; С < [слабкий] сповільнений (рят. кидок закінчує)',
+										tier2: '3 шкоди; С < [середній] сповільнений (рят. кидок закінчує)',
+										tier3: '5 шкоди; С < [сильний] скутий (рят. кидок закінчує)'
 									})
 								)
 							]

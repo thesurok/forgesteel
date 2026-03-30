@@ -46,7 +46,7 @@ export const wodeElf: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createSaveThreshold({
 						id: 'wode-elf-feature-2-4',
-						name: 'Інша світова грація',
+						name: 'Іншосвітова грація',
 						description: 'Ваше ельфійське тіло та розум не можуть бути стримані надовго. Коли ви робите рятувальний кидок, ви успішно проходите на результаті 5 або вище.',
 						value: 5
 					}),

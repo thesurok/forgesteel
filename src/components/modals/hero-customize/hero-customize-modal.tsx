@@ -676,10 +676,10 @@ export const HeroCustomizeModal = (props: Props) => {
 			case FeatureType.Proficiency:
 				return (
 					<div>
-						<HeaderText>Weapons</HeaderText>
+						<HeaderText>Зброя</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Weapons'
+							placeholder='Зброя'
 							mode='multiple'
 							allowClear={true}
 							options={[KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip].map(option => ({ value: option }))}
@@ -687,10 +687,10 @@ export const HeroCustomizeModal = (props: Props) => {
 							value={feature.data.weapons}
 							onChange={setProficiencyWeapons}
 						/>
-						<HeaderText>Armor</HeaderText>
+						<HeaderText>Броня</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Armor'
+							placeholder='Броня'
 							mode='multiple'
 							allowClear={true}
 							options={[KitArmor.Heavy, KitArmor.Light, KitArmor.Medium, KitArmor.Shield].map(option => ({ value: option }))}

@@ -169,7 +169,7 @@ export const beastheart: HeroClass = {
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-2',
-								name: 'Біл',
+								name: 'Ведмідь',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -198,24 +198,24 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-2-4',
-											name: 'Backhand',
-											description: 'The bear casually swats the pesky foe into next week.',
+											name: 'Удар навідліг',
+											description: 'Ведмідь недбало відкидає набридливого ворога світ за очі.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('3 + С damage; push 2'),
+												FactoryLogic.createAbilitySectionText('3 + С шкоди; зсунути на 2'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The target is pushed up to an additional number of squares equal to the bear’s Might score.'
+													effect: 'Ціль можна зсунути ще на кількість клітинок, рівну показнику Сили ведмедя.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-2-5',
-										name: 'Shared Stability',
-										description: 'The beastheart gains a +1 bonus to their Stability.'
+										name: 'Спільна стійкість',
+										description: 'Звіросерце отримує +1 до Стійкості.'
 									})
 								]
 							}),
@@ -225,29 +225,29 @@ export const beastheart: HeroClass = {
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-2-3-1',
-									name: 'Foe Thresher',
-									description: 'When the bear hits a creature with a strike while rampaging, the bear can push the creature up to a number of squares equal to the bear’s Might score if the strike doesn’t otherwise force move the target.'
+									name: 'Молотар ворогів',
+									description: 'Коли ведмідь влучає ударом по істоті, поки лютує, він може відштовхнути її на кількість клітинок, рівну показнику Сили ведмедя, якщо цей удар інакше не примушує ціль рухатися.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-2-6-1',
-									name: 'Ursine Form',
-									description: 'While the bear is rampaging, you have damage immunity 5 and your size changes to match the bear’s size (maximum 2). If there is not enough unoccupied space for your size to increase, it increases as soon as there is sufficient space.'
+									name: 'Ведмежа подоба',
+									description: 'Поки ведмідь лютує, ви маєте імунітет до шкоди 5, а ваш розмір змінюється відповідно до розміру ведмедя (максимум 2). Якщо навколо недостатньо вільного простору, щоб збільшити ваш розмір, він збільшиться, щойно простору стане достатньо.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-2-10-1',
-									name: 'Twin Colossi',
-									description: 'While the bear is rampaging, the distance of your melee and weapon abilities increases by 1, your size changes to match the bear’s size (maximum 3), and your strikes deal an extra 5 damage.'
+									name: 'Два колоси',
+									description: 'Поки ведмідь лютує, дальність ваших здібностей ближнього бою та зброї зростає на 1, ваш розмір змінюється відповідно до розміру ведмедя (максимум 3), а ваші удари завдають додаткові 5 шкоди.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-3',
-								name: 'Boar',
+								name: 'Кабан',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -276,24 +276,24 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-3-4',
-											name: 'Gore',
-											description: 'With an enraged snort, the boar lunges forward to rip open foes with their tusks.',
+											name: 'Розпорювання',
+											description: 'З лютим рохканням кабан кидається вперед, розпанахуючи ворогів іклами.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('The boar moves up to their speed in a straight line, and can then deal 2 + С damage to an adjacent target. If the boar moved closer to the target as part of this ability’s movement, the boar deals extra damage equal to their Might score.'),
+												FactoryLogic.createAbilitySectionText('Кабан рухається на відстань до своєї швидкості по прямій, а потім може завдати 2 + С шкоди суміжній цілі. Якщо під час цього руху кабан наблизився до цілі, він завдає додаткової шкоди, рівної показнику своєї Сили.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The target is bleeding (EoT).'
+													effect: 'Ціль отримує кровотечу (до кінця ходу).'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-3-5',
-										name: 'Spiteful Endurance',
-										description: 'While the boar is winded, they gain damage immunity equal to their Might score and they ignore damage from the Bleeding condition.'
+										name: 'Злостива витривалість',
+										description: 'Поки кабан захеканий, він отримує імунітет до шкоди, рівний показнику своєї Сили, і ігнорує шкоду від стану Кровотеча.'
 									})
 								]
 							}),
@@ -303,29 +303,29 @@ export const beastheart: HeroClass = {
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-3-3-1',
-									name: 'Greased Pig',
-									description: 'While the boar is rampaging, the boar has a +2 bonus to speed and has a double edge on the Escape Grab maneuver.'
+									name: 'Слизький кабан',
+									description: 'Поки кабан лютує, він отримує +2 до швидкості та подвійну перевагу на маневр «Вивільнитися з захоплення».'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-3-6-1',
-									name: 'Wild Rush',
-									description: 'While the boar is rampaging, you can use the Gore maneuver, and when either of you uses the Charge action or the Gore maneuver you can shift instead of move.'
+									name: 'Дикий ривок',
+									description: 'Поки кабан лютує, ви можете використовувати маневр «Розпорювання», і коли будь-хто з вас використовує основну дію «Ривок» або маневр «Розпорювання», ви можете зрушитися замість руху.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-3-10-1',
-									name: 'Immortal Rage',
-									description: 'While the boar is rampaging, when one of you uses an ability that deals damage you gain 10 temporary Stamina.'
+									name: 'Безсмертна лють',
+									description: 'Поки кабан лютує, коли хтось із вас використовує здібність, що завдає шкоди, ви отримуєте 10 тимчасової Витривалості.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-4',
-								name: 'Condor',
+								name: 'Кондор',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -354,24 +354,24 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-4-4',
-											name: 'Flurry of Wings',
-											description: 'I can’t draw a bead on them with that infernal bird flapping in my face!',
+											name: 'Шквал крил',
+											description: 'Я не можу прицілитися, коли це кляте птаство ляскає крилами просто перед обличчям!',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С damage; until the end of your next turn, enemies are weakened while adjacent to the condor.'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди; до кінця вашого наступного ходу кожен ворог, суміжний із кондором, ослаблений.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'When an enemy would be weakened by this ability, they are taunted instead.'
+													effect: 'Коли ця здібність мала б ослабити ворога, він натомість стає спровокованим.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-4-5',
-										name: 'Moving Target',
-										description: 'Ranged attacks against the condor have a bane while the condor is flying and has a speed greater than 0.'
+										name: 'Рухома ціль',
+										description: 'Дальні атаки проти кондора отримують шкоду, поки він летить і має швидкість більше 0.'
 									})
 								]
 							}),
@@ -381,29 +381,29 @@ export const beastheart: HeroClass = {
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-4-3-1',
-									name: 'Dive Bomb',
-									description: 'When the condor makes a strike while rampaging, they deal extra damage equal to the number of squares they already moved on their turn, up to a maximum of 5.'
+									name: 'Пікірування',
+									description: 'Коли кондор завдає удару, поки лютує, він завдає додаткової шкоди, рівної кількості клітинок, які вже пролетів у свій хід, максимум 5.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-4-6-1',
-									name: 'Borne Aloft',
-									description: 'While the condor is rampaging, you gain wings. You can fly, and you have a +2 bonus to your speed while flying. When this flight ends, you descend harmlessly.'
+									name: 'Піднесений у повітря',
+									description: 'Поки кондор лютує, у вас виростають крила. Ви можете літати й отримуєте +2 до швидкості під час польоту. Коли цей політ закінчується, ви безпечно опускаєтеся вниз.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-4-10-1',
-									name: 'Flight of the Condor',
-									description: 'While the condor is rampaging, both of your speeds increase by 5.'
+									name: 'Політ кондора',
+									description: 'Поки кондор лютує, швидкість кожного з вас зростає на 5.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-5',
-								name: 'Deinonychus',
+								name: 'Дейноніх',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -432,24 +432,24 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-5-4',
-											name: 'Terrible Claw',
-											description: 'The deinonychus kicks their prey, slashing them with their wicked claws.',
+											name: 'Страшний кіготь',
+											description: 'Дейноніх бʼє здобич ногою й розтинає її своїми лютими кігтями.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С damage; bleeding (EoT)'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди; кровотеча (до кінця ходу)'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The target is bleeding (save ends) instead of bleeding (EoT).'
+													effect: 'Ціль отримує кровотечу (рят. кидок закінчує) замість кровотечі до кінця ходу.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-5-5',
-										name: 'Blood Frenzy',
-										description: 'The deinonychus gains a surge when they deal damage to a bleeding creature.'
+										name: 'Криваве шаленство',
+										description: 'Дейноніх отримує сплеск, коли завдає шкоди істоті з кровотечею.'
 									})
 								]
 							}),
@@ -459,29 +459,29 @@ export const beastheart: HeroClass = {
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-5-3-1',
-									name: 'Tear You to Ribbons',
-									description: 'When the deinonychus strikes a creature while rampaging, the creature is bleeding (save ends). Until the condition ends, the target is also slowed.'
+									name: 'Роздеру тебе на клапті',
+									description: 'Коли дейноніх вражає істоту, поки лютує, ціль отримує кровотечу (рят. кидок закінчує). Поки цей стан триває, ціль також сповільнена.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-5-6-1',
-									name: 'Slake my Thirst in Blood',
-									description: 'While the deinonychus is rampaging, when you use an action that deals rolled damage to a bleeding creature you gain 2 surges.'
+									name: 'Втамую спрагу кровʼю',
+									description: 'Поки дейноніх лютує, коли ви використовуєте дію, що завдає киданої шкоди істоті з кровотечею, ви отримуєте 2 сплески.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-5-10-1',
-									name: 'Reaping Scythe',
-									description: 'The deinonychus’s claws slash at creatures underfoot. While rampaging, the first time on a turn the deinonycus moves adjacent to each enemy or enters their space, the deinonychus deals damage to the enemy equal to the deinonychus’s Might score.'
+									name: 'Жниварський серп',
+									description: 'Кігті дейноніха косять істот під ногами. Поки він лютує, коли вперше за хід дейноніх переміщується суміжно з ворогом або входить у його простір, ворог отримує шкоду, рівну показнику Сили дейноніха.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-6',
-								name: 'Drake',
+								name: 'Дрейк',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -506,30 +506,30 @@ export const beastheart: HeroClass = {
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-6-3',
-											name: 'Drake Breath',
-											description: 'The drake exhales a blast of flesh-melting energy.',
+											name: 'Дихання дрейка',
+											description: 'Дрейк видихає вибух енергії, що плавить плоть.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Area],
 											distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 1, within: 1 })],
 											target: 'Кожна істота в зоні',
 											sections: [
-												FactoryLogic.createAbilitySectionText('M damage of the attuned damage type (see Elementally Attuned)'),
+												FactoryLogic.createAbilitySectionText('С шкоди налаштованого типу (див. «Стихійне налаштування»)'),
 												FactoryLogic.createAbilitySectionSpend({
 													repeatable: true,
-													effect: 'For each ferocity you spend (max 4), the damage increases by 1 and the size of the cube increases by 1.'
+													effect: 'За кожну витрачену лють (макс. 4) шкода збільшується на 1, а розмір куба збільшується на 1.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-6-4',
-										name: 'Elementally Attuned',
-										description: 'When you gain this companion, choose a damage type from acid, cold, corruption, fire, lightning, poison, or sonic. The drake is attuned to that damage type. Their attuned damage type affects their other features.'
+										name: 'Стихійне налаштування',
+										description: 'Коли ви отримуєте цього компаньйона, оберіть тип шкоди: кислота, холод, скверна, вогонь, блискавка, отрута або звук. Дрейк налаштований на цей тип шкоди. Його інші особливості залежать від обраного типу шкоди.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-6-5',
-										name: 'Shared Immunity',
-										description: 'You gain immunity 3 to the drake’s attuned damage type.'
+										name: 'Спільний імунітет',
+										description: 'Ви отримуєте імунітет 3 до налаштованого типу шкоди дрейка.'
 									})
 								]
 							}),
@@ -539,32 +539,32 @@ export const beastheart: HeroClass = {
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-6-3-1',
-									name: 'Endless Breath',
-									description: 'When the drake uses Drake Breath, they don’t need to spend ferocity to change its size and damage.'
+									name: 'Нескінченне дихання',
+									description: 'Коли дрейк використовує «Дихання дрейка», йому не потрібно витрачати лють, щоб змінювати його розмір і шкоду.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-6-6-1',
-									name: 'A Burning Inside Me',
+									name: 'У мені палає вогонь',
 									description: `
-While the drake is rampaging, you gain draconic wings. You can fly. When this flight ends, you descend harmlessly.
+Поки дрейк лютує, у вас виростають драконячі крила. Ви можете літати. Коли цей політ закінчується, ви безпечно опускаєтеся вниз.
 
-Additionally, you can use Drake Breath. You don’t need to spend ferocity to change its size and damage.`
+Крім того, ви можете використовувати «Дихання дрейка». Вам не потрібно витрачати лють, щоб змінювати його розмір і шкоду.`
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-6-10-1',
-									name: 'Elemental Avatar',
-									description: 'While the drake is rampaging, you and your companion gain immunity to the drake’s attuned damage type, and when you or the drake hit a creature with an attack the creature is dragonsealed (save ends). While dragonsealed, the creature has weakness 10 against the drake’s attuned damage type.'
+									name: 'Стихійний аватар',
+									description: 'Поки дрейк лютує, ви та ваш компаньйон отримуєте імунітет до налаштованого типу шкоди дрейка, а коли ви або дрейк влучаєте атакою по істоті, вона опиняється під печаттю дракона (рят. кидок закінчує). Поки на істоті печать дракона, вона має вразливість 10 до налаштованого типу шкоди дрейка.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-7',
-								name: 'Gummy Ball',
+								name: 'Желейна куля',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -599,34 +599,34 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-7-4',
-											name: 'Absorb',
-											description: 'With a sickening squelch, the sphere oozes around their hapless prey.',
+											name: 'Поглинання',
+											description: 'З огидним хлюпанням сфера розтікається навколо своєї безпорадної здобичі.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С acid damage; Л < [середній], the sphere moves into the target’s space. If the target is completely within the sphere’s space, the target is grabbed.'),
+												FactoryLogic.createAbilitySectionText('2 + С кислотної шкоди; Л < [середній], сфера переміщується в простір цілі. Якщо ціль повністю опиняється в просторі сфери, вона схоплена.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'Until the grab ends, the creature takes acid damage equal to the sphere’s Might score at the end of each of the sphere’s turns.'
+													effect: 'Поки захоплення не закінчиться, істота наприкінці кожного ходу сфери отримує кислотну шкоду, рівну показнику Сили сфери.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-7-5',
-										name: 'Gelatinous',
-										description: 'The sphere can share a creature’s space. While sharing a creature’s space, the sphere has line of effect to the creature. If the creature is completely within the sphere’s space, the creature has line of effect only to the sphere. The sphere’s space is difficult terrain.'
+										name: 'Желеподібна',
+										description: 'Сфера може перебувати в тому самому просторі, що й істота. Поки сфера ділить простір з істотою, вона має до неї лінію ефекту. Якщо істота повністю перебуває в просторі сфери, вона має лінію ефекту лише до сфери. Простір сфери вважається складною місцевістю.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-7-6',
-										name: 'Roll With It',
-										description: 'When the sphere would gain the prone condition, they can instead shift one square.'
+										name: 'Прокоти це',
+										description: 'Коли сфера мала б отримати стан Розпластаний, вона може натомість зрушитися на 1 клітинку.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-7-7',
-										name: 'Translucent',
-										description: 'The sphere is hidden until they act.'
+										name: 'Напівпрозора',
+										description: 'Сфера прихована, доки не почне діяти.'
 									})
 								]
 							}),
@@ -636,29 +636,29 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-7-3-1',
-									name: 'Suck it Up',
-									description: 'When the sphere strikes a creature while rampaging, the creature is pulled up to 3 squares into the sphere’s space. If the creature ends this movement completely within the sphere, the creature is grabbed.'
+									name: 'Затягни всередину',
+									description: 'Коли сфера вражає істоту, поки лютує, ціль притягується до 3 клітинок у простір сфери. Якщо після цього руху істота повністю опиняється всередині сфери, вона схоплена.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-7-6-1',
-									name: 'A Burning Inside Me',
-									description: 'While the sphere is rampaging, your arms and legs become viscous and stretchy. Your speed and melee distance gain a +2 bonus.'
+									name: 'Усередині все палає',
+									description: 'Поки сфера лютує, ваші руки й ноги стають вʼязкими та тягучими. Ваша швидкість і дальність ближнього бою отримують +2.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-7-10-1',
-									name: 'Runaway Expansion',
-									description: 'While the sphere is rampaging, whenever a creature is reduced to 0 Stamina while inside the sphere the sphere’s size increases by 1, to a maximum of 5. The sphere’s size can’t increase in this way more than once per turn, and the sphere returns to its true size when its rampage ends. Additionally, you and the sphere gain acid immunity 10.'
+									name: 'Неконтрольоване розростання',
+									description: 'Поки сфера лютує, щоразу, коли істота всередині неї знижується до 0 Витривалості, розмір сфери збільшується на 1, максимум до 5. Розмір сфери не може збільшуватися таким чином частіше ніж раз за хід, а коли лють закінчується, сфера повертається до свого справжнього розміру. Крім того, ви та сфера отримуєте імунітет до кислоти 10.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-8',
-								name: 'Hellhound',
+								name: 'Пекельний гончак',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -697,24 +697,24 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-8-5',
-											name: 'Fire Breath',
-											description: 'The hellhound exhales infernal flames.',
+											name: 'Вогняне дихання',
+											description: 'Пекельний гончак видихає пекельне полумʼя.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee],
 											distance: [FactoryLogic.distance.createMelee(2)],
 											target: 'Один іншій',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С fire damage'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди вогнем'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The hellhound adds their Intuition score to either the damage or the range.'
+													effect: 'Пекельний гончак додає свій показник Інтуїції або до шкоди, або до дальності.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-8-6',
-										name: 'Hellish Pact',
-										description: 'You gain fire immunity equal to the hellhound’s fire immunity.'
+										name: 'Пекельний пакт',
+										description: 'Ви отримуєте імунітет до вогню, рівний імунітету до вогню пекельного гончака.'
 									})
 								]
 							}),
@@ -724,29 +724,29 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-8-3-1',
-									name: 'Infernal Apparition',
-									description: 'When the hellhound strikes a creature while rampaging, a target who has П < [середній] is frightened.'
+									name: 'Пекельне явлення',
+									description: 'Коли пекельний гончак вражає істоту, поки лютує, ціль із П < [середній] стає зляканою.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-8-6-1',
-									name: 'Mad Dog',
-									description: 'While the hellhound is rampaging, your jaws slaver with acidic foam. When you strike a creature, you deal extra acid damage equal to your Might score.'
+									name: 'Шалений пес',
+									description: 'Поки пекельний гончак лютує, ваші щелепи вкриваються кислотною піною. Коли ви вражаєте істоту, ви завдаєте додаткової кислотної шкоди, рівної вашому показнику Сили.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-8-10-1',
-									name: 'Wreathed in Flames',
-									description: 'While the hellhound is rampaging, you and the hellhound are surrounded by an aura of flames. Enemies that start their turn adjacent to you or the hellhound take fire damage equal to the hellhound’s Might score.'
+									name: 'Оповитий полумʼям',
+									description: 'Поки пекельний гончак лютує, ви та гончак оточені аурою полумʼя. Вороги, які починають свій хід суміжно з вами або пекельним гончаком, отримують шкоду вогнем, рівну показнику Сили гончака.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-9',
-								name: 'Lightbender',
+								name: 'Світлозгин',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -775,27 +775,27 @@ Additionally, you can use Drake Breath. You don’t need to spend ferocity to ch
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-9-4',
-											name: 'Sparkling Tail Whip',
-											description: 'The lightbender swings their tail, sending gouts of sparks in their foe’s face.',
+											name: 'Іскристий удар хвостом',
+											description: 'Світлозгин змахує хвостом, жбурляючи ворогу в обличчя снопи іскор.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
-2 + С damage; I < [середній], dazzled (EoT)
+2 + С шкоди; І < [середній], засліплений (до кінця ходу)
 
-A dazzled creature can’t have line of effect to targets who aren’t adjacent to them.`),
+Засліплена істота не може мати лінію ефекту до цілей, які не суміжні з нею.`),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'A dazzled creature also has a bane on strikes.'
+													effect: 'Засліплена істота також отримує шкоду на удари.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-9-5',
-										name: 'Avoidance',
-										description: 'The lightbender always treats a save ends effect as an EoT effect.'
+										name: 'Ухильність',
+										description: 'Світлозгин завжди трактує ефекти «рят. кидок закінчує» як ефекти до кінця ходу.'
 									})
 								]
 							}),
@@ -805,29 +805,29 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-9-3-1',
-									name: 'Hit and Run',
-									description: 'When the lightbender strikes a creature while rampaging, the lightbender can teleport up to 5 squares and use the Hide maneuver.'
+									name: 'Удар і втеча',
+									description: 'Коли світлозгин вражає істоту, поки лютує, він може телепортуватися до 5 клітинок і використати маневр «Сховатися».'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-9-6-1',
-									name: 'Lightbearer',
-									description: 'While the lightbender is rampaging, you can use a free maneuver to glow with blinding light or to extinguish the glow. The glow is extinghished when the rampage ends. While glowing, your skin sheds light for 10 squares and strikes against you take a bane.'
+									name: 'Світлоносець',
+									description: 'Поки світлозгин лютує, ви можете безкоштовним маневром спалахнути сліпучим світлом або згасити це сяйво. Сяйво згасає, коли лють закінчується. Поки ви сяєте, ваша шкіра освітлює простір на 10 клітинок, а удари проти вас отримують шкоду.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-9-10-1',
-									name: 'Everywhere and Nowhere',
-									description: 'While the lightbender is rampaging, your grip on spatial reality is weakened. Once on each of your turns, as a free maneuver either you or the lightbender can teleport up to 3 spaces. Additionally, enemies’ strikes that target you or the lightbender automatically get a result that is one tier lower, to a minimum of 1.'
+									name: 'Скрізь і ніде',
+									description: 'Поки світлозгин лютує, ваша хватка за просторову реальність слабшає. Раз за кожен ваш хід ви або світлозгин можете безкоштовним маневром телепортуватися до 3 клітинок. Крім того, удари ворогів, що цілиться у вас або світлозгина, автоматично отримують результат на один рівень нижчий, мінімум 1.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-10',
-								name: 'Panther',
+								name: 'Пантера',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -856,24 +856,24 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-10-4',
-											name: 'Pounce',
-											description: 'The panther bunches themself up and then uncoils into a deadly leap.',
+											name: 'Стрибок',
+											description: 'Пантера збирається в клубок, а потім розгортається у смертельний стрибок.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С damage; M < [середній], prone'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди; С < [середній], розпластаний'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'The panther can jump up to their speed before using this ability. If they jump at least 1 square in this way, a target who is M < [сильний] is prone.'
+													effect: 'Пантера може стрибнути на відстань до своєї швидкості перед використанням цієї здібності. Якщо під час цього вона стрибнула щонайменше на 1 клітинку, ціль із С < [сильний] стає розпластаною.'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-10-5',
-										name: 'Mighty Spring',
-										description: 'When the panther takes the Advance move action or takes the Charge action, as part of the movement they can jump up to their speed in any direction, including vertically.'
+										name: 'Могутній стрибок',
+										description: 'Коли пантера виконує дію руху «Просування» або основну дію «Ривок», у межах цього руху вона може стрибнути на відстань до своєї швидкості в будь-якому напрямку, зокрема вертикально.'
 									})
 								]
 							}),
@@ -883,29 +883,29 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-10-3-1',
-									name: 'Primordial Pounce',
-									description: 'When the panther strikes a creature while rampaging, the creature is knocked prone.'
+									name: 'Первісний стрибок',
+									description: 'Коли пантера вражає істоту, поки лютує, ціль стає розпластаною.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-10-6-1',
-									name: 'Single Bound',
-									description: 'While the panther is rampaging, once on your turn you can use a free maneuver to jump up to a number of squares equal to your speed.'
+									name: 'Одним стрибком',
+									description: 'Поки пантера лютує, раз за ваш хід ви можете безкоштовним маневром стрибнути на кількість клітинок, рівну вашій швидкості.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-10-10-1',
-									name: 'Panther Spirit',
-									description: 'While the panther is rampaging, you and the panther are invisible and can pass through objects and terrain as if they were difficult terrain. A creature that ends their turn inside a solid object in this way is teleported to the last empty space they occupied.'
+									name: 'Дух пантери',
+									description: 'Поки пантера лютує, ви та пантера стаєте невидимими й можете проходити крізь предмети та місцевість так, ніби це складна місцевість. Істота, яка в такий спосіб завершує хід усередині твердого обʼєкта, телепортується в останній порожній простір, який займала.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-11',
-								name: 'Spider',
+								name: 'Павук',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -934,24 +934,24 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-11-4',
-											name: 'Web Shot',
-											description: 'The spider fires a ball of sticky silk.',
+											name: 'Павутинний постріл',
+											description: 'Павук випускає клубок липкого шовку.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createRanged(5)],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('M < [середній], restrained (EoT)'),
+												FactoryLogic.createAbilitySectionText('С < [середній], скутий (до кінця ходу)'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'M < [сильний], restrained (save ends)'
+													effect: 'С < [сильний], скутий (рят. кидок закінчує)'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-11-5',
-										name: 'Come Into My Parlor',
-										description: 'When the spider strikes a restrained creature, the spider deals extra poison damage equal to twice the spider’s Intuition score.'
+										name: 'Заходь до моєї оселі',
+										description: 'Коли павук вражає скуту істоту, він завдає додаткової шкоди отрутою, рівної подвоєному показнику Інтуїції павука.'
 									})
 								]
 							}),
@@ -961,29 +961,29 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-11-3-1',
-									name: 'Dripping Fangs',
-									description: 'When the spider hits a creature with a strike while rampaging, the creature takes poison damage equal to the spider’s Might score.'
+									name: 'Отруйні ікла',
+									description: 'Коли павук вражає істоту ударом, поки лютує, ціль отримує шкоду отрутою, рівну показнику Сили павука.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-11-6-1',
-									name: 'Web Slinger',
-									description: 'While the spider is rampaging, once on your turn you can use a free maneuver to shoot a web to a ceiling, wall, or sturdy object above you within 5 squares. You can then fly in a straight line to any space within 5 squares of that object.'
+									name: 'Метальник павутини',
+									description: 'Поки павук лютує, раз за ваш хід ви можете безкоштовним маневром вистрілити павутиною в стелю, стіну або міцний предмет над вами в межах 5 клітинок. Після цього ви можете пролетіти по прямій до будь-якого простору в межах 5 клітинок від цього предмета.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-11-10-1',
-									name: 'Life Drinker',
-									description: 'While the spider is rampaging, when you or the spider attack with a maneuver that deals damage, the attacker regains Stamina equal to the damage dealt.'
+									name: 'Життєпивець',
+									description: 'Поки павук лютує, коли ви або павук атакуєте маневром, що завдає шкоди, атакувальник відновлює Витривалість, рівну завданій шкоді.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-12',
-								name: 'Sporeling',
+								name: 'Споровик',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -1022,24 +1022,24 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-12-5',
-											name: 'Spore Puff',
-											description: 'The sporeling breathes a cloud of disorienting fumes.',
+											name: 'Спорова хмара',
+											description: 'Споровик видихає хмару дезорієнтувальних випарів.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С poison damage; the sporeling is invisible to the enemy until the end of the sporeling’s next turn or the sporeling deals damage to the enemy.'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди отрутою; споровик невидимий для ворога до кінця свого наступного ходу або доки не завдасть йому шкоди.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'An enemy affected by Spore Puff who is M < [сильний] is dazed (EoT).'
+													effect: 'Ворог, уражений «Споровою хмарою», який має С < [сильний], стає приголомшеним (до кінця ходу).'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-12-6',
-										name: 'Skulker',
-										description: 'The sporeling can end their movement in allies’ spaces. While in an ally’s space, the sporeling has cover.'
+										name: 'Потайник',
+										description: 'Споровик може завершувати свій рух у просторах союзників. Поки він перебуває в просторі союзника, то має укриття.'
 									})
 								]
 							}),
@@ -1049,29 +1049,29 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-12-3-1',
-									name: 'Slowing Spores',
-									description: 'When the sporeling hits a creature with a strike while rampaging, the creature is slowed (EoT).'
+									name: 'Спори уповільнення',
+									description: 'Коли споровик вражає істоту ударом, поки лютує, ціль стає сповільненою (до кінця ходу).'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-12-6-1',
-									name: 'Plant Walk',
-									description: 'While the sporeling is rampaging, once on your turn can use a free maneuver to teleport to a space within 15 squares, provided the space or an adjacent space contains your companion or size 1S or larger plants or fungus. You then gain an edge on the next strike you make before the end of your turn.'
+									name: 'Хода рослинами',
+									description: 'Поки споровик лютує, раз за ваш хід ви можете безкоштовним маневром телепортуватися в простір у межах 15 клітинок, якщо цей простір або суміжний із ним простір містить вашого компаньйона чи рослини або гриби розміру 1S чи більше. Після цього ви отримуєте перевагу на наступний удар, який здійсните до кінця ходу.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-12-10-1',
-									name: 'Trailing Mycelia',
-									description: 'While the sporeling is rampaging, your and the sporeling’s limbs sprout rootlike, gripping mycelia. While the sporeling is rampaging, you and the sporeling can’t be force moved or knocked prone, and when you or the sporeling strike a creature who is M < [сильний] the creature is grabbed.'
+									name: 'Тягучий міцелій',
+									description: 'Поки споровик лютує, ваші кінцівки та кінцівки споровика вкриваються коренеподібним міцелієм, що чіпко тримається за поверхні. Поки споровик лютує, вас і споровика не можна примусово перемістити або зробити розпластаними, а коли ви або споровик вражаєте істоту з С < [сильний], ціль стає схопленою.'
 								})
 							]
 						}),
 						FactoryLogic.createSummon({
 							monster: FactoryLogic.createMonster({
 								id: 'beastheart-1-2a-13',
-								name: 'Wolf',
+								name: 'Вовк',
 								level: 0,
 								role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Companion),
 								keywords: ['Тварина'],
@@ -1100,24 +1100,24 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: 'beastheart-1-2a-13-4',
-											name: 'Clamping Jaws',
-											description: 'With an unnerving growl, the wolf sinks powerful teeth onto their quarry.',
+											name: 'Мертва хватка щелеп',
+											description: 'З моторошним гарчанням вовк впивається могутніми зубами у свою здобич.',
 											type: FactoryLogic.type.createManeuver(),
 											keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Weapon],
 											distance: [FactoryLogic.distance.createMelee()],
 											target: 'Один ворог',
 											sections: [
-												FactoryLogic.createAbilitySectionText('2 + С damage; M < [середній], grabbed'),
+												FactoryLogic.createAbilitySectionText('2 + С шкоди; С < [середній], схоплений'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'M < [сильний], grabbed'
+													effect: 'С < [сильний], схоплений'
 												})
 											]
 										})
 									}),
 									FactoryLogic.feature.create({
 										id: 'beastheart-1-2a-13-5',
-										name: 'Retriever',
-										description: 'The wolf can move at full speed while they have a creature grabbed, no matter the grabbed creature’s size.'
+										name: 'Тягун',
+										description: 'Вовк може рухатися на повній швидкості, поки тримає істоту схопленою, незалежно від розміру цієї істоти.'
 									})
 								]
 							}),
@@ -1127,22 +1127,22 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 							level3: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-13-3-1',
-									name: 'My, What Big Teeth You Have',
-									description: 'When the wolf hits a creature with a strike while rampaging, the creature is grabbed.'
+									name: 'Ого, які в тебе великі зуби',
+									description: 'Коли вовк вражає істоту ударом, поки лютує, ціль стає схопленою.'
 								})
 							],
 							level6: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-13-6-1',
-									name: 'Call of the Wild',
-									description: 'While the wolf is rampaging, both of you have a +2 bonus to speed and creatures within 5 squares can’t be hidden or concealed from you or your companion.'
+									name: 'Поклик дикої природи',
+									description: 'Поки вовк лютує, кожен із вас отримує +2 до швидкості, а істоти в межах 5 клітинок не можуть бути прихованими або замаскованими від вас чи вашого компаньйона.'
 								})
 							],
 							level10: [
 								FactoryLogic.feature.create({
 									id: 'beastheart-1-2a-13-10-1',
-									name: 'Dire Wolf',
-									description: 'While the wolf is rampaging, you and the wolf are surrounded by an aura of dread. Enemies that start their turn adjacent to you or the wolf who have П < [сильний] are frightened (EoT).'
+									name: 'Лютововк',
+									description: 'Поки вовк лютує, вас і вовка оточує аура жаху. Вороги, які починають свій хід суміжно з вами або вовком і мають П < [сильний], стають зляканими (до кінця ходу).'
 								})
 							]
 						})
@@ -1150,51 +1150,51 @@ A dazzled creature can’t have line of effect to targets who aren’t adjacent 
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-1-2b',
-					name: 'Companions in Combat',
+					name: 'Компаньйони в бою',
 					description: `
-**Companion Stamina and Recoveries**. Your companion has a maximum Stamina equal to your maximum Stamina. Your companion has no Recoveries of their own. Instead, when an effect would allow your companion to spend a Recovery, your companion spends one of your Recoveries.
+**Витривалість і Відновлення компаньйона**. Максимум Витривалості вашого компаньйона дорівнює вашому максимуму Витривалості. Власних Відновлень компаньйон не має. Натомість, якщо ефект дозволяє компаньйонові витратити Відновлення, він витрачає одне з ваших Відновлень.
 
-**Companion Actions**. Your companion is your ally, but they take their turn as a part of your turn. For the purpose of effects that end at the end of the companion’s turn, or any other rules elements that depend on the start or end of creature’s turn, the start and end of your turn is also the start and end of the companion’s turn.
+**Дії компаньйона**. Компаньйон є вашим союзником, але виконує свій хід як частину вашого ходу. Для ефектів, що закінчуються наприкінці ходу компаньйона, а також для будь-яких інших правил, що залежать від початку або кінця ходу істоти, початок і кінець вашого ходу також вважаються початком і кінцем ходу компаньйона.
 
-You and your companion each have separate move actions. You have one triggered action which can be taken by either you or your companion. You split your maneuver and action between you: if you take an action, you can’t take a maneuver but your companion can. If you take a maneuver, you can’t take an action but your companion can.
+У вас і вашого компаньйона окремі дії руху. У вас є одна тригерна дія, яку може виконати або ви, або компаньйон. Ви ділите між собою маневр і основну дію: якщо ви виконуєте основну дію, то не можете виконати маневр, але це може зробити компаньйон. Якщо ви виконуєте маневр, то не можете виконати основну дію, але це може зробити компаньйон.
 
-**Shared Maneuvers**. When you or your companion take the following maneuvers, you can choose for both of you to benefit from the maneuver: Catch Breath, Escape Grab, Hide, Stand Up.
+**Спільні маневри**. Коли ви або ваш компаньйон виконуєте один із таких маневрів, ви можете обрати, щоб користь від нього отримали ви обидва: «Перехопити подих», «Втекти з захвату», «Сховатися», «Піднятися».
 
-**Ranged Free Strikes**. Your companion doesn’t have a ranged free strike.
+**Дальні вільні удари**. У компаньйона немає дальнього вільного удару.
 
-**Shared Abilities**. Some of the abilities granted by the beastheart class can be used by only the beastheart, some can be used only by the companion, and some can be used by either. If a beastheart ability has the Beastheart keyword, it can be used by only the beastheart. If it has the Companion keyword, it can be used only by the companion. If an ability can be used by either you or your companion, the word “you” in the ability’s text refers to the user of the ability, and the word “partner” refers to whichever of you did not use the ability. Phrases like "you both" and "you each" refer to you and your companion.
+**Спільні здібності**. Деякі здібності, які надає клас звіросерця, може використовувати лише звіросерце, деякі лише компаньйон, а деякі може використовувати будь-хто з вас. Якщо здібність звіросерця має ключове слово Beastheart, її може використовувати лише звіросерце. Якщо вона має ключове слово Companion, її може використовувати лише компаньйон. Якщо здібність може використати будь-хто з вас, то слово “ви” в її тексті означає того, хто її використовує, а слово “партнер” означає того з вас, хто її не використовував. Фрази на кшталт “ви обидва” та “кожен із вас” стосуються вас і вашого компаньйона.
 
-**Shared Senses**. While you are both within 1 mile of each other, you can communicate telepathically as if you shared a language, although this communication uses vague images and feelings instead of words.
+**Спільні чуття**. Поки ви перебуваєте в межах 1 милі один від одного, ви можете спілкуватися телепатично так, наче маєте спільну мову, хоча це спілкування складається з нечітких образів і відчуттів, а не зі слів.
 
-**Shared Skills**. Your companion has any skill that you have, and vice versa. No matter what skills they possess, your companion can’t take any action that is not allowed by their physiology (for instance, a wolf can’t pick locks).
+**Спільні навички**. Ваш компаньйон має всі навички, які маєте ви, і навпаки. Водночас, які б навички він не мав, компаньйон не може виконувати дій, які суперечать його фізіології (наприклад, вовк не може відмикати замки).
 
-**Shared Space**. Both of you can freely move through and stop in each others’ spaces.
+**Спільний простір**. Ви обоє можете вільно проходити крізь простори один одного й зупинятися в них.
 
-**Shared Perks and Titles**. If you gain a benefit by earning a perk or a title, your companion gains the same benefit. Your companion can only use benefits that are logically usable by an animal: for instance, an animal can’t craft and therefore can’t benefit from the Handy perk.
+**Спільні перки й титули**. Якщо ви отримуєте перевагу, здобувши перк або титул, ваш компаньйон отримує ту саму перевагу. Компаньйон може використовувати лише ті переваги, які логічно доступні тварині: наприклад, тварина не може крафтити, а отже не може скористатися перком Handy.
 
-**Surges**. Surges gained by your companion go to your surge pool, which your companion shares. Your companion can spend your surges the same way you can. When the same effect would grant surges to you both, you only gain surges once.
+**Сплески**. Сплески, отримані компаньйоном, додаються до вашого спільного пулу сплесків. Компаньйон може витрачати ваші сплески так само, як і ви. Якщо той самий ефект мав би надати сплески вам обом, ви все одно отримуєте їх лише один раз.
 
-**Changing your Companion**. As a respite activity, you can release your current companion, gaining a new companion of a different species or summoning a companion you previously released.
+**Зміна компаньйона**. Як діяльність під час відпочинку ви можете відпустити поточного компаньйона й отримати нового компаньйона іншого виду або знову призвати компаньйона, якого раніше відпустили.
 
-**One Hero**. You and your companion count as one hero for determining the difficulty of combats, montage tests, and so on.`
+**Один герой**. Ви та ваш компаньйон вважаєтеся одним героєм для визначення складності боїв, випробувань монтажу тощо.`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'beastheart-1-3',
-						name: 'Heart of the Beast',
-						description: '“Better look away, this might not be pretty.”',
+						name: 'Серце звіра',
+						description: '«Краще відвернися, це буде не з приємних.»',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You spend a Recovery as your partner rips their way out of your chest or climbs from your unnaturally wide jaws. Your partner teleports to your space over any distance, even if they don’t have line of effect to you. Your partner gains temporary Stamina equal to their recovery value.'),
+							FactoryLogic.createAbilitySectionText('Ви витрачаєте Відновлення, і ваш партнер проривається назовні з ваших грудей або вибирається з ваших неприродно широких щелеп. Ваш партнер телепортується у ваш простір на будь-якій відстані, навіть якщо не має до вас лінії ефекту. Ваш партнер отримує тимчасову Витривалість, рівну своєму значенню Відновлення.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: '(Beastheart only) You rip your heart from your chest and throw it up to 10 squares to an unoccupied space. Your heart then transforms into your companion, teleporting them to that space instead of to your space.'
+								effect: '(Лише звіросерце) Ви вириваєте своє серце з грудей і кидаєте його на відстань до 10 клітинок у незайнятий простір. Потім ваше серце перетворюється на компаньйона, телепортуючи його в цей простір замість вашого.'
 							}),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'The teleported creature gains additional temporary Stamina equal to their Recovery value times the number of Ferocity you spend in this way (max 3). If they are dead, you can spend 3 Ferocity to restore them to life with 1 Stamina, even if their body was destroyed, and they gain no temporary Stamina.'
+								effect: 'Телепортована істота отримує додаткову тимчасову Витривалість, рівну своєму значенню Відновлення, помноженому на кількість Люті, витраченої в такий спосіб (макс. 3). Якщо вона мертва, ви можете витратити 3 Люті, щоб повернути її до життя з 1 Витривалістю, навіть якщо її тіло було знищене, але тимчасової Витривалості вона не отримує.'
 							})
 						]
 					})
@@ -1202,20 +1202,20 @@ You and your companion each have separate move actions. You have one triggered a
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'beastheart-1-4',
-						name: 'Feral Strike',
-						description: 'Your companion lunges into the fray, attacking wildly with teeth, claws, or other weapons.',
+						name: 'Дикий удар',
+						description: 'Ваш компаньйон кидається в гущу бою, дико атакуючи зубами, кігтями чи іншою зброєю.',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Один ворог',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Before taking this action, your companion moves a number of squares equal to their Intuition score straight toward the closest enemy they are aware of, avoiding damaging terrain and ending the movement when they are adjacent to an enemy. If they are within distance of the enemy at the end of this movement, they make the following power roll.'),
+							FactoryLogic.createAbilitySectionText('Перш ніж виконати цю дію, ваш компаньйон рухається на кількість клітинок, рівну його показнику Інтуїції, прямо до найближчого ворога, про якого знає, уникаючи небезпечної місцевості й завершуючи рух, коли опиняється суміжно з ворогом. Якщо наприкінці цього руху ворог перебуває в межах досяжності, компаньйон виконує такий кидок сили.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Might,
-									tier1: '2 + С damage',
-									tier2: '4 + С damage',
-									tier3: '7 + С damage'
+									tier1: '2 + С шкоди',
+									tier2: '4 + С шкоди',
+									tier3: '7 + С шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionPackage('feral-strike')
@@ -1224,21 +1224,21 @@ You and your companion each have separate move actions. You have one triggered a
 				}),
 				FactoryLogic.feature.createPackage({
 					id: 'beastheart-1-5',
-					name: 'Rampage',
+					name: 'Шаленство',
 					description: `
-While your ferocity sharpens your killer instinct, it can also drive your companion into a rampage, causing them to strike friends and foes alike in their blood-soaked battle frenzy. As their rampage builds, they become something more than a mortal companion, embodying a primordial spirit of destruction.
+Поки ваша Лють загострює вбивчий інстинкт, вона також може вкинути компаньйона у шаленство, через яке він кидається на друзів і ворогів однаково, у кривавому бойовому несамовитстві. У міру того як його шаленство зростає, компаньйон стає чимось більшим, ніж смертний супутник, уособлюючи первісний дух руйнування.
 
-Your companion has a resource called rampage. Whenever you or your companion spends ferocity, your companion accumulates rampage equal to the ferocity spent. Your companion loses their rampage and all of its effects at the end of an encounter.
+У вашого компаньйона є ресурс, що називається шаленством. Щоразу, коли ви або ваш компаньйон витрачаєте Лють, компаньйон накопичує стільки шаленства, скільки Люті було витрачено. Наприкінці зустрічі компаньйон втрачає все своє шаленство і всі його ефекти.
 
-Your companion doesn’t spend rampage to activate abilities. Instead, when your companion accumulates 8 rampage, they are rampaging. As your companion’s rampage increases, your companion gains the listed effects from the Rampage table. Effects are cumulative.
+Компаньйон не витрачає шаленство, щоб активувати здібності. Натомість, коли він накопичує 8 шаленства, то шаленіє. Коли шаленство компаньйона зростає, він отримує ефекти з таблиці «Шаленство». Ефекти накопичуються.
 
-| Rampage     | Effect |
-|:============|:=======|
-| 8           | At the end of each of your turns, your companion must use Feral Strike as a free maneuver. Each creature within the ability's distance takes damage equal to your companion's Might score. You gain 1 surge for each ally damaged in this way.    |
-| 12          | Your companion has damage immunity equal to their Intuition. As a free maneuver, your companion can increase their size by 1 or return to their true size. They return to their true size when the rampage ends.    |
-| 16 (lvl 4)  | When your companion uses Feral Strike, they deal extra damage equal to your companion's Intuition score to eachcreature within the ability's distance. You gain 1 extra surge for each ally damaged in this way.    |
-| 20 (lvl 7)  | While your companion's size is increased, their Stability, Potency, and Speed are increased by 2, and the distance of Feral Strike is increased by 1.    |
-| 24 (lvl 10) | When your companion increases their size, they can increase it by 1 or 2. While they are size 3 or larger, when they make a power roll they can roll 3d10 and discard the lowest roll.    |`,
+| Шаленство   | Ефект |
+|:============|:======|
+| 8           | Наприкінці кожного вашого ходу компаньйон повинен використати «Дикий удар» як безкоштовний маневр. Кожна істота в межах дальності здібності отримує шкоду, рівну показнику Сили компаньйона. Ви отримуєте 1 сплеск за кожного союзника, якому ця здібність завдала шкоди. |
+| 12          | Компаньйон має імунітет до шкоди, рівний його Інтуїції. Безкоштовним маневром компаньйон може збільшити свій розмір на 1 або повернутися до справжнього розміру. Коли шаленство закінчується, він повертається до справжнього розміру. |
+| 16 (рів. 4) | Коли компаньйон використовує «Дикий удар», він завдає кожній істоті в межах дальності здібності додаткової шкоди, рівної показнику Інтуїції компаньйона. Ви отримуєте ще 1 сплеск за кожного союзника, якому ця здібність завдала шкоди. |
+| 20 (рів. 7) | Поки розмір компаньйона збільшений, його Стійкість, Потужність і Швидкість зростають на 2, а дальність «Дикого удару» зростає на 1. |
+| 24 (рів. 10) | Коли компаньйон збільшує свій розмір, він може збільшити його на 1 або 2. Поки його розмір 3 або більше, під час кидка сили він може кинути 3d10 і відкинути найнижчий результат. |`,
 					tag: 'rampage'
 				}),
 				FactoryLogic.feature.createKitChoice({
@@ -1247,13 +1247,13 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-1-6b',
-					name: 'Beasthearts and Magic Treasure',
+					name: 'Звіросерця та магічні скарби',
 					description: `
-**Consumables**: While your companion can’t use all consumables, with your help they can benefit from an edible or drinkable consumable, such as a Healing Potion. While wearing a kit, they can also benefit from a consumable that enhances a weapon, such as a Lachomp Tooth. While you are adjacent to your companion, when you use one of these consumables, you can grant the benefit to your companion instead of yourself. You must spend the action required to use the consumable; your companion doesn’t need to take any action.
+**Витратні предмети**: Хоч ваш компаньйон не може користуватися всіма витратними предметами, з вашою допомогою він може отримати користь від їстівного або питного витратного предмета, такого як Healing Potion. Поки він носить комплект, то також може отримувати користь від витратного предмета, що підсилює зброю, наприклад Lachomp Tooth. Поки ви суміжні з компаньйоном, коли використовуєте один із таких витратних предметів, ви можете надати його користь компаньйонові замість себе. Ви все одно витрачаєте дію, потрібну для використання предмета; компаньйон не витрачає жодної дії.
 
-**Trinkets**: Most trinkets are designed to be worn by bipeds (such as cloaks, masks, and hats), or require words or gestures to activate. Your companion can’t use such a trinket. However, your companion can benefit from one necklace, pendant, collar, or other trinket with the Neck keyword that doesn’t require any action to activate, such as a Necklace of the Bayou or one of the new magic trinkets presented in this document. Although your companion can wear only one item with the Neck keyword, they don’t need to wear it around their neck: a condor might wear a necklace wrapped around a talon, and a gummy ball might carry it suspended inside their body!
+**Дрібнички**: Більшість дрібничок призначені для носіння двоногими істотами (як-от плащі, маски та капелюхи) або потребують слів чи жестів для активації. Ваш компаньйон не може користуватися такими дрібничками. Втім, він може отримувати користь від одного намиста, підвіски, нашийника чи іншої дрібнички з ключовим словом Neck, яка не потребує жодної дії для активації, наприклад Necklace of the Bayou або однієї з нових магічних дрібничок, поданих у цьому документі. Хоч компаньйон може носити лише один предмет із ключовим словом Neck, він не мусить носити його саме на шиї: кондор може обгорнути намисто навколо кігтя, а желейна куля може тримати його підвішеним усередині свого тіла!
 
-**Leveled Items**: Although your companion can’t wield a sword, they can benefit from a magic blade! When you wield a leveled weapon, armor, implement, or other leveled item, your companion gains the benefits of the magic treasure as if they were wielding it. As is true with any character, both of you only benefit from a wieldable magic weapon or armor if its keywords match your kit.`
+**Рівневі предмети**: Хоч компаньйон і не може орудувати мечем, він усе ж може отримати користь від магічного клинка! Коли ви володієте рівневою зброєю, обладунком, імплементом або іншим рівневим предметом, компаньйон отримує переваги цього магічного скарбу так, ніби сам ним володіє. Як і для будь-якого персонажа, кожен із вас отримує користь від магічної зброї або обладунку, якими можна володіти, лише якщо їхні ключові слова відповідають вашому комплекту.`
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'beastheart-1-7',
@@ -1274,13 +1274,13 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-2-1',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Exploration, PerkList.Intrigue, PerkList.Interpersonal]
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-2-2',
-					name: 'Timely Aid',
-					description: 'Your companion may not be much of a talker, but they’ve got a lifetime of experience surviving the deadly dangers of the wild. They can offer aid in nearly any circumstance: helping exhausted travelers find their way, leading panicked villagers out of a burning building, or even providing a comforting nuzzle at just the right time. Once per round during a montage test, when you or another character makes a test, you can have your companion increase the tier outcome by one stage, to a maximum of 3.'
+					name: 'Своєчасна допомога',
+					description: 'Ваш компаньйон, може, і не надто балакучий, зате має за плечима ціле життя виживання серед смертельних небезпек дикої природи. Він може допомогти майже за будь-яких обставин: провести виснажених мандрівників правильним шляхом, вивести переляканих селян із палаючої будівлі або вчасно ткнутися носом, щоб підбадьорити. Раз за раунд під час випробування монтажу, коли ви або інший персонаж виконуєте тест, ви можете дозволити компаньйонові підвищити рівень результату на одну сходинку, максимум до 3.'
 				})
 			]
 		},
@@ -1314,17 +1314,17 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'beastheart-4-4a',
-					name: 'Unchained Ferocity',
+					name: 'Нестримна лють',
 					tag: 'deal-damage-self 2',
-					trigger: 'The first time in a round that you deal damage',
+					trigger: 'Вперше за раунд, коли ви завдаєте шкоди',
 					value: '2',
 					replacesTags: ['deal-damage-self']
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'beastheart-4-4b',
-					name: 'Unchained Ferocity',
+					name: 'Нестримна лють',
 					tag: 'deal-damage-companion 2',
-					trigger: 'The first time in a round that your companion deals damage',
+					trigger: 'Вперше за раунд, коли ваш компаньйон завдає шкоди',
 					value: '2',
 					replacesTags: ['deal-damage-companion']
 				})
@@ -1344,7 +1344,7 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			features: [
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-6-1',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				})
 			]
@@ -1379,9 +1379,9 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'beastheart-7-2',
-					name: 'Greater Ferocity',
+					name: 'Більша лють',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'На початку вашого ходу',
 					value: '1d3 +1',
 					replacesTags: ['start']
 				}),
@@ -1407,8 +1407,8 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 			features: [
 				FactoryLogic.feature.create({
 					id: 'beastheart-9-1a',
-					name: 'Nature’s Wisdom',
-					description: 'Your companion has transcended beasthood. Although they are still your faithful friend, they are also a vessel for nature’s wisdom and memories. Your companion’s Reason increases to 1, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings.'
+					name: 'Мудрість природи',
+					description: 'Ваш компаньйон перевершив звірину природу. Хоч він і далі залишається вашим вірним другом, він також стає вмістилищем мудрості та памʼяті природи. Показник Розуму компаньйона зростає до 1, і він вивчає всі мови, які знаєте ви. Компаньйон може телепатично спілкуватися з будь-якою істотою в межах 10 клітинок, передаючи і мову, і образи, і почуття.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-9-1b',
@@ -1435,33 +1435,33 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				}),
 				FactoryLogic.feature.createHeroicResourceGain({
 					id: 'beastheart-10-2',
-					name: 'Hot Blooded',
+					name: 'Гаряча кров',
 					tag: 'start 3',
-					trigger: 'Start of your turn',
+					trigger: 'На початку вашого ходу',
 					value: '1d3 +2',
 					replacesTags: ['start', 'start 2']
 				}),
 				FactoryLogic.feature.createPerk({
 					id: 'beastheart-10-3',
-					name: 'Perk',
+					name: 'Перк',
 					lists: [PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue]
 				}),
 				FactoryLogic.feature.createHeroicResource({
 					id: 'beastheart-10-4',
-					name: 'Primordial Power',
+					name: 'Первісна сила',
 					type: 'epic',
 					gains: [
 						{
 							tag: '',
-							trigger: 'Finish a respite',
+							trigger: 'Завершення відпочинку',
 							value: 'Отримання досвіду'
 						}
 					],
-					description: 'You can spend 1 primordial power as a free maneuver to allow you each to take a main action on your turn, instead of a main action and a maneuver. For that turn, the ferocity cost of heroic abilities is reduced by 1.'
+					description: 'Ви можете витратити 1 первісну силу як безкоштовний маневр, щоб дозволити кожному з вас виконати основну дію у свій хід замість основної дії та маневру. Для цього ходу вартість героїчних здібностей у Люті зменшується на 1.'
 				}),
 				FactoryLogic.feature.createSkillChoice({
 					id: 'beastheart-10-5',
-					name: 'Skill'
+					name: 'Навичка'
 				})
 			]
 		}
@@ -1469,32 +1469,32 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 	abilities: [
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-1',
-			name: 'Burning Rage',
-			description: 'Lances of primordial energy leap from you and your companion to sear, crush, or freeze your foe.',
+			name: 'Палаюча лють',
+			description: 'Списи первісної енергії зриваються з вас і вашого компаньйона, щоб обпалити, розчавити або заморозити ворога.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '2 + С cold, fire, lightning, or sonic damage',
-						tier2: '4 + С cold, fire, lightning, or sonic damage',
-						tier3: '6 + С cold, fire, lightning, or sonic damage'
+						tier1: '2 + С холодної, вогняної, блискавичної або звукової шкоди',
+						tier2: '4 + С холодної, вогняної, блискавичної або звукової шкоди',
+						tier3: '6 + С холодної, вогняної, блискавичної або звукової шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You can spend a surge to allow your partner to use this ability as a free triggered action, targeting a different target with the same power roll and not using this effect.')
+				FactoryLogic.createAbilitySectionText('Ви можете витратити сплеск, щоб дозволити партнерові використати цю здібність як безкоштовну тригерну дію, націливши її на іншу ціль з тим самим кидком сили й без використання цього ефекту.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-2',
-			name: 'Covering Fire',
-			description: 'Keep your head down or I’ll shoot it off!',
+			name: 'Прикривальний вогонь',
+			description: 'Голову вниз, а то її й знесе!',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createRanged(5)],
@@ -1504,63 +1504,63 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '2 + I damage',
-						tier2: '4 + I damage',
-						tier3: '6 + I damage'
+						tier1: '2 + І шкоди',
+						tier2: '4 + І шкоди',
+						tier3: '6 + І шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is not prone, they must use a free triggered action to fall prone or take extra damage equal to twice your Intuition score. Your companion can shift up to a number of spaces equal to their Intuition score.')
+				FactoryLogic.createAbilitySectionText('Якщо ціль не лежить, вона мусить використати безкоштовну тригерну дію, щоб стати лежачою, або отримати додаткову шкоду, рівну подвоєному показнику вашої Інтуїції. Ваш компаньйон може зміститися на кількість клітинок, рівну його показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-3',
-			name: 'Scatter!',
-			description: 'You launch a flurry of attacks and then retreat.',
+			name: 'Розсійтеся!',
+			description: 'Ви обрушуєте шквал атак, а тоді відступаєте.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 'signature',
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '2 + С damage',
-						tier2: '3 + С damage',
-						tier3: '4 + С damage'
+						tier1: '2 + С шкоди',
+						tier2: '3 + С шкоди',
+						tier3: '4 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Your companion makes a free strike. You both shift up to a number of squares equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Ваш компаньйон завдає вільного удару. Ви обоє зміщуєтеся на кількість клітинок, рівну вашому показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-4',
-			name: 'Tag Me In',
-			description: 'Drawing on your primordial magic, you magically switch places with an ally, giving them a breather while you deliver a surprise attack.',
+			name: 'Підміни мене!',
+			description: 'Покликавши первісну магію, ви чарівно міняєтеся місцями із союзником, даючи йому перепочинок, поки самі завдаєте раптового удару.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 'signature',
 			sections: [
-				FactoryLogic.createAbilitySectionText('If you and a willing ally are standing on the ground within 10 squares of each other, you can teleport, swapping places. If you do so, you gain an edge on this ability’s power roll.'),
+				FactoryLogic.createAbilitySectionText('Якщо ви і союзник, що згоден, стоїте на землі в межах 10 клітинок один від одного, ви можете телепортуватися й помінятися місцями. Якщо робите це, то отримуєте перевагу на кидок сили цієї здібності.'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '3 + I damage',
-						tier2: '5 + I damage',
-						tier3: '7 + I damage'
+						tier1: '3 + І шкоди',
+						tier2: '5 + І шкоди',
+						tier3: '7 + І шкоди'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-5',
-			name: 'Herd the Sheep',
-			description: 'Your companion circles your foe, luring them out of position with fake openings and unpredictable attacks.',
+			name: 'Зжени отару',
+			description: 'Ваш компаньйон кружляє навколо ворога, виманюючи його з позиції оманливими проривами й непередбачуваними атаками.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1570,39 +1570,39 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '5 + С damage; slide 1; I < [слабкий], weakened (save ends)',
-						tier2: '8 + С damage; slide 2; I < [середній], weakened (save ends)',
-						tier3: '11 + С damage; slide 4; I < [сильний], weakened (save ends)'
+						tier1: '5 + С шкоди; зсунути на 1; І < [слабкий], ослаблений (рят. кидок закінчує)',
+						tier2: '8 + С шкоди; зсунути на 2; І < [середній], ослаблений (рят. кидок закінчує)',
+						tier3: '11 + С шкоди; зсунути на 4; І < [сильний], ослаблений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You and your companion can shift up to a number of squares equal to the number of squares the target was moved.')
+				FactoryLogic.createAbilitySectionText('Ви й ваш компаньйон можете зміститися на кількість клітинок, рівну числу клітинок, на яке перемістили ціль.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-6',
-			name: 'High and Low',
-			description: 'You and your companion surround your foe in order to bring them down.',
+			name: 'Згори і знизу',
+			description: 'Ви й ваш компаньйон оточуєте ворога, щоб збити його з ніг.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 3,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '5 + С damage; push 2',
-						tier2: '8 + С damage; push 4',
-						tier3: '11 + С damage; push 6'
+						tier1: '5 + С шкоди; відштовхнути на 2',
+						tier2: '8 + С шкоди; відштовхнути на 4',
+						tier3: '11 + С шкоди; відштовхнути на 6'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('This ability’s push can pass through your space but not end there. If it passes through your space, the target falls prone and takes extra damage equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Відштовхування цієї здібності може пройти крізь ваш простір, але не може в ньому закінчитися. Якщо воно проходить крізь ваш простір, ціль падає лежачи й отримує додаткову шкоду, рівну вашому показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-7',
-			name: 'Hungry like the Wolf',
-			description: 'The enemy’s blood flows like wine, invigorating your companion.',
+			name: 'Голодний як вовк',
+			description: 'Кров ворога тече, мов вино, бадьорячи вашого компаньйона.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1612,17 +1612,17 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '4 + С damage; your companion can spend a Recovery',
-						tier2: '7 + С damage; each of you can can spend a Recovery',
-						tier3: '11 + С damage; Л < [сильний], bleeding (EoT); each of you can spend a Recovery and shift up to 2 squares'
+						tier1: '4 + С шкоди; ваш компаньйон може витратити Відновлення',
+						tier2: '7 + С шкоди; кожен із вас може витратити Відновлення',
+						tier3: '11 + С шкоди; Л < [сильний], кровотеча (до кінця ходу); кожен із вас може витратити Відновлення і зміститися до 2 клітинок'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-8',
-			name: 'Mighty Roar',
-			description: 'Your companion unleashes a shattering roar, screech, or howl that terrifies your foes—or at least gets their attention.',
+			name: 'Могутній рев',
+			description: 'Ваш компаньйон випускає нищівний рев, вереск або виття, що жахає ворогів або принаймні привертає їхню увагу.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
@@ -1632,20 +1632,20 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '3 sonic damage; push 1; П < [слабкий], taunted (save ends)',
-						tier2: '5 sonic damage; push 2; П < [середній], taunted (save ends)',
-						tier3: '7 sonic damage; push 3; П < [сильний], taunted (save ends)'
+						tier1: '3 звукової шкоди; відштовхнути на 1; П < [слабкий], спровокований (рят. кидок закінчує)',
+						tier2: '5 звукової шкоди; відштовхнути на 2; П < [середній], спровокований (рят. кидок закінчує)',
+						tier3: '7 звукової шкоди; відштовхнути на 3; П < [сильний], спровокований (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
-					effect: 'This ability also affects a 2 burst around you. An enemy in both areas is only affected once.'
+					effect: 'Ця здібність також впливає на спалах 2 навколо вас. Ворог у обох зонах зазнає ефекту лише один раз.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-9',
-			name: 'Bloodlust Strike',
-			description: 'Invigorated by the smell of blood, you strike a savage blow.',
+			name: 'Кровожерний удар',
+			description: 'Підбадьорений запахом крові, ви завдаєте лютого удару.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -1658,34 +1658,34 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '8 + С damage',
-						tier2: '12 + С damage',
-						tier3: '16 + С damage; M < [сильний], bleeding (save ends)'
+						tier1: '8 + С шкоди',
+						tier2: '12 + С шкоди',
+						tier3: '16 + С шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is winded or bleeding after the attack, you gain two surges.')
+				FactoryLogic.createAbilitySectionText('Якщо після атаки ціль перебуває в стані захеканості або кровотечі, ви отримуєте 2 сплески.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-10',
-			name: 'Bring it On!',
-			description: 'Let all of them come forward and shatter yourselves against your might!',
+			name: 'Ну ж бо!',
+			description: 'Хай вони всі йдуть уперед і розбиваються об вашу міць!',
 			type: FactoryLogic.type.createManeuver(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 			target: 'Кожен ворог у зоні',
 			cost: 5,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You can spend a Recovery. Each enemy in the area is taunted (EoT). You gain 3 temporary Stamina for each enemy in the area.'),
+				FactoryLogic.createAbilitySectionText('Ви можете витратити Відновлення. Кожен ворог у зоні стає спровокованим до кінця ходу. Ви отримуєте 3 тимчасової Витривалості за кожного ворога в зоні.'),
 				FactoryLogic.createAbilitySectionSpend({
-					effect: 'This ability also affects a 3 burst around your companion. Creatures in this second burst are taunted by your companion. An enemy in both areas is taunted only by you.'
+					effect: 'Ця здібність також впливає на спалах 3 навколо вашого компаньйона. Істоти в цьому другому спалаху спровоковані компаньйоном. Ворог у обох зонах спровокований лише вами.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-11',
-			name: 'Friendly Fire',
-			description: 'As your arrows rain down on your foes, flames spiral around your companion, setting the arrows ablaze.',
+			name: 'Дружній вогонь',
+			description: 'Поки ваші стріли падають на ворогів, навколо компаньйона закручуються язики полум’я, підпалюючи їх.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 5 })],
@@ -1695,18 +1695,18 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '3 damage',
-						tier2: '5 damage',
-						tier3: '8 damage'
+						tier1: '3 шкоди',
+						tier2: '5 шкоди',
+						tier3: '8 шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If your companion is in the area, your companion deals fire damage equal to their Intuition score to each enemy in the area.')
+				FactoryLogic.createAbilitySectionText('Якщо ваш компаньйон перебуває в зоні, він завдає кожному ворогу в зоні вогняної шкоди, рівної своєму показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-12',
-			name: 'Unfair Advantage',
-			description: 'The wilderness has no concept of fair play.',
+			name: 'Нечесна перевага',
+			description: 'Дика природа не знає, що таке чесна гра.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1716,39 +1716,39 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '8 + С damage; M < [слабкий], grabbed',
-						tier2: '12 + С damage; M < [середній], grabbed',
-						tier3: '16 + С damage; M < [сильний], grabbed'
+						tier1: '8 + С шкоди; С < [слабкий], схоплений',
+						tier2: '12 + С шкоди; С < [середній], схоплений',
+						tier3: '16 + С шкоди; С < [сильний], схоплений'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If you grab the target while your companion is adjacent to the target, your companion can make a melee free strike against the target.')
+				FactoryLogic.createAbilitySectionText('Якщо ви хапаєте ціль, поки ваш компаньйон суміжний із нею, ваш компаньйон може завдати їй ближнього вільного удару.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-13',
-			name: 'Heart Eater',
-			description: 'Bones crack as a bloody figure leaps from your foe’s corpse.',
-			type: FactoryLogic.type.createTrigger('You use an ability that reduces the creature to 0 Stamina.'),
+			name: 'Пожирач сердець',
+			description: 'Кістки тріщать, коли кривава постать вистрибує з трупа вашого ворога.',
+			type: FactoryLogic.type.createTrigger('Ви використовуєте здібність, що зводить істоту до 0 Витривалості.'),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 			distance: [FactoryLogic.distance.createRanged(10)],
 			target: 'Один ворог',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('The creature dies and your companion rips their way out of the creature’s body. Your companion teleports into the creature’s space, shifts up to a number of squares equal to their Might, and can then make a melee free strike. Your companion makes the following power roll once, targeting each enemy within 5 squares of the target:'),
+				FactoryLogic.createAbilitySectionText('Істота помирає, а ваш компаньйон проривається назовні з її тіла. Ваш компаньйон телепортується в простір істоти, зміщується на кількість клітинок, рівну його Силі, а потім може завдати ближнього вільного удару. Після цього компаньйон один раз виконує такий кидок сили, націлюючи його на кожного ворога в межах 5 клітинок від цілі:'),
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: 'P < [слабкий], frightened (save ends)',
-						tier2: '4 psychic damage; П < [середній], frightened (save ends)',
-						tier3: '8 psychic damage; П < [сильний], frightened (save ends)'
+						tier1: 'П < [слабкий], зляканий (рят. кидок закінчує)',
+						tier2: '4 психічної шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+						tier3: '8 психічної шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 					})
 				)
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-14',
-			name: 'Heedless Headbutt',
-			description: 'Your bloody forehead smash drives your companion into a frenzy.',
+			name: 'Безрозсудний удар головою',
+			description: 'Ваш кривавий удар лобом вганяє компаньйона у шаленство.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1758,18 +1758,18 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '13 + С damage; П < [слабкий], dazed (save ends)',
-						tier2: '19 + С damage; П < [середній], dazed (save ends)',
-						tier3: '25 + С damage; П < [сильний], dazed (save ends)'
+						tier1: '13 + С шкоди; П < [слабкий], приголомшений (рят. кидок закінчує)',
+						tier2: '19 + С шкоди; П < [середній], приголомшений (рят. кидок закінчує)',
+						tier3: '25 + С шкоди; П < [сильний], приголомшений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('You are bleeding (save ends). Until you are no longer bleeding, your companion has an edge on power rolls.')
+				FactoryLogic.createAbilitySectionText('Ви кровоточите (рят. кидок закінчує). Поки кровотеча на вас не закінчиться, ваш компаньйон має перевагу на кидках сили.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-15',
-			name: 'Primordial Jaws',
-			description: 'The spectral jaws of a trap clamp on a foe, chaining them to you and draining their life essence.',
+			name: 'Первісні щелепи',
+			description: 'Спектральні щелепи пастки змикаються на ворогові, приковуючи його до вас і висмоктуючи життєву есенцію.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged],
 			distance: [
@@ -1782,18 +1782,18 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '7 + I damage; П < [слабкий], weakened (save ends)',
-						tier2: '10 + I damage; П < [середній], weakened (save ends)',
-						tier3: '14 + I damage; П < [сильний], weakened (save ends)'
+						tier1: '7 + І шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)',
+						tier2: '10 + І шкоди; П < [середній], ослаблений (рят. кидок закінчує)',
+						tier3: '14 + І шкоди; П < [сильний], ослаблений (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('When a target weakened by this ability fails their saving throw against this ability while more than 3 squares from you, as a free triggered action you can pull the target up to a number of squares equal to your Intuition score.')
+				FactoryLogic.createAbilitySectionText('Коли ціль, ослаблена цією здібністю, провалює рятівний кидок проти неї, перебуваючи далі ніж за 3 клітинки від вас, ви можете безкоштовною тригерною дією притягнути ціль на кількість клітинок, рівну вашому показнику Інтуїції.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-16',
-			name: 'Setup Strike',
-			description: 'Your attack sets up a vicious combo.',
+			name: 'Підготовчий удар',
+			description: 'Ваш удар готує жорстоку комбінацію.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -1806,18 +1806,18 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '9 + С damage',
-						tier2: '14 + С damage',
-						tier3: '19 + С damage'
+						tier1: '9 + С шкоди',
+						tier2: '14 + С шкоди',
+						tier3: '19 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('The next creature to damage the target before the start of your next turn gains three surges.')
+				FactoryLogic.createAbilitySectionText('Наступна істота, що завдасть цілі шкоди до початку вашого наступного ходу, отримує 3 сплески.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-17',
-			name: 'Dogpile',
-			description: 'You and your allies surround your enemy like a pack of wolves, mobbing them and pulling them down.',
+			name: 'Навалитися гуртом',
+			description: 'Ви й союзники оточуєте ворога наче зграя вовків, навалюєтесь на нього й валите додолу.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1827,39 +1827,39 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '10 + С damage; M < [слабкий], grabbed and prone',
-						tier2: '15 + С damage; M < [середній], grabbed and prone',
-						tier3: '20 + С damage; M < [сильний], grabbed and prone'
+						tier1: '10 + С шкоди; С < [слабкий], схоплений і розпластаний',
+						tier2: '15 + С шкоди; С < [середній], схоплений і розпластаний',
+						tier3: '20 + С шкоди; С < [сильний], схоплений і розпластаний'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Each ally adjacent to the target can use a triggered free action to deal damage to the target equal to the ally’s highest characteristic.')
+				FactoryLogic.createAbilitySectionText('Кожен союзник поруч із ціллю може використати тригерну вільну дію, щоб завдати цілі шкоди, рівної найвищій характеристиці цього союзника.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-18',
-			name: 'Hunter\'s Mercy',
-			description: 'You take a single shot that ends your quarry’s life.',
+			name: 'Милосердя мисливця',
+			description: 'Ви робите єдиний постріл, що обриває життя вашої здобичі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createRanged(15)],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 9,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '12 + I damage',
-						tier2: '18 + I damage',
-						tier3: '30 + I damage'
+						tier1: '12 + І шкоди',
+						tier2: '18 + І шкоди',
+						tier3: '30 + І шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If you are hidden, you remain hidden after the attack.')
+				FactoryLogic.createAbilitySectionText('Якщо ви приховані, то після атаки залишаєтеся прихованими.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-19',
-			name: 'Massive Throw',
-			description: 'You can bear impossible burdens with the aid of your companion.',
+			name: 'Могутній кидок',
+			description: 'З допомогою компаньйона ви здатні підіймати неймовірний тягар.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1869,18 +1869,18 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '10 + С damage; vertical push 4; prone',
-						tier2: '15 + С damage; vertical push 6; prone',
-						tier3: '20 + С damage; vertical push 8; prone'
+						tier1: '10 + С шкоди; вертикально відштовхнути на 4; розпластаний',
+						tier2: '15 + С шкоди; вертикально відштовхнути на 6; розпластаний',
+						tier3: '20 + С шкоди; вертикально відштовхнути на 8; розпластаний'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If your companion is adjacent to the target, you can ignore the target’s Stability.')
+				FactoryLogic.createAbilitySectionText('Якщо ваш компаньйон суміжний із ціллю, ви можете ігнорувати її Стійкість.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-20',
-			name: 'Rend in Two',
-			description: 'In a gruesome display, you and your companion rip off a pinioned enemy’s limb or other body part and toss it away.',
+			name: 'Роздерти надвоє',
+			description: 'У моторошному видовищі ви та ваш компаньйон відриваєте знерухомленому ворогові кінцівку чи іншу частину тіла й відкидаєте її геть.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [FactoryLogic.distance.createMelee()],
@@ -1890,42 +1890,42 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '11 + С damage; M < [слабкий], bleeding (save ends)',
-						tier2: '17 + С damage; M < [середній], bleeding (save ends)',
-						tier3: '22 + С damage; M < [сильний], bleeding (save ends)'
+						tier1: '11 + С шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '17 + С шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '22 + С шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your companion’s Might score. If this ability reduces a target to 0 Stamina, each enemy within 2 squares who has П < average is frightened (save ends).')
+				FactoryLogic.createAbilitySectionText('Якщо ціль схоплена вашим партнером, вона отримує додаткову шкоду, рівну сумі вашого показника Сили та показника Сили компаньйона. Якщо ця здібність зводить ціль до 0 Витривалості, кожен ворог у межах 2 клітинок із П < [середній] стає наляканим (рят. кидок закінчує).')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-21',
-			name: 'Bloodied Blade and Claw',
-			description: 'Driven by the pain and desperation of battle, you and your companion spend your last strength in a flurry of wild attacks.',
+			name: 'Закривавлені клинок і кіготь',
+			description: 'Підживлені болем і відчаєм бою, ви й компаньйон витрачаєте останні сили в шаленому шквалі атак.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
 				FactoryLogic.distance.createMelee(),
 				FactoryLogic.distance.createRanged(5)
 			],
-			target: 'Один іншій',
+			target: 'Один ворог',
 			cost: 11,
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '5 + С damage',
-						tier2: '15 + С damage',
-						tier3: '25 + С damage'
+						tier1: '5 + С шкоди',
+						tier2: '15 + С шкоди',
+						tier3: '25 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Your companion can repeat the attack as a melee attack, making their own power roll. Both power rolls have an edge if either of you is bleeding, dying, or winded, and your power roll has a double edge if your companion is dead or otherwise unable to act.')
+				FactoryLogic.createAbilitySectionText('Ваш компаньйон може повторити атаку як ближню атаку, роблячи власний кидок сили. Обидва кидки сили мають перевагу, якщо хтось із вас кровоточить, вмирає або захеканий, а ваш кидок сили має подвійну перевагу, якщо компаньйон мертвий або з іншої причини не може діяти.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-22',
-			name: 'Burn the World to Ash',
-			description: 'Wrenching power from your primordial bond, you unleash elemental power in a devastating conflagration that you can’t control.',
+			name: 'Спали світ до попелу',
+			description: 'Вириваючи силу з первісного зв’язку, ви вивільняєте руйнівний вибух стихійної енергії, яким не здатні керувати.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Area, AbilityKeyword.Beastheart, AbilityKeyword.Magic],
 			distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
@@ -1935,35 +1935,35 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Intuition,
-						tier1: '10 cold, fire, lightning, or sonic damage',
-						tier2: '18 cold, fire, lightning, or sonic damage',
-						tier3: '26 cold, fire, lightning, or sonic damage'
+						tier1: '10 холодної, вогняної, блискавичної або звукової шкоди',
+						tier2: '18 холодної, вогняної, блискавичної або звукової шкоди',
+						tier3: '26 холодної, вогняної, блискавичної або звукової шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
 					value: 2,
 					repeatable: true,
-					effect: 'You can spend up to 6 extra ferocity. For each 2 extra ferocity you spend, the size of the burst is increased by 1, 2 is added to the power roll, and you take 5 damage that can’t be reduced in any way. You can decide how much ferocity you spend after you make the power roll.'
+					effect: 'Ви можете витратити до 6 додаткової Люті. За кожні 2 додаткової Люті, які ви витрачаєте, розмір спалаху збільшується на 1, до кидка сили додається 2, а ви отримуєте 5 шкоди, яку неможливо зменшити жодним способом. Ви можете вирішити, скільки Люті витратите, уже після кидка сили.'
 				})
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-23',
-			name: 'Double Trouble',
-			description: 'Your enemies might be stronger than you, but that’s why you’re not here alone.',
+			name: 'Подвійний клопіт',
+			description: 'Ваші вороги, може, й сильніші за вас, але саме тому ви не самі.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart],
 			distance: [FactoryLogic.distance.createSelf()],
 			target: 'Себе',
 			cost: 11,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You each use a different ability that costs 9 or less ferocity and that uses a maneuver or an action. These abilities cost no ferocity. If an ability lets you spend extra ferocity for an enhanced effect, you can’t do so.')
+				FactoryLogic.createAbilitySectionText('Кожен із вас використовує різну здібність, що коштує 9 або менше Люті та потребує маневру або основної дії. Ці здібності не коштують Люті. Якщо здібність дозволяє витрачати додаткову Лють за посилений ефект, так робити не можна.')
 			]
 		}),
 		FactoryLogic.createAbility({
 			id: 'beastheart-ability-24',
-			name: 'Life-Drinking Wound',
-			description: 'As your attack strikes home, your enemy’s escaping life force drifts to your allies in crimson threads.',
+			name: 'Рана, що п’є життя',
+			description: 'Коли ваш удар знаходить ціль, життєва сила ворога, що витікає, тягнеться до союзників багряними нитками.',
 			type: FactoryLogic.type.createMain(),
 			keywords: [AbilityKeyword.Beastheart, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 			distance: [
@@ -1976,12 +1976,12 @@ Your companion doesn’t spend rampage to activate abilities. Instead, when your
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Might,
-						tier1: '12 + С damage',
-						tier2: '18 + С damage',
-						tier3: '24 + С damage'
+						tier1: '12 + С шкоди',
+						tier2: '18 + С шкоди',
+						tier3: '24 + С шкоди'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Up to three creatures within 2 squares of the target gain temporary Stamina equal to half the damage you dealt.')
+				FactoryLogic.createAbilitySectionText('До трьох істот у межах 2 клітинок від цілі отримують тимчасову Витривалість, рівну половині завданої вами шкоди.')
 			]
 		})
 	],

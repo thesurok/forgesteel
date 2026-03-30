@@ -59,9 +59,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 4,
-						tier1: '6 damage; weakened (EoT)',
-						tier2: '10 damage; weakened (EoT)',
-						tier3: '12 damage; weakened (save ends)'
+						tier1: '6 шкоди; ослаблений (до кінця ходу)',
+						tier2: '10 шкоди; ослаблений (до кінця ходу)',
+						tier3: '12 шкоди; ослаблений (рят. кидок закінчує)'
 					}))
 				]
 			})
@@ -72,7 +72,7 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The medusa takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The medusa takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
@@ -87,11 +87,11 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 4,
-						tier1: 'I<2 the target is charmed',
-						tier2: 'I<3 the target is charmed',
-						tier3: 'I<4 the target is charmed'
+						tier1: 'І<2 ціль is зачарований',
+						tier2: 'І<3 ціль is зачарований',
+						tier3: 'І<4 ціль is зачарований'
 					})),
-					FactoryLogic.createAbilitySectionText('At a time of the medusa’s choosing, a charmed creature moves up to their speed and makes a free strike against an enemy of the medusa’s choice as a free triggered action. The creature is then no longer charmed.')
+					FactoryLogic.createAbilitySectionText('At a time of the medusa’s choosing, a charmed creature moves up to their speed and makes a free strike against an enemy of the medusa’s choice as a безкоштовна тригерна дія. The creature is then no longer charmed.')
 				]
 			})
 		}),
@@ -104,9 +104,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 				'The medusa causes three stone statues within 10 squares of them to each shatter in a 2-cube explosion. Each enemy in one of those areas makes a **Might test**. An enemy restrained or slowed by the medusa’s Petrify ability has a double bane on the test.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: '12 damage; vertical push 3; bleeding (save ends)',
-					tier2: '10 damage; vertical push 3',
-					tier3: '6 damage'
+					tier1: '12 шкоди; вертикально відштовхнути на 3; кровотеча (рят. кидок закінчує)',
+					tier2: '10 шкоди; вертикально відштовхнути на 3',
+					tier3: '6 шкоди'
 				})
 			]
 		})
@@ -143,9 +143,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; M<2 slowed (save ends)',
-								tier2: '16 damage; M<3 slowed (save ends)',
-								tier3: '19 damage; M<4 slowed (save ends)'
+								tier1: '11 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier2: '16 шкоди; С<3 сповільнений (рят. кидок закінчує)',
+								tier3: '19 шкоди; С<4 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -161,9 +161,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; push 3',
-								tier2: '16 damage; push 5',
-								tier3: '19 damage; push 7'
+								tier1: '11 шкоди; відштовхнути на 3',
+								tier2: '16 шкоди; відштовхнути на 5',
+								tier3: '19 шкоди; відштовхнути на 7'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -185,9 +185,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: 'M<2 restrained (save ends)',
-									tier2: 'M<3 restrained (save ends)',
-									tier3: 'Slowed (save ends); or if M<4 restrained (save ends)'
+									tier1: 'С<2 скутий (рят. кидок закінчує)',
+									tier2: 'С<3 скутий (рят. кидок закінчує)',
+									tier3: 'сповільнений (рят. кидок закінчує); або якщо С<4 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target with cover reduces the potency by 1, while a slowed target increases the potency by 1. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified.')
@@ -218,9 +218,9 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 acid damage',
-								tier2: '18 acid damage',
-								tier3: '22 acid damage'
+								tier1: '13 кислотної шкоди',
+								tier2: '18 кислотної шкоди',
+								tier3: '22 кислотної шкоди'
 							}))
 						]
 					})
@@ -272,12 +272,12 @@ Followers of the gods who impose this punishment spread terrifying myths about m
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '8 acid damage; P<3 weakened (save ends)',
-									tier2: '13 acid damage; P<4 weakened (save ends)',
-									tier3: '17 acid damage; P<5 weakened (save ends)'
+									tier1: '8 кислотної шкоди; П<3 ослаблений (рят. кидок закінчує)',
+									tier2: '13 кислотної шкоди; П<4 ослаблений (рят. кидок закінчує)',
+									tier3: '17 кислотної шкоди; П<5 ослаблений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('As a free triggered action, each stone statue and creature restrained or slowed by Petrify within distance moves up to their speed and uses a signature ability that gains an edge, targeting an enemy of the medusa’s choice. A stone statue without its own statistics has speed 5 and uses the medusa’s free strike.')
+							FactoryLogic.createAbilitySectionText('As a безкоштовна тригерна дія, each stone statue and creature restrained or slowed by Petrify within distance moves up to their speed and uses a signature ability that gains an edge, targeting an enemy of the medusa’s choice. A stone statue without its own statistics has speed 5 and uses the medusa’s free strike.')
 						]
 					})
 				})

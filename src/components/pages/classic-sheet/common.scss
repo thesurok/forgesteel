@@ -12,9 +12,11 @@
     font-family: 'Roboto Slab', Georgia, serif !important;
     font-weight: 400;
 }
+
 @mixin font-serif() {
     font-family: 'Merriweather', Georgia, serif !important;
 }
+
 @mixin font-glyphs() {
     font-family: 'Draw Steel Glyphs', Arial, Helvetica, sans-serif !important;
 }
@@ -36,7 +38,10 @@ main#classic-sheet {
         display: none;
     }
 
-    .hero-sheet, .encounter-sheet, .montage-sheet, .negotiation-sheet {
+    .hero-sheet,
+    .encounter-sheet,
+    .montage-sheet,
+    .negotiation-sheet {
         height: 100%;
         font-size: 14px;
         padding: 5px;
@@ -110,9 +115,9 @@ main#classic-sheet {
             background-color: transparent;
             color: var(--color-text);
         }
-        
+
         p strong,
-        li strong  {
+        li strong {
             @include font-slab;
             font-weight: 450;
         }
@@ -184,10 +189,10 @@ main#classic-sheet {
                 $l2-s: calc(2 * $col-w + (3 * $gap / 2) - 1px);
                 $l2-e: calc($l2-s + 2px);
                 background-image: linear-gradient(90deg, transparent $l1-s,
-                    colors.$light $l1-s, colors.$light $l1-e,
-                    transparent $l1-e, transparent $l2-s,
-                    colors.$light $l2-s, colors.$light $l2-e,
-                    transparent $l2-e);
+                        colors.$light $l1-s, colors.$light $l1-e,
+                        transparent $l1-e, transparent $l2-s,
+                        colors.$light $l2-s, colors.$light $l2-e,
+                        transparent $l2-e);
 
                 background-size: 100% 100%;
                 background-position: center 4px;
@@ -200,6 +205,8 @@ main#classic-sheet {
                 .feature-description p {
                     margin-left: 0;
                     margin-right: 0;
+                    margin-bottom: 0;
+                    font-size: round(0.8rem, 1px);
                 }
             }
 
@@ -216,6 +223,7 @@ main#classic-sheet {
                     margin-bottom: 0;
                 }
 
+                font-size: round(0.3rem, 1px);
                 margin-bottom: 10px;
             }
 
@@ -234,12 +242,15 @@ main#classic-sheet {
             grid-template-rows: min-content 1fr;
             font-size: 15px;
 
-            .power, .symbol-text {
+            .power,
+            .symbol-text {
                 @include font-slab;
             }
-            .power  {
+
+            .power {
                 font-weight: 600;
                 margin: 0 10px 5px;
+
                 .symbol-text {
                     display: inline-block;
                     font-size: round(1.2rem, 1px);
@@ -317,6 +328,7 @@ main#classic-sheet {
         }
 
         .page.row-cards-2 {
+
             .card,
             .stacked-cards {
                 flex-basis: calc((100% - var(--gap)) / 2);
@@ -329,6 +341,7 @@ main#classic-sheet {
         }
 
         .page.row-cards-3 {
+
             .card,
             .stacked-cards {
                 flex-basis: calc((100% - 2 * var(--gap)) / 3);
@@ -349,6 +362,7 @@ main#classic-sheet {
         }
 
         .page.row-cards-4 {
+
             .card,
             .stacked-cards,
             .feature-reference.single {
@@ -371,6 +385,7 @@ main#classic-sheet {
                 flex-basis: 100%;
             }
         }
+
         &.letter {
             .page.portrait {
                 aspect-ratio: 8.5 / 11;
@@ -416,6 +431,7 @@ main#classic-sheet {
             .action-type {
                 color: $color;
             }
+
             h3 {
                 font-weight: 450;
             }
@@ -424,18 +440,19 @@ main#classic-sheet {
 
     @each $scheme in colors.$schemes {
         $scheme-class: map.get($scheme, 'className');
-        
-        $main-action:       map.get($scheme, 'main-action');
-        $triggered-action:  map.get($scheme, 'triggered-action');
-        $maneuver:          map.get($scheme, 'maneuver');
-        $performance:       map.get($scheme, 'performance');
-        $free-strike:       map.get($scheme, 'free-strike');
-        $move:              map.get($scheme, 'move');
+
+        $main-action: map.get($scheme, 'main-action');
+        $triggered-action: map.get($scheme, 'triggered-action');
+        $maneuver: map.get($scheme, 'maneuver');
+        $performance: map.get($scheme, 'performance');
+        $free-strike: map.get($scheme, 'free-strike');
+        $move: map.get($scheme, 'move');
 
         .color.colors-#{$scheme-class} {
             &.hero-sheet .ability.card {
                 &.main-action {
                     @include color-ability-card($main-action);
+
                     h2 {
                         @include dividers.fancy-2($main-action);
                     }
@@ -444,6 +461,7 @@ main#classic-sheet {
                 &.maneuver,
                 &.free-maneuver {
                     @include color-ability-card($maneuver);
+
                     h2 {
                         @include dividers.fancy-4($maneuver);
                     }
@@ -452,12 +470,14 @@ main#classic-sheet {
                 &.triggered-action,
                 &.free-triggered-action {
                     @include color-ability-card($triggered-action);
+
                     h2 {
                         @include dividers.fancy-5($triggered-action);
                     }
                 }
 
                 &.free-strike {
+
                     // Fix for the gray not looking right in the border label
                     .bordered h3 {
                         color: var(--color-text-lighter);
@@ -466,12 +486,15 @@ main#classic-sheet {
 
                 &.performance {
                     @include color-ability-card($performance);
+
                     h2 {
                         @include dividers.fancy-2($performance);
                     }
                 }
+
                 &.move-action {
                     @include color-ability-card($move);
+
                     h2 {
                         @include dividers.fancy-3($move);
                     }
@@ -481,20 +504,25 @@ main#classic-sheet {
             .feature {
                 .type {
                     font-weight: 380;
+
                     &.main-action {
                         color: $main-action;
                     }
+
                     &.triggered-action,
                     &.free-triggered-action {
                         color: $triggered-action;
                     }
+
                     &.maneuver,
                     &.free-maneuver {
                         color: $maneuver;
                     }
+
                     &.performance {
                         color: $performance;
                     }
+
                     &.move {
                         color: $move;
                     }

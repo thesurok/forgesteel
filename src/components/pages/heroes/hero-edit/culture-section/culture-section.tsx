@@ -51,9 +51,9 @@ interface CultureSectionProps {
 
 export const CultureSection = (props: CultureSectionProps) => {
 	const isSmall = useIsSmall();
-	const [ showEnvironment, setShowEnvironment ] = useState<boolean>(false);
-	const [ showOrganization, setShowOrganization ] = useState<boolean>(false);
-	const [ showUpbringing, setShowUpbringing ] = useState<boolean>(false);
+	const [showEnvironment, setShowEnvironment] = useState<boolean>(false);
+	const [showOrganization, setShowOrganization] = useState<boolean>(false);
+	const [showUpbringing, setShowUpbringing] = useState<boolean>(false);
 
 	const setName = (value: string) => {
 		const copy = Utils.copy(props.hero.culture)!;
@@ -61,7 +61,7 @@ export const CultureSection = (props: CultureSectionProps) => {
 		props.selectCulture(copy);
 	};
 
-	const cultures = [ CultureData.bespoke, ...SourcebookLogic.getCultures(props.sourcebooks, true) ]
+	const cultures = [CultureData.bespoke, ...SourcebookLogic.getCultures(props.sourcebooks, true)]
 		.map(Utils.copy)
 		.filter(c => matchElement(c, props.searchTerm));
 	const optionsYourAncestry = cultures.filter(c => c.id === (props.hero.ancestry?.culture?.id || '')).map(c => (
@@ -98,7 +98,7 @@ export const CultureSection = (props: CultureSectionProps) => {
 
 		if (props.hero.culture.id === CultureData.bespoke.id) {
 			choices.unshift(
-				<SelectablePanel key='bespoke'>
+				<SelectablePanel key='Авторська'>
 					<HeaderText>Bespoke Culture</HeaderText>
 					<div className='ds-text'>Choose a name for your culture.</div>
 					<Space.Compact style={{ width: '100%' }}>
@@ -207,7 +207,7 @@ export const CultureSection = (props: CultureSectionProps) => {
 						: null
 				}
 				{
-					!props.hero.culture && ([ ...optionsAncestral, ...optionsProfessional, ...optionsBespoke ].length > 0) ?
+					!props.hero.culture && ([...optionsAncestral, ...optionsProfessional, ...optionsBespoke].length > 0) ?
 						<div className='hero-edit-content-column list' id='culture-list'>
 							{
 								optionsYourAncestry.length > 0 ?
@@ -247,7 +247,7 @@ export const CultureSection = (props: CultureSectionProps) => {
 						: null
 				}
 				{
-					!props.hero.culture && ([ ...optionsAncestral, ...optionsProfessional, ...optionsBespoke ].length === 0) ?
+					!props.hero.culture && ([...optionsAncestral, ...optionsProfessional, ...optionsBespoke].length === 0) ?
 						<div className='hero-edit-content-column' id='culture-list'>
 							<EmptyMessage hero={props.hero} />
 						</div>

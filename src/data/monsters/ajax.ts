@@ -45,7 +45,7 @@ His arsenal is vast and strategically picked to round out his strength. There ar
 			cost: 2,
 			icon: StatBlockIcon.Self,
 			sections: [
-				'Ajax attempts to instill doubt into a creature within line of effect through logic and reason. The creature and Ajax make an opposed **Reason test**. If Ajax wins, he chooses to either deal 11 extra damage to one target on his next strike or to gain an additional triggered action during the current round. Ajax can’t use this feature against the same creature during the same encounter.'
+				'Ajax attempts to instill doubt into a creature within line of effect through logic and reason. The creature and Ajax make an opposed **Reason test**. If Ajax wins, he chooses to either deal 11 extra damage to one target on his next strike or to gain an additional тригерна дія during the current round. Ajax can’t use this feature against the same creature during the same encounter.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -68,7 +68,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'Ajax takes an additional main action on his turn. He can use this feature even if he is dazed.'
+				'Ajax takes an additional основна дія on his turn. He can use this feature even if he is dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
@@ -84,9 +84,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Agility, Characteristic.Intuition, Characteristic.Might, Characteristic.Presence, Characteristic.Reason],
-							tier1: '26 damage; bleeding and slowed (save ends)',
-							tier2: '22 damage; bleeding (save ends)',
-							tier3: '16 damage'
+							tier1: '26 шкоди; кровотеча і сповільнений (рят. кидок закінчує)',
+							tier2: '22 шкоди; кровотеча (рят. кидок закінчує)',
+							tier3: '16 шкоди'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('Ajax then raises his Blade of the Gol King above his head as four giant blades emerge from the ground to fill the area. Each target is pushed into an unoccupied space adjacent to the area after the power roll is resolved. Each blade blocks line of effect and can be dismissed by Ajax at will (no action required).')
@@ -113,7 +113,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 					id: 'ajax-1-feature-1',
 					name: 'Ajax',
 					description: `
-- **Ajax Turns**: Ajax takes up to three turns each round. He can’t take turns consecutively. Additionally, he can use three triggered actions in a round while he isn’t dazed.
+- **Ajax Turns**: Ajax takes up to three turns each round. He can’t take turns consecutively. Additionally, he can use three тригерні дії in a round while he isn’t dazed.
 - **End Effect**: At the end of each of his turns, Ajax can take 20 damage to end up to two effects on him that can be ended by a saving throw. This damage can’t be reduced in any way.`
 				}),
 				FactoryLogic.feature.create({
@@ -137,9 +137,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '16 damage; M < 4 the target loses 1d3 recoveries',
-									tier2: '22 damage; M < 5 the target loses 1d3 recoveries',
-									tier3: '26 damage; M < 6 prone and the target loses 1d3 recoveries'
+									tier1: '16 шкоди; С < 4 ціль втрачає 1d3 Відновлень',
+									tier2: '22 шкоди; С < 5 ціль втрачає 1d3 Відновлень',
+									tier3: '26 шкоди; С < 6 розпластаний і ціль втрачає 1d3 Відновлень'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to 2 squares between striking each target.'),
@@ -162,15 +162,15 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 holy damage; П < 4 the target is hexed (save ends)',
-									tier2: '17 holy damage; П < 5 the target is hexed (save ends)',
-									tier3: '21 holy damage; П < 6 the target is hexed (save ends)'
+									tier1: '11 священної шкоди; П < 4 ціль проклята (рят. кидок закінчує)',
+									tier2: '17 священної шкоди; П < 5 ціль проклята (рят. кидок закінчує)',
+									tier3: '21 священної шкоди; П < 6 ціль проклята (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>M < 5</code> is knocked prone.'
+								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>С < 5</code> is knocked prone.'
 							})
 						]
 					})
@@ -187,9 +187,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: 'No effect.',
-									tier2: 'The target is grabbed.',
-									tier3: '11 damage; the target is grabbed.'
+									tier1: 'Без ефекту.',
+									tier2: 'Ціль схоплена.',
+									tier3: '11 шкоди; ціль схоплена.'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the target is grabbed, Ajax can choose to keep the vine extended, pull the target adjacent to him, or pull himself adjacent to the target. The vine stays attached to a grabbed target until it takes damage from a strike, the target escapes the grab, or Ajax causes the vine to release the target (no action required).'),
@@ -207,7 +207,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 						target: '',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax’s next turn and creates an area around it that lasts until the start of Ajax’s following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have <code>A < 5</code>, they are dazed (save ends). Any enemy who starts their turn in the area takes 10 fire damage.')
+							FactoryLogic.createAbilitySectionText('Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax’s next turn and creates an area around it that lasts until the start of Ajax’s following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have <code>Л < 5</code>, they are dazed (save ends). Any enemy who starts their turn in the area takes 10 fire damage.')
 						]
 					})
 				}),
@@ -225,7 +225,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a triggered action involving their mark on Ajax, he can make a free strike against them.')
+							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a тригерна дія involving their mark on Ajax, he can make a free strike against them.')
 						]
 					})
 				}),
@@ -250,7 +250,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>Р < 4</code>, this free strike also makes them weakened until the end of their next turn.')
 						]
 					})
 				}),
@@ -263,7 +263,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has <code>I < 4</code>, they use a signature ability against a target of Ajax’s choice.')
+							FactoryLogic.createAbilitySectionText('If the target has <code>І < 4</code>, they use a signature ability against a target of Ajax’s choice.')
 						]
 					})
 				}),
@@ -292,9 +292,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 fire damage; Л < 4 weakended (save ends)',
-									tier2: '17 fire damage; Л < 5 weakended (save ends)',
-									tier3: '21 fire damage; Л < 6 weakended (save ends)'
+									tier1: '11 вогняної шкоди; Л < 4 ослаблений (рят. кидок закінчує)',
+									tier2: '17 вогняної шкоди; Л < 5 ослаблений (рят. кидок закінчує)',
+									tier3: '21 вогняної шкоди; Л < 6 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')
@@ -324,7 +324,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has <code>I < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
+							FactoryLogic.createAbilitySectionText('Each target who has <code>І < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
 						]
 					})
 				})
@@ -365,9 +365,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '16 damage; M < 4 the target loses 1d3 recoveries',
-									tier2: '22 damage; M < 5 the target loses 1d3 recoveries',
-									tier3: '26 damage; M < 6 prone and the target loses 1d3 recoveries'
+									tier1: '16 шкоди; С < 4 ціль втрачає 1d3 Відновлень',
+									tier2: '22 шкоди; С < 5 ціль втрачає 1d3 Відновлень',
+									tier3: '26 шкоди; С < 6 розпластаний і ціль втрачає 1d3 Відновлень'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax shifts up to 2 squares between striking each target.'),
@@ -390,15 +390,15 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 holy damage; П < 4 the target is hexed (save ends)',
-									tier2: '17 holy damage; П < 5 the target is hexed (save ends)',
-									tier3: '21 holy damage; П < 6 the target is hexed (save ends)'
+									tier1: '11 священної шкоди; П < 4 ціль проклята (рят. кидок закінчує)',
+									tier2: '17 священної шкоди; П < 5 ціль проклята (рят. кидок закінчує)',
+									tier3: '21 священної шкоди; П < 6 ціль проклята (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>M < 5</code> is knocked prone.'
+								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>С < 5</code> is knocked prone.'
 							})
 						]
 					})
@@ -429,7 +429,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a triggered action involving their mark on Ajax, he can make a free strike against them.')
+							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a тригерна дія involving their mark on Ajax, he can make a free strike against them.')
 						]
 					})
 				}),
@@ -454,7 +454,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>R < 4</code>, this free strike also makes them weakened until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>Р < 4</code>, this free strike also makes them weakened until the end of their next turn.')
 						]
 					})
 				}),
@@ -467,7 +467,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has <code>I < 4</code>, they use a signature ability against a target of Ajax’s choice.')
+							FactoryLogic.createAbilitySectionText('If the target has <code>І < 4</code>, they use a signature ability against a target of Ajax’s choice.')
 						]
 					})
 				}),
@@ -496,9 +496,9 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '11 fire damage; Л < 4 weakended (save ends)',
-									tier2: '17 fire damage; Л < 5 weakended (save ends)',
-									tier3: '21 fire damage; Л < 6 weakended (save ends)'
+									tier1: '11 вогняної шкоди; Л < 4 ослаблений (рят. кидок закінчує)',
+									tier2: '17 вогняної шкоди; Л < 5 ослаблений (рят. кидок закінчує)',
+									tier3: '21 вогняної шкоди; Л < 6 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')
@@ -527,7 +527,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has <code>I < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
+							FactoryLogic.createAbilitySectionText('Each target who has <code>І < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
 						]
 					})
 				})

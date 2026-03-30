@@ -77,9 +77,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The animal can shift 2 between striking the first and second target.')
 						]
@@ -130,9 +130,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage; pull 1',
-								tier3: '12 damage; pull 2'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди; притягнути на 1',
+								tier3: '12 шкоди; притягнути на 2'
 							})),
 							FactoryLogic.createAbilitySectionText('The target can be pulled into the swarm without inflicting damage.')
 						]
@@ -189,9 +189,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage; Л < 1 3 damage',
-								tier3: '12 damage; Л < 2 3 damage'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди; Л < 1 3 шкоди',
+								tier3: '12 шкоди; Л < 2 3 шкоди'
 							}))
 						]
 					})
@@ -255,9 +255,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '10 damage; push 1',
-								tier3: '13 damage; push 2'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди; відштовхнути на 1',
+								tier3: '13 шкоди; відштовхнути на 2'
 							}))
 						]
 					})
@@ -282,7 +282,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						distance: [FactoryLogic.distance.createRanged(20)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The animal moves up to their speed. If they end their turn adjacent to the target, they can use the Stand Up maneuver to let the target stand, then get on to ride them.')
+							FactoryLogic.createAbilitySectionText('The animal moves up to their speed. If they end their turn adjacent to the target, they can use the Stand Up маневр to let the target stand, then get on to ride them.')
 						]
 					})
 				}),
@@ -324,9 +324,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '10 damage; M < 1 prone',
-								tier3: '13 damage; M < 2 prone'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди; С < 1 розпластаний',
+								tier3: '13 шкоди; С < 2 розпластаний'
 							}))
 						]
 					})
@@ -389,9 +389,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage; push 1; M<1 prone',
-								tier3: '14 damage; push 2; M<2 prone'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди; відштовхнути на 1; С<1 розпластаний',
+								tier3: '14 шкоди; відштовхнути на 2; С<2 розпластаний'
 							}))
 						]
 					})
@@ -407,9 +407,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '6 damage',
-								tier3: '8 damage; Л < 2 bleeding (save ends)'
+								tier1: '3 шкоди',
+								tier2: '6 шкоди',
+								tier3: '8 шкоди; Л < 2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -484,7 +484,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'slinking-1',
 			name: 'Slinking',
-			description: `The animal can use a move action to shift up to 3 squares, even while prone.
+			description: `The animal can use a дія руху to shift up to 3 squares, even while prone.
 
 **Typically Used By:** Snakes, vermin.`,
 			category: FeatureAddOnType.Mobility,
@@ -521,7 +521,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'fearsome-1',
 			name: 'Fearsome',
-			description: `As a maneuver, the animal makes an imposing display. Each enemy within 2 squares of the animal who has <code>I < 1</code> must shift 3 squares in a straight line away from the animal.
+			description: `As a маневр, the animal makes an imposing display. Each enemy within 2 squares of the animal who has <code>І < 1</code> must shift 3 squares in a straight line away from the animal.
 
 **Typically Used By:** Aardvarks, lions, peacocks.`,
 			category: FeatureAddOnType.Defensive,
@@ -557,7 +557,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'stench-1',
 			name: 'Stench',
-			description: `At the start of the animal’s turn, each enemy adjacent to the animal who has <code>M < 1</code> must shift 1 square away from the animal.
+			description: `At the start of the animal’s turn, each enemy adjacent to the animal who has <code>С < 1</code> must shift 1 square away from the animal.
 
 **Typically Used By:** Oxen, skunks, wolverines.`,
 			category: FeatureAddOnType.Defensive,
@@ -585,7 +585,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'wiggly-1',
 			name: 'Wiggly',
-			description: `The animal ignores opportunity attacks and gains an edge on the Escape Grab maneuver.
+			description: `The animal ignores opportunity attacks and gains an edge on the Escape Grab маневр.
 
 **Typically Used By:** Eels, lizards, rats.`,
 			category: FeatureAddOnType.Defensive,
@@ -594,7 +594,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'withdraw-1',
 			name: 'Withdraw',
-			description: `Whenever the animal takes damage, they can use a triggered action to halve that damage and all other damage they take until the start of their next turn.
+			description: `Whenever the animal takes damage, they can use a тригерна дія to halve that damage and all other damage they take until the start of their next turn.
 
 **Typically Used By:** Armadillos, turtles.`,
 			category: FeatureAddOnType.Defensive,
@@ -603,7 +603,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'charger-1',
 			name: 'Charger',
-			description: `The animal’s signature ability has the Charge keyword, and they gain an edge on that ability if it is used as part of the Charge main action.
+			description: `The animal’s signature ability has the Charge keyword, and they gain an edge on that ability if it is used as part of the Charge основна дія.
 
 **Typically Used By:** Boars, rhinoceroses, swordfish`,
 			category: FeatureAddOnType.Offensive,
@@ -621,9 +621,9 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'grappler-1',
 			name: 'Grappler',
-			description: `If the target of the animal’s signature ability has <code>A < 1</code>, they are grabbed by the animal.
+			description: `If the target of the animal’s signature ability has <code>Л < 1</code>, they are grabbed by the animal.
 
-<span class='pill'>+1pt</span> An enemy grabbed by the animal takes a bane on the Escape Grab maneuver.
+<span class='pill'>+1pt</span> An enemy grabbed by the animal takes a bane on the Escape Grab маневр.
 
 **Typically Used By:** Apes, octopuses, snakes.`,
 			category: FeatureAddOnType.Offensive,
@@ -641,7 +641,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'multilimb-1',
 			name: 'Multilimb',
-			description: `The animal can target one additional creature or object whenever they make a free strike, use the Grab maneuver, or use the Knockback maneuver. 
+			description: `The animal can target one additional creature or object whenever they make a free strike, use the Grab маневр, or use the Knockback маневр. 
 (This trait can be selected twice.)
 
 **Typically Used By:** Monkeys, octopuses, quadrakangas`,
@@ -651,7 +651,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'pouncer-1',
 			name: 'Pouncer',
-			description: `As a maneuver, the animal jumps up to 3 squares. If they land on an enemy their size or smaller, that enemy is knocked prone and the animal can make a free strike against them.
+			description: `As a маневр, the animal jumps up to 3 squares. If they land on an enemy their size or smaller, that enemy is knocked prone and the animal can make a free strike against them.
 
 **Typically Used By:** Foxes, wild cats.`,
 			category: FeatureAddOnType.Offensive,
@@ -692,7 +692,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 		FactoryLogic.feature.createAddOn({
 			id: 'venom-1',
 			name: 'Venom',
-			description: `The animal’s signature ability deals an extra 2 poison damage, and if the target has <code>M < 1</code>, they are weakened (save ends).
+			description: `The animal’s signature ability deals an extra 2 poison damage, and if the target has <code>С < 1</code>, they are weakened (save ends).
 
 **Typically Used By:** Platypuses, snakes, wasps.`,
 			category: FeatureAddOnType.Offensive,
@@ -704,14 +704,14 @@ The Example Animals table breaks out a number of animals using this notation. Se
 			description: `
 The animal gains the following ability.
 
-**Web** (Maneuver)
+**Web** (Маневр)
 **Keywords** Area, Weapon
 **Distance** 3 cube within 1
 **Target** Each creature in the area
 **Кидок Сили** 2d10 + highest characteristic
-**11-** <code>A < 0</code> restrained (save ends)
-**12–16** <code>A < 1</code> restrained (save ends)
-**17+** <code>A < 2</code> restrained (save ends)
+**11-** <code>Л < 0</code> restrained (save ends)
+**12–16** <code>Л < 1</code> restrained (save ends)
+**17+** <code>Л < 2</code> restrained (save ends)
 **Effect** The area is difficult terrain for enemies until the end of the encounter.
 
 **Typically Used By:** Pelagic snails, spiders.`,
@@ -721,7 +721,7 @@ The animal gains the following ability.
 		FactoryLogic.feature.createAddOn({
 			id: 'death-fumes-1',
 			name: 'Death Fumes',
-			description: `Whenever the animal takes damage, each creature adjacent to the animal who has <code>M < 1</code> takes damage equal to half the creature’s current Stamina.
+			description: `Whenever the animal takes damage, each creature adjacent to the animal who has <code>С < 1</code> takes damage equal to half the creature’s current Stamina.
 
 **Typically Used By:** Death snails.`,
 			category: FeatureAddOnType.Supernatural,
@@ -739,7 +739,7 @@ The animal gains the following ability.
 		FactoryLogic.feature.createAddOn({
 			id: 'gelatinous-1',
 			name: 'Gelatinous',
-			description: `The animal can move through spaces as if they were size 1T. Whenever the animal takes damage, they can use a triggered action to separate into two animals. Each new animal has the same statistics as the original but has half the original’s current Stamina.
+			description: `The animal can move through spaces as if they were size 1T. Whenever the animal takes damage, they can use a тригерна дія to separate into two animals. Each new animal has the same statistics as the original but has half the original’s current Stamina.
 
 **Typically Used By:** Earthworms, thunderjellies.`,
 			category: FeatureAddOnType.Supernatural,
@@ -748,7 +748,7 @@ The animal gains the following ability.
 		FactoryLogic.feature.createAddOn({
 			id: 'hypnosis-1',
 			name: 'Hypnosis',
-			description: `As a maneuver, the animal targets one enemy within 5 squares with their gaze, movements, or vocalizations. If the enemy has <code>R < 1</code>, they are dazed (save ends).
+			description: `As a маневр, the animal targets one enemy within 5 squares with their gaze, movements, or vocalizations. If the enemy has <code>Р < 1</code>, they are dazed (save ends).
 
 **Typically Used By:** Angler fish, snakes, tigers.`,
 			category: FeatureAddOnType.Supernatural,

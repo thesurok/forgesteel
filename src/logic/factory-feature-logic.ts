@@ -49,7 +49,7 @@ export class FactoryFeatureLogic {
 	createAbilityCost = (data: { id: string, name?: string, description?: string, keywords: AbilityKeyword[], modifier: number }): FeatureAbilityCost => {
 		return {
 			id: data.id,
-			name: data.name || 'Ability cost modifier',
+			name: data.name || 'Вартість здібності',
 			description: data.description || '',
 			type: FeatureType.AbilityCost,
 			data: {
@@ -62,7 +62,7 @@ export class FactoryFeatureLogic {
 	createAbilityDamage = (data: { id: string, name?: string, description?: string, keywords: AbilityKeyword[], value?: number, valueFromController?: FeatureField, valueCharacteristics?: Characteristic[], valueCharacteristicMultiplier?: number, valuePerLevel?: number, valuePerEchelon?: number, damageType?: DamageType }): FeatureAbilityDamage => {
 		return {
 			id: data.id,
-			name: data.name || 'Ability damage modifier',
+			name: data.name || 'Шкода здібності',
 			description: data.description || '',
 			type: FeatureType.AbilityDamage,
 			data: {
@@ -81,7 +81,7 @@ export class FactoryFeatureLogic {
 	createAbilityDistance = (data: { id: string, name?: string, description?: string, keywords: AbilityKeyword[], value?: number, valueFromController?: FeatureField, valueCharacteristics?: Characteristic[], valueCharacteristicMultiplier?: number, valuePerLevel?: number, valuePerEchelon?: number }): FeatureAbilityDistance => {
 		return {
 			id: data.id,
-			name: data.name || 'Ability distance modifier',
+			name: data.name || 'Дальність здібності',
 			description: data.description || '',
 			type: FeatureType.AbilityDistance,
 			data: {
@@ -112,7 +112,7 @@ export class FactoryFeatureLogic {
 	createAncestry = (data: { id: string, name?: string, description?: string }): FeatureAncestryChoice => {
 		return {
 			id: data.id,
-			name: data.name || 'Ancestry',
+			name: data.name || 'Походження',
 			description: data.description || '',
 			type: FeatureType.AncestryChoice,
 			data: {
@@ -124,7 +124,7 @@ export class FactoryFeatureLogic {
 	createAncestryFeature = (data: { id: string, name?: string, description?: string, current: boolean, former: boolean, customID: string, value: number }): FeatureAncestryFeatureChoice => {
 		return {
 			id: data.id,
-			name: data.name || 'Ancestry Feature',
+			name: data.name || 'Особливість походження',
 			description: data.description || '',
 			type: FeatureType.AncestryFeatureChoice,
 			data: {
@@ -173,7 +173,7 @@ export class FactoryFeatureLogic {
 	createChoice = (data: { id: string, name?: string, description?: string, options: { feature: Feature, value: number }[], count?: number | 'ancestry' }): FeatureChoice => {
 		return {
 			id: data.id,
-			name: data.name || 'Choice',
+			name: data.name || 'Вибір',
 			description: data.description || '',
 			type: FeatureType.Choice,
 			data: {
@@ -211,7 +211,7 @@ export class FactoryFeatureLogic {
 	createCompanion = (data: { id: string, name?: string, description?: string }): FeatureCompanion => {
 		return {
 			id: data.id,
-			name: data.name || 'Companion / Mount',
+			name: data.name || 'Компаньйон / скакун',
 			description: data.description || '',
 			type: FeatureType.Companion,
 			data: {
@@ -223,7 +223,7 @@ export class FactoryFeatureLogic {
 	createConditionImmunity = (data: { id: string, name?: string, description?: string, conditions: ConditionType[] }): FeatureConditionImmunity => {
 		return {
 			id: data.id,
-			name: data.name || 'Condition Immunity',
+			name: data.name || 'Імунітет до станів',
 			description: data.description || '',
 			type: FeatureType.ConditionImmunity,
 			data: {
@@ -235,7 +235,7 @@ export class FactoryFeatureLogic {
 	createDamageModifier = (data: { id: string, name?: string, description?: string, modifiers: DamageModifier[] }): FeatureDamageModifier => {
 		return {
 			id: data.id,
-			name: data.name || 'Damage Modifier',
+			name: data.name || 'Модифікатор шкоди',
 			description: data.description || data.modifiers.map(FormatLogic.getDamageModifier).join(', '),
 			type: FeatureType.DamageModifier,
 			data: {
@@ -247,7 +247,7 @@ export class FactoryFeatureLogic {
 	createDomainChoice = (data: { id: string, name?: string, description?: string, characteristic?: Characteristic, levels?: number[], count?: number }): FeatureDomain => {
 		return {
 			id: data.id,
-			name: data.name || 'Domain',
+			name: data.name || 'Домен',
 			description: data.description || '',
 			type: FeatureType.Domain,
 			data: {
@@ -262,7 +262,7 @@ export class FactoryFeatureLogic {
 	createDomainFeature = (data: { id: string, name?: string, description?: string, level: number, count?: number }): FeatureDomainFeature => {
 		return {
 			id: data.id,
-			name: data.name || 'Domain Feature Choice',
+			name: data.name || 'Особливість домену',
 			description: data.description || '',
 			type: FeatureType.DomainFeature,
 			data: {
@@ -288,7 +288,7 @@ export class FactoryFeatureLogic {
 	createFollower = (data: { id: string, name?: string, description?: string, follower: Follower }): FeatureFollower => {
 		return {
 			id: data.id,
-			name: data.name || 'Follower',
+			name: data.name || 'Прибічник',
 			description: data.description || '',
 			type: FeatureType.Follower,
 			data: {
@@ -373,7 +373,7 @@ export class FactoryFeatureLogic {
 		const count = data.count || 1;
 		return {
 			id: data.id,
-			name: data.name || (count === 1 ? 'Language' : 'Languages'),
+			name: data.name || (count === 1 ? 'Мова' : 'Мови'),
 			description: data.description || '',
 			type: FeatureType.LanguageChoice,
 			data: {
@@ -416,7 +416,7 @@ export class FactoryFeatureLogic {
 	createMovementMode = (data: { id: string, name?: string, mode: string }): FeatureMovementMode => {
 		return {
 			id: data.id,
-			name: data.name || 'Movement Mode',
+			name: data.name || 'Режим руху',
 			description: '',
 			type: FeatureType.MovementMode,
 			data: {
@@ -469,7 +469,7 @@ export class FactoryFeatureLogic {
 
 		return {
 			id: data.id,
-			name: data.name || (count > 1 ? `${prefix}Perks` : `${prefix}Perk`),
+			name: data.name || (count > 1 ? `${prefix}Переваги` : `${prefix}Перевага`),
 			description: data.description || '',
 			type: FeatureType.Perk,
 			data: {
@@ -483,7 +483,7 @@ export class FactoryFeatureLogic {
 	createProficiency = (data: { id: string, name?: string, description?: string, weapons?: KitWeapon[], armor?: KitArmor[] }): FeatureProficiency => {
 		return {
 			id: data.id,
-			name: data.name || 'Proficiency',
+			name: data.name || 'Володіння',
 			description: data.description || '',
 			type: FeatureType.Proficiency,
 			data: {
@@ -496,7 +496,7 @@ export class FactoryFeatureLogic {
 	createRetainer = (data: { id: string, name?: string, description?: string }): FeatureRetainer => {
 		return {
 			id: data.id,
-			name: data.name || 'Retainer',
+			name: data.name || 'Ретейнер',
 			description: data.description || '',
 			type: FeatureType.Retainer,
 			data: {
@@ -508,7 +508,7 @@ export class FactoryFeatureLogic {
 	createSaveThreshold = (data: { id: string, name?: string, description?: string, value: number }): FeatureSaveThreshold => {
 		return {
 			id: data.id,
-			name: data.name || 'Save Threshold',
+			name: data.name || 'Поріг порятунку',
 			description: data.description || '',
 			type: FeatureType.SaveThreshold,
 			data: {
@@ -520,7 +520,7 @@ export class FactoryFeatureLogic {
 	createSize = (data: { id: string, name?: string, description?: string, sizeValue: number, sizeMod?: 'T' | 'S' | 'M' | 'L' }): FeatureSize => {
 		return {
 			id: data.id,
-			name: data.name || 'Size',
+			name: data.name || 'Розмір',
 			description: data.description || '',
 			type: FeatureType.Size,
 			data: {
@@ -546,7 +546,7 @@ export class FactoryFeatureLogic {
 
 		return {
 			id: data.id,
-			name: data.name || (count === 1 ? `${prefix}Skill` : `${prefix}Skills`),
+			name: data.name || (count === 1 ? `${prefix}Навичка` : `${prefix}Навички`),
 			description: data.description || '',
 			type: FeatureType.SkillChoice,
 			data: {
@@ -590,7 +590,7 @@ export class FactoryFeatureLogic {
 	createSummon = (data: { id: string, name?: string, description?: string, summons: Summon[] }): FeatureSummon => {
 		return {
 			id: data.id,
-			name: data.name || 'Summon Choice',
+			name: data.name || 'Виклик',
 			description: data.description || '',
 			type: FeatureType.Summon,
 			data: {
@@ -602,7 +602,7 @@ export class FactoryFeatureLogic {
 	createSummonChoice = (data: { id: string, name?: string, description?: string, options: Summon[], count?: number }): FeatureSummonChoice => {
 		return {
 			id: data.id,
-			name: data.name || 'Summon Choice',
+			name: data.name || 'Вибір виклику',
 			description: data.description || '',
 			type: FeatureType.SummonChoice,
 			data: {
@@ -629,7 +629,7 @@ export class FactoryFeatureLogic {
 	createTaggedFeatureChoice = (data: { id: string, name?: string, description?: string, tag: string, count?: number }): FeatureTaggedFeatureChoice => {
 		return {
 			id: data.id,
-			name: data.name || 'Tagged Feature',
+			name: data.name || 'Позначена особливість',
 			description: data.description || '',
 			type: FeatureType.TaggedFeatureChoice,
 			data: {
@@ -644,8 +644,8 @@ export class FactoryFeatureLogic {
 		const count = data.count || 1;
 		return {
 			id: data.id,
-			name: data.name || 'Title',
-			description: data.description || (count > 1 ? `Choose ${count} titles.` : 'Choose a title.'),
+			name: data.name || 'Вибір титулу',
+			description: data.description || (count > 1 ? `Оберіть ${count} титули.` : 'Оберіть титул.'),
 			type: FeatureType.TitleChoice,
 			data: {
 				echelon: data.echelon || 1,

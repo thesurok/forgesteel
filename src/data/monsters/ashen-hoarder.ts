@@ -57,7 +57,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The ashen hoarder takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The ashen hoarder takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -69,9 +69,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 				'The ashen hoarder launches bone lances into the air, raining them down on enemies and impaling those unlucky enough to be on the receiving end. Each enemy within 20 squares of the ashen hoarder makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '14 damage; restrained and bleeding (save ends)',
-					tier2: '11 damage; bleeding (EoT)',
-					tier3: '6 damage'
+					tier1: '14 шкоди; скутий і кровотеча (рят. кидок закінчує)',
+					tier2: '11 шкоди; кровотеча (до кінця ходу)',
+					tier3: '6 шкоди'
 				})
 			]
 		})
@@ -111,9 +111,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 damage; if one target has M < 2 they are bleeding (save ends); if the other target has Л < 2 they are grabbed',
-								tier2: '15 damage; if one target has M < 3 they are bleeding (save ends); if the other target has Л < 3 they are grabbed',
-								tier3: '18 damage; M < 4 bleeding (save ends); Л < 2 grabbed'
+								tier1: '10 шкоди; якщо one target має С < 2 they are кровотеча (рят. кидок закінчує); якщо the other target має Л < 2 they are схоплений',
+								tier2: '15 шкоди; якщо one target має С < 3 they are кровотеча (рят. кидок закінчує); якщо the other target має Л < 3 they are схоплений',
+								tier3: '18 шкоди; С < 4 кровотеча (рят. кидок закінчує); Л < 2 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The ashen hoarder can have up to two size 1 creatures grabbed at a time.')
 						]
@@ -130,9 +130,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage; Л < 2 weakened (save ends)',
-								tier2: '8 damage; Л < 3 weakened (save ends)',
-								tier3: '11 damage; Л < 4 weakened (save ends)'
+								tier1: '4 шкоди; Л < 2 ослаблений (рят. кидок закінчує)',
+								tier2: '8 шкоди; Л < 3 ослаблений (рят. кидок закінчує)',
+								tier3: '11 шкоди; Л < 4 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -157,9 +157,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 corruption damage; M < 2 the target is impaled (save ends)',
-								tier2: '11 corruption damage; M < 3 the target is impaled (save ends)',
-								tier3: '14 corruption damage; M < 4 the target is impaled (save ends)'
+								tier1: '6 шкоди від скверни; С < 2 ціль нанизана (рят. кидок закінчує)',
+								tier2: '11 шкоди від скверни; С < 3 ціль нанизана (рят. кидок закінчує)',
+								tier3: '14 шкоди від скверни; С < 4 ціль нанизана (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('An impaled creature is restrained and bleeding, and moves with the ashen hoarder. The ashen hoarder can have three creatures impaled with this ability at a time.')
 						]
@@ -173,7 +173,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Effect: The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either pushed into the nearest unoccupied space outside the path, or if they have <code>M < 3</code> is pushed forward until the movement ends. Any creature who is force moved forward into an obstacle is dazed (save ends).')
+							FactoryLogic.createAbilitySectionText('Effect: The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either pushed into the nearest unoccupied space outside the path, or if they have <code>С < 3</code> is pushed forward until the movement ends. Any creature who is force moved forward into an obstacle is dazed (save ends).')
 						]
 					})
 				}),
@@ -198,7 +198,7 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 				FactoryLogic.feature.create({
 					id: 'ashen-hoarder-feature-9',
 					name: 'Soul Singularity',
-					description: 'When the ashen hoarder is reduced to 0 Stamina, they explode in a swirling singularity of bone shards and soul energy. Each creature within 5 squares of the ashen hoarder who has <code>M < 3</code> takes 11 corruption damage. A creature killed by this damage has their soul sucked into the vortex and lost somewhere in the Abyssal Wasteland, and can’t be brought back to life until their soul is recovered.'
+					description: 'When the ashen hoarder is reduced to 0 Stamina, they explode in a swirling singularity of bone shards and soul energy. Each creature within 5 squares of the ashen hoarder who has <code>С < 3</code> takes 11 corruption damage. A creature killed by this damage has their soul sucked into the vortex and lost somewhere in the Abyssal Wasteland, and can’t be brought back to life until their soul is recovered.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -212,9 +212,9 @@ When an ashen hoarder obtains corpses, they impale them on the many sharp bones 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage, vertical push 2',
-								tier2: '11 damage, vertical push 3',
-								tier3: '14 damage, vertical push 4'
+								tier1: '6 шкоди, вертикально відштовхнути на 2',
+								tier2: '11 шкоди, вертикально відштовхнути на 3',
+								tier3: '14 шкоди, вертикально відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target is force moved straight up, then falls. A target who would normally land prone after falling is instead restrained (save ends).')
 						]

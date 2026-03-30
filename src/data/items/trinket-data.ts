@@ -42,7 +42,7 @@ export class TrinketData {
 							name: 'Use Cloak',
 							type: FactoryLogic.type.createTrigger('You are targeted by any effect that deals cold damage'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Shift a number of squares equal to your level. The cold immunity granted by the cloak becomes cold weakness equal to your level until the end of the next round. You can\'t use this triggered action again until this weakness ends.')
+								FactoryLogic.createAbilitySectionText('Shift a number of squares equal to your level. The cold immunity granted by the cloak becomes cold weakness equal to your level until the end of the next round. You can\'t use this тригерна дія again until this weakness ends.')
 							]
 						})
 					})
@@ -83,7 +83,7 @@ export class TrinketData {
 							name: 'Use Cloak',
 							type: FactoryLogic.type.createTrigger('You are targeted by any effect that deals fire damage'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Reduce the damage to 0. The fire immunity granted by the cloak becomes fire weakness equal to your level until the end of the next round. You can\'t use this triggered action again until this weakness ends.')
+								FactoryLogic.createAbilitySectionText('Reduce the damage to 0. The fire immunity granted by the cloak becomes fire weakness equal to your level until the end of the next round. You can\'t use this тригерна дія again until this weakness ends.')
 							]
 						})
 					})
@@ -124,7 +124,7 @@ export class TrinketData {
 							name: 'Use Cloak',
 							type: FactoryLogic.type.createTrigger('You are targeted by any effect that deals lightning damage'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('The next damage-dealing ability you use to deal extra lightning damage equal to your level. The lightning immunity granted by the cloak becomes ightning immunity equal to your level until the end of the next round. You can\'t use this triggered action again until this weakness ends.')
+								FactoryLogic.createAbilitySectionText('The next damage-dealing ability you use to deal extra lightning damage equal to your level. The lightning immunity granted by the cloak becomes ightning immunity equal to your level until the end of the next round. You can\'t use this тригерна дія again until this weakness ends.')
 							]
 						})
 					})
@@ -158,7 +158,7 @@ export class TrinketData {
 							distance: [FactoryLogic.distance.createMelee()],
 							target: 'Один ворог',
 							sections: [
-								FactoryLogic.createAbilitySectionText('Make a melee free strike as a free maneuver once during the fall before you hit the ground.')
+								FactoryLogic.createAbilitySectionText('Make a melee free strike as a безкоштовний маневр once during the fall before you hit the ground.')
 							]
 						})
 					})
@@ -189,7 +189,7 @@ export class TrinketData {
 							name: 'Use Displacing Replacement Bracer',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You transfer an object of size 1S or 1T held in one hand with another object of the same size that is within 10 squares. The objects change locations instantaneously and without creating any auditory or visual disturbance. If another creature is wearing or holding the object you transfer to your hand and they have I < 4, they fail to notice the transfer.')
+								FactoryLogic.createAbilitySectionText('You transfer an object of size 1S or 1T held in one hand with another object of the same size that is within 10 squares. The objects change locations instantaneously and without creating any auditory or visual disturbance. If another creature is wearing or holding the object you transfer to your hand and they have І < 4, they fail to notice the transfer.')
 							]
 						})
 					})
@@ -222,7 +222,7 @@ export class TrinketData {
 							distance: [FactoryLogic.distance.createRanged(5)],
 							target: 'Одна істота або предмет',
 							sections: [
-								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Іллірик (Yllyric), causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
+								FactoryLogic.createAbilitySectionText('You call upon the Divine Vine in Іллірик (Yllyric), causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab маневр at a distance. If the target is grabbed, you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).')
 							]
 						})
 					})
@@ -244,9 +244,9 @@ export class TrinketData {
 			goal: 150
 		}),
 		effect: `
-When you use a move action while wearing these gloves, you can place one hand upon a mundane object as part of that move action. If the object is 1 square thick or less and has open space on the other side (for example, a door or wall), you pull your body through it as though the object wasn’t there. 
+When you use a дія руху while wearing these gloves, you can place one hand upon a mundane object as part of that дія руху. If the object is 1 square thick or less and has open space on the other side (for example, a door or wall), you pull your body through it as though the object wasn’t there. 
 
-If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard Might test made as a main action.`
+If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard Might test made as a основна дія.`
 	});
 
 	static geckoGloves: Item = FactoryLogic.createItem({
@@ -261,7 +261,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 100
 		}),
-		effect: 'While you wear these gloves, your grip is all but impossible to break. You can’t be disarmed, you can’t lose your grip while climbing unless you are force moved, and any creature grabbed by you takes a bane on the test for the Escape Grab maneuver.'
+		effect: 'While you wear these gloves, your grip is all but impossible to break. You can’t be disarmed, you can’t lose your grip while climbing unless you are force moved, and any creature grabbed by you takes a bane on the test for the Escape Grab маневр.'
 	});
 
 	static hellchargerHelm: Item = FactoryLogic.createItem({
@@ -289,7 +289,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 							distance: [FactoryLogic.distance.createMelee()],
 							target: 'Одна істота',
 							sections: [
-								FactoryLogic.createAbilitySectionText('Use the Knockback maneuver, regardless of the target creature\'s size.')
+								FactoryLogic.createAbilitySectionText('Use the Knockback маневр, regardless of the target creature\'s size.')
 							]
 						})
 					})
@@ -357,7 +357,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 			goal: 150
 		}),
 		effect: `
-While wearing this bangle, your melee free strikes inflict I < [середній] frightened (EoT). The potency increases by 1 if you have an edge on the power roll.
+While wearing this bangle, your melee free strikes inflict І < [середній] frightened (EoT). The potency increases by 1 if you have an edge on the power roll.
 
 **Special**: If you are a summoner, you regain the use of your standard melee free strike while wearing this bangle.`
 	});
@@ -471,7 +471,7 @@ While wearing this bangle, your melee free strikes inflict I < [середній
 			goal: 300
 		}),
 		effect: `
-While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has П < [середній], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
+While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has П < [середній], they are magically chained to you until the end of their next turn. While chained, the target can’t move farther away from you, and you can use a маневр to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
 
 **Special**: If you are a summoner, you regain the use of your standard ranged free strike while wearing this gauntlet.`
 	});
@@ -620,7 +620,7 @@ The coin must be picked up before it can be used again. If any creature picks up
 		effect: `
 The thunder chariot can be used as a size 2 mount. Its speed is equal to its rider’s speed + 3.
 
-While riding in the thunder chariot, you have lightning immunity 5. An ally can use their maneuver while adjacent to you to move up to their speed, pulling you along.`
+While riding in the thunder chariot, you have lightning immunity 5. An ally can use their маневр while adjacent to you to move up to their speed, pulling you along.`
 	});
 
 	// #endregion
@@ -670,9 +670,9 @@ While riding in the thunder chariot, you have lightning immunity 5. An ally can 
 		effect: `
 While holding the cross, it emits faint strings made of light that you can control with your mind.
 
-Whenever an enemy minion is reduced to 0 Stamina within 5 squares of you, you can use a free triggered action to attach a string of light to their corpse and command an illusory double of them until the end of the encounter. The minion is organized into the cross’s squad of minions with the same name under your command (up to a maximum of six minions). On each of your turns, you can direct the squad to move and use a main action while they’re within 5 squares of you.
+Whenever an enemy minion is reduced to 0 Stamina within 5 squares of you, you can use a безкоштовна тригерна дія to attach a string of light to their corpse and command an illusory double of them until the end of the encounter. The minion is organized into the cross’s squad of minions with the same name under your command (up to a maximum of six minions). On each of your turns, you can direct the squad to move and use a основна дія while they’re within 5 squares of you.
 
-You can also pull the strings of your allies to keep them out of harm’s way. Whenever an ally takes damage within 5 squares of you, you can use a triggered action to vertically pull them 5 squares (ignoring stability) and halve the damage.
+You can also pull the strings of your allies to keep them out of harm’s way. Whenever an ally takes damage within 5 squares of you, you can use a тригерна дія to vertically pull them 5 squares (ignoring stability) and halve the damage.
 
 **Special**: If you are a summoner holding the cross, you can organize the minions gained with the cross into one of your class’s squads instead.`
 	});
@@ -692,7 +692,7 @@ You can also pull the strings of your allies to keep them out of harm’s way. W
 		effect: `
 While holding crystallized essence, the distance of your ranged magic abilities increases by 5. Any creatures you create or summon using magic have their Stamina increased by one-third of their Stamina maximum.
 
-Additionally, you can shatter and destroy the crystallized essence as a maneuver to immediately give yourself 5 essence.`
+Additionally, you can shatter and destroy the crystallized essence as a маневр to immediately give yourself 5 essence.`
 	});
 
 	static maskOfOversight: Item = FactoryLogic.createItem({
@@ -717,7 +717,7 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 							name: 'Use Mask of Oversight',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double edge on tests made to discover hidden creatures, items, or mechanisms, but you have a double bane on Presence tests that don’t use the Intimidate skill. As a maneuver, you can return your eyes to your head and make the additional eyes disappear.')
+								FactoryLogic.createAbilitySectionText('You cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double edge on tests made to discover hidden creatures, items, or mechanisms, but you have a double bane on Presence tests that don’t use the Intimidate skill. As a маневр, you can return your eyes to your head and make the additional eyes disappear.')
 							]
 						})
 					})
@@ -791,9 +791,9 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 								FactoryLogic.createAbilitySectionRoll(
 									FactoryLogic.createPowerRoll({
 										characteristic: [Characteristic.Might, Characteristic.Agility],
-										tier1: '3 psychic damage',
-										tier2: '5 psychic damage; I < [середній], slowed (save ends)',
-										tier3: '8 psychic damage; I < [сильний], slowed (save ends)'
+										tier1: '3 психічної шкоди',
+										tier2: '5 психічної шкоди; І < [середній], сповільнений (рят. кидок закінчує)',
+										tier3: '8 психічної шкоди; І < [сильний], сповільнений (рят. кидок закінчує)'
 									})
 								),
 								FactoryLogic.createAbilitySectionText('While slowed in this way, the target takes a bane on magic or psionic abilities.')
@@ -872,7 +872,7 @@ At the end of each of your turns, each ally within 10 squares of you can make a 
 			goal: 600
 		}),
 		effect: `
-The Gravekeeper’s Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard Intuition test as a main action. Once a spirit is trapped, you make a Presence test to coax them into answering your questions:
+The Gravekeeper’s Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard Intuition test as a основна дія. Once a spirit is trapped, you make a Presence test to coax them into answering your questions:
 
 | Roll    | Effect                                                                                     |
 |:--------|:-------------------------------------------------------------------------------------------|
@@ -896,9 +896,9 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 			goal: 600
 		}),
 		effect: `
-The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s speed, and it can fly and hover.While riding in the hagbasket, power rolls made against you have a double edge. However, you can use a free triggered action when a power roll made against you gets a tier 3 result to halve the damage.
+The hagbasket can be used as a size 2 mount. Its speed is equal to its rider’s speed, and it can fly and hover.While riding in the hagbasket, power rolls made against you have a double edge. However, you can use a безкоштовна тригерна дія when a power roll made against you gets a tier 3 result to halve the damage.
 
-**Special**: If you are a summoner riding in the hagbasket, you can use a maneuver to enable a willing ally within your Summoner’s Range to use Minion Bridge using your minions.`
+**Special**: If you are a summoner riding in the hagbasket, you can use a маневр to enable a willing ally within your Summoner’s Range to use Minion Bridge using your minions.`
 	});
 
 	static psiBlade: Item = FactoryLogic.createItem({

@@ -62,9 +62,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 				target: 'Кожен ворог та обʼєкт у зоні',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-						tier1: '4 corruption damage; A<0 slowed (save ends)',
-						tier2: '6 corruption damage; A<1 slowed (save ends)',
-						tier3: '9 corruption damage; A<2 restrained (save ends)'
+						tier1: '4 шкоди від скверни; Л<0 сповільнений (рят. кидок закінчує)',
+						tier2: '6 шкоди від скверни; Л<1 сповільнений (рят. кидок закінчує)',
+						tier3: '9 шкоди від скверни; Л<2 скутий (рят. кидок закінчує)'
 					})),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Особливе',
@@ -134,11 +134,11 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 lightning damage',
-								tier2: '3 lightning damage',
-								tier3: '5 lightning damage'
+								tier1: '2 блискавичної шкоди',
+								tier2: '3 блискавичної шкоди',
+								tier3: '5 блискавичної шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('If the apprentice mage doesn’t use a maneuver or a move action this turn, the target is also slowed (EoT).')
+							FactoryLogic.createAbilitySectionText('If the apprentice mage doesn’t use a маневр or a дія руху this turn, the target is also slowed (EoT).')
 						]
 					})
 				}),
@@ -190,9 +190,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the guard is flanked, they can make a free strike against a different target adjacent to them.')
 						]
@@ -246,9 +246,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							}))
 						]
 					})
@@ -301,9 +301,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability is used as part of a charge, the raider can make a ranged free strike before using the ability.')
 						]
@@ -357,9 +357,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 corruption damage',
-								tier2: '2 corruption damage',
-								tier3: '3 corruption damage'
+								tier1: '1 шкоди від скверни',
+								tier2: '2 шкоди від скверни',
+								tier3: '3 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('One creature within 5 squares regains 1 Stamina.')
 						]
@@ -414,9 +414,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 corruption damage',
-								tier2: '2 corruption damage',
-								tier3: '3 corruption damage'
+								tier1: '1 шкоди від скверни',
+								tier2: '2 шкоди від скверни',
+								tier3: '3 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('If the rogue is disguised or hidden when they use this ability, it deals an extra 3 damage.')
 						]
@@ -469,9 +469,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; M<2 grabbed and the target takes a bane on the Escape Grab maneuver'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; С<2 схоплений і ціль takes a bane on the Escape Grab маневр'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who is already grabbed takes an extra 2 damage.')
 						]
@@ -543,9 +543,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; M<2 the target has a double bane on their next power roll'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; С<2 ціль має a double bane on their next power roll'
 							})),
 							FactoryLogic.createAbilitySectionText('The target is taunted (EoT).')
 						]
@@ -609,9 +609,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; I<2 weakened (save ends)'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; І<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -681,9 +681,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -750,9 +750,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 lightning damage',
-								tier2: '10 lightning damage',
-								tier3: '13 lightning damage'
+								tier1: '7 блискавичної шкоди',
+								tier2: '10 блискавичної шкоди',
+								tier3: '13 блискавичної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -773,9 +773,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'Slide 2; M<0 slowed (save ends)',
-								tier2: 'Slide 4; M<1 slowed (save ends)',
-								tier3: 'Slide 6; M<2 slowed (save ends)'
+								tier1: 'Зсунути на 2; С<0 сповільнений (рят. кидок закінчує)',
+								tier2: 'Зсунути на 4; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: 'Зсунути на 6; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The gust of wind disperses gas or vapor and extinguishes any flames, including supernatural effects.')
 						]
@@ -784,7 +784,7 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 				FactoryLogic.feature.create({
 					id: 'human-11-feature-5',
 					name: 'Arcane Shield',
-					description: 'Any melee ability targeting the storm mage takes a bane. Additionally, whenever the mage takes damage from an adjacent enemy, the enemy takes 2 lightning damage, and if they have R<1 they are pushed up to 2 squares.'
+					description: 'Any melee ability targeting the storm mage takes a bane. Additionally, whenever the mage takes damage from an adjacent enemy, the enemy takes 2 lightning damage, and if they have Р<1 they are pushed up to 2 squares.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'human-11-feature-6',
@@ -834,9 +834,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores cover and concealment.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -893,9 +893,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage; M<1 slowed (save ends)',
-								tier2: '6 damage; M<2 slowed (save ends)',
-								tier3: '8 damage; M<3 slowed (save ends)'
+								tier1: '3 шкоди; С<1 сповільнений (рят. кидок закінчує)',
+								tier2: '6 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '8 шкоди; С<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 10 squares can make a free strike.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1021,9 +1021,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; pull 1',
-								tier2: '12 damage; pull 2',
-								tier3: '15 damage; pull 3'
+								tier1: '8 шкоди; притягнути на 1',
+								tier2: '12 шкоди; притягнути на 2',
+								tier3: '15 шкоди; притягнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target who is adjacent to the bandit chief after the power roll is resolved takes 3 corruption damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1044,9 +1044,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'Push 1; M<1 prone',
-								tier2: 'Push 2; M<2 prone',
-								tier3: 'Push 4; M<3 prone'
+								tier1: 'Відштовхнути на 1; С<1 розпластаний',
+								tier2: 'Відштовхнути на 2; С<2 розпластаний',
+								tier3: 'Відштовхнути на 4; С<3 розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -1148,9 +1148,9 @@ Humans see unrealized potential everywhere, whether envisioning an untamed fores
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage; grabbed'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,

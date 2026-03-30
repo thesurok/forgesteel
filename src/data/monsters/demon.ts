@@ -155,10 +155,10 @@ A number of lesser demons have been identified across categories 1 to 3:
 			name: 'Abyssal Rift',
 			cost: 7,
 			icon: StatBlockIcon.Area,
-			sections: ['Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 Stamina, damage immunity 2, and holy weakness 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a **Reason test** or **Intuition test** as a maneuver while adjacent to a rift to destabilize and close it.',
+			sections: ['Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 Stamina, damage immunity 2, and holy weakness 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a **Reason test** or **Intuition test** as a маневр while adjacent to a rift to destabilize and close it.',
 				FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason, Characteristic.Intuition],
-					tier1: 'The rift remains open and regains 5 Stamina.',
+					tier1: 'The rift remains open і regains 5 Витривалість.',
 					tier2: 'The rift remains open.',
 					tier3: 'The rift closes.'
 				})]
@@ -192,9 +192,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 				'One demon acting this turn unleashes their pent-up agony and pain on every non-demon in a 5 burst. Each target makes a **Presence test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Presence,
-					tier1: '10 corruption damage; the target is soul flensed',
-					tier2: 'The target is soul flensed',
-					tier3: 'No effect'
+					tier1: '10 шкоди від скверни; ціль is soul flensed',
+					tier2: 'Ціль is soul flensed',
+					tier3: 'Без ефекту'
 				}),
 				'The demon removes all conditions and effects on themself that can be ended by a saving throw, and transfers all those effects to each creature soul flensed this way.'
 			],
@@ -229,9 +229,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; pull 1',
-								tier2: '4 damage; pull 2',
-								tier3: '5 damage; pull 3'
+								tier1: '2 шкоди; притягнути на 1',
+								tier2: '4 шкоди; притягнути на 2',
+								tier3: '5 шкоди; притягнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is pulled adjacent to the ensarer, the ensnarer makes a free strike against them.')
 						]
@@ -275,9 +275,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							}))
 						]
 					})
@@ -320,9 +320,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 poison damage',
-								tier2: '4 poison damage',
-								tier3: '5 poison damage'
+								tier1: '2 отруйної шкоди',
+								tier2: '4 отруйної шкоди',
+								tier3: '5 отруйної шкоди'
 							}))
 						]
 					})
@@ -369,9 +369,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 psychic damage',
-								tier2: '5 psychic damage; P<1 weakened (save ends)',
-								tier3: '7 psychic damage; P<2 weakened (save ends)'
+								tier1: '4 психічної шкоди',
+								tier2: '5 психічної шкоди; П<1 ослаблений (рят. кидок закінчує)',
+								tier3: '7 психічної шкоди; П<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target makes a strike while weakened this way, the bendrak can choose a second target within distance for the strike. The first target takes half of any damage from the strike and the second target takes any remaining damage.')
 						]
@@ -433,11 +433,11 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; pull 2',
-								tier2: '7 damage; pull 3',
-								tier3: '8 damage; pull 4'
+								tier1: '5 шкоди; притягнути на 2',
+								tier2: '7 шкоди; притягнути на 3',
+								tier3: '8 шкоди; притягнути на 4'
 							})),
-							FactoryLogic.createAbilitySectionText('If the target is pulled adjacent to the muceron, the muceron can either make a free strike or use the Grab maneuver against them.')
+							FactoryLogic.createAbilitySectionText('If the target is pulled adjacent to the muceron, the muceron can either make a free strike or use the Grab маневр against them.')
 						]
 					})
 				}),
@@ -497,9 +497,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; the remasch can teleport up to 2 squares',
-								tier2: '6 damage; the remasch can teleport up to 3 squares',
-								tier3: '8 damage; the remasch can teleport up to 5 squares'
+								tier1: '5 шкоди; the remasch can teleport до 2 клітинок',
+								tier2: '6 шкоди; the remasch can teleport до 3 клітинок',
+								tier3: '8 шкоди; the remasch can teleport до 5 клітинок'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -564,9 +564,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage; M<2 bleeding (save ends)'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -584,9 +584,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 							FactoryLogic.createAbilitySectionText('**Special:** Each target must be at less than full Stamina.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 corruption damage',
-								tier2: '2 corruption damage',
-								tier3: '3 corruption damage'
+								tier1: '1 шкоди від скверни',
+								tier2: '2 шкоди від скверни',
+								tier3: '3 шкоди від скверни'
 							}))
 						]
 					})
@@ -633,9 +633,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'Slide 3',
-								tier2: 'Slide 4',
-								tier3: 'Slide 5'
+								tier1: 'Зсунути на 3',
+								tier2: 'Зсунути на 4',
+								tier3: 'Зсунути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('The ground in the area turns into a morass of spongy flesh before the targets are force moved. Until the start of the torlas’s next turn, the area is difficult terrain, and each creature who moves in the area takes 1 damage for each square moved.')
 						]
@@ -696,9 +696,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 psychic damage; I<1 slowed (save ends)',
-								tier2: '7 psychic damage; I<2 slowed (save ends)',
-								tier3: '10 psychic damage; I<3 slowed (save ends)'
+								tier1: '4 психічної шкоди; І<1 сповільнений (рят. кидок закінчує)',
+								tier2: '7 психічної шкоди; І<2 сповільнений (рят. кидок закінчує)',
+								tier3: '10 психічної шкоди; І<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 10 squares of the chorogaunt shifts up to their speed.')
 						]
@@ -818,9 +818,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The grulqin gains an edge on this ability if they previously moved 3 or more squares in a straight line on their turn.')
 						]
@@ -864,9 +864,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 corruption damage; slide 2',
-								tier2: '4 corruption damage; vertical slide 2',
-								tier3: '6 corruption damage; vertical slide 4'
+								tier1: '2 шкоди від скверни; зсунути на 2',
+								tier2: '4 шкоди від скверни; вертикально зсунути на 2',
+								tier3: '6 шкоди від скверни; вертикально зсунути на 4'
 							}))
 						]
 					})
@@ -914,9 +914,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 psychic damage',
-								tier2: '5 psychic damage',
-								tier3: '7 psychic damage'
+								tier1: '3 психічної шкоди',
+								tier2: '5 психічної шкоди',
+								tier3: '7 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target takes a bane on their next strike. If the target is winded, they have a double bane on their next strike instead.')
 						]
@@ -954,14 +954,14 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 psychic damage',
-								tier2: '8 psychic damage',
-								tier3: '9 psychic damage'
+								tier1: '6 психічної шкоди',
+								tier2: '8 психічної шкоди',
+								tier3: '9 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target has corruption weakness 5 (EoT).'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'The target has I<2 corruption weakness 5 (save ends).'
+								effect: 'The target has І<2 corruption weakness 5 (save ends).'
 							})
 						]
 					})
@@ -979,9 +979,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 							FactoryLogic.createAbilitySectionText('**Special:** The bale eye must create the cube beneath themself.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 psychic damage, A<1 the target is warped (save ends)',
-								tier2: '5 psychic damage, A<2 the target is warped (save ends)',
-								tier3: '6 psychic damage, A<3 the target is warped (save ends)'
+								tier1: '3 психічної шкоди, Л<1 ціль is warped (рят. кидок закінчує)',
+								tier2: '5 психічної шкоди, Л<2 ціль is warped (рят. кидок закінчує)',
+								tier3: '6 психічної шкоди, Л<3 ціль is warped (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While warped, a creature has a double bane on power rolls using any characteristic higher than 0, and has a double edge on power rolls using any characteristic lower than 0.')
 						]
@@ -1029,9 +1029,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Each enemy adjacent to the fangling takes 2 damage.')
 						]
@@ -1049,9 +1049,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage; pull 1; A<1 bleeding (save ends)',
-								tier2: '3 damage; pull 1; A<2 bleeding (save ends)',
-								tier3: '4 damage; pull 1; A<3 bleeding (save ends)'
+								tier1: '2 шкоди; притягнути на 1; Л<1 кровотеча (рят. кидок закінчує)',
+								tier2: '3 шкоди; притягнути на 1; Л<2 кровотеча (рят. кидок закінчує)',
+								tier3: '4 шкоди; притягнути на 1; Л<3 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1103,9 +1103,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 corruption damage',
-								tier2: '6 corruption damage',
-								tier3: '7 corruption damage; I<3 dazed (save ends)'
+								tier1: '3 шкоди від скверни',
+								tier2: '6 шкоди від скверни',
+								tier3: '7 шкоди від скверни; І<3 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The fiktin violently changes shape, dealing an extra 6 damage to any target they were hidden from with their Aggressive Mimicry ability.')
 						]
@@ -1121,7 +1121,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a free maneuver.')
+							FactoryLogic.createAbilitySectionText('The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a безкоштовний маневр.')
 						]
 					})
 				}),
@@ -1170,9 +1170,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 acid damage; M<1 slowed (save ends)',
-								tier2: '7 acid damage; M<2 slowed (save ends)',
-								tier3: '9 acid damage; M<3 restrained (save ends)'
+								tier1: '5 кислотної шкоди; С<1 сповільнений (рят. кидок закінчує)',
+								tier2: '7 кислотної шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '9 кислотної шкоди; С<3 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The ground and any surfaces in the area pool with slime. The slime is difficult terrain for enemies, and any enemy is bleeding while in the area.')
 						]
@@ -1234,9 +1234,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage',
-								tier2: '9 damage',
-								tier3: '11 damage; grabbed, and the target takes a bane on the Escape Grab maneuver'
+								tier1: '7 шкоди',
+								tier2: '9 шкоди',
+								tier3: '11 шкоди; схоплений, і ціль takes a bane on the Escape Grab маневр'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target grabbed this way takes 4 psychic damage at the start of each of the tormenauk’s turns.')
 						]
@@ -1254,9 +1254,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 psychic damage; I<2 dazed (save ends)',
-								tier2: '6 psychic damage; I<3 dazed (save ends)',
-								tier3: '8 psychic damage; I<4 dazed (save ends)'
+								tier1: '4 психічної шкоди; І<2 приголомшений (рят. кидок закінчує)',
+								tier2: '6 психічної шкоди; І<3 приголомшений (рят. кидок закінчує)',
+								tier3: '8 психічної шкоди; І<4 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The potency increases by 1 if the target is grabbed by the tormenauk.')
 						]
@@ -1304,9 +1304,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 corruption damage; A<2 restrained (save ends)',
-								tier2: '16 corruption damage; A<3 restrained (save ends)',
-								tier3: '19 corruption damage; A<4 restrained (save ends)'
+								tier1: '11 шкоди від скверни; Л<2 скутий (рят. кидок закінчує)',
+								tier2: '16 шкоди від скверни; Л<3 скутий (рят. кидок закінчує)',
+								tier3: '19 шкоди від скверни; Л<4 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -1366,9 +1366,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 corruption damage',
-								tier2: '12 corruption damage',
-								tier3: '15 corruption damage; two **frenzieds** appears in an unoccupied spaces adjacent to each target.'
+								tier1: '7 шкоди від скверни',
+								tier2: '12 шкоди від скверни',
+								tier3: '15 шкоди від скверни; two **frenzieds** appears in an unoccupied spaces adjacent to each target.'
 							}))
 						]
 					})
@@ -1397,9 +1397,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 corruption damage; Р < 2 weakened (save ends)',
-								tier2: '11 corruption damage; Р < 3 weakened (save ends)',
-								tier3: '14 corruption damage; Р < 4 weakened (save ends)'
+								tier1: '6 шкоди від скверни; Р < 2 ослаблений (рят. кидок закінчує)',
+								tier2: '11 шкоди від скверни; Р < 3 ослаблений (рят. кидок закінчує)',
+								tier3: '14 шкоди від скверни; Р < 4 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The egress recalls and instantly destroys any minion allies on the encounter map. A torrent of churned-up minion bodies, blood, and ichor erupts from the egress, dealing an extra 1 damage for each minion destroyed this way.')
 						]
@@ -1434,9 +1434,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '3 poison damage',
-								tier2: '5 poison damage; the scout can shift 1 square',
-								tier3: '7 poison damage: the scout shifts up to 3 square'
+								tier1: '3 отруйної шкоди',
+								tier2: '5 отруйної шкоди; the scout може зміститися 1 клітинку',
+								tier3: '7 отруйної шкоди: the scout shifts up to 3 клітинку'
 							}))
 						]
 					})
@@ -1479,9 +1479,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage; push 2',
-								tier2: '7 damage; push 2',
-								tier3: '8 damage; push 4'
+								tier1: '4 шкоди; відштовхнути на 2',
+								tier2: '7 шкоди; відштовхнути на 2',
+								tier3: '8 шкоди; відштовхнути на 4'
 							}))
 						]
 					})
@@ -1524,9 +1524,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 poison damage',
-								tier2: '7 poison damage',
-								tier3: '8 poison damage'
+								tier1: '4 отруйної шкоди',
+								tier2: '7 отруйної шкоди',
+								tier3: '8 отруйної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('All soulraker demons have concealment from the target until the start of the stinger’s next turn.')
 						]
@@ -1569,9 +1569,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 corruption damage',
-								tier2: '10 corruption damage',
-								tier3: '11 corruption damage'
+								tier1: '7 шкоди від скверни',
+								tier2: '10 шкоди від скверни',
+								tier3: '11 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('A puddle of blight—digested soul juice—covers the ground in the target’s square, which is affected as if by **Seeping Blight** (see the Level 7+ **Demon Malice** feature).')
 						]
@@ -1638,9 +1638,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '9 cold, fire, or sonic damage',
-								tier2: '11 cold, fire, or sonic damage',
-								tier3: '13 cold, fire, or sonic damage; M<4 bleeding, dazed, or slowed (save ends)'
+								tier1: '9 cold, fire, або звукової шкоди',
+								tier2: '11 cold, fire, або звукової шкоди',
+								tier3: '13 cold, fire, або звукової шкоди; С<4 кровотеча, приголомшений, або сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('**Special:** After making the power roll, the chimeron decides what damage type the ability deals and which condition it imposes.')
 						]
@@ -1702,9 +1702,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage; pull 1',
-								tier2: '10 damage; pull 2, grabbed',
-								tier3: '12 damage; pull 3, grabbed'
+								tier1: '7 шкоди; притягнути на 1',
+								tier2: '10 шкоди; притягнути на 2, схоплений',
+								tier3: '12 шкоди; притягнути на 3, схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target restrained by the styrich’s Tangled Nest ability can be pulled the distance determined by the power roll.')
 						]
@@ -1722,9 +1722,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'A<2 slowed (save ends)',
-								tier2: 'Slowed (EoT) or A<3 3 damage and restrained (EoT)',
-								tier3: 'Restrained (EoT) or A<4 3 damage and restrained (save ends)'
+								tier1: 'Л<2 сповільнений (рят. кидок закінчує)',
+								tier2: 'сповільнений (до кінця ходу) або Л<3 3 шкоди і скутий (до кінця ходу)',
+								tier3: 'скутий (до кінця ходу) або Л<4 3 шкоди і скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1771,9 +1771,9 @@ A number of lesser demons have been identified across categories 1 to 3:
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 poison damage; push 2',
-								tier2: '10 poison damage; push 2',
-								tier3: '11 poison damage; push 4; A<4 grabbed'
+								tier1: '7 отруйної шкоди; відштовхнути на 2',
+								tier2: '10 отруйної шкоди; відштовхнути на 2',
+								tier3: '11 отруйної шкоди; відштовхнути на 4; Л<4 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The praetorian can shift into each square the target leaves.')
 						]
@@ -1789,7 +1789,7 @@ A number of lesser demons have been identified across categories 1 to 3:
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The praetorian makes a free strike against the target, breaks off part of their stinger in the target, and shifts up to half their speed. The target is bleeding until they remove the stinger fragment as a free maneuver, taking 6 damage in the process.')
+							FactoryLogic.createAbilitySectionText('The praetorian makes a free strike against the target, breaks off part of their stinger in the target, and shifts up to half their speed. The target is bleeding until they remove the stinger fragment as a безкоштовний маневр, taking 6 damage in the process.')
 						]
 					})
 				}),
@@ -1831,7 +1831,7 @@ A host creature implanted by a soulraker hivequeen’s **Stinging Ovipositor** h
 
 After 1d3 + 1 weeks of gestation, the handmaiden fully forms inside the host. The handmaiden always moves with and occupies the same space as the host and can’t be separated from them. While totally within the creature, the handmaiden doesn’t have line of effect to the host or targets outside the host and vice versa.
 
-As a maneuver, the handmaiden can emerge from the host as a horrifying tower of flesh and bone that remains attached to the host’s insides. While emerged, the handmaiden can use a move action to make the host move up to their speed and has access to the host’s signature abilities, using the host’s modifiers for any power rolls. The handmaiden has the same Stability as the host. If the handmaiden or host is force moved, the other moves with them. While emerged, the handmaiden can be targeted independently of the host. The handmaiden can retreat totally within the host’s body as a maneuver. If the handmaiden dies, their remains separate from the host.
+As a маневр, the handmaiden can emerge from the host as a horrifying tower of flesh and bone that remains attached to the host’s insides. While emerged, the handmaiden can use a дія руху to make the host move up to their speed and has access to the host’s signature abilities, using the host’s modifiers for any power rolls. The handmaiden has the same Stability as the host. If the handmaiden or host is force moved, the other moves with them. While emerged, the handmaiden can be targeted independently of the host. The handmaiden can retreat totally within the host’s body as a маневр. If the handmaiden dies, their remains separate from the host.
 
 The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a cure that removes a handmaiden from a host. The cure kills the handmaiden when consumed.`
 				}),
@@ -1847,9 +1847,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '8 corruption damage',
-								tier2: '11 corruption damage',
-								tier3: '13 corruption damage; M<4 frightened (save ends)'
+								tier1: '8 шкоди від скверни',
+								tier2: '11 шкоди від скверни',
+								tier3: '13 шкоди від скверни; С<4 зляканий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the handmaiden was totally within their host’s body at the start of this turn, the ability deals an extra 8 damage.')
 						]
@@ -1892,9 +1892,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '14 poison damage; M<3 bleeding (save ends)',
-								tier2: '19 poison damage; M<4 bleeding (save ends)',
-								tier3: '23 poison damage; M<5 the target is implanted'
+								tier1: '14 отруйної шкоди; С<3 кровотеча (рят. кидок закінчує)',
+								tier2: '19 отруйної шкоди; С<4 кровотеча (рят. кидок закінчує)',
+								tier3: '23 отруйної шкоди; С<5 ціль is implanted'
 							})),
 							FactoryLogic.createAbilitySectionText('An implanted target has a **soulraker handmaiden** parasite gestating in them (see the handmaiden’s **Implanted Parasite** trait).')
 						]
@@ -1971,9 +1971,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'Push 3; I<3 dazed (save ends)',
-								tier2: 'Push 3; I<4 dazed (save ends)',
-								tier3: '11 sonic damage; push 3; I<5 dazed (save ends)'
+								tier1: 'Відштовхнути на 3; І<3 приголомшений (рят. кидок закінчує)',
+								tier2: 'Відштовхнути на 3; І<4 приголомшений (рят. кидок закінчує)',
+								tier3: '11 звукової шкоди; відштовхнути на 3; І<5 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The hivequeen shifts up to her speed.')
 						]
@@ -1990,9 +1990,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 poison damage; M<3 bleeding (save ends)',
-								tier2: '11 poison damage; M<4 bleeding (save ends)',
-								tier3: '14 poison damage; M<5 bleeding (save ends)'
+								tier1: '7 отруйної шкоди; С<3 кровотеча (рят. кидок закінчує)',
+								tier2: '11 отруйної шкоди; С<4 кровотеча (рят. кидок закінчує)',
+								tier3: '14 отруйної шкоди; С<5 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -2026,9 +2026,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '5 fire damage',
-								tier2: '8 fire damage',
-								tier3: '10 fire damage; this damage ignores immunity'
+								tier1: '5 вогняної шкоди',
+								tier2: '8 вогняної шкоди',
+								tier3: '10 вогняної шкоди; this шкоди ignores immunity'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores concealment. A winded target takes an extra 5 damage.')
 						]
@@ -2067,9 +2067,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '9 damage'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The tyburaki can make a free strike against each enemy adjacent to the target.')
 						]
@@ -2118,9 +2118,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '5 damage; push 2',
-								tier2: '8 damage; push 4',
-								tier3: '10 damage; push 6'
+								tier1: '5 шкоди; відштовхнути на 2',
+								tier2: '8 шкоди; відштовхнути на 4',
+								tier3: '10 шкоди; відштовхнути на 6'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability is used as part of a charge for which the unguloid moves 2 squares or more, it deals an extra 10 damage.')
 						]
@@ -2163,9 +2163,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '9 psychic damage; R<3 restrained (save ends)',
-								tier2: '12 psychic damage; R<4 restrained (save ends)',
-								tier3: '14 psychic damage; R<5 restrained (save ends)'
+								tier1: '9 психічної шкоди; Р<3 скутий (рят. кидок закінчує)',
+								tier2: '12 психічної шкоди; Р<4 скутий (рят. кидок закінчує)',
+								tier3: '14 психічної шкоди; Р<5 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The izyak can slide any target restrained this way up to 3 squares.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -2187,11 +2187,11 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '4 psychic damage; I<3 dazed (save ends)',
-								tier2: '7 psychic damage; I<4 dazed (save ends)',
-								tier3: '9 psychic damage; I<5 dazed (save ends)'
+								tier1: '4 психічної шкоди; І<3 приголомшений (рят. кидок закінчує)',
+								tier2: '7 психічної шкоди; І<4 приголомшений (рят. кидок закінчує)',
+								tier3: '9 психічної шкоди; І<5 приголомшений (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('Any target dazed this way must use a move action to move their speed toward the izyak on their next turn.'),
+							FactoryLogic.createAbilitySectionText('Any target dazed this way must use a дія руху to move their speed toward the izyak on their next turn.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								effect: 'The area increases to a 6 cube.'
@@ -2241,9 +2241,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '9 damage',
-								tier2: '12 damage',
-								tier3: '14 damage; I<5 the target is slowed and weakened (save ends)'
+								tier1: '9 шкоди',
+								tier2: '12 шкоди',
+								tier3: '14 шкоди; І<5 ціль is сповільнений і ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('**Special:** The effects of being slowed and weakened this way can’t be ignored.')
 						]
@@ -2261,9 +2261,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '4 psychic damage; P<3 bleeding (save ends)',
-								tier2: '7 psychic damage; P<4 bleeding (save ends)',
-								tier3: '9 psychic damage; P<5 bleeding (save ends)'
+								tier1: '4 психічної шкоди; П<3 кровотеча (рят. кидок закінчує)',
+								tier2: '7 психічної шкоди; П<4 кровотеча (рят. кидок закінчує)',
+								tier3: '9 психічної шкоди; П<5 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Any creature who is bleeding from this ability loses 2d6 Stamina instead of 1d6.')
 						]
@@ -2316,9 +2316,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 corruption damage; R<4 weakened (save ends)',
-								tier2: '20 corruption damage; R<5 weakened (save ends)',
-								tier3: '24 corruption damage; R<6 weakened (save ends)'
+								tier1: '15 шкоди від скверни; Р<4 ослаблений (рят. кидок закінчує)',
+								tier2: '20 шкоди від скверни; Р<5 ослаблений (рят. кидок закінчує)',
+								tier3: '24 шкоди від скверни; Р<6 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -2339,9 +2339,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 psychic damage; P<4 dazed (save ends)',
-								tier2: '20 psychic damage; P<5 dazed (save ends)',
-								tier3: '24 psychic damage; P<6 dazed (save ends)'
+								tier1: '15 психічної шкоди; П<4 приголомшений (рят. кидок закінчує)',
+								tier2: '20 психічної шкоди; П<5 приголомшений (рят. кидок закінчує)',
+								tier3: '24 психічної шкоди; П<6 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -2416,9 +2416,9 @@ The Find a Cure downtime project in *Draw Steel: Heroes* can be used to find a c
 							FactoryLogic.createAbilitySectionText('Aurumvas summons treasures from his vaults into the area, then causes them to explode.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '10 fire damage; push 1',
-								tier2: '15 fire damage; push 2',
-								tier3: '19 fire damage; push 3'
+								tier1: '10 вогняної шкоди; відштовхнути на 1',
+								tier2: '15 вогняної шкоди; відштовхнути на 2',
+								tier3: '19 вогняної шкоди; відштовхнути на 3'
 							}))
 						]
 					})

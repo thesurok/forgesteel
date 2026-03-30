@@ -60,7 +60,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The werewolf takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The werewolf takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -69,7 +69,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 			cost: 10,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				'Until the end of the encounter, the encounter map turns to night and the moon appears impossibly huge in the sky. The werewolf can take an additional move action or maneuver on each of their turns while they have line of effect to the moon. Any creature who ends their turn with line of effect to the moon with 1 or more rage gains 2 rage'
+				'Until the end of the encounter, the encounter map turns to night and the moon appears impossibly huge in the sky. The werewolf can take an additional дія руху or маневр on each of their turns while they have line of effect to the moon. Any creature who ends their turn with line of effect to the moon with 1 or more rage gains 2 rage'
 			]
 		})
 	],
@@ -114,14 +114,14 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; the target gains 2 rage',
-								tier2: '13 damage; the target gains 4 rage',
-								tier3: '16 damage; the target gains 5 rage'
+								tier1: '9 шкоди; ціль отримує 2 rage',
+								tier2: '13 шкоди; ціль отримує 4 rage',
+								tier3: '16 шкоди; ціль отримує 5 rage'
 							})),
 							FactoryLogic.createAbilitySectionText('A creature afflicted with lycanthropy gains 2 rage at the end of each of their turns whenever they’re in combat. Their rage doesn’t disappear after finishing a respite, and they must complete the Find a Cure downtime project to end this effect.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'If the target has P<0, they are afflicted with lycanthropy. Each time the target is unaffected by the potency effect, the potency increases by 1 the next time the werewolf uses the ability against the same target.'
+								effect: 'If the target has П<0, they are afflicted with lycanthropy. Each time the target is unaffected by the potency effect, the potency increases by 1 the next time the werewolf uses the ability against the same target.'
 							})
 						]
 					})
@@ -137,9 +137,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; M<1 bleeding (save ends)',
-								tier2: '11 damage; the target gains 1 rage; M<2 bleeding (save ends)',
-								tier3: '14 damage; the target gains 3 rage; M<3 bleeding (save ends)'
+								tier1: '8 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier2: '11 шкоди; ціль отримує 1 rage; С<2 кровотеча (рят. кидок закінчує)',
+								tier3: '14 шкоди; ціль отримує 3 rage; С<3 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -156,9 +156,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; M<1 bleeding (save ends)',
-								tier2: '11 damage; the target gains 1 rage; M<2 bleeding (save ends)',
-								tier3: '14 damage; the target gains 3 rage; M<3 bleeding (save ends)'
+								tier1: '8 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier2: '11 шкоди; ціль отримує 1 rage; С<2 кровотеча (рят. кидок закінчує)',
+								tier3: '14 шкоди; ціль отримує 3 rage; С<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The werewolf shifts up to their speed before using this ability.')
 						]
@@ -172,7 +172,7 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee free strike. If the target of the free strike has M<2, they are knocked prone.')
+							FactoryLogic.createAbilitySectionText('The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee free strike. If the target of the free strike has С<2, they are knocked prone.')
 						]
 					})
 				}),
@@ -206,9 +206,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition test**'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Intuition,
-								tier1: 'The target must move their speed in a straight line away from the werewolf; frightened (save ends)',
-								tier2: 'Frightened (EoT)',
-								tier3: 'no effect'
+								tier1: 'Ціль must move their speed in a straight line away from the werewolf; зляканий (рят. кидок закінчує)',
+								tier2: 'зляканий (до кінця ходу)',
+								tier3: 'без ефекту'
 							})),
 							FactoryLogic.createAbilitySectionText('Any enemy in the encounter who has 1 or more rage gains 4 rage and howls along with the werewolf.')
 						]
@@ -237,9 +237,9 @@ Laypeople don’t have the luxury of a legacy, nor do they have councils that ca
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage; the target gains 2 rage; M<1 bleeding (save ends)',
-								tier2: '8 damage; the target gains 4 rage; M<2 bleeding (save ends)',
-								tier3: '11 damage; the target gains 8 rage; M<3 bleeding (save ends)'
+								tier1: '5 шкоди; ціль отримує 2 rage; С<1 кровотеча (рят. кидок закінчує)',
+								tier2: '8 шкоди; ціль отримує 4 rage; С<2 кровотеча (рят. кидок закінчує)',
+								tier3: '11 шкоди; ціль отримує 8 rage; С<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The werewolf shifts up to their speed before and after using this ability.')
 						]

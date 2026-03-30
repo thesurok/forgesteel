@@ -473,10 +473,10 @@ const KitSheet = (props: KitProps) => {
 	return (
 		<>
 			<HeaderText level={1}>
-				{props.kit.name || 'Unnamed Kit'}
+				{props.kit.name || 'Неназваний набір'}
 			</HeaderText>
 			<Markdown text={props.kit.description} />
-			{props.kit.armor.length > 0 ? <Field label='Armor' value={props.kit.armor.join(', ')} /> : null}
+			{props.kit.armor.length > 0 ? <Field label='Броня' value={props.kit.armor.join(', ')} /> : null}
 			{props.kit.weapon.length > 0 ? <Field label='Зброя' value={props.kit.weapon.join(', ')} /> : null}
 			{props.kit.stamina > 0 ? <Field label='Витривалість' value={`+${props.kit.stamina}`} /> : null}
 			{props.kit.speed > 0 ? <Field label='Швидкість' value={`+${props.kit.speed}`} /> : null}
@@ -606,7 +606,7 @@ const MonsterSheet = (props: MonsterProps) => {
 				<Field orientation='vertical' label='Швидкість' value={speedStr} />
 				<Field orientation='vertical' label='Витривалість' value={MonsterLogic.getStaminaDescription(props.monster)} />
 				<Field orientation='vertical' label='Непорушність' value={MonsterLogic.getStability(props.monster)} />
-				<Field orientation='vertical' label='Вільний Удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
+				<Field orientation='vertical' label='Вільний удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
 			</StatsRow>
 			<StatsRow>
 				{
@@ -641,7 +641,7 @@ const MonsterSheet = (props: MonsterProps) => {
 			}
 			{
 				props.monster.role.organization === MonsterOrganizationType.Minion ?
-					<Field label='Minion' value='On their turn, each minion can take only a move action and a main action, a move action and a maneuver, or two move actions.' />
+					<Field label='Minion' value='On their turn, each minion can take only a дія руху and a основна дія, a дія руху and a маневр, or two дії руху.' />
 					: null
 			}
 			{

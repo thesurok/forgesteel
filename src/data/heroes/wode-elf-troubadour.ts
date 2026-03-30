@@ -18,14 +18,14 @@ export const wodeElfTroubadour = {
 				id: 'wode-elf-feature-1',
 				name: 'Wode Elf Glamor',
 				description: 'You can magically alter your appearance to better blend in with your surroundings. You gain an edge on tests made to hide and sneak, and tests made to search for you while you are hidden take a bane.',
-				type: 'Text',
+				type: 'Текст',
 				data: null
 			},
 			{
 				id: 'wode-elf-feature-2',
 				name: 'Wode Elf Traits',
 				description: '',
-				type: 'Choice',
+				type: 'Вибір',
 				data: {
 					options: [
 						{
@@ -33,7 +33,7 @@ export const wodeElfTroubadour = {
 								id: 'wode-elf-feature-2-1',
 								name: 'Forest Walk',
 								description: 'You can shift into and while within difficult terrain.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -43,7 +43,7 @@ export const wodeElfTroubadour = {
 								id: 'wode-elf-feature-2-2',
 								name: 'Revisit Memory',
 								description: 'Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -65,7 +65,7 @@ export const wodeElfTroubadour = {
 								id: 'wode-elf-feature-2-4',
 								name: 'Otherworldly Grace',
 								description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 2
@@ -75,14 +75,14 @@ export const wodeElfTroubadour = {
 								id: 'wode-elf-feature-2-5',
 								name: 'The Wode Defends',
 								description: 'Thorny vines erupt into existence and attempt to bind your foe.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'wode-elf-feature-2-5',
 										name: 'The Wode Defends',
 										description: 'Thorny vines erupt into existence and attempt to bind your foe.',
 										type: {
-											usage: 'Main Action',
+											usage: 'Основна дія',
 											free: false,
 											trigger: '',
 											time: '',
@@ -140,8 +140,8 @@ export const wodeElfTroubadour = {
 							feature: {
 								id: 'wode-elf-feature-2-6',
 								name: 'Quick and Brutal',
-								description: 'Whenever you score a critical hit, you can take an additional main action and an additional move action instead of just a main action.',
-								type: 'Text',
+								description: 'Whenever you score a critical hit, you can take an additional основна дія and an additional дія руху instead of just a основна дія.',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -153,7 +153,7 @@ export const wodeElfTroubadour = {
 							id: 'wode-elf-feature-2-4',
 							name: 'Otherworldly Grace',
 							description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
-							type: 'Text',
+							type: 'Текст',
 							data: null
 						},
 						{
@@ -175,12 +175,12 @@ export const wodeElfTroubadour = {
 		id: 'culture-bespoke-culture',
 		name: 'Bespoke Culture',
 		description: 'Choose any Environment, Organization, and Upbringing.',
-		type: 'Bespoke',
+		type: 'Авторська',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,
@@ -192,7 +192,7 @@ export const wodeElfTroubadour = {
 			id: 'env-wilderness',
 			name: 'Wilderness',
 			description: 'A wilderness culture doesn’t try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of orc mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -201,7 +201,7 @@ export const wodeElfTroubadour = {
 				],
 				count: 1,
 				selected: [
-					'Gymnastics'
+					'Гімнастика'
 				]
 			}
 		},
@@ -209,7 +209,7 @@ export const wodeElfTroubadour = {
 			id: 'org-bureaucratic',
 			name: 'Bureaucratic',
 			description: 'Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures. Those who thrive in bureaucratic cultures don’t simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -226,18 +226,18 @@ export const wodeElfTroubadour = {
 			id: 'up-creative',
 			name: 'Creative',
 			description: 'A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [
-					'Music',
-					'Perform'
+					'Музика',
+					'Виступ'
 				],
 				listOptions: [
 					'Ремесло'
 				],
 				count: 1,
 				selected: [
-					'Music'
+					'Музика'
 				]
 			}
 		}
@@ -267,7 +267,7 @@ export const wodeElfTroubadour = {
 						id: '3G7nEekJVbHgJJNl',
 						name: 'Витривалість',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 18,
@@ -281,7 +281,7 @@ export const wodeElfTroubadour = {
 						id: 'drlPj8moDZL1c8D1',
 						name: 'Recoveries',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Recoveries',
 							value: 8,
@@ -295,7 +295,7 @@ export const wodeElfTroubadour = {
 						id: 'UH5m1URtvSjZqfQb',
 						name: 'Interpersonal Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -303,7 +303,7 @@ export const wodeElfTroubadour = {
 							],
 							count: 1,
 							selected: [
-								'Brag'
+								'Вихваляння'
 							]
 						}
 					},
@@ -311,7 +311,7 @@ export const wodeElfTroubadour = {
 						id: 'GjD2ZwdbvEIZOKQV',
 						name: 'Interpersonal Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -319,8 +319,8 @@ export const wodeElfTroubadour = {
 							],
 							count: 2,
 							selected: [
-								'Flirt',
-								'Persuade'
+								'Флірт',
+								'Переконання'
 							]
 						}
 					},
@@ -328,7 +328,7 @@ export const wodeElfTroubadour = {
 						id: 'WpHiobCwPhxC5q2g',
 						name: 'Intrigue / Lore Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -345,7 +345,7 @@ export const wodeElfTroubadour = {
 						id: 'tS1DEkc8ZWqFRIxE',
 						name: 'Drama',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -397,10 +397,10 @@ export const wodeElfTroubadour = {
 									description: 'If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the Swashbuckler kit. This is a great kit for heroes who want to be master duelists.',
 									type: '',
 									armor: [
-										'Light Armor'
+										'Легка броня'
 									],
 									weapon: [
-										'Medium Weapon'
+										'Середня зброя'
 									],
 									stamina: 3,
 									speed: 3,
@@ -419,14 +419,14 @@ export const wodeElfTroubadour = {
 											id: 'kit-swashbuckler-signature',
 											name: 'Fancy Footwork',
 											description: 'All combat is a dance - and you\'ll be the one leading.',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'kit-swashbuckler-signature',
 													name: 'Fancy Footwork',
 													description: 'All combat is a dance - and you\'ll be the one leading.',
 													type: {
-														usage: 'Main Action',
+														usage: 'Основна дія',
 														free: false,
 														trigger: '',
 														time: '',
@@ -467,7 +467,7 @@ export const wodeElfTroubadour = {
 															}
 														},
 														{
-															type: 'text',
+															type: 'Текст',
 															text: 'You can shift into any square the target leaves after you push them'
 														}
 													],
@@ -491,28 +491,28 @@ export const wodeElfTroubadour = {
 						id: 'q9DC0wXzaL4f1EeU',
 						name: 'Scene Partner',
 						description: 'Whenever you obtain a success on a test to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC’s interest by 1, you instead increase their interest by 2 (to a maximum of 5).\n\nYou can have a number of bonds active equal to your level. When you form a bond with a new NPC that would exceed the limit, you must choose which of your active bonds to lose.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'MTcRnLoVfzQkQw7T',
 						name: 'Routines',
 						description: 'You enter every battle with a set of performance abilities at the ready. Performances are magical presentations (such as songs, dances, poems, or gymnastic feats) that your allies can participate in. These abilities have the Performance keyword. At the start of each combat round, as long as you are not dazed, dead, or surprised, you can either choose a new performance or maintain your current performance (no action required). Your performance lasts until you are unable to maintain it or until the end of the encounter.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'DY5KgVsjM9G2b1eP',
 						name: 'Choreography',
 						description: 'Taps, kicks, steps. It’s all “choreography.”',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'DY5KgVsjM9G2b1eP',
 								name: 'Choreography',
 								description: 'Taps, kicks, steps. It’s all “choreography.”',
 								type: {
-									usage: 'No Action',
+									usage: 'Без дії',
 									free: false,
 									trigger: '',
 									time: '',
@@ -522,7 +522,7 @@ export const wodeElfTroubadour = {
 								keywords: [
 									'Area',
 									'Магія',
-									'Performance'
+									'Виступ'
 								],
 								distance: [
 									{
@@ -540,7 +540,7 @@ export const wodeElfTroubadour = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'While this performance is active, each target who starts their turn in the area gains a +2 bonus to speed until the end of their turn. '
 									}
 								],
@@ -559,14 +559,14 @@ export const wodeElfTroubadour = {
 						id: 'uqp9td9gJ5c4tKKQ',
 						name: 'Revitalizing Limerick',
 						description: 'There once was a man from Capital …',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'uqp9td9gJ5c4tKKQ',
 								name: 'Revitalizing Limerick',
 								description: 'There once was a man from Capital …',
 								type: {
-									usage: 'No Action',
+									usage: 'Без дії',
 									free: false,
 									trigger: '',
 									time: '',
@@ -576,7 +576,7 @@ export const wodeElfTroubadour = {
 								keywords: [
 									'Area',
 									'Магія',
-									'Performance'
+									'Виступ'
 								],
 								distance: [
 									{
@@ -594,7 +594,7 @@ export const wodeElfTroubadour = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score. Each chosen target can spend a Recovery.'
 									}
 								],
@@ -613,7 +613,7 @@ export const wodeElfTroubadour = {
 						id: 'JEPrmTnFwNbi7kWO',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 'signature',
 							source: {
@@ -633,7 +633,7 @@ export const wodeElfTroubadour = {
 						id: 'cCfz5o1dUmzOYVPL',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 3,
 							source: {
@@ -653,7 +653,7 @@ export const wodeElfTroubadour = {
 						id: 'smLIhr6BGJPZscJG',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 5,
 							source: {
@@ -678,14 +678,14 @@ export const wodeElfTroubadour = {
 						id: 'TzNcWWXAnI5bvPk9',
 						name: 'Appeal to the Muses',
 						description: 'You can give a rousing speech, invoke your inspirations, or lift your fellows’ spirits, appealing to the muses to heighten a battle’s drama. However, irony is eager to hand your fortune to the villain to achieve the same end.\n\nBefore you roll to gain drama at the start of your turn, you can make your appeal (no action required). If you do, your roll gains the following\nadditional effects:\n* If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice.\n* If the roll is a 2, you gain 1 Heroic Resource, which you can keep or give to an ally within the distance of your active performance. The Director gains 1 Malice.\n* If the roll is a 3, you gain 2 of a Heroic Resource, which you can distribute among yourself and any allies within the distance of your active performance.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'WagqmAOErEbwOMUA',
 						name: 'Invocation',
 						description: 'You have a specific manner that helps define your presence on the battlefield. Choose one of the following features.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
@@ -693,14 +693,14 @@ export const wodeElfTroubadour = {
 										id: 'Ojd2syAahwIuMZ7E',
 										name: 'Allow Me to Introduce Tonight’s Players',
 										description: '',
-										type: 'Ability',
+										type: 'Здібність',
 										data: {
 											ability: {
 												id: 'Ojd2syAahwIuMZ7E',
 												name: 'Allow Me to Introduce Tonight’s Players',
 												description: '',
 												type: {
-													usage: 'Main Action',
+													usage: 'Основна дія',
 													free: false,
 													trigger: '',
 													time: '',
@@ -724,8 +724,8 @@ export const wodeElfTroubadour = {
 												minLevel: 1,
 												sections: [
 													{
-														type: 'text',
-														text: 'Whenever you take the first turn in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can shift up to their speed, and ability rolls made against them have a double bane until the end of the combat round. Additionally, any surprised enemy is no longer surprised.'
+														type: 'Текст',
+														text: 'Whenever you take the first turn in a combat encounter, you can use a основна дія to introduce yourself and your allies to your opponents. Each ally can shift up to their speed, and ability rolls made against them have a double bane until the end of the combat round. Additionally, any surprised enemy is no longer surprised.'
 													}
 												],
 												preEffect: '',
@@ -746,7 +746,7 @@ export const wodeElfTroubadour = {
 										id: '3TpougOk43FTEYlT',
 										name: 'Formal Introductions',
 										description: 'As a respite activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.\n\nThe Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional hero tokens. These hero tokens disappear at the end of the encounter.',
-										type: 'Text',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -756,7 +756,7 @@ export const wodeElfTroubadour = {
 										id: 'vAsAdX1lzAwxKC0z',
 										name: 'My Reputation Precedes Me',
 										description: 'You can invoke your reputation at the start of a social interaction with one or more NPCs who haven’t met you before, automatically creating a bond with one of those NPCs from that group as if using your Scene Partner feature. This bond counts against the limit on active bonds from your Scene Partner feature. While the bond is active, all heroes present treat their Renown as 2 higher than usual for the purpose of entering into a negotiation with the bonded NPC.\n\nThe Director can award the heroes 1 hero token to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a bane on tests made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your Scene Partner feature to find allies within the group.',
-										type: 'Text',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -770,7 +770,7 @@ export const wodeElfTroubadour = {
 						id: 'tknnoxNMdhRdiF1e',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -790,7 +790,7 @@ export const wodeElfTroubadour = {
 						id: 'yoKyUfQEMwhyC4Ze',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 7,
 							source: {
@@ -813,7 +813,7 @@ export const wodeElfTroubadour = {
 						id: 'bEgiUgVeMGaONxTn',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -823,7 +823,7 @@ export const wodeElfTroubadour = {
 						id: 'N00Uu7tYlbZh5mLR',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -833,7 +833,7 @@ export const wodeElfTroubadour = {
 						id: 'eMWbssNB1OSeIFmj',
 						name: 'Melodrama',
 						description: '',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
@@ -841,7 +841,7 @@ export const wodeElfTroubadour = {
 										id: 'bPZ0jgAHVi08ZX2X',
 										name: 'Melodrama #1',
 										description: '',
-										type: 'Heroic Resource Gain',
+										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
 											trigger: 'Whenever a creature rolls a natural 2 on a power roll.',
@@ -856,7 +856,7 @@ export const wodeElfTroubadour = {
 										id: 'Jlp0a0yANrSIoeXp',
 										name: 'Melodrama #2',
 										description: '',
-										type: 'Heroic Resource Gain',
+										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
 											trigger: 'The first time the Director deals damage to a hero using a Villain action or an ability that costs Malice.',
@@ -871,7 +871,7 @@ export const wodeElfTroubadour = {
 										id: '05FGfz1LetwQOlGm',
 										name: 'Melodrama #3',
 										description: '',
-										type: 'Heroic Resource Gain',
+										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
 											trigger: 'The first time a hero unwillingly falls 5 or more squares.',
@@ -886,7 +886,7 @@ export const wodeElfTroubadour = {
 										id: 'bnEzQSbTNyay2M51',
 										name: 'Melodrama #4',
 										description: '',
-										type: 'Heroic Resource Gain',
+										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
 											trigger: 'The first time a hero deals damage with 3 surges.',
@@ -901,7 +901,7 @@ export const wodeElfTroubadour = {
 										id: 'lbGOgNoNt9SsiBDB',
 										name: 'Melodrama #5',
 										description: '',
-										type: 'Heroic Resource Gain',
+										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
 											trigger: 'Whenever a hero spends their last Recovery.',
@@ -916,7 +916,7 @@ export const wodeElfTroubadour = {
 										id: 'AOgAXA0Z2YZWf0Be',
 										name: 'Melodrama Alternative',
 										description: 'You can forgo choosing a new event to choose one event you already have (including an event gained with this feature). Whenever the chosen event grants you drama, you gain 1 additional drama.',
-										type: 'Text',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -930,7 +930,7 @@ export const wodeElfTroubadour = {
 						id: 'c8wilO6exppZ8lk0',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -948,7 +948,7 @@ export const wodeElfTroubadour = {
 						id: 'pBD0Fhn5vO1A26aB',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -966,7 +966,7 @@ export const wodeElfTroubadour = {
 						id: 'faVh7riGGaN0uOHR',
 						name: 'Zeitgeist',
 						description: 'You always have your ear to the ground, your finger on the pulse. When you start or finish a respite, choose one of the following effects.\n### Foreshadowing\n\nYou can ask the Director for two clues regarding an upcoming encounter or negotiation. One of the clues can be false.\n\n### Hear Ye, Hear Ye!\n\nBy bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a Presence test:\n\n| Roll    | Effect                                                                                                                                                                                                                                        |\n|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| ≤ 11    | Your information reaches no one.                                                                                                                                                                                                              |\n| 12 - 16 | Your information reaches the nearest populated area of town size or larger. You and each ally present when you make the test gain an edge on Presence tests in that area until one of you spends a Recovery.                                  |\n| ≥ 17    | Your information reaches the nearest populated area of town size or larger, plus the next closest such population. You and allies present for your test gain an edge on Presence tests made in those areas until you start your next respite. |\n\n### Latest Goss\n\nYou can ask the Director for three rumors regarding the area you’re in or an area you plan on entering before your next respite. One of the rumors can be false.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -978,7 +978,7 @@ export const wodeElfTroubadour = {
 						id: 'ExlOitsyzbnBbNA2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 9,
 							source: {
@@ -1001,7 +1001,7 @@ export const wodeElfTroubadour = {
 						id: 'ywf7fUdThUpCdF6J',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1016,14 +1016,14 @@ export const wodeElfTroubadour = {
 						id: 'KFi7rVE3i9lrpXic',
 						name: 'Spotlight',
 						description: 'The audience is watching, so you’d better give them a show.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'KFi7rVE3i9lrpXic',
 								name: 'Spotlight',
 								description: 'The audience is watching, so you’d better give them a show.',
 								type: {
-									usage: 'No Action',
+									usage: 'Без дії',
 									free: false,
 									trigger: '',
 									time: '',
@@ -1033,7 +1033,7 @@ export const wodeElfTroubadour = {
 								keywords: [
 									'Area',
 									'Магія',
-									'Performance'
+									'Виступ'
 								],
 								distance: [
 									{
@@ -1051,7 +1051,7 @@ export const wodeElfTroubadour = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'While this performance is active, each target who starts their turn in the area gains 1 of their Heroic Resource. This Heroic Resource disappears at the end of the target’s turn if they don’t spend it.'
 									}
 								],
@@ -1075,7 +1075,7 @@ export const wodeElfTroubadour = {
 						id: 'grnE5hFyVyLylxC2',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1085,7 +1085,7 @@ export const wodeElfTroubadour = {
 						id: 'LNpO0wUO8Eevov6c',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1095,7 +1095,7 @@ export const wodeElfTroubadour = {
 						id: 'JszVRV1fs7lyz7yF',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1105,7 +1105,7 @@ export const wodeElfTroubadour = {
 						id: 'u8XAyI9vpwIPsJXi',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1115,7 +1115,7 @@ export const wodeElfTroubadour = {
 						id: 'cuvMsaNuv1KvGvUF',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1125,14 +1125,14 @@ export const wodeElfTroubadour = {
 						id: 'HRzXpQyzYdOU4f3r',
 						name: 'Equal Billing',
 						description: 'You can use your Scene Partner feature to form a bond with one willing hero instead of an NPC you interact with using a test. If you bond with another hero, you lose your existing bond with a hero.\n\nAdditionally, you and creatures you are bonded with gain a +1 bonus to saving throws. Whenever you or a bonded creature succeeds on a saving throw, you and each creature you are bonded with gains temporary Stamina equal to your level.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'JRIAGwr5xwIXZdG5',
 						name: 'A Muse’s Muse',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
 							trigger: 'Start of your turn',
@@ -1146,7 +1146,7 @@ export const wodeElfTroubadour = {
 						id: 'A7CsaTimMURrXg0M',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1169,7 +1169,7 @@ export const wodeElfTroubadour = {
 						id: 'rm84D6UDOw6SNSVm',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1187,7 +1187,7 @@ export const wodeElfTroubadour = {
 						id: 'wAOl8UZ3VTUdA67Z',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 11,
 							source: {
@@ -1209,8 +1209,8 @@ export const wodeElfTroubadour = {
 					{
 						id: 'b4oYpDkEydG3CTOD',
 						name: 'Roar of the Crowd',
-						description: 'You are empowered by your audience, near and far. You can’t be made frightened, and if you are prone, you can stand up as a free maneuver.\n\nAdditionally, whenever you spend a Recovery, you can forgo regaining Stamina to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains temporary Stamina equal to 10 + the number of active bonds from your Scene Partner feature + either your Victories or the number of players in your game (whichever is higher).',
-						type: 'Text',
+						description: 'You are empowered by your audience, near and far. You can’t be made frightened, and if you are prone, you can stand up as a безкоштовний маневр.\n\nAdditionally, whenever you spend a Recovery, you can forgo regaining Stamina to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains temporary Stamina equal to 10 + the number of active bonds from your Scene Partner feature + either your Victories or the number of players in your game (whichever is higher).',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -1222,7 +1222,7 @@ export const wodeElfTroubadour = {
 						id: 'GYcwgp374s2e3GiY',
 						name: 'Applause',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -1241,7 +1241,7 @@ export const wodeElfTroubadour = {
 						id: 'nkOnWwzyFh2QZOnV',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1251,7 +1251,7 @@ export const wodeElfTroubadour = {
 						id: 'KyTOfWVz1Htc6DAr',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1261,21 +1261,21 @@ export const wodeElfTroubadour = {
 						id: 'SvXvD5JZWWIMcMGv',
 						name: 'Dramaturgy',
 						description: 'You gain 1 additional drama or other Heroic Resource whenever you use your Appeal to the Muses feature. Additionally, your performances no longer have a distance, but can affect any target on the encounter map within your line of effect.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'kN2tUhuHAbfRxOM3',
 						name: 'Greatest of All Time',
 						description: 'Whenever you obtain a success on a test, each NPC within your line of effect has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an edge on their next test. These effects last until you start your next respite.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'MJlch8xy0BmtjEAz',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1290,7 +1290,7 @@ export const wodeElfTroubadour = {
 						id: 'gIVmDrETVg4F0eTC',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1313,7 +1313,7 @@ export const wodeElfTroubadour = {
 				name: 'Artful Flourish',
 				description: 'And they said practicing fencing was a waste!',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1347,13 +1347,13 @@ export const wodeElfTroubadour = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '2 damage',
-							tier2: '5 damage',
-							tier3: '7 damage'
+							tier1: '2 шкоди',
+							tier2: '5 шкоди',
+							tier3: '7 шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift up to 3 squares.'
 					},
 					{
@@ -1378,7 +1378,7 @@ export const wodeElfTroubadour = {
 				name: 'Cutting Sarcasm',
 				description: 'There you are, radiating your usual charisma.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1433,7 +1433,7 @@ export const wodeElfTroubadour = {
 				name: 'Instigator',
 				description: 'I didn’t do it! What?',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1473,7 +1473,7 @@ export const wodeElfTroubadour = {
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target is taunted by you or a willing ally adjacent to you until the end of the target’s next turn.'
 					}
 				],
@@ -1491,7 +1491,7 @@ export const wodeElfTroubadour = {
 				name: 'Witty Banter',
 				description: 'A lyrical (and physical) jab insults an enemy and inspires an ally.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1540,7 +1540,7 @@ export const wodeElfTroubadour = {
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'One ally within 10 squares of you can end one effect on them that is ended by a saving throw or that ends at the end of their turn.'
 					},
 					{
@@ -1565,7 +1565,7 @@ export const wodeElfTroubadour = {
 				name: 'Harsh Critic',
 				description: 'Just one bad review will ruin their day.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1614,7 +1614,7 @@ export const wodeElfTroubadour = {
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The first time the target uses an ability before the start of your next turn, any effects from the ability’s tier outcomes other than damage are negated for all targets. Ability effects that always happen regardless of the power roll work as usual. '
 					}
 				],
@@ -1632,7 +1632,7 @@ export const wodeElfTroubadour = {
 				name: 'Hypnotic Overtones',
 				description: 'You produce an entrancing note that twists the senses in a spectacular fashion.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1692,7 +1692,7 @@ export const wodeElfTroubadour = {
 				name: 'Quick Rewrite',
 				description: 'You write something unexpected into the scene that hinders your enemy.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1732,7 +1732,7 @@ export const wodeElfTroubadour = {
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The area is difficult terrain for enemies.'
 					}
 				],
@@ -1750,7 +1750,7 @@ export const wodeElfTroubadour = {
 				name: 'Upstage',
 				description: 'As you bob and weave through the crowd, you can’t help but leave the audience wanting more.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1778,7 +1778,7 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You shift up to your speed. You make one power roll that targets each enemy you move adjacent to during this shift.'
 					},
 					{
@@ -1809,7 +1809,7 @@ export const wodeElfTroubadour = {
 				name: 'Dramatic Reversal',
 				description: 'Give the audience a surprise.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1842,9 +1842,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'The target can shift 1 square and make a free strike.',
-							tier2: 'The target can shift up to 2 squares and make a free strike that gains an edge.',
-							tier3: 'The target can shift up to 3 squares and make a free strike that gains an edge, then can spend a Recovery.'
+							tier1: 'Ціль може зміститися на 1 клітинку і зробити безкоштовний удар.',
+							tier2: 'Ціль може зміститися до 2 клітинок і зробити безкоштовний удар з перевагою.',
+							tier3: 'Ціль може зміститися до 3 клітинок і зробити безкоштовний удар з перевагою, а потім може витратити Відновлення.'
 						}
 					}
 				],
@@ -1862,7 +1862,7 @@ export const wodeElfTroubadour = {
 				name: 'Fake Your Death',
 				description: 'O happy dagger, this is thy sheath!',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1888,8 +1888,8 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: ' You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to speed and you ignore difficult terrain. The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.'
+						type: 'Текст',
+						text: ' You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to speed and you ignore difficult terrain. The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a основна дія or a маневр.'
 					}
 				],
 				preEffect: '',
@@ -1906,7 +1906,7 @@ export const wodeElfTroubadour = {
 				name: 'Flip the Script',
 				description: 'You try a different take on events, justifying the new locations everyone ended up in.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1933,7 +1933,7 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each target can teleport up to 5 squares. Any teleported target who was slowed is no longer slowed.'
 					}
 				],
@@ -1951,7 +1951,7 @@ export const wodeElfTroubadour = {
 				name: 'Method Acting',
 				description: 'They’re so hurt by your performance, you start to believe it yourself. ',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1985,13 +1985,13 @@ export const wodeElfTroubadour = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 + A damage; П < [слабкий], weakened (save ends)',
-							tier2: '10 + A damage; П < [слабкий], weakened (save ends)',
-							tier3: '14 + A damage; П < [слабкий], weakened (save ends)'
+							tier1: '6 + Л шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '10 + Л шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier3: '14 + Л шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can become bleeding (save ends) to deal an extra 5 corruption damage to the target.'
 					}
 				],
@@ -2009,7 +2009,7 @@ export const wodeElfTroubadour = {
 				name: 'Extensive Rewrites',
 				description: 'No, this isn’t right. That foe was over there!',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2042,13 +2042,13 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'Slide 3; П < [слабкий], this slide ignores the target’s stability',
-							tier2: 'Slide 5; П < [середній], this slide ignores the target’s stability',
-							tier3: 'Slide 7; П < [сильний], this slide ignores the target’s stability'
+							tier1: 'Зсунути на 3; П < [слабкий], цей зсув ігнорує стійкість цілі',
+							tier2: 'Зсунути на 5; П < [середній], цей зсув ігнорує стійкість цілі',
+							tier3: 'Зсунути на 7; П < [сильний], цей зсув ігнорує стійкість цілі'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Instead of sliding a target, you can swap their location with another target as long as each can fit into the other’s space. You can’t slide targets into other creatures or objects using this ability.'
 					}
 				],
@@ -2066,7 +2066,7 @@ export const wodeElfTroubadour = {
 				name: 'Infernal Gavotte',
 				description: 'A spicy performance lights a fire under your allies’ feet',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2101,13 +2101,13 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 fire damage; Л < [слабкий], weakened (save ends)',
-							tier2: '7 fire damage; Л < [середній], weakened (save ends)',
-							tier3: '10 fire damage; Л < [сильний], weakened (save ends)'
+							tier1: '5 вогняної шкоди; Л < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '7 вогняної шкоди; Л < [середній], ослаблений (рят. кидок закінчує)',
+							tier3: '10 вогняної шкоди; Л < [сильний], ослаблений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each ally in the area can shift up to 2 squares.'
 					}
 				],
@@ -2125,7 +2125,7 @@ export const wodeElfTroubadour = {
 				name: 'Star Solo',
 				description: 'Your performance travels and doesn’t stop moving until your audience is completely rocked.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2169,13 +2169,13 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '5 + П damage',
-							tier2: '8 + П damage; push 3',
-							tier3: '11 + П damage; push 5'
+							tier1: '5 + П шкоди',
+							tier2: '8 + П шкоди; відштовхнути на 3',
+							tier3: '11 + П шкоди; відштовхнути на 5'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can choose to have this ability deal sonic damage. Additionally, you can use this ability against the same target for the next 2 combat rounds without spending drama.'
 					}
 				],
@@ -2193,7 +2193,7 @@ export const wodeElfTroubadour = {
 				name: 'We Meet at Last',
 				description: 'You magically intertwine your fate with another creature—for better or worse.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2220,8 +2220,8 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: '\nUntil the end of the encounter, both you and the target can target each other with abilities even if you are beyond distance, with the distance of this ability replacing those abilities’ distances. The target can’t be force moved by an ability used beyond distance this way.\n\nAdditionally, once on each of your turns, you can use a free maneuver to communicate a motivating or dispiriting message to the target, either granting them 2 surges or forcing them to take a bane on the next ability roll they make before the start of your next turn.'
+						type: 'Текст',
+						text: '\nUntil the end of the encounter, both you and the target can target each other with abilities even if you are beyond distance, with the distance of this ability replacing those abilities’ distances. The target can’t be force moved by an ability used beyond distance this way.\n\nAdditionally, once on each of your turns, you can use a безкоштовний маневр to communicate a motivating or dispiriting message to the target, either granting them 2 surges or forcing them to take a bane on the next ability roll they make before the start of your next turn.'
 					}
 				],
 				preEffect: '',
@@ -2238,7 +2238,7 @@ export const wodeElfTroubadour = {
 				name: 'Action Hero',
 				description: 'You wield your weapon at blistering speed, leaving everyone around you fighting for their lives.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2272,13 +2272,13 @@ export const wodeElfTroubadour = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 damage',
-							tier2: '14 damage',
-							tier3: '20 damage'
+							tier1: '10 шкоди',
+							tier2: '14 шкоди',
+							tier3: '20 шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Unless you score a critical hit, this ability can’t reduce a non-minion target below 1 Stamina.'
 					}
 				],
@@ -2296,7 +2296,7 @@ export const wodeElfTroubadour = {
 				name: 'Continuity Error',
 				description: 'Your subject is written into two places at once.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2323,7 +2323,7 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target is split into two separate entities, one of which remains in the target’s space while the other appears in an unoccupied space of your choice within distance. If the target is a creature, this creates a new creature under the Director’s control. Each entity has half the original target’s Stamina, is weakened, and takes 1d6 corruption damage at the start of each of their turns. If either entity is reduced to 0 Stamina, the other entity persists as the original entity and this effect ends. The effect also ends if both entities occupy the same space, causing them to automatically merge and combine their current Stamina.'
 					}
 				],
@@ -2341,7 +2341,7 @@ export const wodeElfTroubadour = {
 				name: 'Love Song',
 				description: 'You play a small ditty that plants you inside your target’s heart.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2368,7 +2368,7 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target gains 20 temporary Stamina. Until the end of the encounter, whenever the target takes damage while you’re within distance, you can choose to take the damage instead of the target.'
 					}
 				],
@@ -2386,7 +2386,7 @@ export const wodeElfTroubadour = {
 				name: 'Patter Song',
 				description: 'Dazzle them with your fancy patter and they forget where they were.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2419,9 +2419,9 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: 'One ally within distance can take their turn immediately after yours.',
-							tier2: 'Two allies within distance can take their turns immediately after yours in any order.',
-							tier3: 'Three allies within distance can take their turns immediately after yours in any order. One of those allies can have already taken a turn this combat round.'
+							tier1: 'Один союзник у межах дистанції може зробити свій хід одразу після вашого.',
+							tier2: 'Двоє союзників у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку.',
+							tier3: 'Троє союзників у межах дистанції можуть зробити свої ходи одразу після вашого в будь-якому порядку. Один із цих союзників міг уже робити хід у цьому раунді бою.'
 						}
 					}
 				],
@@ -2439,7 +2439,7 @@ export const wodeElfTroubadour = {
 				name: 'Dramatic Reveal',
 				description: 'A little stage trickery, and where once stood a foe, now stands a friend!',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2465,8 +2465,8 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, whenever you reduce a creature to 0 Stamina using an ability, you can use a free triggered action to teleport an ally within distance of that ability into the creature’s space in a plume of rose petals. You or the teleported ally can then make a melee free strike.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, whenever you reduce a creature to 0 Stamina using an ability, you can use a безкоштовна тригерна дія to teleport an ally within distance of that ability into the creature’s space in a plume of rose petals. You or the teleported ally can then make a melee free strike.'
 					}
 				],
 				preEffect: '',
@@ -2483,7 +2483,7 @@ export const wodeElfTroubadour = {
 				name: 'Power Ballad',
 				description: 'A song for the brokenhearted wraps itself around the target and blossoms into a ward of thorns.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2510,8 +2510,8 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, whenever the target takes damage while winded, they can use a free triggered action to deal half the damage they took to the source of the damage.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, whenever the target takes damage while winded, they can use a безкоштовна тригерна дія to deal half the damage they took to the source of the damage.'
 					}
 				],
 				preEffect: '',
@@ -2528,7 +2528,7 @@ export const wodeElfTroubadour = {
 				name: 'Saved in the Edit',
 				description: 'You shout a word of power that allows you to rewrite reality to your whims.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2554,8 +2554,8 @@ export const wodeElfTroubadour = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, whenever you deal rolled damage to a creature or object, or enable a creature to spend a Recovery, you can use a free triggered action to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending Recoveries simultaneously, each target receives the same effect:\n* The target has damage weakness equal to your Presence score against any magic, psionic, or weapon ability.\n* The target has damage immunity equal to your Presence score.\n* The target has a bonus to stability and a penalty to speed equal to your Presence score.\n* The target has a bonus to speed and a penalty to stability equal to your Presence score.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, whenever you deal rolled damage to a creature or object, or enable a creature to spend a Recovery, you can use a безкоштовна тригерна дія to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending Recoveries simultaneously, each target receives the same effect:\n* The target has damage weakness equal to your Presence score against any magic, psionic, or weapon ability.\n* The target has damage immunity equal to your Presence score.\n* The target has a bonus to stability and a penalty to speed equal to your Presence score.\n* The target has a bonus to speed and a penalty to stability equal to your Presence score.'
 					}
 				],
 				preEffect: '',
@@ -2572,7 +2572,7 @@ export const wodeElfTroubadour = {
 				name: 'The Show Must Go On',
 				description: 'You shine a bright light on the players on the stage and compel them to finish the performance.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2606,13 +2606,13 @@ export const wodeElfTroubadour = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '6 damage; П < [слабкий], the target can’t willingly leave the area (EoT)',
-							tier2: '8 damage; П < [середній], the target can’t willingly leave the area (save ends)',
-							tier3: '12 damage; the target can’t willingly leave the area (EoT); if П < [сильний], they can’t willingly leave the area (save ends)'
+							tier1: '6 шкоди; П < [слабкий], ціль не може добровільно покинути зону (до кінця ходу)',
+							tier2: '8 шкоди; П < [середній], ціль не може добровільно покинути зону (рят. кидок закінчує)',
+							tier3: '12 шкоди; ціль не може добровільно покинути зону (до кінця ходу); якщо П < [сильний], вона не може добровільно покинути зону (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each ally within distance can’t obtain lower than a tier 2 outcome on the next test they make before the start of your next turn.'
 					}
 				],
@@ -2639,7 +2639,7 @@ export const wodeElfTroubadour = {
 								id: '63GSnAtLidKQThSw',
 								name: 'Interpersonal Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -2647,7 +2647,7 @@ export const wodeElfTroubadour = {
 									],
 									count: 1,
 									selected: [
-										'Brag'
+										'Вихваляння'
 									]
 								}
 							},
@@ -2655,14 +2655,14 @@ export const wodeElfTroubadour = {
 								id: 'VM5qLsp8pXpYt180',
 								name: 'Blocking',
 								description: 'No, no, no, you lose the audience that way. Try it like this …',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'VM5qLsp8pXpYt180',
 										name: 'Blocking',
 										description: 'No, no, no, you lose the audience that way. Try it like this …',
 										type: {
-											usage: 'No Action',
+											usage: 'Без дії',
 											free: false,
 											trigger: '',
 											time: '',
@@ -2672,7 +2672,7 @@ export const wodeElfTroubadour = {
 										keywords: [
 											'Area',
 											'Магія',
-											'Performance'
+											'Виступ'
 										],
 										distance: [
 											{
@@ -2690,7 +2690,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score and teleport those targets to unoccupied spaces in the area. A target can’t be teleported in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect. '
 											}
 										],
@@ -2709,14 +2709,14 @@ export const wodeElfTroubadour = {
 								id: 'WLhzen5TMIS87eap',
 								name: 'Dramatic Monologue',
 								description: 'It doesn’t need to make sense. Just say it with emotion.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'WLhzen5TMIS87eap',
 										name: 'Dramatic Monologue',
 										description: 'It doesn’t need to make sense. Just say it with emotion.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -2743,7 +2743,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: ' Choose one of the following effects:\n* You orate a rousing tale of victory. One ally within distance gains an edge on the next power roll they make before the start of your next turn.\n* You weave a tale of high-stakes heroics. One ally within distance gains 1 surge.\n* You insult a foe where they’re most vulnerable. One enemy within distance takes a bane on the next power roll they make before the end of their next turn.'
 											},
 											{
@@ -2769,14 +2769,14 @@ export const wodeElfTroubadour = {
 								id: 'MUMrI7zMhGiDF6an',
 								name: 'Turnabout Is Fair Play',
 								description: 'All’s fair in love and whatever.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'MUMrI7zMhGiDF6an',
 										name: 'Turnabout Is Fair Play',
 										description: 'All’s fair in love and whatever.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target makes an ability roll that has an edge, a double edge, a bane, or a double bane.',
 											time: '',
@@ -2802,7 +2802,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'An edge on the triggering roll becomes a bane, or a double edge becomes an edge. A bane becomes an edge, or a double bane becomes a bane.'
 											},
 											{
@@ -2833,7 +2833,7 @@ export const wodeElfTroubadour = {
 								id: 'NR3KiD1HgYdQ5KHv',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -2841,14 +2841,14 @@ export const wodeElfTroubadour = {
 												id: 'wbcpRLxbH1FXK30r',
 												name: 'Guest Star',
 												description: 'We offered them a percentage of the gross. So they’re working for free!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'wbcpRLxbH1FXK30r',
 														name: 'Guest Star',
 														description: 'We offered them a percentage of the gross. So they’re working for free!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -2875,7 +2875,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'A guest star appears to help you during the encounter: either a bystander within distance uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within distance. This guest star is controlled by you, has their own turn, and shares your characteristics. Their Stamina maximum is half yours. They have no abilities other than your melee and ranged free strikes. At the end of the encounter, or when the guest star is reduced to 0 Stamina, they retreat or revert to a bystander. The same bystander can’t be uplifted this way more than once during an encounter. '
 															}
 														],
@@ -2897,14 +2897,14 @@ export const wodeElfTroubadour = {
 												id: 'xun0HqS4EyDtB40D',
 												name: 'Twist at the End',
 												description: 'You didn’t see that coming, did you?!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'xun0HqS4EyDtB40D',
 														name: 'Twist at the End',
 														description: 'You didn’t see that coming, did you?!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -2931,7 +2931,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'A target who is not a leader or solo creature comes back to life with half their Stamina and becomes an ally under the Director’s control. The players can work with the Director to determine when the target takes their turn each combat round. At the end of the encounter, the target turns to dust and is blown away.'
 															}
 														],
@@ -2962,7 +2962,7 @@ export const wodeElfTroubadour = {
 								id: '8mgJuIOaJ89ei7An',
 								name: 'Missed Cue',
 								description: 'If you aren’t surprised at the start of an encounter, you can choose one enemy within your line of effect who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second combat round. You must earn 3 Victories before you can use this feature again.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -2978,15 +2978,15 @@ export const wodeElfTroubadour = {
 								id: 'z5ajGRuxCgWGBqkY',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
 											feature: {
 												id: 'V532EvelvtngOBm5',
 												name: 'Fix It in Post',
-												description: 'Once on each of your turns, you can use a free maneuver to change one condition affecting a creature within distance of your Dramatic Monologue ability. Choose one of the following conditions on the target: bleeding, frightened, prone, slowed, or taunted. You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.',
-												type: 'Text',
+												description: 'Once on each of your turns, you can use a безкоштовний маневр to change one condition affecting a creature within distance of your Dramatic Monologue ability. Choose one of the following conditions on the target: bleeding, frightened, prone, slowed, or taunted. You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.',
+												type: 'Текст',
 												data: null
 											},
 											value: 1
@@ -2996,14 +2996,14 @@ export const wodeElfTroubadour = {
 												id: 'blD6AhJ1qRfFDLGB',
 												name: 'Take Two!',
 												description: 'One more, and this time make it interesting.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'blD6AhJ1qRfFDLGB',
 														name: 'Take Two!',
 														description: 'One more, and this time make it interesting.',
 														type: {
-															usage: 'No Action',
+															usage: 'Без дії',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3013,7 +3013,7 @@ export const wodeElfTroubadour = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Performance'
+															'Виступ'
 														],
 														distance: [
 															{
@@ -3031,7 +3031,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While this performance is active, each target who starts their turn in the area can reroll the first power roll that turn that obtains a tier 2 outcome. They must use the new roll.'
 															}
 														],
@@ -3062,7 +3062,7 @@ export const wodeElfTroubadour = {
 								id: 'CwUQTsffxHIfqd1R',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3070,14 +3070,14 @@ export const wodeElfTroubadour = {
 												id: '0Gh84KaW8ivImayH',
 												name: 'Here’s How Your Story Ends',
 												description: 'You give away the ending of this battle, and it’s not great for them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: '0Gh84KaW8ivImayH',
 														name: 'Here’s How Your Story Ends',
 														description: 'You give away the ending of this battle, and it’s not great for them.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3110,9 +3110,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '2 psychic damage; П < [слабкий], frightened (save ends)',
-																	tier2: '5 psychic damage; П < [середній], frightened (save ends)',
-																	tier3: '7 psychic damage; П < [сильний], frightened (save ends)'
+																	tier1: '2 психічної шкоди; П < [слабкий], зляканий (рят. кидок закінчує)',
+																	tier2: '5 психічної шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+																	tier3: '7 психічної шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -3134,14 +3134,14 @@ export const wodeElfTroubadour = {
 												id: '756Ynw8Qoy8v7gPo',
 												name: 'You’re All My Understudies',
 												description: 'It’s important for everyone to know each other’s lines, just in case …',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: '756Ynw8Qoy8v7gPo',
 														name: 'You’re All My Understudies',
 														description: 'It’s important for everyone to know each other’s lines, just in case …',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3168,7 +3168,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter, each target gains the speed bonus, weapon distance bonus, disengage bonus, and stability bonus of your currently equipped kit in addition to their own kit’s bonuses.'
 															}
 														],
@@ -3202,8 +3202,8 @@ export const wodeElfTroubadour = {
 							{
 								id: 'oyvdzACJtFq8WHn7',
 								name: 'Deleted Scene',
-								description: 'Whenever a creature within distance of your Dramatic Monologue ability makes a power roll, you can spend 1 drama as a free triggered action to use Dramatic Monologue, targeting only one creature.',
-								type: 'Text',
+								description: 'Whenever a creature within distance of your Dramatic Monologue ability makes a power roll, you can spend 1 drama as a безкоштовна тригерна дія to use Dramatic Monologue, targeting only one creature.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3215,7 +3215,7 @@ export const wodeElfTroubadour = {
 								id: 'gPzNIv7yp4ELiJSz',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3223,14 +3223,14 @@ export const wodeElfTroubadour = {
 												id: 'vHIxEUa7yuxQSjDO',
 												name: 'Epic',
 												description: 'Your story tells a tale of the villain’s waning power and how the heroes rose to the occasion to stop them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'vHIxEUa7yuxQSjDO',
 														name: 'Epic',
 														description: 'Your story tells a tale of the villain’s waning power and how the heroes rose to the occasion to stop them.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3272,13 +3272,13 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'The target takes a bane on ability rolls (save ends).',
-																	tier2: 'The target has a double bane on ability rolls (save ends).',
-																	tier3: 'The target has a double bane on power rolls (save ends).'
+																	tier1: 'Ціль отримує шкоду на кидки здібностей (рят. кидок закінчує).',
+																	tier2: 'Ціль отримує подвійну шкоду на кидки здібностей (рят. кидок закінчує).',
+																	tier3: 'Ціль отримує подвійну шкоду на кидки сили (рят. кидок закінчує).'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Choose one ally within distance. While the target is affected by this ability, each time they use an ability, that ally can make a free strike against them after the ability is resolved.'
 															}
 														],
@@ -3300,14 +3300,14 @@ export const wodeElfTroubadour = {
 												id: 'nqibjR3wWOCxaYIk',
 												name: 'Rising Tension',
 												description: 'You narrate the tension of the scene and put all hope into your protagonist to turn things around.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'nqibjR3wWOCxaYIk',
 														name: 'Rising Tension',
 														description: 'You narrate the tension of the scene and put all hope into your protagonist to turn things around.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3334,7 +3334,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target gains 3 of their Heroic Resource, has a double edge on a power roll of their choice made during their next turn, is no longer slowed or weakened if they were before, and can immediately take their turn after yours if they have not taken their turn already this round.'
 															}
 														],
@@ -3378,7 +3378,7 @@ export const wodeElfTroubadour = {
 								id: '1NhlI9WCQUCKkX0u',
 								name: 'Exploration Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3386,7 +3386,7 @@ export const wodeElfTroubadour = {
 									],
 									count: 1,
 									selected: [
-										'Gymnastics'
+										'Гімнастика'
 									]
 								}
 							},
@@ -3394,14 +3394,14 @@ export const wodeElfTroubadour = {
 								id: 'gTezUhLaizAfbmXy',
 								name: 'Acrobatics',
 								description: 'Folks love a good tumble.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'gTezUhLaizAfbmXy',
 										name: 'Acrobatics',
 										description: 'Folks love a good tumble.',
 										type: {
-											usage: 'No Action',
+											usage: 'Без дії',
 											free: false,
 											trigger: '',
 											time: '',
@@ -3411,7 +3411,7 @@ export const wodeElfTroubadour = {
 										keywords: [
 											'Area',
 											'Магія',
-											'Performance'
+											'Виступ'
 										],
 										distance: [
 											{
@@ -3429,7 +3429,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one test made to jump, tumble, or climb as part of their movement before the end of their turn.'
 											}
 										],
@@ -3448,14 +3448,14 @@ export const wodeElfTroubadour = {
 								id: 'vS4O8NKJgdBVoVjj',
 								name: 'Star Power',
 								description: 'Your years of practicing fencing and dancing pay off on the battlefield.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'vS4O8NKJgdBVoVjj',
 										name: 'Star Power',
 										description: 'Your years of practicing fencing and dancing pay off on the battlefield.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -3479,7 +3479,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You gain a +2 bonus to speed until the end of your turn. Additionally, the next power roll you make this turn can’t have an outcome lower than tier 2.'
 											},
 											{
@@ -3505,14 +3505,14 @@ export const wodeElfTroubadour = {
 								id: 'uWQCoI4iBOhFpHgW',
 								name: 'Riposte',
 								description: '“I’d have brought treats had I known I’d be fighting a dog.”',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'uWQCoI4iBOhFpHgW',
 										name: 'Riposte',
 										description: '“I’d have brought treats had I known I’d be fighting a dog.”',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target takes damage from a melee strike.',
 											time: '',
@@ -3538,7 +3538,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target makes a free strike against the creature who made the triggering strike.'
 											}
 										],
@@ -3562,7 +3562,7 @@ export const wodeElfTroubadour = {
 								id: 'lAPeP3iSpt8PqQJI',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3570,14 +3570,14 @@ export const wodeElfTroubadour = {
 												id: 'FViXbLCcsCb1xdHQ',
 												name: 'Classic Chandelier Stunt',
 												description: 'Audiences love this bit.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'FViXbLCcsCb1xdHQ',
 														name: 'Classic Chandelier Stunt',
 														description: 'Audiences love this bit.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3605,7 +3605,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Each target can shift up to 5 squares, including vertically, but must end this movement adjacent to the other target and on solid ground. Each target can then make a melee free strike that deals extra damage equal to twice their highest characteristic score.'
 															}
 														],
@@ -3627,14 +3627,14 @@ export const wodeElfTroubadour = {
 												id: 'MRR7Ag6ujfREe9A8',
 												name: 'En Garde!',
 												description: 'Wait, it’s … Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'MRR7Ag6ujfREe9A8',
 														name: 'En Garde!',
 														description: 'Wait, it’s … Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3668,13 +3668,13 @@ export const wodeElfTroubadour = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '7 + A damage',
-																	tier2: '11 + A damage',
-																	tier3: '16 + A damage'
+																	tier1: '7 + Л шкоди',
+																	tier2: '11 + Л шкоди',
+																	tier3: '16 + Л шкоди'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target can make a melee free strike against you. If they do, you can make a melee free strike against the target.'
 															}
 														],
@@ -3705,7 +3705,7 @@ export const wodeElfTroubadour = {
 								id: 'TkRYPzOk7E7KosGI',
 								name: 'Foil',
 								description: 'At the start of an encounter, choose one creature within your line of effect. You have a double edge on power rolls made against or in\ncompetition with that creature. The chosen creature also has a double edge on power rolls made against or in competition with you. If the chosen creature is reduced to 0 Stamina, you can choose a new foil at the start of the next combat round. ',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3721,15 +3721,15 @@ export const wodeElfTroubadour = {
 								id: 'AYG8ODq4Xvn4vWMr',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
 											feature: {
 												id: 'EpJ6mBFE2kfCK1IY',
 												name: 'Verbal Duel',
-												description: 'Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a free maneuver to exchange words with them. Make an opposed Presence test with the target. Whoever gets the higher result can make a free strike, which deals psychic damage instead of its usual damage.',
-												type: 'Text',
+												description: 'Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a безкоштовний маневр to exchange words with them. Make an opposed Presence test with the target. Whoever gets the higher result can make a free strike, which deals psychic damage instead of its usual damage.',
+												type: 'Текст',
 												data: null
 											},
 											value: 1
@@ -3739,14 +3739,14 @@ export const wodeElfTroubadour = {
 												id: 'TqxhltwD22GJjGkU',
 												name: 'We Can’t Be Upstaged!',
 												description: 'Swordplay so graceful it looks like you all practiced this.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'TqxhltwD22GJjGkU',
 														name: 'We Can’t Be Upstaged!',
 														description: 'Swordplay so graceful it looks like you all practiced this.',
 														type: {
-															usage: 'No Action',
+															usage: 'Без дії',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3756,7 +3756,7 @@ export const wodeElfTroubadour = {
 														keywords: [
 															'Area',
 															'Магія',
-															'Performance'
+															'Виступ'
 														],
 														distance: [
 															{
@@ -3774,7 +3774,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While this performance is active, a target who starts their turn in the area gains a bonus to the distance they can shift equal to your Presence score until the end of their turn.'
 															}
 														],
@@ -3805,7 +3805,7 @@ export const wodeElfTroubadour = {
 								id: 'AkvymN5wTwBpvJk6',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3813,14 +3813,14 @@ export const wodeElfTroubadour = {
 												id: 'gCxHNxuFdPtoWOSw',
 												name: 'Blood on the Stage',
 												description: 'It’s love and blood or drama and blood. Either way, there’s always blood.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'gCxHNxuFdPtoWOSw',
 														name: 'Blood on the Stage',
 														description: 'It’s love and blood or drama and blood. Either way, there’s always blood.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3854,9 +3854,9 @@ export const wodeElfTroubadour = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '12 + A damage; M < [слабкий], bleeding (save ends)',
-																	tier2: '18 + A damage; M < [середній], bleeding (save ends)',
-																	tier3: '24 + A damage; bleeding (EoT), or if M < [сильний], bleeding (save ends)'
+																	tier1: '12 + Л шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+																	tier2: '18 + Л шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+																	tier3: '24 + Л шкоди; кровотеча (до кінця ходу), або якщо С < [сильний], кровотеча (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -3878,14 +3878,14 @@ export const wodeElfTroubadour = {
 												id: 'yzRbbBkrzCSPBh1w',
 												name: 'Fight Choreography',
 												description: 'You and your partner make a flashy show of derring-do, then get back to your corners.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'yzRbbBkrzCSPBh1w',
 														name: 'Fight Choreography',
 														description: 'You and your partner make a flashy show of derring-do, then get back to your corners.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3913,7 +3913,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You and the target each make a melee free strike that targets each enemy within 3 squares of either of you, dividing the enemies between each of you. You choose which enemies your free strike targets and which enemies the target creature’s free strike targets. You then slide the target 5 squares, ignoring stability.'
 															}
 														],
@@ -3948,7 +3948,7 @@ export const wodeElfTroubadour = {
 								id: 'FwA0rbxGHrD7Oj2H',
 								name: 'Masterwork',
 								description: 'Choose one of your signature abilities and name it after yourself. You always have this ability available, even if it is sourced from a kit you switch out. Whenever you use this ability, you gain an edge and 1 surge that you can use only on this ability.\n\nAdditionally, when your named signature ability is the last ability you use in an encounter, you can immediately use the Hear Ye, Hear Ye! effect of your Zeitgeist feature to tell tales of your exploits after the encounter ends',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3960,7 +3960,7 @@ export const wodeElfTroubadour = {
 								id: 'qIMKE6V6R4w2teMf',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3968,14 +3968,14 @@ export const wodeElfTroubadour = {
 												id: '4LyAtdASe3AEJaon',
 												name: 'Expert Fencer',
 												description: 'If you can land the strike, the crowd goes wild.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: '4LyAtdASe3AEJaon',
 														name: 'Expert Fencer',
 														description: 'If you can land the strike, the crowd goes wild.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4010,9 +4010,9 @@ export const wodeElfTroubadour = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '15 + A damage',
-																	tier2: '21 + A damage',
-																	tier3: '28 + A damage; M < [сильний], bleeding (save ends)'
+																	tier1: '15 + Л шкоди',
+																	tier2: '21 + Л шкоди',
+																	tier3: '28 + Л шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -4034,14 +4034,14 @@ export const wodeElfTroubadour = {
 												id: 'IZCTPQBJer4fFuKi',
 												name: 'Renegotiated Contract',
 												description: 'No, no. You don’t die until the sequel.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'IZCTPQBJer4fFuKi',
 														name: 'Renegotiated Contract',
 														description: 'No, no. You don’t die until the sequel.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4069,7 +4069,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Add your current Stamina to your target’s current Stamina, then you have half that total Stamina and the target has the remainder. If either of you would gain more Stamina this way than their Stamina maximum, the difference in Stamina between what that creature would gain and their maximum is gained by the other creature. Neither of you can gain more Stamina than your maximum this way. You then make a power roll.'
 															},
 															{
@@ -4079,9 +4079,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'You and the target can each end one effect on yourselves that is ended by a saving throw or that ends at the end of your turns.',
-																	tier2: 'You and the target can end any effects on yourselves that are ended by a saving throw or that end at the end of your turns.',
-																	tier3: 'You can choose any of the current effects on you and the target that are ended by a saving throw or that end at the end of your turns, apply the chosen effects to the target, and end the rest.'
+																	tier1: 'Ви і ціль можете кожен завершити на собі один ефект, який закінчується рят. кидком або наприкінці вашого ходу.',
+																	tier2: 'Ви і ціль можете завершити на собі будь-які ефекти, які закінчуються рят. кидком або наприкінці вашого ходу.',
+																	tier3: 'Ви можете обрати будь-які поточні ефекти на собі й цілі, які закінчуються рят. кидком або наприкінці вашого ходу, застосувати обрані ефекти до цілі й завершити решту.'
 																}
 															}
 														],
@@ -4125,7 +4125,7 @@ export const wodeElfTroubadour = {
 								id: 'zVuRuelOOMRXxCgG',
 								name: 'Interpersonal Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -4133,7 +4133,7 @@ export const wodeElfTroubadour = {
 									],
 									count: 1,
 									selected: [
-										'Read Person'
+										'Зчитування людини'
 									]
 								}
 							},
@@ -4141,14 +4141,14 @@ export const wodeElfTroubadour = {
 								id: '8OR9gvPtJN7cIZhh',
 								name: 'Power Chord',
 								description: 'Your instrument rings true and your music blows everyone away.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: '8OR9gvPtJN7cIZhh',
 										name: 'Power Chord',
 										description: 'Your instrument rings true and your music blows everyone away.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -4181,9 +4181,9 @@ export const wodeElfTroubadour = {
 														'Presence'
 													],
 													bonus: 0,
-													tier1: 'Push 1',
-													tier2: 'Push 2',
-													tier3: 'Push 3'
+													tier1: 'Відштовхнути на 1',
+													tier2: 'Відштовхнути на 2',
+													tier3: 'Відштовхнути на 3'
 												}
 											}
 										],
@@ -4202,21 +4202,21 @@ export const wodeElfTroubadour = {
 								id: 'zVLsFRY0V10dNuaA',
 								name: 'Virtuoso Performances',
 								description: 'You have the following performance abilities, which are usable with\nyour Routines feature.',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'K0mQdfUHeiaVSsMN',
 											name: '“Thunder Mother”',
 											description: 'All for thunder motherrr! ♪ Run and hide for coverrr! ♪',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'K0mQdfUHeiaVSsMN',
 													name: '“Thunder Mother”',
 													description: 'All for thunder motherrr! ♪ Run and hide for coverrr! ♪',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4225,7 +4225,7 @@ export const wodeElfTroubadour = {
 													},
 													keywords: [
 														'Магія',
-														'Performance',
+														'Виступ',
 														'Дальній',
 														'Удар'
 													],
@@ -4245,7 +4245,7 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
+															type: 'Текст',
 															text: 'At the end of each combat round while this performance is active, you can make a power roll against the target that ignores cover. You can’t target the same creature twice with this effect.'
 														},
 														{
@@ -4255,9 +4255,9 @@ export const wodeElfTroubadour = {
 																	'Presence'
 																],
 																bonus: 0,
-																tier1: 'Lightning damage equal to your level',
-																tier2: 'Lightning damage equal to 5 + your level',
-																tier3: 'Lightning damage equal to 10 + your level'
+																tier1: 'Блискавичної шкоди, рівної вашому рівню',
+																tier2: 'Блискавичної шкоди, рівної 5 + ваш рівень',
+																tier3: 'Блискавичної шкоди, рівної 10 + ваш рівень'
 															}
 														}
 													],
@@ -4276,14 +4276,14 @@ export const wodeElfTroubadour = {
 											id: 'T2lumbD5GNggb7kX',
 											name: '“Ballad of the Beast”',
 											description: 'Teeth are bare! ♪ Eyes black! ♪ No escaping the beast! ♪',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'T2lumbD5GNggb7kX',
 													name: '“Ballad of the Beast”',
 													description: 'Teeth are bare! ♪ Eyes black! ♪ No escaping the beast! ♪',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4293,7 +4293,7 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Area',
 														'Магія',
-														'Performance'
+														'Виступ'
 													],
 													distance: [
 														{
@@ -4311,7 +4311,7 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
+															type: 'Текст',
 															text: 'While this performance is active, each target who starts their turn in the area gains 1 surge.'
 														}
 													],
@@ -4333,14 +4333,14 @@ export const wodeElfTroubadour = {
 								id: 'WcIsMpwQBuTdLdmv',
 								name: 'Harmonize',
 								description: 'Give the chorus a little punch.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'WcIsMpwQBuTdLdmv',
 										name: 'Harmonize',
 										description: 'Give the chorus a little punch.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target uses an ability that targets only one enemy and costs 3 or fewer of their Heroic Resource.',
 											time: '',
@@ -4366,7 +4366,7 @@ export const wodeElfTroubadour = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target can choose one additional target for the triggering ability. Any damage dealt to the additional target is sonic damage.'
 											},
 											{
@@ -4397,7 +4397,7 @@ export const wodeElfTroubadour = {
 								id: 'DWhLWnP0bwuHQ2qy',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4405,14 +4405,14 @@ export const wodeElfTroubadour = {
 												id: 'U3IGzrqBjqxWKD9K',
 												name: 'Encore',
 												description: 'Again! Again!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'U3IGzrqBjqxWKD9K',
 														name: 'Encore',
 														description: 'Again! Again!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4439,7 +4439,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You use an ability that you have observed being used this combat round. The ability must have the Strike keyword, cost 5 or fewer of a Heroic Resource, and cost no Malice. When you make the strike, you use your Presence score for any power rolls, and any damage you deal is sonic damage.'
 															}
 														],
@@ -4461,14 +4461,14 @@ export const wodeElfTroubadour = {
 												id: '3eWhJl6vthKu3RY3',
 												name: 'Tough Crowd',
 												description: 'Your fans don’t seem to like the opening act …',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: '3eWhJl6vthKu3RY3',
 														name: 'Tough Crowd',
 														description: 'Your fans don’t seem to like the opening act …',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4496,7 +4496,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The area is haunted by a swirling horde of phantoms until the end of the encounter. Allies can enter any square of the area without spending movement. At the end of each of your turns, you can make one power roll that targets each enemy in the area.'
 															},
 															{
@@ -4539,21 +4539,21 @@ export const wodeElfTroubadour = {
 								id: 'gMLn35ehmeBT1RYV',
 								name: 'Second Album',
 								description: 'You have the following performance abilities, which are usable with your Routines feature.',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'mWeNhxpEVJMjKcU8',
 											name: '“Fire Up the Night”',
 											description: 'Maybe you and I ♪ We can still bring the light! ♪',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'mWeNhxpEVJMjKcU8',
 													name: '“Fire Up the Night”',
 													description: 'Maybe you and I ♪ We can still bring the light! ♪',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4563,7 +4563,7 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Area',
 														'Магія',
-														'Performance'
+														'Виступ'
 													],
 													distance: [
 														{
@@ -4581,8 +4581,8 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
-															text: 'While this performance is active, each target who starts their turn in the area doesn’t take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a free maneuver.'
+															type: 'Текст',
+															text: 'While this performance is active, each target who starts their turn in the area doesn’t take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a безкоштовний маневр.'
 														}
 													],
 													preEffect: '',
@@ -4600,14 +4600,14 @@ export const wodeElfTroubadour = {
 											id: 'lDpZJV6xP89zFb8e',
 											name: '“Never-Ending Hero”',
 											description: 'And toniiight we can truly say ♪ They will alllways find a way! ♪',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'lDpZJV6xP89zFb8e',
 													name: '“Never-Ending Hero”',
 													description: 'And toniiight we can truly say ♪ They will alllways find a way! ♪',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4617,7 +4617,7 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Area',
 														'Магія',
-														'Performance'
+														'Виступ'
 													],
 													distance: [
 														{
@@ -4635,7 +4635,7 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
+															type: 'Текст',
 															text: 'While this performance is active, each target who starts their turn dying while in the area gains an edge on power rolls and ignores the effects of bleeding until the end of their turn.'
 														}
 													],
@@ -4666,15 +4666,15 @@ export const wodeElfTroubadour = {
 								id: 'suMDtEOQggORQzn4',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
 											feature: {
 												id: 'Qcz0plE7f3m2oMpE',
 												name: 'Bolstering Banter',
-												description: 'Once on each of your turns, you can use a free maneuver to exchange words with a target of your current performance, other than yourself. The target can spend a Recovery to gain temporary Stamina equal to their recovery value.',
-												type: 'Text',
+												description: 'Once on each of your turns, you can use a безкоштовний маневр to exchange words with a target of your current performance, other than yourself. The target can spend a Recovery to gain temporary Stamina equal to their recovery value.',
+												type: 'Текст',
 												data: null
 											},
 											value: 1
@@ -4684,7 +4684,7 @@ export const wodeElfTroubadour = {
 												id: 'k1vcKIoLARGr6Lsr',
 												name: 'Medley',
 												description: 'You can maintain two performances at a time using your Routines feature.',
-												type: 'Text',
+												type: 'Текст',
 												data: null
 											},
 											value: 1
@@ -4703,7 +4703,7 @@ export const wodeElfTroubadour = {
 								id: 'VD8b06zsDjeJpzlX',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4711,14 +4711,14 @@ export const wodeElfTroubadour = {
 												id: 'KVEuxjzQu7tvcsxH',
 												name: 'Feedback',
 												description: 'Your music pounds the crowd to the beat until their hearts can’t stand it anymore.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'KVEuxjzQu7tvcsxH',
 														name: 'Feedback',
 														description: 'Your music pounds the crowd to the beat until their hearts can’t stand it anymore.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4745,7 +4745,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'A prone target ignores this ability.'
 															},
 															{
@@ -4755,9 +4755,9 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '7 sonic damage; П < [слабкий], prone',
-																	tier2: '10 sonic damage; П < [середній], prone',
-																	tier3: '13 sonic damage; П < [сильний], prone'
+																	tier1: '7 звукової шкоди; П < [слабкий], розпластаний',
+																	tier2: '10 звукової шкоди; П < [середній], розпластаний',
+																	tier3: '13 звукової шкоди; П < [сильний], розпластаний'
 																}
 															}
 														],
@@ -4779,14 +4779,14 @@ export const wodeElfTroubadour = {
 												id: 'uPEJe3YMCKQ5no95',
 												name: 'Legendary Drum Fill',
 												description: 'You start a drumroll that roars like thunder with every impact the heroes make.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'uPEJe3YMCKQ5no95',
 														name: 'Legendary Drum Fill',
 														description: 'You start a drumroll that roars like thunder with every impact the heroes make.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4813,7 +4813,7 @@ export const wodeElfTroubadour = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Each target gains 1 surge, then gains 1 surge at the start of each combat round until the end of the encounter.'
 															}
 														],
@@ -4848,21 +4848,21 @@ export const wodeElfTroubadour = {
 								id: '17EPB8FMDm0rbPtb',
 								name: 'Crowd Favorites',
 								description: 'You have the following performance abilities, which are usable with your Routines feature.',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'cCAwy3SGtXi1BAgF',
 											name: 'Moonlight Sonata',
 											description: 'Music pours out of your heart, filling the area with the utmost delicacy and without damper.',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'cCAwy3SGtXi1BAgF',
 													name: 'Moonlight Sonata',
 													description: 'Music pours out of your heart, filling the area with the utmost delicacy and without damper.',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4872,7 +4872,7 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Area',
 														'Магія',
-														'Performance'
+														'Виступ'
 													],
 													distance: [
 														{
@@ -4890,8 +4890,8 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
-															text: 'While this performance is active, each target who is dead can choose to continue taking turns after death. On each of their turns, a target can move and use either a main action or a maneuver, but can’t spend Recoveries or use triggered actions. At the end of the encounter, each target who chose to take turns this way turns to dust and blows away.'
+															type: 'Текст',
+															text: 'While this performance is active, each target who is dead can choose to continue taking turns after death. On each of their turns, a target can move and use either a основна дія or a маневр, but can’t spend Recoveries or use тригерні дії. At the end of the encounter, each target who chose to take turns this way turns to dust and blows away.'
 														}
 													],
 													preEffect: '',
@@ -4909,14 +4909,14 @@ export const wodeElfTroubadour = {
 											id: 'uPCAVJRpZCks52hw',
 											name: 'Radical Fantasia',
 											description: '♪ Viras, my Viras, will you hold their hands as they cryyy-aaaiigh? ♪',
-											type: 'Ability',
+											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'uPCAVJRpZCks52hw',
 													name: 'Radical Fantasia',
 													description: '♪ Viras, my Viras, will you hold their hands as they cryyy-aaaiigh? ♪',
 													type: {
-														usage: 'No Action',
+														usage: 'Без дії',
 														free: false,
 														trigger: '',
 														time: '',
@@ -4926,7 +4926,7 @@ export const wodeElfTroubadour = {
 													keywords: [
 														'Area',
 														'Магія',
-														'Performance'
+														'Виступ'
 													],
 													distance: [
 														{
@@ -4944,8 +4944,8 @@ export const wodeElfTroubadour = {
 													minLevel: 1,
 													sections: [
 														{
-															type: 'text',
-															text: 'While this performance is active, each target who starts their turn in the area ignores difficult terrain, and any ability they use that imposes forced movement gains a +2 bonus to the forced movement distance until the end of their turn. Additionally, once per combat round, each target can use a triggered action as a free triggered action.'
+															type: 'Текст',
+															text: 'While this performance is active, each target who starts their turn in the area ignores difficult terrain, and any ability they use that imposes forced movement gains a +2 bonus to the forced movement distance until the end of their turn. Additionally, once per combat round, each target can use a тригерна дія as a безкоштовна тригерна дія.'
 														}
 													],
 													preEffect: '',
@@ -4971,7 +4971,7 @@ export const wodeElfTroubadour = {
 								id: 'H8CN7zqO4hRni29m',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4979,14 +4979,14 @@ export const wodeElfTroubadour = {
 												id: 'ZDIrJmxVMJMwBES0',
 												name: 'Jam Session',
 												description: 'Your jam session creates new genres that compel everyone to get up and move.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'ZDIrJmxVMJMwBES0',
 														name: 'Jam Session',
 														description: 'Your jam session creates new genres that compel everyone to get up and move.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5019,13 +5019,13 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '8 sonic damage',
-																	tier2: '11 sonic damage',
-																	tier3: '15 sonic damage'
+																	tier1: '8 звукової шкоди',
+																	tier2: '11 звукової шкоди',
+																	tier3: '15 звукової шкоди'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Each creature within distance gains a +5 bonus to speed until the end of their next turn. While under this effect, each target must use their full movement during their turn.'
 															}
 														],
@@ -5047,14 +5047,14 @@ export const wodeElfTroubadour = {
 												id: 'eY09PeFg3MJJSua6',
 												name: 'Melt Their Faces',
 												description: 'The power of music rips through the reality around the target and blows them away.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'eY09PeFg3MJJSua6',
 														name: 'Melt Their Faces',
 														description: 'The power of music rips through the reality around the target and blows them away.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5097,13 +5097,13 @@ export const wodeElfTroubadour = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '12 + П sonic damage; push 5',
-																	tier2: '16 + П sonic damage; push 10',
-																	tier3: '22 + П sonic damage; push 15'
+																	tier1: '12 + П звукової шкоди; відштовхнути на 5',
+																	tier2: '16 + П звукової шкоди; відштовхнути на 10',
+																	tier3: '22 + П звукової шкоди; відштовхнути на 15'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Forced movement from this ability ignores stability.'
 															}
 														],
@@ -5169,16 +5169,16 @@ export const wodeElfTroubadour = {
 				id: 'performer-feature-1',
 				name: 'Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [
-						'Music',
-						'Perform'
+						'Музика',
+						'Виступ'
 					],
 					listOptions: [],
 					count: 1,
 					selected: [
-						'Perform'
+						'Виступ'
 					]
 				}
 			},
@@ -5186,7 +5186,7 @@ export const wodeElfTroubadour = {
 				id: 'performer-feature-2',
 				name: 'Interpersonal Skills',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -5194,8 +5194,8 @@ export const wodeElfTroubadour = {
 					],
 					count: 2,
 					selected: [
-						'Rumors',
-						'Society'
+						'Чутки',
+						'Суспільство'
 					]
 				}
 			},
@@ -5203,7 +5203,7 @@ export const wodeElfTroubadour = {
 				id: 'performer-feature-3',
 				name: 'Renown',
 				description: '',
-				type: 'Bonus',
+				type: 'Бонус',
 				data: {
 					field: 'Renown',
 					value: 2,
@@ -5217,7 +5217,7 @@ export const wodeElfTroubadour = {
 				id: 'performer-feature-4',
 				name: 'Interpersonal Perk',
 				description: '',
-				type: 'Perk',
+				type: 'Перевага',
 				data: {
 					lists: [
 						'Міжособистісні'
@@ -5228,7 +5228,7 @@ export const wodeElfTroubadour = {
 							id: 'perk-harmonizer',
 							name: 'Harmonizer',
 							description: 'You can make a Presence test using the Music skill to influence creatures who don’t have emotions or can’t understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.',
-							type: 'Text',
+							type: 'Текст',
 							data: null,
 							list: 'Міжособистісні'
 						}
@@ -5283,7 +5283,7 @@ export const wodeElfTroubadour = {
 			id: 'default-language',
 			name: 'Default Language',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,

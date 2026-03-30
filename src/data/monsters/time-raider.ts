@@ -64,7 +64,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 3 })],
 				target: 'Особливе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('A time raider acting this turn activates a gravity well in the affected area. The gravity well sits in the center of the cube and lasts until the end of the encounter or until a creature who can reach the well uses a maneuver to disable it. The affected area is considered difficult terrain for enemies. Whenever an enemy ends their turn in an affected square, they are pulled 4 towards the well.')
+					FactoryLogic.createAbilitySectionText('A time raider acting this turn activates a gravity well in the affected area. The gravity well sits in the center of the cube and lasts until the end of the encounter or until a creature who can reach the well uses a маневр to disable it. The affected area is considered difficult terrain for enemies. Whenever an enemy ends their turn in an affected square, they are pulled 4 towards the well.')
 				]
 			})
 		}),
@@ -74,7 +74,7 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 			cost: 5,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Until the end of the round, each time raider gains a +3 bonus to speed, and can teleport up to their speed as a move action.'
+				'Until the end of the round, each time raider gains a +3 bonus to speed, and can teleport up to their speed as a дія руху.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -86,9 +86,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 				'All time raiders in the encounter collectively create a psionic field over the encounter map, which lasts until the first time raider with the highest Stamina maximum drops to 0 Stamina or chooses to end the field (no action required). While the field is up, each non-time raider on the map makes a **Reason test** against this psionic effect at the start of each round.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Reason,
-					tier1: '10 psychic damage; slowed (EoT)',
-					tier2: '7 psychic damage; slowed (EoT)',
-					tier3: 'No effect.'
+					tier1: '10 психічної шкоди; сповільнений (до кінця ходу)',
+					tier2: '7 психічної шкоди; сповільнений (до кінця ходу)',
+					tier3: 'Без ефекту.'
 				})
 			]
 		})
@@ -122,9 +122,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '2 damage',
-									tier2: '4 damage',
-									tier3: '5 damage; one ally can make a free strike against the target'
+									tier1: '2 шкоди',
+									tier2: '4 шкоди',
+									tier3: '5 шкоди; one ally can make a безкоштовний удар against ціль'
 								})
 							)
 						]
@@ -175,9 +175,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '3 damage; slide 1',
-									tier2: '5 damage; slide 2',
-									tier3: '6 damage; slide 3; prone'
+									tier1: '3 шкоди; зсунути на 1',
+									tier2: '5 шкоди; зсунути на 2',
+									tier3: '6 шкоди; зсунути на 3; розпластаний'
 								})
 							)
 						]
@@ -227,9 +227,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage',
-									tier2: '10 damage',
-									tier3: '13 damage; R<2 weakened (save ends)'
+									tier1: '7 шкоди',
+									tier2: '10 шкоди',
+									tier3: '13 шкоди; Р<2 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionSpend({
@@ -251,9 +251,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 psychic damage; R<0 5 poison damage',
-									tier2: '6 psychic damage; R<1 5 poison damage',
-									tier3: '9 psychic damage; R<2 5 poison damage'
+									tier1: '4 психічної шкоди; Р<0 5 отруйної шкоди',
+									tier2: '6 психічної шкоди; Р<1 5 отруйної шкоди',
+									tier3: '9 психічної шкоди; Р<2 5 отруйної шкоди'
 								})
 							)
 						]
@@ -308,9 +308,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 sonic damage',
-									tier2: '7 sonic damage',
-									tier3: '10 sonic damage; prone; M<2 slowed (save ends)'
+									tier1: '4 звукової шкоди',
+									tier2: '7 звукової шкоди',
+									tier3: '10 звукової шкоди; розпластаний; С<2 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A layer of ground of floor beneath the area that is 1 square deep is destroyed.')
@@ -375,9 +375,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '6 corruption damage; push 2',
-									tier2: '8 corruption damage; push 4',
-									tier3: '11 corruption damage; push 6; prone'
+									tier1: '6 шкоди від скверни; відштовхнути на 2',
+									tier2: '8 шкоди від скверни; відштовхнути на 4',
+									tier3: '11 шкоди від скверни; відштовхнути на 6; розпластаний'
 								})
 							)
 						]
@@ -444,9 +444,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage',
-									tier2: '11 damage',
-									tier3: '14 damage; A<2 bleeding (save ends)'
+									tier1: '7 шкоди',
+									tier2: '11 шкоди',
+									tier3: '14 шкоди; Л<2 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The hijack is hidden from any creature who is bleeding from this ability until that condition ends.')
@@ -510,9 +510,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '6 damage',
-									tier2: '8 damage; M<1 dazed (save ends)',
-									tier3: '11 damage; M<2 dazed (save ends)'
+									tier1: '6 шкоди',
+									tier2: '8 шкоди; С<1 приголомшений (рят. кидок закінчує)',
+									tier3: '11 шкоди; С<2 приголомшений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target who ends their next turn adjacent to the other target falls prone.')
@@ -532,9 +532,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 psychic damage; R<0 prone',
-									tier2: '6 psychic damage; push 1; R<1 prone and can\'t stand (save ends)',
-									tier3: '9 psychic damage; push 2; R<2 prone and can\'t stand (save ends)'
+									tier1: '4 психічної шкоди; Р<0 розпластаний',
+									tier2: '6 психічної шкоди; відштовхнути на 1; Р<1 розпластаний і can\'t stand (save ends)',
+									tier3: '9 психічної шкоди; відштовхнути на 2; Р<2 розпластаний і can\'t stand (save ends)'
 								})
 							)
 						]
@@ -584,9 +584,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage; pull 1',
-									tier2: '10 damage; pull 2',
-									tier3: '13 damage; pull 3; A<2 restrained (save ends)'
+									tier1: '7 шкоди; притягнути на 1',
+									tier2: '10 шкоди; притягнути на 2',
+									tier3: '13 шкоди; притягнути на 3; Л<2 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability can affect creatures on parallel planes of existence and pull them onto the nemesis\'s plane.')
@@ -606,9 +606,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 psychic damage; M<0 slowed (save ends)',
-									tier2: '10 psychic damage; M<1 slowed (save ends)',
-									tier3: '13 psychic damage; M<2 slowed (save ends)'
+									tier1: '7 психічної шкоди; С<0 сповільнений (рят. кидок закінчує)',
+									tier2: '10 психічної шкоди; С<1 сповільнений (рят. кидок закінчує)',
+									tier3: '13 психічної шкоди; С<2 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Any creature slowed this way takes 2 damage for each square they move or are force moved until that condition ends.')
@@ -659,9 +659,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 damage; 2 psychic damage',
-									tier2: '7 damage; 3 psychic damage',
-									tier3: '9 damage; 4 psychic damage'
+									tier1: '5 шкоди; 2 психічної шкоди',
+									tier2: '7 шкоди; 3 психічної шкоди',
+									tier3: '9 шкоди; 4 психічної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Any power roll made against the target gains an edge until the start of the vertex’s next turn.')
@@ -742,9 +742,9 @@ Time raiders also have two sets of arms, allowing them to wield melee weapons at
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '8 corruption damage',
-									tier2: '12 corruption damage',
-									tier3: '15 corruption damage'
+									tier1: '8 шкоди від скверни',
+									tier2: '12 шкоди від скверни',
+									tier3: '15 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each target takes a −2 penalty to speed until the start of the tyrannis’s next turn.')

@@ -9,7 +9,6 @@ import { DamageModifier } from '@/models/damage-modifier';
 import { DamageModifierType } from '@/enums/damage-modifier-type';
 import { DrawSteelSymbolText } from '@/components/panels/classic-sheet/components/ds-symbol-text-component';
 import { FeatureType } from '@/enums/feature-type';
-import { Format } from '@/utils/format';
 import { Fragment } from 'react';
 import { Hero } from '@/models/hero';
 import { HeroLogic } from '@/logic/hero-logic';
@@ -18,6 +17,8 @@ import { ModifierLogic } from '@/logic/modifier-logic';
 import { PerkList } from '@/enums/perk-list';
 import { SheetFormatter } from '@/logic/classic-sheet/sheet-formatter';
 import { SkillList } from '@/enums/skill-list';
+import { getAbilityUsageClassName, getAbilityUsageLabel } from '@/utils/ability-usages';
+import { getFeatureFieldLabel } from '@/utils/feature-fields';
 import { normalizeSkillName } from '@/utils/skill-names';
 
 import rollT1 from '@/assets/icons/power-roll-t1.svg';
@@ -51,7 +52,7 @@ const ChoiceFeatureComponent = (feature: FeatureChoice | FeatureLanguageChoice |
 		});
 	} else {
 		selectedOptions = [
-			<div className='feature-iteration no-selection' key='unselected'>Unselected</div>
+			<div className='feature-iteration no-selection' key='unselected'>Не вибрано</div>
 		];
 	}
 	let ancestryPts = 0;
@@ -91,17 +92,17 @@ const isAllPerkLists = (lists: PerkList[]): boolean => {
 
 const SkillChoiceFeatureComponent = (feature: FeatureSkillChoice | FeaturePerk) => {
 	let listNames;
-	let choiceType;
+	let choiceTypeLabel;
 	switch (feature.type) {
 		case FeatureType.SkillChoice:
 			if (!isAllSkillLists(feature.data.listOptions))
 				listNames = feature.data.listOptions.map(l => l.toString());
-			choiceType = 'Skill';
+			choiceTypeLabel = feature.data.count === 1 ? 'Навичка' : 'Навички';
 			break;
 		case FeatureType.Perk:
 			if (!isAllPerkLists(feature.data.lists))
 				listNames = feature.data.lists.map(l => l.toString());
-			choiceType = 'Perk';
+			choiceTypeLabel = feature.data.count === 1 ? 'Перевага' : 'Переваги';
 			break;
 	}
 	const lists = SheetFormatter.joinCommasOr(listNames);
@@ -112,13 +113,13 @@ const SkillChoiceFeatureComponent = (feature: FeatureSkillChoice | FeaturePerk) 
 		});
 	} else {
 		selectedOptions = [
-			<div className='feature-iteration no-selection' key='unselected'>Unselected</div>
+			<div className='feature-iteration no-selection' key='unselected'>Не вибрано</div>
 		];
 	}
 	return (
 		<>
 			<div className='feature-line'>
-				• {feature.data.count} {lists} {SheetFormatter.pluralize(choiceType, feature.data.count)}
+				• {feature.data.count} {lists} {choiceTypeLabel}
 			</div>
 			{selectedOptions}
 		</>
@@ -127,9 +128,10 @@ const SkillChoiceFeatureComponent = (feature: FeatureSkillChoice | FeaturePerk) 
 
 const BonusFeatureComponent = (feature: FeatureBonus, hero?: Hero) => {
 	const value = hero ? ModifierLogic.calculateModifierValue(feature.data, hero) : feature.data.value;
+	const fieldLabel = getFeatureFieldLabel(feature.data.field);
 	return (
 		<>
-			<div className='feature-line'><strong>• {feature.name}: </strong>{SheetFormatter.addSign(value)} {feature.data.field}</div>
+			<div className='feature-line'><strong>• {feature.name}: </strong>{SheetFormatter.addSign(value)} {fieldLabel}</div>
 		</>
 	);
 };
@@ -137,7 +139,7 @@ const BonusFeatureComponent = (feature: FeatureBonus, hero?: Hero) => {
 const CharacteristicBonusFeatureComponent = (feature: FeatureCharacteristicBonus) => {
 	return (
 		<>
-			<div className='feature-line'><strong>• Characteristic Bonus: </strong>{SheetFormatter.addSign(feature.data.value)} {feature.data.characteristic}</div>
+			<div className='feature-line'><strong>• Бонус характеристики: </strong>{SheetFormatter.addSign(feature.data.value)} {feature.data.characteristic}</div>
 		</>
 	);
 };
@@ -188,10 +190,7 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 		let type = '';
 		const usage = ability.type.usage as AbilityUsage;
 		if (![AbilityUsage.NoAction, AbilityUsage.Other].includes(usage)) {
-			type = usage.toString();
-			if (ability.type.free) {
-				type = 'Free ' + type;
-			}
+			type = getAbilityUsageLabel(usage, ability.type.free);
 		}
 		if (ability.keywords.includes('Performance')) {
 			type = 'Performance';
@@ -201,7 +200,9 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 
 	const type = getAbilityType(feature.data.ability);
 	const typeClasses = ['type'];
-	typeClasses.push(type.toLocaleLowerCase().split(' ').join('-'));
+	if (type) {
+		typeClasses.push(feature.data.ability.keywords.includes('Performance') ? 'performance' : getAbilityUsageClassName(feature.data.ability.type.usage, feature.data.ability.type.free));
+	}
 
 	return (
 		<>
@@ -216,13 +217,10 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 };
 
 const ClassAbilityFeatureComponent = (feature: FeatureClassAbility) => {
-	let abilityCost = Format.capitalize(feature.data.cost.toString());
-	if (typeof feature.data.cost === 'number') {
-		abilityCost += ' Cost';
-	}
-	let ability = 'Ability';
-	if (feature.data.count > 1)
-		ability = 'Abilities';
+	const abilityCost = feature.data.cost === 'signature'
+		? 'Фірмова'
+		: `${feature.data.cost}-очкова`;
+	const ability = feature.data.count > 1 ? 'класові здібності' : 'класова здібність';
 
 	let selectedOptions;
 	if (feature.data.selectedIDs.length) {
@@ -231,13 +229,13 @@ const ClassAbilityFeatureComponent = (feature: FeatureClassAbility) => {
 		});
 	} else {
 		selectedOptions = [
-			<div className='feature-iteration no-selection' key='unselected'>Unselected</div>
+			<div className='feature-iteration no-selection' key='unselected'>Не вибрано</div>
 		];
 	}
 	return (
 		<>
 			<div className='feature-line'>
-				• {abilityCost} Class {ability}:
+				• {abilityCost} {ability}:
 			</div>
 			{selectedOptions}
 		</>
@@ -296,7 +294,7 @@ const DomainFeatureComponent = (feature: FeatureDomain | FeatureDomainFeature) =
 		});
 	} else {
 		selectedOptions = [
-			<div className='feature-iteration no-selection' key='unselected'>Unselected</div>
+			<div className='feature-iteration no-selection' key='unselected'>Не вибрано</div>
 		];
 	}
 	return (
@@ -313,7 +311,7 @@ const ConditionImmunityFeatureComponent = (feature: FeatureConditionImmunity) =>
 	});
 	return (
 		<>
-			<div className='feature-line'><strong>• {feature.name}</strong>: Immune to </div>
+			<div className='feature-line'><strong>• {feature.name}</strong>: Імунітет до </div>
 			{immunities}
 		</>
 	);
@@ -333,7 +331,7 @@ const HeroicResourceComponent = (feature: FeatureHeroicResource) => {
 const KitFeatureComponent = (feature: FeatureKit) => {
 	let displayName = feature.name;
 	if (!feature.description.length) {
-		displayName = 'You can use a Kit';
+		displayName = 'Можна використовувати набір';
 	}
 	return (
 		<>
@@ -349,7 +347,7 @@ const FollowerFeatureComponent = (feature: FeatureFollower) => {
 	const follower = feature.data.follower;
 	return (
 		<div className='feature-line'>
-			<strong>• Follower: </strong>
+			<strong>• Прибічник: </strong>
 			{follower.name}
 			{follower.type ?
 				<em> ({follower.type})</em>

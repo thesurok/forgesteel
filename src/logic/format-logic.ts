@@ -4,6 +4,7 @@ import { AbilityType } from '@/models/ability';
 import { AbilityUsage } from '@/enums/ability-usage';
 import { Size } from '@/models/size';
 import { Speed } from '@/models/speed';
+import { getAbilityUsageLabel } from '@/utils/ability-usages';
 
 export class FormatLogic {
 	static getAbilityType = (type: AbilityType) => {
@@ -12,7 +13,7 @@ export class FormatLogic {
 		}
 		const qualifiers = (type.qualifiers ?? []).map(q => `(${q})`);
 
-		return [ type.free ? 'Free' : undefined, type.usage, type.order, ...qualifiers ]
+		return [getAbilityUsageLabel(type.usage, type.free), type.order, ...qualifiers]
 			.filter(x => x)
 			.join(' ');
 	};

@@ -53,7 +53,7 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 * You gain a bonus to your jumping distance equal to your echelon.
 * You can jump out of difficult or damaging terrain.
 * Your jump distance can exceed your speed.
-* Once per round, upon taking damage, you can jump up to your long jump distance as a free triggered action. This movement doesn't provoke opportunity attacks.`
+* Once per round, upon taking damage, you can jump up to your long jump distance as a безкоштовна тригерна дія. This movement doesn't provoke opportunity attacks.`
 		}),
 		FactoryLogic.feature.create({
 			id: 'boggit-3',
@@ -134,7 +134,7 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 					feature: FactoryLogic.feature.create({
 						id: 'boggit-4e',
 						name: 'Spadefeet Burrowing',
-						description: 'Your limbs are adapted for digging. You can automatically burrow horizontally at full speed while moving and you can use the Dig maneuver.'
+						description: 'Your limbs are adapted for digging. You can automatically burrow horizontally at full speed while moving and you can use the Dig маневр.'
 					}),
 					value: 2
 				},
@@ -158,9 +158,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: '2 sonic damage; push 1',
-													tier2: '3 sonic damage; push 2',
-													tier3: '5 sonic damage; push 3'
+													tier1: '2 звукової шкоди; відштовхнути на 1',
+													tier2: '3 звукової шкоди; відштовхнути на 2',
+													tier3: '5 звукової шкоди; відштовхнути на 3'
 												})
 											)
 										]
@@ -201,9 +201,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: '2 psychic damage; П < [слабкий], frightened (EoT)',
-													tier2: '3 psychic damage; П < [середній], frightened (EoT)',
-													tier3: '5 psychic damage; П < [сильний], frightened (EoT)'
+													tier1: '2 психічної шкоди; П < [слабкий], зляканий (до кінця ходу)',
+													tier2: '3 психічної шкоди; П < [середній], зляканий (до кінця ходу)',
+													tier3: '5 психічної шкоди; П < [сильний], зляканий (до кінця ходу)'
 												})
 											)
 										]
@@ -244,9 +244,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: 'R < [слабкий], taunted (save ends)',
-													tier2: 'R < [середній], taunted (save ends)',
-													tier3: 'R < [сильний], taunted (save ends)'
+													tier1: 'Р < [слабкий], спровокований (рят. кидок закінчує)',
+													tier2: 'Р < [середній], спровокований (рят. кидок закінчує)',
+													tier3: 'Р < [сильний], спровокований (рят. кидок закінчує)'
 												})
 											)
 										]
@@ -269,9 +269,9 @@ Your strong, elongated hind legs make you an exceptional jumper. You gain the fo
 											FactoryLogic.createAbilitySectionRoll(
 												FactoryLogic.createPowerRoll({
 													characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-													tier1: '1 psychic damage; I < [слабкий], dazed (EoT)',
-													tier2: '2 psychic damage; I < [середній], dazed (EoT)',
-													tier3: '3 psychic damage; I < [сильний], dazed (EoT)'
+													tier1: '1 психічної шкоди; І < [слабкий], приголомшений (до кінця ходу)',
+													tier2: '2 психічної шкоди; І < [середній], приголомшений (до кінця ходу)',
+													tier3: '3 психічної шкоди; І < [сильний], приголомшений (до кінця ходу)'
 												})
 											)
 										]
@@ -331,7 +331,7 @@ When choosing an ancestry, you can choose to be a vampire. A hero with the vampi
 		FactoryLogic.feature.create({
 			id: 'vampire-ancestry-1',
 			name: 'Bloodthirst',
-			description: 'You gain an edge on ability rolls made against bleeding, winded, or dying creatures. If there is a bleeding, winded, or dying creature within 10 squares of you, you take a bane on ability rolls against creatures not suffering from any of these conditions. Using the Sanguine Kiss maneuver suppresses the drawback of this feature until the start of your next turn.'
+			description: 'You gain an edge on ability rolls made against bleeding, winded, or dying creatures. If there is a bleeding, winded, or dying creature within 10 squares of you, you take a bane on ability rolls against creatures not suffering from any of these conditions. Using the Sanguine Kiss маневр suppresses the drawback of this feature until the start of your next turn.'
 		}),
 		FactoryLogic.feature.createAncestry({
 			id: 'vampire-ancestry-2',
@@ -372,7 +372,7 @@ When choosing an ancestry, you can choose to be a vampire. A hero with the vampi
 					description: `
 You can't suffocate, but you need to feed on the blood of living creatures to stay alive — or undead. If you don't consume blood for long periods of time (as decided by the Director, typically a few weeks), you go feral and lose control of your character. The Director decides when you regain control of your character, which usually happens after your character sates their thirst by drinking blood of the first creature they stumble upon. Despite being undead, you still do have a soul — a corrupted one, but a soul nonetheless.
 
-Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any holy damage, or if your body is exposed to sunlight for a long period of time (as decided by the Director, typically a few days), your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value. You can't regain Stamina this way while inert and exposed to sunlight.`
+Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take основні дії, маневри, дії руху, or тригерні дії. While inert this way, if you take any holy damage, or if your body is exposed to sunlight for a long period of time (as decided by the Director, typically a few days), your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value. You can't regain Stamina this way while inert and exposed to sunlight.`
 				})
 			]
 		}),
@@ -384,7 +384,7 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 					feature: FactoryLogic.feature.create({
 						id: 'vampire-ancestry-5a',
 						name: 'Draining Passion',
-						description: 'Your bites sap strength from your prey. When you use the Sanguine Kiss maneuver, the target is M < Average weakened (save ends).'
+						description: 'Your bites sap strength from your prey. When you use the Sanguine Kiss маневр, the target is С < Average weakened (save ends).'
 					}),
 					value: 1
 				},
@@ -400,7 +400,7 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 					feature: FactoryLogic.feature.create({
 						id: 'vampire-ancestry-5c',
 						name: 'Immodest Drinking',
-						description: 'When you are winded and use the Sanguine Kiss maneuver, you can spend a Recovery as part of the ability.'
+						description: 'When you are winded and use the Sanguine Kiss маневр, you can spend a Recovery as part of the ability.'
 					}),
 					value: 1
 				},
@@ -569,7 +569,7 @@ On your turn you can take psychic damage equal to the amount of thirst you have 
 
 | Thirst | Benefit |
 |:=======|:========|
-| 2      | You gain a bonus to speed and to the distance you can shift when you take the Disengage move action equal to your Presence score. |
+| 2      | You gain a bonus to speed and to the distance you can shift when you take the Disengage дія руху equal to your Presence score. |
 | 4      | The first time on a turn that you deal damage to a bleeding, winded, or dying creature, you gain 1 surge, which you can immediately spend. |
 | 6      | You gain an edge on abilities used against bleeding, winded, or dying creatures. |
 
@@ -577,7 +577,7 @@ On your turn you can take psychic damage equal to the amount of thirst you have 
 |:=======|:=========|
 | 4      | You take a bane on abilities used against creatures that are not bleeding, winded, or dying. |
 | 8      | Your Reason, Intuition, and Presence scores count as 1 lower for the purpose of resisting potencies until the start of your next turn. |
-| 12     | At the start of each of your turns, or immediately if you reach this drawback during your turn, you must use your Drink Most Exquisite ability as a free maneuver against the nearest bleeding, winded, or dying creature, or against the nearest creature if there are no such creatures. You must use your move action to move within distance of the target if necessary, and if you can't, convert your main action into a move action to move as close as possible to a target. Once you harm a creature this way, you may continue the rest of your turn as normal. If you are unable to get within distance of a creature at all, you move as close as possible to the nearest creature and end your turn. |
+| 12     | At the start of each of your turns, or immediately if you reach this drawback during your turn, you must use your Drink Most Exquisite ability as a безкоштовний маневр against the nearest bleeding, winded, or dying creature, or against the nearest creature if there are no such creatures. You must use your дія руху to move within distance of the target if necessary, and if you can't, convert your основна дія into a дія руху to move as close as possible to a target. Once you harm a creature this way, you may continue the rest of your turn as normal. If you are unable to get within distance of a creature at all, you move as close as possible to the nearest creature and end your turn. |
 `
 				}),
 				FactoryLogic.feature.createMultiple({
@@ -615,7 +615,7 @@ On your turn you can take psychic damage equal to the amount of thirst you have 
 							description: `
 You can't suffocate, but you need to feed on the blood of living creatures to stay alive — or undead. If you don't consume blood for long periods of time (as decided by the Director, typically a few weeks), you go feral and lose control of your character. The director decides if and when you regain control of your character, which usually happens after your character satiates their thirst by drinking blood of the first creature they stumble upon. Despite being undead, you still do have a soul — a corrupted one, but a soul nonetheless.
 
-Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any holy damage, or if your body is exposed to sunlight for a long period of time (as decided by the Director, typically a few days), your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value. You can't regain Stamina this way while inert and exposed to sunlight.`
+Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can’t stand. You continue to observe your surroundings, but you can’t speak, take основні дії, маневри, дії руху, or тригерні дії. While inert this way, if you take any holy damage, or if your body is exposed to sunlight for a long period of time (as decided by the Director, typically a few days), your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value. You can't regain Stamina this way while inert and exposed to sunlight.`
 						})
 					]
 				}),
@@ -637,8 +637,8 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 Spending additional thirst on this ability grants you the following benefits:
 
 * For each additional thirst spent, the corruption damage dealt and temporary Stamina gained increases by 1.
-* If you've spent at least 3 total thirst on this ability, the target is M < [середній] weakened (save ends), and you can spend a Recovery.
-* If you've spent at least 5 total thirst on this ability, the target is M < [сильний] weakened (save ends) instead, and you can spend another Recovery.
+* If you've spent at least 3 total thirst on this ability, the target is С < [середній] weakened (save ends), and you can spend a Recovery.
+* If you've spent at least 5 total thirst on this ability, the target is С < [сильний] weakened (save ends) instead, and you can spend another Recovery.
 
 For each condition the target suffers from, treat the thirst spent on this ability as 1 higher.`
 							})
@@ -683,7 +683,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.feature.create({
 					id: 'vampire-class-3-',
 					name: 'Predatory Senses',
-					description: 'Your heightened senses of sight, smell, and hearing make you excellent at finding hidden prey. You gain a double edge on tests made to search for hidden creatures. Once on each of your turns, you can Search for Hidden Creatures as a free maneuver. You ignore concealment and creatures that are bleeding, winded, or dying can\'t be hidden from you.'
+					description: 'Your heightened senses of sight, smell, and hearing make you excellent at finding hidden prey. You gain a double edge on tests made to search for hidden creatures. Once on each of your turns, you can Search for Hidden Creatures as a безкоштовний маневр. You ignore concealment and creatures that are bleeding, winded, or dying can\'t be hidden from you.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: 'vampire-class-3-2',
@@ -706,9 +706,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '2 + С or A damage; slide 1',
-						tier2: '4 + С or A damage; slide 2',
-						tier3: '6 + С or A damage; slide 3'
+						tier1: '2 + С або Л шкоди; зсунути на 1',
+						tier2: '4 + С або Л шкоди; зсунути на 2',
+						tier3: '6 + С або Л шкоди; зсунути на 3'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Спочатку посуньте ціль. Ви не можете посунути її далі, ніж ваша дистанція ближнього бою. До початку вашого наступного ходу обʼєкти (включно зі стінами) рахуються як ваші союзники для цілей флангування. Якщо ціль флангована, ви отримуєте 1 сплеск, який можете використати негайно.')
@@ -730,9 +730,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '2 + С or A damage; Л < [слабкий], slowed (save ends)',
-						tier2: '5 + С or A damage; Л < [середній], slowed (save ends)',
-						tier3: '7 + С or A damage; Л < [сильний], slowed (save ends)'
+						tier1: '2 + С або Л шкоди; Л < [слабкий], сповільнений (рят. кидок закінчує)',
+						tier2: '5 + С або Л шкоди; Л < [середній], сповільнений (рят. кидок закінчує)',
+						tier3: '7 + С або Л шкоди; Л < [сильний], сповільнений (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -753,9 +753,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '2 + С or A damage; M < [слабкий], bleeding (save ends)',
-						tier2: '5 + С or A damage; M < [середній], bleeding (save ends)',
-						tier3: '7 + С or A damage; M < [сильний], bleeding (save ends)'
+						tier1: '2 + С або Л шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '5 + С або Л шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '7 + С або Л шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -773,9 +773,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: '4 + П sonic damage; I < [слабкий], dazed (EoT)',
-						tier2: '5 + П sonic damage; I < [середній], dazed (EoT)',
-						tier3: '7 + П sonic damage; I < [сильний], dazed (EoT)'
+						tier1: '4 + П звукової шкоди; І < [слабкий], приголомшений (до кінця ходу)',
+						tier2: '5 + П звукової шкоди; І < [середній], приголомшений (до кінця ходу)',
+						tier3: '7 + П звукової шкоди; І < [сильний], приголомшений (до кінця ходу)'
 					})
 				)
 			]
@@ -797,9 +797,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '3 damage; M < [слабкий], bleeding (save ends)',
-						tier2: '5 damage; M < [середній], bleeding (save ends)',
-						tier3: '8 damage; M < [сильний], bleeding (save ends)'
+						tier1: '3 шкоди; С < [слабкий], кровотеча (рят. кидок закінчує)',
+						tier2: '5 шкоди; С < [середній], кровотеча (рят. кидок закінчує)',
+						tier3: '8 шкоди; С < [сильний], кровотеча (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -820,9 +820,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '4 damage',
-						tier2: '6 damage',
-						tier3: '10 damage'
+						tier1: '4 шкоди',
+						tier2: '6 шкоди',
+						tier3: '10 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Ви зрушуєте на відстань до своєї швидкості під час використання цієї здібності. Це переміщення можна розбити до, після та між ударами по кожній цілі на ваш розсуд.')
@@ -841,9 +841,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '5 + С or A damage; П < [слабкий], frightened (EoT)',
-						tier2: '9 + С or A damage; П < [середній], frightened (EoT)',
-						tier3: '12 + С or A damage; П < [сильний], frightened (EoT)'
+						tier1: '5 + С або Л шкоди; П < [слабкий], зляканий (до кінця ходу)',
+						tier2: '9 + С або Л шкоди; П < [середній], зляканий (до кінця ходу)',
+						tier3: '12 + С або Л шкоди; П < [сильний], зляканий (до кінця ходу)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('Якщо ви використовуєте цю здібність як частину дії «Charge», ви отримуєте перевагу. Якщо ні, ви можете переміститися до половини вашої швидкості перед ударом. Кожен ворог, що знаходиться поруч із ціллю, штовхається від цілі на число клітинок, рівне вашому показнику Присутності.')
@@ -862,9 +862,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '5 damage',
-						tier2: '8 damage',
-						tier3: '11 damage'
+						tier1: '5 шкоди',
+						tier2: '8 шкоди',
+						tier3: '11 шкоди'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your Presence score for each enemy in the area.')
@@ -886,9 +886,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '7 + С or A damage; M < [слабкий], bleeding and weakened (save ends)',
-						tier2: '11 + С or A damage; M < [середній], bleeding and weakened (save ends)',
-						tier3: '16 + С or A damage; M < [сильний], bleeding and weakened (save ends)'
+						tier1: '7 + С або Л шкоди; С < [слабкий], кровотеча і ослаблений (рят. кидок закінчує)',
+						tier2: '11 + С або Л шкоди; С < [середній], кровотеча і ослаблений (рят. кидок закінчує)',
+						tier3: '16 + С або Л шкоди; С < [сильний], кровотеча і ослаблений (рят. кидок закінчує)'
 					})
 				)
 			]
@@ -906,9 +906,9 @@ For each condition the target suffers from, treat the thirst spent on this abili
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might, Characteristic.Agility],
-						tier1: '5 sonic damage; push 2; I < [слабкий] dazed (save ends)',
-						tier2: '8 sonic damage; push 4; I < [середній] dazed (save ends)',
-						tier3: '11 sonic damage; push 6; I < [сильний] dazed (save ends)'
+						tier1: '5 звукової шкоди; відштовхнути на 2; І < [слабкий] приголомшений (рят. кидок закінчує)',
+						tier2: '8 звукової шкоди; відштовхнути на 4; І < [середній] приголомшений (рят. кидок закінчує)',
+						tier3: '11 звукової шкоди; відштовхнути на 6; І < [сильний] приголомшений (рят. кидок закінчує)'
 					})
 				),
 				FactoryLogic.createAbilitySectionText('The targets are force moved one at a time, starting with the target nearest to you, and can be pushed into other targets in the same line.')
@@ -932,7 +932,7 @@ For each condition the target suffers from, treat the thirst spent on this abili
 							id: 'vampire-subclass-1-1-2',
 							name: 'Beast from the Mist',
 							description: `
-You specialize in attacking from hiding, and lurking in the shadows for your prey whets your appetite for violence. While you have concealment, you gain an edge on strikes and on the Grab maneuver against creatures that would take a bane on strikes made against creatures with concealment. Against such creatures, this edge replaces the edge granted by being hidden. Additionally, whenever you grab a creature, you can use a free triggered action to move up to half your speed or to move the grabbed creature into an unoccupied space adjacent to you.
+You specialize in attacking from hiding, and lurking in the shadows for your prey whets your appetite for violence. While you have concealment, you gain an edge on strikes and on the Grab маневр against creatures that would take a bane on strikes made against creatures with concealment. Against such creatures, this edge replaces the edge granted by being hidden. Additionally, whenever you grab a creature, you can use a безкоштовна тригерна дія to move up to half your speed or to move the grabbed creature into an unoccupied space adjacent to you.
 
 ### Shadow Damage
 
@@ -1010,9 +1010,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility],
-								tier1: '2 + С or A damage',
-								tier2: '4 + С or A damage',
-								tier3: '6 + С or A damage'
+								tier1: '2 + С або Л шкоди',
+								tier2: '4 + С або Л шкоди',
+								tier3: '6 + С або Л шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('You can shift up to half your speed after the strike.'),
@@ -1032,10 +1032,10 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 					target: 'Себе',
 					cost: 3,
 					sections: [
-						FactoryLogic.createAbilitySectionText('You can teleport up to a number of squares equal to 10 + your Presence score. You have concealment until the start of your next turn. After you teleport, you can make a free strike as a free maneuver.'),
+						FactoryLogic.createAbilitySectionText('You can teleport up to a number of squares equal to 10 + your Presence score. You have concealment until the start of your next turn. After you teleport, you can make a free strike as a безкоштовний маневр.'),
 						FactoryLogic.createAbilitySectionField({
 							name: 'Shroud',
-							effect: 'After you teleport, you can use a signature ability or Drink Most Exquisite as a free maneuver instead of the free strike.'
+							effect: 'After you teleport, you can use a signature ability or Drink Most Exquisite as a безкоштовний маневр instead of the free strike.'
 						})
 					]
 				}),
@@ -1052,9 +1052,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 + П shadow damage; Л < [слабкий], restrained (save ends)',
-								tier2: '6 + П shadow damage; Л < [середній], restrained (save ends)',
-								tier3: '8 + П shadow damage; Л < [сильний], restrained (save ends)'
+								tier1: '4 + П тіньової шкоди; Л < [слабкий], скутий (рят. кидок закінчує)',
+								tier2: '6 + П тіньової шкоди; Л < [середній], скутий (рят. кидок закінчує)',
+								tier3: '8 + П тіньової шкоди; Л < [сильний], скутий (рят. кидок закінчує)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('While the target is restrained this way, at the start of each of their turns, they take shadow damage equal to your Presence score.')
@@ -1073,9 +1073,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '3 shadow damage; Л < [слабкий], restrained (save ends)',
-								tier2: '4 shadow damage; Л < [середній], restrained (save ends)',
-								tier3: '5 shadow damage; Л < [сильний], restrained (save ends)'
+								tier1: '3 тіньової шкоди; Л < [слабкий], скутий (рят. кидок закінчує)',
+								tier2: '4 тіньової шкоди; Л < [середній], скутий (рят. кидок закінчує)',
+								tier3: '5 тіньової шкоди; Л < [сильний], скутий (рят. кидок закінчує)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('Each target standing on the ground takes 1d3 extra damage, and the potency of this ability increases by 1 against them.')
@@ -1094,9 +1094,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: 'blind (EoT); П < [слабкий], frightened',
-								tier2: 'blind (save ends); П < [середній], frightened',
-								tier3: 'blind (save ends); П < [сильний], frightened'
+								tier1: 'засліплений (до кінця ходу); П < [слабкий], зляканий',
+								tier2: 'засліплений (рят. кидок закінчує); П < [середній], зляканий',
+								tier3: 'засліплений (рят. кидок закінчує); П < [сильний], зляканий'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('A blind target treats all other creatures and objects as if they are invisible, and doesn\'t have line of effect to creatures or objects more than 5 squares away. A target made frightened this way is frightened as long as they are blind.')
@@ -1132,9 +1132,9 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 shadow damage',
-								tier2: '6 shadow damage',
-								tier3: '8 shadow damage'
+								tier1: '4 тіньової шкоди',
+								tier2: '6 тіньової шкоди',
+								tier3: '8 тіньової шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, each enemy who enters the area for the first time in a combat round or starts their turn there takes shadow damage equal to your Presence score. In addition, the area blocks line of effect for enemies.')
@@ -1153,12 +1153,12 @@ Some of your abilities have a shroud effect entry. Whenever you use a shroud abi
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '8 + П shadow damage; pull 3',
-								tier2: '12 + П shadow damage; pull 5',
-								tier3: '16 + П shadow damage; pull 7'
+								tier1: '8 + П тіньової шкоди; притягнути на 3',
+								tier2: '12 + П тіньової шкоди; притягнути на 5',
+								tier3: '16 + П тіньової шкоди; притягнути на 7'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('If you pull the target adjacent to you, you can use a signature ability or your Drink Most Exquisite ability against them as a free maneuver.')
+						FactoryLogic.createAbilitySectionText('If you pull the target adjacent to you, you can use a signature ability or your Drink Most Exquisite ability against them as a безкоштовний маневр.')
 					]
 				})
 			],
@@ -1266,9 +1266,9 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility],
-								tier1: '3 + С or A damage',
-								tier2: '5 + С or A damage',
-								tier3: '8 + С or A damage'
+								tier1: '3 + С або Л шкоди',
+								tier2: '5 + С або Л шкоди',
+								tier3: '8 + С або Л шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('The target becomes infected and takes extra poison damage equal to your virulence.')
@@ -1287,9 +1287,9 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 poison damage',
-								tier2: '5 poison damage',
-								tier3: '7 poison damage'
+								tier1: '4 отруйної шкоди',
+								tier2: '5 отруйної шкоди',
+								tier3: '7 отруйної шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('The target takes extra poison damage equal to your virulence. This ability ignores an amount of damage immunity equal to your Presence score.')
@@ -1329,9 +1329,9 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '9 + П acid damage',
-								tier2: '13 + П acid damage',
-								tier3: '18 + П acid damage'
+								tier1: '9 + П кислотної шкоди',
+								tier2: '13 + П кислотної шкоди',
+								tier3: '18 + П кислотної шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('This ability ignores an amount of damage immunity equal to your Presence score.'),
@@ -1358,9 +1358,9 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '4 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('An appendage originating from each target can strike the target themselves, a creature adjacent to the target, or not strike at all. After the strike, the appendage withers and dies. Creatures hit with the strike becomes infected. A creature can be hit with only one such strike.'),
@@ -1373,7 +1373,7 @@ Some of your abilities have the Spore keyword. Abilities with the Spore keyword 
 							effect: `
 The slide from the appendage's strike can be vertical.
 
-If the target is an enemy, the appendage doesn't immediately wither down and is making the target weakened until it is removed by the target or their ally with a maneuver. The appendage withers down and dies at the end of the encounter.`
+If the target is an enemy, the appendage doesn't immediately wither down and is making the target weakened until it is removed by the target or their ally with a маневр. The appendage withers down and dies at the end of the encounter.`
 						})
 					]
 				}),
@@ -1420,9 +1420,9 @@ If the target is an enemy, the appendage doesn't immediately wither down and is 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: '4 damage; M < [слабкий], slowed (save ends)',
-								tier2: '5 damage; M < [середній], slowed (save ends)',
-								tier3: '7 damage; M < [сильний], slowed (save ends)'
+								tier1: '4 шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+								tier2: '5 шкоди; С < [середній], сповільнений (рят. кидок закінчує)',
+								tier3: '7 шкоди; С < [сильний], сповільнений (рят. кидок закінчує)'
 							})
 						),
 						FactoryLogic.createAbilitySectionText('While slowed or restrained this way, at the start of each target\'s turn, they take damage equal to your Presence score + your virulence.'),
@@ -1480,9 +1480,9 @@ You've adopted the fighting traditions of knights and nobles. Protected by your 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage',
-							tier2: '5 + С or A damage',
-							tier3: '7 + С or A damage; M < [сильний], weakened (save ends)'
+							tier1: '2 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди',
+							tier3: '7 + С або Л шкоди; С < [сильний], ослаблений (рят. кидок закінчує)'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You gain temporary Stamina equal to your highest characteristic score.')
@@ -1524,9 +1524,9 @@ You are a master of a whip, and your weapon leaves gory marks on the bodies of y
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage; Л < [слабкий], bleeding (EoT)',
-							tier2: '5 + С or A damage; Л < [середній], bleeding (EoT)',
-							tier3: '8 + С or A damage; Л < [сильний], bleeding (save ends)'
+							tier1: '3 + С або Л шкоди; Л < [слабкий], кровотеча (до кінця ходу)',
+							tier2: '5 + С або Л шкоди; Л < [середній], кровотеча (до кінця ходу)',
+							tier3: '8 + С або Л шкоди; Л < [сильний], кровотеча (рят. кидок закінчує)'
 						})
 					)
 				]
@@ -1567,9 +1567,9 @@ You are all muscle, no finesse. You focus on being as brutal as possible for you
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might],
-							tier1: '3 + С damage',
-							tier2: '6 + С damage',
-							tier3: '9 + С damage; Л < [сильний], prone and bleeding (save ends)'
+							tier1: '3 + С шкоди',
+							tier2: '6 + С шкоди',
+							tier3: '9 + С шкоди; Л < [сильний], розпластаний і кровотеча (рят. кидок закінчує)'
 						})
 					)
 				]
@@ -1610,9 +1610,9 @@ You use your sharp, elongated claws to cut and tear your enemies, trying to inju
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '1 damage',
-							tier2: '3 damage',
-							tier3: '5 damage'
+							tier1: '1 шкоди',
+							tier2: '3 шкоди',
+							tier3: '5 шкоди'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('If you target two targets, this ability deals 2 extra damage to both of them. If you target only one target, this ability deals extra damage equal to 3 + your Might or Agility score.')
@@ -1633,7 +1633,7 @@ const deceptiveAppearance: Perk = {
 	description: `
 *Vampires only*
 
-An illusory glamor makes you attractive and easy on the eyes of the beholder. It is up to you if you still look like a vampire, a non-vampire member of your ancestry, or a member of another ancestry of the same size and general shape as yours. You can change your appearance as a maneuver. You gain an edge on Presence tests using the Flirt or Persuade skills. You gain a double edge on tests using the Disguise skill while pretending to be someone else.`,
+An illusory glamor makes you attractive and easy on the eyes of the beholder. It is up to you if you still look like a vampire, a non-vampire member of your ancestry, or a member of another ancestry of the same size and general shape as yours. You can change your appearance as a маневр. You gain an edge on Presence tests using the Flirt or Persuade skills. You gain a double edge on tests using the Disguise skill while pretending to be someone else.`,
 	type: FeatureType.Text,
 	data: null
 };
@@ -1645,14 +1645,14 @@ const insidiousMist: Perk = {
 	description: `
 *Vampires only*
 
-As a maneuver, you can turn into a cloud of sentient mist. In this form, you gain the following benefits and drawbacks:
+As a маневр, you can turn into a cloud of sentient mist. In this form, you gain the following benefits and drawbacks:
 
 * You can fly and hover. Your speed is equal to your highest characteristic score, and can't be increased or decreased in any way.
 * You can't be made prone, restrained, or grabbed, and those conditions end for you when you transform. If you were suffering from any other conditions beforehand, those conditions are suppressed until you revert back to your true form.
 * You can't be force moved unless the forced movement comes from a gust of wind or similar source, in which case the forced movement is doubled, or can explicitly affect gaseous objects. You don't take damage from forced movement.
 * You can move through very small spaces, but the smaller the space, the more time it takes to move through it, up to 1 minute to get through a keyhole-sized opening.
 * You have damage immunity equal to your level.
-* You can't use main actions, triggered actions, or free triggered actions, and the only maneuver you can use is a maneuver to revert back to your true, solid form.
+* You can't use основні дії, тригерні дії, or безкоштовні тригерні дії, and the only маневр you can use is a маневр to revert back to your true, solid form.
 * When you are dying, you revert back to your true, solid form and can't use your mist form until you are no longer dying.`,
 	type: FeatureType.Text,
 	data: null
@@ -1677,7 +1677,7 @@ const oneWithTheShadows: Perk = {
 	description: `
 *Vampires only*
 
-As a nocturnal predator, you embrace the shadows as they embrace you. You have a double edge on tests using the Hide and Sneak skills, but only when it's sufficiently dark (as determined by the Director). Additionally, at the start of an encounter, if you are in shadows or if it's sufficiently dark (as determined by the Director), you can use the Hide maneuver as a free triggered action.`,
+As a nocturnal predator, you embrace the shadows as they embrace you. You have a double edge on tests using the Hide and Sneak skills, but only when it's sufficiently dark (as determined by the Director). Additionally, at the start of an encounter, if you are in shadows or if it's sufficiently dark (as determined by the Director), you can use the Hide маневр as a безкоштовна тригерна дія.`,
 	type: FeatureType.Text,
 	data: null
 };

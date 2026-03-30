@@ -133,9 +133,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 					FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**. The same condition is imposed on each affected target'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Agility],
-						tier1: '5 fire damage; slowed or weakened (save ends)',
-						tier2: '5 fire damage; slowed or weakened (EoT)',
-						tier3: '5 fire damage'
+						tier1: '5 вогняної шкоди; сповільнений або ослаблений (рят. кидок закінчує)',
+						tier2: '5 вогняної шкоди; сповільнений або ослаблений (до кінця ходу)',
+						tier3: '5 вогняної шкоди'
 					}))
 				]
 			})
@@ -162,9 +162,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 					FactoryLogic.createAbilitySectionText('Each target who has a loyalty collar shifts up to their speed, then is reduced to 0 Stamina. After each target’s Loyalty Collar trait is resolved, each enemy adjacent to either target makes a **Presence test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Presence],
-						tier1: 'Push 4; the enemy is frightened of the nearest non-minion war dog (save end)',
-						tier2: 'Push 2; the enemy is frightened of the nearest non-minion war dog (EoT)',
-						tier3: 'Push 2'
+						tier1: 'Відштовхнути на 4; ворог is зляканий of the nearest non-minion war dog (save end)',
+						tier2: 'Відштовхнути на 2; ворог is зляканий of the nearest non-minion war dog (до кінця ходу)',
+						tier3: 'Відштовхнути на 2'
 					}))
 				]
 			}),
@@ -179,9 +179,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 					FactoryLogic.createAbilitySectionText('A bank of choking chemicals sweeps across the area of the enácounter map. Each enemy in the encounter makes a **Might test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Might],
-						tier1: '8 poison damage; dazed (Eot)',
-						tier2: '7 poison damage; weakened (EoT)',
-						tier3: '4 poison damage'
+						tier1: '8 отруйної шкоди; приголомшений (до кінця ходу)',
+						tier2: '7 отруйної шкоди; ослаблений (до кінця ходу)',
+						tier3: '4 отруйної шкоди'
 					}))
 				]
 			}),
@@ -199,9 +199,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 5,
-						tier1: '7 psychic damage',
-						tier2: '11 psychic damage; П < 4 frightened (save ends)',
-						tier3: '14 psychic damage; П < 5 frightened (save ends)'
+						tier1: '7 психічної шкоди',
+						tier2: '11 психічної шкоди; П < 4 зляканий (рят. кидок закінчує)',
+						tier3: '14 психічної шкоди; П < 5 зляканий (рят. кидок закінчує)'
 					})),
 					FactoryLogic.createAbilitySectionText('Each war dog within distance deals an extra 15 damage with strikes until the end of their next turn. Additionally, they end any effect on them that can be ended by a saving throw or that ends at the end of their turn, then shift up to their speed and can make a free strike.'),
 					FactoryLogic.createAbilitySectionText('**Special:** This ability can’t be used by a minion.')
@@ -241,9 +241,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('After using this ability, the commando can attempt to hide even if observed.')
 						]
@@ -286,11 +286,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('If used with the Charge main action, this ability gains an edge.')
+							FactoryLogic.createAbilitySectionText('If used with the Charge основна дія, this ability gains an edge.')
 						]
 					})
 				}),
@@ -328,9 +328,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores cover and concealment. ')
 						]
@@ -370,9 +370,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							}))
 						]
 					})
@@ -415,9 +415,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '5 damage; Л < 1 grabbed',
-								tier3: '6 damage; Л < 2 grabbed'
+								tier1: '4 шкоди',
+								tier2: '5 шкоди; Л < 1 схоплений',
+								tier3: '6 шкоди; Л < 2 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The amalgamite can have up to four targets grabbed at once.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -479,9 +479,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 fire damage',
-								tier2: '4 fire damage',
-								tier3: '5 fire damage'
+								tier1: '2 вогняної шкоди',
+								tier2: '4 вогняної шкоди',
+								tier3: '5 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is covered in sticky fire until the start of the crucibite’s next turn. Any creature who enters the area for the first time in a round or starts their turn there takes 2 fire damage.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -537,9 +537,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage; pull 1',
-								tier3: '5 damage; pull 2'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди; притягнути на 1',
+								tier3: '5 шкоди; притягнути на 2'
 							})),
 							FactoryLogic.createAbilitySectionText('The eviscerite can automatically grab a target pulled adjacent to them this way.')
 						]
@@ -597,9 +597,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 psychic damage; vertical slide 1',
-								tier2: '2 psychic damage; vertical slide 2',
-								tier3: '3 psychic damage; vertical slide 3'
+								tier1: '1 психічної шкоди; вертикально зсунути на 1',
+								tier2: '2 психічної шкоди; вертикально зсунути на 2',
+								tier3: '3 психічної шкоди; вертикально зсунути на 3'
 							}))
 						]
 					})
@@ -670,9 +670,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 poison damage; I < 0 frightened (save ends)',
-								tier2: '4 poison damage; I < 1 frightened (save ends)',
-								tier3: '5 poison damage; I < 2 frightened (save ends)'
+								tier1: '2 отруйної шкоди; І < 0 зляканий (рят. кидок закінчує)',
+								tier2: '4 отруйної шкоди; І < 1 зляканий (рят. кидок закінчує)',
+								tier3: '5 отруйної шкоди; І < 2 зляканий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is filled with a cloud of pestilence that lasts until the start of the pestilite’s next turn. Any creature who enters the area for the first time in a round or starts their turn there takes 2 poison damage.')
 						]
@@ -731,11 +731,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.createAbilitySectionText('A detonator attaches to the target. At the end of each round, roll a die. On an odd result, the detonator explodes, triggering the power roll.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 acid damage; M<0 bleeding (save ends)',
-								tier2: '6 acid damage; M<1 bleeding (save ends)',
-								tier3: '10 acid damage; M<2 bleeding (save ends)'
+								tier1: '4 кислотної шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '6 кислотної шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '10 кислотної шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('An adjacent creature can attempt an easy Agility test to remove the detonator as a maneuver. A failure does nothing, a success disarms and destroys the detonator, and a success with a reward allows the disarming creature to throw the detonator onto another target within 5 squares.')
+							FactoryLogic.createAbilitySectionText('An adjacent creature can attempt an easy Agility test to remove the detonator as a маневр. A failure does nothing, a success disarms and destroys the detonator, and a success with a reward allows the disarming creature to throw the detonator onto another target within 5 squares.')
 						]
 					})
 				}),
@@ -788,9 +788,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; slide 1',
-								tier2: '6 damage; slide 2',
-								tier3: '7 damage; slide 3'
+								tier1: '4 шкоди; зсунути на 1',
+								tier2: '6 шкоди; зсунути на 2',
+								tier3: '7 шкоди; зсунути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('The teletalite gains an edge on this ability if any ally is adjacent to the target.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -859,9 +859,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '4 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 5 squares of the subcommander can make a free strike against the target.')
 						]
@@ -921,13 +921,13 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; pull 1',
-								tier2: '12 damage; pull 2',
-								tier3: '15 damage; pull 3'
+								tier1: '8 шкоди; притягнути на 1',
+								tier2: '12 шкоди; притягнути на 2',
+								tier3: '15 шкоди; притягнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 10 squares of the ground commander can make a free strike.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'A target who has <code>I < 2</code> and who is adjacent to the ground commander after this ability is resolved is grabbed (save ends). This grab can’t be escaped using the Escape Grab maneuver. The ground commander can grab up to two creatures at a time.'
+								effect: 'A target who has <code>І < 2</code> and who is adjacent to the ground commander after this ability is resolved is grabbed (save ends). This grab can’t be escaped using the Escape Grab маневр. The ground commander can grab up to two creatures at a time.'
 							})
 						]
 					})
@@ -977,7 +977,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Кожен союзник у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target can make a ranged free strike, then immediately use the Charge main action.')
+							FactoryLogic.createAbilitySectionText('Each target can make a ranged free strike, then immediately use the Charge основна дія.')
 						]
 					})
 				}),
@@ -990,7 +990,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Один ворог',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each ally within 5 squares of the target moves up to their speed and can make a free strike against the target. If the target has <code>I < 2</code>, they are frightened of the ground commander (save ends).')
+							FactoryLogic.createAbilitySectionText('Each ally within 5 squares of the target moves up to their speed and can make a free strike against the target. If the target has <code>І < 2</code>, they are frightened of the ground commander (save ends).')
 						]
 					})
 				}),
@@ -1003,7 +1003,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Кожна істота в зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target ally shifts up to 2 squares and can use the Grab maneuver. Until the end of the encounter, each target enemy takes a bane on the Escape Grab maneuver.')
+							FactoryLogic.createAbilitySectionText('Each target ally shifts up to 2 squares and can use the Grab маневр. Until the end of the encounter, each target enemy takes a bane on the Escape Grab маневр.')
 						]
 					})
 				})
@@ -1036,9 +1036,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 lightning damage',
-								tier2: '5 lightning damage; the lightning spreads 1 square',
-								tier3: '7 lightning damage; the lightning spreads 2 squares'
+								tier1: '3 блискавичної шкоди',
+								tier2: '5 блискавичної шкоди; the lightning spreads 1 клітинку',
+								tier3: '7 блискавичної шкоди; the lightning spreads 2 клітинок'
 							})),
 							FactoryLogic.createAbilitySectionText('The lightning’s spread is the distance it arcs from a target to nearby enemies. Each enemy within that distance takes 2 lightning damage.')
 						]
@@ -1087,9 +1087,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage',
-								tier2: '4 damage; push 1',
-								tier3: '6 damage; push 3'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди; відштовхнути на 1',
+								tier3: '6 шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target within 2 squares of the sweeper takes an extra 3 damage.')
 						]
@@ -1132,9 +1132,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 poison damage',
-								tier2: '5 poison damage',
-								tier3: '7 poison damage'
+								tier1: '3 отруйної шкоди',
+								tier2: '5 отруйної шкоди',
+								tier3: '7 отруйної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The war frog can jump 3 squares before or after making the strike. If they end this jump in cover or concealment, they can attempt to hide.')
 						]
@@ -1179,9 +1179,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage',
-								tier2: '4 damage; push 1',
-								tier3: '6 damage; push 3'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди; відштовхнути на 1',
+								tier3: '6 шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores cover and concealment. The arachnite chooses one of the following damage types when making the strike: acid, cold, fire, lightning, poison, psychic, or sonic.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1258,9 +1258,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage; push 1',
-								tier2: '5 damage; push 3',
-								tier3: '6 damage; push 5; Л < 3 slowed (save ends)'
+								tier1: '3 шкоди; відштовхнути на 1',
+								tier2: '5 шкоди; відштовхнути на 3',
+								tier3: '6 шкоди; відштовхнути на 5; Л < 3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The doomthief can’t willingly move on the same turn they use this ability.')
 						]
@@ -1313,9 +1313,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage',
-								tier2: '8 damage',
-								tier3: '10 damage; I < 3 frightened (save ends)'
+								tier1: '6 шкоди',
+								tier2: '8 шкоди',
+								tier3: '10 шкоди; І < 3 зляканий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability gains an edge while charging.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1336,9 +1336,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionText('The equivite moves up to their speed and ignores difficult terrain. Any mundane size 1 object whose space they move through is destroyed. The equivite makes one power roll against each enemy whose space they move through for the first time.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '2 damage; push 1',
-								tier2: '4 damage; push 2',
-								tier3: '5 damage; push 3; M < 3 prone'
+								tier1: '2 шкоди; відштовхнути на 1',
+								tier2: '4 шкоди; відштовхнути на 2',
+								tier3: '5 шкоди; відштовхнути на 3; С < 3 розпластаний'
 							}))
 						]
 					})
@@ -1376,9 +1376,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage',
-								tier2: '8 damage; Л < 2 bleeding (save ends)',
-								tier3: '10 damage; Л < 3 bleeding and weakened (save ends)'
+								tier1: '6 шкоди',
+								tier2: '8 шкоди; Л < 2 кровотеча (рят. кидок закінчує)',
+								tier3: '10 шкоди; Л < 3 кровотеча і ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability deals an extra 6 damage if the hypokrite is hidden or disguised.')
 						]
@@ -1401,7 +1401,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				FactoryLogic.feature.create({
 					id: 'wardog-2nd-7-feature-4',
 					name: 'Face in the Crowd',
-					description: 'The hypokrite is invisible while adjacent to any ally who isn’t hidden, and they can attempt to hide even while observed. Whenever they use the Hide maneuver, the hypokrite can disguise themself as another creature within line of effect.'
+					description: 'The hypokrite is invisible while adjacent to any ally who isn’t hidden, and they can attempt to hide even while observed. Whenever they use the Hide маневр, the hypokrite can disguise themself as another creature within line of effect.'
 				})
 			]
 		}),
@@ -1439,9 +1439,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '8 damage; Р < 3 the target is dazzled (save ends)'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '8 шкоди; Р < 3 ціль is dazzled (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A dazzled target takes a bane on strikes and has line of effect only within 1 square.')
 						]
@@ -1459,7 +1459,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.createAbilitySectionText('The mischievite swaps positions with the target. An ally targeted by this ability can make a free strike before or after being swapped.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'The mischievite can use this ability as a triggered action when they are targeted by an ability. If they do, the swapped target becomes the new target of the triggering ability.'
+								effect: 'The mischievite can use this ability as a тригерна дія when they are targeted by an ability. If they do, the swapped target becomes the new target of the triggering ability.'
 							})
 						]
 					})
@@ -1503,9 +1503,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.createAbilitySectionText('The target dies and the thanatite makes one power roll against each enemy within 2 squares of the target.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 corruption damage; Л < 1 slowed (save ends)',
-								tier2: '5 corruption damage; Л < 2 slowed (save ends)',
-								tier3: '7 corruption damage; Л < 3 restrained (save ends)'
+								tier1: '3 шкоди від скверни; Л < 1 сповільнений (рят. кидок закінчує)',
+								tier2: '5 шкоди від скверни; Л < 2 сповільнений (рят. кидок закінчує)',
+								tier3: '7 шкоди від скверни; Л < 3 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -1560,9 +1560,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 corruption damage',
-								tier2: '8 corruption damage; the target is marked (save ends)',
-								tier3: '9 corruption damage; the target is marked (save ends)'
+								tier1: '6 шкоди від скверни',
+								tier2: '8 шкоди від скверни; ціль is marked (рят. кидок закінчує)',
+								tier3: '9 шкоди від скверни; ціль is marked (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Strikes made against a target marked this way gain an edge. Additionally, whenever the tormentite takes damage, each target marked by them takes 3 damage.')
 						]
@@ -1580,9 +1580,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 corruption damage',
-								tier2: '4 corruption damage',
-								tier3: '5 corruption damage; one ally in the area can end one effect on them that can be ended by a saving throw, and can give that effect to one target'
+								tier1: '2 шкоди від скверни',
+								tier2: '4 шкоди від скверни',
+								tier3: '5 шкоди від скверни; one ally in the area can end one effect on them that can be ended by a saving throw, і can give that effect to one target'
 							})),
 							FactoryLogic.createAbilitySectionText('The tormentite regains 2 Stamina for each creature targeted by this ability.')
 						]
@@ -1621,9 +1621,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 poison damage',
-								tier2: '8 poison damage',
-								tier3: '9 poison damage; M < 3 weakened (save ends)'
+								tier1: '6 отруйної шкоди',
+								tier2: '8 отруйної шкоди',
+								tier3: '9 отруйної шкоди; С < 3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target enemy is subject to this ability’s power roll. A target ally instead gains 5 temporary Stamina and can make a free strike.')
 						]
@@ -1697,9 +1697,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage',
-								tier2: '16 damage; taunted (EoT)',
-								tier3: '19 damage; taunted (EoT)'
+								tier1: '11 шкоди',
+								tier2: '16 шкоди; спровокований (до кінця ходу)',
+								tier3: '19 шкоди; спровокований (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('A creature taunted this way takes a bane on strikes.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1748,9 +1748,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionText('The tetrarch can jump up to 7 squares before using this ability.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: 'Push 2; I < 2 frightened (save ends)',
-								tier2: 'Push 4; I < 3 frightened (save ends)',
-								tier3: 'Push 5; I < 4 frightened (save ends)'
+								tier1: 'Відштовхнути на 2; І < 2 зляканий (рят. кидок закінчує)',
+								tier2: 'Відштовхнути на 4; І < 3 зляканий (рят. кидок закінчує)',
+								tier3: 'Відштовхнути на 5; І < 4 зляканий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1765,9 +1765,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '7 fire damage; Л < 2 slowed (EoT)',
-								tier2: '13 fire damage; Л < 3 slowed (save ends)',
-								tier3: '16 fire damage; Л < 4 slowed (save ends)'
+								tier1: '7 вогняної шкоди; Л < 2 сповільнений (до кінця ходу)',
+								tier2: '13 вогняної шкоди; Л < 3 сповільнений (рят. кидок закінчує)',
+								tier3: '16 вогняної шкоди; Л < 4 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is set ablaze until the end of the encounter. While ablaze, the area is difficult terrain, and any creature takes 2 fire damage for each square in the area they enter for the first time in a round.')
 						]
@@ -1814,9 +1814,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage',
-								tier2: '4 damage; 3 psychic damage',
-								tier3: '4 damage; 3 psychic damage; the target must move their speed in a straight line away from the draconite'
+								tier1: '4 шкоди',
+								tier2: '4 шкоди; 3 психічної шкоди',
+								tier3: '4 шкоди; 3 психічної шкоди; ціль must move their speed in a straight line away from the draconite'
 							})),
 							FactoryLogic.createAbilitySectionText('If this damage leaves the target winded, they are frightened of the draconite until the end of the target’s next turn.')
 						]
@@ -1856,9 +1856,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 fire damage',
-								tier2: '7 fire damage; push 1',
-								tier3: '8 fire damage; push 3'
+								tier1: '4 вогняної шкоди',
+								tier2: '7 вогняної шкоди; відштовхнути на 1',
+								tier3: '8 вогняної шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('The space the target occupies fills with dark smoke and blocks line of effect until the start of the saboteur’s next turn.')
 						]
@@ -1898,9 +1898,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '8 damage; I < 3 the target is frightened of all shrikestroops (EoT)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '8 шкоди; І < 3 ціль is зляканий of all shrikestroops (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target must move their speed in a straight line away from the shriketroop.')
 						]
@@ -1939,9 +1939,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage',
-								tier2: '10 damage; vertical slide 2',
-								tier3: '12 damage; vertical slide 3'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди; вертикально зсунути на 2',
+								tier3: '12 шкоди; вертикально зсунути на 3'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'An enemy force moved by this ability is grabbed instead.'
@@ -1961,9 +1961,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '2 acid damage; M < 2 slowed (save ends)',
-								tier2: '4 acid damage; M < 3 slowed (save ends)',
-								tier3: '6 acid damage; M < 4 slowed (save ends)'
+								tier1: '2 кислотної шкоди; С < 2 сповільнений (рят. кидок закінчує)',
+								tier2: '4 кислотної шкоди; С < 3 сповільнений (рят. кидок закінчує)',
+								tier3: '6 кислотної шкоди; С < 4 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain.')
 						]
@@ -2007,11 +2007,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage; push 1',
-								tier2: '10 damage; push 3',
-								tier3: '11 damage; push 5'
+								tier1: '7 шкоди; відштовхнути на 1',
+								tier2: '10 шкоди; відштовхнути на 3',
+								tier3: '11 шкоди; відштовхнути на 5'
 							})),
-							FactoryLogic.createAbilitySectionText('Any target pushed into an obstacle is knocked prone, and if they have <code>M < 3</code> they are restrained (save ends).')
+							FactoryLogic.createAbilitySectionText('Any target pushed into an obstacle is knocked prone, and if they have <code>С < 3</code> they are restrained (save ends).')
 						]
 					})
 				}),
@@ -2032,7 +2032,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				FactoryLogic.feature.create({
 					id: 'wardog-3rd-5-feature-3',
 					name: 'Set Up and Tear Down',
-					description: 'At the start of each of the ballistite’s turns, they can gain a +4 bonus to speed until the end of their turn. While their speed is greater than 0 by any means, they can’t use main actions or maneuvers.'
+					description: 'At the start of each of the ballistite’s turns, they can gain a +4 bonus to speed until the end of their turn. While their speed is greater than 0 by any means, they can’t use основні дії or маневри.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'wardog-3rd-5-feature-4',
@@ -2070,9 +2070,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '8 damage',
-								tier2: '11 damage',
-								tier3: '12 damage; M < 4 bleeding and weakened (save ends)'
+								tier1: '8 шкоди',
+								tier2: '11 шкоди',
+								tier3: '12 шкоди; С < 4 кровотеча і ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The blackcap can teleport up to their speed before using this ability, creating an ash clone (see below) in their original square.')
 						]
@@ -2099,7 +2099,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				FactoryLogic.feature.create({
 					id: 'wardog-3rd-6-feature-4',
 					name: 'Duplicating Loyalty Collar',
-					description: 'When the blackcap or any of their ash clones is reduced to 0 Stamina, that creature’s loyalty collar explodes, dealing 3d6 poison damage to each adjacent enemy and object. If any adjacent enemy has <code>A < 3</code> they are also weakened (save ends).'
+					description: 'When the blackcap or any of their ash clones is reduced to 0 Stamina, that creature’s loyalty collar explodes, dealing 3d6 poison damage to each adjacent enemy and object. If any adjacent enemy has <code>Л < 3</code> they are also weakened (save ends).'
 				})
 			]
 		}),
@@ -2129,9 +2129,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; push 4; prone',
-								tier2: '17 damage; slide 4; prone or M < 3 dazed (save ends)',
-								tier3: '21 damage; slide 4; prone; M < 4 dazed (save ends)'
+								tier1: '12 шкоди; відштовхнути на 4; розпластаний',
+								tier2: '17 шкоди; зсунути на 4; розпластаний або С < 3 приголомшений (рят. кидок закінчує)',
+								tier3: '21 шкоди; зсунути на 4; розпластаний; С < 4 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -2187,11 +2187,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '3 fire damage; Л < 2 the target is seared (save ends)',
-								tier2: '6 fire damage; Л < 3 the target is seared (save ends)',
-								tier3: '8 fire damage; Л < 4 the target is seared (save ends)'
+								tier1: '3 вогняної шкоди; Л < 2 ціль is seared (рят. кидок закінчує)',
+								tier2: '6 вогняної шкоди; Л < 3 ціль is seared (рят. кидок закінчує)',
+								tier3: '8 вогняної шкоди; Л < 4 ціль is seared (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('A seared creature takes a bane on strikes and has damage weakness 5. If this ability obtains a tier 3 outcome against one or more creatures who are already seared, the firestarter can use Enflame as a free triggered action.')
+							FactoryLogic.createAbilitySectionText('A seared creature takes a bane on strikes and has damage weakness 5. If this ability obtains a tier 3 outcome against one or more creatures who are already seared, the firestarter can use Enflame as a безкоштовна тригерна дія.')
 						]
 					})
 				}),
@@ -2206,9 +2206,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionText('This ability targets each enemy within 2 squares of any seared creature within distance.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '2 fire damage',
-								tier2: '4 fire damage; Л < 3 the target is seared (save ends)',
-								tier3: '6 fire damage; Л < 4 the target is seared (save ends)'
+								tier1: '2 вогняної шкоди',
+								tier2: '4 вогняної шкоди; Л < 3 ціль is seared (рят. кидок закінчує)',
+								tier3: '6 вогняної шкоди; Л < 4 ціль is seared (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -2251,9 +2251,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						target: 'Кожна істота в зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '3 damage; M < 2 push (see effect)',
-								tier2: '6 damage; M < 3 push',
-								tier3: '8 damage; M < 4 push, prone'
+								tier1: '3 шкоди; С < 2 push (див. ефект)',
+								tier2: '6 шкоди; С < 3 push',
+								tier3: '8 шкоди; С < 4 push, розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores stability. The geomancer declares a direction for the area, and any creature pushed by this ability is pushed to the last space in the area in the chosen direction.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -2313,9 +2313,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '3 damage',
-								tier2: '6 damage; П < 3 bleeding (save ends)',
-								tier3: '8 damage; П < 4 the target loses 1 Recovery and is bleeding (save ends)'
+								tier1: '3 шкоди',
+								tier2: '6 шкоди; П < 3 кровотеча (рят. кидок закінчує)',
+								tier3: '8 шкоди; П < 4 ціль loses 1 Відновлення і is кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Any ally within 2 squares of the iron priest gains an edge on their next strike. If any target lost a Recovery, any affected ally has a double edge instead.')
 						]
@@ -2371,9 +2371,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						target: 'Кожен ворог у зоні',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '3 psychic damage',
-								tier2: '6 psychic damage; Р < 3 grabbed, pull 2',
-								tier3: '8 psychic damage; Р < 4 grabbed and the target takes a bane on the Escape Grab maneuver, pull 2'
+								tier1: '3 психічної шкоди',
+								tier2: '6 психічної шкоди; Р < 3 схоплений, притягнути на 2',
+								tier3: '8 психічної шкоди; Р < 4 схоплений і ціль takes a bane on the Escape Grab маневр, притягнути на 2'
 							}))
 						]
 					})
@@ -2438,14 +2438,14 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '14 lightning damage; the lightning spreads 1 square; I < 3 dazed (save ends)',
-								tier2: '19 lightning damage; the lightning spreads 2 square; I < 4 dazed (save ends)',
-								tier3: '23 lightning damage; the lightning spreads 3 square; I < 5 dazed (save ends)'
+								tier1: '14 блискавичної шкоди; the lightning spreads 1 клітинку; І < 3 приголомшений (рят. кидок закінчує)',
+								tier2: '19 блискавичної шкоди; the lightning spreads 2 клітинку; І < 4 приголомшений (рят. кидок закінчує)',
+								tier3: '23 блискавичної шкоди; the lightning spreads 3 клітинку; І < 5 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The spread is the distance the charge arcs from a target to nearby enemies. Each enemy within spread takes 5 lightning damage.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'The lighting spread increases by 2 squares. Additionally, any creature who takes lightning damage from this ability and who has <code>M < 4</code> is slowed until the end of their next turn.'
+								effect: 'The lighting spread increases by 2 squares. Additionally, any creature who takes lightning damage from this ability and who has <code>С < 4</code> is slowed until the end of their next turn.'
 							})
 						]
 					})
@@ -2491,7 +2491,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Slide 5, and if the the target has <code>M < 4</code>, they fall prone.')
+							FactoryLogic.createAbilitySectionText('Slide 5, and if the the target has <code>С < 4</code>, they fall prone.')
 						]
 					})
 				}),
@@ -2504,7 +2504,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each war dog in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can make a free strike or use a maneuver.')
+							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can make a free strike or use a маневр.')
 						]
 					})
 				}),
@@ -2519,9 +2519,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
-								tier1: '18 lightning damage; the target is thunderstruck (save ends)',
-								tier2: '14 lightning damage; the target is thunderstruck (EoT)',
-								tier3: '9 lightning damage'
+								tier1: '18 блискавичної шкоди; ціль is thunderstruck (рят. кидок закінчує)',
+								tier2: '14 блискавичної шкоди; ціль is thunderstruck (до кінця ходу)',
+								tier3: '9 блискавичної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('See Thunderstruck. Additionally, until the end of the encounter, any enemy who moves within 3 squares of the taxiarch for the first time in a round or starts their turn there takes 3 lightning damage.')
 						]
@@ -2556,9 +2556,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '9 damage; Л < 4 bleeding (save ends)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди; Л < 4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If this damage leaves the target winded, they are frightened of the draconite until the end of the target’s next turn.')
 						]
@@ -2603,9 +2603,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '5 damage; push 2',
-								tier2: '8 damage; push 3',
-								tier3: '10 damage; push 4'
+								tier1: '5 шкоди; відштовхнути на 2',
+								tier2: '8 шкоди; відштовхнути на 3',
+								tier3: '10 шкоди; відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('Each enemy adjacent to the target before the forced movement takes 5 fire damage.')
 						]
@@ -2645,9 +2645,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'The target makes a free strike (tier 1 result) against themself',
-								tier2: 'The target makes a free strike (tier 2 result) against themself',
-								tier3: 'The target makes a free strike (tier 3 result) against themself'
+								tier1: 'Ціль робить безкоштовний удар (результат tier 1) проти себе',
+								tier2: 'Ціль робить безкоштовний удар (результат tier 2) проти себе',
+								tier3: 'Ціль робить безкоштовний удар (результат tier 3) проти себе'
 							})),
 							FactoryLogic.createAbilitySectionText('Each enemy adjacent to the target before the forced movement takes 5 fire damage.')
 						]
@@ -2686,11 +2686,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage',
-								tier2: '20 damage; push 3',
-								tier3: '24 damage; push 5'
+								tier1: '15 шкоди',
+								tier2: '20 шкоди; відштовхнути на 3',
+								tier3: '24 шкоди; відштовхнути на 5'
 							})),
-							FactoryLogic.createAbilitySectionText('Two allies within 10 squares of Hoplon each shift up to their speed, then can take the Defend main action or make a free strike.')
+							FactoryLogic.createAbilitySectionText('Two allies within 10 squares of Hoplon each shift up to their speed, then can take the Defend основна дія or make a free strike.')
 						]
 					})
 				}),
@@ -2720,9 +2720,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'R < 3 taunted (EoT)',
-								tier2: 'R < 4 taunted (EoT)',
-								tier3: 'R < 5 taunted (EoT)'
+								tier1: 'Р < 3 спровокований (до кінця ходу)',
+								tier2: 'Р < 4 спровокований (до кінця ходу)',
+								tier3: 'Р < 5 спровокований (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of Hoplon’s next turn, any enemy ability that includes him as a target takes a bane.')
 						]
@@ -2737,7 +2737,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Hoplon teleports to an unoccupied space adjacent to the enemy and becomes the new target of the ability. He can then make a free strike against the enemy, and if that enemy has <code>R < 4</code> they are taunted until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Hoplon teleports to an unoccupied space adjacent to the enemy and becomes the new target of the ability. He can then make a free strike against the enemy, and if that enemy has <code>Р < 4</code> they are taunted until the end of their next turn.')
 						]
 					})
 				}),
@@ -2785,9 +2785,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage',
-								tier2: '21 damage; Doru gains an edge on his next power rolls; M < 4 slide 3',
-								tier3: '25 damage; Doru has a double edge on his next power roll; M < 5 slide 5'
+								tier1: '15 шкоди',
+								tier2: '21 шкоди; Doru отримує an edge on his next кидки сили; С < 4 зсунути на 3',
+								tier3: '25 шкоди; Doru має a double edge on his next power roll; С < 5 зсунути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('The damage from this ability can’t be reduced in any way.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -2809,9 +2809,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '5 damage; Л < 3 bleeding (save ends)',
-								tier2: '11 damage; Л < 4 bleeding (save ends)',
-								tier3: '15 damage; Л < 5 bleeding (save ends)'
+								tier1: '5 шкоди; Л < 3 кровотеча (рят. кидок закінчує)',
+								tier2: '11 шкоди; Л < 4 кровотеча (рят. кидок закінчує)',
+								tier3: '15 шкоди; Л < 5 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability deals an extra 5 damage for each winded target in the area.')
 						]
@@ -2886,9 +2886,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 							FactoryLogic.createAbilitySectionText('**Special:** This ability targets only non-prone creatures.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '8 damage',
-								tier2: '12 damage; I < 4 slowed (save ends)',
-								tier3: '15 damage; I < 5 slowed (save ends)'
+								tier1: '8 шкоди',
+								tier2: '12 шкоди; І < 4 сповільнений (рят. кидок закінчує)',
+								tier3: '15 шкоди; І < 5 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target creature can choose to drop prone, in which case the ability takes a bane against them.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -2910,9 +2910,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '8 fire damage',
-								tier2: '12 fire damage',
-								tier3: '15 fire damage'
+								tier1: '8 вогняної шкоди',
+								tier2: '12 вогняної шкоди',
+								tier3: '15 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain. Any creature who enters the area for the first time in a round or starts their turn there takes 10 fire damage. Until the end of the encounter, the size of the area increases by 1 at the start of each round.')
 						]
@@ -2928,14 +2928,14 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: 'A < 4 pull 3 toward the center of the area',
-								tier2: 'A < 5 pull 3 toward the center of the area',
+								tier1: 'Л < 4 притягнути на 3 toward the center of the area',
+								tier2: 'Л < 5 притягнути на 3 toward the center of the area',
 								tier3: 'Pull 3 toward the center of the area'
 							})),
 							FactoryLogic.createAbilitySectionText('A portal appears at the center of the area. Any creature at the center of the area when this ability is used or who is pulled into the center for the first time in a round takes 10 sonic damage.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'The area remains active and deals its damage until Vesper is reduced to 0 Stamina or until the end of the encounter. Any creature who enters the area and has <code>A < 4</code> is pulled 3 squares toward the center of the area. Any creature who starts their turn in the area and has <code>M < 4</code> is slowed until the end of their turn.'
+								effect: 'The area remains active and deals its damage until Vesper is reduced to 0 Stamina or until the end of the encounter. Any creature who enters the area and has <code>Л < 4</code> is pulled 3 squares toward the center of the area. Any creature who starts their turn in the area and has <code>С < 4</code> is slowed until the end of their turn.'
 							})
 						]
 					})
@@ -2991,9 +2991,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 holy damage; Р < 3 the target is soulbound (save ends)',
-								tier2: '20 holy damage; Р < 4 the target is soulbound (save ends)',
-								tier3: '24 holy damage; Р < 5 the target is soulbound (save ends)'
+								tier1: '15 священної шкоди; Р < 3 ціль is soulbound (рят. кидок закінчує)',
+								tier2: '20 священної шкоди; Р < 4 ціль is soulbound (рят. кидок закінчує)',
+								tier3: '24 священної шкоди; Р < 5 ціль is soulbound (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A soulbound creature can’t benefit from edges or double edges, and can’t gain or use surges.')
 						]
@@ -3011,11 +3011,11 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '8 corruption damage; П < 3 weakened (EoT)',
-								tier2: '12 corruption damage; П < 4 weakened (EoT)',
-								tier3: '15 corruption damage; П < 5 weakened (EoT)'
+								tier1: '8 шкоди від скверни; П < 3 ослаблений (до кінця ходу)',
+								tier2: '12 шкоди від скверни; П < 4 ослаблений (до кінця ходу)',
+								tier3: '15 шкоди від скверни; П < 5 ослаблений (до кінця ходу)'
 							})),
-							FactoryLogic.createAbilitySectionText('The area is difficult terrain until the start of Psyche’s next turn. At the start of each of her turns, Psyche can use a maneuver to maintain this effect, move the area up to 5 squares, and make the power roll against each creature in the area’s new location.'),
+							FactoryLogic.createAbilitySectionText('The area is difficult terrain until the start of Psyche’s next turn. At the start of each of her turns, Psyche can use a маневр to maintain this effect, move the area up to 5 squares, and make the power roll against each creature in the area’s new location.'),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'Until the start of Psyche’s next turn, if this ability makes a creature weakened, that creature is also soulbound (save ends; see Soulbind above).'
 							})
@@ -3031,7 +3031,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Each soulbound enemy in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target takes 5 damage from a self-inflicted wound, and if they have <code>M < 4</code> Psyche slides them up to 5 squares.')
+							FactoryLogic.createAbilitySectionText('Each target takes 5 damage from a self-inflicted wound, and if they have <code>С < 4</code> Psyche slides them up to 5 squares.')
 						]
 					})
 				}),
@@ -3066,7 +3066,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 				FactoryLogic.feature.create({
 					id: 'wardog-4th-7-feature-6',
 					name: 'Immortal Soul',
-					description: 'When Psyche is reduced to 0 Stamina, her spirit surrounds the nearest war dog, who has damage immunity 2, deals an extra 5 damage on strikes, and can use the Immortal Flare maneuver until the end of the encounter. That war dog also gains the Immortal Soul trait, and transfers this effect to the nearest war dog when they die.'
+					description: 'When Psyche is reduced to 0 Stamina, her spirit surrounds the nearest war dog, who has damage immunity 2, deals an extra 5 damage on strikes, and can use the Immortal Flare маневр until the end of the encounter. That war dog also gains the Immortal Soul trait, and transfers this effect to the nearest war dog when they die.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -3112,9 +3112,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; M < 4 bleeding (save ends)',
-								tier2: '21 damage; M < 5 bleeding (save ends)',
-								tier3: '25 damage; M < 6 bleeding (save ends)'
+								tier1: '15 шкоди; С < 4 кровотеча (рят. кидок закінчує)',
+								tier2: '21 шкоди; С < 5 кровотеча (рят. кидок закінчує)',
+								tier3: '25 шкоди; С < 6 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target loses 1d3 Recoveries.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -3149,9 +3149,9 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '8 damage; Л < 4 slowed (save ends)',
-								tier2: '13 damage; Л < 5 slowed (save ends)',
-								tier3: '16 damage; Л < 6 slowed (save ends)'
+								tier1: '8 шкоди; Л < 4 сповільнений (рят. кидок закінчує)',
+								tier2: '13 шкоди; Л < 5 сповільнений (рят. кидок закінчує)',
+								tier3: '16 шкоди; Л < 6 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain until the start of the next round.')
 						]
@@ -3201,7 +3201,7 @@ These monstrous war dogs are developed to fulfill specific roles and combat nich
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Кожна істота в зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the start of the next round, each target enemy who has <code>I < 4</code> is dazed, each target enemy who has <code>M < 4</code> is restrained, and each target enemy who has <code>A < 4</code> can’t use triggered actions. Additionally, until the end of the encounter, Alkestis and each target ally have damage immunity 3 and deal an extra 5 damage with strikes.')
+							FactoryLogic.createAbilitySectionText('Until the start of the next round, each target enemy who has <code>І < 4</code> is dazed, each target enemy who has <code>С < 4</code> is restrained, and each target enemy who has <code>Л < 4</code> can’t use тригерні дії. Additionally, until the end of the encounter, Alkestis and each target ally have damage immunity 3 and deal an extra 5 damage with strikes.')
 						]
 					})
 				})

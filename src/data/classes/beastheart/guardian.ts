@@ -7,8 +7,8 @@ import { SubClass } from '@/models/subclass';
 
 export const guardian: SubClass = {
 	id: 'beastheart-sub-1',
-	name: 'Guardian',
-	description: 'You are the fearless defender of your pack: anyone who harms them must go through you.',
+	name: 'Страж',
+	description: 'Ви безстрашний захисник своєї зграї: кожен, хто завдає їй шкоди, мусить пройти через вас.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -19,23 +19,23 @@ export const guardian: SubClass = {
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-1-1-2',
-					name: 'Wild Nature Benefit',
-					description: 'The target is taunted by your companion until the start of your next turn.',
+					name: 'Перевага дикої природи',
+					description: 'Ціль спровокована вашим компаньйоном до початку вашого наступного ходу.',
 					tag: 'feral-strike'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'beastheart-sub-1-1-3',
-						name: 'Don’t Worry, I’m Here',
-						description: 'You siphon away the pain and endure it yourself.',
-						type: FactoryLogic.type.createTrigger('An adjacent ally takes damage.'),
+						name: 'Не хвилюйся, я поруч',
+						description: 'Ви відтягуєте чужий біль на себе й витримуєте його самі.',
+						type: FactoryLogic.type.createTrigger('Сусідній союзник отримує шкоду.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The triggering damage is halved for the ally.'),
+							FactoryLogic.createAbilitySectionText('Тригерна шкода для союзника зменшується вдвічі.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'You spend one of your Recoveries; the ally regains the Stamina instead of you.'
+								effect: 'Ви витрачаєте одне зі своїх Відновлень; союзник відновлює Витривалість замість вас.'
 							})
 						]
 					})
@@ -51,34 +51,34 @@ export const guardian: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-1-2-1b',
-					name: 'Watchdog',
-					description: 'You and your companion are never surprised.'
+					name: 'Сторожовий інстинкт',
+					description: 'Ви й ваш компаньйон ніколи не буваєте захоплені зненацька.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-1-2-2',
-					name: 'Guardian Ability',
+					name: 'Здібність стража',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-2-2a',
-									name: 'Belly of the Beast',
-									description: 'What do you have in your mouth? No! Bad boy!',
+									name: 'Черево звіра',
+									description: 'Що це в тебе в пащі? Ні! Поганий хлопчик!',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
-									target: 'One grabbed creature your companion’s size or smaller',
+									target: 'Одна схоплена істота, не більша за вашого компаньйона',
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + С damage ; M < [слабкий], swallowed',
-												tier2: '10 + С damage ; M < [середній], swallowed',
-												tier3: '14 + С damage ; M < [сильний], swallowed'
+												tier1: '6 + С шкоди; С < [слабкий], проковтнутий',
+												tier2: '10 + С шкоди; С < [середній], проковтнутий',
+												tier3: '14 + С шкоди; С < [сильний], проковтнутий'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('A swallowed creature shares your companion’s space, is grabbed and restrained, and has line of effect only to your companion. Nothing has line of effect to the swallowed creature. At the start of each of your turns, the swallowed creature takes acid damage equal to 1 + your companion’s Might. If the creature escapes the grab, the companion immediately regurgitates the creature, who lands prone in an unoccupied square adjacent to your companion and is no longer grabbed or restrained. Your companion can also regurgitate the creature as a free maneuver. Your companion can have one creature swallowed at a time.')
+										FactoryLogic.createAbilitySectionText('Проковтнута істота ділить простір вашого компаньйона, є схопленою та скутою і має лінію ефекту лише до вашого компаньйона. Ніщо не має лінії ефекту до проковтнутої істоти. На початку кожного вашого ходу проковтнута істота отримує кислотну шкоду, рівну 1 + показнику Сили вашого компаньйона. Якщо істота виривається із захоплення, компаньйон негайно вивергає її; вона падає розпластаною в сусідню незайняту клітинку й більше не є схопленою або скутою. Ваш компаньйон також може вивергнути істоту як безкоштовний маневр. Одночасно ваш компаньйон може мати проковтнутою лише одну істоту.')
 									]
 								})
 							}),
@@ -88,8 +88,8 @@ export const guardian: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-2-2b',
-									name: 'Fetch!',
-									description: 'Your companion blinks out of existence, returning with a visitor you were particularly hoping to meet.',
+									name: 'Апорт!',
+									description: 'Ваш компаньйон зникає й повертається з гостем, якого ви особливо хотіли побачити.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -97,15 +97,15 @@ export const guardian: SubClass = {
 									cost: 5,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-Your companion teleports up to 5 squares before and after making the attack. Instead of grabbing a targeted creature, your companion can hold a targeted object that is smaller than they are. You can forgo dealing damage when using this ability.
+Ваш компаньйон телепортується на відстань до 5 клітинок до та після атаки. Замість того щоб схопити цільову істоту, ваш компаньйон може утримувати цільовий предмет, менший за нього. Використовуючи цю здібність, ви можете відмовитися від завдання шкоди.
 
-While teleporting after making the attack, your companion can teleport with a grabbed creature or held object if there is sufficient room at the destination; you decide which squares adjacent to your companion they are teleported to`),
+Телепортуючись після атаки, ваш компаньйон може телепортуватися разом зі схопленою істотою або утримуваним предметом, якщо в місці призначення достатньо простору; ви вирішуєте, у які сусідні з компаньйоном клітинки вони телепортуються.`),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + С damage; M < [слабкий], grabbed',
-												tier2: '8 + С damage; M < [середній], grabbed',
-												tier3: '12 + С damage; M < [сильний], grabbed'
+												tier1: '6 + С шкоди; С < [слабкий], схоплений',
+												tier2: '8 + С шкоди; С < [середній], схоплений',
+												tier3: '12 + С шкоди; С < [сильний], схоплений'
 											})
 										)
 									]
@@ -130,8 +130,8 @@ While teleporting after making the attack, your companion can teleport with a gr
 			features: [
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-1-5-1',
-					name: 'Calming Exercises',
-					description: 'When you use Don’t Worry, I’m Here to spend a Recovery, you and the target both gain the benefit of the Recovery.'
+					name: 'Заспокійливі вправи',
+					description: 'Коли ви використовуєте «Не хвилюйся, я поруч», щоб витратити Відновлення, і ви, і ціль отримуєте користь від цього Відновлення.'
 				})
 			]
 		},
@@ -140,14 +140,14 @@ While teleporting after making the attack, your companion can teleport with a gr
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-1-6-1',
-					name: 'Guardian Ability',
+					name: 'Здібність стража',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-6-1a',
-									name: 'Sic \'Em!',
-									description: 'Your companion rushes forward to protect you from a dangerous foe.',
+									name: 'Фас!',
+									description: 'Ваш компаньйон кидається вперед, щоб захистити вас від небезпечного ворога.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -157,14 +157,14 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '11 + С damage; taunted (save ends); M < [слабкий], prone',
-												tier2: '16 + С damage; taunted (save ends); M < [середній], prone',
-												tier3: '21 + С damage; taunted (save ends); M < [сильний], prone and can’t stand (EoT)'
+												tier1: '11 + С шкоди; спровокований (рят. кидок закінчує); С < [слабкий], розпластаний',
+												tier2: '16 + С шкоди; спровокований (рят. кидок закінчує); С < [середній], розпластаний',
+												tier3: '21 + С шкоди; спровокований (рят. кидок закінчує); С < [сильний], розпластаний і не може встати (до кінця ходу)'
 											})
 										),
 										FactoryLogic.createAbilitySectionSpend({
 											value: 2,
-											effect: 'Your companion can use this ability as a triggered action against an enemy who damages you.'
+											effect: 'Ваш компаньйон може використати цю здібність як тригерну дію проти ворога, який завдає вам шкоди.'
 										})
 									]
 								})
@@ -175,21 +175,21 @@ While teleporting after making the attack, your companion can teleport with a gr
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-6-1b',
-									name: 'Staredown',
-									description: 'Your companion locks eyes with an enemy, imposing their will upon the enemy and daring them to move a muscle.',
+									name: 'Свердлячий погляд',
+									description: 'Ваш компаньйон впивається поглядом у ворога, навʼязуючи йому свою волю й кидаючи виклик навіть поворухнутися.',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 									distance: [FactoryLogic.distance.createRanged(5)],
 									target: 'Одна істота',
 									cost: 'signature',
 									sections: [
-										FactoryLogic.createAbilitySectionText('The first time the target uses a move, action, maneuver, or triggered action before the start of your next turn, the target triggers the following power roll before they act. At the start of the next turn, if the target hasn’t triggered this power roll, they become frightened (save ends).'),
+										FactoryLogic.createAbilitySectionText('Уперше, коли ціль до початку вашого наступного ходу використовує рух, основну дію, маневр або тригерну дію, перед тим як діяти, вона провокує наведений нижче кидок сили. На початку наступного ходу, якщо ціль не спровокувала цей кидок сили, вона стає зляканою (рят. кидок закінчує).'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '9 + I psychic damage; I < [слабкий], weakened (save ends)',
-												tier2: '13 + I psychic damage; I < [середній], weakened (save ends)',
-												tier3: '18 + I psychic damage; I < [сильний], weakened (save ends)'
+												tier1: '9 + І психічної шкоди; І < [слабкий], ослаблений (рят. кидок закінчує)',
+												tier2: '13 + І психічної шкоди; І < [середній], ослаблений (рят. кидок закінчує)',
+												tier3: '18 + І психічної шкоди; І < [сильний], ослаблений (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -210,8 +210,8 @@ While teleporting after making the attack, your companion can teleport with a gr
 			features: [
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-1-8-1',
-					name: 'Zone of Control',
-					description: 'Your and your companion’s free strikes deal extra damage equal to your Intuition score. You or your companion can make an opportunity attack whenever an adjacent enemy moves to a space that isn’t adjacent, even if the enemy shifted, teleported, was force moved, or used some other feature that doesn’t provoke opportunity attacks.'
+					name: 'Зона контролю',
+					description: 'Ваші вільні удари та вільні удари вашого компаньйона завдають додаткової шкоди, рівної вашому показнику Інтуїції. Ви або ваш компаньйон можете здійснити атаку за нагоди щоразу, коли сусідній ворог рухається в клітинку, яка вже не є сусідньою, навіть якщо ворог зміщувався, телепортувався, був примусово переміщений або використав іншу рису, що зазвичай не провокує атаки за нагоди.'
 				})
 			]
 		},
@@ -220,14 +220,14 @@ While teleporting after making the attack, your companion can teleport with a gr
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-1-9-1',
-					name: 'Guardian Ability',
+					name: 'Здібність стража',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-9-1a',
-									name: 'Banshee Howl',
-									description: 'Your companion’s howl, screech, roar, or psychic emanation presages death to those who hear it.',
+									name: 'Виття банші',
+									description: 'Виття, вереск, рев або психічна еманація вашого компаньйона віщують смерть тим, хто це чує.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
@@ -237,14 +237,14 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '5 sonic damage; I < [слабкий], frightened (save ends)',
-												tier2: '10 sonic damage; I < [середній], frightened (save ends)',
-												tier3: '15 sonic damage; I < [сильний], frightened (save ends)'
+												tier1: '5 звукової шкоди; І < [слабкий], зляканий (рят. кидок закінчує)',
+												tier2: '10 звукової шкоди; І < [середній], зляканий (рят. кидок закінчує)',
+												tier3: '15 звукової шкоди; І < [сильний], зляканий (рят. кидок закінчує)'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('While frightened by this ability, a creature takes 10 psychic damage at the start of each of your turns.'),
+										FactoryLogic.createAbilitySectionText('Поки істота злякана цією здібністю, вона отримує 10 психічної шкоди на початку кожного вашого ходу.'),
 										FactoryLogic.createAbilitySectionSpend({
-											effect: 'This ability also affects a 3 burst around you. An enemy in both areas is only affected once.'
+											effect: 'Ця здібність також впливає на вибух 3 навколо вас. Ворог, який перебуває в обох зонах, зазнає її впливу лише один раз.'
 										})
 									]
 								})
@@ -255,8 +255,8 @@ While teleporting after making the attack, your companion can teleport with a gr
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-1-9-1b',
-									name: 'Enemies Till Death',
-									description: 'Your companion launches themself at your foe, shielding allies with their body.',
+									name: 'Вороги до смерті',
+									description: 'Ваш компаньйон кидається на ворога, прикриваючи союзників власним тілом.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -266,12 +266,12 @@ While teleporting after making the attack, your companion can teleport with a gr
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '11 + С damage; П < [слабкий], taunted (save ends)',
-												tier2: '17 + С damage; П < [середній], taunted (save ends)',
-												tier3: '22 + С damage; П < [сильний], taunted (save ends)'
+												tier1: '11 + С шкоди; П < [слабкий], спровокований (рят. кидок закінчує)',
+												tier2: '17 + С шкоди; П < [середній], спровокований (рят. кидок закінчує)',
+												tier3: '22 + С шкоди; П < [сильний], спровокований (рят. кидок закінчує)'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('While the target is taunted by this ability, all creatures except your companion have immunity 10 to damage dealt by the target.')
+										FactoryLogic.createAbilitySectionText('Поки ціль спровокована цією здібністю, усі істоти, крім вашого компаньйона, мають імунітет 10 до шкоди, яку завдає ця ціль.')
 									]
 								})
 							}),

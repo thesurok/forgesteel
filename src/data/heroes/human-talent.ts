@@ -18,14 +18,14 @@ export const humanTalent = {
 				id: 'human-feature-1',
 				name: 'Detect the Supernatural',
 				description: 'You open your awareness to detect supernatural creatures and phenomena.',
-				type: 'Ability',
+				type: 'Здібність',
 				data: {
 					ability: {
 						id: 'human-feature-1',
 						name: 'Detect the Supernatural',
 						description: 'You open your awareness to detect supernatural creatures and phenomena.',
 						type: {
-							usage: 'Maneuver',
+							usage: 'Маневр',
 							free: false,
 							trigger: '',
 							time: '',
@@ -49,7 +49,7 @@ export const humanTalent = {
 						minLevel: 1,
 						sections: [
 							{
-								type: 'text',
+								type: 'Текст',
 								text: 'Until the end of your next turn, you know the location of any supernatural object, undead, construct, or creature from another world within 5 squares, even if you don’t have line of effect to that object or creature. You know if you’re detecting an item or a creature, and you know the nature of any creature you detect.'
 							}
 						],
@@ -68,7 +68,7 @@ export const humanTalent = {
 				id: 'human-feature-2',
 				name: 'Human Traits',
 				description: '',
-				type: 'Choice',
+				type: 'Вибір',
 				data: {
 					options: [
 						{
@@ -76,7 +76,7 @@ export const humanTalent = {
 								id: 'human-feature-2-1',
 								name: 'Can\'t Take Hold',
 								description: 'Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary difficult terrain created by magic and psionic abilities. Additionally, when you are force moved by a magic or psionic ability, you can reduce the forced movement distance by 1.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -86,7 +86,7 @@ export const humanTalent = {
 								id: 'human-feature-2-2',
 								name: 'Perseverence',
 								description: 'Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -96,14 +96,14 @@ export const humanTalent = {
 								id: 'human-feature-2-3',
 								name: 'Resist the Unnatural',
 								description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-3',
 										name: 'Resist the Unnatural',
 										description: 'Your instinctive resilience protects you from injuries beyond the routine.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'You take damage that isn’t untyped',
 											time: '',
@@ -127,7 +127,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You halve the damage.'
 											}
 										],
@@ -149,14 +149,14 @@ export const humanTalent = {
 								id: 'human-feature-2-4',
 								name: 'Determination',
 								description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-4',
 										name: 'Determination',
 										description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -180,7 +180,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You immediately end one of the frightened, slowed, or weakened conditions on yourself.'
 											}
 										],
@@ -202,7 +202,7 @@ export const humanTalent = {
 								id: 'human-feature-2-5',
 								name: 'Staying Power',
 								description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-								type: 'Bonus',
+								type: 'Бонус',
 								data: {
 									field: 'Recoveries',
 									value: 2,
@@ -221,14 +221,14 @@ export const humanTalent = {
 							id: 'human-feature-2-3',
 							name: 'Resist the Unnatural',
 							description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-							type: 'Ability',
+							type: 'Здібність',
 							data: {
 								ability: {
 									id: 'human-feature-2-3',
 									name: 'Resist the Unnatural',
 									description: 'Your instinctive resilience protects you from injuries beyond the routine.',
 									type: {
-										usage: 'Triggered Action',
+										usage: 'Тригерна дія',
 										free: false,
 										trigger: 'You take damage that isn’t untyped',
 										time: '',
@@ -252,7 +252,7 @@ export const humanTalent = {
 									minLevel: 1,
 									sections: [
 										{
-											type: 'text',
+											type: 'Текст',
 											text: 'You halve the damage.'
 										}
 									],
@@ -271,7 +271,7 @@ export const humanTalent = {
 							id: 'human-feature-2-5',
 							name: 'Staying Power',
 							description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-							type: 'Bonus',
+							type: 'Бонус',
 							data: {
 								field: 'Recoveries',
 								value: 2,
@@ -291,12 +291,12 @@ export const humanTalent = {
 		id: 'culture-monastic-order',
 		name: 'Monastic Order',
 		description: 'Secluded, bureaucratic, academic.',
-		type: 'Professional',
+		type: 'Професійна',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,
@@ -308,7 +308,7 @@ export const humanTalent = {
 			id: 'env-secluded',
 			name: 'Secluded',
 			description: 'A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave. When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -317,7 +317,7 @@ export const humanTalent = {
 				],
 				count: 1,
 				selected: [
-					'Empathize'
+					'Емпатія'
 				]
 			}
 		},
@@ -325,7 +325,7 @@ export const humanTalent = {
 			id: 'org-bureaucratic',
 			name: 'Bureaucratic',
 			description: 'Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures. Those who thrive in bureaucratic cultures don’t simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -334,7 +334,7 @@ export const humanTalent = {
 				],
 				count: 1,
 				selected: [
-					'Disguise'
+					'Маскування'
 				]
 			}
 		},
@@ -342,7 +342,7 @@ export const humanTalent = {
 			id: 'up-academic',
 			name: 'Academic',
 			description: 'Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an academic culture learn how to wield the power that is knowledge.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -380,7 +380,7 @@ export const humanTalent = {
 						id: 'talent-stamina',
 						name: 'Витривалість',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 18,
@@ -394,7 +394,7 @@ export const humanTalent = {
 						id: 'talent-recoveries',
 						name: 'Recoveries',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Recoveries',
 							value: 8,
@@ -408,7 +408,7 @@ export const humanTalent = {
 						id: 'talent-resource',
 						name: 'Clarity',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -432,7 +432,7 @@ export const humanTalent = {
 						id: 'talent-skill-a',
 						name: 'Lore Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -440,7 +440,7 @@ export const humanTalent = {
 							],
 							count: 1,
 							selected: [
-								'Psionics'
+								'Псіоніка'
 							]
 						}
 					},
@@ -448,7 +448,7 @@ export const humanTalent = {
 						id: 'talent-skill-b',
 						name: 'Interpersonal Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -456,7 +456,7 @@ export const humanTalent = {
 							],
 							count: 1,
 							selected: [
-								'Read Person'
+								'Зчитування людини'
 							]
 						}
 					},
@@ -464,7 +464,7 @@ export const humanTalent = {
 						id: 'talent-skill-c',
 						name: 'Interpersonal / Lore Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -473,7 +473,7 @@ export const humanTalent = {
 							],
 							count: 2,
 							selected: [
-								'Timescape',
+								'Таймскейп',
 								'Брехня'
 							]
 						}
@@ -482,14 +482,14 @@ export const humanTalent = {
 						id: 'talent-1-2',
 						name: 'Mind Spike',
 						description: 'A telepathic bolt instantly zaps a creature’s brain.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'talent-1-2',
 								name: 'Mind Spike',
 								description: 'A telepathic bolt instantly zaps a creature’s brain.',
 								type: {
-									usage: 'Main Action',
+									usage: 'Основна дія',
 									free: false,
 									trigger: '',
 									time: '',
@@ -525,9 +525,9 @@ export const humanTalent = {
 												'Reason'
 											],
 											bonus: 0,
-											tier1: '2 + Р psychic damage',
-											tier2: '4 + Р psychic damage',
-											tier3: '6 + Р psychic damage'
+											tier1: '2 + Р психічної шкоди',
+											tier2: '4 + Р психічної шкоди',
+											tier3: '6 + Р психічної шкоди'
 										}
 									},
 									{
@@ -551,9 +551,9 @@ export const humanTalent = {
 					},
 					{
 						id: 'talent-1-3',
-						name: 'Language',
+						name: 'Мова',
 						description: '',
-						type: 'Language Choice',
+						type: 'Вибір мови',
 						data: {
 							options: [],
 							count: 1,
@@ -566,36 +566,36 @@ export const humanTalent = {
 						id: 'talent-1-4',
 						name: 'Telepathic Speech',
 						description: 'You can telepathically communicate with any creatures within distance of your Mind Spike ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'talent-1-5',
 						name: 'Psionic Augmentation',
 						description: 'Through psionic meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation along with your ward by undergoing a psionic meditation as a respite activity.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
 									feature: {
 										id: 'talent-1-5a',
 										name: 'Battle Augmentation',
-										description: '\nYou can wear light armor and wield light weapons effectively, even though you don’t have a kit.\n\nYou can use light armor treasures and light weapon treasures. If you have a kit, you can’t take this augmentation.',
-										type: 'Multiple Features',
+										description: '\nВи можете ефективно носити легку броню та володіти легкою зброєю, навіть якщо не маєте набору.\n\nВи можете використовувати скарби легкої броні та легкої зброї. Якщо у вас є набір, ви не можете взяти це покращення.',
+										type: 'Набір особливостей',
 										data: {
 											features: [
 												{
 													id: 'talent-1-5aa',
 													name: 'Battle Augmentation',
-													description: 'While you wield a light weapon, you gain a +1 damage bonus with weapon abilities, including free strikes.',
-													type: 'Text',
+													description: 'Поки ви володієте легкою зброєю, ви отримуєте +1 до урону здібностями зброї, включно з вільними ударами.',
+													type: 'Текст',
 													data: null
 												},
 												{
 													id: 'talent-1-5ab',
 													name: 'Витривалість',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Витривалість',
 														value: 0,
@@ -609,13 +609,13 @@ export const humanTalent = {
 													id: 'talent-1-5ac',
 													name: 'Proficiency',
 													description: '',
-													type: 'Proficiency',
+													type: 'Володіння',
 													data: {
 														weapons: [
-															'Light Weapon'
+															'Легка зброя'
 														],
 														armor: [
-															'Light Armor'
+															'Легка броня'
 														]
 													}
 												}
@@ -629,14 +629,14 @@ export const humanTalent = {
 										id: 'talent-1-5b',
 										name: 'Density Augmentation',
 										description: 'Stamina, Stability',
-										type: 'Multiple Features',
+										type: 'Набір особливостей',
 										data: {
 											features: [
 												{
 													id: 'talent-1-5ba',
 													name: 'Витривалість',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Витривалість',
 														value: 0,
@@ -650,7 +650,7 @@ export const humanTalent = {
 													id: 'talent-1-5bb',
 													name: 'Непорушність',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Непорушність',
 														value: 1,
@@ -670,7 +670,7 @@ export const humanTalent = {
 										id: 'talent-1-5c',
 										name: 'Distance Augmentation',
 										description: '',
-										type: 'Ability Distance',
+										type: 'Дальність здібності',
 										data: {
 											keywords: [
 												'Psionic',
@@ -690,7 +690,7 @@ export const humanTalent = {
 										id: 'talent-1-5d',
 										name: 'Force Augmentation',
 										description: '',
-										type: 'Ability Damage',
+										type: 'Шкода здібності',
 										data: {
 											keywords: [
 												'Psionic'
@@ -710,14 +710,14 @@ export const humanTalent = {
 										id: 'talent-1-5e',
 										name: 'Speed Augmentation',
 										description: 'Speed, Disengage',
-										type: 'Multiple Features',
+										type: 'Набір особливостей',
 										data: {
 											features: [
 												{
 													id: 'talent-1-5ea',
 													name: 'Швидкість',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Швидкість',
 														value: 1,
@@ -731,7 +731,7 @@ export const humanTalent = {
 													id: 'talent-1-5eb',
 													name: 'Відступ',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Відступ',
 														value: 1,
@@ -753,7 +753,7 @@ export const humanTalent = {
 									id: 'talent-1-5c',
 									name: 'Distance Augmentation',
 									description: '',
-									type: 'Ability Distance',
+									type: 'Дальність здібності',
 									data: {
 										keywords: [
 											'Psionic',
@@ -773,15 +773,15 @@ export const humanTalent = {
 						id: 'talent-1-6',
 						name: 'Talent Ward',
 						description: 'Through psionic meditation, you create a ward that protects you. Choose one of the following wards. You can change your ward along with your psionic augmentation by undergoing a psionic meditation as a respite activity.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
 									feature: {
 										id: 'talent-1-6a',
 										name: 'Entropy Ward',
-										description: 'Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your Reason score and they can’t use triggered actions until the end of their next turn.',
-										type: 'Text',
+										description: 'Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your Reason score and they can’t use тригерні дії until the end of their next turn.',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -791,14 +791,14 @@ export const humanTalent = {
 										id: 'talent-1-6b',
 										name: 'Repulsive Ward',
 										description: 'You surround yourself with an invisible ward of telekinetic energy.',
-										type: 'Ability',
+										type: 'Здібність',
 										data: {
 											ability: {
 												id: 'talent-1-6b',
 												name: 'Repulsive Ward',
 												description: 'You surround yourself with an invisible ward of telekinetic energy.',
 												type: {
-													usage: 'Triggered Action',
+													usage: 'Тригерна дія',
 													free: true,
 													trigger: 'An adjacent creature deals damage to you.',
 													time: '',
@@ -822,7 +822,7 @@ export const humanTalent = {
 												minLevel: 1,
 												sections: [
 													{
-														type: 'text',
+														type: 'Текст',
 														text: 'You can push your attacker up to a number of squares equal to your Reason score.'
 													}
 												],
@@ -844,7 +844,7 @@ export const humanTalent = {
 										id: 'talent-1-6c',
 										name: 'Steel Ward',
 										description: 'Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain damage immunity equal to your Reason score until the end of your next turn.',
-										type: 'Text',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -854,7 +854,7 @@ export const humanTalent = {
 										id: 'talent-1-6d',
 										name: 'Vanishing Ward',
 										description: 'Your ward allows you to slip away from threats. Whenever you take damage, you become invisible until the end of your next turn.',
-										type: 'Text',
+										type: 'Текст',
 										data: null
 									},
 									value: 1
@@ -866,14 +866,14 @@ export const humanTalent = {
 									id: 'talent-1-6b',
 									name: 'Repulsive Ward',
 									description: 'You surround yourself with an invisible ward of telekinetic energy.',
-									type: 'Ability',
+									type: 'Здібність',
 									data: {
 										ability: {
 											id: 'talent-1-6b',
 											name: 'Repulsive Ward',
 											description: 'You surround yourself with an invisible ward of telekinetic energy.',
 											type: {
-												usage: 'Triggered Action',
+												usage: 'Тригерна дія',
 												free: true,
 												trigger: 'An adjacent creature deals damage to you.',
 												time: '',
@@ -897,7 +897,7 @@ export const humanTalent = {
 											minLevel: 1,
 											sections: [
 												{
-													type: 'text',
+													type: 'Текст',
 													text: 'You can push your attacker up to a number of squares equal to your Reason score.'
 												}
 											],
@@ -919,7 +919,7 @@ export const humanTalent = {
 						id: 'talent-1-7',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 'signature',
 							source: {
@@ -940,7 +940,7 @@ export const humanTalent = {
 						id: 'talent-1-8',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 3,
 							source: {
@@ -960,7 +960,7 @@ export const humanTalent = {
 						id: 'talent-1-9',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 5,
 							source: {
@@ -985,7 +985,7 @@ export const humanTalent = {
 						id: 'talent-2-1',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1004,15 +1004,15 @@ export const humanTalent = {
 					{
 						id: 'talent-3-1',
 						name: 'Scan',
-						description: 'You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver. Additionally, once you establish line of effect to a thinking creature within distance of your Mind Spike ability, you always have line of effect to that creature until they move beyond that distance.',
-						type: 'Text',
+						description: 'You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a безкоштовний маневр. Additionally, once you establish line of effect to a thinking creature within distance of your Mind Spike ability, you always have line of effect to that creature until they move beyond that distance.',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'talent-3-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 7,
 							source: {
@@ -1035,7 +1035,7 @@ export const humanTalent = {
 						id: 'talent-4-1a',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1045,7 +1045,7 @@ export const humanTalent = {
 						id: 'talent-4-1b',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1055,14 +1055,14 @@ export const humanTalent = {
 						id: 'talent-4-2',
 						name: 'Mind Projection',
 						description: 'You project your mind outside your body.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'talent-4-2',
 								name: 'Mind Projection',
 								description: 'You project your mind outside your body.',
 								type: {
-									usage: 'Maneuver',
+									usage: 'Маневр',
 									free: false,
 									trigger: '',
 									time: '',
@@ -1086,8 +1086,8 @@ export const humanTalent = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
-										text: '\nWhile you are in this state, your body remains unconscious and prone, and your mind is a separate entity with size 1T. Your mind automatically has concealment, and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.\n\nAny abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your Stamina. Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a free maneuver.'
+										type: 'Текст',
+										text: '\nWhile you are in this state, your body remains unconscious and prone, and your mind is a separate entity with size 1T. Your mind automatically has concealment, and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.\n\nAny abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your Stamina. Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a безкоштовний маневр.'
 									}
 								],
 								preEffect: '',
@@ -1105,21 +1105,21 @@ export const humanTalent = {
 						id: 'talent-4-3',
 						name: 'Mind Recovery',
 						description: 'Mind Recovery, Mind Recovery',
-						type: 'Multiple Features',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'talent-4-3a',
 									name: 'Mind Recovery',
 									description: 'Whenever you spend a Recovery to regain Stamina while strained, you can forgo the Stamina and gain 3 clarity instead.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-4-3b',
 									name: 'Mind Recovery',
 									description: '',
-									type: 'Heroic Resource Gain',
+									type: 'Отримання героїчного ресурсу',
 									data: {
 										tag: 'move 2',
 										trigger: 'The first time each combat round that a creature is force moved',
@@ -1136,7 +1136,7 @@ export const humanTalent = {
 						id: 'talent-4-4',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1154,7 +1154,7 @@ export const humanTalent = {
 						id: 'talent-4-5',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1172,7 +1172,7 @@ export const humanTalent = {
 						id: 'talent-4-6',
 						name: 'Suspensor Field',
 						description: '\nYou can fly. While flying, your stability is reduced to 0 and can’t be increased. If you can already fly, you have a +2 bonus to speed while flying instead.\n\nIf you are strained while flying and are force moved, the forced movement distance gains a +2 bonus.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					}
 				]
@@ -1184,7 +1184,7 @@ export const humanTalent = {
 						id: 'talent-5-1',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 9,
 							source: {
@@ -1207,7 +1207,7 @@ export const humanTalent = {
 						id: 'talent-6-1',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1221,57 +1221,57 @@ export const humanTalent = {
 					{
 						id: 'talent-6-2',
 						name: 'Psi Boost',
-						description: 'Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional clarity to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost.',
-						type: 'Multiple Features',
+						description: 'Whenever you use an ability that is a основна дія or a маневр with the Psionic keyword, you can spend additional clarity to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost.',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'talent-6-2a',
 									name: 'Psi Boost: Dynamic Power (1 Clarity)',
 									description: 'If the ability force moves a target, the forced movement distance gains a bonus equal to your Reason score.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2b',
 									name: 'Psi Boost: Expanded Power (3 Clarity)',
 									description: 'If the ability targets an area, you increase the size of the area by 1. If the area is a line, you increase the size of one dimension, not both.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2c',
 									name: 'Psi Boost: Extended Power (1 Clarity)',
 									description: 'If the ability is ranged, the distance gains a bonus equal to your Reason score. If the ability is melee, the distance gains a +2 bonus.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2d',
 									name: 'Psi Boost: Heightened Power (1 Clarity)',
 									description: 'If the ability deals rolled damage, it deals extra damage equal to your Reason score.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2e',
 									name: 'Psi Boost: Magnified Power (5 Clarity)',
 									description: 'If the ability has a potency, you increase that potency by an amount equal to your Reason score.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2f',
 									name: 'Psi Boost: Shared Power (5 Clarity)',
 									description: 'If the ability targets individual creatures or objects, you target one additional creature or object within distance.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-6-2g',
 									name: 'Psi Boost: Sharpened Power (1 Clarity)',
 									description: 'If the ability has any power roll, that roll gains an edge.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								}
 							]
@@ -1286,21 +1286,21 @@ export const humanTalent = {
 						id: 'talent-7-1',
 						name: 'Ancestry Memory',
 						description: 'Each time you finish a respite, you can choose a number of skills you have up to your Reason score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last unil the end of your next respite.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'talent-7-2',
 						name: 'Cascading Strain',
 						description: 'Whenever you take damage from a strained effect or from having negative clarity, you can choose one enemy within distance of your Mind Spike ability to take the same damage.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'talent-7-3a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1310,7 +1310,7 @@ export const humanTalent = {
 						id: 'talent-7-3b',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1320,7 +1320,7 @@ export const humanTalent = {
 						id: 'talent-7-3c',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1330,7 +1330,7 @@ export const humanTalent = {
 						id: 'talent-7-3d',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1340,7 +1340,7 @@ export const humanTalent = {
 						id: 'talent-7-3e',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1350,7 +1350,7 @@ export const humanTalent = {
 						id: 'talent-7-4',
 						name: 'Lucid Mind',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
 							trigger: 'Start of your turn',
@@ -1364,7 +1364,7 @@ export const humanTalent = {
 						id: 'talent-7-5',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1387,7 +1387,7 @@ export const humanTalent = {
 						id: 'talent-8-1',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1405,7 +1405,7 @@ export const humanTalent = {
 						id: 'talent-8-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 11,
 							source: {
@@ -1428,21 +1428,21 @@ export const humanTalent = {
 						id: 'talent-9-1',
 						name: 'Fortress of Perfect Thought',
 						description: 'Fortress of Perfect Thought, Damage Modifier, Condition Immunity',
-						type: 'Multiple Features',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'talent-9-1a',
 									name: 'Fortress of Perfect Thought',
 									description: '\nYour mind is an impenetrable palace that shields you from danger. You gain the following effects:\n\n* You can breathe even when there is no breathable air.\n* Creatures can’t read your thoughts unless you allow them to.\n* Your Reason and Intuition are treated as 2 higher for the purpose of resisting the potency of abilities.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								},
 								{
 									id: 'talent-9-1b',
 									name: 'Damage Modifier',
 									description: 'Psychic Immunity + 10',
-									type: 'Damage Modifier',
+									type: 'Модифікатор шкоди',
 									data: {
 										modifiers: [
 											{
@@ -1461,7 +1461,7 @@ export const humanTalent = {
 									id: 'talent-9-1c',
 									name: 'Condition Immunity',
 									description: '',
-									type: 'Condition Immunity',
+									type: 'Імунітет до станів',
 									data: {
 										conditions: [
 											'Taunted',
@@ -1481,7 +1481,7 @@ export const humanTalent = {
 						id: 'talent-10-1a',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1491,7 +1491,7 @@ export const humanTalent = {
 						id: 'talent-10-1b',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1501,7 +1501,7 @@ export const humanTalent = {
 						id: 'talent-10-2',
 						name: 'Clear Mind',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'move 2',
 							trigger: 'The first time each combat round that a creature is force moved',
@@ -1515,14 +1515,14 @@ export const humanTalent = {
 						id: 'talent-10-3',
 						name: 'Omnisensory',
 						description: 'Ability distance modifier, Omnisensory',
-						type: 'Multiple Features',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'talent-10-3a',
 									name: 'Ability distance modifier',
 									description: '',
-									type: 'Ability Distance',
+									type: 'Дальність здібності',
 									data: {
 										keywords: [
 											'Дальній'
@@ -1538,7 +1538,7 @@ export const humanTalent = {
 									id: 'talent-10-3b',
 									name: 'Omnisensory',
 									description: 'You don’t need line of effect to a target of a ranged ability if the target is a creature capable of thought who you have previously had line of effect to.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								}
 							]
@@ -1548,7 +1548,7 @@ export const humanTalent = {
 						id: 'talent-10-4',
 						name: 'Interpersonal / Lore / Supernatural Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Міжособистісні',
@@ -1563,14 +1563,14 @@ export const humanTalent = {
 						id: 'talent-10-5',
 						name: 'Psion',
 						description: 'Psion, Psion',
-						type: 'Multiple Features',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'talent-10-5a',
 									name: 'Psion',
 									description: '',
-									type: 'Heroic Resource Gain',
+									type: 'Отримання героїчного ресурсу',
 									data: {
 										tag: 'start 3',
 										trigger: 'Start of your turn',
@@ -1585,7 +1585,7 @@ export const humanTalent = {
 									id: 'talent-10-5b',
 									name: 'Psion',
 									description: 'You can choose to not take damage from having negative clarity. You can also choose to take on any ability’s strained effect even if you’re not strained.',
-									type: 'Text',
+									type: 'Текст',
 									data: null
 								}
 							]
@@ -1595,7 +1595,7 @@ export const humanTalent = {
 						id: 'talent-10-6',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1613,7 +1613,7 @@ export const humanTalent = {
 						id: 'talent-10-7',
 						name: 'Vision',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'epic',
 							gains: [
@@ -1637,7 +1637,7 @@ export const humanTalent = {
 				name: 'Entropic Bolt',
 				description: 'You advance an enemy’s age for a moment.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1672,13 +1672,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '2 + П corruption damage; П < [слабкий], slowed (save ends)',
-							tier2: '3 + П corruption damage; П < [середній], slowed (save ends)',
-							tier3: '5 + П corruption damage; П < [сильний], slowed (save ends)'
+							tier1: '2 + П шкоди від скверни; П < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '3 + П шкоди від скверни; П < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '5 + П шкоди від скверни; П < [сильний], сповільнений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target takes 1 extra corruption damage for each additional time they are targeted by this ability during the encounter.'
 					},
 					{
@@ -1703,7 +1703,7 @@ export const humanTalent = {
 				name: 'Hoarfrost',
 				description: 'You blast a foe with a pulse of cold energy.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1738,9 +1738,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + Р cold damage; M < [слабкий], slowed (EoT)',
-							tier2: '4 + Р cold damage; M < [середній], slowed (EoT)',
-							tier3: '6 + Р cold damage; M < [сильний], slowed (EoT)'
+							tier1: '2 + Р холодної шкоди; С < [слабкий], сповільнений (до кінця ходу)',
+							tier2: '4 + Р холодної шкоди; С < [середній], сповільнений (до кінця ходу)',
+							tier3: '6 + Р холодної шкоди; С < [сильний], сповільнений (до кінця ходу)'
 						}
 					},
 					{
@@ -1765,7 +1765,7 @@ export const humanTalent = {
 				name: 'Incinerate',
 				description: 'The air erupts into a column of smokeless flame.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1801,13 +1801,13 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 fire damage',
-							tier2: '4 fire damage',
-							tier3: '6 fire damage'
+							tier1: '2 вогняної шкоди',
+							tier2: '4 вогняної шкоди',
+							tier3: '6 вогняної шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A column of fire remains in the area until the start of your next turn. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 2 fire damage.'
 					},
 					{
@@ -1832,7 +1832,7 @@ export const humanTalent = {
 				name: 'Kinetic Grip',
 				description: 'You lift and hurl your foe away from you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1866,9 +1866,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: 'Slide 2 + R',
-							tier2: 'Slide 4 + R',
-							tier3: 'Slide 6 + R; prone'
+							tier1: 'Зсунути на 2 + Р',
+							tier2: 'Зсунути на 4 + Р',
+							tier3: 'Зсунути на 6 + Р; розпластаний'
 						}
 					},
 					{
@@ -1893,7 +1893,7 @@ export const humanTalent = {
 				name: 'Kinetic Pulse',
 				description: 'The force of your mind hurls enemies backward.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1927,9 +1927,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 psychic damage',
-							tier2: '5 psychic damage; push 1',
-							tier3: '7 psychic damage; push 2'
+							tier1: '2 психічної шкоди',
+							tier2: '5 психічної шкоди; відштовхнути на 1',
+							tier3: '7 психічної шкоди; відштовхнути на 2'
 						}
 					},
 					{
@@ -1954,7 +1954,7 @@ export const humanTalent = {
 				name: 'Materialize',
 				description: 'You picture an object in your mind and give it form—directly above your opponent’s head.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1989,13 +1989,13 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + Р damage',
-							tier2: '5 + Р damage',
-							tier3: '8 + Р damage'
+							tier1: '3 + Р шкоди',
+							tier2: '5 + Р шкоди',
+							tier3: '8 + Р шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A worthless size 1M object drops onto the target to deal the damage, then rolls into an adjacent unoccupied space of your choice. The object is made of wood, stone, or metal (your choice).'
 					},
 					{
@@ -2020,7 +2020,7 @@ export const humanTalent = {
 				name: 'Optic Blast',
 				description: 'Your eyes emit rays of powerful enervating force.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2055,13 +2055,13 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 + Р damage; M < [слабкий], prone',
-							tier2: '4 + Р damage; M < [середній], prone',
-							tier3: '6 + Р damage; M < [сильний], prone'
+							tier1: '2 + Р шкоди; С < [слабкий], розпластаний',
+							tier2: '4 + Р шкоди; С < [середній], розпластаний',
+							tier3: '6 + Р шкоди; С < [сильний], розпластаний'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'When targeting an object with a solid reflective surface or a creature carrying or wearing such an object (such as a mirror, an unpainted metal shield, or shiny metal plate armor), you can target one additional creature or object within 3 squares of the first target.'
 					},
 					{
@@ -2086,7 +2086,7 @@ export const humanTalent = {
 				name: 'Spirit Sword',
 				description: 'You form a blade of mind energy and stab your target, invigorating yourself.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2121,13 +2121,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + П damage',
-							tier2: '6 + П damage',
-							tier3: '9 + П damage'
+							tier1: '3 + П шкоди',
+							tier2: '6 + П шкоди',
+							tier3: '9 + П шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You gain 1 surge.'
 					},
 					{
@@ -2152,7 +2152,7 @@ export const humanTalent = {
 				name: 'Awe',
 				description: 'You project psionic energy out to a creature and take on a new visage in their mind.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2181,7 +2181,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'If you target an ally, they gain temporary Stamina equal to three times your Presence score, and they can end one effect on them that is ended by a saving throw or that ends at the end of their turn. If you target an enemy, you make a power roll.'
 					},
 					{
@@ -2191,9 +2191,9 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + П psychic damage; I < [слабкий], frightened (save ends)',
-							tier2: '6 + П psychic damage; I < [середній], frightened (save ends)',
-							tier3: '9 + П psychic damage; I < [сильний], frightened (save ends)'
+							tier1: '3 + П психічної шкоди; І < [слабкий], зляканий (рят. кидок закінчує)',
+							tier2: '6 + П психічної шкоди; І < [середній], зляканий (рят. кидок закінчує)',
+							tier3: '9 + П психічної шкоди; І < [сильний], зляканий (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2211,7 +2211,7 @@ export const humanTalent = {
 				name: 'Choke',
 				description: 'You crush a foe in a telekinetic grip.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2246,13 +2246,13 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + Р damage; M < [слабкий], slowed (save ends)',
-							tier2: '5 + Р damage; M < [середній], slowed (save ends)',
-							tier3: '8 + Р damage; M < [сильний], restrained (save ends)'
+							tier1: '3 + Р шкоди; С < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '5 + Р шкоди; С < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '8 + Р шкоди; С < [сильний], скутий (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can vertical pull the target up to 2 squares. If the target is made restrained by this ability, this forced movement ignores their stability.'
 					}
 				],
@@ -2270,7 +2270,7 @@ export const humanTalent = {
 				name: 'Precognition',
 				description: 'You give a target a glimpse into the future so that they’re ready for what comes next.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2298,8 +2298,8 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a triggered action to make a free strike against the source of the damage.'
+						type: 'Текст',
+						text: 'Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a тригерна дія to make a free strike against the source of the damage.'
 					}
 				],
 				preEffect: '',
@@ -2316,7 +2316,7 @@ export const humanTalent = {
 				name: 'Smolder',
 				description: 'Smoke flows from your enemy like tears as their skin begins to blacken and flake.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2345,7 +2345,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Choose the damage type and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.'
 					},
 					{
@@ -2355,9 +2355,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '3 + Р damage; Р < [слабкий], the target has weakness 5 (save ends)',
-							tier2: '6 + Р damage; Р < [середній], the target has weakness 5 (save ends)',
-							tier3: '9 + Р damage; Р < [сильний], the target has weakness equal to 5 + your Reason score (save ends)'
+							tier1: '3 + Р шкоди; Р < [слабкий], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+							tier2: '6 + Р шкоди; Р < [середній], ціль має вразливість до шкоди 5 (рят. кидок закінчує)',
+							tier3: '9 + Р шкоди; Р < [сильний], ціль має вразливість до шкоди, що дорівнює 5 + ваш показник Розуму (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2375,7 +2375,7 @@ export const humanTalent = {
 				name: 'Flashback',
 				description: 'The target is thrown several seconds back through time and gets to do it all again.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2403,7 +2403,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target uses an ability with a base Heroic Resource cost of 7 or lower that they’ve previously used this round, without needing to spend the base cost. Augmentations to the ability can be paid for as usual.'
 					},
 					{
@@ -2428,7 +2428,7 @@ export const humanTalent = {
 				name: 'Inertia Soak',
 				description: 'Your psionic energy surrounds the target and pushes everything else away from them.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2456,7 +2456,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target ignores difficult terrain and takes no damage from forced movement until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your Reason score. When pushing an ally, the target can ignore that ally’s stability. A creature can only be force moved this way once a turn.'
 					},
 					{
@@ -2481,7 +2481,7 @@ export const humanTalent = {
 				name: 'Iron',
 				description: 'The target’s skin turns to hard, dark metal, impenetrable and dense.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2509,7 +2509,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target’s stability increases by an amount equal to your Reason score, and they gain 10 temporary Stamina and 2 surges. This stability increase lasts until the target no longer has temporary Stamina from this ability.'
 					},
 					{
@@ -2517,7 +2517,7 @@ export const humanTalent = {
 						name: 'Strained',
 						value: 0,
 						repeatable: false,
-						effect: 'You can’t use maneuvers (save ends).'
+						effect: 'You can’t use маневри (save ends).'
 					}
 				],
 				preEffect: '',
@@ -2534,7 +2534,7 @@ export const humanTalent = {
 				name: 'Perfect Clarity',
 				description: 'You clear the mind of nothing but the goal.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2562,7 +2562,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the start of your next turn, the target gains a +3 bonus to speed, and they have a double edge on the next power roll they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.'
 					},
 					{
@@ -2570,7 +2570,7 @@ export const humanTalent = {
 						name: 'Strained',
 						value: 0,
 						repeatable: false,
-						effect: 'You take 1d6 damage, and you can’t use triggered actions (save ends).'
+						effect: 'You take 1d6 damage, and you can’t use тригерні дії (save ends).'
 					}
 				],
 				preEffect: '',
@@ -2587,7 +2587,7 @@ export const humanTalent = {
 				name: 'Fling Through Time',
 				description: 'You hurl the target through the annals of time, forcing them to witness every moment of their existence all at once.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2622,13 +2622,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '3 + П corruption damage; П < [слабкий], weakened (save ends)',
-							tier2: '5 + П corruption damage; the target is flung through time, and if П < [середній] they are weakened (save ends)',
-							tier3: '8 + П corruption damage; the target is flung through time, and if П < [сильний] they are weakened (save ends)'
+							tier1: '3 + П шкоди від скверни; П < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '5 + П шкоди від скверни; ціль викинута крізь час, і якщо П < [середній] they are ослаблений (рят. кидок закінчує)',
+							tier3: '8 + П шкоди від скверни; ціль викинута крізь час, і якщо П < [сильний] they are ослаблений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A target who is flung through time is removed from the encounter map until the end of their next turn, reappearing in their original space or the nearest unoccupied space.'
 					},
 					{
@@ -2653,7 +2653,7 @@ export const humanTalent = {
 				name: 'Force Orb',
 				description: 'Spheres of solid psionic energy float around you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2682,8 +2682,8 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: '\nYou create three size 1T orbs that orbit your body. Each orb gives you a cumulative damage immunity 1. Each time you take damage, you lose 1 orb.\n\nOnce on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.'
+						type: 'Текст',
+						text: '\nYou create three size 1T orbs that orbit your body. Each orb gives you a cumulative damage immunity 1. Each time you take damage, you lose 1 orb.\n\nOnce on each of your turns, you can use a безкоштовний маневр to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.'
 					},
 					{
 						type: 'roll',
@@ -2692,9 +2692,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '2 damage',
-							tier2: '3 damage',
-							tier3: '5 damage'
+							tier1: '2 шкоди',
+							tier2: '3 шкоди',
+							tier3: '5 шкоди'
 						}
 					},
 					{
@@ -2719,7 +2719,7 @@ export const humanTalent = {
 				name: 'Reflector Field',
 				description: 'A protective field reverses the momentum of incoming attacks.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2747,7 +2747,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The aura lasts until the start of your next turn. Whenever an enemy targets an ally in the area with a ranged ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.'
 					},
 					{
@@ -2772,7 +2772,7 @@ export const humanTalent = {
 				name: 'Soul Burn',
 				description: 'You blast their soul out of their body, leaving it to helplessly float back to a weakened husk.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2807,13 +2807,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '6 + П damage; П < [слабкий], dazed (save ends)',
-							tier2: '10 + П damage; П < [середній], dazed (save ends)',
-							tier3: '14 + П damage; П < [сильний], dazed (save ends)'
+							tier1: '6 + П шкоди; П < [слабкий], приголомшений (рят. кидок закінчує)',
+							tier2: '10 + П шкоди; П < [середній], приголомшений (рят. кидок закінчує)',
+							tier3: '14 + П шкоди; П < [сильний], приголомшений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target takes a bane on Presence tests until the end of the encounter.'
 					},
 					{
@@ -2838,7 +2838,7 @@ export const humanTalent = {
 				name: 'Exothermic Shield',
 				description: 'You encase the target in psionic flame and allow them to flicker without fear of burning out.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2866,7 +2866,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your Reason score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.'
 					},
 					{
@@ -2891,7 +2891,7 @@ export const humanTalent = {
 				name: 'Hypersonic',
 				description: 'You move fast enough to turn around and watch your foes feel the aftermath.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2920,7 +2920,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You teleport to a square on the opposite side of the area before making the power roll.'
 					},
 					{
@@ -2930,9 +2930,9 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '12 sonic damage',
-							tier2: '18 sonic damage',
-							tier3: '24 sonic damage'
+							tier1: '12 звукової шкоди',
+							tier2: '18 звукової шкоди',
+							tier3: '24 звукової шкоди'
 						}
 					},
 					{
@@ -2957,7 +2957,7 @@ export const humanTalent = {
 				name: 'Mind Snare',
 				description: 'You latch onto your prey’s brain and don’t let go, like a song they can’t get out of their head.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2992,13 +2992,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '10 + Р psychic damage; Р < [слабкий], slowed (save ends)',
-							tier2: '14 + Р psychic damage; Р < [середній], slowed (save ends)',
-							tier3: '20 + Р psychic damage; Р < [сильний], slowed (save ends)'
+							tier1: '10 + Р психічної шкоди; Р < [слабкий], сповільнений (рят. кидок закінчує)',
+							tier2: '14 + Р психічної шкоди; Р < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '20 + Р психічної шкоди; Р < [сильний], сповільнений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'While slowed this way, the target takes 3 psychic damage for each square they willingly leave.'
 					},
 					{
@@ -3023,7 +3023,7 @@ export const humanTalent = {
 				name: 'Soulbound',
 				description: 'You fire a piercing bolt of psychic energy that lances through two foes and leaves a faint intangible thread between them.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -3058,13 +3058,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '8 damage; Л < [слабкий], the target is stitched to the other target (save ends)',
-							tier2: '13 damage; Л < [середній], the target is stitched to the other target (save ends)',
-							tier3: '17 damage; Л < [сильний], the target is stitched to the other target (save ends)'
+							tier1: '8 шкоди; Л < [слабкий], ціль пришита до іншої цілі (рят. кидок закінчує)',
+							tier2: '13 шкоди; Л < [середній], ціль пришита до іншої цілі (рят. кидок закінчує)',
+							tier3: '17 шкоди; Л < [сильний], ціль пришита до іншої цілі (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'If any target becomes stitched to the other, both targets are stitched together. While stitched together, a target takes a bane on power rolls while not adjacent to a creature they’re stitched to. Whenever a stitched target takes damage that wasn’t dealt by or also taken by another stitched target, each other stitched target takes half the damage the initial target took.'
 					},
 					{
@@ -3089,7 +3089,7 @@ export const humanTalent = {
 				name: 'Doubt',
 				description: 'You tug at the strings of the foe’s anima and unravel them, allowing someone else to take advantage of their drive.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -3124,13 +3124,13 @@ export const humanTalent = {
 								'Presence'
 							],
 							bonus: 0,
-							tier1: '10 + П damage; П < [слабкий], weakened (save ends)',
-							tier2: '14 + П damage; П < [середній], weakened (save ends)',
-							tier3: '20 + П damage; П < [сильний], weakened and slowed (save ends)'
+							tier1: '10 + П шкоди; П < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '14 + П шкоди; П < [середній], ослаблений (рят. кидок закінчує)',
+							tier3: '20 + П шкоди; П < [сильний], ослаблений і сповільнений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'This ability gains an edge against a target with a soul. After you make the power roll, you or one ally within distance have a double edge on the next power roll you make before the end of the encounter.'
 					},
 					{
@@ -3155,7 +3155,7 @@ export const humanTalent = {
 				name: 'Mindwipe',
 				description: 'You attempt to make them forget all their training.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -3190,13 +3190,13 @@ export const humanTalent = {
 								'Reason'
 							],
 							bonus: 0,
-							tier1: '12 + Р damage; Р < [слабкий], the target takes a bane on their next power roll',
-							tier2: '17 + Р damage; Р < [середній], the target takes a bane on power rolls (save ends)',
-							tier3: '23 + Р damage; Р < [сильний], the target has a double bane on power rolls (save ends)'
+							tier1: '12 + Р шкоди; Р < [слабкий], ціль отримує шкоду на свій наступний кидок сили',
+							tier2: '17 + Р шкоди; Р < [середній], ціль отримує перешкоду на кидки сили (рят. кидок закінчує)',
+							tier3: '23 + Р шкоди; Р < [сильний], ціль отримує подвійну перешкоду на кидки сили (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target can’t communicate with anyone until the end of the encounter.'
 					},
 					{
@@ -3221,7 +3221,7 @@ export const humanTalent = {
 				name: 'Rejuvenate',
 				description: 'You reshape the flow of time in the target’s body to return it to an earlier state.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -3249,7 +3249,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: '\nChoose two of the following effects:\n\n* The target can spend any number of Recoveries.\n* The target gains 1 of their Heroic Resource, and can end any\neffects on them that are ended by a saving throw or that end at the end of their turn.\n* The target gains 2 surges, and gains a +3 bonus to speed until the end of the encounter.'
 					},
 					{
@@ -3274,7 +3274,7 @@ export const humanTalent = {
 				name: 'Steel',
 				description: 'The target’s skin becomes covered in tough metal.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -3302,7 +3302,7 @@ export const humanTalent = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target has damage immunity 5 and can’t be made slowed or weakened until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the forced movement distance gains a +5 bonus.'
 					},
 					{
@@ -3310,7 +3310,7 @@ export const humanTalent = {
 						name: 'Strained',
 						value: 0,
 						repeatable: false,
-						effect: 'You can’t use maneuvers (save ends).'
+						effect: 'You can’t use маневри (save ends).'
 					}
 				],
 				preEffect: '',
@@ -3336,14 +3336,14 @@ export const humanTalent = {
 								id: 'talent-sub-1-1-1',
 								name: 'Accelerate',
 								description: 'To your ally, it seems as though the world has slowed down.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-1-1-1',
 										name: 'Accelerate',
 										description: 'To your ally, it seems as though the world has slowed down.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -3370,7 +3370,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target shifts up to a number of squares equal to your Reason score.'
 											},
 											{
@@ -3378,7 +3378,7 @@ export const humanTalent = {
 												name: 'Spend',
 												value: 2,
 												repeatable: false,
-												effect: 'The target can use a maneuver.'
+												effect: 'The target can use a маневр.'
 											}
 										],
 										preEffect: '',
@@ -3396,14 +3396,14 @@ export const humanTalent = {
 								id: 'talent-sub-1-1-2',
 								name: 'Again',
 								description: 'You step back a split second to see if things play out a little differently.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-1-1-2',
 										name: 'Again',
 										description: 'You step back a split second to see if things play out a little differently.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target makes an ability roll.',
 											time: '',
@@ -3430,7 +3430,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You can use this ability after seeing the result of the triggering roll. The target must reroll the power roll and use the new roll.'
 											}
 										],
@@ -3454,14 +3454,14 @@ export const humanTalent = {
 								id: 'talent-sub-1-2-1',
 								name: 'Ease the Hours',
 								description: 'You can increase the number of rounds in a montage test by 1 if the test would end before the heroes hit the success limit.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-1-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3469,14 +3469,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-2-2a',
 												name: 'Applied Chronometrics',
 												description: 'Time slows down around you. Your heartbeat is the only gauge of the extra moments you’ve gained.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-2-2a',
 														name: 'Applied Chronometrics',
 														description: 'Time slows down around you. Your heartbeat is the only gauge of the extra moments you’ve gained.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3510,14 +3510,14 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'You target two creatures, one of which can be you',
-																	tier2: 'You target three creatures, one of which can be you',
-																	tier3: 'You target four creatures, one of which can be you'
+																	tier1: 'Ви обираєте дві істоти, одна з яких можете бути ви',
+																	tier2: 'Ви обираєте три істоти, одна з яких можете бути ви',
+																	tier3: 'Ви обираєте чотири істоти, одна з яких можете бути ви'
 																}
 															},
 															{
-																type: 'text',
-																text: 'Until the start of your next turn, each target gains a +5 bonus to speed, they can’t be made dazed, and they can use an additional maneuver on their turn. If a target is already dazed, that condition ends for them.'
+																type: 'Текст',
+																text: 'Until the start of your next turn, each target gains a +5 bonus to speed, they can’t be made dazed, and they can use an additional маневр on their turn. If a target is already dazed, that condition ends for them.'
 															},
 															{
 																type: 'field',
@@ -3545,14 +3545,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-2-2b',
 												name: 'Slow',
 												description: 'Perhaps they wonder why everyone else is moving so quickly?',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-2-2b',
 														name: 'Slow',
 														description: 'Perhaps they wonder why everyone else is moving so quickly?',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3586,14 +3586,14 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'The target’s speed is halved (save ends), or if П < [слабкий], the target is slowed (save ends).',
-																	tier2: 'The target is slowed (save ends), or if П < [середній], the target’s speed is 0 (save ends).',
-																	tier3: 'The target is slowed (save ends), or if П < [сильний], the target’s speed is 0 (save ends).'
+																	tier1: 'Швидкість цілі зменшується вдвічі (рят. кидок закінчує), або якщо П < [слабкий], ціль сповільнена (рят. кидок закінчує).',
+																	tier2: 'Ціль сповільнена (рят. кидок закінчує), або якщо П < [середній], швидкість цілі дорівнює 0 (рят. кидок закінчує).',
+																	tier3: 'Ціль сповільнена (рят. кидок закінчує), або якщо П < [сильний], швидкість цілі дорівнює 0 (рят. кидок закінчує).'
 																}
 															},
 															{
-																type: 'text',
-																text: 'A target can’t use triggered actions while their speed is reduced this way.'
+																type: 'Текст',
+																text: 'A target can’t use тригерні дії while their speed is reduced this way.'
 															},
 															{
 																type: 'field',
@@ -3638,14 +3638,14 @@ export const humanTalent = {
 								id: 'talent-sub-1-5-1',
 								name: 'Distortion Temporal',
 								description: 'While you are not dying, time behaves irregularly around you in a 3 aura. That area is difficult terrain for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to speed until the end of the turn.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-1-5-2',
 								name: 'Speed of Thought',
-								description: 'Once per combat round while you are not dying, you can spend 2 clarity when you use a triggered action to turn it into a free triggered action.',
-								type: 'Text',
+								description: 'Once per combat round while you are not dying, you can spend 2 clarity when you use a тригерна дія to turn it into a безкоштовна тригерна дія.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3657,7 +3657,7 @@ export const humanTalent = {
 								id: 'talent-sub-1-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3665,14 +3665,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-6-1a',
 												name: 'Fate',
 												description: 'Your foe gets a glimpse of how it will end for them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-6-1a',
 														name: 'Fate',
 														description: 'Your foe gets a glimpse of how it will end for them.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3700,7 +3700,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The target has damage weakness 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are knocked prone.'
 															},
 															{
@@ -3717,9 +3717,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '8 + П psychic damage',
-																	tier2: '13 + П psychic damage',
-																	tier3: '17 + П psychic damage'
+																	tier1: '8 + П психічної шкоди',
+																	tier2: '13 + П психічної шкоди',
+																	tier3: '17 + П психічної шкоди'
 																}
 															}
 														],
@@ -3741,14 +3741,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-6-1b',
 												name: 'Statis Field',
 												description: 'Keep everything as it was. Ignore everything that will be.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-6-1b',
 														name: 'Statis Field',
 														description: 'Keep everything as it was. Ignore everything that will be.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3777,7 +3777,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: '\nThe area is frozen in time until the start of your next turn. Each object in the area is restrained and can’t fall until the effect ends. Until the effect ends, creatures in the area who are reduced to 0 Stamina or would die stay alive, and objects in the area that are reduced to 0 Stamina remain undestroyed.\n\nMake a power roll that targets each enemy in the area.'
 															},
 															{
@@ -3787,9 +3787,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'P < [слабкий], the target is slowed until the effect ends',
-																	tier2: 'P < [середній], the target’s speed is 0 until the effect ends',
-																	tier3: 'P < [сильний], the target is restrained until the effect ends'
+																	tier1: 'П < [слабкий], ціль сповільнена, доки ефект не закінчиться',
+																	tier2: 'П < [середній], швидкість цілі дорівнює 0, доки ефект не закінчиться',
+																	tier3: 'П < [сильний], ціль скута, доки ефект не закінчиться'
 																}
 															},
 															{
@@ -3831,21 +3831,21 @@ export const humanTalent = {
 								id: 'talent-sub-1-8-1',
 								name: 'Doubling the Hours',
 								description: 'While you have 5 or more Victories, you can undertake an additional respite activity during a respite.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-1-8-2',
 								name: 'Stasis Shield',
 								description: 'You freeze time just long enough to bring the victim to safety!',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-1-8-2',
 										name: 'Stasis Shield',
 										description: 'You freeze time just long enough to bring the victim to safety!',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target takes damage.',
 											time: '',
@@ -3872,7 +3872,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target is teleported to an unoccupied space adjacent to you, taking no damage and suffering no additional effects if this movement would get them out of harm’s way.'
 											},
 											{
@@ -3903,7 +3903,7 @@ export const humanTalent = {
 								id: 'talent-sub-1-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3911,14 +3911,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-9-1a',
 												name: 'Acceleration Field',
 												description: 'You forcibly stuff more moments into a critical point in time, knowing full well you might need to steal some of your own.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-9-1a',
 														name: 'Acceleration Field',
 														description: 'You forcibly stuff more moments into a critical point in time, knowing full well you might need to steal some of your own.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3946,8 +3946,8 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'Each target can use any main action available to them as a free triggered action, but they lose their main action on their next turn.'
+																type: 'Текст',
+																text: 'Each target can use any основна дія available to them as a безкоштовна тригерна дія, but they lose their основна дія on their next turn.'
 															},
 															{
 																type: 'field',
@@ -3963,9 +3963,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '4 corruption damage; slowed (save ends)',
-																	tier2: '6 corruption damage; slowed (save ends)',
-																	tier3: '10 corruption damage; slowed (save ends)'
+																	tier1: '4 шкоди від скверни; сповільнений (рят. кидок закінчує)',
+																	tier2: '6 шкоди від скверни; сповільнений (рят. кидок закінчує)',
+																	tier3: '10 шкоди від скверни; сповільнений (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -3987,14 +3987,14 @@ export const humanTalent = {
 												id: 'talent-sub-1-9-1b',
 												name: 'Borrow From the Future',
 												description: 'You lean on future heroism to assist you in the now.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-1-9-1b',
 														name: 'Borrow From the Future',
 														description: 'You lean on future heroism to assist you in the now.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4022,7 +4022,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The targets share 6 of their Heroic Resource among themselves, as you determine. A target can’t gain more than 3 of their Heroic Resource this way. After using this ability, you can’t gain any clarity until the end of the next combat round.'
 															}
 														],
@@ -4066,14 +4066,14 @@ export const humanTalent = {
 								id: 'talent-sub-2-1-1',
 								name: 'Minor Telekinesis',
 								description: 'Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-2-1-1',
 										name: 'Minor Telekinesis',
 										description: 'Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -4100,7 +4100,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You slide the target up to a number of squares equal to your Reason score.'
 											},
 											{
@@ -4133,14 +4133,14 @@ export const humanTalent = {
 								id: 'talent-sub-2-1-2',
 								name: 'Repel',
 								description: 'They aren’t going anywhere, but you might!',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-2-1-2',
 										name: 'Repel',
 										description: 'They aren’t going anywhere, but you might!',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target takes damage or is force moved.',
 											time: '',
@@ -4167,7 +4167,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target takes half the triggering damage, or the distance of the triggering forced movement is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the forced movement is reduced to 0 squares, the target can push the source of the forced movement a number of squares equal to your Reason score.'
 											}
 										],
@@ -4191,14 +4191,14 @@ export const humanTalent = {
 								id: 'talent-sub-2-2-1',
 								name: 'Ease their Fall',
 								description: '',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-2-2-1',
 										name: 'Ease their Fall',
 										description: '',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: true,
 											trigger: 'You land after a fall, or any falling creature lands within 2 squares of you.',
 											time: '',
@@ -4222,7 +4222,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You reduce the falling damage by an amount equal to 2 + your Reason score.'
 											}
 										],
@@ -4241,7 +4241,7 @@ export const humanTalent = {
 								id: 'talent-sub-2-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4249,14 +4249,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-2-2a',
 												name: 'Gravitic Burst',
 												description: 'Everyone get away from me!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-2-2a',
 														name: 'Gravitic Burst',
 														description: 'Everyone get away from me!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4290,9 +4290,9 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '3 damage; vertical push 2',
-																	tier2: '6 damage; vertical push 4',
-																	tier3: '9 damage; vertical push 6'
+																	tier1: '3 шкоди; вертикально відштовхнути на 2',
+																	tier2: '6 шкоди; вертикально відштовхнути на 4',
+																	tier3: '9 шкоди; вертикально відштовхнути на 6'
 																}
 															},
 															{
@@ -4321,14 +4321,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-2-2b',
 												name: 'Levity and Gravity',
 												description: 'You raise the target into the air, then smother them against the ground.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-2-2b',
 														name: 'Levity and Gravity',
 														description: 'You raise the target into the air, then smother them against the ground.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4363,9 +4363,9 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '6 + Р damage; M < [слабкий], prone',
-																	tier2: '10 + Р damage; M < [середній], prone',
-																	tier3: '14 + Р damage; M < [сильний], prone and can’t stand (save ends)'
+																	tier1: '6 + Р шкоди; С < [слабкий], розпластаний',
+																	tier2: '10 + Р шкоди; С < [середній], розпластаний',
+																	tier3: '14 + Р шкоди; С < [сильний], розпластаний і не може встати (рят. кидок закінчує)'
 																}
 															},
 															{
@@ -4411,14 +4411,14 @@ export const humanTalent = {
 								id: 'talent-sub-2-5-1',
 								name: 'Kinetic Amplifier',
 								description: 'Whenever you force move a creature, you can spend up to 2 surges. For each surge spent, the forced movement distance gains a bonus equal to your Reason score.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-2-5-2',
 								name: 'Triangulate',
-								description: 'Whenever an ally uses a ranged ability while you are within the ability’s distance, you can spend 1 clarity as a free triggered action to allow them to use the ability as if they were in your space.',
-								type: 'Text',
+								description: 'Whenever an ally uses a ranged ability while you are within the ability’s distance, you can spend 1 clarity as a безкоштовна тригерна дія to allow them to use the ability as if they were in your space.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4430,7 +4430,7 @@ export const humanTalent = {
 								id: 'talent-sub-2-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4438,14 +4438,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-6-1a',
 												name: 'Gravitic Well',
 												description: 'You bend gravity into a fine point and pull your foes toward it.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-6-1a',
 														name: 'Gravitic Well',
 														description: 'You bend gravity into a fine point and pull your foes toward it.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4486,7 +4486,7 @@ export const humanTalent = {
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Targets closest to the center of the area are pulled first.'
 															},
 															{
@@ -4515,14 +4515,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-6-1b',
 												name: 'Greater Kinetic Grip',
 												description: 'You raise the target into the air without breaking a sweat.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-6-1b',
 														name: 'Greater Kinetic Grip',
 														description: 'You raise the target into the air without breaking a sweat.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4557,9 +4557,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'Slide 4 + R; M < [слабкий], the forced movement is vertic',
-																	tier2: 'Slide 8 + R; M < [середній], the forced movement is vertical',
-																	tier3: 'Slide 12 + R; prone; M < [сильний], the forced movement is vertical'
+																	tier1: 'Зсунути на 4 + Р; С < [слабкий], примусове переміщення є вертикальним',
+																	tier2: 'Зсунути на 8 + Р; С < [середній], примусове переміщення є вертикальним',
+																	tier3: 'Зсунути на 12 + Р; розпластаний; С < [сильний], примусове переміщення є вертикальним'
 																}
 															},
 															{
@@ -4601,14 +4601,14 @@ export const humanTalent = {
 								id: 'talent-sub-2-8-1',
 								name: 'Levitation Field',
 								description: 'You manipulate the air around your allies so they can move as freely through the sky as you can.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-2-8-1',
 										name: 'Levitation Field',
 										description: 'You manipulate the air around your allies so they can move as freely through the sky as you can.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -4635,7 +4635,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'Each target can fly until the start of your next turn, and can immediately shift up to their speed. You can also shift up to your speed. While flying, a target’s stability is reduced to 0 and can’t be increased.'
 											},
 											{
@@ -4661,7 +4661,7 @@ export const humanTalent = {
 								id: 'talent-sub-2-8-2',
 								name: 'Low Gravity',
 								description: 'Your mind can carry your body through tough times. You ignore difficult terrain and don’t need to spend additional movement while prone.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4673,7 +4673,7 @@ export const humanTalent = {
 								id: 'talent-sub-2-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4681,14 +4681,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-9-1a',
 												name: 'Fulcrum',
 												description: 'You precisely manipulate the creatures around you.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-9-1a',
 														name: 'Fulcrum',
 														description: 'You precisely manipulate the creatures around you.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4716,7 +4716,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Make a power roll to determine the area of this ability. Each target is vertical pushed 6 squares. You can target only objects of size 1L or smaller.'
 															},
 															{
@@ -4757,14 +4757,14 @@ export const humanTalent = {
 												id: 'talent-sub-2-9-1b',
 												name: 'Gravitic Nova',
 												description: 'Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-2-9-1b',
 														name: 'Gravitic Nova',
 														description: 'Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4798,13 +4798,13 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '6 damage; push 7',
-																	tier2: '9 damage; push 10',
-																	tier3: '13 damage; push 15'
+																	tier1: '6 шкоди; відштовхнути на 7',
+																	tier2: '9 шкоди; відштовхнути на 10',
+																	tier3: '13 шкоди; відштовхнути на 15'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'On a critical hit, the size of the area increases by 3, and this ability deals an extra 10 damage.'
 															},
 															{
@@ -4855,14 +4855,14 @@ export const humanTalent = {
 								id: 'talent-sub-3-1-1',
 								name: 'Feedback Loop',
 								description: 'Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-3-1-1',
 										name: 'Feedback Loop',
 										description: 'Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'The target deals damage to an ally.',
 											time: '',
@@ -4889,7 +4889,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The target takes psychic damage equal to half the triggering damage.'
 											}
 										],
@@ -4908,14 +4908,14 @@ export const humanTalent = {
 								id: 'talent-sub-3-1-2',
 								name: 'Remote Assistance',
 								description: 'An ally gains the benefit of your intellect.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'talent-sub-3-1-2',
 										name: 'Remote Assistance',
 										description: 'An ally gains the benefit of your intellect.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -4942,7 +4942,7 @@ export const humanTalent = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'The next ability roll an ally makes against the target before the start of your next turn gains an edge.'
 											},
 											{
@@ -4973,14 +4973,14 @@ export const humanTalent = {
 								id: 'talent-sub-3-2-1',
 								name: 'Ease the Mind',
 								description: 'You gain an edge on tests made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-3-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4988,14 +4988,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-2-2a',
 												name: 'Overwhelm',
 												description: 'You overload their senses, turning all their subconscious thoughts into conscious ones.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-2-2a',
 														name: 'Overwhelm',
 														description: 'You overload their senses, turning all their subconscious thoughts into conscious ones.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5030,9 +5030,9 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: '6 + Р psychic damage; I < [слабкий], slowed (save ends)',
-																	tier2: '10 + Р psychic damage; I < [середній], weakened (save ends)',
-																	tier3: '14 + Р psychic damage; I < [сильний], dazed (save ends)'
+																	tier1: '6 + Р психічної шкоди; І < [слабкий], сповільнений (рят. кидок закінчує)',
+																	tier2: '10 + Р психічної шкоди; І < [середній], ослаблений (рят. кидок закінчує)',
+																	tier3: '14 + Р психічної шкоди; І < [сильний], приголомшений (рят. кидок закінчує)'
 																}
 															},
 															{
@@ -5040,7 +5040,7 @@ export const humanTalent = {
 																name: 'Strained',
 																value: 0,
 																repeatable: false,
-																effect: 'You start crying, and you can’t use triggered actions or make free strikes until the end of the target’s next turn.'
+																effect: 'You start crying, and you can’t use тригерні дії or make free strikes until the end of the target’s next turn.'
 															}
 														],
 														preEffect: '',
@@ -5061,14 +5061,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-2-2b',
 												name: 'Synaptic Override',
 												description: 'You gain control over an enemy’s nervous system. How pleasant for them.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-2-2b',
 														name: 'Synaptic Override',
 														description: 'You gain control over an enemy’s nervous system. How pleasant for them.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5102,13 +5102,13 @@ export const humanTalent = {
 																		'Reason'
 																	],
 																	bonus: 0,
-																	tier1: 'The target makes a free strike against one enemy of your choice.',
-																	tier2: 'The target shifts up to their speed and uses their signature ability against any enemies of your choice.',
-																	tier3: 'The target moves up to their speed and uses their signature ability against any enemies of your choice.'
+																	tier1: 'Ціль робить безкоштовний удар проти одного ворога на ваш вибір.',
+																	tier2: 'Ціль зміщується до своєї швидкості і використовує свою сигнатурну здібність проти будь-яких ворогів на ваш вибір.',
+																	tier3: 'Ціль рухається до своєї швидкості і використовує свою сигнатурну здібність проти будь-яких ворогів на ваш вибір.'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You control the target’s movement. The target can’t be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect. However, you can move them to provoke opportunity attacks.'
 															},
 															{
@@ -5154,28 +5154,28 @@ export const humanTalent = {
 								id: 'talent-sub-3-5-1',
 								name: 'Compulsion',
 								description: 'Whenever you obtain a success on a test using a skill from the interpersonal skill group while interacting with an NPC, you can ask them a question using your Telepathic Speech feature. The NPC must answer the question truthfully to the best of their ability.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-3-5-2',
 								name: 'Remote Amplification',
 								description: 'Remote Amplification, Ability distance modifier',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'talent-sub-3-5-2a',
 											name: 'Remote Amplification',
 											description: 'The range of your Telepathic Speech feature increases to 1 mile.',
-											type: 'Text',
+											type: 'Текст',
 											data: null
 										},
 										{
 											id: 'talent-sub-3-5-2b',
 											name: 'Ability distance modifier',
 											description: '',
-											type: 'Ability Distance',
+											type: 'Дальність здібності',
 											data: {
 												keywords: [
 													'Дальній',
@@ -5200,7 +5200,7 @@ export const humanTalent = {
 								id: 'talent-sub-3-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -5208,14 +5208,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-6-1a',
 												name: 'Synaptic Conditioning',
 												description: 'It’s a subtle mindset shift. It’s not that they’re your enemy—you just don’t like them!',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-6-1a',
 														name: 'Synaptic Conditioning',
 														description: 'It’s a subtle mindset shift. It’s not that they’re your enemy—you just don’t like them!',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5250,9 +5250,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '10 psychic damage; the target takes a bane on ability rolls made to harm you or your allies (save ends)',
-																	tier2: '14 psychic damage; the target has a double bane on ability rolls made to harm you or your allies (save ends)',
-																	tier3: '20 psychic damage; the target considers you and your allies to be their allies when using abilities and features (save ends)'
+																	tier1: '10 психічної шкоди; ціль отримує перешкоду на кидки здібностей, зроблені для шкоди вам або вашим союзникам (рят. кидок закінчує)',
+																	tier2: '14 психічної шкоди; ціль отримує подвійну перешкоду на кидки здібностей, зроблені для шкоди вам або вашим союзникам (рят. кидок закінчує)',
+																	tier3: '20 психічної шкоди; під час використання здібностей і особливостей ціль вважає вас і ваших союзників своїми союзниками (рят. кидок закінчує)'
 																}
 															},
 															{
@@ -5281,14 +5281,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-6-1b',
 												name: 'Synaptic Dissipation',
 												description: 'You manipulate your enemies’ minds and make them wonder if you were ever really there in the first place.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-6-1b',
 														name: 'Synaptic Dissipation',
 														description: 'You manipulate your enemies’ minds and make them wonder if you were ever really there in the first place.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5317,7 +5317,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You target a number of creatures with this ability determined by the outcome of your power roll. You and your allies are invisible to each target until the start of your next turn.'
 															},
 															{
@@ -5329,7 +5329,7 @@ export const humanTalent = {
 																	bonus: 0,
 																	tier1: 'Дві істоти',
 																	tier2: '3 Істоти',
-																	tier3: 'Five creatures'
+																	tier3: 'П’ять істот'
 																}
 															},
 															{
@@ -5371,14 +5371,14 @@ export const humanTalent = {
 								id: 'talent-sub-3-8-1',
 								name: 'Mindlink',
 								description: 'During a respite, you can choose a number of creatures up to your Reason score who you have communicated with using your Telepathic Speech feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more Recoveries, each other linked creature can spend a Recovery.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'talent-sub-3-8-2',
 								name: 'Universal Connection',
 								description: 'The range of your Telepathic Speech feature increases to anywhere on the same world.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -5390,7 +5390,7 @@ export const humanTalent = {
 								id: 'talent-sub-3-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -5398,14 +5398,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-9-1a',
 												name: 'Resonant Mind Spike',
 												description: 'You fire a telepathic bolt empowered by every consciousness within reach directly into your foe’s mind.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-9-1a',
 														name: 'Resonant Mind Spike',
 														description: 'You fire a telepathic bolt empowered by every consciousness within reach directly into your foe’s mind.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5440,13 +5440,13 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: '15 + Р psychic damage',
-																	tier2: '24 + Р psychic damage',
-																	tier3: '28 + Р psychic damage'
+																	tier1: '15 + Р психічної шкоди',
+																	tier2: '24 + Р психічної шкоди',
+																	tier3: '28 + Р психічної шкоди'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'This ability ignores cover and concealment.'
 															},
 															{
@@ -5475,14 +5475,14 @@ export const humanTalent = {
 												id: 'talent-sub-3-9-1b',
 												name: 'Synaptic Terror',
 												description: 'You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'talent-sub-3-9-1b',
 														name: 'Synaptic Terror',
 														description: 'You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -5510,7 +5510,7 @@ export const humanTalent = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You and each target ally can’t obtain lower than a tier 2 outcome on power rolls until the start of your next turn. Each target enemy is affected by the ability’s power roll.'
 															},
 															{
@@ -5520,9 +5520,9 @@ export const humanTalent = {
 																		'Presence'
 																	],
 																	bonus: 0,
-																	tier1: 'R < [слабкий], frightened (save ends)',
-																	tier2: 'R < [середній], frightened (save ends)',
-																	tier3: 'R < [сильний], frightened (save ends)'
+																	tier1: 'Р < [слабкий], зляканий (рят. кидок закінчує)',
+																	tier2: 'Р < [середній], зляканий (рят. кидок закінчує)',
+																	tier3: 'Р < [сильний], зляканий (рят. кидок закінчує)'
 																}
 															},
 															{
@@ -5595,7 +5595,7 @@ export const humanTalent = {
 				id: 'career-agent-feature-1',
 				name: 'Intrigue Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -5611,7 +5611,7 @@ export const humanTalent = {
 				id: 'career-agent-feature-2',
 				name: 'Interpersonal Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -5619,7 +5619,7 @@ export const humanTalent = {
 					],
 					count: 1,
 					selected: [
-						'Persuade'
+						'Переконання'
 					]
 				}
 			},
@@ -5627,7 +5627,7 @@ export const humanTalent = {
 				id: 'career-agent-feature-3',
 				name: 'Intrigue Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -5635,7 +5635,7 @@ export const humanTalent = {
 					],
 					count: 1,
 					selected: [
-						'Search'
+						'Пошук'
 					]
 				}
 			},
@@ -5643,7 +5643,7 @@ export const humanTalent = {
 				id: 'career-agent-feature-4',
 				name: 'Languages',
 				description: '',
-				type: 'Language Choice',
+				type: 'Вибір мови',
 				data: {
 					options: [],
 					count: 2,
@@ -5657,7 +5657,7 @@ export const humanTalent = {
 				id: 'career-agent-feature-5',
 				name: 'Intrigue Perk',
 				description: '',
-				type: 'Perk',
+				type: 'Перевага',
 				data: {
 					lists: [
 						'Інтриги'
@@ -5668,7 +5668,7 @@ export const humanTalent = {
 							id: 'perk-forgettable-face',
 							name: 'Forgettable Face',
 							description: 'If you spend 10 minutes or less interacting with a creature who hasn’t met you before, you can cause them to forget your face when you part. If asked to describe you, the creature gives only a vague, blank, and unhelpful description. Additionally, if you spend 1 hour or more assembling a disguise, you automatically obtain a tier 2 outcome on any test that could make use of the Disguise skill. If you have the Disguise skill, you automatically obtain a tier 3 outcome on the test.',
-							type: 'Text',
+							type: 'Текст',
 							data: null,
 							list: 'Інтриги'
 						}
@@ -5723,7 +5723,7 @@ export const humanTalent = {
 			id: 'default-language',
 			name: 'Default Language',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,

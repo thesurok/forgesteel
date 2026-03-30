@@ -86,9 +86,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							bonus: 3,
-							tier1: '6 psychic damage; R<1 target cannot identify allies as allies (save ends)',
-							tier2: '10 psychic damage; R<2 target identifies allies as enemies (save ends)',
-							tier3: '13 psychic damage; R<3 target identifies allies as enemies (save ends)'
+							tier1: '6 психічної шкоди; Р<1 target cannot identify allies as allies (рят. кидок закінчує)',
+							tier2: '10 психічної шкоди; Р<2 target identifies allies as enemies (рят. кидок закінчує)',
+							tier3: '13 психічної шкоди; Р<3 target identifies allies as enemies (рят. кидок закінчує)'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
@@ -104,7 +104,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 			cost: 10,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				'All voiceless talkers link their minds, creating a circuit that empowers them while two or more voiceless talkers remain in the encounter. While this circuit is active, any psionic strike made by a voiceless talker deals an extra 5 damage. Additionally, when a non-minion voiceless talker takes damage, they can use a free triggered action to swap places with any voiceless talker minion on the encounter map. The minion takes the damage instead.'
+				'All voiceless talkers link their minds, creating a circuit that empowers them while two or more voiceless talkers remain in the encounter. While this circuit is active, any psionic strike made by a voiceless talker deals an extra 5 damage. Additionally, when a non-minion voiceless talker takes damage, they can use a безкоштовна тригерна дія to swap places with any voiceless talker minion on the encounter map. The minion takes the damage instead.'
 			]
 		})
 	],
@@ -137,9 +137,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 psychic damage',
-									tier2: '5 psychic damage; slide 2',
-									tier3: '7 psychic damage; slide 4'
+									tier1: '3 психічної шкоди',
+									tier2: '5 психічної шкоди; зсунути на 2',
+									tier3: '7 психічної шкоди; зсунути на 4'
 								})
 							)
 						]
@@ -190,9 +190,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 damage',
-									tier2: '5 damage; the target takes a bane on their next strike',
-									tier3: '7 damage; the target takes a bane on their next strike'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди; ціль отримує шкоду на свій наступний удар',
+									tier3: '7 шкоди; ціль отримує шкоду на свій наступний удар'
 								})
 							)
 						]
@@ -245,9 +245,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '7 damage',
-									tier2: '10 damage; A<2 grabbed',
-									tier3: '11 damage; A<3 grabbed'
+									tier1: '7 шкоди',
+									tier2: '10 шкоди; Л<2 схоплений',
+									tier3: '11 шкоди; Л<3 схоплений'
 								})
 							),
 							FactoryLogic.createAbilitySectionField({
@@ -274,9 +274,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '7 damage; M<1 3 damage',
-									tier2: '10 damage; M<2 3 damage',
-									tier3: '13 damage; M<3 6 damage'
+									tier1: '7 шкоди; С<1 3 шкоди',
+									tier2: '10 шкоди; С<2 3 шкоди',
+									tier3: '13 шкоди; С<3 6 шкоди'
 								})
 							)
 						]
@@ -350,9 +350,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '11 damage',
-									tier2: '17 damage; A<2 grabbed',
-									tier3: '21 damage; A<3 grabbed'
+									tier1: '11 шкоди',
+									tier2: '17 шкоди; Л<2 схоплений',
+									tier3: '21 шкоди; Л<3 схоплений'
 								})
 							)
 						]
@@ -371,9 +371,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '10 damage; R<1 the mindkiller is invisible to the target (save ends)',
-									tier2: '15 damage; R<2 the mindkiller is invisible to the target (save ends)',
-									tier3: '18 damage; R<3 the mindkiller is invisible to the target (save ends)'
+									tier1: '10 шкоди; Р<1 the mindkiller is invisible to ціль (рят. кидок закінчує)',
+									tier2: '15 шкоди; Р<2 the mindkiller is invisible to ціль (рят. кидок закінчує)',
+									tier3: '18 шкоди; Р<3 the mindkiller is invisible to ціль (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -388,7 +388,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 						distance: [FactoryLogic.distance.createMelee()],
 						target: 'Одна істота',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target must be grabbed by the mindkiller. If the target has `R<2`, they take a −1 penalty to their Reason, Intuition, or Presence score and the mindkiller has a +1 bonus to the same score, all until the end of the encounter.')
+							FactoryLogic.createAbilitySectionText('The target must be grabbed by the mindkiller. If the target has `Р<2`, they take a −1 penalty to their Reason, Intuition, or Presence score and the mindkiller has a +1 bonus to the same score, all until the end of the encounter.')
 						]
 					})
 				}),
@@ -457,9 +457,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '11 damage',
-									tier2: '19 damage; the strike spreads 1 square',
-									tier3: '22 damage; the strike spreads 2 squares'
+									tier1: '11 шкоди',
+									tier2: '19 шкоди; the strike spreads 1 клітинку',
+									tier3: '22 шкоди; the strike spreads 2 клітинок'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The strike’s spread is the distance it expands from a target to nearby enemies. Each enemy within that distance takes 3 damage.'),
@@ -482,9 +482,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '6 lightning damage',
-									tier2: '10 lightning damage; I<2 slowed (save ends)',
-									tier3: '13 lightning damage; I<3 slowed (save ends)'
+									tier1: '6 блискавичної шкоди',
+									tier2: '10 блискавичної шкоди; І<2 сповільнений (рят. кидок закінчує)',
+									tier3: '13 блискавичної шкоди; І<3 сповільнений (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -565,9 +565,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '10 damage',
-									tier2: '15 damage; M<2 grabbed',
-									tier3: '18 damage; M<3 grabbed'
+									tier1: '10 шкоди',
+									tier2: '15 шкоди; С<2 схоплений',
+									tier3: '18 шкоди; С<3 схоплений'
 								})
 							)
 						]
@@ -586,9 +586,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '6 psychic damage; R<1 push 2',
-									tier2: '10 psychic damage; R<2 push 3',
-									tier3: '12 psychic damage; R<3 push 4 and prone'
+									tier1: '6 психічної шкоди; Р<1 відштовхнути на 2',
+									tier2: '10 психічної шкоди; Р<2 відштовхнути на 3',
+									tier3: '12 психічної шкоди; Р<3 відштовхнути на 4 і розпластаний'
 								})
 							),
 							FactoryLogic.createAbilitySectionSpend({
@@ -611,9 +611,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '6 damage; vertical slide 2',
-									tier2: '10 damage; vertical slide 2',
-									tier3: '12 damage; vertical slide 3'
+									tier1: '6 шкоди; вертикально зсунути на 2',
+									tier2: '10 шкоди; вертикально зсунути на 2',
+									tier3: '12 шкоди; вертикально зсунути на 3'
 								})
 							)
 						]
@@ -679,9 +679,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '11 psychic damage; R<2 slowed (save ends)',
-									tier2: '16 psychic damage; R<3 slowed (save ends)',
-									tier3: '19 psychic damage; R<4 slowed (save ends)'
+									tier1: '11 психічної шкоди; Р<2 сповільнений (рят. кидок закінчує)',
+									tier2: '16 психічної шкоди; Р<3 сповільнений (рят. кидок закінчує)',
+									tier3: '19 психічної шкоди; Р<4 сповільнений (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -746,9 +746,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Intuition,
-									tier1: 'The target uses a signature ability against the nearest enemy within distance.',
-									tier2: 'The target makes a free strike against the nearest enemy within distance.',
-									tier3: 'Frightened (save ends)'
+									tier1: 'Ціль використовує сигнатурну здібність проти найближчого ворога в межах дистанції.',
+									tier2: 'Ціль робить безкоштовний удар проти найближчого ворога в межах дистанції.',
+									tier3: 'зляканий (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -779,9 +779,9 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 lightning damage',
-									tier2: '12 lightning damage',
-									tier3: '15 lightning damage'
+									tier1: '7 блискавичної шкоди',
+									tier2: '12 блискавичної шкоди',
+									tier3: '15 блискавичної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the evolutionist is surrounded by a psionic electrical storm that is a 5 aura. The area is difficult terrain for enemies, and any enemy who enters the area for the first time in a round or starts their turn there takes 8 lightning damage.')

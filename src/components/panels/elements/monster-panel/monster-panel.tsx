@@ -115,7 +115,7 @@ export const MonsterPanel = (props: Props) => {
 								<Field orientation='vertical' label='Швидкість' value={speedStr} />
 								<Field orientation='vertical' label='Витривалість' value={MonsterLogic.getStaminaDescription(props.monster)} />
 								<Field orientation='vertical' label='Непорушність' value={MonsterLogic.getStability(props.monster)} />
-								<Field orientation='vertical' label='Вільний Удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
+								<Field orientation='vertical' label='Вільний удар' value={MonsterLogic.getFreeStrikeDamage(props.monster)} />
 							</StatsRow>
 							{
 								!['healthy', 'injured'].includes(MonsterLogic.getCombatState(props.monster)) ?
@@ -162,7 +162,7 @@ export const MonsterPanel = (props: Props) => {
 										}
 										{
 											props.monster.role.organization === MonsterOrganizationType.Minion ?
-												<Field label='Minion' value='On their turn, each minion can take only a move action and a main action, a move action and a maneuver, or two move actions.' />
+												<Field label='Minion' value='On their turn, each minion can take only a дія руху and a основна дія, a дія руху and a маневр, or two дії руху.' />
 												: null
 										}
 										{

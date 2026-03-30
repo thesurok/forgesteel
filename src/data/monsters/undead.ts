@@ -129,9 +129,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				'Ravenous and rotting undead arms burst forth from 9 connected squares of a vertical or horizontal surface. Any creature who ends their turn adjacent to an affected square makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '5 damage; restrained (save ends)',
-					tier2: '5 damage; restrained (EoT)',
-					tier3: '5 damage'
+					tier1: '5 шкоди; скутий (рят. кидок закінчує)',
+					tier2: '5 шкоди; скутий (до кінця ходу)',
+					tier3: '5 шкоди'
 				}),
 				'While restrained this way, a creature takes 1d6 damage at the start of each of their turns.'
 			]
@@ -151,7 +151,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 			cost: 5,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				'One undead acting this turn uses a signature ability against a creature who is bleeding. As a free triggered action, each undead within 5 squares of the first undead moves up to their speed and can make a free strike against the same target.'
+				'One undead acting this turn uses a signature ability against a creature who is bleeding. As a безкоштовна тригерна дія, each undead within 5 squares of the first undead moves up to their speed and can make a free strike against the same target.'
 			],
 			echelon: 2
 		}),
@@ -174,9 +174,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				'The undead attempts to rend the vitality of their foes. Each enemy within 5 squares of the undead makes a **Might test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: '10 corruption damage; the target loses 2 Recoveries',
-					tier2: '8 corruption damage; the target loses 1 Recovery',
-					tier3: '5 corruption damage'
+					tier1: '10 шкоди від скверни; ціль loses 2 Recoveries',
+					tier2: '8 шкоди від скверни; ціль loses 1 Відновлення',
+					tier3: '5 шкоди від скверни'
 				}),
 				'A target who has fewer Recoveries than they would lose is also weakened (save ends).',
 				'**Special**: This ability can’t be used by a minion.'
@@ -219,9 +219,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The crawling claw shifts up to a number of squares equal to the damage dealt.')
 						]
@@ -268,9 +268,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The decrepit skeleton chooses one other target within distance, who takes 1 damage.')
 						]
@@ -317,9 +317,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage; M<2 prone if size 1, or slowed (save ends) otherwise'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди; С<2 розпластаний якщо size 1, або сповільнений (рят. кидок закінчує) otherwise'
 							}))
 						]
 					})
@@ -327,7 +327,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				FactoryLogic.feature.create({
 					id: 'undead-1st-3-feature-3',
 					name: 'Death Grasp',
-					description: 'When the rotting zombie is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy who has m<2] enters this space, they are slowed (save ends) and the effect ends.'
+					description: 'When the rotting zombie is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy who has С<2] enters this space, they are slowed (save ends) and the effect ends.'
 				})
 			]
 		}),
@@ -365,9 +365,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 corruption damage',
-								tier2: '4 corruption damage',
-								tier3: '5 corruption damage; the target must move up to their speed and can’t end that movement closer to any shade'
+								tier1: '2 шкоди від скверни',
+								tier2: '4 шкоди від скверни',
+								tier3: '5 шкоди від скверни; ціль мусить рухатися до своєї швидкості і не може завершити цей рух ближче до жодної тіні'
 							}))
 						]
 					})
@@ -412,9 +412,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '5 damage; M<2 bleeding (save ends)'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -434,7 +434,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				FactoryLogic.feature.create({
 					id: 'undead-1st-5-feature-4',
 					name: 'Hunger',
-					description: 'When the ghoul uses the Charge main action, they gain a +2 bonus to speed until the end of their turn.'
+					description: 'When the ghoul uses the Charge основна дія, they gain a +2 bonus to speed until the end of their turn.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'undead-1st-5-feature-5',
@@ -479,9 +479,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '6 damage',
-								tier3: '7 damage'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the skeleton’s next turn, the target takes 2 damage the first time they willingly move on their turn.')
 						]
@@ -499,9 +499,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage; M<0 bleeding (save ends)',
-								tier2: '2 damage; M<1 bleeding (save ends)',
-								tier3: '3 damage; M<2 bleeding (save ends)'
+								tier1: '1 шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '2 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '3 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target takes a bane on their next strike.')
 						]
@@ -547,9 +547,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 corruption damage; P<0 weakened (save ends)',
-								tier2: '4 corruption damage; P<1 weakened (save ends)',
-								tier3: '5 corruption damage; P<2 weakened (save ends)'
+								tier1: '3 шкоди від скверни; П<0 ослаблений (рят. кидок закінчує)',
+								tier2: '4 шкоди від скверни; П<1 ослаблений (рят. кидок закінчує)',
+								tier3: '5 шкоди від скверни; П<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -610,9 +610,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 cold damage',
-								tier2: '6 cold damage; the stalker can shift 1 square',
-								tier3: '7 cold damage; the stalker shifts up to 2 squares'
+								tier1: '4 холодної шкоди',
+								tier2: '6 холодної шкоди; the stalker може зміститися 1 клітинку',
+								tier3: '7 холодної шкоди; the stalker shifts до 2 клітинок'
 							}))
 						]
 					})
@@ -629,9 +629,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 cold damage',
-								tier2: '3 cold damage',
-								tier3: '4 cold damage'
+								tier1: '2 холодної шкоди',
+								tier2: '3 холодної шкоди',
+								tier3: '4 холодної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the stalker’s next turn, the area provides concealment, and blocks line of effect for enemies.')
 						]
@@ -688,9 +688,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 corruption damage',
-								tier2: '4 corruption damage; M<1 slowed (save ends)',
-								tier3: '5 corruption damage; M<2 slowed and weakened (save ends)'
+								tier1: '3 шкоди від скверни',
+								tier2: '4 шкоди від скверни; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: '5 шкоди від скверни; С<2 сповільнений і ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target appears to rapidly age each time they take damage from this ability. The target regains their former appearance when the soulwight is destroyed.')
 						]
@@ -706,7 +706,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						distance: [FactoryLogic.distance.createRanged(3)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target regains 10 Stamina. The soulwight can’t use this maneuver again until after they strike a creature with their Soulstealer Longsword.')
+							FactoryLogic.createAbilitySectionText('The target regains 10 Stamina. The soulwight can’t use this маневр again until after they strike a creature with their Soulstealer Longsword.')
 						]
 					})
 				}),
@@ -750,9 +750,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '6 damage',
-								tier3: '7 damage; grabbed'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди',
+								tier3: '7 шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who starts their turn grabbed by the zombie takes 2 corruption damage. A creature who takes 5 or more corruption damage this way becomes insatiably hungry for flesh, and must complete the Find a Cure downtime project in Draw Steel: Heroes to end this effect.')
 						]
@@ -771,9 +771,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionText('The zombie falls prone, expelling a wave of rot and dust.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 corruption damage',
-								tier2: '3 corruption damage; M<1 weakened (save ends)',
-								tier3: '4 corruption damage; M<2 dazed (save ends)'
+								tier1: '2 шкоди від скверни',
+								tier2: '3 шкоди від скверни; С<1 ослаблений (рят. кидок закінчує)',
+								tier3: '4 шкоди від скверни; С<2 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -818,9 +818,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 cold damage; P<1 slowed (save ends)',
-								tier2: '10 cold damage; P<2 slowed (save ends)',
-								tier3: '13 cold damage; P<3 slowed (save ends)'
+								tier1: '7 холодної шкоди; П<1 сповільнений (рят. кидок закінчує)',
+								tier2: '10 холодної шкоди; П<2 сповільнений (рят. кидок закінчує)',
+								tier3: '13 холодної шкоди; П<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The next strike made against the target gains an edge.')
 						]
@@ -883,9 +883,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'P<1 the target is levitated (EoT)',
-								tier2: 'P<2 the target is levitated (EoT)',
-								tier3: 'P<3 the target is levitated until the end of the encounter'
+								tier1: 'П<1 ціль is levitated (до кінця ходу)',
+								tier2: 'П<2 ціль is levitated (до кінця ходу)',
+								tier3: 'П<3 ціль левітує до кінця сутички'
 							})),
 							FactoryLogic.createAbilitySectionText('A levitated target floats 1 square off the ground when first affected, then rises 1 square at the end of each of their turns. If a levitated target can’t already fly, they can fly but are slowed and weakened while flying this way.')
 						]
@@ -902,9 +902,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 sonic damage',
-								tier2: '5 sonic damage',
-								tier3: '8 sonic damage'
+								tier1: '3 звукової шкоди',
+								tier2: '5 звукової шкоди',
+								tier3: '8 звукової шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who has П < 2 is reduced to 1 Stamina if they are winded after taking this damage.')
 						]
@@ -952,9 +952,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 damage',
-									tier2: '5 damage',
-									tier3: '7 damage'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди',
+									tier3: '7 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, the target is bleeding (save ends).')
@@ -1003,9 +1003,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '2 damage',
-									tier2: '4 damage',
-									tier3: '6 damage'
+									tier1: '2 шкоди',
+									tier2: '4 шкоди',
+									tier3: '6 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability has a double edge against a bleeding target.')
@@ -1020,7 +1020,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				FactoryLogic.feature.create({
 					id: 'undead-2nd-2-feature-4',
 					name: 'Hunger',
-					description: 'When the ghoul craver uses the Charge main action, they gain a +2 bonus to speed until the end of their turn.'
+					description: 'When the ghoul craver uses the Charge основна дія, they gain a +2 bonus to speed until the end of their turn.'
 				})
 			]
 		}),
@@ -1059,9 +1059,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 damage',
-									tier2: '5 damage',
-									tier3: '7 damage; M<3 bleeding (save ends)'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди',
+									tier3: '7 шкоди; С<3 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each creature adjacent to the target takes 2 damage.')
@@ -1109,9 +1109,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 damage',
-									tier2: '7 damage',
-									tier3: '9 damage'
+									tier1: '5 шкоди',
+									tier2: '7 шкоди',
+									tier3: '9 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The target can’t shift until the end of their next turn.'),
@@ -1133,9 +1133,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '2 psychic damage',
-									tier2: '3 psychic damage; I<2 frightened (save ends)',
-									tier3: '4 psychic damage; I<3 frightened (save ends)'
+									tier1: '2 психічної шкоди',
+									tier2: '3 психічної шкоди; І<2 зляканий (рят. кидок закінчує)',
+									tier3: '4 психічної шкоди; І<3 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target who is still frightened this way at the end of the encounter can’t take a respite activity during their next respite.')
@@ -1188,9 +1188,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '9 damage',
-									tier2: '14 damage; A<2 grabbed',
-									tier3: '17 damage; A<3 grabbed'
+									tier1: '9 шкоди',
+									tier2: '14 шкоди; Л<2 схоплений',
+									tier3: '17 шкоди; Л<3 схоплений'
 								})
 							)
 						]
@@ -1256,9 +1256,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '6 corruption damage; pull 1',
-									tier2: '8 corruption damage; pull 2',
-									tier3: '10 corruption damage; pull 2; M<3 restrained (save ends)'
+									tier1: '6 шкоди від скверни; притягнути на 1',
+									tier2: '8 шкоди від скверни; притягнути на 2',
+									tier3: '10 шкоди від скверни; притягнути на 2; С<3 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next ability the mummy uses against the target has any potency increased by 1 for the target.')
@@ -1278,9 +1278,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '3 corruption damage; I<1 the target is cursed (save ends)',
-									tier2: '5 corruption damage; I<2 the target is cursed (save ends)',
-									tier3: '7 corruption damage; I<3 the target is cursed (save ends)'
+									tier1: '3 шкоди від скверни; І<1 ціль is cursed (рят. кидок закінчує)',
+									tier2: '5 шкоди від скверни; І<2 ціль is cursed (рят. кидок закінчує)',
+									tier3: '7 шкоди від скверни; І<3 ціль is cursed (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A cursed target is bleeding and weakened, and allies gain an edge on strikes made against them.')
@@ -1337,9 +1337,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 damage',
-									tier2: '7 corruption damage; M<2 bleeding (save ends)',
-									tier3: '9 corruption damage; M<3 bleeding (save ends)'
+									tier1: '5 шкоди',
+									tier2: '7 шкоди від скверни; С<2 кровотеча (рят. кидок закінчує)',
+									tier3: '9 шкоди від скверни; С<3 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The vampire spawn regains Stamina equal to any corruption damage dealt.'),
@@ -1402,9 +1402,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 cold damage; P<1 slowed (save ends)',
-									tier2: '7 cold damage; P<2 slowed (save ends)',
-									tier3: '9 cold damage; P<3 slowed (save ends)'
+									tier1: '5 холодної шкоди; П<1 сповільнений (рят. кидок закінчує)',
+									tier2: '7 холодної шкоди; П<2 сповільнений (рят. кидок закінчує)',
+									tier3: '9 холодної шкоди; П<3 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Any living creature who dies from this damage rises at the start of the next round as a **ghoul craver** under the Director’s control.')
@@ -1478,9 +1478,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '10 corruption damage; I<2 bleeding (save ends)',
-									tier2: '14 corruption damage; I<3 bleeding (save ends)',
-									tier3: '17 corruption damage; I<4 bleeding (save ends)'
+									tier1: '10 шкоди від скверни; І<2 кровотеча (рят. кидок закінчує)',
+									tier2: '14 шкоди від скверни; І<3 кровотеча (рят. кидок закінчує)',
+									tier3: '17 шкоди від скверни; І<4 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While the target is bleeding this way, the potency of any ability used against them increases by 1 for the target.')
@@ -1500,12 +1500,12 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 corruption damage; I<2 frightened (save ends)',
-									tier2: '12 corruption damage; I<3 frightened (save ends)',
-									tier3: '16 corruption damage; I<4 frightened (save ends)'
+									tier1: '7 шкоди від скверни; І<2 зляканий (рят. кидок закінчує)',
+									tier2: '12 шкоди від скверни; І<3 зляканий (рят. кидок закінчує)',
+									tier3: '16 шкоди від скверни; І<4 зляканий (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While frightened this way, a target takes 4 psychic damage whenever they use a move action.'),
+							FactoryLogic.createAbilitySectionText('While frightened this way, a target takes 4 psychic damage whenever they use a дія руху.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								repeatable: true,
@@ -1553,9 +1553,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '5 poison damage',
-									tier2: '8 poison damage',
-									tier3: '10 poison damage'
+									tier1: '5 отруйної шкоди',
+									tier2: '8 отруйної шкоди',
+									tier3: '10 отруйної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each target takes a bane on their next strike.')
@@ -1570,13 +1570,13 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The mummy lord gains a +2 bonus to speed and can automatically burrow at full speed while moving. They can then use the Dig maneuver. The next time the mummy lord breaches the surface, each enemy within 2 squares of the mummy lord makes an **Agility test**.'),
+							FactoryLogic.createAbilitySectionText('The mummy lord gains a +2 bonus to speed and can automatically burrow at full speed while moving. They can then use the Dig маневр. The next time the mummy lord breaches the surface, each enemy within 2 squares of the mummy lord makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: 'Prone and can’t stand (EoT)',
-									tier2: 'Prone',
-									tier3: 'no effect'
+									tier1: 'розпластаний і не може встати (до кінця ходу)',
+									tier2: 'розпластаний',
+									tier3: 'без ефекту'
 								})
 							)
 						]
@@ -1594,9 +1594,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '5 corruption damage; I<2 frightened (save ends)',
-									tier2: '8 corruption damage; I<3 frightened (save ends)',
-									tier3: '10 corruption damage; I<4 frightened and restrained (save ends)'
+									tier1: '5 шкоди від скверни; І<2 зляканий (рят. кидок закінчує)',
+									tier2: '8 шкоди від скверни; І<3 зляканий (рят. кидок закінчує)',
+									tier3: '10 шкоди від скверни; І<4 зляканий і скутий (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -1639,9 +1639,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '3 damage',
-									tier2: '6 damage',
-									tier3: '7 damage; M<4 bleeding (EoT)'
+									tier1: '3 шкоди',
+									tier2: '6 шкоди',
+									tier3: '7 шкоди; С<4 кровотеча (до кінця ходу)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If a target made bleeding this way is already bleeding, they are instead knocked prone and can’t stand until the end of their next turn.')
@@ -1690,9 +1690,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '3 corruption damage',
-									tier2: '6 corruption damage; P<3 weakened',
-									tier3: '7 corruption damage; P<4 weakened'
+									tier1: '3 шкоди від скверни',
+									tier2: '6 шкоди від скверни; П<3 ослаблений',
+									tier3: '7 шкоди від скверни; П<4 ослаблений'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This weakened condition ends if an affected target ends their turn with no spirit within 5 squares of them.')
@@ -1741,9 +1741,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '4 damage',
-									tier2: '7 damage; pull 1',
-									tier3: '8 damage; pull 3'
+									tier1: '4 шкоди',
+									tier2: '7 шкоди; притягнути на 1',
+									tier3: '8 шкоди; притягнути на 3'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each ally gains an edge on strikes made against the target until the end of the round.')
@@ -1786,9 +1786,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 damage; M<3 grabbed',
-									tier2: '10 damage; M<4 grabbed',
-									tier3: '11 damage; grabbed'
+									tier1: '7 шкоди; С<3 схоплений',
+									tier2: '10 шкоди; С<4 схоплений',
+									tier3: '11 шкоди; схоплений'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A 3-cube area of ground centered on the target is difficult terrain for enemies.')
@@ -1808,9 +1808,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '3 corruption damage; I<2 frightened (save ends)',
-									tier2: '6 corruption damage; I<3 frightened (save ends)',
-									tier3: '7 corruption damage; I<4 frightened (save ends)'
+									tier1: '3 шкоди від скверни; І<2 зляканий (рят. кидок закінчує)',
+									tier2: '6 шкоди від скверни; І<3 зляканий (рят. кидок закінчує)',
+									tier3: '7 шкоди від скверни; І<4 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target frightened this way is frightened of all undead. This effect ends early if the mournling is destroyed.')
@@ -1830,7 +1830,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				FactoryLogic.feature.create({
 					id: 'undead-3rd-4-feature-6',
 					name: 'Rupture',
-					description: 'Whenever the mournling uses the Dig maneuver to breach the surface, they make a free strike against each adjacent enemy.'
+					description: 'Whenever the mournling uses the Dig маневр to breach the surface, they make a free strike against each adjacent enemy.'
 				})
 			]
 		}),
@@ -1868,9 +1868,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 damage; slide 2',
-									tier2: '10 damage; slide 3',
-									tier3: '11 damage; slide 5'
+									tier1: '7 шкоди; зсунути на 2',
+									tier2: '10 шкоди; зсунути на 3',
+									tier3: '11 шкоди; зсунути на 5'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the target is force moved into another creature’s space, that creature takes an additional 4 damage and the haunt slides them up to 2 squares.')
@@ -1890,19 +1890,19 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '3 damage; I<2 prone',
-									tier2: '6 damage; I<3 prone',
-									tier3: '7 damage; I<4 prone'
+									tier1: '3 шкоди; І<2 розпластаний',
+									tier2: '6 шкоди; І<3 розпластаний',
+									tier3: '7 шкоди; І<4 розпластаний'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A target knocked prone this way can’t use the Stand Up maneuver on themself while any haunt is within 20 squares of them.')
+							FactoryLogic.createAbilitySectionText('A target knocked prone this way can’t use the Stand Up маневр on themself while any haunt is within 20 squares of them.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'undead-3rd-5-feature-4',
 					name: 'Invisible Horror',
-					description: 'The haunt can move through creatures and objects at their usual speed, but can’t end their turn inside a creature or object. They are invisible while moving using a move action. The haunt doesn’t take damage from being force moved into objects.'
+					description: 'The haunt can move through creatures and objects at their usual speed, but can’t end their turn inside a creature or object. They are invisible while moving using a дія руху. The haunt doesn’t take damage from being force moved into objects.'
 				})
 			]
 		}),
@@ -1940,9 +1940,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 damage; M<2 grabbed',
-									tier2: '10 damage; M<3 grabbed',
-									tier3: '11 damage; M<4 grabbed'
+									tier1: '7 шкоди; С<2 схоплений',
+									tier2: '10 шкоди; С<3 схоплений',
+									tier3: '11 шкоди; С<4 схоплений'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A creature grabbed this way is suffocating. The koptourok can have up to two creatures grabbed at once.')
@@ -1962,9 +1962,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: 'Pull 3; M<2 5 corruption damage',
-									tier2: 'Pull 5; M<2 5 corruption damage',
-									tier3: 'Pull 7; M<2 5 corruption damage'
+									tier1: 'Pull 3; С<2 5 шкоди від скверни',
+									tier2: 'Pull 5; С<2 5 шкоди від скверни',
+									tier3: 'Pull 7; С<2 5 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability gains an edge against any target grabbed by the koptourok. If one or more targets are pulled adjacent to the koptourok, the koptourok can fly until the end of the encounter.')
@@ -1974,7 +1974,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 				FactoryLogic.feature.create({
 					id: 'undead-3rd-6-feature-4',
 					name: 'Exhale',
-					description: 'The first time the koptourok is made winded by damage that isn’t fire damage or holy damage, each enemy within 3 squares of them takes 8 corruption damage. Any enemy who takes this damage and has M<3 is also weakened (save ends).'
+					description: 'The first time the koptourok is made winded by damage that isn’t fire damage or holy damage, each enemy within 3 squares of them takes 8 corruption damage. Any enemy who takes this damage and has С<3 is also weakened (save ends).'
 				})
 			]
 		}),
@@ -2012,9 +2012,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '8 damage',
-									tier2: '11 damage',
-									tier3: '12 damage; A<4 slowed (save ends)'
+									tier1: '8 шкоди',
+									tier2: '11 шкоди',
+									tier3: '12 шкоди; Л<4 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If a target made slowed this way is already slowed, they are instead restrained (save ends).')
@@ -2035,9 +2035,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '10 damage',
-									tier2: '8 damage',
-									tier3: '5 damage'
+									tier1: '10 шкоди',
+									tier2: '8 шкоди',
+									tier3: '5 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The waxen is then destroyed and the area is difficult terrain for enemies.')
@@ -2085,9 +2085,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 damage; M<2 bleeding (save ends)',
-									tier2: '10 corruption damage; M<3 5 corruption damage and bleeding (save ends)',
-									tier3: '11 corruption damage; M<4 7 corruption damage and bleeding (save ends)'
+									tier1: '7 шкоди; С<2 кровотеча (рят. кидок закінчує)',
+									tier2: '10 шкоди від скверни; С<3 5 шкоди від скверни і кровотеча (рят. кидок закінчує)',
+									tier3: '11 шкоди від скверни; С<4 7 шкоди від скверни і кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The vampire regains Stamina equal to any corruption damage dealt.')
@@ -2107,9 +2107,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '7 damage; A<2 slowed (save ends)',
-									tier2: '10 damage; A<3 slowed (save ends)',
-									tier3: '117 damage; A<4 slowed (save ends)'
+									tier1: '7 шкоди; Л<2 сповільнений (рят. кидок закінчує)',
+									tier2: '10 шкоди; Л<3 сповільнений (рят. кидок закінчує)',
+									tier3: '117 шкоди; Л<4 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the target is bleeding, the vampire shifts up to their speed before using this ability.')
@@ -2171,9 +2171,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '13 corruption damage; M<3 bleeding (save ends)',
-									tier2: '21 corruption damage; M<3 bleeding (save ends)',
-									tier3: '24 corruption damage; M<3 bleeding (save ends)'
+									tier1: '13 шкоди від скверни; С<3 кровотеча (рят. кидок закінчує)',
+									tier2: '21 шкоди від скверни; С<3 кровотеча (рят. кидок закінчує)',
+									tier3: '24 шкоди від скверни; С<3 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The vampire regains Stamina equal to half the damage dealt, and can end one effect on them that can be ended by a saving throw.'),
@@ -2227,7 +2227,7 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 20 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has P<4 is now bleeding (save ends).')
+							FactoryLogic.createAbilitySectionText('Each target who has П<4 is now bleeding (save ends).')
 						]
 					})
 				}),
@@ -2243,9 +2243,9 @@ Outside of battle, mournlings patrol for interlopers in a trance-like state. Whe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '2 damage; M<3 6 corruption damage',
-									tier2: '7 damage; M<4 6 corruption damage',
-									tier3: '10 damage; M<5 6 corruption damage'
+									tier1: '2 шкоди; С<3 6 шкоди від скверни',
+									tier2: '7 шкоди; С<4 6 шкоди від скверни',
+									tier3: '10 шкоди; С<5 6 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The vampire turns to mist, filling the area. Until the end of the round, the vampire can’t move or be targeted by abilities, but they can use Crimson Embrace against a target in the area. The vampire reforms in an unoccupied space in the area at the end of the round.')
@@ -2312,9 +2312,9 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '5 damage; push 2',
-									tier2: '8 damage; push 4',
-									tier3: '10 damage; push 6'
+									tier1: '5 шкоди; відштовхнути на 2',
+									tier2: '8 шкоди; відштовхнути на 4',
+									tier3: '10 шкоди; відштовхнути на 6'
 								})
 							)
 						]
@@ -2362,9 +2362,9 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '4 damage',
-									tier2: '7 damage',
-									tier3: '9 damage; the target can’t shift (EoT)'
+									tier1: '4 шкоди',
+									tier2: '7 шкоди',
+									tier3: '9 шкоди; ціль can’t shift (до кінця ходу)'
 								})
 							)
 						]
@@ -2417,9 +2417,9 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '4 cold damage; the wraith can shift 1 square',
-									tier2: '7 cold damage; the wraith shifts up to 2 squares',
-									tier3: '9 cold damage; P<5 slowed (save ends); the wraith shifts up to 3 squares'
+									tier1: '4 холодної шкоди; the wraith може зміститися 1 клітинку',
+									tier2: '7 холодної шкоди; the wraith shifts до 2 клітинок',
+									tier3: '9 холодної шкоди; П<5 сповільнений (рят. кидок закінчує); the wraith shifts до 3 клітинок'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The wraith turns invisible until the start of their next turn.')
@@ -2467,12 +2467,12 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '9 damage; M<4 grabbed',
-									tier2: '12 damage; M<5 grabbed',
-									tier3: '14 damage; grabbed'
+									tier1: '9 шкоди; С<4 схоплений',
+									tier2: '12 шкоди; С<5 схоплений',
+									tier3: '14 шкоди; схоплений'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The bonecage can have up to four size 1 targets grabbed at once. Any creature grabbed by the bonecage takes a bane on the Escape Grab maneuver, and the bonecage has damage immunity 5 against that creature’s abilities. When the bonecage is force moved, any creature or object they have grabbed moves with them.'),
+							FactoryLogic.createAbilitySectionText('The bonecage can have up to four size 1 targets grabbed at once. Any creature grabbed by the bonecage takes a bane on the Escape Grab маневр, and the bonecage has damage immunity 5 against that creature’s abilities. When the bonecage is force moved, any creature or object they have grabbed moves with them.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
 								effect: 'While grabbed this way, a target can’t teleport or be teleported.'
@@ -2494,9 +2494,9 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '9 damage',
-									tier2: '7 damage',
-									tier3: '4 damage'
+									tier1: '9 шкоди',
+									tier2: '7 шкоди',
+									tier3: '4 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies. The effect ends at the end of the encounter or when the bonecage uses this ability again.')
@@ -2539,9 +2539,9 @@ Each target makes a **Might test**. This ability deals an extra 5 damage for eac
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '9 corruption damage; I<3 frightened (save ends)',
-									tier2: '12 corruption damage; I<4 frightened (save ends)',
-									tier3: '14 corruption damage; I<5 frightened (save ends)'
+									tier1: '9 шкоди від скверни; І<3 зляканий (рят. кидок закінчує)',
+									tier2: '12 шкоди від скверни; І<4 зляканий (рят. кидок закінчує)',
+									tier3: '14 шкоди від скверни; І<5 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A creature frightened this way takes a bane on any ability that targets undead.')

@@ -62,7 +62,7 @@ Liches know they have all the time in the world to plot against their foes, and 
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The lich takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The lich takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -74,9 +74,9 @@ Liches know they have all the time in the world to plot against their foes, and 
 				'The lich summons a swirling cloud of angry spirits to surround them until the start of the next round. Any creature who deals damage to the lich with a melee strike while the spirit shell is active makes a **Presence test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Presence,
-					tier1: '16 psychic damage, dazed (save ends)',
-					tier2: 'Dazed (save ends)',
-					tier3: 'No effect.'
+					tier1: '16 психічної шкоди, приголомшений (рят. кидок закінчує)',
+					tier2: 'приголомшений (рят. кидок закінчує)',
+					tier3: 'Без ефекту.'
 				})
 			]
 		}),
@@ -87,9 +87,9 @@ Liches know they have all the time in the world to plot against their foes, and 
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
 				`
-The lich summons a mind-altering mist, turns invisible until the start of their next turn, and moves up to half their speed. Each enemy within 20 squares of the lich’s starting point who has I<4 is deceived. While deceived, a creature perceives all allies and enemies as the lich, and perceives the environment as an unfamiliar wasteland corrupted by necrotic blight. If other creatures attempt to communicate with a deceived creature, that creature interprets their words as ghastly taunts in the lich’s voice.
+The lich summons a mind-altering mist, turns invisible until the start of their next turn, and moves up to half their speed. Each enemy within 20 squares of the lich’s starting point who has І<4 is deceived. While deceived, a creature perceives all allies and enemies as the lich, and perceives the environment as an unfamiliar wasteland corrupted by necrotic blight. If other creatures attempt to communicate with a deceived creature, that creature interprets their words as ghastly taunts in the lich’s voice.
 
-This effect lasts until an affected creature takes damage or an ally uses a main action to shake them out of it. Each time this feature is used during an encounter, the distance of the effect decreases by 5 squares (to a minimum of 5 squares) and the potency increases by 1.`
+This effect lasts until an affected creature takes damage or an ally uses a основна дія to shake them out of it. Each time this feature is used during an encounter, the distance of the effect decreases by 5 squares (to a minimum of 5 squares) and the potency increases by 1.`
 			]
 		})
 	],
@@ -133,12 +133,12 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '15 fire damage; A<4 the target is immolated (save ends)',
-									tier2: '21 fire damage; A<5 the target is immolated (save ends)',
-									tier3: '25 fire damage; A<6 the target is immolated (save ends)'
+									tier1: '15 вогняної шкоди; Л<4 ціль is immolated (рят. кидок закінчує)',
+									tier2: '21 вогняної шкоди; Л<5 ціль is immolated (рят. кидок закінчує)',
+									tier3: '25 вогняної шкоди; Л<6 ціль is immolated (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('An immolated creature takes 10 fire damage whenever they use a main action and a maneuver on their turn. This damage can’t be reduced in any way.')
+							FactoryLogic.createAbilitySectionText('An immolated creature takes 10 fire damage whenever they use a основна дія and a маневр on their turn. This damage can’t be reduced in any way.')
 						]
 					})
 				}),
@@ -154,9 +154,9 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '8 corruption damage; P<4 the target is hopeless (save ends)',
-									tier2: '13 corruption damage; P<5 the target is hopeless (save ends)',
-									tier3: '16 corruption damage; P<6 the target is hopeless (save ends)'
+									tier1: '8 шкоди від скверни; П<4 ціль is hopeless (рят. кидок закінчує)',
+									tier2: '13 шкоди від скверни; П<5 ціль is hopeless (рят. кидок закінчує)',
+									tier3: '16 шкоди від скверни; П<6 ціль is hopeless (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A hopeless creature can’t benefit from edges or double edges, can’t gain or use surges, and can’t gain temporary Stamina.'),
@@ -180,12 +180,12 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '17 psychic damage',
-									tier2: '24 psychic damage',
-									tier3: '29 psychic damage'
+									tier1: '17 психічної шкоди',
+									tier2: '24 психічної шкоди',
+									tier3: '29 психічної шкоди'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A target who has M<4 is wracked with pain (save ends). A creature wracked with pain has a double bane on abilities.'),
+							FactoryLogic.createAbilitySectionText('A target who has С<4 is wracked with pain (save ends). A creature wracked with pain has a double bane on abilities.'),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The lich chooses one additional target.',
 								value: 3
@@ -220,25 +220,25 @@ This effect lasts until an affected creature takes damage or an ally uses a main
 						target: 'Один ворог',
 						cost: 2,
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has P<4, they swap places with the lich to become the new target of the triggering ability.')
+							FactoryLogic.createAbilitySectionText('If the target has П<4, they swap places with the lich to become the new target of the triggering ability.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'lich-1-8',
 					name: 'Herald of Oblivion',
-					description: 'In the lich’s presence, death’s call is stronger. Any winded creature within 5 squares of the lich is bleeding and can’t use the Catch Breath maneuver.'
+					description: 'In the lich’s presence, death’s call is stronger. Any winded creature within 5 squares of the lich is bleeding and can’t use the Catch Breath маневр.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'lich-1-9',
 					name: 'Glare of Undeath',
-					description: 'At the start of each round, the lich chooses a creature within 10 squares. If that creature has r<4], they are restrained until the end of the lich’s next turn. The lich can’t choose the same creature two rounds in a row.'
+					description: 'At the start of each round, the lich chooses a creature within 10 squares. If that creature has Р<4], they are restrained until the end of the lich’s next turn. The lich can’t choose the same creature two rounds in a row.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'lich-1-10',
 					name: 'Rejuvenation',
 					description: `
-The lich has a soulstone, which has 50 Stamina and damage immunity all except to sonic damage and holy damage. If the lich is destroyed while their soulstone is intact, their soul retreats into the soulstone. Any creature who has p<5] and who moves within 5 squares of an inhabited soulstone for the first time in a round or starts their turn there is compelled (save ends). A compelled creature must do everything in their power to move toward and touch the soulstone.
+The lich has a soulstone, which has 50 Stamina and damage immunity all except to sonic damage and holy damage. If the lich is destroyed while their soulstone is intact, their soul retreats into the soulstone. Any creature who has П<5] and who moves within 5 squares of an inhabited soulstone for the first time in a round or starts their turn there is compelled (save ends). A compelled creature must do everything in their power to move toward and touch the soulstone.
 
 A creature who touches an inhabited soulstone makes a **Might test** that takes a bane.
 
@@ -259,9 +259,9 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '10 corruption damage; restrained (save ends)',
-									tier2: '16 corruption damage; restrained (EoT)',
-									tier3: '20 corruption damage'
+									tier1: '10 шкоди від скверни; скутий (рят. кидок закінчує)',
+									tier2: '16 шкоди від скверни; скутий (до кінця ходу)',
+									tier3: '20 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The lich deals an additional 10 corruption damage to each creature restrained this way.')
@@ -293,9 +293,9 @@ A creature who touches an inhabited soulstone makes a **Might test** that takes 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '8 corruption damage; A<4 frightened (save ends)',
-									tier2: '13 corruption damage; A<5 frightened (save ends)',
-									tier3: '16 corruption damage; A<6 frightened (save ends)'
+									tier1: '8 шкоди від скверни; Л<4 зляканий (рят. кидок закінчує)',
+									tier2: '13 шкоди від скверни; Л<5 зляканий (рят. кидок закінчує)',
+									tier3: '16 шкоди від скверни; Л<6 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('At the end of each of the lich’s turns, they regain 10 Stamina for each creature frightened this way.')

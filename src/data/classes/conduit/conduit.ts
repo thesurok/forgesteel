@@ -126,7 +126,7 @@ export const conduit: HeroClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'conduit-1-7a',
-									name: 'Слово керівництва',
+									name: 'Слово напуття',
 									description: 'Ви наповнюєте божественною енергією союзника, який атакує.',
 									type: FactoryLogic.type.createTrigger('Ціль робить кидок для здібності, що завдає шкоди.'),
 									keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
@@ -840,9 +840,9 @@ export const conduit: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Intuition],
-					tier1: '3 + I holy damage; Л < [слабкий], prone',
-					tier2: '6 + I holy damage; Л < [середній], prone',
-					tier3: '9 + I holy damage; Л < [сильний], prone and can’t stand (save ends)'
+					tier1: '3 + І священної шкоди; Л < [слабкий], розпластаний',
+					tier2: '6 + І священної шкоди; Л < [середній], розпластаний',
+					tier3: '9 + І священної шкоди; Л < [сильний], розпластаний і не може встати (рят. кидок закінчує)'
 				}))
 			]
 		}),

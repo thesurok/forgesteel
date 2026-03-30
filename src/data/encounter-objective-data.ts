@@ -85,7 +85,7 @@ If the heroes rescue powerful allies from the clutches of their foes during comb
 
 Some Save Another encounters feature willing allies (creatures that are able and willing to fight alongside the heroes), and some feature potential allies (creatures that can’t or won’t join the heroes right away—but might later in the battle). In combat, willing allies can be controlled by the heroes (and might use retainer stat blocks), while potential allies are controlled by the Director.
 
-During an encounter, potential allies must be won over and freed from captivity before they become allies. This requires success on a **hard Presence test** made as a maneuver. Potential allies otherwise flee for the nearest exit on their turns.`,
+During an encounter, potential allies must be won over and freed from captivity before they become allies. This requires success on a **hard Presence test** made as a маневр. Potential allies otherwise flee for the nearest exit on their turns.`,
 		difficultyModifier: 'For each willing ally the heroes can save who is of their level or higher, add one hero to the party for the purposes of building your encounter.',
 		successCondition: 'Once all allies are freed and have either joined the fight or retreated off the encounter map, and at least half of the allies lived through the encounter, the heroes win.',
 		failureCondition: 'The heroes gain no Victories if half or more of the allies are dead or captured.',
@@ -102,7 +102,7 @@ Not every Escort encounter is on behalf of a wise or mighty ally. Sometimes the 
 
 ### WARD
 
-The creature or object to be protected is called the ward. At the start of each round, choose a hero. The ward moves on that hero’s turn and is controlled by that hero. Most wards can take a move action or a maneuver on their turn, but not both. A ward’s characteristics and speed are determined by the Director. Most humanoid wards have a speed of 5.
+The creature or object to be protected is called the ward. At the start of each round, choose a hero. The ward moves on that hero’s turn and is controlled by that hero. Most wards can take a дія руху or a маневр on their turn, but not both. A ward’s characteristics and speed are determined by the Director. Most humanoid wards have a speed of 5.
 
 A sturdy ward, such as an able-bodied citizen, typically has Stamina equal to 10 times the heroes’ level. A delicate ward, such as an elderly diplomat or an important object, typically has Stamina equal to 5 times the heroes’ level.
 
@@ -202,7 +202,7 @@ The Director determines the encounter duration, the number of rounds before the 
 
 ### TASKS AND FAILURES
 
-During each round, at least half the heroes must spend a maneuver performing a task that advances their plans. Each round, the Director decides what tasks are available and where they must be performed. For instance, to launch an airship, one hero might have to cast off an anchor on deck while another unfurls a sail at the top of a mast. The list of available tasks may change each turn.
+During each round, at least half the heroes must spend a маневр performing a task that advances their plans. Each round, the Director decides what tasks are available and where they must be performed. For instance, to launch an airship, one hero might have to cast off an anchor on deck while another unfurls a sail at the top of a mast. The list of available tasks may change each turn.
 
 If at the end of a round the heroes have failed to perform the required number of tasks, the party accumulates one failure.
 

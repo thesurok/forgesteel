@@ -125,9 +125,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage; push 1',
-								tier2: '6 damage; push 2',
-								tier3: '7 damage; push 3'
+								tier1: '3 шкоди; відштовхнути на 1',
+								tier2: '6 шкоди; відштовхнути на 2',
+								tier3: '7 шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('Any target adjacent to two or more clerks is taunted until the end of their next turn')
 						]
@@ -171,9 +171,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 fire damage',
-								tier2: '5 fire damage; Р < 2 target takes a bane on their next strike',
-								tier3: '6 fire damage; Р < 3 target takes a bane on their next strike'
+								tier1: '3 вогняної шкоди',
+								tier2: '5 вогняної шкоди; Р < 2 target отримує шкоду на свій наступний удар',
+								tier3: '6 вогняної шкоди; Р < 3 target отримує шкоду на свій наступний удар'
 							})),
 							FactoryLogic.createAbilitySectionText('One non-minion devil within 5 squares of the notary gains an edge on their next strike.')
 						]
@@ -217,9 +217,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 corruption damage',
-								tier2: '5 corruption damage; slowed (EoT)',
-								tier3: '6 corruption damage; slowed (EoT)'
+								tier1: '3 шкоди від скверни',
+								tier2: '5 шкоди від скверни; сповільнений (до кінця ходу)',
+								tier3: '6 шкоди від скверни; сповільнений (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('The scrivener can shift 1 square')
 						]
@@ -262,9 +262,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 fire damage; I < 1 frightened (save ends)',
-								tier2: '15 fire damage; I < 2 frightened (save ends)',
-								tier3: '18 fire damage; I < 3 frightened (save ends)'
+								tier1: '10 вогняної шкоди; І < 1 зляканий (рят. кидок закінчує)',
+								tier2: '15 вогняної шкоди; І < 2 зляканий (рят. кидок закінчує)',
+								tier3: '18 вогняної шкоди; І < 3 зляканий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The adjudicator can slide a target frightened by this ability up to 2 squares.')
 						]
@@ -282,9 +282,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: 'The target is slowed, takes a bane on power rolls, and can’t regain Stamina (save ends).',
-								tier2: 'The target is slowed and takes a bane on power rolls (save ends).',
-								tier3: 'Slowed (save ends)'
+								tier1: 'Ціль is сповільнений, takes a bane on кидки сили, і can’t regain Витривалість (рят. кидок закінчує).',
+								tier2: 'Ціль is сповільнений і takes a bane on кидки сили (рят. кидок закінчує).',
+								tier3: 'сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -316,8 +316,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
 								tier1: 'The adjudicator chooses a new target for the strike.',
-								tier2: 'The adjudicator halves the triggering damage.',
-								tier3: 'The target takes a bane on the strike.'
+								tier2: 'The adjudicator halves the triggering шкоди.',
+								tier3: 'Ціль отримує шкоду на удар.'
 							}))
 						]
 					})
@@ -325,7 +325,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				FactoryLogic.feature.create({
 					id: 'devil-4-feature-5',
 					name: 'Vexatious Litigation',
-					description: 'Any creature within 10 squares of the adjudicator who has <code>P < 3</code> takes a −2 penalty to saving throws.'
+					description: 'Any creature within 10 squares of the adjudicator who has <code>П < 3</code> takes a −2 penalty to saving throws.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'devil-4-feature-6',
@@ -364,9 +364,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 fire damage',
-								tier2: '15 fire damage; Л < 2 burning (save ends)',
-								tier3: '18 fire damage; Л < 3 burning (save ends)'
+								tier1: '10 вогняної шкоди',
+								tier2: '15 вогняної шкоди; Л < 2 палає (рят. кидок закінчує)',
+								tier3: '18 вогняної шкоди; Л < 3 палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -387,11 +387,11 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; slide 1',
-								tier2: '10 damage; slide 3',
-								tier3: '12 damage; slide 5'
+								tier1: '6 шкоди; зсунути на 1',
+								tier2: '10 шкоди; зсунути на 3',
+								tier3: '12 шкоди; зсунути на 5'
 							})),
-							FactoryLogic.createAbilitySectionText('If the target has <code>M < 2</code>, the forced distance movement gains a +3 bonus.')
+							FactoryLogic.createAbilitySectionText('If the target has <code>С < 2</code>, the forced distance movement gains a +3 bonus.')
 						]
 					})
 				}),
@@ -422,8 +422,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
 								tier1: 'The jurist chooses a new target for the strike',
-								tier2: 'The jurist halves the triggering damage',
-								tier3: 'The target takes a bane on the strike'
+								tier2: 'The jurist halves the triggering шкоди',
+								tier3: 'Ціль отримує шкоду на удар'
 							}))
 						]
 					})
@@ -470,9 +470,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '14 damage; Л < 2 slowed (save ends)',
-								tier3: '17 damage; Л < 3 slowed (save ends)'
+								tier1: '9 шкоди',
+								tier2: '14 шкоди; Л < 2 сповільнений (рят. кидок закінчує)',
+								tier3: '17 шкоди; Л < 3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the targets are adjacent to each other, this ability deals an extra 3 damage.')
 						]
@@ -489,11 +489,11 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; M < 1 prone',
-								tier2: '11 damage; M < 2 prone and can’t stand (save ends)',
-								tier3: '14 damage; M < 3 prone and can’t stand (save ends)'
+								tier1: '6 шкоди; С < 1 розпластаний',
+								tier2: '11 шкоди; С < 2 розпластаний і не може встати (рят. кидок закінчує)',
+								tier3: '14 шкоди; С < 3 розпластаний і не може встати (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, the legate ignores difficult terrain during the charge. Each creature and object whose space the legate moves through takes the damage from this ability, but not its additional effects.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, the legate ignores difficult terrain during the charge. Each creature and object whose space the legate moves through takes the damage from this ability, but not its additional effects.')
 						]
 					})
 				}),
@@ -524,8 +524,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
 								tier1: 'The legate chooses a new target for the strike',
-								tier2: 'The legate halves the triggering damage',
-								tier3: 'The target takes a bane on the strike'
+								tier2: 'The legate halves the triggering шкоди',
+								tier3: 'Ціль отримує шкоду на удар'
 							}))
 						]
 					})
@@ -572,9 +572,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '15 damage',
-								tier3: '18 damage; Р < 3 dazed (save ends)'
+								tier1: '10 шкоди',
+								tier2: '15 шкоди',
+								tier3: '18 шкоди; Р < 3 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The magistrate shifts up to 3 squares before or after using this ability, or between each strike.')
 						]
@@ -591,9 +591,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '11 damage',
-								tier2: '17 damage',
-								tier3: '21 damage'
+								tier1: '11 шкоди',
+								tier2: '17 шкоди',
+								tier3: '21 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability has a double edge if the magistrate was hidden from the target, and deals an extra 5 damage if the target is dazed.')
 						]
@@ -607,7 +607,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The magistrate turns invisible until the start of their next turn, and can attempt to hide as a free maneuver before the end of the current turn.')
+							FactoryLogic.createAbilitySectionText('The magistrate turns invisible until the start of their next turn, and can attempt to hide as a безкоштовний маневр before the end of the current turn.')
 						]
 					})
 				}),
@@ -625,8 +625,8 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
 								tier1: 'The magistrate chooses a new target for the strike',
-								tier2: 'The magistrate halves the triggering damage',
-								tier3: 'The target takes a bane on the strike'
+								tier2: 'The magistrate halves the triggering шкоди',
+								tier3: 'Ціль отримує шкоду на удар'
 							}))
 						]
 					})
@@ -673,9 +673,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 damage; Р < 2 the target can’t hide (save ends)',
-								tier2: '15 damage; Р < 3 the target can’t hide (save ends)',
-								tier3: '19 damage; Р < 4 the target can’t hide (save ends)'
+								tier1: '10 шкоди; Р < 2 ціль can’t hide (рят. кидок закінчує)',
+								tier2: '15 шкоди; Р < 3 ціль can’t hide (рят. кидок закінчує)',
+								tier3: '19 шкоди; Р < 4 ціль can’t hide (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -695,9 +695,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'I < 2 the target is charmed (save ends)',
-								tier2: 'I < 3 the target is charmed (save ends)',
-								tier3: 'I < 4 the target is charmed (save ends)'
+								tier1: 'І < 2 ціль is зачарований (рят. кидок закінчує)',
+								tier2: 'І < 3 ціль is зачарований (рят. кидок закінчує)',
+								tier3: 'І < 4 ціль is зачарований (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.')
 						]
@@ -716,9 +716,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionText('The target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: 'The target is charmed (save ends)',
+								tier1: 'Ціль is зачарований (рят. кидок закінчує)',
 								tier2: 'The high judge chooses a new target for the strike',
-								tier3: 'The target takes a bane on the strike'
+								tier3: 'Ціль отримує шкоду на удар'
 							})),
 							FactoryLogic.createAbilitySectionText('While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.')
 						]
@@ -732,7 +732,7 @@ The following are samples of the wonders that a devil can offer—to only the mo
 				FactoryLogic.feature.create({
 					id: 'devil-8-feature-5',
 					name: 'True Name',
-					description: 'If a creature within 10 squares speaks the high judge’s true name, the high judge loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Suggestion triggered action until the end of the encounter.'
+					description: 'If a creature within 10 squares speaks the high judge’s true name, the high judge loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Suggestion тригерна дія until the end of the encounter.'
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'devil-8-feature-6',
@@ -750,9 +750,9 @@ The following are samples of the wonders that a devil can offer—to only the mo
 							FactoryLogic.createAbilitySectionText('Each target makes a **Presence test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Presence,
-								tier1: '15 psychic damage; the target is charmed (save ends)',
-								tier2: '12 psychic damage; the target is charmed (save ends)',
-								tier3: '7 psychic damage'
+								tier1: '15 психічної шкоди; ціль is зачарований (рят. кидок закінчує)',
+								tier2: '12 психічної шкоди; ціль is зачарований (рят. кидок закінчує)',
+								tier3: '7 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.')
 						]

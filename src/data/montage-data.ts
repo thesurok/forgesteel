@@ -21,14 +21,14 @@ export class MontageData {
 						name: 'Bucket Chains',
 						description: 'Organize the would-be firefighters into disciplined bucket brigades or fight the fire in some other way.',
 						characteristics: [ Characteristic.Presence, Characteristic.Reason ],
-						skills: 'Architecture, Intimidate, Lead'
+						skills: 'Архітектура, Залякування, Лідерство'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'clearing-a-firebreak',
 						name: 'Clearing a Firebreak',
 						description: 'Prevent the fire from spreading by clearing the ground of flammable materials, either by moving it or burning it away. A creature loses a Recovery if they incur a consequence on this test.',
 						characteristics: [ Characteristic.Might, Characteristic.Reason ],
-						skills: 'Endurance, Lift',
+						skills: 'Витривалість, Підйом',
 						abilities: 'Abilities that deal fire damage'
 					}),
 					FactoryLogic.createMontageChallenge({
@@ -36,7 +36,7 @@ export class MontageData {
 						name: 'Evacuating Buildings',
 						description: 'Save people trapped in burning buildings. Heroes can attempt this task twice during the montage, since there are plenty of people to save. A creature that doesn’t have fire immunity loses a Recovery if they incur a consequence on their test.',
 						characteristics: [ Characteristic.Might, Characteristic.Presence ],
-						skills: 'Climb, Endurance, Persuade',
+						skills: 'Лазіння, Витривалість, Переконання',
 						uses: 2
 					}),
 					FactoryLogic.createMontageChallenge({
@@ -44,28 +44,28 @@ export class MontageData {
 						name: 'Find More Firefighters',
 						description: 'Find groups that aren’t fighting the fire, such as fleeing civilians, and convince them to help.',
 						characteristics: [ Characteristic.Presence ],
-						skills: 'Intimidate, Lead, Persuade'
+						skills: 'Залякування, Лідерство, Переконання'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'free-the-horses',
 						name: 'Free the Horses',
 						description: 'Loose the stabled horses threatened by the fire and lead them to safety.',
 						characteristics: [ Characteristic.Might, Characteristic.Presence ],
-						skills: 'Lift, Handle Animals, Ride'
+						skills: 'Підйом, Догляд за тваринами, Верхова їзда'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'move-burning-rubble',
 						name: 'Move Burning Rubble',
 						description: 'Shifting burning debris blocking doorways to allow people to escape the blaze. A creature that doesn’t have fire immunity loses a Recovery if they incur a consequence on this test.',
 						characteristics: [ Characteristic.Might ],
-						skills: 'Endurance, Lift'
+						skills: 'Витривалість, Підйом'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'use-the-freed-horses',
 						name: 'Use the Freed Horses',
 						description: '(if **Free the Horses** was successful) Put the horses to work clearing rubble or bringing people to safety.',
 						characteristics: [ Characteristic.Reason, Characteristic.Presence ],
-						skills: 'Drive, Handle Animals, Ride'
+						skills: 'Водіння, Догляд за тваринами, Верхова їзда'
 					})
 				],
 				twistInfo: 'At the end of the first montage test round, an emergency crops up. One or more heroes, selected by the players, must deal with the situation before the end of the round. If the heroes successfully deal with the twist, they earn a success for the montage test. Otherwise, they earn a failure.',
@@ -75,7 +75,7 @@ export class MontageData {
 						name: 'Building Collapse',
 						description: 'While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles.',
 						characteristics: [ Characteristic.Agility, Characteristic.Intuition ],
-						skills: 'Climb, Jump, Gymnastics'
+						skills: 'Лазіння, Стрибки, Гімнастика'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'cause-of-the-fire',
@@ -87,7 +87,7 @@ export class MontageData {
 						name: 'Help!',
 						description: 'Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative.',
 						characteristics: [ Characteristic.Might, Characteristic.Presence ],
-						skills: 'Lift, Persuade'
+						skills: 'Підйом, Переконання'
 					})
 				]
 			}
@@ -116,35 +116,35 @@ export class MontageData {
 						name: 'Bribe Guards',
 						description: 'The heroes can pay off guards to look the other way. If successful, one or more heroes’ Wealth is lowered by 1.',
 						characteristics: [ Characteristic.Presence ],
-						skills: 'Criminal Underworld, Flirt, Persuade'
+						skills: 'Кримінальний світ, Флірт, Переконання'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'find-blueprints',
 						name: 'Find Blueprints',
 						description: 'Researching secret entrances and little-known passageways can be undertaken in forgotten libraries or well-guarded town halls.',
 						characteristics: [ Characteristic.Agility, Characteristic.Reason ],
-						skills: 'Architecture, Sneak, History'
+						skills: 'Архітектура, Крадіжка, Історія'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'identify-unguarded-entrance',
 						name: 'Identify Unguarded Entrances',
 						description: 'Scouting around or consulting contacts can reveal a forgotten back door or accessible window',
 						characteristics: [ Characteristic.Agility, Characteristic.Intuition ],
-						skills: 'Alertness, Architecture, Criminal Underworld'
+						skills: 'Пильність, Архітектура, Кримінальний світ'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'learn-guard-schedules',
 						name: 'Learn Guard Schedules',
 						description: 'By keeping their ears and eyes open, characters can learn when guards go off duty.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Reason ],
-						skills: 'Alertness, Eavesdrop, Track'
+						skills: 'Пильність, Підслуховування, Відстеження'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'make-false-identities',
 						name: 'Make False Identities',
 						description: 'By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight.',
 						characteristics: [ Characteristic.Presence, Characteristic.Reason ],
-						skills: 'Disguise, Forgery, Lie'
+						skills: 'Маскування, Фальшування, Брехня'
 					})
 				],
 				twistInfo: 'At any time during the infiltration section of the montage test, immediately after one hero’s turn, the characters run into another group breaking into the palace at the same time, and possibly after the same prize. The characters can choose to fight or negotiate with the other party, or simply let them pass — in which case they might meet them again when they reach their final goal.',
@@ -163,14 +163,14 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Aerial Route',
 						description: 'Characters can follow a path that leads along catwalks or high ledges.',
 						characteristics: [ Characteristic.Agility, Characteristic.Might ],
-						skills: 'Climb, Gymnastics, Jump'
+						skills: 'Лазіння, Гімнастика, Стрибки'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'avoid-traffic',
 						name: 'Avoid Traffic',
 						description: 'By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Reason ],
-						skills: 'Navigate, Search, Track'
+						skills: 'Навігація, Пошук, Відстеження'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'lay-low',
@@ -182,14 +182,14 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Make a Diversion',
 						description: 'After causing a ruckus, the characters quickly go the other way.',
 						characteristics: [ Characteristic.Might, Characteristic.Presence ],
-						skills: 'Alchemy, Perform, Sabotage'
+						skills: 'Алхімія, Виступ, Диверсія'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'skulk-in-the-shadows',
 						name: 'Skulk in the Shadows',
 						description: 'Keeping out of sight is the simplest way for characters to move through the palace.  The heroes can attempt this challenge twice during the montage test.',
 						characteristics: [ Characteristic.Agility ],
-						skills: 'Hide, Sneak',
+						skills: 'Ховання, Крадіжка',
 						uses: 2
 					}),
 					FactoryLogic.createMontageChallenge({
@@ -197,7 +197,7 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Pose as Guards',
 						description: 'Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an edge if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration',
 						characteristics: [ Characteristic.Intuition, Characteristic.Presence ],
-						skills: 'Disguise, Lie, Search'
+						skills: 'Маскування, Брехня, Пошук'
 					})
 				],
 				twistInfo: 'At any time during the infiltration section of the montage challenge, between one hero’s turn and another’s, the heroes learn another group is breaking into the site at the same time, possibly after the same prize. When the heroes run into them during the infiltration, they can fight, negotiate, or let them go—in which case they may meet them again when they reach their prize.',
@@ -228,56 +228,56 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Arms and Armor',
 						description: 'Crafting or repairing weapons and armor of all kinds can help rebuild the defenders’ stores.',
 						characteristics: [ Characteristic.Might, Characteristic.Reason ],
-						skills: 'Alchemy, Blacksmithing, Fletching'
+						skills: 'Алхімія, Ковальство, Стрільництво'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'evacuation',
 						name: 'Evacuation',
 						description: 'Heroes can help get noncombatants to safety before the invaders arrive.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Presence ],
-						skills: 'Handle Animal, Lead, Persuade'
+						skills: 'Догляд за тваринами, Лідерство, Переконання'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'fortification',
 						name: 'Fortification',
 						description: 'Characters can help build or repair walls and other defensive structures.',
 						characteristics: [ Characteristic.Might, Characteristic.Reason ],
-						skills: 'Architecture, Endurance, Lift'
+						skills: 'Архітектура, Витривалість, Підйом'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'inspiration',
 						name: 'Inspiration',
 						description: 'Improving morale with rousing speeches or performances can help prepare the locals for the fight to come.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Presence ],
-						skills: 'Brag, Lead, Perform'
+						skills: 'Вихваляння, Лідерство, Виступ'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'propaganda',
 						name: 'Propaganda',
 						description: 'Characters can attempt to sow confusion or rebellion in the ranks of the approaching army.',
 						characteristics: [ Characteristic.Agility, Characteristic.Presence ],
-						skills: 'Disguise, Forgery, Lie'
+						skills: 'Маскування, Фальшування, Брехня'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'stockpiling',
 						name: 'Stockpiling',
 						description: 'Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement’s supplies.',
 						characteristics: [ Characteristic.Agility, Characteristic.Reason ],
-						skills: 'Nature, Sneak, Track'
+						skills: 'Природа, Крадіжка, Відстеження'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'training',
 						name: 'Training',
 						description: 'Heroes can help train the settlement’s defenders.',
 						characteristics: [ Characteristic.Might, Characteristic.Presence ],
-						skills: 'Endurance, Intimidation, Lead'
+						skills: 'Витривалість, Залякування, Лідерство'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'trapmaking',
 						name: 'Trapmaking',
 						description: 'Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement.',
 						characteristics: [ Characteristic.Might, Characteristic.Reason ],
-						skills: 'Conceal Object, Endurance, Mechanics'
+						skills: 'Приховування предмета, Витривалість, Механіка'
 					})
 				],
 				twistInfo: 'At the end of the first round of the montage test, a fast-moving enemy vanguard attack before the settlement’s defenders are ready. The heroes must must engage in an easy combat encounter.',
@@ -308,14 +308,14 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Ask Around',
 						description: 'Characters can gather clues from locals or bystanders — or if they have the proper magic, from animals or the dead.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Presence ],
-						skills: 'Interrogate, Persuade, Rumors'
+						skills: 'Допит, Переконання, Чутки'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'follow-the-trail',
 						name: 'Follow the Trail',
 						description: 'Looking for tracks or other signs of the fugitive’s passage can lead the characters on.',
 						characteristics: [ Characteristic.Intuition ],
-						skills: 'Alertness, Search, Track',
+						skills: 'Пильність, Пошук, Відстеження',
 						uses: 2
 					}),
 					FactoryLogic.createMontageChallenge({
@@ -323,21 +323,21 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Obtain a Good View',
 						description: 'Characters can climb up high to get the big picture of where the fugitive might have gone.',
 						characteristics: [ Characteristic.Agility, Characteristic.Might ],
-						skills: 'Climb, Gymnastics, Jump'
+						skills: 'Лазіння, Гімнастика, Стрибки'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'predict-their-next-move',
 						name: 'Predict the Next Move',
 						description: 'The heroes might have an idea where the quarry is headed. A character gains an edge on the test for this challenge if they know the quarry well.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Reason ],
-						skills: 'Navigate, Read Person, an appropriate skill from the Lore group (Nature to follow an animal or Criminal Underworld to follow a criminal, and so forth)'
+						skills: 'Навігація, Зчитування людини, an appropriate skill from the Lore group (Природа to follow an animal or Кримінальний світ to follow a criminal, and so forth)'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'push-ahead',
 						name: 'Push Ahead',
 						description: 'While the quarry is resting, the heroes have a chance to close in. The hero making the test for this challenge loses a Recovery.',
 						characteristics: [ Characteristic.Might ],
-						skills: 'Endurance, Navigate, Ride, Drive'
+						skills: 'Витривалість, Навігація, Верхова їзда, Водіння'
 					})
 				],
 				twistInfo: 'At the end of the first round of the montage test, the heroes stumble upon a trap set by the quarry or a problem they left behind. This might include such things as a pit trap set with poison spikes, a mob of angry locals who’ve been told the characters are criminals, or an intentionally set fire. The heroes must deal with the trap or problem before they continue the montage test.',
@@ -368,49 +368,49 @@ The first time any hero fails a test made as part of the montage test while the 
 						name: 'Avoid Hazards',
 						description: 'Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Reason ],
-						skills: 'Heal, Nature, an appropriate skill from the Crafting skill group (such as Alchemy to make bug repellent)'
+						skills: 'Лікування, Природа, an appropriate skill from the Crafting skill group (such as Алхімія to make bug repellent)'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'carry-baggage',
 						name: 'Carry Baggage',
 						description: 'By carrying supplies for the weaker party members, characters can increase the whole party’s speed.',
 						characteristics: [ Characteristic.Might ],
-						skills: 'Endurance, Lift'
+						skills: 'Витривалість, Підйом'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'find-the-path',
 						name: 'Find the Path',
 						description: 'Avoiding getting lost is a major challenge for the characters.',
 						characteristics: [ Characteristic.Intuition, Characteristic.Reason ],
-						skills: 'Alertness, Nature, Navigation'
+						skills: 'Пильність, Природа, Навігація'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'keep-up-spirits',
 						name: 'Keep Up Spirits',
 						description: 'Characters can keep up the party’s morale during a forced march with cheer and song.',
 						characteristics: [ Characteristic.Presence ],
-						skills: 'Lead, Music, Performance'
+						skills: 'Лідерство, Музика, Виступ'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'keep-watch',
 						name: 'Keep Watch',
 						description: 'Characters must be on constant guard against danger.',
 						characteristics: [ Characteristic.Intuition ],
-						skills: 'Alertness, Eavesdrop, Track'
+						skills: 'Пильність, Підслуховування, Відстеження'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'push-on',
 						name: 'Push On',
 						description: 'Characters must be ready to pick up the pace and push past their fatigue.',
 						characteristics: [ Characteristic.Might ],
-						skills: 'Endurance, Lead; Handle Animals, Drive, or Ride if the party has mounts or vehicles'
+						skills: 'Витривалість, Лідерство; Догляд за тваринами, Водіння, or Верхова їзда if the party has mounts or vehicles'
 					}),
 					FactoryLogic.createMontageChallenge({
 						id: 'scout-ahead',
 						name: 'Scout Ahead',
 						description: 'Investigating the path ahead lets the characters avoid dead-ends and arduous terrain',
 						characteristics: [ Characteristic.Agility, Characteristic.Intuition ],
-						skills: 'Alertness, Navigation, Sneak'
+						skills: 'Пильність, Навігація, Крадіжка'
 					})
 				],
 				twistInfo: '',

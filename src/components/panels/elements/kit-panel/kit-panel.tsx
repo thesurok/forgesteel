@@ -31,8 +31,8 @@ export const KitPanel = (props: Props) => {
 		return (
 			<>
 				<Markdown text={props.kit.description} />
-				<Field label='Uses' value={[...props.kit.armor, ...props.kit.weapon].join(', ')} />
-				<Field label='Features' value={props.kit.features.map(f => f.name).join(', ')} />
+				<Field label='Використання' value={[...props.kit.armor, ...props.kit.weapon].join(', ')} />
+				<Field label='Особливості' value={props.kit.features.map(f => f.name).join(', ')} />
 			</>
 		);
 	};
@@ -40,7 +40,7 @@ export const KitPanel = (props: Props) => {
 	const getStats = () => {
 		return (
 			<>
-				{props.kit.armor.length > 0 ? <Field label='Armor' value={props.kit.armor.join(', ')} /> : null}
+				{props.kit.armor.length > 0 ? <Field label='Броня' value={props.kit.armor.join(', ')} /> : null}
 				{props.kit.weapon.length > 0 ? <Field label='Зброя' value={props.kit.weapon.join(', ')} /> : null}
 				{props.kit.stamina > 0 ? <Field label='Витривалість' value={`+${props.kit.stamina}`} /> : null}
 				{props.kit.speed > 0 ? <Field label='Швидкість' value={`+${props.kit.speed}`} /> : null}
@@ -90,9 +90,9 @@ export const KitPanel = (props: Props) => {
 					style={{ marginBottom: '20px' }}
 					block={true}
 					options={[
-						{ value: 'overview', label: 'Overview' },
-						{ value: 'stats', label: 'Stats' },
-						{ value: 'features', label: 'Features' }
+						{ value: 'overview', label: 'Огляд' },
+						{ value: 'stats', label: 'Характеристики' },
+						{ value: 'features', label: 'Особливості' }
 					]}
 					value={page}
 					onChange={setPage}
@@ -118,7 +118,7 @@ export const KitPanel = (props: Props) => {
 		return (
 			<div className='kit-panel compact'>
 				<HeaderText level={1} tags={tags}>
-					{props.kit.name || 'Unnamed Kit'}
+					{props.kit.name || 'Неназваний набір'}
 				</HeaderText>
 				<Markdown text={props.kit.description} />
 			</div>
@@ -128,7 +128,7 @@ export const KitPanel = (props: Props) => {
 	return (
 		<ErrorBoundary>
 			<div className='kit-panel' id={SheetFormatter.getPageId('kit', props.kit.id)}>
-				<HeaderText level={1} tags={tags}>{props.kit.name || 'Unnamed Kit'}</HeaderText>
+				<HeaderText level={1} tags={tags}>{props.kit.name || 'Неназваний набір'}</HeaderText>
 				{getContent()}
 			</div>
 		</ErrorBoundary>

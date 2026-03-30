@@ -44,9 +44,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 				'The arixx’s underground tunnels swell with pressure, causing a sudden influx of hot gas to burst from a 3-square-by-3-square area anywhere on the surface. Each enemy in the area makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '4 damage; vertical push 5',
-					tier2: '4 damage; vertical push 2',
-					tier3: 'The target shifts to the nearest unoccupied space outside the area.'
+					tier1: '4 шкоди; вертикально відштовхнути на 5',
+					tier2: '4 шкоди; вертикально відштовхнути на 2',
+					tier3: 'Ціль shifts to the nearest unoccupied space outside the area.'
 				})
 			]
 		}),
@@ -56,7 +56,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The arixx takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The arixx takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -65,7 +65,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 			cost: 7,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				'The encounter map suddenly quakes, then begins to sink. Each creature on the ground who has <code>A < 1</code> is knocked prone. Until the end of the encounter, each creature who starts their turn on the ground and can’t burrow must spend 1 additional square of movement to leave their starting position, or 2 squares if they start their turn prone or underground. A creature who starts and ends their turn in the same space on the ground and can’t burrow sinks 1 square into the ground.'
+				'The encounter map suddenly quakes, then begins to sink. Each creature on the ground who has <code>Л < 1</code> is knocked prone. Until the end of the encounter, each creature who starts their turn on the ground and can’t burrow must spend 1 additional square of movement to leave their starting position, or 2 squares if they start their turn prone or underground. A creature who starts and ends their turn in the same space on the ground and can’t burrow sinks 1 square into the ground.'
 			]
 		})
 	],
@@ -110,9 +110,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; grabbed',
-								tier2: '13 damage; grabbed',
-								tier3: '16 damage; grabbed'
+								tier1: '9 шкоди; схоплений',
+								tier2: '13 шкоди; схоплений',
+								tier3: '16 шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('A size 1 target grabbed this way takes 3 acid damage at the start of each of their turns.')
 						]
@@ -129,9 +129,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage; Л < 1 grabbed',
-								tier2: '8 damage; Л < 2 grabbed',
-								tier3: '11 damage; Л < 3 grabbed'
+								tier1: '5 шкоди; Л < 1 схоплений',
+								tier2: '8 шкоди; Л < 2 схоплений',
+								tier3: '11 шкоди; Л < 3 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The arixx can vertically slide each grabbed target up to 3 squares.')
 						]
@@ -148,9 +148,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 acid damage',
-								tier2: '6 acid damage',
-								tier3: '7 acid damage'
+								tier1: '4 кислотної шкоди',
+								tier2: '6 кислотної шкоди',
+								tier3: '7 кислотної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The ground beneath each target is covered in burning acid until the end of the encounter. Any enemy who enters an affected space for the first time in a round or starts their turn there takes 2 acid damage.')
 						]
@@ -168,9 +168,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 damage',
-								tier2: '6 damage; push 2',
-								tier3: '7 damage; push 4'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди; відштовхнути на 2',
+								tier3: '7 шкоди; відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('The arixx flings rocks and debris to fill the area, and has a double edge on the power roll if they started their turn underground. The area is difficult terrain.')
 						]
@@ -212,9 +212,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 acid damage',
-								tier2: '8 acid damage',
-								tier3: '11 acid damage'
+								tier1: '5 кислотної шкоди',
+								tier2: '8 кислотної шкоди',
+								tier3: '11 кислотної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The ground in the area is covered in a puddle of acid until the end of the encounter. Any enemy who enters the area for the first time in a round or starts their turn there takes 2 acid damage.')
 						]
@@ -228,7 +228,7 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Self, value: 0 })],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The arixx shifts up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig maneuver.')
+							FactoryLogic.createAbilitySectionText('The arixx shifts up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig маневр.')
 						]
 					})
 				}),
@@ -243,9 +243,9 @@ An arixx is a chitinous burrowing insectoid beast who stands taller than a horse
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 acid damage; M < 1 bleeding (save ends)',
-								tier2: '8 acid damage; M < 2 bleeding (save ends)',
-								tier3: '11 acid damage; M < 3 bleeding (save ends)'
+								tier1: '5 кислотної шкоди; С < 1 кровотеча (рят. кидок закінчує)',
+								tier2: '8 кислотної шкоди; С < 2 кровотеча (рят. кидок закінчує)',
+								tier3: '11 кислотної шкоди; С < 3 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})

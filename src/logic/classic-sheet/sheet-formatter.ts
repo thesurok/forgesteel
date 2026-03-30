@@ -17,6 +17,7 @@ import { RulesItem } from '@/models/rules-item';
 import { StatBlockIcon } from '@/enums/stat-block-icon';
 import { Title } from '@/models/title';
 import { Utils } from '@/utils/utils';
+import { getAbilityUsageCanonicalName } from '@/utils/ability-usages';
 
 import areaIcon from '@/assets/icons/area.svg';
 import burstIcon from '@/assets/icons/burst.svg';
@@ -107,24 +108,41 @@ export class SheetFormatter {
 	};
 
 	static enhanceMarkdown = (text: string) => {
+		const potencyCharacteristicGlyphs: Record<string, string> = {
+			M: 'm',
+			A: 'a',
+			R: 'r',
+			I: 'i',
+			P: 'p',
+			С: 'm',
+			Л: 'a',
+			Р: 'r',
+			І: 'i',
+			П: 'p'
+		};
+		const potencyThresholdGlyphs: Record<string, string> = {
+			strong: 's',
+			average: 'v',
+			weak: 'w',
+			сильний: 's',
+			середній: 'v',
+			слабкий: 'w'
+		};
+
 		text = text
-			.replace(/([MARIP]) < \[?([Ss]trong|[Aa]verage|[Ww]eak|\d)\]?/g, '$1<$2')
-			.replace(/([MARIP])<[Ss]trong/g, '$1<s]')
-			.replace(/([MARIP])<[Aa]verage/g, '$1<v]')
-			.replace(/([MARIP])<[Ww]eak/g, '$1<w]')
-			.replace(/([MARIP])<(\d)/g, '$1<$2]')
-			.replace(/M<([svw\d])\]/g, 'm<$1]')
-			.replace(/A<([svw\d])\]/g, 'a<$1]')
-			.replace(/R<([svw\d])\]/g, 'r<$1]')
-			.replace(/I<([svw\d])\]/g, 'i<$1]')
-			.replace(/P<([svw\d])\]/g, 'p<$1]')
+			.replace(/[`]/g, '')
+			.replace(/<\/?code>/g, '')
+			.replace(/([MARIPСЛРІП])\s*<\s*\[?([Ss]trong|[Aa]verage|[Ww]eak|сильний|середній|слабкий|\d)\]?/g, (match, characteristic, threshold) => {
+				const glyph = potencyCharacteristicGlyphs[characteristic];
+				const thresholdGlyph = potencyThresholdGlyphs[threshold.toLowerCase()] ?? threshold;
+				return glyph ? `${glyph}<${thresholdGlyph}]` : match;
+			})
 			.replace(/([marip])<([svw\d]\])/g, '<span class="potency">$1&lt;$2</span>')
 			.replace(/((≤|\\?<\\?=)\s*11|11 or (less|lower)):?/g, `![11 or less](${rollT1Icon})`)
 			.replace(/12\s*[-–]\s*16:?/g, `![12 to 16](${rollT2Icon})`)
 			.replace(/((≥|>=)\s*17|17(\+| or (more|greater))):?/g, `![17 or greater](${rollT3Icon})`)
-			.replace(/[`]/g, '')
 			.replace(/[^\S\r\n]*\|[^\S\r\n]*/g, '|')
-			.replace(/<\/?code>/g, '');
+			;
 		return text;
 	};
 
@@ -147,9 +165,9 @@ export class SheetFormatter {
 	static joinCommasOr = (options: string[] | undefined): string => {
 		if (options?.length) {
 			if (options.length <= 2) {
-				return options.slice(-2).join(' or ');
+				return options.slice(-2).join(' або ');
 			} else {
-				const last2 = options.slice(-2).join(' or ');
+				const last2 = options.slice(-2).join(' або ');
 				return [options.slice(0, -2).join(', '), last2].join(', ');
 			}
 		} else {
@@ -464,7 +482,7 @@ export class SheetFormatter {
 		let distance, type;
 		if ('repeatable' in ability) { // Ability
 			distance = ability.distance.map(ad => ad.type.toString()).join(' ');
-			type = ability.type.usage.toString();
+			type = getAbilityUsageCanonicalName(ability.type.usage, ability.type.free);
 		} else {
 			distance = ability.distance;
 			type = ability.actionType;
@@ -907,7 +925,7 @@ export class SheetFormatter {
 		'Maneuver',
 		'Free Triggered Action',
 		'Triggered Action',
-		'Вільний Удар',
+		'Free Strike',
 		'Move Action'
 	];
 
@@ -942,12 +960,12 @@ export class SheetFormatter {
 	};
 
 	static characteristicOrder: string[] = [
-		'M', 'A', 'R', 'I', 'P'
+		'С', 'Л', 'Р', 'І', 'П'
 	];
 
 	static sortCharacteristics = (a: string | Characteristic, b: string | Characteristic): number => {
-		const aCheck = a.toUpperCase().slice(0, 1);
-		const bCheck = b.toUpperCase().slice(0, 1);
+		const aCheck = Format.getCharacteristicAbbreviation(a.toString());
+		const bCheck = Format.getCharacteristicAbbreviation(b.toString());
 		return this.characteristicOrder.indexOf(aCheck) - this.characteristicOrder.indexOf(bCheck);
 	};
 

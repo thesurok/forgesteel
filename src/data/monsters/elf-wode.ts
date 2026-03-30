@@ -89,9 +89,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 				'Vines rapidly grow across the entire encounter map. Each enemy in the encounter makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '8 damage; restrained (save ends)',
-					tier2: 'Restrained (EoT)',
-					tier3: 'No effect'
+					tier1: '8 шкоди; скутий (рят. кидок закінчує)',
+					tier2: 'скутий (до кінця ходу)',
+					tier3: 'Без ефекту'
 				})
 			]
 		})
@@ -124,9 +124,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							}))
 						]
 					})
@@ -173,11 +173,11 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, the runner shifts up to 2 squares first.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, the runner shifts up to 2 squares first.')
 						]
 					})
 				}),
@@ -218,9 +218,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							}))
 						]
 					})
@@ -264,9 +264,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; push 1',
-								tier2: '4 damage; push 2',
-								tier3: '5 damage; push 3'
+								tier1: '2 шкоди; відштовхнути на 1',
+								tier2: '4 шкоди; відштовхнути на 2',
+								tier3: '5 шкоди; відштовхнути на 3'
 							}))
 						]
 					})
@@ -307,9 +307,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; push 1',
-								tier2: '9 damage; push 3',
-								tier3: '12 damage; push 5'
+								tier1: '6 шкоди; відштовхнути на 1',
+								tier2: '9 шкоди; відштовхнути на 3',
+								tier3: '12 шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('The chirurgeon can make a ranged free strike before using this ability.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -366,9 +366,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; pull 1',
-								tier2: '8 damage; pull 3; M<1 slowed (save ends)',
-								tier3: '10 damage; pull 5; M<2 slowed (save ends)'
+								tier1: '5 шкоди; притягнути на 1',
+								tier2: '8 шкоди; притягнути на 3; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: '10 шкоди; притягнути на 5; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While slowed this way, a target can’t search for hidden creatures.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -427,9 +427,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage; I<1 restrained (save ends)',
-								tier3: '9 damage; I<2 restrained (save ends)'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди; І<1 скутий (рят. кидок закінчує)',
+								tier3: '9 шкоди; І<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While restrained this way, a target can’t search for hidden creatures.')
 						]
@@ -447,9 +447,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage; P<1 weakened (save ends)',
-								tier3: '6 damage; P<2 bleeding (save ends), target has a double bane on strikes (save ends)'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди; П<1 ослаблений (рят. кидок закінчує)',
+								tier3: '6 шкоди; П<2 кровотеча (рят. кидок закінчує), target має a double bane on strikes (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While bleeding or weakened this way, a target is covered in lichen.')
 						]
@@ -459,12 +459,12 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 					ability: FactoryLogic.createAbility({
 						id: 'elf-wode-7-feature-3',
 						name: 'Foreseen Punishment',
-						type: FactoryLogic.type.createTrigger('A creature uses a triggered action targeting the green seer or an ally within distance.', { free: true }),
+						type: FactoryLogic.type.createTrigger('A creature uses a тригерна дія targeting the green seer or an ally within distance.', { free: true }),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The green seer makes a free strike against the target after the target’s triggered action is resolved.')
+							FactoryLogic.createAbilitySectionText('The green seer makes a free strike against the target after the target’s тригерна дія is resolved.')
 						]
 					})
 				}),
@@ -501,9 +501,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target is taunted until the end of their next turn, and the greenskeeper shifts up to 3 squares.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -563,9 +563,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '14 damage; M<2 bleeding (save ends)'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The guerilla can teleport up to 3 squares.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -630,9 +630,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '14 damage; A<2 restrained (save ends)'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди; Л<2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The gweiadur shifts up to 3 squares.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -654,9 +654,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; R<0 the target is marked (save ends)',
-								tier2: '6 damage; R<1 slowed and the target is marked (save ends)',
-								tier3: '9 damage; R<2 slowed and the target is marked (save ends)'
+								tier1: '4 шкоди; Р<0 ціль is marked (рят. кидок закінчує)',
+								tier2: '6 шкоди; Р<1 сповільнений і ціль is marked (рят. кидок закінчує)',
+								tier3: '9 шкоди; Р<2 сповільнений і ціль is marked (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Allies gain an edge on abilities against a target marked by any wode elf.')
 						]
@@ -695,9 +695,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage; the target is marked (save ends)'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди; ціль is marked (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Allies gain an edge on abilities against a target marked by any wode elf.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -754,9 +754,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; M<1 restrained (save ends)',
-								tier2: '12 damage; M<2 restrained (save ends)',
-								tier3: '15 damage; M<3 restrained (save ends)'
+								tier1: '8 шкоди; С<1 скутий (рят. кидок закінчує)',
+								tier2: '12 шкоди; С<2 скутий (рят. кидок закінчує)',
+								tier3: '15 шкоди; С<3 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The warleader can teleport up to 3 squares between each strike.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -788,7 +788,7 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Один ворог',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target must not have taken their turn this round. The target takes their turn immediately, and if they have P<2 they are bleeding and take a bane on strikes until the end of their turn.')
+							FactoryLogic.createAbilitySectionText('The target must not have taken their turn this round. The target takes their turn immediately, and if they have П<2 they are bleeding and take a bane on strikes until the end of their turn.')
 						]
 					})
 				}),
@@ -876,9 +876,9 @@ The wode elves send their warleaders into battle only if the situation is dire. 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The wodenelg’s rider can make a free strike at any point during the charge.')
 						]

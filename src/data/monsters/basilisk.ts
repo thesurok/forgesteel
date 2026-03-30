@@ -33,7 +33,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 		{
 			id: 'basilisk-info-4',
 			name: 'Restorative Salve',
-			description: `After a basilisk dies, a character can make a Reason test to claim oil from the basilisk’s mouth, which can be used to create a special salve. One dose of salve can be applied to a petrified creature as a main action, and 1 minute after the salve is applied, that creature is no longer petrified.
+			description: `After a basilisk dies, a character can make a Reason test to claim oil from the basilisk’s mouth, which can be used to create a special salve. One dose of salve can be applied to a petrified creature as a основна дія, and 1 minute after the salve is applied, that creature is no longer petrified.
 			
 <code><11</code> The character must complete the Find a Cure downtime project in Draw Steel: Heroes to create one dose of salve.
 
@@ -66,9 +66,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							bonus: 2,
-							tier1: '4 damage',
-							tier2: '4 damage; Л < 1 2 damage, prone',
-							tier3: '4 damage; Л < 2 5 damage, prone and can\'t stand (save ends)'
+							tier1: '4 шкоди',
+							tier2: '4 шкоди; Л < 1 2 шкоди, розпластаний',
+							tier3: '4 шкоди; Л < 2 5 шкоди, розпластаний і can\'t stand (save ends)'
 						})
 					)
 				]
@@ -112,9 +112,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 poison damage',
-									tier2: '10 poison damage',
-									tier3: '13 poison damage'
+									tier1: '7 отруйної шкоди',
+									tier2: '10 отруйної шкоди',
+									tier3: '13 отруйної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability gains an edge against targets the basilisk has previously dealt poison damage to.')
@@ -134,12 +134,12 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'M < 0 Restrained (save ends)',
-									tier2: 'M < 1 Restrained (save ends)',
-									tier3: 'Slowed (save ends) or M < 2 Restrained (save ends)'
+									tier1: 'С < 0 скутий (рят. кидок закінчує)',
+									tier2: 'С < 1 скутий (рят. кидок закінчує)',
+									tier3: 'сповільнений (рят. кидок закінчує) або С < 2 скутий (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.')
+							FactoryLogic.createAbilitySectionText('If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a основна дія to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.')
 						]
 					})
 				}),
@@ -156,9 +156,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 poison damage; M < 0 weakened (save ends)',
-									tier2: '6 poison damage; M < 1 weakened and slowed (save ends)',
-									tier3: '9 poison damage; M < 2 weakened and slowed (save ends)'
+									tier1: '4 отруйної шкоди; С < 0 ослаблений (рят. кидок закінчує)',
+									tier2: '6 отруйної шкоди; С < 1 ослаблений і сповільнений (рят. кидок закінчує)',
+									tier3: '9 отруйної шкоди; С < 2 ослаблений і сповільнений (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -173,7 +173,7 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target takes 5 damage. Any target who has <code>A < 2</code> is also bleeding (save ends).')
+							FactoryLogic.createAbilitySectionText('Each target takes 5 damage. Any target who has <code>Л < 2</code> is also bleeding (save ends).')
 						]
 					})
 				}),
@@ -215,9 +215,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '8 acid damage; pull 1',
-									tier2: '10 acid damage; pull 2',
-									tier3: '14 acid damage; pull 3'
+									tier1: '8 кислотної шкоди; притягнути на 1',
+									tier2: '10 кислотної шкоди; притягнути на 2',
+									tier3: '14 кислотної шкоди; притягнути на 3'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This ability can pull targets restrained by Petrifying Eye Beams, and ignores stability if it does so.'),
@@ -241,12 +241,12 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'A < 0 Restrained (save ends)',
-									tier2: 'A < 1 Restrained (save ends)',
-									tier3: 'Slowed (save ends) or Л < 2 Restrained (save ends)'
+									tier1: 'Л < 0 скутий (рят. кидок закінчує)',
+									tier2: 'Л < 1 скутий (рят. кидок закінчує)',
+									tier3: 'сповільнений (рят. кидок закінчує) або Л < 2 скутий (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.')
+							FactoryLogic.createAbilitySectionText('If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a основна дія to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.')
 						]
 					})
 				}),
@@ -266,9 +266,9 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '8 corruption damage; Р < 0 dazed (save ends)',
-									tier2: '10 corruption damage; Р < 1 dazed (save ends)',
-									tier3: '14 corruption damage; Р < 2 dazed (save ends)'
+									tier1: '8 шкоди від скверни; Р < 0 приголомшений (рят. кидок закінчує)',
+									tier2: '10 шкоди від скверни; Р < 1 приголомшений (рят. кидок закінчує)',
+									tier3: '14 шкоди від скверни; Р < 2 приголомшений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A creature dazed this way can’t benefit from edges or double edges and can’t gain or use surges.')
@@ -284,14 +284,14 @@ Some creatures keep basilisks not for their terrifying abilities, but for their 
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target takes 4 acid damage. Any target who has <code>M < 2</code> is also slowed (save ends).')
+							FactoryLogic.createAbilitySectionText('Each target takes 4 acid damage. Any target who has <code>С < 2</code> is also slowed (save ends).')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'basilisk-2-feature-5',
 					name: 'Petrifying Fumes',
-					description: 'Any creature who starts their turn adjacent to the tonguesnapper and has <code>M < 1</code> is slowed (save ends).'
+					description: 'Any creature who starts their turn adjacent to the tonguesnapper and has <code>С < 1</code> is slowed (save ends).'
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'basilisk-2-feature-6',

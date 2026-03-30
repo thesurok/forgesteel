@@ -9,7 +9,7 @@ import { TerrainRoleType } from '@/enums/terrain-role-type';
 export const arrowLauncher: Terrain = {
 	id: 'terrain-arrow-launcher',
 	name: 'Arrow Launcher',
-	description: 'A small wooden cart uses alchemical rockets to launch up to a hundred arrows at a time across a wide area.',
+	description: 'Малий дерев’яний візок використовує алхімічні ракети, щоб за раз випускати до сотні стріл по широкій ділянці.',
 	category: TerrainCategory.SiegeEngine,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Artillery, TerrainRoleType.SiegeEngine),
@@ -31,11 +31,11 @@ export const arrowLauncher: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to an arrow launcher can make an **Agility test**.
+Як маневр, істота поруч зі стрілометом може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Arrow Storm** ability.
-* **12-16**: The arrow launcher is deactivated but the creature is slowed (EoT).
-* **17+**: The arrow launcher is deactivated and can’t be used.`
+* **11-**: Істота випадково активує вміння **Arrow Storm**.
+* **12-16**: Стріломет знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Стріломет знешкоджено, і його більше не можна використовувати.`
 				})
 			]
 		},
@@ -116,14 +116,14 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 			id: 'flaming-arrows',
 			label: 'Flaming Arrows',
 			cost: 1,
-			text: '**Arrow Storm** deals fire damage, and can ignite flammable objects in its area.',
+			text: '**Arrow Storm** завдає вогняної шкоди й може підпалювати легкозаймисті об’єкти в своїй ділянці.',
 			sections: []
 		},
 		{
 			id: 'screamers',
 			label: 'Screamers',
 			cost: 3,
-			text: 'The arrows make a high-pitched screaming noise as they are fired and descend onto their targets. The Screamers ability replaces **Arrow Storm**.',
+			text: 'Під час пострілу й падіння на цілі стріли видають пронизливий свист. Вміння Screamers замінює **Arrow Storm**.',
 			sections: [
 				{
 					id: 'screamers',
@@ -140,9 +140,9 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
 											bonus: 0,
-											tier1: '5 шкоди; R<0 приголомшений (рят. кидок завершує)',
-											tier2: '8 шкоди; R<1 приголомшений (рят. кидок завершує)',
-											tier3: '11 шкоди; R<1 зляканий (рят. кидок завершує)'
+											tier1: '5 шкоди; Р<0 приголомшений (рят. кидок завершує)',
+											tier2: '8 шкоди; Р<1 приголомшений (рят. кидок завершує)',
+											tier3: '11 шкоди; Р<1 зляканий (рят. кидок завершує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки стріломет не буде перезаряджено.')
@@ -163,7 +163,7 @@ As a maneuver, a creature adjacent to an arrow launcher can make an **Agility te
 export const boilingOilCauldron: Terrain = {
 	id: 'terrain-boiling-oil-cauldron',
 	name: 'Boiling Oil Cauldron',
-	description: 'A large cauldron of boiling oil stands ready to be poured onto enemies.',
+	description: 'Великий казан киплячої олії готовий, щоб виливати її на ворогів.',
 	category: TerrainCategory.SiegeEngine,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Defender, TerrainRoleType.Fortification),
@@ -185,11 +185,11 @@ export const boilingOilCauldron: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agility test**.
+Як маневр, істота поруч із казаном киплячої олії може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Boiling Oil** ability.
-* **12-16**: The boiling oil cauldron is deactivated but the creature is slowed (EoT).
-* **17+**: The boiling oil cauldron is deactivated and can’t be used.`
+* **11-**: Істота випадково активує вміння **Boiling Oil**.
+* **12-16**: Казан киплячої олії знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Казан киплячої олії знешкоджено, і його більше не можна використовувати.`
 				})
 			]
 		},
@@ -208,9 +208,9 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 вогняної шкоди; M<1 палає (рят. кидок завершує)',
-									tier2: '9 вогняної шкоди; M<2 палає (рят. кидок завершує)',
-									tier3: '12 вогняної шкоди; M<3 палає (рят. кидок завершує)'
+									tier1: '5 вогняної шкоди; С<1 палає (рят. кидок завершує)',
+									tier2: '9 вогняної шкоди; С<2 палає (рят. кидок завершує)',
+									tier3: '12 вогняної шкоди; С<3 палає (рят. кидок завершує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Якщо киплячу олію виливають зверху на цілі, вона отримує перевагу з висоти і має перевагу на кидок сили. Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди в кінці кожного раунду. Цю здібність не можна використовувати повторно, доки казан з киплячою олією не буде перезаряджено.')
@@ -245,7 +245,7 @@ As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agili
 export const catapult: Terrain = {
 	id: 'terrain-catapult',
 	name: 'Catapult',
-	description: 'This massive counterweighted engine hurls a heavy projectile for a devastating assault.',
+	description: 'Ця масивна машина з противагою запускає важкий снаряд для нищівного удару.',
 	category: TerrainCategory.SiegeEngine,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Artillery, TerrainRoleType.SiegeEngine),
@@ -267,11 +267,11 @@ export const catapult: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
+Як маневр, істота поруч із катапультою може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Arcing Shot** ability.
-* **12-16**: The catapult is deactivated but the creature is slowed (EoT).
-* **17+**: The catapult is deactivated and can’t be used.`
+* **11-**: Істота випадково активує вміння **Arcing Shot**.
+* **12-16**: Катапульту знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Катапульту знешкоджено, і її більше не можна використовувати.`
 				})
 			]
 		},
@@ -291,8 +291,8 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
 									tier1: '5 шкоди',
-									tier2: '9 шкоди; A<0 відштовхнути на 1',
-									tier3: '12 шкоди; A<1 відштовхнути на 2'
+									tier2: '9 шкоди; Л<0 відштовхнути на 1',
+									tier3: '12 шкоди; Л<1 відштовхнути на 2'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Лінія дії цієї здібності — дуга, яку можна простежити над перешкодами між катапультoю і цільовою зоною. Цю здібність не можна використовувати повторно, доки катапульту не буде перезаряджено.')
@@ -352,14 +352,14 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 			id: 'fire-my-boy',
 			label: 'Air Assault',
 			cost: 2,
-			text: 'The side fielding the catapult has trained their forces to safely use the siege engine to launch them across the battlefield. As an adjacent creature main action, the catapult can be used to vertical push 10 any ally of size 1L or less. If the ally lands in an unoccupied space, they take no damage.',
+			text: 'Сторона, що використовує катапульту, навчила свої війська безпечно застосовувати цю облогову машину, щоб запускати себе через поле бою. Як основна дія сусідньої істоти катапульта може вертикально відштовхнути на 10 будь-якого союзника розміру 1L або менше. Якщо союзник приземляється в незайнятий простір, він не отримує шкоди.',
 			sections: []
 		},
 		{
 			id: 'i-love-it-here',
 			label: 'Flammable',
 			cost: 2,
-			text: '**Arcing Shot** deals fire damage, and the area of that ability is on fire until the end of the encounter. Any creature who enters the area for the first time in a round or starts their turn there takes 2 fire damage.',
+			text: '**Arcing Shot** завдає вогняної шкоди, а ділянка цього вміння палає до кінця сутички. Будь-яка істота, що вперше за раунд входить у цю ділянку або починає там свій хід, отримує 2 вогняної шкоди.',
 			sections: []
 		}
 	],
@@ -372,7 +372,7 @@ As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
 export const explodingMillWheel: Terrain = {
 	id: 'terrain-exploding-mill-wheel',
 	name: 'Exploding Mill Wheel',
-	description: 'A massive wooden wheel is loaded with explosives and rolled toward enemy forces or fortifications, ready to explode.',
+	description: 'Масивне дерев’яне колесо наповнене вибухівкою й котиться на ворожі сили або укріплення, готове вибухнути.',
 	category: TerrainCategory.SiegeEngine,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Artillery, TerrainRoleType.SiegeEngine),
@@ -394,13 +394,13 @@ export const explodingMillWheel: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to an exploding mill wheel that isn’t rolling can make an **Agility test**.
+Як маневр, істота поруч із вибуховим млиновим колесом, яке не котиться, може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Roll the Wheel** ability.
-* **12-16**: The exploding mill wheel is deactivated but the creature is slowed (EoT).
-* **17+**: The exploding mill wheel is deactivated and can’t be used.
+* **11-**: Істота випадково активує вміння **Roll the Wheel**.
+* **12-16**: Вибухове млинове колесо знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Вибухове млинове колесо знешкоджено, і його більше не можна використовувати.
 
-Once the wheel is rolling, it can’t be deactivated. However, it can be exploded early by destroying it or blocking its movement with a suitably large creature or object.`
+Коли колесо вже котиться, його не можна знешкодити. Втім, його можна підірвати раніше, знищивши або заблокувавши його рух достатньо великою істотою чи об’єктом.`
 				})
 			]
 		},
@@ -417,19 +417,19 @@ Once the wheel is rolling, it can’t be deactivated. However, it can be explode
 						target: 'Each creature and object in the area',
 						sections: [
 							FactoryLogic.createAbilitySectionText(`
-When this ability is used and at the start of every turn thereafter, the exploding mill wheel rolls, moving 2 squares in a straight line. Each creature and object of size 2 or smaller in the area defined by the wheel’s movement is targeted by the following power roll. A target force moved this way is moved to either side of the wheel, as the Director determines.
+Коли це вміння застосовується, а потім на початку кожного наступного ходу, вибухове млинове колесо котиться, переміщуючись на 2 клітинки по прямій. Кожна істота й об’єкт розміру 2 або менше в ділянці, визначеній рухом колеса, стає ціллю наступного кидка сили. Ціль, примусово переміщена таким чином, опиняється з одного чи з іншого боку колеса, як вирішить Режисер.
 
-* **11-**: 5 damage; push 1
-* **12-16**: 9 damage; push 2
-* **17+**: 12 damage; push 3
+* **11-**: 5 шкоди; відштовхнути на 1
+* **12-16**: 9 шкоди; відштовхнути на 2
+* **17+**: 12 шкоди; відштовхнути на 3
 
-If the wheel enters the space of any creature or object of size 3 or larger, or if it is reduced to 0 Stamina, its movement stops and it explodes. Each creature and object in a 5 burst centered on the wheel is targeted by the following power roll.
+Якщо колесо входить у простір будь-якої істоти чи об’єкта розміру 3 або більше, або якщо його витривалість падає до 0, його рух припиняється й воно вибухає. Кожна істота й об’єкт у вибуху 5 із центром на колесі стає ціллю наступного кидка сили.
 
-* **11-**: 5 damage; push 1; M<0 burning (save ends)
-* **12-16**: 9 damage; push 2; M<1 burning (save ends)
-* **17+**: 12 damage; push 3; M<2 burning (save ends)
+* **11-**: 5 шкоди; відштовхнути на 1; С<0 палає (рят. кидок завершує)
+* **12-16**: 9 шкоди; відштовхнути на 2; С<1 палає (рят. кидок завершує)
+* **17+**: 12 шкоди; відштовхнути на 3; С<2 палає (рят. кидок завершує)
 
-A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.`)
+Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий об’єкт отримує 1d6 вогняної шкоди наприкінці кожного раунду.`)
 						]
 					})
 				})
@@ -442,15 +442,15 @@ A burning creature takes 1d6 fire damage at the start of each of their turns. A 
 			label: 'Piloted',
 			cost: 4,
 			text: `
-The wheel has been fitted with a control mechanism and a pilot’s seat for a creature of size 1M or smaller. As a move action, the pilot can turn the wheel in any direction while it is moving. As a main action, the pilot can leap out of the pilot’s seat, landing in an adjacent space while the wheel continues moving in a straight line.
+Колесо обладнано механізмом керування та сидінням пілота для істоти розміру 1M або менше. Як дією руху пілот може повернути колесо в будь-який бік, поки воно рухається. Як основною дією пілот може вистрибнути з сидіння, приземлившись у суміжному просторі, поки колесо продовжує котитися по прямій.
 
-Without proper training, determining how to pilot the wheel requires a **Reason test**.
+Без належної підготовки, щоб зрозуміти, як керувати колесом, потрібен **тест Розуму**.
 
-* **11-**: The wheel immediately explodes as if striking a size 3 or larger creature or object.
-* **12-16**: The creature fails to pilot the wheel.
-* **17+**: The creature can pilot the wheel.
+* **11-**: Колесо негайно вибухає, наче врізалося в істоту чи об’єкт розміру 3 або більше.
+* **12-16**: Істоті не вдається керувати колесом.
+* **17+**: Істота може керувати колесом.
 
-On a natural 19 or 20, a creature can both pilot the wheel and can disarm its explosives as a maneuver.`,
+На природні 19 або 20 істота може і керувати колесом, і знешкодити його вибухівку як маневр.`,
 			sections: []
 		}
 	],
@@ -463,7 +463,7 @@ On a natural 19 or 20, a creature can both pilot the wheel and can disarm its ex
 export const fieldBallista: Terrain = {
 	id: 'terrain-field-ballista',
 	name: 'Field Ballista',
-	description: 'A massive crossbow fires thick metal bolts with devastating effect.',
+	description: 'Масивний арбалет випускає товсті металеві болти з нищівним ефектом.',
 	category: TerrainCategory.SiegeEngine,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Artillery, TerrainRoleType.SiegeEngine),
@@ -485,11 +485,11 @@ export const fieldBallista: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to a field ballista can make an **Agility test**.
+Як маневр, істота поруч із польовою баллістою може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Release Bolt** ability.
-* **12-16**: The field ballista is deactivated but the creature is slowed (EoT).
-* **17+**: The field ballista is deactivated and can’t be used.`
+* **11-**: Істота випадково активує вміння **Release Bolt**.
+* **12-16**: Польову баллісту знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Польову баллісту знешкоджено, і її більше не можна використовувати.`
 				})
 			]
 		},
@@ -509,8 +509,8 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
 									tier1: '5 шкоди',
-									tier2: '8 шкоди; M<1 відштовхнути на 1',
-									tier3: '11 шкоди; M<2 відштовхнути на 2'
+									tier2: '8 шкоди; С<1 відштовхнути на 1',
+									tier3: '11 шкоди; С<2 відштовхнути на 2'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки польову баллісту не буде перезаряджено.')
@@ -570,14 +570,14 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 			id: 'penetrating-bolt',
 			label: 'Penetrating Bolt',
 			cost: 2,
-			text: 'The field ballista targets the nearest two additional creatures or objects in a straight line beyond the initial target.',
+			text: 'Польова балліста також націлюється на дві найближчі додаткові істоти чи об’єкти по прямій за початковою ціллю.',
 			sections: []
 		},
 		{
 			id: 'chain-bolt',
 			label: 'chain-bolt',
 			cost: 2,
-			text: 'The field ballista’s bolts are set with heavy chains that wrap around targets. The **Chain Bolt** ability replaces **Release Bolt**, and the field ballista gains the **Crank the Chain** ability.',
+			text: 'Болти польової баллісти оснащено важкими ланцюгами, що обвивають цілі. Вміння **Chain Bolt** замінює **Release Bolt**, а польова балліста отримує вміння **Crank the Chain**.',
 			sections: [
 				{
 					id: 'chain-bolt',
@@ -595,8 +595,8 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 										FactoryLogic.createPowerRoll({
 											bonus: 2,
 											tier1: '4 шкоди',
-											tier2: '7 шкоди; M<1 сповільнений (рят. кидок завершує)',
-											tier3: '10 шкоди; M<2 сповільнений (рят. кидок завершує)'
+											tier2: '7 шкоди; С<1 сповільнений (рят. кидок завершує)',
+											tier3: '10 шкоди; С<2 сповільнений (рят. кидок завершує)'
 										})
 									),
 									FactoryLogic.createAbilitySectionText('Цю здібність не можна використовувати повторно, доки польову баллісту не буде перезаряджено.')
@@ -614,7 +614,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 								sections: [
 									FactoryLogic.createAbilitySectionField({
 										name: 'Особливе',
-										effect: 'The target must be slowed by the field ballista.'
+										effect: 'Ціль має бути сповільнена польовою баллістою.'
 									}),
 									FactoryLogic.createAbilitySectionRoll(
 										FactoryLogic.createPowerRoll({
@@ -624,7 +624,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 											tier3: 'Притягнути на 5'
 										})
 									),
-									FactoryLogic.createAbilitySectionText('Це примусове переміщення провокує атаку можливості (opportunity attacks).')
+									FactoryLogic.createAbilitySectionText('Це примусове переміщення провокує атаки за можливістю.')
 								]
 							})
 						})
@@ -642,7 +642,7 @@ As a maneuver, a creature adjacent to a field ballista can make an **Agility tes
 export const ironDragon: Terrain = {
 	id: 'terrain-iron-dragon',
 	name: 'Iron Dragon',
-	description: 'A massive metal device uses a bellows system and liquid fuel to shoot out gouts of flame.',
+	description: 'Масивний металевий пристрій використовує хутра й рідке паливо, щоб викидати струмені полум’я.',
 	category: TerrainCategory.SiegeEngine,
 	level: 4,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Artillery, TerrainRoleType.SiegeEngine),
@@ -664,11 +664,11 @@ export const ironDragon: Terrain = {
 					id: 'deactivate',
 					name: 'Deactivate',
 					description: `
-As a maneuver, a creature adjacent to an iron dragon can make an **Agility test**.
+Як маневр, істота поруч із Залізним Драконом може зробити **тест Ловкості**.
 
-* **11-**: The creature accidentally activates the **Gout of Flame** ability.
-* **12-16**: The iron dragon is deactivated but the creature is slowed (EoT).
-* **17+**: The iron dragon is deactivated and can’t be used.`
+* **11-**: Істота випадково активує вміння **Gout of Flame**.
+* **12-16**: Залізного Дракона знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Залізного Дракона знешкоджено, і його більше не можна використовувати.`
 				})
 			]
 		},
@@ -737,7 +737,7 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 						name: 'Move',
 						type: FactoryLogic.type.createMain({ qualifiers: ['adjacent creature'] }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('The iron dragon and the creature using this action move together up to 2 squares')
+							FactoryLogic.createAbilitySectionText('Залізний Дракон і істота, що використовує цю дію, переміщуються разом до 2 клітинок.')
 						]
 					})
 				})
@@ -754,7 +754,7 @@ As a maneuver, a creature adjacent to an iron dragon can make an **Agility test*
 export const watchtower: Terrain = {
 	id: 'terrain-watchtower',
 	name: 'Watchtower',
-	description: 'A sturdy wooden tower accessed by interior ladders or stairs provides cover and high ground for attackers.',
+	description: 'Міцна дерев’яна вежа з внутрішніми драбинами або сходами дає нападникам укриття й перевагу висоти.',
 	category: TerrainCategory.SiegeEngine,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Defender, TerrainRoleType.Fortification),
@@ -775,7 +775,7 @@ export const watchtower: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'The watchtower must be completely destroyed.'
+					description: 'Сторожову вежу треба повністю знищити.'
 				})
 			]
 		},
@@ -785,7 +785,7 @@ export const watchtower: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'high-ground',
 					name: 'High Ground and Cover',
-					description: 'Creatures who have access to the watchtower’s interior ladders or stairs have high ground and cover against creatures outside the watchtower.'
+					description: 'Істоти, які мають доступ до внутрішніх драбин або сходів сторожової вежі, мають перевагу висоти й укриття проти істот поза вежею.'
 				})
 			]
 		},
@@ -796,11 +796,11 @@ export const watchtower: Terrain = {
 					id: 'getting-inside',
 					name: 'Getting Inside',
 					description: `
-A creature outside and adjacent to the watchtower can gain access to the interior by climbing it as an Agility test or breaking into it with a **Might test**.
+Істота зовні й поруч зі сторожовою вежею може потрапити всередину, видершись на неї за допомогою тесту Ловкості або проламавшись усередину за допомогою **тесту Могутності**.
 
-* **11-**: 1d6 damage; the creature remains outside the watchtower
-* **12-16**: The creature remains outside the watchtower.
-* **17+**: The creature gains access to the watchtower.`
+* **11-**: 1d6 шкоди; істота лишається зовні сторожової вежі
+* **12-16**: Істота лишається зовні сторожової вежі.
+* **17+**: Істота потрапляє до сторожової вежі.`
 				})
 			]
 		}
@@ -810,35 +810,35 @@ A creature outside and adjacent to the watchtower can gain access to the interio
 			id: 'ballista-empowerment',
 			label: 'Ballista Empowerment',
 			cost: 12,
-			text: 'The watchtower is equipped with a field ballista that can be used by creatures in the watchtower. The ballista can’t be moved.',
+			text: 'Сторожову вежу обладнано польовою баллістою, якою можуть користуватися істоти у вежі. Баллісту не можна переміщувати.',
 			sections: []
 		},
 		{
 			id: 'boiling-oil-cauldron',
 			label: 'Boiling Oil Cauldron',
 			cost: 17,
-			text: 'The watchtower is equipped with a boiling oil cauldron that can be used by creatures in the watchtower.',
+			text: 'Сторожову вежу обладнано казаном киплячої олії, яким можуть користуватися істоти у вежі.',
 			sections: []
 		},
 		{
 			id: 'spyglass',
 			label: 'Spyglass',
 			cost: 2,
-			text: 'Any creature in the watchtower can use the spyglass to search for hidden creatures around the tower, gaining an edge on the Intuition test and increasing the distance at which creatures can be spotted to 15 squares.',
+			text: 'Будь-яка істота у сторожовій вежі може скористатися підзорною трубою, щоб шукати прихованих істот навколо вежі, отримуючи перевагу на тест Інтуїції та збільшуючи відстань, на якій можна помітити істот, до 15 клітинок.',
 			sections: []
 		},
 		{
 			id: 'stone-tower',
 			label: 'Stone Tower',
 			cost: 2,
-			text: 'The watchtower is reinforced with stone and has 75 Stamina.',
+			text: 'Сторожову вежу укріплено каменем, і вона має 75 витривалості.',
 			sections: []
 		},
 		{
 			id: 'iron-tower',
 			label: 'Iron Tower',
 			cost: 4,
-			text: 'The watchtower is reinforced with stone and iron and has 100 Stamina.',
+			text: 'Сторожову вежу укріплено каменем і залізом, і вона має 100 витривалості.',
 			sections: []
 		}
 	],

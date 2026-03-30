@@ -1,12 +1,10 @@
 import { Ability } from '@/models/ability';
-import { AbilityUsage } from '@/enums/ability-usage';
 import { FactoryLogic } from '@/logic/factory-logic';
+import { normalizeAbilityUsage } from '@/utils/ability-usages';
 
 export class AbilityUpdateLogic {
 	static updateAbility = (ability: Ability) => {
-		if (ability.type.usage.toString() === 'Action') {
-			ability.type.usage = AbilityUsage.MainAction;
-		}
+		ability.type.usage = normalizeAbilityUsage(ability.type.usage);
 
 		if (ability.type.freeStrike === undefined) {
 			ability.type.freeStrike = false;

@@ -93,7 +93,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-1',
 						name: '',
-						description: 'Once per turn, you can take 5 damage that can\'t be reduced in any way to use the Grab maneuver (no action required).'
+						description: 'Once per turn, you can take 5 damage that can\'t be reduced in any way to use the Grab маневр (no action required).'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-1a',
@@ -109,7 +109,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-5',
 						name: '',
-						description: 'Once per turn, you can take 10 damage that can\'t be reduced in any way to make a melee free strike (no action required). On your turn, you can use the wraps’ melee free strike option or Grab maneuver option, but only one.'
+						description: 'Once per turn, you can take 10 damage that can\'t be reduced in any way to make a melee free strike (no action required). On your turn, you can use the wraps’ melee free strike option or Grab маневр option, but only one.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-5a',
@@ -125,7 +125,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-9',
 						name: '',
-						description: 'Once per turn, you can take 15 damage that can\'t be reduced in any way to use a signature ability (no action required). On your turn, you can use the wraps’ signature ability option, melee free strike option, or Grab maneuver option, but only one.'
+						description: 'Once per turn, you can take 15 damage that can\'t be reduced in any way to use a signature ability (no action required). On your turn, you can use the wraps’ signature ability option, melee free strike option, or Grab маневр option, but only one.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-9a',
@@ -192,7 +192,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-lightning-treads-9',
 						name: '',
-						description: 'The maximum total damage bonus you can earn including movement increase to +3. Additionally, you can use a maneuver to perform a flying lightning kick on one adjacent creature. That target is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.'
+						description: 'The maximum total damage bonus you can earn including movement increase to +3. Additionally, you can use a маневр to perform a flying lightning kick on one adjacent creature. That target is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lightning-treads-9a',

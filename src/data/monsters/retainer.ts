@@ -43,9 +43,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '3 damage',
-									tier2: '5 damage',
-									tier3: '7 damage'
+									tier1: '3 шкоди',
+									tier2: '5 шкоди',
+									tier3: '7 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Before or after making this strike, the hopper jumps up to 2 squares, or up to 4 squares if they jump over their mentor’s space.')
@@ -75,9 +75,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '5 damage; M < [слабкий] prone',
-									tier2: '9 damage; M < [середній] prone',
-									tier3: '12 damage; M < [сильний] prone'
+									tier1: '5 шкоди; С < [слабкий] розпластаний',
+									tier2: '9 шкоди; С < [середній] розпластаний',
+									tier3: '12 шкоди; С < [сильний] розпластаний'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The hopper can jump in a straight line up to their speed before the attack without provoking opportunity attacks. If they jump at least 2 squares this way, they gain a surge.')
@@ -96,9 +96,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '5 damage; M < [слабкий] weakened (save ends)',
-									tier2: '9 damage; M < [середній] slowed and weakened (save ends)',
-									tier3: '12 damage; M < [сильний] dazed, slowed, and weakened (save ends)'
+									tier1: '5 шкоди; С < [слабкий] ослаблений (рят. кидок закінчує)',
+									tier2: '9 шкоди; С < [середній] сповільнений і ослаблений (рят. кидок закінчує)',
+									tier3: '12 шкоди; С < [сильний] приголомшений, сповільнений, і ослаблений (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -113,7 +113,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createMelee(5)],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has M < [середній], their movement ends, they are knocked prone, and one ally within distance gains 2 surges.')
+							FactoryLogic.createAbilitySectionText('If the target has С < [середній], their movement ends, they are knocked prone, and one ally within distance gains 2 surges.')
 						]
 					})
 				})
@@ -145,9 +145,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 damage',
-								tier2: '6 damage',
-								tier3: '11 damage'
+								tier1: '5 шкоди',
+								tier2: '6 шкоди',
+								tier3: '11 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the commando started their turn with concealment from the target or hidden from them, they gain 1 surge that can be used immediately.')
 						]
@@ -192,9 +192,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage; M < [слабкий] grabbed',
-								tier2: '9 damage; M < [середній] grabbed',
-								tier3: '13 damage; M < [сильний] grabbed'
+								tier1: '6 шкоди; С < [слабкий] схоплений',
+								tier2: '9 шкоди; С < [середній] схоплений',
+								tier3: '13 шкоди; С < [сильний] схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('While the target is grabbed this way, they can’t communicate and all creatures and objects have concealment from them.')
 						]
@@ -230,9 +230,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '12 damage',
-								tier2: '18 damage',
-								tier3: '24 damage'
+								tier1: '12 шкоди',
+								tier2: '18 шкоди',
+								tier3: '24 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target takes 15 damage, they are no longer grabbed, and they fall prone.')
 						]
@@ -266,9 +266,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 fire or corruption damage',
-								tier2: '10 fire or corruption damage',
-								tier3: '13 fire or corruption damage'
+								tier1: '6 fire або шкоди від скверни',
+								tier2: '10 fire або шкоди від скверни',
+								tier3: '13 fire або шкоди від скверни'
 							}))
 						]
 					})
@@ -282,14 +282,14 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the creature takes the defector’s offer, the creature is reduced to 1 Stamina instead of 0. If they do so, on their next turn the defector controls the creature’s move action, and the creature must use a Signature Action against a creature of the defector’s choice or immediately die. The Director must spend 3 Malice to have the creature turn down this offer.')
+							FactoryLogic.createAbilitySectionText('If the creature takes the defector’s offer, the creature is reduced to 1 Stamina instead of 0. If they do so, on their next turn the defector controls the creature’s дія руху, and the creature must use a Signature Action against a creature of the defector’s choice or immediately die. The Director must spend 3 Malice to have the creature turn down this offer.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'retainer-3-feature-3',
 					name: 'True Name',
-					description: 'If a creature within 10 squares of the defector speaks the defector’s true name aloud, the defector loses their immunities, the additional effects on their signature attack, and their Tempting Offer triggered action.'
+					description: 'If a creature within 10 squares of the defector speaks the defector’s true name aloud, the defector loses their immunities, the additional effects on their signature attack, and their Tempting Offer тригерна дія.'
 				})
 			],
 			retainer: {
@@ -304,9 +304,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 corruption damage',
-								tier2: '10 corruption damage',
-								tier3: '14 corruption damage'
+								tier1: '6 шкоди від скверни',
+								tier2: '10 шкоди від скверни',
+								tier3: '14 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('If the defector’s mentor is in the area, they burn with harmless flame until the end of the defector’s next turn. While this fire burns, the mentor has fire immunity 10 and any creature that hits the mentor takes 10 fire damage.')
 						]
@@ -353,9 +353,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage',
-								tier2: '11 damage',
-								tier3: '14 damage; push 2'
+								tier1: '6 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди; відштовхнути на 2'
 							}))
 						]
 					})
@@ -369,7 +369,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'The Nameless\'s mentor',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The Nameless’s mentor enters the Nameless’s space and rides on their back. The Nameless or the mentor can move the mentor to an adjacent space as a free maneuver. While in the Nameless’s space, the mentor moves with them and can’t use their move action, and ability rolls against the mentor take a bane.')
+							FactoryLogic.createAbilitySectionText('The Nameless’s mentor enters the Nameless’s space and rides on their back. The Nameless or the mentor can move the mentor to an adjacent space as a безкоштовний маневр. While in the Nameless’s space, the mentor moves with them and can’t use their дія руху, and ability rolls against the mentor take a bane.')
 						]
 					})
 				}),
@@ -395,9 +395,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 corruption damage; I < [слабкий] weakened (save ends)',
-								tier2: '9 corruption damage; I < [середній] weakened (save ends)',
-								tier3: '12 corruption damage; I < [сильний] weakened (save ends)'
+								tier1: '5 шкоди від скверни; І < [слабкий] ослаблений (рят. кидок закінчує)',
+								tier2: '9 шкоди від скверни; І < [середній] ослаблений (рят. кидок закінчує)',
+								tier3: '12 шкоди від скверни; І < [сильний] ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the Nameless’s mentor is in the area, ability rolls against the mentor have a double bane until the start of their next turn.')
 						]
@@ -414,9 +414,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '11 corruption damage',
-								tier2: '16 corruption damage',
-								tier3: '21 corruption damage'
+								tier1: '11 шкоди від скверни',
+								tier2: '16 шкоди від скверни',
+								tier3: '21 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('Any living minions reduced to 0 Stamina by this ability regain all their Stamina and become corporeal undead under the Nameless’s control until the end of the Nameless’s next turn, after which they are destroyed.')
 						]
@@ -450,9 +450,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability ignores cover and bypasses temporary Stamina.')
 						]
@@ -477,9 +477,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionText('The mortar fires a shell straight upward, which hovers 3 squares up in the air and sheds light below it in a 3 cube. Enemies illuminated by this light can’t hide or turn invisible and can’t benefit from concealment or cover. At the start of the mortar’s next turn, the shell explodes to deal damage to enemies in the area.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 fire damage',
-								tier2: '8 fire damage',
-								tier3: '11 fire damage'
+								tier1: '5 вогняної шкоди',
+								tier2: '8 вогняної шкоди',
+								tier3: '11 вогняної шкоди'
 							}))
 						]
 					})
@@ -495,9 +495,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage; П < [слабкий] frightened',
-								tier2: '9 damage; П < [середній] frightened',
-								tier3: '13 damage; П < [сильний] frightened'
+								tier1: '6 шкоди; П < [слабкий] зляканий',
+								tier2: '9 шкоди; П < [середній] зляканий',
+								tier3: '13 шкоди; П < [сильний] зляканий'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the mortar’s next turn, strikes made against the mortar or any ally adjacent to them take a bane.')
 						]
@@ -514,9 +514,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '8 damage; I < [слабкий] dazed (save ends)',
-								tier2: '12 damage; I < [середній] dazed (save ends)',
-								tier3: '16 damage; I < [сильний] dazed (save ends) and prone'
+								tier1: '8 шкоди; І < [слабкий] приголомшений (рят. кидок закінчує)',
+								tier2: '12 шкоди; І < [середній] приголомшений (рят. кидок закінчує)',
+								tier3: '16 шкоди; І < [сильний] приголомшений (рят. кидок закінчує) і розпластаний'
 							}))
 						]
 					})
@@ -549,9 +549,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 fire damage',
-								tier2: '5 fire damage',
-								tier3: '7 fire damage'
+								tier1: '3 вогняної шкоди',
+								tier2: '5 вогняної шкоди',
+								tier3: '7 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the weatherwise targets their mentor, the mentor ignores the damage and instead gains temporary Stamina equal to the damage dealt.')
 						]
@@ -575,9 +575,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 cold damage; push 2',
-								tier2: '5 cold damage; push 3',
-								tier3: '8 cold damage; push 5'
+								tier1: '3 холодної шкоди; відштовхнути на 2',
+								tier2: '5 холодної шкоди; відштовхнути на 3',
+								tier3: '8 холодної шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('The weatherwise can teleport up to 5 squares before or after using this ability.')
 						]
@@ -607,9 +607,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 corruption damage; П < [слабкий] prone and can\'t stand (save ends)',
-								tier2: '10 corruption damage; П < [середній] prone and can\'t stand (save ends)',
-								tier3: '14 corruption damage; П < [сильний] prone and can\'t stand (save ends)'
+								tier1: '6 шкоди від скверни; П < [слабкий] розпластаний і can\'t stand (save ends)',
+								tier2: '10 шкоди від скверни; П < [середній] розпластаний і can\'t stand (save ends)',
+								tier3: '14 шкоди від скверни; П < [сильний] розпластаний і can\'t stand (save ends)'
 							}))
 						]
 					})
@@ -646,9 +646,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '6 damage',
-									tier2: '10 damage',
-									tier3: '13 damage'
+									tier1: '6 шкоди',
+									tier2: '10 шкоди',
+									tier3: '13 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Whenever the shade starts their turn with concealment from the target, they gain 1 surge.')
@@ -687,9 +687,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '8 poison damage; weakened (save ends)',
-									tier2: '12 poison damage; weakened (save ends)',
-									tier3: '16 poison damage; weakened (save ends)'
+									tier1: '8 отруйної шкоди; ослаблений (рят. кидок закінчує)',
+									tier2: '12 отруйної шкоди; ослаблений (рят. кидок закінчує)',
+									tier3: '16 отруйної шкоди; ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The slow-poison needle is initially painless, with the damage and effect delayed until the start of the target’s next turn. If the shade is hidden, using this ability doesn’t cause them to be revealed.')
@@ -708,9 +708,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '12 poison damage; the target has shadowed vision (save ends)',
-									tier2: '17 poison damage; the target has shadowed vision (save ends)',
-									tier3: '23 poison damage; the target has shadowed vision (save ends)'
+									tier1: '12 отруйної шкоди; ціль має shadowed vision (рят. кидок закінчує)',
+									tier2: '17 отруйної шкоди; ціль має shadowed vision (рят. кидок закінчує)',
+									tier3: '23 отруйної шкоди; ціль має shadowed vision (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While a creature has shadowed vision, all creatures have concealment from them.')
@@ -745,9 +745,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '10 damage'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '10 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The arrowswift can take a bane on this ability to gain a +5 bonus to ranged distance.')
 						]
@@ -771,9 +771,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '16 damage'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '16 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the arrowswift is hidden when they use this ability, they gain 2 surges that can be used immediately.')
 						]
@@ -802,9 +802,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '12 damage',
-								tier2: '17 damage',
-								tier3: '23 damage'
+								tier1: '12 шкоди',
+								tier2: '17 шкоди',
+								tier3: '23 шкоди'
 							}))
 						]
 					})
@@ -837,9 +837,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '10 damage; M < [сильний] bleeding (save ends)'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '10 шкоди; С < [сильний] кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -874,9 +874,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '16 damage'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '16 шкоди'
 							}))
 						]
 					})
@@ -889,7 +889,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The gnasher consumes part of the target’s body. The gnasher can spend a Recovery, and each enemy within 5 squares of the gnasher who has I < [середній] is frightened (save ends).')
+							FactoryLogic.createAbilitySectionText('The gnasher consumes part of the target’s body. The gnasher can spend a Recovery, and each enemy within 5 squares of the gnasher who has І < [середній] is frightened (save ends).')
 						]
 					})
 				})
@@ -921,9 +921,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target can’t make opportunity attacks until the end of the guide’s turn.')
 						]
@@ -947,9 +947,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 damage',
-								tier2: '9 damage',
-								tier3: '12 damage'
+								tier1: '5 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The guide shifts up to their speed before and after the strike.')
 						]
@@ -966,9 +966,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '8 damage',
-								tier2: '12 damage; the guide and their mentor can each move up to their speed',
-								tier3: '16 damage; the guide and their mentor can each move up to their speed, then attempt to hide'
+								tier1: '8 шкоди',
+								tier2: '12 шкоди; the guide і their mentor can each move up to their speed',
+								tier3: '16 шкоди; the guide і their mentor can each move up to their speed, then attempt to hide'
 							})),
 							FactoryLogic.createAbilitySectionText('If the guide is hidden from the target, this ability has a double edge.')
 						]
@@ -982,7 +982,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSpecial('Особливе')],
 						target: 'Особливе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon strike, the strike deals an extra 10 poison damage, and if the target has M < [середній], they are weakened (save ends). If the guide is adjacent to their mentor when they use Poison Blade, they apply poison to the mentor’s weapon in the same way.')
+							FactoryLogic.createAbilitySectionText('The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon strike, the strike deals an extra 10 poison damage, and if the target has С < [середній], they are weakened (save ends). If the guide is adjacent to their mentor when they use Poison Blade, they apply poison to the mentor’s weapon in the same way.')
 						]
 					})
 				})
@@ -1020,9 +1020,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 fire damage',
-								tier2: '9 fire damage',
-								tier3: '12 fire damage; Л < [сильний] the target is burning (save ends)'
+								tier1: '5 вогняної шкоди',
+								tier2: '9 вогняної шкоди',
+								tier3: '12 вогняної шкоди; Л < [сильний] ціль палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -1059,9 +1059,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '8 damage; pull 1',
-								tier2: '12 damage; pull 2',
-								tier3: '16 damage; pull 4'
+								tier1: '8 шкоди; притягнути на 1',
+								tier2: '12 шкоди; притягнути на 2',
+								tier3: '16 шкоди; притягнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who is pulled adjacent to the flameslinger and who has П < [середній] is knocked prone.')
 						]
@@ -1078,9 +1078,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '8 fire damage; push 2',
-								tier2: '12 fire damage; push 3',
-								tier3: '16 fire damage; push 5'
+								tier1: '8 вогняної шкоди; відштовхнути на 2',
+								tier2: '12 вогняної шкоди; відштовхнути на 3',
+								tier3: '16 вогняної шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionText('If the fireslinger’s mentor is within 10, the mentor can be the source of the burst instead of the fireslinger.')
 						]
@@ -1114,9 +1114,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the warrior is adjacent to their mentor, this ability gains an edge.')
 						]
@@ -1152,9 +1152,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '16 damage'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '16 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the start of the warrior’s next turn, ability rolls against the warrior or any ally adjacent to the warrior have a double bane.')
 						]
@@ -1171,9 +1171,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '12 damage',
-								tier2: '18 damage',
-								tier3: '24 damage'
+								tier1: '12 шкоди',
+								tier2: '18 шкоди',
+								tier3: '24 шкоди'
 							}))
 						]
 					})
@@ -1207,9 +1207,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage; taunted (EoT)'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди; спровокований (до кінця ходу)'
 							}))
 						]
 					})
@@ -1243,7 +1243,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'The shieldbearer’s mentor',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The shieldbearer straps their shield on their back and climbs onto their mentor’s back, entering the mentor’s space. While the shieldbearer is on their mentor’s back, each of them gains 10 temporary Stamina and can use Shield Block as a triggered action targeting an ally instead of the shieldbearer’s mentor. Additionally, the shieldbearer moves with the mentor, and they can’t use main actions, maneuvers, or move actions except to end this effect as a maneuver. The effect also ends if the shieldbearer is force moved away from their mentor or knocked prone. If the shieldbearer is still in their mentor’s space when the effect ends, they move into an adjacent unoccupied space of their choice.')
+							FactoryLogic.createAbilitySectionText('The shieldbearer straps their shield on their back and climbs onto their mentor’s back, entering the mentor’s space. While the shieldbearer is on their mentor’s back, each of them gains 10 temporary Stamina and can use Shield Block as a тригерна дія targeting an ally instead of the shieldbearer’s mentor. Additionally, the shieldbearer moves with the mentor, and they can’t use основні дії, маневри, or дії руху except to end this effect as a маневр. The effect also ends if the shieldbearer is force moved away from their mentor or knocked prone. If the shieldbearer is still in their mentor’s space when the effect ends, they move into an adjacent unoccupied space of their choice.')
 						]
 					})
 				}),
@@ -1258,11 +1258,11 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage; M < [слабкий] prone',
-								tier2: '10 damage; M < [середній] prone',
-								tier3: '14 damage; M < [сильний] prone'
+								tier1: '6 шкоди; С < [слабкий] розпластаний',
+								tier2: '10 шкоди; С < [середній] розпластаний',
+								tier3: '14 шкоди; С < [сильний] розпластаний'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, the shieldbearer gains 2 surges that can be used immediately.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, the shieldbearer gains 2 surges that can be used immediately.')
 						]
 					})
 				})
@@ -1294,9 +1294,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; M < [сильний] prone'
+								tier1: '5 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; С < [сильний] розпластаний'
 							}))
 						]
 					})
@@ -1310,7 +1310,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createRanged(6)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The gorer uses the Charge main action and Gore against the target.')
+							FactoryLogic.createAbilitySectionText('The gorer uses the Charge основна дія and Gore against the target.')
 						]
 					})
 				}),
@@ -1357,9 +1357,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '11 damage; M < [слабкий] bleeding (save ends)',
-								tier2: '16 damage; M < [середній] bleeding (save ends)',
-								tier3: '21 damage; M < [сильний] prone and can’t stand (save ends).'
+								tier1: '11 шкоди; С < [слабкий] кровотеча (рят. кидок закінчує)',
+								tier2: '16 шкоди; С < [середній] кровотеча (рят. кидок закінчує)',
+								tier3: '21 шкоди; С < [сильний] розпластаний і не може встати (рят. кидок закінчує).'
 							}))
 						]
 					})
@@ -1395,9 +1395,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							}))
 						]
 					})
@@ -1444,9 +1444,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '12 damage',
-								tier2: '18 damage',
-								tier3: '24 damage'
+								tier1: '12 шкоди',
+								tier2: '18 шкоди',
+								tier3: '24 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The charger takes psychic damage equal to the number of enemies affected. This damage can’t be reducetd in any way.')
 						]
@@ -1483,9 +1483,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди'
 							}))
 						]
 					})
@@ -1528,9 +1528,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 poison damage; M < [слабкий] weakened (save ends)',
-								tier2: '9 poison damage; M < [medium] weakened (save ends)',
-								tier3: '13 poison damage; M < [сильний] weakened (save ends)'
+								tier1: '6 отруйної шкоди; С < [слабкий] ослаблений (рят. кидок закінчує)',
+								tier2: '9 отруйної шкоди; С < [medium] ослаблений (рят. кидок закінчує)',
+								tier3: '13 отруйної шкоди; С < [сильний] ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1576,9 +1576,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '5 fire damage',
-									tier2: '8 fire damage',
-									tier3: '11 fire damage'
+									tier1: '5 вогняної шкоди',
+									tier2: '8 вогняної шкоди',
+									tier3: '11 вогняної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the mind healer targets an ally, the ability deals no damage. Additionally, the target can end one effect on them that can be ended by a saving throw or that ends at the end of their turn.')
@@ -1627,9 +1627,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '8 psychic damage; Р < [слабкий] frightened (save ends)',
-									tier2: '13 psychic damage; Р < [середній] frightened (save ends)',
-									tier3: '17 psychic damage; Р < [сильний] frightened (save ends)'
+									tier1: '8 психічної шкоди; Р < [слабкий] зляканий (рят. кидок закінчує)',
+									tier2: '13 психічної шкоди; Р < [середній] зляканий (рят. кидок закінчує)',
+									tier3: '17 психічної шкоди; Р < [сильний] зляканий (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -1647,9 +1647,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '11 psychic damage',
-									tier2: '16 psychic damage',
-									tier3: '21 psychic damage'
+									tier1: '11 психічної шкоди',
+									tier2: '16 психічної шкоди',
+									tier3: '21 психічної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If the mind healer is dazed, frightened, or taunted, they can end one of those conditions and impose the same condition on one enemy in the area. Additionally, they can do the same for their mentor if the mentor is in the area and is dazed, frightened, or taunted.')
@@ -1699,9 +1699,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '6 damage',
-								tier2: '11 damage',
-								tier3: '14 damage'
+								tier1: '6 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The mercenary regains Stamina equal to half the damage dealt.')
 						]
@@ -1718,9 +1718,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: 'P < [слабкий] frightened (save ends)',
-								tier2: 'P < [середній] frightened (save ends)',
-								tier3: 'P < [сильний] frightened (save ends); push 3; prone'
+								tier1: 'П < [слабкий] зляканий (рят. кидок закінчує)',
+								tier2: 'П < [середній] зляканий (рят. кидок закінчує)',
+								tier3: 'П < [сильний] зляканий (рят. кидок закінчує); відштовхнути на 3; розпластаний'
 							}))
 						]
 					})
@@ -1785,9 +1785,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '10 damage'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '10 шкоди'
 							}))
 						]
 					})
@@ -1811,9 +1811,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '7 damage; M < [слабкий] grabbed',
-									tier2: '11 damage; M < [середній] grabbed',
-									tier3: '16 damage; M < [сильний] grabbed'
+									tier1: '7 шкоди; С < [слабкий] схоплений',
+									tier2: '11 шкоди; С < [середній] схоплений',
+									tier3: '16 шкоди; С < [сильний] схоплений'
 								})
 							)
 						]
@@ -1831,9 +1831,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '8 corruption damage; П < [слабкий] weakened (save ends)',
-									tier2: '13 corruption damage; П < [середній] weakened (save ends)',
-									tier3: '17 corruption damage; П < [сильний] weakened (save ends)'
+									tier1: '8 шкоди від скверни; П < [слабкий] ослаблений (рят. кидок закінчує)',
+									tier2: '13 шкоди від скверни; П < [середній] ослаблений (рят. кидок закінчує)',
+									tier3: '17 шкоди від скверни; П < [сильний] ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Before making the strike, the servitor can teleport up to 10 squares to a space containing a dead creature, then burst out of the creature’s body.')
@@ -1853,9 +1853,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '6 corruption damage',
-									tier2: '10 corruption damage',
-									tier3: '14 corruption damage'
+									tier1: '6 шкоди від скверни',
+									tier2: '10 шкоди від скверни',
+									tier3: '14 шкоди від скверни'
 								})
 							)
 						]
@@ -1904,9 +1904,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '3 cold damage',
-								tier2: '5 cold damage',
-								tier3: '7 cold damage; П < [сильний] slowed (EoT)'
+								tier1: '3 холодної шкоди',
+								tier2: '5 холодної шкоди',
+								tier3: '7 холодної шкоди; П < [сильний] сповільнений (до кінця ходу)'
 							}))
 						]
 					})
@@ -1919,7 +1919,7 @@ export const retainer: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('While adjacent to their mentor, the unquiet spirit enters the mentor’s space. A spirit who enters their mentor’s space this way moves with the mentor, can’t be sensed, and can’t affect or be affected by other creatures or objects. They can’t take main actions, maneuvers, or move actions, except to use this ability to leave their mentor’s space and appear in an adjacent space.')
+							FactoryLogic.createAbilitySectionText('While adjacent to their mentor, the unquiet spirit enters the mentor’s space. A spirit who enters their mentor’s space this way moves with the mentor, can’t be sensed, and can’t affect or be affected by other creatures or objects. They can’t take основні дії, маневри, or дії руху, except to use this ability to leave their mentor’s space and appear in an adjacent space.')
 						]
 					})
 				}),
@@ -1942,9 +1942,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '6 corruption damage; the target has 1 level of drain',
-									tier2: '10 corruption damage; the target has 2 levels of drain',
-									tier3: '14 corruption damage; the target has 3 levels of drain'
+									tier1: '6 шкоди від скверни; ціль має 1 level of drain',
+									tier2: '10 шкоди від скверни; ціль має 2 levels of drain',
+									tier3: '14 шкоди від скверни; ціль має 3 levels of drain'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next creature to make a strike against the target gains 1 surge for each level of drain, which must be used on that strike.')
@@ -1963,9 +1963,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: 'A < [слабкий] slowed and weakened (save ends)',
-									tier2: 'A < [середній] slowed and weakened (save ends)',
-									tier3: 'A < [сильний] slowed and weakened (save ends)'
+									tier1: 'Л < [слабкий] сповільнений і ослаблений (рят. кидок закінчує)',
+									tier2: 'Л < [середній] сповільнений і ослаблений (рят. кидок закінчує)',
+									tier3: 'Л < [сильний] сповільнений і ослаблений (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -2012,9 +2012,9 @@ export const retainer: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-								tier1: '5 damage',
-								tier2: '5 damage, 3 corruption damage',
-								tier3: '5 damage, 6 corruption damage; M < [сильний] bleeding (save ends)'
+								tier1: '5 шкоди',
+								tier2: '5 шкоди, 3 шкоди від скверни',
+								tier3: '5 шкоди, 6 шкоди від скверни; С < [сильний] кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The vampire rebel gains temporary Stamina equal to any corruption damage dealt.')
 						]
@@ -2051,9 +2051,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '7 damage; M < [слабкий] bleeding (save ends)',
-									tier2: '11 damage; M < [середній] bleeding (save ends)',
-									tier3: '16 damage; M < [сильний] bleeding (save ends)'
+									tier1: '7 шкоди; С < [слабкий] кровотеча (рят. кидок закінчує)',
+									tier2: '11 шкоди; С < [середній] кровотеча (рят. кидок закінчує)',
+									tier3: '16 шкоди; С < [сильний] кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Before the strike, the vampire rebel shifts up to their speed. If the vampire rebel has temporary Stamina, they can expend it, dealing an extra 2 corruption damage for each point of temporary Stamina expended this way.')
@@ -2072,9 +2072,9 @@ export const retainer: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '7 corruption damage; M < [слабкий] bleeding (save ends)',
-									tier2: '11 corruption damage; M < [середній] bleeding (save ends)',
-									tier3: '16 corruption damage; M < [сильний] bleeding (save ends)'
+									tier1: '7 шкоди від скверни; С < [слабкий] кровотеча (рят. кидок закінчує)',
+									tier2: '11 шкоди від скверни; С < [середній] кровотеча (рят. кидок закінчує)',
+									tier3: '16 шкоди від скверни; С < [сильний] кровотеча (рят. кидок закінчує)'
 								})
 							)
 						]

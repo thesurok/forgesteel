@@ -26,7 +26,7 @@ Ever wish you were just a bunch of little guys? Are you a believer in Quantity o
 			id: 'goblin-squad-feature-1',
 			name: 'Goblins Goblins Everywhere!',
 			description: `
-You are a group of 5 1S minions, and your stamina pool has breakpoints at 2/3, 1/3, 0, and -1/3 of your health. Whenever you are dropped to or below a breakpoint, the goblin who was damaged dies (or maybe just runs away). Whenever you spend a recovery, another goblin jumps out of some nearby bushes, climbs out of a sewer, is dropped by a giant hawk, or otherwise enters the battlefield to join your squad. The exact entry point is up to the Director, but you may have the new goblin (and only the new goblins) immediately take a move action as a free triggered action.
+You are a group of 5 1S minions, and your stamina pool has breakpoints at 2/3, 1/3, 0, and -1/3 of your health. Whenever you are dropped to or below a breakpoint, the goblin who was damaged dies (or maybe just runs away). Whenever you spend a recovery, another goblin jumps out of some nearby bushes, climbs out of a sewer, is dropped by a giant hawk, or otherwise enters the battlefield to join your squad. The exact entry point is up to the Director, but you may have the new goblin (and only the new goblins) immediately take a дія руху as a безкоштовна тригерна дія.
 
 Each goblin MUST have their own unique name.`
 		}),
@@ -46,12 +46,12 @@ In combat, any goblin who is out of range of the Boss (ignoring LoE) can only us
 		FactoryLogic.feature.create({
 			id: 'goblin-squad-feature-4',
 			name: 'Frail Constitution',
-			description: 'While together they may be mighty, individually they are very weak. When an individual goblin is suffering from being Weakened, Slowed, Frightened, Dazed, or Bleeding, they are stunned. While stunned this way, they can take no actions, manoeuvres/free manoeuvres, triggered actions/free triggered actions, movement, and cannot be made the Boss. If every goblin is stunned, then the boss can still act as normal (though still suffering normally from any conditions they might have).'
+			description: 'While together they may be mighty, individually they are very weak. When an individual goblin is suffering from being Weakened, Slowed, Frightened, Dazed, or Bleeding, they are stunned. While stunned this way, they can take no actions, manoeuvres/free manoeuvres, тригерні дії/безкоштовні тригерні дії, movement, and cannot be made the Boss. If every goblin is stunned, then the boss can still act as normal (though still suffering normally from any conditions they might have).'
 		}),
 		FactoryLogic.feature.create({
 			id: 'goblin-squad-feature-5',
 			name: 'Goblin Turns',
-			description: 'On your turn, you can use actions, manoeuvres, and triggered actions from any goblin. If you use an ability which only affects yourself, then you can use it with ALL of your goblins (For example, the Push and Grab manoeuvres happen for one goblin, but the stand up from prone and escape grab manoeuvres apply to every goblin). When you move, you can move with every goblin, and you can individually choose to advance, disengage, or ride for each.'
+			description: 'On your turn, you can use actions, manoeuvres, and тригерні дії from any goblin. If you use an ability which only affects yourself, then you can use it with ALL of your goblins (For example, the Push and Grab manoeuvres happen for one goblin, but the stand up from prone and escape grab manoeuvres apply to every goblin). When you move, you can move with every goblin, and you can individually choose to advance, disengage, or ride for each.'
 		}),
 		FactoryLogic.feature.create({
 			id: 'goblin-squad-feature-6',
@@ -87,7 +87,7 @@ In combat, any goblin who is out of range of the Boss (ignoring LoE) can only us
 					feature: FactoryLogic.feature.create({
 						id: 'goblin-squad-feature-8c',
 						name: 'There are Dozens of Us. Dozens!',
-						description: 'For each that falls, two one will take their place. As a triggered action when a goblin is killed, you may spend a recovery.'
+						description: 'For each that falls, two one will take their place. As a тригерна дія when a goblin is killed, you may spend a recovery.'
 					}),
 					value: 1
 				},
@@ -119,7 +119,7 @@ In combat, any goblin who is out of range of the Boss (ignoring LoE) can only us
 					feature: FactoryLogic.feature.create({
 						id: 'goblin-squad-feature-8g',
 						name: 'Many Hands Make Grabby Work',
-						description: 'You are practised in coordinated takedowns. When you have multiple goblins next to a target you attempt to grab, they can all take the grab maneuver against that target. The maximum size of creature you can grab is increased by the number of goblins currently or attempting to grab them beyond the first.'
+						description: 'You are practised in coordinated takedowns. When you have multiple goblins next to a target you attempt to grab, they can all take the grab маневр against that target. The maximum size of creature you can grab is increased by the number of goblins currently or attempting to grab them beyond the first.'
 					}),
 					value: 2
 				},
@@ -380,7 +380,7 @@ Light does not reflect off of this full suit of armour.`,
 				FactoryLogic.feature.create({
 					id: 'item-dark-star-plate-1a',
 					name: 'Level 1',
-					description: 'When an ally within 5 is targeted by a strike that you are not a target of, you can use a free triggered action to increase your gravitational pull relative to the strike and become the target instead of the triggering ally, using the same power roll. You must be within range and line of effect of the strike.'
+					description: 'When an ally within 5 is targeted by a strike that you are not a target of, you can use a безкоштовна тригерна дія to increase your gravitational pull relative to the strike and become the target instead of the triggering ally, using the same power roll. You must be within range and line of effect of the strike.'
 				})
 			]
 		},
@@ -390,7 +390,7 @@ Light does not reflect off of this full suit of armour.`,
 				FactoryLogic.feature.create({
 					id: 'item-dark-star-plate-5a',
 					name: 'Level 5',
-					description: 'You can use a maneuver to vertically pull 5 a creature or object within 5 of you. If the creature is willing, this forced movement ignores their stability.'
+					description: 'You can use a маневр to vertically pull 5 a creature or object within 5 of you. If the creature is willing, this forced movement ignores their stability.'
 				})
 			]
 		},
@@ -429,7 +429,7 @@ The water in this clear staff is constantly moving and shifting between ice, wat
 				FactoryLogic.feature.create({
 					id: 'item-shifting-tides-1',
 					name: 'Level 1',
-					description: 'When you use a magic or psionic ability that deals damage that isn’t untyped or holy damage, you can change the damage type to another, non-holy damage type as a free triggered action.'
+					description: 'When you use a magic or psionic ability that deals damage that isn’t untyped or holy damage, you can change the damage type to another, non-holy damage type as a безкоштовна тригерна дія.'
 				})
 			]
 		},
@@ -439,7 +439,7 @@ The water in this clear staff is constantly moving and shifting between ice, wat
 				FactoryLogic.feature.create({
 					id: 'item-shifting-tides-9',
 					name: 'Level 5',
-					description: 'While you wield this implement, you or an adjacent ally takes damage that isn’t untyped or holy damage, you can change the damage type to another, non-holy damage type as a triggered action. The first time you use this triggered action in an encounter, it is a free triggered action.'
+					description: 'While you wield this implement, you or an adjacent ally takes damage that isn’t untyped or holy damage, you can change the damage type to another, non-holy damage type as a тригерна дія. The first time you use this тригерна дія in an encounter, it is a безкоштовна тригерна дія.'
 				})
 			]
 		},
@@ -498,7 +498,7 @@ This morning star has a glowing, cylindrical head that emits a flare-up whenever
 				FactoryLogic.feature.create({
 					id: 'item-siege-ender-9',
 					name: 'Level 9',
-					description: 'The weapon’s extra fire damage increases to 3, or 6 if the target is an object. Any weapon ability that deals rolled damage using this weapon deals double damage to mundane objects. You can channel the essence of destruction into more explosions. When you hurl a target through an object with an ability that benefits from this weapon’s damage, you can increase the remaining forced movement by +5 as a triggered action.'
+					description: 'The weapon’s extra fire damage increases to 3, or 6 if the target is an object. Any weapon ability that deals rolled damage using this weapon deals double damage to mundane objects. You can channel the essence of destruction into more explosions. When you hurl a target through an object with an ability that benefits from this weapon’s damage, you can increase the remaining forced movement by +5 as a тригерна дія.'
 				})
 			]
 		}
@@ -527,7 +527,7 @@ This tower shield has a projection of Orden seen from a great height across its 
 				FactoryLogic.feature.create({
 					id: 'item-titan-shield-1',
 					name: 'Level 1',
-					description: 'When you are force moved into an object and would cause it to break, you can use a free triggered action to magically brace the object. The braced object does not break from this forced movement, but you take damage from the remainder of your forced movement as usual.'
+					description: 'When you are force moved into an object and would cause it to break, you can use a безкоштовна тригерна дія to magically brace the object. The braced object does not break from this forced movement, but you take damage from the remainder of your forced movement as usual.'
 				}),
 				FactoryLogic.feature.createBonus({
 					id: 'item-titan-shield-1a',
@@ -562,7 +562,7 @@ This tower shield has a projection of Orden seen from a great height across its 
 				FactoryLogic.feature.create({
 					id: 'item-titan-shield-9',
 					name: 'Level 9',
-					description: 'Your bonus to effective size increases to +4. When you are subjected to forced movement, you can use a free triggered action to materialize a size 1L object adjacent to you in the path of your forced movement and brace it. You decide what the object looks like and what it is made of, but it must be a fragile material similar to glass. Any such objects remaining at the end of the encounter crumble and are destroyed.'
+					description: 'Your bonus to effective size increases to +4. When you are subjected to forced movement, you can use a безкоштовна тригерна дія to materialize a size 1L object adjacent to you in the path of your forced movement and brace it. You decide what the object looks like and what it is made of, but it must be a fragile material similar to glass. Any such objects remaining at the end of the encounter crumble and are destroyed.'
 				}),
 				FactoryLogic.feature.createBonus({
 					id: 'item-titan-shield-9a',
@@ -657,7 +657,7 @@ This black metal implant replaces your spine with a set of extendable blades.`,
 				FactoryLogic.feature.create({
 					id: 'item-item-arachnian-implants-1',
 					name: 'Arachnian Implants',
-					description: 'While extended, you can automatically climb at full speed. You also gain an edge on tests that use the Climb or Gymnastics skills. As a Triggered Action, when you use an ability with the Strike keyword, you can choose to deal damage equal to your Reason score to all adjacent enemies.'
+					description: 'While extended, you can automatically climb at full speed. You also gain an edge on tests that use the Climb or Gymnastics skills. As a Тригерна дія, when you use an ability with the Strike keyword, you can choose to deal damage equal to your Reason score to all adjacent enemies.'
 				})
 			]
 		}
@@ -726,9 +726,9 @@ This bulky crystalline implant replaces your eye with a singular bead of red.`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [],
-									tier1: '3 fire damage',
-									tier2: '5 fire damage',
-									tier3: '7 fire damage'
+									tier1: '3 вогняної шкоди',
+									tier2: '5 вогняної шкоди',
+									tier3: '7 вогняної шкоди'
 								})
 							)
 						]
@@ -805,9 +805,9 @@ You are like a barnacle: You have a tough exterior and are damn near impossible 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage; M < [слабкий], grabbed',
-							tier2: '5 + С or A damage; M < [середній], grabbed',
-							tier3: '7 + С or A damage; M < [сильний], grabbed'
+							tier1: '2 + С або Л шкоди; С < [слабкий], схоплений',
+							tier2: '5 + С або Л шкоди; С < [середній], схоплений',
+							tier3: '7 + С або Л шкоди; С < [сильний], схоплений'
 						})
 					)
 				]
@@ -849,9 +849,9 @@ The Condor kit grants you the sturdiness of a front liner with the safety of mid
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage; push 1',
-							tier2: '5 + С or A damage; push 2',
-							tier3: '7 + С or A damage; push 3'
+							tier1: '2 + С або Л шкоди; відштовхнути на 1',
+							tier2: '5 + С або Л шкоди; відштовхнути на 2',
+							tier3: '7 + С або Л шкоди; відштовхнути на 3'
 						})
 					)
 				]
@@ -893,9 +893,9 @@ The Eagle kit makes you a sharp-eyed dead-shot. You fire upon your opponents fro
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '6 + С or A damage',
-							tier3: '9 + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '6 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					)
 				]
@@ -910,7 +910,7 @@ const juggernaut: Kit = {
 	description: `
 *By Harmonic Hewell*
 
-The Juggernaut kit allows you to act as a one person riot. With a heavy weapon, you carve a canyon through your foes.`,
+Набір «Джаггернаут» дозволяє вам влаштовувати безладотвір самотужки. З важкою зброєю в руках ви прорубуєте каньйон крізь своїх ворогів.`,
 	type: '',
 	armor: [KitArmor.Heavy],
 	weapon: [KitWeapon.Heavy],
@@ -937,9 +937,9 @@ The Juggernaut kit allows you to act as a one person riot. With a heavy weapon, 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 damage',
-							tier2: '5 damage',
-							tier3: '7 damage'
+							tier1: '2 шкоди',
+							tier2: '5 шкоди',
+							tier3: '7 шкоди'
 						})
 					)
 				]
@@ -954,7 +954,7 @@ const mauler: Kit = {
 	description: `
 *By Harmonic Hewell*
 
-Heroes using the Mauler Kit charge headfirst into battle, undaunted by the dangers ahead. Wielding nothing but a medium weapon and your audacity, you are as fearsome as you are fearless.`,
+Герої з набором «Кувалда» стрімголов кидаються в бій, не лякаючись небезпек попереду. Озброєні лише середньою зброєю та власною зухвалістю, ви настільки ж грізні, наскільки й безстрашні.`,
 	type: '',
 	armor: [],
 	weapon: [KitWeapon.Medium],
@@ -981,9 +981,9 @@ Heroes using the Mauler Kit charge headfirst into battle, undaunted by the dange
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '5 + С or A damage; push 1',
-							tier3: '9 + С or A damage; push 2'
+							tier1: '3 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди; відштовхнути на 1',
+							tier3: '9 + С або Л шкоди; відштовхнути на 2'
 						})
 					)
 				]
@@ -1025,9 +1025,9 @@ Heroes using the Sun Wukong kit are highly mobile thanks to their lack of armour
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '3 + С or A damage',
-							tier2: '5 + С or A damage',
-							tier3: '9 + С or A damage'
+							tier1: '3 + С або Л шкоди',
+							tier2: '5 + С або Л шкоди',
+							tier3: '9 + С або Л шкоди'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('You gain a surge.')
@@ -1070,9 +1070,9 @@ The Swift kit makes you a mid-range, lightning fast archer. It allows you to be 
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility],
-							tier1: '2 + С or A damage',
-							tier2: '4 + С or A damage',
-							tier3: '6 + С or A damage'
+							tier1: '2 + С або Л шкоди',
+							tier2: '4 + С або Л шкоди',
+							tier3: '6 + С або Л шкоди'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('The target is taunted (EoT).')

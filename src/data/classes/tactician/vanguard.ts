@@ -7,8 +7,8 @@ import { SubClass } from '@/models/subclass';
 
 export const vanguard: SubClass = {
 	id: 'tactician-sub-3',
-	name: 'Vanguard',
-	description: 'You have learned the stratagems of ancient heroes, letting you lead from the front lines and seek victory through sheer force of will and personality.',
+	name: 'Авангард',
+	description: 'Ви вивчили стратагеми давніх героїв, що дозволяє вам вести загін із передової та здобувати перемогу самою силою волі й особистості.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -19,22 +19,22 @@ export const vanguard: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-1-2',
-					name: 'Commanding Presence',
-					description: 'You command any room you walk into. While you are present during a negotiation, each hero with you treats their Renown as 2 higher than usual. Additionally, each hero with you during a combat encounter has a double edge on tests made to stop combat and start a negotiation.'
+					name: 'Владна присутність',
+					description: 'Ви привертаєте увагу в будь-якій залі, до якої входите. Поки ви присутні на переговорах, кожен герой поруч із вами вважає свою Відомість на 2 вищою, ніж зазвичай. Крім того, під час бойового зіткнення кожен герой поруч із вами отримує подвійну перевагу на випробування, спрямовані на припинення бою й початок переговорів.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'tactician-sub-3-1-3',
-						name: 'Parry',
-						description: 'Your quick reflexes cost an enemy the precision they seek.',
-						type: FactoryLogic.type.createTrigger('A creature deals damage to the target.'),
+						name: 'Парирування',
+						description: 'Ваші швидкі рефлекси позбавляють ворога точності, якої він прагне.',
+						type: FactoryLogic.type.createTrigger('Істота завдає шкоди цілі.'),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee(2)],
-						target: 'На себе або одного союзника',
+						target: 'Себе або одного союзника',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You can shift 1 square. If the target is you, or if you end this shift adjacent to the target, the target takes half the damage. If the damage has any potency effect associated with it, the potency is decreased by 1.'),
+							FactoryLogic.createAbilitySectionText('Ви можете зміститися на 1 клітинку. Якщо ціллю є ви або якщо ви завершуєте це зміщення поруч із ціллю, ціль отримує лише половину шкоди. Якщо зі шкодою повʼязаний будь-який ефект потужності, потужність зменшується на 1.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'This ability’s distance becomes Melee 1 + your Reason score, and you can shift up to a number of squares equal to your Reason score instead of 1 square.'
+								effect: 'Дальність цієї здібності стає Ближній бій 1 + ваш показник Розуму, а ви можете зміститися на кількість клітинок, рівну вашому показнику Розуму, замість 1.'
 							})
 						]
 					})
@@ -46,38 +46,38 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-2-1',
-					name: 'Melee Superiority',
-					description: 'After constant drills, you can more accurately anticipate an enemy’s plan and thwart their attempts to move across the battlefield. Whenever you make an opportunity attack, the target’s speed is reduced to 0 until the end of the current turn.'
+					name: 'Перевага в ближньому бою',
+					description: 'Після безперервних тренувань ви точніше передбачаєте плани ворога й ламаєте його спроби рухатися полем бою. Коли ви здійснюєте атаку за нагоди, швидкість цілі зменшується до 0 до кінця поточного ходу.'
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'tactician-sub-3-2-1a',
-					name: 'Mark Benefit',
-					description: 'When a creature marked by you attempts to move or shift within distance of your melee free strike, you can use a free triggered action and spend 2 focus to make a melee free strike against that creature.',
+					name: 'Перевага мітки',
+					description: 'Коли істота, позначена вами, намагається рухатися або зміститися в межах дальності вашого вільного удару ближнього бою, ви можете використати безкоштовну тригерну дію й витратити 2 фокусу, щоб виконати проти неї вільний удар ближнього бою.',
 					tag: 'mark'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'tactician-sub-3-2-2',
-					name: '2nd-Level Doctrine Ability',
+					name: 'Здібність доктрини 2-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-2-2a',
-									name: 'No Dying on My Watch',
-									description: 'You prioritize saving an ally over your own safety.',
-									type: FactoryLogic.type.createTrigger('The target deals damage to an ally.'),
+									name: 'Поки я на варті, ніхто не помре',
+									description: 'Ви ставите порятунок союзника вище за власну безпеку.',
+									type: FactoryLogic.type.createTrigger('Ціль завдає шкоди союзнику.'),
 									keywords: [AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createRanged(5)],
 									target: 'Один ворог',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You move up to your speed toward the triggering ally, ending this movement adjacent to them or in the nearest square if you can’t reach an adjacent square. The triggering ally can spend a Recovery and gains 5 temporary Stamina for each enemy you came adjacent to during the move. You then make a power roll against the target.'),
+										FactoryLogic.createAbilitySectionText('Ви рухаєтеся на відстань до своєї швидкості до союзника, який спровокував здібність, завершуючи цей рух поруч із ним або в найближчій клітинці, якщо не можете досягти сусідньої. Союзник, який спровокував здібність, може витратити Відновлення й отримує 5 тимчасової Витривалості за кожного ворога, до якого ви наблизилися впритул під час цього руху. Потім ви робите кидок сили проти цілі.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: [Characteristic.Might],
-												tier1: 'R < [слабкий], the target is frightened of the triggering ally (save ends)',
-												tier2: ' Р < [середній], the target is frightened of the triggering ally (save ends)',
-												tier3: 'R < [сильний], the target is frightened of the triggering ally (save ends)'
+												tier1: 'Р < [слабкий], ціль злякана союзником, який спровокував здібність (рят. кидок закінчує)',
+												tier2: 'Р < [середній], ціль злякана союзником, який спровокував здібність (рят. кидок закінчує)',
+												tier3: 'Р < [сильний], ціль злякана союзником, який спровокував здібність (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -89,15 +89,15 @@ export const vanguard: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-2-2b',
-									name: 'Squad! On Me!',
-									description: 'Together we are invincible!',
+									name: 'Загін, до мене!',
+									description: 'Разом ми нездоланні!',
 									type: FactoryLogic.type.createManeuver(),
 									keywords: [AbilityKeyword.Area],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 									target: 'На себе і кожного союзника в зоні впливу',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Until the start of your next turn, each target has a bonus to stability equal to your Might score. Additionally, each target gains 2 surges.')
+										FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу кожна ціль отримує бонус до стабільності, рівний вашому показнику Сили. Крім того, кожна ціль отримує 2 сплески.')
 									]
 								})
 							}),
@@ -120,13 +120,13 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-5-1',
-					name: 'Shake It Off',
-					description: 'As a free maneuver, you can spend 1d6 Stamina to ignore a consequence from a test, or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend Stamina as a free maneuver to gain this benefit.'
+					name: 'Оговтайся',
+					description: 'Як безкоштовний маневр ви можете витратити 1d6 Витривалості, щоб проігнорувати наслідок випробування або завершити на собі один ефект, який закінчується рят. кидком чи наприкінці вашого ходу. Будь-який союзник поруч із вами також може витратити Витривалість як безкоштовний маневр, щоб отримати цю перевагу.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-5-2',
-					name: 'Tactical Offensive',
-					description: 'When you use the Charge main action to attack a creature marked by you, you can use a signature or heroic ability with the Melee and Strike keywords instead of a melee free strike.'
+					name: 'Тактичний наступ',
+					description: 'Коли ви використовуєте основну дію «Ривок», щоб атакувати істоту, позначену вами, ви можете застосувати сигнатурну або героїчну здібність із ключовими словами «Ближній бій» та «Удар» замість вільного удару ближнього бою.'
 				})
 			]
 		},
@@ -135,27 +135,27 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'tactician-sub-3-6-1',
-					name: '6th-Level Doctrine Ability',
+					name: 'Здібність доктрини 6-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-6-1a',
-									name: 'Instant Retaliation',
-									description: 'You parry with almost supernatural speed.',
-									type: FactoryLogic.type.createTrigger('A creature deals damage to the target.', { free: true }),
+									name: 'Миттєва контратака',
+									description: 'Ви парируєте з майже надприродною швидкістю.',
+									type: FactoryLogic.type.createTrigger('Істота завдає шкоди цілі.', { free: true }),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Один союзник',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('The target takes half the damage. You then make a power roll against the triggering creature.'),
+										FactoryLogic.createAbilitySectionText('Ціль отримує лише половину шкоди. Потім ви робите кидок сили проти істоти, що спровокувала здібність.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: 'A < [слабкий], dazed (save ends)',
-												tier2: 'A < [середній], dazed (save ends)',
-												tier3: 'A < [сильний], dazed (save ends)'
+												tier1: 'Л < [слабкий], приголомшений (рят. кидок закінчує)',
+												tier2: 'Л < [середній], приголомшений (рят. кидок закінчує)',
+												tier3: 'Л < [сильний], приголомшений (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -167,8 +167,8 @@ export const vanguard: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-6-1b',
-									name: 'To Me Squad!',
-									description: 'You lead your allies in a charge.',
+									name: 'Загін, за мною!',
+									description: 'Ви ведете союзників у ривок.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -178,12 +178,12 @@ export const vanguard: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '6 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability instead of a free strike for the charge',
-												tier2: '9 + С damage; one ally within 10 squares can use the Charge main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a free strike for the charge',
-												tier3: '13 + С damage; two allies within 10 squares can use the Charge main action as a free triggered action, and can each use a melee strike signature ability that gains an edge instead of a free strike for the charge'
+												tier1: '6 + С шкоди; один союзник у межах 10 клітинок може використати основну дію «Ривок» як безкоштовну тригерну дію й може використати сигнатурну здібність-удар ближнього бою замість вільного удару під час ривка',
+												tier2: '9 + С шкоди; один союзник у межах 10 клітинок може використати основну дію «Ривок» як безкоштовну тригерну дію й може використати сигнатурну здібність-удар ближнього бою з перевагою замість вільного удару під час ривка',
+												tier3: '13 + С шкоди; двоє союзників у межах 10 клітинок можуть використати основну дію «Ривок» як безкоштовну тригерну дію й кожен може використати сигнатурну здібність-удар ближнього бою з перевагою замість вільного удару під час ривка'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If the target is hit with two or more strikes as part of this ability and they have Р < [сильний] , they are dazed (save ends). If the target is reduced to 0 Stamina before one or both allies has made their strike, the ally or allies can pick a different target.')
+										FactoryLogic.createAbilitySectionText('Якщо ціль отримує влучання двома або більше ударами в межах цієї здібності й має Р < [сильний], вона приголомшена (рят. кидок закінчує). Якщо ціль зводиться до 0 Витривалості до того, як один або обидва союзники завдадуть свого удару, цей союзник або союзники можуть обрати іншу ціль.')
 									]
 								})
 							}),
@@ -198,8 +198,8 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'tactician-sub-3-7-1',
-					name: 'Shock and Awe',
-					description: 'You have expanded your leadership skills, strengthening your followers’ morale and providing logistical support. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.'
+					name: 'Шок і трепет',
+					description: 'Ви розширили свої лідерські навички, зміцнюючи мораль своїх послідовників і забезпечуючи логістичну підтримку. Під час монтажного тесту або переговорів ви можете отримати один автоматичний успіх на випробуванні, виконаному навичкою з групи міжособистісних. Крім того, ви можете переконати групу людей допомогти вам із ремісничим проєктом під час перепочинку. Якщо ці люди доступні, коли ви берете перепочинок, ви можете зробити кидок проєкту для ремісничого проєкту на додачу до іншої діяльності перепочинку.'
 				})
 			]
 		},
@@ -208,8 +208,8 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.createPackageContent({
 					id: 'tactician-sub-1-8-1',
-					name: 'See Your Enemies Driven Before You',
-					description: 'When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your Reason score. That character can then shift up to a number of squares equal to your Reason score, ending this shift adjacent to the target.',
+					name: 'Бачити, як вороги тікають перед вами',
+					description: 'Коли ви або будь-який союзник завдаєте удару ближнього бою по істоті, позначеній вами, ви можете витратити 2 фокусу, щоб персонаж, який завдає удару, відштовхнув ціль на кількість клітинок, рівну вашому показнику Розуму. Потім цей персонаж може зміститися на кількість клітинок, рівну вашому показнику Розуму, завершивши це зміщення поруч із ціллю.',
 					tag: 'mark'
 				})
 			]
@@ -219,30 +219,30 @@ export const vanguard: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'tactician-sub-3-9-1',
-					name: '9th-Level Doctrine Ability',
+					name: 'Здібність доктрини 9-го рівня',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-9-1a',
-									name: 'No Escape',
-									description: 'Nothing will stop you from reaching your foe.',
+									name: 'Не втечеш',
+									description: 'Ніщо не завадить вам дістатися до свого ворога.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Charge, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You mark the target.'),
+										FactoryLogic.createAbilitySectionText('Ви позначаєте ціль.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '11 + С damage',
-												tier2: '16 + С damage',
-												tier3: '21 + С damage'
+												tier1: '11 + С шкоди',
+												tier2: '16 + С шкоди',
+												tier3: '21 + С шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('If you use this ability as part of the Charge main action, enemies’ spaces don’t count as difficult terrain for your movement. Additionally, if you move through any creature’s space, you can slide that creature 1 square out of the path of your charge.')
+										FactoryLogic.createAbilitySectionText('Якщо ви використовуєте цю здібність як частину основної дії «Ривок», простори ворогів не вважаються складною місцевістю для вашого пересування. Крім того, якщо ви проходите крізь простір будь-якої істоти, ви можете зсунути цю істоту на 1 клітинку з шляху свого ривка.')
 									]
 								})
 							}),
@@ -252,8 +252,8 @@ export const vanguard: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'tactician-sub-3-9-1b',
-									name: 'That One Is Mine!',
-									description: 'You focus on making an enemy irrelevant.',
+									name: 'Цей мій!',
+									description: 'Ви зосереджуєтеся на тому, щоб позбавити ворога значення.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Melee, AbilityKeyword.Ranged, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [
@@ -263,16 +263,16 @@ export const vanguard: SubClass = {
 									target: 'Одна істота',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('The target is marked by you.'),
+										FactoryLogic.createAbilitySectionText('Ціль позначена вами.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '8 + С damage',
-												tier2: '13 + С damage',
-												tier3: '17 + С damage'
+												tier1: '8 + С шкоди',
+												tier2: '13 + С шкоди',
+												tier3: '17 + С шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Until the end of the encounter or until you are dying, you can use a signature or heroic ability instead of a free strike against any target marked by you.')
+										FactoryLogic.createAbilitySectionText('До кінця сутички або доки ви не опинитеся при смерті ви можете використовувати сигнатурну або героїчну здібність замість вільного удару проти будь-якої цілі, позначеної вами.')
 									]
 								})
 							}),

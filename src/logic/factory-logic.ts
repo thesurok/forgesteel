@@ -260,7 +260,7 @@ export class FactoryLogic {
 				}));
 				lvl.features.push(FactoryLogic.feature.createHeroicResource({
 					id: Utils.guid(),
-					name: 'Heroic Resource',
+					name: 'Героїчний ресурс',
 					gains: [
 						{
 							tag: 'start',

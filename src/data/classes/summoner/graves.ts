@@ -35,9 +35,9 @@ The corpse can also choose to refuse to answer or lie, especially if you were th
 					id: 'summoner-4-1-3',
 					name: 'Rise!',
 					description: `
-Once per round, when a creature dies unwillingly within your Summoner’s Range, you can use a triggered action to summon a signature undead minion in their space at no cost, even if you’re at your minion maximum, but only if they can be organized into one of your squads. The new minion can’t act until the start of your next turn.
+Once per round, when a creature dies unwillingly within your Summoner’s Range, you can use a тригерна дія to summon a signature undead minion in their space at no cost, even if you’re at your minion maximum, but only if they can be organized into one of your squads. The new minion can’t act until the start of your next turn.
 
-This ability becomes a free triggered action if the target was a minion (either yours or an enemy).`
+This ability becomes a безкоштовна тригерна дія if the target was a minion (either yours or an enemy).`
 				}),
 				FactoryLogic.feature.createSummonChoice({
 					id: 'summoner-4-1-4',
@@ -83,7 +83,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-4a-2',
 										name: 'Rotting Strike',
-										description: 'The husk’s melee free strikes inflict M < [слабкий] slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).'
+										description: 'The husk’s melee free strikes inflict С < [слабкий] slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).'
 									})
 								]
 							}),
@@ -232,9 +232,9 @@ This ability becomes a free triggered action if the target was a minion (either 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '5 corruption damage; M < [слабкий] bleeding (EoT)',
-														tier2: '7 corruption damage; M < [середній] bleeding (EoT)',
-														tier3: '9 corruption damage; M < [сильний] bleeding (save ends)'
+														tier1: '5 шкоди від скверни; С < [слабкий] кровотеча (до кінця ходу)',
+														tier2: '7 шкоди від скверни; С < [середній] кровотеча (до кінця ходу)',
+														tier3: '9 шкоди від скверни; С < [сильний] кровотеча (рят. кидок закінчує)'
 													})
 												)
 											]
@@ -341,7 +341,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-1-5c-4',
 										name: 'Death Grasp',
-										description: 'When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < [сильний] restrained (EoT).'
+										description: 'When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is С < [сильний] restrained (EoT).'
 									})
 								]
 							}),
@@ -371,7 +371,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-fixture-1-1',
 										name: 'The Bell Tolls',
-										description: 'Each enemy that starts their turn within 3 squares of the gates is I < [середній] frightened (EoT) by the gates. The potency increases by 1 for winded enemies.'
+										description: 'Each enemy that starts their turn within 3 squares of the gates is І < [середній] frightened (EoT) by the gates. The potency increases by 1 for winded enemies.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-fixture-1-2',
@@ -425,7 +425,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-fixture-9-2',
 										name: 'Open the Gates',
-										description: 'You can use Rise! as a free triggered action each time an enemy dies within 3 squares of the gates while you have line of effect to the gates.'
+										description: 'You can use Rise! as a безкоштовна тригерна дія each time an enemy dies within 3 squares of the gates while you have line of effect to the gates.'
 									})
 								]
 							},
@@ -484,12 +484,12 @@ This ability becomes a free triggered action if the target was a minion (either 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '3 poison damage; pull R',
-														tier2: '4 poison damage; pull Р + 1',
-														tier3: '6 poison damage; pull Р + 2'
+														tier1: '3 отруйної шкоди; pull Р',
+														tier2: '4 отруйної шкоди; pull Р + 1',
+														tier3: '6 отруйної шкоди; pull Р + 2'
 													})
 												),
-												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the mummy is M < [сильний] weakened (EoT).')
+												FactoryLogic.createAbilitySectionText('A target pulled adjacent to the mummy is С < [сильний] weakened (EoT).')
 											]
 										})
 									}),
@@ -594,7 +594,7 @@ This ability becomes a free triggered action if the target was a minion (either 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-2-2c-2',
 										name: 'Leaping Strike',
-										description: 'The ghoul teleports 5 squares before making a melee free strike. The target is M < [середній] knocked prone. If the target is in the air, the potency increases by 1.'
+										description: 'The ghoul teleports 5 squares before making a melee free strike. The target is С < [середній] knocked prone. If the target is in the air, the potency increases by 1.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-2-2c-3',
@@ -634,7 +634,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 				FactoryLogic.feature.create({
 					id: 'summoner-4-5-2',
 					name: 'Dread March',
-					description: 'You and your undead minions don’t spend additional speed to move through difficult terrain. If one or more of your undead minions would die while using their move action, they can choose to not die until the end of your turn.'
+					description: 'You and your undead minions don’t spend additional speed to move through difficult terrain. If one or more of your undead minions would die while using their дія руху, they can choose to not die until the end of your turn.'
 				}),
 				FactoryLogic.feature.createSummonChoice({
 					id: 'summoner-4-5-3',
@@ -675,7 +675,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3a-2',
 										name: 'Proboscis Strike',
-										description: 'The false vampire’s melee free strikes have a distance of 2 and inflict M < [середній] restrained (EoT). The false vampire can move the target while they are restrained this way. At the start of a restrained creature’s turn, they take acid damage equal to your Reason.'
+										description: 'The false vampire’s melee free strikes have a distance of 2 and inflict С < [середній] restrained (EoT). The false vampire can move the target while they are restrained this way. At the start of a restrained creature’s turn, they take acid damage equal to your Reason.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3a-3',
@@ -731,9 +731,9 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '8 damage; Л < [слабкий] slowed (save ends)',
-														tier2: '13 damage; Л < [середній] slowed (save ends)',
-														tier3: '17 damage; Л < [сильний] slowed (save ends)'
+														tier1: '8 шкоди; Л < [слабкий] сповільнений (рят. кидок закінчує)',
+														tier2: '13 шкоди; Л < [середній] сповільнений (рят. кидок закінчує)',
+														tier3: '17 шкоди; Л < [сильний] сповільнений (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('The phantom deals an additional 3 damage if they have an edge.')
@@ -789,7 +789,7 @@ After you stop channeling their spirit, you can’t use this feature to channel 
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3c-3',
 										name: 'Big Stomp',
-										description: 'The titan’s melee free strikes M < [сильний] knock the target prone.'
+										description: 'The titan’s melee free strikes С < [сильний] knock the target prone.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-4-5-3c-4',
@@ -886,9 +886,9 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														bonus: 5,
-														tier1: '9 corruption damage; M < [слабкий] bleeding (save ends)',
-														tier2: '12 corruption damage; M < [середній] bleeding (save ends)',
-														tier3: '12 corruption damage; M < [сильний] bleeding (save ends)'
+														tier1: '9 шкоди від скверни; С < [слабкий] кровотеча (рят. кидок закінчує)',
+														tier2: '12 шкоди від скверни; С < [середній] кровотеча (рят. кидок закінчує)',
+														tier3: '12 шкоди від скверни; С < [сильний] кровотеча (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('If the target is a creature that isn’t a leader or a solo and they are still bleeding at the end of the encounter, they instantly die.')
@@ -915,7 +915,7 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 											target: 'Each enemy in the burst',
 											cost: 'signature',
 											sections: [
-												FactoryLogic.createAbilitySectionText('M < [середній] weakened (EoT).')
+												FactoryLogic.createAbilitySectionText('С < [середній] weakened (EoT).')
 											]
 										})
 									}),

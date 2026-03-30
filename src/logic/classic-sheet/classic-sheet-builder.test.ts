@@ -59,7 +59,7 @@ describe('buildAbilitySheet', () => {
 		} as Options;
 
 		const result = ClassicSheetBuilder.buildAbilitySheet(ability, hero, undefined, options);
-		expect(result.rollPower).toBe('M or A');
+		expect(result.rollPower).toBe('С або Л');
 	});
 
 	test('when showPowerRollCalc is true, calculates value', () => {
@@ -76,8 +76,8 @@ describe('buildAbilitySheet', () => {
 	});
 
 	test.each([
-		[ AbilityData.advance, true ],
-		[ AbilityData.escapeGrab, false ]
+		[AbilityData.advance, true],
+		[AbilityData.escapeGrab, false]
 	])('properly sets isNotTrueAbility for non-ability abilities', (ability: Ability, expected: boolean) => {
 		const hero = FactoryLogic.createHero([]);
 		const options = {} as Options;
@@ -98,7 +98,7 @@ describe('buildAbilitySheet', () => {
 		} as Options;
 
 		const result = ClassicSheetBuilder.buildAbilitySheet(ability, hero, undefined, options);
-		expect(result.rollPower).toBe('R or P');
+		expect(result.rollPower).toBe('Р або П');
 	});
 
 	test('if a power roll can use any characteristic, clean up the text', () => {
@@ -170,9 +170,9 @@ describe('buildAbilitySheet', () => {
 
 describe('buildMonsterSheet', () => {
 	test.each([
-		[ goblin.monsters[4], 'Lvl 1 Horde Ambusher' ], // Goblin Assassin
-		[ goblin.monsters[0], 'Lvl 1 Minion Harrier' ], // Goblin Runner
-		[ ajax.monsters[0], 'Lvl 11 Solo' ]
+		[goblin.monsters[4], 'Lvl 1 Horde Ambusher'], // Goblin Assassin
+		[goblin.monsters[0], 'Lvl 1 Minion Harrier'], // Goblin Runner
+		[ajax.monsters[0], 'Lvl 11 Solo']
 	])('sets type correctly', (monster, expectedType) => {
 		const result = ClassicSheetBuilder.buildMonsterSheet(monster);
 		expect(result.type).toBe(expectedType);

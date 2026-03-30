@@ -49,7 +49,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			cost: 3,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Until the end of the round, each rival can impose a bane on a strike made against an adjacent rival as a free triggered action.'
+				'Until the end of the round, each rival can impose a bane on a strike made against an adjacent rival as a безкоштовна тригерна дія.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -70,9 +70,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 				'One rival pulls out a magic consumable and hurls it, targeting a 5 × 1 line within 1 square of them or a 3 cube within 10 squares of them. Each enemy in the area makes an Agility test. The rival chooses a damage type and a condition for the outcome of the test from one of the following pairs: sonic damage and dazed, poison damage and weakened, or fire damage and frightened.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '11 damage; the condition affects the target (save ends)',
-					tier2: '8 damage; the condition affects the target (EoT)',
-					tier3: '5 damage'
+					tier1: '11 шкоди; the condition affects ціль (рят. кидок закінчує)',
+					tier2: '8 шкоди; the condition affects ціль (до кінця ходу)',
+					tier3: '5 шкоди'
 				})
 			]
 		}),
@@ -91,7 +91,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			cost: 10,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Each rival moves up to their speed and uses a main action or maneuver that doesn’t cost Malice.'
+				'Each rival moves up to their speed and uses a основна дія or маневр that doesn’t cost Malice.'
 			]
 		})
 	],
@@ -125,9 +125,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 holy damage',
-								tier2: '10 holy damage',
-								tier3: '13 holy damage'
+								tier1: '7 священної шкоди',
+								tier2: '10 священної шкоди',
+								tier3: '13 священної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The conduit or one ally within distance regains Stamina equal to half the damage dealt.')
 						]
@@ -185,9 +185,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; slide 1',
-								tier2: '10 damage; slide 2',
-								tier3: '13 damage; slide 3'
+								tier1: '7 шкоди; зсунути на 1',
+								tier2: '10 шкоди; зсунути на 2',
+								tier3: '13 шкоди; зсунути на 3'
 							}))
 						]
 					})
@@ -204,9 +204,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; slide 1',
-								tier2: '5 damage; restrained (EoT)',
-								tier3: '8 damage; restrained (save ends)'
+								tier1: '3 шкоди; зсунути на 1',
+								tier2: '5 шкоди; скутий (до кінця ходу)',
+								tier3: '8 шкоди; скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 2.')
 						]
@@ -258,13 +258,13 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; push 1',
-								tier2: '10 damage; push 2',
-								tier3: '13 damage; push 3'
+								tier1: '7 шкоди; відштовхнути на 1',
+								tier2: '10 шкоди; відштовхнути на 2',
+								tier3: '13 шкоди; відштовхнути на 3'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'Each target who has <code>M < 1</code> is slowed (save ends).'
+								effect: 'Each target who has <code>С < 1</code> is slowed (save ends).'
 							})
 						]
 					})
@@ -281,9 +281,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage; M < 0 grabbed',
-								tier2: '13 damage; M < 1 grabbed',
-								tier3: '16 damage; M < 2 grabbed'
+								tier1: '8 шкоди; С < 0 схоплений',
+								tier2: '13 шкоди; С < 1 схоплений',
+								tier3: '16 шкоди; С < 2 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The target must be the fury’s size or smaller. While the target is grabbed this way, the fury gains an edge on strikes against them.')
 						]
@@ -327,9 +327,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; the null shifts up to 2 squares',
-								tier2: '10 damage; the null shifts up to 3 squares',
-								tier3: '13 damage; the null shifts up to 4 squares'
+								tier1: '7 шкоди; the null shifts до 2 клітинок',
+								tier2: '10 шкоди; the null shifts до 3 клітинок',
+								tier3: '13 шкоди; the null shifts до 4 клітинок'
 							}))
 						]
 					})
@@ -346,9 +346,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; Р < 0 slowed (EoT)',
-								tier2: '10 damage; Р < 1 slowed (EoT)',
-								tier3: '13 damage; Р < 2 dazed and slowed (EoT)'
+								tier1: '7 шкоди; Р < 0 сповільнений (до кінця ходу)',
+								tier2: '10 шкоди; Р < 1 сповільнений (до кінця ходу)',
+								tier3: '13 шкоди; Р < 2 приголомшений і сповільнений (до кінця ходу)'
 							}))
 						]
 					})
@@ -391,9 +391,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage',
-								tier3: '14 damage; Л < 2 bleeding (save ends)'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди; Л < 2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 5 squares, then can attempt to hide.'
@@ -451,9 +451,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '10 damage',
-								tier3: '13 damage'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди',
+								tier3: '13 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -474,9 +474,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage; M < 0 weakened (save ends)',
-								tier2: '13 damage; M < 1 weakened (save ends)',
-								tier3: '16 damage; M < 2 weakened (save ends)'
+								tier1: '8 шкоди; С < 0 ослаблений (рят. кидок закінчує)',
+								tier2: '13 шкоди; С < 1 ослаблений (рят. кидок закінчує)',
+								tier3: '16 шкоди; С < 2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally adjacent to the target regains 5 Stamina.')
 						]
@@ -528,9 +528,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 psychic damage; M < 0 prone',
-								tier2: '10 psychic damage; push 2; M < 1 prone',
-								tier3: '13 psychic damage; push 3; M < 2 prone'
+								tier1: '7 психічної шкоди; С < 0 розпластаний',
+								tier2: '10 психічної шкоди; відштовхнути на 2; С < 1 розпластаний',
+								tier3: '13 психічної шкоди; відштовхнути на 3; С < 2 розпластаний'
 							}))
 						]
 					})
@@ -547,9 +547,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: 'R < 0 slowed (save ends)',
-								tier2: 'R < 1 dazed (save ends)',
-								tier3: 'R < 2 dazed and slowed (save ends)'
+								tier1: 'Р < 0 сповільнений (рят. кидок закінчує)',
+								tier2: 'Р < 1 приголомшений (рят. кидок закінчує)',
+								tier3: 'Р < 2 приголомшений і сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -604,9 +604,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 holy damage; vertical slide 1',
-								tier2: '14 holy damage; vertical slide 2',
-								tier3: '17 holy damage; vertical slide 3'
+								tier1: '9 священної шкоди; вертикально зсунути на 1',
+								tier2: '14 священної шкоди; вертикально зсунути на 2',
+								tier3: '17 священної шкоди; вертикально зсунути на 3'
 							})),
 							FactoryLogic.createAbilitySectionText('The conduit or one ally within distance regains Stamina equal to half the damage dealt.')
 						]
@@ -664,9 +664,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; slide 1; M < 1 3 acid damage',
-								tier2: '14 damage; slide 2; M < 2 5 acid damage',
-								tier3: '17 damage; slide 3; M < 3 7 acid damage'
+								tier1: '9 шкоди; зсунути на 1; С < 1 3 кислотної шкоди',
+								tier2: '14 шкоди; зсунути на 2; С < 2 5 кислотної шкоди',
+								tier3: '17 шкоди; зсунути на 3; С < 3 7 кислотної шкоди'
 							}))
 						]
 					})
@@ -683,9 +683,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage',
-								tier2: '9 damage; restrained (EoT)',
-								tier3: '11 damage; restrained (save ends)'
+								tier1: '5 шкоди',
+								tier2: '9 шкоди; скутий (до кінця ходу)',
+								tier3: '11 шкоди; скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 3.')
 						]
@@ -737,13 +737,13 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage; push 2',
-								tier2: '15 damage; push 3',
-								tier3: '18 damage; push 4'
+								tier1: '10 шкоди; відштовхнути на 2',
+								tier2: '15 шкоди; відштовхнути на 3',
+								tier3: '18 шкоди; відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'Each target who has <code>M < 2</code> is slowed (save ends).'
+								effect: 'Each target who has <code>С < 2</code> is slowed (save ends).'
 							})
 						]
 					})
@@ -760,9 +760,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '11 damage; M < 1 grabbed',
-								tier2: '16 damage; M < 2 grabbed',
-								tier3: '21 damage; M < 3 grabbed'
+								tier1: '11 шкоди; С < 1 схоплений',
+								tier2: '16 шкоди; С < 2 схоплений',
+								tier3: '21 шкоди; С < 3 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('Effect: The target must be the fury’s size or smaller. While the target is grabbed this way, the fury and their allies gain an edge on strikes against them.')
 						]
@@ -806,9 +806,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; the null shifts up to 3 squares; Л < 1 6 damage',
-								tier2: '14 damage; the null shifts up to 4 squares; Л < 2 11 damage',
-								tier3: '17 damage; the null shifts up to 5 squares; Л < 3 11 damage'
+								tier1: '9 шкоди; the null shifts до 3 клітинок; Л < 1 6 шкоди',
+								tier2: '14 шкоди; the null shifts до 4 клітинок; Л < 2 11 шкоди',
+								tier3: '17 шкоди; the null shifts до 5 клітинок; Л < 3 11 шкоди'
 							}))
 						]
 					})
@@ -825,9 +825,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; Р < 1 dazed (EoT)',
-								tier2: '14 damage; Р < 2 dazed (save ends)',
-								tier3: '17 damage; Р < 3 dazed and restrained (save ends)'
+								tier1: '9 шкоди; Р < 1 приголомшений (до кінця ходу)',
+								tier2: '14 шкоди; Р < 2 приголомшений (рят. кидок закінчує)',
+								tier3: '17 шкоди; Р < 3 приголомшений і скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -870,9 +870,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '15 damage; Л < 2 bleeding (save ends)',
-								tier3: '18 damage; Л < 3 bleeding (save ends)'
+								tier1: '10 шкоди',
+								tier2: '15 шкоди; Л < 2 кровотеча (рят. кидок закінчує)',
+								tier3: '18 шкоди; Л < 3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 6 squares, then can attempt to hide.'
@@ -930,9 +930,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '15 damage',
-								tier3: '18 damage'
+								tier1: '10 шкоди',
+								tier2: '15 шкоди',
+								tier3: '18 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -953,9 +953,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '11 damage; M < 1 weakened (save ends)',
-								tier2: '16 damage; M < 2 weakened (save ends)',
-								tier3: '21 damage; M < 3 weakened (save ends)'
+								tier1: '11 шкоди; С < 1 ослаблений (рят. кидок закінчує)',
+								tier2: '16 шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+								tier3: '21 шкоди; С < 3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally adjacent to the target regains 7 Stamina.')
 						]
@@ -1007,9 +1007,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 psychic damage; push 2; M < 1 prone',
-								tier2: '14 psychic damage; push 3; M < 2 prone',
-								tier3: '17 psychic damage; push 4; M < 3 prone'
+								tier1: '9 психічної шкоди; відштовхнути на 2; С < 1 розпластаний',
+								tier2: '14 психічної шкоди; відштовхнути на 3; С < 2 розпластаний',
+								tier3: '17 психічної шкоди; відштовхнути на 4; С < 3 розпластаний'
 							}))
 						]
 					})
@@ -1026,9 +1026,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 psychic damage; Р < 1 dazed (save ends)',
-								tier2: '6 psychic damage; Р < 2 dazed (save ends)',
-								tier3: '6 psychic damage; Р < 3 dazed and slowed (save ends)'
+								tier1: '6 психічної шкоди; Р < 1 приголомшений (рят. кидок закінчує)',
+								tier2: '6 психічної шкоди; Р < 2 приголомшений (рят. кидок закінчує)',
+								tier3: '6 психічної шкоди; Р < 3 приголомшений і сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1083,9 +1083,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 holy damage; vertical slide 2',
-								tier2: '17 holy damage; vertical slide 3',
-								tier3: '21 holy damage; vertical slide 4'
+								tier1: '12 священної шкоди; вертикально зсунути на 2',
+								tier2: '17 священної шкоди; вертикально зсунути на 3',
+								tier3: '21 священної шкоди; вертикально зсунути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('The conduit or one ally within distance regains Stamina equal to half the damage dealt.')
 						]
@@ -1143,9 +1143,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; slide 2; M < 2 4 acid damage',
-								tier2: '17 damage; slide 3; M < 3 6 acid damage',
-								tier3: '21 damage; slide 4; M < 4 8 acid damage'
+								tier1: '12 шкоди; зсунути на 2; С < 2 4 кислотної шкоди',
+								tier2: '17 шкоди; зсунути на 3; С < 3 6 кислотної шкоди',
+								tier3: '21 шкоди; зсунути на 4; С < 4 8 кислотної шкоди'
 							}))
 						]
 					})
@@ -1162,9 +1162,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage',
-								tier2: '10 damage; restrained (EoT)',
-								tier3: '14 damage; restrained (save ends)'
+								tier1: '6 шкоди',
+								tier2: '10 шкоди; скутий (до кінця ходу)',
+								tier3: '14 шкоди; скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 5.')
 						]
@@ -1216,13 +1216,13 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 damage; push 3',
-								tier2: '18 damage; push 4',
-								tier3: '22 damage; push 5'
+								tier1: '13 шкоди; відштовхнути на 3',
+								tier2: '18 шкоди; відштовхнути на 4',
+								tier3: '22 шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 4,
-								effect: 'Each target who has <code>M < 3</code> is bleeding and slowed (save ends).'
+								effect: 'Each target who has <code>С < 3</code> is bleeding and slowed (save ends).'
 							})
 						]
 					})
@@ -1239,9 +1239,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '15 damage; M < 3 grabbed',
-								tier2: '21 damage; M < 4 grabbed',
-								tier3: '26 damage; M < 5 grabbed'
+								tier1: '15 шкоди; С < 3 схоплений',
+								tier2: '21 шкоди; С < 4 схоплений',
+								tier3: '26 шкоди; С < 5 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The target must be the fury’s size or smaller. While the target is grabbed this way, the fury and their allies have a double edge on strikes against them.')
 						]
@@ -1285,9 +1285,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; the null shifts up to 3 squares; Л < 2 6 damage',
-								tier2: '17 damage; the null shifts up to 4 squares; Л < 3 11 damage',
-								tier3: '21 damage; the null shifts up to 5 squares; Л < 4 11 damage'
+								tier1: '12 шкоди; the null shifts до 3 клітинок; Л < 2 6 шкоди',
+								tier2: '17 шкоди; the null shifts до 4 клітинок; Л < 3 11 шкоди',
+								tier3: '21 шкоди; the null shifts до 5 клітинок; Л < 4 11 шкоди'
 							}))
 						]
 					})
@@ -1304,9 +1304,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; Р < 2 dazed (save ends)',
-								tier2: '17 damage; Р < 3 dazed (save ends)',
-								tier3: '21 damage; Р < 4 dazed and restrained (save ends)'
+								tier1: '12 шкоди; Р < 2 приголомшений (рят. кидок закінчує)',
+								tier2: '17 шкоди; Р < 3 приголомшений (рят. кидок закінчує)',
+								tier3: '21 шкоди; Р < 4 приголомшений і скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1349,9 +1349,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 damage; Л < 2 bleeding (save ends)',
-								tier2: '18 damage; Л < 3 bleeding (save ends)',
-								tier3: '22 damage; Л < 4 bleeding and weakened (save ends)'
+								tier1: '13 шкоди; Л < 2 кровотеча (рят. кидок закінчує)',
+								tier2: '18 шкоди; Л < 3 кровотеча (рят. кидок закінчує)',
+								tier3: '22 шкоди; Л < 4 кровотеча і ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 7 squares, then can attempt to hide.'
@@ -1409,9 +1409,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 damage',
-								tier2: '18 damage; Л < 3 prone',
-								tier3: '22 damage; Л < 4 prone '
+								tier1: '13 шкоди',
+								tier2: '18 шкоди; Л < 3 розпластаний',
+								tier3: '22 шкоди; Л < 4 розпластаний '
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 4,
@@ -1432,9 +1432,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '15 damage; M < 2 weakened (save ends)',
-								tier2: '21 damage; M < 3 weakened (save ends)',
-								tier3: '26 damage; M < 4 weakened (save ends)'
+								tier1: '15 шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+								tier2: '21 шкоди; С < 3 ослаблений (рят. кидок закінчує)',
+								tier3: '26 шкоди; С < 4 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Two allies adjacent to the target each regain 7 Stamina.')
 						]
@@ -1486,9 +1486,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 psychic damage',
-								tier2: '17 psychic damage',
-								tier3: '21 psychic damage'
+								tier1: '12 психічної шкоди',
+								tier2: '17 психічної шкоди',
+								tier3: '21 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -1509,9 +1509,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '8 psychic damage; Р < 1 dazed (save ends)',
-								tier2: '8 psychic damage; Р < 2 dazed and slowed (save ends)',
-								tier3: '8 psychic damage; Р < 3 dazed and slowed (save ends)'
+								tier1: '8 психічної шкоди; Р < 1 приголомшений (рят. кидок закінчує)',
+								tier2: '8 психічної шкоди; Р < 2 приголомшений і сповільнений (рят. кидок закінчує)',
+								tier3: '8 психічної шкоди; Р < 3 приголомшений і сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1566,9 +1566,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; vertical slide 3; M < 3 5 lightning damage',
-								tier2: '20 damage; vertical slide 4; M < 4 7 lightning damage',
-								tier3: '24 damage; vertical slide 5; M < 5 9 lightning damage'
+								tier1: '15 шкоди; вертикально зсунути на 3; С < 3 5 блискавичної шкоди',
+								tier2: '20 шкоди; вертикально зсунути на 4; С < 4 7 блискавичної шкоди',
+								tier3: '24 шкоди; вертикально зсунути на 5; С < 5 9 блискавичної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The conduit or one ally within distance regains Stamina equal to half the damage dealt.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -1630,9 +1630,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; slide 3; M < 3 5 acid damage',
-								tier2: '20 damage; slide 4; M < 4 7 acid damage',
-								tier3: '24 damage; slide 5; M < 5 9 acid damage'
+								tier1: '15 шкоди; зсунути на 3; С < 3 5 кислотної шкоди',
+								tier2: '20 шкоди; зсунути на 4; С < 4 7 кислотної шкоди',
+								tier3: '24 шкоди; зсунути на 5; С < 5 9 кислотної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within distance ends all conditions on themself.')
 						]
@@ -1648,7 +1648,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('The area becomes overgrown with caustic vines until the end of the encounter. While in the area, any enemy has acid weakness 5 and is slowed. Any enemy who ends their turn in the area and has <code>M < 4</code> is restrained (save ends).')
+							FactoryLogic.createAbilitySectionText('The area becomes overgrown with caustic vines until the end of the encounter. While in the area, any enemy has acid weakness 5 and is slowed. Any enemy who ends their turn in the area and has <code>С < 4</code> is restrained (save ends).')
 						]
 					})
 				}),
@@ -1698,13 +1698,13 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; push 3',
-								tier2: '21 damage; push 4',
-								tier3: '25 damage; push 5'
+								tier1: '15 шкоди; відштовхнути на 3',
+								tier2: '21 шкоди; відштовхнути на 4',
+								tier3: '25 шкоди; відштовхнути на 5'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 4,
-								effect: 'Each target who has <code>M < 3</code> is bleeding and slowed (save ends).'
+								effect: 'Each target who has <code>С < 3</code> is bleeding and slowed (save ends).'
 							})
 						]
 					})
@@ -1721,9 +1721,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; M < 3 grabbed',
-								tier2: '21 damage; M < 4 grabbed',
-								tier3: '25 damage; M < 5 grabbed'
+								tier1: '15 шкоди; С < 3 схоплений',
+								tier2: '21 шкоди; С < 4 схоплений',
+								tier3: '25 шкоди; С < 5 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The target must be the fury’s size or smaller. While the target is grabbed this way, the fury and their allies have a double edge on strikes against them.')
 						]
@@ -1767,9 +1767,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; the null shifts up to 4 squares; Л < 3 10 damage',
-								tier2: '20 damage; the null shifts up to 5 squares; Л < 4 15 damage',
-								tier3: '224 damage; the null shifts up to 6 squares; Л < 5 19 damage'
+								tier1: '15 шкоди; the null shifts до 4 клітинок; Л < 3 10 шкоди',
+								tier2: '20 шкоди; the null shifts до 5 клітинок; Л < 4 15 шкоди',
+								tier3: '224 шкоди; the null shifts до 6 клітинок; Л < 5 19 шкоди'
 							}))
 						]
 					})
@@ -1786,9 +1786,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '13 damage; Р < 3 dazed and restrained (save ends)',
-								tier2: '17 damage; Р < 4 dazed and restrained (save ends)',
-								tier3: '20 damage; Р < 5 dazed and restrained (save ends)'
+								tier1: '13 шкоди; Р < 3 приголомшений і скутий (рят. кидок закінчує)',
+								tier2: '17 шкоди; Р < 4 приголомшений і скутий (рят. кидок закінчує)',
+								tier3: '20 шкоди; Р < 5 приголомшений і скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1831,9 +1831,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage; Л < 3 bleeding (save ends)',
-								tier2: '21 damage; Л < 4 bleeding (save ends)',
-								tier3: '25 damage; Л < 5 bleeding (save ends)'
+								tier1: '15 шкоди; Л < 3 кровотеча (рят. кидок закінчує)',
+								tier2: '21 шкоди; Л < 4 кровотеча (рят. кидок закінчує)',
+								tier3: '25 шкоди; Л < 5 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The shadow can teleport up to 10 squares, then can attempt to hide.'
@@ -1849,7 +1849,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They have a double edge on their next strike, any potency for that strike increases by 2, and if the target has m<4], they are weakened (save ends).')
+							FactoryLogic.createAbilitySectionText('The shadow coats their weapon with poison. They have a double edge on their next strike, any potency for that strike increases by 2, and if the target has С<4], they are weakened (save ends).')
 						]
 					})
 				}),
@@ -1891,9 +1891,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 damage',
-								tier2: '21 damage; Л < 3 prone and can’t stand (EoT)',
-								tier3: '25 damage; prone; Л < 5 can’t stand (EoT)'
+								tier1: '15 шкоди',
+								tier2: '21 шкоди; Л < 3 розпластаний і не може встати (до кінця ходу)',
+								tier3: '25 шкоди; розпластаний; Л < 5 не може встати (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -1914,9 +1914,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '10 damage; M < 3 weakened (save ends)',
-								tier2: '16 damage; M < 4 weakened (save ends)',
-								tier3: '20 damage; M < 5 weakened (save ends)'
+								tier1: '10 шкоди; С < 3 ослаблений (рят. кидок закінчує)',
+								tier2: '16 шкоди; С < 4 ослаблений (рят. кидок закінчує)',
+								tier3: '20 шкоди; С < 5 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each ally in the area regains 10 Stamina')
 						]
@@ -1968,9 +1968,9 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 psychic damage',
-								tier2: '20 psychic damage',
-								tier3: '24 psychic damage'
+								tier1: '15 психічної шкоди',
+								tier2: '20 психічної шкоди',
+								tier3: '24 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 4,
@@ -1991,11 +1991,11 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: 'R < 3 slowed (save ends)',
-								tier2: 'R < 4 restrained (save ends)',
-								tier3: 'R < 5 restrained (save ends)'
+								tier1: 'Р < 3 сповільнений (рят. кидок закінчує)',
+								tier2: 'Р < 4 скутий (рят. кидок закінчує)',
+								tier3: 'Р < 5 скутий (рят. кидок закінчує)'
 							})),
-							FactoryLogic.createAbilitySectionText('One ally within distance can use an additional main action on their next turn.')
+							FactoryLogic.createAbilitySectionText('One ally within distance can use an additional основна дія on their next turn.')
 						]
 					})
 				}),
@@ -2078,7 +2078,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			description: `
 - **Size Adjustment:** 1M
 - **Stability Adjustment:** +1,
-- **Determination:** As a maneuver, the rival can end the frightened, slowed, or weakened condition on themself.`,
+- **Determination:** As a маневр, the rival can end the frightened, slowed, or weakened condition on themself.`,
 			category: FeatureAddOnType.Ancestry,
 			cost: 0
 		}),
@@ -2098,7 +2098,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			description: `
 - **Size Adjustment:** 1M
 - **Stability Adjustment:** +2,
-- **Glowing Recovery:** Once per round, the rival can use a maneuver to regain Stamina equal to 5 times their level.`,
+- **Glowing Recovery:** Once per round, the rival can use a маневр to regain Stamina equal to 5 times their level.`,
 			category: FeatureAddOnType.Ancestry,
 			cost: 0
 		}),
@@ -2118,7 +2118,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			description: `
 - **Size Adjustment:** 1M
 - **Stability Adjustment:** +1,
-- **Vengeance Mark:** The rival places a magic sigil on an enemy within 10 squares of them. The rival always knows the direction to that enemy while the sigil is active on them. As a main action, the rival can detonate the sigil, dealing damage to the target equal to the rival’s free strike and sliding the target up to 2 squares.`,
+- **Vengeance Mark:** The rival places a magic sigil on an enemy within 10 squares of them. The rival always knows the direction to that enemy while the sigil is active on them. As a основна дія, the rival can detonate the sigil, dealing damage to the target equal to the rival’s free strike and sliding the target up to 2 squares.`,
 			category: FeatureAddOnType.Ancestry,
 			cost: 0
 		}),
@@ -2128,7 +2128,7 @@ Rivals are NPCs built around the mechanics of seven of the classes in Draw Steel
 			description: `
 - **Size Adjustment:** 1M
 - **Stability Adjustment:** 0,
-- **Four-Armed Martial Arts:** Whenever the rival uses the Grab or Knockback maneuver, they can target one additional creature.`,
+- **Four-Armed Martial Arts:** Whenever the rival uses the Grab or Knockback маневр, they can target one additional creature.`,
 			category: FeatureAddOnType.Ancestry,
 			cost: 0
 		})

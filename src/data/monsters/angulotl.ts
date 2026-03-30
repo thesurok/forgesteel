@@ -56,7 +56,7 @@ Pinna, Hedge Witch, Gravesford`,
 			cost: 3,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Until the end of the round, when an angulotl moves through an inactive angulotl’s space, the inactive angulotl can use a free triggered action to jump 3 squares.'
+				'Until the end of the round, when an angulotl moves through an inactive angulotl’s space, the inactive angulotl can use a безкоштовна тригерна дія to jump 3 squares.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -68,9 +68,9 @@ Pinna, Hedge Witch, Gravesford`,
 				'Each angulotl in the encounter puffs out their throat and starts loudly droning. Any non-angulotl adjacent to an angulotl makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: '5 sonic damage; slowed (EoT)',
-					tier2: '4 sonic damage',
-					tier3: 'No effect'
+					tier1: '5 звукової шкоди; сповільнений (до кінця ходу)',
+					tier2: '4 звукової шкоди',
+					tier3: 'Без ефекту'
 				})
 			]
 		}),
@@ -113,9 +113,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '2 damage',
-									tier2: '4 damage',
-									tier3: '5 damage'
+									tier1: '2 шкоди',
+									tier2: '4 шкоди',
+									tier3: '5 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The cleaver jumps up to 4 squares before or after making this strike.')
@@ -161,9 +161,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '1 damage',
-									tier2: '2 poison damage; the pollywog can shift 1 square',
-									tier3: '3 poison damage; the pollywog can shift up to 3 squares'
+									tier1: '1 шкоди',
+									tier2: '2 отруйної шкоди; the pollywog може зміститися 1 клітинку',
+									tier3: '3 отруйної шкоди; the pollywog може зміститися до 3 клітинок'
 								})
 							)
 						]
@@ -172,7 +172,7 @@ Pinna, Hedge Witch, Gravesford`,
 				FactoryLogic.feature.create({
 					id: 'angulotl-2-feature-2',
 					name: 'Quick Snack',
-					description: 'Any angulotl who can target the pollywog with a melee free strike can eat them as a maneuver. The angulotl regains 4 Stamina and is wet until the end of their next turn.'
+					description: 'Any angulotl who can target the pollywog with a melee free strike can eat them as a маневр. The angulotl regains 4 Stamina and is wet until the end of their next turn.'
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-2-feature-3',
@@ -208,9 +208,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '2 damage',
-									tier2: '4 poison damage',
-									tier3: '5 poison damage'
+									tier1: '2 шкоди',
+									tier2: '4 отруйної шкоди',
+									tier3: '5 отруйної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The dart gains an edge on this ability against any target who has less than full Stamina.')
@@ -256,9 +256,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '2 damage',
-									tier2: '4 damage',
-									tier3: '5 damage; grabbed'
+									tier1: '2 шкоди',
+									tier2: '4 шкоди',
+									tier3: '5 шкоди; схоплений'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Any target grabbed this way takes 2 lightning damage at the start of each of their turns.')
@@ -305,14 +305,14 @@ Pinna, Hedge Witch, Gravesford`,
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 poison damage',
-								tier2: '6 poison damage',
-								tier3: '7 poison damage'
+								tier1: '4 отруйної шкоди',
+								tier2: '6 отруйної шкоди',
+								tier3: '7 отруйної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								name: 'Malice:',
 								value: 2,
-								effect: 'A target who has <code>M < 2</code> is weakened (save ends). A target weakened this way takes 2 poison damage at the start of each of their turns.'
+								effect: 'A target who has <code>С < 2</code> is weakened (save ends). A target weakened this way takes 2 poison damage at the start of each of their turns.'
 							})
 						]
 					})
@@ -355,9 +355,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage; pull 2',
-									tier2: '6 damage; pull 4',
-									tier3: '7 damage; pull 6'
+									tier1: '4 шкоди; притягнути на 2',
+									tier2: '6 шкоди; притягнути на 4',
+									tier3: '7 шкоди; притягнути на 6'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The target is wet (save ends). Any ally targeted by this ability ignores the damage, is wet until the end of the encounter, and is pulled up to 6 squares, ignoring stability.')
@@ -385,7 +385,7 @@ Pinna, Hedge Witch, Gravesford`,
 				FactoryLogic.feature.create({
 					id: 'angulotl-6-feature-4',
 					name: 'Adhesive',
-					description: 'The slink excretes a sticky residue into their square at the end of each of their turns. Any non-angulotl who enters or leaves the square is stuck, and must use a maneuver to break free or be restrained until the end of their turn. Objects are likewise affected, and a creature must use a maneuver to remove an object from the square.'
+					description: 'The slink excretes a sticky residue into their square at the end of each of their turns. Any non-angulotl who enters or leaves the square is stuck, and must use a маневр to break free or be restrained until the end of their turn. Objects are likewise affected, and a creature must use a маневр to remove an object from the square.'
 				}),
 				FactoryLogic.feature.createDamageModifier({
 					id: 'angulotl-6-feature-5',
@@ -420,9 +420,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '3 holy damage',
-									tier2: '4 holy damage; Р < 1 illuminated (save ends)',
-									tier3: '5 holy damage; Р < 2 illuminated (save ends)'
+									tier1: '3 священної шкоди',
+									tier2: '4 священної шкоди; Р < 1 освітлена (рят. кидок закінчує)',
+									tier3: '5 священної шкоди; Р < 2 освітлена (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('An illuminated creature or object can’t hide or become invisible, and any strike made against an illuminated target gains an edge.')
@@ -443,9 +443,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Might,
-									tier1: '3 poison damage; the target is wet and weakened (save ends)',
-									tier2: '2 poison damage; the target is wet (save ends)',
-									tier3: '1 poison damage; the target is wet (EoT)'
+									tier1: '3 отруйної шкоди; ціль мокра й ослаблена (рят. кидок закінчує)',
+									tier2: '2 отруйної шкоди; ціль мокра (рят. кидок закінчує)',
+									tier3: '1 отруйної шкоди; ціль мокра (до кінця ходу)'
 								})
 							)
 						]
@@ -489,9 +489,9 @@ Pinna, Hedge Witch, Gravesford`,
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '7 acid damage; Л < 1 dazed (save ends)',
-									tier2: '10 acid damage; Л < 2 dazed (save ends)',
-									tier3: '13 acid damage; Л < 3 dazed (save ends)'
+									tier1: '7 кислотної шкоди; Л < 1 приголомшений (рят. кидок закінчує)',
+									tier2: '10 кислотної шкоди; Л < 2 приголомшений (рят. кидок закінчує)',
+									tier3: '13 кислотної шкоди; Л < 3 приголомшений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The next time the target makes a strike against the daybringer, the target takes 4 acid damage after the strike is resolved.'),

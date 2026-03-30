@@ -245,9 +245,9 @@ export const harlequinMask: SubClass = {
 									sections: [
 										FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 											characteristic: [Characteristic.Agility],
-											tier1: '15 + A шкоди',
-											tier2: '21 + A шкоди',
-											tier3: '28 + A шкоди'
+											tier1: '15 + Л шкоди',
+											tier2: '21 + Л шкоди',
+											tier3: '28 + Л шкоди'
 										})),
 										FactoryLogic.createAbilitySectionText('Якщо ви замасковані під істоту, яку ціль знала, використовуючи вашу здібність «Я не загроза», ця здібність завдає додаткової шкоди, рівної трьом разам вашого показника Ловкості.')
 									]

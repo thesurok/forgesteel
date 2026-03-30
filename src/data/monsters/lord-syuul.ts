@@ -70,9 +70,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 				'Lord Syuul psionically plunders the minds of each creature within 2 squares of him. Each such creature makes a **Reason test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Reason,
-					tier1: '13 psychic damage; the target uses a signature ability against a creature of Lord Syuul’s choice',
-					tier2: '10 psychic damage; the target makes a free strike against a creature of Lord Syuul’s choice',
-					tier3: 'No effect.'
+					tier1: '13 психічної шкоди; ціль використовує сигнатурну здібність проти істоти на вибір Lord Syuul',
+					tier2: '10 психічної шкоди; ціль робить безкоштовний удар проти істоти на вибір Lord Syuul',
+					tier3: 'Без ефекту.'
 				})
 			]
 		}),
@@ -82,7 +82,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'Lord Syuul takes an additional main action on his turn. He can use this feature even if he is dazed.'
+				'Lord Syuul takes an additional основна дія on his turn. He can use this feature even if he is dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -94,17 +94,17 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 				'Lord Syuul sends out a psionic burst to completely overpower his greatest threats. He makes a **Reason test**.',
 				FactoryLogic.createPowerRoll({
 					bonus: 4,
-					tier1: 'Lord Syuul has damage weakness 5.',
-					tier2: 'Lord Syuul has damage immunity 2.',
-					tier3: 'Lord Syuul has damage immunity 5.'
+					tier1: 'Lord Syuul має шкоди вразливість до шкоди 5.',
+					tier2: 'Lord Syuul має шкоди immunity 2.',
+					tier3: 'Lord Syuul має шкоди immunity 5.'
 				}),
-				'Once per round as a maneuver, Lord Syuul can repeat this test, replacing the previous Overpower effect.',
-				'Whenever an Overpower effect is active, any hero who has one or more psionic abilities can use a maneuver to push back by making a **Reason test**, replacing the previous Overpower effect.',
+				'Once per round as a маневр, Lord Syuul can repeat this test, replacing the previous Overpower effect.',
+				'Whenever an Overpower effect is active, any hero who has one or more psionic abilities can use a маневр to push back by making a **Reason test**, replacing the previous Overpower effect.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Reason,
-					tier1: 'Lord Syuul has damage immunity 5',
-					tier2: 'Lord Syuul has damage immunity 2',
-					tier3: 'Lord Syuul has damage weakness 5'
+					tier1: 'Lord Syuul має шкоди immunity 5',
+					tier2: 'Lord Syuul має шкоди immunity 2',
+					tier3: 'Lord Syuul має шкоди вразливість до шкоди 5'
 				}),
 				'The Overpower effect lasts until the end of the encounter.'
 			]
@@ -149,9 +149,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; A<2 grabbed',
-								tier2: '17 damage; A<2 grabbed',
-								tier3: '20 damage; A<2 grabbed'
+								tier1: '11 шкоди; Л<2 схоплений',
+								tier2: '17 шкоди; Л<2 схоплений',
+								tier3: '20 шкоди; Л<2 схоплений'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -171,9 +171,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage; the effect ends after 2 turns',
-								tier2: '10 damage; the effect ends at the end of Lord Syuul’s next turn',
-								tier3: '13 damage; the effect lasts until the end of the encounter'
+								tier1: '6 шкоди; ефект закінчується через 2 ходи',
+								tier2: '10 шкоди; ефект закінчується наприкінці наступного ходу Lord Syuul',
+								tier3: '13 шкоди; ефект триває до кінця сутички'
 							})),
 							FactoryLogic.createAbilitySectionText('Any supernatural ability used by a creature in the area has a double bane. All reactive tests made against magic or psionic effects in the area have a double edge.')
 						]
@@ -191,9 +191,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage',
-								tier2: '20 damage',
-								tier3: '24 damage'
+								tier1: '12 шкоди',
+								tier2: '20 шкоди',
+								tier3: '24 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If this action reduces the target to 0 Stamina and they have a brain, their brain explodes, instantly killing them.')
 						]
@@ -242,9 +242,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 							FactoryLogic.createAbilitySectionText('Each target makes an **Intuition Test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Intuition,
-								tier1: '16 psychic damage; the target has no line of effect to any creature except Lord Syuul, and takes a bane on strikes targeting Lord Syuul (save ends)',
-								tier2: '13 psychic damage; the target has no line of effect to any creature except Lord Syuul (save ends)',
-								tier3: '7 psychic damage'
+								tier1: '16 психічної шкоди; ціль має не має лінії ефекту до жодної істоти, крім Lord Syuul, і takes a bane on strikes targeting Lord Syuul (рят. кидок закінчує)',
+								tier2: '13 психічної шкоди; ціль має не має лінії ефекту до жодної істоти, крім Lord Syuul (рят. кидок закінчує)',
+								tier3: '7 психічної шкоди'
 							}))
 						]
 					})
@@ -273,9 +273,9 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 psychic damage',
-								tier2: '13 psychic damage',
-								tier3: '16 psychic damage'
+								tier1: '7 психічної шкоди',
+								tier2: '13 психічної шкоди',
+								tier3: '16 психічної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, each target has damage weakness 3.')
 						]

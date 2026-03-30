@@ -62,9 +62,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Agility,
-							tier1: '6 damage; bleeding (save ends)',
-							tier2: '4 damage; bleeding (EoT)',
-							tier3: 'no effect'
+							tier1: '6 шкоди; кровотеча (рят. кидок закінчує)',
+							tier2: '4 шкоди; кровотеча (до кінця ходу)',
+							tier3: 'без ефекту'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('While an enemy is bleeding from the snare, each gnoll in the encounter gains an edge on strikes made against them.')
@@ -118,9 +118,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage',
-								tier3: '6 damage; grabbed'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди',
+								tier3: '6 шкоди; схоплений'
 							}))
 						]
 					})
@@ -159,9 +159,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage',
-								tier2: '4 damage; push 1',
-								tier3: '6 damage; push 3'
+								tier1: '3 шкоди',
+								tier2: '4 шкоди; відштовхнути на 1',
+								tier3: '6 шкоди; відштовхнути на 3'
 							}))
 						]
 					})
@@ -200,9 +200,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 acid damage',
-								tier2: '3 cold damage',
-								tier3: '5 lightning damage; target can\'t use magic abilities (EoT)'
+								tier1: '2 кислотної шкоди',
+								tier2: '3 холодної шкоди',
+								tier3: '5 блискавичної шкоди; target can\'t use magic abilities (EoT)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target has a bane on their next power roll.')
 						]
@@ -241,9 +241,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '3 damage',
-								tier3: '5 damage; the wildling makes a free strike on a creature adjacent to the target'
+								tier1: '2 шкоди',
+								tier2: '3 шкоди',
+								tier3: '5 шкоди; the wildling makes a безкоштовний удар on a creature adjacent to ціль'
 							}))
 						]
 					})
@@ -281,9 +281,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 corruption damage',
-								tier2: '6 corruption damage',
-								tier3: '8 corruption damage; M<2 slowed (save ends)'
+								tier1: '5 шкоди від скверни',
+								tier2: '6 шкоди від скверни',
+								tier3: '8 шкоди від скверни; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability has an edge against creatures not at full Stamina.')
 						]
@@ -301,7 +301,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Until the end of their next turn, each target gains an edge on their next strike. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('Until the end of their next turn, each target gains an edge on their next strike. If any target hasn’t used their own Cackletongue маневр on this turn, they can use it immediately at no cost.')
 						]
 					})
 				}),
@@ -343,9 +343,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 fire damage',
-								tier2: '5 fire damage',
-								tier3: '7 fire damage; I<2 burning (save ends)'
+								tier1: '4 вогняної шкоди',
+								tier2: '5 вогняної шкоди',
+								tier3: '7 вогняної шкоди; І<2 палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -373,7 +373,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
 						target: 'Кожен союзник у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('One abyssal hyena target turns into a **gnoll marauder**, keeping their current Stamina. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('One abyssal hyena target turns into a **gnoll marauder**, keeping their current Stamina. If any target hasn’t used their own Cackletongue маневр on this turn, they can use it immediately at no cost.')
 						]
 					})
 				}),
@@ -410,9 +410,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; push 2',
-								tier2: '6 damage; push 2',
-								tier3: '8 damage; grabbed; M<2 target has a bane on escaping the grab'
+								tier1: '5 шкоди; відштовхнути на 2',
+								tier2: '6 шкоди; відштовхнути на 2',
+								tier3: '8 шкоди; схоплений; С<2 target має a bane on escaping the grab'
 							})),
 							FactoryLogic.createAbilitySectionText('While the bonesplitter has a target grabbed, they can’t use Three-Tail Flail against another target.')
 						]
@@ -430,7 +430,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Up to three targets can make a free strike. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('Up to three targets can make a free strike. If any target hasn’t used their own Cackletongue маневр on this turn, they can use it immediately at no cost.')
 						]
 					})
 				}),
@@ -467,9 +467,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 psychic damage; I<0 the target makes a free strike against a creature of the cackler\'s choice',
-								tier2: '5 psychic damage; I<1 the target makes a free strike against a creature of the cackler\'s choice',
-								tier3: '7 psychic damage; I<2 the target makes a free strike against a creature of the cackler\'s choice'
+								tier1: '4 психічної шкоди; І<0 ціль makes a безкоштовний удар against a creature of the cackler\'s choice',
+								tier2: '5 психічної шкоди; І<1 ціль makes a безкоштовний удар against a creature of the cackler\'s choice',
+								tier3: '7 психічної шкоди; І<2 ціль makes a безкоштовний удар against a creature of the cackler\'s choice'
 							})),
 							FactoryLogic.createAbilitySectionText('An ally targeted by this ability ignores the damage and can make a free strike.')
 						]
@@ -489,12 +489,12 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Intuition,
-									tier1: 'Frightened (save ends)',
-									tier2: 'Frightened (EoT)',
-									tier3: 'No effect'
+									tier1: 'зляканий (рят. кидок закінчує)',
+									tier2: 'зляканий (до кінця ходу)',
+									tier3: 'Без ефекту'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Targets who haven\'t used a cackletongue maneuver on this turn use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('Targets who haven\'t used a cackletongue маневр on this turn use it immediately at no cost.')
 						]
 					})
 				}),
@@ -531,9 +531,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '5 damage',
-								tier3: '7 damage; A<2 bleeding (save ends)'
+								tier1: '4 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди; Л<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -555,7 +555,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed. If any target hasn’t used their own Cackletongue маневр on this turn, they can use it immediately at no cost.')
 						]
 					})
 				}),
@@ -592,11 +592,11 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; push 1',
-								tier2: '11 damage; push 2',
-								tier3: '14 damage; push 3; prone'
+								tier1: '7 шкоди; відштовхнути на 1',
+								tier2: '11 шкоди; відштовхнути на 2',
+								tier3: '14 шкоди; відштовхнути на 3; розпластаний'
 							})),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, it deals an extra 4 damage.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, it deals an extra 4 damage.')
 						]
 					})
 				}),
@@ -608,7 +608,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						distance: [FactoryLogic.distance.createRanged(7)],
 						target: 'Triggering enemy',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The tusker demon uses the Charge main action and Gore against the target.')
+							FactoryLogic.createAbilitySectionText('The tusker demon uses the Charge основна дія and Gore against the target.')
 						]
 					})
 				}),
@@ -649,9 +649,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; A<1 bleeding (save ends)',
-								tier2: '11 damage; A<2 bleeding (save ends)',
-								tier3: '14 damage; A<3 bleeding (save ends)'
+								tier1: '8 шкоди; Л<1 кровотеча (рят. кидок закінчує)',
+								tier2: '11 шкоди; Л<2 кровотеча (рят. кидок закінчує)',
+								tier3: '14 шкоди; Л<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('An ally targeted by this ability ignores the damage and can make a free strike.')
 						]
@@ -669,7 +669,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target deals an extra 3 damage with their next strike until the start of the carnage’s next turn. If any target hasn’t used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.')
+							FactoryLogic.createAbilitySectionText('Each target deals an extra 3 damage with their next strike until the start of the carnage’s next turn. If any target hasn’t used their own Cackletongue маневр on this turn, they can use it immediately at no cost.')
 						]
 					})
 				}),
@@ -712,7 +712,7 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 						],
 						target: 'Self and three allies',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target moves up to their speed and can make a free strike. Any creature damaged by one of these free strikes who has M<2 is knocked prone.')
+							FactoryLogic.createAbilitySectionText('Each target moves up to their speed and can make a free strike. Any creature damaged by one of these free strikes who has С<2 is knocked prone.')
 						]
 					})
 				}),
@@ -729,9 +729,9 @@ As his last act, the demon gave the fiendish hyenas a demonic cunning to match t
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: 'The target can\'t regain stamina until the end of the encounter',
-									tier2: 'The target can\'t regain stamina (save ends)',
-									tier3: 'No effect'
+									tier1: 'Ціль can\'t regain stamina until the end of the encounter',
+									tier2: 'Ціль can\'t regain stamina (save ends)',
+									tier3: 'Без ефекту'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, all gnolls have a double edge on power rolls that target a winded enemy.')

@@ -48,7 +48,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 			cost: 3,
 			icon: StatBlockIcon.Area,
 			sections: [
-				'While the dragon is flying, they shape themself into a blade and fall. Each creature and object in the dragon’s space when they hit the ground and in a 6 × 4 line within 1 square of the dragon takes 7 damage. A creature who takes this damage and has A<4 takes 4 extra damage per square the dragon fell and is restrained (save ends). A creature not restrained this way can move into the nearest unoccupied space.'
+				'While the dragon is flying, they shape themself into a blade and fall. Each creature and object in the dragon’s space when they hit the ground and in a 6 × 4 line within 1 square of the dragon takes 7 damage. A creature who takes this damage and has Л<4 takes 4 extra damage per square the dragon fell and is restrained (save ends). A creature not restrained this way can move into the nearest unoccupied space.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -60,9 +60,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 				'The dragon shakes loose a cloud of shattered weapons in a 6 × 4 line within 1 square of them. Each creature and object in the area makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '16 damage; bleeding (save ends)',
-					tier2: '13 damage; bleeding (EoT)',
-					tier3: '7 damage'
+					tier1: '16 шкоди; кровотеча (рят. кидок закінчує)',
+					tier2: '13 шкоди; кровотеча (до кінця ходу)',
+					tier3: '7 шкоди'
 				})
 			]
 		}),
@@ -72,7 +72,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The dragon takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -112,7 +112,7 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 				FactoryLogic.feature.create({
 					id: 'dragon-crucible-feature-3',
 					name: 'Magnetized Wyrmscale Aura',
-					description: 'The dragon’s scales create a 3 aura of magnetism around them that affects large masses of metal. Any creature who enters the area for the first time in a round or starts their turn there while wearing metal or while slagged (see **Slag Spew**) is pulled up to 2 squares toward the dragon. A creature pulled this way who has M<3 is unable to willingly move away from the dragon.'
+					description: 'The dragon’s scales create a 3 aura of magnetism around them that affects large masses of metal. Any creature who enters the area for the first time in a round or starts their turn there while wearing metal or while slagged (see **Slag Spew**) is pulled up to 2 squares toward the dragon. A creature pulled this way who has С<3 is unable to willingly move away from the dragon.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -128,12 +128,12 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '13 fire damage; the target is slagged (save ends)',
-									tier2: '10 fire damage; the target is slagged (save ends)',
-									tier3: '6 fire damage'
+									tier1: '13 вогняної шкоди; ціль is slagged (рят. кидок закінчує)',
+									tier2: '10 вогняної шкоди; ціль is slagged (рят. кидок закінчує)',
+									tier3: '6 вогняної шкоди'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A slagged target is coated in molten metal and takes 2d6 fire damage at the start of each of their turns. If a slagged target has M<3 they are restrained (save ends) whenever they take cold damage.')
+							FactoryLogic.createAbilitySectionText('A slagged target is coated in molten metal and takes 2d6 fire damage at the start of each of their turns. If a slagged target has С<3 they are restrained (save ends) whenever they take cold damage.')
 						]
 					})
 				}),
@@ -148,9 +148,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; M<2 prone',
-								tier2: '17 damage; M<3 prone',
-								tier3: '20 damage; M<4 prone'
+								tier1: '11 шкоди; С<2 розпластаний',
+								tier2: '17 шкоди; С<3 розпластаний',
+								tier3: '20 шкоди; С<4 розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('The dragon can make a free strike against each slagged target knocked prone this way.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -207,9 +207,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 							}),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Push 5',
-								tier2: 'Push 7',
-								tier3: 'Push 10, ignoring stability'
+								tier1: 'Відштовхнути на 5',
+								tier2: 'Відштовхнути на 7',
+								tier3: 'Відштовхнути на 10, ignoring стійкість'
 							}))
 						]
 					})
@@ -230,9 +230,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 fire damage, I<2 frightened (save ends)',
-								tier2: '6 fire damage, I<3 frightened (save ends)',
-								tier3: '8 fire damage, I<4 frightened (save ends)'
+								tier1: '4 вогняної шкоди, І<2 зляканий (рят. кидок закінчує)',
+								tier2: '6 вогняної шкоди, І<3 зляканий (рят. кидок закінчує)',
+								tier3: '8 вогняної шкоди, І<4 зляканий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -261,9 +261,9 @@ All crucible dragons manage to accrue large amounts of armaments and armor in th
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '16 damage, pull 10 or push 10',
-									tier2: '13 damage, pull 8 or push 8',
-									tier3: '7 damage, pull 5 or push 5'
+									tier1: '16 шкоди, притягнути на 10 або відштовхнути на 10',
+									tier2: '13 шкоди, притягнути на 8 або відштовхнути на 8',
+									tier3: '7 шкоди, притягнути на 5 або відштовхнути на 5'
 								})
 							)
 						]

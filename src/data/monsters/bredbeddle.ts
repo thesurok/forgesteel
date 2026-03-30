@@ -58,7 +58,7 @@ Travelers warn one another of roads rumored to be haunted by “wild green knigh
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The bredbeddle takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The bredbeddle takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -101,7 +101,7 @@ Travelers warn one another of roads rumored to be haunted by “wild green knigh
 					description: `
 While headless, the bredbeddle can move into a space with a severed head and attach it to their neck as an action. Doing so physically transforms the bredbeddle, who takes on the size, weight, reach, and stability of the head’s original owner. These eﬀects last until the bredbeddle is killed or beheaded, or until the head falls oﬀ after 24 hours. A head that falls oﬀ this way can no longer be attached to the bredbeddle.
 
-A creature must succeed on a hard **Might test** made as a maneuver to rip a head oﬀ the bredbeddle. If they fail, the bredbeddle makes a free strike against them.`
+A creature must succeed on a hard **Might test** made as a маневр to rip a head oﬀ the bredbeddle. If they fail, the bredbeddle makes a free strike against them.`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -115,9 +115,9 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 damage; A<1 bleeding (save ends)',
-								tier2: '4 damage; A<2 bleeding (save ends)',
-								tier3: '5 damage; A<3 bleeding (save ends)'
+								tier1: '2 шкоди; Л<1 кровотеча (рят. кидок закінчує)',
+								tier2: '4 шкоди; Л<2 кровотеча (рят. кидок закінчує)',
+								tier3: '5 шкоди; Л<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -138,11 +138,11 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; bleeding (save ends) or M<1 beheaded (see effect)',
-								tier2: '13 damage; bleeding (save ends) or M<2 beheaded (see effect)',
-								tier3: '16 damage; bleeding (save ends) or M<3 beheaded (see effect)'
+								tier1: '9 шкоди; кровотеча (рят. кидок закінчує) або С<1 обезголовлена (див. ефект)',
+								tier2: '13 шкоди; кровотеча (рят. кидок закінчує) або С<2 обезголовлена (див. ефект)',
+								tier3: '16 шкоди; кровотеча (рят. кидок закінчує) або С<3 обезголовлена (див. ефект)'
 							})),
-							FactoryLogic.createAbilitySectionText('A beheaded target has their head fall into an unoccupied square adjacent to the bredbeddle, but they remain alive. While beheaded, the target is bleeding and can’t establish line of effect beyond 1 square. The beheaded target can survive without their head for 24 hours, and can reattach their head with a maneuver by entering its square. A target who remains beheaded for 24 hours dies.')
+							FactoryLogic.createAbilitySectionText('A beheaded target has their head fall into an unoccupied square adjacent to the bredbeddle, but they remain alive. While beheaded, the target is bleeding and can’t establish line of effect beyond 1 square. The beheaded target can survive without their head for 24 hours, and can reattach their head with a маневр by entering its square. A target who remains beheaded for 24 hours dies.')
 						]
 					})
 				}),
@@ -171,9 +171,9 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 							FactoryLogic.createAbilitySectionText('The bredbeddle must have a head in their possession (attached to them or not), which they throw at the target. If the head was attached, the bredbeddle becomes headless.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; M<1 dazed (save ends)',
-								tier2: '13 damage; prone; M<2 dazed (save ends)',
-								tier3: '16 damage; prone; M<3 dazed (save ends)'
+								tier1: '9 шкоди; С<1 приголомшений (рят. кидок закінчує)',
+								tier2: '13 шкоди; розпластаний; С<2 приголомшений (рят. кидок закінчує)',
+								tier3: '16 шкоди; розпластаний; С<3 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -203,9 +203,9 @@ A creature must succeed on a hard **Might test** made as a maneuver to rip a hea
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'P<1 The target turns green (save ends)',
-								tier2: 'P<2 The target turns green (save ends)',
-								tier3: 'P<3 The target turns green until the end of the encounter'
+								tier1: 'П<1 Ціль зеленіє (рят. кидок закінчує)',
+								tier2: 'П<2 Ціль зеленіє (рят. кидок закінчує)',
+								tier3: 'П<3 Ціль зеленіє до кінця сутички'
 							})),
 							FactoryLogic.createAbilitySectionText('Green shadows crawl out from under the bredbeddle’s feet and attempt to turn each target green. The bredbeddle has a double edge on attacks made against targets turned green until the condition ends.')
 						]
@@ -236,9 +236,9 @@ If the target accepts, the bredbeddle shifts to a space adjacent to the target, 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; bleeding (save ends) or A<1 beheaded',
-								tier2: '7 damage; bleeding (save ends) or A<2 beheaded',
-								tier3: '8 damage; bleeding (save ends) or A<3 beheaded (see Lop)'
+								tier1: '6 шкоди; кровотеча (рят. кидок закінчує) або Л<1 обезголовлена',
+								tier2: '7 шкоди; кровотеча (рят. кидок закінчує) або Л<2 обезголовлена',
+								tier3: '8 шкоди; кровотеча (рят. кидок закінчує) або Л<3 обезголовлена (див. Lop)'
 							}))
 						]
 					})

@@ -221,7 +221,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6a-2',
 										name: 'Soot Strike',
-										description: 'The crux’s melee free strikes M < [середній] automatically hide each ally from the target until the start of the crux’s next turn, until the target uses a maneuver to clear the soot, until the crux takes damage, or until the crux is destroyed.'
+										description: 'The crux’s melee free strikes С < [середній] automatically hide each ally from the target until the start of the crux’s next turn, until the target uses a маневр to clear the soot, until the crux takes damage, or until the crux is destroyed.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -277,9 +277,9 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 fire damage; shift 3',
-														tier2: '6 fire damage; shift 4',
-														tier3: '8 fire damage; shift 5'
+														tier1: '4 вогняної шкоди; зміститися на 3',
+														tier2: '6 вогняної шкоди; зміститися на 4',
+														tier3: '8 вогняної шкоди; зміститися на 5'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Each square that the flow shifts into becomes wreathed in flames until the start of the flow’s next turn. An enemy that enters an affected square takes 2 damage.')
@@ -330,7 +330,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6c-2',
 										name: 'Burying Strike',
-										description: 'The desolation’s free strikes inflict M < [середній] slowed (save ends). If the target is already slowed, then they are M < [сильний] restrained (EoT).'
+										description: 'The desolation’s free strikes inflict С < [середній] slowed (save ends). If the target is already slowed, then they are С < [сильний] restrained (EoT).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-1-6c-3',
@@ -481,7 +481,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 											name: 'Web',
 											cost: 1,
 											sections: [
-												FactoryLogic.createAbilitySectionText('When the silk is reduced to 0 Stamina, they launch ribbons of webbing into an area equal to their size + 1 within 5 before being destroyed. The affected area is considered difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the webbing is M < [сильний] slowed (EoT).')
+												FactoryLogic.createAbilitySectionText('When the silk is reduced to 0 Stamina, they launch ribbons of webbing into an area equal to their size + 1 within 5 before being destroyed. The affected area is considered difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the webbing is С < [сильний] slowed (EoT).')
 											]
 										})
 									})
@@ -529,7 +529,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-2-2b-3',
 										name: 'Encroaching Strike',
-										description: 'The principle’s melee free strikes have a distance of Р and inflict M < [сильний] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
+										description: 'The principle’s melee free strikes have a distance of Р and inflict С < [сильний] grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can’t move farther away from the principle.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -591,9 +591,9 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 cold damage; M < [слабкий] slowed (EoT)',
-														tier2: '6 cold damage; M < [середній] slowed (EoT)',
-														tier3: '8 cold damage; M < [сильний] speed is 0 (EoT)'
+														tier1: '4 холодної шкоди; С < [слабкий] сповільнений (до кінця ходу)',
+														tier2: '6 холодної шкоди; С < [середній] сповільнений (до кінця ходу)',
+														tier3: '8 холодної шкоди; С < [сильний] швидкість 0 (до кінця ходу)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('Frost slows the enemy down, allowing one ally adjacent to each target to shift 2 and either hide or defend.')
@@ -633,7 +633,7 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 				FactoryLogic.feature.create({
 					id: 'summoner-2-5-2',
 					name: 'Split',
-					description: 'Once during your turn, you can use a free maneuver to deal damage to one of your elemental minions equal to half their maximum Stamina in order to create one additional copy of that minion in an adjacent unoccupied space and add them to their squad, even if you’re at your minion maximum. You can’t use this feature if it would kill one or more of the minions in the squad.'
+					description: 'Once during your turn, you can use a безкоштовний маневр to deal damage to one of your elemental minions equal to half their maximum Stamina in order to create one additional copy of that minion in an adjacent unoccupied space and add them to their squad, even if you’re at your minion maximum. You can’t use this feature if it would kill one or more of the minions in the squad.'
 				}),
 				FactoryLogic.feature.createSummonChoice({
 					id: 'summoner-2-5-3',
@@ -673,12 +673,12 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3a-3',
 										name: 'Decentralized Segments',
-										description: 'The reaver has cover while adjacent to another reaver they were summoned with. Whenever they receive an effect that allows them to move or shift outside of their move action, they share the effect with each adjacent reaver they were summoned with.'
+										description: 'The reaver has cover while adjacent to another reaver they were summoned with. Whenever they receive an effect that allows them to move or shift outside of their дія руху, they share the effect with each adjacent reaver they were summoned with.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-5-3a-4',
 										name: 'Bladed Strike',
-										description: 'The reaver’s free strikes inflict M < [слабкий] bleeding (save ends). Each time the reaver inflicts bleeding on a creature, they can shift 2 and make an additional free strike on a new target.'
+										description: 'The reaver’s free strikes inflict С < [слабкий] bleeding (save ends). Each time the reaver inflicts bleeding on a creature, they can shift 2 and make an additional free strike on a new target.'
 									}),
 									FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
@@ -792,9 +792,9 @@ Alternatively, you can spend 1 essence to transform the mote into any signature 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '7 fire damage; I < [слабкий] dazed (EoT)',
-														tier2: '11 fire damage; I < [середній] dazed (EoT)',
-														tier3: '16 fire damage; I < [сильний] dazed (save ends)'
+														tier1: '7 вогняної шкоди; І < [слабкий] приголомшений (до кінця ходу)',
+														tier2: '11 вогняної шкоди; І < [середній] приголомшений (до кінця ходу)',
+														tier3: '16 вогняної шкоди; І < [сильний] приголомшений (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target dazed by this ability has their stability reduced to 0 until the condition ends.')
@@ -891,9 +891,9 @@ As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														bonus: 5,
-														tier1: '9 affinity damage; push 2',
-														tier2: '12 affinity damage; push 4',
-														tier3: '14 affinity damage; push 6'
+														tier1: '9 affinity шкоди; відштовхнути на 2',
+														tier2: '12 affinity шкоди; відштовхнути на 4',
+														tier3: '14 affinity шкоди; відштовхнути на 6'
 													})
 												)
 											]
@@ -902,7 +902,7 @@ As a harbinger of ruin, the dragon’s Portent has incredibly potent impact and 
 									FactoryLogic.feature.create({
 										id: 'summoner-2-8-2a-2',
 										name: 'Sealing Strike',
-										description: 'The Portent’s free strikes inflict M < [сильний] slowed (save ends). While slowed this way, the target takes 1d6 aﬃnity damage at the start of each of their turns.'
+										description: 'The Portent’s free strikes inflict С < [сильний] slowed (save ends). While slowed this way, the target takes 1d6 aﬃnity damage at the start of each of their turns.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-2-8-2a-2',

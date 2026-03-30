@@ -2,6 +2,9 @@ import { describe, expect, test } from 'vitest';
 import { Feature } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
 import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
+import { FeatureField } from '@/enums/feature-field';
+import { KitArmor } from '@/enums/kit-armor';
+import { KitWeapon } from '@/enums/kit-weapon';
 import { SkillList } from '@/enums/skill-list';
 
 const createFeature = (name: string): Feature => {
@@ -24,7 +27,9 @@ describe('FeatureUpdateLogic', () => {
             ['5pt ability', '5-очкова навичка'],
             ['Signature Ability', 'Фірмова навичка'],
             ['Skills', 'Навички'],
-            ['Perk', 'Перевага']
+            ['Perk', 'Перевага'],
+            ['Heroic Resource', 'Героїчний ресурс'],
+            ['Recoveries', 'Відновлення']
         ])('normalizes mixed-language feature labels', (name: string, expected: string) => {
             const feature = createFeature(name);
 
@@ -46,7 +51,7 @@ describe('FeatureUpdateLogic', () => {
                 id: 'feature-id',
                 name: 'Skill',
                 description: '',
-                type: FeatureType.SkillChoice,
+                type: 'Skill Choice',
                 data: {
                     options: ['Brag', 'Alertness', 'Сховатись'],
                     listOptions: [SkillList.Interpersonal],
@@ -57,8 +62,66 @@ describe('FeatureUpdateLogic', () => {
 
             FeatureUpdateLogic.updateFeature(feature);
 
+            expect(feature.type).toBe(FeatureType.SkillChoice);
             expect(feature.data.options).toEqual(['Вихваляння', 'Пильність', 'Ховання']);
             expect(feature.data.selected).toEqual(['Зчитування людини', 'Крадіжка']);
+        });
+
+        test('normalizes legacy kit proficiencies', () => {
+            const feature: Feature = {
+                id: 'feature-id',
+                name: 'Proficiency',
+                description: '',
+                type: 'Proficiency',
+                data: {
+                    weapons: ['Heavy Weapon', 'Bow'],
+                    armor: ['Heavy Armor', 'Shield']
+                }
+            } as Feature;
+
+            FeatureUpdateLogic.updateFeature(feature);
+
+            expect(feature.type).toBe(FeatureType.Proficiency);
+            expect(feature.data.weapons).toEqual([KitWeapon.Heavy, KitWeapon.Bow]);
+            expect(feature.data.armor).toEqual([KitArmor.Heavy, KitArmor.Shield]);
+        });
+
+        test('normalizes legacy feature bonus fields', () => {
+            const feature: Feature = {
+                id: 'feature-id',
+                name: 'Recoveries',
+                description: '',
+                type: FeatureType.Bonus,
+                data: {
+                    field: 'Recoveries',
+                    value: 2
+                }
+            } as Feature;
+
+            FeatureUpdateLogic.updateFeature(feature);
+
+            expect(feature.name).toBe('Відновлення');
+            expect(feature.data.field).toBe(FeatureField.Recoveries);
+        });
+
+        test.each([
+            ['Text', FeatureType.Text, null],
+            ['Choice', FeatureType.Choice, { options: [] }],
+            ['Heroic Resource', FeatureType.HeroicResource, { gains: [] }],
+            ['Language Choice', FeatureType.LanguageChoice, { options: [], count: 1, selected: [] }],
+            ['Retainer', FeatureType.Retainer, {}]
+        ])('normalizes legacy feature type %s', (type: string, expected: FeatureType, data: unknown) => {
+            const feature: Feature = {
+                id: 'feature-id',
+                name: 'Feature',
+                description: '',
+                type,
+                data
+            } as Feature;
+
+            FeatureUpdateLogic.updateFeature(feature);
+
+            expect(feature.type).toBe(expected);
         });
     });
 });

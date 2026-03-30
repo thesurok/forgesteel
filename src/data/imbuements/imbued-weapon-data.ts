@@ -402,9 +402,9 @@ You can change this weapon’s shape and form, granting one of the following ben
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-							tier1: '7 fire damage',
-							tier2: '11 fire damage',
-							tier3: '16 fire damage'
+							tier1: '7 вогняної шкоди',
+							tier2: '11 вогняної шкоди',
+							tier3: '16 вогняної шкоди'
 						})
 					)
 				]

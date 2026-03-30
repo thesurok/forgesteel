@@ -3,6 +3,9 @@ import { Characteristic } from '@/enums/characteristic';
 import { Feature } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
 import { ItemUpdateLogic } from '@/logic/update/item-update-logic';
+import { getFeatureFieldLabel, normalizeFeatureField } from '@/utils/feature-fields';
+import { normalizeKitArmorNames, normalizeKitWeaponNames, normalizeKit } from '@/utils/kit-proficiencies';
+import { normalizeFeatureType } from '@/utils/feature-types';
 import { normalizeSkillNames } from '@/utils/skill-names';
 
 export class FeatureUpdateLogic {
@@ -10,6 +13,20 @@ export class FeatureUpdateLogic {
 		Skill: 'Навичка',
 		Skills: 'Навички',
 		Perk: 'Перевага'
+	};
+
+	private static readonly featureNameExactMap: Record<string, string> = {
+		'Heroic Resource': 'Героїчний ресурс',
+		'Recoveries': getFeatureFieldLabel('Recoveries'),
+		'Recovery Value': getFeatureFieldLabel('Recovery Value'),
+		'Renown': getFeatureFieldLabel('Renown'),
+		'Project Points': getFeatureFieldLabel('Project Points'),
+		'Wealth': getFeatureFieldLabel('Wealth'),
+		'Stamina': getFeatureFieldLabel('Stamina'),
+		'Speed': getFeatureFieldLabel('Speed'),
+		'Stability': getFeatureFieldLabel('Stability'),
+		'Disengage': getFeatureFieldLabel('Disengage'),
+		'Free Strike Damage': getFeatureFieldLabel('Free Strike Damage')
 	};
 
 	private static readonly featureNameGroupMap: Record<string, string> = {
@@ -31,6 +48,11 @@ export class FeatureUpdateLogic {
 
 	static normalizeFeatureName = (name: string) => {
 		const trimmedName = name.trim();
+		const exactNameMatch = FeatureUpdateLogic.featureNameExactMap[trimmedName];
+		if (exactNameMatch) {
+			return exactNameMatch;
+		}
+
 		const exactMatch = FeatureUpdateLogic.featureNameSuffixMap[trimmedName];
 		if (exactMatch) {
 			return exactMatch;
@@ -64,6 +86,7 @@ export class FeatureUpdateLogic {
 	};
 
 	static updateFeature = (feature: Feature) => {
+		feature.type = normalizeFeatureType(feature.type);
 		feature.name = FeatureUpdateLogic.normalizeFeatureName(feature.name);
 
 		switch (feature.type) {
@@ -71,6 +94,10 @@ export class FeatureUpdateLogic {
 				AbilityUpdateLogic.updateAbility(feature.data.ability);
 				break;
 			case FeatureType.Bonus:
+				feature.data.field = normalizeFeatureField(feature.data.field);
+				if (feature.data.valueFromController !== undefined && feature.data.valueFromController !== null) {
+					feature.data.valueFromController = normalizeFeatureField(feature.data.valueFromController);
+				}
 				if (feature.data.valueCharacteristics === undefined) {
 					feature.data.valueCharacteristics = [];
 				}
@@ -159,6 +186,17 @@ export class FeatureUpdateLogic {
 					feature.data.types = feature.data.types.filter(t => t !== 'Standard');
 					feature.data.types.push('');
 				}
+				feature.data.selected.forEach(normalizeKit);
+				break;
+			case FeatureType.Proficiency:
+				if (feature.data.weapons === undefined) {
+					feature.data.weapons = [];
+				}
+				if (feature.data.armor === undefined) {
+					feature.data.armor = [];
+				}
+				feature.data.weapons = normalizeKitWeaponNames(feature.data.weapons);
+				feature.data.armor = normalizeKitArmorNames(feature.data.armor);
 				break;
 			case FeatureType.SkillChoice:
 				if (feature.data.options === undefined) {

@@ -66,7 +66,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The dragon takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -78,9 +78,9 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 				'The dragon summons poisonous, biting thorns around their foes. Each enemy on the encounter map makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '12 poison damage; restrained (save ends)',
-					tier2: '9 poison damage; bleeding (save ends)',
-					tier3: '5 poison damage; bleeding (EoT)'
+					tier1: '12 отруйної шкоди; скутий (рят. кидок закінчує)',
+					tier2: '9 отруйної шкоди; кровотеча (рят. кидок закінчує)',
+					tier3: '5 отруйної шкоди; кровотеча (до кінця ходу)'
 				})
 			]
 		})
@@ -127,9 +127,9 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Might,
-								tier1: '12 poison damage; the target is dragonsealed (save ends)',
-								tier2: '9 poison damage; the target is dragonsealedd (save ends)',
-								tier3: '5 poison damage'
+								tier1: '12 отруйної шкоди; ціль is dragonsealed (рят. кидок закінчує)',
+								tier2: '9 отруйної шкоди; ціль is dragonsealedd (рят. кидок закінчує)',
+								tier3: '5 отруйної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('A dragonsealed creature has their wounds bound by nettles and thorns, causing them to take an extra 1d3 damage whenever they take damage rolled as a d6 or a d3.')
 						]
@@ -146,13 +146,13 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; push 2',
-								tier2: '12 damage; push 4',
-								tier3: '15 damage; push 8'
+								tier1: '8 шкоди; відштовхнути на 2',
+								tier2: '12 шкоди; відштовхнути на 4',
+								tier3: '15 шкоди; відштовхнути на 8'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'Each target takes an extra 1d3 damage, and if they have A<2, they are bleeding (save ends).'
+								effect: 'Each target takes an extra 1d3 damage, and if they have Л<2, they are bleeding (save ends).'
 							})
 						]
 					})
@@ -185,7 +185,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is pulled up to 5 squares toward the dragon, and if they have A<2, they are restrained until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('The target is pulled up to 5 squares toward the dragon, and if they have Л<2, they are restrained until the end of their next turn.')
 						]
 					})
 				}),
@@ -198,7 +198,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The dragon makes a free strike against the target, and if the target has M<2, they are bleeding until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('The dragon makes a free strike against the target, and if the target has С<2, they are bleeding until the end of their next turn.')
 						]
 					})
 				}),
@@ -218,9 +218,9 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 damage, A<1 restrained (save ends)',
-								tier2: '9 damage, A<2 restrained (save ends)',
-								tier3: '12 damage, A<3 restrained (save ends)'
+								tier1: '5 шкоди, Л<1 скутий (рят. кидок закінчує)',
+								tier2: '9 шкоди, Л<2 скутий (рят. кидок закінчує)',
+								tier3: '12 шкоди, Л<3 скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -245,7 +245,7 @@ Despite this, the folk of certain settlements manage to avoid being driven from 
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText(`Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature force moved by the dragon takes 1d3 poison damage, and if they have M<2, they are weakened (save ends).
+							FactoryLogic.createAbilitySectionText(`Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature force moved by the dragon takes 1d3 poison damage, and if they have С<2, they are weakened (save ends).
 
 *Special*: If the Thorn Dragon’s Domain trait is in effect, any creature other than the dragon who starts their turn on the encounter map takes 1d3 poison damage.`)
 						]

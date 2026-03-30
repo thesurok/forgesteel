@@ -129,7 +129,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-chain-of-the-sea-and-sky-5',
 						name: '',
-						description: 'Whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a free maneuver once during each of your turns.'
+						description: 'Whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a безкоштовний маневр once during each of your turns.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-chain-of-the-sea-and-sky-5a',
@@ -260,7 +260,7 @@ export class LeveledArmorData {
 							description: 'You make the shield’s lion face roar.',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You can use a maneuver to make the shield’s lion face roar, choosing one adjacent creature or object and pushing that target up to 3 squares'),
+								FactoryLogic.createAbilitySectionText('You can use a маневр to make the shield’s lion face roar, choosing one adjacent creature or object and pushing that target up to 3 squares'),
 								FactoryLogic.createAbilitySectionPackage('item-kings-roar-tag')
 							]
 						})
@@ -457,7 +457,7 @@ export class LeveledArmorData {
 							name: 'Paper Trappings - Constrict',
 							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'You are paper thin and have a target grabbed' ] }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the Escape Grab maneuver against you and when making strikes against you.')
+								FactoryLogic.createAbilitySectionText('You constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the Escape Grab маневр against you and when making strikes against you.')
 							]
 						})
 					})
@@ -556,7 +556,7 @@ export class LeveledArmorData {
 							name: 'Use Spiny Turtle',
 							type: FactoryLogic.type.createMain(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You expand the armor on your back to create a 4 wall of metal behind you. The wall is an object that retracts if you move, or if it takes 15 damage. It the requires a main action to recalibrate before it can be deployed again.'),
+								FactoryLogic.createAbilitySectionText('You expand the armor on your back to create a 4 wall of metal behind you. The wall is an object that retracts if you move, or if it takes 15 damage. It the requires a основна дія to recalibrate before it can be deployed again.'),
 								FactoryLogic.createAbilitySectionPackage('item-spiny-turtle-tag')
 							]
 						})
@@ -728,7 +728,7 @@ export class LeveledArmorData {
 							name: 'Use Telekinetic Bulwark',
 							type: FactoryLogic.type.createTrigger('An adjacent enemy uses an ability', { free: true, qualifiers: [ 'Once per turn' ] }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Use the Grab maneuver against that enemy. You can have any number of enemies grabbed in this way.'),
+								FactoryLogic.createAbilitySectionText('Use the Grab маневр against that enemy. You can have any number of enemies grabbed in this way.'),
 								FactoryLogic.createAbilitySectionPackage('item-telekinetic-bulwark-tag')
 							]
 						})
@@ -746,7 +746,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-telekinetic-bulwark-5',
 						name: '5th',
-						description: 'The range increases to 10 squares. Additionally, any enemy who uses the Escape Grab maneuver while grabbed this way takes a bane on the test.',
+						description: 'The range increases to 10 squares. Additionally, any enemy who uses the Escape Grab маневр while grabbed this way takes a bane on the test.',
 						tag: 'item-telekinetic-bulwark-tag'
 					}),
 					FactoryLogic.feature.createBonus({

@@ -73,7 +73,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 			cost: 5,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Each hobgoblin in the encounter shifts up to their speed and can take the Defend main action.'
+				'Each hobgoblin in the encounter shifts up to their speed and can take the Defend основна дія.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -120,9 +120,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 fire damage',
-								tier2: '4 fire damage; M < 2 fire weakness 5 (save ends)',
-								tier3: '6 fire damage; M < 3 fire weakness 5 (save ends)'
+								tier1: '2 вогняної шкоди',
+								tier2: '4 вогняної шкоди; С < 2 fire вразливість до шкоди 5 (рят. кидок закінчує)',
+								tier3: '6 вогняної шкоди; С < 3 fire вразливість до шкоди 5 (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -175,9 +175,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '2 corruption damage',
-								tier2: '4 corruption damage; push 1',
-								tier3: '6 corruption damage; push 2'
+								tier1: '2 шкоди від скверни',
+								tier2: '4 шкоди від скверни; відштовхнути на 1',
+								tier3: '6 шкоди від скверни; відштовхнути на 2'
 							})),
 							FactoryLogic.createAbilitySectionText('The lancer deals an additional 2 damage if they strike the target from 1 or more squares above.')
 						]
@@ -223,9 +223,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage; grabbed or prone'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди; схоплений або розпластаний'
 							}))
 						]
 					})
@@ -275,9 +275,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage',
-								tier2: '5 damage',
-								tier3: '7 damage; the grilp shifts up to 2 squares'
+								tier1: '3 шкоди',
+								tier2: '5 шкоди',
+								tier3: '7 шкоди; the grilp shifts до 2 клітинок'
 							})),
 							FactoryLogic.createAbilitySectionText('The grilp moves up to their speed and can attempt to hide.')
 						]
@@ -327,13 +327,13 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 corruption or fire damage',
-								tier2: '6 corruption or fire damage',
-								tier3: '8 corruption or fire damage'
+								tier1: '4 corruption або вогняної шкоди',
+								tier2: '6 corruption або вогняної шкоди',
+								tier3: '8 corruption або вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'Each target who has <code>P < 2</code> is weakened (save ends). Any enemy who starts their turn within 3 squares of a target weakened this way and who has <code>P < 2</code> is weakened (save ends).'
+								effect: 'Each target who has <code>П < 2</code> is weakened (save ends). Any enemy who starts their turn within 3 squares of a target weakened this way and who has <code>П < 2</code> is weakened (save ends).'
 							})
 						]
 					})
@@ -393,9 +393,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage',
-								tier2: '8 damage, 4 corruption damage',
-								tier3: '8 damage, 7 corruption damage'
+								tier1: '8 шкоди',
+								tier2: '8 шкоди, 4 шкоди від скверни',
+								tier3: '8 шкоди, 7 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('The next strike made against the target has a double edge.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -462,9 +462,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 fire damage',
-								tier2: '13 fire damage',
-								tier3: '16 fire damage; Л < 3 dazed (EoT)'
+								tier1: '9 вогняної шкоди',
+								tier2: '13 вогняної шкоди',
+								tier3: '16 вогняної шкоди; Л < 3 приголомшений (до кінця ходу)'
 							}))
 						]
 					})
@@ -531,9 +531,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '14 damage',
-								tier3: '17 damage; prone'
+								tier1: '9 шкоди',
+								tier2: '14 шкоди',
+								tier3: '17 шкоди; розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -554,9 +554,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage',
-								tier2: '11 damage',
-								tier3: '14 damage'
+								tier1: '6 шкоди',
+								tier2: '11 шкоди',
+								tier3: '14 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target is pushed up to 10 squares in the same direction, and the grandguard shifts into the area left behind by the targets.')
 						]
@@ -606,9 +606,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 fire damage',
-								tier2: '10 fire damage',
-								tier3: '13 fire damage'
+								tier1: '7 вогняної шкоди',
+								tier2: '10 вогняної шкоди',
+								tier3: '13 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of their turn, the trooper doesn’t provoke opportunity attacks from any target.')
 						]
@@ -623,7 +623,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Одна істота',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has <code>P < 2</code>, they are taunted (EoT). While taunted this way, the target takes 1d6 fire damage whenever they use an ability or strike that doesn’t target the trooper.')
+							FactoryLogic.createAbilitySectionText('If the target has <code>П < 2</code>, they are taunted (EoT). While taunted this way, the target takes 1d6 fire damage whenever they use an ability or strike that doesn’t target the trooper.')
 						]
 					})
 				}),
@@ -666,9 +666,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 fire damage',
-								tier2: '14 fire damage',
-								tier3: '17 fire damage; A<3 burning (save ends)'
+								tier1: '9 вогняної шкоди',
+								tier2: '14 вогняної шкоди',
+								tier3: '17 вогняної шкоди; Л<3 палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -686,9 +686,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 fire damage; Л < 1 burning (save ends)',
-								tier2: '9 fire damage; Л < 2 burning (save ends)',
-								tier3: '11 fire damage; prone; Л < 3 burning (save ends)'
+								tier1: '5 вогняної шкоди; Л < 1 палає (рят. кидок закінчує)',
+								tier2: '9 вогняної шкоди; Л < 2 палає (рят. кидок закінчує)',
+								tier3: '11 вогняної шкоди; розпластаний; Л < 3 палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -757,9 +757,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 corruption damage',
-								tier2: '10 corruption damage, or if the target has П < 2 they are judged',
-								tier3: 'The target is judged'
+								tier1: '10 шкоди від скверни',
+								tier2: '10 шкоди від скверни, або якщо ціль має П < 2 they are judged',
+								tier3: 'Ціль is judged'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, a judged target takes 10 corruption damage at the start of each of their turns, and regains 5 Stamina each time they use an ability or other effect that allows another creature to spend a Recovery.')
 						]
@@ -804,9 +804,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 fire damage',
-								tier2: '14 fire damage',
-								tier3: '17 fire damage; Р < 3 slowed (save ends)'
+								tier1: '9 вогняної шкоди',
+								tier2: '14 вогняної шкоди',
+								tier3: '17 вогняної шкоди; Р < 3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, the target can’t communicate with anyone until the end of their next turn.')
 						]
@@ -825,9 +825,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Might,
-								tier1: '11 damage; the target has a double bane on their next power roll',
-								tier2: '9 damage; the target has a bane on their next power roll',
-								tier3: '5 damage'
+								tier1: '11 шкоди; ціль має a double bane on their next power roll',
+								tier2: '9 шкоди; ціль має a bane on their next power roll',
+								tier3: '5 шкоди'
 							}))
 						]
 					})
@@ -876,9 +876,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 fire damage; M < 1 weakened (save ends)',
-								tier2: '9 fire damage; M < 2 weakened (save ends)',
-								tier3: '11 fire damage; M < 3 weakened (save ends)'
+								tier1: '5 вогняної шкоди; С < 1 ослаблений (рят. кидок закінчує)',
+								tier2: '9 вогняної шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+								tier3: '11 вогняної шкоди; С < 3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Before using this ability, the war mage can teleport a creature within 10 squares of them up to 2 squares.')
 						]
@@ -968,9 +968,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 corruption damage; П < 2 bleeding (save ends)',
-								tier2: '16 corruption damage; П < 3 bleeding (save ends)',
-								tier3: '19 corruption damage; П < 4 bleeding (save ends)'
+								tier1: '11 шкоди від скверни; П < 2 кровотеча (рят. кидок закінчує)',
+								tier2: '16 шкоди від скверни; П < 3 кровотеча (рят. кидок закінчує)',
+								tier3: '19 шкоди від скверни; П < 4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -1053,9 +1053,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '5 fire damage; П < 2 2 fire damage; push 2, prone',
-								tier2: '5 fire damage; П < 3 7 fire damage; push 3, prone',
-								tier3: '5 fire damage; П < 4 10 fire damage; push 5, prone'
+								tier1: '5 вогняної шкоди; П < 2 2 вогняної шкоди; відштовхнути на 2, розпластаний',
+								tier2: '5 вогняної шкоди; П < 3 7 вогняної шкоди; відштовхнути на 3, розпластаний',
+								tier3: '5 вогняної шкоди; П < 4 10 вогняної шкоди; відштовхнути на 5, розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('Until the end of the encounter, the bloodlord is wreathed in black flames. Whenever any adjacent enemy grabs the bloodlord or uses a melee ability against them, that enemy takes 5 corruption damage.')
 						]
@@ -1095,9 +1095,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '14 damage; Л < 2 bleeding (save ends)',
-								tier3: '17 damage; Л < 3 bleeding and restrained (save ends)'
+								tier1: '9 шкоди',
+								tier2: '14 шкоди; Л < 2 кровотеча (рят. кидок закінчує)',
+								tier3: '17 шкоди; Л < 3 кровотеча і скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A creature restrained this way moves with the slaughter demon. The slaughter demon can have up to six creatures or objects restrained at once.')
 						]
@@ -1115,9 +1115,9 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 poison damage; M < 1 weakened (save ends)',
-								tier2: '16 poison damage; M < 2 weakened (save ends)',
-								tier3: '20 poison damage; M < 3 weakened (save ends)'
+								tier1: '10 отруйної шкоди; С < 1 ослаблений (рят. кидок закінчує)',
+								tier2: '16 отруйної шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+								tier3: '20 отруйної шкоди; С < 3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target weakened this way also has damage weakness 3.')
 						]
@@ -1126,7 +1126,7 @@ Devils captured the grack’tanars eons ago. Broken, these demons wait for a cal
 				FactoryLogic.feature.create({
 					id: 'hobgoblin-15-feature-4',
 					name: 'Drag Below',
-					description: 'The slaughter demon can make a free strike as part of using the Dig maneuver. If the target of the free strike has <code>M < 2</code>, they are grabbed and take a bane on the Escape Grab maneuver.'
+					description: 'The slaughter demon can make a free strike as part of using the Dig маневр. If the target of the free strike has <code>С < 2</code>, they are grabbed and take a bane on the Escape Grab маневр.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({

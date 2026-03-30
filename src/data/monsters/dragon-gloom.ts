@@ -60,9 +60,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 				'The dragon manifests four 2 cubes of nightmarish apparitions anywhere on the encounter map. Each creature in the area when it appears makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: '14 damage; dazed (save ends)',
-					tier2: '11 damage; dazed (EoT)',
-					tier3: '6 damage'
+					tier1: '14 шкоди; приголомшений (рят. кидок закінчує)',
+					tier2: '11 шкоди; приголомшений (до кінця ходу)',
+					tier3: '6 шкоди'
 				})
 			]
 		}),
@@ -72,7 +72,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The dragon takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -127,9 +127,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 							FactoryLogic.createAbilitySectionText('Each target makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
-								tier1: '14 cold damage; the target is dragonsealed (save ends)',
-								tier2: '11 cold damage; the target is dragonsealed (save ends)',
-								tier3: '6 cold damage'
+								tier1: '14 холодної шкоди; ціль is dragonsealed (рят. кидок закінчує)',
+								tier2: '11 холодної шкоди; ціль is dragonsealed (рят. кидок закінчує)',
+								tier3: '6 холодної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('A dragonsealed creature has psychic weakness 3 and cold weakness 3. Additionally, the area is filled with magical darkness. The dragon ignores concealment created by this darkness.')
 						]
@@ -146,9 +146,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 psychic damage; pull 2',
-								tier2: '15 psychic damage; pull 4',
-								tier3: '18 psychic damage; pull 6'
+								tier1: '10 психічної шкоди; притягнути на 2',
+								tier2: '15 психічної шкоди; притягнути на 4',
+								tier3: '18 психічної шкоди; притягнути на 6'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -160,7 +160,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 				FactoryLogic.feature.create({
 					id: 'dragon-gloom-feature-6',
 					name: 'Shadow Skulk',
-					description: 'Once per turn, the dragon can shift up to their speed, leaving behind a 4 cube area of magical darkness in their starting space that lasts until the end of the encounter. The dragon ignores concealment created by this darkness. Any enemy who ends their turn in the area and has I<3 is frightened of the dragon until the end of their next turn.'
+					description: 'Once per turn, the dragon can shift up to their speed, leaving behind a 4 cube area of magical darkness in their starting space that lasts until the end of the encounter. The dragon ignores concealment created by this darkness. Any enemy who ends their turn in the area and has І<3 is frightened of the dragon until the end of their next turn.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -172,7 +172,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						target: 'Кожен ворог у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Each target takes 3 psychic damage, and if they have I<3 they immediately make a free strike against one ally of the dragon’s choice.')
+							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Each target takes 3 psychic damage, and if they have І<3 they immediately make a free strike against one ally of the dragon’s choice.')
 						]
 					})
 				}),
@@ -205,9 +205,9 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Pull 2; I<2 frightened (EoT)',
-								tier2: 'Pull 4; I<3 frightened (save ends)',
-								tier3: 'Pull 6; I<4 frightened (save ends)'
+								tier1: 'Pull 2; І<2 зляканий (до кінця ходу)',
+								tier2: 'Pull 4; І<3 зляканий (рят. кидок закінчує)',
+								tier3: 'Pull 6; І<4 зляканий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -223,11 +223,11 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 psychic damage',
-								tier2: '11 psychic damage',
-								tier3: '14 psychic damage'
+								tier1: '6 психічної шкоди',
+								tier2: '11 психічної шкоди',
+								tier3: '14 психічної шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Any target who has I<3 is also dazed (save ends).')
+							FactoryLogic.createAbilitySectionText('Each target must be dragonsealed. Any target who has І<3 is also dazed (save ends).')
 						]
 					})
 				}),
@@ -239,7 +239,7 @@ When a gloom dragon slays a victim, they take not just their valuables, but also
 						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Особливе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon’s speed. An illusion acts on the dragon’s turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.')
+							FactoryLogic.createAbilitySectionText('The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon’s speed. An illusion acts on the dragon’s turns but can take only дії руху. Once per round before or after using an ability, the dragon can trade places with any duplicate.')
 						]
 					})
 				})

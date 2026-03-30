@@ -60,7 +60,7 @@ export class TitleData {
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-1',
 				name: 'Iron Hand in Velvet Glove',
-				description: 'The first time during a negotiation that you make a test using the Intimidate skill and don’t make an argument that appeals to an NPC’s motivation, you don’t lower the NPC’s patience or interest no matter the outcome of the roll.'
+				description: 'The first time during a negotiation that you make a test using the Залякування skill and don’t make an argument that appeals to an NPC’s motivation, you don’t lower the NPC’s patience or interest no matter the outcome of the roll.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-2',
@@ -103,7 +103,7 @@ export class TitleData {
 			FactoryLogic.feature.create({
 				id: 'title-brawler-3',
 				name: 'Headbutter',
-				description: 'While you are grabbed or restrained, your free strikes don’t take a bane when those conditions would impose one.'
+				description: 'Поки ви схоплені або скуті, ваші вільні удари не отримують шкоди там, де ці стани зазвичай її накладають.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-brawler-4',
@@ -328,7 +328,7 @@ You find an agent who can provide you with three pieces of information about the
 			FactoryLogic.feature.createMultiple({
 				id: 'title-mage-hunter-3',
 				name: 'Stink of Magic',
-				description: 'As a maneuver, you open your senses to the residue of magic. Until the end of your next turn, you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can’t be surprised by constructs, undead, or creatures from another world.',
+				description: 'As a маневр, you open your senses to the residue of magic. Until the end of your next turn, you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can’t be surprised by constructs, undead, or creatures from another world.',
 				features: [
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
@@ -448,7 +448,7 @@ You find an agent who can provide you with three pieces of information about the
 				description: `
 The faction will perform one favor for the party, provided it doesn’t interfere with the faction’s goals.
 
-Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith’s guild, or the Society skill for a noble house. While in a settlement where the faction has a presence, you gain this skill if you don’t already have it. If you already have the skill, you instead gain an edge on tests made using the skill.`
+Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Кримінальний світ skill for an outlaw gang, the Ковальство skill for a blacksmith’s guild, or the Суспільство skill for a noble house. While in a settlement where the faction has a presence, you gain this skill if you don’t already have it. If you already have the skill, you instead gain an edge on tests made using the skill.`
 			})
 		],
 		selectedFeatureID: ''
@@ -488,7 +488,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-ratcatcher-2',
 				name: 'Everybody Move!',
-				description: 'When you use the Knockback maneuver, you can target one additional creature of your size or two additional smaller creatures.'
+				description: 'When you use the Knockback маневр, you can target one additional creature of your size or two additional smaller creatures.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
@@ -593,7 +593,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-troupe-tactics-2',
 				name: 'Spotlight',
-				description: 'You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can’t sneak or hide, they take a bane on tests made to perform any action secretly, and they gain an edge on tests made using the Lead, Music, or Perform skills.'
+				description: 'You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can’t sneak or hide, they take a bane on tests made to perform any action secretly, and they gain an edge on tests made using the Лідерство, Музика, or Виступ skills.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-troupe-tactics-3',
@@ -629,7 +629,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-3',
 				name: 'No, You’re Under Arrest!',
-				description: 'You gain an edge on the Escape Grab maneuver. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same size without them immediately noticing.'
+				description: 'You gain an edge on the Escape Grab маневр. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same маневр, you can transfer the bonds or manacles to an adjacent creature of the same size without them immediately noticing.'
 			})
 		],
 		selectedFeatureID: ''
@@ -698,12 +698,12 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-arena-fighter-1',
 				name: 'Dirty Fighting',
-				description: 'While you are standing, your melee strikes gain a +3 damage bonus against prone creatures. Additionally, being prone doesn’t impose a bane on your strikes.'
+				description: 'Поки ви стоїте, ваші ближні удари отримують +3 до шкоди проти розпластаних істот. Крім того, стан «Розпластаний» не накладає шкоди на ваші удари.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-arena-fighter-2',
 				name: 'Foes as Weapons',
-				description: 'Whenever you have a creature of your size or smaller grabbed, you can use them as a weapon when you make a melee weapon free strike. Both the target and the grabbed enemy take the strike’s damage.'
+				description: 'Щоразу, коли ви схопили істоту вашого розміру або меншої, ви можете використати її як зброю, коли робите вільний удар ближньою зброєю. І ціль, і схоплений ворог отримують шкоду від удару.'
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-arena-fighter-3',
@@ -753,7 +753,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-awakened-2',
 				name: 'Rogue Talent',
-				description: 'Choose one triggered action that the talent class has access to at 1st level. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend clarity, you can’t do so unless you have the Clarity class feature.'
+				description: 'Choose one тригерна дія that the talent class has access to at 1st level. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend clarity, you can’t do so unless you have the Clarity class feature.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
@@ -866,7 +866,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-corsair-4',
 				name: 'Scoundrel Tactics',
-				description: 'While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have line of effect to you, and you gain an edge when you do so. You can use Disguise to hide your ship’s identity or general type, Intimidate to convince another ship’s crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.'
+				description: 'While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have line of effect to you, and you gain an edge when you do so. You can use Маскування to hide your ship’s identity or general type, Залякування to convince another ship’s crew to flee or surrender, or Ховання or Крадіжка to let your ship avoid notice.'
 			})
 		],
 		selectedFeatureID: ''
@@ -990,7 +990,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-giant-slayer-3',
 				name: 'Up the Beanstalk',
-				description: 'You have the Climb skill. If you already have this skill, you instead gain an edge on tests made using the Climb skill. Whileyou’re climbing a creature, the creature has a double bane on strikes against you and you have a double edge on tests made to stay on the creature.'
+				description: 'You have the Лазіння skill. If you already have this skill, you instead gain an edge on tests made using the Лазіння skill. Whileyou’re climbing a creature, the creature has a double bane on strikes against you and you have a double edge on tests made to stay on the creature.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1055,7 +1055,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.create({
 				id: 'title-heist-hero-2',
 				name: 'Sneakers',
-				description: 'You gain the Sneak skill. If you already have this skill, you instead gain an edge on tests made using the Sneak skill. During group tests, you can both use the Sneak skill and assist another hero using the Sneak skill.'
+				description: 'You gain the Крадіжка skill. If you already have this skill, you instead gain an edge on tests made using the Крадіжка skill. During group tests, you can both use the Крадіжка skill and assist another hero using the Крадіжка skill.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
@@ -1167,9 +1167,9 @@ I better watch out for that banana peel!`,
 				id: 'title-special-agent-1',
 				name: 'Boffin',
 				description: `
-You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver
+You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a маневр
 
-* Make a test that uses the Disguise skill. You gain an edge on the test.
+* Make a test that uses the Маскування skill. You gain an edge on the test.
 * One mundane lock you touch is unlocked.
 * Choose a square within 10 squares, even if you don’t have line of effect to it. You can observe the area around that square as if you were in it.
 * You throw the boffin up to 10 squares, where it explodes in a 5 cube. Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster … though they don’t like doing so too often.`
@@ -1182,7 +1182,7 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 			FactoryLogic.feature.create({
 				id: 'title-special-agent-3',
 				name: 'Spy Ring',
-				description: 'You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.'
+				description: 'You gain a piece of magic jewelry, such as a ring. As a основна дія while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Маскування skill based solely on visual identification.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1215,7 +1215,7 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 			FactoryLogic.feature.create({
 				id: 'title-sworn-hunter-3',
 				name: 'We\'re In This Together',
-				description: 'When you have a creature grabbed and take damage from an ability not used by that creature, the grabbed creature takes the same damage.'
+				description: 'Коли ви тримаєте істоту схопленою і отримуєте шкоду від здібності, яку ця істота не використовувала, схоплена істота отримує ту саму шкоду.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1231,9 +1231,9 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-1',
 				name: 'Ghoul or Campire',
-				description: `You return to life 1 minute after being killed with Stamina equal to your winded value. You gain corruption immunity equal to your level and the following benefit if you are killed by a ghoul or vampire. If you die again, you rise as an undead creature under the Director’s control.
+				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убив гуль або вампір. Якщо ви загинете знову, то підніметеся як нежить під контролем Director.
 					
-When you make a melee free strike against an adjacent creature, you can bite that creature. If you do so and obtain a tier 3 outcome, you gain temporary Stamina equal to the damage dealt. If not lost beforehand, this temporary Stamina lasts until the end of your next respite.`
+Коли ви робите вільний удар ближнього бою проти сусідньої істоти, ви можете вкусити її. Якщо ви робите це й отримуєте результат 3 рівня, ви здобуваєте тимчасову Витривалість, що дорівнює завданій шкоді. Якщо її не втрачено раніше, ця тимчасова Витривалість триває до кінця вашого наступного перепочинку.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-2',
@@ -1245,9 +1245,9 @@ You can move through other creatures and objects. The first time in a combat rou
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-3',
 				name: 'Other Corporeal Undead',
-				description: `You return to life 1 minute after being killed with Stamina equal to your winded value. You gain corruption immunity equal to your level and the following benefit if you are killed by any other corporeal undead. If you die again, you rise as an undead creature under the Director’s control.
+				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убила будь-яка інша тілесна нежить. Якщо ви загинете знову, то підніметеся як нежить під контролем Director.
 					
-When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and your body isn’t destroyed, you can regain half your Stamina and fall prone. Once you use this benefit, you can’t use it again until you earn 10 or more Victories.`
+Коли вас зводять до 0 Витривалості шкодою, що не є вогняною чи священною, і ваше тіло не знищене, ви можете відновити половину своєї Витривалості та впасти розпластаними. Після використання цієї переваги ви не можете застосувати її знову, доки не здобудете 10 або більше Перемог.`
 			})
 		],
 		selectedFeatureID: ''
@@ -1425,7 +1425,7 @@ When you are reduced to 0 Stamina by damage that isn’t fire or holy damage and
 				id: 'title-fleet-admiral-4',
 				name: 'Weather Wizard',
 				description: `
-Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a free maneuver. Choose from one of the following weather types:
+Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a безкоштовний маневр. Choose from one of the following weather types:
 
 * Calm: Wind-powered vessels and technology cease working.
 * Fog: Visibility is reduced to 6 squares.
@@ -1447,7 +1447,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-maestro-1',
 				name: 'Angelic Chorus',
-				description: 'You can use the lessons of musical improvisation in combat. Choose one class act triggered action from the troubadour class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.'
+				description: 'You can use the lessons of musical improvisation in combat. Choose one class act тригерна дія from the troubadour class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
@@ -1463,7 +1463,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 						FactoryLogic.createAbilitySectionRoll(
 							FactoryLogic.createPowerRoll({
 								characteristic: [Characteristic.Presence],
-								tier1: 'Ви отримуєте 4 звукової шкоди, якщо не маєте навички Performance.',
+								tier1: 'Ви отримуєте 4 звукової шкоди, якщо не маєте навички Виступ.',
 								tier2: '6 звукової шкоди; С < [середній], ослаблення (рят. кидок завершує)',
 								tier3: '10 звукової шкоди; С < [середній], ослаблення і кровотеча (рят. кидок завершує)'
 							})
@@ -1475,7 +1475,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-maestro-3',
 				name: 'Music of the Spheres',
-				description: 'As a main action, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a strike, they take 8 sonic damage. Whenever you make a strike during that same period, you also take 8 sonic damage.'
+				description: 'As a основна дія, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a strike, they take 8 sonic damage. Whenever you make a strike during that same period, you also take 8 sonic damage.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1558,7 +1558,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-planar-voyager-2',
 				name: 'Stellar Knowledge',
-				description: 'You gain the Mechanics skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.'
+				description: 'You gain the Механіка skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-planar-voyager-3',
@@ -1756,7 +1756,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-forsaken-1',
 				name: 'Brief Reunion',
-				description: 'A characteristic of your choice increases by 1 (to a maximum of 6). While you’re winded, you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				description: 'A characteristic of your choice increases by 1 (to a maximum of 6). While you’re winded, you can use a маневр to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-forsaken-2',
@@ -1818,7 +1818,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-2',
 				name: 'Drop Your Sword',
-				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). When you succeed on a test using the Intimidate skill, you can cause affected creatures to drop any items they are holding.'
+				description: 'Your choice of your Reason or Presence increases by 1 (to a maximum of 6). When you succeed on a test using the Залякування skill, you can cause affected creatures to drop any items they are holding.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-peace-bringer-3',
@@ -1870,7 +1870,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-tireless-3',
 				name: 'Undying',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). You can’t be affected by the bleeding condition.'
+				description: 'Обрана вами Сила або Ловкість збільшується на 1, максимум до 6. Ви не можете бути вражені станом «Кровотеча».'
 			})
 		],
 		selectedFeatureID: ''
@@ -1886,7 +1886,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-unchained-1',
 				name: 'Bye-Bye',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). You can use a maneuver to teleport yourself and each willing ally within 5 squares of you to new positions within 10 squares of your original starting point. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). You can use a маневр to teleport yourself and each willing ally within 5 squares of you to new positions within 10 squares of your original starting point. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-unchained-2',
@@ -1896,7 +1896,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			FactoryLogic.feature.create({
 				id: 'title-unchained-3',
 				name: 'Slippery',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). You can’t be grabbed against your will.'
+				description: 'Обрана вами Сила або Ловкість збільшується на 1, максимум до 6. Вас не можна схопити проти вашої волі.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1915,7 +1915,7 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 				id: 'title-safeguarded-1',
 				name: 'Effect',
 				description: `
-You start combat encounters with a squad of three minions from the specific monster band or people you earned this title from. The squad takes their turn as a part of your turn. On the squad’s turn, they can take a move action and either a main action or a maneuver.
+You start combat encounters with a squad of three minions from the specific monster band or people you earned this title from. The squad takes their turn as a part of your turn. On the squad’s turn, they can take a дія руху and either a основна дія or a маневр.
 
 **Special**: If two or more heroes in the party have this title from the same source, the party starts combat encounters with a squad of six minions instead. At the start of each round of combat, the heroes decide who controls the squad as a part of their turn.`
 			})
@@ -1933,7 +1933,7 @@ You start combat encounters with a squad of three minions from the specific mons
 			FactoryLogic.feature.create({
 				id: 'title-sigilwright-1',
 				name: 'Quick Gate',
-				description: 'As a maneuver, you can etch an arcane circle in an adjacent square on the ground. Until the end of the encounter, you can use magic abilities and treat your Summoner’s Range as if you were in that space. Each time you etch an arcane circle, your last circle fades and becomes inactive.'
+				description: 'As a маневр, you can etch an arcane circle in an adjacent square on the ground. Until the end of the encounter, you can use magic abilities and treat your Summoner’s Range as if you were in that space. Each time you etch an arcane circle, your last circle fades and becomes inactive.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-sigilwright-2',
@@ -1960,9 +1960,9 @@ You start combat encounters with a squad of three minions from the specific mons
 				id: 'title-summoner-successor-1',
 				name: 'Effect',
 				description: `
-Choose a signature minion from a summoner’s portfolio that shares a keyword with one of the creatures the summoner could summon. You can summon three of that minion into a single squad (up to a maximum of four creatures) at the start of each of your turns in combat. The distance you can command them is equal to your ranged free strike distance. You also gain the Strike for Me triggered ability, which now has the Psionic keyword and loses the Magic keyword.
+Оберіть фірмового міньйона з арсеналу призивача, який має спільне ключове слово з однією з істот, яких цей призивач міг би викликати. На початку кожного свого ходу в бою ви можете викликати трьох таких міньйонів в один загін, максимум до чотирьох істот. Дистанція, на якій ви можете ними командувати, дорівнює дальності вашого дальнього вільного удару. Ви також отримуєте тригерну здібність Strike for Me, яка тепер має ключове слово Psionic і втрачає ключове слово Magic.
 
-Additionally, you can summon up to two of your signature minion while outside of combat to do simple tasks.`
+Крім того, поза боєм ви можете викликати до двох своїх фірмових міньйонів для виконання простих завдань.`
 			})
 		],
 		selectedFeatureID: ''

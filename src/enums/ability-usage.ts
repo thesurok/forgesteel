@@ -1,11 +1,11 @@
 export enum AbilityUsage {
-	MainAction = 'Main Action',
-	Maneuver = 'Maneuver',
-	Move = 'Move Action',
-	NoAction = 'No Action',
-	Trigger = 'Triggered Action',
-	VillainAction = 'Villain Action',
-	ChampionAction = 'Champion Action',
-	Other = 'Other',
-	FreeStrike = 'Вільний Удар'
+	MainAction = 'Основна дія',
+	Maneuver = 'Маневр',
+	Move = 'Дія руху',
+	NoAction = 'Без дії',
+	Trigger = 'Тригерна дія',
+	VillainAction = 'Дія лиходія',
+	ChampionAction = 'Дія чемпіона',
+	Other = 'Інше',
+	FreeStrike = 'Вільний удар'
 }

@@ -239,7 +239,7 @@ export const ReferenceModal = (props: Props) => {
 				items={[
 					{
 						key: 'mains',
-						label: 'Main Actions',
+						label: 'Основні дії',
 						children:
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{
@@ -256,8 +256,8 @@ export const ReferenceModal = (props: Props) => {
 							</Space>
 					},
 					{
-						key: 'maneuvers',
-						label: 'Maneuvers',
+						key: 'маневри',
+						label: 'Маневри',
 						children:
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{
@@ -282,7 +282,7 @@ export const ReferenceModal = (props: Props) => {
 					},
 					{
 						key: 'moves',
-						label: 'Move Actions',
+						label: 'Дії руху',
 						children:
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{
@@ -298,7 +298,7 @@ export const ReferenceModal = (props: Props) => {
 					},
 					{
 						key: 'triggers',
-						label: 'Triggers',
+						label: 'Тригерні дії',
 						children:
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{

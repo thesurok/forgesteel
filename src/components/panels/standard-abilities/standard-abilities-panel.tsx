@@ -33,7 +33,7 @@ export const StandardAbilitiesPanel = (props: Props) => {
 					</div>
 				</div>
 				<Divider />
-				<div className='standard-abilities-page' id='maneuvers'>
+				<div className='standard-abilities-page' id='маневри'>
 					<div className='standard-abilities-row'>
 						<AbilityPanel ability={AbilityData.aidAttack} hero={props.hero} mode={PanelMode.Full} />
 						<AbilityPanel ability={AbilityData.catchBreath} hero={props.hero} mode={PanelMode.Full} />

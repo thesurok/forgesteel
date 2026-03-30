@@ -361,7 +361,7 @@ export const KitEditPanel = (props: Props) => {
 					kit.features.map(f => (
 						<Expander
 							key={f.id}
-							title={f.name || 'Unnamed Feature'}
+							title={f.name || 'Неназвана особливість'}
 							tags={[FeatureLogic.getFeatureTag(f)]}
 							extra={[
 								<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveFeature(f, 'up'); }} />,
@@ -432,26 +432,26 @@ export const KitEditPanel = (props: Props) => {
 		const constraints: { name: string, value: boolean }[] = [];
 		const gear: { name: string, value: boolean }[] = [];
 
-		constraints.push({ name: 'Kit power value = 8', value: power === 8 });
-		constraints.push({ name: 'Stamina max +12', value: kit.stamina <= 12 });
-		constraints.push({ name: 'Ranged distance max +10', value: kit.rangedDistance <= 10 });
-		constraints.push({ name: 'Disengage max +1', value: kit.disengage <= 1 });
-		constraints.push({ name: 'Speed max +3', value: kit.speed <= 3 });
-		constraints.push({ name: 'Stability max +3', value: kit.stability <= 3 });
-		constraints.push({ name: 'Has disengage OR stability', value: ((kit.disengage > 0) && (kit.stability === 0)) || ((kit.disengage === 0) && (kit.stability < 0)) });
+		constraints.push({ name: 'Потужність набору = 8', value: power === 8 });
+		constraints.push({ name: 'Максимум витривалості +12', value: kit.stamina <= 12 });
+		constraints.push({ name: 'Максимум дальності +10', value: kit.rangedDistance <= 10 });
+		constraints.push({ name: 'Максимум відступу +1', value: kit.disengage <= 1 });
+		constraints.push({ name: 'Максимум швидкості +3', value: kit.speed <= 3 });
+		constraints.push({ name: 'Максимум непорушності +3', value: kit.stability <= 3 });
+		constraints.push({ name: 'Має відступ АБО непорушність', value: ((kit.disengage > 0) && (kit.stability === 0)) || ((kit.disengage === 0) && (kit.stability < 0)) });
 
-		gear.push({ name: 'Light Armor', value: kit.stamina >= 3 });
-		gear.push({ name: 'Light Armor + Shield', value: kit.stamina >= 6 });
-		gear.push({ name: 'Medium Armor', value: kit.stamina >= 6 });
-		gear.push({ name: 'Medium Armor + Shield', value: kit.stamina >= 9 });
-		gear.push({ name: 'Heavy Armor', value: (kit.stamina >= 9) && (kit.stability >= 1) });
-		gear.push({ name: 'Heavy Armor + Shield', value: (kit.stamina >= 12) && (kit.stability >= 1) });
-		gear.push({ name: 'Light Weapon (melee)', value: minMeleeDamage >= 1 });
-		gear.push({ name: 'Medium Weapon (melee)', value: minMeleeDamage >= 2 });
-		gear.push({ name: 'Heavy Weapon (melee)', value: !!kit.meleeDamage && (kit.meleeDamage.tier3 >= 4) });
-		gear.push({ name: 'Light Weapon (ranged)', value: minRangedDamage >= 1 });
-		gear.push({ name: 'Medium Weapon (ranged)', value: minRangedDamage >= 2 });
-		gear.push({ name: 'Heavy Weapon (ranged)', value: !!kit.rangedDamage && (kit.rangedDamage.tier3 >= 4) });
+		gear.push({ name: 'Легка броня', value: kit.stamina >= 3 });
+		gear.push({ name: 'Легка броня + щит', value: kit.stamina >= 6 });
+		gear.push({ name: 'Середня броня', value: kit.stamina >= 6 });
+		gear.push({ name: 'Середня броня + щит', value: kit.stamina >= 9 });
+		gear.push({ name: 'Важка броня', value: (kit.stamina >= 9) && (kit.stability >= 1) });
+		gear.push({ name: 'Важка броня + щит', value: (kit.stamina >= 12) && (kit.stability >= 1) });
+		gear.push({ name: 'Легка зброя (ближній бій)', value: minMeleeDamage >= 1 });
+		gear.push({ name: 'Середня зброя (ближній бій)', value: minMeleeDamage >= 2 });
+		gear.push({ name: 'Важка зброя (ближній бій)', value: !!kit.meleeDamage && (kit.meleeDamage.tier3 >= 4) });
+		gear.push({ name: 'Легка зброя (дальній бій)', value: minRangedDamage >= 1 });
+		gear.push({ name: 'Середня зброя (дальній бій)', value: minRangedDamage >= 2 });
+		gear.push({ name: 'Важка зброя (дальній бій)', value: !!kit.rangedDamage && (kit.rangedDamage.tier3 >= 4) });
 
 		const marks: Record<string | number, ReactNode> = {};
 		marks[8] = <div className='ds-text dimmed-text small-text'>Target: 8</div>;
@@ -473,7 +473,7 @@ export const KitEditPanel = (props: Props) => {
 					tooltip={{ open: false }}
 				/>
 				<div className='ds-text'>
-					The power level of a kit should be <b>8</b>. The calculation takes a number of kit statistics into account, listed below.
+					Потужність набору має дорівнювати <b>8</b>. Обчислення враховує кілька характеристик набору, наведених нижче.
 				</div>
 				<StatsRow>
 					{powerA.map((p, n) => <Field key={n} orientation='vertical' label={p.name} value={p.value} />)}
@@ -481,7 +481,7 @@ export const KitEditPanel = (props: Props) => {
 				<StatsRow>
 					{powerB.map((p, n) => <Field key={n} orientation='vertical' label={p.name} value={p.value} />)}
 				</StatsRow>
-				<HeaderText>Constraints</HeaderText>
+				<HeaderText>Обмеження</HeaderText>
 				{
 					constraints.map((c, n) => (
 						<CheckLabel key={n} state={c.value ? 'success' : 'failure'}>
@@ -489,7 +489,7 @@ export const KitEditPanel = (props: Props) => {
 						</CheckLabel>
 					))
 				}
-				<HeaderText>Suggested Proficiencies</HeaderText>
+				<HeaderText>Рекомендовані володіння</HeaderText>
 				{
 					gear.map((c, n) => (
 						<CheckLabel key={n} state={c.value ? 'success' : 'failure'}>
@@ -514,22 +514,22 @@ export const KitEditPanel = (props: Props) => {
 							},
 							{
 								key: '2',
-								label: 'Details',
+								label: 'Деталі',
 								children: getKitDetailsSection()
 							},
 							{
 								key: '3',
-								label: 'Stats',
+								label: 'Характеристики',
 								children: getKitStatsEditSection()
 							},
 							{
 								key: '4',
-								label: 'Damage',
+								label: 'Урон',
 								children: getKitDamageEditSection()
 							},
 							{
 								key: '5',
-								label: 'Features',
+								label: 'Особливості',
 								children: getFeaturesEditSection()
 							}
 						]}
@@ -542,7 +542,7 @@ export const KitEditPanel = (props: Props) => {
 								items={[
 									{
 										key: '1',
-										label: 'Preview',
+										label: 'Перегляд',
 										children: (
 											<SelectablePanel>
 												<KitPanel
@@ -556,7 +556,7 @@ export const KitEditPanel = (props: Props) => {
 									},
 									{
 										key: '2',
-										label: 'Tuning',
+										label: 'Балансування',
 										children: getTuningSection()
 									}
 								]}

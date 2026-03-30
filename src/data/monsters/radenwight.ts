@@ -53,11 +53,11 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 2,
-						tier1: '7 damage; push 3',
-						tier2: '10 damage; push 3; taunted (EoT)',
-						tier3: '13 damage; push 5; taunted (EoT)'
+						tier1: '7 шкоди; відштовхнути на 3',
+						tier2: '10 шкоди; відштовхнути на 3; спровокований (до кінця ходу)',
+						tier3: '13 шкоди; відштовхнути на 5; спровокований (до кінця ходу)'
 					})),
-					FactoryLogic.createAbilitySectionText('If the target is wearing clothing covering the lower half of their body, they must use a maneuver once to pull that clothing up before they can move.')
+					FactoryLogic.createAbilitySectionText('If the target is wearing clothing covering the lower half of their body, they must use a маневр once to pull that clothing up before they can move.')
 				]
 			})
 		}),
@@ -79,9 +79,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 				'A radenwight uses music to coordinate living rats, forming a 10 wall of rats scurrying atop one another into unoccupied spaces anywhere on the encounter map. The wall doesn’t block line of effect for radenwights and their allies, but it does for other creatures as the rats coordinate their movements with the radenwights. Each square of the wall has 10 Stamina. If the last radenwight in the encounter dies and the wall is still standing, the rats let out a hideous screech as they disperse. Each enemy on the encounter map makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: '7 sonic damage; target can’t take a respite activity during their next respite',
-					tier2: '5 sonic damage',
-					tier3: 'No effect'
+					tier1: '7 звукової шкоди; target can’t take a respite activity during their next respite',
+					tier2: '5 звукової шкоди',
+					tier3: 'Без ефекту'
 				})
 			]
 		})
@@ -117,9 +117,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('If the mischiever is hidden when they use this ability, they can target two creatures.')
 						]
@@ -167,9 +167,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage; taunted (EoT)',
-								tier3: '3 damage; taunted (EoT)'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди; спровокований (до кінця ходу)',
+								tier3: '3 шкоди; спровокований (до кінця ходу)'
 							}))
 						]
 					})
@@ -216,9 +216,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage; slide 1; the swiftpaw can shift 1 square',
-								tier2: '2 damage; slide 2; the swiftpaw can shift up to 2 squares',
-								tier3: '3 damage; slide 3; the swiftpaw can shift up to 3 squares'
+								tier1: '1 шкоди; зсунути на 1; the swiftpaw може зміститися 1 клітинку',
+								tier2: '2 шкоди; зсунути на 2; the swiftpaw може зміститися до 2 клітинок',
+								tier3: '3 шкоди; зсунути на 3; the swiftpaw може зміститися до 3 клітинок'
 							}))
 						]
 					})
@@ -265,9 +265,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally of the redeye within 2 squares of the target shifts up to 2 squares.')
 						]
@@ -314,9 +314,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; grabbed'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('A target grabbed this way takes 2 damage at the start of each of the bruxer’s turns.')
 						]
@@ -334,9 +334,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; A<0 bleeding (save ends)',
-								tier2: '5 damage; A<1 bleeding (save ends)',
-								tier3: '8 damage; A<2 bleeding (save ends)'
+								tier1: '3 шкоди; Л<0 кровотеча (рят. кидок закінчує)',
+								tier2: '5 шкоди; Л<1 кровотеча (рят. кидок закінчує)',
+								tier3: '8 шкоди; Л<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -390,9 +390,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 sonic damage; push 1',
-								tier2: '7 sonic damage; push 3',
-								tier3: '9 sonic damage; push 4'
+								tier1: '5 звукової шкоди; відштовхнути на 1',
+								tier2: '7 звукової шкоди; відштовхнути на 3',
+								tier3: '9 звукової шкоди; відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('The piper or one ally within distance regains Stamina equal to the damage dealt.')
 						]
@@ -408,7 +408,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						target: 'Кожен союзник у зоні',
 						cost: 3,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has used their Ready Rodent ability this round regains the use of their triggered action.'),
+							FactoryLogic.createAbilitySectionText('Each target who has used their Ready Rodent ability this round regains the use of their тригерна дія.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
 								effect: 'The area increases to 6 burst.'
@@ -462,9 +462,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage',
-								tier2: '6 damage',
-								tier3: '8 damage'
+								tier1: '4 шкоди',
+								tier2: '6 шкоди',
+								tier3: '8 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The ratcrobat shifts up to 2 squares after striking the first target, then can shift 1 square after striking the second target.')
 						]
@@ -530,11 +530,11 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 sonic damage; slide 1, the maestro can shift 1 square',
-								tier2: '6 sonic damage; slide 3, the maestro shifts up to 3 squares',
-								tier3: '8 sonic damage; slide 5, the maestro shifts up to 5 squares'
+								tier1: '3 звукової шкоди; зсунути на 1, the maestro може зміститися 1 клітинку',
+								tier2: '6 звукової шкоди; зсунути на 3, the maestro shifts до 3 клітинок',
+								tier3: '8 звукової шкоди; зсунути на 5, the maestro shifts до 5 клітинок'
 							})),
-							FactoryLogic.createAbilitySectionText('Each ally within distance can use Ready Rodent as a free triggered action once before the end of the round.')
+							FactoryLogic.createAbilitySectionText('Each ally within distance can use Ready Rodent as a безкоштовна тригерна дія once before the end of the round.')
 						]
 					})
 				}),
@@ -549,9 +549,9 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'P<1 Slowed (save ends)',
-								tier2: 'P<2 Slowed (save ends)',
-								tier3: 'P<3 Slowed (save ends)'
+								tier1: 'П<1 сповільнений (рят. кидок закінчує)',
+								tier2: 'П<2 сповільнений (рят. кидок закінчує)',
+								tier3: 'П<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
@@ -614,7 +614,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 10 })],
 						target: 'Each dead ally in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target stands, makes a free strike, then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.')
+							FactoryLogic.createAbilitySectionText('Each target stands, makes a free strike, then falls dead again. Any ally of the targets can use Ready Rodent as a безкоштовна тригерна дія once in conjunction with these free strikes.')
 						]
 					})
 				})

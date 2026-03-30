@@ -949,9 +949,9 @@ export const elementalist: HeroClass = {
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: [Characteristic.Reason],
-						tier1: 'The target can shift 1 square from the edge of the hole to the nearest unoccupied space of their choice.',
-						tier2: 'The target falls into the hole.',
-						tier3: 'The target falls into the hole and can’t reduce the height of the fall.'
+						tier1: 'Ціль може зміститися 1 клітинку з краю ями до найближчої незайнятої клітинки на їхній вибір.',
+						tier2: 'Ціль падає в яму.',
+						tier3: 'Ціль падає в яму і не може зменшити висоту падіння.'
 					})
 				),
 				FactoryLogic.createAbilitySectionSpend({
@@ -1314,9 +1314,9 @@ export const elementalist: HeroClass = {
 			sections: [
 				FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Reason],
-					tier1: 'You teleport the target up to 4 squares.',
-					tier2: 'You teleport the target up to 6 squares.',
-					tier3: 'You teleport the target up to 8 squares.'
+					tier1: 'Ви телепортуєте ціль до 4 клітинок.',
+					tier2: 'Ви телепортуєте ціль до 6 клітинок.',
+					tier3: 'Ви телепортуєте ціль до 8 клітинок.'
 				})),
 				FactoryLogic.createAbilitySectionText('Якщо ціль телепортується в клітинку, де вона впаде, вона негайно падає, вважаючи падіння таким, ніби її показник Спритності дорівнює 0. Ціль отримує вогняне пошкодження від падіння, а кожний ворог у межах 3 клітинок від місця приземлення отримує таку ж кількість вогняного пошкодження. Ґрунт у межах 3 клітинок від місця приземлення стає важкопрохідною місцевістю.'),
 			]

@@ -2,6 +2,7 @@ import { FactoryLogic } from '@/logic/factory-logic';
 import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
 import { Item } from '@/models/item';
 import { ItemType } from '@/enums/item-type';
+import { normalizeKitKeywords } from '@/utils/kit-proficiencies';
 
 export class ItemUpdateLogic {
 	static updateItem = (item: Item) => {
@@ -16,6 +17,8 @@ export class ItemUpdateLogic {
 		if (item.type.toString() === 'Trinket') {
 			item.type = ItemType.Trinket1st;
 		}
+
+		item.keywords = normalizeKitKeywords(item.keywords);
 
 		item.featuresByLevel.flatMap(lvl => lvl.features).forEach(FeatureUpdateLogic.updateFeature);
 		if (item.imbuements === undefined) {

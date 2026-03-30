@@ -30,17 +30,17 @@ export const angryBeehive: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'The beehive can’t be deactivated. If it takes damage or is destroyed, the hive unleashes a swarm of bees.'
+					description: 'Вулик не можна знешкодити. Якщо він отримує шкоду або його знищують, із нього виривається рій бджіл.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature enters the hive’s space or an adjacent space without shifting.'
+					description: 'Істота входить у простір вулика або суміжний із ним простір без зміщення.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
-					description: 'The hive is removed from the encounter map and a swarm of bees is placed in one square of the space of the triggering creature. Any creature who starts their turn in the swarm’s space takes 3 poison damage. At the start of each round, the swarm moves 1 square and its size increases by 1 square (to 2 squares by 2 squares, 3 squares by 3 squares, and so forth), preferring squares in a creature’s space. After 3 rounds, the swarm dissipates.'
+					description: 'Вулик прибирають із мапи сутички, а в одній клітинці простору істоти, що спровокувала ефект, розміщують рій бджіл. Будь-яка істота, що починає свій хід у просторі рою, отримує 3 отруйної шкоди. На початку кожного раунду рій переміщується на 1 клітинку, а його розмір збільшується на 1 клітинку з кожного боку (до 2 x 2 клітинок, 3 x 3 клітинок тощо), надаючи перевагу клітинкам у просторі істоти. Через 3 раунди рій розсіюється.'
 				})
 			]
 		}
@@ -50,14 +50,14 @@ export const angryBeehive: Terrain = {
 			id: 'concealed-beehive',
 			label: 'Concealed Beehive',
 			cost: 1,
-			text: 'The hive is hidden until the swarm is unleashed.',
+			text: 'Вулик приховано, доки з нього не вирветься рій.',
 			sections: []
 		},
 		{
 			id: 'killer-bees',
 			label: 'Killer Bees',
 			cost: 2,
-			text: ' The bees are a particularly aggressive and dangerous species. The hive triggers even if a creature shifts into or while adjacent to it, and the swarm deals 1d6 + 3 poison damage.',
+			text: 'Бджоли належать до особливо агресивного й небезпечного виду. Вулик спрацьовує, навіть якщо істота зміщується в нього або поруч із ним, а рій завдає 1d6 + 3 отруйної шкоди.',
 			sections: []
 		}
 	],
@@ -91,17 +91,17 @@ export const brambles: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'Each square of brambles must be individually destroyed.'
+					description: 'Кожну клітинку заростей треба знищувати окремо.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature enters a square of brambles without shifting.'
+					description: 'Істота входить у клітинку заростей без зміщення.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
-					description: 'A creature takes 1 damage per square of brambles they enter.'
+					description: 'Істота отримує 1 шкоди за кожну клітинку заростей, у яку входить.'
 				})
 			]
 		}
@@ -111,7 +111,7 @@ export const brambles: Terrain = {
 			id: 'poisonous-thorns',
 			label: 'Poisonous Thorns',
 			cost: 1,
-			text: 'The brambles are poisonous. Any creature who takes damage from brambles is also bleeding (save ends).',
+			text: 'Зарості отруйні. Будь-яка істота, що отримує шкоду від заростей, також отримує кровотечу (рят. кидок закінчує).',
 			sections: []
 		}
 	],
@@ -155,22 +155,22 @@ export const corrosivePool: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'The pool must be completely destroyed'
+					description: 'Басейн треба повністю знищити.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature or object enters the corrosive pool or starts their turn there. The liquid in the pool is also highly volatile (see Explosive Reaction below).'
+					description: 'Істота чи об’єкт входить у їдкий басейн або починає там свій хід. Рідина в басейні також надзвичайно летка (див. Explosive Reaction нижче).'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
-					description: 'A creature or object takes 3 acid damage if they start their turn in the pool, and takes 3 acid damage for each square of the pool they enter.'
+					description: 'Істота чи об’єкт отримують 3 кислотної шкоди, якщо починають свій хід у басейні, і 3 кислотної шкоди за кожну клітинку басейну, у яку входять.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'allied-awareness',
 					name: 'Allied Awareness',
-					description: 'Allies who have weapons are equipped with torches. Any ally can use a maneuver to throw a torch up to 5 squares and deal 1 fire damage to the pool, triggering Explosive Reaction.'
+					description: 'Союзники зі зброєю мають смолоскипи. Будь-який союзник може як маневр кинути смолоскип на відстань до 5 клітинок і завдати басейну 1 вогняної шкоди, спровокувавши Explosive Reaction.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
@@ -184,12 +184,12 @@ export const corrosivePool: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '3 fire damage; M < 1 burning (save ends)',
-									tier2: '6 fire damage; M < 2 burning (save ends)',
-									tier3: '9 fire damage; M < 3 burning (save ends)'
+									tier1: '3 вогняної шкоди; С < 1 палає (рят. кидок закінчує)',
+									tier2: '6 вогняної шкоди; С < 2 палає (рят. кидок закінчує)',
+									tier3: '9 вогняної шкоди; С < 3 палає (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The liquid in the pool is consumed. This ability has a double edge against any target in the pool. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. Any target with acid weakness takes extra damage from this ability and while burning as if the fire damage were acid damage. ')
+							FactoryLogic.createAbilitySectionText('Рідина в басейні згорає. Ця здібність має подвійну перевагу проти будь-якої цілі в басейні. Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди наприкінці кожного раунду. Будь-яка ціль із вразливістю до кислоти отримує додаткову шкоду від цієї здібності та під час горіння, наче вогняна шкода була кислотною.')
 						]
 					})
 				})
@@ -237,12 +237,12 @@ export const frozenPond: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'Destroying a square of the frozen pond turns the square into shallow icy water.'
+					description: 'Знищення клітинки замерзлого ставу перетворює її на мілку крижану воду.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature moves into a pond’s square without shifting.'
+					description: 'Істота переміщується в клітинку ставу без зміщення.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -253,7 +253,7 @@ export const frozenPond: Terrain = {
 					ability: FactoryLogic.createAbility({
 						id: 'effect-slippery-surface',
 						name: 'Slippery Surface',
-						type: FactoryLogic.type.createTrigger('A creature or object enters a square of the frozen pond without shifting.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Істота чи об’єкт входять у клітинку замерзлого ставу без зміщення.', { free: true }),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'The triggering creature or object',
@@ -261,12 +261,12 @@ export const frozenPond: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'Push 1 in the direction the target was moving',
-									tier2: 'Push 2 in the direction the target was moving; Л < 1 slowed (save ends)',
-									tier3: 'Push 3 in the direction the target was moving; Л < 2 prone and can’t stand (save ends)'
+									tier1: 'Відштовхнути на 1 у напрямку руху цілі',
+									tier2: 'Відштовхнути на 2 у напрямку руху цілі; Л < 1 сповільнений (рят. кидок закінчує)',
+									tier3: 'Відштовхнути на 3 у напрямку руху цілі; Л < 2 розпластаний і не може встати (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The triggering creature’s movement ends, then they are force moved. If the target triggered this ability by being force moved, this ability gains an edge and any remaining forced movement distance is added to the ability’s forced movement. The ability’s forced movement doesn’t trigger the ability again.')
+							FactoryLogic.createAbilitySectionText('Рух істоти, що спровокувала ефект, закінчується, після чого її примусово переміщують. Якщо ціль спровокувала цю здібність тим, що її примусово перемістили, здібність отримує перевагу, а будь-яка невикористана дистанція примусового переміщення додається до примусового переміщення цієї здібності. Примусове переміщення цієї здібності не спровоковує її знову.')
 						]
 					})
 				}),
@@ -274,7 +274,7 @@ export const frozenPond: Terrain = {
 					ability: FactoryLogic.createAbility({
 						id: 'effect-icy-water',
 						name: 'Icy Water',
-						type: FactoryLogic.type.createTrigger('A creature or object enters or falls prone in a square of the frozen pond.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Істота або предмет заходить у клітинку мерзлого ставка або падає там розпластаною.', { free: true }),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'The triggering creature or object',
@@ -282,12 +282,12 @@ export const frozenPond: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'Slide 1',
-									tier2: '1 cold damage; M < 1 slowed (save ends)',
-									tier3: '3 cold damage; M < 2 restrained (save ends)'
+									tier1: 'Зсунути на 1',
+									tier2: '1 холодної шкоди; С < 1 сповільнений (рят. кидок закінчує)',
+									tier3: '3 холодної шкоди; С < 2 скутий (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The triggering creature’s movement ends, then they are force moved if applicable.')
+							FactoryLogic.createAbilitySectionText('Рух істоти, що спровокувала ефект, закінчується, після чого її примусово переміщують, якщо це можливо.')
 						]
 					})
 				})
@@ -300,9 +300,9 @@ export const frozenPond: Terrain = {
 			label: 'Thin Ice',
 			cost: 1,
 			text: `
-The ice covering the pond is thin and the water is deeper. Whenever a creature or object enters or falls prone in a square of the frozen pond, that square is destroyed and replaced with icy water. The Icy Water ability replaces Slippery Surface.
+Крига, що вкриває ставок, тонка, а вода під нею глибша. Щоразу, коли істота або предмет заходить у клітинку мерзлого ставка або падає там розпластаною, ця клітинка руйнується і замінюється крижаною водою. Здібність Icy Water замінює Slippery Surface.
 
-Any creature who starts their turn in the icy water takes 1 cold damage. If the water is deep enough, a creature can swim beneath the surface of the frozen pond, but takes this cold damage while doing so.`,
+Будь-яка істота, що починає свій хід у крижаній воді, отримує 1 шкоду холодом. Якщо вода достатньо глибока, істота може плисти під поверхнею мерзлого ставка, але під час цього все одно отримує цю шкоду холодом.`,
 			sections: []
 		}
 	],
@@ -346,12 +346,12 @@ export const lava: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'Each square of lava must be individually destroyed.'
+					description: 'Кожну клітинку лави треба знищувати окремо.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature or object enters the lava or starts their turn there, or starts their turn adjacent to the lava.'
+					description: 'Істота чи об’єкт входять у лаву, починають там свій хід або починають свій хід поруч із лавою.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -362,7 +362,7 @@ export const lava: Terrain = {
 					ability: FactoryLogic.createAbility({
 						id: 'effect-liquid-hot-magma',
 						name: 'Liquid Hot Magma',
-						type: FactoryLogic.type.createTrigger('A creature or object enters the lava or starts their turn there, or starts their turn adjacent to the lava.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Істота чи об’єкт входять у лаву, починають там свій хід або починають свій хід поруч із лавою.', { free: true }),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(1)],
 						target: 'The triggering creature or object',
@@ -370,9 +370,9 @@ export const lava: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '5 fire damage; M < 1 the tareget is burning (save ends)',
-									tier2: '9 fire damage; M < 2 the target is burning (save ends)',
-									tier3: '12 fire damage; M < 3 the target is burning (save ends)'
+									tier1: '5 вогняної шкоди; С < 1 ціль палає (рят. кидок закінчує)',
+									tier2: '9 вогняної шкоди; С < 2 ціль палає (рят. кидок закінчує)',
+									tier3: '12 вогняної шкоди; С < 3 ціль палає (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Якщо ціль знаходиться поруч із лавою, але не в ній, ця здібність отримує шкоду (bane). Палаюча істота отримує 1d6 вогняної шкоди на початку кожного свого ходу. Палаючий обʼєкт отримує 1d6 вогняної шкоди в кінці кожного раунду.')
@@ -387,7 +387,7 @@ export const lava: Terrain = {
 			id: 'magma-flow',
 			label: 'Magma Flow',
 			cost: 4,
-			text: 'The lava is flowing! At the start of each round, add one square of lava adjacent to an existing square of lava.',
+			text: 'Лава тече! На початку кожного раунду додайте одну клітинку лави поруч з уже наявною клітинкою лави.',
 			sections: []
 		}
 	],
@@ -400,19 +400,19 @@ export const lava: Terrain = {
 export const quicksand: Terrain = {
 	id: 'terrain-quicksand',
 	name: 'Quicksand',
-	description: 'When this patch of sand is stepped on, it is revealed to be a slurry saturated by water—and ready to draw creatures down to their doom.',
+	description: 'Коли на цю ділянку піску наступають, з’ясовується, що це водяниста трясовина, готова затягнути істот у загибель.',
 	category: TerrainCategory.Environmental,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Hexer, TerrainRoleType.Hazard),
 	encounterValue: 3,
-	area: '10 x 10 patch',
+	area: 'Ділянка 10 x 10',
 	direction: '',
 	link: '',
 	stamina: {
 		base: 0,
 		perSquare: 0
 	},
-	size: 'One or more squares of terrain',
+	size: 'Одна або більше клітинок місцевості',
 	damageMods: [],
 	sections: [
 		{
@@ -426,7 +426,7 @@ export const quicksand: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature or object enters the quicksand or starts their turn there.'
+					description: 'Істота чи об’єкт входять у хисткі піски або починають там свій хід.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -436,13 +436,13 @@ export const quicksand: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'hidden',
 					name: 'Hidden',
-					description: 'The quicksand is hidden until triggered or detected.'
+					description: 'Хисткі піски приховано, доки вони не спрацюють або їх не виявлять.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'effect-grasping-depths',
 						name: 'Grasping Depths',
-						type: FactoryLogic.type.createTrigger('A creature or object enters the quicksand or starts their turn there.', { free: true }),
+						type: FactoryLogic.type.createTrigger('Істота чи об’єкт входять у хисткі піски або починають там свій хід.', { free: true }),
 						keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee(0)],
 						target: 'Одна істота або предмет',
@@ -450,12 +450,12 @@ export const quicksand: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'M < 0 slowed (save ends)',
-									tier2: 'M < 1 restrained (save ends)',
-									tier3: 'M < 2 restrained (save ends)'
+									tier1: 'С < 0 сповільнений (рят. кидок закінчує)',
+									tier2: 'С < 1 скутий (рят. кидок закінчує)',
+									tier3: 'С < 2 скутий (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('This ability takes a bane if a triggering creature shifted into the quicksand. A character who starts their turn restrained this way is suffocating.')
+							FactoryLogic.createAbilitySectionText('Ця здібність отримує шкоду, якщо істота, що її спровокувала, змістилася в хисткі піски. Персонаж, який починає свій хід скутим таким чином, задихається.')
 						]
 					})
 				})
@@ -472,19 +472,19 @@ export const quicksand: Terrain = {
 export const toxicPlants: Terrain = {
 	id: 'terrain-toxic-plants',
 	name: 'Toxic Plants',
-	description: 'Colorful mushrooms or lovely flowering plants release a cloud of spores or pollen when disturbed, causing creatures to fall into a magical slumber.',
+	description: 'Барвисті гриби або гарні квітучі рослини при турбуванні випускають хмару спор чи пилку, занурюючи істот у магічний сон.',
 	category: TerrainCategory.Environmental,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(MonsterRoleType.Hexer, TerrainRoleType.Hazard),
 	encounterValue: 2,
-	area: '10 x 10 field',
+	area: 'Ділянка 10 x 10',
 	direction: '',
 	link: '',
 	stamina: {
 		base: 0,
 		perSquare: 3
 	},
-	size: 'One or more squares of terrain',
+	size: 'Одна або більше клітинок місцевості',
 	damageMods: [],
 	sections: [
 		{
@@ -493,12 +493,12 @@ export const toxicPlants: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'Each square of plants must be individually destroyed.'
+					description: 'Кожну клітинку рослин треба знищувати окремо.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'activate',
 					name: 'Activate',
-					description: 'A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without shifting.'
+					description: 'Істота починає свій хід у ділянці отруйних рослин або входить у клітинку отруйних рослин без зміщення.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -509,7 +509,7 @@ export const toxicPlants: Terrain = {
 					ability: FactoryLogic.createAbility({
 						id: 'effect-sleep-spores',
 						name: 'Sleep Spores',
-						type: FactoryLogic.type.createTrigger('A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without shifting.'),
+						type: FactoryLogic.type.createTrigger('Істота починає свій хід у ділянці отруйних рослин або входить у клітинку отруйних рослин без зміщення.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike],
 						distance: [FactoryLogic.distance.createMelee()],
 						target: 'The triggering creature',
@@ -517,12 +517,12 @@ export const toxicPlants: Terrain = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'M < 0 dazed (save ends)',
-									tier2: 'M < 1 dazed (save ends)',
-									tier3: 'M < 2 dazed (save ends)'
+									tier1: 'С < 0 приголомшений (рят. кидок закінчує)',
+									tier2: 'С < 1 приголомшений (рят. кидок закінчує)',
+									tier3: 'С < 2 приголомшений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While dazed this way, a target who starts their turn in the area of the toxic plants falls prone and can’t stand.')
+							FactoryLogic.createAbilitySectionText('Поки ціль приголомшена таким чином, вона, починаючи свій хід у зоні отруйних рослин, падає розпластаною і не може встати.')
 						]
 					})
 				})
@@ -534,14 +534,14 @@ export const toxicPlants: Terrain = {
 			id: 'poisonous-spores',
 			label: 'Poisonous Spores',
 			cost: 2,
-			text: 'Any creature dazed by this hazard takes 1d6 poison damage at the start of each of their turns.',
+			text: 'Будь-яка істота, приголомшена цією небезпекою, отримує 1d6 отруйної шкоди на початку кожного свого ходу.',
 			sections: []
 		},
 		{
 			id: 'carnivorous-plants',
 			label: 'Carnivorous Plants',
 			cost: 2,
-			text: ' The plants are carnivorous and attempt to slowly digest any creature who falls among them. Any creature who starts their turn prone in the area takes 4 acid damage.',
+			text: 'Рослини мʼясоїдні й намагаються повільно перетравити будь-яку істоту, що падає серед них. Будь-яка істота, яка починає свій хід розпластаною в цій зоні, отримує 4 кислотної шкоди.',
 			sections: []
 		}
 	],

@@ -55,9 +55,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 				'A griffon acting this turn unleashes a hideous screech at one enemy within 5 squares of them, forcing that creature to make an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: 'Frightened (save ends)',
-					tier2: 'Frightened (EoT)',
-					tier3: 'no effect'
+					tier1: 'зляканий (рят. кидок закінчує)',
+					tier2: 'зляканий (до кінця ходу)',
+					tier3: 'без ефекту'
 				})
 			]
 		}),
@@ -99,12 +99,12 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage; the griffon can shift 1 square',
-									tier2: '10 damage; the griffon can shift 2 square',
-									tier3: '13 damage; the griffon can shift 3 square'
+									tier1: '7 шкоди; the griffon може зміститися 1 клітинку',
+									tier2: '10 шкоди; the griffon може зміститися 2 клітинку',
+									tier3: '13 шкоди; the griffon може зміститися 3 клітинку'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge main action, the griffon can grab one of the targets.')
+							FactoryLogic.createAbilitySectionText('If this ability is used as part of the Charge основна дія, the griffon can grab one of the targets.')
 						]
 					})
 				}),
@@ -122,9 +122,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage',
-									tier2: '6 damage; A<1 push 3',
-									tier3: '9 damage; A<2 push 4; prone'
+									tier1: '4 шкоди',
+									tier2: '6 шкоди; Л<1 відштовхнути на 3',
+									tier3: '9 шкоди; Л<2 відштовхнути на 4; розпластаний'
 								})
 							)
 						]
@@ -144,9 +144,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'Push 3; A<0 forced movement is vertical',
-									tier2: 'Push 4; A<1 forced movement is vertical',
-									tier3: 'Push 5; A<2 forced movement is vertical'
+									tier1: 'Відштовхнути на 3; Л<0 примусове переміщення є вертикальним',
+									tier2: 'Відштовхнути на 4; Л<1 примусове переміщення є вертикальним',
+									tier3: 'Відштовхнути на 5; Л<2 примусове переміщення є вертикальним'
 								})
 							)
 						]
@@ -167,7 +167,7 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 				FactoryLogic.feature.create({
 					id: 'griffon-1-feature-5',
 					name: 'Beast of Prey',
-					description: 'While grabbed by the griffon, a creature has a double bane on the Escape Grab maneuver..'
+					description: 'While grabbed by the griffon, a creature has a double bane on the Escape Grab маневр..'
 				}),
 				FactoryLogic.feature.create({
 					id: 'griffon-1-feature-6',
@@ -203,9 +203,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage; push 1',
-									tier2: '11 damage; one target is pushed up to 2 squares; the other target is vertical pushed up to 2 squares',
-									tier3: '14 damage; one target is pushed up to 2 squares and knocked prone; the other target is vertical pushed up to 3 squares'
+									tier1: '7 шкоди; відштовхнути на 1',
+									tier2: '11 шкоди; одну ціль можна відштовхнути до 2 клітинок; the other target is вертикально штовхнути до 2 клітинок',
+									tier3: '14 шкоди; одну ціль можна відштовхнути до 2 клітинок і knocked розпластаний; the other target is вертикально штовхнути до 3 клітинок'
 								})
 							)
 						]
@@ -237,9 +237,9 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'Push 2; M<0 forced movement is vertical',
-									tier2: 'Push 4; M<1 forced movement is vertical',
-									tier3: 'Push 6; M<2 forced movement is vertical'
+									tier1: 'Відштовхнути на 2; С<0 примусове переміщення є вертикальним',
+									tier2: 'Відштовхнути на 4; С<1 примусове переміщення є вертикальним',
+									tier3: 'Відштовхнути на 6; С<2 примусове переміщення є вертикальним'
 								})
 							)
 						]
@@ -253,14 +253,14 @@ Daring poachers sometimes attempt to steal griffon eggs from wild aeries, but su
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The griffon dives down onto the target, taking no damage from falling if they reach the ground. The target takes 3 damage for each square the griffon dove, and if they have A<2, they are grabbed or knocked prone.')
+							FactoryLogic.createAbilitySectionText('The griffon dives down onto the target, taking no damage from falling if they reach the ground. The target takes 3 damage for each square the griffon dove, and if they have Л<2, they are grabbed or knocked prone.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'griffon-2-feature-5',
 					name: 'Beast of Prey',
-					description: 'While grabbed by the griffon, a creature has a double bane on the Escape Grab maneuver.'
+					description: 'While grabbed by the griffon, a creature has a double bane on the Escape Grab маневр.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'griffon-2-feature-6',

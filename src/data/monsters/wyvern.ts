@@ -67,9 +67,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 				'Each wyvern’s anger ﬁlls the encounter map with a thick miasma of hated. Each enemy in the encounter makes an **Intuition test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: 'The target is taunted by the nearest creature or object (save ends). While the target is taunted this way, power rolls against them have a double edge.',
-					tier2: 'The target is taunded by the nearest creature or object (save ends).',
-					tier3: 'No effect.'
+					tier1: 'Ціль is спровокований by the nearest creature або object (рят. кидок закінчує). While ціль is спровокований this way, кидки сили against them have a double edge.',
+					tier2: 'Ціль is taunded by the nearest creature або object (рят. кидок закінчує).',
+					tier3: 'Без ефекту.'
 				})
 			]
 		})
@@ -101,9 +101,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '14 damage; M < 2 bleeding (save ends)',
-								tier3: '17 damage; M < 3 bleeding (save ends)'
+								tier1: '9 шкоди',
+								tier2: '14 шкоди; С < 2 кровотеча (рят. кидок закінчує)',
+								tier3: '17 шкоди; С < 3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'One target hidden from the lurker takes an extra 6 acid damage.'
@@ -123,9 +123,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 acid damage; M < 1 weakened (save ends)',
-								tier2: '16 acid damage; M < 2 weakened (save ends)',
-								tier3: '20 acid damage; M < 3 weakened (save ends)'
+								tier1: '10 кислотної шкоди; С < 1 ослаблений (рят. кидок закінчує)',
+								tier2: '16 кислотної шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+								tier3: '20 кислотної шкоди; С < 3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText(
 								'A target weakened this way takes 1d4 acid damage at the start of each of their turns.'
@@ -203,9 +203,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '14 damage; M < 2 slowed (save ends)',
-								tier3: '17 damage; M < 3 slowed (save ends)'
+								tier1: '9 шкоди',
+								tier2: '14 шкоди; С < 2 сповільнений (рят. кидок закінчує)',
+								tier3: '17 шкоди; С < 3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target slowed this way is already slowed, they are instead restrained (save ends).')
 						]
@@ -222,9 +222,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; Л < 1 3 acid damage',
-								tier2: '11 damage; Л < 2 3 acid damage',
-								tier3: '14 damage; Л < 3 3 acid damage'
+								tier1: '6 шкоди; Л < 1 3 кислотної шкоди',
+								tier2: '11 шкоди; Л < 2 3 кислотної шкоди',
+								tier3: '14 шкоди; Л < 3 3 кислотної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -245,9 +245,9 @@ Though they superficially resemble dragons, wyverns are not dragons or dragon-ki
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; Л < 1 grabbed',
-								tier2: '14 damage; Л < 2 grabbed',
-								tier3: '17 damage; Л < 3 grabbed and the target takes a bane on the Escape Grab maneuver'
+								tier1: '9 шкоди; Л < 1 схоплений',
+								tier2: '14 шкоди; Л < 2 схоплений',
+								tier3: '17 шкоди; Л < 3 схоплений і ціль takes a bane on the Escape Grab маневр'
 							}))
 						]
 					})

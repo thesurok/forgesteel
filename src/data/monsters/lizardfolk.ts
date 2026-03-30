@@ -67,12 +67,12 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Agility],
-							tier1: 'Restrained (save ends).',
-							tier2: 'Restrained (EoT).',
-							tier3: 'No effect.'
+							tier1: 'скутий (рят. кидок закінчує).',
+							tier2: 'скутий (до кінця ходу).',
+							tier3: 'Без ефекту.'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('Any creature not also restrained by a net trap who is adjacent to a creature restrained by the trap can free them as a maneuver.')
+					FactoryLogic.createAbilitySectionText('Any creature not also restrained by a net trap who is adjacent to a creature restrained by the trap can free them as a маневр.')
 				]
 			})
 		}),
@@ -85,8 +85,8 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 				'A lizardfolk acting this turn unearths a magical size 2 pit that is 2 squares deep and filled with water. Any lizardfolk who moves into, then exits the pit on their turn gains 10 temporary Stamina, regrows their tail if applicable, and ends one effect on them that can be ended by a saving throw.',
 				'While adjacent to the pit, any creature who can burrow or who has the Nature skill can make a **Might test** or a **Reason test** to drain it.',
 				FactoryLogic.createPowerRoll({
-					tier1: 'The creature falls into the pit and is knocked prone.',
-					tier2: 'The creature fails to empty the pit.',
+					tier1: 'Істота falls into the pit і is knocked розпластаний.',
+					tier2: 'Істота fails to empty the pit.',
 					tier3: 'The pit empties of water.'
 				})
 			]
@@ -129,9 +129,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage; slide 2',
-								tier3: '3 damage; slide 2'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди; зсунути на 2',
+								tier3: '3 шкоди; зсунути на 2'
 							}))
 						]
 					})
@@ -170,9 +170,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The target takes a bane on their next strike.')
 						]
@@ -212,9 +212,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; pull 1, or the tonguer can shift 1 square toward the target',
-								tier2: '4 damage; pull 2, or the tonguer shifts up to 2 squares toward the target',
-								tier3: '5 damage; pull 3, or the tonguer shifts up to 3 squares toward the target'
+								tier1: '2 шкоди; притягнути на 1, або the tonguer може зміститися 1 клітинку toward ціль',
+								tier2: '4 шкоди; притягнути на 2, або the tonguer shifts до 2 клітинок toward ціль',
+								tier3: '5 шкоди; притягнути на 3, або the tonguer shifts до 3 клітинок toward ціль'
 							})),
 							FactoryLogic.createAbilitySectionText('If the forced movement or the shift leaves the target adjacent to the tonguer, the target is also grabbed.')
 						]
@@ -253,9 +253,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; A<0 restrained (save ends)',
-								tier2: '7 damage; A<1 restrained (save ends)',
-								tier3: '9 damage; A<2 restrained (save ends)'
+								tier1: '5 шкоди; Л<0 скутий (рят. кидок закінчує)',
+								tier2: '7 шкоди; Л<1 скутий (рят. кидок закінчує)',
+								tier3: '9 шкоди; Л<2 скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -272,9 +272,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 acid damage; m<0 the target has line of effect only within 4 squares (save ends)',
-								tier2: '7 acid damage; m<1 the target has line of effect only within 3 squares (save ends)',
-								tier3: '9 acid damage; m<2 the target has line of effect only within 2 squares (save ends)'
+								tier1: '5 кислотної шкоди; С < 0 ціль має лінію ефекту лише в межах 4 клітинок (рят. кидок закінчує)',
+								tier2: '7 кислотної шкоди; С < 1 ціль має лінію ефекту лише в межах 3 клітинок (рят. кидок закінчує)',
+								tier3: '9 кислотної шкоди; С < 2 ціль має лінію ефекту лише в межах 2 клітинок (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -312,9 +312,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage',
-								tier3: '12 damage; A<2 bleeding (save ends)'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди',
+								tier3: '12 шкоди; Л<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the scaletooth has the target grabbed, the potency of this ability increases by 1.')
 						]
@@ -332,9 +332,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; slide 1',
-								tier2: '8 damage; slide 2; M<1 grappled if within 2 squares of the scaletooth',
-								tier3: '10 damage; slide 3; M<2 grappled if within 2 squares of the scaletooth'
+								tier1: '5 шкоди; зсунути на 1',
+								tier2: '8 шкоди; зсунути на 2; С<1 grappled якщо within 2 клітинок of the scaletooth',
+								tier3: '10 шкоди; зсунути на 3; С<2 grappled якщо within 2 клітинок of the scaletooth'
 							})),
 							FactoryLogic.createAbilitySectionText('The scaletooth needs their tail to use this ability. The scaletooth can’t grapple more than one creature or object with this ability.')
 						]
@@ -373,9 +373,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage',
-								tier2: '7 damage',
-								tier3: '9 damage; prone'
+								tier1: '5 шкоди',
+								tier2: '7 шкоди',
+								tier3: '9 шкоди; розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('If the skyterror is flying, they shift up to 4 squares.')
 						]
@@ -392,9 +392,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; M<0 weakened (save ends)',
-								tier2: '5 damage; M<1 weakened (save ends)',
-								tier3: '7 damage; M<2 weakened (save ends)'
+								tier1: '3 шкоди; С<0 ослаблений (рят. кидок закінчує)',
+								tier2: '5 шкоди; С<1 ослаблений (рят. кидок закінчує)',
+								tier3: '7 шкоди; С<2 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Any creature who ends their turn adjacent to a target weakened this way is weakened until the end of their next turn.')
 						]
@@ -438,9 +438,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage; pull 1; A<1 bleeding (save ends)',
-								tier2: '10 damage; pull 1; A<2 bleeding (save ends)',
-								tier3: '12 damage; pull 2; A<3 bleeding (save ends)'
+								tier1: '7 шкоди; притягнути на 1; Л<1 кровотеча (рят. кидок закінчує)',
+								tier2: '10 шкоди; притягнути на 1; Л<2 кровотеча (рят. кидок закінчує)',
+								tier3: '12 шкоди; притягнути на 2; Л<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 1,
@@ -461,9 +461,9 @@ With a wide array of strong grab and forced movement abilities, lizardfolk tacti
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; M<1 dazed (save ends)',
-								tier2: '12 damage; M<2 dazed (save ends)',
-								tier3: '15 damage; M<3 dazed (save ends)'
+								tier1: '8 шкоди; С<1 приголомшений (рят. кидок закінчує)',
+								tier2: '12 шкоди; С<2 приголомшений (рят. кидок закінчує)',
+								tier3: '15 шкоди; С<3 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The target is no longer grabbed by the deathrex, and the deathrex slides them up to 5 squares.')
 						]

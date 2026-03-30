@@ -45,17 +45,17 @@ export const censor: HeroClass = {
 					gains: [
 						{
 							tag: 'start',
-							trigger: 'Start of your turn',
+							trigger: 'На початку вашого ходу',
 							value: '2'
 						},
 						{
 							tag: 'take-damage',
-							trigger: 'The first time each round that a creature judged by you deals damage to you',
+							trigger: 'Вперше за раунд, коли істота під вашим судом завдає вам шкоди',
 							value: '1'
 						},
 						{
 							tag: 'deal-damage',
-							trigger: 'The first time each round that you deal damage to a creature judged by you',
+							trigger: 'Вперше за раунд, коли ви завдаєте шкоди істоті під вашим судом',
 							value: '1'
 						}
 					]
@@ -106,7 +106,7 @@ export const censor: HeroClass = {
 						id: 'censor-1-6',
 						name: 'Моє життя за твоє',
 						description: 'Ви спрямовуєте частину своєї життєвої сили, щоб надати собі або союзнику більшу витривалість.',
-						type: FactoryLogic.type.createTrigger('The target starts their turn or takes damage.'),
+						type: FactoryLogic.type.createTrigger('Ціль починає свій хід або отримує шкоду.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Ви або один союзник',
@@ -185,7 +185,7 @@ export const censor: HeroClass = {
 					id: 'censor-4-4',
 					name: 'Гнів понад гнів',
 					tag: 'deal-damage 2',
-					trigger: 'The first time each round that you deal damage to a creature judged by you',
+					trigger: 'Вперше за раунд, коли ви завдаєте шкоди істоті під вашим судом',
 					value: '2',
 					replacesTags: ['deal-damage']
 				}),
@@ -261,7 +261,7 @@ export const censor: HeroClass = {
 					id: 'censor-7-3',
 					name: 'Сфокусований гнів',
 					tag: 'start 2',
-					trigger: 'Start of your turn',
+					trigger: 'На початку вашого ходу',
 					value: '3',
 					replacesTags: ['start']
 				}),

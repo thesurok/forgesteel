@@ -520,9 +520,9 @@ export class RetainerLogic {
 							sections: [
 								FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
-									tier1: '11 damage; one target who has M < [слабкий] is grabbed',
-									tier2: '16 damage; one target who has M < [середній] is grabbed',
-									tier3: '21 damage; one target who has M < [сильний] is grabbed'
+									tier1: '11 damage; one target who has С < [слабкий] is grabbed',
+									tier2: '16 damage; one target who has С < [середній] is grabbed',
+									tier3: '21 damage; one target who has С < [сильний] is grabbed'
 								})),
 								FactoryLogic.createAbilitySectionText('Ретейнер зміщується на до 2 клітинок і може перемістити разом із собою істоту, схоплену цією здібністю.')
 							]

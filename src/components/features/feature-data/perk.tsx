@@ -58,7 +58,7 @@ interface EditProps {
 }
 
 export const EditPerk = (props: EditProps) => {
-	const [ data, setData ] = useState<FeaturePerkData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeaturePerkData>(Utils.copy(props.data));
 
 	const setPerkLists = (value: PerkList[]) => {
 		const copy = Utils.copy(data);
@@ -83,7 +83,7 @@ export const EditPerk = (props: EditProps) => {
 				placeholder='Perk lists'
 				mode='multiple'
 				allowClear={true}
-				options={[ PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special ].map(option => ({ value: option }))}
+				options={[PerkList.Crafting, PerkList.Exploration, PerkList.Interpersonal, PerkList.Intrigue, PerkList.Lore, PerkList.Supernatural, PerkList.Special].map(option => ({ value: option }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				value={data.lists}
 				onChange={setPerkLists}
@@ -104,8 +104,8 @@ interface ConfigProps {
 }
 
 export const ConfigPerk = (props: ConfigProps) => {
-	const [ perkSelectorOpen, setPerkSelectorOpen ] = useState<boolean>(false);
-	const [ selectedPerk, setSelectedPerk ] = useState<Perk | null>(null);
+	const [perkSelectorOpen, setPerkSelectorOpen] = useState<boolean>(false);
+	const [selectedPerk, setSelectedPerk] = useState<Perk | null>(null);
 
 	const currentPerkIDs = HeroLogic.getFeatures(props.hero)
 		.map(f => f.feature)
@@ -125,7 +125,7 @@ export const ConfigPerk = (props: ConfigProps) => {
 
 		return (
 			<Button className='status-warning' block={true} onClick={() => setPerkSelectorOpen(true)}>
-				Choose a perk
+				Оберіть перевагу
 			</Button>
 		);
 	};

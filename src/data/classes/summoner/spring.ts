@@ -74,7 +74,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-1',
 										name: 'Water Weird',
-										description: 'Once per turn during their move action, each nixie under your control can teleport to a body of water within 5. The soakreed can’t teleport into water created by their own soaking bog.'
+										description: 'Once per turn during their дія руху, each nixie under your control can teleport to a body of water within 5. The soakreed can’t teleport into water created by their own soaking bog.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-1-4a-2',
@@ -213,9 +213,9 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '5 acid damage; M < [слабкий] weakened (EoT)',
-														tier2: '7 acid damage; M < [середній] weakened (EoT)',
-														tier3: '9 acid damage; M < [сильний] weakened (save ends)'
+														tier1: '5 кислотної шкоди; С < [слабкий] ослаблений (до кінця ходу)',
+														tier2: '7 кислотної шкоди; С < [середній] ослаблений (до кінця ходу)',
+														tier3: '9 кислотної шкоди; С < [сильний] ослаблений (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('After the hydrain’s squad uses this ability, you or one ally within distance can spend a Recovery or end a condition.')
@@ -417,12 +417,12 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2a-1',
 										name: 'Water Weird',
-										description: 'Once per turn during their move action, each nixie under your control can teleport to a body of water within 6. The hemloche can’t teleport into water created by their own whirling waves.'
+										description: 'Once per turn during their дія руху, each nixie under your control can teleport to a body of water within 6. The hemloche can’t teleport into water created by their own whirling waves.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2a-2',
 										name: 'Whirling Waves',
-										description: 'The area within 1 square of the hemloche is filled with churning water and is considered difficult terrain. At the end of the hemloche’s turn, the hemloche can choose to slide each enemy in the affected area 3 squares. An enemy that takes damage while being force moved is also M < [середній] knocked prone.'
+										description: 'The area within 1 square of the hemloche is filled with churning water and is considered difficult terrain. At the end of the hemloche’s turn, the hemloche can choose to slide each enemy in the affected area 3 squares. An enemy that takes damage while being force moved is also С < [середній] knocked prone.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2a-3',
@@ -464,7 +464,7 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2b-2',
 										name: 'Flash Strike',
-										description: 'The foxglow’s melee strikes inflict I < [сильний] dazed (EoT) if they were hidden when they make the strike.'
+										description: 'The foxglow’s melee strikes inflict І < [сильний] dazed (EoT) if they were hidden when they make the strike.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-2-2b-3',
@@ -510,9 +510,9 @@ You gain a bane on the test for each subsequent rumor you collect either on the 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '3 damage; pull 2; Л < [слабкий] bleeding (EoT)',
-														tier2: '6 damage; pull 3; Л < [середній] bleeding (EoT)',
-														tier3: '8 damage; pull 4; Л < [сильний] bleeding (EoT)'
+														tier1: '3 шкоди; притягнути на 2; Л < [слабкий] кровотеча (до кінця ходу)',
+														tier2: '6 шкоди; притягнути на 3; Л < [середній] кровотеча (до кінця ходу)',
+														tier3: '8 шкоди; притягнути на 4; Л < [сильний] кровотеча (до кінця ходу)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target can’t shift while bleeding from this ability.')
@@ -552,7 +552,7 @@ Each ally that gains temporary Stamina from your Pixie Dust feature also gains o
 
 * **Flight**: Their speed gains the Fly keyword.
 * **Vanish**: They become invisible.
-* **Water Weird**: As a free maneuver once per turn, they can teleport to a body of water within 5 squares of them.
+* **Water Weird**: As a безкоштовний маневр once per turn, they can teleport to a body of water within 5 squares of them.
 * **Panacea**: They can end one condition affecting them or stand up.`
 				}),
 				FactoryLogic.feature.create({
@@ -597,7 +597,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3a-2',
 										name: 'Water Weird',
-										description: 'Once per turn during their move action, each nixie under your control can teleport to a body of water within 6. The corallia can’t teleport into water created by their own seafoam pool.'
+										description: 'Once per turn during their дія руху, each nixie under your control can teleport to a body of water within 6. The corallia can’t teleport into water created by their own seafoam pool.'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3a-3',
@@ -654,9 +654,9 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '8 poison damage; M < [слабкий] restrained (save ends)',
-														tier2: '12 poison damage; M < [середній] restrained (save ends)',
-														tier3: '17 poison damage; M < [сильний] restrained (save ends)'
+														tier1: '8 отруйної шкоди; С < [слабкий] скутий (рят. кидок закінчує)',
+														tier2: '12 отруйної шкоди; С < [середній] скутий (рят. кидок закінчує)',
+														tier3: '17 отруйної шкоди; С < [сильний] скутий (рят. кидок закінчує)'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('A target restrained by this ability is trapped in a poison- fueled haze and considers each creature within 1 square of them to be an enemy until the condition ends.')
@@ -697,7 +697,7 @@ If your speed previously had the Fly keyword, you can now fly while sneaking an 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3c-2',
 										name: 'Warrior’s Toss',
-										description: 'The olyender’s melee strikes inflict push 4. If the target is force moved into an object, they are M < [середній] knocked prone and can’t stand (save ends).'
+										description: 'The olyender’s melee strikes inflict push 4. If the target is force moved into an object, they are С < [середній] knocked prone and can’t stand (save ends).'
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-5-3c-3',
@@ -791,9 +791,9 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														bonus: 5,
-														tier1: '9 damage; slide 3',
-														tier2: '12 damage; slide 5',
-														tier3: '14 damage; slide 6'
+														tier1: '9 шкоди; зсунути на 3',
+														tier2: '12 шкоди; зсунути на 5',
+														tier3: '14 шкоди; зсунути на 6'
 													})
 												),
 												FactoryLogic.createAbilitySectionText('An ally targeted by this ability can, instead, spend  Recovery and shift the slide amount.')
@@ -803,7 +803,7 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 									FactoryLogic.feature.create({
 										id: 'summoner-3-8-2a-4',
 										name: 'Neurotoxic Strike',
-										description: 'A creature that takes damage from the Attendant’s free strike is I < [середній] unable to establish line of effect beyond 3 squares (EoT). '
+										description: 'A creature that takes damage from the Attendant’s free strike is І < [середній] unable to establish line of effect beyond 3 squares (EoT). '
 									}),
 									FactoryLogic.feature.create({
 										id: 'summoner-3-8-2a-5',

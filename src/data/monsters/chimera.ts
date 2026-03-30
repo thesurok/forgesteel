@@ -48,7 +48,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The chimera takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The chimera takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -57,7 +57,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 			cost: 5,
 			icon: StatBlockIcon.Area,
 			sections: [
-				'The chimera shakes the ground, causing an eruption of loose rocks and debris that creates three size 2 stone objects anywhere on the encounter map. Each creature adjacent to one or more objects when they appear who has A<2 takes 5 damage.'
+				'The chimera shakes the ground, causing an eruption of loose rocks and debris that creates three size 2 stone objects anywhere on the encounter map. Each creature adjacent to one or more objects when they appear who has Л<2 takes 5 damage.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -66,7 +66,7 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 			cost: 7,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				' Until the start of the chimera’s next turn, all areas of the encounter map are shrouded in a thick cloud of ash. All creatures and objects on the map have concealment that the chimera ignores. Additionally, each enemy in the cloud who has I<1 has line of effect only within 3 squares. The potency of this feature increases by 1 each time it’s used.'
+				' Until the start of the chimera’s next turn, all areas of the encounter map are shrouded in a thick cloud of ash. All creatures and objects on the map have concealment that the chimera ignores. Additionally, each enemy in the cloud who has І<1 has line of effect only within 3 squares. The potency of this feature increases by 1 each time it’s used.'
 			]
 		})
 	],
@@ -110,9 +110,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage',
-								tier2: '13 damage',
-								tier3: '16 damage'
+								tier1: '9 шкоди',
+								tier2: '13 шкоди',
+								tier3: '16 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('This strike deals an extra 3 damage if it gains an edge or has a double edge.')
 						]
@@ -130,9 +130,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 fire damage; A<1 3 fire damage',
-								tier2: '5 fire damage; A<2 5 fire damage',
-								tier3: '7 fire damage; A<3 7 fire damage'
+								tier1: '3 вогняної шкоди; Л<1 3 вогняної шкоди',
+								tier2: '5 вогняної шкоди; Л<2 5 вогняної шкоди',
+								tier3: '7 вогняної шкоди; Л<3 7 вогняної шкоди'
 							}))
 						]
 					})
@@ -149,9 +149,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 psychic damage',
-								tier2: '8 psychic damage; I<2 frightened (save ends)',
-								tier3: '10 psychic damage; I<3 frightened (save ends)'
+								tier1: '4 психічної шкоди',
+								tier2: '8 психічної шкоди; І<2 зляканий (рят. кидок закінчує)',
+								tier3: '10 психічної шкоди; І<3 зляканий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -167,9 +167,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'vertical push 2',
-								tier2: 'vertical push 3',
-								tier3: 'vertical push 5'
+								tier1: 'вертикально відштовхнути на 2',
+								tier2: 'вертикально відштовхнути на 3',
+								tier3: 'вертикально відштовхнути на 5'
 							}))
 						]
 					})
@@ -186,9 +186,9 @@ The queen’s resulting fury was said to be felt by the gods. As she screamed, a
 							FactoryLogic.createAbilitySectionText('The chimera shifts up to 5 squares. If they end this shift within distance of the target, make a power roll.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 damage; M<1 slowed (save ends)',
-								tier2: '8 damage; prone; M<2 slowed (save ends)',
-								tier3: '10 damage; prone; M<3 slowed (save ends)'
+								tier1: '6 шкоди; С<1 сповільнений (рят. кидок закінчує)',
+								tier2: '8 шкоди; розпластаний; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '10 шкоди; розпластаний; С<3 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})

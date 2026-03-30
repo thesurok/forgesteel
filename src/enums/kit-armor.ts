@@ -1,6 +1,6 @@
 export enum KitArmor {
-	Light = 'Light Armor',
-	Medium = 'Medium Armor',
-	Heavy = 'Heavy Armor',
-	Shield = 'Shield'
+	Light = 'Легка броня',
+	Medium = 'Середня броня',
+	Heavy = 'Важка броня',
+	Shield = 'Щит'
 }

@@ -11,6 +11,7 @@ import { LanguageType } from '@/enums/language-type';
 import { MonsterUpdateLogic } from '@/logic/update/monster-update-logic';
 import { PlotContentReference } from '@/models/plot';
 import { Sourcebook } from '@/models/sourcebook';
+import { normalizeKit } from '@/utils/kit-proficiencies';
 import { Utils } from '@/utils/utils';
 
 export class SourcebookUpdateLogic {
@@ -315,6 +316,7 @@ export class SourcebookUpdateLogic {
 			if (kit.type === 'Standard') {
 				kit.type = '';
 			}
+			normalizeKit(kit);
 			kit.features.forEach(FeatureUpdateLogic.updateFeature);
 		});
 

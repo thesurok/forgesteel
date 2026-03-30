@@ -55,9 +55,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 				'One ogre acting this turn jumps and lands on their rear, causing a 3 burst shockwave. Each size 1 creature in the area makes a **Might test** or **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: [Characteristic.Might, Characteristic.Agility],
-					tier1: '5 damage; vertical push 3',
-					tier2: '4 damage; vertical push 2',
-					tier3: 'Push 1'
+					tier1: '5 шкоди; вертикально відштовхнути на 3',
+					tier2: '4 шкоди; вертикально відштовхнути на 2',
+					tier3: 'Відштовхнути на 1'
 				})
 			]
 		}),
@@ -108,9 +108,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage; push 2',
-									tier2: '11 damage; push 4',
-									tier3: '14 damage; push 6; prone'
+									tier1: '7 шкоди; відштовхнути на 2',
+									tier2: '11 шкоди; відштовхнути на 4',
+									tier3: '14 шкоди; відштовхнути на 6; розпластаний'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Any target who takes damage from this forced movement takes an extra 4 damage.')
@@ -130,12 +130,12 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage',
-									tier2: '11 damage; grabbed',
-									tier3: '14 damage; grabbed'
+									tier1: '7 шкоди',
+									tier2: '11 шкоди; схоплений',
+									tier3: '14 шкоди; схоплений'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A target grabbed this way takes a bane on the Escape Grab maneuver.')
+							FactoryLogic.createAbilitySectionText('A target grabbed this way takes a bane on the Escape Grab маневр.')
 						]
 					})
 				}),
@@ -153,9 +153,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 3,
-									tier1: '5 damage',
-									tier2: '9 damage',
-									tier3: '12 damage; prone'
+									tier1: '5 шкоди',
+									tier2: '9 шкоди',
+									tier3: '12 шкоди; розпластаний'
 								})
 							)
 						]
@@ -208,13 +208,13 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage',
-									tier2: '10 damage; A<1 vertical push 2',
-									tier3: '13 damage; A<2 vertical slide 3'
+									tier1: '7 шкоди',
+									tier2: '10 шкоди; Л<1 вертикально відштовхнути на 2',
+									tier3: '13 шкоди; Л<2 вертикально зсунути на 3'
 								})
 							),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'Each target who has M<1 is bleeding (save ends).'
+								effect: 'Each target who has С<1 is bleeding (save ends).'
 							})
 						]
 					})
@@ -232,9 +232,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage',
-									tier2: '6 damage; push 2; M<1 prone',
-									tier3: '9 damage; push 4; M<2 prone'
+									tier1: '4 шкоди',
+									tier2: '6 шкоди; відштовхнути на 2; С<1 розпластаний',
+									tier3: '9 шкоди; відштовхнути на 4; С<2 розпластаний'
 								})
 							)
 						]
@@ -253,9 +253,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'I<0 frightened (save ends)',
-									tier2: 'I<1 frightened (save ends)',
-									tier3: 'I<2 frightened (save ends)'
+									tier1: 'І<0 зляканий (рят. кидок закінчує)',
+									tier2: 'І<1 зляканий (рят. кидок закінчує)',
+									tier3: 'І<2 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While a target is frightened this way, any ogre gains an edge on strikes against them.')
@@ -315,9 +315,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '3 damage; A<3 3 damage',
-									tier2: '6 damage; push 3; A<4 4 damage',
-									tier3: '7 damage; prone; A<5 5 damage and restrained (save ends)'
+									tier1: '3 шкоди; Л<3 3 шкоди',
+									tier2: '6 шкоди; відштовхнути на 3; Л<4 4 шкоди',
+									tier3: '7 шкоди; розпластаний; Л<5 5 шкоди і скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The cyclops automatically treats their initial power roll as a 17. They can still roll to determine if they score a critical hit.')
@@ -359,9 +359,9 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '4 damage',
-									tier2: '7 damage; M<3 prone',
-									tier3: '8 damage; prone'
+									tier1: '4 шкоди',
+									tier2: '7 шкоди; С<3 розпластаний',
+									tier3: '8 шкоди; розпластаний'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target who is already prone takes an extra 4 damage.')
@@ -405,13 +405,13 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 						target: 'One creature or object per minion',
 						cost: 'signature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The tantrum unearths a rock or a hunk of terrain and tosses it. If a size 1L, 1M, or 1S creature or object adjacent to the tantrum has A<3 the tantrum can grab them to use as the projectile for this ability.'),
+							FactoryLogic.createAbilitySectionText('The tantrum unearths a rock or a hunk of terrain and tosses it. If a size 1L, 1M, or 1S creature or object adjacent to the tantrum has Л<3 the tantrum can grab them to use as the projectile for this ability.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '4 damage',
-									tier2: '7 damage; push 2',
-									tier3: '8 damage; push 4'
+									tier1: '4 шкоди',
+									tier2: '7 шкоди; відштовхнути на 2',
+									tier3: '8 шкоди; відштовхнути на 4'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A creature or object used as a projectile is vertically pushed 8 (or 13 with a captain), ignoring stability.')

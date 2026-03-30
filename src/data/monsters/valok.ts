@@ -66,7 +66,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 			cost: 3,
 			icon: StatBlockIcon.Self,
 			sections: [
-				'One valok acting this turn takes an additional main action.'
+				'One valok acting this turn takes an additional основна дія.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -116,9 +116,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '13 damage',
-									tier2: '18 damage',
-									tier3: '22 damage; Л < 4 bleeding (save ends)'
+									tier1: '13 шкоди',
+									tier2: '18 шкоди',
+									tier3: '22 шкоди; Л < 4 кровотеча (рят. кидок закінчує)'
 								})
 							)
 						]
@@ -137,9 +137,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '15 damage; M < 2 weakened (save ends)',
-									tier2: '21 damage; M < 3 weakened (save ends)',
-									tier3: '26 damage; M < 4 weakened (save ends)'
+									tier1: '15 шкоди; С < 2 ослаблений (рят. кидок закінчує)',
+									tier2: '21 шкоди; С < 3 ослаблений (рят. кидок закінчує)',
+									tier3: '26 шкоди; С < 4 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The bodyguard has a double edge on this ability if it was previously used against the same target in this encounter.')
@@ -156,7 +156,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						target: 'Two creatures or objects',
 						sections: [
 							FactoryLogic.createAbilitySectionText('**Special:** This ability targets only metal-clad enemies and metal objects of size 3 or smaller.'),
-							FactoryLogic.createAbilitySectionText('Each target is pulled up to 8 squares, or if they have <code>M < 3</code>, they are pulled up to 15 squares. The bodyguard can make a free strike against each target who ends this forced movement adjacent to them.')
+							FactoryLogic.createAbilitySectionText('Each target is pulled up to 8 squares, or if they have <code>С < 3</code>, they are pulled up to 15 squares. The bodyguard can make a free strike against each target who ends this forced movement adjacent to them.')
 						]
 					})
 				}),
@@ -186,7 +186,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 				FactoryLogic.feature.create({
 					id: 'valok-1-feature-7',
 					name: 'Valiar Might',
-					description: 'While the bodyguard isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.'
+					description: 'While the bodyguard isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional основна дія.'
 				})
 			]
 		}),
@@ -217,9 +217,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '13 damage; push 3',
-									tier2: '18 damage; push 5',
-									tier3: '22 damage; push 8'
+									tier1: '13 шкоди; відштовхнути на 3',
+									tier2: '18 шкоди; відштовхнути на 5',
+									tier3: '22 шкоди; відштовхнути на 8'
 								})
 							)
 						]
@@ -238,9 +238,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '15 damage; Л < 2 slowed (save ends)',
-									tier2: '21 damage; Л < 3 slowed (save ends)',
-									tier3: '26 damage; Л < 4 slowed (save ends)'
+									tier1: '15 шкоди; Л < 2 сповільнений (рят. кидок закінчує)',
+									tier2: '21 шкоди; Л < 3 сповільнений (рят. кидок закінчує)',
+									tier3: '26 шкоди; Л < 4 сповільнений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This damage can’t be reduced in any way. While a target is slowed this way, any strike against them has a double edge.')
@@ -256,7 +256,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						distance: [FactoryLogic.distance.createRanged(5)],
 						target: 'Two creatures or objects',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target shifts up to their speed and can use a main action.')
+							FactoryLogic.createAbilitySectionText('The target shifts up to their speed and can use a основна дія.')
 						]
 					})
 				}),
@@ -269,7 +269,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'The triggering creature',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target gains 15 temporary Stamina. Each time this triggered action is used, the amount of temporary Stamina received decreases by 3 (to a minimum of 0).')
+							FactoryLogic.createAbilitySectionText('The target gains 15 temporary Stamina. Each time this тригерна дія is used, the amount of temporary Stamina received decreases by 3 (to a minimum of 0).')
 						]
 					})
 				}),
@@ -286,7 +286,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 				FactoryLogic.feature.create({
 					id: 'valok-2-feature-7',
 					name: 'Valiar Might',
-					description: 'While the chief isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.'
+					description: 'While the chief isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional основна дія.'
 				})
 			]
 		}),
@@ -318,9 +318,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Agility, Characteristic.Intuition],
-									tier1: '15 damage; push 5, prone',
-									tier2: '12 damage; push 3',
-									tier3: '8 damage'
+									tier1: '15 шкоди; відштовхнути на 5, розпластаний',
+									tier2: '12 шкоди; відштовхнути на 3',
+									tier3: '8 шкоди'
 								})
 							)
 						]
@@ -338,9 +338,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '16 damage',
-									tier2: '23 damage; grabbed',
-									tier3: '28 damage; grabbed; M < 4 vertical push 5'
+									tier1: '16 шкоди',
+									tier2: '23 шкоди; схоплений',
+									tier3: '28 шкоди; схоплений; С < 4 вертикально відштовхнути на 5'
 								})
 							)
 						]
@@ -359,9 +359,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionText('The area is covered in wet concrete and is difficult terrain. Any enemy who starts their turn in the concrete makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									tier1: 'Restrained (EoT)',
-									tier2: 'Slowed (EoT)',
-									tier3: 'No effect'
+									tier1: 'скутий (до кінця ходу)',
+									tier2: 'сповільнений (до кінця ходу)',
+									tier3: 'Без ефекту'
 								})
 							)
 						]
@@ -392,9 +392,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
-									tier1: 'A < 2 restrained (save ends)',
-									tier2: 'A < 3 restrained (save ends)',
-									tier3: 'A < 4 restrained (save ends)'
+									tier1: 'Л < 2 скутий (рят. кидок закінчує)',
+									tier2: 'Л < 3 скутий (рят. кидок закінчує)',
+									tier3: 'Л < 4 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While a creature is restrained this way, or if the target is an object, the target and their space are encased in wet concrete. A creature no longer restrained leaves squares of wet concrete behind.')
@@ -414,7 +414,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 				FactoryLogic.feature.create({
 					id: 'valok-3-feature-7',
 					name: 'Valiar Might',
-					description: 'While the builder isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.'
+					description: 'While the builder isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional основна дія.'
 				})
 			]
 		}),
@@ -445,9 +445,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 4,
-									tier1: '13 damage; M < 2 restrained (save ends) and prone',
-									tier2: '18 damage; M < 3 restrained (save ends) and prone',
-									tier3: '22 damage; prone; M < 4 restrained (save ends)'
+									tier1: '13 шкоди; С < 2 скутий (рят. кидок закінчує) і розпластаний',
+									tier2: '18 шкоди; С < 3 скутий (рят. кидок закінчує) і розпластаний',
+									tier3: '22 шкоди; розпластаний; С < 4 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('In suitably soft ground, a target restrained this way is entrenched in a 1-square-deep hole.')
@@ -468,9 +468,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Agility, Characteristic.Intuition],
-									tier1: '14 damage; slide 4; the miner’s allies have concealment from the target (save ends)',
-									tier2: '11 damage; slide 2',
-									tier3: '7 damage'
+									tier1: '14 шкоди; зсунути на 4; the miner’s allies have concealment from ціль (рят. кидок закінчує)',
+									tier2: '11 шкоди; зсунути на 2',
+									tier3: '7 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain.')
@@ -491,9 +491,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: [Characteristic.Agility],
-									tier1: '14 damage; the target falls into the fissure, and is prone and can’t stand (EoT)',
-									tier2: '11 damage; the target is prone and hanging onto the edge of the fissure',
-									tier3: '7 damage; the target can shift into the nearest unoccupied space outside the fissure'
+									tier1: '14 шкоди; ціль falls into the fissure, і is розпластаний і не може встати (до кінця ходу)',
+									tier2: '11 шкоди; ціль is розпластаний і hanging onto the edge of the fissure',
+									tier3: '7 шкоди; ціль може зміститися into the nearest unoccupied space outside the fissure'
 								})
 							)
 						]
@@ -531,7 +531,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 				FactoryLogic.feature.create({
 					id: 'valok-4-feature-8',
 					name: 'Valiar Might',
-					description: 'While the miner isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.'
+					description: 'While the miner isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional основна дія.'
 				})
 			]
 		}),
@@ -562,9 +562,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '15 damage',
-									tier2: '21 damage; pull 3',
-									tier3: '25 damage; pull 6'
+									tier1: '15 шкоди',
+									tier2: '21 шкоди; притягнути на 3',
+									tier3: '25 шкоди; притягнути на 6'
 								})
 							)
 						]
@@ -582,9 +582,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '22 damage',
-									tier2: '29 damage; I < 4 dazed (save ends)',
-									tier3: '34 damage; I < 5 dazed (save ends)'
+									tier1: '22 шкоди',
+									tier2: '29 шкоди; І < 4 приголомшений (рят. кидок закінчує)',
+									tier3: '34 шкоди; І < 5 приголомшений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This damage can’t be reduced in any way. This ability can’t be used again until the start of the next round.')
@@ -616,9 +616,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '16 fire damage; the target is burning (save ends)',
-									tier2: '12 fire damage; the target is burning (EoT)',
-									tier3: '8 fire damage'
+									tier1: '16 вогняної шкоди; ціль палає (рят. кидок закінчує)',
+									tier2: '12 вогняної шкоди; ціль палає (до кінця ходу)',
+									tier3: '8 вогняної шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. Additionally, the area is burning until the end of the encounter. While the area is burning, it is difficult terrain and any enemy takes 3 fire damage for each square of the area they enter.')
@@ -637,9 +637,9 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '8 damage; push 2',
-									tier2: '12 damage; push 5',
-									tier3: '16 damage; push 8'
+									tier1: '8 шкоди; відштовхнути на 2',
+									tier2: '12 шкоди; відштовхнути на 5',
+									tier3: '16 шкоди; відштовхнути на 8'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('This damage can’t be reduced in any way.')
@@ -659,7 +659,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 				FactoryLogic.feature.create({
 					id: 'valok-5-feature-8',
 					name: 'Valiar Might',
-					description: 'While the war engine isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.'
+					description: 'While the war engine isn’t bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional основна дія.'
 				})
 			]
 		})

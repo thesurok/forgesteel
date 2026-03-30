@@ -22,7 +22,7 @@ Though its size and make are often debated, the sword is consistently described 
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-1',
 						name: 'Suited for Victory',
-						description: 'This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a free maneuver. Any weapon ability that deals rolled damage using the Blade of a Thousand Years always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also frightened and weakened until the end of their next turn.'
+						description: 'This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a безкоштовний маневр. Any weapon ability that deals rolled damage using the Blade of a Thousand Years always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also frightened and weakened until the end of their next turn.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-a-thousand-years-1a',
@@ -77,7 +77,7 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 					FactoryLogic.feature.create({
 						id: 'item-encepter-2',
 						name: 'Champion\'s Lasso',
-						description: 'As a free maneuver, the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder\'s choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.'
+						description: 'As a безкоштовний маневр, the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder\'s choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-3',
@@ -87,7 +87,7 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 					FactoryLogic.feature.create({
 						id: 'item-encepter-4',
 						name: 'Obliteration',
-						description: 'As a main action, the wielder raises the Encepter to the sky. Each target lassoed by the Encepter erupts in a prismatic burst of light, taking 10 psychic damage for each square horizontally encircled by the lasso. The lasso is then immediately released.'
+						description: 'As a основна дія, the wielder raises the Encepter to the sky. Each target lassoed by the Encepter erupts in a prismatic burst of light, taking 10 psychic damage for each square horizontally encircled by the lasso. The lasso is then immediately released.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-5',
@@ -108,7 +108,7 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 		effect: `
 Change is the engine of existence. Permanence begets stagnation. When the past refuses to relinquish control, a path must be cleared for the future. Energized by the flickering of minds and souls passing through the void, the Mortal Coil taps into the entropic potential inherent in every living creature to cast a shadow capable of felling even gods. For the true gift of life is death, and gifts are meant to be given.
 
-Only one destined for death can contain the power of the Mortal Coil. A mortal creature who carries this artifact serves as its host, gaining an additional main action on each of their turns, aging at ten times the usual rate, and becoming unable to ever regain Stamina. A host with no natural maximum lifespan permanently reduces their Stamina maximum by 10 each year.
+Only one destined for death can contain the power of the Mortal Coil. A mortal creature who carries this artifact serves as its host, gaining an additional основна дія on each of their turns, aging at ten times the usual rate, and becoming unable to ever regain Stamina. A host with no natural maximum lifespan permanently reduces their Stamina maximum by 10 each year.
 
 When the Mortal Coil is left unattended or is in the possession of a creature who is not mortal, it activates and can't be deactivated until a mortal creature becomes its host once more. While active, the artifact extends a penumbra of influence for 10 miles in every direction. Every creature in the penumbra is subject to the following effects.`,
 		featuresByLevel: [

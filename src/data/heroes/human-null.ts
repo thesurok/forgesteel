@@ -18,14 +18,14 @@ export const humanNull = {
 				id: 'human-feature-1',
 				name: 'Detect the Supernatural',
 				description: 'You open your awareness to detect supernatural creatures and phenomena.',
-				type: 'Ability',
+				type: 'Здібність',
 				data: {
 					ability: {
 						id: 'human-feature-1',
 						name: 'Detect the Supernatural',
 						description: 'You open your awareness to detect supernatural creatures and phenomena.',
 						type: {
-							usage: 'Maneuver',
+							usage: 'Маневр',
 							free: false,
 							trigger: '',
 							time: '',
@@ -49,7 +49,7 @@ export const humanNull = {
 						minLevel: 1,
 						sections: [
 							{
-								type: 'text',
+								type: 'Текст',
 								text: 'Until the end of your next turn, you know the location of any supernatural object, undead, construct, or creature from another world within 5 squares, even if you don’t have line of effect to that object or creature. You know if you’re detecting an item or a creature, and you know the nature of any creature you detect.'
 							}
 						],
@@ -68,7 +68,7 @@ export const humanNull = {
 				id: 'human-feature-2',
 				name: 'Human Traits',
 				description: '',
-				type: 'Choice',
+				type: 'Вибір',
 				data: {
 					options: [
 						{
@@ -76,7 +76,7 @@ export const humanNull = {
 								id: 'human-feature-2-1',
 								name: 'Can\'t Take Hold',
 								description: 'Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary difficult terrain created by magic and psionic abilities. Additionally, when you are force moved by a magic or psionic ability, you can reduce the forced movement distance by 1.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -86,7 +86,7 @@ export const humanNull = {
 								id: 'human-feature-2-2',
 								name: 'Perseverence',
 								description: 'Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							value: 1
@@ -96,14 +96,14 @@ export const humanNull = {
 								id: 'human-feature-2-3',
 								name: 'Resist the Unnatural',
 								description: 'Your instinctive resilience protects you from injuries beyond the routine.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-3',
 										name: 'Resist the Unnatural',
 										description: 'Your instinctive resilience protects you from injuries beyond the routine.',
 										type: {
-											usage: 'Triggered Action',
+											usage: 'Тригерна дія',
 											free: false,
 											trigger: 'You take damage that isn’t untyped',
 											time: '',
@@ -127,7 +127,7 @@ export const humanNull = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You halve the damage.'
 											}
 										],
@@ -149,14 +149,14 @@ export const humanNull = {
 								id: 'human-feature-2-4',
 								name: 'Determination',
 								description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
-								type: 'Ability',
+								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'human-feature-2-4',
 										name: 'Determination',
 										description: 'A tolerance for pain and dsitress allows you to push through difficult situations.',
 										type: {
-											usage: 'Maneuver',
+											usage: 'Маневр',
 											free: false,
 											trigger: '',
 											time: '',
@@ -180,7 +180,7 @@ export const humanNull = {
 										minLevel: 1,
 										sections: [
 											{
-												type: 'text',
+												type: 'Текст',
 												text: 'You immediately end one of the frightened, slowed, or weakened conditions on yourself.'
 											}
 										],
@@ -202,7 +202,7 @@ export const humanNull = {
 								id: 'human-feature-2-5',
 								name: 'Staying Power',
 								description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-								type: 'Bonus',
+								type: 'Бонус',
 								data: {
 									field: 'Recoveries',
 									value: 2,
@@ -221,7 +221,7 @@ export const humanNull = {
 							id: 'human-feature-2-5',
 							name: 'Staying Power',
 							description: 'Your human physiology allows you to fight, run, and stay awake longer than others.',
-							type: 'Bonus',
+							type: 'Бонус',
 							data: {
 								field: 'Recoveries',
 								value: 2,
@@ -235,7 +235,7 @@ export const humanNull = {
 							id: 'human-feature-2-2',
 							name: 'Perseverence',
 							description: 'Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.',
-							type: 'Text',
+							type: 'Текст',
 							data: null
 						}
 					]
@@ -248,12 +248,12 @@ export const humanNull = {
 		id: 'culture-bespoke-culture',
 		name: 'Bespoke Culture',
 		description: 'Choose any Environment, Organization, and Upbringing.',
-		type: 'Bespoke',
+		type: 'Авторська',
 		language: {
 			id: 'culture-language',
-			name: 'Language',
+			name: 'Мова',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,
@@ -265,7 +265,7 @@ export const humanNull = {
 			id: 'env-secluded',
 			name: 'Secluded',
 			description: 'A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave. When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -274,7 +274,7 @@ export const humanNull = {
 				],
 				count: 1,
 				selected: [
-					'Empathize'
+					'Емпатія'
 				]
 			}
 		},
@@ -282,7 +282,7 @@ export const humanNull = {
 			id: 'org-communal',
 			name: 'Communal',
 			description: 'A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures. Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [],
 				listOptions: [
@@ -291,7 +291,7 @@ export const humanNull = {
 				],
 				count: 1,
 				selected: [
-					'Read Person'
+					'Зчитування людини'
 				]
 			}
 		},
@@ -299,18 +299,18 @@ export const humanNull = {
 			id: 'up-labor',
 			name: 'Labor',
 			description: 'Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual labor tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a labor upbringing know the value of hard work.',
-			type: 'Skill Choice',
+			type: 'Вибір навички',
 			data: {
 				options: [
-					'Blacksmithing',
-					'Handle Animals'
+					'Ковальство',
+					'Догляд за тваринами'
 				],
 				listOptions: [
 					'Дослідження'
 				],
 				count: 1,
 				selected: [
-					'Endurance'
+					'Витривалість'
 				]
 			}
 		}
@@ -340,7 +340,7 @@ export const humanNull = {
 						id: 'null-stamina',
 						name: 'Витривалість',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 21,
@@ -354,7 +354,7 @@ export const humanNull = {
 						id: 'null-recoveries',
 						name: 'Recoveries',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Recoveries',
 							value: 8,
@@ -368,7 +368,7 @@ export const humanNull = {
 						id: 'null-resource',
 						name: 'Discipline',
 						description: '',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'heroic',
 							gains: [
@@ -379,7 +379,7 @@ export const humanNull = {
 								},
 								{
 									tag: 'action',
-									trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a main action',
+									trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a основна дія',
 									value: '1'
 								},
 								{
@@ -397,7 +397,7 @@ export const humanNull = {
 						id: 'null-1-1',
 						name: 'Lore Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -405,7 +405,7 @@ export const humanNull = {
 							],
 							count: 1,
 							selected: [
-								'Psionics'
+								'Псіоніка'
 							]
 						}
 					},
@@ -413,7 +413,7 @@ export const humanNull = {
 						id: 'null-1-2',
 						name: 'Interpersonal / Lore Skills',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -422,8 +422,8 @@ export const humanNull = {
 							],
 							count: 2,
 							selected: [
-								'Persuade',
-								'Timescape'
+								'Переконання',
+								'Таймскейп'
 							]
 						}
 					},
@@ -431,14 +431,14 @@ export const humanNull = {
 						id: 'null-1-4',
 						name: 'Нульове Поле',
 						description: 'You project an aura that dampens the power of your foes.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'null-1-4',
 								name: 'Нульове Поле',
 								description: 'You project an aura that dampens the power of your foes.',
 								type: {
-									usage: 'Maneuver',
+									usage: 'Маневр',
 									free: false,
 									trigger: '',
 									time: '',
@@ -464,11 +464,11 @@ export const humanNull = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
-										text: '\nEach target reduces their potencies by 1.\n\nOnce as a free maneuver on each of your turns, you can spend 1 discipline and give your Нульове Поле one of the following additional effects until the start of your next turn:\n* **Gravitic Disruption**: The first time on a turn that a target takes damage, you can slide them up to 2 squares.\n* **Inertial Anchor**: Any target who starts their turn in the area can\'t shift.\n* **Synaptic Break**: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.\n\nThis ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required)'
+										type: 'Текст',
+										text: '\nEach target reduces their potencies by 1.\n\nOnce as a безкоштовний маневр on each of your turns, you can spend 1 discipline and give your Нульове Поле one of the following additional effects until the start of your next turn:\n* **Gravitic Disruption**: The first time on a turn that a target takes damage, you can slide them up to 2 squares.\n* **Inertial Anchor**: Any target who starts their turn in the area can\'t shift.\n* **Synaptic Break**: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.\n\nThis ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required)'
 									},
 									{
-										type: 'package',
+										type: 'Пакет',
 										tag: 'null-field'
 									}
 								],
@@ -487,14 +487,14 @@ export const humanNull = {
 						id: 'null-1-5',
 						name: 'Inertial Shield',
 						description: 'You intuit the course of an incoming attack, reducing its effects.',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'null-1-5',
 								name: 'Inertial Shield',
 								description: 'You intuit the course of an incoming attack, reducing its effects.',
 								type: {
-									usage: 'Triggered Action',
+									usage: 'Тригерна дія',
 									free: false,
 									trigger: 'You take damage.',
 									time: '',
@@ -520,7 +520,7 @@ export const humanNull = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'You halve the damage.'
 									},
 									{
@@ -531,7 +531,7 @@ export const humanNull = {
 										effect: 'The potency of one effect associated with the damage is reduced by 1 for you.'
 									},
 									{
-										type: 'package',
+										type: 'Пакет',
 										tag: 'inertial-shield'
 									}
 								],
@@ -550,14 +550,14 @@ export const humanNull = {
 						id: 'null-1-6',
 						name: 'Null Speed',
 						description: 'The flow of psionic power through you allows you to achieve high velocity.',
-						type: 'Multiple Features',
+						type: 'Набір особливостей',
 						data: {
 							features: [
 								{
 									id: 'null-1-6a',
 									name: 'Швидкість',
 									description: '',
-									type: 'Bonus',
+									type: 'Бонус',
 									data: {
 										field: 'Швидкість',
 										value: 0,
@@ -573,7 +573,7 @@ export const humanNull = {
 									id: 'null-1-6b',
 									name: 'Відступ',
 									description: '',
-									type: 'Bonus',
+									type: 'Бонус',
 									data: {
 										field: 'Відступ',
 										value: 0,
@@ -592,7 +592,7 @@ export const humanNull = {
 						id: 'null-1-7',
 						name: 'Psionic Augmentation',
 						description: 'Your training has turned your body into the perfect psionic weapon, shaping pathways in your mind that enhance your physical form. Choose one of the following augmentations. You can change your augmentation by undergoing a psionic meditation as a respite activity.',
-						type: 'Choice',
+						type: 'Вибір',
 						data: {
 							options: [
 								{
@@ -600,14 +600,14 @@ export const humanNull = {
 										id: 'null-1-7a',
 										name: 'Density Augmentation',
 										description: 'Stability, Stamina',
-										type: 'Multiple Features',
+										type: 'Набір особливостей',
 										data: {
 											features: [
 												{
 													id: 'null-1-7aa',
 													name: 'Непорушність',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Непорушність',
 														value: 1,
@@ -621,7 +621,7 @@ export const humanNull = {
 													id: 'null-1-7ab',
 													name: 'Витривалість',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Витривалість',
 														value: 0,
@@ -641,7 +641,7 @@ export const humanNull = {
 										id: 'null-1-7b',
 										name: 'Force Augmentation',
 										description: '',
-										type: 'Ability Damage',
+										type: 'Шкода здібності',
 										data: {
 											keywords: [
 												'Psionic'
@@ -661,14 +661,14 @@ export const humanNull = {
 										id: 'null-1-7c',
 										name: 'Speed Augmentation',
 										description: 'Speed, Disengage',
-										type: 'Multiple Features',
+										type: 'Набір особливостей',
 										data: {
 											features: [
 												{
 													id: 'null-1-7ca',
 													name: 'Швидкість',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Швидкість',
 														value: 1,
@@ -682,7 +682,7 @@ export const humanNull = {
 													id: 'null-1-7cb',
 													name: 'Відступ',
 													description: '',
-													type: 'Bonus',
+													type: 'Бонус',
 													data: {
 														field: 'Відступ',
 														value: 1,
@@ -704,14 +704,14 @@ export const humanNull = {
 									id: 'null-1-7a',
 									name: 'Density Augmentation',
 									description: 'Stability, Stamina',
-									type: 'Multiple Features',
+									type: 'Набір особливостей',
 									data: {
 										features: [
 											{
 												id: 'null-1-7aa',
 												name: 'Непорушність',
 												description: '',
-												type: 'Bonus',
+												type: 'Бонус',
 												data: {
 													field: 'Непорушність',
 													value: 1,
@@ -725,7 +725,7 @@ export const humanNull = {
 												id: 'null-1-7ab',
 												name: 'Витривалість',
 												description: '',
-												type: 'Bonus',
+												type: 'Бонус',
 												data: {
 													field: 'Витривалість',
 													value: 0,
@@ -744,15 +744,15 @@ export const humanNull = {
 					{
 						id: 'null-1-8',
 						name: 'Psionic Martial Arts',
-						description: 'Whenever you use the Knockback or Grab maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the Knockback maneuver, you can choose to slide the target instead of pushing them.',
-						type: 'Text',
+						description: 'Whenever you use the Knockback or Grab маневр, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the Knockback маневр, you can choose to slide the target instead of pushing them.',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'null-1-9',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 'signature',
 							source: {
@@ -773,7 +773,7 @@ export const humanNull = {
 						id: 'null-1-10',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 3,
 							source: {
@@ -793,7 +793,7 @@ export const humanNull = {
 						id: 'null-1-11',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 5,
 							source: {
@@ -818,7 +818,7 @@ export const humanNull = {
 						id: 'null-2-1',
 						name: 'Exploration / Interpersonal / Intrigue Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Дослідження',
@@ -838,21 +838,21 @@ export const humanNull = {
 						id: 'null-3-1',
 						name: 'Psionic Leap',
 						description: 'You can long jump and high jump a distance equal to twice your Agility score without needing to make a test.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'null-3-2',
 						name: 'Reorder',
 						description: '',
-						type: 'Ability',
+						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'null-3-2',
 								name: 'Reorder',
 								description: '',
 								type: {
-									usage: 'Triggered Action',
+									usage: 'Тригерна дія',
 									free: true,
 									trigger: 'You start your turn.',
 									time: '',
@@ -876,7 +876,7 @@ export const humanNull = {
 								minLevel: 1,
 								sections: [
 									{
-										type: 'text',
+										type: 'Текст',
 										text: 'End one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your Нульове Поле ability.'
 									}
 								],
@@ -895,7 +895,7 @@ export const humanNull = {
 						id: 'null-3-3',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 7,
 							source: {
@@ -918,7 +918,7 @@ export const humanNull = {
 						id: 'null-4-1a',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -928,7 +928,7 @@ export const humanNull = {
 						id: 'null-4-1b',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -938,7 +938,7 @@ export const humanNull = {
 						id: 'null-4-2',
 						name: 'Enhanced Нульове Поле',
 						description: 'During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.',
-						type: 'Package Content',
+						type: 'Вміст пакета',
 						data: {
 							tag: 'null-field'
 						}
@@ -947,7 +947,7 @@ export const humanNull = {
 						id: 'null-4-3',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -965,10 +965,10 @@ export const humanNull = {
 						id: 'null-4-4',
 						name: 'Regenerative Field',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'action 2',
-							trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a main action',
+							trigger: 'The first time each combat round that an enemy in the area of your Нульове Поле ability uses a основна дія',
 							value: '2',
 							replacesTags: [
 								'action'
@@ -979,7 +979,7 @@ export const humanNull = {
 						id: 'null-4-5',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1002,7 +1002,7 @@ export const humanNull = {
 						id: 'null-5-1',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 9,
 							source: {
@@ -1024,8 +1024,8 @@ export const humanNull = {
 					{
 						id: 'null-6-1',
 						name: 'Elemental Absorption',
-						description: 'Whenever you use your Inertial Shield triggered action, you gain immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Intuition score against the triggering damage.',
-						type: 'Package Content',
+						description: 'Whenever you use your Inertial Shield тригерна дія, you gain immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Intuition score against the triggering damage.',
+						type: 'Вміст пакета',
 						data: {
 							tag: 'inertial-shield'
 						}
@@ -1034,14 +1034,14 @@ export const humanNull = {
 						id: 'null-6-2',
 						name: 'Elemental Buffer',
 						description: 'Whenever you reduce acid, cold, corruption, fire, lightning, poison, or sonic damage with damage immunity, you gain 2 surges that can be used only to increase the damage of your next strike.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'null-6-3',
 						name: 'Exploration / Interpersonal / Intrigue Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Дослідження',
@@ -1061,7 +1061,7 @@ export const humanNull = {
 						id: 'null-7-1a',
 						name: 'Might',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Might',
 							value: 1
@@ -1071,7 +1071,7 @@ export const humanNull = {
 						id: 'null-7-1b',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1081,7 +1081,7 @@ export const humanNull = {
 						id: 'null-7-1c',
 						name: 'Reason',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Reason',
 							value: 1
@@ -1091,7 +1091,7 @@ export const humanNull = {
 						id: 'null-7-1d',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1101,7 +1101,7 @@ export const humanNull = {
 						id: 'null-7-1e',
 						name: 'Presence',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Presence',
 							value: 1
@@ -1110,15 +1110,15 @@ export const humanNull = {
 					{
 						id: 'null-7-2',
 						name: 'Psi Boost',
-						description: '\nWhenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.\n\n**Dynamic Power** (1 Discipline) If the ability force moves a target, the forced movement distance gains a bonus equal to your Intuition score.\n**Expanded Power** (3 Discipline) If the ability targets an area, you increase the size of the area by 1. If the area is a line, you increase the size of one dimension, not both.\n**Extended Power** (1 Discipline) If the ability is ranged, the distance gains a bonus equal to your Intuition score. If the ability is melee, the distance gains a +2 bonus.\n**Heightened Power** (1 Discipline) If the ability deals rolled damage, it deals extra damage equal to your Intuition score.\n**Magnified Power** (5 Discipline) If the ability has a potency, you increase that potency by an amount equal to your Intuition score.\n**Shared Power** (5 Discipline) If the ability targets individual creatures or objects, you target one additional creature or object within distance.\n**Sharpened Power** (1 Discipline) If the ability has any power roll, that roll gains an edge.',
-						type: 'Text',
+						description: '\nWhenever you use an ability that is a основна дія or a маневр with the Psionic keyword, you can spend additional discipline to apply a psi boost to it and enhance its effects. A psi boost’s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.\n\n**Dynamic Power** (1 Discipline) If the ability force moves a target, the forced movement distance gains a bonus equal to your Intuition score.\n**Expanded Power** (3 Discipline) If the ability targets an area, you increase the size of the area by 1. If the area is a line, you increase the size of one dimension, not both.\n**Extended Power** (1 Discipline) If the ability is ranged, the distance gains a bonus equal to your Intuition score. If the ability is melee, the distance gains a +2 bonus.\n**Heightened Power** (1 Discipline) If the ability deals rolled damage, it deals extra damage equal to your Intuition score.\n**Magnified Power** (5 Discipline) If the ability has a potency, you increase that potency by an amount equal to your Intuition score.\n**Shared Power** (5 Discipline) If the ability targets individual creatures or objects, you target one additional creature or object within distance.\n**Sharpened Power** (1 Discipline) If the ability has any power roll, that roll gains an edge.',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'null-7-3',
 						name: 'Improved Body',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
 							trigger: 'Start of your turn',
@@ -1132,7 +1132,7 @@ export const humanNull = {
 						id: 'null-7-4',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1155,7 +1155,7 @@ export const humanNull = {
 						id: 'null-8-1',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1173,7 +1173,7 @@ export const humanNull = {
 						id: 'null-8-2',
 						name: 'Ability',
 						description: '',
-						type: 'Class Ability',
+						type: 'Класова здібність',
 						data: {
 							cost: 11,
 							source: {
@@ -1196,7 +1196,7 @@ export const humanNull = {
 						id: 'null-9-1a',
 						name: 'I Am the Weapon',
 						description: '',
-						type: 'Bonus',
+						type: 'Бонус',
 						data: {
 							field: 'Витривалість',
 							value: 21,
@@ -1210,7 +1210,7 @@ export const humanNull = {
 						id: 'null-9-1b',
 						name: 'I Am the Weapon',
 						description: '',
-						type: 'Condition Immunity',
+						type: 'Імунітет до станів',
 						data: {
 							conditions: [
 								'Bleeding'
@@ -1226,7 +1226,7 @@ export const humanNull = {
 						id: 'null-10-1a',
 						name: 'Ловкість',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Ловкість',
 							value: 1
@@ -1236,7 +1236,7 @@ export const humanNull = {
 						id: 'null-10-1b',
 						name: 'Intuition',
 						description: '',
-						type: 'Characteristic Bonus',
+						type: 'Бонус характеристики',
 						data: {
 							characteristic: 'Intuition',
 							value: 1
@@ -1246,7 +1246,7 @@ export const humanNull = {
 						id: 'null-10-2',
 						name: 'Manifold Body',
 						description: '',
-						type: 'Heroic Resource Gain',
+						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 3',
 							trigger: 'Start of your turn',
@@ -1261,14 +1261,14 @@ export const humanNull = {
 						id: 'null-10-3',
 						name: 'Manifold Resonance',
 						description: '\nYour body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can shift yourself and any creatures in the area of your Нульове Поле ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.\n\nWhenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your Psi Boost feature to that ability.\n\nAdditionally, you and allies in the area of your Нульове Поле ability ignore banes and double banes on your power rolls.',
-						type: 'Text',
+						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'null-10-4',
 						name: 'Order',
 						description: '\nYou have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline. At the start of a combat encounter, you can spend 1 order to increase the size of your Нульове Поле by 1 until the end of the encounter. Order remains until you spend it',
-						type: 'Heroic Resource',
+						type: 'Героїчний ресурс',
 						data: {
 							type: 'epic',
 							gains: [
@@ -1287,7 +1287,7 @@ export const humanNull = {
 						id: 'null-10-5',
 						name: 'Perk',
 						description: '',
-						type: 'Perk',
+						type: 'Перевага',
 						data: {
 							lists: [
 								'Ремесло',
@@ -1305,7 +1305,7 @@ export const humanNull = {
 						id: 'null-10-6',
 						name: 'Skill',
 						description: '',
-						type: 'Skill Choice',
+						type: 'Вибір навички',
 						data: {
 							options: [],
 							listOptions: [
@@ -1328,7 +1328,7 @@ export const humanNull = {
 				name: 'Dance of Blows',
 				description: 'You strike everywhere at once, tricking an enemy into moving out of position.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1362,13 +1362,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 damage',
-							tier2: '4 damage',
-							tier3: '5 damage'
+							tier1: '3 шкоди',
+							tier2: '4 шкоди',
+							tier3: '5 шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can slide one adjacent enemy up to a number of squares equal to your Intuition score.'
 					}
 				],
@@ -1386,7 +1386,7 @@ export const humanNull = {
 				name: 'Faster than the Eye',
 				description: 'You strike so quickly that your hands become a blur.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1421,13 +1421,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 damage',
-							tier2: '5 damage',
-							tier3: '7 damage'
+							tier1: '4 шкоди',
+							tier2: '5 шкоди',
+							tier3: '7 шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can deal damage equal to your Agility score to one creature or object adjacent to you.'
 					}
 				],
@@ -1445,7 +1445,7 @@ export const humanNull = {
 				name: 'Inertial Step',
 				description: 'You flit about the battlefield and take an opportunistic strike.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1480,13 +1480,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '5 + A damage',
-							tier2: '7 + A damage',
-							tier3: '10 + A damage'
+							tier1: '5 + Л шкоди',
+							tier2: '7 + Л шкоди',
+							tier3: '10 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift up to half your speed before or after you make the strike.'
 					}
 				],
@@ -1504,7 +1504,7 @@ export const humanNull = {
 				name: 'Joint Lock',
 				description: 'You contort your enemy’s body into a stance they struggle to escape from.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1539,9 +1539,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; Л < [слабкий], grabbed',
-							tier2: '7 + A damage; Л < [середній], grabbed',
-							tier3: '9 + A damage; Л < [сильний], grabbed'
+							tier1: '4 + Л шкоди; Л < [слабкий], схоплений',
+							tier2: '7 + Л шкоди; Л < [середній], схоплений',
+							tier3: '9 + Л шкоди; Л < [сильний], схоплений'
 						}
 					}
 				],
@@ -1559,7 +1559,7 @@ export const humanNull = {
 				name: 'Kinetic Strike',
 				description: 'Your opponent staggers. They cannot ignore you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1594,9 +1594,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; taunted (EoT)',
-							tier2: '5 + A damage; taunted (EoT); slide 1',
-							tier3: '6 + A damage; taunted (EoT); slide 2'
+							tier1: '4 + Л шкоди; спровокований (до кінця ходу)',
+							tier2: '5 + Л шкоди; спровокований (до кінця ходу); зсунути на 1',
+							tier3: '6 + Л шкоди; спровокований (до кінця ходу); зсунути на 2'
 						}
 					}
 				],
@@ -1614,7 +1614,7 @@ export const humanNull = {
 				name: 'Magnetic Strike',
 				description: 'The force of your blow extends past the limits of your body, pulling your enemy closer.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1669,7 +1669,7 @@ export const humanNull = {
 				name: 'Phase Inversion Strike',
 				description: 'You step momentarily out of phase as you pull an enemy through you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1704,13 +1704,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; push 2',
-							tier2: '6 + A damage; push 4',
-							tier3: '8 + A damage; push 6'
+							tier1: '4 + Л шкоди; відштовхнути на 2',
+							tier2: '6 + Л шкоди; відштовхнути на 4',
+							tier3: '8 + Л шкоди; відштовхнути на 6'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Before the push is resolved, you teleport the target to a square adjacent to you and opposite the one they started in. If the target can’t be teleported this way, you can’t push them.'
 					}
 				],
@@ -1728,7 +1728,7 @@ export const humanNull = {
 				name: 'Pressure Points',
 				description: 'You strike at key nerve clusters to leave your foe staggered.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1763,9 +1763,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; Л < [слабкий], weakened (save ends)',
-							tier2: '7 + A damage; Л < [середній], weakened (save ends)',
-							tier3: '9 + A damage; Л < [сильний], weakened (save ends)'
+							tier1: '4 + Л шкоди; Л < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '7 + Л шкоди; Л < [середній], ослаблений (рят. кидок закінчує)',
+							tier3: '9 + Л шкоди; Л < [сильний], ослаблений (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -1783,7 +1783,7 @@ export const humanNull = {
 				name: 'Chronal Spike',
 				description: 'You foresee the best moment to strike, then exploit it.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1818,13 +1818,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '7 + A damage',
-							tier2: '10 + A damage',
-							tier3: '13 + A damage'
+							tier1: '7 + Л шкоди',
+							tier2: '10 + Л шкоди',
+							tier3: '13 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You can shift up to half your speed before or after you make this strike. Additionally, whenever an effect lets you make a free strike or use a signature ability, you can use this ability instead, paying its discipline cost as usual.'
 					}
 				],
@@ -1842,7 +1842,7 @@ export const humanNull = {
 				name: 'Psychic Pulse',
 				description: 'A burst of psionic energy interferes with your enemy’s synapses.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1869,7 +1869,7 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Нульове Поле ability increases by 1. At the end of your current turn, each enemy in the area of your Нульове Поле ability takes psychic damage equal to your Intuition score.'
 					}
 				],
@@ -1887,7 +1887,7 @@ export const humanNull = {
 				name: 'Relentless Nemesis',
 				description: 'You strike, and for the next few moments, your enemy can’t escape you.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1922,14 +1922,14 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 + A damage',
-							tier2: '8 + A damage',
-							tier3: '12 + A damage'
+							tier1: '6 + Л шкоди',
+							tier2: '8 + Л шкоди',
+							tier3: '12 + Л шкоди'
 						}
 					},
 					{
-						type: 'text',
-						text: 'Until the start of your next turn, whenever the target moves or is force moved, you can use a free triggered action to shift up to your speed. You must end this shift adjacent to the target.'
+						type: 'Текст',
+						text: 'Until the start of your next turn, whenever the target moves or is force moved, you can use a безкоштовна тригерна дія to shift up to your speed. You must end this shift adjacent to the target.'
 					}
 				],
 				preEffect: '',
@@ -1946,7 +1946,7 @@ export const humanNull = {
 				name: 'Stunning Blow',
 				description: 'You focus your psionic technique into a concussive punch.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -1981,9 +1981,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '4 + A damage; I < [слабкий], dazed and slowed (save ends)',
-							tier2: '5 + A damage; I < [середній], dazed and slowed (save ends)',
-							tier3: '7 + A damage; I < [сильний], dazed and slowed (save ends)'
+							tier1: '4 + Л шкоди; І < [слабкий], приголомшений і сповільнений (рят. кидок закінчує)',
+							tier2: '5 + Л шкоди; І < [середній], приголомшений і сповільнений (рят. кидок закінчує)',
+							tier3: '7 + Л шкоди; І < [сильний], приголомшений і сповільнений (рят. кидок закінчує)'
 						}
 					}
 				],
@@ -2001,7 +2001,7 @@ export const humanNull = {
 				name: 'Arcane Disruptor',
 				description: 'Your blow reorders a foe’s body, causing pain if they attempt to channel sorcery.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2036,13 +2036,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '8 + A psychic damage; M < [слабкий], weakened (save ends)',
-							tier2: '12 + A psychic damage; M < [середній], weakened (save ends)',
-							tier3: '16 + A psychic damage; M < [сильний], weakened (save ends)'
+							tier1: '8 + Л психічної шкоди; С < [слабкий], ослаблений (рят. кидок закінчує)',
+							tier2: '12 + Л психічної шкоди; С < [середній], ослаблений (рят. кидок закінчує)',
+							tier3: '16 + Л психічної шкоди; С < [сильний], ослаблений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'While weakened this way, the target takes damage equal to your Intuition score whenever they use a supernatural ability that costs Malice.'
 					}
 				],
@@ -2060,7 +2060,7 @@ export const humanNull = {
 				name: 'Impart Force',
 				description: 'A single touch from you, and your enemy flies backward.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2095,13 +2095,13 @@ export const humanNull = {
 								'Intuition'
 							],
 							bonus: 0,
-							tier1: 'Push 3',
-							tier2: 'Push 5',
-							tier3: 'Push 7'
+							tier1: 'Відштовхнути на 3',
+							tier2: 'Відштовхнути на 5',
+							tier3: 'Відштовхнути на 7'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'An object you target must be your size or smaller. You gain an edge on this ability. Additionally, for each square you push the target, they take 1 psychic damage'
 					}
 				],
@@ -2119,7 +2119,7 @@ export const humanNull = {
 				name: 'Phase Strike',
 				description: 'For a moment, your foe slips out of phase with this manifold.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2154,13 +2154,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '3 + A psychic damage; I < [слабкий], the target goes out of phase (save ends)',
-							tier2: '4 + A psychic damage; I < [середній], the target goes out of phase (save ends)',
-							tier3: '6 + A psychic damage; I < [сильний], the target goes out of phase (save ends)'
+							tier1: '3 + Л психічної шкоди; І < [слабкий], ціль випадає з фази (рят. кидок закінчує)',
+							tier2: '4 + Л психічної шкоди; І < [середній], ціль випадає з фази (рят. кидок закінчує)',
+							tier3: '6 + Л психічної шкоди; І < [сильний], ціль випадає з фази (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'A target who goes out of phase is slowed, has their stability reduced by 2, and can’t obtain a tier 3 outcome on ability rolls.'
 					}
 				],
@@ -2178,7 +2178,7 @@ export const humanNull = {
 				name: 'A Squad Unto Myself',
 				description: 'You move so quickly, it seems as though an army assaulted your foes.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2212,14 +2212,14 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '6 damage',
-							tier2: '9 damage',
-							tier3: '13 damage'
+							tier1: '6 шкоди',
+							tier2: '9 шкоди',
+							tier3: '13 шкоди'
 						}
 					},
 					{
-						type: 'text',
-						text: 'You can take the Disengage move action as a free maneuver before or after you use this ability.'
+						type: 'Текст',
+						text: 'You can take the Disengage дія руху as a безкоштовний маневр before or after you use this ability.'
 					}
 				],
 				preEffect: '',
@@ -2236,7 +2236,7 @@ export const humanNull = {
 				name: 'Absorption Field',
 				description: 'Your Нульове Поле absorbs kinetic energy.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2262,7 +2262,7 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.'
 					}
 				],
@@ -2280,7 +2280,7 @@ export const humanNull = {
 				name: 'Molecular Rearrangement Field',
 				description: 'Your enemies’ wounds open, your allies’ wounds close.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2306,8 +2306,8 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, each enemy who has І < [середній] and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.'
 					}
 				],
 				preEffect: '',
@@ -2324,7 +2324,7 @@ export const humanNull = {
 				name: 'Stabilizing Field',
 				description: 'You project order, making it harder for your enemies to interfere with you and your allies.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2350,8 +2350,8 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.'
+						type: 'Текст',
+						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a безкоштовна тригерна дія at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.'
 					}
 				],
 				preEffect: '',
@@ -2368,7 +2368,7 @@ export const humanNull = {
 				name: 'Synapse Field',
 				description: 'Attacks made by allies in your Нульове Поле disrupt your enemies’ thoughts, causing psychic pain.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2394,7 +2394,7 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Until the end of the encounter, the size of your Нульове Поле ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.'
 					}
 				],
@@ -2412,9 +2412,9 @@ export const humanNull = {
 				name: 'Anticipating Strike',
 				description: 'You suddenly strike an enemy, then grab them in a psionically enhanced grip.',
 				type: {
-					usage: 'Triggered Action',
+					usage: 'Тригерна дія',
 					free: true,
-					trigger: 'The target moves or uses a main action',
+					trigger: 'The target moves or uses a основна дія',
 					time: '',
 					qualifiers: [],
 					freeStrike: false
@@ -2447,14 +2447,14 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '7 + A damage; I < [слабкий], restrained (save ends)',
-							tier2: '10 + A damage; I < [середній], restrained (save ends)',
-							tier3: '13 + A damage; I < [сильний], restrained (save ends)'
+							tier1: '7 + Л шкоди; І < [слабкий], скутий (рят. кидок закінчує)',
+							tier2: '10 + Л шкоди; І < [середній], скутий (рят. кидок закінчує)',
+							tier3: '13 + Л шкоди; І < [сильний], скутий (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
-						text: 'This strike resolves before the triggering movement or main action.'
+						type: 'Текст',
+						text: 'This strike resolves before the triggering movement or основна дія.'
 					}
 				],
 				preEffect: '',
@@ -2471,7 +2471,7 @@ export const humanNull = {
 				name: 'Iron Grip',
 				description: 'You grab the target with supernatural force.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2506,14 +2506,14 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '10 + A damage; Л < [слабкий], grabbed',
-							tier2: '14 + A damage; Л < [середній], grabbed',
-							tier3: '18 + A damage; Л < [сильний], grabbed'
+							tier1: '10 + Л шкоди; Л < [слабкий], схоплений',
+							tier2: '14 + Л шкоди; Л < [середній], схоплений',
+							tier3: '18 + Л шкоди; Л < [сильний], схоплений'
 						}
 					},
 					{
-						type: 'text',
-						text: 'While grabbed this way, the target takes a bane on the Escape Grab maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.'
+						type: 'Текст',
+						text: 'While grabbed this way, the target takes a bane on the Escape Grab маневр. Each time they use that маневр, they take damage equal to twice your Agility score.'
 					}
 				],
 				preEffect: '',
@@ -2530,7 +2530,7 @@ export const humanNull = {
 				name: 'Phase Leap',
 				description: 'You leap beyond reality, leaving an afterimage of yourself.',
 				type: {
-					usage: 'Move Action',
+					usage: 'Дія руху',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2556,7 +2556,7 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your Нульове Поле ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage’s space.'
 					}
 				],
@@ -2574,7 +2574,7 @@ export const humanNull = {
 				name: 'Synaptic Reset',
 				description: 'You expand your nullifying power to mitigate harmful effects.',
 				type: {
-					usage: 'Maneuver',
+					usage: 'Маневр',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2601,7 +2601,7 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'Each target can end any conditions or effects on themself, and gains 5 temporary Stamina for each condition or effect removed.'
 					}
 				],
@@ -2619,7 +2619,7 @@ export const humanNull = {
 				name: 'Arcane Purge',
 				description: 'You focus your Нульове Поле into a pressure point strike that prevents your foe from channeling sorcery.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2654,13 +2654,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '13 + A damage; M < [слабкий], the target is suppressed (save ends)',
-							tier2: '19 + A damage; M < [середній], the target is suppressed (save ends)',
-							tier3: '24 + A damage; M < [сильний], the target is suppressed (save ends)'
+							tier1: '13 + Л шкоди; С < [слабкий], ціль пригнічена (рят. кидок закінчує)',
+							tier2: '19 + Л шкоди; С < [середній], ціль пригнічена (рят. кидок закінчує)',
+							tier3: '24 + Л шкоди; С < [сильний], ціль пригнічена (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.'
 					}
 				],
@@ -2678,7 +2678,7 @@ export const humanNull = {
 				name: 'Phase Hurl',
 				description: 'You throw your foe out of phase with this manifold, causing them to harm other enemies as they return.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2713,13 +2713,13 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '9 + A damage; push 5; I < [слабкий], dazed (save ends)',
-							tier2: '13 + A damage; push 7;  I < [середній], dazed (save ends)',
-							tier3: '18 + A damage; push 10; I < [сильний], dazed (save ends)'
+							tier1: '9 + Л шкоди; відштовхнути на 5; І < [слабкий], приголомшений (рят. кидок закінчує)',
+							tier2: '13 + Л шкоди; відштовхнути на 7;  І < [середній], приголомшений (рят. кидок закінчує)',
+							tier3: '18 + Л шкоди; відштовхнути на 10; І < [сильний], приголомшений (рят. кидок закінчує)'
 						}
 					},
 					{
-						type: 'text',
+						type: 'Текст',
 						text: 'The target and each creature or object they collide with from this forced movement takes psychic damage equal to the total number of squares the target was force moved. While the target is dazed this way, they see glimpses of creatures from other parts of the timescape.'
 					}
 				],
@@ -2737,7 +2737,7 @@ export const humanNull = {
 				name: 'Scalar Assault',
 				description: 'You warp reality to grow a limb for just a moment and make a single devastating attack.',
 				type: {
-					usage: 'Main Action',
+					usage: 'Основна дія',
 					free: false,
 					trigger: '',
 					time: '',
@@ -2770,9 +2770,9 @@ export const humanNull = {
 								'Ловкість'
 							],
 							bonus: 0,
-							tier1: '12 psychic damage; push 3',
-							tier2: '17 psychic damage; push 5',
-							tier3: '23 psychic damage; push 7'
+							tier1: '12 психічної шкоди; відштовхнути на 3',
+							tier2: '17 психічної шкоди; відштовхнути на 5',
+							tier3: '23 психічної шкоди; відштовхнути на 7'
 						}
 					}
 				],
@@ -2790,7 +2790,7 @@ export const humanNull = {
 				name: 'Synaptic Anchor',
 				description: 'You disrupt an enemy’s strike and create a feedback loop in their mind, preventing them from focusing on future attacks.',
 				type: {
-					usage: 'Triggered Action',
+					usage: 'Тригерна дія',
 					free: true,
 					trigger: 'The target takes damage from another creature’s ability while in the area of your Нульове Поле ability',
 					time: '',
@@ -2816,8 +2816,8 @@ export const humanNull = {
 				minLevel: 1,
 				sections: [
 					{
-						type: 'text',
-						text: 'The target takes half the damage, and if the triggering creature has I < [середній], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a main action.'
+						type: 'Текст',
+						text: 'The target takes half the damage, and if the triggering creature has І < [середній], they are dazed (save ends). While the triggering creature is dazed this way, they take psychic damage equal to your Intuition score whenever they use a основна дія.'
 					}
 				],
 				preEffect: '',
@@ -2843,7 +2843,7 @@ export const humanNull = {
 								id: 'null-sub-1-1-1',
 								name: 'Lore Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -2857,21 +2857,21 @@ export const humanNull = {
 								id: 'null-sub-1-1-2',
 								name: 'Chronokinetic Mastery',
 								description: 'Chronokinetic Mastery, Chronokinetic Mastery',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'null-sub-1-1-2a',
 											name: 'Chronokinetic Mastery',
-											description: '\nAs your discipline grows, your psionic mastery of your body intensifies, granting benefits from the Chronokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                    |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback maneuver, you can use the Disengage move action as a free triggered action either before or after the maneuver.                                             |\n| 4              | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 1 surge.                                                                                |\n| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                      |\n| 8 (4th level)  | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 surges.                                                                               |\n| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|',
-											type: 'Text',
+											description: '\nAs your discipline grows, your psionic mastery of your body intensifies, granting benefits from the Chronokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                    |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback маневр, you can use the Disengage дія руху as a безкоштовна тригерна дія either before or after the маневр.                                             |\n| 4              | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 1 surge.                                                                                |\n| 6              | You gain an edge on the Grab and Knockback маневри.                                                                                                                                      |\n| 8 (4th level)  | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 surges.                                                                               |\n| 10 (7th level) | You have a double edge on the Grab and Knockback маневри.                                                                                                                                |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|',
+											type: 'Текст',
 											data: null
 										},
 										{
 											id: 'null-sub-1-1-2b',
 											name: 'Chronokinetic Mastery',
-											description: 'Whenever you use your Inertial Shield ability, you can then use the Disengage move action as a free triggered action.',
-											type: 'Package Content',
+											description: 'Whenever you use your Inertial Shield ability, you can then use the Disengage дія руху as a безкоштовна тригерна дія.',
+											type: 'Вміст пакета',
 											data: {
 												tag: 'inertial-shield'
 											}
@@ -2887,15 +2887,15 @@ export const humanNull = {
 							{
 								id: 'null-sub-1-2-1',
 								name: 'Rapid Processing',
-								description: 'As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any respite, you can take an additional respite activity.',
-								type: 'Text',
+								description: 'As a маневр, you can read an entire book or process a similar amount of information. Additionally, during any respite, you can take an additional respite activity.',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'null-sub-1-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -2903,14 +2903,14 @@ export const humanNull = {
 												id: 'null-sub-1-2-2a',
 												name: 'Blur',
 												description: 'You release stored time, allowing you to act twice.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-2-2a',
 														name: 'Blur',
 														description: 'You release stored time, allowing you to act twice.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -2936,7 +2936,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You can use a signature or heroic ability. You gain an edge on that ability’s power rolls.'
 															}
 														],
@@ -2958,14 +2958,14 @@ export const humanNull = {
 												id: 'null-sub-1-2-2b',
 												name: 'Force Redirected',
 												description: 'The force of your strike moves your target in a surprising direction.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-2-2b',
 														name: 'Force Redirected',
 														description: 'The force of your strike moves your target in a surprising direction.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3000,9 +3000,9 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '8 + A damage; slide 1',
-																	tier2: '12 + A damage; slide 3',
-																	tier3: '16 + A damage; slide 5'
+																	tier1: '8 + Л шкоди; зсунути на 1',
+																	tier2: '12 + Л шкоди; зсунути на 3',
+																	tier3: '16 + Л шкоди; зсунути на 5'
 																}
 															}
 														],
@@ -3041,7 +3041,7 @@ export const humanNull = {
 								id: 'null-sub-1-5-1',
 								name: 'Instant Action',
 								description: 'If you’re not surprised at the start of your first turn in combat, you gain an edge on ability rolls and gain 2 surges. If you are surprised, you can spend 3 discipline to no longer be surprised and gain the benefits of this feature.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3053,7 +3053,7 @@ export const humanNull = {
 								id: 'null-sub-1-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3061,14 +3061,14 @@ export const humanNull = {
 												id: 'null-sub-1-6-1a',
 												name: 'Interphase',
 												description: 'You slip into a faster timestream to act more quickly.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-6-1a',
 														name: 'Interphase',
 														description: 'You slip into a faster timestream to act more quickly.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3094,7 +3094,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You can use up to three signature abilities, each of which gains an edge.'
 															}
 														],
@@ -3116,14 +3116,14 @@ export const humanNull = {
 												id: 'null-sub-1-6-1b',
 												name: 'Phase Step',
 												description: 'You weaken your connection to this manifold, allowing you to move through and damage enemies.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-6-1b',
 														name: 'Phase Step',
 														description: 'You weaken your connection to this manifold, allowing you to move through and damage enemies.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3157,13 +3157,13 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '6 damage; M < [слабкий]. dazed',
-																	tier2: '8 damage; M < [середній]. dazed',
-																	tier3: '12 damage; M < [сильний]. dazed'
+																	tier1: '6 шкоди; С < [слабкий]. приголомшений',
+																	tier2: '8 шкоди; С < [середній]. приголомшений',
+																	tier3: '12 шкоди; С < [сильний]. приголомшений'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You can shift up to your speed, and squares occupied by enemies or objects are not difficult terrain for this shift. You make one power roll that targets each enemy you moved through during this shift'
 															}
 														],
@@ -3197,8 +3197,8 @@ export const humanNull = {
 							{
 								id: 'null-sub-1-8-1',
 								name: 'Shared Momentum',
-								description: 'When you take the Disengage move action, one ally in the area of your Нульове Поле ability can also take the Disengage move action as a free triggered action, using your distance for that move action.',
-								type: 'Text',
+								description: 'When you take the Disengage дія руху, one ally in the area of your Нульове Поле ability can also take the Disengage дія руху as a безкоштовна тригерна дія, using your distance for that дія руху.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3210,7 +3210,7 @@ export const humanNull = {
 								id: 'null-sub-1-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3218,14 +3218,14 @@ export const humanNull = {
 												id: 'null-sub-1-9-1a',
 												name: 'Arrestor Cycle',
 												description: 'You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-9-1a',
 														name: 'Arrestor Cycle',
 														description: 'You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'The triggering creature starts their turn.',
 															time: '',
@@ -3258,14 +3258,14 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: 'I < [слабкий]. the target loses their turn',
-																	tier2: 'I < [середній]. the target loses their turn',
-																	tier3: 'I < [сильний]. the target loses their turn'
+																	tier1: 'І < [слабкий]. ціль втрачає свій хід',
+																	tier2: 'І < [середній]. ціль втрачає свій хід',
+																	tier3: 'І < [сильний]. ціль втрачає свій хід'
 																}
 															},
 															{
-																type: 'text',
-																text: 'If the target loses their turn, the round continues as if they had acted. A target who doesn’t lose their turn takes psychic damage equal to twice your Intuition score for each main action they take until the end of their next turn.'
+																type: 'Текст',
+																text: 'If the target loses their turn, the round continues as if they had acted. A target who doesn’t lose their turn takes psychic damage equal to twice your Intuition score for each основна дія they take until the end of their next turn.'
 															}
 														],
 														preEffect: '',
@@ -3286,14 +3286,14 @@ export const humanNull = {
 												id: 'null-sub-1-9-1b',
 												name: 'Time Loop',
 												description: 'You show shadows what true speed is.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-1-9-1b',
 														name: 'Time Loop',
 														description: 'You show shadows what true speed is.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'Another creature on the encounter map ends their turn.',
 															time: '',
@@ -3319,7 +3319,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You take a bonus turn immediately after the triggering creature. This ability can be used only once per combat round.'
 															}
 														],
@@ -3363,7 +3363,7 @@ export const humanNull = {
 								id: 'null-sub-2-1-1',
 								name: 'Crafting Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3377,21 +3377,21 @@ export const humanNull = {
 								id: 'null-sub-2-1-2',
 								name: 'Cryokinetic Mastery',
 								description: 'Cryokinetic Mastery, Cryokinetic Mastery',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'null-sub-2-1-2a',
 											name: 'Cryokinetic Mastery',
-											description: '\nAs your discipline grows, you strengthen the psionic power suffusing you, granting benefits from the Cryokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                          |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead.|\n| 4              | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 1 surge.                                                  |\n| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                            |\n| 8 (4th level)  | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 2 surges.                                                 |\n| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                      |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.      |',
-											type: 'Text',
+											description: '\nAs your discipline grows, you strengthen the psionic power suffusing you, granting benefits from the Cryokinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline     | Benefit                                                                                                                                                                                          |\n|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback маневр, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead.|\n| 4              | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 1 surge.                                                  |\n| 6              | You gain an edge on the Grab and Knockback маневри.                                                                                                                                            |\n| 8 (4th level)  | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your Нульове Поле ability, you gain 2 surges.                                                 |\n| 10 (7th level) | You have a double edge on the Grab and Knockback маневри.                                                                                                                                      |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.      |',
+											type: 'Текст',
 											data: null
 										},
 										{
 											id: 'null-sub-2-1-2b',
 											name: 'Cryokinetic Mastery',
-											description: 'Whenever you use your Inertial Shield ability, you can then use the Grab maneuver as a free triggered action.',
-											type: 'Package Content',
+											description: 'Whenever you use your Inertial Shield ability, you can then use the Grab маневр as a безкоштовна тригерна дія.',
+											type: 'Вміст пакета',
 											data: {
 												tag: 'inertial-shield'
 											}
@@ -3408,14 +3408,14 @@ export const humanNull = {
 								id: 'null-sub-2-2-1',
 								name: 'Entropic Adaptability',
 								description: 'You ignore difficult terrain related to cold and ice, and you can automatically climb at full speed while moving.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'null-sub-2-2-1b',
 								name: 'Damage Modifier',
 								description: 'Cold Immunity + Intuition x 2',
-								type: 'Damage Modifier',
+								type: 'Модифікатор шкоди',
 								data: {
 									modifiers: [
 										{
@@ -3436,7 +3436,7 @@ export const humanNull = {
 								id: 'null-sub-2-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3444,14 +3444,14 @@ export const humanNull = {
 												id: 'null-sub-2-2-2a',
 												name: 'Entropic Field',
 												description: 'You drastically increase the local entropy.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-2-2a',
 														name: 'Entropic Field',
 														description: 'You drastically increase the local entropy.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3485,9 +3485,9 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '6 cold damage; Л < [слабкий], slowed (save ends)',
-																	tier2: '9 cold damage; Л < [середній], slowed (save ends)',
-																	tier3: '13 cold damage; Л < [сильний], slowed (save ends)'
+																	tier1: '6 холодної шкоди; Л < [слабкий], сповільнений (рят. кидок закінчує)',
+																	tier2: '9 холодної шкоди; Л < [середній], сповільнений (рят. кидок закінчує)',
+																	tier3: '13 холодної шкоди; Л < [сильний], сповільнений (рят. кидок закінчує)'
 																}
 															}
 														],
@@ -3509,14 +3509,14 @@ export const humanNull = {
 												id: 'null-sub-2-2-2b',
 												name: 'Heat Sink',
 												description: 'You absorb ambient heat, coating the ground in frost and precipitating snow from the air',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-2-2b',
 														name: 'Heat Sink',
 														description: 'You absorb ambient heat, coating the ground in frost and precipitating snow from the air',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3542,7 +3542,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the start of your next turn, the size of your Нульове Поле ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.'
 															}
 														],
@@ -3581,7 +3581,7 @@ export const humanNull = {
 								id: 'null-sub-2-5-1',
 								name: 'Chilling Readiness',
 								description: 'You steel yourself for imminent danger by tapping into your body’s cold energy. At the start of any combat, you gain a number of surges equal to your Victories.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3593,7 +3593,7 @@ export const humanNull = {
 								id: 'null-sub-2-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3601,14 +3601,14 @@ export const humanNull = {
 												id: 'null-sub-2-6-1a',
 												name: 'Ice Pillars',
 												description: 'Pillars of ice erupt from the ground and launch your foes into the air.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-6-1a',
 														name: 'Ice Pillars',
 														description: 'Pillars of ice erupt from the ground and launch your foes into the air.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3640,13 +3640,13 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: 'Vertical slide 6',
-																	tier2: 'Vertical slide 8',
-																	tier3: 'Vertical slide 10'
+																	tier1: 'Вертикально зсунути на 6',
+																	tier2: 'Вертикально зсунути на 8',
+																	tier3: 'Вертикально зсунути на 10'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'The pillars vanish as soon as the effects of the forced movement are resolved.'
 															}
 														],
@@ -3668,14 +3668,14 @@ export const humanNull = {
 												id: 'null-sub-2-6-1b',
 												name: 'Wall of Ice',
 												description: 'You create a wall of ice.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-6-1b',
 														name: 'Wall of Ice',
 														description: 'You create a wall of ice.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3703,8 +3703,8 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
-																text: 'You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < [середній] is slowed (save ends). Each enemy who is force moved into the wall and has M < [середній] is restrained (save ends).'
+																type: 'Текст',
+																text: 'You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall’s squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has С < [середній] is slowed (save ends). Each enemy who is force moved into the wall and has С < [середній] is restrained (save ends).'
 															}
 														],
 														preEffect: '',
@@ -3737,8 +3737,8 @@ export const humanNull = {
 							{
 								id: 'null-sub-2-8-1',
 								name: 'Synaptic Triage',
-								description: 'As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your Нульове Поле ability also gains this benefit.',
-								type: 'Text',
+								description: 'As a безкоштовний маневр, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your Нульове Поле ability also gains this benefit.',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -3750,7 +3750,7 @@ export const humanNull = {
 								id: 'null-sub-2-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3758,14 +3758,14 @@ export const humanNull = {
 												id: 'null-sub-2-9-1a',
 												name: 'Absolute Zero',
 												description: 'You become the coldest thing in the timescape.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-9-1a',
 														name: 'Absolute Zero',
 														description: 'You become the coldest thing in the timescape.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3797,13 +3797,13 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: 'You gain 20 temporary Stamina.',
-																	tier2: 'You gain 30 temporary Stamina.',
-																	tier3: 'You gain 40 temporary Stamina.'
+																	tier1: 'Ви отримуєте 20 тимчасової Витривалості.',
+																	tier2: 'Ви отримуєте 30 тимчасової Витривалості.',
+																	tier3: 'Ви отримуєте 40 тимчасової Витривалості.'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your Entropic Adaptability trait, you ignore the negative effects of dying, and you have a +2 bonus to potencies.'
 															}
 														],
@@ -3825,14 +3825,14 @@ export const humanNull = {
 												id: 'null-sub-2-9-1b',
 												name: 'Heat Drain',
 												description: 'You drain all the heat from the target.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-2-9-1b',
 														name: 'Heat Drain',
 														description: 'You drain all the heat from the target.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -3866,13 +3866,13 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: '8 + I cold damage; M < [слабкий], restrained (save ends)',
-																	tier2: '11 + I cold damage; M < [середній], restrained (save ends)',
-																	tier3: '15 + I cold damage; M < [сильний], restrained (save ends)'
+																	tier1: '8 + І холодної шкоди; С < [слабкий], скутий (рят. кидок закінчує)',
+																	tier2: '11 + І холодної шкоди; С < [середній], скутий (рят. кидок закінчує)',
+																	tier3: '15 + І холодної шкоди; С < [сильний], скутий (рят. кидок закінчує)'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While restrained this way, the target takes cold damage equal to your Intuition score at the start of each of your turns. Additionally, whenever the target damages another creature while restrained this way, any potency associated with the damage is reduced by 2.'
 															}
 														],
@@ -3916,7 +3916,7 @@ export const humanNull = {
 								id: 'null-sub-3-1-1',
 								name: 'Exploration Skill',
 								description: '',
-								type: 'Skill Choice',
+								type: 'Вибір навички',
 								data: {
 									options: [],
 									listOptions: [
@@ -3924,7 +3924,7 @@ export const humanNull = {
 									],
 									count: 1,
 									selected: [
-										'Climb'
+										'Лазіння'
 									]
 								}
 							},
@@ -3932,21 +3932,21 @@ export const humanNull = {
 								id: 'null-sub-3-1-2',
 								name: 'Metakinetic Mastery',
 								description: 'Metakinetic Mastery, Metakinetic Mastery',
-								type: 'Multiple Features',
+								type: 'Набір особливостей',
 								data: {
 									features: [
 										{
 											id: 'null-sub-3-1-2a',
 											name: 'Metakinetic Mastery',
-											description: '\nAs your discipline grows, your psionic potential is amplified, granting benefits from the Metakinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline | Benefit                                                                                                                                                                                        |\n|:-----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback maneuver, the forced movement distance gains a bonus equal to your Intuition score.                                                                         |\n| 4              | The first time in a combat round that you take damage or are force moved, you gain 1 surge, even if you resist the effect.                                                                 |\n| 6              | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                      |\n| 8 (4th level)  | The first time in a combat round that you take damage or are force moved, you gain 2 surges, even if you resist the effect.                                                                |\n| 10 (7th level) | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|',
-											type: 'Text',
+											description: '\nAs your discipline grows, your psionic potential is amplified, granting benefits from the Metakinetic Mastery table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.\n\n| Discipline | Benefit                                                                                                                                                                                        |\n|:-----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 2              | Whenever you use the Knockback маневр, the forced movement distance gains a bonus equal to your Intuition score.                                                                         |\n| 4              | The first time in a combat round that you take damage or are force moved, you gain 1 surge, even if you resist the effect.                                                                 |\n| 6              | You gain an edge on the Grab and Knockback маневри.                                                                                                                                      |\n| 8 (4th level)  | The first time in a combat round that you take damage or are force moved, you gain 2 surges, even if you resist the effect.                                                                |\n| 10 (7th level) | You have a double edge on the Grab and Knockback маневри.                                                                                                                                |\n| 12 (10th level)| Whenever you force move a target, the forced movement distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.|',
+											type: 'Текст',
 											data: null
 										},
 										{
 											id: 'null-sub-3-1-2b',
 											name: 'Metakinetic Mastery',
-											description: 'Whenever you use your Inertial Shield ability, you can then use the Knockback maneuver as a free triggered action.',
-											type: 'Package Content',
+											description: 'Whenever you use your Inertial Shield ability, you can then use the Knockback маневр as a безкоштовна тригерна дія.',
+											type: 'Вміст пакета',
 											data: {
 												tag: 'inertial-shield'
 											}
@@ -3963,14 +3963,14 @@ export const humanNull = {
 								id: 'null-sub-3-2-1',
 								name: 'Inertial Sink',
 								description: '\nYou add your Intuition score to your effective size for the purpose of interacting with creatures and objects, such as for determining whether you can lift an object, whether you are affected by forced movement, and so forth. This has no effect on whether you can be grabbed.\n\nAdditionally, when you fall, you reduce the effective height of the fall by 5 squares in addition to any other reductions. Whenever you take damage from being force moved, you reduce that damage by an amount equal to your level.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							},
 							{
 								id: 'null-sub-3-2-2',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -3978,14 +3978,14 @@ export const humanNull = {
 												id: 'null-sub-3-2-2a',
 												name: 'Gravitic Strike',
 												description: 'Your fist emanates gravitic force that pulls a distant enemy closer.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-2-2a',
 														name: 'Gravitic Strike',
 														description: 'Your fist emanates gravitic force that pulls a distant enemy closer.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4020,9 +4020,9 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '8 + A psychic damage; vertical pull 3',
-																	tier2: '12 + A psychic damage; vertical pull 5',
-																	tier3: '16 + A psychic damage; vertical pull 7'
+																	tier1: '8 + Л психічної шкоди; вертикально притягнути на 3',
+																	tier2: '12 + Л психічної шкоди; вертикально притягнути на 5',
+																	tier3: '16 + Л психічної шкоди; вертикально притягнути на 7'
 																}
 															}
 														],
@@ -4044,14 +4044,14 @@ export const humanNull = {
 												id: 'null-sub-3-2-2b',
 												name: 'Kinetic Shield',
 												description: 'You manifest a force barrier that absorbs incoming kinetic energy.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-2-2b',
 														name: 'Kinetic Shield',
 														description: 'You manifest a force barrier that absorbs incoming kinetic energy.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4083,13 +4083,13 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: 'You gain 10 temporary Stamina',
-																	tier2: 'You gain 15 temporary Stamina',
-																	tier3: 'You gain 20 temporary Stamina'
+																	tier1: 'Ви отримуєте 10 тимчасової Витривалості',
+																	tier2: 'Ви отримуєте 15 тимчасової Витривалості',
+																	tier3: 'Ви отримуєте 20 тимчасової Витривалості'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While you have temporary Stamina from this ability, you can’t be made bleeding even while dying.'
 															}
 														],
@@ -4128,7 +4128,7 @@ export const humanNull = {
 								id: 'null-sub-3-5-1',
 								name: 'Inertial Fulcrum',
 								description: 'Whenever you use an ability to reduce damage dealt to you or to reduce the distance of forced movement imposed upon you, you can deal damage to one enemy in the area of your Нульове Поле ability equal to your Intuition score.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4140,7 +4140,7 @@ export const humanNull = {
 								id: 'null-sub-3-6-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4148,14 +4148,14 @@ export const humanNull = {
 												id: 'null-sub-3-6-1a',
 												name: 'Gravitic Charge',
 												description: 'You channel your discipline into momentum that defies gravity.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-6-1a',
 														name: 'Gravitic Charge',
 														description: 'You channel your discipline into momentum that defies gravity.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4187,13 +4187,13 @@ export const humanNull = {
 																		'Intuition'
 																	],
 																	bonus: 0,
-																	tier1: 'Vertical slide 5',
-																	tier2: 'Vertical slide 7',
-																	tier3: 'Vertical slide 9'
+																	tier1: 'Вертикально зсунути на 5',
+																	tier2: 'Вертикально зсунути на 7',
+																	tier3: 'Вертикально зсунути на 9'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'This movement ignores stability. If you slide into another creature, you resolve damage to both of you as if your force movement had ended, but you keep moving through that creature’s space.'
 															}
 														],
@@ -4215,14 +4215,14 @@ export const humanNull = {
 												id: 'null-sub-3-6-1b',
 												name: 'Iron Body',
 												description: 'You focus until your body becomes as hard as iron.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-6-1b',
 														name: 'Iron Body',
 														description: 'You focus until your body becomes as hard as iron.',
 														type: {
-															usage: 'Maneuver',
+															usage: 'Маневр',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4248,7 +4248,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You gain 20 temporary Stamina. Additionally, until the end of the encounter, your stability gains a bonus equal to your Intuition score.'
 															}
 														],
@@ -4283,7 +4283,7 @@ export const humanNull = {
 								id: 'null-sub-3-8-1',
 								name: 'Inertial Dampener',
 								description: 'You and each creature or object of your choice in the area of your Нульове Поле ability gain a bonus to stability equal to your Intuition score. A creature who attempts to force move a target with this bonus takes psychic damage equal to your Intuition score.',
-								type: 'Text',
+								type: 'Текст',
 								data: null
 							}
 						]
@@ -4295,7 +4295,7 @@ export const humanNull = {
 								id: 'null-sub-3-9-1',
 								name: 'Choice',
 								description: '',
-								type: 'Choice',
+								type: 'Вибір',
 								data: {
 									options: [
 										{
@@ -4303,14 +4303,14 @@ export const humanNull = {
 												id: 'null-sub-3-9-1a',
 												name: 'Inertial Absorption',
 												description: 'You absorb an attack to empower your body.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-9-1a',
 														name: 'Inertial Absorption',
 														description: 'You absorb an attack to empower your body.',
 														type: {
-															usage: 'Triggered Action',
+															usage: 'Тригерна дія',
 															free: true,
 															trigger: 'Another creature damages you using an ability.',
 															time: '',
@@ -4336,7 +4336,7 @@ export const humanNull = {
 														minLevel: 1,
 														sections: [
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'You take half the damage, negate any effects associated with the damage for you, and gain 3 surges.'
 															}
 														],
@@ -4358,14 +4358,14 @@ export const humanNull = {
 												id: 'null-sub-3-9-1b',
 												name: 'Realitas',
 												description: 'Your essential hyperreality disrupts your enemy’s connection to existence.',
-												type: 'Ability',
+												type: 'Здібність',
 												data: {
 													ability: {
 														id: 'null-sub-3-9-1b',
 														name: 'Realitas',
 														description: 'Your essential hyperreality disrupts your enemy’s connection to existence.',
 														type: {
-															usage: 'Main Action',
+															usage: 'Основна дія',
 															free: false,
 															trigger: '',
 															time: '',
@@ -4400,13 +4400,13 @@ export const humanNull = {
 																		'Ловкість'
 																	],
 																	bonus: 0,
-																	tier1: '7 + A psychic damage; I < [слабкий], dazed',
-																	tier2: '10 + A psychic damage; I < [середній], dazed',
-																	tier3: '13 + A psychic damage; I < [сильний], dazed'
+																	tier1: '7 + Л психічної шкоди; І < [слабкий], приголомшений',
+																	tier2: '10 + Л психічної шкоди; І < [середній], приголомшений',
+																	tier3: '13 + Л психічної шкоди; І < [сильний], приголомшений'
 																}
 															},
 															{
-																type: 'text',
+																type: 'Текст',
 																text: 'While dazed this way, the target takes psychic damage equal to twice your Intuition score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become winded, they are instead reduced to 0 Stamina. Any creature reduced to 0 Stamina by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director’s discretion.'
 															}
 														],
@@ -4472,7 +4472,7 @@ export const humanNull = {
 				id: 'career-farmer-feature-1',
 				name: 'Interpersonal Skill',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4480,7 +4480,7 @@ export const humanNull = {
 					],
 					count: 1,
 					selected: [
-						'Handle Animals'
+						'Догляд за тваринами'
 					]
 				}
 			},
@@ -4488,7 +4488,7 @@ export const humanNull = {
 				id: 'career-farmer-feature-2',
 				name: 'Exploration Skills',
 				description: '',
-				type: 'Skill Choice',
+				type: 'Вибір навички',
 				data: {
 					options: [],
 					listOptions: [
@@ -4496,16 +4496,16 @@ export const humanNull = {
 					],
 					count: 2,
 					selected: [
-						'Jump',
-						'Alertness'
+						'Стрибки',
+						'Пильність'
 					]
 				}
 			},
 			{
 				id: 'career-farmer-feature-3',
-				name: 'Language',
+				name: 'Мова',
 				description: '',
-				type: 'Language Choice',
+				type: 'Вибір мови',
 				data: {
 					options: [],
 					count: 1,
@@ -4518,7 +4518,7 @@ export const humanNull = {
 				id: 'career-farmer-feature-4',
 				name: 'Project Points',
 				description: '',
-				type: 'Bonus',
+				type: 'Бонус',
 				data: {
 					field: 'Project Points',
 					value: 120,
@@ -4532,7 +4532,7 @@ export const humanNull = {
 				id: 'career-farmer-feature-5',
 				name: 'Exploration Perk',
 				description: '',
-				type: 'Perk',
+				type: 'Перевага',
 				data: {
 					lists: [
 						'Дослідження'
@@ -4543,7 +4543,7 @@ export const humanNull = {
 							id: 'perk-monster-whisperer',
 							name: 'Monster Whisperer',
 							description: 'You can use the Handle Animals skill to interact with nonsapient creatures who are not animals.',
-							type: 'Text',
+							type: 'Текст',
 							data: null,
 							list: 'Дослідження'
 						}
@@ -4598,7 +4598,7 @@ export const humanNull = {
 			id: 'default-language',
 			name: 'Default Language',
 			description: '',
-			type: 'Language Choice',
+			type: 'Вибір мови',
 			data: {
 				options: [],
 				count: 1,

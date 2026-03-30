@@ -60,9 +60,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 				'Each orc shifts up to their speed, moving through enemy spaces if they can. Each enemy passed through during this movement makes a **Might test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: '6 damage; prone',
-					tier2: '4 damage; prone',
-					tier3: 'Push 2'
+					tier1: '6 шкоди; розпластаний',
+					tier2: '4 шкоди; розпластаний',
+					tier3: 'Відштовхнути на 2'
 				})
 			]
 		}),
@@ -84,9 +84,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 				'The ground shakes as a group of mohlers dig a 5 cube pit beneath an area where at least one creature is on the ground. The area is difficult terrain. Each orc in the area can shift into the nearest unoccupied space outside the pit before it is completed. Each nonorc in the area makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Agility,
-					tier1: '4 damage; target falls prone can’t stand (EoT)',
-					tier2: '4 damage; target falls',
-					tier3: 'The target can shift into the nearest unoccupied space outside the pit.'
+					tier1: '4 шкоди; target falls розпластаний не може встати (до кінця ходу)',
+					tier2: '4 шкоди; target falls',
+					tier3: 'Ціль може зміститися into the nearest unoccupied space outside the pit.'
 				})
 			]
 		})
@@ -119,11 +119,11 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage',
-								tier3: '5 damage'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди',
+								tier3: '5 шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('The distance increases to melee 2. If the mohler is 1 or more squares beneath the target before they use this ability, a target who has <code>M < 1</code> is also knocked prone.')
+							FactoryLogic.createAbilitySectionText('The distance increases to melee 2. If the mohler is 1 or more squares beneath the target before they use this ability, a target who has <code>С < 1</code> is also knocked prone.')
 						]
 					})
 				}),
@@ -135,7 +135,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 				FactoryLogic.feature.create({
 					id: 'orc-1-feature-3',
 					name: 'Ground Grinder',
-					description: 'The mohler can use the Dig maneuver at the start of the encounter. Additionally, while the mohler burrows within 1 square below the ground, the ground above where they burrow is difficult terrain.'
+					description: 'The mohler can use the Dig маневр at the start of the encounter. Additionally, while the mohler burrows within 1 square below the ground, the ground above where they burrow is difficult terrain.'
 				})
 			]
 		}),
@@ -166,9 +166,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '1 damage',
-								tier2: '2 damage',
-								tier3: '3 damage'
+								tier1: '1 шкоди',
+								tier2: '2 шкоди',
+								tier3: '3 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who starts their next turn adjacent to three or more blitzers takes 3 damage.')
 						]
@@ -208,9 +208,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; push 1, or the bloodspark can shift 1 square away from the target',
-								tier2: '4 damage; push 2, or the bloodspark can shift 2 square away from the target',
-								tier3: '5 damage; push 4, or the bloodspark can shift 4 square away from the target'
+								tier1: '2 шкоди; відштовхнути на 1, або the bloodspark може зміститися 1 клітинку away from ціль',
+								tier2: '4 шкоди; відштовхнути на 2, або the bloodspark може зміститися 2 клітинку away from ціль',
+								tier3: '5 шкоди; відштовхнути на 4, або the bloodspark може зміститися 4 клітинку away from ціль'
 							}))
 						]
 					})
@@ -294,9 +294,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage',
-								tier2: '4 damage; push 3',
-								tier3: '5 damage; push 3 or prone'
+								tier1: '2 шкоди',
+								tier2: '4 шкоди; відштовхнути на 3',
+								tier3: '5 шкоди; відштовхнути на 3 або розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('The razor gains an edge against any target affected by a condition.')
 						]
@@ -335,9 +335,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; push special',
-								tier2: '10 damage; push special',
-								tier3: '13 damage; push special or prone'
+								tier1: '7 шкоди; push special',
+								tier2: '10 шкоди; push special',
+								tier3: '13 шкоди; push special або розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('The forced movement distance is equal to the number of squares the bloodrunner moved on their turn before using this ability. An ally targeted by this ability ignores the damage and can move up to that same distance.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -385,9 +385,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; pull 1; M < 0 the target is hooked (save ends)',
-								tier2: '7 damage; pull 2; M < 1 the target is hooked (save ends)',
-								tier3: '9 damage; pull 3; M < 2 the target is hooked (save ends)'
+								tier1: '5 шкоди; притягнути на 1; С < 0 ціль is hooked (рят. кидок закінчує)',
+								tier2: '7 шкоди; притягнути на 2; С < 1 ціль is hooked (рят. кидок закінчує)',
+								tier3: '9 шкоди; притягнути на 3; С < 2 ціль is hooked (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A hooked target can’t move more than 3 squares away from the chainlock’s position when this ability is used.')
 						]
@@ -405,9 +405,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 damage; Л < 0 slowed (save ends)',
-								tier2: '7 damage; Л < 1 slowed (save ends)',
-								tier3: '9 damage; prone; Л < 2 slowed (save ends)'
+								tier1: '5 шкоди; Л < 0 сповільнений (рят. кидок закінчує)',
+								tier2: '7 шкоди; Л < 1 сповільнений (рят. кидок закінчує)',
+								tier3: '9 шкоди; розпластаний; Л < 2 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -455,9 +455,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; push 2, or the eye shifts up to 2 squares away from the target',
-								tier2: '9 damage; slide 4, or the eye shifts up to 4 squares away from the target',
-								tier3: '12 damage; slide 6, or the eye shifts up to 6 squares away from the target'
+								tier1: '6 шкоди; відштовхнути на 2, або the eye shifts до 2 клітинок away from ціль',
+								tier2: '9 шкоди; зсунути на 4, або the eye shifts до 4 клітинок away from ціль',
+								tier3: '12 шкоди; зсунути на 6, або the eye shifts до 6 клітинок away from ціль'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability deals cold, fire, or lightning damage.')
 						]
@@ -474,9 +474,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '3 damage; push 2',
-								tier2: '5 damage; push 3',
-								tier3: '3 damage; push 4, prone'
+								tier1: '3 шкоди; відштовхнути на 2',
+								tier2: '5 шкоди; відштовхнути на 3',
+								tier3: '3 шкоди; відштовхнути на 4, розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability deals cold, fire, or lightning damage, and any enemy targeted by the ability has damage weakness 3 to the same damage type (save ends). ')
 						]
@@ -523,9 +523,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; the garroter can shift 1',
-								tier2: '9 damage; the garroter can shift 2',
-								tier3: '12 damage; the garroter can shift 3'
+								tier1: '6 шкоди; the garroter може зміститися 1',
+								tier2: '9 шкоди; the garroter може зміститися 2',
+								tier3: '12 шкоди; the garroter може зміститися 3'
 							})),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, it deals an extra 4 damage.')
 						]
@@ -542,9 +542,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage; I < 1 dazed (save ends)',
-								tier3: '12 damage; grabbed; I < 2 dazed (save ends)'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди; І < 1 приголомшений (рят. кидок закінчує)',
+								tier3: '12 шкоди; схоплений; І < 2 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While grabbed this way, a target can’t communicate or use magic abilities.')
 						]
@@ -597,9 +597,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 sonic damage',
-								tier2: '7 sonic damage',
-								tier3: '9 sonic damage; П < 2 weakened (save ends)'
+								tier1: '5 звукової шкоди',
+								tier2: '7 звукової шкоди',
+								tier3: '9 звукової шкоди; П < 2 ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -613,7 +613,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a main action'),
+							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a основна дія'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
 								effect: 'The godcaller targets a second ally.'
@@ -668,9 +668,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage; prone',
-								tier3: '14 damage; prone; M < 2 bleeding (save ends)'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди; розпластаний',
+								tier3: '14 шкоди; розпластаний; С < 2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who is already prone takes an extra 6 damage.')
 						]
@@ -727,9 +727,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage',
-								tier2: '9 damage; taunted (EoT)',
-								tier3: '12 damage; taunted (EoT)'
+								tier1: '6 шкоди',
+								tier2: '9 шкоди; спровокований (до кінця ходу)',
+								tier3: '12 шкоди; спровокований (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability has a double edge against any target who dealt damage to the rampart this round.')
 						]
@@ -792,9 +792,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '6 damage; Л < 0 prone and can’t stand (save ends)',
-								tier2: '9 damage; Л < 1 prone and can’t stand (save ends)',
-								tier3: '12 damage; Л < 2 prone and can’t stand (save ends)'
+								tier1: '6 шкоди; Л < 0 розпластаний і не може встати (рят. кидок закінчує)',
+								tier2: '9 шкоди; Л < 1 розпластаний і не може встати (рят. кидок закінчує)',
+								tier3: '12 шкоди; Л < 2 розпластаний і не може встати (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target must be on the ground, and the ground in each target’s space rises 1 square.')
 						]
@@ -812,9 +812,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; M < 0 restrained (save ends)',
-								tier2: '7 damage; M < 1 restrained (save ends)',
-								tier3: '10 damage; M < 2 restrained (save ends)'
+								tier1: '4 шкоди; С < 0 скутий (рят. кидок закінчує)',
+								tier2: '7 шкоди; С < 1 скутий (рят. кидок закінчує)',
+								tier3: '10 шкоди; С < 2 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain.')
 						]
@@ -855,7 +855,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						distance: [FactoryLogic.distance.createRanged(10)],
 						target: 'Один союзник',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a main action.'),
+							FactoryLogic.createAbilitySectionText('The target moves up to their speed and can use a основна дія.'),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The warleader targets two allies.'
 							}),
@@ -877,9 +877,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 damage; push 1; M < 1 dazed (save ends)',
-								tier2: '10 damage; push 3; M < 2 dazed (save ends)',
-								tier3: '13 damage; push 5; M < 3 dazed (save ends)'
+								tier1: '7 шкоди; відштовхнути на 1; С < 1 приголомшений (рят. кидок закінчує)',
+								tier2: '10 шкоди; відштовхнути на 3; С < 2 приголомшений (рят. кидок закінчує)',
+								tier3: '13 шкоди; відштовхнути на 5; С < 3 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -895,7 +895,7 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						],
 						target: 'Self and three allies',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target moves up to their speed and can use the Grab maneuver, which gains an edge.')
+							FactoryLogic.createAbilitySectionText('Each target moves up to their speed and can use the Grab маневр, which gains an edge.')
 						]
 					})
 				}),
@@ -923,9 +923,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 							FactoryLogic.createAbilitySectionText('Each target moves up to their speed. Each enemy adjacent to a target after this move makes an **Intuition test.**'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Intuition,
-								tier1: 'Frightened of the warleader (save ends)',
-								tier2: 'Frightened of the warleader (EoT)',
-								tier3: 'No effect.'
+								tier1: 'зляканий of the warleader (рят. кидок закінчує)',
+								tier2: 'зляканий of the warleader (до кінця ходу)',
+								tier3: 'Без ефекту.'
 							}))
 						]
 					})
@@ -993,11 +993,11 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage; prone',
-								tier3: '14 damage; prone'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди; розпластаний',
+								tier3: '14 шкоди; розпластаний'
 							})),
-							FactoryLogic.createAbilitySectionText('The scyza roars, and if the target has <code>I < 2</code>, they are frightened (save ends).')
+							FactoryLogic.createAbilitySectionText('The scyza roars, and if the target has <code>І < 2</code>, they are frightened (save ends).')
 						]
 					})
 				}),
@@ -1012,9 +1012,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage',
-								tier2: '13 damage; prone',
-								tier3: '16 damage; Л < 2 bleeding (save ends)'
+								tier1: '8 шкоди',
+								tier2: '13 шкоди; розпластаний',
+								tier3: '16 шкоди; Л < 2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Against a target on top of the scyza, this ability gains an edge, and the target is pushed into an unoccupied adjacent square and knocked prone.')
 						]
@@ -1032,9 +1032,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '4 damage; 1 sonic damage; Р < 0 dazed (save ends)',
-								tier2: '7 damage; 2 sonic damage; Р < 1 dazed (save ends)',
-								tier3: '9 damage; 3 sonic damage; Р < 2 dazed (save ends)'
+								tier1: '4 шкоди; 1 звукової шкоди; Р < 0 приголомшений (рят. кидок закінчує)',
+								tier2: '7 шкоди; 2 звукової шкоди; Р < 1 приголомшений (рят. кидок закінчує)',
+								tier3: '9 шкоди; 3 звукової шкоди; Р < 2 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -1050,9 +1050,9 @@ When an orc community has exceptional gratitude for the deeds of one of their ow
 							FactoryLogic.createAbilitySectionText('The scyza kicks up a sandstorm, granting concealment to themself and any ally in the area until the end of the scyza’s next turn. Each enemy in the area makes an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Intuition,
-								tier1: '10 damage; prone; slowed (EoT)',
-								tier2: '7 damage; slowed (EoT)',
-								tier3: '4 damage'
+								tier1: '10 шкоди; розпластаний; сповільнений (до кінця ходу)',
+								tier2: '7 шкоди; сповільнений (до кінця ходу)',
+								tier3: '4 шкоди'
 							}))
 						]
 					})

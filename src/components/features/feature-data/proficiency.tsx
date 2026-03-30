@@ -21,8 +21,8 @@ interface InfoProps {
 export const InfoProficiency = (props: InfoProps) => {
 	return (
 		<>
-			{props.data.weapons.length > 0 ? <Field label='Weapons' value={props.data.weapons.join(', ')} /> : null}
-			{props.data.armor.length > 0 ? <Field label='Armor' value={props.data.armor.join(', ')} /> : null}
+			{props.data.weapons.length > 0 ? <Field label='Зброя' value={props.data.weapons.join(', ')} /> : null}
+			{props.data.armor.length > 0 ? <Field label='Броня' value={props.data.armor.join(', ')} /> : null}
 		</>
 	);
 };
@@ -35,7 +35,7 @@ interface EditProps {
 }
 
 export const EditProficiency = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureProficiencyData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureProficiencyData>(Utils.copy(props.data));
 
 	const setProficiencyWeapons = (value: KitWeapon[]) => {
 		const copy = Utils.copy(data);
@@ -53,24 +53,24 @@ export const EditProficiency = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Weapons</HeaderText>
+			<HeaderText>Зброя</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Weapons'
+				placeholder='Зброя'
 				mode='multiple'
 				allowClear={true}
-				options={[ KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip ].map(option => ({ value: option }))}
+				options={[KitWeapon.Bow, KitWeapon.Ensnaring, KitWeapon.Heavy, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Polearm, KitWeapon.Unarmed, KitWeapon.Whip].map(option => ({ value: option }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				value={data.weapons}
 				onChange={setProficiencyWeapons}
 			/>
-			<HeaderText>Armor</HeaderText>
+			<HeaderText>Броня</HeaderText>
 			<Select
 				style={{ width: '100%' }}
-				placeholder='Armor'
+				placeholder='Броня'
 				mode='multiple'
 				allowClear={true}
-				options={[ KitArmor.Heavy, KitArmor.Light, KitArmor.Medium, KitArmor.Shield ].map(option => ({ value: option }))}
+				options={[KitArmor.Heavy, KitArmor.Light, KitArmor.Medium, KitArmor.Shield].map(option => ({ value: option }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				showSearch={true}
 				value={data.armor}

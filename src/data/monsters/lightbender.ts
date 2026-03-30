@@ -36,7 +36,7 @@ export const lightbender: MonsterGroup = {
 			cost: 3,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Each lightbender acting this turn can teleport up to their speed as a move action and attempt to hide as a free maneuver, all until the start of their next turn.'
+				'Each lightbender acting this turn can teleport up to their speed as a дія руху and attempt to hide as a безкоштовний маневр, all until the start of their next turn.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -45,7 +45,7 @@ export const lightbender: MonsterGroup = {
 			cost: 5,
 			icon: StatBlockIcon.Trait,
 			sections: [
-				'Each lightbender acting this turn can create a duplicate lightbender in an unoccupied space adjacent to them. The duplicate is indistinguishable from the lightbender except by supernatural means, has 1 Stamina, and has the lightbender’s speed. A duplicate acts on the lightbender’s turn but can take only move actions. Once per round before or after using an ability, a lightbender can trade places with any lightbender duplicate.'
+				'Each lightbender acting this turn can create a duplicate lightbender in an unoccupied space adjacent to them. The duplicate is indistinguishable from the lightbender except by supernatural means, has 1 Stamina, and has the lightbender’s speed. A duplicate acts on the lightbender’s turn but can take only дії руху. Once per round before or after using an ability, a lightbender can trade places with any lightbender duplicate.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -57,9 +57,9 @@ export const lightbender: MonsterGroup = {
 				'Each lightbender in the encounter shines radiantly, distorting the senses of any enemy within 5 squares of them. Each affected enemy makes a **Reason test.**',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Reason,
-					tier1: 'The target doesn’t have line of effect to any lightbender (save ends).',
-					tier2: 'The target doesn’t have line of effect to any lightbender (EoT).',
-					tier3: 'No effect.'
+					tier1: 'Ціль doesn’t have line of effect to any lightbender (рят. кидок закінчує).',
+					tier2: 'Ціль doesn’t have line of effect to any lightbender (до кінця ходу).',
+					tier3: 'Без ефекту.'
 				})
 			]
 		})
@@ -92,9 +92,9 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '9 damage',
-									tier2: '14 damage',
-									tier3: '18 damage'
+									tier1: '9 шкоди',
+									tier2: '14 шкоди',
+									tier3: '18 шкоди'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('If this ability gains an edge or has a double edge, it deals an extra 4 damage.')
@@ -113,9 +113,9 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '8 damage',
-									tier2: '12 damage; M<1 bleeding (save ends)',
-									tier3: '15 damage; M<2 bleeding (save ends)'
+									tier1: '8 шкоди',
+									tier2: '12 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+									tier3: '15 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While bleeding this way, the target takes a bane on tests to search for the lightbender while they are hidden.')
@@ -135,12 +135,12 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'I<0 dazed (save ends)',
-									tier2: 'I<1 dazed (save ends)',
-									tier3: 'I<2 dazed (save ends)'
+									tier1: 'І<0 приголомшений (рят. кидок закінчує)',
+									tier2: 'І<1 приголомшений (рят. кидок закінчує)',
+									tier3: 'І<2 приголомшений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the dazed condition ends.')
+							FactoryLogic.createAbilitySectionText('While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a основна дія to shake the target out of their stupor, the dazed condition ends.')
 						]
 					})
 				}),
@@ -153,7 +153,7 @@ export const lightbender: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The lightbender halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the lightbender can immediately attempt to hide as a free maneuver.')
+							FactoryLogic.createAbilitySectionText('The lightbender halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the lightbender can immediately attempt to hide as a безкоштовний маневр.')
 						]
 					})
 				}),
@@ -191,9 +191,9 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '7 damage',
-									tier2: '11 damage; A<1 prone',
-									tier3: '14 damage; A<2 prone'
+									tier1: '7 шкоди',
+									tier2: '11 шкоди; Л<1 розпластаний',
+									tier3: '14 шкоди; Л<2 розпластаний'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('The pouncer can make a free strike against each target they knock prone.')
@@ -212,9 +212,9 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: '4 damage',
-									tier2: '7 damage; A<1 the target is dazzled (save ends)',
-									tier3: '10 damage; A<2 the target is dazzled (save ends)'
+									tier1: '4 шкоди',
+									tier2: '7 шкоди; Л<1 ціль is dazzled (рят. кидок закінчує)',
+									tier3: '10 шкоди; Л<2 ціль is dazzled (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A dazzled target takes a bane on strikes and has line of effect only within 1 square.')
@@ -234,12 +234,12 @@ export const lightbender: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 2,
-									tier1: 'I<0 dazed (save ends)',
-									tier2: 'I<1 dazed (save ends)',
-									tier3: 'I<2 dazed (save ends)'
+									tier1: 'І<0 приголомшений (рят. кидок закінчує)',
+									tier2: 'І<1 приголомшений (рят. кидок закінчує)',
+									tier3: 'І<2 приголомшений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the dazed condition ends.')
+							FactoryLogic.createAbilitySectionText('While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a основна дія to shake the target out of their stupor, the dazed condition ends.')
 						]
 					})
 				}),
@@ -252,7 +252,7 @@ export const lightbender: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The pouncer halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the pouncer can immediately attempt to hide as a free maneuver.')
+							FactoryLogic.createAbilitySectionText('The pouncer halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the pouncer can immediately attempt to hide as a безкоштовний маневр.')
 						]
 					})
 				}),

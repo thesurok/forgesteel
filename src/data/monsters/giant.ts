@@ -84,9 +84,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 				sections: [
 					FactoryLogic.createAbilitySectionText('A giant unearths a structure, hazard, or chunk of the encounter map and launches it to fill the area. Each target makes an **Agility test**.'),
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-						tier1: '18 damage; prone and can’t stand (save ends)',
-						tier2: '14 damage; prone',
-						tier3: '9 damage'
+						tier1: '18 шкоди; розпластаний і не може встати (рят. кидок закінчує)',
+						tier2: '14 шкоди; розпластаний',
+						tier3: '9 шкоди'
 					}))
 				]
 			})
@@ -108,9 +108,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 			sections: [
 				'A giant creates a fissure along the ground, either in a 15 × 2 line within 1 or a 10 × 3 line within 2, and that opens up to a depth of 6 squares. Each giant in the area can shift into the nearest unoccupied space outside the fissure. Each non-giant in the area makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
-					tier1: '10 damage; the target falls into the fissure, and is prone and can’t stand (EoT)',
-					tier2: '10 damage; the target is prone and hanging onto the edge of the fissure',
-					tier3: 'Target can shift into the nearest unoccupied square outside the fissure'
+					tier1: '10 шкоди; ціль falls into the fissure, і is розпластаний і не може встати (до кінця ходу)',
+					tier2: '10 шкоди; ціль is розпластаний і hanging onto the edge of the fissure',
+					tier3: 'Target може зміститися into the nearest unoccupied square outside the fissure'
 				})
 			]
 		})
@@ -151,9 +151,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '2 fire damage',
-								tier2: '5 fire damage; push 1',
-								tier3: '6 fire damage; push 2'
+								tier1: '2 вогняної шкоди',
+								tier2: '5 вогняної шкоди; відштовхнути на 1',
+								tier3: '6 вогняної шкоди; відштовхнути на 2'
 							})),
 							FactoryLogic.createAbilitySectionText('The fireballer can jump up to 4 squares before using this ability.')
 						]
@@ -195,9 +195,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '3 damage; slide 2',
-								tier2: '6 damage; slide 3; A<3 restrained (save ends)',
-								tier3: '8 damage; slide 4; A<4 restrained (save ends)'
+								tier1: '3 шкоди; зсунути на 2',
+								tier2: '6 шкоди; зсунути на 3; Л<3 скутий (рят. кидок закінчує)',
+								tier3: '8 шкоди; зсунути на 4; Л<4 скутий (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -254,9 +254,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 cold damage',
-								tier2: '7 cold damage',
-								tier3: '9 cold damage; prone'
+								tier1: '4 холодної шкоди',
+								tier2: '7 холодної шкоди',
+								tier3: '9 холодної шкоди; розпластаний'
 							}))
 						]
 					})
@@ -303,9 +303,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '4 damage',
-								tier2: '7 damage',
-								tier3: '8 cold damage; grabbed'
+								tier1: '4 шкоди',
+								tier2: '7 шкоди',
+								tier3: '8 холодної шкоди; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('The mosstooth can use a creature or object they have grabbed as a weapon for this ability, dealing an extra 5 damage to that creature or object and the target. They then end the grab and leave the creature or object prone in an unoccupied space adjacent to the target.')
 						]
@@ -314,7 +314,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 				FactoryLogic.feature.create({
 					id: 'giant-4-3',
 					name: 'Distracted',
-					description: 'Whenever the mosstooth targets a creature or object with an ability, any enemy within distance of the ability can use a free triggered action to distract the mosstooth. The mosstooth targets that enemy instead.'
+					description: 'Whenever the mosstooth targets a creature or object with an ability, any enemy within distance of the ability can use a безкоштовна тригерна дія to distract the mosstooth. The mosstooth targets that enemy instead.'
 				})
 			]
 		}),
@@ -346,9 +346,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage; M<2 slowed (save ends)',
-								tier2: '17 damage; M<3 slowed (save ends)',
-								tier3: '21 damage; M<4 slowed (save ends)'
+								tier1: '12 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier2: '17 шкоди; С<3 сповільнений (рят. кидок закінчує)',
+								tier3: '21 шкоди; С<4 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target was already slowed, that condition continues but their speed is 0 until the end of their next turn.')
 						]
@@ -369,9 +369,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '10 damage; A<2 restrained (save ends)',
-								tier2: '16 damage; A<3 restrained (save ends)',
-								tier3: '20 damage; prone; A<4 restrained (save ends)'
+								tier1: '10 шкоди; Л<2 скутий (рят. кидок закінчує)',
+								tier2: '16 шкоди; Л<3 скутий (рят. кидок закінчує)',
+								tier3: '20 шкоди; розпластаний; Л<4 скутий (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The knife lands in the target’s square, and has 30 Stamina and damage immunity 5. Whenever the knife takes damage, it deals 4 sonic damage to each enemy within 3 squares. The knife lasts until the end of the encounter, and can’t be picked up or manipulated.')
 						]
@@ -400,7 +400,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is pushed up to 3 squares, or if they have A<3, they are pushed up to 6 squares and knocked prone.')
+							FactoryLogic.createAbilitySectionText('The target is pushed up to 3 squares, or if they have Л<3, they are pushed up to 6 squares and knocked prone.')
 						]
 					})
 				}),
@@ -455,9 +455,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 fire damage; slide 2',
-								tier2: '17 fire damage; slide 4',
-								tier3: '22 fire damage; slide 6'
+								tier1: '13 вогняної шкоди; зсунути на 2',
+								tier2: '17 вогняної шкоди; зсунути на 4',
+								tier3: '22 вогняної шкоди; зсунути на 6'
 							}))
 						]
 					})
@@ -476,9 +476,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '15 fire damage',
-								tier2: '21 fire damage',
-								tier3: '26 fire damage'
+								tier1: '15 вогняної шкоди',
+								tier2: '21 вогняної шкоди',
+								tier3: '26 вогняної шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The blaze ricochets, targeting one additional target within 4 squares of an original target and taking a bane against that target, or targeting two additional targets within 2 squares of an original target and having a double bane against those targets. The lightbearer makes one power roll against all targets.')
 						]
@@ -559,9 +559,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '14 fire damage; push 2',
-								tier2: '19 fire damage; push 4; A<3 burning (save ends)',
-								tier3: '23 fire damage; push 6; A<4 burning (save ends)'
+								tier1: '14 вогняної шкоди; відштовхнути на 2',
+								tier2: '19 вогняної шкоди; відштовхнути на 4; Л<3 палає (рят. кидок закінчує)',
+								tier3: '23 вогняної шкоди; відштовхнути на 6; Л<4 палає (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.')
 						]
@@ -579,9 +579,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'The distance is 2 burst; 8 fire damage; M<2 pull 2',
-								tier2: 'The distance is 3 burst; 12 fire damage; M<3 pull 4',
-								tier3: 'The distance is 4 burst; 15 fire damage; M<4 pull 6'
+								tier1: 'The distance is 2 burst; 8 вогняної шкоди; С<2 притягнути на 2',
+								tier2: 'The distance is 3 burst; 12 вогняної шкоди; С<3 притягнути на 4',
+								tier3: 'The distance is 4 burst; 15 вогняної шкоди; С<4 притягнути на 6'
 							})),
 							FactoryLogic.createAbilitySectionText('The outermost squares of the area become a 1-square-tall wall of stone. The rest of the area is on fire until the end of the encounter. A creature who enters the area for the first time in a round or starts their turn there takes 3 fire damage.')
 						]
@@ -611,9 +611,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes a **Might test**. A target with fire immunity automatically obtains a tier 3 outcome.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: 'Weakened and slowed (save ends)',
-								tier2: 'Weakened (EoT)',
-								tier3: 'No effect'
+								tier1: 'ослаблений і сповільнений (рят. кидок закінчує)',
+								tier2: 'ослаблений (до кінця ходу)',
+								tier3: 'Без ефекту'
 							}))
 						]
 					})
@@ -673,9 +673,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '13 cold damage',
-								tier2: '18 cold damage; M<3 bleeding (save ends)',
-								tier3: '22 cold damage; M<4 bleeding (save ends)'
+								tier1: '13 холодної шкоди',
+								tier2: '18 холодної шкоди; С<3 кровотеча (рят. кидок закінчує)',
+								tier3: '22 холодної шкоди; С<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Whenever a creature bleeding this way takes damage from that condition, their speed decreases by 1 (to a minimum of 0) until that condition ends.')
 						]
@@ -695,9 +695,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('The storm hurler throws three size 1L ice javelins into unoccupied squares within distance. Each javelin has 30 Stamina and fire weakness 5. At the start of the storm hurler’s next turn, all javelins not destroyed explode in a shower of icicles. Each enemy and object within 3 squares of an exploding javelin makes an **Agility test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '14 cold damage; push 4; bleeding (save ends)',
-								tier2: '11 cold damage; push 2; slowed (save ends)',
-								tier3: '7 cold damage'
+								tier1: '14 холодної шкоди; відштовхнути на 4; кровотеча (рят. кидок закінчує)',
+								tier2: '11 холодної шкоди; відштовхнути на 2; сповільнений (рят. кидок закінчує)',
+								tier3: '7 холодної шкоди'
 							}))
 						]
 					})
@@ -772,8 +772,8 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
 								tier1: '12 damagee',
-								tier2: '17 damage; A<3 bleeding (save ends)',
-								tier3: '21 damage; A<4 bleeding (save ends)'
+								tier2: '17 шкоди; Л<3 кровотеча (рят. кидок закінчує)',
+								tier3: '21 шкоди; Л<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who is already bleeding takes an extra 1d6 cold damage.')
 						]
@@ -862,9 +862,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage',
-								tier2: '17 damage; R<3 weakened (save ends)',
-								tier3: '21 damage; R<4 weakened (save ends)'
+								tier1: '12 шкоди',
+								tier2: '17 шкоди; Р<3 ослаблений (рят. кидок закінчує)',
+								tier3: '21 шкоди; Р<4 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is already weakened, they are also bleeding (save ends).')
 						]
@@ -884,9 +884,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage; push 2',
-								tier2: '10 damage; push 4',
-								tier3: '14 damage; vertical push 4'
+								tier1: '6 шкоди; відштовхнути на 2',
+								tier2: '10 шкоди; відштовхнути на 4',
+								tier3: '14 шкоди; вертикально відштовхнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('The area is difficult terrain. Whenever a creature enters a square in the area, they take 3 damage')
 						]
@@ -971,9 +971,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '12 damage',
-								tier2: '17 damage; prone',
-								tier3: '21 damage; prone'
+								tier1: '12 шкоди',
+								tier2: '17 шкоди; розпластаний',
+								tier3: '21 шкоди; розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('A target who is already prone takes an extra 12 damage.')
 						]
@@ -993,9 +993,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '14 damage; prone',
-								tier2: '20 damage; prone M<3 can’t stand (save ends)',
-								tier3: '25 damage; prone M<4 can’t stand (save ends)'
+								tier1: '14 шкоди; розпластаний',
+								tier2: '20 шкоди; розпластаний С<3 не може встати (рят. кидок закінчує)',
+								tier3: '25 шкоди; розпластаний С<4 не може встати (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('In suitably soft ground, the target is entrenched in a 2-square deep hole.')
 						]
@@ -1012,9 +1012,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target must make either a **Might** or **Agility** test.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '6 damage; vertical push 3',
-								tier2: '2 damage; vertical push 4',
-								tier3: 'Push 2'
+								tier1: '6 шкоди; вертикально відштовхнути на 3',
+								tier2: '2 шкоди; вертикально відштовхнути на 4',
+								tier3: 'Відштовхнути на 2'
 							})),
 							FactoryLogic.createAbilitySectionText('The clobberer can choose to fall prone in order to double the forced movement distance.')
 						]
@@ -1033,9 +1033,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('The target makes an **Agility** test.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: 'Grabbed, and the target takes a bane on the Escape Grab maneuver',
-								tier2: 'Grabbed',
-								tier3: 'No effect'
+								tier1: 'схоплений, і ціль takes a bane on the Escape Grab маневр',
+								tier2: 'схоплений',
+								tier3: 'Без ефекту'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -1052,7 +1052,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 				FactoryLogic.feature.create({
 					id: 'giant-11-feature-7',
 					name: 'Distracted',
-					description: ' Whenever the clobberer targets a creature or object with an ability, any enemy within distance of the ability can use a free triggered action to distract the clobberer. The clobberer targets that enemy instead.'
+					description: ' Whenever the clobberer targets a creature or object with an ability, any enemy within distance of the ability can use a безкоштовна тригерна дія to distract the clobberer. The clobberer targets that enemy instead.'
 				})
 			]
 		}),
@@ -1084,9 +1084,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '6 damage; I<2 dazed (save ends)',
-								tier2: '10 damage; I<3 dazed (save ends)',
-								tier3: '14 damage; I<4 dazed (save ends)'
+								tier1: '6 шкоди; І<2 приголомшений (рят. кидок закінчує)',
+								tier2: '10 шкоди; І<3 приголомшений (рят. кидок закінчує)',
+								tier3: '14 шкоди; І<4 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target has any effect on them that can be ended by a saving throw or that ends at the end of their turn, they are also knocked prone. ')
 						]
@@ -1106,9 +1106,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: 'Vertical push 7',
-								tier2: 'Vertical push 10',
-								tier3: 'Vertical push 12'
+								tier1: 'Вертикально відштовхнути на 7',
+								tier2: 'Вертикально відштовхнути на 10',
+								tier3: 'Вертикально відштовхнути на 12'
 							})),
 							FactoryLogic.createAbilitySectionText('Against a target who is prone or grabbed, this ability has a double edge.')
 						]
@@ -1193,9 +1193,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target makes either an **Agility test** or an **Intuition test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '18 fire damage; prone; weakened (save ends)',
-								tier2: '14 fire damage; prone (EoT)',
-								tier3: '9 fire damage'
+								tier1: '18 вогняної шкоди; розпластаний; ослаблений (рят. кидок закінчує)',
+								tier2: '14 вогняної шкоди; розпластаний (до кінця ходу)',
+								tier3: '9 вогняної шкоди'
 							}))
 						]
 					})
@@ -1213,9 +1213,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '14 damage; push 5; A<3 9 fire damage',
-								tier2: '19 damage; push 10; A<4 9 fire damage',
-								tier3: '23 damage; push 15; A<5 9 fire damage'
+								tier1: '14 шкоди; відштовхнути на 5; Л<3 9 вогняної шкоди',
+								tier2: '19 шкоди; відштовхнути на 10; Л<4 9 вогняної шкоди',
+								tier3: '23 шкоди; відштовхнути на 15; Л<5 9 вогняної шкоди'
 							}))
 						]
 					})
@@ -1232,9 +1232,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '5 fire damage; M<3, vertical push 3',
-								tier2: '7 fire damage; M<4, vertical push 4',
-								tier3: '9 fire damage; M<5, vertical push 5'
+								tier1: '5 вогняної шкоди; С<3, вертикально відштовхнути на 3',
+								tier2: '7 вогняної шкоди; С<4, вертикально відштовхнути на 4',
+								tier3: '9 вогняної шкоди; С<5, вертикально відштовхнути на 5'
 							}))
 						]
 					})
@@ -1266,7 +1266,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						],
 						target: 'На себе і кожного союзника в зоні впливу',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed and can make a free strike. Any enemy who takes damage from a free strike this way and who has A<4 is burning (save ends). A burning enemy takes 1d6 fire damage at the start of each of their turns.')
+							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed and can make a free strike. Any enemy who takes damage from a free strike this way and who has Л<4 is burning (save ends). A burning enemy takes 1d6 fire damage at the start of each of their turns.')
 						]
 					})
 				}),
@@ -1295,9 +1295,9 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 						sections: [
 							FactoryLogic.createAbilitySectionText('Each target unleashes a wave of fire, and each enemy within 2 squares of any target makes an **Agility test**. An enemy affected by two targets takes a bane on the test, while an enemy affected by three or more targets has a double bane.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
-								tier1: '18 fire damage',
-								tier2: '14 fire damage',
-								tier3: '9 fire damage'
+								tier1: '18 вогняної шкоди',
+								tier2: '14 вогняної шкоди',
+								tier3: '9 вогняної шкоди'
 							}))
 						]
 					})
@@ -1305,7 +1305,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 				FactoryLogic.feature.create({
 					id: 'giant-13-feature-9',
 					name: 'Scorching Skin',
-					description: 'Whenever an adjacent enemy grabs the chief or uses a melee ability against them, that enemy takes 9 fire damage, and if they have M<4 they are weakened (save ends).'
+					description: 'Whenever an adjacent enemy grabs the chief or uses a melee ability against them, that enemy takes 9 fire damage, and if they have С<4 they are weakened (save ends).'
 				})
 			]
 		})

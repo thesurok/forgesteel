@@ -57,7 +57,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The dragon takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -69,9 +69,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 				'The dragon drops stars into five 2 cubes anywhere on the encounter map. The area is difficult terrain, and each creature and object in the area when it appears makes an **Agility test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Intuition,
-					tier1: '20 holy damage; slowed (save ends), prone',
-					tier2: '16 holy damage; slowed (save ends)',
-					tier3: '10 holy damage'
+					tier1: '20 священної шкоди; сповільнений (рят. кидок закінчує), розпластаний',
+					tier2: '16 священної шкоди; сповільнений (рят. кидок закінчує)',
+					tier3: '10 священної шкоди'
 				})
 			]
 		}),
@@ -81,7 +81,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 			cost: 10,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'A black hole manifests as a 1 cube within 20 squares of the dragon in an unoccupied space. Each creature who has M<5 and each object of size 3 or smaller is vertical pulled 2 squares toward the area at the start of each round, ignoring stability. Any creature who starts their turn in the area or any object in the area at the end of the round suffers the effect of the dragon’s Voidlight Breath ability, and the black hole disappears.'
+				'A black hole manifests as a 1 cube within 20 squares of the dragon in an unoccupied space. Each creature who has С<5 and each object of size 3 or smaller is vertical pulled 2 squares toward the area at the start of each round, ignoring stability. Any creature who starts their turn in the area or any object in the area at the end of the round suffers the effect of the dragon’s Voidlight Breath ability, and the black hole disappears.'
 			]
 		})
 	],
@@ -123,9 +123,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 							FactoryLogic.createAbilitySectionText('Each target makes a **Might test**.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Might,
-								tier1: '20 sonic damage; the target is dragonsealed (save ends)',
-								tier2: '16 sonic damage; the target is dragonsealed (save ends)',
-								tier3: '10 sonic damage'
+								tier1: '20 звукової шкоди; ціль is dragonsealed (рят. кидок закінчує)',
+								tier2: '16 звукової шкоди; ціль is dragonsealed (рят. кидок закінчує)',
+								tier3: '10 звукової шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('A dragonsealed target emits a golden aura, and takes 2 damage per square moved when falling or when force moved into an obstacle.')
 						]
@@ -145,9 +145,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 5,
-								tier1: '15 holy damage; A<4 weakened (save ends)',
-								tier2: '21 holy damage; A<4 weakened (save ends)',
-								tier3: '25 holy damage; A<4 weakened (save ends)'
+								tier1: '15 священної шкоди; Л<4 ослаблений (рят. кидок закінчує)',
+								tier2: '21 священної шкоди; Л<4 ослаблений (рят. кидок закінчує)',
+								tier3: '25 священної шкоди; Л<4 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target made weakened this way is already weakened, they are instead dazed until the end of their next turn.')
 						]
@@ -197,9 +197,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '10 psychic damage; P<4 frightened (save ends)',
-									tier2: '16 psychic damage; P<5 frightened (save ends)',
-									tier3: '20 psychic damage; P<6 frightened (save ends)'
+									tier1: '10 психічної шкоди; П<4 зляканий (рят. кидок закінчує)',
+									tier2: '16 психічної шкоди; П<5 зляканий (рят. кидок закінчує)',
+									tier3: '20 психічної шкоди; П<6 зляканий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While frightened this way, the target can’t use the triggering ability.')
@@ -220,7 +220,7 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 						distance: [FactoryLogic.distance.createSpecial('1-mile burst')],
 						target: 'Each creature and object in the area',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target takes 30 fire damage, and if they have M<5, they are knocked prone.'),
+							FactoryLogic.createAbilitySectionText('Each target takes 30 fire damage, and if they have С<5, they are knocked prone.'),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Особливе',
 								effect: 'The dragon can use this ability before the encounter begins.'
@@ -252,9 +252,9 @@ A meteor dragon’s body is infused with crystalline starlight, which they can c
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '25 damage; I<6 the target is annihilated',
-									tier2: '21 damage; I<5 the target is annihilated',
-									tier3: '15 damage; I<4 the target is annihilated'
+									tier1: '25 шкоди; І<6 ціль is annihilated',
+									tier2: '21 шкоди; І<5 ціль is annihilated',
+									tier3: '15 шкоди; І<4 ціль is annihilated'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('An annihilated target must make the test again, decreasing the potency for themself by 2 each time they are annihilated. A creature reduced to 0 Stamina by this dies and their soul is destroyed.')

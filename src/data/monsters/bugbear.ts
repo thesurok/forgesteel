@@ -57,7 +57,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			icon: StatBlockIcon.Self,
 			repeatable: true,
 			sections: [
-				'For every 3 Malice spent, one non-minion bugbear acting this turn grabs an iron ball and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to  8 – the number of squares the iron ball was thrown, and if they have M<1, they are slowed (save ends).'
+				'For every 3 Malice spent, one non-minion bugbear acting this turn grabs an iron ball and can use a маневр to throw it at a creature within 5 squares of them. The creature takes damage equal to  8 – the number of squares the iron ball was thrown, and if they have С<1, they are slowed (save ends).'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -67,7 +67,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			icon: StatBlockIcon.Self,
 			repeatable: true,
 			sections: [
-				' For every 5 Malice spent, one non-minion bugbear acting this turn grabs a javelin and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to  12 – the number of squares the javelin was thrown, and if they have M<1, they are bleeding (save ends). While a creature is bleeding this way, any ally of the bugbear within 2 squares of them can use a free maneuver to pull the bleeding creature up to 2 squares.'
+				' For every 5 Malice spent, one non-minion bugbear acting this turn grabs a javelin and can use a маневр to throw it at a creature within 5 squares of them. The creature takes damage equal to  12 – the number of squares the javelin was thrown, and if they have С<1, they are bleeding (save ends). While a creature is bleeding this way, any ally of the bugbear within 2 squares of them can use a безкоштовний маневр to pull the bleeding creature up to 2 squares.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -76,7 +76,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 			cost: 10,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [
-				' A bugbear infuses the encounter map with bu’gathic magic. Until the end of the encounter, all bugbears and allies have their speed doubled and can automatically climb at full speed while moving. Additionally, if the target of any bugbear or ally’s strike has I<1, the target is also frightened (save ends) and must move their speed in a straight line away from the creature who made the strike.'
+				' A bugbear infuses the encounter map with bu’gathic magic. Until the end of the encounter, all bugbears and allies have their speed doubled and can automatically climb at full speed while moving. Additionally, if the target of any bugbear or ally’s strike has І<1, the target is also frightened (save ends) and must move their speed in a straight line away from the creature who made the strike.'
 			]
 		})
 	],
@@ -107,9 +107,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; pull 2',
-								tier2: '10 damage; pull 3',
-								tier3: '13 damage; pull 4'
+								tier1: '7 шкоди; притягнути на 2',
+								tier2: '10 шкоди; притягнути на 3',
+								tier3: '13 шкоди; притягнути на 4'
 							})),
 							FactoryLogic.createAbilitySectionText('Each target must be on the ground, and each square a target is pulled through is difficult terrain for enemies.')
 						]
@@ -126,9 +126,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; M<0 bleeding (save ends)',
-								tier2: '3 damage; M<1 bleeding (save ends)',
-								tier3: '4 damage; M<2 bleeding (save ends)'
+								tier1: '2 шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '3 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '4 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The channeler chooses one of the following damage types for the damage: acid, cold, corruption, fire, or poison.')
 						]
@@ -146,9 +146,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '5 corruption damage; P<0 slowed (save ends)',
-								tier2: '8 corruption damage; P<1 the target is shapechanged (save ends)',
-								tier3: '11 corruption damage; P<2 the target is shapechanged (save ends)'
+								tier1: '5 шкоди від скверни; П<0 сповільнений (рят. кидок закінчує)',
+								tier2: '8 шкоди від скверни; П<1 ціль перетворена (рят. кидок закінчує)',
+								tier3: '11 шкоди від скверни; П<2 ціль перетворена (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A shapechanged creature is slowed and has fire weakness 10 as their limbs stretch and their skin becomes paper thin.')
 						]
@@ -222,9 +222,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '10 damage',
-								tier3: '13 damage; one target is grabbed'
+								tier1: '7 шкоди',
+								tier2: '10 шкоди',
+								tier3: '13 шкоди; одна ціль схоплена'
 							})),
 							FactoryLogic.createAbilitySectionText('One ally within 5 squares of the commander gains an edge on their next strike until the start of the commander’s next turn.')
 						]
@@ -251,7 +251,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 						target: 'Кожен союзник у зоні',
 						cost: 5,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can use the Throw maneuver.')
+							FactoryLogic.createAbilitySectionText('Each target shifts up to their speed, then can use the Throw маневр.')
 						]
 					})
 				}),
@@ -314,9 +314,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage',
-								tier2: '11 damage; one target is grabbed; one target is pushed up to 2 squares',
-								tier3: '14 damage; one target is grabbed; one target is vertical pushed up to 3 squares'
+								tier1: '7 шкоди',
+								tier2: '11 шкоди; одна ціль схоплена; одну ціль можна відштовхнути до 2 клітинок',
+								tier3: '14 шкоди; одна ціль схоплена; одну ціль можна вертикально штовхнути до 3 клітинок'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
@@ -336,9 +336,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '8 damage; M<1 prone',
-								tier2: '13 damage; M<2 prone',
-								tier3: '16 damage; M<3 prone'
+								tier1: '8 шкоди; С<1 розпластаний',
+								tier2: '13 шкоди; С<2 розпластаний',
+								tier3: '16 шкоди; С<3 розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('The roughneck can jump up to 5 squares to an unoccupied space within distance of the target before making this strike.')
 						]
@@ -426,11 +426,11 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '8 damage; A<1 grabbed',
-								tier2: '13 damage; A<2 grabbed',
-								tier3: '16 damage; grabbed'
+								tier1: '8 шкоди; Л<1 схоплений',
+								tier2: '13 шкоди; Л<2 схоплений',
+								tier3: '16 шкоди; схоплений'
 							})),
-							FactoryLogic.createAbilitySectionText('The target can’t use triggered actions until the start of the next round. Additionally, if the sneak started their turn hidden from the target, this ability deals an extra 4 damage. ')
+							FactoryLogic.createAbilitySectionText('The target can’t use тригерні дії until the start of the next round. Additionally, if the sneak started their turn hidden from the target, this ability deals an extra 4 damage. ')
 						]
 					})
 				}),
@@ -446,9 +446,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '2 damage; I<0 the sneak has concealment from the target (save ends)',
-								tier2: '3 damage; I<1 the sneak has concealment from the target (save ends)',
-								tier3: '4 damage; I<2 the sneak has concealment from the target (save ends)'
+								tier1: '2 шкоди; І<0 крадун має прихованість від цілі (рят. кидок закінчує)',
+								tier2: '3 шкоди; І<1 крадун має прихованість від цілі (рят. кидок закінчує)',
+								tier3: '4 шкоди; І<2 крадун має прихованість від цілі (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The sneak shifts up to their speed and can attempt to hide.')
 						]
@@ -465,9 +465,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 2,
-								tier1: '7 damage; M<0 bleeding (save ends)',
-								tier2: '11 damage; M<1 bleeding (save ends)',
-								tier3: '14 damage; M<2 bleeding (save ends)'
+								tier1: '7 шкоди; С<0 кровотеча (рят. кидок закінчує)',
+								tier2: '11 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '14 шкоди; С<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While bleeding this way, the target can’t hide from the sneak or their allies.')
 						]
@@ -542,9 +542,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '3 corruption damage',
-								tier2: '6 corruption damage; P<3 bleeding (save ends)',
-								tier3: '8 corruption damage; grabbed; P<4 bleeding (save ends)'
+								tier1: '3 шкоди від скверни',
+								tier2: '6 шкоди від скверни; П<3 кровотеча (рят. кидок закінчує)',
+								tier3: '8 шкоди від скверни; схоплений; П<4 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('A target grabbed this way or already grabbed by the knightmare can be vertical pushed up to 5 squares.')
 						]
@@ -589,9 +589,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage; pull 2',
-								tier2: '6 damage; pull 3',
-								tier3: '7 damage; pull 4; grabbed'
+								tier1: '3 шкоди; притягнути на 2',
+								tier2: '6 шкоди; притягнути на 3',
+								tier3: '7 шкоди; притягнути на 4; схоплений'
 							})),
 							FactoryLogic.createAbilitySectionText('If the target is pulled into the mob, that forced movement deals damage only at the Director’s determination.')
 						]
@@ -631,9 +631,9 @@ When bugbears are compelled to take action, they take to the high ground and use
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage',
-								tier2: '6 damage',
-								tier3: '7 damage; A<3 slowed (save ends)'
+								tier1: '3 шкоди',
+								tier2: '6 шкоди',
+								tier3: '7 шкоди; Л<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('If the snare started their turn hidden from the target, the target is automatically grabbed. A target grabbed this way or already grabbed by the snare can be vertical pushed up to 4 squares.')
 						]

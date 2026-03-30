@@ -7,8 +7,8 @@ import { SubClass } from '@/models/subclass';
 
 export const prowler: SubClass = {
 	id: 'beastheart-sub-2',
-	name: 'Prowler',
-	description: 'You are an unseen ambusher that strikes from the shadows. Your prey is dead before they even know you’re there.',
+	name: 'Скрадач',
+	description: 'Ви непомітний нападник із засідки, що бʼє з тіней. Ваша здобич мертва ще до того, як зрозуміє, що ви поруч.',
 	featuresByLevel: [
 		{
 			level: 1,
@@ -19,23 +19,23 @@ export const prowler: SubClass = {
 				}),
 				FactoryLogic.feature.createPackageContent({
 					id: 'beastheart-sub-2-1-2',
-					name: 'Wild Nature Benefit',
-					description: 'The target is weakened until the start of your next turn.',
+					name: 'Перевага дикої природи',
+					description: 'Ціль ослаблена до початку вашого наступного ходу.',
 					tag: 'feral-strike'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'beastheart-sub-2-1-3',
-						name: 'While No One’s Looking',
-						description: 'While everyone’s eyes are drawn to your foe, you take the opportunity to blend into the scenery.',
-						type: FactoryLogic.type.createTrigger('An enemy deals damage to a creature other than you.'),
+						name: 'Поки ніхто не дивиться',
+						description: 'Поки всі очі прикуті до вашого ворога, ви користуєтеся нагодою, щоб злитися з довкіллям.',
+						type: FactoryLogic.type.createTrigger('Ворог завдає шкоди істоті, яка не є вами.'),
 						keywords: [AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You become invisible, use the Hide maneuver, and move up to a number of squares equal to your Intuition score, in any order. You remain invisible until the end of your next turn or you deal damage.'),
+							FactoryLogic.createAbilitySectionText('Ви стаєте невидимими, виконуєте маневр «Сховатися» й переміщуєтеся на кількість клітинок, рівну вашому показнику Інтуїції, у будь-якому порядку. Ви лишаєтеся невидимими до кінця вашого наступного ходу або доки не завдасте шкоди.'),
 							FactoryLogic.createAbilitySectionSpend({
-								effect: 'The distance of your move is doubled, and it ignores difficult terrain.'
+								effect: 'Дальність вашого пересування подвоюється, і воно ігнорує складну місцевість.'
 							})
 						]
 					})
@@ -51,32 +51,32 @@ export const prowler: SubClass = {
 				}),
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-2-2-1b',
-					name: 'Keen Smell',
-					description: 'While a creature is adjacent to your companion, the creature can’t be concealed or hidden from your companion.'
+					name: 'Гострий нюх',
+					description: 'Поки істота перебуває поруч із вашим компаньйоном, вона не може бути прихованою або під маскуванням від вашого компаньйона.'
 				}),
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-2-2-2',
-					name: 'Prowler Ability',
+					name: 'Здібність скрадача',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-2-2a',
-									name: 'Jump Scare',
-									description: 'Surprised to see me?',
+									name: 'Раптовий переляк',
+									description: 'Не чекали мене побачити?',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Area, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 2 })],
-									target: 'Each enemy in the area with line of effect',
+									target: 'Кожен ворог у зоні з лінією ефекту',
 									cost: 5,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Your companion shifts up to a number of squares equal to their Intuition score. During this movement, they are invisible. They then make a power roll.'),
+										FactoryLogic.createAbilitySectionText('Ваш компаньйон зміщується на кількість клітинок, рівну його показнику Інтуїції. Під час цього переміщення він невидимий. Потім він робить кидок сили.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '4 damage; П < [слабкий], frightened (save ends)',
-												tier2: '6 damage; П < [середній], frightened (save ends)',
-												tier3: '10 damage; П < [сильний], frightened (save ends)'
+												tier1: '4 шкоди; П < [слабкий], зляканий (рят. кидок закінчує)',
+												tier2: '6 шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+												tier3: '10 шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 											})
 										)
 									]
@@ -88,8 +88,8 @@ export const prowler: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-2-2b',
-									name: 'Close Combat',
-									description: 'Your companion darts around their target, staying out of reach and using them as a shield.',
+									name: 'Ближній контакт',
+									description: 'Ваш компаньйон нишпорить довкола цілі, тримаючись поза досяжністю й використовуючи її як щит.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Charge, AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -99,12 +99,12 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '5 + С damage',
-												tier2: '8 + С damage',
-												tier3: '12 + С damage'
+												tier1: '5 + С шкоди',
+												tier2: '8 + С шкоди',
+												tier3: '12 + С шкоди'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('Your companion enters the target’s space. Until your companion is no longer in the target’s space, your companion can end their turn in the target’s space, strikes against your companion also affect the target, and your strikes against the target gain an edge.')
+										FactoryLogic.createAbilitySectionText('Ваш компаньйон входить у простір цілі. Доки ваш компаньйон перебуває в просторі цілі, він може завершувати свій хід у просторі цілі, удари проти вашого компаньйона також зачіпають ціль, а ваші удари по цілі отримують перевагу.')
 									]
 								})
 							}),
@@ -127,8 +127,8 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-2-5-1',
-					name: 'I Hate Being the Center of Attention',
-					description: 'You or your companion can use While No One’s Looking even when targeted by the triggering attack.'
+					name: 'Ненавиджу бути в центрі уваги',
+					description: 'Ви або ваш компаньйон можете використовувати «Поки ніхто не дивиться», навіть якщо саме ви є ціллю тригерної атаки.'
 				})
 			]
 		},
@@ -137,21 +137,21 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-2-6-1',
-					name: 'Prowler Ability',
+					name: 'Здібність скрадача',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-6-1a',
-									name: 'Phantom Form',
-									description: 'Your companion becomes a soul-freezing wraith.',
+									name: 'Примарна форма',
+									description: 'Ваш компаньйон перетворюється на духа, від якого холоне душа.',
 									type: FactoryLogic.type.createMove(),
 									keywords: [AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createSelf()],
 									target: 'Себе',
 									cost: 9,
 									sections: [
-										FactoryLogic.createAbilitySectionText('You and your companion shift up to your speeds. During this movement, you are both invisible and can move through enemies, objects, and difficult terrain without spending additional squares of movement. You deal corruption damage equal to your Intuition score to each enemy you pass through during this movement. Each of you can damage each enemy once in this way.')
+										FactoryLogic.createAbilitySectionText('Ви та ваш компаньйон зміщуєтеся на відстань до своєї швидкості. Під час цього переміщення ви обидва невидимі й можете проходити крізь ворогів, предмети та складну місцевість, не витрачаючи додаткових клітинок руху. Ви завдаєте кожному ворогу, крізь якого проходите під час цього переміщення, корупційної шкоди, рівної вашому показнику Інтуїції. Кожен із вас може завдати шкоди кожному ворогу цим способом лише один раз.')
 									]
 								})
 							}),
@@ -161,8 +161,8 @@ export const prowler: SubClass = {
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-6-1b',
-									name: 'Raking Lunge',
-									description: 'Your companion ducks under your enemy’s guard and rakes open their soft vitals, leaving them vulnerable to further attacks.',
+									name: 'Роздираючий випад',
+									description: 'Ваш компаньйон пірнає під захист ворога й роздирає його вразливі нутрощі, лишаючи його відкритим для подальших атак.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee(2)],
@@ -172,12 +172,12 @@ export const prowler: SubClass = {
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Might,
-												tier1: '10 + С damage; Л < [слабкий], bleeding (save ends)',
-												tier2: '15 + С damage; Л < [середній], bleeding (save ends)',
-												tier3: '20 + С damage; Л < [сильний], bleeding (save ends)'
+												tier1: '10 + С шкоди; Л < [слабкий], кровотеча (рят. кидок закінчує)',
+												tier2: '15 + С шкоди; Л < [середній], кровотеча (рят. кидок закінчує)',
+												tier3: '20 + С шкоди; Л < [сильний], кровотеча (рят. кидок закінчує)'
 											})
 										),
-										FactoryLogic.createAbilitySectionText('While the target is bleeding, they have damage weakness 5.')
+										FactoryLogic.createAbilitySectionText('Поки ціль стікає кровʼю, вона має вразливість 5 до шкоди.')
 									]
 								})
 							}),
@@ -196,8 +196,8 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.create({
 					id: 'beastheart-sub-2-8-1',
-					name: 'Born to Run',
-					description: 'Your and your companion’s speed increases by 2.'
+					name: 'Народжені для бігу',
+					description: 'Ваша швидкість і швидкість вашого компаньйона збільшуються на 2.'
 				})
 			]
 		},
@@ -206,14 +206,14 @@ export const prowler: SubClass = {
 			features: [
 				FactoryLogic.feature.createChoice({
 					id: 'beastheart-sub-2-9-1',
-					name: 'Prowler Ability',
+					name: 'Здібність скрадача',
 					options: [
 						{
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-9-1a',
-									name: 'Chaos Duel',
-									description: 'You or your companion drag your chosen foe into storms of the Primordial Plane.',
+									name: 'Дуель хаосу',
+									description: 'Ви або ваш компаньйон затягуєте обраного ворога у шторми Первісного Хаосу.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic],
 									distance: [FactoryLogic.distance.createMelee()],
@@ -221,9 +221,9 @@ export const prowler: SubClass = {
 									cost: 11,
 									sections: [
 										FactoryLogic.createAbilitySectionText(`
-You, your companion, and the target enter a tiny pocket of Quintessence. The three of you can’t affect or be affected by any creatures except each other. Creatures in this pocket can’t move or teleport away from each other and are always adjacent to each other, but can otherwise act normally.
+Ви, ваш компаньйон і ціль потрапляєте до крихітної кишені Квінтесенції. Ніхто з вас трьох не може впливати або зазнавати впливу від будь-яких істот, окрім одне одного. Істоти в цій кишені не можуть віддалитися або телепортуватися одна від одної й завжди вважаються суміжними, але інакше діють нормально.
 
-While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightning damage, and 5 sonic damage at the start of each of your turns. You can end the effect as a free maneuver, and the target can make a save at the end of each of their turns to end the effect. The effect also ends when one of you dies. When the effect ends, you each return to the closest unoccupied space from the space you departed. If the target dies in the Quintessence, their remains do not return.`)
+Поки ви перебуваєте у Квінтесенції, ціль отримує 5 холодної, 5 вогняної, 5 блискавичної та 5 звукової шкоди на початку кожного вашого ходу. Ви можете завершити цей ефект як безкоштовний маневр, а ціль може робити рят. кидок наприкінці кожного свого ходу, щоб завершити ефект. Ефект також закінчується, коли хтось із вас помирає. Коли ефект закінчується, ви всі повертаєтеся до найближчої незайнятої клітинки від тієї, звідки зникли. Якщо ціль помирає в Квінтесенції, її рештки не повертаються.`)
 									]
 								})
 							}),
@@ -233,21 +233,21 @@ While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightnin
 							feature: FactoryLogic.feature.createAbility({
 								ability: FactoryLogic.createAbility({
 									id: 'beastheart-sub-2-9-1b',
-									name: 'Nightmare Apparition',
-									description: 'Your companion appears next to their victim in the guise of a heart-stopping nightmare.',
+									name: 'Кошмарне явлення',
+									description: 'Ваш компаньйон зʼявляється поруч зі своєю жертвою в подобі кошмару, від якого завмирає серце.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Companion, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 									distance: [FactoryLogic.distance.createMelee()],
 									target: 'Одна істота',
 									cost: 11,
 									sections: [
-										FactoryLogic.createAbilitySectionText('Your companion teleports up to their speed.'),
+										FactoryLogic.createAbilitySectionText('Ваш компаньйон телепортується на відстань до своєї швидкості.'),
 										FactoryLogic.createAbilitySectionRoll(
 											FactoryLogic.createPowerRoll({
 												characteristic: Characteristic.Intuition,
-												tier1: '13 + I psychic damage; П < [слабкий], frightened (save ends)',
-												tier2: '20 + I psychic damage; П < [середній], frightened (save ends)',
-												tier3: '27 + I psychic damage; П < [сильний], frightened (save ends)'
+												tier1: '13 + І психічної шкоди; П < [слабкий], зляканий (рят. кидок закінчує)',
+												tier2: '20 + І психічної шкоди; П < [середній], зляканий (рят. кидок закінчує)',
+												tier3: '27 + І психічної шкоди; П < [сильний], зляканий (рят. кидок закінчує)'
 											})
 										)
 									]

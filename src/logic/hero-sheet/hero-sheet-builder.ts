@@ -692,9 +692,9 @@ export class HeroSheetBuilder {
 
 		let characteristics = SheetFormatter.joinCommasOr(project.characteristic
 			.sort(SheetFormatter.sortCharacteristics)
-			.map(c => Format.capitalize(c.slice(0, 1)))
+			.map(c => Format.getCharacteristicAbbreviation(c))
 		);
-		if (characteristics === 'M, A, R, I or P') {
+		if (characteristics === 'С, Л, Р, І або П') {
 			characteristics = 'Any';
 		}
 

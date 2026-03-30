@@ -10,7 +10,7 @@ export const columnOfBlades: Terrain = {
 	id: 'terrain-column-of-blades',
 	name: 'Column of Blades',
 	description:
-		'A spinning wooden column is affixed with sharp blades to slash the unwary.',
+		'Обертову дерев’яну колону вкрито гострими лезами, що розтинають необачних.',
 	category: TerrainCategory.Mechanism,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(
@@ -34,7 +34,7 @@ export const columnOfBlades: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'The column of blades must be completely destroyed.'
+					description: 'Колону лез треба повністю знищити.'
 				})
 			]
 		},
@@ -45,7 +45,7 @@ export const columnOfBlades: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'A creature or object moves adjacent to the column of blades.'
+						'Істота чи об’єкт переміщується впритул до колони лез.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -57,7 +57,7 @@ export const columnOfBlades: Terrain = {
 						id: 'spinning-blades',
 						name: 'Spinning Blades',
 						type: FactoryLogic.type.createTrigger(
-							'A creature or object moves within distance of the column.',
+							'Істота чи об’єкт переміщується в межах досяжності колони.',
 							{ free: true }
 						),
 						keywords: [
@@ -87,11 +87,11 @@ export const columnOfBlades: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'allied-awareness',
 					name: 'Allied Awareness',
-					description: `Allies who shift don’t trigger the column. A creature observing an ally shift this way can make an **Intuition test** to shift in imitation of their movements.
+					description: `Союзники, які зміщуються, не провокують колону. Істота, що спостерігає, як союзник зміщується таким чином, може зробити **тест Інтуїції**, щоб зміститися, наслідуючи його рухи.
 
-* **11 or lower**: The creature triggers the column and the column's ability gains an edge.
-* **12-16**: The creature triggers the column.
-* **17+**: The creature doesn’t trigger the column.`
+* **11 або менше**: Істота провокує колону, а вміння колони отримує перевагу.
+* **12-16**: Істота провокує колону.
+* **17+**: Істота не провокує колону.`
 				})
 			]
 		}
@@ -101,28 +101,28 @@ export const columnOfBlades: Terrain = {
 			id: 'stone-column',
 			label: 'Stone Column',
 			cost: 1,
-			text: 'The column is made of stone and has 8 Stamina',
+			text: 'Колону зроблено з каменю, і вона має 8 витривалості.',
 			sections: []
 		},
 		{
 			id: 'metal-column',
 			label: 'Metal Column',
 			cost: 1,
-			text: 'The column is made of metal and has 11 Stamina.',
+			text: 'Колону зроблено з металу, і вона має 11 витривалості.',
 			sections: []
 		},
 		{
 			id: 'concealed',
 			label: 'Concealed',
 			cost: 1,
-			text: 'The blades are concealed inside the column, which remains motionless until triggered.',
+			text: 'Леза сховано всередині колони, яка лишається нерухомою, доки не спрацює.',
 			sections: []
 		},
 		{
 			id: 'spiked-flails',
 			label: 'Spiked Flails',
 			cost: 4,
-			text: 'Instead of blades, the column is affixed with heavy spiked balls attached by long chains. The **Whirling Flails** ability replaces **Spinning Blades**.',
+			text: 'Замість лез до колони прикріплено важкі шиповані кулі на довгих ланцюгах. Вміння **Whirling Flails** замінює **Spinning Blades**.',
 			sections: [
 				{
 					id: 'spiked-flails',
@@ -132,7 +132,7 @@ export const columnOfBlades: Terrain = {
 								id: 'whirling-flails',
 								name: 'Whirling Flails',
 								type: FactoryLogic.type.createTrigger(
-									'A creature or object moves within distance of the column.',
+									'Істота чи об’єкт переміщується в межах досяжності колони.',
 									{ free: true }
 								),
 								keywords: [
@@ -168,7 +168,7 @@ export const columnOfBlades: Terrain = {
 export const dartTrap: Terrain = {
 	id: 'terrain-dart-trap',
 	name: 'Dart Trap',
-	description: 'A concealed dart thrower hurls missiles at short range.',
+	description: 'Прихований метальник дротиків випускає снаряди на коротку відстань.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -182,7 +182,7 @@ export const dartTrap: Terrain = {
 		base: 3,
 		perSquare: 0
 	},
-	direction: 'The dart trap fires in a fixed direction.',
+	direction: 'Пастка з дротиками стріляє в заздалегідь визначеному напрямку.',
 	size: FactoryLogic.createSize(1, 'S'),
 	damageMods: [],
 	sections: [
@@ -192,11 +192,11 @@ export const dartTrap: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a dart trap can make an **Agility test**.
+					description: `Як маневр, істота поруч із пасткою з дротиками може зробити **тест Ловкості**.
 			
-* **11 or lower**: The creature triggers the trap and is targeted by it.
-* **12-16**: The trap is deactivated but the creature is slowed (EoT).
-* **17+**: The trap is deactivated and doesn’t trigger.`
+* **11 або менше**: Істота спрацьовує пастку й стає її ціллю.
+* **12-16**: Пастку знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Пастку знешкоджено, і вона не спрацьовує.`
 				})
 			]
 		},
@@ -207,7 +207,7 @@ export const dartTrap: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'A pressure plate, switch, or other linked trigger is activated.'
+						'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -219,7 +219,7 @@ export const dartTrap: Terrain = {
 						id: 'effect-dart',
 						name: 'Dart',
 						type: FactoryLogic.type.createTrigger(
-							'A pressure plate, switch, or other linked trigger is activated.',
+							'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.',
 							{ free: true }
 						),
 						keywords: [
@@ -249,7 +249,7 @@ export const dartTrap: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'hidden',
 					name: 'Hidden',
-					description: 'The dart trap is hidden until triggered or detected.'
+					description: 'Пастку з дротиками приховано, доки вона не спрацює або її не виявлять.'
 				})
 			]
 		}
@@ -259,21 +259,21 @@ export const dartTrap: Terrain = {
 			id: 'poison-darts',
 			label: 'Poison Darts',
 			cost: 2,
-			text: 'The darts are tipped with poison. Any creature who takes damage from a dart also takes 1d6 poison damage at the start of each of their turns (save ends).',
+			text: 'Кінчики дротиків змащені отрутою. Будь-яка істота, що отримує шкоду від дротика, також отримує 1d6 отруйної шкоди на початку кожного свого ходу (рят. кидок завершує).',
 			sections: []
 		},
 		{
 			id: 'large-darts',
 			label: 'Large Darts',
 			cost: 1,
-			text: 'Larger, heavier darts impart kinetic force to the trap’s attack. A target of the **Dart** ability is pushed 1 square on a tier 1 outcome, 2 squares on a tier 2 outcome, or 3 squares on a tier 3 outcome.',
+			text: 'Більші й важчі дротики надають атаці пастки кінетичної сили. Ціль вміння **Dart** відштовхується на 1 клітинку на 1 щаблі успіху, на 2 клітинки на 2 щаблі успіху або на 3 клітинки на 3 щаблі успіху.',
 			sections: []
 		},
 		{
 			id: 'gatling-darts',
 			label: 'Gatling Darts',
 			cost: 4,
-			text: 'The dart trap is equipped with multiple barrels to launch darts at a high rate of fire. The **Dart** ability loses the Ranged and Strike and takes the Area keyword, its area becomes a 5 × 1 line within 1, and it deals an extra 1d6 damage.',
+			text: 'Пастку з дротиками обладнано кількома стволами, що випускають дротики з високою скорострільністю. Вміння **Dart** втрачає ключові слова Ranged і Strike, натомість отримує ключове слово Area; його ділянка стає лінією 5 × 1 в межах 1, а саме вміння завдає додатково 1d6 шкоди.',
 			sections: []
 		}
 	],
@@ -287,7 +287,7 @@ export const pillar: Terrain = {
 	id: 'terrain-pillar',
 	name: 'Pillar',
 	description:
-		'This stone pillar can be toppled onto unsuspecting foes with the right amount of damage or a well-engineered trigger mechanism.',
+		'Цю кам’яну колону можна звалити на необережних ворогів достатньою кількістю шкоди або добре продуманим тригерним механізмом.',
 	category: TerrainCategory.Mechanism,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(
@@ -296,13 +296,13 @@ export const pillar: Terrain = {
 	),
 	encounterValue: 3,
 	area: '',
-	direction: 'The pillar topples in a preset direction.',
+	direction: 'Колона падає в заздалегідь визначеному напрямку.',
 	link: '',
 	stamina: {
 		base: 6,
 		perSquare: 0
 	},
-	size: 'One square that can’t be moved through',
+	size: 'Одна клітинка, крізь яку не можна рухатися',
 	damageMods: [],
 	sections: [
 		{
@@ -311,7 +311,7 @@ export const pillar: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: 'The pillar’s linked trigger must be deactivated.'
+					description: 'Пов’язаний тригер колони треба знешкодити.'
 				})
 			]
 		},
@@ -322,7 +322,7 @@ export const pillar: Terrain = {
 					id: 'trigger',
 					name: 'Trigger',
 					description:
-						'The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.'
+						'Колону знищено, або спрацьовує натискна плита, перемикач чи інший пов’язаний тригер.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -334,7 +334,7 @@ export const pillar: Terrain = {
 						id: 'effect-toppling-pillar',
 						name: 'Toppling Pillar',
 						type: FactoryLogic.type.createTrigger(
-							'The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.',
+							'Колону знищено, або спрацьовує натискна плита, перемикач чи інший пов’язаний тригер.',
 							{ free: true }
 						),
 						keywords: [AbilityKeyword.Area],
@@ -357,7 +357,7 @@ export const pillar: Terrain = {
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
-								'The area is difficult terrain.'
+								'Ця ділянка є важким ґрунтом.'
 							)
 						]
 					})
@@ -370,14 +370,14 @@ export const pillar: Terrain = {
 			id: 'metal-pillar',
 			label: 'Metal Pillar',
 			cost: 1,
-			text: 'The pillar is made of metal, has 9 Stamina, and deals 1d6 extra damage.',
+			text: 'Колону зроблено з металу, вона має 9 витривалості й завдає додатково 1d6 шкоди.',
 			sections: []
 		},
 		{
 			id: 'multiple-pillars',
 			label: 'Multiple Pillars',
 			cost: 3,
-			text: 'Multiple pillars can be used to represent a larger toppling object such as a wall. If triggered by destruction, all individual pillars need to be destroyed before the object falls.',
+			text: 'Кілька колон можна використати, щоб зобразити більший об’єкт, що валиться, наприклад стіну. Якщо об’єкт має спрацювати від руйнування, усі окремі колони треба знищити, перш ніж він упаде.',
 			sections: []
 		}
 	],
@@ -391,7 +391,7 @@ export const hiddenPortcullis: Terrain = {
 	id: 'terrain-portcullis',
 	name: 'Portcullis',
 	description:
-		'A portcullis is hidden in the ceiling of a passage or choke point waiting to drop when activated.',
+		'Порткуліс приховано в стелі проходу або вузького місця, і він чекає, щоб упасти після спрацювання.',
 	category: TerrainCategory.Mechanism,
 	level: 3,
 	role: FactoryLogic.createTerrainRole(
@@ -399,14 +399,14 @@ export const hiddenPortcullis: Terrain = {
 		TerrainRoleType.Trap
 	),
 	encounterValue: 4,
-	area: '2 × 1-square area, up to a 4 × 2-square area',
+	area: 'Ділянка 2 × 1 клітинка, до 4 × 2 клітинок',
 	direction: '',
 	link: '',
 	stamina: {
 		base: 0,
 		perSquare: 9
 	},
-	size: 'The area of the corridor to be blocked',
+	size: 'Ділянка коридору, яку треба заблокувати',
 	damageMods: [],
 	sections: [
 		{
@@ -415,11 +415,11 @@ export const hiddenPortcullis: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a portcullis can make an **Agility test**.
+					description: `Як маневр, істота поруч із порткулісом може зробити **тест Ловкості**.
 
-* **11 or lower**: The creature triggers the portcullis and is affected as if in its area.
-* **12-16**: The portcullis is deactivated but the creature is slowed (EoT).
-* **17+**: The portcullis is deactivated and doesn’t trigger.`
+* **11 або менше**: Істота спрацьовує порткуліс і зазнає його ефекту, наче перебувала в його ділянці.
+* **12-16**: Порткуліс знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Порткуліс знешкоджено, і він не спрацьовує.`
 				})
 			]
 		},
@@ -430,7 +430,7 @@ export const hiddenPortcullis: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'A pressure plate, switch, or other linked trigger is activated.'
+						'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -442,7 +442,7 @@ export const hiddenPortcullis: Terrain = {
 						id: 'effect-heavy-gate',
 						name: 'Heavy Gate',
 						type: FactoryLogic.type.createTrigger(
-							'A pressure plate, switch, or other linked trigger is activated.',
+							'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.',
 							{ free: true }
 						),
 						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Area],
@@ -462,7 +462,7 @@ export const hiddenPortcullis: Terrain = {
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
-								' The portcullis blocks movement from one side of it to the other. A target slid by the portcullis ends up on one side of it or the other (choose randomly). The portcullis must be manually reset.'
+								'Порткуліс блокує рух із одного його боку на інший. Ціль, яку зсуває порткуліс, опиняється з одного чи з іншого боку від нього (визначте випадково). Порткуліс треба зводити вручну.'
 							)
 						]
 					})
@@ -475,7 +475,7 @@ export const hiddenPortcullis: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'hidden',
 					name: 'Hidden',
-					description: 'The portcullis is hidden until triggered or detected.'
+					description: 'Порткуліс приховано, доки він не спрацює або його не виявлять.'
 				})
 			]
 		}
@@ -491,7 +491,7 @@ export const pressurePlate: Terrain = {
 	id: 'terrain-pressure-plate',
 	name: 'Pressure Plate',
 	description:
-		'This mechanism acts as a trigger for another linked mechanism, and is skillfully hidden from view in the floor.',
+		'Цей механізм слугує тригером для іншого пов’язаного механізму й майстерно прихований у підлозі.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -499,14 +499,14 @@ export const pressurePlate: Terrain = {
 		TerrainRoleType.Trigger
 	),
 	encounterValue: 2,
-	area: 'One square, up to a 4 × 4-square area',
+	area: 'Одна клітинка, до ділянки 4 × 4 клітинки',
 	direction: '',
 	stamina: {
 		base: 0,
 		perSquare: 0
 	},
-	size: 'Any area',
-	link: 'A pressure plate is linked to another mechanism that it activates when triggered.',
+	size: 'Будь-яка ділянка',
+	link: 'Натискна плита пов’язана з іншим механізмом, який активує після спрацювання.',
 	damageMods: [],
 	sections: [
 		{
@@ -515,11 +515,11 @@ export const pressurePlate: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a pressure plate can make an **Agility test**.
+					description: `Як маневр, істота поруч із натискною плитою може зробити **тест Ловкості**.
 
-* **11 or lower**: The creature triggers the pressure plate.
-* **12-16**: The pressure plate is deactivated but the creature is slowed (EoT).
-* **17+**: The pressure plate is deactivated and doesn’t trigger.`
+* **11 або менше**: Істота спрацьовує натискну плиту.
+* **12-16**: Натискну плиту знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Натискну плиту знешкоджено, і вона не спрацьовує.`
 				})
 			]
 		},
@@ -530,7 +530,7 @@ export const pressurePlate: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'The pressure plate is calibrated to be triggered by creatures or objects of a particular size. The pressure plate triggers when a creature or object of the appropriate size enters its area.'
+						'Натискна плита налаштована спрацьовувати на істот або об’єкти певного розміру. Вона спрацьовує, коли істота чи об’єкт відповідного розміру входить у її ділянку.'
 				})
 			]
 		},
@@ -541,7 +541,7 @@ export const pressurePlate: Terrain = {
 					id: 'effect',
 					name: 'Effect',
 					description:
-						'The linked mechanism is activated. A pressure plate automatically resets and can be triggered repeatedly.'
+						'Пов’язаний механізм активується. Натискна плита автоматично повертається у вихідне положення й може спрацьовувати неодноразово.'
 				})
 			]
 		},
@@ -552,7 +552,7 @@ export const pressurePlate: Terrain = {
 					id: 'hidden',
 					name: 'Hidden',
 					description:
-						'The pressure plate is hidden until triggered or detected.'
+						'Натискну плиту приховано, доки вона не спрацює або її не виявлять.'
 				})
 			]
 		}
@@ -562,7 +562,7 @@ export const pressurePlate: Terrain = {
 			id: 'tripwire',
 			label: 'Tripwire',
 			cost: -1,
-			text: 'The pressure plate is a tripwire, which can trigger once and must be manually reset. A concealed tripwire can be discovered with an **easy Intuition test**.',
+			text: 'Натискна плита замінена на розтяжку, яка може спрацювати лише раз і яку треба зводити вручну. Приховану розтяжку можна виявити за допомогою **простого тесту Інтуїції**.',
 			sections: []
 		}
 	],
@@ -576,7 +576,7 @@ export const pulley: Terrain = {
 	id: 'terrain-pulley',
 	name: 'Pulley',
 	description:
-		'A counterweighted pulley system can be used to quickly ascend to the top of a wall, scaffold, tower, or other structure.',
+		'Блокова система з противагою дає змогу швидко піднятися на верх стіни, риштування, вежі чи іншої споруди.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -600,11 +600,11 @@ export const pulley: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a pulley can make an **Agility test**.
+					description: `Як маневр, істота поруч із блоком може зробити **тест Ловкості**.
 			
-* **11 or lower**: The creature triggers the pulley.
-* **12-16**: The pulley is deactivated but the creature is slowed (EoT).
-* **17+**: The pulley is deactivated and doesn’t trigger.`
+* **11 або менше**: Істота спрацьовує блок.
+* **12-16**: Блок знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Блок знешкоджено, і він не спрацьовує.`
 				})
 			]
 		},
@@ -615,13 +615,13 @@ export const pulley: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'A creature adjacent to the pulley uses a maneuver to release the pulley.'
+						'Істота поруч із блоком використовує маневр, щоб відпустити його.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-						'The triggering creature is lifted to the top of the structure the pulley is attached to. The pulley must be manually reset.'
+						'Істота, що спровокувала ефект, підіймається на верх споруди, до якої прикріплено блок. Блок треба зводити вручну.'
 				})
 			]
 		},
@@ -632,7 +632,7 @@ export const pulley: Terrain = {
 					id: 'climbable',
 					name: 'Climbable',
 					description:
-						'A creature adjacent to the pulley can climb its ropes with an **easy Agility test** to ascend to the top of the structure it’s attached to.'
+						'Істота поруч із блоком може видертися по його мотузках за допомогою **простого тесту Ловкості**, щоб піднятися на верх споруди, до якої його прикріплено.'
 				})
 			]
 		}
@@ -642,7 +642,7 @@ export const pulley: Terrain = {
 			id: 'looped-chain',
 			label: 'Looped Chain',
 			cost: 1,
-			text: 'Instead of a rope and pulley, the system uses a counterweighted looped chain. A looped chain automatically resets and can be triggered repeatedly.',
+			text: 'Замість мотузки й блока система використовує замкнений ланцюг із противагою. Такий ланцюг автоматично повертається у вихідне положення й може спрацьовувати неодноразово.',
 			sections: []
 		}
 	],
@@ -656,7 +656,7 @@ export const ram: Terrain = {
 	id: 'terrain-ram',
 	name: 'Ram',
 	description:
-		'A heavy wooden ram drops down or swings into the fray, crushing all in its path.',
+		'Важкий дерев’яний таран падає згори або врізається в бійку, трощачи все на своєму шляху.',
 	category: TerrainCategory.Mechanism,
 	level: 2,
 	role: FactoryLogic.createTerrainRole(
@@ -664,14 +664,14 @@ export const ram: Terrain = {
 		TerrainRoleType.Trap
 	),
 	encounterValue: 3,
-	area: '1 × 3-square area or a 2 × 2-square area',
+	area: 'Ділянка 1 × 3 клітинки або 2 × 2 клітинки',
 	link: '',
 	stamina: {
 		base: 0,
 		perSquare: 3
 	},
-	size: 'Any area; the area can’t be moved through',
-	direction: 'One side of the ram is defined as the front.',
+	size: 'Будь-яка ділянка; крізь неї не можна рухатися',
+	direction: 'Один бік тарана вважається фронтальним.',
 	damageMods: [],
 	sections: [
 		{
@@ -680,11 +680,11 @@ export const ram: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a ram can make an **Agility test**.
+					description: `Як маневр, істота поруч із тараном може зробити **тест Ловкості**.
 
-* **11 or lower**: The creature triggers the ram and is affected as if in it's space
-* **12-16**: The ram is deactivated but the creature is slowed (EoT).
-* **17+**: The ram is deactivated and doesn't trigger.`
+* **11 або менше**: Істота спрацьовує таран і зазнає його ефекту, наче перебувала в його клітинці.
+* **12-16**: Таран знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Таран знешкоджено, і він не спрацьовує.`
 				})
 			]
 		},
@@ -695,7 +695,7 @@ export const ram: Terrain = {
 					id: 'trigger',
 					name: 'Trigger',
 					description:
-						'A pressure plate, switch, or other linked trigger is activated.'
+						'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
@@ -707,7 +707,7 @@ export const ram: Terrain = {
 						id: 'effect-ram',
 						name: 'Ram',
 						type: FactoryLogic.type.createTrigger(
-							'A pressure plate, switch, or other linked trigger is activated.',
+							'Спрацьовує натискна плита, перемикач або інший пов’язаний тригер.',
 							{ free: true }
 						),
 						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Area],
@@ -727,7 +727,7 @@ export const ram: Terrain = {
 								})
 							),
 							FactoryLogic.createAbilitySectionText(
-								'A target slid by the ram ends up on one side of it or the other (choose randomly). The ram must be manually reset.'
+								'Ціль, яку зсуває таран, опиняється з одного чи з іншого його боку (визначте випадково). Таран треба зводити вручну.'
 							)
 						]
 					})
@@ -740,7 +740,7 @@ export const ram: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'hidden',
 					name: 'Hidden',
-					description: 'The ram is hidden until triggered or detected.'
+					description: 'Таран приховано, доки він не спрацює або його не виявлять.'
 				})
 			]
 		}
@@ -750,14 +750,14 @@ export const ram: Terrain = {
 			id: 'stone',
 			label: 'Stone',
 			cost: 1,
-			text: ' The ram is made of stone, has 6 Stamina per square, and deals an extra 1d3 damage.',
+			text: 'Таран зроблено з каменю, він має 6 витривалості за клітинку й завдає додатково 1d3 шкоди.',
 			sections: []
 		},
 		{
 			id: 'metal',
 			label: 'Metal',
 			cost: 2,
-			text: 'The ram is made of metal, has 9 Stamina per square, and deals an extra 1d6 damage.',
+			text: 'Таран зроблено з металу, він має 9 витривалості за клітинку й завдає додатково 1d6 шкоди.',
 			sections: []
 		},
 		{
@@ -778,7 +778,7 @@ export const ram: Terrain = {
 			id: 'multiple-rams ',
 			label: 'Multiple Rams ',
 			cost: 3,
-			text: 'Multiple rams can be used to represent a larger mechanism, such as a stack of tumbling logs.',
+			text: 'Кілька таранів можна використати, щоб зобразити більший механізм, наприклад купу колод, що котяться.',
 			sections: []
 		}
 	],
@@ -792,7 +792,7 @@ export const switchTerrain: Terrain = {
 	id: 'terrain-switch',
 	name: 'Switch',
 	description:
-		'Set into any surface, this mechanism acts as a trigger for another linked mechanism.',
+		'Вмонтований у будь-яку поверхню, цей механізм слугує тригером для іншого пов’язаного механізму.',
 	category: TerrainCategory.Mechanism,
 	level: 1,
 	role: FactoryLogic.createTerrainRole(
@@ -807,7 +807,7 @@ export const switchTerrain: Terrain = {
 		perSquare: 0
 	},
 	size: FactoryLogic.createSize(1, 'T'),
-	link: 'A switch is linked to another mechanism that it activates when triggered',
+	link: 'Перемикач пов’язаний з іншим механізмом, який активує після спрацювання.',
 	damageMods: [],
 	sections: [
 		{
@@ -816,11 +816,11 @@ export const switchTerrain: Terrain = {
 				FactoryLogic.feature.create({
 					id: 'deactivate',
 					name: 'Deactivate',
-					description: `As a maneuver, a creature adjacent to a switch can make an **Agility test.**
+					description: `Як маневр, істота поруч із перемикачем може зробити **тест Ловкості**.
 			
-* **11 or lower**: The creature triggers the switch.
-* **12-16**: The switch is deactivated but the creature is slowed (EoT).
-* **17+**: The switch is deactivated and doesn’t trigger.`
+* **11 або менше**: Істота спрацьовує перемикач.
+* **12-16**: Перемикач знешкоджено, але істота сповільнена (до кінця ходу).
+* **17+**: Перемикач знешкоджено, і він не спрацьовує.`
 				})
 			]
 		},
@@ -831,13 +831,13 @@ export const switchTerrain: Terrain = {
 					id: 'activate',
 					name: 'Activate',
 					description:
-						'A creature adjacent to the switch uses a maneuver to trigger it.'
+						'Істота поруч із перемикачем використовує маневр, щоб його спрацювати.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'effect',
 					name: 'Effect',
 					description:
-						'The linked mechanism is activated. A switch automatically resets and can be triggered repeatedly.'
+						'Пов’язаний механізм активується. Перемикач автоматично повертається у вихідне положення й може спрацьовувати неодноразово.'
 				})
 			]
 		}
@@ -847,7 +847,7 @@ export const switchTerrain: Terrain = {
 			id: 'concealed',
 			label: 'Concealed',
 			cost: 1,
-			text: 'The switch is hidden until triggered or detected.',
+			text: 'Перемикач приховано, доки він не спрацює або його не виявлять.',
 			sections: []
 		}
 	],

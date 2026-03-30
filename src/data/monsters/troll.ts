@@ -51,9 +51,9 @@ export const troll: MonsterGroup = {
 				'One troll acting this turn spews out a half-digested meal in a 5 × 1 line within 1 square of them. Each troll in the area regains 3 Stamina. Each enemy in the area makes a **Might test**.',
 				FactoryLogic.createPowerRoll({
 					characteristic: Characteristic.Might,
-					tier1: '12 acid damage; dazed (EoT)',
-					tier2: '10 acid damage; weakened (EoT)',
-					tier3: '6 acid damage'
+					tier1: '12 кислотної шкоди; приголомшений (до кінця ходу)',
+					tier2: '10 кислотної шкоди; ослаблений (до кінця ходу)',
+					tier3: '6 кислотної шкоди'
 				})
 			]
 		}),
@@ -119,9 +119,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage; A<2 prone',
-								tier2: '5 damage; A<3 prone',
-								tier3: '6 damage; prone'
+								tier1: '3 шкоди; Л<2 розпластаний',
+								tier2: '5 шкоди; Л<3 розпластаний',
+								tier3: '6 шкоди; розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionText('If a target made prone this way is already prone, they are grabbed instead.')
 						]
@@ -176,9 +176,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '3 damage',
-								tier2: '6 damage; slide 1',
-								tier3: '7 damage; slide 2; M<2 bleeding (save ends)'
+								tier1: '3 шкоди',
+								tier2: '6 шкоди; зсунути на 1',
+								tier3: '7 шкоди; зсунути на 2; С<2 кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -231,9 +231,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 damage; M<1 bleeding (save ends)',
-								tier2: '14 damage; M<2 bleeding (save ends)',
-								tier3: '17 damage; M<3 bleeding (save ends)'
+								tier1: '9 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier2: '14 шкоди; С<2 кровотеча (рят. кидок закінчує)',
+								tier3: '17 шкоди; С<3 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The butcher regains Stamina equal to the damage dealt.'
@@ -252,9 +252,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 poison damage; M<1 weakened (save ends)',
-								tier2: '9 poison damage; M<2 weakened (save ends)',
-								tier3: '11 poison damage; M<3 weakened (save ends)'
+								tier1: '5 отруйної шкоди; С<1 ослаблений (рят. кидок закінчує)',
+								tier2: '9 отруйної шкоди; С<2 ослаблений (рят. кидок закінчує)',
+								tier3: '11 отруйної шкоди; С<3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Each troll in the area ignores the damage and instead regains 3 Stamina.')
 						]
@@ -339,9 +339,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '15 damage; M<2 slowed (save ends)',
-								tier3: '18 damage; M<3 slowed (save ends)'
+								tier1: '10 шкоди',
+								tier2: '15 шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '18 шкоди; С<3 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								effect: 'The glutton regains Stamina equal to the damage dealt.'
@@ -391,7 +391,7 @@ export const troll: MonsterGroup = {
 				FactoryLogic.feature.create({
 					id: 'troll-4-feature-5',
 					name: 'Insatiable Appetite',
-					description: 'Once per turn, the glutton can use the Charge main action as a free maneuver if they target a winded creature.'
+					description: 'Once per turn, the glutton can use the Charge основна дія as a безкоштовний маневр if they target a winded creature.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'troll-4-feature-6',
@@ -442,9 +442,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '5 damage; push 2',
-								tier2: '7 damage; push 3; A<3 3 damage',
-								tier3: '9 damage; push 4; A<4 5 damage'
+								tier1: '5 шкоди; відштовхнути на 2',
+								tier2: '7 шкоди; відштовхнути на 3; Л<3 3 шкоди',
+								tier3: '9 шкоди; відштовхнути на 4; Л<4 5 шкоди'
 							})),
 							FactoryLogic.createAbilitySectionText('The crack trooper’s squad’s Stamina pool regains Stamina equal to half the damage dealt.')
 						]
@@ -499,9 +499,9 @@ export const troll: MonsterGroup = {
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '4 damage; the ravager can shift 1 square',
-								tier2: '6 damage; the ravager shifts up to 2 squares',
-								tier3: '8 damage; the ravager shifts up to 3 squares'
+								tier1: '4 шкоди; the ravager може зміститися 1 клітинку',
+								tier2: '6 шкоди; the ravager shifts до 2 клітинок',
+								tier3: '8 шкоди; the ravager shifts до 3 клітинок'
 							})),
 							FactoryLogic.createAbilitySectionText('The ravager’s squad’s Stamina pool regains Stamina equal to half the damage dealt.')
 						]

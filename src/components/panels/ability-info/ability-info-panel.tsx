@@ -28,7 +28,7 @@ export const AbilityInfoPanel = (props: Props) => {
 				monogram = 'main';
 				break;
 			case AbilityUsage.Maneuver:
-				monogram = 'maneuver';
+				monogram = 'маневр';
 				break;
 			case AbilityUsage.Trigger:
 				monogram = 'trigger';

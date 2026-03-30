@@ -63,9 +63,9 @@ Adding insult to injury, those who deal with hags almost always discover the pro
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
-						tier1: '5 fire damage; R<1 frightened (save ends)',
-						tier2: '8 fire damage; R<2 frightened (save ends)',
-						tier3: '11 fire damage; R<3 frightened (save ends)'
+						tier1: '5 вогняної шкоди; Р<1 зляканий (рят. кидок закінчує)',
+						tier2: '8 вогняної шкоди; Р<2 зляканий (рят. кидок закінчує)',
+						tier3: '11 вогняної шкоди; Р<3 зляканий (рят. кидок закінчує)'
 					})),
 					FactoryLogic.createAbilitySectionText('After making the power roll, the hag can choose to replace the damage type and condition with lightning damage and dazed, or cold damage and slowed.')
 				]
@@ -77,7 +77,7 @@ Adding insult to injury, those who deal with hags almost always discover the pro
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The hag takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The hag takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
@@ -85,7 +85,7 @@ Adding insult to injury, those who deal with hags almost always discover the pro
 				id: 'hag-malice-4',
 				name: 'House Call',
 				description: `
-The hag’s hut springs to life. It enters the encounter map within 10 squares of the hag if it isn’t already there and takes its turn. The hut is size 4, has 75 Stamina and damage immunity 3, and has speed 8 from its powerful set of animal legs. This feature can’t be used if the hut is reduced to 0 Stamina. In addition to its move action, the house can take only the following main action.
+The hag’s hut springs to life. It enters the encounter map within 10 squares of the hag if it isn’t already there and takes its turn. The hut is size 4, has 75 Stamina and damage immunity 3, and has speed 8 from its powerful set of animal legs. This feature can’t be used if the hut is reduced to 0 Stamina. In addition to its дія руху, the house can take only the following основна дія.
 
 **KICK**`,
 				type: FactoryLogic.type.createMain(),
@@ -96,9 +96,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
-						tier1: '6 damage; push 3; M<1 prone',
-						tier2: '10 damage; push 4; M<2 prone',
-						tier3: '13 damage; push 5; M<3 prone'
+						tier1: '6 шкоди; відштовхнути на 3; С<1 розпластаний',
+						tier2: '10 шкоди; відштовхнути на 4; С<2 розпластаний',
+						tier3: '13 шкоди; відштовхнути на 5; С<3 розпластаний'
 					}))
 				]
 			})
@@ -140,9 +140,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '9 corruption damage; A<1 weakened (save ends)',
-								tier2: '13 corruption damage; A<2 weakened (save ends)',
-								tier3: '16 corruption damage; A<3 weakened (save ends)'
+								tier1: '9 шкоди від скверни; Л<1 ослаблений (рят. кидок закінчує)',
+								tier2: '13 шкоди від скверни; Л<2 ослаблений (рят. кидок закінчує)',
+								tier3: '16 шкоди від скверни; Л<3 ослаблений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -158,9 +158,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '5 corruption damage; P<1 4 corruption damage',
-								tier2: '8 corruption damage; P<2 5 corruption damage',
-								tier3: '10 corruption damage; P<3 6 corruption damage'
+								tier1: '5 шкоди від скверни; П<1 4 шкоди від скверни',
+								tier2: '8 шкоди від скверни; П<2 5 шкоди від скверни',
+								tier3: '10 шкоди від скверни; П<3 6 шкоди від скверни'
 							})),
 							FactoryLogic.createAbilitySectionText('This ability gains an edge against a target who has a soul.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -179,7 +179,7 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The hag alters their body to become any size 1 creature, from a house cat to a humanoid. If the hag uses this ability while outside of any enemy’s line of effect, they can choose to be automatically hidden. The hag can return to their original form as a free maneuver.'),
+							FactoryLogic.createAbilitySectionText('The hag alters their body to become any size 1 creature, from a house cat to a humanoid. If the hag uses this ability while outside of any enemy’s line of effect, they can choose to be automatically hidden. The hag can return to their original form as a безкоштовний маневр.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 5,
 								effect: 'The hag becomes a size 2 creature instead, from a bear to an ogre. While in this form, the hag’s melee abilities gain a +1 bonus to distance and deal an extra 4 damage.'
@@ -199,9 +199,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'Slide 2; R<1 the slide is vertical',
-								tier2: 'Slide 3; R<2 the slide is vertical, and the target is restrained (EoT)',
-								tier3: 'Vertical slide 5; R<3 restrained (EoT)'
+								tier1: 'Зсунути на 2; Р<1 зсув є вертикальним',
+								tier2: 'Зсунути на 3; Р<2 зсув є вертикальним, і ціль is скутий (до кінця ходу)',
+								tier3: 'Вертикально зсунути на 5; Р<3 скутий (до кінця ходу)'
 							})),
 							FactoryLogic.createAbilitySectionText('While restrained this way, a creature who is vertical force moved is suspended in midair. The creature falls when the condition ends.')
 						]
@@ -216,19 +216,19 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 						target: 'Кожна істота в зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The hag attaches an ornate explosive pastry to each target who has A<2. At the end of the round, the hag makes one power roll against each creature with a pastry attached to them.'),
+							FactoryLogic.createAbilitySectionText('The hag attaches an ornate explosive pastry to each target who has Л<2. At the end of the round, the hag makes one power roll against each creature with a pastry attached to them.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 poison damage',
-								tier2: '10 poison damage',
-								tier3: '13 poison damage'
+								tier1: '6 отруйної шкоди',
+								tier2: '10 отруйної шкоди',
+								tier3: '13 отруйної шкоди'
 							})),
-							FactoryLogic.createAbilitySectionText('**Special** A creature wearing a pastry or adjacent to a creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.'),
+							FactoryLogic.createAbilitySectionText('**Special** A creature wearing a pastry or adjacent to a creature wearing a pastry can attempt an **Agility test** to remove the pastry as a маневр.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Agility,
 								tier1: 'The hag makes the power roll for all pastries.',
 								tier2: 'The pastry is not removed.',
-								tier3: 'The pastry is removed and can no longer explode.'
+								tier3: 'The pastry is removed і can no longer explode.'
 							}))
 						]
 					})
@@ -257,9 +257,9 @@ The hag’s hut springs to life. It enters the encounter map within 10 squares o
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '6 fire damage; A<1 weakened (save ends)',
-								tier2: '10 fire damage; A<2 weakened (save ends)',
-								tier3: '13 fire damage; A<3 weakened (save ends)'
+								tier1: '6 вогняної шкоди; Л<1 ослаблений (рят. кидок закінчує)',
+								tier2: '10 вогняної шкоди; Л<2 ослаблений (рят. кидок закінчує)',
+								tier3: '13 вогняної шкоди; Л<3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The hag turns the area into a roiling oven until the end of the encounter. Any creature in area takes an extra 5 damage from the hag’s damage-dealing abilities.')
 						]

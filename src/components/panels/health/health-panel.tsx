@@ -774,7 +774,7 @@ const HealthPanel = (props: Props) => {
 									text={`
 You are dying.
 
-You can’t take the Catch Breath maneuver in combat, and you are bleeding, and this condition can’t be removed in any way until you are no longer dying.
+You can’t take the Catch Breath маневр in combat, and you are bleeding, and this condition can’t be removed in any way until you are no longer dying.
 
 Your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.`}
 								/>

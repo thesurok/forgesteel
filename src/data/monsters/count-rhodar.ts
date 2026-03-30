@@ -73,7 +73,7 @@ How his return might be possible is not clear, but it would surely involve the R
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'Rhodar takes an additional main action on his turn. He can use this feature even if he is dazed.'
+				'Rhodar takes an additional основна дія on his turn. He can use this feature even if he is dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -91,7 +91,7 @@ How his return might be possible is not clear, but it would surely involve the R
 			cost: 7,
 			icon: StatBlockIcon.Ranged,
 			sections: [
-				'Rhodar chooses two creatures or objects within 20 squares of him. The targets immediately teleport to swap places. Any enemy teleported by this feature who has I<5 is dazed until the end of their next turn.'
+				'Rhodar chooses two creatures or objects within 20 squares of him. The targets immediately teleport to swap places. Any enemy teleported by this feature who has І<5 is dazed until the end of their next turn.'
 			]
 		})
 	],
@@ -149,9 +149,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '13 damage; A<4 restrained (save ends)',
-									tier2: '18 damage; A<5 restrained (save ends)',
-									tier3: '21 damage; A<6 restrained (save ends)'
+									tier1: '13 шкоди; Л<4 скутий (рят. кидок закінчує)',
+									tier2: '18 шкоди; Л<5 скутий (рят. кидок закінчує)',
+									tier3: '21 шкоди; Л<6 скутий (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('A target restrained this way is impaled by a spear. Rhodar has four spears, each of which can be used to impale a target. At the start can summon any of his spears back to himself, ending the restrained condition on an impaled target.')
@@ -171,9 +171,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '16 corruption damage; frightened (save ends)',
-									tier2: '13 corruption damage; frightened (EoT)',
-									tier3: '8 corruption damage'
+									tier1: '16 шкоди від скверни; зляканий (рят. кидок закінчує)',
+									tier2: '13 шкоди від скверни; зляканий (до кінця ходу)',
+									tier3: '8 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While a target is frightened this way, Rhodar ignores banes and double banes on abilities used against them.')
@@ -193,9 +193,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '17 corruption damage; M<4 bleeding (save ends) and prone',
-									tier2: '24 corruption damage; prone; M<5 bleeding (save ends)',
-									tier3: '30 corruption damage; prone; M<6 the target is bleeding until the end of the encounter'
+									tier1: '17 шкоди від скверни; С<4 кровотеча (рят. кидок закінчує) і розпластаний',
+									tier2: '24 шкоди від скверни; розпластаний; С<5 кровотеча (рят. кидок закінчує)',
+									tier3: '30 шкоди від скверни; розпластаний; С<6 ціль is кровотеча until the end of the encounter'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Rhodar regains Stamina equal to half the damage dealt.')
@@ -215,9 +215,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '6 damage, 2 corruption damage; push 2; M<4 bleeding (save ends)',
-									tier2: '6 damage, 7 corruption damage; push 5; M<5 bleeding (save ends)',
-									tier3: '6 damage, 10 corruption damage; push 7; M<6 bleeding (save ends)'
+									tier1: '6 шкоди, 2 шкоди від скверни; відштовхнути на 2; С<4 кровотеча (рят. кидок закінчує)',
+									tier2: '6 шкоди, 7 шкоди від скверни; відштовхнути на 5; С<5 кровотеча (рят. кидок закінчує)',
+									tier3: '6 шкоди, 10 шкоди від скверни; відштовхнути на 7; С<6 кровотеча (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Rhodar shifts up to his speed before or after using this ability. He regains Stamina equal to half the total corruption damage dealt.')
@@ -234,7 +234,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						target: 'Особливе',
 						cost: 2,
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each area is saturated with vengeful spirits until the end of the round. Any enemy who enters the area for the first time in a round or starts their turn there takes 5 corruption damage. At the end of the round, the spirits violently disperse. Each enemy within 2 squares of an area and has P<5 is weakened (save ends).')
+							FactoryLogic.createAbilitySectionText('Each area is saturated with vengeful spirits until the end of the round. Any enemy who enters the area for the first time in a round or starts their turn there takes 5 corruption damage. At the end of the round, the spirits violently disperse. Each enemy within 2 squares of an area and has П<5 is weakened (save ends).')
 						]
 					})
 				}),
@@ -248,7 +248,7 @@ How his return might be possible is not clear, but it would surely involve the R
 						target: 'The triggering creature',
 						cost: 2,
 						sections: [
-							FactoryLogic.createAbilitySectionText('A target who has I<5 is frightened. This effect ends if the target is 11 or more squares from Rhodar.')
+							FactoryLogic.createAbilitySectionText('A target who has І<5 is frightened. This effect ends if the target is 11 or more squares from Rhodar.')
 						]
 					})
 				}),
@@ -269,9 +269,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '8 corruption damage; A<4 the target is blood soaked (save ends)',
-									tier2: '13 corruption damage; A<5 the target is blood soaked (save ends)',
-									tier3: '16 corruption damage; A<6 the target is blood soaked until the end of the encounter'
+									tier1: '8 шкоди від скверни; Л<4 ціль is blood soaked (рят. кидок закінчує)',
+									tier2: '13 шкоди від скверни; Л<5 ціль is blood soaked (рят. кидок закінчує)',
+									tier3: '16 шкоди від скверни; Л<6 ціль is blood soaked until the end of the encounter'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('While a creature is blood soaked, Rhodar has a double edge on abilities used against them.')
@@ -291,9 +291,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Presence,
-									tier1: '16 corruption damage; the target is bleeding until the end of the encounter',
-									tier2: '13 corruption damage; bleeding (save ends)',
-									tier3: '8 corruption damage'
+									tier1: '16 шкоди від скверни; ціль is кровотеча until the end of the encounter',
+									tier2: '13 шкоди від скверни; кровотеча (рят. кидок закінчує)',
+									tier3: '8 шкоди від скверни'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Rhodar teleports to an unoccupied space in the area. If he has lost the damage immunity from his Grave Ward trait, he regains it.')
@@ -312,9 +312,9 @@ How his return might be possible is not clear, but it would surely involve the R
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '10 fire damage; R<4 weakened (save ends)',
-									tier2: '16 fire damage; R<5 weakened (save ends)',
-									tier3: '20 fire damage; R<6 weakened (save ends)'
+									tier1: '10 вогняної шкоди; Р<4 ослаблений (рят. кидок закінчує)',
+									tier2: '16 вогняної шкоди; Р<5 ослаблений (рят. кидок закінчує)',
+									tier3: '20 вогняної шкоди; Р<6 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Rhodar teleports to an unoccupied space adjacent to one target after the ability resolves.')

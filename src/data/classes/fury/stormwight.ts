@@ -24,7 +24,7 @@ export const stormwight: SubClass = {
 				FactoryLogic.feature.create({
 					id: 'fury-sub-3-1-3',
 					name: 'Невпинний мисливець',
-					description: 'Ви отримуєте перевагу при тестах, виконаних із використанням навику Track.'
+					description: 'Ви отримуєте перевагу при тестах, виконаних із використанням навички Відстеження.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({

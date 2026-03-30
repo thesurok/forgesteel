@@ -61,7 +61,7 @@ Six individual draconians are presented in this section—not an adventuring par
 			cost: 3,
 			icon: StatBlockIcon.Self,
 			sections: [
-				'A draconian acting this turn flaps their wings and creates a mighty gale. Each creature adjacent to the draconian is pushed up to 4 squares, and if they have <code>M < 2</code>, they are knocked prone.'
+				'A draconian acting this turn flaps their wings and creates a mighty gale. Each creature adjacent to the draconian is pushed up to 4 squares, and if they have <code>С < 2</code>, they are knocked prone.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
@@ -76,9 +76,9 @@ Six individual draconians are presented in this section—not an adventuring par
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
-						tier1: '6 damage',
-						tier2: '10 damage',
-						tier3: '13 damage'
+						tier1: '6 шкоди',
+						tier2: '10 шкоди',
+						tier3: '13 шкоди'
 					})),
 					FactoryLogic.createAbilitySectionText('The damage dealt by this ability matches a damage type the draconian has immunity to.')
 				]
@@ -96,9 +96,9 @@ Six individual draconians are presented in this section—not an adventuring par
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 						bonus: 3,
-						tier1: '7 damage',
-						tier2: '13 damage',
-						tier3: '16 damage'
+						tier1: '7 шкоди',
+						tier2: '13 шкоди',
+						tier3: '16 шкоди'
 					})),
 					FactoryLogic.createAbilitySectionText('The draconian’s scales shatter from battle damage. The draconian has damage weakness 5 but can take two turns per round until the end of the encounter.')
 				]
@@ -132,9 +132,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 poison damage; M<1 slowed (save ends)',
-								tier2: '15 poison damage; M<2 slowed (save ends)',
-								tier3: '18 poison damage; M<3 slowed (save ends)'
+								tier1: '10 отруйної шкоди; С<1 сповільнений (рят. кидок закінчує)',
+								tier2: '15 отруйної шкоди; С<2 сповільнений (рят. кидок закінчує)',
+								tier3: '18 отруйної шкоди; С<3 сповільнений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -150,9 +150,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: 'The target regains 10 Stamina',
-								tier2: '12 corruption damage; A<2 weakened (save ends)',
-								tier3: '12 lightning damage; A<2 bleeding (save ends)'
+								tier1: 'Ціль regains 10 Витривалість',
+								tier2: '12 шкоди від скверни; Л<2 ослаблений (рят. кидок закінчує)',
+								tier3: '12 блискавичної шкоди; Л<2 кровотеча (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('The first time in an encounter that Aeolyxria makes a power roll for this ability, she can subsequently use the outcome of that roll instead of rolling whenever she uses this ability until the end of the encounter.'),
 							FactoryLogic.createAbilitySectionSpend({
@@ -191,9 +191,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 poison damage; A<2 bleeding (save ends)',
-								tier2: '12 poison damage; A<3 bleeding (save ends)',
-								tier3: '15 poison damage; bleeding (save ends)'
+								tier1: '7 отруйної шкоди; Л<2 кровотеча (рят. кидок закінчує)',
+								tier2: '12 отруйної шкоди; Л<3 кровотеча (рят. кидок закінчує)',
+								tier3: '15 отруйної шкоди; кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -235,9 +235,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '15 damage; M<1 slowed (save ends)',
-								tier3: '18 damage; M<2 slowed (save ends)'
+								tier1: '10 шкоди',
+								tier2: '15 шкоди; С<1 сповільнений (рят. кидок закінчує)',
+								tier3: '18 шкоди; С<2 сповільнений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('Locratix deals 6 damage to each creature or object in a 2 × 1 line behind the target.')
 						]
@@ -255,9 +255,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 acid damage; M<1 dazed (save ends)',
-								tier2: '12 acid damage; M<2 dazed (save ends)',
-								tier3: '15 acid damage; M<3 dazed (save ends)'
+								tier1: '7 кислотної шкоди; С<1 приголомшений (рят. кидок закінчує)',
+								tier2: '12 кислотної шкоди; С<2 приголомшений (рят. кидок закінчує)',
+								tier3: '15 кислотної шкоди; С<3 приголомшений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionText('While dazed this way, a target takes an extra 6 damage from Locratix’s abilities.')
 						]
@@ -271,7 +271,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Locratix flies up to her speed. Any creature adjacent to the space on the ground she took off from who has A<2 is knocked prone.')
+							FactoryLogic.createAbilitySectionText('Locratix flies up to her speed. Any creature adjacent to the space on the ground she took off from who has Л<2 is knocked prone.')
 						]
 					})
 				}),
@@ -285,9 +285,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 acid damage; A<1 the target’s speed is 0 (EoT)',
-								tier2: '12 acid damage; A<2 the target’s speed is 0 (EoT)',
-								tier3: '15 acid damage; A<3 the target’s speed is 0 (EoT)'
+								tier1: '7 кислотної шкоди; Л<1 ціль’s швидкість 0 (до кінця ходу)',
+								tier2: '12 кислотної шкоди; Л<2 ціль’s швидкість 0 (до кінця ходу)',
+								tier3: '15 кислотної шкоди; Л<3 ціль’s швидкість 0 (до кінця ходу)'
 							}))
 						]
 					})
@@ -295,7 +295,7 @@ Six individual draconians are presented in this section—not an adventuring par
 				FactoryLogic.feature.create({
 					id: 'draconian-2-feature-5',
 					name: 'Flighty',
-					description: 'When Locratix deals rolled damage to an enemy, that enemy can’t use Locratix as the trigger for any of their triggered actions until the start of Locratix’s next turn.'
+					description: 'When Locratix deals rolled damage to an enemy, that enemy can’t use Locratix as the trigger for any of their тригерні дії until the start of Locratix’s next turn.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'draconian-2-feature-6',
@@ -334,9 +334,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 cold damage',
-								tier2: '15 cold damage; the target takes a bane on their next strike',
-								tier3: '19 cold damage; the target takes a double bane on their next strike'
+								tier1: '10 холодної шкоди',
+								tier2: '15 холодної шкоди; ціль отримує шкоду на свій наступний удар',
+								tier3: '19 холодної шкоди; ціль отримує подвійну шкоду на свій наступний удар'
 							}))
 						]
 					})
@@ -352,9 +352,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 cold damage; M<1 dazed (save ends)',
-								tier2: '12 cold damage; M<2 dazed (save ends)',
-								tier3: '15 cold damage; M<3 dazed (save ends)'
+								tier1: '7 холодної шкоди; С<1 приголомшений (рят. кидок закінчує)',
+								tier2: '12 холодної шкоди; С<2 приголомшений (рят. кидок закінчує)',
+								tier3: '15 холодної шкоди; С<3 приголомшений (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -420,9 +420,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage; M<1 weakened (save ends)',
-								tier2: '15 damage; M<2 weakened (save ends)',
-								tier3: '18 corruption damage; M<3 weakened (save ends)'
+								tier1: '10 шкоди; С<1 ослаблений (рят. кидок закінчує)',
+								tier2: '15 шкоди; С<2 ослаблений (рят. кидок закінчує)',
+								tier3: '18 шкоди від скверни; С<3 ослаблений (рят. кидок закінчує)'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
@@ -442,9 +442,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 courruption damage; M<1 the target has corruption weakness 3 (save ends)',
-								tier2: '12 courruption damage; M<2 the target has corruption weakness 3 (save ends)',
-								tier3: '15 courruption damage; the target has corruption weakness 3 (save ends)'
+								tier1: '7 courruption шкоди; С<1 ціль має corruption weakness 3 (рят. кидок закінчує)',
+								tier2: '12 courruption шкоди; С<2 ціль має corruption weakness 3 (рят. кидок закінчує)',
+								tier3: '15 courruption шкоди; ціль має corruption weakness 3 (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -511,9 +511,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '10 damage',
-								tier2: '16 damage; M<1 bleeding (save ends)',
-								tier3: '19 damage; M<2 3 damage, bleeding (save ends)'
+								tier1: '10 шкоди',
+								tier2: '16 шкоди; С<1 кровотеча (рят. кидок закінчує)',
+								tier3: '19 шкоди; С<2 3 шкоди, кровотеча (рят. кидок закінчує)'
 							}))
 						]
 					})
@@ -530,9 +530,9 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 3,
-								tier1: '7 fire damage',
-								tier2: '13 fire damage',
-								tier3: '16 fire damage'
+								tier1: '7 вогняної шкоди',
+								tier2: '13 вогняної шкоди',
+								tier3: '16 вогняної шкоди'
 							}))
 						]
 					})
@@ -546,7 +546,7 @@ Six individual draconians are presented in this section—not an adventuring par
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Phrrygalax flies up to his speed and lands in an unoccupied space on the ground. Each creature adjacent to where he lands who has A<2 is knocked prone.')
+							FactoryLogic.createAbilitySectionText('Phrrygalax flies up to his speed and lands in an unoccupied space on the ground. Each creature adjacent to where he lands who has Л<2 is knocked prone.')
 						]
 					})
 				}),
@@ -612,13 +612,13 @@ Six individual draconians are presented in this section—not an adventuring par
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '11 damage; M<2 prone',
-								tier2: '16 damage; M<3 prone',
-								tier3: '19 damage; M<4 prone'
+								tier1: '11 шкоди; С<2 розпластаний',
+								tier2: '16 шкоди; С<3 розпластаний',
+								tier3: '19 шкоди; С<4 розпластаний'
 							})),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'If the target has M<4, they are also bleeding (save ends).'
+								effect: 'If the target has С<4, they are also bleeding (save ends).'
 							})
 						]
 					})
@@ -635,9 +635,9 @@ Six individual draconians are presented in this section—not an adventuring par
 							FactoryLogic.createAbilitySectionText('Before the power roll is made, Dorzinuuth shifts to an unoccupied space adjacent to the end of the line.'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								bonus: 4,
-								tier1: '7 damage',
-								tier2: '12 damage; M<3 prone',
-								tier3: '15 damage; M<4 prone'
+								tier1: '7 шкоди',
+								tier2: '12 шкоди; С<3 розпластаний',
+								tier3: '15 шкоди; С<4 розпластаний'
 							}))
 						]
 					})
@@ -684,9 +684,9 @@ Six individual draconians are presented in this section—not an adventuring par
 							FactoryLogic.createAbilitySectionText('Dorzinuuth lets loose a powerful roar. Each target makes a **Reason test.**'),
 							FactoryLogic.createAbilitySectionRoll(FactoryLogic.createPowerRoll({
 								characteristic: Characteristic.Reason,
-								tier1: 'Frightened (save ends)',
-								tier2: 'Frightened (EoT)',
-								tier3: 'No effect'
+								tier1: 'зляканий (рят. кидок закінчує)',
+								tier2: 'зляканий (до кінця ходу)',
+								tier3: 'Без ефекту'
 							})),
 							FactoryLogic.createAbilitySectionText('Each ally in the area gains an edge on their next strike.')
 						]

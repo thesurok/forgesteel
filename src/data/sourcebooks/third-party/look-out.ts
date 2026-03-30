@@ -20,9 +20,9 @@ const kiln: HeroClass = {
 	id: 'class-kiln',
 	name: 'Kiln',
 	description: `
-Kilns are magical warriors and guardians of the Undermind. The omnipresent roots of the Undermind metabolize souls into magical ether that you capture in your wooden talismans. Different woods burn with different powers and you wield them all to turn your foes to ash.
+Кілни - це магічні воїни й охоронці Підрозуму. Всеприсутнє коріння Підрозуму перетворює душі на магічний етер, який ви вловлюєте у свої дерев’яні талісмани. Різні породи дерева горять по-різному, і ви опановуєте їх усі, щоб обертати ворогів на попіл.
 
-As a kiln, you arrive to stoke the flame wherever the spark of opportunity presents itself, empowering your allies to devastate your enemies. Should the need arise, however, you’re well-equipped to put those who stand against you to the pyre yourself.`,
+Як кілн, ви з’являєтеся, щоб роздмухувати полум’я там, де виникає іскра нагоди, наділяючи союзників силою нищити ваших ворогів. А якщо виникне потреба, ви й самі чудово здатні відправити на вогнище тих, хто стане проти вас.`,
 	type: 'standard',
 	subclassName: 'Кадр',
 	subclassCount: 1,
@@ -80,15 +80,15 @@ As a kiln, you arrive to stoke the flame wherever the spark of opportunity prese
 					id: 'pVGsG9NfxCcT1pfc',
 					name: 'Enkindle',
 					description: `
-Whenever you roll to gain spark at the start of your turn, you can kindle (no action required). If you do, your roll gains the following additional effects:
+Щоразу, коли ви на початку свого ходу кидаєте, щоб отримати spark, ви можете розпалитися (без дії). Якщо ви це робите, ваш кидок отримує такі додаткові ефекти:
 
-* If the roll is a 1, the Undermind accepts your offering. You take psychic damage equal to 1d10 + your level, which can’t be reduced in any way. You are enkindled.
-* If the roll is a 2, you are enkindled.
-* If the roll is a 3, you are enkindled and you gain 1 extra spark.
+* Якщо випадає 1, Підрозум приймає вашу жертву. Ви отримуєте психічну шкоду, що дорівнює 1d10 + ваш рівень і не може бути зменшена жодним чином. Ви стаєте розпаленими.
+* Якщо випадає 2, ви стаєте розпаленими.
+* Якщо випадає 3, ви стаєте розпаленими й отримуєте 1 додатковий spark.
 
-While you are enkindled, your abilities granted by your Talisman Kit are empowered. Enkindled lasts until the end of the round.
+Поки ви розпалені, вміння, надані вашим Talisman Kit, посилюються. Розпаленість триває до кінця раунду.
 
-You lose any remaining spark at the end of the encounter.`,
+Наприкінці сутички ви втрачаєте весь spark, що залишився.`,
 					tag: 'Enkindle'
 				}),
 				FactoryLogic.feature.createAbility({
@@ -104,7 +104,7 @@ You lose any remaining spark at the end of the encounter.`,
 							FactoryLogic.createAbilitySectionText('Apply one Stoke the Flame effect from your talisman kit granted by the Tinderbox feature.'),
 							FactoryLogic.createAbilitySectionField({
 								name: 'Inner Flame',
-								effect: 'Once per round, you can spend 1 spark to use Stoke the Flame targeting yourself instead of an ally as a free triggered action. You can use Stoke the Flame this way even if you are dazed.'
+								effect: 'Раз за раунд ви можете витратити 1 spark, щоб застосувати Stoke the Flame до себе замість союзника як безкоштовну тригерну дію. Ви можете застосувати Stoke the Flame таким чином, навіть якщо ви приголомшені.'
 							})
 						]
 					})
@@ -151,12 +151,12 @@ If you choose a kiln perk, you must first complete a task from the Undermind bef
 					id: 'sJRlfIIufT36YWjq',
 					name: 'A Fire Unburdened',
 					description: `
-While you are enkindled, as a maneuver, you can choose one of the following:
+Поки ви enkindled, як маневр ви можете вибрати одне з наведеного:
 
-* End the restrained condition.
-* End the slowed condition.
+* Закінчити стан «Скутий».
+* Закінчити стан «Сповільнений».
 
-As part of the maneuver, you can additionally stand up if you are prone.`,
+У межах цього маневру ви також можете встати, якщо розпластані.`,
 					tag: 'Enkindle'
 				}),
 				FactoryLogic.feature.createDamageModifier({
@@ -173,7 +173,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.feature.create({
 					id: 'dxLQNl9YTdlHy61x',
 					name: 'Controlled Burn',
-					description: 'You gain an edge on Presence tests made to interact with other creatures when you are near a visible flame that is 2 squares or larger. As a maneuver, you can ignite or snuff out any number of at-most size 1 prepared objects (kindling, torches, candles, fuses, and so forth) at any distance as long as you can see and recognize the object.'
+					description: 'Ви отримуєте перевагу на тести Присутності під час взаємодії з іншими істотами, коли перебуваєте поруч із видимим полум’ям розміром 2 клітинки або більше. Як маневр ви можете запалити або загасити будь-яку кількість підготовлених об’єктів розміром не більше 1 (розпал, смолоскипи, свічки, ґноти тощо) на будь-якій відстані, якщо бачите та впізнаєте цей об’єкт.'
 				}),
 				FactoryLogic.feature.createClassAbilityChoice({
 					id: '2LVjHk8ypQyx6LsO',
@@ -193,7 +193,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			target: 'Себе',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You can teleport twice, each time up to 2 squares, leaving a doppelganger in each square you teleport from until the start of your next turn. If you are adjacent an enemy, no matter the enemy’s size, you can teleport to a space on the opposite side of the enemy as one of the teleports. When an enemy is adjacent to at least one of your doppelgangers, they have damage weakness equal to your Reason score.')
+				FactoryLogic.createAbilitySectionText('Ви можете телепортуватися двічі, щоразу на відстань до 2 клітинок, залишаючи в кожній клітинці, з якої телепортуєтеся, ефемерного вогняного двійника до початку вашого наступного ходу. Якщо ви перебуваєте поруч із ворогом, незалежно від його розміру, то одним із цих телепортів можете переміститися в простір по інший бік від нього. Коли ворог перебуває поруч принаймні з одним із ваших двійників, він має вразливість до шкоди, що дорівнює значенню вашого Розуму.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -209,9 +209,9 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Reason,
-						tier1: '4 fire damage',
-						tier2: '5 fire damage; push 1',
-						tier3: '7 fire damage; push 2'
+						tier1: '4 вогняної шкоди',
+						tier2: '5 вогняної шкоди; відштовхнути на 1',
+						tier3: '7 вогняної шкоди; відштовхнути на 2'
 					})
 				)
 			]
@@ -226,7 +226,7 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			target: 'Себе',
 			cost: 3,
 			sections: [
-				FactoryLogic.createAbilitySectionText('You can shift up to your speed. You can pass through 1 square of solid matter as part of this movement, but you cannot end this movement inside solid matter. Allies occupying squares that you move through during this shift each gain a surge. Squares occupied by enemies do not count as difficult terrain during this movement. You can make one free strike at any point during this movement.')
+				FactoryLogic.createAbilitySectionText('Ви можете зміститися на відстань до своєї швидкості. Під час цього переміщення ви можете пройти крізь 1 клітинку твердої матерії, але не можете завершити рух усередині неї. Кожен союзник, чию клітинку ви проходите під час цього зміщення, отримує 1 сплеск. Клітинки, зайняті ворогами, не вважаються важкопрохідною місцевістю під час цього переміщення. У будь-який момент під час цього переміщення ви можете виконати один вільний удар.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -242,12 +242,12 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '3 damage; Р < [слабкий], blinded (EoT)',
-						tier2: '4 damage; Р < [середній], blinded (EoT)',
-						tier3: '6 damage; Р < [сильний], blinded (EoT)'
+						tier1: '3 шкоди; Р < [слабкий], засліплений (до кінця ходу)',
+						tier2: '4 шкоди; Р < [середній], засліплений (до кінця ходу)',
+						tier3: '6 шкоди; Р < [сильний], засліплений (до кінця ходу)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A blinded creature has line of effect only to creatures and objects within 2 squares of them.')
+				FactoryLogic.createAbilitySectionText('Засліплена істота має лінію дії лише до істот і предметів у межах 2 клітинок від себе.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -263,12 +263,12 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '4 + A fire damage; burning (EoT) and grabbed',
-						tier2: '6 + A fire damage; burning (EoT) and grabbed',
-						tier3: '9 + A fire damage; burning (EoT) and grabbed'
+						tier1: '4 + Л вогняної шкоди; палає (до кінця ходу) і схоплений',
+						tier2: '6 + Л вогняної шкоди; палає (до кінця ходу) і схоплений',
+						tier3: '9 + Л вогняної шкоди; палає (до кінця ходу) і схоплений'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('A burning target takes 1d6 fire damage at the start of each of their turns until the condition ends.')
+				FactoryLogic.createAbilitySectionText('Палаюча ціль отримує 1d6 вогняної шкоди на початку кожного свого ходу, доки стан не закінчиться.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -284,12 +284,12 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: 'Push 3',
-						tier2: 'Push 4',
-						tier3: 'Push 6'
+						tier1: 'Відштовхнути на 3',
+						tier2: 'Відштовхнути на 4',
+						tier3: 'Відштовхнути на 6'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('An object you target must be your size or smaller. The target takes fire damage equal to the number of squares they are pushed. Squares the target is forced from as part of this ability become difficult terrain for enemies.')
+				FactoryLogic.createAbilitySectionText('Предмет, який ви обираєте ціллю, має бути вашого розміру або меншим. Ціль отримує вогняну шкоду, що дорівнює кількості клітинок, на які її відштовхнули. Клітинки, з яких ціль примусово переміщується завдяки цій здібності, стають важкопрохідною місцевістю для ворогів.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -305,12 +305,12 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 				FactoryLogic.createAbilitySectionRoll(
 					FactoryLogic.createPowerRoll({
 						characteristic: Characteristic.Agility,
-						tier1: '5 + A damage; M < [слабкий], the target has fire weakness 5 (save ends)',
-						tier2: '8 + A damage; M < [середній], the target has fire weakness 5 (save ends)',
-						tier3: '11 + A damage; M < [сильний], the target has fire weakness 5 (save ends)'
+						tier1: '5 + Л шкоди; С < [слабкий], ціль має вразливість 5 до вогняної шкоди (рят. кидок закінчує)',
+						tier2: '8 + Л шкоди; С < [середній], ціль має вразливість 5 до вогняної шкоди (рят. кидок закінчує)',
+						tier3: '11 + Л шкоди; С < [сильний], ціль має вразливість 5 до вогняної шкоди (рят. кидок закінчує)'
 					})
 				),
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, whenever the target takes damage, all adjacent enemies take 2 fire damage.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички щоразу, коли ціль отримує шкоду, усі сусідні вороги отримують 2 вогняної шкоди.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -324,11 +324,11 @@ As part of the maneuver, you can additionally stand up if you are prone.`,
 			cost: 5,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-You summon in an unoccupied space within distance a hovering, flaming sword of size 1S that can’t be harmed. The sword lasts until the end of the encounter. Summoning a new smoldering sword dismisses the previous one. All creatures can move through the sword’s space.
+Ви викликаєте в незайнятій клітинці в межах дистанції ширяючий палаючий меч розміру 1S, якому не можна зашкодити. Меч існує до кінця сутички. Виклик нового такого меча розвіює попередній. Усі істоти можуть проходити крізь клітинку меча.
 
-When you or an ally uses a Melee Weapon ability, they can choose to use it from the sword’s position. An ability performed in this way temporarily gains the Magic keyword and deals additional fire damage equal to your Reason score.
+Коли ви або союзник використовуєте здібність Melee Weapon, її можна виконати з позиції меча. Здібність, виконана таким чином, тимчасово отримує ключове слово Magic і завдає додаткової вогняної шкоди, що дорівнює вашому показнику Розуму.
 
-At the start of your turn while the sword is summoned, as a free maneuver, you can move the sword up to your speed.`)
+На початку вашого ходу, поки меч викликаний, як безкоштовний маневр ви можете перемістити його на відстань до своєї швидкості.`)
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -341,7 +341,7 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			target: 'All enemies',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, targets of your Stoke the Flame ability gain a 2 aura until the end of the round. Enemies within the aura take a bane on power rolls.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички цілі вашого вміння Stoke the Flame отримують ауру 2 до кінця раунду. Вороги в межах аури отримують шкоду на кидки сили.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -354,7 +354,7 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			target: 'Self and all allies',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, targets of your Stoke the Flame ability gain a 2 aura until the end of the round. When targets of this ability within the aura make a power roll (including on the ability that triggered Stoke the Flame) and at least one of the d10s rolled is a 1, they can reroll one d10. Additionally, targets of this ability in the aura automatically succeed saving throws to end the dazed condition.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички цілі вашої здібності Stoke the Flame отримують ауру 2 до кінця раунду. Коли цілі цієї здібності в межах аури роблять кидок сили, зокрема для здібності, що спровокувала Stoke the Flame, і принаймні один із кинутих d10 показує 1, вони можуть перекинути один d10. Крім того, цілі цієї здібності в аурі автоматично успішно проходять рят. кидки, щоб завершити стан приголомшення.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -367,7 +367,7 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			target: 'Self and all non-minion allies',
 			cost: 7,
 			sections: [
-				FactoryLogic.createAbilitySectionText('Until the end of the encounter, targets of your Stoke the Flame ability gain a 2 aura until the end of the round. Targets of this ability who end their turn within the aura gain one surge and their next strike deals extra fire damage equal to your Reason score.')
+				FactoryLogic.createAbilitySectionText('До кінця сутички цілі вашої здібності Stoke the Flame отримують ауру 2 до кінця раунду. Цілі цієї здібності, які закінчують свій хід у межах аури, отримують 1 сплеск, а їхній наступний удар завдає додаткової вогняної шкоди, що дорівнює вашому показнику Розуму.')
 			]
 		}),
 		FactoryLogic.createAbility({
@@ -381,10 +381,10 @@ At the start of your turn while the sword is summoned, as a free maneuver, you c
 			cost: 7,
 			sections: [
 				FactoryLogic.createAbilitySectionText(`
-Until the end of the encounter, targets of your Stoke the Flame ability gain a 2 aura until the end of the round. Targets of this ability who end their turn within the aura can use a free triggered action to do one of the following:
+До кінця сутички цілі вашого вміння Stoke the Flame отримують ауру 2 до кінця раунду. Цілі цього вміння, що завершують свій хід у межах аури, можуть як безкоштовну тригерну дію зробити одне з такого:
 
-* Spend a Recovery.
-* End one effect that is ended by a saving throw or that ends at the end of the target’s turn.`)
+* Витратити Recovery.
+* Завершити один ефект, що завершується рятівним кидком або наприкінці ходу цілі.`)
 			]
 		})
 	],
@@ -404,7 +404,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 						FactoryLogic.feature.createPackageContent({
 							id: 'P6VcK01mJc1PkCfH',
 							name: 'Wildfire',
-							description: 'While you are enkindled, whenever you shift or teleport, the distance of the movement is increased by 1 and one ally adjacent to you at the beginning of the movement can teleport to an unoccupied space adjacent to you at the end of the movement.',
+							description: 'Поки ви розпалені, щоразу, коли ви зміщуєтеся або телепортуєтеся, дистанція цього переміщення збільшується на 1, а один союзник поруч із вами на початку переміщення може телепортуватися в незайнятий простір поруч із вами наприкінці цього переміщення.',
 							tag: 'Enkindle'
 						})
 					]
@@ -415,7 +415,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 						FactoryLogic.feature.create({
 							id: 'Gxs8yJ8vd4YOA35Y',
 							name: 'Reflections of Ember',
-							description: 'You can swim, climb, or otherwise move along reflective surfaces, such as the surface of a river or up a wall of metal, at full speed.'
+							description: 'Ви можете плавати, дертися або інакше рухатися вздовж відбивних поверхонь, як-от поверхня річки чи металева стіна, на повній швидкості.'
 						}),
 						FactoryLogic.feature.createChoice({
 							id: 'A3HMgrcRcFRfxv1S',
@@ -426,14 +426,14 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 										ability: FactoryLogic.createAbility({
 											id: 'O1TthHv1McjpFexz',
 											name: 'See the Tapestry of Battle',
-											description: 'This section over here could use a patch.',
+											description: 'Ви бачите, де саме в полотні битви слід затягнути нитку.',
 											type: FactoryLogic.type.createMain(),
 											keywords: [AbilityKeyword.Magic],
 											distance: [FactoryLogic.distance.createRanged(10)],
 											target: '1 ally',
 											cost: 5,
 											sections: [
-												FactoryLogic.createAbilitySectionText('Teleport to an unoccupied space adjacent the target. You or the target can use a signature ability and you or the target can spend a Recovery, in either order. Whomever spends a Recovery in this way gains 2 surges.')
+												FactoryLogic.createAbilitySectionText('Телепортуйтеся в незайнятий простір поруч із ціллю. Ви або ціль можете використати signature ability, а ви або ціль можете витратити Recovery в будь-якому порядку. Той, хто витрачає Recovery таким чином, отримує 2 сплески.')
 											]
 										})
 									}),
@@ -451,7 +451,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											target: 'Себе',
 											cost: 5,
 											sections: [
-												FactoryLogic.createAbilitySectionText('Use a signature ability. After you use the ability, you can shift up to your speed. At the end of your movement, you or an adjacent ally can make a melee free strike.')
+												FactoryLogic.createAbilitySectionText('Використайте signature ability. Після цього ви можете зміститися на відстань до своєї швидкості. Наприкінці цього переміщення ви або суміжний союзник можете зробити ближній безкоштовний удар.')
 											]
 										})
 									}),
@@ -484,7 +484,7 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 						FactoryLogic.feature.createPackageContent({
 							id: 'QFwqnEtHE9TZFhXd',
 							name: 'Fan the Flame',
-							description: 'While you are enkindled, the first time in a round that you take damage, reduce the damage by your Agility score and gain 1 surge.',
+							description: 'Поки ви розпалені, коли ви вперше за раунд отримуєте шкоду, зменште її на значення вашої Ловкості та отримайте 1 сплеск.',
 							tag: 'Enkindle'
 						})
 					]
@@ -524,12 +524,12 @@ Until the end of the encounter, targets of your Stoke the Flame ability gain a 2
 											cost: 5,
 											sections: [
 												FactoryLogic.createAbilitySectionText(`
-Until the end of the encounter, your flames take on a color of your choosing:
+				До кінця сутички ваше полумʼя набуває вибраного вами кольору:
 
-* **Green:** Once per round, when you use a fire damage-dealing ability, you can make a melee free strike against one of the targets of the ability. If you kill at least one non-minion with either the ability or the free strike, you gain 2 surges and you can spend a Recovery.
-* **White:** Once per round, when you use a fire damage-dealing ability, you gain temporary Stamina equal to twice your Reason score and you can end one effect that is ended by a saving throw or that ends at the end of your turn.
+				* **Green:** Раз за раунд, коли ви використовуєте здібність, що завдає вогняної шкоди, ви можете виконати вільний удар ближнього бою проти однієї з її цілей. Якщо ви вбиваєте принаймні одного не-мініона цією здібністю або цим вільним ударом, ви отримуєте 2 сплески і можете витратити Відновлення.
+				* **White:** Раз за раунд, коли ви використовуєте здібність, що завдає вогняної шкоди, ви отримуєте тимчасову Витривалість, що дорівнює подвоєному показнику вашого Розуму, і можете завершити один ефект, який закінчується рят. кидком або в кінці вашого ходу.
 
-Changing the color of your flames requires the use of this ability again.`)
+				Щоб змінити колір свого полумʼя, потрібно знову використати цю здібність.`)
 											]
 										})
 									}),
@@ -550,12 +550,12 @@ Changing the color of your flames requires the use of this ability again.`)
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Reason,
-														tier1: '4 fire damage',
-														tier2: '6 fire damage',
-														tier3: '8 fire damage'
+														tier1: '4 вогняної шкоди',
+														tier2: '6 вогняної шкоди',
+														tier3: '8 вогняної шкоди'
 													})
 												),
-												FactoryLogic.createAbilitySectionText('Gain 1 surge that you can use immediately.'),
+												FactoryLogic.createAbilitySectionText('Отримайте 1 сплеск, який можете використати негайно.'),
 												FactoryLogic.createAbilitySectionSpend({
 													effect: 'For each enemy you kill with this ability, regain Stamina equal to 5 + your Reason score.',
 													value: 2
@@ -592,7 +592,7 @@ Changing the color of your flames requires the use of this ability again.`)
 						FactoryLogic.feature.createPackageContent({
 							id: 'ErWk8f3OqP3RYNJn',
 							name: 'Backdraft',
-							description: 'While you are enkindled, when you pull a creature, you ignore their stability, and when you force move a creature, the distance of the move gains a +1 bonus.',
+							description: 'Поки ви розпалені, коли ви притягуєте істоту, ви ігноруєте її стійкість, а коли примусово переміщуєте істоту, дистанція цього переміщення отримує бонус +1.',
 							tag: 'Enkindle'
 						})
 					]
@@ -603,7 +603,7 @@ Changing the color of your flames requires the use of this ability again.`)
 						FactoryLogic.feature.create({
 							id: 'Xyfrt3SQO1Lx52rl',
 							name: 'The Soul is in the Breath',
-							description: 'In combat, you can’t suffocate and you gain an edge on the Escape Grab maneuver. Out of combat, you can hold your breath for a number of minutes equal to twice your Reason score, and while you hold your breath, you can turn your body to dense smoke. While in this form, you move through gaps as if you were size 1T, you can hover, and you don’t take damage from falling.'
+							description: 'У бою ви не можете задихнутися й отримуєте перевагу на маневр Escape Grab. Поза боєм ви можете затримувати подих на кількість хвилин, що дорівнює подвоєному значенню вашого Розуму, а поки затримуєте подих, можете перетворювати своє тіло на густий дим. У цій формі ви проходите крізь щілини так, ніби маєте розмір 1T, можете зависати й не отримуєте шкоди від падіння.'
 						}),
 						FactoryLogic.feature.createChoice({
 							id: 'cS6etUqiiyIoRNd4',
@@ -621,7 +621,7 @@ Changing the color of your flames requires the use of this ability again.`)
 											target: 'Себе',
 											cost: 5,
 											sections: [
-												FactoryLogic.createAbilitySectionText('Until the end of the encounter, soot falls from the sky. You and each ally gain an edge on tests that use the Hide skill. Enemies have fire weakness 3. If an enemy is grabbed, they have fire weakness 7.')
+												FactoryLogic.createAbilitySectionText('До кінця сутички з неба сиплеться сажа. Ви та кожен союзник отримуєте перевагу на тести з навичкою Ховання. Вороги мають вразливість 3 до вогняної шкоди. Якщо ворог схоплений, він має вразливість 7 до вогняної шкоди.')
 											]
 										})
 									}),
@@ -642,14 +642,14 @@ Changing the color of your flames requires the use of this ability again.`)
 												FactoryLogic.createAbilitySectionRoll(
 													FactoryLogic.createPowerRoll({
 														characteristic: Characteristic.Agility,
-														tier1: 'Pull 3; M < [слабкий], restrained (EoT)',
-														tier2: 'Pull 5; M < [середній], restrained (EoT)',
-														tier3: 'Pull 7; M < [сильний], restrained (EoT)'
+														tier1: 'Притягнути на 3; С < [слабкий], скутий (до кінця ходу)',
+														tier2: 'Притягнути на 5; С < [середній], скутий (до кінця ходу)',
+														tier3: 'Притягнути на 7; С < [сильний], скутий (до кінця ходу)'
 													})
 												),
-												FactoryLogic.createAbilitySectionText('You can shift up to your speed. If you end the movement with cover or concealment, you are hidden.'),
+												FactoryLogic.createAbilitySectionText('Ви можете зміститися на відстань до своєї швидкості. Якщо ви завершуєте це переміщення з укриттям або маскуванням, ви стаєте прихованими.'),
 												FactoryLogic.createAbilitySectionSpend({
-													effect: 'For every additional 2 spark you spend, the potency is increased by 1 and the size of the burst is increased by 1.',
+													effect: 'За кожні додаткові 2 spark, які ви витрачаєте, potency збільшується на 1, а розмір вибуху збільшується на 1.',
 													value: 2,
 													repeatable: true
 												})
@@ -705,13 +705,13 @@ const hawthorn: Kit = {
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'Себе',
 				sections: [
-					FactoryLogic.createAbilitySectionText('Until the start of your next turn, your stability is increased by 2. You and allies in the area each gain 1 surge and can spend a Recovery.'),
+					FactoryLogic.createAbilitySectionText('До початку вашого наступного ходу ваша стійкість зростає на 2. Ви та союзники в ділянці кожен отримуєте 1 сплеск і можете витратити Recovery.'),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'Allies in the area gain temporary Stamina equal to twice your stability.'
+						effect: 'Союзники в ділянці отримують тимчасову витривалість, що дорівнює подвоєній вашій стійкості.'
 					}),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'For each spark you spend, the burst’s size is increased by 1 and your stability is further increased by 1 until the start of your next turn, which increases the temporary Stamina gained by affected allies.'
+						effect: 'За кожен spark, який ви витрачаєте, розмір вибуху збільшується на 1, а ваша стійкість додатково зростає на 1 до початку вашого наступного ходу, що збільшує тимчасову витривалість, яку отримують уражені союзники.'
 					})
 				]
 			})
@@ -730,14 +730,14 @@ const hawthorn: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Reason,
-							tier1: '2 poison damage',
-							tier2: '3 poison damage; pull 1',
-							tier3: '4 poison damage; pull 1; restrained (EoT)'
+							tier1: '2 отруйної шкоди',
+							tier2: '3 отруйної шкоди; притягнути на 1',
+							tier3: '4 отруйної шкоди; притягнути на 1; скутий (до кінця ходу)'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'The pull effect on tier 2 and tier 3 outcomes changes to vertical pull and the distance of the pull is increased by your Reason.'
+						effect: 'Ефект притягування на 2 і 3 щаблях успіху змінюється на вертикальне притягування, а дистанція притягування збільшується на значення вашого Розуму.'
 					})
 				]
 			})
@@ -746,11 +746,11 @@ const hawthorn: Kit = {
 			id: 'Rh3THhEfz7wQfVYR',
 			name: 'Hawthorn Stoke the Flame Effects',
 			description: `
-| Talisman | Stoke the Flame Effect |
+| Talisman | Ефект Stoke the Flame |
 | :--- | :--- |
-| Berkanan | The ability gains an edge. An enemy within 2 squares of one of the targets of the ability is grabbed by a target of the ability. The grab cannot be ended by the grabber. |
-| Eihwaz | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, the target of the ability is dazed (EoT) or bleeding (save ends), your choice. |
-| Thurisaz | After using the ability, the target can end one condition or effect on them that is ended by a saving throw or that ends at the end of their turn. |`
+| Berkanan | Здібність отримує перевагу. Ворога в межах 2 клітинок від однієї з цілей здібності схоплює одна з її цілей. Цю хватку не може завершити істота, що хапає. |
+| Eihwaz | Ціль отримує 1 сплеск, який може використати негайно. Якщо ціль використовує 3 або більше сплесків, щоб збільшити шкоду здібності, ціль здібності стає приголомшеною (до кінця ходу) або отримує кровотечу (рят. кидок закінчує) на ваш вибір. |
+| Thurisaz | Після використання здібності ціль може завершити один стан або ефект на собі, що закінчується рят. кидком або в кінці її ходу. |`
 		})
 	]
 };
@@ -781,13 +781,13 @@ const hazel: Kit = {
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'All enemies',
 				sections: [
-					FactoryLogic.createAbilitySectionText('The next strike against each target gains an edge and each target is additionally I < [слабкий] weakened (save ends).'),
+					FactoryLogic.createAbilitySectionText('Наступний удар проти кожної цілі отримує перевагу, а кожна ціль додатково при І < [слабкий] стає ослабленою (рят. кидок закінчує).'),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'You or an ally in the area can make a melee free strike.'
+						effect: 'Ви або союзник у зоні можете здійснити вільний удар ближнього бою.'
 					}),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'For each spark you spend, the burst’s size is increased by 1 and the potency is increased by 1.'
+						effect: 'За кожен spark, який ви витрачаєте, розмір вибуху збільшується на 1, а potency зростає на 1.'
 					})
 				]
 			})
@@ -803,18 +803,18 @@ const hazel: Kit = {
 				target: 'All enemies',
 				cost: 'signature',
 				sections: [
-					FactoryLogic.createAbilitySectionText('Targets of this ability do not need to be within line of effect. Hidden enemies in the area are automatically revealed.'),
+					FactoryLogic.createAbilitySectionText('Цілі цього вміння не обов’язково мають бути в межах лінії дії. Приховані вороги в ділянці автоматично виявляються.'),
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Reason,
-							tier1: '2 psychic damage',
-							tier2: '3 psychic damage; you can shift 1 square',
-							tier3: '4 psychic damage; you can shift up to 2 squares'
+							tier1: '2 психічної шкоди',
+							tier2: '3 психічної шкоди; ви можете зміститися на 1 клітинку',
+							tier3: '4 психічної шкоди; ви можете зміститися до 2 клітинок'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'You can teleport instead of shift, and you do not need line of effect to your destination. If you teleport to a space adjacent to any allies, one of the allies can make a free strike.'
+						effect: 'Ви можете телепортуватися замість зміщення, і вам не потрібна лінія дії до місця призначення. Якщо ви телепортуєтесь у клітинку поруч із будь-яким союзником, один із союзників може виконати вільний удар.'
 					})
 				]
 			})
@@ -823,11 +823,11 @@ const hazel: Kit = {
 			id: 'Rh3THhEfz7wQfVYR',
 			name: 'Hazel Stoke the Flame Effects',
 			description: `
-| Talisman | Stoke the Flame Effect |
+| Talisman | Ефект Stoke the Flame |
 | :--- | :--- |
-| Dagaz | All targets of the ability are Р < [середній] weakened (EoT). If the target is hidden, the ability deals extra psychic damage equal to twice your Reason score to one creature it is targeting. |
-| Laguz | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, the ability roll is a critical hit on double rolled values (e.g. two 6s) instead of 19 or higher. |
-| Kaunan | The ability gains an edge. If the ability is made with a double edge against a creature that is frightened or weakened, then the target gains 1 Heroic Resource after resolving the ability. |`
+| Dagaz | Усі цілі здібності при Р < [середній] стають ослабленими (до кінця ходу). Якщо ціль прихована, здібність завдає одній істоті, на яку вона націлена, додаткової психічної шкоди, що дорівнює подвоєному показнику вашого Розуму. |
+| Laguz | Ціль отримує 1 сплеск, який може використати негайно. Якщо ціль використовує 3 або більше сплесків, щоб збільшити шкоду здібності, кидок цієї здібності стає критичним при дублях на кубах, наприклад дві 6, а не на 19 або вище. |
+| Kaunan | Здібність отримує перевагу. Якщо її виконано з подвійною перевагою проти істоти, що злякана або ослаблена, ціль після завершення здібності отримує 1 героїчний ресурс. |`
 		})
 	]
 };
@@ -858,13 +858,13 @@ const rosewood: Kit = {
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 })],
 				target: 'All enemies',
 				sections: [
-					FactoryLogic.createAbilitySectionText('You teleport up to 3 squares. In the square you teleport from, you leave an afterimage that lasts until the end of the round. All targets are taunted by the afterimage. You can push one creature you are adjacent to after you teleport a number of squares equal to the distance you teleported.'),
+					FactoryLogic.createAbilitySectionText('Ви телепортуєтесь на відстань до 3 клітинок. У клітинці, з якої ви телепортуєтесь, ви залишаєте післяобраз, який існує до кінця раунду. Усі цілі стають спровокованими цим післяобразом. Після телепортації ви можете відштовхнути одну істоту поруч із вами на кількість клітинок, що дорівнює пройденій під час телепортації відстані.'),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'Until the end of the round, as a free triggered action, after you use an ability, you can swap places with your afterimage.'
+						effect: 'До кінця раунду, як безкоштовною тригерною дією після використання вміння, ви можете помінятися місцями зі своїм післяобразом.'
 					}),
 					FactoryLogic.createAbilitySectionSpend({
-						effect: 'You teleport 1 additional square for each spark you spend.'
+						effect: 'Ви телепортуєтесь на 1 додаткову клітинку за кожен витрачений spark.'
 					})
 				]
 			})
@@ -882,14 +882,14 @@ const rosewood: Kit = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: Characteristic.Reason,
-							tier1: '2 sonic damage',
-							tier2: '3 sonic damage; Р < [середній], slowed (save ends)',
-							tier3: '4 sonic damage; Р < [сильний], slowed (save ends)'
+							tier1: '2 звукової шкоди',
+							tier2: '3 звукової шкоди; Р < [середній], сповільнений (рят. кидок закінчує)',
+							tier3: '4 звукової шкоди; Р < [сильний], сповільнений (рят. кидок закінчує)'
 						})
 					),
 					FactoryLogic.createAbilitySectionField({
 						name: 'Enkindled',
-						effect: 'You can replace the slowed effect with restrained (save ends) for one target.'
+						effect: 'Для однієї цілі ви можете замінити ефект сповільнення на стан «Скутий» (рят. кидок закінчує).'
 					})
 				]
 			})
@@ -898,11 +898,11 @@ const rosewood: Kit = {
 			id: 'vjgm8AHumnc3qfdG',
 			name: 'Rosewood Stoke the Flame Effects',
 			description: `
-| Talisman | Stoke the Flame Effect |
+| Talisman | Ефект Stoke the Flame |
 | :--- | :--- |
-| Gebo | The target gains temporary Stamina equal to your Reason score, or equal to 5 + your level if the ability has a double edge. |
-| Othalan | The target gains a surge, which they can use immediately. If the target uses 3 or more surges to increase the damage of the ability, they can additionally make a free strike after the ability. |
-| Uruz | The ability gains an edge. All enemies adjacent to the target are П < [середній] frightened of the target (EoT). Enemies who are already slowed automatically fail to resist the potency. |`
+| Gebo | Ціль отримує тимчасову Витривалість, що дорівнює вашому показнику Розуму, або 5 + ваш рівень, якщо здібність має подвійну перевагу. |
+| Othalan | Ціль отримує 1 сплеск, який може використати негайно. Якщо ціль використовує 3 або більше сплесків, щоб збільшити шкоду здібності, вона додатково може виконати вільний удар після цієї здібності. |
+| Uruz | Здібність отримує перевагу. Усі вороги поруч із ціллю при П < [середній] стають зляканими цілі (до кінця ходу). Вороги, які вже сповільнені, автоматично не чинять опору потужності. |`
 		})
 	]
 };
@@ -917,7 +917,7 @@ const aConversationWithFire: Perk = {
 	description: `
 *Kilns only*
 
-When you spend 1 uninterrupted minute in front of a fire, you can speak the name of another creature. If that creature is willing to speak to you, their image appears in the fire, and they can see you before them in a shimmering ball of light. The two of you can speak to each other through these images as if you were together in person. As a maneuver, you or the creature can end the conversation.`,
+Коли ви проводите 1 безперервну хвилину перед вогнем, то можете промовити ім’я іншої істоти. Якщо ця істота готова говорити з вами, її образ з’являється у вогні, а вона бачить вас перед собою в мерехтливій кулі світла. Ви обоє можете розмовляти через ці образи так, ніби стоїте поруч особисто. Як маневр ви або ця істота можете завершити розмову.`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Special
@@ -960,8 +960,8 @@ You gain a +2 bonus to the Perfect New Recipe project roll (see Downtime Activit
 | Flame Broiled | Aromatic ingredients (onions, ginger, garlic, mustard seeds, and so forth) | Soulful |
 | Spiced Up | Spicy ingredients (dragon chilis, cumin, khemharan peppercorns, and so forth) | Warming |
 
-**Soulful:** The creature can choose to have their abilities deal psychic damage instead of any other type of damage. Additionally, when the creature uses a damage dealing ability while they are dying, they deal bonus damage equal to their level.
-**Warming:** The creature has cold immunity equal to their level. Additionally, when the creature obtains a tier 3 outcome on the power roll of a damage-dealing ability, they can deal an extra 1d3 rolled fire damage.`,
+**Soulful:** Істота може обрати, щоб її здібності завдавали психічної шкоди замість будь-якого іншого типу. Додатково, коли істота використовує здібність, що завдає шкоди, поки вона вмирає, вона завдає бонусної шкоди, що дорівнює її рівню.
+**Warming:** Істота має імунітет до холоду, що дорівнює її рівню. Додатково, коли істота отримує результат 3 рівня на кидку сили здібності, що завдає шкоди, вона може завдати додаткові 1d3 кидкової вогняної шкоди.`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Special
@@ -1029,7 +1029,7 @@ const smokemellier: Perk = {
 	description: `
 *Kilns only*
 
-You can detect smoke from all fires within 1 mile of you, and with some concentration, you can infer the material of every thing that each fire has burned so far, no matter how long the fire has been burning. The exact level of detail is left to your Director. You cannot determine which smoke belongs to which fire unless you can see the fire in person.`,
+Ви можете відчувати дим від усіх вогнищ у межах 1 милі від себе, а трохи зосередившись, можете визначити, який матеріал кожен вогонь спалив дотепер, байдуже, як довго він горить. Точний рівень деталізації визначає ваш Director. Ви не можете встановити, якому саме вогню належить який дим, якщо не бачите цей вогонь на власні очі.`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Special
@@ -1053,14 +1053,14 @@ const tendrilsOfTheUndermind: Perk = {
 	description: `
 *Kilns only*
 
-Your connection with the Undermind lets you share senses with it. You can search for hidden creatures as a free maneuver once on each of your turns. Creatures within distance of your Stoke the Flame ability are automatically found when you search. Additionally, you gain the following ability.`,
+Ваш зв’язок із Підрозумом дає змогу ділитися з ним чуттями. Раз на кожному своєму ході ви можете шукати прихованих істот як безкоштовним маневром. Істоти в межах досяжності вашого вміння Stoke the Flame автоматично знаходяться під час такого пошуку. Крім того, ви отримуєте таке вміння.`,
 	type: FeatureType.Multiple,
 	data: {
 		features: [
 			FactoryLogic.feature.create({
 				id: '5lGBjTkoXelkOmYd',
 				name: 'Tendrils of the Undermind',
-				description: 'Your connection with the Undermind lets you share senses with it. You can search for hidden creatures as a free maneuver once on each of your turns. Creatures within distance of your Stoke the Flame ability are automatically found when you search.'
+				description: 'Ваш зв’язок із Підрозумом дає змогу ділитися з ним чуттями. Раз на кожному своєму ході ви можете шукати прихованих істот як безкоштовним маневром. Істоти в межах досяжності вашого вміння Stoke the Flame автоматично знаходяться під час такого пошуку.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
@@ -1072,7 +1072,7 @@ Your connection with the Undermind lets you share senses with it. You can search
 					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Себе',
 					sections: [
-						FactoryLogic.createAbilitySectionText('Until the end of the round, your Stoke the Flame ability gains a distance bonus of +5 and you don’t need line of effect to target allies with your Stoke the Flame ability.')
+						FactoryLogic.createAbilitySectionText('До кінця раунду ваше вміння Stoke the Flame отримує бонус +5 до дистанції, і вам не потрібна лінія дії, щоб націлювати союзників цим умінням.')
 					]
 				})
 			})
@@ -1099,11 +1099,11 @@ const woodenFamiliar: Perk = {
 	description: `
 *Kilns only*
 
-You instill the embers of a friendly creature’s soul into a carving. As a respite activity, given a sufficient supply of wood, you can create a wooden familiar. You can only have one wooden familiar at a time.
+Ви вкладаєте жар душі дружньої істоти в різьблену фігурку. Як активність перепочинку, маючи достатній запас дерева, ви можете створити дерев’яного фамільяра. У вас може бути лише один дерев’яний фамільяр одночасно.
 
-Create the stat block of your familiar yourself by beginning with the Animal, Big Animal A, or Predator A stat block (see the Monsters book of the Core Rules) and adding traits that total in cost up to a number of points equal to 2 plus your Reason score. The familiar also has fire weakness 3. You can change the stat block of your familiar as a respite activity.
+Створіть блок характеристик свого фамільяра самостійно, взявши за основу Animal, Big Animal A або Predator A з книги Monsters у Core Rules, і додавши риси на загальну вартість до 2 плюс ваш показник Розуму. Фамільяр також має вразливість 3 до вогняної шкоди. Ви можете змінювати блок характеристик свого фамільяра під час перепочинку.
 
-Your new wooden familiar is your retainer, but has no Recoveries and cannot regain Stamina by any means except by taking a respite. Additionally, your wooden familiar loses all its Stamina if it is submerged in water, as its inner flame is snuffed out.`,
+Ваш новий дерев’яний фамільяр є вашим супутником, але не має Recoveries і не може відновлювати витривалість жодним способом, окрім перепочинку. Крім того, ваш дерев’яний фамільяр втрачає всю свою витривалість, якщо опиняється під водою, адже його внутрішнє полум’я згасає.`,
 	type: FeatureType.Text,
 	data: null,
 	list: PerkList.Special

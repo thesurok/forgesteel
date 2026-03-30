@@ -53,7 +53,7 @@ export const kingfissureWorm: MonsterGroup = {
 				target: 'Себе',
 				cost: 3,
 				sections: [
-					FactoryLogic.createAbilitySectionText('Each creature within 5 squares of the kingfissure worm takes 5 damage, and if they have A<4 they are knocked prone. The kingfissure worm can use this ability only once per round.')
+					FactoryLogic.createAbilitySectionText('Each creature within 5 squares of the kingfissure worm takes 5 damage, and if they have Л<4 they are knocked prone. The kingfissure worm can use this ability only once per round.')
 				]
 			})
 		}),
@@ -63,7 +63,7 @@ export const kingfissureWorm: MonsterGroup = {
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'The kingfissure worm takes an additional main action on their turn. They can use this feature even if they are dazed.'
+				'The kingfissure worm takes an additional основна дія on their turn. They can use this feature even if they are dazed.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
@@ -88,9 +88,9 @@ export const kingfissureWorm: MonsterGroup = {
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							bonus: 5,
-							tier1: '8 damage; M<3 slide 5',
-							tier2: '13 damage; M<4 slide 5',
-							tier3: '17 damage; M<5 slide 5'
+							tier1: '8 шкоди; С<3 зсунути на 5',
+							tier2: '13 шкоди; С<4 зсунути на 5',
+							tier3: '17 шкоди; С<5 зсунути на 5'
 						})
 					),
 					FactoryLogic.createAbilitySectionText('Until the end of the next round, each target takes a −3 penalty to stability, treats all terrain as difficult terrain, and takes 10 damage whenever they are knocked prone.')
@@ -136,12 +136,12 @@ export const kingfissureWorm: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '13 damage; M<3 grabbed',
-									tier2: '18 damage; M<4 grabbed',
-									tier3: '22 damage; M<5 grabbed and the target takes a bane on the Escape Grab maneuver'
+									tier1: '13 шкоди; С<3 схоплений',
+									tier2: '18 шкоди; С<4 схоплений',
+									tier3: '22 шкоди; С<5 схоплений і ціль takes a bane on the Escape Grab маневр'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('The kingfissure worm must have one or more tongues to use this ability. As a maneuver, the kingfissure worm can pull up to two creatures grabbed this way adjacent to them.')
+							FactoryLogic.createAbilitySectionText('The kingfissure worm must have one or more tongues to use this ability. As a маневр, the kingfissure worm can pull up to two creatures grabbed this way adjacent to them.')
 						]
 					})
 				}),
@@ -157,14 +157,14 @@ export const kingfissureWorm: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '15 damage; push 3',
-									tier2: '20 damage; push 5, prone',
-									tier3: '25 damage; the target is swallowed (see Swallowed)'
+									tier1: '15 шкоди; відштовхнути на 3',
+									tier2: '20 шкоди; відштовхнути на 5, розпластаний',
+									tier3: '25 шкоди; ціль is swallowed (see Swallowed)'
 								})
 							),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 2,
-								effect: 'When the kingfissure worm uses the Charge main action, they ignore difficult terrain and automatically destroy mundane size 3 and smaller objects in the path of their charge. The first time the kingfissure worm moves through a creature’s space during this charge, that creature takes 8 damage and is pushed up to 3 squares.'
+								effect: 'When the kingfissure worm uses the Charge основна дія, they ignore difficult terrain and automatically destroy mundane size 3 and smaller objects in the path of their charge. The first time the kingfissure worm moves through a creature’s space during this charge, that creature takes 8 damage and is pushed up to 3 squares.'
 							})
 						]
 					})
@@ -195,7 +195,7 @@ export const kingfissureWorm: MonsterGroup = {
 						],
 						target: 'Одна істота або предмет',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this maneuver only while they have a creature or object grabbed. The worm slams the grabbed creature or object against the target, dealing 13 damage to both. If this ability is used at range, it deals an extra 5 damage and the grabbed creature or object is released.')
+							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this маневр only while they have a creature or object grabbed. The worm slams the grabbed creature or object against the target, dealing 13 damage to both. If this ability is used at range, it deals an extra 5 damage and the grabbed creature or object is released.')
 						]
 					})
 				}),
@@ -248,9 +248,9 @@ export const kingfissureWorm: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									characteristic: Characteristic.Agility,
-									tier1: '10 damage; the target falls into the fissure, lands prone, and can’t stand (EoT)',
-									tier2: '10 damage; the target is knocked prone and left hanging at the edge of the area',
-									tier3: 'The target shifts to the nearest unoccupied space outside the area.'
+									tier1: '10 шкоди; ціль falls into the fissure, lands розпластаний, і не може встати (до кінця ходу)',
+									tier2: '10 шкоди; ціль is knocked розпластаний і left hanging at the edge of the area',
+									tier3: 'Ціль shifts to the nearest unoccupied space outside the area.'
 								})
 							)
 						]
@@ -265,7 +265,7 @@ export const kingfissureWorm: MonsterGroup = {
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Особливе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have A<4 they are knocked prone. Any creature who is made winded by this damage is swallowed (see Swallowed).')
+							FactoryLogic.createAbilitySectionText('The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have Л<4 they are knocked prone. Any creature who is made winded by this damage is swallowed (see Swallowed).')
 						]
 					})
 				}),
@@ -281,9 +281,9 @@ export const kingfissureWorm: MonsterGroup = {
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
 									bonus: 5,
-									tier1: '8 acid damage; P<3 weakened (save ends)',
-									tier2: '13 acid damage; P<4 weakened (save ends)',
-									tier3: '17 acid damage; P<5 weakened (save ends)'
+									tier1: '8 кислотної шкоди; П<3 ослаблений (рят. кидок закінчує)',
+									tier2: '13 кислотної шкоди; П<4 ослаблений (рят. кидок закінчує)',
+									tier3: '17 кислотної шкоди; П<5 ослаблений (рят. кидок закінчує)'
 								})
 							),
 							FactoryLogic.createAbilitySectionText('Each creature swallowed by the worm is regurgitated and automatically subject to the tier 3 outcome, then lands prone in an unoccupied space within 5 squares of the kingfissure worm.')
