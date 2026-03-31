@@ -11,14 +11,14 @@ interface Props {
 }
 
 export const MaliceCard = (props: Props) => {
-	const encounter = useMemo(() => props.encounter, [ props.encounter ]);
+	const encounter = useMemo(() => props.encounter, [props.encounter]);
 
 	return (
 		<div className='malice card'>
 			<h2>
-				Malice Features
+				Особливості злоби
 				<br />
-				<span>At the start of a monster’s turn, you can spend malice to activate a Malice feature</span>
+				<span>На початку ходу чудовиська ви можете витратити Злобу, щоб активувати особливість злоби</span>
 			</h2>
 			<div className='malice-features features-container three-column'>
 				{encounter.malice?.map(m => {
@@ -26,7 +26,7 @@ export const MaliceCard = (props: Props) => {
 						<Fragment key={`malice-group-${m.monster}`}>
 							{m.malice.map((malice, i) =>
 								<Fragment key={malice.id}>
-									{i === 0 ? <h3>{m.monster} Malice</h3> : null}
+									{i === 0 ? <h3>{m.monster} Злоба</h3> : null}
 									<FeatureComponent feature={malice} />
 								</Fragment>
 							)}

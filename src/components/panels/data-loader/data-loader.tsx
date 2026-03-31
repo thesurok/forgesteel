@@ -44,17 +44,17 @@ interface Props {
 type LoadingStatus = 'pending' | 'success' | 'failure' | undefined;
 
 export const DataLoader = (props: Props) => {
-	const [ connectionSettingsState, setConnectionSettingsState ] = useState<LoadingStatus>(undefined);
-	const [ heroesState, setHeroesState ] = useState<LoadingStatus>(undefined);
-	const [ homebrewState, setHomebrewState ] = useState<LoadingStatus>(undefined);
-	const [ optionsState, setOptionsState ] = useState<LoadingStatus>(undefined);
-	const [ playbookState, setPlaybookState ] = useState<LoadingStatus>(undefined);
-	const [ sessionState, setSessionState ] = useState<LoadingStatus>(undefined);
-	const [ hiddenSettingsState, setHiddenSettingsState ] = useState<LoadingStatus>(undefined);
-	const [ splinesState, setSplinesState ] = useState<LoadingStatus>(undefined);
-	const [ overallLoadState, setOverallLoadState ] = useState<LoadingStatus>('pending');
-	const [ connectionSettings, setConnectionSettings ] = useState<ConnectionSettings | null>(null);
-	const [ error, setError ] = useState<string | null>(null);
+	const [connectionSettingsState, setConnectionSettingsState] = useState<LoadingStatus>(undefined);
+	const [heroesState, setHeroesState] = useState<LoadingStatus>(undefined);
+	const [homebrewState, setHomebrewState] = useState<LoadingStatus>(undefined);
+	const [optionsState, setOptionsState] = useState<LoadingStatus>(undefined);
+	const [playbookState, setPlaybookState] = useState<LoadingStatus>(undefined);
+	const [sessionState, setSessionState] = useState<LoadingStatus>(undefined);
+	const [hiddenSettingsState, setHiddenSettingsState] = useState<LoadingStatus>(undefined);
+	const [splinesState, setSplinesState] = useState<LoadingStatus>(undefined);
+	const [overallLoadState, setOverallLoadState] = useState<LoadingStatus>('pending');
+	const [connectionSettings, setConnectionSettings] = useState<ConnectionSettings | null>(null);
+	const [error, setError] = useState<string | null>(null);
 
 	// Load connection settings and create DataService
 	async function getDataService() {
@@ -269,15 +269,15 @@ export const DataLoader = (props: Props) => {
 				<div className='overall-state'>
 					<CheckIcon state={overallLoadState} />
 				</div>
-				<HeaderText level={1}>Loading Data</HeaderText>
+				<HeaderText level={1}>Завантаження даних</HeaderText>
 				<Flex vertical={true}>
 					<Flex className='load-states' vertical={true}>
-						<CheckLabel state={connectionSettingsState}>Connection Settings</CheckLabel>
-						<CheckLabel state={heroesState}>Heroes</CheckLabel>
-						<CheckLabel state={homebrewState}>Homebrew Content</CheckLabel>
+						<CheckLabel state={connectionSettingsState}>Параметри підключення</CheckLabel>
+						<CheckLabel state={heroesState}>Герої</CheckLabel>
+						<CheckLabel state={homebrewState}>Домашній вміст</CheckLabel>
 						<CheckLabel state={playbookState}>Playbook</CheckLabel>
 						<CheckLabel state={sessionState}>Session</CheckLabel>
-						<CheckLabel state={optionsState}>Options</CheckLabel>
+						<CheckLabel state={optionsState}>Параметри</CheckLabel>
 						<CheckLabel state={hiddenSettingsState}>Identifying Manifold</CheckLabel>
 						<CheckLabel state={splinesState}>Reticulating Splines</CheckLabel>
 					</Flex>
@@ -286,7 +286,7 @@ export const DataLoader = (props: Props) => {
 							<Alert
 								type='error'
 								showIcon={true}
-								title='Data load error'
+								title='Помилка завантаження даних'
 								description={error}
 							/>
 							: null

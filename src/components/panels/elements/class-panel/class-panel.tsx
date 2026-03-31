@@ -5,6 +5,7 @@ import { ErrorBoundary } from '@/components/controls/error-boundary/error-bounda
 import { Expander } from '@/components/controls/expander/expander';
 import { FeaturePanel } from '@/components/panels/elements/feature-panel/feature-panel';
 import { Field } from '@/components/controls/field/field';
+import { Format } from '@/utils/format';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
 import { HeroClass } from '@/models/class';
@@ -33,6 +34,20 @@ interface Props {
 export const ClassPanel = (props: Props) => {
 	const [page, setPage] = useState<string>('overview');
 
+	const getPrimaryCharacteristicsText = () => {
+		if (props.heroClass.primaryCharacteristics.length > 0) {
+			return props.heroClass.primaryCharacteristics.map(ch => Format.getCharacteristicName(ch)).join(', ');
+		}
+
+		if (props.heroClass.primaryCharacteristicsOptions.length > 0) {
+			return props.heroClass.primaryCharacteristicsOptions
+				.map(array => array.map(ch => Format.getCharacteristicName(ch)).join(', ') || 'Немає')
+				.join(' або ');
+		}
+
+		return 'Немає';
+	};
+
 	const getOverview = () => {
 		return (
 			<>
@@ -42,7 +57,7 @@ export const ClassPanel = (props: Props) => {
 						<Field label={props.heroClass.subclassName} value={props.heroClass.subclasses.map(c => c.name).join(', ')} />
 						: null
 				}
-				<Field label='Primary Characteristics' value={props.heroClass.primaryCharacteristics.join(', ') || props.heroClass.primaryCharacteristicsOptions.map(array => array.join(', ') || 'None').join(' or ') || 'None'} />
+				<Field label='Основні характеристики' value={getPrimaryCharacteristicsText()} />
 			</>
 		);
 	};
@@ -91,7 +106,7 @@ export const ClassPanel = (props: Props) => {
 							return null;
 						}
 						return (
-							<Expander key={cost} title={cost === 'signature' ? 'Signature Abilities' : `${cost}pt Abilities`}>
+							<Expander key={cost} title={cost === 'signature' ? 'Фірмові здібності' : `Здібності за ${cost} оч.`}>
 								<div className='class-abilities-grid'>
 									{
 										abilities.map(a => (

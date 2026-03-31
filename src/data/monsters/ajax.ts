@@ -8,78 +8,78 @@ import { StatBlockIcon } from '@/enums/stat-block-icon';
 
 export const ajax: MonsterGroup = {
 	id: 'monster-group-ajax',
-	name: 'Ajax the Invincible',
-	description: 'He bestrides the land like one of history’s great conquerors. A combination of ambition, courage, and study created a master tactician in command of a massive army collecting countless priceless treasures—and no one to stand in his way.',
+	name: 'Аякс Непереможний',
+	description: 'Він крокує землею, мов один із великих завойовників історії. Поєднання честолюбства, відваги й навчання зробило з нього майстерного тактика, який командує величезною армією, збирає незліченні безцінні скарби, і йому ніхто не стає на заваді.',
 	picture: null,
 	information: [
 		{
 			id: 'ajax-info-1',
-			name: 'By Might and Merit',
+			name: 'Силою і заслугами',
 			description: `
-Ajax the Invincible has earned his title. He graduated top of his class at Capital’s military academy, and then immediately launched into a campaign across his homeland of Phaedros. At his side was his advisor Mortum, a nefarious wizard who guided Ajax in the footsteps of the Келіан (Caelian) Empire’s conquests before them.
+Аякс Непереможний заслужив свій титул. Він закінчив військову академію Капіталу першим у випуску, а тоді негайно розпочав кампанію по всій своїй батьківщині, Федросу. Поруч із ним був його радник Мортум, підступний чарівник, який спрямував Аякса шляхом завоювань імперії Келіан (Caelian), що існувала до них.
 
-Together, Ajax and Mortum went on to subjugate and enlist hamlet after town after city after territory with little standing in their way. When they successfully returned the Chrysopolis—an ancient flying sky-elf city—to the sky, and their accomplishments literally rose above the country—no one could ignore their might any longer.`
+Разом Аякс і Мортум підкорювали й вербували селище за селищем, містечко за містечком, місто за містом і територію за територією, майже не зустрічаючи спротиву. Коли їм вдалося повернути Хризополіс, давнє летюче місто небесних ельфів, назад у небо, а їхні звершення буквально піднеслися над країною, більше ніхто не міг ігнорувати їхню міць.`
 		},
 		{
 			id: 'ajax-info-2',
-			name: 'Treasures Abound',
-			description: `Ajax lays claims to many powerful treasures, both gifted to him in exchange for sanctuary and taken by his own hands. The Mantle of the Phoenix Queen, a harness that conjures the wings of a phoenix. Uthgryl, the Negotiator, Blade of the Gol King, a sword so sharp that it could cleave a person’s willpower in two. The Hand of Kukai, a gauntlet plated in jade that harbors powerful, forbidden magic.
+			name: 'Скарбів удосталь',
+			description: `Аякс привласнює безліч могутніх скарбів: одні йому дарують в обмін на прихисток, інші він здобуває власноруч. Мантія Королеви-Фенікс, упряж, що викликає крила фенікса. Утгрил-Перемовник, Клинок короля Гол, меч настільки гострий, що може розітнути людську волю навпіл. Рука Кукая, рукавиця, окована нефритом і сповнена могутньої забороненої магії.
 
-His arsenal is vast and strategically picked to round out his strength. There are few situations he isn’t prepared to handle.`
+Його арсенал величезний і дібраний зі стратегічним розрахунком, щоб доповнити його силу. Мало знайдеться ситуацій, до яких він не підготовлений.`
 		},
 		{
 			id: 'ajax-info-3',
-			name: 'The Iron Saint',
-			description: 'While some of his forces may refer to Ajax as the Iron Saint, the version of him presented here hasn’t taken up that title yet. Ajax the Invincible will continue to amass followers, treasures, and titles until he can ascend to his rightful status as a saint. It’s up to the heroes to make sure this will never come to pass.'
+			name: 'Залізний Святий',
+			description: 'Хоча деякі з його воїнів уже можуть називати Аякса Залізним Святим, представлена тут версія ще не взяла собі цього титулу. Аякс Непереможний продовжить збирати послідовників, скарби й титули, доки не піднесеться до належного йому стану святого. Завдання героїв - не дати цьому статися.'
 		},
 		{
 			id: 'ajax-info-4',
-			name: 'Ajax’s Languages',
-			description: 'Ajax speaks Келіан (Caelian), Хігаран (Higaran), Кхурсіріан (Khoursirian), Федран (Phaedran), Ріохан (Riojan), Ванірик (Vaniric), and Васлоріан (Vaslorian).'
+			name: 'Мови Аякса',
+			description: 'Аякс розмовляє мовами Келіан (Caelian), Хігаран (Higaran), Кхурсіріан (Khoursirian), Федран (Phaedran), Ріохан (Riojan), Ванірик (Vaniric) і Васлоріан (Vaslorian).'
 		}
 	],
 	malice: [
 		FactoryLogic.feature.createMalice({
 			id: 'ajax-malice-1',
-			name: 'Reason',
+			name: 'Розсуд',
 			cost: 2,
 			icon: StatBlockIcon.Self,
 			sections: [
-				'Ajax attempts to instill doubt into a creature within line of effect through logic and reason. The creature and Ajax make an opposed **Reason test**. If Ajax wins, he chooses to either deal 11 extra damage to one target on his next strike or to gain an additional тригерна дія during the current round. Ajax can’t use this feature against the same creature during the same encounter.'
+				'Аякс намагається вселити сумнів істоті в межах лінії ефекту за допомогою логіки та розсуду. Ця істота й Аякс виконують зустрічне **випробування Розуму**. Якщо Аякс перемагає, він або завдає 11 додаткової шкоди одній цілі своїм наступним ударом, або отримує додаткову тригерну дію в поточному раунді. Аякс не може використати цю рису проти тієї самої істоти в межах однієї сутички.'
 			]
 		}),
 		FactoryLogic.feature.createMalice({
 			id: 'ajax-malice-2',
-			name: 'Nexus Jewel',
+			name: 'Самоцвіт Нексуса',
 			cost: 5,
 			icon: StatBlockIcon.SpecialArea,
 			sections: [`
-Until the end of the round, Ajax chooses one of the following environments he has previously visited and overlays that environment on top of the encounter map, temporarily merging multiple realities.
+До кінця раунду Аякс обирає одне з наведених середовищ, у яких уже побував, і накладає його поверх карти зустрічі, тимчасово зливаючи кілька реальностей.
 
-**Incredibly High Above the Ground**: The winds whip and bluster. Any creature who can’t fly takes a −3 penalty to stability, and forced movement effects gain a +3 bonus to their distance against such creatures. 
+**Неймовірно високо над землею**: Вітри шаленіють і рвуться. Будь-яка істота, яка не може літати, отримує штраф -3 до стабільності, а ефекти примусового переміщення отримують бонус +3 до дальності проти таких істот.
 
-**Swamp**: The ground is difficult terrain for enemies. Any creature who starts and ends their turn in the same space is restrained (save ends).
+**Болото**: Земля стає складною місцевістю для ворогів. Будь-яка істота, яка починає й завершує свій хід у тій самій клітинці, стає скутою (рят. кидок закінчує).
 
-**Volcanic Canyon**: The air is stiflingly hot. Each enemy takes 5 fire damage for each square they enter.` ]
+**Вулканічний каньйон**: Повітря задушливо гаряче. Кожен ворог отримує 5 вогняної шкоди за кожну клітинку, у яку входить.` ]
 		}),
 		FactoryLogic.feature.createMalice({
 			id: 'ajax-malice-3',
-			name: 'Solo Action',
+			name: 'Дія одинака',
 			cost: 5,
 			icon: StatBlockIcon.Villain,
 			sections: [
-				'Ajax takes an additional основна дія on his turn. He can use this feature even if he is dazed.'
+				'Аякс отримує додаткову основну дію у свій хід. Він може використати цю рису, навіть якщо приголомшений.'
 			]
 		}),
 		FactoryLogic.feature.createMaliceAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'ajax-malice-4',
-				name: 'Draw Steel',
+				name: 'Клинки наголо',
 				type: FactoryLogic.type.createMain(),
 				cost: 10,
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
-				distance: [FactoryLogic.distance.createSpecial('Four 3 cubes within 10')],
-				target: 'Each target makes a test using their highest characteristic.',
+				distance: [FactoryLogic.distance.createSpecial('Чотири куби 3 у межах 10')],
+				target: 'Кожна ціль виконує випробування, використовуючи свою найвищу характеристику.',
 				sections: [
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
@@ -89,7 +89,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 							tier3: '16 шкоди'
 						})
 					),
-					FactoryLogic.createAbilitySectionText('Ajax then raises his Blade of the Gol King above his head as four giant blades emerge from the ground to fill the area. Each target is pushed into an unoccupied space adjacent to the area after the power roll is resolved. Each blade blocks line of effect and can be dismissed by Ajax at will (no action required).')
+					FactoryLogic.createAbilitySectionText('Потім Аякс здіймає над головою свій Клинок короля Гол, і з землі виринають чотири велетенські клинки, заповнюючи зону. Після розвʼязання кидка сили кожну ціль переміщують у незайняту клітинку поруч із зоною. Кожен клинок блокує лінію ефекту, і Аякс може розсіяти їх за власним бажанням (дія не потрібна).')
 				]
 			})
 		})
@@ -97,13 +97,13 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 	monsters: [
 		FactoryLogic.createMonster({
 			id: 'ajax-1',
-			name: 'Ajax the Invincible',
+			name: 'Аякс Непереможний',
 			level: 11,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Solo),
 			keywords: ['Human', 'Humanoid'],
 			encounterValue: 156,
 			size: FactoryLogic.createSize(1, 'L'),
-			speed: FactoryLogic.createSpeed(7, 'fly, hover'),
+			speed: FactoryLogic.createSpeed(7, 'політ, зависання'),
 			stamina: 700,
 			stability: 2,
 			freeStrikeDamage: 11,
@@ -111,28 +111,28 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 			features: [
 				FactoryLogic.feature.create({
 					id: 'ajax-1-feature-1',
-					name: 'Ajax',
+					name: 'Аякс',
 					description: `
-- **Ajax Turns**: Ajax takes up to three turns each round. He can’t take turns consecutively. Additionally, he can use three тригерні дії in a round while he isn’t dazed.
-- **End Effect**: At the end of each of his turns, Ajax can take 20 damage to end up to two effects on him that can be ended by a saving throw. This damage can’t be reduced in any way.`
+- **Ходи Аякса**: Аякс здійснює до трьох ходів щораунду. Він не може здійснювати ходи підряд. Крім того, поки він не приголомшений, у раунд може використовувати три тригерні дії.
+- **Завершення ефекту**: Наприкінці кожного свого ходу Аякс може отримати 20 шкоди, щоб завершити до двох ефектів на собі, які можна завершити рят. кидком. Цю шкоду не можна зменшити жодним способом.`
 				}),
 				FactoryLogic.feature.create({
 					id: 'ajax-1-feature-2',
-					name: 'Tactical Stance',
-					description: `At the start of each round, Ajax chooses a new stance from one of the following options and gains its benefits:
-- **Insurgent** Ajax automatically treats his initial power roll as a 17. He can still roll to determine if he scores a critical hit.
-- **Mastermind** Before he uses an ability, Ajax can either shift up to 2 squares, or can cause one creature within line of effect to slide up to 2 squares, ignoring stability.
-- **Vanguard** Ajax has damage immunity 5. Additionally, any enemy who makes a power roll that includes Ajax as a target has a double bane on the roll.`
+					name: 'Тактична стійка',
+					description: `На початку кожного раунду Аякс обирає нову стійку з наведених варіантів і отримує її переваги:
+- **Повстанець** Аякс автоматично вважає свій початковий кидок сили за 17. Він усе ще може кинути кубики, щоб зʼясувати, чи завдає критичного удару.
+- **Майстер стратегії** Перед використанням здібності Аякс може або зміститися на 2 клітинки, або змусити одну істоту в межах лінії ефекту зсунутися на 2 клітинки, ігноруючи стабільність.
+- **Авангард** Аякс має імунітет до шкоди 5. Крім того, будь-який ворог, чий кидок сили включає Аякса як ціль, отримує на цей кидок подвійну шкоду.`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-3',
-						name: 'Blade of the Gol King',
+						name: 'Клинок короля Гол',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Two creatures or objects',
+						target: 'Дві істоти або предмети',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -142,10 +142,10 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '26 шкоди; С < 6 розпластаний і ціль втрачає 1d3 Відновлень'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to 2 squares between striking each target.'),
+							FactoryLogic.createAbilitySectionText('Аякс зміщується на 2 клітинки між ударами по кожній цілі.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'Ajax can strike one additional target for each Malice spent.'
+								effect: 'Аякс може вразити ще одну ціль за кожну витрачену Злобу.'
 							})
 						]
 					})
@@ -153,7 +153,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-4',
-						name: 'Decree by the Jade Hand',
+						name: 'Указ нефритової руки',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
@@ -167,10 +167,10 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '21 священної шкоди; П < 6 ціль проклята (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
+							FactoryLogic.createAbilitySectionText('Проклята ціль світиться зеленим, а вартість кожної її героїчної здібності зростає на 2.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>С < 5</code> is knocked prone.'
+								effect: 'Потужність зростає на 1. Крім того, земля під зоною просідає на 3 клітинки й стає складною місцевістю. Кожна летюча ціль, що має <code>С < 5</code>, стає розпластаною.'
 							})
 						]
 					})
@@ -178,7 +178,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-5',
-						name: 'Divine Vine',
+						name: 'Божественна лоза',
 						type: FactoryLogic.type.createManeuver(),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createRanged(5)],
@@ -192,98 +192,98 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '11 шкоди; ціль схоплена.'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('If the target is grabbed, Ajax can choose to keep the vine extended, pull the target adjacent to him, or pull himself adjacent to the target. The vine stays attached to a grabbed target until it takes damage from a strike, the target escapes the grab, or Ajax causes the vine to release the target (no action required).'),
-							FactoryLogic.createAbilitySectionText('**Special:** This ability can be replaced with the features of a different treasure Ajax has acquired.')
+							FactoryLogic.createAbilitySectionText('Якщо ціль схоплена, Аякс може залишити лозу витягнутою, притягнути ціль до себе або підтягнутися до цілі сам. Лоза лишається прикріпленою до схопленої цілі, доки та не отримає шкоди від удару, не вирветься із захвату або доки Аякс не змусить лозу відпустити ціль (дія не потрібна).'),
+							FactoryLogic.createAbilitySectionText('**Особливе:** Цю здібність можна замінити рисами іншого скарбу, який здобув Аякс.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-6',
-						name: 'Bead of Hell',
+						name: 'Пекельна намистина',
 						type: FactoryLogic.type.createManeuver(),
 						cost: 2,
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 5, within: 20 })],
 						target: '',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax’s next turn and creates an area around it that lasts until the start of Ajax’s following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have <code>Л < 5</code>, they are dazed (save ends). Any enemy who starts their turn in the area takes 10 fire damage.')
+							FactoryLogic.createAbilitySectionText('Аякс кидає сяйливу намистину в клітинку в межах дистанції. Вона спалахує на початку наступного ходу Аякса й створює навколо себе зону, що триває до початку його подальшого ходу. Кожен ворог у цій зоні в момент спалаху отримує 20 вогняної шкоди, а якщо має <code>Л < 5</code>, стає приголомшеним (рят. кидок закінчує). Будь-який ворог, який починає свій хід у зоні, отримує 10 вогняної шкоди.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'ajax-1-feature-7',
-					name: 'I’m Not Done Yet.',
-					description: 'Ajax dies only when his Stamina reaches -350. While his Stamina is below 0, Ajax is bleeding, he can choose any two options from his Tactical Stance trait each round, and the Director gains 2 additional Malice per round.'
+					name: 'Я ще не закінчив.',
+					description: 'Аякс помирає лише тоді, коли його Витривалість досягає -350. Поки його Витривалість нижча за 0, Аякс має кровотечу, щораунду може обирати будь-які дві опції зі своєї риси "Тактична стійка", а Директор отримує 2 додаткові Злоби.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-8',
-						name: 'Is This What They Taught You?',
-						type: FactoryLogic.type.createTrigger('A creature within distance marks Ajax.'),
+						name: 'Цього тебе навчили?',
+						type: FactoryLogic.type.createTrigger('Істота в межах дистанції позначає Аякса.'),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a тригерна дія involving their mark on Ajax, he can make a free strike against them.')
+							FactoryLogic.createAbilitySectionText('Ціль позначена, доки позначений Аякс. Поки ціль позначена таким чином, Аякс має перевагу на кидки сили проти неї, а коли ціль використовує тригерну дію, повʼязану зі своєю міткою на Аяксі, він може зробити проти неї вільний удар.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-9',
-						name: 'Shieldbreaker Talisman',
-						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability to reduce damage.'),
+						name: 'Талісман руйнівника щитів',
+						type: FactoryLogic.type.createTrigger('Ворог у межах дистанції використовує здібність, щоб зменшити шкоду.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee(5)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax makes a free strike against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can’t be reduced in any way.')
+							FactoryLogic.createAbilitySectionText('Аякс робить вільний удар по цілі й завдає додаткової шкоди, що дорівнює подвоєній величині зменшеної шкоди. Цю додаткову шкоду не можна зменшити жодним способом.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-10',
-						name: 'Who’s Hesitating?',
-						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
+						name: 'Хто тут вагається?',
+						type: FactoryLogic.type.createTrigger('Істота використовує здібність «Вагання - слабкість».'),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>Р < 4</code>, this free strike also makes them weakened until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Аякс зміщується на відстань до своєї швидкості й може зробити вільний удар. Якщо ціль має <code>Р < 4</code>, цей вільний удар також ослаблює її до кінця її наступного ходу.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-11',
-						name: 'Your Obsession With Me Betrays You',
-						type: FactoryLogic.type.createTrigger('Ajax causes a creature within distance to gain ferocity or wrath.'),
+						name: 'Твоя одержимість мною тебе видає',
+						type: FactoryLogic.type.createTrigger('Аякс змушує істоту в межах дистанції отримати Лють або Гнів.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has <code>І < 4</code>, they use a signature ability against a target of Ajax’s choice.')
+							FactoryLogic.createAbilitySectionText('Якщо ціль має <code>І < 4</code>, вона використовує сигнатурну здібність проти цілі за вибором Аякса.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-12',
-						name: 'You Would Flounder Your Assault?',
-						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
+						name: 'Ти змарнуєш свій наступ?',
+						type: FactoryLogic.type.createTrigger('Істота в межах 10 клітинок відновлює Витривалість.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
+							FactoryLogic.createAbilitySectionText('Аякс відновлює стільки ж Витривалості.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-13',
-						name: 'Phoenix Wing King',
+						name: 'Владика феніксових крил',
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
@@ -297,34 +297,34 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '21 вогняної шкоди; Л < 6 ослаблений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')
+							FactoryLogic.createAbilitySectionText('Аякс летить із шаленою швидкістю, прорізаючи кожну ціль, а потім зʼявляється в незайнятій клітинці в межах дистанції.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-14',
-						name: 'I’ve Learned Their Tricks ',
+						name: 'Я вивчив їхні хитрощі',
 						type: FactoryLogic.type.createVillainAction(2),
 						keywords: [AbilityKeyword.Area],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax uses the shadow elf eclipse’s technique to reduce each target’s surges to 0. Additionally, until the end of the round, Ajax ignores edges and double edges on any target’s abilities, and ignores any nondamaging effects of any target’s damage-dealing abilities.'),
-							FactoryLogic.createAbilitySectionText('**Special:** This villain action can be replaced with a villain action from a creature any target has previously encountered.')
+							FactoryLogic.createAbilitySectionText('Аякс використовує техніку екліпса тіньових ельфів, щоб зменшити сплески кожної цілі до 0. Крім того, до кінця раунду Аякс ігнорує перевагу й подвійну перевагу на здібностях будь-якої цілі, а також ігнорує всі додаткові ефекти, що не завдають шкоди, у здібностях цілей, які завдають шкоди.'),
+							FactoryLogic.createAbilitySectionText('**Особливе:** Цю дію лиходія можна замінити дією лиходія істоти, з якою будь-яка ціль уже стикалася раніше.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-1-feature-15',
-						name: 'Awe of the Iron Crown',
+						name: 'Трепет перед Залізною Короною',
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has <code>І < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль, що має <code>І < 5</code>, стає розпластаною і не може встати, доки Аякс не завдасть їй шкоди. За кожну ціль, яка не стала розпластаною, Аякс може переміститися на відстань до своєї швидкості в її бік і використати проти неї «Клинок короля Гол».')
 						]
 					})
 				})
@@ -332,13 +332,13 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 		}),
 		FactoryLogic.createMonster({
 			id: 'ajax-2',
-			name: 'Ajax the Leader',
+			name: 'Аякс Полководець',
 			level: 11,
 			role: FactoryLogic.createMonsterRole(MonsterOrganizationType.Leader),
 			keywords: ['Human', 'Humanoid'],
 			encounterValue: 52,
 			size: FactoryLogic.createSize(1, 'L'),
-			speed: FactoryLogic.createSpeed(7, 'fly, hover'),
+			speed: FactoryLogic.createSpeed(7, 'політ, зависання'),
 			stamina: 280,
 			stability: 2,
 			freeStrikeDamage: 11,
@@ -346,21 +346,21 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 			features: [
 				FactoryLogic.feature.create({
 					id: 'ajax-2-feature-1',
-					name: 'Tactical Stance',
-					description: `At the start of each round, Ajax chooses a new stance from one of the following options and gains its benefits:
-- **Insurgent** Ajax automatically treats his initial power roll as a 17. He can still roll to determine if he scores a critical hit.
-- **Mastermind** Before he uses an ability, Ajax can either shift up to 2 squares, or can cause one creature within line of effect to slide up to 2 squares, ignoring stability.
-- **Vanguard** Ajax has damage immunity 5. Additionally, any enemy who makes a power roll that includes Ajax as a target has a double bane on the roll.`
+					name: 'Тактична стійка',
+					description: `На початку кожного раунду Аякс обирає нову стійку з наведених варіантів і отримує її переваги:
+- **Повстанець** Аякс автоматично вважає свій початковий кидок сили за 17. Він усе ще може кинути кубики, щоб зʼясувати, чи завдає критичного удару.
+- **Майстер стратегії** Перед використанням здібності Аякс може або зміститися на 2 клітинки, або змусити одну істоту в межах лінії ефекту зсунутися на 2 клітинки, ігноруючи стабільність.
+- **Авангард** Аякс має імунітет до шкоди 5. Крім того, будь-який ворог, чий кидок сили включає Аякса як ціль, отримує на цей кидок подвійну шкоду.`
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-2',
-						name: 'Blade of the Gol King',
+						name: 'Клинок короля Гол',
 						type: FactoryLogic.type.createMain(),
 						cost: 'signature',
 						keywords: [AbilityKeyword.Charge, AbilityKeyword.Magic, AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.createMelee()],
-						target: 'Two creatures or objects',
+						target: 'Дві істоти або предмети',
 						sections: [
 							FactoryLogic.createAbilitySectionRoll(
 								FactoryLogic.createPowerRoll({
@@ -370,10 +370,10 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '26 шкоди; С < 6 розпластаний і ціль втрачає 1d3 Відновлень'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to 2 squares between striking each target.'),
+							FactoryLogic.createAbilitySectionText('Аякс зміщується на 2 клітинки між ударами по кожній цілі.'),
 							FactoryLogic.createAbilitySectionSpend({
 								repeatable: true,
-								effect: 'Ajax can strike one additional target for each Malice spent.'
+								effect: 'Аякс може вразити ще одну ціль за кожну витрачену Злобу.'
 							})
 						]
 					})
@@ -381,7 +381,7 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-3',
-						name: 'Decree by the Jade Hand',
+						name: 'Указ нефритової руки',
 						type: FactoryLogic.type.createMain(),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Cube, value: 3, within: 10 })],
@@ -395,10 +395,10 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '21 священної шкоди; П < 6 ціль проклята (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('A hexed target glows green, and each of their heroic abilities has its cost increased by 2.'),
+							FactoryLogic.createAbilitySectionText('Проклята ціль світиться зеленим, а вартість кожної її героїчної здібності зростає на 2.'),
 							FactoryLogic.createAbilitySectionSpend({
 								value: 3,
-								effect: 'The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has <code>С < 5</code> is knocked prone.'
+								effect: 'Потужність зростає на 1. Крім того, земля під зоною просідає на 3 клітинки й стає складною місцевістю. Кожна летюча ціль, що має <code>С < 5</code>, стає розпластаною.'
 							})
 						]
 					})
@@ -406,88 +406,88 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-4',
-						name: 'Strike Them Down',
+						name: 'Добийте їх',
 						type: FactoryLogic.type.createManeuver(),
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'Two allies',
+						target: 'Два союзники',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each ally can move up to their speed and can use a signature ability.')
+							FactoryLogic.createAbilitySectionText('Кожен союзник може переміститися на відстань до своєї швидкості й використати сигнатурну здібність.')
 						]
 					})
 				}),
 				FactoryLogic.feature.create({
 					id: 'ajax-2-feature-5',
-					name: 'I’m Not Done Yet.',
-					description: 'Ajax dies only when his Stamina reaches -140. While his Stamina is below 0, Ajax is bleeding, he can choose any two options from his Tactical Stance trait each round, and the Director gains 2 additional Malice per round.'
+					name: 'Я ще не закінчив.',
+					description: 'Аякс помирає лише тоді, коли його Витривалість досягає -140. Поки його Витривалість нижча за 0, Аякс має кровотечу, щораунду може обирати будь-які дві опції зі своєї риси "Тактична стійка", а Директор отримує 2 додаткові Злоби.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-6',
-						name: 'Is This What They Taught You?',
-						type: FactoryLogic.type.createTrigger('A creature within distance marks Ajax.'),
+						name: 'Цього тебе навчили?',
+						type: FactoryLogic.type.createTrigger('Істота в межах дистанції позначає Аякса.'),
 						keywords: [AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a тригерна дія involving their mark on Ajax, he can make a free strike against them.')
+							FactoryLogic.createAbilitySectionText('Ціль позначена, доки позначений Аякс. Поки ціль позначена таким чином, Аякс має перевагу на кидки сили проти неї, а коли ціль використовує тригерну дію, повʼязану зі своєю міткою на Аяксі, він може зробити проти неї вільний удар.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-7',
-						name: 'Shieldbreaker Talisman',
-						type: FactoryLogic.type.createTrigger('An enemy within distance uses an ability to reduce damage.'),
+						name: 'Талісман руйнівника щитів',
+						type: FactoryLogic.type.createTrigger('Ворог у межах дистанції використовує здібність, щоб зменшити шкоду.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Melee],
 						distance: [FactoryLogic.distance.createMelee(5)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax makes a free strike against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can’t be reduced in any way.')
+							FactoryLogic.createAbilitySectionText('Аякс робить вільний удар по цілі й завдає додаткової шкоди, що дорівнює подвоєній величині зменшеної шкоди. Цю додаткову шкоду не можна зменшити жодним способом.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-8',
-						name: 'Who’s Hesitating?',
-						type: FactoryLogic.type.createTrigger('A creature uses the Hesitation is Weakness ability.'),
+						name: 'Хто тут вагається?',
+						type: FactoryLogic.type.createTrigger('Істота використовує здібність «Вагання - слабкість».'),
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax shifts up to his speed and can make a free strike. If the target has <code>Р < 4</code>, this free strike also makes them weakened until the end of their next turn.')
+							FactoryLogic.createAbilitySectionText('Аякс зміщується на відстань до своєї швидкості й може зробити вільний удар. Якщо ціль має <code>Р < 4</code>, цей вільний удар також ослаблює її до кінця її наступного ходу.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-9',
-						name: 'Your Obsession With Me Betrays You',
-						type: FactoryLogic.type.createTrigger('Ajax causes a creature within distance to gain ferocity or wrath.'),
+						name: 'Твоя одержимість мною тебе видає',
+						type: FactoryLogic.type.createTrigger('Аякс змушує істоту в межах дистанції отримати Лють або Гнів.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createRanged(10)],
-						target: 'The triggering creature',
+						target: 'Істота, яка стала тригером',
 						sections: [
-							FactoryLogic.createAbilitySectionText('If the target has <code>І < 4</code>, they use a signature ability against a target of Ajax’s choice.')
+							FactoryLogic.createAbilitySectionText('Якщо ціль має <code>І < 4</code>, вона використовує сигнатурну здібність проти цілі за вибором Аякса.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-10',
-						name: 'You Would Flounder Your Assault?',
-						type: FactoryLogic.type.createTrigger('A creature within 10 squares regains Stamina.'),
+						name: 'Ти змарнуєш свій наступ?',
+						type: FactoryLogic.type.createTrigger('Істота в межах 10 клітинок відновлює Витривалість.'),
 						keywords: [AbilityKeyword.Magic, AbilityKeyword.Ranged],
 						distance: [FactoryLogic.distance.createSelf()],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax regains the same amount of Stamina.')
+							FactoryLogic.createAbilitySectionText('Аякс відновлює стільки ж Витривалості.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-11',
-						name: 'Phoenix Wing King',
+						name: 'Владика феніксових крил',
 						type: FactoryLogic.type.createVillainAction(1),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic, AbilityKeyword.Weapon],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
@@ -501,33 +501,33 @@ Until the end of the round, Ajax chooses one of the following environments he ha
 									tier3: '21 вогняної шкоди; Л < 6 ослаблений (рят. кидок закінчує)'
 								})
 							),
-							FactoryLogic.createAbilitySectionText('Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.')
+							FactoryLogic.createAbilitySectionText('Аякс летить із шаленою швидкістю, прорізаючи кожну ціль, а потім зʼявляється в незайнятій клітинці в межах дистанції.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-12',
-						name: 'I’ve Learned Their Tricks ',
+						name: 'Я вивчив їхні хитрощі',
 						type: FactoryLogic.type.createVillainAction(2),
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Ajax uses the shadow elf eclipse’s technique to reduce each target’s surges to 0. Additionally, until the end of the round, Ajax ignores edges and double edges on any target’s abilities, and ignores any nondamaging effects of any target’s damage-dealing abilities.'),
-							FactoryLogic.createAbilitySectionText('**Special:** This villain action can be replaced with a villain action from a creature any target has previously encountered.')
+							FactoryLogic.createAbilitySectionText('Аякс використовує техніку екліпса тіньових ельфів, щоб зменшити сплески кожної цілі до 0. Крім того, до кінця раунду Аякс ігнорує перевагу й подвійну перевагу на здібностях будь-якої цілі, а також ігнорує всі додаткові ефекти, що не завдають шкоди, у здібностях цілей, які завдають шкоди.'),
+							FactoryLogic.createAbilitySectionText('**Особливе:** Цю дію лиходія можна замінити дією лиходія істоти, з якою будь-яка ціль уже стикалася раніше.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'ajax-2-feature-13',
-						name: 'Awe of the Iron Crown',
+						name: 'Трепет перед Залізною Короною',
 						type: FactoryLogic.type.createVillainAction(3),
 						keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 						distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 7 })],
 						target: 'Кожен ворог у зоні',
 						sections: [
-							FactoryLogic.createAbilitySectionText('Each target who has <code>І < 5</code> is knocked prone and can’t stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.')
+							FactoryLogic.createAbilitySectionText('Кожна ціль, що має <code>І < 5</code>, стає розпластаною і не може встати, доки Аякс не завдасть їй шкоди. За кожну ціль, яка не стала розпластаною, Аякс може переміститися на відстань до своєї швидкості в її бік і використати проти неї «Клинок короля Гол».')
 						]
 					})
 				})

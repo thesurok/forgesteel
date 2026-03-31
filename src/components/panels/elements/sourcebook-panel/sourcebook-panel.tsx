@@ -254,10 +254,10 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 							sourcebook.languages.map((lang, n) => (
 								<Expander
 									key={n}
-									title={lang.name || 'Unnamed Language'}
+									title={lang.name || 'Безіменна мова'}
 									extra={[
-										<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveLanguage(n, 'up'); }} />,
-										<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveLanguage(n, 'down'); }} />,
+										<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveLanguage(n, 'up'); }} />,
+										<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveLanguage(n, 'down'); }} />,
 										<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deleteLanguage(n); }} />
 									]}
 								>
@@ -265,14 +265,14 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 										<Space.Compact style={{ width: '100%' }}>
 											<TextInput
 												status={lang.name === '' ? 'warning' : ''}
-												placeholder='Name'
+												placeholder='Назва'
 												allowClear={true}
 												value={lang.name}
 												onChange={value => setLanguageName(n, value)}
 											/>
 											<Button icon={<ThunderboltOutlined />} onClick={() => setLanguageName(n, NameGenerator.generateName())} />
 										</Space.Compact>
-										<MarkdownEditor placeholder='Description' value={lang.description} onChange={value => setLanguageDescription(n, value)} />
+										<MarkdownEditor placeholder='Опис' value={lang.description} onChange={value => setLanguageDescription(n, value)} />
 										<Segmented
 											block={true}
 											options={[LanguageType.Common, LanguageType.Regional, LanguageType.Cultural, LanguageType.Dead]}
@@ -283,7 +283,7 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 											style={{ width: '100%' }}
 											mode='multiple'
 											allowClear={true}
-											placeholder='Select related languages'
+											placeholder='Оберіть повʼязані мови'
 											options={sortedLanguages.filter(l => l.name !== lang.name).map(l => ({ label: l.name, value: l.name, desc: l.description }))}
 											optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 											value={lang.related}
@@ -311,10 +311,10 @@ export const SourcebookEditorPanel = (props: EditorProps) => {
 							sourcebook.skills.map((skill, n) => (
 								<Expander
 									key={n}
-									title={skill.name || 'Unnamed Skill'}
+									title={skill.name || 'Безіменна навичка'}
 									extra={[
-										<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSkill(n, 'up'); }} />,
-										<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSkill(n, 'down'); }} />,
+										<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSkill(n, 'up'); }} />,
+										<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSkill(n, 'down'); }} />,
 										<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deleteSkill(n); }} />
 									]}
 								>

@@ -8,6 +8,7 @@ const createClass = (subclassName: string): HeroClass => {
         name: 'Клас',
         description: '',
         type: 'standard',
+        level: 1,
         subclassName,
         subclassCount: 1,
         primaryCharacteristicsOptions: [],

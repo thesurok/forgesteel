@@ -12,33 +12,33 @@ interface Props {
 }
 
 export const MontageHeaderCard = (props: Props) => {
-	const montage = useMemo(() => props.montage, [ props.montage ]);
+	const montage = useMemo(() => props.montage, [props.montage]);
 
 	const getDifficultyTable = () => {
 		return (
 			<div className='difficulty-table'>
-				<h2>Montage Test Difficulty</h2>
+				<h2>Складність випробування монтажу</h2>
 				<table>
 					<thead>
 						<tr>
-							<th>Difficulty</th>
-							<th>Success Limit</th>
-							<th>Failure Limit</th>
+							<th>Складність</th>
+							<th>Ліміт успіху</th>
+							<th>Ліміт провалу</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Easy</td>
+							<td>Легка</td>
 							<td>5</td>
 							<td>5</td>
 						</tr>
 						<tr>
-							<td>Moderate</td>
+							<td>Стандартна</td>
 							<td>6</td>
 							<td>4</td>
 						</tr>
 						<tr>
-							<td>Hard</td>
+							<td>Важка</td>
 							<td>7</td>
 							<td>3</td>
 						</tr>
@@ -52,19 +52,19 @@ export const MontageHeaderCard = (props: Props) => {
 		return (
 			<>
 				<LabeledTextField
-					label='Success Limit'
+					label='Ліміт успіху'
 					content={montage.successLimit}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='Failure Limit'
+					label='Ліміт провалу'
 					content={montage.failureLimit}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='Difficulty'
+					label='Складність'
 					content={montage.difficulty}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 			</>
 		);
@@ -83,21 +83,21 @@ export const MontageHeaderCard = (props: Props) => {
 			<HeaderImage />
 			<section className='container overview'>
 				<LabeledTextField
-					label='Montage'
+					label='Монтаж'
 					content={montage.name}
-					additionalClasses={[ 'name', 'no-box', 'text-left' ]}
+					additionalClasses={['name', 'no-box', 'text-left']}
 				/>
 			</section>
 			<section className='container stats'>
 				<LabeledTextField
-					label='Rounds'
+					label='Раунди'
 					content='2'
-					additionalClasses={[ 'num-rounds', 'box-both', 'label-above' ]}
+					additionalClasses={['num-rounds', 'box-both', 'label-above']}
 				/>
 				<LabeledTextField
-					label='# Heroes'
+					label='К-сть героїв'
 					content={montage.numHeroes}
-					additionalClasses={[ 'box-both', 'label-above' ]}
+					additionalClasses={['box-both', 'label-above']}
 				/>
 				{getLimitsSection()}
 			</section>

@@ -18,7 +18,7 @@ interface EditProps {
 }
 
 export const EditMaliceAbility = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureMaliceAbilityData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureMaliceAbilityData>(Utils.copy(props.data));
 
 	const setEchelon = (value: number) => {
 		const copy = Utils.copy(data);
@@ -36,9 +36,9 @@ export const EditMaliceAbility = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Echelon</HeaderText>
+			<HeaderText>Ешелон</HeaderText>
 			<NumberSpin min={1} max={4} value={data.echelon} onChange={setEchelon} />
-			<Expander title={data.ability.name || 'Unnamed Ability'}>
+			<Expander title={data.ability.name || 'Безіменна здібність'}>
 				<AbilityEditPanel
 					ability={data.ability}
 					onChange={setAbility}

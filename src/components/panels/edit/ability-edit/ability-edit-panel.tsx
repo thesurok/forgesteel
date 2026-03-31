@@ -11,6 +11,7 @@ import { Empty } from '@/components/controls/empty/empty';
 import { ErrorBoundary } from '@/components/controls/error-boundary/error-boundary';
 import { Expander } from '@/components/controls/expander/expander';
 import { FactoryLogic } from '@/logic/factory-logic';
+import { Format } from '@/utils/format';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { MarkdownEditor } from '@/components/controls/markdown/markdown';
 import { MultiLine } from '@/components/controls/multi-line/multi-line';
@@ -26,6 +27,20 @@ interface Props {
 	ability: Ability;
 	onChange: (ability: Ability) => void;
 }
+
+const areaDistanceGroup = 'Область';
+const lineDistanceGroup = 'Лінія';
+const summonerDistanceGroup = 'Дальність заклинача';
+
+const distanceMainTypeOptions = [
+	'Себе',
+	'Ближній бій',
+	'Дальній',
+	areaDistanceGroup,
+	lineDistanceGroup,
+	summonerDistanceGroup,
+	'Особливе'
+];
 
 export const AbilityEditPanel = (props: Props) => {
 	const [ability, setAbility] = useState<Ability>(props.ability);
@@ -132,11 +147,11 @@ export const AbilityEditPanel = (props: Props) => {
 				case AbilityDistanceType.Burst:
 				case AbilityDistanceType.Cube:
 				case AbilityDistanceType.Wall:
-					return 'Area';
+					return areaDistanceGroup;
 				case AbilityDistanceType.Line:
-					return 'Line';
+					return lineDistanceGroup;
 				case AbilityDistanceType.Summoner:
-					return 'Summoner Range';
+					return summonerDistanceGroup;
 				case AbilityDistanceType.Special:
 					return 'Особливе';
 			}
@@ -155,13 +170,13 @@ export const AbilityEditPanel = (props: Props) => {
 				case 'Дальній':
 					copy.distance[index] = FactoryLogic.distance.createRanged(10);
 					break;
-				case 'Area':
+				case areaDistanceGroup:
 					copy.distance[index] = FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 1 });
 					break;
-				case 'Line':
+				case lineDistanceGroup:
 					copy.distance[index] = FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 1, value2: 5, within: 1 });
 					break;
-				case 'Summoner':
+				case summonerDistanceGroup:
 					copy.distance[index] = FactoryLogic.distance.createSummoner();
 					break;
 				case 'Особливе':
@@ -308,8 +323,8 @@ export const AbilityEditPanel = (props: Props) => {
 					placeholder='Keywords'
 					mode='tags'
 					allowClear={true}
-					options={AbilityLogic.getKeywords().map(option => ({ value: option }))}
-					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+					options={AbilityLogic.getKeywords().map(option => ({ value: option, label: Format.getKeywordName(option) }))}
+					optionRender={option => <div className='ds-text'>{option.data.label ?? option.data.value}</div>}
 					value={ability.keywords}
 					onChange={setKeywords}
 				/>
@@ -337,56 +352,56 @@ export const AbilityEditPanel = (props: Props) => {
 									<Select
 										style={{ width: '100%' }}
 										placeholder='Distance'
-										options={['Себе', 'Ближній бій', 'Дальній', 'Area', 'Line', 'Summoner', 'Особливе'].map(option => ({ value: option }))}
+										options={distanceMainTypeOptions.map(option => ({ value: option }))}
 										optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 										value={getDistanceMainType(n)}
 										onChange={value => setDistanceMainType(n, value)}
 									/>
 									{
-										getDistanceMainType(n) === 'Area' ?
+										getDistanceMainType(n) === areaDistanceGroup ?
 											<HeaderText>Area Type</HeaderText>
 											: null
 									}
 									{
-										getDistanceMainType(n) === 'Area' ?
+										getDistanceMainType(n) === areaDistanceGroup ?
 											<Select
 												style={{ width: '100%' }}
-												disabled={getDistanceMainType(n) !== 'Area'}
+												disabled={getDistanceMainType(n) !== areaDistanceGroup}
 												placeholder='Area type'
-												options={[AbilityDistanceType.Aura, AbilityDistanceType.Burst, AbilityDistanceType.Cube, AbilityDistanceType.Wall].map(option => ({ value: option }))}
-												optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+												options={[AbilityDistanceType.Aura, AbilityDistanceType.Burst, AbilityDistanceType.Cube, AbilityDistanceType.Wall].map(option => ({ value: option, label: Format.getDistanceTypeName(option) }))}
+												optionRender={option => <div className='ds-text'>{option.data.label ?? option.data.value}</div>}
 												value={distance.type}
 												onChange={value => setDistanceType(n, value)}
 											/>
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Особливе') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== summonerDistanceGroup) && (getDistanceMainType(n) !== 'Особливе') ?
 											<HeaderText>Value</HeaderText>
 											: null
 									}
 									{
-										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== 'Summoner Range') && (getDistanceMainType(n) !== 'Особливе') ?
+										(getDistanceMainType(n) !== 'Себе') && (getDistanceMainType(n) !== summonerDistanceGroup) && (getDistanceMainType(n) !== 'Особливе') ?
 											<NumberSpin min={1} value={distance.value} onChange={value => setDistanceValue(n, value)} />
 											: null
 									}
 									{
-										getDistanceMainType(n) === 'Line' ?
+										getDistanceMainType(n) === lineDistanceGroup ?
 											<HeaderText>Value 2</HeaderText>
 											: null
 									}
 									{
-										getDistanceMainType(n) === 'Line' ?
+										getDistanceMainType(n) === lineDistanceGroup ?
 											<NumberSpin min={1} value={distance.value2} onChange={value => setDistanceValue2(n, value)} />
 											: null
 									}
 									{
-										(getDistanceMainType(n) === 'Area') || (getDistanceMainType(n) === 'Line') ?
+										(getDistanceMainType(n) === areaDistanceGroup) || (getDistanceMainType(n) === lineDistanceGroup) ?
 											<HeaderText>Within</HeaderText>
 											: null
 									}
 									{
-										(getDistanceMainType(n) === 'Area') || (getDistanceMainType(n) === 'Line') ?
+										(getDistanceMainType(n) === areaDistanceGroup) || (getDistanceMainType(n) === lineDistanceGroup) ?
 											<NumberSpin min={1} value={distance.within} onChange={value => setDistanceWithin(n, value)} />
 											: null
 									}

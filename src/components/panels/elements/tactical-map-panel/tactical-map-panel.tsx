@@ -71,15 +71,15 @@ interface Props {
 }
 
 export const TacticalMapPanel = (props: Props) => {
-	const [ map, setMap ] = useState<TacticalMap>(Utils.copy(props.map));
-	const [ editMode, setEditMode ] = useState<TacticalMapEditMode>(TacticalMapEditMode.Map);
-	const [ editAdding, setEditAdding ] = useState<boolean>(false);
-	const [ selectionStartSquare, setSelectionStartSquare ] = useState<MapPosition | null>(null);
-	const [ selectionEndSquare, setSelectionEndSquare ] = useState<MapPosition | null>(null);
-	const [ wallStartVertex, setWallStartVertex ] = useState<MapPosition | null>(null);
-	const [ wallEndVertex, setWallEndVertex ] = useState<MapPosition | null>(null);
-	const [ selectedMapItemID, setSelectedMapItemID ] = useState<string | null>(null);
-	const [ miniSource, setMiniSource ] = useState<string | null>(() => {
+	const [map, setMap] = useState<TacticalMap>(Utils.copy(props.map));
+	const [editMode, setEditMode] = useState<TacticalMapEditMode>(TacticalMapEditMode.Map);
+	const [editAdding, setEditAdding] = useState<boolean>(false);
+	const [selectionStartSquare, setSelectionStartSquare] = useState<MapPosition | null>(null);
+	const [selectionEndSquare, setSelectionEndSquare] = useState<MapPosition | null>(null);
+	const [wallStartVertex, setWallStartVertex] = useState<MapPosition | null>(null);
+	const [wallEndVertex, setWallEndVertex] = useState<MapPosition | null>(null);
+	const [selectedMapItemID, setSelectedMapItemID] = useState<string | null>(null);
+	const [miniSource, setMiniSource] = useState<string | null>(() => {
 		if (props.encounters && props.encounters.length > 0) {
 			return props.encounters[0].id;
 		}
@@ -90,9 +90,9 @@ export const TacticalMapPanel = (props: Props) => {
 
 		return null;
 	});
-	const [ selectedMini, setSelectedMini ] = useState<{ type: 'hero' | 'monster', encounterID: string, id: string } | null>(null);
-	const [ selectedHero, setSelectedHero ] = useState<Hero | null>(null);
-	const [ selectedMonster, setSelectedMonster ] = useState<SelectedMonsterInfo | null>(null);
+	const [selectedMini, setSelectedMini] = useState<{ type: 'hero' | 'monster', encounterID: string, id: string } | null>(null);
+	const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
+	const [selectedMonster, setSelectedMonster] = useState<SelectedMonsterInfo | null>(null);
 
 	const zLevel = 0;
 	const size = props.display === 'thumbnail' ? 5 : props.options.gridSize;
@@ -241,16 +241,16 @@ export const TacticalMapPanel = (props: Props) => {
 
 		if (selectionStartSquare) {
 			if ((editMode === TacticalMapEditMode.Tiles) && editAdding) {
-				addTile([ selectionStartSquare, pos ]);
+				addTile([selectionStartSquare, pos]);
 			}
 			if ((editMode === TacticalMapEditMode.Zones) && editAdding) {
-				addZone([ selectionStartSquare, pos ]);
+				addZone([selectionStartSquare, pos]);
 			}
 			if ((editMode === TacticalMapEditMode.Minis) && editAdding) {
-				addMini([ selectionStartSquare, pos ]);
+				addMini([selectionStartSquare, pos]);
 			}
 			if (editMode === TacticalMapEditMode.Fog) {
-				toggleFog([ selectionStartSquare, pos ]);
+				toggleFog([selectionStartSquare, pos]);
 			}
 
 			setSelectionStartSquare(null);
@@ -309,7 +309,7 @@ export const TacticalMapPanel = (props: Props) => {
 				if ((wallStartVertex.x === pos.x) && (wallStartVertex.y === pos.y)) {
 					// Can't have a wall that's 0 long
 				} else {
-					addWall([ wallStartVertex, pos ]);
+					addWall([wallStartVertex, pos]);
 				}
 			}
 
@@ -1106,11 +1106,11 @@ export const TacticalMapPanel = (props: Props) => {
 				return (
 					<div className='tactical-map-toolbar bottom-toolbar'>
 						<div>
-							Select a square to place this mini
+							Оберіть клітинку, щоб розмістити цю мініатюру
 						</div>
 						<Divider orientation='vertical' />
 						<Button icon={<CloseOutlined />} onClick={() => setSelectedMini(null)}>
-							Cancel
+							Скасувати
 						</Button>
 					</div>
 				);

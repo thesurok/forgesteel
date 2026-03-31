@@ -1,5 +1,6 @@
 import { Ability, AbilitySectionField, AbilitySectionPackage, AbilitySectionRoll, AbilitySectionText } from '@/models/ability';
 import { FollowerSheet, ItemSheet, ProjectSheet } from '@/models/classic-sheets/hero-sheet';
+import { AbilityDistanceType } from '@/enums/ability-distance-type';
 import { AbilityLogic } from '@/logic/ability-logic';
 import { AbilitySheet } from '@/models/classic-sheets/ability-sheet';
 import { Characteristic } from '@/enums/characteristic';
@@ -149,7 +150,7 @@ export class SheetFormatter {
 	static shortenText = (text: string, splitAt: number = 1) => {
 		const split = text.trim().split('\n');
 		if (split.length > splitAt) {
-			text = split.slice(0, splitAt).join('\n') + '\n<p class="continued-in-reference"><em>…(continued in reference)…</em></p>';
+			text = split.slice(0, splitAt).join('\n') + '\n<p class="continued-in-reference"><em>…(продовження у довіднику)…</em></p>';
 		}
 		return this.cleanupText(text);
 	};
@@ -350,11 +351,11 @@ export class SheetFormatter {
 		if (tableAndLabel && tableAndLabel.groups) {
 			const tableContent = tableAndLabel.groups['table'].trim();
 			const firstHeaderCellMatch = tableContent.match(/(?:^\|([^|]*)\|)/m);
-			let titleLabel = 'Table';
+			let titleLabel = 'Таблиця';
 			if (tableAndLabel.groups['label']) {
 				titleLabel = tableAndLabel.groups['label'].trim();
 			} else if (firstHeaderCellMatch) {
-				titleLabel = `${firstHeaderCellMatch[1].trim()} Table`;
+				titleLabel = `${firstHeaderCellMatch[1].trim()} Таблиця`;
 			}
 			const title = `${titleLabel}`;
 			result = {
@@ -375,7 +376,7 @@ export class SheetFormatter {
 				const before = feature.description.slice(0, splitLoc).trim();
 				const ref = feature.description.slice(splitLoc).trim();
 				return {
-					title: 'Summoner Minions',
+					title: 'Міньйони призивача',
 					content: ref,
 					leftover: before,
 					wide: false,
@@ -488,9 +489,24 @@ export class SheetFormatter {
 			type = ability.actionType;
 		}
 
-		if (distance?.includes('Aura') || distance?.includes('Burst')) {
+		const burstDistanceTypes = [
+			AbilityDistanceType.Aura,
+			AbilityDistanceType.Burst,
+			Format.getDistanceTypeName(AbilityDistanceType.Aura),
+			Format.getDistanceTypeName(AbilityDistanceType.Burst)
+		];
+		const areaDistanceTypes = [
+			AbilityDistanceType.Line,
+			AbilityDistanceType.Cube,
+			AbilityDistanceType.Wall,
+			Format.getDistanceTypeName(AbilityDistanceType.Line),
+			Format.getDistanceTypeName(AbilityDistanceType.Cube),
+			Format.getDistanceTypeName(AbilityDistanceType.Wall)
+		];
+
+		if (burstDistanceTypes.some(distanceType => distance?.includes(distanceType))) {
 			abilityIcon = burstIcon;
-		} else if (distance?.includes('Line') || distance?.includes('Cube') || distance?.includes('Wall')) {
+		} else if (areaDistanceTypes.some(distanceType => distance?.includes(distanceType))) {
 			abilityIcon = areaIcon;
 		}
 
@@ -660,10 +676,10 @@ export class SheetFormatter {
 
 	static calculateFollowerSize = (follower: FollowerSheet, lineWidth: number): number => {
 		let size = 0;
-		if (follower.classification === 'Follower') {
+		if (follower.classification === Format.getFollowerClassificationName('Follower')) {
 			size = 6; // name, characteristics
-			size += this.countLines(`Skills: ${follower.skills?.join(', ')}`, lineWidth);
-			size += this.countLines(`Languages: ${follower.languages?.join(', ')}`, lineWidth);
+			size += this.countLines(`Навички: ${follower.skills?.join(', ')}`, lineWidth);
+			size += this.countLines(`Мови: ${follower.languages?.join(', ')}`, lineWidth);
 			size += 0.5;
 		} else {
 			size = 21.5; // name, stats, characteristics, stamina
@@ -719,7 +735,7 @@ export class SheetFormatter {
 	// COMPACT Ability display - e.g. for Retainers & Monsters
 	static calculateAbilityComponentSize = (ability: AbilitySheet, lineWidth: number): number => {
 		let size = 1.5; // name, usage
-		size += this.countLines(`${ability.keywords} ${ability.actionType}`, lineWidth);
+		size += this.countLines(`${ability.keywords} ${ability.actionTypeLabel ?? ability.actionType}`, lineWidth);
 		size += this.countLines(`${ability.distance} ${ability.target}`, lineWidth);
 
 		const rollLineLen = Math.ceil(lineWidth - 10); // account for icons
@@ -755,11 +771,11 @@ export class SheetFormatter {
 	static calculateProjectComponentSize = (project: ProjectSheet, lineWidth: number): number => {
 		let size = 0;
 		size += this.countLines(project.description, lineWidth, 0);
-		size += this.countLines(`Item Prerequisite ${project.prerequisites}`, lineWidth);
+		size += this.countLines(`Передумова предмета ${project.prerequisites}`, lineWidth);
 		size += 1.8; // Prerequisites box
-		size += this.countLines(`Project Source ${project.source}`, lineWidth);
+		size += this.countLines(`Джерело проєкту ${project.source}`, lineWidth);
 		size += 1.8; // Source box
-		size += this.countLines(`Project Roll Characteristic ${project.characteristic}`, lineWidth);
+		size += this.countLines(`Характеристика кидка проєкту ${project.characteristic}`, lineWidth);
 		size += 1; // points goal
 		return size;
 	};

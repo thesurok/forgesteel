@@ -31,7 +31,7 @@ interface Props {
 }
 
 export const SubclassPanel = (props: Props) => {
-	const [ page, setPage ] = useState<string>('overview');
+	const [page, setPage] = useState<string>('overview');
 
 	const getOverview = () => {
 		return (
@@ -79,13 +79,13 @@ export const SubclassPanel = (props: Props) => {
 		return (
 			<div className='subclass-abilities-list'>
 				{
-					[ 'signature', ...costs ].map(cost => {
+					['signature', ...costs].map(cost => {
 						const abilities = props.subclass.abilities.filter(a => a.cost === cost);
 						if (abilities.length === 0) {
 							return null;
 						}
 						return (
-							<Expander key={cost} title={cost === 'signature' ? 'Signature Abilities' : `${cost}pt Abilities`}>
+							<Expander key={cost} title={cost === 'signature' ? 'Фірмові здібності' : `Здібності за ${cost} оч.`}>
 								<div className='subclass-abilities-grid'>
 									{
 										abilities.map(a => (

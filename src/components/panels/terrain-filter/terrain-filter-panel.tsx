@@ -60,7 +60,7 @@ export const TerrainFilterPanel = (props: Props) => {
 					{
 						props.includeNameFilter ?
 							<TextInput
-								placeholder='Name, keywords'
+								placeholder='Назва, ключові слова'
 								allowClear={true}
 								value={props.terrainFilter.name}
 								onChange={setFilterName}
@@ -71,8 +71,8 @@ export const TerrainFilterPanel = (props: Props) => {
 						style={{ width: '100%' }}
 						mode='multiple'
 						allowClear={true}
-						placeholder='Role'
-						options={[ MonsterRoleType.Ambusher, MonsterRoleType.Artillery, MonsterRoleType.Brute, MonsterRoleType.Controller, MonsterRoleType.Defender, MonsterRoleType.Harrier, MonsterRoleType.Hexer, MonsterRoleType.Mount, MonsterRoleType.Support ].map(r => ({ label: r, value: r }))}
+						placeholder='Роль'
+						options={[MonsterRoleType.Ambusher, MonsterRoleType.Artillery, MonsterRoleType.Brute, MonsterRoleType.Controller, MonsterRoleType.Defender, MonsterRoleType.Harrier, MonsterRoleType.Hexer, MonsterRoleType.Mount, MonsterRoleType.Support].map(r => ({ label: r, value: r }))}
 						optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 						value={props.terrainFilter.roles}
 						onChange={setFilterRoles}
@@ -81,14 +81,14 @@ export const TerrainFilterPanel = (props: Props) => {
 						style={{ width: '100%' }}
 						mode='multiple'
 						allowClear={true}
-						placeholder='Terrain types'
-						options={[ TerrainRoleType.Fortification, TerrainRoleType.Hazard, TerrainRoleType.Relic, TerrainRoleType.SiegeEngine, TerrainRoleType.Trap, TerrainRoleType.Trigger ].map(r => ({ label: r, value: r }))}
+						placeholder='Типи терену'
+						options={[TerrainRoleType.Fortification, TerrainRoleType.Hazard, TerrainRoleType.Relic, TerrainRoleType.SiegeEngine, TerrainRoleType.Trap, TerrainRoleType.Trigger].map(r => ({ label: r, value: r }))}
 						optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 						showSearch={true}
 						value={props.terrainFilter.terrainRoles}
 						onChange={setFilterTerrainRoles}
 					/>
-					<Toggle label='By level' value={props.terrainFilter.level.length > 0} onChange={value => setFilterLevel(value ? [ 1, 2 ] : [])} />
+					<Toggle label='За рівнем' value={props.terrainFilter.level.length > 0} onChange={value => setFilterLevel(value ? [1, 2] : [])} />
 					{
 						props.terrainFilter.level.length > 0 ?
 							<>
@@ -99,11 +99,11 @@ export const TerrainFilterPanel = (props: Props) => {
 									value={props.terrainFilter.level}
 									onChange={setFilterLevel}
 								/>
-								<Field label='Level' value={`${Math.min(...props.terrainFilter.level)} to ${Math.max(...props.terrainFilter.level)}`} />
+								<Field label='Рівень' value={`${Math.min(...props.terrainFilter.level)} до ${Math.max(...props.terrainFilter.level)}`} />
 							</>
 							: null
 					}
-					<Toggle label='By EV' value={props.terrainFilter.ev.length > 0} onChange={value => setFilterEV(value ? [ 1, 10 ] : [])} />
+					<Toggle label='За EV' value={props.terrainFilter.ev.length > 0} onChange={value => setFilterEV(value ? [1, 10] : [])} />
 					{
 						props.terrainFilter.ev.length > 0 ?
 							<>
@@ -114,7 +114,7 @@ export const TerrainFilterPanel = (props: Props) => {
 									value={props.terrainFilter.ev}
 									onChange={setFilterEV}
 								/>
-								<Field label='EV' value={`${Math.min(...props.terrainFilter.ev)} to ${Math.max(...props.terrainFilter.ev)}`} />
+								<Field label='EV' value={`${Math.min(...props.terrainFilter.ev)} до ${Math.max(...props.terrainFilter.ev)}`} />
 							</>
 							: null
 					}

@@ -26,7 +26,7 @@ export const AncestryTraitsCard = (props: Props) => {
 		const shownIds = character.ancestryTraits?.map(f => f.id);
 		if (character.featuresReferenceOther?.find(r => (r.source === character.ancestryName) && !(shownIds?.includes(r.feature.id)))) {
 			results.push(
-				<li key='more'><em>Remaining traits in Reference…</em></li>
+				<li key='more'><em>Залишок рис у довіднику…</em></li>
 			);
 		}
 		return results;
@@ -34,7 +34,7 @@ export const AncestryTraitsCard = (props: Props) => {
 
 	return (
 		<div className='ancestry-traits card'>
-			<h2>Ancestry Traits</h2>
+			<h2>Риси предка</h2>
 			<div className='features-container'>
 				{getTraits()}
 			</div>

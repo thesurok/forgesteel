@@ -48,60 +48,60 @@ export const MontageSheetPage = (props: Props) => {
 					<MontageHeaderCard montage={montage} options={props.options} />
 
 					<div className='tests-difficulty card'>
-						<h2>Test Difficulty</h2>
+						<h2>Складність випробування</h2>
 						<div className='tests-difficulty-table'>
 							<div className='header'>
-								<div>Result</div>
-								<div>Easy Test</div>
-								<div>Medium Test</div>
-								<div>Hard Test</div>
+								<div>Результат</div>
+								<div>Легке випробування</div>
+								<div>Середнє випробування</div>
+								<div>Важке випробування</div>
 							</div>
 							<div className='result-row'>
 								<div>≤ 11</div>
-								<div>Success with consequence</div>
-								<div>Failure</div>
-								<div>Failure with consequence</div>
+								<div>Успіх з наслідком</div>
+								<div>Провал</div>
+								<div>Провал з наслідком</div>
 							</div>
 							<div className='result-row'>
 								<div>12-16</div>
-								<div>Success</div>
-								<div>Success with consequence</div>
-								<div>Failure</div>
+								<div>Успіх</div>
+								<div>Успіх з наслідком</div>
+								<div>Провал</div>
 							</div>
 							<div className='result-row'>
 								<div>17 +</div>
-								<div>Success with reward</div>
-								<div>Success</div>
-								<div>Success</div>
+								<div>Успіх з винагородою</div>
+								<div>Успіх</div>
+								<div>Успіх</div>
 							</div>
 							<div className='result-row'>
-								<div>Natural 19 or 20</div>
-								<div>Success with reward</div>
-								<div>Success with reward</div>
-								<div>Success with reward</div>
+								<div>Природні 19 або 20</div>
+								<div>Успіх з винагородою</div>
+								<div>Успіх з винагородою</div>
+								<div>Успіх з винагородою</div>
 							</div>
 						</div>
 						<div className='assist-roll'>
-							<h3>Assisting a Test</h3>
+							<h3>Допомога у випробуванні</h3>
 							<div className='power-roll'>
-								<div className='power'>Кидок Сили + Characteristic</div>
+								<div className='power'>Кидок Сили + Характеристика</div>
 								<div className='roll-tiers'>
 									<div className='tier t1'>
 										<img alt='≤ 11' className='range' src={rollT1Icon} />
 										<span className='effect'>
-											You get in the way or make things worse. The creature takes a bane on their test
+											Ви заважаєте або погіршуєте ситуацію. Істота отримує шкоду на своє випробування
 										</span>
 									</div>
 									<div className='tier t2'>
 										<img alt='12 - 16' className='range' src={rollT2Icon} />
 										<span className='effect'>
-											Your help grants the other creature an edge on their test
+											Ваша допомога дає іншій істоті перевагу на її випробування
 										</span>
 									</div>
 									<div className='tier t3'>
 										<img alt='17 +' className='range' src={rollT3Icon} />
 										<span className='effect'>
-											Your help gives the other creature a double edge on their test
+											Ваша допомога дає іншій істоті подвійну перевагу на її випробування
 										</span>
 									</div>
 								</div>

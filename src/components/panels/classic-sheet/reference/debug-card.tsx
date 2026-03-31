@@ -13,22 +13,22 @@ export const DebugCard = (props: Props) => {
 
 	return (
 		<div className='debug card'>
-			<h2>Debug</h2>
+			<h2>Налагодження</h2>
 			<div className='content'>
 				<div className='data'>
-					<label>User Agent</label>
+					<label>Агент користувача</label>
 					<div>{userAgent}</div>
 				</div>
 				<div className='data'>
-					<label>Pixel ratio</label>
+					<label>Щільність пікселів</label>
 					<div>{dpr}</div>
 				</div>
 				<div className='data'>
-					<label>Screen Size </label>
+					<label>Розмір екрана</label>
 					<div>{width} x {height}</div>
 				</div>
 				<div className='data'>
-					<label>Page Options</label>
+					<label>Параметри сторінки</label>
 					<div>{props.options.classicSheetPageSize} / {props.options.pageOrientation}</div>
 				</div>
 			</div>

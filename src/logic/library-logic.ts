@@ -451,7 +451,7 @@ export class LibraryLogic {
 
 		if (category === 'title') {
 			const title = element as Title;
-			return `Echelon ${title.echelon}`;
+			return `Ешелон ${title.echelon}`;
 		}
 
 		return null;

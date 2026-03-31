@@ -78,7 +78,7 @@ export class NegotiationLogic {
 		return '';
 	};
 
-	static getTraitName = (trait: NegotiationTrait) => {
+	static getTraitName = (trait: NegotiationTrait | string) => {
 		switch (trait) {
 			case NegotiationTrait.Benevolence:
 				return 'Милосердя';
@@ -109,7 +109,7 @@ export class NegotiationLogic {
 		return '';
 	};
 
-	static getMotivationDescription = (trait: NegotiationTrait) => {
+	static getMotivationDescription = (trait: NegotiationTrait | string) => {
 		switch (trait) {
 			case NegotiationTrait.Benevolence:
 				return 'NPC із мотивацією милосердя вірить у те, що потрібно ділитися тим, що має, з іншими. Водночас NPC, залучений до переговорів, має бути обмежений у своєму милосерді, щоб не просто віддати героям усе, що їм потрібно.';
@@ -136,9 +136,11 @@ export class NegotiationLogic {
 			case NegotiationTrait.Vengeance:
 				return 'NPC із мотивацією помсти прагне скривдити того, хто завдав йому болю. Бажання помсти може відповідати заподіяній шкоді, а може вимагати повернення болю з відсотками. Іноді таку помсту можна вгамувати лише смертю ворога, але NPC може захотіти відплатити інакше: приниженням, крахом карʼєри чи іншим, менш остаточним стражданням.';
 		}
+
+		return '';
 	};
 
-	static getPitfallDescription = (trait: NegotiationTrait) => {
+	static getPitfallDescription = (trait: NegotiationTrait | string) => {
 		switch (trait) {
 			case NegotiationTrait.Benevolence:
 				return 'NPC із вадою милосердя цинічно дивиться на світ і вважає, що жодна істота не має права ні на що лише тому, що вона жива. Думка про те, що іншим треба допомагати просто тому, що це правильно, здається йому безглуздою, дитячою або наївною - таку ідею варто висміяти або придушити.';
@@ -165,5 +167,7 @@ export class NegotiationLogic {
 			case NegotiationTrait.Vengeance:
 				return 'NPC із вадою помсти вважає, що помста нічого не вирішує. Можливо, він дійшов цього висновку з власного досвіду, а можливо, просто не має амбіцій мститися - і через це зневажливо ставиться до тих, хто має такі прагнення.';
 		}
+
+		return '';
 	};
 }

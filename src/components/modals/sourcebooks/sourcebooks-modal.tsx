@@ -28,9 +28,9 @@ interface Props {
 }
 
 export const SourcebooksModal = (props: Props) => {
-	const [ page, setPage ] = useState<SourcebookType>(SourcebookType.Official);
-	const [ homebrewSourcebooks, setHomebrewSourcebooks ] = useState<Sourcebook[]>(Utils.copy(props.homebrewSourcebooks));
-	const [ hiddenSourcebookIDs, setHiddenSourcebookIDs ] = useState<string[]>(Utils.copy(props.hiddenSourcebookIDs));
+	const [page, setPage] = useState<SourcebookType>(SourcebookType.Official);
+	const [homebrewSourcebooks, setHomebrewSourcebooks] = useState<Sourcebook[]>(Utils.copy(props.homebrewSourcebooks));
+	const [hiddenSourcebookIDs, setHiddenSourcebookIDs] = useState<string[]>(Utils.copy(props.hiddenSourcebookIDs));
 
 	const setVisibility = (sourcebook: Sourcebook, visible: boolean) => {
 		if (visible) {
@@ -60,7 +60,7 @@ export const SourcebooksModal = (props: Props) => {
 									<SelectablePanel key={s.id}>
 										<SourcebookEditorPanel
 											sourcebook={s}
-											sourcebooks={[ ...props.officialSourcebooks, ...homebrewSourcebooks ]}
+											sourcebooks={[...props.officialSourcebooks, ...homebrewSourcebooks]}
 											visible={!hiddenSourcebookIDs.includes(s.id)}
 											heroes={props.heroes}
 											onSetVisible={setVisibility}
@@ -101,7 +101,7 @@ export const SourcebooksModal = (props: Props) => {
 									<SelectablePanel key={s.id}>
 										<SourcebookEditorPanel
 											sourcebook={s}
-											sourcebooks={[ ...props.officialSourcebooks, ...homebrewSourcebooks ]}
+											sourcebooks={[...props.officialSourcebooks, ...homebrewSourcebooks]}
 											visible={!hiddenSourcebookIDs.includes(s.id)}
 											heroes={props.heroes}
 											onSetVisible={setVisibility}
@@ -142,7 +142,7 @@ export const SourcebooksModal = (props: Props) => {
 									<SelectablePanel key={s.id}>
 										<SourcebookEditorPanel
 											sourcebook={s}
-											sourcebooks={[ ...props.officialSourcebooks, ...homebrewSourcebooks ]}
+											sourcebooks={[...props.officialSourcebooks, ...homebrewSourcebooks]}
 											visible={!hiddenSourcebookIDs.includes(s.id)}
 											heroes={props.heroes}
 											onSetVisible={setVisibility}
@@ -227,7 +227,7 @@ export const SourcebooksModal = (props: Props) => {
 									<SelectablePanel key={s.id}>
 										<SourcebookEditorPanel
 											sourcebook={s}
-											sourcebooks={[ ...props.officialSourcebooks, ...homebrewSourcebooks ]}
+											sourcebooks={[...props.officialSourcebooks, ...homebrewSourcebooks]}
 											visible={!hiddenSourcebookIDs.includes(s.id)}
 											heroes={props.heroes}
 											onSetVisible={setVisibility}
@@ -256,10 +256,10 @@ export const SourcebooksModal = (props: Props) => {
 					style={{ width: '100%' }}
 					block={true}
 					options={[
-						{ value: SourcebookType.Official, label: 'Official' },
-						{ value: SourcebookType.ThirdParty, label: 'Third Party' },
-						{ value: SourcebookType.Community, label: 'Community' },
-						{ value: SourcebookType.Homebrew, label: 'Homebrew' }
+						{ value: SourcebookType.Official, label: 'Офіційні' },
+						{ value: SourcebookType.ThirdParty, label: 'Сторонні' },
+						{ value: SourcebookType.Community, label: 'Спільнота' },
+						{ value: SourcebookType.Homebrew, label: 'Домашні' }
 					]}
 					value={page}
 					onChange={setPage}

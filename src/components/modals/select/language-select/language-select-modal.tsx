@@ -44,12 +44,14 @@ export const LanguageSelectModal = (props: Props) => {
 
 							return (
 								<Space key={type} orientation='vertical' style={{ width: '100%' }}>
-									<HeaderText level={1}>{({
-										[LanguageType.Common]: 'Загальні мови',
-										[LanguageType.Cultural]: 'Культурні мови',
-										[LanguageType.Regional]: 'Регіональні мови',
-										[LanguageType.Dead]: 'Мертві мови'
-									} as Record<LanguageType, string>)[type]}</HeaderText>
+									<HeaderText level={1}>
+										{({
+											[LanguageType.Common]: 'Загальні мови',
+											[LanguageType.Cultural]: 'Культурні мови',
+											[LanguageType.Regional]: 'Регіональні мови',
+											[LanguageType.Dead]: 'Мертві мови'
+										} as Record<LanguageType, string>)[type]}
+									</HeaderText>
 									{
 										subset.map((l, n) => (
 											<SelectablePanel key={n} onSelect={() => props.onSelect(l)}>
@@ -72,7 +74,13 @@ export const LanguageSelectModal = (props: Props) => {
 								value={customLanguage}
 								onChange={setCustomLanguage}
 							/>
-							<Button block={true} disabled={!customLanguage} onClick={() => props.onSelect({ name: customLanguage, description: '', type: LanguageType.Cultural, related: [] })}>Обрати</Button>
+							<Button
+								block={true}
+								disabled={!customLanguage}
+								onClick={() => props.onSelect({ name: customLanguage, description: '', type: LanguageType.Cultural, related: [] })}
+							>
+								Обрати
+							</Button>
 						</Space>
 					</Expander>
 				</div>

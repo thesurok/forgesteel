@@ -76,9 +76,9 @@ export const DieRollPanel = (props: Props) => {
 
 		switch (rollState) {
 			case RollState.DoubleEdge:
-				return 'Move the result up one tier.';
+				return 'Підніміть результат на один рівень.';
 			case RollState.DoubleBane:
-				return 'Move the result down one tier.';
+				return 'Опустіть результат на один рівень.';
 		}
 
 		return null;
@@ -130,20 +130,20 @@ export const DieRollPanel = (props: Props) => {
 									props.onRollStateChange(rs);
 								}}
 							/>
-							<Button title='Odds' icon={<BarChartOutlined />} onClick={() => setShowOdds(true)} />
+							<Button title='Шанси' icon={<BarChartOutlined />} onClick={() => setShowOdds(true)} />
 						</Flex>
 						: null
 				}
 				<Button type='primary' block={true} onClick={roll}>
-					{(props.type === 'Кидок Сили') ? 'Roll 2d10' : 'Roll 1d10'}
+					{(props.type === 'Кидок Сили') ? 'Кинути 2d10' : 'Кинути 1d10'}
 				</Button>
 				{
 					results.length > 0 ?
 						<div className='result-row'>
 							{(props.type === 'Кидок Сили') ? results.map((r, n) => <Statistic key={n} title='d10' value={r} />) : null}
-							{(props.type === 'Кидок Сили') ? props.modifiers.filter(m => m !== 0).map((m, n) => <Statistic key={n} title='Modifier' value={`${m >= 0 ? '+' : ''}${m}`} />) : null}
-							{(props.type === 'Кидок Сили') && bonus ? <Statistic title={bonus > 0 ? 'Edge' : 'Bane'} value={`${bonus >= 0 ? '+' : ''}${bonus}`} /> : null}
-							<Statistic className='total' title='Total' value={total} />
+							{(props.type === 'Кидок Сили') ? props.modifiers.filter(m => m !== 0).map((m, n) => <Statistic key={n} title='Модифікатор' value={`${m >= 0 ? '+' : ''}${m}`} />) : null}
+							{(props.type === 'Кидок Сили') && bonus ? <Statistic title={bonus > 0 ? 'Перевага' : 'Шкода'} value={`${bonus >= 0 ? '+' : ''}${bonus}`} /> : null}
+							<Statistic className='total' title='Усього' value={total} />
 						</div>
 						: null
 				}
@@ -178,7 +178,7 @@ export const DieRollPanel = (props: Props) => {
 						<Alert
 							type='success'
 							showIcon={true}
-							title='Critical hit!'
+							title='Критичне влучання!'
 						/>
 						: null
 				}
@@ -187,7 +187,7 @@ export const DieRollPanel = (props: Props) => {
 						<Alert
 							type='info'
 							showIcon={true}
-							title={`This roll would usually indicate a ${total >= (props.hero ? HeroLogic.getSaveThreshold(props.hero) : 6) ? 'success' : 'failure'}.`}
+							title={`Цей кидок зазвичай означав би ${total >= (props.hero ? HeroLogic.getSaveThreshold(props.hero) : 6) ? 'успіх' : 'невдачу'}.`}
 						/>
 						: null
 				}
@@ -196,7 +196,7 @@ export const DieRollPanel = (props: Props) => {
 				<Modal
 					content={
 						<div style={{ padding: '0 20px 20px 20px' }}>
-							<HeaderText>Odds</HeaderText>
+							<HeaderText>Шанси</HeaderText>
 							<div className='ds-text'>
 								{
 									[
@@ -215,7 +215,7 @@ export const DieRollPanel = (props: Props) => {
 								getLabel={x => {
 									switch (x) {
 										case 4:
-											return 'Crit';
+											return 'Крит';
 										default:
 											return `Tier ${x}`;
 									}

@@ -84,18 +84,18 @@ export class AbilityLogic {
 	static getDistance = (distance: AbilityDistance, ability?: Ability, hero?: Hero) => {
 		if (distance.type === AbilityDistanceType.Self) {
 			if (distance.qualifier) {
-				return `Self (${distance.qualifier})`;
+				return `${Format.getDistanceTypeName(distance.type)} (${distance.qualifier})`;
 			} else {
-				return 'Себе';
+				return Format.getDistanceTypeName(distance.type);
 			}
 		}
 
 		if (distance.type === AbilityDistanceType.Summoner) {
 			if (hero) {
-				return `Summoner Range (${5 + HeroLogic.getCharacteristic(hero, Characteristic.Reason)})`;
+				return `${Format.getDistanceTypeName(distance.type)} (${5 + HeroLogic.getCharacteristic(hero, Characteristic.Reason)})`;
 			}
 
-			return 'Summoner Range';
+			return Format.getDistanceTypeName(distance.type);
 		}
 
 		if (distance.type === AbilityDistanceType.Special) {
@@ -121,24 +121,25 @@ export class AbilityLogic {
 		}
 
 		const sections: string[] = [];
+		const distanceTypeName = Format.getDistanceTypeName(distance.type);
 		switch (distance.type) {
 			case AbilityDistanceType.Melee:
 			case AbilityDistanceType.Ranged:
-				sections.push(`${distance.type} ${distance.value + bonus}`);
+				sections.push(`${distanceTypeName} ${distance.value + bonus}`);
 				break;
 			case AbilityDistanceType.Line:
-				sections.push(`${Math.max(distance.value, distance.value2)} x ${Math.min(distance.value, distance.value2)} ${distance.type}`);
+				sections.push(`${Math.max(distance.value, distance.value2)} x ${Math.min(distance.value, distance.value2)} ${distanceTypeName}`);
 				break;
 			case AbilityDistanceType.Burst:
 			case AbilityDistanceType.Cube:
-				sections.push(`${distance.value} ${distance.type}`);
+				sections.push(`${distance.value} ${distanceTypeName}`);
 				break;
 			default:
-				sections.push(`${distance.type} ${distance.value}`);
+				sections.push(`${distanceTypeName} ${distance.value}`);
 				break;
 		}
 		if (distance.within > 0) {
-			sections.push(`within ${distance.within + bonus}`);
+			sections.push(`в межах ${distance.within + bonus}`);
 		}
 		if (distance.qualifier) {
 			sections.push(`(${distance.qualifier})`);

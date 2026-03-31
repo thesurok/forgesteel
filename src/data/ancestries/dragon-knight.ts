@@ -228,7 +228,7 @@ export const dragonKnight: Ancestry = {
 				{
 					feature: FactoryLogic.feature.createMultiple({
 						id: 'dragon-knight-feature-2-11',
-						name: 'Wings',
+						name: 'Крила',
 						features: [
 							FactoryLogic.feature.create({
 								id: 'dragon-knight-feature-2-11a',

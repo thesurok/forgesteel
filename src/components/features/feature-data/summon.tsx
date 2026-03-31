@@ -49,7 +49,7 @@ interface EditProps {
 }
 
 export const EditSummon = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureSummonData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureSummonData>(Utils.copy(props.data));
 
 	const addSummon = (data: FeatureSummonData) => {
 		const copy = Utils.copy(data);
@@ -129,23 +129,23 @@ export const EditSummon = (props: EditProps) => {
 					<Button type='text' icon={<PlusOutlined />} onClick={() => addSummon(data)} />
 				}
 			>
-				Options
+				Варіанти
 			</HeaderText>
 			{
 				data.summons.map((summon, n) => (
 					<Expander
 						key={summon.monster.id}
-						title={summon.monster.name || 'Unnamed Monster'}
+						title={summon.monster.name || 'Безіменне чудовисько'}
 						extra={[
-							<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSummon(data, n, 'up'); }} />,
-							<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSummon(data, n, 'down'); }} />,
+							<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSummon(data, n, 'up'); }} />,
+							<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSummon(data, n, 'down'); }} />,
 							<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deleteSummon(data, n); }} />
 						]}
 					>
-						<HeaderText>Summoning</HeaderText>
-						<Toggle label='Is signature' value={summon.info.isSignature} onChange={value => setSummonIsSignature(data, n, value)} />
-						<NumberSpin min={1} label='Cost' value={summon.info.cost} onChange={value => setSummonCost(data, n, value)} />
-						<NumberSpin min={1} label='Count' value={summon.info.count} onChange={value => setSummonCount(data, n, value)} />
+						<HeaderText>Прикликання</HeaderText>
+						<Toggle label='Фірмова' value={summon.info.isSignature} onChange={value => setSummonIsSignature(data, n, value)} />
+						<NumberSpin min={1} label='Вартість' value={summon.info.cost} onChange={value => setSummonCost(data, n, value)} />
+						<NumberSpin min={1} label='Кількість' value={summon.info.count} onChange={value => setSummonCount(data, n, value)} />
 						<MonsterEditPanel
 							monster={summon.monster}
 							sourcebooks={props.sourcebooks}

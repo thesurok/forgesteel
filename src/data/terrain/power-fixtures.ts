@@ -6,9 +6,9 @@ import { TerrainRoleType } from '@/enums/terrain-role-type';
 
 export const holyIdol: Terrain = {
 	id: 'holy-idol',
-	name: 'Holy Idol',
+	name: 'Святий ідол',
 	description:
-		'An empowering monument to a higher power enables a villain’s machinations.',
+		'Монумент вищій силі, наділений могутністю, сприяє підступам лиходія.',
 	category: TerrainCategory.PowerFixture,
 	level: 5,
 	role: FactoryLogic.createTerrainRole(
@@ -31,8 +31,8 @@ export const holyIdol: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'deactivate',
-					name: 'Deactivate',
-					description: 'The holy idol must be completely destroyed.'
+					name: 'Деактивація',
+					description: 'Святий ідол потрібно повністю знищити.'
 				})
 			]
 		},
@@ -41,8 +41,8 @@ export const holyIdol: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'empowered-will',
-					name: 'Empowered Will',
-					description: 'At the start of each round while the holy idol is intact, the Director gains a d6 that lasts until the end of the round. When a Director-controlled creature deals or takes damage, the Director can roll the d6 to increase the damage the creature deals or reduce the damage the creature takes by an amount equal to the roll (to a minimum of 2 damage). If multiple idols are in play, only one d6 can be applied to a single instance of damage.'
+					name: 'Наділена воля',
+					description: 'На початку кожного раунду, поки святий ідол неушкоджений, Директор отримує d6, який діє до кінця раунду. Коли істота під контролем Директора завдає або отримує шкоду, Директор може кинути цей d6, щоб збільшити шкоду, яку істота завдає, або зменшити шкоду, яку вона отримує, на значення кидка, але не нижче 2 шкоди. Якщо в грі є кілька ідолів, до одного окремого випадку шкоди можна застосувати лише один d6.'
 				})
 			]
 		}
@@ -56,8 +56,8 @@ export const holyIdol: Terrain = {
 
 export const psionicShard: Terrain = {
 	id: 'psionic-shard',
-	name: 'Psionic Shard',
-	description: 'A massive humming crystal makes the air around it feel thick.',
+	name: 'Псіонічний уламок',
+	description: 'Величезний дзижчачий кристал робить повітря навколо важким.',
 	category: TerrainCategory.PowerFixture,
 	level: 5,
 	role: FactoryLogic.createTerrainRole(
@@ -80,21 +80,21 @@ export const psionicShard: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'deactivate',
-					name: 'Deactivate',
-					description: 'The psionic shard must be completely destroyed.'
+					name: 'Деактивація',
+					description: 'Псіонічний уламок потрібно повністю знищити.'
 				}),
 				FactoryLogic.feature.create({
 					id: 'psionic-barrier',
-					name: 'Psionic Barrier',
-					description: 'A psionic shard is attuned to one side in an encounter. While a psionic shard is intact, any damage dealt to each ally of the shard in the encounter is halved.'
+					name: 'Псіонічний барʼєр',
+					description: 'Псіонічний уламок у сутичці налаштований на один бік. Поки він неушкоджений, уся шкода, завдана кожному його союзнику в сутичці, зменшується вдвічі.'
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'psionic-pulse',
-						name: 'Psionic Pulse',
-						type: FactoryLogic.type.createTrigger('The shard is destroyed', { free: true }),
+						name: 'Псіонічний імпульс',
+						type: FactoryLogic.type.createTrigger('Уламок знищено', { free: true }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('Уламок вивільняє ударну хвилю, спрямовану крізь кожну істоту, на яку впливає Psionic Barrier. Кожен союзник у сутичці приголомшений до кінця свого наступного ходу.')
+							FactoryLogic.createAbilitySectionText('Уламок вивільняє ударну хвилю, спрямовану крізь кожну істоту, на яку впливає **Псіонічний барʼєр**. Кожен союзник у сутичці приголомшений до кінця свого наступного ходу.')
 						]
 					})
 				})
@@ -110,8 +110,8 @@ export const psionicShard: Terrain = {
 
 export const treeOfMight: Terrain = {
 	id: 'terrain-tree-of-might',
-	name: 'Tree of Might',
-	description: 'A gnarled tree with unearthed roots that writhe and curl.',
+	name: 'Дерево могутності',
+	description: 'Покручене дерево з оголеним корінням, що звивається й скручується.',
 	category: TerrainCategory.PowerFixture,
 	level: 5,
 	role: FactoryLogic.createTerrainRole(
@@ -134,8 +134,8 @@ export const treeOfMight: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'damage-immunity',
-					name: 'Damage Immunity',
-					description: '5 to all damage except corruption or fire damage'
+					name: 'Імунітет до шкоди',
+					description: '5 до всієї шкоди, крім скверни або вогню'
 				})
 			]
 		},
@@ -144,8 +144,8 @@ export const treeOfMight: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'deactivate',
-					name: 'deactivate',
-					description: 'The tree of might must be completely destroyed.'
+					name: 'Деактивація',
+					description: 'Дерево могутності потрібно повністю знищити.'
 				})
 			]
 		},
@@ -154,9 +154,9 @@ export const treeOfMight: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'trees-nourishment',
-					name: 'Tree\'s Nourishment',
+					name: 'Живлення дерева',
 					description:
-						'At the start of each round while the tree of might is intact, each enemy touching the ground in the encounter area who has **С<0** takes 10 corruption damage, and the tree of might grows a fruit. The potency increases by 1 each subsequent round.'
+						'На початку кожного раунду, поки дерево могутності неушкоджене, кожен ворог у зоні сутички, який торкається землі й має **С < 0**, отримує 10 шкоди скверною, а на дереві виростає плід. Потужність плодів зростає на 1 з кожним наступним раундом.'
 				})
 			]
 		},
@@ -165,9 +165,9 @@ export const treeOfMight: Terrain = {
 			content: [
 				FactoryLogic.feature.create({
 					id: 'mighty-fruit',
-					name: 'Mighty Fruit',
+					name: 'Плід могутності',
 					description:
-						'Раз за раунд будь-яка істота поруч із деревом могутності може зірвати з нього плід і з’їсти його (без дії). Істота отримує 10 тимчасової витривалості, а її показник Могутності зростає на 1 (до максимуму 6) до кінця сутички.'
+						'Раз за раунд будь-яка істота поруч із деревом могутності може зірвати з нього плід і зʼїсти його без дії. Істота отримує 10 тимчасової витривалості, а її показник Могутності зростає на 1, до максимуму 6, до кінця сутички.'
 				})
 			]
 		}

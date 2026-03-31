@@ -2,7 +2,7 @@ import { Hero } from '@/models/hero';
 
 export const orcConduit = {
 	id: 'peDWE02tDZH9CK2P',
-	name: 'Khettovek',
+	name: 'Хеттовек',
 	picture: null,
 	folder: '',
 	settingIDs: [
@@ -11,19 +11,19 @@ export const orcConduit = {
 	],
 	ancestry: {
 		id: 'ancestry-orc',
-		name: 'Orc',
-		description: 'An anger that cannot be hidden. A fury that drives them in battle. Orcs are famed throughout the world as consummate warriors - a reputation that the peace-loving orcs find distasteful.',
+		name: 'Орк',
+		description: 'Гнів, який неможливо приховати. Лють, яка веде їх у битві. Орки відомі у всьому світі як досконалі воїни — репутація, яку миролюбні орки вважають неприємною.',
 		features: [
 			{
 				id: 'orc-feature-1',
-				name: 'Relentless',
-				description: 'Whenever a creature deals damage to you that leaves you dying, you can make a free strike against any creature. If the creature is reduced to 0 Stamina by your strike, you can spend a Recovery.',
+				name: 'Невблаганний',
+				description: 'Коли істота завдає вам шкоди, яка залишає вас вмираючим, ви можете зробити безкоштовний удар проти будь-якої істоти. Якщо істота зменшує свою Витривалість до 0 вашим ударом, ви можете витратити Відновлення.',
 				type: 'Текст',
 				data: null
 			},
 			{
 				id: 'orc-feature-2',
-				name: 'Orc Traits',
+				name: 'Риси орка',
 				description: '',
 				type: 'Вибір',
 				data: {
@@ -31,8 +31,8 @@ export const orcConduit = {
 						{
 							feature: {
 								id: 'orc-feature-2-1',
-								name: 'Bloodfire Rush',
-								description: 'The magic coursing through your veins makes you run faster in the heat of battle. The first time in any combat round that you take damage, you gain a +2 bonus to speed until the end of the round.',
+								name: 'Кров’яний порив',
+								description: 'Магія, що тече у ваших жилах, змушує вас бігти швидше в розпалі бою. Перший раз у будь-якому раунді бою, коли ви отримуєте шкоду, ви отримуєте бонус +2 до швидкості до кінця раунду.',
 								type: 'Текст',
 								data: null
 							},
@@ -41,8 +41,8 @@ export const orcConduit = {
 						{
 							feature: {
 								id: 'orc-feature-2-2',
-								name: 'Grounded',
-								description: 'The magic in your blood makes it difficult for others to move you.',
+								name: 'Заземлений',
+								description: 'Магія у вашій крові ускладнює іншим переміщення вас.',
 								type: 'Бонус',
 								data: {
 									field: 'Непорушність',
@@ -58,8 +58,8 @@ export const orcConduit = {
 						{
 							feature: {
 								id: 'orc-feature-2-3',
-								name: 'Passionate Artisan',
-								description: 'When you are stirred by passion for creation, your bloodfire allows you to work longer and harder. When you gain your initial skills from your career, culture, class, or other source, choose two skills from the crafting skill group, whether you have those skills or not. Whenever you make a project roll for a crafting project that uses these skills, you gain a +2 bonus to the roll.',
+								name: 'Пристрасний ремісник',
+								description: 'Коли вас охоплює пристрасть до створення, ваша кров’яна магія дозволяє вам працювати довше й наполегливіше. Коли ви отримуєте свої початкові навички від вашої кар’єри, культури, класу чи іншого джерела, виберіть дві навички з групи навичок ремесла, незалежно від того, чи маєте ви ці навички. Коли ви робите кидок проєкту для ремісничого проєкту, який використовує ці навички, ви отримуєте бонус +2 до кидка.',
 								type: 'Текст',
 								data: null
 							},
@@ -68,8 +68,8 @@ export const orcConduit = {
 						{
 							feature: {
 								id: 'orc-feature-2-4',
-								name: 'Glowing Recovery',
-								description: 'Your bloodfire allows you to regain your strength quicker than others. Whenever you use the Catch Breath маневр, you can spend as many Recoveries as you like.',
+								name: 'Сяюче відновлення',
+								description: 'Ваша кров’яна магія дозволяє вам відновлювати сили швидше за інших. Коли ви використовуєте маневр Затримати подих, ви можете витратити стільки Відновлень, скільки захочете.',
 								type: 'Текст',
 								data: null
 							},
@@ -78,8 +78,8 @@ export const orcConduit = {
 						{
 							feature: {
 								id: 'orc-feature-2-5',
-								name: 'Nonstop',
-								description: 'Your bloodfire supplies you with a constant rush of adrenaline.',
+								name: 'Безперервність',
+								description: 'Ваша кров’яна магія забезпечує вас постійним припливом адреналіну.',
 								type: 'Імунітет до станів',
 								data: {
 									conditions: [
@@ -94,8 +94,8 @@ export const orcConduit = {
 					selected: [
 						{
 							id: 'orc-feature-2-5',
-							name: 'Nonstop',
-							description: 'Your bloodfire supplies you with a constant rush of adrenaline.',
+							name: 'Безперервність',
+							description: 'Ваша кров’яна магія забезпечує вас постійним припливом адреналіну.',
 							type: 'Імунітет до станів',
 							data: {
 								conditions: [
@@ -105,8 +105,8 @@ export const orcConduit = {
 						},
 						{
 							id: 'orc-feature-2-2',
-							name: 'Grounded',
-							description: 'The magic in your blood makes it difficult for others to move you.',
+							name: 'Заземлений',
+							description: 'Магія у вашій крові ускладнює іншим переміщення вас.',
 							type: 'Бонус',
 							data: {
 								field: 'Непорушність',
@@ -125,8 +125,8 @@ export const orcConduit = {
 	},
 	culture: {
 		id: 'culture-bespoke-culture',
-		name: 'Bespoke Culture',
-		description: 'Choose any Environment, Organization, and Upbringing.',
+		name: 'Авторська культура',
+		description: 'Оберіть будь-які середовище, організацію та виховання.',
 		type: 'Авторська',
 		language: {
 			id: 'culture-language',
@@ -142,8 +142,8 @@ export const orcConduit = {
 		languages: [],
 		environment: {
 			id: 'env-wilderness',
-			name: 'Wilderness',
-			description: 'A wilderness culture doesn’t try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of orc mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.',
+			name: 'Дика місцевість',
+			description: 'Культура дикої місцевості не намагається підкорити природу, в якій живе — це може бути пустеля, ліс, болото, тундра, океан чи інші екзотичні місця. Люди такої культури процвітають серед природи, отримуючи їжу й притулок від землі. Це може бути коло друїдів, що охороняють віддалений гай, банда розбійників у печерах пустелі чи табір орків-найманців у горах. Люди дикої культури вчаться використовувати землю для всього необхідного, зазвичай виготовляючи власні інструменти, одяг тощо.',
 			type: 'Вибір навички',
 			data: {
 				options: [],
@@ -159,8 +159,8 @@ export const orcConduit = {
 		},
 		organization: {
 			id: 'org-communal',
-			name: 'Communal',
-			description: 'A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures. Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.',
+			name: 'Комунальна',
+			description: 'Комунальна культура — це місце, де всі члени спільноти вважаються рівними. Громада разом приймає важливі рішення, що впливають на більшість, і обирає лідерів для організації спільних зусиль. Кожен має відносно рівне право голосу, і всі допомагають громаді виживати й процвітати. Люди часто ділять між собою тягарі управління, фізичної праці, догляду за дітьми та інші обов’язки. Колектив фермерів, що разом обробляють землю без пана, місто піратів, де кожен робить, що хоче, або мандрівна театральна трупа, де всі голосують щодо рішень — це приклади комунальних культур. Багато таких культур існують поза межами поселень: у дикій природі, окремих районах міст, каналізаціях, руїнах чи інших ізольованих місцях. Навіть якщо ці культури безпечні, їхні члени знають, що чужинці можуть спробувати нав’язати їм свої правила, тому вони прагнуть захищати себе й уникати небезпеки від інших груп.',
 			type: 'Вибір навички',
 			data: {
 				options: [],
@@ -176,8 +176,8 @@ export const orcConduit = {
 		},
 		upbringing: {
 			id: 'up-creative',
-			name: 'Creative',
-			description: 'A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.',
+			name: 'Творча',
+			description: 'Герой із творчим вихованням виріс серед людей, які створюють мистецтво чи інші цінні для обміну речі. Творча культура може виробляти витончене мистецтво — танець, музику, скульптуру — або практичні речі: вози, зброю, інструменти, будівлі. Люди в таких культурах цінують якісну майстерність і увагу до деталей.',
 			type: 'Вибір навички',
 			data: {
 				options: [
@@ -196,18 +196,18 @@ export const orcConduit = {
 	},
 	class: {
 		id: 'class-conduit',
-		name: 'Conduit',
-		description: '\nThe power of the gods flows through you! As a vessel for divine power, you don’t just keep your allies in the fight. You make those allies more effective, even as you rain divine energy down upon your foes. Though the deity or saint you serve might have other faithful and clergy, you are special among worshippers, receiving your abilities from the highest source.\n\nAs a conduit, you heal and buff your allies, and debuff your foes while smiting them with divine magic. The spark of divinity within you shines, filling your enemies with awe and making you more worldly and aware.',
+		name: 'Провідник',
+		description: '\nСила богів тече через вас! Як посудина божественної сили, ви не просто підтримуєте союзників у бою. Ви робите їх ефективнішими, одночасно посилаючи божественну енергію на ворогів. Хоч божество або святий, якому ви служите, може мати інших вірних і кліриків, ви особливі серед поклонників і отримуєте здібності від найвищого джерела.\n\nЯк провідник, ви зціляєте й підсилюєте союзників і послаблюєте ворогів, караючи їх божественною магією. Іскра божественності в вас сяє, наповнюючи ворогів благоговінням та роблячи вас уважнішим і обізнанішим.',
 		type: 'standard',
 		subclassName: '',
 		subclassCount: 0,
 		primaryCharacteristicsOptions: [
 			[
-				'Intuition'
+				'Інтуїція'
 			]
 		],
 		primaryCharacteristics: [
-			'Intuition'
+			'Інтуїція'
 		],
 		featuresByLevel: [
 			{
@@ -229,11 +229,11 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-recoveries',
-						name: 'Recoveries',
+						name: 'Відновлення',
 						description: '',
 						type: 'Бонус',
 						data: {
-							field: 'Recoveries',
+							field: 'Відновлення',
 							value: 8,
 							valueCharacteristics: [],
 							valueCharacteristicMultiplier: 1,
@@ -243,7 +243,7 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-resource',
-						name: 'Piety',
+						name: 'Благочестя',
 						description: '',
 						type: 'Героїчний ресурс',
 						data: {
@@ -251,7 +251,7 @@ export const orcConduit = {
 							gains: [
 								{
 									tag: 'start',
-									trigger: 'Start of your turn',
+									trigger: 'Початок вашого ходу',
 									value: '1d3'
 								}
 							],
@@ -262,7 +262,7 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-1-1',
-						name: 'Interpersonal / Lore Skills',
+						name: 'Навички: Міжособистісні / Знання',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -280,7 +280,7 @@ export const orcConduit = {
 					},
 					{
 						id: 'conduit-1-2',
-						name: 'Domain',
+						name: 'Домен',
 						description: '',
 						type: 'Домен',
 						data: {
@@ -3843,4 +3843,4 @@ export const orcConduit = {
 		defeated: false
 	},
 	abilityCustomizations: []
-} as Hero;
+} as unknown as Hero;

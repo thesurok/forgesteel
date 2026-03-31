@@ -62,16 +62,16 @@ interface Props {
 
 export const EncounterRunPanel = (props: Props) => {
 	const isSmall = useIsSmall();
-	const [ encounter, setEncounter ] = useState<Encounter>(Utils.copy(props.encounter));
-	const [ tab, setTab ] = useState<string>('combatants');
-	const [ showSidebar, setShowSidebar ] = useState<boolean>(true);
-	const [ addingHeroes, setAddingHeroes ] = useState<boolean>(false);
-	const [ addingMonsters, setAddingMonsters ] = useState<boolean>(false);
-	const [ selectingGroup, setSelectingGroup ] = useState<boolean>(false);
-	const [ selectedMonster, setSelectedMonster ] = useState<SelectedMonsterInfo | null>(null);
-	const [ selectedHero, setSelectedHero ] = useState<Hero | null>(null);
-	const [ selectedTerrain, setSelectedTerrain ] = useState<Terrain | null>(null);
-	const [ selectedMinionSlot, setSelectedMinionSlot ] = useState<EncounterSlot | null>(null);
+	const [encounter, setEncounter] = useState<Encounter>(Utils.copy(props.encounter));
+	const [tab, setTab] = useState<string>('combatants');
+	const [showSidebar, setShowSidebar] = useState<boolean>(true);
+	const [addingHeroes, setAddingHeroes] = useState<boolean>(false);
+	const [addingMonsters, setAddingMonsters] = useState<boolean>(false);
+	const [selectingGroup, setSelectingGroup] = useState<boolean>(false);
+	const [selectedMonster, setSelectedMonster] = useState<SelectedMonsterInfo | null>(null);
+	const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
+	const [selectedTerrain, setSelectedTerrain] = useState<Terrain | null>(null);
+	const [selectedMinionSlot, setSelectedMinionSlot] = useState<EncounterSlot | null>(null);
 
 	const setRound = (value: number) => {
 		const copy = Utils.copy(encounter);
@@ -350,7 +350,7 @@ export const EncounterRunPanel = (props: Props) => {
 			);
 		};
 
-		const sections = [ 'current', 'ready', 'finished' ];
+		const sections = ['current', 'ready', 'finished'];
 		if (props.options.showDefeatedCombatants) {
 			sections.push('defeated');
 		}
@@ -364,16 +364,16 @@ export const EncounterRunPanel = (props: Props) => {
 						let heading = '';
 						switch (section) {
 							case 'current':
-								heading = 'Acting Now';
+								heading = 'Зараз діє';
 								break;
 							case 'ready':
-								heading = 'Ready To Act';
+								heading = 'Готові діяти';
 								break;
 							case 'finished':
-								heading = 'Finished';
+								heading = 'Завершили хід';
 								break;
 							case 'defeated':
-								heading = 'Defeated';
+								heading = 'Переможені';
 								break;
 						}
 

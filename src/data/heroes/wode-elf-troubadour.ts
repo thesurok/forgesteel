@@ -2,7 +2,7 @@ import { Hero } from '@/models/hero';
 
 export const wodeElfTroubadour = {
 	id: 'HVPFufs9Uv4PWrKi',
-	name: 'Lliarion',
+	name: 'Лліаріон',
 	picture: null,
 	folder: '',
 	settingIDs: [
@@ -11,19 +11,19 @@ export const wodeElfTroubadour = {
 	],
 	ancestry: {
 		id: 'ancestry-wode-elf',
-		name: 'Elf (wode)',
-		description: 'Children of the sylvan celestials and masters of the elf-haunted forests called wodes, wode elves see all forests as their domain by birthright. They know and enjoy their reputation among humans for snatching children who wander too far into the woods. Humans should fear the trees.',
+		name: 'Ельф (вуд)',
+		description: 'Діти лісових небожителів і господарі лісів, які називаються вудами, вудські ельфи вважають усі ліси своєю спадщиною. Вони знають і насолоджуються своєю репутацією серед людей за викрадення дітей, які заходять занадто далеко в ліс. Люди повинні боятися дерев.',
 		features: [
 			{
 				id: 'wode-elf-feature-1',
-				name: 'Wode Elf Glamor',
-				description: 'You can magically alter your appearance to better blend in with your surroundings. You gain an edge on tests made to hide and sneak, and tests made to search for you while you are hidden take a bane.',
+				name: 'Вудська ельфійська чарівність',
+				description: 'Ви можете магічно змінювати свою зовнішність, щоб краще зливатися з оточенням. Ви отримуєте перевагу на випробуваннях, зроблених для приховування та крадіжки, а випробування, зроблені для пошуку вас, поки ви приховані, отримують шкоду.',
 				type: 'Текст',
 				data: null
 			},
 			{
 				id: 'wode-elf-feature-2',
-				name: 'Wode Elf Traits',
+				name: 'Риси вудського ельфа',
 				description: '',
 				type: 'Вибір',
 				data: {
@@ -31,8 +31,8 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-1',
-								name: 'Forest Walk',
-								description: 'You can shift into and while within difficult terrain.',
+								name: 'Лісова хода',
+								description: 'Ви можете зміщуватися в і під час перебування в складній місцевості.',
 								type: 'Текст',
 								data: null
 							},
@@ -41,8 +41,8 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-2',
-								name: 'Revisit Memory',
-								description: 'Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.',
+								name: 'Повернення до спогадів',
+								description: 'Доступ до спогадів для вас такий же легкий, як і життя в теперішньому. Ви отримуєте перевагу на випробуваннях, зроблених для згадування знань.',
 								type: 'Текст',
 								data: null
 							},
@@ -51,7 +51,7 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-3',
-								name: 'Swift',
+								name: 'Швидкий',
 								description: '',
 								type: 'Швидкість',
 								data: {
@@ -63,8 +63,8 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-4',
-								name: 'Otherworldly Grace',
-								description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+								name: 'Іншосвітова грація',
+								description: 'Ваше ельфійське тіло та розум не можуть бути стримані надовго. Коли ви робите рятувальний кидок, ви успішно проходите на результаті 5 або вище.',
 								type: 'Текст',
 								data: null
 							},
@@ -73,14 +73,14 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-5',
-								name: 'The Wode Defends',
-								description: 'Thorny vines erupt into existence and attempt to bind your foe.',
+								name: 'Вуд захищається',
+								description: 'Колючі лози зʼявляються і намагаються звʼязати вашого ворога.',
 								type: 'Здібність',
 								data: {
 									ability: {
 										id: 'wode-elf-feature-2-5',
-										name: 'The Wode Defends',
-										description: 'Thorny vines erupt into existence and attempt to bind your foe.',
+										name: 'Вуд захищається',
+										description: 'Колючі лози зʼявляються і намагаються звʼязати вашого ворога.',
 										type: {
 											usage: 'Основна дія',
 											free: false,
@@ -113,13 +113,13 @@ export const wodeElfTroubadour = {
 												type: 'roll',
 												roll: {
 													characteristic: [
-														'Might',
+														'Сила',
 														'Ловкість'
 													],
 													bonus: 0,
-													tier1: '2 + С або Л шкоди; Л < [слабкий], сповільнений (рят. кидок завершує)',
-													tier2: '3 + С або Л шкоди; Л < [середній], сповільнений (рят. кидок завершує)',
-													tier3: '5 + С або Л шкоди; Л < [сильний], скутий (рят. кидок завершує)'
+													tier1: '2 + С або Л шкоди; Л < [слабкий], уповільнений (рят. кидок закінчує)',
+													tier2: '3 + С або Л шкоди; Л < [середній], уповільнений (рят. кидок закінчує)',
+													tier3: '5 + С або Л шкоди; Л < [сильний], сковування (рят. кидок закінчує)'
 												}
 											}
 										],
@@ -139,8 +139,8 @@ export const wodeElfTroubadour = {
 						{
 							feature: {
 								id: 'wode-elf-feature-2-6',
-								name: 'Quick and Brutal',
-								description: 'Whenever you score a critical hit, you can take an additional основна дія and an additional дія руху instead of just a основна дія.',
+								name: 'Швидкий і жорстокий',
+								description: 'Коли ви завдаєте критичного удару, ви можете виконати додаткову основну дію та додаткову дію переміщення замість лише основної дії.',
 								type: 'Текст',
 								data: null
 							},
@@ -151,14 +151,14 @@ export const wodeElfTroubadour = {
 					selected: [
 						{
 							id: 'wode-elf-feature-2-4',
-							name: 'Otherworldly Grace',
-							description: 'Your elf body and mind can’t be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.',
+							name: 'Іншосвітова грація',
+							description: 'Ваше ельфійське тіло та розум не можуть бути стримані надовго. Коли ви робите рятувальний кидок, ви успішно проходите на результаті 5 або вище.',
 							type: 'Текст',
 							data: null
 						},
 						{
 							id: 'wode-elf-feature-2-3',
-							name: 'Swift',
+							name: 'Швидкий',
 							description: '',
 							type: 'Швидкість',
 							data: {
@@ -173,8 +173,8 @@ export const wodeElfTroubadour = {
 	},
 	culture: {
 		id: 'culture-bespoke-culture',
-		name: 'Bespoke Culture',
-		description: 'Choose any Environment, Organization, and Upbringing.',
+		name: 'Авторська культура',
+		description: 'Оберіть будь-яке середовище, організацію та виховання.',
 		type: 'Авторська',
 		language: {
 			id: 'culture-language',
@@ -190,8 +190,8 @@ export const wodeElfTroubadour = {
 		languages: [],
 		environment: {
 			id: 'env-wilderness',
-			name: 'Wilderness',
-			description: 'A wilderness culture doesn’t try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of orc mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.',
+			name: 'Дика місцевість',
+			description: 'Культура дикої місцевості не намагається підкорити природу, в якій живе — це може бути пустеля, ліс, болото, тундра, океан чи інші екзотичні місця. Люди такої культури процвітають серед природи, отримуючи їжу й притулок від землі. Це може бути коло друїдів, що охороняють віддалений гай, банда розбійників у печерах пустелі чи табір орків-найманців у горах. Люди дикої культури вчаться використовувати землю для всього необхідного, зазвичай виготовляючи власні інструменти, одяг тощо.',
 			type: 'Вибір навички',
 			data: {
 				options: [],
@@ -207,8 +207,8 @@ export const wodeElfTroubadour = {
 		},
 		organization: {
 			id: 'org-bureaucratic',
-			name: 'Bureaucratic',
-			description: 'Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures. Those who thrive in bureaucratic cultures don’t simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.',
+			name: 'Бюрократична',
+			description: 'Бюрократичні культури пронизані офіційним керівництвом і формально записаними законами. Члени такої культури часто мають ранг згідно з цими законами, а влада належить невеликій групі людей за правом народження, голосуванням чи іншим офіційним критерієм. У багатьох бюрократичних спільнотах є одна особа на вершині, хоча інші можуть керуватися радою. Торгова гільдія з гільдмайстром, скарбником, секретарем і статутом; феодал, що керує лицарями, які, у свою чергу, керують селянами; і мілітаристське суспільство з чіткими рангами та правилами — усе це приклади бюрократичних культур. Ті, хто процвітає в бюрократичних культурах, не просто дотримуються правил, а вміють використовувати їх на свою користь, змінюючи чи тлумачачи політику для власної вигоди. Вміння спілкуватися з тими, хто створює закони, часто є ключем до успіху. Інші ж спеціалізуються на тому, щоб діяти поза суворими правилами, не потрапляючи під покарання.',
 			type: 'Вибір навички',
 			data: {
 				options: [],
@@ -224,8 +224,8 @@ export const wodeElfTroubadour = {
 		},
 		upbringing: {
 			id: 'up-creative',
-			name: 'Creative',
-			description: 'A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.',
+			name: 'Творча',
+			description: 'Герой із творчим вихованням виріс серед людей, які створюють мистецтво чи інші цінні для обміну речі. Творча культура може виробляти витончене мистецтво — танець, музику, скульптуру — або практичні речі: вози, зброю, інструменти, будівлі. Люди в таких культурах цінують якісну майстерність і увагу до деталей.',
 			type: 'Вибір навички',
 			data: {
 				options: [
@@ -244,20 +244,20 @@ export const wodeElfTroubadour = {
 	},
 	class: {
 		id: '9y3Jx3koKZipiPh1',
-		name: 'Troubadour',
-		description: 'The whole world’s a stage, and everyone on it, an actor. No one knows this better than the troubadour. You find energy in the drama of everyday life and know how to draw spectacle forth from even the most mundane of situations. You accent highs and deepen lows in service to whoever might witness your performance.\n\nAs a troubadour, you chase drama. The insurmountable dangers of the world might cause many a hero to cower. But you take to that world stage not intending to die, but to find out if you are truly alive.\n\n“History is a tale. Each of us is just a story we tell ourselves. Change the story, and you change the world.”\nJackson Bootblack',
+		name: 'Трубадур',
+		description: 'Весь світ театр, і кожен на ньому актор. Ніхто не знає цього краще, ніж трубадур. Ви знаходите енергію в драмі повсякденного життя і знаєте, як витягти спектакль навіть з найпобутовіших ситуацій. Ви підкреслюєте висоти і поглиблюєте низини на користь тих, хто може стати свідком вашого виступу.\n\nЯк трубадур, ви переслідуєте драму. Непереборні небезпеки світу можуть змусити багатьох героїв тремтіти. Але ви виходите на світову сцену не з наміром померти, а щоб дізнатися, чи справді ви живі.\n\n“Історія — це казка. Кожен з нас — це просто історія, яку ми розповідаємо собі. Змініть історію, і ви зміните світ.”\nJackson Bootblack',
 		type: 'standard',
 		subclassName: 'Амплуа',
 		subclassCount: 1,
 		primaryCharacteristicsOptions: [
 			[
 				'Ловкість',
-				'Presence'
+				'Присутність'
 			]
 		],
 		primaryCharacteristics: [
 			'Ловкість',
-			'Presence'
+			'Присутність'
 		],
 		featuresByLevel: [
 			{
@@ -279,7 +279,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'drlPj8moDZL1c8D1',
-						name: 'Recoveries',
+						name: 'Відновлення',
 						description: '',
 						type: 'Бонус',
 						data: {
@@ -293,7 +293,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'UH5m1URtvSjZqfQb',
-						name: 'Interpersonal Skill',
+						name: 'Навичка взаємодії',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -309,7 +309,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'GjD2ZwdbvEIZOKQV',
-						name: 'Interpersonal Skills',
+						name: 'Навички взаємодії',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -326,7 +326,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'WpHiobCwPhxC5q2g',
-						name: 'Intrigue / Lore Skill',
+						name: 'Навичка: Інтрига / Знання',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -343,7 +343,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'tS1DEkc8ZWqFRIxE',
-						name: 'Drama',
+						name: 'Драма',
 						description: '',
 						type: 'Героїчний ресурс',
 						data: {
@@ -351,31 +351,31 @@ export const wodeElfTroubadour = {
 							gains: [
 								{
 									tag: 'start',
-									trigger: 'Start of your turn',
+									trigger: 'На початку вашого ходу',
 									value: '1d3'
 								},
 								{
 									tag: '',
-									trigger: 'The first time three or more heroes use an ability on the same turn',
+									trigger: 'Вперше, коли три або більше героїв використовують здібність у той самий хід',
 									value: '2'
 								},
 								{
 									tag: '',
-									trigger: 'The first time any hero is made winded during the encounter',
+									trigger: 'Вперше, коли будь-який герой стає захеканим під час зустрічі',
 									value: '2'
 								},
 								{
 									tag: '',
-									trigger: 'Whenever a creature within your line of effect rolls a natural 19 or 20',
+									trigger: 'Вперше, коли істота у вашій зоні впливу кидає натуральну 19 або 20',
 									value: '3'
 								},
 								{
 									tag: '',
-									trigger: 'When you or another hero dies',
+									trigger: 'Коли ви або інший герой помирає',
 									value: '10'
 								}
 							],
-							details: 'When you are dead, you continue to gain drama during combat as long as your body is intact. If you have 30 drama during the encounter in which you died, you can come back to life with 1 Stamina and 0 drama (no action required). If you are still dead after the encounter in which you died, you can’t gain drama during future encounters.',
+							details: 'Коли ви мертвий, ви продовжуєте отримувати драму під час бою, поки ваше тіло ціле. Якщо у вас є 30 драми під час зустрічі, в якій ви померли, ви можете повернутися до життя з 1 Витривалістю та 0 драми (дія не потрібна). Якщо ви все ще мертві після зустрічі, в якій ви померли, ви не можете отримувати драму під час майбутніх зустрічей.',
 							canBeNegative: false,
 							value: 0
 						}
@@ -393,8 +393,8 @@ export const wodeElfTroubadour = {
 							selected: [
 								{
 									id: 'kit-swashbuckler',
-									name: 'Swashbuckler',
-									description: 'If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the Swashbuckler kit. This is a great kit for heroes who want to be master duelists.',
+									name: 'Бретер',
+									description: 'Якщо ви хочете бути рухливими й завдавати багато шкоди ближніми ударами, вам підійде набір «Бретер». Це чудовий набір для героїв, які прагнуть стати майстрами дуелі.',
 									type: '',
 									armor: [
 										'Легка броня'
@@ -417,14 +417,14 @@ export const wodeElfTroubadour = {
 									features: [
 										{
 											id: 'kit-swashbuckler-signature',
-											name: 'Fancy Footwork',
-											description: 'All combat is a dance - and you\'ll be the one leading.',
+											name: 'Вишукані па',
+											description: 'Кожен бій - це танець, і ведете в ньому саме ви.',
 											type: 'Здібність',
 											data: {
 												ability: {
 													id: 'kit-swashbuckler-signature',
-													name: 'Fancy Footwork',
-													description: 'All combat is a dance - and you\'ll be the one leading.',
+													name: 'Вишукані па',
+													description: 'Кожен бій - це танець, і ведете в ньому саме ви.',
 													type: {
 														usage: 'Основна дія',
 														free: false,
@@ -457,18 +457,18 @@ export const wodeElfTroubadour = {
 															type: 'roll',
 															roll: {
 																characteristic: [
-																	'Might',
+																	'Сила',
 																	'Ловкість'
 																],
 																bonus: 0,
 																tier1: '3 + С або Л шкоди',
-																tier2: '5 + С або Л шкоди; Відштовхування 1',
-																tier3: '8 + С або Л шкоди; Відштовхування 2'
+																tier2: '5 + С або Л шкоди; штовхнути на 1',
+																tier3: '8 + С або Л шкоди; штовхнути на 2'
 															}
 														},
 														{
 															type: 'Текст',
-															text: 'You can shift into any square the target leaves after you push them'
+															text: 'Після того як ви штовхнули ціль, ви можете зміститися в будь-яку клітинку, яку вона залишила.'
 														}
 													],
 													preEffect: '',
@@ -489,28 +489,28 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'q9DC0wXzaL4f1EeU',
-						name: 'Scene Partner',
+						name: 'Партнер по сцені',
 						description: 'Щоразу, коли ви досягаєте успіху на випробуванні взаємодії з NPC, використовуючи навичку з міжособистісної групи, ви можете встановити звʼязок із цим NPC. Коли ви вступаєте в переговори зі звʼязаним NPC, його терпіння зростає на 1 (до максимуму 5). Крім того, уперше під час переговорів, коли ви особисто наводите аргумент, який збільшив би зацікавленість звʼязаного NPC на 1, ви натомість збільшуєте її на 2 (до максимуму 5).\n\nВи можете мати одночасно кількість звʼязків, що дорівнює вашому рівню. Коли ви формуєте звʼязок із новим NPC, що перевищує цей ліміт, ви мусите обрати, який з активних звʼязків утрачаєте.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'MTcRnLoVfzQkQw7T',
-						name: 'Routines',
-						description: 'You enter every battle with a set of performance abilities at the ready. Performances are magical presentations (such as songs, dances, poems, or gymnastic feats) that your allies can participate in. These abilities have the Performance keyword. At the start of each combat round, as long as you are not dazed, dead, or surprised, you can either choose a new performance or maintain your current performance (no action required). Your performance lasts until you are unable to maintain it or until the end of the encounter.',
+						name: 'Рутини',
+						description: 'Ви входите в кожну битву з набором готових здібностей виступу. Виступи - це магічні презентації (такі як пісні, танці, поеми або гімнастичні трюки), в яких можуть брати участь ваші союзники. Ці здібності мають ключове слово «Виступ». На початку кожного раунду бою, поки ви не приголомшені, не мертві або не здивовані, ви можете або вибрати новий виступ, або підтримувати свій поточний виступ (дія не потрібна). Ваш виступ триває до тих пір, поки ви не зможете його підтримувати або до кінця зустрічі.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'DY5KgVsjM9G2b1eP',
-						name: 'Choreography',
-						description: 'Taps, kicks, steps. It’s all “choreography.”',
+						name: 'Хореографія',
+						description: 'Топи, удари, кроки. Все це «хореографія».',
 						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'DY5KgVsjM9G2b1eP',
-								name: 'Choreography',
-								description: 'Taps, kicks, steps. It’s all “choreography.”',
+								name: 'Хореографія',
+								description: 'Топи, удари, кроки. Все це «хореографія».',
 								type: {
 									usage: 'Без дії',
 									free: false,
@@ -520,13 +520,13 @@ export const wodeElfTroubadour = {
 									freeStrike: false
 								},
 								keywords: [
-									'Area',
+									'Зона',
 									'Магія',
 									'Виступ'
 								],
 								distance: [
 									{
-										type: 'Aura',
+										type: 'Аура',
 										value: 5,
 										value2: 0,
 										within: 0,
@@ -541,7 +541,7 @@ export const wodeElfTroubadour = {
 								sections: [
 									{
 										type: 'Текст',
-										text: 'While this performance is active, each target who starts their turn in the area gains a +2 bonus to speed until the end of their turn. '
+										text: 'Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, отримує бонус +2 до швидкості до кінця свого ходу.'
 									}
 								],
 								preEffect: '',
@@ -557,14 +557,14 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'uqp9td9gJ5c4tKKQ',
-						name: 'Revitalizing Limerick',
-						description: 'There once was a man from Capital …',
+						name: 'Оживляючий лимерик',
+						description: 'Жив-був чоловік із столиці…',
 						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'uqp9td9gJ5c4tKKQ',
-								name: 'Revitalizing Limerick',
-								description: 'There once was a man from Capital …',
+								name: 'Оживляючий лимерик',
+								description: 'Жив-був чоловік із столиці…',
 								type: {
 									usage: 'Без дії',
 									free: false,
@@ -574,13 +574,13 @@ export const wodeElfTroubadour = {
 									freeStrike: false
 								},
 								keywords: [
-									'Area',
+									'Зона',
 									'Магія',
 									'Виступ'
 								],
 								distance: [
 									{
-										type: 'Aura',
+										type: 'Аура',
 										value: 5,
 										value2: 0,
 										within: 0,
@@ -595,7 +595,7 @@ export const wodeElfTroubadour = {
 								sections: [
 									{
 										type: 'Текст',
-										text: 'At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score. Each chosen target can spend a Recovery.'
+										text: 'Наприкінці кожного вашого ходу, поки цей виступ активний, ви можете обрати до кількості цілей, що дорівнює вашому показнику Присутності. Кожна обрана ціль може витратити Відновлення.'
 									}
 								],
 								preEffect: '',
@@ -611,7 +611,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'JEPrmTnFwNbi7kWO',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -631,7 +631,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'cCfz5o1dUmzOYVPL',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -651,7 +651,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'smLIhr6BGJPZscJG',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -676,28 +676,28 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'TzNcWWXAnI5bvPk9',
-						name: 'Appeal to the Muses',
-						description: 'You can give a rousing speech, invoke your inspirations, or lift your fellows’ spirits, appealing to the muses to heighten a battle’s drama. However, irony is eager to hand your fortune to the villain to achieve the same end.\n\nBefore you roll to gain drama at the start of your turn, you can make your appeal (no action required). If you do, your roll gains the following\nadditional effects:\n* If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice.\n* If the roll is a 2, you gain 1 Heroic Resource, which you can keep or give to an ally within the distance of your active performance. The Director gains 1 Malice.\n* If the roll is a 3, you gain 2 of a Heroic Resource, which you can distribute among yourself and any allies within the distance of your active performance.',
+						name: 'Звернення до муз',
+						description: 'Ви можете виголосити надихаючу промову, звернутися до своїх натхнень або підняти бойовий дух товаришів, звертаючись до муз, щоб підсилити драму битви. Однак іронія може передати вашу удачу лиходієві заради тієї ж драми.\n\nПеред тим як кинути на отримання драми на початку свого ходу, ви можете звернутися до муз (дія не потрібна). Якщо ви це робите, ваш кидок отримує такі додаткові ефекти:\n* Якщо випадає 1, ви отримуєте 1 додаткову драму. Директор отримує 1d3 Злоби.\n* Якщо випадає 2, ви отримуєте 1 героїчний ресурс, який можете залишити собі або віддати союзнику в межах дистанції вашого виступу. Директор отримує 1 Злобу.\n* Якщо випадає 3, ви отримуєте 2 героїчних ресурси, які можете розподілити між собою та будь-якими союзниками в межах дистанції вашого виступу.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'WagqmAOErEbwOMUA',
-						name: 'Invocation',
-						description: 'You have a specific manner that helps define your presence on the battlefield. Choose one of the following features.',
+						name: 'Інвокація',
+						description: 'У вас є особливий стиль, що визначає вашу присутність на полі бою. Оберіть одну з наступних особливостей.',
 						type: 'Вибір',
 						data: {
 							options: [
 								{
 									feature: {
 										id: 'Ojd2syAahwIuMZ7E',
-										name: 'Allow Me to Introduce Tonight’s Players',
+										name: 'Дозвольте представити сьогоднішніх гравців',
 										description: '',
 										type: 'Здібність',
 										data: {
 											ability: {
 												id: 'Ojd2syAahwIuMZ7E',
-												name: 'Allow Me to Introduce Tonight’s Players',
+												name: 'Дозвольте представити сьогоднішніх гравців',
 												description: '',
 												type: {
 													usage: 'Основна дія',
@@ -725,7 +725,7 @@ export const wodeElfTroubadour = {
 												sections: [
 													{
 														type: 'Текст',
-														text: 'Whenever you take the first turn in a combat encounter, you can use a основна дія to introduce yourself and your allies to your opponents. Each ally can shift up to their speed, and ability rolls made against them have a double bane until the end of the combat round. Additionally, any surprised enemy is no longer surprised.'
+														text: 'Щоразу, коли ви ходите першим у бойовій зустрічі, ви можете основною дією представити себе та своїх союзників супротивникам. Кожен союзник може зміститися на свою швидкість, а кидки здібностей проти них отримують подвійну шкоду до кінця раунду. Крім того, будь-який застигнутий зненацька ворог більше не вважається застигнутим.'
 													}
 												],
 												preEffect: '',
@@ -744,8 +744,8 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: '3TpougOk43FTEYlT',
-										name: 'Formal Introductions',
-										description: 'As a respite activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.\n\nThe Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional hero tokens. These hero tokens disappear at the end of the encounter.',
+										name: 'Формальні представлення',
+										description: 'Під час відпочинку ви можете написати повідомлення про свій прихід (наприклад, візитівку або офіційного листа), адресоване ворогу. Ви можете вручити його особисто, якщо перебуваєте поруч, надіслати курʼєром або залишити у таємному місці для знаходження. Можна мати лише одне активне повідомлення.\n\nДиректор визначає, коли ціль отримає повідомлення. Коли це стається, ворог насторожується й вживає відчайдушних заходів, щоб вас зупинити. Директор отримує 1 додаткову Злобу за кожен раунд бою з цією ціллю. Герої починають таку зустріч із 2 додатковими жетонами героя, які зникають після завершення зустрічі.',
 										type: 'Текст',
 										data: null
 									},
@@ -754,8 +754,8 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'vAsAdX1lzAwxKC0z',
-										name: 'My Reputation Precedes Me',
-										description: 'Ви можете послатися на свою репутацію на початку соціальної взаємодії з одним або кількома NPC, які раніше вас не зустрічали, автоматично створивши звʼязок з одним із цих NPC із групи так, ніби ви використали свою особливість Scene Partner. Цей звʼязок зараховується до ліміту активних звʼязків вашої особливості Scene Partner. Поки звʼязок активний, усі присутні герої вважають свою Відомість на 2 вищою за звичайну для мети вступу в переговори зі звʼязаним NPC.\n\nDirector може натомість дати героям 1 жетон героя, щоб зробити вас сумнозвісним серед цієї групи істот і не дати вам сформувати цей звʼязок. Поки ви не вживете заходів, щоб поліпшити свою репутацію, усі присутні герої отримують шкоду на випробування взаємодії з істотами цієї групи, використовуючи навички з міжособистісної групи навичок. Ви все ще можете використовувати свою особливість Scene Partner, щоб знаходити союзників у межах групи.',
+										name: 'Моя репутація випереджає мене',
+										description: 'На початку соціальної взаємодії з одним або кількома NPC, які вас не знають, ви можете використати свою репутацію, автоматично створивши звʼязок з одним із цих NPC, як за допомогою особливості «Партнер по сцені». Цей звʼязок враховується у ліміті активних звʼязків. Поки звʼязок активний, усі герої вважають свою Відомість на 2 вищою для переговорів із цим NPC.\n\nДиректор може дати героям 1 жетон, щоб зробити вас сумнозвісним серед цієї групи істот і не дозволити створити звʼязок. Поки ви не покращите репутацію, усі герої отримують шкоду на випробуваннях взаємодії з цією групою навичками міжособистісної групи. Ви все ще можете шукати союзників через «Партнер по сцені».',
 										type: 'Текст',
 										data: null
 									},
@@ -768,7 +768,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'tknnoxNMdhRdiF1e',
-						name: 'Interpersonal / Lore / Supernatural Perk',
+						name: 'Перк: Міжособистісні / Знання / Надприродне',
 						description: '',
 						type: 'Перевага',
 						data: {
@@ -788,7 +788,7 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'yoKyUfQEMwhyC4Ze',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -821,17 +821,17 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'N00Uu7tYlbZh5mLR',
-						name: 'Presence',
+						name: 'Присутність',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Presence',
+							characteristic: 'Присутність',
 							value: 1
 						}
 					},
 					{
 						id: 'eMWbssNB1OSeIFmj',
-						name: 'Melodrama',
+						name: 'Мелодрама',
 						description: '',
 						type: 'Вибір',
 						data: {
@@ -839,12 +839,12 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'bPZ0jgAHVi08ZX2X',
-										name: 'Melodrama #1',
+										name: 'Мелодрама №1',
 										description: '',
 										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
-											trigger: 'Whenever a creature rolls a natural 2 on a power roll.',
+											trigger: 'Щоразу, коли істота викидає натуральну 2 на кидку сили.',
 											value: '2',
 											replacesTags: []
 										}
@@ -854,12 +854,12 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'Jlp0a0yANrSIoeXp',
-										name: 'Melodrama #2',
+										name: 'Мелодрама №2',
 										description: '',
 										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
-											trigger: 'The first time the Director deals damage to a hero using a Villain action or an ability that costs Malice.',
+											trigger: 'Вперше за раунд, коли Директор завдає герою шкоди дією Лиходія або здібністю, що коштує Злоби.',
 											value: '2',
 											replacesTags: []
 										}
@@ -869,12 +869,12 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: '05FGfz1LetwQOlGm',
-										name: 'Melodrama #3',
+										name: 'Мелодрама №3',
 										description: '',
 										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
-											trigger: 'The first time a hero unwillingly falls 5 or more squares.',
+											trigger: 'Вперше за раунд, коли герой недобровільно падає на 5 або більше клітинок.',
 											value: '2',
 											replacesTags: []
 										}
@@ -884,12 +884,12 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'bnEzQSbTNyay2M51',
-										name: 'Melodrama #4',
+										name: 'Мелодрама №4',
 										description: '',
 										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
-											trigger: 'The first time a hero deals damage with 3 surges.',
+											trigger: 'Вперше, коли герой завдає шкоди з 3 сплесками.',
 											value: '2',
 											replacesTags: []
 										}
@@ -899,12 +899,12 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'lbGOgNoNt9SsiBDB',
-										name: 'Melodrama #5',
+										name: 'Мелодрама №5',
 										description: '',
 										type: 'Отримання героїчного ресурсу',
 										data: {
 											tag: '',
-											trigger: 'Whenever a hero spends their last Recovery.',
+											trigger: 'Щоразу, коли герой витрачає своє останнє Відновлення.',
 											value: '2',
 											replacesTags: []
 										}
@@ -914,8 +914,8 @@ export const wodeElfTroubadour = {
 								{
 									feature: {
 										id: 'AOgAXA0Z2YZWf0Be',
-										name: 'Melodrama Alternative',
-										description: 'You can forgo choosing a new event to choose one event you already have (including an event gained with this feature). Whenever the chosen event grants you drama, you gain 1 additional drama.',
+										name: 'Інша мелодрама',
+										description: 'Ви можете відмовитися від вибору нової події, щоб обрати одну подію, яку вже маєте, включно з подією, отриманою через цю рису. Щоразу, коли обрана подія дає вам драму, ви отримуєте 1 додаткову драму.',
 										type: 'Текст',
 										data: null
 									},
@@ -928,7 +928,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'c8wilO6exppZ8lk0',
-						name: 'Perk',
+						name: 'Перк',
 						description: '',
 						type: 'Перевага',
 						data: {
@@ -946,7 +946,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'pBD0Fhn5vO1A26aB',
-						name: 'Skill',
+						name: 'Навичка',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -964,8 +964,8 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'faVh7riGGaN0uOHR',
-						name: 'Zeitgeist',
-						description: 'You always have your ear to the ground, your finger on the pulse. When you start or finish a respite, choose one of the following effects.\n### Foreshadowing\n\nYou can ask the Director for two clues regarding an upcoming encounter or negotiation. One of the clues can be false.\n\n### Hear Ye, Hear Ye!\n\nBy bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a Presence test:\n\n| Roll    | Effect                                                                                                                                                                                                                                        |\n|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| ≤ 11    | Your information reaches no one.                                                                                                                                                                                                              |\n| 12 - 16 | Your information reaches the nearest populated area of town size or larger. You and each ally present when you make the test gain an edge on Presence tests in that area until one of you spends a Recovery.                                  |\n| ≥ 17    | Your information reaches the nearest populated area of town size or larger, plus the next closest such population. You and allies present for your test gain an edge on Presence tests made in those areas until you start your next respite. |\n\n### Latest Goss\n\nYou can ask the Director for three rumors regarding the area you’re in or an area you plan on entering before your next respite. One of the rumors can be false.',
+						name: 'Дух часу',
+						description: 'Ви завжди тримаєте вухо до землі й руку на пульсі. Коли ви починаєте або завершуєте перепочинок, оберіть один із наступних ефектів:\n### Передвістя\n\nВи можете попросити Директора дати дві підказки щодо майбутньої зустрічі або переговорів. Одна з підказок може бути хибною.\n\n### Слухайте, слухайте!\n\nВихвалянням, залякуванням, лідерством або брехнею ви намагаєтесь поширити одну інформацію на місцевість довкола. Зробіть тест Присутності:\n\n| Кидок | Ефект |\n|:------|:------|\n| ≤ 11 | Ваша інформація нікого не досягає. |\n| 12 - 16 | Ваша інформація досягає найближчого населеного пункту розміром із місто або більшого. Ви та кожен союзник, присутній під час тесту, отримуєте перевагу на тести Присутності в цій місцевості, доки хтось із вас не витратить Відновлення. |\n| ≥ 17 | Ваша інформація досягає найближчого населеного пункту розміром із місто або більшого, а також наступного найближчого такого місця. Ви та союзники, присутні під час тесту, отримуєте перевагу на тести Присутності в цих місцевостях до початку вашого наступного перепочинку. |\n\n### Останні плітки\n\nВи можете попросити Директора про три чутки щодо місцевості, у якій перебуваєте, або місцевості, до якої плануєте ввійти до наступного перепочинку. Одна з чуток може бути хибною.',
 						type: 'Текст',
 						data: null
 					}
@@ -976,7 +976,7 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'ExlOitsyzbnBbNA2',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -999,7 +999,7 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'ywf7fUdThUpCdF6J',
-						name: 'Interpersonal / Lore / Supernatural Perk',
+						name: 'Перк: Міжособистісні / Знання / Надприродне',
 						description: '',
 						type: 'Перевага',
 						data: {
@@ -1014,14 +1014,14 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'KFi7rVE3i9lrpXic',
-						name: 'Spotlight',
-						description: 'The audience is watching, so you’d better give them a show.',
+						name: 'У центрі уваги',
+						description: 'Глядачі дивляться, тож краще влаштуйте їм виставу.',
 						type: 'Здібність',
 						data: {
 							ability: {
 								id: 'KFi7rVE3i9lrpXic',
-								name: 'Spotlight',
-								description: 'The audience is watching, so you’d better give them a show.',
+								name: 'У центрі уваги',
+								description: 'Глядачі дивляться, тож краще влаштуйте їм виставу.',
 								type: {
 									usage: 'Без дії',
 									free: false,
@@ -1031,13 +1031,13 @@ export const wodeElfTroubadour = {
 									freeStrike: false
 								},
 								keywords: [
-									'Area',
+									'Зона',
 									'Магія',
 									'Виступ'
 								],
 								distance: [
 									{
-										type: 'Aura',
+										type: 'Аура',
 										value: 5,
 										value2: 0,
 										within: 0,
@@ -1052,7 +1052,7 @@ export const wodeElfTroubadour = {
 								sections: [
 									{
 										type: 'Текст',
-										text: 'While this performance is active, each target who starts their turn in the area gains 1 of their Heroic Resource. This Heroic Resource disappears at the end of the target’s turn if they don’t spend it.'
+										text: 'Поки цей виступ активний, кожна ціль, яка починає свій хід у зоні, отримує 1 одиницю свого Героїчного Ресурсу. Цей Героїчний Ресурс зникає наприкінці ходу цілі, якщо вона його не витратить.'
 									}
 								],
 								preEffect: '',
@@ -1073,11 +1073,11 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'grnE5hFyVyLylxC2',
-						name: 'Might',
+						name: 'Сила',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Might',
+							characteristic: 'Сила',
 							value: 1
 						}
 					},
@@ -1093,49 +1093,49 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'JszVRV1fs7lyz7yF',
-						name: 'Reason',
+						name: 'Розум',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Reason',
+							characteristic: 'Розум',
 							value: 1
 						}
 					},
 					{
 						id: 'u8XAyI9vpwIPsJXi',
-						name: 'Intuition',
+						name: 'Інтуїція',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Intuition',
+							characteristic: 'Інтуїція',
 							value: 1
 						}
 					},
 					{
 						id: 'cuvMsaNuv1KvGvUF',
-						name: 'Presence',
+						name: 'Присутність',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Presence',
+							characteristic: 'Присутність',
 							value: 1
 						}
 					},
 					{
 						id: 'HRzXpQyzYdOU4f3r',
-						name: 'Equal Billing',
-						description: 'You can use your Scene Partner feature to form a bond with one willing hero instead of an NPC you interact with using a test. If you bond with another hero, you lose your existing bond with a hero.\n\nAdditionally, you and creatures you are bonded with gain a +1 bonus to saving throws. Whenever you or a bonded creature succeeds on a saving throw, you and each creature you are bonded with gains temporary Stamina equal to your level.',
+						name: 'Рівні ролі',
+						description: 'Ви можете використати свою рису «Партнер по сцені», щоб сформувати звʼязок з одним охочим героєм замість NPC, з яким взаємодієте через випробування. Якщо ви формуєте звʼязок з іншим героєм, то втрачаєте наявний звʼязок із героєм.\n\nДодатково, ви та істоти, з якими ви звʼязані, отримуєте бонус +1 до рятувальних кидків. Щоразу, коли ви або звʼязана істота успішно проходите рятувальний кидок, ви та кожна звʼязана з вами істота отримуєте тимчасову Витривалість, що дорівнює вашому рівню.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'JRIAGwr5xwIXZdG5',
-						name: 'A Muse’s Muse',
+						name: 'Муза для муз',
 						description: '',
 						type: 'Отримання героїчного ресурсу',
 						data: {
 							tag: 'start 2',
-							trigger: 'Start of your turn',
+							trigger: 'На початку вашого ходу',
 							value: '1d3 + 1',
 							replacesTags: [
 								'start'
@@ -1144,7 +1144,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'A7CsaTimMURrXg0M',
-						name: 'Skill',
+						name: 'Навичка',
 						description: '',
 						type: 'Вибір навички',
 						data: {
@@ -1167,7 +1167,7 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'rm84D6UDOw6SNSVm',
-						name: 'Perk',
+						name: 'Перк',
 						description: '',
 						type: 'Перевага',
 						data: {
@@ -1185,7 +1185,7 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'wAOl8UZ3VTUdA67Z',
-						name: 'Ability',
+						name: 'Здібність',
 						description: '',
 						type: 'Класова здібність',
 						data: {
@@ -1208,8 +1208,8 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'b4oYpDkEydG3CTOD',
-						name: 'Roar of the Crowd',
-						description: 'You are empowered by your audience, near and far. You can’t be made frightened, and if you are prone, you can stand up as a безкоштовний маневр.\n\nAdditionally, whenever you spend a Recovery, you can forgo regaining Stamina to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains temporary Stamina equal to 10 + the number of active bonds from your Scene Partner feature + either your Victories or the number of players in your game (whichever is higher).',
+						name: 'Рев натовпу',
+						description: 'Вас підсилює ваша аудиторія, близька й далека. Вас не можна налякати, а якщо ви розпластані, то можете підвестися як безкоштовний маневр.\n\nДодатково, щоразу, коли ви витрачаєте Відновлення, ви можете відмовитися від відновлення Витривалості, щоб викликати рев невидимої аудиторії, яка аплодує. Ви та кожен союзник у межах 3 клітинок від вас отримуєте тимчасову Витривалість, що дорівнює 10 + кількість активних звʼязків від вашої риси «Партнер по сцені» + або ваша Кількість Перемог, або кількість гравців у грі, залежно від того, що більше.',
 						type: 'Текст',
 						data: null
 					}
@@ -1220,7 +1220,7 @@ export const wodeElfTroubadour = {
 				features: [
 					{
 						id: 'GYcwgp374s2e3GiY',
-						name: 'Applause',
+						name: 'Оплески',
 						description: '',
 						type: 'Героїчний ресурс',
 						data: {
@@ -1228,7 +1228,7 @@ export const wodeElfTroubadour = {
 							gains: [
 								{
 									tag: '',
-									trigger: 'Finish a respite',
+									trigger: 'Після завершення перепочинку',
 									value: 'Отримання досвіду'
 								}
 							],
@@ -1249,31 +1249,31 @@ export const wodeElfTroubadour = {
 					},
 					{
 						id: 'KyTOfWVz1Htc6DAr',
-						name: 'Presence',
+						name: 'Присутність',
 						description: '',
 						type: 'Бонус характеристики',
 						data: {
-							characteristic: 'Presence',
+							characteristic: 'Присутність',
 							value: 1
 						}
 					},
 					{
 						id: 'SvXvD5JZWWIMcMGv',
-						name: 'Dramaturgy',
-						description: 'You gain 1 additional drama or other Heroic Resource whenever you use your Appeal to the Muses feature. Additionally, your performances no longer have a distance, but can affect any target on the encounter map within your line of effect.',
+						name: 'Драматургія',
+						description: 'Щоразу, коли ви використовуєте рису «Звернення до муз», ви отримуєте 1 додаткову драму або інший Героїчний Ресурс. Додатково, ваші виступи більше не мають дистанції, але можуть впливати на будь-яку ціль на мапі зустрічі в межах вашої лінії ефекту.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'kN2tUhuHAbfRxOM3',
-						name: 'Greatest of All Time',
+						name: 'Найвеличніший усіх часів',
 						description: 'Щоразу, коли ви досягаєте успіху на випробуванні, показник Враження кожного NPC у межах вашої лінії ефекту зменшується на 4 під час переговорів (до мінімуму 1), а кожен союзник у межах 3 клітинок від вас отримує перевагу на своє наступне випробування. Ці ефекти тривають до початку вашого наступного перепочинку.',
 						type: 'Текст',
 						data: null
 					},
 					{
 						id: 'MJlch8xy0BmtjEAz',
-						name: 'Interpersonal / Lore / Supernatural Perk',
+						name: 'Перк: Міжособистісні / Знання / Надприродне',
 						description: '',
 						type: 'Перевага',
 						data: {
@@ -4735,7 +4735,7 @@ export const wodeElfTroubadour = {
 																value: 0,
 																value2: 0,
 																within: 0,
-																special: 'Three 3 cubes within 1',
+																special: 'Три куби 3 в межах 1',
 																qualifier: ''
 															}
 														],

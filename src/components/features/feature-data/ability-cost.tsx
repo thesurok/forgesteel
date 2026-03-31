@@ -3,6 +3,7 @@ import { Select, Space } from 'antd';
 import { AbilityKeyword } from '@/enums/ability-keyword';
 import { AbilityLogic } from '@/logic/ability-logic';
 import { Field } from '@/components/controls/field/field';
+import { Format } from '@/utils/format';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
 import { NumberSpin } from '@/components/controls/number-spin/number-spin';
@@ -21,7 +22,7 @@ interface InfoProps {
 
 export const InfoAbilityCost = (props: InfoProps) => {
 	return (
-		<Field label={props.data.keywords.join(', ')} value={`Heroic resource cost ${props.data.modifier >= 0 ? '+' : ''}${props.data.modifier}`} />
+		<Field label={Format.formatKeywordList(props.data.keywords)} value={`Heroic resource cost ${props.data.modifier >= 0 ? '+' : ''}${props.data.modifier}`} />
 	);
 };
 
@@ -33,7 +34,7 @@ interface EditProps {
 }
 
 export const EditAbilityCost = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureAbilityCostData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureAbilityCostData>(Utils.copy(props.data));
 
 	const setKeywords = (value: AbilityKeyword[]) => {
 		const copy = Utils.copy(data);
@@ -57,8 +58,8 @@ export const EditAbilityCost = (props: EditProps) => {
 				placeholder='Select keywords'
 				mode='multiple'
 				allowClear={true}
-				options={AbilityLogic.getKeywords().map(o => ({ value: o }))}
-				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+				options={AbilityLogic.getKeywords().map(o => ({ value: o, label: Format.getKeywordName(o) }))}
+				optionRender={option => <div className='ds-text'>{option.data.label ?? option.data.value}</div>}
 				value={data.keywords}
 				onChange={setKeywords}
 			/>

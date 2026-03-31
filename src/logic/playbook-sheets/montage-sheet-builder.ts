@@ -5,6 +5,7 @@ import { MontageLogic } from '@/logic/montage-logic';
 import { MontageSheet } from '@/models/classic-sheets/montage-sheet';
 import { Options } from '@/models/options';
 import { SheetFormatter } from '@/logic/classic-sheet/sheet-formatter';
+import { Format } from '@/utils/format';
 
 export class MontageSheetBuilder {
 	static buildMontageSheet = (montage: Montage, heroes: Hero[], options: Options): MontageSheet => {
@@ -20,11 +21,8 @@ export class MontageSheetBuilder {
 			eventsNotes: ''
 		};
 
-		if ([ EncounterDifficulty.Easy, EncounterDifficulty.Standard, EncounterDifficulty.Hard ].includes(montage.difficulty)) {
-			sheet.difficulty = montage.difficulty.toString();
-			if (montage.difficulty === EncounterDifficulty.Standard) {
-				sheet.difficulty = 'Moderate';
-			}
+		if ([EncounterDifficulty.Easy, EncounterDifficulty.Standard, EncounterDifficulty.Hard].includes(montage.difficulty)) {
+			sheet.difficulty = Format.getEncounterDifficultyName(montage.difficulty);
 			sheet.successLimit = MontageLogic.getSuccessLimit(montage, heroes, options);
 			sheet.failureLimit = MontageLogic.getFailureLimit(montage, heroes, options);
 		}

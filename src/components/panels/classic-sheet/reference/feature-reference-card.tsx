@@ -17,7 +17,7 @@ export const FeatureReferenceCard = (props: Props) => {
 
 	const columns = props.columns || 1;
 
-	const cardClasses = [ 'feature-reference', 'card' ];
+	const cardClasses = ['feature-reference', 'card'];
 	if (columns > 2) {
 		cardClasses.push('extra-wide');
 	} else if (columns > 1) {
@@ -33,7 +33,7 @@ export const FeatureReferenceCard = (props: Props) => {
 				return m;
 			}, new Map<string, Feature[]>());
 
-			const containerClasses = [ 'features-container' ];
+			const containerClasses = ['features-container'];
 			if (columns === 2) {
 				containerClasses.push('two-column');
 			} else if (columns === 3) {
@@ -72,7 +72,7 @@ export const FeatureReferenceCard = (props: Props) => {
 
 	return (
 		<div className={cardClasses.join(' ')}>
-			<h2>Other Features & Reference</h2>
+			<h2>Інші риси та довідка</h2>
 			{getFeatureSections()}
 		</div>
 	);

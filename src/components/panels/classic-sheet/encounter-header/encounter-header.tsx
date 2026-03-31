@@ -1,4 +1,5 @@
 import { EncounterSheet } from '@/models/classic-sheets/encounter-sheet';
+import { Format } from '@/utils/format';
 import { HeaderImage } from '@/components/panels/classic-sheet/header-image/header-image';
 import { LabeledTextField } from '@/components/panels/classic-sheet/components/labeled-field';
 import { Markdown } from '@/components/controls/markdown/markdown';
@@ -13,36 +14,36 @@ interface Props {
 }
 
 export const EncounterHeaderCard = (props: Props) => {
-	const encounter = useMemo(() => props.encounter, [ props.encounter ]);
+	const encounter = useMemo(() => props.encounter, [props.encounter]);
 
 	return (
 		<div className='encounter-header card'>
 			<HeaderImage />
 			<section className='container overview'>
 				<LabeledTextField
-					label='Encounter Name'
+					label='Назва сутички'
 					content={encounter.name}
-					additionalClasses={[ 'name', 'no-box', 'text-left' ]}
+					additionalClasses={['name', 'no-box', 'text-left']}
 				/>
 				<LabeledTextField
-					label='Number of Heroes'
+					label='Кількість героїв'
 					content={encounter.heroCount}
 				/>
 				<LabeledTextField
-					label='Average Level'
+					label='Середній рівень'
 					content={encounter.heroLvl}
 				/>
 				<LabeledTextField
-					label='Heroes’ Victories'
+					label='Перемоги героїв'
 					content={encounter.heroVictories}
 				/>
 				<LabeledTextField
-					label='Difficulty'
-					content={encounter.difficulty}
-					additionalClasses={[ 'difficulty' ]}
+					label='Складність'
+					content={Format.getEncounterDifficultyName(encounter.difficulty)}
+					additionalClasses={['difficulty']}
 				/>
 				<LabeledTextField
-					label='Victories'
+					label='Перемоги'
 					content={encounter.encounterVictories}
 				/>
 				<LabeledTextField
@@ -52,16 +53,16 @@ export const EncounterHeaderCard = (props: Props) => {
 			</section>
 			<div className='encounter-objective'>
 				<LabeledTextField
-					label='Encounter Objective'
+					label='Мета сутички'
 					content={encounter.objective}
-					additionalClasses={[ 'objective', 'no-box', 'text-left' ]}
+					additionalClasses={['objective', 'no-box', 'text-left']}
 				/>
 				<section className='bordered success'>
-					<h3>Success Condition</h3>
+					<h3>Умова успіху</h3>
 					<Markdown text={encounter.successCondition || ''} />
 				</section>
 				<section className='bordered failure'>
-					<h3>Failure Condition</h3>
+					<h3>Умова провалу</h3>
 					<Markdown text={encounter.failureCondition || ''} />
 				</section>
 			</div>
@@ -69,37 +70,37 @@ export const EncounterHeaderCard = (props: Props) => {
 				<div className='round-tracker'>
 					<LabeledTextField
 						content=''
-						label='Round'
-						additionalClasses={[ 'label-above', 'fancy' ]}
+						label='Раунд'
+						additionalClasses={['label-above', 'fancy']}
 					/>
 					<div className='reference'>
 						<div className='round-1'>
-							<h4>Round 1 Malice</h4>
+							<h4>Злоба 1-го раунду</h4>
 							<LabeledTextField
 								content={encounter.heroCount}
-								label='Heroes'
-								additionalClasses={[ 'no-box' ]}
+								label='Герої'
+								additionalClasses={['no-box']}
 							/>
 							<span>+ 1 +</span>
 							<LabeledTextField
 								content={encounter.heroVictories}
-								label='Victories'
-								additionalClasses={[ 'no-box' ]}
+								label='Перемоги'
+								additionalClasses={['no-box']}
 							/>
 						</div>
 						<div className='round-2'>
-							<h4>Round 2+ Malice</h4>
+							<h4>Злоба 2+ раунду</h4>
 							<LabeledTextField
 								content={encounter.heroCount}
-								label='Heroes'
-								additionalClasses={[ 'no-box' ]}
+								label='Герої'
+								additionalClasses={['no-box']}
 							/>
-							<span>+ Rounds</span>
+							<span>+ Раунди</span>
 						</div>
 					</div>
 				</div>
 				<div className='malice-tracker'>
-					<h3>Malice</h3>
+					<h3>Злоба</h3>
 					<div className='bordered'>&nbsp;</div>
 				</div>
 			</div>

@@ -9,29 +9,29 @@ interface Props {
 }
 
 export const PatienceInterestCard = (props: Props) => {
-	const negotiation = useMemo(() => props.negotiation, [ props.negotiation ]);
+	const negotiation = useMemo(() => props.negotiation, [props.negotiation]);
 
 	return (
 		<div className='negotiation-patience-interest card'>
 			<div className='patience'>
-				<label>Patience</label>
+				<label>Терпіння</label>
 				<div className='current-patience'>
 					<div className='field'>
 						{negotiation.patience}
 					</div>
 					<p className='reference'>
-						<strong>Patience 0:</strong>
+						<strong>Терпіння 0:</strong>
 						<br />
-						NPC Makes Final Offer
+						NPC робить остаточну пропозицію
 					</p>
 				</div>
 				<div className='patience-reference'>
-					<p className='reference'>One hero shares NPC's native language (non-Келіан (Caelian)): <strong>Patience +1</strong></p>
-					<p className='reference'>Three or more heroes shares NPC's native language (non-Келіан (Caelian)): <strong>Patience +2</strong></p>
+					<p className='reference'>Один герой розмовляє рідною мовою NPC (не Келіан (Caelian)): <strong>Терпіння +1</strong></p>
+					<p className='reference'>Троє або більше героїв розмовляють рідною мовою NPC (не Келіан (Caelian)): <strong>Терпіння +2</strong></p>
 				</div>
 			</div>
 			<div className='interest'>
-				<label>Interest</label>
+				<label>Зацікавленість</label>
 				<div className='interest-tracker'>
 					<div className='tracker'>
 						<div className={`start-point start-${negotiation.interest}`}>
@@ -44,23 +44,23 @@ export const PatienceInterestCard = (props: Props) => {
 						</div>
 					</div>
 					<div className='reference'>
-						<div className='ref-0'>NPC Ends Negotiation</div>
-						<div className='ref-5'>NPC Makes Final Offer</div>
+						<div className='ref-0'>NPC завершує переговори</div>
+						<div className='ref-5'>NPC робить остаточну пропозицію</div>
 					</div>
 				</div>
 				<div className='renown'>
 					<p className='renown-level'>
-						<strong>Hero renown ≥ {negotiation.impression}</strong> (NPC Impression score)
+						<strong>Відомість героя ≥ {negotiation.impression}</strong> (показник враження NPC)
 					</p>
 					<p>
-						<strong>Hero is famous to NPC:</strong>
+						<strong>Герой відомий NPC:</strong>
 						<br />
-						Edge on tests using Flirt, Lead, or Persuade
+						Перевага на випробування з навичками Флірт, Лідерство або Переконання
 					</p>
 					<p>
-						<strong>Hero is infamous to NPC:</strong>
+						<strong>Герой сумнозвісний для NPC:</strong>
 						<br />
-						Edge on tests using Brag, Interrogate, or Intimidate
+						Перевага на випробування з навичками Вихваляння, Допит або Залякування
 					</p>
 				</div>
 			</div>

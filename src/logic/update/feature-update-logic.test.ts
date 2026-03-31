@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { Feature } from '@/models/feature';
+import { Feature, FeatureBonus, FeatureProficiency, FeatureSkillChoice } from '@/models/feature';
 import { FeatureType } from '@/enums/feature-type';
 import { FeatureUpdateLogic } from '@/logic/update/feature-update-logic';
 import { FeatureField } from '@/enums/feature-field';
@@ -47,7 +47,7 @@ describe('FeatureUpdateLogic', () => {
         });
 
         test('normalizes skill choice options and selections', () => {
-            const feature: Feature = {
+            const feature = {
                 id: 'feature-id',
                 name: 'Skill',
                 description: '',
@@ -58,9 +58,9 @@ describe('FeatureUpdateLogic', () => {
                     count: 1,
                     selected: ['Read Person', 'Крастись']
                 }
-            } as Feature;
+            } as unknown as FeatureSkillChoice;
 
-            FeatureUpdateLogic.updateFeature(feature);
+            FeatureUpdateLogic.updateFeature(feature as unknown as Feature);
 
             expect(feature.type).toBe(FeatureType.SkillChoice);
             expect(feature.data.options).toEqual(['Вихваляння', 'Пильність', 'Ховання']);
@@ -68,7 +68,7 @@ describe('FeatureUpdateLogic', () => {
         });
 
         test('normalizes legacy kit proficiencies', () => {
-            const feature: Feature = {
+            const feature = {
                 id: 'feature-id',
                 name: 'Proficiency',
                 description: '',
@@ -77,9 +77,9 @@ describe('FeatureUpdateLogic', () => {
                     weapons: ['Heavy Weapon', 'Bow'],
                     armor: ['Heavy Armor', 'Shield']
                 }
-            } as Feature;
+            } as unknown as FeatureProficiency;
 
-            FeatureUpdateLogic.updateFeature(feature);
+            FeatureUpdateLogic.updateFeature(feature as unknown as Feature);
 
             expect(feature.type).toBe(FeatureType.Proficiency);
             expect(feature.data.weapons).toEqual([KitWeapon.Heavy, KitWeapon.Bow]);
@@ -87,7 +87,7 @@ describe('FeatureUpdateLogic', () => {
         });
 
         test('normalizes legacy feature bonus fields', () => {
-            const feature: Feature = {
+            const feature = {
                 id: 'feature-id',
                 name: 'Recoveries',
                 description: '',
@@ -96,9 +96,9 @@ describe('FeatureUpdateLogic', () => {
                     field: 'Recoveries',
                     value: 2
                 }
-            } as Feature;
+            } as unknown as FeatureBonus;
 
-            FeatureUpdateLogic.updateFeature(feature);
+            FeatureUpdateLogic.updateFeature(feature as unknown as Feature);
 
             expect(feature.name).toBe('Відновлення');
             expect(feature.data.field).toBe(FeatureField.Recoveries);

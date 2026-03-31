@@ -40,8 +40,8 @@ describe('buildItemSheet', () => {
 		const options = {} as Options;
 
 		const result = ClassicSheetBuilder.buildItemSheet(artifact, hero, options);
-		expect(result.effect).toContain('**Suited for Victory**');
-		expect(result.effect).toContain('**Turn the Tide**');
+		expect(result.effect).toContain('**Створений для перемоги**');
+		expect(result.effect).toContain('**Переломити хід битви**');
 	});
 });
 
@@ -116,7 +116,19 @@ describe('buildAbilitySheet', () => {
 		} as Options;
 
 		const result = ClassicSheetBuilder.buildAbilitySheet(ability, hero, undefined, options);
-		expect(result.rollPower).toBe('Highest Characteristic');
+		expect(result.rollPower).toBe('Найвища характеристика');
+	});
+
+	test('localizes classic-sheet keyword text', () => {
+		const hero = FactoryLogic.createHero([]);
+		const options = {} as Options;
+
+		const result = ClassicSheetBuilder.buildAbilitySheet(AbilityData.freeStrikeRanged, hero, undefined, options);
+
+		expect(result.keywords).toContain('Дальній');
+		expect(result.keywords).toContain('Зброя');
+		expect(result.keywords).not.toContain('Ranged');
+		expect(result.keywords).not.toContain('Weapon');
 	});
 
 	test('if a Hero does NOT has multiple kits that apply, rollBonuses is empty', () => {
@@ -170,9 +182,9 @@ describe('buildAbilitySheet', () => {
 
 describe('buildMonsterSheet', () => {
 	test.each([
-		[goblin.monsters[4], 'Lvl 1 Horde Ambusher'], // Goblin Assassin
-		[goblin.monsters[0], 'Lvl 1 Minion Harrier'], // Goblin Runner
-		[ajax.monsters[0], 'Lvl 11 Solo']
+		[goblin.monsters[4], 'Рів. 1 Орда Засадник'], // Goblin Assassin
+		[goblin.monsters[0], 'Рів. 1 Міньйон Гонча'], // Goblin Runner
+		[ajax.monsters[0], 'Рів. 11 Соло']
 	])('sets type correctly', (monster, expectedType) => {
 		const result = ClassicSheetBuilder.buildMonsterSheet(monster);
 		expect(result.type).toBe(expectedType);

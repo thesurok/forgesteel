@@ -1,9 +1,9 @@
 export enum MonsterFeatureCategory {
-	Text = 'Text',
-	DamageMod = 'Damage Modifier',
-	Signature = 'Signature Action',
+	Text = 'Текст',
+	DamageMod = 'Модифікатор шкоди',
+	Signature = 'Фірмова дія',
 	Action = 'Основна дія',
 	Maneuver = 'Маневр',
 	Trigger = 'Тригерна дія',
-	Other = 'Other Ability'
+	Other = 'Інша здатність'
 };

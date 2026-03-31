@@ -11,6 +11,7 @@ import { FactoryLogic } from '@/logic/factory-logic';
 import { Feature } from '@/models/feature';
 import { FeatureEditPanel } from '@/components/panels/edit/feature-edit/feature-edit-panel';
 import { FeatureLogic } from '@/logic/feature-logic';
+import { Format } from '@/utils/format';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Item } from '@/models/item';
 import { ItemPanel } from '@/components/panels/elements/item-panel/item-panel';
@@ -116,8 +117,8 @@ export const ItemEditPanel = (props: Props) => {
 					placeholder='Keywords'
 					mode='multiple'
 					allowClear={true}
-					options={AbilityLogic.getKeywords().map(option => ({ value: option }))}
-					optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+					options={AbilityLogic.getKeywords().map(option => ({ value: option, label: Format.getKeywordName(option) }))}
+					optionRender={option => <div className='ds-text'>{option.data.label ?? option.data.value}</div>}
 					value={item.keywords}
 					onChange={setKeywords}
 				/>

@@ -10,22 +10,22 @@ export class FeatureFlags {
 
 	static warehouse: FeatureFlag = {
 		code: 1551245932421255,
-		description: 'Access to the Warehouse beta'
+		description: 'Доступ до бета-версії Warehouse'
 	};
 
 	static playtest: FeatureFlag = {
 		code: 6593295311412783,
-		description: 'Access to the Playtest sourcebook'
+		description: 'Доступ до збірника Playtest'
 	};
 
 	static communityPreRelease: FeatureFlag = {
 		code: Utils.hashCode('community'),
-		description: 'Access to the (pre-release) Community sourcebook'
+		description: 'Доступ до передрелізного збірника Community'
 	};
 
 	static patreon: FeatureFlag = {
 		code: Utils.hashCode('patreon'),
-		description: 'Show the Patreon connector'
+		description: 'Показувати підключення Patreon'
 	};
 
 	private static all = [

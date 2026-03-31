@@ -60,43 +60,43 @@ export class TipData {
 			// #region Hero Sheet
 			FactoryLogic.createTip({
 				image: heroSheetInteractive,
-				content: 'If you\'re using your device to play, use the Interactive View.'
+				content: 'Якщо ви граєте з пристрою, користуйтеся інтерактивним виглядом.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetClassic,
-				content: 'If you want to print out your hero, switch to the Classic view.'
+				content: 'Якщо хочете роздрукувати героя, перемкніться на класичний вигляд.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetRoll,
-				content: 'Forge Steel can make your ability rolls for you, if you\'re playing online.'
+				content: 'Forge Steel може кидати ваші здібності за вас, якщо ви граєте онлайн.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetManage,
-				content: 'You can access your hero\'s resources, inventory, projects, and more through the **Tools** button.'
+				content: 'Через кнопку **Інструменти** можна відкрити ресурси, інвентар, проєкти героя та інше.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetState,
-				content: 'Click on your hero\'s resources to manage them.'
+				content: 'Натисніть на ресурси героя, щоб керувати ними.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetVitals,
-				content: 'Click on your hero\'s vitals to manage your stamina, resources, and conditions.'
+				content: 'Натисніть на стан героя, щоб керувати витривалістю, відновленнями та станами.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetInventory,
-				content: 'You can manage your hero\'s equipment in the **Inventory** tab. If you have an imbued item, this is where to set it up.'
+				content: 'Спорядженням героя можна керувати на вкладці **Інвентар**. Якщо у вас є вміщений предмет, налаштовується він саме тут.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetProjects,
-				content: 'On the **Projects** tab you can track the progress of your hero\'s downtime projects.'
+				content: 'На вкладці **Проєкти** можна відстежувати поступ проєктів героя у вільний час.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetCustomize,
-				content: 'You can add almost anything to your hero in the **Customize** tab.'
+				content: 'На вкладці **Налаштувати** до героя можна додати майже будь-що.'
 			}),
 			FactoryLogic.createTip({
 				image: heroSheetRetinue,
-				content: 'If your hero has a mount, a retainer, or can summon monsters, you\'ll see them in your **Retinue** tab.',
+				content: 'Якщо ваш герой має верхову істоту, ретейнера або може прикликати чудовиськ, ви побачите їх на вкладці **Retinue**.',
 				isNew: true
 			}),
 			// #endregion
@@ -104,38 +104,38 @@ export class TipData {
 			// #region Hero Builder
 			FactoryLogic.createTip({
 				image: heroBuilderEdit,
-				content: 'Forge Steel lets you build heroes, taking you through the process step-by-step.'
+				content: 'Forge Steel допомагає створювати героїв, проводячи вас крізь увесь процес крок за кроком.'
 			}),
 			FactoryLogic.createTip({
 				image: heroBuilderSourcebooks,
-				content: 'If you want to use a custom sourcebook when you\'re building your hero, you\'ll need to select it on the **Start** page.'
+				content: 'Якщо ви хочете використовувати власний збірник під час створення героя, його потрібно вибрати на сторінці **Start**.'
 			}),
 			FactoryLogic.createTip({
 				image: heroBuilderPregens,
-				content: 'If you don\'t want to build a hero, you can start with a pregen.'
+				content: 'Якщо ви не хочете створювати героя вручну, можна почати з готового персонажа.'
 			}),
 			FactoryLogic.createTip({
 				image: heroBuilderRandom,
-				content: 'If you don\'t want to build a hero, you can create an entirely random one.'
+				content: 'Якщо ви не хочете створювати героя вручну, можна згенерувати цілком випадкового.'
 			}),
 			FactoryLogic.createTip({
 				image: heroBuilderFolder,
-				content: 'If you have built a lot of heroes, you organize them by adding them to folders.'
+				content: 'Якщо ви створили багато героїв, їх зручно впорядковувати, додаючи до тек.'
 			}),
 			// #endregion
 
 			// #region Library
 			FactoryLogic.createTip({
 				image: libraryMain,
-				content: 'The Library screen shows all the content in the game.'
+				content: 'Екран **Library** показує весь вміст гри.'
 			}),
 			FactoryLogic.createTip({
 				image: librarySourcebooks,
-				content: 'Everything in the Library comes from a sourcebook - you can create your own sourcebooks for homebrew content.'
+				content: 'Усе в **Library** походить зі збірників. Для домашнього вмісту ви можете створювати власні збірники.'
 			}),
 			FactoryLogic.createTip({
 				image: libraryThirdParty,
-				content: 'Forge Steel now includes third-party content from the Blacksmith\'s Guild, Ratcatcher magazine, Triglav Games, and the Draw Steel homebrew community.',
+				content: 'Forge Steel тепер містить сторонній вміст від Blacksmith\'s Guild, журналу Ratcatcher, Triglav Games і спільноти домашнього контенту Draw Steel.',
 				isNew: true
 			}),
 			// #endregion
@@ -143,20 +143,20 @@ export class TipData {
 			// #region Homebrew
 			FactoryLogic.createTip({
 				image: homebrewEditor,
-				content: 'You can create homebrew versions of anything in the **Library**.'
+				content: 'У **Library** можна створювати домашні версії майже будь-чого.'
 			}),
 			FactoryLogic.createTip({
 				image: homebrewMonsterBuilder,
-				content: 'When you\'re creating a homebrew monster, Forge Steel shows you similar monsters to help you choose your new monster\'s stat values.'
+				content: 'Коли ви створюєте домашнє чудовисько, Forge Steel показує схожих чудовиськ, щоб допомогти вам вибрати його значення характеристик.'
 			}),
 			FactoryLogic.createTip({
 				image: homebrewKitTuning,
-				content: 'When you\'re creating a homebrew kit, Forge Steel helps you to make sure your kit isn\'t overpowered.',
+				content: 'Коли ви створюєте домашній комплект, Forge Steel допомагає переконатися, що він не надто сильний.',
 				isNew: true
 			}),
 			FactoryLogic.createTip({
 				image: homebrewMonsterBuilderGenesplice,
-				content: 'When you\'re creating a homebrew monster, you can use the **Genesplice** tool to quickly jumble existing creatures together to create something new.',
+				content: 'Коли ви створюєте домашнє чудовисько, можна скористатися інструментом **Genesplice**, щоб швидко змішати наявних істот і отримати щось нове.',
 				isNew: true
 			}),
 			// #endregion
@@ -164,31 +164,31 @@ export class TipData {
 			// #region Adventures
 			FactoryLogic.createTip({
 				image: playbookAdventure,
-				content: 'You can design adventures in the **Library**.'
+				content: 'У **Library** можна створювати пригоди.'
 			}),
 			// #endregion
 
 			// #region Encounters
 			FactoryLogic.createTip({
 				image: playbookEncounter,
-				content: 'You can design encounters in the **Library**.'
+				content: 'У **Library** можна створювати сутички.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookEncounterTools,
-				content: 'If you tap the Information icon in the encounter header, you\'ll see information that\'ll help you pick minis for this encounter.',
+				content: 'Якщо натиснути піктограму інформації в заголовку сутички, ви побачите підказки, які допоможуть підібрати мініатюри для неї.',
 				isNew: true
 			}),
 			FactoryLogic.createTip({
 				image: playbookEncounterClassic,
-				content: 'If you want to print out your encounter, switch to the Classic view.'
+				content: 'Якщо ви хочете роздрукувати сутичку, перемкніться на вигляд Classic.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookEncounterBuilder,
-				content: 'Forge Steel makes it easy to build encounters by adding monsters and terrain elements.'
+				content: 'Forge Steel спрощує створення сутичок: достатньо додавати чудовиськ і елементи місцевості.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookEncounterRandom,
-				content: 'If you need an encounter in a hurry, Forge Steel can generate one - you just specify the difficulty and, optionally, the sort of monsters you want it to showcase.',
+				content: 'Якщо сутичка потрібна терміново, Forge Steel може згенерувати її за вас: просто вкажіть складність і, за бажання, тип чудовиськ, які хочете показати.',
 				isNew: true
 			}),
 			// #endregion
@@ -196,15 +196,15 @@ export class TipData {
 			// #region Montages
 			FactoryLogic.createTip({
 				image: playbookMontage,
-				content: 'You can design montages in the **Library**.'
+				content: 'У **Library** можна створювати монтажі.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookMontageClassic,
-				content: 'If you want to print out your montage, switch to the Classic view.'
+				content: 'Якщо ви хочете роздрукувати монтаж, перемкніться на вигляд Classic.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookMontageBuilder,
-				content: 'Forge Steel makes it easy to build montages by adding challenges and twists.'
+				content: 'Forge Steel спрощує створення монтажів, дозволяючи додавати випробування та повороти.'
 			}),
 			// #endregion
 
@@ -215,7 +215,7 @@ export class TipData {
 			}),
 			FactoryLogic.createTip({
 				image: playbookNegotiationClassic,
-				content: 'Якщо ви хочете роздрукувати свої переговори, перемкніться на вигляд Classic.'
+				content: 'Якщо ви хочете роздрукувати переговори, перемкніться на вигляд Classic.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookNegotiationBuilder,
@@ -226,26 +226,26 @@ export class TipData {
 			// #region Maps
 			FactoryLogic.createTip({
 				image: playbookMap,
-				content: 'You can design tactical maps in the **Library**.'
+				content: 'У **Library** можна створювати тактичні мапи.'
 			}),
 			FactoryLogic.createTip({
 				image: playbookMapAutobuild,
-				content: 'If you\'re in a hurry, you can get Forge Steel to generate a random tactical map for your encounters.'
+				content: 'Якщо ви поспішаєте, Forge Steel може згенерувати випадкову тактичну мапу для ваших сутичок.'
 			}),
 			// #endregion
 
 			// #region Session
 			FactoryLogic.createTip({
 				image: sessionCounter,
-				content: 'In the **Session** screen you can set counters, counting down (or up) to track whatever needs to be tracked in your adventure.'
+				content: 'На екрані **Session** можна налаштовувати лічильники, що рахують униз або вгору, щоб відстежувати все потрібне у вашій пригоді.'
 			}),
 			FactoryLogic.createTip({
 				image: sessionEncounter,
-				content: 'In the **Session** screen you can run encounters, easily handling stamina and conditions for each of the combatants.'
+				content: 'На екрані **Session** ви можете проводити сутички, легко керуючи витривалістю та станами всіх учасників бою.'
 			}),
 			FactoryLogic.createTip({
 				image: sessionMontage,
-				content: 'In the **Session** screen you can run montages, tracking each of the heroes\' successes and failures.'
+				content: 'На екрані **Session** ви можете проводити монтажі, відстежуючи успіхи й провали кожного героя.'
 			}),
 			FactoryLogic.createTip({
 				image: sessionNegotiation,
@@ -253,30 +253,30 @@ export class TipData {
 			}),
 			FactoryLogic.createTip({
 				image: sessionMultiple,
-				content: 'Якщо ви проводите більше ніж одну подію в **Session** (сутичку, montage або переговори), ви можете перемикатися між ними у верхній частині екрана.'
+				content: 'Якщо ви проводите в **Session** більше ніж одну подію, наприклад сутичку, монтаж або переговори, між ними можна перемикатися у верхній частині екрана.'
 			}),
 			// #endregion
 
 			// #region App
 			FactoryLogic.createTip({
 				image: appNavigation,
-				content: 'Use the navigation bar, at the bottom left of the screen, to switch between Forge Steel\'s sections.'
+				content: 'Використовуйте панель навігації внизу ліворуч, щоб перемикатися між розділами Forge Steel.'
 			}),
 			FactoryLogic.createTip({
 				image: appReference,
-				content: 'Press the Reference button, at the bottom right of the screen, to access the reference section.'
+				content: 'Натисніть кнопку Reference внизу праворуч, щоб відкрити довідковий розділ.'
 			}),
 			FactoryLogic.createTip({
 				image: appRoll,
-				content: 'Press the Roll button, at the bottom right of the screen, to make a power roll or saving throw.'
+				content: 'Натисніть кнопку Roll внизу праворуч, щоб зробити кидок сили або рят. кидок.'
 			}),
 			FactoryLogic.createTip({
 				image: appSettings,
-				content: 'Press the Settings button, at the bottom right of the screen, to modify app preferences and settings.'
+				content: 'Натисніть кнопку Settings внизу праворуч, щоб змінити параметри й налаштування застосунку.'
 			}),
 			FactoryLogic.createTip({
 				image: appAbout,
-				content: 'Spotted a bug? Have an idea for a new feature? Press the About button to find links to the issue tracker, or post on the MCDM Draw Steel Discord.'
+				content: 'Помітили ваду? Маєте ідею для нової функції? Натисніть кнопку About, щоб знайти посилання на трекер проблем, або напишіть у Discord MCDM Draw Steel.'
 			})
 			// #endregion
 		];

@@ -6,7 +6,7 @@ const kitArmorNameMap: Record<string, KitArmor> = {
     'Light Armor': KitArmor.Light,
     'Medium Armor': KitArmor.Medium,
     'Heavy Armor': KitArmor.Heavy,
-    Shield: KitArmor.Shield,
+    'Shield': KitArmor.Shield,
     [KitArmor.Light]: KitArmor.Light,
     [KitArmor.Medium]: KitArmor.Medium,
     [KitArmor.Heavy]: KitArmor.Heavy,
@@ -14,14 +14,14 @@ const kitArmorNameMap: Record<string, KitArmor> = {
 };
 
 const kitWeaponNameMap: Record<string, KitWeapon> = {
-    Bow: KitWeapon.Bow,
+    'Bow': KitWeapon.Bow,
     'Ensnaring Weapon': KitWeapon.Ensnaring,
     'Heavy Weapon': KitWeapon.Heavy,
     'Light Weapon': KitWeapon.Light,
     'Medium Weapon': KitWeapon.Medium,
-    Polearm: KitWeapon.Polearm,
+    'Polearm': KitWeapon.Polearm,
     'Unarmed Strike': KitWeapon.Unarmed,
-    Whip: KitWeapon.Whip,
+    'Whip': KitWeapon.Whip,
     [KitWeapon.Bow]: KitWeapon.Bow,
     [KitWeapon.Ensnaring]: KitWeapon.Ensnaring,
     [KitWeapon.Heavy]: KitWeapon.Heavy,

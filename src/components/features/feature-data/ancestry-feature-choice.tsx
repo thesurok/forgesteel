@@ -28,7 +28,7 @@ interface InfoProps {
 export const InfoAncestryFeatureChoice = (props: InfoProps) => {
 	if (!props.data.selected) {
 		return (
-			<div className='ds-text'>A {props.data.value}pt ancestry feature.</div>
+			<div className='ds-text'>Особливість походження вартістю {props.data.value} оч.</div>
 		);
 	}
 
@@ -43,7 +43,7 @@ interface EditProps {
 }
 
 export const EditAncestryFeatureChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureAncestryFeatureChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureAncestryFeatureChoiceData>(Utils.copy(props.data));
 
 	const setSourceCurrent = (value: boolean) => {
 		const copy = Utils.copy(data);
@@ -68,10 +68,10 @@ export const EditAncestryFeatureChoice = (props: EditProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			<HeaderText>Source</HeaderText>
-			<Toggle label='Current ancestry' value={data.source.current} onChange={setSourceCurrent} />
-			<Toggle label='Former ancestry' value={data.source.former} onChange={setSourceFormer} />
-			<HeaderText>Value</HeaderText>
+			<HeaderText>Джерело</HeaderText>
+			<Toggle label='Поточне походження' value={data.source.current} onChange={setSourceCurrent} />
+			<Toggle label='Колишнє походження' value={data.source.former} onChange={setSourceFormer} />
+			<HeaderText>Значення</HeaderText>
 			<NumberSpin value={data.value} onChange={setValue} />
 		</Space>
 	);

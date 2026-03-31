@@ -7,48 +7,48 @@ import { KitWeapon } from '@/enums/kit-weapon';
 export class ArtifactData {
 	static bladeOfAThousandYears: Item = FactoryLogic.createItem({
 		id: 'item-blade-of-a-thousand-years',
-		name: 'Blade of a Thousand Years',
-		description: 'This fabled sword features a hilt made of glittering starlight, out of which its gleaming metal blade extends.',
+		name: 'Клинок тисячі років',
+		description: 'Цей легендарний меч має руківʼя з мерехтливого зоряного світла, з якого простягається сяйливе металеве лезо.',
 		type: ItemType.Artifact,
-		keywords: [ AbilityKeyword.Magic, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Heavy ],
+		keywords: [AbilityKeyword.Magic, KitWeapon.Light, KitWeapon.Medium, KitWeapon.Heavy],
 		effect: `
-Whether drawn from a stone, gifted by a lake spirit, forged by a god, or used to kill one, there is a sword that exists outside of time and space. It is always where it needs to be precisely when it needs to be there--then is gone in a flash when the need for it has waned. The sword is depicted in art, song, and story across many living cultures—and even more frequently among cultures long buried, often after proving the deciding factor in a battle. It's been wielded by numerous heroes of legend, and even more who have slipped into the forgotten shadows of history.
+Байдуже, чи його витягли з каменя, чи подарував дух озера, чи викував бог, чи ним убили бога, існує меч поза часом і простором. Він завжди опиняється там, де потрібен, рівно тоді, коли потрібен, а щойно потреба минає, зникає в одну мить. Меч зображають у мистецтві, піснях і легендах багатьох живих культур, а ще частіше серед давно похованих культур, нерідко після того, як він вирішив долю битви. Ним володіли численні герої легенд і ще більше тих, хто щез у забутих тінях історії.
 
-Though its size and make are often debated, the sword is consistently described as having a crossguard made from pure starlight. When wielded, a brilliant metal blade springs forth from that hilt, suiting the holder's taste in weapons. Those who touch the blade are filled with the vigor and power of the heroes who have held it before.`,
+Хоча про його розмір і форму часто сперечаються, меч незмінно описують як такий, що має руківʼя з чистого зоряного світла. Коли ним володіють, із цього руківʼя виривається блискуче металеве лезо, що відповідає смаку власника щодо зброї. Кожного, хто торкається леза, сповнює наснага й сила героїв, які тримали його раніше.`,
 		featuresByLevel: [
 			{
 				level: 1,
 				features: [
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-1',
-						name: 'Suited for Victory',
-						description: 'This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a безкоштовний маневр. Any weapon ability that deals rolled damage using the Blade of a Thousand Years always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also frightened and weakened until the end of their next turn.'
+						name: 'Створений для перемоги',
+						description: 'Цей меч набуває того розміру, форми й вигляду, які володар бажає йому надати. Він може бути легкою, середньою або важкою зброєю, і ви можете змінювати його тип та вигляд безкоштовним маневром. Будь-яка збройна здібність, що завдає шкоди кидком, використовуючи Клинок тисячі років, завжди завдає священної шкоди. Будь-яка істота з вразливістю до священної шкоди, яка отримує шкоду від цієї зброї, також стає зляканою й ослабленою до кінця свого наступного ходу.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-blade-of-a-thousand-years-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 5
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-2',
-						name: 'Rally the Righteous',
-						description: 'This blade fills all around it with hope and courage. Each ally within 1 mile of the weapon gains an edge on weapon abilities and magic abilities, and has damage immunity 5. Additionally, each such creature\'s Stamina maximum increases by 15 and they gain a +15 bonus to Stamina when this ability first affects them.'
+						name: 'Згуртувати праведних',
+						description: 'Це лезо сповнює все довкола надією і відвагою. Кожен союзник у межах 1 милі від зброї отримує перевагу на збройні та магічні здібності й має імунітет до шкоди 5. Крім того, максимум Витривалості кожної такої істоти збільшується на 15, і вона отримує бонус +15 до Витривалості, коли ця здібність уперше на неї впливає.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-3',
-						name: 'Turn the Tide',
-						description: 'Each enemy minion within 1 mile of the sword is dazed. Any enemy leader or solo creature in that area takes a bane on ability rolls.'
+						name: 'Переломити хід битви',
+						description: 'Кожен ворожий міньйон у межах 1 милі від меча приголомшений. Будь-який ворожий лідер або одиночна істота в цій зоні отримує шкоду на кидки здібностей.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-4',
-						name: 'Victory\'s Assurance',
-						description: 'This weapon always appears on the eve before what will later come to be known as a historic battle. It disappears after 24 hours or when the battle is won, whichever comes first. By taking the blade, the wielder unwittingly enters into a pact with the weapon. If they don\'t secure victory against monumental odds or some great foe by the time the sword disappears, they are pulled into the sword, preventing any chance of resurrection, and forever dooming them to lend their strength to the heroes of other ages.'
+						name: 'Запорука перемоги',
+						description: 'Ця зброя завжди зʼявляється напередодні того, що згодом назвуть історичною битвою. Вона зникає через 24 години або коли битву виграно, залежно від того, що станеться раніше. Взявши лезо, володар мимоволі укладає з ним пакт. Якщо до зникнення меча він не здобуде перемоги попри неймовірні шанси або над великим ворогом, меч затягує його в себе, не залишаючи жодного шансу на воскресіння, і назавжди прирікає віддавати свою силу героям інших епох.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-blade-of-a-thousand-years-5',
-						name: 'Soul of the Martyr',
-						description: 'If the wielder dies while holding this blade, their soul is drawn into the starlight hilt, where it remains for the rest of time to prevent any chance of resurrection. The sword disappears, but the lingering feeling of hope that spreads from it remains. For the next hour, the effects of Rally the Righteous increase to provide a double edge on weapon abilities and magic abilities, damage immunity 10, an increase to Stamina maximum of 30, and a bonus to Stamina of +30.'
+						name: 'Душа мученика',
+						description: 'Якщо володар помирає, тримаючи це лезо, його душу втягує в зоряне руківʼя, де вона залишається до кінця часів, не залишаючи жодного шансу на воскресіння. Меч зникає, але відчуття надії, яке він розсіює, не минає. Протягом наступної години ефекти Згуртувати праведних посилюються: вони дають подвійну перевагу на збройні та магічні здібності, імунітет до шкоди 10, збільшення максимуму Витривалості на 30 і бонус +30 до Витривалості.'
 					})
 				]
 			}
@@ -57,42 +57,42 @@ Though its size and make are often debated, the sword is consistently described 
 
 	static encepter: Item = FactoryLogic.createItem({
 		id: 'item-encepter',
-		name: 'Encepter',
-		description: 'A bejeweled scepter with a spiraling porcelain handle balances an orb of light above its crown.',
+		name: 'Енцептер',
+		description: 'Оздоблений коштовностями скіпетр зі спіральним порцеляновим руківʼям підтримує над своєю короною сферу світла.',
 		type: ItemType.Artifact,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		effect: `
-This scepter waits high in the sky, resting within an endlessly raging cyclone. It waits for the one who will unify all people under its light. It awaits its champion.
+Цей скіпетр чекає високо в небі, спочиваючи в осерді нескінченно лютого циклону. Він чекає на того, хто обʼєднає всіх людей під його світлом. Він чекає на свого чемпіона.
 
-The Encepter is said to have first manifested in a young world doomed to apocalypse--unless every last inhabitant of that world could stand together. The scepter is said to impose either dominion or obliteration over any threat its light is drawn around. Today, it is most commonly known as a bad omen, and should the Encepter reveal itself, folk know that the world teeters on the brink of destruction. Whether any of the stories are true, few can say, for the only living eyes that have witnessed the Encepter belong to dragons deep in slumber.`,
+Кажуть, Енцептер уперше зʼявився в юному світі, приреченому на апокаліпсис, якщо лише кожен мешканець того світу не стане пліч-о-пліч. Кажуть, скіпетр несе або владу, або знищення над будь-якою загрозою, яку оточує його світло. Сьогодні його найчастіше вважають лихою ознакою, і якщо Енцептер являє себе, люди знають: світ балансує на межі знищення. Чи правдиві ці історії, сказати важко, адже єдині живі очі, що бачили Енцептер, належать драконам у глибокому сні.`,
 		featuresByLevel: [
 			{
 				level: 1,
 				features: [
 					FactoryLogic.feature.create({
 						id: 'item-encepter-1',
-						name: 'Shining Presence',
-						description: 'The one who wields the Encepter is always cast in a brilliant glow. Any power roll made by the wielder that uses Presence automatically achieves a tier 3 outcome, though the wielder can still roll in an attempt to score a critical success or critical hit.'
+						name: 'Сяйна присутність',
+						description: 'Той, хто володіє Енцептером, завжди оповитий яскравим сяйвом. Будь-який кидок сили, який володар робить із Присутністю, автоматично отримує результат 3-го рівня, хоча володар усе ще може кидати, намагаючись здобути критичний успіх або критичне влучання.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-2',
-						name: 'Champion\'s Lasso',
-						description: 'As a безкоштовний маневр, the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder\'s choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.'
+						name: 'Ласо чемпіона',
+						description: 'Безкоштовним маневром володар скіпетра може провести сяйну лінію світла, що повторює його шлях під час руху, або прибрати цю сяйну лінію. Якщо володар перетинає цю лінію, кожна істота й обʼєкт за вибором володаря, замкнені всередині лінії та в межах 2 клітинок над нею або під нею, вважаються впійманими ласо Енцептера. Істоти залишаються впійманими, доки ласо не буде відпущене або доки не буде проведено нову лінію.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-3',
-						name: 'Dominion',
-						description: 'Each creature lassoed by the Encepter is restrained and can\'t teleport. A creature caught in midair while lassoed stays in place rather than falling.'
+						name: 'Панування',
+						description: 'Кожна істота, впіймана ласо Енцептера, є скутою і не може телепортуватися. Істота, захоплена в повітрі ласо, залишається на місці замість того, щоб упасти.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-4',
-						name: 'Obliteration',
-						description: 'As a основна дія, the wielder raises the Encepter to the sky. Each target lassoed by the Encepter erupts in a prismatic burst of light, taking 10 psychic damage for each square horizontally encircled by the lasso. The lasso is then immediately released.'
+						name: 'Знищення',
+						description: 'Основною дією володар підносить Енцептер до неба. Кожна ціль, впіймана ласо Енцептера, вибухає призматичним сплеском світла, отримуючи 10 психічної шкоди за кожну клітинку, горизонтально охоплену ласо. Після цього ласо негайно відпускається.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-encepter-5',
-						name: 'At World\'s End',
-						description: 'If the Encepter was not taken from its cyclonic resting place with the purpose of vanquishing a terrible peril, then a terrible peril emerges to threaten the world within 3 days of the scepter being taken.'
+						name: 'На краю світу',
+						description: 'Якщо Енцептер забрали з його циклонічного місця спочинку не з метою подолати жахливу небезпеку, то протягом 3 днів після того, як скіпетр буде взято, зʼявиться жахлива загроза світові.'
 					})
 				]
 			}
@@ -101,44 +101,44 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 
 	static mortalCoil: Item = FactoryLogic.createItem({
 		id: 'item-mortal-coil',
-		name: 'Mortal Coil',
-		description: 'This floating helix of golden metal spins ever faster as it activates, crackling with crimson sparks.',
+		name: 'Смертний виток',
+		description: 'Ця ширяюча спіраль із золотого металу обертається дедалі швидше, щойно активується, потріскуючи багряними іскрами.',
 		type: ItemType.Artifact,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		effect: `
-Change is the engine of existence. Permanence begets stagnation. When the past refuses to relinquish control, a path must be cleared for the future. Energized by the flickering of minds and souls passing through the void, the Mortal Coil taps into the entropic potential inherent in every living creature to cast a shadow capable of felling even gods. For the true gift of life is death, and gifts are meant to be given.
+Зміна є рушієм буття. Сталість породжує застій. Коли минуле відмовляється поступитися владою, майбутньому слід прокласти шлях. Живлений мерехтінням розумів і душ, що проходять крізь порожнечу, Смертний виток звертається до ентропійного потенціалу, притаманного кожній живій істоті, щоби відкинути тінь, здатну скинути навіть богів. Адже справжній дар життя - це смерть, а дари призначені для того, щоб їх дарували.
 
-Only one destined for death can contain the power of the Mortal Coil. A mortal creature who carries this artifact serves as its host, gaining an additional основна дія on each of their turns, aging at ten times the usual rate, and becoming unable to ever regain Stamina. A host with no natural maximum lifespan permanently reduces their Stamina maximum by 10 each year.
+Лише той, кому судилася смерть, може вмістити силу Смертного витка. Смертна істота, що носить цей артефакт, стає його носієм, отримує додаткову основну дію на кожному своєму ході, старіє вдесятеро швидше за звичне й більше не може відновлювати Витривалість. Носій без природної межі життя щороку назавжди зменшує свій максимум Витривалості на 10.
 
-When the Mortal Coil is left unattended or is in the possession of a creature who is not mortal, it activates and can't be deactivated until a mortal creature becomes its host once more. While active, the artifact extends a penumbra of influence for 10 miles in every direction. Every creature in the penumbra is subject to the following effects.`,
+Коли Смертний виток лишається без нагляду або перебуває у володінні істоти, яка не є смертною, він активується і не може бути деактивований, доки смертна істота знову не стане його носієм. Поки активний, артефакт простягає півтінь впливу на 10 миль у кожному напрямку. Кожна істота в цій півтіні підпадає під наведені нижче ефекти.`,
 		featuresByLevel: [
 			{
 				level: 1,
 				features: [
 					FactoryLogic.feature.create({
 						id: 'item-mortal-coil-1',
-						name: 'One Foot in the Grave',
-						description: 'Any creature in the penumbra has damage weakness 2 and can\'t regain Stamina.'
+						name: 'Однією ногою в могилі',
+						description: 'Кожна істота в півтіні має вразливість до шкоди 2 і не може відновлювати Витривалість.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-mortal-coil-2',
-						name: 'Get Busy Dyin\'',
-						description: 'Each creature in the penumbra ages at 10 times the usual rate, and diseases and poisons affecting creatures in the penumbra run their course at 10 times their usual rate. A creature with no natural maximum lifespan permanently reduces their Stamina maximum by 10 each year. Each creature can undertake one additional respite activity during each respite.'
+						name: 'Пора вмирати',
+						description: 'Кожна істота в півтіні старіє в 10 разів швидше за звичне, а хвороби й отрути, що впливають на істот у півтіні, минають у 10 разів швидше за звичайне. Істота без природної межі життя щороку назавжди зменшує свій максимум Витривалості на 10. Кожна істота може виконувати на одну додаткову дію перепочинку під час кожного перепочинку.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-mortal-coil-3',
-						name: 'If You Meet God on the Road, Kill Them',
-						description: 'Every non-mortal entity in the penumbra is granted the gift of mortality. Previously immortal or invulnerable entities--from planar creatures to the gods themselves--can be killed while in the penumbra, though not necessarily easily. Any creature or entity who dies in the Mortal Coil\'s penumbra experiences perfect death. They are permanently, irrevocably dead, and no magic, psionics, or technology can restore them to life.'
+						name: 'Якщо зустрінеш бога на шляху, вбий його',
+						description: 'Кожна несмертна сутність у півтіні отримує дар смертності. Раніше безсмертних або невразливих сутностей, від планарних істот до самих богів, можна вбити, перебуваючи в півтіні, хоч і не обовʼязково легко. Будь-яка істота або сутність, що помирає в півтіні Смертного витка, зазнає досконалої смерті. Вона мертва назавжди, безповоротно, і жодна магія, псіоніка чи технологія не можуть повернути її до життя.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-mortal-coil-4',
-						name: 'Perpetual Motion',
-						description: 'If there are ever no creatures or entities within the Mortal Coil\'s penumbra, the radius of the penumbra doubles.'
+						name: 'Вічний рух',
+						description: 'Якщо в півтіні Смертного витка колись не залишиться жодної істоти чи сутності, радіус півтіні подвоюється.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'item-mortal-coil-5',
-						name: 'Beneath Contempt',
-						description: 'Deities and their servants always overlook the Mortal Coil and its host--either unable to notice it, or not considering it a threat. If the artifact is somehow destroyed or unmade through godly power, it consumes a year of life from every humanoid in the manifold where it was destroyed, then reforms in a hidden place.'
+						name: 'Негідний зневаги',
+						description: 'Божества та їхні слуги завжди не помічають Смертний виток і його носія, або не здатні його побачити, або не вважають його загрозою. Якщо артефакт якимось чином знищено чи розвіяно божественною силою, він забирає по року життя в кожного гуманоїда в маніфолді, де його знищили, а потім переформовується у схованому місці.'
 					})
 				]
 			}

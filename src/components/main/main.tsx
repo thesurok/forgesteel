@@ -72,7 +72,6 @@ import { SessionDirectorPage } from '@/components/pages/session/director/session
 import { SessionLogic } from '@/logic/session-logic';
 import { SessionPlayerPage } from '@/components/pages/session/player/session-player-page';
 import { SettingsModal } from '@/components/modals/settings/settings-modal';
-import { SourcebookData } from '@/data/sourcebook-data';
 import { SourcebookLogic } from '@/logic/sourcebook-logic';
 import { SourcebookUpdateLogic } from '@/logic/update/sourcebook-update-logic';
 import { SourcebooksModal } from '@/components/modals/sourcebooks/sourcebooks-modal';
@@ -106,26 +105,26 @@ interface Props {
 export const Main = (props: Props) => {
 	const isSmall = useIsSmall();
 	const navigation = useNavigation();
-	const [ notify, notifyContext ] = notification.useNotification();
+	const [notify, notifyContext] = notification.useNotification();
 	const { triggerSyncOnChange } = useSyncStatus();
-	const [ heroes, setHeroes ] = useState<Hero[]>(props.heroes);
-	const [ session, setSession ] = useState<Session>(props.session);
-	const [ homebrewSourcebooks, setHomebrewSourcebooks ] = useState<Sourcebook[]>(props.homebrewSourcebooks);
-	const [ hiddenSourcebookIDs, setHiddenSourcebookIDs ] = useState<string[]>(props.hiddenSourcebookIDs);
-	const [ options, setOptions ] = useState<Options>(() => {
+	const [heroes, setHeroes] = useState<Hero[]>(props.heroes);
+	const [session, setSession] = useState<Session>(props.session);
+	const [homebrewSourcebooks, setHomebrewSourcebooks] = useState<Sourcebook[]>(props.homebrewSourcebooks);
+	const [hiddenSourcebookIDs, setHiddenSourcebookIDs] = useState<string[]>(props.hiddenSourcebookIDs);
+	const [options, setOptions] = useState<Options>(() => {
 		const opts = Utils.copy(props.options);
 		if (isSmall) {
 			opts.compactView = true;
 		}
 		return opts;
 	});
-	const [ connectionSettings, setConnectionSettings ] = useState<ConnectionSettings>(props.connectionSettings);
-	const [ errors, setErrors ] = useState<Event[]>([]);
-	const [ drawer, setDrawer ] = useState<ReactNode>(null);
-	const [ playerView, setPlayerView ] = useState<Window | null>(null);
-	const [ spinning, setSpinning ] = useState(false);
+	const [connectionSettings, setConnectionSettings] = useState<ConnectionSettings>(props.connectionSettings);
+	const [errors, setErrors] = useState<Event[]>([]);
+	const [drawer, setDrawer] = useState<ReactNode>(null);
+	const [playerView, setPlayerView] = useState<Window | null>(null);
+	const [spinning, setSpinning] = useState(false);
 
-	useErrorListener(event => setErrors([ ...errors, event ]));
+	useErrorListener(event => setErrors([...errors, event]));
 
 	// #region Persistence
 
@@ -157,7 +156,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving heroes',
+						title: 'Помилка збереження героїв',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -166,7 +165,7 @@ export const Main = (props: Props) => {
 			.catch(err => {
 				console.error(err);
 				notify.error({
-					title: 'Error saving heroes',
+					title: 'Помилка збереження героїв',
 					description: Utils.getErrorMessage(err),
 					placement: 'top'
 				});
@@ -185,7 +184,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving session',
+						title: 'Помилка збереження сесії',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -208,7 +207,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving sourcebooks',
+						title: 'Помилка збереження збірників',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -224,7 +223,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving hidden sourcebooks',
+						title: 'Помилка збереження прихованих збірників',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -240,7 +239,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving options',
+						title: 'Помилка збереження параметрів',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -256,7 +255,7 @@ export const Main = (props: Props) => {
 				err => {
 					console.error(err);
 					notify.error({
-						title: 'Error saving connection settings',
+						title: 'Помилка збереження параметрів підключення',
 						description: Utils.getErrorMessage(err),
 						placement: 'top'
 					});
@@ -269,7 +268,7 @@ export const Main = (props: Props) => {
 	// #region Welcome
 
 	const newHero = (folder: string) => {
-		const hero = FactoryLogic.createHero([ SourcebookData.core.id, SourcebookData.orden.id ]);
+		const hero = FactoryLogic.createHero(SourcebookLogic.getDefaultHeroSourcebookIDs(SourcebookLogic.getSourcebooks(homebrewSourcebooks)));
 		hero.folder = folder;
 
 		setDrawer(null);
@@ -1507,7 +1506,7 @@ export const Main = (props: Props) => {
 	const onSelectCharacteristic = (characteristic: Characteristic, hero: Hero) => {
 		setDrawer(
 			<RollModal
-				characteristics={[ characteristic ]}
+				characteristics={[characteristic]}
 				hero={hero}
 				onClose={() => setDrawer(null)}
 			/>
@@ -1567,8 +1566,8 @@ export const Main = (props: Props) => {
 					persistHero(copy);
 
 					notify.info({
-						title: 'Respite',
-						description: 'You\'ve taken a respite. Your hero\'s stats have been reset.',
+						title: 'Перепочинок',
+						description: 'Ви взяли перепочинок. Показники героя скинуто.',
 						placement: 'top'
 					});
 				}}

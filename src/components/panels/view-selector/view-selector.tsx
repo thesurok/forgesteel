@@ -23,20 +23,20 @@ export const ViewSelector = (props: Props) => {
 
 	const getOptions = () => {
 		const options = [
-			createOption('modern', 'Interactive View (for on screen use)', <DesktopOutlined />)
+			createOption('modern', 'Інтерактивний вигляд (для гри з екрана)', <DesktopOutlined />)
 		];
 
 		switch (props.mode) {
 			case 'hero':
-				options.push(createOption('classic', 'Classic View (for exporting)', <FilePdfOutlined />));
-				options.push(createOption('abilities', 'Standard Abilities', <TableOutlined />));
-				options.push(createOption('notes', 'Notes', <FileTextOutlined />));
+				options.push(createOption('classic', 'Класичний вигляд (для експорту)', <FilePdfOutlined />));
+				options.push(createOption('abilities', 'Стандартні здібності', <TableOutlined />));
+				options.push(createOption('notes', 'Нотатки', <FileTextOutlined />));
 				break;
 			case 'classic':
-				options.push(createOption('classic', 'Classic View (for exporting)', <FilePdfOutlined />));
+				options.push(createOption('classic', 'Класичний вигляд (для експорту)', <FilePdfOutlined />));
 				break;
 			case 'printable':
-				options.push(createOption('print', 'Print', <PrinterOutlined />));
+				options.push(createOption('print', 'Друк', <PrinterOutlined />));
 				break;
 		}
 

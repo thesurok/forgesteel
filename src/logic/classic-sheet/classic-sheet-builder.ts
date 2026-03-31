@@ -1,3 +1,4 @@
+import { getAbilityUsageCanonicalName, getAbilityUsageLabel } from '@/utils/ability-usages';
 import { Ability } from '@/models/ability';
 import { AbilityKeyword } from '@/enums/ability-keyword';
 import { AbilityLogic } from '@/logic/ability-logic';
@@ -25,7 +26,6 @@ import { MonsterSheet } from '@/models/classic-sheets/monster-sheet';
 import { Options } from '@/models/options';
 import { SheetFormatter } from '@/logic/classic-sheet/sheet-formatter';
 import { Summon } from '@/models/summon';
-import { getAbilityUsageCanonicalName, getAbilityUsageLabel } from '@/utils/ability-usages';
 
 export class ClassicSheetBuilder {
 	static buildCharacteristicsSheet = (creature: Hero | Monster | Follower | undefined): CharacteristicsSheet => {
@@ -68,9 +68,9 @@ export class ClassicSheetBuilder {
 	// #region Monster Sheet
 	static buildMonsterSheet = (monster: Monster): MonsterSheet => {
 		const level = MonsterLogic.getMonsterLevel(monster);
-		let monsterType = `Lvl ${level} ${monster.role.organization}`;
+		let monsterType = `Рів. ${level} ${Format.getMonsterOrganizationName(monster.role.organization)}`;
 		if (monster.role.type !== MonsterRoleType.NoRole) {
-			monsterType += ` ${monster.role.type}`;
+			monsterType += ` ${Format.getMonsterRoleName(monster.role.type)}`;
 		}
 
 		const speed = MonsterLogic.getSpeed(monster);
@@ -81,19 +81,19 @@ export class ClassicSheetBuilder {
 			id: monster.id,
 			name: MonsterLogic.getMonsterName(monster),
 			type: monsterType,
-			role: monster.role.type,
+			role: Format.getMonsterRoleName(monster.role.type),
 
 			characteristics: ClassicSheetBuilder.buildCharacteristicsSheet(monster),
 
-			keywords: monster.keywords.join(', '),
+			keywords: Format.formatKeywordList(monster.keywords),
 			size: FormatLogic.getSize(monster.size),
 			speed: speed.value,
 			stamina: MonsterLogic.getStamina(monster),
 			stability: monster.stability,
 			freeStrike: MonsterLogic.getFreeStrikeDamage(monster),
-			immunity: immunities.map(mod => `${mod.damageType} ${mod.value}`).join(', '),
-			weakness: weaknesses.map(mod => `${mod.damageType} ${mod.value}`).join(', '),
-			movement: speed.modes.map(m => Format.capitalize(m)).join(', '),
+			immunity: immunities.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', '),
+			weakness: weaknesses.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', '),
+			movement: Format.formatMovementModes(speed.modes),
 			withCaptain: monster.withCaptain
 		};
 
@@ -123,7 +123,7 @@ export class ClassicSheetBuilder {
 			isNotTrueAbility: false,
 			cost: Number(ability.cost) || 0,
 			actionType: getAbilityUsageCanonicalName(ability.type.usage),
-			keywords: ability.keywords.join(', '),
+			keywords: ability.keywords.map(keyword => Format.getKeywordName(keyword)).join(', '),
 			target: ability.target,
 			trigger: ability.type.trigger,
 			hasPowerRoll: false
@@ -145,9 +145,9 @@ export class ClassicSheetBuilder {
 			} else if (ability.type.usage === AbilityUsage.FreeStrike) {
 				sheet.abilityType = 'Free Strike';
 				if (ability.name.toLowerCase().includes('melee')) {
-					sheet.name = 'Melee Free Strike';
+					sheet.name = 'Вільний удар ближнього бою';
 				} else if (ability.name.toLowerCase().includes('ranged')) {
-					sheet.name = 'Ranged Free Strike';
+					sheet.name = 'Вільний удар дальнього бою';
 				}
 			} else if (ability.type.usage === AbilityUsage.Maneuver) {
 				sheet.abilityType = 'Maneuver';
@@ -167,7 +167,7 @@ export class ClassicSheetBuilder {
 			if (ability.cost === 'signature') {
 				sheet.abilityType = 'Signature Ability';
 			} else if (ability.cost > 0) {
-				sheet.abilityType = `${ability.cost} Malice`;
+				sheet.abilityType = `${ability.cost} Злоби`;
 			} else if (isMonster && creature.retainer?.level) {
 				sheet.abilityType = 'Encounter';
 			} else {
@@ -177,7 +177,7 @@ export class ClassicSheetBuilder {
 
 		if (creature === undefined) {
 			if (ability.cost !== 'signature' && ability.cost > 0) {
-				sheet.abilityType = `${ability.cost} Malice`;
+				sheet.abilityType = `${ability.cost} Злоби`;
 			} else {
 				sheet.abilityType = '';
 			}
@@ -241,7 +241,7 @@ export class ClassicSheetBuilder {
 				const allCharacteristics = Object.values(Characteristic).sort(SheetFormatter.sortCharacteristics);
 				const isAllCharacteristics = allCharacteristics.every((c, i) => characteristics[i] === c);
 				if (isAllCharacteristics) {
-					sheet.rollPower = 'Highest Characteristic';
+					sheet.rollPower = 'Найвища характеристика';
 				} else {
 					sheet.rollPower = SheetFormatter.joinCommasOr(characteristics.map(c => Format.getCharacteristicAbbreviation(c)));
 				}

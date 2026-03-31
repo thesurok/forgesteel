@@ -11,14 +11,14 @@ import { KitArmor } from '@/enums/kit-armor';
 export class LeveledArmorData {
 	static adaptiveSecondSkin: Item = FactoryLogic.createItem({
 		id: 'item-adaptive-second-skin',
-		name: 'Adaptive Second Skin of Toxins',
-		description: 'This suit is shaped of tough leather and set with thousands of tiny barbs on the inside, all thankfully pain-free to the touch.',
+		name: 'Адаптивна друга шкіра отрут',
+		description: 'Цей обладунок зроблено з міцної шкіри й усіяно тисячами крихітних шипів зсередини, які, на щастя, не болять на дотик.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Light, AbilityKeyword.Magic ],
+		keywords: [KitArmor.Light, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Five rabid honey badger pelts, the quills of a hedgehog',
-			source: 'Texts or lore in Іллірик (Yllyric)',
-			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+			prerequisites: 'Пʼять шкур скажених медоїдів, голки їжака',
+			source: 'Тексти або перекази мовою Іллірик (Yllyric)',
+			characteristic: [Characteristic.Agility, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -36,7 +36,7 @@ export class LeveledArmorData {
 							FactoryLogic.damageModifier.createCharacteristic({
 								damageType: DamageType.Acid,
 								modifierType: DamageModifierType.Immunity,
-								characteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+								characteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 							})
 						]
 					}),
@@ -46,7 +46,7 @@ export class LeveledArmorData {
 							FactoryLogic.damageModifier.createCharacteristic({
 								damageType: DamageType.Poison,
 								modifierType: DamageModifierType.Immunity,
-								characteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+								characteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 							})
 						]
 					})
@@ -58,7 +58,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-adaptive-second-skin-5',
 						name: '',
-						description: 'Whenever an adjacent creature deals damage to you, they take 3 acid or poison damage (your choice).'
+						description: 'Щоразу, коли сусідня істота завдає вам шкоди, вона отримує 3 кислотної або отруйної шкоди (на ваш вибір).'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-adaptive-second-skin-5a',
@@ -73,7 +73,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-adaptive-second-skin-9',
 						name: '',
-						description: 'An adjacent creature who deals damage to you takes 6 acid or poison damage.'
+						description: 'Сусідня істота, яка завдає вам шкоди, отримує 6 кислотної або отруйної шкоди.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-adaptive-second-skin-9a',
@@ -83,10 +83,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-adaptive-second-skin-9b',
-							name: 'Use Adaptive Second Skin of Toxins',
+							name: 'Використати Адаптивну другу шкіру отрут',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You transmute a 2-cube area of liquid or gas adjacent to you into liquid acid or poison gas until the start of your next turn. Any creature who enters the area for the first time in a combat round or starts their turn there takes 6 acid or poison damage, as appropriate.')
+								FactoryLogic.createAbilitySectionText('Ви перетворюєте область рідини або газу куба 2 поруч із собою на рідку кислоту або отруйний газ до початку свого наступного ходу. Кожна істота, яка вперше за бойовий раунд входить в область або починає там свій хід, отримує 6 кислотної або отруйної шкоди відповідно.')
 							]
 						})
 					})
@@ -97,14 +97,14 @@ export class LeveledArmorData {
 
 	static chainOfTheSeaAndSky: Item = FactoryLogic.createItem({
 		id: 'item-chain-of-the-sea-and-sky',
-		name: 'Chain of the Sea and Sky',
-		description: 'This set of heavy chain mail is created to allow free movement in extreme environments without sacrificing protection.',
+		name: 'Кольчуга моря й неба',
+		description: 'Цю важку кольчугу створено, щоб вільно рухатися в екстремальних умовах, не жертвуючи захистом.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Heavy, AbilityKeyword.Magic ],
+		keywords: [KitArmor.Heavy, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A set of wings from a flying carp, a set of chain mail rusted by seawater',
-			source: 'Texts or lore in Заліак (Zaliac)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Пара крил летючого коропа, комплект кольчуги, проїдений морською водою',
+			source: 'Тексти або перекази мовою Заліак (Zaliac)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -114,7 +114,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-chain-of-the-sea-and-sky-1',
 						name: '',
-						description: 'While you wear this armor, you can automatically swim at full speed while moving, and you can breathe underwater for up to 1 hour. Returning to the surface to breathe air again for any length of time resets the armor’s water-breathing benefit.'
+						description: 'Поки ви носите цей обладунок, ви можете автоматично плисти з повною швидкістю під час руху й дихати під водою до 1 години. Повернення на поверхню, щоб знову вдихнути повітря хоча б на мить, скидає перевагу обладунку на дихання під водою.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-chain-of-the-sea-and-sky-1a',
@@ -129,7 +129,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-chain-of-the-sea-and-sky-5',
 						name: '',
-						description: 'Whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a безкоштовний маневр once during each of your turns.'
+						description: 'Щоразу, коли ви падаєте, ви можете розкинути руки (не потребує дії), щоб розгорнути товсту перетинку між руками й тілом, сповільнивши падіння та дозволивши собі планерувати. Планеруючи так, ви спускаєтеся на 1 клітинку за раунд і можете раз за кожен свій хід пролетіти по горизонталі на відстань до 6 клітинок як безкоштовний маневр.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-chain-of-the-sea-and-sky-5a',
@@ -154,7 +154,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-chain-of-the-sea-and-sky-9',
 						name: '',
-						description: 'Whenever your feet are not touching the ground (including floating in water or being in midair), you gain an edge on ability rolls, and any ability takes a bane when targeting you.'
+						description: 'Щоразу, коли ваші ноги не торкаються землі, зокрема коли ви плаваєте у воді або зависли в повітрі, ви отримуєте перевагу на кидки здібностей, а будь-яка здібність, що націлює вас, має шкоду.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-chain-of-the-sea-and-sky-9a',
@@ -178,14 +178,14 @@ export class LeveledArmorData {
 
 	static grandScarab: Item = FactoryLogic.createItem({
 		id: 'item-grand-scarab',
-		name: 'Grand Scarab',
-		description: 'The blue-purple carapace and wings of a gigantic scarab beetle have been formed into an ornate breastplate.',
+		name: 'Великий скарабей',
+		description: 'Синьо-фіолетовий панцир і крила велетенського жука-скарабея перетворено на оздоблений нагрудник.',
 		type: ItemType.LeveledArmor,
-		keywords: [ AbilityKeyword.Magic, KitArmor.Medium ],
+		keywords: [AbilityKeyword.Magic, KitArmor.Medium],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A giant scarab beetle carapace',
-			source: 'Texts or lore in Федран (Phaedran)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Панцир велетенського жука-скарабея',
+			source: 'Тексти або перекази мовою Федран (Phaedran)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -195,7 +195,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-grand-scarab-1',
 						name: '',
-						description: 'While you wear this armor, you can fly. If you don’t end your turn on the ground, you fall..'
+						description: 'Поки ви носите цей обладунок, ви можете літати. Якщо наприкінці свого ходу ви не перебуваєте на землі, ви падаєте.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-grand-scarab-1a',
@@ -210,7 +210,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-grand-scarab-5',
 						name: '',
-						description: 'You no longer need to end your turn on the ground to avoid falling.'
+						description: 'Вам більше не потрібно закінчувати хід на землі, щоб не впасти.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-grand-scarab-5a',
@@ -225,7 +225,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-grand-scarab-9',
 						name: '',
-						description: 'If you fly any distance before making a strike, that strike gains an edge.'
+						description: 'Якщо перед ударом ви пролітаєте будь-яку відстань, цей удар отримує перевагу.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-grand-scarab-9a',
@@ -239,14 +239,14 @@ export class LeveledArmorData {
 
 	static kingsRoar: Item = FactoryLogic.createItem({
 		id: 'item-kings-roar',
-		name: 'King’s Roar',
-		description: 'A sunmetal kite shield bears the face of a lion on its front, its mouth opening wider over the course of battle.',
+		name: 'Рик короля',
+		description: 'На переді цього повітряного щита із сонячного металу викарбувано левʼячу морду, чия паща роззявляється дедалі ширше в ході битви.',
 		type: ItemType.LeveledArmor,
-		keywords: [ AbilityKeyword.Magic, KitArmor.Shield ],
+		keywords: [AbilityKeyword.Magic, KitArmor.Shield],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A ballad of heroism, two ingots of sunmetal',
-			source: 'Songs in Високий Ривіан (High Rhyvian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+			prerequisites: 'Балада про героїзм, два злитки сонячного металу',
+			source: 'Пісні Високою ривіанською (High Rhyvian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -256,11 +256,11 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-kings-roar-1',
-							name: 'King’s Roar',
-							description: 'You make the shield’s lion face roar.',
+							name: 'Рик короля',
+							description: 'Ви змушуєте левʼячу морду щита заревіти.',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You can use a маневр to make the shield’s lion face roar, choosing one adjacent creature or object and pushing that target up to 3 squares'),
+								FactoryLogic.createAbilitySectionText('Ви можете використати маневр, щоб змусити левʼячу морду щита заревіти, обравши одну сусідню істоту або предмет і відштовхнувши цю ціль на відстань до 3 клітинок.'),
 								FactoryLogic.createAbilitySectionPackage('item-kings-roar-tag')
 							]
 						})
@@ -277,8 +277,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-kings-roar-5',
-						name: '5th Level',
-						description: 'Instead, target one creature or object within 3 squares and push that target up to 4 squares.',
+						name: '5-й рівень',
+						description: 'Натомість ви можете націлити одну істоту або предмет у межах 3 клітинок і відштовхнути цю ціль на відстань до 4 клітинок.',
 						tag: 'item-kings-roar-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -293,8 +293,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-kings-roar-9',
-						name: '9th Level',
-						description: 'Instead, target one creature or object within 6 squares, you push that target up to 5 squares, and the target is slowed until the end of their next turn.',
+						name: '9-й рівень',
+						description: 'Натомість ви можете націлити одну істоту або предмет у межах 6 клітинок, відштовхнути цю ціль на відстань до 5 клітинок, і ціль стає сповільненою до кінця свого наступного ходу.',
 						tag: 'item-kings-roar-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -309,14 +309,14 @@ export class LeveledArmorData {
 
 	static kuranzoiPrismscale: Item = FactoryLogic.createItem({
 		id: 'item-kuranzoi-prismscale',
-		name: 'Kuran’zoi Prismscale',
-		description: 'Each scale of this iridescent armor shimmers with the faint image of a frozen moment of time.',
+		name: 'Призматична луска Куранʼзоя',
+		description: 'Кожна луска цього райдужного обладунку мерехтить тьмяним відбитком застиглої миті часу.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Medium, AbilityKeyword.Psionic ],
+		keywords: [KitArmor.Medium, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The eyes of a time raider who died valiantly in battle',
-			source: 'Texts or lore in Волл (Voll)',
-			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+			prerequisites: 'Очі часового рейдера, який доблесно загинув у бою',
+			source: 'Тексти або перекази мовою Волл (Voll)',
+			characteristic: [Characteristic.Intuition, Characteristic.Presence],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -326,11 +326,11 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-kuranzoi-prismscale-1',
-							name: 'Use Kuran’zoi Prismscale',
-							description: 'You capture a moment of time in the armor.',
-							type: FactoryLogic.type.createTrigger('A creature within 5 squares deals damage to you'),
+							name: 'Використати Призматичну луску Куранʼзоя',
+							description: 'Ви захоплюєте мить часу в обладунок.',
+							type: FactoryLogic.type.createTrigger('Істота в межах 5 клітинок завдає вам шкоди'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('That creature is slowed until the end of their next turn.'),
+								FactoryLogic.createAbilitySectionText('Ця істота стає сповільненою до кінця свого наступного ходу.'),
 								FactoryLogic.createAbilitySectionPackage('item-kuranzoi-prismscale-tag')
 							]
 						})
@@ -347,8 +347,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-kuranzoi-prismscale-5',
-						name: '5th',
-						description: 'The target also takes corruption damage equal to twice your highest characteristic score.',
+						name: '5-й',
+						description: 'Ціль також отримує шкоду Скверною, що дорівнює подвоєному вашому найвищому показнику характеристики.',
 						tag: 'item-kuranzoi-prismscale-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -363,8 +363,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-kuranzoi-prismscale-9',
-						name: '9th',
-						description: 'You can immediately release the captured moment to gain a +3 bonus to speed that lasts until the end of your next turn.',
+						name: '9-й',
+						description: 'Ви можете негайно вивільнити захоплену мить, щоб отримати бонус +3 до швидкості до кінця свого наступного ходу.',
 						tag: 'item-kuranzoi-prismscale-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -379,14 +379,14 @@ export class LeveledArmorData {
 
 	static paperTrappings: Item = FactoryLogic.createItem({
 		id: 'item-paper-trappings',
-		name: 'Paper Trappings',
-		description: 'This delicate robe is made from thousands of pages torn from books, intricately folded together without a single thread to bind them.',
+		name: 'Паперові шати',
+		description: 'Цю тендітну мантію зроблено з тисяч сторінок, вирваних із книжок і хитромудро складених докупи без жодної нитки.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Light, AbilityKeyword.Magic ],
+		keywords: [KitArmor.Light, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ten pages from each of a hundred different books',
-			source: 'Texts or lore in Анжалі (Anjali)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'По десять сторінок зі ста різних книжок',
+			source: 'Тексти або перекази мовою Анжалі (Anjali)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -396,10 +396,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-paper-trappings-1',
-							name: 'Paper Trappings - Fold',
+							name: 'Паперові шати - Скластися',
 							type: FactoryLogic.type.createMain(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You fold in on yourself until you and your gear are paper thin. This effect lasts for 1 minute, letting you easily slip through any opening that is 1 inch wide or more. When you return to your three-dimensional form, you are dazed for 1 minute. If you return to your true form while in a space that is too small for you, you are violently expelled into the nearest open space of your choice and take 3d6 damage.'),
+								FactoryLogic.createAbilitySectionText('Ви складаєтеся самі в себе, доки ви й ваше спорядження не стаєте тонкими, як папір. Цей ефект триває 1 хвилину, дозволяючи вам легко прослизати крізь будь-який отвір завширшки 1 дюйм або більше. Коли ви повертаєтеся до своєї тривимірної форми, ви є приголомшеними на 1 хвилину. Якщо ви повертаєтеся до справжньої форми в просторі, надто малому для вас, вас насильно викидає до найближчого вільного простору на ваш вибір, і ви отримуєте 3d6 шкоди.'),
 								FactoryLogic.createAbilitySectionPackage('item-paper-trappings-tag')
 							]
 						})
@@ -416,8 +416,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-paper-trappings-5',
-						name: '5th',
-						description: 'When you return to your true form, you are dazed only until the end of your next turn.',
+						name: '5-й',
+						description: 'Коли ви повертаєтеся до своєї справжньої форми, ви є приголомшеними лише до кінця свого наступного ходу.',
 						tag: 'item-paper-trappings-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -428,10 +428,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-paper-trappings-5b',
-							name: 'Paper Trappings - Wrap',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'You are paper thin' ] }),
+							name: 'Паперові шати - Обгорнути',
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['Ви тонкі, як папір'] }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You wrap yourself around an adjacent target who is the same size or smaller than you, automatically grabbing them')
+								FactoryLogic.createAbilitySectionText('Ви обгортаєтеся навколо сусідньої цілі вашого розміру або меншої, автоматично захоплюючи її.')
 							]
 						})
 					})
@@ -442,8 +442,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-paper-trappings-9',
-						name: '9th',
-						description: 'You are no longer dazed when you return to your true form.',
+						name: '9-й',
+						description: 'Ви більше не стаєте приголомшеними, коли повертаєтеся до своєї справжньої форми.',
 						tag: 'item-paper-trappings-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -454,10 +454,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-paper-trappings-9b',
-							name: 'Paper Trappings - Constrict',
-							type: FactoryLogic.type.createManeuver({ qualifiers: [ 'You are paper thin and have a target grabbed' ] }),
+							name: 'Паперові шати - Стиснути',
+							type: FactoryLogic.type.createManeuver({ qualifiers: ['Ви тонкі, як папір, і тримаєте ціль захопленою'] }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the Escape Grab маневр against you and when making strikes against you.')
+								FactoryLogic.createAbilitySectionText('Ви стискаєте ціль, завдаючи їй 10 шкоди. Істота, яка отримала таку шкоду, має шкоду під час використання маневру «Втекти з захвату» проти вас і коли завдає вам удари.')
 							]
 						})
 					})
@@ -468,14 +468,14 @@ export class LeveledArmorData {
 
 	static shroudedMemory: Item = FactoryLogic.createItem({
 		id: 'item-shrouded-memory',
-		name: 'Shrouded Memory',
-		description: 'This midnight-dark leather coat is embossed with fractal patterns that appear different each time they are observed.',
+		name: 'Оповита памʼять',
+		description: 'Це шкіряне пальто темряви опівночі вкрито фрактальними візерунками, які щоразу виглядають інакше.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Light, AbilityKeyword.Psionic ],
+		keywords: [KitArmor.Light, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The will of a deceased person with no heirs',
-			source: 'Texts or lore in Кхелт (Khelt)',
-			characteristic: [ Characteristic.Agility, Characteristic.Presence ],
+			prerequisites: 'Заповіт померлої людини без спадкоємців',
+			source: 'Тексти або перекази мовою Кхелт (Khelt)',
+			characteristic: [Characteristic.Agility, Characteristic.Presence],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -485,7 +485,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-shrouded-memory-1',
 						name: '',
-						description: 'You gain an edge on tests made to lie about or conceal your identity.'
+						description: 'Ви отримуєте перевагу на випробування, щоб брехати про свою особу або приховувати її.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-shrouded-memory-1a',
@@ -500,10 +500,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-shrouded-memory-5',
-							name: 'Use Shrouded Memory',
-							type: FactoryLogic.type.createTrigger('You take damage'),
+							name: 'Використати Оповиту памʼять',
+							type: FactoryLogic.type.createTrigger('Ви отримуєте шкоду'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You teleport up to 5 squares. If you do, you create an illusion of you dying in your previous space, which fades at the end of your next turn.'),
+								FactoryLogic.createAbilitySectionText('Ви телепортуєтеся на відстань до 5 клітинок. Якщо ви це робите, у вашому попередньому місці виникає ілюзія вашої смерті, яка зникає наприкінці вашого наступного ходу.'),
 								FactoryLogic.createAbilitySectionPackage('item-shrouded-memory-tag')
 							]
 						})
@@ -520,8 +520,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-shrouded-memory-9',
-						name: '9th',
-						description: 'You can teleport up to a number of squares equal to the damage taken (minimum 5 squares). Additionally, if a creature dealt you the triggering damage, you become invisible to that creature until the end of your next turn.',
+						name: '9-й',
+						description: 'Ви можете телепортуватися на кількість клітинок, що дорівнює отриманій шкоді, але щонайменше на 5 клітинок. Крім того, якщо тригерну шкоду вам завдала істота, ви стаєте невидимими для неї до кінця свого наступного ходу.',
 						tag: 'item-shrouded-memory-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -536,14 +536,14 @@ export class LeveledArmorData {
 
 	static spinyTurtle: Item = FactoryLogic.createItem({
 		id: 'item-spiny-turtle',
-		name: 'Spiny Turtle',
-		description: 'This heavy mechanized plate armor of gnomish make is designed to create its own cover on the battlefield.',
+		name: 'Колюча черепаха',
+		description: 'Цей важкий механізований латний обладунок гномʼячої роботи створено, щоб забезпечувати собі власне укриття на полі бою.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Heavy, AbilityKeyword.Magic ],
+		keywords: [KitArmor.Heavy, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ten steel gears from an ancient construct',
-			source: 'Texts or lore in Варіак (Variac)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Десять сталевих шестерень зі стародавнього конструкта',
+			source: 'Тексти або перекази мовою Варіак (Variac)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -553,10 +553,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-spiny-turtle-1',
-							name: 'Use Spiny Turtle',
+							name: 'Використати Колючу черепаху',
 							type: FactoryLogic.type.createMain(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You expand the armor on your back to create a 4 wall of metal behind you. The wall is an object that retracts if you move, or if it takes 15 damage. It the requires a основна дія to recalibrate before it can be deployed again.'),
+								FactoryLogic.createAbilitySectionText('Ви розгортаєте обладунок на спині, створюючи за собою металеву стіну 4. Стіна є предметом, що втягується, якщо ви рухаєтеся або якщо отримує 15 шкоди. Після цього вона потребує основної дії на перекалібрування, перш ніж її можна буде розгорнути знову.'),
 								FactoryLogic.createAbilitySectionPackage('item-spiny-turtle-tag')
 							]
 						})
@@ -573,8 +573,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-spiny-turtle-5',
-						name: '5th',
-						description: 'The damage the wall can take before retracting increases to 25. Additionally, while the wall is expanded, spikes extrude from it, and any creature who deals damage to the wall while adjacent to it takes 3 damage.',
+						name: '5-й',
+						description: 'Кількість шкоди, яку може витримати стіна перед втяганням, зростає до 25. Крім того, поки стіна розгорнута, з неї висуваються шипи, і будь-яка істота, що завдає шкоди стіні, перебуваючи поруч із нею, отримує 3 шкоди.',
 						tag: 'item-spiny-turtle-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -590,7 +590,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-spiny-turtle-9',
 						name: '',
-						description: 'Spikes cover the armor, and any creature who deals damage to you while adjacent to you takes 6 damage.'
+						description: 'Шипи вкривають обладунок, і будь-яка істота, що завдає вам шкоди, перебуваючи поруч із вами, отримує 6 шкоди.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-spiny-turtle-9a',
@@ -604,14 +604,14 @@ export class LeveledArmorData {
 
 	static starHunter: Item = FactoryLogic.createItem({
 		id: 'item-star-hunter',
-		name: 'Star-Hunter',
-		description: 'Shimmering light flows like liquid along this suit of crystalline armor.',
+		name: 'Зоряний мисливець',
+		description: 'Мерехтливе світло тече цим кристалічним обладунком, мов рідина.',
 		type: ItemType.LeveledArmor,
-		keywords: [ KitArmor.Heavy, AbilityKeyword.Psionic ],
+		keywords: [KitArmor.Heavy, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A large vessel of astral ice, a pint of supercooled mercury',
-			source: 'Texts or lore in Волл (Voll)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Велика посудина астральної криги, пінта переохолодженої ртуті',
+			source: 'Тексти або перекази мовою Волл (Voll)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -621,7 +621,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-star-hunter-1',
 						name: '',
-						description: 'Any magic ability gains an edge when targeting you. Additionally, you instinctively know the location of any concealed creature within 2 squares.'
+						description: 'Будь-яка магічна здібність отримує перевагу, коли націлює вас. Крім того, ви інстинктивно знаєте місце розташування будь-якої прихованої істоти в межах 2 клітинок.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-star-hunter-1a',
@@ -631,10 +631,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-star-hunter-1b',
-							name: 'Use Star-Hunter',
+							name: 'Використати Зоряного мисливця',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You turn invisible. Your invisibility ends if you take damage or use an ability, or at the end of your next turn.'),
+								FactoryLogic.createAbilitySectionText('Ви стаєте невидимими. Невидимість закінчується, якщо ви отримуєте шкоду, використовуєте здібність або наприкінці вашого наступного ходу.'),
 								FactoryLogic.createAbilitySectionPackage('item-star-hunter-tag')
 							]
 						})
@@ -647,7 +647,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-star-hunter-5',
 						name: '',
-						description: 'You instinctively know the location of any concealed creature within 5 squares.'
+						description: 'Ви інстинктивно знаєте місце розташування будь-якої прихованої істоти в межах 5 клітинок.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-star-hunter-5a',
@@ -666,8 +666,8 @@ export class LeveledArmorData {
 					}),
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-star-hunter-5c',
-						name: '5th',
-						description: 'Your invisibility no longer ends at the end of your next turn.',
+						name: '5-й',
+						description: 'Ваша невидимість більше не закінчується наприкінці вашого наступного ходу.',
 						tag: 'item-star-hunter-tag'
 					})
 				]
@@ -678,7 +678,7 @@ export class LeveledArmorData {
 					FactoryLogic.feature.create({
 						id: 'item-star-hunter-9',
 						name: '',
-						description: 'You instinctively know the location of any concealed creature within 10 squares.'
+						description: 'Ви інстинктивно знаєте місце розташування будь-якої прихованої істоти в межах 10 клітинок.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-star-hunter-9a',
@@ -697,8 +697,8 @@ export class LeveledArmorData {
 					}),
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-star-hunter-9c',
-						name: '9th',
-						description: 'Your invisibility no longer ends when you use an ability.',
+						name: '9-й',
+						description: 'Ваша невидимість більше не закінчується, коли ви використовуєте здібність.',
 						tag: 'item-star-hunter-tag'
 					})
 				]
@@ -708,14 +708,14 @@ export class LeveledArmorData {
 
 	static telekineticBulwark: Item = FactoryLogic.createItem({
 		id: 'item-telekinetic-bulwark',
-		name: 'Telekinetic Bulwark',
-		description: 'An unseen force seems to draw this steel shield toward nearby creatures.',
+		name: 'Телекінетичний бастіон',
+		description: 'Невидима сила ніби тягне цей сталевий щит до сусідніх істот.',
 		type: ItemType.LeveledArmor,
-		keywords: [ AbilityKeyword.Psionic, KitArmor.Shield ],
+		keywords: [AbilityKeyword.Psionic, KitArmor.Shield],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Three ingots of steel, six crystals that resonate with psionic power',
-			source: 'Texts or lore in Варіак (Variac)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Три сталеві злитки, шість кристалів, що резонують із псіонічною силою',
+			source: 'Тексти або перекази мовою Варіак (Variac)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -725,10 +725,10 @@ export class LeveledArmorData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-telekinetic-bulwark-1',
-							name: 'Use Telekinetic Bulwark',
-							type: FactoryLogic.type.createTrigger('An adjacent enemy uses an ability', { free: true, qualifiers: [ 'Once per turn' ] }),
+							name: 'Використати Телекінетичний бастіон',
+							type: FactoryLogic.type.createTrigger('Сусідній ворог використовує здібність', { free: true, qualifiers: ['Раз за хід'] }),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Use the Grab маневр against that enemy. You can have any number of enemies grabbed in this way.'),
+								FactoryLogic.createAbilitySectionText('Використайте маневр «Схопити» проти цього ворога. Ви можете тримати захопленими таким способом будь-яку кількість ворогів.'),
 								FactoryLogic.createAbilitySectionPackage('item-telekinetic-bulwark-tag')
 							]
 						})
@@ -745,8 +745,8 @@ export class LeveledArmorData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-telekinetic-bulwark-5',
-						name: '5th',
-						description: 'The range increases to 10 squares. Additionally, any enemy who uses the Escape Grab маневр while grabbed this way takes a bane on the test.',
+						name: '5-й',
+						description: 'Дальність зростає до 10 клітинок. Крім того, будь-який ворог, що використовує маневр «Втекти з захвату», будучи захопленим таким способом, має шкоду на це випробування.',
 						tag: 'item-telekinetic-bulwark-tag'
 					}),
 					FactoryLogic.feature.createBonus({
@@ -764,10 +764,10 @@ export class LeveledArmorData {
 							id: 'item-telekinetic-bulwark-9',
 							name: '',
 							type: FactoryLogic.type.createManeuver(),
-							distance: [ FactoryLogic.distance.createSpecial('') ],
-							target: 'Any enemies the shield has grabbed',
+							distance: [FactoryLogic.distance.createSpecial('')],
+							target: 'Будь-які вороги, яких щит тримає захопленими',
 							sections: [
-								FactoryLogic.createAbilitySectionText('Pull the targets up to 5 squares.')
+								FactoryLogic.createAbilitySectionText('Притягніть цілі на відстань до 5 клітинок.')
 							]
 						})
 					}),

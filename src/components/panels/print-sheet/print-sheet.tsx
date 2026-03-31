@@ -287,13 +287,27 @@ interface ClassProps {
 };
 
 const ClassSheet = (props: ClassProps) => {
+	const getPrimaryCharacteristicsText = () => {
+		if (props.heroClass.primaryCharacteristics.length > 0) {
+			return props.heroClass.primaryCharacteristics.map(ch => Format.getCharacteristicName(ch)).join(', ');
+		}
+
+		if (props.heroClass.primaryCharacteristicsOptions.length > 0) {
+			return props.heroClass.primaryCharacteristicsOptions
+				.map(array => array.map(ch => Format.getCharacteristicName(ch)).join(', ') || 'Немає')
+				.join(' або ');
+		}
+
+		return 'Немає';
+	};
+
 	return (
 		<>
 			<HeaderText level={1}>
 				{props.heroClass.name || 'Unnamed Class'}
 			</HeaderText>
 			<Markdown text={props.heroClass.description} />
-			<Field label='Primary Characteristics' value={props.heroClass.primaryCharacteristics.join(', ') || props.heroClass.primaryCharacteristicsOptions.map(array => array.join(', ') || 'None').join(' or ') || 'None'} />
+			<Field label='Основні характеристики' value={getPrimaryCharacteristicsText()} />
 			{
 				props.heroClass.featuresByLevel
 					.filter(lvl => lvl.features.length > 0)
@@ -436,7 +450,7 @@ const ItemSheet = (props: ItemProps) => {
 			<Markdown text={props.item.description} />
 			{
 				props.item.keywords.length > 0 ?
-					<Field label='Keywords' value={<Flex gap={3}>{props.item.keywords.map((k, n) => <Tag key={n} variant='outlined'>{k}</Tag>)}</Flex>} />
+					<Field label='Keywords' value={<Flex gap={3}>{props.item.keywords.map((k, n) => <Tag key={n} variant='outlined'>{Format.getKeywordName(k)}</Tag>)}</Flex>} />
 					: null
 			}
 			<Markdown text={props.item.effect} />

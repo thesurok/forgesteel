@@ -43,6 +43,8 @@ export class SourcebookLogic {
 			// Official
 			SourcebookData.core,
 			SourcebookData.orden,
+			SourcebookData.patreon,
+			SourcebookData.summoner,
 
 			// Third Party
 			SourcebookData.community,
@@ -52,11 +54,6 @@ export class SourcebookLogic {
 			SourcebookData.triglav
 		];
 
-		if (FeatureFlags.hasFlag(FeatureFlags.playtest.code)) {
-			list.push(SourcebookData.patreon);
-			list.push(SourcebookData.summoner);
-		}
-
 		if (FeatureFlags.hasFlag(FeatureFlags.communityPreRelease.code)) {
 			list.push(SourcebookData.communityPrerelease);
 		}
@@ -64,6 +61,17 @@ export class SourcebookLogic {
 		list.push(...homebrew);
 
 		return list;
+	};
+
+	static getDefaultHeroSourcebookIDs = (sourcebooks: Sourcebook[] = SourcebookLogic.getSourcebooks()) => {
+		const defaultIDs = [
+			SourcebookData.core.id,
+			SourcebookData.orden.id,
+			SourcebookData.patreon.id,
+			SourcebookData.summoner.id
+		];
+
+		return defaultIDs.filter(id => sourcebooks.some(sb => sb.id === id));
 	};
 
 	static getElements = (sourcebook: Sourcebook): { element: Element, type: SourcebookElementKind }[] => {

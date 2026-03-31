@@ -15,7 +15,7 @@ export const ProjectInfoComponent = (props: Props) => {
 			<div className='details'>
 				<div className='items'>
 					<div className='requirement'>
-						<label>Item Prerequisite:</label>
+						<label>Передумова предмета:</label>
 						<span>{project.prerequisites}</span>
 					</div>
 					<div className='obtained'>
@@ -25,7 +25,7 @@ export const ProjectInfoComponent = (props: Props) => {
 				</div>
 				<div className='source'>
 					<div className='requirement'>
-						<label>Project Source:</label>
+						<label>Джерело проєкту:</label>
 						<span>{project.source}</span>
 					</div>
 					<div className='obtained'>
@@ -34,11 +34,11 @@ export const ProjectInfoComponent = (props: Props) => {
 					</div>
 				</div>
 				<div>
-					<label>Project Roll Characteristic:</label>
+					<label>Характеристика кидка проєкту:</label>
 					<span><DrawSteelSymbolText content={project.characteristic} lookFor='characteristics' /></span>
 				</div>
 				<div>
-					<label>Project Goal:</label>
+					<label>Ціль проєкту:</label>
 					<span>{project.pointsGoal}</span>
 				</div>
 			</div>

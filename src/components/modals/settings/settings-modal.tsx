@@ -45,7 +45,7 @@ interface Props {
 export const SettingsModal = (props: Props) => {
 	const { themeMode, setTheme } = useTheme();
 	const [options, setOptions] = useState<Options>(Utils.copy(props.options));
-	const [page, setPage] = useState<string>('Settings');
+	const [page, setPage] = useState<string>('Налаштування');
 	const [standardAbilitiesMode, setStandardAbilitiesMode] = useState<string>(() => {
 		if (options.shownStandardAbilities.length === 0) {
 			return 'none';
@@ -71,16 +71,16 @@ export const SettingsModal = (props: Props) => {
 
 	const getAppearance = () => {
 		return (
-			<Expander title='Appearance'>
+			<Expander title='Зовнішній вигляд'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
 					<Segmented
 						block={true}
 						value={themeMode}
 						onChange={setTheme}
 						options={[
-							{ label: 'Light Mode', value: 'light', icon: <SunOutlined /> },
-							{ label: 'System', value: 'system', icon: <SettingOutlined /> },
-							{ label: 'Dark Mode', value: 'dark', icon: <MoonOutlined /> }
+							{ label: 'Світла тема', value: 'light', icon: <SunOutlined /> },
+							{ label: 'Системна', value: 'system', icon: <SettingOutlined /> },
+							{ label: 'Темна тема', value: 'dark', icon: <MoonOutlined /> }
 						]}
 					/>
 				</Space>
@@ -132,19 +132,19 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Heroes - General'>
+			<Expander title='Герої - загальне'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<NumberSpin label='XP per level' min={1} value={options.xpPerLevel} onChange={setXPPerLevel} />
+					<NumberSpin label='XP за рівень' min={1} value={options.xpPerLevel} onChange={setXPPerLevel} />
 					<div>
 						<LabelControl
-							label='Show standard abilities'
+							label='Показувати стандартні здібності'
 							control={
 								<Segmented
 									block={true}
 									options={[
-										{ value: 'none', label: 'None' },
-										{ value: 'custom', label: 'Custom' },
-										{ value: 'all', label: 'All' }
+										{ value: 'none', label: 'Жодні' },
+										{ value: 'custom', label: 'Вибірково' },
+										{ value: 'all', label: 'Усі' }
 									]}
 									value={standardAbilitiesMode}
 									onChange={setShownStandardAbilitiesValue}
@@ -153,7 +153,7 @@ export const SettingsModal = (props: Props) => {
 						/>
 						{
 							standardAbilitiesMode === 'custom' ?
-								<Button block={true} onClick={() => setShowAbilitySelector(true)}>Select Abilities</Button>
+								<Button block={true} onClick={() => setShowAbilitySelector(true)}>Обрати здібності</Button>
 								: null
 						}
 					</div>
@@ -213,13 +213,13 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Heroes - Interactive View'>
+			<Expander title='Герої - інтерактивний вигляд'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<Toggle label='Separate inventory features' value={options.separateInventoryFeatures} onChange={setSeparateInventoryFeatures} />
-					<Toggle label='Show skills in groups' value={options.showSkillsInGroups} onChange={setShowSkillsInGroups} />
-					<Toggle label='Show feature / ability sources' value={options.showSources} onChange={setShowSources} />
+					<Toggle label='Відокремлювати риси інвентарю' value={options.separateInventoryFeatures} onChange={setSeparateInventoryFeatures} />
+					<Toggle label='Показувати навички за групами' value={options.showSkillsInGroups} onChange={setShowSkillsInGroups} />
+					<Toggle label='Показувати джерела рис / здібностей' value={options.showSources} onChange={setShowSources} />
 					<LabelControl
-						label='Ability card width'
+						label='Ширина картки здібності'
 						control={
 							<Segmented
 								name='abilitywidth'
@@ -237,9 +237,9 @@ export const SettingsModal = (props: Props) => {
 						}
 					/>
 					<div>
-						<HeaderText level={3}>View</HeaderText>
-						<Toggle label='Single page' value={options.singlePage} onChange={setSinglePage} />
-						<Toggle label='Compact' value={options.compactView} onChange={setCompactView} />
+						<HeaderText level={3}>Вигляд</HeaderText>
+						<Toggle label='Одна сторінка' value={options.singlePage} onChange={setSinglePage} />
+						<Toggle label='Компактний' value={options.compactView} onChange={setCompactView} />
 					</div>
 				</Space>
 			</Expander>
@@ -269,30 +269,30 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Heroes - Classic View'>
+			<Expander title='Герої - класичний вигляд'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<Toggle label='Show play state' value={options.includePlayState} onChange={setIncludePlayState} />
-					<Toggle label='Calculate Кидок Сили bonuses' value={options.showPowerRollCalculation} onChange={setShowPowerRollCalculation} />
+					<Toggle label='Показувати стан гри' value={options.includePlayState} onChange={setIncludePlayState} />
+					<Toggle label='Обчислювати бонуси кидка сили' value={options.showPowerRollCalculation} onChange={setShowPowerRollCalculation} />
 					<LabelControl
-						label='Show class features'
+						label='Показувати класові риси'
 						control={
 							<Select
 								style={{ width: '100%' }}
 								options={[
 									{
 										value: 'minimal',
-										label: 'Minimal',
-										desc: 'No abilities; only perks, text features, and the like.'
+										label: 'Мінімально',
+										desc: 'Без здібностей; лише перки, текстові риси та подібне.'
 									},
 									{
 										value: 'no-basic',
-										label: 'No Simple',
-										desc: 'Does not show things like bonuses, skills, languages, etc; does still show abilities.'
+										label: 'Без простого',
+										desc: 'Не показує речі на кшталт бонусів, навичок, мов тощо; але все ще показує здібності.'
 									},
 									{
 										value: 'all',
-										label: 'All',
-										desc: 'Show all features. Useful for seeing where all of the numbers come from on the sheet.'
+										label: 'Усе',
+										desc: 'Показує всі риси. Корисно, щоб бачити, звідки на аркуші беруться всі числа.'
 									}
 								]}
 								optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
@@ -374,10 +374,10 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Classic View'>
+			<Expander title='Класичний вигляд'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
 					<LabelControl
-						label='Page size'
+						label='Формат сторінки'
 						control={
 							<Segmented
 								name='pagesize'
@@ -389,32 +389,32 @@ export const SettingsModal = (props: Props) => {
 						}
 					/>
 					<LabelControl
-						label='Orientation'
+						label='Орієнтація'
 						control={
 							<Segmented
 								name='orientation'
 								block={true}
 								options={[
-									{ value: 'portrait', label: 'Portrait' },
-									{ value: 'landscape', label: 'Landscape' }
+									{ value: 'portrait', label: 'Книжкова' },
+									{ value: 'landscape', label: 'Альбомна' }
 								]}
 								value={options.pageOrientation}
 								onChange={setPageOrientation}
 							/>
 						}
 					/>
-					<Toggle label='Use color' value={options.colorSheet} onChange={setColorSheet} />
+					<Toggle label='Використовувати колір' value={options.colorSheet} onChange={setColorSheet} />
 					{
 						options.colorSheet &&
 						<LabelControl
-							label='Color scheme'
+							label='Колірна схема'
 							control={
 								<Segmented
 									name='colorScheme'
 									block={true}
 									options={[
-										{ value: 'community', label: 'Community' },
-										{ value: 'classic', label: 'Classic' }
+										{ value: 'community', label: 'Спільнотна' },
+										{ value: 'classic', label: 'Класична' }
 									]}
 									value={options.colorScheme}
 									onChange={setColorScheme}
@@ -423,22 +423,22 @@ export const SettingsModal = (props: Props) => {
 						/>
 					}
 					<LabelControl
-						label='Text contrast'
+						label='Контраст тексту'
 						control={
 							<Segmented
 								name='textColor'
 								block={true}
 								options={[
-									{ value: 'dark', label: 'Higher' },
-									{ value: 'default', label: 'Default' },
-									{ value: 'light', label: 'Lower' }
+									{ value: 'dark', label: 'Вищий' },
+									{ value: 'default', label: 'Типовий' },
+									{ value: 'light', label: 'Нижчий' }
 								]}
 								value={options.sheetTextColor}
 								onChange={changeTextColor}
 							/>
 						}
 					/>
-					<Toggle label='Debug classic sheet' value={options.debugClassicSheet} onChange={setDebugClassicSheet} />
+					<Toggle label='Налагодження класичного аркуша' value={options.debugClassicSheet} onChange={setDebugClassicSheet} />
 				</Space>
 			</Expander>
 		);
@@ -474,13 +474,13 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Monster Builder'>
+			<Expander title='Конструктор чудовиськ'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<div className='ds-text'>Show data from similar monsters using these fields:</div>
-					<Toggle label='Monster level' value={options.similarLevel} onChange={setSimilarLevel} />
-					<Toggle label='Monster role' value={options.similarRole} onChange={setSimilarRole} />
-					<Toggle label='Monster organization' value={options.similarOrganization} onChange={setSimilarOrganization} />
-					<Toggle label='Monster size' value={options.similarSize} onChange={setSimilarSize} />
+					<div className='ds-text'>Показувати дані зі схожих чудовиськ за такими полями:</div>
+					<Toggle label='Рівень чудовиська' value={options.similarLevel} onChange={setSimilarLevel} />
+					<Toggle label='Роль чудовиська' value={options.similarRole} onChange={setSimilarRole} />
+					<Toggle label='Організація чудовиська' value={options.similarOrganization} onChange={setSimilarOrganization} />
+					<Toggle label='Розмір чудовиська' value={options.similarSize} onChange={setSimilarSize} />
 				</Space>
 			</Expander>
 		);
@@ -507,18 +507,18 @@ export const SettingsModal = (props: Props) => {
 			.filter(f => !!f);
 
 		return (
-			<Expander title='Encounter Runner'>
+			<Expander title='Ведення сутички'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<Toggle label='Show defeated combatants' value={options.showDefeatedCombatants} onChange={setShowDefeatedCombatants} />
+					<Toggle label='Показувати переможених учасників' value={options.showDefeatedCombatants} onChange={setShowDefeatedCombatants} />
 					{
 						parties.length > 0 ?
 							<LabelControl
-								label='Start encounters with'
+								label='Починати сутички з'
 								control={
 									<Select
 										style={{ width: '100%' }}
-										placeholder='Select a party'
-										options={['', ...parties].map(p => ({ value: p, label: p || 'No heroes' }))}
+										placeholder='Оберіть групу'
+										options={['', ...parties].map(p => ({ value: p, label: p || 'Без героїв' }))}
 										optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 										value={options.party}
 										onChange={p => setParty(p || '')}
@@ -567,15 +567,15 @@ export const SettingsModal = (props: Props) => {
 			.filter(f => !!f);
 
 		return (
-			<Expander title='Encounter / Montage Difficulty'>
+			<Expander title='Складність сутичок / монтажів'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
 					<LabelControl
-						label='Calculate difficulty based on these heroes'
+						label='Обчислювати складність на основі цих героїв'
 						control={
 							<Select
 								style={{ width: '100%' }}
-								placeholder='Select a party'
-								options={[...parties, ''].map(p => ({ value: p, label: p || 'A custom party' }))}
+								placeholder='Оберіть групу'
+								options={[...parties, ''].map(p => ({ value: p, label: p || 'Довільна група' }))}
 								optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 								value={options.heroParty}
 								onChange={p => setHeroParty(p || '')}
@@ -585,9 +585,9 @@ export const SettingsModal = (props: Props) => {
 					{
 						options.heroParty === '' ?
 							<>
-								<NumberSpin label='Number of heroes' min={1} value={options.heroCount} onChange={setHeroCount} />
-								<NumberSpin label='Hero level' min={1} max={10} value={options.heroLevel} onChange={setHeroLevel} />
-								<NumberSpin label='Number of victories' min={0} value={options.heroVictories} onChange={setHeroVictories} />
+								<NumberSpin label='Кількість героїв' min={1} value={options.heroCount} onChange={setHeroCount} />
+								<NumberSpin label='Рівень героїв' min={1} max={10} value={options.heroLevel} onChange={setHeroLevel} />
+								<NumberSpin label='Кількість перемог' min={0} value={options.heroVictories} onChange={setHeroVictories} />
 							</>
 							: null
 					}
@@ -612,10 +612,10 @@ export const SettingsModal = (props: Props) => {
 		};
 
 		return (
-			<Expander title='Tactical Maps'>
+			<Expander title='Тактичні мапи'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<NumberSpin label='Director Map Grid Size' min={5} steps={[5]} value={options.gridSize} onChange={setGridSize} />
-					<NumberSpin label='Player Map Grid Size' min={5} steps={[5]} value={options.playerGridSize} onChange={setPlayerGridSize} />
+					<NumberSpin label='Розмір сітки мапи Директора' min={5} steps={[5]} value={options.gridSize} onChange={setGridSize} />
+					<NumberSpin label='Розмір сітки мапи гравців' min={5} steps={[5]} value={options.playerGridSize} onChange={setPlayerGridSize} />
 				</Space>
 			</Expander>
 		);
@@ -623,11 +623,11 @@ export const SettingsModal = (props: Props) => {
 
 	const getFeatureFlags = () => {
 		return (
-			<Expander title='Feature Flags'>
+			<Expander title='Прапорці функцій'>
 				<Space orientation='vertical' style={{ width: '100%' }}>
 					<Flex align='center' justify='space-between' gap={10}>
 						<TextInput
-							placeholder='Enter a feature flag code'
+							placeholder='Введіть код прапорця функції'
 							allowClear={true}
 							value={flag}
 							onChange={flag => {
@@ -654,7 +654,7 @@ export const SettingsModal = (props: Props) => {
 								<div className='ds-text' style={{ flex: '1 1 0' }}>{flag.description}</div>
 								<DangerButton
 									mode='clear'
-									message='Removing this flag will reload the app.'
+									message='Видалення цього прапорця перезавантажить застосунок.'
 									onConfirm={() => {
 										FeatureFlags.remove(flag.code);
 										window.location.reload();
@@ -676,7 +676,7 @@ export const SettingsModal = (props: Props) => {
 	const getWarehouseSettings = () => {
 		if (FeatureFlags.hasFlag(FeatureFlags.warehouse.code)) {
 			return (
-				<Expander title='Forge Steel Warehouse'>
+				<Expander title='Склад Forge Steel'>
 					<Space orientation='vertical' style={{ width: '100%' }}>
 						{
 							connectionSettings.useWarehouse ?
@@ -695,12 +695,12 @@ export const SettingsModal = (props: Props) => {
 						{
 							reloadNeeded ?
 								<Alert
-									title='Reload Forge Steel to use new settings'
+									title='Перезавантажте Forge Steel, щоб застосувати нові параметри'
 									type='info'
 									showIcon
 									action={
 										<Button size='small' type='primary' onClick={() => location.reload()}>
-											Reload
+											Перезавантажити
 										</Button>
 									}
 								/>
@@ -736,7 +736,7 @@ export const SettingsModal = (props: Props) => {
 			let message = '';
 			let output = '';
 			const fields: { label: string, value: string }[] = [
-				{ label: 'Type', value: `${event.type}` }
+				{ label: 'Тип', value: `${event.type}` }
 			];
 
 			if (event.type === 'error') {
@@ -745,8 +745,8 @@ export const SettingsModal = (props: Props) => {
 				message = error.message;
 				output = `title ${error.message}, file ${error.filename}, line ${error.lineno}, col ${error.colno}, data ${JSON.stringify(error.error)}`;
 
-				fields.push({ label: 'Location', value: `${error.filename}, line ${error.lineno}, column ${error.colno}` });
-				fields.push({ label: 'Data', value: JSON.stringify(error.error) });
+				fields.push({ label: 'Розташування', value: `${error.filename}, рядок ${error.lineno}, стовпець ${error.colno}` });
+				fields.push({ label: 'Дані', value: JSON.stringify(error.error) });
 			}
 
 			if (event.type === 'unhandledrejection') {
@@ -776,7 +776,7 @@ export const SettingsModal = (props: Props) => {
 
 		return props.errors.length > 0 ?
 			<Expander
-				title='Logs'
+				title='Журнал'
 				extra={[
 					<DangerButton key='clear' mode='clear' onConfirm={clearErrors} />
 				]}
@@ -790,7 +790,7 @@ export const SettingsModal = (props: Props) => {
 
 	const getContent = () => {
 		switch (page) {
-			case 'Settings':
+			case 'Налаштування':
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
 						{getAppearance()}
@@ -804,7 +804,7 @@ export const SettingsModal = (props: Props) => {
 						{getTacticalMaps()}
 					</Space>
 				);
-			case 'Admin':
+			case 'Адміністрування':
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
 						{getFeatureFlags()}
@@ -824,7 +824,7 @@ export const SettingsModal = (props: Props) => {
 				<Flex align='center' justify='center' style={{ width: '100%' }}>
 					<Segmented
 						name='tabs'
-						options={['Settings', 'Admin']}
+						options={['Налаштування', 'Адміністрування']}
 						value={page}
 						onChange={setPage}
 					/>

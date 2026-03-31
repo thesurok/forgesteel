@@ -1,6 +1,7 @@
 import { afterEach, assert, describe, expect, it, test, vi } from 'vitest';
 import { Ability } from '@/models/ability';
 import { AbilityData } from '@/data/ability-data';
+import { AbilityDistanceType } from '@/enums/ability-distance-type';
 import { AbilityLogic } from '@/logic/ability-logic';
 import { Characteristic } from '@/enums/characteristic';
 import { CreatureLogic } from '@/logic/creature-logic';
@@ -24,8 +25,8 @@ describe('getPowerRollCharacteristics', () => {
 	});
 
 	test.each([
-		[ AbilityData.freeStrikeMelee, [ Characteristic.Might, Characteristic.Agility ] ],
-		[ AbilityData.grab, [ Characteristic.Might ] ]
+		[AbilityData.freeStrikeMelee, [Characteristic.Might, Characteristic.Agility]],
+		[AbilityData.grab, [Characteristic.Might]]
 	])('should return the Ability RollSection characteristics when no creature is passed', (ability: Ability, expected: Characteristic[]) => {
 		// @ts-expect-error doesn't like me mocking a typeguard
 		CreatureLogic.isHero = vi.fn().mockReturnValue(false);
@@ -42,7 +43,7 @@ describe('getPowerRollCharacteristics', () => {
 
 		const hero = FactoryLogic.createHero([]);
 
-		[ AbilityData.grab, AbilityData.knockback ].forEach(ability => {
+		[AbilityData.grab, AbilityData.knockback].forEach(ability => {
 			const result = AbilityLogic.getPowerRollCharacteristics(ability, hero);
 			expect(result.length).toBe(1);
 			expect(result[0]).toBe(Characteristic.Might);
@@ -52,11 +53,11 @@ describe('getPowerRollCharacteristics', () => {
 	test('should swap Might for Intuition on Grab and Knockback for Nulls with Psionic Martial Arts', () => {
 		// @ts-expect-error doesn't like me mocking a typeguard
 		CreatureLogic.isHero = vi.fn().mockReturnValue(true);
-		HeroLogic.getFeatures = vi.fn().mockReturnValue([ { feature: { id: 'null-1-8' } } ]); // Psionic Martial Arts id
+		HeroLogic.getFeatures = vi.fn().mockReturnValue([{ feature: { id: 'null-1-8' } }]); // Psionic Martial Arts id
 
 		const hero = FactoryLogic.createHero([]);
 
-		[ AbilityData.grab, AbilityData.knockback ].forEach(ability => {
+		[AbilityData.grab, AbilityData.knockback].forEach(ability => {
 			const result = AbilityLogic.getPowerRollCharacteristics(ability, hero);
 			expect(result.length).toBe(1);
 			expect(result[0]).toBe(Characteristic.Intuition);
@@ -85,10 +86,10 @@ describe('getTextEffect', () => {
 	});
 
 	test.each([
-		[ '<weak', 0, '< 0' ],
-		[ '< avg', 2, '< 2' ],
-		[ '< average', 1, '< 1' ],
-		[ '<strong', 5, '< 5' ]
+		['<weak', 0, '< 0'],
+		['< avg', 2, '< 2'],
+		['< average', 1, '< 1'],
+		['<strong', 5, '< 5']
 	])('should properly swap in the correct Hero potency value', (text: string, potency: number, expected: string) => {
 		const hero = {} as Hero;
 		HeroLogic.getPotency = vi.fn().mockReturnValue(potency);
@@ -97,8 +98,8 @@ describe('getTextEffect', () => {
 	});
 
 	test.each([
-		[ 'equal to your level', 1, 'equal to 1' ],
-		[ 'equal to 2 + your level', 1, 'equal to 3' ]
+		['equal to your level', 1, 'equal to 1'],
+		['equal to 2 + your level', 1, 'equal to 3']
 	])('should properly calculate references to hero level', (text: string, level: number, expected: string) => {
 		const hero = {
 			class: { level: level }
@@ -108,8 +109,8 @@ describe('getTextEffect', () => {
 	});
 
 	test.each([
-		[ 'equal to 1d6 + your level', 2, 'equal to 1d6 + 2' ],
-		[ 'equal to 1d6 + twice your level', 3, 'equal to 1d6 + 6' ]
+		['equal to 1d6 + your level', 2, 'equal to 1d6 + 2'],
+		['equal to 1d6 + twice your level', 3, 'equal to 1d6 + 6']
 	])('should properly calculate combinations of dice rolls and hero level', (text: string, level: number, expected: string) => {
 		const hero = {
 			class: { level: level }
@@ -119,12 +120,26 @@ describe('getTextEffect', () => {
 	});
 
 	test.each([
-		[ 'equal to three times your Agility score', 1, 'equal to 3' ],
-		[ 'equal to 3 times your Agility score', 1, 'equal to 3' ]
+		['equal to three times your Agility score', 1, 'equal to 3'],
+		['equal to 3 times your Agility score', 1, 'equal to 3']
 	])('should properly calculate multiplier references to characteristics', (text, characteristic, expected) => {
 		HeroLogic.getCharacteristic = vi.fn().mockReturnValue(characteristic);
 		const hero = {} as Hero;
 
 		expect(AbilityLogic.getTextEffect(text, hero)).toBe(expected);
+	});
+});
+
+describe('getDistance', () => {
+	test('localizes area distance types and within text', () => {
+		const distance = FactoryLogic.distance.create({ type: AbilityDistanceType.Aura, value: 5, within: 3 });
+
+		expect(AbilityLogic.getDistance(distance)).toBe('Аура 5 в межах 3');
+	});
+
+	test('localizes summoner range', () => {
+		const distance = FactoryLogic.distance.createSummoner();
+
+		expect(AbilityLogic.getDistance(distance)).toBe('Дальність заклинача');
 	});
 });

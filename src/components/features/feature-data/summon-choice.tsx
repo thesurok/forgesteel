@@ -65,7 +65,7 @@ interface EditProps {
 }
 
 export const EditSummonChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureSummonChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureSummonChoiceData>(Utils.copy(props.data));
 
 	const addSummonChoice = (data: FeatureSummonChoiceData) => {
 		const copy = Utils.copy(data);
@@ -150,23 +150,23 @@ export const EditSummonChoice = (props: EditProps) => {
 					<Button type='text' icon={<PlusOutlined />} onClick={() => addSummonChoice(data)} />
 				}
 			>
-				Options
+				Варіанти
 			</HeaderText>
 			{
 				data.options.map((summon, n) => (
 					<Expander
 						key={summon.monster.id}
-						title={summon.monster.name || 'Unnamed Monster'}
+						title={summon.monster.name || 'Безіменне чудовисько'}
 						extra={[
-							<Button key='up' type='text' title='Move Up' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSummonChoice(data, n, 'up'); }} />,
-							<Button key='down' type='text' title='Move Down' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSummonChoice(data, n, 'down'); }} />,
+							<Button key='up' type='text' title='Перемістити вгору' icon={<CaretUpOutlined />} onClick={e => { e.stopPropagation(); moveSummonChoice(data, n, 'up'); }} />,
+							<Button key='down' type='text' title='Перемістити вниз' icon={<CaretDownOutlined />} onClick={e => { e.stopPropagation(); moveSummonChoice(data, n, 'down'); }} />,
 							<DangerButton key='delete' mode='clear' onConfirm={e => { e.stopPropagation(); deleteSummonChoice(data, n); }} />
 						]}
 					>
-						<HeaderText>Summoning</HeaderText>
-						<Toggle label='Is signature' value={summon.info.isSignature} onChange={value => setSummonChoiceIsSignature(data, n, value)} />
-						<NumberSpin min={1} label='Cost' value={summon.info.cost} onChange={value => setSummonChoiceCost(data, n, value)} />
-						<NumberSpin min={1} label='Count' value={summon.info.count} onChange={value => setSummonChoiceCount(data, n, value)} />
+						<HeaderText>Прикликання</HeaderText>
+						<Toggle label='Фірмова' value={summon.info.isSignature} onChange={value => setSummonChoiceIsSignature(data, n, value)} />
+						<NumberSpin min={1} label='Вартість' value={summon.info.cost} onChange={value => setSummonChoiceCost(data, n, value)} />
+						<NumberSpin min={1} label='Кількість' value={summon.info.count} onChange={value => setSummonChoiceCount(data, n, value)} />
 						<MonsterEditPanel
 							monster={summon.monster}
 							sourcebooks={props.sourcebooks}
@@ -181,7 +181,7 @@ export const EditSummonChoice = (props: EditProps) => {
 					<Empty />
 					: null
 			}
-			<HeaderText>Count</HeaderText>
+			<HeaderText>Кількість</HeaderText>
 			<NumberSpin min={1} value={data.count} onChange={setCount} />
 		</Space>
 	);
@@ -197,8 +197,8 @@ interface ConfigProps {
 }
 
 export const ConfigSummonChoice = (props: ConfigProps) => {
-	const [ monsterSelectorOpen, setMonsterSelectorOpen ] = useState<boolean>(false);
-	const [ selectedSummon, setSelectedSummon ] = useState<Summon | null>(null);
+	const [monsterSelectorOpen, setMonsterSelectorOpen] = useState<boolean>(false);
+	const [selectedSummon, setSelectedSummon] = useState<Summon | null>(null);
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>

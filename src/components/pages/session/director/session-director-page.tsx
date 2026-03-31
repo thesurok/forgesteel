@@ -356,15 +356,15 @@ export const SessionDirectorPage = (props: Props) => {
 			case 'counter':
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
-						<div className='ds-text bold-text'>Create a new counter:</div>
+						<div className='ds-text bold-text'>Створити новий лічильник:</div>
 						<TextInput
-							placeholder='Counter Name'
+							placeholder='Назва лічильника'
 							allowClear={true}
 							value={newCounterName}
 							onChange={setNewCounterName}
 						/>
-						<NumberSpin label='Starting Value' value={newCounterValue} onChange={setNewCounterValue} />
-						<Button block={true} onClick={() => startCounter()}>Create counter</Button>
+						<NumberSpin label='Початкове значення' value={newCounterValue} onChange={setNewCounterValue} />
+						<Button block={true} onClick={() => startCounter()}>Створити лічильник</Button>
 					</Space>
 				);
 		}
@@ -404,13 +404,13 @@ export const SessionDirectorPage = (props: Props) => {
 					{
 						selectedElementID ?
 							<DangerButton
-								label='Finish'
+								label='Завершити'
 								onConfirm={finish}
 							/>
 							: null
 					}
 					<div className='divider' />
-					<Button onClick={props.showPlayerView}>Player View</Button>
+					<Button onClick={props.showPlayerView}>Вигляд гравця</Button>
 				</AppHeader>
 				<ErrorBoundary>
 					<div className='session-director-page-content'>

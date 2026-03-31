@@ -11,55 +11,55 @@ interface Props {
 }
 
 export const SuccessFailureTrackerCard = (props: Props) => {
-	const montage = useMemo(() => props.montage, [ props.montage ]);
+	const montage = useMemo(() => props.montage, [props.montage]);
 
 	return (
 		<div className='success-failure-tracker card'>
 			<div className='success-failures'>
 				<div className='tracker'>
-					<label>Successes</label>
+					<label>Успіхи</label>
 					<div className='current-successes'>
 						<LabeledTextField
-							label='Current'
+							label='Поточне'
 							content=''
-							additionalClasses={[ 'no-box' ]}
+							additionalClasses={['no-box']}
 						/>
 					</div>
 					<div className='limits'>
 						<LabeledTextField
-							label='Success Limit'
+							label='Ліміт успіху'
 							content={montage.successLimit}
-							additionalClasses={[ 'no-box' ]}
+							additionalClasses={['no-box']}
 						/>
 						<LabeledTextField
-							label='Failure Limit'
+							label='Ліміт провалу'
 							content={montage.failureLimit}
-							additionalClasses={[ 'no-box' ]}
+							additionalClasses={['no-box']}
 						/>
 					</div>
 					<div className='current-failures'>
 						<LabeledTextField
-							label='Current'
+							label='Поточне'
 							content=''
-							additionalClasses={[ 'no-box' ]}
+							additionalClasses={['no-box']}
 						/>
 					</div>
-					<label>Failures</label>
+					<label>Провали</label>
 				</div>
-				<div className='info'><strong>Limit -1</strong> for each hero &lt;5 (Minimum 2)</div>
-				<div className='info'><strong>Limit +1</strong> for each hero &gt;5</div>
+				<div className='info'><strong>Ліміт -1</strong> за кожного героя &lt;5 (мінімум 2)</div>
+				<div className='info'><strong>Ліміт +1</strong> за кожного героя &gt;5</div>
 			</div>
 			<div className='outcomes'>
 				<section className='bordered'>
-					<h3>Total Success</h3>
+					<h3>Повний успіх</h3>
 					<p>{montage.outcomes.totalSuccess}</p>
 				</section>
 				<section className='bordered'>
-					<h3>Partial Success</h3>
+					<h3>Частковий успіх</h3>
 					<p>{montage.outcomes.partialSuccess}</p>
 				</section>
 				<section className='bordered'>
-					<h3>Total Failure</h3>
+					<h3>Повний провал</h3>
 					<p>{montage.outcomes.totalFailure}</p>
 				</section>
 			</div>

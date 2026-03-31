@@ -242,7 +242,7 @@ export const virtuoso: SubClass = {
 									description: 'Ваша музика бʼє по натовпу в ритмі, поки їхні серця більше не витримують.',
 									type: FactoryLogic.type.createMain(),
 									keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
-									distance: [FactoryLogic.distance.createSpecial('Three 3 cubes within 1')],
+									distance: [FactoryLogic.distance.createSpecial('Три куби 3 в межах 1')],
 									target: 'Кожен ворог у зоні',
 									cost: 9,
 									sections: [

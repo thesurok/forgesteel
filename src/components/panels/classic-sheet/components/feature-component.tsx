@@ -1,7 +1,9 @@
 import { Feature, FeatureAbility, FeatureAbilityDamage, FeatureAbilityDistance, FeatureAncestryChoice, FeatureBonus, FeatureCharacteristicBonus, FeatureChoice, FeatureClassAbility, FeatureCompanion, FeatureConditionImmunity, FeatureDamageModifier, FeatureDomain, FeatureDomainFeature, FeatureFollower, FeatureHeroicResource, FeatureItemChoice, FeatureKit, FeatureLanguageChoice, FeatureMalice, FeatureMaliceAbility, FeaturePackage, FeaturePerk, FeatureSkillChoice, FeatureText } from '@/models/feature';
+import { getAbilityUsageClassName, getAbilityUsageLabel } from '@/utils/ability-usages';
 
 import { Ability } from '@/models/ability';
 import { AbilityComponent } from '@/components/panels/classic-sheet/components/ability-component';
+import { AbilityKeyword } from '@/enums/ability-keyword';
 import { AbilityUsage } from '@/enums/ability-usage';
 import { Characteristic } from '@/enums/characteristic';
 import { ClassicSheetBuilder } from '@/logic/classic-sheet/classic-sheet-builder';
@@ -9,6 +11,7 @@ import { DamageModifier } from '@/models/damage-modifier';
 import { DamageModifierType } from '@/enums/damage-modifier-type';
 import { DrawSteelSymbolText } from '@/components/panels/classic-sheet/components/ds-symbol-text-component';
 import { FeatureType } from '@/enums/feature-type';
+import { Format } from '@/utils/format';
 import { Fragment } from 'react';
 import { Hero } from '@/models/hero';
 import { HeroLogic } from '@/logic/hero-logic';
@@ -17,7 +20,6 @@ import { ModifierLogic } from '@/logic/modifier-logic';
 import { PerkList } from '@/enums/perk-list';
 import { SheetFormatter } from '@/logic/classic-sheet/sheet-formatter';
 import { SkillList } from '@/enums/skill-list';
-import { getAbilityUsageClassName, getAbilityUsageLabel } from '@/utils/ability-usages';
 import { getFeatureFieldLabel } from '@/utils/feature-fields';
 import { normalizeSkillName } from '@/utils/skill-names';
 
@@ -192,8 +194,8 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 		if (![AbilityUsage.NoAction, AbilityUsage.Other].includes(usage)) {
 			type = getAbilityUsageLabel(usage, ability.type.free);
 		}
-		if (ability.keywords.includes('Performance')) {
-			type = 'Performance';
+		if (ability.keywords.includes(AbilityKeyword.Performance)) {
+			type = Format.getKeywordName(AbilityKeyword.Performance);
 		}
 		return type;
 	};
@@ -201,7 +203,7 @@ const AbilityFeatureComponent = (feature: FeatureAbility) => {
 	const type = getAbilityType(feature.data.ability);
 	const typeClasses = ['type'];
 	if (type) {
-		typeClasses.push(feature.data.ability.keywords.includes('Performance') ? 'performance' : getAbilityUsageClassName(feature.data.ability.type.usage, feature.data.ability.type.free));
+		typeClasses.push(feature.data.ability.keywords.includes(AbilityKeyword.Performance) ? 'performance' : getAbilityUsageClassName(feature.data.ability.type.usage, feature.data.ability.type.free));
 	}
 
 	return (

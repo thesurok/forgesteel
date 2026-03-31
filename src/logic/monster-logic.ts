@@ -37,7 +37,7 @@ export class MonsterLogic {
 			return `${group.name} ${monster.role.type}`;
 		}
 
-		return 'Unnamed Monster';
+		return 'Безіменне чудовисько';
 	};
 
 	static getMonsterLevel = (monster: Monster) => {

@@ -24,7 +24,7 @@ interface Props {
 }
 
 export const HeroLevelUpModal = (props: Props) => {
-	const [ hero, setHero ] = useState<Hero>(() => {
+	const [hero, setHero] = useState<Hero>(() => {
 		const copy = Utils.copy(props.hero);
 		if (HeroLogic.canLevelUp(copy, props.options)) {
 			copy.class!.level += 1;
@@ -66,19 +66,19 @@ export const HeroLevelUpModal = (props: Props) => {
 		<Modal
 			toolbar={
 				<>
-					<Button type='primary' disabled={features.some(f => !FeatureLogic.isChosen(f, hero))} onClick={() => props.onAccept(hero)}>Accept Changes</Button>
-					<Button onClick={() => props.onClose()}>Cancel</Button>
+					<Button type='primary' disabled={features.some(f => !FeatureLogic.isChosen(f, hero))} onClick={() => props.onAccept(hero)}>Підтвердити зміни</Button>
+					<Button onClick={() => props.onClose()}>Скасувати</Button>
 				</>
 			}
 			content={
 				<div className='hero-level-up-modal'>
-					<HeaderText level={1}>Level Up</HeaderText>
-					<div className='ds-text'>You gain the following features at <b>level {hero.class!.level}</b>.</div>
+					<HeaderText level={1}>Підвищення рівня</HeaderText>
+					<div className='ds-text'>Ви отримуєте наведені нижче особливості на <b>рівні {hero.class!.level}</b>.</div>
 					<Tabs
 						items={[
 							{
 								key: '1',
-								label: 'Choices',
+								label: 'Вибір',
 								children: (
 									<Space orientation='vertical' style={{ width: '100%' }}>
 										{features.filter(f => FeatureLogic.isChoice(f)).map(getFeature)}
@@ -88,7 +88,7 @@ export const HeroLevelUpModal = (props: Props) => {
 							},
 							{
 								key: '2',
-								label: 'Other Features',
+								label: 'Інші особливості',
 								children: (
 									<Space orientation='vertical' style={{ width: '100%' }}>
 										{features.filter(f => !FeatureLogic.isChoice(f)).map(getFeature)}

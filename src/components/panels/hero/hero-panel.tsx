@@ -154,7 +154,7 @@ export const HeroPanel = (props: Props) => {
 						ability.type.trigger ?
 							<Field
 								compact={true}
-								label={ability.name || 'Unnamed Ability'}
+								label={ability.name || 'Безіменна здібність'}
 								value={ability.type.trigger}
 							/>
 							: null
@@ -163,7 +163,7 @@ export const HeroPanel = (props: Props) => {
 						showTarget && distance ?
 							<Field
 								compact={true}
-								label={ability.target !== distance ? 'Distance' : 'Distance / Target'}
+								label={ability.target !== distance ? 'Дальність' : 'Дальність / Ціль'}
 								value={distance}
 							/>
 							: null
@@ -172,7 +172,7 @@ export const HeroPanel = (props: Props) => {
 						showTarget && ability.target && (ability.target !== distance) ?
 							<Field
 								compact={true}
-								label='Target'
+								label='Ціль'
 								value={ability.target}
 							/>
 							: null
@@ -427,19 +427,19 @@ export const HeroPanel = (props: Props) => {
 			<ErrorBoundary>
 				<div className='stats-section'>
 					<Flex gap={10}>
-						<StatsRow caption={isSmall ? 'M' : 'Might'} onClick={() => onSelectCharacteristic(Characteristic.Might)} style={{ flex: '1 1 0' }}>
+						<StatsRow caption={isSmall ? 'С' : 'Сила'} onClick={() => onSelectCharacteristic(Characteristic.Might)} style={{ flex: '1 1 0' }}>
 							<Statistic value={HeroLogic.getCharacteristic(props.hero, Characteristic.Might)} />
 						</StatsRow>
 						<StatsRow caption={isSmall ? 'A' : 'Ловкість'} onClick={() => onSelectCharacteristic(Characteristic.Agility)} style={{ flex: '1 1 0' }}>
 							<Statistic value={HeroLogic.getCharacteristic(props.hero, Characteristic.Agility)} />
 						</StatsRow>
-						<StatsRow caption={isSmall ? 'R' : 'Reason'} onClick={() => onSelectCharacteristic(Characteristic.Reason)} style={{ flex: '1 1 0' }}>
+						<StatsRow caption={isSmall ? 'Р' : 'Розум'} onClick={() => onSelectCharacteristic(Characteristic.Reason)} style={{ flex: '1 1 0' }}>
 							<Statistic value={HeroLogic.getCharacteristic(props.hero, Characteristic.Reason)} />
 						</StatsRow>
-						<StatsRow caption={isSmall ? 'I' : 'Intuition'} onClick={() => onSelectCharacteristic(Characteristic.Intuition)} style={{ flex: '1 1 0' }}>
+						<StatsRow caption={isSmall ? 'І' : 'Інтуїція'} onClick={() => onSelectCharacteristic(Characteristic.Intuition)} style={{ flex: '1 1 0' }}>
 							<Statistic value={HeroLogic.getCharacteristic(props.hero, Characteristic.Intuition)} />
 						</StatsRow>
-						<StatsRow caption={isSmall ? 'P' : 'Presence'} onClick={() => onSelectCharacteristic(Characteristic.Presence)} style={{ flex: '1 1 0' }}>
+						<StatsRow caption={isSmall ? 'П' : 'Присутність'} onClick={() => onSelectCharacteristic(Characteristic.Presence)} style={{ flex: '1 1 0' }}>
 							<Statistic value={HeroLogic.getCharacteristic(props.hero, Characteristic.Presence)} />
 						</StatsRow>
 					</Flex>
@@ -452,51 +452,51 @@ export const HeroPanel = (props: Props) => {
 											<div key={hr.id}>{hr.name}: <b>{hr.value}</b></div>
 										))
 									}
-									<div>Surges: <b>{props.hero.state.surges}</b></div>
-									<div>Victories: <b>{props.hero.state.victories}</b></div>
+									<div>Сплески: <b>{props.hero.state.surges}</b></div>
+									<div>Перемоги: <b>{props.hero.state.victories}</b></div>
 									<div>XP: <b>{props.hero.state.xp}</b></div>
-									<div>Renown: <b>{HeroLogic.getRenown(props.hero)}</b></div>
-									<div>Wealth: <b>{HeroLogic.getWealth(props.hero)}</b></div>
+									<div>Відомість: <b>{HeroLogic.getRenown(props.hero)}</b></div>
+									<div>Багатство: <b>{HeroLogic.getWealth(props.hero)}</b></div>
 								</div>
 								<div className='selectable-row'>
-									<div>Size: <b>{FormatLogic.getSize(size)}</b></div>
+									<div>Розмір: <b>{FormatLogic.getSize(size)}</b></div>
 									<div>{speedStr}: <b>{speed.value}</b></div>
-									<div>Stability: <b>{HeroLogic.getStability(props.hero)}</b></div>
-									<div>Disengage: <b>{HeroLogic.getDisengage(props.hero)}</b></div>
-									<div>Save: <b>{HeroLogic.getSaveThreshold(props.hero)}</b></div>
+									<div>Непорушність: <b>{HeroLogic.getStability(props.hero)}</b></div>
+									<div>Відступ: <b>{HeroLogic.getDisengage(props.hero)}</b></div>
+									<div>Рят. кидок: <b>{HeroLogic.getSaveThreshold(props.hero)}</b></div>
 								</div>
 								<div className='selectable-row clickable' onClick={onShowVitals}>
-									<div>Stamina: <b>{stamina}</b></div>
-									<div>Recoveries: <b>{recoveries}</b></div>
-									<div>Recovery Value: <b>{HeroLogic.getRecoveryValue(props.hero)}</b></div>
+									<div>Витривалість: <b>{stamina}</b></div>
+									<div>Відновлення: <b>{recoveries}</b></div>
+									<div>Значення відновлення: <b>{HeroLogic.getRecoveryValue(props.hero)}</b></div>
 								</div>
 							</>
 							:
 							<>
-								<StatsRow caption='Resources' onClick={onShowResources}>
+								<StatsRow caption='Ресурси' onClick={onShowResources}>
 									{
 										HeroLogic.getHeroicResources(props.hero).map(hr => (
 											<Statistic key={hr.id} title={hr.name} value={hr.value} />
 										))
 									}
-									<Statistic title='Surges' value={props.hero.state.surges} />
-									<Statistic title='Victories' value={props.hero.state.victories} />
+									<Statistic title='Сплески' value={props.hero.state.surges} />
+									<Statistic title='Перемоги' value={props.hero.state.victories} />
 									<Statistic title='XP' value={props.hero.state.xp} suffix={xpSuffix} />
-									<Statistic title='Renown' value={HeroLogic.getRenown(props.hero)} />
-									<Statistic title='Wealth' value={HeroLogic.getWealth(props.hero)} />
+									<Statistic title='Відомість' value={HeroLogic.getRenown(props.hero)} />
+									<Statistic title='Багатство' value={HeroLogic.getWealth(props.hero)} />
 								</StatsRow>
 								<Flex gap={10}>
-									<StatsRow caption='Statistics' style={{ flex: '5 5 0' }}>
-										<Statistic title='Size' value={size.value} suffix={sizeSuffix} />
+									<StatsRow caption='Показники' style={{ flex: '5 5 0' }}>
+										<Statistic title='Розмір' value={size.value} suffix={sizeSuffix} />
 										<Statistic title={speedStr} value={speed.value} suffix={speedSuffix} />
 										<Statistic title='Непорушність' value={HeroLogic.getStability(props.hero)} />
 										<Statistic title='Відступ' value={HeroLogic.getDisengage(props.hero)} />
-										<Statistic title='Save' value={HeroLogic.getSaveThreshold(props.hero)} suffix={HeroLogic.getSaveBonus(props.hero) ? `+${HeroLogic.getSaveBonus(props.hero)}` : undefined} />
+										<Statistic title='Рят. кидок' value={HeroLogic.getSaveThreshold(props.hero)} suffix={HeroLogic.getSaveBonus(props.hero) ? `+${HeroLogic.getSaveBonus(props.hero)}` : undefined} />
 									</StatsRow>
-									<StatsRow caption='Vitals' onClick={onShowVitals} style={{ flex: '3 3 0' }}>
+									<StatsRow caption='Стан' onClick={onShowVitals} style={{ flex: '3 3 0' }}>
 										<Statistic title='Витривалість' value={stamina} suffix={staminaSuffix} />
 										<Statistic title='Відновлення' value={recoveries} suffix={recoveriesSuffix} />
-										<Statistic title='Recovery Value' value={HeroLogic.getRecoveryValue(props.hero)} />
+										<Statistic title='Значення відновлення' value={HeroLogic.getRecoveryValue(props.hero)} />
 									</StatsRow>
 								</Flex>
 							</>
@@ -1016,9 +1016,9 @@ export const HeroPanel = (props: Props) => {
 				tabs.push('Тригерні дії');
 			}
 			if (others.length > 0) {
-				tabs.push('Others');
+				tabs.push('Інше');
 			}
-			tabs.push('Free Strikes');
+			tabs.push('Вільні удари');
 		}
 
 		const retinue = HeroLogic.getCompanions(props.hero).length + HeroLogic.getFollowers(props.hero).length + HeroLogic.getRetainers(props.hero).length + HeroLogic.getSummons(props.hero).length;
@@ -1056,8 +1056,8 @@ export const HeroPanel = (props: Props) => {
 						{getAbilitiesSection('Маневри', maneuvers)}
 						{getAbilitiesSection('Дії руху', moves)}
 						{getAbilitiesSection('Тригерні дії', triggers)}
-						{getAbilitiesSection('Other Abilities', others)}
-						{getAbilitiesSection('Free Strikes', [
+						{getAbilitiesSection('Інші здібності', others)}
+						{getAbilitiesSection('Вільні удари', [
 							{ ability: AbilityData.freeStrikeMelee, source: 'Standard' },
 							{ ability: AbilityData.freeStrikeRanged, source: 'Standard' }
 						])}
@@ -1071,10 +1071,10 @@ export const HeroPanel = (props: Props) => {
 				return getAbilitiesSection('Дії руху', moves);
 			case 'Тригерні дії':
 				return getAbilitiesSection('Тригерні дії', triggers);
-			case 'Others':
-				return getAbilitiesSection('Other Abilities', others);
-			case 'Free Strikes':
-				return getAbilitiesSection('Free Strikes', [
+			case 'Інше':
+				return getAbilitiesSection('Інші здібності', others);
+			case 'Вільні удари':
+				return getAbilitiesSection('Вільні удари', [
 					{ ability: AbilityData.freeStrikeMelee, source: 'Standard' },
 					{ ability: AbilityData.freeStrikeRanged, source: 'Standard' },
 					...abilities.filter(a => a.ability.type.freeStrike)
@@ -1112,7 +1112,7 @@ export const HeroPanel = (props: Props) => {
 					{
 						props.hero.ancestry ?
 							<Field
-								label='Ancestry'
+								label='Походження'
 								value={props.hero.ancestry.name}
 							/>
 							: null
@@ -1120,7 +1120,7 @@ export const HeroPanel = (props: Props) => {
 					{
 						background.length > 0 ?
 							<Field
-								label='Background'
+								label='Тло'
 								value={background.join(' / ')}
 							/>
 							: null
@@ -1128,15 +1128,15 @@ export const HeroPanel = (props: Props) => {
 					{
 						props.hero.class ?
 							<Field
-								label='Class'
-								value={`${props.hero.class.name} (${[`Level ${props.hero.class.level}`, ...props.hero.class.subclasses.filter(sc => sc.selected).map(sc => sc.name)].join(' ')})`}
+								label='Клас'
+								value={`${props.hero.class.name} (${[`Рівень ${props.hero.class.level}`, ...props.hero.class.subclasses.filter(sc => sc.selected).map(sc => sc.name)].join(' ')})`}
 							/>
 							: null
 					}
 					{
 						props.hero.complication ?
 							<Field
-								label='Complication'
+								label='Ускладнення'
 								value={props.hero.complication.name}
 							/>
 							: null

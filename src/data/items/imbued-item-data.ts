@@ -5,25 +5,25 @@ import { ItemType } from '@/enums/item-type';
 export class ImbuedItemData {
 	static imbuedArmor: Item = FactoryLogic.createItem({
 		id: 'imbued-armor',
-		name: 'Imbued Armor',
-		description: 'Armor imbued with an enhancement grants you special benefits while it is worn.',
+		name: 'Наділений обладунок',
+		description: 'Обладунок, наділений покращенням, надає вам особливі переваги, поки ви його носите.',
 		type: ItemType.ImbuedArmor
 	});
 
 	static imbuedImplement: Item = FactoryLogic.createItem({
 		id: 'imbued-implement',
-		name: 'Imbued Implement',
+		name: 'Наділений імплемент',
 		description: `
-Implements are jewelry, spectacles, orbs, staffs, tomes, wands, weapons, and other objects used by those who channel magic and psionic power to focus that power. You decide what object to imbue when you create an implement treasure, but it must be an object you can carry or wear. You must have a mundane version of the item you plan to imbue when you start this project. 
+Імплементи - це прикраси, окуляри, сфери, посохи, томи, жезли, зброя та інші предмети, які використовують ті, хто спрямовує магічну й псіонічну силу, щоб її зосередити. Коли ви створюєте скарб-імплемент, ви самі вирішуєте, який предмет наділити, але це має бути предмет, який можна носити або тримати при собі. На початку цього проєкту ви повинні мати немагічну версію предмета, який плануєте наділити. 
 
-An implement imbued with an enhancement grants you special benefits while it is wielded.`,
+Імплемент, наділений покращенням, надає вам особливі переваги, поки ви ним орудуєте.`,
 		type: ItemType.ImbuedImplement
 	});
 
 	static imbuedWeapon: Item = FactoryLogic.createItem({
 		id: 'imbued-weapon',
-		name: 'Imbued Weapon',
-		description: 'A weapon imbued with an enhancement grants you special benefits while it is wielded.',
+		name: 'Наділена зброя',
+		description: 'Зброя, наділена покращенням, надає вам особливі переваги, поки ви нею орудуєте.',
 		type: ItemType.ImbuedWeapon
 	});
 }

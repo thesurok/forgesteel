@@ -52,7 +52,7 @@ interface EditProps {
 }
 
 export const EditTaggedFeatureChoice = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureTaggedFeatureChoiceData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureTaggedFeatureChoiceData>(Utils.copy(props.data));
 
 	const setTag = (value: string) => {
 		const copy = Utils.copy(data);
@@ -110,7 +110,7 @@ export const ConfigTaggedFeatureChoice = (props: ConfigProps) => {
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			{props.data.count > 1 ? <div className='ds-text'>Choose {props.data.count}:</div> : null}
+			{props.data.count > 1 ? <div className='ds-text'>Оберіть {props.data.count}:</div> : null}
 			{
 				sortedFeatures.length > 0 ?
 					<Select
@@ -119,14 +119,14 @@ export const ConfigTaggedFeatureChoice = (props: ConfigProps) => {
 						mode={props.data.count === 1 ? undefined : 'multiple'}
 						maxCount={props.data.count === 1 ? undefined : props.data.count}
 						allowClear={true}
-						placeholder={props.data.count === 1 ? 'Select a feature' : 'Select features'}
+						placeholder={props.data.count === 1 ? 'Оберіть рису' : 'Оберіть риси'}
 						options={sortedFeatures.map(f => ({ label: f.name, value: f.id, desc: f.description || f.type, disabled: currentTaggedFeatureIDs.includes(f.id) }))}
 						optionRender={option => <Field disabled={option.data.disabled} label={option.data.label} value={option.data.desc} />}
 						value={props.data.count === 1 ? (props.data.selected.length > 0 ? props.data.selected[0].id : null) : props.data.selected.map(k => k.id)}
 						onChange={value => {
 							let ids: string[] = [];
 							if (props.data.count === 1) {
-								ids = value !== undefined ? [ value as string ] : [];
+								ids = value !== undefined ? [value as string] : [];
 							} else {
 								ids = value as string[];
 							}

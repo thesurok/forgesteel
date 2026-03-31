@@ -38,7 +38,7 @@ export const FollowersCard = (props: Props) => {
 
 	return (
 		<div className='followers card'>
-			<h2>Followers</h2>
+			<h2>Прибічники</h2>
 			{followers.map(f => getFollowerBlock(f))}
 		</div>
 	);

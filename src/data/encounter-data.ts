@@ -6,8 +6,8 @@ import { TerrainData } from '@/data/terrain-data';
 export class EncounterData {
 	static goblinAmbush: Encounter = {
 		id: 'encounter-goblin-ambush',
-		name: 'Goblin Ambush',
-		description: 'An unexpected goblin attack.',
+		name: 'Засідка гоблінів',
+		description: 'Несподіваний напад гоблінів.',
 		groups: [
 			{
 				id: 'group-1',
@@ -154,8 +154,8 @@ export class EncounterData {
 
 	static dragonAttack: Encounter = {
 		id: 'encounter-dragon-attack',
-		name: 'Dragon Attack',
-		description: 'Survive a dragon.',
+		name: 'Напад дракона',
+		description: 'Переживіть напад дракона.',
 		groups: [
 			{
 				id: 'group-1',

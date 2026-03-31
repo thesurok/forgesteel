@@ -253,11 +253,11 @@ export const ElementToolbar = (props: Props) => {
 									type='warning'
 									title={
 										<>
-											<HeaderText level={3}>External Content</HeaderText>
-											<div>Some homebrew content used in this {category} is located in a different sourcebook.</div>
-											<div>The exported file won't contain the following items:</div>
+											<HeaderText level={3}>Зовнішній вміст</HeaderText>
+											<div>Частина домашнього вмісту, використаного в цьому розділі {category}, міститься в іншому збірнику.</div>
+											<div>Експортований файл не міститиме таких елементів:</div>
 											<ul>
-												{externalContent.map(ec => <li key={ec.element.id}><b>{ec.element.name}</b> in {ec.sourcebook.name}</li>)}
+												{externalContent.map(ec => <li key={ec.element.id}><b>{ec.element.name}</b> у {ec.sourcebook.name}</li>)}
 											</ul>
 										</>
 									}
@@ -283,7 +283,7 @@ export const ElementToolbar = (props: Props) => {
 			return null;
 		}
 
-		const elements = [ props.element ];
+		const elements = [props.element];
 		if (props.category === 'class') {
 			const c = props.element as HeroClass;
 			if (c.subclasses) {

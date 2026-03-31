@@ -311,18 +311,18 @@ export const HeroSheetPreviewPage = (props: Props) => {
 				<FloatButton
 					icon={<SettingFilled />}
 					onClick={showDrawer}
-					tooltip={<div>Sheet Display Options</div>}
+					tooltip={<div>Параметри відображення аркуша</div>}
 				/>
 				<Drawer
-					title='Sheet Display Options'
-					closable={{ 'aria-label': 'Close Button' }}
+					title='Параметри відображення аркуша'
+					closable={{ 'aria-label': 'Кнопка закриття' }}
 					onClose={onDrawerClose}
 					open={drawerOpen}
 					style={{ padding: '10px' }}
 				>
-					<Toggle label='Show play state' value={props.options.includePlayState} onChange={setIncludePlayState} />
-					<Toggle label='Use color' value={props.options.colorSheet} onChange={setColorSheet} />
-					<Divider size='small'>Text Color</Divider>
+					<Toggle label='Показувати стан гри' value={props.options.includePlayState} onChange={setIncludePlayState} />
+					<Toggle label='Використовувати колір' value={props.options.colorSheet} onChange={setColorSheet} />
+					<Divider size='small'>Колір тексту</Divider>
 					<Segmented
 						name='textColor'
 						block={true}

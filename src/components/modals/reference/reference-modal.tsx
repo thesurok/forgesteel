@@ -197,12 +197,14 @@ export const ReferenceModal = (props: Props) => {
 						LanguageType.Dead
 					].map((type, n1) => (
 						<div key={n1}>
-							<HeaderText>{({
-								[LanguageType.Common]: 'Загальні мови',
-								[LanguageType.Regional]: 'Регіональні мови',
-								[LanguageType.Cultural]: 'Культурні мови',
-								[LanguageType.Dead]: 'Мертві мови'
-							} as Record<LanguageType, string>)[type]}</HeaderText>
+							<HeaderText>
+								{({
+									[LanguageType.Common]: 'Загальні мови',
+									[LanguageType.Regional]: 'Регіональні мови',
+									[LanguageType.Cultural]: 'Культурні мови',
+									[LanguageType.Dead]: 'Мертві мови'
+								} as Record<LanguageType, string>)[type]}
+							</HeaderText>
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{
 									allLanguages
@@ -218,7 +220,7 @@ export const ReferenceModal = (props: Props) => {
 												{
 													l.related.length > 0 ?
 														<div style={{ padding: '0 0 5px 10px' }}>
-															Related to: {l.related.join(', ')}
+															Повʼязано з: {l.related.join(', ')}
 														</div>
 														: null
 												}
@@ -312,7 +314,7 @@ export const ReferenceModal = (props: Props) => {
 					},
 					{
 						key: 'free',
-						label: 'Free Strikes',
+						label: 'Вільні удари',
 						children:
 							<Space orientation='vertical' style={{ paddingBottom: '20px', width: '100%' }}>
 								{

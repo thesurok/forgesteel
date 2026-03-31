@@ -18,9 +18,9 @@ interface Props {
 }
 
 export const PatreonConnectPanel = (props: Props) => {
-	const [ loadingSession, setLoadingSession ] = useState<boolean>(true);
-	const [ patreonSession, setPatreonSession ] = useState<PatreonSession | null>(null);
-	const [ notify, notifyContext ] = notification.useNotification();
+	const [loadingSession, setLoadingSession] = useState<boolean>(true);
+	const [patreonSession, setPatreonSession] = useState<PatreonSession | null>(null);
+	const [notify, notifyContext] = notification.useNotification();
 
 	const connectOAuth = () => {
 		props.dataService.getPatreonAuthUrl()
@@ -56,7 +56,7 @@ export const PatreonConnectPanel = (props: Props) => {
 			});
 	};
 
-	useEffect(updateSession, [ props.dataService, notify ]);
+	useEffect(updateSession, [props.dataService, notify]);
 
 	if (loadingSession) {
 		return (
@@ -73,7 +73,7 @@ export const PatreonConnectPanel = (props: Props) => {
 					<Alert
 						type='warning'
 						showIcon={true}
-						title='To  use this feature, you will need to disable "Prevent cross-site tracking" in Safari preferences.'
+						title='Щоб скористатися цією функцією, потрібно вимкнути «Prevent cross-site tracking» у налаштуваннях Safari.'
 					/>
 					: null
 			}
@@ -85,7 +85,7 @@ export const PatreonConnectPanel = (props: Props) => {
 						onClick={connectOAuth}
 					>
 						<img className='patreon-logo' src={patreon} style={{ width: '16px', height: '16px' }} />
-						Connect with Patreon
+						Підключитися через Patreon
 					</Button>
 					: null
 			}

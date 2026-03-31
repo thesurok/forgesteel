@@ -1,5 +1,6 @@
 import { HeroSheet, ItemSheet } from '@/models/classic-sheets/hero-sheet';
 import { FeatureComponent } from '@/components/panels/classic-sheet/components/feature-component';
+import { Format } from '@/utils/format';
 import { ItemLogic } from '@/logic/item-logic';
 import { ItemType } from '@/enums/item-type';
 import { LabeledTextField } from '@/components/panels/classic-sheet/components/labeled-field';
@@ -150,10 +151,10 @@ export const ItemComponent = (props: ItemProps) => {
 	};
 
 	const getItemType = () => {
-		let type = item.type.toString();
+		let type = Format.getItemTypeName(item.type);
 
 		if (ItemLogic.isTrinket(item)) {
-			type = 'Trinket';
+			type = 'Дрібничка';
 		} else if (ItemLogic.isImbuedItem(item)) {
 			type = '';
 		}
@@ -167,7 +168,7 @@ export const ItemComponent = (props: ItemProps) => {
 				{
 					ItemLogic.isImbuedItem(item) ?
 						<LabeledTextField
-							label={item.type.toString().slice(7)}
+							label={Format.getItemKindName(item.type)}
 							additionalClasses={['label-overlay']}
 							content={undefined}
 						/>
@@ -206,7 +207,7 @@ export const ItemComponent = (props: ItemProps) => {
 		<div className='item'>
 			<h3>{getItemName()}</h3>
 			<div className='keywords-item-type'>
-				<div className='keywords'>{item.keywords.join(', ')}</div>
+				<div className='keywords'>{Format.formatKeywordList(item.keywords)}</div>
 				<div className='item-type'>{getItemType()}</div>
 			</div>
 			{

@@ -12,9 +12,11 @@ export const CultureCard = (props: Props) => {
 
 	const getLanguages = () => {
 		return character.languages?.map(l => {
-			let lang = <li key={l}>{l}</li>;
-			if (l.includes('I Speak')) {
-				lang = <li key={l}><em>{l}</em></li>;
+			const match = l.match(/^I Speak Their Language \((.+)\)$/);
+			const label = match ? `Я розмовляю їхньою мовою (${match[1]})` : l;
+			let lang = <li key={l}>{label}</li>;
+			if (match) {
+				lang = <li key={l}><em>{label}</em></li>;
 			}
 			return lang;
 		});

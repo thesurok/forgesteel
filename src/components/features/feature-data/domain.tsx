@@ -56,7 +56,7 @@ interface EditProps {
 }
 
 export const EditDomain = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureDomainData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureDomainData>(Utils.copy(props.data));
 
 	const setCharacteristic = (value: Characteristic) => {
 		const copy = Utils.copy(data);
@@ -85,7 +85,7 @@ export const EditDomain = (props: EditProps) => {
 			<Select
 				style={{ width: '100%' }}
 				placeholder='Select field'
-				options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(o => ({ value: o, label: <div className='ds-text'>{o}</div> }))}
+				options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(o => ({ value: o, label: <div className='ds-text'>{o}</div> }))}
 				value={data.characteristic}
 				onChange={setCharacteristic}
 			/>
@@ -94,7 +94,7 @@ export const EditDomain = (props: EditProps) => {
 				style={{ width: '100%' }}
 				placeholder='Select field'
 				mode='multiple'
-				options={[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map(o => ({ value: o, label: <div className='ds-text'>Level {o}</div> }))}
+				options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(o => ({ value: o, label: <div className='ds-text'>Level {o}</div> }))}
 				value={data.levels}
 				onChange={setLevels}
 			/>
@@ -114,34 +114,34 @@ interface ConfigProps {
 }
 
 export const ConfigDomain = (props: ConfigProps) => {
-	const [ selectedDomain, setSelectedDomain ] = useState<Domain | null>(null);
+	const [selectedDomain, setSelectedDomain] = useState<Domain | null>(null);
 
 	const domains = SourcebookLogic.getDomains(props.sourcebooks);
 	const sortedDomains = Collections.sort(domains, d => d.name);
 
 	if (sortedDomains.length === 0) {
 		return (
-			<Empty text='There are no options to choose for this feature.' />
+			<Empty text='Для цієї риси немає варіантів на вибір.' />
 		);
 	}
 
 	return (
 		<Space orientation='vertical' style={{ width: '100%' }}>
-			{props.data.count > 1 ? <div className='ds-text'>Choose {props.data.count}:</div> : null}
+			{props.data.count > 1 ? <div className='ds-text'>Оберіть {props.data.count}:</div> : null}
 			<Select
 				style={{ width: '100%' }}
 				status={props.data.selected.length < props.data.count ? 'warning' : ''}
 				mode={props.data.count === 1 ? undefined : 'multiple'}
 				maxCount={props.data.count === 1 ? undefined : props.data.count}
 				allowClear={true}
-				placeholder={props.data.count === 1 ? 'Select a domain' : 'Select domains'}
+				placeholder={props.data.count === 1 ? 'Оберіть домен' : 'Оберіть домени'}
 				options={sortedDomains.map(a => ({ value: a.id, label: a.name, desc: a.description }))}
 				optionRender={option => <Field label={option.data.label} value={option.data.desc} />}
 				value={props.data.count === 1 ? (props.data.selected.length > 0 ? props.data.selected[0].id : null) : props.data.selected.map(k => k.id)}
 				onChange={value => {
 					let ids: string[] = [];
 					if (props.data.count === 1) {
-						ids = value !== undefined ? [ value as string ] : [];
+						ids = value !== undefined ? [value as string] : [];
 					} else {
 						ids = value as string[];
 					}
@@ -152,7 +152,7 @@ export const ConfigDomain = (props: ConfigProps) => {
 						if (domain) {
 							const domainCopy = Utils.copy(domain);
 							domainCopy.featuresByLevel = domainCopy.featuresByLevel.filter(lvl => dataCopy.levels.includes(lvl.level));
-							[ ...domainCopy.defaultFeatures, ...domainCopy.featuresByLevel.flatMap(lvl => lvl.features) ].forEach(f => FeatureLogic.switchFeatureCharacteristic(f, Characteristic.Intuition, dataCopy.characteristic));
+							[...domainCopy.defaultFeatures, ...domainCopy.featuresByLevel.flatMap(lvl => lvl.features)].forEach(f => FeatureLogic.switchFeatureCharacteristic(f, Characteristic.Intuition, dataCopy.characteristic));
 							dataCopy.selected.push(domainCopy);
 						}
 					});

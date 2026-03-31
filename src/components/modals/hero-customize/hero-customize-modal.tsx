@@ -17,6 +17,7 @@ import { FeatureType } from '@/enums/feature-type';
 import { Follower } from '@/models/follower';
 import { FollowerEditPanel } from '@/components/panels/edit/follower-edit/follower-edit-panel';
 import { FollowerType } from '@/enums/follower-type';
+import { Format } from '@/utils/format';
 import { FormatLogic } from '@/logic/format-logic';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
@@ -74,11 +75,11 @@ export const HeroCustomizeModal = (props: Props) => {
 
 	const setFeatureData = (featureID: string, data: FeatureData) => {
 		const heroCopy = Utils.copy(hero);
-		const feature = HeroLogic.getFeatures(heroCopy)
+		const configuredFeature = HeroLogic.getFeatures(heroCopy)
 			.map(f => f.feature)
 			.find(f => f.id === featureID);
-		if (feature) {
-			feature.data = data;
+		if (configuredFeature) {
+			configuredFeature.data = data;
 		}
 		setHero(heroCopy);
 		props.onChange(heroCopy);
@@ -90,7 +91,7 @@ export const HeroCustomizeModal = (props: Props) => {
 				trigger='click'
 				content={
 					<Space orientation='vertical'>
-						<HeaderText level={3}>Abilities</HeaderText>
+						<HeaderText level={3}>Здібності</HeaderText>
 						<div className='customize-option-section'>
 							<Button
 								block={true}
@@ -103,7 +104,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Class Ability
+								Здібність класу
 							</Button>
 							<Button
 								block={true}
@@ -113,7 +114,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									addFeature(FactoryLogic.feature.createAbility({
 										ability: FactoryLogic.createAbility({
 											id: Utils.guid(),
-											name: 'Unnamed Ability',
+											name: 'Безіменна здібність',
 											type: FactoryLogic.type.createMain(),
 											distance: [FactoryLogic.distance.createSelf()],
 											target: 'Себе',
@@ -122,10 +123,10 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Custom Ability
+								Власна здібність
 							</Button>
 						</div>
-						<HeaderText level={3}>Bonuses</HeaderText>
+						<HeaderText level={3}>Бонуси</HeaderText>
 						<div className='customize-option-section'>
 							<Button
 								block={true}
@@ -134,13 +135,13 @@ export const HeroCustomizeModal = (props: Props) => {
 									setMenuOpen(false);
 									addFeature(FactoryLogic.feature.createCharacteristicBonus({
 										id: Utils.guid(),
-										name: `${Characteristic.Might} + 1`,
+										name: `${Format.getCharacteristicName(Characteristic.Might)} + 1`,
 										characteristic: Characteristic.Might,
 										value: 1
 									}));
 								}}
 							>
-								Characteristic Bonus
+								Бонус характеристики
 							</Button>
 							<Button
 								block={true}
@@ -153,7 +154,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Condition Immunity
+								Імунітет до стану
 							</Button>
 							<Button
 								block={true}
@@ -166,7 +167,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Damage Immunity / Weakness
+								Імунітет / вразливість до шкоди
 							</Button>
 							<Button
 								block={true}
@@ -181,10 +182,10 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Stat Bonus
+								Бонус показника
 							</Button>
 						</div>
-						<HeaderText level={3}>Game Content</HeaderText>
+						<HeaderText level={3}>Ігровий вміст</HeaderText>
 						<div className='customize-option-section'>
 							<Button
 								block={true}
@@ -200,7 +201,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Ancestry Feature
+								Особливість походження
 							</Button>
 							<Button
 								block={true}
@@ -212,7 +213,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Kit
+								Комплект
 							</Button>
 							<Button
 								block={true}
@@ -225,10 +226,10 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Perk
+								Перевага
 							</Button>
 						</div>
-						<HeaderText level={3}>NPCs</HeaderText>
+						<HeaderText level={3}>NPC</HeaderText>
 						<div className='customize-option-section'>
 							<Button
 								block={true}
@@ -240,7 +241,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Companion / Mount
+								Компаньйон / верхова істота
 							</Button>
 							<Button
 								block={true}
@@ -253,7 +254,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Follower
+								Прибічник
 							</Button>
 							<Button
 								block={true}
@@ -265,10 +266,10 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Retainer
+								Ретейнер
 							</Button>
 						</div>
-						<HeaderText level={3}>Miscellaneous</HeaderText>
+						<HeaderText level={3}>Різне</HeaderText>
 						<div className='customize-option-section'>
 							<Button
 								block={true}
@@ -281,7 +282,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Languages
+								Мови
 							</Button>
 							<Button
 								block={true}
@@ -294,7 +295,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Movement Mode
+								Спосіб руху
 							</Button>
 							<Button
 								block={true}
@@ -306,7 +307,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Proficiencies
+								Володіння
 							</Button>
 							<Button
 								block={true}
@@ -319,7 +320,7 @@ export const HeroCustomizeModal = (props: Props) => {
 									}));
 								}}
 							>
-								Skills
+								Навички
 							</Button>
 						</div>
 					</Space>
@@ -499,48 +500,48 @@ export const HeroCustomizeModal = (props: Props) => {
 		switch (feature.type) {
 			case FeatureType.Ability:
 				return (
-					<Expander title='Ability Editor'>
+					<Expander title='Редактор здібності'>
 						<AbilityEditPanel ability={feature.data.ability} onChange={setAbility} />
 					</Expander>
 				);
 			case FeatureType.AncestryFeatureChoice:
 				return (
 					<div>
-						<HeaderText>Ancestry</HeaderText>
+						<HeaderText>Походження</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Select ancestry'
-							options={[null, ...SourcebookLogic.getAncestries(props.sourcebooks)].map(o => ({ value: o ? o.id : '', label: o ? o.name : 'Your ancestry' }))}
+							placeholder='Оберіть походження'
+							options={[null, ...SourcebookLogic.getAncestries(props.sourcebooks)].map(o => ({ value: o ? o.id : '', label: o ? o.name : 'Ваше походження' }))}
 							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.source.customID}
 							onChange={setCustomAncestryID}
 						/>
-						<HeaderText>Point Cost</HeaderText>
+						<HeaderText>Вартість у балах</HeaderText>
 						<NumberSpin min={1} max={2} value={feature.data.value} onChange={setValue} />
 					</div>
 				);
 			case FeatureType.Bonus:
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
-						<HeaderText>Field</HeaderText>
+						<HeaderText>Поле</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Select field'
+							placeholder='Оберіть поле'
 							options={[FeatureField.AncestryPoints, FeatureField.Disengage, FeatureField.ProjectPoints, FeatureField.Recoveries, FeatureField.RecoveryValue, FeatureField.Renown, FeatureField.Save, FeatureField.Speed, FeatureField.Stability, FeatureField.Stamina, FeatureField.Wealth].map(o => ({ value: o }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.field}
 							onChange={setValueField}
 						/>
-						<HeaderText>Value</HeaderText>
-						<NumberSpin label='Value' min={0} value={feature.data.value} onChange={setValueBonus} />
-						<NumberSpin label='Per Level After 1st' min={0} value={feature.data.valuePerLevel} onChange={setValuePerLevel} />
-						<NumberSpin label='Per Echelon' min={0} value={feature.data.valuePerEchelon} onChange={setValuePerEchelon} />
+						<HeaderText>Значення</HeaderText>
+						<NumberSpin label='Значення' min={0} value={feature.data.value} onChange={setValueBonus} />
+						<NumberSpin label='За рівень після 1-го' min={0} value={feature.data.valuePerLevel} onChange={setValuePerLevel} />
+						<NumberSpin label='За ешелон' min={0} value={feature.data.valuePerEchelon} onChange={setValuePerEchelon} />
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Characteristics'
+							placeholder='Характеристики'
 							mode='multiple'
-							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
-							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option, label: Format.getCharacteristicName(option) }))}
+							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.valueCharacteristics}
 							onChange={setValueCharacteristics}
 						/>
@@ -549,43 +550,44 @@ export const HeroCustomizeModal = (props: Props) => {
 			case FeatureType.CharacteristicBonus:
 				return (
 					<div>
-						<HeaderText>Characteristic</HeaderText>
+						<HeaderText>Характеристика</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Select characteristic'
-							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(o => ({ value: o }))}
-							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+							placeholder='Оберіть характеристику'
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(o => ({ value: o, label: Format.getCharacteristicName(o) }))}
+							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.characteristic}
 							onChange={setCharacteristic}
 						/>
-						<HeaderText>Value</HeaderText>
-						<NumberSpin label='Value' min={0} value={feature.data.value} onChange={setCharacteristicBonus} />
+						<HeaderText>Значення</HeaderText>
+						<NumberSpin label='Значення' min={0} value={feature.data.value} onChange={setCharacteristicBonus} />
 					</div>
 				);
 			case FeatureType.ClassAbility:
 				return (
 					<div>
-						<HeaderText>Class</HeaderText>
+						<HeaderText>Клас</HeaderText>
+						<HeaderText>Клас</HeaderText>
 						<Select
 							style={{ width: '100%' }}
 							allowClear={!!feature.data.classID}
-							placeholder='Select class'
-							options={[{ id: '', name: 'Your Class', description: 'An ability from your own class.' }, ...SourcebookLogic.getClasses(props.sourcebooks)].map(o => ({ value: o.id, label: o.name, description: o.description }))}
+							placeholder='Оберіть клас'
+							options={[{ id: '', name: 'Ваш клас', description: 'Здібність із вашого власного класу.' }, ...SourcebookLogic.getClasses(props.sourcebooks)].map(o => ({ value: o.id, label: o.name, description: o.description }))}
 							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.classID || ''}
 							onChange={setClassID}
 						/>
-						<HeaderText>Ability Cost</HeaderText>
+						<HeaderText>Вартість здібності</HeaderText>
 						<Flex align='center' justify='center'>
 							<Segmented<'signature' | number>
 								options={[
-									{ value: 'signature', label: 'Signature' },
-									{ value: 3, label: '3pts' },
-									{ value: 5, label: '5pts' },
-									{ value: 7, label: '7pts' },
-									{ value: 9, label: '9pts' },
-									{ value: 11, label: '11pts' },
-									{ value: 0, label: 'Other' }
+									{ value: 'signature', label: 'Фірмова' },
+									{ value: 3, label: '3 оч.' },
+									{ value: 5, label: '5 оч.' },
+									{ value: 7, label: '7 оч.' },
+									{ value: 9, label: '9 оч.' },
+									{ value: 11, label: '11 оч.' },
+									{ value: 0, label: 'Інше' }
 								]}
 								value={feature.data.cost}
 								onChange={setCost}
@@ -597,7 +599,7 @@ export const HeroCustomizeModal = (props: Props) => {
 				return (
 					<Select
 						style={{ width: '100%' }}
-						placeholder='Select condition'
+						placeholder='Оберіть стан'
 						mode='multiple'
 						options={[ConditionType.Bleeding, ConditionType.Dazed, ConditionType.Frightened, ConditionType.Grabbed, ConditionType.Prone, ConditionType.Restrained, ConditionType.Slowed, ConditionType.Taunted, ConditionType.Weakened].map(o => ({ value: o }))}
 						optionRender={option => <div className='ds-text'>{option.data.value}</div>}
@@ -608,10 +610,10 @@ export const HeroCustomizeModal = (props: Props) => {
 			case FeatureType.DamageModifier:
 				return (
 					<Space orientation='vertical' style={{ width: '100%' }}>
-						<HeaderText>Modifier</HeaderText>
+						<HeaderText>Модифікатор</HeaderText>
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Select field'
+							placeholder='Оберіть тип шкоди'
 							options={[DamageType.Damage, DamageType.Acid, DamageType.Cold, DamageType.Corruption, DamageType.Fire, DamageType.Holy, DamageType.Lightning, DamageType.Poison, DamageType.Psychic, DamageType.Sonic].map(o => ({ value: o }))}
 							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 							value={feature.data.modifiers[0].damageType}
@@ -623,16 +625,16 @@ export const HeroCustomizeModal = (props: Props) => {
 							value={feature.data.modifiers[0].type}
 							onChange={setDamageModifierType}
 						/>
-						<HeaderText>Value</HeaderText>
-						<NumberSpin label='Value' min={0} value={feature.data.modifiers[0].value} onChange={setDamageModifierBonus} />
-						<NumberSpin label='Per Level After 1st' min={0} value={feature.data.modifiers[0].valuePerLevel} onChange={setDamageModifierValuePerLevel} />
-						<NumberSpin label='Per Echelon' min={0} value={feature.data.modifiers[0].valuePerEchelon} onChange={setDamageModifierValuePerEchelon} />
+						<HeaderText>Значення</HeaderText>
+						<NumberSpin label='Значення' min={0} value={feature.data.modifiers[0].value} onChange={setDamageModifierBonus} />
+						<NumberSpin label='За рівень після 1-го' min={0} value={feature.data.modifiers[0].valuePerLevel} onChange={setDamageModifierValuePerLevel} />
+						<NumberSpin label='За ешелон' min={0} value={feature.data.modifiers[0].valuePerEchelon} onChange={setDamageModifierValuePerEchelon} />
 						<Select
 							style={{ width: '100%' }}
-							placeholder='Characteristics'
+							placeholder='Характеристики'
 							mode='multiple'
-							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
-							optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+							options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option, label: Format.getCharacteristicName(option) }))}
+							optionRender={option => <div className='ds-text'>{option.data.label}</div>}
 							value={feature.data.modifiers[0].valueCharacteristics}
 							onChange={setDamageModifierCharacteristics}
 						/>

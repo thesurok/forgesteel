@@ -82,7 +82,7 @@ export class HeroSheetBuilder {
 			sheet.subclassName = hero.class.subclasses.find(s => s.selected)?.name;
 			// Conduit subclass fix
 			if (hero.class.name === 'Conduit') {
-				sheet.subclassTypeName = 'Domains';
+				sheet.subclassTypeName = 'Домени';
 				sheet.subclassName = HeroLogic.getDomains(hero).map(d => d.name).join(', ');
 			}
 
@@ -177,7 +177,7 @@ export class HeroSheetBuilder {
 					sheet.modifierTypes.push('Псі-посилення');
 					sheet.modifierName = modifier.name;
 				} else if (modifier.name.match('Ward')) {
-					sheet.modifierTypes.push('Ward');
+					sheet.modifierTypes.push('Оберіг');
 					sheet.modifierArmorWard = modifier.name;
 				} else if (modifier.name.match('Prayer of')) {
 					sheet.modifierTypes.push('Молитва');
@@ -508,11 +508,11 @@ export class HeroSheetBuilder {
 
 	static buildFollowerSheet = (follower: Follower): FollowerSheet => {
 		// console.log(follower);
-		const followerType = `${follower.type}`;
+		const followerType = Format.getFollowerClassificationName(`${follower.type}`);
 		const sheet: FollowerSheet = {
 			id: follower.id,
 			name: follower.name,
-			classification: 'Follower',
+			classification: Format.getFollowerClassificationName('Follower'),
 			type: followerType,
 			role: followerType,
 
@@ -527,18 +527,18 @@ export class HeroSheetBuilder {
 
 	static buildRetainerSheet = (follower: Monster, heroLevel: number | undefined): FollowerSheet => {
 		const level = MonsterLogic.getMonsterLevel(follower);
-		const retainerType = `Lvl ${level} ${follower.role.type}`;
+		const retainerType = `Рів. ${level} ${Format.getMonsterRoleName(follower.role.type)}`;
 		const sheet: FollowerSheet = {
 			id: follower.id,
 			name: MonsterLogic.getMonsterName(follower),
-			classification: 'Retainer',
+			classification: Format.getFollowerClassificationName('Retainer'),
 			type: retainerType,
-			role: follower.role.type,
+			role: Format.getMonsterRoleName(follower.role.type),
 
 			characteristics: ClassicSheetBuilder.buildCharacteristicsSheet(follower)
 		};
 
-		sheet.keywords = follower.keywords.join(', ');
+		sheet.keywords = Format.formatKeywordList(follower.keywords);
 
 		const speed = MonsterLogic.getSpeed(follower);
 		sheet.size = FormatLogic.getSize(follower.size);
@@ -547,10 +547,10 @@ export class HeroSheetBuilder {
 		sheet.freeStrike = MonsterLogic.getFreeStrikeDamage(follower);
 
 		const immunities = MonsterLogic.getDamageModifiers(follower, DamageModifierType.Immunity);
-		sheet.immunity = immunities.map(mod => `${mod.damageType} ${mod.value}`).join(', ');
+		sheet.immunity = immunities.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', ');
 		const weaknesses = MonsterLogic.getDamageModifiers(follower, DamageModifierType.Weakness);
-		sheet.weakness = weaknesses.map(mod => `${mod.damageType} ${mod.value}`).join(', ');
-		sheet.movement = speed.modes.map(m => Format.capitalize(m)).join(', ');
+		sheet.weakness = weaknesses.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', ');
+		sheet.movement = Format.formatMovementModes(speed.modes);
 
 		sheet.stamina = {
 			max: MonsterLogic.getStamina(follower),
@@ -603,14 +603,14 @@ export class HeroSheetBuilder {
 		const sheet: FollowerSheet = {
 			id: companion.id,
 			name: companion.name,
-			classification: 'Companion',
-			type: 'Companion',
-			role: monster.role.type,
+			classification: Format.getFollowerClassificationName('Companion'),
+			type: Format.getFollowerClassificationName('Companion'),
+			role: Format.getMonsterRoleName(monster.role.type),
 
 			characteristics: ClassicSheetBuilder.buildCharacteristicsSheet(monster)
 		};
 
-		sheet.keywords = monster.keywords.join(', ');
+		sheet.keywords = Format.formatKeywordList(monster.keywords);
 
 		const speed = MonsterLogic.getSpeed(monster);
 		sheet.size = FormatLogic.getSize(monster.size);
@@ -618,10 +618,10 @@ export class HeroSheetBuilder {
 		sheet.stability = monster.stability;
 		sheet.freeStrike = MonsterLogic.getFreeStrikeDamage(monster);
 		const immunities = MonsterLogic.getDamageModifiers(monster, DamageModifierType.Immunity);
-		sheet.immunity = immunities.map(mod => `${mod.damageType} ${mod.value}`).join(', ');
+		sheet.immunity = immunities.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', ');
 		const weaknesses = MonsterLogic.getDamageModifiers(monster, DamageModifierType.Weakness);
-		sheet.weakness = weaknesses.map(mod => `${mod.damageType} ${mod.value}`).join(', ');
-		sheet.movement = speed.modes.map(m => Format.capitalize(m)).join(', ');
+		sheet.weakness = weaknesses.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', ');
+		sheet.movement = Format.formatMovementModes(speed.modes);
 		sheet.skills = MonsterLogic.getSkills(monster, []).map(s => s.name);
 
 		sheet.stamina = {
@@ -670,17 +670,17 @@ export class HeroSheetBuilder {
 
 		const sheet = ClassicSheetBuilder.buildMonsterSheet(monster);
 
-		const signature = summon.info.isSignature ? 'Signature ' : '';
-		const summonType = `${signature}Minion ${monster.role.type}`;
+		const signature = summon.info.isSignature ? 'Сигнатурний ' : '';
+		const summonType = `${signature}міньйон ${Format.getMonsterRoleName(monster.role.type)}`;
 		sheet.type = summonType;
 
-		let summonCost = `${summon.info.cost} essence `;
-		summonCost += summon.info.count === 1 ? 'per minion summoned' : `for ${summon.info.count} minions`;
+		let summonCost = `${summon.info.cost} сутності `;
+		summonCost += summon.info.count === 1 ? 'за викликаного міньйона' : `за ${summon.info.count} міньйонів`;
 		sheet.cost = summonCost;
-		sheet.freeStrikeDamageType = monster.freeStrikeType !== DamageType.Damage ? monster.freeStrikeType : '';
+		sheet.freeStrikeDamageType = monster.freeStrikeType !== DamageType.Damage ? Format.getDamageTypeName(monster.freeStrikeType) : '';
 
 		const immunities = CreatureLogic.getSummonDamageModifiers(summon, hero, DamageModifierType.Immunity);
-		sheet.immunity = immunities.map(mod => `${mod.damageType} ${mod.value}`).join(', ');
+		sheet.immunity = immunities.map(mod => `${Format.getDamageTypeName(mod.damageType)} ${mod.value}`).join(', ');
 		return sheet;
 	};
 	// #endregion
@@ -695,7 +695,7 @@ export class HeroSheetBuilder {
 			.map(c => Format.getCharacteristicAbbreviation(c))
 		);
 		if (characteristics === 'С, Л, Р, І або П') {
-			characteristics = 'Any';
+			characteristics = 'Будь-яка';
 		}
 
 		return {

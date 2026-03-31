@@ -15,18 +15,18 @@ export class ProjectLogic {
 
 	static getStatus = (project: Project) => {
 		if (!ProjectLogic.getPrerequisitesMet(project)) {
-			return 'Preparing';
+			return 'Підготовка';
 		}
 
 		if ((project.goal > 0) && project.progress) {
 			if (project.progress.points >= project.goal) {
-				return 'Finished';
+				return 'Завершено';
 			}
 
 			const pc = 100 * project.progress.points / project.goal;
 			return `${Math.round(pc || 0)}%`;
 		}
 
-		return 'In progress';
+		return 'У процесі';
 	};
 };

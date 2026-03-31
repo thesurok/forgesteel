@@ -12,53 +12,53 @@ export class ImbuedArmorData {
 	static aweCharming: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A lock of hair from a fey, taken in amicable bargain',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Локон феї, здобутий у дружній угоді',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-awe-charming',
-			name: 'Awe: Charming',
-			description: 'You gain an edge on Presence tests made to win other creatures over or make a good impression.'
+			name: 'Трепет: Чарівність',
+			description: 'Ви отримуєте перевагу на випробування Присутності, щоб завойовувати прихильність інших істот або справляти хороше враження.'
 		})
 	});
 
 	static aweThreatening: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A lock of hair from a fey, taken in violence',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Локон феї, здобутий насильством',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-awe-threatening',
-			name: 'Awe: Threatening',
-			description: 'You gain an edge on Presence tests made to intimidate, coerce, or bully.'
+			name: 'Трепет: Загроза',
+			description: 'Ви отримуєте перевагу на випробування Присутності, щоб залякувати, примушувати чи цькувати.'
 		})
 	});
 
 	static damageImmunityI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Elemental sand left behind when an elemental enters Orden from Quintessence',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Стихійний пісок, що залишається, коли елементаль входить в Орден із Квінтесенції',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.createChoice({
 			id: 'imbuement-damage-immunity-i',
-			name: 'Damage Immunity I',
-			description: 'Select three damage types. You have immunity 5 to those damage types.',
+			name: 'Імунітет до шкоди I',
+			description: 'Оберіть три типи шкоди. Ви отримуєте імунітет 5 до цих типів шкоди.',
 			options: [
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-a',
-						name: 'Damage Immunity I (Acid)',
+						name: 'Імунітет до шкоди I (Кислотна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Acid,
 							modifierType: DamageModifierType.Immunity,
@@ -70,7 +70,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-b',
-						name: 'Damage Immunity I (Cold)',
+						name: 'Імунітет до шкоди I (Холодна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Cold,
 							modifierType: DamageModifierType.Immunity,
@@ -82,7 +82,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-c',
-						name: 'Damage Immunity I (Corruption)',
+						name: 'Імунітет до шкоди I (Скверна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Corruption,
 							modifierType: DamageModifierType.Immunity,
@@ -94,7 +94,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-d',
-						name: 'Damage Immunity I (Fire)',
+						name: 'Імунітет до шкоди I (Вогняна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Fire,
 							modifierType: DamageModifierType.Immunity,
@@ -106,7 +106,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-e',
-						name: 'Damage Immunity I (Holy)',
+						name: 'Імунітет до шкоди I (Священна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Holy,
 							modifierType: DamageModifierType.Immunity,
@@ -118,7 +118,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-f',
-						name: 'Damage Immunity I (Lightning)',
+						name: 'Імунітет до шкоди I (Блискавична)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Lightning,
 							modifierType: DamageModifierType.Immunity,
@@ -130,7 +130,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-g',
-						name: 'Damage Immunity I (Poison)',
+						name: 'Імунітет до шкоди I (Отруйна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Poison,
 							modifierType: DamageModifierType.Immunity,
@@ -142,7 +142,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-h',
-						name: 'Damage Immunity I (Psychic)',
+						name: 'Імунітет до шкоди I (Психічна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Psychic,
 							modifierType: DamageModifierType.Immunity,
@@ -154,7 +154,7 @@ export class ImbuedArmorData {
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-i-i',
-						name: 'Damage Immunity I (Sonic)',
+						name: 'Імунітет до шкоди I (Звукова)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Sonic,
 							modifierType: DamageModifierType.Immunity,
@@ -171,8 +171,8 @@ export class ImbuedArmorData {
 	static disguise: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The blood of a lycanthrope',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Кров лікантропа',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -183,7 +183,7 @@ export class ImbuedArmorData {
 				name: 'Маскування',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You cause this armor to take the form of any type of clothing that you have been in the presence of—a noble’s dress, a guard’s uniform, a cultist’s robes, and so forth. The armor loses none of its protective qualities while transformed into other clothing.')
+					FactoryLogic.createAbilitySectionText('Ви змушуєте цей обладунок набувати вигляду будь-якого типу одягу, який ви бачили: сукні шляхтянки, уніформи вартового, шат культиста тощо. Поки обладунок перетворений на інший одяг, він не втрачає жодних своїх захисних властивостей.')
 				]
 			})
 		})
@@ -192,8 +192,8 @@ export class ImbuedArmorData {
 	static iridescent: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Fur from a lightbender',
-			source: 'Texts or lore in Гіраллік (Hyrallic)',
+			prerequisites: 'Хутро світлозгинця',
+			source: 'Тексти або знання мовою Гіраллік (Hyrallic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -201,10 +201,10 @@ export class ImbuedArmorData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-iridescent',
-				name: 'Iridescent',
-				type: FactoryLogic.type.createTrigger('You are the sole target of an ability', { free: true }),
+				name: 'Іридисцентність',
+				type: FactoryLogic.type.createTrigger('Ви є єдиною ціллю здібності', { free: true }),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You reveal that the ability was targeting an afterimage of you in the same space as you. The power roll for the ability is treated as an 11. You can’t use this enhancement again until you earn 1 or more Victories.')
+					FactoryLogic.createAbilitySectionText('Ви розкриваєте, що здібність насправді була спрямована на ваш післяобраз у тому самому просторі, що й ви. Кидок сили цієї здібності вважається таким, що дорівнює 11. Ви не можете знову використати це посилення, доки не здобудете 1 або більше Перемог.')
 				]
 			})
 		})
@@ -213,79 +213,79 @@ export class ImbuedArmorData {
 	static magicResistanceI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A scale from a dragon',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Луска дракона',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-magic-resistance-i',
-			name: 'Magic Resistance I',
-			description: 'Your characteristic scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of magic abilities.'
+			name: 'Магічний опір I',
+			description: 'Ваші значення характеристик вважаються на 1 вищими (максимум до 2) для спротиву потужності магічних здібностей.'
 		})
 	});
 
 	static nettlebloom: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A rose from the magical hedge of a hag',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Троянда з чарівного живоплоту відьми',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-nettlebloom',
-			name: 'Nettlebloom',
-			description: 'Whenever you are grabbed by an adjacent creature, your armor sprouts toxic nettles. While that creature has you grabbed, they are weakened.'
+			name: 'Кропивоцвіт',
+			description: 'Щоразу, коли сусідня істота хапає вас, на вашому обладунку проростає отруйна кропива. Поки ця істота тримає вас схопленими, вона ослаблена.'
 		})
 	});
 
 	static phasingI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ichor from a destroyed wraith',
-			source: 'Texts or lore in Сзетч (Szetch)',
+			prerequisites: 'Іхор знищеного привида',
+			source: 'Тексти або знання мовою Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-phasing-i',
-			name: 'Phasing I',
-			description: 'Once per turn, you can move through 1 square of solid matter. If you end your turn inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can’t be reduced in any way.'
+			name: 'Фазування I',
+			description: 'Раз за хід ви можете проходити крізь 1 клітинку суцільної матерії. Якщо ви завершуєте хід усередині суцільної матерії, вас виштовхує назад у простір, з якого ви до неї увійшли, і ви отримуєте 5 шкоди, яку неможливо зменшити жодним способом.'
 		})
 	});
 
 	static psionicResistanceI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Rare crystals that resonate with psionic energy, often found at sites of psionic experimentation',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Рідкісні кристали, що резонують із псіонічною енергією та часто трапляються на місцях псіонічних експериментів',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-psionic-resistance-i',
-			name: 'Psionic Resistance I',
-			description: 'Your characteristic scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of psionic abilities.'
+			name: 'Псіонічний опір I',
+			description: 'Ваші значення характеристик вважаються на 1 вищими (максимум до 2) для спротиву потужності псіонічних здібностей.'
 		})
 	});
 
 	static swift: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The feather of a falcon slain as it was diving',
-			source: 'Texts or lore in Іллірик (Yllyric)',
+			prerequisites: 'Перо сокола, вбитого в пікіруванні',
+			source: 'Тексти або знання мовою Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.createBonus({
 			id: 'imbuement-swift',
-			name: 'Swift',
+			name: 'Стрімкість',
 			field: FeatureField.Speed,
 			value: 1
 		})
@@ -294,8 +294,8 @@ export class ImbuedArmorData {
 	static tempestI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A strip of starmetal struck by lightning',
-			source: 'Texts or lore in Уллорвік (Ullorvic)',
+			prerequisites: 'Смуга зоряного металу, ураженого блискавкою',
+			source: 'Тексти або знання мовою Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -303,11 +303,11 @@ export class ImbuedArmorData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-tempest-i',
-				name: 'Tempest I',
-				description: 'You infuse you armor with the essence of a storm.',
+				name: 'Буревій I',
+				description: 'Ви насичуєте свій обладунок сутністю бурі.',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('The first time an adjacent creature deals damage to you before the end of your next turn, they take lightning damage equal to your highest characteristic score and you can push them 1 square.'),
+					FactoryLogic.createAbilitySectionText('Уперше, коли сусідня істота завдає вам шкоди до кінця вашого наступного ходу, вона отримує блискавичну шкоду, рівну вашому найвищому значенню характеристики, а ви можете відштовхнути її на 1 клітинку.'),
 					FactoryLogic.createAbilitySectionPackage('tempest-tag')
 				]
 			})
@@ -317,8 +317,8 @@ export class ImbuedArmorData {
 	static absorption: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A mirror blessed by a priest of a god of magic',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Дзеркало, благословенне жерцем бога магії',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -326,13 +326,13 @@ export class ImbuedArmorData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-absorption',
-				name: 'Absorption',
-				type: FactoryLogic.type.createTrigger('You are targeted by a magic or psionic ability that targets only one creature', { free: true }),
+				name: 'Поглинання',
+				type: FactoryLogic.type.createTrigger('Вас націлює магічна або псіонічна здібність, що націлює лише одну істоту', { free: true }),
 				sections: [
 					FactoryLogic.createAbilitySectionText(`
-You cause this armor to absorb the ability after the ability’s effects resolve. While the armor has an ability absorbed, you can’t absorb another.
+Ви змушуєте цей обладунок поглинути здібність після того, як буде розвʼязано її ефекти. Поки обладунок утримує поглинуту здібність, ви не можете поглинути іншу.
 
-You can use an absorbed ability as if you knew it, making power rolls for the ability using your choice of Reason, Intuition, or Presence. You don’t need to spend any Heroic Resource to activate the ability. Once you use the ability, the armor loses it, and you can absorb another.`)
+Ви можете використати поглинуту здібність так, ніби знаєте її, роблячи кидки сили цієї здібності з використанням на ваш вибір Розуму, Інтуїції або Присутності. Вам не потрібно витрачати жодного Героїчного ресурсу, щоб активувати цю здібність. Після використання здібності обладунок втрачає її, і ви можете поглинути іншу.`)
 				]
 			})
 		})
@@ -341,21 +341,21 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static damageImmunityII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The essence of an elemental who is still alive',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Сутність елементаля, який усе ще живий',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.createChoice({
 			id: 'imbuement-damage-immunity-ii',
-			name: 'Damage Immunity II',
-			description: 'The damage immunity conveyed by the armor increases to 10. (Select the same damage types below)',
+			name: 'Імунітет до шкоди II',
+			description: 'Імунітет до шкоди, який надає цей обладунок, зростає до 10. (Оберіть ті самі типи шкоди нижче.)',
 			options: [
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-a',
-						name: 'Damage Immunity II (Acid)',
+						name: 'Імунітет до шкоди II (Кислотна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Acid,
 							modifierType: DamageModifierType.Immunity,
@@ -367,7 +367,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-b',
-						name: 'Damage Immunity II (Cold)',
+						name: 'Імунітет до шкоди II (Холодна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Cold,
 							modifierType: DamageModifierType.Immunity,
@@ -379,7 +379,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-c',
-						name: 'Damage Immunity II (Corruption)',
+						name: 'Імунітет до шкоди II (Скверна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Corruption,
 							modifierType: DamageModifierType.Immunity,
@@ -391,7 +391,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-d',
-						name: 'Damage Immunity II (Fire)',
+						name: 'Імунітет до шкоди II (Вогняна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Fire,
 							modifierType: DamageModifierType.Immunity,
@@ -403,7 +403,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-e',
-						name: 'Damage Immunity II (Holy)',
+						name: 'Імунітет до шкоди II (Священна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Holy,
 							modifierType: DamageModifierType.Immunity,
@@ -415,7 +415,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-f',
-						name: 'Damage Immunity II (Lightning)',
+						name: 'Імунітет до шкоди II (Блискавична)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Lightning,
 							modifierType: DamageModifierType.Immunity,
@@ -427,7 +427,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-g',
-						name: 'Damage Immunity II (Poison)',
+						name: 'Імунітет до шкоди II (Отруйна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Poison,
 							modifierType: DamageModifierType.Immunity,
@@ -439,7 +439,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-h',
-						name: 'Damage Immunity II (Psychic)',
+						name: 'Імунітет до шкоди II (Психічна)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Psychic,
 							modifierType: DamageModifierType.Immunity,
@@ -451,7 +451,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 				{
 					feature: FactoryLogic.feature.createDamageModifier({
 						id: 'imbuement-damage-immunity-ii-i',
-						name: 'Damage Immunity II (Sonic)',
+						name: 'Імунітет до шкоди II (Звукова)',
 						modifiers: [FactoryLogic.damageModifier.create({
 							damageType: DamageType.Sonic,
 							modifierType: DamageModifierType.Immunity,
@@ -468,8 +468,8 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static dragonSoulI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A scale from a dead dragon',
-			source: 'Texts or lore in Вастаріакс (Vastariax)',
+			prerequisites: 'Луска мертвого дракона',
+			source: 'Тексти або знання мовою Вастаріакс (Vastariax)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -477,10 +477,10 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-dragon-soul-i',
-				name: 'Dragon Soul I',
-				type: FactoryLogic.type.createTrigger('Another creature causes you to be winded or dying', { free: true }),
+				name: 'Душа дракона I',
+				type: FactoryLogic.type.createTrigger('Інша істота робить вас захеканими або вмираючими', { free: true }),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You cause the soul of a dragon to emerge from the armor and hurtle toward the creature'),
+					FactoryLogic.createAbilitySectionText('Ви змушуєте душу дракона вирватися з обладунку й ринути до цієї істоти.'),
 					FactoryLogic.createAbilitySectionRoll(
 						FactoryLogic.createPowerRoll({
 							characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
@@ -497,88 +497,88 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static levitating: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A palm-sized crystal grown in the subterranean lair of an overmind',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Кристал завбільшки з долоню, вирощений у підземному лігві надрозуму',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-levitating',
-			name: 'Levitating',
-			description: 'On your turn, you can treat up to 5 consecutive squares of movement as flying movement. If you are still in midair at the end of your turn, you fall prone.'
+			name: 'Левітація',
+			description: 'У свій хід ви можете вважати до 5 послідовних клітинок свого руху польотом. Якщо наприкінці ходу ви все ще перебуваєте в повітрі, ви падаєте долілиць.'
 		})
 	});
 
 	static magicResistanceII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A scale from a mature dragon',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Луска зрілого дракона',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-magic-resistance-ii',
-			name: 'Magic Resistance II',
-			description: 'Your characteristic scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of magic abilities. This benefit replaces Magic Resistance I.'
+			name: 'Магічний опір II',
+			description: 'Ваші значення характеристик вважаються на 2 вищими (максимум до 3) для спротиву потужності магічних здібностей. Ця перевага замінює Магічний опір I.'
 		})
 	});
 
 	static phasingII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The remnants of a slain ooze',
-			source: 'Texts or lore in Сзетч (Szetch)',
+			prerequisites: 'Рештки вбитого слизу',
+			source: 'Тексти або знання мовою Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-phasing-ii',
-			name: 'Phasing II',
-			description: 'When you use the armor’s Phasing I enhancement, you can move through 3 squares of solid matter per turn.'
+			name: 'Фазування II',
+			description: 'Коли ви використовуєте посилення обладунку «Фазування I», ви можете проходити крізь 3 клітинки суцільної матерії за хід.'
 		})
 	});
 
 	static psionicResistanceII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A fresh crystalline scale from a gemstone dragon',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Свіжа кристалічна луска самоцвітного дракона',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-psionic-resistance-ii',
-			name: 'Psionic Resistance II',
-			description: 'Your characteristic scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of psionic abilities. This benefit replaces Psionic Resistance I.'
+			name: 'Псіонічний опір II',
+			description: 'Ваші значення характеристик вважаються на 2 вищими (максимум до 3) для спротиву потужності псіонічних здібностей. Ця перевага замінює Псіонічний опір I.'
 		})
 	});
 
 	static reactive: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A complex, hand-engineered set of brass gears inscribed with runes in silver dust',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Складний, вручну зібраний набір латунних шестерень, вкритих рунами зі срібного пилу',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-reactive',
-			name: 'Reactive',
-			description: 'Whenever you take damage, you have damage immunity 2 until the end of your next turn after the triggering damage is resolved.'
+			name: 'Реактивність',
+			description: 'Щоразу, коли ви отримуєте шкоду, після розвʼязання тригерної шкоди ви отримуєте імунітет до шкоди 2 до кінця вашого наступного ходу.'
 		})
 	});
 
 	static secondWind: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The sweat of a troll',
-			source: 'Texts or lore in Калліак (Kalliak)',
+			prerequisites: 'Піт троля',
+			source: 'Тексти або знання мовою Калліак (Kalliak)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -586,10 +586,10 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-second-wind',
-				name: 'Second Wind',
-				type: FactoryLogic.type.createTrigger('You become winded', { free: true }),
+				name: 'Друге дихання',
+				type: FactoryLogic.type.createTrigger('Ви стаєте захеканими', { free: true }),
 				sections: [
-					FactoryLogic.createAbilitySectionText('Spend a recovery.')
+					FactoryLogic.createAbilitySectionText('Витратьте Відновлення.')
 				]
 			})
 		})
@@ -598,32 +598,32 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static shattering: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A pound of volcanic obsidian, formed naturally as a single piece',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Фунт вулканічного обсидіану, природно сформованого єдиним шматком',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-shattering',
-			name: 'Shattering',
-			description: 'Whenever an enemy scores a critical hit against you, they take 10 sonic damage.'
+			name: 'Розтрощення',
+			description: 'Щоразу, коли ворог завдає вам критичного удару, він отримує 10 звукової шкоди.'
 		})
 	});
 
 	static tempestII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The armor must be laid out under a clear sky as a comet passes over',
-			source: 'Texts or lore in Уллорвік (Ullorvic)',
+			prerequisites: 'Обладунок має бути розкладений під чистим небом, коли над ним пролітає комета',
+			source: 'Тексти або знання мовою Уллорвік (Ullorvic)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.createPackageContent({
 			id: 'imbuement-tempest-ii',
-			name: 'Tempest II',
-			description: 'The target takes 8 lightning damage and you push them up to 3 squares.',
+			name: 'Буревій II',
+			description: 'Ціль отримує 8 блискавичної шкоди, а ви відштовхуєте її до 3 клітинок.',
 			tag: 'tempest-tag'
 		})
 	});
@@ -631,24 +631,24 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static devilsBargain: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The wing of an archdevil',
-			source: 'Texts or lore in Анжалі (Anjali)',
+			prerequisites: 'Крило архідиявола',
+			source: 'Тексти або знання мовою Анжалі (Anjali)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-devils-bargain',
-			name: 'Devil\'s Bargain',
-			description: 'You can fly. Additionally, if an effect would make you prone while flying, you can choose to not go prone by losing Stamina equal to the distance you would have fallen from becoming prone.'
+			name: 'Диявольська угода',
+			description: 'Ви можете літати. Додатково, якщо якийсь ефект мав би зробити вас розпластаними під час польоту, ви можете не падати долілиць, втративши Витривалість, що дорівнює відстані, на яку ви впали б через цей ефект.'
 		})
 	});
 
 	static dragonSoulII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An offering of gems, coins, and art stolen from a dragon’s hoard, sacrificed in ritual fire',
-			source: 'Texts or lore in Вастаріакс (Vastariax)',
+			prerequisites: 'Пожертва з самоцвітів, монет і мистецьких творів, украдених зі скарбу дракона та спалених у ритуальному вогні',
+			source: 'Тексти або знання мовою Вастаріакс (Vastariax)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -656,9 +656,9 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-dragon-soul-ii',
-				name: 'Dragon Soul II',
-				description: 'You open your maw and unleash hell.',
-				type: FactoryLogic.type.createMain({ qualifiers: ['You are winded'] }),
+				name: 'Душа дракона II',
+				description: 'Ви розкриваєте пащу й вивергаєте пекло.',
+				type: FactoryLogic.type.createMain({ qualifiers: ['Ви захекані'] }),
 				keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 				distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Line, value: 5, value2: 1, within: 1 })],
 				target: 'Кожен ворог у зоні',
@@ -679,24 +679,24 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static invulnerable: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Repurposed metal plates from a servok war engine',
-			source: 'Texts or lore in Ралларіан (Rallarian)',
+			prerequisites: 'Перероблені металеві пластини з бойового двигуна сервоків',
+			source: 'Тексти або знання мовою Ралларіан (Rallarian)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-invulnerable',
-			name: 'Invulnerable',
-			description: 'When an ability roll made against you obtains a tier 1 outcome, you can ignore its damage and effects.'
+			name: 'Невразливий',
+			description: 'Коли кидок здібності, зроблений проти вас, дає результат 1 рівня, ви можете проігнорувати його шкоду та ефекти.'
 		})
 	});
 
 	static leylineWalker: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A cutting from an ethereal tree that manifests in the mundane world only once a year',
-			source: 'Texts or lore in Іллірик (Yllyric)',
+			prerequisites: 'Живець ефірного дерева, що проявляється у матеріальному світі лише раз на рік',
+			source: 'Тексти або знання мовою Іллірик (Yllyric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
@@ -704,10 +704,10 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-leyline-walker',
-				name: 'Leyline Walker',
-				type: FactoryLogic.type.createMove({ qualifiers: ['Once per turn'] }),
+				name: 'Ходець лей-лініями',
+				type: FactoryLogic.type.createMove({ qualifiers: ['Раз за хід'] }),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You can spend any amount of your movement to instead teleport that distance.')
+					FactoryLogic.createAbilitySectionText('Ви можете витратити будь-яку частину свого руху, щоб натомість телепортуватися на цю відстань.')
 				]
 			})
 		})
@@ -716,100 +716,100 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static life: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The tear of a saint',
-			source: 'Texts or lore in Високий Курик (High Kuric)',
+			prerequisites: 'Сльоза святого',
+			source: 'Тексти або знання мовою Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-life',
-			name: 'Life',
-			description: 'Whenever you would die, you can spend a Recovery to regain Stamina instead. If you have no Recoveries to spend, you die.'
+			name: 'Життя',
+			description: 'Щоразу, коли ви мали б померти, ви можете витратити Відновлення, щоб натомість відновити Витривалість. Якщо у вас немає Відновлень, щоб витратити, ви помираєте.'
 		})
 	});
 
 	static magicResistanceIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A scale from an ancient dragon',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Луска древнього дракона',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-magic-resistance-iii',
-			name: 'Magic Resistance III',
-			description: 'The benefit of the armor’s Magic Resistance II enhancement extends to each ally within 3 squares of you.'
+			name: 'Магічний опір III',
+			description: 'Перевага посилення обладунку «Магічний опір II» поширюється на кожного союзника в межах 3 клітинок від вас.'
 		})
 	});
 
 	static phasingIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Perfectly clear glass from a house that disappeared into the Ethereal Plane',
-			source: 'Texts or lore in Сзетч (Szetch)',
+			prerequisites: 'Ідеально прозоре скло з будинку, який зник у Ефірному плані',
+			source: 'Тексти або знання мовою Сзетч (Szetch)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-phasing-iii',
-			name: 'Phasing III',
-			description: 'Your movement doesn’t provoke opportunity attacks, and you can move through the space of any enemy as if they were an ally. You can’t end your turn in an enemy’s space.'
+			name: 'Фазування III',
+			description: 'Ваш рух не провокує вільних ударів, і ви можете проходити крізь простір будь-якого ворога, наче він ваш союзник. Ви не можете завершити хід у просторі ворога.'
 		})
 	});
 
 	static psionicResistanceIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The skull of a voiceless talker at least a century old',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Череп безголосого балакуна віком щонайменше століття',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-psionic-resistance-iii',
-			name: 'Psionic Resistance III',
-			description: 'The benefit of the armor’s Psionic Resistance II enhancement extends to each ally within 3 squares of you.'
+			name: 'Псіонічний опір III',
+			description: 'Перевага посилення обладунку «Псіонічний опір II» поширюється на кожного союзника в межах 3 клітинок від вас.'
 		})
 	});
 
 	static temporalFlux: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An experimental temporal capacitor invented by the kuran’zoi',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Експериментальний темпоральний конденсатор, винайдений куранʼзоями',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.createMultiple({
 			id: 'imbuement-temporal-flux',
-			name: 'Temporal Flux',
-			description: 'Whenever you move out of a square, you can choose to leave an imprint behind that lasts until the end of the encounter, until your imprint takes 20 or more damage, or until you create a new imprint. The square is occupied by your imprint, and you can share that space with it.',
+			name: 'Часовий зсув',
+			description: 'Щоразу, коли ви виходите з клітинки, можете лишити в ній відбиток, що існує до кінця зустрічі, доки відбиток не отримає 20 або більше шкоди, або доки ви не створите новий відбиток. Клітинку займає ваш відбиток, і ви можете ділити з ним цей простір.',
 			features: [
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'temporal-flux-a',
-						name: 'Temporal Flux',
+						name: 'Часовий зсув',
 						type: FactoryLogic.type.createManeuver({ free: true }),
 						sections: [
-							FactoryLogic.createAbilitySectionText('You teleport to the imprint’s space')
+							FactoryLogic.createAbilitySectionText('Ви телепортуєтеся в простір відбитка.')
 						]
 					})
 				}),
 				FactoryLogic.feature.createAbility({
 					ability: FactoryLogic.createAbility({
 						id: 'temporal-flux-b',
-						name: 'Temporal Flux',
-						type: FactoryLogic.type.createTrigger('You are targeted by an ability', { free: true }),
+						name: 'Часовий зсув',
+						type: FactoryLogic.type.createTrigger('Вас націлює здібність', { free: true }),
 						distance: [FactoryLogic.distance.createSpecial('')],
 						target: 'Себе',
 						sections: [
-							FactoryLogic.createAbilitySectionText('You teleport to your imprint, and the power roll for the ability is an automatic tier 1 result.')
+							FactoryLogic.createAbilitySectionText('Ви телепортуєтеся до свого відбитка, а кидок сили цієї здібності автоматично дає результат 1 рівня.')
 						]
 					})
 				})
@@ -820,16 +820,16 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 	static unbending: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedArmor,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A spearhead or other weapon broken off in the body of a stone giant, and ossified for a year or more',
-			source: 'Texts or lore in Високий Курик (High Kuric)',
+			prerequisites: 'Наконечник списа чи інша зброя, що зламалася в тілі камʼяного велета й окостеніла там щонайменше за рік',
+			source: 'Тексти або знання мовою Високий Курик (High Kuric)',
 			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-unbending',
-			name: 'Unbending',
-			description: 'You can’t be subjected to forced movement unless you choose to be. Effects that ignore Stability also ignore this enhancement.'
+			name: 'Незламний',
+			description: 'Вас не можна піддати примусовому переміщенню, якщо ви самі цього не оберете. Ефекти, що ігнорують Стабільність, також ігнорують це посилення.'
 		})
 	});
 };

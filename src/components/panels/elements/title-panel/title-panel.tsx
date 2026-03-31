@@ -30,8 +30,8 @@ interface Props {
 }
 
 export const TitlePanel = (props: Props) => {
-	const [ title, setTitle ] = useState<Title>(Utils.copy(props.title));
-	const [ editing, setEditing ] = useState<boolean>(false);
+	const [title, setTitle] = useState<Title>(Utils.copy(props.title));
+	const [editing, setEditing] = useState<boolean>(false);
 
 	const selectedFeature = title.features.find(f => f.id === title.selectedFeatureID);
 	const editable = selectedFeature && (selectedFeature.type === FeatureType.Text);
@@ -59,7 +59,7 @@ export const TitlePanel = (props: Props) => {
 		}
 	};
 
-	const tags = [ `Echelon ${title.echelon}` ];
+	const tags = [`Ешелон ${title.echelon}`];
 	if (props.sourcebooks.length > 0) {
 		const sourcebookType = SourcebookLogic.getTitleSourcebook(props.sourcebooks, title)?.type || SourcebookType.Official;
 		if (sourcebookType !== SourcebookType.Official) {

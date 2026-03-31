@@ -53,7 +53,7 @@ export const AbilityComponent = (props: Props) => {
 	const getTriggerSection = () => {
 		if (ability.trigger) {
 			return (
-				<p className='trigger'><label>Trigger: </label>{ability.trigger}</p>
+				<p className='trigger'><label>Тригер: </label>{ability.trigger}</p>
 			);
 		}
 	};
@@ -66,7 +66,7 @@ export const AbilityComponent = (props: Props) => {
 				let newLine = l;
 				if (!addedLabel && !(l.startsWith('**') || l.startsWith('#'))) {
 					addedLabel = true;
-					newLine = '**Effect**: ' + l;
+					newLine = '**Ефект**: ' + l;
 				}
 				return newLine;
 			}).join('\n');
@@ -107,12 +107,12 @@ export const AbilityComponent = (props: Props) => {
 				<div className='distance-target'>
 					<div className='distance'>
 						{ability.distance?.length ?
-							<img src={distanceIcon} alt='Distance' />
+							<img src={distanceIcon} alt='Дистанція' />
 							: undefined}
 						<span>{ability.distance}</span>
 					</div>
 					<div className='target'>
-						<img src={targetIcon} alt='Target' />
+						<img src={targetIcon} alt='Ціль' />
 						<span>{ability.target}</span>
 					</div>
 				</div>

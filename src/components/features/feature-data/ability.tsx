@@ -15,7 +15,7 @@ interface EditProps {
 }
 
 export const EditAbilityData = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureAbilityData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureAbilityData>(Utils.copy(props.data));
 
 	const setAbility = (value: Ability) => {
 		const copy = Utils.copy(data);
@@ -26,7 +26,7 @@ export const EditAbilityData = (props: EditProps) => {
 
 	return (
 		<div style={{ margin: '10px 0' }}>
-			<Expander title={data.ability.name || 'Unnamed Ability'}>
+			<Expander title={data.ability.name || 'Безіменна здібність'}>
 				<AbilityEditPanel
 					ability={data.ability}
 					onChange={setAbility}

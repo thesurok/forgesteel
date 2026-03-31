@@ -367,20 +367,20 @@ export const LibraryListPage = (props: Props) => {
 				case 'culture':
 					return (
 						<div className='list-header'>
-							<Toggle style={{ margin: '0' }} label='Include cultures from ancestries' value={showCulturesFromAncestries} onChange={setShowCulturesFromAncestries} />
+							<Toggle style={{ margin: '0' }} label='Включати культури з походжень' value={showCulturesFromAncestries} onChange={setShowCulturesFromAncestries} />
 						</div>
 					);
 				case 'project':
 					return (
 						<div className='list-header'>
-							<Toggle style={{ margin: '0' }} label='Include projects from imbuements' value={showProjectsFromImbuements} onChange={setShowProjectsFromImbuements} />
-							<Toggle style={{ margin: '0' }} label='Include projects from items' value={showProjectsFromItems} onChange={setShowProjectsFromItems} />
+							<Toggle style={{ margin: '0' }} label='Включати проєкти з наділень' value={showProjectsFromImbuements} onChange={setShowProjectsFromImbuements} />
+							<Toggle style={{ margin: '0' }} label='Включати проєкти з предметів' value={showProjectsFromItems} onChange={setShowProjectsFromItems} />
 						</div>
 					);
 				case 'subclass':
 					return (
 						<div className='list-header'>
-							<Toggle style={{ margin: '0' }} label='Include subclasses from classes' value={showSubclassesFromClasses} onChange={setShowSubclassesFromClasses} />
+							<Toggle style={{ margin: '0' }} label='Включати підкласи з класів' value={showSubclassesFromClasses} onChange={setShowSubclassesFromClasses} />
 						</div>
 					);
 			}
@@ -455,31 +455,31 @@ export const LibraryListPage = (props: Props) => {
 						<div className='selection-content'>
 							<div className='selection-list categories'>
 								<div className='selection-list-group-header'>
-									<HeaderText level={3}>For Players</HeaderText>
+									<HeaderText level={3}>Для гравців</HeaderText>
 								</div>
-								<SelectorRow selected={category === 'ancestry'} content='Ancestries' info={getList('ancestry').length} onSelect={() => navigation.goToLibrary('ancestry')} />
-								<SelectorRow selected={category === 'career'} content='Careers' info={getList('career').length} onSelect={() => navigation.goToLibrary('career')} />
-								<SelectorRow selected={category === 'class'} content='Classes' info={getList('class').length} onSelect={() => navigation.goToLibrary('class')} />
-								<SelectorRow selected={category === 'complication'} content='Complications' info={getList('complication').length} onSelect={() => navigation.goToLibrary('complication')} />
-								<SelectorRow selected={category === 'culture'} content='Cultures' info={getList('culture').length} onSelect={() => navigation.goToLibrary('culture')} />
-								<SelectorRow selected={category === 'domain'} content='Domains' info={getList('domain').length} onSelect={() => navigation.goToLibrary('domain')} />
-								<SelectorRow selected={category === 'imbuement'} content='Imbuements' info={getList('imbuement').length} onSelect={() => navigation.goToLibrary('imbuement')} />
-								<SelectorRow selected={category === 'item'} content='Items' info={getList('item').length} onSelect={() => navigation.goToLibrary('item')} />
-								<SelectorRow selected={category === 'kit'} content='Kits' info={getList('kit').length} onSelect={() => navigation.goToLibrary('kit')} />
-								<SelectorRow selected={category === 'perk'} content='Perks' info={getList('perk').length} onSelect={() => navigation.goToLibrary('perk')} />
-								<SelectorRow selected={category === 'project'} content='Projects' info={getList('project').length} onSelect={() => navigation.goToLibrary('project')} />
-								<SelectorRow selected={category === 'subclass'} content='Subclasses' info={getList('subclass').length} onSelect={() => navigation.goToLibrary('subclass')} />
-								<SelectorRow selected={category === 'title'} content='Titles' info={getList('title').length} onSelect={() => navigation.goToLibrary('title')} />
+								<SelectorRow selected={category === 'ancestry'} content='Походження' info={getList('ancestry').length} onSelect={() => navigation.goToLibrary('ancestry')} />
+								<SelectorRow selected={category === 'career'} content='Карʼєри' info={getList('career').length} onSelect={() => navigation.goToLibrary('career')} />
+								<SelectorRow selected={category === 'class'} content='Класи' info={getList('class').length} onSelect={() => navigation.goToLibrary('class')} />
+								<SelectorRow selected={category === 'complication'} content='Ускладнення' info={getList('complication').length} onSelect={() => navigation.goToLibrary('complication')} />
+								<SelectorRow selected={category === 'culture'} content='Культури' info={getList('culture').length} onSelect={() => navigation.goToLibrary('culture')} />
+								<SelectorRow selected={category === 'domain'} content='Домени' info={getList('domain').length} onSelect={() => navigation.goToLibrary('domain')} />
+								<SelectorRow selected={category === 'imbuement'} content='Наділення' info={getList('imbuement').length} onSelect={() => navigation.goToLibrary('imbuement')} />
+								<SelectorRow selected={category === 'item'} content='Предмети' info={getList('item').length} onSelect={() => navigation.goToLibrary('item')} />
+								<SelectorRow selected={category === 'kit'} content='Комплекти' info={getList('kit').length} onSelect={() => navigation.goToLibrary('kit')} />
+								<SelectorRow selected={category === 'perk'} content='Переваги' info={getList('perk').length} onSelect={() => navigation.goToLibrary('perk')} />
+								<SelectorRow selected={category === 'project'} content='Проєкти' info={getList('project').length} onSelect={() => navigation.goToLibrary('project')} />
+								<SelectorRow selected={category === 'subclass'} content='Підкласи' info={getList('subclass').length} onSelect={() => navigation.goToLibrary('subclass')} />
+								<SelectorRow selected={category === 'title'} content='Титули' info={getList('title').length} onSelect={() => navigation.goToLibrary('title')} />
 								<div className='selection-list-group-header'>
-									<HeaderText level={3}>For Directors</HeaderText>
+									<HeaderText level={3}>Для директора</HeaderText>
 								</div>
-								<SelectorRow selected={category === 'adventure'} content='Adventures' info={getList('adventure').length} onSelect={() => navigation.goToLibrary('adventure')} />
-								<SelectorRow selected={category === 'encounter'} content='Encounters' info={getList('encounter').length} onSelect={() => navigation.goToLibrary('encounter')} />
-								<SelectorRow selected={category === 'monster-group'} content={showMonsters ? 'Monsters' : 'Monster Groups'} info={showMonsters ? getList('monster').length : getList('monster-group').length} onSelect={() => navigation.goToLibrary('monster-group')} />
-								<SelectorRow selected={category === 'montage'} content='Montages' info={getList('montage').length} onSelect={() => navigation.goToLibrary('montage')} />
+								<SelectorRow selected={category === 'adventure'} content='Пригоди' info={getList('adventure').length} onSelect={() => navigation.goToLibrary('adventure')} />
+								<SelectorRow selected={category === 'encounter'} content='Сутички' info={getList('encounter').length} onSelect={() => navigation.goToLibrary('encounter')} />
+								<SelectorRow selected={category === 'monster-group'} content={showMonsters ? 'Чудовиська' : 'Групи чудовиськ'} info={showMonsters ? getList('monster').length : getList('monster-group').length} onSelect={() => navigation.goToLibrary('monster-group')} />
+								<SelectorRow selected={category === 'montage'} content='Монтажі' info={getList('montage').length} onSelect={() => navigation.goToLibrary('montage')} />
 								<SelectorRow selected={category === 'negotiation'} content='Переговори' info={getList('negotiation').length} onSelect={() => navigation.goToLibrary('negotiation')} />
-								<SelectorRow selected={category === 'tactical-map'} content='Tactical Maps' info={getList('tactical-map').length} onSelect={() => navigation.goToLibrary('tactical-map')} />
-								<SelectorRow selected={category === 'terrain'} content='Terrain' info={getList('terrain').length} onSelect={() => navigation.goToLibrary('terrain')} />
+								<SelectorRow selected={category === 'tactical-map'} content='Тактичні мапи' info={getList('tactical-map').length} onSelect={() => navigation.goToLibrary('tactical-map')} />
+								<SelectorRow selected={category === 'terrain'} content='Місцевість' info={getList('terrain').length} onSelect={() => navigation.goToLibrary('terrain')} />
 							</div>
 							<div className='selection-list elements'>
 								{getElementListHeader()}

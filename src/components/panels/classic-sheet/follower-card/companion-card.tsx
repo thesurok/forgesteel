@@ -26,32 +26,32 @@ export const CompanionCard = (props: Props) => {
 		return (
 			<div className='details'>
 				<div className='field size'>
-					<label>Size</label>
+					<label>Розмір</label>
 					<div className='value'>{companion.size}</div>
 				</div>
 				<div className='field speed'>
-					<label>Speed</label>
+					<label>Швидкість</label>
 					<div className='value'>{companion.speed}</div>
 				</div>
 				<div className='field stability'>
-					<label>Stability</label>
+					<label>Стійкість</label>
 					<div className='value'>{companion.stability}</div>
 				</div>
 				<div className='field free-strike'>
-					<label>Free Strike</label>
+					<label>Вільний удар</label>
 					<div className='value'>{companion.freeStrike}</div>
 				</div>
 				<div className='stats'>
 					<div className='stat immunity'>
-						<label>Immunity:</label>
+						<label>Імунітет:</label>
 						<span>{Utils.valueOrDefault(companion.immunity, '—')}</span>
 					</div>
 					<div className='stat weakness'>
-						<label>Weakness:</label>
+						<label>Слабкість:</label>
 						<span>{Utils.valueOrDefault(companion.weakness, '—')}</span>
 					</div>
 					<div className='stat movement'>
-						<label>Movement:</label>
+						<label>Рух:</label>
 						<span>{Utils.valueOrDefault(companion.movement, '—')}</span>
 					</div>
 					{
@@ -115,7 +115,7 @@ export const CompanionCard = (props: Props) => {
 						{
 							a.ability ?
 								<>
-									<h4>Level {a.level} Retainer Advancement Ability</h4>
+									<h4>Рівень {a.level}: здібність розвитку ретейнера</h4>
 									{getAbilityIcon(a.ability)}
 									<AbilityComponent
 										ability={a.ability}
@@ -126,7 +126,7 @@ export const CompanionCard = (props: Props) => {
 						{
 							a.features ?
 								<>
-									<h4>Level {a.level} {companion.name} Advancement Feature</h4>
+									<h4>Рівень {a.level}: особливість розвитку {companion.name}</h4>
 									<img src={starIcon} className='icon' />
 									{
 										a.features.map(f => {
@@ -146,7 +146,7 @@ export const CompanionCard = (props: Props) => {
 
 	const getAbilityIcon = (ability: AbilitySheet) => {
 		const icon = SheetFormatter.getAbilityIcon(ability);
-		const alt = 'Ability';
+		const alt = 'Здібність';
 		return (
 			<img src={icon} alt={alt} className='icon' />
 		);
@@ -169,7 +169,7 @@ export const CompanionCard = (props: Props) => {
 
 	const getFeatureIcon = () => {
 		const icon = starIcon;
-		const alt = 'Feature';
+		const alt = 'Особливість';
 		return (
 			<img src={icon} alt={alt} className='icon' />
 		);

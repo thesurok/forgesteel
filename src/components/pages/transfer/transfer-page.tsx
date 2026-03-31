@@ -30,17 +30,17 @@ interface Props {
 
 export const TransferPage = (props: Props) => {
 	const settings = props.connectionSettings;
-	const [ mergeBehavior, setMergeBehavior ] = useState<MergeDuplicateBehavior>(MergeDuplicateBehavior.Skip);
-	const [ copyLocalOpen, setCopyLocalOpen ] = useState<boolean>(false);
+	const [mergeBehavior, setMergeBehavior] = useState<MergeDuplicateBehavior>(MergeDuplicateBehavior.Skip);
+	const [copyLocalOpen, setCopyLocalOpen] = useState<boolean>(false);
 
-	const [ localHeroes, setLocalHeroes ] = useState<Hero[]>([]);
-	const [ localHomebrewSourcebooks, setLocalHomebrewSourcebooks ] = useState<Sourcebook[]>([]);
+	const [localHeroes, setLocalHeroes] = useState<Hero[]>([]);
+	const [localHomebrewSourcebooks, setLocalHomebrewSourcebooks] = useState<Sourcebook[]>([]);
 
-	const [ remoteHeroes, setRemoteHeroes ] = useState<Hero[]>([]);
-	const [ remoteHomebrewSourcebooks, setRemoteHomebrewSourcebooks ] = useState<Sourcebook[]>([]);
+	const [remoteHeroes, setRemoteHeroes] = useState<Hero[]>([]);
+	const [remoteHomebrewSourcebooks, setRemoteHomebrewSourcebooks] = useState<Sourcebook[]>([]);
 
-	const localDs = useMemo(() => new DataService({ ...settings, useWarehouse: false }), [ settings ]);
-	const warehouseDs = useMemo(() => new DataService(settings), [ settings ]);
+	const localDs = useMemo(() => new DataService({ ...settings, useWarehouse: false }), [settings]);
+	const warehouseDs = useMemo(() => new DataService(settings), [settings]);
 
 	const mergeToWarehouse = () => {
 		const mergedHeroes = HeroMergeLogic.merge(localHeroes, remoteHeroes, mergeBehavior);
@@ -164,17 +164,17 @@ export const TransferPage = (props: Props) => {
 
 		return (
 			<Popconfirm
-				title='Copy warehouse data to local'
-				description='It looks like there might be local data that is not present in the warehouse. If so, this action will DELETE that data. Are you sure you want to proceed?'
+				title='Скопіювати дані Warehouse локально'
+				description='Схоже, локально можуть бути дані, яких немає у Warehouse. Якщо так, ця дія повністю видалить локальні дані. Ви впевнені, що хочете продовжити?'
 				open={copyLocalOpen}
 				onOpenChange={handleOpenChange}
 				onConfirm={confirm}
 				onCancel={cancel}
-				okText='Yes'
-				cancelText='No'
+				okText='Так'
+				cancelText='Ні'
 			>
 				<Button>
-					Copy Warehouse data to Local
+					Скопіювати дані Warehouse локально
 				</Button>
 			</Popconfirm>
 		);
@@ -184,23 +184,23 @@ export const TransferPage = (props: Props) => {
 		if (!settings.useWarehouse) {
 			return (
 				<Alert
-					title='Not connected to warehouse'
+					title='Немає підключення до Warehouse'
 					type='info'
-					description='You are not currently setup to use the Warehouse - nothing to do!'
+					description='Зараз Warehouse не налаштовано, тож тут немає чого робити.'
 					showIcon={true}
 				/>
 			);
 		} else {
 			return (
 				<Space orientation='vertical' style={{ width: '100%' }}>
-					<HeaderText level={4}>Move Local data into the Warehouse</HeaderText>
+					<HeaderText level={4}>Перемістити локальні дані до Warehouse</HeaderText>
 					<LabelControl
-						label='What to do when there is a duplicate item (by id) in the warehouse?'
+						label='Що робити, якщо в Warehouse уже є елемент із таким самим id?'
 						control={
 							<Segmented<MergeDuplicateBehavior>
 								value={mergeBehavior}
 								onChange={setMergeBehavior}
-								options={[ MergeDuplicateBehavior.Replace, MergeDuplicateBehavior.Skip ]}
+								options={[MergeDuplicateBehavior.Replace, MergeDuplicateBehavior.Skip]}
 							/>
 						}
 					/>
@@ -208,25 +208,25 @@ export const TransferPage = (props: Props) => {
 						type='primary'
 						onClick={() => mergeToWarehouse()}
 					>
-						Merge Local data into Warehouse
+						Обʼєднати локальні дані з Warehouse
 					</Button>
 
-					<HeaderText level={4}>Copy Warehouse data to Local storage</HeaderText>
+					<HeaderText level={4}>Скопіювати дані Warehouse до локального сховища</HeaderText>
 					<Alert
 						type='warning'
-						title='This replaces the local content completely!'
+						title='Це повністю замінить локальний вміст!'
 					/>
 					{getCopyLocalButton()}
 
-					<HeaderText level={2}>Content Overview</HeaderText>
+					<HeaderText level={2}>Огляд вмісту</HeaderText>
 
-					<HeaderText level={3}>Local Storage</HeaderText>
+					<HeaderText level={3}>Локальне сховище</HeaderText>
 
-					<Expander title={`Heroes (${localHeroes.length})`}>
+					<Expander title={`Герої (${localHeroes.length})`}>
 						{getHeroSection(localHeroes, localHomebrewSourcebooks)}
 					</Expander>
 
-					<Expander title={`Sourcebooks (${localHomebrewSourcebooks.length})`}>
+					<Expander title={`Збірники (${localHomebrewSourcebooks.length})`}>
 						<div className='sourcebook-section'>
 							{
 								localHomebrewSourcebooks.map(sb => (
@@ -236,13 +236,13 @@ export const TransferPage = (props: Props) => {
 						</div>
 					</Expander>
 
-					<HeaderText level={3}>Warehouse Storage</HeaderText>
+					<HeaderText level={3}>Сховище Warehouse</HeaderText>
 
-					<Expander title={`Heroes (${remoteHeroes.length})`}>
+					<Expander title={`Герої (${remoteHeroes.length})`}>
 						{getHeroSection(remoteHeroes, remoteHomebrewSourcebooks)}
 					</Expander>
 
-					<Expander title={`Sourcebooks (${remoteHomebrewSourcebooks.length})`}>
+					<Expander title={`Збірники (${remoteHomebrewSourcebooks.length})`}>
 						<Flex wrap={true} gap='20px'>
 							{
 								remoteHomebrewSourcebooks.map(sb => (
@@ -273,15 +273,15 @@ export const TransferPage = (props: Props) => {
 		<ErrorBoundary>
 			<div className='transfer-page'>
 				<div className='transfer-page-content'>
-					<HeaderText level={1}>Data Transfer</HeaderText>
+					<HeaderText level={1}>Передавання даних</HeaderText>
 					<p>
-						By default, Forge Steel uses your local browser storage to store your data.
-						This means that you didn't have to register or sign up anywhere, and all of your data stays local to you.
-						But it also means that you can't access your data across browsers, and a browser reset could wipe all your data.
+						Типово Forge Steel зберігає ваші дані в локальному сховищі браузера.
+						Це означає, що вам не потрібно ніде реєструватися, а всі дані залишаються лише у вас.
+						Але це також означає, що ви не матимете доступу до них з інших браузерів, а скидання браузера може стерти всі ваші дані.
 					</p>
 					<p>
-						However, once you have connected with the Warehouse, you have access to persistent, remote storage
-						that you can use to keep data and access it across devices, and which won't get wiped if your browser cache clears.
+						Однак після підключення до Warehouse ви отримаєте доступ до постійного віддаленого сховища,
+						яке дозволяє зберігати дані, відкривати їх на різних пристроях і не втрачати їх після очищення кешу браузера.
 					</p>
 					<p>
 						Use this page to transfer data between the browser storage (Local), and the Warehouse.

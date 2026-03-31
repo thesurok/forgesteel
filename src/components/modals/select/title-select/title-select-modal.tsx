@@ -31,9 +31,9 @@ interface Props {
 }
 
 export const TitleSelectModal = (props: Props) => {
-	const [ echelon, setEchelon ] = useState<number>(CreatureLogic.getEchelon(props.hero.class ? props.hero.class.level : 1));
-	const [ searchTerm, setSearchTerm ] = useState<string>('');
-	const [ selectedTitle, setSelectedTitle ] = useState<Title | null>(null);
+	const [echelon, setEchelon] = useState<number>(CreatureLogic.getEchelon(props.hero.class ? props.hero.class.level : 1));
+	const [searchTerm, setSearchTerm] = useState<string>('');
+	const [selectedTitle, setSelectedTitle] = useState<Title | null>(null);
 
 	const selectTitle = (title: Title) => {
 		const copy = Utils.copy(title);
@@ -80,9 +80,9 @@ export const TitleSelectModal = (props: Props) => {
 					{
 						selectedTitle === null ?
 							<Space orientation='vertical' style={{ width: '100%' }}>
-								<NumberSpin label='Echelon' min={1} max={4} value={echelon} onChange={setEchelon} />
+								<NumberSpin label='Ешелон' min={1} max={4} value={echelon} onChange={setEchelon} />
 								{
-									[ customTitle, ...titles ].map(t => (
+									[customTitle, ...titles].map(t => (
 										<SelectablePanel
 											key={t.id}
 											onSelect={() => selectTitle(t)}

@@ -9,268 +9,268 @@ export class ConsumableData {
 
 	static blackAshDart: Item = FactoryLogic.createItem({
 		id: 'item-black-ash-dart',
-		name: 'Black Ash Dart',
-		description: 'A diamond-shaped dart holds a shimmering black vial at its core.',
+		name: 'Дротик чорного попелу',
+		description: 'У серцевині ромбоподібного дротика міститься мерехтлива чорна ампула.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			description: 'Yields 1d3 darts, or three darts if crafted by a shadow',
-			prerequisites: 'Three vials of black ash from the College of Black Ash',
-			source: 'Texts or lore in Сзетч (Szetch)',
-			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+			description: 'Дає 1d3 дротики, або три дротики, якщо створено тінню',
+			prerequisites: 'Три ампули чорного попелу з Колегії чорного попелу',
+			source: 'Тексти або перекази мовою Сзетч (Szetch)',
+			characteristic: [Characteristic.Agility, Characteristic.Intuition],
 			goal: 45
 		}),
 		effect: `
-As a маневр, you can make a ranged free strike using a black ash dart. The strike deals an extra 1 damage and adds the following effects to the tier outcomes of the power roll:
+Як маневр, ви можете зробити дальній вільний удар дротиком чорного попелу. Удар завдає додатково 1 шкоди й додає такі ефекти до рівнів результату кидка сили:
 
-* 11 or lower: You can teleport the target up to 2 squares.
-* 12–16: You can teleport the target up to 4 squares.
-* 17+: You can teleport the target up to 6 squares.`
+* 11 або нижче: Ви можете телепортувати ціль на відстань до 2 клітинок.
+* 12–16: Ви можете телепортувати ціль на відстань до 4 клітинок.
+* 17+: Ви можете телепортувати ціль на відстань до 6 клітинок.`
 	});
 
 	static bloodEssenceVial: Item = FactoryLogic.createItem({
 		id: 'item-blood-essence-vial',
-		name: 'Blood Essence Vial',
-		description: 'A brittle glass tube has a ruby set atop it, attached by a hinge.',
+		name: 'Ампула есенції крові',
+		description: 'У крихкій скляній трубці на шарнірі закріплено рубін.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Potion, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A ruby purloined from a vampire',
-			source: 'Texts or lore in Прото-Ктолл (Proto-Ctholl)',
-			characteristic: [ Characteristic.Agility, Characteristic.Reason ],
+			prerequisites: 'Рубін, поцуплений у вампіра',
+			source: 'Тексти або перекази мовою Прото-Ктолл (Proto-Ctholl)',
+			characteristic: [Characteristic.Agility, Characteristic.Reason],
 			goal: 45
 		}),
-		effect: 'When you damage an adjacent creature who has blood, you can capture the target’s life essence in this vial (no action required). Record the damage you dealt. You can capture life essence in the vial only once. As a маневр, you drink the contents of the vial to regain Stamina equal to half the damage dealt. If you spend 1 Heroic Resource while you drink, you regain Stamina equal to the damage dealt. Once you drink from the vial, it crumbles to dust.'
+		effect: 'Коли ви завдаєте шкоди сусідній істоті, у якої є кров, ви можете захопити життєву есенцію цілі в цю ампулу (не потребує дії). Запишіть завдану шкоду. Ви можете захопити життєву есенцію в ампулу лише один раз. Як маневр, ви випиваєте вміст ампули, щоб відновити Витривалість у розмірі половини завданої шкоди. Якщо під час пиття ви витратите 1 Героїчний ресурс, то відновите Витривалість у розмірі всієї завданої шкоди. Щойно ви випʼєте з ампули, вона розсипається на пил.'
 	});
 
 	static buzzBalm: Item = FactoryLogic.createItem({
 		id: 'item-buzz-balm',
-		name: 'Buzz Balm',
-		description: 'This cooling orange salve crackles and pops when exposed to the air.',
+		name: 'Дзижчальний бальзам',
+		description: 'Ця прохолодна помаранчева мазь потріскує й поцокує на повітрі.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Oil ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Oil],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of demon honey',
-			source: 'Texts or lore in Калліак (Kalliak)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Унція демонічного меду',
+			source: 'Тексти або перекази мовою Калліак (Kalliak)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'As a маневр, you rub the balm on your body and feel it tingle across your skin. You immediately end the bleeding and weakened conditions on yourself, and you gain a +2 bonus to speed until the start of your next turn.'
+		effect: 'Як маневр, ви втираєте бальзам у тіло й відчуваєте, як він поколює шкіру. Ви негайно завершуєте на собі стани кровотечі й ослаблення та отримуєте бонус +2 до швидкості до початку свого наступного ходу.'
 	});
 
 	static catapultDust: Item = FactoryLogic.createItem({
 		id: 'item-catapult-dust',
-		name: 'Catapult Dust',
-		description: 'A small leather pouch is filled with this fine blue powder.',
+		name: 'Катапультний пил',
+		description: 'Невеликий шкіряний мішечок наповнений цим тонким блакитним порошком.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of witherite crystal',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Унція кристалу візериту',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'Catapult Dust was developed as a cost-effective magic siege weapon. As a основна дія, you pour the dust out in an adjacent unoccupied space to fill an area as large as a 2 cube. At the start of your next turn, the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any unattended objects in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.'
+		effect: 'Катапультний пил було розроблено як недорогу магічну облогову зброю. Як основна дія, ви висипаєте пил у сусідню вільну клітинку, заповнюючи область розміром до куба 2. На початку свого наступного ходу земля внизу цієї області з вибуховою силою рветься вгору в обраному вами напрямку. Будь-які бездоглядні предмети в області або істоти, що увійшли в неї після висипання пилу, злітають дугою завдовжки 6 + 1d6 клітинок і заввишки 3 + 1d6 клітинок.'
 	});
 
 	static giantsBloodFlame: Item = FactoryLogic.createItem({
 		id: 'item-giants-blood-flame',
-		name: 'Giant\'s Blood Flame',
-		description: 'A small pot is filled with a viscous, ochre oil that smells of sulfur and burnt hair.',
+		name: 'Полумʼя крові велетня',
+		description: 'Маленький горщик наповнений вʼязкою вохристою оливою, що пахне сіркою й паленим волоссям.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Oil ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Oil],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One vial of fire giant blood',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Одна ампула крові вогняного велетня',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
 		effect: `
-As a маневр, you coat a weapon in this oil and ignite it. The weapon burns persistently and without harming itself until it is extinguished as a маневр. Whenever you use a weapon ability that deals rolled damage using a weapon that is ignited this way, the ability deals an extra 2 fire damage.
+Як маневр, ви вкриваєте зброю цією оливою й підпалюєте її. Зброя горить без упину, не ушкоджуючи сама себе, доки її не загасити маневром. Щоразу, коли ви використовуєте збройну здібність, що завдає шкоди кидком, за допомогою такої запаленої зброї, ця здібність завдає додатково 2 вогняної шкоди.
 
-Alternatively, you can use a маневр to throw the pot up to 5 squares, coating the square where it lands and any creatures or objects in that square with a sticky flammable oil. If the oil takes any fire damage, it burns persistently and deals 5 fire damage at the end of each of your turns to anything it has coated. A creature covered in the oil or who can reach it can use a основна дія to extinguish the flames and end the effect.
+Або ж ви можете маневром кинути горщик на відстань до 5 клітинок, вкривши клітинку приземлення та всіх істот чи предмети в ній липкою легкозаймистою оливою. Якщо олива зазнає будь-якої вогняної шкоди, вона займається й безугавно завдає 5 вогняної шкоди наприкінці кожного вашого ходу всьому, що вкриває. Істота, вкрита оливою, або та, що може до неї дістатися, може використати основну дію, щоб загасити полумʼя й завершити ефект.
 
-Any fire caused by the oil is extinguished after burning for 1 hour.`
+Будь-яка пожежа, спричинена оливою, згасає після 1 години горіння.`
 	});
 
 	static growthPotion: Item = FactoryLogic.createItem({
 		id: 'item-growth-potion',
-		name: 'Growth Potion',
-		description: 'This thick, green liquid tastes of licorice and potatoes.',
+		name: 'Зілля росту',
+		description: 'Ця густа зелена рідина смакує лакрицею й картоплею.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A half-pound of seagrass',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Пів фунта морської трави',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'As a маневр, you can drink this potion or pour it over an object of size 2 or smaller, causing the target’s size to increase by 1(to a minimum size of 2). If you are the target, your Stamina maximum and Stability are doubled, you gain an edge on Might tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest characteristic score. You shrink back to your original size after 3 rounds, halving your current Stamina maximum and Stability, and losing the potion’s other benefits. Objects maintain their new size permanently.'
+		effect: 'Як маневр, ви можете випити це зілля або вилити його на предмет розміру 2 чи меншого, збільшуючи розмір цілі на 1 (щонайменше до розміру 2). Якщо ціллю є ви, ваш максимум Витривалості й Стійкість подвоюються, ви отримуєте перевагу на випробування Сили, а ваші збройні здібності, що завдають шкоди кидком, отримують бонус до шкоди, що дорівнює вашому найвищому показнику характеристики. Через 3 раунди ви повертаєтеся до початкового розміру, удвічі зменшуючи поточні максимум Витривалості й Стійкість та втрачаючи інші переваги зілля. Предмети зберігають новий розмір назавжди.'
 	});
 
 	static healingPotion: Item = FactoryLogic.createItem({
 		id: 'item-healing-potion',
-		name: 'Healing Potion',
-		description: 'Thick and red, this liquid tastes of sour beer.',
+		name: 'Цілюще зілля',
+		description: 'Густа й червона, ця рідина смакує кислим пивом.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of costmary leaves',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Унція листя костмарину',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'When you drink this potion as a маневр, you regain Stamina equal to your recovery value without spending a Recovery.'
+		effect: 'Коли ви пʼєте це зілля як маневр, ви відновлюєте Витривалість, рівну вашому значенню відновлення, не витрачаючи Відновлення.'
 	});
 
 	static impsTongue: Item = FactoryLogic.createItem({
 		id: 'item-imps-tongue',
-		name: 'Imp\'s Tongue',
-		description: 'The tongue of an imp has been dried and preserved. Yuck.',
+		name: 'Язик імпа',
+		description: 'Язик імпа висушено й законсервовано. Гидота.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One imp\'s tongue',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Один язик імпа',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'As a маневр, you place the imp’s tongue on your own tongue, causing it to reconstitute and attach itself to your tongue. While attached, the Imp’s Tongue allows you to speak any language and understand any language spoken to you. This benefit ends after 1 hour, when the tongue is absorbed into your body.'
+		effect: 'Як маневр, ви кладете язик імпа на власний язик, і він відновлюється та приростає до нього. Поки він прикріплений, Язик імпа дозволяє вам говорити будь-якою мовою й розуміти будь-яку мову, якою звертаються до вас. Ця перевага закінчується за 1 годину, коли язик всмоктується у ваше тіло.'
 	});
 
 	static lachompTooth: Item = FactoryLogic.createItem({
 		id: 'item-lachomp-tooth',
-		name: 'Lachomp Tooth',
-		description: 'A thumb-sized serrated tooth seems to scratch your flesh in some way whenever it is handled.',
+		name: 'Зуб лахомпа',
+		description: 'Зуб завбільшки з палець із зазубреними краями щоразу ніби дряпає вашу шкіру, коли ви берете його до рук.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			description: 'Yields 1d3 teeth',
-			prerequisites: 'A leftover carcass of a lachomp meal',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ]
+			description: 'Дає 1d3 зуби',
+			prerequisites: 'Рештки туші після трапези лахомпа',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition]
 		}),
 		effect: `
-As a маневр, you attach a lachomp tooth to a weapon, allowing that weapon to supernaturally flicker in and out of reality. Your next strike that uses the weapon can tear through multiple targets in a line (for a ranged strike) or surrounding you (for a melee strike). The strike adds the following effects to the tier outcomes of the power roll:
+Як маневр, ви кріпите зуб лахомпа до зброї, дозволяючи їй надприродно мерехтіти між реальністю та небуттям. Ваш наступний удар цією зброєю може прорізати кілька цілей у лінію (для дальнього удару) або навколо вас (для ближнього удару). Удар додає такі ефекти до рівнів результату кидка сили:
 
-* 11 or lower: You can affect one additional target with this strike.
-* 12-16: You can affect up to three additional targets with this strike.
-* 17+: You can affect up to seven additional targets with this strike.`
+* 11 або нижче: Ви можете вразити цим ударом ще одну додаткову ціль.
+* 12–16: Ви можете вразити цим ударом до трьох додаткових цілей.
+* 17+: Ви можете вразити цим ударом до семи додаткових цілей.`
 	});
 
 	static mirrorToken: Item = FactoryLogic.createItem({
 		id: 'item-mirror-token',
-		name: 'Mirror Token',
-		description: 'A gold-rimmed, mirror-faced coin trembles in the hand as if it were repelled by your touch.',
+		name: 'Дзеркальний жетон',
+		description: 'Монета із золотим обідком і дзеркальною поверхнею тремтить у руці, ніби ваш дотик її відштовхує.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Three sheets of glass, sunbaked gold dust',
-			source: 'Texts or lore in Варіак (Variac)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Три скляні пластини, просушений на сонці золотий пил',
+			source: 'Тексти або перекази мовою Варіак (Variac)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'While the Mirror Token is on your person and you are targeted by a ranged strike, you can use a тригерна дія to crush the token and ignore the strike. Half the damage you would have taken and any effects of the triggering strike are imposed on the creature making the strike.'
+		effect: 'Поки Дзеркальний жетон при вас і ви стаєте ціллю дальнього удару, ви можете використати тригерну дію, щоб розчавити жетон і проігнорувати удар. Половина шкоди, яку ви мали б отримати, а також усі ефекти тригерного удару натомість накладаються на істоту, що завдала цього удару.'
 	});
 
 	static pocketHomunculus: Item = FactoryLogic.createItem({
 		id: 'item-pocket-homunculus',
-		name: 'Pocket Homunculus',
-		description: 'A densely interlocking sphere of clockwork gears features facets that show the countenance of the item\'s wielder.',
+		name: 'Кишеньковий гомункул',
+		description: 'Сфера з щільно зчеплених механічних шестерень має грані, що показують обличчя власника предмета.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A strip of starmetal coated in the blood of the item\'s crafter',
-			source: 'Texts or lore in Заліак (Zaliac)',
-			characteristic: [ Characteristic.Reason ],
+			prerequisites: 'Смуга зоряного металу, вкрита кровʼю творця предмета',
+			source: 'Тексти або перекази мовою Заліак (Zaliac)',
+			characteristic: [Characteristic.Reason],
 			goal: 45
 		}),
 		effect: `
-When activated as a маневр, this item erupts in a bright flash, you can shift 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with Stamina 15, a 0 in all their characteristics, and a speed and stability equal to yours. They appear indistinguishable from you but can’t use any abilities.
+Коли ви активуєте цей предмет маневром, він спалахує яскравим світлом, ви можете зміститися на 1 клітинку так, щоб вороги не помітили вашого руху, а в сусідній клітинці зʼявляється гомункул, що бездоганно вас копіює. Гомункул є істотою з Витривалістю 15, усіма характеристиками 0 і швидкістю та Стійкістю, рівними вашим. Він виглядає невідрізним від вас, але не може використовувати жодних здібностей.
 
-While you have line of effect to your homunculus, you can use a маневр to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 Stamina.`
+Поки у вас є лінія ефекту до вашого гомункула, ви можете використати маневр, щоб телепатично віддати йому наказ. Гомункул виконує наказ настільки добре, наскільки здатен. Якщо наказу немає, гомункул наслідує ваші рухи й мову. Коли ви рухаєтеся, гомункул рухається разом із вами, тримаючи той самий темп. Гомункул розсипається на пил через 1 годину або якщо його Витривалість зменшиться до 0.`
 	});
 
 	static portableCloud: Item = FactoryLogic.createItem({
 		id: 'item-portable-cloud',
-		name: 'Portable Cloud',
-		description: 'This thin glass sphere holds a tiny roiling cloud.',
+		name: 'Портативна хмара',
+		description: 'У цій тонкій скляній сфері клубочиться крихітна хмара.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A cup of rainwater from a sacred fey grove',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Чашка дощової води зі священного фейського гаю',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 30
 		}),
-		effect: 'As a маневр, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 cube of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.'
+		effect: 'Як маневр, ви кидаєте цю крихку скляну сферу на відстань до 5 клітинок, розбиваючи її та створюючи куб 4 туману. Туман розсіюється через 10 хвилин або якщо крізь область пройде сильний порив вітру, створений бурею чи магією.'
 	});
 
 	static noxiousCloud: Item = FactoryLogic.createItem({
 		id: 'item-noxious-cloud',
-		name: 'Noxious Cloud',
-		description: 'This thin glass sphere holds a tiny roiling cloud.',
+		name: 'Отруйна хмара',
+		description: 'У цій тонкій скляній сфері клубочиться крихітна хмара.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ten ounces of rainwater from a sacred fey grove; one ounce of undead flesh',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Десять унцій дощової води зі священного фейського гаю; одна унція плоті нежиті',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
 		effect: `
-As a маневр, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 cube of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.
+Як маневр, ви кидаєте цю крихку скляну сферу на відстань до 5 клітинок, розбиваючи її та створюючи куб 4 туману. Туман розсіюється через 10 хвилин або якщо крізь область пройде сильний порив вітру, створений бурею чи магією.
 
-Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-smelling mist when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 poison damage. Additionally, any creature is weakened while in the fog.`
+Наповнена зеленою або гнильно-жовтою імлою, ця сфера при розбитті випускає задушливий смердючий туман. Кожна істота, яка вперше за бойовий раунд входить у хмару або починає там свій хід, отримує 5 отруйної шкоди. Крім того, будь-яка істота в тумані є ослабленою.`
 	});
 
 	static thunderheadCloud: Item = FactoryLogic.createItem({
 		id: 'item-thunderhead-cloud',
-		name: 'Thunderhead Cloud',
-		description: 'This thin glass sphere holds a tiny roiling cloud.',
+		name: 'Грозова хмара',
+		description: 'У цій тонкій скляній сфері клубочиться крихітна хмара.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ten ounces of rainwater from a sacred fey grove, a spool of copper wire',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Десять унцій дощової води зі священного фейського гаю, котушка мідного дроту',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
 		effect: `
-As a маневр, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 cube of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.
+Як маневр, ви кидаєте цю крихку скляну сферу на відстань до 5 клітинок, розбиваючи її та створюючи куб 4 туману. Туман розсіюється через 10 хвилин або якщо крізь область пройде сильний порив вітру, створений бурею чи магією.
 
-Small lightning bolts arc around the black cloud in this sphere, which creates a 3 cube of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is slowed while in the cloud`
+Навколо чорної хмари в цій сфері пробігають маленькі блискавки; при розбитті вона створює куб 3 грозової хмари. Кожна істота, яка вперше за бойовий раунд входить у хмару або починає там свій хід, отримує 5 шкоди блискавкою. Крім того, будь-яка істота в хмарі є сповільненою.`
 	});
 
 	static veratismo: Item = FactoryLogic.createItem({
 		id: 'item-veratismo',
-		name: 'Professor Veratismo\'s Quaff\'n\'Huff Snuff',
-		description: 'This tiny compact holds a colorless powder with the slightest astringent smell.',
+		name: 'Нюхальний порошок професора Вератізмо',
+		description: 'У цій крихітній коробочці міститься безбарвний порошок із ледь відчутним терпким запахом.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Potion, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The roots of a just-budded nightshade',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason ],
+			prerequisites: 'Корені пасльону, що щойно пустив бруньки',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason],
 			goal: 45
 		}),
-		effect: 'As a маневр, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is grabbed, restrained, or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an edge on Intuition and Presence tests made to convince the target to communicate, or to read the target’s emotions. Any such creature has a double edge on the test if the target doesn’t realize they’ve been affected by the snuff.'
+		effect: 'Як маневр, ви посипаєте дозою цього порошку їжу чи напій або здуваєте її на сусідню істоту, яка є захопленою, скутою або непритомною. Істота, що зазнає впливу порошку з видуву (навіть якщо затримує подих) або споживає дозу порошку, протягом 1 години може висловлюватися лише правдивими твердженнями. Крім того, інші істоти отримують перевагу на випробування Інтуїції та Присутності, щоб переконати ціль говорити або зчитати її емоції. Будь-яка така істота має подвійну перевагу на випробування, якщо ціль не усвідомлює, що на неї подіяв порошок.'
 	});
 
 	static snapdragon: Item = FactoryLogic.createItem({
 		id: 'item-snapdragon',
-		name: 'Snapdragon',
-		description: 'This delicate orange blossom has a sickly-sweet smell.',
+		name: 'Левиний зів',
+		description: 'Ця тендітна помаранчева квітка має нудотно-солодкий запах.',
 		type: ItemType.Consumable1st,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			description: 'Yields 1d6 + 1 snapdragons',
-			prerequisites: 'Fifty snapdragon seeds',
-			source: 'Texts or lore in Іллірик (Yllyric)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			description: 'Дає 1d6 + 1 квітку левиного зіву',
+			prerequisites: 'Пʼятдесят насінин левиного зіву',
+			source: 'Тексти або перекази мовою Іллірик (Yllyric)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 45
 		}),
-		effect: 'As a маневр, you sniff a magic snapdragon blossom, causing it to whither and making your movements more forceful and explosive. The next damage-dealing ability you use deals an extra 5 damage and gains a +2 bonus to the distance of any forced movement it imposes. If the ability does not impose forced movement, you can push each creature targeted by the ability up to 2 squares.'
+		effect: 'Як маневр, ви вдихаєте аромат магічної квітки левиного зіву, від чого вона вʼяне, а ваші рухи стають різкішими й вибуховішими. Наступна здібність, що завдає шкоди, яку ви використаєте, завдає додатково 5 шкоди й отримує бонус +2 до дальності будь-якого примусового переміщення, яке накладає. Якщо здібність не накладає примусового переміщення, ви можете відштовхнути кожну ціль цієї здібності на відстань до 2 клітинок.'
 	});
 
 	// #endregion
@@ -279,149 +279,149 @@ Small lightning bolts arc around the black cloud in this sphere, which creates a
 
 	static breathofDawn: Item = FactoryLogic.createItem({
 		id: 'item-breath-of-dawn',
-		name: 'Breath of Dawn',
-		description: 'A glass flask contains a whirl of gentle sunlight.',
+		name: 'Подих світанку',
+		description: 'У скляній флязі кружляє вихор лагідного сонячного світла.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The breath of a mystic sage captured at sunrise',
-			source: 'Texts or lore in Гіраллік (Hyrallic)',
-			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+			prerequisites: 'Подих містичного мудреця, спійманий на світанку',
+			source: 'Тексти або перекази мовою Гіраллік (Hyrallic)',
+			characteristic: [Characteristic.Intuition, Characteristic.Presence],
 			goal: 90
 		}),
-		effect: 'As a маневр, you inhale the Breath of Dawn and are overcome with tranquility. You immediately end the frightened, slowed, and taunted conditions on yourself, and you gain a +8 bonus to Stability until the end of the encounter.'
+		effect: 'Як маневр, ви вдихаєте Подих світанку й сповнюєтеся спокоєм. Ви негайно завершуєте на собі стани зляканості, сповільнення й спровокованості та отримуєте бонус +8 до Стійкості до кінця зіткнення.'
 	});
 
 	static bullShot: Item = FactoryLogic.createItem({
 		id: 'item-bull-shot',
-		name: 'Bull Shot',
-		description: 'Tiny chips of white bone float within this dark potion, which carries the scent of beef broth.',
+		name: 'Бичачий шот',
+		description: 'У цьому темному напої плавають дрібні скалки білої кістки, а сам він пахне яловичим бульйоном.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One vial of pure bovine essence',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Одна ампула чистої бичачої есенції',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 90
 		}),
-		effect: 'When you drink this potion as a маневр, you sprout 3-foot sharpened horns from your forehead. Whenever you use the Charge основна дія, the target of your strike is gored upon your horns and grabbed. While grabbed this way, the creature is bleeding. You can also grab another creature with your limbs. The horns harmlessly fall off your head at the end of the encounter.'
+		effect: 'Коли ви випиваєте це зілля як маневр, з вашого чола виростають гострі роги завдовжки 3 фути. Щоразу, коли ви використовуєте основну дію Charge, ціль вашого удару насаджується на роги й стає захопленою. Поки істота захоплена таким чином, у неї є кровотеча. Ви також можете захопити іншу істоту своїми кінцівками. Наприкінці зіткнення роги безпечно відпадають.'
 	});
 
 	static chocolateofImmovability: Item = FactoryLogic.createItem({
 		id: 'item-chocolate-of-immovability',
-		name: 'Chocolate of Immovability',
-		description: 'This decadent-looking treat feels strangely heavy in the hand.',
+		name: 'Шоколад незрушності',
+		description: 'Цей розкішний на вигляд ласунок дивно важкий у руці.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A chocolate made by a gnome confectioner',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Шоколадка, виготовлена кондитером-гномом',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 90
 		}),
-		effect: 'When you consume this delicious piece of candy as a маневр, you gain 15 temporary Stamina and a +10 bonus to stability. Additionally, if you don’t use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any strikes against you take a bane until the start of your next turn. This effect and the bonus to stability lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the temporary Stamina lasts until the end of your next respite.'
+		effect: 'Коли ви зʼїдаєте ці ласощі як маневр, ви отримуєте 15 тимчасової Витривалості й бонус +10 до Стійкості. Крім того, якщо ви не використовуєте свій рух під час ходу, будь-які удари, які ви завдаєте цього ходу, завдають додатково 5 шкоди, а будь-які удари проти вас мають шкоду до початку вашого наступного ходу. Цей ефект і бонус до Стійкості тривають до кінця зіткнення, після чого вас хилить на сон. Якщо тимчасову Витривалість не втрачено раніше, вона триває до кінця вашого наступного перепочинку.'
 	});
 
 	static concealmentPotion: Item = FactoryLogic.createItem({
 		id: 'item-concealment-potion',
-		name: 'Concealment Potion',
-		description: 'This dark, viscous liquid tastes like burnt leaves.',
+		name: 'Зілля приховування',
+		description: 'Ця темна вʼязка рідина смакує паленим листям.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Potion, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of sap from a tree damaged by psionic fire',
-			source: 'Texts or lore in Іллірик (Yllyric)',
-			characteristic: [ Characteristic.Agility, Characteristic.Intuition ],
+			prerequisites: 'Унція соку дерева, ушкодженого псіонічним вогнем',
+			source: 'Тексти або перекази мовою Іллірик (Yllyric)',
+			characteristic: [Characteristic.Agility, Characteristic.Intuition],
 			goal: 90
 		}),
-		effect: 'When you drink this potion as a маневр, light shifts around your body, letting you blend into the environment around you for 10 minutes. While this effect is active, you have a double edge on tests made to hide and sneak, and you can use the Hide маневр even while you are observed.'
+		effect: 'Коли ви випиваєте це зілля як маневр, світло навколо вашого тіла викривляється, даючи вам змогу зливатися з оточенням протягом 10 хвилин. Поки діє цей ефект, ви маєте подвійну перевагу на випробування, щоб сховатися й крастися, а також можете використовувати маневр «Сховатися», навіть коли за вами спостерігають.'
 	});
 
 	static floatPowder: Item = FactoryLogic.createItem({
 		id: 'item-float-powder',
-		name: 'Float Powder',
-		description: 'A glass vial holds translucent flakes that twinkle in the light.',
+		name: 'Летючий порошок',
+		description: 'У скляній ампулі містяться напівпрозорі пластівці, що мерехтять на світлі.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			description: 'Yields 1d3 vials',
-			prerequisites: 'Several strands of hag hair',
-			source: 'Texts or lore in Кхелт (Khelt)',
-			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+			description: 'Дає 1d3 ампули',
+			prerequisites: 'Кілька пасом волосся карги',
+			source: 'Тексти або перекази мовою Кхелт (Khelt)',
+			characteristic: [Characteristic.Intuition, Characteristic.Presence],
 			goal: 90
 		}),
-		effect: 'Dousing yourself in this powder as a маневр causes you to weightlessly float off the ground. For 1 hour, your stability is reduced to 0, and you can fly and hover. Additionally, the hag that the powder is sourced from knows exactly where and when you use it.'
+		effect: 'Посипавши себе цим порошком як маневр, ви невагомо здіймаєтеся над землею. Протягом 1 години ваша Стійкість знижується до 0, і ви можете літати та зависати. Крім того, карга, від якої походить порошок, точно знає, де й коли ви його використали.'
 	});
 
 	static purifiedJelly: Item = FactoryLogic.createItem({
 		id: 'item-purified-jelly',
-		name: 'Purified Jelly',
-		description: 'This clear, pasty substance has a bitter aroma.',
+		name: 'Очищене желе',
+		description: 'Ця прозора пастоподібна речовина має гіркий аромат.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Potion, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			description: 'Yields 1d3 doses',
-			prerequisites: 'A cup of algae from glacial water',
-			source: 'Texts or lore in Іллірик (Yllyric)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			description: 'Дає 1d3 дози',
+			prerequisites: 'Чашка водоростей із льодовикової води',
+			source: 'Тексти або перекази мовою Іллірик (Yllyric)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 90
 		}),
-		effect: 'Consuming this potion as a маневр causes your skin to shimmer and a set of tiny gills to appear on your neck or shoulders. For 1 hour, you can breathe in any environment, and you ignore the effects of harmful gases, vapors, and inhaled poisons.'
+		effect: 'Коли ви вживаєте це зілля як маневр, ваша шкіра починає мерехтіти, а на шиї або плечах зʼявляються маленькі зябра. Протягом 1 години ви можете дихати в будь-якому середовищі й ігноруєте ефекти шкідливих газів, випарів і вдихуваних отрут.'
 	});
 
 	static scrollofResurrection: Item = FactoryLogic.createItem({
 		id: 'item-scroll-of-resurrection',
-		name: 'Scroll of Resurrection',
-		description: 'This scroll is marked by sigils of power, death, and life.',
+		name: 'Сувій воскресіння',
+		description: 'Цей сувій позначено сигілами сили, смерті й життя.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Scroll ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Scroll],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A sheet of paper infused with the dust of a painite',
-			source: 'Texts or lore in Перша мова (The First Language)',
-			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+			prerequisites: 'Аркуш паперу, насичений пилом пейніту',
+			source: 'Тексти або перекази Першою мовою (The First Language)',
+			characteristic: [Characteristic.Intuition, Characteristic.Presence],
 			goal: 90
 		}),
 		effect: `
-As a respite activity, you repeatedly chant the contents of this scroll over the remains of a creature who has been dead for less than 1 year. The creature’s soul must be willing to return to life for the scroll to work. If they are not willing, you instinctively understand that as you start the respite activity and can cease it immediately. The scroll is not consumed, and you can undertake a new respite activity.
+Як дія перепочинку, ви безупинно виголошуєте вміст цього сувою над рештками істоти, яка померла менш ніж рік тому. Душа істоти має бажати повернутися до життя, інакше сувій не спрацює. Якщо вона не згодна, ви інстинктивно розумієте це на початку дії перепочинку й можете негайно її припинити. Сувій не витрачається, і ви можете почати нову дію перепочинку.
 
-A creature with a willing soul returns to life at the end of the respite with full Stamina and half their Recoveries. You regain only half your Recoveries at the end of the respite, and the scroll is consumed.`
+Істота з охочою душею повертається до життя наприкінці перепочинку з повною Витривалістю та половиною своїх Відновлень. Ви ж наприкінці перепочинку відновлюєте лише половину своїх Відновлень, а сувій витрачається.`
 	});
 
 	static elemagnet: Item = FactoryLogic.createItem({
 		id: 'item-telemagnet',
-		name: 'Telemagnet',
-		description: 'A short iron wand shaped of interlocking segments leaks greasy black oil from its joints.',
+		name: 'Телемагніт',
+		description: 'Короткий залізний жезл зі зчеплених сегментів підтікає жирною чорною оливою з місць зʼєднання.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A shard of prismacore, an ounce of ferrous metal',
-			source: 'Texts or lore in Заліак (Zaliac)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Шматок призмакору, унція феромагнітного металу',
+			source: 'Тексти або перекази мовою Заліак (Zaliac)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 90
 		}),
 		effect: `
-As a маневр, you snap this wand in half, letting you vertically pull any object or creature within line of effect of size 3 or less a number of squares based on that target’s size:
+Як маневр, ви ламаєте цей жезл навпіл, що дозволяє вам вертикально притягнути будь-який предмет або істоту розміру 3 чи менше в межах лінії ефекту на кількість клітинок залежно від розміру цілі:
 
-* **Size 1L or smaller:** vertical pull 6
-* **Size 2:** vertical pull 3
-* **Size 3:** vertical pull 1
+* **Розмір 1L або менше:** вертикальне притягування 6
+* **Розмір 2:** вертикальне притягування 3
+* **Розмір 3:** вертикальне притягування 1
 
-If you pull a size 1T object adjacent to you, you can catch it.`
+Якщо ви притягуєте до себе предмет розміру 1T в сусідню клітинку, ви можете його впіймати.`
 	});
 
 	static vialofetherealAttack: Item = FactoryLogic.createItem({
 		id: 'item-vial-of-ethereal-attack',
-		name: 'Vial of Ethereal Attack',
-		description: 'Clear liquid seems to constantly churn within an obsidian vial, even when at rest.',
+		name: 'Ампула ефірної атаки',
+		description: 'Навіть у спокої прозора рідина в обсидіановій ампулі безперервно вирує.',
 		type: ItemType.Consumable2nd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A signed agreement with a ghost, a large obsidian disk',
-			source: 'Texts or lore in Анжалі (Anjali)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Підписана угода з привидом, великий обсидіановий диск',
+			source: 'Тексти або перекази мовою Анжалі (Anjali)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 90
 		}),
-		effect: 'As a маневр, you throw this vial up to 10 squares, destroying the vial and creating a 2-cube ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a combat round or starts their turn there takes 10 psychic damage. At the start of each of your turns, you can move the vortex up to 5 squares (no action required).'
+		effect: 'Як маневр, ви кидаєте цю ампулу на відстань до 10 клітинок, знищуючи її й створюючи ефірний вир куба 2 із центром у місці падіння. Вир розсіюється наприкінці зіткнення або коли ви його відпускаєте (не потребує дії). Кожна істота, яка вперше за бойовий раунд входить у вир або починає там свій хід, отримує 10 психічної шкоди. На початку кожного свого ходу ви можете перемістити вир на відстань до 5 клітинок (не потребує дії).'
 	});
 
 	// #endregion
@@ -430,130 +430,130 @@ If you pull a size 1T object adjacent to you, you can catch it.`
 
 	static anamorphicLarva: Item = FactoryLogic.createItem({
 		id: 'item-anamorphic-larva',
-		name: 'Anamorphic Larva',
-		description: 'A cloudy glass vial holds a writhing monstrous grub.',
+		name: 'Анаморфна личинка',
+		description: 'У каламутній скляній ампулі звивається потворна личинка.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A grub steeped in voiceless talker bile',
-			source: 'Texts or lore in Варіак (Variac)',
-			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
+			prerequisites: 'Личинка, вимочена в жовчі безмовного балакуна',
+			source: 'Тексти або перекази мовою Варіак (Variac)',
+			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 180
 		}),
 		effect: `
-When you release the larva as a маневр, it feeds on psychic energy to grow exponentially, creating a 10 wall of larval flesh adjacent to you. The wall can’t be created to fill any square occupied by a creature with stability 1 or higher. Each other creature in the wall when it is created is pushed to the nearest unoccupied space.
+Коли ви випускаєте личинку маневром, вона живиться психічною енергією й росте з шаленим прискоренням, створюючи поруч із вами стіну 10 з личинкової плоті. Стіну не можна створити так, щоб вона заповнила клітинку, зайняту істотою зі Стійкістю 1 або вищою. Кожна інша істота в стіні в момент її створення відштовхується до найближчої вільної клітинки.
 
-At the start of each of your turns, each creature adjacent to the wall takes psychic damage equal to three times their Intuition score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your turn, the larva dies and the wall disappears.`
+На початку кожного вашого ходу кожна істота, сусідня до стіни, отримує психічну шкоду, що дорівнює потроєному показнику її Інтуїції, а ви можете додати до стіни 1 клітинку за кожну істоту, яка отримала цю шкоду. Якщо на початку вашого ходу жодна істота не отримує шкоди, личинка помирає, а стіна зникає.`
 	});
 
 	static bottledParadox: Item = FactoryLogic.createItem({
 		id: 'item-bottled-paradox',
-		name: 'Bottled Paradox',
-		description: 'Liquid constantly swirls within a cut glass bottle that is ice cold to the touch.',
+		name: 'Запляшкований парадокс',
+		description: 'Рідина безперервно закручується в гранованій скляній пляшці, яка крижано-холодна на дотик.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A month’s lifespan from the creator or another willing creature, ground sapphire',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Місяць життя творця або іншої згодної істоти, мелений сапфір',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 180
 		}),
-		effect: 'As a маневр, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a test you made in the last minute, then reroll that test repeatedly until the outcome changes. If the potion is thrown, it creates a 3-cube area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.'
+		effect: 'Як маневр, ви можете випити це зілля або кинути його на відстань до 10 клітинок. Якщо ви його випиваєте, оберіть випробування, яке ви робили протягом останньої хвилини, а потім перекидайте його доти, доки результат не зміниться. Якщо зілля кинуто, воно створює область мерехтливої магії куба 3. Будь-яка подія, що відбулася в цій області протягом попередньої хвилини, змінюється на розсуд Режисера, який має повну свободу вирішити, що станеться. Потім енергія розсіюється.'
 	});
 
 	static galliosvisitingCard: Item = FactoryLogic.createItem({
 		id: 'item-gallios-visiting-card',
-		name: 'G’Allios Visiting Card',
-		description: 'A card bearing the Eighth City Advocacy Services crest smells faintly of smoke and spices.',
+		name: 'Візитівка ГʼАлліоса',
+		description: 'Картка з гербом Служби адвокації Восьмого міста ледь помітно пахне димом і прянощами.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One vial of archdevil’s blood, an expired contract',
-			source: 'Texts or lore in Анжалі (Anjali)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Одна ампула крові архідиявола, прострочений контракт',
+			source: 'Тексти або перекази мовою Анжалі (Anjali)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 180
 		}),
-		effect: 'Whenever you would take damage, you can use a тригерна дія to tear the card and summon a devil. You avoid the damage and any accompanying effects, and the devil redirects the triggering effect to a target of their choice anywhere on the same manifold. You are treated to a clear vision of whoever suffers the damage. The devil then disappears.'
+		effect: 'Щоразу, коли ви мали б отримати шкоду, ви можете використати тригерну дію, щоб розірвати картку й викликати диявола. Ви уникаєте шкоди та будь-яких супровідних ефектів, а диявол перенаправляє тригерний ефект на ціль на власний вибір будь-де в тому самому маніфолді. Ви чітко бачите того, хто зрештою зазнає шкоди. Після цього диявол зникає.'
 	});
 
 	static personalEffigy: Item = FactoryLogic.createItem({
 		id: 'item-personal-effigy',
-		name: 'Personal Effigy',
-		description: 'This tiny humanoid effigy appears unnervingly lifelike and is always warm to the touch.',
+		name: 'Особиста ефігія',
+		description: 'Ця крихітна людиноподібна ефігія моторошно схожа на живу й завжди тепла на дотик.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A brief period of contact with the creature the effigy is tied to',
-			source: 'Texts or lore in Кемхарік (Khemharic)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Короткий дотик до істоти, з якою повʼязана ефігія',
+			source: 'Тексти або перекази мовою Кемхарік (Khemharic)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 120
 		}),
-		effect: 'The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a маневр to manually light and burn the effigy and bring the creature back to life. The creature returns to life with Stamina equal to their winded value and 10 temporary Stamina that lasts until the end of their next respite. If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.'
+		effect: 'Особисту ефігію створюють за подобою конкретної гуманоїдної істоти, з якою вона повʼязана, і вона діє лише протягом першої хвилини після смерті цієї істоти. Поки ви перебуваєте в межах 5 клітинок від решток істоти, з якою повʼязана ефігія, ви можете використати маневр, щоб вручну запалити й спалити ефігію та повернути істоту до життя. Істота повертається до життя з Витривалістю, рівною її значенню захеканості, і 10 тимчасової Витривалості, що триває до кінця її наступного перепочинку. Якщо істота мертва понад 1 хвилину, вона лишається мертвою, а ефігія розчиняється в пил.'
 	});
 
 	static stygianLiquor: Item = FactoryLogic.createItem({
 		id: 'item-stygian-liquor',
-		name: 'Stygian Liquor',
-		description: 'This muddy brown whiskey tastes of peat and death.',
+		name: 'Стигійний лікер',
+		description: 'Цей каламутно-бурий віскі смакує торфом і смертю.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of scrapings from a coven’s used cauldron',
-			source: 'Texts or lore in Анжалі (Anjali)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Унція зішкребків із уживаного казана ковену',
+			source: 'Тексти або перекази мовою Анжалі (Anjali)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 180
 		}),
-		effect: 'When you drink this potion as a маневр, you gain a tenacious will to cling to life for 24 hours. If you are dying during this time, you don’t die until you reach the negative of your Stamina maximum rather than your winded value. Additionally, while you are dying, you gain on edge on power rolls and you take half the damage dealt by the bleeding condition. Once the potion’s magic is triggered, it ends when you are no longer dying.'
+		effect: 'Коли ви випиваєте це зілля як маневр, ви здобуваєте вперту волю чіплятися за життя протягом 24 годин. Якщо в цей час ви вмираєте, то не помираєте, доки не досягнете відʼємного значення свого максимуму Витривалості, а не значення захеканості. Крім того, поки ви вмираєте, ви маєте перевагу на кидки сили й отримуєте лише половину шкоди від стану кровотечі. Щойно магія зілля спрацьовує, вона завершується, коли ви перестаєте вмирати.'
 	});
 
 	static timesplitter: Item = FactoryLogic.createItem({
 		id: 'item-timesplitter',
-		name: 'Timesplitter',
-		description: 'This spiked crystal makes a beautiful ringing sound when first touched.',
+		name: 'Розсікач часу',
+		description: 'Цей шипастий кристал при першому дотику видає прекрасний дзвінкий звук.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A time crystal',
-			source: 'Texts or lore in Волл (Voll)',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Кристал часу',
+			source: 'Тексти або перекази мовою Волл (Voll)',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 180
 		}),
 		effect: `
-As a маневр, you make a ranged free strike using the Timesplitter, which shatters upon impact. The strike deals an extra 1d6 psychic damage and adds the following effects to the tier outcomes of the power roll:
+Як маневр, ви робите дальній вільний удар Розсікачем часу, який розбивається при влучанні. Удар завдає додатково 1d6 психічної шкоди й додає такі ефекти до рівнів результату кидка сили:
 
-* 11 or lower: The target and each creature within 3 squares of them a slowed (save ends).
-* 12-16: The target and each creature within 5 squares of them a slowed (save ends).
-* 17+: The target and each creature within 8 squares of them a slowed (save ends).`
+* 11 або нижче: Ціль і кожна істота в межах 3 клітинок від неї є сповільненими (рят. кидок завершує).
+* 12–16: Ціль і кожна істота в межах 5 клітинок від неї є сповільненими (рят. кидок завершує).
+* 17+: Ціль і кожна істота в межах 8 клітинок від неї є сповільненими (рят. кидок завершує).`
 	});
 
 	static wardToken: Item = FactoryLogic.createItem({
 		id: 'item-ward-token',
-		name: 'Ward Token',
-		description: 'This smoothly polished quartz stone feels strangely warm to the touch.',
+		name: 'Обереговий жетон',
+		description: 'Цей гладко відполірований кварцовий камінь дивно теплий на дотик.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A small quartz',
-			source: 'Texts or lore in Заліак (Zaliac)',
-			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
+			prerequisites: 'Невеликий кварц',
+			source: 'Тексти або перекази мовою Заліак (Zaliac)',
+			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 180
 		}),
-		effect: 'As a маневр, you toss this stone above you and it shatters, showering you in dust. Until the end of the encounter, any enemy ability that targets you has a double bane.'
+		effect: 'Як маневр, ви підкидаєте цей камінь над собою, і він розбивається, обсипаючи вас пилом. До кінця зіткнення будь-яка ворожа здібність, що націлена на вас, має подвійну шкоду.'
 	});
 
 	static wellnessTonic: Item = FactoryLogic.createItem({
 		id: 'item-wellness-tonic',
-		name: 'Wellness Tonic',
-		description: 'This thick purple liquid has a bitter scent that lingers.',
+		name: 'Оздоровчий тонік',
+		description: 'Ця густа фіолетова рідина має стійкий гіркий запах.',
 		type: ItemType.Consumable3rd,
-		keywords: [ AbilityKeyword.Potion, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Potion, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of troll’s blood, raw honey',
-			source: 'Texts or lore in Варіак (Variac)',
-			characteristic: [ Characteristic.Might, Characteristic.Intuition ],
+			prerequisites: 'Унція крові троля, сирий мед',
+			source: 'Тексти або перекази мовою Варіак (Variac)',
+			characteristic: [Characteristic.Might, Characteristic.Intuition],
 			goal: 180
 		}),
-		effect: 'When you drink this tonic as a маневр, you feel a surge of physical and spiritual immunity. You can immediately end up to three conditions or effects affecting you. Additionally, until the start of your next turn, you can ignore any effect that would last until the end of your next turn or be ended by a saving throw.'
+		effect: 'Коли ви пʼєте цей тонік як маневр, вас охоплює хвиля тілесного й духовного імунітету. Ви можете негайно завершити до трьох станів або ефектів, що впливають на вас. Крім того, до початку вашого наступного ходу ви можете ігнорувати будь-який ефект, що тривав би до кінця вашого наступного ходу або завершувався б рят. кидком.'
 	});
 
 	// #endregion
@@ -562,65 +562,65 @@ As a маневр, you make a ranged free strike using the Timesplitter, which s
 
 	static breathofCreation: Item = FactoryLogic.createItem({
 		id: 'item-breath-of-creation',
-		name: 'Breath of Creation',
-		description: 'A glass flask holds a roiling storm of astral plasma.',
+		name: 'Подих творення',
+		description: 'У скляній флязі вирує буря з астральної плазми.',
 		type: ItemType.Consumable4th,
-		keywords: [ AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The captured breath of a god, an ounce of condensed dreams',
-			source: 'Texts or lore in Перша мова (The First Language)',
-			characteristic: [ Characteristic.Intuition, Characteristic.Presence ],
+			prerequisites: 'Спійманий подих бога, унція згущених снів',
+			source: 'Тексти або перекази Першою мовою (The First Language)',
+			characteristic: [Characteristic.Intuition, Characteristic.Presence],
 			goal: 360
 		}),
 		effect: `
-When you inhale the Breath of Creation as a маневр, you are imbued with cosmic power. You earn 1 Renown, and you create a size 2 portal to a new demiplane in an adjacent square. The demiplane is a 20-cube area whose form and mundane features are chosen by you. The portal appears only to you and creatures you designate, and only you and those creatures can enter the demiplane. When a creature moves into the portal, they emerge from a corresponding portal inside the demiplane, and vice versa. Objects created within the demiplane turn to dust if removed from it.
+Коли ви вдихаєте Подих творення як маневр, вас наповнює космічна сила. Ви здобуваєте 1 Славу й створюєте портал розміру 2 до нового деміплану в сусідній клітинці. Деміплан є областю куба 20, чию форму й буденні риси обираєте ви. Портал зʼявляється лише для вас і призначених вами істот, і лише ви та ці істоти можете входити до деміплану. Коли істота заходить у портал, вона виходить із відповідного порталу всередині деміплану, і навпаки. Предмети, створені в деміплані, перетворюються на пил, якщо винести їх за його межі.
 
-Each time you use another Breath of Creation, you can create a new demiplane or expand a demiplane you have already created or visited. The size of an expanded demiplane increases by 20, and you create a second portal to the demiplane with a corresponding portal inside.`
+Щоразу, коли ви використовуєте ще один Подих творення, ви можете створити новий деміплан або розширити деміплан, який уже створили чи відвідали. Розмір розширеного деміплану збільшується на 20, а ви створюєте другий портал до цього деміплану з відповідним порталом усередині.`
 	});
 
 	static elixirofsaintElspeth: Item = FactoryLogic.createItem({
 		id: 'item-elixir-of-saint-elspeth',
-		name: 'Elixir of Saint Elspeth',
-		description: 'This thick red liquid smells of cinnamon.',
+		name: 'Еліксир святої Елспет',
+		description: 'Ця густа червона рідина пахне корицею.',
 		type: ItemType.Consumable4th,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Potion ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Potion],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An ounce of the blood of Saint Elspeth',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Presence ],
+			prerequisites: 'Унція крові святої Елспет',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Presence],
 			goal: 360
 		}),
-		effect: 'When you pour the elixir onto your forehead as a маневр, it vanishes and you protect yourself against effects that might harm your body, mind, or soul. For a number of rounds equal to your current Victories, any enemy ability targeting you automatically obtains a tier 1 outcome against you. Additionally, the ability can only deal damage to you, letting you ignore its other effects.'
+		effect: 'Коли ви виливаєте еліксир собі на чоло як маневр, він зникає, а ви захищаєте себе від ефектів, що могли б зашкодити тілу, розуму чи душі. Протягом кількості раундів, що дорівнює вашим поточним Перемогам, будь-яка ворожа здібність, націлена на вас, автоматично отримує проти вас результат 1-го рівня. Крім того, така здібність може лише завдати вам шкоди, дозволяючи ігнорувати її інші ефекти.'
 	});
 
 	static solaris: Item = FactoryLogic.createItem({
 		id: 'item-solaris',
-		name: 'Page From the Infinite Library: Solaris',
-		description: 'This page is covered with writing and diagrams detailing the release of limitless energy—and the dangers of that process.',
+		name: 'Сторінка з Нескінченної бібліотеки: Solaris',
+		description: 'Цю сторінку вкрито текстами й схемами, що описують вивільнення безмежної енергії та небезпеки цього процесу.',
 		type: ItemType.Consumable4th,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One vial of sacred ink, blessed parchment',
-			source: 'Reference materials in Перша мова (The First Language) from the Infinite Library detailing incomplete instructions for building a sun',
-			characteristic: [ Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Одна ампула священного чорнила, благословений пергамент',
+			source: 'Довідкові матеріали Першою мовою (The First Language) з Нескінченної бібліотеки з неповними вказівками щодо створення сонця',
+			characteristic: [Characteristic.Reason, Characteristic.Intuition],
 			goal: 360
 		}),
-		effect: 'As a маневр, you spend 1 Heroic Resource to destroy this page and create a 4-cube area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a combat round or starts their turn there takes 20 fire damage and is dazed until the end of their turn.'
+		effect: 'Як маневр, ви витрачаєте 1 Героїчний ресурс, щоб знищити цю сторінку й створити область куба 4 у межах 20 клітинок. Область наповнюється енергією крихітного сонця, що існує до кінця зіткнення. Кожна істота, яка вперше за бойовий раунд входить в область або починає там свій хід, отримує 20 вогняної шкоди й стає приголомшеною до кінця свого ходу.'
 	});
 
 	static brightCourt: Item = FactoryLogic.createItem({
 		id: 'item-bright-court',
-		name: 'Restorative of the Bright Court',
-		description: 'An ornately decorated golden vial smells of summer rain and subtle zesty fruits.',
+		name: 'Відновник Світлого двору',
+		description: 'Рясно оздоблена золота ампула пахне літнім дощем і тонкими цитрусовими нотами.',
 		type: ItemType.Consumable4th,
-		keywords: [ AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A year’s lifespan from the creator or another willing creature, the laughter of a young hero',
-			source: 'Texts or lore in Кхелт (Khelt)',
-			characteristic: [ Characteristic.Reason, Characteristic.Presence ],
+			prerequisites: 'Рік життя творця або іншої згодної істоти, сміх юного героя',
+			source: 'Тексти або перекази мовою Кхелт (Khelt)',
+			characteristic: [Characteristic.Reason, Characteristic.Presence],
 			goal: 360
 		}),
-		effect: 'When opened as a маневр, this vial bursts into a storm of multicolored lights. You and each ally within 5 squares of you regain 1d6 Recoveries. However, any mortal using this treasure draws the interest of a powerful fey noble.'
+		effect: 'Коли ви відкриваєте цю ампулу як маневр, вона вибухає бурею різнобарвних вогнів. Ви й кожен союзник у межах 5 клітинок від вас відновлюєте 1d6 Відновлень. Однак будь-який смертний, що використовує цей скарб, привертає увагу могутнього фейського вельможі.'
 	});
 
 	// #endregion

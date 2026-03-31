@@ -11,7 +11,7 @@ export const ProjectInfoCard = (props: InfoProps) => {
 	const project = props.project;
 	return (
 		<div className='project-info card'>
-			<h2>Project: {project.name}</h2>
+			<h2>Проєкт: {project.name}</h2>
 			<ProjectInfoComponent project={project} />
 		</div>
 	);
@@ -25,7 +25,7 @@ export const ProjectsOverviewCard = (props: OverviewProps) => {
 	const projects = props.projects;
 	return (
 		<div className='projects-overview card'>
-			<h2>Projects</h2>
+			<h2>Проєкти</h2>
 			{
 				projects.map(p => {
 					return (

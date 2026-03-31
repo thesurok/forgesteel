@@ -36,13 +36,13 @@ export const AbilityCard = (props: Props) => {
 				<div className='distance-target'>
 					<div className='distance'>
 						{ability.distance?.length ?
-							<img src={distanceIcon} alt='Distance' />
+							<img src={distanceIcon} alt='Дистанція' />
 							: undefined}
 						<span>{ability.distance}</span>
 					</div>
 					<div className='target'>
 						{ability.target?.length ?
-							<img src={targetIcon} alt='Target' />
+							<img src={targetIcon} alt='Ціль' />
 							: undefined}
 						<span>{ability.target}</span>
 					</div>
@@ -81,7 +81,7 @@ export const AbilityCard = (props: Props) => {
 							<div className='roll-bonuses'>
 								{ability.rollBonuses.map(bonus => (
 									<p key={bonus.name}>
-										<strong>{bonus.name}</strong>: {bonus.tier1} | {bonus.tier2} | {bonus.tier3} {bonus.type} damage
+										<strong>{bonus.name}</strong>: {bonus.tier1} | {bonus.tier2} | {bonus.tier3} {bonus.type === 'melee' ? 'шкоди ближнього бою' : 'шкоди дальнього бою'}
 									</p>
 								))}
 							</div>
@@ -95,7 +95,7 @@ export const AbilityCard = (props: Props) => {
 	const getTriggerSection = () => {
 		if (ability.trigger) {
 			return (
-				<p className='trigger'><label>Trigger: </label>{ability.trigger}</p>
+				<p className='trigger'><label>Тригер: </label>{ability.trigger}</p>
 			);
 		}
 	};
@@ -106,7 +106,7 @@ export const AbilityCard = (props: Props) => {
 				<div className='effect'>
 					{
 						!(ability.effect.startsWith('##') || ability.isNotTrueAbility) ?
-							<h4>Effect:</h4>
+							<h4>Ефект:</h4>
 							: null
 					}
 					<Markdown

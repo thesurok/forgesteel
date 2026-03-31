@@ -16,7 +16,7 @@ interface Props {
 }
 
 export const DangerButton = (props: Props) => {
-	const [ open, setOpen ] = useState<boolean>(false);
+	const [open, setOpen] = useState<boolean>(false);
 
 	const disabled = props.disabled || false;
 	const icon = props.icon || <DeleteOutlined />;
@@ -26,21 +26,21 @@ export const DangerButton = (props: Props) => {
 			case 'block':
 				return (
 					<Button icon={icon} block={true} disabled={disabled} danger={true}>
-						{props.label || 'Delete'}
+						{props.label || 'Видалити'}
 					</Button>
 				);
 			case 'clear':
 				return (
-					<Button type='text' title={props.label || 'Delete'} icon={icon} disabled={disabled} danger={true} />
+					<Button type='text' title={props.label || 'Видалити'} icon={icon} disabled={disabled} danger={true} />
 				);
 			case 'icon':
 				return (
-					<Button title={props.label || 'Delete'} icon={icon} disabled={disabled} danger={true} />
+					<Button title={props.label || 'Видалити'} icon={icon} disabled={disabled} danger={true} />
 				);
 			default:
 				return (
 					<Button icon={icon} disabled={disabled} danger={true}>
-						{props.label || 'Delete'}
+						{props.label || 'Видалити'}
 					</Button>
 				);
 		}
@@ -56,12 +56,12 @@ export const DangerButton = (props: Props) => {
 				content={(
 					<div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
 						{
-							props.disabledMessage || props.message || <div className='ds-text'>This can't be undone; are you sure?</div>
+							props.disabledMessage || props.message || <div className='ds-text'>Цю дію не можна скасувати. Ви впевнені?</div>
 						}
 						{
 							!props.disabledMessage ?
 								<Button danger={true} onClick={e => { setOpen(false); props.onConfirm(e); }}>
-									{props.label || 'Delete'}
+									{props.label || 'Видалити'}
 								</Button>
 								: null
 						}

@@ -9,72 +9,72 @@ export class ImbuedImplementData {
 	static berserking: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The tusk of a feral boar',
-			source: 'Texts or lore in Калліак (Kalliak)',
+			prerequisites: 'Ікло здичавілого вепра',
+			source: 'Тексти або знання мовою Калліак (Kalliak)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-berserking',
-			name: 'Berserking',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability’s effects resolve. This strike deals extra damage equal to the highest of your Reason, Intuition, or Presence scores.'
+			name: 'Шаленство',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю й отримуєте результат 3 рівня, після розвʼязання ефектів здібності ця істота повинна, якщо можливо, здійснити атаку можливості проти свого найближчого союзника. Цей удар завдає додаткової шкоди, рівної найвищому з ваших показників Розуму, Інтуїції або Присутності.'
 		})
 	});
 
 	static displacingI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Slime from an ooze',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Слиз із слизовика',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-displacing-i',
-			name: 'Displacing I',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, you can teleport that creature up to 2 squares after the ability’s effects resolve. If the creature started on a horizontal surface, they must end on a horizontal surface.'
+			name: 'Телепортація I',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю й отримуєте результат 3 рівня, після розвʼязання ефектів здібності ви можете телепортувати цю істоту до 2 клітинок. Якщо істота починала на горизонтальній поверхні, вона повинна завершити переміщення на горизонтальній поверхні.'
 		})
 	});
 
 	static elemental: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Ashes or other leavings from a natural disaster',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Попіл або інші сліди природного лиха',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-elemental',
-			name: 'Elemental',
-			description: 'Whenever you use an ability with the Air, Earth, Fire, Green, Rot, Void, or Water keyword, you can attune this implement to that element until the end of the encounter. While the implement is attuned, you gain an edge on power rolls with that elemental keyword. The implement can be attuned to only one element at a time.'
+			name: 'Стихійний',
+			description: 'Щоразу, коли ви використовуєте здібність із ключовим словом «Повітря», «Земля», «Вогонь», «Зелень», «Гниль», «Пустота» або «Вода», ви можете налаштувати цей імплемент на цей елемент до кінця сутички. Поки імплемент налаштований, ви отримуєте перевагу на кидки сили здібностей із цим стихійним ключовим словом. Імплемент може бути налаштований лише на один елемент одночасно.'
 		})
 	});
 
 	static forcefulI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A lead slingstone that killed a giant',
-			source: 'Texts or lore in Високий Курик (High Kuric)',
+			prerequisites: 'Свинцева пращова куля, якою вбили велетня',
+			source: 'Тексти або знання мовою Високий Курик (High Kuric)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-forceful-i',
-			name: 'Forceful I',
-			description: 'Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 2 squares.'
+			name: 'Силовий I',
+			description: 'Щоразу, коли ви використовуєте магічну чи псіонічну здібність, щоб штовхнути або притягнути істоту, ви можете перемістити цю істоту ще на 2 клітинки.'
 		})
 	});
 
 	static ratForm: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One hundred rat pelts',
-			source: 'Texts or lore in Кхаміш (Khamish)',
+			prerequisites: 'Сто щурячих шкурок',
+			source: 'Тексти або знання мовою Кхаміш (Khamish)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
@@ -82,10 +82,10 @@ export class ImbuedImplementData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-rat-form',
-				name: 'Rat Form',
+				name: 'Форма щура',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your size is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your Might is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a маневр, and do so automatically if you take any damage.')
+					FactoryLogic.createAbilitySectionText('Ви перетворюєтеся на щура. Ваше спорядження перетворюється разом із вами. У формі щура ви маєте швидкість 5, можете автоматично лазити на повній швидкості під час руху, ваш розмір становить 1T, і ви можете бачити в темряві. Ви можете говорити й зберігаєте свої навички у формі щура, але ваша Сила дорівнює -5, і ви втрачаєте всі свої звичайні здібності, особливості та переваги. Ви можете повернутися до своєї природної форми як маневр і робите це автоматично, якщо отримуєте будь-яку шкоду.')
 				]
 			})
 		})
@@ -94,51 +94,51 @@ export class ImbuedImplementData {
 	static rejuvenatingI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A singing quartz crystal',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Співочий кварцовий кристал',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-rejuvenating-i',
-			name: 'Rejuvenating I',
-			description: 'Whenever you use an ability that costs 1 or more of your Heroic Resource, roll a d10. On a 9 or higher, you gain 1 Heroic Resource.'
+			name: 'Омолодження I',
+			description: 'Щоразу, коли ви використовуєте здібність, що коштує 1 або більше вашого героїчного ресурсу, киньте d10. За результату 9 або більше ви отримуєте 1 героїчний ресурс.'
 		})
 	});
 
 	static seeking: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An inch-long needle carved from a diamond',
-			source: 'Texts or lore in Келіан (Caelian)',
+			prerequisites: 'Голка завдовжки в дюйм, вирізьблена з діаманта',
+			source: 'Тексти або знання мовою Келіан (Caelian)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.createMultiple({
 			id: 'imbuement-seeking',
-			name: 'Seeking',
-			description: 'Your ranged magic or psionic abilities gain a +2 distance bonus.',
+			name: 'Навідний',
+			description: 'Ваші далекобійні магічні або псіонічні здібності отримують бонус +2 до дистанції.',
 			features: [
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'imbuement-seeking-magic',
-					name: 'Seeking (Magic)',
-					description: 'Your ranged magic abilities gain a +2 distance bonus.',
+					name: 'Навідний (Магія)',
+					description: 'Ваші далекобійні магічні здібності отримують бонус +2 до дистанції.',
 					keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Magic ],
 					value: 2
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'imbuement-seeking-psionic',
-					name: 'Seeking (Psionic)',
-					description: 'Your ranged psionic abilities gain a +2 distance bonus.',
+					name: 'Навідний (Псіоніка)',
+					description: 'Ваші далекобійні псіонічні здібності отримують бонус +2 до дистанції.',
 					keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Psionic ],
 					value: 2
 				}),
 				FactoryLogic.feature.create({
 					id: 'imbuement-seeking-text',
-					name: 'Seeking',
-					description: 'If you think the name of a specific creature, place, or object to the implement, the implement points toward that target, provided you are on the same world.'
+					name: 'Навідний',
+					description: 'Якщо ви подумки назвете конкретну істоту, місце або предмет, імплемент указує в бік цієї цілі, якщо ви перебуваєте на тому ж світі.'
 				})
 			]
 		})
@@ -147,35 +147,35 @@ export class ImbuedImplementData {
 	static thoughtSending: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The brain of a psionic creature',
-			source: 'Texts or lore in Варіак (Variac)',
+			prerequisites: 'Мозок псіонічної істоти',
+			source: 'Тексти або знання мовою Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.createMultiple({
 			id: 'imbuement-thought-sending',
-			name: 'Thought Sending',
-			description: 'Your ranged magic and psionic abilities gain a +2 distance bonus.',
+			name: 'Надсилання думок',
+			description: 'Ваші далекобійні магічні та псіонічні здібності отримують бонус +2 до дистанції.',
 			features: [
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'imbuement-thought-sending-magic',
-					name: 'Thought Sending (Magic)',
-					description: 'Your ranged magic abilities gain a +2 distance bonus.',
+					name: 'Надсилання думок (Магія)',
+					description: 'Ваші далекобійні магічні здібності отримують бонус +2 до дистанції.',
 					keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Magic ],
 					value: 2
 				}),
 				FactoryLogic.feature.createAbilityDistance({
 					id: 'imbuement-thought-sending-psionic',
-					name: 'Thought Sending (Psionic)',
-					description: 'Your ranged psionic abilities gain a +2 distance bonus.',
+					name: 'Надсилання думок (Псіоніка)',
+					description: 'Ваші далекобійні псіонічні здібності отримують бонус +2 до дистанції.',
 					keywords: [ AbilityKeyword.Ranged, AbilityKeyword.Psionic ],
 					value: 2
 				}),
 				FactoryLogic.feature.create({
 					id: 'imbuement-thought-sending-text',
-					name: 'Thought Sending',
-					description: 'You can telepathically communicate with any willing creature who knows a language and whose name you know, provided they are on the same world as you. You must initiate the conversation, but once you do, the creature can respond until you end the conversation.'
+					name: 'Надсилання думок',
+					description: 'Ви можете телепатично спілкуватися з будь-якою істотою, що бажає цього, знає мову і чиє імʼя вам відоме, якщо вона перебуває на тому ж світі, що й ви. Розмову повинні почати ви, але щойно ви це зробите, істота може відповідати, доки ви не завершите розмову.'
 				})
 			]
 		})
@@ -184,15 +184,15 @@ export class ImbuedImplementData {
 	static wardingI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Three skulls from the same chimera',
-			source: 'Texts or lore in Варіак (Variac)',
+			prerequisites: 'Три черепи однієї химери',
+			source: 'Тексти або знання мовою Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 1,
 		feature: FactoryLogic.feature.createBonus({
 			id: 'imbuement-warding-i',
-			name: 'Warding I',
+			name: 'Оберіг I',
 			field: FeatureField.Stamina,
 			value: 6
 		})
@@ -201,24 +201,24 @@ export class ImbuedImplementData {
 	static celerity: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A dire falcon’s beak',
-			source: 'Texts or lore in Кхелт (Khelt)',
+			prerequisites: 'Дзьоб лютого сокола',
+			source: 'Тексти або знання мовою Кхелт (Khelt)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-celerity',
-			name: 'Celerity',
-			description: 'Immediately after using a magic or psionic ability that requires a основна дія, you can shift up to 3 squares, or you can use the Escape Grab маневр as a безкоштовний маневр.'
+			name: 'Стрімкість',
+			description: 'Одразу після використання магічної чи псіонічної здібності, що вимагає основної дії, ви можете зміститися до 3 клітинок або використати маневр «Вирватися з захоплення» як безкоштовний маневр.'
 		})
 	});
 
 	static celestine: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A still-warm piece of a meteorite',
-			source: 'Texts or lore in Уллорвік (Ullorvic)',
+			prerequisites: 'Ще теплий уламок метеорита',
+			source: 'Тексти або знання мовою Уллорвік (Ullorvic)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
@@ -226,10 +226,10 @@ export class ImbuedImplementData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-celestine',
-				name: 'Celestine',
+				name: 'Целестина',
 				type: FactoryLogic.type.createMain(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You conjure up to three stars, which hover in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star’s space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have line of effect to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.')
+					FactoryLogic.createAbilitySectionText('Ви створюєте до трьох зірок, які зависають у незайнятих клітинках на ваш вибір у межах 5 клітинок від вас. Зірки залишаються на місці й зникають, якщо ви створюєте нові. Коли ворог входить у клітинку будь-якої зірки, зірка детонує й знищується, а ворог отримує 10 вогняної шкоди. Якщо у вас є лінія ефекту до ворога, ви також можете зсунути його на 1 клітинку. Інакше ворог зсувається на 1 клітинку у випадковому напрямку.')
 				]
 			})
 		})
@@ -238,56 +238,56 @@ export class ImbuedImplementData {
 	static displacingII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The wing of a pixie',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Крило піксі',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-displacing-ii',
-			name: 'Displacing II',
-			description: 'When you use the implement’s Displacing I enhancement, you can teleport the creature up to 4 squares. Additionally, the creature takes a bane on their next power roll made before the end of their next turn'
+			name: 'Телепортація II',
+			description: 'Коли ви використовуєте посилення імплементу «Телепортація I», ви можете телепортувати істоту до 4 клітинок. Додатково ця істота отримує перешкоду на свій наступний кидок сили, зроблений до кінця її наступного ходу.'
 		})
 	});
 
 	static eruptingI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Obsidian from an active volcano',
-			source: 'Texts or lore in Вастаріакс (Vastariax)',
+			prerequisites: 'Обсидіан із діючого вулкана',
+			source: 'Тексти або знання мовою Вастаріакс (Vastariax)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-erupting-i',
-			name: 'Erupting I',
-			description: 'Whenever you damage a creature using a magic or psionic ability that targets only a single creature and obtain a tier 3 outcome, each enemy within 2 squares of the creature takes 3 fire damage after the ability’s effects resolve.'
+			name: 'Виверження I',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю, яка націлюється лише на одну істоту, й отримуєте результат 3 рівня, після розвʼязання ефектів здібності кожен ворог у межах 2 клітинок від цієї істоти отримує 3 вогняної шкоди.'
 		})
 	});
 
 	static forcefulII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A marble stone giant’s fingernail',
-			source: 'Texts or lore in Високий Курик (High Kuric)',
+			prerequisites: 'Ніготь мармурового камʼяного велетня',
+			source: 'Тексти або знання мовою Високий Курик (High Kuric)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-forceful-ii',
-			name: 'Forceful II',
-			description: 'Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 3 squares. This replaces the benefit of Forceful I.'
+			name: 'Силовий II',
+			description: 'Щоразу, коли ви використовуєте магічну чи псіонічну здібність, щоб штовхнути або притягнути істоту, ви можете перемістити цю істоту ще на 3 клітинки. Ця перевага замінює Силовий I.'
 		})
 	});
 
 	static hallucinatory: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A night hag’s hairpin',
-			source: 'Texts or lore in Варіак (Variac)',
+			prerequisites: 'Шпилька для волосся нічної карги',
+			source: 'Тексти або знання мовою Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
@@ -295,10 +295,10 @@ export class ImbuedImplementData {
 		feature: FactoryLogic.feature.createAbility({
 			ability: FactoryLogic.createAbility({
 				id: 'imbuement-hallucinatory',
-				name: 'Hallucinatory',
+				name: 'Галюцинаторний',
 				type: FactoryLogic.type.createManeuver(),
 				sections: [
-					FactoryLogic.createAbilitySectionText('You create an area of sensory instability in a 2 aura centered on yourself. The area is difficult terrain for your enemies until the end of the encounter.')
+					FactoryLogic.createAbilitySectionText('Ви створюєте зону сенсорної нестабільності у 2 аурі з центром на собі. До кінця сутички ця зона є складною місцевістю для ваших ворогів.')
 				]
 			})
 		})
@@ -307,47 +307,47 @@ export class ImbuedImplementData {
 	static lingeringI: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Slow-acting poison refined from rare fungi',
-			source: 'Texts or lore in Сзетч (Szetch)',
+			prerequisites: 'Повільнодійна отрута, очищена з рідкісних грибів',
+			source: 'Тексти або знання мовою Сзетч (Szetch)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-lingering-i',
-			name: 'Lingering I',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 8 damage at the start of your next turn.'
+			name: 'Затяжний I',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю й отримуєте результат 3 рівня, ця істота отримує 8 шкоди на початку вашого наступного ходу.'
 		})
 	});
 
 	static rejuvenatingII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A still-growing bonsai tree at least 30 years old',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Дерево бонсай, яке досі росте і має щонайменше 30 років',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-rejuvenating-ii',
-			name: 'Rejuvenating II',
-			description: 'Whenever you use an ability that costs 1 or more of your Heroic Resource, roll a d10. On an 8 or higher, you gain 1 Heroic Resource and you can spend a Recovery. This replaces the benefit of Rejuvenating I.'
+			name: 'Омолодження II',
+			description: 'Щоразу, коли ви використовуєте здібність, що коштує 1 або більше вашого героїчного ресурсу, киньте d10. За результату 8 або більше ви отримуєте 1 героїчний ресурс і можете витратити Відновлення. Ця перевага замінює Омолодження I.'
 		})
 	});
 
 	static wardingII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A metallic dragon’s horn',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Ріг металевого дракона',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 5,
 		feature: FactoryLogic.feature.createMultiple({
 			id: 'imbuement-warding-ii',
-			name: 'Warding II',
+			name: 'Оберіг II',
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'warding-ii-a',
@@ -356,8 +356,8 @@ export class ImbuedImplementData {
 				}),
 				FactoryLogic.feature.create({
 					id: 'warding-ii-b',
-					name: 'Warding II',
-					description: 'Your characteristic scores are considered 1 higher for the purpose of resisting potencies.'
+					name: 'Оберіг II',
+					description: 'Ваші значення характеристик вважаються на 1 вищими для опору потужностям.'
 				})
 			]
 		})
@@ -366,143 +366,143 @@ export class ImbuedImplementData {
 	static anathema: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'An olothec tentacle',
-			source: 'Texts or lore in Варіак (Variac)',
+			prerequisites: 'Щупальце олотека',
+			source: 'Тексти або знання мовою Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-anathema',
-			name: 'Anathema',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature is also weakened (save ends). If the creature is within 10 squares when this weakened effect ends, you can use a безкоштовна тригерна дія to make a free strike against them.'
+			name: 'Анафема',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю й отримуєте результат 3 рівня, ця істота також стає ослабленою (рят. кидок закінчує). Якщо ця істота перебуває в межах 10 клітинок, коли цей ефект ослаблення закінчується, ви можете використати безкоштовну тригерну дію, щоб виконати проти неї безкоштовний удар.'
 		})
 	});
 
 	static displacingIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The keystone from a gate used for crossing between worlds',
-			source: 'Texts or lore in Волл (Voll)',
+			prerequisites: 'Замковий камінь брами, якою переходили між світами',
+			source: 'Тексти або знання мовою Волл (Voll)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-displacing-iii',
-			name: 'Displacing III',
-			description: 'When you use the implement’s Displacing I enhancement, you can teleport the creature up to 5 squares. Additionally, the creature takes a bane on their next power roll made before the end of their next turn.'
+			name: 'Телепортація III',
+			description: 'Коли ви використовуєте посилення імплементу «Телепортація I», ви можете телепортувати істоту до 5 клітинок. Додатково ця істота отримує перешкоду на свій наступний кидок сили, зроблений до кінця її наступного ходу. Ця перевага замінює Телепортацію II.'
 		})
 	});
 
 	static eruptingII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A sealed geode containing explosive gas',
-			source: 'Texts or lore in Вастаріакс (Vastariax)',
+			prerequisites: 'Запечатана жеода з вибухонебезпечним газом усередині',
+			source: 'Тексти або знання мовою Вастаріакс (Vastariax)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-erupting-ii',
-			name: 'Erupting II',
-			description: 'The fire damage dealt by the implement’s Erupting I enhancement increases to 6.'
+			name: 'Виверження II',
+			description: 'Вогняна шкода, яку завдає посилення імплементу «Виверження I», зростає до 6.'
 		})
 	});
 
 	static forcefulIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A scale from the kraken',
-			source: 'Texts or lore in Високий Курик (High Kuric)',
+			prerequisites: 'Луска кракена',
+			source: 'Тексти або знання мовою Високий Курик (High Kuric)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-forceful-iii',
-			name: 'Forceful III',
-			description: 'Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 3 squares and that movement can be vertical. This replaces the benefit of Forceful II.'
+			name: 'Силовий III',
+			description: 'Щоразу, коли ви використовуєте магічну чи псіонічну здібність, щоб штовхнути або притягнути істоту, ви можете перемістити цю істоту ще на 3 клітинки, і це переміщення може бути вертикальним. Ця перевага замінює Силовий II.'
 		})
 	});
 
 	static lingeringII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A venom gland from a mature dragon',
-			source: 'Texts or lore in Сзетч (Szetch)',
+			prerequisites: 'Отруйна залоза дорослого дракона',
+			source: 'Тексти або знання мовою Сзетч (Szetch)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-lingering-ii',
-			name: 'Lingering II',
-			description: 'Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 15 damage at the start of your next turn. This replaces the benefit of Lingering I.'
+			name: 'Затяжний II',
+			description: 'Щоразу, коли ви завдаєте істоті шкоди магічною чи псіонічною здібністю й отримуєте результат 3 рівня, ця істота отримує 15 шкоди на початку вашого наступного ходу. Ця перевага замінює Затяжний I.'
 		})
 	});
 
 	static piercing: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Black iron harvested from a slain blood elemental',
-			source: 'Texts or lore in Анжалі (Anjali)',
+			prerequisites: 'Чорне залізо, здобуте зі вбитого елементаля крові',
+			source: 'Тексти або знання мовою Анжалі (Anjali)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-piercing',
-			name: 'Piercing',
-			description: 'Your magic and psionic abilities ignore damage immunities.'
+			name: 'Пробивний',
+			description: 'Ваші магічні та псіонічні здібності ігнорують імунітети до шкоди.'
 		})
 	});
 
 	static psionicSiphon: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'The frontal lobe of an overmind',
-			source: 'Texts or lore in Варіак (Variac)',
+			prerequisites: 'Лобова частка надрозуму',
+			source: 'Тексти або знання мовою Варіак (Variac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-psionic-siphon',
-			name: 'Psionic Siphon',
-			description: 'Once per turn when you damage one or more creatures using a magic or psionic ability and obtain a tier 3 outcome, you gain Stamina equal to your highest characteristic score, and one creature you damage takes an extra 5 damage.'
+			name: 'Псіонічний сифон',
+			description: 'Раз за хід, коли ви завдаєте шкоди одній або кільком істотам магічною чи псіонічною здібністю й отримуєте результат 3 рівня, ви отримуєте Витривалість, рівну вашому найвищому показнику характеристики, а одна істота, якій ви завдали шкоди, додатково отримує 5 шкоди.'
 		})
 	});
 
 	static rejuvenatingIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A live flower that blooms only once a decade',
-			source: 'Texts or lore in Перша мова (The First Language)',
+			prerequisites: 'Жива квітка, що розквітає лише раз на десятиліття',
+			source: 'Тексти або знання мовою Перша мова (The First Language)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.create({
 			id: 'imbuement-rejuvenating-iii',
-			name: 'Rejuvenating III',
-			description: 'Whenever you use an ability that costs 1 or more of your Heroic Resource, roll a d10. On a 7 or higher, you gain 1 Heroic Resource, and you or a creature of your choice within 3 squares can spend a Recovery. This replaces the benefit of Rejuvenating II.'
+			name: 'Омолодження III',
+			description: 'Щоразу, коли ви використовуєте здібність, що коштує 1 або більше вашого героїчного ресурсу, киньте d10. За результату 7 або більше ви отримуєте 1 героїчний ресурс, а ви або обрана вами істота в межах 3 клітинок можете витратити Відновлення. Ця перевага замінює Омолодження II.'
 		})
 	});
 
 	static wardingIII: Imbuement = FactoryLogic.createImbuement({
 		type: ItemType.ImbuedImplement,
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'Heartwood from a two-century-old tree',
-			source: 'Texts or lore in Заліак (Zaliac)',
+			prerequisites: 'Серцевина дерева віком у два століття',
+			source: 'Тексти або знання мовою Заліак (Zaliac)',
 			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
 			goal: 150
 		}),
 		level: 9,
 		feature: FactoryLogic.feature.createMultiple({
 			id: 'imbuement-warding-iii',
-			name: 'Warding III',
+			name: 'Оберіг III',
 			features: [
 				FactoryLogic.feature.createBonus({
 					id: 'warding-iii-a',
@@ -511,8 +511,8 @@ export class ImbuedImplementData {
 				}),
 				FactoryLogic.feature.create({
 					id: 'warding-iii-b',
-					name: 'Warding III',
-					description: 'You and each ally within 3 squares of you has their characteristic scores considered 1 higher for the purpose of resisting potencies. This replaces the benefit of Warding II.'
+					name: 'Оберіг III',
+					description: 'Ви та кожен союзник у межах 3 клітинок від вас вважаєте свої значення характеристик на 1 вищими для опору потужностям. Ця перевага замінює Оберіг II.'
 				})
 			]
 		})

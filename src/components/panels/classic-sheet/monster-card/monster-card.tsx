@@ -19,49 +19,49 @@ interface Props {
 }
 
 export const MonsterCard = (props: Props) => {
-	const monster = useMemo(() => props.monster, [ props.monster ]);
+	const monster = useMemo(() => props.monster, [props.monster]);
 	const columns = props.columns ?? 1;
 
 	const getDetails = () => {
 		return (
 			<div className='details'>
 				<div className='field size'>
-					<label>Size</label>
+					<label>Розмір</label>
 					<div className='value'>{monster.size}</div>
 				</div>
 				<div className='field speed'>
-					<label>Speed</label>
+					<label>Швидкість</label>
 					<div className='value'>{monster.speed}</div>
 				</div>
 				<div className='field stamina'>
-					<label>Stamina</label>
+					<label>Витривалість</label>
 					<div className='value'>{monster.stamina}</div>
 				</div>
 				<div className='field stability'>
-					<label>Stability</label>
+					<label>Стійкість</label>
 					<div className='value'>{monster.stability}</div>
 				</div>
 				<div className='field free-strike'>
-					<label>Free Strike</label>
+					<label>Вільний удар</label>
 					<div className='value'>{monster.freeStrike}</div>
 				</div>
 				<div className='stats'>
 					<div className='stat immunity'>
-						<label>Immunity:</label>
+						<label>Імунітет:</label>
 						<span>{Utils.valueOrDefault(monster.immunity, '—')}</span>
 					</div>
 					<div className='stat weakness'>
-						<label>Weakness:</label>
+						<label>Слабкість:</label>
 						<span>{Utils.valueOrDefault(monster.weakness, '—')}</span>
 					</div>
 					<div className='stat movement'>
-						<label>Movement:</label>
+						<label>Рух:</label>
 						<span>{Utils.valueOrDefault(monster.movement, '—')}</span>
 					</div>
 					{
 						monster.withCaptain.length ?
 							<div className='stat with-captain'>
-								<label>With Captain:</label>
+								<label>З капітаном:</label>
 								<span>{monster.withCaptain}</span>
 							</div>
 							: null
@@ -69,7 +69,7 @@ export const MonsterCard = (props: Props) => {
 					{
 						monster.freeStrikeDamageType?.length ?
 							<div className='stat fs-dmg-type'>
-								<label>Free Strike Damage Type:</label>
+								<label>Тип шкоди вільного удару:</label>
 								<span>{Utils.valueOrDefault(monster.freeStrikeDamageType, '—')}</span>
 							</div>
 							: null
@@ -96,7 +96,7 @@ export const MonsterCard = (props: Props) => {
 
 	const getAbilityIcon = (ability: AbilitySheet) => {
 		const icon = SheetFormatter.getAbilityIcon(ability);
-		const alt = 'Ability';
+		const alt = 'Здібність';
 		return (
 			<img src={icon} alt={alt} className='icon' />
 		);
@@ -119,13 +119,13 @@ export const MonsterCard = (props: Props) => {
 
 	const getFeatureIcon = () => {
 		const icon = starIcon;
-		const alt = 'Feature';
+		const alt = 'Особливість';
 		return (
 			<img src={icon} alt={alt} className='icon' />
 		);
 	};
 
-	const cardClasses = [ 'monster', 'card' ];
+	const cardClasses = ['monster', 'card'];
 	if (columns > 1) {
 		cardClasses.push('wide');
 	}

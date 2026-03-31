@@ -34,30 +34,8 @@ import { useIsSmall } from '@/hooks/use-is-small';
 
 import './class-section.scss';
 
-const characteristicLabelMap: Record<Characteristic, string> = {
-	[Characteristic.Might]: 'Сила',
-	[Characteristic.Agility]: 'Ловкість',
-	[Characteristic.Reason]: 'Розум',
-	[Characteristic.Intuition]: 'Інтуїція',
-	[Characteristic.Presence]: 'Присутність'
-};
-
-const getCharacteristicLabel = (characteristic: Characteristic) => {
-	return characteristicLabelMap[characteristic] || characteristic;
-};
-
 const formatCharacteristicList = (characteristics: Characteristic[]) => {
-	const labels = characteristics.map(getCharacteristicLabel);
-
-	if (labels.length <= 1) {
-		return labels[0] || '';
-	}
-
-	if (labels.length === 2) {
-		return labels.join(' і ');
-	}
-
-	return `${labels.slice(0, -1).join(', ')} і ${labels[labels.length - 1]}`;
+	return Format.formatCharacteristicList(characteristics);
 };
 
 const getSubclassPrompt = (heroClass: HeroClass) => {
@@ -122,7 +100,7 @@ export const ClassSection = (props: Props) => {
 							className='status-warning'
 							onClick={() => props.setLevel(heroClass.level + 1)}
 						>
-							Advance to level {heroClass.level + 1}
+							Перейти на рівень {heroClass.level + 1}
 						</Button>
 						: null
 				}
@@ -131,7 +109,7 @@ export const ClassSection = (props: Props) => {
 
 		options.choices.push(
 			<SelectablePanel key='characteristics'>
-				<HeaderText>Characteristics</HeaderText>
+				<HeaderText>Характеристики</HeaderText>
 				<Characteristics
 					heroClass={heroClass}
 					selectPrimaryCharacteristics={props.selectPrimaryCharacteristics}
@@ -266,12 +244,12 @@ export const ClassSection = (props: Props) => {
 			{
 				choicesByLevel.length > 0 ?
 					<div className='hero-edit-content-column choices' id='class-choices'>
-						<HeaderText>Choices</HeaderText>
+						<HeaderText>Вибір</HeaderText>
 						{
 							choicesByLevel.map(lvl => (
 								<Expander
 									key={lvl.level}
-									title={lvl.level === 0 ? 'Class Choices' : `Level ${lvl.level} Choices`}
+									title={lvl.level === 0 ? 'Вибір класу' : `Вибір на рівні ${lvl.level}`}
 									expandedByDefault={!lvl.completed}
 									extra={[
 										lvl.completed ?
@@ -283,7 +261,7 @@ export const ClassSection = (props: Props) => {
 										{lvl.choices}
 										{
 											lvl.choices.length === 0 ?
-												<Empty text='Nothing to choose for this level' />
+												<Empty text='На цьому рівні немає вибору' />
 												: null
 										}
 									</Space>
@@ -396,7 +374,7 @@ const Characteristics = (props: CharacteristicsProps) => {
 										<Field
 											key={ch.characteristic}
 											orientation='vertical'
-											label={getCharacteristicLabel(ch.characteristic)}
+											label={Format.getCharacteristicName(ch.characteristic)}
 											value={ch.value}
 										/>
 									))
@@ -419,14 +397,14 @@ const Characteristics = (props: CharacteristicsProps) => {
 						<Field
 							key={ch.characteristic}
 							orientation='vertical'
-							label={ch.characteristic}
+							label={Format.getCharacteristicName(ch.characteristic)}
 							value={ch.value}
 						/>
 					))
 				}
 			</StatsRow>
 			<Button block={true} onClick={() => setValues(null)}>
-				Choose different characteristics
+				Оберіть інші характеристики
 			</Button>
 		</Space>
 	);

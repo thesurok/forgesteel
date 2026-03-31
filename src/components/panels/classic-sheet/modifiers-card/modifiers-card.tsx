@@ -21,15 +21,17 @@ export const ModifiersCard = (props: Props) => {
 	);
 
 	const getModifierNameLabel = () => {
-		let label = 'Name';
+		let label = 'Назва';
 
 		if (character.modifierTypes.includes('Набір')) {
 			label = 'Набір';
 			if (character.modifierName?.includes('&')) {
-				label += 's';
+				label = 'Набори';
 			}
 		} else if (character.modifierTypes.includes('Псі-посилення')) {
 			label = 'Псі-посилення';
+		} else if (character.modifierTypes.includes('Оберіг')) {
+			label = 'Оберіг';
 		} else if (character.modifierTypes.includes('Молитва')) {
 			label = 'Молитва';
 		} else if (character.modifierTypes.includes('Зачарування ')) {

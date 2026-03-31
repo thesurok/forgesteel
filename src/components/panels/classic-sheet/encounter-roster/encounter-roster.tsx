@@ -16,22 +16,22 @@ interface Props {
 }
 
 export const EncounterRosterCard = (props: Props) => {
-	const encounter = useMemo(() => props.encounter, [ props.encounter ]);
+	const encounter = useMemo(() => props.encounter, [props.encounter]);
 
 	return (
 		<div className='encounter-roster card'>
-			<h2>Encounter Roster</h2>
+			<h2>Список сутички</h2>
 			<table>
 				<thead>
 					<tr>
-						<th className='group-id'>Group</th>
+						<th className='group-id'>Група</th>
 						<th>
-							<div className='left'>Creatures</div>
-							<div className='right'>Total EV:<span className='ev-value'>{encounter.encounterEv}</span></div>
+							<div className='left'>Істоти</div>
+							<div className='right'>Сумарний EV:<span className='ev-value'>{encounter.encounterEv}</span></div>
 						</th>
-						<th className='stamina-tracker-header'>Stamina Tracker</th>
-						<th className='stats'>Stats</th>
-						<th className='notes'>Notes/Temporary Effects</th>
+						<th className='stamina-tracker-header'>Трекер витривалості</th>
+						<th className='stats'>Показники</th>
+						<th className='notes'>Нотатки/тимчасові ефекти</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -54,7 +54,7 @@ export const EncounterRosterCard = (props: Props) => {
 										<div className='group-name'>{group.name}</div>
 										: null}
 									<div className='turn-tracker'>
-										Turn
+										Хід
 										<br />
 										<span className='checkbox'>◇</span>
 									</div>
@@ -69,7 +69,7 @@ export const EncounterRosterCard = (props: Props) => {
 													if (slot.count > 1)
 														extra = slot.count.toString();
 												} else if (minionSlots === 1 && nonMinionSlots === 1) {
-													extra = 'Captain';
+													extra = 'Капітан';
 												}
 												return (
 													<div key={`monsters-${slot.id}-${i}`} className={`encounter-slot ${monster.role.type.toLocaleLowerCase().split(' ').join('-')}`}>
@@ -122,10 +122,10 @@ export const EncounterRosterCard = (props: Props) => {
 											})
 										}
 										<div className='stat-labels'>
-											<span>Stability</span>
-											<span>Speed</span>
-											<span>Free Strike</span>
-											<span>Distance</span>
+											<span>Стійкість</span>
+											<span>Швидкість</span>
+											<span>Вільний удар</span>
+											<span>Дистанція</span>
 										</div>
 									</div>
 								</td>
@@ -140,9 +140,9 @@ export const EncounterRosterCard = (props: Props) => {
 					{
 						encounter.terrain?.length ?
 							<tr className='terrain-header'>
-								<th className='terrain' colSpan={2}>Dynamic Terrain Objects</th>
-								<th className='stamina-tracker-header' colSpan={2}>Stamina Tracker</th>
-								<th className='notes'>Notes/Temporary Effects</th>
+								<th className='terrain' colSpan={2}>Динамічні об'єкти місцевості</th>
+								<th className='stamina-tracker-header' colSpan={2}>Трекер витривалості</th>
+								<th className='notes'>Нотатки/тимчасові ефекти</th>
 							</tr>
 							: null
 

@@ -10,25 +10,25 @@ import { Title } from '@/models/title';
 export class TitleData {
 	static ancientLoremaster: Title = {
 		id: 'title-ancient-loremaster',
-		name: 'Ancient Loremaster',
-		description: '“It’s astonishing what you find in old books. Look at this—nearly complete schematics for a war automaton, gathering dust because nobody here reads Zaliac.”',
+		name: 'Знавець давніх знань',
+		description: '«Вражає, що тільки не знаходиш у старих книжках. Погляньте-но: майже повні креслення бойового автомата, припадають пилом лише тому, що тут ніхто не читає заліаком.»',
 		echelon: 1,
-		prerequisites: 'You find a trove of forgotten books.',
+		prerequisites: 'Ви знаходите схованку забутих книжок.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-ancient-loremaster-1',
 				name: 'Важіль впливу',
-				description: 'Ви дізнаєтеся безцінну таємницю. Director обирає тип особи, яка цінувала б цю таємницю, зазвичай це член певної фракції, наприклад хігарський вельможа, або певний тип людей, наприклад скупник краденого. Під час переговорів із такою особою ви можете запропонувати цю таємницю. Якщо вона погодиться, її зацікавленість зростає на 3 (до максимуму 5). Ви можете поділитися цією таємницею лише раз.'
+				description: 'Ви дізнаєтеся безцінну таємницю. Режисер обирає тип особи, яка цінувала б цю таємницю, зазвичай це член певної фракції, наприклад хігарський вельможа, або певний тип людей, наприклад скупник краденого. Під час переговорів із такою особою ви можете запропонувати цю таємницю. Якщо вона погодиться, її зацікавленість зростає на 3 (до максимуму 5). Ви можете поділитися цією таємницею лише раз.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ancient-loremaster-2',
-				name: 'Rare Books',
-				description: 'You add rare, ancient books to your collection. Whenever you undertake a research project, roll 1d6 for each dead language you know and add the total to the project roll.'
+				name: 'Рідкісні книги',
+				description: 'Ви поповнюєте свою колекцію рідкісними стародавніми книгами. Щоразу, коли ви беретеся за дослідницький проєкт, кидайте 1d6 за кожну мертву мову, яку знаєте, і додавайте суму до кидка проєкту.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ancient-loremaster-3',
-				name: 'Susurrus Codex',
-				description: 'You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book’s advice, you gain an edge on Reason tests and take a bane on Presence tests. You can stop following the book’s advice at any time, but the book won’t speak to you for the rest of the day.'
+				name: 'Кодекс Сусурруса',
+				description: 'Ви знаходите зловісну книгу, що шепоче поради голосом, якого не чує ніхто інший. Доки ви дослухаєтеся до порад книги, ви отримуєте перевагу на випробування Розуму й шкоду на випробування Присутності. Ви можете будь-коли перестати слухатися книгу, але тоді вона не говоритиме з вами до кінця дня.'
 			})
 		],
 		selectedFeatureID: ''
@@ -36,15 +36,15 @@ export class TitleData {
 
 	static angler: Title = {
 		id: 'title-angler',
-		name: 'Angler',
-		description: 'You gain the following benefit.',
+		name: 'Рибалка',
+		description: 'Ви отримуєте таку перевагу.',
 		echelon: 1,
-		prerequisites: '120 project points spent on the Tackle table while undertaking the «Риболовля» project.',
+		prerequisites: '120 очок проєкту, витрачених на таблицю «Снасті» під час проєкту «Риболовля».',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-angler-1',
-				name: 'Angler',
-				description: 'You gain an edge on all project rolls for «Риболовля».'
+				name: 'Рибалка',
+				description: 'Ви отримуєте перевагу на всі кидки проєкту для «Риболовлі».'
 			})
 		],
 		selectedFeatureID: ''
@@ -52,10 +52,10 @@ export class TitleData {
 
 	static battleaxeDiplomat: Title = {
 		id: 'title-battleaxe-diplomat',
-		name: 'Battleaxe Diplomat',
-		description: '“We seem to be equals in might and combat prowess. Perhaps we should bandy words awhile instead.”',
+		name: 'Дипломат із бойовою сокирою',
+		description: '«Здається, ми рівні силою й бойовою вправністю. Може, якийсь час поміряємося словами?»',
 		echelon: 1,
-		prerequisites: 'You gain the friendship or alliance of a creature you once battled.',
+		prerequisites: 'Ви здобуваєте дружбу або союз істоти, з якою колись билися.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-1',
@@ -69,8 +69,8 @@ export class TitleData {
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-battleaxe-diplomat-3',
-				name: 'Warriors’ Understanding',
-				description: 'You gain an edge on Presence tests made to interact with creatures you have fought against in combat encounters.'
+				name: 'Розуміння воїнів',
+				description: 'Ви отримуєте перевагу на випробування Присутності для взаємодії з істотами, з якими билися в бойових зіткненнях.'
 			})
 		],
 		selectedFeatureID: ''
@@ -78,16 +78,16 @@ export class TitleData {
 
 	static brawler: Title = {
 		id: 'title-brawler',
-		name: 'Brawler',
-		description: '“We won’t kill you. But you might wish we had.”',
+		name: 'Забіяка',
+		description: '«Ми вас не вбʼємо. Але ви ще побажаєте, щоб убили.»',
 		echelon: 1,
-		prerequisites: 'You triumph in battle without killing any of your foes.',
+		prerequisites: 'Ви перемагаєте в бою, не вбивши жодного ворога.',
 		features: [
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-brawler-1',
-					name: 'Duck!',
-					type: FactoryLogic.type.createTrigger('An enemy strikes you while a second creature is flanking you'),
+					name: 'Пригнись!',
+					type: FactoryLogic.type.createTrigger('Ворог бʼє вас, поки інша істота флангує вас'),
 					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
 					target: 'Один ворог',
 					sections: [
@@ -97,12 +97,12 @@ export class TitleData {
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-brawler-2',
-				name: 'Furniture Fighter',
-				description: 'When you use a weapon ability with an improvised weapon or a weapon that isn’t part of your kit, the ability benefits from your kit’s melee weapon damage bonus.'
+				name: 'Майстер імпровізованої зброї',
+				description: 'Коли ви використовуєте збройну здібність з імпровізованою зброєю або зброєю, що не входить до вашого набору, ця здібність отримує бонус до шкоди ближньою зброєю від вашого набору.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-brawler-3',
-				name: 'Headbutter',
+				name: 'Удар головою',
 				description: 'Поки ви схоплені або скуті, ваші вільні удари не отримують шкоди там, де ці стани зазвичай її накладають.'
 			}),
 			FactoryLogic.feature.create({
@@ -116,25 +116,25 @@ export class TitleData {
 
 	static cityRat: Title = {
 		id: 'title-city-rat',
-		name: 'City Rat',
-		description: '“Stay out all night, visit the dives. Get in a fight, run from the cops. That’s the real city”',
+		name: 'Міський пацюк',
+		description: '«Не спати всю ніч, нишпорити по забігайлівках. Влізти в бійку, тікати від варти. Оце і є справжнє міське життя.»',
 		echelon: 1,
-		prerequisites: 'You have spent at least 5 respites in a metropolis.',
+		prerequisites: 'Ви провели щонайменше 5 перепочинків у мегаполісі.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-city-rat-1',
-				name: 'Discerning Shopper',
-				description: 'When looking for an item prerequisite for a crafting project, you can remember meeting someone who might have the item—or at least information about it.'
+				name: 'Досвідчений покупець',
+				description: 'Коли ви шукаєте предмет-передумову для ремісничого проєкту, ви можете згадати, що колись зустрічали когось, у кого цей предмет може бути, або принаймні є відомості про нього.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-city-rat-2',
-				name: 'One with the Crowd',
-				description: 'While you’re using one or more creatures as cover, you gain an edge on tests made to hide and sneak.'
+				name: 'Непомітний у натовпі',
+				description: 'Поки ви використовуєте одну чи більше істот як прикриття, ви отримуєте перевагу на випробування, щоб ховатися й крастися.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-city-rat-3',
-				name: 'Street Smart',
-				description: 'While in a settlement, you can’t be surprised.'
+				name: 'Вулична кмітливість',
+				description: 'Поки ви в поселенні, вас не можна заскочити зненацька.'
 			})
 		],
 		selectedFeatureID: ''
@@ -142,15 +142,15 @@ export class TitleData {
 
 	static doomed: Title = {
 		id: 'title-doomed',
-		name: 'Doomed',
-		description: '“I don’t know what it meant, but when I watched her die, I saw a vision. I watched her die and saw my own death. Am I losing my mind?”',
+		name: 'Приречений',
+		description: '«Я не знаю, що це означало, але коли я бачив, як вона помирає, мені було видіння. Я бачив її смерть і власну. Я що, втрачаю розум?»',
 		echelon: 1,
-		prerequisites: 'You are not a Hakaan but have witnessed the death of a Hakaan.',
+		prerequisites: 'Ви не хакаан, але стали свідком смерті хакаана.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-doomed-1',
-				name: 'Doomed',
-				description: 'You aren’t destined for a meaningful death, but you still might achieve one. When you’re reduced to 0 Stamina but remain conscious, you can become doomed. If you do, you can’t regain Stamina, you automatically obtain a tier 3 outcome on tests and power rolls, and you don’t die until your Stamina reaches the negative of your Stamina maximum. At the end of the encounter, you die.'
+				name: 'Приречений',
+				description: 'Вам не судилося загинути значущою смертю, та ви все ще можете її здобути. Коли вашу Витривалість зводять до 0, але ви лишаєтеся притомним, ви можете стати приреченим. Якщо ви робите це, то не можете відновлювати Витривалість, автоматично отримуєте результат 3 рівня на випробуваннях і кидках сили та не помираєте, доки ваша Витривалість не досягне відʼємного значення вашого максимуму Витривалості. Наприкінці зіткнення ви помираєте.'
 			})
 		],
 		selectedFeatureID: ''
@@ -158,26 +158,26 @@ export class TitleData {
 
 	static dwarfLegionnaire: Title = {
 		id: 'title-dwarf-legionnaire',
-		name: 'Dwarf Legionnaire',
-		description: '“I have learned much. It might be your courage that inspires others. Watch your opponent’s shield as well as their sword. And above all, stand fast, and do not yield.”',
+		name: 'Гном-легіонер',
+		description: '«Я багато чого навчився. Можливо, саме твоя відвага надихає інших. Стеж не лише за мечем суперника, а й за його щитом. І понад усе стій твердо й не відступай.»',
 		echelon: 1,
-		prerequisites: 'You fight alongside three or more dwarves.',
+		prerequisites: 'Ви бʼєтеся пліч-о-пліч із трьома або більше гномами.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-dwarf-legionnaire-1',
-				name: 'Close Formation',
-				description: 'While adjacent to two or more allies, you gain a +2 bonus to stability.'
+				name: 'Щільний стрій',
+				description: 'Поки ви суміжні з двома або більше союзниками, ви отримуєте +2 до стійкості.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-dwarf-legionnaire-2',
-				name: 'Rune of Alarm',
-				description: 'You can spend 10 uninterrupted minutes to inscribe a magic eye-shaped rune on a surface. The rune sheds light for 2 squares. The rune is dispelled 1 minute after it is activated or if you inscribe the rune elsewhere. The rune activates when an enemy comes within 2 squares of it. When the rune is activated, you wake up if you are nonmagically asleep, and you can perceive through the rune for 1 minute as if you were in its square.'
+				name: 'Руна тривоги',
+				description: 'Ви можете витратити 10 безперервних хвилин, щоб вирізьбити на поверхні магічну руну у формі ока. Руна світить на 2 клітинки. Вона розвіюється через 1 хвилину після активації або якщо ви викарбовуєте її в іншому місці. Руна активується, коли ворог наближається до неї на 2 клітинки. Коли руна активується, ви прокидаєтеся, якщо спите не магічним сном, і протягом 1 хвилини можете сприймати світ крізь руну так, ніби перебуваєте в її клітинці.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-dwarf-legionnaire-3',
-					name: 'Stonemeld',
-					type: FactoryLogic.type.createManeuver({ qualifiers: ['Adjacent to a stone wall'] }),
+					name: 'Злиття з каменем',
+					type: FactoryLogic.type.createManeuver({ qualifiers: ['Поруч із камʼяною стіною'] }),
 					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Себе',
 					sections: [
@@ -191,25 +191,25 @@ export class TitleData {
 
 	static elementalDabbler: Title = {
 		id: 'title-elemental-dabbler',
-		name: 'Elemental Dabbler',
-		description: '“Spirit of fire, I command you!”',
+		name: 'Любитель стихій',
+		description: '«Духу вогню, наказую тобі!»',
 		echelon: 1,
-		prerequisites: 'You defeat a monster with the Elemental keyword, such as an crux of fire.',
+		prerequisites: 'Ви перемагаєте чудовисько з ключовим словом Elemental, наприклад вогняний кракс.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-elemental-dabbler-1',
-				name: 'Elemental Blaster',
-				description: 'Choose a damage type to which the defeated monster had an immunity. You have the Elementalist 1st-level Hurl Element feature, dealing the chosen damage type.'
+				name: 'Стихійний метальник',
+				description: 'Оберіть тип шкоди, до якого переможене чудовисько мало імунітет. Ви отримуєте 1-рівневу особливість Елементаліста Hurl Element, що завдає обраний тип шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-elemental-dabbler-2',
-				name: 'Elemental Immunity',
-				description: 'Choose a damage type to which the defeated monster had an immunity. You have immunity to the chosen damage type equal to your highest characteristic score.'
+				name: 'Стихійний імунітет',
+				description: 'Оберіть тип шкоди, до якого переможене чудовисько мало імунітет. Ви отримуєте імунітет до обраного типу шкоди, що дорівнює значенню вашої найвищої характеристики.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-elemental-dabbler-3',
-				name: 'Elemental Weapons',
-				description: 'Choose a damage type to which the defeated monster had an immunity. Whenever you use a damage-dealing weapon ability, that ability can deal damage of the chosen type instead of its usual damage type.'
+				name: 'Стихійна зброя',
+				description: 'Оберіть тип шкоди, до якого переможене чудовисько мало імунітет. Щоразу, коли ви використовуєте збройну здібність, що завдає шкоди, ця здібність може завдавати шкоди обраного типу замість свого звичайного типу.'
 			})
 		],
 		selectedFeatureID: ''
@@ -217,10 +217,10 @@ export class TitleData {
 
 	static factionMember: Title = {
 		id: 'title-faction-member',
-		name: 'Faction Member',
-		description: '“In six months, I’ll be running this place.”',
+		name: 'Член фракції',
+		description: '«Ще пів року, і я тут усім керуватиму.»',
 		echelon: 1,
-		prerequisites: 'You join an army, guild, or similar organization.',
+		prerequisites: 'Ви вступаєте до армії, гільдії чи подібної організації.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-faction-member-1',
@@ -260,15 +260,15 @@ export class TitleData {
 
 	static goldenrod: Title = {
 		id: 'title-goldenrod',
-		name: 'Goldenrod',
-		description: 'You gain the following benefit.',
+		name: 'Ґолденрод',
+		description: 'Ви отримуєте таку перевагу.',
 		echelon: 1,
-		prerequisites: '300 project points spent on the Tackle table while undertaking the «Риболовля» project.',
+		prerequisites: '300 очок проєкту, витрачених на таблицю «Снасті» під час проєкту «Риболовля».',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-goldenrod-1',
-				name: 'Goldenrod',
-				description: 'Each time you undertake the «Риболовля» project, you can reroll one project roll.'
+				name: 'Ґолденрод',
+				description: 'Щоразу, коли ви беретеся за проєкт «Риболовля», ви можете перекинути один кидок проєкту.'
 			})
 		],
 		selectedFeatureID: ''
@@ -276,24 +276,24 @@ export class TitleData {
 
 	static localHero: Title = {
 		id: 'title-local-hero',
-		name: 'Local Hero',
-		description: '“Your coin won’t spend here. The Heroes of Gravesford drink for free in this tavern!”',
+		name: 'Місцевий герой',
+		description: '«Ваші гроші тут не потрібні. Герої Ґрейвсфорда пʼють у цій таверні задарма!»',
 		echelon: 1,
-		prerequisites: 'You save a community from certain destruction.',
+		prerequisites: 'Ви рятуєте громаду від неминучого знищення.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-local-hero-1',
-				name: 'A New Dawn',
-				description: 'Each time you finish a respite while in a community you have saved, the party gains a hero token. This hero token disappears at the end of your next respite if it hasn’t been used.'
+				name: 'Нова зоря',
+				description: 'Щоразу, коли ви завершуєте перепочинок у громаді, яку врятували, загін отримує жетон героя. Цей жетон героя зникає наприкінці вашого наступного перепочинку, якщо його не використали.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-local-hero-2',
-				name: 'Easy Marks',
-				description: 'You gain an edge on tests made using skills from the interpersonal and intrigue skill groups when influencing members of a community that you have saved.'
+				name: 'Податливі люди',
+				description: 'Ви отримуєте перевагу на випробування, виконані навичками з груп міжособистісних навичок та інтриг, коли впливаєте на членів громади, яку врятували.'
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-local-hero-3',
-				name: 'Local Fame',
+				name: 'Місцева слава',
 				field: FeatureField.Renown,
 				value: 1
 			})
@@ -303,21 +303,21 @@ export class TitleData {
 
 	static mageHunter: Title = {
 		id: 'title-mage-hunter',
-		name: 'Mage Hunter',
-		description: '“Their power is dangerous. Unnatural. Someone needs to do something.”',
+		name: 'Мисливець на магів',
+		description: '«Їхня сила небезпечна. Неприродна. Хтось мусить щось із цим зробити.»',
 		echelon: 1,
-		prerequisites: 'You defeat three leader or solo creatures who each have at least one ability with the Magic keyword.',
+		prerequisites: 'Ви перемагаєте трьох ватажків або одинаків, кожен із яких має принаймні одну здібність із ключовим словом Magic.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-mage-hunter-1',
-				name: 'Arcane Dampening',
-				description: 'When resisting potencies from magic abilities, your characteristic scores are considered to be 1 higher than usual.'
+				name: 'Арканне приглушення',
+				description: 'Коли ви опираєтесь ефективності магічних здібностей, ваші показники характеристик вважаються на 1 вищими, ніж зазвичай.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-mage-hunter-2',
-					name: 'Oh No You Don’t!',
-					type: FactoryLogic.type.createTrigger('Target uses an ability with the Magic keyword'),
+					name: 'Не вийде!',
+					type: FactoryLogic.type.createTrigger('Ціль використовує здібність із ключовим словом Magic'),
 					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
 					target: 'Одна істота',
 					sections: [
@@ -327,14 +327,14 @@ export class TitleData {
 			}),
 			FactoryLogic.feature.createMultiple({
 				id: 'title-mage-hunter-3',
-				name: 'Stink of Magic',
-				description: 'As a маневр, you open your senses to the residue of magic. Until the end of your next turn, you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can’t be surprised by constructs, undead, or creatures from another world.',
+				name: 'Запах магії',
+				description: 'Як маневр ви відкриваєте свої чуття до магічного сліду. До кінця вашого наступного ходу ви знаєте, чи є кожна істота в межах 5 клітин конструкцією, нежиттю або істотою з іншого світу, а також чи використовувала вона магічну здібність упродовж попередньої години. Додатково вас не можна заскочити зненацька конструкціями, нежиттю чи істотами з інших світів.',
 				features: [
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'title-mage-hunter-3-1',
-							name: 'Stink of Magic',
-							description: 'You open your senses to the residue of magic',
+							name: 'Запах магії',
+							description: 'Ви відкриваєте свої чуття до магічного сліду',
 							type: FactoryLogic.type.createManeuver(),
 							distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
 							target: 'Кожна істота в зоні',
@@ -345,8 +345,8 @@ export class TitleData {
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-mage-hunter-3-2',
-						name: 'Stink of Magic',
-						description: 'You can’t be surprised by constructs, undead, or creatures from another world.'
+						name: 'Запах магії',
+						description: 'Вас не можна заскочити зненацька конструкціями, нежиттю чи істотами з інших світів.'
 					})
 				]
 			})
@@ -356,21 +356,21 @@ export class TitleData {
 
 	static marshal: Title = {
 		id: 'title-marshal',
-		name: 'Marshal',
-		description: '“I said you had twenty-four hours to leave town. That was… what, about 24 hours ago?”',
+		name: 'Маршал',
+		description: '«Я сказав, що у вас є двадцять чотири години, аби забратися з міста. Це було… що, десь двадцять чотири години тому?»',
 		echelon: 1,
-		prerequisites: 'You join an organization that hunts criminals, such as the Far Mariners, or you are deputized to act for the local authorities.',
+		prerequisites: 'Ви вступаєте до організації, що полює на злочинців, наприклад до Дальніх Мореплавців, або вас уповноважує діяти місцева влада.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-marshal-1',
-				name: 'Guess It’s the Hard Way',
-				description: 'When combat begins and you aren’t surprised, the first time you take damage before taking your turn, you halve that damage.'
+				name: 'Значить, буде по-поганому',
+				description: 'Коли починається бій і вас не заскочили зненацька, перший раз, коли ви отримуєте шкоду до свого ходу, ви зменшуєте її вдвічі.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-marshal-2',
-					name: 'Heedless Pursuer',
-					description: 'You open your senses to the residue of magic',
+					name: 'Безоглядний переслідувач',
+					description: 'Біль не зупинить ваше переслідування.',
 					type: FactoryLogic.type.createManeuver({ free: true }),
 					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Себе',
@@ -381,13 +381,13 @@ export class TitleData {
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-marshal-3',
-				name: 'Silver Shield',
-				description: 'You have a badge granted to you by your organization. While you wear it, you gain the My Life for Yours feature from the censor class. When you use that ability, you can’t spend wrath unless you have the Wrath class feature.'
+				name: 'Срібний щит',
+				description: 'Ви маєте знак, наданий вашою організацією. Поки ви його носите, ви отримуєте особливість Цензора «Моє життя за твоє». Коли ви використовуєте цю здібність, ви не можете витрачати Гнів, якщо не маєте класової особливості Гнів.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-marshal-4',
-				name: 'Trained Tracker',
-				description: 'You gain an edge on tests made to track criminals.'
+				name: 'Навчений слідопит',
+				description: 'Ви отримуєте перевагу на випробування, щоб вистежувати злочинців.'
 			})
 		],
 		selectedFeatureID: ''
@@ -395,15 +395,15 @@ export class TitleData {
 
 	static masterOfReels: Title = {
 		id: 'title-master-of-reels',
-		name: 'Master of Reels',
-		description: 'You gain the following benefit.',
+		name: 'Майстер котушок',
+		description: 'Ви отримуєте таку перевагу.',
 		echelon: 1,
-		prerequisites: 'You gain this title by undertaking the «Риболовля» project.',
+		prerequisites: 'Ви здобуваєте цей титул, виконуючи проєкт «Риболовля».',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-master-of-reels-1',
-				name: 'Master of Reels',
-				description: 'Whenever you deal damage to a target who is 2 or more squares away from you and that target isn’t also force moved, you can pull the target a number of squares equal to your Agility, Reason, or Intuition score (your choice).'
+				name: 'Майстер котушок',
+				description: 'Щоразу, коли ви завдаєте шкоди цілі, яка перебуває за 2 або більше клітинки від вас і не була також примусово переміщена, ви можете притягнути ціль на кількість клітинок, що дорівнює вашому показнику Ловкості, Розуму або Інтуїції (на ваш вибір).'
 			})
 		],
 		selectedFeatureID: ''
@@ -411,25 +411,25 @@ export class TitleData {
 
 	static monsterBane: Title = {
 		id: 'title-monster-bane',
-		name: 'Monster Bane',
-		description: '“You dare mock Blunwin Mousebane? You think my deed trivial? Ah but you didn’t see the size of the mouse!”',
+		name: 'Погибель чудовиськ',
+		description: '«Ти насміхаєшся з Бланвіна Мишогуба? Гадаєш, мій подвиг дрібʼязковий? Але ж ти не бачив, якого розміру була та миша!»',
 		echelon: 1,
-		prerequisites: 'You defeat a leader or solo monster with a Reason score of –2 or lower, such as an arixx.',
+		prerequisites: 'Ви перемагаєте чудовисько-ватажка або одинака з показником Розуму –2 або нижче, наприклад арікса.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-monster-bane-1',
-				name: 'Beast Bane',
-				description: 'Creatures with the Animal keyword take a bane on strikes made against you.'
+				name: 'Погибель звірів',
+				description: 'Істоти з ключовим словом Animal отримують шкоду на удари проти вас.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-monster-bane-2',
-				name: 'Monster Soother',
-				description: 'You gain an edge on tests made to calm or tame nonsapient creatures.'
+				name: 'Утихомирювач чудовиськ',
+				description: 'Ви отримуєте перевагу на випробування, щоб заспокоювати або приручати нерозумних істот.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-monster-bane-3',
-				name: 'Monster Trophy',
-				description: 'You decorate your equipment with a trophy from a creature you defeated. While the trophy is visible, you gain an edge on tests made to intimidate sapient creatures.'
+				name: 'Трофей чудовиська',
+				description: 'Ви прикрашаєте спорядження трофеєм із переможеної істоти. Поки трофей видно, ви отримуєте перевагу на випробування, щоб залякувати розумних істот.'
 			})
 		],
 		selectedFeatureID: ''
@@ -437,18 +437,18 @@ export class TitleData {
 
 	static owedAFavor: Title = {
 		id: 'title-owed-a-favor',
-		name: 'Owed a Favor',
-		description: '“The Guild’s gratitude knows no bounds! We’ll repay you in any way we can … short of actually paying you.”',
+		name: 'Вам винні послугу',
+		description: '«Вдячність Гільдії не має меж! Ми відплатимо вам як тільки зможемо… тільки не справжніми грішми.»',
 		echelon: 1,
-		prerequisites: 'You successfully perform a service for a powerful faction.',
+		prerequisites: 'Ви успішно виконуєте послугу для могутньої фракції.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-owed-a-favor-1',
-				name: 'Owed a Favor',
+				name: 'Вам винні послугу',
 				description: `
-The faction will perform one favor for the party, provided it doesn’t interfere with the faction’s goals.
+Фракція виконає для загону одну послугу, якщо це не суперечитиме її цілям.
 
-Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Кримінальний світ skill for an outlaw gang, the Ковальство skill for a blacksmith’s guild, or the Суспільство skill for a noble house. While in a settlement where the faction has a presence, you gain this skill if you don’t already have it. If you already have the skill, you instead gain an edge on tests made using the skill.`
+Крім того, фракція є добрим джерелом інформації. Режисер обирає навичку з ремісничої групи навичок або групи знань, що пасує цій фракції, наприклад навичку Кримінальний світ для банди злочинців, навичку Ковальство для гільдії ковалів або навичку Суспільство для шляхетного дому. Поки ви перебуваєте в поселенні, де фракція має вплив, ви отримуєте цю навичку, якщо ще не маєте її. Якщо ж ви вже маєте цю навичку, то натомість отримуєте перевагу на випробування з її використанням.`
 			})
 		],
 		selectedFeatureID: ''
@@ -456,18 +456,18 @@ Additionally, the faction is a good source of information. The Director chooses 
 
 	static presumedDead: Title = {
 		id: 'title-presumed-dead',
-		name: 'Presumed Dead',
-		description: '“But… you’re dead. We went to your funeral.”',
+		name: 'Вважається загиблим',
+		description: '«Але… ти ж мертвий. Ми були на твоєму похороні.»',
 		echelon: 1,
-		prerequisites: 'You die in a way that prevents your body from being recovered or examined (for instance, by falling off a cliff).',
+		prerequisites: 'Ви гинете так, що ваше тіло не можна повернути або оглянути (наприклад, падаєте зі скелі).',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-presumed-dead-1',
-				name: 'Presumed Dead',
+				name: 'Вважається загиблим',
 				description: `
-While it might appear that you died, you did not. Instead, you regain 1 Stamina and can spend 1 or more Recoveries. Additionally, you gain a 1st-echelon trinket of the Director’s choice (see Treasures earlier in this chapter).
+Хоч може здаватися, що ви загинули, насправді це не так. Натомість ви відновлюєте 1 Витривалість і можете витратити 1 або більше Відновлень. Додатково ви отримуєте дрібничку 1-го ешелону на вибір Режисера (див. розділ «Скарби» раніше в цій главі).
 
-At a dramatic moment determined by the Director, you rejoin your party with an explanation for your narrow escape, and how you found your new trinket along the way.`
+У драматичний момент, визначений Режисером, ви повертаєтеся до загону з поясненням, як дивом урятувалися і як дорогою знайшли свою нову дрібничку.`
 			})
 		],
 		selectedFeatureID: ''
@@ -475,30 +475,30 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static ratcatcher: Title = {
 		id: 'title-ratcatcher',
-		name: 'Ratcatcher',
-		description: '“I like fighting these little guys. Means I don’t have to waste money on a helmet.”',
+		name: 'Щуролов',
+		description: '«Люблю битися з цими дрібними пройдисвітами. Принаймні не доводиться витрачатися на шолом.»',
 		echelon: 1,
-		prerequisites: 'You defeat a leader or solo monster that is size 1S or smaller, such as a goblin monarch.',
+		prerequisites: 'Ви перемагаєте чудовисько-ватажка або одинака розміру 1S чи менше, наприклад гобліна-монарха.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-ratcatcher-1',
-				name: 'Deadly and Big',
-				description: 'Your strikes gain a +3 damage bonus against creatures whose size is smaller than yours.'
+				name: 'Смертоносний велет',
+				description: 'Ваші удари отримують +3 до шкоди проти істот, чий розмір менший за ваш.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ratcatcher-2',
-				name: 'Everybody Move!',
-				description: 'When you use the Knockback маневр, you can target one additional creature of your size or two additional smaller creatures.'
+				name: 'Усі посунулися!',
+				description: 'Коли ви використовуєте маневр Knockback, ви можете націлити ще одну істоту вашого розміру або двох додаткових менших істот.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-ratcatcher-3',
-					name: 'Come Out to Play',
-					description: 'Come out to play-yay!',
+					name: 'Виходьте гратися',
+					description: 'Виходьте-но гратися!',
 					type: FactoryLogic.type.createManeuver(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
-					target: 'Each enemy in the area hidden to you',
+					target: 'Кожен прихований від вас ворог у зоні',
 					cost: 1,
 					sections: [
 						FactoryLogic.createAbilitySectionText('Кожна ціль, у якої П < [середній], висміюється вами до кінця її наступного ходу, і ви знаєте місцезнаходження кожної істоти, висміяної таким чином.')
@@ -511,30 +511,30 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static savedForAWorseFate: Title = {
 		id: 'title-saved-for-a-worse-fate',
-		name: 'Saved for a Worse Fate',
-		description: '“Drink this. You’ll need all your strength for what lies ahead!”',
+		name: 'Збережені для гіршої долі',
+		description: '«Випий це. Попереду тобі знадобляться всі сили!»',
 		echelon: 1,
-		prerequisites: 'The entire party is killed or captured by intelligent foes.',
+		prerequisites: 'Увесь загін убивають або захоплюють у полон розумні вороги.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-saved-for-a-worse-fate-1',
-				name: 'Gladiators',
-				description: 'You must fight to the death for your captors’ amusement. Your intended opponents wield or guard a trinket or leveled treasure, which you can earn if you are victorious.'
+				name: 'Гладіатори',
+				description: 'Ви мусите битися на смерть на втіху своїм поневолювачам. Призначені вам супротивники володіють дрібничкою або рівневим скарбом чи охороняють його, і ви можете здобути цю нагороду, якщо переможете.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-saved-for-a-worse-fate-2',
-				name: 'Prey',
-				description: 'Your captors plan to release you and hunt you down, but it’s no fun unless you offer a challenge. Each of you is given a medicinal draught that grants a +1 bonus to speed and increases your Recoveries by 2. This benefit lasts until the end of your next respite.'
+				name: 'Здобич',
+				description: 'Ваші поневолювачі планують випустити вас і влаштувати полювання, але жодної втіхи немає без гідного виклику. Кожен із вас отримує лікувальний напій, що дає +1 до швидкості та збільшує ваші Відновлення на 2. Ця перевага триває до кінця вашого наступного перепочинку.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-saved-for-a-worse-fate-3',
-				name: 'Sacrifices',
-				description: 'You are to be dropped in a volcano, fed to a sacred monster, abandoned in a desert, or otherwise sacrificed to a higher power. You are bedecked with holy jewelry. Each hero earns 1 Wealth.'
+				name: 'Жертви',
+				description: 'Вас мають скинути у вулкан, згодувати священному чудовиську, покинути в пустелі або принести в жертву вищій силі якимось іншим способом. Вас прикрашають священними коштовностями. Кожен герой отримує 1 Багатство.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-saved-for-a-worse-fate-4',
-				name: 'Saviors',
-				description: 'Your captors fear an even stronger foe, and they want you to defeat this enemy for them. You can even keep any treasure you find while doing so.'
+				name: 'Рятівники',
+				description: 'Ваші поневолювачі бояться ще сильнішого ворога і хочуть, щоб ви перемогли його замість них. Вам навіть дозволяють залишити собі будь-який скарб, який знайдете під час цього.'
 			})
 		],
 		selectedFeatureID: ''
@@ -542,20 +542,20 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static shipCaptain: Title = {
 		id: 'title-ship-captain',
-		name: 'Ship Captain',
-		description: '“Up anchor, shipmates! ’Tisn’t gold but glory we seek!”',
+		name: 'Капітан корабля',
+		description: '«Якір угору, браття! Шукаємо ми не золота, а слави!»',
 		echelon: 1,
-		prerequisites: 'You acquire a ship, airship, or similar vessel.',
+		prerequisites: 'Ви здобуваєте корабель, повітряний корабель або подібне судно.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-1',
-				name: 'Deep Sea Diver',
-				description: 'You can automatically swim at full speed while moving.'
+				name: 'Глибоководець',
+				description: 'Рухаючись, ви можете автоматично плисти на повній швидкості.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-2',
-				name: 'Ship Speaker',
-				description: 'You magically know the location of any ship controlled by your party even while you aren’t aboard. You can telepathically communicate with anyone on board one of your ships who understands a language, and they can respond, no matter your distance from the ship.'
+				name: 'Голос корабля',
+				description: 'Ви магічно знаєте місцезнаходження будь-якого корабля, який контролює ваш загін, навіть коли не перебуваєте на борту. Ви можете телепатично спілкуватися з будь-ким на борту одного з ваших кораблів, хто розуміє мову, і він може відповісти незалежно від того, як далеко ви від корабля.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-3',
@@ -564,8 +564,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-ship-captain-4',
-				name: 'Trained Crewmember',
-				description: 'You gain an edge on tests made to handle air or sea vessels.'
+				name: 'Навчений член екіпажу',
+				description: 'Ви отримуєте перевагу на випробування, щоб керувати морськими або повітряними суднами.'
 			})
 		],
 		selectedFeatureID: ''
@@ -573,16 +573,16 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static troupeTactics: Title = {
 		id: 'title-troupe-tactics',
-		name: 'Troupe Tactics',
-		description: '“We’re actors! We’re the opposite of people!”',
+		name: 'Тактика трупи',
+		description: '«Ми актори! Ми повна протилежність звичайним людям!»',
 		echelon: 1,
-		prerequisites: 'The party has successfully performed as a troupe of actors, circus performers, or other entertainers.',
+		prerequisites: 'Загін успішно виступив як трупа акторів, циркачів чи інших розважальників.',
 		features: [
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-troupe-tactics-1',
-					name: 'Flying Circus',
-					type: FactoryLogic.type.createTrigger('During target\'s turn'),
+					name: 'Летючий цирк',
+					type: FactoryLogic.type.createTrigger('Під час ходу цілі'),
 					distance: [FactoryLogic.distance.createSpecial('Adjacent')],
 					target: 'Один союзник',
 					sections: [
@@ -592,18 +592,18 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-troupe-tactics-2',
-				name: 'Spotlight',
-				description: 'You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can’t sneak or hide, they take a bane on tests made to perform any action secretly, and they gain an edge on tests made using the Лідерство, Музика, or Виступ skills.'
+				name: 'Прожектор',
+				description: 'Ви магічно змушуєте істоту в межах 10 клітинок випромінювати світло на 5 клітинок. Це світло триває 1 хвилину, доки істота не відійде від вас більш ніж на 10 клітинок або доки ви не припините ефект (дія не потрібна). Поки істота освітлена, вона не може крастися чи ховатися, отримує шкоду на випробування для будь-яких таємних дій і здобуває перевагу на випробування з навичками Лідерство, Музика або Виступ.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-troupe-tactics-3',
-				name: 'Supporting Player',
-				description: 'You gain an edge on group tests using Presence and on tests made to assist another creature with a Presence test.'
+				name: 'Актор другого плану',
+				description: 'Ви отримуєте перевагу на групові випробування з використанням Присутності та на випробування, щоб допомагати іншій істоті у випробуванні Присутності.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-troupe-tactics-4',
-				name: 'Work the Crowd',
-				description: 'While any of your allies is playing music or performing, you gain an edge on tests made to conceal objects, hide, pick pockets, or sneak.'
+				name: 'Розігрій натовп',
+				description: 'Поки будь-хто з ваших союзників грає музику або виступає, ви отримуєте перевагу на випробування, щоб приховувати предмети, ховатися, зрізати гаманець або крастися.'
 			})
 		],
 		selectedFeatureID: ''
@@ -611,10 +611,10 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static wantedDeadOrAlive: Title = {
 		id: 'title-wanted-dead-or-alive',
-		name: 'Wanted Dead or Alive',
-		description: '“A hundred silver?! An insult! I turned my father in for fifty golden crowns. And he was innocent!”',
+		name: 'Розшукується: живим або мертвим',
+		description: '«Сто срібняків?! Це образа! Я свого батька здав за пʼятдесят золотих крон. І він був невинний!»',
 		echelon: 1,
-		prerequisites: 'You are declared an outlaw by a governmental authority.',
+		prerequisites: 'Державна влада оголошує вас поза законом.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-1',
@@ -623,13 +623,13 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-2',
-				name: 'Minion Mover',
-				description: 'When you make a melee strike that targets a minion and at least one more minion is within distance of the strike, the strike gains a +3 damage bonus.'
+				name: 'Гроза міньйонів',
+				description: 'Коли ви робите ближній удар, що націлює міньйона, і щонайменше ще один міньйон перебуває в межах дистанції цього удару, удар отримує +3 до шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-wanted-dead-or-alive-3',
-				name: 'No, You’re Under Arrest!',
-				description: 'You gain an edge on the Escape Grab маневр. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same маневр, you can transfer the bonds or manacles to an adjacent creature of the same size without them immediately noticing.'
+				name: 'Ні, ви заарештовані!',
+				description: 'Ви отримуєте перевагу на маневр Escape Grab. Додатково, коли ви успішно проходите випробування, щоб вирватися з пут або кайданів, як частину того ж маневру можете перекинути пута чи кайдани на суміжну істоту того самого розміру так, щоб вона не одразу це помітила.'
 			})
 		],
 		selectedFeatureID: ''
@@ -637,25 +637,25 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static zombieSlayer: Title = {
 		id: 'title-zombie-slayer',
-		name: 'Zombie Slayer',
-		description: '“Why won’t you die! You’ve already done it once, you should be good at it by now!”',
+		name: 'Винищувач зомбі',
+		description: '«Та чому ж ти не здохнеш! Ти вже робив це раз, мав би вже вправно вмирати!»',
 		echelon: 1,
-		prerequisites: 'You defeat a leader or solo monster with the Undead keyword, such as a ghost.',
+		prerequisites: 'Ви перемагаєте чудовисько-ватажка або одинака з ключовим словом Undead, наприклад привида.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-zombie-slayer-1',
-				name: 'Blessed Weapons',
-				description: 'Whenever you use a damage-dealing weapon ability, that ability can deal holy damage instead of its usual damage type.'
+				name: 'Благословенна зброя',
+				description: 'Щоразу, коли ви використовуєте збройну здібність, що завдає шкоди, ця здібність може завдавати святої шкоди замість свого звичайного типу шкоди.'
 			}),
 			FactoryLogic.feature.createMultiple({
 				id: 'title-zombie-slayer-2',
-				name: 'Divine Health',
-				description: 'You gain corruption immunity equal to your highest characteristic score. Additionally, you can’t be turned into an undead creature.',
+				name: 'Божественне здоровʼя',
+				description: 'Ви отримуєте імунітет до скверни, що дорівнює значенню вашої найвищої характеристики. Додатково вас не можна перетворити на нежить.',
 				features: [
 					FactoryLogic.feature.create({
 						id: 'title-zombie-slayer-2-1',
-						name: 'Divine Health',
-						description: 'You can’t be turned into an undead creature.'
+						name: 'Божественне здоровʼя',
+						description: 'Вас не можна перетворити на нежить.'
 					}),
 					FactoryLogic.feature.createDamageModifier({
 						id: 'title-zombie-slayer-2-2',
@@ -672,12 +672,12 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-zombie-slayer-3',
-					name: 'Holy Terror',
-					description: 'Return to your grave!',
+					name: 'Священний жах',
+					description: 'Повертайся до могили!',
 					type: FactoryLogic.type.createManeuver(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-					target: 'Each undead enemy in the area',
+					target: 'Кожен ворожий нежить у зоні',
 					cost: 3,
 					sections: [
 						FactoryLogic.createAbilitySectionText('Кожна ціль отримує святу шкоду, рівну вашому показнику Розуму, Інтуїції або Присутності (на ваш вибір). Додатково, кожна ціль з П < [сильний] залякано (рят. кидок закінчує).')
@@ -690,32 +690,32 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static arenaFighter: Title = {
 		id: 'title-arena-fighter',
-		name: 'Arena Fighter',
-		description: '“You’ve never seen the showstopper? The move so brutal it was banned in the arena? Come closer and I’ll show it to you.”',
+		name: 'Боєць арени',
+		description: '“Ніколи не бачили нищівного фіналу? Прийому, настільки жорстокого, що його заборонили на арені? Підійдіть ближче — і я покажу.”',
 		echelon: 2,
-		prerequisites: 'You are victorious in battle in an arena or some other public contest of combat.',
+		prerequisites: 'Ви перемагаєте в бою на арені або в іншому публічному бойовому змаганні.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-arena-fighter-1',
-				name: 'Dirty Fighting',
-				description: 'Поки ви стоїте, ваші ближні удари отримують +3 до шкоди проти розпластаних істот. Крім того, стан «Розпластаний» не накладає шкоди на ваші удари.'
+				name: 'Брудний бій',
+				description: 'Поки ви стоїте, ваші ближні удари отримують +3 до шкоди проти розпластаних істот. Крім того, стан «Розпластаний» не накладає ваду на ваші удари.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-arena-fighter-2',
-				name: 'Foes as Weapons',
-				description: 'Щоразу, коли ви схопили істоту вашого розміру або меншої, ви можете використати її як зброю, коли робите вільний удар ближньою зброєю. І ціль, і схоплений ворог отримують шкоду від удару.'
+				name: 'Вороги як зброя',
+				description: 'Щоразу, коли ви тримаєте схопленою істоту вашого розміру або меншого, ви можете використати її як зброю, коли робите вільний удар ближньою зброєю. І ціль, і схоплений ворог отримують шкоду від цього удару.'
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-arena-fighter-3',
-				name: 'Instant Celebrity',
+				name: 'Миттєва знаменитість',
 				field: FeatureField.Renown,
 				value: 1
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-arena-fighter-4',
-					name: 'Showstopper',
-					description: 'Show\'s over, kids!',
+					name: 'Нищівний фінал',
+					description: 'Виставу закінчено, дітки!',
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 					distance: [FactoryLogic.distance.createMelee()],
@@ -730,7 +730,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 								tier3: '14 шкоди; І < [сильний], приголомшений (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('Якщо ви вбиваєте не-мініонного супротивника, використовуючи цю здібність, кожен ворог у радіусі 3 клітинок від вас лякається (рят. кидок закінчує).')
+						FactoryLogic.createAbilitySectionText('Якщо ви вбиваєте цією здібністю не-мініонного супротивника, кожен ворог у радіусі 3 клітинок від вас лякається (рят. кидок завершує).')
 					]
 				})
 			})
@@ -740,30 +740,30 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static awakened: Title = {
 		id: 'title-awakened',
-		name: 'Awakened',
-		description: '“I was grappling with them, and when they died … I felt something happen. To me.”',
+		name: 'Пробуджений',
+		description: '“Я борсався з ним, і коли він помер… я відчув, як щось сталося. Зі мною.”',
 		echelon: 2,
-		prerequisites: 'You defeat a leader or solo creature who has at least one ability with the Psionic keyword, such as a voiceless talker evolutionist.',
+		prerequisites: 'Ви перемагаєте ватажка або соло-істоту, яка має принаймні одну здібність із ключовим словом Psionic, наприклад Voiceless Talker Evolutionist.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-awakened-1',
-				name: 'Foresight',
-				description: 'You don’t take a bane when using abilities against creatures with concealment.'
+				name: 'Передбачення',
+				description: 'Ви не отримуєте ваду, коли використовуєте здібності проти істот із маскуванням.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-awakened-2',
-				name: 'Rogue Talent',
-				description: 'Choose one тригерна дія that the talent class has access to at 1st level. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend clarity, you can’t do so unless you have the Clarity class feature.'
+				name: 'Чужий талант',
+				description: 'Оберіть одну тригерну дію, до якої клас Талант має доступ на 1-му рівні. Ви отримуєте цю здібність незалежно від того, чи дозволяють ваш клас і підклас її взяти. Якщо ця здібність дозволяє вам отримувати або витрачати Ясність, ви не можете робити це, якщо не маєте риси класу «Ясність».'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-awakened-3',
-					name: 'Telepathy',
+					name: 'Телепатія',
 					type: FactoryLogic.type.createManeuver(),
 					distance: [FactoryLogic.distance.createRanged(10)],
-					target: 'One creature who understands a langauge you know',
+					target: 'Одна істота, яка розуміє відому вам мову',
 					sections: [
-						FactoryLogic.createAbilitySectionText('Ви телепатично спілкуєтесь із ціллю. Ціль може відповісти телепатично як частина того ж маневру.')
+						FactoryLogic.createAbilitySectionText('Ви телепатично спілкуєтеся з ціллю. Ціль може відповісти телепатично як частина того ж маневру.')
 					]
 				})
 			})
@@ -773,36 +773,36 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static battlefieldCommander: Title = {
 		id: 'title-battlefield-commander',
-		name: 'Battlefield Commander',
-		description: '“Spells and shadows have their place, but it takes soldiers to hold the field.”',
+		name: 'Польовий командир',
+		description: '“Чари й тіні мають своє місце, але втримати поле можуть лише солдати.”',
 		echelon: 2,
-		prerequisites: 'You lead an army in battle and win.',
+		prerequisites: 'Ви ведете армію в бій і перемагаєте.',
 		features: [
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-battlefield-commander-1',
-					name: 'Charge!',
-					description: 'Follow me!',
+					name: 'В атаку!',
+					description: 'За мною!',
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 3 })],
-					target: 'На себе і кожного союзника в зоні впливу',
+					target: 'Себе і кожного союзника в зоні',
 					cost: 9,
 					sections: [
-						FactoryLogic.createAbilitySectionText('Кожна ціль може виконати основну дію «Charge».')
+						FactoryLogic.createAbilitySectionText('Кожна ціль може виконати основну дію «Ривок».')
 					]
 				})
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-battlefield-commander-2',
-				name: 'Renowned Warrior',
+				name: 'Уславлений воїн',
 				field: FeatureField.Renown,
 				value: 1
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-battlefield-commander-3',
-				name: 'Student of War',
-				description: 'Choose a 1st-level doctrine feature from the tactician class. You gain that feature even if you don’t have the Tactical Doctrine feature.'
+				name: 'Учень війни',
+				description: 'Оберіть рису доктрини 1-го рівня класу Тактик. Ви отримуєте цю рису, навіть якщо не маєте риси «Тактична доктрина».'
 			})
 		],
 		selectedFeatureID: ''
@@ -810,24 +810,24 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static bloodMagic: Title = {
 		id: 'title-blood-bagic',
-		name: 'Blood Magic',
-		description: '“Flow, blood, thou fiend’s libation, and catch my foes in conflagration!”',
+		name: 'Кривава магія',
+		description: '“Лийся, крове, лиха жертво, і поглинь моїх ворогів у полумʼї!”',
 		echelon: 2,
-		prerequisites: 'You participate in the «Дослідити знання» project to learn forbidden knowledge.',
+		prerequisites: 'Ви берете участь у проєкті «Дослідити знання», щоб вивчити заборонене знання.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-blood-magic-1',
-				name: 'Blood Mage',
-				description: 'When you use an area ability with the Magic or Psionic keyword, you can take damage equal to your level to increase the ability’s area by 1 until the end of the encounter. If the area is a line, you increase the size of one dimension, not both. This damage can’t be reduced in any way. You can use this benefit only once per use of an ability.'
+				name: 'Кривавий маг',
+				description: 'Коли ви використовуєте зональну здібність із ключовим словом Magic або Psionic, ви можете отримати шкоду, рівну вашому рівню, щоб збільшити зону цієї здібності на 1 до кінця сутички. Якщо зона є лінією, ви збільшуєте лише один її вимір, а не обидва. Цю шкоду не можна зменшити жодним способом. Ви можете скористатися цією перевагою лише раз за кожне використання здібності.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-blood-magic-2',
-				name: 'Bloody Murder',
-				description: 'When you deal rolled damage to a creature with a strike, you can take damage equal to your level to deal twice that much corruption damage to the creature. The damage you take from this title can’t be reduced in any way. You can use this benefit only once per ability. If the creature is reduced to 0 Stamina by this corruption damage, the creature explodes in a shower of blood and you regain the Stamina you lost. You can’t use this benefit on creatures without blood, such as constructs, elementals, or undead.'
+				name: 'Криваве вбивство',
+				description: 'Коли ви завдаєте істоті шкоди від кидка ударом, ви можете отримати шкоду, рівну вашому рівню, щоб завдати цій істоті вдвічі більше шкоди скверною. Шкоду, яку ви отримуєте від цього титулу, не можна зменшити жодним способом. Ви можете скористатися цією перевагою лише раз за здібність. Якщо ця шкода скверною зводить істоту до 0 Витривалості, вона вибухає кривавим фонтаном, а ви відновлюєте втрачену Витривалість. Ви не можете застосувати цю перевагу до істот без крові, наприклад конструкцій, елементалів або нежиті.'
 			}),
 			FactoryLogic.feature.createDamageModifier({
 				id: 'title-blood-magic-3',
-				name: 'I Reject This Evil Power!',
+				name: 'Я відкидаю цю злу силу!',
 				modifiers: [
 					FactoryLogic.damageModifier.createPerLevel({
 						damageType: DamageType.Corruption,
@@ -842,31 +842,31 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static corsair: Title = {
 		id: 'title-corsair',
-		name: 'Corsair',
-		description: '“Haul down your flag or we’ll burn you to the waterline!”',
+		name: 'Корсар',
+		description: '“Спустіть свій прапор, інакше ми спалимо вас до самої ватерлінії!”',
 		echelon: 2,
-		prerequisites: 'You have the Ship Captain title, and you sink or capture a ship of equal or greater size than your own.',
+		prerequisites: 'Ви маєте титул «Капітан корабля» і топите або захоплюєте корабель не меншого розміру, ніж ваш власний.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-corsair-1',
-				name: 'Artillerist',
-				description: 'You gain a +5 damage bonus when using a ship’s weapons.'
+				name: 'Артилерист',
+				description: 'Ви отримуєте +5 до шкоди, коли використовуєте корабельну зброю.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-corsair-2',
-				name: 'Black Flag',
-				description: 'You have a recognizable flag that strikes terror on the high seas. While your flag is flying from your ship, crewmembers of other ships who have line of effect to the flag take a bane on strikes made against your ship or its crew.'
+				name: 'Чорний прапор',
+				description: 'У вас є впізнаваний прапор, який наводить жах у відкритому морі. Поки ваш прапор майорить на вашому кораблі, члени екіпажів інших кораблів, які мають лінію ефекту до прапора, отримують ваду на удари по вашому кораблю або його екіпажу.'
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-corsair-3',
-				name: 'Fearsome Reputation',
+				name: 'Грізна репутація',
 				field: FeatureField.Renown,
 				value: 1
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-corsair-4',
-				name: 'Scoundrel Tactics',
-				description: 'While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have line of effect to you, and you gain an edge when you do so. You can use Маскування to hide your ship’s identity or general type, Залякування to convince another ship’s crew to flee or surrender, or Ховання or Крадіжка to let your ship avoid notice.'
+				name: 'Тактика пройдисвіта',
+				description: 'Перебуваючи на борту корабля, ви можете використовувати наведені нижче навички, щоб робити випробування для впливу на інший корабель на відстані до 5 миль, якщо члени його екіпажу мають лінію ефекту до вас, і ви отримуєте на таке випробування перевагу. Ви можете використати Маскування, щоб приховати особу або загальний тип вашого корабля, Залякування, щоб переконати екіпаж іншого корабля втекти або здатися, або Ховання чи Крадіжку, щоб ваш корабель не помітили.'
 			})
 		],
 		selectedFeatureID: ''
@@ -874,20 +874,20 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static factionOfficer: Title = {
 		id: 'title-faction-officer',
-		name: 'Faction Officer',
-		description: '“If you want or need something, talk to me. I have a certain … influence in these parts.”',
+		name: 'Офіцер фракції',
+		description: '“Якщо вам щось потрібно чи ви чогось хочете, звертайтеся до мене. Я маю певний… вплив у цих краях.”',
 		echelon: 2,
-		prerequisites: 'You have the Faction Member title, and you greatly advance the faction’s goals.',
+		prerequisites: 'Ви маєте титул «Член фракції» і значно просуваєте цілі своєї фракції.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-faction-officer-1',
-				name: 'Requisition',
-				description: 'When you gain this title, you gain a 1st- or 2nd-echelon magic trinket of your choice from your faction. Whenever you gain a level, you can swap the trinket out for another one.'
+				name: 'Постачання',
+				description: 'Коли ви отримуєте цей титул, ви здобуваєте магічну дрібничку 1-го або 2-го ешелону на свій вибір від своєї фракції. Щоразу, коли ви підвищуєте рівень, можете замінити цю дрібничку на іншу.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-faction-officer-2',
-				name: 'You\'re the Boss',
-				description: 'Lower-ranking members of your faction follow your routine orders. In nonroutine matters, you gain an edge on tests made to influence those characters’ behavior.'
+				name: 'Тут командуєте ви',
+				description: 'Члени вашої фракції нижчого рангу виконують ваші звичні накази. У нестандартних ситуаціях ви отримуєте перевагу на випробування, зроблені для впливу на поведінку цих персонажів.'
 			})
 		],
 		selectedFeatureID: ''
@@ -895,56 +895,56 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static feyFriend: Title = {
 		id: 'title-fey-friend',
-		name: 'Fey Friend',
-		description: '“Do you enjoy the vintage? Yes, you can understand my tongue now. One does not drink at my table and leave unchanged.”',
+		name: 'Друг фейрі',
+		description: '“Смакує врожай? Так, тепер ви розумієте мою мову. Не можна випити за моїм столом і піти звідси незмінним.”',
 		echelon: 2,
-		prerequisites: 'You eat and drink with an elf monarch or archfey.',
+		prerequisites: 'Ви їсте й пʼєте з ельфійським монархом або архіфеєю.',
 		features: [
 			FactoryLogic.feature.createMultiple({
 				id: 'title-fey-friend-1',
-				name: 'Gift of Charm',
+				name: 'Дар чарівності',
 				features: [
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-1-1',
-						name: 'Gift of Charm',
+						name: 'Дар чарівності',
 						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-1-2',
-						name: 'Gift of Charm',
-						description: 'You have a skill of your choice from the interpersonal skill group.'
+						name: 'Дар чарівності',
+						description: 'Ви отримуєте навичку на свій вибір із групи міжособистісних навичок.'
 					})
 				]
 			}),
 			FactoryLogic.feature.createMultiple({
 				id: 'title-fey-friend-2',
-				name: 'Gift of Foresight',
+				name: 'Дар передбачення',
 				features: [
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-2-1',
-						name: 'Gift of Foresight',
+						name: 'Дар передбачення',
 						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-2-2',
-						name: 'Gift of Foresight',
-						description: 'When resisting potencies, your Intuition score is considered to be 1 higher than usual.'
+						name: 'Дар передбачення',
+						description: 'Під час опору потужностям ваш показник Інтуїції вважається на 1 вищим, ніж зазвичай.'
 					})
 				]
 			}),
 			FactoryLogic.feature.createMultiple({
 				id: 'title-fey-friend-3',
-				name: 'Gift of Knowledge',
+				name: 'Дар знання',
 				features: [
 					FactoryLogic.feature.createLanguageChoice({
 						id: 'title-fey-friend-3-1',
-						name: 'Gift of Knowledge',
+						name: 'Дар знання',
 						selected: ['Кхелт (Khelt)']
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-fey-friend-3-2',
-						name: 'Gift of Knowledge',
-						description: 'You gain an edge on tests you make that use any skill from the lore skill group.'
+						name: 'Дар знання',
+						description: 'Ви отримуєте перевагу на випробування, які робите, використовуючи будь-яку навичку з групи знань.'
 					})
 				]
 			})
@@ -954,21 +954,21 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static giantSlayer: Title = {
 		id: 'title-giant-slayer',
-		name: 'Giant Slayer',
-		description: '“Come back here, puny one, and let me crush you!”',
+		name: 'Погибель велетнів',
+		description: '“Повернися сюди, нікчемо, і дай мені тебе розчавити!”',
 		echelon: 2,
-		prerequisites: 'You defeat a leader or solo creature with the Giant keyword, such as a fire giant chief.',
+		prerequisites: 'Ви перемагаєте ватажка або соло-істоту з ключовим словом Giant, наприклад вождя вогняних велетнів.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-giant-slayer-1',
-				name: 'Smallfolk Dodge',
-				description: 'Any creature of size 2 or larger takes a bane on strikes against you.'
+				name: 'Ухилення малолюда',
+				description: 'Будь-яка істота розміру 2 або більшого отримує ваду на удари проти вас.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-giant-slayer-2',
-					name: 'The Harder They Fall',
-					description: 'Timber!',
+					name: 'Що більші, то гучніше падають',
+					description: 'Падай!',
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 					distance: [FactoryLogic.distance.createMelee()],
@@ -989,8 +989,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-giant-slayer-3',
-				name: 'Up the Beanstalk',
-				description: 'You have the Лазіння skill. If you already have this skill, you instead gain an edge on tests made using the Лазіння skill. Whileyou’re climbing a creature, the creature has a double bane on strikes against you and you have a double edge on tests made to stay on the creature.'
+				name: 'Вгору по бобовому стеблу',
+				description: 'Ви отримуєте навичку Лазіння. Якщо ви вже маєте цю навичку, натомість отримуєте перевагу на випробування з її використанням. Поки ви деретеся по істоті, ця істота має подвійну ваду на удари проти вас, а ви маєте подвійну перевагу на випробування, щоб утриматися на ній.'
 			})
 		],
 		selectedFeatureID: ''
@@ -998,20 +998,20 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static godsworn: Title = {
 		id: 'title-godsworn',
-		name: 'Godsworn',
-		description: '“He seemed like he needed help! Now the dead speak to me. I think maybe that old man was more than he appeared.”',
+		name: 'Богоприсяжний',
+		description: '“Здавалося, йому потрібна допомога! А тепер до мене говорять мертві. Мабуть, той старий був не тим, ким здавався.”',
 		echelon: 2,
-		prerequisites: 'You do a favor for an agent of a god or saint, or promise to do so.',
+		prerequisites: 'Ви робите послугу слузі бога або святого, або обіцяєте зробити її.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-godsworn-1',
-				name: 'Healing Gift',
-				description: 'You can use the 1st-level Conduit feature Healing Grace as if you had spent 1 piety. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				name: 'Дар зцілення',
+				description: 'Ви можете використати рису Провідника 1-го рівня «Благодать зцілення», ніби витратили 1 Благочестя. Скориставшись цією перевагою, ви не можете використати її знову, доки не здобудете 1 або більше Перемог.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-godsworn-2',
-					name: 'Last-Ditch Prayer',
+					name: 'Остання молитва',
 					type: FactoryLogic.type.createManeuver({ free: true }),
 					distance: [FactoryLogic.distance.createSelf()],
 					target: 'Себе',
@@ -1022,8 +1022,8 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 			}),
 			FactoryLogic.feature.createMultiple({
 				id: 'title-godsworn-3',
-				name: 'Touched by the divine',
-				description: 'Choose a god or saint',
+				name: 'Торкнутий божественним',
+				description: 'Оберіть бога або святого',
 				features: [
 					FactoryLogic.feature.createDomainChoice({
 						id: 'title-godsworn-3a',
@@ -1031,7 +1031,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 					}),
 					FactoryLogic.feature.createDomainFeature({
 						id: 'title-godsworn-3b',
-						name: '1st-Level Domain Feature',
+						name: 'Риса домену 1-го рівня',
 						level: 1
 					})
 				]
@@ -1042,30 +1042,30 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 	static heistHero: Title = {
 		id: 'title-heist-hero',
-		name: 'Heist Hero',
-		description: '“Everybody know their assignments? All right, let’s go.”',
+		name: 'Герой пограбування',
+		description: '“Усі знають свої ролі? Гаразд, рушаймо.”',
 		echelon: 2,
-		prerequisites: 'You have the Troupe Leading Player title, and you have used planning and teamwork to execute a theft that went (reasonably) according to plan.',
+		prerequisites: 'Ви маєте титул «Тактика трупи» і, покладаючись на планування та командну роботу, здійснили крадіжку, яка пройшла (відносно) за планом.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-heist-hero-1',
-				name: 'Mother Hen',
-				description: 'You can spend 10 uninterrupted minutes to psionically enhance up to five willing creatures within 10 squares of you who understand a language you know. For the next hour, you and each target can communicate telepathically with each other no matter the distance between you.'
+				name: 'Квочка',
+				description: 'Ви можете витратити 10 безперервних хвилин, щоб псіонічно посилити до пʼяти охочих істот у межах 10 клітинок від вас, які розуміють відому вам мову. Протягом наступної години ви й кожна ціль можете телепатично спілкуватися одне з одним незалежно від відстані між вами.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-heist-hero-2',
-				name: 'Sneakers',
-				description: 'You gain the Крадіжка skill. If you already have this skill, you instead gain an edge on tests made using the Крадіжка skill. During group tests, you can both use the Крадіжка skill and assist another hero using the Крадіжка skill.'
+				name: 'Тихі кроки',
+				description: 'Ви отримуєте навичку Крадіжка. Якщо ви вже маєте цю навичку, натомість отримуєте перевагу на випробування з її використанням. Під час групових випробувань ви можете і використовувати навичку Крадіжка, і допомагати іншому герою, який також використовує навичку Крадіжка.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-heist-hero-3',
-					name: 'Timely Distraction',
+					name: 'Своєчасне відволікання',
 					description: `
-Coming through with hot soup!
+Гаряча юшка, обережно!
 
-I better watch out for that banana peel!`,
-					type: FactoryLogic.type.createTrigger('An ally makes a test to lie to, pick the pocket of, hide from, or sneak by the target and doesn’t like the outcome.'),
+Ой, а бананова шкірка тут звідки?`,
+					type: FactoryLogic.type.createTrigger('Союзник робить випробування, щоб збрехати цілі, зрізати в неї гаманець, сховатися від неї або прокрастися повз неї, і його не влаштовує результат.'),
 					keywords: [AbilityKeyword.Ranged],
 					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'Одна істота',
@@ -1080,28 +1080,28 @@ I better watch out for that banana peel!`,
 
 	static knight: Title = {
 		id: 'title-knight',
-		name: 'Knight',
-		description: '“Kneel, heroes. Arise, knights of Tor, and may your swords be ever sharp in our service.”',
+		name: 'Лицар',
+		description: '“Схиліться, герої. Підійміться, лицарі Тора, і нехай ваші мечі завжди будуть гострими на нашій службі.”',
 		echelon: 2,
-		prerequisites: 'A noble or monarch grants you knighthood or a similar rank.',
+		prerequisites: 'Дворянин або монарх дарує вам лицарство чи подібний ранг.',
 		features: [
 			FactoryLogic.feature.createBonus({
 				id: 'title-knight-1',
-				name: 'Heraldic Fame',
+				name: 'Геральдична слава',
 				field: FeatureField.Renown,
 				value: 1
 			}),
 			FactoryLogic.feature.createBonus({
 				id: 'title-knight-2',
-				name: 'Knightly Aegis',
+				name: 'Лицарська егіда',
 				field: FeatureField.Stamina,
 				value: 6
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-knight-3',
-					name: 'Knightly Challenge',
-					description: 'Have at thee!',
+					name: 'Лицарський виклик',
+					description: 'До бою!',
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Melee, AbilityKeyword.Strike, AbilityKeyword.Weapon],
 					distance: [FactoryLogic.distance.createMelee()],
@@ -1116,8 +1116,8 @@ I better watch out for that banana peel!`,
 								tier3: '16 шкоди; спровокований (рят. кидок завершує)'
 							})
 						),
-						FactoryLogic.createAbilitySectionText('Ви можете завершити стан висміювання (taunted) на цілі як безкоштовний маневр.'),
-						FactoryLogic.createAbilitySectionText('Якщо ви приймаєте цей титул, вас іноді можуть кликати виконувати обовʼязки на користь особи, яка вас посвятила.')
+						FactoryLogic.createAbilitySectionText('Ви можете завершити стан «Спровокований» на цілі як безкоштовний маневр.'),
+						FactoryLogic.createAbilitySectionText('Якщо ви приймаєте цей титул, вас іноді можуть закликати виконувати обовʼязки на користь особи, яка посвятила вас у лицарі.')
 					]
 				})
 			})
@@ -1127,29 +1127,29 @@ I better watch out for that banana peel!`,
 
 	static masterLibrarian: Title = {
 		id: 'title-master-librarian',
-		name: 'Master Librarian',
-		description: '“You want to know the exact coordinates of the Gem of the Waves shipwreck? I came across that just the other day in an unpublished memoir of its second mate. Let me get that for you.”',
+		name: 'Головний бібліотекар',
+		description: '“Хочете дізнатися точні координати затонулого корабля «Коштовність хвиль»? Я нещодавно натрапив на це в неопублікованих мемуарах його другого помічника. Зараз знайду.”',
 		echelon: 2,
-		prerequisites: 'You have the Ancient Loremaster title, and you have completed the «Дослідити знання» project to learn lost knowledge or forbidden knowledge.',
+		prerequisites: 'Ви маєте титул «Знавець давніх знань» і завершили проєкт «Дослідити знання», щоб вивчити втрачені або заборонені знання.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-1',
-				name: 'Arcane Improvisation',
-				description: 'When you use a damage-dealing magic signature ability, you can change its damage type to acid, cold, corruption, fire, lightning, poison, or sonic damage.'
+				name: 'Арканна імпровізація',
+				description: 'Коли ви використовуєте магічну сигнатурну здібність, що завдає шкоди, ви можете змінити її тип шкоди на кислоту, холод, скверну, вогонь, блискавку, отруту або звук.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-2',
-				name: 'I Have Just the Book',
-				description: 'If you start the «Дослідити знання» project in your hero’s stronghold or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.'
+				name: 'У мене є саме та книжка',
+				description: 'Якщо ви починаєте проєкт «Дослідити знання» у твердині свого героя чи іншій постійній базі операцій, ви негайно отримуєте 60 очок проєкту для його завершення. Якщо проєкт коштує 60 очок або менше, ви завершуєте його за 10 безперервних хвилин без потреби використовувати активність перепочинку.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-librarian-3',
-				name: 'Picked Up a Few Things',
-				description: 'You know a skill from the lore skill group.'
+				name: 'Підхопив дещо',
+				description: 'Ви знаєте одну навичку з групи знань.'
 			}),
 			FactoryLogic.feature.createLanguageChoice({
 				id: 'title-master-librarian-4',
-				name: 'Polyglot',
+				name: 'Поліглот',
 				count: 2
 			})
 		],
@@ -1158,31 +1158,31 @@ I better watch out for that banana peel!`,
 
 	static specialAgent: Title = {
 		id: 'title-special-agent',
-		name: 'Special Agent',
-		description: '“And this is interesting … if you twist the third button on your overcoat— no, don’t do it now!”',
+		name: 'Спецагент',
+		description: '“А це цікаво… якщо перекрутити третій ґудзик на вашому плащі — ні, зараз не робіть цього!”',
 		echelon: 2,
-		prerequisites: 'A spymaster gives you an important secret mission.',
+		prerequisites: 'Шпигмайстер дає вам важливу таємну місію.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-special-agent-1',
-				name: 'Boffin',
+				name: 'Бофін',
 				description: `
-You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a маневр
+Ви отримуєте малий магічний шпигунський пристрій, який називається бофіном. Раз за сутичку ви можете активувати одну властивість бофіна як маневр.
 
-* Make a test that uses the Маскування skill. You gain an edge on the test.
-* One mundane lock you touch is unlocked.
-* Choose a square within 10 squares, even if you don’t have line of effect to it. You can observe the area around that square as if you were in it.
-* You throw the boffin up to 10 squares, where it explodes in a 5 cube. Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster … though they don’t like doing so too often.`
+* Зробіть випробування з використанням навички Маскування. Ви отримуєте на це випробування перевагу.
+* Один звичайний замок, якого ви торкаєтеся, відмикається.
+* Оберіть клітинку в межах 10 клітинок, навіть якщо не маєте до неї лінії ефекту. Ви можете спостерігати область навколо цієї клітинки так, ніби перебуваєте в ній.
+* Ви кидаєте бофін на відстань до 10 клітинок, де він вибухає кубом 5. Кожна істота в зоні отримує вогняну шкоду, рівну 2d10 + ваш рівень. Бофін знищується назавжди, але шпигмайстер може його замінити… хоча робити це надто часто їм не до вподоби.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-special-agent-2',
-				name: 'Caustic Alchemy',
-				description: 'You have your choice of the 1st-level shadow college features Coat the Blade or Smoke Bomb. When you use that feature, you can’t spend insight unless you have the Insight class feature.'
+				name: 'Каустична алхімія',
+				description: 'Ви отримуєте на вибір одну з рис Тіньового коледжу 1-го рівня: «Покриття клинка» або «Димова бомба». Коли ви використовуєте цю рису, ви не можете витрачати Прозорливість, якщо не маєте риси класу «Прозорливість».'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-special-agent-3',
-				name: 'Spy Ring',
-				description: 'You gain a piece of magic jewelry, such as a ring. As a основна дія while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Маскування skill based solely on visual identification.'
+				name: 'Шпигунський перстень',
+				description: 'Ви отримуєте магічну прикрасу, наприклад перстень. Використовуючи основну дію під час носіння цієї прикраси, ви можете набувати ілюзорної зовнішності істоти в межах 10 клітинок, до якої маєте лінію ефекту. Це маскування дозволяє вам автоматично успішно проходити випробування з навички Маскування, що ґрунтуються виключно на візуальному впізнанні.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1190,15 +1190,15 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 
 	static swornHunter: Title = {
 		id: 'title-sworn-hunter',
-		name: 'Sworn Hunter',
-		description: '“I will follow you to the ends of the earth—just so I can kick you off the edge.”',
+		name: 'Присяжний мисливець',
+		description: '“Я переслідуватиму тебе до краю світу — лише для того, щоб зіштовхнути з нього.”',
 		echelon: 2,
-		prerequisites: 'You have the Marshal title, and you take down an entire criminal organization.',
+		prerequisites: 'Ви маєте титул «Маршал» і знищуєте цілу злочинну організацію.',
 		features: [
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-sworn-hunter-1',
-					name: 'Hunter\'s Oath',
+					name: 'Мисливська присяга',
 					type: FactoryLogic.type.createMain(),
 					distance: [FactoryLogic.distance.createRanged(10)],
 					target: 'Одна істота',
@@ -1209,12 +1209,12 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-sworn-hunter-2',
-				name: 'Particular Set of Skills',
-				description: 'You know a skill from the intrigue skill group.'
+				name: 'Особливий набір навичок',
+				description: 'Ви знаєте одну навичку з групи інтриг.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-sworn-hunter-3',
-				name: 'We\'re In This Together',
+				name: 'Ми в цьому разом',
 				description: 'Коли ви тримаєте істоту схопленою і отримуєте шкоду від здібності, яку ця істота не використовувала, схоплена істота отримує ту саму шкоду.'
 			})
 		],
@@ -1223,29 +1223,29 @@ You gain a small magic spy device called a boffin. Once per encounter, you can a
 
 	static undeadSlain: Title = {
 		id: 'title-undead-slain',
-		name: 'Undead Slain',
-		description: '“No, I didn’t get bitten. And yes, I’m fine!”',
+		name: 'Полеглий від нежиті',
+		description: '“Ні, мене не вкусили. І так, зі мною все гаразд!”',
 		echelon: 2,
-		prerequisites: 'You are killed by an undead creature.',
+		prerequisites: 'Вас убиває істота нежиті.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-1',
-				name: 'Ghoul or Campire',
-				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убив гуль або вампір. Якщо ви загинете знову, то підніметеся як нежить під контролем Director.
+				name: 'Гуль або вампір',
+				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убив гуль або вампір. Якщо ви загинете знову, то підніметеся як нежить під контролем Режисера.
 					
 Коли ви робите вільний удар ближнього бою проти сусідньої істоти, ви можете вкусити її. Якщо ви робите це й отримуєте результат 3 рівня, ви здобуваєте тимчасову Витривалість, що дорівнює завданій шкоді. Якщо її не втрачено раніше, ця тимчасова Витривалість триває до кінця вашого наступного перепочинку.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-2',
-				name: 'Incorporeal Undead',
-				description: `You return to life 1 minute after being killed with Stamina equal to your winded value. You gain corruption immunity equal to your level and the following benefit if you are killed by an incorporeal undead. If you die again, you rise as an undead creature under the Director’s control.
+				name: 'Безтілесна нежить',
+				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убила безтілесна нежить. Якщо ви загинете знову, то підніметеся як нежить під контролем Режисера.
 					
-You can move through other creatures and objects. The first time in a combat round that you pass through a creature, that creature takes corruption damage equal to half your level. You don’t take damage from being force moved into objects.`
+Ви можете проходити крізь інших істот і обʼєкти. Уперше за бойовий раунд, коли ви проходите крізь істоту, вона отримує шкоду скверною, рівну половині вашого рівня. Ви не отримуєте шкоди від примусового переміщення в обʼєкти.`
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-undead-slain-3',
-				name: 'Other Corporeal Undead',
-				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убила будь-яка інша тілесна нежить. Якщо ви загинете знову, то підніметеся як нежить під контролем Director.
+				name: 'Інша тілесна нежить',
+				description: `Ви повертаєтесь до життя через 1 хвилину після загибелі з Витривалістю, що дорівнює вашому значенню захеканості. Ви отримуєте імунітет до скверни, що дорівнює вашому рівню, а також наведену нижче перевагу, якщо вас убила будь-яка інша тілесна нежить. Якщо ви загинете знову, то підніметеся як нежить під контролем Режисера.
 					
 Коли вас зводять до 0 Витривалості шкодою, що не є вогняною чи священною, і ваше тіло не знищене, ви можете відновити половину своєї Витривалості та впасти розпластаними. Після використання цієї переваги ви не можете застосувати її знову, доки не здобудете 10 або більше Перемог.`
 			})
@@ -1255,25 +1255,25 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static unstoppable: Title = {
 		id: 'title-unstoppable',
-		name: 'Unstoppable',
-		description: '“I seen the goblin king run ’im through with a spear. Then I seen ’im pull ’imself back up, spear still in ’im, and headbutt the goblin king … then he pulls out the spear and throws it on the goblin king’s corpse.”',
+		name: 'Незупинний',
+		description: '“Я бачив, як король гоблінів проштрикнув його списом. А потім бачив, як той підвівся, досі зі списом у собі, і вдарив короля гоблінів головою… а тоді витягнув спис і кинув його на труп короля гоблінів.”',
 		echelon: 2,
-		prerequisites: 'You defeat a foe while at or below 0 Stamina.',
+		prerequisites: 'Ви перемагаєте ворога, маючи 0 Витривалості або менше.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-unstoppable-1',
-				name: 'From Hell’s Heart',
-				description: 'While you are winded, your melee strikes gain a +3 damage bonus.'
+				name: 'Із самого серця пекла',
+				description: 'Поки ви захекані, ваші ближні удари отримують +3 до шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-unstoppable-2',
-				name: 'Furious Attack',
-				description: 'Choose one signature ability from the fury class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend ferocity, you can’t do so unless you have the Ferocity class feature.'
+				name: 'Лютий удар',
+				description: 'Оберіть одну сигнатурну здібність класу Фурія. Ви отримуєте цю здібність незалежно від того, чи дозволяють ваш клас і підклас її взяти. Якщо ця здібність дозволяє вам отримувати або витрачати Лють, ви не можете робити це, якщо не маєте риси класу «Лють».'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-unstoppable-3',
-				name: 'Furious Charge',
-				description: 'When you use the Charge action, your strike made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.'
+				name: 'Лютий ривок',
+				description: 'Коли ви використовуєте основну дію «Ривок», ваш удар, зроблений як частина цієї дії, отримує бонус до шкоди, рівний кількості клітинок, які ви пройшли в межах цього ривка.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1281,15 +1281,15 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static armedAndDangerous: Title = {
 		id: 'title-armed-and-dangerous',
-		name: 'Armed and Dangerous',
-		description: '“I’m not picky. Any tool will suffice. A sword seems a most appropriate tool for this job.”',
+		name: 'Озброєний і небезпечний',
+		description: '“Я не вибагливий. Підійде будь-який інструмент. Хоча меч для цієї роботи, здається, найдоречніший.”',
 		echelon: 3,
-		prerequisites: 'You can’t use kits, and you defeat five non-minion enemies using weapon abilities that don’t have the Magic or Psionic keyword.',
+		prerequisites: 'Ви не можете використовувати комплекти й перемагаєте пʼятьох не-мініонних ворогів, використовуючи здібності зі зброєю, які не мають ключових слів Magic або Psionic.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-armed-and-dangerous-1',
-				name: 'Effect',
-				description: 'You can use and gain the benefits of kits.'
+				name: 'Ефект',
+				description: 'Ви можете використовувати комплекти й отримувати їхні переваги.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1297,15 +1297,15 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static backFromTheGrave: Title = {
 		id: 'title-back-from-the-grave',
-		name: 'Back from the Grave',
-		description: '“Hi! Remember me?”',
+		name: 'Повернений із могили',
+		description: '“Привіт! Памʼятаєш мене?”',
 		echelon: 3,
-		prerequisites: 'You die at the hands of your greatest foe, that foe still lives, and you aren’t a revenant.',
+		prerequisites: 'Ви гинете від рук свого найбільшого ворога, цей ворог усе ще живий, і ви не ревенант.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-back-from-the-grave-1',
-				name: 'Effect',
-				description: 'You are restored to life. You gain the Tough But Withered signature trait from the revenant ancestry.'
+				name: 'Ефект',
+				description: 'Ви повертаєтеся до життя. Ви отримуєте сигнатурну рису ревенанта «Міцний, але Зівʼялий».'
 			})
 		],
 		selectedFeatureID: ''
@@ -1313,35 +1313,35 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static demonSlayer: Title = {
 		id: 'title-demon-slayer',
-		name: 'Demon Slayer',
+		name: 'Погибель демонів',
 		description: '“F’lath v’korr en zaratha g’rrack.”',
 		echelon: 3,
-		prerequisites: 'You defeat a leader or solo creature with the Demon keyword, such as a soulraker hivequeen, or you are possessed by a demon.',
+		prerequisites: 'Ви перемагаєте ватажка або соло-істоту з ключовим словом Demon, наприклад Soulraker Hivequeen, або демон вселяється у вас.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-1',
-				name: 'Demonic Lore',
-				description: 'You know the Прото-Ктолл (Proto-Ctholl) language. Additionally, when you deal damage using a magic ability, you can change the ability’s damage type to holy.'
+				name: 'Демонічні знання',
+				description: 'Ви знаєте мову Прото-Ктолл (Proto-Ctholl). Додатково, коли ви завдаєте шкоди магічною здібністю, ви можете змінити тип її шкоди на священний.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-2',
-				name: 'Lethe',
-				description: 'While you are winded, your strikes gain a +5 damage bonus.'
+				name: 'Лета',
+				description: 'Поки ви захекані, ваші удари отримують +5 до шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-3',
-				name: 'Made of Teeth',
-				description: 'Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).'
+				name: 'Увесь із зубів',
+				description: 'На вашому тілі можуть проростати зуби в найнесподіваніших місцях. Щоразу, коли істота входить із вами у фізичний контакт або починає свій хід, торкаючись вас, ви можете завдати їй 5 шкоди (дія не потрібна).'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-4',
-				name: 'Soulsight',
-				description: 'Any creature within 2 squares can’t be hidden from you.'
+				name: 'Зір душ',
+				description: 'Будь-яка істота в межах 2 клітинок не може бути прихованою від вас.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-demon-slayer-5',
 				name: 'Особливе',
-				description: 'When you make a Presence test and roll a natural 5 or lower, you are cursed to communicate in only Прото-Ктолл (Proto-Ctholl) for 1 minute, whether you know that language or not.'
+				description: 'Коли ви робите випробування Присутності й викидаєте природну 5 або менше, на 1 хвилину на вас накладається прокляття спілкуватися лише мовою Прото-Ктолл (Proto-Ctholl), незалежно від того, знаєте ви її чи ні.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1349,30 +1349,30 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static diabolist: Title = {
 		id: 'title-diabolist',
-		name: 'Diabolist',
-		description: '“If you can’t beat ’em, join ’em.”',
+		name: 'Діаболіст',
+		description: '“Якщо не можеш їх перемогти — приєднайся до них.”',
 		echelon: 3,
-		prerequisites: 'You defeat a leader or solo creature with the Devil keyword, such as an archdevil, or you make a deal with a devil.',
+		prerequisites: 'Ви перемагаєте ватажка або соло-істоту з ключовим словом Devil, наприклад архідиявола, або укладаєте угоду з дияволом.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-1',
-				name: 'Devil Lore',
-				description: 'You know the Анжалі (Anjali) language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.'
+				name: 'Диявольські знання',
+				description: 'Ви знаєте мову Анжалі (Anjali), і ваше розуміння цієї мови допомагає вам створювати непереборні надприродні ефекти. Потужності ваших магічних або псіонічних здібностей, що націлюються на Розум, Інтуїцію або Присутність, зростають на 1.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-2',
-				name: 'Infernal Legacy',
-				description: 'You gain 3 ancestry points to spend on purchased devil ancestry traits.'
+				name: 'Пекельна спадщина',
+				description: 'Ви отримуєте 3 очки походження, які можете витратити на придбані риси походження диявола.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-3',
-				name: 'Sly Devil',
-				description: 'You gain the Silver Tongue signature trait from the devil ancestry.'
+				name: 'Хитрий диявол',
+				description: 'Ви отримуєте сигнатурну рису диявола «Срібний язик».'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-diabolist-4',
-				name: 'Untouched by Corruption',
-				description: 'Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.'
+				name: 'Незаплямований скверною',
+				description: 'Щоразу, коли ви використовуєте здібність, що завдає шкоди, ця здібність може завдавати священної шкоди замість свого звичайного типу шкоди.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1380,20 +1380,20 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static dragonBlooded: Title = {
 		id: 'title-dragon-blooded',
-		name: 'Dragon Blooded',
-		description: '“I stabbed the wyrm Axarthan in the heart and their silver blood washed over me, leaving me … as you see.”',
+		name: 'Драконокровний',
+		description: '“Я встромив клинок у серце змія Аксартана, і його срібна кров обмила мене, залишивши… таким, як ви бачите.”',
 		echelon: 3,
-		prerequisites: 'You defeat a leader or solo creature with the Dragon keyword, such as a gloom dragon.',
+		prerequisites: 'Ви перемагаєте ватажка або соло-істоту з ключовим словом Dragon, наприклад сутінкового дракона.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-dragon-blooded-1',
-				name: 'Dragon Scaled',
-				description: 'Dragon scales grow on your body wherever the heart’s blood of the dragon touched you. You gain the Wyrmplate signature trait from the dragon knight ancestry.'
+				name: 'Драконяча луска',
+				description: 'Драконячі луски виростають на вашому тілі всюди, де його торкнулася серцева кров дракона. Ви отримуєте сигнатурну рису драконячого лицаря «Драконячий панцир».'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-dragon-blooded-2',
-				name: 'Dragon Touched',
-				description: 'You gain 3 ancestry points to spend on purchased dragon knight ancestry traits.'
+				name: 'Торкнутий драконом',
+				description: 'Ви отримуєте 3 очки походження, які можете витратити на придбані риси походження драконячого лицаря.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1401,37 +1401,37 @@ You can move through other creatures and objects. The first time in a combat rou
 
 	static fleetAdmiral: Title = {
 		id: 'title-fleet-admiral',
-		name: 'Fleet Admiral',
-		description: '“All hail the Pirate Queen!”',
+		name: 'Адмірал флоту',
+		description: '“Слава Королеві піратів!”',
 		echelon: 3,
-		prerequisites: 'You have the Corsair title, and you lead a fleet of at least three ships.',
+		prerequisites: 'Ви маєте титул «Корсар» і очолюєте флот щонайменше з трьох кораблів.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-fleet-admiral-1',
-				name: 'First Mate',
-				description: 'You have a pirate retainer, such as a human warrior, chosen by the Director. This retainer’s level increases to your level.'
+				name: 'Старший помічник',
+				description: 'У вас є піратський ретейнер, наприклад воїн-людина, якого обирає Режисер. Рівень цього ретейнера зростає до вашого рівня.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-fleet-admiral-2',
-				name: 'Swashbuckler',
-				description: 'You can automatically climb at full speed while moving.'
+				name: 'Шибайголова',
+				description: 'Ви можете автоматично лазити з повною швидкістю під час руху.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-fleet-admiral-3',
-				name: 'Treasure Keeper',
-				description: 'You earn 1 Wealth.'
+				name: 'Скарбник',
+				description: 'Ви здобуваєте 1 Багатство.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-fleet-admiral-4',
-				name: 'Weather Wizard',
+				name: 'Повелитель погоди',
 				description: `
-Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a безкоштовний маневр. Choose from one of the following weather types:
+Раз на день ви можете витратити 10 безперервних хвилин, щоб магічно змінити звичайну погоду в радіусі 5 миль навколо себе. Погода рухається разом із вами та триває 6 годин або доки ви не скасуєте її як безкоштовний маневр. Оберіть один із наступних типів погоди:
 
-* Calm: Wind-powered vessels and technology cease working.
-* Fog: Visibility is reduced to 6 squares.
-* High Winds: The speed of wind-powered vessels is doubled.
-* Light Winds: No effects due to weather.
- *Storm: The crew of an unsheltered wind-powered vessel must make a medium group Reason test. On a failure, the vessel needs repairs and moves at half speed until those repairs are made.`
+* Штиль: Судна й технології, що працюють на вітрі, припиняють працювати.
+* Туман: Видимість зменшується до 6 клітинок.
+* Сильний вітер: Швидкість суден, що працюють на вітрі, подвоюється.
+* Легкий вітер: Погода не має жодних ефектів.
+* Шторм: Екіпаж незахищеного судна, що працює на вітрі, мусить зробити середнє групове випробування Розуму. У разі провалу судно потребує ремонту й рухається з половинною швидкістю, доки ремонт не буде завершено.`
 			})
 		],
 		selectedFeatureID: ''
@@ -1439,21 +1439,21 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static maestro: Title = {
 		id: 'title-maestro',
-		name: 'Maestro',
-		description: '“When I saw the bloodstained manuscript under Fellwander’s arm, I knew his quest for the Opera was over—and with it, his chance for redemption.”',
+		name: 'Маестро',
+		description: '“Коли я побачив закривавлений рукопис під пахвою Феллвандера, я зрозумів: його пошуки Опери закінчилися — а разом із ними й шанс на спокуту.”',
 		echelon: 2,
-		prerequisites: 'You visit the realms of gods, devils, or other immortal beings and hear a note of the Music of Creation.',
+		prerequisites: 'Ви відвідуєте володіння богів, дияволів чи інших безсмертних істот і чуєте ноту Музики Творіння.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-maestro-1',
-				name: 'Angelic Chorus',
-				description: 'You can use the lessons of musical improvisation in combat. Choose one class act тригерна дія from the troubadour class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.'
+				name: 'Ангельський хор',
+				description: 'Ви можете застосовувати уроки музичної імпровізації в бою. Оберіть одну тригерну дію класового акту з класу Трубадур. Ви отримуєте цю здібність незалежно від того, чи дозволяють ваш клас і підклас її взяти. Якщо ця здібність дозволяє вам отримувати або витрачати Драму, ви можете натомість отримувати або витрачати героїчний ресурс свого класу.'
 			}),
 			FactoryLogic.feature.createAbility({
 				ability: FactoryLogic.createAbility({
 					id: 'title-maestro-2',
-					name: 'The Devil’s Chord',
-					description: 'Helloooo Orden!',
+					name: 'Диявольський акорд',
+					description: 'Привіііт, Ордене!',
 					type: FactoryLogic.type.createMain(),
 					keywords: [AbilityKeyword.Area, AbilityKeyword.Magic],
 					distance: [FactoryLogic.distance.create({ type: AbilityDistanceType.Burst, value: 5 })],
@@ -1474,8 +1474,8 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-maestro-3',
-				name: 'Music of the Spheres',
-				description: 'As a основна дія, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a strike, they take 8 sonic damage. Whenever you make a strike during that same period, you also take 8 sonic damage.'
+				name: 'Музика сфер',
+				description: 'Використовуючи основну дію, ви співаєте або берете ноту, таку ж тендітну й гостру, як скло, — і таку ж легко розбиту. До початку вашого наступного ходу щоразу, коли істота в межах 10 клітинок робить удар, вона отримує 8 звукової шкоди. Щоразу, коли впродовж цього ж часу ви робите удар, ви також отримуєте 8 звукової шкоди.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1483,30 +1483,30 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static masterCrafter: Title = {
 		id: 'title-master-crafter',
-		name: 'Master Crafter',
-		description: '“The sword Vanartha has been remade, mightier now than on the day it was forged.”',
+		name: 'Майстер-ремісник',
+		description: '“Меч Ванарта перековано, і тепер він могутніший, ніж у день свого створення.”',
 		echelon: 3,
-		prerequisites: 'You complete a downtime project to imbue armor, an implement, or a weapon with a 9th-level enhancement.',
+		prerequisites: 'Ви завершуєте проєкт під час простою, щоб наділити обладунок, імплемент або зброю покращенням 9-го рівня.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-master-crafter-1',
-				name: 'Masterpiece',
-				description: 'The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.'
+				name: 'Шедевр',
+				description: 'Обладунок, імплемент або зброю можна наділити вчетверте будь-яким покращенням, якому відповідає цей предмет.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-crafter-2',
-				name: 'Research Dividends',
-				description: 'You gain the item prerequisite for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the project source language for that enhancement.'
+				name: 'Плоди досліджень',
+				description: 'Ви отримуєте предметну передумову для покращення обладунку, імплементу або зброї на свій вибір. Додатково ви вивчаєте вихідну мову проєкту для цього покращення.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-crafter-3',
-				name: 'Skilled Hands',
-				description: 'You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an edge on tests made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.'
+				name: 'Умілі руки',
+				description: 'Ви отримуєте одну навичку з групи ремісничих навичок, яка могла б використовуватися під час створення предмета-передумови. Якщо ви вже маєте цю навичку, натомість отримуєте перевагу на випробування з її використанням. Додатково ви отримуєте другу навичку на свій вибір із групи ремісничих навичок.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-master-crafter-4',
-				name: 'Strong Hands Make Light Work',
-				description: 'Whenever you make a project roll, you can use Might as the project roll characteristic.'
+				name: 'Сильні руки полегшують працю',
+				description: 'Щоразу, коли ви робите кидок проєкту, ви можете використовувати Силу як характеристику цього кидка.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1514,30 +1514,30 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static noble: Title = {
 		id: 'title-noble',
-		name: 'Noble',
-		description: '“Technically, I’m called Lord Morninghill these days. I did a little favor for Duke Kenway at the Battle of Black Forest.”',
+		name: 'Дворянин',
+		description: '“Технічно, тепер мене звуть лорд Морнінггілл. Я зробив невеличку послугу герцогу Кенвею під час битви в Чорному Лісі.”',
 		echelon: 3,
-		prerequisites: 'A monarch or important noble grants you a noble rank.',
+		prerequisites: 'Монарх або впливовий дворянин надає вам дворянський титул.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-noble-1',
-				name: 'I Know How to Talk to These People',
-				description: 'You gain an edge on Presence tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your noble rank.'
+				name: 'Я знаю, як говорити з цими людьми',
+				description: 'Ви отримуєте перевагу на випробування Присутності для взаємодії з королівськими особами, дворянами та їхніми феодальними підданими, якщо вони знають про ваш дворянський титул.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-noble-2',
-				name: 'Noble Splendor',
-				description: 'You earn 1 Renown and 1 Wealth.'
+				name: 'Дворянська пишнота',
+				description: 'Ви здобуваєте 1 Відомість і 1 Багатство.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-noble-3',
-				name: 'Retinue',
-				description: 'The number of followers you can recruit increases by two.'
+				name: 'Почет',
+				description: 'Кількість послідовників, яких ви можете наймати, збільшується на двох.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-noble-4',
 				name: 'Особливе',
-				description: 'If you take this title, you might occasionally be called upon to perform duties for the person who granted your noble rank.'
+				description: 'Якщо ви приймаєте цей титул, вас іноді можуть закликати виконувати обовʼязки на користь особи, яка надала вам дворянський титул.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1545,25 +1545,25 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static planarVoyager: Title = {
 		id: 'title-planar-voyager',
-		name: 'Planar Voyager',
-		description: '“I’ve seen skywhales floating above the seas of Primordius. I’ve seen star freighters dancing around the moons of Axiom. So I guess you’re right, I’m not from around these parts.”',
+		name: 'Планарний мандрівник',
+		description: '“Я бачив небесних китів, що пливли над морями Примордіуса. Я бачив зоряні вантажники, що танцювали навколо місяців Аксіома. Тож, мабуть, ви маєте рацію: я тут не місцевий.”',
 		echelon: 3,
-		prerequisites: 'You voyage in strange vehicles on different worlds.',
+		prerequisites: 'Ви подорожуєте дивними транспортними засобами різними світами.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-planar-voyager-1',
-				name: 'Prismacore Eyes',
-				description: 'Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can’t use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to stability against magic or psionic abilities.'
+				name: 'Очі призмакору',
+				description: 'Вплив призмакору надав вашим очам дзеркального блиску. Ви маєте психічний імунітет 10, істоти не можуть використовувати магічні чи псіонічні здібності або інші ефекти, щоб визначити ваше місцезнаходження чи прочитати ваші думки, якщо ви самі цього не дозволите, і ви отримуєте +3 до стабільності проти магічних або псіонічних здібностей.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-planar-voyager-2',
-				name: 'Stellar Knowledge',
-				description: 'You gain the Механіка skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.'
+				name: 'Зоряні знання',
+				description: 'Ви отримуєте навичку Механіка. Якщо ви вже маєте цю навичку, натомість отримуєте перевагу на випробування з її використанням. Додатково ви отримуєте предметну передумову й джерело проєкту для псіонічної дрібнички.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-planar-voyager-3',
-				name: 'Time Raider Training',
-				description: 'You gain 2 ancestry points to spend on purchased time raider ancestry traits.'
+				name: 'Вишкіл рейдера часу',
+				description: 'Ви отримуєте 2 очки походження, які можете витратити на придбані риси походження рейдера часу.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1571,20 +1571,20 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static scarred: Title = {
 		id: 'title-scarred',
-		name: 'Scarred',
-		description: '“Last time we fought, I gave you a little token to remember me by … now it appears you need another reminder of my power.”',
+		name: 'Шрамований',
+		description: '“Минулого разу, коли ми билися, я залишив тобі маленький сувенір на памʼять… а тепер, схоже, тобі потрібне ще одне нагадування про мою силу.”',
 		echelon: 3,
-		prerequisites: 'An enemy leader or solo creature reduces you to 0 Stamina.',
+		prerequisites: 'Ворожий ватажок або соло-істота зводить вас до 0 Витривалості.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-scarred-1',
-				name: 'Effect',
-				description: 'You gain a visible scar in a location of your choice. Additionally, your Stamina maximum increases by 20, and the creature who scarred you takes a bane on abilities against you.'
+				name: 'Ефект',
+				description: 'Ви отримуєте помітний шрам у вибраному вами місці. Додатково ваш максимум Витривалості збільшується на 20, а істота, що лишила вам шрам, отримує ваду на здібності проти вас.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-scarred-2',
 				name: 'Особливе',
-				description: 'You can gain this title multiple times. The second and each subsequent time that you gain it, your Stamima maximum doesn’t increase.'
+				description: 'Ви можете отримати цей титул кілька разів. Починаючи з другого й кожного наступного разу, коли ви його отримуєте, ваш максимум Витривалості не збільшується.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1592,25 +1592,25 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static siegeBreaker: Title = {
 		id: 'title-siege-breaker',
-		name: 'Siege Breaker',
-		description: '“Best way to deal with a castle siege? Be on the outside.”',
+		name: 'Руйнівник облоги',
+		description: '“Найкращий спосіб упоратися з облогою замку? Бути зовні.”',
 		echelon: 3,
-		prerequisites: 'You have the Battlefield Commander title, and you lead the defense of a settlement or fortification.',
+		prerequisites: 'Ви маєте титул «Польовий командир» і очолюєте оборону поселення або укріплення.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-siege-breaker-1',
-				name: 'Death From Above',
-				description: 'When you gain an edge on an ability due to high ground, the ability gains a +8 damage bonus.'
+				name: 'Смерть згори',
+				description: 'Коли ви отримуєте перевагу на здібність завдяки височині, ця здібність отримує +8 до шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-siege-breaker-2',
-				name: 'Hold the Line',
-				description: 'While you’re within 5 squares of an ally, you and each ally within 5 squares of you gains a +3 bonus to stability.'
+				name: 'Тримай стрій',
+				description: 'Поки ви перебуваєте в межах 5 клітинок від союзника, ви й кожен союзник у межах 5 клітинок від вас отримуєте +3 до стабільності.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-siege-breaker-3',
-				name: 'Last Defender',
-				description: 'Whenever an ally within 5 squares is reduced to 0 Stamina, you gain temporary Stamina equal to the ally’s level (or 1 if they have no level). If you already have temporary Stamina granted by this title, you increase your temporary Stamina by the amount you would have gained.'
+				name: 'Останній оборонець',
+				description: 'Щоразу, коли союзника в межах 5 клітинок зводять до 0 Витривалості, ви отримуєте тимчасову Витривалість, рівну рівню союзника (або 1, якщо в нього немає рівня). Якщо ви вже маєте тимчасову Витривалість, надану цим титулом, ви збільшуєте її на величину, яку мали б отримати.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1618,15 +1618,15 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static teacher: Title = {
 		id: 'title-teacher',
-		name: 'Teacher',
-		description: '“Someday, I’ll understand how peeling these carrots for dinner relates to my elementalist training.”',
+		name: 'Наставник',
+		description: '“Колись я зрозумію, як чищення цих морквин на вечерю повʼязане з моїм навчанням елементаліста.”',
 		echelon: 3,
-		prerequisites: 'You train or command at least three lower-level members of your class.',
+		prerequisites: 'Ви навчаєте або командуєте щонайменше трьома персонажами нижчого рівня вашого класу.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-teacher-1',
-				name: 'Effect',
-				description: 'You can travel with a student who shares your class. The student has the statistics of a 1st-level member of your class and has the same skills as you, but doesn’t engage in combat. They can perform any out-of-combat tasks a 1st-level member of your class can perform. Whenever they make a test to assist you in a task, they can’t obtain less than a tier 2 outcome on the test.'
+				name: 'Ефект',
+				description: 'Ви можете подорожувати з учнем, який належить до того самого класу, що й ви. Учень має характеристики представника вашого класу 1-го рівня й ті самі навички, що й ви, але не бере участі в бою. Він може виконувати будь-які позабойові завдання, які здатен виконати представник вашого класу 1-го рівня. Щоразу, коли учень робить випробування, щоб допомогти вам у завданні, він не може отримати результат нижче 2 рівня.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1634,25 +1634,25 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static championCompetitor: Title = {
 		id: 'title-champion-competitor',
-		name: 'Champion Competitor',
-		description: '“Marduk uses the Beldoit Gambit! Avanna counters with the Iron Defense and goes on the attack! Marduk’s last tower is knocked down! And just like that, we have a new … world … champion!”',
+		name: 'Абсолютний чемпіон',
+		description: '“Мардук застосовує гамбіт Белдуа! Аванна відповідає Залізною обороною й переходить у наступ! Останню вежу Мардука збито! І саме так у нас зʼявляється новий… чемпіон… світу!”',
 		echelon: 4,
-		prerequisites: 'You beat the best in the world at a game or sport.',
+		prerequisites: 'Ви перемагаєте найкращого у світі в грі чи виді спорту.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-champion-competitor-1',
-				name: 'Best of the Best',
-				description: 'A characteristic used during the competition increases by 1 (to a maximum of 6). Choose a skill you used during the competition. You gain a +4 bonus to tests made using that skill instead of a +2 bonus.'
+				name: 'Найкращий з найкращих',
+				description: 'Характеристика, яку ви використовували під час змагання, зростає на 1 (до максимуму 6). Оберіть навичку, яку ви використовували під час змагання. Ви отримуєте +4 на випробування з використанням цієї навички замість +2.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-champion-competitor-2',
-				name: 'Glory and Riches',
-				description: 'A characteristic used during the competition increases by 1 (to a maximum of 6). You earn 2 Renown and 1 Wealth.'
+				name: 'Слава й багатство',
+				description: 'Характеристика, яку ви використовували під час змагання, зростає на 1 (до максимуму 6). Ви здобуваєте 2 Відомості й 1 Багатство.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-champion-competitor-3',
-				name: 'I’ll Just Take the Prize',
-				description: 'A characteristic used during the competition increases by 1 (to a maximum of 6). You gain a trinket or leveled treasure of the Director’s choice.'
+				name: 'Я просто заберу приз',
+				description: 'Характеристика, яку ви використовували під час змагання, зростає на 1 (до максимуму 6). Ви отримуєте дрібничку або скарб із рівнем на вибір Режисера.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1660,55 +1660,55 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static demigod: Title = {
 		id: 'title-demigod',
-		name: 'Demigod',
-		description: '“The ritual is complete. I feel your power flow through me. I am become a god! Ah-ha-ha-ha-ha!”',
+		name: 'Напівбог',
+		description: '“Ритуал завершено. Я відчуваю, як твоя сила тече крізь мене. Я стаю богом! Аха-ха-ха-ха!”',
 		echelon: 4,
-		prerequisites: 'You have the Godsworn title, and hundreds of worshipful mortals complete a divine ritual in your name.',
+		prerequisites: 'Ви маєте титул «Богоприсяжний», і сотні побожних смертних звершують божественний ритуал у ваше імʼя.',
 		features: [
 			FactoryLogic.feature.createMultiple({
 				id: 'title-demigod-1',
-				name: 'Demigod',
+				name: 'Напівбог',
 				features: [
 					FactoryLogic.feature.create({
 						id: 'title-demigod-1a',
-						name: 'Immortal Excellence',
-						description: 'A characteristic of your choice increases by 1 (to a maximum of 6).'
+						name: 'Безсмертна досконалість',
+						description: 'Обрана вами характеристика зростає на 1 (до максимуму 6).'
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-demigod-1b',
-						name: 'Longevity',
-						description: 'Your natural lifespan doubles and you can appear to be any age.'
+						name: 'Довголіття',
+						description: 'Тривалість вашого природного життя подвоюється, і ви можете виглядати на будь-який вік.'
 					}),
 					FactoryLogic.feature.create({
 						id: 'title-demigod-1c',
-						name: 'Worshippers',
-						description: 'You magically hear prayers directed to you.'
+						name: 'Віряни',
+						description: 'Ви магічно чуєте молитви, звернені до вас.'
 					}),
 					FactoryLogic.feature.createChoice({
 						id: 'title-demigod-1d',
-						name: 'Option',
+						name: 'Варіант',
 						options: [
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-demigod-1da',
-									name: 'Acolytes',
-									description: 'The number of followers you can recruit increases by two.'
+									name: 'Аколіти',
+									description: 'Кількість послідовників, яких ви можете наймати, збільшується на двох.'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-demigod-1db',
-									name: 'Divine Weapons',
-									description: 'Whenever you use a damage-dealing weapon ability, that ability can deal corruption or holy damage instead of its usual damage type.'
+									name: 'Божественна зброя',
+									description: 'Щоразу, коли ви використовуєте здібність зі зброєю, що завдає шкоди, ця здібність може завдавати шкоди скверною або священної шкоди замість свого звичайного типу шкоди.'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-demigod-1dc',
-									name: 'Missionaries',
-									description: 'You earn 2 Renown.'
+									name: 'Місіонери',
+									description: 'Ви здобуваєте 2 Відомості.'
 								}),
 								value: 1
 							}
@@ -1722,25 +1722,25 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static enlightened: Title = {
 		id: 'title-enlightened',
-		name: 'Enlightened',
-		description: '“Don’t you see? This world that seems so real to you is nothing but a game, and all the people merely pieces!”',
+		name: 'Просвітлений',
+		description: '“Хіба ти не бачиш? Цей світ, який здається тобі таким справжнім, — не більше ніж гра, а всі люди в ній лише фігури!”',
 		echelon: 4,
-		prerequisites: 'You learn a cosmic truth that alters your understanding of reality.',
+		prerequisites: 'Ви дізнаєтеся космічну істину, що змінює ваше розуміння реальності.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-enlightened-1',
-				name: 'Cosmic Revelation',
-				description: 'Your choice of your Reason or Intuition increases by 1 (to a maximum of 6). When you make a test with a skill from the lore skill group and obtain a tier 1 or tier 2 outcome, you can instead obtain a tier 3 outcome. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				name: 'Космічне одкровення',
+				description: 'Обрані вами Розум або Інтуїція зростають на 1 (до максимуму 6). Коли ви робите випробування з навичкою з групи знань і отримуєте результат 1 або 2 рівня, ви можете натомість отримати результат 3 рівня. Скориставшись цією перевагою, ви не можете використати її знову, доки не здобудете 1 або більше Перемог.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-enlightened-2',
-				name: 'Longevity',
-				description: 'Your choice of your Reason or Intuition increases by 1 (to a maximum of 6). Whenever you spend a Recovery, you can end one condition on yourself.'
+				name: 'Довголіття',
+				description: 'Обрані вами Розум або Інтуїція зростають на 1 (до максимуму 6). Щоразу, коли ви витрачаєте Відновлення, ви можете завершити на собі один стан.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-enlightened-3',
-				name: 'Worshippers',
-				description: 'Your choice of your Reason or Intuition increases by 1 (to a maximum of 6). You can reach behind the curtain and alter reality. At the start of combat, choose yourself or any creature within 5 squares. The chosen target must move up to their speed to a space you choose, but can’t enter damaging terrain or terrain that could impose a condition on them. The target doesn’t appear to move or teleport to that space—they are simply there. No one but you has any memory of the target’s previous position.'
+				name: 'Віряни',
+				description: 'Обрані вами Розум або Інтуїція зростають на 1 (до максимуму 6). Ви можете зазирнути за завісу й змінити реальність. На початку бою оберіть себе або будь-яку істоту в межах 5 клітинок. Обрана ціль мусить переміститися на відстань до своєї швидкості в обраний вами простір, але не може увійти в небезпечну місцевість чи місцевість, яка могла б накласти на неї стан. Здається, що ціль не рухалася і не телепортувалася в цей простір — вона просто там є. Ніхто, крім вас, не памʼятає її попереднього місця.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1748,25 +1748,25 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static forsaken: Title = {
 		id: 'title-forsaken',
-		name: 'Forsaken',
-		description: '“The quest is done, the enemy is defeated, and the Blade of a Thousand Years has passed from our hands. What do we do with the rest of our lives?”',
+		name: 'Покинутий',
+		description: '“Похід завершено, ворога переможено, а Клинок Тисячі Років пішов із наших рук. Що нам робити з рештою нашого життя?”',
 		echelon: 4,
-		prerequisites: 'Your party loses, destroys, or otherwise parts with an artifact.',
+		prerequisites: 'Ваш загін втрачає, знищує або інакше розлучається з артефактом.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-forsaken-1',
-				name: 'Brief Reunion',
-				description: 'A characteristic of your choice increases by 1 (to a maximum of 6). While you’re winded, you can use a маневр to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				name: 'Недовге воззʼєднання',
+				description: 'Обрана вами характеристика зростає на 1 (до максимуму 6). Поки ви захекані, ви можете використати маневр, щоб покликати артефакт собі в руку. Він зникає наприкінці вашого наступного ходу. Скориставшись цією перевагою, ви не можете використати її знову, доки не здобудете 1 або більше Перемог.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-forsaken-2',
-				name: 'Perfect Protection',
-				description: 'A characteristic of your choice increases by 1 (to a maximum of 6). The Director chooses a damage type that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen damage type.'
+				name: 'Досконалий захист',
+				description: 'Обрана вами характеристика зростає на 1 (до максимуму 6). Режисер обирає тип шкоди, який завдає артефакт або який тематично з ним повʼязаний, наприклад священний для Клинка Тисячі Років, психічний для Енцептера чи скверна для Mortal Coil. Ви отримуєте повний імунітет до обраного типу шкоди.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-forsaken-3',
-				name: 'Poor Compensation',
-				description: 'A characteristic of your choice increases by 1 (to a maximum of 6). Instead of disappearing or otherwise departing, the artifact turns into a trinket or leveled treasure of the Director’s choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.'
+				name: 'Мізерна компенсація',
+				description: 'Обрана вами характеристика зростає на 1 (до максимуму 6). Замість того щоб зникнути чи інакше полишити вас, артефакт перетворюється на дрібничку або скарб із рівнем на вибір Режисера, який має приблизно ту саму форму, що й утрачений предмет, наприклад на будь-який магічний меч для Клинка Тисячі Років, будь-який імплемент для Енцептера або на Thief of Joy чи будь-який інший torque для Mortal Coil.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1774,30 +1774,30 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static monarch: Title = {
 		id: 'title-monarch',
-		name: 'Monarch',
-		description: '“The tyrant is dead! Long live the new king!”',
+		name: 'Монарх',
+		description: '“Тиран мертвий! Хай живе новий король!”',
 		echelon: 4,
-		prerequisites: 'You or a member of your party becomes the monarch of a nation.',
+		prerequisites: 'Ви або хтось із вашого загону стаєте монархом держави.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-monarch-1',
-				name: 'Crown Jewels',
-				description: 'Inhabitants of your nation must obey your lawful orders or suffer the consequences. Your choice of your Might or Presence increases by 1 (to a maximum of 6). You gain one of your nation’s treasures—a trinket of the Director’s choice.'
+				name: 'Коштовності корони',
+				description: 'Жителі вашої держави мусять підкорятися вашим законним наказам або зазнати наслідків. Обрані вами Сила або Присутність зростають на 1 (до максимуму 6). Ви отримуєте один зі скарбів вашої держави — дрібничку на вибір Режисера.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-monarch-2',
-				name: 'Royal Fame',
-				description: 'Inhabitants of your nation must obey your lawful orders or suffer the consequences. Your choice of your Might or Presence increases by 1 (to a maximum of 6). You earn 2 Renown.'
+				name: 'Королівська слава',
+				description: 'Жителі вашої держави мусять підкорятися вашим законним наказам або зазнати наслідків. Обрані вами Сила або Присутність зростають на 1 (до максимуму 6). Ви здобуваєте 2 Відомості.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-monarch-3',
-				name: 'Royal Retinue',
-				description: 'Inhabitants of your nation must obey your lawful orders or suffer the consequences. Your choice of your Might or Presence increases by 1 (to a maximum of 6). The number of followers you can recruit increases by 2.'
+				name: 'Королівський почет',
+				description: 'Жителі вашої держави мусять підкорятися вашим законним наказам або зазнати наслідків. Обрані вами Сила або Присутність зростають на 1 (до максимуму 6). Кількість послідовників, яких ви можете наймати, збільшується на 2.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-monarch-4',
-				name: 'Royal Wealth',
-				description: 'Inhabitants of your nation must obey your lawful orders or suffer the consequences. Your choice of your Might or Presence increases by 1 (to a maximum of 6). You earn 2 Wealth.'
+				name: 'Королівське багатство',
+				description: 'Жителі вашої держави мусять підкорятися вашим законним наказам або зазнати наслідків. Обрані вами Сила або Присутність зростають на 1 (до максимуму 6). Ви здобуваєте 2 Багатства.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1836,15 +1836,15 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static theoreticalWarrior: Title = {
 		id: 'title-theoretical-warrior',
-		name: 'Theoretical Warrior',
-		description: '“I’ve read about this tactic in books—it looks fairly straightforward.”',
+		name: 'Теоретичний воїн',
+		description: '“Я читав про цю тактику в книжках — виглядає доволі просто.”',
 		echelon: 4,
-		prerequisites: 'You have the Master Librarian title, and you complete the «Навчатися у майстра» project with a project goal of 1,000.',
+		prerequisites: 'Ви маєте титул «Головний бібліотекар» і завершуєте проєкт «Навчатися у майстра» з ціллю проєкту 1 000.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-theoretical-warrior-1',
-				name: 'Effect',
-				description: 'Your choice of your Reason or Intuition increases by 1 (to a maximum of 6). Additionally, choose a heroic ability belonging to any class. You gain this heroic ability, which can be paid for using the Heroic Resource of your class. You can’t use a heroic ability that requires a class feature you don’t have.'
+				name: 'Ефект',
+				description: 'Обрані вами Розум або Інтуїція зростають на 1 (до максимуму 6). Додатково оберіть героїчну здібність, що належить будь-якому класу. Ви отримуєте цю героїчну здібність, і платити за неї можна героїчним ресурсом вашого класу. Ви не можете використовувати героїчну здібність, яка вимагає риси класу, якої у вас немає.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1852,24 +1852,24 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static tireless: Title = {
 		id: 'title-tireless',
-		name: 'Tireless',
-		description: '“To reach Giant’s Foot by dawn, we’ll have to run every step of the way. Let’s get moving.”',
+		name: 'Невтомний',
+		description: '“Щоб дістатися до Велетневої Стопи до світанку, нам доведеться пробігти весь шлях. Рушаймо.”',
 		echelon: 4,
-		prerequisites: 'You have the Unstoppable title, and you make or assist on a test as part of a montage test that obtains a full success.',
+		prerequisites: 'Ви маєте титул «Незупинний» і робите або допомагаєте у випробуванні як частині монтажного випробування, яке завершується повним успіхом.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-tireless-1',
-				name: 'Bounce Back Fast',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). Whenever you rest for 8 hours or more, you can gain the benefit of a respite. Once you use this benefit, you can’t use it again until you have taken a regular respite.'
+				name: 'Швидке відновлення',
+				description: 'Обрані вами Сила або Ловкість зростають на 1 (до максимуму 6). Щоразу, коли ви відпочиваєте 8 годин або більше, ви можете отримати переваги перепочинку. Скориставшись цією перевагою, ви не можете використати її знову, доки не візьмете звичайний перепочинок.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-tireless-2',
-				name: 'Reserves of Strength',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). Your recovery value is half your Stamina.'
+				name: 'Запаси сили',
+				description: 'Обрані вами Сила або Ловкість зростають на 1 (до максимуму 6). Ваше значення відновлення дорівнює половині вашої Витривалості.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-tireless-3',
-				name: 'Undying',
+				name: 'Невмирущий',
 				description: 'Обрана вами Сила або Ловкість збільшується на 1, максимум до 6. Ви не можете бути вражені станом «Кровотеча».'
 			})
 		],
@@ -1878,24 +1878,24 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static unchained: Title = {
 		id: 'title-unchained',
-		name: 'Unchained',
-		description: '“I’ll never get away with it? My dear, I already have.”',
+		name: 'Розкутий',
+		description: '“Мені це ніколи не зійде з рук? Люба моя, вже зійшло.”',
 		echelon: 4,
-		prerequisites: 'You have the Heist Hero title, and you have stolen a precious object or escaped from captivity while evading guards of 8th level or higher.',
+		prerequisites: 'Ви маєте титул «Герой пограбування» і викрадаєте цінний предмет або тікаєте з полону, уникаючи охорони 8-го рівня чи вище.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-unchained-1',
-				name: 'Bye-Bye',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). You can use a маневр to teleport yourself and each willing ally within 5 squares of you to new positions within 10 squares of your original starting point. Once you use this benefit, you can’t use it again until you earn 1 or more Victories.'
+				name: 'Па-па',
+				description: 'Обрані вами Сила або Ловкість зростають на 1 (до максимуму 6). Ви можете використати маневр, щоб телепортувати себе й кожного охочого союзника в межах 5 клітинок від вас на нові позиції в межах 10 клітинок від початкової точки. Скориставшись цією перевагою, ви не можете використати її знову, доки не здобудете 1 або більше Перемог.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-unchained-2',
-				name: 'Laughs at Locks',
-				description: 'Your choice of your Might or Agility increases by 1 (to a maximum of 6). Whenever you make a test to open a lock or break a restraint, you don’t need any tools and you automatically obtain a tier 3 outcome.'
+				name: 'Сміється з замків',
+				description: 'Обрані вами Сила або Ловкість зростають на 1 (до максимуму 6). Щоразу, коли ви робите випробування, щоб відчинити замок або розірвати пута, вам не потрібні інструменти, і ви автоматично отримуєте результат 3 рівня.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-unchained-3',
-				name: 'Slippery',
+				name: 'Слизький',
 				description: 'Обрана вами Сила або Ловкість збільшується на 1, максимум до 6. Вас не можна схопити проти вашої волі.'
 			})
 		],
@@ -1906,18 +1906,18 @@ Once per day, you can spend 10 uninterrupted minutes to magically alter mundane 
 
 	static safeguarded: Title = {
 		id: 'title-safeguarded',
-		name: 'Safeguarded',
-		description: 'They risk their lives for me because I risk my life for theirs. This fight belongs to all of us!',
+		name: 'Під захистом',
+		description: 'Вони ризикують життям заради мене, бо я ризикую життям заради них. Цей бій належить усім нам!',
 		echelon: 1,
-		prerequisites: 'You earn a noble rank or earn the favor of a knight’s guild.',
+		prerequisites: 'Ви здобуваєте дворянський титул або прихильність лицарської гільдії.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-safeguarded-1',
-				name: 'Effect',
+				name: 'Ефект',
 				description: `
-You start combat encounters with a squad of three minions from the specific monster band or people you earned this title from. The squad takes their turn as a part of your turn. On the squad’s turn, they can take a дія руху and either a основна дія or a маневр.
+Ви починаєте бойові сутички із загоном із трьох міньйонів із конкретної ватаги чудовиськ або народу, від яких отримали цей титул. Загін ходить як частина вашого ходу. У свій хід загін може виконати дію руху та або основну дію, або маневр.
 
-**Special**: If two or more heroes in the party have this title from the same source, the party starts combat encounters with a squad of six minions instead. At the start of each round of combat, the heroes decide who controls the squad as a part of their turn.`
+**Особливе**: Якщо двоє або більше героїв у загоні мають цей титул від одного джерела, загін натомість починає бойові сутички із загоном із шести міньйонів. На початку кожного бойового раунду герої вирішують, хто керує цим загоном як частиною свого ходу.`
 			})
 		],
 		selectedFeatureID: ''
@@ -1925,25 +1925,25 @@ You start combat encounters with a squad of three minions from the specific mons
 
 	static sigilwright: Title = {
 		id: 'title-sigilwright',
-		name: 'Sigilwright',
-		description: 'Let’s find out who’s on the other side of the circle.',
+		name: 'Сигілописець',
+		description: 'Зʼясуймо, хто по той бік кола.',
 		echelon: 2,
-		prerequisites: 'You complete a ritual to summon a non-minion entity using a summoning circle you drew.',
+		prerequisites: 'Ви завершуєте ритуал, щоб викликати не-мініонну сутність, використовуючи намальоване вами коло призову.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-sigilwright-1',
-				name: 'Quick Gate',
-				description: 'As a маневр, you can etch an arcane circle in an adjacent square on the ground. Until the end of the encounter, you can use magic abilities and treat your Summoner’s Range as if you were in that space. Each time you etch an arcane circle, your last circle fades and becomes inactive.'
+				name: 'Швидкі врата',
+				description: 'Використовуючи маневр, ви можете накреслити арканне коло в суміжній клітинці на землі. До кінця сутички ви можете використовувати магічні здібності й вважати, ніби для дальності призивача перебуваєте в тому просторі. Щоразу, коли ви креслите арканне коло, попереднє тьмяніє та стає неактивним.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-sigilwright-2',
-				name: 'Ritual Circle',
-				description: 'As a respite activity, you can draw a minor summoning circle to temporarily call forth a creature you’ve contacted previously, regardless of manifold. If the creature is willing and able to answer your call, they appear to you for the remainder of the respite. You can ask the creature for information or a service in exchange for ending the respite with two fewer Recoveries or a demand of their choosing. If the creature doesn’t appear, you can choose to take a different respite activity.'
+				name: 'Ритуальне коло',
+				description: 'Як активність перепочинку, ви можете накреслити мале коло призову, щоб тимчасово покликати істоту, з якою вже контактували, незалежно від маніфолду. Якщо істота готова й здатна відповісти на ваш поклик, вона зʼявляється перед вами до кінця перепочинку. Ви можете попросити її про інформацію або послугу в обмін на завершення перепочинку з двома меншими Відновленнями або на вимогу на її вибір. Якщо істота не зʼявляється, ви можете обрати іншу активність перепочинку.'
 			}),
 			FactoryLogic.feature.create({
 				id: 'title-sigilwright-3',
-				name: 'Sigil Eye',
-				description: 'You have an edge on tests made to identify summoning circles and who or where they’re connected to. You also have an edge on strikes made against creatures not native to the manifold in which you’re currently located.'
+				name: 'Око сигілу',
+				description: 'Ви отримуєте перевагу на випробування, щоб розпізнавати кола призову та зʼясовувати, з ким або з чим вони повʼязані. Ви також отримуєте перевагу на удари проти істот, не рідних для маніфолду, у якому зараз перебуваєте.'
 			})
 		],
 		selectedFeatureID: ''
@@ -1951,16 +1951,16 @@ You start combat encounters with a squad of three minions from the specific mons
 
 	static summonerSuccessor: Title = {
 		id: 'title-summoner-successor',
-		name: 'Summoner Successor',
-		description: 'When their leader fell, they started listening to me for some reason.',
+		name: 'Наступник призивача',
+		description: 'Коли їхній ватажок упав, вони чомусь почали слухати мене.',
 		echelon: 2,
-		prerequisites: 'You can’t use the Call Forth ability, and you defeat a leader or solo creature with a Summon or Call Forth ability, such as a high elf ordinator.',
+		prerequisites: 'Ви не можете використовувати здібність «Поклич» і перемагаєте ватажка або соло-істоту зі здібністю Summon або «Поклич», наприклад High Elf Ordinator.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-summoner-successor-1',
-				name: 'Effect',
+				name: 'Ефект',
 				description: `
-Оберіть фірмового міньйона з арсеналу призивача, який має спільне ключове слово з однією з істот, яких цей призивач міг би викликати. На початку кожного свого ходу в бою ви можете викликати трьох таких міньйонів в один загін, максимум до чотирьох істот. Дистанція, на якій ви можете ними командувати, дорівнює дальності вашого дальнього вільного удару. Ви також отримуєте тригерну здібність Strike for Me, яка тепер має ключове слово Psionic і втрачає ключове слово Magic.
+Оберіть фірмового міньйона з арсеналу призивача, який має спільне ключове слово з однією з істот, яких цей призивач міг би викликати. На початку кожного свого ходу в бою ви можете викликати трьох таких міньйонів в один загін, максимум до чотирьох істот. Дистанція, на якій ви можете ними командувати, дорівнює дальності вашого дальнього вільного удару. Ви також отримуєте тригерну здібність «Бий за мене», яка тепер має ключове слово Psionic і втрачає ключове слово Magic.
 
 Крім того, поза боєм ви можете викликати до двох своїх фірмових міньйонів для виконання простих завдань.`
 			})
@@ -1970,18 +1970,18 @@ You start combat encounters with a squad of three minions from the specific mons
 
 	static ringleader: Title = {
 		id: 'title-ringleader',
-		name: 'Ringleader',
-		description: 'Don’t worry. I’ve got a guy.',
+		name: 'Заводила',
+		description: 'Не хвилюйся. У мене є своя людина.',
 		echelon: 3,
-		prerequisites: 'You complete three downtime projects during the same respite with the help of followers or minions.',
+		prerequisites: 'Ви завершуєте три проєкти під час простою в межах одного перепочинку за допомогою послідовників або міньйонів.',
 		features: [
 			FactoryLogic.feature.createMultiple({
 				id: 'title-ringleader-1',
 				features: [
 					FactoryLogic.feature.create({
 						id: 'title-ringleader-1a',
-						name: 'Effect',
-						description: 'You no longer need line of effect to give commands to any minions you can summon.'
+						name: 'Ефект',
+						description: 'Вам більше не потрібна лінія ефекту, щоб віддавати накази будь-яким міньйонам, яких ви можете призвати.'
 					}),
 					FactoryLogic.feature.createChoice({
 						id: 'title-ringleader-1b',
@@ -1989,24 +1989,24 @@ You start combat encounters with a squad of three minions from the specific mons
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-ringleader-1b-1',
-									name: 'For the Boss',
-									description: 'Your followers gain a +3 bonus to project rolls thatthey make.'
+									name: 'За шефа',
+									description: 'Ваші послідовники отримують +3 до кидків проєктів, які вони роблять.'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-ringleader-1b-2',
-									name: 'Networker',
-									description: 'Your maximum follower count increases by 2.'
+									name: 'Звʼязківець',
+									description: 'Ваш максимум послідовників збільшується на 2.'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-ringleader-1b-3',
-									name: 'Stringpuller',
-									description: 'While occupying a civilized area (such as a village, town, district, or city), you always have access to a follower native to the location. If the area is otherwise hostile to you, this follower is a spy in hiding who has any project points they earn halved.'
+									name: 'Ляльковод',
+									description: 'Перебуваючи в цивілізованій місцевості (наприклад селі, містечку, районі чи місті), ви завжди маєте доступ до послідовника, який походить із цього місця. Якщо місцевість інакше ворожа до вас, цей послідовник є шпигуном у сховку, а всі очки проєкту, які він здобуває, зменшуються вдвічі.'
 								}),
 								value: 1
 							}
@@ -2020,18 +2020,18 @@ You start combat encounters with a squad of three minions from the specific mons
 
 	static delegator: Title = {
 		id: 'title-delegator',
-		name: 'Delegator',
-		description: 'They’re all yours, buddy.',
+		name: 'Делегатор',
+		description: 'Вони всі твої, друже.',
 		echelon: 4,
-		prerequisites: 'You are a summoner, and you strike a deal with your portfolio’s champion.',
+		prerequisites: 'Ви призивач і укладаєте угоду з чемпіоном свого портфеля.',
 		features: [
 			FactoryLogic.feature.create({
 				id: 'title-delegator-1',
-				name: 'Effect',
+				name: 'Ефект',
 				description: `
-At the start of a combat encounter, you can choose to translate yourself into your circle’s source manifold while your champion fights and summons monsters in your place. The champion uses your Stamina, Recoveries, abilities, and features (except for your Summoner Strikes and Summoner’s Kit). You can dismiss the champion and summon yourself back into the place you left at the end of an encounter.
+На початку бойової сутички ви можете обрати перенести себе в маніфолд-джерело вашого кола, поки ваш чемпіон бʼється й викликає чудовиськ замість вас. Чемпіон використовує ваші Витривалість, Відновлення, здібності та риси (окрім ваших Ударів призивача та Комплекту призивача). Ви можете відпустити чемпіона й наприкінці сутички повернути себе в місце, яке залишили.
 
-If your champion would die while taking your place, you lose access to your Return to the Source feature and can only summon signature minions until you revive your champion as a respite activity.`
+Якщо ваш чемпіон мав би померти, займаючи ваше місце, ви втрачаєте доступ до риси «Повернення до джерела» і можете призивати лише сигнатурних міньйонів, доки не відродите свого чемпіона як активність перепочинку.`
 			})
 		],
 		selectedFeatureID: ''
@@ -2039,18 +2039,18 @@ If your champion would die while taking your place, you lose access to your Retu
 
 	static highSummoner: Title = {
 		id: 'title-high-summoner',
-		name: 'High Summoner of the Circle',
-		description: 'As I was taught, so I pass on to you.',
+		name: 'Верховний призивач кола',
+		description: 'Як мене вчили, так і я передаю тобі.',
 		echelon: 4,
-		prerequisites: 'You are a summoner, and you teach someone how to call forth two or more minions from your portfolio.',
+		prerequisites: 'Ви призивач і навчаєте когось, як викликати двох або більше міньйонів зі свого портфеля.',
 		features: [
 			FactoryLogic.feature.createMultiple({
 				id: 'title-high-summoner-1',
 				features: [
 					FactoryLogic.feature.create({
 						id: 'title-high-summoner-1a',
-						name: 'Effect',
-						description: 'You are considered a master that can be learned from using the «Навчатися у майстра» downtime project. Anyone that makes a project roll using you as the source gains a bonus to their roll equal to your Reason.'
+						name: 'Ефект',
+						description: 'Ви вважаєтеся майстром, у якого можна навчатися за допомогою проєкту простою «Навчатися у майстра». Кожен, хто робить кидок проєкту, використовуючи вас як джерело, отримує бонус до кидка, рівний вашому Розуму.'
 					}),
 					FactoryLogic.feature.createChoice({
 						id: 'title-high-summoner-1b',
@@ -2058,24 +2058,24 @@ If your champion would die while taking your place, you lose access to your Retu
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-high-summoner-1b-1',
-									name: 'Essence Mastery',
-									description: 'Your minions cost one fewer essence to summon (minimum cost of 1 essence).'
+									name: 'Майстерність есенції',
+									description: 'Ваші міньйони коштують на 1 Есенцію менше для призову (мінімум 1 Есенція).'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-high-summoner-1b-2',
-									name: 'Expanded Domain',
-									description: 'Your Summoner’s Range increases by 5. You can use your minions’ senses as your own as long as they’re on the same manifold as you.'
+									name: 'Розширений домен',
+									description: 'Ваша дальність призивача збільшується на 5. Ви можете використовувати чуття своїх міньйонів як власні, доки вони перебувають у тому самому маніфолді, що й ви.'
 								}),
 								value: 1
 							},
 							{
 								feature: FactoryLogic.feature.create({
 									id: 'title-high-summoner-1b-3',
-									name: 'Signature Summoner',
-									description: 'Select a 3-Essence minion you can call forth. At the start of each of your turns in combat, you summon the set number of minions listed on the stat block in place of your signature minions at no cost.'
+									name: 'Сигнатурний призивач',
+									description: 'Оберіть міньйона на 3 Есенції, якого можете покликати. На початку кожного свого ходу в бою ви безкоштовно призиваєте вказану в його статблоці кількість цих міньйонів замість своїх сигнатурних міньйонів.'
 								}),
 								value: 1
 							}

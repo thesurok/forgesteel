@@ -14,7 +14,7 @@ export const TitleCard = (props: Props) => {
 	return (
 		<div className='title card'>
 			<section className='bordered'>
-				<h3>Title</h3>
+				<h3>Титул</h3>
 				<TitleComponent title={title} hero={props.hero} />
 			</section>
 		</div>

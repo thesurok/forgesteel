@@ -12,6 +12,7 @@ import { ConditionType } from '@/enums/condition-type';
 import { ErrorBoundary } from '@/components/controls/error-boundary/error-boundary';
 import { FeatureType } from '@/enums/feature-type';
 import { Field } from '@/components/controls/field/field';
+import { Format } from '@/utils/format';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
 import { HeroLogic } from '@/logic/hero-logic';
@@ -342,7 +343,7 @@ export const AbilityPanel = (props: Props) => {
 				<Markdown text={props.ability.description} className='ability-description-text' />
 				{
 					props.ability.keywords.length > 0 ?
-						<Flex gap={3}>{props.ability.keywords.map((k, n) => <Tag key={n} variant='outlined'>{k}</Tag>)}</Flex>
+						<Flex gap={3}>{props.ability.keywords.map((k, n) => <Tag key={n} variant='outlined'>{Format.getKeywordName(k)}</Tag>)}</Flex>
 						: null
 				}
 				<AbilityInfoPanel ability={props.ability} hero={props.hero} />

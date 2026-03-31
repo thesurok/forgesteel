@@ -10,14 +10,14 @@ import { ItemType } from '@/enums/item-type';
 export class LeveledItemData {
 	static bloodboundBand: Item = FactoryLogic.createItem({
 		id: 'item-bloodbound-band',
-		name: 'Bloodbound Band',
-		description: 'This ring appears to be traced by dried blood, which returns each time it is rubbed away.',
+		name: 'Кільце кровного звʼязку',
+		description: 'Це кільце ніби обведене засохлою кровʼю, яка щоразу повертається, коли її стирають.',
 		type: ItemType.Leveled,
-		keywords: [ AbilityKeyword.Magic, AbilityKeyword.Ring ],
+		keywords: [AbilityKeyword.Magic, AbilityKeyword.Ring],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A pair of obituaries that each mention the subject of the other',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Пара некрологів, кожен із яких згадує особу з іншого',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -27,7 +27,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloodbound-band-1',
 						name: '',
-						description: 'During a respite, you can touch the ring to any number of other Bloodbound Bands worn by willing creatures to form a bond among all of you. Creatures related by blood can’t form bonds in this way. Bonded creatures can each use the highest recovery value of any bonded creature in place of their own, and can spend each other’s Recoveries as if they were their own. Whenever any other bonded creature takes damage, each bonded creature takes 1 damage that can’t be reduced in any way. Your bond ends if you remove the ring, use it to bond with one or more other creatures, or die, but other rings continue to be bonded to each other.'
+						description: 'Під час перепочинку ви можете торкнутися цим кільцем будь-якої кількості інших Кілець кровного звʼязку, які носять згодні істоти, щоб утворити звʼязок між усіма вами. Істоти, споріднені кровʼю, не можуть створювати такий звʼязок. Кожна повʼязана істота може використовувати найвище значення відновлення серед усіх повʼязаних істот замість власного й витрачати Відновлення одна одної, наче вони її власні. Щоразу, коли будь-яка інша повʼязана істота отримує шкоду, кожна повʼязана істота також отримує 1 шкоди, яку не можна зменшити жодним способом. Ваш звʼязок закінчується, якщо ви знімете кільце, використаєте його для звʼязку з однією чи кількома іншими істотами або помрете, але інші кільця залишаються повʼязаними між собою.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-bloodbound-band-1a',
@@ -62,7 +62,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloodbound-band-9',
 						name: '',
-						description: 'If a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain Stamina equal to their winded value. Your ring then teleports into their possession and ceases to be magic.'
+						description: 'Якщо істота, повʼязана з вами, помирає, ви можете обрати померти замість неї. Ваша жертва перекручує долю, виводячи істоту з небезпеки, і вона відновлює Витривалість, рівну своєму значенню захеканості. Потім ваше кільце телепортується до неї й перестає бути магічним.'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-bloodbound-band-9a',
@@ -76,14 +76,14 @@ export class LeveledItemData {
 
 	static bloodyHandWraps: Item = FactoryLogic.createItem({
 		id: 'item-bloody-hand-wraps',
-		name: 'Bloody Hand Wraps',
-		description: 'These rough hand wraps are stained with blood that never comes clean.',
+		name: 'Криваві обмотки',
+		description: 'Ці грубі обмотки для рук просякнуті кровʼю, яку неможливо відчистити.',
 		type: ItemType.Leveled,
-		keywords: [ AbilityKeyword.Hands, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Hands, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One cotton bolt soaked in the blood of six adventurers',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Might, Characteristic.Agility, Characteristic.Intuition ],
+			prerequisites: 'Один сувій бавовни, вимочений у крові шістьох шукачів пригод',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Might, Characteristic.Agility, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -93,12 +93,12 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-1',
 						name: '',
-						description: 'Once per turn, you can take 5 damage that can\'t be reduced in any way to use the Grab маневр (no action required).'
+						description: 'Раз за хід ви можете отримати 5 шкоди, яку не можна зменшити жодним способом, щоб використати маневр «Схопити» (не потребує дії).'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -109,12 +109,12 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-5',
 						name: '',
-						description: 'Once per turn, you can take 10 damage that can\'t be reduced in any way to make a melee free strike (no action required). On your turn, you can use the wraps’ melee free strike option or Grab маневр option, but only one.'
+						description: 'Раз за хід ви можете отримати 10 шкоди, яку не можна зменшити жодним способом, щоб зробити ближній вільний удар (не потребує дії). У свій хід ви можете скористатися або опцією ближнього вільного удару від обмоток, або опцією маневру «Схопити», але лише однією.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -125,12 +125,12 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-bloody-hand-wraps-9',
 						name: '',
-						description: 'Once per turn, you can take 15 damage that can\'t be reduced in any way to use a signature ability (no action required). On your turn, you can use the wraps’ signature ability option, melee free strike option, or Grab маневр option, but only one.'
+						description: 'Раз за хід ви можете отримати 15 шкоди, яку не можна зменшити жодним способом, щоб використати фірмову здібність (не потребує дії). У свій хід ви можете скористатися або опцією фірмової здібності від обмоток, або опцією ближнього вільного удару, або опцією маневру «Схопити», але лише однією.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-bloody-hand-wraps-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1
 					})
 				]
@@ -140,14 +140,14 @@ export class LeveledItemData {
 
 	static lightningTreads: Item = FactoryLogic.createItem({
 		id: 'item-lightning-treads',
-		name: 'Lightning Treads',
-		description: 'Sparks strike from these boots whenever they touch the ground,increasing in number as the wearer gathers speed.',
+		name: 'Блискавичні підошви',
+		description: 'Щоразу, коли ці чоботи торкаються землі, з них сиплються іскри, і їх більшає, чим швидше розганяється власник.',
 		type: ItemType.Leveled,
-		keywords: [ AbilityKeyword.Feet, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Feet, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'One jar of lightning',
-			source: 'Texts or lore in Іллірик (Yllyric)',
-			characteristic: [ Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Одна банка блискавки',
+			source: 'Тексти або перекази мовою Іллірик (Yllyric)',
+			characteristic: [Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -157,7 +157,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lightning-treads-1a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Lightning
 					}),
@@ -175,12 +175,12 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-lightning-treads-5',
 						name: '',
-						description: 'Any damage-dealing weapon ability using your unarmed strike deals 1 extra lightning damage for each square you move this turn before you use the ability to a maximum bonus of +2.'
+						description: 'Будь-яка збройна здібність, що завдає шкоди й використовує ваш беззбройний удар, завдає додатково 1 шкоди блискавкою за кожну клітинку, яку ви пройшли цього ходу до використання здібності, до максимуму +2.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lightning-treads-5a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Lightning
 					})
@@ -192,23 +192,23 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-lightning-treads-9',
 						name: '',
-						description: 'The maximum total damage bonus you can earn including movement increase to +3. Additionally, you can use a маневр to perform a flying lightning kick on one adjacent creature. That target is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.'
+						description: 'Максимальний сукупний бонус до шкоди, який ви можете здобути з урахуванням руху, зростає до +3. Крім того, ви можете використати маневр, щоб виконати летючий удар блискавкою по одній сусідній істоті. Цю ціль відштовхує на відстань до 5 клітинок, а після відштовхування ви можете переміститися в будь-яку клітинку, сусідню до неї.'
 					}),
 					FactoryLogic.feature.createAbilityDamage({
 						id: 'item-lightning-treads-9a',
 						name: '',
-						keywords: [ AbilityKeyword.Weapon, AbilityKeyword.Melee ],
+						keywords: [AbilityKeyword.Weapon, AbilityKeyword.Melee],
 						value: 1,
 						damageType: DamageType.Lightning
 					}),
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-lightning-treads-9b',
-							name: 'Use Lightning Treads',
-							description: 'Perform a flying lightning kick',
+							name: 'Використати Блискавичні підошви',
+							description: 'Виконати летючий удар блискавкою',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('One adjacent creature is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.')
+								FactoryLogic.createAbilitySectionText('Одну сусідню істоту відштовхує на відстань до 5 клітинок, а після відштовхування ви можете переміститися в будь-яку клітинку, сусідню до цілі.')
 							]
 						})
 					})
@@ -219,14 +219,14 @@ export class LeveledItemData {
 
 	static revengersWrap: Item = FactoryLogic.createItem({
 		id: 'item-revengers-wrap',
-		name: 'Revenger\'s Wrap',
-		description: 'When first handled, this tattered cloak fills the mind with thoughts of revenge.',
+		name: 'Плащ месника',
+		description: 'Коли ви вперше берете цей подертий плащ до рук, він наповнює розум думками про помсту.',
 		type: ItemType.Leveled,
-		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Magic ],
+		keywords: [AbilityKeyword.Neck, AbilityKeyword.Magic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A cloak worn by a murdered monarch',
-			source: 'Texts or lore in Келіан (Caelian)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Плащ, який носив убитий монарх',
+			source: 'Тексти або перекази мовою Келіан (Caelian)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -236,7 +236,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-revengers-wrap-1',
 						name: '',
-						description: 'While you wear this cloak, any creature who damages you is marked for revenge until the end of your next turn or until another creature damages you. Any strike you make against a creature marked for revenge deals extra damage equal to your highest characteristic score, and whenever you damage a creature marked for revenge, they are also bleeding until the end of their next turn.'
+						description: 'Поки ви носите цей плащ, будь-яка істота, що завдає вам шкоди, позначається для помсти до кінця вашого наступного ходу або доки вам не завдасть шкоди інша істота. Будь-який удар, який ви робите проти істоти, позначеної для помсти, завдає додаткової шкоди, що дорівнює вашому найвищому показнику характеристики, а щоразу, коли ви завдаєте шкоди істоті, позначеній для помсти, у неї також виникає кровотеча до кінця її наступного ходу.'
 					})
 				]
 			},
@@ -246,7 +246,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-revengers-wrap-5',
 						name: '',
-						description: 'Each creature who damages you is marked for revenge until the end of your next turn. Whenever you damage a creature marked for revenge, they are also bleeding (save ends).'
+						description: 'Кожна істота, що завдає вам шкоди, позначається для помсти до кінця вашого наступного ходу. Щоразу, коли ви завдаєте шкоди істоті, позначеній для помсти, у неї також виникає кровотеча (рят. кидок завершує).'
 					})
 				]
 			},
@@ -256,7 +256,7 @@ export class LeveledItemData {
 					FactoryLogic.feature.create({
 						id: 'item-revengers-wrap-9',
 						name: '',
-						description: 'When you have three or more creatures marked for revenge and you target one of them with an ability that targets only one creature, you target all the creatures marked for revenge, regardless of their distance from you and even if you don’t have line of effect to them.'
+						description: 'Коли у вас є три або більше істот, позначених для помсти, і ви націлюєте одну з них здібністю, що націлює лише одну істоту, ви націлюєте всіх істот, позначених для помсти, незалежно від відстані до них і навіть якщо у вас немає до них лінії ефекту.'
 					})
 				]
 			}
@@ -265,14 +265,14 @@ export class LeveledItemData {
 
 	static thiefOfJoy: Item = FactoryLogic.createItem({
 		id: 'item-thief-of-joy',
-		name: 'Thief of Joy',
-		description: 'This burnished copper torque thrums with a sense of judgment.',
+		name: 'Викрадач радості',
+		description: 'Ця начищена мідна гривна пульсує відчуттям осуду.',
 		type: ItemType.Leveled,
-		keywords: [ AbilityKeyword.Neck, AbilityKeyword.Psionic ],
+		keywords: [AbilityKeyword.Neck, AbilityKeyword.Psionic],
 		crafting: FactoryLogic.createProject({
-			prerequisites: 'A pound of feathers, a pound of bricks from the Seven Cities of Hell',
-			source: 'Texts or lore in Анжалі (Anjali)',
-			characteristic: [ Characteristic.Might, Characteristic.Reason, Characteristic.Intuition ],
+			prerequisites: 'Фунт пірʼя, фунт цеглин із Семи міст Пекла',
+			source: 'Тексти або перекази мовою Анжалі (Anjali)',
+			characteristic: [Characteristic.Might, Characteristic.Reason, Characteristic.Intuition],
 			goal: 450
 		}),
 		featuresByLevel: [
@@ -282,10 +282,10 @@ export class LeveledItemData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-thief-of-joy-1',
-							name: 'Use Thief of Joy',
+							name: 'Використати Викрадач радості',
 							type: FactoryLogic.type.createManeuver(),
 							sections: [
-								FactoryLogic.createAbilitySectionText('Choose a creature in your line of effect. You learn the target\'s level. If their level is higher than yours, the torque grants you envy. If their level is equal to or lower than yours, the torque grants you disdain. You can have both envy and disdain from different creatures, but not more than one instance of either.'),
+								FactoryLogic.createAbilitySectionText('Оберіть істоту в межах вашої лінії ефекту. Ви дізнаєтеся рівень цілі. Якщо її рівень вищий за ваш, гривна дарує вам заздрість. Якщо її рівень дорівнює вашому або нижчий, гривна дарує вам презирство. Ви можете мати і заздрість, і презирство від різних істот, але не більше ніж по одному екземпляру кожного.'),
 								FactoryLogic.createAbilitySectionPackage('item-thief-of-joy-tag')
 							]
 						})
@@ -293,17 +293,17 @@ export class LeveledItemData {
 					FactoryLogic.feature.createAbility({
 						ability: FactoryLogic.createAbility({
 							id: 'item-thief-of-joy-1a',
-							name: 'Item Ability',
-							type: FactoryLogic.type.createTrigger('A creature within 10 squares of you deals damage to another creature'),
+							name: 'Здібність предмета',
+							type: FactoryLogic.type.createTrigger('Істота в межах 10 клітинок від вас завдає шкоди іншій істоті'),
 							sections: [
-								FactoryLogic.createAbilitySectionText('You expend your envy or disdain. If you expend envy, you deal damage equal to the triggering damage to a creature adjacent to you. If you expend disdain, you reduce the triggering damage by half. At the end of the encounter, you lose any envy or disdain granted by the torque.')
+								FactoryLogic.createAbilitySectionText('Ви витрачаєте свою заздрість або презирство. Якщо ви витрачаєте заздрість, то завдаєте істоті, сусідній до вас, шкоди, що дорівнює тригерній шкоді. Якщо ви витрачаєте презирство, ви зменшуєте тригерну шкоду наполовину. Наприкінці зіткнення ви втрачаєте будь-яку заздрість або презирство, даровані гривною.')
 							]
 						})
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-thief-of-joy-1b',
 						field: FeatureField.Stamina,
-						valueCharacteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+						valueCharacteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 						valueCharacteristicMultiplier: 2
 					})
 				]
@@ -313,14 +313,14 @@ export class LeveledItemData {
 				features: [
 					FactoryLogic.feature.createPackageContent({
 						id: 'item-thief-of-joy-5',
-						name: '5th',
-						description: 'When the target creature is the same level as you, you gain your choice of envy or disdain.',
+						name: '5-й',
+						description: 'Коли цільова істота має той самий рівень, що й ви, ви отримуєте на вибір заздрість або презирство.',
 						tag: 'item-thief-of-joy-tag'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-thief-of-joy-5a',
 						field: FeatureField.Stamina,
-						valueCharacteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ]
+						valueCharacteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence]
 					})
 				]
 			},
@@ -328,15 +328,15 @@ export class LeveledItemData {
 				level: 9,
 				features: [
 					FactoryLogic.feature.createPackageContent({
-						id: 'item-thief-of-joy-5',
-						name: '9th',
-						description: 'You can have multiple instances of envy and disdain, with no limit on either.',
+						id: 'item-thief-of-joy-9',
+						name: '9-й',
+						description: 'Ви можете мати кілька екземплярів заздрості й презирства без обмежень для кожного.',
 						tag: 'item-thief-of-joy-tag'
 					}),
 					FactoryLogic.feature.createBonus({
 						id: 'item-thief-of-joy-9a',
 						field: FeatureField.Stamina,
-						valueCharacteristics: [ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ],
+						valueCharacteristics: [Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence],
 						valueCharacteristicMultiplier: 2
 					})
 				]

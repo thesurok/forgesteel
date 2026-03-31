@@ -4,6 +4,7 @@ import { AbilityKeyword } from '@/enums/ability-keyword';
 import { AbilityLogic } from '@/logic/ability-logic';
 import { Characteristic } from '@/enums/characteristic';
 import { Field } from '@/components/controls/field/field';
+import { Format } from '@/utils/format';
 import { FormatLogic } from '@/logic/format-logic';
 import { HeaderText } from '@/components/controls/header-text/header-text';
 import { Hero } from '@/models/hero';
@@ -23,7 +24,7 @@ interface InfoProps {
 
 export const InfoAbilityDamage = (props: InfoProps) => {
 	return (
-		<Field label={props.data.keywords.join(', ')} value={`${FormatLogic.getModifier(props.data)} ${props.data.damageType}`} />
+		<Field label={Format.formatKeywordList(props.data.keywords)} value={`${FormatLogic.getModifier(props.data)} ${props.data.damageType}`} />
 	);
 };
 
@@ -35,7 +36,7 @@ interface EditProps {
 }
 
 export const EditAbilityDamage = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureAbilityDamageData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureAbilityDamageData>(Utils.copy(props.data));
 
 	const setKeywords = (value: AbilityKeyword[]) => {
 		const copy = Utils.copy(data);
@@ -80,8 +81,8 @@ export const EditAbilityDamage = (props: EditProps) => {
 				placeholder='Select keywords'
 				mode='multiple'
 				allowClear={true}
-				options={AbilityLogic.getKeywords().map(o => ({ value: o }))}
-				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
+				options={AbilityLogic.getKeywords().map(o => ({ value: o, label: Format.getKeywordName(o) }))}
+				optionRender={option => <div className='ds-text'>{option.data.label ?? option.data.value}</div>}
 				value={data.keywords}
 				onChange={setKeywords}
 			/>
@@ -93,7 +94,7 @@ export const EditAbilityDamage = (props: EditProps) => {
 				style={{ width: '100%' }}
 				placeholder='Characteristics'
 				mode='multiple'
-				options={[ Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence ].map(option => ({ value: option }))}
+				options={[Characteristic.Might, Characteristic.Agility, Characteristic.Reason, Characteristic.Intuition, Characteristic.Presence].map(option => ({ value: option }))}
 				optionRender={option => <div className='ds-text'>{option.data.value}</div>}
 				value={data.valueCharacteristics}
 				onChange={setValueCharacteristics}

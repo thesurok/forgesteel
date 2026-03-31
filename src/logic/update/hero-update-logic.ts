@@ -33,10 +33,14 @@ export class HeroUpdateLogic {
 		}
 
 		if (hero.settingIDs === undefined) {
-			hero.settingIDs = SourcebookLogic.getSourcebooks().map(sb => sb.id);
+			hero.settingIDs = SourcebookLogic.getDefaultHeroSourcebookIDs(sourcebooks);
 		}
 
 		hero.settingIDs = hero.settingIDs.map(id => id === '' ? SourcebookData.core.id : id);
+		hero.settingIDs = Array.from(new Set([
+			...hero.settingIDs,
+			...SourcebookLogic.getDefaultHeroSourcebookIDs(sourcebooks)
+		]));
 
 		if (hero.ancestry) {
 			hero.ancestry.features
@@ -438,7 +442,7 @@ export class HeroUpdateLogic {
 					const oFeature = originalFeature as FeatureChoice;
 
 					const selectedIDs = oFeature.data.selected.map(s => s.id);
-					let availableOptions = [ ...feature.data.options ];
+					let availableOptions = [...feature.data.options];
 					if (availableOptions.some(opt => opt.feature.type === FeatureType.AncestryFeatureChoice)) {
 						availableOptions = availableOptions.filter(opt => opt.feature.type !== FeatureType.AncestryFeatureChoice);
 						const additionalOptions = HeroLogic.getFormerAncestries(hero)
@@ -484,7 +488,7 @@ export class HeroUpdateLogic {
 						.map(d => {
 							const copy = Utils.copy(d);
 							copy.featuresByLevel = copy.featuresByLevel.filter(lvl => feature.data.levels.includes(lvl.level));
-							[ ...copy.defaultFeatures, ...copy.featuresByLevel.flatMap(lvl => lvl.features) ].forEach(f => FeatureLogic.switchFeatureCharacteristic(f, Characteristic.Intuition, feature.data.characteristic));
+							[...copy.defaultFeatures, ...copy.featuresByLevel.flatMap(lvl => lvl.features)].forEach(f => FeatureLogic.switchFeatureCharacteristic(f, Characteristic.Intuition, feature.data.characteristic));
 							return copy;
 						});
 					break;
@@ -537,7 +541,7 @@ export class HeroUpdateLogic {
 				case FeatureType.LanguageChoice: {
 					const oFeature = originalFeature as FeatureLanguageChoice;
 
-					feature.data.selected = [ ...oFeature.data.selected ];
+					feature.data.selected = [...oFeature.data.selected];
 					break;
 				}
 				case FeatureType.Multiple: {
@@ -570,7 +574,7 @@ export class HeroUpdateLogic {
 				case FeatureType.SkillChoice: {
 					const oFeature = originalFeature as FeatureSkillChoice;
 
-					feature.data.selected = [ ...oFeature.data.selected ];
+					feature.data.selected = [...oFeature.data.selected];
 					break;
 				}
 				case FeatureType.Summon: {

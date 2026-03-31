@@ -111,6 +111,15 @@ describe.concurrent('cleanupText', () => {
 	});
 });
 
+describe.concurrent('shortenText', () => {
+	test('uses the localized continued-in-reference marker', () => {
+		const result = SheetFormatter.shortenText('Рядок 1\nРядок 2');
+
+		expect(result).toContain('продовження у довіднику');
+		expect(result).not.toContain('continued in reference');
+	});
+});
+
 describe.concurrent('cleanupFeature', () => {
 	test.each([
 		['Дослідження/Інтриги Skills', 'Навички Дослідження/Інтриги'],
@@ -126,6 +135,15 @@ describe.concurrent('cleanupFeature', () => {
 		const result = SheetFormatter.cleanupFeature(feature);
 
 		expect(result.name).toBe(expected);
+	});
+});
+
+describe.concurrent('getAbilityIcon', () => {
+	test('uses the burst icon for localized aura distances', () => {
+		const localized = SheetFormatter.getAbilityIcon({ distance: 'Аура 5', actionType: 'Main Action' } as AbilitySheet);
+		const english = SheetFormatter.getAbilityIcon({ distance: 'Aura 5', actionType: 'Main Action' } as AbilitySheet);
+
+		expect(localized).toBe(english);
 	});
 });
 
@@ -246,7 +264,7 @@ This is some description of the table below.
 		expect(result.reference.length).toBe(0);
 
 		expect(result.extraReferenceItems.length).toBe(1);
-		expect(result.extraReferenceItems[0].title).toBe('Table Feature: Header 1 Table');
+		expect(result.extraReferenceItems[0].title).toBe('Table Feature: Header 1 Таблиця');
 	});
 });
 
@@ -394,8 +412,8 @@ Content After`, 'Content Before\nContent After', '|Simple|Table|\n|---|---|\n|So
 	});
 
 	test.each([
-		['No hint from content\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Simple Table'],
-		['No hint from content\n| Simple 2  |Table|\n|---|---|\n|Some|Content|', 'Simple 2 Table'],
+		['No hint from content\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Simple Таблиця'],
+		['No hint from content\n| Simple 2  |Table|\n|---|---|\n|Some|Content|', 'Simple 2 Таблиця'],
 		['**Table Label**\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label'],
 		['### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label'],
 		['\t### Table Label\n|Simple|Table|\n|---|---|\n|Some|Content|', 'Table Label']

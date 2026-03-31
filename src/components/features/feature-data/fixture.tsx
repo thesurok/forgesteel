@@ -34,7 +34,7 @@ interface EditProps {
 }
 
 export const EditFixture = (props: EditProps) => {
-	const [ data, setData ] = useState<FeatureFixtureData>(Utils.copy(props.data));
+	const [data, setData] = useState<FeatureFixtureData>(Utils.copy(props.data));
 
 	const setFixture = (value: Fixture) => {
 		const copy = Utils.copy(data) as FeatureFixtureData;
@@ -45,7 +45,7 @@ export const EditFixture = (props: EditProps) => {
 
 	return (
 		<div style={{ margin: '10px 0' }}>
-			<Expander title={data.fixture.name || 'Unnamed Ability'}>
+			<Expander title={data.fixture.name || 'Безіменна здібність'}>
 				<FixtureEditPanel
 					fixture={data.fixture}
 					sourcebooks={props.sourcebooks}
