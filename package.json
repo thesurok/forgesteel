@@ -19,7 +19,7 @@
 		"check": "npm run lint && npm run check:stat-acronyms && npm run check:tier-acronyms && npm run check:tier-effects && tsc -p tsconfig.json && vitest run && npm audit",
 		"build": "vite build",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "node scripts/deploy-gh-pages.cjs"
 	},
 	"dependencies": {
 		"@ant-design/icons": "^6.1.0",
@@ -28,7 +28,6 @@
 		"@types/showdown": "^2.0.6",
 		"antd": "^6.2.0",
 		"axios": "^1.13.2",
-		"gh-pages": "^6.3.0",
 		"html2canvas": "^1.4.1",
 		"jspdf": "^4.0.0",
 		"localforage": "^1.10.0",

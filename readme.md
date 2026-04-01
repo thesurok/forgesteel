@@ -73,8 +73,10 @@ Required repository settings:
 
 The deployment workflow is defined in `.github/workflows/deploy.yml` and publishes the Vite build output from `dist`.
 
-If you need to publish manually instead, the repository also includes a `gh-pages` script:
+If you need to publish manually instead, the repository also includes a deploy script that force-pushes the current `dist` output to the `gh-pages` branch without relying on the `gh-pages` package's cleanup step:
 
 ```
 npm run deploy
 ```
+
+This avoids the Windows `spawn ENAMETOOLONG` failure that can happen when `gh-pages` tries to remove a large published tree in one command.
